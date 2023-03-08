@@ -45,18 +45,6 @@ describe "Instrumentation", type: :request do
     end
   end
 
-  describe "cache_read.active_support" do
-    after { Rails.cache.read("test") }
-
-    it "observes the :app_cache_read_total metric" do
-      metric = registry.get(:app_cache_read_total)
-      expect(metric).to receive(:increment).with(labels: {
-        key: instance_of(String),
-        hit: false,
-      }).once
-    end
-  end
-
   describe "app.csp_violation" do
     let(:params) do
       {

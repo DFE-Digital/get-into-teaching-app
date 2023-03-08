@@ -48,18 +48,6 @@ ActiveSupport::Notifications.subscribe "render_partial.action_view" do |*args|
   metric.observe(event.duration, labels: labels)
 end
 
-ActiveSupport::Notifications.subscribe "cache_read.active_support" do |*args|
-  event = ActiveSupport::Notifications::Event.new(*args)
-
-  prometheus = Prometheus::Client.registry
-
-  labels = { key: nil, hit: nil }
-  labels.merge!(event.payload.symbolize_keys.slice(*labels.keys))
-
-  metric = prometheus.get(:app_cache_read_total)
-  metric.increment(labels: labels)
-end
-
 ActiveSupport::Notifications.subscribe "app.csp_violation" do |*args|
   event = ActiveSupport::Notifications::Event.new(*args)
   report = event.payload.transform_keys(&:underscore).symbolize_keys

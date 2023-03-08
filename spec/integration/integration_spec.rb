@@ -9,16 +9,13 @@ RSpec.feature "Integration tests", :integration, type: :feature, js: true do
     WebMock.disable_net_connect!(allow_localhost: true)
   end
 
-  # I need to look into why this has started failing; it can't
-  # find the new radio buttons for the returning teacher step
-  # for some reason; disabling for now.
-  skip "Sign up journey as a new candidate" do
+  it "Sign up journey as a new candidate" do
     visit mailing_list_steps_path
     click_link "Accept all cookies"
     sign_up(rand_first_name, rand_last_name, rand_email)
   end
 
-  skip "Sign up journey as an existing candidate" do
+  it "Sign up journey as an existing candidate" do
     visit mailing_list_steps_path
     click_link "Accept all cookies"
 
@@ -34,7 +31,8 @@ RSpec.feature "Integration tests", :integration, type: :feature, js: true do
     submit_personal_details(first_name, last_name, email)
 
     expect(page).to have_text "Are you already qualified to teach?"
-    choose "No"
+    # I'm not sure why 'choose "No"' doesn't work here.
+    find("label", text: "No").click
     click_on "Next step"
 
     expect(page).to have_text("Do you have a degree?")
@@ -50,7 +48,7 @@ RSpec.feature "Integration tests", :integration, type: :feature, js: true do
     click_on "Next step"
 
     expect(page).to have_text "If you give us your postcode"
-    fill_in "Your postcode (optional)", with: "TE57 1NG"
+    fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
     expect(page).to have_text("you're signed up")
