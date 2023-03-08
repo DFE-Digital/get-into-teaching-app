@@ -544,4 +544,6 @@ There may be exceptional cases where teaching assistants have worked for a signi
 
 Talk to your provider about whether your experience makes you eligible for this route.
 
+Or, find other ways you can [train to be a teacher](/train-to-be-a-teacher).
+
 $international-content$
