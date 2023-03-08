@@ -8,6 +8,7 @@ class Blog::TagController < ApplicationController
   def show
     @front_matter = {
       "title" => "Blog posts about #{params[:id].tr('-', ' ')}",
+      "noindex" => true,
     }
 
     breadcrumb "Blog", blog_index_path
