@@ -7,6 +7,7 @@ class PageLister
     /privacy-policy
     /landing/how-much-do-teachers-get-paid
     /landing/how-much-do-teachers-get-paid-social
+    /landing/how-to-become-a-teacher
   ].freeze
 
   class << self
