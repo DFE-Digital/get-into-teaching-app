@@ -16,7 +16,7 @@ calls_to_action:
         link_target: "https://schoolexperience.education.gov.uk/"
 ---
 
-It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. You might need specific training or qualifications in some areas. This page explains more about the different options.
+It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. If you’re considering initial teacher training, you will also need to decide if you want to train to teach at a primary or secondary level. This page explains more about the different options.
 
 ## Teach in a primary or secondary school
 

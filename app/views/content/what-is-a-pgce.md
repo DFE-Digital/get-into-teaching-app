@@ -70,6 +70,8 @@ You can do this through a school-led, university-led, or an apprenticeship teach
 
 You can do a full or part-time PGCE course.
 
+As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+
 ### Entry requirements
 
 Entry requirements for a postgraduate teacher training course usually include an undergraduate degree or equivalent qualification.

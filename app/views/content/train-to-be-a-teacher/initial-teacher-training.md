@@ -28,6 +28,8 @@ You’ll also have a mentor to support you in your school placements and learnin
 
 There are full-time and part-time teacher training courses available.
 
+As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+
 [Find postgraduate teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/).
 
 ## What you’ll learn in initial teacher training
