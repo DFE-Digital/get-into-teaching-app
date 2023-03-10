@@ -75,7 +75,7 @@ If you’re not sure about your immigration status, you can [check if you need a
 
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
-### Check whether you can still apply to the EU Settlement Scheme 
+### The EU Settlement Scheme 
 
 If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to [apply to the EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
 
@@ -88,13 +88,13 @@ Most non-UK applicants for teacher training will need one of the following:
 
 ### The student visa 
 
-For a fee-paying teacher training course, you will need a student visa. Your visa must be sponsored by a licensed sponsor of student visas.
+For a fee-paying teacher training course, you will need a student visa. Your visa must be sponsored by a teacher training provider that is a licensed sponsor of student visas.
 
-You can [find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) offered by providers who can sponsor student visas. We suggest you contact them to check they can sponsor you before you apply for a training place.
+Use [find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) to search for providers who can sponsor student visas. We suggest you contact them to check they can sponsor you before you apply for a training place.
 
 You’ll be able to apply for your visa if you:
 
-* have a confirmed offer of a place on a course with a licensed student sponsor teacher training provider
+* have a confirmed offer of a place on a course with a teacher training provider that is a licensed sponsor of student visas 
 * have a reference number, called a confirmation of acceptance for studies (CAS), which your training provider will give you
 * [have enough money to support yourself and pay for your course](https://www.gov.uk/student-visa/money)
 * [can speak, read, write, and understand English](https://www.gov.uk/student-visa/knowledge-of-english)
@@ -107,9 +107,9 @@ For your teacher training place offer to be confirmed, you’ll have to pass cri
 
 ### The skilled worker visa 
 
-For a teacher training course where you are paid a salary, you will need a skilled worker visa. Your visa must be sponsored by a licensed sponsor of skilled worker visas.
+For a teacher training course where you are paid a salary, you will need a skilled worker visa. Your visa must be sponsored by a training provider that is a licensed sponsor of skilled worker visas.
 
-You can [find postgraduate teacher training](https://www.gov.uk/student-visa/apply) offered by providers who can sponsor skilled worker visas. Currently, places on these courses are very limited. Before you apply for a salaried teacher training place, we suggest you contact the training provider to check they can sponsor you.
+Use [find postgraduate teacher training](https://www.gov.uk/student-visa/apply) to find courses offered by providers who can sponsor skilled worker visas. Currently, places on these courses are very limited. Before you apply for a salaried teacher training place, we suggest you contact the training provider to check they can sponsor you.
 
 You’ll be able to apply for your visa if:
 
@@ -119,7 +119,7 @@ You’ll be able to apply for your visa if:
 
 For your teacher training place offer to be confirmed, you’ll have to pass criminal record and health checks, so we recommend applying to your training provider early.
 
-### Salary requirement for a skilled worker visa 
+#### Salary requirement for a skilled worker visa 
 
 The salary threshold you must meet depends on the region you work in as a salaried trainee.
 
@@ -133,8 +133,6 @@ Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a
 * rest of England: £18,419
 
 Check the region you will be working in with your teacher training provider.
-
-Find more information about salary requirements if you’re [applying for a skilled worker visa and you’re planning to work in education](https://www.gov.uk/skilled-worker-visa/if-you-work-in-healthcare-or-education).
 
 #### Part-time training
 

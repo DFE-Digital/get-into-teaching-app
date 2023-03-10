@@ -162,7 +162,7 @@ If you are not training to teach in these subjects, any support you get will dep
 
 ### 4. Search and apply for teacher training courses
 
-You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Some courses combine qualified teachers tQTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
+You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Some courses combine qualified teacher status (QTS) with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
 
 Teacher training courses can also be 'fee-paying' or 'salaried'.
 
@@ -191,11 +191,12 @@ The subject you apply to teach must usually be the same, or closely related to, 
 Use [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) to search for courses leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
 
 You can also search by:
+
 * location
 * teaching subject
 * age group
 * courses which pay a salary
-* courses for which student visa or skilled worker visa sponsorship is available.
+* courses for which student visa or skilled worker visa sponsorship is available
 
 When you have chosen your course, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for teacher training</a>.
 
@@ -223,7 +224,9 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
 
 ### 5. Apply for your visa
 
-When you have been accepted on to a teacher training course, you will be able to apply for a visa or immigration status allowing you to study (or work, for salaried courses) in England. 
+To train to teach in England, you will need a visa or immigration status allowing you to study (or work, for salaried courses) in England. 
+
+When you have been accepted on to a teacher training course offering student or skilled worker visa sponsorship, you will be able to apply for your visa.
 
 <div class="inset">
   <h4>Already living in the UK?</h4>
