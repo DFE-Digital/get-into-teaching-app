@@ -60,9 +60,9 @@ If you’re applying for teacher training as a non-UK citizen, you will need a v
 * Irish citizens
 * refugees or asylum seekers
 
-You will not need a visa to train to teach in the UK if:
+You will not need a visa to train to teach in the UK if you:
 
-* you are an Irish citizen
+* are an Irish citizen
 * have [settled or pre-settled status under the EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk), 
 
@@ -83,8 +83,8 @@ If you or your family are from the European Economic Area (EEA) or Switzerland, 
  
 Most non-UK applicants for teacher training will need one of the following:
 
-* the student visa
-* the skilled worker visa
+* a student visa
+* a skilled worker visa
 
 ### The student visa 
 

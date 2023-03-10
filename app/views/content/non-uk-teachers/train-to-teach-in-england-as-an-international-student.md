@@ -200,7 +200,7 @@ You may also wish to read [detailed guidance about fee-paying and salaried cours
 
 ### 5. Apply for your visa
 
-You will need a visa or immigration status allowing you to study (or work, for salaried courses) in England. 
+When you have been accepted on to a teacher training course, you will be able to apply for a visa or immigration status allowing you to study (or work, for salaried courses) in England. 
 
 <div class="inset">
   <h4>Already living in the UK?</h4>
