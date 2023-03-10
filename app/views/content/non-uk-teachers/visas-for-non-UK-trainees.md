@@ -89,7 +89,7 @@ The main visa routes for teacher training in England are:
 * the student visa
 * the skilled worker visa
 
-Depending on your personal circumstances, [you may be eligible for other visas](#other-types-of-visas-you-can-use-to-work-and-study-in-the-UK).
+Depending on your personal circumstances, [you may be eligible for other visas](#other-types-of-visas-you-can-use-to-work-and-study-in-the-uk).
 
 ## Student visa 
 
