@@ -53,47 +53,43 @@ keywords:
   - Settlement Scheme
 ---
 
-If you’re applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study in England. The information on this page is for:
-
+If you’re applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study or work in England. The information on this page is for:
 
 * non-UK citizens living in the UK
 * non-UK citizens living outside the UK
 * Irish citizens
 * refugees or asylum seekers
 
+You will not need a visa to train to teach in the UK if:
 
-If you have [settled or pre-settled status under the EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families), or [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk), you will not need a visa to train to teach in the UK.
+* you are an Irish citizen
+* have [settled or pre-settled status under the EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
+* have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk), 
 
-If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#gradvisa).
+If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#other-types-of-visas-you-can-use-to-work-and-study-in-the-UK).
 
-## Get help with visas and immigration
+## Check your status
 
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa
 ).
+
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
-## Check whether you can still apply to the EU Settlement Scheme 
+### Check whether you can still apply to the EU Settlement Scheme 
 
 If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to [apply to the EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
 
-## What you need to study or work in England
+## Main visa routes for teacher training in England
  
-You’ll need a visa or other immigration status that allows you to work or study in the UK unless you:
-
-* are an Irish citizen
-* have [settled or pre-settled status under the EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families)
-* have indefinite leave to remain
-
-The main visa routes for teacher training in England are:
+Most non-UK applicants for teacher training will need one of the following:
 
 * the student visa
 * the skilled worker visa
 
-Depending on your personal circumstances, [you may be eligible for other visas](#other-types-of-visas-you-can-use-to-work-and-study-in-the-uk).
-
-## Student visa 
+### The student visa 
 
 For a fee-paying teacher training course, you will need a student visa. Your visa must be sponsored by a licensed sponsor of student visas.
+
 You can [find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) offered by providers who can sponsor student visas. We suggest you contact them to check they can sponsor you before you apply for a training place.
 
 You’ll be able to apply for your visa if you:
@@ -109,7 +105,7 @@ For your teacher training place offer to be confirmed, you’ll have to pass cri
   <a href="https://www.gov.uk/student-visa/apply">Apply for a student visa<span></span></a>
 </p>
 
-Skilled worker visa 
+### The skilled worker visa 
 
 For a teacher training course where you are paid a salary, you will need a skilled worker visa. Your visa must be sponsored by a licensed sponsor of skilled worker visas.
 
@@ -123,21 +119,24 @@ You’ll be able to apply for your visa if:
 
 For your teacher training place offer to be confirmed, you’ll have to pass criminal record and health checks, so we recommend applying to your training provider early.
 
-## Salary requirement for a skilled worker visa 
+### Salary requirement for a skilled worker visa 
 
 The salary threshold you must meet depends on the region you work in as a salaried trainee.
 
-### Full-time training
+#### Full-time training
 
 Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a skilled worker visa – this varies by region, as follows:
 
 * inner London: £23,099
 * outer London: £21,832
-* rest of England: £20,480
+* London fringe: £19,613
+* rest of England: £18,419
+
+Check the region you will be working in with your teacher training provider.
 
 Find more information about salary requirements if you’re [applying for a skilled worker visa and you’re planning to work in education](https://www.gov.uk/skilled-worker-visa/if-you-work-in-healthcare-or-education).
 
-### Part-time training
+#### Part-time training
 
 You may be able to train part-time, but your salary must meet the threshold for a skilled worker visa.
 
@@ -145,6 +144,10 @@ There are 2 requirements:
 
 * your part-time salary must be at least £20,480
 * the full-time equivalent of your salary must meet the minimum set in your region for non-UK salaried trainee teachers
+
+<p class="call-to-action__action">
+  <a href="https://www.gov.uk/skilled-worker-visa">Apply for a skilled worker visa<span></span></a>
+</p>
 
 ### Postgraduate teaching apprenticeships
 
@@ -158,13 +161,7 @@ If you do not have settled or pre-settled status under the EU Settlement Scheme,
 * a visa or immigration status allowing you to work in the UK
 * to have been living in the UK for 3 or more years before the start of your apprenticeship
 
-Apply for a skilled worker visa.
-
-<p class="call-to-action__action">
-  <a href="https://www.gov.uk/skilled-worker-visa">Apply for a skilled worker visa<span></span></a>
-</p>
-
-## Other types of visas you can use to work and study in the UK
+## Other types of visas you can use to work and study in the UK
 
 ### Graduate visa
 
@@ -241,3 +238,13 @@ Learn more about [getting an IHS refund](https://www.gov.uk/guidance/immigration
 You’ll also have to pay visa fees which vary depending on which visa you are applying for.
 
 [Calculate how much your visa will cost](https://www.gov.uk/visa-fees).
+
+### Contact
+
+If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
+
+For help with individual applications to training providers or schools, please [register with a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/). Advisers can give you personalised support with your application.
+
+
+
+ 

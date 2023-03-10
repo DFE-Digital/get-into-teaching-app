@@ -209,12 +209,9 @@ You will need a visa or immigration status allowing you to study (or work, for s
   <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>
   you will not need a visa to train to teach in the UK.</p>
 
-  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">Some people can still apply for settled or pre-settled status – check your eligibility</a>.</p>
-
-  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">If you are currently studying in the UK on a student visa, you may be able to apply for a graduate visa</a>.</p>
 </div>
 
-[Find out more about applying for the right visa for your teacher training course](/non-uk-teachers/visas-for-non-UK-trainees).
+[Learn more about applying for the right visa for your teacher training course](/non-uk-teachers/visas-for-non-UK-trainees).
 
 ### 6. Plan your move to the UK
 
@@ -265,6 +262,6 @@ Learn more about:
 
 ## Contact
 
-The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. You can [get support and advice with your application](#get-support-and-advice).
+If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
-However, if you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
+For help with individual applications to training providers or schools, please [register with a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/). Advisers can give you personalised support with your application.
