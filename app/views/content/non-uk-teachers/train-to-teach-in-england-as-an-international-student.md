@@ -77,7 +77,7 @@ Teacher training in England is practical, hands-on and supportive. As an interna
 
 When you have successfully completed your training, you will be awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
 
-QTS will allow you to teach in all schools in England. Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
+QTS will allow you to teach in all schools in England. 
 
 [Read teachers' stories about the rewards of training to teach in England](/blog).
 
@@ -149,7 +149,7 @@ If you haven’t passed an English language test like this, or do not have quali
 
 If you do not have a degree, you can apply to study a 3 to 4 year [undergraduate course in England](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) which combines a teaching degree with [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
-The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) have lots of helpful information about studying at an English university.
+The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) has lots of helpful information about studying at an English university.
 
 
 ### 3. Find out about fees and financial support
@@ -162,13 +162,46 @@ If you are not training to teach in these subjects, any support you get will dep
 
 ### 4. Search and apply for teacher training courses
 
-[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you have chosen your course, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for teacher training</a>.
+You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Some courses combine qualified teachers tQTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
+
+#### Fee-paying and salaried teacher training courses
+
+A fee-paying teacher training course means you pay a fee to study as a teacher. The majority of students training as teachers in England train on this type of course.
+
+Fee-paying courses include:
+
+* university teacher training programmes
+* school-centred initial teacher training (SCITT) programmes
+* School Direct unsalaried teacher training programmes
+
+A salaried teacher training course means you are paid to work in a school while you learn to teach. However, these courses are limited in number and very competitive. 
+
+Salaried courses include:
+
+* School Direct salaried teacher training programmes
+* the Teach First Leadership Development programme
+* postgraduate teaching apprenticeships
+
+#### Choosing a subject to teach and preparing to apply
+
+The subject you apply to teach must usually be the same, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) 
+
+Your [teacher training adviser](#get-support-and-advice) can help with: 
+
+* your choice of course and training provider
+* your choice of subject
+* writing a personal statement
+* ways to research the [English education system](#learn-more-about-life-as-a-teacher-and-the-english-education-system)
+* preparing for your interview
+
+You can [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you have chosen your course, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for teacher training</a>.
+
+You can [search for courses where student or skilled worker visa sponsorship is available](https://www.gov.uk/find-postgraduate-teacher-training-courses). You can also search by location, teaching subject and age group, and for courses which pay a salary
+[Get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) to learn about the different types of courses available.
 
 #### First apply for your training place, then apply for your visa
 
 If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
-
-You can [search for courses where student or skilled worker visa sponsorship is available](https://www.gov.uk/find-postgraduate-teacher-training-courses). You can also search by location, teaching subject and age group, and for courses which pay a salary.
 
 Due to rules about immigration, not all providers can accept international applicants – we suggest you contact them before you apply to check.
 
@@ -180,22 +213,8 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
   </p>
 </div>
 
-#### Choosing a subject to teach and preparing to apply
 
-The subject you apply to teach must usually be the same, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) 
 
-Your [teacher training adviser](#get-support-and-advice) can help with: 
-
-* your choice of subject
-* writing a personal statement
-* ways to research the [English education system](#learn-more-about-life-as-a-teacher-and-the-english-education-system)
-* preparing for your interview
-
-#### Ways to train
-
-You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). [Get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) to learn about the different types of courses available, or explore [how to train to be a teacher in England](/train-to-be-a-teacher).
-
-You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
 
 
 ### 5. Apply for your visa
