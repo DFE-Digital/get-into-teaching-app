@@ -1,7 +1,7 @@
 ---
 title: "Fees and financial support for non-UK trainee teachers"
 description: |-
-  Learn more about bursaries, scholarships and the international relocation payment.
+  Learn more about funding and financial support for non-UK students, including details of the international relocation payment.
 related_content:
     Career progression stories: "/blog/tag/career-progression"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"

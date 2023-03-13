@@ -1,7 +1,7 @@
 ---
 title: "Train to teach in England as an international student"
 description: |-
-  Find out how to train to teach in England as an international student. Get help and guidance on your qualifications, funding and visa.
+  Find out how to train to teach in England as a student from outside the UK. Get help and guidance on your qualifications, funding and visa.
 related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
