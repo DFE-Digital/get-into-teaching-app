@@ -28,8 +28,6 @@ You’ll also have a mentor to support you in your school placements and learnin
 
 There are full-time and part-time teacher training courses available.
 
-As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
-
 [Find postgraduate teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/).
 
 ## What you’ll learn in initial teacher training
@@ -55,6 +53,8 @@ environment
 Typically, you will get 120 days of classroom experience in a minimum of two schools. Through your placements, you’ll have the opportunity to teach, plan, observe and research.
 
 You’ll get classroom experience whether you do school-led or university-led training. School-led training programmes like School Direct usually include more time in school than university-led training.
+
+Where you complete your classroom placements will depend on whether you've chosen a primary or secondary teacher training course. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
 
 Some courses may offer placements in specific kinds of schools, like special schools. You can talk to your course provider about the opportunities available.
 
