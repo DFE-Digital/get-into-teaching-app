@@ -8,6 +8,7 @@ class PageLister
     /landing/how-much-do-teachers-get-paid
     /landing/how-much-do-teachers-get-paid-social
     /landing/how-to-become-a-teacher
+    /landing/if-you-have-a-degree
   ].freeze
 
   class << self
