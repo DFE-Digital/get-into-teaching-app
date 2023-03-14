@@ -187,8 +187,9 @@ If you haven't got QTS, schools you apply to will want to see alternative eviden
 
 You can search and apply for jobs by region, subject specialism and age group. Most teaching vacancies are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September. 
 
-Select a job to apply for, and contact the school to check they are open to sponsoring skilled worker visas. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
+### Check the school you are applying to can sponsor visas
 
+Before you apply for a teaching job, contact the school to make sure it is a Home Office licensed visa sponsor. If the school is a sponsor, it can help you apply for your visa. Schools can also become sponsors to employ you. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
 
 You can set up a job alert to be updated about opportunities throughout the year.
 
