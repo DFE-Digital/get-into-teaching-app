@@ -21,7 +21,7 @@ keywords:
   - International
   - Overseas
   - Foreign
-  – "Non-UK"
+  - Non-UK
   - Nationality
   - Residency
   - EEA
