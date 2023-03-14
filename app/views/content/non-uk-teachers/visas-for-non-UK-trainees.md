@@ -1,7 +1,7 @@
 ---
 title: "Apply for your visa to train to teach in England"
 description: |-
-  Learn more about types of visa and how to apply.
+  Learn more about types of visa non-UK citizens will need to study or work in England, and how to apply.
 related_content:
     Career progression stories: "/blog/tag/career-progression"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
@@ -14,6 +14,7 @@ keywords:
   - International
   - Overseas
   - Foreign
+  – Non-UK
   - Nationality
   - Residency
   - EEA
@@ -64,7 +65,7 @@ You will not need a visa to train to teach in the UK if you:
 
 * are an Irish citizen
 * have [settled or pre-settled status under the EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
-* have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk), 
+* have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
 
 If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#other-types-of-visas-you-can-use-to-work-and-study-in-the-UK).
 
@@ -107,13 +108,13 @@ For your teacher training place offer to be confirmed, you’ll have to pass cri
 
 ### The skilled worker visa 
 
-For a teacher training course where you are paid a salary, you will need a skilled worker visa. Your visa must be sponsored by a training provider that is a licensed sponsor of skilled worker visas.
+For a teacher training course where you are paid a salary, you will need a skilled worker visa. Your visa must be sponsored by a training provider which is a licensed sponsor of skilled worker visas.
 
 Use [find postgraduate teacher training](https://www.gov.uk/student-visa/apply) to find courses offered by providers who can sponsor skilled worker visas. Currently, places on these courses are very limited. Before you apply for a salaried teacher training place, we suggest you contact the training provider to check they can sponsor you.
 
 You’ll be able to apply for your visa if:
 
-* you have a confirmed offer for a salaried training place at a school that is a licensed skilled worker sponsor
+* you have a confirmed offer for a salaried training place at a school which is a licensed skilled worker sponsor
 * [you can speak, read, write, and understand English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * your salary meets the requirement for a skilled worker visa
 
@@ -169,11 +170,9 @@ To apply, you will need to have been sponsored by a Home Office licensed student
 
 The graduate visa will allow you to study, work, or look for work in the UK for up to 2 years after completing your studies (3 years for PhD students) without a sponsor. 
 
-This includes training as a teacher on a salaried or fee-paying initial teacher training course, if the course does not meet the requirements for a student visa.
+This includes training as a teacher on a salaried or fee-paying initial teacher training course, if the course does not meet the requirements for a student visa. If the course can sponsor a student visa, you must apply for this type of visa.
 
-If the course can sponsor a student visa, you must apply for this type of visa.
-
-You will be able to switch from a graduate visa to another visa (such as the skilled worker visa) without having to leave the UK, if you meet the requirements for the other visa route.
+You will be able to switch from a graduate visa to another visa (such as the skilled worker visa) without having to leave the UK, if you meet the requirements for the new visa route.
 
 ### High potential individual visa
 
@@ -193,7 +192,7 @@ If your visa application is successful, you will be able to train as a teacher o
 
 The [Youth Mobility Scheme](https://www.gov.uk/youth-mobility) allows [young people from certain countries](https://www.gov.uk/youth-mobility/eligibility) to come to the UK to study or work without a sponsor. This includes training as a teacher through either a salaried or fee-paying initial teacher training course.
 
-A Youth Mobility Scheme visa lasts up to 2 years. You may be able to switch from a Youth Mobility Scheme visa to another visa route (for example, the skilled worker visa) without having to leave the UK. You’ll need to meet the requirements for the other visa route.
+A Youth Mobility Scheme visa lasts up to 2 years. You may be able to switch from a Youth Mobility Scheme visa to another visa route (for example, the skilled worker visa) without having to leave the UK. You’ll need to meet the requirements for the new visa route.
 
 ### Other visas 
 Depending on your personal circumstances, you may be able to work or study in the UK on alternative visas – for example:
@@ -237,7 +236,7 @@ You’ll also have to pay visa fees which vary depending on which visa you are a
 
 [Calculate how much your visa will cost](https://www.gov.uk/visa-fees).
 
-### Contact
+## Contact
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 

@@ -1,7 +1,7 @@
 ---
-title: "Train to teach in England as an international student"
+title: "Train to teach in England as a non-UK citizen"
 description: |-
-  Find out how to train to teach in England as an international student. Get help and guidance on your qualifications, funding and visa.
+  Find out how to train to teach in England as a non-UK citizen. Get help and guidance on your qualifications, funding and visa.
 related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
@@ -9,8 +9,8 @@ related_content:
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.05
-navigation_title: Train to teach in England as an international student
-navigation_description: Find out how to train to teach in England as an international student and get English qualified teacher status (QTS).
+navigation_title: Train to teach in England as a non-UK citizen
+navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
 date: "2021-05-27"
 image: "static/content/hero-images/0003.jpg"
 backlink: "../../"
@@ -97,7 +97,7 @@ When you plan your training, bear in mind that:
 living costs, to train (depending on your immigration status and the subject you train to teach, you may get some financial support)
 - training lasts one academic year full-time, or longer part-time
 - you can apply for paid teaching jobs as soon as you successfully complete your training
-- you'll earn at least £28,000 a year (or higher in London) when you qualify as a teacher
+- you'll earn at least £28,000 a year (or more in London) when you qualify as a teacher
 - you can update, extend or switch your visa to live and work in the UK long-term
 
 
@@ -120,7 +120,7 @@ For help applying, you can:
 To train to teach in England, you will need:
 
 * a bachelor’s degree (this can be from a university outside the UK)
-* an English language qualification which is the same standard as a grade 4 GCSE (General Certificate of Secondary Education)
+* an English language qualification which is the same standard as a grade 4 General Certificate of Secondary Education (GCSE)
 * a maths qualification which is the same standard as a grade 4 GCSE
 * if teaching children aged 3 to 11 in primary school, a physics, chemistry or biology (science) qualification which is the same standard as a grade 4 GCSE
 
@@ -141,7 +141,10 @@ A statement of comparability proves that your school and university qualificatio
 
 #### English language, maths and science proficiency
 
-Your English language qualification could be evidence you’ve reached a certain standard in an English language test, for example, the [International English Language Testing System (IELTS)](https://www.ielts.org/), [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl), or [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/),  
+Your English language qualification could be evidence you’ve reached a certain standard in an English language test, for example one of the following: 
+* the [International English Language Testing System (IELTS)](https://www.ielts.org/)
+* [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl)
+* [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/)  
 
 If you haven’t passed an English language test like this, or do not have qualifications in maths or science which are the same standard as grade 4 GCSE, some teacher training providers will let you sit tests in these subjects. It’s best to contact them to ask about their policy before you apply. 
 
@@ -162,7 +165,7 @@ If you are not training to teach in these subjects, any support you get will dep
 
 ### 4. Search and apply for teacher training courses
 
-You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Some courses combine qualified teacher status (QTS) with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
+You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Some courses combine [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
 
 Teacher training courses can also be 'fee-paying' or 'salaried'.
 
@@ -182,11 +185,15 @@ Salaried courses include:
 
 * School Direct salaried teacher training programmes
 * the Teach First Leadership Development programme
-* postgraduate teaching apprenticeships
+* postgraduate teaching apprenticeships – [to apply for an apprenticeship, you'll need to meet certain visa requirements](/non-uk-teachers/visas-for-non-UK-trainees)
 
-#### Choosing a subject to teach and preparing to apply
+[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists fee-paying and salaried training courses.
+
+#### Choosing a subject to teach 
 
 The subject you apply to teach must usually be the same, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) 
+
+#### Finding the right course for you and getting help
 
 Use [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) to search for courses leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
 
@@ -197,8 +204,6 @@ You can also search by:
 * age group
 * courses which pay a salary
 * courses for which student visa or skilled worker visa sponsorship is available
-
-When you have chosen your course, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for teacher training</a>.
 
 Your [teacher training adviser](#get-support-and-advice) can help with: 
 
@@ -221,6 +226,10 @@ Due to rules about immigration, not all providers can accept international appli
 If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.
   </p>
 </div>
+
+<p class="call-to-action__action">
+  <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find and apply for teacher training courses<span>in England</span></a>
+</p>
 
 ### 5. Apply for your visa
 
