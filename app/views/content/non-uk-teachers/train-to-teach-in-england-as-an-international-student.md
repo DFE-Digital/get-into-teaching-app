@@ -229,7 +229,7 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
 </div>
 
 <p class="call-to-action__action">
-  <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find and apply for teacher training courses<span>in England</span></a>
+  <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find and apply for teacher training courses<span> in England</span></a>
 </p>
 
 ### 5. Apply for your visa

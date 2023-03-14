@@ -60,7 +60,6 @@ The information on this page is for:
 
 * non-UK citizens living in the UK
 * non-UK citizens living outside the UK
-* Irish citizens
 * refugees or asylum seekers
 
 * are an Irish citizen
