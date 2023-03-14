@@ -67,7 +67,7 @@ You will not need a visa to train to teach in the UK if you:
 * have [settled or pre-settled status under the EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
 
-If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#other-types-of-visas-you-can-use-to-work-as-a-teacher-in-england).
+If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#other-types-of-visa-you-can-use-to-work-and-study-in-england).
 
 ### The EU Settlement Scheme 
 
@@ -160,7 +160,7 @@ If you do not have settled or pre-settled status under the EU Settlement Scheme,
 * a visa or immigration status allowing you to work in the UK
 * to have been living in the UK for 3 or more years before the start of your apprenticeship
 
-## Other types of visas you can use to work and study in the UK
+## Other types of visa you can use to work and study in England
 
 ### Graduate visa
 

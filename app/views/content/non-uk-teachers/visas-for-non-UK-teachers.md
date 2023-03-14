@@ -67,7 +67,7 @@ The information on this page is for:
 * have [settled or pre-settled status under the EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk)
 
-If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#other-types-of-visas-you-can-use-to-work-as-a-teacher-in-england).
+If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#other-types-of-visa-you-can-use-to-work-as-a-teacher-in-england).
 
 ### The EU Settlement Scheme 
 
@@ -129,7 +129,7 @@ Apply for a skilled worker visa.
   <a href="https://www.gov.uk/skilled-worker-visa">Apply for a skilled worker visa<span></span></a>
 </p>
 
-## Other types of visas you can use to work as a teacher in England
+## Other types of visa you can use to work as a teacher in England
 
 ### Graduate visa
 
