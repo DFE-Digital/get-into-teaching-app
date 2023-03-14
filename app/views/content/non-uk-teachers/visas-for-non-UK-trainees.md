@@ -69,16 +69,16 @@ You will not need a visa to train to teach in the UK if you:
 
 If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#other-types-of-visas-you-can-use-to-work-and-study-in-the-UK).
 
+### The EU Settlement Scheme 
+
+If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to [apply to the EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
+
 ## Check your status
 
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa
 ).
 
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
-
-### The EU Settlement Scheme 
-
-If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to [apply to the EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
 
 ## Main visa routes for teacher training in England
  
