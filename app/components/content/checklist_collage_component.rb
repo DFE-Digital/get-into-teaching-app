@@ -17,5 +17,9 @@ module Content
         end,
       )
     end
+
+    def image_classes
+      ["images", "images-#{image_paths.count}"]
+    end
   end
 end
