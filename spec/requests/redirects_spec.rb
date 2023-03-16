@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe "Redirects", content: true, type: :request do
+  include_context "with stubbed latest privacy policy api"
+
   before(:all) { @result = {} }
 
   let(:query_string) { "#{expected_query_string}&page=5" }
