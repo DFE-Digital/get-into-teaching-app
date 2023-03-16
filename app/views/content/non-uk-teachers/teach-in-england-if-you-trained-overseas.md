@@ -225,7 +225,7 @@ You may be asked about your knowledge of English education in interviews for tea
 
 ## Apply for your visa
 
-You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](non-uk-teachers/visas-for-non-UK-teachers). 
+You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](/non-uk-teachers/visas-for-non-UK-teachers). 
 
 You may have a pre-existing right to work in the UK, such as settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain in the UK](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk).
 
