@@ -183,6 +183,10 @@ If you’re not eligible to use the new service, you may be able to:
 
 Once you've obtained QTS, you will need to find a teaching job in England. To do this, you must apply to individual schools (not the Department for Education). 
 
+### Check the school you apply to can sponsor your visa
+
+Before you apply for a teaching job, contact the school to make sure it is a Home Office licensed visa sponsor. If the school is a sponsor, it can help you apply for your visa. Schools can also become sponsors to employ you. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
+
 ### Your professional qualifications 
 
 If you haven't got QTS, schools you apply to will want to see alternative evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your qualifications compare to English ones.  
@@ -191,9 +195,26 @@ You can search and apply for jobs by region, subject specialism and age group. M
 
 You can set up a job alert to be updated about opportunities throughout the year.
 
-### Check the school you apply to can sponsor your visa
+### Tips on applying
 
-Before you apply for a teaching job, contact the school to make sure it is a Home Office licensed visa sponsor. If the school is a sponsor, it can help you apply for your visa. Schools can also become sponsors to employ you. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
+As part of your application, schools will usually ask for your:
+
+* educational and professional qualifications
+* employment history
+* personal statement
+* references
+
+Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school.
+
+[Get tips on writing a personal statement](https://www.tes.com/jobs/careers-advice/application-and-interview/how-write-perfect-teaching-personal-statement).
+
+Some schools may ask for a curriculum vitae (CV) – [get tips on writing a CV](https://nationalcareers.service.gov.uk/careers-advice/cv-sections).
+
+If you’re shortlisted, you’ll be invited for interview and asked to teach part of a class. If the school makes you a conditional offer, you’ll then have to pass safeguarding and criminal records checks. 
+
+### Prepare for your interview
+
+You may be asked about your knowledge of English education in interviews for teaching jobs. To prepare, you can [read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
 
 
@@ -204,7 +225,7 @@ Before you apply for a teaching job, contact the school to make sure it is a Hom
 
 ## Apply for your visa
 
-You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration). 
+You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](non-uk-teachers/visas-for-non-UK-teachers). 
 
 You may have a pre-existing right to work in the UK, such as settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain in the UK](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk).
 
@@ -217,7 +238,7 @@ You can also learn more about [bringing your partner and children](https://www.g
 
 ## Learn about life as a teacher in England
 
-You may be asked about your knowledge of English education in interviews for teaching jobs. To prepare, you can [read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). 
+
 
 
 If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/support-for-early-career-teachers).
