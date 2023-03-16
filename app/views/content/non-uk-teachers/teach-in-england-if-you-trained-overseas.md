@@ -1,7 +1,7 @@
 ---
 title: "Teach in England if you trained outside the UK"
 description: |-
-  Teach in England if you're a qualified teacher from overseas. Explore the benefits of teaching in England and join a world class education system.
+  Teach in England if you're a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
 related_content:
     Career progression stories: "/blog/tag/career-progression"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
@@ -117,9 +117,11 @@ Thirdly, you must move to England no more than 3 months before the start of your
 
 You’ll need to have started your teaching job in a state secondary school to make your application – the guidance on this page explains how to find a teaching job and apply for your visa. 
 
-Applications will be open from 1 September to 31 October 2023. To express your interest in applying, email us at IRP.ExpressInterest@education.gov.uk. We’ll be in touch when applications open in autumn 2023. For information about applications in 2024, check back to this page.
+You will be able to apply for the IRP from 1 September to 31 October 2023. You can email us at IRP.ExpressInterest@education.gov.uk to let us know you are interested in applying for the IRP. You will be asked to fill in a form giving us your details and we’ll get in touch when IRP applications open. If your application is successful, you’ll receive the money around the end of your first school term of employment.
 
-If your application is successful, you’ll receive the money around the end of your first school term of employment.
+For information about IRP applications in 2024, check back to this page.
+
+Please don't send us your CV or enquiries about teaching jobs, as DfE does not directly employ teachers. [Find a teaching job](#find-a-teaching-job).
 
 You will not need to pay an agent or any other third party to complete your application. If you have had a message asking you to apply or contact someone about the IRP, treat it carefully as it could be a scam. [Find out what to do about suspicious messages](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 

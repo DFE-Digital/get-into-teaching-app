@@ -100,7 +100,7 @@ redirects:
   "/explore-my-options/further-education-teacher-training": "/become-a-further-education-teacher"
   "/further-education-teacher-training": "/become-a-further-education-teacher"
   "/how-to-apply-for-teacher-training/applying-through-ucas-teacher-training": "/steps-to-become-a-teacher"
-  "/explore-my-options/teacher-training-routes/specialist-training-options/assessment-only/ao-provider-list": "/assessment-only-providers"
+  "/explore-my-options/teacher-training-routes/specialist-training-options/assessment-only/ao-provider-list": "/train-to-be-a-teacher/assessment-only-route-to-qts"
   "/explore-my-options/teacher-training-routes/part-time-courses": "/train-to-be-a-teacher"
   "/explore-my-options/training-to-teach-secondary-subjects/training-to-teach-music": "/steps-to-become-a-teacher"
   "/explore-my-options/training-to-teach-secondary-subjects/training-to-teach-religious-education": "/steps-to-become-a-teacher"
@@ -297,6 +297,8 @@ redirects:
   "/funding-your-training": "/funding-and-support"
   "/tips-on-applying-for-teacher-training": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
   "/get-support-training-to-teach-if-you-are-disabled": "/funding-and-support/if-youre-disabled"
+  "/assessment-only-providers": "/train-to-be-a-teacher/assessment-only-route-to-qts"
+  "/train-to-be-a-teacher/if-you-have-experience": "/train-to-be-a-teacher/assessment-only-route-to-qts"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"

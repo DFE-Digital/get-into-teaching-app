@@ -1,14 +1,14 @@
 <div class="action-container">
   <div class="heading-container">
     <h2 class="heading-m heading--box-purple">
-      Get the latest teaching information and support
+      <%= title %>
     </h2>
   </div>
 
   <div class="content">
     <div class="inset">
       <p>
-        Answer a couple of questions about yourself and we'll send you more information about teaching benefits, as well as helpful tips and advice to get you one step closer to a career in teaching.
+        <%= intro %>
       </p>
 
       <%= form_with builder: GOVUKDesignSystemFormBuilder::FormBuilder, url: mailing_list_step_path(:name), scope: :mailing_list_steps_name, method: :put do |f| %>

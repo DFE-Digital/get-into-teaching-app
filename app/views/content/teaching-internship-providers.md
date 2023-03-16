@@ -55,7 +55,7 @@ provider_groups:
       email: v.scott@becketonline.co.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Nottinghamshire Torch SCITT
-      link: https://www.teachnottinghamshire.co.uk/
+      link: https://www.teachnottinghamshire.co.uk/internships.php
       name: Rebecca Morgan-Jones
       email: contact@teachnottinghamshire.co.uk 
       subjects: chemistry, computing, maths, physics, languages
@@ -112,9 +112,9 @@ provider_groups:
       email: mch@northgate.suffolk.sch.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Ormiston Academies Trust
-      link: https://www.ormistonacademiestrust.co.uk
+      link: https://www.ormistonacademiestrust.co.uk/careers-and-training/teaching-internships-programme/
       name: Jemma Sherwood
-      email: jemma.sherwood@ormistonacademies.co.uk
+      email: internships@ormistonacademies.co.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Redborne Teaching Partnership
       link: https://www.redbornecommunitycollege.com/page/?title=Paid+Internship+Programme&pid=179
@@ -154,7 +154,7 @@ provider_groups:
       email: jose.oliveira@harrisfederation.org.uk / shona.findlay@harrisfederation.org.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: LETTA (London East Teacher Training Alliance)
-      link: https://letta.org.uk/train/
+      link: https://letta.org.uk/train/teachinginternships/
       name: Ben Sperring
       email: train@letta.org.uk
       subjects: maths, physics
@@ -258,9 +258,9 @@ provider_groups:
       email: m.lairini@northerneducationtrust.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Ormiston Academies Trust
-      link: https://www.ormistonacademiestrust.co.uk
+      link: https://www.ormistonacademiestrust.co.uk/careers-and-training/teaching-internships-programme/
       name: Jemma Sherwood
-      email: jemma.sherwood@ormistonacademies.co.uk
+      email: internships@ormistonacademies.co.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Teach Manchester
       link: https://teachmanchester.com/
@@ -268,12 +268,12 @@ provider_groups:
       email: gbalfour@loreto.ac.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Valley Learning Partnership
-      link: http://www.brighouse.calderdale.sch.uk/
+      link: https://www.brighouse.calderdale.sch.uk/join-us/train-with-us/
       name: Janet Brierley
       email: j.brierley@brighouse.calderdale.sch.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Wigan and West Lancashire Catholic School Direct 
-      link: https://www.catholicsd.org.uk/
+      link: https://www.catholicsd.org.uk/internships/
       name: Sarah Holland
       email: hollands267@saintpetershigh.wigan.sch.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -290,7 +290,7 @@ provider_groups:
       email: k.blackburn@glfschools.org
       subjects: chemistry, computing, maths, physics, languages
     - header: George Abbot School in partnership with George Abbot SCITT
-      link: https://www.georgeabbot.surrey.sch.uk/
+      link: https://georgeabbottraining.co.uk/
       name: Joanna Jones
       email: jjones@georgeabbot.surrey.sch.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -300,7 +300,7 @@ provider_groups:
       email: jonesm@ntc.kent.sch.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Ringwood School
-      link: https://www.ringwood.hants.sch.uk/
+      link: https://www.ringwood.hants.sch.uk/teacher-training/paid-internships/
       name: Clare Adams
       email: cadams@ringwood.hants.sch.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -325,7 +325,7 @@ provider_groups:
       email: k.cornforth@xaviercet.org.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: i2i Teaching Partnership
-      link: https://www.i2ipartnership.co.uk/
+      link: https://www.i2ipartnership.co.uk/1243/undergraduate-teaching-internship-programme
       name: Liz Wylie
       email: lwylie@i2ipartnership.co.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -347,7 +347,7 @@ provider_groups:
       email: tconnole@patesgs.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Ringwood School
-      link: https://www.ringwood.hants.sch.uk/
+      link: https://www.ringwood.hants.sch.uk/teacher-training/paid-internships/
       name: Clare Adams
       email: cadams@ringwood.hants.sch.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -369,12 +369,12 @@ provider_groups:
   West Midlands:
     providers:
     - header: Arthur Terry SCITT
-      link: https://arthurterryteachingschool.atlp.org.uk/
+      link: https://arthurterryteachingschool.atlp.org.uk/teaching-internship-programme/
       name: Robert Bloomfield
       email: rbloomfield@arthurterry.bham.sch.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Barr Beacon SCITT
-      link: https://barrbeaconschool.co.uk/
+      link: https://bbscitt.co.uk/teaching-internships/
       name: Michael Eszrenyi
       email: meszrenyi@barrbeaconschool.co.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -389,9 +389,9 @@ provider_groups:
       email: Claire.amed@creativeeducationtrust.org.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Ormiston Academies Trust
-      link: https://www.ormistonacademiestrust.co.uk
+      link: https://www.ormistonacademiestrust.co.uk/careers-and-training/teaching-internships-programme/
       name: Jemma Sherwood
-      email: jemma.sherwood@ormistonacademies.co.uk
+      email: internships@ormistonacademies.co.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Outwood Institute of Education
       link: https://oie.outwood.com/latest-news/2023/2/8/outwood-institute-of-education-opens-applications-for-teaching-internship-programme
@@ -405,7 +405,7 @@ provider_groups:
       email: ad@princehenrys.worcs.sch.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: St Joseph's College
-      link: https://www.stjosephstrentvale.com/
+      link: https://www.sjcscitt.co.uk/page/?title=DfE+Teaching+Internships&pid=26
       name: Sam Chater
       email: schater@stjosephsmail.com
       subjects: chemistry, computing, maths, physics, languages
@@ -425,14 +425,14 @@ provider_groups:
       email: mborders@catschools.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Windsor Academy Trust
-      link: https://www.windsoracademytrust.org.uk/
+      link: https://www.windsoracademytrust.org.uk/professional-learning/teaching-internships/
       name: Nathalie Gotting
       email: ngotting@kingswinford.windsoracademytrust.org.uk
       subjects: chemistry, computing, maths, physics, languages
   Yorkshire and the Humber:
     providers:
     - header: Learners First Schools Partnership
-      link: https://www.learnersfirst.net/
+      link: https://www.learnersfirst.net/internships/
       name: Claire Garbutt/Georgia Osborne
       email: cgarbutt@learnersfirst.org / gosborne@learnersfirst.org
       subjects: chemistry, computing, maths, physics, languages
@@ -442,7 +442,7 @@ provider_groups:
       email: m.lairini@northerneducationtrust.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Northern Star Academies Trust
-      link: https://www.northernlightsscitt.com/
+      link: https://www.northernlightsscitt.com/our-programmes/teaching-internships1/
       name: Helen Smith
       email: training@northernlightsscitt.com
       subjects: chemistry, computing, maths, physics, languages

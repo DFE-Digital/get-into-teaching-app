@@ -60,7 +60,7 @@ You can usually do this if you’ve worked as an unqualified teacher:
 * for a significant amount of time (for example, 2 years)
 * in more than one school
 
-[Find out how to get QTS through assessment only](/train-to-be-a-teacher/if-you-have-experience).
+[Find out how to get QTS through assessment only](/train-to-be-a-teacher/assessment-only-route-to-qts ).
 
 ## Get QTS if you qualified as a teacher outside England
 

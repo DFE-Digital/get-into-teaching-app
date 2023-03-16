@@ -1,14 +1,24 @@
 ---
-title: Assessment only QTS providers
+title: "Assessment only route to QTS"
+heading: "Assessment only route to QTS for unqualified teachers"
 description: |-
-  Find accredited providers who offer the assessment only teacher training route to qualified teacher status (QTS) for experienced teachers with a degree.
+  Find out about the assessment only route to qualified teacher status (QTS) for unqualified teachers who have worked in a classroom.
 date: "2021-06-08"
 image: false
 backlink: /
+related_content:
+    Career progression stories: "/blog/tag/career-progression"
+    Salaries and benefits : "/salaries-and-benefits"
+    Attend an event : "/events"
+promo_content:
+    - content/train-to-be-a-teacher/promos/adviser-promo-assessment-only
+navigation: 20.10
+navigation_title: If you’ve worked as an unqualified teacher
+navigation_description: If you've worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through an assessment only route.
 fullwidth: true
 content:
-  - content/assessment-only-providers/listing
-  - content/assessment-only-providers/update-details
+  - content/train-to-be-a-teacher/assessment-only-route-to-qts/listing
+  - content/train-to-be-a-teacher/assessment-only-route-to-qts/update-details
 provider_groups:
   East of England:
     providers:
@@ -463,7 +473,7 @@ provider_groups:
       telephone: 020 3194 3200
       email: institute@tesglobal.com
   Non-UK:
-    description: content/assessment-only-providers/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
+    description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
     - header: University of Sunderland
       link: https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/
@@ -484,11 +494,6 @@ provider_groups:
       name: Andrew Locke
       telephone: 020 3194 3200
       email: institute@tesglobal.com
-inset_text:
-  international-content:
-    text: |-
-      If you’re a non-UK citizen, you should contact <a href="#group--non-uk">training providers who assess international teachers</a>. None of the other UK regional or national providers can help with non-UK enquiries. Please do not contact them if you are not in the UK.
-    color: grey
 keywords:
   - Assessment Only
   - Assessment
@@ -497,10 +502,47 @@ keywords:
   - experienced
 ---
 
-If you have a degree and enough classroom experience, you may be able to get qualified teacher status (QTS) through a 12-week assessment only (AO) programme.
+If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/what-is-qts) through an assessment only programme.
 
-The accredited teacher training providers listed on this page offer the AO programme. Contact them directly to ask them about entry criteria and to apply.
+If you already have QTS, find out how you can [return to teaching](/returning-to-teaching).
 
-Fees range from about £1,500 to £4,000, but vary between providers so it's best to check with them directly for more information.
+## What is the assessment only route to QTS?
 
-$international-content$
+You can take the assessment only route to QTS if you already meet the standards for qualified teacher status, so do not need any further training.
+
+Instead, you will undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments. This will vary by your provider.
+
+The assessment programme takes up to 12 weeks.
+
+## How much does assessment only QTS cost?
+
+Fees range from about £1,500 to £4,000, but vary between provider so it’s best to check with them for more information.
+
+Fees may be paid by you or your school at the start of the programme. If you’re currently working in a school, talk to your employer about your funding options. 
+
+## Eligibility for assessment only QTS
+
+To be eligible, you need (all of the following):
+
+* to be able to show you meet the [teachers' standards](https://www.gov.uk/government/publications/teachers-standards) without any more training
+* to have worked in 2 or more schools
+* a degree
+* GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
+
+Specific entry criteria may vary by teacher training provider. You should ask them about eligibility before you apply.
+
+### Are teaching assistants eligible?
+
+If you've worked as a teaching assistant, it's unlikely you'll have the experience required for assessment only.
+
+There may be exceptional cases where teaching assistants have worked for a significant amount of time (at least 2 years) independently teaching classes and may be eligible.
+
+Talk to your provider about whether your experience makes you eligible for this route.
+
+Or, find other ways you can [train to be a teacher](/train-to-be-a-teacher).
+
+### Are non-UK citizens eligible?
+
+If you’re a non-UK citizen, you should contact [training providers who assess international teachers](#group--non-uk).
+
+None of the other UK regional or national providers can help with non-UK enquiries. Please do not contact them if you are not in the UK.
