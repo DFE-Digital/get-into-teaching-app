@@ -104,10 +104,10 @@ If you have QTS and work in:
 
 * inner London, you must earn £32,157
 * outer London, you must earn£29,915
-* London fringe, you must earn£26,948
+* London fringe, you must earn £26,948
 * rest of England, you must earn £25,714
 
-If you do have QTS and work in:
+If you do not have QTS and work in:
 
 * inner London, you must earn £23,099
 * outer London, you must earn £21,832

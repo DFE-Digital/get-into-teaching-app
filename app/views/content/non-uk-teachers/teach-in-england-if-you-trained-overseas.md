@@ -191,11 +191,11 @@ Before you apply for a teaching job, contact the school to make sure it is a Hom
 
 If you haven't got QTS, schools you apply to will want to see alternative evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your qualifications compare to English ones.  
 
-You can search and apply for jobs by region, subject specialism and age group. Most teaching vacancies are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September. 
+### Tips on applying
+
+You can search and apply for jobs by region, subject specialism and age group. Most [teaching vacancies](https://teaching-vacancies.service.gov.uk/) are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September. 
 
 You can set up a job alert to be updated about opportunities throughout the year.
-
-### Tips on applying
 
 As part of your application, schools will usually ask for your:
 
@@ -204,13 +204,11 @@ As part of your application, schools will usually ask for your:
 * personal statement
 * references
 
-Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school.
-
-[Get tips on writing a personal statement](https://www.tes.com/jobs/careers-advice/application-and-interview/how-write-perfect-teaching-personal-statement).
+Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school. [Get tips on writing a personal statement](https://www.tes.com/jobs/careers-advice/application-and-interview/how-write-perfect-teaching-personal-statement).
 
 Some schools may ask for a curriculum vitae (CV) – [get tips on writing a CV](https://nationalcareers.service.gov.uk/careers-advice/cv-sections).
 
-If you’re shortlisted, you’ll be invited for interview and asked to teach part of a class. 
+If you’re shortlisted, you’ll be invited for interview and you may be asked to demonstrate your teaching skills. 
 
 
 ### Prepare for your interview
@@ -242,12 +240,21 @@ If you’re not sure about your immigration status, you can [check if you need a
 You can also learn more about [bringing your partner and children](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
 
 
-## Learn about life as a teacher in England
+## Life as a teacher in England
 
+Many teachers who qualified outside the UK settle in England and develop highly successful careers in teaching. 
 
-
+### Career progression
 
 If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/support-for-early-career-teachers).
+
+You'll also be able to develop your career through the [National professional qualifications framework](https://www.gov.uk/guidance/national-professional-qualifications-framework).
+
+### Financial help
+
+You may be eligible for the [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) or the [early career payment](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools). 
+
+You can only receive the [international relocation payment (IRP)](#get-an-international-relocation-payment-irp-worth-£10000) once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
 
 ### Meet non-UK citizens who have made the move to teach in England 
 
@@ -255,7 +262,9 @@ If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-e
 
 ## Plan your move to England
 
-The following suggestions and resources may be useful as you plan your move:
+Once you have been offered a teaching job and successfully applied for your visa, you can start planning your move to England. 
+
+The following suggestions and resources may be useful:
 
 * open an account with a digital bank based in the UK – you can do this before you arrive in the UK, and you will not need a UK address to do so
 * [find somewhere to live](https://www.gov.uk/government/publications/how-to-rent)
