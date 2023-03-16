@@ -3,6 +3,7 @@ title: "Apply for your visa to teach in England"
 description: |-
   Learn more about types of visa non-UK citizens will need to work in England, and how to apply.
 related_content:
+    Teach in England if you trained outside the UK: " /non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Career progression stories: "/blog/tag/career-progression"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
@@ -62,13 +63,15 @@ The information on this page is for:
 * non-UK citizens living outside the UK
 * refugees or asylum seekers
 
+### Teachers who will not need a visa
+
+You will not need a visa if you:
+
 * are an Irish citizen
 * have [settled or pre-settled status under the EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk)
 
 If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#other-types-of-visa-you-can-use-to-work-as-a-teacher-in-england).
-
-### The EU Settlement Scheme 
 
 If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to [apply to the EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
 
@@ -79,7 +82,7 @@ If you’re not sure about your immigration status, you can [check if you need a
 
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
-## Main visa route for teaching in England
+## The skilled worker visa for teachers
 
 The main visa route for non-UK citizens wishing to teach in England is the skilled worker visa.
 
@@ -93,17 +96,19 @@ You’ll be able to apply for your skilled worker visa if:
 
 ### Salary requirement for a skilled worker visa
 
-The salary threshold you must meet depends on whether you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts#teachers-who-trained-outside-the-uk) and the region you are applying to work in.
+The salary you must be paid to get a visa depends on whether you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts#teachers-who-trained-outside-the-uk) and the region you are applying to work in.
 
-The minimum salary non-UK teachers must earn to be eligible for a skilled worker visa are as follows.
+The minimum salary non-UK teachers must be paid to be eligible for a skilled worker visa are as follows.
 
 If you have QTS and work in:
+
 * inner London, you must earn £32,157
 * outer London, you must earn£29,915
 * London fringe, you must earn£26,948
 * rest of England, you must earn £25,714
 
 If you do have QTS and work in:
+
 * inner London, you must earn £23,099
 * outer London, you must earn £21,832
 * London fringe, you must earn £19,613
@@ -116,13 +121,11 @@ Check the region you will be working in with the school employing you.
 You can work part time, but your salary must meet the threshold for a skilled worker visa. There are 2 requirements:
 
 * your part-time salary must be at least £20,480
-* the full-time equivalent of your salary must meet the minimum set for your region and status (QTS or non-QTS)
+* the full-time equivalent of your salary must meet the minimum set for your region and status (QTS or non-QTS)
 
 Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary on offer does not meet the skilled worker visa requirements.
 
-The salary requirements for a skilled worker visa apply whether [the type of school you work in is funded by the UK government or in the private sector](https://www.gov.uk/types-of-school).
-
-Apply for a skilled worker visa.
+The salary requirements for a skilled worker visa apply whether [the type of school you work in is funded by the UK government or is in the private sector](https://www.gov.uk/types-of-school).
 
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/skilled-worker-visa">Apply for a skilled worker visa<span></span></a>
