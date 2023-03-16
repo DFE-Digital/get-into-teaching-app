@@ -224,6 +224,10 @@ provider_groups:
       name: Karen Craven
       telephone: 0161 973 1179 (ext 2289)
       email: karencraven@thedeantrust.co.uk
+     - header: Bright Futures SCITT
+      link: https://www.bright-futures.co.uk/professional-development-institute/bright-futures-scitt/our-programmes/assessment-only-route-to-qts-aor/
+      name: Hilary Langmead-Jones
+      email: admin@scitt.bright-futures.co.uk 
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
