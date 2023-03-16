@@ -74,6 +74,14 @@ We’ll continue to test the accessibility of this service as it develops.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 9 December 2022. It was last reviewed on 9 December 2022.
+This statement was prepared on 9 December 2022. It was last reviewed on 16 March 2023.
 
 This website was last tested independently on 4 May 2022. The test was carried out by Digital Accessibility Centre (DAC) Limited.
+
+We have commissioned the Digital Accessibility Centre (DAC) to carry out a WCAG 2.1 AA level technical compliance audit that also includes extensive manual testing.
+
+The services/websites currently booked in for testing are:
+
+* Get Into Teaching
+
+We anticipate that the outcome of all tests will be completed by July 2023.
