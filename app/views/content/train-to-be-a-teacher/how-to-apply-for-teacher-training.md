@@ -45,6 +45,8 @@ Search [postgraduate teacher training courses](https://www.gov.uk/find-postgradu
 Course providers will help you gain your [qualified teacher status (QTS)](/what-is-qts) which is what you need to teach in most schools in England. Many also help you work 
 towards a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce).
 
+As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+
 ## Where to apply
 
 When you're ready, you can [apply for teacher training](https://www.gov.uk/apply-for-teacher-training).
