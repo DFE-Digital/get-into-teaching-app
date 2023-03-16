@@ -58,7 +58,6 @@ If you’re applying for teacher training as a non-UK citizen, you will need a v
 
 * non-UK citizens living in the UK
 * non-UK citizens living outside the UK
-* Irish citizens
 * refugees or asylum seekers
 
 You will not need a visa to train to teach in the UK if you:
