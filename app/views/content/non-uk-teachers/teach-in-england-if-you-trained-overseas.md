@@ -210,12 +210,18 @@ Your personal statement needs to cover your teaching approach, your experience a
 
 Some schools may ask for a curriculum vitae (CV) – [get tips on writing a CV](https://nationalcareers.service.gov.uk/careers-advice/cv-sections).
 
-If you’re shortlisted, you’ll be invited for interview and asked to teach part of a class. If the school makes you a conditional offer, you’ll then have to pass safeguarding and criminal records checks. 
+If you’re shortlisted, you’ll be invited for interview and asked to teach part of a class. 
+
 
 ### Prepare for your interview
 
 You may be asked about your knowledge of English education in interviews for teaching jobs. To prepare, you can [read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
+### Safeguarding checks
+
+If the school makes you a conditional offer, you’ll then have to pass safeguarding and criminal records checks. These confirm you are safe and suitable to work with children. 
+
+You can prepare for these checks by getting a letter from the organisation which regulates teachers in the country where you qualified, confirming your professional status as a teacher.
 
 
 <p class="call-to-action__action">
