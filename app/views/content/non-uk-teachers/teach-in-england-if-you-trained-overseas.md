@@ -187,9 +187,11 @@ If you haven't got QTS, schools you apply to will want to see alternative eviden
 
 You can search and apply for jobs by region, subject specialism and age group. Most teaching vacancies are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September. 
 
-Before you apply for a teaching job, contact the school to make sure it is a Home Office licensed visa sponsor. If the school is a sponsor, it can help you apply for your visa. Schools can also become sponsors to employ you. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
-
 You can set up a job alert to be updated about opportunities throughout the year.
+
+### Check the school you apply to can sponsor your visa
+
+Before you apply for a teaching job, contact the school to make sure it is a Home Office licensed visa sponsor. If the school is a sponsor, it can help you apply for your visa. Schools can also become sponsors to employ you. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
 
 
 <p class="call-to-action__action">
@@ -199,7 +201,7 @@ You can set up a job alert to be updated about opportunities throughout the year
 
 ## Apply for your visa
 
-You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration). 
+You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](/non-uk-teachers/visas-for-non-UK-teachers). 
 
 You may have a pre-existing right to work in the UK, such as settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain in the UK](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk).
 
