@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
   class InvalidTemplateName < RuntimeError; end
 
+  before_action :init_funding_widget, only: %i[scholarships_and_bursaries scholarships_and_bursaries_search]
+
   MISSING_TEMPLATE_EXCEPTIONS = [
     ActionView::MissingTemplate,
     InvalidTemplateName,
@@ -60,14 +62,11 @@ class PagesController < ApplicationController
   # Avoid caching by rendering these pages manually:
 
   def scholarships_and_bursaries
-    @funding_widget =
-      if params[:funding_widget].blank?
-        FundingWidget.new
-      else
-        FundingWidget.new(funding_widget_params).tap(&:valid?)
-      end
-
     render_page("funding-and-support/scholarships-and-bursaries")
+  end
+
+  def scholarships_and_bursaries_search
+    render_page("funding-and-support/scholarships-and-bursaries-search")
   end
 
   def welcome
@@ -90,6 +89,15 @@ class PagesController < ApplicationController
   end
 
 private
+
+  def init_funding_widget
+    @funding_widget =
+      if params[:funding_widget].blank?
+        FundingWidget.new
+      else
+        FundingWidget.new(funding_widget_params).tap(&:valid?)
+      end
+  end
 
   def render_page(path)
     @page = ::Pages::Page.find content_template(path)

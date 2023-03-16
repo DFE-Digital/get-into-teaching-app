@@ -9,6 +9,6 @@
 <section id="funding-widget">
   <%= render FundingWidgetComponent.new(
     @funding_widget,
-    page_path("funding-and-support/scholarships-and-bursaries", anchor: 'funding-widget'))
+    page_path(request.path.delete_prefix("/"), anchor: 'funding-widget'))
   %>
 </section>
