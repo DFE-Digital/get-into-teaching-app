@@ -88,7 +88,7 @@ The main visa route for non-UK citizens wishing to teach in England is the skill
 
 You’ll be able to apply for your skilled worker visa if:
 
-* you have a job offer from a school that is a licensed Home Office sponsor 
+* you have a job offer from a school that is a Home Office licensed visa sponsor 
 * [you can speak, read, write, and understand English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * your salary meets the requirements for a skilled worker visa
 
@@ -103,7 +103,7 @@ The minimum salary non-UK teachers must be paid to be eligible for a skilled wor
 If you have QTS and work in:
 
 * inner London, you must earn £32,157
-* outer London, you must earn£29,915
+* outer London, you must earn £29,915
 * London fringe, you must earn £26,948
 * rest of England, you must earn £25,714
 
@@ -137,7 +137,7 @@ The salary requirements for a skilled worker visa apply whether [the type of sch
 
 If you are already an international student in the UK, you can [apply for a graduate visa on successful completion of your degree](https://www.gov.uk/graduate-visa).
 
-To apply, you will need to have been sponsored by a Home Office licensed student sponsor over the course of your studies.
+To apply, you must have been sponsored by a Home Office licensed student sponsor over the course of your studies.
 
 The graduate visa will allow you to work or look for work in the UK for up to 2 years after completing your studies (3 years for PhD students) without a sponsor. This includes working as a teacher. 
 
