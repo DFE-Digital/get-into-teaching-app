@@ -242,7 +242,7 @@ You can also learn more about [bringing your partner and children](https://www.g
 
 ## Life as a teacher in England
 
-Many teachers who qualified outside the UK settle in England and develop highly successful careers in teaching. 
+Many teachers who qualified outside the UK settle in England long-term and develop rewarding careers in teaching. 
 
 ### Career progression
 
