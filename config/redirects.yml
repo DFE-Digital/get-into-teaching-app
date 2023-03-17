@@ -320,3 +320,8 @@ redirects:
   "/covid-19": "/"
   "/impact-of-covid-19-on-teacher-training": "/"
   "/impact-of-covid-19-on-applicants": "/"
+
+  # Old A/B tests
+  "/salaries-and-benefits-search": "/salaries-and-benefits"
+  "/salaries-and-benefits-social": "/salaries-and-benefits"
+  "/landing/how-much-do-teachers-get-paid-social": "/landing/how-much-do-teachers-get-paid"
