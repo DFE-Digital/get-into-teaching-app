@@ -93,46 +93,27 @@ Before you start, it’s particularly important to think about your [teacher tra
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.
 
-## Writing your teacher training personal statement
+## Writing your personal statement
 
-Your teacher training personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it.
+Your personal statement explains why you want to be a teacher. It’s a crucial part of your application - so it’s worth taking your time on it.
 
-Personal statements are split into 2 sections. In total they are usually around 1,000 words.
+It’s your chance to show your motivation, commitment and teaching potential. It should be between 500 and 1000 words. You could include:
 
-It’s your opportunity to show your enthusiasm for teaching a particular subject. It’s also the place to say why you feel passionate about teaching either primary or secondary.
+* skills you have that are relevant to teaching
+* any experience of working with young people
+* your understanding of why teaching is important
+* your reasons for wanting to train to be a teacher
+* any activities you’ve done that could be relevant to teaching like first aid courses, sports coaching or volunteering
 
-### Section 1: Why do you want to teach?
+Your personal statement is also the place to say why you feel passionate about teaching either primary or secondary. [Learn more about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
 
-Up to 600 words.
+If you’re writing a personal statement for secondary teacher training, you should also explain your interest in the subject you want to teach.
 
-This is the place to talk about why you think you would make a great teacher. You can include:
+If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can talk about that too.
 
-* what inspired you to choose teaching
-* your understanding of the demands and rewards of teaching
-* the personal qualities that will make you a good teacher
-* your contribution to the life of a school outside the classroom – for example, running extra-curricular activities and clubs
-* details of any paid or unpaid work experience you have working with young people and what you learnt
-* your thoughts on children’s wellbeing and the education system
+### Get help with your personal statement
 
-### Section 2: Why are you suited to teach your subjects or age group?
-
-Up to 400 words.
-
-If you’re writing a personal statement for secondary teacher training, use this section to describe your knowledge of the subjects you’ve chosen.
-
-If you’re writing a personal statement for primary teacher training, say why you'd like to teach this age group.
-
-If you're applying for a primary course with a subject specialism, or you're particularly interested in certain primary subjects, you can talk about that here too.
-
-You could talk about:
-
-* any relevant work or unpaid experience
-* your degree and degree modules
-* your other relevant qualifications, such as A levels
-* any relevant skills, interests or achievements
-* your understanding of the national curriculum
-
-[If you're concerned about your subject knowledge](/train-to-be-a-teacher/subject-knowledge-enhancement), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
+You can get help with your personal statement from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support.
 
 ## Choose your references
 
