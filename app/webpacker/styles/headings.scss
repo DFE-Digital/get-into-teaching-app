@@ -170,6 +170,13 @@ h1 {
 
 h2 {
   @extend .heading-xl;
+
+  > i.icon {
+    padding: 0.7em;
+    width: 5px;
+    height: 5px;
+    margin-right: 0.3em;
+  }
 }
 
 h3 {

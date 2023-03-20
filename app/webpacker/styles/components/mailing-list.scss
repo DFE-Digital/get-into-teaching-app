@@ -1,0 +1,53 @@
+.home-mailing-list {
+  background-color: $blue;
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 30px;
+    border-color: $grey transparent transparent transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45px);
+  }
+
+  .col {
+    padding: 3 * $indent-amount $indent-amount 2 * $indent-amount $indent-amount;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  h2, p, label {
+    color: $white;
+    font-weight: bold;
+  }
+
+  form {
+    margin-top: 2 * $indent-amount;
+  }
+
+  @include mq($from: tablet) {
+    &:before {
+      left: 30%;
+    }
+
+    .col {
+      display: flex;
+
+      > form {
+        border-left: 2px solid $white;
+        padding-left: $indent-amount;
+        flex-basis: 40%;
+      }
+
+      > div  {
+        padding-right: $indent-amount;
+        flex-basis: 60%;
+      }
+    }
+  }
+}
