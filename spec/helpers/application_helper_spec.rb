@@ -185,6 +185,7 @@ describe ApplicationHelper do
       is_expected.to eq({
         paths: [
           "/steps-to-become-a-teacher-search",
+          "/funding-and-support/scholarships-and-bursaries-search",
         ],
       })
     end
