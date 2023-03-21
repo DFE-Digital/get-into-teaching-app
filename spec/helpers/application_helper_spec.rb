@@ -184,13 +184,8 @@ describe ApplicationHelper do
     it "includes pages currently under test" do
       is_expected.to eq({
         paths: [
-          "/salaries-and-benefits-search",
-          "/salaries-and-benefits-social",
-          "/landing/how-much-do-teachers-get-paid",
-          "/landing/how-much-do-teachers-get-paid-social",
-          "/mailinglist/signup/name",
-          "/mailinglist/signup",
           "/steps-to-become-a-teacher-search",
+          "/funding-and-support/scholarships-and-bursaries-search",
         ],
       })
     end

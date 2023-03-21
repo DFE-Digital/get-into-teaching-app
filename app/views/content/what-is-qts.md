@@ -43,7 +43,7 @@ $international-content$
 
 You can get QTS through undergraduate or postgraduate initial teacher training. This mostly involves school placements with some theoretical learning.
 
-You can apply for either a primary or secondary teacher training course awarding QTS.
+You can apply for either a primary or secondary teacher training course awarding QTS. [Find out more about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
 
 You can also get a postgraduate qualification through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-pgce). 
 

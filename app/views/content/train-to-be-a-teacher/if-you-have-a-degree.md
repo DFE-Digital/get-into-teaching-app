@@ -90,6 +90,8 @@ Your teacher training course might be provided by a university, school, college 
 
 The content of SCITT and School Direct programmes are broadly the same.
 
+As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+
 Some courses have different course structures and have placements in different kinds of schools, such as special schools. Talk to your teacher training provider to find out what they can offer you.
 
 [Find teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/).
