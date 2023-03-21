@@ -3,11 +3,9 @@
     <div>
       <h2><i class="icon icon-mail-black icon--on-yellow"></i> Sign up for our emails</h2>
       <p>
-        You'll get everything you need to know to start a career in teaching sent straight into your inbox.
-        Tailbored to your own situation, you get all the latest information as well as advice and support.
+        Everything you need to know to start a career in teaching sent straight into your inbox.
+        Tailored to your own situation, you get all the latest information as well as advice and support.
       </p>
-
-      <p>All for free</p>
     </div>
 
     <%= form_with builder: GOVUKDesignSystemFormBuilder::FormBuilder, url: mailing_list_step_path(:name), scope: :mailing_list_steps_name, method: :put do |f| %>
