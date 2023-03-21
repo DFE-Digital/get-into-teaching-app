@@ -1,5 +1,5 @@
 ---
-title: "How can I train to teach?"
+title: "How to start teacher training"
 description: Find out how to train to be a teacher if you have a degree, including what qualifications you can get and how to fund your training.
 content:
     - content/landing/train-to-teach-if-you-have-a-degree/header
