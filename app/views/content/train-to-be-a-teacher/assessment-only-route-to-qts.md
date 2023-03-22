@@ -460,10 +460,6 @@ provider_groups:
       name: Rebecca Turner-Loisel
       telephone: '01977 657604'
       email: ytca@minsthorpe.cc
-    - header: University of Hull
-      name: Initial Teacher Education Partners
-      link: https://www.hull.ac.uk
-      email: FACE-ITEPartners@hull.ac.uk
     - header: Yorkshire and Humber Teacher Training
       link: https://www.yhtt.co.uk
       name: Chris Fletcher
