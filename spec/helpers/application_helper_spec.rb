@@ -186,6 +186,8 @@ describe ApplicationHelper do
         paths: [
           "/steps-to-become-a-teacher-search",
           "/funding-and-support/scholarships-and-bursaries-search",
+          "/mailinglist/signup/name",
+          "/mailinglist/signup",
         ],
       })
     end
