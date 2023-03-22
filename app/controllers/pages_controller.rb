@@ -18,6 +18,7 @@ class PagesController < ApplicationController
     "/landing/how-much-do-teachers-get-paid-social", # Contains a form
     "/landing/how-to-become-a-teacher", # Contains a form
     "/landing/how-to-fund-your-teacher-training", # Contains a form
+    "/landing/train-to-teach-if-you-have-a-degree", # Contains a form
   ].freeze
 
   caches_page :cookies
