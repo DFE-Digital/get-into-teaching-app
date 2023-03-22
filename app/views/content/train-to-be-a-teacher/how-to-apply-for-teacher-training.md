@@ -88,14 +88,12 @@ You can choose up to 4 teacher training courses for each application.
 
 If you do not find what you were looking for, there are [other ways to train](/train-to-be-a-teacher).
 
-Before you start, it’s particularly important to think about your [teacher training personal statement](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-personal-statement).
-
-Some people do not get on the course they want because their application has
+Before you start, it’s particularly important to think about your teacher training personal statement. Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.
 
 ## Writing your personal statement
 
-Your personal statement explains why you want to be a teacher. It’s a crucial part of your application - so it’s worth taking your time on it.
+Your personal statement explains why you want to be a teacher. It’s a crucial part of your application so it’s worth taking your time on it.
 
 It’s your chance to show your motivation, commitment and teaching potential. It should be between 500 and 1000 words. You could include:
 
@@ -109,8 +107,7 @@ Your personal statement is also the place to say why you feel passionate about t
 
 If you’re writing a personal statement for secondary teacher training, you should also explain your interest in the subject you want to teach.
 
-If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can talk about that too.
-
+If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can talk about that, too.
 ### Get help with your personal statement
 
 You can get help with your personal statement from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support.
