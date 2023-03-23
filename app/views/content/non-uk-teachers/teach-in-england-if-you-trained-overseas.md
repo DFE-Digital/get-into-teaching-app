@@ -21,6 +21,10 @@ inset_text:
   new-international-funding:
     text: |-
       If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/teach-in-england-if-you-trained-overseas#get-an-international-relocation-payment-irp-worth-10000">international relocation payment worth £10,000</a>.
+  express-interest:
+    text: |-
+    To express your interest in applying for the international relocation payment,email us at IRP.ExpressInterest@education.gov.uk.
+    color: grey
 keywords:
   - International
   - Overseas
@@ -89,7 +93,7 @@ If you are interested in moving to England to teach languages or physics in an E
 
 The international relocation payment (IRP) will be available to non-UK citizens starting work in English secondary schools in the academic year August/September 2023 to July 2024. If you are eligible, it will be paid around the end of your first term working in England. You will not have to pay this money back. You can only receive the IRP once.
 
-$international-content$
+$express-interest$
 
 ### Check your eligibility for the IRP
 
