@@ -6,11 +6,6 @@ related_content:
     Career progression stories: "/blog/tag/career-progression"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
-promo_content:
-inset_text:
-  international-content:
-    text: To express your interest in applying for the international relocation payment,email us at IRP.ExpressInterest@education.gov.uk.
-    color: grey
 navigation: 20.20
 navigation_title: Teach in England if you trained outside the UK
 navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from overseas.
@@ -23,7 +18,7 @@ inset_text:
       If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/teach-in-england-if-you-trained-overseas#get-an-international-relocation-payment-irp-worth-10000">international relocation payment worth £10,000</a>.
   express-interest:
     text: |-
-    To express your interest in applying for the international relocation payment,email us at IRP.ExpressInterest@education.gov.uk.
+      To express your interest in applying for the international relocation payment,email us at IRP.ExpressInterest@education.gov.uk.
     color: grey
 keywords:
   - International
