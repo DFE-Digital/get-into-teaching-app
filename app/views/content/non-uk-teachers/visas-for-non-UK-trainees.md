@@ -107,15 +107,18 @@ For your teacher training place offer to be confirmed, you’ll have to pass cri
 
 ### The skilled worker visa 
 
-For a teacher training course where you are paid a salary, you will need a skilled worker visa. Your visa must be sponsored by a training provider which is a licensed sponsor of skilled worker visas.
+For a teacher training course where you are paid a salary, you will need a skilled worker visa. Your visa must be sponsored by the school employing you, which needs to be a licensed sponsor of skilled worker visas.
 
-Use [find postgraduate teacher training](https://www.gov.uk/student-visa/apply) to find courses offered by providers who can sponsor skilled worker visas. Currently, places on these courses are very limited. Before you apply for a salaried teacher training place, we suggest you contact the training provider to check they can sponsor you.
+Use [find postgraduate teacher training](https://www.gov.uk/student-visa/apply) to find courses offered by providers where you can be sponsored for a skilled worker visas. Currently, places on these courses are very limited. Before you apply for a salaried teacher training place, we suggest you contact the training provider to check you can be sponsored.
 
 You’ll be able to apply for your visa if:
 
-* you have a confirmed offer for a salaried training place at a school which is a licensed skilled worker sponsor
+* you have a confirmed offer for a salaried training place 
+* your training provider has confirmed you'll be employed by a school which is a licensed skilled worker sponsor
 * [you can speak, read, write, and understand English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * your salary meets the requirement for a skilled worker visa
+
+Your training provider can help you submit the correct details for your visa application. 
 
 For your teacher training place offer to be confirmed, you’ll have to pass criminal record and health checks, so we recommend applying to your training provider early.
 
@@ -138,10 +141,17 @@ Check the region you will be working in with your teacher training provider.
 
 You may be able to train part-time, but your salary must meet the threshold for a skilled worker visa.
 
-There are 2 requirements:
+There are 2 requirement:
 
-* your part-time salary must be at least £20,480
-* the full-time equivalent of your salary must meet the minimum set in your region for non-UK salaried trainee teachers
+Your part-time salary must be at least £20,480.
+The full-time equivalent of your salary must meet the threshold set for the skilled worker visa in your region, as follows: 
+
+* inner London: £23,099
+* outer London: £21,832
+* London fringe: £19,613
+* rest of England: £18,419
+
+Check the region you will be working in with your teacher training provider.
 
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/skilled-worker-visa">Apply for a skilled worker visa<span></span></a>
