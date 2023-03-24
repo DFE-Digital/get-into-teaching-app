@@ -18,7 +18,7 @@ inset_text:
       If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/teach-in-england-if-you-trained-overseas#get-an-international-relocation-payment-irp-worth-10000">international relocation payment worth £10,000</a>.
   express-interest:
     text: |-
-      To express your interest in applying for the international relocation payment,email us at IRP.ExpressInterest@education.gov.uk.
+      To express your interest in applying for the international relocation payment, email us at IRP.ExpressInterest@education.gov.uk.
     color: grey
 keywords:
   - International
