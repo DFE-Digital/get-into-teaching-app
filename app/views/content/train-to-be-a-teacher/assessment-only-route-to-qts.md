@@ -265,6 +265,10 @@ provider_groups:
       name: Keith Saunders
       telephone: 01227 925555
       email: pgadmissions@canterbury.ac.uk
+    - header: Chepping View Primary Academy SCITT
+      name: Katherine Harrison
+      telephone: 01494 535564, option 3
+      email: kharrison@cvpa.school
     - header: e-Qualitas
       link: https://www.e-qualitas.co.uk/schools/assessment-only/
       name: Helen Gregory
