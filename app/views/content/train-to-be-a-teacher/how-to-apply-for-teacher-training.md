@@ -112,6 +112,15 @@ If you’re applying for a primary course with a subject specialism, or you’re
 
 You can get help with your personal statement from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support.
 
+<div class="inset">
+<h4> If you have already started to apply </h4>
+
+<p>You will see 2 sections for your personal statement with information on how to complete each section. </p> 
+
+<p> If your application is unsuccessful this time and you apply again, the 2 sections of your personal statement will be merged. When this happens, you will be asked to review your statement before applying again.</p> 
+
+</div>
+
 ## Choose your references
 
 You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course.
