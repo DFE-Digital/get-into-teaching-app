@@ -144,6 +144,7 @@ You may be able to train part-time, but your salary must meet the threshold for 
 There are 2 requirement:
 
 Your part-time salary must be at least £20,480.
+
 The full-time equivalent of your salary must meet the threshold set for the skilled worker visa in your region, as follows: 
 
 * inner London: £23,099
