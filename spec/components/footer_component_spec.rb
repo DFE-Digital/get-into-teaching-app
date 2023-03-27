@@ -7,7 +7,6 @@ describe FooterComponent, type: "component" do
 
   let(:feedback_selector) { ".feedback-bar" }
   let(:talk_to_us_selector) { ".talk-to-us" }
-  let(:mailing_list_selector) { ".mailing-list-bar" }
 
   specify "renders the footer" do
     expect(page).to have_css(".site-footer")
@@ -19,10 +18,6 @@ describe FooterComponent, type: "component" do
 
   specify "renders the 'Talk To Us' section by default" do
     expect(page).to have_css(talk_to_us_selector)
-  end
-
-  specify "renders the 'Mailing list' section by default" do
-    expect(page).to have_css(mailing_list_selector)
   end
 
   specify "renders the cookie acceptance popup" do
@@ -42,14 +37,6 @@ describe FooterComponent, type: "component" do
 
     specify "does not render the 'Talk to us' section" do
       expect(page).not_to have_css(talk_to_us_selector)
-    end
-  end
-
-  context "when 'Mailing list bar' is disabled" do
-    subject! { render_inline(described_class.new(mailing_list: false)) }
-
-    specify "does not render the 'Mailing list bar' section" do
-      expect(page).not_to have_css(mailing_list_selector)
     end
   end
 
