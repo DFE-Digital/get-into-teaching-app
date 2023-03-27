@@ -108,6 +108,7 @@ Your personal statement is also the place to say why you feel passionate about t
 If you’re writing a personal statement for secondary teacher training, you should also explain your interest in the subject you want to teach.
 
 If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can talk about that, too.
+
 ### Get help with your personal statement
 
 You can get help with your personal statement from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support.
