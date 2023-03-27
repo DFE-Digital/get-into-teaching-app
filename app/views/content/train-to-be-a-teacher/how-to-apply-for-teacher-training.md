@@ -109,10 +109,6 @@ If you’re writing a personal statement for secondary teacher training, you sho
 
 If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can talk about that, too.
 
-### Get help with your personal statement
-
-You can get help with your personal statement from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support.
-
 <div class="inset">
 <h4> If you have already started to apply </h4>
 
@@ -121,6 +117,10 @@ You can get help with your personal statement from our [teacher training adviser
 <p> If your application is unsuccessful this time and you apply again, the 2 sections of your personal statement will be merged. When this happens, you will be asked to review your statement before applying again.</p> 
 
 </div>
+
+### Get help with your personal statement
+
+You can get help with your personal statement from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support.
 
 ## Choose your references
 
