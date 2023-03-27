@@ -6,7 +6,9 @@
   fullwidth: true
   title_paragraph: "Whether you're just thinking about it or you're ready to apply, nobody knows teaching like we do. We offer free advice and support to decide if teaching in a primary or secondary school in England is right for you."
   image: "static/content/hero-images/0012.jpg"
-  hero_content_width: wide
+  hero_content_width: even
+  hero_bg_color: yellow
+  title_bg_color: white
   noindex: true
   mailing_list: true
   content:

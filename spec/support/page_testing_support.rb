@@ -6,10 +6,10 @@ class PageLister
     /steps-to-become-a-teacher/v2-index
     /privacy-policy
     /landing/how-much-do-teachers-get-paid
-    /landing/how-much-do-teachers-get-paid-social
     /landing/how-to-become-a-teacher
     /landing/how-to-fund-your-teacher-training
     /landing/train-to-teach-if-you-have-a-degree
+    /landing/home
   ].freeze
 
   class << self

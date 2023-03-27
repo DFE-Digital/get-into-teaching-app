@@ -1,29 +1,52 @@
 .home-mailing-list {
-  background-color: $blue;
+  overflow: hidden;
 
   &:before {
-    content: '';
+    content: "";
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 30px 30px 0 30px;
-    border-color: $grey transparent transparent transparent;
+    border-width: 30px 30px 0;
+    border-color: $yellow transparent transparent transparent;
     position: absolute;
     left: 50%;
     transform: translateX(-45px);
   }
 
   .col {
+    margin-bottom: 0;
     padding: 3 * $indent-amount $indent-amount 2 * $indent-amount $indent-amount;
   }
 
   h2 {
+    @include font-size(large);
+
     margin-top: 0;
+    position: relative;
   }
 
-  h2, p, label {
-    color: $white;
+  h2:before {
+    content: "";
+    background-image: url("../images/content/homepage/dashed-lineV2.svg");
+    width: 215px;
+    height: 289px;
+    position: absolute;
+    right: 100%;
+    top: -190px;
+    transform: translateX(40px);
+
+    @include mq($from: desktop) {
+      top: -120px;
+    }
+  }
+
+  p {
     font-weight: bold;
+    margin-top: 1.5 * $indent-amount;
+  }
+
+  small {
+    font-weight: normal;
   }
 
   form {
@@ -35,8 +58,13 @@
       left: 30%;
     }
 
+    h2 {
+      @include font-size(medium);
+    }
+
     .col {
       display: flex;
+      padding-bottom: 0;
 
       > form {
         border-left: 2px solid $white;
@@ -44,7 +72,7 @@
         flex-basis: 40%;
       }
 
-      > div  {
+      > div {
         padding-right: $indent-amount;
         flex-basis: 60%;
       }
