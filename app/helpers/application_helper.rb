@@ -102,7 +102,7 @@ module ApplicationHelper
   end
 
   def minimal_footer_kwargs(front_matter)
-    defaults = { talk_to_us: true, mailing_list: false, feedback: false }
-    defaults.merge(front_matter.symbolize_keys.slice(:talk_to_us, :mailing_list, :feedback))
+    defaults = { talk_to_us: true, feedback: false }
+    defaults.merge(front_matter.symbolize_keys.slice(:talk_to_us, :feedback))
   end
 end
