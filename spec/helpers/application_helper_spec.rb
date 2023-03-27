@@ -225,4 +225,18 @@ describe ApplicationHelper do
       it { is_expected.to eq({ talk_to_us: false, feedback: false }) }
     end
   end
+
+  describe "#content_footer_kwargs" do
+    let(:front_matter) { {} }
+
+    subject { content_footer_kwargs(front_matter) }
+
+    it { is_expected.to eq({ talk_to_us: true, mailing_list: true, feedback: true }) }
+
+    context "when overriden in the front_matter" do
+      let(:front_matter) { { talk_to_us: false, mailing_list: false, feedback: false, other: false } }
+
+      it { is_expected.to eq({ talk_to_us: false, mailing_list: false, feedback: false }) }
+    end
+  end
 end
