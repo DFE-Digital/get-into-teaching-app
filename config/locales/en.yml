@@ -466,10 +466,10 @@ en:
           resent: We've sent you another email
       events_steps_personalised_updates:
         address_postcode: |-
-          We want to send you relevant information about events in your area.
+          If you give us your postcode, we'll let you know about events happening near you.
       mailing_list_signup:
         address_postcode: |-
-          We want to send you relevant information about events in your area.
+          If you give us your postcode, we'll let you know about events happening near you.
 
     legend:
       events_steps_further_details:
