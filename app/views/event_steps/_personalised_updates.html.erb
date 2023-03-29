@@ -5,7 +5,7 @@
 <%= f.govuk_collection_select :degree_status_id,
       f.object.degree_status_options,
       :id,
-      :value,
+      ->(option) { degree_status_text(option) },
       options: { prompt: true } %>
 
 <%= f.govuk_collection_select :consideration_journey_stage_id,

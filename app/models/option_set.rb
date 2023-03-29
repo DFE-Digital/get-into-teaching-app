@@ -7,11 +7,11 @@ class OptionSet
 
   DEGREE_STATUSES =
     {
-      "Yes, I already have a degree" => 222_750_000,
-      "Almost, I'm a final year student" => 222_750_001,
-      "Not yet, I'm a second year student" => 222_750_002,
-      "Not yet, I'm a first year student" => 222_750_003,
-      "No, and I'm not studying for one" => 222_750_004,
+      "Graduate or postgraduate" => 222_750_000,
+      "Final year" => 222_750_001,
+      "Second year" => 222_750_002,
+      "First year" => 222_750_003,
+      "I don't have a degree and am not studying for one" => 222_750_004,
       "Other" => 222_750_005,
     }.freeze
 
