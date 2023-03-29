@@ -1,4 +1,5 @@
 require "middleware/html_response_transformer"
+require "middleware/dfe_analytics"
 
 # Page caching middleware
 Rails.application.config.middleware.use Rack::PageCaching,
@@ -14,7 +15,13 @@ Rails.application.config.middleware.use(Middleware::HtmlResponseTransformer)
 if Rails.application.config.action_controller.perform_caching
   # Serve the static page cache
   Rails.application.config.action_controller.page_cache_directory = Rails.root.join("public/cached_pages")
+
   Rails.application.config.middleware.insert_before \
     ActionDispatch::Static, ActionDispatch::Static, File.join(Rails.application.config.root, "public", "cached_pages"),
+    headers: { "Cache-Control" => "max-age=#{5.minutes.to_i}, public, immutable" }
+
+  # Send request event to dfe analytics if static page is served
+  Rails.application.config.middleware.insert_before \
+    ActionDispatch::Static, Middleware::DfeAnalytics, File.join(Rails.application.config.root, "public", "cached_pages"),
     headers: { "Cache-Control" => "max-age=#{5.minutes.to_i}, public, immutable" }
 end
