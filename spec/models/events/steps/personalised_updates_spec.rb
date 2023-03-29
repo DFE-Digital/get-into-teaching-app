@@ -14,7 +14,7 @@ describe Events::Steps::PersonalisedUpdates do
   end
 
   describe "validations" do
-    let(:msg) { "Enter a valid postcode, or leave blank" }
+    let(:msg) { "Enter a valid UK postcode, or leave blank" }
 
     it { is_expected.to allow_value("TE571NG").for :address_postcode }
     it { is_expected.to allow_value("TE57 1NG").for :address_postcode }
