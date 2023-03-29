@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe MailingList::Steps::Postcode do
   include_context "with wizard step"
-  let(:msg) { "Enter a valid postcode" }
+  let(:msg) { "Enter a valid UK postcode" }
 
   it_behaves_like "a with wizard step"
 

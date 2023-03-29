@@ -245,7 +245,7 @@ en:
           attributes:
             postcode:
               blank: Enter a postcode
-              invalid: Enter a valid postcode
+              invalid: Enter a valid UK postcode
 
         events/search:
           attributes:
@@ -280,7 +280,7 @@ en:
         events/steps/personalised_updates:
           attributes:
             address_postcode:
-              invalid: Enter a valid postcode, or leave blank
+              invalid: Enter a valid UK postcode, or leave blank
             degree_status_id:
               inclusion: Select the stage of your degree you are at
             consideration_journey_stage_id:
@@ -341,7 +341,7 @@ en:
           attributes:
             address_postcode:
               blank: Enter your postcode
-              invalid: Enter a valid postcode
+              invalid: Enter a valid UK postcode
 
         # one-page mailing list
         mailing_list/signup:
@@ -363,7 +363,7 @@ en:
               blank: Choose a subject from the list
               inclusion: Choose a subject from the list
             address_postcode:
-              invalid: Enter a valid postcode
+              invalid: Enter a valid UK postcode
             timed_one_time_password:
               wrong_code: Enter the code you received by email
 
