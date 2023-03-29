@@ -5,6 +5,14 @@ description: |-
 date: "2021-05-17"
 image: false
 calls_to_action:
+  lessons-shape-lives:
+    name: attachment
+    arguments:
+      text: Read the Lessons shape lives report summary
+      file_path: static/documents/lessons-shape-lives-teaching-report.pdf
+      file_type: PDF
+      file_size: 271KB
+      published_at: 29 March 2023
   proud-parents:
     name: attachment
     arguments:
@@ -137,6 +145,12 @@ calls_to_action:
 keywords:
   - Research
 ---
+
+## Student lessons shape lives: exploring the life “lessons” teachers have learnt from their students
+
+Kindred Agency commissioned research company OnePoll to carry out a survey, on behalf of Get Into Teaching, exploring the ‘life lessons’ teachers say they have learnt from the interactions with their students. The purpose was to gain insights into the fulfilment and personal growth opportunities a career in teaching can offer.
+
+$lessons-shape-lives$
 
 ## Proud Parents: exploring the sense of pride parents derive from their child’s career
 
