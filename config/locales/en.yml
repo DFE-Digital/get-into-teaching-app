@@ -286,7 +286,7 @@ en:
             consideration_journey_stage_id:
               inclusion: Select how close you are to applying for teacher training
             preferred_teaching_subject_id:
-              inclusion: Select the subject do you want to teach
+              inclusion: Select the subject you want to teach
 
         callbacks/steps/personal_details:
           attributes:
