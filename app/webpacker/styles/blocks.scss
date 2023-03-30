@@ -80,7 +80,7 @@ $space-between-sections: 3.7em;
 
     ul {
       list-style: none;
-      padding: 0 $indent-amount $indent-amount;
+      padding: 0 $indent-amount $indent-amount 1rem;
 
       a {
         @extend .link--black;
@@ -100,7 +100,9 @@ $space-between-sections: 3.7em;
       }
 
       ul {
-        padding-left: 2.5 * $indent-amount;
+        padding-left: 2 * $indent-amount;
+        padding-bottom: 0;
+        margin-bottom: 0;
       }
     }
   }
