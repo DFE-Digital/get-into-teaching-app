@@ -35,7 +35,7 @@ terraform {
     }
     statuscake = {
       source  = "StatusCakeDev/statuscake"
-      version = "2.0.6"
+      version = "2.1.0"
     }
   }
 }
