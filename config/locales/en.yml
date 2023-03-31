@@ -282,11 +282,11 @@ en:
             address_postcode:
               invalid: Enter a valid UK postcode, or leave blank
             degree_status_id:
-              inclusion: Select the stage of your degree you are at
+              inclusion: Select your degree stage
             consideration_journey_stage_id:
               inclusion: Select how close you are to applying for teacher training
             preferred_teaching_subject_id:
-              inclusion: Select the subject do you want to teach
+              inclusion: Select the subject you want to teach
 
         callbacks/steps/personal_details:
           attributes:
@@ -425,10 +425,10 @@ en:
       events_steps_contact_details:
         address_telephone: What is your telephone number? (optional)
       events_steps_personalised_updates:
-        address_postcode: What is your postcode? (optional)
+        address_postcode: What is your UK postcode? (optional)
         degree_status_id: Do you have a degree?
         consideration_journey_stage_id: How close are you to applying for teacher training?
-        preferred_teaching_subject_id: What subject do you want to teach?
+        preferred_teaching_subject_id: What do you want to teach?
 
       callbacks_steps_personal_details:
         first_name: First name
@@ -466,10 +466,10 @@ en:
           resent: We've sent you another email
       events_steps_personalised_updates:
         address_postcode: |-
-          We want to send you relevant information about events in your area.
+          If you give us your postcode, we'll let you know about events happening near you.
       mailing_list_signup:
         address_postcode: |-
-          We want to send you relevant information about events in your area.
+          If you give us your postcode, we'll let you know about events happening near you.
 
     legend:
       events_steps_further_details:
