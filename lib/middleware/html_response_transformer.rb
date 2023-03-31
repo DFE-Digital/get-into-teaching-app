@@ -4,6 +4,7 @@ require "responsive_images"
 require "external_links"
 require "image_sizes"
 require "error_title"
+require "accessible_footnotes"
 
 module Middleware
   class HtmlResponseTransformer
@@ -14,6 +15,7 @@ module Middleware
       LazyLoadImages,
       ExternalLinks,
       ErrorTitle,
+      AccessibleFootnotes,
     ].freeze
 
     def initialize(app)
