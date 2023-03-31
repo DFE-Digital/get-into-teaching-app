@@ -24,9 +24,9 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-wizard.git
-  revision: 1cfc90fe09ba661c761d29a5a653a014e23ea386
+  revision: d2f364735f51715696f63fa0bc220cfd17b32ef8
   specs:
-    git_wizard (2.1.0)
+    git_wizard (2.2.0)
       activemodel (>= 6.0.3.4)
       activesupport (>= 6.0.3.4)
 
@@ -322,7 +322,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.1)
-    minitest (5.17.0)
+    minitest (5.18.0)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.27)
       tomlrb

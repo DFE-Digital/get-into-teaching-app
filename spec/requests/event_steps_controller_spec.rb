@@ -73,13 +73,7 @@ describe EventStepsController, type: :request do
 
   describe "#show when skipping verification" do
     let(:step_path) { event_steps_path(readable_event_id, :authenticate, { skip_verification: true }) }
-    let(:identity_data) do
-      {
-        first_name: "John",
-        last_name: "Doe",
-        email: "john@doe.com",
-      }
-    end
+    let(:identity_data) { { email: "john@doe.com" } }
 
     before do
       allow_any_instance_of(Events::Steps::PersonalDetails).to \
