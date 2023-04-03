@@ -187,8 +187,10 @@ describe ApplicationHelper do
           "/steps-to-become-a-teacher-search",
           "/funding-and-support/scholarships-and-bursaries-search",
           "/train-to-be-a-teacher/if-you-have-a-degree-search",
+          "/landing/train-to-teach-if-you-have-a-degree",
           "/mailinglist/signup/name",
           "/mailinglist/signup",
+          "/landing/how-to-fund-your-teacher-training",
         ],
       })
     end
