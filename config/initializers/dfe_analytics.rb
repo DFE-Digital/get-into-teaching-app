@@ -50,4 +50,13 @@ DfE::Analytics.configure do |config|
   # config.environment = ENV.fetch('RAILS_ENV', 'development')
 
   config.user_identifier = proc { |user| user&.username }
+
+  # A proc which will be called with the rack env, and which should
+  # return a boolean indicating whether the page is cached and will
+  # be served by rack middleware.
+
+  config.rack_page_cached = proc do |rack_env|
+    Rails.application.config.action_controller.perform_caching &&
+      ActionDispatch::FileHandler.new(Rails.root.join("public/cached_pages").to_s).attempt(rack_env)
+  end
 end
