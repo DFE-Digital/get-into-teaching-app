@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="219" height="294" viewBox="0 0 219 294">
+  <defs>
+    <clipPath id="clip-dashed-lineV2">
+      <rect width="219" height="294"/>
+    </clipPath>
+  </defs>
+  <g id="dashed-lineV2" clip-path="url(#clip-dashed-lineV2)">
+    <path id="Path_1779" data-name="Path 1779" d="M-21.215,11299.655c-27.252,19.417-27.508,74.36,19.42,78.247.6.526,14.089,6.345,14.75,6.933,110.748,96.085-5.083,132.236,23.545,176.559,28.771,44.545,78.672,17.151,60.836-52.8s65.563-85.366,71.84-25.582" transform="translate(43.824 -11296.656)" fill="none" stroke="#2781be" stroke-width="6" stroke-dasharray="7"/>
+  </g>
+</svg>

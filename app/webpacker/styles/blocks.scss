@@ -70,3 +70,40 @@ $space-between-sections: 3.7em;
     @include font-size("xlarge");
   }
 }
+
+.image-blocks {
+  .image-block {
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0 $indent-amount $indent-amount 1rem;
+
+      a {
+        @extend .link--black;
+      }
+    }
+  }
+
+  @include mq($from: tablet) {
+    display: flex;
+    gap: $indent-amount / 2;
+    padding: 0 15px;
+
+    .image-block {
+      h2 {
+        @include font-size("medium");
+        margin-left: 2 * $indent-amount;
+      }
+
+      ul {
+        padding-left: 2 * $indent-amount;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

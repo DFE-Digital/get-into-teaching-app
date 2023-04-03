@@ -6,6 +6,7 @@
 
     <%= main_tag do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
+      <%= render Home::MailingListComponent.new if @front_matter["mailing_list"] %>
 
       <section class="main-section home">
         <%= render(partial: "sections/content_errors") %>
