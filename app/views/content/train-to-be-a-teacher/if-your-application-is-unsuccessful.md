@@ -1,8 +1,7 @@
 ---
 title: If your teacher training application is unsuccessful
-subcategory: Your teacher training application
 description: |-
-  Read about what to do next if your teacher training application is unsuccessful. Find advice on the different reasons an application can be unsuccessful and how to get support.
+  Read about what to do if your teacher training application is unsuccessful. Find advice on why an application can be unsuccessful and how to get support.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
@@ -28,6 +27,8 @@ Try not to worry - you can reapply for up to 4 courses at a time, as many times 
 
 It’s worth looking at the feedback the course provider has given to understand why your application was not accepted. This will help you to decide on your next steps.
 
+## Why was my application unsuccessful?
+
 There could be a number of reasons your application was unsuccessful:
 
 ### The course is full
@@ -39,7 +40,6 @@ Unfortunately, popular courses do fill up quickly. You can [search for other cou
 To train to teach in primary and secondary schools in England, you’ll need:
 
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
-* a bachelor’s degree (this does not have to be in teaching)
 
 You could [find another course](https://www.gov.uk/find-postgraduate-teacher-training-courses) with a training provider that will accept an equivalency test. You can also take your GCSE exams at any age if you do not have them or you can retake them to improve your grades.
 
