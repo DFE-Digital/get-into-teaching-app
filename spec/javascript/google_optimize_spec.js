@@ -61,14 +61,6 @@ describe('Google Optimize', () => {
     describe('when on an experiment path', () => {
       beforeEach(() => run(experimentPath));
 
-      it('blurs the cookie acceptance background to obscure the content', () => {
-        expect(
-          document.querySelector('.cookie-acceptance .dialog__background')
-        ).toBeNull();
-        expect(document.body.classList.contains('blur')).toBe(true);
-        expect(document.querySelector('.optimize-overlay')).not.toBeNull();
-      });
-
       it('does not append the Google Optimize script to the head', () => {
         expect(
           document.head.querySelector(
@@ -89,14 +81,6 @@ describe('Google Optimize', () => {
 
     describe('when not on an experiment path', () => {
       beforeEach(() => run('/no-experiment'));
-
-      it('does not blur the cookie acceptance background', () => {
-        expect(
-          document.querySelector('.cookie-acceptance .dialog__background')
-        ).not.toBeNull();
-        expect(document.body.classList.contains('blur')).toBe(false);
-        expect(document.querySelector('.optimize-overlay')).toBeNull();
-      });
 
       it('does not deploy the anti-flicker fix', () => {
         expect(document.querySelector('.anti-flicker')).toBeNull();
@@ -128,14 +112,6 @@ describe('Google Optimize', () => {
 
     describe('when on an experiment path', () => {
       beforeEach(() => run(experimentPath));
-
-      it('does not blur the cookie acceptance background', () => {
-        expect(
-          document.querySelector('.cookie-acceptance .dialog__background')
-        ).not.toBeNull();
-        expect(document.body.classList.contains('blur')).toBe(false);
-        expect(document.querySelector('.optimize-overlay')).toBeNull();
-      });
 
       it('deploys the anti-flicker fix', () => {
         expect(document.querySelector('.anti-flicker')).not.toBeNull();
@@ -199,14 +175,6 @@ describe('Google Optimize', () => {
 
     describe('when on an experiment path', () => {
       beforeEach(() => run(experimentPath));
-
-      it('does not blur the cookie acceptance background', () => {
-        expect(
-          document.querySelector('.cookie-acceptance .dialog__background')
-        ).not.toBeNull();
-        expect(document.body.classList.contains('blur')).toBe(false);
-        expect(document.querySelector('.optimize-overlay')).toBeNull();
-      });
 
       it('does not deploy the anti-flicker fix', () => {
         expect(document.querySelector('.anti-flicker')).toBeNull();

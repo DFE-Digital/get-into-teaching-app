@@ -15,18 +15,9 @@ export default class GoogleOptimize {
 
     this.listenForTurbolinksBeforeVisit();
     this.listenForConsentChange();
-
-    if (!this.seenCookieDialog && this.isExperimentPath()) {
-      this.blurContentHandler = this.blurContent.bind(this);
-      document.addEventListener('DOMContentLoaded', this.blurContentHandler);
-    }
   }
 
   dispose() {
-    if (this.blurContentHandler) {
-      document.removeEventListener('DOMContentLoaded', this.blurContentHandler);
-    }
-
     if (this.antiFlickerHandler) {
       document.removeEventListener('DOMContentLoaded', this.antiFlickerHandler);
     }
@@ -78,19 +69,6 @@ export default class GoogleOptimize {
       complete();
     };
     document.addEventListener('DOMContentLoaded', this.antiFlickerHandler);
-  }
-
-  blurContent() {
-    // Remove the cookie dialog dark overlay.
-    this.cookieDialogOverlay.remove();
-
-    // Blur the page.
-    document.body.classList.add('blur');
-
-    // Add in our own dark overlay below the cookie dialog.
-    const overlay = document.createElement('div');
-    overlay.classList.add('optimize-overlay');
-    document.body.append(overlay);
   }
 
   listenForConsentChange() {
