@@ -76,4 +76,4 @@ They can support you with:
 
 All our advisers have years of teaching experience and know the application process inside and out.
 
-[Learn more about teacher training advisers.](/teacher-training-advisers)
+[Learn more about teacher training advisers](/teacher-training-advisers).
