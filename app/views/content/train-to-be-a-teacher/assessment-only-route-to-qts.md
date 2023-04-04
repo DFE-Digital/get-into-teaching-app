@@ -308,11 +308,14 @@ provider_groups:
       name: Kate Martin
       telephone: 01327 350284 ext. 251
       email: gutprecruitment@sponne.org.uk
-    - header: The Tommy Flowers SCITT
+    - header: The Tommy Flowers SCITT (Primary)
       link: https://tommyflowersscitt.co.uk/assessment-only/
-      name: Catherine Brown (senior administrator)
-      telephone: '01908 505030'
-      email: brownc@denbigh.net
+      telephone: '01908 669735 (ext 320)'
+      email: TFSCITTprimary@denbigh.net
+    - header: The Tommy Flowers SCITT (Secondary)
+      link: https://tommyflowersscitt.co.uk/assessment-only/
+      telephone: '01908 669735 (ext 353)'
+      email: TFSCITTsecondary@denbigh.net
     - header: The University of Buckingham
       link: https://www.buckingham.ac.uk/
       name: Bethany Kelly
