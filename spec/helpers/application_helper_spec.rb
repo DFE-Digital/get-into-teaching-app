@@ -191,6 +191,8 @@ describe ApplicationHelper do
           "/mailinglist/signup/name",
           "/mailinglist/signup",
           "/landing/how-to-fund-your-teacher-training",
+          "/",
+          "/landing/home",
         ],
       })
     end
