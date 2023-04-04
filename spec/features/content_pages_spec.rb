@@ -28,6 +28,9 @@ RSpec.feature "content pages check", type: :feature, content: true do
   before(:all) do
     statuses_deemed_successful = Rack::Utils::SYMBOL_TO_STATUS_CODE.values_at(:ok, :moved_permanently)
 
+    stub_request(:get, "https://host.api/endpoint/api/privacy_policies/latest")
+      .to_return(status: 200, body: { id: 123, text: "text" }.to_json, headers: {})
+
     @stored_pages = PageLister.content_urls.map do |path|
       visit(path)
 
@@ -92,6 +95,13 @@ RSpec.feature "content pages check", type: :feature, content: true do
             expect(page).to have_http_status(:success), "invalid image src on #{sp.path} - #{src}"
             images.push(src)
           end
+      end
+    end
+
+    scenario "pages containing forms are excluded from the cache" do
+      @stored_pages.each do |sp|
+        form = sp.body.css("form[method=post]")
+        expect(PagesController::DYNAMIC_PAGE_PATHS).to include(sp.path) if form.present?
       end
     end
 
