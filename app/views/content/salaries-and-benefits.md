@@ -52,11 +52,11 @@ keywords:
 
 For helping to shape the next generation, you’re entitled to a competitive salary, generous holidays, and a substantial pension.
 
-Figures are for teachers in the 2022/23 academic year.
+Figures are for primary and secondary teachers in the 2022/23 academic year.
 
-## Teaching salaries
+## Primary and secondary teaching salaries
 
-All qualified teachers will have a starting salary of at least £28,000. This will be higher for teachers working in London.
+All qualified primary and secondary teachers will have a starting salary of at least £28,000. This will be higher for teachers working in London.
 
 ### Qualified teacher salary
 
