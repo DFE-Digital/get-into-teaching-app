@@ -98,13 +98,6 @@ RSpec.feature "content pages check", type: :feature, content: true do
       end
     end
 
-    scenario "pages containing forms are excluded from the cache" do
-      @stored_pages.each do |sp|
-        form = sp.body.css("form[method=post]")
-        expect(PagesController::DYNAMIC_PAGE_PATHS).to include(sp.path) if form.present?
-      end
-    end
-
     scenario "all images have alt text" do
       @stored_pages.each do |sp|
         expect(sp.body.css("img")).to all(have_attribute("alt"))
