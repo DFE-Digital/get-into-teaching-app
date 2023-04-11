@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="38px" height="26px" viewBox="0 0 38 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>icon-mail</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icon-mail" transform="translate(0.561000, 0.883000)" fill="#656565" fill-rule="nonzero">
-            <g id="icon.mail" transform="translate(0.000000, 0.000000)">
-                <path d="M0,0 L0,24.234 L36.878,24.234 L36.878,0 L0,0 Z M33.717,21.073 L3.161,21.073 L3.161,7.373 L18.439,20.017 L33.717,7.373 L33.717,21.073 Z M18.439,15.805 L3.161,3.161 L33.822,3.161 L18.439,15.805 Z" id="Path_1312"></path>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24"></rect>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-mail-–-1">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Rectangle"></g>
+            <g id="icon-mail_1" mask="url(#mask-2)">
+                <g transform="translate(0.000000, 4.114000)" id="icon.mail">
+                    <g transform="translate(0.000000, -0.000000)">
+                        <path d="M0,0 L0,15.772 L24,15.772 L24,0 L0,0 Z M21.943,13.714 L2.057,13.714 L2.057,4.8 L12,13.029 L21.943,4.8 L21.943,13.714 Z M12,10.285 L2.057,2.057 L22.011,2.057 L12,10.285 Z" id="Path_1312" fill="#000000" fill-rule="nonzero"></path>
+                    </g>
+                </g>
             </g>
         </g>
     </g>
