@@ -1,4 +1,8 @@
 require "middleware/html_response_transformer"
+require "middleware/page_cache_exclusion"
+
+# Prevent certain pages from being cached
+Rails.application.config.middleware.use(Middleware::PageCacheExclusion)
 
 # Page caching middleware
 Rails.application.config.middleware.use Rack::PageCaching,
