@@ -37,19 +37,36 @@ describe Middleware::PageCacheExclusion, type: :request do
     it { is_expected.not_to have_received(:delete) }
   end
 
-  context "when the response body contains a form with post method (case insensitive)" do
+  shared_context "when the response body contains a matching form method" do
     let(:form) do
       <<~HTML
-        <form action="/test" method="POst">
+        <form action="/test" method="#{form_method}">
           post form example
         </form>
       HTML
     end
     let(:response) { [form] }
 
-    it { is_expected.to have_received(:delete).with("#{path}.html") }
+    context "when a POST form method" do
+      let(:form_method) { "PoSt" }
+
+      it { is_expected.to have_received(:delete).with("#{path}.html") }
+    end
+
+    context "when a PUT form method" do
+      let(:form_method) { "PUT" }
+
+      it { is_expected.to have_received(:delete).with("#{path}.html") }
+    end
+
+    context "when a PATCH form method" do
+      let(:form_method) { "patch" }
+
+      it { is_expected.to have_received(:delete).with("#{path}.html") }
+    end
 
     context "when the response body is an instance of ActionDispatch::Response::RackBody" do
+      let(:form_method) { "PoSt" }
       let(:response) do
         ActionDispatch::Response::RackBody.new(
           ActionDispatch::Response.new.tap do |r|

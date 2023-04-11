@@ -21,7 +21,7 @@ module Middleware
     end
 
     def dynamic_page?(body)
-      body&.match(/method="post"/i)
+      body&.match(/method="(post|put|patch)"/i)
     end
   end
 end
