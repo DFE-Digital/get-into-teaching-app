@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: git_service_dev
+
+test:
+  <<: *default
+  database: git_service_test<%= ENV['TEST_ENV_NUMBER'] %>
+
+production: &production
+  <<: *default
+  url: <%= Rails.application.config.x.vcap_services.dig("postgres", 0, "credentials", "uri") %>
+
+rolling:
+  <<: *production
+
+preprod:
+  <<: *production

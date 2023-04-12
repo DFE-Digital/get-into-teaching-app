@@ -17,10 +17,10 @@ WORKDIR /app
 RUN apk update
 
 # patches
-RUN apk add --no-cache openssl=1.1.1t-r0 
+RUN apk add --no-cache openssl=1.1.1t-r2
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn git \
-        chromium chromium-chromedriver && rm -rf /var/lib/apt/lists/*
+        chromium chromium-chromedriver postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
 
 # Install bundler
 RUN gem install bundler --version=2.3.4

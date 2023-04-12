@@ -65,26 +65,25 @@ describe PagesController, type: :request do
   end
 
   describe "redirect to TTA site" do
-    include_context "with stubbed env vars", "TTA_SERVICE_URL" => "https://tta-service/"
     subject { response }
 
     context "with /tta-service url" do
       before { get "/tta-service" }
 
-      it { is_expected.to redirect_to "https://tta-service/" }
-      it { expect(response).to have_http_status(:moved_permanently) }
+      it { is_expected.to redirect_to teacher_training_adviser_step_path(:start) }
+      it { expect(response).to have_http_status(:found) }
     end
 
     context "with /tta url" do
       before { get "/tta" }
 
-      it { is_expected.to redirect_to "https://tta-service/" }
+      it { is_expected.to redirect_to teacher_training_adviser_step_path(:start) }
     end
 
     context "with utm params" do
       before { get "/tta-service?utm_test=abc&test=def" }
 
-      it { is_expected.to redirect_to "https://tta-service/?utm_test=abc" }
+      it { is_expected.to redirect_to teacher_training_adviser_step_path(:start, utm_test: :abc) }
     end
   end
 

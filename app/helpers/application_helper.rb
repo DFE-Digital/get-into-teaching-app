@@ -23,6 +23,12 @@ module ApplicationHelper
     tag.main(**attributes, &block)
   end
 
+  def link_to_change_answer(step, question)
+    link_to(teacher_training_adviser_step_path(step.key)) do
+      safe_html_format("Change <span class='visually-hidden'> #{t("answers.#{step.key}.#{question}.change")}</span>")
+    end
+  end
+
   def gtm_enabled?
     ENV["GTM_ID"].present?
   end

@@ -68,14 +68,13 @@ class PagesController < ApplicationController
   end
 
   def tta_service
-    raise ActionView::MissingTemplate if ENV["TTA_SERVICE_URL"].blank?
+    url = teacher_training_adviser_step_path(:start)
 
-    url = ENV["TTA_SERVICE_URL"]
     if Rails.application.config.x.utm_codes && session[:utm]
       url += "?#{session[:utm].to_param}"
     end
 
-    redirect_to(url, turbolinks: false, status: :moved_permanently, allow_other_host: true)
+    redirect_to(url)
   end
 
 private

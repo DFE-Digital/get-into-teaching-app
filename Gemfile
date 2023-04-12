@@ -11,6 +11,8 @@ gem "puma", "~> 5.6", ">= 5.6.2"
 
 gem "shakapacker", "6.5.6"
 
+gem "pg"
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -76,6 +78,9 @@ gem "google-api-client", ">= 0.53.0", require: false
 gem "net-smtp", require: false
 gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
 
+# Fork needed for Ruby 3.1/Rails 7
+gem "validates_timeliness", github: "mitsuru/validates_timeliness", branch: "rails7"
+
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
 gem "logger", ">= 1.5.1"
@@ -92,6 +97,8 @@ gem "actionpack-cloudfront", ">= 1.2.0"
 
 # HTML-aware ERB parsing
 gem "better_html", ">= 1.0.16"
+
+gem "invisible_captcha"
 
 gem "git_wizard", github: "DFE-Digital/get-into-teaching-wizard"
 
