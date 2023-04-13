@@ -291,6 +291,7 @@ GEM
       concurrent-ruby (~> 1.0)
     invisible_captcha (2.1.0)
       rails (>= 5.2)
+    iso_country_codes (0.7.8)
     jwt (2.2.3)
     kaminari (1.2.2)
       activesupport (>= 4.1.0)
@@ -592,6 +593,7 @@ DEPENDENCIES
   govuk_design_system_formbuilder (>= 2.8.0)
   hashids
   invisible_captcha
+  iso_country_codes
   kaminari (~> 1.2, >= 1.2.2)
   knapsack
   kramdown (>= 2.4.0)

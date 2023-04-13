@@ -25,8 +25,11 @@ resource "cloudfoundry_app" "app_application" {
     }
   }
 
-  service_binding {
-    service_instance = data.cloudfoundry_service_instance.redis.id
+  dynamic "service_binding" {
+    for_each = data.cloudfoundry_service_instance.linked
+    content {
+      service_instance = service_binding.value["id"]
+    }
   }
 
   routes {

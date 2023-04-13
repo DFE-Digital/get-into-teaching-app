@@ -59,8 +59,9 @@ variable "paas_logging_name" {
   default = "logit-ssl-drain"
 }
 
-variable "paas_redis_1_name" {
-  default = "get-into-teaching-dev-redis-svc"
+variable "paas_linked_services" {
+  default = ["get-into-teaching-dev-redis-svc"
+  , "get-into-teaching-api-dev-pg-common-svc"]
 }
 
 variable "paas_app_application_name" {

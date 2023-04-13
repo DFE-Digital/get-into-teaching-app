@@ -84,7 +84,7 @@ WORKDIR /app
 
 # Install production image dependencies
 RUN apk update
-RUN apk add --no-cache tzdata shared-mime-info && \
+RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev && \
     rm -rf /var/lib/apt/lists/*
 
 COPY --from=release-build /app /app
