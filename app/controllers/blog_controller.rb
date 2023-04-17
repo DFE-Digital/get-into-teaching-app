@@ -6,7 +6,10 @@ class BlogController < ApplicationController
   layout "layouts/blog/index"
 
   def index
-    @front_matter = { "title" => "Get Into Teaching Blog" }
+    @front_matter = {
+      "title" => "Get Into Teaching Blog",
+      "description" => "Meta description goes here",
+    }
 
     breadcrumb "Blog", blog_index_path
 
