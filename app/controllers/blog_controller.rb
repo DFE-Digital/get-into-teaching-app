@@ -8,7 +8,7 @@ class BlogController < ApplicationController
   def index
     @front_matter = {
       "title" => "Get Into Teaching Blog",
-      "description" => "Meta description goes here",
+      "description" => "Read about the real life experiences of teachers and teachers in training, as well as tips on how to start your journey into the classroom.",
     }
 
     breadcrumb "Blog", blog_index_path
