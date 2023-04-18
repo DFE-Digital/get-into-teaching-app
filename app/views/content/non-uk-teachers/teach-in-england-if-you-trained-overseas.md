@@ -204,7 +204,7 @@ As part of your application, schools will usually ask for your:
 * personal statement
 * references
 
-Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school. [Get tips on writing a personal statement](https://www.tes.com/jobs/careers-advice/application-and-interview/how-write-perfect-teaching-personal-statement).
+Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school. [Get tips on writing a personal statement](https://teaching-vacancies.service.gov.uk/jobseeker-guides/how-to-write-teacher-personal-statement).
 
 Some schools may ask for a curriculum vitae (CV) – [get tips on writing a CV](https://nationalcareers.service.gov.uk/careers-advice/cv-sections).
 
@@ -213,7 +213,7 @@ If you’re shortlisted, you’ll be invited for interview and asked to demonstr
 
 ### Prepare for your interview
 
-You may be asked about your knowledge of English education in interviews for teaching jobs. To prepare, you can [read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
+You may be asked about your knowledge of English education in interviews for teaching jobs. To prepare, you can [read other teachers’ stories](/blog) and research the [English national curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
 ### Safeguarding checks
 
