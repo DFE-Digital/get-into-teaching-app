@@ -9,16 +9,19 @@
   backlink: "../"
   navigation: 10
   steps:
-    Decide who to teach:
-      partial: content/steps-to-become-a-teacher/step_1_decide_who_to_teach
-    Check your qualifications:
-      partial: content/steps-to-become-a-teacher/step_2_check_your_qualifications
-    Learn about funding:
-      partial: content/steps-to-become-a-teacher/step_3_learn_about_funding
-    Find the right training:
-      partial: content/steps-to-become-a-teacher/step_4_find_the_right_training
-    Apply for your course:
-      partial: content/steps-to-become-a-teacher/step_5_apply_for_your_course
+    steps-1:
+      numeric: false
+      steps: 
+        Decide who to teach:
+          partial: content/steps-to-become-a-teacher/step_1_decide_who_to_teach
+        Check your qualifications:
+          partial: content/steps-to-become-a-teacher/step_2_check_your_qualifications
+        Learn about funding:
+          partial: content/steps-to-become-a-teacher/step_3_learn_about_funding
+        Find the right training:
+          partial: content/steps-to-become-a-teacher/step_4_find_the_right_training
+        Apply for your course:
+          partial: content/steps-to-become-a-teacher/step_5_apply_for_your_course
   how_to:
     Decide who to teach:
       id: "step-1"
@@ -81,6 +84,6 @@
     - Advisor
     - Teacher Training Advisor
     - get an adviser
-
-
 ---
+
+$steps-1$

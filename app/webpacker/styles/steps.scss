@@ -1,9 +1,26 @@
-.steps {
+ol.steps {
+  &:before {
+    border-left: 6px dotted $black;
+  }
+}
+
+ul.steps {
+  .step__number {
+    img,
+    picture {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+ul.steps,
+ol.steps {
   position: relative;
-  margin-top: 2.5em;
   box-sizing: border-box;
   list-style: none;
-  padding: 0 $indent-amount;
+  padding: 0;
+  margin: 2.5em 0;
 
   @include mq($from: tablet) {
     padding: 0;
@@ -16,9 +33,8 @@
     position: absolute;
     top: 20px;
     left: 37px;
-    border-left: 6px dotted $black;
     @include mq($until: tablet) {
-      left: 52px;
+      left: 27px;
     }
   }
 
