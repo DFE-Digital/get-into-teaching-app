@@ -115,6 +115,8 @@ provider_groups:
       link: https://www.derby.ac.uk/
       name: Charlotte Bray
       email: AO@derby.ac.uk
+    - header: University of Northampton
+      email: admissions@northampton.ac.uk
   Greater London:
     providers:
     - header: 2Schools Consortium
