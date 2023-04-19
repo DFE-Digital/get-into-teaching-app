@@ -55,64 +55,62 @@ keywords:
   - Settlement Scheme
 ---
 
-If you’re applying for teaching jobs in England as a non-UK citizen, you will need a visa or immigration status allowing you to work in England. 
-
 The information on this page is for:
 
 * non-UK citizens living in the UK
 * non-UK citizens living outside the UK
 * refugees or asylum seekers
 
+If you’re applying for teaching jobs in England as a non-UK citizen, you will need a visa or immigration status allowing you to work in England.
+
 ### Teachers who will not need a visa
 
 You will not need a visa if you:
 
 * are an Irish citizen
-* have [settled or pre-settled status under the EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
+* have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk)
 
 If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#other-types-of-visa-you-can-use-to-work-as-a-teacher-in-england).
 
-If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to [apply to the EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
+If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to apply to the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
 
-## Check your status
+### Check your status
 
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa
 ).
 
-You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
-
-## The skilled worker visa for teachers
+## Skilled worker visa
 
 The main visa route for non-UK citizens wishing to teach in England is the skilled worker visa.
 
 You’ll be able to apply for your skilled worker visa if:
 
 * you have a job offer from a school that is a Home Office licensed visa sponsor 
-* [you can speak, read, write, and understand English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
+* [you meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * your salary meets the requirements for a skilled worker visa
 
-[Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas)
+[Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ### Salary requirement for a skilled worker visa
 
 The salary you must be paid to get a visa depends on whether you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts#teachers-who-trained-outside-the-uk) and the region you are applying to work in.
 
-The minimum salary non-UK teachers must be paid to be eligible for a skilled worker visa are as follows.
+The minimum salaries non-UK teachers must be paid to be eligible for a skilled worker visa are as follows.
 
 If you have QTS and work in:
 
 * inner London, you must earn £32,157
 * outer London, you must earn £29,915
 * London fringe, you must earn £26,948
-* rest of England, you must earn £25,714
+* the rest of England, you must earn £25,714
 
 If you do not have QTS and work in:
 
 * inner London, you must earn £23,099
 * outer London, you must earn £21,832
 * London fringe, you must earn £19,613
-* rest of England, you must earn £20,480
+* the rest of England, you must earn £20,480
 
 Check the region you will be working in with the school employing you. 
 
@@ -131,9 +129,7 @@ The salary requirements for a skilled worker visa apply whether [the type of sch
   <a href="https://www.gov.uk/skilled-worker-visa">Apply for a skilled worker visa<span></span></a>
 </p>
 
-## Other types of visa you can use to work as a teacher in England
-
-### Graduate visa
+## Graduate visa
 
 If you are already an international student in the UK, you can [apply for a graduate visa on successful completion of your degree](https://www.gov.uk/graduate-visa).
 
@@ -143,9 +139,9 @@ The graduate visa will allow you to work or look for work in the UK for up to 2 
 
 You will be able to switch from a graduate visa to another visa (such as the skilled worker visa) without having to leave the UK, if you meet the requirements for the new visa route.
 
-### High potential individual visa
+## High potential individual visa
 
-[To be eligible for a high potential individual visa](https://www.gov.uk/high-potential-individual-visa), you must:
+To be eligible for [a high potential individual visa](https://www.gov.uk/high-potential-individual-visa), you must:
 
 * have a bachelor’s degree, master’s degree or PhD from a university listed in the [Global Universities](https://www.gov.uk/high-potential-individual-visa/eligibility) list
 * have been awarded your qualification no more than 5 years before you apply
@@ -153,15 +149,15 @@ You will be able to switch from a graduate visa to another visa (such as the ski
 * have personal funds of £1,270
 * pass a security and criminality check
 
-You do not need an offer of a teaching job to apply for this visa and you’ll be able to stay in the UK for 2 years with a Bachelor’s or Master’s degree, and 3 years with a PhD. 
+You do not need an offer of a teaching job to apply for this visa and you’ll be able to stay in the UK for 2 years with a bachelor’s or master’s degree, and 3 years with a PhD. 
 
-### The Youth Mobility Scheme visa 
+## Youth Mobility Scheme visa 
 
 The [Youth Mobility Scheme](https://www.gov.uk/youth-mobility) allows [young people from certain countries](https://www.gov.uk/youth-mobility/eligibility) to come to the UK to work without a sponsor. This includes working as a teacher.
 
 A Youth Mobility Scheme visa lasts up to 2 years. You may be able to switch from a Youth Mobility Scheme visa to another visa route (for example, the skilled worker visa) without having to leave the UK. You’ll need to meet the requirements for the new visa route.
 
-### Other visas 
+## Other visas 
 Depending on your personal circumstances, you may be able to work in the UK on alternative visas – for example:
 
 * a [Family visa](https://www.gov.uk/uk-family-visa)
@@ -173,6 +169,8 @@ Depending on your personal circumstances, you may be able to work in the UK on a
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
 For help with individual applications to training providers or schools, please [register with a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/). Advisers can give you personalised support with your application.
+
+You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
 
 

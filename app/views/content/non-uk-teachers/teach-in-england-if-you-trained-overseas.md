@@ -229,8 +229,6 @@ You can prepare for these checks by getting a letter from the organisation which
 
 ## Apply for your visa
 
-You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](/non-uk-teachers/visas-for-non-UK-teachers). 
-
 You may have a pre-existing right to work in the UK, such as settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain in the UK](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk).
 
 [If you're an Irish citizen you do not need a visa](https://www.gov.uk/government/publications/common-travel-area-guidance).
@@ -239,6 +237,7 @@ If you’re not sure about your immigration status, you can [check if you need a
 
 You can also learn more about [bringing your partner and children](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
 
+You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](/non-uk-teachers/visas-for-non-UK-teachers). 
 
 ## Life as a teacher in England
 
@@ -248,13 +247,13 @@ Many teachers who qualified outside the UK settle in England long-term and devel
 
 If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/support-for-early-career-teachers).
 
-You'll also be able to develop your career through the [National professional qualifications framework](https://www.gov.uk/guidance/national-professional-qualifications-framework).
+You'll also be able to develop your career through the [national professional qualifications framework](https://www.gov.uk/guidance/national-professional-qualifications-framework).
 
 ### Financial help
 
 You may be eligible for the [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) or the [early career payment](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools). 
 
-You can only receive the [international relocation payment (IRP)](#get-an-international-relocation-payment-irp-worth-£10000) once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
+You can only receive the [international relocation payment (IRP)](#get-an-international-relocation-payment-irp-worth-10000) once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
 
 ### Meet non-UK citizens who have made the move to teach in England 
 

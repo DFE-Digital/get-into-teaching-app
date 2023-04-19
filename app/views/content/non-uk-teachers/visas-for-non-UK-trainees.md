@@ -135,7 +135,7 @@ You’ll be able to apply for your visa if:
 
 * you have a confirmed offer for a salaried training place 
 * your training provider has confirmed you'll be employed by a school which is a licensed skilled worker sponsor
-* [you can speak, read, write, and understand English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
+* [you meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * your salary meets the requirement for a skilled worker visa
 
 Your training provider can help you submit the correct details for your visa application. 
