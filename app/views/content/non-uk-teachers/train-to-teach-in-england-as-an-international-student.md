@@ -218,6 +218,8 @@ Your [teacher training adviser](#get-support-and-advice) can help with:
 
 If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
 
+For your teacher training place offer to be confirmed, you’ll have to pass criminal record and health checks, so we recommend applying to your training provider early. You can apply for teacher training from October, for courses starting the following year in September or January. 
+
 Due to rules about immigration, not all providers can accept international applicants – we suggest you contact them before you apply to check.
 
 <div class="inset">
