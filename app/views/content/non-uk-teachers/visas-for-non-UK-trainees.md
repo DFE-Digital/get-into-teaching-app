@@ -188,7 +188,9 @@ This includes training as a teacher on a salaried or fee-paying initial teacher 
 
 You will be able to switch from a graduate visa to another visa (such as the skilled worker visa) without having to leave the UK, if you meet the requirements for the new visa route.
 
-[Apply for a graduate visa](https://www.gov.uk/graduate-visa).
+<p class="call-to-action__action">
+  <a href="https://www.gov.uk/graduate-visa">Apply for a graduate visa<span></span></a>
+</p>
 
 ## High potential individual visa
 
@@ -204,7 +206,9 @@ You do not need an offer of a place on a teacher training course to apply for th
 
 If your visa application is successful, you will be able to train as a teacher on either a salaried or fee-paying initial teacher training course, as long as the course does not meet the requirements for a student visa. If the course can sponsor a student visa, you must apply for this type of visa.
 
-Apply for a [high potential individual visa](https://www.gov.uk/high-potential-individual-visa).
+<p class="call-to-action__action">
+  <a href="https://www.gov.uk/high-potential-individual-visa">Apply for a high potential individual visa<span></span></a>
+</p>
 
 ## The Youth Mobility Scheme visa 
 
