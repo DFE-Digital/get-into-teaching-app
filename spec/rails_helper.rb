@@ -79,6 +79,8 @@ RSpec.configure do |config|
   config.include SpecHelpers::Integration, type: :feature
   config.include Webpacker::Helper, type: :helper
 
+  config.include_context "with stubbed latest privacy policy api"
+
   config.verbose_retry = true
   config.default_retry_count = 2
   # We occasionally see timeout errors on features/chat_spec.rb.

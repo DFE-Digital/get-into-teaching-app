@@ -2,7 +2,6 @@ require "rails_helper"
 
 RSpec.feature "Book a callback", type: :feature do
   include_context "with wizard data"
-  include_context "with stubbed latest privacy policy api"
 
   let(:quota) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(

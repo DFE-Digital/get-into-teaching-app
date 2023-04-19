@@ -2,7 +2,6 @@ require "rails_helper"
 
 RSpec.feature "Breadcrumbs", type: :feature do
   include_context "with stubbed types api"
-  include_context "with stubbed latest privacy policy api"
 
   subject { page }
 

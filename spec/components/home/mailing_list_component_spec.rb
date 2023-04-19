@@ -1,8 +1,6 @@
 require "rails_helper"
 
 describe Home::MailingListComponent, type: :component do
-  include_context "with stubbed latest privacy policy api"
-
   subject(:render) do
     render_inline(component)
     page
@@ -13,5 +11,5 @@ describe Home::MailingListComponent, type: :component do
   it { is_expected.to have_css(".home-mailing-list") }
   it { is_expected.to have_css("h2") }
   it { is_expected.to have_css("form") }
-  it { is_expected.to have_link("privacy notice", href: "/privacy-policy?id=#{policy['id']}") }
+  it { is_expected.to have_link("privacy notice", href: "/privacy-policy?id=#{policy.id}") }
 end
