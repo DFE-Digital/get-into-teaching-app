@@ -101,6 +101,8 @@ provider_groups:
       name: Nicki Shore
       telephone: 01522 889297
       email: scittenquiries@prioryacademies.co.uk
+    - header: University of Northampton
+      email: admissions@northampton.ac.uk
     - header: Nottingham Trent University
       link: https://www.ntu.ac.uk/
       name: Admissions team
