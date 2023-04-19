@@ -89,11 +89,11 @@
       text: There are more steps to consider if you're <a href="/non-uk-teachers">a non-UK citizen</a>.
       color: grey
 ---
-Discover if a career teaching in a primary or secondary school in England is right for you.
+<b>Discover if a career teaching in a primary or secondary school in England is right for you.</b>
 
-These steps can help you to achieve qualified teacher status (QTS), which you need to teach in many primary and secondary schools in England.
+<b>These steps can help you to achieve qualified teacher status (QTS), which you need to teach in many primary and secondary schools in England.</b>
 
-You do not have to follow the steps in order and some may take longer than others.
+<b>You do not have to follow the steps in order and some may take longer than others.</b>
 
 A teacher training adviser can give practical advice and reassurance about all of these steps and more. [Learn more about teacher training advisers.](/teacher-training-advisers)
 
