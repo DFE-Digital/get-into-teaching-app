@@ -195,6 +195,11 @@ describe ApplicationHelper do
     end
   end
 
+  describe "#human_boolean" do
+    it { expect(human_boolean(true)).to eq("Yes") }
+    it { expect(human_boolean(false)).to eq("No") }
+  end
+
   describe "#sentry_dsn" do
     subject { sentry_dsn }
 

@@ -4,7 +4,8 @@ module SpecHelpers
       allow(::BasicAuth).to receive(:authenticate).and_return(false)
 
       credentials.each do |c|
-        allow(::BasicAuth).to receive(:authenticate).with(c[:username], c[:password]).and_return(true)
+        user = User.new(c[:username], c[:role])
+        allow(::BasicAuth).to receive(:authenticate).with(c[:username], c[:password]).and_return(user)
       end
     end
 

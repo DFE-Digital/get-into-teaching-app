@@ -92,7 +92,7 @@ COPY --from=release-build /usr/local/bundle/ /usr/local/bundle/
 
 EXPOSE 3000
 ENTRYPOINT ["bundle", "exec"]
-CMD ["rails", "server" ]
+CMD ["rails db:migrate && rails server"]
 
 ARG SHA
 RUN echo "sha-${SHA}" > /etc/get-into-teaching-app-sha

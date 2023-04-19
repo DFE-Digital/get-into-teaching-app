@@ -1,2 +1,8 @@
 ---
-shared: {}
+shared:
+  feedbacks:
+    - id
+    - rating
+    - successful_visit
+    - created_at
+    - updated_at

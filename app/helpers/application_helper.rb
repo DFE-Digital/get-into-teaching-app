@@ -40,6 +40,10 @@ module ApplicationHelper
     end
   end
 
+  def human_boolean(boolean)
+    boolean ? "Yes" : "No"
+  end
+
   # FA supports several styles:
   # fas = solid, fab = brand, far = regular, fal = light, fad = duotone
   # https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use

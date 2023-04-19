@@ -11,6 +11,11 @@ gem "puma", "~> 5.6", ">= 5.6.2"
 
 gem "pg"
 
+# Fork needed for Ruby 3.1/Rails 7
+gem "validates_timeliness", github: "mitsuru/validates_timeliness", branch: "rails7"
+
+gem "invisible_captcha"
+
 gem "shakapacker", "6.5.6"
 
 # Use ActiveStorage variant

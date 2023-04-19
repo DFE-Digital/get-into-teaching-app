@@ -93,6 +93,24 @@ describe Prometheus::Metrics do
     it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
   end
 
+  describe "app_tta_feedback_visit_total" do
+    subject { registry.get(:app_tta_feedback_visit_total) }
+
+    it { is_expected.not_to be_nil }
+    it { is_expected.to have_attributes(docstring: "A counter of feedback visit responses") }
+    it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
+    it { expect { subject.get(labels: %i[successful]) }.not_to raise_error }
+  end
+
+  describe "app_tta_feedback_rating_total" do
+    subject { registry.get(:app_tta_feedback_rating_total) }
+
+    it { is_expected.not_to be_nil }
+    it { is_expected.to have_attributes(docstring: "A counter of feedback rating responses") }
+    it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
+    it { expect { subject.get(labels: %i[rating]) }.not_to raise_error }
+  end
+
   def expected_preset_labels
     {
       app: "app-name",
