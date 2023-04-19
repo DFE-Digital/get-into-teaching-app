@@ -47,8 +47,8 @@ keywords:
   - Taiwan
   - Family Visa
   - UK Ancestry Visa
-  – Refugees
-  – Asylum seekers
+  - Refugees
+  - Asylum seekers
   - Europe
   - European
   - Settlement Scheme
