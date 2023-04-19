@@ -97,8 +97,7 @@ If you or your family are from the European Economic Area (EEA) or Switzerland, 
 
 ### Check your status
 
-If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa
-).
+If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
 
 
 
