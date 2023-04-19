@@ -2,7 +2,6 @@ require "rails_helper"
 
 describe MailingList::Steps::Name do
   include_context "with wizard step"
-  include_context "with stubbed latest privacy policy api"
 
   let(:channels) do
     OptionSet::MAILING_LIST_CHANNELS.map do |k, v|
