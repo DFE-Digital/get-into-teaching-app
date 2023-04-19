@@ -143,6 +143,7 @@ A statement of comparability proves that your school and university qualificatio
 #### English language, maths and science proficiency
 
 Your English language qualification could be evidence you’ve reached a certain standard in an English language test, for example one of the following: 
+
 * the [International English Language Testing System (IELTS)](https://www.ielts.org/)
 * [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl)
 * [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/)  
@@ -166,9 +167,9 @@ If you are not training to teach in these subjects, any support you get will dep
 
 ### 4. Search and apply for teacher training courses
 
-You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Some courses combine [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
+Your teacher training course must lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
 
-Teacher training courses can also be 'fee-paying' or 'salaried'.
+You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Teacher training courses can also be 'fee-paying' or 'salaried'.
 
 #### Fee-paying and salaried teacher training courses
 
@@ -188,7 +189,7 @@ Salaried courses include:
 * the Teach First Leadership Development programme
 * postgraduate teaching apprenticeships – [to apply for an apprenticeship, you'll need to meet certain visa requirements](/non-uk-teachers/visas-for-non-UK-trainees)
 
-[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists fee-paying and salaried training courses.
+[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists fee-paying and salaried training courses leading to qualified teacher status.
 
 #### Choosing a subject to teach 
 
@@ -196,7 +197,7 @@ The subject you apply to teach must usually be the same, or closely related to, 
 
 #### Finding the right course for you and getting help
 
-You can [find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
+[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists courses leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
 
 You can also search courses by:
 

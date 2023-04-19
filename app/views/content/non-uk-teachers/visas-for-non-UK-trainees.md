@@ -55,18 +55,18 @@ keywords:
   
 ---
 
+If you’re applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study or work in England. 
+
 The information on this page is for:
 
 * non-UK citizens living in the UK
 * non-UK citizens living outside the UK
 * refugees or asylum seekers
 
-If you’re applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study or work in England. 
-
 You will not need a visa to train to teach in the UK if you:
 
 * are an Irish citizen
-* have [settled or pre-settled status under the EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
+* have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
 
 ### Already studying in the UK as an international student?
@@ -93,7 +93,7 @@ If you do not have settled or pre-settled status under the EU Settlement Scheme,
 
 ### The EU Settlement Scheme 
 
-If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to [apply to the EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
+If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to apply to the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
 
 ### Check your status
 
@@ -119,7 +119,7 @@ You’ll be able to apply for your visa if you:
 * have a confirmed offer of a place on a course with a teacher training provider that is a licensed sponsor of student visas 
 * have a reference number, called a confirmation of acceptance for studies (CAS), which your training provider will give you
 * [have enough money to support yourself and pay for your course](https://www.gov.uk/student-visa/money)
-* [can speak, read, write, and understand English](https://www.gov.uk/student-visa/knowledge-of-english)
+* [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/student-visa/knowledge-of-english)
 
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/student-visa/apply">Apply for a student visa<span></span></a>
@@ -144,7 +144,7 @@ Your training provider can help you submit the correct details for your visa app
 
 The salary threshold you must meet depends on the region you work in as a salaried trainee.
 
-### Full-time training
+#### Full-time training
 
 Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a skilled worker visa – this varies by region, as follows:
 
@@ -155,7 +155,7 @@ Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a
 
 Check the region you will be working in with your teacher training provider.
 
-### Part-time training
+#### Part-time training
 
 You may be able to train part-time, but your salary must meet the threshold for a skilled worker visa.
 

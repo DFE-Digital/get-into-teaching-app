@@ -55,15 +55,14 @@ keywords:
   - Settlement Scheme
 ---
 
+
+If you’re applying for teaching jobs in England as a non-UK citizen, you will need a visa or immigration status allowing you to work in England.
+
 The information on this page is for:
 
 * non-UK citizens living in the UK
 * non-UK citizens living outside the UK
 * refugees or asylum seekers
-
-If you’re applying for teaching jobs in England as a non-UK citizen, you will need a visa or immigration status allowing you to work in England.
-
-### Teachers who will not need a visa
 
 You will not need a visa if you:
 
@@ -88,7 +87,7 @@ You’ll be able to apply for your skilled worker visa if:
 
 * you have a job offer from a school that is a Home Office licensed visa sponsor 
 * [you meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
-* your salary meets the requirements for a skilled worker visa
+* your salary meets the requirement for a skilled worker visa
 
 [Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
@@ -131,7 +130,7 @@ The salary requirements for a skilled worker visa apply whether [the type of sch
 
 ## Graduate visa
 
-If you are already an international student in the UK, you can [apply for a graduate visa on successful completion of your degree](https://www.gov.uk/graduate-visa).
+If you are already an international student in the UK, you can apply for a graduate visa on successful completion of your degree.
 
 To apply, you must have been sponsored by a Home Office licensed student sponsor over the course of your studies.
 
@@ -139,9 +138,13 @@ The graduate visa will allow you to work or look for work in the UK for up to 2 
 
 You will be able to switch from a graduate visa to another visa (such as the skilled worker visa) without having to leave the UK, if you meet the requirements for the new visa route.
 
+<p class="call-to-action__action">
+  <a href="https://www.gov.uk/graduate-visa">Apply for a graduate visa<span></span></a>
+</p>
+
 ## High potential individual visa
 
-To be eligible for [a high potential individual visa](https://www.gov.uk/high-potential-individual-visa), you must:
+To be eligible for a high potential individual visa, you must:
 
 * have a bachelor’s degree, master’s degree or PhD from a university listed in the [Global Universities](https://www.gov.uk/high-potential-individual-visa/eligibility) list
 * have been awarded your qualification no more than 5 years before you apply
@@ -150,6 +153,10 @@ To be eligible for [a high potential individual visa](https://www.gov.uk/high-po
 * pass a security and criminality check
 
 You do not need an offer of a teaching job to apply for this visa and you’ll be able to stay in the UK for 2 years with a bachelor’s or master’s degree, and 3 years with a PhD. 
+
+<p class="call-to-action__action">
+  <a href="https://www.gov.uk/high-potential-individual-visa">Apply for a high potential individual visa<span></span></a>
+</p>
 
 ## Youth Mobility Scheme visa 
 
