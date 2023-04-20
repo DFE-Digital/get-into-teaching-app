@@ -187,10 +187,8 @@ Salaried courses include:
 
 * School Direct salaried teacher training programmes
 * the Teach First Leadership Development programme
-* postgraduate teaching apprenticeships – [to apply for an apprenticeship, you'll need to meet certain visa requirements](/non-uk-teachers/visas-for-non-UK-trainees)
-
-[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists fee-paying and salaried training courses leading to qualified teacher status.
-
+* postgraduate teaching apprenticeships 
+ 
 #### Choosing a subject to teach 
 
 The subject you apply to teach must usually be the same, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) 
@@ -228,8 +226,23 @@ Due to rules about immigration, not all providers can accept international appli
 
   <p>
 If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.
+
+If you are resident in the UK, you may also be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train. 
+
+To apply, you will need to meet both the following conditions:
+
+* you must have settled or pre-settled status under the EU Settlement Scheme
+* you must have been living in the UK or [the EEA](https://www.gov.uk/eu-eea) for 3 or more years before the start of your apprenticeship
+
+If you do not have settled or pre-settled status under the EU Settlement Scheme, you will need to meet both the following conditions:
+
+* you must have a visa or immigration status allowing you to work in the UK (for example, a graduate visa)
+* you must have been living in the UK for 3 or more years before the start of your apprenticeship
+
   </p>
 </div>
+
+[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists fee-paying and salaried training courses, including postgraduate teaching apprenticeships, leading to qualified teacher status.
 
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find and apply for teacher training courses<span> in England</span></a>

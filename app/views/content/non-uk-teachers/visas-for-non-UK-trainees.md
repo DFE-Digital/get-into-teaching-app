@@ -130,8 +130,8 @@ Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a
 
 * inner London: £23,099
 * outer London: £21,832
-* London fringe: £19,613
-* rest of England: £18,419
+* London fringe: £20,960
+* rest of England: £20,960
 
 Check the region you will be working in with your teacher training provider.
 
@@ -141,14 +141,14 @@ You may be able to train part-time, but your salary must meet the threshold for 
 
 There are 2 requirements:
 
-Your part-time salary must be at least £20,480.
+Your part-time salary must be at least £20,960.
 
 The full-time equivalent of your salary must meet the threshold set for the skilled worker visa in your region, as follows: 
 
 * inner London: £23,099
 * outer London: £21,832
-* London fringe: £19,613
-* rest of England: £18,419
+* London fringe: £20,960
+* rest of England: £20,960
 
 Check the region you will be working in with your teacher training provider.
 
@@ -214,25 +214,11 @@ A Youth Mobility Scheme visa lasts up to 2 years. You may be able to switch from
 ## Other visas 
 Depending on your personal circumstances, you may be able to work or study in the UK on alternative visas – for example:
 
-* a [Family visa](https://www.gov.uk/uk-family-visa)
-* a [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
-* if you are from Hong Kong, a [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
-
-## Visa requirements for postgraduate teaching apprenticeships
-
-A postgraduate teaching apprenticeship is a type of salaried teacher training course. You may be able to apply if you are already living in the UK.
-
-To apply, you will need to meet both the following conditions:
-
-* you must have settled or pre-settled status under the EU Settlement Scheme
-* you must have been living in the UK or the EEA for 3 or more years before the start of your apprenticeship
-
-If you do not have settled or pre-settled status under the EU Settlement Scheme, you will need to meet both the following conditions:
-
-* you must have a visa or immigration status allowing you to work in the UK (for example, a graduate visa)
-* you must have been living in the UK for 3 or more years before the start of your apprenticeship
-
-[Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists postgraduate teaching apprenticeships.
+** on a [Family visa](https://www.gov.uk/uk-family-visa)
+* on a [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
+* if you are from Hong Kong, on a [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
+* as a [family member of someone on a student visa](https://www.gov.uk/student-visa/family-members) 
+* as a [family member of someone on a skilled worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children) 
 
 ## Refugees and asylum seekers 
 
