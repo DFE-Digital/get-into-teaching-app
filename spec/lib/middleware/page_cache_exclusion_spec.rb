@@ -65,6 +65,12 @@ describe Middleware::PageCacheExclusion, type: :request do
       it { is_expected.to have_received(:delete).with("#{path}.html") }
     end
 
+    context "when the root path" do
+      let(:path) { root_path }
+
+      it { is_expected.to have_received(:delete).with("/index.html") }
+    end
+
     context "when the response body is an instance of ActionDispatch::Response::RackBody" do
       let(:form_method) { "PoSt" }
       let(:response) do
