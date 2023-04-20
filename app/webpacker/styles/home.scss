@@ -75,7 +75,7 @@
     margin-inline: 2rem;
   }
 
-  @mixin background-image($size: 85%, $align: center, $image: "desktop") {
+  @mixin background-image($size: 100%, $align: center, $image: "desktop") {
     $background-images: (
       "desktop": "../images/steps-graphic.svg",
       "mobile": "../images/steps-graphic.svg",
@@ -94,7 +94,7 @@
   //    mobile:   5    × 1
   @supports (display: grid) {
     display: grid;
-    grid-template-columns: $px-either-side-of-content repeat(2, 1.2fr) repeat(2, .8fr) $px-either-side-of-content;
+    grid-template-columns: $px-either-side-of-content repeat(2, 1fr) repeat(2, 1fr) $px-either-side-of-content;
     grid-template-rows: repeat(3, minmax(min-content, max-content));
 
     gap: 1em 0;
@@ -121,7 +121,7 @@
 
     &__graphic {
       grid-area: 1 / 4 / 4 / 7;
-      @include background-image($align: right, $image: "desktop");
+      @include background-image($align: center, $image: "desktop");
       background-size: contain;
       margin-block: 1em;
     }
@@ -130,6 +130,7 @@
       grid-area: 3 / 2 / 3 / 4;
       align-self: center;
       margin-block: 1em;
+      margin-bottom: 1.8em;
 
       a {
         @include chevron;
@@ -164,7 +165,7 @@
 
   @include mq($until: mobile) {
     grid-template-columns: auto;
-    grid-template-rows: .5fr .5fr 2fr .5fr;
+    grid-template-rows: .5fr .5fr .5fr 2fr;
 
     &__purple-box { grid-area: 1 / 1 / 6 / 2; }
 
@@ -176,12 +177,16 @@
     }
 
     &__graphic {
-      grid-area: 3 / 1 / 4 / 2;
+      grid-area: 4 / 1 / 5 / 2;
       @include background-image($image: "mobile");
       background-size: contain;
       background-position: center;
+      margin-top: 0;
     }
 
-    &__cta { grid-area: 4 / 1 / 5 / 2; }
+    &__cta {
+      grid-area: 3 / 1 / 4 / 2;
+      margin-bottom: 1em;
+    }
   }
 }
