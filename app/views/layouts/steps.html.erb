@@ -11,40 +11,16 @@
           <%= render(partial: "sections/content_errors") %>
 
           <%= tag.article(class: article_classes(@front_matter)) do %>
-
             <%= yield %>
-
-            <% @front_matter.key?("steps") && @front_matter["steps"].tap do |steps_fm| %>
-
-              <ol class="steps">
-                <% steps_fm.each.with_index(1) do |(title, contents), i| %>
-                  <%= tag.li(class: "step", id: "step-#{i}") do %>
-                    <header class="step__header">
-                      <div class="step__number">
-                        <%= i %>
-                      </div>
-                      <%= tag.h2(title, class: "heading-m") %>
-                    </header>
-
-                    <div class="step__content">
-                      <%= render(partial: contents["partial"]) %>
-                    </div>
-                  <% end %>
-                <% end %>
-              </ol>
-
-            <% end %>
           <% end %>
         </section>
 
         <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
-          <% promo.left_section( classes: %w[ml-background]) %>
-          <% promo.right_section(
-            heading: "Find out more about getting into teaching"
-          ) do %>
-              <p>Explore how you can get into teaching primary or secondary and find top tips on making a successful application.</p>
+           <% promo.left_section(classes: %w[tta-background]) %>
+          <% promo.right_section(heading: "Get free one-to-one support") do %>
+            <p>An adviser with years of teaching experience can help you explore teaching as a career and support you with your application. Chat by phone, text or email, as little or as often as you need.</p>
 
-              <%= link_to("Get tailored guidance in your inbox", "/mailinglist/signup/name", class: "button") %>
+      <%= link_to("Find out more about advisers", "/teacher-training-advisers", class: "button") %>
           <% end %>
         <% end %>
       <% end %>

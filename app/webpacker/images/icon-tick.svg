@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-icon-tick">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="icon-tick" clip-path="url(#clip-icon-tick)">
+    <path id="Path_1027" data-name="Path 1027" d="M154.087,9.248,134.2,28.456l-6.657-6.426L123.1,26.313,134.2,37.024l24.325-23.493Z" transform="translate(-108.813 8.863)" fill-rule="evenodd"/>
+  </g>
+</svg>

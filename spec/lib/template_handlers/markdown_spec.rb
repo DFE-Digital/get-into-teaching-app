@@ -216,6 +216,9 @@ describe TemplateHandlers::Markdown, type: :view do
         "youtube_video" => {
           "video-1" => { "id" => "abc123", "title" => "Video title" },
         },
+        "steps" => {
+          "steps-1" => { "numeric" => true, "steps" => { "First step" => { "partial" => "/content/home/test_content" } } },
+        },
       }
     end
 
@@ -236,6 +239,10 @@ describe TemplateHandlers::Markdown, type: :view do
         Some more text
 
         $video-1$
+
+        Some more text
+
+        $steps-1$
       MARKDOWN
     end
 
@@ -252,6 +259,7 @@ describe TemplateHandlers::Markdown, type: :view do
       is_expected.to have_css(".inset-text", text: "text 1")
       is_expected.to have_css(".inset-text", text: "text 2")
       is_expected.to have_css("iframe[title='Video title']")
+      is_expected.to have_css("ol.steps")
     end
   end
 end
