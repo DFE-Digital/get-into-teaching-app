@@ -3,7 +3,7 @@
   heading: "How to become a teacher"
   layout: "layouts/steps"
   description: |-
-    Find out how to become a teacher with our step-by-step guide. Decide who to teach, check your qualifications, and find out how to train.
+    Find out how to become a teacher in England, including the qualifications you need, how to fund your training and where to find school experience.
   date: "2021-06-24"
   image: "static/content/hero-images/0017.jpg"
   backlink: "../"
@@ -89,14 +89,14 @@
       text: There are more steps to consider if you're <a href="/non-uk-teachers">a non-UK citizen</a>.
       color: grey
 ---
-<b>Discover if a career teaching in a primary or secondary school in England is right for you.</b>
+<strong>Discover if a career teaching in a primary or secondary school in England is right for you.</strong>
 
 <b>These steps can help you to achieve qualified teacher status (QTS), which you need to teach in many primary and secondary schools in England.</b>
 
 <b>You do not have to follow the steps in order and some may take longer than others.</b>
 
-A teacher training adviser can give practical advice and reassurance about all of these steps and more. [Learn more about teacher training advisers.](/teacher-training-advisers)
-
 $international-content$
+
+A teacher training adviser can give free, practical advice and reassurance about all of these steps and more. [Learn more about teacher training advisers](/teacher-training-advisers).
 
 $steps-1$
