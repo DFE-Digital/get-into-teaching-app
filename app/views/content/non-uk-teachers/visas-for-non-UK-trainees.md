@@ -112,7 +112,7 @@ Most non-UK applicants for teacher training will need one of the following:
 
 For a fee-paying teacher training course, you will need a student visa. Your visa must be sponsored by a teacher training provider that is a licensed sponsor of student visas.
 
-[Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists providers who can sponsor student visas. We suggest you contact them to check they can sponsor you before you apply for a training place.
+[Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists providers which can sponsor student visas. We suggest you contact them to check they can sponsor you before you apply for a training place.
 
 You’ll be able to apply for your visa if you:
 
@@ -210,7 +210,22 @@ If your visa application is successful, you will be able to train as a teacher o
   <a href="https://www.gov.uk/high-potential-individual-visa">Apply for a high potential individual visa<span></span></a>
 </p>
 
-## The Youth Mobility Scheme visa 
+## India young professionals scheme
+
+To be eligible for the India young professionals scheme visa, you must:
+
+* be an Indian citizen
+* be between 18 and 30 years old
+* have an eligible qualification
+* have £2,530 in savings
+
+The visa allows you to live and work in the UK for up to 2 years. To apply for the visa, you must first enter a ballot. 
+
+<p class="call-to-action__action">
+  <a href="https://www.gov.uk/india-young-professionals-scheme-visa">Apply for the India young professionals scheme<span></span></a>
+</p>
+
+## Youth Mobility Scheme visa 
 
 The [Youth Mobility Scheme](https://www.gov.uk/youth-mobility) allows [young people from certain countries](https://www.gov.uk/youth-mobility/eligibility) to come to the UK to study or work without a sponsor. This includes training as a teacher through either a salaried or fee-paying initial teacher training course.
 

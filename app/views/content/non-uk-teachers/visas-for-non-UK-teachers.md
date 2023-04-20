@@ -158,6 +158,21 @@ You do not need an offer of a teaching job to apply for this visa and you’ll b
   <a href="https://www.gov.uk/high-potential-individual-visa">Apply for a high potential individual visa<span></span></a>
 </p>
 
+## India young professionals scheme
+
+To be eligible for the India young professionals scheme visa, you must:
+
+* be an Indian citizen
+* be between 18 and 30 years old
+* have an eligible qualification
+* have £2,530 in savings
+
+The visa allows you to live and work in the UK for up to 2 years. To apply for the visa, you must first enter a ballot. 
+
+<p class="call-to-action__action">
+  <a href="https://www.gov.uk/india-young-professionals-scheme-visa">Apply for the India young professionals scheme<span></span></a>
+</p>
+
 ## Youth Mobility Scheme visa 
 
 The [Youth Mobility Scheme](https://www.gov.uk/youth-mobility) allows [young people from certain countries](https://www.gov.uk/youth-mobility/eligibility) to come to the UK to work without a sponsor. This includes working as a teacher.
@@ -165,11 +180,13 @@ The [Youth Mobility Scheme](https://www.gov.uk/youth-mobility) allows [young peo
 A Youth Mobility Scheme visa lasts up to 2 years. You may be able to switch from a Youth Mobility Scheme visa to another visa route (for example, the skilled worker visa) without having to leave the UK. You’ll need to meet the requirements for the new visa route.
 
 ## Other visas 
-Depending on your personal circumstances, you may be able to work in the UK on alternative visas – for example:
+Depending on your personal circumstances, you may be eligible for alternative visas that allow you to work in the UK – for example:
 
 * a [Family visa](https://www.gov.uk/uk-family-visa)
 * a [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
 * if you are from Hong Kong, a [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
+* as a [family member of someone on a student visa](https://www.gov.uk/student-visa/family-members) 
+* as a [family member of someone on a skilled worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children) 
 
 ## Contact
 
