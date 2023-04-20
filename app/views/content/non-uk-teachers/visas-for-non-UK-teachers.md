@@ -70,7 +70,7 @@ You will not need a visa if you:
 * have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk)
 
-If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#other-types-of-visa-you-can-use-to-work-as-a-teacher-in-england).
+If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#graduate-visa).
 
 If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to apply to the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
 
@@ -181,9 +181,9 @@ A Youth Mobility Scheme visa lasts up to 2 years. You may be able to switch from
 ## Other visas 
 Depending on your personal circumstances, you may be eligible for alternative visas that allow you to work in the UK – for example:
 
-* a [Family visa](https://www.gov.uk/uk-family-visa)
-* a [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
-* if you are from Hong Kong, a [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
+* on a [Family visa](https://www.gov.uk/uk-family-visa)
+* on a [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
+* if you are from Hong Kong, on a [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
 * as a [family member of someone on a student visa](https://www.gov.uk/student-visa/family-members) 
 * as a [family member of someone on a skilled worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children) 
 
