@@ -86,6 +86,7 @@ The main visa route for non-UK citizens wishing to teach in England is the skill
 You’ll be able to apply for your skilled worker visa if:
 
 * you have a job offer from a school that is a Home Office licensed visa sponsor 
+* you have a certificate of sponsorship from this school, confirming they have offered you a job and will sponsor you
 * [you meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * your salary meets the requirement for a skilled worker visa
 
@@ -93,23 +94,21 @@ You’ll be able to apply for your skilled worker visa if:
 
 ### Salary requirement for a skilled worker visa
 
-The salary you must be paid to get a visa depends on whether you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts#teachers-who-trained-outside-the-uk) and the region you are applying to work in.
+The salary you must be paid to get a visa varies according to  whether you are employed as a ‘qualified’ or ‘unqualified’ teacher. This depends on your level of experience and qualifications – your employing school can explain whether the role you are applying for is 'qualified' or 'unqualified'.  The salary requirement also varies depending on the region you are applying to work in.
 
-The minimum salaries non-UK teachers must be paid to be eligible for a skilled worker visa are as follows.
-
-If you have QTS and work in:
+If you are employed as a qualified teacher and work in:
 
 * inner London, you must earn £32,157
 * outer London, you must earn £29,915
 * London fringe, you must earn £26,948
 * the rest of England, you must earn £25,714
 
-If you do not have QTS and work in:
+If you are employed as an unqualified teacher and work in:
 
 * inner London, you must earn £23,099
 * outer London, you must earn £21,832
-* London fringe, you must earn £19,613
-* the rest of England, you must earn £20,480
+* London fringe, you must earn £20,960
+* the rest of England, you must earn £20,960
 
 Check the region you will be working in with the school employing you. 
 
@@ -117,8 +116,8 @@ Check the region you will be working in with the school employing you.
 
 You can work part time, but your salary must meet the threshold for a skilled worker visa. There are 2 requirements:
 
-* your part-time salary must be at least £20,480
-* the full-time equivalent of your salary must meet the minimum set for your region and status (QTS or non-QTS)
+* your part-time salary must be at least £20,960
+* the full-time equivalent of your salary must meet the minimum set for your region and status (for qualified and unqualified teachers)
 
 Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary on offer does not meet the skilled worker visa requirements.
 
