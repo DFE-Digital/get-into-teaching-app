@@ -225,21 +225,26 @@ Due to rules about immigration, not all providers can accept international appli
   <h4>Already living in the UK?</h4>
 
   <p>
-If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.
+If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.</p>
 
-If you are resident in the UK, you may also be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train. 
+  <p>
+If you are resident in the UK, you may also be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train.</p> 
 
-To apply, you will need to meet both the following conditions:
+<p>To apply, you will need to meet both the following conditions:
 
-* you must have settled or pre-settled status under the EU Settlement Scheme
-* you must have been living in the UK or [the EEA](https://www.gov.uk/eu-eea) for 3 or more years before the start of your apprenticeship
+<ul>
+  <li>you must have settled or pre-settled status under the EU Settlement Scheme</li>
+  <li>you must have been living in the UK or [the EEA](https://www.gov.uk/eu-eea) for 3 or more years before the start of your apprenticeship</li>
+</ul>
+</p>
 
+<p>
 If you do not have settled or pre-settled status under the EU Settlement Scheme, you will need to meet both the following conditions:
-
-* you must have a visa or immigration status allowing you to work in the UK (for example, a graduate visa)
-* you must have been living in the UK for 3 or more years before the start of your apprenticeship
-
-  </p>
+<ul>
+  <li>you must have a visa or immigration status allowing you to work in the UK (for example, a graduate visa)</li>
+  <li>you must have been living in the UK for 3 or more years before the start of your apprenticeship</li>
+</ul>
+</p>
 </div>
 
 [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists fee-paying and salaried training courses, including postgraduate teaching apprenticeships, leading to qualified teacher status.
