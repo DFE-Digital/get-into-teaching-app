@@ -69,27 +69,7 @@ You will not need a visa to train to teach in the UK if you:
 * have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
 
-### Already studying in the UK as an international student?
-
-#### The graduate visa
-
-If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#other-types-of-visa-you-can-use-to-work-and-study-in-england).
-
-#### Visa requirements for postgraduate teaching apprenticeships
-
-A postgraduate teaching apprenticeship is a type of salaried teacher training course. You may be able to apply if you are already living in the UK.
-
-To apply, you will need to meet both the following conditions:
-
-* you must have settled or pre-settled status under the EU Settlement Scheme
-* you must have been living in the UK or the EEA for 3 or more years before the start of your apprenticeship
-
-If you do not have settled or pre-settled status under the EU Settlement Scheme, you will need to meet both the following conditions:
-
-* you must have a visa or immigration status allowing you to work in the UK (for example, a graduate visa)
-* you must have been living in the UK for 3 or more years before the start of your apprenticeship
-
-[Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists postgraduate teaching apprenticeships.
+If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#graduate-visa).
 
 ### The EU Settlement Scheme 
 
@@ -101,7 +81,7 @@ If you’re not sure about your immigration status, you can [check if you need a
 
 
 
-### Main visa routes for teacher training in England
+## Main visa routes for teacher training in England
  
 Most non-UK applicants for teacher training will need one of the following:
 
@@ -237,6 +217,22 @@ Depending on your personal circumstances, you may be able to work or study in th
 * a [Family visa](https://www.gov.uk/uk-family-visa)
 * a [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
 * if you are from Hong Kong, a [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
+
+## Visa requirements for postgraduate teaching apprenticeships
+
+A postgraduate teaching apprenticeship is a type of salaried teacher training course. You may be able to apply if you are already living in the UK.
+
+To apply, you will need to meet both the following conditions:
+
+* you must have settled or pre-settled status under the EU Settlement Scheme
+* you must have been living in the UK or the EEA for 3 or more years before the start of your apprenticeship
+
+If you do not have settled or pre-settled status under the EU Settlement Scheme, you will need to meet both the following conditions:
+
+* you must have a visa or immigration status allowing you to work in the UK (for example, a graduate visa)
+* you must have been living in the UK for 3 or more years before the start of your apprenticeship
+
+[Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists postgraduate teaching apprenticeships.
 
 ## Refugees and asylum seekers 
 
