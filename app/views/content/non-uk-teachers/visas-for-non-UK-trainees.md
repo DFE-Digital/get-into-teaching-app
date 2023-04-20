@@ -71,15 +71,13 @@ You will not need a visa to train to teach in the UK if you:
 
 If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#graduate-visa).
 
-### The EU Settlement Scheme 
+### EU Settlement Scheme 
 
 If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to apply to the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
 
 ### Check your status
 
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
-
-
 
 ## Main visa routes for teacher training in England
  
@@ -105,7 +103,7 @@ You’ll be able to apply for your visa if you:
   <a href="https://www.gov.uk/student-visa/apply">Apply for a student visa<span></span></a>
 </p>
 
-## The skilled worker visa  
+## Skilled worker visa  
 
 For a teacher training course where you are paid a salary, you will need a skilled worker visa. Your visa must be sponsored by the school employing you, which needs to be a licensed sponsor of skilled worker visas.
 
@@ -214,7 +212,7 @@ A Youth Mobility Scheme visa lasts up to 2 years. You may be able to switch from
 ## Other visas 
 Depending on your personal circumstances, you may be able to work or study in the UK on alternative visas – for example:
 
-** on a [Family visa](https://www.gov.uk/uk-family-visa)
+* on a [Family visa](https://www.gov.uk/uk-family-visa)
 * on a [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
 * if you are from Hong Kong, on a [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
 * as a [family member of someone on a student visa](https://www.gov.uk/student-visa/family-members) 
