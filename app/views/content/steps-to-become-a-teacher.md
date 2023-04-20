@@ -97,6 +97,6 @@
 
 $international-content$
 
-A teacher training adviser can give free, practical advice and reassurance about all of these steps and more. [Learn more about teacher training advisers](/teacher-training-advisers).
+A teacher training adviser can give free practical advice and reassurance about all of these steps and more. [Learn more about teacher training advisers](/teacher-training-advisers).
 
 $steps-1$
