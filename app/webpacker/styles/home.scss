@@ -78,7 +78,7 @@
   @mixin background-image($size: 85%, $align: center, $image: "desktop") {
     $background-images: (
       "desktop": "../images/steps-graphic.svg",
-      "mobile": "../images/steps-graphic-mob.svg"
+      "mobile": "../images/steps-graphic.svg",
     );
 
     background: $align / $size no-repeat url(#{map-get($background-images, $image)});
