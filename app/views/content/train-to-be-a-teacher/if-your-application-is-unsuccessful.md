@@ -55,7 +55,7 @@ If you got your qualifications outside the UK, you should be able to request cop
 
 ### Lack of subject knowledge
 
-You may be able to do a [subject knowledge enhancement (SKE) course](/train-to-be-a-teacher/subject-knowledge-enhancement) to top up your subject knowledge. You could also find a course in a different subject.
+You may be able to do a subject knowledge enhancement (SKE) course to top up your subject knowledge. You could also find a course in a different subject, which may also involve a SKE course to prepare you to teach that subject. [Find out if you're eligible for a SKE course.](/train-to-be-a-teacher/subject-knowledge-enhancement)
 
 ### Lack of teaching or safeguarding knowledge
 
