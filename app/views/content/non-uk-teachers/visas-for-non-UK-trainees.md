@@ -157,7 +157,7 @@ To be eligible for a high potential individual visa, you must:
 * have personal funds of £1,270
 * pass a security and criminality check
 
-You do not need an offer of a place on a teacher training course to apply for this visa and you’ll be able to stay in the UK for 2 years with a Bachelor’s or Master’s degree, and 3 years with a PhD. 
+You do not need an offer of a place on a teacher training course to apply for this visa and you’ll be able to stay in the UK for 2 years with a bachelor’s or master’s degree, and 3 years with a PhD. 
 
 If your visa application is successful, you will be able to train as a teacher on either a salaried or fee-paying initial teacher training course, as long as the course does not meet the requirements for a student visa. If the course can sponsor a student visa, you must apply for this type of visa.
 

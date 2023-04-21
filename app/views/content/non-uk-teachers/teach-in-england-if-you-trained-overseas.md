@@ -160,7 +160,7 @@ Before you apply for a teaching job, contact the school to make sure it is a Hom
 
 If you haven't got QTS, schools you apply to will want to see alternative evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your qualifications compare to English ones.  
 
-### Tips on applying
+### Tips on applying
 
 You can search and apply for jobs by region, subject specialism and age group. Most [teaching vacancies](https://teaching-vacancies.service.gov.uk/) are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September. 
 
@@ -184,7 +184,7 @@ If you’re shortlisted, you’ll be invited for interview and asked to demonstr
 
 You may be asked about your knowledge of English education in interviews for teaching jobs. To prepare, you can [read other teachers’ stories](/blog) and research the [English national curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
-### Safeguarding checks
+### Safeguarding checks
 
 If the school makes you a conditional offer, you’ll then have to pass safeguarding and criminal records checks. These confirm you are a safe and suitable person to work with children. 
 
@@ -225,7 +225,6 @@ You may be eligible for the [levelling up premium payment](https://www.gov.uk/gu
 You can only receive the [international relocation payment (IRP)](#get-an-international-relocation-payment-irp-worth-10000) once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
 
 ### Meet non-UK citizens who have made the move to teach in England 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/owLXaeerFy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Plan your move to England
