@@ -1,6 +1,23 @@
 class Healthcheck
   delegate :to_json, to: :to_h
 
+  def to_h
+    {
+      app_sha: app_sha,
+      content_sha: content_sha,
+      api: test_api,
+      redis: test_redis,
+      postgres: test_postgresql,
+    }
+  end
+
+  def test_postgresql
+    ApplicationRecord.connection
+    ApplicationRecord.connected?
+  rescue RuntimeError
+    false
+  end
+
   def app_sha
     read_file "/etc/get-into-teaching-app-sha"
   end
@@ -22,15 +39,6 @@ class Healthcheck
     Redis.current.ping == "PONG"
   rescue RuntimeError
     false
-  end
-
-  def to_h
-    {
-      app_sha: app_sha,
-      content_sha: content_sha,
-      api: test_api,
-      redis: test_redis,
-    }
   end
 
 private
