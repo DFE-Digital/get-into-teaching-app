@@ -230,7 +230,7 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
   <p>
 <h4>Postgraduate teaching apprenticeships</h4>
 
-If you are resident in the UK, you may also be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train.</p> 
+<p> If you are resident in the UK, you may also be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train.</p> 
 
 <p>To apply, you will need to meet both the following conditions:
 
