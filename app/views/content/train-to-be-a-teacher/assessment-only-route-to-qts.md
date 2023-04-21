@@ -464,11 +464,6 @@ provider_groups:
     - header: The Sheffield SCITT
       link: https://www.sheffieldscitt.org.uk/
       email: admin@sheffieldscitt.org.uk
-    - header: Three Counties Alliance SCITT
-      link: https://ytcascitt.co.uk/
-      name: Rebecca Turner-Loisel
-      telephone: '01977 657604'
-      email: ytca@minsthorpe.cc
     - header: Yorkshire and Humber Teacher Training
       link: https://www.yhtt.co.uk
       name: Chris Fletcher
