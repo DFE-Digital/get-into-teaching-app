@@ -251,7 +251,7 @@ If you do not have settled or pre-settled status under the EU Settlement Scheme,
 </p>
 </div>
 
-[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists fee-paying and salaried training courses, including postgraduate teaching apprenticeships, leading to qualified teacher status.
+Find [fee-paying and salaried training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses), including postgraduate teaching apprenticeships, leading to qualified teacher status.
 
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find and apply for teacher training courses<span> in England</span></a>
