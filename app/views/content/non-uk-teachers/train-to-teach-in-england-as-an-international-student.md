@@ -247,7 +247,7 @@ If you do not have settled or pre-settled status under the EU Settlement Scheme,
   <li>you must have been living in the UK for 3 or more years before the start of your apprenticeship</li>
 </ul>
 
-If you are resident in the UK, you may already have a visa or immigration status allowing you to work – for example, a graduate visa. If you need to apply for another visa – for example, a skilled worker visa – you'll need to do this after you've been given a place on a postgraduate teaching apprenticeship.
+<p> If you are resident in the UK, you may already have a visa or immigration status allowing you to work – for example, a graduate visa. If you need to apply for another visa – for example, a skilled worker visa – you'll need to do this after you've been given a place on a postgraduate teaching apprenticeship.
 </p>
 </div>
 
