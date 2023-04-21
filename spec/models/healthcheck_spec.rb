@@ -65,6 +65,26 @@ describe Healthcheck do
     end
   end
 
+  describe "test_postgresql" do
+    subject { described_class.new.test_postgresql }
+
+    context "with working connection" do
+      before do
+        allow(ApplicationRecord).to receive(:connected?).and_return(true)
+      end
+
+      it { is_expected.to be true }
+    end
+
+    context "with broken connection" do
+      before do
+        allow(ApplicationRecord).to receive(:connected?).and_return(false)
+      end
+
+      it { is_expected.to be false }
+    end
+  end
+
   describe "#test_redis" do
     subject { described_class.new.test_redis }
 
