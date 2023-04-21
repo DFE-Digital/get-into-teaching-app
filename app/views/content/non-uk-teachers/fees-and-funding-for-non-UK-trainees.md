@@ -286,6 +286,7 @@ Financial support can include:
 * help with course fees (a tuition fee loan)
 
 If, as a refugee, you are eligible for help with course fees, you may also be eligible for a bursary or scholarship.
+
 ### Extra financial support
 If you have a disability, children or an adult dependant to care for, and you are eligible for a tuition fee loan and maintenance loan, you may be able to apply for extra help. You do not have to pay this money back.
 
