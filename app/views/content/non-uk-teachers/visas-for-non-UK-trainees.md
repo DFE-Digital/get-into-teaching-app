@@ -12,45 +12,22 @@ image: "static/content/hero-images/0002.jpg"
 backlink: "../../"
 keywords:
   - International
+  - Teaching
+  - Education
+  - Schools
+  - Teacher
   - Overseas
   - Foreign
   - Non-UK
-  - Nationality
-  - Residency
-  - EEA
-  - Canada
-  - New Zealand
-  - Switzerland
-  - USA
   - Visa
   - Skilled worker visa
-  - EU
-  - EU Settlement Scheme
-  - NARIC
-  - UK NARIC
-  - ENIC
-  - UK ENIC
-  - European Network of Information Centre
-  - National Recognition Information Centre for the United Kingdom
   - Immigration
-  - Ireland
-  - Irish
-  - Common Travel Area
   - Student Visa
-  - Home Office
   - Graduate Visa
   - Youth Mobility Scheme
-  - Japan
-  - Monaco
-  - Hong Kong
-  - Republic of Korea
-  - Taiwan
   - Family Visa
   - UK Ancestry Visa
   - Refugees
-  - Asylum seekers
-  - Europe
-  - European
   - Settlement Scheme
   
 ---
