@@ -181,4 +181,4 @@ Try not to worry. There could be a few reasons your application was unsuccessful
 You may need to get an additional qualification, improve your interview
 technique or improve the quality of your application.
 
-[Find out what to do if you did not get a place on a teacher training course.](/train-to-be-a-teacher/if-your-application-is-unsuccessful)
+[Find out what to do if you did not get a place on a teacher training course](/train-to-be-a-teacher/if-your-application-is-unsuccessful).
