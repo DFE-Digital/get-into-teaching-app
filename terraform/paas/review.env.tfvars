@@ -6,4 +6,4 @@ instances                 = 1
 alerts                    = {}
 azure_key_vault           = "s146d01-kv"
 azure_resource_group      = "s146d01-rg"
-paas_database_git_name    = "get-into-teaching-app-dev-pg-git-svc"
+paas_linked_services      = ["get-into-teaching-dev-redis-svc", "get-into-teaching-app-dev-pg-git-svc"]
