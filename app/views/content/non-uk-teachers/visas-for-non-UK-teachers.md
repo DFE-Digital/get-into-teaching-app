@@ -93,7 +93,7 @@ You’ll be able to apply for your skilled worker visa if:
 [Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ### Salary requirement for a skilled worker visa
-
+ 
 The salary you must be paid to get a visa varies according to  whether you are employed as a ‘qualified’ or ‘unqualified’ teacher. This depends on your level of experience and qualifications – your employing school can explain whether the role you are applying for is qualified or unqualified. The salary requirement also varies depending on the region you are applying to work in.
 
 If you are employed as a qualified teacher and work in:
