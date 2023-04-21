@@ -273,7 +273,7 @@ jobs:
     needs: [ build_base ]
     services:
       postgres:
-        image: postgres:11.11
+        image: postgres:13.10
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
