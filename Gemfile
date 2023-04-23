@@ -9,6 +9,8 @@ gem "rails", "~> 7.0.2.3"
 # Use Puma as the app server
 gem "puma", "~> 5.6", ">= 5.6.2"
 
+gem "pg"
+
 gem "shakapacker", "6.5.6"
 
 # Use ActiveStorage variant
@@ -45,7 +47,7 @@ gem "faraday_middleware"
 
 gem "fastimage"
 
-gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.5.3"
+gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.8.0"
 
 gem "hashids"
 
@@ -58,7 +60,7 @@ gem "loaf", ">= 0.10.0"
 gem "prometheus-client"
 
 gem "sentry-rails", ">= 5.4.1"
-gem "sentry-ruby", "~> 5.4.1"
+gem "sentry-ruby", "~> 5.4.2"
 
 gem "skylight", "~> 5.3.4"
 

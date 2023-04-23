@@ -5,7 +5,6 @@ image: "static/content/hero-images/0015.jpg"
 description: |-
   Find out how to become a further education teacher in the UK. This Department for Education page has links to advice and support on teacher training in further education.
 date: "2023-02-23"
-talk_to_us: false
 keywords:
   - Further
   - Further education
@@ -17,6 +16,8 @@ keywords:
   - NVQ
   - BTEC
   - HND
+talk_to_us: false
+feedback: false
 ---
 
 

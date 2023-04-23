@@ -6,7 +6,6 @@ related_content:
     Career progression stories: "/blog/tag/career-progression"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
-promo_content:
 navigation: 20.20
 navigation_title: Teach in England if you trained outside the UK
 navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from overseas.
@@ -17,6 +16,10 @@ inset_text:
   new-international-funding:
     text: |-
       If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/teach-in-england-if-you-trained-overseas#get-an-international-relocation-payment-irp-worth-10000">international relocation payment worth £10,000</a>.
+  express-interest:
+    text: |-
+      To express your interest in applying for the international relocation payment, email us at IRP.ExpressInterest@education.gov.uk.
+    color: grey
 keywords:
   - International
   - Overseas
@@ -83,7 +86,9 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 
 If you are interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for a single payment of £10,000 from the UK government to pay back some of your moving expenses, including visa costs and the [immigration health surcharge](https://www.gov.uk/healthcare-immigration-application). 
 
-The international relocation payment (IRP) will be available to non-UK citizens starting work in English secondary schools in the academic year September 2023 to July 2024. If you are eligible, it will be paid around the end of your first term working in England. You will not have to pay this money back. You can only receive the IRP once.
+The international relocation payment (IRP) will be available to non-UK citizens starting work in English secondary schools in the academic year August/September 2023 to July 2024. If you are eligible, it will be paid around the end of your first term working in England. You will not have to pay this money back. You can only receive the IRP once.
+
+$express-interest$
 
 ### Check your eligibility for the IRP
 

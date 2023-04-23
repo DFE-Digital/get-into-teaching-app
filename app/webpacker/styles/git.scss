@@ -19,7 +19,6 @@
 @import "header";
 @import "footer";
 @import "dialog";
-@import "mailing-list-bar";
 @import "call-to-action";
 @import "accordion";
 @import "blocks";
@@ -30,6 +29,7 @@
 @import "welcome-guide";
 @import "category";
 @import "statement";
+@import "table";
 
 @import "./sections/hero";
 @import "./sections/hero/content";
@@ -63,6 +63,7 @@
 @import "./components/turbolinks-progress-bar";
 @import "./components/grouped-cards";
 @import "./components/what-theyre-saying";
+@import "./components/mailing-list";
 
 @import "./campaigns/numbered-headings";
 

@@ -63,7 +63,6 @@ The Department for Education is committed to making its websites accessible, in 
 
 This website is partially compliant with the WCAG (Web Content Accessibility Guidelines) version 2.1 AA standard, due to the following non-compliances:
 
-* The bar which encourages people to ‘Sign up here’ and which is displayed until dismissed has link text that does not give enough context. This fails to meet [WCAG 2.1 2.4.4 Link Purpose (In Context) (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html) and [WCAG 2.1 2.4.6 Headings and Labels (Level AA)](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html).
 * The focus state of the buttons in our webchat widget does not have sufficient colour contrast. This fails to meet [WCAG 2.1 1.4.11 Non-text Contrast (Level AA)](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html).
 
 ## What we’re doing to improve accessibility

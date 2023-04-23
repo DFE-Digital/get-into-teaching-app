@@ -1,49 +1,53 @@
 ---
-  title: "Steps to become a teacher"
+  title: "How to become a teacher"
+  heading: "How to become a teacher"
   layout: "layouts/steps"
   description: |-
-    Find out how to become a teacher with our step-by-step guide. Decide who to teach, check your qualifications, and find out how to train to be a teacher.
+    Find out how to become a teacher in England, including the qualifications you need, how to fund your training and where to find school experience.
   date: "2021-06-24"
   image: "static/content/hero-images/0017.jpg"
   backlink: "../"
   navigation: 10
   steps:
-    Decide who to teach:
-      partial: content/steps-to-become-a-teacher/step_1_decide_who_to_teach
-    Check your qualifications:
-      partial: content/steps-to-become-a-teacher/step_2_check_your_qualifications
-    Learn about funding:
-      partial: content/steps-to-become-a-teacher/step_3_learn_about_funding
-    Find the right training:
-      partial: content/steps-to-become-a-teacher/step_4_find_the_right_training
-    Apply for your course:
-      partial: content/steps-to-become-a-teacher/step_5_apply_for_your_course
+    steps-1:
+      numeric: false
+      steps: 
+        Check your qualifications:
+          partial: content/steps-to-become-a-teacher/step_1_check_your_qualifications
+        Understand funding:
+          partial: content/steps-to-become-a-teacher/step_2_understand_funding
+        Consider getting experience:
+          partial: content/steps-to-become-a-teacher/step_3_consider_getting_experience
+        Find a teacher training course:
+          partial: content/steps-to-become-a-teacher/step_4_find_a_teacher_training_course
+        Apply for teacher training:
+          partial: content/steps-to-become-a-teacher/step_5_apply_for_teacher_training
   how_to:
-    Decide who to teach:
+    Check your qualifications:
       id: "step-1"
       image: "static/content/hero-images/0017.jpg"
       directions:
-        - Get school experience or attend events.
-    Check your qualifications:
+        - If you have a degree, you can do postgraduate teacher training. If you don't have a degree, you can do undergraduate teacher training.
+    Understand funding:
       id: "step-2"
       image: "static/content/hero-images/0017.jpg"
       directions:
-        - Once you have a degree or equivalent qualification you’re ready for postgraduate primary or secondary initial teacher training courses.
-    Learn about funding:
+        - You can get funding that you do not have to pay back if you train to teach certain subjects.
+    Consider getting experience:
       id: "step-3"
       image: "static/content/hero-images/0017.jpg"
       directions:
-        - You can get funding that you do not have to pay back if you train to teach certain subjects.
-    Find the right training:
+        - Experiencing life in a school and a classroom can help to decide if teaching is right for you and who you want to teach.
+    Find a teacher training course:
       id: "step-4"
       image: "static/content/hero-images/0017.jpg"
       directions:
-        - Explore your options, find out how to train to teach primary or secondary (for example a PGCE or directly in a school).
-    Apply for your course:
+        - Explore your options, find out how to train to teach primary or secondary.
+    Apply for teacher training:
       id: "step-5"
       image: "static/content/hero-images/0017.jpg"
       directions:
-        - Get tips on applying, including finding the right referees and writing a personal statement.
+        - You can usually start applying in October the year before your course starts but courses fill up quickly.
   keywords:
     - QTS
     - Qualified Teacher Status
@@ -80,6 +84,19 @@
     - Advisor
     - Teacher Training Advisor
     - get an adviser
-
-
+  inset_text:
+    international-content:
+      text: There are more steps to consider if you're <a href="/non-uk-teachers">a non-UK citizen</a>.
+      color: grey
 ---
+<strong>Discover if a career teaching in a primary or secondary school in England is right for you.</strong>
+
+<b>These steps can help you to achieve qualified teacher status (QTS), which you need to teach in many primary and secondary schools in England.</b>
+
+<b>You do not have to follow the steps in order and some may take longer than others.</b>
+
+$international-content$
+
+A teacher training adviser can give free practical advice and reassurance about all of these steps and more. [Learn more about teacher training advisers](/teacher-training-advisers).
+
+$steps-1$

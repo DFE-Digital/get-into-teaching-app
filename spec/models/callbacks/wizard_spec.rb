@@ -1,8 +1,6 @@
 require "rails_helper"
 
 describe Callbacks::Wizard do
-  include_context "with stubbed latest privacy policy api"
-
   subject { described_class.new wizardstore, "talking_points" }
 
   let(:uuid) { SecureRandom.uuid }

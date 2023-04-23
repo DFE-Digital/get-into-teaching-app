@@ -2,8 +2,6 @@ require "rails_helper"
 
 describe Events::Steps::FurtherDetails do
   include_context "with wizard step"
-  include_context "with stubbed latest privacy policy api"
-
   it_behaves_like "a with wizard step"
 
   describe "attributes" do

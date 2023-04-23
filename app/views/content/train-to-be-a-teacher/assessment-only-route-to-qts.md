@@ -115,6 +115,8 @@ provider_groups:
       link: https://www.derby.ac.uk/
       name: Charlotte Bray
       email: AO@derby.ac.uk
+    - header: University of Northampton
+      email: admissions@northampton.ac.uk
   Greater London:
     providers:
     - header: 2Schools Consortium
@@ -265,6 +267,10 @@ provider_groups:
       name: Keith Saunders
       telephone: 01227 925555
       email: pgadmissions@canterbury.ac.uk
+    - header: Chepping View Primary Academy SCITT
+      name: Katherine Harrison
+      telephone: 01494 535564, option 3
+      email: kharrison@cvpa.school
     - header: e-Qualitas
       link: https://www.e-qualitas.co.uk/schools/assessment-only/
       name: Helen Gregory
@@ -304,11 +310,14 @@ provider_groups:
       name: Kate Martin
       telephone: 01327 350284 ext. 251
       email: gutprecruitment@sponne.org.uk
-    - header: The Tommy Flowers SCITT
+    - header: The Tommy Flowers SCITT (Primary)
       link: https://tommyflowersscitt.co.uk/assessment-only/
-      name: Catherine Brown (senior administrator)
-      telephone: '01908 505030'
-      email: brownc@denbigh.net
+      telephone: '01908 669735 (ext 320)'
+      email: TFSCITTprimary@denbigh.net
+    - header: The Tommy Flowers SCITT (Secondary)
+      link: https://tommyflowersscitt.co.uk/assessment-only/
+      telephone: '01908 669735 (ext 353)'
+      email: TFSCITTsecondary@denbigh.net
     - header: The University of Buckingham
       link: https://www.buckingham.ac.uk/
       name: Bethany Kelly
@@ -460,10 +469,6 @@ provider_groups:
       name: Rebecca Turner-Loisel
       telephone: '01977 657604'
       email: ytca@minsthorpe.cc
-    - header: University of Hull
-      name: Initial Teacher Education Partners
-      link: https://www.hull.ac.uk
-      email: FACE-ITEPartners@hull.ac.uk
     - header: Yorkshire and Humber Teacher Training
       link: https://www.yhtt.co.uk
       name: Chris Fletcher

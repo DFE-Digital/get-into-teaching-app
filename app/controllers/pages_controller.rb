@@ -1,24 +1,17 @@
 class PagesController < ApplicationController
   class InvalidTemplateName < RuntimeError; end
 
+  before_action :init_funding_widget, only: %i[scholarships_and_bursaries scholarships_and_bursaries_search]
+
   MISSING_TEMPLATE_EXCEPTIONS = [
     ActionView::MissingTemplate,
     InvalidTemplateName,
   ].freeze
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}
-  DYNAMIC_PAGE_PATHS = [
-    "/train-to-be-a-teacher/if-you-have-a-degree", # Contains a form
-    "/train-to-be-a-teacher/if-you-dont-have-a-degree", # Contains a form
-    "/train-to-be-a-teacher/initial-teacher-training", # Contains a form
-    "/help-and-support", #  Contains a form
-    "/landing/how-much-do-teachers-get-paid", # Contains a form
-    "/landing/how-much-do-teachers-get-paid-social", # Contains a form
-    "/landing/how-to-become-a-teacher", # Contains a form
-  ].freeze
 
   caches_page :cookies
-  caches_page :show, unless: proc { |env| DYNAMIC_PAGE_PATHS.include?(env.request.path) }
+  caches_page :show
 
   before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && (params[:subject] || params[:degree_status]) }
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
@@ -59,14 +52,11 @@ class PagesController < ApplicationController
   # Avoid caching by rendering these pages manually:
 
   def scholarships_and_bursaries
-    @funding_widget =
-      if params[:funding_widget].blank?
-        FundingWidget.new
-      else
-        FundingWidget.new(funding_widget_params).tap(&:valid?)
-      end
-
     render_page("funding-and-support/scholarships-and-bursaries")
+  end
+
+  def scholarships_and_bursaries_search
+    render_page("funding-and-support/scholarships-and-bursaries-search")
   end
 
   def welcome
@@ -89,6 +79,15 @@ class PagesController < ApplicationController
   end
 
 private
+
+  def init_funding_widget
+    @funding_widget =
+      if params[:funding_widget].blank?
+        FundingWidget.new
+      else
+        FundingWidget.new(funding_widget_params).tap(&:valid?)
+      end
+  end
 
   def render_page(path)
     @page = ::Pages::Page.find content_template(path)

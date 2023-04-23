@@ -47,6 +47,14 @@
     grid-template-columns: (4 * $indent-amount) auto (2 * $indent-amount);
     grid-template-rows: auto (2 * $indent-amount) auto;
 
+    &.images-1 {
+      display: none;
+    }
+
+    &.images-0 {
+      display: none;
+    }
+
     img {
       max-width: 100%;
       height: auto;
@@ -70,6 +78,10 @@
     @include mq($from: tablet) {
       grid-template-columns: (2 * $indent-amount) auto (4 * $indent-amount) (6 * $indent-amount) (2 * $indent-amount);
       grid-template-rows: auto (2 * $indent-amount) $indent-amount auto;
+
+      &.images-1 {
+        display: grid;
+      }
 
       img {
         max-width: 100%;

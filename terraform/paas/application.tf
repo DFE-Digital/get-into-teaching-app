@@ -4,8 +4,12 @@ locals {
     BASIC_AUTH        = var.basic_auth,
     APP_URL           = length(var.paas_asset_hostnames) == 0 ? "" : "https://${var.paas_internet_hostnames[0]}.${data.cloudfoundry_domain.internet.name}",
   APP_ASSETS_URL = length(var.paas_asset_hostnames) == 0 ? "" : "https://${var.paas_asset_hostnames[0]}.${data.cloudfoundry_domain.internet.name}" }
-}
 
+  service_bindings = (length(var.paas_linked_services) == 0 ?
+    [cloudfoundry_service_instance.app_postgres[0], cloudfoundry_service_instance.app_redis[0]] :
+    values(data.cloudfoundry_service_instance.linked)
+  )
+}
 
 resource "cloudfoundry_app" "app_application" {
   name         = var.paas_app_application_name
@@ -25,8 +29,11 @@ resource "cloudfoundry_app" "app_application" {
     }
   }
 
-  service_binding {
-    service_instance = data.cloudfoundry_service_instance.redis.id
+  dynamic "service_binding" {
+    for_each = local.service_bindings
+    content {
+      service_instance = service_binding.value["id"]
+    }
   }
 
   routes {

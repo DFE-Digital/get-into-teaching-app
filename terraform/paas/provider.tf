@@ -27,15 +27,15 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "3.45.0"
+      version = "3.50.0"
     }
     cloudfoundry = {
       source  = "cloudfoundry-community/cloudfoundry"
-      version = "0.50.4"
+      version = "0.50.6"
     }
     statuscake = {
       source  = "StatusCakeDev/statuscake"
-      version = "2.0.6"
+      version = "2.1.0"
     }
   }
 }

@@ -164,9 +164,9 @@ equivalence test or take a ‘subject knowledge enhancement’ course.
 
 ## If you do not get a place
 
-Your provider will give you feedback to help you address any issues with your application.
+Try not to worry. There could be a few reasons your application was unsuccessful.
 
 You may need to get an additional qualification, improve your interview
 technique or improve the quality of your application.
 
-You can then apply again, to up to 4 courses at a time. You can do this as many times as you want to get a place. Many people succeed second or third time round.
+[Find out what to do if you did not get a place on a teacher training course](/train-to-be-a-teacher/if-your-application-is-unsuccessful).

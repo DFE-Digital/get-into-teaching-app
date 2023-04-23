@@ -184,7 +184,12 @@ describe ApplicationHelper do
     it "includes pages currently under test" do
       is_expected.to eq({
         paths: [
-          "/steps-to-become-a-teacher-search",
+          "/funding-and-support/scholarships-and-bursaries-search",
+          "/train-to-be-a-teacher/if-you-have-a-degree-search",
+          "/landing/train-to-teach-if-you-have-a-degree",
+          "/mailinglist/signup/name",
+          "/mailinglist/signup",
+          "/landing/how-to-fund-your-teacher-training",
         ],
       })
     end
@@ -213,12 +218,26 @@ describe ApplicationHelper do
 
     subject { minimal_footer_kwargs(front_matter) }
 
-    it { is_expected.to eq({ talk_to_us: true, mailing_list: false, feedback: false }) }
+    it { is_expected.to eq({ talk_to_us: true, feedback: false }) }
 
     context "when overriden in the front_matter" do
-      let(:front_matter) { { talk_to_us: false, mailing_list: true, feedback: false, other: false } }
+      let(:front_matter) { { talk_to_us: false, feedback: false, other: false } }
 
-      it { is_expected.to eq({ talk_to_us: false, mailing_list: true, feedback: false }) }
+      it { is_expected.to eq({ talk_to_us: false, feedback: false }) }
+    end
+  end
+
+  describe "#content_footer_kwargs" do
+    let(:front_matter) { {} }
+
+    subject { content_footer_kwargs(front_matter) }
+
+    it { is_expected.to eq({ talk_to_us: true, feedback: true }) }
+
+    context "when overriden in the front_matter" do
+      let(:front_matter) { { talk_to_us: false, feedback: false, other: false } }
+
+      it { is_expected.to eq({ talk_to_us: false, feedback: false }) }
     end
   end
 end
