@@ -206,7 +206,7 @@ If you’re not sure about your immigration status, you can [check if you need a
 
 You can also learn more about [bringing your partner and children](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
 
-You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](/non-uk-teachers/visas-for-non-UK-teachers). 
+You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](/non-uk-teachers/visas-for-non-uk-teachers). 
 
 ## Life as a teacher in England
 

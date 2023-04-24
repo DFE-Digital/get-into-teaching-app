@@ -17,7 +17,7 @@ backlink: "../../"
 inset_text:
   new-international-funding:
     text: |-
-      If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/fees-and-funding-for-non-UK-trainees#get-an-international-relocation-payment-irp-worth-10000">international relocation payment worth £10,000</a>.
+      If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/teach-in-england-if-you-trained-overseas#get-an-international-relocation-payment-irp-worth-10000">international relocation payment worth £10,000</a>.
 keywords:
   - International
   - Overseas
@@ -163,7 +163,7 @@ Fees vary between training providers, but range from £9,250 to about £32,000. 
 
 If you are planning on training to teach languages and physics, you could be eligible for financial help worth up to £39,000, including an international relocation payment worth £10,000.
 
-If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-UK-trainees).
+If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
 ### 4. Search and apply for teacher training courses
 
@@ -221,41 +221,29 @@ For your teacher training place offer to be confirmed, you’ll have to pass cri
 
 Due to rules about immigration, not all providers can accept international applicants – we suggest you contact them before you apply to check.
 
-<div class="inset">
-  <h4>Already living in the UK?</h4>
+#### Already living in the UK?
 
-  <p>
-If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.</p>
+If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.
 
-  <p>
-<h4>Postgraduate teaching apprenticeships</h4>
+#### Postgraduate teaching apprenticeships
 
-<p> If you are resident in the UK, you may also be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train.</p> 
+If you are resident in the UK, you may also be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train.
 
-<p>To apply, you will need to meet both the following conditions:
+To apply, you will need to meet both the following conditions:
 
-<ul>
-  <li>you must have settled or pre-settled status under the EU Settlement Scheme</li>
-  <li>you must have been living in the UK or the EEA for 3 or more years before the start of your apprenticeship</li>
-</ul>
-</p>
+* you must have settled or pre-settled status under the EU Settlement Scheme
+* you must have been living in the UK or the EEA for 3 or more years before the start of your apprenticeship
 
-<p>
 If you do not have settled or pre-settled status under the EU Settlement Scheme, you will need to meet both the following conditions:
-<ul>
-  <li>you must apply for a visa or immigration status allowing you to work in the UK</li>
-  <li>you must have been living in the UK for 3 or more years before the start of your apprenticeship</li>
-</ul>
 
-<p> If you are resident in the UK, you may already have a visa or immigration status allowing you to work – for example, a graduate visa. If you need to apply for another visa – for example, a skilled worker visa – you'll need to do this after you've been given a place on a postgraduate teaching apprenticeship.
-</p>
-</div>
+* you must apply for a visa or immigration status allowing you to work in the UK
+* you must have been living in the UK for 3 or more years before the start of your apprenticeship
+ 
+If you are resident in the UK, you may already have a visa or immigration status allowing you to work – for example, a graduate visa. If you need to apply for another visa – for example, a skilled worker visa – you'll need to do this after you've been given a place on a postgraduate teaching apprenticeship.
 
 Find [fee-paying and salaried training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses), including postgraduate teaching apprenticeships, leading to qualified teacher status.
 
-<p class="call-to-action__action">
-  <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find and apply for teacher training courses<span> in England</span></a>
-</p>
+<a class="button" href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find and apply for teacher training courses<span> in England</span></a>
 
 ### 5. Apply for your visa
 
@@ -263,16 +251,12 @@ To train to teach in England, you will need a visa or immigration status allowin
 
 When you have been accepted on to a teacher training course offering student or skilled worker visa sponsorship, you will be able to apply for your visa.
 
-<div class="inset">
-  <h4>Already living in the UK?</h4>
+#### Already living in the UK?
 
-  <p>If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a> or
-  <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>
-  you will not need a visa to train to teach in the UK.</p>
+If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a> or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>
+you will not need a visa to train to teach in the UK.
 
-</div>
-
-[Learn more about applying for the right visa for your teacher training course](/non-uk-teachers/visas-for-non-UK-trainees).
+[Learn more about applying for the right visa for your teacher training course](/non-uk-teachers/visas-for-non-uk-trainees).
 
 ### 6. Plan your move to the UK
 

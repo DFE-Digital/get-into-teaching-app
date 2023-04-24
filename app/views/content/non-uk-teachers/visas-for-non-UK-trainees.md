@@ -197,7 +197,7 @@ Depending on your personal circumstances, you may be able to work or study in th
 
 ## Refugees and asylum seekers 
 
-If you have been granted refugee status, you can apply for teacher training – either salaried or fee-paying – and will usually be eligible for [financial support to train to teach on a fee-paying course](/non-uk-teachers/fees-and-funding-for-non-UK-trainees).
+If you have been granted refugee status, you can apply for teacher training – either salaried or fee-paying – and will usually be eligible for [financial support to train to teach on a fee-paying course](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
 If you are in the process of seeking asylum, you should refer to your immigration bail conditions to see if you have permission to study on a teacher training course. You will not usually be eligible for financial support to train to teach on a fee-paying course. You are also unlikely to be able to undertake salaried teacher training while your asylum claim is considered, because asylum seekers do not usually have the right to work, although [there are some exceptions](https://www.gov.uk/government/publications/working-whilst-an-asylum-claim-is-considered/working-in-the-uk-whilst-an-asylum-case-is-considered).
 
