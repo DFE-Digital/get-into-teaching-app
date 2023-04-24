@@ -9,8 +9,6 @@ gem "rails", "~> 7.0.2.3"
 # Use Puma as the app server
 gem "puma", "~> 5.6", ">= 5.6.2"
 
-gem "pg"
-
 gem "shakapacker", "6.5.6"
 
 # Use ActiveStorage variant

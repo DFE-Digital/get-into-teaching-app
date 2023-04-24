@@ -271,19 +271,6 @@ jobs:
     name: Unit Tests
     runs-on: ubuntu-latest
     needs: [ build_base ]
-    services:
-      postgres:
-        image: postgres:13.10
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        ports:
-          - 5432:5432
     env:
       DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     strategy:
@@ -309,15 +296,10 @@ jobs:
           secret: INFRA-KEYS
           key: SLACK-WEBHOOK
 
-      - name: Prepare DB
-        run: |-
-          docker run --net=host -t --rm -e RAILS_ENV=test -e DATABASE_URL="postgresql://postgres:postgres@localhost" ${{ env.DOCKER_IMAGE_TEST }} \
-          bundle exec rails db:prepare
-
       - name: Run Specs
         run: |-
-          docker run --net=host -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage/coverage-${{ matrix.ci_node_index }}:/app/coverage \
-            -e CI_NODE_TOTAL -e CI_NODE_INDEX -e RAILS_ENV=test -e DATABASE_URL="postgresql://postgres:postgres@localhost" ${{ env.DOCKER_IMAGE_TEST }} \
+          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage/coverage-${{ matrix.ci_node_index }}:/app/coverage \
+            -e CI_NODE_TOTAL -e CI_NODE_INDEX -e RAILS_ENV=test ${{ env.DOCKER_IMAGE_TEST }} \
             bundle exec rake 'knapsack:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report-${{ matrix.ci_node_index }}.xml --format progress]' spec
         env:
           CI_NODE_TOTAL: ${{ matrix.ci_node_total }}

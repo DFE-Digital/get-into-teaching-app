@@ -27,23 +27,6 @@ variable "paas_space" {
   default = "sandbox"
 }
 
-variable "paas_app_database_name" {
-  type    = string
-  default = null
-}
-variable "paas_app_redis_name" {
-  type    = string
-  default = null
-}
-
-variable "paas_app_redis_plan" {
-  default = "tiny-ha-6_x"
-}
-
-variable "database_plan" {
-  default = "tiny-unencrypted-13"
-}
-
 variable "paas_monitoring_app" {}
 
 variable "paas_org_name" {
@@ -76,8 +59,8 @@ variable "paas_logging_name" {
   default = "logit-ssl-drain"
 }
 
-variable "paas_linked_services" {
-  default = []
+variable "paas_redis_1_name" {
+  default = "get-into-teaching-dev-redis-svc"
 }
 
 variable "paas_app_application_name" {

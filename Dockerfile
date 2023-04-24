@@ -20,7 +20,7 @@ RUN apk update
 RUN apk add --no-cache openssl=1.1.1t-r2
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn git \
-        chromium chromium-chromedriver postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
+        chromium chromium-chromedriver && rm -rf /var/lib/apt/lists/*
 
 # Install bundler
 RUN gem install bundler --version=2.3.4
@@ -84,7 +84,7 @@ WORKDIR /app
 
 # Install production image dependencies
 RUN apk update
-RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev && \
+RUN apk add --no-cache tzdata shared-mime-info && \
     rm -rf /var/lib/apt/lists/*
 
 COPY --from=release-build /app /app
