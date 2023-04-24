@@ -26,6 +26,7 @@ This documentation aims to be a reference for content editors that want to make 
 4. [Navigation](#navigation)
 	* [Main Navigation](#main-navigation)
 	* [Category Pages](#category-pages)
+5. [Build errors](#build-errors)
 
 ## Finding a Page/Content to Edit
 
@@ -383,3 +384,31 @@ content:
 ```
 
 In this example the partial file would be declared in `content/main-category-page/_partial.html.erb` (note the underscore prefix and the file type). Its likely that a developer will create the partial, but using the frontmatter you can easily pull in and re-arrange existing content partials.
+
+## Build errors
+
+When editing content you may find that the pull request build fails, meaning you can't merge your changes. In an effort to make the debugging process easier and more self-servable we are detailing common failures below and how to resolve them.
+
+The first step is finding out what the build error is:
+
+* Scroll down to the 'checks' section of your pull request.
+* Find the check that has failed (it will have a red cross next to it and there may be multiple) .
+* Open the 'details' link next to the check(s) that have failed and you should be automatically taken to the failure details, often highlighted in red. 
+* Cross-reference this error with the errors below to discover the issue and resolution.
+
+### A link to a heading on the same page is broken
+
+#### Example error:
+
+```
+expected to find xpath "//*[@id='other-types-of-visa-you-can-use-to-work-as-a-teacher-in-england']" but there were no matches
+```
+
+#### Description
+
+This error means there is a hyperlink in your content that is linking to a heading on the same page that cannot be found. The heading may have been renamed or removed.
+
+#### Resolution
+
+The hyperlink must match the heading title exactly and be suffixed with a hash, for example a heading of `This is a heading` should be linked to using the markdown `[my link](#this-is-a-heading)` 
+
