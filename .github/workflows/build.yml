@@ -617,7 +617,7 @@ jobs:
 
       - name: Run Integration Tests
         run: |-
-          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true -e HTTP_USERNAME -e HTTP_PASSWORD -e MAILSAC_API_KEY -e DATABASE_URL="postgresql://postgres:postgres@localhost" \
+          docker run --net=host -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true -e HTTP_USERNAME -e HTTP_PASSWORD -e MAILSAC_API_KEY -e DATABASE_URL="postgresql://postgres:postgres@localhost" \
             ${{env.DOCKER_IMAGE_TEST}} bundle exec rspec --tag integration
         env:
           HTTP_USERNAME: ${{ steps.keyvault-yaml-secret.outputs.HTTP-USERNAME }}
