@@ -51,7 +51,7 @@ The international relocation payment (IRP) is a single payment of £10,000 which
 
 [Check your eligibility for the IRP if you are a qualified teacher of languages or physics](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
-[Check your eligibility for the IRP if you want to train to teach languages or physics](/non-uk-teachers/fees-and-funding-for-non-UK-trainees).
+[Check your eligibility for the IRP if you want to train to teach languages or physics](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
 
 ### Check the status of your visa
@@ -307,7 +307,6 @@ Given documentation may be difficult for refugees to provide, we expect schools 
 ## Contact
 
 For help and further information, please email us at teach.inengland@education.gov.uk.
-
 
 
 
