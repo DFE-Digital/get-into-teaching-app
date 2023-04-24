@@ -10,7 +10,6 @@
   hero_content_width: even
   hero_bg_color: yellow
   title_bg_color: white
-  noindex: true
   mailing_list: true
   content:
     - content/home/purple-box
