@@ -6,6 +6,7 @@ module TeacherTrainingAdviser
     RESTRICTED_ACTIONS = %w[index export].freeze
 
     invisible_captcha only: [:create], timestamp_threshold: 1.second
+    before_action :check_feature_switch
     before_action :load_recent_feedback, only: %i[index export]
     before_action :restrict_access, if: :authenticate?
 
@@ -56,6 +57,10 @@ module TeacherTrainingAdviser
     end
 
   private
+
+    def check_feature_switch
+      raise_not_found unless ActiveModel::Type::Boolean.new.cast(ENV["GET_AN_ADVISER"])
+    end
 
     def action_restricted?
       RESTRICTED_ACTIONS.include?(action_name)

@@ -1,6 +1,13 @@
 require "rails_helper"
 
 RSpec.describe "Feedback" do
+  let(:get_an_adviser_flag) { "1" }
+
+  before do
+    allow(ENV).to receive(:[]).and_call_original
+    allow(ENV).to receive(:[]).with("GET_AN_ADVISER").and_return(get_an_adviser_flag)
+  end
+
   subject { response }
 
   describe "#new" do
@@ -8,6 +15,12 @@ RSpec.describe "Feedback" do
 
     it { is_expected.to have_http_status(:success) }
     it { expect(response.body).to include("Give feedback on this service") }
+
+    context "when disabled" do
+      let(:get_an_adviser_flag) { "0" }
+
+      it { is_expected.to have_http_status(:not_found) }
+    end
   end
 
   describe "#create" do
@@ -38,6 +51,14 @@ RSpec.describe "Feedback" do
       it { is_expected.to have_http_status(:success) }
       it { expect(response.body).to include("Give feedback on this service") }
       it { expect(response.body).to include("Select an option for how did you feel about the service") }
+    end
+
+    context "when disabled" do
+      let(:get_an_adviser_flag) { "0" }
+
+      before { post(teacher_training_adviser_feedbacks_path, params: params) }
+
+      it { is_expected.to have_http_status(:not_found) }
     end
   end
 
@@ -75,6 +96,14 @@ RSpec.describe "Feedback" do
       before { get teacher_training_adviser_feedbacks_path }
 
       it { expect(response.body).to include("There are no feedback submissions yet.") }
+    end
+
+    context "when disabled" do
+      let(:get_an_adviser_flag) { "0" }
+
+      before { get teacher_training_adviser_feedbacks_path }
+
+      it { is_expected.to have_http_status(:not_found) }
     end
   end
 
@@ -145,6 +174,12 @@ RSpec.describe "Feedback" do
           CSV
         )
       end
+    end
+
+    context "when disabled" do
+      let(:get_an_adviser_flag) { "0" }
+
+      it { expect(response).to have_http_status(:not_found) }
     end
   end
 
