@@ -291,6 +291,7 @@ GEM
       concurrent-ruby (~> 1.0)
     invisible_captcha (2.1.0)
       rails (>= 5.2)
+    iso_country_codes (0.7.8)
     jwt (2.2.3)
     kaminari (1.2.2)
       activesupport (>= 4.1.0)
@@ -353,6 +354,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.14.2)
       mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
     observer (0.1.1)
     os (1.1.1)
@@ -535,6 +538,7 @@ GEM
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
     unicode-display_width (2.3.0)
+    vcr (6.1.0)
     victor (0.3.4)
     view_component (2.78.0)
       activesupport (>= 5.0.0, < 8.0)
@@ -590,6 +594,7 @@ DEPENDENCIES
   govuk_design_system_formbuilder (>= 2.8.0)
   hashids
   invisible_captcha
+  iso_country_codes
   kaminari (~> 1.2, >= 1.2.2)
   knapsack
   kramdown (>= 2.4.0)
@@ -634,6 +639,7 @@ DEPENDENCIES
   text
   tzinfo-data
   validates_timeliness!
+  vcr
   victor
   view_component (~> 2.78.0)
   web-console (>= 4.2.0)

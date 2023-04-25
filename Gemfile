@@ -16,6 +16,8 @@ gem "validates_timeliness", github: "mitsuru/validates_timeliness", branch: "rai
 
 gem "invisible_captcha"
 
+gem "iso_country_codes"
+
 gem "shakapacker", "6.5.6"
 
 # Use ActiveStorage variant
@@ -150,6 +152,7 @@ group :test do
   gem "rspec-retry"
   gem "selenium-webdriver", "~> 3.142"
   gem "shoulda-matchers"
+  gem "vcr"
   gem "webmock", ">= 3.14.0"
 end
 
