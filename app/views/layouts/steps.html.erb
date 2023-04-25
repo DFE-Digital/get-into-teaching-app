@@ -15,14 +15,20 @@
           <% end %>
         </section>
 
-        <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
-           <% promo.left_section(classes: %w[tta-background]) %>
-          <% promo.right_section(heading: "Get free one-to-one support") do %>
-            <p>An adviser with years of teaching experience can help you explore teaching as a career and support you with your application. Chat by phone, text or email, as little or as often as you need.</p>
+        <section class="row">
+          <div class="col col-full-content">
+            <%= render Content::PurpleBoxComponent.new(
+              heading: "Get free one-to-one support",
+              text: "An adviser with years of teaching experience can help you with your application. Chat through phone, text or email as little or often as you need.",
+              cta: {
+                text: "Find out more about advisers",
+                path: "/teacher-training-advisers",
+              },
+              image: image_pack_tag("static/adviser-graphic.svg", alt: ""),
+            ) %>
+          </div>
+        </section>
 
-      <%= link_to("Find out more about advisers", "/teacher-training-advisers", class: "button") %>
-          <% end %>
-        <% end %>
       <% end %>
 
       <%= render FooterComponent.new %>
