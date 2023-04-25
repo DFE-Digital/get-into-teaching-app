@@ -35,7 +35,7 @@ You do not have to pay this money back, and you’ll get it on top of your other
 
 Figures are for the 2023/24 academic year. 
 
-There are full and part-time teacher training courses available.
+There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the following funding.
 
 ## If you're a parent
 
