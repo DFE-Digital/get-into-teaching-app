@@ -8,7 +8,7 @@ related_content:
     Changing career from engineering to teaching physics: "/blog/natural-transition-from-engineering-to-teaching-physics"
     Engineers teach physics teacher training courses : "/subjects/engineers-teach-physics"
     Transferring my skills to teaching: "/blog/transferring-my-skills-to-teaching"
-    Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
+    Fund your training if you're a parent or carer: "/funding-and-support/if-youre-a-parent-or-carer"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-career-changers
 navigation: 20.15
