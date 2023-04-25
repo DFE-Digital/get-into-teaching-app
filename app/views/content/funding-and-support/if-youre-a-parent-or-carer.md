@@ -6,10 +6,10 @@ description: |-
   Find out what extra grants and schemes are available when completing your teacher training if you have children or other caring responsibilities.
 related_content:
     Becoming a mum sparked my interest in teaching : "/blog/becoming-a-mum-sparked-my-interest-in-teaching"
+    Get support training to teach if you're changing career: "/train-to-be-a-teacher/if-you-want-to-change-career"
+    Tuition fee and maintenance loans: "/funding-and-support/tuition-fee-and-maintenance-loans"
+    Bursaries and scholarships: "/funding-and-support/scholarships-and-bursaries"
     Is teaching right for me? : "/is-teaching-right-for-me"
-    Choosing the right teacher training course provider: "/blog/choosing-the-right-teacher-training-course-provider"
-    Get school experience: "/train-to-be-a-teacher/get-school-experience"
-    Diary of a trainee teacher: "/blog/a-diary-of-a-trainee-teacher"
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.25
