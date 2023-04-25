@@ -31,11 +31,11 @@ inset_text:
 
 If you have children or other caring responsibilities, you may be able to get extra financial support while training to teach. 
 
-You do not have to pay this money back, and you’ll get it on top of your other student finance. 
+You do not have to pay this money back, and you’ll get it on top of your other student finance.
 
-Figures are for the 2023/24 academic year. 
+Figures are for the 2023/24 academic year.
 
-There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the following funding.
+There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the following funding. If you’re doing a part-time course, you may be eligible for [Universal Credit](https://www.gov.uk/guidance/universal-credit-and-students).
 
 ## If you're a parent
 
