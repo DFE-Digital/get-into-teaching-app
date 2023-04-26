@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-api-dev.london.cloudapps.digital/api/pick_list_items/candidate/preferred_education_phases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swagger-Codegen/1.0.6/ruby
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Authorization:
+      - ENV[api_key]
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      date:
+      - Wed, 19 Aug 2020 06:28:36 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '327'
+      etag:
+      - 93466C411C7854E79113018CEF1CD5AFDACF60BE842F7022CAFE8F7859082FFE
+      server:
+      - Kestrel
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-vcap-request-id:
+      - fc7460e8-7fa5-44f3-6ee1-80c38208d863
+    body:
+      encoding: UTF-8
+      string: '[{"id":"222750000","value":"Primary"},{"id":"222750001","value":"Secondary"},{"id":"222750002","value":"Further
+        Education"},{"id":"222750003","value":"Other"},{"id":"222750004","value":"Middle"},{"id":"222750005","value":"Higher
+        Education"},{"id":"222750006","value":"Teaching adults"},{"id":"222750007","value":"Early
+        years"}]'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://get-into-teaching-api-dev.london.cloudapps.digital/api/pick_list_items/candidate/preferred_education_phases
+  recorded_at: Wed, 19 Aug 2020 06:28:36 GMT
+recorded_with: VCR 6.0.0

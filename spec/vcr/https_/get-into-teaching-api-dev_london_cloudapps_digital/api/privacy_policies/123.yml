@@ -1,0 +1,29 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-api-dev.london.cloudapps.digital/api/privacy_policies/123
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/3.1.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer test
+      Request-Id:
+      - 984cc11f-2896-4947-938e-779e8141d601
+  response:
+    status:
+      code: 200
+      message: ''
+    headers: {}
+    body:
+      encoding: UTF-8
+      string: '{"id":"123","text":"Latest privacy policy"}'
+  recorded_at: Tue, 25 Apr 2023 14:17:07 GMT
+recorded_with: VCR 6.1.0
