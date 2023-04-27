@@ -72,6 +72,8 @@ You will not need a visa if you:
 
 If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#graduate-visa).
 
+### EU Settlement Scheme
+
 If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to apply to the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
 
 ### Check your status
