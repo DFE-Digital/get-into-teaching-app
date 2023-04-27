@@ -241,7 +241,7 @@ If you do not have settled or pre-settled status under the EU Settlement Scheme,
  
 If you are resident in the UK, you may already have a visa or immigration status allowing you to work – for example, a graduate visa. If you need to apply for another visa – for example, a skilled worker visa – you'll need to do this after you've been given a place on a postgraduate teaching apprenticeship.
 
-[Find postgraduate teacher training courses]](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists fee-paying and salaried training courses, including postgraduate teaching apprenticeships, leading to qualified teacher status.
+[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists fee-paying and salaried training courses, including postgraduate teaching apprenticeships, leading to qualified teacher status.
 
 <a class="button" href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find and apply for teacher training courses<span> in England</span></a>
 
