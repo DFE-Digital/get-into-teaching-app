@@ -63,7 +63,7 @@ Most non-UK applicants for teacher training will need one of the following:
 * a student visa
 * a skilled worker visa
 
-## The student visa 
+## Student visa 
 
 For a fee-paying teacher training course, you will need a student visa. Your visa must be sponsored by a teacher training provider that is a licensed sponsor of student visas.
 

@@ -72,6 +72,8 @@ You will not need a visa if you:
 
 If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#graduate-visa).
 
+### EU Settlement Scheme
+
 If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to apply to the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
 
 ### Check your status
@@ -191,7 +193,7 @@ Depending on your personal circumstances, you may be eligible for alternative vi
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
-For help with individual applications to training providers or schools, please [register with a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/). Advisers can give you personalised support with your application.
+For help with individual applications to schools, please [register with a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/). Advisers can give you personalised support with your application. You will need English qualified teacher status (QTS) to be eligible for an advisor. [Apply for QTS](/non-uk-teachers/teach-in-england-if-you-trained-overseas/#apply-for-qualified-teacher-status-qts).
 
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
