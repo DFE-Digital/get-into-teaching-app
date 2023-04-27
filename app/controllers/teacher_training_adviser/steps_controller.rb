@@ -5,6 +5,7 @@ module TeacherTrainingAdviser
     self.wizard_class = TeacherTrainingAdviser::Wizard
 
     around_action :set_time_zone, only: %i[show update]
+    before_action :noindex, unless: -> { request.path.include?("/start") }
 
     def start; end
 

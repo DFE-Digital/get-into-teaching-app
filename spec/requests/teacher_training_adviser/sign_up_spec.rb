@@ -10,11 +10,18 @@ RSpec.describe "Sign up" do
     before { get step_path }
 
     it { is_expected.to have_http_status :success }
+    it { expect(response.body).to include("noindex") }
 
     context "with an invalid step" do
       let(:step_path) { teacher_training_adviser_step_path(:invalid) }
 
       it { is_expected.to have_http_status :not_found }
+    end
+
+    context "when viewing the start page" do
+      let(:step_path) { teacher_training_adviser_step_path(:start) }
+
+      it { expect(response.body).not_to include("noindex") }
     end
   end
 
