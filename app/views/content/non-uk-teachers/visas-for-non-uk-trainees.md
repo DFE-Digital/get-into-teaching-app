@@ -63,11 +63,11 @@ Most non-UK applicants for teacher training will need one of the following:
 * a student visa
 * a skilled worker visa
 
-## The student visa 
+## Student visa 
 
 For a fee-paying teacher training course, you will need a student visa. Your visa must be sponsored by a teacher training provider that is a licensed sponsor of student visas.
 
-[Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists providers which can sponsor student visas. We suggest you contact them to check they can sponsor you before you apply for a training place.
+You can [find postgraduate teacher training providers](https://www.gov.uk/find-postgraduate-teacher-training-courses) which can sponsor student visas. We suggest you contact them to check they can sponsor you before you apply for a training place.
 
 You’ll be able to apply for your visa if you:
 
@@ -84,7 +84,7 @@ You’ll be able to apply for your visa if you:
 
 For a teacher training course where you are paid a salary, you will need a skilled worker visa. Your visa must be sponsored by the school employing you, which needs to be a licensed sponsor of skilled worker visas.
 
-[Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists courses offered by providers where you can be sponsored for a skilled worker visas. Currently, places on these courses are very limited. Before you apply for a salaried teacher training place, we suggest you contact the training provider to check you can be sponsored.
+You can [find postgraduate teacher training providers](https://www.gov.uk/find-postgraduate-teacher-training-courses) where you can be sponsored for a skilled worker visas. Currently, places on these courses are very limited. Before you apply for a salaried teacher training place, we suggest you contact the training provider to check you can be sponsored.
 
 You’ll be able to apply for your visa if:
 
