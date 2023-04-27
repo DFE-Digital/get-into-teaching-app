@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "/events/not-available", to: "events#not_available"
   get "/mailinglist/not-available", to: "mailing_list/steps#not_available"
   get "/callbacks/not-available", to: "callbacks/steps#not_available"
+  get "/teacher-training-adviser/not_available", to: "teacher_training_adviser/steps#not_available"
 
   get "/404", to: "errors#not_found", via: :all
   get "/422", to: "errors#unprocessable_entity", via: :all
@@ -60,6 +61,7 @@ Rails.application.routes.draw do
   get "/cookies", to: "pages#cookies", as: :cookies
   get "/tta-service", to: "pages#tta_service", as: :tta_service
   get "/tta", to: "pages#tta_service", as: nil
+  get "/session-expired", to: "pages#session_expired", as: :session_expired
 
   get "/welcome", to: "pages#welcome", as: :welcome_guide
   get "/welcome/my-journey-into-teaching", to: "pages#welcome_my_journey_into_teaching", as: :welcome_my_journey_into_teaching
@@ -125,6 +127,16 @@ Rails.application.routes.draw do
       collection do
         get :thank_you
         post :export
+      end
+    end
+
+    resources :steps,
+              path: "/sign_up",
+              only: %i[index show update] do
+      collection do
+        get :start
+        get :completed
+        get :resend_verification
       end
     end
   end

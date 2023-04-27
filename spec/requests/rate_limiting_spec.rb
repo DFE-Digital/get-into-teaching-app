@@ -42,6 +42,20 @@ describe "Rate limiting", type: :request do
     end
   end
 
+  it_behaves_like "an IP-based rate limited endpoint", "PATCH /teacher-training-adviser/sign_up/identity", 5, 1.minute do
+    def perform_request
+      key = TeacherTrainingAdviser::Steps::Identity.model_name.param_key
+      params = { key => { first_name: "first", last_name: "last", email: "email@address.com" } }
+      patch teacher_training_adviser_step_path(:identity), params: params, headers: { "REMOTE_ADDR" => ip }
+    end
+  end
+
+  it_behaves_like "an IP-based rate limited endpoint", "PATCH */teacher-training-adviser/sign_up/review_answers", 5, 1.minute do
+    def perform_request
+      patch teacher_training_adviser_step_path(:review_answers), params: {}, headers: { "REMOTE_ADDR" => ip }
+    end
+  end
+
   describe "event endpoint rate limiting" do
     let(:readable_event_id) { "123" }
 
