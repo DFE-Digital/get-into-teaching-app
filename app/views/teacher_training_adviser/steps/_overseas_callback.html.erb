@@ -1,0 +1,5 @@
+<% @page_title = "Choose a time" %>
+
+<%= f.govuk_fieldset legend: { text: "Choose a time", tag: "h1" } do %>
+<%= f.govuk_select :phone_call_scheduled_at, callback_options(f.object.class.callback_booking_quotas) %>
+<% end %>
