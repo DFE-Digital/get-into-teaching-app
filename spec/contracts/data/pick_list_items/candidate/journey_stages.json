@@ -1,0 +1,26 @@
+[
+  {
+    "id": 222750000,
+    "value": "It’s just an idea",
+    "entityName": "contact",
+    "attributeName": "dfe_websitewhereinconsiderationjourney"
+  },
+  {
+    "id": 222750001,
+    "value": "I’m not sure and finding out more",
+    "entityName": "contact",
+    "attributeName": "dfe_websitewhereinconsiderationjourney"
+  },
+  {
+    "id": 222750002,
+    "value": "I’m fairly sure and exploring my options",
+    "entityName": "contact",
+    "attributeName": "dfe_websitewhereinconsiderationjourney"
+  },
+  {
+    "id": 222750003,
+    "value": "I’m very sure and think I’ll apply",
+    "entityName": "contact",
+    "attributeName": "dfe_websitewhereinconsiderationjourney"
+  }
+]

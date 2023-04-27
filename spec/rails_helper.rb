@@ -77,6 +77,7 @@ RSpec.configure do |config|
   config.include ActiveSupport::Testing::TimeHelpers
   config.include SpecHelpers::BasicAuth
   config.include SpecHelpers::Integration, type: :feature
+  config.include SpecHelpers::Contract, type: :feature
   config.include Webpacker::Helper, type: :helper
 
   config.verbose_retry = true

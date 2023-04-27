@@ -1,0 +1,14 @@
+[
+  {
+    "id": 222750000,
+    "value": "Completed GCSE",
+    "entityName": "contact",
+    "attributeName": "dfe_websitehasgcseenglish"
+  },
+  {
+    "id": 222750001,
+    "value": "Not Answered",
+    "entityName": "contact",
+    "attributeName": "dfe_websitehasgcseenglish"
+  }
+]
