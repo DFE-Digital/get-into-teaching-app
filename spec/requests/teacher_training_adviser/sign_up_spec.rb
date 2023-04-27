@@ -1,8 +1,14 @@
 require "rails_helper"
 
 RSpec.describe "Sign up" do
+  let(:get_an_adviser_flag) { "1" }
   let(:model) { TeacherTrainingAdviser::Steps::Identity }
   let(:step_path) { teacher_training_adviser_step_path model.key }
+
+  before do
+    allow(ENV).to receive(:[]).and_call_original
+    allow(ENV).to receive(:[]).with("GET_AN_ADVISER").and_return(get_an_adviser_flag)
+  end
 
   describe "#show" do
     subject { response }
@@ -22,6 +28,12 @@ RSpec.describe "Sign up" do
       let(:step_path) { teacher_training_adviser_step_path(:start) }
 
       it { expect(response.body).not_to include("noindex") }
+    end
+
+    context "when disabled" do
+      let(:get_an_adviser_flag) { "0" }
+
+      it { is_expected.to have_http_status(:not_found) }
     end
   end
 
@@ -50,6 +62,13 @@ RSpec.describe "Sign up" do
       let(:params) { { "email" => "invaild-email" } }
 
       it { is_expected.to have_http_status :unprocessable_entity }
+    end
+
+    context "when disabled" do
+      let(:get_an_adviser_flag) { "0" }
+      let(:params) { {} }
+
+      it { is_expected.to have_http_status(:not_found) }
     end
 
     context "when the last step" do
@@ -117,6 +136,12 @@ RSpec.describe "Sign up" do
     end
 
     it { is_expected.to have_http_status :success }
+
+    context "when disabled" do
+      let(:get_an_adviser_flag) { "0" }
+
+      it { is_expected.to have_http_status(:not_found) }
+    end
   end
 
   describe "#resend_verification" do
@@ -151,6 +176,17 @@ RSpec.describe "Sign up" do
       let(:bad_request_error) { GetIntoTeachingApiClient::ApiError.new(code: 400) }
 
       it { is_expected.to redirect_to(teacher_training_adviser_step_path(:identity)) }
+    end
+
+    context "when disabled" do
+      let(:get_an_adviser_flag) { "0" }
+
+      subject do
+        get resend_verification_teacher_training_adviser_steps_path
+        response
+      end
+
+      it { is_expected.to have_http_status(:not_found) }
     end
   end
 end

@@ -5,6 +5,7 @@ module TeacherTrainingAdviser
     self.wizard_class = TeacherTrainingAdviser::Wizard
 
     around_action :set_time_zone, only: %i[show update]
+    before_action :check_feature_switch
     before_action :noindex, unless: -> { request.path.include?("/start") }
 
     def start; end
@@ -24,6 +25,10 @@ module TeacherTrainingAdviser
     end
 
   private
+
+    def check_feature_switch
+      raise_not_found unless ActiveModel::Type::Boolean.new.cast(ENV["GET_AN_ADVISER"])
+    end
 
     def set_time_zone
       old_time_zone = Time.zone
