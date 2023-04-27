@@ -12,5 +12,5 @@ describe Content::MailingListComponent, type: :component do
   it { is_expected.to have_css("p", text: "intro") }
   it { is_expected.to have_css(".action-container") }
   it { is_expected.to have_css("form") }
-  it { is_expected.to have_link("privacy notice", href: "/privacy-policy?id=#{policy.id}") }
+  it { is_expected.to have_link("privacy notice", href: "/privacy-policy?id=123") }
 end

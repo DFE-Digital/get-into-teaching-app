@@ -1,84 +1,33 @@
 shared_context "with stubbed types api" do
-  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
-  let(:stub_types) { [{ "id" => 1, "value" => "First type" }] }
-
-  before do
-    stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/teaching_event/types")
-      .to_return \
-        status: 200,
-        headers: { "Content-type" => "application/json" },
-        body: stub_types.to_json
-
-    stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/qualification/degree_status")
-      .to_return \
-        status: 200,
-        headers: { "Content-type" => "application/json" },
-        body: OptionSet::DEGREE_STATUSES.map { |k, v| { id: v, value: k } }.to_json
-
-    stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/candidate/consideration_journey_stages")
-      .to_return \
-        status: 200,
-        headers: { "Content-type" => "application/json" },
-        body: OptionSet::CONSIDERATION_JOURNEY_STAGES.map { |k, v| { id: v, value: k } }.to_json
-
-    stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/teaching_event/types")
-      .to_return \
-        status: 200,
-        headers: { "Content-type" => "application/json" },
-        body: EventType::ALL.map { |k, v| { id: v, value: k } }.to_json
-
-    stub_request(:get, "#{git_api_endpoint}/api/lookup_items/teaching_subjects")
-      .to_return \
-        status: 200,
-        headers: { "Content-type" => "application/json" },
-        body: TeachingSubject::ALL.map { |k, v| { id: v, value: k } }.to_json
-  end
 end
 
 shared_context "with stubbed candidate create access token api" do
-  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
-
   before do
-    stub_request(:post, "#{git_api_endpoint}/api/candidates/access_tokens").to_return(status: 200, body: "", headers: {})
-  end
-end
-
-shared_context "with stubbed latest privacy policy api" do
-  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
-  let(:policy) { GetIntoTeachingApiClient::PrivacyPolicy.new(id: "123", text: "Latest privacy policy") }
-
-  before do
-    stub_request(:get, "#{git_api_endpoint}/api/privacy_policies/latest").to_return(status: 200, body: policy.to_json, headers: {})
-    stub_request(:get, "#{git_api_endpoint}/api/privacy_policies/#{policy.id}").to_return(status: 200, body: policy.to_json, headers: {})
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token)
   end
 end
 
 shared_context "with stubbed event add attendee api" do
-  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
-
   before do
-    stub_request(:post, "#{git_api_endpoint}/api/teaching_events/attendees").to_return(status: 200, body: "", headers: {})
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:add_teaching_event_attendee)
   end
 end
 
 shared_context "with stubbed mailing list add member api" do
-  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
-
   before do
-    stub_request(:post, "#{git_api_endpoint}/api/mailing_list/members").to_return(status: 200, body: "", headers: {})
+    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to receive(:add_mailing_list_member)
   end
 end
 
 shared_context "with stubbed book callback api" do
-  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
-
   before do
-    stub_request(:post, "#{git_api_endpoint}/api/get_into_teaching/callbacks").to_return(status: 200, body: "", headers: {})
+    allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi)
+      .to receive(:book_get_into_teaching_callback)
   end
 end
 
 shared_context "with stubbed callback quotas api" do
-  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
   let(:quotas) do
     [
       GetIntoTeachingApiClient::CallbackBookingQuota.new(
@@ -89,6 +38,7 @@ shared_context "with stubbed callback quotas api" do
   end
 
   before do
-    stub_request(:get, "#{git_api_endpoint}/api/callback_booking_quotas").to_return(status: 200, body: quotas.to_json, headers: {})
+    allow_any_instance_of(GetIntoTeachingApiClient::CallbackBookingQuotasApi)
+      .to receive(:get_callback_booking_quotas) { quotas }
   end
 end
