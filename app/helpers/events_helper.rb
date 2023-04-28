@@ -2,7 +2,7 @@ module EventsHelper
   include TextFormattingHelper
 
   def show_events_teaching_logo(index, type_id)
-    index.zero? && type_id != EventType.school_or_university_event_id
+    index.zero? && type_id != Crm::EventType.school_or_university_event_id
   end
 
   def format_event_date(event, stacked: true)
@@ -26,7 +26,7 @@ module EventsHelper
   end
 
   def can_sign_up_online?(event)
-    EventStatus.new(event).accepts_online_registration?
+    Crm::EventStatus.new(event).accepts_online_registration?
   end
 
   def formatted_event_description(description)
@@ -99,7 +99,7 @@ module EventsHelper
       end
 
       OpenStruct.new(
-        title: EventRegion.lookup_by_id(event.region_id),
+        title: Crm::EventRegion.lookup_by_id(event.region_id),
         description: description,
         path: event_path(event.readable_id),
       )
@@ -130,6 +130,6 @@ module EventsHelper
   end
 
   def git_event_type_id
-    EventType.get_into_teaching_event_id
+    Crm::EventType.get_into_teaching_event_id
   end
 end

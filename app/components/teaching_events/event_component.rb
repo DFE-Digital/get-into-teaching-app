@@ -5,7 +5,7 @@ module TeachingEvents
     def initialize(event:)
       @event     = event
       @title     = event.name
-      @type      = EventType.new(event)
+      @type      = Crm::EventType.new(event)
       @online    = event.is_online
       @in_person = event.building.present?
       @start_at  = event.start_at

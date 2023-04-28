@@ -69,7 +69,7 @@ module TeachingEvents
     end
 
     def event_type
-      EventType.lookup_by_id(type_id)
+      Crm::EventType.lookup_by_id(type_id)
     end
 
     def quote
@@ -96,19 +96,19 @@ module TeachingEvents
     end
 
     def allow_registration?
-      EventStatus.new(@event).accepts_online_registration?
+      Crm::EventStatus.new(@event).accepts_online_registration?
     end
 
     def open?
-      EventStatus.new(@event).open?
+      Crm::EventStatus.new(@event).open?
     end
 
     def closed?
-      EventStatus.new(@event).closed?
+      Crm::EventStatus.new(@event).closed?
     end
 
     def show_provider_information?
-      !type_id.in?([EventType.get_into_teaching_event_id])
+      !type_id.in?([Crm::EventType.get_into_teaching_event_id])
     end
 
     def show_venue_information?

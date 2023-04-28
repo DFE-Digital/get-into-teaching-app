@@ -50,7 +50,7 @@ module Events
       def teaching_subject_options
         @teaching_subject_options ||=
           GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects.reject do |type|
-            TeachingSubject.ignore?(type.id)
+            Crm::TeachingSubject.ignore?(type.id)
           end
       end
 

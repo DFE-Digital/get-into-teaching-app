@@ -84,7 +84,7 @@ describe "teaching events", type: :request do
 
     before do
       freeze_time
-      expected_type_ids = [EventType.get_into_teaching_event_id]
+      expected_type_ids = [Crm::EventType.get_into_teaching_event_id]
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events)
           .with(a_hash_including(type_ids: expected_type_ids, start_after: now, quantity: 1_000))

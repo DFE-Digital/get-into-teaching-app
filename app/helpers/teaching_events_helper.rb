@@ -1,6 +1,6 @@
 module TeachingEventsHelper
   def is_a_get_into_teaching_event?(event)
-    event.type_id.in?(EventType.lookup_by_names("Get Into Teaching event"))
+    event.type_id.in?(Crm::EventType.lookup_by_names("Get Into Teaching event"))
   end
 
   def event_list_id(name)
@@ -15,7 +15,7 @@ module TeachingEventsHelper
   end
 
   def is_event_type?(event, type_name)
-    event.type_id == EventType.lookup_by_name(type_name)
+    event.type_id == Crm::EventType.lookup_by_name(type_name)
   end
 
   def add_online_events(params)
@@ -36,6 +36,6 @@ module TeachingEventsHelper
   # * Online event               => Online forum
   # * School or University event => Training provider
   def event_type_name(id, overrides: { "DfE Online Q&A" => 222_750_008, "Training provider" => 222_750_009 })
-    EventType::ALL.merge(overrides).invert[id]
+    Crm::EventType::ALL.merge(overrides).invert[id]
   end
 end

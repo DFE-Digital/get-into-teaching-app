@@ -41,7 +41,7 @@ module TeachingEvents
     end
 
     def get_into_teaching_event?
-      EventType.lookup_by_name("Get Into Teaching event").in?(type_condition || [])
+      Crm::EventType.lookup_by_name("Get Into Teaching event").in?(type_condition || [])
     end
 
     def online
@@ -96,7 +96,7 @@ module TeachingEvents
 
       event_type_params = type.reject(&:blank?).flat_map { |t| t.split(",") }
 
-      EventType.lookup_by_query_params(*event_type_params).presence
+      Crm::EventType.lookup_by_query_params(*event_type_params).presence
     end
   end
 end

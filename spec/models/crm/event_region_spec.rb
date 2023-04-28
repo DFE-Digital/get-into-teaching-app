@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe EventRegion do
+describe Crm::EventRegion do
   describe "class_methods" do
     describe ".all_ids" do
       subject { described_class.all_ids }

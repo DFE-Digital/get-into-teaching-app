@@ -166,13 +166,13 @@ module WelcomeContentHelper
   end
 
   def featured_subject?(id)
-    mappings.key?(TeachingSubject.key_with_uuid(id))
+    mappings.key?(Crm::TeachingSubject.key_with_uuid(id))
   end
 
 private
 
   def find_mapping(id)
-    mappings.fetch(TeachingSubject.key_with_uuid(id)) { GENERIC }
+    mappings.fetch(Crm::TeachingSubject.key_with_uuid(id)) { GENERIC }
   end
 
   def mappings

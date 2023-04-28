@@ -21,7 +21,7 @@ module Internal
     def show
       raw_teaching_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
 
-      raise_not_found unless EventStatus.new(raw_teaching_event).pending?
+      raise_not_found unless Crm::EventStatus.new(raw_teaching_event).pending?
 
       @event = TeachingEvents::EventPresenter.new(raw_teaching_event)
 
@@ -41,7 +41,7 @@ module Internal
 
     def approve
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      api_event.status_id = EventStatus.open_id
+      api_event.status_id = Crm::EventStatus.open_id
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       Rails.logger.info("#{@user.username} - publish - #{api_event.to_json}")
       redirect_to internal_events_path(
@@ -53,7 +53,7 @@ module Internal
 
     def withdraw
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      api_event.status_id = EventStatus.pending_id
+      api_event.status_id = Crm::EventStatus.pending_id
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       Rails.logger.info("#{@user.username} - withdrawn - #{api_event.to_json}")
       redirect_to internal_events_path(
@@ -67,7 +67,7 @@ module Internal
       @open_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
         quantity: 1_000,
         start_after: Time.zone.now.utc.beginning_of_day,
-        status_ids: [EventStatus.open_id],
+        status_ids: [Crm::EventStatus.open_id],
         type_ids: [event_types[:provider], event_types[:online]],
       )
     end
@@ -129,7 +129,7 @@ module Internal
     def events_search_params(event_type)
       {
         type_ids: [event_type],
-        status_ids: [EventStatus.pending_id],
+        status_ids: [Crm::EventStatus.pending_id],
         start_after: Time.zone.now.utc.beginning_of_day,
         quantity: 1_000,
       }
@@ -137,8 +137,8 @@ module Internal
 
     def event_types
       {
-        provider: EventType.school_or_university_event_id,
-        online: EventType.online_event_id,
+        provider: Crm::EventType.school_or_university_event_id,
+        online: Crm::EventType.online_event_id,
       }
         .with_indifferent_access
         .freeze

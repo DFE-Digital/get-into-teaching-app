@@ -4,8 +4,8 @@ describe MailingList::Wizard do
   subject { described_class.new wizardstore, "postcode" }
 
   let(:uuid) { SecureRandom.uuid }
-  let(:degree_status_id) { OptionSet.lookup_by_key(:degree_status, :final_year) }
-  let(:preferred_teaching_subject_id) { TeachingSubject.lookup_by_key(:physics_with_maths) }
+  let(:degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :final_year) }
+  let(:preferred_teaching_subject_id) { Crm::TeachingSubject.lookup_by_key(:physics_with_maths) }
   let(:store) do
     { uuid => {
       "email" => "email@address.com",
@@ -101,7 +101,7 @@ describe MailingList::Wizard do
     end
 
     context "when not qualified for the welcome guide" do
-      let(:degree_status_id) { OptionSet.lookup_by_key(:degree_status, :first_year) }
+      let(:degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :first_year) }
       let(:variant) { nil }
 
       it "does not populate the welcome_guide_variant field" do

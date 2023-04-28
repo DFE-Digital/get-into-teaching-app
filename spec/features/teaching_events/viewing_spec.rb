@@ -158,7 +158,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     let(:event) { build(:event_api) }
 
     before do
-      allow_any_instance_of(EventStatus).to receive(:viewable?).and_return(false)
+      allow_any_instance_of(Crm::EventStatus).to receive(:viewable?).and_return(false)
     end
 
     scenario do

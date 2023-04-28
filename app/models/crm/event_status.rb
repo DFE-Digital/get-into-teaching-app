@@ -1,4 +1,4 @@
-class EventStatus
+class Crm::EventStatus
   ALL =
     {
       "Open" => 222_750_000,
@@ -50,7 +50,7 @@ class EventStatus
   end
 
   def accepts_online_registration?
-    type_ids = [EventType.get_into_teaching_event_id]
+    type_ids = [Crm::EventType.get_into_teaching_event_id]
 
     event.type_id.in?(type_ids) && future_dated? && open? && event.web_feed_id.present?
   end

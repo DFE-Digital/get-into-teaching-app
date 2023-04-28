@@ -20,7 +20,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
         .map { |e| e.attr("value") }
         .flat_map { |qp| qp.split(",") }
 
-      expect(params).to match_array(EventType::QUERY_PARAM_NAMES.keys)
+      expect(params).to match_array(Crm::EventType::QUERY_PARAM_NAMES.keys)
     end
   end
 
@@ -156,7 +156,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     scenario "searching for get into teaching events" do
       visit events_path
 
-      expected_type_ids = EventType.lookup_by_names("Get Into Teaching event")
+      expected_type_ids = Crm::EventType.lookup_by_names("Get Into Teaching event")
 
       check "DfE Get Into Teaching"
       click_on "Update results"
@@ -167,7 +167,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     scenario "searching for online forum events" do
       visit events_path
 
-      expected_type_ids = [EventType.online_event_id]
+      expected_type_ids = [Crm::EventType.online_event_id]
 
       check "DfE Online Q&A"
       click_on "Update results"
@@ -178,7 +178,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     scenario "searching for school or university events" do
       visit events_path
 
-      expected_type_ids = [EventType.school_or_university_event_id]
+      expected_type_ids = [Crm::EventType.school_or_university_event_id]
 
       check "Training provider"
       click_on "Update results"
@@ -189,7 +189,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     scenario "searching for online and get into teaching events" do
       visit events_path
 
-      expected_type_ids = EventType.lookup_by_names("Get Into Teaching event", "School or University event")
+      expected_type_ids = Crm::EventType.lookup_by_names("Get Into Teaching event", "School or University event")
 
       check "DfE Get Into Teaching"
       check "Training provider"
@@ -204,7 +204,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       let(:national_git_events) { [] }
 
       before do
-        get_into_teaching_type_ids = EventType.lookup_by_names("Get Into Teaching event")
+        get_into_teaching_type_ids = Crm::EventType.lookup_by_names("Get Into Teaching event")
         allow(fake_api).to receive(:search_teaching_events)
           .with(hash_including(type_ids: get_into_teaching_type_ids)) { national_git_events }
 

@@ -4,7 +4,7 @@ describe MailingList::Steps::Name do
   include_context "with wizard step"
 
   let(:channels) do
-    OptionSet::MAILING_LIST_CHANNELS.map do |k, v|
+    Crm::OptionSet::MAILING_LIST_CHANNELS.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end

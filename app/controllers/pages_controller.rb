@@ -121,8 +121,8 @@ private
     wg_params = params.permit(:subject, :degree_status)
 
     session["welcome_guide"] = {
-      "preferred_teaching_subject_id" => TeachingSubject.keyed_subjects[wg_params[:subject]&.to_sym],
-      "degree_status_id" => OptionSet.lookup_const(:degree_status)[wg_params[:degree_status]&.to_sym],
+      "preferred_teaching_subject_id" => Crm::TeachingSubject.keyed_subjects[wg_params[:subject]&.to_sym],
+      "degree_status_id" => Crm::OptionSet.lookup_const(:degree_status)[wg_params[:degree_status]&.to_sym],
     }
   end
 

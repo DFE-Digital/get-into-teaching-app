@@ -1,4 +1,4 @@
-class EventRegion
+class Crm::EventRegion
   ALL =
     {
       "East Midlands" => 222_750_000,

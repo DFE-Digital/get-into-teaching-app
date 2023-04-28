@@ -2,22 +2,22 @@ require "rails_helper"
 require "action_text/system_test_helper"
 
 RSpec.feature "Internal section", type: :feature do
-  let(:types) { EventType::ALL.values }
+  let(:types) { Crm::EventType::ALL.values }
   let(:pending_provider_event) do
     build(:event_api,
           :with_provider_info,
           name: "Pending provider event",
           readable_id: "Readable_id",
-          status_id: EventStatus.pending_id,
-          type_id: EventType.school_or_university_event_id)
+          status_id: Crm::EventStatus.pending_id,
+          type_id: Crm::EventType.school_or_university_event_id)
   end
   let(:pending_online_event) do
     build(:event_api,
           :with_provider_info,
           name: "Pending online event",
           readable_id: "Readable_id",
-          status_id: EventStatus.pending_id,
-          type_id: EventType.online_event_id)
+          status_id: Crm::EventStatus.pending_id,
+          type_id: Crm::EventType.online_event_id)
   end
   let(:provider_events) { [pending_provider_event] }
   let(:online_events) { [pending_online_event] }

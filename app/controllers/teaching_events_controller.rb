@@ -10,7 +10,7 @@ class TeachingEventsController < ApplicationController
   FEATURED_EVENT_COUNT = 2 # 2 featured events max on the first page
   EVENT_COUNT = 15 # 15 regular ones per page
 
-  FEATURED_EVENT_TYPES = EventType.lookup_by_names(
+  FEATURED_EVENT_TYPES = Crm::EventType.lookup_by_names(
     "Get Into Teaching event",
   ).freeze
 
@@ -71,7 +71,7 @@ class TeachingEventsController < ApplicationController
   end
 
   def git_statistics
-    open_git_events = git_events.select { |e| e.status_id == EventStatus.open_id }
+    open_git_events = git_events.select { |e| e.status_id == Crm::EventStatus.open_id }
 
     statistics = {
       open_events_count: open_git_events.count,
@@ -94,7 +94,7 @@ private
 
   def retrieve_event
     GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id]).tap do |event|
-      status = EventStatus.new(event)
+      status = Crm::EventStatus.new(event)
 
       raise ActionController::RoutingError, "Not Found" if event.nil? || status.pending?
       raise(EventNotViewableError) unless status.viewable?

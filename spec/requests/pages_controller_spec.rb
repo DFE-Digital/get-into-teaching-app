@@ -47,7 +47,7 @@ describe PagesController, type: :request do
 
     let(:params) do
       {
-        "preferred_teaching_subject_id" => TeachingSubject.lookup_by_key(:biology),
+        "preferred_teaching_subject_id" => Crm::TeachingSubject.lookup_by_key(:biology),
         "degree_status_id" => 222_750_003,
         "a_key_that_shouldnt_be_accepted" => "abc123",
       }

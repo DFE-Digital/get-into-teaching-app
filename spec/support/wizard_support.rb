@@ -37,25 +37,25 @@ end
 
 shared_context "with wizard data" do
   let(:degree_status_option_types) do
-    OptionSet::DEGREE_STATUSES.map do |k, v|
+    Crm::OptionSet::DEGREE_STATUSES.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
 
   let(:consideration_journey_stage_types) do
-    OptionSet::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
+    Crm::OptionSet::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
 
   let(:teaching_subject_types) do
-    TeachingSubject::ALL.map do |k, v|
+    Crm::TeachingSubject::ALL.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
 
   let(:channels) do
-    OptionSet::MAILING_LIST_CHANNELS.map do |k, v|
+    Crm::OptionSet::MAILING_LIST_CHANNELS.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end

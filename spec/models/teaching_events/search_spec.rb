@@ -188,19 +188,19 @@ describe TeachingEvents::Search do
       OpenStruct.new(
         description: "Get Into Teaching and Online",
         input: { type: [git, online].map(&:to_s) },
-        expected_conditions: { type_ids: EventType.lookup_by_query_params(git, online) },
+        expected_conditions: { type_ids: Crm::EventType.lookup_by_query_params(git, online) },
       ),
 
       OpenStruct.new(
         description: "School or University or Get Into Teaching",
         input: { type: [git, school_or_uni].map(&:to_s) },
-        expected_conditions: { type_ids: EventType.lookup_by_query_params(git, school_or_uni) },
+        expected_conditions: { type_ids: Crm::EventType.lookup_by_query_params(git, school_or_uni) },
       ),
 
       OpenStruct.new(
         description: "All types",
         input: { type: [school_or_uni, git, online].map(&:to_s) },
-        expected_conditions: { type_ids: EventType.lookup_by_query_params(school_or_uni, git, online) },
+        expected_conditions: { type_ids: Crm::EventType.lookup_by_query_params(school_or_uni, git, online) },
       ),
     ].each do |query|
       context "#{query.description} (#{query.input})" do

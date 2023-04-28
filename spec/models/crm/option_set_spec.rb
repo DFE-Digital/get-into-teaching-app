@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe OptionSet do
+describe Crm::OptionSet do
   describe "class_methods" do
     describe ".lookup_by_key" do
       it { expect(described_class.lookup_by_key(:degree_status, :final_year)).to eq(222_750_001) }

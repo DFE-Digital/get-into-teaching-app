@@ -10,20 +10,20 @@ describe EventsHelper, type: "helper" do
 
   describe "#show_events_teaching_logo" do
     it "returns false if the index != 0" do
-      show_logo = show_events_teaching_logo(1, EventType.get_into_teaching_event_id)
+      show_logo = show_events_teaching_logo(1, Crm::EventType.get_into_teaching_event_id)
       expect(show_logo).to be_falsy
     end
 
     it "returns false if the type_id is School or University event" do
-      show_logo = show_events_teaching_logo(0, EventType.school_or_university_event_id)
+      show_logo = show_events_teaching_logo(0, Crm::EventType.school_or_university_event_id)
       expect(show_logo).to be_falsy
     end
 
     it "returns true if the index is 0 and the type_id is not School or University event" do
-      show_logo = show_events_teaching_logo(0, EventType.get_into_teaching_event_id)
+      show_logo = show_events_teaching_logo(0, Crm::EventType.get_into_teaching_event_id)
       expect(show_logo).to be_truthy
 
-      show_logo = show_events_teaching_logo(0, EventType.online_event_id)
+      show_logo = show_events_teaching_logo(0, Crm::EventType.online_event_id)
       expect(show_logo).to be_truthy
     end
   end
@@ -114,12 +114,12 @@ describe EventsHelper, type: "helper" do
 
   describe "#event_type_color" do
     it "returns purple for get into teaching events" do
-      expect(event_type_color(EventType.get_into_teaching_event_id)).to eq("purple")
+      expect(event_type_color(Crm::EventType.get_into_teaching_event_id)).to eq("purple")
     end
 
     it "returns blue for non-get into teaching events" do
-      expect(event_type_color(EventType.online_event_id)).to eq("blue")
-      expect(event_type_color(EventType.school_or_university_event_id)).to eq("blue")
+      expect(event_type_color(Crm::EventType.online_event_id)).to eq("blue")
+      expect(event_type_color(Crm::EventType.school_or_university_event_id)).to eq("blue")
     end
   end
 
@@ -147,14 +147,14 @@ describe EventsHelper, type: "helper" do
 
   describe "#display_event_provider_info?" do
     it "returns false if get into teaching event" do
-      event.type_id = EventType.get_into_teaching_event_id
+      event.type_id = Crm::EventType.get_into_teaching_event_id
       expect(display_event_provider_info?(event)).to be(false)
     end
 
     it "returns true if not get into teaching event" do
-      event.type_id = EventType.online_event_id
+      event.type_id = Crm::EventType.online_event_id
       expect(display_event_provider_info?(event)).to be(true)
-      event.type_id = EventType.school_or_university_event_id
+      event.type_id = Crm::EventType.school_or_university_event_id
       expect(display_event_provider_info?(event)).to be(true)
     end
   end
@@ -222,7 +222,7 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#show_see_all_events_button?" do
-    let(:type_id) { EventType.get_into_teaching_event_id }
+    let(:type_id) { Crm::EventType.get_into_teaching_event_id }
 
     context "when checking for GIT event type id" do
       it "returns false when events is empty" do
@@ -239,7 +239,7 @@ describe EventsHelper, type: "helper" do
     end
 
     context "when checking for any other event type ids" do
-      let(:type_id) { EventType.online_event_id }
+      let(:type_id) { Crm::EventType.online_event_id }
 
       it "returns true when events is empty" do
         events = build_list(:event_api, 2, :online_event)
@@ -257,7 +257,7 @@ describe EventsHelper, type: "helper" do
 
   describe "#git_event_type_id?" do
     it "returns the GIT event id" do
-      expect(git_event_type_id).to eq EventType.get_into_teaching_event_id
+      expect(git_event_type_id).to eq Crm::EventType.get_into_teaching_event_id
     end
   end
 end

@@ -38,7 +38,7 @@ RSpec.describe SitemapController, type: :request do
       receive(:search_teaching_events).with(
         start_after: Time.zone.now,
         quantity: 100,
-        type_ids: [EventType.get_into_teaching_event_id, EventType.online_event_id],
+        type_ids: [Crm::EventType.get_into_teaching_event_id, Crm::EventType.online_event_id],
       ).and_return(events)
     allow(Pages::Frontmatter).to receive(:list) { content_pages }
     get("/sitemap.xml")
