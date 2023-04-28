@@ -9,6 +9,7 @@ module TeacherTrainingAdviser
     before_action :check_feature_switch
     before_action :load_recent_feedback, only: %i[index export]
     before_action :restrict_access, if: :authenticate?
+    layout "teacher_training_adviser"
 
     def new
       @feedback = Feedback.new

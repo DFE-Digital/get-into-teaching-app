@@ -1,14 +1,6 @@
 <% @page_title = "Service feedback" %>
 
-<div class="govuk-width-container">
-  <div class="govuk-main-wrapper">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
-        <h1 class="govuk-heading-l">Service feedback</h1>
-        <%= render "teacher_training_adviser/feedbacks/export_form" %>
-        <hr class="govuk-section-break govuk-section-break--l">
-        <%= render "teacher_training_adviser/feedbacks/recent", recent_feedback: @recent_feedback %>
-      </div>
-    </div>
-  </div>
-</div>
+<h1 class="govuk-heading-l">Service feedback</h1>
+<%= render "teacher_training_adviser/feedbacks/export_form" %>
+<hr class="govuk-section-break govuk-section-break--l">
+<%= render "teacher_training_adviser/feedbacks/recent", recent_feedback: @recent_feedback %>

@@ -3,38 +3,30 @@
 @js_packs << "govuk_frontend"
 %>
 
-<div class="govuk-width-container">
-  <div class="govuk-main-wrapper">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">Give feedback on this service</h1>
-          <%= govuk_form_for @feedback do |f| %>
-            <%= f.govuk_error_summary %>
+<h1 class="govuk-heading-l">Give feedback on this service</h1>
+  <%= govuk_form_for @feedback do |f| %>
+    <%= f.govuk_error_summary %>
 
-            <p>
-              Help us improve the get an adviser service.
-            </p>
+    <p>
+      Help us improve the get an adviser service.
+    </p>
 
-            <%= f.govuk_radio_buttons_fieldset :successful_visit do %>
-              <%= f.govuk_radio_button :successful_visit, true, label: { text: "Yes" }, link_errors: true %>
-              <%= f.govuk_radio_button :successful_visit, false, label: { text: "No" }, link_errors: true do %>
-                <%= f.govuk_text_area :unsuccessful_visit_explanation %>
-              <% end %>
-            <% end %>
+    <%= f.govuk_radio_buttons_fieldset :successful_visit do %>
+      <%= f.govuk_radio_button :successful_visit, true, label: { text: "Yes" }, link_errors: true %>
+      <%= f.govuk_radio_button :successful_visit, false, label: { text: "No" }, link_errors: true do %>
+        <%= f.govuk_text_area :unsuccessful_visit_explanation %>
+      <% end %>
+    <% end %>
 
-            <%= f.govuk_collection_radio_buttons :rating, f.object.class.ratings, :first, nil %>
+    <%= f.govuk_collection_radio_buttons :rating, f.object.class.ratings, :first, nil %>
 
-            <%= f.govuk_text_area :improvements, rows: 5, label: { class: 'govuk-heading-m' } do %>
-              <p>
-                Do not include any information that could identify you personally - such as your name.
-              </p>
-            <% end %>
+    <%= f.govuk_text_area :improvements, rows: 5, label: { class: 'govuk-heading-m' } do %>
+      <p>
+        Do not include any information that could identify you personally - such as your name.
+      </p>
+    <% end %>
 
-            <%= invisible_captcha %>
+    <%= invisible_captcha %>
 
-            <%= f.govuk_submit "Submit feedback" %>
-          <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+    <%= f.button "Submit feedback", class: "button", type: :submit %>
+  <% end %>

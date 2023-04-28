@@ -7,6 +7,7 @@ module TeacherTrainingAdviser
     around_action :set_time_zone, only: %i[show update]
     before_action :check_feature_switch
     before_action :noindex, unless: -> { request.path.include?("/start") }
+    layout "teacher_training_adviser"
 
     def start; end
 
