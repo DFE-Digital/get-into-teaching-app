@@ -84,7 +84,7 @@ You’ll be able to apply for your visa if you:
 
 For a teacher training course where you are paid a salary, you will need a skilled worker visa. Your visa must be sponsored by the school employing you, which needs to be a licensed sponsor of skilled worker visas.
 
-You can [find postgraduate teacher training providers](https://www.gov.uk/find-postgraduate-teacher-training-courses) where you can be sponsored for a skilled worker visas. Currently, places on these courses are very limited. Before you apply for a salaried teacher training place, we suggest you contact the training provider to check you can be sponsored.
+You can [find postgraduate teacher training providers](https://www.gov.uk/find-postgraduate-teacher-training-courses) where you can be sponsored for a skilled worker visa. Currently, places on these courses are very limited. Before you apply for a salaried teacher training place, we suggest you contact the training provider to check you can be sponsored.
 
 You’ll be able to apply for your visa if:
 
