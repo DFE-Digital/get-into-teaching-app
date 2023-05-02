@@ -10,7 +10,7 @@ describe Footer::FeedbackComponent, type: "component" do
   end
 
   specify "the content is present" do
-    href = "https://docs.google.com/forms/d/188D1TqsGr-OdcMHC76HMoYnHqcES4LVfl1CT1C_59QU/viewform"
+    href = "https://forms.office.com/e/zVfV4SZeVn"
     expect(page).to have_link("Tell us what you think about our website", href: href)
   end
 end
