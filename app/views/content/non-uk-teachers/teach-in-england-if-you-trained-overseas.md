@@ -205,8 +205,6 @@ You can apply for a skilled worker visa once you have been offered a teaching jo
 
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa) or [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
-You can also learn more about [bringing your partner and children](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
-
 #### Already living in the UK?
 
 You may have a pre-existing right to work in the UK, such as settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain in the UK](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk).

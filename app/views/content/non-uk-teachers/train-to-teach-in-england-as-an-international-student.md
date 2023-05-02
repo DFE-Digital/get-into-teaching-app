@@ -255,8 +255,6 @@ When you have been accepted on to a teacher training course offering student or 
 
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa) or [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
-You can also learn more about [bringing your partner and children](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
-
 #### Already living in the UK?
 
 If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a> or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>

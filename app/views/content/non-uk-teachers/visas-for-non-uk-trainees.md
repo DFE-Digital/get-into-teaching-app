@@ -76,6 +76,8 @@ You’ll be able to apply for your visa if you:
 * [have enough money to support yourself and pay for your course](https://www.gov.uk/student-visa/money)
 * [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/student-visa/knowledge-of-english)
 
+If you are successful in applying for a student visa, [your partner and children may also be able to apply to come to the UK with you](https://www.gov.uk/student-visa/family-members).
+
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/student-visa/apply">Apply for a student visa<span></span></a>
 </p>
@@ -89,7 +91,7 @@ You can [find postgraduate teacher training providers](https://www.gov.uk/find-p
 You’ll be able to apply for your visa if:
 
 * you have a confirmed offer for a salaried training place 
-* your training provider has confirmed you'll be employed by a school which is a licensed skilled worker sponsor
+* you have a 'certificate of sponsorship' from the school which is paying you, confirming they will sponsor you
 * [you meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * your salary meets the requirement for a skilled worker visa
 
@@ -126,6 +128,8 @@ The full-time equivalent of your salary must meet the threshold set for the skil
 * rest of England: £20,960
 
 Check the region you will be working in with your teacher training provider.
+
+If you are successful in applying for a skilled worker visa, [your partner and children may also be able to apply to come to the UK with you](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
 
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/skilled-worker-visa">Apply for a skilled worker visa<span></span></a>
@@ -217,9 +221,9 @@ You’ll also have to pay visa fees which vary depending on which visa you are a
 
 [Calculate how much your visa will cost](https://www.gov.uk/visa-fees).
 
-### Immigration Health Surcharge (IHS)
+### Immigration Health Surcharge
 
-You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application – this is called the IHS.
+You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application – this is called the Immigration Health Surcharge (IHS).
 
 However, students can usually claim a refund of the IHS if they:
 

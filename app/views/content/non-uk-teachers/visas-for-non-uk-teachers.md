@@ -62,7 +62,6 @@ The information on this page is for:
 
 * non-UK citizens living in the UK
 * non-UK citizens living outside the UK
-* refugees or asylum seekers
 
 You will not need a visa if you:
 
@@ -124,6 +123,8 @@ You can work part time, but your salary must meet the threshold for a skilled wo
 Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary on offer does not meet the skilled worker visa requirements.
 
 The salary requirements for a skilled worker visa apply whether [the type of school you work in is funded by the UK government or is in the private sector](https://www.gov.uk/types-of-school).
+
+If you are successful in applying for a skilled worker visa, [your partner and children may also be able to apply to come to the UK with you](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
 
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/skilled-worker-visa">Apply for a skilled worker visa<span></span></a>
@@ -188,6 +189,20 @@ Depending on your personal circumstances, you may be eligible for alternative vi
 * if you are from Hong Kong, on a [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
 * as a [family member of someone on a student visa](https://www.gov.uk/student-visa/family-members) 
 * as a [family member of someone on a skilled worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children) 
+
+## Visa fees and other charges
+
+You will usually need to show proof of a certain level of savings or income, depending on which visa you are applying for. You’ll be guided through this process when you apply for your visa.
+
+## Visa fees
+
+You’ll also have to pay visa fees which vary depending on which visa you are applying for.
+
+[Calculate how much your visa will cost](https://www.gov.uk/visa-fees).
+
+### Immigration Health Surcharge (IHS)
+
+You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application – this is called the IHS.
 
 ## Contact
 
