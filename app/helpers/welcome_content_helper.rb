@@ -1,9 +1,11 @@
 module WelcomeContentHelper
+  GENERIC_VIDEO = {
+    filename: "welcome-guide-generic",
+    formats: %w[mp4 webm],
+  }.freeze
+
   MATHS = {
-    video: {
-      filename: "welcome-guide-generic",
-      formats: %w[mp4 webm],
-    },
+    video: GENERIC_VIDEO,
     story: {
       name: "Dimitra",
       job_title_and_location: "maths teacher, London",
@@ -63,10 +65,7 @@ module WelcomeContentHelper
   }.freeze
 
   ENGLISH = {
-    video: {
-      filename: "welcome-guide-generic",
-      formats: %w[mp4 webm],
-    },
+    video: GENERIC_VIDEO,
     story: {
       name: "Laura",
       job_title_and_location: "English teacher, Doncaster",
@@ -125,10 +124,7 @@ module WelcomeContentHelper
   }.freeze
 
   GENERIC = {
-    video: {
-      filename: "welcome-guide-generic",
-      formats: %w[mp4 webm],
-    },
+    video: GENERIC_VIDEO,
     story: {
       name: "Abigail",
       job_title_and_location: "head of maths, Wigan",

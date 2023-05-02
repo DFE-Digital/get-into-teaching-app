@@ -51,6 +51,8 @@ SecureHeaders::Configuration.default do |config|
   data                 = ["data:"]
   blob                 = ["blob:"]
 
+  self_base = ["'self'"]
+
   # We're not sure why yet but the asset host needs to be
   # explicitly whitelisted in the media_src directive or the CSP
   #  blocks videos from loading. We don't appear to have this issue
@@ -64,19 +66,19 @@ SecureHeaders::Configuration.default do |config|
     report_uri: %w[/csp_reports],
 
     default_src: %w['none'],
-    base_uri: ["'self'"],
-    child_src: ["'self'"].concat(youtube, pinterest, snapchat, hotjar),
-    connect_src: ["'self'"].concat(google_apis, pinterest, hotjar, google_analytics, google_supported, google_doubleclick, facebook, tta_service_hosts, zendesk, snapchat, sentry, gtm_server),
-    font_src: ["'self'"].concat(govuk, data, %w[fonts.gstatic.com]),
-    form_action: ["'self'"].concat(snapchat, facebook, govuk),
-    frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, google_analytics, data, pinterest, optimize),
-    frame_ancestors: ["'self'"],
-    img_src: ["'self'"].concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, gtm_server, reddit, %w[cx.atdmt.com linkbam.uk]),
-    manifest_src: ["'self'"],
-    media_src: ["'self'"].concat(zendesk).concat(assets),
-    script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit),
-    style_src: ["'self'"].concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize),
-    worker_src: ["'self'"].concat(blob),
+    base_uri: self_base,
+    child_src: self_base.concat(youtube, pinterest, snapchat, hotjar),
+    connect_src: self_base.concat(google_apis, pinterest, hotjar, google_analytics, google_supported, google_doubleclick, facebook, tta_service_hosts, zendesk, snapchat, sentry, gtm_server),
+    font_src: self_base.concat(govuk, data, %w[fonts.gstatic.com]),
+    form_action: self_base.concat(snapchat, facebook, govuk),
+    frame_src: self_base.concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, google_analytics, data, pinterest, optimize),
+    frame_ancestors: self_base,
+    img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, gtm_server, reddit, %w[cx.atdmt.com linkbam.uk]),
+    manifest_src: self_base,
+    media_src: self_base.concat(zendesk).concat(assets),
+    script_src: self_base.concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit),
+    style_src: self_base.concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize),
+    worker_src: self_base.concat(blob),
   }
 
   if Rails.env.development?

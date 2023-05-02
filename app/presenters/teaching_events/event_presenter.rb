@@ -76,11 +76,6 @@ module TeachingEvents
       case event_type
       when "Get Into Teaching event"
         "So useful! I got answers to questions I didn't know I had yet and I'm so inspired and excited."
-
-      when "Online event"
-        nil
-      when "School or University event"
-        nil
       end
     end
 
@@ -88,10 +83,6 @@ module TeachingEvents
       case event_type
       when "Get Into Teaching event"
         get_into_teaching_event_image_details
-      when "Online event"
-        nil
-      when "School or University event"
-        nil
       end
     end
 

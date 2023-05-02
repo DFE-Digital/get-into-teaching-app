@@ -47,4 +47,12 @@ RSpec.describe Content::CallToActionComponentInjector, type: :component do
       expect { described_class.new(invalid_args).component }.to raise_error(ArgumentError, /call to action not properly configured/)
     end
   end
+
+  context "with non-Array/Hash arguments" do
+    let(:invalid_args) { { "arguments" => 123 } }
+
+    it "raises an ArgumentError" do
+      expect { described_class.new(invalid_args).component }.to raise_error(ArgumentError, "arguments should be an Array or Hash")
+    end
+  end
 end
