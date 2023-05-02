@@ -194,15 +194,15 @@ Depending on your personal circumstances, you may be eligible for alternative vi
 
 You will usually need to show proof of a certain level of savings or income, depending on which visa you are applying for. You’ll be guided through this process when you apply for your visa.
 
-## Visa fees
+### Visa fees
 
 You’ll also have to pay visa fees which vary depending on which visa you are applying for.
 
 [Calculate how much your visa will cost](https://www.gov.uk/visa-fees).
 
-### Immigration Health Surcharge (IHS)
+### Immigration Health Surcharge 
 
-You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application – this is called the IHS.
+You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application – this is called the Immigration Health Surcharge (IHS).
 
 ## Contact
 
