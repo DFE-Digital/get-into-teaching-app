@@ -228,6 +228,19 @@ en:
       name:
         singular: "School or University event"
         plural: "School and University events"
+
+  activerecord:
+    errors:
+      models:
+        teacher_training_adviser/feedback:
+          attributes:
+            successful_visit:
+              inclusion: "Select whether you achieved what you wanted from your visit"
+            unsuccessful_visit_explanation:
+              blank: "Provide details"
+            rating:
+              blank: "Select an option for how did you feel about the service"
+
   activemodel:
     errors:
       magic_link_token:
@@ -236,6 +249,15 @@ en:
         already_exchanged: "This link has been used already. Enter the details below to help us verify you."
 
       models:
+        teacher_training_adviser/feedback_search:
+            attributes:
+              created_on_or_after:
+                blank: "You must specify a created on or after date"
+                on_or_before: "Created on or after must be earlier than created on or before"
+              created_on_or_before:
+                blank: "You must specify a created on or before date"
+                on_or_before: "Created on or before cannot be in the future"
+
         funding_widget:
           attributes:
             subject:
@@ -418,6 +440,16 @@ en:
       wizard_steps_authenticate:
         timed_one_time_password: "To verify your details, we've sent a code to your email address."
 
+      teacher_training_adviser_feedback:
+        unsuccessful_visit_explanation: "Give details"
+        improvements: "How could we improve the service? (optional)"
+        rating_options:
+          very_satisfied: "Very satisfied"
+          satisfied: "Satisfied"
+          neither_satisfied_or_dissatisfied: "Neither satisfied or dissatisfied"
+          dissatisfied: "Dissatisfied"
+          very_dissatisfied: "Very dissatisfied"
+
       events_steps_personal_details:
         first_name: First name
         last_name: Last name
@@ -475,6 +507,12 @@ en:
       events_steps_further_details:
         subscribe_to_mailing_list: |-
           Would you like to receive email updates to help you get into teaching? If you say no, you will still receive confirmation emails about any events you sign up to attend.
+      teacher_training_adviser_feedback:
+        successful_visit: "Did you achieve what you wanted from your visit?"
+        rating: "Overall, how did you feel about the service you received?"
+      teacher_training_adviser_feedback_search:
+        created_on_or_after: "Created on or after"
+        created_on_or_before: "Created on or before"
 
   internal:
     status:

@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
   rescue_from ActionController::RoutingError, with: :render_not_found
   rescue_from GetIntoTeachingApiClient::ApiError, with: :handle_api_error
   rescue_from ::Pages::Page::PageNotFoundError, with: :render_not_found
+  rescue_from ForbiddenError, with: :render_forbidden
 
   before_action :http_basic_authenticate, if: :authenticate?
   before_action :set_api_client_request_id
@@ -42,6 +43,10 @@ private
 
   def raise_not_found
     raise ActionController::RoutingError, "Not Found"
+  end
+
+  def raise_forbidden
+    raise ForbiddenError, "Forbidden"
   end
 
   def authenticate?

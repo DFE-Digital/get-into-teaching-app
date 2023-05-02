@@ -1,2 +1,5 @@
 ---
-shared: {}
+:shared:
+  :feedbacks:
+  - unsuccessful_visit_explanation
+  - improvements

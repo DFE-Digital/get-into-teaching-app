@@ -80,3 +80,16 @@ ActiveSupport::Notifications.subscribe "app.client_metric" do |*args|
   metric = prometheus.get(metric_details[:key])
   metric.increment(labels: metric_details[:labels])
 end
+
+ActiveSupport::Notifications.subscribe "app.tta_feedback" do |*args|
+  event = ActiveSupport::Notifications::Event.new(*args)
+  feedback = event.payload
+
+  prometheus = Prometheus::Client.registry
+
+  metric = prometheus.get(:app_tta_feedback_visit_total)
+  metric.increment(labels: { successful: feedback.successful_visit ? "1" : "0" })
+
+  metric = prometheus.get(:app_tta_feedback_rating_total)
+  metric.increment(labels: { rating: feedback.rating.to_s })
+end

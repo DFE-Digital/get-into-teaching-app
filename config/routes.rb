@@ -120,5 +120,14 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :teacher_training_adviser, path: "/teacher-training-adviser" do
+    resources :feedbacks, only: %i[new create index] do
+      collection do
+        get :thank_you
+        post :export
+      end
+    end
+  end
+
   get "*page", to: "pages#show", as: :page, constraints: ->(request) { !request.path.start_with?("/rails/") }
 end
