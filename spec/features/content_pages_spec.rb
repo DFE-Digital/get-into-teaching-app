@@ -104,6 +104,12 @@ RSpec.feature "content pages check", type: :feature, content: true do
       end
     end
 
+    scenario "all filenames are lower case hyphenated" do
+      @stored_pages.each do |sp|
+        expect(sp.path).to match(/^[a-z0-9\-\/]+$/)
+      end
+    end
+
     scenario "the internal links reference existing pages" do
       paths = other_paths.concat(@stored_pages.map(&:path))
       @stored_pages.each do |sp|

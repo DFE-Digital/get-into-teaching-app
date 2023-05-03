@@ -17,7 +17,7 @@ backlink: "../../"
 inset_text:
   new-international-funding:
     text: |-
-      If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/fees-and-funding-for-non-UK-trainees#get-an-international-relocation-payment-irp-worth-10000">international relocation payment worth £10,000</a>.
+      If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees#get-an-international-relocation-payment-irp-worth-10000">international relocation payment worth £10,000</a>.
 keywords:
   - International
   - Overseas
@@ -158,7 +158,7 @@ Fees vary between training providers, but range from £9,250 to about £32,000. 
 
 If you are planning on training to teach languages and physics, you could be eligible for financial help worth up to £39,000, including an international relocation payment worth £10,000.
 
-If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-UK-trainees).
+If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
 ### 4. Search and apply for teacher training courses
 
