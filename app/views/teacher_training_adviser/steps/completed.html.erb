@@ -3,7 +3,7 @@
 <section class="registration__teacher-training-adviser" data-sub-channel-id="<%= session.dig("sign_up", "sub_channel_id") %>">
   <h1 class="heading-l heading--box-green"><%= @first_name %>, you're signed up.</h1>
 
-  <h2 class="heading-m">What happens next</h2>
+  <h2 class="govuk-heading-m">What happens next?</h2>
 
   <% if @returner %>
   <p>
@@ -11,6 +11,24 @@
   </p>
   <p> We’re getting a lot of requests for advisers at the moment so it might take us longer to respond. We'll be in touch as soon as we can. Thank you for your patience.
   </p>
+
+  <p>
+    If you have any questions or you need to update any of the information you provided, call us on <a href="tel:08003892500">0800 389 2500</a> Monday to Friday between 8:30am and 5:30pm, except on <%= link_to("bank holidays", "https://www.gov.uk/bank-holidays") %>.
+  </p>
+
+  <h2 class="govuk-heading-m">Get support returning to teaching</h2>
+
+  <p>Read our helpful guidance all about <%= link_to "returning to teaching", "/returning-to-teaching" %>, including how you can:</p>
+
+  <ul>
+    <li>join the National Tutoring Programme</li>
+    <li>catch up on changes in teaching</li>
+    <li>use the early career framework resources</li>
+  </ul>
+
+  <p>You can also <%= link_to("find teaching jobs in England", "https://teaching-vacancies.service.gov.uk/") %>.</p>
+
+  <p>Or <%= link_to("find out more about teaching in England if you trained outside the UK", "/non-uk-teachers/teach-in-england-if-you-trained-overseas") %>.</p>
   <% elsif @callback_booked %>
   <p>
     We've booked a call. We will be in contact with you at the time you selected.
@@ -18,38 +36,58 @@
   <p>
     If we are unable to contact you at this time, we will try to contact you a further 2 times. If we are still unable to contact you, you will have to sign up again.
   </p>
+
+  <p>
+    If you have any questions or you need to update any of the information you provided, call us on <a href="tel:08003892500">0800 389 2500</a> Monday to Friday between 8:30am and 5:30pm, except on <%= link_to("bank holidays", "https://www.gov.uk/bank-holidays") %>.
+  </p>
+
+  <h2 class="govuk-heading-m">Explore teaching in England</h2>
+
+  <p>If you're not a UK citizen, you can find out <%= link_to "how to train to teach in England as an international student", "/train-to-teach-in-england-as-an-international-student" %>.</p>
+
+  <p>Get help and guidance on:</p>
+
+  <ul>
+    <li>your qualifications</li>
+    <li>funding your training</li>
+    <li>getting a visa</li>
+  </ul>
   <% elsif @equivalent %>
   <p>Please give us a call so that we can check your degree.</p>
+
+  <h2 class="govuk-heading-m">Explore teaching in England</h2>
+
+  <p>If you're not a UK citizen, you can find out <%= link_to "how to train to teach in England as an international student", "/train-to-teach-in-england-as-an-international-student" %>.</p>
+
+  <p>Get help and guidance on:</p>
+
+  <ul>
+    <li>your qualifications</li>
+    <li>funding your training</li>
+    <li>getting a visa</li>
+  </ul>
   <% else %>
-  <p>An adviser will email you within 3 working days.</p>
+  <p>An adviser will email you within 3 working days. Make sure you check your junk or spam folders.</p>
 
   <p>You need to reply to the email to be assigned an adviser.</p>
 
-  <p>It may take us longer to respond to you because we're getting a lot of requests for advisers at the moment. We’ll be in touch as soon as we can. Thank you for your patience.</p>
-  <% end %>
+  <p>
+    If you have any questions or you need to update any of the information you provided, call us on <a href="tel:08003892500">0800 389 2500</a> Monday to Friday between 8:30am and 5:30pm, except on <%= link_to("bank holidays", "https://www.gov.uk/bank-holidays") %>.
+  </p>
 
-  <h2 class="heading-m">Understanding your options</h2>
+  <h2 class="govuk-heading-m">Explore how to get into teaching</h2>
 
-  <p>As well as an adviser, you can find help and guidance on the Get Into Teaching website. There, you can:</p>
+  <p>As well as getting an adviser, you can also find out more about life in the classroom at our <%= link_to "Get Into Teaching events", "/events/about-get-into-teaching-events" %>.</p>
+
+  <p>You'll be able to:</p>
 
   <ul>
-    <li>discover the different <%= link_to "ways to train", "/train-to-be-a-teacher" %> to become a teacher</li>
-    <li>find out about <%= link_to "funding", "/funding-and-support" %></li>
-    <li><%= link_to "search for events", "/events" %> that might interest you</li>
-    <% if @returner %>
-      <li>read further information on our dedicated <%= link_to "return to teaching page", "/returning-to-teaching" %></li>
-    <% end %>
+    <li>talk to teacher training providers</li>
+    <li>get tips on your application</li>
+    <li>attend helpful presentations on funding</li>
   </ul>
 
-  <% if @returner %>
-    <p>You can also search for courses on <%= link_to("Find postgraduate teacher training", "https://www.gov.uk/find-postgraduate-teacher-training-courses") %>.</p>
+  <p>Or you can find out <%= link_to "how to become a teacher", "/steps-to-become-a-teacher" %> with these handy steps, including understanding the qualifications you need and how you can find school experience.</p>
+
   <% end %>
-
-  <p>
-    If you have any questions or you need to update any of the information you provided, call <a href="tel:08003892500">0800 389 2500</a> for free between 8.30am and 5.30pm Monday to Friday.
-  </p>
-
-  <p>
-    <%= link_to("What did you think of this service?", new_teacher_training_adviser_feedback_path, target: :blank) %> (takes 30 seconds)
-  </p>
 </section>
