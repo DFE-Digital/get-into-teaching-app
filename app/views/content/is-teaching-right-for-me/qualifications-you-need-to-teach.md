@@ -1,6 +1,6 @@
 ---
-title: "Qualifications you need to teach"
-heading: "What qualifications do you need to be a teacher?"
+title: "What qualifications do I need to be a teacher?"
+heading: "What qualifications do I need to be a teacher?"
 description: |-
   Find out what qualifications you need to be a teacher in primary and secondary schools in England and which subjects you can train to teach.
 related_content:
