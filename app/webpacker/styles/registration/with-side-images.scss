@@ -11,7 +11,8 @@
     .signup-form {
       position: relative;
 
-      .registration__mailing-list {
+      .registration__mailing-list,
+      .registration__teacher-training-adviser {
         background-color: $white;
         padding: 2em;
         position: relative;

@@ -100,20 +100,20 @@ describe PagesController, type: :request do
       context "with /tta-service url" do
         before { get "/tta-service" }
 
-        it { is_expected.to redirect_to teacher_training_adviser_step_path(:start) }
+        it { is_expected.to redirect_to teacher_training_adviser_step_path(:identity) }
         it { expect(response).to have_http_status(:moved_permanently) }
       end
 
       context "with /tta url" do
         before { get "/tta" }
 
-        it { is_expected.to redirect_to teacher_training_adviser_step_path(:start) }
+        it { is_expected.to redirect_to teacher_training_adviser_step_path(:identity) }
       end
 
       context "with utm params" do
         before { get "/tta-service?utm_test=abc&test=def" }
 
-        it { is_expected.to redirect_to teacher_training_adviser_step_path(:start, utm_test: :abc) }
+        it { is_expected.to redirect_to teacher_training_adviser_step_path(:identity, utm_test: :abc) }
       end
     end
   end

@@ -21,6 +21,10 @@ module TeacherTrainingAdviser::Steps
       super
     end
 
+    def title
+      nil
+    end
+
   private
 
     def channel_invalid?

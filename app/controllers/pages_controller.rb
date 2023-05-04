@@ -84,7 +84,7 @@ class PagesController < ApplicationController
 private
 
   def adviser_sign_up_url
-    teacher_training_adviser_step_path(:start)
+    teacher_training_adviser_step_path(:identity)
   end
 
   def adviser_service_url

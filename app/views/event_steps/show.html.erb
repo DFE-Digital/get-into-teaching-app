@@ -3,5 +3,10 @@
 <% if @current_step.id == "personal_details" %>
   <%= render "form_first_page", current_step: @current_step, wizard: @wizard, event: @event %>
 <% else %>
-  <%= render "form", current_step: @current_step, wizard: @wizard, event: @event %>
+  <%= render "form/sign_up", current_step: @current_step, wizard: @wizard, event: @event, section_class: "event" do %>
+    <div class="event-info">
+      <%= render Events::DesktopSignupInfoComponent.new(@event) %>
+      <%= render Events::MobileSignupInfoComponent.new(@event) %>
+    </div>
+  <% end %>
 <% end %>

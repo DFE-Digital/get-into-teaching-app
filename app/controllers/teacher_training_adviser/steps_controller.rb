@@ -6,10 +6,10 @@ module TeacherTrainingAdviser
 
     around_action :set_time_zone, only: %i[show update]
     before_action :check_feature_switch
-    before_action :noindex, unless: -> { request.path.include?("/start") }
-    layout "teacher_training_adviser"
-
-    def start; end
+    before_action :set_step_page_title, only: %i[show update]
+    before_action :set_completed_page_title, only: [:completed]
+    before_action :noindex, unless: -> { request.path.include?("/#{first_step_class.key}") }
+    layout :resolve_layout
 
     def completed
       super
@@ -26,6 +26,18 @@ module TeacherTrainingAdviser
     end
 
   private
+
+    def resolve_layout
+      is_first_page = @current_step.instance_of?(first_step_class)
+
+      return "registration_with_side_images" if is_first_page
+
+      "registration"
+    end
+
+    def first_step_class
+      wizard_class.steps.first
+    end
 
     def check_feature_switch
       raise_not_found unless ActiveModel::Type::Boolean.new.cast(ENV["GET_AN_ADVISER"])
@@ -54,6 +66,18 @@ module TeacherTrainingAdviser
 
     def crm_store
       session[:sign_up_crm] ||= {}
+    end
+
+    def set_step_page_title
+      @page_title = "Get an adviser"
+
+      if @current_step&.title
+        @page_title += ", #{@current_step.title.downcase} step"
+      end
+    end
+
+    def set_completed_page_title
+      @page_title = "You've signed up"
     end
   end
 end

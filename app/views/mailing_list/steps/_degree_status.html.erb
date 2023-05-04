@@ -1,13 +1,10 @@
 <% if f.object.magic_link_token_used? %>
 <div class="content-alert content-alert--fullwidth">
-    <div>
-      <p>Tell us more about you so that you only get emails relevant to your circumstances.</p>
-    </div>
+  <div>
+    <p>Tell us more about you so that you only get emails relevant to your circumstances.</p>
   </div>
 </div>
 <% end %>
-
-<%= f.govuk_error_summary %>
 
 <%= f.govuk_collection_radio_buttons :degree_status_id,
   f.object.degree_status_options,
