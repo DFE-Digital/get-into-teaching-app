@@ -3,7 +3,7 @@ title: Teach in further education
 article_classes: ['longform']
 image: "static/content/hero-images/0015.jpg"
 description: |-
-  Find out how to become a further education teacher in the UK. This Department for Education page has links to advice and support on teacher training in further education.
+  Find out how to teach in further education in England. Explore which qualifications you need and how to find further education teacher training.
 date: "2023-02-23"
 keywords:
   - Further
