@@ -410,5 +410,20 @@ This error means there is a hyperlink in your content that is linking to a headi
 
 #### Resolution
 
-The hyperlink must match the heading title exactly and be suffixed with a hash, for example a heading of `This is a heading` should be linked to using the markdown `[my link](#this-is-a-heading)` 
+The hyperlink must match the heading title exactly and be suffixed with a hash, for example a heading of `This is a heading` should be linked to using the markdown `[my link](#this-is-a-heading)`. If you are linking to a heading on another page, ensure the filename matches the path exactly and has a leading slash `/`.
 
+### The filename contains invalid characters
+
+#### Example error:
+
+```
+expected "/non-uk-teachers/fees-and-funding-for-non-UK-trainees" to match /^[a-z0-9\-\/]+$/
+```
+
+#### Description
+
+This error means the filename contains one or more invalid characters.
+
+#### Resolution
+
+Check your filename only contains lower case characters, numbers and underscores.
