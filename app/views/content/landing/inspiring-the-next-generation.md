@@ -8,7 +8,7 @@ content:
     - content/landing/inspire-the-next-generation/content
     - content/landing/inspire-the-next-generation/promo
 image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
-colour: "yellow"
+colour: "pink"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true
