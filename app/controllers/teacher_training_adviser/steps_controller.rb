@@ -17,6 +17,7 @@ module TeacherTrainingAdviser
       @returner = wizard_store[:type_id].to_i == Steps::ReturningTeacher::OPTIONS[:returning_to_teaching]
       @equivalent = wizard_store[:degree_options] == Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
       @callback_booked = wizard_store[:callback_offered] && @equivalent
+      @first_name = wizard_store[:first_name]
     end
 
   protected

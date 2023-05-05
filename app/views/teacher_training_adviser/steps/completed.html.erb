@@ -1,56 +1,55 @@
 <% @page_title = "Sign up complete" %>
 
-<div class="govuk-panel govuk-panel--confirmation" data-sub-channel-id="<%= session.dig("sign_up", "sub_channel_id") %>">
-  <h1 class="govuk-panel__title">
-    Thank you <br> Sign up complete
-  </h1>
-</div>
-<h2 class="govuk-heading-m">What happens next</h2>
+<section class="registration__teacher-training-adviser" data-sub-channel-id="<%= session.dig("sign_up", "sub_channel_id") %>">
+  <h1 class="heading-l heading--box-green"><%= @first_name %>, you're signed up.</h1>
 
-<% if @returner %>
-<p>
-  A return to teaching adviser will email you to outline your next steps.
-</p>
-<p> We’re getting a lot of requests for advisers at the moment so it might take us longer to respond. We'll be in touch as soon as we can. Thank you for your patience.
-</p>
-<% elsif @callback_booked %>
-<p>
-  We've booked a call. We will be in contact with you at the time you selected.
-</p>
-<p>
-  If we are unable to contact you at this time, we will try to contact you a further 2 times. If we are still unable to contact you, you will have to sign up again.
-</p>
-<% elsif @equivalent %>
-<p>Please give us a call so that we can check your degree.</p>
-<% else %>
-<p>An adviser will email you within 3 working days.</p>
+  <h2 class="heading-m">What happens next</h2>
 
-<p>You need to reply to the email to be assigned an adviser.</p>
-
-<p>It may take us longer to respond to you because we're getting a lot of requests for advisers at the moment. We’ll be in touch as soon as we can. Thank you for your patience.</p>
-<% end %>
-
-<h2 class="govuk-heading-m">Understanding your options</h2>
-
-<p>As well as an adviser, you can find help and guidance on the Get Into Teaching website. There, you can:</p>
-
-<ul>
-  <li>discover the different <%= link_to "ways to train", "/train-to-be-a-teacher" %> to become a teacher</li>
-  <li>find out about <%= link_to "funding", "/funding-and-support" %></li>
-  <li><%= link_to "search for events", "/events" %> that might interest you</li>
   <% if @returner %>
-    <li>read further information on our dedicated <%= link_to "return to teaching page", "/returning-to-teaching" %></li>
+  <p>
+    A return to teaching adviser will email you to outline your next steps.
+  </p>
+  <p> We’re getting a lot of requests for advisers at the moment so it might take us longer to respond. We'll be in touch as soon as we can. Thank you for your patience.
+  </p>
+  <% elsif @callback_booked %>
+  <p>
+    We've booked a call. We will be in contact with you at the time you selected.
+  </p>
+  <p>
+    If we are unable to contact you at this time, we will try to contact you a further 2 times. If we are still unable to contact you, you will have to sign up again.
+  </p>
+  <% elsif @equivalent %>
+  <p>Please give us a call so that we can check your degree.</p>
+  <% else %>
+  <p>An adviser will email you within 3 working days.</p>
+
+  <p>You need to reply to the email to be assigned an adviser.</p>
+
+  <p>It may take us longer to respond to you because we're getting a lot of requests for advisers at the moment. We’ll be in touch as soon as we can. Thank you for your patience.</p>
   <% end %>
-</ul>
 
-<% if @returner %>
-  <p>You can also search for courses on <%= link_to("Find postgraduate teacher training", "https://www.gov.uk/find-postgraduate-teacher-training-courses") %>.</p>
-<% end %>
+  <h2 class="heading-m">Understanding your options</h2>
 
-<p>
-  If you have any questions or you need to update any of the information you provided, call <a href="tel:08003892500">0800 389 2500</a> for free between 8.30am and 5.30pm Monday to Friday.
-</p>
+  <p>As well as an adviser, you can find help and guidance on the Get Into Teaching website. There, you can:</p>
 
-<p>
-  <%= link_to("What did you think of this service?", new_teacher_training_adviser_feedback_path, target: :blank) %> (takes 30 seconds)
-</p>
+  <ul>
+    <li>discover the different <%= link_to "ways to train", "/train-to-be-a-teacher" %> to become a teacher</li>
+    <li>find out about <%= link_to "funding", "/funding-and-support" %></li>
+    <li><%= link_to "search for events", "/events" %> that might interest you</li>
+    <% if @returner %>
+      <li>read further information on our dedicated <%= link_to "return to teaching page", "/returning-to-teaching" %></li>
+    <% end %>
+  </ul>
+
+  <% if @returner %>
+    <p>You can also search for courses on <%= link_to("Find postgraduate teacher training", "https://www.gov.uk/find-postgraduate-teacher-training-courses") %>.</p>
+  <% end %>
+
+  <p>
+    If you have any questions or you need to update any of the information you provided, call <a href="tel:08003892500">0800 389 2500</a> for free between 8.30am and 5.30pm Monday to Friday.
+  </p>
+
+  <p>
+    <%= link_to("What did you think of this service?", new_teacher_training_adviser_feedback_path, target: :blank) %> (takes 30 seconds)
+  </p>
+</section>

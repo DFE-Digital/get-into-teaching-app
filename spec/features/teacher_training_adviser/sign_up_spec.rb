@@ -108,7 +108,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "Sign up complete"
+      expect(page).to have_css "h1", text: "John, you're signed up."
 
       # We pass this to the BAM tracking pixel in GTM.
       expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
@@ -173,7 +173,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "Sign up complete"
+      expect(page).to have_css "h1", text: "John, you're signed up."
     end
 
     scenario "that is a returning teacher" do
@@ -235,8 +235,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "Thank you"
-      expect(page).to have_css "h1", text: "Sign up complete"
+      expect(page).to have_css "h1", text: "John, you're signed up."
       expect(page).to have_text "A return to teaching adviser will email you to outline your next steps"
       expect(page).to have_text "read further information on our dedicated return to teaching page"
       expect(page).not_to have_text "Discover the different ways to train"
@@ -308,8 +307,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "Thank you"
-      expect(page).to have_css "h1", text: "Sign up complete"
+      expect(page).to have_css "h1", text: "John, you're signed up."
       expect(page).to have_text "We've booked a call."
     end
 
@@ -373,8 +371,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "Thank you"
-      expect(page).to have_css "h1", text: "Sign up complete"
+      expect(page).to have_css "h1", text: "John, you're signed up."
       expect(page).to have_text "We've booked a call."
     end
 
@@ -439,8 +436,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
         click_on "Complete sign up"
 
-        expect(page).to have_css "h1", text: "Thank you"
-        expect(page).to have_css "h1", text: "Sign up complete"
+        expect(page).to have_css "h1", text: "John, you're signed up."
         expect(page).to have_text "Please give us a call so that we can check your degree"
       end
 
@@ -502,8 +498,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
         click_on "Complete sign up"
 
-        expect(page).to have_css "h1", text: "Thank you"
-        expect(page).to have_css "h1", text: "Sign up complete"
+        expect(page).to have_css "h1", text: "John, you're signed up."
         expect(page).to have_text "Please give us a call so that we can check your degree"
       end
     end
@@ -569,8 +564,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "Thank you"
-      expect(page).to have_css "h1", text: "Sign up complete"
+      expect(page).to have_css "h1", text: "John, you're signed up."
     end
 
     scenario "studying for a degree (final year)" do
@@ -650,8 +644,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "Thank you"
-      expect(page).to have_css "h1", text: "Sign up complete"
+      expect(page).to have_css "h1", text: "John, you're signed up."
     end
 
     scenario "candidate changes an answer" do
@@ -720,8 +713,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "Thank you"
-      expect(page).to have_css "h1", text: "Sign up complete"
+      expect(page).to have_css "h1", text: "John, you're signed up."
     end
 
     scenario "candidate tries to skip past an exit step" do
@@ -1024,8 +1016,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "Thank you"
-      expect(page).to have_css "h1", text: "Sign up complete"
+      expect(page).to have_css "h1", text: "John, you're signed up."
     end
 
     scenario "skipping pre-filled optional steps" do
@@ -1087,8 +1078,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "Thank you"
-      expect(page).to have_css "h1", text: "Sign up complete"
+      expect(page).to have_css "h1", text: "John, you're signed up."
     end
   end
 

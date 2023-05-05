@@ -1,6 +1,13 @@
 module TeacherTrainingAdviser
   class Wizard < ::GITWizard::Base
     UK_COUNTRY_ID = "72f5c2e6-74f9-e811-a97a-000d3a2760f2".freeze
+    ATTRIBUTES_TO_LEAVE = %w[
+      first_name
+      type_id
+      degree_options
+      sub_channel_id
+      callback_offered
+    ].freeze
 
     self.steps = [
       Steps::Identity,
@@ -50,7 +57,7 @@ module TeacherTrainingAdviser
 
       sign_up_candidate
 
-      @store.prune!(leave: %w[type_id degree_options sub_channel_id callback_offered])
+      @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
     end
 
     def exchange_access_token(timed_one_time_password, request)
