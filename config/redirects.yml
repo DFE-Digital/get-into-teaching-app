@@ -25,7 +25,7 @@ redirects:
 
   # International content
   "/iqts": "/non-uk-teachers/international-qualified-teacher-status"
-  "/funding-and-support/if-you-come-from-outside-england": "/non-uk-teachers/fees-and-funding-for-non-UK-trainees"
+  "/funding-and-support/if-you-come-from-outside-england": "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
 
   # Events
   "/events/about-train-to-teach-events": "/events/about-get-into-teaching-events"
@@ -320,6 +320,9 @@ redirects:
   "/covid-19": "/"
   "/impact-of-covid-19-on-teacher-training": "/"
   "/impact-of-covid-19-on-applicants": "/"
+
+  # Pages added with incorrect casing
+  "/non-uk-teachers/fees-and-funding-for-non-UK-trainees": "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
 
   # Old A/B tests
   "/salaries-and-benefits-search": "/salaries-and-benefits"
