@@ -1,5 +1,5 @@
 ---
-title: "Get support if you're a parent or carer"
+title: "Get support as a parent or carer"
 heading: "Get support training to teach if you're a parent or carer"
 subcategory: Get extra support
 description: |-
