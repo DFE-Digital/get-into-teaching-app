@@ -2,7 +2,7 @@
   layout: "layouts/home"
   title: "Get Into Teaching"
   description: |-
-    Read official Department for Education information to help you become a teacher. Learn about funding, teacher training, and steps to become a teacher. 
+    Explore how to get into teaching with official Department for Education guidance on training courses, finding funding, and what teaching is really like.
   fullwidth: true
   date: "2023-04-19"
   title_paragraph: "Nobody knows teaching like we do. Whether you're just thinking about it or ready to apply, we offer free advice and support to decide if teaching in a primary or secondary school in England is right for you."

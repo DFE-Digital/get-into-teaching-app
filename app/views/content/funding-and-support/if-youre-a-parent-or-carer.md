@@ -1,5 +1,5 @@
 ---
-title: "Get support if you're a parent or carer"
+title: "Get support as a parent or carer"
 heading: "Get support training to teach if you're a parent or carer"
 subcategory: Get extra support
 description: |-
@@ -25,7 +25,7 @@ keywords:
     - Carers
 inset_text:
   international-content:
-    text: If you’re a non-UK citizen, you need to be eligible for student finance in England to receive the funding listed below. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-UK-trainees">financial support available for non-UK citizens.</a>.
+    text: If you’re a non-UK citizen, you need to be eligible for student finance in England to receive the funding listed below. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens.</a>.
     color: grey
 ---
 

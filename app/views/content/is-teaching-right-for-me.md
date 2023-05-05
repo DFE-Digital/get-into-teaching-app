@@ -1,6 +1,6 @@
 ---
-title: "Is teaching right for me"
-description: Explore if teaching is right for you. Discover the qualifications you need to train to teach and read stories from real life teachers.
+title: "Why become a teacher"
+description: Why become a teacher? Read stories from real life teachers to find out what led them to the classroom, and discover if teaching is right for you.
 content:
     - content/is-teaching-right-for-me/header
     - content/is-teaching-right-for-me/making_a_difference
