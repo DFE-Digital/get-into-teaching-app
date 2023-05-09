@@ -5,29 +5,32 @@ module Middleware
     end
 
     def call(env)
-      status, headers, response = @app.call(env)
+      rack_response = @app.call(env)
+      response_body = rack_response[2]
 
-      if dynamic_page?(body(response))
-        Rack::PageCaching::Cache.delete("#{cache_path(env['PATH_INFO'])}.html")
+      if dynamic_page?(response_body)
+        Rack::PageCaching::Cache.delete(cache_path(rack_response, env))
       end
 
-      [status, headers, response]
+      rack_response
     end
 
   private
 
-    def cache_path(path_info)
-      # The home page is a special case; the path
-      # is not the same as the cache file location.
-      path_info == "/" ? "/index" : path_info
+    def cache_path(rack_response, env)
+      response = Rack::PageCaching::Response.new(rack_response, env)
+
+      Rack::PageCaching::Cache.new(response).page_cache_path
     end
 
-    def body(response)
-      response.is_a?(ActionDispatch::Response::RackBody) ? response.body : response.first
+    def dynamic_page?(response_body)
+      extract_body(response_body)&.match(/method="(post|put|patch)"/i)
     end
 
-    def dynamic_page?(body)
-      body&.match(/method="(post|put|patch)"/i)
+    def extract_body(response_body)
+      # If the response goes through our HtmlResponseTransformer it
+      # will be an Array, otherwise an instance of ActionDispatch::Response::RackBody.
+      response_body.is_a?(ActionDispatch::Response::RackBody) ? response_body.body : response_body.first
     end
   end
 end
