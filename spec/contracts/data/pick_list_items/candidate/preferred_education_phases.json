@@ -1,0 +1,50 @@
+[
+  {
+    "id": 222750000,
+    "value": "Primary",
+    "entityName": "contact",
+    "attributeName": "dfe_preferrededucationphase01"
+  },
+  {
+    "id": 222750001,
+    "value": "Secondary",
+    "entityName": "contact",
+    "attributeName": "dfe_preferrededucationphase01"
+  },
+  {
+    "id": 222750002,
+    "value": "Further Education",
+    "entityName": "contact",
+    "attributeName": "dfe_preferrededucationphase01"
+  },
+  {
+    "id": 222750003,
+    "value": "Other",
+    "entityName": "contact",
+    "attributeName": "dfe_preferrededucationphase01"
+  },
+  {
+    "id": 222750004,
+    "value": "Middle",
+    "entityName": "contact",
+    "attributeName": "dfe_preferrededucationphase01"
+  },
+  {
+    "id": 222750005,
+    "value": "Higher Education",
+    "entityName": "contact",
+    "attributeName": "dfe_preferrededucationphase01"
+  },
+  {
+    "id": 222750006,
+    "value": "Teaching adults",
+    "entityName": "contact",
+    "attributeName": "dfe_preferrededucationphase01"
+  },
+  {
+    "id": 222750007,
+    "value": "Early years",
+    "entityName": "contact",
+    "attributeName": "dfe_preferrededucationphase01"
+  }
+]

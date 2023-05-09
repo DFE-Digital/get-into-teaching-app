@@ -1,0 +1,80 @@
+[
+  {
+    "id": 222750000,
+    "value": "GITIS Mailing List Service",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750001,
+    "value": "Within Dynamics",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750030,
+    "value": "GITIS - On Campus - Brand Ambassador activity",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750031,
+    "value": "GITIS - On Campus - Virtual Grad Fairs",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750032,
+    "value": "GITIS - On Campus - Online events (students)",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750033,
+    "value": "GITIS - On Campus - Virtual Pop-up events",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750034,
+    "value": "GITIS - On Campus - Refreshers Fairs",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750035,
+    "value": "GITIS - On Campus - Social media",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750036,
+    "value": "GITIS - On Campus - Commercial emails",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750037,
+    "value": "GITIS - On Campus - Careers Services activity",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750038,
+    "value": "GITIS - On Campus - Students Union Media",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750039,
+    "value": "GITIS - On Campus - Grad Fairs (face-to-face)",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  },
+  {
+    "id": 222750040,
+    "value": "GITIS - On Campus - Pop-up events (face-to-face)",
+    "entityName": "contact",
+    "attributeName": "dfe_gitismlservicesubscriptionchannel"
+  }
+]

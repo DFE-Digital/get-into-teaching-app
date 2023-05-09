@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   include DfE::Analytics::Requests
   include UtmCodes
 
+  rescue_from ActionController::InvalidAuthenticityToken, with: :session_expired
   rescue_from ActionController::RoutingError, with: :render_not_found
   rescue_from GetIntoTeachingApiClient::ApiError, with: :handle_api_error
   rescue_from ::Pages::Page::PageNotFoundError, with: :render_not_found
@@ -30,6 +31,11 @@ protected
   end
 
 private
+
+  def session_expired(exception)
+    Sentry.capture_exception(exception)
+    redirect_to session_expired_path
+  end
 
   def declare_frontmatter
     # Not all pages have frontmatter, but ensuring it

@@ -106,9 +106,9 @@ RSpec.feature "Book a callback", type: :feature do
     expect(page).to have_text "Choose a time for your callback"
     click_on "Next step"
     expect(page).to have_text "Enter your telephone number"
-    fill_in "Phone number", with: "12"
+    fill_in "Phone number", with: "abc123def"
     click_on "Next step"
-    expect(page).to have_text "Enter a valid phone number"
+    expect(page).to have_text "Enter your telephone number in the correct format"
     fill_in "Phone number", with: "123456789"
     # Select time in local time zone (London)
     select "11:00am to 12:00pm", from: "Select your preferred day and time for a callback"

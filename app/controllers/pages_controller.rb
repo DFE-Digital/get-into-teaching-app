@@ -68,9 +68,12 @@ class PagesController < ApplicationController
   end
 
   def tta_service
-    raise ActionView::MissingTemplate if ENV["TTA_SERVICE_URL"].blank?
+    url = if ActiveModel::Type::Boolean.new.cast(ENV["GET_AN_ADVISER"])
+            adviser_sign_up_url
+          else
+            adviser_service_url
+          end
 
-    url = ENV["TTA_SERVICE_URL"]
     if Rails.application.config.x.utm_codes && session[:utm]
       url += "?#{session[:utm].to_param}"
     end
@@ -79,6 +82,16 @@ class PagesController < ApplicationController
   end
 
 private
+
+  def adviser_sign_up_url
+    teacher_training_adviser_step_path(:start)
+  end
+
+  def adviser_service_url
+    raise ActionView::MissingTemplate if ENV["TTA_SERVICE_URL"].blank?
+
+    ENV["TTA_SERVICE_URL"]
+  end
 
   def init_funding_widget
     @funding_widget =

@@ -26,6 +26,7 @@ module Rack
         issue_verification_code_paths = [
           %r{mailinglist/signup/name},
           %r{events/.*/apply/personal_details},
+          %r{teacher-training-adviser/sign_up/identity},
         ]
 
         path_issues_verification_code = issue_verification_code_paths.any? do |pattern|
@@ -40,6 +41,11 @@ module Rack
         path_resends_verification_code = %r{/*./resend_verification}.match?(req.path)
 
         req.ip if req.get? && path_resends_verification_code
+      end
+
+      # Throttle teacher training adviser sign ups by IP (5rpm)
+      throttle("teacher_training_adviser_sign_up req/ip", limit: 5, period: 1.minute) do |req|
+        req.ip if (req.patch? || req.put?) && req.path == "/teacher-training-adviser/sign_up/review_answers"
       end
 
       # Throttle mailing list sign ups by IP (5rpm)
