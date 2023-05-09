@@ -15,15 +15,15 @@ RSpec.describe "Sign up", :integration, type: :feature, js: true do
   end
 
   it "Full journey as a new candidate" do
-    submit_personal_details(rand_first_name, rand_last_name, rand_email)
+    submit_personal_details(rand_first_name, rand_last_name, rand_email, button_text: "Continue")
     complete_sign_up
   end
 
   it "Full journey as an existing candidate" do
     email = "ttauser@mailsac.com"
-    submit_personal_details(rand_first_name, rand_last_name, email)
+    submit_personal_details(rand_first_name, rand_last_name, email, button_text: "Continue")
 
-    submit_code(email)
+    submit_code(email, button_text: "Continue")
 
     expect_current_step(:returning_teacher)
   end
