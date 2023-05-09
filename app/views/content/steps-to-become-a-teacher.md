@@ -25,29 +25,29 @@
   how_to:
     Check your qualifications:
       id: "step-1"
-      image: "static/content/hero-images/0017.jpg"
+      image: "static/content/hero-images/0009.jpg"
       directions:
-        - If you have a degree, you can do postgraduate teacher training. If you don't have a degree, you can do undergraduate teacher training.
+        - If you have a degree or equivalent qualification, you can do postgraduate teacher training. If you do not have a degree, you can do undergraduate teacher training.
     Understand funding:
       id: "step-2"
       image: "static/content/hero-images/0017.jpg"
       directions:
-        - You can get funding that you do not have to pay back if you train to teach certain subjects.
+        - Undergraduate and postgraduate teacher training course fees are around £9,250 per year, but there is funding available.
     Consider getting experience:
       id: "step-3"
-      image: "static/content/hero-images/0017.jpg"
+      image: "static/content/hero-images/0011.jpg"
       directions:
-        - Experiencing life in a school and a classroom can help to decide if teaching is right for you and who you want to teach.
+        - Experiencing life in a school can help you decide if teaching is right for you and who you want to teach.
     Find a teacher training course:
       id: "step-4"
-      image: "static/content/hero-images/0017.jpg"
+      image: "static/content/hero-images/0018.jpg"
       directions:
-        - Explore your options, find out how to train to teach primary or secondary.
+        - Full-time postgraduate teacher training courses usually take 9 months, while part-time courses can take from 18 to 24. Undergraduate teacher training usually takes 4 years.
     Apply for teacher training:
       id: "step-5"
-      image: "static/content/hero-images/0017.jpg"
+      image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
       directions:
-        - You can usually start applying in October the year before your course starts but courses fill up quickly.
+        - You can usually start applying for postgraduate training in October, the year before your course starts.
   keywords:
     - QTS
     - Qualified Teacher Status
