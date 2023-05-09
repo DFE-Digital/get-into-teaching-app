@@ -103,15 +103,11 @@ $ql-2$
 
 ## Can I get an adviser?
 
-To sign up, you’ll need (one of the following):
+To sign up, you’ll need to have or be in your final year of studying for a bachelor's degree, grade 2:2 or higher (or an equivalent).
 
-* a bachelor’s degree with honours, grade 2:2 or higher
-* to be a final year student studying for a bachelor’s degree with honours
-* an overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
+If you're already a qualified teacher, you'll need English qualified teacher status (QTS) and want to teach a secondary subject.
 
-If you’re a returning teacher who already has qualified teacher status (QTS), you'll need to be returning to teach at a secondary school in England to get an adviser.
-
-If you completed your degree overseas, you can <a href="tel:08003892500">call us to check your qualifications on 0800 389 2500</a>.
+If you got your qualifications outside the UK, you can <a href="tel:08003892500">call us on 0800 389 2500 to check if you're eligible</a>.
 
 $get-a-tta$
 
