@@ -27,7 +27,7 @@
       id: "step-1"
       image: "static/content/hero-images/0009.jpg"
       directions:
-        - If you have a degree or equivalent qualification, you can do postgraduate teacher training. If you do not have a degree, you can do undergraduate teacher training.
+        - If you have a degree, you can do postgraduate teacher training. If you do not have a degree, you can do undergraduate teacher training.
     Understand funding:
       id: "step-2"
       image: "static/content/hero-images/0017.jpg"
@@ -42,12 +42,12 @@
       id: "step-4"
       image: "static/content/hero-images/0018.jpg"
       directions:
-        - Full-time postgraduate teacher training courses usually take 9 months, while part-time courses can take from 18 to 24. Undergraduate teacher training usually takes 4 years.
+        - Full-time postgraduate teacher training courses usually take 9 months. Undergraduate teacher training usually takes 4 years.
     Apply for teacher training:
       id: "step-5"
       image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
       directions:
-        - You can usually start applying for postgraduate training in October, the year before your course starts.
+        - You can usually start applying in October, the year before your course starts.
   keywords:
     - QTS
     - Qualified Teacher Status
