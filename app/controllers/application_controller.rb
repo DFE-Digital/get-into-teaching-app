@@ -30,6 +30,10 @@ protected
     @content_errors << error
   end
 
+  def current_namespace
+    "get_into_teaching"
+  end
+
 private
 
   def session_expired(exception)
