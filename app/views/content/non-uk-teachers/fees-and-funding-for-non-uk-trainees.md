@@ -53,8 +53,9 @@ keywords:
   - Settlement Scheme
 ---
 
-If you’re applying for teacher training as a non-UK citizen, you may be able to get some financial help from the UK government. The information on this page is for:
+If you’re applying for teacher training as a non-UK citizen, you may be able to get some financial support from the UK government. Your eligibility for support will depend on your [immigration status](#check-your-immigration-status-and-eligibility-for-financial-support) and choice of subject. Most non-UK citizens without some type of settled status in the UK will not be eligible, unless they choose to study languages or physics.
 
+The information on this page is for:
 
 * non-UK citizens living in the UK
 * non-UK citizens living outside the UK
@@ -194,9 +195,11 @@ You can check if you’re eligible for a scholarship and apply by visiting:
 
 [Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in languages and physics.
 
-## Other types of financial support available
+## Other types of financial support
 
-If you have the right immigration status, you could be eligible for the following types of financial help from the UK government.
+If you have the right [immigration status](#check-your-immigration-status-and-eligibility-for-financial-support), you could be eligible for the following types of financial help from the UK government.
+
+Tuition fees and maintenance loans are only available for courses where you pay a fee to study teacher training.
 
 ### Tuition fee loan
 Your tuition fees are paid in full, with the money going directly to your teacher training provider. This is a loan you have to pay back, but you’ll only start your repayments when your income is over a certain amount – for the 2023 to 2024 financial year, this is £24,996 per year.
@@ -215,15 +218,11 @@ If you are awarded a bursary or scholarship, the money is paid directly into you
 
 [Learn more about bursaries and scholarships in other subjects, and how to apply](/funding-and-support/scholarships-and-bursaries). 
 
-## Eligibility for other types of financial support
+## Check your immigration status and eligibility for financial support
 
-Depending on your immigration status, you may be able to get other kinds of financial help from the UK government. 
+You are more likely to get financial support if you have some type of settled status in the UK – for example, through the EU Settlement Scheme or indefinite leave to remain. Without settled status, most non-UK candidates will not be eligible for financial support, unless they train to teach [languages or physics](#financial-support-for-non-uk-trainee-languages-and-physics-teachers). 
 
-You are more likely to get financial support if you have some type of settled status in the UK – for example, through the EU Settlement Scheme or indefinite leave to remain. Without settled status, most non-UK candidates will not be eligible for financial support.
-
-Tuition fees and maintenance loans are only available for courses where you pay a fee to study teacher training. 
-
-### Support for Irish citizens
+### Irish citizens
 
 You will generally be eligible for a tuition fee loan and a student maintenance loan if you meet both of the following requirements:
 
@@ -235,7 +234,7 @@ You will generally be eligible for a tuition fee loan if you meet both the follo
 * you are an Irish citizen
 * you have been living in Ireland, or Ireland and the UK, Guernsey, Jersey or the Isle of Man, throughout the 3 years before the start of your course
 
-### Support for trainee teachers from the European Economic Area (EEA) or Switzerland
+### Trainee teachers from the European Economic Area (EEA) or Switzerland
 
 If you meet both the following requirements:
 
