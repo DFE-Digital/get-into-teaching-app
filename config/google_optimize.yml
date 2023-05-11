@@ -6,4 +6,7 @@
 #   - /events
 #   - /
 
-paths: []
+paths:
+  - /landing/train-to-teach
+  - /train-to-be-a-teacher
+
