@@ -220,7 +220,7 @@ If you are awarded a bursary or scholarship, the money is paid directly into you
 
 ## Check your immigration status and eligibility for financial support
 
-You are more likely to get financial support if you have some type of settled status in the UK – for example, through the EU Settlement Scheme or indefinite leave to remain. Without settled status, most non-UK candidates will not be eligible for financial support, unless they train to teach [languages or physics](#financial-support-for-non-uk-trainee-languages-and-physics-teachers). 
+You are more likely to get financial support if you have some type of settled status in the UK – for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain). Without settled status, most non-UK candidates will not be eligible for financial support, unless they train to teach [languages or physics](#financial-support-for-non-uk-trainee-languages-and-physics-teachers). 
 
 ### Irish citizens
 
