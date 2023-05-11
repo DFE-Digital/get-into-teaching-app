@@ -183,7 +183,10 @@ describe ApplicationHelper do
 
     it "includes pages currently under test" do
       is_expected.to eq({
-        paths: [],
+        paths: [
+          "/landing/train-to-teach",
+          "/train-to-be-a-teacher",
+        ],
       })
     end
   end
