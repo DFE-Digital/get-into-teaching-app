@@ -53,7 +53,7 @@ keywords:
   - Settlement Scheme
 ---
 
-If you’re applying for teacher training as a non-UK citizen, you may be able to get some financial support from the UK government. Your eligibility for support will depend on your [immigration status](#check-your-immigration-status-and-eligibility-for-financial-support) and choice of subject. Most non-UK citizens without some type of settled status in the UK will not be eligible, unless they choose to study languages or physics.
+If you’re applying for teacher training as a non-UK citizen, you may be able to get some financial support from the UK government. Your eligibility for support will depend on your [immigration status](#check-your-immigration-status-and-eligibility-for-financial-support) and choice of subject. Most non-UK citizens without some type of settled status in the UK will not be eligible, unless they train to teach languages or physics.
 
 The information on this page is for:
 
