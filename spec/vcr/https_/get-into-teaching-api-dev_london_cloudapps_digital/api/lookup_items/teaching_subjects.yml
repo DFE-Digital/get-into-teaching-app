@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-api-dev.london.cloudapps.digital/api/lookup_items/teaching_subjects
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swagger-Codegen/1.0.6/ruby
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Authorization:
+      - ENV[api_key]
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      date:
+      - Wed, 19 Aug 2020 06:28:35 GMT
+      content-type:
+      - application/json; charset=utf-8
+      etag:
+      - 9F4E0B54F28EEC437DA84AFF7B46464885B10185D80A8A25670B852AD18B6B99
+      server:
+      - Kestrel
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-vcap-request-id:
+      - ca6eb87f-aa46-4705-7da1-83c57429264a
+    body:
+      encoding: UTF-8
+      string: '[{"id":"6b793433-cd1f-e911-a979-000d3a20838a","value":"Art"},{"id":"7e2655a1-2afa-e811-a981-000d3a276620","value":"Art
+        and design"},{"id":"802655a1-2afa-e811-a981-000d3a276620","value":"Biology"},{"id":"822655a1-2afa-e811-a981-000d3a276620","value":"Business
+        studies"},{"id":"842655a1-2afa-e811-a981-000d3a276620","value":"Chemistry"},{"id":"862655a1-2afa-e811-a981-000d3a276620","value":"Citizenship"},{"id":"882655a1-2afa-e811-a981-000d3a276620","value":"Classics"},{"id":"8a2655a1-2afa-e811-a981-000d3a276620","value":"Computing"},{"id":"8c2655a1-2afa-e811-a981-000d3a276620","value":"Dance"},{"id":"8e2655a1-2afa-e811-a981-000d3a276620","value":"Design
+        and technology"},{"id":"902655a1-2afa-e811-a981-000d3a276620","value":"Drama"},{"id":"922655a1-2afa-e811-a981-000d3a276620","value":"Economics"},{"id":"942655a1-2afa-e811-a981-000d3a276620","value":"English"},{"id":"962655a1-2afa-e811-a981-000d3a276620","value":"French"},{"id":"982655a1-2afa-e811-a981-000d3a276620","value":"General
+        science"},{"id":"9a2655a1-2afa-e811-a981-000d3a276620","value":"Geography"},{"id":"9c2655a1-2afa-e811-a981-000d3a276620","value":"German"},{"id":"9e2655a1-2afa-e811-a981-000d3a276620","value":"Health
+        and social care"},{"id":"a02655a1-2afa-e811-a981-000d3a276620","value":"History"},{"id":"a22655a1-2afa-e811-a981-000d3a276620","value":"Languages
+        (other)"},{"id":"a42655a1-2afa-e811-a981-000d3a276620","value":"Maths"},{"id":"a62655a1-2afa-e811-a981-000d3a276620","value":"Media
+        studies"},{"id":"a82655a1-2afa-e811-a981-000d3a276620","value":"Music"},{"id":"aa2655a1-2afa-e811-a981-000d3a276620","value":"Physical
+        education"},{"id":"ac2655a1-2afa-e811-a981-000d3a276620","value":"Physics"},{"id":"ae2655a1-2afa-e811-a981-000d3a276620","value":"Physics
+        with maths"},{"id":"b02655a1-2afa-e811-a981-000d3a276620","value":"Primary"},{"id":"b22655a1-2afa-e811-a981-000d3a276620","value":"Psychology"},{"id":"b42655a1-2afa-e811-a981-000d3a276620","value":"Religious
+        education"},{"id":"b62655a1-2afa-e811-a981-000d3a276620","value":"Social sciences"},{"id":"b82655a1-2afa-e811-a981-000d3a276620","value":"Spanish"},{"id":"ba2655a1-2afa-e811-a981-000d3a276620","value":"Vocational
+        health"},{"id":"bc2655a1-2afa-e811-a981-000d3a276620","value":"Other"},{"id":"bc68e0c1-7212-e911-a974-000d3a206976","value":"No
+        preference"}]'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://get-into-teaching-api-dev.london.cloudapps.digital/api/lookup_items/teaching_subjects
+  recorded_at: Wed, 19 Aug 2020 06:28:35 GMT
+recorded_with: VCR 6.0.0

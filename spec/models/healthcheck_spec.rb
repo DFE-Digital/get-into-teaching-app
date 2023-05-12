@@ -26,14 +26,6 @@ describe Healthcheck do
     end
   end
 
-  before do
-    stub_request(:get, "#{git_api_endpoint}/api/lookup_items/teaching_subjects")
-      .to_return \
-        status: 200,
-        headers: { "Content-type" => "application/json" },
-        body: TeachingSubject::ALL.map { |k, v| { id: v, value: k } }.to_json
-  end
-
   include_examples "reading git shas", "app_sha", "/etc/get-into-teaching-app-sha"
   include_examples "reading git shas", "content_sha", "/etc/get-into-teaching-content-sha"
 
@@ -45,14 +37,11 @@ describe Healthcheck do
     end
 
     context "with broken connection" do
-      before do
-        stub_request(:get, "#{git_api_endpoint}/api/lookup_items/teaching_subjects")
-          .to_timeout
-          .then.to_timeout
-          .then.to_timeout
+      it "returns false" do
+        VCR.use_cassette("https_/get-into-teaching-api-dev_london_cloudapps_digital/api/lookup_items/teaching_subjects_timeout") do
+          is_expected.to be false
+        end
       end
-
-      it { is_expected.to be false }
     end
 
     context "with an API error" do

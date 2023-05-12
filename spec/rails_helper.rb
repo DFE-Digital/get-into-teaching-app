@@ -50,7 +50,7 @@ RSpec.configure do |config|
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
-  # config.use_transactional_fixtures = true
+  config.use_transactional_fixtures = true
 
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
@@ -77,9 +77,8 @@ RSpec.configure do |config|
   config.include ActiveSupport::Testing::TimeHelpers
   config.include SpecHelpers::BasicAuth
   config.include SpecHelpers::Integration, type: :feature
+  config.include SpecHelpers::Contract, type: :feature
   config.include Webpacker::Helper, type: :helper
-
-  config.include_context "with stubbed latest privacy policy api"
 
   config.verbose_retry = true
   config.default_retry_count = 2

@@ -6,16 +6,17 @@ class ApplicationController < ActionController::Base
   include DfE::Analytics::Requests
   include UtmCodes
 
+  rescue_from ActionController::InvalidAuthenticityToken, with: :session_expired
   rescue_from ActionController::RoutingError, with: :render_not_found
   rescue_from GetIntoTeachingApiClient::ApiError, with: :handle_api_error
   rescue_from ::Pages::Page::PageNotFoundError, with: :render_not_found
+  rescue_from ForbiddenError, with: :render_forbidden
 
   before_action :http_basic_authenticate, if: :authenticate?
   before_action :set_api_client_request_id
   before_action :record_utm_codes
   before_action :add_home_breadcrumb
   before_action :declare_frontmatter
-  before_action :declare_js_packs
 
 protected
 
@@ -28,7 +29,16 @@ protected
     @content_errors << error
   end
 
+  def current_namespace
+    "get_into_teaching"
+  end
+
 private
+
+  def session_expired(exception)
+    Sentry.capture_exception(exception)
+    redirect_to session_expired_path
+  end
 
   def declare_frontmatter
     # Not all pages have frontmatter, but ensuring it
@@ -36,12 +46,12 @@ private
     @front_matter ||= {}
   end
 
-  def declare_js_packs
-    @js_packs ||= []
-  end
-
   def raise_not_found
     raise ActionController::RoutingError, "Not Found"
+  end
+
+  def raise_forbidden
+    raise ForbiddenError, "Forbidden"
   end
 
   def authenticate?

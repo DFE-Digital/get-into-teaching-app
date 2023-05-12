@@ -65,7 +65,14 @@ describe PagesController, type: :request do
   end
 
   describe "redirect to TTA site" do
-    include_context "with stubbed env vars", "TTA_SERVICE_URL" => "https://tta-service/"
+    let(:get_an_adviser_flag) { "0" }
+
+    before do
+      allow(ENV).to receive(:[]).and_call_original
+      allow(ENV).to receive(:[]).with("TTA_SERVICE_URL").and_return("https://tta-service/")
+      allow(ENV).to receive(:[]).with("GET_AN_ADVISER").and_return(get_an_adviser_flag)
+    end
+
     subject { response }
 
     context "with /tta-service url" do
@@ -85,6 +92,29 @@ describe PagesController, type: :request do
       before { get "/tta-service?utm_test=abc&test=def" }
 
       it { is_expected.to redirect_to "https://tta-service/?utm_test=abc" }
+    end
+
+    context "when the get an adviser sign up is enabled" do
+      let(:get_an_adviser_flag) { "1" }
+
+      context "with /tta-service url" do
+        before { get "/tta-service" }
+
+        it { is_expected.to redirect_to teacher_training_adviser_step_path(:start) }
+        it { expect(response).to have_http_status(:moved_permanently) }
+      end
+
+      context "with /tta url" do
+        before { get "/tta" }
+
+        it { is_expected.to redirect_to teacher_training_adviser_step_path(:start) }
+      end
+
+      context "with utm params" do
+        before { get "/tta-service?utm_test=abc&test=def" }
+
+        it { is_expected.to redirect_to teacher_training_adviser_step_path(:start, utm_test: :abc) }
+      end
     end
   end
 

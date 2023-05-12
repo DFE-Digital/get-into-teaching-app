@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-api-dev.london.cloudapps.digital/api/pick_list_items/candidate/types
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 12c895a0a06347729ddeb19c6aa4dcb2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 24 Feb 2021 08:27:26 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '63'
+      connection:
+      - keep-alive
+      cache-control:
+      - private,max-age=300
+      etag:
+      - 9C7BEEC71835CBA685703D6135DA62B82E5926FB21DA3EA58A03C4E9628E38EC
+      server:
+      - Kestrel
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-vcap-request-id:
+      - 157ed920-6f1b-4713-5bfd-0501668c1a27
+    body:
+      encoding: UTF-8
+      string: '[{"id":222750000,"value":"ITT"},{"id":222750001,"value":"RTT"}]'
+  recorded_at: Wed, 24 Feb 2021 08:27:26 GMT
+recorded_with: VCR 6.0.0

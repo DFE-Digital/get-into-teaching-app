@@ -1,0 +1,14 @@
+[
+  {
+    "id": 222750000,
+    "value": "ITT",
+    "entityName": "contact",
+    "attributeName": "dfe_typeofcandidate"
+  },
+  {
+    "id": 222750001,
+    "value": "RTT",
+    "entityName": "contact",
+    "attributeName": "dfe_typeofcandidate"
+  }
+]

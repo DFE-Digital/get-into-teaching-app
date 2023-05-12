@@ -61,7 +61,7 @@ If you’re applying for teacher training as a non-UK citizen, you may be able t
 * Irish citizens
 * refugees or asylum seekers
 
-## Teacher training fees
+## Teacher training fees
 
 As a non-UK candidate, you can expect to pay between £9,250 and about £32,000 to train to teach in England – fees vary between training providers. You’ll also have to cover your living costs.
 
@@ -286,6 +286,7 @@ Financial support can include:
 * help with course fees (a tuition fee loan)
 
 If, as a refugee, you are eligible for help with course fees, you may also be eligible for a bursary or scholarship.
+
 ### Extra financial support
 If you have a disability, children or an adult dependant to care for, and you are eligible for a tuition fee loan and maintenance loan, you may be able to apply for extra help. You do not have to pay this money back.
 
@@ -318,4 +319,3 @@ Talk to your training provider about:
 Citizens from other countries can also [find out more about eligibility for student finance](https://www.gov.uk/student-finance/who-qualifies).
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
-

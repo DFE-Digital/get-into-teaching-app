@@ -1,8 +1,8 @@
 ---
-title: "Bursaries and scholarships"
+title: "Teacher training bursaries"
 heading: "Bursaries and scholarships"
 description: |-
-   Find out if you're eligible for extra funding depending on the subject you're training to teach.
+   Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.
 related_content:
     What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
     Improve your subject knowledge: "/train-to-be-a-teacher/subject-knowledge-enhancement"

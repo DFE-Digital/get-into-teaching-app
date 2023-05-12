@@ -28,9 +28,6 @@ RSpec.feature "content pages check", type: :feature, content: true do
   before(:all) do
     statuses_deemed_successful = Rack::Utils::SYMBOL_TO_STATUS_CODE.values_at(:ok, :moved_permanently)
 
-    stub_request(:get, "https://host.api/endpoint/api/privacy_policies/latest")
-      .to_return(status: 200, body: { id: 123, text: "text" }.to_json, headers: {})
-
     @stored_pages = PageLister.content_urls.map do |path|
       visit(path)
 
@@ -101,6 +98,12 @@ RSpec.feature "content pages check", type: :feature, content: true do
     scenario "all images have alt text" do
       @stored_pages.each do |sp|
         expect(sp.body.css("img")).to all(have_attribute("alt"))
+      end
+    end
+
+    scenario "all filenames are lower case hyphenated" do
+      @stored_pages.each do |sp|
+        expect(sp.path).to match(/^[a-z0-9\-\/]+$/)
       end
     end
 

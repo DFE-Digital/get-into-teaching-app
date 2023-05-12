@@ -184,15 +184,16 @@ describe ApplicationHelper do
     it "includes pages currently under test" do
       is_expected.to eq({
         paths: [
-          "/funding-and-support/scholarships-and-bursaries-search",
-          "/train-to-be-a-teacher/if-you-have-a-degree-search",
-          "/landing/train-to-teach-if-you-have-a-degree",
-          "/mailinglist/signup/name",
-          "/mailinglist/signup",
-          "/landing/how-to-fund-your-teacher-training",
+          "/landing/train-to-teach",
+          "/train-to-be-a-teacher",
         ],
       })
     end
+  end
+
+  describe "#human_boolean" do
+    it { expect(human_boolean(true)).to eq("Yes") }
+    it { expect(human_boolean(false)).to eq("No") }
   end
 
   describe "#sentry_dsn" do

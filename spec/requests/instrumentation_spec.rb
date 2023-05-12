@@ -45,6 +45,28 @@ describe "Instrumentation", type: :request do
     end
   end
 
+  describe "app.tta_feedback" do
+    let(:params) do
+      {
+        teacher_training_adviser_feedback: attributes_for(
+          :feedback, successful_visit: false, unsuccessful_visit_explanation: "doesn't work!"
+        ),
+      }
+    end
+
+    after { post teacher_training_adviser_feedbacks_path, params: params }
+
+    it "increments the :app_tta_feedback_visit_total metric" do
+      metric = registry.get(:app_tta_feedback_visit_total)
+      expect(metric).to receive(:increment).with(labels: { successful: "0" }).once
+    end
+
+    it "increments the :app_tta_feedback_rating_total metric" do
+      metric = registry.get(:app_tta_feedback_rating_total)
+      expect(metric).to receive(:increment).with(labels: { rating: "satisfied" }).once
+    end
+  end
+
   describe "app.csp_violation" do
     let(:params) do
       {

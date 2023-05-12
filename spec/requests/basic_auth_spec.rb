@@ -28,7 +28,7 @@ RSpec.describe "Basic auth", type: :request do
     it "returns success and sets a user session if credentials match" do
       get root_path, params: {}, headers: basic_auth_headers(username, password)
       expect(response).to be_successful
-      expect(request.session[:user]).to eq(true)
+      expect(request.session[:user]).to be_an_instance_of(User)
     end
   end
 end

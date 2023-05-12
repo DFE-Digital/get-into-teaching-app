@@ -1,8 +1,8 @@
 ---
-title: "Tuition fee and maintenance loans"
+title: "Student finance for teacher training"
 heading: "Tuition fee and maintenance loans"
 description: |-
-    Find out which loans you could get to help pay your fees and living expenses while you train.
+    Find out about the available student finance for teacher training, including tuition fee and maintenance loans to support you while you train.
 related_content:
     Who do you want to teach?: "/train-to-be-a-teacher/who-do-you-want-to-teach"
     Improve your subject knowledge: "/train-to-be-a-teacher/subject-knowledge-enhancement"

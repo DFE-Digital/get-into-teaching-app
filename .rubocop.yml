@@ -74,6 +74,9 @@ RSpec/NamedSubject:
   Exclude:
     - spec/**/*.rb
 
+RSpec/StubbedMock:
+  Enabled: false
+
 RSpec/SubjectStub:
   Exclude:
     - spec/**/*.rb

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 222750000,
+    "value": "EVENT",
+    "entityName": "dfe_servicesubscription",
+    "attributeName": "dfe_servicesubscriptiontype"
+  },
+  {
+    "id": 222750001,
+    "value": "Marketing",
+    "entityName": "dfe_servicesubscription",
+    "attributeName": "dfe_servicesubscriptiontype"
+  },
+  {
+    "id": 222750002,
+    "value": "TTA Registration",
+    "entityName": "dfe_servicesubscription",
+    "attributeName": "dfe_servicesubscriptiontype"
+  },
+  {
+    "id": 222750003,
+    "value": "Single Event",
+    "entityName": "dfe_servicesubscription",
+    "attributeName": "dfe_servicesubscriptiontype"
+  }
+]

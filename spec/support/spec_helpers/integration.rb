@@ -8,19 +8,29 @@ module SpecHelpers
       Capybara.app_host = "https://#{creds[:username]}:#{creds[:password]}@#{host}"
     end
 
-    def submit_personal_details(first_name, last_name, email)
+    def submit_personal_details(first_name, last_name, email, button_text: "Next step")
       fill_in "First name", with: first_name
       fill_in "Last name", with: last_name
       fill_in "Email address", with: email
-      click_on "Next step"
+      click_on button_text
     end
 
-    def submit_code(email)
+    def submit_code(email, button_text: "Next step")
       wait_for_jobs
       expect(page).to have_text("You're already registered with us")
       code = retrieve_verification_code(email)
       fill_in "To verify your details, we've sent a code to your email address.", with: code
-      click_on "Next step"
+      click_on button_text
+    end
+
+    def submit_label_step(text, step)
+      expect_current_step(step)
+
+      # Capybara choose/check methods aren't working
+      # for radio/checkbox inputs on integration tests.
+      find("label", text: text).click
+
+      click_on "Continue"
     end
 
     def rand

@@ -322,9 +322,14 @@ redirects:
   "/impact-of-covid-19-on-teacher-training": "/"
   "/impact-of-covid-19-on-applicants": "/"
 
+  # Pages added with incorrect casing
+  "/non-uk-teachers/fees-and-funding-for-non-UK-trainees": "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
+
   # Old A/B tests
   "/salaries-and-benefits-search": "/salaries-and-benefits"
   "/salaries-and-benefits-social": "/salaries-and-benefits"
   "/landing/how-much-do-teachers-get-paid-social": "/landing/how-much-do-teachers-get-paid"
   "/steps-to-become-a-teacher-search": "/steps-to-become-a-teacher"
   "/landing/home": "/"
+  "/train-to-be-a-teacher/if-you-have-a-degree-search": "/train-to-be-a-teacher/if-you-have-a-degree"
+  "/funding-and-support/scholarships-and-bursaries-search": "/funding-and-support/scholarships-and-bursaries"

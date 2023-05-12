@@ -1,5 +1,5 @@
 ---
-title: "Early years teacher training"
+title: "Become an early years teacher"
 image: false
 backlink: "../"
 keywords:
@@ -17,7 +17,7 @@ keywords:
  - year one
 date: "2021-03-29"
 description: |-
-  Discover how to get Early Years Teacher Status (EYTS) and help to educate and inspire future generations. Official guidance on early years teacher training.
+  Find out how to become an early years teacher. Discover the qualifications you need, the different early years teacher training routes and the cost.
 inset_text:
   international-content:
     text: If you're a non-UK candidate, you can apply for early years initial teacher training, if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2022-to-2023-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
