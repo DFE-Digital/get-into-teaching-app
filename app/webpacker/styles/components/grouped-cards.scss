@@ -41,7 +41,8 @@
         margin: 1em 0;
       }
 
-      &__fields {
+      &__fields,
+      &__fields p {
         @include font-size(xsmall);
         white-space: normal;
 

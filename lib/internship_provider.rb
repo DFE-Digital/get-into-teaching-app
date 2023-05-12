@@ -11,6 +11,7 @@ class InternshipProvider
       @contact_name = d["contact_name"]
       @contact_email = d["contact_email"]
       @subjects = d["subjects"]
+      @full = ActiveModel::Type::Boolean.new.cast(d["full"])
     end
   end
 
@@ -18,10 +19,15 @@ class InternshipProvider
     {
       "header" => @school_name.strip,
       "link" => @school_website.strip,
-      "name" => @contact_name.strip,
-      "email" => @contact_email.strip,
       "subjects" => @subjects.strip,
-    }
+    }.tap do |h|
+      if @full
+        h["status"] = "Course full"
+      else
+        h["name"] = @contact_name.strip
+        h["email"] = @contact_email.strip
+      end
+    end
   end
 
   def to_str

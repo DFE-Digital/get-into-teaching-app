@@ -12,6 +12,10 @@ module GroupedCards
       @data["header"]
     end
 
+    def status
+      @data["status"]
+    end
+
     def linked_header
       if link
         link_to tag.h4(header), link
@@ -21,7 +25,7 @@ module GroupedCards
     end
 
     def fields
-      @data.without("header", "link")
+      @data.without("header", "link", "status")
     end
 
     def linked_value(value)

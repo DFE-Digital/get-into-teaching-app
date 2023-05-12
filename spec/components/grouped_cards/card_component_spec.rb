@@ -4,7 +4,7 @@ describe GroupedCards::CardComponent, type: "component" do
   subject { render_inline(instance) && page }
 
   let(:instance) { described_class.new organisation }
-  let(:organisation) do
+  let(:base_organisation) do
     {
       "header" => "First organisation",
       "name" => "Joe Bloggs",
@@ -12,6 +12,7 @@ describe GroupedCards::CardComponent, type: "component" do
       "email" => "joe.bloggs@first.org",
     }
   end
+  let(:organisation) { base_organisation }
 
   it { is_expected.to have_css "h4", text: "First organisation" }
   it { is_expected.to have_css ".group__card__fields span", text: "Name" }
@@ -22,16 +23,23 @@ describe GroupedCards::CardComponent, type: "component" do
 
   context "with link" do
     let(:organisation) do
-      {
-        "header" => "First organisation",
-        "link" => "https://education.gov.uk",
-        "name" => "Joe Bloggs",
-        "email" => "joe.bloggs@first.org",
-      }
+      base_organisation.tap do |h|
+        h["link"] = "https://education.gov.uk"
+      end
     end
 
     it { is_expected.to have_link href: "https://education.gov.uk" }
     it { is_expected.to have_css "a h4", text: "First organisation" }
     it { is_expected.to have_link "joe.bloggs@first.org", href: "mailto:joe.bloggs@first.org" }
+  end
+
+  context "with a status" do
+    let(:organisation) do
+      base_organisation.tap do |h|
+        h["status"] = "Course full"
+      end
+    end
+
+    it { is_expected.to have_css "p strong", text: organisation["status"] }
   end
 end
