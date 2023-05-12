@@ -32,11 +32,11 @@ These output files are used as inputs into the API contract tests; we feed in th
 
 We have various linters in place to enforce code consistency; these will be ran automatically as part of CI, but you can run them locally/configure a pre-commit hook if you prefer.
 
-### Ruby
+### Ruby
 
 Lint Ruby with `rubocop` (autofix with `rubocop -A`).
 
-### Javascript
+### Javascript
 
 [Prettier](https://prettier.io/) is used for code formatting. [ESLint](https://eslint.org/) is used for static analysis of JavaScript code quality. It is configured to ignore stylistic rules that conflict with Prettier, and uses the [JavaScript Standard style](https://standardjs.com/).
 

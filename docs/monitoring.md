@@ -4,7 +4,7 @@
 
 We use [logit.io](https://kibana.logit.io/app/kibana) to host a Kibana instance for our logs. The logs persist for **14 days** and contain logs for all our production and test instances. You can filter to a specific instance using the `cf.app` field.
 
-## Metrics
+## Metrics
 
 We use [Prometheus](https://prometheus-prod-get-into-teaching.london.cloudapps.digital/) to collect our metrics into an InfluxDB instance. The metrics are presented using [Grafana](https://grafana-prod-get-into-teaching.london.cloudapps.digital/). All the configuration/infrastructure is currently configured in the GiT API terraform files. The metrics are advertised on the `/metrics` endpoint of the application.
 

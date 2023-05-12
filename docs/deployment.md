@@ -4,7 +4,7 @@
 
 When you raise a pull request in GitHub an Action will create a review app in GOV.UK PAAS so that you can preview your changes in a production-like environment (or present changes to other team members ahead of merging). When the review all is built a comment will be posted to the PR with a link to the app. 
 
-## Deploying to production
+## Deploying to production
 
 A merged pull request will deploy **to dev, test and production**. 
 
