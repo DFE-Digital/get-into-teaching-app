@@ -52,6 +52,10 @@ youtube_video:
   return-to-teaching-advisers-video:
     id: 2NrLm_XId4k
     title: A video about what Return to Teaching Advisers do
+inset_text:
+  international-content:
+    text: If you qualified outside the UK, you must have English qualified teacher status (QTS) to get an adviser. <a href="/non-uk-teachers">Find out more about teaching in England as a non-UK citizen</a>.
+    color: grey
 ---
 
 Returning to teaching can be easier than you expect.
@@ -92,6 +96,8 @@ A return to teaching adviser can give you free one-to-one support with:
 Chat to your adviser by phone, text or email, as little or as often as you need.
 
 Return to teaching advisers also run [events to support returners](/events).
+
+$international-content$
 
 $return-to-teaching-advisers-video$
 
