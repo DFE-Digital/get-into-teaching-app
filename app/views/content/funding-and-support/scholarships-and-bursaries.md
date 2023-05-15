@@ -30,9 +30,15 @@ keywords:
     - RAF
     - Navy
     - Military
+inset_text:
+    international-content:
+      text: If you’re a non-UK citizen without settled immigration status in the UK, you will not usually be eligible for a bursary or scholarship, unless you train to teach languages or physics. <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">Find out more about funding for non-UK citizens</a>.
+      color: grey
 ---
 
 ## Postgraduate bursaries and scholarships
+
+$international-content$
 
 Postgraduate teaching bursaries and scholarships are only available for the subjects listed below. You cannot receive both a teaching bursary and a scholarship.
 
