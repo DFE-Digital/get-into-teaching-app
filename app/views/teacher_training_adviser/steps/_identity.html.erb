@@ -6,7 +6,7 @@
 </p>
 
 <p>
-  To sign up, you'll need to have or be studying for a bachelor's degree, grade 2:2 or higher (or an equivalent).
+  To sign up, you'll need to have or be studying for a bachelor's degree with honours, grade 2:2 or higher (or an equivalent).
 </p>
 
 <p>
@@ -15,8 +15,13 @@
 </p>
 
 <p>
-  If you got your qualifications outside the UK, you can call us on <a href="tel:08003892500">0800 389 2500</a> to check if you're eligible.
+  If you got your qualifications outside the UK, call us on <a href="tel:08003892500">0800 389 2500</a> to check if you're eligible.
 </p>
+
+<%= render Content::InsetTextComponent.new(
+  text: "If you qualified as a teacher outside the UK, you need English qualified teacher status (QTS) to get an adviser. <a href=\"/non-uk-teachers/teach-in-england-if-you-trained-overseas">Find out more about teaching in England if you qualififed outside the UK</a>.",
+  color: "grey"
+) %>
 
 <%= f.govuk_text_field :first_name, width: 'two-thirds' %>
 <%= f.govuk_text_field :last_name, width: 'two-thirds' %>
