@@ -103,7 +103,7 @@ describe Events::Steps::PersonalisedUpdates do
     subject { instance.teaching_subject_options }
 
     let(:teaching_subject_types) do
-      subjects = TeachingSubject::ALL.merge(TeachingSubject::IGNORED)
+      subjects = Crm::TeachingSubject::ALL.merge(Crm::TeachingSubject::IGNORED)
       subjects.map { |k, v| GetIntoTeachingApiClient::TeachingSubject.new({ id: v, value: k }) }
     end
 
@@ -112,7 +112,7 @@ describe Events::Steps::PersonalisedUpdates do
         receive(:get_teaching_subjects).and_return(teaching_subject_types)
     end
 
-    it { expect(subject.map(&:id)).to eq(TeachingSubject.all_uuids) }
-    it { expect(subject.map(&:value)).to eq(TeachingSubject.all_subjects) }
+    it { expect(subject.map(&:id)).to eq(Crm::TeachingSubject.all_uuids) }
+    it { expect(subject.map(&:value)).to eq(Crm::TeachingSubject.all_subjects) }
   end
 end

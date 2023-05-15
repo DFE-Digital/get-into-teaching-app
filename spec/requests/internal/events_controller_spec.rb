@@ -73,8 +73,8 @@ describe Internal::EventsController, type: :request do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events)
                   .with({
-                    type_ids: [EventType.school_or_university_event_id],
-                    status_ids: [EventStatus.pending_id],
+                    type_ids: [Crm::EventType.school_or_university_event_id],
+                    status_ids: [Crm::EventStatus.pending_id],
                     start_after: Time.zone.now.utc.beginning_of_day,
                     quantity: 1_000,
                   })
@@ -87,8 +87,8 @@ describe Internal::EventsController, type: :request do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events)
                   .with({
-                    type_ids: [EventType.online_event_id],
-                    status_ids: [EventStatus.pending_id],
+                    type_ids: [Crm::EventType.online_event_id],
+                    status_ids: [Crm::EventStatus.pending_id],
                     start_after: Time.zone.now.utc.beginning_of_day,
                     quantity: 1_000,
                   })
@@ -406,7 +406,7 @@ describe Internal::EventsController, type: :request do
         let(:params) do
           attributes_for :internal_event,
                          :online_event,
-                         type_id: EventType.online_event_id
+                         type_id: Crm::EventType.online_event_id
         end
         let(:expected_request_body) do
           build(:event_api,
@@ -460,7 +460,7 @@ describe Internal::EventsController, type: :request do
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = EventStatus.open_id
+            event.status_id = Crm::EventStatus.open_id
           end
         end
 
@@ -515,7 +515,7 @@ describe Internal::EventsController, type: :request do
         let(:params) { { "id": event.id } }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = EventStatus.open_id
+            event.status_id = Crm::EventStatus.open_id
           end
         end
 
@@ -563,7 +563,7 @@ describe Internal::EventsController, type: :request do
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = EventStatus.pending_id
+            event.status_id = Crm::EventStatus.pending_id
             event.building = nil
           end
         end
@@ -594,7 +594,7 @@ describe Internal::EventsController, type: :request do
         let(:params) { { "id": event.id } }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = EventStatus.pending_id
+            event.status_id = Crm::EventStatus.pending_id
           end
         end
 
@@ -655,8 +655,8 @@ describe Internal::EventsController, type: :request do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
           .to receive(:search_teaching_events)
                 .with({
-                  type_ids: [EventType.school_or_university_event_id, EventType.online_event_id],
-                  status_ids: [EventStatus.open_id],
+                  type_ids: [Crm::EventType.school_or_university_event_id, Crm::EventType.online_event_id],
+                  status_ids: [Crm::EventStatus.open_id],
                   start_after: Time.zone.now.utc.beginning_of_day,
                   quantity: 1_000,
                 })

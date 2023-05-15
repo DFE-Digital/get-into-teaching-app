@@ -10,10 +10,10 @@ module Internal
     attribute :readable_id, :string
     attribute :status_id,
               :integer,
-              default: EventStatus.pending_id
+              default: Crm::EventStatus.pending_id
     attribute :type_id,
               :integer,
-              default: EventType.school_or_university_event_id
+              default: Crm::EventType.school_or_university_event_id
     attribute :name, :string
     attribute :summary, :string
     attribute :description, :string
@@ -116,11 +116,11 @@ module Internal
     end
 
     def provider_event?
-      type_id == EventType.school_or_university_event_id
+      type_id == Crm::EventType.school_or_university_event_id
     end
 
     def online_event?
-      type_id == EventType.online_event_id
+      type_id == Crm::EventType.online_event_id
     end
 
   private

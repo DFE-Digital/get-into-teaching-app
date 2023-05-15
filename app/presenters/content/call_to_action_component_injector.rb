@@ -59,6 +59,8 @@ module Content
         [args, {}]
       when Hash
         [[], args.symbolize_keys]
+      else
+        raise ArgumentError, "arguments should be an Array or Hash"
       end
     end
   end

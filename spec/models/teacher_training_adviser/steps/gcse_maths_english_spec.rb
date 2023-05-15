@@ -28,7 +28,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::GcseMathsEnglish do
   describe "#reviewable_answers" do
     subject { instance.reviewable_answers }
 
-    before { instance.has_gcse_maths_and_english_id = BooleanType::ALL["Yes"] }
+    before { instance.has_gcse_maths_and_english_id = Crm::BooleanType::ALL["Yes"] }
 
     it { is_expected.to eq({ "has_gcse_maths_and_english_id" => "Yes" }) }
   end

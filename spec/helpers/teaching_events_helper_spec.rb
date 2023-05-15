@@ -83,7 +83,7 @@ describe TeachingEventsHelper, type: "helper" do
     let(:provider) { "School or University event" }
 
     let(:git_event) do
-      OpenStruct.new(type_id: EventType.lookup_by_name(git))
+      OpenStruct.new(type_id: Crm::EventType.lookup_by_name(git))
     end
 
     specify "returns true when there's a match" do
@@ -108,12 +108,12 @@ describe TeachingEventsHelper, type: "helper" do
       let(:custom_event) { "Bingo night" }
 
       specify "returns online forum instead of online event by default" do
-        expect(EventType.lookup_by_id(222_750_008)).to eql("Online event")
+        expect(Crm::EventType.lookup_by_id(222_750_008)).to eql("Online event")
         expect(event_type_name(222_750_008)).to eql("DfE Online Q&A")
       end
 
       specify "returns training provider instead of school or uni event by default" do
-        expect(EventType.lookup_by_id(222_750_009)).to eql("School or University event")
+        expect(Crm::EventType.lookup_by_id(222_750_009)).to eql("School or University event")
         expect(event_type_name(222_750_009)).to eql("Training provider")
       end
 
@@ -124,9 +124,9 @@ describe TeachingEventsHelper, type: "helper" do
   end
 
   describe "#is_a_get_into_teaching_event?" do
-    let(:git_event) { OpenStruct.new(type_id: EventType.get_into_teaching_event_id) }
-    let(:online_event) { OpenStruct.new(type_id: EventType.online_event_id) }
-    let(:school_or_university_event) { OpenStruct.new(type_id: EventType.school_or_university_event_id) }
+    let(:git_event) { OpenStruct.new(type_id: Crm::EventType.get_into_teaching_event_id) }
+    let(:online_event) { OpenStruct.new(type_id: Crm::EventType.online_event_id) }
+    let(:school_or_university_event) { OpenStruct.new(type_id: Crm::EventType.school_or_university_event_id) }
 
     specify "returns true when the event is Get Into Teaching" do
       expect(is_a_get_into_teaching_event?(git_event)).to be true

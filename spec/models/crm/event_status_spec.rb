@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe EventStatus do
+describe Crm::EventStatus do
   let(:event) { build(:event_api) }
 
   describe "class_methods" do

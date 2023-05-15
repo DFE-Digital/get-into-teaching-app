@@ -1,4 +1,4 @@
-class BooleanType
+class Crm::BooleanType
   ALL =
     {
       "Yes" => 222_750_000,

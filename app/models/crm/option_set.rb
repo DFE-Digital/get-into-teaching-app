@@ -1,4 +1,4 @@
-class OptionSet
+class Crm::OptionSet
   MAILING_LIST_CHANNELS =
     {
       "Careers Services activity" => 222_750_037,

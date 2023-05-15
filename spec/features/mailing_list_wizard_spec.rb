@@ -172,9 +172,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      preferred_teaching_subject_id: TeachingSubject.lookup_by_key(:maths),
-      consideration_journey_stage_id: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degree_status_id: OptionSet.lookup_by_key(:degree_status, :final_year),
+      preferred_teaching_subject_id: Crm::TeachingSubject.lookup_by_key(:maths),
+      consideration_journey_stage_id: Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
+      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :final_year),
       address_postcode: "TE57 1NG",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
@@ -209,7 +209,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Which subject do you want to teach"
     expect(page).to have_select(
       "Which subject do you want to teach?",
-      selected: TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
+      selected: Crm::TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
     )
     click_on "Complete sign up"
 
@@ -319,8 +319,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
       first_name: "Test",
       last_name: "User",
       email: "test@user.com",
-      consideration_journey_stage_id: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degree_status_id: OptionSet.lookup_by_key(:degree_status, :final_year),
+      consideration_journey_stage_id: Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
+      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :final_year),
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { response }

@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Sign up" do
   let(:get_an_adviser_flag) { "1" }
-  let(:model) { TeacherTrainingAdviser::Steps::Identity }
+  let(:model) { TeacherTrainingAdviser::Steps::ReturningTeacher }
   let(:step_path) { teacher_training_adviser_step_path model.key }
 
   before do
@@ -24,8 +24,9 @@ RSpec.describe "Sign up" do
       it { is_expected.to have_http_status :not_found }
     end
 
-    context "when viewing the start page" do
-      let(:step_path) { teacher_training_adviser_step_path(:start) }
+    context "when viewing the first step" do
+      let(:first_step) { TeacherTrainingAdviser::Wizard.steps.first }
+      let(:step_path) { teacher_training_adviser_step_path(first_step.key) }
 
       it { expect(response.body).not_to include("noindex") }
     end
@@ -43,6 +44,7 @@ RSpec.describe "Sign up" do
       response
     end
 
+    let(:model) { TeacherTrainingAdviser::Steps::Identity }
     let(:key) { model.model_name.param_key }
 
     context "with valid data" do

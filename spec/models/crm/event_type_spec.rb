@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe EventType do
+describe Crm::EventType do
   describe "class_methods" do
     describe ".all_ids" do
       subject { described_class.all_ids }

@@ -23,7 +23,7 @@ protected
 private
 
   def restrict_sign_ups
-    event_is_open_for_registration = EventStatus.new(@event).accepts_online_registration?
+    event_is_open_for_registration = Crm::EventStatus.new(@event).accepts_online_registration?
     candidate_is_walk_in = wizard_store[:is_walk_in]
 
     unless event_is_open_for_registration || candidate_is_walk_in

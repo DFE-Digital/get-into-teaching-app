@@ -1,4 +1,4 @@
-class EventType
+class Crm::EventType
   ALL =
     {
       "Get Into Teaching event" => 222_750_012,

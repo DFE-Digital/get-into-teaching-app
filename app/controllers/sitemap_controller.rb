@@ -57,7 +57,7 @@ private
     GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
       start_after: Time.zone.now,
       quantity: FUTURE_EVENTS_LIMIT,
-      type_ids: [EventType.get_into_teaching_event_id, EventType.online_event_id],
+      type_ids: [Crm::EventType.get_into_teaching_event_id, Crm::EventType.online_event_id],
     )
   end
 

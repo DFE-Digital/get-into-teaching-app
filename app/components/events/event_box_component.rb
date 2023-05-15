@@ -71,7 +71,7 @@ module Events
     end
 
     def is_online_event_category?
-      type == EventType.online_event_id
+      type == Crm::EventType.online_event_id
     end
   end
 end

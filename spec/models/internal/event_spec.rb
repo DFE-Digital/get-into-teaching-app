@@ -196,7 +196,7 @@ describe Internal::Event do
         name: internal_event.name,
         readable_id: internal_event.readable_id,
         status_id: internal_event.status_id,
-        type_id: EventType.school_or_university_event_id,
+        type_id: Crm::EventType.school_or_university_event_id,
         summary: internal_event.summary,
         description: internal_event.description,
         is_online: internal_event.is_online,
@@ -247,7 +247,7 @@ describe Internal::Event do
 
   describe "#type_id=" do
     context "when event is initialised with 'online' event_type" do
-      subject { described_class.new({ type_id: EventType.online_event_id }) }
+      subject { described_class.new({ type_id: Crm::EventType.online_event_id }) }
 
       it "sets 'is_online' to true" do
         expect(subject.is_online).to be true

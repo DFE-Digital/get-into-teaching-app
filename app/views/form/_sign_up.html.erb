@@ -1,16 +1,18 @@
-<section class="registration__event">
+<% complete_button_text ||= "Complete sign up" %>
+
+<%= tag.section(class: "registration__#{section_class}") do %>
   <p>
     <%= back_link step_path(wizard.previous_key) if wizard.previous_key %>
   </p>
 
-  <div class="registration__event--container">
+  <%= tag.div(class: "registration__#{section_class}--container") do %>
     <%= govuk_form_for current_step, url: step_path do |f| %>
       <%= f.govuk_error_summary %>
 
       <%= render current_step.key, current_step: current_step, f: f %>
 
       <% if wizard.step_can_proceed? %>
-        <% button_text = safe_html_format(wizard.last_step? ? "Complete sign up <span></span>" : "Next step <span></span>") %>
+        <% button_text = safe_html_format(wizard.last_step? ? "#{complete_button_text} <span></span>" : "Next step <span></span>") %>
         <%= f.button button_text, class: "call-to-action-button button", data: { "prevent-double-click": true, "disable-with": button_text } %>
       <% end %>
 
@@ -18,10 +20,6 @@
         <div class="form-help"><%= yield(:form_help) %></div>
       <% end %>
     <% end %>
-
-    <div class="event-info">
-      <%= render Events::DesktopSignupInfoComponent.new(@event) %>
-      <%= render Events::MobileSignupInfoComponent.new(@event) %>
-    </div>
-  </div>
-</section>
+    <%= yield %>
+  <% end %>
+<% end %>

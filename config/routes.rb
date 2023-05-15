@@ -134,7 +134,6 @@ Rails.application.routes.draw do
               path: "/sign_up",
               only: %i[index show update] do
       collection do
-        get :start
         get :completed
         get :resend_verification
       end

@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe TeachingSubject do
+describe Crm::TeachingSubject do
   describe "class_methods" do
     describe ".lookup_by_key" do
       it { expect(described_class.lookup_by_key(:physics)).to eq("ac2655a1-2afa-e811-a981-000d3a276620") }

@@ -18,7 +18,7 @@ RSpec.feature "Event wizard", type: :feature do
   end
 
   scenario "Full journey as a walk-in candidate (closed event)" do
-    event.status_id = EventStatus.closed_id
+    event.status_id = Crm::EventStatus.closed_id
 
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
@@ -336,7 +336,7 @@ RSpec.feature "Event wizard", type: :feature do
     {
       degree_status_id: 222_750_000,
       consideration_journey_stage_id: 222_750_000,
-      preferred_teaching_subject_id: TeachingSubject.lookup_by_key(:art),
+      preferred_teaching_subject_id: Crm::TeachingSubject.lookup_by_key(:art),
       address_postcode: "TE57 1NG",
     }
   end

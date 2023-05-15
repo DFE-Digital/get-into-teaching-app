@@ -129,7 +129,7 @@ module StructuredDataHelper
         "@type": "Offer",
         price: 0,
         priceCurrency: "GBP",
-        availability: EventStatus.new(event).open? ? IN_STOCK : SOLD_OUT,
+        availability: Crm::EventStatus.new(event).open? ? IN_STOCK : SOLD_OUT,
       },
     }.merge(building_data, provider_data, image_data)
 

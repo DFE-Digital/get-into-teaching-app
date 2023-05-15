@@ -69,18 +69,13 @@ module TeachingEvents
     end
 
     def event_type
-      EventType.lookup_by_id(type_id)
+      Crm::EventType.lookup_by_id(type_id)
     end
 
     def quote
       case event_type
       when "Get Into Teaching event"
         "So useful! I got answers to questions I didn't know I had yet and I'm so inspired and excited."
-
-      when "Online event"
-        nil
-      when "School or University event"
-        nil
       end
     end
 
@@ -88,27 +83,23 @@ module TeachingEvents
       case event_type
       when "Get Into Teaching event"
         get_into_teaching_event_image_details
-      when "Online event"
-        nil
-      when "School or University event"
-        nil
       end
     end
 
     def allow_registration?
-      EventStatus.new(@event).accepts_online_registration?
+      Crm::EventStatus.new(@event).accepts_online_registration?
     end
 
     def open?
-      EventStatus.new(@event).open?
+      Crm::EventStatus.new(@event).open?
     end
 
     def closed?
-      EventStatus.new(@event).closed?
+      Crm::EventStatus.new(@event).closed?
     end
 
     def show_provider_information?
-      !type_id.in?([EventType.get_into_teaching_event_id])
+      !type_id.in?([Crm::EventType.get_into_teaching_event_id])
     end
 
     def show_venue_information?

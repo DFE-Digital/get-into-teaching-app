@@ -128,7 +128,7 @@ module SpecHelpers
     end
 
     def click_on_continue
-      click_on "Continue"
+      click_on "Next"
     end
 
     def new_candidate_identity
