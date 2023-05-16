@@ -1,5 +1,5 @@
 # To use or update to a ruby version, change BASE_RUBY_IMAGE
-ARG BASE_RUBY_IMAGE=ruby:3.1.2-alpine3.16
+ARG BASE_RUBY_IMAGE=ruby:3.1.4-alpine3.16
 
 FROM ${BASE_RUBY_IMAGE} as base
 
