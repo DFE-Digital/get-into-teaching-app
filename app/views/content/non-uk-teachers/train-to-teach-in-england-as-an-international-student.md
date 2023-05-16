@@ -191,7 +191,7 @@ Salaried courses include:
  
 #### Choosing a subject to teach 
 
-The subject you apply to teach must usually be the same, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) 
+The subject you apply to teach must usually be the same as, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) 
 
 #### Finding the right course for you and getting help
 
