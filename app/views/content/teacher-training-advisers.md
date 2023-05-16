@@ -107,7 +107,7 @@ To sign up, you’ll need to have or be in your final year of studying for a bac
 
 If you're already a qualified teacher, you'll need English qualified teacher status (QTS) and want to teach a secondary subject.
 
-If you got your qualifications outside the UK, you can <a href="tel:08003892500">call us on 0800 389 2500 to check if you're eligible</a>.
+If you got your qualifications outside the UK, <a href="tel:08003892500">call us on 0800 389 2500 to check if you're eligible</a>.
 
 $get-a-tta$
 
