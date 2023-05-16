@@ -167,8 +167,7 @@ provider_groups:
     - header: St John Southworth Catholic Academy Trust
       link: https://www.sjscat.co.uk/Maths-Physics-and-Computing-Undergraduate-Summer-I/
       subjects: chemistry, computing, maths, physics, languages
-      name: Patrick Lanigan
-      email: laniganp@cvms.co.uk
+      status: Course full
     - header: Waldegrave Training Alliance and Orleans Park Teaching Alliance
       link: https://www.waldegrave.richmond.sch.uk/923/paid-teaching-internships-summer-2023
       subjects: computing, maths
@@ -192,8 +191,7 @@ provider_groups:
     - header: North East SCITT
       link: https://www.northeastscitt.co.uk/intern
       subjects: chemistry, computing, maths, physics, languages
-      name: Susan Ingram
-      email: Susan.ingram@nelt.co.uk
+      status: Course full
     - header: Northern Education Trust
       link: https://www.northerneducationtrust.org/2023/01/19/teaching-internships-programme-summer-2023/?highlight=internships
       subjects: chemistry, computing, maths, physics, languages
