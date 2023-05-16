@@ -6,6 +6,12 @@
 
 <p>Figures are for courses starting in the 2023/24 academic year.</p>
 
+<%= render Content::InsetTextComponent.new(
+  text: "If you’re a non-UK citizen without settled immigration status in the UK, you will not usually be eligible for a bursary or scholarship,
+  unless you train to teach languages or physics. <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">Find out more about funding for non-UK citizens</a>.",
+  color: "grey"
+) %>
+
 <section id="funding-widget">
   <%= render FundingWidgetComponent.new(
     @funding_widget,

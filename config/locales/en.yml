@@ -90,7 +90,7 @@ en:
         name: "Biology"
         group: "Secondary"
         sub_head: "Biology - Secondary"
-        funding: "Bursaries of £20,000 are available for trainee biology teachers."
+        funding: "Bursaries of £20,000 are available for trainee biology teachers if you’re eligible (non-UK citizens without settled status are unlikely to be eligible)."
       business_studies:
         name: "Business studies"
         group: "Secondary"
@@ -100,7 +100,7 @@ en:
         name: "Chemistry"
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
-        funding: "Scholarships of £29,000 and bursaries of £27,000 are available for trainee chemistry teachers."
+        funding: "Scholarships of £29,000 and bursaries of £27,000 are available for trainee chemistry teachers if you’re eligible (non-UK citizens without settled status are unlikely to be eligible)."
       citizenship:
         name: "Citizenship"
         group: "Secondary"
@@ -111,7 +111,7 @@ en:
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding: |-
-          Bursaries of £25,000 may be available for trainee teachers when more than 50% of the course content covers an ancient language.
+          Bursaries of £25,000 may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible (non-UK citizens without settled status are unlikely to be eligible).
 
           Your course provider will confirm if this applies.
       communication_and_media_studies:
@@ -123,7 +123,7 @@ en:
         name: "Computing"
         group: "Secondary"
         sub_head: "Computing - Secondary"
-        funding: "Scholarships of £29,000 and bursaries of £27,000 are available for trainee computing teachers."
+        funding: "Scholarships of £29,000 and bursaries of £27,000 are available for trainee computing teachers if you’re eligible (non-UK citizens without settled status are unlikely to be eligible)."
       dance:
         name: "Dance"
         group: "Secondary"
@@ -133,7 +133,7 @@ en:
         name: "Design and technology"
         group: "Secondary"
         sub_head: "Design and technology - Secondary"
-        funding: "Bursaries of £20,000 are available for trainee design and technology teachers."
+        funding: "Bursaries of £20,000 are available for trainee design and technology teachers if you’re eligible (non-UK citizens without settled status are unlikely to be eligible)."
       drama:
         name: "Drama"
         group: "Secondary"
@@ -148,7 +148,7 @@ en:
         name: "English"
         group: "Secondary"
         sub_head: "English - Secondary"
-        funding: "Bursaries of £15,000 are available for trainee English teachers."
+        funding: "Bursaries of £15,000 are available for trainee English teachers if you’re eligible (non-UK citizens without settled status are unlikely to be eligible)."
       english_as_a_second_or_other_language:
         name: "English as a second or other language"
         group: "Secondary"
@@ -158,7 +158,7 @@ en:
         name: "Geography"
         group: "Secondary"
         sub_head: "Geography - Secondary"
-        funding: "Bursaries of £25,000 are available for trainee geography teachers."
+        funding: "Bursaries of £25,000 are available for trainee geography teachers if you’re eligible (non-UK citizens without settled status are unlikely to be eligible)."
       health_and_social_care:
         name: "Health and social care"
         group: "Secondary"
@@ -177,11 +177,13 @@ en:
           Scholarships of £27,000 are available for trainee French, German, and Spanish language teachers.
 
           Bursaries of £25,000 are available for all trainee language teachers, including ancient languages.
+
+          Non-UK citizens without settled status in the UK are eligible for this support.
       maths:
         name: "Maths"
         group: "Secondary"
         sub_head: "Maths - Secondary"
-        funding: "Scholarships of £29,000 and bursaries of £27,000 are available for trainee maths teachers."
+        funding: "Scholarships of £29,000 and bursaries of £27,000 are available for trainee maths teachers if you’re eligible (non-UK citizens without settled status are unlikely to be eligible)."
         next_steps: |-
           If you have a passion for maths, find out more about <a href="/subjects/maths">becoming a maths teacher</a>.
       music:
@@ -198,7 +200,7 @@ en:
         name: "Physics"
         group: "Secondary"
         sub_head: "Physics - Secondary"
-        funding: "Scholarships of £29,000 and bursaries of £27,000 are available for trainee physics teachers."
+        funding: "Scholarships of £29,000 and bursaries of £27,000 are available for trainee physics teachers (including non-UK citizens)."
         next_steps: |-
           Discover how to become a physics teacher if you’re an <a href="/subjects/engineers-teach-physics">engineering or material sciences graduate.</a>
       psychology:
