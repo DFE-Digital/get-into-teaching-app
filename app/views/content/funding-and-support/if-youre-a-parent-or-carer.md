@@ -25,7 +25,7 @@ keywords:
     - Carers
 inset_text:
   international-content:
-    text: Most non-UK citizens without settled immigration status in the UK will not be eligible for this financial support. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens.</a>.
+    text: Most non-UK citizens without settled immigration status in the UK will not be eligible for this financial support. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.
     color: grey
 ---
 
