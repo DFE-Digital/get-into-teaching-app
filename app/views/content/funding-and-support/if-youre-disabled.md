@@ -26,6 +26,8 @@ inset_text:
     color: grey
 ---
 
+$international-content$
+
 The experience and perspective of a diverse workforce is valued in school culture.
 
 If you’re disabled, have a mental health condition or educational needs, you can get support to become a teacher.
