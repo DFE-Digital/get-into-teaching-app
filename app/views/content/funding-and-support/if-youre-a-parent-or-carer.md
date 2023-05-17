@@ -25,9 +25,11 @@ keywords:
     - Carers
 inset_text:
   international-content:
-    text: If you’re a non-UK citizen, you need to be eligible for student finance in England to receive the funding listed below. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens.</a>.
+    text: Most non-UK citizens without settled immigration status in the UK will not be eligible for this financial support. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens.</a>.
     color: grey
 ---
+
+$international-content$
 
 If you have children or other caring responsibilities, you may be able to get extra financial support while training to teach. 
 

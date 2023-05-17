@@ -20,6 +20,10 @@ keywords:
     - Financial Support
     - Disabled students
     - Disabled Students’ Allowances
+inset_text:
+  international-content:
+    text: Most non-UK citizens without settled immigration status in the UK will not be eligible for this financial support (unless you’re an Afghan or Ukraine resettlement scheme applicant). You will still be entitled to adjustments to help you train. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens.</a>.
+    color: grey
 ---
 
 The experience and perspective of a diverse workforce is valued in school culture.
