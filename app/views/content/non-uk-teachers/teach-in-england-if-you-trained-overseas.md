@@ -53,8 +53,6 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 
 If you are interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for a single payment of £10,000 from the UK government to pay back some of your moving expenses, including visa costs and the [immigration health surcharge](https://www.gov.uk/healthcare-immigration-application). 
 
-
-
 ## Apply for qualified teacher status (QTS)
 
 Qualified teacher status (QTS) is the professional status teachers in England gain at the end of their teacher training. Schools use QTS as a measure of teaching skills and experience, so you will find it much easier to get a teaching job in England if you have QTS.
