@@ -240,7 +240,7 @@ For information about IRP applications in 2024, check back to this page.
 
 ## General information about the international relocation payment  
 
-Help for trainees and teachers. 
+Further information for both trainees and teachers. 
 
 ### Protect yourself from fraud 
 
