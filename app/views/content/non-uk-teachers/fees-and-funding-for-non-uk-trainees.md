@@ -90,9 +90,7 @@ The IRP is designed to repay some of the relocation expenses of languages or phy
 
 If you are eligible, you’ll receive a single payment of £10,000 from the Department for Education (DfE) around the end of your first term training in England. You will not have to pay this money back. You can only receive the IRP once.
 
-<p class="call-to-action__action">
-  <a href="/get-an-international-relocation-payment">Apply for the<span> international relocation payment</span></a>
-</p>
+[Apply for the international relocation payment](/non-uk-teachers/-get-an-international-relocation-payment).
 
 ### Bursaries and scholarships for physics and languages
 
