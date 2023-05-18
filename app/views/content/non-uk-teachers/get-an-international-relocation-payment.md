@@ -134,7 +134,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 You must move to England no more than 3 months before the start of your course.   
 
-## Non-eligibility for trainee teachers 
+### Non-eligibility for trainee teachers 
 
 You will not be eligible for the international relocation payment if you are: 
 
@@ -164,9 +164,9 @@ If you have a place on a teacher training course where you are paid a salary to 
 
 To be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
 
-### Teaching subject
+### 1. Teaching subject
 
-1) You must have accepted a job as a teacher of languages or physics in an [English state secondary school](https://www.gov.uk/types-of-school) on a contract lasting at least one academic year.  
+You must have accepted a job as a teacher of languages or physics in an [English state secondary school](https://www.gov.uk/types-of-school) on a contract lasting at least one academic year.  
 
 a) Teachers of all languages offered in English state secondary schools are eligible to apply for the IRP. The language or languages can be combined with another subject, but must make up at least 50% of teaching time. You can combine teaching English with another language, as long as the non-English language makes up at least 50% of your teaching timetable.  
 
@@ -178,12 +178,10 @@ d) An academic year is 3 full school terms: for example, if your teaching job st
 
 Visit [Get information about schools](https://www.get-information-schools.service.gov.uk/) to check the type and age range of the school where you’ll be teaching. You can also find out about the [different types of schools in England](https://www.gov.uk/types-of-school). 
 
-### Type of visa
+### 2. Type of visa
 
-2) You must come to England on one of the visas listed here.  
-
-For the following visas, you must have applied for your visa from outside the UK:  
-
+You must come to England on one of the visas listed here.  
+ 
 For the following visas, you must have applied for your visa from outside the UK:  
 
 * [Skilled worker visa](https://www.gov.uk/skilled-worker-visa) 
@@ -210,11 +208,11 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) 
 
-### Date of arrival 
+### 3. Date of arrival 
 
-3) You must move to England no more than 3 months before the start of your job.  
+You must move to England no more than 3 months before the start of your job.  
 
-## Non-eligibility for teachers 
+### Non-eligibility for teachers 
 
 You will not be eligible for the international relocation payment if you are: 
 
@@ -224,7 +222,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * a non-UK citizen who moved to England to live permanently longer than 3 months before the start of your job 
 
-* teaching only English language and literature, or only English as a second or other language 
+* teaching only English language and literature
 
 * employed on a contract lasting less than one academic year 
 
