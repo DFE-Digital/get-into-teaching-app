@@ -88,7 +88,9 @@ If you are interested in moving to England to teach languages or physics in an E
 
 The international relocation payment (IRP) will be available to non-UK citizens starting work in English secondary schools in the academic year August/September 2023 to July 2024. If you are eligible, it will be paid around the end of your first term working in England. You will not have to pay this money back. You can only receive the IRP once.
 
-
+<p class="call-to-action__action">
+  <a href="/get-an-international-relocation-payment">Apply for the<span> international relocation payment</span></a>
+</p>
 
 ## Apply for qualified teacher status (QTS)
 
