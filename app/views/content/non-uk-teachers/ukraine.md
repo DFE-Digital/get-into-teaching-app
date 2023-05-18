@@ -8,7 +8,7 @@ related_content:
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-ukraine
-navigation: 20.50
+navigation: 20.60
 navigation_title: Ukrainian teachers and trainees coming to the UK
 navigation_description: Find information and advice for Ukrainian citizens seeking teaching jobs and training places in England.
 date: "2022-06-24"

@@ -7,7 +7,7 @@ related_content:
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
-navigation: 20.20
+navigation: 20.30
 navigation_title: Fees and funding for non-UK trainees
 navigation_description: Learn more about the costs of teacher training in England and eligibility for financial help
 date: "2021-05-27"
