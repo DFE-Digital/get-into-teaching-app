@@ -320,5 +320,3 @@ Talk to your training provider about:
 Citizens from other countries can also [find out more about eligibility for student finance](https://www.gov.uk/student-finance/who-qualifies).
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
-
-
