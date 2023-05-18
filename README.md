@@ -42,6 +42,7 @@ The website is deployed to GOV.UK PAAS. The environments can be confusing becaus
 - [Deployment](/docs/deployment.md)
 - [Monitoring](/docs/monitoring.md)
 - [Content](/docs/content.md)
+- [Codespaces](/docs/codespaces.md)
 - [Events Portal](/docs/events-portal.md)
 - [Disaster Recovery Plan](/docs/disaster-recovery.md)
 - [Sign Up Journeys](/docs/sign-up-journeys.md)

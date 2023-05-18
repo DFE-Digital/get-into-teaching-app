@@ -27,6 +27,7 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Main Navigation](#main-navigation)
 	* [Category Pages](#category-pages)
 5. [Build errors](#build-errors)
+6. [Internship providers](#internship-providers)
 
 ## Finding a Page/Content to Edit
 
@@ -427,3 +428,13 @@ This error means the filename contains one or more invalid characters.
 #### Resolution
 
 Check your filename only contains lower case characters, numbers and underscores.
+
+## Internship providers
+
+Occasionally we are sent a new spreadsheet to update the list of internship providers on the `teaching-internship-providers.csv` page. We have a rake task to make this easy to do:
+
+- Export the XLSX to CSV
+- Rename it `internship_providers.csv` and place it in the root application directory
+- Run `bundle exec rake csv_to_yaml:internship_providers`
+- Overwrite the regions in `teaching-internship-providers.csv` with the output of the task
+- Delete the `internship_providers.csv` file as you don't need to commit it
