@@ -8,7 +8,7 @@ related_content:
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-training-in-england
-navigation: 20.05
+navigation: 20.10
 navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
 date: "2021-05-27"
