@@ -3,9 +3,11 @@ title: "Get an international relocation payment worth £10,000"
 description: |-
   Non-UK teachers and trainees in physics and languages could be eligible for financial help from the UK government.
 related_content:
-    Career progression stories: "/blog/tag/career-progression"
-    Salaries and benefits of teaching in England : "/salaries-and-benefits"
-    A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
+    Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
+    Teach in England if you trained outside the UK: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
+    Apply for your visa to teach in England: "/non-uk-teachers/visas-for-non-uk-teachers"
+    Apply for your visa to train to teach in England: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
+
 promo_content:
 date: "2021-05-27"
 image: "static/content/hero-images/0002.jpg"
@@ -75,17 +77,17 @@ The process of applying for the international relocation payment is different fo
  
 ### The international relocation payment for trainee teachers  
 
-As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements:  
+As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
+
+#### 1. Teaching subject
  
-1) You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following: 
+You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following: 
 
 a) any secondary language or languages, including courses with content which is at least 50% languages. You can combine training to teach English with another language, as long as the non-English language makes up at least 50% of your course. 
 
-b) secondary physics, including: 
-(i) [Engineers teach physics](https://getintoteaching.education.gov.uk/subjects/engineers-teach-physics) 
-(ii) courses with content which is at least 50% physics 
+b) secondary physics, including [Engineers teach physics](https://getintoteaching.education.gov.uk/subjects/engineers-teach-physics), and courses with content which is at least 50% physics. 
 
-[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE + QTS or PGDE + QTS. 
+You can search for [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE + QTS or PGDE + QTS. 
 
 You can contact your teacher training provider to check: 
  
@@ -93,7 +95,9 @@ You can contact your teacher training provider to check:
 
 * the content of your teacher training course meets the 50% requirement 
 
-2) You must come to England on one of the visas listed here.  
+#### 2. Type of visa
+
+You must come to England on one of the visas listed here.  
 
 For the following visas, you must have applied for your visa from outside the UK:  
 
@@ -123,7 +127,9 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) 
 
-3) You must move to England no more than 3 months before the start of your course.   
+#### 3. Date of arrival
+
+You must move to England no more than 3 months before the start of your course.   
 
 ### Non-eligibility for trainee teachers 
 
@@ -153,7 +159,9 @@ If you have a place on a teacher training course where you are paid a salary to 
 
 ### The international relocation payment for teachers  
 
-To be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements:  
+To be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
+
+#### Teaching subject
 
 1) You must have accepted a job as a teacher of languages or physics in an [English state secondary school](https://www.gov.uk/types-of-school) on a contract lasting at least one academic year.  
 
@@ -166,6 +174,8 @@ c) State schools are funded by the UK government. Secondary schools teach childr
 d) An academic year is 3 full school terms: for example, if your teaching job started in September 2023 (the start of the autumn term), it would need to continue until July 2024 (covering the spring and summer terms). 
 
 Visit [Get information about schools](https://www.get-information-schools.service.gov.uk/) to check the type and age range of the school where you’ll be teaching. You can also find out about the [different types of schools in England](https://www.gov.uk/types-of-school). 
+
+#### Type of visa
 
 2) You must come to England on one of the visas listed here.  
 
@@ -196,6 +206,8 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 * [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa) 
 
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) 
+
+#### Date of arrival 
 
 3) You must move to England no more than 3 months before the start of your job.  
 
