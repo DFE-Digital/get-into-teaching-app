@@ -90,9 +90,55 @@ The IRP is designed to repay some of the relocation expenses of languages or phy
 
 If you are eligible, you’ll receive a single payment of £10,000 from the Department for Education (DfE) around the end of your first term training in England. You will not have to pay this money back. You can only receive the IRP once.
 
-<p class="call-to-action__action">
-  <a href="/get-an-international-relocation-payment">Apply <span>for the international relocation payment</span></a>
-</p>
+
+#### Check your eligibility for the IRP
+
+To be eligible, teacher trainees must meet all 3 of the following requirements.
+
+Firstly, you must have taken up a place on a teacher training course in England leading to [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government and you must be training to teach one of the following:
+
+* any secondary language or languages except English, including courses with content which is at least 50% languages 
+
+* secondary physics, including:
+
+  - [Engineers teach physics](/subjects/engineers-teach-physics) 
+  - courses with content which is at least 50% physics 
+
+[Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in languages and physics.
+   
+Secondly, you must come to England on one of the following visas:  
+
+* Skilled worker visa
+* Student visa 
+* Youth Mobility Scheme 
+* Family visa
+* UK Ancestry visa 
+* British National (Overseas) visa
+* High Potential Individual visa 
+* Afghan citizens resettlement scheme
+* Afghan Relocations and Assistance Policy
+* Ukraine Family Scheme visa
+* Ukraine Sponsorship Scheme
+
+Thirdly, you must move to England no more than 3 months before the start of your course.  
+
+You will not be eligible for the IRP if you are undergoing [assessment only QTS](/train-to-be-a-teacher/assessment-only-route-to-qts). 
+
+[Learn more about applying for a visa to train to teach in England](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa).
+
+#### How to get the IRP
+
+If you have a place on a teacher training course where you pay a fee, you do not need to apply for the IRP. Your training provider will email you if your choice of course makes you eligible for the IRP. Your visa status and date of arrival will be checked by DfE. If you meet the eligibility requirements, you’ll get the IRP around the end of your first term.
+
+If you have a place on a teacher training course where you are paid a salary to work while you train, email us at IRP.ExpressInterest@education.gov.uk to let us know you are interested in applying for the IRP. You will be asked to fill in a form giving us your details and we’ll get in touch when IRP applications open for salaried trainees in autumn 2023. If your application is successful, you’ll get the IRP around the end of your first term. 
+
+Please don't send us your CV or enquiries about teaching jobs, as DfE does not directly employ teachers or run training courses. Learn more about [training to teach](/non-uk-teachers/train-to-teach-in-england-as-an-international-student) or [working as a teacher](/non-uk-teachers/teach-in-england-if-you-trained-overseas) in England.
+
+You will not need to pay an agent or any other third party to complete your application. If you have had a message asking you to apply or contact someone about the IRP, treat it carefully as it could be a scam. [Find out what to do about suspicious messages](https://www.gov.uk/report-suspicious-emails-websites-phishing).
+
+#### Contact us
+
+For general enquiries about the IRP, please email us at teach.inengland@education.gov.uk.
 
 ### Bursaries and scholarships for physics and languages
 
