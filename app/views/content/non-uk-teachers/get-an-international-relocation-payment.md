@@ -1,5 +1,5 @@
 ---
-title: "Get an international relocation payment worth £10,000"
+title: "Get an international relocation payment (IRP) worth £10,000"
 description: |-
   Non-UK teachers and trainees in physics and languages could be eligible for financial help from the UK government.
 related_content:
@@ -54,6 +54,9 @@ keywords:
   - European
   - Settlement Scheme
 ---
+
+## Who is eligible
+
 The information on this page is for: 
 
 * non-UK teachers of languages and physics 
@@ -75,11 +78,11 @@ If you are eligible, you’ll receive a single payment of £10,000 from the Depa
 
 The process of applying for the international relocation payment is different for trainee teachers and teachers.  
  
-### The international relocation payment for trainee teachers  
+## The international relocation payment for trainee teachers  
 
 As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
 
-#### 1. Teaching subject
+### 1. Teaching subject
  
 You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following: 
 
@@ -95,7 +98,7 @@ You can contact your teacher training provider to check:
 
 * the content of your teacher training course meets the 50% requirement 
 
-#### 2. Type of visa
+### 2. Type of visa
 
 You must come to England on one of the visas listed here.  
 
@@ -127,11 +130,11 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) 
 
-#### 3. Date of arrival
+### 3. Date of arrival
 
 You must move to England no more than 3 months before the start of your course.   
 
-### Non-eligibility for trainee teachers 
+## Non-eligibility for trainee teachers 
 
 You will not be eligible for the international relocation payment if you are: 
 
@@ -145,23 +148,23 @@ You will not be eligible for the international relocation payment if you are:
 
 * studying to teach only English language and literature, or only English as a second or other language 
 
-### How trainee teachers can get the international relocation payment 
+## How trainee teachers can get the international relocation payment 
 
-#### Fee-paying trainees 
+### Fee-paying trainees 
 
 If you have a place on a teacher training course where you pay a fee, you do not need to apply for the international relocation payment (IRP). Your training provider will email you if your choice of course makes you eligible for the IRP. Your visa status and date of arrival will be checked by the Department for Education. If you are eligible, you’ll get the IRP around the end of your first term. 
 
 If you believe you meet the eligibility requirements, but have not been informed by your teacher training provider that you may be awarded the IRP, please contact your training provider directly first. If your training provider cannot help you, you can email us at teach.inengland@education.gov.uk. 
 
-#### Salaried trainees 
+### Salaried trainees 
 
 If you have a place on a teacher training course where you are paid a salary to work while you train, email us at IRP.ExpressInterest@education.gov.uk to let us know you are interested in applying for the IRP. You will be asked to fill in a form giving us your details and we’ll get in touch when IRP applications open for salaried trainees in autumn 2023. If you are eligible, you’ll get the IRP around the end of your first term. 
 
-### The international relocation payment for teachers  
+## The international relocation payment for teachers  
 
 To be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
 
-#### Teaching subject
+### Teaching subject
 
 1) You must have accepted a job as a teacher of languages or physics in an [English state secondary school](https://www.gov.uk/types-of-school) on a contract lasting at least one academic year.  
 
@@ -175,7 +178,7 @@ d) An academic year is 3 full school terms: for example, if your teaching job st
 
 Visit [Get information about schools](https://www.get-information-schools.service.gov.uk/) to check the type and age range of the school where you’ll be teaching. You can also find out about the [different types of schools in England](https://www.gov.uk/types-of-school). 
 
-#### Type of visa
+### Type of visa
 
 2) You must come to England on one of the visas listed here.  
 
@@ -207,11 +210,11 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) 
 
-#### Date of arrival 
+### Date of arrival 
 
 3) You must move to England no more than 3 months before the start of your job.  
 
-### Non-eligibility for teachers 
+## Non-eligibility for teachers 
 
 You will not be eligible for the international relocation payment if you are: 
 
@@ -227,7 +230,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * employed by a recruitment agency 
 
-### How teachers can apply for the international relocation payment 
+## How teachers can apply for the international relocation payment 
 
 You’ll need to have started your teaching job in a state secondary school to make your application for the international relocation payment (IRP). [Learn more about finding a teaching job and applying for your visa](https://getintoteaching.education.gov.uk/non-uk-teachers/teach-in-england-if-you-trained-overseas). 
 
