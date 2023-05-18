@@ -78,7 +78,7 @@ Teacher training in England is practical, hands-on and supportive. As an interna
 
 When you have successfully completed your training, you will be awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
 
-QTS will allow you to teach in all schools in England. 
+QTS will allow you to apply for teaching jobs in all schools in England.    
 
 [Read teachers' stories about the rewards of training to teach in England](/blog).
 
