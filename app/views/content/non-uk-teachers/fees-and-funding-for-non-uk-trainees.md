@@ -90,8 +90,9 @@ The IRP is designed to repay some of the relocation expenses of languages or phy
 
 If you are eligible, you’ll receive a single payment of £10,000 from the Department for Education (DfE) around the end of your first term training in England. You will not have to pay this money back. You can only receive the IRP once.
 
-
-
+<p class="call-to-action__action">
+  <a href="/get-an-international-relocation-payment">Apply for the<span> international relocation payment</span></a>
+</p>
 
 ### Bursaries and scholarships for physics and languages
 
@@ -121,6 +122,7 @@ You’ll also need at least one of the following:
 Each bursary scheme will have their own individual terms and conditions – contact your chosen teacher training provider for more information.
 
 The languages bursary covers all languages offered by accredited teacher training providers. If a course combines 2 subjects (for example, physics plus mathematics, or modern foreign languages plus English), the bursary subject must form at least 50% of the course content.
+
 
 
 #### Scholarships for physics, French, German and Spanish
