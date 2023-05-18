@@ -88,50 +88,7 @@ If you are interested in moving to England to teach languages or physics in an E
 
 The international relocation payment (IRP) will be available to non-UK citizens starting work in English secondary schools in the academic year August/September 2023 to July 2024. If you are eligible, it will be paid around the end of your first term working in England. You will not have to pay this money back. You can only receive the IRP once.
 
-$express-interest$
 
-### Check your eligibility for the IRP
-
-To be eligible, teachers must meet all 3 of the following requirements.
-
-Firstly, you must have accepted a languages or physics teaching job in an [English state secondary school](https://www.gov.uk/types-of-school) on a contract lasting at least one academic year. 
-
-Teachers of all languages (except English) offered in English state secondary schools are eligible to apply for the IRP. The language or languages can be combined with another subject, but must make up at least 50% of teaching time.
-
-Physics can be combined with another subject, but must make up at least 50% of teaching time. Teachers of general science are also eligible to apply for the IRP if they are teaching the physics elements of general science. It can be combined with another subject, but general science must make up at least 50% of teaching time.
-
-Secondly, you must come to England on one of the following visas: 
-
-* Skilled worker visa
-* Youth Mobility Scheme 
-* Family visa
-* UK Ancestry visa 
-* British National (Overseas) visa
-* High Potential Individual visa 
-* Afghan citizens resettlement scheme
-* Afghan Relocations and Assistance Policy
-* Ukraine Family Scheme visa
-* Ukraine Sponsorship Scheme
-
-
-Thirdly, you must move to England no more than 3 months before the start of your job. 
-
-
-### How to apply for the IRP
-
-You’ll need to have started your teaching job in a state secondary school to make your application – the guidance on this page explains how to find a teaching job and apply for your visa. 
-
-You will be able to apply for the IRP from 1 September to 31 October 2023. You can email us at IRP.ExpressInterest@education.gov.uk to let us know you are interested in applying for the IRP. You will be asked to fill in a form giving us your details and we’ll get in touch when IRP applications open. If your application is successful, you’ll receive the money around the end of your first school term of employment.
-
-For information about IRP applications in 2024, check back to this page.
-
-Please don't send us your CV or enquiries about teaching jobs, as DfE does not directly employ teachers. [Find a teaching job](#find-a-teaching-job).
-
-You will not need to pay an agent or any other third party to complete your application. If you have had a message asking you to apply or contact someone about the IRP, treat it carefully as it could be a scam. [Find out what to do about suspicious messages](https://www.gov.uk/report-suspicious-emails-websites-phishing).
-
-#### Contact us
-
-For general enquiries about the IRP, please email us at teach.inengland@education.gov.uk.
 
 ## Apply for qualified teacher status (QTS)
 
