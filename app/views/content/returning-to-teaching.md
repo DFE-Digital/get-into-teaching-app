@@ -81,7 +81,7 @@ The education sector promotes inclusivity and diversity. There are many organisa
 
 ## Get a return to teaching adviser
 
-If you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you want to return to teach at a secondary school in England, you could be eligible for a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/).
+If you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you want to return to teach at a secondary school in England, you could be eligible for a [return to teaching adviser](/tta-service).
 
 A return to teaching adviser can give you free one-to-one support with:
 

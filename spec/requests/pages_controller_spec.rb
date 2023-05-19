@@ -88,10 +88,10 @@ describe PagesController, type: :request do
       it { is_expected.to redirect_to "https://tta-service/" }
     end
 
-    context "with utm params" do
+    context "with query params" do
       before { get "/tta-service?utm_test=abc&test=def" }
 
-      it { is_expected.to redirect_to "https://tta-service/?utm_test=abc" }
+      it { is_expected.to redirect_to "https://tta-service/?test=def&utm_test=abc" }
     end
 
     context "when the get an adviser sign up is enabled" do
@@ -110,10 +110,10 @@ describe PagesController, type: :request do
         it { is_expected.to redirect_to teacher_training_adviser_step_path(:identity) }
       end
 
-      context "with utm params" do
+      context "with query params" do
         before { get "/tta-service?utm_test=abc&test=def" }
 
-        it { is_expected.to redirect_to teacher_training_adviser_step_path(:identity, utm_test: :abc) }
+        it { is_expected.to redirect_to teacher_training_adviser_step_path(:identity, utm_test: :abc, test: :def) }
       end
     end
   end
