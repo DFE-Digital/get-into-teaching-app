@@ -9,7 +9,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/eta-promo-internships
 quote_list:
   ql-1:
-    quotes: 
+    quotes:
       - heading: "Chloe, former teaching intern"
         text: "You’ll get the opportunity to experience a range of activities to help you get a feel for school life. Internships last 3 weeks, start in June and you’ll be paid £300 per week."
 backlink: /
@@ -27,8 +27,7 @@ provider_groups:
     - header: Creative Education Trust
       link: https://www.creativeeducationtrust.org.uk/internship
       subjects: chemistry, computing, maths, physics, languages
-      name: Claire Amed
-      email: Claire.amed@creativeeducationtrust.org.uk
+      status: Course full
     - header: George Spencer Academy
       link: http://www.george-spencer.com/
       subjects: chemistry, computing, maths, physics, languages
@@ -57,7 +56,7 @@ provider_groups:
       link: https://www.teachnottinghamshire.co.uk/internships.php
       subjects: chemistry, computing, maths, physics, languages
       name: Rebecca Morgan-Jones
-      email: contact@teachnottinghamshire.co.uk 
+      email: contact@teachnottinghamshire.co.uk
     - header: Outwood Institute of Education
       link: https://oie.outwood.com/latest-news/2023/2/8/outwood-institute-of-education-opens-applications-for-teaching-internship-programme
       subjects: chemistry, computing, maths, physics, languages
@@ -86,8 +85,7 @@ provider_groups:
     - header: Creative Education Trust
       link: https://www.creativeeducationtrust.org.uk/internship
       subjects: chemistry, computing, maths, physics, languages
-      name: Claire Amed
-      email: Claire.amed@creativeeducationtrust.org.uk
+      status: Course full
     - header: Debden Park High School (TKAT Teacher Training)
       link: https://scitt.tkat.org/842/internships
       subjects: chemistry, computing, maths, physics, languages
@@ -127,8 +125,7 @@ provider_groups:
     - header: The Hertfordshire and Essex High School
       link: https://www.hertsandessex.herts.sch.uk/teaching-internships/60636.html
       subjects: chemistry, computing, maths, physics, languages
-      name: Claire Ruthven
-      email: claire.ruthven@hertsandessex.herts.sch.uk
+      status: Course full
   London:
     providers:
     - header: Debden Park High School (TKAT Teacher Training)
@@ -224,7 +221,7 @@ provider_groups:
       subjects: chemistry, computing, maths, physics, languages
       name: Fazia Chowdhury
       email: F.Chowdhury@chorltonhigh.manchester.sch.uk
-    - header: Co-op Academies Trust 
+    - header: Co-op Academies Trust
       link: https://www.coopacademies.co.uk/teaching-internship/
       subjects: chemistry, computing, maths, physics, languages
       status: Course full
@@ -258,7 +255,7 @@ provider_groups:
       subjects: chemistry, computing, maths, physics, languages
       name: Janet Brierley
       email: j.brierley@brighouse.calderdale.sch.uk
-    - header: Wigan and West Lancashire Catholic School Direct 
+    - header: Wigan and West Lancashire Catholic School Direct
       link: https://www.catholicsd.org.uk/internships/
       subjects: chemistry, computing, maths, physics, languages
       name: Sarah Holland
@@ -354,8 +351,7 @@ provider_groups:
     - header: Arthur Terry SCITT
       link: https://arthurterryteachingschool.atlp.org.uk/teaching-internship-programme/
       subjects: chemistry, computing, maths, physics, languages
-      name: Robert Bloomfield
-      email: rbloomfield@arthurterry.bham.sch.uk
+      status: Course full
     - header: Barr Beacon SCITT
       link: https://bbscitt.co.uk/teaching-internships/
       subjects: chemistry, computing, maths, physics, languages
@@ -369,8 +365,7 @@ provider_groups:
     - header: Creative Education Trust
       link: https://www.creativeeducationtrust.org.uk/internship
       subjects: chemistry, computing, maths, physics, languages
-      name: Claire Amed
-      email: Claire.amed@creativeeducationtrust.org.uk
+      status: Course full
     - header: Ormiston Academies Trust
       link: https://www.ormistonacademiestrust.co.uk/careers-and-training/teaching-internships-programme/
       subjects: chemistry, computing, maths, physics, languages
