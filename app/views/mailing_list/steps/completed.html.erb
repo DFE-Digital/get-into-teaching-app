@@ -3,131 +3,192 @@
 <div data-sub-channel-id="<%= session.dig("mailinglist", "sub_channel_id") %>"></div>
 
 <% if have_degree_low_commitment? %>
-<h1 class="heading-l heading--box-green">You've signed up</h1>
+<section>
+    <h1 class="heading-l heading--box-green">You've signed up</h1>
 
-<p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
+    <p>
+        You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.
+    </p>
 
-<h2>What’s next?</h2>
+    <h2>What’s next?</h2>
 
-<h3> Continue your journey </h3>
+    <h3> Continue your journey </h3>
 
-<p>We’ve developed a <a href="/welcome"> helpful guide</a>, with advice, tips and stories from teachers who were once where you are now.</p>
+    <p>
+        We’ve developed a <a href="/welcome"> helpful guide</a>, with advice, tips and stories from teachers who were once where you are now.
+    </p>
+    
+    <h3> Get an adviser </h3>
 
-<h3> Get an adviser </h3>
-
-<p>Get <a href="/teacher-training-advisers"> free, one-to-one support from an adviser</a> with years of teaching experience. They can help with everything from deciding if teaching is right for you to how to apply. Chat by phone, text or email, as little or as often as you need.</p>
-
+    <p>
+        Get <a href="/teacher-training-advisers"> free, one-to-one support from an adviser</a> with years of teaching experience. They can help with everything from deciding if teaching is right for you to how to apply. Chat by phone, text or email, as little or as often as you need.
+    </p>
+</section>
 <% elsif have_degree_high_commitment? %>
+<section>
+    <h1 class="heading-l heading--box-green">You've signed up</h1>
 
-<h1 class="heading-l heading--box-green">You've signed up</h1>
+    <p>
+        You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.
+    </p>
 
-<p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
+    <h2>What’s next?</h2>
 
-<h2>What’s next?</h2>
+    <h3>Get an adviser</h3>
 
-<h3>Get an adviser</h3>
-
-<p>Maximise your chances of submitting a successful application by getting <a href="/teacher-training-advisers">free support from a dedicated adviser</a> with years of teaching experience.</p>
-
+    <p>
+        Maximise your chances of submitting a successful application by getting <a href="/teacher-training-advisers">free support from a dedicated adviser</a> with years of teaching experience.
+    </p>
+</section>
 <% elsif final_year_low_commitment? %>
+<section>
+    <h1 class="heading-l heading--box-green">You've signed up</h1>
 
-<h1 class="heading-l heading--box-green">You've signed up</h1>
+    <p>
+        You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.
+    </p>
 
-<p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
+    <h2>What’s next?</h2>
 
-<h2>What’s next?</h2>
+    <h3> Continue your journey </h3>
 
-<h3> Continue your journey </h3>
+    <p>
+        We’ve developed a <a href="/welcome"> helpful guide</a>, with advice, tips and stories from teachers who were once where you are now.
+    </p>
 
-<p>We’ve developed a <a href="/welcome"> helpful guide</a>, with advice, tips and stories from teachers who were once where you are now </p>
+    <h3> Get an adviser </h3>
 
-<h3> Get an adviser </h3>
-
-<p>Get <a href="/teacher-training-advisers"> free, one-to-one support from an adviser</a> with years of teaching experience. They can help with everything from deciding if teaching is right for you to how to apply. Chat by phone, text or email, as little or as often as you need.</p>
-
+    <p>
+        Get <a href="/teacher-training-advisers"> free, one-to-one support from an adviser</a> with years of teaching experience. They can help with everything from deciding if teaching is right for you to how to apply. Chat by phone, text or email, as little or as often as you need.
+    </p>
+</section>
 <% elsif final_year_high_commitment? %>
+<section>
+    <h1 class="heading-l heading--box-green">You've signed up</h1>
 
-<h1 class="heading-l heading--box-green">You've signed up</h1>
+    <p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
 
-<p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
+    <h2>What’s next?</h2>
 
-<h2>What’s next?</h2>
+    <h3> Get an adviser </h3>
 
-<h3> Get an adviser </h3>
-
-<p>Maximise your chances of submitting a successful application by getting <a href="/teacher-training-advisers">free support from a dedicated adviser</a> with years of teaching experience.</p>
-
+    <p>
+        Maximise your chances of submitting a successful application by getting <a href="/teacher-training-advisers">free support from a dedicated adviser</a> with years of teaching experience.
+    </p>
+</section>
 <% elsif first_or_second_year_low_commitment? %>
+<section>
+    <h1 class="heading-l heading--box-green">You've signed up</h1>
 
-<h1 class="heading-l heading--box-green">You've signed up</h1>
+    <p>
+        You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.
+    </p>
 
-<p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
+    <h2> What’s next?</h2>
 
-<h2> What’s next?</h2>
+    <p>
+        Find out if <a href="/is-teaching-right-for-me">teaching is right for you</a>, where it can lead and how you could inspire future generations.
+    </p>
 
-<p>Find out if <a href="/is-teaching-right-for-me">teaching is right for you</a>, where it can lead and how you could inspire future generations.</p>
-
-<p>Learn more about <a href="/steps-to-become-a-teacher">how to become a teacher</a> including the qualifications you need and your funding options.</p>
-
+    <p>
+        Learn more about <a href="/steps-to-become-a-teacher">how to become a teacher</a> including the qualifications you need and your funding options.
+    </p>
+</section>
 <% elsif first_or_second_year_high_commitment? %>
+<section>
+    <h1 class="heading-l heading--box-green">You've signed up</h1>
 
-<h1 class="heading-l heading--box-green">You've signed up</h1>
+    <p>
+        You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.
+    </p>
 
-<p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
+    <h2> What’s next?</h2>
 
-<h2> What’s next?</h2>
+    <p>
+        Learn more about <a href="/funding-and-support">funding and the financial support</a> available.
+    </p>
 
-<p>Learn more about <a href="/funding-and-support">funding and the financial support</a> available.</p>
+    <p>
+        Get your questions answered and speak to current teachers at an <a href="/events">an event near you or online</a>.
+    </p>
 
-<p> Get your questions answered and speak to current teachers at an <a href="/events">an event near you or online</a>.</p>
-
-<p>Get help to discover whether teaching is right for you with an <a href="/explore-teaching-advisers">explore teaching adviser</a> They can give you free support and one-to-one guidance as well as answering all your questions about what teaching is really like.</p>
+    <p>
+        Get help to discover whether teaching is right for you with an <a href="/explore-teaching-advisers">explore teaching adviser</a> They can give you free support and one-to-one guidance as well as answering all your questions about what teaching is really like.
+    </p>
+</section>
 
 <% elsif no_degree_low_commitment? %>
+<section>
+    <h1 class="heading-l heading--box-green">You've signed up</h1>
 
-<h1 class="heading-l heading--box-green">You've signed up</h1>
+    <p>
+        You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.
+    </p>
 
-<p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
+    <h2> What’s next?</h2>
 
-<h2> What’s next?</h2>
+    <p>
+        Find out if <a href="/is-teaching-right-for-me">teaching is right for you</a>, where it can lead and how you could inspire future generations.
+    </p>
 
-<p>Find out if <a href="/is-teaching-right-for-me">teaching is right for you</a>, where it can lead and how you could inspire future generations.</p>
-
-<p>Learn more about how to <a href="/train-to-be-a-teacher/if-you-dont-have-a-degree">train to be a teacher if you don’t have a degree</a>.</p>
+    <p>
+        Learn more about how to <a href="/train-to-be-a-teacher/if-you-dont-have-a-degree">train to be a teacher if you don’t have a degree</a>.
+    </p>
+</section>
 
 <% elsif no_degree_high_commitment? %>
+<section>
 
-<h1 class="heading-l heading--box-green">You've signed up</h1>
+    <h1 class="heading-l heading--box-green">You've signed up</h1>
 
-<p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
+    <p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
 
-<h2> What’s next?</h2>
+    <h2> What’s next?</h2>
 
-<p>Learn more about <a href="/train-to-be-a-teacher/if-you-dont-have-a-degree">train to be a teacher if you don’t have a degree</a>. </p>
+    <p>
+        Learn more about <a href="/train-to-be-a-teacher/if-you-dont-have-a-degree">train to be a teacher if you don’t have a degree</a>. 
+    </p>
 
-<p>Consider <a href="/become-a-further-education-teacher">teaching in further education/a> without a degree.</p>
+    <p>
+        Consider <a href="/become-a-further-education-teacher">teaching in further education/a> without a degree.
+    </p>
+</section>  
 
 <% elsif other_low_commitment? %>
+<section>
+    <h1 class="heading-l heading--box-green">You've signed up</h1>
 
-<h1 class="heading-l heading--box-green">You've signed up</h1>
+    <p>
+        You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.
+    </p>
 
-<p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
+    <h2> What’s next?</h2>
 
-<h2> What’s next?</h2>
+    <p>
+        Find out if <a href="/is-teaching-right-for-me">teaching is right for you</a>, where it can lead and how you could inspire future generations.
+    </p>
 
-<p>Find out if <a href="/is-teaching-right-for-me">teaching is right for you</a>, where it can lead and how you could inspire future generations.</p>
-
-<p>Learn more about <a href="/steps-to-become-a-teacher">how to become a teacher</a> including the qualifications you need and your funding options.</p>
+    <p>
+        Learn more about <a href="/steps-to-become-a-teacher">how to become a teacher</a> including the qualifications you need and your funding options.
+    </p>
+</section>
 
 <% elsif other_high_commitment? %>
+<section>
+    <h1 class="heading-l heading--box-green">You've signed up</h1>
 
-<h1 class="heading-l heading--box-green">You've signed up</h1>
+    <p>
+        You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.
+    </p>
 
-<p>You’ll get your first email shortly. If you change your mind, you can unsubscribe at any time.</p>
+    <h2>What’s next?</h2>
 
-<h2>What’s next?</h2>
+    <p>
+        Find out if <a href="/is-teaching-right-for-me">teaching is right for you</a>, where it can lead and how you could inspire future generations.
+    </p>
 
-<p>Find out if <a href="/is-teaching-right-for-me">teaching is right for you</a>, where it can lead and how you could inspire future generations.</p>
-
-<p>Learn more about <a href="/steps-to-become-a-teacher">how to become a teacher</a> including the qualifications you need and your funding options.</p>
+    <p>
+        Learn more about <a href="/steps-to-become-a-teacher">how to become a teacher</a> including the qualifications you need and your funding options.
+    </p>
+</section>
 <% end %>
