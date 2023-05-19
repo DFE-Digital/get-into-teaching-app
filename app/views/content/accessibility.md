@@ -77,7 +77,7 @@ This statement was prepared on 9 December 2022. It was last reviewed on 16 March
 
 This website was last tested independently on 4 May 2022. The test was carried out by Digital Accessibility Centre (DAC) Limited.
 
-We have commissioned the Digital Accessibility Centre (DAC) to carry out a WCAG 2.1 AA level technical compliance audit that also includes extensive manual testing.
+We are in the process of commissioning a further WCAG 2.1 AA level technical compliance audit, including comprehensive manual testing.
 
 The services/websites currently booked in for testing are:
 
