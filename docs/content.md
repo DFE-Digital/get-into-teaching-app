@@ -31,7 +31,7 @@ This documentation aims to be a reference for content editors that want to make 
 
 ## Finding a Page/Content to Edit
 
-When you want to edit content on the website the first step is to find out where that content resides in the [repository](https://github.com/DFE-Digital/get-into-teaching-app). 
+When you want to edit content on the website the first step is to find out where that content resides in the [repository](https://github.com/DFE-Digital/get-into-teaching-app).
 
 The majority of web pages on the site are within the [/app/views/content](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content) directory; this reflects the top-level pages of the website (including the home page). If, for example, you wanted to edit [the 'how to apply for teacher training' blog post](https://getintoteaching.education.gov.uk/blog) content you would edit the file [/app/views/content/blog/how-to-apply-for-teacher-training.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/blog/how-to-apply-for-teacher-training.md). The structure here mimics the URL of the pages (the home page is a special case):
 
@@ -49,7 +49,7 @@ If you are looking to edit content associated with a form element in particular 
 
 ## Content Editing Info/Tips
 
-The majority of pages on the website are formatted in Markdown, which is a lightweight markup language designed for creating and formatting text. 
+The majority of pages on the website are formatted in Markdown, which is a lightweight markup language designed for creating and formatting text.
 
 There is a [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) that serves as a good reference on how to standard formatting, such as making something **bold** or *italic*. In conjunction with page frontmatter (see below) we can do some extra GiT-specific things in our Markdown, which this section aims to explain.
 
@@ -200,7 +200,7 @@ The above example would render out as follows:
 When adding an iFrame elemet as part of Markdown content or a HTML page we should ensure it has an appropriate `title` attribute that explains the contents of the iFrame (in most of our cases we are showing a video). For example:
 
 ```
-<iframe 
+<iframe
   title="A video about returning to teaching"
   ...
 ></iframe>
@@ -394,7 +394,7 @@ The first step is finding out what the build error is:
 
 * Scroll down to the 'checks' section of your pull request.
 * Find the check that has failed (it will have a red cross next to it and there may be multiple) .
-* Open the 'details' link next to the check(s) that have failed and you should be automatically taken to the failure details, often highlighted in red. 
+* Open the 'details' link next to the check(s) that have failed and you should be automatically taken to the failure details, often highlighted in red.
 * Cross-reference this error with the errors below to discover the issue and resolution.
 
 ### A link to a heading on the same page is broken
@@ -431,10 +431,10 @@ Check your filename only contains lower case characters, numbers and underscores
 
 ## Internship providers
 
-Occasionally we are sent a new spreadsheet to update the list of internship providers on the `teaching-internship-providers.csv` page. We have a rake task to make this easy to do:
+Occasionally we are sent a new spreadsheet to update the list of internship providers on the `teaching-internship-providers.md` page. We have a rake task to make this easy to do:
 
 - Export the XLSX to CSV
 - Rename it `internship_providers.csv` and place it in the root application directory
 - Run `bundle exec rake csv_to_yaml:internship_providers`
-- Overwrite the regions in `teaching-internship-providers.csv` with the output of the task
+- Overwrite the regions in `teaching-internship-providers.md` with the output of the task
 - Delete the `internship_providers.csv` file as you don't need to commit it
