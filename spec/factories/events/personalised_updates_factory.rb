@@ -13,8 +13,7 @@ FactoryBot.define do
     address_postcode { "TE57 1NG" }
 
     preferred_teaching_subject_id do
-      GetIntoTeachingApiClient::LookupItemsApi.new
-        .get_teaching_subjects.first.id
+      Crm::TeachingSubject.all.first.id
     end
   end
 end

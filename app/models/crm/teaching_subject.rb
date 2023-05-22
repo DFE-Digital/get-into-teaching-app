@@ -43,14 +43,11 @@ class Crm::TeachingSubject
     end
 
     def all_hash
-      all.reduce({}) do |hash, subject|
-        hash[subject.value] = subject.id
-        hash
-      end
+      all.to_h {|item| [item.value, item.id] }
     end
 
     def all_without_primary
-      all.reject { |s| s.id == PRIMARY }
+      all_hash.reject { |h, s| s == PRIMARY }
     end
 
     def all

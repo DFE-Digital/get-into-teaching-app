@@ -336,7 +336,7 @@ RSpec.feature "Event wizard", type: :feature do
     {
       degree_status_id: 222_750_000,
       consideration_journey_stage_id: 222_750_000,
-      preferred_teaching_subject_id: Crm::TeachingSubject.lookup_by_key(:art),
+      preferred_teaching_subject_id: Crm::TeachingSubject.lookup_by_key(:art_and_design),
       address_postcode: "TE57 1NG",
     }
   end

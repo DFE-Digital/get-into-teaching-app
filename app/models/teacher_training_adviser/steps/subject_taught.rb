@@ -5,7 +5,7 @@ module TeacherTrainingAdviser::Steps
     validates :subject_taught_id, lookup_items: { method: :get_teaching_subjects }
 
     def self.options
-      Crm::TeachingSubject.all
+      Crm::TeachingSubject.all_hash
     end
 
     def skipped?
@@ -14,7 +14,7 @@ module TeacherTrainingAdviser::Steps
 
     def reviewable_answers
       super.tap do |answers|
-        answers["subject_taught_id"] = self.class.options.key(subject_taught_id)
+        answers["subject_taught_id"] = Crm::TeachingSubject.lookup_by_uuid(subject_taught_id)
       end
     end
   end

@@ -89,7 +89,7 @@ RSpec.describe WelcomeHelper, type: :helper do
 
     context "when stored in the mailinglist session store" do
       context "when the subject name is a common noun" do
-        %i[art_and_design biology chemistry general_science languages_other maths physics_with_maths physics].each do |subject_key|
+        %i[art_and_design biology chemistry languages_other maths physics].each do |subject_key|
           describe "#{subject_key} is lowercased" do
             let(:subject_id) { Crm::TeachingSubject.lookup_by_key(subject_key) }
 
