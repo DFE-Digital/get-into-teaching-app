@@ -22,7 +22,7 @@ keywords:
     - Disabled Students’ Allowances
 inset_text:
   international-content:
-    text: Most non-UK citizens without settled immigration status in the UK will not be eligible for this financial support (unless you’ve applied to the Afghan or Ukraine resettlement schemes). You will still be entitled to adjustments to help you train. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.
+    text: Most non-UK citizens without <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a> will not be eligible for this financial support (unless you’ve applied to the Afghan or Ukraine resettlement schemes). You will still be entitled to adjustments to help you train. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.
     color: grey
 ---
 
