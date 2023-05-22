@@ -1,10 +1,5 @@
-@mixin input-focus {
-  outline-color: $pink;
-  outline-offset: 2px;
-}
-
-select.govuk-select,
-input.govuk-input {
+select,
+input {
   @include font-size("small");
   margin-left: $indent-amount;
   margin-right: $indent-amount;
@@ -14,15 +9,11 @@ input.govuk-input {
   width: 100%;
 
   &:focus {
-    @include input-focus;
+    outline: 3px solid $yellow;
+    outline-offset: 0;
     -webkit-box-shadow: inset 0 0 0 2px;
     box-shadow: inset 0 0 0 2px;
   }
-}
-
-input.govuk-radios__input:focus + .govuk-radios__label:before {
-  @include input-focus;
-  box-shadow: none;
 }
 
 input {
