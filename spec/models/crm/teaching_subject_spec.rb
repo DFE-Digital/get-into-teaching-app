@@ -2,6 +2,21 @@ require "rails_helper"
 
 describe Crm::TeachingSubject do
   describe "class_methods" do
+    let(:stubbed_subjects) do
+      [
+        GetIntoTeachingApiClient::TeachingSubject.new(
+          id: "ac2655a1-2afa-e811-a981-000d3a276620", value: "Physics"
+        ),
+        GetIntoTeachingApiClient::TeachingSubject.new(
+          id: "a22655a1-2afa-e811-a981-000d3a276620", value: "Languages (other)"
+        ),
+      ]
+    end
+
+    before do
+      allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to receive(:get_teaching_subjects) { stubbed_subjects }
+    end
+
     describe ".lookup_by_key" do
       it { expect(described_class.lookup_by_key(:physics)).to eq("ac2655a1-2afa-e811-a981-000d3a276620") }
       it { expect(described_class.lookup_by_key(:languages_other)).to eq("a22655a1-2afa-e811-a981-000d3a276620") }
@@ -28,7 +43,7 @@ describe Crm::TeachingSubject do
 
       it { is_expected.to include({ physics: "ac2655a1-2afa-e811-a981-000d3a276620" }) }
       it { is_expected.to include({ languages_other: "a22655a1-2afa-e811-a981-000d3a276620" }) }
-      it { expect(keyed_subjects.count).to eq(described_class::ALL.count) }
+      it { expect(keyed_subjects.count).to eq(described_class::all.count) }
     end
 
     describe ".key_with_uuid" do
@@ -40,18 +55,13 @@ describe Crm::TeachingSubject do
     describe ".all_uuids" do
       subject { described_class.all_uuids }
 
-      it { is_expected.to eq(described_class::ALL.values) }
+      it { is_expected.to eq(described_class::all_hash.values) }
     end
 
     describe ".all_subjects" do
       subject { described_class.all_subjects }
 
-      it { is_expected.to eq(described_class::ALL.keys) }
-    end
-
-    describe ".ignore?" do
-      it { expect(described_class).to be_ignore(described_class::IGNORED.values.sample) }
-      it { expect(described_class).not_to be_ignore(described_class.all_uuids.sample) }
+      it { is_expected.to eq(described_class::all_hash.keys) }
     end
   end
 end
