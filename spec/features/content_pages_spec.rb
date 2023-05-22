@@ -77,6 +77,15 @@ RSpec.feature "content pages check", type: :feature, content: true do
       end
     end
 
+    scenario "there are no absolute adviser URL links" do
+      @stored_pages.each do |sp|
+        sp.body
+          .css("a")
+          .map { |fragment| fragment["href"] }
+          .each { |href| expect(href.to_s).not_to include("adviser-getintoteaching.education.gov.uk") }
+      end
+    end
+
     scenario "the internal images exist" do
       images = []
       @stored_pages.each do |sp|

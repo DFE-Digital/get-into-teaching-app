@@ -38,7 +38,7 @@ When we briefly returned to the UK before another posting to Belgium, I voluntee
 
 In our final year in Belgium, I contacted my teacher friends who suggested some reading that would help me catch up on changes to the curriculum and new ideas on teaching practice.
 
-I also came across the [Return to Teaching Adviser Support Service](/returning-to-teaching) and spoke with Billy Bone, a [Return to Teaching Adviser](https://adviser-getintoteaching.education.gov.uk/), who was able to answer most of my questions about the practicalities of returning to the classroom. It was great to be in touch with someone to chat about it all. I joined their [Facebook group](https://www.facebook.com/groups/1120861644690211), which had some interesting tips, training and live information events which were great to watch.
+I also came across the [Return to Teaching Adviser Support Service](/returning-to-teaching) and spoke with Billy Bone, a [Return to Teaching Adviser](/tta-service), who was able to answer most of my questions about the practicalities of returning to the classroom. It was great to be in touch with someone to chat about it all. I joined their [Facebook group](https://www.facebook.com/groups/1120861644690211), which had some interesting tips, training and live information events which were great to watch.
 
 I spent some time on LinkedIn introducing myself to local headteachers in London. One of them was keen to speak with me further and invited me to visit the school on my return. This went well, and they were in touch a month later to tell me they had an opening.
 
