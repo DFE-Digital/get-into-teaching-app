@@ -10,7 +10,7 @@ module TeacherTrainingAdviser::Steps
 
     def reviewable_answers
       super.tap do |answers|
-        answers["preferred_teaching_subject_id"] = self.class.options.key(preferred_teaching_subject_id)
+        answers["preferred_teaching_subject_id"] = Crm::TeachingSubject.lookup_by_uuid(preferred_teaching_subject_id)
       end
     end
 

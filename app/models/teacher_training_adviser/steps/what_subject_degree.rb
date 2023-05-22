@@ -5,7 +5,7 @@ module TeacherTrainingAdviser::Steps
     validates :degree_subject, presence: true
 
     def self.options
-      Crm::TeachingSubject.all
+      Crm::TeachingSubject.all_hash
     end
 
     def skipped?

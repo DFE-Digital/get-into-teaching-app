@@ -35,6 +35,7 @@ shared_context "with a TTA wizard step" do
   end
 end
 
+
 shared_context "with wizard data" do
   let(:degree_status_option_types) do
     Crm::OptionSet::DEGREE_STATUSES.map do |k, v|
@@ -49,7 +50,7 @@ shared_context "with wizard data" do
   end
 
   let(:teaching_subject_types) do
-    Crm::TeachingSubject::ALL.map do |k, v|
+    Crm::TeachingSubject::all_hash.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
