@@ -761,7 +761,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "We're sorry, but you need a degree to be eligible for an adviser"
+      expect(page).to have_css "h1", text: "We're sorry, but you need a degree to sign up for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
 
@@ -808,7 +808,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to be eligible for an adviser"
+      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to sign up for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
 
@@ -847,7 +847,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to be eligible for an adviser"
+      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to sign up for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
 
@@ -886,7 +886,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to be eligible for an adviser"
+      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to sign up for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
 
