@@ -17,9 +17,7 @@ module MailingList
     private
 
       def query_teaching_subjects
-        GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects.reject do |type|
-          Crm::TeachingSubject.ignore?(type.id)
-        end
+        Crm::TeachingSubject.all
       end
     end
   end
