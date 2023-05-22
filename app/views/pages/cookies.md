@@ -64,20 +64,6 @@ gather this data.
 | `UA-179982899-1` | Registers a unique ID to generate statistics about how you use the website       | 1 minute |
 | `_gid`           | Helps count how many people visit this site by tracking if you’ve visited before | 24 hours |
 
-#### Hotjar cookies
-
-| Name                           | Purpose                                                                                          | Expires after          |
-| -----                          | -------                                                                                          | --------               |
-| `_hjid`                        | Registers a unique ID to generate statistics abouthow you use the website.                       | 365 days               |
-| `_hjRecordingLastActivity`     | Gets updated when a visitor recording starts and when you perform an action that Hotjar records. | End of browser session |
-| `_hjTLDTest`                   | Used to determine where cookies will be stored. After this check, the cookie is removed.         | End of browser session |
-| `_hjUserAttributesHash`        | Holds information about your visit so your information can be kept up to date.                   | End of browser session |
-| `_hjCachedUserAttributes`      | Stores User Attributes which are sent whenever the user is not in the sample.                    | End of browser session |
-| `_hjLocalStorageTest`          | Used to check if the Hotjar Tracking Script can use local storage.                               | Under 100ms            |
-| `_hjIncludedInPageviewSample`  | Lets Hotjar know whether you are included in data sampling.                                      | 30 minutes             |
-| `_hjIncludedInSessionSample`   | Set to let Hotjar know whether you are included in data sampling.                                | 30 minutes             |
-| `_hjAbsoluteSessionInProgress` | Used to detect your first pageview session.                                                      | 30 Minutes             |
-
 ### Marketing
 
 We use cookies to make our marketing more engaging and relevant to
