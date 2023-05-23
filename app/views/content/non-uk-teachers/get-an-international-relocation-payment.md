@@ -142,11 +142,11 @@ You will not be eligible for the international relocation payment if you are:
 
 * an Irish citizen 
 
-* a non-UK citizen who moved to England to live permanently longer than 3 months before the start of your course 
+* a non-UK citizen who moved to England to live permanently more than 3 months before the start of your course 
 
 * doing an assessment only QTS 
 
-* studying to teach only English language and literature, or only English as a second or other language 
+* training to teach only English language and literature
 
 ## How trainee teachers can get the international relocation payment 
 
@@ -166,17 +166,17 @@ To be eligible for the international relocation payment (IRP), you must meet all
 
 ### 1. Teaching subject
 
-You must have accepted a job as a teacher of languages or physics in an [English state secondary school](https://www.gov.uk/types-of-school) on a contract lasting at least one academic year.  
+You must have accepted a job as a teacher of languages or physics in an English state secondary school on a contract lasting at least one academic year.  
 
 a) Teachers of all languages offered in English state secondary schools are eligible to apply for the IRP. The language or languages can be combined with another subject, but must make up at least 50% of teaching time. You can combine teaching English with another language, as long as the non-English language makes up at least 50% of your teaching timetable.  
 
 b) Physics can be taught with another subject, but must make up at least 50% of teaching time. Teachers of general science or combined science  are also eligible to apply for the IRP, as long as they are teaching the physics element of general science or combined science. General science or combined science can be taught with another subject, but must make up at least 50% of teaching time.  
 
-c) State schools are funded by the UK government. Secondary schools teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
+c) 'State schools' are schools funded by the UK government. 'Secondary schools' teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
 
 d) An academic year is 3 full school terms: for example, if your teaching job started in September 2023 (the start of the autumn term), it would need to continue until July 2024 (covering the spring and summer terms). 
 
-Visit [Get information about schools](https://www.get-information-schools.service.gov.uk/) to check the type and age range of the school where you’ll be teaching. You can also find out about the [different types of schools in England](https://www.gov.uk/types-of-school). 
+Visit [Get information about schools](https://www.get-information-schools.service.gov.uk/) to check the type and age range of the school where you’ll be teaching. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school). 
 
 ### 2. Type of visa
 
@@ -220,7 +220,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * an Irish citizen 
 
-* a non-UK citizen who moved to England to live permanently longer than 3 months before the start of your job 
+* a non-UK citizen who moved to England to live permanently more than 3 months before the start of your job 
 
 * teaching only English language and literature
 
@@ -244,9 +244,9 @@ Further information for both trainees and teachers.
 
 Teachers and salaried trainee teachers will not need to pay an agent or any other third party to complete their application. Any agency or person contacting you offering to apply for the IRP on your behalf is likely to be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing). 
 
-### Visiting England outside the 3-month time frame 
+### Visiting England more than 3 months before the start of your course or job 
 
-Your eligibility for the international relocation payment (IRP) will not be affected if you spend short periods in England outside the 3-month time frame. 
+Your eligibility for the international relocation payment (IRP) will not be affected if you spend short periods in England at a time more than 3 months before the start of your course or job. 
 
 Example 1: You attend a job interview in England under a Standard Visitor visa in May 2023. You return home, and learn you have been given the job, which starts in September 2023. You apply for a Skilled worker visa in June 2023, 3 months before the start of your job. You move to England in July 2023. You will still be eligible for the IRP. 
 
@@ -262,7 +262,7 @@ The international relocation payment (IRP) has been limited to languages and phy
 
 ### Payment 
 
-Eligibility requirement checks can only be completed after you’ve arrived in England; therefore, the international relocation payment (IRP) cannot be made before you take up your teacher training place or teaching job. 
+Eligibility requirement checks can only be completed after you’ve arrived in England. Therefore, the international relocation payment (IRP) cannot be made before you take up your teacher training place or teaching job. 
 
 In order to be paid the IRP, you must have a UK bank account (this can be digital). If you are a teacher or a salaried teacher trainee, you must also have a [UK National Insurance number](https://www.gov.uk/apply-national-insurance-number). You can apply for this once you arrive in England, as long as your visa gives you the right to work and you have a confirmed job.  
 
@@ -286,7 +286,7 @@ Once you have received the international relocation payment, you will not be ask
 
 ### Other types of financial support from the UK government  
 
-If they meet the eligibility requirements, teachers and newly qualified trainees can also apply for the following payments in addition to the international relocation payment (IRP) : 
+Teachers and newly qualified trainees who meet the eligibility requirements can also apply for the following payments in addition to the international relocation payment (IRP): 
 
 * [the levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers)  
 * [early career payments](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools)  
