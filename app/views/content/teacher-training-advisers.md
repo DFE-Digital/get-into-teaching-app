@@ -103,7 +103,7 @@ $ql-2$
 
 ## Can I get an adviser?
 
-To sign up you’ll need to have, or be in your final year of studying for, a bachelor's degree with honours. This needs to be a grade 2:2 or higher (or an equivalent).
+To sign up you’ll need to have, or be in your final year of studying for, a bachelor's degree with honours. You'll need to have or be predicted a grade 2:2 or higher (or an equivalent).
 
 If you're already a qualified teacher, you'll need English qualified teacher status (QTS) and want to teach a secondary subject.
 
