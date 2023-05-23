@@ -5,10 +5,10 @@ describe Crm::TeachingSubject do
     let(:stubbed_subjects) do
       [
         GetIntoTeachingApiClient::TeachingSubject.new(
-          id: "ac2655a1-2afa-e811-a981-000d3a276620", value: "Physics"
+          id: "ac2655a1-2afa-e811-a981-000d3a276620", value: "Physics",
         ),
         GetIntoTeachingApiClient::TeachingSubject.new(
-          id: "a22655a1-2afa-e811-a981-000d3a276620", value: "Languages (other)"
+          id: "a22655a1-2afa-e811-a981-000d3a276620", value: "Languages (other)",
         ),
       ]
     end
@@ -43,7 +43,7 @@ describe Crm::TeachingSubject do
 
       it { is_expected.to include({ physics: "ac2655a1-2afa-e811-a981-000d3a276620" }) }
       it { is_expected.to include({ languages_other: "a22655a1-2afa-e811-a981-000d3a276620" }) }
-      it { expect(keyed_subjects.count).to eq(described_class::all.count) }
+      it { expect(keyed_subjects.count).to eq(described_class.all.count) }
     end
 
     describe ".key_with_uuid" do
@@ -55,13 +55,13 @@ describe Crm::TeachingSubject do
     describe ".all_uuids" do
       subject { described_class.all_uuids }
 
-      it { is_expected.to eq(described_class::all_hash.values) }
+      it { is_expected.to eq(described_class.all_hash.values) }
     end
 
     describe ".all_subjects" do
       subject { described_class.all_subjects }
 
-      it { is_expected.to eq(described_class::all_hash.keys) }
+      it { is_expected.to eq(described_class.all_hash.keys) }
     end
   end
 end

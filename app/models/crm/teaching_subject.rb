@@ -1,6 +1,6 @@
 class Crm::TeachingSubject
   RENAMED = {
-    "Media studies" => "Communication and media studies"
+    "Media studies" => "Communication and media studies",
   }.freeze
   PRIMARY = "b02655a1-2afa-e811-a981-000d3a276620".freeze
   IGNORED =
@@ -13,7 +13,7 @@ class Crm::TeachingSubject
       "No Preference" => "bc68e0c1-7212-e911-a974-000d3a206976",
     }.freeze
 
-    class << self
+  class << self
     def lookup_by_key(key)
       keyed_subjects.fetch(key)
     end
@@ -43,19 +43,15 @@ class Crm::TeachingSubject
     end
 
     def all_hash
-      all.to_h {|item| [item.value, item.id] }
+      all.to_h { |item| [item.value, item.id] }
     end
 
     def all_without_primary
-      all_hash.reject { |h, s| s == PRIMARY }
+      all_hash.reject { |_h, s| s == PRIMARY }
     end
 
     def all
-      GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects.reject do |subject|
-        IGNORED.value?(subject.id)
-      end.each do |subject|
-        subject.value = RENAMED[subject.value] if subject && RENAMED[subject.value].present?
-      end
+      GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects.reject { |subject| IGNORED.value?(subject.id) }.each { |subject| if subject && RENAMED[subject.value].present? then subject.value = RENAMED[subject.value]; end; }
     end
   end
 end
