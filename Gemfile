@@ -54,7 +54,7 @@ gem "faraday_middleware"
 
 gem "fastimage"
 
-gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.8.0"
+gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", ref: "75d7fb70769e45c2d6ad79fa234d2310d94c3dda"
 
 gem "hashids"
 
