@@ -51,7 +51,7 @@ class Crm::TeachingSubject
     end
 
     def all
-      GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects.reject { |subject| IGNORED.value?(subject.id) }.each { |subject| if subject && RENAMED[subject.value].present? then subject.value = RENAMED[subject.value]; end; }
+      GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects.reject { |subject| IGNORED.value?(subject.id) }.each { |subject| if subject && RENAMED[subject.value].present? then subject.value = RENAMED[subject.value]; end; }.sort_by { |f| [f.value] }
     end
   end
 end

@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe Crm::TeachingSubject do
   describe "class_methods" do
-    let(:stubbed_subjects) do
+    let!(:stubbed_subjects) do
       [
         GetIntoTeachingApiClient::TeachingSubject.new(
           id: "ac2655a1-2afa-e811-a981-000d3a276620", value: "Physics",
@@ -62,6 +62,10 @@ describe Crm::TeachingSubject do
       subject { described_class.all_subjects }
 
       it { is_expected.to eq(described_class.all_hash.keys) }
+    end
+
+    specify "orders the array by name" do
+      expect(described_class.all).to eq(stubbed_subjects.reverse)
     end
   end
 end
