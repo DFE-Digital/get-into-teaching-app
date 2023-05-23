@@ -8,7 +8,7 @@ describe MailingList::Steps::Subject do
   end
 
   let(:teaching_subject_types) do
-    Crm::TeachingSubject::all_hash.map { |k, v| GetIntoTeachingApiClient::TeachingSubject.new({ id: v, value: k }) }
+    Crm::TeachingSubject.all_hash.map { |k, v| GetIntoTeachingApiClient::TeachingSubject.new({ id: v, value: k }) }
   end
 
   it_behaves_like "a with wizard step"
@@ -29,7 +29,7 @@ describe MailingList::Steps::Subject do
     subject { instance.teaching_subject_ids }
 
     let(:teaching_subject_types) do
-      subjects = Crm::TeachingSubject::all_hash.merge(Crm::TeachingSubject::IGNORED)
+      subjects = Crm::TeachingSubject.all_hash.merge(Crm::TeachingSubject::IGNORED)
       subjects.map { |k, v| GetIntoTeachingApiClient::TeachingSubject.new({ id: v, value: k }) }
     end
 
