@@ -87,7 +87,7 @@ There are 3 types of financial support you can get if you’re interested in tra
 
 If you are eligible, you can receive both an international relocation payment and a bursary or scholarship. You cannot receive both a bursary and a scholarship.
 
-### Get an international relocation payment (IRP) worth £10,000
+## Get an international relocation payment (IRP) worth £10,000
 
 The IRP is designed to repay some of the relocation expenses of languages or physics teacher trainees moving to England. 
 
@@ -95,7 +95,7 @@ If you are eligible, you’ll receive a single payment of £10,000 from the Depa
 
 [Apply for the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
 
-### Bursaries and scholarships for physics and languages
+## Bursaries and scholarships for physics and languages
 
 Bursaries and scholarships are cash sums from the UK government that you do not have to pay back. Bear in mind that:
 
@@ -123,8 +123,6 @@ You’ll also need at least one of the following:
 Each bursary scheme will have their own individual terms and conditions – contact your chosen teacher training provider for more information.
 
 The languages bursary covers all languages offered by accredited teacher training providers. If a course combines 2 subjects (for example, physics plus mathematics, or modern foreign languages plus English), the bursary subject must form at least 50% of the course content.
-
-
 
 #### Scholarships for physics, French, German and Spanish
 
@@ -157,7 +155,7 @@ You can check if you’re eligible for a scholarship and apply by visiting:
 
 If you have the right [immigration status](#check-your-immigration-status-and-eligibility-for-financial-support), you could be eligible for the following types of financial help from the UK government.
 
-Tuition fees and maintenance loans are only available for courses where you pay a fee to study teacher training.
+Tuition fees and maintenance loans are only available for courses where you pay a fee to train to teach.
 
 ### Tuition fee loan
 Your tuition fees are paid in full, with the money going directly to your teacher training provider. This is a loan you have to pay back, but you’ll only start your repayments when your income is over a certain amount – for the 2023 to 2024 financial year, this is £24,996 per year.
