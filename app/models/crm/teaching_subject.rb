@@ -51,7 +51,20 @@ class Crm::TeachingSubject
     end
 
     def all
-      GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects.reject { |subject| IGNORED.value?(subject.id) }.each { |subject| if subject && RENAMED[subject.value].present? then subject.value = RENAMED[subject.value]; end; }.sort_by { |f| [f.value] }
+      GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects
+        .sort_by(&:value)
+        .reject(&method(:ignored?))
+        .each(&method(:rename))
+    end
+
+  private
+
+    def rename(subject)
+      subject.value = RENAMED[subject.value] || subject.value
+    end
+
+    def ignored?(subject)
+      IGNORED.value?(subject.id)
     end
   end
 end
