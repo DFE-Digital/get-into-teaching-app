@@ -236,8 +236,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Complete sign up"
 
       expect(page).to have_css "h1", text: "John, you're signed up."
-      expect(page).to have_text "A return to teaching adviser will email you to outline your next steps"
-      expect(page).to have_text "read further information on our dedicated return to teaching page"
+      expect(page).to have_text "A return to teaching adviser will email you within 3 working days to outline your next steps"
+      expect(page).to have_text "Get support returning to teaching"
       expect(page).not_to have_text "Discover the different ways to train"
       expect(page).not_to have_text "Find out about funding"
     end
@@ -732,7 +732,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       # Hit dead end
-      expect(page).to have_css "h1", text: "We're sorry, but you are not eligible for this service"
+      expect(page).to have_css "h1", text: "We're sorry, but you are not eligible for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
 
       # Manually skip to review answers
@@ -742,7 +742,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Complete sign up"
 
       # Forced back to dead end
-      expect(page).to have_css "h1", text: "We're sorry, but you are not eligible for this service"
+      expect(page).to have_css "h1", text: "We're sorry, but you are not eligible for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
 
@@ -761,7 +761,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "We're sorry, but you need a degree to be eligible for this service"
+      expect(page).to have_css "h1", text: "We're sorry, but you need a degree to sign up for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
 
@@ -808,7 +808,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to be eligible for this service"
+      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to sign up for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
 
@@ -847,7 +847,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to be eligible for this service"
+      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to sign up for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
 
@@ -886,7 +886,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to be eligible for this service"
+      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to sign up for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
 
@@ -905,7 +905,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Primary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "We're sorry, but you are not eligible for this service"
+      expect(page).to have_css "h1", text: "We're sorry, but you are not eligible for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
   end

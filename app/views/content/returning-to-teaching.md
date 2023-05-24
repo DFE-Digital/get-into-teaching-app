@@ -52,6 +52,10 @@ youtube_video:
   return-to-teaching-advisers-video:
     id: 2NrLm_XId4k
     title: A video about what Return to Teaching Advisers do
+inset_text:
+  international-content:
+    text: If you qualified as a teacher outside the UK, you must have English qualified teacher status (QTS) to get an adviser. <a href="tel:08003892500">Call us on 0800 389 2500 to check if you're eligible for an adviser</a>.
+    color: grey
 ---
 
 Returning to teaching can be easier than you expect.
@@ -83,15 +87,17 @@ The education sector promotes inclusivity and diversity. There are many organisa
 
 If you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you want to return to teach at a secondary school in England, you could be eligible for a [return to teaching adviser](/tta-service).
 
-A return to teaching adviser can give you free one-to-one support with:
+They can give you free one-to-one support with:
 
 * the applications process, such as writing personal statements and preparing for interviews
 * accessing courses to enhance your subject knowledge or teaching practice, such as national professional qualifications (NPQs)
 * finding teaching vacancies
 
-Chat to your adviser by phone, text or email, as little or as often as you need.
+You can chat by phone, text or email, as little or as often as you need.
 
 Return to teaching advisers also run [events to support returners](/events).
+
+$international-content$
 
 $return-to-teaching-advisers-video$
 

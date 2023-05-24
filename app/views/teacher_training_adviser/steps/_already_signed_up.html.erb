@@ -1,16 +1,16 @@
-<% @page_title = "You have already signed up to this service" %>
+<% @page_title = "You have already signed up for an adviser" %>
 
 <div class="govuk-form-group">
-  <h1>You have already signed up to this service</h1>
+  <h1>You've already signed up</h1>
 
-  <p>The email address <%= mail_to(session["sign_up"]["email"], nil) %> has already been used to sign up for the Get an adviser service.</p>
+  <p>The email address <%= mail_to(session["sign_up"]["email"], nil) %> has already been used to sign up for an adviser.</p>
 
   <h2 class="heading-m">Waiting to hear from your adviser?</h2>
 
-  <p>If you’ve already signed up for an adviser, they should get in touch with you by email within 5 working days.</p>
+  <p>They should email you within 3 working days.</p>
 
   <p>Make sure you check your junk or spam folders.</p>
 
-  <p>If you do not hear anything from an adviser within 5 working days, you can contact us using the details below.</p>
+  <p>If you do not get an email within 3 working days, you can <a href="tel:08003892500">call us on 0800 389 2500</a>.</p>
 
 </div>
