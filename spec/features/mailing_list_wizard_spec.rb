@@ -42,7 +42,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_title("You've signed up | Get Into Teaching")
     expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
     expect(page).to have_link("Book a callback")
   end
 
@@ -83,7 +82,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
 
     # We pass this to the BAM tracking pixel in GTM.
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
@@ -122,8 +120,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
-    expect(page).to have_text "Test, you're signed up"
-    expect(page).to have_link("Continue your journey")
+    expect(page).to have_text "You've signed up"
+    expect(page).to have_link("helpful guide")
 
     # We pass this to the BAM tracking pixel in GTM.
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
@@ -162,7 +160,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
   end
 
   scenario "Full journey as an existing candidate" do
@@ -213,8 +210,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     )
     click_on "Complete sign up"
 
-    expect(page).to have_text "#{first_name}, you're signed up"
-    expect(page).to have_text("We'll send your first email shortly")
+    expect(page).to have_text "You've signed up"
   end
 
   scenario "Full journey as a candidate that is already qualified to teach" do
@@ -354,7 +350,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
-    expect(page).to have_text("We'll send your first email shortly")
   end
 
   scenario "Invalid magic link tokens" do
