@@ -305,7 +305,7 @@ Full details of how providers will receive funding to pay the international relo
 
 Please don’t send us your CV or enquiries about training places or teaching jobs, as the Department for Education does not directly run training courses or employ teachers. 
 
-[Non-UK teachers](#/non-uk-teachers) gives more information about training to teach or working as a teacher in England. 
+[Non-UK teachers](/non-uk-teachers) gives more information about training to teach or working as a teacher in England. 
 
 For general enquiries about the IRP, please email us at teach.inengland@education.gov.uk. 
 
