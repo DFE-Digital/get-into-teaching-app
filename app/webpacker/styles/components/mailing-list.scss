@@ -70,6 +70,9 @@
         border-left: 2px solid $white;
         padding-left: $indent-amount;
         flex-basis: 40%;
+        // Avoids focus state of submit button being
+        // cropped by parent overflow: hidden
+        margin-bottom: 4px;
       }
 
       > div {

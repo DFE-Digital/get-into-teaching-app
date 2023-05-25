@@ -59,9 +59,12 @@
     @include chevron-icon($black, .6em);
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: none;
   }
 
   &:focus:after {
