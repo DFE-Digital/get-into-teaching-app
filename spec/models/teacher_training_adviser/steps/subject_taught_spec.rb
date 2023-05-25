@@ -8,6 +8,12 @@ RSpec.describe TeacherTrainingAdviser::Steps::SubjectTaught do
     it { is_expected.to respond_to :subject_taught_id }
   end
 
+  describe "#options" do
+    subject { described_class.options }
+
+    it { is_expected.to eq(Crm::TeachingSubject.all) }
+  end
+
   describe "#subject_taught_id" do
     it "allows a valid subject_taught_id" do
       subject_item = GetIntoTeachingApiClient::TeachingSubject.new(id: "abc-123")

@@ -31,6 +31,12 @@ RSpec.describe TeacherTrainingAdviser::Steps::SubjectLikeToTeach do
     end
   end
 
+  describe "#options" do
+    subject { described_class.options }
+
+    it { is_expected.to eq(Crm::TeachingSubject.all_without_primary) }
+  end
+
   describe "#reviewable_answers" do
     subject { instance.reviewable_answers }
 

@@ -13,6 +13,12 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatSubjectDegree do
     it { is_expected.to allow_value("Maths").for :degree_subject }
   end
 
+  describe "#options" do
+    subject { described_class.options }
+
+    it { is_expected.to eq(Crm::TeachingSubject.all) }
+  end
+
   describe "#skipped?" do
     it "returns false if HaveADegree step was shown and degree_options is studying" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
