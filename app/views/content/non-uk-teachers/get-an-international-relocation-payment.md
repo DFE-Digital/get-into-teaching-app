@@ -230,7 +230,7 @@ You will not be eligible for the international relocation payment if you are:
 
 ## How teachers can apply for the international relocation payment 
 
-You’ll need to have started your teaching job in a state secondary school to make your application for the international relocation payment (IRP). [Learn more about finding a teaching job and applying for your visa](https://getintoteaching.education.gov.uk/non-uk-teachers/teach-in-england-if-you-trained-overseas). 
+You’ll need to have started your teaching job in a state secondary school to make your application for the international relocation payment (IRP). [Learn more about finding a teaching job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas). 
 
 You will be able to apply for the IRP from 1 September to 31 October 2023. You can email us at IRP.ExpressInterest@education.gov.uk to let us know you are interested in applying for the IRP. You will be asked to fill in a form giving us your details and we’ll get in touch when IRP applications open. If you are eligible, you’ll receive the money around the end of your first school term of employment. 
 
