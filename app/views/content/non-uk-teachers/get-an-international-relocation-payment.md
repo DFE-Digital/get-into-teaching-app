@@ -78,7 +78,7 @@ If you are eligible, you’ll receive a single payment of £10,000 from the Depa
 
 The process of applying for the international relocation payment is different for trainee teachers and teachers.  
  
-## The international relocation payment for trainee teachers  
+## Criteria for trainee teachers  
 
 As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
 
