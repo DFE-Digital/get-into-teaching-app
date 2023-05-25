@@ -35,7 +35,6 @@ SecureHeaders::Configuration.default do |config|
   zendesk     = %w[static.zdassets.com https://*.zopim.com wss://*.zopim.com dfesupport-tpuk.zendesk.com ekr.zdassets.com]
   facebook    = %w[*.facebook.com *.facebook.net *.connect.facebook.net]
   govuk       = %w[*.gov.uk www.gov.uk]
-  hotjar      = %w[*.hotjar.com vc.hotjar.io wss://*.hotjar.com]
   jquery      = %w[code.jquery.com]
   pinterest   = %w[*.pinterest.com *.pinterest.co.uk *.pinimg.com]
   scribble    = %w[embed.scribblelive.com]
@@ -67,16 +66,16 @@ SecureHeaders::Configuration.default do |config|
 
     default_src: %w['none'],
     base_uri: self_base,
-    child_src: self_base.concat(youtube, pinterest, snapchat, hotjar),
-    connect_src: self_base.concat(google_apis, pinterest, hotjar, google_analytics, google_supported, google_doubleclick, facebook, tta_service_hosts, zendesk, snapchat, sentry, gtm_server),
+    child_src: self_base.concat(youtube, pinterest, snapchat),
+    connect_src: self_base.concat(google_apis, pinterest, google_analytics, google_supported, google_doubleclick, facebook, tta_service_hosts, zendesk, snapchat, sentry, gtm_server),
     font_src: self_base.concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: self_base.concat(snapchat, facebook, govuk),
-    frame_src: self_base.concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, google_analytics, data, pinterest, optimize),
+    frame_src: self_base.concat(scribble, snapchat, facebook, youtube, google_doubleclick, google_analytics, data, pinterest, optimize),
     frame_ancestors: self_base,
     img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, gtm_server, reddit, %w[cx.atdmt.com linkbam.uk]),
     manifest_src: self_base,
     media_src: self_base.concat(zendesk).concat(assets),
-    script_src: self_base.concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit),
+    script_src: self_base.concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit),
     style_src: self_base.concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize),
     worker_src: self_base.concat(blob),
   }
