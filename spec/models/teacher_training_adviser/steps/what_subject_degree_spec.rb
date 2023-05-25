@@ -16,7 +16,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatSubjectDegree do
   describe "#options" do
     subject { described_class.options }
 
-    it { is_expected.to eq(Crm::TeachingSubject.all) }
+    it { is_expected.to eq(Crm::TeachingSubject.all_hash) }
   end
 
   describe "#skipped?" do

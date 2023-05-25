@@ -11,7 +11,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::SubjectTaught do
   describe "#options" do
     subject { described_class.options }
 
-    it { is_expected.to eq(Crm::TeachingSubject.all) }
+    it { is_expected.to eq(Crm::TeachingSubject.all_hash) }
   end
 
   describe "#subject_taught_id" do
