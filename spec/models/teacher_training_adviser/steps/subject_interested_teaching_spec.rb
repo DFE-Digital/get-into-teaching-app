@@ -19,6 +19,12 @@ RSpec.describe TeacherTrainingAdviser::Steps::SubjectInterestedTeaching do
     it { is_expected.not_to allow_values("", nil, "invalid-id").for :preferred_teaching_subject_id }
   end
 
+  describe "#options" do
+    subject { described_class.options }
+
+    it { is_expected.to eq(Crm::TeachingSubject.all_without_primary) }
+  end
+
   describe "#skipped?" do
     it "returns false if HaveADegree step was shown and preferred_education_phase_id is secondary" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
