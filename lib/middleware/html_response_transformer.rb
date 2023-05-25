@@ -5,6 +5,7 @@ require "external_links"
 require "image_sizes"
 require "error_title"
 require "accessible_footnotes"
+require "disable_turbolinks"
 
 module Middleware
   class HtmlResponseTransformer
@@ -16,6 +17,7 @@ module Middleware
       ExternalLinks,
       ErrorTitle,
       AccessibleFootnotes,
+      DisableTurbolinks,
     ].freeze
 
     def initialize(app)
