@@ -88,7 +88,7 @@ You must have taken up a place on a teacher training course in England leading t
 
 a) any secondary language or languages, including courses with content which is at least 50% languages. You can combine training to teach English with another language, as long as the non-English language makes up at least 50% of your course. 
 
-b) secondary physics, including [Engineers teach physics](https://getintoteaching.education.gov.uk/subjects/engineers-teach-physics), and courses with content which is at least 50% physics. 
+b) secondary physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics. 
 
 You can search for [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE + QTS or PGDE + QTS. 
 
