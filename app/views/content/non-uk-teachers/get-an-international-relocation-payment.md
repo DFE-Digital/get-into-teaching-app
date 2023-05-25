@@ -176,7 +176,7 @@ c) 'State schools' are schools funded by the UK government. 'Secondary schools' 
 
 d) An academic year is 3 full school terms: for example, if your teaching job started in September 2023 (the start of the autumn term), it would need to continue until July 2024 (covering the spring and summer terms). 
 
-Visit [Get information about schools](https://www.get-information-schools.service.gov.uk/) to check the type and age range of the school where you’ll be teaching. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school). 
+[Check the type and age range of the school](https://www.get-information-schools.service.gov.uk/) where you’ll be teaching. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school). 
 
 ### 2. Type of visa
 
