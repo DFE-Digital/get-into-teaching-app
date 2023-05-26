@@ -84,7 +84,7 @@ As a trainee teacher, to be eligible for the international relocation payment (I
  
 You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects: 
 
-* any secondary language or languages, including courses with content which is at least 50% languages – you can combine training to teach English with another language, as long as the non-English language makes up at least 50% of your course. 
+* any secondary language or languages, including courses with content which is at least 50% languages – you can combine training to teach English with another language, as long as the non-English language makes up at least 50% of your course 
 
 * secondary physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics 
 
