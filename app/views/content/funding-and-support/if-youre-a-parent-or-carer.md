@@ -25,7 +25,7 @@ keywords:
     - Carers
 inset_text:
   international-content:
-    text: If you’re a non-UK citizen, you need to be eligible for student finance in England to receive the funding listed below. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens.</a>.
+    text: Most non-UK citizens without <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a> will not be eligible for this financial support. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.
     color: grey
 ---
 
@@ -36,6 +36,8 @@ You do not have to pay this money back, and you’ll get it on top of your other
 Figures are for the 2023/24 academic year.
 
 There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the following funding. If you’re doing a part-time course, you may be eligible for [Universal Credit](https://www.gov.uk/guidance/universal-credit-and-students).
+
+$international-content$
 
 ## If you're a parent
 

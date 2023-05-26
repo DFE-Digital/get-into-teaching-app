@@ -74,9 +74,7 @@ class PagesController < ApplicationController
             adviser_service_url
           end
 
-    if Rails.application.config.x.utm_codes && session[:utm]
-      url += "?#{session[:utm].to_param}"
-    end
+    url = "#{url}?#{request.query_parameters.to_query}" if request.query_parameters.any?
 
     redirect_to(url, turbolinks: false, status: :moved_permanently, allow_other_host: true)
   end

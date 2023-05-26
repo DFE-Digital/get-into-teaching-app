@@ -238,7 +238,7 @@ Learn more about [getting an IHS refund](https://www.gov.uk/guidance/immigration
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
-For help with individual applications to training providers or schools, please [register with a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/). Advisers can give you personalised support with your application.
+For help with individual applications to training providers or schools, please [register with a teacher training adviser](/tta-service). Advisers can give you personalised support with your application.
 
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 

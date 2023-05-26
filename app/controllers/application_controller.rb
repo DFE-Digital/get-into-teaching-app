@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   class ForbiddenError < StandardError; end
 
   include DfE::Analytics::Requests
-  include UtmCodes
 
   rescue_from ActionController::InvalidAuthenticityToken, with: :session_expired
   rescue_from ActionController::RoutingError, with: :render_not_found
@@ -14,7 +13,6 @@ class ApplicationController < ActionController::Base
 
   before_action :http_basic_authenticate, if: :authenticate?
   before_action :set_api_client_request_id
-  before_action :record_utm_codes
   before_action :add_home_breadcrumb
   before_action :declare_frontmatter
 

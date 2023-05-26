@@ -71,7 +71,7 @@ Extra financial support is available if you’re a parent, have an adult dependa
 
 And for some subjects, you may qualify for a tax-free bursary or scholarship.
 
-The key to managing financially during your training year is careful planning and preparation. Our [expert advisers](https://adviser-getintoteaching.education.gov.uk/) can help you make a plan and find the best funding options for your circumstances.
+The key to managing financially during your training year is careful planning and preparation. Our [expert advisers](/tta-service) can help you make a plan and find the best funding options for your circumstances.
 
 [Explore your funding options](/funding-and-support).
 
