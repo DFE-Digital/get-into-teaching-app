@@ -104,6 +104,10 @@
   @include box-heading($green, $white);
 }
 
+.heading--box-grey {
+  @include box-heading($grey, $black);
+}
+
 .heading--box-blue {
   @include box-heading($blue, $white);
 }
