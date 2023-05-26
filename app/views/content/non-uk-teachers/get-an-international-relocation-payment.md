@@ -214,7 +214,7 @@ You must move to England no more than 3 months before the start of your job.
 
 You will not be eligible for the international relocation payment if you are: 
 
-* a UK citizen 
+* a UK citizen, including citizens of Wales, Scotland and Northern Ireland
 
 * an Irish citizen 
 
@@ -236,7 +236,7 @@ For information about IRP applications in 2024, check back to this page.
 
 ## General information about the international relocation payment  
 
-Further information for trainees and teachers
+Further information for trainees and teachers.
 
 ### Protect yourself from fraud 
 
