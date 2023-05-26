@@ -1,5 +1,5 @@
 ---
-title: "Get an international relocation payment (IRP) worth £10,000"
+title: "Get an international relocation payment"
 description: |-
   Non-UK teachers and trainees in physics and languages could be eligible for financial help from the UK government.
 related_content:
@@ -55,8 +55,6 @@ keywords:
   - Settlement Scheme
 ---
 
-## Who is eligible
-
 The information on this page is for: 
 
 * non-UK teachers of languages and physics 
@@ -82,13 +80,13 @@ The process of applying for the international relocation payment is different fo
 
 As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
 
-### 1. Teaching subject
+### 1. Teaching subject (trainees)
  
-You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following: 
+You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects: 
 
-a) any secondary language or languages, including courses with content which is at least 50% languages. You can combine training to teach English with another language, as long as the non-English language makes up at least 50% of your course. 
+* any secondary language or languages, including courses with content which is at least 50% languages – you can combine training to teach English with another language, as long as the non-English language makes up at least 50% of your course. 
 
-b) secondary physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics. 
+* secondary physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics 
 
 You can search for [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE + QTS or PGDE + QTS. 
 
@@ -98,7 +96,7 @@ You can contact your teacher training provider to check:
 
 * the content of your teacher training course meets the 50% requirement 
 
-### 2. Type of visa
+### 2. Type of visa (trainees) 
 
 You must come to England on one of the visas listed here.  
 
@@ -130,7 +128,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) 
 
-### 3. Date of arrival
+### 3. Date of arrival (trainees)
 
 You must move to England no more than 3 months before the start of your course.   
 
@@ -138,7 +136,7 @@ You must move to England no more than 3 months before the start of your course.
 
 You will not be eligible for the international relocation payment if you are: 
 
-* a UK citizen 
+* a UK citizen, including citizens of Wales, Scotland and Northern Ireland 
 
 * an Irish citizen 
 
@@ -160,25 +158,25 @@ If you believe you meet the eligibility requirements, but have not been informed
 
 If you have a place on a teacher training course where you are paid a salary to work while you train, email us at IRP.ExpressInterest@education.gov.uk to let us know you are interested in applying for the IRP. You will be asked to fill in a form giving us your details and we’ll get in touch when IRP applications open for salaried trainees in autumn 2023. If you are eligible, you’ll get the IRP around the end of your first term. 
 
-## The international relocation payment for teachers  
+## Criteria for teachers  
 
 To be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
 
-### 1. Teaching subject
+### 1. Teaching subject (teachers)
 
 You must have accepted a job as a teacher of languages or physics in an English state secondary school on a contract lasting at least one academic year.  
 
-a) Teachers of all languages offered in English state secondary schools are eligible to apply for the IRP. The language or languages can be combined with another subject, but must make up at least 50% of teaching time. You can combine teaching English with another language, as long as the non-English language makes up at least 50% of your teaching timetable.  
+Teachers of all languages offered in English state secondary schools are eligible to apply for the IRP. The language or languages can be combined with another subject, but must make up at least 50% of teaching time. You can combine teaching English with another language, as long as the non-English language makes up at least 50% of your teaching timetable.  
 
-b) Physics can be taught with another subject, but must make up at least 50% of teaching time. Teachers of general science or combined science  are also eligible to apply for the IRP, as long as they are teaching the physics element of general science or combined science. General science or combined science can be taught with another subject, but must make up at least 50% of teaching time.  
+Physics can be taught with another subject, but must make up at least 50% of teaching time. Teachers of general science or combined science  are also eligible to apply for the IRP, as long as they are teaching the physics element of general science or combined science. General science or combined science can be taught with another subject, but must make up at least 50% of teaching time.  
 
-c) 'State schools' are schools funded by the UK government. 'Secondary schools' teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
+'State schools' are schools funded by the UK government. 'Secondary schools' teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
 
-d) An academic year is 3 full school terms: for example, if your teaching job started in September 2023 (the start of the autumn term), it would need to continue until July 2024 (covering the spring and summer terms). 
+An academic year is 3 full school terms: for example, if your teaching job started in September 2023 (the start of the autumn term), it would need to continue until July 2024 (covering the spring and summer terms). 
 
 [Check the type and age range of the school](https://www.get-information-schools.service.gov.uk/) where you’ll be teaching. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school). 
 
-### 2. Type of visa
+### 2. Type of visa (teachers)
 
 You must come to England on one of the visas listed here.  
  
@@ -208,7 +206,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) 
 
-### 3. Date of arrival 
+### 3. Date of arrival (teachers)
 
 You must move to England no more than 3 months before the start of your job.  
 
@@ -296,10 +294,6 @@ However, you should be aware that you can only receive the IRP once, and you can
 This means that teachers in their first year of employment in England could receive either the IRP and the levelling up premium payment, or the IRP and the early career payment. 
 
 Trainee teachers could receive the IRP in their training year in England, and either the levelling up premium payment, or the early career payment in their first year of work as a teacher.  
-
-## Information for teacher training providers 
-
-Full details of how providers will receive funding to pay the international relocation payment can be found in the [‘Initial teacher training (ITT) bursary: funding manual’](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual). 
 
 ## Contact us 
 
