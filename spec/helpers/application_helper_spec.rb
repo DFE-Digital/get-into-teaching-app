@@ -186,6 +186,7 @@ describe ApplicationHelper do
         paths: [
           "/landing/train-to-teach",
           "/train-to-be-a-teacher",
+          "/teacher-training-adviser/sign_up/identity",
         ],
       })
     end
