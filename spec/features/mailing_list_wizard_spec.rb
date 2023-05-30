@@ -41,7 +41,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_title("You've signed up | Get Into Teaching")
-    expect(page).to have_text "You've signed up"
+    expect(page).to have_text "You're signed up"
     expect(page).to have_link("Book a callback")
   end
 
