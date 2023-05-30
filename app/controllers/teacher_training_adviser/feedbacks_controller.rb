@@ -59,7 +59,7 @@ module TeacherTrainingAdviser
   private
 
     def check_feature_switch
-      raise_not_found unless ActiveModel::Type::Boolean.new.cast(ENV["GET_AN_ADVISER"])
+      raise_not_found unless ActiveModel::Type::Boolean.new.cast(ENV["GET_AN_ADVISER_FEEDBACK"])
     end
 
     def action_restricted?
