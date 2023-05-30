@@ -120,7 +120,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
-    expect(page).to have_text "You've signed up"
+    expect(page).to have_text "You're signed up"
     expect(page).to have_link("helpful guide")
 
     # We pass this to the BAM tracking pixel in GTM.
@@ -159,7 +159,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
-    expect(page).to have_text "You've signed up"
+    expect(page).to have_text "You're signed up"
   end
 
   scenario "Full journey as an existing candidate" do
@@ -349,7 +349,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Your UK postcode (optional)", with: ""
     click_on "Complete sign up"
 
-    expect(page).to have_text "You've signed up"
+    expect(page).to have_text "You're signed up"
   end
 
   scenario "Invalid magic link tokens" do
@@ -425,7 +425,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     scenario "Viewing the completion page" do
       visit mailing_list_step_path(:completed)
 
-      expect(page).to have_text("You've signed up")
+      expect(page).to have_text("You're signed up")
       expect(page).not_to have_link("Book a callback")
     end
   end
