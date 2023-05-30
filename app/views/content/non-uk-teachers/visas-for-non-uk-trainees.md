@@ -215,6 +215,8 @@ Learn more about:
 
 You will usually need to show proof of a certain level of savings or income, depending on which visa you are applying for. You’ll be guided through this process when you apply for your visa.
 
+If you are eligible for a [teacher training bursary](/non-UK-teachers/fees-and-funding-for-non-uk-trainees), you can use this in your student visa application as proof that you have the necessary money to support yourself. Your training provider should confirm that you will receive official financial sponsorship when they complete your confirmation of acceptance of studies (CAS). They will also give you written notification that you are eligible to receive a bursary, which you may be asked to provide in your visa application as evidence of official financial sponsorship.
+
 ### Visa fees
 
 You’ll also have to pay visa fees which vary depending on which visa you are applying for.
