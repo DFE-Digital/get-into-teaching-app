@@ -21,11 +21,24 @@
     }
   }
 
+  &.action-container--no-margin {
+    margin: 0;
+  }
+
+  &.action-container--purple:before,
+  &.action-container--purple:after {
+    background: $purple;
+  }
+
+  &.action-container--transparent:before,
+  &.action-container--transparent:after {
+    background: transparent;
+  }
+
   &:before,
   &:after {
     content: "";
     position: absolute;
-    background-color: $purple;
     right: -$indent-amount / 2;
     bottom: -$indent-amount / 2;
   }

@@ -1,8 +1,8 @@
-<div class="action-container">
+<%= tag.div(class: classes) do %>
   <div class="heading-container">
-    <h2 class="heading-m heading--box-purple">
+    <%= tag.h2(class: heading_classes) do %>
       <%= title %>
-    </h2>
+    <% end %>
   </div>
 
   <div class="content">
@@ -26,4 +26,4 @@
       <% end %>
     </div>
   </div>
-</div>
+<% end %>
