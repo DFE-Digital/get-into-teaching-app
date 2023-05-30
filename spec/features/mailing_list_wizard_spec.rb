@@ -81,7 +81,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
-    expect(page).to have_text "You've signed up"
+    expect(page).to have_text "You're signed up"
 
     # We pass this to the BAM tracking pixel in GTM.
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
@@ -210,7 +210,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     )
     click_on "Complete sign up"
 
-    expect(page).to have_text "You've signed up"
+    expect(page).to have_text "You're signed up"
   end
 
   scenario "Full journey as a candidate that is already qualified to teach" do
