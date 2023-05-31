@@ -14,6 +14,10 @@ navigation_description: Find out how to train to teach in England as a non-UK ci
 date: "2021-05-27"
 image: "static/content/hero-images/0003.jpg"
 backlink: "../../"
+youtube_video:
+  why-train-to-teach:
+    id: u0W7UTnGcc0
+    title: A video about why you should Train to Teach in England
 inset_text:
   new-international-funding:
     text: |-
@@ -294,7 +298,7 @@ Meet other non-UK teachers and trainees and find information about English schoo
 
 Watch our video interviews with non-UK citizens who've successfully relocated to train and teach in England.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u0W7UTnGcc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+$why-train-to-teach$
 
 [Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/).
 

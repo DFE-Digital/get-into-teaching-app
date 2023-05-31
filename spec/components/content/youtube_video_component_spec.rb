@@ -17,6 +17,7 @@ describe Content::YoutubeVideoComponent, type: :component do
   it { is_expected.to have_css("iframe[frameborder=0]") }
   it { is_expected.to have_css("iframe[allow='autoplay; encrypted-media']") }
   it { is_expected.to have_css("iframe[allowfullscreen]") }
+  it { is_expected.to have_css("iframe[enablejsapi=true]") }
 
   describe "validation" do
     context "when the id is not set" do
