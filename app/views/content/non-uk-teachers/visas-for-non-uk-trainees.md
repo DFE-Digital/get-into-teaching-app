@@ -213,9 +213,13 @@ Learn more about:
 
 ## Visa fees and other charges
 
-You will usually need to show proof of a certain level of savings or income, depending on which visa you are applying for. You’ll be guided through this process when you apply for your visa.
+You will usually need to show you have enough money to support yourself in England by providing proof of a certain level of savings or income, depending on which visa you are applying for. You’ll be guided through this process when you apply for your visa.
 
-If you are eligible for a [teacher training bursary](/non-uk-teachers/fees-and-funding-for-non-uk-trainees), you can use this in your student visa application as proof that you have the necessary money to support yourself. Your training provider should confirm that you will receive official financial sponsorship when they complete your confirmation of acceptance for studies (CAS). They will also give you written notification that you are eligible to receive a bursary, which you may be asked to provide in your visa application as evidence of official financial sponsorship.
+### Using a teacher training bursary as evidence you can support yourself
+
+If you are training to teach physics or languages, you may be eligible for a [teacher training bursary](/non-uk-teachers/fees-and-funding-for-non-uk-trainees/#financial-support-for-non-uk-trainee-languages-and-physics-teachers). A bursary is a cash sum from the UK government which you do not have to pay back. You can use in your student visa application as proof that you have enough money to support yourself. 
+
+Your training provider should confirm that you will receive a bursary when they offer you a training place and complete your confirmation of acceptance for studies (CAS). They should also give you a document confirming your bursary, which you may be asked to include in your visa application.
 
 ### Visa fees
 
