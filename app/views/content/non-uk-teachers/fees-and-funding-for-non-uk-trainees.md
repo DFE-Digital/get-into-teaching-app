@@ -7,6 +7,9 @@ related_content:
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
+navigation: 20.10
+navigation_title: Fees and financial support for non-UK trainee teachers
+navigation_description: Learn more about teacher training fees and help from the UK government for physics and languages trainees.
 date: "2021-05-27"
 image: "static/content/hero-images/0002.jpg"
 backlink: "../../"
