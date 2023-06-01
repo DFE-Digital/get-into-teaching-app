@@ -152,7 +152,7 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.13.0)
+    bootsnap (1.16.0)
       msgpack (~> 1.2)
     brakeman (5.2.3)
     builder (3.2.4)
@@ -340,7 +340,7 @@ GEM
       tomlrb
     mixlib-shellout (3.2.7)
       chef-utils
-    msgpack (1.5.4)
+    msgpack (1.7.1)
     multi_json (1.15.0)
     multipart-post (2.3.0)
     net-imap (0.3.1)
