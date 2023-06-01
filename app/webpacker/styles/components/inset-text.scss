@@ -7,6 +7,12 @@ section.inset-text {
   &.yellow {
     background-color: $yellow-light;
     border-left-color: $black;
+
+    @at-root (with: rule) {
+      a {
+        @extend .link--black;
+      }
+    }
   }
 
   &.grey {
@@ -28,9 +34,5 @@ section.inset-text {
   h2,
   p {
     @include font-size("small");
-  }
-
-  a {
-    @extend .link--black;
   }
 }
