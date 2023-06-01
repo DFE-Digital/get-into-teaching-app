@@ -84,9 +84,9 @@ As a trainee teacher, to be eligible for the international relocation payment (I
  
 You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects at secondary level (teaching children aged 11 to 16 or 11 to 18): 
 
-* any secondary level language(s), including courses combining language(s) with another subject, as long as language(s) make up at least 50% of the course content
+* any secondary level language(s) except English language, including courses combining language(s) with another subject, as long as language(s) make up at least 50% of the course content
 
-* any secondary level language(s), including courses combining language(s) with English language and literature, as long as the non-English language(s) make up at least 50% of the course content 
+* any secondary level language(s), including courses combining language(s) with English language, as long as the non-English language(s) make up at least 50% of the course content 
 
 * secondary level physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics 
 
@@ -168,7 +168,7 @@ To be eligible for the international relocation payment (IRP), you must meet all
 
 You must have accepted a job as a teacher of languages or physics in an English state secondary school on a contract lasting at least one academic year.  
 
-Teachers of all languages offered in English state secondary schools are eligible to apply for the IRP. The language(s) can be combined with another subject, but must make up at least 50% of teaching time. You can combine teaching English language and literature with another language (for example, French, German or Spanish), as long as the non-English language makes up at least 50% of your teaching timetable.  
+Teachers of all languages offered in English state secondary schools are eligible to apply for the IRP. Any language(s) except for English language can be combined with another subject, but must make up at least 50% of teaching time. You can combine teaching English language with another language (for example, French, German or Spanish), as long as the non-English language makes up at least 50% of your teaching timetable.  
 
 Physics can be taught with another subject, but must make up at least 50% of teaching time. Teachers of general science or combined science  are also eligible to apply for the IRP, as long as they are teaching the physics element of general science or combined science. General science or combined science can be taught with another subject, but must make up at least 50% of teaching time.  
 
