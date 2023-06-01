@@ -70,7 +70,7 @@ The international relocation payment (IRP) is designed to repay some of the cost
 
 * other relocation expenses 
 
-If you are eligible, you’ll receive a single payment of £10,000 from the Department for Education (DfE) around the end of your first term training or working in England. You will not have to pay this money back. You can only receive the IRP once. 
+All eligible applicants will receive a single payment of £10,000 from the Department for Education (DfE) around the end of their first term training or working in England. The IRP is a grant – you will not have to pay this money back. You can only receive the IRP once. 
 
 ## How to apply 
 
@@ -82,11 +82,13 @@ As a trainee teacher, to be eligible for the international relocation payment (I
 
 ### 1. Teaching subject (trainees)
  
-You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects: 
+You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects at secondary level (teaching children aged 11 to 16 or 11 to 18): 
 
-* any secondary language or languages, including courses with content which is at least 50% languages – you can combine training to teach English with another language, as long as the non-English language makes up at least 50% of your course 
+* any secondary level language(s), including courses combining language(s) with another subject, as long as language(s) make up at least 50% of the course content
 
-* secondary physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics 
+* any secondary level language(s), including courses combining language(s) with English language and literature, as long as the non-English language(s) make up at least 50% of the course content 
+
+* secondary level physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics 
 
 You can search for [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE + QTS or PGDE + QTS. 
 
@@ -118,7 +120,7 @@ For the following visas, you must have applied for your visa from outside the UK
 
 * [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)  
 
-For the following Ukrainian and Afghan visas, you can apply for your visa from within the UK:  
+For the following Ukrainian and Afghan visas, you can apply for your visa from within or from outside the UK:  
 
 * [Afghan citizens resettlement scheme](https://www.gov.uk/guidance/afghan-citizens-resettlement-scheme) 
 
@@ -166,13 +168,15 @@ To be eligible for the international relocation payment (IRP), you must meet all
 
 You must have accepted a job as a teacher of languages or physics in an English state secondary school on a contract lasting at least one academic year.  
 
-Teachers of all languages offered in English state secondary schools are eligible to apply for the IRP. The language or languages can be combined with another subject, but must make up at least 50% of teaching time. You can combine teaching English with another language, as long as the non-English language makes up at least 50% of your teaching timetable.  
+Teachers of all languages offered in English state secondary schools are eligible to apply for the IRP. The language(s) can be combined with another subject, but must make up at least 50% of teaching time. You can combine teaching English language and literature with another language (for example, French, German or Spanish), as long as the non-English language makes up at least 50% of your teaching timetable.  
 
 Physics can be taught with another subject, but must make up at least 50% of teaching time. Teachers of general science or combined science  are also eligible to apply for the IRP, as long as they are teaching the physics element of general science or combined science. General science or combined science can be taught with another subject, but must make up at least 50% of teaching time.  
 
+Check with your employing school if you’re not sure whether your teaching timetable meets the teaching subject requirements. 
+
 'State schools' are schools funded by the UK government. 'Secondary schools' teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
 
-An academic year is 3 full school terms: for example, if your teaching job started in September 2023 (the start of the autumn term), it would need to continue until July 2024 (covering the spring and summer terms). 
+An academic year is 3 full school terms: for example, if your teaching job started in September 2023 (the start of the autumn term), it would need to continue until at least July 2024 (covering the spring and summer terms). ‘Ongoing’ or ‘permanent’ contracts lasting longer than 1 academic year are also eligible. 
 
 [Check the type and age range of the school](https://www.get-information-schools.service.gov.uk/) where you’ll be teaching. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school). 
 
@@ -196,7 +200,7 @@ For the following visas, you must have applied for your visa from outside the UK
 
 * [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)  
 
-For the following Ukrainian and Afghan visas, you can apply for your visa from within the UK:  
+For the following Ukrainian and Afghan visas, you can apply for your visa from within or from outside the UK:  
 
 * [Afghan citizens resettlement scheme](https://www.gov.uk/guidance/afghan-citizens-resettlement-scheme) 
 
@@ -272,7 +276,9 @@ The Department for Education reserves the right to withhold payment if you are n
 
 ### Tax 
 
-The Department for Education will pay the UK tax owed on the international relocation payment to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 a year in 2023/24. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) and [UK National Insurance](https://www.gov.uk/national-insurance) on any earnings which take you over £50,270. 
+If you are on a fee-paying teacher training course, you will not have to pay tax on the international relocation payment.  
+
+If you are a teacher, or a trainee on a salaried course, the Department for Education will pay the UK tax owed on the international relocation payment to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 a year in 2023/24. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) and [UK National Insurance](https://www.gov.uk/national-insurance) on any earnings which take you over £50,270. 
 
 ### Part-time teachers and trainees 
 
