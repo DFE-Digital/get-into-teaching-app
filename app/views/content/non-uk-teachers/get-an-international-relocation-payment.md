@@ -270,7 +270,7 @@ The Department for Education reserves the right to withhold payment if you are n
 
 Once you have received the international relocation payment, you will not be asked to pay it back, even if you leave England, your training course or your job as a teacher. 
 
-### Tax 
+### Tax 
 
 If you are on a fee-paying teacher training course, you will not have to pay tax on the international relocation payment.  
 
