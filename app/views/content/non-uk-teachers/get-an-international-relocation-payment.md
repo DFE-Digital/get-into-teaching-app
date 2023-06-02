@@ -1,7 +1,7 @@
 ---
 title: "Get an international relocation payment"
 description: |-
-  Non-UK teachers and trainees in physics and languages could be eligible for financial help from the UK government.
+  Non-UK teachers and trainees in physics and languages could be eligible for financial help in the form of an international relocation payment from the UK government.
 related_content:
     Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Teach in England if you trained outside the UK: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
@@ -71,10 +71,6 @@ The international relocation payment (IRP) is designed to repay some of the cost
 * other relocation expenses 
 
 All eligible applicants will receive a single payment of £10,000 from the Department for Education (DfE) around the end of their first term training or working in England. The IRP is a grant – you will not have to pay this money back. You can only receive the IRP once. 
-
-## How to apply 
-
-The process of applying for the international relocation payment is different for trainee teachers and teachers.  
  
 ## Criteria for trainee teachers  
 
@@ -90,7 +86,7 @@ You must have taken up a place on a teacher training course in England leading t
 
 * secondary level physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics 
 
-You can search for [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE + QTS or PGDE + QTS. 
+You can search for [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE and QTS or PGDE and QTS. 
 
 You can contact your teacher training provider to check: 
  
@@ -236,11 +232,9 @@ You’ll need to have started your teaching job in a state secondary school to m
 
 You will be able to apply for the IRP from 1 September to 31 October 2023. You can email us at IRP.ExpressInterest@education.gov.uk to let us know you are interested in applying for the IRP. You will be asked to fill in a form giving us your details and we’ll get in touch when IRP applications open. If you are eligible, you’ll receive the money around the end of your first school term of employment. 
 
-For information about IRP applications in 2024, check back to this page. 
+We will update this page for more information about IRP applications in 2024. 
 
 ## General information about the international relocation payment  
-
-Further information for trainees and teachers.
 
 ### Protect yourself from fraud 
 
@@ -274,6 +268,8 @@ You will not have to justify any expenses or give us receipts or any other evide
 
 The Department for Education reserves the right to withhold payment if you are no longer studying on an eligible course or employed in an eligible job on the payment date. 
 
+Once you have received the international relocation payment, you will not be asked to pay it back, even if you leave England, your training course or your job as a teacher. 
+
 ### Tax 
 
 If you are on a fee-paying teacher training course, you will not have to pay tax on the international relocation payment.  
@@ -283,10 +279,6 @@ If you are a teacher, or a trainee on a salaried course, the Department for Educ
 ### Part-time teachers and trainees 
 
 Part-time teachers and trainees will receive the international relocation payment in full, as long as they meet all the eligibility criteria. 
-
-### Leaving England, your training course or job 
-
-Once you have received the international relocation payment, you will not be asked to pay it back, even if you leave England, your training course or your job as a teacher.  
 
 ### Other types of financial support from the UK government  
 
@@ -303,11 +295,13 @@ Trainee teachers could receive the IRP in their training year in England, and ei
 
 ## Contact us 
 
-Please don’t send us your CV or enquiries about training places or teaching jobs, as the Department for Education does not directly run training courses or employ teachers. 
+For general enquiries about the IRP, please email us at teach.inengland@education.gov.uk.
 
-[Non-UK teachers](/non-uk-teachers) gives more information about training to teach or working as a teacher in England. 
+Please do not send us your CV or enquiries about training places or teaching jobs, as the Department for Education does not directly run training courses or employ teachers. 
 
-For general enquiries about the IRP, please email us at teach.inengland@education.gov.uk. 
+[Find out more about training to teach or working as a teacher in England](/non-uk-teachers). 
+
+ 
 
  
 
