@@ -1,8 +1,7 @@
 ---
 title: "Return to teaching"
 description: |-
-  Our return to teaching advisers can advise you on making a return to
-  teaching, finding a role or joining the National Tutoring Programme.
+  Find out how you can return to teaching, including getting support from a return to teaching adviser, finding a role or joining the National Tutoring Programme.
 date: "2021-06-18"
 image: "static/content/hero-images/0010.jpg"
 backlink: "../../"

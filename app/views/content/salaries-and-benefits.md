@@ -1,5 +1,5 @@
 ---
-title: "Teaching salaries and benefits"
+title: "Teacher salaries and pay scales"
 heading: "Salaries and benefits"
 description: |-
   All qualified teachers will have a starting salary of at least £28,000 (or higher in London). Find out about teacher pay scales and more benefits of teaching.
