@@ -1,7 +1,7 @@
 name: Nightly Snyk Security Scan
 on:
   push:
-    branches: [ snyk-ncurses-lib-vulnerability-check ]
+    branches: [ fix-ncurses-lib-vulnerability ]
 
 jobs:
   security_tests:
