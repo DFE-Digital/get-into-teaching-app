@@ -1,7 +1,7 @@
 name: Nightly Snyk Security Scan
 on:
   push:
-    branches: [ fix-ncurses-lib-vulnerability ]
+    branches: [ snyk-ncurses-lib-vulnerability-check ]
 
 jobs:
   security_tests:
@@ -30,7 +30,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ steps.keyvault-yaml-secret.outputs.SNYK-TOKEN }}
         with:
-          image:  ${{ env.DOCKER_REPOSITORY }}:fix-ncurses-lib-vulnerability
+          image:  ${{ env.DOCKER_REPOSITORY }}:base-fix-ncurses-lib-vulnerability
           args: --severity-threshold=high --file=Dockerfile
 
       - name: Run Brakeman static security scanner
