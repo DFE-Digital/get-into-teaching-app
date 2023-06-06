@@ -13,8 +13,11 @@ describe Crm::TeachingSubject do
       ]
     end
 
+    let(:lookup_api) { instance_double("GetIntoTeachingApiClient::LookupItemsApi") }
+
     before do
-      allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to receive(:get_teaching_subjects) { stubbed_subjects }
+      allow(GetIntoTeachingApiClient::LookupItemsApi).to receive(:new).and_return(lookup_api)
+      allow(lookup_api).to receive(:get_teaching_subjects).and_return(stubbed_subjects)
     end
 
     describe ".lookup_by_key" do
