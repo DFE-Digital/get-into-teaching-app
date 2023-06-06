@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe Crm::TeachingSubject do
   describe "class_methods" do
-    let!(:stubbed_subjects) do
+    let(:stubbed_subjects) do
       [
         GetIntoTeachingApiClient::TeachingSubject.new(
           id: "ac2655a1-2afa-e811-a981-000d3a276620", value: "Physics",

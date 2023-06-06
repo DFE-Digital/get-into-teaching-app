@@ -1,12 +1,12 @@
 class Crm::TeachingSubject
   RENAMED = {
     "Media studies" => "Communication and media studies",
+    "General science" => "Science",
   }.freeze
   PRIMARY = "b02655a1-2afa-e811-a981-000d3a276620".freeze
   IGNORED =
     {
       "Art" => "6b793433-cd1f-e911-a979-000d3a20838a",
-      "General science" => "982655a1-2afa-e811-a981-000d3a276620",
       "Physics with maths" => "ae2655a1-2afa-e811-a981-000d3a276620",
       "Vocational health" => "ba2655a1-2afa-e811-a981-000d3a276620",
       "Other" => "bc2655a1-2afa-e811-a981-000d3a276620",
@@ -52,9 +52,9 @@ class Crm::TeachingSubject
 
     def all
       GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects
-        .sort_by(&:value)
         .reject(&method(:ignored?))
         .each(&method(:rename))
+        .sort_by(&:value)
     end
 
   private
