@@ -39,7 +39,7 @@ class Crm::TeachingSubject
     end
 
     def keyed_subjects
-      @keyed_subjects ||= all_hash.transform_keys { |key| key.parameterize(separator: "_").to_sym }
+      all_hash.transform_keys { |key| key.parameterize(separator: "_").to_sym }
     end
 
     def all_hash
