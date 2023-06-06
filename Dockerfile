@@ -18,7 +18,7 @@ RUN apk update
 
 # patches
 RUN apk add --no-cache \
-"openssl>=1.1.1t-r2" \
+"openssl>=1.1.1u-r0" \
 "ncurses-libs>=6.3_p20220521-r1"
 
 
