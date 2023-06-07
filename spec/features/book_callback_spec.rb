@@ -97,7 +97,7 @@ RSpec.feature "Book a callback", type: :feature do
 
     expect(page).to have_text "Please enter the latest verification code"
 
-    click_link "Send another code to verify my details."
+    click_link "Send another code to verify my details"
     expect(page).to have_text "We've sent you another email"
 
     fill_in "To verify your details, we've sent a code to your email address.", with: "123456"

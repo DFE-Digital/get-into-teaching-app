@@ -945,7 +945,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       expect(page).to have_css "h1", text: "You're already registered with us"
       expect(page).to have_text "To verify your details, we've sent a code to your email address."
-      click_on "Send another code to verify my details."
+      click_on "Send another code to verify my details"
 
       expect(page).to have_text "We've sent you another email"
       fill_in "git-wizard-steps-authenticate-timed-one-time-password-field", with: invalid_code
