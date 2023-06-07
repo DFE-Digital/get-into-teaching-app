@@ -17,7 +17,9 @@ WORKDIR /app
 RUN apk update
 
 # patches
-RUN apk add --no-cache openssl=1.1.1t-r2
+RUN apk add --no-cache \
+"openssl>=1.1.1u-r0" \
+"ncurses-libs>=6.3_p20220521-r1"
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn git \
         chromium chromium-chromedriver postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
