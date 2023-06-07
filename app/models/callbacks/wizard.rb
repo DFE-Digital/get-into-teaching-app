@@ -10,6 +10,12 @@ module Callbacks
       Steps::TalkingPoints,
     ].freeze
 
+    class << self
+      def first_key_if_authenticated
+        step_keys.fourth
+      end
+    end
+
     def matchback_attributes
       %i[candidate_id qualification_id].freeze
     end
