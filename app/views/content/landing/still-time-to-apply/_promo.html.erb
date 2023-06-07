@@ -1,10 +1,8 @@
 <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
-  <% promo.left_section( classes: %w[ml-background]) %>
-  <% promo.right_section(
-    heading: "Find out more about getting into teaching"
-  ) do %>
-      <p>Explore how you can get into teaching primary or secondary and find top tips on making a successful application.</p>
+<% promo.left_section(classes: %w[tta-background]) %>
+<% promo.right_section(heading: "Get free one-to-one support") do %>
+<p>Maximise your chances of submitting a successful application quickly with the support of a dedicated adviser with years of teaching experience. Chat to an adviser through phone, text or email.</p>
 
-      <%= link_to("Get tailored guidance in your inbox", "/mailinglist/signup/name", class: "button") %>
+      <%= link_to("Find out more about advisers", "/teacher-training-advisers", class: "button") %>
   <% end %>
 <% end %>
