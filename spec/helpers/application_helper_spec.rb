@@ -189,6 +189,7 @@ describe ApplicationHelper do
           "/landing/how-to-become-a-teacher",
           "/landing/how-to-become-a-teacher-mailing-list",
           "/teacher-training-adviser/sign_up/identity",
+          "/train-to-teach-if-you-have-a-degree",
         ],
       })
     end
