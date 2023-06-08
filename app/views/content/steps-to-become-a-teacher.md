@@ -56,17 +56,17 @@
         - You can usually start applying in October, the year before your course starts.
     Start your teacher training:
       id: "step-6"
-      image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
+      image: "static/content/blog/seminar-room.jpg"
       directions:
         - Teacher training involves classroom placements in at least 2 schools, with some theoretical learning.
     Apply for a teaching role:
       id: "step-7"
-      image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
+      image: "static/content/blog/applying-for-teacher.jpg"
       directions:
         - Schools start to advertise their vacancies from January.
     Start your career:
       id: "step-8"
-      image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
+      image: "static/content/hero-images/0001.jpg"
       directions:
         - For your first 2 years as an early career teacher, you'll receive a package of support to help you find your feet.
   keywords:
