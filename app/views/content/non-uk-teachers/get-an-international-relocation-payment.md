@@ -6,7 +6,7 @@ related_content:
     Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Teach in England if you trained outside the UK: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Apply for your visa to teach in England: "/non-uk-teachers/visas-for-non-uk-teachers"
-    Apply for your visa to train to teach in England: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
+    Apply for your visa to train to teach in England: "/non-uk-teachers/visas-for-non-uk-trainees"
 
 promo_content:
 date: "2021-05-27"
@@ -80,11 +80,11 @@ As a trainee teacher, to be eligible for the international relocation payment (I
 
 You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects at secondary level (teaching children aged 11 to 16 or 11 to 18):
 
-* any secondary level language(s) except English language, including courses combining language(s) with another subject, as long as language(s) make up at least 50% of the course content
+* any language(s) except English language – your course can combine teaching a language with another subject (for example, history), as long as the language makes up at least 50% of the course content
 
-* any secondary level language(s), including courses combining language(s) with English language, as long as the non-English language(s) make up at least 50% of the course content
+* any language(s), including courses combining language(s) with English language, as long as the non-English language(s) make up at least 50% of the course content
 
-* secondary level physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics
+* physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics
 
 You can search for [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE and QTS or PGDE and QTS.
 
@@ -170,7 +170,7 @@ Physics can be taught with another subject, but must make up at least 50% of tea
 
 Check with your employing school if you’re not sure whether your teaching timetable meets the teaching subject requirements.
 
-'State schools' are schools funded by the UK government. 'Secondary schools' teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
+State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
 
 An academic year is 3 full school terms: for example, if your teaching job started in September 2023 (the start of the autumn term), it would need to continue until at least July 2024 (covering the spring and summer terms). ‘Ongoing’ or ‘permanent’ contracts lasting longer than 1 academic year are also eligible.
 
@@ -282,7 +282,7 @@ Part-time teachers and trainees will receive the international relocation paymen
 
 ### Other types of financial support from the UK government  
 
-Teachers and newly qualified trainees who meet the eligibility requirements can also apply for the following payments in addition to the international relocation payment (IRP):
+Teachers and recently qualified trainees who meet the eligibility requirements can also apply for the following payments in addition to the international relocation payment (IRP):
 
 * [the levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers)  
 * [early career payments](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools)  
