@@ -77,6 +77,14 @@ RSpec.feature "content pages check", type: :feature, content: true do
       end
     end
 
+    scenario "ensure all YouTube videos are emebedded using the YouTubeVideoComponent" do
+      @stored_pages.each do |sp|
+        sp.body.css("iframe[src*='youtube']").each do |iframe|
+          expect(iframe.parent).to have_css(".youtube-video")
+        end
+      end
+    end
+
     scenario "there are no absolute adviser URL links" do
       @stored_pages.each do |sp|
         sp.body

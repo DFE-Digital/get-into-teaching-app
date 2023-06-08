@@ -4,6 +4,7 @@ RSpec.describe "Sign up" do
   let(:get_an_adviser_flag) { "1" }
   let(:model) { TeacherTrainingAdviser::Steps::ReturningTeacher }
   let(:step_path) { teacher_training_adviser_step_path model.key }
+  let(:first_step) { TeacherTrainingAdviser::Wizard.steps.first }
 
   before do
     allow(ENV).to receive(:[]).and_call_original
@@ -25,7 +26,6 @@ RSpec.describe "Sign up" do
     end
 
     context "when viewing the first step" do
-      let(:first_step) { TeacherTrainingAdviser::Wizard.steps.first }
       let(:step_path) { teacher_training_adviser_step_path(first_step.key) }
 
       it { expect(response.body).not_to include("noindex") }
@@ -34,7 +34,15 @@ RSpec.describe "Sign up" do
     context "when disabled" do
       let(:get_an_adviser_flag) { "0" }
 
-      it { is_expected.to have_http_status(:not_found) }
+      it { is_expected.to have_http_status(:success) }
+
+      it { expect(response.body).to include("noindex") }
+
+      context "when viewing the first step" do
+        let(:step_path) { teacher_training_adviser_step_path(first_step.key) }
+
+        it { expect(response.body).to include("noindex") }
+      end
     end
   end
 
@@ -58,19 +66,18 @@ RSpec.describe "Sign up" do
       let(:params) { { first_name: "John", last_name: "Doe", email: "john@doe.com", accepted_policy_id: "latest" } }
 
       it { is_expected.to redirect_to teacher_training_adviser_step_path("returning_teacher") }
+
+      context "when disabled" do
+        let(:get_an_adviser_flag) { "0" }
+
+        it { is_expected.to redirect_to teacher_training_adviser_step_path("returning_teacher") }
+      end
     end
 
     context "with invalid data" do
       let(:params) { { "email" => "invaild-email" } }
 
       it { is_expected.to have_http_status :unprocessable_entity }
-    end
-
-    context "when disabled" do
-      let(:get_an_adviser_flag) { "0" }
-      let(:params) { {} }
-
-      it { is_expected.to have_http_status(:not_found) }
     end
 
     context "when the last step" do
@@ -142,7 +149,7 @@ RSpec.describe "Sign up" do
     context "when disabled" do
       let(:get_an_adviser_flag) { "0" }
 
-      it { is_expected.to have_http_status(:not_found) }
+      it { is_expected.to have_http_status(:success) }
     end
   end
 
@@ -152,6 +159,17 @@ RSpec.describe "Sign up" do
         receive(:create_candidate_access_token)
       get resend_verification_teacher_training_adviser_steps_path
       expect(response).to redirect_to controller.send(:authenticate_path, verification_resent: true)
+    end
+
+    context "when disabled" do
+      let(:get_an_adviser_flag) { "0" }
+
+      it "redirects to the authentication_path with verification_resent: true" do
+        expect_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+          receive(:create_candidate_access_token)
+        get resend_verification_teacher_training_adviser_steps_path
+        expect(response).to redirect_to controller.send(:authenticate_path, verification_resent: true)
+      end
     end
 
     context "when the API returns 429 too many requests" do
@@ -178,17 +196,6 @@ RSpec.describe "Sign up" do
       let(:bad_request_error) { GetIntoTeachingApiClient::ApiError.new(code: 400) }
 
       it { is_expected.to redirect_to(teacher_training_adviser_step_path(:identity)) }
-    end
-
-    context "when disabled" do
-      let(:get_an_adviser_flag) { "0" }
-
-      subject do
-        get resend_verification_teacher_training_adviser_steps_path
-        response
-      end
-
-      it { is_expected.to have_http_status(:not_found) }
     end
   end
 end

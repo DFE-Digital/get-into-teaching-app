@@ -2,7 +2,7 @@
 title: How to apply for teacher training
 subcategory: Your teacher training application
 description: |-
-  Read about the teacher training application process. Find advice on writing your teacher training personal statement and choosing your references.
+  Find out how to apply for teacher training and what to put in your application, from writing your personal statement to choosing your references.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"

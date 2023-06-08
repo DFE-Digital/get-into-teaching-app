@@ -5,10 +5,9 @@ module TeacherTrainingAdviser
     self.wizard_class = TeacherTrainingAdviser::Wizard
 
     around_action :set_time_zone, only: %i[show update]
-    before_action :check_feature_switch
     before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
-    before_action :noindex, unless: -> { request.path.include?("/#{first_step_class.key}") }
+    before_action :noindex, if: :noindex?
     layout :resolve_layout
 
     def completed
@@ -28,6 +27,13 @@ module TeacherTrainingAdviser
 
   private
 
+    def noindex?
+      return true unless ActiveModel::Type::Boolean.new.cast(ENV["GET_AN_ADVISER"])
+
+      # Only index the first step.
+      !request.path.include?("/#{first_step_class.key}")
+    end
+
     def resolve_layout
       is_first_page = @current_step.instance_of?(first_step_class)
 
@@ -38,10 +44,6 @@ module TeacherTrainingAdviser
 
     def first_step_class
       wizard_class.steps.first
-    end
-
-    def check_feature_switch
-      raise_not_found unless ActiveModel::Type::Boolean.new.cast(ENV["GET_AN_ADVISER"])
     end
 
     def set_time_zone

@@ -2,7 +2,7 @@
 title: Who do you want to teach
 heading: Who do you want to teach?
 description: |-
-  Explore who’d you’d like to teach and the qualifications you need to work with early years, further education, and pupils with special educational needs.
+  Explore the key stages and ages you want to teach, whether that's primary, secondary, early years, further education, or pupils with special educational needs.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-who-do-you-want-to-teach
 calls_to_action:
