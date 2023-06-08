@@ -3,18 +3,9 @@ require "attribute_filter"
 module Callbacks
   class Wizard < ::GITWizard::Base
     self.steps = [
-      Steps::PersonalDetails,
-      Steps::MatchbackFailed,
-      ::GITWizard::Steps::Authenticate,
       Steps::Callback,
       Steps::TalkingPoints,
     ].freeze
-
-    class << self
-      def first_key_if_authenticated
-        step_keys.fourth
-      end
-    end
 
     def matchback_attributes
       %i[candidate_id qualification_id].freeze

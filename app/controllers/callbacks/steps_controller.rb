@@ -12,15 +12,6 @@ module Callbacks
 
     layout "registration"
 
-    def index
-      query_params = request.query_parameters
-      if session[:mailinglist]&.any?
-        redirect_to(step_path(wizard_class.first_key_if_authenticated, query_params), status: :moved_permanently)
-      else
-        super
-      end
-    end
-
     def not_available
       render "not_available"
     end
