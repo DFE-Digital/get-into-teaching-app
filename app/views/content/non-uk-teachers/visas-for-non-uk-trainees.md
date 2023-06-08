@@ -76,6 +76,12 @@ You’ll be able to apply for your visa if you:
 * [have enough money to support yourself and pay for your course](https://www.gov.uk/student-visa/money)
 * [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/student-visa/knowledge-of-english)
 
+### How a teacher training bursary or scholarship can help with your student visa application
+
+If you are training to teach physics or languages, you may be eligible for a [bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees/#financial-support-for-non-uk-trainee-languages-and-physics-teachers). Bursaries and scholarships are tax-free payments which you do not have to pay back. You can use them in your student visa application as proof that you have enough money to support yourself. 
+
+Your training provider should confirm that you will receive a bursary or scholarship when they offer you a training place and send you your confirmation of acceptance for studies (CAS) reference number. They should also give you documentary proof of your bursary or scholarship, which you may be asked to include in your visa application.
+
 If you are successful in applying for a student visa, [your partner and children may also be able to apply to come to the UK with you](https://www.gov.uk/student-visa/family-members).
 
 <p class="call-to-action__action">
@@ -214,12 +220,6 @@ Learn more about:
 ## Visa fees and other charges
 
 Depending on which visa you are applying for, you will usually need to show you have enough money to support yourself in England by providing proof of a certain level of savings or income. You’ll be guided through this process when you apply for your visa.
-
-### How a teacher training bursary or scholarship can help
-
-If you are training to teach physics or languages, you may be eligible for a [bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees/#financial-support-for-non-uk-trainee-languages-and-physics-teachers). Bursaries and scholarships are cash sums from the UK government which you do not have to pay back. You can use them in your student visa application as proof that you have enough money to support yourself. 
-
-Your training provider should confirm that you will receive a bursary or scholarship when they offer you a training place and send you your confirmation of acceptance for studies (CAS) reference number. They should also give you documentary proof of your bursary or scholarship, which you may be asked to include in your visa application.
 
 ### Visa fees
 
