@@ -5,6 +5,8 @@ module MailingList
     ATTRIBUTES_TO_LEAVE = %w[
       first_name
       last_name
+      email
+      accepted_policy_id
       preferred_teaching_subject_id
       consideration_journey_stage_id
       degree_status_id

@@ -8,7 +8,7 @@ module Callbacks
     ].freeze
 
     def matchback_attributes
-      %i[candidate_id qualification_id].freeze
+      %i[candidate_id qualification_id first_name last_name email accepted_policy_id].freeze
     end
 
     def complete!

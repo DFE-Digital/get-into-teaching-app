@@ -35,6 +35,9 @@ module Callbacks
     def set_time_zone
       old_time_zone = Time.zone
       Time.zone = "London"
+
+      session[:callbacks].merge!(session[:mailinglist].slice('first_name', 'last_name', 'email', 'accepted_policy_id'))
+
       yield
     ensure
       Time.zone = old_time_zone
