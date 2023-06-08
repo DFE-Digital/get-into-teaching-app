@@ -698,7 +698,7 @@ en:
       teacher_training_adviser_steps_overseas_telephone:
         address_telephone: "Overseas telephone number (optional)"
       teacher_training_adviser_steps_previous_teacher_id:
-        teacher_id: "Teacher reference number (optional)."
+        teacher_id: "Teacher reference number (optional)"
       teacher_training_adviser_steps_what_subject_degree:
         degree_subject: "What subject is your degree?"
       teacher_training_adviser_steps_subject_like_to_teach:
@@ -820,7 +820,7 @@ en:
       teacher_training_adviser_steps_uk_telephone:
         address_telephone: |-
           Your adviser can talk to you by text and WhatsApp, as well as by
-          phone call. Giving your phone number is the easiest way to talk to an
+          phone. Giving your phone number is the easiest way to talk to an
           adviser.
       teacher_training_adviser_steps_start_teacher_training:
         initial_teacher_training_year_id: "Choose the year you would like to start your teacher training."

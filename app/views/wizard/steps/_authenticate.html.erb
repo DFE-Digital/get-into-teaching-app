@@ -11,5 +11,5 @@ hint: { text: safe_html_format(hint_text) } %>
 <% content_for(:form_help) do %>
   <p>The code expires in 15 minutes.</p>
   <p>Check your spam or junk folder if you cannot find the email.</p>
-  <p><%= link_to("Send another code to verify my details.", resend_verification_path) %></p>
+  <p><%= link_to("Send another code to verify my details", resend_verification_path) %>.</p>
 <% end %>
