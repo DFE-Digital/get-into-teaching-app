@@ -1,5 +1,5 @@
 ---
-title: "Start teacher training this September"
+title: "Train to teach this September"
 description: You can apply now to get a teacher training place starting this September. Learn where to find courses and get help with writing your personal statement.
 content:
     - content/landing/still-time-to-apply/header
