@@ -6,7 +6,7 @@ description: |-
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
-    11 top tips for interview success : "/blog/11-top-tips-for-interview-success"
+    Tips for teacher training interview success : "/train-to-be-a-teacher/teacher-training-interview"
 date: "2021-06-24"
 keywords:
   - adviser
@@ -145,10 +145,9 @@ You can change your reference details when you accept a place on a course. You m
 
 ## If you’re invited to interview
 
-Interviews usually last a day and may include time spent teaching pupils.
+Interviews are an important part of the application process. They can vary from provider to provider.
 
-Interviews vary from provider to provider – you’ll be given all the information
-you need when you’re invited to attend.
+Follow our [teacher training interview tips](/teacher-training-interview) to prepare successfully.
 
 ## If you get an offer
 
