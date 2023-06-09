@@ -18,6 +18,7 @@ keywords:
   - application
   - applying for teacher training
   - process
+  - PGCE
   - interviews
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-interviews
@@ -28,17 +29,17 @@ navigation_description: Find out how to prepare for a teacher training interview
 
 Congratulations on being invited for an interview. This is an important stage in successfully getting a place on a teacher training course.
 
-These tips can you prepare for a successful interview. The exact process will vary depending on the course provider.
+These tips can you prepare for a successful interview. The exact process will vary depending on the teacher training provider.
 
 ## Confirm your interview date
 
-The teacher training provider will email you with an interview date. If you can't make it then you may be able to ask for an alternative.
+The provider will email you with an interview date. If you can't make it then you may be able to ask for an alternative.
 
 Once the date is agreed you should recieve a confirmation email from the provider. Check this carefully to make sure you know exactly what to expect. For example, most providers ask for some type of presentation. Others may require maths or English tests to be completed in advance.
 
 ## Prepare what you need to know
 
-It's a good idea to check the course provider's website to understand more about them and what appeals to you. You can refer to this information at your interview.
+It's a good idea to check the provider's website to understand more about them and what appeals to you. You can refer to this information at your interview.
 
 Consider some possible safeguarding scenarios and how you might address them. Make sure you've read the [statutory guidance for schools and colleges on safeguarding children](https://www.gov.uk/government/publications/keeping-children-safe-in-education--2).
 
@@ -58,7 +59,7 @@ The exact questions will vary from provider to provider but there are some commo
 
 ## Consider what interviewers are looking for 
 
-Training providers want to see the qualities that will help you to be a good teacher. Consider how during your interview you can show:
+Providers want to see the qualities that will help you to be a good teacher. Consider how during your interview you can show:
 
 * your passion for teaching
 
@@ -74,7 +75,7 @@ Training providers want to see the qualities that will help you to be a good tea
 
 ## Show you’ve got the right skills
 
-Training providers will also be expecting you to demonstrate you've got relevant skills, including:
+Providers will also be expecting you to demonstrate you've got relevant skills, including:
 
 * how you reflect on your own performance
 
@@ -83,12 +84,12 @@ Training providers will also be expecting you to demonstrate you've got relevant
 * the level of your English and maths skills
 
 * the strength of your subject knowledge
- 
+
 Many providers will ask you to do some form of presentation as they want to see you have the energy and passion to capture pupils' attention. Remember this is a chance to sell yourself and prove your commitment.
 
 ## Prepare your own questions
 
-It’s good to have some questions of your own to ask. This helps you get more information and shows your interest in the course. You could ask:
+It’s good to have some questions of your own to ask. This helps you get more information and shows your interest. You could ask:
 
 * how much time will I spend in school?  
 
