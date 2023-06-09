@@ -5,7 +5,7 @@ description: |-
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
-    11 top tips for interview success : "/blog/11-top-tips-for-interview-success"
+    Tips for teacher training interview success : "/train-to-be-a-teacher/teacher/training-interview"
 date: "2023-03-30"
 keywords:
   - adviser
