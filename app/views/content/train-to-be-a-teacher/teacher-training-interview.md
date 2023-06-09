@@ -5,7 +5,7 @@ description: |-
   Prepare for a teacher training interview. Learn more about what the interview involves, what you might be asked, and how to get help to prepare.
 related_content:
     Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
-    What teacher training is like : "/train-to-be-a-teacher/inital-teacher-training"
+    What teacher training is like : "/train-to-be-a-teacher/initial-teacher-training"
 date: "2023-06-09"
 keywords:
   - adviser
@@ -98,4 +98,8 @@ It’s good to have some questions of your own to ask. This helps you get more i
 
 * what is the split between exams, coursework, group work, and presentations? 
 
-* how will this course help me to get a teaching job? 
+* how will this course help me to get a teaching job?
+
+## Think positive
+
+The most important thing is to try to relax and be yourself. With some planning, and preparation, you'll be in a strong position to answer confidently and show you can handle a classroom.
