@@ -107,6 +107,6 @@ Your application will appear in your chosen providers’ inbox as soon as you cl
 
 Be patient and do attend all of your interviews, if you have been offered them, before making any final decisions.
 
-[Get some top tips for interview success](/blog/11-top-tips-for-interview-success).
+[Get some top tips for interview success](/train-to-be-a-teacher/teacher-training-interview).
 
 If you're interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). Or find out what to expect in your [initial teacher training](/train-to-be-a-teacher/initial-teacher-training).
