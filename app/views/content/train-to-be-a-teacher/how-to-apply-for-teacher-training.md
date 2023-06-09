@@ -146,7 +146,7 @@ You can change your reference details when you accept a place on a course. You m
 
 Interviews are an important part of the application process. They can vary from provider to provider.
 
-Follow our [teacher training interview tips](/train-to-be-a-teacher/teacher-training-interview) to prepare successfully.
+See our [teacher training interview tips](/train-to-be-a-teacher/teacher-training-interview) to help you prepare.
 
 ## If you get an offer
 

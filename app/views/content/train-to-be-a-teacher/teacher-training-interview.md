@@ -32,17 +32,17 @@ These tips can you prepare for a successful interview. The exact process will va
 
 ## Confirm your interview date
 
-The teacher training provider will email you with an interview date. If you can't make it then you may be able to ask for an alternative, but some providers may only offer interviews on specific days.
+The teacher training provider will email you with an interview date. If you can't make it then you may be able to ask for an alternative.
 
 Once the date is agreed you should recieve a confirmation email from the provider. Check this carefully to make sure you know exactly what to expect. For example, most providers ask for some type of presentation. Others may require maths or English tests to be completed in advance.
 
 ## Prepare what you need to know
 
-It's a good idea to check the course provider's website to know what to expect. You can refer to this information at your interview.
+It's a good idea to check the course provider's website to understand more about them and what appeals to you. You can refer to this information at your interview.
 
 Consider some possible safeguarding scenarios and how you might address them. Make sure you've read the [statutory guidance for schools and colleges on safeguarding children](https://www.gov.uk/government/publications/keeping-children-safe-in-education--2).
 
-Also, take some time to find out about [the teachers’ standards](https://www.gov.uk/government/publications/teachers-standards) and [the national curriculum](https://www.gov.uk/government/collections/national-curriculum).
+Also, take some time to find out about the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards) and the [national curriculum](https://www.gov.uk/government/collections/national-curriculum).
 
 ## Get ready for common questions  
 
@@ -58,13 +58,13 @@ The exact questions will vary from provider to provider but there are some commo
 
 ## Consider what interviewers are looking for 
 
-Training providers want to see the qualities that will help you to be a good teacher. It’s worth having some examples prepared that cover common themes including:
+Training providers want to see the qualities that will help you to be a good teacher. Consider how during your interview you can show:
 
 * your passion for teaching
 
 * a professional approach
 
-* how your personality comes through when presenting
+* your personality when presenting
 
 * confidence, energy and enthusiasm
 
