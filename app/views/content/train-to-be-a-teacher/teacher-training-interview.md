@@ -66,7 +66,7 @@ The exact questions will vary from provider to provider but there are some commo
 
 ## Consider what interviewers are looking for 
 
-Providers want to see the qualities that will help you to be a good teacher. Consider how during your interview you can show:
+Providers want to see the qualities that will help you to be a good teacher. During your interview, consider how you can show:
 
 * your passion for teaching
 
