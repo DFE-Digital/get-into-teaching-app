@@ -48,9 +48,10 @@ Most providers ask for some type of presentation. Others may require maths or En
 
 It's a good idea to check the provider's website to understand more about them and what appeals to you. You can refer to this information at your interview.
 
+Take some time to find out about the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards) and the [national curriculum](https://www.gov.uk/government/collections/national-curriculum).
+
 Consider some possible safeguarding scenarios and how you might address them. Make sure you've read the [statutory guidance for schools and colleges on safeguarding children](https://www.gov.uk/government/publications/keeping-children-safe-in-education--2).
 
-Also, take some time to find out about the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards) and the [national curriculum](https://www.gov.uk/government/collections/national-curriculum).
 
 ## Get ready for common teacher training interview questions  
 
