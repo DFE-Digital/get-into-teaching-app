@@ -1,11 +1,11 @@
 require "rails_helper"
 
 RSpec.describe "Feedback" do
-  let(:get_an_adviser_flag) { "1" }
+  let(:feedback_flag) { "1" }
 
   before do
     allow(ENV).to receive(:[]).and_call_original
-    allow(ENV).to receive(:[]).with("GET_AN_ADVISER").and_return(get_an_adviser_flag)
+    allow(ENV).to receive(:[]).with("GET_AN_ADVISER_FEEDBACK").and_return(feedback_flag)
   end
 
   subject { response }
@@ -17,7 +17,7 @@ RSpec.describe "Feedback" do
     it { expect(response.body).to include("Give feedback on this service") }
 
     context "when disabled" do
-      let(:get_an_adviser_flag) { "0" }
+      let(:feedback_flag) { "0" }
 
       it { is_expected.to have_http_status(:not_found) }
     end
@@ -54,7 +54,7 @@ RSpec.describe "Feedback" do
     end
 
     context "when disabled" do
-      let(:get_an_adviser_flag) { "0" }
+      let(:feedback_flag) { "0" }
 
       before { post(teacher_training_adviser_feedbacks_path, params: params) }
 
@@ -99,7 +99,7 @@ RSpec.describe "Feedback" do
     end
 
     context "when disabled" do
-      let(:get_an_adviser_flag) { "0" }
+      let(:feedback_flag) { "0" }
 
       before { get teacher_training_adviser_feedbacks_path }
 
@@ -177,7 +177,7 @@ RSpec.describe "Feedback" do
     end
 
     context "when disabled" do
-      let(:get_an_adviser_flag) { "0" }
+      let(:feedback_flag) { "0" }
 
       it { expect(response).to have_http_status(:not_found) }
     end

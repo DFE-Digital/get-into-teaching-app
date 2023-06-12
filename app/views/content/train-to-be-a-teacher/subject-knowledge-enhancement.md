@@ -7,7 +7,7 @@ related_content:
     Engineers teach physics : "/subjects/engineers-teach-physics"
     Get into teaching maths : "/subjects/maths"
 description: |-
-  Find out more about subject knowledge enhancement (SKE) courses which will help you brush up the subject you want to teach.
+  Find out more about subject knowledge enhancement (SKE) courses which will help you brush up your knowledge on the subject you want to teach.
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-ske-course
     - content/train-to-be-a-teacher/promos/adviser-promo-ske

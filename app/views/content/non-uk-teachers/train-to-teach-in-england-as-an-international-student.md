@@ -8,16 +8,20 @@ related_content:
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-training-in-england
-navigation: 20.05
+navigation: 20.10
 navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
 date: "2021-05-27"
 image: "static/content/hero-images/0003.jpg"
 backlink: "../../"
+youtube_video:
+  why-train-to-teach:
+    id: u0W7UTnGcc0
+    title: A video about why you should Train to Teach in England
 inset_text:
   new-international-funding:
     text: |-
-      If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees#get-an-international-relocation-payment-irp-worth-10000">international relocation payment worth £10,000</a>.
+      If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth £10,000</a>.
 keywords:
   - International
   - Overseas
@@ -294,7 +298,7 @@ Meet other non-UK teachers and trainees and find information about English schoo
 
 Watch our video interviews with non-UK citizens who've successfully relocated to train and teach in England.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u0W7UTnGcc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+$why-train-to-teach$
 
 [Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/).
 

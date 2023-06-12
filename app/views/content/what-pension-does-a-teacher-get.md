@@ -2,7 +2,7 @@
 title: "About the teachers' pension scheme"
 heading: "About the teachers' pension scheme"
 description: |-
-  The teachers' pension is one of the most generous in the country. Learn more about the benefits of the pension scheme once you become a teacher.
+  The teachers' pension is one of the most generous in the country. Learn more about the benefits of the teachers' pension scheme.
 date: "2022-11-29"
 image: false
 promo_content:

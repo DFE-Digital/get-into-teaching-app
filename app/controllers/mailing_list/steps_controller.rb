@@ -15,6 +15,12 @@ module MailingList
       render "not_available"
     end
 
+    def completed
+      super
+
+      @first_name = wizard_store[:first_name]
+    end
+
   protected
 
     def not_available_path

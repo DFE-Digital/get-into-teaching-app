@@ -1,8 +1,8 @@
 ---
-title: Train to teach if you're changing career
+title: Career change to teaching
 heading: Train to teach if you're changing career
 description: |-
-  Find out what extra support you can get if you want to change career and get into teaching. Bring your experience to life in the classroom.
+  Find out what extra support you can get if you want a career change into teaching. Bring your skills and experience to life in the classroom.
 related_content:
     Is teaching right for me? : "/is-teaching-right-for-me"
     Changing career from engineering to teaching physics: "/blog/natural-transition-from-engineering-to-teaching-physics"
