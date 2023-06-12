@@ -88,7 +88,14 @@
     international-content:
       text: There are more steps to consider if you're <a href="/non-uk-teachers">a non-UK citizen</a>.
       color: grey
+    still-time-to-apply:
+      title: Still time to apply
+      text: |-
+        <p>There's still time to apply and start teacher training this September.</p>
+        <p><a href="/landing/still-time-to-apply">Learn more and find your postgraduate teacher training course</a>.</p>
 ---
+$still-time-to-apply$
+
 <strong>Discover if a career teaching in a primary or secondary school in England is right for you.</strong>
 
 <b>These steps can help you to achieve qualified teacher status (QTS), which you need to teach in many primary and secondary schools in England.</b>

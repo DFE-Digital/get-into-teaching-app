@@ -32,7 +32,15 @@ promo_content:
 navigation: 20.25
 navigation_title: How to apply
 navigation_description: Discover tips on preparing your teacher training application, from writing your personal statement to choosing your references.
+inset_text:
+  still-time-to-apply:
+    title: Still time to apply
+    text: |-
+      <p>There's still time to apply and start teacher training this September.</p>
+      <p><a href="/landing/still-time-to-apply">Learn more and find your postgraduate teacher training course</a>.</p>
 ---
+
+$still-time-to-apply$
 
 Give yourself the best chance of getting on the course you want.
 
