@@ -24,7 +24,7 @@ keywords:
 inset_text:
   still-time-to-apply:
     title: Still time to apply
-    text: There's still time to apply and start teacher training this September <a href="/landing/still-time-to-apply">Learn more and find your postgraduate teacher training course</a>.
+    text: There's still time to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn more and find your postgraduate teacher training course</a>.
     color: yellow
 ---
 
