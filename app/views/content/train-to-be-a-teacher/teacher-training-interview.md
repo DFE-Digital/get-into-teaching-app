@@ -6,6 +6,7 @@ description: |-
 related_content:
     Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
     What teacher training is like : "/train-to-be-a-teacher/initial-teacher-training"
+    Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider" 
 date: "2023-06-09"
 keywords:
   - adviser
@@ -35,7 +36,9 @@ These tips can help you prepare for a successful interview. The exact process wi
 
 The provider will email you with an interview date. If you can't make it then you may be able to ask for an alternative.
 
-Once the date is agreed you should receive a confirmation email from the provider. Check this carefully to make sure you know exactly what to expect. For example, most providers ask for some type of presentation. Others may require maths or English tests to be completed in advance.
+Once the date is agreed you should receive a confirmation email from the provider. Check this carefully to make sure you know exactly what to expect. 
+
+Most providers ask for some type of presentation. Others may require maths or English tests to be completed in advance.
 
 ## Prepare what you need to know
 
