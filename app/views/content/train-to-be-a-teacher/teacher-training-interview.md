@@ -30,7 +30,11 @@ navigation_description: Find out how to prepare for a teacher training interview
 
 Congratulations on being invited for an interview! This is an important stage in successfully getting a place on a teacher training course.
 
-These tips can help you prepare for a successful interview. The exact process will vary depending on the teacher training provider.
+These tips can help you prepare for a successful interview. 
+
+It could be an interview for a course that leads to qualified teacher status (QTS), a postgraduate certificate in education (PGCE), or both. 
+
+The exact interview process will vary depending on the teacher training provider.
 
 ## Confirm your interview date
 
