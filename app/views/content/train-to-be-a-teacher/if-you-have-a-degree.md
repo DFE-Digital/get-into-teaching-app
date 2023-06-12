@@ -24,9 +24,8 @@ keywords:
   inset_text:
   still-time-to-apply:
     title: Still time to apply
-    text: |-
-      <p>There's still time to apply and start teacher training this September.</p>
-      <p><a href="/landing/still-time-to-apply">Learn more and find your postgraduate teacher training course</a>.</p>
+    text: There's still time to apply and start teacher training this September.
+    <a href="/landing/still-time-to-apply">Learn more and find your postgraduate teacher training course</a>.
 ---
 
 $still-time-to-apply$
