@@ -1,5 +1,5 @@
 ---
-title: Preparing for a teacher training interview
+title: Prepare for your teacher training interview
 subcategory: Your teacher training application
 description: |-
   Prepare for a teacher training interview. Learn more about what the interview involves, what you might be asked, and how to get help to prepare.
@@ -27,15 +27,15 @@ navigation_title: Preparing for interviews
 navigation_description: Find out how to prepare for a teacher training interview, with tips on what's involved, common questions, and to how to get help.
 ---
 
-Congratulations on being invited for an interview. This is an important stage in successfully getting a place on a teacher training course.
+Congratulations on being invited for an interview! This is an important stage in successfully getting a place on a teacher training course.
 
-These tips can you prepare for a successful interview. The exact process will vary depending on the teacher training provider.
+These tips can help you prepare for a successful interview. The exact process will vary depending on the teacher training provider.
 
 ## Confirm your interview date
 
 The provider will email you with an interview date. If you can't make it then you may be able to ask for an alternative.
 
-Once the date is agreed you should recieve a confirmation email from the provider. Check this carefully to make sure you know exactly what to expect. For example, most providers ask for some type of presentation. Others may require maths or English tests to be completed in advance.
+Once the date is agreed you should receive a confirmation email from the provider. Check this carefully to make sure you know exactly what to expect. For example, most providers ask for some type of presentation. Others may require maths or English tests to be completed in advance.
 
 ## Prepare what you need to know
 
@@ -45,7 +45,7 @@ Consider some possible safeguarding scenarios and how you might address them. Ma
 
 Also, take some time to find out about the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards) and the [national curriculum](https://www.gov.uk/government/collections/national-curriculum).
 
-## Get ready for common questions  
+## Get ready for common teacher training interview questions  
 
 The exact questions will vary from provider to provider but there are some common ones that you’re likely to be asked. It can help to prepare some clear answers to these in advance:
 
