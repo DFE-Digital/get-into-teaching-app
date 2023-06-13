@@ -36,8 +36,6 @@ module Callbacks
       old_time_zone = Time.zone
       Time.zone = "London"
 
-      session[:callbacks].merge!(session[:mailinglist].slice('first_name', 'last_name', 'email', 'accepted_policy_id'))
-
       yield
     ensure
       Time.zone = old_time_zone
@@ -53,7 +51,7 @@ module Callbacks
     end
 
     def app_store
-      session[:callbacks] ||= {}
+      session[:callbacks] ||= session[:mailinglist].slice('first_name', 'last_name', 'email', 'accepted_policy_id')
     end
 
     def crm_store

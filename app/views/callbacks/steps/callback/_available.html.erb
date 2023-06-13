@@ -15,4 +15,11 @@
 
 <%= f.govuk_phone_field :address_telephone, width: 20 %>
 
+<%= f.hidden_field :accepted_policy_id, value: f.object.accepted_policy_id %>
+<%= f.hidden_field :first_name, value: f.object.first_name %>
+<%= f.hidden_field :last_name, value: f.object.last_name %>
+<%= f.hidden_field :email, value: f.object.email %>
+
+<%= f.hidden_field :candidate_id, value: f.object.candidate_id %>
+
 <%= f.govuk_select :phone_call_scheduled_at, callback_options(f.object.class.callback_booking_quotas) %>

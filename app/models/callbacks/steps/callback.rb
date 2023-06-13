@@ -3,6 +3,12 @@ module Callbacks
     class Callback < ::GITWizard::Step
       extend CallbackBookingQuotas
 
+      attribute :first_name, :string
+      attribute :last_name, :string
+      attribute :email, :string
+      attribute :accepted_policy_id, :string
+      attribute :candidate_id, :string
+
       attribute :address_telephone, :string
       attribute :phone_call_scheduled_at, :datetime
 
@@ -15,6 +21,12 @@ module Callbacks
 
       def can_proceed?
         self.class.callback_booking_quotas.any?
+      end
+
+      def candidate_id
+        api = GetIntoTeachingApiClient::TeacherTrainingAdviserApi.new
+        sign_up = api.matchback_candidate(email: 'pl2@trickid.com')
+        sign_up.candidate_id
       end
     end
   end
