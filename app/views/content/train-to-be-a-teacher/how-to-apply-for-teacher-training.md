@@ -34,7 +34,7 @@ navigation_title: How to apply
 navigation_description: Discover tips on preparing your teacher training application, from writing your personal statement to choosing your references.
 inset_text:
   still-time-to-apply:
-    title: Still time to apply
+    title: Start your training this September
     text: There's still time to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn where to find courses and how to get support with your application</a>.
     color: yellow
 ---

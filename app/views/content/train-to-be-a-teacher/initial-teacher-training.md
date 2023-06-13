@@ -12,7 +12,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-itt
 inset_text:
   still-time-to-apply:
-    title: Still time to apply
+    title: Start your training this September
     text: There's still time to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn where to find courses and how you can get support with your application</a>.</p>
     color: yellow
 ---
