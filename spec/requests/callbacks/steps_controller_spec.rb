@@ -11,15 +11,22 @@ describe Callbacks::StepsController, type: :request do
     end
   end
 
-  let(:model) { Callbacks::Steps::PersonalDetails }
+  let(:model) { Callbacks::Steps::Callback }
   let(:step_path) { callbacks_step_path model.key }
+
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::TeacherTrainingAdviserApi).to \
+      receive(:matchback_candidate).with({ email: nil }) do
+      GetIntoTeachingApiClient::GetIntoTeachingCallback.new
+    end
+  end
 
   describe "#index" do
     subject { response }
 
     before { get callbacks_steps_path(query: "param") }
 
-    it { is_expected.to redirect_to(callbacks_step_path({ id: :personal_details, query: "param" })) }
+    it { is_expected.to redirect_to(callbacks_step_path({ id: :callback, query: "param" })) }
   end
 
   describe "#show" do
@@ -46,9 +53,9 @@ describe Callbacks::StepsController, type: :request do
     let(:key) { model.model_name.param_key }
 
     context "with valid data" do
-      let(:details_params) { attributes_for(:callbacks_personal_details) }
+      let(:details_params) { attributes_for(:callbacks_callback) }
 
-      it { is_expected.to redirect_to callbacks_step_path("authenticate") }
+      it { is_expected.to redirect_to callbacks_step_path("talking_points") }
     end
 
     context "with invalid data" do
@@ -69,10 +76,6 @@ describe Callbacks::StepsController, type: :request do
       let(:steps) { Callbacks::Wizard.steps }
       let(:model) { steps.last }
       let(:details_params) { attributes_for :"callbacks_#{model.key}" }
-
-      before do
-        allow_any_instance_of(Callbacks::Steps::MatchbackFailed).to receive(:skipped?).and_return true
-      end
 
       context "when all valid" do
         before do

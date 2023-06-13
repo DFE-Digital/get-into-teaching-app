@@ -25,7 +25,7 @@ module Callbacks
 
       def candidate_id
         api = GetIntoTeachingApiClient::TeacherTrainingAdviserApi.new
-        sign_up = api.matchback_candidate(email: 'pl2@trickid.com')
+        sign_up = api.matchback_candidate(email: email)
         sign_up.candidate_id
       end
     end

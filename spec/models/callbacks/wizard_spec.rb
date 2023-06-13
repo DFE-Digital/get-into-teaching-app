@@ -21,18 +21,9 @@ describe Callbacks::Wizard do
 
     it do
       is_expected.to eql [
-        Callbacks::Steps::PersonalDetails,
-        Callbacks::Steps::MatchbackFailed,
-        ::GITWizard::Steps::Authenticate,
         Callbacks::Steps::Callback,
         Callbacks::Steps::TalkingPoints,
       ]
-    end
-  end
-
-  describe "#matchback_attributes" do
-    it do
-      expect(subject.matchback_attributes).to match_array(%i[candidate_id qualification_id])
     end
   end
 
