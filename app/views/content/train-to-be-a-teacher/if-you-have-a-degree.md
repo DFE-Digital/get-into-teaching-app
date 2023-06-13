@@ -21,7 +21,14 @@ keywords:
   - school direct
   - pgce
   - qts
+inset_text:
+  still-time-to-apply:
+    title: Start your training this September
+    text: There's still time to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn where to find courses and how you can get support with your application</a>.
+    color: yellow
 ---
+
+$still-time-to-apply$
 
 You need a bachelor's degree to teach in primary, secondary and special schools in England. This does not have to be a bachelor's degree in teaching.
 
