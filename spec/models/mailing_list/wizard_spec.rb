@@ -52,7 +52,7 @@ describe MailingList::Wizard do
         degree_status_id: degree_status_id,
         preferred_teaching_subject_id: wizardstore[:preferred_teaching_subject_id],
         welcome_guide_variant: variant,
-        accepted_policy_id: wizardstore[:accepted_policy_id],
+        accepted_policy_id: wizardstore[:accepted_policy_id]
       })
     end
 
@@ -72,6 +72,8 @@ describe MailingList::Wizard do
     it "prunes the store, retaining certain attributes" do
       subject.complete!
       expect(store[uuid]).to eql({
+        "email" => wizardstore[:email],
+        "accepted_policy_id" => wizardstore[:accepted_policy_id],
         "first_name" => wizardstore[:first_name],
         "last_name" => wizardstore[:last_name],
         "degree_status_id" => wizardstore[:degree_status_id],

@@ -3,12 +3,6 @@ module Callbacks
     class Callback < ::GITWizard::Step
       extend CallbackBookingQuotas
 
-      attribute :first_name, :string
-      attribute :last_name, :string
-      attribute :email, :string
-      attribute :accepted_policy_id, :string
-      attribute :candidate_id, :string
-
       attribute :address_telephone, :string
       attribute :phone_call_scheduled_at, :datetime
 
@@ -23,11 +17,15 @@ module Callbacks
         self.class.callback_booking_quotas.any?
       end
 
-      def candidate_id
-        api = GetIntoTeachingApiClient::TeacherTrainingAdviserApi.new
-        sign_up = api.matchback_candidate(email: email)
-        sign_up.candidate_id
-      end
+      # def candidate_id
+      #   retries ||= 0
+      #
+      #   api = GetIntoTeachingApiClient::TeacherTrainingAdviserApi.new
+      #   sign_up = api.matchback_candidate(email: email)
+      #   sign_up.candidate_id
+      # rescue
+      #   retry if (retries += 1) < 3
+      # end
     end
   end
 end

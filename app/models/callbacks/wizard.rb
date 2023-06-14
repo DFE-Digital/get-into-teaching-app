@@ -7,10 +7,6 @@ module Callbacks
       Steps::TalkingPoints,
     ].freeze
 
-    def matchback_attributes
-      %i[candidate_id qualification_id].freeze
-    end
-
     def complete!
       super.tap do |result|
         break unless result
@@ -37,8 +33,14 @@ module Callbacks
     end
 
     def construct_export
+      api = GetIntoTeachingApiClient::TeacherTrainingAdviserApi.new
+      sign_up = api.matchback_candidate(email: @store.fetch('email').values.first)
+
       attributes = GetIntoTeachingApiClient::GetIntoTeachingCallback.attribute_map.keys
-      export_data.slice(*attributes.map(&:to_s))
+      data = export_data.merge(@store.fetch(%w(first_name last_name email accepted_policy_id)))
+      data['candidate_id'] = sign_up.candidate_id
+
+      data.slice(*attributes.map(&:to_s))
     end
   end
 end

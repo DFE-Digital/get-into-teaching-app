@@ -11,6 +11,7 @@ describe Callbacks::Wizard do
         "first_name" => "John",
         "last_name" => "Doe",
         "talking_points" => "Something",
+        "accepted_policy_id" => "123",
       },
     }
   end
@@ -35,6 +36,9 @@ describe Callbacks::Wizard do
         last_name: "Doe",
         talking_points: "Something",
         accepted_policy_id: "123",
+        candidate_id: nil,
+        address_telephone: nil,
+        phone_call_scheduled_at: nil,
       )
     end
 
