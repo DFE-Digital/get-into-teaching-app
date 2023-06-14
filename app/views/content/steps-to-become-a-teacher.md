@@ -114,7 +114,7 @@
 
 <b>These steps can help you to achieve qualified teacher status (QTS), which you need to teach in many primary and secondary schools in England.</b>
 
-<b>You do not have to follow the steps in order and some may take longer than others.</b>
+<b>You do not have to follow all of the steps in order and some may take longer than others.</b>
 
 $international-content$
 
