@@ -453,7 +453,7 @@ provider_groups:
       link: https://ywtt.org.uk/ywtt-paid-internship-programme/
       subjects: chemistry, computing, maths, physics, languages
       name: Sarah Barley
-      email: sarah.barley@theeducationalliance.org.uk
+      email: sarah.barley@theeducationalliance.org.uk --->
 keywords:
   - teaching internship
   - internship
