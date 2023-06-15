@@ -166,11 +166,11 @@ You must be employed in an English state secondary school on a contract lasting 
 
 * a physics teacher
 
-* a general or combined science teacher (you must teach the physics element of these subjects)
+* a general or combined science teacher – you must teach the physics element of these subjects
 
-* a language teacher – any language is eligible excluding English 
+* a language teacher – any language is eligible except English 
 
-If you are employed to teach more than one subject, the subjects above must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. Check with your school if you're not sure whether you are eligible. 
+If you are employed to teach more than one subject, these subjects must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. Check with your school if you're not sure whether you are eligible. 
 
 Examples of eligible teaching jobs include: 
 
