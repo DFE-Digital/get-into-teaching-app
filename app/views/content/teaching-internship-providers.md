@@ -68,7 +68,7 @@ provider_groups:
       name: Administrator
       email: interns@diverse-ac.org.uk
   East of England:
-  providers:
+    providers:
     - header: Advanced Learning Partnership
       link: https://www.advancedlearningpartnership.co.uk/
       subjects: chemistry, computing, maths, physics, languages
