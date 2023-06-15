@@ -170,7 +170,7 @@ You must be employed in an English state secondary school on a contract lasting 
 
 * a language teacher – any language is eligible excluding English 
 
-If you are employed to teach more than one subject, the subjects above must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. If you are unsure whether you will be eligible, you may want to check this with your school.
+If you are employed to teach more than one subject, the subjects above must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. Check with your school if you're not sure whether you are eligible. 
 
 Examples of eligible teaching jobs include: 
 
