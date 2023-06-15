@@ -162,13 +162,25 @@ To be eligible for the international relocation payment (IRP), you must meet all
 
 ### 1. Teaching subject (teachers)
 
-You must have accepted a job as a teacher of languages or physics in an English state secondary school on a contract lasting at least one academic year.  
+You must be employed in an English state secondary school on a contract lasting at least one academic year as: 
 
-Teachers of all languages offered in English state secondary schools are eligible to apply for the IRP. Language(s), with the exception of English language, can be combined with another subject, but must make up at least 50% of teaching time. You can, however, combine teaching English language with another language (for example, French, German or Spanish), as long as the non-English language makes up at least 50% of your teaching timetable.  
+* a physics teacher
 
-Physics can be taught with another subject, but must make up at least 50% of teaching time. Teachers of general science or combined science  are also eligible to apply for the IRP, as long as they are teaching the physics element of general science or combined science. General science or combined science can be taught with another subject, but must make up at least 50% of teaching time.  
+* a general or combined science teacher (you must teach the physics element of these subjects)
 
-Check with your employing school if you’re not sure whether your teaching timetable meets the teaching subject requirements.
+* a language teacher – any language is eligible excluding English 
+
+If you are employed to teach more than one subject, the subjects above must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. If you are unsure whether you will be eligible, you may want to check this with your school.
+
+Examples of eligible teaching jobs include: 
+
+* 50% modern foreign languages (for example, French, Spanish or German) and 50% another subject (for example, history)  
+
+* 50% modern foreign languages (for example, French, Spanish or German) and 50% English language 
+
+* 50% physics and 50% maths 
+
+* 50% general or combined science (must include the physics element) and 50% maths 
 
 State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
 
