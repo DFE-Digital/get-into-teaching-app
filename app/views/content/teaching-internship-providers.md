@@ -68,7 +68,7 @@ provider_groups:
       name: Administrator
       email: interns@diverse-ac.org.uk
   East of England:
-    providers:
+  providers:
     - header: Advanced Learning Partnership
       link: https://www.advancedlearningpartnership.co.uk/
       subjects: chemistry, computing, maths, physics, languages
@@ -453,7 +453,7 @@ provider_groups:
       link: https://ywtt.org.uk/ywtt-paid-internship-programme/
       subjects: chemistry, computing, maths, physics, languages
       name: Sarah Barley
-      email: sarah.barley@theeducationalliance.org.uk --->
+      email: sarah.barley@theeducationalliance.org.uk
 keywords:
   - teaching internship
   - internship
