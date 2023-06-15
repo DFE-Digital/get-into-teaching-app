@@ -16,16 +16,6 @@ module Callbacks
       def can_proceed?
         self.class.callback_booking_quotas.any?
       end
-
-      # def candidate_id
-      #   retries ||= 0
-      #
-      #   api = GetIntoTeachingApiClient::TeacherTrainingAdviserApi.new
-      #   sign_up = api.matchback_candidate(email: email)
-      #   sign_up.candidate_id
-      # rescue
-      #   retry if (retries += 1) < 3
-      # end
     end
   end
 end

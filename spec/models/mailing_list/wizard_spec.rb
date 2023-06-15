@@ -52,7 +52,7 @@ describe MailingList::Wizard do
         degree_status_id: degree_status_id,
         preferred_teaching_subject_id: wizardstore[:preferred_teaching_subject_id],
         welcome_guide_variant: variant,
-        accepted_policy_id: wizardstore[:accepted_policy_id]
+        accepted_policy_id: wizardstore[:accepted_policy_id],
       })
     end
 

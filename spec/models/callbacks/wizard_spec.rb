@@ -17,6 +17,13 @@ describe Callbacks::Wizard do
   end
   let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
 
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
+      receive(:matchback_get_into_teaching_callback).with({ email: "email@address.com" }) do
+      GetIntoTeachingApiClient::GetIntoTeachingCallback.new
+    end
+  end
+
   describe ".steps" do
     subject { described_class.steps }
 

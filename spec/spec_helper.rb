@@ -21,6 +21,8 @@ require "dfe/analytics/testing"
 
 require "simplecov"
 require "simplecov_json_formatter"
+require "rack_session_access/capybara"
+
 SimpleCov.start "rails" do
   add_filter "/app/services/get_into_teaching_api/fake_endpoints.rb"
   add_filter "/bin/"

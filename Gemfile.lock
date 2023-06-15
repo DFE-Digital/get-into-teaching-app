@@ -387,6 +387,9 @@ GEM
       rack
     rack-test (2.1.0)
       rack (>= 1.3)
+    rack_session_access (0.2.0)
+      builder (>= 2.0.0)
+      rack (>= 1.0.0)
     rails (7.0.2.3)
       actioncable (= 7.0.2.3)
       actionmailbox (= 7.0.2.3)
@@ -588,7 +591,7 @@ DEPENDENCIES
   foreman
   front_matter_parser!
   geometry!
-  get_into_teaching_api_client_faraday (= 3.3.0)!
+  get_into_teaching_api_client_faraday!
   git_wizard!
   google-api-client (>= 0.53.0)
   govuk_design_system_formbuilder (>= 2.8.0)
@@ -616,6 +619,7 @@ DEPENDENCIES
   rack-cors
   rack-host-redirect
   rack-page_caching!
+  rack_session_access
   rails (~> 7.0.2.3)
   rails_semantic_logger (>= 4.10.0)
   redis

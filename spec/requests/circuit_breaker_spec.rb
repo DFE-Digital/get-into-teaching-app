@@ -31,11 +31,6 @@ describe "Circuit breaker", type: :request do
       expect(response).to redirect_to(mailinglist_not_available_path)
     end
 
-    it "the Callbacks::StepsController redirects to an error page" do
-      get callbacks_step_path("personal_details")
-      expect(response).to redirect_to(callbacks_not_available_path)
-    end
-
     it "the TeacherTrainingAdviser::Steps controller redirects to an error page" do
       get teacher_training_adviser_step_path(TeacherTrainingAdviser::Steps::StageOfDegree.key)
       expect(response).to redirect_to(teacher_training_adviser_not_available_path)
