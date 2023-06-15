@@ -57,7 +57,7 @@ keywords:
 
 The information on this page is for:
 
-* non-UK teachers of languages and physics
+* non-UK teachers of languages, physics and general or combined science when it includes physics
 * non-UK trainee teachers of languages and physics   
 
 If you are considering coming to England to teach or train to teach languages or physics, you could be eligible for financial help from the UK government worth £10,000.  
@@ -162,7 +162,7 @@ To be eligible for the international relocation payment (IRP), you must meet all
 
 ### 1. Teaching subject (teachers)
 
-You must be employed in an English state secondary school on a contract lasting at least one academic year as: 
+You must be employed in an English state secondary school on a contract lasting at least one year as: 
 
 * a physics teacher
 
@@ -184,7 +184,7 @@ Examples of eligible teaching jobs include:
 
 State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
 
-An academic year is 3 full school terms: for example, if your teaching job started in September 2023 (the start of the autumn term), it would need to continue until at least July 2024 (covering the spring and summer terms). ‘Ongoing’ or ‘permanent’ contracts lasting longer than 1 academic year are also eligible.
+Ongoing or permanent contracts lasting longer than 1 year are also eligible.
 
 [Check the type and age range of the school](https://www.get-information-schools.service.gov.uk/) where you’ll be teaching. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school).
 
@@ -234,9 +234,9 @@ You will not be eligible for the international relocation payment if you are:
 
 * teaching only English language and literature
 
-* employed on a contract lasting less than one academic year
+* employed on a contract lasting less than one year
 
-* employed by a recruitment agency
+* employed by a recruitment agency – an agency can find and place you in a school, but your salary must be paid by the school
 
 ## How teachers can apply for the international relocation payment
 
