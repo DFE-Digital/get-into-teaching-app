@@ -145,7 +145,7 @@ For general enquiries about the IRP, please email us at teach.inengland@educatio
 
 ### Bursaries and scholarships for physics and languages
 
-Bursaries and scholarships are cash sums from the UK government that you do not have to pay back. Bear in mind that:
+Bursaries and scholarships are tax-free payments from the UK government that you do not have to pay back. Bear in mind that:
 
 * you cannot be awarded both a bursary and a scholarship
 * bursaries and scholarships are only available for courses where you pay a fee to study teacher training
