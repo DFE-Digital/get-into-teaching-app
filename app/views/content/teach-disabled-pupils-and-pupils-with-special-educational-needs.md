@@ -2,7 +2,7 @@
 title: "Teach pupils with special educational needs and disabilities"
 heading: "Teach pupils with special educational needs and disabilities (SEND)"
 description: |-
-  As a qualified teacher you’ll have the opportunity to work with pupils with complex needs, no matter what setting you work in.
+  Find out how you can teach pupils with special educational needs and disabilities and how to become a special educational needs coordinator (SENCO).
 date: "2021-05-07"
 image: "static/content/hero-images/0023.jpg"
 article_classes: ['longform']

@@ -2,11 +2,10 @@
 title: How to apply for teacher training
 subcategory: Your teacher training application
 description: |-
-  Read about the teacher training application process. Find advice on writing your teacher training personal statement and choosing your references.
+  Find out how to apply for teacher training and what to put in your application, from writing your personal statement to choosing your references.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
-    11 top tips for interview success : "/blog/11-top-tips-for-interview-success"
 date: "2021-06-24"
 keywords:
   - adviser
@@ -32,7 +31,14 @@ promo_content:
 navigation: 20.25
 navigation_title: How to apply
 navigation_description: Discover tips on preparing your teacher training application, from writing your personal statement to choosing your references.
+inset_text:
+  still-time-to-apply:
+    title: Start your training this September
+    text: There's still time to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn where to find courses and how to get support with your application</a>.
+    color: yellow
 ---
+
+$still-time-to-apply$
 
 Give yourself the best chance of getting on the course you want.
 
@@ -145,10 +151,9 @@ You can change your reference details when you accept a place on a course. You m
 
 ## If you’re invited to interview
 
-Interviews usually last a day and may include time spent teaching pupils.
+Interviews are an important part of the application process. They can vary from provider to provider.
 
-Interviews vary from provider to provider – you’ll be given all the information
-you need when you’re invited to attend.
+See our [teacher training interview tips](/train-to-be-a-teacher/teacher-training-interview) to help you prepare.
 
 ## If you get an offer
 

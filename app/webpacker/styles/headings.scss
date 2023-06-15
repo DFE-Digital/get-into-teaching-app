@@ -65,6 +65,7 @@
 
 .heading-m {
   @include font-size("medium");
+  font-weight: bold;
 }
 
 .heading-s {
