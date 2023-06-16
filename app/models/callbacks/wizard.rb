@@ -26,7 +26,6 @@ module Callbacks
   private
 
     def book_callback
-      # byebug
       callback = GetIntoTeachingApiClient::GetIntoTeachingCallback.new(construct_export)
       api = GetIntoTeachingApiClient::GetIntoTeachingApi.new
       Rails.logger.info("Callbacks::Wizard#book_get_into_teaching_callback: #{AttributeFilter.filtered_json(callback)}")
@@ -36,10 +35,12 @@ module Callbacks
     def construct_export
       api = GetIntoTeachingApiClient::GetIntoTeachingApi.new
       sign_up = api.matchback_get_into_teaching_callback(email: @store.fetch("email").values.first)
+      candidate_id = sign_up.candidate_id
 
       attributes = GetIntoTeachingApiClient::GetIntoTeachingCallback.attribute_map.keys
-      data = export_data.merge(@store.fetch(%w[first_name last_name email accepted_policy_id]))
-      data["candidate_id"] = sign_up.candidate_id
+      mailinglist_attributes = @store.fetch(%w[first_name last_name email accepted_policy_id])
+      data = export_data.merge(mailinglist_attributes)
+      data["candidate_id"] = candidate_id
 
       data.slice(*attributes.map(&:to_s))
     end
