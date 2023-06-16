@@ -22,9 +22,6 @@ RSpec/Capybara/FeatureMethods:
 Lint/AmbiguousOperator:
   Enabled: false
 
-Layout/EndOfLine:
-   Enabled: False
-
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 
