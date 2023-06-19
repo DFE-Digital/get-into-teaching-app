@@ -55,7 +55,9 @@ This is in addition to the time allocated for planning, preparation and assessme
 
 ## Meeting the teachers’ standards
 
-You’ll have to show you meet the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards) through your induction period. You’ll need to pass your induction period to continue to work as a qualified teacher in a state maintained school in England.
+You’ll have to show you meet the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards) at the end of your induction period — your mentor and induction tutor will help you to develop your skills and practice to support you with this.
+
+All teachers must be able to show they meet the teachers' standards to pass induction and continue to work in many schools in England (for example, schools funded by local councils).
 
 ### Your induction tutor
 

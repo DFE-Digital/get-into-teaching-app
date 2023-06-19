@@ -22,6 +22,12 @@
           partial: content/steps-to-become-a-teacher/step_4_find_a_teacher_training_course
         Apply for teacher training:
           partial: content/steps-to-become-a-teacher/step_5_apply_for_teacher_training
+        Start your teacher training:
+          partial: content/steps-to-become-a-teacher/step_6_start_your_teacher_training
+        Apply for a teaching role:
+          partial: content/steps-to-become-a-teacher/step_7_apply_for_a_teaching_role
+        Start your career:
+          partial: content/steps-to-become-a-teacher/step_8_start_your_career
   how_to:
     Check your qualifications:
       id: "step-1"
@@ -48,6 +54,21 @@
       image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
       directions:
         - You can usually start applying in October, the year before your course starts.
+    Start your teacher training:
+      id: "step-6"
+      image: "static/content/blog/seminar-room.jpg"
+      directions:
+        - Teacher training involves classroom placements in at least 2 schools, with some theoretical learning.
+    Apply for a teaching role:
+      id: "step-7"
+      image: "static/content/blog/applying-for-teacher.jpg"
+      directions:
+        - Schools start to advertise their vacancies from January.
+    Start your career:
+      id: "step-8"
+      image: "static/content/hero-images/0001.jpg"
+      directions:
+        - For your first 2 years as an early career teacher, you'll receive a package of support to help you find your feet.
   keywords:
     - QTS
     - Qualified Teacher Status
@@ -99,7 +120,7 @@ $still-time-to-apply$
 
 <b>These steps can help you to achieve qualified teacher status (QTS), which you need to teach in many primary and secondary schools in England.</b>
 
-<b>You do not have to follow the steps in order and some may take longer than others.</b>
+<b>You do not have to follow all of the steps in order and some may take longer than others.</b>
 
 $international-content$
 
