@@ -15,6 +15,15 @@ describe Callbacks::StepsController, type: :request do
   let(:step_path) { callbacks_step_path model.key }
 
   before do
+    allow_any_instance_of(ActionDispatch::Request::Session).to \
+      receive(:[]).with(:mailinglist).and_return({ "first_name": "John", "last_name": "Doe", "email": "email@address.com", "accepted_policy_id": "123" })
+
+    allow_any_instance_of(ActionDispatch::Request::Session).to \
+      receive(:[]).with(:callbacks).and_return({})
+
+    allow_any_instance_of(ActionDispatch::Request::Session).to \
+      receive(:[]).with(:callbacks_crm).and_return({})
+
     allow_any_instance_of(GetIntoTeachingApiClient::TeacherTrainingAdviserApi).to \
       receive(:matchback_candidate).with({ email: nil }) do
       GetIntoTeachingApiClient::GetIntoTeachingCallback.new

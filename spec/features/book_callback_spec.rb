@@ -87,6 +87,8 @@ RSpec.feature "Book a callback", type: :feature do
     end
 
     scenario "Viewing the callback page" do
+      page.set_rack_session(mailinglist: callback_attrs.slice(:first_name, :last_name, :email, :accepted_policy_id))
+
       visit callbacks_step_path(:callback)
 
       expect(page).not_to have_text("Choose a time for your callback")

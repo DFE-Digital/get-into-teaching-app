@@ -51,6 +51,8 @@ module Callbacks
     end
 
     def app_store
+      redirect_to session_expired_path if session[:mailinglist].blank?
+
       session[:callbacks] ||= session[:mailinglist]&.slice("first_name", "last_name", "email", "accepted_policy_id") || {}
     end
 
