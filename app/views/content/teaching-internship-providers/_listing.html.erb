@@ -1,3 +1,16 @@
+<div class="content-alert content-alert--fullwidth">
+    <div>
+      <span class="icon icon-warning" aria-hidden="true"></span>
+    </div>
+    <div>
+      <h2 class="heading-m">Applications for teaching internships are now closed</h2>
+
+      <p>Our explore teaching advisers can let you know when applications re-open for the summer 2024 internships. They can also give helpful advice and insights about getting into teaching.</p>
+
+      <p><a class="button button--white" href="/explore-teaching-advisers">Find out about explore teaching advisers</a></p>
+    </div>
+  </div>
+
 <p>If you’re studying for a degree and interested in a career in teaching, an internship could help you to understand what it’s really like in the classroom. You’ll get to experience a range of activities to help you get a feel for school life.</p>
 
 <p>Internships last 3 weeks, start in June and you’ll be paid £300 per week.</p>
@@ -13,7 +26,7 @@
 
 <h2>Internship subjects</h2>
 
-<p>You’ll need to be studying for a related degree and interested in teaching one of these subjects:</p>
+<p>Teaching internships are only available if you're studying for a related degree and interested in teaching certain subjects. In 2023, these included:</p>
 <ul>
   <li>chemistry</li>
   <li>computing</li>
@@ -50,16 +63,4 @@
     background: "grey",
     large: false
   ) %>
-</section>
-
-<h2>How to apply</h2>
-
-<p>You can apply for an internship directly to one of the schools listed below.</p>
-
-<p> To have the best chance of succeeding in your application, <a href="/explore-teaching-advisers"> get help from an adviser</a>. They offer one-to-one support, and are all experienced teachers.</p>
-
-<h3>Find a teaching internship in your region</h3>
-
-<section class="providers-list">
-  <%= render GroupedCards::ListingComponent.new @front_matter["provider_groups"] %>
 </section>
