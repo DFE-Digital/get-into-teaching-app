@@ -162,7 +162,7 @@ To be eligible for the international relocation payment (IRP), you must meet all
 
 ### 1. Teaching subject (teachers)
 
-You must be employed in an English state secondary school on a contract lasting at least one year as: 
+You must be employed in an English state secondary school on a contract beginning in the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024). Your contract must last at least one year and you must be working as: 
 
 * a physics teacher
 
@@ -170,7 +170,7 @@ You must be employed in an English state secondary school on a contract lasting 
 
 * a language teacher – any language is eligible except English 
 
-If you are employed to teach more than one subject, these subjects must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. Check with your school if you're not sure whether you are eligible. 
+If you are employed to teach more than one subject, physics, general or combined science or language must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. Check with your school if you're not sure whether you are eligible. 
 
 Examples of eligible teaching jobs include: 
 
@@ -236,7 +236,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * employed on a contract lasting less than one year
 
-* employed by a recruitment agency – an agency can find and place you in a school, but your salary must be paid by the school
+* employed by a recruitment agency – an agency can find and place you in a school, but your contract must be with the school and your salary must be paid by the school not by the recruitment agency
 
 ## How teachers can apply for the international relocation payment
 
