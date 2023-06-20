@@ -142,7 +142,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * doing an assessment only QTS
 
-* training to teach only English language and literature
+* training to teach only English language 
 
 ## How trainee teachers can get the international relocation payment
 
@@ -232,7 +232,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * a non-UK citizen who moved to England to live permanently more than 3 months before the start of your job
 
-* teaching only English language and literature
+* teaching only English language
 
 * employed on a contract lasting less than one year
 
