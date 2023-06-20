@@ -96,7 +96,7 @@
     margin-left: $indent-amount;
   }
 
-  .quote:not(.quote--inline-left, .quote--inline-right) {
+  .quote:not(.quote--inline-left):not(.quote--inline-right) {
     .footer {
       flex-direction: row;
       justify-content: space-between;

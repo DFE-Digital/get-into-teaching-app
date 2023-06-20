@@ -24,7 +24,7 @@ gem "shakapacker", "6.5.6"
 # gem 'mini_magick', '~> 4.8'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", ">= 1.12.0", require: false
+gem "bootsnap", ">= 1.16.0", require: false
 
 # Temporarily adding as part of Ruby 3.1 upgrade, we should be able
 # to remove them once we're on Rails 7.0.1+
@@ -43,7 +43,7 @@ gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.4.0"
 gem "rinku"
 
-gem "addressable", "~> 2.8.1"
+gem "addressable", "~> 2.8.4"
 
 gem "rack-attack"
 
@@ -127,7 +127,7 @@ group :development, :test do
   gem "rspec-rails", "~> 6.0.1"
 
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 3.38"
+  gem "capybara", "~> 3.39.1"
   gem "factory_bot_rails", ">= 6.2.0"
   # See: https://github.com/otherguy/rspec-sonarqube-formatter/pull/63
   gem "rspec-sonarqube-formatter", github: "otherguy/rspec-sonarqube-formatter", ref: "13fe436", require: false

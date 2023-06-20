@@ -137,7 +137,7 @@ ol.photo-quote-list {
     }
   }
 
-  &:not(&--numbered) {
+  &:not(&--numbered) { /* stylelint-disable-line selector-not-notation */
     .item:before {
       display: none;
     }
