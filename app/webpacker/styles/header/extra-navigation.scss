@@ -11,6 +11,10 @@
     justify-content: flex-end;
   }
 
+  .extra-navigation__mail {
+    margin-bottom: 0;
+  }
+
   &__link a {
     display: inline-block;
     padding: .6em $indent-amount;
