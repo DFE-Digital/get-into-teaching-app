@@ -8,12 +8,9 @@ gem update --system
 
 echo "Installing dependencies..."
 bundle install
-yarn install
+yarn install --ignore-engines
 
 echo "Creating database..."
 bin/rails db:create db:schema:load db:migrate db:seed
-
-echo "Installing documentation dependencies"
-cd docs && bundle
 
 echo "Done!"
