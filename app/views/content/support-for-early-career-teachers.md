@@ -42,10 +42,8 @@ You’ll be given a mentor during your induction period.
 
 Your mentor will:
 
-* provide one to one support and feedback
-* work with your school to make sure you’re receiving a high quality induction programme
-* provide or arrange mentoring and coaching around specific subject areas
-* take prompt, appropriate action if you’re having difficulties
+* provide one-to-one support and feedback
+* arrange mentoring and coaching around specific subject areas
 
 ## Paid time away from classroom teaching
 
@@ -63,7 +61,7 @@ All teachers must be able to show they meet the teachers' standards to pass indu
 
 You’ll have an induction tutor at your school who’ll assess you against the teachers’ standards. Usually, your induction tutor will be different from your mentor but this may depend on your school’s capacity to fill the 2 roles.
 
-You’ll have regular progress reviews with your induction tutor so that you can discuss your progress and feedback.
+You’ll have regular progress reviews with your induction tutor so that you can discuss your progress and feedback. They'll take prompt, appropriate action if you're having difficulties.
 
 ### How you'll be assessed
 
