@@ -3,8 +3,6 @@ require "rails_helper"
 RSpec.describe TeacherTrainingAdviser::Steps::WhatSubjectDegree do
   include_context "with a TTA wizard step"
   it_behaves_like "a with wizard step"
-  it_behaves_like "with a wizard step that exposes API lookup items as options",
-                  :get_teaching_subjects, described_class::OMIT_SUBJECT_IDS
 
   describe "attributes" do
     it { is_expected.to respond_to :degree_subject }
@@ -13,6 +11,12 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatSubjectDegree do
   describe "#degree_subject" do
     it { is_expected.not_to allow_values("", nil).for :degree_subject }
     it { is_expected.to allow_value("Maths").for :degree_subject }
+  end
+
+  describe "#options" do
+    subject { described_class.options }
+
+    it { is_expected.to eq(Crm::TeachingSubject.all_hash) }
   end
 
   describe "#skipped?" do

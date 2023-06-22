@@ -5,7 +5,7 @@ describe MailingList::Wizard do
 
   let(:uuid) { SecureRandom.uuid }
   let(:degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :final_year) }
-  let(:preferred_teaching_subject_id) { Crm::TeachingSubject.lookup_by_key(:physics_with_maths) }
+  let(:preferred_teaching_subject_id) { Crm::TeachingSubject.lookup_by_key(:physics) }
   let(:store) do
     { uuid => {
       "email" => "email@address.com",
@@ -43,7 +43,7 @@ describe MailingList::Wizard do
   end
 
   describe "#complete!" do
-    let(:variant) { "/email/subject/physics_with_maths/degree-status/final_year" }
+    let(:variant) { "/email/subject/physics/degree-status/final_year" }
     let(:request) do
       GetIntoTeachingApiClient::MailingListAddMember.new({
         email: wizardstore[:email],
@@ -77,6 +77,7 @@ describe MailingList::Wizard do
         "degree_status_id" => wizardstore[:degree_status_id],
         "preferred_teaching_subject_id" => wizardstore[:preferred_teaching_subject_id],
       })
+
       expect(wizardstore).to have_received(:prune!).with({ leave: MailingList::Wizard::ATTRIBUTES_TO_LEAVE }).once
     end
 

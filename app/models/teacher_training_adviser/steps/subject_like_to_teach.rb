@@ -1,17 +1,11 @@
 module TeacherTrainingAdviser::Steps
   class SubjectLikeToTeach < GITWizard::Step
-    extend ApiOptions
-
-    OMIT_SUBJECT_IDS = [
-      "b02655a1-2afa-e811-a981-000d3a276620", # Primary
-    ].freeze
-
     attribute :preferred_teaching_subject_id, :string
 
     validates :preferred_teaching_subject_id, lookup_items: { method: :get_teaching_subjects }
 
     def self.options
-      generate_api_options(GetIntoTeachingApiClient::LookupItemsApi, :get_teaching_subjects, OMIT_SUBJECT_IDS)
+      Crm::TeachingSubject.all_without_primary
     end
 
     def skipped?
@@ -20,7 +14,7 @@ module TeacherTrainingAdviser::Steps
 
     def reviewable_answers
       super.tap do |answers|
-        answers["preferred_teaching_subject_id"] = self.class.options.key(preferred_teaching_subject_id)
+        answers["preferred_teaching_subject_id"] = Crm::TeachingSubject.lookup_by_uuid(preferred_teaching_subject_id)
       end
     end
   end

@@ -103,7 +103,7 @@ describe Events::Steps::PersonalisedUpdates do
     subject { instance.teaching_subject_options }
 
     let(:teaching_subject_types) do
-      subjects = Crm::TeachingSubject::ALL.merge(Crm::TeachingSubject::IGNORED)
+      subjects = Crm::TeachingSubject.all_hash.merge(Crm::TeachingSubject::IGNORED)
       subjects.map { |k, v| GetIntoTeachingApiClient::TeachingSubject.new({ id: v, value: k }) }
     end
 

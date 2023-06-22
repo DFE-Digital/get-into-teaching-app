@@ -180,7 +180,7 @@ private
       chemistry: SCIENCES,
       physics: SCIENCES,
       physics_with_maths: SCIENCES,
-      general_science: SCIENCES,
+      science: SCIENCES,
 
       french: MFL,
       german: MFL,

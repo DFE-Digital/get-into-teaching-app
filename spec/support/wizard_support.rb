@@ -49,7 +49,7 @@ shared_context "with wizard data" do
   end
 
   let(:teaching_subject_types) do
-    Crm::TeachingSubject::ALL.map do |k, v|
+    Crm::TeachingSubject.all_hash.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end

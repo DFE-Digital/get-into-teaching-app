@@ -3,8 +3,6 @@ require "rails_helper"
 RSpec.describe TeacherTrainingAdviser::Steps::SubjectInterestedTeaching do
   include_context "with a TTA wizard step"
   it_behaves_like "a with wizard step"
-  it_behaves_like "with a wizard step that exposes API lookup items as options",
-                  :get_teaching_subjects, described_class::OMIT_SUBJECT_IDS
 
   describe "attributes" do
     it { is_expected.to respond_to :preferred_teaching_subject_id }
@@ -19,6 +17,12 @@ RSpec.describe TeacherTrainingAdviser::Steps::SubjectInterestedTeaching do
     end
 
     it { is_expected.not_to allow_values("", nil, "invalid-id").for :preferred_teaching_subject_id }
+  end
+
+  describe "#options" do
+    subject { described_class.options }
+
+    it { is_expected.to eq(Crm::TeachingSubject.all_without_primary) }
   end
 
   describe "#skipped?" do
