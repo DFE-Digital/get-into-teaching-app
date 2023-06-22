@@ -236,7 +236,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * employed on a contract lasting less than one year
 
-* employed by a recruitment agency – an agency can find and place you in a school, but your contract must be with the school and your salary must be paid by the school not by the recruitment agency
+* employed by a recruitment agency – an agency can find and place you in a school, but your contract must be with the school and your salary must be paid by the school, not by the recruitment agency
 
 ## How teachers can apply for the international relocation payment
 
