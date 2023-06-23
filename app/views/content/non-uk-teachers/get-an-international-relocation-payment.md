@@ -170,7 +170,7 @@ You must be employed in an English state secondary school on a contract beginnin
 
 * a language teacher – any language is eligible except English 
 
-If you are employed to teach more than one subject, physics, general or combined science or language must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. Check with your school if you're not sure whether you are eligible. 
+If you are employed to teach more than one subject, physics, general or combined science or a language or languages must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. Check with your school if you're not sure whether you are eligible. 
 
 Examples of eligible teaching jobs include: 
 
@@ -236,7 +236,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * employed on a contract lasting less than one year
 
-* employed by a recruitment agency – an agency can find and place you in a school, but your contract must be with the school and your salary must be paid by the school, not by the recruitment agency
+* employed by a recruitment agency – an agency can find and place you in a school, but your contract must be with the school and your salary must be paid directly to you by the school, not by the recruitment agency
 
 ## How teachers can apply for the international relocation payment
 
