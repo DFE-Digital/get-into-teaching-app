@@ -6,7 +6,7 @@ related_content:
     Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Teach in England if you trained outside the UK: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Apply for your visa to teach in England: "/non-uk-teachers/visas-for-non-uk-teachers"
-    Apply for your visa to train to teach in England: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
+    Apply for your visa to train to teach in England: "/non-uk-teachers/visas-for-non-uk-trainees"
 
 promo_content:
 date: "2021-05-27"
@@ -57,7 +57,7 @@ keywords:
 
 The information on this page is for:
 
-* non-UK teachers of languages and physics
+* non-UK teachers of languages, physics and general or combined science when it includes physics
 * non-UK trainee teachers of languages and physics   
 
 If you are considering coming to England to teach or train to teach languages or physics, you could be eligible for financial help from the UK government worth £10,000.  
@@ -78,13 +78,13 @@ As a trainee teacher, to be eligible for the international relocation payment (I
 
 ### 1. Teaching subject (trainees)
 
-You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects at secondary level (teaching children aged 11 to 16 or 11 to 18):
+You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the 2023 to 2024 academic year. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects at secondary level (teaching children aged 11 to 16 or 11 to 18):
 
-* any secondary level language(s) except English language, including courses combining language(s) with another subject, as long as language(s) make up at least 50% of the course content
+* any language(s) except English language, including courses combining language(s) with another subject, as long as language(s) make up at least 50% of the course content
 
-* any secondary level language(s), including courses combining language(s) with English language, as long as the non-English language(s) make up at least 50% of the course content
+* any language(s), including courses combining language(s) with English language, as long as the non-English language(s) make up at least 50% of the course content
 
-* secondary level physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics
+* physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics
 
 You can search for [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE and QTS or PGDE and QTS.
 
@@ -142,7 +142,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * doing an assessment only QTS
 
-* training to teach only English language and literature
+* training to teach only English language 
 
 ## How trainee teachers can get the international relocation payment
 
@@ -162,17 +162,29 @@ To be eligible for the international relocation payment (IRP), you must meet all
 
 ### 1. Teaching subject (teachers)
 
-You must have accepted a job as a teacher of languages or physics in an English state secondary school on a contract lasting at least one academic year.  
+You must be employed in an English state secondary school on a contract beginning in the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024). Your contract must last at least one year and you must be working as: 
 
-Teachers of all languages offered in English state secondary schools are eligible to apply for the IRP. Language(s), with the exception of English language, can be combined with another subject, but must make up at least 50% of teaching time. You can, however, combine teaching English language with another language (for example, French, German or Spanish), as long as the non-English language makes up at least 50% of your teaching timetable.  
+* a physics teacher
 
-Physics can be taught with another subject, but must make up at least 50% of teaching time. Teachers of general science or combined science  are also eligible to apply for the IRP, as long as they are teaching the physics element of general science or combined science. General science or combined science can be taught with another subject, but must make up at least 50% of teaching time.  
+* a general or combined science teacher – you must teach the physics element of these subjects
 
-Check with your employing school if you’re not sure whether your teaching timetable meets the teaching subject requirements.
+* a language teacher – any language is eligible except English 
 
-'State schools' are schools funded by the UK government. 'Secondary schools' teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
+If you are employed to teach more than one subject, physics, general or combined science or a language or languages must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. Check with your school if you're not sure whether you are eligible. 
 
-An academic year is 3 full school terms: for example, if your teaching job started in September 2023 (the start of the autumn term), it would need to continue until at least July 2024 (covering the spring and summer terms). ‘Ongoing’ or ‘permanent’ contracts lasting longer than 1 academic year are also eligible.
+Examples of eligible teaching jobs include: 
+
+* 50% modern foreign languages (for example, French, Spanish or German) and 50% another subject (for example, history)  
+
+* 50% modern foreign languages (for example, French, Spanish or German) and 50% English language 
+
+* 50% physics and 50% maths 
+
+* 50% general or combined science (must include the physics element) and 50% maths 
+
+State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
+
+Ongoing or permanent contracts lasting longer than 1 year are also eligible.
 
 [Check the type and age range of the school](https://www.get-information-schools.service.gov.uk/) where you’ll be teaching. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school).
 
@@ -220,11 +232,11 @@ You will not be eligible for the international relocation payment if you are:
 
 * a non-UK citizen who moved to England to live permanently more than 3 months before the start of your job
 
-* teaching only English language and literature
+* teaching only English language
 
-* employed on a contract lasting less than one academic year
+* employed on a contract lasting less than one year
 
-* employed by a recruitment agency
+* employed by a recruitment agency – an agency can find and place you in a school, but your contract must be with the school and your salary must be paid directly to you by the school, not by the recruitment agency
 
 ## How teachers can apply for the international relocation payment
 
@@ -282,7 +294,7 @@ Part-time teachers and trainees will receive the international relocation paymen
 
 ### Other types of financial support from the UK government  
 
-Teachers and newly qualified trainees who meet the eligibility requirements can also apply for the following payments in addition to the international relocation payment (IRP):
+Teachers and recently qualified trainees who meet the eligibility requirements can also apply for the following payments in addition to the international relocation payment (IRP):
 
 * [the levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers)  
 * [early career payments](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools)  
