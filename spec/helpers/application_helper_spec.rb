@@ -185,7 +185,6 @@ describe ApplicationHelper do
       is_expected.to eq({
         paths: [
           "/landing/how-to-become-a-teacher",
-          "/landing/how-to-become-a-teacher-mailing-list",
           "/teacher-training-adviser/sign_up/identity",
           "/landing/train-to-teach-if-you-have-a-degree",
         ],
