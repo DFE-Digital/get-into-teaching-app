@@ -77,7 +77,7 @@ RSpec.feature "Book a callback", type: :feature do
     start_at = quota.start_at.in_time_zone("London")
     date = start_at.to_date.to_formatted_s(:govuk)
     time = start_at.to_formatted_s(:govuk_time_with_period)
-    expect(page).to have_text "call you within 30 minutes of #{date} at #{time}"
+    expect(page).to have_text "call you on #{date} within 30 minutes of #{time}"
   end
 
   context "when here are no callback slots available" do
