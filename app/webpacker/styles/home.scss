@@ -29,6 +29,10 @@
     margin: 1em 15px;
   }
 
+  .banner .call-to-action__content {
+    padding: 30px;
+  }
+
   @include mq($from: desktop) {
     .purple-box {
       grid-template-columns: $px-either-side-of-content repeat(2, 1fr) repeat(2, 1fr) $px-either-side-of-content;
