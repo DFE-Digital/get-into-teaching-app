@@ -69,7 +69,7 @@ It’s important to note that, even if you decide to apply for QTS, you will hav
 
 ### How to apply for QTS
 
-From 1 February 2023, if you have a teaching qualification from the following countries and regions, you will be able to access a new service, called [Apply for qualified teacher status in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), to check if you meet the requirements for QTS:
+If you have a teaching qualification from the following countries and regions, you can now access a new service, called [Apply for qualified teacher status in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), to check if you meet the requirements for QTS and apply:
 
 
 * Australia
@@ -83,6 +83,8 @@ From 1 February 2023, if you have a teaching qualification from the following co
 * Switzerland
 * Ukraine
 * the USA
+
+In July 2023, we will make the service available to applicants with a teaching qualification from Jersey and Guernsey.  
 
 In addition, if you have a subject specialism in languages, mathematics or science and a teaching qualification to teach to teach 11 to 16 year olds from the following countries, you will be able to use the service to check if you meet the requirements for QTS: 
 
