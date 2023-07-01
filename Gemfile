@@ -124,7 +124,7 @@ group :development, :test do
 
   # Testing framework
   gem "knapsack"
-  gem "rspec-rails", "~> 6.0.1"
+  gem "rspec-rails", "~> 6.0.3"
 
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.39.1"
