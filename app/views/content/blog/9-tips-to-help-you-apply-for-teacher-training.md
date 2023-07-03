@@ -89,7 +89,7 @@ Your teacher training personal statement explains why you want to be a teacher. 
 
 It’s your opportunity to show your enthusiasm for teaching a particular subject. It’s also the place to say why you feel passionate about teaching either primary or secondary.
 
-[Read our advice on writing your teacher training personal statement](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-personal-statement).
+[Read our advice on writing your teacher training personal statement](/train-to-be-a-teacher/teacher-training-personal-statement).
 
 ## 8.	Arrange your references
 
