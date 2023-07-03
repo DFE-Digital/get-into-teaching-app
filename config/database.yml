@@ -7,10 +7,18 @@ default: &default
 development:
   <<: *default
   database: git_service_dev
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: <%= ENV['DB_HOSTNAME'] %>
+  port: <%= ENV['DB_PORT'] %>
 
 test:
   <<: *default
   database: git_service_test<%= ENV['TEST_ENV_NUMBER'] %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: <%= ENV['DB_HOSTNAME'] %>
+  port: <%= ENV['DB_PORT'] %>
 
 production: &production
   <<: *default
