@@ -6,6 +6,7 @@ description: |-
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
+    Application tips from a teacher training provider : "blog/application-tips-from-a-teacher-training-provider"
 date: "2021-06-24"
 keywords:
   - adviser
@@ -85,7 +86,7 @@ You’ll need to provide details about your:
 
 Training providers will also accept some equivalent qualifications, for example, if you’re a non-UK citizen. 
 
-[Find out more about the qualifications you need to teach](https://getintoteaching.education.gov.uk/is-teaching-right-for-me/qualifications-you-need-to-teach). 
+[Find out more about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach). 
 
 ### Your work experience 
 
@@ -107,7 +108,7 @@ You can ask for extra support if you’re disabled, have a mental health conditi
 
 Your training provider can then make adjustments so you can attend an interview and do the training. 
 
-[Find out what support you’re entitled to if you’re disabled](https://getintoteaching.education.gov.uk/funding-and-support/if-youre-disabled). 
+[Find out what support you’re entitled to if you’re disabled](/funding-and-support/if-youre-disabled). 
 
 ### Your references 
 
@@ -129,7 +130,7 @@ If your application is successful with a provider, you’ll be invited to an int
 
 Interviews vary from provider to provider – you’ll be given all the information you need when you’re invited to attend. 
 
-[Find tips for your teacher training interview](). 
+[Find tips for your teacher training interview](/train-to-be-a-teacher/teacher-training-interview). 
 
 ### If you do not get a place 
 
@@ -139,4 +140,4 @@ You may need to get an additional qualification, work on your interview techniqu
 
 You can apply to more courses if all your applications are unsuccessful. 
 
-[Find out what to do if you do not get a place on a teacher training course](). 
+[Find out what to do if you do not get a place on a teacher training course](/train-to-be-a-teacher/if-your-application-is-unsuccessful). 

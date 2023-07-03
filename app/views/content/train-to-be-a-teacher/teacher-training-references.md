@@ -5,11 +5,12 @@ subcategory: Your teacher training application
 description: |-
   Find out which teacher training references you need to provide when you apply to train to be a teacher and what they'll need to include.
 related_content:
+    Application tips from a teacher training provider : "/blog/application-tips-from-a-teacher-training-provider"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
 date: "2023-07-03"
 keywords:
-  - teacher training referemces
+  - teacher training references
   - adviser
   - advisor
   - ITT
@@ -79,4 +80,4 @@ When you apply for teacher training, you’ll need to provide your reference det
 
 When you accept your place on a course, you can change your reference details, or even change your reference altogether. 
 
-Make sure you prepare your references when you accept a place on a course. If you apply late in the year, there can be a quick turnaround between your place being accepted and your references being contacted, so it’s good to make sure they’re ready. 
+Make sure you prepare your references when you accept a place on a course. If you apply late in the year, there can be a quick turnaround between your place being accepted and your references being contacted, so it’s good to make sure they’re ready.

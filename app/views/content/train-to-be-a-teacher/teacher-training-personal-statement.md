@@ -7,6 +7,7 @@ description: |-
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
+    Application tips from a teacher training provider : "/blog/application-tips-from-a-teacher-training-provider"
 date: "2023-07-03"
 keywords:
   - teacher training personal statement
@@ -91,4 +92,4 @@ You can get help with your personal statement from our [teacher training adviser
 
 Advisers can also help you understand more about what teaching is really like, which can help improve your application. 
 
-They know the application process inside out and can help maximise your chances of getting on the course you want. 
+They know the application process inside out and can help maximise your chances of getting on the course you want.
