@@ -56,7 +56,7 @@ You'll need different kinds of references depending on your circumstances.
 
 If you're still studying or you graduated in the last 5 years, you'll need an academic reference. If you already work in a school, you'll need a reference from your headteacher.
 
-They will not be contacted unless you are offered and accept a place on a teacher training course. Read more about [choosing your references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-references).
+They will not be contacted unless you are offered and accept a place on a teacher training course. Read more about [choosing your references](/train-to-be-a-teacher/teacher-training-references).
 
 ## Responses
 

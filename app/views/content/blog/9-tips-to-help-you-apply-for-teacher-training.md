@@ -97,7 +97,7 @@ You'll need to provide the details of 2 people who can give you a reference when
 
 They'll be asked to confirm how they know you and if they know any reason why you should not work with children.
 
-[Find out more about the requirements for references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-references).
+[Find out more about the requirements for references](/train-to-be-a-teacher/teacher-training-references).
 
 ## 9.	Complete your application
 
