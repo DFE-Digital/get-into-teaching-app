@@ -1,8 +1,8 @@
 ---
-title: How to apply for teacher training
+title: Your teacher training application
 subcategory: Your teacher training application
 description: |-
-  Find out how to apply for teacher training and what to put in your application, from writing your personal statement to choosing your references.
+  Find out what to include in your teacher training application, from writing your personal statement to choosing your references.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
@@ -26,6 +26,7 @@ keywords:
   - when to apply
   - interviews
   - offers
+  - teacher training application
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
 navigation: 20.25
@@ -36,142 +37,106 @@ inset_text:
     title: Start your training this September
     text: There's still time to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn where to find courses and how to get support with your application</a>.
     color: yellow
+inset_text:
+  international-content:
+    text: If you’re a non-UK citizen and need a visa to come to the UK to train to teach, you need to make sure the course you’re applying for sponsors visas. <a href="/non-uk-teachers/visas-for-non-uk-trainees">Find out more about how to apply for a visa to train to teach in England</a>.
+    color: grey
 ---
 
 $still-time-to-apply$
 
-Give yourself the best chance of getting on the course you want.
+Find out what you need to include in your teacher training application and what happens as part of the application process. 
 
-Discover tips on completing your application, including writing your teacher training personal statement, choosing your references and preparing for interviews.
+You can get help with your application from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support. 
 
-## Browse courses
+## What course should I apply for? 
 
-Search [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses).
+Make sure you check which qualification you’ll get through your training course. Some will award [qualified teacher status (QTS)](/what-is-qts), some a [postgraduate certificate in education (PGCE)](/what-is-a-pgce), and some both. 
 
-Course providers will help you gain your [qualified teacher status (QTS)](/what-is-qts) which is what you need to teach in most schools in England. Many also help you work 
-towards a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce).
+While you do not need a PGCE to teach, you do need QTS to teach in many primary and secondary schools in England.
 
-As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+$international-content$
 
-## Where to apply
+[Find a postgraduate teacher training course](https://www.find-postgraduate-teacher-training.service.gov.uk/). 
 
-When you're ready, you can [apply for teacher training](https://www.gov.uk/apply-for-teacher-training).
+## When should I apply for teacher training? 
 
-This service has replaced the UCAS postgraduate teacher training application.
+You can start applying for courses from October, ready to start the following September (or sometimes January).   
 
-## When to apply
+Teacher training providers allocate places as people apply, so some courses can get full quickly. 
 
-Courses usually open for applications in October for entry the following year
-(usually starting in September, but sometimes January).
+If you’re keen to join a popular course, it’s wise to apply as soon as you’re ready so you don’t miss out. 
 
-Teacher training providers allocate places as people apply through the year,
-and courses stay open until they are full.
+## What do I need to include in my teacher training application? 
 
-If you’re keen to join a popular course it’s wise to apply as soon as you’re
-ready rather than putting it off.
+You’ll need to [create an account](https://www.apply-for-teacher-training.service.gov.uk/candidate/account) and then complete the different sections of your application form. You do not have to complete the sections all at once – you can save and come back to them later. 
 
-## What to expect: the application form
+You can apply to up to 4 courses at a time, but you'll send the same application to each course. 
 
-When you apply you’ll need to give details about:
+You do not need to tailor your application to a specific teacher training provider – save that detail for your interview! 
 
-* your qualifications, including your GCSEs and A levels (or equivalents) and degree
-* your work history or unpaid experience
-* why you want to teach
-* why you’re suited to teach a particular subject or age group
+### Your qualifications 
 
-You can also share whether you need any adjustments during the application
-process or on the course - for example, [if you’re disabled](/funding-and-support/if-youre-disabled).
+You’ll need to provide details about your: 
 
-You’ll be encouraged to declare any potential safeguarding issues such as
-criminal convictions. Training providers can advise you whether it’ll affect
-your application.
+* GCSEs 
+* A levels (and other qualifications) 
+* degree 
 
-## Prepare your application
+Training providers will also accept some equivalent qualifications, for example, if you’re a non-UK citizen. 
 
-You can [find and apply to most postgraduate teacher training courses on GOV.UK](https://www.gov.uk/find-postgraduate-teacher-training-courses).
+[Find out more about the qualifications you need to teach](https://getintoteaching.education.gov.uk/is-teaching-right-for-me/qualifications-you-need-to-teach). 
 
-You can choose up to 4 teacher training courses for each application.
+### Your work experience 
 
-If you do not find what you were looking for, there are [other ways to train](/train-to-be-a-teacher).
+You should enter all the jobs you’ve had since you left school. Make sure you explain any gaps longer than a month. 
 
-Before you start, it’s particularly important to think about your teacher training personal statement. Some people do not get on the course they want because their application has
-not convinced the admissions team that they’re right for it.
+If you do not have any work history (for example, if you’ve always been in full-time education, or you’ve been caring for a family member), you can mention that here. 
 
-## Writing your personal statement
+You can also talk about any unpaid experience you have and how this supports your application to become a teacher. 
 
-Your personal statement explains why you want to be a teacher. It’s a crucial part of your application so it’s worth taking your time on it.
+### Your personal statement 
 
-It’s your chance to show your motivation, commitment and teaching potential. It should be between 500 and 1000 words. You could include:
+Your personal statement explains why you want to be a teacher. It’s a crucial part of your application so it’s worth taking your time on it. 
 
-* skills you have that are relevant to teaching
-* any experience of working with young people
-* your understanding of why teaching is important
-* your reasons for wanting to train to be a teacher
-* any activities you’ve done that could be relevant to teaching like first aid courses, sports coaching or volunteering
+[Find out more about writing your teacher training personal statement](/train-to-be-a-teacher/teacher-training-personal-statement). 
 
-Your personal statement is also the place to say why you feel passionate about teaching either primary or secondary. [Learn more about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+### Your adjustments 
 
-If you’re writing a personal statement for secondary teacher training, you should also explain your interest in the subject you want to teach.
+You can ask for extra support if you’re disabled, have a mental health condition or educational needs. 
 
-If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can talk about that, too.
+Your training provider can then make adjustments so you can attend an interview and do the training. 
 
-<div class="inset">
-<h4> If you have already started to apply </h4>
+[Find out what support you’re entitled to if you’re disabled](https://getintoteaching.education.gov.uk/funding-and-support/if-youre-disabled). 
 
-<p>You will see 2 sections for your personal statement with information on how to complete each section. </p> 
+### Your references 
 
-<p> If your application is unsuccessful this time and you apply again, the 2 sections of your personal statement will be merged. When this happens, you will be asked to review your statement before applying again.</p> 
+You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course. 
 
-</div>
+[Find out more about how to choose your references for teacher training](/train-to-be-a-teacher/teacher-training-references). 
 
-### Get help with your personal statement
+## When will I find out if my application has been successful? 
 
-You can get help with your personal statement from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support.
+Training providers have 40 working days to respond to your application. Holiday periods in England (such as Christmas and Easter) are not included in the 40 working days. 
 
-## Choose your references
+If you apply after July, providers will have 20 working days to respond. 
 
-You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course.
+If they do not respond to your application within that time, your application for that course will become unsuccessful. 
 
-Unlike a standard work reference, your references for teacher training need to
-be from named individuals rather than (for example) a human resources team or
-academic department.
+### If you’re invited to interview 
 
-They'll confirm how they know you and if they know any reason why you should not work with children.
+If your application is successful with a provider, you’ll be invited to an interview. 
 
-You'll need different kinds of references depending on your circumstances. If you:
+Interviews vary from provider to provider – you’ll be given all the information you need when you’re invited to attend. 
 
-* are still studying or graduated in the last 5 years, you'll need an academic reference
-* already work in a school, you'll need a reference from your headteacher
+[Find tips for your teacher training interview](). 
 
-You can give a character reference, such as from a mentor or someone you know through volunteering, as a second reference.
+### If you do not get a place 
 
-You should not ask a family member, partner or friend for a reference.
+There could be a few reasons your application was unsuccessful. 
 
-You can change your reference details when you accept a place on a course. You might need to alter their contact details if they've changed, or you may wish to change who you ask for a reference altogether.
+You may need to get an additional qualification, work on your interview technique or improve the quality of your application. 
 
-## If you’re invited to interview
+You can apply to more courses if all your applications are unsuccessful. 
 
-Interviews are an important part of the application process. They can vary from provider to provider.
-
-See our [teacher training interview tips](/train-to-be-a-teacher/teacher-training-interview) to help you prepare.
-
-## If you get an offer
-
-Congratulations!
-
-Before you start your training the provider will check whether you’re safe to work
-with children through an enhanced [DBS check](https://www.gov.uk/government/organisations/disclosure-and-barring-service/about).
-
-They’ll also check whether you’re fit to train to teach through a health questionnaire.
-
-If you’re missing certain qualifications they may also ask you to do an
-equivalence test or take a ‘subject knowledge enhancement’ course.
-
-## If you do not get a place
-
-Try not to worry. There could be a few reasons your application was unsuccessful.
-
-You may need to get an additional qualification, improve your interview
-technique or improve the quality of your application.
-
-[Find out what to do if you did not get a place on a teacher training course](/train-to-be-a-teacher/if-your-application-is-unsuccessful).
+[Find out what to do if you do not get a place on a teacher training course](). 
