@@ -54,7 +54,7 @@ You can get help with your application from our [teacher training advisers](/tea
 
 Make sure you check which qualification you’ll get through your training course. Some will award [qualified teacher status (QTS)](/what-is-qts), some a [postgraduate certificate in education (PGCE)](/what-is-a-pgce), and some both. 
 
-While you do not need a PGCE to teach, you do need QTS to teach in many primary and secondary schools in England.
+While you do not need a PGCE to teach in England, you do need QTS to teach in many primary and secondary schools in England.
 
 $international-content$
 
@@ -62,11 +62,11 @@ $international-content$
 
 ## When should I apply for teacher training? 
 
-You can start applying for courses from October, ready to start the following September (or sometimes January).   
+You can start applying for courses from October, ready to start the following September (some courses may start at other points during the year).   
 
 Teacher training providers allocate places as people apply, so some courses can get full quickly. 
 
-If you’re keen to join a popular course, it’s wise to apply as soon as you’re ready so you don’t miss out. 
+It’s wise to apply as soon as you’re ready so you don’t miss out. 
 
 ## What do I need to include in my teacher training application? 
 
@@ -134,7 +134,7 @@ Interviews vary from provider to provider – you’ll be given all the informat
 
 ### If you do not get a place 
 
-There could be a few reasons your application was unsuccessful. 
+Your teacher training provider should give you feedback if your application is unsuccessful. 
 
 You may need to get an additional qualification, work on your interview technique or improve the quality of your application. 
 
