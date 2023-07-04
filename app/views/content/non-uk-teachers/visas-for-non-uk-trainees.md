@@ -76,7 +76,7 @@ You’ll be able to apply for your visa if you:
 * [have enough money to support yourself and pay for your course](https://www.gov.uk/student-visa/money)
 * [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/student-visa/knowledge-of-english)
 
-### How a teacher training bursary or scholarship can help with your student visa application
+### How a bursary or scholarship can help with your student visa application
 
 If you are training to teach physics or languages, you may be eligible for a [bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees/#financial-support-for-non-uk-trainee-languages-and-physics-teachers). Bursaries and scholarships are tax-free payments from the UK government which you do not have to pay back. You can use them in your student visa application as proof that you have enough money to support yourself. 
 
