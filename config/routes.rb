@@ -60,6 +60,7 @@ Rails.application.routes.draw do
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
   get "/cookies", to: "pages#cookies", as: :cookies
   get "/tta-service", to: "pages#tta_service", as: :tta_service
+  get "/design-components", to: "application#design_components", as: :design_components
   get "/tta", to: "pages#tta_service", as: nil
   get "/session-expired", to: "pages#session_expired", as: :session_expired
 

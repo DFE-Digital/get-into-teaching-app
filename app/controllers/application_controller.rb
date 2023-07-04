@@ -16,6 +16,11 @@ class ApplicationController < ActionController::Base
   before_action :add_home_breadcrumb
   before_action :declare_frontmatter
 
+  layout "internal", only: [:design_components]
+
+  def design_components
+  end
+
 protected
 
   def noindex
