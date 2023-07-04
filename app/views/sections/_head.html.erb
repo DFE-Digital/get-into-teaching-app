@@ -8,7 +8,7 @@
   <%= tag.link(rel: 'icon', type: 'image/x-icon', href: '/favicon.ico') %>
   <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
   <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
-  <% js_packs = %w[sentry gtm google_optimize js_enabled lazy_images govuk_frontend application] %>
+  <% js_packs = %w[sentry gtm clarity google_optimize js_enabled lazy_images govuk_frontend application] %>
   <%= yield :head %>
   <% if Rails.env.test? && params.key?(:fake_browser_time) %>
     <% js_packs.unshift('fake_browser_time') %>
