@@ -54,7 +54,7 @@ You can get help with your application from our [teacher training advisers](/tea
 
 Make sure you check which qualification you’ll get through your training course. Some will award [qualified teacher status (QTS)](/what-is-qts), some a [postgraduate certificate in education (PGCE)](/what-is-a-pgce), and some both. 
 
-While you do not need a PGCE to teach in England, you do need QTS to teach in many primary and secondary schools in England.
+While you do not need a PGCE to teach in England, you do need QTS to teach in many primary and secondary schools.
 
 $international-content$
 
