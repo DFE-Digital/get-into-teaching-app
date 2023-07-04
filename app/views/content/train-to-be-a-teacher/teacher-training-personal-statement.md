@@ -53,7 +53,7 @@ Your personal statement should be between 500 and 1000 words. You could include:
 * your reasons for wanting to train to be a teacher 
 * any activities you’ve done that could be relevant to teaching (such as first aid courses, sports coaching or volunteering) 
 
-Teacher training providers want to see your passion for teaching and that you understand the bigger picture. You could talk about the impact of COVID-19 or social change on the education sector, or a part of the course you're particularly excited about. 
+Teacher training providers want to see your passion and that you understand the bigger picture of teaching.
 
 Make sure you check your spelling and grammar in your application. You want to make the best possible impression.
 
@@ -91,5 +91,3 @@ Getting some school experience can also be a good way to make sure teaching is r
 You can get help with your personal statement from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support by phone, text, or email. 
 
 Advisers can also help you understand more about what teaching is really like, which can help improve your application. 
-
-They know the application process inside out and can help maximise your chances of getting on the course you want.
