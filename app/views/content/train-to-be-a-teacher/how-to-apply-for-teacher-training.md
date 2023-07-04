@@ -70,8 +70,6 @@ It’s wise to apply as soon as you’re ready so you don’t miss out.
 
 ## What do I need to include in my teacher training application? 
 
-You’ll need to [create an account](https://www.apply-for-teacher-training.service.gov.uk/candidate/account) and then complete the different sections of your application form. You do not have to complete the sections all at once – you can save and come back to them later. 
-
 You can apply to up to 4 courses at a time, but you'll send the same application to each course. 
 
 You do not need to tailor your application to a specific teacher training provider – save that detail for your interview! 
@@ -114,7 +112,13 @@ Your training provider can then make adjustments so you can attend an interview 
 
 You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course. 
 
-[Find out more about how to choose your references for teacher training](/train-to-be-a-teacher/teacher-training-references). 
+[Find out more about how to choose your references for teacher training](/train-to-be-a-teacher/teacher-training-references).
+
+## Start your application
+
+You’ll need to [create an account](https://www.apply-for-teacher-training.service.gov.uk/candidate/account) and then complete the different sections of your application form.
+
+You do not have to complete the sections all at once – you can save and come back to them later.
 
 ## When will I find out if my application has been successful? 
 
