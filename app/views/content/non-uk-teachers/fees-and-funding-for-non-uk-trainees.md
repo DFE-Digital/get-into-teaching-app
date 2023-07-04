@@ -7,9 +7,11 @@ related_content:
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
-navigation: 20.30
-navigation_title: Fees and funding for non-UK trainees
-navigation_description: Learn more about the costs of teacher training in England and eligibility for financial help.
+
+navigation: 20.10
+navigation_title: Fees and financial support for non-UK trainee teachers
+navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
+
 date: "2021-05-27"
 image: "static/content/hero-images/0002.jpg"
 backlink: "../../"
@@ -97,7 +99,7 @@ If you are eligible, you’ll receive a single payment of £10,000 from the Depa
 
 ## Bursaries and scholarships for physics and languages
 
-Bursaries and scholarships are cash sums from the UK government that you do not have to pay back. Bear in mind that:
+Bursaries and scholarships are tax-free payments from the UK government that you do not have to pay back. Bear in mind that:
 
 * you cannot be awarded both a bursary and a scholarship
 * bursaries and scholarships are only available for courses where you pay a fee to study teacher training
