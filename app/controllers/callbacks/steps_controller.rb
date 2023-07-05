@@ -8,6 +8,7 @@ module Callbacks
     before_action :noindex
     before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
+    before_action :check_expired_session
     around_action :set_time_zone, only: %i[show update]
 
     layout "registration"
@@ -51,8 +52,6 @@ module Callbacks
     end
 
     def app_store
-      redirect_to session_expired_path if session[:mailinglist].blank?
-
       session[:callbacks] ||= session[:mailinglist]&.slice("first_name", "last_name", "email", "accepted_policy_id") || {}
     end
 
@@ -69,6 +68,10 @@ module Callbacks
 
     def set_completed_page_title
       @page_title = "Callback confirmed"
+    end
+
+    def check_expired_session
+      redirect_to session_expired_path if session[:mailinglist].blank?
     end
   end
 end
