@@ -11,13 +11,16 @@
 
     <% if can_sign_up_online?(@event) %>
       <p>
-        You must register for a place to attend this event.
-
+        Register to attend this event and you can also quickly and easily to sign-up for tailored email guidance to help you get into teaching.
+      </p>
+      <p>
         <% if @event.online? %>
           Once registered, you will receive log-in information and joining
           instructions via email.
+      </p>
 
-          Please note: to access this event you will require a laptop/desktop PC
+      <p>
+          To access this event you will need a laptop or desktop PC
           and be using Google Chrome as your browser.
         <% end %>
       </p>
