@@ -12,7 +12,6 @@ export default class Clarity {
     this.sendDefaultConsent();
     this.initContainer();
     this.listenForConsentChanges();
-    this.listenForHistoryChange();
   }
 
   initWindow() {
@@ -23,11 +22,11 @@ export default class Clarity {
     // Turbolinks transitions).
     window.dataLayer.push({ originalLocation: this.originalLocation });
 
-    function gtag() {
+    function clarity() {
       window.dataLayer.push(arguments);
     }
 
-    window.gtag = window.gtag || gtag;
+    window.clarity = window.clarity || clarity;
   }
 
   initContainer() {
@@ -48,25 +47,22 @@ export default class Clarity {
       t.src = 'https://www.clarity.ms/tag/' + i;
       y = l.getElementsByTagName(r)[0];
       y.parentNode.insertBefore(t, y);
-    })(window, document, 'clarity', 'script', 'hmqovah6wg');
+    })(window, document, 'clarity', 'script', this.id);
   }
 
   listenForConsentChanges() {
     document.addEventListener('cookies:accepted', () => {
-      window.gtag('consent', 'update', this.consent());
-      this.initContainer();
-    });
-  }
-
-  listenForHistoryChange() {
-    document.addEventListener('turbolinks:load', () => {
-      window.gtag('set', 'page_path', window.location.pathname);
-      window.gtag('event', 'page_view');
+      if (this.consentValue('non-functional') === 'granted') {
+        window.clarity('consent');
+        this.initContainer();
+      }
     });
   }
 
   sendDefaultConsent() {
-    window.gtag('consent', 'default', this.consent());
+    if (this.consentValue('non-functional') === 'granted') {
+      window.clarity('consent');
+    }
   }
 
   consent() {
