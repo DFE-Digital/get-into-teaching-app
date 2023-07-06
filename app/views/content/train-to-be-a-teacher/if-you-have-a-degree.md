@@ -111,10 +111,10 @@ Ask them what a typical day looks like, how you’ll be supported, and if they h
 
 You might also want to ask:
 
-* how the provider arranges academic study and practical teaching practice 
+* how they arrange academic study and practical teaching practice
 * who your mentor will be, and how often you'll meet them
-* how many schools you'll be doing teaching practice in and how long each one will last
-* what are the starting and finishing dates of the course
+* how many schools you'll be doing teaching practice in and how long each will last
+* the starting and finishing dates of the course
 
 ### Find out where you’ll spend your time
 
