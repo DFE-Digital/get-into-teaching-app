@@ -58,6 +58,10 @@ module TeachingEvents
       is_online
     end
 
+    def in_person?
+      is_in_person
+    end
+
     def location
       if show_venue_information?
         [event_building.venue,
