@@ -101,7 +101,7 @@ They'll be asked to confirm how they know you and if they know any reason why yo
 
 ## 9.	Complete your application
 
-You’re now ready to submit your application and [apply for teacher training](https://www.gov.uk/apply-for-teacher-training).
+You’re now ready to submit your [teacher training application](/train-to-be-a-teacher/how-to-apply-for-teacher-training).
 
 Your application will appear in your chosen providers’ inbox as soon as you click submit, but don’t expect an instant response. Wait for them to consider your application and set up an interview. This can take some time to organise.
 
