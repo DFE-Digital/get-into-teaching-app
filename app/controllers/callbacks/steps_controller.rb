@@ -52,11 +52,8 @@ module Callbacks
     end
 
     def app_store
-      session[:callbacks] = if session[:callbacks].nil?
-                              session[:mailinglist]&.slice("first_name", "last_name", "email", "accepted_policy_id") || {}
-                            else
-                              session[:callbacks].merge(session[:mailinglist]&.slice("first_name", "last_name", "email", "accepted_policy_id"))
-                            end
+      session[:callbacks] ||= {}
+      session[:callbacks].merge!(session[:mailinglist]&.slice("first_name", "last_name", "email", "accepted_policy_id"))
     end
 
     def crm_store
