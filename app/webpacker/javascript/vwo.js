@@ -19,16 +19,23 @@ export default class Vwo {
   }
 
   initContainer() {
-    if (!this.cookiePreferences.cookieSet || this.containerInitialized || this.consentValue('non-functional') !== 'granted') {
+    if (
+      !this.cookiePreferences.cookieSet ||
+      this.containerInitialized ||
+      this.consentValue('non-functional') !== 'granted'
+    ) {
       return;
     }
 
     this.containerInitialized = true;
 
+    const vwoId = this.id;
+
+    /* eslint-disable */
     window._vwo_code =
       window._vwo_code ||
       (function () {
-        const account_id = this.id;
+        const account_id = vwoId;
         const version = 1.5;
         const settings_tolerance = 2000;
         const library_tolerance = 2500;
