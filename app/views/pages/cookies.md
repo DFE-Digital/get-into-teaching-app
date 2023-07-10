@@ -133,7 +133,8 @@ If you'd like to delete cookies or instruct your web browser to delete or refuse
 - [Microsoft Edge](https://support.microsoft.com/en-us/help/4468242/microsoft-edge-browsing-data-and-privacy)
 - [Microsoft Internet Explorer](https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies#ie=ie-11)
 - [Mozilla Firefox](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&redirectslug=Cookies)
-- [Safari](https://support.apple.com/kb/ph21411?locale=en_GB)
+- [Safari on Mac](https://support.apple.com/en-gb/guide/safari/sfri11471/mac)
+- [Safari on iPhone or iPad](https://support.apple.com/en-us/HT201265)
 
 Find out [how we use your personal data](/privacy-policy) when you sign up for our services.
 
