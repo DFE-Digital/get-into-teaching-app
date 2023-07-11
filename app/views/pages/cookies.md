@@ -2,7 +2,7 @@
 title: Cookies Policy
 ---
 
-Last updated: 10 July 2023
+Last updated: 12 July 2023
 
 This Cookies Policy explains what cookies are and how we use them. You should read this policy so you can understand what type of cookies we use, or the information we collect using cookies and how that information is used.
 
