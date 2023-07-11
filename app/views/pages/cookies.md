@@ -38,7 +38,7 @@ We are committed to following the relevant privacy and electronic communication 
 
 ## Types of cookies we use
 
-Cookies can be "persistent" or "session" Cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while session cookies are deleted as soon as you close your web browser.
+Cookies can be "persistent" or "session" cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while session cookies are deleted as soon as you close your web browser.
 
 ### Essential cookies
 
