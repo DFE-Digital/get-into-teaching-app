@@ -109,6 +109,13 @@ One of the best ways to decide between providers is to contact them.
 
 Ask them what a typical day looks like, how you’ll be supported, and if they have any open days or [teacher training events](/events) you can attend.
 
+You might also want to ask:
+
+* how they arrange theoretical learning and school placements
+* who your mentor will be, and how often you'll meet them
+* how many schools you'll be doing school placements in and how long each will last
+* the starting and finishing dates of the course
+
 ### Find out where you’ll spend your time
 
 You should talk to teacher training providers about where your school placements and theoretical learning will be. The address of your teacher training provider may not be where you spend most of your time. For example, your teacher training provider might be a university, but you’ll spend most of your time in placement schools.
