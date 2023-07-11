@@ -101,7 +101,7 @@ describe "teaching events", type: :request do
       context "when there are no GiT events" do
         let(:events) { [] }
 
-        it { is_expected.to include("Our autumn Get Into Teaching events are now closed.") }
+        it { is_expected.to include("Our Get Into Teaching events are now closed.") }
       end
     end
 
