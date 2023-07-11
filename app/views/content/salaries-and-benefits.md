@@ -52,9 +52,11 @@ keywords:
 
 For helping to shape the next generation, you’re entitled to a competitive salary, generous holidays, and a substantial pension.
 
-Figures are for the 2022/23 academic year and apply to maintained primary, secondary and special schools in England (schools funded by local authorities).
+These salaries apply to maintained primary, secondary and special schools in England (schools funded by local authorities).
 
-Other schools (for example, academies) can set their own pay scales.
+Other types of schools (for example, academies) can set their own pay scales.
+
+Figures are for the 2022/23 academic year.
 
 ## Primary and secondary teaching salaries
 
