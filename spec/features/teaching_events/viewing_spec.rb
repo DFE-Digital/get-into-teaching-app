@@ -110,7 +110,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       let(:event) { build(:event_api, :online) }
 
       let(:expected) do
-        "Register for this event to secure your place and check-in faster on arrival using a QR code."
+        "Register for this event and you'll receive log-in information and joining instructions via email."
       end
 
       it { is_expected.to have_content(expected) }
