@@ -56,7 +56,7 @@ Figures are for the 2022/23 academic year and apply to maintained primary, secon
 
 ## Primary and secondary teaching salaries
 
-All qualified primary and secondary teachers will have a starting salary of at least £28,000. This will be higher for teachers working in London.
+All qualified primary and secondary teachers will have a starting salary of at least £28,000. This will be higher for teachers working in London. 
 
 ### Qualified teacher salary
 
