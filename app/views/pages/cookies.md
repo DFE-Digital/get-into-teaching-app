@@ -38,7 +38,7 @@ We are committed to following the relevant privacy and electronic communication 
 
 ## Types of cookies we use
 
-Cookies can be "Persistent" or "Session" Cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while Session Cookies are deleted as soon as you close your web browser.
+Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on your personal computer or mobile device when you go offline, while Session Cookies are deleted as soon as you close your web browser.
 
 ### Essential cookies
 
@@ -54,7 +54,7 @@ The Cookies we use are listed below with details about why we use them and how l
 | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------------------------------------------|
 | `_dfe_session`                                | Temporary session data                                                                                                                                                                                                                                   | End of browser session                          |
 | `__zlcmid`                                    | Zendesk Cookie that identifies your webchat session                                                                                                                                                                                                      | 1 year                                          |
-| `__zlcprivacy`                                | Zendesk Cookie that stores your webchat cookie preferences                                                                                                                                                                                               | 1 year                                          |
+| `__zlcprivacy`                                | Zendesk Cookie that stores your webchat Cookie preferences                                                                                                                                                                                               | 1 year                                          |
 | `git-cookie-preferences-v1`                   | Website Cookie that stores your Cookie preferences                                                                                                                                                                                                       | 90 days                                         |
 | `_vis_opt_exp_{CAMPAIGNID}_goal_{GOALID}`     | VWO Cookie created when a campaign goal is triggered. This cookie, when created, will always have a value of 1                                                                                                                                   | 100 days                                        |
 | `_vis_opt_test_cookie`                        | VWO Cookie that reads if cookies can be placed                                                                                                                                                                                                      | Browser closes                                  |
@@ -78,7 +78,7 @@ The Cookies we use are listed below with details about why we use them and how l
 
 **Purpose:** These Cookies are used to track information about traffic to the Website and how users use the Website.  We measure Website usage so that we can gain a better understanding of how people use our site. This enables us to improve the information that we provide. It also ensures that the service is available when you want it, and that it delivers information quickly.
 
-The information gathered via these Cookies may directly or indirectly identify you as an individual visitor. This is because the information collected is typically linked to a pseudonymous identifier associated with the device you use to access the Website. We may also use these cookies to test new pages, features or new functionality of the Website to see how people react to them.
+The information gathered via these Cookies may directly or indirectly identify you as an individual visitor. This is because the information collected is typically linked to a pseudonymous identifier associated with the device you use to access the Website. We may also use these Cookies to test new pages, features or new functionality of the Website to see how people react to them.
 
 | Name                                                | Purpose                                                                                                                                                        | Expires after                                              |
 | ------                                              | --------                                                                                                                                                       | -------                                                    |
@@ -104,11 +104,11 @@ The information gathered via these Cookies may directly or indirectly identify y
 
 **Type:** Persistent Cookies
 
-**Administered by:** Third parties
+**Administered by:** Third Parties
 
-**Purpose:** These cookies track your browsing habits to enable us to show advertising which is more likely to be of interest to you. These cookies use information about your browsing history to group you with other users who have similar interests. Based on that information, and with our permission, third party advertisers can place cookies to enable them to show adverts which we think will be relevant to your interests while you are on third party websites.
+**Purpose:** These Cookies track your browsing habits to enable us to show advertising which is more likely to be of interest to you. These Cookies use information about your browsing history to group You with other users who have similar interests. Based on that information, and with our permission, third party advertisers can place Cookies to enable them to show adverts which we think will be relevant to your interests while You are on third party websites.
 
-We place marketing tags on our pages to track the success of our content on each channel. Some of our pages may contain content from other sites, like YouTube, which may set their own cookies. These sites are sometimes called ‘third party’ services. This tells us how many people are seeing the content and whether it’s useful. In addition, if you share a link to one of our pages, the service you share it on (for example, Facebook) may set a cookie. We have no control over cookies set on other websites - you can turn them off, but not through us.
+We place marketing tags on our pages to track the success of our content on each channel. Some of our pages may contain content from other sites, like YouTube, which may set their own Cookies. These sites are sometimes called ‘third party’ services. This tells us how many people are seeing the content and whether it’s useful. In addition, if you share a link to one of our pages, the service you share it on (for example, Facebook) may set a Cookie. We have no control over Cookies set on other websites - you can turn them off, but not through us.
 
 | Name                 | Purpose                                                                                                                                                               | Expires after          |
 | ----                 | --------                                                                                                                                                              | ---------              |
@@ -123,11 +123,11 @@ We place marketing tags on our pages to track the success of our content on each
 
 ## Your choices regarding cookies
 
-If you prefer to avoid the use of cookies on the website, you must disable the use of cookies in your browser and then delete the cookies saved in your browser associated with this website. You may use this option for preventing the use of cookies at any time.
+If you prefer to avoid the use of Cookies on the Website, you must disable the use of Cookies in your browser and then delete the Cookies saved in your browser associated with this Website. You may use this option for preventing the use of Cookies at any time.
 
-If you do not accept our cookies, you may experience some inconvenience in your use of the website and some features may not function properly.
+If you do not accept our Cookies, you may experience some inconvenience in your use of the Website and some features may not function properly.
 
-If you'd like to delete cookies or instruct your web browser to delete or refuse cookies, please visit the help pages of your web browser: 
+If you'd like to delete Cookies or instruct your web browser to delete or refuse Cookies, please visit the help pages of your web browser: 
 
 - [Google Chrome](https://support.google.com/chrome/answer/95647?hl=en-GB&p=cpn_cookies)
 - [Microsoft Edge](https://support.microsoft.com/en-us/help/4468242/microsoft-edge-browsing-data-and-privacy)
