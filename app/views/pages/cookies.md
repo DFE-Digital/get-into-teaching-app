@@ -4,13 +4,13 @@ title: Cookies Policy
 
 Last updated: 12 July 2023
 
-This Cookies Policy explains what cookies are and how we use them. You should read this policy so you can understand what type of cookies we use, or the information we collect using cookies and how that information is used.
+This Cookies Policy explains what Cookies are and how we use them. You should read this policy so you can understand what type of Cookies we use, or the information we collect using Cookies and how that information is used.
 
-Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from cookies. For further information on how we use, store and keep your personal data secure, see our [Privacy Policy](/privacy-policy).
+Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from Cookies. For further information on how we use, store and keep your personal data secure, see our [Privacy Policy](/privacy-policy).
 
-We want to make our services easy, useful and reliable. When services are delivered on the internet, this sometimes involves placing small amounts of information on your computer, tablet, or mobile phone – whichever device you use to access our site. These include small files known as cookies.
+We want to make our services easy, useful and reliable. When services are delivered on the internet, this sometimes involves placing small amounts of information on your computer, tablet, or mobile phone – whichever device you use to access our site. These include small files known as Cookies.
 
-We do not store sensitive personal information, such as mailing addresses, account passwords, etc. in the cookies we use.
+We do not store sensitive personal information, such as mailing addresses, account passwords, etc. in the Cookies we use.
 
 ## Interpretation and definitions
 
@@ -22,23 +22,23 @@ The following definitions shall have the same meaning regardless of whether they
 
 For the purposes of this Cookies Policy:
 
-- 'Department for Education' (referred to as either "DfE", " we ", "us" or "our" in this Cookies Policy) refers to Department for Education
+- 'Department for Education' (referred to as either "DfE", " we", "us" or "our" in this Cookies Policy) refers to Department for Education
 
-- 'cookies' means small files that are placed on your computer, mobile device or any other device by a website, containing details of your browsing history on that website among its many uses
+- 'Cookies' means small files that are placed on your computer, mobile device or any other device by a website, containing details of your browsing history on that website among its many uses
 
-- 'website' refers to Get Into Teaching, accessible from https://getintoteaching.education.gov.uk/
+- 'Website' refers to Get Into Teaching, accessible from https://getintoteaching.education.gov.uk/
 
-- 'you' means the individual accessing or using the website, or a company, or any legal entity on behalf of which such individual is accessing or using the website, as applicable
+- 'You' means the individual accessing or using the Website, or a company, or any legal entity on behalf of which such individual is accessing or using the Website, as applicable
 
-## The use of the cookies
+## The use of the Cookies
 
-The information below shows the cookies that are set by [education.gov.uk](https://www.gov.uk/government/organisations/department-for-education) and the third-party services we use. You may refuse the use of cookies by selecting the appropriate settings on your browser. However, please note that if you do this you may not be able to use the full functionality of this website.
+The information below shows the Cookies that are set by [education.gov.uk](https://www.gov.uk/government/organisations/department-for-education) and the third-party services we use. You may refuse the use of Cookies by selecting the appropriate settings on your browser. However, please note that if you do this you may not be able to use the full functionality of this Website.
 
-We are committed to following the relevant privacy and electronic communication regulations. At the footer of this page, you can change your preferences at any time for marketing, tracking or performance cookies.
+We are committed to following the relevant privacy and electronic communication regulations. At the footer of this page, You can change your preferences at any time for marketing, tracking or performance Cookies.
 
 ## Types of cookies we use
 
-Cookies can be "persistent" or "session" cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while session cookies are deleted as soon as you close your web browser.
+Cookies can be "Persistent" or "Session" Cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while Session Cookies are deleted as soon as you close your web browser.
 
 ### Essential cookies
 
@@ -46,51 +46,51 @@ Cookies can be "persistent" or "session" cookies. Persistent cookies remain on y
 
 **Administered by:** Us
 
-**Purpose:** These cookies are essential to provide you with services available through the website and to enable you to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these cookies, the services that you have asked for cannot be provided, and we only use these cookies to provide you with those services.
+**Purpose:** These Cookies are essential to provide you with services available through the Website and to enable you to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that you have asked for cannot be provided, and we only use these Cookies to provide you with those services.
 
-The cookies we use are listed below with details about why we use them and how long they will last. These essential cookies are used for site navigation and session management, and this service may not function correctly without them.
+The Cookies we use are listed below with details about why we use them and how long they will last. These essential Cookies are used for site navigation and session management, and this service may not function correctly without them.
 
 | Name                                          | Purpose                                                                                                                                                                                                                                                  | Expires                                         |
 | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------------------------------------------|
-| `_dfe_session`                                | temporary session data                                                                                                                                                                                                                                   | End of browser session                          |
-| `__zlcmid`                                    | Zendesk cookie that identifies your webchat session                                                                                                                                                                                                      | 1 year                                          |
-| `__zlcprivacy`                                | Zendesk cookie that stores your webchat cookie preferences                                                                                                                                                                                               | 1 year                                          |
-| `git-cookie-preferences-v1`                   | Website cookie that stores your cookie preferences                                                                                                                                                                                                       | 90 days                                         |
-| `_vis_opt_exp_{CAMPAIGNID}_goal_{GOALID}`     | This VWO cookie is created when a campaign goal is triggered. This cookie, when created, will always have a value of 1                                                                                                                                   | 100 days                                        |
-| `_vis_opt_test_cookie`                        | This VWO cookie is to read if cookies can be placed                                                                                                                                                                                                      | Browser closes                                  |
-| `_vis_opt_exp_{CAMPAIGNID}_combi`             | This VWO cookie is created when you are chosen for a particular variation for a test and ensures you see the same variation when you revisit a page in the future                                                                                        | 100 days                                        |
-| `_vis_opt_exp_{CAMPAIGNID}_exclude`           | This VWO cookie is created when you are excluded from a test campaign due to the traffic percentage specifications                                                                                                                                       | 100 days                                        |
-| `_vis_opt_exp_{CAMPAIGNID}_split`             | This cookie is created when one of the variations is chosen for you, but you are not yet redirected to the variation page. It exists so that VWO can verify that the variation page corresponds to the chosen variation after landing on the page        | 100 days                                        |
-| `_vis_opt_s`                                  | This VWO cookie tracks sessions                                                                                                                                                                                                                          | 100 days                                        |
-| `_vis_opt_out`                                | This VWO cookie indicates that you should not be made part of any campaign                                                                                                                                                                               | 10 years                                        |
-| `_vwo_uuid`                                   | This VWO cookie generates a unique ID for every visitor                                                                                                                                                                                                  | 10 years                                        |
-| `_vwo_ds`                                     | This VWO cookie stores persistent visitor-level data for VWO Insights                                                                                                                                                                                    | Depends on the retention period of the account  |
-| `_vwo_sn`                                     | This VWO cookie stores session-level information                                                                                                                                                                                                         | 30 minutes and reset again to 30 minutes on activity  |
-| `_vis_opt_exp_{CAMPAIGNID}_combi_choose`      | This VWO cookie stores the chosen combination. It's a temporary cookie that gets deleted when the campaign changes are applied                                                                                                                           | Persists until campaign changes are applied     |
-| `_vwo_referrer`                               | This cookie stores referral info allowing VWO to identify the original traffic source in case of the split URL campaign                                                                                                                                  | 15 seconds                                         |
-| `_vvwo`                                       | This VWO cookie is a jar of all the VWO cookies. It is currently created only for the Safari browser                                                                                                                                                     | Expires in 2096 years                           |
+| `_dfe_session`                                | Temporary session data                                                                                                                                                                                                                                   | End of browser session                          |
+| `__zlcmid`                                    | Zendesk Cookie that identifies your webchat session                                                                                                                                                                                                      | 1 year                                          |
+| `__zlcprivacy`                                | Zendesk Cookie that stores your webchat cookie preferences                                                                                                                                                                                               | 1 year                                          |
+| `git-cookie-preferences-v1`                   | Website Cookie that stores your Cookie preferences                                                                                                                                                                                                       | 90 days                                         |
+| `_vis_opt_exp_{CAMPAIGNID}_goal_{GOALID}`     | VWO Cookie created when a campaign goal is triggered. This cookie, when created, will always have a value of 1                                                                                                                                   | 100 days                                        |
+| `_vis_opt_test_cookie`                        | VWO Cookie that reads if cookies can be placed                                                                                                                                                                                                      | Browser closes                                  |
+| `_vis_opt_exp_{CAMPAIGNID}_combi`             | VWO Cookie created when you are chosen for a particular variation for a test and ensures you see the same variation when you revisit a page in the future                                                                                        | 100 days                                        |
+| `_vis_opt_exp_{CAMPAIGNID}_exclude`           | VWO Cookie created when you are excluded from a test campaign due to the traffic percentage specifications                                                                                                                                       | 100 days                                        |
+| `_vis_opt_exp_{CAMPAIGNID}_split`             | VWO Cookie created when one of the variations is chosen for you, but you are not yet redirected to the variation page. It exists so that VWO can verify that the variation page corresponds to the chosen variation after landing on the page        | 100 days                                        |
+| `_vis_opt_s`                                  | VWO Cookie that tracks sessions                                                                                                                                                                                                                          | 100 days                                        |
+| `_vis_opt_out`                                | VWO Cookie that indicates that you should not be made part of any campaign                                                                                                                                                                               | 10 years                                        |
+| `_vwo_uuid`                                   | VWO Cookie that generates a unique ID for every visitor                                                                                                                                                                                                  | 10 years                                        |
+| `_vwo_ds`                                     | VWO cookie that stores persistent visitor-level data for VWO Insights                                                                                                                                                                                    | Depends on the retention period of the account  |
+| `_vwo_sn`                                     | VWO cookie that stores session-level information                                                                                                                                                                                                         | 30 minutes and reset again to 30 minutes on activity  |
+| `_vis_opt_exp_{CAMPAIGNID}_combi_choose`      | VWO Cookie that stores the chosen combination. It's a temporary cookie that gets deleted when the campaign changes are applied                                                                                                                           | Persists until campaign changes are applied     |
+| `_vwo_referrer`                               | VWO Cookie that stores referral information allowing VWO to identify the original traffic source in case of the split URL campaign                                                                                                                                  | 15 seconds                                         |
+| `_vvwo`                                       | VWO Cookie that is a jar of all the VWO Cookies. It is currently created only for the Safari browser                                                                                                                                                     | Expires in 2096 years                           |
 
 ## Tracking and performance cookies
 
-**Type:** Persistent cookies
+**Type:** Persistent Cookies
 
 **Administered by:** Third parties
 
-**Purpose:** These cookies are used to track information about traffic to the website and how users use the website.  We measure website usage so that we can gain a better understanding of how people use our site. This enables us to improve the information that we provide. It also ensures that the service is available when you want it, and that it delivers information quickly.
+**Purpose:** These Cookies are used to track information about traffic to the Website and how users use the Website.  We measure Website usage so that we can gain a better understanding of how people use our site. This enables us to improve the information that we provide. It also ensures that the service is available when you want it, and that it delivers information quickly.
 
-The information gathered via these cookies may directly or indirectly identify you as an individual visitor. This is because the information collected is typically linked to a pseudonymous identifier associated with the device you use to access the website. We may also use these cookies to test new pages, features or new functionality of the website to see how people react to them.
+The information gathered via these Cookies may directly or indirectly identify you as an individual visitor. This is because the information collected is typically linked to a pseudonymous identifier associated with the device you use to access the Website. We may also use these cookies to test new pages, features or new functionality of the Website to see how people react to them.
 
 | Name                                                | Purpose                                                                                                                                                        | Expires after                                              |
 | ------                                              | --------                                                                                                                                                       | -------                                                    |
-| `bam-session`                                       | BAM use this cookie to attribute mailing list sign ups back to the agent at a teaching event that presented a QR code to the candidate                         | 30 days                                                    |
-| `_ga`                                               | Google Analytics cookie that helps us count how many people visit our website by tracking if you've visited before                                             | 2 years                                                    |
-| `_gid`                                              | Google Analytics cookie that helps us count how many people visit our website by tracking if you've visited before                                             | 24 hours                                                   |
-| `_gat`                                              | Google Analytics cookie that helps us understand how people use our website                                                                                    | 1 minute                                                   |
+| `bam-session`                                       | BAM use this Cookie to attribute mailing list sign ups back to the agent at a teaching event that presented a QR code to the candidate                         | 30 days                                                    |
+| `_ga`                                               | Google Analytics Cookie that helps us count how many people visit our Website by tracking if you've visited before                                             | 2 years                                                    |
+| `_gid`                                              | Google Analytics Cookie that helps us count how many people visit our Website by tracking if you've visited before                                             | 24 hours                                                   |
+| `_gat`                                              | Google Analytics Cookie that helps us understand how people use our Website                                                                                    | 1 minute                                                   |
 | `AMP_TOKEN`                                         | Uses tokens to help identify your client ID                                                                                                                    | 30 seconds to 1 year                                       |
 | `_ga_76JLPNZBCP` `_ga_2BHBCSRT7L` `_ga_D3DXWHT5D3`  | Used by Google Analytics to find and track an individual session with your device                                                                              | 2 years                                                    |
 | `_gat_UA-179982899-1`                               | Used by Google Analytics to find and track an individual session with your device                                                                              | 1 minute                                                   |
-| `_gaexp`                                            | Used by Google Optimize to identify if you've been part of an experiment or previous experiments which help us test parts of the website                       | Depends on the length of experiment, but typically 90 days |
-| `_opt_utmc`                                         | Used by Google Optimize to store information about the source of website traffic                                                                               | 24 hours                                                   |
+| `_gaexp`                                            | Used by Google Optimize to identify if you've been part of an experiment or previous experiments which help us test parts of the Website                       | Depends on the length of experiment, but typically 90 days |
+| `_opt_utmc`                                         | Used by Google Optimize to store information about the source of Website traffic                                                                               | 24 hours                                                   |
 | `_opt_expid`                                        | Used by Google Optimize to store information about experiments involving redirected pages                                                                      | 10 seconds                                                 |
 | `_clck`                                             | Persists the Clarity user ID and preferences, unique to that site is attributed to the same user ID                                                            | 13 months                                                  |
 | `_clsk`                                             | Connects multiple page views by a user into a single Clarity session recording                                                                                 | 13 months                                                  |
@@ -102,7 +102,7 @@ The information gathered via these cookies may directly or indirectly identify y
 
 ## Marketing cookies
 
-**Type:** Persistent cookies
+**Type:** Persistent Cookies
 
 **Administered by:** Third parties
 
