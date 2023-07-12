@@ -22,7 +22,7 @@ The following definitions shall have the same meaning regardless of whether they
 
 For the purposes of this Cookies Policy:
 
-- 'Department for Education' (referred to as either "DfE", " we", "us" or "our" in this Cookies Policy) refers to Department for Education
+- 'Department for Education' (referred to as either "DfE", "we", "us" or "our" in this Cookies Policy) refers to Department for Education
 
 - 'Cookies' means small files that are placed on your computer, mobile device or any other device by a website, containing details of your browsing history on that website among its many uses
 
@@ -42,7 +42,7 @@ Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on y
 
 ### Essential cookies
 
-**Type:** Session cookies
+**Type:** Session Cookies
 
 **Administered by:** Us
 
