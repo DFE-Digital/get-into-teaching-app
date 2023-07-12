@@ -52,11 +52,15 @@ keywords:
 
 For helping to shape the next generation, you’re entitled to a competitive salary, generous holidays, and a substantial pension.
 
+These salaries apply to maintained primary, secondary and special schools in England (schools funded by local authorities).
+
+Other types of schools (for example, academies) can set their own pay scales.
+
 Figures are for the 2022/23 academic year.
 
 ## Primary and secondary teaching salaries
 
-All qualified primary and secondary teachers will have a starting salary of at least £28,000. This will be higher for teachers working in London.
+All qualified primary and secondary teachers will have a starting salary of at least £28,000. This will be higher for teachers working in London. 
 
 ### Qualified teacher salary
 
