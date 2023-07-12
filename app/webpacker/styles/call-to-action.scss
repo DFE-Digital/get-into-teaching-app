@@ -27,7 +27,7 @@
     }
   }
 
-  &__photo {
+  &__photo .call-to-action__icon {
     > picture img,
     > img {
       width: 8em;
@@ -166,6 +166,10 @@
       grid-template-rows: 12em 1fr auto;
       grid-template-columns: .8fr 1.2fr;
 
+      .call-to-action__icon {
+        display: none;
+      }
+
       .call-to-action__icon__container {
         grid-area: 1 / 1 / 2 / 2;
         align-self: center;
@@ -182,7 +186,7 @@
         margin: 1em auto 0 0;
 
         .call-to-action__heading {
-          @include font-size("small");
+          @include font-size("large");
         }
       }
 
@@ -191,11 +195,12 @@
 
         a {
           margin: 1em;
+          display: flex;
         }
       }
 
       .call-to-action__image {
-        grid-area: 1 / 2 / 2 / 3;
+        grid-area: 1 / 1 / 2 / 3;
         margin: 0;
       }
     }
