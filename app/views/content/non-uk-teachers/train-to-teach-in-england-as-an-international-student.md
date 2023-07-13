@@ -102,7 +102,7 @@ When you plan your training, bear in mind that:
 living costs, to train (depending on your immigration status and the subject you train to teach, you may get some financial support)
 - training lasts one academic year full-time, or longer part-time
 - you can apply for paid teaching jobs as soon as you successfully complete your training
-- you'll earn at least £28,000 a year (or more in London) when you qualify as a teacher
+- you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher
 - you can update, extend or switch your visa to live and work in the UK long-term
 
 
