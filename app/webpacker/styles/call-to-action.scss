@@ -192,13 +192,6 @@
 
       .call-to-action__action {
         grid-area: 3 / 1 / 4 / 3;
-
-        a {
-          margin: 1em;
-          display: flex;
-          white-space: pre-wrap;
-          flex-direction: row;
-        }
       }
 
       .call-to-action__image {
