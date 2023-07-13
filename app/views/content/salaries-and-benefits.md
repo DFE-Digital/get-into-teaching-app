@@ -155,10 +155,10 @@ The unqualified teacher salary ranges are:
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| England (excluding London)     | £19,340 | £30,172 |
-| London fringe                            | £20,594 | £31,421  |
-| Outer London                             | £22,924 | £33,759 |
-| Inner London                             | £24,254 | £35,081 |
+| England (excluding London)     | £20,598 | £32,134 |
+| London fringe                            | £21,933 | £33,464 |
+| Outer London                             | £24,415 | £35,954 |
+| Inner London                             | £25,831 | £37,362 |
 
 ## Holidays
 
