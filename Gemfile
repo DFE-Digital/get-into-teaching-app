@@ -66,8 +66,8 @@ gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 5.4.1"
-gem "sentry-ruby", "~> 5.4.2"
+gem "sentry-rails", ">= 5.9.0"
+gem "sentry-ruby", "~> 5.9.0"
 
 gem "skylight", "~> 5.3.4"
 
@@ -82,7 +82,7 @@ gem "view_component", "~> 2.78.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
-gem "net-smtp", require: false
+gem "net-smtp", ">= 0.3.3", require: false
 gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
 
 # Fix CVE errors
@@ -124,7 +124,7 @@ group :development, :test do
 
   # Testing framework
   gem "knapsack"
-  gem "rspec-rails", "~> 6.0.1"
+  gem "rspec-rails", "~> 6.0.3"
 
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.39.1"
