@@ -62,7 +62,7 @@ These salaries apply to maintained primary, secondary and special schools in Eng
 
 Other types of schools (for example, academies) can set their own pay scales.
 
-Figures are for the 2022/23 academic year.
+Figures are for the 2023/24 academic year.
 
 ## Primary and secondary teaching salaries
 
