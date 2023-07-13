@@ -95,10 +95,10 @@ The upper pay ranges for teachers are:
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| England (excluding London)     | £40,625 | £43,685 |
-| London fringe                            | £41,858 | £44,919 |
-| Outer London                             | £44,687 | £48,055 |
-| Inner London                             | £49,320 | £53,482 |
+| England (excluding London)     | £43,266 | £46,525 |
+| London fringe                            | £44,579 | £47,839 |
+| Outer London                             | £47,592 | £51,179 |
+| Inner London                             | £52,526 | £56,959 |
 
 ### Leading practitioner salaries
 
