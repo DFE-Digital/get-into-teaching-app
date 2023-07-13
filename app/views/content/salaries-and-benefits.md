@@ -138,12 +138,13 @@ These payments are called ‘teaching and learning responsibility’ (TLR) payme
 
 * progressing the education of people beyond your assigned pupils
 * leading, developing and enhancing the teaching practice of others
-* TLR payments come in 2 main pay ranges (TLR 1 and TLR 2) depending on your responsibilities
+* TLR payments come in 3 main pay ranges (TLR 1, 2 and 3) depending on your responsibilities
 
 | Level         | Minimum | Maximum|
 | -------       | -----   | -----  |
-| TLR 1         | £8,706  | £14,732|
-| TLR 2         | £3,017  | £7,368 |
+| TLR 1         | £9,272  | £15,690|
+| TLR 2         | £3,214  | £7,847 |
+| TLR 3         | £639    | £3,169 |
 
 ### Unqualified teacher salaries
 
