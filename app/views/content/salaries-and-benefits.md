@@ -18,7 +18,7 @@ related_content:
 inset_text:
   new-salaries:
     text: |-
-      The pay award for 2023/24 is subject to a statutory consultation process and cannot be confirmed until the final School Teachers’ Pay and Conditions Document is published.
+      The new pay award for 2023/24 is subject to a statutory consultation period and your school can choose how to implement it.
 keywords:
   - Salary
   - Salaries
