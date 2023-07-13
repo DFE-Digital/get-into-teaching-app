@@ -69,7 +69,7 @@ It’s important to note that, even if you decide to apply for QTS, you will hav
 
 ### How to apply for QTS
 
-If you have a teaching qualification from the following countries and regions, you can now access a new service, called [Apply for qualified teacher status in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), to check if you meet the requirements for QTS and apply:
+If you have a teaching qualification from the following countries and regions, you can [check if you meet the requirements for QTS and apply](https://apply-for-qts-in-england.education.gov.uk/eligibility/start):
 
 
 * Australia
