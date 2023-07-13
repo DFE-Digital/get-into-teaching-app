@@ -76,10 +76,10 @@ The teacher pay scales for qualified teachers are:
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| England (excluding London)     | £28,000 | £38,810 |
-| London fringe                            | £29,344 | £40,083 |
-| Outer London                             | £32,407 | £43,193 |
-| Inner London                             | £34,502 | £44,756 |
+| England (excluding London)     | £30,000 | £41,333 |
+| London fringe                            | £31,350 | £42,689 |
+| Outer London                             | £34,514 | £46,001 |
+| Inner London                             | £36,745 | £47,666 |
 
 Most established teachers will earn more than this maximum by progressing onto the upper pay range for teachers, or by becoming a leading practitioner.
 
