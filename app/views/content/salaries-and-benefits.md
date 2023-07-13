@@ -110,10 +110,10 @@ The teacher pay scales for leading practitioners are:
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| England (excluding London)     | £44,523 | £67,685 |
-| London fringe                            | £45,749 | £68,913 |
-| Outer London                             | £48,055 | £71,220 |
-| Inner London                             | £52,936 | £76,104 |
+| England (excluding London)     | £47,417 | £72,085 |
+| London fringe                            | £48,723 | £73,393 |
+| Outer London                             | £51,179 | £75,850 |
+| Inner London                             | £56,377 | £81,051 |
 
 ### Headteacher salaries
 
