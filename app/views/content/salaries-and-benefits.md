@@ -125,10 +125,10 @@ The salary ranges for headteachers are:
 
 | Area                                     | Minimum | Maximum  |
 | -------                                  | -----   | -----    |
-| England (excluding London)     | £50,122 | £123,057 |
-| London fringe                            | £51,347 | £124,274 |
-| Outer London                             | £53,637 | £126,539 |
-| Inner London                             | £58,501 | £131,353 |
+| England (excluding London)     | £53,380 | £131,056 |
+| London fringe                            | £54,685 | £132,352 |
+| Outer London                             | £57,124 | £134,765 |
+| Inner London                             | £62,304 | £139,891 |
 
 ### Other payments
 
