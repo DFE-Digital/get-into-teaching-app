@@ -196,6 +196,8 @@
         a {
           margin: 1em;
           display: flex;
+          white-space: pre-wrap;
+          flex-direction: row;
         }
       }
 
