@@ -75,16 +75,16 @@ If you have a teaching qualification from the following countries and regions, y
 * Australia
 * Canada
 * the EEA
+* Guernsey
 * Gibraltar
 * Hong Kong
+* Jersey
 * New Zealand
 * Northern Ireland
 * Scotland
 * Switzerland
 * Ukraine
 * the USA
-
-In July 2023, we will make the service available to applicants with a teaching qualification from Jersey and Guernsey.  
 
 In addition, if you have a subject specialism in languages, mathematics or science and a teaching qualification to teach to teach 11 to 16 year olds from the following countries, you will be able to use the service to check if you meet the requirements for QTS: 
 
