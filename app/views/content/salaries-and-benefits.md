@@ -15,6 +15,10 @@ related_content:
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
     Why I became a teacher : "/blog/the-head-of-science-inspiring-students-in-blackpool"
     Abigail's career progression story : "/blog/abigails-career-progression-story"
+inset_text:
+  new-salaries:
+    text: |-
+      These figures are for the 2022/23 academic year. Figures for the 2023/24 academic year will be updated on this page shortly.
 keywords:
   - Salary
   - Salaries
@@ -49,6 +53,8 @@ keywords:
   - How to become a teacher
   - Teacher training courses
 ---
+
+$new-salaries$
 
 For helping to shape the next generation, you’re entitled to a competitive salary, generous holidays, and a substantial pension.
 
