@@ -125,10 +125,6 @@
     grid-template-columns: 1.2fr .8fr;
     overflow: visible;
 
-    &:last-child .call-to-action__image {
-      background-position: 100%;
-    }
-
     .badge {
       transform: translate(-50%, -50%);
     }
