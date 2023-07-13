@@ -18,7 +18,7 @@ related_content:
 inset_text:
   new-salaries:
     text: |-
-      These figures are for the 2022/23 academic year. Figures for the 2023/24 academic year will be updated on this page shortly.
+      The pay award for 2023/24 is subject to a statutory consultation process and cannot be confirmed until the final School Teachers’ Pay and Conditions Document is published.
 keywords:
   - Salary
   - Salaries
