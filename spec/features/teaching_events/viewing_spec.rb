@@ -103,7 +103,6 @@ RSpec.feature "Searching for teaching events", type: :feature do
     context "when can the event can be signed up for online" do
       let(:event) { build(:event_api) }
 
-      it { is_expected.to have_content("You must register for a place to attend this event") }
       it { is_expected.to have_link(register_link_text) }
     end
 
@@ -111,7 +110,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       let(:event) { build(:event_api, :online) }
 
       let(:expected) do
-        "Once registered, you will receive log-in information and joining instructions via email."
+        "Register for this event and you'll receive joining instructions via email."
       end
 
       it { is_expected.to have_content(expected) }
