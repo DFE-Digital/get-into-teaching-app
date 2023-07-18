@@ -146,8 +146,6 @@ These payments are called ‘teaching and learning responsibility’ (TLR) payme
 | TLR 2         | £3,214  | £7,847 |
 | TLR 3         | £639    | £3,169 |
 
-You might also receive a special educational needs allowance of between £2,539 and £5,009.
-
 ### Unqualified teacher salaries
 
 Many schools in England require teachers to have 'qualified teacher status' (QTS). If you do not have this, you can work
@@ -170,7 +168,9 @@ For comparison, you'd work 227 days per year (on average) if you worked full tim
 
 ## Teachers' pension scheme
 
-The teachers’ pension scheme is one of the most generous in the country. It is a 'defined benefit' pension and is:
+The teachers’ pension scheme is one of the most generous in the country which includes an employer contribution of 23.6%.
+
+It is a 'defined benefit' pension and is:
 
 * based on your teaching salary rather than the amount of money you pay in
 * registered with HM Revenue and Customs - so your contributions are tax-free
