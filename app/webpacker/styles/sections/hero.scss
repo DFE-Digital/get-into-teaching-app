@@ -8,7 +8,7 @@ $mobile-cutoff: 800px;
   &__title {
     display: block;
     max-width: 90%;
-    padding-top: 3em;
+    padding-top: 3.16em;
 
     @include mq($from: tablet) {
       display: inline-block;
@@ -67,7 +67,7 @@ $mobile-cutoff: 800px;
   @supports (display: grid) {
     display: grid;
 
-    grid-template-columns: 3em repeat(2, 1fr) 2em;
+    grid-template-columns: 0 repeat(2, 1fr) 2em;
     grid-template-rows:
       8em $title-overlap-img repeat(
         2,
@@ -83,7 +83,7 @@ $mobile-cutoff: 800px;
     &__content,
     &__paragraph {
       grid-area: 4 / 1 / 5 / 5;
-      padding: 0 2em 2em;
+      padding: 0 2.1em 2.5em 1.6875em;
     }
 
     &__subtitle {
@@ -112,7 +112,7 @@ $mobile-cutoff: 800px;
           4,
           minmax(100px, 1fr)
         );
-      grid-template-rows: 2em repeat(5, fit-content(0)) 2em;
+      grid-template-rows: 0 repeat(5, fit-content(0)) 0;
 
       &__title {
         grid-area: 3 / 1 / 5 / 5;
@@ -184,10 +184,12 @@ $mobile-cutoff: 800px;
 
   &__title {
     z-index: 20;
+    line-height: 2.65em;
   }
 
   &__paragraph {
-    line-height: 1.5;
+    font-size: 1.5rem;
+    line-height: 1.25;
   }
 
   &__subtitle {
@@ -208,6 +210,7 @@ $mobile-cutoff: 800px;
 
     img {
       object-fit: cover;
+      object-position: 100% 30%;
       width: 100%;
       height: 100%;
     }
