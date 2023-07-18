@@ -163,7 +163,7 @@ redirects:
   "/funding-and-salary/overview": "/funding-and-support"
   "/train-to-teach-with-a-disability": "/get-support-training-to-teach-if-you-are-disabled"
   "/explore-my-options/secondary/training-options": "/train-to-be-a-teacher"
-  "/user/register": "/tta-service"
+  "/user/register": "/teacher-training-adviser/sign_up/identity"
   "/funding-and-salary/teacher-salaries": "/salaries-and-benefits"
   "/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training/degrees-with-opt-in-qts": "/train-to-be-a-teacher"
   "/signup/salaries-and-benefits": "/salaries-and-benefits"

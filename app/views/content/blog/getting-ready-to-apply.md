@@ -56,7 +56,7 @@ An adviser with years of teaching experience can help you if you're (one of the 
 
 Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. Talk to an adviser by phone, text or email, as often or as little as you need.
 
-[Get an adviser](/tta-service).
+[Get an adviser](/teacher-training-adviser/sign_up/identity).
 
 ## 4. Research training courses
 

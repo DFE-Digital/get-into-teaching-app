@@ -39,7 +39,7 @@ calls_to_action:
     arguments:
       text: "Return to teaching advisers specialise in helping returning teachers with qualified teacher status (QTS) get back into the classroom."
       link_text: "Get a return to teaching adviser"
-      link_target: "/tta-service"
+      link_target: "/teacher-training-adviser/sign_up/identity"
       icon: "icon-person"
 
 quote:
@@ -84,7 +84,7 @@ The education sector promotes inclusivity and diversity. There are many organisa
 
 ## Get a return to teaching adviser
 
-If you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you want to return to teach at a secondary school in England, you could be eligible for a [return to teaching adviser](/tta-service).
+If you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you want to return to teach at a secondary school in England, you could be eligible for a [return to teaching adviser](/teacher-training-adviser/sign_up/identity).
 
 They can give you free one-to-one support with:
 

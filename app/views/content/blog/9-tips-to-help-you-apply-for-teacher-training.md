@@ -59,7 +59,7 @@ Get a [teacher training adviser](/teacher-training-advisers).
 
 ## 4.	Attend a teacher training event
 
-Our free events are the perfect opportunity to find out more about teacher training. Chat to teachers, training providers and expert advisers, and get answers to all of your questions. 
+Our free events are the perfect opportunity to find out more about teacher training. Chat to teachers, training providers and expert advisers, and get answers to all of your questions.
 
 [Find an event](/events).
 
@@ -71,7 +71,7 @@ Extra financial support is available if you’re a parent, have an adult dependa
 
 And for some subjects, you may qualify for a tax-free bursary or scholarship.
 
-The key to managing financially during your training year is careful planning and preparation. Our [expert advisers](/tta-service) can help you make a plan and find the best funding options for your circumstances.
+The key to managing financially during your training year is careful planning and preparation. Our [expert advisers](/teacher-training-adviser/sign_up/identity) can help you make a plan and find the best funding options for your circumstances.
 
 [Explore your funding options](/funding-and-support).
 
