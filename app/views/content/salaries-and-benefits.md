@@ -62,7 +62,7 @@ These salaries apply to maintained primary, secondary and special schools in Eng
 
 Other types of schools (for example, academies) can set their own pay scales.
 
-Figures are for the 2023/24 academic year.
+Figures apply from September 2023.
 
 ## Primary and secondary teaching salaries
 
@@ -145,6 +145,8 @@ These payments are called ‘teaching and learning responsibility’ (TLR) payme
 | TLR 1         | £9,272  | £15,690|
 | TLR 2         | £3,214  | £7,847 |
 | TLR 3         | £639    | £3,169 |
+
+You might also receive a special educational needs allowance of between £2,539 and £5,009.
 
 ### Unqualified teacher salaries
 
