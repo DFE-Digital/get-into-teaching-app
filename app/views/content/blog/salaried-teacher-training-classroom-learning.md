@@ -38,4 +38,4 @@ Most weeks during the first term I spent one day at university developing knowle
 
 I gained a PGCE which included qualified teacher status and which I could use as the first third of a Master's degree. Teaching has always been an ambition of mine for as long as I can remember because I had such great role models as teachers at school. Without a salaried course, it would not have been possible.
 
-[Find out more about the different kinds of salaried teacher training and see if you're eligible](/funding-and-support/salaried-teacher-training).
+[Find out more about salaried teacher training and see if you're eligible](/funding-and-support/salaried-teacher-training).

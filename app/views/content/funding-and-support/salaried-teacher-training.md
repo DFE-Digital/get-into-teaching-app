@@ -10,7 +10,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/funding-and-support/promos/get-adviser-funding-promo
 navigation: 20.20
-navigation_description: Find out about salaried teacher training, including School Direct (salaried) courses, postgraduate teaching apprenticeships and training delivered by Teach First.
+navigation_description: Find out about School Direct (salaried) courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 keywords:
     - Teach First
     - School Direct
@@ -31,13 +31,13 @@ The main salaried courses include School Direct (salaried), postgraduate teachin
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
-They're in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. 
+These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. 
 
 ## Am I eligible for a salaried teacher training course? 
 
 For some salaried courses, teacher training providers may want you to have significant teaching or school experience (for example, if you’re already working as an unqualified teacher or teaching assistant).  
 
-Some also want you to have a school lined up to work in while you train. Speak to the teacher training provider to find out what their requirements are. 
+Some also want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are. 
 
 You can also [find out more about the qualifications you need to apply for all teacher training courses](/is-teaching-right-for-me/qualifications-you-need-to-teach). 
 
@@ -71,7 +71,7 @@ Some courses can begin at other points in the year and there may be part-time co
 
 As well as QTS, you may also be able to work towards a [postgraduate certificate in education (PGCE)](/what-is-a-pgce), but you may have to pay an extra fee. 
 
-[Find out more about what to expect as part of your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
+[Find out more about what to expect during your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
 
 ## How do I find a salaried teacher training course? 
 
