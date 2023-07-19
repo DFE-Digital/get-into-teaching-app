@@ -12,7 +12,7 @@ related_content:
     Is teaching right for me? : "/is-teaching-right-for-me"
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
-navigation: 20.25
+navigation: 20.30
 navigation_title: If you're a parent or carer
 navigation_description: Find out what extra grants and schemes are available if you have children or other caring responsibilities.
 keywords:

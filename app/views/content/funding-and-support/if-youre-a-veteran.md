@@ -11,7 +11,7 @@ related_content:
     Teach in further education without a degree: "https://www.teach-in-further-education.campaign.gov.uk/"
 promo_content:
     - content/funding-and-support/promos/get-adviser-veterans-promo
-navigation: 20.30
+navigation: 20.35
 navigation_title: If you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 calls_to_action:

@@ -10,7 +10,7 @@ related_content:
     Who do you want to teach?: "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
-navigation: 20.20
+navigation: 20.25
 navigation_title: If you're disabled
 navigation_description: Find out about the support you can get while training to teach if you're disabled.
 keywords:
