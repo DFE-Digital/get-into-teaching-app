@@ -62,7 +62,7 @@ These salaries apply to maintained primary, secondary and special schools in Eng
 
 Other types of schools (for example, academies) can set their own pay scales.
 
-Figures are for the 2023/24 academic year.
+Figures apply from September 2023.
 
 ## Primary and secondary teaching salaries
 
@@ -168,7 +168,9 @@ For comparison, you'd work 227 days per year (on average) if you worked full tim
 
 ## Teachers' pension scheme
 
-The teachers’ pension scheme is one of the most generous in the country. It is a 'defined benefit' pension and is:
+The teachers’ pension scheme is one of the most generous in the country and includes an employer contribution of 23.6%.
+
+It is a 'defined benefit' pension and is:
 
 * based on your teaching salary rather than the amount of money you pay in
 * registered with HM Revenue and Customs - so your contributions are tax-free
