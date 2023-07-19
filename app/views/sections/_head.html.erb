@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
 <script type="text/javascript" id="vwoCode">
 window._vwo_code=window._vwo_code || (function() {
-var account_id=<%= ENV["VWO_ID"]%>,
+var account_id=<%= ENV["VWO_ID"].to_json.html_safe %>,
 version = 1.5,
 settings_tolerance=2000,
 library_tolerance=2500,
