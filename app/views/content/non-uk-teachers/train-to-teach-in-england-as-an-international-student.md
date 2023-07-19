@@ -191,7 +191,9 @@ Salaried courses include:
 
 * School Direct salaried teacher training programmes
 * the Teach First Leadership Development programme
-* postgraduate teaching apprenticeships 
+* postgraduate teaching apprenticeships
+
+[Find out more about salaried teacher training](/funding-and-support/salaried-teacher-training).
  
 #### Choosing a subject to teach 
 
