@@ -47,7 +47,7 @@ Or talk to a [teacher training adviser](/teacher-training-advisers) who can help
 
 You'll receive an [unqualified teacher’s salary](/salaries-and-benefits#unqualified-teacher-salaries) – the exact amount will vary depending on the school you work in. 
 
-It’s worth checking if you’re entitled to a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) before you apply for a salaried course. 
+It’s worth checking if there is a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) available for your subject before you apply for a salaried course. 
 
 If you do a salaried course, you will not be eligible for a bursary, scholarship or student finance. You’ll also be taxed on your income, whereas you will not be taxed on a bursary or scholarship. 
 
