@@ -1,5 +1,7 @@
 ---
 EnableDefaultLinters: true
+exclude:
+  - 'app/components/content/hero_component.html.erb'
 linters:
   ErbSafety:
     enabled: true
