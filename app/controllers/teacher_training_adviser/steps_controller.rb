@@ -28,8 +28,6 @@ module TeacherTrainingAdviser
   private
 
     def noindex?
-      return true unless ActiveModel::Type::Boolean.new.cast(ENV["GET_AN_ADVISER"])
-
       # Only index the first step.
       !request.path.include?("/#{first_step_class.key}")
     end

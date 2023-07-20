@@ -7,9 +7,6 @@ SecureHeaders::Configuration.default do |config|
   config.x_permitted_cross_domain_policies = "none"
   config.referrer_policy = %w[origin-when-cross-origin strict-origin-when-cross-origin]
 
-  tta_service_hosts = []
-  tta_service_hosts << URI.parse(ENV["TTA_SERVICE_URL"]).host if ENV["TTA_SERVICE_URL"].present?
-
   lid_pixels = %w[pixelg.adswizz.com tracking.audio.thisisdax.com]
 
   google_analytics = %w[
@@ -69,7 +66,7 @@ SecureHeaders::Configuration.default do |config|
     default_src: %w['none'],
     base_uri: self_base,
     child_src: self_base.concat(youtube, pinterest, snapchat),
-    connect_src: self_base.concat(google_apis, pinterest, google_analytics, google_supported, google_doubleclick, facebook, tta_service_hosts, zendesk, snapchat, sentry, gtm_server, clarity, vwo),
+    connect_src: self_base.concat(google_apis, pinterest, google_analytics, google_supported, google_doubleclick, facebook, zendesk, snapchat, sentry, gtm_server, clarity, vwo),
     font_src: self_base.concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: self_base.concat(snapchat, facebook, govuk),
     frame_src: self_base.concat(scribble, snapchat, facebook, youtube, google_doubleclick, google_analytics, data, pinterest, optimize, clarity, vwo),
