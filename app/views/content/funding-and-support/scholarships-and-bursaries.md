@@ -38,7 +38,7 @@ Postgraduate teaching bursaries and scholarships are only available for the subj
 
 You must be eligible for student finance to receive a bursary or scholarship (unless you’re training to teach physics or languages).
 
-You cannot receive a scholarship or bursary if your teacher training course is salaried.
+You cannot receive a scholarship or bursary if you're on a [salaried teacher training course](/funding-and-support/salaried-teacher-training).
 
 | Subject                                                | Bursary  | Scholarship      |
 | -------------                                          | -------: | ---------------: |

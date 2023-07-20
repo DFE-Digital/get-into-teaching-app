@@ -160,6 +160,10 @@ The unqualified teacher salary ranges are:
 | Outer London                             | £24,415 | £35,954 |
 | Inner London                             | £25,831 | £37,362 |
 
+If you're already working as an unqualified teacher and have the right experience, you could be eligible for the [assessment only route to qualified teacher status (QTS)](/train-to-be-a-teacher/assessment-only-route-to-qts).
+
+Or find out how you can earn an unqualified teacher salary while training to teach on a [salaried teacher training course](/funding-and-support/salaried-teacher-training).
+
 ## Holidays
 
 You'll get more days holiday than people in many other professions. In school, full-time teachers work 195 days per year. 

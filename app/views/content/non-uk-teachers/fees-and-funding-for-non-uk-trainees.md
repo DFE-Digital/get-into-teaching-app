@@ -75,7 +75,7 @@ As a non-UK candidate, you can expect to pay between £9,250 and about £32,000 
 
 Depending on your [immigration status](#check-your-immigration-status-and-eligibility-for-financial-support), you may get a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250). If you are eligible, this fee will be the same for all courses offered by accredited training providers. Please note – most non-UK candidates will not be eligible for this type of financial support. 
 
-You can apply for a salaried teacher training course. On this type of course, you will not pay a fee, and you can earn money while you train in a school. However, these courses are limited in number and very competitive. 
+You can apply for a [salaried teacher training course](/funding-and-support/salaried-teacher-training). On this type of course, you will not pay a fee, and you can earn money while you train in a school. However, these courses are limited in number and very competitive. 
 
 [Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses). 
 
