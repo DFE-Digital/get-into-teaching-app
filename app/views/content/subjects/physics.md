@@ -5,6 +5,8 @@ description: |-
 layout: "layouts/minimal"
 colour: "yellow"
 image: "static/content/hero-images/0013.jpg"
+promo_content:
+    - content/subjects/physics/adviser-promo-physics
 keywords:
   - physics
   - teaching physics
