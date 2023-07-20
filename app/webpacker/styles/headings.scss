@@ -171,6 +171,9 @@
 
 h1 {
   @extend .heading-xxl;
+  @media (max-width: 1000px) {
+    font-size: 2rem;
+  }
 }
 
 h2 {

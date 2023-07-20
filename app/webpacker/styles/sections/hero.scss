@@ -192,6 +192,13 @@ $mobile-cutoff: 800px;
     line-height: 1.25;
   }
 
+  @media (max-width: 1000px) {
+    &__paragraph {
+      font-size: 1.125rem;
+      line-height: 1.25;
+    }
+  }
+
   &__subtitle {
     div {
       @include font-size("small");
