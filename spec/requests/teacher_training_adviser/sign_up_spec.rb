@@ -41,7 +41,7 @@ RSpec.describe "Sign up" do
       context "when viewing the first step" do
         let(:step_path) { teacher_training_adviser_step_path(first_step.key) }
 
-        it { expect(response.body).to include("noindex") }
+        it { expect(response.body).not_to include("noindex") }
       end
     end
   end
