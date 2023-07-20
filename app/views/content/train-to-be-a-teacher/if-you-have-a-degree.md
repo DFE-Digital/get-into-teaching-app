@@ -18,9 +18,11 @@ navigation_description: Find out how to get qualified teacher status (QTS) throu
 keywords:
   - becoming a teacher
   - teacher training
-  - school direct
+  - school direct (salaried)
   - pgce
   - qts
+  - Teach First
+  - Postgraduate teaching apprenticeship
 inset_text:
   still-time-to-apply:
     title: Start your training this September
@@ -124,15 +126,11 @@ You should talk to teacher training providers about where your school placements
 
 ## Salaried teacher training
 
-Salaried courses are sometimes available for specific candidates, such as if you’re working as an unqualified teacher or teaching assistant. These include School Direct (salaried) courses and postgraduate teaching apprenticeships.
+Salaried courses are sometimes available for specific candidates, such as if you’re working as an unqualified teacher or teaching assistant. These include School Direct (salaried) courses, postgraduate teaching apprenticeships and teacher training delivered by Teach First.
 
 These are in high demand and very competitive. Places fill up quickly.
 
 You should check your eligibility with the teacher training provider before you apply.
 
-You can [find teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/) and filter by salaried courses.
-
-### Teach First
-
-You could also consider Teach First to earn a salary while you train. To apply for Teach First, you should [visit the Teach First website](https://www.teachfirst.org.uk/).
+[Find out more about salaried teacher training](/funding-and-support/salaried-teacher-training).
 
