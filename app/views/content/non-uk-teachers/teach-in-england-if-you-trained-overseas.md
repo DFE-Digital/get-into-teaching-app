@@ -8,7 +8,7 @@ related_content:
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 navigation: 20.20
-navigation_title: Teach in England if you trained outside the UK
+navigation_title: Teach in England as a non-UK qualified teacher
 navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from overseas.
 date: "2021-05-27"
 image: "static/content/hero-images/0002.jpg"
@@ -69,14 +69,16 @@ It’s important to note that, even if you decide to apply for QTS, you will hav
 
 ### How to apply for QTS
 
-From 1 February 2023, if you have a teaching qualification from the following countries and regions, you will be able to access a new service, called [Apply for qualified teacher status in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), to check if you meet the requirements for QTS:
+If you have a teaching qualification from the following countries and regions, you can [check if you meet the requirements for QTS and apply](https://apply-for-qts-in-england.education.gov.uk/eligibility/start):
 
 
 * Australia
 * Canada
 * the EEA
+* Guernsey
 * Gibraltar
 * Hong Kong
+* Jersey
 * New Zealand
 * Northern Ireland
 * Scotland
