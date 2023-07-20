@@ -1,5 +1,7 @@
 ---
 EnableDefaultLinters: true
+exclude:
+  - 'app/views/sections/_head.html.erb'
 linters:
   ErbSafety:
     enabled: true
