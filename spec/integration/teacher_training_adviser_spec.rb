@@ -40,6 +40,7 @@ RSpec.describe "Sign up", :integration, type: :feature, js: true do
     )
     submit_uk_callback_step("123456789")
     submit_review_answers_step
-    expect(page).to have_text("you're signed up")
+
+    expect(page).to have_text("we'll give you a call")
   end
 end
