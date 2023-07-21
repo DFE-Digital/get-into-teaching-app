@@ -307,8 +307,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "John, you're signed up."
-      expect(page).to have_text "We've booked a call."
+      expect(page).to have_css "h1", text: "John, we'll give you a call"
+      expect(page).to have_text "We'll give you a call at the time you selected."
     end
 
     scenario "with an equivalent degree (UK)" do
@@ -371,8 +371,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "John, you're signed up."
-      expect(page).to have_text "We've booked a call."
+      expect(page).to have_css "h1", text: "John, we'll give you a call"
+      expect(page).to have_text "We'll give you a call at the time you selected"
     end
 
     context "when there are no callback slots available" do
@@ -436,7 +436,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
         click_on "Complete sign up"
 
-        expect(page).to have_css "h1", text: "John, you're signed up."
+        expect(page).to have_css "h1", text: "John, give us a call"
         expect(page).to have_text "Please give us a call so that we can check your degree"
       end
 
@@ -498,7 +498,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
         click_on "Complete sign up"
 
-        expect(page).to have_css "h1", text: "John, you're signed up."
+        expect(page).to have_css "h1", text: "John, give us a call"
         expect(page).to have_text "Please give us a call so that we can check your degree"
       end
     end
@@ -1016,7 +1016,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "John, you're signed up."
+      expect(page).to have_css "h1", text: "John, we'll give you a call"
     end
 
     scenario "skipping pre-filled optional steps" do
