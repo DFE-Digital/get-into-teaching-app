@@ -18,6 +18,7 @@ redirects:
   "/salaries-and-benefits-simplified": "/salaries-and-benefits"
   "/home": "/"
   "/help-and-advice": "/help-and-support"
+  "/tta-service": "/teacher-training-adviser/sign_up/identity"
 
   # Campaign landing pages
   "/helping-you-become-a-teacher": "/three-things-to-help-you-get-into-teaching"
