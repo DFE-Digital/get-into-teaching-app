@@ -36,7 +36,7 @@ calls_to_action:
       title: Get an adviser
       text: "Answer a few questions about your situation and we'll match you with an adviser."
       link_text: "Get a teacher training adviser"
-      link_target: "/tta-service"
+      link_target: "/teacher-training-adviser/sign_up/identity"
       icon: "icon-person"
 ---
 Teacher training advisers give you free, one-to-one support, whether you're just thinking about teaching or you're ready to apply.

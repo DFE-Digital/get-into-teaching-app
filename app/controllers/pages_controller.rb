@@ -67,28 +67,10 @@ class PagesController < ApplicationController
     render_page("welcome/my-journey-into-teaching")
   end
 
-  def tta_service
-    url = if ActiveModel::Type::Boolean.new.cast(ENV["GET_AN_ADVISER"])
-            adviser_sign_up_url
-          else
-            adviser_service_url
-          end
-
-    url = "#{url}?#{request.query_parameters.to_query}" if request.query_parameters.any?
-
-    redirect_to(url, turbolinks: false, status: :moved_permanently, allow_other_host: true)
-  end
-
 private
 
   def adviser_sign_up_url
     teacher_training_adviser_step_path(:identity)
-  end
-
-  def adviser_service_url
-    raise ActionView::MissingTemplate if ENV["TTA_SERVICE_URL"].blank?
-
-    ENV["TTA_SERVICE_URL"]
   end
 
   def init_funding_widget

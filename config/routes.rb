@@ -59,8 +59,6 @@ Rails.application.routes.draw do
   get "/funding-and-support/scholarships-and-bursaries-search", to: "pages#scholarships_and_bursaries_search", as: "scholarships_and_bursaries_search"
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
   get "/cookies", to: "pages#cookies", as: :cookies
-  get "/tta-service", to: "pages#tta_service", as: :tta_service
-  get "/tta", to: "pages#tta_service", as: nil
   get "/session-expired", to: "pages#session_expired", as: :session_expired
 
   get "/welcome", to: "pages#welcome", as: :welcome_guide
