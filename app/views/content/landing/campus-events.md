@@ -1,5 +1,5 @@
 ---
-title: "We'll help you do the homework before becoming a teacher"
+title: "Get Into Teaching"
 description: Free advice and support on how to become a teacher. Get the latest information sent straight to your inbox.
 content:
     - content/landing/campus-events/header
