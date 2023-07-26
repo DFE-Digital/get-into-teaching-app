@@ -19,21 +19,6 @@ keywords:
     - QTS
     - iQTS
     - Qualified teacher status
-accordion:
-  numbered: true
-  content_after_accordion:
-    partial: content/non-uk-teachers/international-qualified-teacher-status/after-accordion
-  steps:
-    Check your eligibility:
-      partial: content/non-uk-teachers/international-qualified-teacher-status/check-your-eligibility
-    Find out about fees:
-      partial: content/non-uk-teachers/international-qualified-teacher-status/find-out-about-fees
-    Apply to your chosen iQTS teacher training provider:
-      partial: content/non-uk-teachers/international-qualified-teacher-status/apply-to-your-chosen-iqts-teacher-training-provider
-    Gain iQTS and automatic QTS:
-      partial: content/non-uk-teachers/international-qualified-teacher-status/gain-iqts-and-automatic-qts
-    Next steps for candidates wishing to teach in England:
-      partial: content/non-uk-teachers/international-qualified-teacher-status/next-steps-for-candidates
 ---
 
 ## Introducing iQTS
@@ -143,7 +128,7 @@ Your training provider will award you international qualified teacher status (iQ
 
 iQTS is an international teaching qualification designed for UK and non-UK citizens living outside England.  
 
-If you’re living in England and want a teaching qualification leading to QTS, you must [apply for teacher training in England](https://getintoteaching.education.gov.uk/steps-to-become-a-teacher). 
+If you’re living in England and want a teaching qualification leading to QTS, you must [apply for teacher training in England](/steps-to-become-a-teacher). 
 
 If you’re already qualified as a teacher or have teaching experience, other routes to qualified teacher status (QTS) may be faster and more affordable.  
 
@@ -155,7 +140,7 @@ If you have no teaching qualification but lots of experience, you should check y
 
 If you succesfully complete your iQTS course, you will be qualified to teach in England. It’s important to note that you will also have to apply for a teaching job and a visa, unless you already have an immigration status allowing you to work in the UK. 
 
-[Teach in England](/teach-in-england-if-you-trained-overseas) gives more information.
+[Teach in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas) gives more information.
 
 ## Early career teacher induction 
 
