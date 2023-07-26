@@ -72,7 +72,7 @@ The international relocation payment (IRP) is designed to repay some of the cost
 
 All eligible applicants will receive a single payment of £10,000 from the Department for Education (DfE) around the end of their first term training or working in England. The IRP is a grant – you will not have to pay this money back. You can only receive the IRP once.
 
-## Criteria for trainee teachers (fee-paying and salaried)  
+## Criteria for trainee teachers (fee-paying and salaried) 
 
 As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements. The eligibility requirements are the same whether you pay a fee for your training course, or are paid a salary to work while you train. However, the application process for the IRP is [different for salaried trainees](#how-trainee-teachers-can-get-the-international-relocation-payment).
 
