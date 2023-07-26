@@ -128,8 +128,6 @@ The following providers specialise in particular regions, or should be contacted
 
 * [Plymouth Marjon University](https://www.marjon.ac.uk/teaching/) – contact this provider for more information
 
-* [Sheffield Hallam University](https://www.shu.ac.uk/study-here/options/teach/different-routes-into-teaching) – contact this provider for more information
-
 * [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider is accepting applications from Dubai only
 
 ## Assessment 
