@@ -3,7 +3,6 @@ title: Get international qualified teacher status (iQTS)
 description: |-
  Get international qualified teacher status (iQTS) from anywhere in the world, a teaching qualification backed by England’s Department for Education (DfE).
 related_content:
-    What is QTS? : "/what-is-qts"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
 promo_content:
@@ -91,57 +90,47 @@ If you are already employed in a school, you can discuss with your training prov
 
 To learn more, contact your chosen iQTS provider directly. 
 
-### How to apply 
+### How to apply 
 
-iQTS applications for the 2023/24 academic year are now open with the following providers. 
-
-[Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher): 
-* is accepting applications from anywhere in the world
-* has placement schools in Spain, Algeria and Nepal
-
-[Edge Hill University](https://www.edgehill.ac.uk/):
-* is accepting applications from anywhere in the world
-
-[Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts):
-* is accepting applications from Latin America and South East Asia 
-
-[National Institute of Teaching and Education (NITE), part of the Coventry University Group](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/):
-
-* is accepting applications from anywhere in the world
-
-[Plymouth Marjon University](https://www.marjon.ac.uk/teaching/)
-
-[Sheffield Hallam University](https://www.shu.ac.uk/study-here/options/teach/different-routes-into-teaching)
-
-[Tes](https://www.tes.com/institute/courses/iqts):
-* is accepting applications from anywhere in the world, excluding Hong Kong
-
-[University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx):
-* is accepting applications from Dubai only
-
-[University of Buckingham](https://www.buckingham.ac.uk/courses/postgraduate/international-qualified-teacher-status-iqts):
-* is accepting applications from anywhere in the world
-
-[University of Derby](https://www.derby.ac.uk/online/education-courses/international-qualified-teacher-status-iqts-online/):
-* is accepting applications from anywhere in the world
-
-[University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning):
-* is accepting applications from anywhere in the world
-
-[University of Sunderland](https://www.sunderland.ac.uk/study/education/pgce-iqts/):
-* is accepting applications from anywhere in the world
-
-[University of Warwick](https://warwick.ac.uk/fac/soc/cte/international/)
-* is accepting applications from anywhere in the world
-
-[University of the West of England](https://www.uwe.ac.uk/courses/applying/postgraduate-applications/iqts-information):
-* is accepting applications from anywhere in the world
+iQTS applications for the 2023/24 academic year are now open with the providers listed on this page. 
 
 Visit the provider website to: 
 
 * learn whether a particular provider works with, or will accept, a placement school in your region 
 
 * apply for a place on an iQTS training course
+
+The following providers are accepting applications from all over the world:
+
+* [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher) – this provider also has placement schools in Spain, Algeria and Nepal
+
+* [Edge Hill University](https://www.edgehill.ac.uk/)
+
+* [National Institute of Teaching and Education (NITE), part of the Coventry University Group](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/)
+
+* [Tes](https://www.tes.com/institute/courses/iqts) – this provider cannot accept applications from Hong Kong
+
+* [University of Buckingham](https://www.buckingham.ac.uk/courses/postgraduate/international-qualified-teacher-status-iqts)
+
+* [University of Derby](https://www.derby.ac.uk/online/education-courses/international-qualified-teacher-status-iqts-online/)
+
+* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning)
+
+* [University of Sunderland](https://www.sunderland.ac.uk/study/education/pgce-iqts/)
+
+* [University of Warwick](https://warwick.ac.uk/fac/soc/cte/international/)
+
+* [University of the West of England](https://www.uwe.ac.uk/courses/applying/postgraduate-applications/iqts-information)
+
+The following providers specialise in particular regions, or should be contacted for further information:
+
+* [Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts) – this provider is accepting applications from Latin America and South East Asia 
+
+* [Plymouth Marjon University](https://www.marjon.ac.uk/teaching/) – contact this provider for more information
+
+* [Sheffield Hallam University](https://www.shu.ac.uk/study-here/options/teach/different-routes-into-teaching) – contact this provider for more information
+
+* [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider is accepting applications from Dubai only
 
 ## Assessment 
 
