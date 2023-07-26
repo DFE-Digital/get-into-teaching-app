@@ -154,7 +154,7 @@ If you believe you meet the eligibility requirements, but have not been informed
 
 ### Salaried trainees
 
-If you have a place on a teacher training course where you are paid a salary to work while you train, email us at IRP.ExpressInterest@education.gov.uk to let us know you are interested in applying for the IRP. You will be asked to fill in a form giving us your details and we’ll get in touch when IRP applications open for salaried trainees in autumn 2023. If you are eligible, you’ll get the IRP around the end of your first term.
+If you have a place on a teacher training course where you are paid a salary to work while you train, email us at IRP.ExpressInterest@education.gov.uk to let us know you are interested in applying for the IRP. You will be asked to fill in a form giving us your details and we’ll get in touch when IRP applications open for salaried trainees on 4 September 2023. If you are eligible, you’ll get the IRP around the end of your first term.
 
 ## Criteria for teachers  
 
