@@ -70,7 +70,6 @@ gem "sentry-rails", ">= 5.9.0"
 gem "sentry-ruby", "~> 5.9.0"
 
 gem "skylight", "~> 5.3.4"
-
 gem "text"
 
 gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
