@@ -287,7 +287,7 @@ GEM
       activesupport (>= 6.1.4.4)
     htmlentities (4.3.4)
     httpclient (2.8.3)
-    i18n (1.13.0)
+    i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     invisible_captcha (2.1.0)
       rails (>= 5.2)
@@ -334,7 +334,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.2)
-    minitest (5.18.0)
+    minitest (5.19.0)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.27)
       tomlrb
@@ -540,8 +540,8 @@ GEM
     unicode-display_width (2.3.0)
     vcr (6.1.0)
     victor (0.3.4)
-    view_component (2.78.0)
-      activesupport (>= 5.0.0, < 8.0)
+    view_component (3.5.0)
+      activesupport (>= 5.2.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
     web-console (4.2.0)
@@ -641,7 +641,7 @@ DEPENDENCIES
   validates_timeliness!
   vcr
   victor
-  view_component (~> 2.78.0)
+  view_component (~> 3.5.0)
   web-console (>= 4.2.0)
   webmock (>= 3.14.0)
 
