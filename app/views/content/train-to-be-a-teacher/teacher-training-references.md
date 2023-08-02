@@ -31,7 +31,7 @@ keywords:
   - offers
   - teacher training application
 external_content:
-    - content/train-to-be-a-teacher/promos/apply-for-your-course
+    - content/train-to-be-a-teacher/promos/apply-for-your-cours
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
 inset_text:
