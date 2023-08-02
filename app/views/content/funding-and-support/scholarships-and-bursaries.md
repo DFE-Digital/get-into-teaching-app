@@ -9,7 +9,7 @@ related_content:
     Salaries and benefits: "/salaries-and-benefits"
     What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
 external_content:
-    - content/train-to-be-a-teacher/promos/find-your-cours
+    - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 navigation: 20.15

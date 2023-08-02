@@ -11,7 +11,7 @@ date: "2021-11-01"
 image: "static/content/hero-images/0015.jpg"
 backlink: "../../"
 external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course-pgc
+    - content/train-to-be-a-teacher/promos/find-your-course-pgce
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-pgce
 keywords:

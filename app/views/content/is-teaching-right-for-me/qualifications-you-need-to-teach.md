@@ -8,7 +8,7 @@ related_content:
     Teacher training : "/train-to-be-a-teacher/initial-teacher-training"
     My career change to teaching : "/blog/my-career-change-to-teaching"
 external_content:
-    - content/train-to-be-a-teacher/promos/find-your-cours
+    - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 ---
