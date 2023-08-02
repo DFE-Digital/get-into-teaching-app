@@ -9,7 +9,7 @@ related_content:
     Funding your training : "/funding-and-support"
     Teach in further education without a degree : "https://www.teach-in-further-education.campaign.gov.uk"
 external_content:
-    - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
+    - content/train-to-be-a-teacher/promos/find-your-undergraduate-cours
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-no-degree
 navigation: 20.20

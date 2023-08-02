@@ -8,7 +8,7 @@ related_content:
     Improve your subject knowledge: "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Salaries and benefits: "/salaries-and-benefits"
 external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
+    - content/train-to-be-a-teacher/promos/find-your-cours
 promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 calls_to_action:

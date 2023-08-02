@@ -7,7 +7,7 @@ related_content:
     If you've worked as an unqualified teacher: "/train-to-be-a-teacher/assessment-only-route-to-qts"
     What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
 external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
+    - content/train-to-be-a-teacher/promos/find-your-cours
 promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 navigation: 20.20
