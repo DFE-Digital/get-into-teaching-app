@@ -5,7 +5,7 @@ content:
     - content/landing/campus-events/header
     - content/landing/campus-events/mailing-list
 image: "static/content/campus-events/campus-events.jpeg"
-colour: "yellow"
+colour: "pink"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true
