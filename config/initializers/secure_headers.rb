@@ -42,7 +42,7 @@ SecureHeaders::Configuration.default do |config|
   gtm_server  = %w[get-into-teaching-staging-gtm.nw.r.appspot.com analytics.getintoteaching.education.gov.uk]
   reddit      = %w[www.redditstatic.com alb.reddit.com]
   clarity     = %w[www.clarity.ms *.clarity.ms]
-  vwo         = %w[dev.visualwebsiteoptimizer.com]
+  vwo         = %w[*.visualwebsiteoptimizer.com app.vwo.com cdn.pushcrew.com s3.amazonaws.com chart.googleapis.com wingify-assets.s3.amazonaws.com]
 
   quoted_unsafe_inline = ["'unsafe-inline'"]
   quoted_unsafe_eval   = ["'unsafe-eval'"]
@@ -75,7 +75,7 @@ SecureHeaders::Configuration.default do |config|
     manifest_src: self_base,
     media_src: self_base.concat(zendesk).concat(assets),
     script_src: self_base.concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit, clarity, vwo),
-    style_src: self_base.concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize),
+    style_src: self_base.concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize, vwo),
     worker_src: self_base.concat(blob),
   }
 
