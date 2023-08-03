@@ -138,7 +138,8 @@ These payments are called ‘teaching and learning responsibility’ (TLR) payme
 
 * progressing the education of people beyond your assigned pupils
 * leading, developing and enhancing the teaching practice of others
-* TLR payments come in 3 main pay ranges (TLR 1, 2 and 3) depending on your responsibilities
+
+TLR payments come in 3 main pay ranges (TLR 1, 2 and 3) depending on your responsibilities.
 
 | Level         | Minimum | Maximum|
 | -------       | -----   | -----  |
