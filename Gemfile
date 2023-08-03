@@ -36,6 +36,8 @@ gem "foreman"
 
 gem "secure_headers"
 
+gem "nokogiri", ">= 1.14.3"
+
 # Canonical meta tag
 gem "canonical-rails", ">= 0.2.14"
 
@@ -66,8 +68,8 @@ gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 5.9.0"
-gem "sentry-ruby", "~> 5.9.0"
+gem "sentry-rails", ">= 5.10.0"
+gem "sentry-ruby", "~> 5.10.0"
 
 gem "skylight", "~> 5.3.4"
 
@@ -160,7 +162,7 @@ group :rolling, :preprod, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
   gem "amazing_print"
-  gem "rails_semantic_logger", ">= 4.10.0"
+  gem "rails_semantic_logger", ">= 4.12.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
