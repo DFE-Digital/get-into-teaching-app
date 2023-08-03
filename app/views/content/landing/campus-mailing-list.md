@@ -1,5 +1,5 @@
 ---
-title: "Get Into Teaching"
+title: "Sign up for emails"
 description: Free advice and support on how to become a teacher. Get the latest information sent straight to your inbox.
 content:
     - content/landing/campus-mailing-list/header
