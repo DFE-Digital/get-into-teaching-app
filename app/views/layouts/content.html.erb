@@ -53,6 +53,12 @@
                 ) %>
               <% end %>
             <% end %>
+
+            <% if @front_matter.key?("external_content") %>
+              <% @front_matter["external_content"]&.each do |partial| %>
+                <%= render(partial) %>
+              <% end %>
+            <% end %>
           <% end %>
 
           <% if @front_matter["fullwidth"].blank? %>

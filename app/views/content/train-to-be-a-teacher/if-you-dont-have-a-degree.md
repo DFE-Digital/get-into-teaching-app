@@ -8,8 +8,9 @@ related_content:
     5 reasons to attend a Get Into Teaching event : "/blog/5-reasons-to-attend-a-get-into-teaching-event"
     Funding your training : "/funding-and-support"
     Teach in further education without a degree : "https://www.teach-in-further-education.campaign.gov.uk"
-promo_content:
+external_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
+promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-no-degree
 navigation: 20.20
 navigation_title: If you do not have a degree

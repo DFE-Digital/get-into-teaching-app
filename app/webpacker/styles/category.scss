@@ -174,25 +174,39 @@
 }
 
 .find-your-course {
-  margin: auto;
+  margin: 4em auto 0;
   max-width: $content-max-width;
-  border-top: 1px solid $grey-mid;
-  padding-top: 3em;
+  background-color: #f1f1f1;
   display: flex;
-  gap: .3em;
+  gap: 0;
 
   @include mq($from: tablet) {
-    gap: .5em;
+    gap: 0;
   }
 
   .left > .icon {
     display: inline-block;
     background: $yellow;
-    margin-inline: 1em;
     padding: .8em .8em .6em;
   }
 
   .right {
-    margin-inline: 1em;
+    padding: 1.25em 1.5em 1.5em;
+  }
+
+  .right h2 {
+    margin-bottom: 0;
+  }
+
+  .right p {
+    margin: 1em 0 1.25em;
+  }
+
+  .right p:last-child {
+    margin-bottom: 0;
+  }
+
+  .right p .button {
+    margin-bottom: 0;
   }
 }

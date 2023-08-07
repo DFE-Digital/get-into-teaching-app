@@ -9,8 +9,9 @@ related_content:
     What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
-promo_content:
+external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
+promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-degree
 navigation: 20.05
 navigation_title: If you have or are studying for a degree

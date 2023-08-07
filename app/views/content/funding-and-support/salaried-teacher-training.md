@@ -6,8 +6,9 @@ related_content:
     Nathan's experience of salaried teacher training: "/blog/salaried-teacher-training-classroom-learning"
     If you've worked as an unqualified teacher: "/train-to-be-a-teacher/assessment-only-route-to-qts"
     What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
-promo_content:
+external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
+promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 navigation: 20.20
 navigation_description: Find out about School Direct (salaried) courses, postgraduate teaching apprenticeships and training delivered by Teach First.
