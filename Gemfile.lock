@@ -214,7 +214,7 @@ GEM
     faraday-encoding (0.0.5)
       faraday
     faraday-excon (1.1.0)
-    faraday-http-cache (2.4.1)
+    faraday-http-cache (2.5.0)
       faraday (>= 0.8)
     faraday-httpclient (1.0.1)
     faraday-multipart (1.0.4)
@@ -406,10 +406,10 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.5.0)
       loofah (~> 2.19, >= 2.19.1)
-    rails_semantic_logger (4.10.0)
+    rails_semantic_logger (4.12.0)
       rack
       railties (>= 5.1)
-      semantic_logger (~> 4.9)
+      semantic_logger (~> 4.13)
     railties (7.0.2.3)
       actionpack (= 7.0.2.3)
       activesupport (= 7.0.2.3)
@@ -493,13 +493,13 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
-    semantic_logger (4.10.0)
+    semantic_logger (4.14.0)
       concurrent-ruby (~> 1.0)
     semantic_range (3.0.0)
-    sentry-rails (5.9.0)
+    sentry-rails (5.10.0)
       railties (>= 5.0)
-      sentry-ruby (~> 5.9.0)
-    sentry-ruby (5.9.0)
+      sentry-ruby (~> 5.10.0)
+    sentry-ruby (5.10.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
     shakapacker (6.6.0)
       activesupport (>= 5.2)
@@ -606,6 +606,7 @@ DEPENDENCIES
   net-imap
   net-pop
   net-smtp (>= 0.3.3)
+  nokogiri (>= 1.14.3)
   observer (>= 0.1.0)
   pg
   prometheus-client
@@ -617,7 +618,7 @@ DEPENDENCIES
   rack-host-redirect
   rack-page_caching!
   rails (~> 7.0.2.3)
-  rails_semantic_logger (>= 4.10.0)
+  rails_semantic_logger (>= 4.12.0)
   redis
   redis-session-store (>= 0.11.4)
   rexml (>= 3.2.5)
@@ -628,8 +629,8 @@ DEPENDENCIES
   rubocop-govuk (~> 4.3.0)
   secure_headers
   selenium-webdriver (~> 3.142)
-  sentry-rails (>= 5.9.0)
-  sentry-ruby (~> 5.9.0)
+  sentry-rails (>= 5.10.0)
+  sentry-ruby (~> 5.10.0)
   shakapacker (= 6.6.0)
   shoulda-matchers
   simplecov

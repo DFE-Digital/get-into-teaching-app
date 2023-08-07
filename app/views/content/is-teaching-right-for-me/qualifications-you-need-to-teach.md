@@ -7,8 +7,9 @@ related_content:
     Train to be a teacher if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Teacher training : "/train-to-be-a-teacher/initial-teacher-training"
     My career change to teaching : "/blog/my-career-change-to-teaching"
-promo_content:
+external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
+promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 ---
 

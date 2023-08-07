@@ -8,8 +8,9 @@ related_content:
     Improve your subject knowledge: "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Salaries and benefits: "/salaries-and-benefits"
     What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
-promo_content:
+external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
+promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 navigation: 20.15
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
