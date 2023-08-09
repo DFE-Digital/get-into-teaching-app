@@ -75,7 +75,7 @@ SecureHeaders::Configuration.default do |config|
     manifest_src: self_base,
     media_src: self_base.concat(zendesk).concat(assets),
     script_src: self_base.concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit, clarity, vwo),
-    style_src: self_base.concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize, vwo),
+    style_src: self_base.concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize, vwo, %w[s3.amazonaws.com]),
     worker_src: self_base.concat(blob),
   }
 
