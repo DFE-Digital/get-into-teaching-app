@@ -71,7 +71,7 @@ SecureHeaders::Configuration.default do |config|
     form_action: self_base.concat(snapchat, facebook, govuk),
     frame_src: self_base.concat(scribble, snapchat, facebook, youtube, google_doubleclick, google_analytics, data, pinterest, optimize, clarity, vwo),
     frame_ancestors: self_base,
-    img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, gtm_server, reddit, clarity, vwo, %w[chart.googleapis.com wingify-assets.s3.amazonaws.com cx.atdmt.com linkbam.uk]),
+    img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, gtm_server, reddit, clarity, vwo, %w[chart.googleapis.com cdn.pushcrew.com wingify-assets.s3.amazonaws.com cx.atdmt.com linkbam.uk]),
     manifest_src: self_base,
     media_src: self_base.concat(zendesk).concat(assets),
     script_src: self_base.concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit, clarity, vwo),
