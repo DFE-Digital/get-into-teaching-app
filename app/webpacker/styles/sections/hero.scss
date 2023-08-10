@@ -270,8 +270,7 @@ $mobile-cutoff: 800px;
   }
 }
 
-@media only screen 
-and (max-device-width: 767px) { 
+@media only screen and (max-device-width: 767px) {
   .hero {
     padding-bottom: 2em;
     grid-template-rows: 8em 4em repeat(2, minmax(0, max-content));
