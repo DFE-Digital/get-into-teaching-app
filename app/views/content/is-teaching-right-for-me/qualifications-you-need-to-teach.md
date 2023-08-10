@@ -34,9 +34,9 @@ Talk to your teacher training provider or [find a course](https://www.find-postg
 
 ## What can you teach?
 
-You do not necessarily need a bachelor’s degree in a subject to teach it. It’s up to your teacher training provider to decide if you have the skills and knowledge required to teach a specific subject.
+You do not necessarily need a bachelor’s degree in a subject to teach it. It’s up to your teacher training provider to decide if you have the skills and knowledge required.
 
-For example, in some cases you may be able to teach a different subject to your degree if:
+In some cases, you may be able to train to teach a different subject to your degree if:
 
 * you have an A level in the subject
 * your degree is related to but not in the subject – for example, your degree is in engineering but you’d like to teach physics
@@ -45,6 +45,12 @@ For example, in some cases you may be able to teach a different subject to your 
 Talk to your training provider to find out what you can train to teach.
 
 You could also receive a scholarship or bursary of up to £29,000 to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
+
+The subject you train in is not the only one you’ll have the opportunity to teach.
+
+You may be asked to teach others related to your subject – for example, if you’re a trained physics teacher, you may teach other sciences. 
+
+Or, if you have an A level in another subject, you might get the opportunity to teach that, too. 
 
 ## Do a subject knowledge enhancement (SKE) course
 
