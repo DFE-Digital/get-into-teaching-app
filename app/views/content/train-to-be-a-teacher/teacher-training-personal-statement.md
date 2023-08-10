@@ -45,8 +45,6 @@ $still-time-to-apply$
 
 Your personal statement is your chance to make yourself memorable with teacher training providers and show them why you'll make a great teacher.
 
-It's an important part of your application that can determine whether you'll be accepted onto a course.
-
 You do not have to write it all at once – you can start it and come back to it. Successful candidates often take a few weeks to write their personal statements.
 
 ## How long should my teacher training personal statement be? 
