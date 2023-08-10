@@ -83,7 +83,7 @@ $mobile-cutoff: 800px;
     &__content,
     &__paragraph {
       grid-area: 4 / 1 / 5 / 5;
-      padding: 0 2em 2em;
+      padding: 2em 2em 0;
     }
 
     &__subtitle {
@@ -112,7 +112,7 @@ $mobile-cutoff: 800px;
           4,
           minmax(100px, 1fr)
         );
-      grid-template-rows: 2em repeat(5, fit-content(0)) 2em;
+      grid-template-rows: repeat(5, fit-content(0)) 3em;
 
       &__title {
         grid-area: 3 / 1 / 5 / 5;
@@ -220,6 +220,10 @@ $mobile-cutoff: 800px;
       }
     }
   }
+}
+
+.hero h1 {
+  margin-bottom: 0;
 }
 
 .hero__mailing-strip {
