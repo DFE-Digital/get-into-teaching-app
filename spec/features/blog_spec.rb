@@ -19,7 +19,7 @@ describe "reading the blog", type: :feature do
     scenario "paginating blog posts on the #{path} path" do
       visit path
 
-      expect(all(".blog-article").count).to eq(8)
+      expect(all(".blog-article").count).to eq(10)
 
       within ".pagination" do
         expect(find(".page.current")).to have_text("1")
