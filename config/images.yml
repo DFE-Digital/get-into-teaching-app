@@ -213,11 +213,6 @@
   variants:
     - "static/content/blog/thumbnails/cindy-ventura.jpg"
 
-"static/content/blog/farooq-ahmad.jpg":
-  alt: "Former ICT teacher Farooq Ahmad on the National Tutoring Programme."
-  variants:
-    - "static/content/blog/thumbnails/farooq-ahmad.jpg"
-
 "static/content/blog/giorgio-rubbo.jpg":
   alt: "Biology teacher Giorgio Rubbo wearing a suit and tie."
   variants:
@@ -237,11 +232,6 @@
   alt: "Teacher training course student and biology graduate Jacob."
   variants:
     - "static/content/blog/thumbnails/jacob.jpg"
-
-"static/content/blog/maria.jpg":
-  alt: "Maria Bateson, a science teacher who returned to teaching after ten years."
-  variants:
-    - "static/content/blog/thumbnails/maria.jpg"
 
 "static/content/blog/mel-oconnor.jpg":
   alt: "Trainee teacher Mel O'Connor taking a PGDE teacher training course in maths."
@@ -297,11 +287,6 @@
   alt: "Teacher in a staff room talking to two colleagues sat on a sofa."
   variants:
     - "static/content/blog/thumbnails/staff-room.jpg"
-
-"static/content/blog/stephen.jpg":
-  alt: "Returning maths teacher and Methodist Minister Stephen, in the school library."
-  variants:
-    - "static/content/blog/thumbnails/stephen.jpg"
 
 "static/content/blog/get-into-teaching.jpg":
   alt: "A busy Get Into Teaching event with attendees having conversations with Teacher Training Advisers."
@@ -360,9 +345,6 @@
 "static/content/blog/thumbnails/stories-generic.jpg":
   alt: Students enjoying a lesson in a classroom
 
-"static/content/blog/thumbnails/stories-katie.jpg":
-  alt: Head of faculty, Katie Lockett
-
 "static/content/blog/thumbnails/stories-jon.jpg":
   alt: Head of department, Jon Simmons
 
@@ -377,9 +359,6 @@
 
 "static/content/blog/thumbnails/stories-roger.jpg":
   alt: Roger Brown, physics teacher
-
-"static/content/blog/thumbnails/stories-jill.jpg":
-  alt: Returning science teacher, Jill
 
 "static/content/blog/thumbnails/chris-wallis.jpg":
   alt: Product engineer turned science teacher, Chris Wallis

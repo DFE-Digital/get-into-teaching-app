@@ -75,9 +75,6 @@
     - ITT
     - Initial Teacher Training
     - International
-    - Return
-    - Returning
-    - Returner
     - Qualifications
     - Eligibility
     - Eligible
