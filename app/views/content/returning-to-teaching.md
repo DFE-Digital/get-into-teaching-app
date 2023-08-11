@@ -33,6 +33,7 @@ keywords:
   - teach again
   - tutor
   - QTS
+noindex: true
 calls_to_action:
   get-a-tta:
     name: simple
