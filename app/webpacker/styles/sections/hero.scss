@@ -83,7 +83,8 @@ $mobile-cutoff: 800px;
     &__content,
     &__paragraph {
       grid-area: 4 / 1 / 5 / 5;
-      padding: 0 2em 2em;
+      padding: 0 2em;
+      margin-top: 2em;
     }
 
     &__subtitle {
@@ -112,7 +113,7 @@ $mobile-cutoff: 800px;
           4,
           minmax(100px, 1fr)
         );
-      grid-template-rows: 2em repeat(5, fit-content(0)) 2em;
+      grid-template-rows: repeat(5, fit-content(0)) 3em;
 
       &__title {
         grid-area: 3 / 1 / 5 / 5;
@@ -174,7 +175,7 @@ $mobile-cutoff: 800px;
     padding-bottom: 4em;
 
     @include mq($from: tablet) {
-      padding-bottom: 6em;
+      padding-bottom: 5em;
     }
 
     & + .main-section {
@@ -222,6 +223,10 @@ $mobile-cutoff: 800px;
   }
 }
 
+.hero h1 {
+  margin-bottom: 0;
+}
+
 .hero__mailing-strip {
   display: flex;
   align-items: center;
@@ -262,5 +267,16 @@ $mobile-cutoff: 800px;
         padding: .2em .5em;
       }
     }
+  }
+}
+
+@media only screen and (max-device-width: 767px) {
+  .hero {
+    padding-bottom: 2em;
+    grid-template-rows: 8em 4em repeat(2, minmax(0, max-content));
+  }
+
+  .hero.blend-content {
+    padding-bottom: 4.5em;
   }
 }
