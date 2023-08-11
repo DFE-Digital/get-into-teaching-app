@@ -177,8 +177,6 @@ Your salary as a teacher depends on whether you have QTS, and your level of expe
 
 [Find out more about salaries and benefits](/salaries-and-benefits) for teachers in England.
 
-[Find out more about teaching in England if you trained overseas](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
-
 ## Train to teach in England
 
 You have the right to apply to train to teach in England if you are resident in the UK under:
