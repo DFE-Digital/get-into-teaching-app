@@ -313,11 +313,6 @@
   variants:
     - "static/content/blog/thumbnails/jessica-walmsley.jpg"
 
-"static/content/blog/brooke-harvey.jpg":
-  alt: "Brooke Harvey, a Canadian national who moved to England to teach, standing in front of a bookcase."
-  variants:
-    - "static/content/blog/thumbnails/brooke-harvey.jpg"
-
 "static/content/blog/thumbnails/stories-will.jpg":
   alt: English teacher Will Fordham
 
