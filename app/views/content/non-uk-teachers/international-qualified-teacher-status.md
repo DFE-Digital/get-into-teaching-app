@@ -26,6 +26,8 @@ International qualified teacher status (iQTS) is a new teaching qualification ba
 
 iQTS is offered by world-class English teacher training providers working with schools in countries around the world. Alongside online tutorials and lectures, you’ll spend a minimum of 120 days gaining practical experience in a school in your region, and get in-person support from a trained mentor.  
 
+iQTS allows you to train to teach children aged 5 to 11, or children aged 11 to 18 in the full range of [secondary school subjects taught in English schools](https://www.gov.uk/national-curriculum). 
+
 When you complete the course, you’ll have the skills, experience and knowledge to become an excellent teacher. You will also automatically be awarded English qualified teacher status (QTS) with no further fees or training. QTS is recognised all over the world as a teaching gold standard and will also qualify you to teach in England. 
 
 If you decide to [teach in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas), as an early career teacher you’ll benefit from a two-year induction period alongside your work in school. You’ll earn a salary and get mentoring and continuous professional development to help you succeed as a teacher.
@@ -60,27 +62,15 @@ A GCSE (General Certificate of Secondary Education) is an academic qualification
 
 If you’re not sure whether your qualifications meet the entry requirements for iQTS, you can apply for a statement of comparability from [UK ENIC](https://enic.org.uk/Qualifications/SOC/Default.aspx), the UK National Information Centre for global qualifications and skills. A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. 
 
-## Choosing your iQTS training provider 
-
-iQTS is now offered by 14 training providers in X countries around the world, including X. You can train to teach children aged 5 to 11, or children aged 11 to 18 in the full range of [secondary school subjects taught in English schools](https://www.gov.uk/national-curriculum). 
-
-All iQTS training providers are accredited by the UK government and must meet the same strict standards. However, they may vary in their approach to: 
-
-* fees 
-
-* placement schools and working while you train 
-
-* application process and entry requirements 
-
-### Fees 
+## Fees 
 
 Fees range from £7,950 to £9,950 for a one-year, full-time iQTS course. Check training provider websites for full details.  
 
 Applicants for iQTS are not eligible for loans, bursaries or any other type of financial support from the UK government to help cover the costs of studying iQTS.  
 
-To find out about scholarship opportunities, contact your chosen iQTS training providers. 
+To find out about scholarship opportunities, contact your chosen iQTS training provider directly. 
 
-### Placement schools and working while you train 
+## Placement schools and working while you train 
 
 iQTS is delivered by English training providers working in close partnership with schools outside the UK. These placement schools offer iQTS trainees practical experience and in-person mentoring.  
 
@@ -90,15 +80,27 @@ If you are already employed in a school, you can discuss with your training prov
 
 To learn more, contact your chosen iQTS provider directly. 
 
-### How to apply 
+## How to apply 
 
 iQTS applications for the 2023/24 academic year are now open with the providers listed on this page. 
 
-Visit the provider website to: 
+All iQTS training providers are approved by the UK government and must meet the same strict standards. However, they may vary in their approach to: 
+
+* fees 
+
+* placement schools and working while you train 
+
+* application process and entry requirements 
+
+* the regions and countries around the world where they offer iQTS training
+
+Contact the provider directly to: 
 
 * learn whether a particular provider works with, or will accept, a placement school in your region 
 
 * apply for a place on an iQTS training course
+
+### iQTS training providers
 
 The following providers are accepting applications from all over the world:
 
