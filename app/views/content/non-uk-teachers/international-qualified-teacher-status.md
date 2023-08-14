@@ -60,7 +60,7 @@ To show you meet the required standard in the English language, you’ll need on
 
 A GCSE (General Certificate of Secondary Education) is an academic qualification awarded for exams in England, usually taken at age 16. 
 
-If you’re not sure whether your qualifications meet the entry requirements for iQTS, you can apply for a statement of comparability from [UK ENIC](https://enic.org.uk/Qualifications/SOC/Default.aspx), the UK National Information Centre for global qualifications and skills. A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. 
+If you’re not sure whether your qualifications meet the entry requirements for iQTS, you can apply for a statement of comparability from [UK ENIC](https://enic.org.uk/Qualifications/SOC/Default.aspx), the UK National Information Centre for global qualifications and skills. A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK bachelor's degree. 
 
 ## Fees 
 
@@ -96,7 +96,7 @@ All iQTS training providers are approved by the UK government and must meet the 
 
 Contact the provider directly to: 
 
-* learn whether a particular provider works with, or will accept, a placement school in your region 
+* learn whether they work with, or will accept, a placement school in your region or country
 
 * apply for a place on an iQTS training course
 
