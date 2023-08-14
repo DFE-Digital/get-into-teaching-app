@@ -211,13 +211,17 @@ You can also search courses by:
 * courses which pay a salary
 * courses for which student visa or skilled worker visa sponsorship is available
 
-Your [teacher training adviser](#get-support-and-advice) can help with: 
+#### Writing your personal statement
+
+It's important that you give yourself time to write the best possible [personal statement](/train-to-be-a-teacher/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
+
+Your [teacher training adviser](#get-support-and-advice) can help you write your personal statement and will also give advice on: 
 
 * your choice of course and training provider
 * your choice of subject
-* writing a personal statement
 * ways to research the [English education system](#learn-more-about-life-as-a-teacher-and-the-english-education-system)
 * preparing for your interview
+
 
 #### First apply for your training place, then apply for your visa
 
