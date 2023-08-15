@@ -42,7 +42,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_title("You've signed up | Get Into Teaching")
     expect(page).to have_text "Test, you're signed up"
-    expect(page).to have_link("Book a callback")
+    expect(page).to have_link("choose a time for us to give you a call")
   end
 
   scenario "Full journey as an on-campus candidate" do
