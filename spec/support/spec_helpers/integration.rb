@@ -55,6 +55,10 @@ module SpecHelpers
       "#{rand}@#{rand}.com"
     end
 
+    def rand_another_email
+      "#{rand}@#{rand}-another.com"
+    end
+
     def wait_for_jobs
       sleep 5
     end

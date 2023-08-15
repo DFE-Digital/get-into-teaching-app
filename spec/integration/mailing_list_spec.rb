@@ -15,6 +15,12 @@ RSpec.feature "Integration tests", :integration, type: :feature, js: true do
     sign_up(rand_first_name, rand_last_name, rand_email)
   end
 
+  it "Sign up journey as a new candidate if not qualified" do
+    visit mailing_list_steps_path
+    click_link "Accept all cookies"
+    sign_up_if_not_qualified(rand_first_name, rand_last_name, rand_another_email)
+  end
+
   it "Sign up journey as an existing candidate" do
     visit mailing_list_steps_path
     click_link "Accept all cookies"
@@ -45,6 +51,32 @@ RSpec.feature "Integration tests", :integration, type: :feature, js: true do
 
     expect(page).to have_text "Which subject do you want to teach?"
     select "Chemistry"
+    click_on "Next step"
+
+    expect(page).to have_text "If you give us your postcode"
+    fill_in "Your UK postcode (optional)", with: "TE57 1NG"
+    click_on "Complete sign up"
+
+    expect(page).to have_text("you're signed up")
+  end
+
+  def sign_up_if_not_qualified(first_name, last_name, email)
+    submit_personal_details(first_name, last_name, email)
+
+    expect(page).to have_text "Are you already qualified to teach?"
+    find("label", text: "No").click
+    click_on "Next step"
+
+    expect(page).to have_text "Do you have a degree?"
+    click_label "Not yet, I'm a first year student"
+    click_on "Next step"
+
+    expect(page).to have_text("How close are you to applying")
+    click_label "I’m not sure and finding out more"
+    click_on "Next step"
+
+    expect(page).to have_text("Which subject do you want to teach")
+    select "Maths"
     click_on "Next step"
 
     expect(page).to have_text "If you give us your postcode"
