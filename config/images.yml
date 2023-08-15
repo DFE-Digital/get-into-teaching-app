@@ -168,6 +168,12 @@
     - "static/content/hero-images/0025--mobile.jpg"
     - "static/content/hero-images/0025--tablet.jpg"
 
+"static/content/hero-images/0026.jpg":
+  alt: "A teacher talking to pupils in a classroom."
+  variants:
+    - "static/content/hero-images/0026--mobile.jpg"
+    - "static/content/hero-images/0026--tablet.jpg"
+
 "static/content/ttalianne.jpg":
   alt: "Lianne, an explore teaching adviser"
 
