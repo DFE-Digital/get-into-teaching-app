@@ -3,7 +3,6 @@ title: "Apply for your visa to teach in England"
 description: |-
   Learn more about types of visa non-UK citizens will need to work in England, and how to apply.
 related_content:
-    Teach in England if you trained outside the UK: " /non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Career progression stories: "/blog/tag/career-progression"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
@@ -90,8 +89,6 @@ You’ll be able to apply for your skilled worker visa if:
 * you have a certificate of sponsorship from this school, confirming they have offered you a job and will sponsor you
 * [you meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * your salary meets the requirement for a skilled worker visa
-
-[Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ### Salary requirement for a skilled worker visa
  
@@ -209,7 +206,4 @@ You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigratio
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
-
-
-
  
