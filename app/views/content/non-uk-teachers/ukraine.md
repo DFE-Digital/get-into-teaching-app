@@ -49,9 +49,7 @@ If you're coming to the UK from Ukraine, [check what you need to do before you t
 
 The international relocation payment (IRP) is a single payment of £10,000 which the UK government is making available to non-UK trainees and teachers of languages and physics. To be eligible, you must be coming to England to work or train in the 2023 to 2024 academic year. 
 
-[Check your eligibility for the IRP if you are a qualified teacher of languages or physics](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
-
-[Check your eligibility for the IRP if you want to train to teach languages or physics](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
+[Learn more about the international relocation payment.](/non-uk-teachers/get-an-international-relocation-payment)
 
 
 ### Check the status of your visa
