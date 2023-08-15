@@ -19,9 +19,7 @@
     </div>
   <% end %>
 
-  <% if paragraph.present? %>
-    <div class="hero__paragraph">
-      <%= paragraph %>
-    </div>
-  <% end %>
+  <div class="hero__paragraph">
+    <%= paragraph&.html_safe %>
+  </div>
 <% end %>
