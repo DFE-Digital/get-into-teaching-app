@@ -36,7 +36,7 @@ RSpec.feature "Breadcrumbs", type: :feature do
   end
 
   context "when query params are present" do
-    let(:path) { page_path("train-to-be-a-teacher", amazing: "yes") }
+    let(:path) { page_path("funding-and-support", amazing: "yes") }
 
     it { is_expected.to have_css(".breadcrumbs") }
 
@@ -48,8 +48,8 @@ RSpec.feature "Breadcrumbs", type: :feature do
 
     it "includes the current page in plain text" do
       page.within ".breadcrumbs" do
-        is_expected.not_to have_link "Train to be a teacher"
-        is_expected.to have_text "Train to be a teacher"
+        is_expected.not_to have_link "Fund your teacher training"
+        is_expected.to have_text "Fund your teacher training"
       end
     end
   end
