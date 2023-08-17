@@ -49,7 +49,7 @@ If you haven’t had any experience of working with children, think about any tr
 
 Whilst school experience isn’t compulsory, it’s a good idea to visit a school, if only to confirm that you are making the right career choice. You can [search for and request school experience](https://schoolexperience.education.gov.uk/) to find details of upcoming opportunities in your area.
 
-## 3.	Get a teacher training adviser
+## 3.	Get a free teacher training adviser
 
 All our teacher training advisers are experienced teachers who can provide you with additional support when preparing and applying for teacher training. You could get help with things like finding school experience, choosing the right course for you, funding, and writing a successful application.
 
