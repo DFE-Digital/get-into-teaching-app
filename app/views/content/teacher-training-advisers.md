@@ -7,6 +7,7 @@ content:
     - content/teacher-training-advisers/header
     - content/teacher-training-advisers/article
     - content/teacher-training-advisers/sign-up
+    - content/teacher-training-advisers/ending
 image: "static/content/homepage/teacher-training-adviser.jpg"
 layout: "layouts/minimal"
 talk_to_us: true
