@@ -143,5 +143,15 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :feedback, path: "/feedback" do
+    resources :steps,
+              path: "/",
+              only: %i[index show update] do
+      collection do
+        get :completed
+      end
+    end
+  end
+
   get "*page", to: "pages#show", as: :page, constraints: ->(request) { !request.path.start_with?("/rails/") }
 end
