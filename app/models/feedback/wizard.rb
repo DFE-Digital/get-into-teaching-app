@@ -7,6 +7,7 @@ module Feedback
       Steps::Website,
       Steps::WebsiteExperience,
       Steps::WebsiteIssue,
+      Steps::Satisfied,
       Steps::General,
     ].freeze
 

@@ -1,11 +1,7 @@
-<h1>Share your feedback</h1>
+<h1>Give feedback on this sign-up form </h1>
 
 <p>
-We review this feedback to make our website better for people like you. Answer up to 4 questions to help us find out how we can improve.
+  Tell us about your experience signing up for [emails] [an adviser] [an event]
 </p>
 
-<p>All feedback is anonymous and we cannot respond to individual queries. </p>
-
-<p>If you have a question or need help, please visit our get help and support page. </p>
-
-<%= f.govuk_text_field :general, width: 'two-thirds' %>
+<%= f.govuk_select :achieved, f.object.class::OPTIONS, options: { prompt: "Please select" }, label: { text: "Did you achieve what you wanted from your visit?" } %>
