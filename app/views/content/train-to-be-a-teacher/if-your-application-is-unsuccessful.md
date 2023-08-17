@@ -69,7 +69,7 @@ Find out more about [how visa sponsorships work](/non-uk-teachers/train-to-teach
 
 ## Get advice on what to do next
 
-A teacher training adviser can help you improve your application if you have been unsuccessful.
+A teacher training adviser can help you improve your application if you have been unsuccessful for free.
 
 They can support you with:
 
