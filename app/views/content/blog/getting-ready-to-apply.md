@@ -47,7 +47,7 @@ Get one step closer to the classroom with guidance tailored to you, including ho
 
 [Sign up for personalised guidance in your inbox](/mailinglist/signup/name).
 
-## 3. Get a teacher training adviser
+## 3. Get a free teacher training adviser
 
 An adviser with years of teaching experience can help you if you're (one of the following):
 
