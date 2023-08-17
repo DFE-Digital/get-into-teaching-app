@@ -1,7 +1,6 @@
 module Feedback
   module Steps
     class WebsiteExperience < ::GITWizard::Step
-
       attribute :experience
 
       def skipped?
@@ -13,7 +12,7 @@ module Feedback
       end
 
       def experience?
-        @store['website'] == "Give general feedback about the website"
+        @store["website"] == "Give general feedback about the website"
       end
     end
   end

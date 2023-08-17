@@ -7,7 +7,7 @@ module Feedback
       Steps::Website,
       Steps::WebsiteExperience,
       Steps::WebsiteIssue,
-      Steps::General
+      Steps::General,
     ].freeze
 
     def complete!
@@ -20,7 +20,6 @@ module Feedback
     end
 
     def save_feedback
-
     end
   end
 end

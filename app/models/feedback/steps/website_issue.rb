@@ -1,7 +1,6 @@
 module Feedback
   module Steps
     class WebsiteIssue < ::GITWizard::Step
-
       attribute :issue
 
       def skipped?
@@ -13,7 +12,7 @@ module Feedback
       end
 
       def issue?
-        @store['website'] == "Tell us something is not working or needs improving"
+        @store["website"] == "Tell us something is not working or needs improving"
       end
     end
   end
