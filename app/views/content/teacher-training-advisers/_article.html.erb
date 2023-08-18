@@ -1,5 +1,14 @@
+<style>
+  .action-container {
+      margin: 1.75rem 1.5rem 3.75rem 0 !important;
+  }
+  .col {
+    margin: 0 auto 0rem auto !important;
+  }
+</style>
+
 <div class="row inset">
-  <section class="col col-720" style="margin: 0 auto 1.5rem auto !important;">
+  <section class="col col-720">
     <p>
       Teacher training advisers give you free, one-to-one support, whether you’re just thinking about teaching or you’re ready to apply.
     </p>
@@ -14,7 +23,7 @@
       background: "grey"
     ) %>
   </section>
-  <section class="col col-720" style="margin: 0 auto 1.5rem auto !important;">
+  <section class="col col-720">
     <h2 class="heading--box-blue">How does it work</h2>
     <p>You’ll be matched with your own dedicated adviser. You’ll have the same adviser throughout your journey into teaching.</p>
 
@@ -61,7 +70,7 @@
       <li>preparing for interviews</li>
     </ul>
 
-    <section class="col col-720" style="margin: 0 auto 1.5rem auto !important;">
+    <section class="col col-720">
       <%= render Content::QuoteListComponent.new(
         quotes: [{
           heading: "Habiba, teacher with a hearing impairment",
@@ -102,7 +111,7 @@
       <li>find a role</li>
     </ul>
 
-    <section class="col col-720" style="margin: 0 auto 0rem auto !important;">
+    <section class="col col-720">
       <%= render Content::QuoteListComponent.new(
         quotes: [{
           heading: "Stephen, returning teacher",
