@@ -1,13 +1,4 @@
-<style>
-  .action-container {
-      margin: 1.75rem 1.5rem 3.75rem 0 !important;
-  }
-  .col {
-    margin: 0 auto 0rem auto !important;
-  }
-</style>
-
-<div class="row inset">
+<div class="row inset tta-row">
   <section class="col col-720">
     <p>
       Teacher training advisers give you free, one-to-one support, whether you’re just thinking about teaching or you’re ready to apply.
@@ -17,7 +8,7 @@
       They have years of teaching experience and can answer all your questions about life in the classroom, as well as how you can get there.
     </p>
   </section>
-  <section class="col col-720" style="margin: 0 auto 0rem auto !important;">
+  <section class="col col-720">
     <%= render Content::QuoteComponent.new(
       text: "They would answer any question I had, small or big, in a relaxed environment.",
       background: "grey"
@@ -37,7 +28,7 @@
       <li>WhatsApp</li>
     </ul>
   </section>
-  <section class="col col-720" style="margin: 0 auto 0rem auto !important;">
+  <section class="col col-720">
     <h2 class="heading--box-blue">How can your adviser help you?</h2>
     <h3>If teaching is just an idea</h3>
     <p>
@@ -111,7 +102,7 @@
       <li>find a role</li>
     </ul>
 
-    <section class="col col-720">
+    <section class="col col-720 tta-container">
       <%= render Content::QuoteListComponent.new(
         quotes: [{
           heading: "Stephen, returning teacher",
