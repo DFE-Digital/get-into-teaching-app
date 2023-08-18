@@ -1,14 +1,17 @@
 module Feedback
   module Steps
-    class General < ::GITWizard::Step
-
-      OPTIONS = [
-        "Yes",
-        "No",
+    class Signup < ::GITWizard::Step
+      OPTIONS = %w[
+        Yes
+        No
       ].freeze
 
       attribute :achieved
       validates :achieved, inclusion: { in: OPTIONS }
+
+      def can_proceed?
+        true
+      end
 
       def skipped?
         website?

@@ -7,8 +7,9 @@ module Feedback
       Steps::Website,
       Steps::WebsiteExperience,
       Steps::WebsiteIssue,
+      Steps::Signup,
+      Steps::SignupExperience,
       Steps::Satisfied,
-      Steps::General,
     ].freeze
 
     def complete!
