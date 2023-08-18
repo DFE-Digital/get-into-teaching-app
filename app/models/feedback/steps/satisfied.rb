@@ -12,12 +12,8 @@ module Feedback
       attribute :state
       validates :state, inclusion: { in: OPTIONS }
 
-      def skipped?
-        !website?
-      end
-
-      def website?
-        @store["action"] == "Give feedback about the website"
+      def can_proceed?
+        true
       end
     end
   end

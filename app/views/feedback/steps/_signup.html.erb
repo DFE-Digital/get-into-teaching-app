@@ -1,7 +1,7 @@
 <h1>Give feedback on this sign-up form </h1>
 
 <p>
-  Tell us about your experience signing up for [emails] [an adviser] [an event]
+  Tell us about your experience signing up for <%= feedback_session['action'].split.last %>
 </p>
 
 <%= f.govuk_select :achieved, f.object.class::OPTIONS, options: { prompt: "Please select" }, label: { text: "Did you achieve what you wanted from your visit?" } %>

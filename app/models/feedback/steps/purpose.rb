@@ -4,7 +4,7 @@ module Feedback
       OPTIONS = [
         "Give feedback about the website",
         "Give feedback about signing up for an adviser",
-        "Give feedback about signing up for an emails",
+        "Give feedback about signing up for emails",
         "Give feedback about signing up for an event ",
       ].freeze
 
