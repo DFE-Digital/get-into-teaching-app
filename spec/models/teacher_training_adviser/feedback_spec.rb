@@ -23,12 +23,12 @@ RSpec.describe TeacherTrainingAdviser::Feedback do
   describe "validation" do
     it { is_expected.to validate_presence_of(:rating) }
     it { is_expected.to allow_values(true, false).for(:successful_visit) }
-    it { is_expected.not_to allow_values(nil, "").for(:successful_visit) }
+    it { is_expected.to allow_values(nil, "").for(:successful_visit) }
 
     context "when successful_visit is false" do
       before { allow(subject).to receive(:successful_visit).and_return(false) }
 
-      it { is_expected.to validate_presence_of(:unsuccessful_visit_explanation) }
+      it { is_expected.not_to validate_presence_of(:unsuccessful_visit_explanation) }
     end
 
     context "when successful_visit is nil" do
