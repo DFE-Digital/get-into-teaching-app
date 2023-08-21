@@ -17,10 +17,10 @@ RSpec.describe TeacherTrainingAdviser::FeedbackExporter do
     it do
       expect(subject).to eq(
         <<~CSV,
-          id,rating,successful_visit,unsuccessful_visit_explanation,improvements,created_at
-          #{feedback[0].id},very_satisfied,true,"",'=cmd|' /C notepad'!'A1',#{feedback[0].created_at}
-          #{feedback[1].id},very_dissatisfied,false,wasn't good,"",#{feedback[1].created_at}
-          #{feedback[2].id},satisfied,true,"","",#{feedback[2].created_at}
+          id,rating,successful_visit,unsuccessful_visit_explanation,created_at,area
+          #{feedback[0].id},very_satisfied,true,"",#{feedback[0].created_at},""
+          #{feedback[1].id},very_dissatisfied,false,wasn't good,#{feedback[1].created_at},""
+          #{feedback[2].id},satisfied,true,"",#{feedback[2].created_at},""
         CSV
       )
     end
