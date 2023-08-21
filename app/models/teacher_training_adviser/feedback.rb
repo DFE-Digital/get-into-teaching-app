@@ -15,8 +15,8 @@ module TeacherTrainingAdviser
     }
 
     validates :rating, presence: true, inclusion: { in: Feedback.ratings.keys }
-    validates :successful_visit, inclusion: [true, false]
-    validates :unsuccessful_visit_explanation, presence: true, if: -> { successful_visit == false }
+    validates :successful_visit, presence: false
+    validates :unsuccessful_visit_explanation, presence: false, if: -> { successful_visit == false }
 
   private
 

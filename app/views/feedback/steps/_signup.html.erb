@@ -1,20 +1,24 @@
 <h1>Give feedback on this sign-up form </h1>
 
 <p>
-  Tell us about your experience signing up for <%= feedback_session['action'].split.last(2).reject { |a| a == 'for' }.join(' ') %>.
+  Tell us about your experience signing up for <%= feedback_session['area'].split.last(2).reject { |a| a == 'for' }.join(' ') %>.
 </p>
 
-<%= f.govuk_radio_buttons_fieldset(:achieved, inline: true,
+<%= f.govuk_radio_buttons_fieldset(:successful_visit, inline: true,
                                    legend: { size: 'm', text: 'Did you achieve what you wanted from your visit?' }) do %>
-  <%= f.govuk_radio_button :achieved, Feedback::Steps::Signup::OPTIONS[:yes], label: { text: Feedback::Steps::Signup::OPTIONS[:yes] } %>
-  <%= f.govuk_radio_button :achieved, Feedback::Steps::Signup::OPTIONS[:no], label: { text: Feedback::Steps::Signup::OPTIONS[:no] } %>
+  <%= f.govuk_radio_button :successful_visit, Feedback::Steps::Signup::OPTIONS[:yes], label: { text: Feedback::Steps::Signup::OPTIONS[:yes] } %>
+  <%= f.govuk_radio_button :successful_visit, Feedback::Steps::Signup::OPTIONS[:no], label: { text: Feedback::Steps::Signup::OPTIONS[:no] } %>
 <% end %>
 
-<%= f.govuk_radio_buttons_fieldset(:state, inline: true,
+<%= f.govuk_fieldset legend: { text: "What would you like to tell us about your experience on our website? ", tag: "h1" } do %>
+  <%= f.govuk_text_area :experience, width: 'two-thirds', label: { text: "You can choose to either give general feedback or tell us about a specific problem you’re having. Do not include any information that could identify you personally, such as your name."} %>
+<% end %>
+
+<%= f.govuk_radio_buttons_fieldset(:rating, inline: true,
                                    legend: { size: 'm', text: 'Overall, how satisfied were you with your experience on our website?' }) do %>
-  <%= f.govuk_radio_button :state, 'Very satisfied', label: { text: 'Very satisfied' } %>
-  <%= f.govuk_radio_button :state, 'Somewhat satisfied', label: { text: 'Somewhat satisfied' } %>
-  <%= f.govuk_radio_button :state, 'Neither satisfied nor dissatisfied', label: { text: 'Neither satisfied nor dissatisfied' } %>
-  <%= f.govuk_radio_button :state, 'Somewhat dissatisfied', label: { text: 'Somewhat dissatisfied' } %>
-  <%= f.govuk_radio_button :state, 'Very dissatisfied', label: { text: 'Very dissatisfied' } %>
+  <%= f.govuk_radio_button :rating, 0, label: { text: 'Very satisfied' } %>
+  <%= f.govuk_radio_button :rating, 1, label: { text: 'Somewhat satisfied' } %>
+  <%= f.govuk_radio_button :rating, 2, label: { text: 'Neither satisfied nor dissatisfied' } %>
+  <%= f.govuk_radio_button :rating, 3, label: { text: 'Somewhat dissatisfied' } %>
+  <%= f.govuk_radio_button :rating, 4, label: { text: 'Very dissatisfied' } %>
 <% end %>
