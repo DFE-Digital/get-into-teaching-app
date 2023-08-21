@@ -80,7 +80,7 @@ RSpec.describe "Feedback" do
         expect(response.body).to match(/<th.*>Rating<\/th>/)
         expect(response.body).to match(/<th.*>Successful visit<\/th>/)
         expect(response.body).to match(/<th.*>Unsuccessful visit explanation<\/th>/)
-        expect(response.body).to match(/<th.*>Area<\/th>/)
+        expect(response.body).to match(/<th.*>Topic<\/th>/)
 
         expect(response.body).to match(/<td.*>Very satisfied<\/td>/)
         expect(response.body).to match(/<td.*>Yes<\/td>/)
@@ -136,7 +136,7 @@ RSpec.describe "Feedback" do
     it do
       expect(subject).to eq(
         <<~CSV,
-          id,rating,successful_visit,unsuccessful_visit_explanation,created_at,area
+          id,rating,successful_visit,unsuccessful_visit_explanation,created_at,topic
           #{feedback[2].id},satisfied,true,"",#{feedback[2].created_at},""
           #{feedback[1].id},very_dissatisfied,true,"",#{feedback[1].created_at},""
           #{feedback[0].id},very_satisfied,true,"",#{feedback[0].created_at},""
@@ -169,7 +169,7 @@ RSpec.describe "Feedback" do
       it do
         expect(subject).to eq(
           <<~CSV,
-            id,rating,successful_visit,unsuccessful_visit_explanation,created_at,area
+            id,rating,successful_visit,unsuccessful_visit_explanation,created_at,topic
           CSV
         )
       end

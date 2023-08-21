@@ -36,7 +36,7 @@ module TeacherTrainingAdviser
 
       if @search.valid?
         filename = "feedback-#{@search.range.join('--')}"
-        exporter = FeedbackExporter.new(@search.results)
+        exporter = TeacherTrainingAdviser::FeedbackExporter.new(@search.results)
 
         respond_to do |format|
           format.csv { send_data exporter.to_csv, filename: "#{filename}.csv" }

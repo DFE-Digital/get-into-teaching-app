@@ -20,8 +20,8 @@ module Feedback
     end
 
     def save_feedback
-      data = export_data.slice("rating", "area", "successful_visit", "unsuccessful_visit_explanation")
-      data["area"] = data["area"].split.last
+      data = export_data.slice("rating", "topic", "successful_visit", "unsuccessful_visit_explanation")
+      data["topic"] = data["topic"].split.last
       data["rating"] = data["rating"].to_i
       data.compact!
 

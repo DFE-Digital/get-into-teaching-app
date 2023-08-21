@@ -18,7 +18,7 @@ module Feedback
       end
 
       def website?
-        @store["area"] == "Give feedback about the website"
+        @store["topic"] == "Give feedback about the website"
       end
     end
   end
