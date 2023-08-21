@@ -6,8 +6,12 @@ module Feedback
         "Tell us something is not working or needs improving",
       ].freeze
 
-      attribute :website
-      validates :website, inclusion: { in: OPTIONS }
+      attribute :value
+      validates :value, inclusion: { in: OPTIONS }
+
+      def can_proceed?
+        true
+      end
 
       def skipped?
         !website?
