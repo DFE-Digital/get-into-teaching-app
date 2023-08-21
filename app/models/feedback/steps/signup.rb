@@ -3,10 +3,10 @@ module Feedback
     class Signup < ::GITWizard::Step
       OPTIONS = { yes: "Yes", no: "No" }.freeze
 
-      attribute :achieved
-      validates :achieved, inclusion: { in: OPTIONS.values }
-      attribute :experience
-      attribute :state
+      attribute :successful_visit
+      validates :successful_visit, inclusion: { in: OPTIONS.values }
+      attribute :unsuccessful_visit_explanation
+      attribute :rating
 
       def can_proceed?
         true
@@ -17,7 +17,7 @@ module Feedback
       end
 
       def website?
-        @store["action"] == "Give feedback about the website"
+        @store["area"] == "Give feedback about the website"
       end
     end
   end
