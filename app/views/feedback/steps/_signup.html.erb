@@ -1,7 +1,7 @@
 <h1>Give feedback on this sign-up form </h1>
 
 <p>
-  Tell us about your experience signing up for <%= feedback_session['area'].split.last(2).reject { |a| a == 'for' }.join(' ') %>.
+  Tell us about your experience signing up for <%= feedback_session['topic'].split.last(2).reject { |a| a == 'for' }.join(' ') %>.
 </p>
 
 <%= f.govuk_radio_buttons_fieldset(:successful_visit, inline: true,

@@ -16,12 +16,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_21_150103) do
 
   create_table "feedbacks", force: :cascade do |t|
     t.integer "rating", null: false
-    t.boolean "successful_visit", default: true, null: false
+    t.boolean "successful_visit", default: true
     t.text "unsuccessful_visit_explanation"
     t.text "improvements"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "area"
+    t.string "topic"
   end
 
 end

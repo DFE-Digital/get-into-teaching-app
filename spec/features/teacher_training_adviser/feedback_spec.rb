@@ -48,7 +48,7 @@ RSpec.feature "Feedback", type: :feature do
 
     expect(page.body).to eq(
       <<~CSV,
-        id,rating,successful_visit,unsuccessful_visit_explanation,created_at,area
+        id,rating,successful_visit,unsuccessful_visit_explanation,created_at,topic
         #{feedback.id},satisfied,true,"",#{feedback.created_at},""
       CSV
     )

@@ -8,8 +8,8 @@ module Feedback
         "Give feedback about signing up for an event",
       ].freeze
 
-      attribute :area
-      validates :area, inclusion: { in: OPTIONS }
+      attribute :topic
+      validates :topic, inclusion: { in: OPTIONS }
     end
   end
 end

@@ -9,5 +9,5 @@ We review this feedback to make our website better for people like you. Answer u
 <p>If you have a question or need help, please visit our get help and support page. </p>
 
 <%= f.govuk_fieldset legend: { text: "What would you like to do?", tag: "h1" } do %>
-<%= f.govuk_select :area, f.object.class::OPTIONS, options: { prompt: "Please select" }, label: { text: "You can choose to either give feedback about our website or tell us about a specific problem you’re having." } %>
+<%= f.govuk_select :topic, f.object.class::OPTIONS, options: { prompt: "Please select" }, label: { text: "You can choose to either give feedback about our website or tell us about a specific problem you’re having." } %>
 <% end %>

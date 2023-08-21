@@ -17,7 +17,7 @@ RSpec.describe TeacherTrainingAdviser::FeedbackExporter do
     it do
       expect(subject).to eq(
         <<~CSV,
-          id,rating,successful_visit,unsuccessful_visit_explanation,created_at,area
+          id,rating,successful_visit,unsuccessful_visit_explanation,created_at,topic
           #{feedback[0].id},very_satisfied,true,"",#{feedback[0].created_at},""
           #{feedback[1].id},very_dissatisfied,false,wasn't good,#{feedback[1].created_at},""
           #{feedback[2].id},satisfied,true,"",#{feedback[2].created_at},""

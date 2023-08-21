@@ -8,7 +8,7 @@ module TeacherTrainingAdviser
       successful_visit
       unsuccessful_visit_explanation
       created_at
-      area
+      topic
     ].freeze
     CSV_INJECT_CHARS = %w[+ - @ =].freeze
 
