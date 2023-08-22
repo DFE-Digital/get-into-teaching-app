@@ -89,6 +89,9 @@ RUN apk add --no-cache \
 RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev && \
     rm -rf /var/lib/apt/lists/*
 
+RUN apk add postgresql14=14.9-r0 --repository=http://dl-cdn.alpinelinux.org/alpine/v3.16/main
+
+
 COPY --from=release-build /app /app
 COPY --from=release-build /usr/local/bundle/ /usr/local/bundle/
 
