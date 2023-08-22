@@ -135,7 +135,7 @@ Qualified teachers from Ukraine who [meet the criteria for QTS](https://www.gov.
 ### Assessment only QTS
 If you find you do not meet the eligibility criteria to apply for QTS, you could consider assessment only QTS. This means you can work in an English school and, alongside your job, apply to an English teacher training provider who will assess if you meet the standards for English QTS.
 
-DfE has made funding available for candidates who apply for assessment only courses. Check with [assessment only training providers](/train-to-be-a-teacher/assessment-only-route-to-qts) for more information about eligibility and funding.
+Check with [assessment only training providers](/train-to-be-a-teacher/assessment-only-route-to-qts) for more information about eligibility.
 
 ### Apply for a teaching job
 
