@@ -253,7 +253,7 @@ You will not be eligible for the international relocation payment if you are:
 
 ## How teachers can apply for the international relocation payment
 
-Teachers who have started their teaching jobs can now [apply for the international relocation payment](link). Applications for the international relocation payment (IRP) are open from 4 September to 31 October 2023. If you are eligible, you will receive the money by 31 January 2024. 
+Teachers who have started their teaching jobs can now [apply for the international relocation payment](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications for the international relocation payment (IRP) are open from 4 September to 31 October 2023. If you are eligible, you will receive the money by 31 January 2024. 
 
 If you miss this deadline, to remain eligible for the IRP you must apply at the next opportunity after the start of your job. Applications for teachers will re-open between January 2024 and February 2024. 
 
