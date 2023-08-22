@@ -4,6 +4,6 @@ shared:
     - id
     - rating
     - successful_visit
-    - topic
+    - area
     - created_at
     - updated_at
