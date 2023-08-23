@@ -82,7 +82,9 @@ To learn more, contact your chosen iQTS provider directly.
 
 ## How to apply 
 
-iQTS applications for the 2023/24 academic year are now open with the providers listed on this page. 
+There's still time to apply for the 2023/24 academic year with some providers listed on this page – visit their websites for details. 
+
+We'll keep this page updated with training providers offering iQTS courses in 2024/25 as and when applications open.  
 
 All iQTS training providers are approved by the UK government and must meet the same strict standards. However, they may vary in their approach to: 
 
@@ -104,9 +106,11 @@ Contact the provider directly to:
 
 The following providers are accepting applications from all over the world:
 
-* [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher) – this provider also has placement schools in Spain, Algeria and Nepal
+* [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
 
-* [Edge Hill University](https://www.edgehill.ac.uk/)
+* [Edge Hill University iQTS primary teacher training course](https://www.edgehill.ac.uk/course/iqts-primary-3-11/)
+
+* [Edge Hill University iQTS secondary teacher training course](https://www.edgehill.ac.uk/course/iqts-secondary/)
 
 * [National Institute of Teaching and Education (NITE), part of the Coventry University Group](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/)
 
@@ -116,8 +120,6 @@ The following providers are accepting applications from all over the world:
 
 * [University of Derby](https://www.derby.ac.uk/online/education-courses/international-qualified-teacher-status-iqts-online/)
 
-* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning)
-
 * [University of Sunderland](https://www.sunderland.ac.uk/study/education/pgce-iqts/)
 
 * [University of Warwick](https://warwick.ac.uk/fac/soc/cte/international/)
@@ -126,11 +128,13 @@ The following providers are accepting applications from all over the world:
 
 The following providers specialise in particular regions, or should be contacted for further information:
 
-* [Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts) – this provider is accepting applications from Latin America and South East Asia 
+* [Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts) – this provider is accepting applications from Latin America 
 
 * [Plymouth Marjon University](https://www.marjon.ac.uk/teaching/) – contact this provider for more information
 
-* [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider is accepting applications from Dubai only
+* [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider offers in-person training in Dubai only, so applicants must be a commutable distance from their Dubai Campus
+
+* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning) – contact this provider for more information 
 
 ## Assessment 
 
@@ -152,7 +156,7 @@ If you have no teaching qualification but lots of experience, you should check y
 
 ## Teaching in England 
 
-If you succesfully complete your iQTS course, you will be qualified to teach in England. It’s important to note that you will also have to apply for a teaching job and a visa, unless you already have an immigration status allowing you to work in the UK. 
+If you successfully complete your iQTS course, you will be qualified to teach in England. It’s important to note that you will also have to apply for a teaching job and a visa, unless you already have an immigration status allowing you to work in the UK. 
 
 [Teach in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas) gives more information.
 
