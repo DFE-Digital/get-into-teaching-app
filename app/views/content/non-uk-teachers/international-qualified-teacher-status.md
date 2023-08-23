@@ -114,7 +114,7 @@ The following providers are accepting applications from all over the world:
 
 * [National Institute of Teaching and Education (NITE), part of the Coventry University Group](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/)
 
-* [Tes](https://www.tes.com/institute/courses/iqts) – this provider cannot accept applications from Hong Kong
+* [Tes Institute](https://www.tes.com/institute/courses/iqts) – this provider cannot accept applications from Hong Kong
 
 * [University of Buckingham](https://www.buckingham.ac.uk/courses/postgraduate/international-qualified-teacher-status-iqts)
 
@@ -140,7 +140,7 @@ The following providers specialise in particular regions, or should be contacted
 
 At the end of your training, your iQTS provider and school will assess you to check you meet the [iQTS Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards). 
 
-Your training provider will award you international qualified teacher status (iQTS) when you have successfully passed this assessment process. You will then be automatically awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) by England’s Department for Education.
+Your training provider will award you international qualified teacher status (iQTS) when you have successfully passed this assessment process. You will then be automatically awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) by England’s Department for Education.
 
 ## Other routes to QTS
 
