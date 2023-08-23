@@ -145,7 +145,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * a non-UK citizen who moved to England to live permanently more than 3 months before the start of your course
 
-* in the UK on a dependent partner visa
+* in England on a dependant partner visa linked to your partner’s student or skilled worker visa
 
 * doing an assessment only QTS
 
@@ -161,11 +161,11 @@ If you believe you meet the eligibility requirements, but have not been informed
 
 ### Salaried trainees
 
-Salaried trainees who have started their training courses can now [apply for the international relocation payment](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications are open between 4 September 2023 and 31 October 2023. If you are eligible, you’ll receive the money by 31 January 2024. 
+Salaried trainees who have started their training courses can now [apply for the international relocation payment](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications are open between 4 September 2023 and 31 October 2023. If you are eligible, you should receive the money by 31 January 2024. 
 
 If you miss this deadline, to remain eligible for the IRP you must apply at the next opportunity after the start of your training course. Applications for salaried trainees will re-open between January 2024 and February 2024. 
 
-You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications open in 2024. 
+If you are starting a salaried course after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications open in 2024. 
 
 ## Criteria for teachers  
 
@@ -243,7 +243,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * a non-UK citizen who moved to England to live permanently more than 3 months before the start of your job
 
-* in the UK on a dependant partner visa  
+* in England on a dependant partner visa linked to your partner’s skilled worker or student visa   
 
 * teaching only English language
 
@@ -253,13 +253,13 @@ You will not be eligible for the international relocation payment if you are:
 
 ## How teachers can apply for the international relocation payment
 
-Teachers who have started their teaching jobs can now [apply for the international relocation payment](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications for the international relocation payment (IRP) are open from 4 September to 31 October 2023. If you are eligible, you will receive the money by 31 January 2024. 
+Teachers who have started their teaching jobs can now [apply for the international relocation payment](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications are open from 4 September to 31 October 2023. If you are eligible, you should receive the money by 31 January 2024. 
 
 If you miss this deadline, to remain eligible for the IRP you must apply at the next opportunity after the start of your job. Applications for teachers will re-open between January 2024 and February 2024. 
 
-You will need a teaching job to apply for the IRP.[Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+You will need a teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
-You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications open in 2024.
+If you are starting a teaching job after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications open in 2024.
 
 ## General information about the international relocation payment  
 
@@ -329,8 +329,6 @@ This means that teachers in their first year of employment in England could rece
 Trainee teachers could receive the IRP in their training year in England, and either the levelling up premium payment, or the early career payment in their first year of work as a teacher.  
 
 ## Contact us
-
-We will update this page for more information about IRP applications in 2024.
 
 For general enquiries about the IRP, please email us at teach.inengland@education.gov.uk.
 
