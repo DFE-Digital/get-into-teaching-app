@@ -1,6 +1,5 @@
-
 <%= f.govuk_fieldset legend: { text: "What would you like to tell us about your experience on our website? ", tag: "h1" } do %>
-  <%= f.govuk_text_area :unsuccessful_visit_explanation, width: 'two-thirds', label: { text: "You can give us feedback on what we’re doing well, as well as ways we could improve."} %>
+  <%= f.govuk_text_area :unsuccessful_visit_explanation, label: { text: "You can give us feedback on what we’re doing well, as well as ways we could improve."} %>
 <% end %>
 
 <%= f.govuk_radio_buttons_fieldset(:rating, inline: true,

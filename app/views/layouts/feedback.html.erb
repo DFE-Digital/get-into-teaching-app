@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <% content_for :head do %>
+    <%= csrf_meta_tags %>
+  <% end %>
+
+  <%= render "sections/head" %>
+  <%= body_tag do %>
+    <%= render HeaderComponent.new %>
+
+    <%= main_tag do %>
+      <div class="main-section feedback">
+        <section class="signup-container">
+          <div>&nbsp;</div>
+          <div class="signup-form">
+            <%= yield %>
+          </div>
+        </section>
+      </div>
+    <% end %>
+
+    <%= render FooterComponent.new(talk_to_us: true, feedback: false) %>
+  <% end %>
+</html>
