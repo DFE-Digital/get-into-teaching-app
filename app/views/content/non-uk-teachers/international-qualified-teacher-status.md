@@ -82,9 +82,9 @@ To learn more, contact your chosen iQTS provider directly.
 
 ## How to apply 
 
-There's still time to apply for the 2023/24 academic year with some providers listed on this page – visit their websites for details. 
+There's still time to apply for the 2023/24 academic year with some providers listed on this page. Other providers are now accepting applications for the 2024/25 academic year. For more details and to apply, visit provider websites.  
 
-We'll keep this page updated with training providers offering iQTS courses in 2024/25 as and when applications open.  
+We hope to announce additional iQTS training providers in autumn 2023. Check back to this page for more about our new providers and the regions you’ll be able to apply from.    
 
 All iQTS training providers are approved by the UK government and must meet the same strict standards. However, they may vary in their approach to: 
 
