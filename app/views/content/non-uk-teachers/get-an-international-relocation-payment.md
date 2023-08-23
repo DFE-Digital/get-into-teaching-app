@@ -161,7 +161,7 @@ If you believe you meet the eligibility requirements, but have not been informed
 
 ### Salaried trainees
 
-Salaried trainees who have started their training courses can now [apply for the international relocation payment](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications are open between 4 September 2023 and 31 October 2023. If you are eligible, you should receive the money by 31 January 2024. 
+Salaried trainees who have started their training courses can now [apply for the international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications are open between 4 September 2023 and 31 October 2023. If you are eligible, you should receive the money by 31 January 2024. 
 
 If you miss this deadline, to remain eligible for the IRP you must apply at the next opportunity after the start of your training course. Applications for salaried trainees will re-open between January 2024 and February 2024. 
 
@@ -253,7 +253,7 @@ You will not be eligible for the international relocation payment if you are:
 
 ## How teachers can apply for the international relocation payment
 
-Teachers who have started their teaching jobs can now [apply for the international relocation payment](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications are open from 4 September to 31 October 2023. If you are eligible, you should receive the money by 31 January 2024. 
+Teachers who have started their teaching jobs can now [apply for the international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications are open from 4 September to 31 October 2023. If you are eligible, you should receive the money by 31 January 2024. 
 
 If you miss this deadline, to remain eligible for the IRP you must apply at the next opportunity after the start of your job. Applications for teachers will re-open between January 2024 and February 2024. 
 
