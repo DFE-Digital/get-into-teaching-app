@@ -39,9 +39,9 @@ provider_groups:
       email: aor@educate-group.co.uk
     - header: Essex and Thames SCITT
       link: https://etpscitt.co.uk/
-      name: Anna Spencer
+      name: Eleanor French
       telephone: '01268 988580'
-      email: anna@ete.org.uk
+      email: eleanor@ete.org.uk
     - header: Mid Essex Initial Teacher Training
       link: https://midessexteachertraining.com/courses/assessment-only
       name: Steve Fox
@@ -271,10 +271,6 @@ provider_groups:
       name: Katherine Harrison
       telephone: 01494 535564, option 3
       email: kharrison@cvpa.school
-    - header: e-Qualitas
-      link: https://www.e-qualitas.co.uk/schools/assessment-only/
-      name: Helen Gregory
-      email: helen.gregory@e-Qualitas.co.uk
     - header: George Abbot SCITT
       link: https://georgeabbottraining.co.uk/courses/
       name: Joanna Jones
