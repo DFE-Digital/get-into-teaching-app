@@ -7,7 +7,7 @@ module Feedback
       ].freeze
 
       attribute :value
-      validates :value, inclusion: { in: OPTIONS }
+      validates :value, presence: true, inclusion: { in: OPTIONS }
 
       def can_proceed?
         true

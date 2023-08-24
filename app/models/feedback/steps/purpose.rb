@@ -9,7 +9,7 @@ module Feedback
       ].freeze
 
       attribute :topic
-      validates :topic, inclusion: { in: OPTIONS }
+      validates :topic, presence: true, inclusion: { in: OPTIONS }
     end
   end
 end
