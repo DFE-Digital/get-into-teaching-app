@@ -289,7 +289,7 @@ The international relocation payment (IRP) has been limited to languages and phy
 
 ### Payment
 
-The international relocation payment (IRP) cannot be made before you take up your teacher training place or teaching job. This is because eligibility requirement checks can only be completed after you’ve arrived in England. 
+The international relocation payment (IRP) cannot be paid to you in advance, before you take up your teacher training place or teaching job. This is because eligibility requirement checks can only be completed after you’ve arrived in England. 
 
 In order to be paid the IRP, you must have a UK bank account in your name (this can be digital). The IRP cannot be paid into a building society account (building societies are financial institutions owned by members that offer banking services). 
 
@@ -303,7 +303,7 @@ If your details, such as your address, change after you have applied, please inf
 
 The Department for Education reserves the right to withhold payment if you are no longer studying on an eligible course or employed in an eligible job on the payment date.
 
-Once you have received the international relocation payment, if you met the eligibility requirements you will not be asked to pay it back, even if you leave England, your training course or your job as a teacher.
+Once you have received the international relocation payment, and if you met the eligibility requirements, you will not be asked to pay it back, even if you leave England, your training course or your job as a teacher.
 
 ### Tax
 
