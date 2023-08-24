@@ -58,7 +58,7 @@ keywords:
 
 [Applications for teachers and salaried trainees who started their job or course in September 2023 are now open](https://get-a-teacher-relocation-payment.education.gov.uk/). You must apply by 31 October 2023.  
 
-If you are a trainee on a fee-paying course, you do not need to apply. Check this page for details.
+[If you are a trainee on a fee-paying course, you do not need to apply.](#how-trainee-teachers-can-get-the-international-relocation-payment)
 
 The information on this page is for:
 
@@ -67,7 +67,7 @@ The information on this page is for:
 
 If you are considering coming to England to teach or train to teach languages or physics, you could be eligible for financial help from the UK government worth £10,000.  
 
-The international relocation payment (IRP) is designed to repay some of the costs of moving to England, including:
+The international relocation payment (IRP) is designed to cover some of the costs of moving to England, including:
 
 * the costs of visas
 
@@ -173,7 +173,7 @@ To be eligible for the international relocation payment (IRP), you must meet all
 
 ### 1. Teaching subject (teachers)
 
-You must be employed in an English state secondary school on a contract beginning in the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024). Your contract must last at least one year and you must be working as: 
+You must be employed by and in an English state secondary school on a contract beginning in the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024). Your contract must last at least one year and you must be working as: 
 
 * a physics teacher
 
@@ -289,13 +289,13 @@ The international relocation payment (IRP) has been limited to languages and phy
 
 ### Payment
 
-Eligibility requirement checks can only be completed after you’ve arrived in England. Therefore, the international relocation payment (IRP) cannot be made before you take up your teacher training place or teaching job.
+The international relocation payment (IRP) cannot be made before you take up your teacher training place or teaching job. This is because eligibility requirement checks can only be completed after you’ve arrived in England. 
 
 In order to be paid the IRP, you must have a UK bank account in your name (this can be digital). The IRP cannot be paid into a building society account (building societies are financial institutions owned by members that offer banking services). 
 
 If you are a teacher or a salaried teacher trainee, you must also have a [UK National Insurance number](https://www.gov.uk/apply-national-insurance-number). You can apply for this once you arrive in England, as long as your visa gives you the right to work and you have a confirmed job.  
 
-You will receive a single payment from the Department for Education around the end of your first term of training or employment. You will be paid as and when your eligibility requirements have been checked – we cannot guarantee an exact payment date.  
+Teachers and salaried trainees will receive a single payment from the Department for Education at the end of January 2024. Fee-paying trainees will receive a single payment from their provider around the end of their first term of training or employment. You will be paid as and when your eligibility requirements have been checked – we cannot guarantee an exact payment date.  
 
 You will not have to justify any expenses or give us receipts or any other evidence of the relocation costs you have incurred.  
 
@@ -303,7 +303,7 @@ If your details, such as your address, change after you have applied, please inf
 
 The Department for Education reserves the right to withhold payment if you are no longer studying on an eligible course or employed in an eligible job on the payment date.
 
-Once you have received the international relocation payment, you will not be asked to pay it back, even if you leave England, your training course or your job as a teacher.
+Once you have received the international relocation payment, if you met the eligibility requirements you will not be asked to pay it back, even if you leave England, your training course or your job as a teacher.
 
 ### Tax
 
