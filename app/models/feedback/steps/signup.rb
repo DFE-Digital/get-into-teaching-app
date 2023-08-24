@@ -1,7 +1,7 @@
 module Feedback
   module Steps
     class Signup < ::GITWizard::Step
-      OPTIONS = { yes: "Yes", no: "No" }.freeze
+      OPTIONS = { yes: "1", no: "0" }.freeze
 
       attribute :successful_visit
       validates :successful_visit, inclusion: { in: OPTIONS.values }
