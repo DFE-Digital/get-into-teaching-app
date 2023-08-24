@@ -79,7 +79,7 @@ RSpec.describe "Feedback" do
         expect(response.body).to match(/<th.*>Date<\/th>/)
         expect(response.body).to match(/<th.*>Rating<\/th>/)
         expect(response.body).to match(/<th.*>Successful visit<\/th>/)
-        expect(response.body).to match(/<th.*>Unsuccessful visit explanation<\/th>/)
+        expect(response.body).to match(/<th.*>Visit explanation<\/th>/)
         expect(response.body).to match(/<th.*>Topic<\/th>/)
 
         expect(response.body).to match(/<td.*>Very satisfied<\/td>/)

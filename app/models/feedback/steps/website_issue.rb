@@ -10,7 +10,7 @@ module Feedback
 
       def skipped?
         website_step = other_step(:website)
-        improving_feedback = @store["value"] == "Tell us something is not working or needs improving"
+        improving_feedback = @store["value"] == "Give general feedback about the website"
         website_step.skipped? || !!improving_feedback
       end
     end

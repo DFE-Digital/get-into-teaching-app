@@ -2,17 +2,19 @@
   <label class="govuk-label" style="width: 720px !important">Give feedback on this sign-up form</label>
 </h1>
 
+<% topic = feedback_session['topic'].split.last(2).reject { |a| a == 'for' }.join(' ') %>
+
 <p>
-  Tell us about your experience signing up for <%= feedback_session['topic'].split.last(2).reject { |a| a == 'for' }.join(' ') %>.
+  Tell us about your experience signing up for <%= topic %>.
 </p>
 
 <%= f.govuk_radio_buttons_fieldset(:successful_visit, inline: true,
                                    legend: { size: 'm', text: 'Did you achieve what you wanted from your visit?' }) do %>
-  <%= f.govuk_radio_button :successful_visit, Feedback::Steps::Signup::OPTIONS[:yes], label: { text: Feedback::Steps::Signup::OPTIONS[:yes] } %>
-  <%= f.govuk_radio_button :successful_visit, Feedback::Steps::Signup::OPTIONS[:no], label: { text: Feedback::Steps::Signup::OPTIONS[:no] } %>
+  <%= f.govuk_radio_button :successful_visit, Feedback::Steps::Signup::OPTIONS[:yes], label: { text: 'yes' } %>
+  <%= f.govuk_radio_button :successful_visit, Feedback::Steps::Signup::OPTIONS[:no], label: { text: 'no' } %>
 <% end %>
 
-<%= f.govuk_fieldset legend: { text: "What would you like to tell us about your experience on our website? ", tag: "h1" } do %>
+<%= f.govuk_fieldset legend: { text: "What would you like to tell us about your experience signing-up for #{topic}?", tag: "h1" } do %>
   <%= f.govuk_text_area :unsuccessful_visit_explanation, label: { text: "You can choose to either give general feedback or tell us about a specific problem you’re having. Do not include any information that could identify you personally, such as your name."} %>
 <% end %>
 
