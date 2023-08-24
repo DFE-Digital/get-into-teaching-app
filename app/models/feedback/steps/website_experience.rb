@@ -3,6 +3,7 @@ module Feedback
     class WebsiteExperience < ::GITWizard::Step
       attribute :unsuccessful_visit_explanation
       attribute :rating
+      validates :rating, presence: true
 
       def can_proceed?
         true

@@ -377,7 +377,7 @@ en:
             unsuccessful_visit_explanation:
               blank: "Provide details"
             rating:
-              blank: "Select an option for how did you feel about the service"
+              invalid: "Select an option for how did you feel about the service"
 
   activemodel:
     errors:
@@ -387,6 +387,28 @@ en:
         already_exchanged: "This link has been used already. Enter the details below to help us verify you."
 
       models:
+        feedback/steps/purpose:
+          attributes:
+            topic:
+              blank: "Select an option from the list"
+        feedback/steps/website:
+          attributes:
+            value:
+              blank: "Select an option from the list"
+        feedback/steps/signup:
+          attributes:
+            successful_visit:
+              blank: "Select an option from the list"
+            rating:
+              blank: "Select how satisfied were you with your experience"
+        feedback/steps/website_experience:
+          attributes:
+            rating:
+              blank: "Select how satisfied were you with your experience"
+        feedback/steps/website_issue:
+          attributes:
+            rating:
+              blank: "Select how satisfied were you with your experience"
         teacher_training_adviser/feedback_search:
             attributes:
               created_on_or_after:
