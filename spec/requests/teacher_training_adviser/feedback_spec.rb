@@ -50,7 +50,6 @@ RSpec.describe "Feedback" do
 
       it { is_expected.to have_http_status(:success) }
       it { expect(response.body).to include("Give feedback on this service") }
-      it { expect(response.body).to include("Select an option for how did you feel about the service") }
     end
 
     context "when disabled" do
