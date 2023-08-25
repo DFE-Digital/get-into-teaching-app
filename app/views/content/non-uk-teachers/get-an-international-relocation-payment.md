@@ -56,7 +56,7 @@ keywords:
 ---
 
 
-[Applications for teachers and salaried trainees who started their job or course in September 2023 are now open](https://get-a-teacher-relocation-payment.education.gov.uk/). You must apply by 31 October 2023.  
+[International relocation payment applications for teachers and salaried trainees who started their job or course in September 2023 are now open](https://get-a-teacher-relocation-payment.education.gov.uk/). You must apply by 31 October 2023.  
 
 [If you are a trainee on a fee-paying course, you do not need to apply.](#how-trainee-teachers-can-get-the-international-relocation-payment)
 
