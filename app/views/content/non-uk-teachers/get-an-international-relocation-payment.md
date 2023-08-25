@@ -77,96 +77,6 @@ The international relocation payment (IRP) is designed to cover some of the cost
 
 All eligible applicants will receive a single payment of £10,000 from the Department for Education (DfE) around the end of their first term training or working in England. The IRP is a grant – you will not have to pay this money back. You can only receive the IRP once.
 
-## Criteria for trainee teachers (fee-paying and salaried) 
-
-As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements. The eligibility requirements are the same whether you pay a fee for your training course, or are paid a salary to work while you train. However, the application process for the IRP is [different for salaried trainees](#how-trainee-teachers-can-get-the-international-relocation-payment).
-
-### 1. Teaching subject (trainees)
-
-You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the 2023 to 2024 academic year. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects at secondary level (teaching children aged 11 to 16 or 11 to 18):
-
-* any language(s) except English language, including courses combining language(s) with another subject, as long as language(s) make up at least 50% of the course content
-
-* any language(s), including courses combining language(s) with English language, as long as the non-English language(s) make up at least 50% of the course content
-
-* physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics
-
-You can search for [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE and QTS or PGDE and QTS.
-
-You can contact your teacher training provider to check:
-
-* the course you have chosen is eligible for the international relocation payment
-
-* the content of your teacher training course meets the 50% requirement
-
-### 2. Type of visa (trainees)
-
-You must come to England on one of the visas listed here.  
-
-For the following visas, you must have applied for your visa from outside the UK:  
-
-* [Skilled worker visa](https://www.gov.uk/skilled-worker-visa)
-
-* [Student visa](https://www.gov.uk/student-visa)  
-
-* [Youth Mobility Scheme](https://www.gov.uk/youth-mobility)  
-
-* [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa)
-
-* [Family visa](https://www.gov.uk/uk-family-visa)
-
-* [UK Ancestry visa](https://www.gov.uk/ancestry-visa)  
-
-* [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
-
-* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)  
-
-For the following Ukrainian and Afghan visas, you can apply for your visa from within or from outside the UK:  
-
-* [Afghan citizens resettlement scheme](https://www.gov.uk/guidance/afghan-citizens-resettlement-scheme)
-
-* [Afghan Relocations and Assistance Policy](https://www.gov.uk/government/publications/afghan-relocations-and-assistance-policy/afghan-relocations-and-assistance-policy-information-and-guidance)
-
-* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
-
-* [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
-
-### 3. Date of arrival (trainees)
-
-You must move to England no more than 3 months before the start of your course.   
-
-### Non-eligibility for trainee teachers
-
-You will not be eligible for the international relocation payment if you are:
-
-* a UK citizen, including citizens of Wales, Scotland and Northern Ireland
-
-* an Irish citizen
-
-* a non-UK citizen who moved to England to live permanently more than 3 months before the start of your course
-
-* in England on a dependant partner visa linked to your partner’s student or skilled worker visa
-
-* doing an assessment only QTS
-
-* training to teach only English language 
-
-## How trainee teachers can get the international relocation payment
-
-### Fee-paying trainees
-
-If you have a place on a teacher training course where you pay a fee, you do not need to apply for the international relocation payment (IRP). Your training provider will email you if your choice of course makes you eligible for the IRP. Your visa status and date of arrival will be checked by the Department for Education. If you are eligible, you’ll get the IRP around the end of your first term.
-
-If you believe you meet the eligibility requirements, but have not been informed by your teacher training provider that you may be awarded the IRP, please contact your training provider directly first. If your training provider cannot help you, you can email us at teach.inengland@education.gov.uk.
-
-### Salaried trainees
-
-Salaried trainees who have started their training courses can now [apply for the international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications are open between 4 September 2023 and 31 October 2023. If you are eligible, you should receive the money by 31 January 2024. 
-
-If you miss this deadline, to remain eligible for the IRP you must apply at the next opportunity after the start of your training course. Applications for salaried trainees will re-open between January 2024 and February 2024. 
-
-If you are starting a salaried course after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications open in 2024. 
-
 ## Criteria for teachers  
 
 To be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
@@ -261,6 +171,98 @@ You will need a teaching job to apply for the IRP. [Learn more about finding a j
 
 If you are starting a teaching job after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications open in 2024.
 
+## Criteria for trainee teachers (fee-paying and salaried) 
+
+As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements. The eligibility requirements are the same whether you pay a fee for your training course, or are paid a salary to work while you train. However, the application process for the IRP is [different for salaried trainees](#how-trainee-teachers-can-get-the-international-relocation-payment).
+
+### 1. Teaching subject (trainees)
+
+You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the 2023 to 2024 academic year. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects at secondary level (teaching children aged 11 to 16 or 11 to 18):
+
+* any language(s) except English language, including courses combining language(s) with another subject, as long as language(s) make up at least 50% of the course content
+
+* any language(s), including courses combining language(s) with English language, as long as the non-English language(s) make up at least 50% of the course content
+
+* physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics
+
+You can search for [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE and QTS or PGDE and QTS.
+
+You can contact your teacher training provider to check:
+
+* the course you have chosen is eligible for the international relocation payment
+
+* the content of your teacher training course meets the 50% requirement
+
+### 2. Type of visa (trainees)
+
+You must come to England on one of the visas listed here.  
+
+For the following visas, you must have applied for your visa from outside the UK:  
+
+* [Skilled worker visa](https://www.gov.uk/skilled-worker-visa)
+
+* [Student visa](https://www.gov.uk/student-visa)  
+
+* [Youth Mobility Scheme](https://www.gov.uk/youth-mobility)  
+
+* [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa)
+
+* [Family visa](https://www.gov.uk/uk-family-visa)
+
+* [UK Ancestry visa](https://www.gov.uk/ancestry-visa)  
+
+* [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
+
+* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)  
+
+For the following Ukrainian and Afghan visas, you can apply for your visa from within or from outside the UK:  
+
+* [Afghan citizens resettlement scheme](https://www.gov.uk/guidance/afghan-citizens-resettlement-scheme)
+
+* [Afghan Relocations and Assistance Policy](https://www.gov.uk/government/publications/afghan-relocations-and-assistance-policy/afghan-relocations-and-assistance-policy-information-and-guidance)
+
+* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
+
+* [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
+
+### 3. Date of arrival (trainees)
+
+You must move to England no more than 3 months before the start of your course.   
+
+### Non-eligibility for trainee teachers
+
+You will not be eligible for the international relocation payment if you are:
+
+* a UK citizen, including citizens of Wales, Scotland and Northern Ireland
+
+* an Irish citizen
+
+* a non-UK citizen who moved to England to live permanently more than 3 months before the start of your course
+
+* in England on a dependant partner visa linked to your partner’s student or skilled worker visa
+
+* doing an assessment only QTS
+
+* training to teach only English language 
+
+## How trainee teachers can get the international relocation payment
+
+### Fee-paying trainees
+
+If you have a place on a teacher training course where you pay a fee, you do not need to apply for the international relocation payment (IRP). Your training provider will email you if your choice of course makes you eligible for the IRP. Your visa status and date of arrival will be checked by the Department for Education. If you are eligible, you’ll get the IRP around the end of your first term.
+
+If you believe you meet the eligibility requirements, but have not been informed by your teacher training provider that you may be awarded the IRP, please contact your training provider directly first. If your training provider cannot help you, you can email us at teach.inengland@education.gov.uk.
+
+### Salaried trainees
+
+Salaried trainees who have started their training courses can now [apply for the international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications are open between 4 September 2023 and 31 October 2023. If you are eligible, you should receive the money by 31 January 2024. 
+
+If you miss this deadline, to remain eligible for the IRP you must apply at the next opportunity after the start of your training course. Applications for salaried trainees will re-open between January 2024 and February 2024. 
+
+If you are starting a salaried course after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications open in 2024. 
+
+
+
 ## General information about the international relocation payment  
 
 ### Protect yourself from fraud
@@ -303,7 +305,7 @@ If your details, such as your address, change after you have applied, please inf
 
 The Department for Education reserves the right to withhold payment if you are no longer studying on an eligible course or employed in an eligible job on the payment date.
 
-Once you have received the international relocation payment, and if you met the eligibility requirements, you will not be asked to pay it back, even if you leave England, your training course or your job as a teacher.
+If you were eligible for and have received the international relocation payment, you will not be asked to pay it back, even if you leave England, your training course or your job as a teacher.
 
 ### Tax
 
