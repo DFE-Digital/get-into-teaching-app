@@ -105,7 +105,7 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
   config.x.git_api_endpoint = \
-    "https://get-into-teaching-api-prod.london.cloudapps.digital/api"
+    "https://getintoteachingapi-production.teacherservices.cloud/api"
   config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence
 
   config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence
