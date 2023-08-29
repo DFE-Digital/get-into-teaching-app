@@ -1,5 +1,3 @@
-<div class="row inset tta-row">
-  <section class="col col-720">
     <p>
       Teacher training advisers give you free, one-to-one support, whether you’re just thinking about teaching or you’re ready to apply.
     </p>
@@ -7,14 +5,10 @@
     <p>
       They have years of teaching experience and can answer all your questions about life in the classroom, as well as how you can get there.
     </p>
-  </section>
-  <section class="col col-720">
     <%= render Content::QuoteComponent.new(
       text: "They would answer any question I had, small or big, in a relaxed environment.",
       background: "grey"
     ) %>
-  </section>
-  <section class="col col-720">
     <h2 class="heading--box-blue">How does it work</h2>
     <p>You’ll be matched with your own dedicated adviser. You’ll have the same adviser throughout your journey into teaching.</p>
 
@@ -27,8 +21,6 @@
       <li>text</li>
       <li>WhatsApp</li>
     </ul>
-  </section>
-  <section class="col col-720">
     <h2 class="heading--box-blue">How can your adviser help you?</h2>
     <h3>If teaching is just an idea</h3>
     <p>
@@ -61,7 +53,6 @@
       <li>preparing for interviews</li>
     </ul>
 
-    <section class="col col-720">
       <%= render Content::QuoteListComponent.new(
         quotes: [{
           heading: "Habiba, teacher with a hearing impairment",
@@ -70,7 +61,6 @@
           accreditation: "<a href=\"/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment\">Read how Habiba successfully applied to train to teach</a>",
         }]
       ) %>
-    </section>
 
     <h3>If you've applied and been unsuccessful</h3>
 
@@ -102,7 +92,6 @@
       <li>find a role</li>
     </ul>
 
-    <section class="col col-720 tta-container">
       <%= render Content::QuoteListComponent.new(
         quotes: [{
           heading: "Stephen, returning teacher",
@@ -111,7 +100,6 @@
           accreditation: "<a href=\"/blog/stephens-return-to-teaching-story\">Read how Stephen got back into the classroom with the help of an adviser</a>.",
         }]
       ) %>
-    </section>
 
     <h2 class="heading--box-blue">Can I get an adviser?</h2>
 
@@ -120,7 +108,3 @@
     <p>If you're already a qualified teacher, you'll need English qualified teacher status (QTS) and want to teach a secondary subject.</p>
 
     <p>If you got your qualifications outside the UK, <a href="tel:08003892500">call us on 0800 389 2500 to check if you're eligible for an adviser</a>.</p>
-
-  </section>
-
-</div>
