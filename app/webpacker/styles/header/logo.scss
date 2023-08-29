@@ -13,7 +13,7 @@
   }
 
   @include mq($from: tablet) {
-    top: -23px;
+    top: -52px;
   }
 }
 
@@ -61,7 +61,7 @@
     // position the logo slightly off the left of the page
     // and make sure there's a slight gap beneath the extra nav
     // and that the DfE logo's suitably far away
-    margin: 1em 1em 0 -.5em;
+    margin: 1em 1em -36px -.5em;
 
     img {
       padding: 1em;

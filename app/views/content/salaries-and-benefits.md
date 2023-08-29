@@ -6,7 +6,6 @@ description: |-
 date: "2021-06-24"
 image: "static/content/hero-images/0008.jpg"
 backlink: "../../"
-navigation: 40
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:

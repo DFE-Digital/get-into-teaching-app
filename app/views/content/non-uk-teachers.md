@@ -8,9 +8,6 @@ title_paragraph: |-
 title_bg_color: white
 hero_bg_color: yellow
 hero_blend_content: true
-navigation: 50
-navigation_title: Non-UK teachers
-navigation_path: "/non-uk-teachers"
 layout: "layouts/category"
 content:
     - content/non-uk-teachers/questions

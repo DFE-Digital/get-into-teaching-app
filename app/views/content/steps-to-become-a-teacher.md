@@ -7,7 +7,6 @@
   date: "2021-06-24"
   image: "static/content/hero-images/0017.jpg"
   backlink: "../"
-  navigation: 10
   steps:
     steps-1:
       numeric: false

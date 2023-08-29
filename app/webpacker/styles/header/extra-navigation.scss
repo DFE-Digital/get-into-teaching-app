@@ -12,13 +12,26 @@
   }
 
   .extra-navigation__mail {
+    padding: 1em 0;
     margin-bottom: 0;
+  }
+
+  .extra-navigation__border a {
+    border-right: solid 1px #1d1d1d;
+  }
+
+  .extra-navigation__link a {
+    padding: 0 1.1em;
+  }
+
+  .extra-navigation__search a {
+    padding: 1.04em 1.1em;
   }
 
   &__link a {
     display: inline-block;
     padding: .6em $indent-amount;
-    line-height: 28px;
+    line-height: 20px;
 
     .icon {
       margin-left: .5em;
@@ -48,7 +61,7 @@
   &__search a {
     background-color: $pink;
     padding: .6em $indent-amount / 2;
-    line-height: 28px;
+    line-height: 20px;
 
     &:hover {
       background-color: $pink-dark;
@@ -104,7 +117,7 @@
   justify-content: flex-end;
 
   @include mq($from: tablet) {
-    margin-bottom: 21px;
+    margin-bottom: 0;
   }
 
   .autocomplete__wrapper {
