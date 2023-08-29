@@ -14,9 +14,7 @@ backlink: "../../"
 inset_text:
   applications-open:
     text: |-
-      <a href="https://get-a-teacher-relocation-payment.education.gov.uk/">International relocation payment applications for teachers and salaried trainees who started their job or course in September 2023 are now open</a>.You must apply by 31 October 2023.
-     
-      <p> If you are a trainee on a fee-paying course, you do not need to apply. <a href="#fee_paying">Learn more about the process for fee paying courses</a>.</p>
+      Teachers and salaried trainees who started their job or course in September 2023 <a href="https://get-a-teacher-relocation-payment.education.gov.uk/"> can now apply for an international relocation payment</a>.You must apply by 31 October 2023.
 keywords:
   - International
   - Overseas
@@ -61,6 +59,8 @@ keywords:
 ---
 $applications-open$
 
+If you are a trainee on a fee-paying course, you do not need to apply. [Learn more about the process for fee paying courses](/non-uk-teachers/get-an-international-relocation-payment#how-trainee-teachers-can-get-the-international-relocation-payment).
+
 The information on this page is for:
 
 * non-UK teachers of languages, physics and general or combined science when it includes physics
@@ -82,7 +82,7 @@ All eligible applicants will receive a single payment of £10,000 from the Depar
 
 To be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
 
-### 1. Teaching subject (teachers)
+### 1. Teaching subject for teachers
 
 You must be employed by and in an English state secondary school on a contract beginning in the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024). Your contract must last at least one year and you must be working as: 
 
@@ -110,7 +110,7 @@ Ongoing or permanent contracts lasting longer than 1 year are also eligible.
 
 [Check the type and age range of the school](https://www.get-information-schools.service.gov.uk/) where you’ll be teaching. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school).
 
-### 2. Type of visa (teachers)
+### 2. Type of visa for teachers
 
 You must come to England on one of the visas listed here.  
 
@@ -140,7 +140,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 
-### 3. Date of arrival (teachers)
+### 3. Date of arrival for teachers
 
 You must move to England no more than 3 months before the start of your job.  
 
@@ -176,7 +176,7 @@ If you are starting a teaching job after the end of October 2023, or have missed
 
 As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements. The eligibility requirements are the same whether you pay a fee for your training course, or are paid a salary to work while you train. However, the application process for the IRP is [different for salaried trainees](#how-trainee-teachers-can-get-the-international-relocation-payment).
 
-### 1. Teaching subject (trainees)
+### 1. Teaching subject for trainees
 
 You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the 2023 to 2024 academic year. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects at secondary level (teaching children aged 11 to 16 or 11 to 18):
 
@@ -194,7 +194,7 @@ You can contact your teacher training provider to check:
 
 * the content of your teacher training course meets the 50% requirement
 
-### 2. Type of visa (trainees)
+### 2. Type of visa for trainees
 
 You must come to England on one of the visas listed here.  
 
@@ -226,7 +226,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 
-### 3. Date of arrival (trainees)
+### 3. Date of arrival for trainees
 
 You must move to England no more than 3 months before the start of your course.   
 
@@ -245,8 +245,6 @@ You will not be eligible for the international relocation payment if you are:
 * doing an assessment only QTS
 
 * training to teach only English language 
-
-<a id="fee_paying">
 
 ## How trainee teachers can get the international relocation payment
 
