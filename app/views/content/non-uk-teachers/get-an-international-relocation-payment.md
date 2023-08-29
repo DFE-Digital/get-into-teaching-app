@@ -7,11 +7,16 @@ related_content:
     Teach in England if you trained outside the UK: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Apply for your visa to teach in England: "/non-uk-teachers/visas-for-non-uk-teachers"
     Apply for your visa to train to teach in England: "/non-uk-teachers/visas-for-non-uk-trainees"
-
 promo_content:
 date: "2021-05-27"
 image: "static/content/hero-images/0002.jpg"
 backlink: "../../"
+inset_text:
+  applications-open:
+    text: |-
+      <a href="https://get-a-teacher-relocation-payment.education.gov.uk/">International relocation payment applications for teachers and salaried trainees who started their job or course in September 2023 are now open</a>.You must apply by 31 October 2023.
+     
+      <p> If you are a trainee on a fee-paying course, you do not need to apply. <a href="#fee_paying">Learn more about the process for fee paying courses</a>.</p>
 keywords:
   - International
   - Overseas
@@ -54,11 +59,7 @@ keywords:
   - European
   - Settlement Scheme
 ---
-
-
-[International relocation payment applications for teachers and salaried trainees who started their job or course in September 2023 are now open](https://get-a-teacher-relocation-payment.education.gov.uk/). You must apply by 31 October 2023.  
-
-[If you are a trainee on a fee-paying course, you do not need to apply.](#how-trainee-teachers-can-get-the-international-relocation-payment)
+$applications-open$
 
 The information on this page is for:
 
@@ -244,6 +245,8 @@ You will not be eligible for the international relocation payment if you are:
 * doing an assessment only QTS
 
 * training to teach only English language 
+
+<a id="fee_paying">
 
 ## How trainee teachers can get the international relocation payment
 
