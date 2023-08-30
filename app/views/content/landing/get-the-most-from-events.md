@@ -1,6 +1,6 @@
 ---
 title: "Getting the most from your event"
-description: Our step by step guide for how to become a teacher. Find out more about checking your qualifications, how to fund your training, and applying to train to be a teacher.
+description: Make sure you make the most of your event. Find out how to prepare, questions to ask, and where to find the experts you want to talk to.
 content:
     - content/landing/get-the-most-from-events/header
     - content/landing/get-the-most-from-events/steps
