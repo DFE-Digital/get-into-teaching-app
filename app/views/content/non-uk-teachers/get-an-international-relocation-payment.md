@@ -288,7 +288,7 @@ You will not be able to use eligibility for the international relocation payment
 
 ### Subject eligibility  
 
-The international relocation payment (IRP) has been limited to languages and physics because non-UK teachers play an important part in teaching these priority subjects. The Department for Education is piloting the IRP to encourage more non-UK teachers and trainees to bring their skills, experience and potential to English schools.
+The international relocation payment (IRP) has been limited to languages and physics because non-UK teachers play an important part in teaching these priority subjects. The Department for Education is piloting the IRP to encourage more non-UK teachers and trainees in these subjects to bring their skills, experience and potential to English schools.
 
 ### Payment
 
