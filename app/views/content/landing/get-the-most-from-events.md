@@ -1,6 +1,6 @@
 ---
 title: "Getting the most from your event"
-description: Make sure you make the most of your event. Find out how to prepare, questions to ask, and where to find the experts you want to talk to.
+description: Get the most from your Get Into Teaching event. Find out how to prepare, questions to ask, and where to find the experts you want to talk to.
 content:
     - content/landing/get-the-most-from-events/header
     - content/landing/get-the-most-from-events/steps
