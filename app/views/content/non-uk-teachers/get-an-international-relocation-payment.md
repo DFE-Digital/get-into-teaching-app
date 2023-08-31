@@ -298,7 +298,7 @@ In order to be paid the IRP, you must have a UK bank account in your name (this 
 
 If you are a teacher or a salaried teacher trainee, you must also have a [UK National Insurance number](https://www.gov.uk/apply-national-insurance-number). You can apply for this once you arrive in England, as long as your visa gives you the right to work and you have a confirmed job.  
 
-Teachers and salaried trainees will receive a single payment from the Department for Education at the end of January 2024. Fee-paying trainees will receive a single payment from their provider around the end of their first term of training. You will be paid as and when your eligibility requirements have been checked – we cannot guarantee an exact payment date.  
+Teachers and salaried trainees should receive a single payment from the Department for Education at the end of January 2024. Fee-paying trainees will receive a single payment from their provider around the end of their first term of training. You will be paid as and when your eligibility requirements have been checked – we cannot guarantee an exact payment date.  
 
 You will not have to justify any expenses or give us receipts or any other evidence of the relocation costs you have incurred.  
 
