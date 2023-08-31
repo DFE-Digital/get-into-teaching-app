@@ -136,8 +136,6 @@ As part of your application, schools will usually ask for your:
 
 Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school. [Get tips on writing a personal statement](https://teaching-vacancies.service.gov.uk/jobseeker-guides/how-to-write-teacher-personal-statement).
 
-Some schools may ask for a curriculum vitae (CV) – [get tips on writing a CV](https://nationalcareers.service.gov.uk/careers-advice/cv-sections).
-
 If you’re shortlisted, you’ll be invited for interview and asked to demonstrate your teaching skills. 
 
 
