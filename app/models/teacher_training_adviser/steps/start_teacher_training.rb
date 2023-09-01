@@ -90,7 +90,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def date_to_drop_current_year
-      Date.new(current_year, 9, 7)
+      Date.new(current_year, 9, 3)
     end
 
     def current_year
