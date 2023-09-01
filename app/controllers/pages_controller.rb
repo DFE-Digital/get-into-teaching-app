@@ -51,6 +51,10 @@ class PagesController < ApplicationController
 
   # Avoid caching by rendering these pages manually:
 
+  def get_the_most_from_events
+    render_page("events/get-the-most-from-events")
+  end
+
   def scholarships_and_bursaries
     render_page("funding-and-support/scholarships-and-bursaries")
   end
