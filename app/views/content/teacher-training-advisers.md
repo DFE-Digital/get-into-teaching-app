@@ -9,5 +9,5 @@ content:
     - content/teacher-training-advisers/ending
 image: "static/content/homepage/teacher-training-adviser.jpg"
 talk_to_us: true
-noindex: true
+noindex: false
 ---
