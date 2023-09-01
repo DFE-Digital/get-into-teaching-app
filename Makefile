@@ -1,3 +1,11 @@
+TERRAFILE_VERSION=0.8
+ARM_TEMPLATE_TAG=1.1.6
+RG_TAGS={"Product" : "Get into teaching website"}
+REGION=UK South
+SERVICE_NAME=get-into-teaching
+SERVICE_SHORT=git
+DOCKER_REPOSITORY=ghcr.io/dfe-digital/schools-experience
+
 ifndef VERBOSE
 .SILENT:
 endif
@@ -58,8 +66,9 @@ production:
 	$(eval export KEY_VAULT=s146p01-kv)
 	$(eval export AZ_SUBSCRIPTION=s146-getintoteachingwebsite-production)
 
-set-azure-account:
-	az account set -s ${AZ_SUBSCRIPTION}
+.PHONY: production_aks
+production_aks:
+	$(eval include global_config/production.sh)
 
 clean:
 	[ ! -f fetch_config.rb ]  \
@@ -104,6 +113,15 @@ specs:
 ci:
 	$(eval AUTO_APPROVE=-auto-approve)
 
+composed-variables:
+	$(eval RESOURCE_GROUP_NAME=${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-${CONFIG_SHORT}-rg)
+	$(eval KEYVAULT_NAMES='("${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-${CONFIG_SHORT}-app-kv", "${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-${CONFIG_SHORT}-inf-kv")')
+	$(eval STORAGE_ACCOUNT_NAME=${AZURE_RESOURCE_PREFIX}${SERVICE_SHORT}tfstate${CONFIG_SHORT}sa)
+
+bin/terrafile: ## Install terrafile to manage terraform modules
+	curl -sL https://github.com/coretech/terrafile/releases/download/v${TERRAFILE_VERSION}/terrafile_${TERRAFILE_VERSION}_$$(uname)_x86_64.tar.gz \
+		| tar xz -C ./bin terrafile
+
 terraform-init: set-azure-account
 	$(if $(or $(IMAGE_TAG), $(NO_IMAGE_TAG_DEFAULT)), , $(eval export IMAGE_TAG=master))
 	$(if $(IMAGE_TAG), , $(error Missing environment variable "IMAGE_TAG"))
@@ -122,3 +140,65 @@ terraform-destroy: terraform-init
 
 delete-state-file:
 	az storage blob delete --container-name pass-tfstate --delete-snapshots include --account-name s146d01sgtfstate -n ${PR_NAME}.tfstate
+
+
+domains:
+	$(eval include global_config/domains.sh)
+
+domains-composed-variables:
+	$(eval RESOURCE_GROUP_NAME=${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-dom-rg)
+	$(eval KEYVAULT_NAMES=["${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-dom-kv"])
+	$(eval STORAGE_ACCOUNT_NAME=${AZURE_RESOURCE_PREFIX}${SERVICE_SHORT}domainstf)
+
+set-azure-account:
+	[ "${SKIP_AZURE_LOGIN}" != "true" ] && az account set -s ${AZURE_SUBSCRIPTION} || true
+
+set-what-if:
+	$(eval WHAT_IF=--what-if)
+
+arm-deployment: set-azure-account
+	$(if ${KEYVAULT_NAMES}, $(eval KV_ARG='keyVaultNames=${KEYVAULT_NAMES}'),)
+
+	az deployment sub create --name "resourcedeploy-tsc-$(shell date +%Y%m%d%H%M%S)" \
+		-l "${REGION}" --template-uri "https://raw.githubusercontent.com/DFE-Digital/tra-shared-services/${ARM_TEMPLATE_TAG}/azure/resourcedeploy.json" \
+		--parameters "resourceGroupName=${RESOURCE_GROUP_NAME}" 'tags=${RG_TAGS}' \
+			"tfStorageAccountName=${STORAGE_ACCOUNT_NAME}" "tfStorageContainerName=terraform-state" \
+			${KV_ARG} \
+			"enableKVPurgeProtection=${KV_PURGE_PROTECTION}" \
+			${WHAT_IF}
+
+deploy-arm-resources: composed-variables arm-deployment
+
+validate-arm-resources: composed-variables set-what-if arm-deployment
+
+deploy-domain-arm-resources: domains domains-composed-variables arm-deployment ## Deploy initial Azure resources (resource group, tfstate storage and key vault) will be deployed. Usage: make deploy-domain-arm-resources
+
+validate-domain-arm-resources: set-what-if domains domains-composed-variables arm-deployment ## Validate what Azure resources will be deployed. Usage: make validate-domain-arm-resources
+
+domains-infra-init: bin/terrafile domains-composed-variables set-azure-account
+	./bin/terrafile -p terraform/domains/infrastructure/vendor/modules -f terraform/domains/infrastructure/config/zones_Terrafile
+
+	terraform -chdir=terraform/domains/infrastructure init -reconfigure -upgrade \
+		-backend-config=resource_group_name=${RESOURCE_GROUP_NAME} \
+		-backend-config=storage_account_name=${STORAGE_ACCOUNT_NAME} \
+		-backend-config=key=domains_infrastructure.tfstate
+
+domains-infra-plan: domains domains-infra-init ## Terraform plan for DNS infrastructure (zone and front door. Usage: make domains-infra-plan
+	terraform -chdir=terraform/domains/infrastructure plan -var-file config/zones.tfvars.json
+
+domains-infra-apply: domains domains-infra-init ## Terraform apply for DNS infrastructure (zone and front door). Usage: make domains-infra-apply
+	terraform -chdir=terraform/domains/infrastructure apply -var-file config/zones.tfvars.json ${AUTO_APPROVE}
+
+domains-init: bin/terrafile domains-composed-variables set-azure-account
+	./bin/terrafile -p terraform/domains/environment_domains/vendor/modules -f terraform/domains/environment_domains/config/${CONFIG}_Terrafile
+
+	terraform -chdir=terraform/domains/environment_domains init -upgrade -reconfigure \
+		-backend-config=resource_group_name=${RESOURCE_GROUP_NAME} \
+		-backend-config=storage_account_name=${STORAGE_ACCOUNT_NAME} \
+		-backend-config=key=${ENVIRONMENT}.tfstate
+
+domains-plan: domains domains-init ## Terraform plan for DNS environment domains. Usage: make development_aks domains-plan
+	terraform -chdir=terraform/domains/environment_domains plan -var-file config/${CONFIG}.tfvars.json
+
+domains-apply: domains domains-init ## Terraform apply for DNS environment domains. Usage: make development_aks domains-apply
+	terraform -chdir=terraform/domains/environment_domains apply -var-file config/${CONFIG}.tfvars.json ${AUTO_APPROVE}
