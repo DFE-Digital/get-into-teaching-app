@@ -37,7 +37,9 @@ keywords:
   - Comparability
 ---
 
+Overseas teachers enrich the lives of students and add value to schools and the wider community. The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) wants to help Ukrainian refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
 
+We can help if you’re interested in teaching children aged 5 to 18. If you'd like to teach other age groups, try [teaching in a university](https://nationalcareers.service.gov.uk/job-profiles/higher-education-lecturer) or [teaching in further education](https://www.teach-in-further-education.campaign.gov.uk/). 
 
 ## General information
 
@@ -45,7 +47,9 @@ If you're coming to the UK from Ukraine, [check what you need to do before you t
 
 ### Check if you are eligible for an international relocation payment worth £10,000
 
+The international relocation payment (IRP) is a single payment of £10,000 which the UK government is making available to non-UK trainees and teachers of languages and physics. To be eligible, you must be coming to England to work or train in the 2023 to 2024 academic year. 
 
+[Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
 
 
 ### Check the status of your visa
@@ -64,12 +68,14 @@ If you’re not sure of the status of your visa, check:
 * [UK visa support for Ukrainian nationals](https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk)
 * [Apply to stay in the UK under the Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
+If you are already in the UK under a [different type of visa](https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support) (for example, a visitor or seasonal worker visa) you can apply to the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme). 
 
 ### Best visa for Ukrainians wanting to stay in the UK long-term
 
 If you are interested in working as a teacher and applying for [indefinite leave to remain in the UK](https://www.gov.uk/indefinite-leave-to-remain), you should consider a [skilled worker visa](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).   
 
 Time spent in the UK under the skilled worker visa counts towards an application for permanent residence. You will still need to meet the eligibility requirements for this type of visa.
+You can apply for a skilled worker visa whichever type of visa you currently have allowing you to stay in the UK. 
 
 ### What you’ll need to pass safeguarding and criminal records checks
 
@@ -89,16 +95,19 @@ Teacher training providers will ask for:
 
 You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mvs.gov.ua/app/landing) for a criminal record check, which will be emailed to you. You can then contact the [Ukrainian Embassy in the UK](https://uk.mfa.gov.ua/en) for a translation of the criminal record check and a letter confirming its validity.
 
+We understand it might not be possible to provide all this evidence. However, it’s helpful to show schools and training providers you have made every effort to do so. They can then reach a decision about your suitability, looking at the evidence available. 
 
 ### Help proving your professional qualification to training providers and employers
 
 UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. If you are applying to train to teach, you can [get your statement of comparability for free](#get-help-with-international-qualifications).
 
+## Teach in England 
 
 If you are already a qualified teacher, you will not need to retrain to get a job as a teacher in England. However, you will need:
 
 * teaching skills and experience you can demonstrate to an employer
 * to pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
+* a high standard of written and spoken English – for example, [Common European Framework of Reference for Languages, English level B2](https://www.efset.org/cefr/b2/) 
 
 ### Meeting the standard for written and spoken English
 
@@ -106,6 +115,7 @@ Most local authorities (also called 'councils') offer English to Speakers of Oth
 
 If you’re in the UK under a Ukrainian visa scheme (Ukraine Sponsorship Scheme, Ukraine Family Scheme or Ukraine Extension Scheme) and aged 19 or over, you are eligible for funding to study an ESOL course (as well as other educational or training courses).
 
+Depending on your circumstances, your ESOL course will either be free or reduced in price. [Find your local authority ('council')](https://www.gov.uk/find-local-council) and then search their website for English to Speakers of Other Languages (ESOL) courses. Or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
 
  
 You can also learn English with a private provider. Well respected English language courses include: 
@@ -120,6 +130,7 @@ You can also learn English with a private provider. Well respected English langu
 
 ### Apply for QTS in England
 
+Qualified teachers from Ukraine who [meet the criteria for QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) can [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without paying a fee or undergoing more training. 
 
 ### Assessment only QTS
 If you find you do not meet the eligibility criteria to apply for QTS, you could consider assessment only QTS. This means you can work in an English school and, alongside your job, apply to an English teacher training provider who will assess if you meet the standards for English QTS.
@@ -128,13 +139,10 @@ Check with [assessment only training providers](/train-to-be-a-teacher/assessmen
 
 ### Apply for a teaching job
 
-To find a teaching job, you must apply to individual schools (not DfE). [Search for teaching jobs](https://teaching-vacancies.service.gov.uk/) by region, subject specialism and age group.
 To find a teaching job, you must apply to individual schools (not DfE). [Search for teaching jobs](https://teaching-vacancies.service.gov.uk/) by region, subject specialism and age group. 
 
-You could also consider [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system working in a teaching assistant or support role before you apply for teaching jobs. [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) also lists these jobs.
 You could also consider [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system working in a teaching assistant or support role before you apply for teaching jobs. [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) also lists these jobs. 
 
-For a short-term unpaid placement, you can [request school experience in a primary or secondary school in England](https://schoolexperience.education.gov.uk/).
 For a short-term unpaid placement, you can [request school experience in a primary or secondary school in England](https://schoolexperience.education.gov.uk/). 
 
 Most teaching vacancies are advertised in March, April or the first half of May, with jobs starting at the beginning of the school year in September. Set up a [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) job alert to be updated about opportunities throughout the year.
@@ -145,7 +153,6 @@ Most teaching vacancies are advertised in March, April or the first half of May,
 
 [Find your local authority ('council')](https://www.gov.uk/find-local-council) and then search their website for teaching roles.
 
-### Tips on applying
 ### Tips on applying 
 
 As part of your application, schools will usually ask for your:
@@ -155,7 +162,6 @@ As part of your application, schools will usually ask for your:
 * personal statement
 * references
 
-Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school.
 Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school. 
 
 [Get tips on writing a personal statement](https://www.tes.com/jobs/careers-advice/application-and-interview/how-write-perfect-teaching-personal-statement).
@@ -239,6 +245,7 @@ Call us on +44 (0) 800 389 2500 for:
 [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) that lead to QTS by region, subject and age group.
 
 Then, you can [apply for teacher training](https://www.gov.uk/apply-for-teacher-training). 
+ 
 ### If you do not have a university degree
 
 If you do not have a degree, you can [apply to study a 3 to 4 year undergraduate course](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) in England which combines a teaching degree with QTS. When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
