@@ -4,6 +4,7 @@ description: |-
   Non-UK teachers and trainees in physics and languages could be eligible for financial help in the form of an international relocation payment from the UK government.
 related_content:
     Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
+    Teach in England if you trained outside the UK: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Apply for your visa to teach in England: "/non-uk-teachers/visas-for-non-uk-teachers"
     Apply for your visa to train to teach in England: "/non-uk-teachers/visas-for-non-uk-trainees"
 
