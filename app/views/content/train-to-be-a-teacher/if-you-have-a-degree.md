@@ -93,12 +93,7 @@ You can apply for a student loan regardless of the course you choose, even if yo
 
 ### Teacher training courses
 
-Your teacher training course might be provided by a university, school, college or group of schools. Your course might be referred to as:
-
-* school-centred initial teacher training (SCITT)
-* School Direct (there are salaried and non-salaried School Direct courses)
-
-The content of SCITT and School Direct programmes are broadly the same.
+Your teacher training course might be provided by a university, school, college or group of schools.
 
 As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
 
