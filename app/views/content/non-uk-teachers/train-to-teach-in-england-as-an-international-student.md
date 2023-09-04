@@ -72,6 +72,10 @@ $new-international-funding$
 
 Citizens of every country in the world can apply to train to teach in England.
 
+## Already a qualified teacher?
+
+If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+
 ## Why train to teach in England?
 
 Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way.
