@@ -68,7 +68,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
 
     context "when its between 24th June and 3th September of the current year (2022)" do
       around do |example|
-        travel_to(Date.new(2022, 9, 2)) { example.run }
+        travel_to(Date.new(2022, 9, 3)) { example.run }
       end
 
       it "returns 'Not sure', and the current year plus next 2 years" do
@@ -159,7 +159,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
 
     it "returns current calendar year + 2 years if first year and before 4th September" do
       wizardstore["degree_status_id"] = TeacherTrainingAdviser::Steps::StageOfDegree::NOT_FINAL_YEAR[:first_year]
-      travel_to(Date.new(2022, 9, 2)) do
+      travel_to(Date.new(2022, 9, 3)) do
         expect(instance.inferred_year_id).to eq(12_922)
       end
     end
@@ -173,7 +173,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
 
     it "returns current calendar year + 1 years if second year and before 4th September" do
       wizardstore["degree_status_id"] = TeacherTrainingAdviser::Steps::StageOfDegree::NOT_FINAL_YEAR[:second_year]
-      travel_to(Date.new(2022, 9, 2)) do
+      travel_to(Date.new(2022, 9, 3)) do
         expect(instance.inferred_year_id).to eq(12_921)
       end
     end
@@ -187,7 +187,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
 
     it "returns current calendar year + 1 years if other and before 4th September" do
       wizardstore["degree_status_id"] = TeacherTrainingAdviser::Steps::StageOfDegree::NOT_FINAL_YEAR[:other]
-      travel_to(Date.new(2022, 9, 2)) do
+      travel_to(Date.new(2022, 9, 3)) do
         expect(instance.inferred_year_id).to eq(12_921)
       end
     end
