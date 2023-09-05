@@ -15,6 +15,8 @@
         <%= f.govuk_text_field :first_name, width: 'two-thirds' %>
         <%= f.govuk_text_field :last_name, width: 'two-thirds' %>
         <%= f.govuk_email_field :email, width: 'two-thirds' %>
+        <%= f.hidden_field :channel_id, value: f.object&.channel_id.presence || params[:channel] %>
+        <%= f.hidden_field :sub_channel_id, value: f.object&.sub_channel_id.presence || params[:sub_channel] %>
         <%= f.hidden_field :accepted_policy_id, value: privacy_policy.id %>
 
         <p>Your details are protected under the terms of our <%= link_to("privacy notice", privacy_policy_path(id: privacy_policy.id), { class: "link--black", target: :blank }) %>.</p>
