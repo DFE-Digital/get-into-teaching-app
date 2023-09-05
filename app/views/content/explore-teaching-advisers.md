@@ -13,4 +13,6 @@ keywords:
 content:
   - "content/explore-teaching-advisers/header"
   - "content/explore-teaching-advisers/article"
+  - "content/explore-teaching-advisers/sign-up"
+  - "content/explore-teaching-advisers/ending"
 ---
