@@ -117,8 +117,6 @@ You can set up job alerts so that you do not miss out on any opportunities.
 Take a look at the different [types of schools and staff roles](https://www.gov.uk/types-of-school)
 to find the best opportunity for you. Vacancies with flexible working opportunities are listed on the service.
 
-[Read our top tips for returning teachers](/blog/top-tips-for-returning-teachers).
-
 $q-helen-returner$
 
 
@@ -134,7 +132,6 @@ If you’re returning to teaching, you might want to re-familiarise yourself wit
 
 ### Reading teachers' stories and tips
 
-* browse [inspirational stories](/blog/tag/returning-to-teaching) from Stephen, Farooq and Maria who returned to the classroom successfully after a break
 * read up on [teaching interview tips](https://www.teachertoolkit.co.uk/2019/04/04/job-interviews) and get [pointers on remote interviews](/blog/how-to-ace-a-video-interview)
 
 ### Catching up on changes
