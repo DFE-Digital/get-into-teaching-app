@@ -208,7 +208,9 @@ The following suggestions and resources may be useful:
 
 The Department for Education (DfE) does not employ teachers directly. Do not send us your CV, as we will not be able to help you find a teaching job. 
 
-Please do not email to ask when a country or subject will be added to the list for QTS in England. We’ll [publish an update about eligibility for the service](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#) by May 2023.
+Please do not email to ask when a country or subject will be added to the list for QTS in England. 
+
+We'll publish updates about eligiblity for the service at ['A fairer approach to awarding QTS to overseas teachers'](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#).
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
