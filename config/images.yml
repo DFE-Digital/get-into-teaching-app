@@ -450,11 +450,11 @@
   alt: "A smiling young man with a beard in a black leather jacket and black beanie hat stands in front of a screen with holes in."
   
 # get more from events page
-"static/content/events/collage1.jpg":
+"static/content/events/collage1.jpeg":
   alt: "A lady holding papers standing in front of someone smiling with other people and an event banner in the background."
-"static/content/events/collage2.jpg":
+"static/content/events/collage2.jpeg":
   alt: "A man holding an iPad wearing a blue Get Into Teaching t-shirt talking to a lady with an event banner in the background."
-"static/content/events/teaching-event.jpg":
+"static/content/events/teaching-event.jpeg":
   alt: "A man smiling wearing a blue Get Into Teaching sweatshirt talking to a lady with banner behind them."
 
 # campus advisers landing page
