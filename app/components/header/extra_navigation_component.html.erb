@@ -1,12 +1,22 @@
 <%= tag.div(class: classes, data: { controller: "searchbox", "searchbox-search-input-id-value" => search_input_id }, role: "navigation") do %>
   <ul class="extra-navigation__list">
-    <li class="extra-navigation__link extra-navigation__mail">
-      <%= link_to("/mailinglist/signup/name", class: "link--black") do %>
-      Register your interest<!--
-   --><span class="icon icon-mail" aria-hidden="true"></span>
-      <span class="icon icon-mail-white" aria-hidden="true"></span>
-      <% end %>
-    </li>
+    <span class="extra-navigation__flex">
+      <li class="extra-navigation__link extra-navigation__border">
+        <%= link_to("/mailinglist/signup/name", class: "link--black") do %>
+        Sign up for emails
+        <% end %>
+      </li>
+      <li class="extra-navigation__link extra-navigation__border">
+        <%= link_to("/events", class: "link--black") do %>
+        Events
+        <% end %>
+      </li>
+      <li class="extra-navigation__link">
+        <%= link_to("/teacher-training-adviser/sign_up/identity", class: "link--black") do %>
+        Get an adviser
+        <% end %>
+      </li>
+    </span>
     <%= tag.li(class: %w[extra-navigation__link extra-navigation__search]) do %>
       <%= tag.label("Search", for: search_input_id, class: %w[searchbox__label visually-hidden], data: { "searchbox-target": "label" }) %>
       <%= link_to(search_path, aria: { label: "Search" }, data: { action: "searchbox#toggle" }) do %>
@@ -14,6 +24,6 @@
         <span class="icon icon-close"></span>
       <% end %>
     <% end %>
-  </ul>
+  </ul>  
   <div class="searchbar" data-searchbox-target="searchbar" role="search"></div>
 <% end %>
