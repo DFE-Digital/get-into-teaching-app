@@ -111,7 +111,7 @@ living costs, to train (depending on your immigration status and the subject you
 
 We can help you make an application for teacher training in England. Sign up for a teacher training adviser to get help right away and throughout the application process.
 
-### 1. Get support and advice
+### Get support and advice
 
 For help applying, you can:
 
@@ -120,7 +120,7 @@ For help applying, you can:
 * use the live chat service at the bottom of this page
 
 
-### 2. Check your eligibility
+## Check your eligibility
 
 To train to teach in England, you will need:
 
@@ -136,7 +136,7 @@ You will also need to:
 * have the health and physical capacity to train to teach
 * undergo safeguarding and criminal record checks carried out by your training provider or employer
 
-#### Help comparing English and international qualifications
+### Help comparing English and international qualifications
 
 For help, call us on +44 800 389 2500. We can check your degree and other qualifications meet the standards set for English teacher training. 
 
@@ -144,7 +144,7 @@ When you make your application for teacher training, some teacher training provi
 
 A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. We can help you with a free statement of comparability, once you’ve submitted your application, if your provider asks for this.
 
-#### English language, maths and science proficiency
+### English language, maths and science proficiency
 
 Your English language qualification could be evidence you’ve reached a certain standard in an English language test, for example one of the following: 
 
@@ -154,14 +154,14 @@ Your English language qualification could be evidence you’ve reached a certain
 
 If you haven’t passed an English language test like this, or do not have qualifications in maths or science which are the same standard as grade 4 GCSE, some teacher training providers will let you sit tests in these subjects. It’s best to contact them to ask about their policy before you apply. 
 
-#### If you do not have a university degree
+### If you do not have a university degree
 
 If you do not have a degree, you can apply to study a 3 to 4 year [undergraduate course in England](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) which combines a teaching degree with [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) has lots of helpful information about studying at an English university.
 
 
-### 3. Find out about fees and financial support
+## Find out about fees and financial support
 
 Fees vary between training providers, but range from £9,250 to about £32,000. You’ll also have to pay your living costs.
 
@@ -169,13 +169,13 @@ If you are planning on training to teach languages and physics, you could be eli
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
-### 4. Search and apply for teacher training courses
+## Search and apply for teacher training courses
 
 Your teacher training course must lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
 
 You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Teacher training courses can also be 'fee-paying' or 'salaried'.
 
-#### Fee-paying and salaried teacher training courses
+### Fee-paying and salaried teacher training courses
 
 A fee-paying teacher training course means you pay a fee to study as a teacher. Most teacher trainees in England are enrolled on this type of course.
 
@@ -195,11 +195,11 @@ Salaried courses include:
 
 [Find out more about salaried teacher training](/funding-and-support/salaried-teacher-training).
  
-#### Choosing a subject to teach 
+### Choosing a subject to teach 
 
 The subject you apply to teach must usually be the same as, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) 
 
-#### Finding the right course for you and getting help
+### Finding the right course for you and getting help
 
 [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists courses leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
 
@@ -211,15 +211,19 @@ You can also search courses by:
 * courses which pay a salary
 * courses for which student visa or skilled worker visa sponsorship is available
 
-Your [teacher training adviser](#get-support-and-advice) can help with: 
+### Writing your personal statement
+
+It's important that you give yourself time to write the best possible [personal statement](/train-to-be-a-teacher/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
+
+Your [teacher training adviser](#get-support-and-advice) can help you write your personal statement and will also give advice on: 
 
 * your choice of course and training provider
 * your choice of subject
-* writing a personal statement
 * ways to research the [English education system](#learn-more-about-life-as-a-teacher-and-the-english-education-system)
 * preparing for your interview
 
-#### First apply for your training place, then apply for your visa
+
+### First apply for your training place, then apply for your visa
 
 If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
 
@@ -227,11 +231,11 @@ For your teacher training place offer to be confirmed, you’ll have to pass cri
 
 Due to rules about immigration, not all providers can accept international applicants – we suggest you contact them before you apply to check.
 
-#### Already living in the UK?
+### Already living in the UK?
 
 If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.
 
-#### Postgraduate teaching apprenticeships
+### Postgraduate teaching apprenticeships
 
 If you are resident in the UK, you may also be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train.
 
@@ -251,7 +255,7 @@ If you are resident in the UK, you may already have a visa or immigration status
 
 <a class="button" href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find and apply for teacher training courses<span> in England</span></a>
 
-### 5. Apply for your visa
+## Apply for your visa
 
 To train to teach in England, you will need a visa or immigration status allowing you to study (or work, for salaried courses) in the UK. 
 
@@ -261,23 +265,23 @@ When you have been accepted on to a teacher training course offering student or 
 
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa) or [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
-#### Already living in the UK?
+### Already living in the UK?
 
 If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a> or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>
 you will not need a visa to train to teach in the UK.
 
-#### How to apply
+### How to apply
 
 [Learn more about applying for the right visa for your teacher training course](/non-uk-teachers/visas-for-non-uk-trainees).
 
-### 6. Plan your move to the UK
+## Plan your move to the UK
 
 Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) for advice about immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
 
 Your teacher training provider may also be able to help you plan your move to the UK  – contact them directly to ask.
 
 
-### 7. Complete your teacher training and gain qualified teacher status (QTS)
+## Complete your teacher training and gain qualified teacher status (QTS)
 
 If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
 
