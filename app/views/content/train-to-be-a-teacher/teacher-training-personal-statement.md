@@ -57,11 +57,9 @@ Teacher training providers want to see your passion and that you understand the 
 Make sure you check your spelling and grammar in your application. You want to make the best possible impression.
 
 <div class="inset">
-<h3>If you’ve already started to apply</h3>
+<h3>If you’re applying again</h3>
 
-<p>You will see 2 sections for your personal statement with information on how to complete each section.</p>
-
-<p>If your application is unsuccessful this time and you apply again, the 2 sections of your personal statement will merge. When this happens, you will be asked to review your statement before applying again.</p>
+<p>If your application was unsuccessful and you want to apply again, the 2 sections of your personal statement will be merged. You will be asked to review the merged personal statement.</p>
 
 </div>
 
