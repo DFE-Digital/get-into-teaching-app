@@ -5,7 +5,7 @@ content:
     - content/events/get-the-most-from-events/header
     - content/events/get-the-most-from-events/steps
     - content/events/get-the-most-from-events/content
-image: "static/content/hero-images/event-image.jpg"
+image: "static/content/events/teaching-event.jpg"
 colour: "yellow"
 layout: "layouts/minimal"
 talk_to_us: false
