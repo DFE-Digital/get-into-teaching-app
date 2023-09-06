@@ -36,12 +36,12 @@ DOCKER_IMAGE=get-into-teaching-app
 development:
 	$(eval export DEPLOY_ENV=dev)
 	$(eval export KEY_VAULT=s146d01-kv)
-	$(eval export AZ_SUBSCRIPTION=s146-getintoteachingwebsite-development)
+	$(eval export AZURE_SUBSCRIPTION=s146-getintoteachingwebsite-development)
 
 .PHONY: local
 local:
 	$(eval export KEY_VAULT=s146d01-local2-kv)
-	$(eval export AZ_SUBSCRIPTION=s146-getintoteachingwebsite-development)
+	$(eval export AZURE_SUBSCRIPTION=s146-getintoteachingwebsite-development)
 
 .PHONY: review
 review:
@@ -49,7 +49,7 @@ review:
 	$(eval export PR_NAME=review-get-into-teaching-app-${PR_NUMBER})
 	$(eval export DEPLOY_ENV=review)
 	$(eval export KEY_VAULT=s146d01-kv)
-	$(eval export AZ_SUBSCRIPTION=s146-getintoteachingwebsite-development)
+	$(eval export AZURE_SUBSCRIPTION=s146-getintoteachingwebsite-development)
 	$(eval BACKEND_KEY=-backend-config=key=${PR_NAME}.tfstate)
 	$(eval export TF_VAR_paas_app_application_name=${PR_NAME})
 	$(eval export TF_VAR_paas_app_route_name=${PR_NAME})
@@ -58,13 +58,13 @@ review:
 test:
 	$(eval export DEPLOY_ENV=staging)
 	$(eval export KEY_VAULT=s146t01-kv)
-	$(eval export AZ_SUBSCRIPTION=s146-getintoteachingwebsite-test)
+	$(eval export AZURE_SUBSCRIPTION=s146-getintoteachingwebsite-test)
 
 .PHONY: production
 production:
 	$(eval export DEPLOY_ENV=production)
 	$(eval export KEY_VAULT=s146p01-kv)
-	$(eval export AZ_SUBSCRIPTION=s146-getintoteachingwebsite-production)
+	$(eval export AZURE_SUBSCRIPTION=s146-getintoteachingwebsite-production)
 
 .PHONY: production_aks
 production_aks:
