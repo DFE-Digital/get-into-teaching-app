@@ -89,6 +89,10 @@ RUN apk update
 RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev && \
     rm -rf /var/lib/apt/lists/*
 
+RUN apk add --no-cache \
+  "procps-ng=4.0.4-r0" \
+  "libproc2=4.0.4-r0"
+
 COPY --from=release-build /app /app
 COPY --from=release-build /usr/local/bundle/ /usr/local/bundle/
 
