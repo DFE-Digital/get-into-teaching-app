@@ -15,11 +15,13 @@ describe "reading the blog", type: :feature do
     expect(page).to have_content("Blog posts about #{tag}")
   end
 
-  shared_examples "paginating blog posts" do |path|
+  shared_examples "paginating blog posts" do |path, count, next_page|
     scenario "paginating blog posts on the #{path} path" do
       visit path
 
-      expect(all(".blog-article").count).to eq(8)
+      expect(all(".blog-article").count).to eq(count)
+
+      next unless next_page
 
       within ".pagination" do
         expect(find(".page.current")).to have_text("1")
@@ -34,8 +36,8 @@ describe "reading the blog", type: :feature do
     end
   end
 
-  include_context "paginating blog posts", "/blog"
-  include_context "paginating blog posts", "/blog/tag/advisers"
+  include_context "paginating blog posts", "/blog", 10, true
+  include_context "paginating blog posts", "/blog/tag/advisers", 8, false
 
   scenario "viewing a post" do
     path = "getting-ready-to-apply"
