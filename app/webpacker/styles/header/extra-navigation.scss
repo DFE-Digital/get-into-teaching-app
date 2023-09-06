@@ -23,11 +23,10 @@
     }
   }
 
-  &__border::after {
-    content: '';
+  &__border:after {
+    content: "";
     border-right: 1px solid #1d1d1d;
   }
-
 
   &__link a {
     display: inline-block;
@@ -35,7 +34,7 @@
     line-height: 28px;
 
     @include mq($until: mobile) {
-      padding: 0.6em 0.8em;
+      padding: .6em .8em;
     }
 
     .icon {
@@ -48,20 +47,6 @@
       }
     }
   }
-
-  /*&__mail a {
-    &:not(:focus) {
-      .icon-mail-white {
-        display: none;
-      }
-    }
-
-    &:focus {
-      .icon-mail {
-        display: none;
-      }
-    }
-  }*/
 
   &__search a {
     background-color: $pink;
