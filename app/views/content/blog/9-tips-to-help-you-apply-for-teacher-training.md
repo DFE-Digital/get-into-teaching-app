@@ -41,7 +41,7 @@ You may be able to show you meet the standard in another way if you do not have 
 
 If you’re applying for teacher training as an international candidate, [find out more about overseas qualifications](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
 
-You can get advice about your qualifications by chatting to a [teacher training adviser](/teacher-training-advisers).
+You can get advice about your qualifications by chatting to a [teacher training adviser](/teacher-training-advisers) for free.
 
 ## 2. Get some school experience
 
@@ -49,7 +49,7 @@ If you haven’t had any experience of working with children, think about any tr
 
 Whilst school experience isn’t compulsory, it’s a good idea to visit a school, if only to confirm that you are making the right career choice. You can [search for and request school experience](https://schoolexperience.education.gov.uk/) to find details of upcoming opportunities in your area.
 
-## 3.	Get a teacher training adviser
+## 3.	Get a free teacher training adviser
 
 All our teacher training advisers are experienced teachers who can provide you with additional support when preparing and applying for teacher training. You could get help with things like finding school experience, choosing the right course for you, funding, and writing a successful application.
 
