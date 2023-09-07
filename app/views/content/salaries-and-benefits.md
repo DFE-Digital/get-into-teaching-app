@@ -56,11 +56,11 @@ keywords:
 
 $new-salaries$
 
-If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where, and the pay range you’re on. 
+If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on. 
 
 These pay ranges apply to maintained schools (schools funded by local authorities). 
 
-Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay. 
+Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow the pay ranges below. 
 
 Figures apply from 1 September 2023.
 
@@ -68,9 +68,9 @@ Figures apply from 1 September 2023.
 
 You’ll start on at least £30,000 (or more in London) as a primary or secondary school teacher in England. 
 
-Your salary will be reviewed every year, with most teachers moving up the pay range annually (this will depend on your school’s performance management arrangements).    
+Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.    
 
-A typical teacher with 5 years’ experience will earn at least £41,333 (or more in London).
+A typical teacher with 5 years’ experience will earn at least £41,333, or more in London.
 
 ### Qualified teacher salary
 
@@ -93,15 +93,15 @@ Depending on your responsibilities, you could earn up to an extra £15,690. Your
 
 ## Career progression
 
-Some schools also have a leading practitioner pay range for teachers who exhibit exemplary teaching skills and lead the improvement of teaching in their school.
+### Leading practitioner salary
+
+Some schools also have a leading practitioner pay range for teachers with exemplary teaching skills who lead the improvement of teaching in their school.
 
 What this will involve will depend on your school, but could include:
 
 * coaching and mentoring other teachers, including trainees and early career teachers
 * undertaking a national professional qualification (NPQ) 
 * supporting your school to produce schemes of work to reduce workload
-
-### Leading practitioner salary
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
@@ -110,13 +110,13 @@ What this will involve will depend on your school, but could include:
 | Outer London                             | £51,179 | £75,850 |
 | Inner London                             | £56,377 | £81,051 |
 
+### Headteacher salary
+
 You could also go into a leadership position, such as a headteacher.
 
 A headteacher is the most senior person in a school. They are ultimately responsible for all teachers and pupils. 
 
 Their role is wide ranging, but includes leading and motivating teachers, and ensuring all pupils get a good education.
-
-### Headteacher salary
 
 | Area                                     | Minimum | Maximum  |
 | -------                                  | -----   | -----    |
