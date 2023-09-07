@@ -24,7 +24,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/train-to-be-a-teacher", to: redirect("https://teaching-vacancies.service.gov.uk")
+  get "/returning-to-teaching", to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-teaching/")
 
   if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production? || Rails.env.pagespeed?
     get "/assets/*missing", to: "errors#not_found", via: :all
