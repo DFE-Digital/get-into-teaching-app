@@ -197,7 +197,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
   describe "category pages" do
     subject { page }
 
-    let(:path) { "/funding-and-support" }
+    let(:path) { "/train-to-be-a-teacher" }
 
     before { visit(path) }
 

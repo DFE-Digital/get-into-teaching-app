@@ -3,6 +3,7 @@ require "rails_helper"
 describe "Redirects", content: true, type: :request do
   before(:all) { @result = {} }
 
+  let(:teaching_vacancies_url) { "https://teaching-vacancies.campaign.gov.uk/return-to-teaching/" }
   let(:query_string) { "#{expected_query_string}&page=5" }
   let(:expected_query_string) { "abc=def&ghi=jkl" }
   let(:valid_results) { [200, 301, 302] }
@@ -58,6 +59,14 @@ describe "Redirects", content: true, type: :request do
           expect(@result[target]).to be_in(valid_results)
         end
       end
+    end
+  end
+
+  describe "page 'returning-to-teaching' redirects" do
+    it "redirects to school vacancies url" do
+      get '/returning-to-teaching'
+      expect(response.code).to eq("301")
+      expect(response.location).to eq(teaching_vacancies_url)
     end
   end
 
