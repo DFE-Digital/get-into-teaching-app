@@ -64,7 +64,7 @@ describe "Redirects", content: true, type: :request do
 
   describe "page 'returning-to-teaching' redirects" do
     it "redirects to school vacancies url" do
-      get '/returning-to-teaching'
+      get "/returning-to-teaching"
       expect(response.code).to eq("301")
       expect(response.location).to eq(teaching_vacancies_url)
     end

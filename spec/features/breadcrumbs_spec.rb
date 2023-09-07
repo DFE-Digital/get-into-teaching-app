@@ -48,8 +48,8 @@ RSpec.feature "Breadcrumbs", type: :feature do
 
     it "includes the current page in plain text" do
       page.within ".breadcrumbs" do
-        is_expected.not_to have_link "Fund your teacher training"
-        is_expected.to have_text "Fund your teacher training"
+        is_expected.not_to have_link "Home Train to be a teacher"
+        is_expected.to have_text "Home Train to be a teacher"
       end
     end
   end
