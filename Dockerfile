@@ -16,6 +16,11 @@ WORKDIR /app
 
 RUN apk update
 
+RUN apk add --no-cache \
+  "procps-ng=4.0.4-r0" \
+  "libproc2=4.0.4-r0" \
+  "nodejs=18.17.1-r0"
+
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn git \
         chromium chromium-chromedriver postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
 
