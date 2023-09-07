@@ -82,16 +82,15 @@ WORKDIR /app
 # Install production image dependencies
 RUN apk update
 
-# RUN apk add --no-cache \
-# "openssl>=1.1.1u-r0" \
-# "ncurses-libs>=6.3_p20220521-r1"
-
 RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev && \
     rm -rf /var/lib/apt/lists/*
 
 RUN apk add --no-cache \
   "procps-ng=4.0.4-r0" \
-  "libproc2=4.0.4-r0"
+  "libproc2=4.0.4-r0" \
+  "postgresql14=14.9-r0" \
+  "postgresql14-client=14.9-r0"
+
 
 COPY --from=release-build /app /app
 COPY --from=release-build /usr/local/bundle/ /usr/local/bundle/
