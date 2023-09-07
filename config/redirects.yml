@@ -24,10 +24,17 @@ redirects:
   "/helping-you-become-a-teacher": "/three-things-to-help-you-get-into-teaching"
   "/start-teacher-training-this-september": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
   "/landing/secure-your-september": "/"
+  "/landing/still-time-to-apply": "/"
 
   # International content
   "/iqts": "/non-uk-teachers/international-qualified-teacher-status"
   "/funding-and-support/if-you-come-from-outside-england": "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
+  "/non-uk-teachers/international-qualified-teacher-status/after-accordion": "/non-uk-teachers/international-qualified-teacher-status"
+  "/non-uk-teachers/international-qualified-teacher-status/check-your-eligibility": "/non-uk-teachers/international-qualified-teacher-status"
+  "/non-uk-teachers/international-qualified-teacher-status/find-out-about-fees": "/non-uk-teachers/international-qualified-teacher-status"
+  "/non-uk-teachers/international-qualified-teacher-status/apply-to-your-chosen-iqts-teacher-training-provider": "/non-uk-teachers/international-qualified-teacher-status"
+  "/non-uk-teachers/international-qualified-teacher-status/gain-iqts-and-automatic-qts": "/non-uk-teachers/international-qualified-teacher-status"
+  "/non-uk-teachers/international-qualified-teacher-status/next-steps-for-candidates": "/non-uk-teachers/international-qualified-teacher-status"
 
   # Events
   "/events/about-train-to-teach-events": "/events/about-get-into-teaching-events"

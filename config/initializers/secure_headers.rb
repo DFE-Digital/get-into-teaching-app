@@ -41,7 +41,7 @@ SecureHeaders::Configuration.default do |config|
   sentry      = %w[*.ingest.sentry.io]
   gtm_server  = %w[get-into-teaching-staging-gtm.nw.r.appspot.com analytics.getintoteaching.education.gov.uk]
   reddit      = %w[www.redditstatic.com alb.reddit.com]
-  clarity     = %w[www.clarity.ms *.clarity.ms]
+  clarity     = %w[www.clarity.ms *.clarity.ms *.bing.com]
   vwo         = %w[app.vwo.com *.visualwebsiteoptimizer.com]
 
   quoted_unsafe_inline = ["'unsafe-inline'"]
@@ -74,8 +74,8 @@ SecureHeaders::Configuration.default do |config|
     img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, gtm_server, reddit, clarity, vwo, %w[chart.googleapis.com wingify-assets.s3.amazonaws.com cx.atdmt.com linkbam.uk]),
     manifest_src: self_base,
     media_src: self_base.concat(zendesk).concat(assets),
-    script_src: self_base.concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit, clarity, vwo),
-    style_src: self_base.concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize, vwo),
+    script_src: quoted_unsafe_inline + quoted_unsafe_eval + self_base.concat(google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit, clarity, vwo),
+    style_src: quoted_unsafe_inline + self_base.concat(govuk, google_apis, google_supported, optimize, vwo),
     worker_src: self_base.concat(blob),
   }
 

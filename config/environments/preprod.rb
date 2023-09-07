@@ -13,7 +13,7 @@ Rails.application.configure do
 
   # Override any production defaults here
   config.x.git_api_endpoint = \
-    "https://get-into-teaching-api-test.london.cloudapps.digital/api"
+    "https://getintoteachingapi-test.test.teacherservices.cloud/api"
 
   config.view_component.show_previews = true
 

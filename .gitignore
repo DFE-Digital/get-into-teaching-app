@@ -39,6 +39,12 @@ yarn-debug.log*
 /coverage
 .idea
 .vscode/
+
+# DevOps files
+bin/terrafile
+
+# Terraform files
+vendor/
 .terraform/
 tokens
 terraform.tfstate
