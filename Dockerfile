@@ -18,9 +18,6 @@ RUN apk update
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn git \
         chromium chromium-chromedriver postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
-        
-RUN apk add --no-cache postgresql14=14.9-r0
-RUN apk add --no-cache postgresql14-client=14.9-r0
 
 # Install bundler
 RUN gem install bundler --version=2.3.4
@@ -90,7 +87,8 @@ RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev &&
 
 RUN apk add --no-cache \
   "procps-ng=4.0.4-r0" \
-  "libproc2=4.0.4-r0"
+  "libproc2=4.0.4-r0" \
+  "nodejs=18.17.1-r0"
 
 
 COPY --from=release-build /app /app
