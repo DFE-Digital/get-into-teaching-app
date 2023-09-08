@@ -319,6 +319,11 @@
 "static/content/blog/thumbnails/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
 
+"static/content/blog/brooke-harvey.jpg":
+  alt: "Brooke Harvey, a Canadian national who moved to England to teach, standing in front of a bookcase."
+  variants:
+    - "static/content/blog/thumbnails/brooke-harvey.jpg"
+
 "static/content/blog/thumbnails/stories-peter.jpg":
   alt: Ex-financeer, Peter
 
@@ -354,6 +359,9 @@
 
 "static/content/blog/thumbnails/stories-roger.jpg":
   alt: Roger Brown, physics teacher
+
+  "static/content/blog/thumbnails/stories-katie.jpg":
+  alt: Head of faculty, Katie Lockett
 
 "static/content/blog/thumbnails/chris-wallis.jpg":
   alt: Product engineer turned science teacher, Chris Wallis
