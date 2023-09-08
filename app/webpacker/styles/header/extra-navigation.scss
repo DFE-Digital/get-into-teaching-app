@@ -17,20 +17,16 @@
 
   &__flex {
     display: flex;
+    margin-right: 1em;
 
     @include mq($until: mobile) {
       margin-right: auto;
     }
   }
 
-  &__border:after {
-    content: "";
-    border-right: 1px solid #1d1d1d;
-  }
-
   &__link a {
     display: inline-block;
-    padding: .6em 1.1em;
+    padding: .6em 1em;
     line-height: 28px;
 
     @include mq($until: mobile) {
@@ -43,6 +39,34 @@
       height: 20px;
 
       &.icon-close {
+        display: none;
+      }
+    }
+  }
+
+  &__mail a {
+    &:not(:focus) {
+      .icon-mail-white {
+        display: none;
+      }
+    }
+
+    &:focus {
+      .icon-mail {
+        display: none;
+      }
+    }
+  }
+
+  &__mail a {
+    &:not(:focus) {
+      .icon-calendar-white {
+        display: none;
+      }
+    }
+
+    &:focus {
+      .icon-calendar {
         display: none;
       }
     }

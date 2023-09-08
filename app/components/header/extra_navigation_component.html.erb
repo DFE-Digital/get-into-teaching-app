@@ -1,19 +1,14 @@
 <%= tag.div(class: classes, data: { controller: "searchbox", "searchbox-search-input-id-value" => search_input_id }, role: "navigation") do %>
   <ul class="extra-navigation__list">
     <span class="extra-navigation__flex">
-      <li class="extra-navigation__link extra-navigation__border">
+      <li class="extra-navigation__link extra-navigation__mail">
         <%= link_to("/mailinglist/signup/name", class: "link--black") do %>
-        Sign up for emails
+        Sign up for emails<span class="icon icon-mail" aria-hidden="true"></span><span class="icon icon-mail-white" aria-hidden="true"></span>
         <% end %>
       </li>
-      <li class="extra-navigation__link extra-navigation__border">
+      <li class="extra-navigation__link extra-navigation__mail">
         <%= link_to("/events", class: "link--black") do %>
-        Events
-        <% end %>
-      </li>
-      <li class="extra-navigation__link">
-        <%= link_to("/teacher-training-adviser/sign_up/identity", class: "link--black") do %>
-        Get an adviser
+        Find an event<span class="icon icon-calendar" aria-hidden="true"></span><span class="icon icon-calendar-white" aria-hidden="true"></span>
         <% end %>
       </li>
     </span>
