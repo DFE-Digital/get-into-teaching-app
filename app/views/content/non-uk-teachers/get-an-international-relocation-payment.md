@@ -76,7 +76,7 @@ The international relocation payment (IRP) is designed to cover some of the cost
 
 * other relocation expenses
 
-All eligible applicants will receive a single payment of £10,000 from the Department for Education (DfE) around the end of their first term training or working in England. The IRP is a grant – you will not have to pay this money back. You can only receive the IRP once.
+All eligible applicants will receive a single payment of £10,000 from the Department for Education (DfE) around the end of their first term training or working in England. The IRP is a grant – you will not have to pay this money back. You can only receive the IRP once.
 
 ## Criteria for teachers  
 

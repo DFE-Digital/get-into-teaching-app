@@ -504,7 +504,7 @@ keywords:
 
 If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/what-is-qts) through an assessment only programme.
 
-If you already have QTS, find out how you can [return to teaching](/returning-to-teaching).
+If you already have QTS, find out how you can [return to teaching](https://teaching-vacancies.campaign.gov.uk/return-to-teaching/).
 
 ## What is the assessment only route to QTS?
 

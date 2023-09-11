@@ -343,9 +343,17 @@ redirects:
   "/train-to-be-a-teacher/if-you-have-a-degree-search": "/train-to-be-a-teacher/if-you-have-a-degree"
   "/funding-and-support/scholarships-and-bursaries-search": "/funding-and-support/scholarships-and-bursaries"
   "/landing/how-to-become-a-teacher-mailing-list": "/landing/how-to-become-a-teacher"
-  
+
   # Thank you page
   "/thank-you": "/"
 
 # Old financial support for international applicants
   "/guidance/financial-support-for-international-applicants": "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
+
+# moving returners content
+  "/blog/jills-story-getting-back-into-the-classroom": "/returning-to-teaching"
+  "/blog/marias-return-to-teaching-story": "/returning-to-teaching"
+  "/blog/my-experience-with-the-national-tutoring-programme": "/returning-to-teaching"
+  "/blog/stephens-return-to-teaching-story": "/returning-to-teaching"
+  "/blog/top-tips-for-returning-teachers": "/returning-to-teaching"
+  "/blog/tag/returning-to-teaching": "/returning-to-teaching"

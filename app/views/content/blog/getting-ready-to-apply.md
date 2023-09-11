@@ -49,10 +49,7 @@ Get one step closer to the classroom with guidance tailored to you, including ho
 
 ## 3. Get a free teacher training adviser
 
-An adviser with years of teaching experience can help you if you're (one of the following):
-
-* ready to get into teaching
-* returning to teach at a secondary school in England and already have qualified teacher status (QTS)
+An adviser with years of teaching experience can help you get ready to make your application.
 
 Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. Talk to an adviser by phone, text or email, as often or as little as you need.
 
