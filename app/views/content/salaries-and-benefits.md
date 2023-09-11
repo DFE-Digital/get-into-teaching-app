@@ -1,6 +1,6 @@
 ---
-title: "Teacher pay"
-heading: "Teacher pay"
+title: "Teacher pay and benefits"
+heading: "Teacher pay and benefits"
 description: |-
   All qualified teachers will have a starting salary of at least £30,000 (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 date: "2021-06-24"
@@ -10,7 +10,7 @@ navigation: 40
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
-    Steps to become a teacher : "/steps-to-become-a-teacher"
+    How to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
     Why I became a teacher : "/blog/the-head-of-science-inspiring-students-in-blackpool"
@@ -58,9 +58,9 @@ $new-salaries$
 
 If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on. 
 
-These pay ranges apply to maintained schools (schools funded by local authorities). 
+The pay ranges below apply to maintained schools (schools funded by local authorities). 
 
-Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow the pay ranges below. 
+Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges. 
 
 Figures apply from 1 September 2023.
 
@@ -101,7 +101,7 @@ What this will involve will depend on your school, but could include:
 
 * coaching and mentoring other teachers, including trainees and early career teachers
 * undertaking a national professional qualification (NPQ) 
-* supporting your school to produce schemes of work to reduce workload
+* supporting your school with plans to reduce workload
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
