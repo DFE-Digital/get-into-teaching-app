@@ -8,6 +8,9 @@ related_content:
     Tips for teacher training interview success : "/train-to-be-a-teacher/teacher-training-interview"
     Your teacher training personal statement : "/train-to-be-a-teacher/teacher-training-personal-statement"
     Your teacher training references : "/train-to-be-a-teacher/teacher-training-references"
+navigation: 30.30
+navigation_title: If your application is unsuccessful
+navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one. 
 date: "2023-03-30"
 keywords:
   - adviser

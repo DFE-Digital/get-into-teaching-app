@@ -32,8 +32,8 @@ external_content:
     - content/train-to-be-a-teacher/promos/apply-for-your-course
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
-navigation: 20.25
-navigation_title: How to apply
+navigation: 30.05
+navigation_title: Your teacher training application
 navigation_description: Discover tips on preparing your teacher training application, from writing your personal statement to choosing your references.
 
 ---

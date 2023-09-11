@@ -7,6 +7,9 @@ related_content:
     Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
     What teacher training is like : "/train-to-be-a-teacher/initial-teacher-training"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider" 
+navigation: 30.20
+navigation_title: Teacher training interview
+navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one. 
 date: "2023-06-09"
 keywords:
   - adviser

@@ -8,6 +8,9 @@ related_content:
     Application tips from a teacher training provider : "/blog/application-tips-from-a-teacher-training-provider"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
+navigation: 30.15
+navigation_title: Teacher training references
+navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one. 
 date: "2023-07-03"
 keywords:
   - teacher training references
