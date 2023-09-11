@@ -2,7 +2,7 @@
 
 .extra-navigation {
   &__list {
-    font-size: .9rem;
+    font-size: 14px;
     background-color: $grey;
     margin: 0 auto;
     list-style: none;
@@ -11,14 +11,27 @@
     justify-content: flex-end;
   }
 
-  .extra-navigation__mail {
+  .extra-navigation__link {
     margin-bottom: 0;
+  }
+
+  &__flex {
+    display: flex;
+    margin-right: 1em;
+
+    @include mq($until: mobile) {
+      margin-right: auto;
+    }
   }
 
   &__link a {
     display: inline-block;
-    padding: .6em $indent-amount;
+    padding: .6em 1em;
     line-height: 28px;
+
+    @include mq($until: mobile) {
+      padding: .6em .8em;
+    }
 
     .icon {
       margin-left: .5em;
@@ -40,6 +53,20 @@
 
     &:focus {
       .icon-mail {
+        display: none;
+      }
+    }
+  }
+
+  &__calendar a {
+    &:not(:focus) {
+      .icon-calendar-white {
+        display: none;
+      }
+    }
+
+    &:focus {
+      .icon-calendar {
         display: none;
       }
     }

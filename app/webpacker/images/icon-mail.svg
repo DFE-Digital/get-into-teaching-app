@@ -1,11 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="38px" height="26px" viewBox="0 0 38 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>icon-mail</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icon-mail" transform="translate(0.561000, 0.883000)" fill="#656565" fill-rule="nonzero">
-            <g id="icon.mail" transform="translate(0.000000, 0.000000)">
-                <path d="M0,0 L0,24.234 L36.878,24.234 L36.878,0 L0,0 Z M33.717,21.073 L3.161,21.073 L3.161,7.373 L18.439,20.017 L33.717,7.373 L33.717,21.073 Z M18.439,15.805 L3.161,3.161 L33.822,3.161 L18.439,15.805 Z" id="Path_1312"></path>
-            </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-icon-mail);
+      }
+
+      .cls-2 {
+        fill: #1d1d1b;
+      }
+    </style>
+    <clipPath id="clip-icon-mail">
+      <rect width="38" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="icon-mail" class="cls-1">
+    <g id="Page-1" transform="translate(0 6)">
+      <g id="icon-mail-2" data-name="icon-mail" transform="translate(0.561 0.883)">
+        <g id="icon.mail">
+          <path id="Path_1312" class="cls-2" d="M0,0V24.234H36.878V0ZM33.717,21.073H3.161V7.373L18.439,20.017,33.717,7.373ZM18.439,15.805,3.161,3.161H33.822Z"/>
         </g>
+      </g>
     </g>
+  </g>
 </svg>
