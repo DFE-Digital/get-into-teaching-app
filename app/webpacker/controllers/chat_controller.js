@@ -82,7 +82,7 @@ export default class extends Controller {
         clearInterval(interval);
         callback();
       }
-    }, 1000);
+    }, 100);
   }
 
   showWebWidget() {
