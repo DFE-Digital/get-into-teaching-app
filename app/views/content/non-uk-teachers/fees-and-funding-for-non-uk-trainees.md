@@ -77,7 +77,7 @@ Some support is available if:
 
 As a non-UK candidate, you can expect to pay between £9,250 and about £32,000 to train to teach in England – fees vary between training providers. You’ll also have to cover your living costs.
 
-Depending on your [immigration status](#check-your-immigration-status-to-see-if-you-are-eligible), you may get a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250). If you are eligible, this fee will be the same for all courses offered by accredited training providers. Please note – most non-UK candidates will not be eligible for this type of financial support. 
+Depending on your [immigration status](#check-if-you-can-get-financial-support), you may get a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250). If you are eligible, this fee will be the same for all courses offered by accredited training providers. Please note – most non-UK candidates will not be eligible for this type of financial support. 
 
 You can apply for a [salaried teacher training course](/funding-and-support/salaried-teacher-training). On this type of course, you will not pay a fee, and you can earn money while you train in a school. However, these courses are limited in number and very competitive. 
 
@@ -181,7 +181,7 @@ Money is paid directly into your bank account to help with your living costs. Th
 
 #### Home fee rate 
 
-If you meet the requirements for a tuition fee loan, or tuition fee loan and maintenance loan, you will be charged fees at the rate set for UK candidates (set at a maximum of £9,250 for a full-time course). 
+If you meet the requirements for a tuition fee loan, or tuition fee loan and maintenance loan, you will be charged the same fees as UK candidates (set at a maximum of £9,250 for a full-time course). 
 
 #### Bursaries or scholarships 
 
@@ -191,8 +191,7 @@ If you are awarded a bursary or scholarship, the money is paid directly into you
 
 Learn more about [bursaries and scholarships in other subjects](#/funding-and-support/scholarships-and-bursaries), and how to apply. 
 
-### Check your immigration status to see if you are eligible 
-
+### Eligibility for financial support depends on your immigration status 
 
 #### Irish citizens
 
