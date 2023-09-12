@@ -163,7 +163,7 @@ You can check if you’re eligible for a scholarship and apply by visiting:
 
 ## Check if you can get financial support 
 
-Without settled status, most non-UK candidates will not be eligible for financial support, unless they train to teach languages or physics
+Without settled status, most non-UK candidates will not be eligible for financial support, unless they train to teach languages or physics.
 
 ### Types of financial support 
 
