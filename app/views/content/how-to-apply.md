@@ -1,10 +1,10 @@
 ---
-title: "How to apply"
+title: "How to apply for teacher training"
 heading: "How to apply"
 description: |-
-  Find out how to apply for teacher training, what to include in your application form and how the process works.
+  Find out how to apply for teacher training, what to include in your application and how the process works.
 title_paragraph: |-
-    Find out how to apply for teacher training, what to include in your application and how the process works.
+    If you want to apply for teacher training, we can help you understand what to put in your application and how the process works.
 title_bg_color: white
 hero_bg_color: yellow
 hero_blend_content: true
@@ -15,5 +15,5 @@ layout: "layouts/category"
 content:
     - content/how-to-apply/questions
     - content/how-to-apply/why-teach
-image: "static/content/hero-images/0018.jpg"
+image: "static/content/blog/notepad.jpg"
 ---
