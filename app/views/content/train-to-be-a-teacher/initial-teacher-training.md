@@ -8,7 +8,7 @@ related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     What to expect on your teacher training : "/blog/what-to-expect-on-your-teacher-training"
     Training and support for early career teachers : "/support-for-early-career-teachers"
-    Your teacher training application : "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
+    Your teacher training application : "/how-to-apply"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-itt
     

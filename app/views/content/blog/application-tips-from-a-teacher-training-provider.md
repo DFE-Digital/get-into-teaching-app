@@ -42,11 +42,11 @@ The personal statement is your shop window. You will be asked to focus on why yo
 
 Remember to tailor your statement to either the phase or the subject you are wanting to teach. Trying to adapt it to cover both primary and secondary, or two different subjects, is not advised.
 
-Your personal statement is also an opportunity to acknowledge any gaps in your subject knowledge that you think you might need to plug. Not every provider will automatically consider a [Subject Knowledge Enhancement (SKE)](/train-to-be-a-teacher/subject-knowledge-enhancement) course when reading an application, particularly if it’s for an application for something that is outside of your degree discipline. Take this opportunity to suggest that you would be happy to undertake a SKE course to enhance your existing knowledge ahead of starting your teacher training course. This shows a commitment to your own professional development.
+Your personal statement is also an opportunity to acknowledge any gaps in your subject knowledge that you think you might need to plug. Not every provider will automatically consider a [Subject Knowledge Enhancement (SKE)](/how-to-apply/subject-knowledge-enhancement) course when reading an application, particularly if it’s for an application for something that is outside of your degree discipline. Take this opportunity to suggest that you would be happy to undertake a SKE course to enhance your existing knowledge ahead of starting your teacher training course. This shows a commitment to your own professional development.
 
 You may wish to demonstrate your awareness of the hard work and commitment required to undertake teaching as a career but also demonstrate how excited you are to start your journey.
 
-I can’t emphasise enough how important it is to avoid spelling mistakes. Make sure to run it through a spell check before copying it into your application, as demonstrating good communication skills is vital. Read more about [writing your teacher training personal statement](/train-to-be-a-teacher/teacher-training-personal-statement).
+I can’t emphasise enough how important it is to avoid spelling mistakes. Make sure to run it through a spell check before copying it into your application, as demonstrating good communication skills is vital. Read more about [writing your teacher training personal statement](/how-to-apply/teacher-training-personal-statement).
 
 ## References
 
@@ -56,7 +56,7 @@ You'll need different kinds of references depending on your circumstances.
 
 If you're still studying or you graduated in the last 5 years, you'll need an academic reference. If you already work in a school, you'll need a reference from your headteacher.
 
-They will not be contacted unless you are offered and accept a place on a teacher training course. Read more about [choosing your references](/train-to-be-a-teacher/teacher-training-references).
+They will not be contacted unless you are offered and accept a place on a teacher training course. Read more about [choosing your references](/how-to-apply/teacher-training-references).
 
 ## Responses
 

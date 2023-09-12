@@ -55,7 +55,7 @@ You can do a subject knowledge enhancement course before or sometimes during you
 * you do not have a degree in the subject you’re training to teach
 * you completed your degree more than 5 years ago
 
-[Find out more about subject knowledge enhancement courses](/train-to-be-a-teacher/subject-knowledge-enhancement).
+[Find out more about subject knowledge enhancement courses](/how-to-apply/subject-knowledge-enhancement).
 
 ## If you have qualifications from overseas
 

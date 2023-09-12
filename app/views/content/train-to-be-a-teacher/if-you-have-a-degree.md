@@ -8,7 +8,7 @@ related_content:
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
     What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
-    Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
+    Improve your subject knowledge : "/how-to-apply/subject-knowledge-enhancement"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:

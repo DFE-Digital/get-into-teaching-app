@@ -8,7 +8,7 @@ backlink: "../../"
 related_content:
     What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
-    How to apply for teacher training : "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
+    How to apply for teacher training : "/how-to-apply/how-to-apply-for-teacher-training"
     Find teacher training courses : "https://www.gov.uk/find-postgraduate-teacher-training-courses"
     What will your teacher training be like?: "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:

@@ -85,12 +85,12 @@ redirects:
   "/node/2844": "/funding-and-support/scholarships-and-bursaries"
 
   # Subject knowledge enhancement
-  "/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses(*article)": "/train-to-be-a-teacher/subject-knowledge-enhancement"
-  "/subject-knowledge-enhancement-ske-courses": "/train-to-be-a-teacher/subject-knowledge-enhancement"
-  "/improve-your-subject-knowledge": "/train-to-be-a-teacher/subject-knowledge-enhancement"
-  "/node/2339": "/train-to-be-a-teacher/subject-knowledge-enhancement"
-  "/node/2469": "/train-to-be-a-teacher/subject-knowledge-enhancement"
-  "/node/272": "/train-to-be-a-teacher/subject-knowledge-enhancement"
+  "/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses(*article)": "/how-to-apply/subject-knowledge-enhancement"
+  "/subject-knowledge-enhancement-ske-courses": "/how-to-apply/subject-knowledge-enhancement"
+  "/improve-your-subject-knowledge": "/how-to-apply/subject-knowledge-enhancement"
+  "/node/2339": "/how-to-apply/subject-knowledge-enhancement"
+  "/node/2469": "/how-to-apply/subject-knowledge-enhancement"
+  "/node/272": "/how-to-apply/subject-knowledge-enhancement"
 
   # Legacy site path redirects
   "/get-help-and-support/teacher-training-advisers": "/steps-to-become-a-teacher"
@@ -306,6 +306,12 @@ redirects:
   "/get-support-training-to-teach-if-you-are-disabled": "/funding-and-support/if-youre-disabled"
   "/assessment-only-providers": "/train-to-be-a-teacher/assessment-only-route-to-qts"
   "/train-to-be-a-teacher/if-you-have-experience": "/train-to-be-a-teacher/assessment-only-route-to-qts"
+  "/train-to-be-a-teacher/how-to-apply-for-teacher-training": "/how-to-apply"
+  "/train-to-be-a-teacher/teacher-training-personal-statement": "/how-to-apply/teacher-training-personal-statement"
+  "/train-to-be-a-teacher/teacher-training-references": "/how-to-apply/teacher-training-references"
+  "/train-to-be-a-teacher/teacher-training-interview": "/how-to-apply/teacher-training-interview"
+  "/train-to-be-a-teacher/if-your-application-is-unsuccessful": "/how-to-apply/if-your-application-is-unsuccessful"
+  "/train-to-be-a-teacher/subject-knowledge-enhancement": "/how-to-apply/subject-knowledge-enhancement"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"
@@ -322,7 +328,7 @@ redirects:
   "/blog/5-reasons-to-attend-a-train-to-teach-event": "/blog/5-reasons-to-attend-a-get-into-teaching-event"
   "/blog/teachers-pension-scheme": "/what-pension-does-a-teacher-get"
   "/blog/how-to-fund-your-teacher-training": "/funding-and-support"
-  "/blog/11-top-tips-for-interview-success": "/train-to-be-a-teacher/teacher-training-interview"
+  "/blog/11-top-tips-for-interview-success": "/how-to-apply/teacher-training-interview"
 
   # Covid page
   "/covid-19": "/"

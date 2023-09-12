@@ -4,7 +4,7 @@ subcategory: Your teacher training application
 description: |-
   Prepare for a teacher training interview. Learn more about what the interview involves, what you might be asked, and how to get help to prepare.
 related_content:
-    Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
+    Improve your subject knowledge : "/how-to-apply/subject-knowledge-enhancement"
     What teacher training is like : "/train-to-be-a-teacher/initial-teacher-training"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider" 
 navigation: 30.20
