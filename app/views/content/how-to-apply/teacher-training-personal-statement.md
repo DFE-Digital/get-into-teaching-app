@@ -9,8 +9,7 @@ related_content:
     Application tips from a teacher training provider : "/blog/application-tips-from-a-teacher-training-provider"
 navigation: 30.10
 navigation_title: Teacher training personal statement
-navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one. 
-date: "2023-07-03"
+navigation_description: Find out what to include in your teacher training personal statement.
 keywords:
   - teacher training personal statement
   - adviser

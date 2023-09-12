@@ -33,7 +33,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
 navigation: 30.05
 navigation_title: Your teacher training application
-navigation_description: Discover tips on preparing your teacher training application, from writing your personal statement to choosing your references.
+navigation_description: Find out what goes in your teacher training application and when to apply.
 
 ---
 

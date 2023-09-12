@@ -9,7 +9,7 @@ related_content:
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
 navigation: 30.15
 navigation_title: Teacher training references
-navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one. 
+navigation_description: Find out which teacher training references you need to provide and what they'll need to include.
 date: "2023-07-03"
 keywords:
   - teacher training references

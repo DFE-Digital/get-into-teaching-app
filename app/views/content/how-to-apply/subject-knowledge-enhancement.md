@@ -22,7 +22,7 @@ youtube_video:
     title: Subject knowledge enhancement explained
 navigation: 30.25
 navigation_title: Subject knowledge enhancement
-navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one. 
+navigation_description: Find out about subject knowledge enhancement (SKE) courses to help you brush up your knowledge on the subject you want to teach.
 keywords:
   - Subject knowledge
   - Subject knowledge enhancement

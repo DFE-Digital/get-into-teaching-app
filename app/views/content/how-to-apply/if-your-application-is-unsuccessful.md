@@ -10,7 +10,7 @@ related_content:
     Your teacher training references : "/how-to-apply/teacher-training-references"
 navigation: 30.30
 navigation_title: If your application is unsuccessful
-navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one. 
+navigation_description: Find out what to do if your teacher training application is unsuccessful.
 date: "2023-03-30"
 keywords:
   - adviser

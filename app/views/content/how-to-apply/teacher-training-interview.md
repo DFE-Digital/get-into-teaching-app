@@ -8,7 +8,7 @@ related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider" 
 navigation: 30.20
 navigation_title: Teacher training interview
-navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one. 
+navigation_description: Find out how to prepare for a teacher training interview, with tips on what's involved, common questions, and to how to get help.
 date: "2023-06-09"
 keywords:
   - adviser
@@ -25,9 +25,6 @@ keywords:
   - interviews
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-interviews
-navigation: 20.30
-navigation_title: Preparing for interviews
-navigation_description: Find out how to prepare for a teacher training interview, with tips on what's involved, common questions, and to how to get help.
 ---
 
 Congratulations on being invited for an interview! This is an important stage in successfully getting a place on a teacher training course.
