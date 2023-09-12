@@ -1,6 +1,5 @@
 ---
 title: Your teacher training application
-subcategory: Your teacher training application
 description: |-
   Find out what to include in your teacher training application, from writing your personal statement to choosing your references.
 related_content:

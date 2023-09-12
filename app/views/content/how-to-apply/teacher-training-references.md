@@ -1,7 +1,6 @@
 ---
 title: Teacher training references
 heading: Your teacher training references
-subcategory: Your teacher training application
 description: |-
   Find out which teacher training references you need to provide when you apply to train to be a teacher and what they'll need to include.
 related_content:

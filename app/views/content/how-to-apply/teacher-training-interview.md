@@ -1,6 +1,5 @@
 ---
 title: Prepare for your teacher training interview
-subcategory: Your teacher training application
 description: |-
   Prepare for a teacher training interview. Learn more about what the interview involves, what you might be asked, and how to get help to prepare.
 related_content:
