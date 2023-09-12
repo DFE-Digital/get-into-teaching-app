@@ -51,7 +51,7 @@
         <section id="events" class="category__cards">
           <%= tag.nav(class: "category__nav-cards") do %>
             <ul class="one-column horizontal">
-              <%= render(Events::CardComponent.with_collection(categorise_events(@git_events))) %>
+              <%= render(Events::CardComponent.with_collection(categorise_events(@git_events, params))) %>
             </ul>
           <% end %>
           <div>
