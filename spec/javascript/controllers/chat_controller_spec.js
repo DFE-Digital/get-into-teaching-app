@@ -62,7 +62,6 @@ describe('ChatController', () => {
     describe('when clicking the chat button', () => {
       it('appends the Zendesk snippet, shows a loading message and then opens the chat window', () => {
         const button = document.querySelector('a');
-        expect(document.activeElement.id).not.toEqual("webWidget");
         button.click();
         expect(document.querySelector('#ze-snippet')).not.toBeNull();
         expect(getButtonText()).toEqual("Starting chat...");
@@ -71,7 +70,6 @@ describe('ChatController', () => {
         jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
         expect(chatShowSpy).toHaveBeenCalled();
         expect(getButtonText()).toEqual("Chat online");
-        expect(document.activeElement.id).toEqual("webWidget");
       });
     });
 

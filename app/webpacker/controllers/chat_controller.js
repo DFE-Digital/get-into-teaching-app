@@ -86,7 +86,7 @@ export default class extends Controller {
   }
 
   showWebWidget() {
-    zE('messenger', 'open');
+    window.zE('messenger', 'open');
   }
 
   get zendeskScriptLoaded() {
