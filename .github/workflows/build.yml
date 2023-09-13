@@ -61,7 +61,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push base image
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           target: base
           context: .
@@ -144,7 +144,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push release image
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           target: release
           context: .
@@ -164,7 +164,7 @@ jobs:
             SHA=${{ steps.sha.outputs.short }}
 
       - name: Push release-build image
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           target: release-build
           context: .
