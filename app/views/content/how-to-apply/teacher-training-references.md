@@ -9,7 +9,7 @@ related_content:
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
 navigation: 30.15
 navigation_title: Teacher training references
-navigation_description: Find out which teacher training references you need to provide and what they'll need to include.
+navigation_description: Find out which teacher training references you need to provide and what they should include.
 date: "2023-07-03"
 keywords:
   - teacher training references
