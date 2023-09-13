@@ -11,6 +11,7 @@ promo_content:
 date: "2021-05-27"
 image: "static/content/hero-images/0002.jpg"
 backlink: "../../"
+talk_to_us: false
 inset_text:
   applications-open:
     text: |-
