@@ -8,7 +8,7 @@ related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider" 
 navigation: 30.20
 navigation_title: Teacher training interview
-navigation_description: Find out how to prepare for a teacher training interview, with tips on what's involved, common questions, and to how to get help.
+navigation_description: Find out how to prepare for your teacher training interview and some common interview questions.
 date: "2023-06-09"
 keywords:
   - adviser
