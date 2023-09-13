@@ -56,11 +56,17 @@ body > header nav {
       > li {
         border-bottom: 1px solid $white;
 
+        &:last-child {
+          border-bottom: none;
+        }
+
         &.active {
-          background-image: url("../images/icon-arrow-up.svg");
+          background-image: url("../images/icon-arrow-right.svg");
           background-position: left;
           background-repeat: no-repeat;
-          padding-left: $indent-amount;
+          background-size: 4%;
+          background-position-x: -3px;
+          padding-left: 1.2rem;
         }
 
         > a,
