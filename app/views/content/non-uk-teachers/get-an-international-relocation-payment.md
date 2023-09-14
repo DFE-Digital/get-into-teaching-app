@@ -91,7 +91,7 @@ You must be employed by and in an English state secondary school on a contract b
 
 * a general or combined science teacher – you must teach the physics element of these subjects
 
-* a language teacher – any language is eligible except English 
+* a language teacher – any language taught in an English state secondary school is eligible, except English 
 
 If you are employed to teach more than one subject, physics, general or combined science or a language or languages must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. Check with your school if you're not sure whether you are eligible. 
 
@@ -104,6 +104,24 @@ Examples of eligible teaching jobs include:
 * 50% physics and 50% maths 
 
 * 50% general or combined science (must include the physics element) and 50% maths 
+
+Examples of languages commonly taught in English state secondary schools include: 
+
+* Ancient languages (for example, Latin) 
+
+* French 
+
+* German 
+
+* Italian 
+
+* Japanese 
+
+* Mandarin 
+
+* Russian 
+
+* Spanish 
 
 State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
 
