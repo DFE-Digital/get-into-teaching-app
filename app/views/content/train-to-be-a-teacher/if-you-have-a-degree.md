@@ -47,6 +47,8 @@ To be a qualified teacher, you can do teacher training to get:
 
 You need QTS to teach in maintained primary, secondary and special schools in England (these are schools which are funded by local authorities).
 
+To become a qualified primary or secondary teacher, you need to apply for, and complete a teacher training course that leads to QTS.
+
 Even in schools where you do not need QTS (for example, academies), most teachers still have it.
 
 Getting QTS without PGCE may mean that:
@@ -90,9 +92,9 @@ You can apply for a student loan regardless of the course you choose, even if yo
 
 Your teacher training course might be provided by a university, school, college or group of schools.
 
-As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+Courses can be school or university led. School led courses typically have more time based in schools. Speak to the course provider for more information.
 
-Some courses have different course structures and have placements in different kinds of schools, such as special schools. Talk to your teacher training provider to find out what they can offer you.
+As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
 
 [Find teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/).
 
@@ -117,7 +119,7 @@ You should talk to teacher training providers about where your school placements
 
 ## Salaried teacher training
 
-Salaried courses are sometimes available for specific candidates, such as if you’re working as an unqualified teacher or teaching assistant. These include School Direct (salaried) courses, postgraduate teaching apprenticeships and teacher training delivered by Teach First.
+Salaried courses are sometimes available for specific candidates, such as if you’re working as an unqualified teacher or teaching assistant. These include salaried School Direct courses, postgraduate teaching apprenticeships and teacher training delivered by Teach First.
 
 These are in high demand and very competitive. Places fill up quickly.
 
