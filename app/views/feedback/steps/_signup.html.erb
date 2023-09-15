@@ -2,7 +2,7 @@
   <label class="govuk-label" style="width: 720px !important">Give feedback on this sign-up form</label>
 </h1>
 
-<% topic = feedback_session['topic'].split.last(2).reject { |a| a == 'for' }.join(' ') %>
+<% topic = feedback_session.key?('topic') ? feedback_session['topic'].split.last(2).reject { |a| a == 'for' }.join(' ') : '' %>
 
 <p>
   Tell us about your experience signing up for <%= topic %>.
