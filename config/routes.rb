@@ -24,6 +24,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get "/returning-to-teaching", to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-teaching/")
+
   if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production? || Rails.env.pagespeed?
     get "/assets/*missing", to: "errors#not_found", via: :all
   end
@@ -55,6 +57,7 @@ Rails.application.routes.draw do
     get "/open_events", to: "events#open_events"
   end
 
+  get "/events/get-the-most-from-events", to: "pages#get_the_most_from_events", as: "get_the_most_from_events"
   get "/funding-and-support/scholarships-and-bursaries", to: "pages#scholarships_and_bursaries", as: "scholarships_and_bursaries"
   get "/funding-and-support/scholarships-and-bursaries-search", to: "pages#scholarships_and_bursaries_search", as: "scholarships_and_bursaries_search"
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy

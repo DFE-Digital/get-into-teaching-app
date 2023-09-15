@@ -114,6 +114,77 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
     end
 
+    scenario "that is signing up at an on-campus event via adviser component" do
+      sub_channel_id = "abcdef"
+      channel = GetIntoTeachingApiClient::PickListItem.new({ id: 123_456, value: "On-campus event" })
+
+      allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
+        receive(:get_candidate_teacher_training_adviser_subscription_channels).and_return([channel])
+
+      visit "/teacher-training-advisers?channel=123456&sub_channel=#{sub_channel_id}"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Get an adviser"
+      # Simulate en error to ensure channel id is not lost
+      click_on "Next step"
+      expect(page).to have_text("You need to enter your first name")
+      fill_in_identity_step
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Are you qualified to teach?"
+      choose "Yes"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      choose "Secondary"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Do you have your previous teacher reference number?"
+      choose "No"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Which main subject did you previously teach?"
+      select "Psychology"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Which subject would you like to teach if you return to teaching?"
+      select "Physics"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Enter your date of birth"
+      fill_in_date_of_birth_step
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Where do you live?"
+      choose "UK"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "What is your postcode?"
+      fill_in_address_step
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "What is your telephone number?"
+      fill_in "UK telephone number (optional)", with: "123456789"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Check your answers before you continue"
+
+      request_attributes = uk_candidate_request_attributes({
+        type_id: RETURNING_TO_TEACHING,
+        subject_taught_id: SUBJECT_PSYCHOLOGY,
+        preferred_teaching_subject_id: SUBJECT_PHYSICS,
+        channel_id: channel.id,
+      })
+      expect_sign_up_with_attributes(request_attributes)
+
+      click_on "Complete sign up"
+
+      expect(page).to have_css "h1", text: "John, you're signed up."
+
+      # We pass this to the BAM tracking pixel in GTM.
+      expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
+    end
+
     scenario "that is signing up at an on-campus event (invalid channel id)" do
       allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
         receive(:get_candidate_teacher_training_adviser_subscription_channels).and_return([])

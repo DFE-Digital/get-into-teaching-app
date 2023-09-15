@@ -7,7 +7,7 @@ ruby File.read(".ruby-version").chomp
 gem "rails", "~> 7.0.2.3"
 
 # Use Puma as the app server
-gem "puma", "~> 5.6", ">= 5.6.2"
+gem "puma", "~> 6.3"
 
 gem "pg"
 

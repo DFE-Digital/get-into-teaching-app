@@ -106,6 +106,27 @@
   height: 30px;
 }
 
+.icon-mail-white {
+  @include icon;
+  background-image: url("../images/icon-mail-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-calendar {
+  @include icon;
+  background-image: url("../images/icon-calendar.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-calendar-white {
+  @include icon;
+  background-image: url("../images/icon-calendar-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
 .icon-chat {
   @include icon;
   background-image: url("../images/icon-chat.svg");
@@ -123,13 +144,6 @@
 .icon-warning {
   @include icon;
   background-image: url("../images/icon-warning.svg");
-  width: 30px;
-  height: 30px;
-}
-
-.icon-mail-white {
-  @include icon;
-  background-image: url("../images/icon-mail-white.svg");
   width: 30px;
   height: 30px;
 }

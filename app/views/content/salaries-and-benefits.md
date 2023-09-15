@@ -1,8 +1,8 @@
 ---
-title: "Teacher salaries and pay scales"
-heading: "Salaries and benefits"
+title: "Teacher pay and benefits"
+heading: "Teacher pay and benefits"
 description: |-
-  All qualified teachers will have a starting salary of at least £30,000 (or higher in London). Find out about teacher pay scales and more benefits of teaching.
+  All qualified teachers will have a starting salary of at least £30,000 (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 date: "2021-06-24"
 image: "static/content/hero-images/0008.jpg"
 backlink: "../../"
@@ -10,7 +10,7 @@ navigation: 40
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
-    Steps to become a teacher : "/steps-to-become-a-teacher"
+    How to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
     Why I became a teacher : "/blog/the-head-of-science-inspiring-students-in-blackpool"
@@ -56,57 +56,52 @@ keywords:
 
 $new-salaries$
 
-For helping to shape the next generation, you’re entitled to a competitive salary, generous holidays, and a substantial pension.
+If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on. 
 
-These salaries apply to maintained primary, secondary and special schools in England (schools funded by local authorities).
+The pay ranges below apply to maintained schools (schools funded by local authorities). 
 
-Other types of schools (for example, academies) can set their own pay scales.
+Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges. 
 
-Figures apply from September 2023.
+Figures apply from 1 September 2023.
 
-## Primary and secondary teaching salaries
+## Primary and secondary teacher salary
 
-All qualified primary and secondary teachers will have a starting salary of at least £30,000. This will be higher for teachers working in London. 
+You’ll start on at least £30,000 (or more in London) as a primary or secondary school teacher in England. 
+
+Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.    
+
+A typical teacher with 5 years’ experience will earn at least £41,333, or more in London.
 
 ### Qualified teacher salary
 
-Your school will have their own pay scales for qualified teachers. Pay increases will always be linked to performance, not length of service, and will be reviewed every year.
-
-The teacher pay scales for qualified teachers are:
-
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| England (excluding London)     | £30,000 | £41,333 |
-| London fringe                            | £31,350 | £42,689 |
-| Outer London                             | £34,514 | £46,001 |
-| Inner London                             | £36,745 | £47,666 |
+| England (excluding London)     | £30,000 | £46,525 |
+| London fringe                            | £31,350 | £47,839 |
+| Outer London                             | £34,514 | £51,179 |
+| Inner London                             | £36,745 | £56,959 |
 
-Most established teachers will earn more than this maximum by progressing onto the upper pay range for teachers, or by becoming a leading practitioner.
+### Additional payments
 
-If you’re not sure whether you'll be teaching in inner, outer or the fringe of London, talk to your school.
+You may also receive additional payments on top of your regular salary for taking on extra responsibilities. 
 
-### Upper pay range for teachers
+This could be a one-off payment for a specific project, for example, creating a timetable. 
 
-If you can demonstrate excellence against all of the teacher standards, you can be put onto the upper pay range for teachers.
+Or it might be an extra responsibility attached to your job role, for example, being the head of department. 
 
-This is for teachers who make a sustained and substantial contribution to their school.
+Depending on your responsibilities, you could earn up to an extra £15,690. Your school will determine how much you receive. 
 
-The upper pay ranges for teachers are:
+## Career progression
 
-| Area                                     | Minimum | Maximum |
-| -------                                  | -----   | -----   |
-| England (excluding London)     | £43,266 | £46,525 |
-| London fringe                            | £44,579 | £47,839 |
-| Outer London                             | £47,592 | £51,179 |
-| Inner London                             | £52,526 | £56,959 |
+### Leading practitioner salary
 
-### Leading practitioner salaries
+Some schools also have a leading practitioner pay range for teachers with exemplary teaching skills who lead the improvement of teaching in their school.
 
-If you’re an established and exceptional teacher, and regularly show the highest standards of classroom teaching, you can be put onto a higher pay scale.
+What this will involve will depend on your school, but could include:
 
-Although they may not lead departments, leading practitioners coach and mentor other teachers and induct trainees and early career teachers (ECTs).
-
-The teacher pay scales for leading practitioners are:
+* coaching and mentoring other teachers, including trainees and early career teachers
+* undertaking a national professional qualification (NPQ) 
+* supporting your school with plans to reduce workload
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
@@ -115,13 +110,13 @@ The teacher pay scales for leading practitioners are:
 | Outer London                             | £51,179 | £75,850 |
 | Inner London                             | £56,377 | £81,051 |
 
-### Headteacher salaries
+### Headteacher salary
+
+You could also go into a leadership position, such as a headteacher.
 
 A headteacher is the most senior person in a school. They are ultimately responsible for all teachers and pupils. 
 
 Their role is wide ranging, but includes leading and motivating teachers, and ensuring all pupils get a good education.
-
-The salary ranges for headteachers are:
 
 | Area                                     | Minimum | Maximum  |
 | -------                                  | -----   | -----    |
@@ -130,29 +125,17 @@ The salary ranges for headteachers are:
 | Outer London                             | £57,124 | £134,765 |
 | Inner London                             | £62,304 | £139,891 |
 
-### Other payments
+## If you do not have qualified teacher status (QTS)
 
-You might also get extra payments for taking on extra responsibilities.
+You need qualified teacher status (QTS) to work in maintained primary, secondary and special schools in England. 
 
-These payments are called ‘teaching and learning responsibility’ (TLR) payments. The extra responsibilities you might take on are:
+If you do not have QTS, you can work in some schools as an unqualified teacher. 
 
-* progressing the education of people beyond your assigned pupils
-* leading, developing and enhancing the teaching practice of others
+If you're already working as an unqualified teacher and have the right experience, you could be eligible for the [assessment only route to qualified teacher status (QTS)](/train-to-be-a-teacher/assessment-only-route-to-qts).
 
-TLR payments come in 3 main pay ranges (TLR 1, 2 and 3) depending on your responsibilities.
+Or find out how you can earn an unqualified teacher salary while training to teach on a [salaried teacher training course](/funding-and-support/salaried-teacher-training).
 
-| Level         | Minimum | Maximum|
-| -------       | -----   | -----  |
-| TLR 1         | £9,272  | £15,690|
-| TLR 2         | £3,214  | £7,847 |
-| TLR 3         | £639    | £3,169 |
-
-### Unqualified teacher salaries
-
-Many schools in England require teachers to have 'qualified teacher status' (QTS). If you do not have this, you can work
-in some schools as an unqualified teacher.
-
-The unqualified teacher salary ranges are:
+### Unqualified teacher salary
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
@@ -160,10 +143,6 @@ The unqualified teacher salary ranges are:
 | London fringe                            | £21,933 | £33,464 |
 | Outer London                             | £24,415 | £35,954 |
 | Inner London                             | £25,831 | £37,362 |
-
-If you're already working as an unqualified teacher and have the right experience, you could be eligible for the [assessment only route to qualified teacher status (QTS)](/train-to-be-a-teacher/assessment-only-route-to-qts).
-
-Or find out how you can earn an unqualified teacher salary while training to teach on a [salaried teacher training course](/funding-and-support/salaried-teacher-training).
 
 ## Holidays
 
@@ -182,15 +161,3 @@ It is a 'defined benefit' pension and is:
 * flexible and allows you to take some of it as a tax-free lump sum
 
 You also get other insurance benefits too. Find out more about the [teachers' pension scheme](/what-pension-does-a-teacher-get).
-
-## Support for early career teachers
-
-All teachers are given extra support during their first 2 years in teaching called [ECF-based training](/support-for-early-career-teachers). This helps early career teachers (ECTs) develop their knowledge, teaching skills and working habits.
-
-This support includes:
-
-* paid time away from classroom teaching to focus on your development
-* a high quality training programme based on the [early career framework](https://www.gov.uk/government/publications/early-career-framework)
-* a mentor who will give you guidance and support
-
-The term early career teacher (ECT) replaced newly qualified teacher (NQT).

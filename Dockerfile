@@ -1,5 +1,5 @@
 # To use or update to a ruby version, change BASE_RUBY_IMAGE
-ARG BASE_RUBY_IMAGE=ruby:3.1.4-alpine3.16
+ARG BASE_RUBY_IMAGE=ruby:3.1.4-alpine3.18
 
 FROM ${BASE_RUBY_IMAGE} as base
 
@@ -15,6 +15,11 @@ RUN mkdir /app
 WORKDIR /app
 
 RUN apk update
+
+RUN apk add --no-cache \
+  "procps-ng=4.0.4-r0" \
+  "libproc2=4.0.4-r0" \
+  "nodejs=18.17.1-r0"
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn git \
         chromium chromium-chromedriver postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
@@ -82,12 +87,14 @@ WORKDIR /app
 # Install production image dependencies
 RUN apk update
 
-RUN apk add --no-cache \
-"openssl>=1.1.1u-r0" \
-"ncurses-libs>=6.3_p20220521-r1"
-
 RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev && \
     rm -rf /var/lib/apt/lists/*
+
+RUN apk add --no-cache \
+  "procps-ng=4.0.4-r0" \
+  "libproc2=4.0.4-r0" \
+  "nodejs=18.17.1-r0"
+
 
 COPY --from=release-build /app /app
 COPY --from=release-build /usr/local/bundle/ /usr/local/bundle/

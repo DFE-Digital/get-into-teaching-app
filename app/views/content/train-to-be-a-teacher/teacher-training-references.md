@@ -34,14 +34,8 @@ external_content:
     - content/train-to-be-a-teacher/promos/apply-for-your-course
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
-inset_text:
-  still-time-to-apply:
-    title: Start your training this September
-    text: There's still time to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn where to find courses and how to get support with your application</a>.
-    color: yellow
----
 
-$still-time-to-apply$
+---
 
 Teacher training providers need to check that you’re a suitable candidate for teacher training. One way that they do this is by asking you to provide references when you apply. 
 

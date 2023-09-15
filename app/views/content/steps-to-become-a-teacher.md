@@ -75,9 +75,6 @@
     - ITT
     - Initial Teacher Training
     - International
-    - Return
-    - Returning
-    - Returner
     - Qualifications
     - Eligibility
     - Eligible
@@ -109,12 +106,7 @@
     international-content:
       text: There are more steps to consider if you're <a href="/non-uk-teachers">a non-UK citizen</a>.
       color: grey
-    still-time-to-apply:
-      title: Start your training this September
-      text: There's still time to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn where to find courses and how you can get support with your application</a>.
-      color: yellow
 ---
-$still-time-to-apply$
 
 <strong>Discover if a career teaching in a primary or secondary school in England is right for you.</strong>
 

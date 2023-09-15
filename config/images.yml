@@ -213,11 +213,6 @@
   variants:
     - "static/content/blog/thumbnails/cindy-ventura.jpg"
 
-"static/content/blog/farooq-ahmad.jpg":
-  alt: "Former ICT teacher Farooq Ahmad on the National Tutoring Programme."
-  variants:
-    - "static/content/blog/thumbnails/farooq-ahmad.jpg"
-
 "static/content/blog/giorgio-rubbo.jpg":
   alt: "Biology teacher Giorgio Rubbo wearing a suit and tie."
   variants:
@@ -237,11 +232,6 @@
   alt: "Teacher training course student and biology graduate Jacob."
   variants:
     - "static/content/blog/thumbnails/jacob.jpg"
-
-"static/content/blog/maria.jpg":
-  alt: "Maria Bateson, a science teacher who returned to teaching after ten years."
-  variants:
-    - "static/content/blog/thumbnails/maria.jpg"
 
 "static/content/blog/mel-oconnor.jpg":
   alt: "Trainee teacher Mel O'Connor taking a PGDE teacher training course in maths."
@@ -298,11 +288,6 @@
   variants:
     - "static/content/blog/thumbnails/staff-room.jpg"
 
-"static/content/blog/stephen.jpg":
-  alt: "Returning maths teacher and Methodist Minister Stephen, in the school library."
-  variants:
-    - "static/content/blog/thumbnails/stephen.jpg"
-
 "static/content/blog/get-into-teaching.jpg":
   alt: "A busy Get Into Teaching event with attendees having conversations with Teacher Training Advisers."
   variants:
@@ -328,16 +313,16 @@
   variants:
     - "static/content/blog/thumbnails/jessica-walmsley.jpg"
 
-"static/content/blog/brooke-harvey.jpg":
-  alt: "Brooke Harvey, a Canadian national who moved to England to teach, standing in front of a bookcase."
-  variants:
-    - "static/content/blog/thumbnails/brooke-harvey.jpg"
-
 "static/content/blog/thumbnails/stories-will.jpg":
   alt: English teacher Will Fordham
 
 "static/content/blog/thumbnails/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
+
+"static/content/blog/brooke-harvey.jpg":
+  alt: "Brooke Harvey, a Canadian national who moved to England to teach, standing in front of a bookcase."
+  variants:
+    - "static/content/blog/thumbnails/brooke-harvey.jpg"
 
 "static/content/blog/thumbnails/stories-peter.jpg":
   alt: Ex-financeer, Peter
@@ -360,9 +345,6 @@
 "static/content/blog/thumbnails/stories-generic.jpg":
   alt: Students enjoying a lesson in a classroom
 
-"static/content/blog/thumbnails/stories-katie.jpg":
-  alt: Head of faculty, Katie Lockett
-
 "static/content/blog/thumbnails/stories-jon.jpg":
   alt: Head of department, Jon Simmons
 
@@ -377,9 +359,9 @@
 
 "static/content/blog/thumbnails/stories-roger.jpg":
   alt: Roger Brown, physics teacher
-
-"static/content/blog/thumbnails/stories-jill.jpg":
-  alt: Returning science teacher, Jill
+  
+"static/content/blog/thumbnails/stories-katie.jpg":
+  alt: Head of faculty, Katie Lockett
 
 "static/content/blog/thumbnails/chris-wallis.jpg":
   alt: Product engineer turned science teacher, Chris Wallis
@@ -410,8 +392,8 @@
   alt: "Teacher Johnoi Josephs"
 "static/content/food-for-thought/Keri_Gell.jpg":
   alt: "Teacher Keri Gell"
-"static/content/food-for-thought/Ella_Tyrrell.jpg":
-  alt: "Teacher Ella Tyrrell"
+"static/content/food-for-thought/Amrita_Panesar.jpg":
+  alt: "Teacher Amrita Panesar"
 
 # is teaching right for me
 "static/content/is-teaching-right-for-me/fellowship.jpg":
@@ -448,5 +430,17 @@
 # campus mailing list landing page
 "static/content/campus-mailing-list/campus-mailing-list.jpeg":
   alt: "A smiling young man with a beard in a black leather jacket and black beanie hat stands in front of a screen with holes in."
+  
+# get more from events page
+"static/content/events/collage1.jpeg":
+  alt: "A lady holding papers standing in front of someone smiling with other people and an event banner in the background."
+"static/content/events/collage2.jpeg":
+  alt: "A man holding an iPad wearing a blue Get Into Teaching t-shirt talking to a lady with an event banner in the background."
+"static/content/events/teaching-event.jpeg":
+  alt: "A man smiling wearing a blue Get Into Teaching sweatshirt talking to a lady with banner behind them."
+
+# campus advisers landing page
+"static/content/campus-advisers/adviser.jpeg":
+  alt: "A smiling female adviser in a pink t-shirt standing in front of a Get Into Teaching stand."
 
 
