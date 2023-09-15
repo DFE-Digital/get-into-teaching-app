@@ -119,7 +119,7 @@ You should talk to teacher training providers about where your school placements
 
 ## Salaried teacher training
 
-Salaried courses are sometimes available for specific candidates, such as if you’re working as an unqualified teacher or teaching assistant. These include salaried School Direct courses, postgraduate teaching apprenticeships and teacher training delivered by Teach First.
+Salaried courses are sometimes available for specific candidates, such as if you’re working as an unqualified teacher or teaching assistant. These include School Direct salaried courses, postgraduate teaching apprenticeships and teacher training delivered by Teach First.
 
 These are in high demand and very competitive. Places fill up quickly.
 

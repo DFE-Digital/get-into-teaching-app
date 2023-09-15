@@ -1,7 +1,7 @@
 ---
 title: "Salaried teacher training"
 description: |-
-    Explore salaried teacher training, including School Direct (salaried) courses, postgraduate teaching apprenticeships and training delivered by Teach First.
+    Explore salaried teacher training, including School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 related_content:
     Nathan's experience of salaried teacher training: "/blog/salaried-teacher-training-classroom-learning"
     If you've worked as an unqualified teacher: "/train-to-be-a-teacher/assessment-only-route-to-qts"
@@ -11,7 +11,7 @@ external_content:
 promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 navigation: 20.20
-navigation_description: Find out about School Direct (salaried) courses, postgraduate teaching apprenticeships and training delivered by Teach First.
+navigation_description: Find out about School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 keywords:
     - Teach First
     - School Direct
@@ -28,7 +28,7 @@ There are some teacher training courses that come with a salary.
 
 This means you will not have to pay tuition fees and will receive a salary while you train to get [qualified teacher status (QTS)](/what-is-qts). This is what you need to teach in many primary, secondary and special schools in England. 
 
-The main salaried courses include School Direct (salaried), postgraduate teaching apprenticeships (PGTA) and teacher training delivered by Teach First.
+The main salaried courses include School Direct salaried, postgraduate teaching apprenticeships (PGTA) and teacher training delivered by Teach First.
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
