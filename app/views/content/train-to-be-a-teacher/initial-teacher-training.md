@@ -59,7 +59,7 @@ You’ll get classroom experience whether you do school-led or university-led tr
 
 Where you complete your classroom placements will depend on whether you've chosen a primary or secondary teacher training course. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
 
-If you apply to train with a specific school, your placements may not all take place within that school. They may take place at a school within their partnership or trust. Trainees need experience of teaching in 2 schools to be awarded qualified teacher status. Speak to your course provider for more details.
+If you apply to train with a specific school, your placements may not all take place within that school. They may take place at a school within their partnership or trust. You will need experience of teaching in 2 schools to be awarded qualified teacher status. Speak to your course provider for more details.
 
 ## Your teacher training timetable
 
