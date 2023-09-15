@@ -16,7 +16,7 @@ tags:
   - life as a teacher
 ---
 
-I am a trainee at Carshalton Boys College and have a degree in biomedical sciences. I have spent time as a fitness instructor, private tutor and school science technician. So with some gentle encouragement from colleagues, I finally decided to become a qualified teacher. I did this through the school-led (salaried) course.
+I am a trainee at Carshalton Boys College and have a degree in biomedical sciences. I have spent time as a fitness instructor, private tutor and school science technician. So with some gentle encouragement from colleagues, I finally decided to become a qualified teacher. I did this through the School Direct salaried course.
 
 I'd been in quite a few lessons in more of a teaching assistant capacity, just going and helping out, and I really enjoyed that. Some of the teachers said to me, 'Why don't you teach?' and some of the kids said, 'Why doesn't Miss become a teacher?', and I thought, 'Why not? I can do this'.
 
