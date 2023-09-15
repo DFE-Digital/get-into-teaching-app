@@ -92,7 +92,7 @@ You can apply for a student loan regardless of the course you choose, even if yo
 
 Your teacher training course might be provided by a university, school, college or group of schools.
 
-Courses can be school or university led. School led courses typically have more time based in schools. Speak to the course provider for more information.
+Courses can be school-led or university-led. School-led courses typically have more time based in schools. Speak to the course provider for more information.
 
 As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
 
