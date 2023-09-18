@@ -33,7 +33,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
 navigation: 30.05
 navigation_title: Teacher training application
-navigation_description: Find out what goes in your teacher training application and when to apply.
+navigation_description: Find out what you need to include in your teacher training application and when to apply.
 
 ---
 
