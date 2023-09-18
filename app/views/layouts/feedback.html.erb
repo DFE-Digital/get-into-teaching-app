@@ -3,22 +3,23 @@
   <% content_for :head do %>
     <%= csrf_meta_tags %>
   <% end %>
+  <style>
+    section {
+      margin: auto 1.5rem !important;
+    }
+  </style>
 
   <%= render "sections/head" %>
   <%= body_tag do %>
     <%= render HeaderComponent.new %>
 
     <%= main_tag do %>
-      <div class="main-section feedback">
-        <section class="signup-container">
-          <div>&nbsp;</div>
-          <div class="signup-form">
-            <%= yield %>
-          </div>
-        </section>
-      </div>
+      <section class="feature registration container">
+        <%= yield %>
+      </section>
+      <div>&nbsp;</div>
     <% end %>
 
-    <%= render FooterComponent.new(talk_to_us: true, feedback: false) %>
+    <%= render FooterComponent.new(talk_to_us: false, feedback: false) %>
   <% end %>
 </html>
