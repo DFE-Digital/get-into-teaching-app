@@ -13,7 +13,7 @@ navigation_title: How to apply
 navigation_path: "/how-to-apply-for-teacher-training"
 layout: "layouts/category"
 content:
-    - content/how-to-apply/questions
-    - content/how-to-apply/why-teach
+    - content/how-to-apply-for-teacher-training/questions
+    - content/how-to-apply-for-teacher-training/why-teach
 image: "static/content/blog/notepad.jpg"
 ---
