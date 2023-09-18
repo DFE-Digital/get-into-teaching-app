@@ -7,7 +7,7 @@ related_content:
     What teacher training is like : "/train-to-be-a-teacher/initial-teacher-training"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider" 
 navigation: 30.20
-navigation_title: Teacher training interview
+navigation_title: Teacher training interviews
 navigation_description: Find out how to prepare for your teacher training interview.
 date: "2023-06-09"
 keywords:
