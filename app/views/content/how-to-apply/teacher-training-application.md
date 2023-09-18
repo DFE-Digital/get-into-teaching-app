@@ -1,7 +1,7 @@
 ---
 title: Your teacher training application
 description: |-
-  Find out what to include in your teacher training application, from writing your personal statement to choosing your references.
+  Find out what to include in your teacher training application, how the process works and when to apply.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
