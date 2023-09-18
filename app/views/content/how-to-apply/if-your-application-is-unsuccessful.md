@@ -5,9 +5,9 @@ description: |-
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
-    Tips for teacher training interview success : "/how-to-apply/teacher-training-interview"
-    Your teacher training personal statement : "/how-to-apply/teacher-training-personal-statement"
-    Your teacher training references : "/how-to-apply/teacher-training-references"
+    Tips for teacher training interview success : "/how-to-apply-for-teacher-training/teacher-training-interview"
+    Your teacher training personal statement : "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
+    Your teacher training references : "/how-to-apply-for-teacher-training/teacher-training-references"
 navigation: 30.30
 navigation_title: If your application is unsuccessful
 navigation_description: Find out what to do if your teacher training application is unsuccessful.
@@ -60,7 +60,7 @@ If you got your qualifications outside the UK, you should be able to request cop
 
 ### Lack of subject knowledge
 
-You may be able to do a subject knowledge enhancement (SKE) course to top up your subject knowledge. You could also find a course in a different subject, which may also involve a SKE course to prepare you to teach that subject. [Find out if you're eligible for a SKE course](/how-to-apply/subject-knowledge-enhancement).
+You may be able to do a subject knowledge enhancement (SKE) course to top up your subject knowledge. You could also find a course in a different subject, which may also involve a SKE course to prepare you to teach that subject. [Find out if you're eligible for a SKE course](/how-to-apply-for-teacher-training/subject-knowledge-enhancement).
 
 ### Lack of teaching or safeguarding knowledge
 
