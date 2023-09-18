@@ -92,7 +92,7 @@ You can also talk about any unpaid experience you have and how this supports you
 
 Your personal statement explains why you want to be a teacher. It’s a crucial part of your application so it’s worth taking your time on it. 
 
-[Find out more about writing your teacher training personal statement](/how-to-apply/teacher-training-personal-statement). 
+[Find out more about writing your teacher training personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). 
 
 ### Your adjustments 
 
@@ -106,7 +106,7 @@ Your training provider can then make adjustments so you can attend an interview 
 
 You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course. 
 
-[Find out more about how to choose your references for teacher training](/how-to-apply/teacher-training-references).
+[Find out more about how to choose your references for teacher training](/how-to-apply-for-teacher-training/teacher-training-references).
 
 ## Start your application
 
@@ -128,7 +128,7 @@ If your application is successful with a provider, you’ll be invited to an int
 
 Interviews vary from provider to provider – you’ll be given all the information you need when you’re invited to attend. 
 
-[Find tips for your teacher training interview](/how-to-apply/teacher-training-interview). 
+[Find tips for your teacher training interview](/how-to-apply-for-teacher-training/teacher-training-interview). 
 
 ### If you do not get a place 
 
