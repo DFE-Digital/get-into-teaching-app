@@ -8,7 +8,7 @@ module Feedback
     before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
 
-    layout "feedback"
+    layout "registration"
 
     def not_available
       render "not_available"

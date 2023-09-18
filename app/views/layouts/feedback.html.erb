@@ -13,11 +13,10 @@
   <%= body_tag do %>
     <%= render HeaderComponent.new %>
 
-    <%= main_tag do %>
+    <%= main_tag(class: "main-section") do %>
       <section class="feature registration container">
         <%= yield %>
       </section>
-      <div>&nbsp;</div>
     <% end %>
 
     <%= render FooterComponent.new(talk_to_us: false, feedback: false) %>
