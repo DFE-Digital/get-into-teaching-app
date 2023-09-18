@@ -56,13 +56,6 @@ Teacher training providers want to see your passion and that you understand the 
 
 Make sure you check your spelling and grammar in your application. You want to make the best possible impression.
 
-<div class="inset">
-<h3>If you’re applying again</h3>
-
-<p>If your application was unsuccessful and you want to apply again, the 2 sections of your personal statement will be merged. You will be asked to review the merged personal statement.</p>
-
-</div>
-
 ## Should my personal statement be different if I’m training to teach primary or secondary? 
 
 You should use your personal statement to explain why you feel passionate about teaching a specific age range or subject. 
