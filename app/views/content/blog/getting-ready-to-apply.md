@@ -73,7 +73,7 @@ You’ll need a couple of people who can give you a reference when you apply. Th
 
 If a training provider offers you a place and you accept, they'll use your references to find out more about you.
 
- Find out more about [choosing your references](/how-to-apply/teacher-training-references).
+ Find out more about [choosing your references](/how-to-apply-for-teacher-training/teacher-training-references).
 
 ## 7. Get some advice at an event
 
