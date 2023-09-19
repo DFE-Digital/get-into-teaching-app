@@ -32,7 +32,7 @@ It’s not an insurmountable obstacle if you haven’t had any experience of wor
 
 ## School experience
 
-School experience is not compulsory, but it may be a good idea to try to visit a school if only to confirm that you are making the right choice before you submit your application. If you are having difficulty finding a school to visit, you might find that schools offering courses are more welcoming to an enquiry. Due to the pandemic, some schools are not currently accepting non-essential visitors, so use the [Department for Education’s Get School Experience service](https://schoolexperience.education.gov.uk/) to find details of upcoming opportunities in your area.
+School experience is not compulsory, but it may be a good idea to try to visit a school if only to confirm that you are making the right choice before you submit your application. You can use the [Department for Education’s Get School Experience service](https://schoolexperience.education.gov.uk/) to find details of upcoming opportunities in your area.
 
 Attending a [Get Into Teaching event](/events/about-get-into-teaching-events) is also a good idea, as you can talk to training providers and ask them directly if they would host a visit. Remember they are there to recruit trainee teachers so may be more amenable to inviting you into their school.
 
@@ -60,9 +60,9 @@ They will not be contacted unless you are offered and accept a place on a teache
 
 ## Responses
 
-The good news is that as soon as you press the Submit button on your application then it will appear in your chosen providers’ inbox. Please do not expect an instant response, particularly if you are applying for School Direct places, as the lead school who handles the application process on behalf of a partnership may have to contact your chosen school and wait for them to consider your application and set up an interview. This can take some time to organise, particularly when some schools have two-week timetables.
+The good news is that as soon as you press the Submit button on your application then it will appear in your chosen providers’ inbox.
 
-Please be patient and do attend all of your interviews, if you have been offered them, before making any final decisions. You never know – your first choice of school may not be your best choice and one of your other choices may prove to be a better fit for you.
+Please be patient and do attend all of your interviews, if you have been offered them, before making any final decisions. You never know – your first choice may not be your best choice and one of your other choices may prove to be a better fit for you.
 
 ## About the author
 
