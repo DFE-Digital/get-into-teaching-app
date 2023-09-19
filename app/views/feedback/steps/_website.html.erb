@@ -4,4 +4,10 @@
 
 <p>You can give general feedback about the website or tell us about an issue you are having.</p>
 
-<%= f.govuk_select :value, f.object.class::OPTIONS, options: { prompt: "Please select" }, label: { text: "What would you like to do?", tag: "h1" } %>
+<%= f.govuk_collection_select :value,
+      f.object.options,
+      :id,
+      :value,
+      options: { prompt: "Please select" },
+      label: { tag: 'h1', size: "xl", text: "What would you like to do?" }
+%>

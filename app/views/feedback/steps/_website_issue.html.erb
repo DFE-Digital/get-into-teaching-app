@@ -1,12 +1,16 @@
-<%= f.govuk_fieldset legend: { text: "Tell us about your issue. ", tag: "h1" } do %>
-  <%= f.govuk_text_area :unsuccessful_visit_explanation, label: { text: "You can tell us what and where the issue is, as well as ways we could improve. "} %>
+<%= f.govuk_text_area :unsuccessful_visit_explanation, label: { tag: 'h1', text: "Tell us about your issue."} do %>
+<p>
+  You can tell us what and where the issue is, as well as ways we could improve.
+</p>
 <% end %>
 
-<%= f.govuk_radio_buttons_fieldset(:rating, inline: true,
-                                   legend: { size: 'm', text: 'Overall, how satisfied were you with your experience on our website?' }) do %>
-  <%= f.govuk_radio_button :rating, 0, label: { text: 'Very satisfied' } %>
-  <%= f.govuk_radio_button :rating, 1, label: { text: 'Somewhat satisfied' } %>
-  <%= f.govuk_radio_button :rating, 2, label: { text: 'Neither satisfied nor dissatisfied' } %>
-  <%= f.govuk_radio_button :rating, 3, label: { text: 'Somewhat dissatisfied' } %>
-  <%= f.govuk_radio_button :rating, 4, label: { text: 'Very dissatisfied' } %>
+<%= f.govuk_collection_radio_buttons :rating,
+  f.object.options,
+  :id,
+  :value,
+  legend: nil do
+%>
+<p>
+  Overall, how satisfied were you with your experience on our website?
+</p>
 <% end %>

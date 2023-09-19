@@ -2,12 +2,16 @@ module Feedback
   module Steps
     class Website < ::GITWizard::Step
       OPTIONS = [
-        "Give general feedback about the website",
-        "Tell us something is not working or needs improving",
+        OpenStruct.new(id: "Give general feedback about the website", value: "Give general feedback about the website"),
+        OpenStruct.new(id: "Tell us something is not working or needs improving", value: "Tell us something is not working or needs improving"),
       ].freeze
 
       attribute :value
-      validates :value, presence: true, inclusion: { in: OPTIONS }
+      validates :value, presence: true, inclusion: { in: OPTIONS.map(&:id) }
+
+      def options
+        OPTIONS
+      end
 
       def can_proceed?
         true
