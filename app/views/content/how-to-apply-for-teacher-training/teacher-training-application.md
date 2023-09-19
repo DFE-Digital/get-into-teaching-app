@@ -1,8 +1,7 @@
 ---
 title: Your teacher training application
-subcategory: Your teacher training application
 description: |-
-  Find out what to include in your teacher training application, from writing your personal statement to choosing your references.
+  Find out what to include in your teacher training application, how the process works and when to apply.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
@@ -32,9 +31,9 @@ external_content:
     - content/train-to-be-a-teacher/promos/apply-for-your-course
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
-navigation: 20.25
-navigation_title: How to apply
-navigation_description: Discover tips on preparing your teacher training application, from writing your personal statement to choosing your references.
+navigation: 30.05
+navigation_title: Teacher training application
+navigation_description: Find out what you need to include in your teacher training application and when to apply.
 
 ---
 
@@ -93,7 +92,7 @@ You can also talk about any unpaid experience you have and how this supports you
 
 Your personal statement explains why you want to be a teacher. It’s a crucial part of your application so it’s worth taking your time on it. 
 
-[Find out more about writing your teacher training personal statement](/train-to-be-a-teacher/teacher-training-personal-statement). 
+[Find out more about writing your teacher training personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). 
 
 ### Your adjustments 
 
@@ -107,7 +106,7 @@ Your training provider can then make adjustments so you can attend an interview 
 
 You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course. 
 
-[Find out more about how to choose your references for teacher training](/train-to-be-a-teacher/teacher-training-references).
+[Find out more about how to choose your references for teacher training](/how-to-apply-for-teacher-training/teacher-training-references).
 
 ## Start your application
 
@@ -129,7 +128,7 @@ If your application is successful with a provider, you’ll be invited to an int
 
 Interviews vary from provider to provider – you’ll be given all the information you need when you’re invited to attend. 
 
-[Find tips for your teacher training interview](/train-to-be-a-teacher/teacher-training-interview). 
+[Find tips for your teacher training interview](/how-to-apply-for-teacher-training/teacher-training-interview). 
 
 ### If you do not get a place 
 
@@ -139,4 +138,4 @@ You may need to get an additional qualification, work on your interview techniqu
 
 You can apply to more courses if all your applications are unsuccessful. 
 
-[Find out what to do if you do not get a place on a teacher training course](/train-to-be-a-teacher/if-your-application-is-unsuccessful). 
+[Find out what to do if you do not get a place on a teacher training course](/how-to-apply-for-teacher-training/if-your-application-is-unsuccessful). 

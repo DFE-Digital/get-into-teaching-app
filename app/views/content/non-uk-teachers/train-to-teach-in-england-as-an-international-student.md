@@ -213,7 +213,7 @@ You can also search courses by:
 
 ### Writing your personal statement
 
-It's important that you give yourself time to write the best possible [personal statement](/train-to-be-a-teacher/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
+It's important that you give yourself time to write the best possible [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
 
 Your [teacher training adviser](#get-support-and-advice) can help you write your personal statement and will also give advice on: 
 

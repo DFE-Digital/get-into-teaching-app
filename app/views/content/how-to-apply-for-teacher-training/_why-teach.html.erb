@@ -1,0 +1,27 @@
+<section class="why-teach" aria-label="Why teach?">
+  <div class="why-teach__container">
+    <div class="why-teach__content">
+      <%= render Content::HeadingComponent.new(
+        heading: "Inspire the next generation",
+        tag: :h2,
+        caption: "Why teach?",
+        caption_size: :l
+      ) %>
+
+      <p>
+        As a teacher, every lesson shapes a life. Find out more about what life in the classroom is really like.
+      </p>
+
+      <ul>
+        <li><%= link_to("Get school experience", "/train-to-be-a-teacher/get-school-experience") %></li>
+        <li><%= link_to("Read teachers' stories", "/blog") %></li>
+      </ul>
+    </div>
+
+    <div class="why-teach__image">
+      <% "static/content/hero-images/0011.jpg".tap do |path| %>
+        <%= image_pack_tag(path, alt: image_alt(path)) %>
+      <% end %>
+    </div>
+  </div>
+</section>

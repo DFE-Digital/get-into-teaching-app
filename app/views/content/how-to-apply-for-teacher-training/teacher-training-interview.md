@@ -1,12 +1,14 @@
 ---
 title: Prepare for your teacher training interview
-subcategory: Your teacher training application
 description: |-
   Prepare for a teacher training interview. Learn more about what the interview involves, what you might be asked, and how to get help to prepare.
 related_content:
-    Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
+    Improve your subject knowledge : "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
     What teacher training is like : "/train-to-be-a-teacher/initial-teacher-training"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider" 
+navigation: 30.20
+navigation_title: Teacher training interviews
+navigation_description: Find out how to prepare for your teacher training interviews.
 date: "2023-06-09"
 keywords:
   - adviser
@@ -23,9 +25,6 @@ keywords:
   - interviews
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-interviews
-navigation: 20.30
-navigation_title: Preparing for interviews
-navigation_description: Find out how to prepare for a teacher training interview, with tips on what's involved, common questions, and to how to get help.
 ---
 
 Congratulations on being invited for an interview! This is an important stage in successfully getting a place on a teacher training course.

@@ -1,7 +1,7 @@
 ---
 title: "Get school experience"
 heading: "Get school experience"
-subcategory: Your teacher training application
+subcategory: Experience life in the classroom
 description: |-
   Get school experience to explore what life is like in a primary or secondary classroom and find out if teaching is right for you.
 related_content:
