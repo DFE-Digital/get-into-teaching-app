@@ -47,8 +47,6 @@ To be a qualified teacher, you can do teacher training to get:
 
 You need QTS to teach in maintained primary, secondary and special schools in England (these are schools which are funded by local authorities).
 
-To become a qualified primary or secondary teacher, you need to apply for, and complete a teacher training course that leads to QTS.
-
 Even in schools where you do not need QTS (for example, academies), most teachers still have it.
 
 Getting QTS without PGCE may mean that:
@@ -91,8 +89,6 @@ You can apply for a student loan regardless of the course you choose, even if yo
 ### Teacher training courses
 
 Your teacher training course might be provided by a university, school, college or group of schools.
-
-Courses can be school-led or university-led. School-led courses typically have more time based in schools. Speak to the course provider for more information.
 
 As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
 
