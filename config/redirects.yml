@@ -238,6 +238,7 @@ redirects:
   "/regional-make-a-difference-in-(*area)": "/"
   "/lp(*category)": "/"
   "/frequently-asked-questions": "/"
+  "/how-to-apply": "/how-to-apply-for-teacher-training"
   "/premier-plus-adviser(*tip)": "/help-and-support"
   "/explore-my-options/training/scitt": "/train-to-be-a-teacher"
   "/preparing-for-your-interview": "/how-to-apply-for-teacher-training/teacher-training-interview"
