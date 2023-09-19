@@ -57,12 +57,13 @@ Teacher training providers want to see your passion and that you understand the 
 
 Make sure you check your spelling and grammar in your application. You want to make the best possible impression.
 
-<div class="inset">
-<h3>If you’re applying again</h3>
+## Do I use the same personal statement for each application?
 
-<p>If your application was unsuccessful and you want to apply again, the 2 sections of your personal statement will be merged. You will be asked to review the merged personal statement.</p>
+You can use the same personal statement for every course you apply to.
 
-</div>
+However, there may be some instances where you'd like to tailor it to different courses.
+
+For example, if you want to apply to train to teach maths and also to train to teach physics. In this case, you might want to change your personal statement to talk more specifically about the subject you're applying to train to teach.
 
 ## Should my personal statement be different if I’m training to teach primary or secondary? 
 
@@ -71,8 +72,6 @@ You should use your personal statement to explain why you feel passionate about 
 If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can talk about that, too. 
 
 If you’re not sure if you want to teach primary or secondary, you can [find out more about teaching different age groups](/train-to-be-a-teacher/who-do-you-want-to-teach). 
-
-You’ll have to decide who you want to teach before you write your application, as you’ll send the same personal statement to each course. This means it would be difficult to apply for one course teaching history, and another course teaching primary, for example. 
 
 ## Do I need school experience? 
 

@@ -64,9 +64,7 @@ It’s wise to apply as soon as you’re ready so you don’t miss out.
 
 ## What do I need to include in my teacher training application? 
 
-You can apply to up to 4 courses at a time, but you'll send the same application to each course. 
-
-You do not need to tailor your application to a specific teacher training provider – save that detail for your interview! 
+You can apply to up to 4 courses at a time and will need to provide the following. 
 
 ### Your qualifications 
 
@@ -116,11 +114,11 @@ You do not have to complete the sections all at once – you can save and come b
 
 ## When will I find out if my application has been successful? 
 
-Training providers have 40 working days to respond to your application. Holiday periods in England (such as Christmas and Easter) are not included in the 40 working days. 
+Each training provider should review your application within 30 working days and decide whether to offer you a place on their course.
 
-If you apply after July, providers will have 20 working days to respond. 
+If a training provider does not respond within 30 working days, you can apply to another course while you wait for their response. You can also contact the training provider for more information about your application.
 
-If they do not respond to your application within that time, your application for that course will become unsuccessful. 
+Holiday periods in England (such as Christmas and Easter) are not included in the 30 working days.
 
 ### If you’re invited to interview 
 
