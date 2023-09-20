@@ -319,7 +319,7 @@ redirects:
   "/why-teach(*reason)": "/blog"
   "/content/stories(*story)": "/blog"
   "/my-story-into-teaching(*story)": "/blog"
-  "/blog/how-to-apply-for-teacher-training": "/blog/9-tips-to-help-you-apply-for-teacher-training"
+  "/blog/how-to-apply-for-teacher-training": "/how-to-apply-for-teacher-training"
   "/three-things-to-help-you-get-into-teaching": "/help-and-support"
 
   # Old urgent call for qualified teachers page
@@ -330,6 +330,10 @@ redirects:
   "/blog/teachers-pension-scheme": "/what-pension-does-a-teacher-get"
   "/blog/how-to-fund-your-teacher-training": "/funding-and-support"
   "/blog/11-top-tips-for-interview-success": "/how-to-apply-for-teacher-training/teacher-training-interview"
+  "/blog/getting-ready-to-apply": "/how-to-apply-for-teacher-training"
+  "/blog/7-things-to-include-in-your-teacher-training-application": "/how-to-apply-for-teacher-training"
+  "/blog/application-tips-from-a-teacher-training-provider": "/how-to-apply-for-teacher-training"
+  "/blog/9-tips-to-help-you-apply-for-teacher-training": "/how-to-apply-for-teacher-training"
 
   # Covid page
   "/covid-19": "/"
