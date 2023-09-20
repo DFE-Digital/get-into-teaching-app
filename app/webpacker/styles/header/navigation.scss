@@ -50,21 +50,30 @@ body > header nav {
     ol.primary {
       flex-direction: column;
       margin: 0;
-      padding: 0 $indent-amount;
-      background: $grey;
+      padding: 0 1em;
+      background: $green;
 
       > li {
-        border-left: 6px solid $grey;
         border-bottom: 1px solid $white;
 
+        &:last-child {
+          border-bottom: none;
+        }
+
         &.active {
-          border-left: 6px solid $purple;
+          background-image: url("../images/icon-arrow-right.png");
+          background-position: left;
+          background-repeat: no-repeat;
+          padding-left: 1rem;
         }
 
         > a,
         div {
           display: block;
-          padding: 1em;
+          padding: 1em 0;
+          color: $white;
+          font-weight: bold;
+          font-size: 16px;
         }
       }
     }
@@ -103,7 +112,7 @@ body > header nav {
 
         a,
         div {
-          line-height: 1.2;
+          line-height: 1.5;
           display: inline-block;
           padding: 0 .2em;
           border-bottom: 4px solid $white;

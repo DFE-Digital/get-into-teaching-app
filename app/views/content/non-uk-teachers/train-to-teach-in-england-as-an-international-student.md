@@ -142,7 +142,7 @@ For help, call us on +44 800 389 2500. We can check your degree and other qualif
 
 When you make your application for teacher training, some teacher training providers will want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
 
-A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. We can help you with a free statement of comparability, once you’ve submitted your application, if your provider asks for this.
+A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. We can help you with a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this.
 
 ### English language, maths and science proficiency
 
@@ -213,7 +213,7 @@ You can also search courses by:
 
 ### Writing your personal statement
 
-It's important that you give yourself time to write the best possible [personal statement](/train-to-be-a-teacher/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
+It's important that you give yourself time to write the best possible [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
 
 Your [teacher training adviser](#get-support-and-advice) can help you write your personal statement and will also give advice on: 
 

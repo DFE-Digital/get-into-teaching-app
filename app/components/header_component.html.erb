@@ -11,8 +11,8 @@
   <%= render Header::LogoComponent.new %>
   <div class="menu-button" id="mobile-navigation-menu-button">
     <%= tag.button(class: "menu-button__button", data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
-      <span class="menu-button__icon"></span>
       <span class="menu-button__text">Menu</span>
+      <span class="menu-button__icon"></span>
     <% end %>
   </div>
   <%= render Header::NavigationComponent.new %>

@@ -236,7 +236,7 @@ If your qualifications come from a non-UK institution, your teacher training pro
 Call us on +44 (0) 800 389 2500 for:
 
 * guidance on the UK equivalents of your qualifications
-* a free statement of comparability, once you’ve submitted your application, if your provider asks for this
+* a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this
 * advice about what to do if you do not have English, maths and science qualifications of grade 4 GCSE standard
 
 

@@ -20,6 +20,9 @@ youtube_video:
   ske-course-video:
     id: mWuHMtyFrFU
     title: Subject knowledge enhancement explained
+navigation: 30.25
+navigation_title: Subject knowledge enhancement
+navigation_description: Find out how to improve your subject knowledge with a subject knowledge enhancement (SKE) course.
 keywords:
   - Subject knowledge
   - Subject knowledge enhancement

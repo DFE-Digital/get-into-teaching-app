@@ -1,14 +1,15 @@
 ---
 title: Teacher training personal statement
 heading: Your teacher training personal statement
-subcategory: Your teacher training application
 description: |-
   Find out what to include in your teacher training personal statement when you apply for a course leading to qualified teacher status (QTS) or a PGCE.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
     Application tips from a teacher training provider : "/blog/application-tips-from-a-teacher-training-provider"
-date: "2023-07-03"
+navigation: 30.10
+navigation_title: Teacher training personal statement
+navigation_description: Find out what to include in your teacher training personal statement.
 keywords:
   - teacher training personal statement
   - adviser
@@ -44,7 +45,9 @@ You do not have to write it all at once – you can start it and come back to it
 
 ## How long should my teacher training personal statement be? 
 
-Your personal statement should be between 500 and 1000 words. You could include: 
+Your personal statement should be between 500 and 1000 words. 90% of successful candidates write 500 words or more.
+
+You could include: 
 
 * skills you have that are relevant to teaching 
 * any experience of working with young people 
@@ -56,12 +59,13 @@ Teacher training providers want to see your passion and that you understand the 
 
 Make sure you check your spelling and grammar in your application. You want to make the best possible impression.
 
-<div class="inset">
-<h3>If you’re applying again</h3>
+## Do I use the same personal statement for each application?
 
-<p>If your application was unsuccessful and you want to apply again, the 2 sections of your personal statement will be merged. You will be asked to review the merged personal statement.</p>
+You can use the same personal statement for every course you apply to.
 
-</div>
+However, there may be some instances where you'd like to tailor it to different courses.
+
+For example, if you want to apply to train to teach maths and also to train to teach physics. In this case, you might want to change your personal statement to talk more specifically about the subject you're applying to train to teach.
 
 ## Should my personal statement be different if I’m training to teach primary or secondary? 
 
@@ -70,8 +74,6 @@ You should use your personal statement to explain why you feel passionate about 
 If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can talk about that, too. 
 
 If you’re not sure if you want to teach primary or secondary, you can [find out more about teaching different age groups](/train-to-be-a-teacher/who-do-you-want-to-teach). 
-
-You’ll have to decide who you want to teach before you write your application, as you’ll send the same personal statement to each course. This means it would be difficult to apply for one course teaching history, and another course teaching primary, for example. 
 
 ## Do I need school experience? 
 

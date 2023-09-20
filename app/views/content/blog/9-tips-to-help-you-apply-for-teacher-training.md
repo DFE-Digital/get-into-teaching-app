@@ -89,7 +89,7 @@ Your teacher training personal statement explains why you want to be a teacher. 
 
 It’s your opportunity to show your enthusiasm for teaching a particular subject. It’s also the place to say why you feel passionate about teaching either primary or secondary.
 
-[Read our advice on writing your teacher training personal statement](/train-to-be-a-teacher/teacher-training-personal-statement).
+[Read our advice on writing your teacher training personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement).
 
 ## 8.	Arrange your references
 
@@ -97,16 +97,16 @@ You'll need to provide the details of 2 people who can give you a reference when
 
 They'll be asked to confirm how they know you and if they know any reason why you should not work with children.
 
-[Find out more about the requirements for references](/train-to-be-a-teacher/teacher-training-references).
+[Find out more about the requirements for references](/how-to-apply-for-teacher-training/teacher-training-references).
 
 ## 9.	Complete your application
 
-You’re now ready to submit your [teacher training application](/train-to-be-a-teacher/how-to-apply-for-teacher-training).
+You’re now ready to submit your [teacher training application](/how-to-apply-for-teacher-training/teacher-training-application).
 
 Your application will appear in your chosen providers’ inbox as soon as you click submit, but don’t expect an instant response. Wait for them to consider your application and set up an interview. This can take some time to organise.
 
 Be patient and do attend all of your interviews, if you have been offered them, before making any final decisions.
 
-[Get some top tips for interview success](/train-to-be-a-teacher/teacher-training-interview).
+[Get some top tips for interview success](/how-to-apply-for-teacher-training/teacher-training-interview).
 
 If you're interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). Or find out what to expect in your [initial teacher training](/train-to-be-a-teacher/initial-teacher-training).
