@@ -28,7 +28,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
 ---
 
-Try not to worry - you can reapply for up to 4 courses at a time, as many times as you want. Many people are successful the second or third time around.
+Try not to worry - you can reapply if your application is unsuccessful. Many people are successful the second or third time around.
 
 It’s worth looking at the feedback the course provider has given to understand why your application was not accepted. This will help you to decide on your next steps.
 
