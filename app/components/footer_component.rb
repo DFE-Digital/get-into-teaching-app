@@ -1,5 +1,5 @@
 class FooterComponent < ViewComponent::Base
-  def initialize(talk_to_us: true, feedback: true)
+  def initialize(talk_to_us: true, feedback: false)
     super
 
     @talk_to_us = talk_to_us
