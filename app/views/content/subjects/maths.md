@@ -13,4 +13,5 @@ keywords:
 content:
   - "content/subjects/maths/header"
   - "content/subjects/maths/article"
+  - "content/subjects/maths/adviser-promo-maths"
 ---
