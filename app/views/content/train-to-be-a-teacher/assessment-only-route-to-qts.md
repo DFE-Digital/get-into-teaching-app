@@ -377,7 +377,12 @@ provider_groups:
       email: WSTP@poolehigh.poole.sch.uk
   West Midlands:
     providers:
-    - header: Birmingham City University
+    - header: Bishop Challoner Training School
+      link: https://www.bctsa.org/1299/assessment-only-qts
+      name: Emily Giubertoni
+      telephone: 07714 672398
+      email: e.giubertoni@bishopchalloner.bham.sch.uk
+   - header: Birmingham City University
       link: https://www.bcu.ac.uk/
       name: Programme Leader
       telephone: 0121 331 4627
