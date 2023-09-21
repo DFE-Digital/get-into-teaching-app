@@ -4,7 +4,7 @@ describe "External Links", type: :request do
   subject { response.body }
 
   before do
-    get "/train-to-be-a-teacher/get-school-experience"
+    get "/is-teaching-right-for-me/get-school-experience"
   end
 
   it do
