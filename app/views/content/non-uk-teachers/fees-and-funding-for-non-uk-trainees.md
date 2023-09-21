@@ -18,7 +18,7 @@ backlink: "../../"
 inset_text:
   funding-holding-message:
     text: |-
-      The following amounts are for teacher training courses starting in 2023. Financial support for courses starting in 2024 will be announced in autumn 2023.
+      The following amounts are for teacher training courses starting in the 2023/24 academic year. Financial support for courses starting in the 2024/25 academic year will be announced in autumn 2023.
 keywords:
   - International
   - Overseas
