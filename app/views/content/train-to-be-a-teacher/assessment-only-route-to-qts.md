@@ -8,7 +8,7 @@ image: false
 backlink: /
 related_content:
     Career progression stories: "/blog/tag/career-progression"
-    Salaries and benefits : "/salaries-and-benefits"
+    Salaries and benefits : "/is-teaching-right-for-me/salaries-and-benefits"
     Attend an event : "/events"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-assessment-only

@@ -6,7 +6,7 @@ description: |-
 related_content:
     Who do you want to teach?: "/train-to-be-a-teacher/who-do-you-want-to-teach"
     Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-    Salaries and benefits: "/salaries-and-benefits"
+    Salaries and benefits: "/is-teaching-right-for-me/salaries-and-benefits"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:

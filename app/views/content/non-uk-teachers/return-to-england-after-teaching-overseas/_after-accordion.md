@@ -6,7 +6,7 @@ The Department for Education (DfE) can support your CPD through [national profes
 for middle and senior leadership, headship and executive leadership.
 [Learn more about national professional qualifications frameworks.](https://www.gov.uk/government/publications/national-professional-qualifications-frameworks-from-september-2021)
 
-[Salaries and benefits](/salaries-and-benefits) explains teaching salaries for newly qualified and more experienced teachers.
+[Salaries and benefits](/is-teaching-right-for-me/salaries-and-benefits) explains teaching salaries for newly qualified and more experienced teachers.
 
 #### Workload, behaviour and flexible hours
 

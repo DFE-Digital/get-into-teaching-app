@@ -4,7 +4,7 @@ description: |-
   Learn more about funding and financial support for non-UK students, including details of the international relocation payment.
 related_content:
     Career progression stories: "/blog/tag/career-progression"
-    Salaries and benefits of teaching in England : "/salaries-and-benefits"
+    Salaries and benefits of teaching in England : "/is-teaching-right-for-me/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 
