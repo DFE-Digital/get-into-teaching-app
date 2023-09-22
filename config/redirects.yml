@@ -315,6 +315,8 @@ redirects:
   "/train-to-be-a-teacher/subject-knowledge-enhancement": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
   "/train-to-be-a-teacher/get-school-experience": "/is-teaching-right-for-me/get-school-experience"
   "/salaries-and-benefits": /is-teaching-right-for-me/salaries-and-benefits
+  "/teaching-internship-providers": "/is-teaching-right-for-me/teaching-internship-providers"
+  "/teaching-internship-providers/listing": "/is-teaching-right-for-me/teaching-internship-providers/listing"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"
