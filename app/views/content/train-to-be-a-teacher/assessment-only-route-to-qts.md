@@ -382,7 +382,7 @@ provider_groups:
       name: Emily Giubertoni
       telephone: 07714 672398
       email: e.giubertoni@bishopchalloner.bham.sch.uk
-   - header: Birmingham City University
+    - header: Birmingham City University
       link: https://www.bcu.ac.uk/
       name: Programme Leader
       telephone: 0121 331 4627
