@@ -66,6 +66,7 @@ footer.site-footer {
       a {
         max-height: 2em;
         padding: .5em;
+        color: $grey-mid;
       }
 
       // gap: 1em;
@@ -75,7 +76,7 @@ footer.site-footer {
 
       a:hover {
         text-decoration: none;
-        color: $grey-mid;
+        color: $white;
       }
 
       a:focus {
