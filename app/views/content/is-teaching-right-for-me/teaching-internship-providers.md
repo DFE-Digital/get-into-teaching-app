@@ -16,7 +16,7 @@ quote_list:
 backlink: /
 fullwidth: true
 content:
-  - content/teaching-internship-providers/listing
+  - content/is-teaching-right-for-me/teaching-internship-providers/listing
 navigation: 5.40
 navigation_description: Earn £300 per week and find out what it is really like in the classroom with a teaching internship.
 keywords:
