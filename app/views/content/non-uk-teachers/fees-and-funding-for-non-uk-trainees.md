@@ -18,7 +18,7 @@ backlink: "../../"
 inset_text:
   funding-holding-message:
     text: |-
-      The following amounts apply if you're starting your teacher training course between September 2023 and July 2024. Financial support for courses starting the following year will be announced in autumn 2023.
+      The bursary and scholarship amounts on this page apply if you're starting your teacher training course between September 2023 and July 2024. Financial support for courses starting the following year will be announced in autumn 2023.
 keywords:
   - International
   - Overseas
