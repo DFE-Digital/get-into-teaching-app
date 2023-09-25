@@ -4,6 +4,7 @@ description: Why become a teacher? Read stories from real life teachers to find 
 content:
     - content/is-teaching-right-for-me/facts_and_figures
     - content/is-teaching-right-for-me/questions
+    - content/is-teaching-right-for-me/why-teach
 image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
 colour: "yellow"
 layout: "layouts/category"
