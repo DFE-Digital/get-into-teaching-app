@@ -4,9 +4,9 @@ heading: Your teacher training references
 description: |-
   Find out which teacher training references you need to provide when you apply to train to be a teacher and what they'll need to include.
 related_content:
-    Application tips from a teacher training provider : "/blog/application-tips-from-a-teacher-training-provider"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
-    7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
+    Prepare for your teacher training interview: "/how-to-apply-for-teacher-training/teacher-training-interview"
+    My first week as a trainee teacher: "/blog/my-first-week-as-a-trainee-teacher"
 navigation: 30.15
 navigation_title: Teacher training references
 navigation_description: Find out which teacher training references you need to provide and what they should include.

@@ -198,11 +198,6 @@
   variants:
     - "static/content/blog/thumbnails/ben-breen.jpg"
 
-"static/content/blog/bedfordshire.jpg":
-  alt: "Students learning English by playing educational board games in a classroom."
-  variants:
-    - "static/content/blog/thumbnails/bedfordshire.jpg"
-
 "static/content/blog/calculator.jpg":
   alt: "A calculator on top of maths homework and a pencil case."
   variants:
@@ -262,11 +257,6 @@
   alt: ""
   variants:
     - "static/content/blog/thumbnails/right_provider.jpg"
-
-"static/content/blog/rocket.jpg":
-  alt: "A primary teacher showing a rocket to a girl at the front of a classroom as other students watch."
-  variants:
-    - "static/content/blog/thumbnails/rocket.jpg"
 
 "static/content/blog/school-aisle.jpg":
   alt: "The corridor of a school filled with children."

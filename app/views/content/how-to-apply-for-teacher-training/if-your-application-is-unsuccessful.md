@@ -4,7 +4,6 @@ description: |-
   Read about what to do if your teacher training application is unsuccessful. Find advice on why an application can be unsuccessful and how to get support.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
-    7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
     Tips for teacher training interview success : "/how-to-apply-for-teacher-training/teacher-training-interview"
     Your teacher training personal statement : "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
     Your teacher training references : "/how-to-apply-for-teacher-training/teacher-training-references"
