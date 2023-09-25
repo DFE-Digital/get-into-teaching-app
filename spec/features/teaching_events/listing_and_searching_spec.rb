@@ -20,7 +20,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
         .map { |e| e.attr("value") }
         .flat_map { |qp| qp.split(",") }
 
-      expect(params).to match_array(Crm::EventType::QUERY_PARAM_NAMES.keys)
+      expect(params).to match_array(Crm::EventType::QUERY_PARAM_NAMES.keys.reject { |a| a == "onlineqa" })
     end
   end
 
@@ -159,17 +159,6 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expected_type_ids = Crm::EventType.lookup_by_names("Get Into Teaching event")
 
       check "DfE Get Into Teaching"
-      click_on "Update results"
-
-      expect(fake_api).to have_received(:search_teaching_events).with(hash_including(type_ids: expected_type_ids)).once
-    end
-
-    scenario "searching for online forum events" do
-      visit events_path
-
-      expected_type_ids = [Crm::EventType.online_event_id]
-
-      check "DfE Online Q&A"
       click_on "Update results"
 
       expect(fake_api).to have_received(:search_teaching_events).with(hash_including(type_ids: expected_type_ids)).once
