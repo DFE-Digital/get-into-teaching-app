@@ -18,7 +18,7 @@ footer.site-footer {
     }
 
     &__links-container {
-      flex: 66% 0 0%;
+      flex: 75% 0 0%;
 
       display: flex;
       flex-wrap: wrap;
@@ -52,14 +52,13 @@ footer.site-footer {
 
   .site-footer-top {
     display: flex;
-    padding-bottom: 2em;
 
     .icon {
       @include font-size(large);
     }
 
     &__social {
-      flex: 33% 0 0;
+      flex: 25% 0 0;
       display: flex;
       margin-right: 1em;
 
@@ -91,7 +90,7 @@ footer.site-footer {
     padding-top: 2em;
 
     &__logo-container {
-      flex: 50% 0 0;
+      flex: 25% 0 0;
       flex-direction: column;
 
       display: flex;

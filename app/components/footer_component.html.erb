@@ -38,12 +38,6 @@
         </a>
       </div>
       <div class="site-footer-top__links-container">
-        <% helpers.navigation_resources.each do |resource| %>
-          <a href="<%= resource.path %>"><%= resource.title %></a>
-        <% end %>
-        <%= link_to "Find an event near you", events_path %>
-        <%= link_to "Sign up for updates", "/mailinglist/signup/name" %>
-        <%= link_to("Search", search_path) %>
       </div>
     </div>
     <div class="site-footer-bottom">
@@ -51,6 +45,7 @@
         <%= image_pack_tag 'static/dfelogo-white.svg', alt: "Department for Education", size: "124x73" %>
       </div>
       <div class="site-footer-bottom__links-container">
+        <%= link_to("Search", search_path) %>
         <a target="_blank" rel="noopener" href="https://forms.office.com/e/zVfV4SZeVn">Feedback</a>
         <%= link_to "Cookies", cookies_path %>
         <%= link_to "Privacy notice", privacy_policy_path %>
