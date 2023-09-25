@@ -251,7 +251,7 @@ redirects:
   "/explore-my-options/secondary/teach-physics": "/subjects/physics"
   "/explore-my-options/teacher-training-routes/school-led-training/school-direct": "/train-to-be-a-teacher"
   "/blog/common-interview-questions": "/how-to-apply-for-teacher-training/teacher-training-interview"
-  "/explore-my-options/teacher-training-routes/specialist-training-options/teacher-training-programmes-for-career-changers": "/train-to-be-a-teacher/if-you-want-to-change-career"
+  "/explore-my-options/teacher-training-routes/specialist-training-options/teacher-training-programmes-for-career-changers": "/is-teaching-right-for-me/if-you-want-to-change-career"
   "/explore-my-options/teacher-training-routes/school-led-training": "/train-to-be-a-teacher"
   "/explore-my-options/teacher-training-routes/university-led-training": "/train-to-be-a-teacher"
   "/explore-my-options/return-to-teaching/return-to-teaching-caring-related-career-breaks": "/returning-to-teaching"
@@ -316,6 +316,7 @@ redirects:
   "/train-to-be-a-teacher/get-school-experience": "/is-teaching-right-for-me/get-school-experience"
   "/salaries-and-benefits": /is-teaching-right-for-me/salaries-and-benefits
   "/teaching-internship-providers": "/is-teaching-right-for-me/teaching-internship-providers"
+  "/train-to-be-a-teacher/if-you-want-to-change-career": "/is-teaching-right-for-me/if-you-want-to-change-career"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"
