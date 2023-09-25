@@ -53,13 +53,17 @@ environment
 
 ## Your classroom placements
 
-You should get 120 days of classroom experience as part of a postgraduate or 3 year undergraduate teacher training course. On a 4 year undergraduate course, you should get 160 days of classroom experience. The placements will be in a minimum of 2 schools. Through your placements, you’ll have the opportunity to teach, plan, observe and research.
+You should get 120 days of classroom experience as part of a postgraduate or 3 year undergraduate teacher training course. On a 4 year undergraduate course, you should get 160 days of classroom experience. 
+
+Your placements will be in a minimum of 2 schools. Through your placements, you’ll have the opportunity to teach, plan, observe and research.
 
 You’ll get classroom experience whether you do school-led or university-led training. Some courses may offer placements in specific kinds of schools, like special schools. You can talk to your course provider about the opportunities available.
 
 Where you complete your classroom placements will depend on whether you've chosen a primary or secondary teacher training course. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
 
-If you apply to train with a specific school, your placements may not all take place within that school. They may take place at a school within their partnership or trust. You will need experience of teaching in 2 schools to be awarded qualified teacher status. Speak to your course provider for more details.
+If you apply to train with a specific school, your placements may not all take place within that school. They may take place at a school within their partnership or trust. 
+
+You will need experience of teaching in 2 schools to be awarded qualified teacher status. Speak to your course provider for more details.
 
 ## Your teacher training timetable
 
