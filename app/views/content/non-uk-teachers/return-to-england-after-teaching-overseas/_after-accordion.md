@@ -28,4 +28,4 @@ To find out more about returning to England to teach, you can:
 * email us at teach.inengland@education.gov.uk
 * [find us on Facebook](https://www.facebook.com/getintoteaching)
 * [discover us on Instagram](https://www.instagram.com/get_into_teaching/)
-* [follow us on Twitter](https://twitter.com/getintoteaching)
+* [follow us on X (formerly known as Twitter)](https://twitter.com/getintoteaching)
