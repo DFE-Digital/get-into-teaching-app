@@ -7,11 +7,6 @@ date: "2021-04-14"
 image: false
 promo_content:
     - content/train-to-be-a-teacher/promos/eta-promo-internships
-quote_list:
-  ql-1:
-    quotes:
-      - heading: "Chloe, former teaching intern"
-        text: "You’ll get the opportunity to experience a range of activities to help you get a feel for school life. Internships last 3 weeks, start in June and you’ll be paid £300 per week."
 backlink: /
 fullwidth: true
 content:
