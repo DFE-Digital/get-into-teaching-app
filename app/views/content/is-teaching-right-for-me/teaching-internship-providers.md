@@ -18,6 +18,7 @@ fullwidth: true
 content:
   - content/is-teaching-right-for-me/teaching-internship-providers/listing
 navigation: 5.40
+navigation_title: What is a teaching internship?
 navigation_description: Earn £300 per week and find out what it is really like in the classroom with a teaching internship.
 keywords:
   - teaching internship
