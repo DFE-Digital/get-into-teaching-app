@@ -2,7 +2,7 @@
 title: Teaching internships
 heading: "Experience teaching with an internship"
 description: |-
-  Find paid teaching internships to gain new skills and see what classroom life is like. Explore chemistry, computing, languages, maths and phyics internships.
+  Find paid teaching internships to gain new skills and see what classroom life is like. Explore chemistry, computing, languages, maths and physics internships.
 date: "2021-04-14"
 image: false
 promo_content:
@@ -681,3 +681,4 @@ keywords:
   - T.I. programme
   - TI programme
 ---
+$applications-open$
