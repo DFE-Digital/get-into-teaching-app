@@ -7,6 +7,7 @@ date: "2021-06-24"
 image: "static/content/hero-images/0008.jpg"
 backlink: "../../"
 navigation: 5.20
+navigation_title: How much do teachers get paid?
 navigation_description: Find out how much teachers earn and the different ranges of pay available.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
