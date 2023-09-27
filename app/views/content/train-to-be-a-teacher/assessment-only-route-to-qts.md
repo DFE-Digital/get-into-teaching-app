@@ -382,6 +382,11 @@ provider_groups:
       name: Programme Leader
       telephone: 0121 331 4627
       email: assessmentonlyqts@bcu.ac.uk
+    - header: Bishop Challoner Training School
+      link: https://www.bctsa.org/1299/assessment-only-qts
+      name: Emily Giubertoni
+      telephone: 07714 672398
+      email: e.giubertoni@bishopchalloner.bham.sch.uk
     - header: Haybridge Alliance SCITT
       link: https://www.teachwithhaybridge.co.uk
       email: tforward@haybridge.worcs.sch.uk

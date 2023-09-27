@@ -28,7 +28,6 @@ SecureHeaders::Configuration.default do |config|
   google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net *.ad.doubleclick.net *.fls.doubleclick.net stats.g.doubleclick.net]
   google_apis        = %w[*.googleapis.com googleapis.com https://fonts.googleapis.com]
 
-  optimize    = %w[optimize.google.com www.googleoptimize.com]
   zendesk     = %w[static.zdassets.com https://*.zopim.com wss://*.zopim.com dfesupport-tpuk.zendesk.com ekr.zdassets.com]
   facebook    = %w[*.facebook.com *.facebook.net *.connect.facebook.net]
   govuk       = %w[*.gov.uk www.gov.uk]
@@ -69,13 +68,13 @@ SecureHeaders::Configuration.default do |config|
     connect_src: self_base.concat(google_apis, pinterest, google_analytics, google_supported, google_doubleclick, facebook, zendesk, snapchat, sentry, gtm_server, clarity, vwo),
     font_src: self_base.concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: self_base.concat(snapchat, facebook, govuk),
-    frame_src: self_base.concat(scribble, snapchat, facebook, youtube, google_doubleclick, google_analytics, data, pinterest, optimize, clarity, vwo),
+    frame_src: self_base.concat(scribble, snapchat, facebook, youtube, google_doubleclick, google_analytics, data, pinterest, clarity, vwo),
     frame_ancestors: self_base,
-    img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, gtm_server, reddit, clarity, vwo, %w[chart.googleapis.com wingify-assets.s3.amazonaws.com cx.atdmt.com linkbam.uk]),
+    img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, gtm_server, reddit, clarity, vwo, %w[chart.googleapis.com wingify-assets.s3.amazonaws.com cx.atdmt.com linkbam.uk]),
     manifest_src: self_base,
     media_src: self_base.concat(zendesk).concat(assets),
-    script_src: quoted_unsafe_inline + quoted_unsafe_eval + self_base.concat(google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit, clarity, vwo),
-    style_src: quoted_unsafe_inline + self_base.concat(govuk, google_apis, google_supported, optimize, vwo),
+    script_src: quoted_unsafe_inline + quoted_unsafe_eval + self_base.concat(google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, scribble, twitter, snapchat, youtube, zendesk, reddit, clarity, vwo),
+    style_src: quoted_unsafe_inline + self_base.concat(govuk, google_apis, google_supported, vwo),
     worker_src: self_base.concat(blob),
   }
 
