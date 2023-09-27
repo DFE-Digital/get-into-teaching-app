@@ -681,4 +681,3 @@ keywords:
   - T.I. programme
   - TI programme
 ---
-$applications-open$
