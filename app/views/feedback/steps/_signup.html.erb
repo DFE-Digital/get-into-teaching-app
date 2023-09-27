@@ -2,7 +2,7 @@
 
 <h1>Give feedback on this sign-up form</h1>
 <p>
-  Tell us about your experience signing up for an adviser.
+  Tell us about your experience signing up for an <%= topic %>.
 </p>
 
 <%= f.govuk_collection_radio_buttons :successful_visit,
@@ -10,18 +10,4 @@
   :id,
   :value,
   legend: { text: "Did you achieve what you wanted from your visit?" }
-%>
-
-<%= f.govuk_text_area :unsuccessful_visit_explanation, label: { text: "Tell us about your experience signing up for #{topic}"} do %>
-<p>
-  You can give general feedback or tell us about a specific problem.
-  Do not include any information that could identify you personally, such as your name.
-</p>
-<% end %>
-
-<%= f.govuk_collection_radio_buttons :rating,
-  f.object.ratings,
-  :id,
-  :value,
-  legend: { text: "Overall, how satisfied were you with our website?"}
 %>

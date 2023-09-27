@@ -4,10 +4,9 @@ module Feedback
   class Wizard < ::GITWizard::Base
     self.steps = [
       Steps::Purpose,
-      Steps::Website,
       Steps::WebsiteExperience,
-      Steps::WebsiteIssue,
       Steps::Signup,
+      Steps::Rating,
     ].freeze
 
     def complete!

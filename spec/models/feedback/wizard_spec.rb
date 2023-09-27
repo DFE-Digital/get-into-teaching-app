@@ -20,10 +20,9 @@ describe Feedback::Wizard do
     it do
       is_expected.to eql [
         Feedback::Steps::Purpose,
-        Feedback::Steps::Website,
         Feedback::Steps::WebsiteExperience,
-        Feedback::Steps::WebsiteIssue,
         Feedback::Steps::Signup,
+        Feedback::Steps::Rating,
       ]
     end
   end
