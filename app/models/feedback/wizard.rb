@@ -11,6 +11,7 @@ module Feedback
 
     def complete!
       super.tap do |result|
+        set_subject
         break unless result
 
         save_feedback
@@ -26,6 +27,12 @@ module Feedback
 
       feedback = TeacherTrainingAdviser::Feedback.new(data)
       feedback.save!
+    end
+
+  private
+
+    def set_subject
+      @store["subject"] = @store["topic"].split.last(2).reject { |a| a == "for" }.join(" ")
     end
   end
 end

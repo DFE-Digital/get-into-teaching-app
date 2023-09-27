@@ -1,8 +1,6 @@
-<% topic = feedback_session.key?('topic') ? feedback_session['topic'].split.last(2).reject { |a| a == 'for' }.join(' ') : '' %>
-
 <h1>Give feedback on this sign-up form</h1>
 <p>
-  Tell us about your experience signing up for an <%= topic %>.
+  Tell us about your experience signing up for an <%= feedback_session['subject'] %>.
 </p>
 
 <%= f.govuk_collection_radio_buttons :successful_visit,
