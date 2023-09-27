@@ -11,6 +11,8 @@ class InternshipProvider
       @contact_name = d["contact_name"]
       @contact_email = d["contact_email"]
       @subjects = d["subjects"]
+      @areas = d["local_areas"]
+      @applications = d["applications_open"]
       @full = ActiveModel::Type::Boolean.new.cast(d["full"])
     end
   end
@@ -26,6 +28,8 @@ class InternshipProvider
       else
         h["name"] = @contact_name.strip
         h["email"] = @contact_email.strip
+        h["areas"] = @areas.strip if @areas
+        h["applications"] = @applications.strip if @applications
       end
     end
   end
