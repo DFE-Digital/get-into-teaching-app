@@ -5,7 +5,7 @@ description: |-
   All qualified teachers will have a starting salary of at least £30,000 (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 date: "2021-06-24"
 backlink: "../../"
-navigation: 5.20
+navigation: 5.10
 navigation_title: How much do teachers get paid?
 navigation_description: Find out how much teachers earn and the different ranges of pay available.
 promo_content:
