@@ -96,6 +96,10 @@ provider_groups:
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
+    - header: Inspiring Leaders Teacher Training
+      link: https://inspiringleadersscitt.com/aor/
+      name: Dirk Smith
+      email: dsmith@iltt.org.uk
     - header: Lincolnshire SCITT
       link: https://www.lincolnshirescitt.co.uk/aor
       name: Nicki Shore
@@ -439,11 +443,6 @@ provider_groups:
       email: ssplant@ttsonline.net
   Yorkshire and the Humber:
     providers:
-    - header: Bradford College
-      link: https://www.bradfordcollege.ac.uk/courses/course/qualified-teacher-status-qts-assessment-only-programme/
-      name: Julian White
-      telephone: 01274 088 368
-      email: j.white@bradfordcollege.ac.uk
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
