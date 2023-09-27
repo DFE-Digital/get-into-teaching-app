@@ -11,10 +11,6 @@ backlink: /
 fullwidth: true
 content:
   - content/teaching-internship-providers/listing
-inset_text:
-  applications-open:
-    text: |-
-      Teaching internship applications are now open for summer 2024.
 keywords:
   - teaching internship
   - internship
@@ -35,4 +31,3 @@ keywords:
   - T.I. programme
   - TI programme
 ---
-$applications-open$
