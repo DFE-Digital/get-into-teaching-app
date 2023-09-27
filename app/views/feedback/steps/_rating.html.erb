@@ -1,0 +1,15 @@
+<% topic = feedback_session.key?('topic') ? feedback_session['topic'].split.last(2).reject { |a| a == 'for' }.join(' ') : '' %>
+
+<%= f.govuk_text_area :unsuccessful_visit_explanation, label: { text: "Tell us about your experience signing up for #{topic}"} do %>
+<p>
+  You can give general feedback or tell us about a specific problem.
+  Do not include any information that could identify you personally, such as your name.
+</p>
+<% end %>
+
+<%= f.govuk_collection_radio_buttons :rating,
+  f.object.ratings,
+  :id,
+  :value,
+  legend: { text: "Overall, how satisfied were you with our website?"}
+%>
