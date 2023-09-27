@@ -8,7 +8,7 @@ image: false
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
-    Salaries and benefits : "/is-teaching-right-for-me/salaries-and-benefits"
+    Salaries and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits"
     Steps to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
