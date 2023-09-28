@@ -6,7 +6,7 @@ description: |-
 related_content:
     What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
     Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-    Salaries and benefits: "/is-teaching-right-for-me/teacher-pay-and-benefits"
+    Teacher pay and benefits: "/is-teaching-right-for-me/teacher-pay-and-benefits"
     What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course

@@ -7,7 +7,7 @@ description: |-
 related_content:
     David’s journey from the army to teacher training: "/blog/from-the-army-to-teacher-training"
     Is teaching right for me? : "/is-teaching-right-for-me"
-    Salaries and benefits of teaching: "/is-teaching-right-for-me/teacher-pay-and-benefits"
+    Teacher pay and benefits of teaching: "/is-teaching-right-for-me/teacher-pay-and-benefits"
     Teach in further education without a degree: "https://www.teach-in-further-education.campaign.gov.uk/"
 promo_content:
     - content/funding-and-support/promos/get-adviser-veterans-promo

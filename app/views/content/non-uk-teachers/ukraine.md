@@ -174,7 +174,7 @@ If you're shortlisted, you’ll be invited for interview and asked to teach part
 
 Your salary as a teacher depends on whether you have QTS, and your level of experience.
 
-[Find out more about salaries and benefits](/is-teaching-right-for-me/teacher-pay-and-benefits) for teachers in England.
+[Find out more about teacher pay and benefits](/is-teaching-right-for-me/teacher-pay-and-benefits) in England.
 
 [Find out more about teaching in England if you trained overseas](/non-uk-teachers/teach-in-england-if-you-trained-overseas). 
 
