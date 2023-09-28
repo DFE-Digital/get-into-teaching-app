@@ -47,6 +47,7 @@ Rails.application.configure do
   # config.force_ssl = true
   unless ENV["SKIPSSL"].in? %w[1 true yes]
     config.force_ssl = true
+    config.ssl_options = { redirect: { exclude: ->(request) { request.path.include?("/check") } } }
   end
 
   # Use the lowest log level to ensure availability of diagnostic information
