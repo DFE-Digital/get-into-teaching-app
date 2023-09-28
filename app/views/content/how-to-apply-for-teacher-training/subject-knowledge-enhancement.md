@@ -41,9 +41,9 @@ This can help when you have (one or more of the following):
 
 ## How to do an SKE course
 
-When you apply for teacher training in England, talk to your training provider if you think you need to improve your subject knowledge. They’ll help you decide if you need to complete an SKE course, and may make it a condition of their offer to train with them.
+If you think you need to improve your subject knowledge then talk to your training provider when you apply for teacher training in England. They’ll help you to decide if you'll benefit from a SKE course. You can only complete a funded SKE course if your training provider makes it a condition of the offer to train with them.
 
-You’ll choose your SKE course provider, but your teacher training provider can help you decide on the right one for you.
+You can choose your SKE course provider, but your teacher training provider can help you decide on the right one for you.
 
 ### SKE subjects
 
