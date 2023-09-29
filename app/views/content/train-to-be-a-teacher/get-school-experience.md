@@ -5,6 +5,7 @@ subcategory: Experience life in the classroom
 description: |-
   Get school experience to explore what life is like in a primary or secondary classroom and find out if teaching is right for you.
 related_content:
+    Experience teaching with a paid internship : "/teaching-internship-providers"
     Is teaching right for me? : "/is-teaching-right-for-me"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
     What is a Get Into Teaching event? : "/events/about-get-into-teaching-events"
