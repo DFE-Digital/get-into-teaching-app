@@ -438,6 +438,7 @@ jobs:
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           recreate: true
+          header: PAAS
           message:  Review app deployed to https://${{env.REVIEW_APPLICATION}}-${{github.event.number}}.${{env.DOMAIN}}
 
       - name: Add Review Label
@@ -445,6 +446,60 @@ jobs:
         uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: Review
+
+  review_aks:
+    name: Review AKS Deployment Process
+    needs: [ build_release ]
+    if: github.ref != 'refs/heads/master'
+    runs-on: ubuntu-latest
+    concurrency: Review_aks_${{github.event.number}}
+    environment:
+       name: review_aks
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+        with:
+          var_file: .github/common_environment_aks.yml
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Fetch secrets from key vault
+        uses: azure/CLI@v1
+        id: keyvault-yaml-secret
+        with:
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+
+      - name: Deploy to Review AKS
+        uses: ./.github/workflows/actions/deploy_v2
+        id: deploy_v2
+        with:
+          environment: review_aks
+          sha:  ${{ github.sha }}
+          pr:   ${{github.event.number}}
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
+
+      - name: Post sticky pull request comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          recreate: true
+          header: AKS
+          message:  AKS Review app deployed to https://${{env.REVIEW_APPLICATION}}-${{github.event.number}}.test.${{env.DOMAIN}}
+
+      - name: Add Review_v2 Label
+        if: contains(github.event.pull_request.user.login, 'dependabot') == false
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: Review_v2
 
   development:
     name: Development Deployment
