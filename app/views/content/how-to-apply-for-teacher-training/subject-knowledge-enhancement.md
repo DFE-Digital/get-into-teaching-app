@@ -41,9 +41,11 @@ This can help when you have (one or more of the following):
 
 ## How to do an SKE course
 
-If you think you need to improve your subject knowledge then talk to your training provider when you apply for teacher training in England. They’ll help you to decide if you'll benefit from a SKE course. You can only complete a funded SKE course if your training provider makes it a condition of the offer to train with them.
+If you think you need to improve your subject knowledge then talk to your training provider when you apply for teacher training in England. They’ll help you to decide if you'll benefit from a SKE course. 
 
-You can choose your SKE course provider, but your teacher training provider can help you decide on the right one for you.
+You can only complete a funded SKE course if your training provider makes it a condition of the offer to train with them.
+
+You'll choose your SKE course provider, but your teacher training provider can help you decide on the right one for you.
 
 ### SKE subjects
 
@@ -71,7 +73,7 @@ $ske-course-video$
 
 They're usually online, but some courses can be classroom based and some can be a mixture of both. 
 
-Course lengths usually range from 8 to 28 weeks and are 25 hours per week. Your provider will decide which course length you need based on your gap in knowledge. Different providers may offer different course lengths.
+Course lengths range from 8 to 28 weeks and are 25 hours per week. Your provider will decide which course length you need based on your gap in knowledge. Different providers may offer different course lengths.
 
 You can do a part-time course and complete it over a longer period or complete it in a shorter time with compressed hours. Your SKE provider will be able to discuss your options with you.
 
@@ -81,7 +83,7 @@ You should complete your course before starting your teacher training. If you ru
 
 ## Get an SKE bursary
 
-If you train to teach in the 2022/23 academic year, you could be eligible for a bursary of £175 per week to complete your SKE course. If you do a part-time course and complete less than 25 hours a week, this will be paid in proportion to your course hours. If you complete your SKE course with compressed hours, this will affect your bursary amount. How and when your bursary is paid will vary by your training provider.
+If you train to teach in the 2023/24 academic year, you could be eligible for a bursary of £175 per week to complete your SKE course. If you do a part-time course and complete less than 25 hours a week, this will be paid in proportion to your course hours. If you complete your SKE course with compressed hours, this will affect your bursary amount. How and when your bursary is paid will vary by your training provider.
 
 You can use your SKE bursary for any extra costs you may have, for example, making up for any lost income.
 
