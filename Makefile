@@ -2,7 +2,7 @@ TERRAFILE_VERSION=0.8
 ARM_TEMPLATE_TAG=1.1.6
 RG_TAGS={"Product" : "Get into teaching website"}
 REGION=UK South
-SERVICE_NAME=get-into-teaching
+SERVICE_NAME=get-into-teaching-app
 SERVICE_SHORT=git
 DOCKER_REPOSITORY=ghcr.io/dfe-digital/get-into-teaching-frontend
 

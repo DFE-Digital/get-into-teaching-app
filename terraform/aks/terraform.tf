@@ -36,6 +36,6 @@ provider "kubernetes" {
   cluster_ca_certificate = module.cluster_data.kubernetes_cluster_ca_certificate
 }
 
-# provider "statuscake" {
-#   api_token = module.infrastructure_secrets.map.STATUSCAKE-API-TOKEN
-# }
+provider "statuscake" {
+  api_token = module.infrastructure_secrets.map.SC-PASSWORD
+}
