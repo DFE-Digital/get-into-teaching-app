@@ -28,7 +28,7 @@ module Events
       end
 
       def query_channels
-        @query_channels ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_teaching_event_registration_channels
+        @query_channels ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_event_subscription_channels
       end
     end
   end
