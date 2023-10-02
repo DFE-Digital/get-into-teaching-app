@@ -28,7 +28,9 @@ keywords:
 ---
 
 
-You need a bachelor's degree to teach in primary, secondary and special schools in England. This does not have to be a bachelor's degree in teaching.
+You need a bachelor's degree in any subject to teach in primary, secondary and special schools in England.
+
+For secondary teacher training, your provider will want to make sure you have a good knowledge of the subject you’re applying to teach.
 
 You also need to gain qualified teacher status (QTS) to teach in most schools which you get through teacher training.
 
