@@ -63,7 +63,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
       let(:funding_widget) { FundingWidget.new(subject: "maths") }
 
       it "contains subject-specific funding content" do
-        expect(page).to have_text("Scholarships of £29,000 and bursaries of £27,000 are available for trainee maths teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible).")
+        expect(page).to have_text("Scholarships of £30,000 and bursaries of £28,000 are available for trainee maths teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible).")
       end
 
       it "contains subject-specific next steps content" do
