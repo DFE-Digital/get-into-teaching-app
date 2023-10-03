@@ -17,15 +17,6 @@ fullwidth: true
 content:
   - content/teaching-internship-providers/listing
 provider_groups:
-  East:
-    providers:
-      - header: Thinking Schools Academy Trust
-        link: https://www.tsatrust.org.uk/
-        subjects: chemistry, computing, maths, physics, languages
-        name: Sophie Venables
-        email: s.venables@tsatrust.org.uk
-        areas: Essex
-        applications: Open
   East Midlands:
     providers:
       - header: Bluecoat SCITT Alliance
@@ -40,7 +31,7 @@ provider_groups:
         subjects: chemistry, computing, maths, physics, languages
         name: Claire Amed
         email: Claire.amed@creativeeducationtrust.org.uk
-        areas: North Northamptonshire, Nottingham, West Northmptonshire
+        areas: North Northamptonshire, Nottingham, West Northamptonshire
         applications: Open
       - header: George Spencer Academy
         link: http://www.george-spencer.com/
@@ -112,14 +103,14 @@ provider_groups:
         subjects: chemistry, maths, physics, languages
         name: Susanne Combe
         email: scombe@bestacademies.org.uk
-        areas: Bedford, Central Bendfordshire
+        areas: Bedford, Central Bedfordshire
         applications: Open
       - header: Benfleet Team Supporting All
         link: http://www.btsa.uk/internship-scheme/
         subjects: chemistry, computing, maths, physics, languages
         name: Maxine Howard
         email: mhoward@theappletonschool.org
-        areas: Essex, Southend oin Sea
+        areas: Essex, Southend on Sea
         applications: Open
       - header: Creative Education Trust
         link: https://www.creativeeducationtrust.org.uk/internship
@@ -170,11 +161,11 @@ provider_groups:
         email: vicki.walsh@redborne.com
         areas: Bedford, Central Bedfordshire
         applications: Open
-      - header: South Essex Training and Support Alliance
-        link: https://www.setsa.info/1567/teaching-internship-programme-2023
+      - header: South East Essex Academy Trust (SEEAT)
+        link: https://www.seeat.org/Teaching-Internships/
         subjects: chemistry, computing, maths, physics, languages
-        name: David Struthers
-        email: d.struthers@setsa.info
+        name: Sarah White, Rebecca Geoghegan
+        email: s.white@seeat.org, info@seeat.org
         areas: Essex, Southend-on-Sea
         applications: Open
       - header: The Hertfordshire and Essex High School
@@ -183,6 +174,13 @@ provider_groups:
         name: Claire Ruthven
         email: claire.ruthven@hertsandessex.herts.sch.uk
         areas: Hertfordshire
+        applications: Open
+      - header: Thinking Schools Academy Trust
+        link: https://www.tsatrust.org.uk/
+        subjects: chemistry, computing, maths, physics, languages
+        name: Sophie Venables
+        email: s.venables@tsatrust.org.uk
+        areas: Essex
         applications: Open
   London:
     providers:
@@ -205,7 +203,7 @@ provider_groups:
         subjects: chemistry, computing, maths, physics, languages
         name: Jose Oliveira/Jacqui Aldrich
         email: jose.oliveira@harrisfederation.org.uk / j.aldrich@niot.org.uk
-        areas: Bexley, Brent, Bromley, Croydon, Greenwich, Haringey, Havering, Lambeth, Morton, Newham, Southwark, Sutton, Tower Hamlets, Wandsworth, Westminster
+        areas: Bexley, Brent, Bromley, Croydon, Greenwich, Haringey, Havering, Lambeth, Merton, Newham, Southwark, Sutton, Tower Hamlets, Wandsworth, Westminster
         applications: Open
       - header: LETTA (London East Teacher Training Alliance)
         link: https://letta.org.uk/train/teachinginternships/
@@ -226,21 +224,21 @@ provider_groups:
         subjects: chemistry, maths, physics, languages
         name: Riam Muayad
         email: Riam.Muayad@paddington-academy.org
-        areas: Fulham, Hammershith and Fulham, Lambeth, Westminster
+        areas: Fulham, Hammersmith and Fulham, Lambeth, Westminster
         applications: Open
       - header: Reach Academy Feltham
         link: https://www.reachtraining.org/teaching-internships
         subjects: chemistry, maths, physics, languages
         name: James Foreman
         email: reachteachertraining@reachacademy.org.uk
-        areas: Hounsllow
+        areas: Hounslow
         applications: Open
       - header: St John Southworth Catholic Academy Trust
-        link: "SJSCAT - https://www.sjscat.co.uk/Summer-Teaching-Internship-2024/\r\nCVMS - https://www.cvms.co.uk/Summer-Teaching-Internship-2024/"
+        link: https://www.sjscat.co.uk/Summer-Teaching-Internship-2024/
         subjects: chemistry, computing, maths, physics, languages
         name: Patrick Lanigan
         email: laniganp@cvms.co.uk
-        areas: Brent, Ealing, Hammershith and Fulham, Harrow, Kensington and Chelsea, Wandsworth, West Berkshire, Westminster
+        areas: Brent, Ealing, Hammersmith and Fulham, Harrow, Kensington and Chelsea, Wandsworth, West Berkshire, Westminster
         applications: Open
       - header: Waldegrave Training Alliance and Orleans Park Teaching Alliance
         link: https://www.waldegrave.richmond.sch.uk/923/paid-teaching-internships-summer-2024
@@ -270,7 +268,7 @@ provider_groups:
         subjects: chemistry, computing, maths, physics, languages
         name: Sarah McGee
         email: smcgee@bhcet.org.uk
-        areas: Darlington, Durham, Gateshead, Harlepool, Middlesbrough, Newcastle upon Tyne, North Tyneside, Northumberland, South Tyneside, Stockton on Tees, Sunderland
+        areas: Darlington, Durham, Gateshead, Hartlepool, Middlesbrough, Newcastle upon Tyne, North Tyneside, Northumberland, South Tyneside, Stockton on Tees, Sunderland
         applications: Open
       - header: North East SCITT
         link: https://www.northeastscitt.co.uk/intern
@@ -284,7 +282,7 @@ provider_groups:
         subjects: chemistry, computing, maths, physics, languages
         name: Meriem Lairini
         email: m.lairini@northerneducationtrust.org
-        areas: Gateshead, Hartlepool, Newcastle, Northumbersland, Stockton-on-Tees, Sunderland
+        areas: Gateshead, Hartlepool, Newcastle, Northumberland, Stockton-on-Tees, Sunderland
         applications: Open
       - header: Outwood Institute of Education
         link: https://teachnorth.com/internships
@@ -379,7 +377,7 @@ provider_groups:
         email: j.brierley@brighouse.calderdale.sch.uk
         areas: Calderdale, Kirklees
         applications: Open
-      - header: Wigan and West Lancashire Catholic School Direct 
+      - header: Wigan and West Lancashire Catholic School Direct
         link: https://www.catholicsd.org.uk/internships/
         subjects: chemistry, computing, maths, physics, languages
         name: Sarah Holland
@@ -503,7 +501,7 @@ provider_groups:
         areas: Bournemouth Christchurch and Poole, Dorset
         applications: Open
       - header: South West Institute for Teaching (SWIFT)
-        link: www.swiftteachertraining.org.uk/internships
+        link: https://www.swiftteachertraining.org.uk/internships.html
         subjects: chemistry, computing, maths, physics, languages
         name: Abby Spearing
         email: Abby.spearing@sw-ift.org.uk
