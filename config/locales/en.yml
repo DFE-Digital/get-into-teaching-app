@@ -110,7 +110,11 @@ en:
         name: "Classics"
         group: "Secondary"
         sub_head: "Classics - Secondary"
-        funding: ""
+        funding: |-
+        
+          Bursaries of £25,000 may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible).
+          
+          Your course provider will confirm if this applies.
       communication_and_media_studies:
         name: "Communication and media studies"
         group: "Secondary"
