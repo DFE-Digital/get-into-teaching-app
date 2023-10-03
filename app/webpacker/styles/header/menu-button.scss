@@ -16,20 +16,17 @@
     margin-left: 1em;
     padding: .8em 1em;
 
-    &:focus {
-      background-color: $white;
-      color: $green;
-      box-shadow: none;
-    }
-
     &:active {
       background-color: $white;
       box-shadow: none;
     }
 
     &:hover {
-      background-color: $white;
       cursor: pointer;
+    }
+
+    &:focus {
+      border-color: $black;
     }
 
     &.open {
@@ -37,8 +34,7 @@
       color: $white;
 
       &:focus {
-        background-color: $green;
-        box-shadow: none;
+        background-color: $black;
       }
 
       &:focus .menu-button__icon {
