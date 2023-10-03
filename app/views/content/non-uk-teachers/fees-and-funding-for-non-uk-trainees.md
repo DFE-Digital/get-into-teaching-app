@@ -15,10 +15,6 @@ navigation_description: Learn more about teacher training fees in England and fi
 date: "2021-05-27"
 image: "static/content/hero-images/0002.jpg"
 backlink: "../../"
-inset_text:
-  funding-holding-message:
-    text: |-
-      The bursary and scholarship amounts on this page apply if you're starting your teacher training course between September 2023 and July 2024. Financial support for courses starting the following year will be announced in autumn 2023.
 keywords:
   - International
   - Overseas
@@ -61,8 +57,6 @@ keywords:
   - European
   - Settlement Scheme
 ---
-
-$funding-holding-message$
 
 If you’re applying for teacher training as a non-UK citizen, you may be able to get some financial support from the UK government.
 
