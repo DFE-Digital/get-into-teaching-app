@@ -29,9 +29,9 @@ keywords:
   - enhance
 ---
 
-You may be able to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
+You might need to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
 
-This can help when you have (one or more of the following):
+This could be because you have (one or more of the following):
 
 * finished your degree more than 5 years ago
 * a different but related degree to the subject you want to teach
@@ -41,7 +41,7 @@ This can help when you have (one or more of the following):
 
 ## How to do an SKE course
 
-If you think you need to improve your subject knowledge then talk to your training provider when you apply for teacher training in England. They’ll help you to decide if you'll benefit from an SKE course. 
+If your training provider thinks you need to improve your subject knowledge then they might decide that you'll benefit from an SKE course. 
 
 You can only complete a funded SKE course if your training provider makes it a condition of the offer to train with them.
 
@@ -87,9 +87,9 @@ If you start your teacher training course between September 2023 and July 2024, 
 
 If you do a part-time course and complete less than 25 hours a week, this will be paid in proportion to your course hours.
 
-If you complete your SKE course with compressed hours, this will affect your bursary amount. How and when your bursary is paid will vary by your training provider.
+If you complete your SKE course with compressed hours, this might reduce your bursary amount. How and when your bursary is paid will vary by your training provider.
 
-You can use your SKE bursary for any extra costs you may have, for example, making up for any lost income.
+You can use your SKE bursary for any extra costs you may have while studying, for example, making up for any lost income.
 
 ### Eligibility for an SKE bursary
 
