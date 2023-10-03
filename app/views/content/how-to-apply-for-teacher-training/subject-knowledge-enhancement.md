@@ -45,7 +45,7 @@ If you think you need to improve your subject knowledge then talk to your traini
 
 You can only complete a funded SKE course if your training provider makes it a condition of the offer to train with them.
 
-You'll choose your SKE course provider, but your teacher training provider can help you decide on the right one for you.
+You'll choose your SKE course provider, but your teacher training provider can help to decide on the right one for you.
 
 ### SKE subjects
 
