@@ -11,8 +11,8 @@ class InternshipProvider
       @contact_name = d["contact_name"]
       @contact_email = d["contact_email"]
       @subjects = d["subjects"]
-      @areas = d["local_areas"]
-      @applications = d["applications_open"]
+      @areas = d["areas"]
+      @applications = d["applications"]
       @full = ActiveModel::Type::Boolean.new.cast(d["full"])
     end
   end
