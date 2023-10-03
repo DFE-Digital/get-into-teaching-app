@@ -37,7 +37,7 @@ This could be because you have (one or more of the following):
 * a different but related degree to the subject you want to teach
 * an A level but not a degree in the subject you want to teach
 * an unrelated degree but relevant professional experience
-* studied for a languages degree, but need to develop a second language to an acceptable level for teaching in schools
+* studied for a languages degree, but need to improve knowledge in main language or develop a second language to an acceptable level for teaching in schools
 
 ## How to do an SKE course
 
