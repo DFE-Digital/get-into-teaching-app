@@ -13,7 +13,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-ske
 inset_text:
   international-content:
-    text: If you’re a non-UK citizen, you may only be eligible for a SKE bursary if you’re training to teach physics or modern foreign languages.
+    text: If you’re a non-UK citizen, you may be eligible for a SKE bursary if you’re training to teach physics or modern foreign languages.
     color: grey
 youtube_video:
   ske-course-video:
