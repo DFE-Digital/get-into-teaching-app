@@ -62,7 +62,7 @@ You will not perform more than 90% of a full-time teacher’s duties (unless you
 
 Full-time salaried teacher training will usually last: 
 
-* 1 academic year (September to July) if you’re on a School Direct (salaried) course 
+* 1 academic year (September to July) if you’re on a School Direct salaried course 
 
 * 2 academic years (September to July) if you’re on a course delivered by Teach First 
 
