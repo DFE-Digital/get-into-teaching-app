@@ -205,8 +205,7 @@ provider_groups:
         subjects: chemistry, computing, maths, physics, languages
         name: Jose Oliveira/Jacqui Aldrich
         email: jose.oliveira@harrisfederation.org.uk / j.aldrich@niot.org.uk
-        areas: Bexley, Brent, Bromley, Croydon, Greenwich, Haringey, Havering, Lambeth,
-        Morton, Newham, Southwark, Sutton, Tower Hamlets, Wandsworth, Westminster
+        areas: Bexley, Brent, Bromley, Croydon, Greenwich, Haringey, Havering, Lambeth, Morton, Newham, Southwark, Sutton, Tower Hamlets, Wandsworth, Westminster
         applications: Open
       - header: LETTA (London East Teacher Training Alliance)
         link: https://letta.org.uk/train/teachinginternships/
@@ -241,8 +240,7 @@ provider_groups:
         subjects: chemistry, computing, maths, physics, languages
         name: Patrick Lanigan
         email: laniganp@cvms.co.uk
-        areas: Brent, Ealing, Hammershith and Fulham, Harrow, Kensington and Chelsea,
-        Wandsworth, West Berkshire, Westminster
+        areas: Brent, Ealing, Hammershith and Fulham, Harrow, Kensington and Chelsea, Wandsworth, West Berkshire, Westminster
         applications: Open
       - header: Waldegrave Training Alliance and Orleans Park Teaching Alliance
         link: https://www.waldegrave.richmond.sch.uk/923/paid-teaching-internships-summer-2024
@@ -272,8 +270,7 @@ provider_groups:
         subjects: chemistry, computing, maths, physics, languages
         name: Sarah McGee
         email: smcgee@bhcet.org.uk
-        areas: Darlington, Durham, Gateshead, Harlepool, Middlesbrough, Newcastle upon
-        Tyne, North Tyneside, Northumberland, South Tyneside, Stockton on Tees, Sunderland
+        areas: Darlington, Durham, Gateshead, Harlepool, Middlesbrough, Newcastle upon Tyne, North Tyneside, Northumberland, South Tyneside, Stockton on Tees, Sunderland
         applications: Open
       - header: North East SCITT
         link: https://www.northeastscitt.co.uk/intern
@@ -317,8 +314,7 @@ provider_groups:
         subjects: chemistry, computing, maths, physics
         name: Hilary Langmead-Jones
         email: admin@scitt.bright-futures.co.uk
-        areas: Bury, Cheshire West and Chester, Manchester, Oldham, Salford, Stockport,
-        Tameside, Trafford, Wigan
+        areas: Bury, Cheshire West and Chester, Manchester, Oldham, Salford, Stockport, Tameside, Trafford, Wigan
         applications: Open
       - header: Chorlton High School
         link: https://chorltonhigh.manchester.sch.uk/working-for-us/Chorlton-High-Teaching-School-Team/school-experience-programme
@@ -374,8 +370,7 @@ provider_groups:
         subjects: chemistry, computing, maths, physics, languages
         name: Graeme Balfour
         email: gbalfour@loreto.ac.uk
-        areas: Bolton, Bury, Manchester, Oldham, Salford, Stockport, Tameside, Trafford,
-        Wigan
+        areas: Bolton, Bury, Manchester, Oldham, Salford, Stockport, Tameside, Trafford, Wigan
         applications: Open late November
       - header: Valley Learning Partnership
         link: "https://www.brighouse.calderdale.sch.uk/join-us/train-with-us/\r\nwww.brighouse.calderdale.sch.uk/join-us/work-for-us"
@@ -389,8 +384,7 @@ provider_groups:
         subjects: chemistry, computing, maths, physics, languages
         name: Sarah Holland
         email: hollands267@saintpetershigh.wigan.sch.uk
-        areas: Chorley, Halton, Lancashire, Leigh, Ormskirk, Skelmersdale, Warrington,
-        Wigan
+        areas: Chorley, Halton, Lancashire, Leigh, Ormskirk, Skelmersdale, Warrington, Wigan
         applications: Open
   South East:
     providers:
