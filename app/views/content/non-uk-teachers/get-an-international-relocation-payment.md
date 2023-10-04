@@ -68,8 +68,8 @@ $applications-open$
 
 The information on this page is for:
 
-* non-UK teachers of languages, physics and general or combined science when it includes physics
-* non-UK trainee teachers of languages and physics   
+* [non-UK teachers of languages, physics and general or combined science when it includes physics](#criteria-for-teachers)
+* [non-UK trainee teachers of languages and physics](#criteria-for-trainee-teachers-fee-paying-and-salaried)   
 
 If you are considering coming to England to teach or train to teach languages or physics, you could be eligible for financial help from the UK government worth £10,000.  
 
