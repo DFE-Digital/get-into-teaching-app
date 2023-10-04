@@ -87,7 +87,7 @@ If you start your teacher training course between September 2023 and July 2024, 
 
 If you do a part-time course and complete less than 25 hours a week, this will be paid in proportion to your course hours.
 
-If you complete your SKE course with compressed hours, this might reduce your bursary amount. How and when your bursary is paid will vary by your training provider.
+If you complete your SKE course with compressed hours, this might reduce your bursary amount. How and when your bursary is paid will vary by training provider.
 
 You can use your SKE bursary for any extra costs you may have while studying, for example, making up for any lost income.
 
