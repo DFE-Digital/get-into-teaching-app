@@ -22,7 +22,11 @@ test:
 
 production: &production
   <<: *default
+  <% if ENV.key?("VCAP_APPLICATION") %>
   url: <%= Rails.application.config.x.vcap_services.dig("postgres", 0, "credentials", "uri") %>
+  <% else %>
+  url: <%= ENV["DATABASE_URL"] %>
+  <% end %>
 
 rolling:
   <<: *production

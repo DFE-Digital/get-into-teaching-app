@@ -24,7 +24,7 @@ You do not need QTS to [teach in further education](/become-a-further-education-
 To train to teach in primary and secondary schools in England, you’ll need:
 
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
-* a bachelor’s degree (this does not have to be in teaching)
+* a bachelor’s degree in any subject
 
 Different training providers may also have specific criteria. For example, some may ask that you have a bachelor’s degree class 2:2 or above.
 
@@ -34,13 +34,13 @@ Talk to your teacher training provider or [find a course](https://www.find-postg
 
 ## What can you teach?
 
-You do not necessarily need a bachelor’s degree in a subject to teach it. It’s up to your teacher training provider to decide if you have the skills and knowledge required.
+Your degree can be in any subject to teach primary or secondary. For secondary courses, your provider will also want to make sure you have a good knowledge of the subject you're applying to teach.
 
-In some cases, you may be able to train to teach a different subject to your degree if:
+This could be through having a degree in the subject, or having:
 
-* you have an A level in the subject
-* your degree is related to but not in the subject – for example, your degree is in engineering but you’d like to teach physics
-* you have an unrelated degree but relevant professional experience
+* an A level in the subject
+* a degree related to but not in the subject – for example, your degree is in engineering but you’d like to teach physics
+* an unrelated degree but relevant professional experience
 
 Talk to your training provider to find out what you can train to teach.
 

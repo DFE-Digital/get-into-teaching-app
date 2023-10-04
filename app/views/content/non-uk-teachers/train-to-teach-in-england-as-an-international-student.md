@@ -183,7 +183,6 @@ Fee-paying courses include:
 
 * university teacher training programmes
 * school-centred initial teacher training (SCITT) programmes
-* School Direct unsalaried teacher training programmes
 
 A salaried teacher training course means you are paid to work in a school while you learn to teach. However, these courses are limited in number and very competitive. Before you apply, contact the salaried teacher training provider to check you meet the entry requirements.
 

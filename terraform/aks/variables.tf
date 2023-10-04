@@ -64,6 +64,10 @@ variable "paas_asset_hostnames" {
 variable "paas_internet_hostnames" {
   default = []
 }
+variable "command" {
+  type = list(string)
+  default = []
+}
 
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)
