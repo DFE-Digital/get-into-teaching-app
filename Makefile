@@ -73,6 +73,10 @@ review_aks: test-cluster
 	$(eval export DEPLOY_ENV=review)
 	$(eval export TF_VAR_pr_number=-${PR_NUMBER})
 
+.PHONY: test_aks
+test_aks: test-cluster
+	$(eval include global_config/test_aks.sh)
+
 .PHONY: production_aks
 production_aks: production-cluster
 	$(eval include global_config/production_aks.sh)
