@@ -15,7 +15,8 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      Teachers and salaried trainees who started their job or course in September 2023 <a href="https://get-a-teacher-relocation-payment.education.gov.uk/"> can now apply for an international relocation payment</a>.You must apply by 31 October 2023.
+      Teachers and salaried trainees who started their job or course in September 2023 <a href="https://get-a-teacher-relocation-payment.education.gov.uk/"> can now apply for an international relocation payment (IRP)</a>.You must apply by 31 October 2023.If you are starting a teaching job after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open in 2024. 
+      If you are a trainee on a fee-paying course, you do not need to apply. [Learn more about the process for fee paying courses](/non-uk-teachers/get-an-international-relocation-payment#how-trainee-teachers-can-get-the-international-relocation-payment).
 keywords:
   - International
   - Overseas
@@ -60,7 +61,7 @@ keywords:
 ---
 $applications-open$
 
-If you are a trainee on a fee-paying course, you do not need to apply. [Learn more about the process for fee paying courses](/non-uk-teachers/get-an-international-relocation-payment#how-trainee-teachers-can-get-the-international-relocation-payment).
+
 
 The information on this page is for:
 
@@ -79,19 +80,29 @@ The international relocation payment (IRP) is designed to cover some of the cost
 
 All eligible applicants will receive a single payment of £10,000 from the Department for Education (DfE) around the end of their first term training or working in England. The IRP is a grant – you will not have to pay this money back. You can only receive the IRP once.
 
+[Learn more about teaching in England if you trained outside the UK](/teach-in-england-if-you-trained-overseas).
+
+[Learn more about training to teach in England as a non-UK citizen](/train-to-teach-in-england-as-an-international-student).
+
 ## Criteria for teachers  
 
 To be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
 
 ### 1. Teaching subject for teachers
 
-You must be employed by and in an English state secondary school on a contract beginning in the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024). Your contract must last at least one year and you must be working as: 
+You must be employed by and in an English state secondary school on a contract beginning in one of the following academic years:
+
+* the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024) 
+
+* the 2024 to 2025 academic year (which runs from 1 September 2024 to 31 August 2025) 
+
+Your contract must last at least one year and you must be working as: 
 
 * a physics teacher
 
 * a general or combined science teacher – you must teach the physics element of these subjects
 
-* a language teacher – any language is eligible except English 
+* a language teacher – any language taught in an English state school is eligible, except English 
 
 If you are employed to teach more than one subject, physics, general or combined science or a language or languages must make up at least 50% of your time in the classroom. The Department for Education will validate this with the school as part of the application process. Check with your school if you're not sure whether you are eligible. 
 
@@ -105,6 +116,24 @@ Examples of eligible teaching jobs include:
 
 * 50% general or combined science (must include the physics element) and 50% maths 
 
+Examples of eligible languages commonly taught in English state secondary schools include: 
+
+* Ancient languages (such as Latin) 
+
+* French 
+
+* German 
+
+* Italian 
+
+* Japanese 
+
+* Mandarin 
+
+* Russian 
+
+* Spanish 
+
 State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
 
 Ongoing or permanent contracts lasting longer than 1 year are also eligible.
@@ -113,7 +142,7 @@ Ongoing or permanent contracts lasting longer than 1 year are also eligible.
 
 ### 2. Type of visa for teachers
 
-You must come to England on one of the visas listed here.  
+You must come to England on one of the visas listed here. Most teachers will need a Skilled worker visa. 
 
 For the following visas, you must have applied for your visa from outside the UK:  
 
@@ -171,21 +200,31 @@ If you miss this deadline, to remain eligible for the IRP you must apply at the 
 
 You will need a teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
-If you are starting a teaching job after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications open in 2024.
+If you are starting a teaching job after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open in 2024.
 
 ## Criteria for trainee teachers (fee-paying and salaried) 
 
-As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements. The eligibility requirements are the same whether you pay a fee for your training course, or are paid a salary to work while you train. However, the application process for the IRP is [different for salaried trainees](#how-trainee-teachers-can-get-the-international-relocation-payment).
+As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 4 of the following requirements. The eligibility requirements are the same whether you pay a fee for your training course, or are paid a salary to work while you train. However, the application process for the IRP is [different for salaried trainees](#how-trainee-teachers-can-get-the-international-relocation-payment).
 
 ### 1. Teaching subject for trainees
 
 You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the 2023 to 2024 academic year. Your teacher training provider must be accredited by the UK government, and you must be training to teach one of the following subjects at secondary level (teaching children aged 11 to 16 or 11 to 18):
 
-* any language(s) except English language, including courses combining language(s) with another subject, as long as language(s) make up at least 50% of the course content
+* French 
 
-* any language(s), including courses combining language(s) with English language, as long as the non-English language(s) make up at least 50% of the course content
+* German 
 
-* physics, including [Engineers teach physics](/subjects/engineers-teach-physics), and courses with content which is at least 50% physics
+* Spanish 
+
+* a combination of French, German or Spanish 
+
+* French, German or Spanish combined with another subject, as long as languages make up at least 50% of the course content 
+
+* French, German or Spanish combined with English language, as long as non-English languages make up at least 50% of course content
+
+* physics
+
+* physics combined with another subject, as long as physics makes up at least 50% of the course content
 
 You can search for [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) accredited by the UK government leading to the award of QTS. You will still be eligible for the international relocation payment if your course leads to PGCE and QTS or PGDE and QTS.
 
@@ -195,9 +234,31 @@ You can contact your teacher training provider to check:
 
 * the content of your teacher training course meets the 50% requirement
 
-### 2. Type of visa for trainees
+### 2. Degree requirements for trainees
 
-You must come to England on one of the visas listed here.  
+If you are starting your teacher training course in or after September 2024, you must have studied for your undergraduate (bachelor’s) degree at a [university recognised](https://www.enic-naric.net/page-recognised-heis) by the European Network of Information Centres (ENIC).
+
+If you are applying to train to teach physics, your bachelor’s degree must: 
+
+* be in physics (not physics combined with another subject) 
+
+* be made up of a minimum of 60% physics modules 
+
+* meet the standard of a UK degree class 2.1 or above 
+
+If you are applying to train to teach French, German or Spanish, your bachelor’s degree must meet the standard of a UK degree class 2.1 or above and be one of the following:  
+
+* a French, German or Spanish degree 
+
+* a degree combining French, German or Spanish 
+
+* a degree in any subject, taught entirely in French, German or Spanish 
+
+Your chosen teacher training provider will be able to tell you whether your degree meets the standard and subject criteria for the international relocation payment.  
+
+### 3. Type of visa for trainees
+
+You must come to England on one of the visas listed here. Most trainees will need a Student visa. Most salaried trainees will need a Skilled worker visa. 
 
 For the following visas, you must have applied for your visa from outside the UK:  
 
@@ -227,7 +288,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 
-### 3. Date of arrival for trainees
+### 4. Date of arrival for trainees
 
 You must move to England no more than 3 months before the start of your course.   
 
@@ -251,7 +312,7 @@ You will not be eligible for the international relocation payment if you are:
 
 ### Fee-paying trainees
 
-If you have a place on a teacher training course where you pay a fee, you do not need to apply for the international relocation payment (IRP). Your training provider will email you if your choice of course makes you eligible for the IRP. Your visa status and date of arrival will be checked by the Department for Education. If you are eligible, you’ll get the IRP around the end of your first term.
+If you have a place on a teacher training course where you pay a fee, you do not need to apply for the international relocation payment (IRP). Your training provider will tell you if your choice of course and bachelor's degree make you eligible for the IRP. Your visa status and date of arrival will be checked by the Department for Education. If you are eligible, you’ll get the IRP around the end of your first term.
 
 If you believe you meet the eligibility requirements, but have not been informed by your teacher training provider that you may be awarded the IRP, please contact your training provider directly first. If your training provider cannot help you, you can email us at teach.inengland@education.gov.uk.
 
@@ -261,7 +322,7 @@ Salaried trainees who have started their training courses can now [apply for the
 
 If you miss this deadline, to remain eligible for the IRP you must apply at the next opportunity after the start of your training course. Applications for salaried trainees will re-open between January 2024 and February 2024. 
 
-If you are starting a salaried course after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications open in 2024. 
+If you are starting a salaried course after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open in 2024. 
 
 
 
@@ -275,9 +336,9 @@ Teachers and salaried trainee teachers will not need to pay an agent or any othe
 
 Your eligibility for the international relocation payment (IRP) will not be affected if you spend short periods in England at a time more than 3 months before the start of your course or job.
 
-Example 1: You attend a job interview in England under a Standard Visitor visa in May 2023. You return home, and learn you have been given the job, which starts in September 2023. You apply for a Skilled worker visa in June 2023, 3 months before the start of your job. You move to England in July 2023. You will still be eligible for the IRP.
+Example 1: You attend a job interview in England under a Standard Visitor visa in May 2024. You return home, and learn you have been given the job, which starts in September 2024. You apply for a Skilled worker visa in June 2024, 3 months before the start of your job. You move to England in July 2024. You will still be eligible for the IRP.
 
-Example 2: You have a UK Ancestry visa and use it to visit relations in England in February 2023. You return home and successfully apply for a place on a teacher training course starting in September 2023. You move to England in June 2023. You will still be eligible for the IRP.
+Example 2: You have a UK Ancestry visa and use it to visit relations in England in February 2024. You return home and successfully apply for a place on a teacher training course starting in September 2024. You move to England in June 2024. You will still be eligible for the IRP.
 
 You will also still be eligible for the IRP if you live in another part of the UK (for example, Scotland or Wales) as long as you are employed in a school in England.  
 
@@ -299,7 +360,7 @@ In order to be paid the IRP, you must have a UK bank account in your name (this 
 
 If you are a teacher or a salaried teacher trainee, you must also have a [UK National Insurance number](https://www.gov.uk/apply-national-insurance-number). You can apply for this once you arrive in England, as long as your visa gives you the right to work and you have a confirmed job.  
 
-Teachers and salaried trainees should receive a single payment from the Department for Education at the end of January 2024. Fee-paying trainees will receive a single payment from their provider around the end of their first term of training. You will be paid as and when your eligibility requirements have been checked – we cannot guarantee an exact payment date.  
+Teachers and salaried trainees should receive a single payment from the Department for Education shortly after the end of their first term of employment as a teacher. Fee-paying trainees will receive a single payment from their provider around the end of their first term of training. You will be paid as and when your eligibility requirements have been checked – we cannot guarantee an exact payment date.  
 
 You will not have to justify any expenses or give us receipts or any other evidence of the relocation costs you have incurred.  
 
@@ -313,7 +374,7 @@ If you were eligible for and have received the international relocation payment,
 
 If you are on a fee-paying teacher training course, you will not have to pay tax on the international relocation payment.  
 
-If you are a teacher, or a trainee on a salaried course, the Department for Education will pay the UK tax owed on the international relocation payment to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 a year in 2023/24. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) and [UK National Insurance](https://www.gov.uk/national-insurance) on any earnings which take you over £50,270.
+If you are a teacher, or a trainee on a salaried course, the Department for Education will pay the UK tax owed on the international relocation payment (IRP) to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 in the year you receive the IRP. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) and [UK National Insurance](https://www.gov.uk/national-insurance) on any earnings which take you over £50,270.
 
 ### Part-time teachers and trainees
 
