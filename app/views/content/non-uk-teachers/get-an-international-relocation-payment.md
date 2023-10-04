@@ -15,8 +15,11 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      Teachers and salaried trainees who started their job or course in September 2023 <a href="https://get-a-teacher-relocation-payment.education.gov.uk/"> can now apply for an international relocation payment (IRP)</a>.You must apply by 31 October 2023.If you are starting a teaching job after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open in 2024. 
-      If you are a trainee on a fee-paying course, you do not need to apply. [Learn more about the process for fee paying courses](/non-uk-teachers/get-an-international-relocation-payment#how-trainee-teachers-can-get-the-international-relocation-payment).
+      <p>Teachers and salaried trainees who started their job or course in September 2023 <a href="https://get-a-teacher-relocation-payment.education.gov.uk/"> can now apply for an international relocation payment (IRP)</a>. You must apply by 31 October 2023.</p>
+      
+      <p>If you are starting a teaching job after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open in 2024.</p> 
+      
+      <p>If you are a trainee on a fee-paying course, you do not need to apply. <a href="/non-uk-teachers/get-an-international-relocation-payment#how-trainee-teachers-can-get-the-international-relocation-payment">Learn more about the process for fee paying courses</a>.</p>
 keywords:
   - International
   - Overseas
@@ -80,9 +83,9 @@ The international relocation payment (IRP) is designed to cover some of the cost
 
 All eligible applicants will receive a single payment of £10,000 from the Department for Education (DfE) around the end of their first term training or working in England. The IRP is a grant – you will not have to pay this money back. You can only receive the IRP once.
 
-[Learn more about teaching in England if you trained outside the UK](/teach-in-england-if-you-trained-overseas).
+[Learn more about teaching in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
-[Learn more about training to teach in England as a non-UK citizen](/train-to-teach-in-england-as-an-international-student).
+[Learn more about training to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
 
 ## Criteria for teachers  
 
