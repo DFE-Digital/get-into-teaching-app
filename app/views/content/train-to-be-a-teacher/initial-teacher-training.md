@@ -53,7 +53,7 @@ environment
 
 ## Your classroom placements
 
-You should get 120 days of classroom experience as part of a postgraduate or 3 year undergraduate teacher training course.
+You should get 120 days of classroom experience as part of a postgraduate teacher training course.
 
 Your placements will be in a minimum of 2 schools. Through your placements, you’ll have the opportunity to teach, plan, observe and research.
 
