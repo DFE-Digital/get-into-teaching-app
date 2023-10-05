@@ -15,7 +15,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 inset_text:
   international-content:
-    text: If you qualified as a teacher outside the UK, you can  teach in England for up to 4 years without QTS. However, having QTS may improve your chances at getting a teaching job in England.
+    text: If you qualified as a teacher outside the UK, you can teach in England for up to 4 years without QTS. However, having QTS may improve your chances at getting a teaching job in England.
     color: grey
 keywords:
   - PGCE
@@ -43,15 +43,15 @@ $international-content$
 
 If your teacher training course leads to QTS: 
 
-* your course will be regulated by the department for education (DfE) ensuring high quality training 
+* your course will be regulated by the Department for Education (DfE) ensuring high quality training 
 * you could be eligible for a scholarship or bursary to help you train
 
 As a teacher with QTS: 
 
 * you'll receive a package of [support for early career teachers](/support-for-early-career-teachers), including a reduced timetable 
-* you'll be paid more by being on the qualified teacher pay range 
+* you'll be paid more on the qualified teacher pay range 
 
-You can also get other academic awards through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-phce) or Bachelor of Education (BEd).
+You can also get other academic awards through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-pgce) or Bachelor of Education (BEd).
 
 But if your course does not lead to QTS, you will not be a qualified teacher.
 
