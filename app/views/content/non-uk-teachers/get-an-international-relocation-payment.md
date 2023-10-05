@@ -209,6 +209,8 @@ If you are starting a teaching job after the end of October 2023, or have missed
 
 As a trainee teacher, to be eligible for the international relocation payment (IRP), you must meet all 4 of the following requirements. The eligibility requirements are the same whether you pay a fee for your training course, or are paid a salary to work while you train. However, the application process for the IRP is [different for salaried trainees](#how-trainee-teachers-can-get-the-international-relocation-payment).
 
+These eligibility requirements apply to trainees starting courses in the 2024 to 2025 academic year. Different eligibility rules apply if your course starts between September 2023 and July 2024. Email us for more information on teach.inengland@education.gov.uk.
+
 ### 1. Teaching subject for trainees
 
 You must have taken up a place on a teacher training course in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) for one of the following academic years:
