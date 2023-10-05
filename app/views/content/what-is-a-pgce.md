@@ -51,6 +51,8 @@ Getting QTS only means that you’re qualified to teach in most schools in Engla
 
 Getting PGCE only means you will not be qualified to teach in most primary, secondary and special schools in England, although some schools will employ teachers without QTS.
 
+You will also not be entitled to the same benefits during your training and career as teachers that have QTS. For example, better pay and support when you start your career.
+
 [Read about Nathan who chose to get QTS with PGCE](/blog/salaried-teacher-training-classroom-learning).
 
 ## Benefits of having a PGCE

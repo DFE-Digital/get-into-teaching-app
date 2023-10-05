@@ -15,7 +15,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 inset_text:
   international-content:
-    text: If you qualified as a teacher outside the UK, you can  teach in England for up to 4 years without QTS.
+    text: If you qualified as a teacher outside the UK, you can  teach in England for up to 4 years without QTS. However, having QTS may improve your chances at getting a teaching job in England.
     color: grey
 keywords:
   - PGCE
@@ -31,13 +31,29 @@ keywords:
   - State-school
 ---
 
-You need qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England. These are schools funded by local authorities.
+You need English qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England. These are schools funded by local authorities.
 
-Some schools can employ teachers without QTS (for example, [private schools](https://www.gov.uk/types-of-school/private-schools) and [academy schools](https://www.gov.uk/types-of-school/academies)) but many still use it to assess the quality of candidates.
+Some schools can employ teachers without QTS (for example, [private schools](https://www.gov.uk/types-of-school/private-schools) and [academy schools](https://www.gov.uk/types-of-school/academies)) but most still prefer teachers to have it.
 
 You do not need QTS to teach in [further education](/become-a-further-education-teacher) or work in [early years education](/early-years-teaching-training).
 
 $international-content$
+
+## What are the benefits of QTS? 
+
+If your teacher training course leads to QTS: 
+
+* your course will be regulated by the department for education (DfE) ensuring high quality training 
+* you could be eligible for a scholarship or bursary to help you train
+
+As a teacher with QTS: 
+
+* you'll receive a package of [support for early career teachers](/support-for-early-career-teachers), including a reduced timetable 
+* you'll be paid more by being on the qualified teacher pay range 
+
+You can also get other academic awards through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-phce) or Bachelor of Education (BEd).
+
+But if your course does not lead to QTS, you will not be a qualified teacher.
 
 ## Get QTS through teacher training
 
