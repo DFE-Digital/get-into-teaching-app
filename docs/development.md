@@ -1,4 +1,4 @@
-# Development
+# Development
 
 ## Setting up the app in development
 
