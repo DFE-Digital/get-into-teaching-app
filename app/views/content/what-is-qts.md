@@ -49,7 +49,7 @@ If your teacher training course leads to QTS:
 As a teacher with QTS: 
 
 * you'll receive a package of [support for early career teachers](/support-for-early-career-teachers), including a reduced timetable 
-* you'll be paid more on the qualified teacher pay range 
+* you'll be on the qualified teacher pay range and receive a higher salary than teachers without QTS
 
 You can also get other academic awards through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-pgce) or Bachelor of Education (BEd).
 
