@@ -124,15 +124,10 @@ Examples of eligible languages commonly taught in English state secondary school
 * Ancient languages (such as Latin) 
 * French 
 * German 
-
 * Italian 
-
 * Japanese 
-
 * Mandarin 
-
 * Russian 
-
 * Spanish 
 
 State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 or 11 to 18. You will not be eligible if you teach in a school for pupils aged 16 to 18 only.  
