@@ -63,7 +63,7 @@ You can apply for either a primary or secondary teacher training course awarding
 
 You can also get a postgraduate qualification through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-pgce). 
 
-Some courses just offer a PGCE without QTS, but this means you may not be fully qualified to teach in your chosen school.
+Some courses just offer a PGCE without QTS, but this means you may not be fully qualified to teach in your chosen school or entitled to the same benefits.
 
 [Find out how to get QTS through teacher training](/train-to-be-a-teacher).
 

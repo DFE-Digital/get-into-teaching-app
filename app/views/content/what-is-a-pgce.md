@@ -61,9 +61,9 @@ A PGCE can give you a better understanding of teaching practices, educational re
 
 It can also be beneficial if you want to teach in other countries because it’s an internationally recognised academic qualification. However, you should always check the local requirements of the country you’re looking to teach in.
 
-It can also award up to 60 credits at Master’s level which you could use towards a full Master’s qualification. This is usually 180 credits.
+It can also award up to 60 credits at master’s level which you could use towards a full master’s qualification. This is usually 180 credits.
 
-You may want to do a Master’s in education, for example, for your professional development and to gain additional expertise in your teaching career.
+You may want to do a master’s in education, for example, for your professional development and to gain additional expertise in your teaching career.
 
 ## Types of PGCE courses
 
@@ -89,6 +89,6 @@ You also need the following GCSEs at grade 4 (C) or above, or equivalent qualifi
 
 A PGDE in England is very similar to a PGCE, the difference being the number of academic credits you are awarded at the end of your course.
 
-PGCE courses can contain up to 60 credits at Master’s degree level, and PGDE courses can contain up to 120. This usually means that doing a PGDE will include more assignments.
+PGCE courses can contain up to 60 credits at master’s degree level, and PGDE courses can contain up to 120. This usually means that doing a PGDE will include more assignments.
 
 More teacher training providers offer a PGCE than a PGDE.
