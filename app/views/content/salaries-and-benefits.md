@@ -56,9 +56,9 @@ keywords:
 
 $new-salaries$
 
-If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on. 
+If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on.
 
-The pay ranges below apply to maintained schools (schools funded by local authorities). 
+The pay ranges below apply to maintained schools (schools funded by local authorities).
 
 Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges. 
 
@@ -66,7 +66,7 @@ Figures apply from 1 September 2023.
 
 ## Primary and secondary teacher salary
 
-You’ll start on at least £30,000 (or more in London) as a primary or secondary school teacher in England. 
+If you have [qualified teacher status (QTS)](/what-is-qts), you’ll start on at least £30,000 (or more in London) as a primary or secondary school teacher in England. 
 
 Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.    
 
@@ -129,11 +129,13 @@ Their role is wide ranging, but includes leading and motivating teachers, and en
 
 You need qualified teacher status (QTS) to work in maintained primary, secondary and special schools in England. 
 
-If you do not have QTS, you can work in some schools as an unqualified teacher. 
+If you do not have QTS (for example, if you just have a PGCE), you can work in some schools as an unqualified teacher.
+
+This means you will be on a lower pay range and will not be entitled to the same benefits as a teacher with QTS.
 
 If you're already working as an unqualified teacher and have the right experience, you could be eligible for the [assessment only route to qualified teacher status (QTS)](/train-to-be-a-teacher/assessment-only-route-to-qts).
 
-Or find out how you can earn an unqualified teacher salary while training to teach on a [salaried teacher training course](/funding-and-support/salaried-teacher-training).
+Or find out how you can earn an unqualified teacher salary while training to get QTS on a [salaried teacher training course](/funding-and-support/salaried-teacher-training).
 
 ### Unqualified teacher salary
 

@@ -74,7 +74,7 @@ Getting a PGCE can help you:
 
 You can also do a teacher training course to just get a postgraduate certificate in education (PGCE) without QTS.
 
-If you just get a PGCE without QTS, you may not be fully qualified to teach in your chosen school.
+If you just get a PGCE without QTS, you may not be fully qualified to teach in your chosen school and will not be entitled to the same pay and benefits as a teacher with QTS.
 
 ## Non-salaried teacher training
 

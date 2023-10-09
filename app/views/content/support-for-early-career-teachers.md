@@ -18,6 +18,8 @@ During your 2 year induction, you’ll receive a package of training and support
 
 This won’t impact your pay or progression opportunities. You’ll still be able to progress on the pay scale during your induction period.
 
+If your teacher training course does not lead to English qualified teacher status (QTS) (for example, if your course only leads to a PGCE or other academic award) you will not receive the following support.
+
 ## ECF-based training
 
 You’ll receive training based on the early career framework (ECF) as part of your induction period. This is called ECF-based training.
