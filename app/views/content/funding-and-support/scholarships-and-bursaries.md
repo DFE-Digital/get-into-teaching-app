@@ -46,7 +46,6 @@ You cannot receive a scholarship or bursary if you're on a [salaried teacher tra
 | **Art and design**                                     | £10,000  |                  |
 | **Biology**                                            | £25,000  |                  |
 | **Chemistry**                                          | £28,000  | £30,000          |
-| **Citizenship**                                        | £10,000  |                  |
 | **Computing**                                          | £28,000  | £30,000          |
 | **Design and technology**                              | £25,000  |                  |
 | **English**                                            | £10,000  |                  |
