@@ -11,7 +11,7 @@
 
   .prev,
   .first {
-    padding-right: 8px;
+    padding-right: 15px;
   }
 
   .next,
@@ -28,5 +28,23 @@
 
   .current {
     font-weight: bold;
+  }
+
+  @include mq($until: mobile) {
+    .prev,
+    .first {
+      padding-right: 12px;
+    }
+  
+    .next,
+    .last {
+      padding-left: 12px;
+    }
+
+    .page a,
+    .current,
+    .gap {
+      margin: 0 4px;
+    }  
   }
 }
