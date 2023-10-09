@@ -15,7 +15,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 inset_text:
   international-content:
-    text: If you qualified as a teacher outside the UK, you can teach in England for up to 4 years without QTS. However, having QTS may improve your chances at getting a teaching job in England.
+    text: If you qualified as a teacher outside the UK, you can teach in England for up to 4 years without QTS. However, having QTS may improve your chances of getting a teaching job in England.
     color: grey
 keywords:
   - PGCE
