@@ -122,7 +122,6 @@ Examples of eligible teaching jobs include:
 Examples of eligible languages commonly taught in English state secondary schools include: 
 
 * Ancient languages (such as Latin) 
-
 * French 
 
 * German 
