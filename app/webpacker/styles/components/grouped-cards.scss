@@ -45,8 +45,21 @@
       &__fields p {
         @include font-size(xsmall);
         white-space: normal;
+        margin-bottom: 1em;
 
-        a { overflow-wrap: break-word; }
+        a { 
+          overflow-wrap: break-word;
+          color: $blue-dark;
+        }
+      }
+
+      &__fields:last-child,
+      &__fields p:last-child {
+        margin-bottom: 0;
+      }
+
+      &__fields span:first-child {
+        font-weight: bold;
       }
     }
   }
