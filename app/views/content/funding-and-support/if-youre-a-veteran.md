@@ -36,14 +36,14 @@ There are full and part-time teacher training courses available.
 You may be eligible for a tax-free undergraduate bursary of £40,000 if you are (all of the following):
 
 * a veteran who has left full-time employment with the British Army, Royal Air Force or Royal Navy no more than 5 years before the start of the course
-* training to teach secondary biology, physics, chemistry, computing, maths or languages
+* training to teach secondary biology, chemistry, computing, languages, maths or physics
 * doing an undergraduate degree leading to [qualified teacher status (QTS)](/what-is-qts) in England
 
 Doing an undergraduate degree leading to QTS means that you would be qualified to teach in England.
 
 You do not need to apply for a bursary to get one. Your teacher training provider will determine if you're eligible.
 
-You’ll receive £20,000 in each of the last 2 years of your course in equal monthly instalments.
+You’ll receive £20,000 in each of the last 2 years of your course in equal monthly instalments. 
 
 ## Postgraduate scholarships and bursaries
 

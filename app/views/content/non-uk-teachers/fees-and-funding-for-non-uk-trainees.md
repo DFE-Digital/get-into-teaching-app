@@ -15,10 +15,6 @@ navigation_description: Learn more about teacher training fees in England and fi
 date: "2021-05-27"
 image: "static/content/hero-images/0002.jpg"
 backlink: "../../"
-inset_text:
-  funding-holding-message:
-    text: |-
-      The bursary and scholarship amounts on this page apply if you're starting your teacher training course between September 2023 and July 2024. Financial support for courses starting the following year will be announced in autumn 2023.
 keywords:
   - International
   - Overseas
@@ -62,8 +58,6 @@ keywords:
   - Settlement Scheme
 ---
 
-$funding-holding-message$
-
 If you’re applying for teacher training as a non-UK citizen, you may be able to get some financial support from the UK government.
 
 Your eligibility for support will depend on your [immigration status](#check-your-immigration-status-and-eligibility-for-financial-support) and choice of subject. Most non-UK citizens without some type of settled status in the UK will not be eligible, unless they train to teach languages or physics.
@@ -90,8 +84,8 @@ You can apply for a [salaried teacher training course](/funding-and-support/sala
 There are 3 types of financial support you can get if you’re interested in training to teach languages and physics:
 
 * an international relocation payment worth £10,000 for languages and physics
-* bursaries worth up to £27,000 for languages and physics
-* scholarships worth up to £29,000 for French, German, Spanish and physics
+* bursaries worth up to £28,000 for languages and physics
+* scholarships worth up to £30,000 for French, German, Spanish and physics
 
 If you are eligible, you can receive both an international relocation payment and a bursary or scholarship. You cannot receive both a bursary and a scholarship.
 
@@ -117,10 +111,10 @@ You do not need to apply for a bursary – it will automatically be awarded to y
 
 You may get a:
 
-* physics bursary of £27,000
+* physics bursary of £28,000
 * languages bursary of £25,000
 
-To be eligible, you’ll need a place on a course training to teach languages or physics with an accredited teacher training provider in England, in the academic year 2023 to 2024.
+To be eligible, you’ll need a place on a course training to teach languages or physics with an accredited teacher training provider in England, in the academic year 2024 to 2025.
 
 You’ll also need at least one of the following:
 
@@ -140,10 +134,10 @@ If you’re successful, your teacher training provider will pay the scholarship 
 
 You may get a:
 
-* physics scholarship of £29,000
+* physics scholarship of £30,000
 * French, German or Spanish scholarship of £27,000
 
-To apply for a scholarship, you’ll need a place on a course training to teach French, German, Spanish or physics with an accredited teacher training provider in England, in the academic year 2023 to 2024.
+To apply for a scholarship, you’ll need a place on a course training to teach French, German, Spanish or physics with an accredited teacher training provider in England, in the academic year 2024 to 2025.
 
 You’ll also need at least one of the following:
 
