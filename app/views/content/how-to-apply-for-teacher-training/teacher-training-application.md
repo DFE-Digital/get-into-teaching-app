@@ -56,11 +56,15 @@ While you do not need a PGCE to teach in England, you do need QTS to teach in ma
 
 ## When should I apply for teacher training? 
 
-You can start applying for courses from October, ready to start the following September (some courses may start at other points during the year).   
+You can start applying for courses from October, ready to start the following September (some courses may start at other points during the year).
 
-Teacher training providers allocate places as people apply, so some courses can get full quickly. 
+It’s wise to apply as soon as you’re ready as:
 
-It’s wise to apply as soon as you’re ready so you don’t miss out. 
+* training providers allocate places as people apply, so some courses can get full quickly 
+
+* providers may set conditions of offer, such as completing a [subject knowledge enhancement (SKE) course](/how-to-apply-for-teacher-training/subject-knowledge-enhancement) before you start your training 
+
+* this will give you more time to plan how to fund your training 
 
 ## What do I need to include in my teacher training application? 
 

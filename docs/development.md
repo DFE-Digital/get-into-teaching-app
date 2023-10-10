@@ -1,11 +1,11 @@
-# Development
+# Development
 
 ## Setting up the app in development
 
 * Run `bundle install` to install the gem dependencies
 * Run `yarn` to install node dependencies
 * Run `rails db:prepare` to setup the database
-* Run `az login` and then `make local set-local-env` to populate development secrets
+* Run `az login` and then `make local setup-local-env` to populate development secrets
 * Run `bundle exec rails server` to launch the app on http://localhost:3000
 * Run `./bin/webpacker-dev-server` in a separate shell for faster compilation of assets
 

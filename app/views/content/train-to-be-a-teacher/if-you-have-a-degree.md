@@ -74,7 +74,7 @@ Getting a PGCE can help you:
 
 You can also do a teacher training course to just get a postgraduate certificate in education (PGCE) without QTS.
 
-If you just get a PGCE without QTS, you may not be fully qualified to teach in your chosen school.
+If you just get a PGCE without QTS, you may not be fully qualified to teach in your chosen school and will not be entitled to the same pay and benefits as a teacher with QTS.
 
 ## Non-salaried teacher training
 
@@ -90,12 +90,7 @@ You can apply for a student loan regardless of the course you choose, even if yo
 
 ### Teacher training courses
 
-Your teacher training course might be provided by a university, school, college or group of schools. Your course might be referred to as:
-
-* school-centred initial teacher training (SCITT)
-* School Direct (there are salaried and non-salaried School Direct courses)
-
-The content of SCITT and School Direct programmes are broadly the same.
+Your teacher training course might be provided by a university, school, college or group of schools.
 
 As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
 
@@ -124,7 +119,7 @@ You should talk to teacher training providers about where your school placements
 
 ## Salaried teacher training
 
-Salaried courses are sometimes available for specific candidates, such as if you’re working as an unqualified teacher or teaching assistant. These include School Direct (salaried) courses, postgraduate teaching apprenticeships and teacher training delivered by Teach First.
+Salaried courses are sometimes available for specific candidates, such as if you’re working as an unqualified teacher or teaching assistant. These include School Direct salaried courses, postgraduate teaching apprenticeships and teacher training delivered by Teach First.
 
 These are in high demand and very competitive. Places fill up quickly.
 

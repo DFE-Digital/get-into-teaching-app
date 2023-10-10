@@ -32,6 +32,11 @@ provider_groups:
       name: Karen Bateman
       telephone: '01582 599921'
       email: kbateman@challneyboys.luton.sch.uk
+    - header: Colchester Teacher Training Consortium (CTTC)
+      link: https://www.colchesterttc.org.uk/
+      name: Christine Wager
+      telephone: 01206 364728
+      email: enquiries@colchesterttc.org.uk
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
@@ -117,7 +122,7 @@ provider_groups:
       email: gutprecruitment@sponne.org.uk
     - header: University of Derby
       link: https://www.derby.ac.uk/
-      name: Charlotte Bray
+      name: Jayne Leggott
       email: AO@derby.ac.uk
     - header: University of Northampton
       email: admissions@northampton.ac.uk

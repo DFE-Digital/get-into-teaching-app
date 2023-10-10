@@ -13,7 +13,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-ske
 inset_text:
   international-content:
-    text: If you’re a non-UK citizen, you’ll only be eligible for a SKE bursary if you’re training to teach physics or modern foreign languages.
+    text: If you’re a non-UK citizen, you may be eligible for a SKE bursary if you’re training to teach physics or modern foreign languages.
     color: grey
 youtube_video:
   ske-course-video:
@@ -29,21 +29,23 @@ keywords:
   - enhance
 ---
 
-You may be able to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
+You might need to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
 
-This can help when you have (one or more of the following):
+This could be because you have (one or more of the following):
 
 * finished your degree more than 5 years ago
 * a different but related degree to the subject you want to teach
 * an A level but not a degree in the subject you want to teach
 * an unrelated degree but relevant professional experience
-* studied for a languages degree, but need to develop a second language to an acceptable level for teaching in schools
+* studied for a languages degree, but need to improve knowledge either in a main language, second language or both to an acceptable level for teaching in schools
 
 ## How to do an SKE course
 
-When you apply for teacher training in England, talk to your training provider if you think you need to improve your subject knowledge. They’ll help you decide if you need to complete an SKE course, and may make it a condition of their offer to train with them.
+If your training provider thinks you need to improve your subject knowledge then they might decide that you'll benefit from an SKE course. 
 
-You’ll choose your SKE course provider, but your teacher training provider can help you decide on the right one for you.
+You can only complete a funded SKE course if your training provider makes it a condition of the offer to train with them.
+
+You'll choose your SKE course provider, but your teacher training provider can help to decide on the right one for you.
 
 ### SKE subjects
 
@@ -71,9 +73,9 @@ $ske-course-video$
 
 They're usually online, but some courses can be classroom based and some can be a mixture of both. 
 
-Course lengths usually range from 8 to 28 weeks and are 25 hours per week. Your provider will decide which course length is appropriate based on your gap in knowledge. Different providers may offer different course lengths.
+Course lengths range from 8 to 28 weeks and are 25 hours per week. Your provider will decide which course length you need based on your gap in knowledge. Different providers may offer different course lengths.
 
-You can also do a part-time course and complete it over a longer period, or sometimes shorter. Your SKE provider will be able to discuss your options with you.
+You can do a part-time course and complete it over a longer period or complete it in a shorter time with compressed hours. Your SKE provider will be able to discuss your options with you.
 
 ## When to complete your course
 
@@ -81,15 +83,19 @@ You should complete your course before starting your teacher training. If you ru
 
 ## Get an SKE bursary
 
-If you train to teach in the 2022/23 academic year, you could be eligible for a bursary of £175 per week to complete your SKE course. If you do a part-time course and complete less than 25 hours a week, this will be paid in proportion to your course hours. How and when your bursary is paid will vary by your training provider.
+If you start your teacher training course between September 2023 and July 2024, you could be eligible for a bursary of £175 per week to complete your SKE course. 
 
-You can use your SKE bursary for any extra costs you may have, for example, making up for any lost income.
+If you do a part-time course and complete less than 25 hours a week, this will be paid in proportion to your course hours.
+
+If you complete your SKE course with compressed hours, this might reduce your bursary amount. How and when your bursary is paid will vary by training provider.
+
+You can use your SKE bursary for any extra costs you may have while studying, for example, making up for any lost income.
 
 ### Eligibility for an SKE bursary
 
 You’ll need (one of the following):
 
-* a bachelor’s degree class 2:2 or above 
+* a bachelor’s degree class 2:2 or above
 * a master’s degree
 * a PhD
 

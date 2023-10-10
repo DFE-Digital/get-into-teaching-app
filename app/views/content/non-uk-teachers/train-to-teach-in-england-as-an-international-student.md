@@ -183,7 +183,6 @@ Fee-paying courses include:
 
 * university teacher training programmes
 * school-centred initial teacher training (SCITT) programmes
-* School Direct unsalaried teacher training programmes
 
 A salaried teacher training course means you are paid to work in a school while you learn to teach. However, these courses are limited in number and very competitive. Before you apply, contact the salaried teacher training provider to check you meet the entry requirements.
 
@@ -214,6 +213,8 @@ You can also search courses by:
 ### Writing your personal statement
 
 It's important that you give yourself time to write the best possible [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
+
+Your personal statement should be between 500 and 1000 words long. 90% of successful candidates write 500 words or more.
 
 Your [teacher training adviser](#get-support-and-advice) can help you write your personal statement and will also give advice on: 
 
