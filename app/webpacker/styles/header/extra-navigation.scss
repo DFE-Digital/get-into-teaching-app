@@ -71,22 +71,28 @@
     }
   }
 
-  &__search a {
-    background-color: $pink;
-    margin-left: 1em;
-    padding: .6em $indent-amount / 2;
-    line-height: 28px;
-
-    &:hover {
-      background-color: $pink-dark;
+  &__search {
+    @include mq($until: mobile) {
+      margin-left: auto;
     }
 
-    &:focus {
-      background-color: $black;
-    }
+    a {
+      background-color: $pink;
+      margin-left: 1em;
+      padding: .6em $indent-amount / 2;
+      line-height: 28px;
 
-    .icon {
-      margin: 0;
+      &:hover {
+        background-color: $pink-dark;
+      }
+
+      &:focus {
+        background-color: $black;
+      }
+
+      .icon {
+        margin: 0;
+      }
     }
   }
 
