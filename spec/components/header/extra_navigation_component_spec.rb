@@ -9,8 +9,7 @@ describe Header::ExtraNavigationComponent, type: "component" do
 
   specify "renders the extra navigation container with contents" do
     expect(page).to have_css(".extra-navigation") do |en|
-      expect(en).to have_css("ul.extra-navigation__list > span.extra-navigation__flex > li", count: 2)
-      expect(en).to have_css("ul.extra-navigation__list > li", count: 1)
+      expect(en).to have_css("ul.extra-navigation__list.extra_navigation__flex > li", count: 3)
     end
   end
 
