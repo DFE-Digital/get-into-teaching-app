@@ -44,6 +44,7 @@ runs:
              tf_vars_file=terraform/aks/config/${{ inputs.environment }}.tfvars.json
              terraform_version=$(awk '/{/{f=/^terraform/;next}f' terraform/aks/terraform.tf | grep -o [0-9\.]*)
              cluster=$(jq -r '.cluster' ${tf_vars_file})
+             appenv=$(jq -r '.environment' ${tf_vars_file})
              cluster_domain=".${cluster}"
              echo "TERRAFORM_VERSION=$terraform_version" >> $GITHUB_ENV
 
@@ -53,7 +54,7 @@ runs:
                  echo "pr_name=${pr_name}" >> $GITHUB_OUTPUT
                  echo "healthcheck=${pr_name}${cluster_domain}" >> $GITHUB_OUTPUT
              else
-                 echo "healthcheck=${{env.AKS_APPLICATION_NAME}}-${{inputs.ENVIRONMENT}}${cluster_domain}" >> $GITHUB_OUTPUT
+                 echo "healthcheck=${{env.AKS_APPLICATION_NAME}}-${appenv}${cluster_domain}" >> $GITHUB_OUTPUT
              fi
 
       - name: Fetch secrets from key vault

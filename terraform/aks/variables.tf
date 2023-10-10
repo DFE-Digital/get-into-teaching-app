@@ -68,6 +68,14 @@ variable "command" {
   type = list(string)
   default = []
 }
+variable "replicas" {
+  default = 1
+  type = number
+}
+variable "memory_max" {
+  default = "1Gi"
+  type = string
+}
 
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)

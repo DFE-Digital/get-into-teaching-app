@@ -41,6 +41,8 @@ module "web_application" {
   service_name = var.service_name
   probe_path   = "/check"
   command      = var.command
+  max_memory   = var.memory_max
+  replicas     = var.replicas
 
   cluster_configuration_map  = module.cluster_data.configuration_map
   kubernetes_config_map_name = module.application_configuration.kubernetes_config_map_name

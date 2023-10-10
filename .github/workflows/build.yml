@@ -574,6 +574,80 @@ jobs:
           RELEASE_ID: ${{ steps.release.outputs.id }}
           TOKEN: ${{secrets.GITHUB_TOKEN}}
 
+  development_aks:
+    name: Development AKS Deployment
+    needs: [  feature_tests, javascript_tests, build_release  ]
+    if: github.ref == 'refs/heads/master'
+    concurrency: Development_aks
+    continue-on-error: true
+    runs-on: ubuntu-latest
+    environment:
+      name: development_aks
+    outputs:
+      release_tag: ${{steps.tag_version.outputs.pr_number}}
+      release_sha: ${{github.sha }}
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+        with:
+          var_file: .github/common_environment_aks.yml
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Fetch secrets from key vault
+        uses: azure/CLI@v1
+        id: keyvault-yaml-secret
+        with:
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+
+      - name: Deploy to Development AKS
+        uses: ./.github/workflows/actions/deploy_v2
+        id: deploy_v2
+        with:
+          environment: development_aks
+          sha:  ${{ github.sha }}
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
+
+# Uncomment when PaaS dev deploy step is removed
+      # - name: Generate Tag from PR Number
+      #   id: tag_version
+      #   uses: DFE-Digital/github-actions/GenerateReleaseFromSHA@master
+      #   with:
+      #     sha: ${{github.sha}}
+
+# Uncomment when PaaS dev deploy step is removed
+      # - name: Create a GitHub Release
+      #   id: release
+      #   if: steps.tag_version.outputs.pr_found == 1
+      #   uses: actions/create-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: ${{ steps.tag_version.outputs.pr_number }}
+      #     body: ${{ steps.tag_version.outputs.pr_number }}
+      #     release_name: Release ${{ steps.tag_version.outputs.pr_number }}
+      #     commitish: ${{ github.sha}}
+      #     prerelease: false
+
+# Uncomment when PaaS dev deploy step is removed
+      # - name: Copy PR Info to Release
+      #   if: steps.release.outputs.id
+      #   uses: DFE-Digital/github-actions/CopyPRtoRelease@master
+      #   with:
+      #     PR_NUMBER:  ${{ steps.tag_version.outputs.pr_number }}
+      #     RELEASE_ID: ${{ steps.release.outputs.id }}
+      #     TOKEN: ${{secrets.GITHUB_TOKEN}}
+
   owasp:
     name: OWASP Checks
     needs: [ development ]
@@ -587,6 +661,27 @@ jobs:
         id: deploy
         with:
           environment: Development
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
+          GITHUB_TOKEN:      ${{secrets.GITHUB_TOKEN}}
+
+  owasp_aks:
+    name: OWASP AKS Checks
+    needs: [ development_aks ]
+    runs-on: ubuntu-latest
+    environment:
+      name: development_aks
+    continue-on-error: true
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Vunerability Test
+        uses: ./.github/workflows/actions/owasp_v2
+        id: deploy
+        with:
+          environment: development_aks
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
