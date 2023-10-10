@@ -17,7 +17,6 @@
 
   &__flex {
     display: flex;
-    margin-right: 1em;
 
     @include mq($until: mobile) {
       margin-right: auto;
@@ -74,6 +73,7 @@
 
   &__search a {
     background-color: $pink;
+    margin-left: 1em;
     padding: .6em $indent-amount / 2;
     line-height: 28px;
 
