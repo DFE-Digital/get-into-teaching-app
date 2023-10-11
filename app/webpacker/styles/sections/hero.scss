@@ -171,18 +171,6 @@ $mobile-cutoff: 800px;
     background-color: $yellow-dark;
   }
 
-  &.blend-content {
-    padding-bottom: 4em;
-
-    @include mq($from: tablet) {
-      padding-bottom: 5em;
-    }
-
-    & + .main-section {
-      margin-top: -4em;
-    }
-  }
-
   &__title {
     z-index: 20;
   }
