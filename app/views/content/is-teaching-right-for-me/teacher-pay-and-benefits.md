@@ -164,4 +164,4 @@ It is a 'defined benefit' pension and is:
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
-You also get other insurance benefits too. Find out more about the [teachers' pension scheme](/what-pension-does-a-teacher-get).
+You also get other insurance benefits too. Find out more about the [teachers' pension scheme](/is-teaching-right-for-me/what-pension-does-a-teacher-get).
