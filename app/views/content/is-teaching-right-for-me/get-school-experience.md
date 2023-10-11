@@ -61,7 +61,7 @@ $get-school-experience$
 
 ### Teaching internships
 
-A paid [teaching internship](/is-teaching-right-for-me/teaching-internship-providers) could help you to understand what it’s really like in the classroom if you’re currently doing an undergraduate degree and are interested in teaching:
+A [paid teaching internship](/is-teaching-right-for-me/teaching-internship-providers) could help you to understand what it’s really like in the classroom if you’re currently doing an undergraduate degree and are interested in teaching:
 
 - chemistry
 - computing

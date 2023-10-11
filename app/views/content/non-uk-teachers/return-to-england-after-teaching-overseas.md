@@ -5,7 +5,7 @@ backlink: "../../"
 description: |-
   Return to England after teaching outside the UK and bring your skills and experience back to an English classroom. Get support to make your transition easier.
 related_content:
-    Teachers pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
+    Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
     Returning to teaching with international experience : "/blog/returning-to-teaching-with-international-experience"
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-returners
