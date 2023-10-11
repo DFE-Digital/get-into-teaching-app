@@ -342,9 +342,9 @@ provider_groups:
       telephone: '0118 378 2672'
       email: vrs17a3@reading.ac.uk
     - header: University of Sussex
-      link: https://www.sussex.ac.uk/
-      name: Mike Lambert
-      email: mike.lambert@sussex.ac.uk
+      link: https://www.sussex.ac.uk/education/ite/assessmentonly
+      name: Mike Lambert / Diane Carr
+      email: AOQTS@sussex.ac.uk
     - header: University of Winchester
       link: https://www.winchester.ac.uk/pages/home.aspx
       name: Keith Smith
@@ -403,6 +403,10 @@ provider_groups:
       link: https://knste-shaw.org.uk/assessment-only-route
       telephone: '01782 432537'
       email: ao@knste-shaw.org.uk
+    - header: National Institute of Teaching and Education, Coventry University
+      link: https://www.coventry.ac.uk/nite/about-us/services/assessment-route-to-qts/
+      telephone: 024 7765 0660
+      email: nite@coventry.ac.uk
     - header: St. Joseph's College Stoke Secondary Partnership
       link: http://www.stjosephstrentvale.com/teaching-school/partnership/
       email: schater@stjosephsmail.com
@@ -414,10 +418,6 @@ provider_groups:
     - header: The Coventry SCITT
       link: https://www.coventryscitt.org.uk
       email: info@coventryscitt.org.uk
-    - header: The National School of Education and Teaching, Coventry University
-      name: Carol Rowntree
-      telephone: 01327 850320
-      email: NSET@coventry.ac.uk
     - header: The OAKS (Ormiston and Keele SCITT)
       name: Rob Tweats
       telephone: '01782 734332'
