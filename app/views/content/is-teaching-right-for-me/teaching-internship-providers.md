@@ -14,7 +14,7 @@ inset_text:
      Applications are now open for teaching internships starting in Summer 2024.
 backlink: /
 fullwidth: true
-navigation: 5.40
+navigation: 5.55
 navigation_title: Can I do a teaching internship?
 navigation_description: Earn £300 per week and find out what it is really like in the classroom with a teaching internship.
 content:
