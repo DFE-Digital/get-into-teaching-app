@@ -11,7 +11,7 @@ promo_content:
 inset_text:
   applications-open:
     text: |-
-     Applications are now open for teaching internships starting in Summer 2024.
+     Applications are now open for teaching internships starting in summer 2024.
 backlink: /
 fullwidth: true
 navigation: 5.55
