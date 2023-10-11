@@ -317,6 +317,7 @@ redirects:
   "/salaries-and-benefits": /is-teaching-right-for-me/teacher-pay-and-benefits
   "/teaching-internship-providers": "/is-teaching-right-for-me/teaching-internship-providers"
   "/train-to-be-a-teacher/if-you-want-to-change-career": "/is-teaching-right-for-me/if-you-want-to-change-career"
+  "/train-to-be-a-teacher/who-do-you-want-to-teach": "/is-teaching-right-for-me/who-do-you-want-to-teach"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"
