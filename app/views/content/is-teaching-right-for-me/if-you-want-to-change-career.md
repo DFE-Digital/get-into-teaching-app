@@ -13,7 +13,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-career-changers
 navigation: 5.30
 navigation_title: How do I change to a career in teaching?
-navigation_description: Use the experience you’ve gathered so far to inspire students and train to bring your skills and expertise to the classroom.
+navigation_description: Explore using your experience to inspire students by bringing your skills and expertise to the classroom.
 ---
 
 A career change into teaching allows you to use the skills and expertise you’ve already developed to inspire young people.
