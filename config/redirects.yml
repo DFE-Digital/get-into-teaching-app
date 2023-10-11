@@ -153,7 +153,7 @@ redirects:
   "/funding-my-teacher-training/extra-financial-support": "/funding-and-support"
   "/funding-my-teacher-training/tuition-fee-and-maintenance-loans": "/funding-and-support/tuition-fee-and-maintenance-loans"
   "/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training/troops-bursary": "/funding-and-support/if-youre-a-veteran"
-  "/teachers-salary-and-teaching-benefits/teachers-pension-scheme": "/what-pension-does-a-teacher-get"
+  "/teachers-salary-and-teaching-benefits/teachers-pension-scheme": "/is-teaching-right-for-me/what-pension-does-a-teacher-get"
   "/teachers-salary-and-teaching-benefits": "/is-teaching-right-for-me/teacher-pay-and-benefits"
   "/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training/funding-for-undergraduate-teacher-training": "/funding-and-support"
   "/teachers-salary-and-teaching-benefits/teachers-pay-scale-salary": "/is-teaching-right-for-me/teacher-pay-and-benefits"
@@ -318,6 +318,7 @@ redirects:
   "/teaching-internship-providers": "/is-teaching-right-for-me/teaching-internship-providers"
   "/train-to-be-a-teacher/if-you-want-to-change-career": "/is-teaching-right-for-me/if-you-want-to-change-career"
   "/train-to-be-a-teacher/who-do-you-want-to-teach": "/is-teaching-right-for-me/who-do-you-want-to-teach"
+  "/what-pension-does-a-teacher-get": "/is-teaching-right-for-me/what-pension-does-a-teacher-get"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"
@@ -332,7 +333,7 @@ redirects:
 
   # Blog pages
   "/blog/5-reasons-to-attend-a-train-to-teach-event": "/blog/5-reasons-to-attend-a-get-into-teaching-event"
-  "/blog/teachers-pension-scheme": "/what-pension-does-a-teacher-get"
+  "/blog/teachers-pension-scheme": "/is-teaching-right-for-me/is-teaching-right-for-me/what-pension-does-a-teacher-get"
   "/blog/how-to-fund-your-teacher-training": "/funding-and-support"
   "/blog/11-top-tips-for-interview-success": "/how-to-apply-for-teacher-training/teacher-training-interview"
   "/blog/getting-ready-to-apply": "/how-to-apply-for-teacher-training"
