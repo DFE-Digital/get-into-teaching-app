@@ -1,7 +1,7 @@
 ---
 title: "About the teachers' pension scheme"
 heading: "About the teachers' pension scheme"
-subcategory: Pay and benefits of teaching
+subcategory: Pay and benefits
 description: |-
   The teachers' pension is one of the most generous in the country. Learn more about the benefits of the teachers' pension scheme.
 date: "2022-11-29"
