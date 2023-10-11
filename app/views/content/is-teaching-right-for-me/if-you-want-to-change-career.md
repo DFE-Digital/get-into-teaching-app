@@ -1,6 +1,7 @@
 ---
 title: Career change to teaching
 heading: How do I change to a career in teaching?
+subcategory: Qualifications and experience
 description: |-
   Find out what extra support you can get if you want a career change into teaching. Bring your skills and experience to life in the classroom.
 related_content:
@@ -11,7 +12,7 @@ related_content:
     Fund your training if you're a parent or carer: "/funding-and-support/if-youre-a-parent-or-carer"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-career-changers
-navigation: 5.30
+navigation: 5.40
 navigation_title: How do I change to a career in teaching?
 navigation_description: Explore using your experience to inspire students by bringing your skills and expertise to the classroom.
 ---
