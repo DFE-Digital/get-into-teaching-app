@@ -236,6 +236,8 @@ You can contact your teacher training provider to check:
 
 ### 2. Degree requirements for trainees
 
+You must have studied for your undergraduate (bachelor’s) degree at a recognised university.
+
 If you are applying to train to teach physics, your bachelor’s degree must: 
 
 * be in physics (not physics combined with another subject) 
@@ -252,7 +254,7 @@ If you are applying to train to teach French, German or Spanish, your bachelor�
 
 * a degree in any subject, taught entirely in French, German or Spanish 
 
-Your chosen teacher training provider will be able to tell you whether your degree meets the standard and subject criteria for the international relocation payment.  
+Your chosen teacher training provider will be able to tell you whether your university and degree meet the standard and subject criteria for the international relocation payment.  
 
 ### 3. Type of visa for trainees
 
