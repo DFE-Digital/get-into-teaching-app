@@ -42,17 +42,17 @@ Teacher training courses usually take 9 months full-time, or 18 to 24 months par
 
 $international-content$
 
-## Postgraduate teacher training course providers
+## Teacher training course providers
 
-Your teacher training course might be provided by: 
+Your postgraduate teacher training course might be provided by: 
 
 * a university (sometimes referred to as university-led training) 
 * a school or group of schools (sometimes referred to as school-led training, or an apprenticeship) 
 * [Teach First](https://www.teachfirst.org.uk/) (a charitable organisation)
 
-Some providers are ‘accredited’ – this means they have been given permission by the Department for Education (DfE) to run teacher training courses.
+Some providers are ‘accredited’ – this means they've been given permission by the Department for Education (DfE) to run teacher training courses.
 
-Providers who have not been accredited can also run courses, but they will be in a partnership with an organisation that has. For example, you might see a school running a course that has a university as their ‘accredited provider’.
+Providers who have not been accredited can also run courses, but they'll be in a partnership with an organisation that has. For example, you might see a school running a course that has a university as their ‘accredited provider’.
 
 ## What does teacher training involve?
 
@@ -70,7 +70,7 @@ You can [find out more about what to expect on your teacher training](/train-to-
 
 Because all teacher training must involve placements in at least 2 schools, your training will not all happen in the same place. Some courses may also have a separate location for your theoretical learning. 
 
-Your training provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get a rough idea.
+Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get a rough idea.
 
 ## How much does teacher training cost?
 

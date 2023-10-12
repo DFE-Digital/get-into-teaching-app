@@ -1,14 +1,12 @@
 ---
-title: "How to choose your teacher training"
+title: "How to choose your teacher training course"
 subcategory: Postgraduate teacher training
 description: |-
-  Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
+  Find out how to choose your postgraduate teacher training course based on your eligibility, the qualifications it awards, and the course provider.
 related_content:
-    Is teaching right for me? : "/is-teaching-right-for-me"
-    Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
-    What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
-    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
-    Improve your subject knowledge : "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
+    Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider" 
+    Train to teach if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
+    Your teacher training application : "/how-to-apply-for-teacher-training/teacher-training-application"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:
@@ -19,7 +17,6 @@ navigation_description: Find out how to choose your postgraduate teacher trainin
 keywords:
   - becoming a teacher
   - teacher training
-  - school direct (salaried)
   - pgce
   - qts
   - Teach First
@@ -31,7 +28,7 @@ All postgraduate teacher training courses include time spent in school placement
 
 The main differences between courses are: 
 
-* what you need to be accepted onto the course 
+* what you need to get onto the course 
 * the qualifications the course awards 
 * if the course comes with a salary 
 * the course provider 
@@ -70,13 +67,17 @@ Most teacher training courses will award QTS, but some will just award a [postgr
 
 Without QTS, you may be limiting the schools you’ll be able to teach in and will not receive the same benefits within your training or career. 
 
-## If the course comes with a salary 
+## If the course comes with a salary
+
+### Fee-funded teacher training
 
 Most teacher training courses are fee-funded – this means you have to pay tuition fees and will not earn a salary while you train. 
 
 There are ways to fund your training, for example, through tuition fee and maintenance loans and scholarships and bursaries. 
 
-You can [find out more about the different ways to fund your training](/funding-and-support). 
+You can [find out more about the different ways to fund your training](/funding-and-support).
+
+### Salaried teacher training
 
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
 
@@ -102,6 +103,8 @@ For example, if you’re applying for 4 courses, you might want to apply for 2 c
 
 ## Full and part-time courses 
 
-Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time. 
+Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
+
+There are usually more full-time courses available than part-time.
 
 You can [find out more about what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
