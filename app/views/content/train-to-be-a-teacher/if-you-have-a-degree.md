@@ -30,7 +30,6 @@ keywords:
 
 ---
 
-
 You need a bachelor's degree (in any subject) to teach in primary, secondary and special schools in England.
 
 For secondary teacher training, your provider will want to make sure you have a good knowledge of the subject you’re applying to teach.
@@ -51,7 +50,7 @@ Your postgraduate teacher training course might be provided by:
 
 Some providers are ‘accredited’ – this means they've been given permission by the Department for Education (DfE) to run teacher training courses.
 
-Providers who have not been accredited can also run courses, but they'll be in a partnership with an organisation that has. For example, you might see a school running a course that has a university as their ‘accredited provider’.
+Providers who have not been accredited can also run courses if they're in a partnership with an organisation that has. For example, you might see a school running a course that has a university as their ‘accredited provider’.
 
 ## What does teacher training involve?
 
@@ -63,13 +62,13 @@ This means that even if your course provider is a university, you will still do 
 
 The important thing to remember is that regardless of your course provider, all teacher training involves around 120 days of school placements in at least 2 schools.
 
-You can [find out more about what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
+You can [find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
 
 ## Where will my training take place?
 
 Because all teacher training must involve placements in at least 2 schools, your training will not all happen in the same place. Some courses may also have a separate location for your theoretical learning. 
 
-Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get a rough idea.
+Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get an idea.
 
 ## How much does teacher training cost?
 
@@ -85,4 +84,4 @@ You may be eligible for extra financial support if:
 * you're a veteran
 * you're eligible for a salaried teacher training course
 
-[Find out more about how to fund your training](/funding-and-support).
+[Find out how to fund your training](/funding-and-support).

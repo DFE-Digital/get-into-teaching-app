@@ -2,7 +2,7 @@
 title: "How to choose your teacher training course"
 subcategory: Postgraduate teacher training
 description: |-
-  Find out how to choose your postgraduate teacher training course based on your eligibility, the qualifications it awards, and the course provider.
+  Find out how to choose your postgraduate teacher training course based on your eligibility, the qualifications you could get, and the course provider.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider" 
     Train to teach if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
@@ -28,13 +28,13 @@ All postgraduate teacher training courses include time spent in school placement
 
 The main differences between courses are: 
 
-* what you need to get onto the course 
-* the qualifications the course awards 
+* what you need to get onto the course
+* the qualifications awarded by the course
 * if the course comes with a salary 
 * the course provider 
 * if it’s full or part-time 
 
-## What you need to get onto the course 
+## What you need to get onto the course
 
 Some training courses have specific eligibility requirements. 
 
@@ -49,23 +49,23 @@ All postgraduate teacher training courses require you to have:
 
 Most course providers will accept a degree grade of 2:2 or higher, but some may require you to have a 2:1. 
 
-Check each course provider’s requirements on their course page. You can also [find out more about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach). 
+Check each course provider’s requirements on their course page. You can also [find out about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach). 
 
 ### Your right to work in the UK 
 
 You’ll need the right to work or study in the UK to do your teacher training in England. 
 
-Some training providers offer courses with visa sponsor available. You can filter by ‘visa sponsorship’ to [find courses where visas can be sponsored](https://www.find-postgraduate-teacher-training.service.gov.uk/).   
+If you're a non-UK citizen without the right to work in the UK, some training providers offer courses with visa sponsor available. You can filter by ‘visa sponsorship’ to [find courses where visas can be sponsored](https://www.find-postgraduate-teacher-training.service.gov.uk/).   
 
-[Find out more about applying for your visa to train to teach in England](/non-uk-teachers/visas-for-non-uk-trainees).
+[Find out how to apply for your visa to train to teach in England](/non-uk-teachers/visas-for-non-uk-trainees).
 
-## The qualifications the course awards 
+## The qualifications awarded by the course
 
 Most schools in England need you to have [qualified teacher status (QTS)](/what-is-qts) to teach. 
 
 Most teacher training courses will award QTS, but some will just award a [postgraduate certificate in education (PGCE)](/what-is-a-pgce), and some will award both. 
 
-Without QTS, you may be limiting the schools you’ll be able to teach in and will not receive the same benefits within your training or career. 
+Without QTS, you may not be fully qualified to teach in your chosen school and will not receive the same benefits within your training or career.
 
 ## If the course comes with a salary
 
@@ -75,13 +75,13 @@ Most teacher training courses are fee-funded – this means you have to pay tuit
 
 There are ways to fund your training, for example, through tuition fee and maintenance loans and scholarships and bursaries. 
 
-You can [find out more about the different ways to fund your training](/funding-and-support).
+You can [find out about the different ways to fund your training](/funding-and-support).
 
 ### Salaried teacher training
 
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
 
-Places on salaried courses are limited and very competitive. You can [find out more about what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
+Places on salaried courses are limited and very competitive. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
 
 ## The course provider 
 
@@ -91,10 +91,10 @@ Your teacher training course might be provided by:
 * a school or group of schools (sometimes referred to as school-led training, or an apprenticeship) 
 * [Teach First](https://www.teachfirst.org.uk/) (a charitable organisation)  
 
-Once you’ve found a course that you’re interested in, you could talk to the training provider before you apply. For example, you might want to find out: 
+Once you’ve found a course that you’re interested in, you can talk to the training provider before you apply. For example, you might want to find out: 
 
-* where your placements and theoretical learning might take place 
-* how many schools you’ll be doing placements in and how long each will last 
+* where your placements and theoretical learning might happen
+* how many schools you’ll be doing placements in and how long each placement will last 
 * the start and finish dates of the course 
 
 It’s a good idea to apply to a range of providers to increase your chances of being successful on a course. 
@@ -107,4 +107,4 @@ Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 mont
 
 There are usually more full-time courses available than part-time.
 
-You can [find out more about what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
+You can [find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
