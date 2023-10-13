@@ -1,7 +1,5 @@
 .category {
 
-  &__hero
-
   &__hero {
     margin: 0;
     background: $yellow;
@@ -63,6 +61,7 @@
       h2,
       h3 {
         color: $blue-dark;
+        text-decoration: underline;
       }
 
       &:focus h2 {
@@ -74,13 +73,13 @@
       }
     }
 
-    h2,
-    h3 {
-      text-decoration: none;
-    }
-
     &:hover {
-      border-color: $blue-dark;
+      background-color: #e6e6e6;
+
+      h2,
+      h3 {
+        text-decoration: none;
+      }
     }
 
     &--content {
