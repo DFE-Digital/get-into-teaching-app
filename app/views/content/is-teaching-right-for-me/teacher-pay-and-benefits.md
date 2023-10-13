@@ -72,7 +72,7 @@ If you have [qualified teacher status (QTS)](/what-is-qts), you’ll start on at
 
 Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.    
 
-A typical teacher with 5 years’ experience will earn at least £41,333, or more in London.
+A typical teacher with 5 years’ experience could earn at least £41,333, or more in London.
 
 ### Qualified teacher salary
 
