@@ -35,7 +35,7 @@ You need English qualified teacher status (QTS) to teach in maintained primary, 
 
 Some schools can employ teachers without QTS (for example, [private schools](https://www.gov.uk/types-of-school/private-schools) and [academy schools](https://www.gov.uk/types-of-school/academies)) but most still prefer teachers to have it.
 
-You do not need QTS to teach in [further education](/become-a-further-education-teacher) or work in [early years education](/early-years-teaching-training).
+You do not need QTS to teach in [further education](/is-teaching-right-for-me/become-a-further-education-teacher) or work in [early years education](/early-years-teaching-training).
 
 $international-content$
 
