@@ -87,6 +87,12 @@ $mobile-cutoff: 800px;
       margin-top: 2em;
     }
 
+    @include mq($until: tablet) {
+      &__paragraph {
+        padding: 0 1.5em;
+      }
+    }
+
     &__subtitle {
       align-items: center;
       margin: 0 auto 2em 1.5em;
@@ -266,6 +272,6 @@ $mobile-cutoff: 800px;
   }
 
   .hero.blend-content {
-    padding-bottom: 4.5em;
+    padding-bottom: 2em;
   }
 }
