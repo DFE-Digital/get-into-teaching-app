@@ -5,7 +5,7 @@ subcategory: Qualifications and skills
 description: |-
   Explore the key stages and ages you want to teach, whether that's primary, secondary, early years, further education, or pupils with special educational needs.
 navigation: 5.35
-navigation_title: What kind of teacher could I be?
+navigation_title: What age group should I teach?
 navigation_description: Explore the different ages and stages of teaching and decide which is right for you.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-who-do-you-want-to-teach
