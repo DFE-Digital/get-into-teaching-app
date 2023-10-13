@@ -71,7 +71,7 @@ Most disabled pupils and pupils with special educational needs learn in mainstre
 
 You can choose to apply for a teacher training course that specialises in SEND or you can gain the skills and experience as you train to teach.
 
-Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/teach-disabled-pupils-and-pupils-with-special-educational-needs).
+Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs).
 
 ## Teaching other stages
 

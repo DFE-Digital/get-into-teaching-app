@@ -136,7 +136,7 @@ redirects:
   "/how-to-apply-for-teacher-training/search-for-teacher-training-courses": "/train-to-be-a-teacher"
   "/explore-my-options/training-to-teach-secondary-subjects/training-to-teach-art-and-design": "/steps-to-become-a-teacher"
   "/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training/degrees-with-qts": "/train-to-be-a-teacher/if-you-dont-have-a-degree"
-  "/explore-my-options/training-to-teach-pupils-with-send": "/teach-disabled-pupils-and-pupils-with-special-educational-needs"
+  "/explore-my-options/training-to-teach-pupils-with-send": "/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs"
   "/explore-my-options/postgraduate-teacher-training-courses": "/train-to-be-a-teacher"
   "/explore-my-options/training-to-teach-secondary-subjects/teach-history": "/steps-to-become-a-teacher"
   "/explore-my-options/training-to-teach-primary-subjects": "/steps-to-become-a-teacher"
@@ -321,6 +321,7 @@ redirects:
   "/what-pension-does-a-teacher-get": "/is-teaching-right-for-me/what-pension-does-a-teacher-get"
   "/become-a-further-education-teacher": "/is-teaching-right-for-me/become-a-further-education-teacher"
   "early-years-teacher-training": "is-teaching-right-for-me/early-years-teacher-training"
+  "teach-disabled-pupils-and-pupils-with-special-educational-needs": "is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"
