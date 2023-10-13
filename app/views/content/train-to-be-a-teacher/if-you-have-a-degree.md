@@ -49,7 +49,7 @@ Your postgraduate teacher training course might be provided by:
 * a school or group of schools (sometimes referred to as school-led training, or an apprenticeship) 
 * [Teach First](https://www.teachfirst.org.uk/) (a charitable organisation)
 
-Some providers are ‘accredited’ – this means they've been given permission by the Department for Education (DfE) to run teacher training courses.
+Some providers are ‘accredited’ – this means they've been approved by the Department for Education (DfE) to run teacher training courses.
 
 Providers who have not been accredited can also run courses if they're in a partnership with an organisation that has. For example, you might see a school running a course that has a university as their ‘accredited provider’.
 
