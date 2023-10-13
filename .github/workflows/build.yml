@@ -965,3 +965,84 @@ jobs:
           SLACK_TITLE: Production Release ${{github.event.title}}
           SLACK_MESSAGE: Failure deploying Production release
           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
+
+  production_aks:
+    name: Production AKS Deployment
+    runs-on: ubuntu-latest
+    needs: [ integration, development_aks ]
+    concurrency: production_aks
+    continue-on-error: true
+    environment:
+       name: production_aks
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+        with:
+          var_file: .github/common_environment_aks.yml
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Fetch secrets from key vault
+        uses: azure/CLI@v1
+        id: keyvault-yaml-secret
+        with:
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+            SLACK_RELEASE_NOTE_WEBHOOK=$(az keyvault secret show --name "SLACK-RELEASE-NOTE-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_RELEASE_NOTE_WEBHOOK"
+            echo "SLACK_RELEASE_NOTE_WEBHOOK=$SLACK_RELEASE_NOTE_WEBHOOK" >> $GITHUB_OUTPUT
+
+      - name: Get Release Id from Tag
+        id: tag_id
+        uses: DFE-Digital/github-actions/DraftReleaseByTag@master
+        with:
+          TAG: ${{needs.development_aks.outputs.release_tag}}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Uncomment when migrated from PaaS
+      #
+      # - name: Publish Release
+      #   if: steps.tag_id.outputs.release_id
+      #   uses: eregon/publish-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     release_id: ${{steps.tag_id.outputs.release_id}}
+
+      - name: Deploy to Production AKS
+        uses: ./.github/workflows/actions/deploy_v2
+        id: deploy_v2
+        with:
+          environment: production_aks
+          sha:  ${{ github.sha }}
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
+
+      # Uncomment when migrated from PaaS
+      #
+      # - name: Slack Release Notification
+      #   if: steps.tag_id.outputs.release_id
+      #   uses: rtCamp/action-slack-notify@master
+      #   env:
+      #     SLACK_COLOR: ${{env.SLACK_SUCCESS}}
+      #     SLACK_TITLE: "Release Published: ${{steps.tag_id.outputs.release_name}}"
+      #     SLACK_MESSAGE: ${{ fromJson( steps.tag_id.outputs.release_body) }}
+      #     SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-RELEASE-NOTE-WEBHOOK }}
+      #     MSG_MINIMAL: true
+
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_FAILURE}}
+          SLACK_TITLE: Production Release ${{github.event.title}}
+          SLACK_MESSAGE: Failure deploying Production AKS release
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
