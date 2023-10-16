@@ -37,4 +37,8 @@ Qualifications vary depending on the course. For example, you could get QTS with
 
 As part of selecting your degree course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
 
-If you're a non-UK citizen who wants to study in England, you can visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) for information about studying at an English university.
+<div class="inset">
+
+<p>If you're a non-UK citizen who wants to study in England, you can visit the <a href="https://www.ukcisa.org.uk/">UK Council for International Student Affairs</a> for information about studying at an English university.</p>
+
+</div>
