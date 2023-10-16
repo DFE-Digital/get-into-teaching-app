@@ -81,7 +81,7 @@ If you want to help young children under 5 years old to develop, you might consi
 
 Early years teachers play an essential role in children’s development up to the age of 5 and provide high-quality early education.
 
-Learn more about [the routes to become an early years teacher](/is-teaching-right-for-me/early-years-teaching-training).
+Learn more about [the routes to become an early years teacher](/is-teaching-right-for-me/become-an-early-years-teacher).
 
 ### Further education
 
