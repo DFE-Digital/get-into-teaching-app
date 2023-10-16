@@ -17,10 +17,6 @@ related_content:
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
     Why I became a teacher : "/blog/the-head-of-science-inspiring-students-in-blackpool"
     Abigail's career progression story : "/blog/abigails-career-progression-story"
-inset_text:
-  new-salaries:
-    text: |-
-      The new pay award for 2023/24 is subject to a statutory consultation period and your school can choose how to implement it.
 keywords:
   - Salary
   - Salaries
@@ -55,8 +51,6 @@ keywords:
   - How to become a teacher
   - Teacher training courses
 ---
-
-$new-salaries$
 
 If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on.
 
