@@ -8,7 +8,7 @@ date: "2021-06-24"
 backlink: "../../"
 navigation: 5.10
 navigation_title: How much do teachers get paid?
-navigation_description: Find out the starting salary for a qualified teacher and how this can increase during your career.
+navigation_description: Find out the starting salary for a qualified teacher and how your pay increases during your career.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
