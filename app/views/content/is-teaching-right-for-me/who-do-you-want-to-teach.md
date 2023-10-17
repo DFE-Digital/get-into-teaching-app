@@ -63,7 +63,7 @@ The best way to work out which age group you would like to teach is to get real 
 
 $get-school-experience$
 
-If you’re an undergraduate and interested in teaching chemistry, computing, languages, maths or physics, then you could do a [paid teaching internship](/is-teaching-right-for-me/teaching-internship-providers) to find out if teaching is right for you.
+If you’re studying for an undergraduate or master's degree and interested in teaching chemistry, computing, languages, maths or physics, then you could do a [paid teaching internship](/is-teaching-right-for-me/teaching-internship-providers) to find out if teaching is right for you.
 
 ### Teach pupils with special educational needs and disabilities (SEND)
 
