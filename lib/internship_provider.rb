@@ -5,7 +5,7 @@ class InternshipProvider
     @data = data
 
     data.tap do |d|
-      @school_name = d["school_name"]
+      @school_name = d[0] # TODO: Currently errors if this is string key. Investigate and fix.
       @region = d["region"]
       @school_website = d["school_website"]
       @contact_name = d["contact_name"]
