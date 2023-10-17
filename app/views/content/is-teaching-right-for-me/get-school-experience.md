@@ -5,7 +5,7 @@ subcategory: School experience
 description: |-
   Get school experience to explore what life is like in a primary or secondary classroom and find out if teaching is right for you.
 related_content:
-    Is teaching right for me? : "/is-teaching-right-for-me"
+    Teacher pay and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
     What is a Get Into Teaching event? : "/events/about-get-into-teaching-events"
     School experience helped me change careers : "/blog/school-experience-helped-me-decide-to-switch"

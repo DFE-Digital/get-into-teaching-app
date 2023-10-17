@@ -7,6 +7,7 @@ description: |-
 navigation: 5.30
 navigation_description: Check what qualifications you need to teach in primary, secondary and special schools in England.
 related_content:
+    Teacher pay and benefits: "is-teaching-right-for-me/teacher-pay-and-benefits"
     Train to be a teacher if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Teacher training : "/train-to-be-a-teacher/initial-teacher-training"
     My career change to teaching : "/blog/my-career-change-to-teaching"
