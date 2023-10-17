@@ -71,7 +71,7 @@ A paid teaching internship could help you to understand what it’s really like 
 
 You’ll get to experience a range of activities to help you get a feel for school life.
 
-[Find out more about paid teaching internships](/is-teaching-right-for-me/teaching-internship-providers)
+[Find out more about paid teaching internships](/is-teaching-right-for-me/teaching-internship-providers).
 
 ### Watch pre-recorded lessons
 
