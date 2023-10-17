@@ -1,6 +1,6 @@
 ---
 title: "Is teaching right for me?"
-description: Why become a teacher? Read stories from real life teachers to find out what led them to the classroom, and discover if teaching is right for you.
+description: Choosing or changing a career can be a big decision. Find out about teacher pay and benefits and more to decide if teaching is right for you.
 content:
 image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
 colour: "yellow"
