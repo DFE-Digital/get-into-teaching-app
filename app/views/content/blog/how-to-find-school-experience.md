@@ -43,7 +43,7 @@ You can request a booking by inputting your details for your chosen school to re
 
 ## Teaching internships
 
-If you’re an undergraduate student interested in teaching physics, maths, computing or modern languages, you might also be able to apply for some paid teaching experience. Find out how you might be eligible for a [teaching internship](/is-teaching-right-for-me/teaching-internship-providers).
+If you’re an undergraduate or master's student interested in teaching physics, maths, computing or modern languages, you might also be able to apply for some paid teaching experience. Find out how you might be eligible for a [teaching internship](/is-teaching-right-for-me/teaching-internship-providers).
 
 ## Other opportunities
 
