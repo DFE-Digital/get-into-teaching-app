@@ -20,6 +20,11 @@ inset_text:
   international-content:
     text: If you’re not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
     color: grey
+navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one.
+inset_text:
+  international-content:
+    text: If you’re not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
+    color: grey
 keywords:
   - becoming a teacher
   - teacher training
@@ -37,7 +42,7 @@ For secondary teacher training, your provider will want to make sure you have a 
 
 If you have a degree, you can do postgraduate teacher training to get qualified teacher status (QTS).
 
-Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time.
+You need [English qualified teacher status (QTS)](/what-is-qts) to teach in most schools in England.
 
 $international-content$
 
