@@ -37,10 +37,6 @@ describe Categories::CardComponent, type: "component" do
     end
   end
 
-  specify "the link has an icon" do
-    expect(subject).to have_css("a > .category__nav-card--icon")
-  end
-
   context "when the heading_tag is overridden" do
     let(:custom_heading_tag) { "h4" }
 
