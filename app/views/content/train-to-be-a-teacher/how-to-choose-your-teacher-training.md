@@ -65,7 +65,7 @@ Most schools in England need you to have [qualified teacher status (QTS)](/what-
 
 Most teacher training courses will award QTS, but some will just award a [postgraduate certificate in education (PGCE)](/what-is-a-pgce), and some will award both. 
 
-Without QTS, you may not be fully qualified to teach in your chosen school and will not receive the same benefits within your training or career.
+Without QTS, you will not eligible for a scholarship or bursary to help you train. You also may not be fully qualified to teach in your chosen school and you will not receive the same pay and support when you start teaching.
 
 ## If the course is fee-funded or salaried
 
