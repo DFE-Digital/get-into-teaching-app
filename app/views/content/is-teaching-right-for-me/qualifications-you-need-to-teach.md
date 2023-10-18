@@ -1,9 +1,13 @@
 ---
 title: "What qualifications do I need to be a teacher?"
 heading: "What qualifications do I need to be a teacher?"
+subcategory: Qualifications and experience
 description: |-
   Find out what qualifications you need to be a teacher in primary and secondary schools in England and which subjects you can train to teach.
+navigation: 5.30
+navigation_description: Check what qualifications you need to teach in primary, secondary and special schools in England.
 related_content:
+    Teacher pay and benefits: "/is-teaching-right-for-me/teacher-pay-and-benefits"
     Train to be a teacher if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Teacher training : "/train-to-be-a-teacher/initial-teacher-training"
     My career change to teaching : "/blog/my-career-change-to-teaching"
@@ -15,7 +19,7 @@ promo_content:
 
 You need qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.
 
-You do not need QTS to [teach in further education](/become-a-further-education-teacher) or to [teach in early years](/early-years-teaching-training).
+You do not need QTS to [teach in further education](/is-teaching-right-for-me/become-a-further-education-teacher) or to [teach in early years](/is-teaching-right-for-me/become-an-early-years-teacher).
 
 [Find out more about qualified teacher status (QTS)](/what-is-qts). 
 

@@ -1,12 +1,14 @@
 ---
 title: "Teacher pay and benefits"
 heading: "Teacher pay and benefits"
+subcategory: Pay and benefits
 description: |-
   All qualified teachers will have a starting salary of at least £30,000 (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 date: "2021-06-24"
-image: "static/content/hero-images/0008.jpg"
 backlink: "../../"
-navigation: 25
+navigation: 5.10
+navigation_title: How much do teachers get paid?
+navigation_description: Find out the starting salary for a qualified teacher and how your pay could increase during your career.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
@@ -156,4 +158,4 @@ It is a 'defined benefit' pension and is:
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
-You also get other insurance benefits too. Find out more about the [teachers' pension scheme](/what-pension-does-a-teacher-get).
+You also get other insurance benefits too. Find out more about the [teachers' pension scheme](/is-teaching-right-for-me/what-pension-does-a-teacher-get).

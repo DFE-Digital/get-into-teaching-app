@@ -5,7 +5,7 @@ description: |-
 related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
-    Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
+    Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.10

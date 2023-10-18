@@ -1,7 +1,7 @@
 ---
 title: Teaching internships
 heading: "Experience teaching with an internship"
-subcategory: Experience life in the classroom
+subcategory: School experience
 description: |-
   Find paid teaching internships to gain new skills and see what classroom life is like. Explore chemistry, computing, languages, maths and physics internships.
 date: "2021-04-14"
@@ -11,11 +11,14 @@ promo_content:
 inset_text:
   applications-open:
     text: |-
-     Applications are now open for teaching internships starting in Summer 2024.
+     Applications are now open for teaching internships starting in summer 2024.
 backlink: /
 fullwidth: true
+navigation: 5.55
+navigation_title: Can I do a teaching internship?
+navigation_description: Earn £300 per week and find out what it is really like in the classroom with a teaching internship.
 content:
-  - content/teaching-internship-providers/listing
+  - content/is-teaching-right-for-me/teaching-internship-providers/listing
 provider_groups:
   East Midlands:
     providers:

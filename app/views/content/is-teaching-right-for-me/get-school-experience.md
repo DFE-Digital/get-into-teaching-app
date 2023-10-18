@@ -1,12 +1,12 @@
 ---
 title: "Get school experience"
 heading: "Get school experience"
-subcategory: Experience life in the classroom
+subcategory: School experience
 description: |-
   Get school experience to explore what life is like in a primary or secondary classroom and find out if teaching is right for you.
 related_content:
-    Is teaching right for me? : "/is-teaching-right-for-me"
-    Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
+    Teacher pay and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits"
+    Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
     What is a Get Into Teaching event? : "/events/about-get-into-teaching-events"
     School experience helped me change careers : "/blog/school-experience-helped-me-decide-to-switch"
 calls_to_action:
@@ -20,7 +20,8 @@ calls_to_action:
         link_target: "https://schoolexperience.education.gov.uk/"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo
-navigation: 20.30
+navigation: 5.50
+navigation_title: How do I get experience in a school?
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
 ---
 
@@ -60,7 +61,7 @@ $get-school-experience$
 
 ### Teaching internships
 
-A paid [teaching internship](/teaching-internship-providers) could help you to understand what it’s really like in the classroom if you’re currently doing an undergraduate degree and are interested in teaching:
+A paid teaching internship could help you to understand what it’s really like in the classroom if you’re currently studying for an undergraduate or master's degree and are interested in teaching:
 
 - chemistry
 - computing
@@ -69,6 +70,8 @@ A paid [teaching internship](/teaching-internship-providers) could help you to u
 - physics
 
 You’ll get to experience a range of activities to help you get a feel for school life.
+
+[Find out more about paid teaching internships](/is-teaching-right-for-me/teaching-internship-providers).
 
 ### Watch pre-recorded lessons
 

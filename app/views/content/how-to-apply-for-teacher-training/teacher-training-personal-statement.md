@@ -73,7 +73,7 @@ You should use your personal statement to explain why you feel passionate about 
 
 If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can talk about that, too. 
 
-If you’re not sure if you want to teach primary or secondary, you can [find out more about teaching different age groups](/train-to-be-a-teacher/who-do-you-want-to-teach). 
+If you’re not sure if you want to teach primary or secondary, you can [find out more about teaching different age groups](/is-teaching-right-for-me/who-do-you-want-to-teach). 
 
 ## Do I need school experience? 
 
@@ -83,7 +83,7 @@ Teacher training providers like to see that you have a good understanding of tea
 
 Getting some school experience can also be a good way to make sure teaching is right for you before you apply for a course. 
 
-[Find out how you could get school experience](/train-to-be-a-teacher/get-school-experience). 
+[Find out how you could get school experience](/is-teaching-right-for-me/get-school-experience). 
 
 ## Get help with your personal statement 
 

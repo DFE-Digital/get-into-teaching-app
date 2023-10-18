@@ -1,8 +1,12 @@
 ---
 title: Who do you want to teach
 heading: Who do you want to teach?
+subcategory: Who to teach
 description: |-
   Explore the key stages and ages you want to teach, whether that's primary, secondary, early years, further education, or pupils with special educational needs.
+navigation: 5.35
+navigation_title: Which age group should I teach?
+navigation_description: Explore the different ages and stages of teaching and decide which is right for you.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-who-do-you-want-to-teach
 calls_to_action:
@@ -59,7 +63,7 @@ The best way to work out which age group you would like to teach is to get real 
 
 $get-school-experience$
 
-If you’re an undergraduate and interested in teaching chemistry, computing, languages, maths or physics, then you could do a [paid teaching internship](/teaching-internship-providers) to find out if teaching is right for you.
+If you’re studying for an undergraduate or master's degree and interested in teaching chemistry, computing, languages, maths or physics, then you could do a [paid teaching internship](/is-teaching-right-for-me/teaching-internship-providers) to find out if teaching is right for you.
 
 ### Teach pupils with special educational needs and disabilities (SEND)
 
@@ -67,7 +71,7 @@ Most disabled pupils and pupils with special educational needs learn in mainstre
 
 You can choose to apply for a teacher training course that specialises in SEND or you can gain the skills and experience as you train to teach.
 
-Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/teach-disabled-pupils-and-pupils-with-special-educational-needs).
+Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs).
 
 ## Teaching other stages
 
@@ -77,7 +81,7 @@ If you want to help young children under 5 years old to develop, you might consi
 
 Early years teachers play an essential role in children’s development up to the age of 5 and provide high-quality early education.
 
-Learn more about [the routes to become an early years teacher](/early-years-teaching-training).
+Learn more about [the routes to become an early years teacher](/is-teaching-right-for-me/become-an-early-years-teacher).
 
 ### Further education
 
@@ -89,4 +93,4 @@ There are three key areas:
 * academic courses on subjects like English and maths
 * basic skills courses covering literacy and numeracy. 
 
-Learn more about [teaching in further education](/become-a-further-education-teacher).
+Learn more about [teaching in further education](/is-teaching-right-for-me/become-a-further-education-teacher).

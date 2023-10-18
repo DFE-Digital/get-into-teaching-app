@@ -1,19 +1,20 @@
 ---
 title: Career change to teaching
-heading: Train to teach if you're changing career
+heading: How do I change to a career in teaching?
+subcategory: Qualifications and experience
 description: |-
   Find out what extra support you can get if you want a career change into teaching. Bring your skills and experience to life in the classroom.
 related_content:
-    Is teaching right for me? : "/is-teaching-right-for-me"
+    Train to be a teacher : "/train-to-be-a-teacher"
     Changing career from engineering to teaching physics: "/blog/natural-transition-from-engineering-to-teaching-physics"
     Engineers teach physics teacher training courses : "/subjects/engineers-teach-physics"
     Transferring my skills to teaching: "/blog/transferring-my-skills-to-teaching"
     Fund your training if you're a parent or carer: "/funding-and-support/if-youre-a-parent-or-carer"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-career-changers
-navigation: 20.15
-navigation_title: If you want to change career
-navigation_description: Use the experience you’ve gathered so far to inspire students and train to bring your skills and expertise to the classroom.
+navigation: 5.40
+navigation_title: How do I change to a career in teaching?
+navigation_description: Use your experience to inspire students and bring your skills and expertise to the classroom.
 ---
 
 A career change into teaching allows you to use the skills and expertise you’ve already developed to inspire young people.

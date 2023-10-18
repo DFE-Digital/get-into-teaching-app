@@ -49,7 +49,7 @@ You could [find another course](https://www.gov.uk/find-postgraduate-teacher-tra
 
 ### You do not have a bachelor’s degree or equivalent
 
-You’ll need a bachelor's degree or equivalent to train to teach. If you do not have one, you can still train to teach by doing an [undergraduate degree in teacher training](/train-to-be-a-teacher/if-you-dont-have-a-degree) or become a [further education teacher](/become-a-further-education-teacher).
+You’ll need a bachelor's degree or equivalent to train to teach. If you do not have one, you can still train to teach by doing an [undergraduate degree in teacher training](/train-to-be-a-teacher/if-you-dont-have-a-degree) or become a [further education teacher](/is-teaching-right-for-me/become-a-further-education-teacher).
 
 ### The provider could not verify your qualifications
 
@@ -63,7 +63,7 @@ You may be able to do a subject knowledge enhancement (SKE) course to top up you
 
 ### Lack of teaching or safeguarding knowledge
 
-It may help to [get some school experience](/train-to-be-a-teacher/get-school-experience) so you can find out what it’s like to be a teacher and improve your knowledge and skills.
+It may help to [get some school experience](/is-teaching-right-for-me/get-school-experience) so you can find out what it’s like to be a teacher and improve your knowledge and skills.
 
 ### No visa sponsorship
 

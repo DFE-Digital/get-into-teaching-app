@@ -1,19 +1,16 @@
 ---
-title: "Why become a teacher"
-description: Why become a teacher? Read stories from real life teachers to find out what led them to the classroom, and discover if teaching is right for you.
+title: "Is teaching right for me?"
+description: Choosing or changing a career can be a big decision. Find out about teacher pay and benefits and more to decide if teaching is right for you.
 content:
-    - content/is-teaching-right-for-me/header
-    - content/is-teaching-right-for-me/making_a_difference
-    - content/is-teaching-right-for-me/facts_and_figures
-    - content/is-teaching-right-for-me/your_career_your_path
-    - content/is-teaching-right-for-me/are_you_eligible_to_teach
-    - content/is-teaching-right-for-me/a_job_like_no_other
-    - content/is-teaching-right-for-me/get_school_experience
-    - content/is-teaching-right-for-me/how_to_become_a_teacher
 image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
 colour: "yellow"
-layout: "layouts/minimal"
+layout: "layouts/category"
+title_paragraph: |-
+    Choosing or changing a career can be a big decision. If you're wondering if teaching is the best path for you, find out what it's really like and where it can lead.
 navigation: 5
 navigation_title: Is teaching right for me?
 navigation_path: "/is-teaching-right-for-me"
+hero_bg_color: yellow
+title_bg_color: white
+hero_blend_content: true
 ---

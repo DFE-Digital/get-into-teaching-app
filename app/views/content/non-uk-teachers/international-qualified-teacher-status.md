@@ -4,7 +4,7 @@ description: |-
  Get international qualified teacher status (iQTS) from anywhere in the world, a teaching qualification backed by England’s Department for Education (DfE).
 related_content:
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
-    Salaries and benefits of teaching in England : "/salaries-and-benefits"
+    Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
 promo_content:
     - content/non-uk-teachers/promos/events-promo-iqts
 navigation: 20.40

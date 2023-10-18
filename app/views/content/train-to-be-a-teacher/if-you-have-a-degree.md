@@ -5,7 +5,7 @@ description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:
     Is teaching right for me? : "/is-teaching-right-for-me"
-    Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
+    Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
     What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Improve your subject knowledge : "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
@@ -92,7 +92,7 @@ You can apply for a student loan regardless of the course you choose, even if yo
 
 Your teacher training course might be provided by a university, school, college or group of schools.
 
-As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+As part of selecting your teacher training course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
 
 Some courses have different course structures and have placements in different kinds of schools, such as special schools. Talk to your teacher training provider to find out what they can offer you.
 

@@ -7,7 +7,7 @@ date: "2021-11-01"
 backlink: "../../"
 related_content:
     What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
-    Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
+    Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
     How to apply for teacher training : "/how-to-apply-for-teacher-training"
     Find teacher training courses : "https://www.gov.uk/find-postgraduate-teacher-training-courses"
     What will your teacher training be like?: "/train-to-be-a-teacher/initial-teacher-training"
@@ -35,7 +35,7 @@ You need English qualified teacher status (QTS) to teach in maintained primary, 
 
 Some schools can employ teachers without QTS (for example, [private schools](https://www.gov.uk/types-of-school/private-schools) and [academy schools](https://www.gov.uk/types-of-school/academies)) but most still prefer teachers to have it.
 
-You do not need QTS to teach in [further education](/become-a-further-education-teacher) or work in [early years education](/early-years-teaching-training).
+You do not need QTS to teach in [further education](/is-teaching-right-for-me/become-a-further-education-teacher) or work in [early years education](/is-teaching-right-for-me/become-an-early-years-teacher).
 
 $international-content$
 
@@ -59,7 +59,7 @@ But if your course does not lead to QTS, you will not be a qualified teacher.
 
 You can get QTS through undergraduate or postgraduate initial teacher training. This mostly involves school placements with some theoretical learning.
 
-You can apply for either a primary or secondary teacher training course awarding QTS. [Find out more about deciding who to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+You can apply for either a primary or secondary teacher training course awarding QTS. [Find out more about deciding who to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
 
 You can also get a postgraduate qualification through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-pgce). 
 
