@@ -60,7 +60,7 @@ export default class extends Controller {
     const script = document.createElement('script');
     script.setAttribute('id', 'ze-snippet');
     script.src =
-      'https://static.zdassets.com/ekr/snippet.js?key=32605345-0b23-4904-9dc1-db94653c370b';
+      'https://static.zdassets.com/ekr/snippet.js?key=34a8599c-cfec-4014-99bd-404a91839e37';
     document.body.appendChild(script);
   }
 
