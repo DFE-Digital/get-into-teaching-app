@@ -69,8 +69,8 @@ RUN find public -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \
 # We need to convert after the fingerprinting so the file names are consistent.
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
-# RUN find public \( -type f -a \( -iname "*.jpg" -o -iname ".jpeg" -o -iname ".png" \) \) | parallel -eta magick {} -quality 75 "{.}.webp" \
-#    && find public \( -type f -a \( -iname "*.jpg" -o -iname ".jpeg" \) \) | parallel -eta magick {} -quality 75 "{.}.jp2"
+RUN find public \( -type f -a \( -iname "*.jpg" -o -iname ".jpeg" -o -iname ".png" \) \) | parallel -eta magick {} -quality 75 "{.}.webp" \
+    && find public \( -type f -a \( -iname "*.jpg" -o -iname ".jpeg" \) \) | parallel -eta magick {} -quality 75 "{.}.jp2"
 
 
 FROM ${BASE_RUBY_IMAGE} as release
