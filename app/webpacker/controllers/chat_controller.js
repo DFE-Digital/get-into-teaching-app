@@ -42,20 +42,12 @@ export default class extends Controller {
       this.chatTarget.textContent = 'Starting chat...';
     }
 
-    this.appendZendeskScript();
-
     this.waitForZendeskScript(() => {
       this.showWebWidget();
       this.waitForWebWidget(() => {
         this.chatTarget.textContent = 'Chat online';
       });
     });
-  }
-
-  appendZendeskScript() {
-    if (this.zendeskScriptLoaded) {
-      return;
-    }
   }
 
   waitForWebWidget(callback) {
