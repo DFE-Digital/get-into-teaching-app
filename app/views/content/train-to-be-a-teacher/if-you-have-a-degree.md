@@ -91,4 +91,4 @@ You may be eligible for extra financial support if:
 
 There are some differences in postgraduate teacher training courses. 
 
-[Find out how to decide on the best course for you](/train-to-be-a-teacher/how-to-choose-your-teacher-training).
+[Find out how to decide on the best course for you](/train-to-be-a-teacher/how-to-choose-your-teacher-training-course).

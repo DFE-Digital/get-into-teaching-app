@@ -49,7 +49,13 @@ All postgraduate teacher training courses require you to have:
 
 Most course providers will accept a degree grade of 2:2 or higher, but some may require you to have a 2:1. 
 
-Check each course provider’s requirements on their course page. You can also [find out about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach). 
+Check each course provider’s requirements on their course page. You can also [find out about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach).
+
+<div class="inset">
+
+<p> If you have qualifications from outside the UK, you’ll need to show that they’re the same standard as UK qualifications. You can get a statement to show this from the <a href="https://enic.org.uk/Qualifications/SOC/Default.aspx">UK European Network of Information Centres (UK ENIC)</a>.</p>
+
+</div> 
 
 ### Your right to work in the UK 
 
@@ -77,11 +83,23 @@ There are ways to fund your training, for example, through tuition fee and maint
 
 You can [find out about the different ways to fund your training](/funding-and-support).
 
+<div class="inset">
+
+<p> If you’re a non-UK citizen without indefinite leave to remain in the UK, you will not usually be eligible for a bursary or scholarship, unless you train to teach languages or physics.</p>
+
+</div>
+
 ### Salaried teacher training
 
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
 
 Places on salaried courses are limited and very competitive. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
+
+<div class="inset">
+
+<p>If you’re a non-UK citizen, the number of places on salaried courses is very limited.</p>
+
+</div>
 
 ## The type of course provider 
 
@@ -100,6 +118,15 @@ Once you’ve found a course that you’re interested in, you can talk to the tr
 It’s a good idea to apply to a range of providers to increase your chances of being successful on a course. 
 
 For example, if you’re applying for 4 courses, you might want to apply for 2 courses provided by universities, and 2 provided by schools.
+
+<div class="inset">
+<p>If you’re a non-UK citizen, you might also want to talk to the training provider to confirm:</p>
+  <ul>
+     <li>if they offer visa sponsorship</li>
+     <li>the timing for non-UK applications</li>
+ </ul>
+
+</div>
 
 ## Full or part-time courses 
 
