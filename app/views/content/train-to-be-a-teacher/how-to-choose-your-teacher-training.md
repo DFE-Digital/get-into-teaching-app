@@ -30,9 +30,9 @@ The main differences between courses are:
 
 * what you need to get onto the course
 * the qualifications awarded by the course
-* if the course comes with a salary 
-* the course provider 
-* if it’s full or part-time 
+* if the course is fee-paying or salaried 
+* the type of course provider 
+* if the course is full or part-time 
 
 ## What you need to get onto the course
 
@@ -67,7 +67,7 @@ Most teacher training courses will award QTS, but some will just award a [postgr
 
 Without QTS, you may not be fully qualified to teach in your chosen school and will not receive the same benefits within your training or career.
 
-## If the course comes with a salary
+## If the course is fee-funded or salaried
 
 ### Fee-funded teacher training
 
@@ -83,7 +83,7 @@ Some courses are salaried, which means you’ll receive an unqualified teacher�
 
 Places on salaried courses are limited and very competitive. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
 
-## The course provider 
+## The type of course provider 
 
 Your teacher training course might be provided by: 
 
@@ -101,7 +101,7 @@ It’s a good idea to apply to a range of providers to increase your chances of 
 
 For example, if you’re applying for 4 courses, you might want to apply for 2 courses provided by universities, and 2 provided by schools.
 
-## Full and part-time courses 
+## Full or part-time courses 
 
 Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
 
