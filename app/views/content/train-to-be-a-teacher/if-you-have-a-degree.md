@@ -86,3 +86,9 @@ You may be eligible for extra financial support if:
 * you're eligible for a salaried teacher training course
 
 [Find out how to fund your training](/funding-and-support).
+
+## How to choose your teacher training course
+
+There are some differences in postgraduate teacher training courses. 
+
+[Find out how to decide on the best course for you](/train-to-be-a-teacher/how-to-choose-your-teacher-training).
