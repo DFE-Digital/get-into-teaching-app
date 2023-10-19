@@ -1,5 +1,5 @@
 TERRAFILE_VERSION=0.8
-ARM_TEMPLATE_TAG=1.1.6
+ARM_TEMPLATE_TAG=1.1.8
 RG_TAGS={"Product" : "Get into teaching website"}
 REGION=UK South
 SERVICE_NAME=get-into-teaching-app
