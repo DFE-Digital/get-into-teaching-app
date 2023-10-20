@@ -322,6 +322,8 @@ redirects:
   "/become-a-further-education-teacher": "/is-teaching-right-for-me/become-a-further-education-teacher"
   "/early-years-teaching-training": "/is-teaching-right-for-me/become-an-early-years-teacher"
   "/teach-disabled-pupils-and-pupils-with-special-educational-needs": "/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs"
+  "/what-is-a-pgce": "/train-to-be-a-teacher/what-is-a-pgce"
+  "/what-is-qts": "/train-to-be-a-teacher/what-is-qts"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"
