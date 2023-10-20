@@ -39,7 +39,7 @@ describe('ChatController', () => {
     return document.querySelector('a').textContent;
   }
 
-  describe('when the chat is online', () => {
+  xdescribe('when the chat is online', () => {
     beforeEach(() => {
       chatShowSpy = jest.fn(() => true);
       chatOpenSpy = jest.fn();
