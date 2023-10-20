@@ -1,11 +1,7 @@
 module Feedback
   module Steps
-    class WebsiteExperience < ::GITWizard::Step
-      attribute :unsuccessful_visit_explanation
-      attribute :rating
-      validates :rating, presence: true
-
-      OPTIONS = [
+    class Rating < ::GITWizard::Step
+      RATINGS = [
         OpenStruct.new(id: 0, value: "Very satisfied"),
         OpenStruct.new(id: 1, value: "Somewhat satisfied"),
         OpenStruct.new(id: 2, value: "Neither satisfied nor dissatisfied"),
@@ -13,20 +9,19 @@ module Feedback
         OpenStruct.new(id: 4, value: "Very dissatisfied"),
       ].freeze
 
+      attribute :rating
+      validates :rating, presence: true
+
+      def ratings
+        RATINGS
+      end
+
       def options
         OPTIONS
       end
 
       def can_proceed?
         true
-      end
-
-      def skipped?
-        !website?
-      end
-
-      def website?
-        @store["topic"] == "Give feedback about the website"
       end
     end
   end
