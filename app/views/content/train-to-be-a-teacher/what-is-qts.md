@@ -1,6 +1,7 @@
 ---
 title: "Qualified teacher status (QTS)"
 heading: "What is qualified teacher status (QTS)?"
+subcategory: Qualifications you can get
 description: |-
   Qualified teacher status (QTS) is what you need to teach in maintained primary, secondary and special schools in England. Find out how to get QTS.
 date: "2021-11-01"
@@ -13,6 +14,9 @@ related_content:
     What will your teacher training be like?: "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
+navigation: 20.50
+navigation_title: What is qualified teacher status
+navigation_description: Find out what qualified teacher status is and how to achieve it through teacher training.
 inset_text:
   international-content:
     text: If you qualified as a teacher outside the UK, you can teach in England for up to 4 years without QTS. However, having QTS may improve your chances of getting a teaching job in England.
