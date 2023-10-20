@@ -47,6 +47,7 @@ export default class extends Controller {
     this.waitForZendeskScript(() => {
       this.showWebWidget();
       this.waitForWebWidget(() => {
+        document.getElementById('webWidget').focus();
         this.chatTarget.textContent = 'Chat online';
       });
     });
@@ -66,7 +67,7 @@ export default class extends Controller {
 
   waitForWebWidget(callback) {
     const interval = setInterval(() => {
-      if (window.zEACLoaded) {
+      if (document.getElementById('webWidget')) {
         clearInterval(interval);
         // Small delay to account for the chat box animating in.
         setTimeout(() => {
@@ -78,7 +79,7 @@ export default class extends Controller {
 
   waitForZendeskScript(callback) {
     const interval = setInterval(() => {
-      if (window.zEACLoaded) {
+      if (window.$zopim && window.$zopim.livechat) {
         clearInterval(interval);
         callback();
       }
@@ -86,7 +87,15 @@ export default class extends Controller {
   }
 
   showWebWidget() {
-    window.zE('messenger', 'open');
+    window.$zopim.livechat.window.show();
+    window.$zopim.livechat.window.onHide(() => {
+      // Return focus back to where it was before opening
+      // the chat widget.
+      if (this.previousTarget) {
+        this.previousTarget.focus();
+        this.previousTarget.blur();
+      }
+    });
   }
 
   get zendeskScriptLoaded() {
