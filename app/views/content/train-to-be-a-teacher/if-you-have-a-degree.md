@@ -56,7 +56,7 @@ Getting QTS without PGCE may mean that:
 * your course fees are lower
 * you submit fewer assignments
 
-[Find out more about QTS](/what-is-qts).
+[Find out more about QTS](/train-to-be-a-teacher/what-is-qts).
 
 Talk to your teacher training provider to find out more about the courses available.
 

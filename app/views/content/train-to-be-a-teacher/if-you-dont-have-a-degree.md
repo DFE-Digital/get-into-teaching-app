@@ -21,7 +21,7 @@ You need a bachelor’s degree in any subject to train to teach in primary, seco
 
 For secondary teacher training, your provider will also want to make sure you have a good knowledge of the subject you’re applying to teach.
 
-If you do not already have one, you can train to be a teacher as part of your bachelor’s degree and get [qualified teacher status (QTS)](/what-is-qts).
+If you do not already have one, you can train to be a teacher as part of your bachelor’s degree and get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 QTS is what you need to teach in maintained primary, secondary and special schools in England (schools funded by local authorities).
 
