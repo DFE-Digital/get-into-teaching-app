@@ -70,7 +70,7 @@ Getting a PGCE can help you:
 * earn up to 60 credits towards a master’s - you may want to do a master’s in education, for example, for your professional development
 * teach in other countries
 
-[Find out more about PGCE](/what-is-a-pgce).
+[Find out more about PGCE](/train-to-be-a-teacher/what-is-a-pgce).
 
 You can also do a teacher training course to just get a postgraduate certificate in education (PGCE) without QTS.
 
