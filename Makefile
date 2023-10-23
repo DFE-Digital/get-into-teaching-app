@@ -138,6 +138,10 @@ bin/terrafile: ## Install terrafile to manage terraform modules
 	curl -sL https://github.com/coretech/terrafile/releases/download/v${TERRAFILE_VERSION}/terrafile_${TERRAFILE_VERSION}_$$(uname)_x86_64.tar.gz \
 		| tar xz -C ./bin terrafile
 
+bin/konduit.sh:
+	curl -s https://raw.githubusercontent.com/DFE-Digital/teacher-services-cloud/main/scripts/konduit.sh -o bin/konduit.sh \
+		&& chmod +x bin/konduit.sh
+
 terraform-init: set-azure-account
 	$(if $(or $(IMAGE_TAG), $(NO_IMAGE_TAG_DEFAULT)), , $(eval export IMAGE_TAG=master))
 	$(if $(IMAGE_TAG), , $(error Missing environment variable "IMAGE_TAG"))
