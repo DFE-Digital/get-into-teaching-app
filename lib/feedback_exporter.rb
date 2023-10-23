@@ -4,8 +4,8 @@ class FeedbackExporter
   EXPORTABLE_ATTRS = %w[
     id
     topic
-    explanation
     rating
+    explanation
     created_at
   ].freeze
   CSV_INJECT_CHARS = %w[+ - @ =].freeze
