@@ -431,10 +431,14 @@ Check your filename only contains lower case characters, numbers and underscores
 
 ## Internship providers
 
-Occasionally we are sent a new spreadsheet to update the list of internship providers on the `teaching-internship-providers.md` page. We have a rake task to make this easy to do:
+#### Warning! Do not edit the `teaching-internship-providers.md` page directly.
 
-- Export the XLSX to CSV
-- Rename it `internship_providers.csv` and place it in the root application directory
-- Run `bundle exec rake csv_to_yaml:internship_providers`
-- Overwrite the regions in `teaching-internship-providers.md` with the output of the task
-- Delete the `internship_providers.csv` file as you don't need to commit it
+Unlike the other content pages the internship providers page is a fully generated page. 
+This is because occasionally we are sent a new spreadsheet to update the list of internship providers on the `teaching-internship-providers.md` page and the numbers can be large, and need to be grouped by provider region and sorted, which would be a large and time consuming manual task. We have a rake task to make this easy to do, but this means it should not be edited directly. Instead any changes to content for the page should be made to the `lib/tasks/support/teaching-internship-providers.md.erb` file and then the page should be regenerated:
+
+- Run `bundle exec rake teaching_internship_providers:generate` in your terminal.
+
+When updating not just the text content within the file, but the actual list of providers (which will be provided as an XLSX file), you will need to update the CSV file that the rake task uses to generate the page. To do this:
+- Export the XLSX to CSV with filename `internship_providers.csv`
+- Place it in the `lib/tasks/support` directory.
+- Run `bundle exec rake teaching_internship_providers:generate`.
