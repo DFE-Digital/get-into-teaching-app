@@ -126,7 +126,6 @@ Rails.application.routes.draw do
   end
 
   namespace :teacher_training_adviser, path: "/teacher-training-adviser" do
-
     resources :steps,
               path: "/sign_up",
               only: %i[index show update] do

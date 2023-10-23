@@ -19,7 +19,7 @@ class UserFeedback < ApplicationRecord
   validates :rating, presence: true, inclusion: { in: UserFeedback.ratings.keys }
   validates :explanation, presence: true
 
-  private
+private
 
   def sanitize_input
     self.explanation = explanation&.strip.presence
