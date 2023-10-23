@@ -1,7 +1,7 @@
 ---
 title: "Get support if you're disabled"
-heading: "Get support training to teach if you're disabled"
-subcategory: Get extra support
+heading: "Funding and support if you're disabled"
+subcategory: Additional funding and support
 description: |-
     Find out about the support you can get while training to teach if you're disabled.
 related_content:
@@ -11,7 +11,7 @@ related_content:
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.25
-navigation_title: If you're disabled
+navigation_title: Funding and support if you're disabled
 navigation_description: Find out about the support you can get while training to teach if you're disabled.
 keywords:
     - Disability
