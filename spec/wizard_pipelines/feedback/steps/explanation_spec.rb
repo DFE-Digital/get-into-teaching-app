@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Feedback::Steps::Purpose do
+describe Feedback::Steps::Explanation do
   include_context "with wizard step"
   let(:wizard) { Feedback::Wizard.new(wizardstore, described_class.key) }
 
