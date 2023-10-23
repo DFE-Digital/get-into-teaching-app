@@ -1,8 +1,9 @@
 <%= f.govuk_text_area :explanation,
                       label: {
-                        text: "Tell us about your experience signing up for #{feedback_session['subject']}"
+                        tag: 'h1',
+                        text: "Tell us about your experience"
                       } do %>
   <p>
-    You can give us feedback on what we’re doing well, as well as ways we could improve.
+    You can give general feedback or tell us about a specific problem. Do not include any information that could identify you personally, such as your name.
   </p>
 <% end %>
