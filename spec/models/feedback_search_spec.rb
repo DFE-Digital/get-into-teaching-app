@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe TeacherTrainingAdviser::FeedbackSearch do
+RSpec.describe FeedbackSearch do
   let(:instance) { described_class.new }
 
   describe "attributes" do
@@ -67,7 +67,7 @@ RSpec.describe TeacherTrainingAdviser::FeedbackSearch do
       on_or_before = instance.created_on_or_before
 
       ((on_or_after - 2.days)..(on_or_before + 2.days)).each do |date|
-        create(:feedback).tap do |feedback|
+        create(:user_feedback).tap do |feedback|
           feedback.update(created_at: date)
         end
       end

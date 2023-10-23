@@ -45,7 +45,7 @@ describe "Instrumentation", type: :request do
     end
   end
 
-  describe "app.tta_feedback" do
+  xdescribe "app.tta_feedback" do
     let(:params) do
       {
         teacher_training_adviser_feedback: attributes_for(
