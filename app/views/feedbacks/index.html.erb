@@ -1,0 +1,7 @@
+<% @page_title = "Service feedback" %>
+<% @fullwidth = true %>
+
+<h1>Service feedback</h1>
+<%= render "feedbacks/export_form" %>
+<hr class="govuk-section-break govuk-section-break--l">
+<%= render "feedbacks/recent", recent_feedback: @recent_feedback %>
