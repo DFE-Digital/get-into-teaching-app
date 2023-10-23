@@ -16,10 +16,6 @@ module Feedback
         RATINGS
       end
 
-      def options
-        OPTIONS
-      end
-
       def can_proceed?
         true
       end

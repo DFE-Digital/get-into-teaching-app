@@ -1,13 +1,12 @@
 require "rails_helper"
 
-RSpec.describe TeacherTrainingAdviser::Feedback do
+RSpec.describe UserFeedback do
   include_context "sanitize fields", %i[unsuccessful_visit_explanation improvements]
 
   describe "attributes" do
+    it { is_expected.to respond_to :topic }
+    it { is_expected.to respond_to :explanation }
     it { is_expected.to respond_to :rating }
-    it { is_expected.to respond_to :successful_visit }
-    it { is_expected.to respond_to :unsuccessful_visit_explanation }
-    it { is_expected.to respond_to :improvements }
 
     it do
       expect(subject).to define_enum_for(:rating).with_values(%i[
@@ -22,26 +21,9 @@ RSpec.describe TeacherTrainingAdviser::Feedback do
 
   describe "validation" do
     it { is_expected.to validate_presence_of(:rating) }
-    it { is_expected.to allow_values(true, false).for(:successful_visit) }
-    it { is_expected.to allow_values(nil, "").for(:successful_visit) }
-
-    context "when successful_visit is false" do
-      before { allow(subject).to receive(:successful_visit).and_return(false) }
-
-      it { is_expected.not_to validate_presence_of(:unsuccessful_visit_explanation) }
-    end
-
-    context "when successful_visit is nil" do
-      before { allow(subject).to receive(:successful_visit).and_return(nil) }
-
-      it { is_expected.not_to validate_presence_of(:unsuccessful_visit_explanation) }
-    end
-
-    context "when successful_visit is true" do
-      before { allow(subject).to receive(:successful_visit).and_return(true) }
-
-      it { is_expected.not_to validate_presence_of(:unsuccessful_visit_explanation) }
-    end
+    it { is_expected.to validate_presence_of(:topic) }
+    it { is_expected.to validate_presence_of(:explanation) }
+    it { is_expected.to allow_values(UserFeedback.ratings.keys).for(:rating) }
   end
 
   describe "scope" do

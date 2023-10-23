@@ -8,8 +8,7 @@ describe Feedback::Wizard do
     { uuid => {
       "rating" => 1,
       "topic" => "adviser",
-      "successful_visit" => "Yes",
-      "unsuccessful_visit_explanation" => "Blabla",
+      "explanation" => "Blabla",
     } }
   end
   let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
@@ -20,8 +19,7 @@ describe Feedback::Wizard do
     it do
       is_expected.to eql [
         Feedback::Steps::Purpose,
-        Feedback::Steps::WebsiteExperience,
-        Feedback::Steps::Signup,
+        Feedback::Steps::Explanation,
         Feedback::Steps::Rating,
       ]
     end
