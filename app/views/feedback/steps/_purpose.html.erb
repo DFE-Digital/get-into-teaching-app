@@ -3,12 +3,12 @@
 </h1>
 
 <p>
-We'll review this feedback to make our website better. Answer up to 4 questions to let us know how we can improve.
+  We'll review this feedback to make our website better. Answer 3 questions to let us know how we can improve.
 </p>
 
 <p>All feedback is anonymous and we cannot respond to individual queries. </p>
 
-<p>If you have a question or need help, please visit our get help and support page. </p>
+<p>If you have a question or need help, please visit our get <%= link_to "help and support page.", get_help_and_support_path %></p>
 
 <%= f.govuk_collection_select :topic,
       f.object.options,
