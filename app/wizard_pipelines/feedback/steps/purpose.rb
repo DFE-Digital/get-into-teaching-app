@@ -6,7 +6,7 @@ module Feedback
         OpenStruct.new(id: "Give feedback about signing up for an adviser", value: "Give feedback about signing up for an adviser"),
         OpenStruct.new(id: "Give feedback about signing up for emails", value: "Give feedback about signing up for emails"),
         OpenStruct.new(id: "Give feedback about signing up for an event", value: "Give feedback about signing up for an event"),
-        OpenStruct.new(id: "Give feedback about booking a callback", value: "Give feedback about booking a callback")
+        OpenStruct.new(id: "Give feedback about booking a callback", value: "Give feedback about booking a callback"),
       ].freeze
 
       attribute :topic
