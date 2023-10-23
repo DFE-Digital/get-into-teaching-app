@@ -148,7 +148,6 @@ Rails.application.routes.draw do
 
   resources :feedbacks, only: %i[new create index] do
     collection do
-      get :thank_you
       post :export
     end
   end

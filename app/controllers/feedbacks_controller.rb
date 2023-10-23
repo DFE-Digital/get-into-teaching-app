@@ -7,8 +7,6 @@ class FeedbacksController < ApplicationController
   before_action :load_recent_feedback, only: %i[index export]
   before_action :restrict_access, if: :authenticate?
 
-  def thank_you; end
-
   def index
     @search = FeedbackSearch.new
   end
