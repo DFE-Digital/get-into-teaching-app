@@ -79,6 +79,8 @@
       @include font-size(xxlarge);
 
       padding: .05rem .7rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
     }
 
     span:last-of-type {
