@@ -23,7 +23,7 @@ RSpec.describe UserFeedback do
     it { is_expected.to validate_presence_of(:rating) }
     it { is_expected.to validate_presence_of(:topic) }
     it { is_expected.to validate_presence_of(:explanation) }
-    it { is_expected.to allow_values(*UserFeedback.ratings.keys).for(:rating) }
+    it { is_expected.to allow_values(*described_class.ratings.keys).for(:rating) }
   end
 
   describe "scope" do

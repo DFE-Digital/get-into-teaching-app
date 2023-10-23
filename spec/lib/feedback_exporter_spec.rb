@@ -4,9 +4,9 @@ require "feedback_exporter"
 RSpec.describe FeedbackExporter do
   let(:feedback) do
     [
-      create(:user_feedback, topic: 'TEST TOPIC', rating: :very_satisfied, explanation: " =cmd|' /C notepad'!'A1'"),
-      create(:user_feedback, topic: 'TEST TOPIC', rating: :very_dissatisfied, explanation: "wasn't good"),
-      create(:user_feedback, topic: 'TEST TOPIC', rating: :satisfied, exaplanation: "was good"),
+      create(:user_feedback, topic: "TEST TOPIC", rating: :very_satisfied, explanation: " =cmd|' /C notepad'!'A1'"),
+      create(:user_feedback, topic: "TEST TOPIC", rating: :very_dissatisfied, explanation: "wasn't good"),
+      create(:user_feedback, topic: "TEST TOPIC", rating: :satisfied, exaplanation: "was good"),
     ]
   end
   let(:instance) { described_class.new(feedback) }

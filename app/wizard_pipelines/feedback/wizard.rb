@@ -5,7 +5,7 @@ module Feedback
     self.steps = [
       Steps::Purpose,
       Steps::Explanation,
-      Steps::Rating
+      Steps::Rating,
     ].freeze
 
     def complete!
