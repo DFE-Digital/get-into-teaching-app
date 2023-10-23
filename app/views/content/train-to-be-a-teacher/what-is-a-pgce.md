@@ -12,8 +12,8 @@ date: "2021-11-01"
 image: "static/content/hero-images/0015.jpg"
 backlink: "../../"
 navigation: 20.55
-navigation_title: What is a PGCE
-navigation_description: Find out what a postgraduate certificate in education (PGCE) is and if you need one.
+navigation_title: Postgraduate certificate in education (PGCE)
+navigation_description: A PGCE can help develop your teaching skills and knowledge. You will also need English qualified teacher status (QTS) to teach in maintained schools in England.
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course-pgce
 promo_content:
