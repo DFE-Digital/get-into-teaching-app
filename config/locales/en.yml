@@ -874,9 +874,6 @@ en:
       teacher_training_adviser_feedback_search:
         created_on_or_after: "Created on or after"
         created_on_or_before: "Created on or before"
-      teacher_training_adviser_feedback_search:
-        created_on_or_after: "Created on or after"
-        created_on_or_before: "Created on or before"
       teacher_training_adviser_steps_date_of_birth:
         date_of_birth: "Enter your date of birth"
       teacher_training_adviser_steps_uk_or_overseas:
