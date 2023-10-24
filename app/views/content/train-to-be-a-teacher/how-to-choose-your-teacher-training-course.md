@@ -32,7 +32,7 @@ The main differences between courses are:
 * the qualifications awarded by the course
 * if the course is fee-paying or salaried 
 * the type of course provider 
-* if the course is full or part-time 
+* if the course is full-time or part-time 
 
 ## What you need to get onto the course
 
@@ -61,7 +61,7 @@ Check each course provider’s requirements on their course page. You can also [
 
 You’ll need the right to work or study in the UK to do your teacher training in England. 
 
-If you're a non-UK citizen without the right to work in the UK, some training providers offer courses with visa sponsor available. You can filter by ‘visa sponsorship’ to [find courses where visas can be sponsored](https://www.find-postgraduate-teacher-training.service.gov.uk/).   
+If you're a non-UK citizen without the right to work in the UK, some training providers offer courses with visa sponsorship available. You can filter by ‘visa sponsorship’ to [find courses where visas can be sponsored](https://www.find-postgraduate-teacher-training.service.gov.uk/).   
 
 [Find out how to apply for your visa to train to teach in England](/non-uk-teachers/visas-for-non-uk-trainees).
 
@@ -79,7 +79,7 @@ Without QTS, you will not eligible for a scholarship or bursary to help you trai
 
 Most teacher training courses are fee-funded – this means you have to pay tuition fees and will not earn a salary while you train. 
 
-There are ways to fund your training, for example, through tuition fee and maintenance loans and scholarships and bursaries. 
+There are ways to fund your training, for example, through tuition fee and maintenance loans. You may also be eligible for a bursary or scholarship.
 
 You can [find out about the different ways to fund your training](/funding-and-support).
 
@@ -97,7 +97,7 @@ Places on salaried courses are limited and very competitive. You can [find out w
 
 <div class="inset">
 
-<p>If you’re a non-UK citizen, the number of places on salaried courses is very limited.</p>
+<p>If you’re a non-UK citizen, the chance of getting a place on a salaried course is very limited.</p>
 
 </div>
 
@@ -120,7 +120,7 @@ It’s a good idea to apply to a range of providers to increase your chances of 
 For example, if you’re applying for 4 courses, you might want to apply for 2 courses provided by universities, and 2 provided by schools.
 
 <div class="inset">
-<p>If you’re a non-UK citizen, you might also want to talk to the training provider to confirm:</p>
+<p>If you’re a non-UK citizen, you should confirm with the training provider:</p>
   <ul>
      <li>if they offer visa sponsorship</li>
      <li>the timing for non-UK applications</li>
@@ -128,7 +128,7 @@ For example, if you’re applying for 4 courses, you might want to apply for 2 c
 
 </div>
 
-## Full or part-time courses 
+## Full-time or part-time courses 
 
 Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
 
