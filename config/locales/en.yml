@@ -111,11 +111,9 @@ en:
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding: |-
-        
-          The £25,000 languages bursary is available for trainee teachers when at least 50% of the course content covers an ancient language.
-          
-          Non-UK citizens without indefinite leave to remain in the UK are eligible for this support.
-          
+
+          Bursaries of £25,000 may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible).
+
           Your course provider will confirm if this applies.
       communication_and_media_studies:
         name: "Communication and media studies"
@@ -411,7 +409,7 @@ en:
           attributes:
             rating:
               blank: "Select how satisfied were you with your experience"
-        teacher_training_adviser/feedback_search:
+        feedback_search:
             attributes:
               created_on_or_after:
                 blank: "You must specify a created on or after date"
