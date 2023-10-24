@@ -85,7 +85,7 @@ RSpec.describe "Feedback" do
           id,topic,rating,explanation,created_at
           #{feedback[2].id},website,satisfied,TEST EXPLANATION,#{feedback[2].created_at}
           #{feedback[1].id},website,very_dissatisfied,TEST EXPLANATION,#{feedback[1].created_at}
-          #{feedback[0].id},website,very_satisfied,TEST EXPLANATION,feedback[0].created_at}
+          #{feedback[0].id},website,very_satisfied,TEST EXPLANATION,#{feedback[0].created_at}
         CSV
       )
     end
@@ -93,7 +93,7 @@ RSpec.describe "Feedback" do
     context "when there are errors" do
       let(:params) do
         {
-          teacher_training_adviser_feedback_search: {
+          feedback_search: {
             created_on_or_after: 1.day.from_now,
             created_on_or_before: 1.day.ago,
           },
