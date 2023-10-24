@@ -69,7 +69,7 @@ Rails.application.configure do
   config.x.structured_data.event = true
   config.x.structured_data.how_to = true
 
-  config.x.dfe_analytics = true
+  config.x.dfe_analytics = ENV["DFE_ANALYTICS"]
 
   # Allow access from Codespaces
   config.hosts << /[a-z0-9\-]+\.(preview\.app\.github|githubpreview)\.dev/
