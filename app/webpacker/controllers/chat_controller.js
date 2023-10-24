@@ -27,8 +27,9 @@ export default class extends Controller {
     const closeTime = dayjs().set('hour', 17).set('minute', 30).tz(timeZone);
     const now = dayjs().tz(timeZone);
     const weekend = [6, 0].includes(now.get('day'));
+    const disabled = true; // temporary to disable chat
 
-    return !weekend && now >= openTime && now <= closeTime;
+    return !disabled && !weekend && now >= openTime && now <= closeTime;
   }
 
   start(e) {
@@ -42,32 +43,17 @@ export default class extends Controller {
       this.chatTarget.textContent = 'Starting chat...';
     }
 
-    this.appendZendeskScript();
-
     this.waitForZendeskScript(() => {
       this.showWebWidget();
       this.waitForWebWidget(() => {
-        document.getElementById('webWidget').focus();
         this.chatTarget.textContent = 'Chat online';
       });
     });
   }
 
-  appendZendeskScript() {
-    if (this.zendeskScriptLoaded) {
-      return;
-    }
-
-    const script = document.createElement('script');
-    script.setAttribute('id', 'ze-snippet');
-    script.src =
-      'https://static.zdassets.com/ekr/snippet.js?key=34a8599c-cfec-4014-99bd-404a91839e37';
-    document.body.appendChild(script);
-  }
-
   waitForWebWidget(callback) {
     const interval = setInterval(() => {
-      if (document.getElementById('webWidget')) {
+      if (window.zEACLoaded) {
         clearInterval(interval);
         // Small delay to account for the chat box animating in.
         setTimeout(() => {
@@ -79,7 +65,7 @@ export default class extends Controller {
 
   waitForZendeskScript(callback) {
     const interval = setInterval(() => {
-      if (window.$zopim && window.$zopim.livechat) {
+      if (window.zEACLoaded) {
         clearInterval(interval);
         callback();
       }
@@ -87,15 +73,7 @@ export default class extends Controller {
   }
 
   showWebWidget() {
-    window.$zopim.livechat.window.show();
-    window.$zopim.livechat.window.onHide(() => {
-      // Return focus back to where it was before opening
-      // the chat widget.
-      if (this.previousTarget) {
-        this.previousTarget.focus();
-        this.previousTarget.blur();
-      }
-    });
+    window.zE('messenger', 'open');
   }
 
   get zendeskScriptLoaded() {

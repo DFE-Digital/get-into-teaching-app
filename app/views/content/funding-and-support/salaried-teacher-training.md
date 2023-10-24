@@ -26,7 +26,7 @@ keywords:
 
 There are some teacher training courses that come with a salary. 
 
-This means you will not have to pay tuition fees and will receive a salary while you train to get [qualified teacher status (QTS)](/what-is-qts). This is what you need to teach in many primary, secondary and special schools in England. 
+This means you will not have to pay tuition fees and will receive a salary while you train to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). This is what you need to teach in many primary, secondary and special schools in England. 
 
 The main salaried courses include School Direct salaried, postgraduate teaching apprenticeships (PGTA) and teacher training delivered by Teach First.
 
@@ -70,7 +70,7 @@ Full-time salaried teacher training will usually last:
 
 Some courses can begin at other points in the year and there may be part-time courses available. 
 
-As well as QTS, you may also be able to work towards a [postgraduate certificate in education (PGCE)](/what-is-a-pgce), but you may have to pay an extra fee. 
+As well as QTS, you may also be able to work towards a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce), but you may have to pay an extra fee. 
 
 [Find out more about what to expect during your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
 

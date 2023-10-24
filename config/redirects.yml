@@ -129,7 +129,7 @@ redirects:
   "/explore-my-options/training-to-teach-secondary-subjects/training-to-teach-physical-education-pe": "/steps-to-become-a-teacher"
   "/how-to-apply-for-teacher-training/arranging-your-teacher-training-references": "/how-to-apply-for-teacher-training/teacher-training-references"
   "/explore-my-options/teacher-training-routes/school-led-training/school-direct-salaried": "/funding-and-support/salaried-teacher-training"
-  "/explore-my-options/teacher-training-routes/pgce": "/what-is-a-pgce"
+  "/explore-my-options/teacher-training-routes/pgce": "/train-to-be-a-teacher/what-is-a-pgce"
   "/how-to-become-a-teacher": "/steps-to-become-a-teacher"
   "/explore-my-options/postgraduate-teacher-training-courses/teacher-training-courses": "/steps-to-become-a-teacher"
   "/explore-my-options": "/steps-to-become-a-teacher"
@@ -322,6 +322,8 @@ redirects:
   "/become-a-further-education-teacher": "/is-teaching-right-for-me/become-a-further-education-teacher"
   "/early-years-teaching-training": "/is-teaching-right-for-me/become-an-early-years-teacher"
   "/teach-disabled-pupils-and-pupils-with-special-educational-needs": "/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs"
+  "/what-is-a-pgce": "/train-to-be-a-teacher/what-is-a-pgce"
+  "/what-is-qts": "/train-to-be-a-teacher/what-is-qts"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"

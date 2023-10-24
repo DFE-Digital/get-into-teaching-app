@@ -11,7 +11,7 @@ RSpec.feature "Chat", type: :feature do
     context "when chat is online" do
       let(:date) { Time.zone.local(2021, 1, 1, 9) }
 
-      scenario "viewing the chat section of the talk to us component" do
+      xscenario "viewing the chat section of the talk to us component" do
         visit_on_date root_path
         dismiss_cookies
 

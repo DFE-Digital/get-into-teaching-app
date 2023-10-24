@@ -1,6 +1,7 @@
 ---
 title: "Qualified teacher status (QTS)"
 heading: "What is qualified teacher status (QTS)?"
+subcategory: Qualifications you can get
 description: |-
   Qualified teacher status (QTS) is what you need to teach in maintained primary, secondary and special schools in England. Find out how to get QTS.
 date: "2021-11-01"
@@ -13,6 +14,9 @@ related_content:
     What will your teacher training be like?: "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
+navigation: 20.50
+navigation_title: Qualified teacher status (QTS)
+navigation_description: You need English qualified teacher status (QTS) to teach in maintained schools in England. Find out how to get QTS through teacher training.
 inset_text:
   international-content:
     text: If you qualified as a teacher outside the UK, you can teach in England for up to 4 years without QTS. However, having QTS may improve your chances of getting a teaching job in England.
@@ -51,7 +55,7 @@ As a teacher with QTS:
 * you'll receive a package of [support for early career teachers](/support-for-early-career-teachers), including a reduced timetable 
 * you'll be on the qualified teacher pay range and receive a higher salary than teachers without QTS
 
-You can also get other academic awards through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-pgce) or Bachelor of Education (BEd).
+You can also get other academic awards through teacher training such as a postgraduate certificate in education (PGCE) or Bachelor of Education (BEd).
 
 But if your course does not lead to QTS, you will not be a qualified teacher.
 
@@ -61,7 +65,7 @@ You can get QTS through undergraduate or postgraduate initial teacher training. 
 
 You can apply for either a primary or secondary teacher training course awarding QTS. [Find out more about deciding who to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
 
-You can also get a postgraduate qualification through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-pgce). 
+You can also get a postgraduate qualification through teacher training such as a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce). 
 
 Some courses just offer a PGCE without QTS, but this means you may not be fully qualified to teach in your chosen school or entitled to the same benefits.
 

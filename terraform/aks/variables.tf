@@ -58,10 +58,10 @@ variable "pr_number" {
 variable "basic_auth" {
   default = 1
 }
-variable "paas_asset_hostnames" {
+variable "asset_hostnames" {
   default = []
 }
-variable "paas_internet_hostnames" {
+variable "internet_hostnames" {
   default = []
 }
 variable "command" {
@@ -75,6 +75,15 @@ variable "replicas" {
 variable "memory_max" {
   default = "1Gi"
   type = string
+}
+variable "azure_maintenance_window" {
+  default = null
+}
+variable "postgres_flexible_server_sku" {
+  default = "B_Standard_B1ms"
+}
+variable "postgres_enable_high_availability" {
+  default = false
 }
 
 locals {

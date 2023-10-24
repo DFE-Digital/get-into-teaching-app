@@ -25,9 +25,9 @@ module "application_configuration" {
     HTTPAUTH_PASSWORD = module.infrastructure_secrets.map.HTTP-PASSWORD,
     HTTPAUTH_USERNAME = module.infrastructure_secrets.map.HTTP-USERNAME,
     BASIC_AUTH        = var.basic_auth,
-    APP_URL           = length(var.paas_asset_hostnames) == 0 ? "" : "https://${var.paas_internet_hostnames[0]}.education.gov.uk",
+    APP_URL           = length(var.internet_hostnames) == 0 ? "" : "https://${var.internet_hostnames[0]}.education.gov.uk",
 #   keeping here as a reminder, but went be set in aks and need to confirm impact
-    APP_ASSETS_URL    = length(var.paas_asset_hostnames) == 0 ? "" : "https://${var.paas_asset_hostnames[0]}.education.gov.uk"
+    APP_ASSETS_URL    = length(var.asset_hostnames) == 0 ? "" : "https://${var.asset_hostnames[0]}.education.gov.uk"
   }
 }
 
