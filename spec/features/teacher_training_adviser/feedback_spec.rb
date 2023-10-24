@@ -22,7 +22,7 @@ RSpec.feature "Feedback", type: :feature do
 
     expect(page.body).to eq(
       <<~CSV,
-        id,topic,explanation,created_at
+        id,topic,rating,explanation,created_at
         #{feedback.id},website,very_satisfied,TEST EXPLANATION,#{feedback.created_at}
       CSV
     )
