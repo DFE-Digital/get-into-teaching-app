@@ -9,7 +9,6 @@ related_content:
     What will your teacher training year be like? : "/train-to-be-a-teacher/initial-teacher-training"
     What to expect on a university-based PGCE course : "/blog/what-to-expect-on-your-teacher-training"
 date: "2021-11-01"
-image: "static/content/hero-images/0015.jpg"
 backlink: "../../"
 navigation: 20.55
 navigation_title: Postgraduate certificate in education (PGCE)
