@@ -21,7 +21,7 @@ You need qualified teacher status (QTS) to teach in maintained primary, secondar
 
 You do not need QTS to [teach in further education](/is-teaching-right-for-me/become-a-further-education-teacher) or to [teach in early years](/is-teaching-right-for-me/become-an-early-years-teacher).
 
-[Find out more about qualified teacher status (QTS)](/what-is-qts). 
+[Find out more about qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). 
 
 ## What qualifications do you need to train?
 

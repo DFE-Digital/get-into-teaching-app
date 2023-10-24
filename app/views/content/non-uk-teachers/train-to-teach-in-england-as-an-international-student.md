@@ -171,7 +171,7 @@ If you are not training to teach in these subjects, any support you get will dep
 
 ## Search and apply for teacher training courses
 
-Your teacher training course must lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
+Your teacher training course must lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/train-to-be-a-teacher/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
 
 You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Teacher training courses can also be 'fee-paying' or 'salaried'.
 
