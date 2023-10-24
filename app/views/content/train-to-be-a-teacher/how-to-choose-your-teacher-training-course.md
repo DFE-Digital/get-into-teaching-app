@@ -67,9 +67,9 @@ If you're a non-UK citizen without the right to work in the UK, some training pr
 
 ## The qualifications awarded by the course
 
-Most schools in England need you to have [qualified teacher status (QTS)](/what-is-qts) to teach. 
+Most schools in England need you to have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach. 
 
-Most teacher training courses will award QTS, but some will just award a [postgraduate certificate in education (PGCE)](/what-is-a-pgce), and some will award both. 
+Most teacher training courses will award QTS, but some will just award a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce), and some will award both. 
 
 Without QTS, you will not eligible for a scholarship or bursary to help you train. You also may not be fully qualified to teach in your chosen school and will not receive the same pay and support when you start teaching.
 
