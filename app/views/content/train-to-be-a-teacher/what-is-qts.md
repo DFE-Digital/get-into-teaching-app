@@ -55,7 +55,7 @@ As a teacher with QTS:
 * you'll receive a package of [support for early career teachers](/support-for-early-career-teachers), including a reduced timetable 
 * you'll be on the qualified teacher pay range and receive a higher salary than teachers without QTS
 
-You can also get other academic awards through teacher training such as a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce) or Bachelor of Education (BEd).
+You can also get other academic awards through teacher training such as a postgraduate certificate in education (PGCE) or Bachelor of Education (BEd).
 
 But if your course does not lead to QTS, you will not be a qualified teacher.
 

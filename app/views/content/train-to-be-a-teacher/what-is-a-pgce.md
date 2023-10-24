@@ -13,7 +13,7 @@ image: "static/content/hero-images/0015.jpg"
 backlink: "../../"
 navigation: 20.55
 navigation_title: Postgraduate certificate in education (PGCE)
-navigation_description: A PGCE can help develop your teaching skills and knowledge. You will also need English qualified teacher status (QTS) to teach in maintained schools in England.
+navigation_description: Having a PGCE as well as qualified teacher status (QTS) can help you develop your teaching skills and knowledge.
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course-pgce
 promo_content:
