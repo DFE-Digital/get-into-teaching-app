@@ -8,10 +8,6 @@ date: "2021-04-14"
 image: false
 promo_content:
   - content/train-to-be-a-teacher/promos/eta-promo-internships
-inset_text:
-  applications-open:
-    text: |-
-      Applications are now open for teaching internships starting in summer 2024.
 backlink: /
 fullwidth: true
 navigation: 5.55
