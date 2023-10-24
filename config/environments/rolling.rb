@@ -10,5 +10,5 @@ Rails.application.configure do
 
   config.x.display_content_errors = true
 
-  config.x.dfe_analytics = true
+  config.x.dfe_analytics = ENV["DFE_ANALYTICS"]
 end
