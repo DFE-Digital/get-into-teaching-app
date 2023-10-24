@@ -1,6 +1,6 @@
 ---
-title: "Teacher training"
-heading: "Teacher training"
+title: "What to expect in teacher training"
+heading: "What to expect in teacher training"
 subcategory: Postgraduate teacher training
 description: |-
   Find out what initial teacher training (ITT) is like, from your classroom placements and theoretical learning, to how you'll be assessed.
