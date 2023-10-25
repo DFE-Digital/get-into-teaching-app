@@ -1,7 +1,7 @@
 ---
 title: "Get support as a parent or carer"
 heading: "Funding and support if you're a parent or carer"
-subcategory: Additional help to train to teach
+subcategory: Extra support
 description: |-
   Find out what extra grants and schemes are available when completing your teacher training if you have children or other caring responsibilities.
 related_content:

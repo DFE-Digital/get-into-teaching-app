@@ -1,7 +1,7 @@
 ---
 title: "Get support if you're a veteran"
 heading: "Funding and support if you're a veteran"
-subcategory: Additional help to train to teach
+subcategory: Extra support
 description: |-
     Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 related_content:

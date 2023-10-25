@@ -1,7 +1,7 @@
 ---
 title: "Get support if you're disabled"
 heading: "Funding and support if you're disabled"
-subcategory: Additional help to train to teach
+subcategory: Extra support
 description: |-
     Find out about the support you can get while training to teach if you're disabled.
 related_content:
