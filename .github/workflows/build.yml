@@ -510,76 +510,11 @@ jobs:
         with:
           labels: Review_v2
 
-  development:
-    name: Development Deployment
-    needs: [  feature_tests, javascript_tests, build_release  ]
-    if: github.ref == 'refs/heads/master'
-    concurrency: Development
-    runs-on: ubuntu-latest
-    outputs:
-      release_tag: ${{steps.tag_version.outputs.pr_number}}
-      release_sha: ${{github.sha }}
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v4
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - uses: Azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - uses: DfE-Digital/keyvault-yaml-secret@v1
-        id:  keyvault-yaml-secret
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          secret: INFRA-KEYS
-          key: SLACK-WEBHOOK
-
-      - name: Deploy to Development
-        uses: ./.github/workflows/actions/deploy
-        id: deploy
-        with:
-          environment: Development
-          sha:  ${{ github.sha }}
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
-          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
-          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-
-      - name: Generate Tag from PR Number
-        id: tag_version
-        uses: DFE-Digital/github-actions/GenerateReleaseFromSHA@master
-        with:
-          sha: ${{github.sha}}
-
-      - name: Create a GitHub Release
-        id: release
-        if: steps.tag_version.outputs.pr_found == 1
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ steps.tag_version.outputs.pr_number }}
-          body: ${{ steps.tag_version.outputs.pr_number }}
-          release_name: Release ${{ steps.tag_version.outputs.pr_number }}
-          commitish: ${{ github.sha}}
-          prerelease: false
-
-      - name: Copy PR Info to Release
-        if: steps.release.outputs.id
-        uses: DFE-Digital/github-actions/CopyPRtoRelease@master
-        with:
-          PR_NUMBER:  ${{ steps.tag_version.outputs.pr_number }}
-          RELEASE_ID: ${{ steps.release.outputs.id }}
-          TOKEN: ${{secrets.GITHUB_TOKEN}}
-
   development_aks:
     name: Development AKS Deployment
     needs: [  feature_tests, javascript_tests, build_release  ]
     if: github.ref == 'refs/heads/master'
     concurrency: Development_aks
-    continue-on-error: true
     runs-on: ubuntu-latest
     environment:
       name: development_aks
@@ -618,52 +553,32 @@ jobs:
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
 
-      # Uncomment below when PaaS dev deploy step is removed
-
-      # - name: Generate Tag from PR Number
-      #   id: tag_version
-      #   uses: DFE-Digital/github-actions/GenerateReleaseFromSHA@master
-      #   with:
-      #     sha: ${{github.sha}}
-
-      # - name: Create a GitHub Release
-      #   id: release
-      #   if: steps.tag_version.outputs.pr_found == 1
-      #   uses: actions/create-release@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     tag_name: ${{ steps.tag_version.outputs.pr_number }}
-      #     body: ${{ steps.tag_version.outputs.pr_number }}
-      #     release_name: Release ${{ steps.tag_version.outputs.pr_number }}
-      #     commitish: ${{ github.sha}}
-      #     prerelease: false
-
-      # - name: Copy PR Info to Release
-      #   if: steps.release.outputs.id
-      #   uses: DFE-Digital/github-actions/CopyPRtoRelease@master
-      #   with:
-      #     PR_NUMBER:  ${{ steps.tag_version.outputs.pr_number }}
-      #     RELEASE_ID: ${{ steps.release.outputs.id }}
-      #     TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-  owasp:
-    name: OWASP Checks
-    needs: [ development ]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v4
-
-      - name: Vunerability Test
-        uses: ./.github/workflows/actions/owasp
-        id: deploy
+      - name: Generate Tag from PR Number
+        id: tag_version
+        uses: DFE-Digital/github-actions/GenerateReleaseFromSHA@master
         with:
-          environment: Development
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
-          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
-          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{secrets.GITHUB_TOKEN}}
+          sha: ${{github.sha}}
+
+      - name: Create a GitHub Release
+        id: release
+        if: steps.tag_version.outputs.pr_found == 1
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.tag_version.outputs.pr_number }}
+          body: ${{ steps.tag_version.outputs.pr_number }}
+          release_name: Release ${{ steps.tag_version.outputs.pr_number }}
+          commitish: ${{ github.sha}}
+          prerelease: false
+
+      - name: Copy PR Info to Release
+        if: steps.release.outputs.id
+        uses: DFE-Digital/github-actions/CopyPRtoRelease@master
+        with:
+          PR_NUMBER:  ${{ steps.tag_version.outputs.pr_number }}
+          RELEASE_ID: ${{ steps.release.outputs.id }}
+          TOKEN: ${{secrets.GITHUB_TOKEN}}
 
   owasp_aks:
     name: OWASP AKS Checks
@@ -900,7 +815,7 @@ jobs:
   production:
     name: Production Deployment
     runs-on: ubuntu-latest
-    needs: [ integration, development ]
+    needs: [ integration, development_aks ]
     concurrency: Production
     environment:
        name: Production
