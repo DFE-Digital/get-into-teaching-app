@@ -1,7 +1,7 @@
 ---
 title: "Get support as a parent or carer"
-heading: "Get support training to teach if you're a parent or carer"
-subcategory: Get extra support
+heading: "Funding and support if you're a parent or carer"
+subcategory: Extra support
 description: |-
   Find out what extra grants and schemes are available when completing your teacher training if you have children or other caring responsibilities.
 related_content:
@@ -13,7 +13,7 @@ related_content:
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.30
-navigation_title: If you're a parent or carer
+navigation_title: Funding and support if you're a parent or carer
 navigation_description: Find out what extra grants and schemes are available if you have children or other caring responsibilities.
 keywords:
     - Bursaries

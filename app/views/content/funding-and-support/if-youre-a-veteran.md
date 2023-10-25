@@ -1,7 +1,7 @@
 ---
 title: "Get support if you're a veteran"
-heading: "Get support training to teach if you're a veteran"
-subcategory: Get extra support
+heading: "Funding and support if you're a veteran"
+subcategory: Extra support
 description: |-
     Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 related_content:
@@ -11,7 +11,7 @@ related_content:
 promo_content:
     - content/funding-and-support/promos/get-adviser-veterans-promo
 navigation: 20.35
-navigation_title: If you're a veteran
+navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 calls_to_action:
   chat:
