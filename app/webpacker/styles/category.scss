@@ -1,5 +1,6 @@
 .category {
   background-color: $white;
+  margin-bottom: 3.5em;
 
   &__hero {
     margin: 0;
@@ -106,7 +107,6 @@
 
     &__container {
       border-top: 1px solid $grey;
-      margin-top: 3.5em;
     }
   }
 
