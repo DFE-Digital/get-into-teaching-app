@@ -141,6 +141,8 @@ Rails.application.configure do
 
   config.x.dfe_analytics = true
 
+  config.x.feature_flags.feedback_enabled = false
+
   # Ensure beta redirect happens before static page cache.
   config.middleware.insert_before ActionDispatch::Static, Rack::HostRedirect, {
     "beta-getintoteaching.education.gov.uk" => "getintoteaching.education.gov.uk",
