@@ -387,25 +387,15 @@ en:
         already_exchanged: "This link has been used already. Enter the details below to help us verify you."
 
       models:
+        feedback/steps/explanation:
+          attributes:
+            explanation:
+              blank: "Enter your feedback"
         feedback/steps/purpose:
           attributes:
             topic:
               blank: "Select an option from the list"
-        feedback/steps/website:
-          attributes:
-            value:
-              blank: "Select an option from the list"
-        feedback/steps/signup:
-          attributes:
-            successful_visit:
-              blank: "Select an option from the list"
-            rating:
-              blank: "Select how satisfied were you with your experience"
-        feedback/steps/website_experience:
-          attributes:
-            rating:
-              blank: "Select how satisfied were you with your experience"
-        feedback/steps/website_issue:
+        feedback/steps/rating:
           attributes:
             rating:
               blank: "Select how satisfied were you with your experience"
