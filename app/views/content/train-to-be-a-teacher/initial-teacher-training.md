@@ -1,8 +1,12 @@
 ---
-title: "Teacher training"
-heading: "Teacher training"
+title: "What to expect in teacher training"
+heading: "What to expect in teacher training"
+subcategory: Postgraduate teacher training
 description: |-
   Find out what initial teacher training (ITT) is like, from your classroom placements and theoretical learning, to how you'll be assessed.
+navigation: 20.30
+navigation_title: What to expect in teacher training
+navigation_description: Find out what your teacher training will be like, what you'll learn, and what classroom experience you'll get.
 related_content:
     Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
@@ -35,7 +39,7 @@ There are full-time and part-time teacher training courses available.
 
 ## What you’ll learn in initial teacher training
 
-What you’ll learn will depend on your course and the qualifications it offers. Some teacher training courses award [qualified teacher status (QTS)](/what-is-qts), while some award QTS with a [postgraduate certificate in education (PGCE)](/what-is-a-pgce).
+What you’ll learn will depend on your course and the qualifications it offers. Some teacher training courses award [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), while some award QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
 
 Initial teacher training helps you meet the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). You must meet the teachers’ standards to be awarded QTS.
 

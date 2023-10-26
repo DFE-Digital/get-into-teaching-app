@@ -1,7 +1,7 @@
 ---
 title: "Get support if you're a veteran"
-heading: "Get support training to teach if you're a veteran"
-subcategory: Get extra support
+heading: "Funding and support if you're a veteran"
+subcategory: Extra support
 description: |-
     Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 related_content:
@@ -11,7 +11,7 @@ related_content:
 promo_content:
     - content/funding-and-support/promos/get-adviser-veterans-promo
 navigation: 20.35
-navigation_title: If you're a veteran
+navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 calls_to_action:
   chat:
@@ -36,7 +36,7 @@ You may be eligible for a tax-free undergraduate bursary of £40,000 if you are 
 
 * a veteran who has left full-time employment with the British Army, Royal Air Force or Royal Navy no more than 5 years before the start of the course
 * training to teach secondary biology, chemistry, computing, languages, maths or physics
-* doing an undergraduate degree leading to [qualified teacher status (QTS)](/what-is-qts) in England
+* doing an undergraduate degree leading to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) in England
 
 Doing an undergraduate degree leading to QTS means that you would be qualified to teach in England.
 

@@ -8,10 +8,6 @@ date: "2021-04-14"
 image: false
 promo_content:
   - content/train-to-be-a-teacher/promos/eta-promo-internships
-inset_text:
-  applications-open:
-    text: |-
-      Applications are now open for teaching internships starting in summer 2024.
 backlink: /
 fullwidth: true
 navigation: 5.55
@@ -27,9 +23,9 @@ provider_groups:
 <% providers.each do |provider| %>
       - header: <%= provider["header"].inspect %>
         link: <%= provider["link"].inspect %>
+        applications: <%= provider["applications"].inspect %>
         subjects: <%= provider["subjects"].inspect %>
         areas: <%= provider["areas"].inspect %>
-        applications: <%= provider["applications"].inspect %>
         name: <%= provider["name"].inspect %>
         email: <%= provider["email"].inspect %>
 <% end %>

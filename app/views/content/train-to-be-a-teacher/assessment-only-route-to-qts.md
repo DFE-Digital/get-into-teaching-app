@@ -285,11 +285,6 @@ provider_groups:
       name: Joanna Jones
       telephone: '01483 888070'
       email: contactscitt@georgeabbot.surrey.sch.uk
-    - header: GLF Schools’ Teacher Training
-      link: http://www.glynsurreyscitt.co.uk/846/assessment-only-route
-      name: Helen Shaw
-      telephone: '020 8716 4934'
-      email: info@glftt.org
     - header: i2i Teaching Partnership SCITT
       link: https://www.i2ipartnership.co.uk/
       name: Krissy Taylor
@@ -511,7 +506,7 @@ keywords:
   - experienced
 ---
 
-If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/what-is-qts) through an assessment only programme.
+If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) through an assessment only programme.
 
 If you already have QTS, find out how you can [return to teaching](https://teaching-vacancies.campaign.gov.uk/return-to-teaching/).
 

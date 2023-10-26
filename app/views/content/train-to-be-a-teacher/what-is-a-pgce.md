@@ -1,6 +1,7 @@
 ---
 title: "What is a PGCE course?"
 heading: "What is a PGCE course?"
+subcategory: Qualifications you can get
 description: |-
   A postgraduate certificate in education (PGCE) is an academic qualification. Find out how to do a PGCE course through teacher training.
 related_content:
@@ -8,8 +9,10 @@ related_content:
     What will your teacher training year be like? : "/train-to-be-a-teacher/initial-teacher-training"
     What to expect on a university-based PGCE course : "/blog/what-to-expect-on-your-teacher-training"
 date: "2021-11-01"
-image: "static/content/hero-images/0015.jpg"
 backlink: "../../"
+navigation: 20.55
+navigation_title: Postgraduate certificate in education (PGCE)
+navigation_description: Having a PGCE as well as qualified teacher status (QTS) can help you develop your teaching skills and knowledge.
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course-pgce
 promo_content:
@@ -35,7 +38,7 @@ You do not need one to be a qualified teacher in England, but it can help you de
 
 You need qualified teacher status (QTS) to teach in most primary, secondary and special schools in England. You can get QTS through undergraduate or postgraduate teacher training.
 
-[Find out more about qualified teacher status (QTS)](/what-is-qts).
+[Find out more about qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 Many teacher training courses also offer you a postgraduate qualification such as a PGCE, but you do not need one to teach.
 

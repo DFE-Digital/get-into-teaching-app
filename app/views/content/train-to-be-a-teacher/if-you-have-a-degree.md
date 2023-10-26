@@ -56,7 +56,7 @@ Getting QTS without PGCE may mean that:
 * your course fees are lower
 * you submit fewer assignments
 
-[Find out more about QTS](/what-is-qts).
+[Find out more about QTS](/train-to-be-a-teacher/what-is-qts).
 
 Talk to your teacher training provider to find out more about the courses available.
 
@@ -70,7 +70,7 @@ Getting a PGCE can help you:
 * earn up to 60 credits towards a master’s - you may want to do a master’s in education, for example, for your professional development
 * teach in other countries
 
-[Find out more about PGCE](/what-is-a-pgce).
+[Find out more about PGCE](/train-to-be-a-teacher/what-is-a-pgce).
 
 You can also do a teacher training course to just get a postgraduate certificate in education (PGCE) without QTS.
 
