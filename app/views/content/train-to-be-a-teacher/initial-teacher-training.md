@@ -9,7 +9,7 @@ navigation_title: What to expect in teacher training
 navigation_description: Find out what your teacher training will be like, what you'll learn, and what classroom experience you'll get.
 related_content:
     Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
-    Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
+    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     What to expect on your teacher training : "/blog/what-to-expect-on-your-teacher-training"
     Training and support for early career teachers : "/support-for-early-career-teachers"
     How to apply : "/how-to-apply-for-teacher-training"
