@@ -5,7 +5,7 @@ description: |-
 related_content:
     Improve your subject knowledge : "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
     What teacher training is like : "/train-to-be-a-teacher/initial-teacher-training"
-    Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider" 
+    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course" 
 navigation: 30.20
 navigation_title: Teacher training interviews
 navigation_description: Find out how to prepare for your teacher training interviews.
