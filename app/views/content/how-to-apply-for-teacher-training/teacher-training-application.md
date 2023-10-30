@@ -3,7 +3,7 @@ title: Your teacher training application
 description: |-
   Find out what to include in your teacher training application, how the process works and when to apply.
 related_content:
-    Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
+    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Get school experience : "/is-teaching-right-for-me/get-school-experience"
     My first week as a trainee teacher: "/blog/my-first-week-as-a-trainee-teacher"
 date: "2021-06-24"
