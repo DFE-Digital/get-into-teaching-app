@@ -6,6 +6,7 @@ class UserFeedback < ApplicationRecord
   scope :on_or_before, ->(date) { where("created_at <= ?", date.end_of_day) }
 
   before_validation :sanitize_input
+  after_create :publish_metrics
 
   enum rating: {
     very_satisfied: 0,
@@ -23,5 +24,9 @@ private
 
   def sanitize_input
     self.explanation = explanation&.strip.presence
+  end
+
+  def publish_metrics
+    ActiveSupport::Notifications.instrument("app.tta_feedback", self)
   end
 end

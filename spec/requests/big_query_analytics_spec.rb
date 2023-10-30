@@ -17,9 +17,8 @@ RSpec.describe "BigQuery Analytics", type: :request do
   end
 
   # TODO: Need to understand if this is still required
-  xit "sends DFE Analytics entity events" do
-    params = { teacher_training_adviser_feedback: attributes_for(:user_feedback) }
-    post feedbacks_path, params: params
+  it "sends DFE Analytics entity events" do
+    UserFeedback.create(attributes_for(:user_feedback))
     expect(:create_entity).to have_been_enqueued_as_analytics_events
   end
 end

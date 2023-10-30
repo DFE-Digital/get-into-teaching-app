@@ -1,2 +1,4 @@
 ---
-:shared: {}
+:shared:
+  :user_feedbacks:
+  - explanation

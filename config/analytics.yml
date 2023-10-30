@@ -4,6 +4,5 @@ shared:
     - id
     - topic
     - rating
-    - explanation
     - created_at
     - updated_at

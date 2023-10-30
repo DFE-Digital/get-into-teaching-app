@@ -88,7 +88,7 @@ ActiveSupport::Notifications.subscribe "app.tta_feedback" do |*args|
   prometheus = Prometheus::Client.registry
 
   metric = prometheus.get(:app_tta_feedback_visit_total)
-  metric.increment(labels: { successful: feedback.successful_visit ? "1" : "0" })
+  metric.increment(labels: { topic: feedback.topic })
 
   metric = prometheus.get(:app_tta_feedback_rating_total)
   metric.increment(labels: { rating: feedback.rating.to_s })
