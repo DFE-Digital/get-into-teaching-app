@@ -48,16 +48,19 @@ runs:
              cluster_domain=".${cluster}"
              echo "TERRAFORM_VERSION=$terraform_version" >> $GITHUB_ENV
 
-             if [ "${{inputs.environment }}" == "review_aks" ]
-             then
+             case ${{ inputs.environment }} in
+               review_aks)
                  pr_name="${{env.REVIEW_APPLICATION}}-${{inputs.pr}}"
                  echo "pr_name=${pr_name}" >> $GITHUB_OUTPUT
                  echo "healthcheck=${pr_name}${cluster_domain}" >> $GITHUB_OUTPUT
-             elif [ "${{inputs.environment }}" == "production_aks" ]
-                echo "healthcheck=${{env.AKS_APPLICATION_NAME}}-${appenv}" >> $GITHUB_OUTPUT
-             else
+                 ;;
+               production_aks)
+                 echo "healthcheck=${{env.AKS_APPLICATION_NAME}}-${appenv}" >> $GITHUB_OUTPUT
+                 ;;
+               *)
                  echo "healthcheck=${{env.AKS_APPLICATION_NAME}}-${appenv}${cluster_domain}" >> $GITHUB_OUTPUT
-             fi
+                 ;;
+              esac
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v1
