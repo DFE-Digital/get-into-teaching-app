@@ -254,7 +254,7 @@ If you are applying to train to teach French, German or Spanish, your bachelorâ€
 
 * a degree in any subject, taught entirely in French, German or Spanish 
 
-Your chosen teacher training provider will be able to tell you whether your university is recognised, and whether your degree meets the standard and subject criteria for the international relocation payment.  
+Your chosen teacher training provider will be able to tell you whether your university and degree meet the standard and subject criteria for the international relocation payment.  
 
 ### 3. Type of visa for trainees
 
