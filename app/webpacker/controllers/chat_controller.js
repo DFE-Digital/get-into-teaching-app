@@ -27,9 +27,8 @@ export default class extends Controller {
     const closeTime = dayjs().set('hour', 17).set('minute', 30).tz(timeZone);
     const now = dayjs().tz(timeZone);
     const weekend = [6, 0].includes(now.get('day'));
-    const disabled = true; // temporary to disable chat
 
-    return !disabled && !weekend && now >= openTime && now <= closeTime;
+    return !weekend && now >= openTime && now <= closeTime;
   }
 
   start(e) {
@@ -43,12 +42,26 @@ export default class extends Controller {
       this.chatTarget.textContent = 'Starting chat...';
     }
 
+    this.appendZendeskScript();
+
     this.waitForZendeskScript(() => {
       this.showWebWidget();
       this.waitForWebWidget(() => {
         this.chatTarget.textContent = 'Chat online';
       });
     });
+  }
+
+  appendZendeskScript() {
+    if (this.zendeskScriptLoaded) {
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.setAttribute('id', 'ze-snippet');
+    script.src =
+      'https://static.zdassets.com/ekr/snippet.js?key=34a8599c-cfec-4014-99bd-404a91839e37';
+    document.body.appendChild(script);
   }
 
   waitForWebWidget(callback) {
