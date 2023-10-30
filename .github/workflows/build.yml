@@ -601,57 +601,11 @@ jobs:
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
           GITHUB_TOKEN:      ${{secrets.GITHUB_TOKEN}}
 
-  qa:
-    name: Quality Assurance Deployment
-    needs: [  feature_tests, javascript_tests, build_release ]
-    if: github.ref == 'refs/heads/master'
-    concurrency: QA
-    runs-on: ubuntu-latest
-    environment:
-       name: Test
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v4
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - uses: Azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - uses: DfE-Digital/keyvault-yaml-secret@v1
-        id:  keyvault-yaml-secret
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          secret: INFRA-KEYS
-          key: SLACK-WEBHOOK
-
-      - name: Deploy to Test
-        uses: ./.github/workflows/actions/deploy
-        id: deploy
-        with:
-          environment: Test
-          sha:  ${{ github.sha }}
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
-          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
-          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{env.SLACK_ERROR}}
-          SLACK_TITLE: Failure in Post-Development Deploy
-          SLACK_MESSAGE: Failure with initialising QA deployment for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
-
   test_aks:
     name: Test AKS Deployment
     needs: [  feature_tests, javascript_tests, build_release ]
     if: github.ref == 'refs/heads/master'
     concurrency: test_aks
-    continue-on-error: true
     runs-on: ubuntu-latest
     environment:
        name: test_aks
@@ -695,57 +649,6 @@ jobs:
           SLACK_TITLE: Failure in Post-Development Deploy
           SLACK_MESSAGE: Failure with initialising AKS Test deployment for ${{env.APPLICATION}}
           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
-
-  integration:
-    name: Run Integration Tests on QA
-    runs-on: ubuntu-latest
-    needs: [ build_base, qa ]
-    services:
-      postgres:
-        image: postgres:13.10
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        ports:
-          - 5432:5432
-    env:
-      DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v4
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - uses: Azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - uses: DfE-Digital/keyvault-yaml-secret@v1
-        id:  keyvault-yaml-secret
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          secret: INFRA-KEYS
-          key: HTTP-USERNAME, HTTP-PASSWORD, MAILSAC-API-KEY
-
-      - name: Prepare DB
-        run: |-
-          docker run --net=host -t --rm -e RAILS_ENV=test -e DATABASE_URL="postgresql://postgres:postgres@localhost" ${{ env.DOCKER_IMAGE_TEST }} \
-          bundle exec rails db:prepare
-
-      - name: Run Integration Tests
-        run: |-
-          docker run --net=host -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true -e HTTP_USERNAME -e HTTP_PASSWORD -e MAILSAC_API_KEY -e DATABASE_URL="postgresql://postgres:postgres@localhost" \
-            ${{env.DOCKER_IMAGE_TEST}} bundle exec rspec --tag integration
-        env:
-          HTTP_USERNAME: ${{ steps.keyvault-yaml-secret.outputs.HTTP-USERNAME }}
-          HTTP_PASSWORD: ${{ steps.keyvault-yaml-secret.outputs.HTTP-PASSWORD }}
-          MAILSAC_API_KEY: ${{ steps.keyvault-yaml-secret.outputs.MAILSAC-API-KEY }}
 
   integration_aks:
     name: Run Integration Tests on AKS test
@@ -801,21 +704,19 @@ jobs:
           docker run --net=host -t --rm -e RAILS_ENV=test -e DATABASE_URL="postgresql://postgres:postgres@localhost" ${{ env.DOCKER_IMAGE_TEST }} \
           bundle exec rails db:prepare
 
-      # Uncomment this step when test is migrated to AKS
-      # as need to update config.x.integration_host in config/environments/test.rb
-      # - name: Run Integration Tests
-      #   run: |-
-      #     docker run --net=host -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true -e HTTP_USERNAME -e HTTP_PASSWORD -e MAILSAC_API_KEY -e DATABASE_URL="postgresql://postgres:postgres@localhost" \
-      #       ${{env.DOCKER_IMAGE_TEST}} bundle exec rspec --tag integration
-      #   env:
-      #     HTTP_USERNAME: ${{ steps.keyvault-yaml-secret.outputs.HTTP_USERNAME }}
-      #     HTTP_PASSWORD: ${{ steps.keyvault-yaml-secret.outputs.HTTP_PASSWORD }}
-      #     MAILSAC_API_KEY: ${{ steps.keyvault-yaml-secret.outputs.MAILSAC_API_KEY }}
+      - name: Run Integration Tests
+        run: |-
+          docker run --net=host -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true -e HTTP_USERNAME -e HTTP_PASSWORD -e MAILSAC_API_KEY -e DATABASE_URL="postgresql://postgres:postgres@localhost" \
+            ${{env.DOCKER_IMAGE_TEST}} bundle exec rspec --tag integration
+        env:
+          HTTP_USERNAME: ${{ steps.keyvault-yaml-secret.outputs.HTTP_USERNAME }}
+          HTTP_PASSWORD: ${{ steps.keyvault-yaml-secret.outputs.HTTP_PASSWORD }}
+          MAILSAC_API_KEY: ${{ steps.keyvault-yaml-secret.outputs.MAILSAC_API_KEY }}
 
   production:
     name: Production Deployment
     runs-on: ubuntu-latest
-    needs: [ integration, development_aks ]
+    needs: [ integration_aks, development_aks ]
     concurrency: Production
     environment:
        name: Production
@@ -884,7 +785,7 @@ jobs:
   production_aks:
     name: Production AKS Deployment
     runs-on: ubuntu-latest
-    needs: [ integration, development_aks ]
+    needs: [ integration_aks, development_aks ]
     concurrency: production_aks
     continue-on-error: true
     environment:
