@@ -53,6 +53,8 @@ runs:
                  pr_name="${{env.REVIEW_APPLICATION}}-${{inputs.pr}}"
                  echo "pr_name=${pr_name}" >> $GITHUB_OUTPUT
                  echo "healthcheck=${pr_name}${cluster_domain}" >> $GITHUB_OUTPUT
+             elif [ "${{inputs.environment }}" == "production_aks" ]
+                echo "healthcheck=${{env.AKS_APPLICATION_NAME}}-${appenv}" >> $GITHUB_OUTPUT
              else
                  echo "healthcheck=${{env.AKS_APPLICATION_NAME}}-${appenv}${cluster_domain}" >> $GITHUB_OUTPUT
              fi
