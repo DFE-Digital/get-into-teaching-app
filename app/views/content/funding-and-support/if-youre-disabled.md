@@ -63,4 +63,4 @@ Providers must not discriminate against you. They cannot:
 
 Anyone who’s offered a place on a teacher training course is asked to complete a fitness questionnaire before starting training. Training providers should only ask relevant questions to make sure you’re able to teach.
 
-Find out more about [your rights under the Equality Act 2010](https://www.equalityhumanrights.com/en/equality-act/know-your-rights) and how it protects different characteristics.
+Find out more about [your rights under the Equality Act 2010](https://www.equalityhumanrights.com/equality/equality-act-2010/your-rights-under-equality-act-2010) and how it protects different characteristics.
