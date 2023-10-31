@@ -454,6 +454,7 @@ provider_groups:
       telephone: '0113 487 1777'
       email: info@gorsescitt.org.uk
     - header: Leeds Trinity University
+      link: https://www.leedstrinity.ac.uk/courses/cpd-and-short-courses/assessment-only/
       name: Admissions
       telephone: 0113 283 7123
       email: admissions@leedstrinity.ac.uk
