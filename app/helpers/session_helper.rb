@@ -11,4 +11,8 @@ module SessionHelper
   def callbacks_session
     session[:callbacks] ||= {}
   end
+
+  def feedback_session
+    session[:feedback] ||= {}
+  end
 end

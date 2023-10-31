@@ -99,7 +99,7 @@ describe Prometheus::Metrics do
     it { is_expected.not_to be_nil }
     it { is_expected.to have_attributes(docstring: "A counter of feedback visit responses") }
     it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
-    it { expect { subject.get(labels: %i[successful]) }.not_to raise_error }
+    it { expect { subject.get(labels: %i[topic]) }.not_to raise_error }
   end
 
   describe "app_tta_feedback_rating_total" do

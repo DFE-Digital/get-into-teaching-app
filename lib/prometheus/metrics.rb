@@ -84,7 +84,7 @@ module Prometheus
     prometheus.counter(
       :app_tta_feedback_visit_total,
       docstring: "A counter of feedback visit responses",
-      labels: %i[successful] + preset_labels.keys,
+      labels: %i[topic] + preset_labels.keys,
       preset_labels: preset_labels,
     )
 

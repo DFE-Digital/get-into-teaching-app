@@ -126,13 +126,6 @@ Rails.application.routes.draw do
   end
 
   namespace :teacher_training_adviser, path: "/teacher-training-adviser" do
-    resources :feedbacks, only: %i[new create index] do
-      collection do
-        get :thank_you
-        post :export
-      end
-    end
-
     resources :steps,
               path: "/sign_up",
               only: %i[index show update] do
@@ -140,6 +133,22 @@ Rails.application.routes.draw do
         get :completed
         get :resend_verification
       end
+    end
+  end
+
+  namespace :feedback, path: "/feedback" do
+    resources :steps,
+              path: "/",
+              only: %i[index show update] do
+      collection do
+        get :completed
+      end
+    end
+  end
+
+  resources :feedbacks, only: %i[new create index] do
+    collection do
+      post :export
     end
   end
 

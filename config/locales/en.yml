@@ -111,11 +111,9 @@ en:
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding: |-
-        
-          The £25,000 languages bursary is available for trainee teachers when at least 50% of the course content covers an ancient language.
-          
-          Non-UK citizens without indefinite leave to remain in the UK are eligible for this support.
-          
+
+          Bursaries of £25,000 may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible).
+
           Your course provider will confirm if this applies.
       communication_and_media_studies:
         name: "Communication and media studies"
@@ -379,7 +377,7 @@ en:
             unsuccessful_visit_explanation:
               blank: "Provide details"
             rating:
-              blank: "Select an option for how did you feel about the service"
+              invalid: "Select an option for how did you feel about the service"
 
   activemodel:
     errors:
@@ -389,7 +387,19 @@ en:
         already_exchanged: "This link has been used already. Enter the details below to help us verify you."
 
       models:
-        teacher_training_adviser/feedback_search:
+        feedback/steps/explanation:
+          attributes:
+            explanation:
+              blank: "Enter your feedback"
+        feedback/steps/purpose:
+          attributes:
+            topic:
+              blank: "Select an option from the list"
+        feedback/steps/rating:
+          attributes:
+            rating:
+              blank: "Select how satisfied were you with your experience"
+        feedback_search:
             attributes:
               created_on_or_after:
                 blank: "You must specify a created on or after date"
@@ -851,9 +861,6 @@ en:
       teacher_training_adviser_feedback:
         successful_visit: "Did you achieve what you wanted from your visit?"
         rating: "Overall, how did you feel about the service you received?"
-      teacher_training_adviser_feedback_search:
-        created_on_or_after: "Created on or after"
-        created_on_or_before: "Created on or before"
       teacher_training_adviser_feedback_search:
         created_on_or_after: "Created on or after"
         created_on_or_before: "Created on or before"

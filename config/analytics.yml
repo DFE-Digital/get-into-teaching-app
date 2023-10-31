@@ -1,8 +1,8 @@
 ---
 shared:
-  feedbacks:
+  user_feedbacks:
     - id
+    - topic
     - rating
-    - successful_visit
     - created_at
     - updated_at
