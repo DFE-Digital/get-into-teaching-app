@@ -16,7 +16,6 @@ RSpec.describe "BigQuery Analytics", type: :request do
     expect(event_namespaces).to all(eq("get_into_teaching"))
   end
 
-  # TODO: Need to understand if this is still required
   it "sends DFE Analytics entity events" do
     UserFeedback.create(attributes_for(:user_feedback))
     expect(:create_entity).to have_been_enqueued_as_analytics_events
