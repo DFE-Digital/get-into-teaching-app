@@ -190,7 +190,7 @@ You will not be eligible for the international relocation payment if you are:
 
 ## How teachers can apply for the international relocation payment
 
-Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk/) are currently closed. Teachers and salaried trainees who missed the deadline for applications in 2023, or start their job or course from 1 January 2024, can apply when applications reopen between 2 January 2024 and 29 February 2024.
+Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk/) are currently closed. Teachers who missed the deadline for applications in 2023, or start their job from 1 January 2024, can apply when applications reopen between 2 January 2024 and 29 February 2024.
 
 You should apply for the IRP in the application window that opens at the start of your first term. If you miss this application window, you will have one further application window to apply – this will open at the start of your second term. If you do not apply within the first two application windows following the start of your job, you will no longer be eligible for the IRP.
 
