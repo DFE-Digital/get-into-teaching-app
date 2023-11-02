@@ -24,14 +24,16 @@ jobs:
 
       - uses: Azure/login@v1
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            creds: ${{ secrets.AZURE_CREDENTIALS_AKS_REVIEW }}
 
-      - uses: DfE-Digital/keyvault-yaml-secret@v1
-        id:  keyvault-yaml-secret
+      - name: Fetch secrets from key vault
+        uses: azure/CLI@v1
+        id: keyvault-yaml-secret
         with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          secret: INFRA-KEYS
-          key: SLACK-WEBHOOK
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_AKS_REVIEW }}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
       - name: Read Lychee output into var
         id: lychee-output
@@ -58,4 +60,4 @@ jobs:
            SLACK_MESSAGE: |
                          ${{ steps.convert.outputs.text }}
            SLACK_TITLE: 'External link check results:'
-           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
+           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
