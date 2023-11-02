@@ -372,7 +372,7 @@ If you were eligible for and have received the international relocation payment,
 
 If you are on a fee-paying teacher training course, you will not have to pay tax on the international relocation payment (IRP).  
 
-If you are a teacher, or a trainee on a salaried course, the Department for Education will pay the UK tax owed on the IRP to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 in the year you receive the IRP. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) and [UK National Insurance](https://www.gov.uk/national-insurance) on any earnings which take you over £50,270.
+If you are a teacher, or a trainee on a salaried course, the Department for Education will pay the UK tax owed on the IRP to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 in the year you receive the IRP. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) on any earnings which take you over £50,270.
 
 ### Part-time teachers and trainees
 
