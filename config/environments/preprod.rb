@@ -18,4 +18,6 @@ Rails.application.configure do
   config.view_component.show_previews = true
 
   config.x.dfe_analytics = true
+
+  config.x.feature_flags.feedback_enabled = true
 end
