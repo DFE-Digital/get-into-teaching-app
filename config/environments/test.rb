@@ -55,5 +55,4 @@ Rails.application.configure do
   config.x.integration_credentials = { username: ENV["HTTP_USERNAME"], password: ENV["HTTP_PASSWORD"] }
   config.x.mailsac_api_key = ENV["MAILSAC_API_KEY"]
   config.x.dfe_analytics = true
-  config.x.feature_flags.feedback_enabled = true
 end
