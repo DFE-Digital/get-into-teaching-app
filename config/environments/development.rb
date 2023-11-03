@@ -71,8 +71,6 @@ Rails.application.configure do
 
   config.x.dfe_analytics = true
 
-  config.x.feature_flags.feedback_enabled = true
-
   # Allow access from Codespaces
   config.hosts << /[a-z0-9\-]+\.(preview\.app\.github|githubpreview)\.dev/
 end

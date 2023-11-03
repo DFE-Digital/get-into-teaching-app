@@ -5,7 +5,6 @@ module Feedback
     include GITWizard::Controller
     self.wizard_class = Feedback::Wizard
 
-    before_action :check_feature_flag!
     before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
 
@@ -16,10 +15,6 @@ module Feedback
     end
 
   private
-
-    def check_feature_flag!
-      redirect_to "/" unless Rails.application.config.x.feature_flags.feedback_enabled
-    end
 
     def first_step_class
       wizard_class.steps.first
