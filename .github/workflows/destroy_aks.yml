@@ -31,7 +31,7 @@ jobs:
               terraform_version=$(awk '/{/{f=/^terraform/;next}f' terraform/aks/terraform.tf | grep -o [0-9\.]*)
               echo "TERRAFORM_VERSION=$terraform_version" >> $GITHUB_ENV
 
-      - uses: hashicorp/setup-terraform@v2
+      - uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: ${{ env.TERRAFORM_VERSION }}
 
