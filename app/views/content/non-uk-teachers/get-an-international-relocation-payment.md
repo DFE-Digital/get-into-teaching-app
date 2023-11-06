@@ -15,9 +15,9 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      <p>Teachers and salaried trainees who started their job or course in September 2023 <a href="https://get-a-teacher-relocation-payment.education.gov.uk/"> can now apply for an international relocation payment (IRP)</a>. You must apply by 31 October 2023.</p>
-      
-      <p>If you are starting a teaching job after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open in 2024.</p> 
+      <p>Applications for the <a href="https://get-a-teacher-relocation-payment.education.gov.uk/"> international relocation payment (IRP)</a> are currently closed. Teachers and salaried trainees who missed the deadline for applications in 2023, or start their job or course from 1 January 2024, can apply when applications reopen between 2 January 2024 and 29 February 2024.</p>
+
+      <p>You can express your interest in the IRP by emailing us at irp.expressinterest@education.gov.uk. We will email you when applications open in 2024.</p>
       
       <p>If you are a trainee on a fee-paying course, you do not need to apply. <a href="/non-uk-teachers/get-an-international-relocation-payment#how-trainee-teachers-can-get-the-international-relocation-payment">Learn more about the process for fee paying courses</a>.</p>
 keywords:
@@ -190,13 +190,13 @@ You will not be eligible for the international relocation payment if you are:
 
 ## How teachers can apply for the international relocation payment
 
-Teachers who have started their teaching jobs can now [apply for the international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications are open from 4 September to 31 October 2023. If you are eligible, you should receive the money by 31 January 2024. 
+Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk/) are currently closed. Teachers who missed the deadline for applications in 2023, or start their job from 1 January 2024, can apply when applications reopen between 2 January 2024 and 29 February 2024.
 
-If you miss this deadline, to remain eligible for the IRP you must apply at the next opportunity after the start of your job. Applications for teachers will re-open between January 2024 and February 2024. 
+You should apply for the IRP in the application window that opens at the start of your first term. If you miss this application window, you will have one further application window to apply – this will open at the start of your second term. If you do not apply within the first two application windows following the start of your job, you will no longer be eligible for the IRP.
 
 You will need a teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
-If you are starting a teaching job after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open in 2024.
+You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open in 2024.
 
 ## Criteria for trainee teachers (fee-paying and salaried) 
 
@@ -254,7 +254,7 @@ If you are applying to train to teach French, German or Spanish, your bachelor�
 
 * a degree in any subject, taught entirely in French, German or Spanish 
 
-Your chosen teacher training provider will be able to tell you whether your university is recognised, and whether your degree meets the standard and subject criteria for the international relocation payment.  
+Your chosen teacher training provider will be able to tell you whether your university and degree meet the standard and subject criteria for the international relocation payment.  
 
 ### 3. Type of visa for trainees
 
@@ -318,13 +318,11 @@ If you believe you meet the eligibility requirements, but have not been informed
 
 ### Salaried trainees
 
-Salaried trainees who have started their training courses can now [apply for the international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk/). Applications are open between 4 September 2023 and 31 October 2023. If you are eligible, you should receive the money by 31 January 2024. 
+Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk/) are currently closed. Salaried trainees who missed the deadline for applications in 2023, or start their course from 1 January 2024, can apply when applications reopen between 2 January 2024 and 29 February 2024.
 
-If you miss this deadline, to remain eligible for the IRP you must apply at the next opportunity after the start of your training course. Applications for salaried trainees will re-open between January 2024 and February 2024. 
+You should apply for the IRP in the application window that opens at the start of your first term. If you miss this application window, you will have one further application window to apply – this will open at the start of your second term. If you do not apply within the first two application windows following the start of your course, you will no longer be eligible for the IRP.
 
-If you are starting a salaried course after the end of October 2023, or have missed the 2023 deadline, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open in 2024. 
-
-
+You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open in 2024.
 
 ## General information about the international relocation payment  
 
@@ -374,7 +372,7 @@ If you were eligible for and have received the international relocation payment,
 
 If you are on a fee-paying teacher training course, you will not have to pay tax on the international relocation payment (IRP).  
 
-If you are a teacher, or a trainee on a salaried course, the Department for Education will pay the UK tax owed on the IRP to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 in the year you receive the IRP. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) and [UK National Insurance](https://www.gov.uk/national-insurance) on any earnings which take you over £50,270.
+If you are a teacher, or a trainee on a salaried course, the Department for Education will pay the UK tax owed on the IRP to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 in the year you receive the IRP. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) on any earnings which take you over £50,270.
 
 ### Part-time teachers and trainees
 
