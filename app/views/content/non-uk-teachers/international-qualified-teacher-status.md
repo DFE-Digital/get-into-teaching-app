@@ -138,13 +138,13 @@ The following providers specialise in particular regions, or should be contacted
 
 We have recently approved the following providers to offer iQTS for the 2024/25 academic year. Their iQTS courses are still being designed – check back to provider websites for more information. 
 
-[St Mary’s University](https://www.stmarys.ac.uk/home.aspx)
+* [St Mary’s University](https://www.stmarys.ac.uk/home.aspx)
 
-[University of Bristol](https://www.bristol.ac.uk/)
+* [University of Bristol](https://www.bristol.ac.uk/)
 
-[University of Chichester](https://www.chi.ac.uk/)
+* [University of Chichester](https://www.chi.ac.uk/)
 
-[University of Northampton](https://www.northampton.ac.uk/)
+* [University of Northampton](https://www.northampton.ac.uk/)
 
 ## Assessment 
 
