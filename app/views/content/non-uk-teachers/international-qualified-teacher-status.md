@@ -134,7 +134,17 @@ The following providers specialise in particular regions, or should be contacted
 
 * [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider offers in-person training in Dubai only, so applicants must be a commutable distance from their Dubai Campus
 
-* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning) – contact this provider for more information 
+* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning) – contact this provider for more information
+
+We have recently approved the following providers to offer iQTS for the 2024/25 academic year. Their iQTS courses are still being designed – check back to provider websites for more information. 
+
+[St Mary’s University](https://www.stmarys.ac.uk/home.aspx)
+
+[University of Bristol](https://www.bristol.ac.uk/)
+
+[University of Chichester](https://www.chi.ac.uk/)
+
+[University of Northampton](https://www.northampton.ac.uk/)
 
 ## Assessment 
 
