@@ -45,6 +45,13 @@
     display: none;
   }
 
+  @include mq($until: tablet) {
+    #salary-banner .call-to-action__content h2 {
+      font-size: 24px;
+      line-height: 25px;
+    }
+  }
+
   @media (max-width: 1000px) {
     #salary-banner picture {
       display: none;
