@@ -11,6 +11,7 @@ describe Feedback::Wizard do
       "explanation" => "Blabla",
     } }
   end
+
   let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
 
   describe ".steps" do
