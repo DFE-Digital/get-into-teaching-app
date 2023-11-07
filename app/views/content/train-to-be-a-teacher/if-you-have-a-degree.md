@@ -73,7 +73,7 @@ Your course provider will probably not be able to confirm your exact placement l
 
 ## How much does teacher training cost?
 
-Postgraduate teacher training course fees are around £9,250 per year (or higher for non-UK citizens). 
+Postgraduate teacher training course fees are around £9,250 per year (or higher for non-UK citizens).  
 
 You can apply for tuition fee and maintenance loans, even if you already have a student loan. 
 
