@@ -12,17 +12,18 @@
 
     .govuk-breadcrumbs__list .govuk-breadcrumbs__list-item {
       &:not(:first-child) {
-        margin-left: 20px;
+        margin-left: 16px;
         padding-left: 20px;
 
         &:before {
-          @extend .fas;
-
-          content: "";
-          border: none;
-          transform: none;
-          font-size: .5em;
-          top: 2px;
+          top: 1px; 
+          width: 6px;
+          height: 6px;
+          margin: auto 0;
+          transform: rotate(45deg);
+          border: solid;
+          border-width: 2px 2px 0 0;
+          border-color: $black;
         }
       }
 
