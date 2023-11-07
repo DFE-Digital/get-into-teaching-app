@@ -1,0 +1,4 @@
+<%= f.govuk_radio_buttons_fieldset(:stage_taught, inline: true, legend: { tag: "h1", text: "Which stage did you previously teach?" }) do %>
+  <%= f.govuk_radio_button :stage_taught, "primary", label: { text: 'Primary' }, link_errors: true %>
+  <%= f.govuk_radio_button :stage_taught, "secondary", label: { text: "Secondary" }, link_errors: true %>
+<% end %>
