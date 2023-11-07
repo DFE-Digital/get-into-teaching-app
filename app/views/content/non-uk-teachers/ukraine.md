@@ -266,9 +266,6 @@ From 1 February 2023, Ukrainians will be able to obtain QTS through DfE's new pr
 
 [Learn more about the new service](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#). 
 
-DfE has also made some funding available for assessment-only QTS programmes for Ukrainians. Contact teach.inengland@education.gov.uk for more information. 
-
-
 ### Visas and immigration
 
 Most Ukrainian refugees will not need to be sponsored for a skilled worker or student visa. [Find out more about visa schemes for Ukrainian refugees, allowing them to live, work and study in the UK](#check-the-status-of-your-visa).
