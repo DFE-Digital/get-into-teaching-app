@@ -43,7 +43,7 @@ variable "external_url" {
   description = "Healthcheck URL for StatusCake monitoring"
 }
 variable "statuscake_contact_groups" {
-  default     = []
+  default     = [185037]
   description = "ID of the contact group in statuscake web UI"
 }
 variable "enable_monitoring" {
