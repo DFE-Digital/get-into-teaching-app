@@ -85,6 +85,10 @@ test_aks: test-cluster
 production_aks: production-cluster
 	$(eval include global_config/production_aks.sh)
 
+.PHONY: beta_aks
+beta_aks: production-cluster
+	$(eval include global_config/beta_aks.sh)
+
 clean:
 	[ ! -f fetch_config.rb ]  \
 	    rm -f fetch_config.rb \
