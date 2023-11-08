@@ -2,10 +2,10 @@ module TeacherTrainingAdviser::Steps
   class StageTaught < GITWizard::Step
     attribute :stage_taught, :string
 
-    validates :stage_taught, inclusion: { in: ['primary', 'secondary'] }
+    validates :stage_taught, inclusion: { in: %w[primary secondary] }
 
     def previous_stage_primary?
-      stage_taught == 'primary'
+      stage_taught == "primary"
     end
 
     def skipped?
