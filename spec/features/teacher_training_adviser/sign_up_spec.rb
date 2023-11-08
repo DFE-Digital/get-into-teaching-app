@@ -861,7 +861,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
           stage_taught: "primary",
           preferred_education_phase_id: EDUCATION_PHASE_PRIMARY,
           teacher_id: "5678",
-        }
+        },
       )
       expect_sign_up_with_attributes(request_attributes)
 

@@ -17,7 +17,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::StageTaught do
 
   describe "#previous_stage_primary?" do
     before do
-      allow_any_instance_of(TeacherTrainingAdviser::Steps::StageTaught).to \
+      allow_any_instance_of(described_class).to \
         receive(:stage_taught) { returning_to_teaching }
     end
 
