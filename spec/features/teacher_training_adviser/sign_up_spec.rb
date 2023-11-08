@@ -852,9 +852,6 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       expect(page).to have_css "h1", text: "Check your answers before you continue"
 
-      expect(page).to have_css "h1", text: "Check your answers before you continue"
-      click_on "Complete sign up"
-
       request_attributes = uk_candidate_request_attributes(
         {
           type_id: RETURNING_TO_TEACHING,
@@ -1139,19 +1136,19 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Yes"
       click_on "Next step"
 
+      expect(page).not_to have_css "h1", text: "Do you have your previous teacher reference number?"
+      expect(page).not_to have_css "h1", text: "What is your previous teacher reference number?"
+
       expect(page).to have_css "h1", text: "Which stage did you previously teach?"
       choose "Secondary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
-      choose "Secondary"
-      click_on "Next step"
-
-      expect(page).not_to have_css "h1", text: "Do you have your previous teacher reference number?"
-      expect(page).not_to have_css "h1", text: "What is your previous teacher reference number?"
-
       expect(page).to have_css "h1", text: "Which main subject did you previously teach?"
       select "Psychology"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      choose "Secondary"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which subject would you like to teach if you return to teaching?"

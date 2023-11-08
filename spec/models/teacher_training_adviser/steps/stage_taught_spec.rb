@@ -4,7 +4,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::StageTaught do
   include_context "with a TTA wizard step"
   it_behaves_like "a with wizard step"
 
-  it { is_expected.not_to be_skipped }
+  it { is_expected.to be_skipped }
 
   describe "attributes" do
     it { is_expected.to respond_to :stage_taught }
@@ -18,7 +18,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::StageTaught do
   describe "#previous_stage_primary?" do
     before do
       allow_any_instance_of(described_class).to \
-        receive(:stage_taught) { returning_to_teaching }
+        receive(:stage_taught) { stage_taught }
     end
 
     context "when stage_taught is primary" do
