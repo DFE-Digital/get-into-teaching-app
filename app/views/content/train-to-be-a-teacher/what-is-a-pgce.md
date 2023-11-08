@@ -6,6 +6,7 @@ description: |-
   A postgraduate certificate in education (PGCE) is an academic qualification. Find out how to do a PGCE course through teacher training.
 related_content:
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
+    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     What will your teacher training year be like? : "/train-to-be-a-teacher/initial-teacher-training"
     What to expect on a university-based PGCE course : "/blog/what-to-expect-on-your-teacher-training"
 date: "2021-11-01"

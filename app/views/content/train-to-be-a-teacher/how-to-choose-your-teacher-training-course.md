@@ -3,9 +3,9 @@ title: "How to choose your teacher training course"
 subcategory: Postgraduate teacher training
 description: |-
   Find out how to choose your postgraduate teacher training course based on your eligibility, the qualifications you could get, and the course provider.
-related_content:
-    Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider" 
-    Train to teach if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
+related_content: 
+    Train to teach if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree" 
+    What to expect in teacher training: "/train-to-be-a-teacher/initial-teacher-training"
     Your teacher training application : "/how-to-apply-for-teacher-training/teacher-training-application"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course

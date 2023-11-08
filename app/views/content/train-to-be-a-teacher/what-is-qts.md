@@ -10,7 +10,7 @@ related_content:
     What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
     How to apply for teacher training : "/how-to-apply-for-teacher-training"
-    Find teacher training courses : "https://www.gov.uk/find-postgraduate-teacher-training-courses"
+    How to choose a teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     What will your teacher training be like?: "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
