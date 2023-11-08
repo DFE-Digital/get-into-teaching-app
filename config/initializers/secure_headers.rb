@@ -28,7 +28,7 @@ SecureHeaders::Configuration.default do |config|
   google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net *.ad.doubleclick.net *.fls.doubleclick.net stats.g.doubleclick.net]
   google_apis        = %w[*.googleapis.com googleapis.com https://fonts.googleapis.com]
 
-  zendesk     = %w[api.eu-1.smooch.io *.zendesk.com static.zdassets.com https://*.zopim.com wss://*.zopim.com dfesupport-tpuk.zendesk.com ekr.zdassets.com]
+  zendesk     = %w[wss://api.eu-1.smootch.io/faye api.eu-1.smooch.io *.zendesk.com static.zdassets.com https://*.zopim.com wss://*.zopim.com dfesupport-tpuk.zendesk.com ekr.zdassets.com]
   facebook    = %w[*.facebook.com *.facebook.net *.connect.facebook.net]
   govuk       = %w[*.gov.uk www.gov.uk]
   jquery      = %w[code.jquery.com]
