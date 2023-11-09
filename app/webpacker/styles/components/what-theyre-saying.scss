@@ -57,13 +57,13 @@
         content: open-quote;
         position: absolute;
         left: -.6em;
-        top: -.3em;
+        top: -.1em;
       }
 
       &:after {
         position: absolute;
         content: close-quote;
-        margin-left: .02em;
+        margin-left: .1em;
         margin-top: -.1em;
       }
     }
