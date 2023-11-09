@@ -855,9 +855,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       request_attributes = uk_candidate_request_attributes(
         {
           type_id: RETURNING_TO_TEACHING,
-          stage_taught: "primary",
           preferred_education_phase_id: EDUCATION_PHASE_PRIMARY,
-          teacher_id: "5678",
+          teacher_id: "1234",
         },
       )
       expect_sign_up_with_attributes(request_attributes)
