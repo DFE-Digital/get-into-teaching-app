@@ -5,7 +5,7 @@ module TeacherTrainingAdviser::Steps
     validates :subject_taught_id, lookup_items: { method: :get_teaching_subjects }
 
     def self.options
-      Crm::TeachingSubject.all_hash
+      Crm::TeachingSubject.all_without_primary
     end
 
     def skipped?
