@@ -30,7 +30,7 @@ You can visit schools to get unpaid experience in the classroom before you start
 It can help you:
 
 - decide if you want to train to be a teacher
-- discover which setting you’d like to teach in (primary or secondary)
+- discover if you’d like to teach in primary or secondary school
 - build a relationship with a school you might want to work for later
 
 ## What to expect
@@ -42,7 +42,7 @@ During your experience, you’ll get to do things like:
 - observe lessons
 - see how teachers manage a classroom
 - find out how specific subjects are taught
-- speak to teachers and interact with pupils
+- speak to teachers and meet pupils
 - learn more about teacher training - including the application and interview process
 
 ## Find school experience
