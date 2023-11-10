@@ -320,6 +320,13 @@ en:
       degree_status_id:
         title: "In which year are you studying?"
         change: "the year in which you are studying"
+    stage_taught:
+      stage_taught:
+        title: "Which stage did you previously teach?"
+        change: "the stage you previously taught"
+      subject_taught_id:
+        title: "Which main subject did you previously teach?"
+        change: "the main subject you previously taught"
     start_teacher_training:
       initial_teacher_training_year_id:
         title: "When do you want to start teacher training?"

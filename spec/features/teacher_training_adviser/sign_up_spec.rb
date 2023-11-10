@@ -14,7 +14,7 @@ DEGREE_STATUS_FINAL_YEAR = 222_750_001
 HAS_GCSE = 222_750_000
 SUBJECT_PHYSICS = "ac2655a1-2afa-e811-a981-000d3a276620".freeze
 SUBJECT_PSYCHOLOGY = "b22655a1-2afa-e811-a981-000d3a276620".freeze
-SUBJECT_PRIMARY = "b02655a1-2afa-e811-a981-000d3a276620"
+SUBJECT_PRIMARY = "b02655a1-2afa-e811-a981-000d3a276620".freeze
 
 RSpec.feature "Sign up for a teacher training adviser", type: :feature do
   let(:quota) do
