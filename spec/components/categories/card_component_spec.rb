@@ -20,8 +20,8 @@ describe Categories::CardComponent, type: "component" do
     expect(subject).to have_css("li.category__nav-card > a")
   end
 
-  specify "the link contains a h3 title by default" do
-    expect(subject).to have_css("a > .category__nav-card--content > h3", text: item.title)
+  specify "the link contains a h2 title by default" do
+    expect(subject).to have_css("a > .category__nav-card--content > h2", text: item.title)
   end
 
   specify "the link contains the provided description" do
