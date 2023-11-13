@@ -17,27 +17,27 @@
   ul {
     position: relative;
     list-style: none;
-    padding-left: 2rem;
+    padding-left: 4rem;
+    margin-top: 0;
     margin-bottom: 2 * $indent-amount;
 
     li {
       position: relative;
-      margin: $indent-amount 0;
+      margin: 0 0 2em;
 
-      &:not(:first-child) {
-        margin-top: 3.5em;
-      }
-
-      .fa-check {
+      &:before {
+        content: "";
+        background-image: url("../images/icon-tick.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40px 40px;
+        display: block;
+        width: 30px;
+        height: 30px;
         position: absolute;
-        color: $white;
-        left: -2rem;
-        top: 0;
-        width: 22px;
-        height: 20px;
-        background-color: $yellow;
-        text-align: center;
-        border-top: 3px solid $yellow;
+        margin-left: -4rem;
+        border: solid 4px $black;
+        top: 7px;
       }
     }
   }

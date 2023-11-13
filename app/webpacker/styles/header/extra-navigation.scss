@@ -25,11 +25,11 @@
 
   &__link a {
     display: inline-block;
-    padding: .6em 1em;
-    line-height: 28px;
+    padding: .75em 1em;
+    line-height: 24px;
 
     @include mq($until: mobile) {
-      padding: .6em .8em;
+      padding: .75em .8em;
     }
 
     .icon {
@@ -79,8 +79,8 @@
     a {
       background-color: $pink;
       margin-left: 1em;
-      padding: .6em $indent-amount / 2;
-      line-height: 28px;
+      padding: .75em;
+      line-height: 24px;
 
       &:hover {
         background-color: $pink-dark;
