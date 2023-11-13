@@ -17,7 +17,7 @@
   ul {
     position: relative;
     list-style: none;
-    padding-left: 4rem;
+    padding-left: 3.5rem;
     margin-top: 0;
     margin-bottom: 2 * $indent-amount;
 
@@ -35,7 +35,7 @@
         width: 30px;
         height: 30px;
         position: absolute;
-        margin-left: -4rem;
+        margin-left: -3.5rem;
         border: solid 4px $black;
         top: -5px;
       }
