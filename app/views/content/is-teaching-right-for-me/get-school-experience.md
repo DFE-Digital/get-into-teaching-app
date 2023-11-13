@@ -51,7 +51,7 @@ Once you've selected chosen a school, you can get more information about their p
  
 You can also arrange school experience independently, by contacting your old school. If you’re a student you can check whether your university has any existing links with local schools. 
 
-Or you can call a school directly. You can [find schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience so your request goes to the right person. 
+Or you can call a school directly. You can [get information about schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience so your request goes to the right person. 
 
 Bear in mind that schools are busy places, so they may not always respond quickly and you may need to be flexible about when you visit. 
 
@@ -59,7 +59,7 @@ $get-school-experience$
 
 ## Other ways to get experience of the classroom
 
-### Teaching internships
+### Paid teaching internships
 
 A paid teaching internship could help you to understand what it’s really like in the classroom if you’re currently studying for an undergraduate or master's degree and are interested in teaching:
 
@@ -75,4 +75,10 @@ You’ll get to experience a range of activities to help you get a feel for scho
 
 ### Watch pre-recorded lessons
 
-You can [observe teachers’ lessons](https://teachers.thenational.academy/lessons-for-itt) on the Oak National Academy website to help you get to know teaching better, before or alongside your ITT.
+Many school and training provider websites have helpful information like “day in the life” videos and recorded lessons. You can also [observe teachers’ lessons](https://teachers.thenational.academy/lessons-for-itt) on the Oak National Academy website to help you get to know teaching better, before or alongside your ITT.
+
+### Beyond the classroom
+
+There are other ways to gain valuable experience of working with young people. Sports coaching, youth groups, after-school clubs or other volunteering activities are great opportunities that may be easier to fit around work and other commitments. 
+
+
