@@ -35,7 +35,7 @@ describe Content::ChecklistCollageComponent, type: :component do
   it { is_expected.to have_css("p", text: "content") }
   it { is_expected.to have_css(".images.images-3") }
 
-  it "renders the checlist items" do
+  it "renders the checklist items" do
     checklist.each do |item|
       is_expected.to have_css("ul li", text: item)
     end
