@@ -47,6 +47,8 @@ export default class extends Controller {
     this.waitForZendeskScript(() => {
       this.showWebWidget();
       this.waitForWebWidget(() => {
+        const chat = document.querySelector('[title="Messaging window"]');
+        chat.focus();
         this.chatTarget.textContent = 'Chat online';
       });
     });
