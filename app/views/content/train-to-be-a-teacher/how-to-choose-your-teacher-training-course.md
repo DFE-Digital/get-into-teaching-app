@@ -79,7 +79,7 @@ Most teacher training courses will award QTS, but some will just award a [postgr
 
 Most teacher training courses are fee-funded. This means you have to pay tuition fees and will not earn a salary while you train. 
 
-There are ways to fund your training, for example, through tuition fee and maintenance loans. You may also be eligible for a bursary or scholarship.
+There are ways to fund your training, for example, through tuition fees and maintenance loans. You may also be eligible for a bursary or scholarship.
 
 You can [find out about the different ways to fund your training](/funding-and-support).
 
@@ -107,15 +107,15 @@ Your teacher training course might be provided by:
 * a school or group of schools (sometimes referred to as school-led training, or an apprenticeship) 
 * [Teach First](https://www.teachfirst.org.uk/) (a charitable organisation)  
 
-Once you’ve found a course that you’re interested in, you can talk to the training provider before you apply. For example, you might want to find out: 
+Once you’ve found a course you’re interested in you can talk to the training provider before you apply. For example, you might want to find out: 
 
 * where your placements and theoretical learning might happen
 * how many schools you’ll be doing placements in and how long each placement will last 
 * the start and finish dates of the course 
 
-It’s a good idea to apply to a range of providers to increase your chances of being successful on a course. 
+It’s a good idea to apply to a range of providers to increase your chances of being successful on a course. For example, if you’re applying for 4 courses, you might want to apply for 2 courses provided by universities, and 2 provided by schools.
 
-For example, if you’re applying for 4 courses, you might want to apply for 2 courses provided by universities, and 2 provided by schools.
+You can apply to a maximum of 4 courses at one time. 
 
 <div class="inset">
 <p>If you’re a non-UK citizen, you should confirm with the training provider:</p>
@@ -128,8 +128,8 @@ For example, if you’re applying for 4 courses, you might want to apply for 2 c
 
 ## Full-time or part-time courses 
 
-Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
-
 There are usually more full-time courses available than part-time.
 
-You can [find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
+Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
+
+[Find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
