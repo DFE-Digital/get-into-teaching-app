@@ -30,7 +30,7 @@ The main differences between courses are:
 
 * what you need to get onto the course
 * the qualifications awarded by the course
-* if the course is fee-paying or salaried 
+* if the course is fee-funded or salaried 
 * the type of course provider 
 * if the course is full-time or part-time 
 
