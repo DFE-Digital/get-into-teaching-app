@@ -48,7 +48,7 @@ export default class extends Controller {
       this.showWebWidget();
       this.waitForWebWidget(() => {
         const chat = document.querySelector('[title="Messaging window"]');
-        chat.focus();
+        this.focusOnChat(chat);
         this.chatTarget.textContent = 'Chat online';
       });
     });
@@ -89,6 +89,23 @@ export default class extends Controller {
 
   showWebWidget() {
     window.zE('messenger', 'open');
+  }
+
+  focusOnChat(chatWidget) {
+    var focusInterval = 10; // ms, time between function calls
+    var focusTotalRepetitions = 10; // number of repetitions
+
+    chatWidget.setAttribute('tabindex', '0');
+    chatWidget.blur();
+
+    var focusRepetitions = 0;
+    var interval = window.setInterval(function () {
+      chatWidget.focus();
+      focusRepetitions++;
+      if (focusRepetitions >= focusTotalRepetitions) {
+        window.clearInterval(interval);
+      }
+    }, focusInterval);
   }
 
   get zendeskScriptLoaded() {
