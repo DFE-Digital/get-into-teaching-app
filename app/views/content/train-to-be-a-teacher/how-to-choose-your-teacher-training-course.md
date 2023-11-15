@@ -38,7 +38,7 @@ The main differences between courses are:
 
 Some training courses have specific eligibility requirements. 
 
-It's important to check the requirements for each course you apply to, so you do not waste time on an application you’re unlikely to be successful with. 
+It's important to check the requirements for each course you apply to on the training provider's course page. This is so you do not waste time on an application you’re unlikely to be successful with. 
 
 ### Your qualifications 
 
@@ -69,15 +69,15 @@ If your application is successful, the training provider may be able to help you
 
 Most schools in England need you to have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach. 
 
-Most teacher training courses will award QTS, but some will just award a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce), and some will award both. 
-
 Without QTS, you will not eligible for a scholarship or bursary to help you train. You also may not be fully qualified to teach in your chosen school and will not receive the same pay and support when you start teaching.
+
+Most teacher training courses will award QTS, but some will just award a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce), and some will award both. 
 
 ## If the course is fee-funded or salaried
 
 ### Fee-funded teacher training
 
-Most teacher training courses are fee-funded – this means you have to pay tuition fees and will not earn a salary while you train. 
+Most teacher training courses are fee-funded. This means you have to pay tuition fees and will not earn a salary while you train. 
 
 There are ways to fund your training, for example, through tuition fee and maintenance loans. You may also be eligible for a bursary or scholarship.
 
@@ -93,11 +93,9 @@ You can [find out about the different ways to fund your training](/funding-and-s
 
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
 
-Places on salaried courses are limited and very competitive. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
+Places on salaried courses are limited and very competitive. If you’re a non-UK citizen, the chance of getting a place on a salaried course is very limited. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
 
 <div class="inset">
-
-<p>If you’re a non-UK citizen, the chance of getting a place on a salaried course is very limited.</p>
 
 </div>
 
