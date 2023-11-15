@@ -49,7 +49,6 @@ export default class extends Controller {
       this.waitForWebWidget(() => {
         const chat = document.querySelector('[title="Messaging window"]');
         chat.tabIndex = 1;
-        // this.focusOnChat(chat);
         this.chatTarget.textContent = 'Chat online';
       });
     });
