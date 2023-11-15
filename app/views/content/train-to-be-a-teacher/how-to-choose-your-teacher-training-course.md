@@ -79,7 +79,7 @@ Most teacher training courses will award QTS, but some will just award a [postgr
 
 Most teacher training courses are fee-funded. This means you have to pay tuition fees and will not earn a salary while you train. 
 
-There are ways to fund your training, for example, through tuition fees and maintenance loans. You may also be eligible for a bursary or scholarship.
+There are ways to fund your training, for example, through tuition fee and maintenance loans. You may also be eligible for a bursary or scholarship.
 
 You can [find out about the different ways to fund your training](/funding-and-support).
 
