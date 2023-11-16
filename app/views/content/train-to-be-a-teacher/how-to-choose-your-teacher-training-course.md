@@ -78,7 +78,7 @@ You can [find out about the different ways to fund your training](/funding-and-s
 
 <div class="inset">
 
-<p> If you’re a non-UK citizen with settled status or indefinite leave to remain in the UK,  you may be eligible for a tuition fee loan, maintenance loan, bursary or scholarship. Other non-UK citizens will not be eligible for student finance, but may be eligible for a bursary or scholarship if they train to teach languages and physics. </p>
+<p> If you’re a non-UK citizen with settled status or indefinite leave to remain in the UK,  you may be eligible for a tuition fee loan, maintenance loan, bursary or scholarship. Other non-UK citizens will not be eligible for student finance, but may be eligible for a bursary or scholarship if they train to teach languages and physics. <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees#check-your-immigration-status-and-eligibility-for-financial-support">Check your immigration status and eligibility for financial support</a>.</p>
 
 </div>
 
@@ -86,7 +86,7 @@ You can [find out about the different ways to fund your training](/funding-and-s
 
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
 
-Places on salaried courses are limited and very competitive. If you’re a non-UK citizen, you are very unlikely to get a place on a salaried course. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
+Places on salaried courses are limited and very competitive. If you’re a non-UK citizen, you're very unlikely to get a place on a salaried course. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
 
 ## The type of course provider 
 
