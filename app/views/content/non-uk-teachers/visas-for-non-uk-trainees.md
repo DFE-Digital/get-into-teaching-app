@@ -82,7 +82,9 @@ If you are training to teach physics or languages, you may be eligible for a [bu
 
 Your training provider should confirm that you will receive a bursary or scholarship when they offer you a training place and send you your confirmation of acceptance for studies (CAS) reference number. They should also give you documentary proof of your bursary or scholarship, which you may be asked to include in your visa application.
 
-If you are successful in applying for a student visa, [your partner and children may also be able to apply to come to the UK with you](https://www.gov.uk/student-visa/family-members).
+### Your partner and children 
+
+If your course starts after 1 January 2024, you will not be able to bring your partner and children with you on a student visa. 
 
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/student-visa/apply">Apply for a student visa<span></span></a>
