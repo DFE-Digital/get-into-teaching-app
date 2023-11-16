@@ -46,7 +46,7 @@ You need to have a degree in any subject to be able to teach. But the degree gra
 
 <div class="inset">
 
-<p> If you have qualifications from outside the UK, you’ll need to show that they’re the same standard as UK qualifications. You can [Get help comparing English and international qualifications](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
+<p> If you have qualifications from outside the UK, you’ll need to show that they’re the same standard as UK qualifications. You can <a href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student">get help comparing English and international qualifications</a>.</p>
 
 </div> 
 
@@ -87,10 +87,6 @@ You can [find out about the different ways to fund your training](/funding-and-s
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
 
 Places on salaried courses are limited and very competitive. If you’re a non-UK citizen, the chance of getting a place on a salaried course is very limited. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
-
-<div class="inset">
-
-</div>
 
 ## The type of course provider 
 
