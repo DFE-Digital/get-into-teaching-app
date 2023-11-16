@@ -42,18 +42,11 @@ It's important to check the requirements for each course you apply to on the tra
 
 ### Your qualifications 
 
-All postgraduate teacher training courses require you to have: 
-
-* a degree in any subject 
-* GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary) 
-
-Most course providers will accept a degree grade of 2:2 or higher, but some may require you to have a 2:1. 
-
-Check each course provider’s requirements on their course page. You can also [find out about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach).
+You need to have a degree in any subject to be able to teach. But the degree grade that providers will accept may vary, for example it may be a 2:1 or a 2:2. So you’ll need to check each course provider’s requirements on their course page. [Find out about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach).
 
 <div class="inset">
 
-<p> If you have qualifications from outside the UK, you’ll need to show that they’re the same standard as UK qualifications. You can get a statement to show this from the <a href="https://enic.org.uk/Qualifications/SOC/Default.aspx">UK European Network of Information Centres (UK ENIC)</a>.</p>
+<p> If you have qualifications from outside the UK, you’ll need to show that they’re the same standard as UK qualifications. You can [Get help comparing English and international qualifications](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
 
 </div> 
 
