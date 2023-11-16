@@ -63,7 +63,7 @@ The information on this page is for:
 * non-UK citizens living in the UK
 * non-UK citizens living outside the UK
 * Irish citizens
-* refugees or asylum seekers
+
 
 Most non-UK citizens will not be eligible for financial support from the UK government to help with teacher training.  
 
@@ -169,9 +169,9 @@ You can check if you’re eligible for a scholarship and apply by visiting:
 
 ## Student finance
 
-Without settled status, most non-UK candidates will not be eligible for student finance (loans to cover fees and living expenses).
+Most non-UK candidates will not be eligible for student finance (loans to cover fees and living expenses). If you are an Irish citizen or have some type of settled status in the UK – for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain), some financial help is available.  
 
-[Check your eligibility](https://www.gov.uk/student-finance/who-qualifies) and [learn more](https://www.gov.uk/browse/education/student-finance) about student finance
+[Check your eligibility](https://www.gov.uk/student-finance/who-qualifies) and [learn more](https://www.gov.uk/browse/education/student-finance) about student finance.
 
 If you are eligible for student finance you may also be eligible for a [teacher training bursary](/funding-and-support/scholarships-and-bursaries). 
 
