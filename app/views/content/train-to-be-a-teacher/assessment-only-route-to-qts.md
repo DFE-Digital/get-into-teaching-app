@@ -8,7 +8,7 @@ image: false
 backlink: /
 related_content:
     Career progression stories: "/blog/tag/career-progression"
-    Salaries and benefits : "/salaries-and-benefits"
+    Teacher pay and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits"
     Attend an event : "/events"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-assessment-only
@@ -32,6 +32,11 @@ provider_groups:
       name: Karen Bateman
       telephone: '01582 599921'
       email: kbateman@challneyboys.luton.sch.uk
+    - header: Colchester Teacher Training Consortium (CTTC)
+      link: https://www.colchesterttc.org.uk/
+      name: Christine Wager
+      telephone: 01206 364728
+      email: enquiries@colchesterttc.org.uk
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
@@ -96,6 +101,10 @@ provider_groups:
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
+    - header: Inspiring Leaders Teacher Training
+      link: https://inspiringleadersscitt.com/aor/
+      name: Dirk Smith
+      email: dsmith@iltt.org.uk
     - header: Lincolnshire SCITT
       link: https://www.lincolnshirescitt.co.uk/aor
       name: Nicki Shore
@@ -113,7 +122,7 @@ provider_groups:
       email: gutprecruitment@sponne.org.uk
     - header: University of Derby
       link: https://www.derby.ac.uk/
-      name: Charlotte Bray
+      name: Jayne Leggott
       email: AO@derby.ac.uk
     - header: University of Northampton
       email: admissions@northampton.ac.uk
@@ -276,11 +285,6 @@ provider_groups:
       name: Joanna Jones
       telephone: '01483 888070'
       email: contactscitt@georgeabbot.surrey.sch.uk
-    - header: GLF Schools’ Teacher Training
-      link: http://www.glynsurreyscitt.co.uk/846/assessment-only-route
-      name: Helen Shaw
-      telephone: '020 8716 4934'
-      email: info@glftt.org
     - header: i2i Teaching Partnership SCITT
       link: https://www.i2ipartnership.co.uk/
       name: Krissy Taylor
@@ -333,9 +337,9 @@ provider_groups:
       telephone: '0118 378 2672'
       email: vrs17a3@reading.ac.uk
     - header: University of Sussex
-      link: https://www.sussex.ac.uk/
-      name: Mike Lambert
-      email: mike.lambert@sussex.ac.uk
+      link: https://www.sussex.ac.uk/education/ite/assessmentonly
+      name: Mike Lambert / Diane Carr
+      email: AOQTS@sussex.ac.uk
     - header: University of Winchester
       link: https://www.winchester.ac.uk/pages/home.aspx
       name: Keith Smith
@@ -382,6 +386,11 @@ provider_groups:
       name: Programme Leader
       telephone: 0121 331 4627
       email: assessmentonlyqts@bcu.ac.uk
+    - header: Bishop Challoner Training School
+      link: https://www.bctsa.org/1299/assessment-only-qts
+      name: Emily Giubertoni
+      telephone: 07714 672398
+      email: e.giubertoni@bishopchalloner.bham.sch.uk
     - header: Haybridge Alliance SCITT
       link: https://www.teachwithhaybridge.co.uk
       email: tforward@haybridge.worcs.sch.uk
@@ -389,6 +398,10 @@ provider_groups:
       link: https://knste-shaw.org.uk/assessment-only-route
       telephone: '01782 432537'
       email: ao@knste-shaw.org.uk
+    - header: National Institute of Teaching and Education, Coventry University
+      link: https://www.coventry.ac.uk/nite/about-us/services/assessment-route-to-qts/
+      telephone: 024 7765 0660
+      email: nite@coventry.ac.uk
     - header: St. Joseph's College Stoke Secondary Partnership
       link: http://www.stjosephstrentvale.com/teaching-school/partnership/
       email: schater@stjosephsmail.com
@@ -400,10 +413,6 @@ provider_groups:
     - header: The Coventry SCITT
       link: https://www.coventryscitt.org.uk
       email: info@coventryscitt.org.uk
-    - header: The National School of Education and Teaching, Coventry University
-      name: Carol Rowntree
-      telephone: 01327 850320
-      email: NSET@coventry.ac.uk
     - header: The OAKS (Ormiston and Keele SCITT)
       name: Rob Tweats
       telephone: '01782 734332'
@@ -434,11 +443,6 @@ provider_groups:
       email: ssplant@ttsonline.net
   Yorkshire and the Humber:
     providers:
-    - header: Bradford College
-      link: https://www.bradfordcollege.ac.uk/courses/course/qualified-teacher-status-qts-assessment-only-programme/
-      name: Julian White
-      telephone: 01274 088 368
-      email: j.white@bradfordcollege.ac.uk
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
@@ -450,6 +454,7 @@ provider_groups:
       telephone: '0113 487 1777'
       email: info@gorsescitt.org.uk
     - header: Leeds Trinity University
+      link: https://www.leedstrinity.ac.uk/courses/cpd-and-short-courses/assessment-only/
       name: Admissions
       telephone: 0113 283 7123
       email: admissions@leedstrinity.ac.uk
@@ -502,7 +507,7 @@ keywords:
   - experienced
 ---
 
-If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/what-is-qts) through an assessment only programme.
+If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) through an assessment only programme.
 
 If you already have QTS, find out how you can [return to teaching](https://teaching-vacancies.campaign.gov.uk/return-to-teaching/).
 

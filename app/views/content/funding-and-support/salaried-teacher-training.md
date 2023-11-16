@@ -1,7 +1,7 @@
 ---
 title: "Salaried teacher training"
 description: |-
-    Explore salaried teacher training, including School Direct (salaried) courses, postgraduate teaching apprenticeships and training delivered by Teach First.
+    Explore salaried teacher training, including School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 related_content:
     Nathan's experience of salaried teacher training: "/blog/salaried-teacher-training-classroom-learning"
     If you've worked as an unqualified teacher: "/train-to-be-a-teacher/assessment-only-route-to-qts"
@@ -11,7 +11,7 @@ external_content:
 promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 navigation: 20.20
-navigation_description: Find out about School Direct (salaried) courses, postgraduate teaching apprenticeships and training delivered by Teach First.
+navigation_description: Find out about School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 keywords:
     - Teach First
     - School Direct
@@ -26,9 +26,9 @@ keywords:
 
 There are some teacher training courses that come with a salary. 
 
-This means you will not have to pay tuition fees and will receive a salary while you train to get [qualified teacher status (QTS)](/what-is-qts). This is what you need to teach in many primary, secondary and special schools in England. 
+This means you will not have to pay tuition fees and will receive a salary while you train to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). This is what you need to teach in many primary, secondary and special schools in England. 
 
-The main salaried courses include School Direct (salaried), postgraduate teaching apprenticeships (PGTA) and teacher training delivered by Teach First.
+The main salaried courses include School Direct salaried, postgraduate teaching apprenticeships (PGTA) and teacher training delivered by Teach First.
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
@@ -46,7 +46,7 @@ Or talk to a [teacher training adviser](/teacher-training-advisers) who can help
 
 ## How much will I be paid on a salaried course? 
 
-You'll receive an [unqualified teacher’s salary](/salaries-and-benefits) – the exact amount will vary depending on the school you work in. 
+You'll receive an [unqualified teacher’s salary](/is-teaching-right-for-me/teacher-pay-and-benefits) – the exact amount will vary depending on the school you work in. 
 
 It’s worth checking if there is a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) available for your subject before you apply for a salaried course. 
 
@@ -62,7 +62,7 @@ You will not perform more than 90% of a full-time teacher’s duties (unless you
 
 Full-time salaried teacher training will usually last: 
 
-* 1 academic year (September to July) if you’re on a School Direct (salaried) course 
+* 1 academic year (September to July) if you’re on a School Direct salaried course 
 
 * 2 academic years (September to July) if you’re on a course delivered by Teach First 
 
@@ -70,7 +70,7 @@ Full-time salaried teacher training will usually last:
 
 Some courses can begin at other points in the year and there may be part-time courses available. 
 
-As well as QTS, you may also be able to work towards a [postgraduate certificate in education (PGCE)](/what-is-a-pgce), but you may have to pay an extra fee. 
+As well as QTS, you may also be able to work towards a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce), but you may have to pay an extra fee. 
 
 [Find out more about what to expect during your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
 

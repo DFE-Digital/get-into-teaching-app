@@ -2,10 +2,7 @@
   <%= link_to(path, class: "link--black") do %>
     <div class="category__nav-card--content">
       <%= content_tag(heading_tag, title) %>
-
       <%= tag.p(helpers.safe_html_format(description)) %>
     </div>
-
-    <div class="category__nav-card--icon"></div>
   <% end %>
 </li>

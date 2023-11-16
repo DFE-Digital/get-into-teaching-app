@@ -8,7 +8,7 @@
   <%= tag.link(rel: 'icon', type: 'image/x-icon', href: '/favicon.ico') %>
   <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
   <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
-  <% js_packs = %w[clarity sentry gtm google_optimize js_enabled lazy_images govuk_frontend application] %>
+  <% js_packs = %w[clarity sentry gtm js_enabled lazy_images govuk_frontend application] %>
   <%= yield :head %>
   <% if Rails.env.test? && params.key?(:fake_browser_time) %>
     <% js_packs.unshift('fake_browser_time') %>
@@ -19,8 +19,6 @@
     "sentry-environment": Rails.env,
     "gtm-id": ENV["GTM_ID"],
     "clarity-id": ENV["CLARITY_ID"],
-    "google-optimize-id": ENV["GOOGLE_OPTIMIZE_ID"],
-    "google-optimize-paths": google_optimize_config[:paths],
   } %>
 <!-- Start VWO Async SmartCode -->
 <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />

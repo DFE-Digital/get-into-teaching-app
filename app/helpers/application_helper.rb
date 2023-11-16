@@ -93,12 +93,6 @@ module ApplicationHelper
     ["/cookie_preference", "/cookies", "/privacy-policy"].include?(path)
   end
 
-  def google_optimize_config
-    @@google_optimize_config ||=
-      YAML.safe_load(File.read(Rails.root.join("config/google_optimize.yml")))
-        .deep_symbolize_keys
-  end
-
   def sentry_dsn
     return nil if Rails.env.production?
 
@@ -111,7 +105,7 @@ module ApplicationHelper
   end
 
   def content_footer_kwargs(front_matter)
-    defaults = { talk_to_us: true, feedback: true }
+    defaults = { talk_to_us: true, feedback: false }
     defaults.merge(front_matter.symbolize_keys.slice(:talk_to_us, :feedback))
   end
 end

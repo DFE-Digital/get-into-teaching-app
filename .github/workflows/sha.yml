@@ -23,17 +23,19 @@ jobs:
         shell: bash
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
+        with:
+          var_file: .github/common_environment_aks.yml
 
       - uses: Azure/login@v1
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            creds: ${{ secrets.AZURE_CREDENTIALS_AKS_REVIEW }}
 
       - name: Deploy to ${{github.event.inputs.environment}}
-        uses: ./.github/workflows/actions/deploy
+        uses: ./.github/workflows/actions/deploy_v2
         id: deploy
         with:
           environment: ${{ github.event.inputs.environment }}

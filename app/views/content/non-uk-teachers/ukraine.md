@@ -5,7 +5,7 @@ description: |-
 related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Teach in England if you trained overseas : "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
-    Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
+    Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-ukraine
 navigation: 20.50
@@ -174,7 +174,7 @@ If you're shortlisted, you’ll be invited for interview and asked to teach part
 
 Your salary as a teacher depends on whether you have QTS, and your level of experience.
 
-[Find out more about salaries and benefits](/salaries-and-benefits) for teachers in England.
+[Find out more about teacher pay and benefits](/is-teaching-right-for-me/teacher-pay-and-benefits) in England.
 
 [Find out more about teaching in England if you trained overseas](/non-uk-teachers/teach-in-england-if-you-trained-overseas). 
 
@@ -236,7 +236,7 @@ If your qualifications come from a non-UK institution, your teacher training pro
 Call us on +44 (0) 800 389 2500 for:
 
 * guidance on the UK equivalents of your qualifications
-* a free statement of comparability, once you’ve submitted your application, if your provider asks for this
+* a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this
 * advice about what to do if you do not have English, maths and science qualifications of grade 4 GCSE standard
 
 
@@ -265,9 +265,6 @@ Find out what financial support is available to [fund your training](/funding-an
 From 1 February 2023, Ukrainians will be able to obtain QTS through DfE's new professional recognition service,[Apply for QTS in England](#apply-for-qts-in-england).
 
 [Learn more about the new service](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#). 
-
-DfE has also made some funding available for assessment-only QTS programmes for Ukrainians. Contact teach.inengland@education.gov.uk for more information. 
-
 
 ### Visas and immigration
 

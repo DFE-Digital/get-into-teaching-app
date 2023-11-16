@@ -4,7 +4,7 @@ description: |-
  Get international qualified teacher status (iQTS) from anywhere in the world, a teaching qualification backed by England’s Department for Education (DfE).
 related_content:
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
-    Salaries and benefits of teaching in England : "/salaries-and-benefits"
+    Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
 promo_content:
     - content/non-uk-teachers/promos/events-promo-iqts
 navigation: 20.40
@@ -118,7 +118,7 @@ The following providers are accepting applications from all over the world:
 
 * [University of Buckingham](https://www.buckingham.ac.uk/courses/postgraduate/international-qualified-teacher-status-iqts)
 
-* [University of Derby](https://www.derby.ac.uk/online/education-courses/international-qualified-teacher-status-iqts-online/)
+* University of Derby: for more information, email ipgce@derby.ac.uk
 
 * [University of Sunderland](https://www.sunderland.ac.uk/study/education/pgce-iqts/)
 
@@ -134,7 +134,17 @@ The following providers specialise in particular regions, or should be contacted
 
 * [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider offers in-person training in Dubai only, so applicants must be a commutable distance from their Dubai Campus
 
-* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning) – contact this provider for more information 
+* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning) – contact this provider for more information
+
+We have recently approved the following providers to offer iQTS for the 2024/25 academic year. Their iQTS courses are still being designed – check back to provider websites for more information. 
+
+* [St Mary’s University](https://www.stmarys.ac.uk/home.aspx)
+
+* [University of Bristol](https://www.bristol.ac.uk/)
+
+* [University of Chichester](https://www.chi.ac.uk/)
+
+* [University of Northampton](https://www.northampton.ac.uk/)
 
 ## Assessment 
 

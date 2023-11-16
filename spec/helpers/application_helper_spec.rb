@@ -178,19 +178,6 @@ describe ApplicationHelper do
     end
   end
 
-  describe "#google_optimize_config" do
-    subject { google_optimize_config }
-
-    it "includes pages currently under test" do
-      is_expected.to eq({
-        paths: [
-          "/landing/how-to-become-a-teacher",
-          "/landing/train-to-teach-if-you-have-a-degree",
-        ],
-      })
-    end
-  end
-
   describe "#human_boolean" do
     it { expect(human_boolean(true)).to eq("Yes") }
     it { expect(human_boolean(false)).to eq("No") }
@@ -233,7 +220,7 @@ describe ApplicationHelper do
 
     subject { content_footer_kwargs(front_matter) }
 
-    it { is_expected.to eq({ talk_to_us: true, feedback: true }) }
+    it { is_expected.to eq({ talk_to_us: true, feedback: false }) }
 
     context "when overriden in the front_matter" do
       let(:front_matter) { { talk_to_us: false, feedback: false, other: false } }

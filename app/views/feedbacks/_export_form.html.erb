@@ -1,0 +1,12 @@
+<%= govuk_form_for @search, url: export_feedbacks_path(format: :csv) do |f| %>
+  <%= f.govuk_error_summary %>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <%= f.govuk_date_field :created_on_or_after %>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <%= f.govuk_date_field :created_on_or_before %>
+    </div>
+  </div>
+  <%= f.button "Export CSV", class: "button", type: :submit %>
+<% end %>

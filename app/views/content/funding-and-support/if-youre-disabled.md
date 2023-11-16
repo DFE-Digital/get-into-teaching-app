@@ -1,17 +1,17 @@
 ---
 title: "Get support if you're disabled"
-heading: "Get support training to teach if you're disabled"
-subcategory: Get extra support
+heading: "Funding and support if you're disabled"
+subcategory: Extra support
 description: |-
     Find out about the support you can get while training to teach if you're disabled.
 related_content:
     Becoming a teacher with a hearing impairment: "/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment"
     Becoming a teacher with autism: "/blog/overcoming-challenges-to-become-a-teacher-autism"
-    Who do you want to teach?: "/train-to-be-a-teacher/who-do-you-want-to-teach"
+    Who do you want to teach?: "/is-teaching-right-for-me/who-do-you-want-to-teach"
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.25
-navigation_title: If you're disabled
+navigation_title: Funding and support if you're disabled
 navigation_description: Find out about the support you can get while training to teach if you're disabled.
 keywords:
     - Disability
@@ -63,4 +63,4 @@ Providers must not discriminate against you. They cannot:
 
 Anyone who’s offered a place on a teacher training course is asked to complete a fitness questionnaire before starting training. Training providers should only ask relevant questions to make sure you’re able to teach.
 
-Find out more about [your rights under the Equality Act 2010](https://www.equalityhumanrights.com/en/equality-act/know-your-rights) and how it protects different characteristics.
+Find out more about [your rights under the Equality Act 2010](https://www.equalityhumanrights.com/equality/equality-act-2010/your-rights-under-equality-act-2010) and how it protects different characteristics.

@@ -1,18 +1,17 @@
 ---
 title: "Get support if you're a veteran"
-heading: "Get support training to teach if you're a veteran"
-subcategory: Get extra support
+heading: "Funding and support if you're a veteran"
+subcategory: Extra support
 description: |-
     Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 related_content:
     David’s journey from the army to teacher training: "/blog/from-the-army-to-teacher-training"
     Is teaching right for me? : "/is-teaching-right-for-me"
-    Salaries and benefits of teaching: "/salaries-and-benefits"
     Teach in further education without a degree: "https://www.teach-in-further-education.campaign.gov.uk/"
 promo_content:
     - content/funding-and-support/promos/get-adviser-veterans-promo
 navigation: 20.35
-navigation_title: If you're a veteran
+navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 calls_to_action:
   chat:
@@ -36,14 +35,14 @@ There are full and part-time teacher training courses available.
 You may be eligible for a tax-free undergraduate bursary of £40,000 if you are (all of the following):
 
 * a veteran who has left full-time employment with the British Army, Royal Air Force or Royal Navy no more than 5 years before the start of the course
-* training to teach secondary biology, physics, chemistry, computing, maths or languages
-* doing an undergraduate degree leading to [qualified teacher status (QTS)](/what-is-qts) in England
+* training to teach secondary biology, chemistry, computing, languages, maths or physics
+* doing an undergraduate degree leading to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) in England
 
 Doing an undergraduate degree leading to QTS means that you would be qualified to teach in England.
 
 You do not need to apply for a bursary to get one. Your teacher training provider will determine if you're eligible.
 
-You’ll receive £20,000 in each of the last 2 years of your course in equal monthly instalments.
+You’ll receive £20,000 in each of the last 2 years of your course in equal monthly instalments. 
 
 ## Postgraduate scholarships and bursaries
 
@@ -73,7 +72,7 @@ Our telephone service is available Monday to Friday between 8:30am and 5:30pm, e
 
 ## Military equivalent qualifications
 
-You’ll need different qualifications depending on [who you want to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+You’ll need different qualifications depending on [who you want to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
 
 If you’re unsure about whether your qualifications achieved through military service meet the standard required, talk to your course provider, or a [teacher training adviser](/teacher-training-advisers).
 

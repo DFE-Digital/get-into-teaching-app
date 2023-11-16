@@ -198,11 +198,6 @@
   variants:
     - "static/content/blog/thumbnails/ben-breen.jpg"
 
-"static/content/blog/bedfordshire.jpg":
-  alt: "Students learning English by playing educational board games in a classroom."
-  variants:
-    - "static/content/blog/thumbnails/bedfordshire.jpg"
-
 "static/content/blog/calculator.jpg":
   alt: "A calculator on top of maths homework and a pencil case."
   variants:
@@ -262,11 +257,6 @@
   alt: ""
   variants:
     - "static/content/blog/thumbnails/right_provider.jpg"
-
-"static/content/blog/rocket.jpg":
-  alt: "A primary teacher showing a rocket to a girl at the front of a classroom as other students watch."
-  variants:
-    - "static/content/blog/thumbnails/rocket.jpg"
 
 "static/content/blog/school-aisle.jpg":
   alt: "The corridor of a school filled with children."
@@ -392,8 +382,8 @@
   alt: "Teacher Johnoi Josephs"
 "static/content/food-for-thought/Keri_Gell.jpg":
   alt: "Teacher Keri Gell"
-"static/content/food-for-thought/Ella_Tyrrell.jpg":
-  alt: "Teacher Ella Tyrrell"
+"static/content/food-for-thought/Amrita_Panesar.jpg":
+  alt: "Teacher Amrita Panesar"
 
 # is teaching right for me
 "static/content/is-teaching-right-for-me/fellowship.jpg":
@@ -430,9 +420,21 @@
 # campus mailing list landing page
 "static/content/campus-mailing-list/campus-mailing-list.jpeg":
   alt: "A smiling young man with a beard in a black leather jacket and black beanie hat stands in front of a screen with holes in."
+  
+# get more from events page
+"static/content/events/collage1.jpeg":
+  alt: "A lady holding papers standing in front of someone smiling with other people and an event banner in the background."
+"static/content/events/collage2.jpeg":
+  alt: "A man holding an iPad wearing a blue Get Into Teaching t-shirt talking to a lady with an event banner in the background."
+"static/content/events/teaching-event.jpeg":
+  alt: "A man smiling wearing a blue Get Into Teaching sweatshirt talking to a lady with banner behind them."
 
 # campus advisers landing page
 "static/content/campus-advisers/adviser.jpeg":
   alt: "A smiling female adviser in a pink t-shirt standing in front of a Get Into Teaching stand."
+
+# subjects
+"static/content/subjects/rotna-roy.jpeg":
+  alt: "Rotna Roy, maths teacher"
 
 

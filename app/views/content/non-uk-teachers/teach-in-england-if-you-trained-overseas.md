@@ -4,7 +4,7 @@ description: |-
   Teach in England if you're a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
 related_content:
     Career progression stories: "/blog/tag/career-progression"
-    Salaries and benefits of teaching in England : "/salaries-and-benefits"
+    Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 navigation: 20.30
@@ -38,7 +38,7 @@ $new-international-funding$
 
 Teach in England and you’ll benefit from working in a world-class education system.
 
-You’ll earn a [competitive salary](/salaries-and-benefits), get supported in your professional development and have varied job opportunities.
+You’ll earn a [competitive salary](/is-teaching-right-for-me/teacher-pay-and-benefits), get supported in your professional development and have varied job opportunities.
 
 You could also consider teaching in [Wales](https://www.ewc.wales/site/index.php/en/registration/index.php?option=com_content&view=article&id=12&Itemid=170&lang=en), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
@@ -208,7 +208,7 @@ The following suggestions and resources may be useful:
 
 The Department for Education (DfE) does not employ teachers directly. Do not send us your CV, as we will not be able to help you find a teaching job. 
 
-Please do not email to ask when a country or subject will be added to the list for QTS in England. We’ll [publish an update about eligibility for the service](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#) by May 2023.
+Please do not email to ask when a country or subject will be added to [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). We'll publish updates about eligiblity for the service at ['A fairer approach to awarding QTS to overseas teachers'](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 

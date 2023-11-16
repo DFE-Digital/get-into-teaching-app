@@ -44,7 +44,7 @@ Starting back at an English state school was hard, like starting any new job - s
 
 Though I was only away for 2 years, during that time a new GCSE curriculum and Ofsted framework[^1] were introduced.
 
-While in China, I'd kept up-to-date with the UK education scene via Twitter. I visited UK schools and went on UK-based courses whenever I was home in England for the holidays.
+While in China, I'd kept up-to-date with the UK education scene via social media. I visited UK schools and went on UK-based courses whenever I was home in England for the holidays.
 
 As for behaviour management – teenagers are teenagers. I still had to manage behaviour in China in the same way I did back in London, so I didn't lose any of my skills there.
 

@@ -13,7 +13,7 @@ describe FooterComponent, type: "component" do
   end
 
   specify "renders the 'Feedback bar' by default" do
-    expect(page).to have_css(feedback_selector)
+    expect(page).not_to have_css(feedback_selector)
   end
 
   specify "renders the 'Talk To Us' section by default" do

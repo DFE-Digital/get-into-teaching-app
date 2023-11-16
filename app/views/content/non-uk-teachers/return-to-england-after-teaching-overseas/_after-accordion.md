@@ -6,7 +6,7 @@ The Department for Education (DfE) can support your CPD through [national profes
 for middle and senior leadership, headship and executive leadership.
 [Learn more about national professional qualifications frameworks.](https://www.gov.uk/government/publications/national-professional-qualifications-frameworks-from-september-2021)
 
-[Salaries and benefits](/salaries-and-benefits) explains teaching salaries for newly qualified and more experienced teachers.
+[Teacher pay and benefits](/is-teaching-right-for-me/teacher-pay-and-benefits) explains teaching salaries for newly qualified and more experienced teachers.
 
 #### Workload, behaviour and flexible hours
 
@@ -25,8 +25,7 @@ learn more.
 
 To find out more about returning to England to teach, you can:
 
-* sign up for an [online Q&A](/events?teaching_events_search[type][]=onlineqa) for returners
 * email us at teach.inengland@education.gov.uk
 * [find us on Facebook](https://www.facebook.com/getintoteaching)
 * [discover us on Instagram](https://www.instagram.com/get_into_teaching/)
-* [follow us on Twitter](https://twitter.com/getintoteaching)
+* [follow us on X (formerly known as Twitter)](https://twitter.com/getintoteaching)

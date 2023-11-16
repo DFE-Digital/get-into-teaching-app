@@ -1,5 +1,6 @@
 .category {
-  background-color: $grey;
+  background-color: $white;
+  margin-bottom: 3.5em;
 
   &__hero {
     margin: 0;
@@ -11,14 +12,13 @@
   }
 
   &__cards {
-    padding-bottom: 2em;
     width: 100%;
   }
 
   &__nav-cards ul {
     display: grid;
     grid-template-columns: 1fr;
-    margin-block: 2em;
+    margin-block: 1em;
     padding: 0;
     gap: 1.2em;
     list-style: none;
@@ -48,23 +48,39 @@
   }
 
   &__nav-card {
-    background: white;
-    box-shadow: 0 6px 5px 0 rgba(0, 0, 0, .15);
+    background: $grey;
     display: flex;
+    margin-bottom: 0;
+    border-bottom: 4px solid $grey-light;
 
     a {
-      padding: 2em;
+      padding: 1.25em;
       text-decoration: none;
       display: flex;
       gap: 1.5em;
       width: 100%;
+
+      h2,
+      h3 {
+        text-decoration: underline;
+      }
+
+      &:focus h2 {
+        color: $white;
+      }
+
+      &:focus h3 {
+        color: $white;
+      }
     }
 
     &:hover {
-      box-shadow: 0 12px 9px 0 rgba(0, 0, 0, .15);
+      border-color: $blue;
 
       h2,
-      h3 { text-decoration: underline; }
+      h3 {
+        text-decoration: none;
+      }
     }
 
     &--content {
@@ -75,19 +91,6 @@
         @extend .heading-m, .heading--margin-0;
       }
     }
-
-    &--icon {
-      flex: 1;
-      text-align: right;
-
-      &:after {
-        display: inline-block;
-        content: "\276F";
-        background: $blue;
-        color: white;
-        padding: 0 .5em;
-      }
-    }
   }
 
   &__questions {
@@ -95,11 +98,15 @@
     flex-direction: column;
     gap: 3em;
     background: $white;
-    padding-bottom: 4em;
+    padding: 2.5em 0 4em;
 
     @include mq($from: tablet) {
       flex-direction: row;
       gap: 2em;
+    }
+
+    &__container {
+      border-top: 1px solid $grey;
     }
   }
 
@@ -209,4 +216,12 @@
   .right p .button {
     margin-bottom: 0;
   }
+}
+
+#events .category__nav-cards {
+  margin-bottom: 3em;
+}
+
+#events .category__nav-card {
+  background: $white;
 }

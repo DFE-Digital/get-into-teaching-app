@@ -1,9 +1,13 @@
 ---
 title: "What qualifications do I need to be a teacher?"
 heading: "What qualifications do I need to be a teacher?"
+subcategory: Qualifications and experience
 description: |-
   Find out what qualifications you need to be a teacher in primary and secondary schools in England and which subjects you can train to teach.
+navigation: 5.30
+navigation_description: Check what qualifications you need to teach in primary, secondary and special schools in England.
 related_content:
+    Teacher pay and benefits: "/is-teaching-right-for-me/teacher-pay-and-benefits"
     Train to be a teacher if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Teacher training : "/train-to-be-a-teacher/initial-teacher-training"
     My career change to teaching : "/blog/my-career-change-to-teaching"
@@ -15,16 +19,16 @@ promo_content:
 
 You need qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.
 
-You do not need QTS to [teach in further education](/become-a-further-education-teacher) or to [teach in early years](/early-years-teaching-training).
+You do not need QTS to [teach in further education](/is-teaching-right-for-me/become-a-further-education-teacher) or to [teach in early years](/is-teaching-right-for-me/become-an-early-years-teacher).
 
-[Find out more about qualified teacher status (QTS)](/what-is-qts). 
+[Find out more about qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). 
 
 ## What qualifications do you need to train?
 
 To train to teach in primary and secondary schools in England, you’ll need:
 
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
-* a bachelor’s degree (this does not have to be in teaching)
+* a bachelor’s degree in any subject
 
 Different training providers may also have specific criteria. For example, some may ask that you have a bachelor’s degree class 2:2 or above.
 
@@ -34,17 +38,17 @@ Talk to your teacher training provider or [find a course](https://www.find-postg
 
 ## What can you teach?
 
-You do not necessarily need a bachelor’s degree in a subject to teach it. It’s up to your teacher training provider to decide if you have the skills and knowledge required.
+Your degree can be in any subject to teach primary or secondary. For secondary courses, your provider will also want to make sure you have a good knowledge of the subject you're applying to teach.
 
-In some cases, you may be able to train to teach a different subject to your degree if:
+This could be through having a degree in the subject, or having:
 
-* you have an A level in the subject
-* your degree is related to but not in the subject – for example, your degree is in engineering but you’d like to teach physics
-* you have an unrelated degree but relevant professional experience
+* an A level in the subject
+* a degree related to but not in the subject – for example, your degree is in engineering but you’d like to teach physics
+* an unrelated degree but relevant professional experience
 
 Talk to your training provider to find out what you can train to teach.
 
-You could also receive a scholarship or bursary of up to £29,000 to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
+You could also receive a scholarship or bursary of up to £30,000 to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
 You may also have the opportunity to teach other subjects in your career and can train to teach more than one subject.
 
@@ -55,7 +59,7 @@ You can do a subject knowledge enhancement course before or sometimes during you
 * you do not have a degree in the subject you’re training to teach
 * you completed your degree more than 5 years ago
 
-[Find out more about subject knowledge enhancement courses](/train-to-be-a-teacher/subject-knowledge-enhancement).
+[Find out more about subject knowledge enhancement courses](/how-to-apply-for-teacher-training/subject-knowledge-enhancement).
 
 ## If you have qualifications from overseas
 

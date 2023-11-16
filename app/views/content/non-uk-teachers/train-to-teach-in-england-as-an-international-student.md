@@ -5,7 +5,7 @@ description: |-
 related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
-    Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
+    Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.10
@@ -142,7 +142,7 @@ For help, call us on +44 800 389 2500. We can check your degree and other qualif
 
 When you make your application for teacher training, some teacher training providers will want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
 
-A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. We can help you with a free statement of comparability, once you’ve submitted your application, if your provider asks for this.
+A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. We can help you with a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this.
 
 ### English language, maths and science proficiency
 
@@ -165,13 +165,13 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 Fees vary between training providers, but range from £9,250 to about £32,000. You’ll also have to pay your living costs.
 
-If you are planning on training to teach languages and physics, you could be eligible for financial help worth up to £39,000, including an international relocation payment worth £10,000.
+If you are planning on training to teach languages and physics, you could be eligible for financial help worth up to £40,000, including an international relocation payment worth £10,000.
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
 ## Search and apply for teacher training courses
 
-Your teacher training course must lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
+Your teacher training course must lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/train-to-be-a-teacher/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
 
 You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Teacher training courses can also be 'fee-paying' or 'salaried'.
 
@@ -183,7 +183,6 @@ Fee-paying courses include:
 
 * university teacher training programmes
 * school-centred initial teacher training (SCITT) programmes
-* School Direct unsalaried teacher training programmes
 
 A salaried teacher training course means you are paid to work in a school while you learn to teach. However, these courses are limited in number and very competitive. Before you apply, contact the salaried teacher training provider to check you meet the entry requirements.
 
@@ -213,7 +212,9 @@ You can also search courses by:
 
 ### Writing your personal statement
 
-It's important that you give yourself time to write the best possible [personal statement](/train-to-be-a-teacher/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
+It's important that you give yourself time to write the best possible [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
+
+Your personal statement should be between 500 and 1000 words long. 90% of successful candidates write 500 words or more.
 
 Your [teacher training adviser](#get-support-and-advice) can help you write your personal statement and will also give advice on: 
 

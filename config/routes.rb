@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get "/403", to: "errors#forbidden"
   get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
   get "/sitemap.xml", to: "sitemap#show", via: :all
+  get "/check", to: proc { [200, {}, %w[OK]] }
 
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
     redirect_rules.each do |from, to|
@@ -57,6 +58,8 @@ Rails.application.routes.draw do
     get "/open_events", to: "events#open_events"
   end
 
+  get "/landing/campus-mailing-list", to: "pages#campus_mailing_list", as: "campus_mailing_list"
+  get "/events/get-the-most-from-events", to: "pages#get_the_most_from_events", as: "get_the_most_from_events"
   get "/funding-and-support/scholarships-and-bursaries", to: "pages#scholarships_and_bursaries", as: "scholarships_and_bursaries"
   get "/funding-and-support/scholarships-and-bursaries-search", to: "pages#scholarships_and_bursaries_search", as: "scholarships_and_bursaries_search"
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
@@ -123,13 +126,6 @@ Rails.application.routes.draw do
   end
 
   namespace :teacher_training_adviser, path: "/teacher-training-adviser" do
-    resources :feedbacks, only: %i[new create index] do
-      collection do
-        get :thank_you
-        post :export
-      end
-    end
-
     resources :steps,
               path: "/sign_up",
               only: %i[index show update] do
@@ -137,6 +133,22 @@ Rails.application.routes.draw do
         get :completed
         get :resend_verification
       end
+    end
+  end
+
+  namespace :feedback, path: "/feedback" do
+    resources :steps,
+              path: "/",
+              only: %i[index show update] do
+      collection do
+        get :completed
+      end
+    end
+  end
+
+  resources :feedbacks, only: %i[new create index] do
+    collection do
+      post :export
     end
   end
 

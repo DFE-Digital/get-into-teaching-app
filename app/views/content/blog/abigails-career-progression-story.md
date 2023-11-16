@@ -30,7 +30,7 @@ $abigail_beeley$
 
 I always enjoyed maths at school and had the opportunity to take my maths GCSE early. I went on to study Maths and Management at university, always with the idea that I would go into a leadership or management role, but with no certainty of what industry I would enter.
 
-A few years after I finished university, my old school sent out a letter to former students advertising the [School Direct](/train-to-be-a-teacher/if-you-have-a-degree) route into teaching. Around the same time, I went to meet one of my friends who was working at a [Get Into Teaching event](/events/about-get-into-teaching-events) and got chatting about a career in teaching. It seemed like a great opportunity!
+A few years after I finished university, my old school sent out a letter to former students advertising their teacher training course. Around the same time, I went to meet one of my friends who was working at a [Get Into Teaching event](/events/about-get-into-teaching-events) and got chatting about a career in teaching. It seemed like a great opportunity!
 
 I really enjoyed my teacher training. Although I had no experience in the classroom beforehand, I found I settled quite naturally into speaking to pupils at the front of the classroom. I also had a lot of support from my mentors and the maths team.
 
@@ -66,4 +66,4 @@ And finally, I do love the holidays! I try to switch off outside of term time an
 
 My advice for anyone thinking of getting into teaching is to remember that you will make a difference, even though it might be challenging at times! When pupils are in your classroom, you have the opportunity to grow their minds and improve their understanding of the world. You are responsible for helping pupils achieve the best possible outcomes and for inspiring them to build their resilience and determination.
 
-If you’ve been inspired by Abigail’s story, find out more about [career progression opportunities and teacher pay scales](/salaries-and-benefits). Or, find out more about [becoming a maths teacher](/subjects/maths).
+If you’ve been inspired by Abigail’s story, find out more about [career progression opportunities and teacher pay](/is-teaching-right-for-me/teacher-pay-and-benefits). Or, find out more about [becoming a maths teacher](/subjects/maths).

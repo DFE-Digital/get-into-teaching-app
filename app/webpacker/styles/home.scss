@@ -30,25 +30,26 @@
   }
 
   #salary-banner .call-to-action__content {
-    padding: 30px 30px 10px;
+    padding: 30px 30px 11px;
   }
 
-  #salary-banner .call-to-action__content h3 {
-    font-size: 24px;
-    line-height: 30px;
+  #salary-banner .call-to-action__content h2 {
     margin-top: 0;
-    margin-bottom: 20px;
   }
 
   #salary-banner .call-to-action__content p {
-    font-size: 19px;
-    line-height: 25px;
     margin-top: 0;
-    margin-bottom: 20px;
   }
 
   #salary-banner p.call-to-action__text {
     display: none;
+  }
+
+  @include mq($until: tablet) {
+    #salary-banner .call-to-action__content h2 {
+      font-size: 24px;
+      line-height: 25px;
+    }
   }
 
   @media (max-width: 1000px) {
@@ -57,21 +58,15 @@
     }
 
     #salary-banner .call-to-action__content {
-      padding: 20px 20px 5px;
+      padding: 20px 20px 4px;
     }
 
-    #salary-banner .call-to-action__content h3 {
-      font-size: 18px;
-      line-height: 20px;
+    #salary-banner .call-to-action__content h2 {
       margin-top: 0;
-      margin-bottom: 15px;
     }
 
     #salary-banner .call-to-action__content p {
-      font-size: 16px;
-      line-height: 20px;
       margin-top: 0;
-      margin-bottom: 15px;
     }
 
     #salary-banner p.call-to-action__text {

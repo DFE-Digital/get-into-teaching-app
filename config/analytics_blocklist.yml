@@ -1,6 +1,4 @@
 ---
 :shared:
-  :feedbacks:
-  - unsuccessful_visit_explanation
-  - improvements
-  - topic
+  :user_feedbacks:
+  - explanation

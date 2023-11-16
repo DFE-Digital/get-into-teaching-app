@@ -1,0 +1,118 @@
+name: Copy database from PaaS to AKS
+description: Backup PaaS postgres DB and restore to AKS
+
+inputs:
+  environment:
+    description: Environment to backup and restore
+    required: true
+  azure-credentials-paas:
+    required: true
+  azure-credentials-aks:
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Set KV environment variables
+      shell: bash
+      run: |
+        tf_vars_file=terraform/paas/${{ inputs.environment }}.env.tfvars
+        echo "key_vault_name=$(grep azure_key_vault ${tf_vars_file} |awk -F"\"" '{print $2}')" >> $GITHUB_ENV
+        echo "paas_space_name=$(grep paas_space ${tf_vars_file} |awk -F"\"" '{print $2}')" >> $GITHUB_ENV
+        echo "paas_app_database_name=$(grep paas_app_database_name ${tf_vars_file} |awk -F"\"" '{print $2}')" >> $GITHUB_ENV
+
+    - uses: azure/login@v1
+      with:
+        creds: ${{ inputs.azure-credentials-paas }}
+
+    - uses: DFE-Digital/keyvault-yaml-secret@v1
+      id: get-secrets
+      with:
+        keyvault: ${{ env.key_vault_name }}
+        secret: INFRA-KEYS
+        key: PAAS-USERNAME,PAAS-PASSWORD
+
+    - name: Setup cf cli
+      uses: DFE-Digital/github-actions/setup-cf-cli@master
+      with:
+        CF_USERNAME: ${{ steps.get-secrets.outputs.PAAS-USERNAME }}
+        CF_PASSWORD: ${{ steps.get-secrets.outputs.PAAS-PASSWORD }}
+        CF_SPACE_NAME: ${{ env.paas_space_name }}
+        INSTALL_CONDUIT: true
+
+    - name: Setup postgres client
+      uses: DFE-Digital/github-actions/install-postgres-client@master
+
+    - name: Set environment variable
+      shell: bash
+      run: echo "backup_file_name=git_${{ inputs.environment }}.sql" >> $GITHUB_ENV
+
+    - name: Backup ${{ inputs.environment }} DB
+      shell: bash
+      run: |
+        cf conduit ${{ env.paas_app_database_name }} -- pg_dump -E utf8 --clean --if-exists --no-owner --verbose --no-password -f ${{ env.backup_file_name }}
+        cf logout
+        az logout
+
+    #
+    # Now restore to the equivalent AKS env database
+    #
+
+    - name: Set KV environment variables for AKS
+      shell: bash
+      run: |
+        case ${{ inputs.environment }} in
+          dev)
+            tf_vars_file=terraform/aks/config/development_aks.tfvars.json
+            ;;
+          *)
+            tf_vars_file=terraform/aks/config/${{ inputs.environment }}_aks.tfvars.json
+            ;;
+        esac
+        echo "cluster=$(jq -r '.cluster' ${tf_vars_file})" >> $GITHUB_ENV
+        echo "aks_app_environment=$(jq -r '.environment' ${tf_vars_file})" >> $GITHUB_ENV
+
+    - uses: azure/login@v1
+      with:
+        creds: ${{ inputs.azure-credentials-aks }}
+
+    - name: Set up environment variables
+      shell: bash
+      run: |
+        case ${{ env.cluster }} in
+          test)
+            echo "cluster_rg=s189t01-tsc-ts-rg" >> $GITHUB_ENV
+            echo "cluster_name=s189t01-tsc-test-aks" >> $GITHUB_ENV
+            ;;
+          production)
+            echo "cluster_rg=s189p01-tsc-pd-rg" >> $GITHUB_ENV
+            echo "cluster_name=s189p01-tsc-production-aks" >> $GITHUB_ENV
+            ;;
+          *)
+            echo "unknown cluster"
+            ;;
+        esac
+        echo "app_name=get-into-teaching-app-${{ env.aks_app_environment }}" >> $GITHUB_ENV
+
+    - name: Install kubectl
+      uses: azure/setup-kubectl@v3
+      with:
+        version: "v1.26.1" # default is latest stable
+
+    - name: K8 setup
+      shell: bash
+      run: |
+        az aks get-credentials -g ${{ env.cluster_rg }} -n ${{ env.cluster_name }}
+        make bin/konduit.sh
+
+    - name: Restore backup to aks env database
+      shell: bash
+      run: |
+        bin/konduit.sh -i ${{ env.backup_file_name }} -t 7200 ${{ env.app_name }} -- psql
+
+    - name: Remove PaaS specific event triggers
+      shell: bash
+      run: |
+        bin/konduit.sh ${{ env.app_name }} -- psql -c 'drop event trigger forbid_ddl_reader'
+        bin/konduit.sh ${{ env.app_name }} -- psql -c 'drop event trigger make_readable'
+        bin/konduit.sh ${{ env.app_name }} -- psql -c 'drop event trigger reassign_owned'
