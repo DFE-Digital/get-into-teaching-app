@@ -50,7 +50,7 @@ You need to have a degree in any subject to be able to teach. But the degree gra
 
 </div> 
 
-### Your right to work in the UK 
+### Your right to work or study in the UK 
 
 You’ll need the right to work or study in the UK to do your teacher training in England. 
 
@@ -62,7 +62,7 @@ If your application is successful, the training provider may be able to help you
 
 Most schools in England need you to have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach. 
 
-Without QTS, you will not eligible for a scholarship or bursary to help you train. You also may not be fully qualified to teach in your chosen school and will not receive the same pay and support when you start teaching.
+Without QTS, you will not be eligible for a scholarship or bursary to help you train. You also may not be fully qualified to teach in your chosen school and will not receive the same pay and support when you start teaching.
 
 Most teacher training courses will award QTS, but some will just award a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce), and some will award both. 
 
@@ -78,7 +78,7 @@ You can [find out about the different ways to fund your training](/funding-and-s
 
 <div class="inset">
 
-<p> If you’re a non-UK citizen without indefinite leave to remain in the UK, you will not usually be eligible for a bursary or scholarship, unless you train to teach languages or physics.</p>
+<p> If you’re a non-UK citizen with settled status or indefinite leave to remain in the UK,  you may be eligible for a tuition fee loan, maintenance loan, bursary or scholarship. Other non-UK citizens will not be eligible for student finance, but may be eligible for a bursary or scholarship if they train to teach languages and physics. </p>
 
 </div>
 
@@ -86,7 +86,7 @@ You can [find out about the different ways to fund your training](/funding-and-s
 
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
 
-Places on salaried courses are limited and very competitive. If you’re a non-UK citizen, the chance of getting a place on a salaried course is very limited. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
+Places on salaried courses are limited and very competitive. If you’re a non-UK citizen, you are very unlikely to get a place on a salaried course. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
 
 ## The type of course provider 
 
@@ -110,7 +110,7 @@ You can apply to a maximum of 4 courses at one time.
 <p>If you’re a non-UK citizen, you should confirm with the training provider:</p>
   <ul>
      <li>if they offer visa sponsorship</li>
-     <li>the timing for non-UK applications</li>
+     <li>the timing for non-UK applications (they may close earlier)</li>
  </ul>
 
 </div>
