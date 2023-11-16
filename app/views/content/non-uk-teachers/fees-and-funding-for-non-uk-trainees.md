@@ -73,11 +73,13 @@ Some support is available if:
 
 * you have some type of settled status in the UK – for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
 
+* you are an Irish citizen
+
 ## Teacher training fees
 
 As a non-UK candidate, you can expect to pay between £9,250 and about £36,000 to train to teach in England – fees vary between training providers. You’ll also have to cover your living costs. Most non-UK candidates will not be eligible for financial support to help with fees.
 
-However, depending on your immigration status, you may get a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250). If you are eligible, this fee will be the same for all courses offered by accredited training providers. You may also be eligible for student finance.  
+However, if you are an Irish citizen or have settled status, you may get a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250). If you are eligible, this fee will be the same for all courses offered by accredited training providers. You may also be eligible for [student finance](#student-finance).  
 
 You can apply for a [salaried teacher training course](/funding-and-support/salaried-teacher-training). On this type of course, you will not pay a fee, and you can earn money while you train in a school. However, these courses are limited in number and very competitive. 
 
@@ -87,7 +89,7 @@ You can apply for a [salaried teacher training course](/funding-and-support/sala
 
 There are 3 types of financial support you can get if you’re interested in training to teach languages and physics:
 
-* an international relocation payment worth £10,000 for languages and physics
+* an international relocation payment worth £10,000 for French, German, Spanish and physics
 * bursaries worth up to £28,000 for languages and physics
 * scholarships worth up to £30,000 for French, German, Spanish and physics
 
@@ -171,7 +173,7 @@ You can check if you’re eligible for a scholarship and apply by visiting:
 
 Most non-UK candidates will not be eligible for student finance (loans to cover fees and living expenses). If you are an Irish citizen or have some type of settled status in the UK – for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain), some financial help is available.  
 
-[Check your eligibility](https://www.gov.uk/student-finance/who-qualifies) and [learn more](https://www.gov.uk/browse/education/student-finance) about student finance.
+[Check your eligibility for student finance](https://www.gov.uk/student-finance/who-qualifies).
 
 If you are eligible for student finance you may also be eligible for a [teacher training bursary](/funding-and-support/scholarships-and-bursaries). 
 
