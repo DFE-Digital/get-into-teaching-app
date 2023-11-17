@@ -316,6 +316,9 @@ en:
       preferred_education_phase_id:
         title: "Which stage are you interested in teaching?"
         change: "the stage you are interested in teaching"
+      preferred_teaching_subject_id:
+        title: "Which subject would you like to teach if you return to teaching?"
+        change: "the subject you would like to teach if you return to teaching"
     stage_of_degree:
       degree_status_id:
         title: "In which year are you studying?"
