@@ -47,15 +47,19 @@ During your experience, you’ll get to do things like:
 
 ## Find school experience
 
-Once you've selected chosen a school, you can get more information about their placement availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a DBS check. 
- 
-You can also arrange school experience independently, by contacting your old school. If you’re a student you can check whether your university has any existing links with local schools. 
+If you enter your postcode into our Get school experience service you can find schools in your area that offer placements. You can filter these by the subject and age group you're looking to teach. 
+
+Once you've chosen a school, you can get more information about their placement availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a DBS check. 
+
+$get-school-experience$
+
+### Arrange school experience independently
+
+You can also organise school placements yourself by contacting your old school. If you’re a student you can check whether your university has any existing links with local schools. 
 
 Or you can call a school directly. You can [get information about schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience so your request goes to the right person. 
 
 Bear in mind that schools are busy places, so they may not always respond quickly and you may need to be flexible about when you visit. 
-
-$get-school-experience$
 
 ## Other ways to get experience of the classroom
 
