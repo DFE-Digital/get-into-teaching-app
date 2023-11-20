@@ -79,7 +79,7 @@ Some support is available if:
 
 As a non-UK candidate, you can expect to pay between £9,250 and about £36,000 to train to teach in England – fees vary between training providers. You’ll also have to cover your living costs. Most non-UK candidates will not be eligible for financial support to help with fees.
 
-However, if you are an Irish citizen or have settled status, you may get a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250). If you are eligible, this fee will be the same for all courses offered by accredited training providers. You may also be eligible for [student finance](#student-finance).  
+However, if you are an Irish citizen or have settled status, you may get a reduction in your fees to the 'home fee rate' paid by UK applicants (set at a maximum of £9,250). If you are eligible, this fee will be the same for all courses offered by accredited training providers. You may also be eligible for [student finance](#student-finance).  
 
 You can apply for a [salaried teacher training course](/funding-and-support/salaried-teacher-training). On this type of course, you will not pay a fee, and you can earn money while you train in a school. However, these courses are limited in number and very competitive. 
 
@@ -101,7 +101,7 @@ The IRP is designed to repay some of the relocation expenses of French, German, 
 
 If you are eligible, you’ll receive a single payment of £10,000 from the Department for Education (DfE) around the end of your first term training in England. You will not have to pay this money back. You can only receive the IRP once.
 
-Please note that you will not be able to use eligibility for the international relocation payment in your visa application as proof that you have enough money to support yourself. 
+Please note that you will not be able to use eligibility for the international relocation payment in your [visa application](/non-uk-teachers/visas-for-non-uk-trainees) as proof that you have enough money to support yourself. 
 
 [Check your eligibility for the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
 
@@ -109,7 +109,7 @@ Please note that you will not be able to use eligibility for the international r
 
 Bursaries and scholarships are tax-free payments from the UK government that you do not have to pay back. They are paid to you by your teacher training provider. If your training provider asks you to pay some or all of your teacher training fees in advance, you can sometimes use a bursary or scholarship to meet these costs. 
 
-You should also be able to use eligibility for a bursary in your visa application as proof that you have enough money to support yourself. 
+You should also be able to use eligibility for a bursary in your [visa application](/non-uk-teachers/visas-for-non-uk-trainees) as proof that you have enough money to support yourself. 
 
 You do not need to pay an agent or any other third party to access a bursary or scholarship. Any agency or person offering to help you access a bursary may be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
@@ -192,10 +192,8 @@ Talk to your training provider about:
 * home fee rate
 * a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries)
 
-## Get help with financial support
+## Get help
 
 [Student Finance England](https://www.gov.uk/contact-student-finance-england) has a dedicated service for EU students and for EEA citizens working in the UK.
-
-Citizens from other countries can also [find out more about eligibility for student finance](https://www.gov.uk/student-finance/who-qualifies).
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
