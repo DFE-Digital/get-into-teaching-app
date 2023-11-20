@@ -15,7 +15,7 @@ module TeacherTrainingAdviser::Steps
     def reviewable_answers
       super.tap do |answers|
         answers["preferred_education_phase_id"] = OPTIONS.key(preferred_education_phase_id).to_s.capitalize
-        answers["preferred_teaching_subject_id"] = Crm::TeachingSubject.lookup_by_uuid(preferred_teaching_subject_id)
+        answers["preferred_teaching_subject_id"] = Crm::TeachingSubject.lookup_by_uuid(preferred_teaching_subject_id) if interested_in_primary?
       end
     end
 
@@ -27,7 +27,7 @@ module TeacherTrainingAdviser::Steps
       other_step(:returning_teacher).returning_to_teaching
     end
 
-    private
+  private
 
     def primary_subject_preferred
       assign_attributes(preferred_teaching_subject_id: Crm::TeachingSubject::PRIMARY)

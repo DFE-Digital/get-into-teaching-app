@@ -15,7 +15,7 @@ module TeacherTrainingAdviser::Steps
     def reviewable_answers
       super.tap do |answers|
         answers["stage_taught"] = stage_taught.humanize
-        answers["subject_taught_id"] = Crm::TeachingSubject.lookup_by_uuid(subject_taught_id)
+        answers["subject_taught_id"] = Crm::TeachingSubject.lookup_by_uuid(subject_taught_id) if previous_stage_primary?
       end
     end
 
