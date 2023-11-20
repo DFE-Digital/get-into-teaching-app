@@ -47,7 +47,7 @@ During your experience, you’ll get to do things like:
 
 ## Find school experience
 
-If you enter your postcode into our Get school experience service you can find schools in your area that offer placements. You can filter these by the subject and age group you're looking to teach. 
+If you enter your postcode into our Get school experience service you can find schools in your area that offer placements. You can filter these by the subject and age group you're looking to teach. It also tells you whether the type of experience available is in-school, virtual or both.
 
 Once you've chosen a school, you can get more information about their placement availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a DBS check. 
 
