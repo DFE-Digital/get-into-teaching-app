@@ -9,7 +9,7 @@ image: "static/content/hero-images/0023.jpg"
 navigation: 5.40
 navigation_title: How can I teach children with special educational needs?
 navigation_description: Find out more about teaching pupils with special educational needs and disabilities.
-article_classes: ['longform']
+article_classes: ['longform', 'blog']
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-send
 keywords:
@@ -33,6 +33,12 @@ However, it’s not essential to do a course specialising in SEND.
 As you train and teach you'll get the skills you need to work with disabled pupils and pupils with special educational needs.
 
 This will enable you to work in a range of settings throughout your career.
+
+> I specifically wanted to work with children identified with Special Educational Needs and Disabilities (SEND). I was fortunate to find a teacher training course provider that was able to allow me to practice in a mainstream school that also hosted a hearing impairment unit. And another school that offered support for children with a variety of learning needs.
+>
+> They were great at teaching me and letting me practice my classroom management skills early on. I was able to research and understand ways to differentiate resources for children who were on the Autistic Spectrum. And I was able to create and implement a scheme of work to reflect on and evaluate for later use once qualified.
+>
+>_Jane Wilkinson, former teacher and teacher training adviser._
 
 ## Teach pupils with sensory impairments
 
