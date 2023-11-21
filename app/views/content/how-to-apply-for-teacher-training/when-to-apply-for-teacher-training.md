@@ -4,7 +4,7 @@ description: |-
   Find out when you can apply for postgraduate teacher training courses, deadlines for submitting applications and how the interview process works.
 related_content:
     
-navigation: 
+navigation: 30.30
 navigation_title: When to apply for teacher training
 navigation_description:  Find out when you can apply for postgraduate teacher training courses.
 date: "2023-03-30"
@@ -23,11 +23,13 @@ You can apply to up to 4 courses at a time.
 Training providers should respond to your application within 30 days. If you do not receive a decision from your application after 30 days, you can submit an application for another course. 
 
 It’s wise to apply as soon as you’re ready because: 
-* popular courses will fill up quickly 
-* there are a limited number of places on a course and they are filled up on a first come, first served basis  
-* courses are open for people to apply all year round  
-* you may need time to complete a <a href="https://getintoteaching.education.gov.uk/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE)</a>course and other conditions before starting your training 
-* this will give you time to plan how you <a href="https://getintoteaching.education.gov.uk/funding-and-support ">fund your training</a>
+<ul>
+<li> popular courses will fill up quickly </li>
+<li>there are a limited number of places on a course and they are filled up on a first come, first served basis</li>  
+<li>courses are open for people to apply all year round</li>  
+<li>you may need time to complete a <a href="https://getintoteaching.education.gov.uk/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE)</a>course and other conditions before starting your training</li> 
+<li>this will give you time to plan how you <a href="https://getintoteaching.education.gov.uk/funding-and-support ">fund your training</a></li>
+</ul>
 
 “Applying late was stressful. I was limited in my choice of teacher training course provider, and I'd lost my GCSE certificates. I had to go back to my school and get new copies so I could confirm my place on the course and my student finance.” 
 
@@ -35,7 +37,7 @@ If you are applying outside of England, you can sign up for a teacher training a
 
 ## Deadlines for applications and training provider decisions 
 
- ### 17 September 2024 
+### 17 September 2024 
 
 This is the last day you’ll be able to apply for a postgraduate teacher training courses starting in September 2024. 
 
@@ -48,11 +50,11 @@ If a decision has not been made by the end of September, your applications will 
 ## Interview timeline 
 
 If your application is successful, training providers will invite you to an interview.  
- 
 
 During your application process. you will be asked for: 
-* your interview availability  
-* any special circumstances you have or adjustments you need 
-
+<ul> 
+<li>your interview availability </li>
+<li>any special circumstances you have or adjustments you need </li>
+</ul>
 You can find <a href="https://getintoteaching.education.gov.uk/how-to-apply-for-teacher-training/teacher-training-interview">help to prepare for your interview</a>. 
 
