@@ -4,7 +4,7 @@ description: |-
   Find out when you can apply for postgraduate teacher training courses, deadlines for submitting applications and how the interview process works.
 related_content:
     
-navigation: 30.30
+navigation: 30.35
 navigation_title: When to apply for teacher training
 navigation_description:  Find out when you can apply for postgraduate teacher training courses.
 date: "2023-03-30"
