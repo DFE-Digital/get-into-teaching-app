@@ -1,7 +1,7 @@
 ---
 title: When to apply for teacher training
 description: |-
-  Find out when you can apply for postgraduate teacher training courses, deadlines for submitting applications and how the interview process works.
+  Find out when you can apply for postgraduate teacher training courses and the deadline for submitting an application.
 related_content:
     
 navigation: 30.45
@@ -36,7 +36,9 @@ It’s wise to apply as soon as you’re ready because:
 <li>this will give you time to plan how you <a href="/funding-and-support">fund your training</a></li>
 </ul>
 
-$q-jacub-pask$
+Applying late was stressful. I was limited in my choice of teacher training course provider, and I'd lost my GCSE certificates. I had to go back to my school and get new copies so I could confirm my place on the course and my student finance. 
+Jacob Pask.
+
 
 You can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
 
