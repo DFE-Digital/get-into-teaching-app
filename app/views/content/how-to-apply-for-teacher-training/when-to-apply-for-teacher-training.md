@@ -27,7 +27,7 @@ It’s wise to apply as soon as you’re ready because:
 <li> popular courses will fill up quickly </li>
 <li>there are a limited number of places on a course and they are filled up on a first come, first served basis</li>  
 <li>courses are open for people to apply all year round</li>  
-<li>you may need time to complete a <a href="https://getintoteaching.education.gov.uk/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training</li> 
+<li>you may need time to complete a <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training</li> 
 <li>this will give you time to plan how you <a href="https://getintoteaching.education.gov.uk/funding-and-support ">fund your training</a></li>
 </ul>
 
