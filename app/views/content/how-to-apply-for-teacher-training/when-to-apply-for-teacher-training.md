@@ -33,7 +33,7 @@ It’s wise to apply as soon as you’re ready because:
 
 “Applying late was stressful. I was limited in my choice of teacher training course provider, and I'd lost my GCSE certificates. I had to go back to my school and get new copies so I could confirm my place on the course and my student finance.” 
 
-If you are applying outside of England, you can <a href="https://getintoteaching.education.gov.uk/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
+You can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
 
 ## Deadlines for applications and training provider decisions 
 
