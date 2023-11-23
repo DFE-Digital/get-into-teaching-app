@@ -56,5 +56,5 @@ During your application process. you will be asked for:
 <li>your interview availability </li>
 <li>any special circumstances you have or adjustments you need </li>
 </ul>
-You can find <a href="https://getintoteaching.education.gov.uk/how-to-apply-for-teacher-training/teacher-training-interview">help to prepare for your interview</a>. 
+You can find <a href="/how-to-apply-for-teacher-training/teacher-training-interview">help to prepare for your interview</a>. 
 
