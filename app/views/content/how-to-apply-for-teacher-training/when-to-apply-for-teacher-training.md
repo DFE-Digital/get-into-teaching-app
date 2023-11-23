@@ -32,15 +32,15 @@ It’s wise to apply as soon as you’re ready because:
 <li> popular courses will fill up quickly </li>
 <li>there are a limited number of places on a course and they are filled up on a first come, first served basis</li>  
 <li>courses are open for people to apply all year round</li>  
-<li>you may need time to complete a <a href="https://getintoteaching.education.gov.uk/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training</li> 
-<li>this will give you time to plan how you <a href="https://getintoteaching.education.gov.uk/funding-and-support ">fund your training</a></li>
+<li>you may need time to complete a <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training</li> 
+<li>this will give you time to plan how you <a href="/funding-and-support ">fund your training</a></li>
 </ul>
 
 Applying late was stressful. I was limited in my choice of teacher training course provider, and I'd lost my GCSE certificates. I had to go back to my school and get new copies so I could confirm my place on the course and my student finance. 
 Jacob Pask.
 
 
-If you are applying outside of England, you can <a href="https://getintoteaching.education.gov.uk/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
+If you are applying outside of England, you can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
 
 ## Deadlines for applications and training provider decisions 
 
