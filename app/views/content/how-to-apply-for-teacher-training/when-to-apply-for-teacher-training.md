@@ -10,6 +10,11 @@ navigation_description:  Find out when you can apply for postgraduate teacher tr
 date: "2023-03-30"
 keywords:
   - teacher training applications
+quote:
+  q-jacub-pask:
+    text: "Applying late was stressful. I was limited in my choice of teacher training course provider, and I'd lost my GCSE certificates. I had to go back to my school and get new copies so I could confirm my place on the course and my student finance."
+    name: "Jacob Pask"
+    job_title: "Enter job title here"
 ---
 
 You can apply for postgraduate teacher training courses starting in September 2024 from 10 October 2023 to 17 September 2024. 
@@ -28,10 +33,10 @@ It’s wise to apply as soon as you’re ready because:
 <li>there are a limited number of places on a course and they are filled up on a first come, first served basis</li>  
 <li>courses are open for people to apply all year round</li>  
 <li>you may need time to complete a <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training</li> 
-<li>this will give you time to plan how you <a href="https://getintoteaching.education.gov.uk/funding-and-support ">fund your training</a></li>
+<li>this will give you time to plan how you <a href="/funding-and-support ">fund your training</a></li>
 </ul>
 
-“Applying late was stressful. I was limited in my choice of teacher training course provider, and I'd lost my GCSE certificates. I had to go back to my school and get new copies so I could confirm my place on the course and my student finance.” 
+$q-jacub-pask$
 
 You can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
 
@@ -39,7 +44,7 @@ You can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teach
 
 ### 17 September 2024 
 
-This is the last day you’ll be able to apply for a postgraduate teacher training courses starting in September 2024. 
+This is the last day you’ll be able to apply for a postgraduate teacher training courses starting in September 2024.
 
 ### 25 September 2024 
 
