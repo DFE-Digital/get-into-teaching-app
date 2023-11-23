@@ -14,7 +14,7 @@ quote:
   q-jacub-pask:
     text: "Applying late was stressful. I was limited in my choice of teacher training course provider, and I'd lost my GCSE certificates. I had to go back to my school and get new copies so I could confirm my place on the course and my student finance."
     name: "Jacob Pask"
-    job_title: "Enter job title here"
+    job_title: "Former teacher trainee"
 ---
 
 You can apply for postgraduate teacher training courses starting in September 2024 from 10 October 2023 to 17 September 2024. 
