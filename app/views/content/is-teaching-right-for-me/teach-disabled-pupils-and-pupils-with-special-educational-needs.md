@@ -38,7 +38,7 @@ This will enable you to work in a range of settings throughout your career.
 >
 > They were great at teaching me and letting me practice my classroom management skills early on. I was able to research and understand ways to differentiate resources for children who were on the Autistic Spectrum. And I was able to create and implement a scheme of work to reflect on and evaluate for later use once qualified.
 >
->_Jane Wilkinson, former teacher and teacher training adviser._
+>_Jane Wilkinson, former teacher and teacher training adviser_
 
 ## Teach pupils with sensory impairments
 
