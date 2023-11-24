@@ -13,8 +13,7 @@ keywords:
 quote:
   q-jacub-pask:
     text: "Applying late was stressful. I was limited in my choice of teacher training course provider, and I'd lost my GCSE certificates. I had to go back to my school and get new copies so I could confirm my place on the course and my student finance."
-    name: "Jacob Pask"
-    job_title: "Former teacher trainee"
+    name: "Jacob Pask, former teacher trainee"
 ---
 
 You can apply for postgraduate teacher training courses starting in September 2024 from 10 October 2023 to 17 September 2024. 
@@ -27,18 +26,19 @@ You can apply to up to 4 courses at a time.
 
 Training providers should respond to your application within 30 days. If you do not receive a decision from your application after 30 days, you can submit an application for another course. 
 
-It’s wise to apply as soon as you’re ready because: 
+It’s wise to apply as soon as you’re ready because:
+
 <ul>
-<li> popular courses will fill up quickly </li>
-<li>there are a limited number of places on a course and they are filled up on a first come, first served basis</li>  
-<li>courses are open for people to apply all year round</li>  
-<li>you may need time to complete a <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training</li> 
-<li>this will give you time to plan how you <a href="/funding-and-support">fund your training</a></li>
+  <li> popular courses will fill up quickly </li>
+  <li>there are a limited number of places on a course and they are filled up on a first come, first served basis</li>  
+  <li>courses are open for people to apply all year round</li>  
+  <li>you may need time to complete a <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training</li> 
+  <li>this will give you time to plan how you <a href="/funding-and-support">fund your training</a></li>
 </ul>
 
-Applying late was stressful. I was limited in my choice of teacher training course provider, and I'd lost my GCSE certificates. I had to go back to my school and get new copies so I could confirm my place on the course and my student finance. 
-Jacob Pask.
-
+<br />
+$q-jacub-pask$
+<br />
 
 If you are applying outside of England, you can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
 
@@ -58,10 +58,12 @@ If a decision has not been made by the end of September, your applications will 
 
 If your application is successful, training providers will invite you to an interview.  
 
-During your application process. you will be asked for: 
+During your application process. you will be asked for:
+
 <ul> 
-<li>your interview availability </li>
-<li>any special circumstances you have or adjustments you need </li>
+  <li>your interview availability </li>
+  <li>any special circumstances you have or adjustments you need </li>
 </ul>
+
 You can find <a href="/how-to-apply-for-teacher-training/teacher-training-interview">help to prepare for your interview</a>. 
 
