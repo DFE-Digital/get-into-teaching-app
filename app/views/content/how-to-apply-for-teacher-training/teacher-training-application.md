@@ -66,6 +66,9 @@ It’s wise to apply as soon as you’re ready as:
 
 * this will give you more time to plan how to fund your training 
 
+<p> <a href="/how-to-apply-for-teacher-training/when-to-apply-for-teacher-training">Find out more about when to apply for teacher training courses</a>.</p>
+
+
 ## What do I need to include in my teacher training application? 
 
 You can apply to up to 4 courses at a time and will need to provide the following. 
