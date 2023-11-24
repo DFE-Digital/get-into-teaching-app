@@ -30,7 +30,7 @@ You can visit schools to get unpaid experience in the classroom before you start
 It can help you:
 
 - decide if you want to train to be a teacher
-- discover which setting you’d like to teach in (primary or secondary)
+- discover if you’d like to teach in a primary or secondary school
 - build a relationship with a school you might want to work for later
 
 ## What to expect
@@ -42,24 +42,28 @@ During your experience, you’ll get to do things like:
 - observe lessons
 - see how teachers manage a classroom
 - find out how specific subjects are taught
-- speak to teachers and interact with pupils
+- speak to teachers and meet pupils
 - learn more about teacher training - including the application and interview process
 
 ## Find school experience
 
-You can search for and request [school experience](https://schoolexperience.education.gov.uk/) in England.
+Use our Get school experience service to search for and request experience in England. If you enter your postcode you can find schools in your area that offer placements. You can filter these by the subject and age group you're looking to teach. It also tells you whether the type of experience available is in-school, virtual or both.
 
-If you can’t find what you’re looking for, you can call a school directly. You can [find schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience.
-
-They may ask you to have a DBS check before attending.
-
-Use our Get school experience service to search for and request experience in England.
+Once you've chosen a school, you can get more information about their placement availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a DBS check. 
 
 $get-school-experience$
 
-## Other ways to get experience of the classroom
+### Arrange school experience independently
 
-### Teaching internships
+You can also organise school placements yourself by contacting your old school. If you’re a student you can check whether your university has any existing links with local schools. 
+
+Or you can call a school directly. You can [get information about schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience so your request goes to the right person. 
+
+Bear in mind that schools are busy places, so they may not always respond quickly and you may need to be flexible about when you visit. 
+
+## Other ways to get experience 
+
+### Paid teaching internships
 
 A paid teaching internship could help you to understand what it’s really like in the classroom if you’re currently studying for an undergraduate or master's degree and are interested in teaching:
 
@@ -75,4 +79,10 @@ You’ll get to experience a range of activities to help you get a feel for scho
 
 ### Watch pre-recorded lessons
 
-You can [observe teachers’ lessons](https://teachers.thenational.academy/lessons-for-itt) on the Oak National Academy website to help you get to know teaching better, before or alongside your ITT.
+Many school and training provider websites have helpful information like “day in the life” videos and recorded lessons. You can also [observe teachers’ lessons](https://teachers.thenational.academy/lessons-for-itt) on the Oak National Academy website to help you get to know teaching better, before or alongside your ITT.
+
+### Beyond the classroom
+
+There are other ways to gain valuable experience of working with young people. Sports coaching, youth groups, after-school clubs or other volunteering activities are great opportunities that may be easier to fit around work and other commitments. 
+
+
