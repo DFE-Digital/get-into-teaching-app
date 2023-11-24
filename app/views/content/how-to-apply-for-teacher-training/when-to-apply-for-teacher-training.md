@@ -40,7 +40,7 @@ It’s wise to apply as soon as you’re ready because:
 $q-jacub-pask$
 <br />
 
-If you are applying outside of England, you can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
+If you're applying outside of England, you can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
 
 ## Deadlines for applications and training provider decisions 
 
@@ -58,8 +58,7 @@ If a decision has not been made by the end of September, your applications will 
 
 If your application is successful, training providers will invite you to an interview.  
 
-During your application process. you will be asked for:
-
+During your application process you will be asked for: 
 <ul> 
   <li>your interview availability </li>
   <li>any special circumstances you have or adjustments you need </li>
