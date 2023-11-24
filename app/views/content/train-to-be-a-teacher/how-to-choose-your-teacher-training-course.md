@@ -78,9 +78,9 @@ You can [find out about the different ways to fund your training](/funding-and-s
 
 <div class="inset">
 
-<p> If you’re a non-UK citizen with settled status or indefinite leave to remain in the UK,  you may be eligible for a tuition fee loan, maintenance loan, bursary or scholarship. 
+<p> If you’re a non-UK citizen with settled status or indefinite leave to remain in the UK,  you may be eligible for a tuition fee loan, maintenance loan, bursary or scholarship. </p> 
 
-Other non-UK citizens will not be eligible for student finance, but may be eligible for a bursary or scholarship to train to teach languages and physics. <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees#check-your-immigration-status-and-eligibility-for-financial-support">Check your immigration status and eligibility for financial support</a>.</p>
+<p> Other non-UK citizens will not be eligible for student finance, but may be eligible for a bursary or scholarship to train to teach languages and physics. <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees#check-your-immigration-status-and-eligibility-for-financial-support">Check your immigration status and eligibility for financial support</a>.</p>
 
 </div>
 
