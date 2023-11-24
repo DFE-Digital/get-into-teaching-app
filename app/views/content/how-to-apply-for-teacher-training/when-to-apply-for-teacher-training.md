@@ -40,7 +40,7 @@ It’s wise to apply as soon as you’re ready because:
 $q-jacub-pask$
 <br />
 
-If you're applying outside of England, you can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
+You can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
 
 ## Deadlines for applications and training provider decisions 
 
