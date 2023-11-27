@@ -14,7 +14,7 @@ external_content:
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-degree
 navigation: 20.05
-navigation_title: If you have or are studying for a degree
+navigation_title: Train to teach if you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one.
 inset_text:
   international-content:

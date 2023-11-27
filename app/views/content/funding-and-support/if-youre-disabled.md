@@ -1,5 +1,5 @@
 ---
-title: "Get support if you're disabled"
+title: "Funding and support if you're disabled"
 heading: "Funding and support if you're disabled"
 subcategory: Extra support
 description: |-
