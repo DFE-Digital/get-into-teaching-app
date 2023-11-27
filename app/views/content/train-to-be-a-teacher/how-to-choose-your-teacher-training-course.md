@@ -60,11 +60,11 @@ If your application is successful, the training provider may be able to help you
 
 ## The qualifications awarded by the course
 
-Most schools in England need you to have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach. If your teacher training course leads to QTS, you may be eligible for a scholarship or bursary to help you train.
+Most schools in England need you to have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach. Without QTS you may not be fully qualified to teach in your chosen school and will not receive the same pay and support when you start teaching.
 
 Most teacher training courses will award QTS, but some will just award a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce), and some will award both. 
 
- Without QTS you may not be fully qualified to teach in your chosen school and will not receive the same pay and support when you start teaching.
+If your teacher training course leads to QTS, you may be eligible for a scholarship or bursary to help you train.
 
 ## If the course is fee-funded or salaried
 
