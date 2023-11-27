@@ -1,5 +1,5 @@
 ---
-title: Prepare for your teacher training interview
+title: Prepare for a teacher training interview
 description: |-
   Prepare for a teacher training interview. Learn more about what the interview involves, what you might be asked, and how to get help to prepare.
 related_content:
@@ -7,7 +7,7 @@ related_content:
     What teacher training is like : "/train-to-be-a-teacher/initial-teacher-training"
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course" 
 navigation: 30.20
-navigation_title: Teacher training interviews
+navigation_title: Prepare for a teacher training interview
 navigation_description: Find out how to prepare for your teacher training interviews.
 date: "2023-06-09"
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: "How to get into teaching without a degree"
+title: "Train to teach if you do not have a degree"
 heading: "Train to teach if you do not have a degree"
 description: |-
   Explore how you can get into teaching without a degree by taking an undergraduate course to gain qualified teacher status (QTS) alongside a degree.
@@ -13,7 +13,7 @@ external_content:
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-no-degree
 navigation: 20.20
-navigation_title: If you do not have a degree
+navigation_title: Train to teach if you do not have a degree
 navigation_description: You need a degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about undergraduate degree courses.
 ---
 

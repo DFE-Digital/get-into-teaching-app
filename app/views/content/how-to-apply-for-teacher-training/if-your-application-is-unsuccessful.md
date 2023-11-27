@@ -8,7 +8,7 @@ related_content:
     Your teacher training personal statement : "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
     Your teacher training references : "/how-to-apply-for-teacher-training/teacher-training-references"
 navigation: 30.30
-navigation_title: If your application is unsuccessful
+navigation_title: If your teacher training application is unsuccessful
 navigation_description: Find out what to do if your teacher training application is unsuccessful.
 date: "2023-03-30"
 keywords:
