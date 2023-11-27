@@ -19,8 +19,10 @@ export default class extends Controller {
 
     if (this.element.classList.contains('open')) {
       this.element.classList.remove('open');
+      this.searchToggler.ariaExpanded = 'false';
     } else {
       this.element.classList.add('open');
+      this.searchToggler.ariaExpanded = 'true';
       this.input.focus();
     }
   }
@@ -160,5 +162,9 @@ export default class extends Controller {
 
   get input() {
     return this.searchbarTarget.querySelector('input');
+  }
+
+  get searchToggler() {
+    return document.getElementById('search-toggle');
   }
 }

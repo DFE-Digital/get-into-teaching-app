@@ -28,8 +28,10 @@ export default class extends Controller {
 
     if (nav.classList.contains(this.navHiddenClass)) {
       this.expandNav();
+      this.menuToggler.ariaExpanded = 'true';
     } else {
       this.collapseNav();
+      this.menuToggler.ariaExpanded = 'false';
     }
   }
 
@@ -74,5 +76,9 @@ export default class extends Controller {
 
   get navHiddenClass() {
     return 'hidden-mobile';
+  }
+
+  get menuToggler() {
+    return document.getElementById('menu-toggle');
   }
 }
