@@ -105,7 +105,7 @@ Scholarships are offered by independent institutions. They set their own eligibi
 * [the Royal Society of Chemistry](https://www.rsc.org/awards-funding/funding/teacher-training-scholarships/) (chemistry)
 * [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
 * [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
-* [the Institute of Mathematics and its Applications](https://teachingmathsscholars.org/home) (maths)
+* [the Institute of Mathematics and its Applications, in partnership with 5 other maths organisations](https://teachingmathsscholars.org/home) (maths)
 * [the Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
 
 Each scholarship body will have its own deadline for applications. You can find these on their individual websites.
