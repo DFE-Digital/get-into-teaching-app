@@ -45,7 +45,7 @@ You do not have to write it all at once – you can start it and come back to it
 
 ## How long should my teacher training personal statement be? 
 
-Your personal statement should be between 500 and 1000 words. 90% of successful candidates write 500 words or more.
+Your personal statement can be up to 1000 words. 90% of successful candidates write 500 words or more.
 
 You could include: 
 
