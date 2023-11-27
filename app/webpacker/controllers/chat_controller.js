@@ -48,7 +48,8 @@ export default class extends Controller {
       this.showWebWidget();
       this.waitForWebWidget(() => {
         const chat = document.querySelector('[title="Messaging window"]');
-        chat.tabIndex = 1;
+        chat.role = 'dialog';
+        chat.setAttribute('aria-modal', 'true');
         this.chatTarget.textContent = 'Chat online';
       });
     });
