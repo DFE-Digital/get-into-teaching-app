@@ -42,7 +42,7 @@ It's important to check the requirements for each course you apply to on the tra
 
 ### Your qualifications 
 
-You need to have a degree in any subject to be able to teach. But the degree grade that providers will accept may vary, for example it may be a 2:1 or a 2:2. So you’ll need to check each course provider’s requirements on their course page. [Find out about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach).
+You need to have a degree in any subject to be able to train to teach. But the degree grade that course providers will accept may vary. For example, most providers will accept a minimum degree grade of 2:2, but some may require you to have a 2:1. So you’ll need to check each course provider’s requirements on their course page. [Find out about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach).
 
 <div class="inset">
 
@@ -88,7 +88,9 @@ You can [find out about the different ways to fund your training](/funding-and-s
 
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
 
-Places on salaried courses are limited and very competitive. If you’re a non-UK citizen, you're very unlikely to get a place on a salaried course. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
+Places on salaried courses are limited and very competitive. If you’re a non-UK citizen, you're very unlikely to get a place on a salaried course. 
+
+You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
 
 ## The type of course provider 
 
@@ -98,7 +100,7 @@ Your teacher training course might be provided by:
 * a school or group of schools (sometimes referred to as school-led training, or an apprenticeship) 
 * [Teach First](https://www.teachfirst.org.uk/) (a charitable organisation)  
 
-Once you’ve found a course you’re interested in you can talk to the training provider before you apply. For example, you might want to find out: 
+Once you’ve found a course you’re interested in, you can talk to the training provider before you apply. For example, you might want to find out: 
 
 * where your placements and theoretical learning might happen
 * how many schools you’ll be doing placements in and how long each placement will last 
