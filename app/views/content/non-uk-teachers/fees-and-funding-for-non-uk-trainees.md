@@ -67,7 +67,7 @@ The information on this page is for:
 
 Most non-UK citizens will not be eligible for financial support from the UK government to help with teacher training.  
 
-Some support is available if: 
+Some support may be available if: 
 
 * you train to teach languages or physics 
 
