@@ -1,5 +1,5 @@
 ---
-title: "Funding and support if you're a veteran"
+title: "Support if you're a veteran"
 heading: "Funding and support if you're a veteran"
 subcategory: Extra support
 description: |-

@@ -1,5 +1,5 @@
 ---
-title: "Teacher training bursaries and scholarships"
+title: "Bursaries and scholarships"
 heading: "Teacher training bursaries and scholarships"
 description: |-
    Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.
