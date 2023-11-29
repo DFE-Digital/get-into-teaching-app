@@ -269,3 +269,9 @@ edit-app-secrets-aks: install-fetch-config set-azure-account
 
 print-app-secrets-aks: install-fetch-config set-azure-account
 	./fetch_config.rb -s azure-key-vault-secret:${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-${CONFIG_SHORT}-app-kv/${APPLICATION_SECRETS}  -f yaml
+
+action-group-resources: set-azure-account # make env_aks action-group-resources ACTION_GROUP_EMAIL=notificationemail@domain.com . Must be run before setting enable_monitoring=true for each subscription
+	$(if $(ACTION_GROUP_EMAIL), , $(error Please specify a notification email for the action group))
+	echo ${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-mn-rg
+	az group create -l uksouth -g ${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-mn-rg --tags "Product=Get into teaching website" "Environment=Test" "Service Offering=Teacher services cloud"
+	az monitor action-group create -n ${AZURE_RESOURCE_PREFIX}-get-into-teaching-app -g ${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-mn-rg --short-name ${AZURE_RESOURCE_PREFIX}-git --action email ${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-email ${ACTION_GROUP_EMAIL}
