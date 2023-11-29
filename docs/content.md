@@ -28,6 +28,7 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Category Pages](#category-pages)
 5. [Build errors](#build-errors)
 6. [Internship providers](#internship-providers)
+7. [Creating a new page] (#creating-a-new-page)
 
 ## Finding a Page/Content to Edit
 
@@ -442,3 +443,35 @@ When updating not just the text content within the file, but the actual list of 
 - Export the XLSX to CSV with filename `internship_providers.csv`
 - Place it in the `lib/tasks/support` directory.
 - Run `bundle exec rake teaching_internship_providers:generate`.
+
+
+##Creating a new page
+
+1. **Make sure you start by creating a new branch on master**
+2. Navigate to the right hand side bar, where you want the new page to sit
+3. Right hand click and select 'New file'
+4. Give name to file ie. when-to-appy.md **make sure you put md on the end of the name**
+
+Now you have created a page - you will need to fill in the top details:
+
+###If you have created a page that will appear in one of the tile sections ie. How to apply
+
+title: 	title will appear as the h1 title and the tab
+description: must start with |- and then you can write the text here
+related_content: list your related content links here, formatted as internal links
+navigation:  this is to decide where they the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the home page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an inbetween number.  
+navigation_title: This is the title that will appear in the tiles
+navigation_description: This is the description that will appear in the tiles
+keywords: use semrush to put keywords here, do a bulletpointed list using dashes like below:
+  - adviser
+  - advisor
+  - ITT
+
+ Here is a blank version to take and fill in:
+title:
+description: 
+related_content: 
+navigation:  
+navigation_title: 
+navigation_description: 
+keywords: 
