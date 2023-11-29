@@ -21,9 +21,8 @@ updates:
     directory: /
     schedule:
       interval: daily
-      
+
   - package-ecosystem: terraform
-    directory:  /terraform/paas/
+    directory:  /terraform/aks/
     schedule:
       interval: daily
-      
