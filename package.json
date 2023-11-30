@@ -32,7 +32,7 @@
     "sass-mq": "^5.0.1",
     "semver": "7.5.4",
     "shakapacker": "6.6.0",
-    "sinon": "^17.0.0",
+    "sinon": "^17.0.1",
     "stimulus": "^3.1",
     "terser-webpack-plugin": "5",
     "trix": "^2.0.4",
