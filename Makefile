@@ -34,8 +34,8 @@ DOCKER_IMAGE=get-into-teaching-app
 
 .PHONY: local
 local:
-	$(eval export KEY_VAULT=s146d01-local2-kv)
-	$(eval export AZURE_SUBSCRIPTION=s146-getintoteachingwebsite-development)
+	$(eval export KEY_VAULT=s189t01-git-local-app-kv)
+	$(eval export AZURE_SUBSCRIPTION=s189-teacher-services-cloud-test)
 
 .PHONY: review_aks
 review_aks: test-cluster
@@ -73,7 +73,7 @@ install-fetch-config:
 	    || true
 
 setup-local-env: install-fetch-config set-azure-account
-	./fetch_config.rb -s yaml-file:.env.development.yml -s azure-key-vault-secret:s146d01-local2-kv/${APPLICATION_SECRETS} -f shell-env-var > .env.development
+	./fetch_config.rb -s yaml-file:.env.development.yml -s azure-key-vault-secret:s189t01-git-local-app-kv/${APPLICATION_SECRETS} -f shell-env-var > .env.development
 
 docker:
 	docker build . -t ${DOCKER_IMAGE}
@@ -198,11 +198,11 @@ production-cluster:
 get-cluster-credentials: set-azure-account
 	az aks get-credentials --overwrite-existing -g ${CLUSTER_RESOURCE_GROUP_NAME} -n ${CLUSTER_NAME}
 
-edit-app-secrets-aks: install-fetch-config set-azure-account
-	./fetch_config.rb -s azure-key-vault-secret:${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-${CONFIG_SHORT}-app-kv/${APPLICATION_SECRETS} -e -d azure-key-vault-secret:${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-${CONFIG_SHORT}-app-kv/${APPLICATION_SECRETS} -f yaml -c
+edit-local-secrets-aks: install-fetch-config set-azure-account
+	./fetch_config.rb -s azure-key-vault-secret:s189t01-git-local-app-kv/${APPLICATION_SECRETS} -e -d azure-key-vault-secret:s189t01-git-local-app-kv/${APPLICATION_SECRETS} -f yaml -c
 
-print-app-secrets-aks: install-fetch-config set-azure-account
-	./fetch_config.rb -s azure-key-vault-secret:${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-${CONFIG_SHORT}-app-kv/${APPLICATION_SECRETS}  -f yaml
+print-local-secrets-aks: install-fetch-config set-azure-account
+	./fetch_config.rb -s azure-key-vault-secret:s189t01-git-local-app-kv/${APPLICATION_SECRETS}  -f yaml
 
 action-group-resources: set-azure-account # make env_aks action-group-resources ACTION_GROUP_EMAIL=notificationemail@domain.com . Must be run before setting enable_monitoring=true for each subscription
 	$(if $(ACTION_GROUP_EMAIL), , $(error Please specify a notification email for the action group))
