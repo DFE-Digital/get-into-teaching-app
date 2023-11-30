@@ -108,8 +108,8 @@ If you are employed as an unqualified teacher and work in:
 
 * inner London, you must earn £24,254
 * outer London, you must earn £22,924
-* London fringe, you must earn £20,594
-* the rest of England, you must earn £19,340
+* London fringe, you must earn £20,960
+* the rest of England, you must earn £20,960
 
 Check the region you will be working in with the school employing you. 
 
