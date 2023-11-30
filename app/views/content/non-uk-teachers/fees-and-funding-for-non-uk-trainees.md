@@ -73,13 +73,13 @@ Some support may be available if:
 
 * you have some type of settled status in the UK – for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
 
-* you are an Irish citizen
+* you're an Irish citizen
 
 ## Teacher training fees
 
 As a non-UK candidate, you can expect to pay between £9,250 and about £36,000 to train to teach in England – fees vary between training providers. You’ll also have to cover your living costs. Most non-UK candidates will not be eligible for financial support to help with fees.
 
-However, if you are an Irish citizen or have settled status, you may get a reduction in your fees to the 'home fee rate' paid by UK applicants (set at a maximum of £9,250). If you are eligible, this fee will be the same for all courses offered by accredited training providers. You may also be eligible for [student loans](#student-loans).  
+However, if you're an Irish citizen or have settled status, you may get a reduction in your fees to the 'home fee rate' paid by UK applicants (set at a maximum of £9,250). If you're eligible, this fee will be the same for all courses offered by accredited training providers. You may also be eligible for [student loans](#student-loans).  
 
 You can apply for a [salaried teacher training course](/funding-and-support/salaried-teacher-training). On this type of course, you will not pay a fee, and you can earn money while you train in a school. However, these courses are limited in number and very competitive. 
 
@@ -93,13 +93,13 @@ There are 3 types of financial support you can get if you’re interested in tra
 * bursaries worth up to £28,000 for languages and physics
 * scholarships worth up to £30,000 for French, German, Spanish and physics
 
-If you are eligible, you can receive both an international relocation payment and a bursary or scholarship. You cannot receive both a bursary and a scholarship.
+If you're eligible, you can receive both an international relocation payment and a bursary or scholarship. You cannot receive both a bursary and a scholarship.
 
 ## Get an international relocation payment (IRP) worth £10,000
 
 The IRP is designed to repay some of the relocation expenses of French, German, Spanish or physics teacher trainees moving to England. 
 
-If you are eligible, you’ll receive a single payment of £10,000 from the Department for Education (DfE) around the end of your first term training in England. You will not have to pay this money back. You can only receive the IRP once.
+If you're eligible, you’ll receive a single payment of £10,000 from the Department for Education (DfE) around the end of your first term training in England. You will not have to pay this money back. You can only receive the IRP once.
 
 Please note that you will not be able to use eligibility for the international relocation payment in your [visa application](/non-uk-teachers/visas-for-non-uk-trainees) as proof that you have enough money to support yourself. 
 
@@ -117,11 +117,11 @@ Bear in mind that:
 
 * you cannot be awarded both a bursary and a scholarship
 * bursaries and scholarships are only available for courses where you pay a fee to study teacher training
-* bursaries and scholarships in physics and languages are open to all non-UK trainees (even if you are not eligible for other types of financial support from the UK government)  
+* bursaries and scholarships in physics and languages are open to all non-UK trainees (even if you're not eligible for other types of financial support from the UK government)  
 
 #### Bursaries for physics and languages
 
-You do not need to apply for a bursary – it will automatically be awarded to you through your training provider if you are eligible.
+You do not need to apply for a bursary – it will automatically be awarded to you through your training provider if you're eligible.
 
 You may get a:
 
@@ -171,11 +171,11 @@ You can check if you’re eligible for a scholarship and apply by visiting:
 
 ## Student loans
 
-Most non-UK candidates will not be eligible for student loans to cover fees and living expenses. If you are an Irish citizen or have some type of settled status in the UK – for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain), some financial help is available.  
+Most non-UK candidates will not be eligible for student loans to cover fees and living expenses. If you're an Irish citizen or have some type of settled status in the UK – for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain), some financial help is available.  
 
 [Check your eligibility for student loans](https://www.gov.uk/student-finance/who-qualifies).
 
-If you are eligible for student loans you may also be eligible for a [teacher training bursary](/funding-and-support/scholarships-and-bursaries). 
+If you're eligible for student loans you may also be eligible for a [teacher training bursary](/funding-and-support/scholarships-and-bursaries). 
 
 ## How to apply for student loans, bursaries and scholarships 
 
