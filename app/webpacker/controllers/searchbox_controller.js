@@ -20,9 +20,11 @@ export default class extends Controller {
     if (this.element.classList.contains('open')) {
       this.element.classList.remove('open');
       this.searchToggler.ariaExpanded = 'false';
+      document.getElementById(this.searchInputIdValue).ariaExpanded = 'false';
     } else {
       this.element.classList.add('open');
       this.searchToggler.ariaExpanded = 'true';
+      document.getElementById(this.searchInputIdValue).ariaExpanded = 'true';
       this.input.focus();
     }
   }
