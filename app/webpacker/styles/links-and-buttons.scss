@@ -1,4 +1,4 @@
-@mixin button($bg: $green, $fg: $white) {
+@mixin button($bg: $green, $fg: $black) {
   display: block;
   font-weight: bold;
   background-color: $bg;
@@ -68,7 +68,7 @@
   }
 
   &:focus:after {
-    @include chevron-icon($white, .6em);
+    @include chevron-icon($black, .6em);
   }
 }
 
