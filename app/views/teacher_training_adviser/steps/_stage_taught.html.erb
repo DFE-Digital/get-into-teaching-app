@@ -1,4 +1,3 @@
-<%= f.govuk_radio_buttons_fieldset(:stage_taught, inline: true, legend: { tag: "h1", text: "Which stage did you previously teach?" }) do %>
-  <%= f.govuk_radio_button :stage_taught, "primary", label: { text: 'Primary' }, link_errors: true %>
-  <%= f.govuk_radio_button :stage_taught, "secondary", label: { text: "Secondary" }, link_errors: true %>
-<% end %>
+<% @page_title = "Which stage did you previously teach?" %>
+
+<%= f.govuk_collection_radio_buttons :stage_taught_id, f.object.class::OPTIONS, :last, nil, inline: true, hint: { hidden: f.object.returning_teacher? }, legend: { tag: "h1" } %>

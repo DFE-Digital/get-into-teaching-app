@@ -10,7 +10,7 @@ module TeacherTrainingAdviser::Steps
 
     def skipped?
       !other_step(:returning_teacher).returning_to_teaching ||
-        other_step(:stage_taught).previous_stage_primary?
+        other_step(:stage_taught).stage_taught_primary?
     end
 
     def reviewable_answers

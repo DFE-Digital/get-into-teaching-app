@@ -14,6 +14,10 @@ module TeacherTrainingAdviser::Steps
       end
     end
 
+    def interested_in_primary?
+      preferred_education_phase_id == OPTIONS[:primary]
+    end
+
     def returning_teacher?
       other_step(:returning_teacher).returning_to_teaching
     end
