@@ -188,7 +188,7 @@ You have the right to apply to train to teach in England if you are resident in 
 
 ### Deadline for applications
 
-Applications for teacher training courses starting in autumn 2023 will be open until September 2023.
+Most teacher training courses start in September. It's best to apply early, if you can. 
 
 If you intend to [apply for teacher training](https://www.gov.uk/apply-for-teacher-training), you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain valuable experience until your teacher training course starts. 
 
