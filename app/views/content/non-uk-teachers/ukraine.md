@@ -186,9 +186,9 @@ You have the right to apply to train to teach in England if you are resident in 
 * [the Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 * [the Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
-### Deadline for applications
+### When to apply for teacher training
 
-Most teacher training courses start in September. It's best to apply early, if you can. 
+Applications for teacher training open in October for courses starting the following September, or sometimes January, and remain open almost all year. However, it's best to apply as early as you can. 
 
 If you intend to [apply for teacher training](https://www.gov.uk/apply-for-teacher-training), you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain valuable experience until your teacher training course starts. 
 
