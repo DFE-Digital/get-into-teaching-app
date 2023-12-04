@@ -29,6 +29,8 @@ This documentation aims to be a reference for content editors that want to make 
 5. [Build errors](#build-errors)
 6. [Internship providers](#internship-providers)
 7. [Creating a new page](#creating-a-new-page)
+8. [Preview a change](#preview-a-change)
+9. [Saving a change](saving-a-change)
 
 ## Finding a Page/Content to Edit
 
@@ -457,11 +459,17 @@ Now you have created a page - you will need to fill in the top details:
 **If you have created a page that will appear in one of the tile sections ie. How to apply**
 
 title: 	title will appear as the h1 title and the tab
+
 description: must start with |- and then you can write the text here
+
 related_content: list your related content links here, formatted as internal links
+
 navigation:  this is to decide where they the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the home page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an inbetween number.  
+
 navigation_title: This is the title that will appear in the tiles
+
 navigation_description: This is the description that will appear in the tiles
+
 keywords: use semrush to put keywords here, do a bulletpointed list using dashes like below:
   - adviser
   - advisor
@@ -475,3 +483,26 @@ navigation:
 navigation_title: 
 navigation_description: 
 keywords: 
+
+## Preview a change
+1. Go to the terminal tab on Visual studio codes **or** Go the top bar of your laptop - click terminal - click 'new terminal'
+2. a line of code will come up and you should type in **bin/dev**, this will start a series of code
+3. When it is finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000, this will open the browser
+4. When putting in a page to preview it, right click the page title on the left hand side bar in visual studio code and copy path
+5. go to the url: http://127.0.0.1:3000 and insert a / on the end
+6. the copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
+7. edit this path to only be the necessary page paths: /a-day-in-the-life-of-a-teacher
+
+The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
+
+## Saving a change
+When you have made a change in visual studio and want to save your work.
+1. Save the change by CTRL-S
+2. This will cause a notification on the source control
+3. You will need to type a name for this change in the 'message' box
+4. Click the plus button that appears on the change - this will stage the change
+5. Click 'sync changes'
+6. and then Commit changes
+   
+   
+
