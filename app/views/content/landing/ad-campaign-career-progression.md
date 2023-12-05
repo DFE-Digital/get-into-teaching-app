@@ -2,8 +2,8 @@
 title: "What are the benefits of teaching?"
 description: Find out your options for teacher training, including postgraduate teacher training, undergraduate teacher training, and the assessment only route to QTS.
 content:
-    - content/landing/ad-campaign-career-progression/header
-    - content/landing/ad-campaign-career-progression/collage
+    - content/landing/career-progression/header
+    - content/landing/career-progression/collage
     - content/landing/train-to-teach/mailing_list
     - content/landing/train-to-teach/content
     - content/landing/train-to-teach/promo
