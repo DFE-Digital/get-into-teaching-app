@@ -5,7 +5,7 @@ content:
     - content/landing/career-progression/header
     - content/landing/career-progression/collage
     - content/landing/train-to-teach/mailing_list
-    - content/landing/train-to-teach/content
+    - content/landing/career-progression/content
     - content/landing/train-to-teach/promo
 image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
 colour: "yellow"
