@@ -4,9 +4,9 @@ description: Find out your options for teacher training, including postgraduate 
 content:
     - content/landing/career-progression/header
     - content/landing/career-progression/collage
-    - content/landing/train-to-teach/mailing_list
+    - content/landing/career-progression/mailing_list
     - content/landing/career-progression/content
-    - content/landing/train-to-teach/promo
+    - content/landing/career-progression/promo
 image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
 colour: "yellow"
 layout: "layouts/minimal"
