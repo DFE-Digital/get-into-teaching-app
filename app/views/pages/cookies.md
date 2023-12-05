@@ -97,7 +97,7 @@ The information gathered via these Cookies may directly or indirectly identify y
 | `SM`                                           | Used in synchronizing the MUID across Microsoft domains                                                                                   | 13 months                                                  |
 | `SRM_B`                                                | This cookie identifies unique web browsers visiting Microsoft sites. These cookies are used for advertising, site analytics, and other operational purposes                                                                                                                              | 13 months                                                  |
 | `FPLC`                                              | Registers a unique ID that is used to generate statistical data on how the visitor uses the website                | 1 day                                                  |
-| `FPID`                                                | This cookie is used to recognize visitors                                                                                                        | 13 months                                                  |
+| `FPID`                                                | This cookie is used to recognise visitors                                                                                                        | 13 months                                                  |
 
 ## Marketing Cookies
 
