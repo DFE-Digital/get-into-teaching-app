@@ -85,7 +85,9 @@ variable "postgres_flexible_server_sku" {
 variable "postgres_enable_high_availability" {
   default = false
 }
-
+variable "app_webtest_url" {
+  default = null
+}
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)
 

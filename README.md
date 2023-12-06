@@ -1,6 +1,6 @@
 # Get Into Teaching
 
-A service for candidates to [get-into-teaching](https://getintoteaching.education.gov.uk/). 
+A service for candidates to [get-into-teaching](https://getintoteaching.education.gov.uk/).
 
 ## Status
 
@@ -19,17 +19,15 @@ A service for candidates to [get-into-teaching](https://getintoteaching.educatio
 
 ## Environments
 
-The website is deployed to GOV.UK PAAS. The environments can be confusing because our Rails environments are named differently (we should look to address this as part of the migration away from GOV.UK PAAS!). Here is a table to try and make sense of the combinations:
+The website is deployed to AKS. The environments can be confusing because our Rails environments are named differently. Here is a table to try and make sense of the combinations:
 
-| Environment             | Rails Environment | Description                           | URL                                                              |
-| ----------------------- | ----------------- | ------------------------------------- | ---------------------------------------------------------------- |
-| development (PAAS)      | rolling           | Internal use/testing                  | https://get-into-teaching-app-dev.london.cloudapps.digital       |
-| test (PAAS)             | preprod           | Internal use/testing                  | https://get-into-teaching-app-test.london.cloudapps.digital      |
-| production (PASS)       | production        | Public                                | https://getintoteaching.education.gov.uk                         |
-| pagespeed (PASS)        | pagespeed         | Runs periodic page speed analytics    | https://get-into-teaching-app-pagespeed.london.cloudapps.digital |
-| ur (PASS)               | preprod           | User research sessions                | https://get-into-teaching-app-ur.london.cloudapps.digital        | 
-| development (local)     | development       | Local development                     | 0.0.0.0:3000                                                     |
-| test (local)            | test              | Local test suite                      | n/a                                                              |
+| Environment             | Rails Environment | Description                      | URL                                                                   |
+| ----------------------- | ----------------- | -------------------------------- | --------------------------------------------------------------------- |
+| development (AKS)       | rolling           | Internal use/testing             | https://get-into-teaching-app-development.test.teacherservices.cloud  |
+| test (AKS)              | preprod           | Internal use/testing             | https://get-into-teaching-app-test.test.teacherservices.cloud         |
+| production (AKS)        | production        | Public                           | https://getintoteaching.education.gov.uk                              |
+| development (local)     | development       | Local development                | 0.0.0.0:3000                                                          |
+| test (local)            | test              | Local test suite                 | n/a                                                                   |
 
 ## Guides
 
@@ -50,4 +48,3 @@ The website is deployed to GOV.UK PAAS. The environments can be confusing becaus
 ## License
 
 [MIT Licence](LICENCE)
-
