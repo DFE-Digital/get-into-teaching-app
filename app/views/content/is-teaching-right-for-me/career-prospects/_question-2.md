@@ -1,0 +1,1 @@
+**Fran:** I've had people wanting to know if they train in geography can they move out of that subject area or become head of year. Once you get qualified teacher status (QTS) you can essentially teach anything as long as your headteacher supports you and you have the expertise to show you can do this.

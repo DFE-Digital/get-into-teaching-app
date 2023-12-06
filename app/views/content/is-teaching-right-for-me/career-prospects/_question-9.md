@@ -1,0 +1,1 @@
+As well as helping you understand the demands of a more senior role, a Teaching Learning Responsibility (TLR) could make a big difference to your pay. If you’re in London it could be around an extra £15,000.

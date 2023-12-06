@@ -1,0 +1,3 @@
+**Fran:** Realistically a year or two in the same setting would be the ideal timeline and then think about Teaching Learning Responsibilities (TLRs). But you have to prove your worth to get a TLR. I had to do research and come up with case studies and a proposal. It's about showing you’re prepared to invest in your personal development and know what’s going on out there. You have to keep up with legislation and news and topical priorities. 
+ 
+**Chris:** If a school, for example, wants to retain a physics teacher they might offer them a pastoral head of year role, as it will give the teacher more money and build their CV. And it also makes them feel valued.

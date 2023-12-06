@@ -1,0 +1,3 @@
+**Fran:** Pastoral care in schools is about recognising all children have a right to feel safe and happy in school and guiding children on a more personal level. A [Special Educational Needs Co-ordinator (SENCO)](/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs) often looks at the nurturing sort of pathways, which is part of the pastoral care in school. Or you might be a form tutor and look after your pupils emotional wellbeing. 
+
+That pastoral level is the liaison between form, tutor, classroom teacher, senior leadership, home parents, carers, extended family and wider community.
