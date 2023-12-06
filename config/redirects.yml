@@ -381,5 +381,5 @@ redirects:
   "/blog/top-tips-for-returning-teachers": "/returning-to-teaching"
   "/blog/tag/returning-to-teaching": "/returning-to-teaching"
 
-# teacher vacancies
-"/non-uk-teachers/return-to-england-after-teaching-overseas/": "https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/"
+  # teacher vacancies
+  "/non-uk-teachers/return-to-england-after-teaching-overseas": "https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/"
