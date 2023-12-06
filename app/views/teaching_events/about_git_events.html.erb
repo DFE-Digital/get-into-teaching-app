@@ -65,7 +65,7 @@
         </section>
 
         <section class="col col-720">
-          <p>In the meantime, take a look at our <%= link_to("online events", events_path({ teaching_events_search: { online: [true] }}), class: "link--black") %> or <%= link_to("events near you", events_path, class: "link--black") %>.</p>
+          <p>In the meantime, take a look at <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }}), class: "link--black") %> in your area or online.</p>
         </section>
 
         <section class="col col-720">
