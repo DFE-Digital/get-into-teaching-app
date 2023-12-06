@@ -345,6 +345,8 @@ redirects:
   "/blog/7-things-to-include-in-your-teacher-training-application": "/how-to-apply-for-teacher-training"
   "/blog/application-tips-from-a-teacher-training-provider": "/how-to-apply-for-teacher-training"
   "/blog/9-tips-to-help-you-apply-for-teacher-training": "/how-to-apply-for-teacher-training"
+  "/blog/returning-to-teaching-with-international-experience": "https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/"
+
 
   # Covid page
   "/covid-19": "/"
@@ -363,6 +365,7 @@ redirects:
   "/train-to-be-a-teacher/if-you-have-a-degree-search": "/train-to-be-a-teacher/if-you-have-a-degree"
   "/funding-and-support/scholarships-and-bursaries-search": "/funding-and-support/scholarships-and-bursaries"
   "/landing/how-to-become-a-teacher-mailing-list": "/landing/how-to-become-a-teacher"
+  
 
   # Thank you page
   "/thank-you": "/"
@@ -377,3 +380,6 @@ redirects:
   "/blog/stephens-return-to-teaching-story": "/returning-to-teaching"
   "/blog/top-tips-for-returning-teachers": "/returning-to-teaching"
   "/blog/tag/returning-to-teaching": "/returning-to-teaching"
+
+# teacher vacancies
+"/non-uk-teachers/return-to-england-after-teaching-overseas/": "https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/"
