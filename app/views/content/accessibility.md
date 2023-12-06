@@ -73,7 +73,7 @@ This website is partially compliant with the WCAG (Web Content Accessibility Gui
 
 * our menu and buttons have insufficient colour contrast ratios. This fails to meet [WCAG 2.1 1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 
-* the hover state of our 'Set cookie preferences' button on our cookie modal, the ‘How to become a teacher’ block on the home page and the 'Register for this event' button in the header of individual event pages all have insufficient colour contrast ratios for non-text elements. This fails to meet [WCAG2 1.4.11 Non-text Contrast (Level AA)](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)
+* the hover state of our 'Set cookie preferences' button on our cookie modal, the ‘How to become a teacher’ block on the home page and the 'Register for this event' button in the header of individual event pages all have insufficient colour contrast ratios for non-text elements. This fails to meet [WCAG 2.1 1.4.11 Non-text Contrast (Level AA)](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)
 
 ## What we’re doing to improve accessibility
 
