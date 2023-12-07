@@ -10,13 +10,13 @@
     flex-direction: column;
 
     .step-header {
-      @include button($bg: $pink, $fg: $white);
+      @include button($bg: $grey, $fg: $black);
 
       display: flex;
       align-items: center;
 
       .step-header__text {
-        color: $white;
+        color: $black;
         text-align: left;
         margin: 0;
         @include font-size("medium");
@@ -29,7 +29,11 @@
       .step-header__chevron {
         flex-shrink: 0;
         margin-top: 5px;
-        @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
+        @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
+      }
+
+      &:focus .step-header__text {
+        color: $white;   
       }
     }
 
@@ -46,7 +50,7 @@
       .step-header {
         .step-header__chevron {
           margin-top: 0;
-          @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
+          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
         }
       }
 

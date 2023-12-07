@@ -2,7 +2,7 @@
 title: "Tips on how to move up the career ladder in teaching"
 heading: "Tips on how to move up the career ladder in teaching"
 description: |-
-  ???
+  Teaching advisers Chris Farr, Francesca Lee, Sian Mills and Elaine Boyd talk about teacher development and how you can progress a career in teaching.
 date: "2021-06-12"
 accordion:
   numbered: false
@@ -33,7 +33,7 @@ accordion:
       partial: content/is-teaching-right-for-me/career-prospects/question-11
 navigation: 5.40
 navigation_title: Tips on how to move up the career ladder in teaching
-navigation_description: Text....
+navigation_description: Teaching advisers Chris Farr, Francesca Lee, Sian Mills and Elaine Boyd talk about teacher development and how you can progress a career in teaching.
 article_classes: ['longform']
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-send
