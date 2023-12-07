@@ -32,7 +32,7 @@ For the purposes of this Cookies Policy:
 
 ## The use of the Cookies
 
-The information below shows the Cookies that are set by [education.gov.uk](https://www.gov.uk/government/organisations/department-for-education) and the third-party services we use. You may refuse the use of Cookies by selecting the appropriate settings on your browser. However, please note that if you do this you may not be able to use the full functionality of this website.
+The information below shows the Cookies that are set by [education.gov.uk](https://www.gov.uk/government/organisations/department-for-education) and the third-party services we use. You may refuse the use of Cookies by selecting the appropriate settings on your browser. However, please note that if you do this you may not be able to use the full functionality of this Website.
 
 We are committed to following the relevant privacy and electronic communication regulations. At the footer of this page, you can change your preferences at any time for marketing, or tracking and performance Cookies.
 
