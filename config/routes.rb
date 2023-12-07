@@ -30,6 +30,7 @@ Rails.application.routes.draw do
   get "/international-returners",                                                           to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/")
   get "/explore-my-options/return-to-teaching/return-to-teaching-in-england-from-overseas", to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/")
   get "/blog/returning-to-teaching-with-international-experience",                          to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/")
+  get "/blog/tag/non-uk-teachers",                                                          to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/")
 
   if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production? || Rails.env.pagespeed?
     get "/assets/*missing", to: "errors#not_found", via: :all
