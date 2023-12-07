@@ -75,7 +75,7 @@ gem "skylight", "~> 5.3.4"
 
 gem "text"
 
-gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
+gem "get_into_teaching_api_client_faraday", ">= 3.1.3",  github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
