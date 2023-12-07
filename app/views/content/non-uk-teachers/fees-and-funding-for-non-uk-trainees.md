@@ -113,61 +113,7 @@ You should also be able to use eligibility for a bursary in your [visa applicati
 
 You do not need to pay an agent or any other third party to access a bursary or scholarship. Any agency or person offering to help you access a bursary may be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
-Bear in mind that:
-
-* you cannot be awarded both a bursary and a scholarship
-* bursaries and scholarships are only available for courses where you pay a fee to study teacher training
-* bursaries and scholarships in physics and languages are open to all non-UK trainees (even if you're not eligible for other types of financial support from the UK government)  
-
-#### Bursaries for physics and languages
-
-You do not need to apply for a bursary – it will automatically be awarded to you through your training provider if you're eligible.
-
-You may get a:
-
-* physics bursary of £28,000
-* languages bursary of £25,000
-
-To be eligible, you’ll need a place on a course training to teach languages or physics with an accredited teacher training provider in England, in the academic year 2024 to 2025.
-
-You’ll also need at least one of the following:
-
-* a bachelor’s degree class 2:2 (honours) or higher
-* a master’s degree
-* a PhD
-
-Each bursary scheme will have their own individual terms and conditions – contact your chosen teacher training provider for more information.
-
-The languages bursary covers all languages offered by accredited teacher training providers. If a course combines 2 subjects (for example, physics plus mathematics, or modern foreign languages plus English), the bursary subject must form at least 50% of the course content.
-
-#### Scholarships for physics, French, German and Spanish
-
-To get a scholarship, you’ll need to be a high-quality student and pass a tough selection process.
-
-If you’re successful, your teacher training provider will pay the scholarship money directly into your bank account over a period of 10 months.
-
-You may get a:
-
-* physics scholarship of £30,000
-* French, German or Spanish scholarship of £27,000
-
-To apply for a scholarship, you’ll need a place on a course training to teach French, German, Spanish or physics with an accredited teacher training provider in England, in the academic year 2024 to 2025.
-
-You’ll also need at least one of the following:
-
-* a bachelor’s degree class 2:1 (honours) or higher
-* a master’s degree
-* a PhD
-
-In exceptional circumstances, you may be offered a scholarship with a bachelor’s degree class 2:2, if you have significant relevant experience.
-You can check if you’re eligible for a scholarship and apply by visiting:
-
-* the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (for a physics scholarship) 
-* the [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (for a French, German or Spanish scholarship)
-
-[Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in languages and physics.
-
-
+[Learn more about bursaries and scholarships for physics and languages](/funding-and-support/scholarships-and-bursaries)
 
 ## Student loans
 
