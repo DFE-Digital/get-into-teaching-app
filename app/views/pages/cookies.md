@@ -28,7 +28,7 @@ For the purposes of this Cookies Policy:
 
 - 'Website' refers to Get Into Teaching, accessible from https://getintoteaching.education.gov.uk/
 
-- 'You' means the individual accessing or using the website, or a company, or any legal entity on behalf of which such individual is accessing or using the website, as applicable.
+- 'You' means the individual accessing or using the Website, or a company, or any legal entity on behalf of which such individual is accessing or using the Website, as applicable.
 
 ## The use of the Cookies
 
