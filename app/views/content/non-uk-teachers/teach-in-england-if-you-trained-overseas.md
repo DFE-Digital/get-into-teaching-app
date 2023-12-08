@@ -190,6 +190,8 @@ You can only receive the [international relocation payment (IRP)](#get-an-intern
 
 $why-train-to-teach$
 
+[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript)
+
 ## Plan your move to England
 
 Once you have been offered a teaching job and successfully applied for your visa, you can start planning your move to England. 

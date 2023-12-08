@@ -307,6 +307,8 @@ Watch our video interviews with non-UK citizens who've successfully relocated to
 
 $why-train-to-teach$
 
+[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript)
+
 [Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/).
 
 [Read interviews with real teachers](/blog).
