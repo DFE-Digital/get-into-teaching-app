@@ -229,10 +229,15 @@ jobs:
         with:
           var_file: .github/common_environment_aks.yml
 
-      - name: Lint SCSS
-        uses: actions-hub/stylelint@master
-        env:
-          PATTERN: "**/*.scss"
+#      - name: Lint SCSS
+#        uses: actions-hub/stylelint@master
+#        env:
+#          PATTERN: "**/*.scss"
+
+      - name: Lint Scss
+        run: |-
+          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{env.DOCKER_IMAGE_TEST}} \
+            yarn scss-lint --formatter string
 
       - name: Lint Ruby
         run: |-
