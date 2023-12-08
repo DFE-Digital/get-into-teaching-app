@@ -7,7 +7,6 @@
   padding: 12px 1em 12px .9em;
   @include font-size("small");
   border: none;
-  box-shadow: 0 4px $black;
 
   @media (forced-colors: active) {
     border: 2px solid transparent;
