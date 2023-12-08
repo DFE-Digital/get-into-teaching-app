@@ -237,7 +237,7 @@ jobs:
       - name: Lint Scss
         run: |-
           docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn js-lint"
+            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn scss-lint"
 
 #      - name: Lint Ruby
 #        run: |-
