@@ -157,6 +157,9 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       expect_current_step(:stage_taught)
       submit_choice_step("Secondary", :stage_taught)
 
+      expect_current_step(:subject_taught)
+      submit_select_step("Maths", :subject_taught)
+
       expect_current_step(:stage_interested_teaching)
       expect(page.find_field("Secondary")).to be_checked
       click_on_continue
