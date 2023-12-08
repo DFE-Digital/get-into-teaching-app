@@ -1,19 +1,20 @@
-@mixin button($bg: $green, $fg: $black) {
+@mixin button($bg: $green, $fg: $white) {
   display: block;
   font-weight: bold;
   background-color: $bg;
   text-decoration: none;
   color: $fg;
-  padding: 14px $indent-amount;
+  padding: 12px 1em 12px .9em;
   @include font-size("small");
   border: none;
+  box-shadow: 0 4px $black;
 
   @media (forced-colors: active) {
     border: 2px solid transparent;
   }
 
   &:hover {
-    background: darken($bg, 5%);
+    background: $green-dark;
     color: $fg;
   }
 
