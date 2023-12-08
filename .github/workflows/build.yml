@@ -236,8 +236,8 @@ jobs:
 
       - name: Lint Scss
         run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{env.DOCKER_IMAGE_TEST}} \
-            yarn scss-lint --formatter string
+          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
+            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn scss-lint --formatter string"
 
       - name: Lint Ruby
         run: |-
