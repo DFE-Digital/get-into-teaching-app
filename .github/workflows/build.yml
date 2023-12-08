@@ -229,31 +229,26 @@ jobs:
         with:
           var_file: .github/common_environment_aks.yml
 
-#      - name: Lint SCSS
-#        uses: actions-hub/stylelint@master
-#        env:
-#          PATTERN: "**/*.scss"
+      - name: Lint SCSS
+        uses: actions-hub/stylelint@master
+        env:
+          PATTERN: "**/*.scss"
 
-      - name: Lint Scss
+      - name: Lint Ruby
         run: |-
-          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn scss-lint"
+          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{env.DOCKER_IMAGE_TEST}} \
+            rubocop --format json --out=/app/out/rubocop-result.json
 
-#      - name: Lint Ruby
-#        run: |-
-#          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{env.DOCKER_IMAGE_TEST}} \
-#            rubocop --format json --out=/app/out/rubocop-result.json
+      - name: Keep Rubocop output
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: rubocop_results
+          path: ${{ github.workspace }}/out/rubocop-result.json
 
-#      - name: Keep Rubocop output
-#        if: always()
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: rubocop_results
-#          path: ${{ github.workspace }}/out/rubocop-result.json
-
-#      - name: Lint ERB Templates
-#        run: |-
-#          docker run -t --rm ${{env.DOCKER_IMAGE_TEST}} bundle exec erblint --lint-all
+      - name: Lint ERB Templates
+        run: |-
+          docker run -t --rm ${{env.DOCKER_IMAGE_TEST}} bundle exec erblint --lint-all
 
       - name: Lint Markdown
         run: |-
