@@ -76,11 +76,6 @@ provider_groups:
       name: Jackie Atkin
       telephone: '01234 907896'
       email: jatkin@pilgrimpartnership.org
-    - header: University of Bedfordshire
-      link: https://www.beds.ac.uk/
-      name: Bedford Admissions
-      telephone: 01234 793279
-      email: admission@beds.ac.uk
     - header: University of Hertfordshire
       link: https://www.herts.ac.uk/apply/schools-of-study/education/initial-teacher-training/assessment-only-route
       name: AO Administration Team
