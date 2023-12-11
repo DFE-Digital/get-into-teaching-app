@@ -2,7 +2,7 @@
 title: Cookies Policy
 ---
 
-Last updated: 7 December 2023
+Last updated: 11 December 2023
 
 This Cookies Policy explains what Cookies are and how we use them. You should read this policy so you can understand what type of Cookies we use, or the information we collect using Cookies and how that information is used.
 
@@ -36,30 +36,30 @@ The information below shows the Cookies that are set by [education.gov.uk](https
 
 We are committed to following the relevant privacy and electronic communication regulations. At the footer of this page, you can change your preferences at any time for marketing, or tracking and performance Cookies.
 
-## Types of cookies we use
+## Types of Cookies we use
 
 Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on your personal computer or mobile device when you go offline, while Session Cookies are deleted as soon as you close your web browser. 
 
-### Essential cookies
+### Essential Cookies
 
 **Type:** Persistent and Session Cookies
 
 **Administered by:** Us
 
-**Purpose:** These Cookies are essential to provide you with services available through the website and to enable you to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that you have asked for cannot be provided, and we only use these Cookies to provide you with those services.
+**Purpose:** These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that you have asked for cannot be provided, and we only use these Cookies to provide you with those services.
 
 The Cookies we use are listed below with details about why we use them and how long they will last. These essential Cookies are used for site navigation and session management, and this service may not function correctly without them 
 
 | Name                                          | Purpose                                                                                                                                                                                                                                                  | Expires                                         |
 | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------------------------------------------|
 | `_dfe_session`                                | Temporary session data                                                                                                                                                                                                                                   | End of browser session                          |
-| `__zlcmid`                                    | Zendesk Cookie that identifies your webchat session                                                                                                                                                                                                      | 1 year                                          |
-| `__zlcprivacy`                                | Zendesk Cookie that stores your webchat Cookie preferences                                                                                                                                                                                               | 1 year                                          |
-| `git-cookie-preferences-v1`                   | Website Cookie that stores your Cookie preferences                                                                                                                                                                                                       | 90 days                                         |
+| `__zlcmid`                                    | Zendesk cookie that identifies your webchat session                                                                                                                                                                                                      | 1 year                                          |
+| `__zlcprivacy`                                | Zendesk cookie that stores your webchat cookie preferences                                                                                                                                                                                               | 1 year                                          |
+| `git-cookie-preferences-v1`                   | Website cookie that stores your cookie preferences                                                                                                                                                                                                       | 90 days                                         |
 | `_vis_opt_exp_{CAMPAIGNID}_goal_{GOALID}`     |  This VWO cookie is created when a campaign goal is triggered. This cookie, when created, will always have a value of 1                                                                                                                                     | 100 days                                        |
 | `_vis_opt_test_cookie`                        | This VWO cookie is to read if cookies can be placed                                                                                                                                                                                                      | Browser closes                                  |
 | `_vis_opt_exp_{CAMPAIGNID}_combi`             | This VWO cookie is created when you are chosen for a particular variation for a test and ensures you see the same variation when you revisit a page in the future                                                                                         | 100 days                                        |
-| `_vis_opt_exp_{CAMPAIGNID}_exclude`           | This VWO cookie is created when you are excluded from a Test Campaign due to the traffic percentage specifications                                                                                                                                        | 100 days                                        |
+| `_vis_opt_exp_{CAMPAIGNID}_exclude`           | This VWO cookie is created when you are excluded from a test campaign due to the traffic percentage specifications                                                                                                                                        | 100 days                                        |
 | `_vis_opt_exp_{CAMPAIGNID}_split`             | This cookie is created when one of the variations is chosen for you, but you are not yet redirected to the variation page. It exists so that VWO can verify that the variation page corresponds to the chosen variation after landing on the page        | 100 days                                        |
 | `_vis_opt_s`                                  | This VWO cookie tracks sessions                                                                                                                                                                                                                          | 100 days                                        |
 | `_vis_opt_out`                                | This VWO cookie indicates that you should not be made part of any campaign                                                                                                                                                                               | 10 years                                        |
@@ -126,7 +126,7 @@ We place marketing tags on our pages to track the success of our content on each
 | `_scid_r`        | This cookie is used by Snapchat to assign a unique ID to a user                                           | 1 year                |
 | `X-AB`        | This cookie is associated with embedding content from Snapchat                                           | 1 day                |
 
-## Your choices regarding cookies
+## Your choices regarding Cookies
 
 If you prefer to avoid the use of Cookies on the website, you must disable the use of Cookies in your browser and then delete the Cookies saved in your browser associated with this website. You may use this option for preventing the use of Cookies at any time. 
 
