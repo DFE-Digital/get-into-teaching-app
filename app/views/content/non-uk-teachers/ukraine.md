@@ -188,7 +188,7 @@ You have the right to apply to train to teach in England if you are resident in 
 
 ### When to apply for teacher training
 
-Applications for teacher training open in October for courses starting the following September, or sometimes January, and remain open almost all year. However, it's best to apply as early as you can. 
+Applications for teacher training open in October for courses starting the following year, usually in September. Applications remain open right up until courses start, however, it's best to apply as early as you can. 
 
 If you intend to [apply for teacher training](https://www.gov.uk/apply-for-teacher-training), you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain valuable experience until your teacher training course starts. 
 
