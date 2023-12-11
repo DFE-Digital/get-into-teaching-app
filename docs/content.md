@@ -490,7 +490,7 @@ keywords:
 3. When it is finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000, this will open the browser
 4. When putting in a page to preview it, right click the page title on the left hand side bar in visual studio code and copy path
 5. go to the url: http://127.0.0.1:3000 and insert a / on the end
-6. the copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
+6. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
 7. edit this path to only be the necessary page paths: /a-day-in-the-life-of-a-teacher
 
 The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
