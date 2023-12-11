@@ -307,11 +307,9 @@ Watch our video interviews with non-UK citizens who've successfully relocated to
 
 $why-train-to-teach$
 
-[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript)
+[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript).
 
-[Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/).
 
-[Read interviews with real teachers](/blog).
 
 ### Understand English education
 
@@ -323,6 +321,8 @@ Learn more about:
 - [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
 - [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/guidance-for-teachers) – a charity gathering international evidence on teaching 5 to 16 year olds
 - [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
+- [join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
+- [read interviews with real teachers](/blog)
 
 ## Contact
 

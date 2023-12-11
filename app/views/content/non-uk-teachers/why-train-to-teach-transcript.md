@@ -1,5 +1,5 @@
 ---
-title: "Why train to teach in England?"
+title: "Why train to teach in England? video transcript"
 description: |-
   Full transcript for the 'Why train to teach in England?' video.
 ---
