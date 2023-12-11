@@ -4,8 +4,9 @@ This documentation aims to be a reference for content editors that want to make 
 
 ## Table of Contents
 
-1. [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
-2. [Content Editing Tips/Info](#content-editing-tips-info)
+1. [Setting up Codespaces and Github](#getting-started)
+2. [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
+3. [Content Editing Tips/Info](#content-editing-tips-info)
 	* [Headings](#headings)
 	* [Frontmatter](#frontmatter)
 	* [Links](#links)
@@ -20,17 +21,37 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Inset text](#inset-text)
 	* [YouTube Video](#youtube-video)
 	* [Hero](#hero)
-3. [Creating a Blog Post](#creating-a-blog-post)
+4. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
-4. [Navigation](#navigation)
+5. [Navigation](#navigation)
 	* [Main Navigation](#main-navigation)
 	* [Category Pages](#category-pages)
-5. [Build errors](#build-errors)
-6. [Internship providers](#internship-providers)
-7. [Creating a new page](#creating-a-new-page)
-8. [Preview a change](#preview-a-change)
-9. [Saving a change](saving-a-change)
+6. [Build errors](#build-errors)
+7. [Internship providers](#internship-providers)
+8. [Creating a new page](#creating-a-new-page)
+9. [Preview a change](#preview-a-change)
+10. [Saving a change](saving-a-change)
+9. [If you add something to the wrong branch](wrong-branch)
+
+## Setting up Codespaces and Github
+
+You will need to download and set up an account on Github and Visual Code Studio with help from the team. Once you're ready:
+
+1. Go to the master branch link: https://github.com/DFE-Digital/get-into-teaching-app
+2. Select the green button '<> Code' and create a branch
+3. This will start 'setting up a Codespace'
+4. Once this is loaded, go to the top left hand corner and select the three horizontal lines - this will open a drop down
+5. Select 'Open in VS Code Desktop'
+6. This will open the file on Visual Code Studios
+
+### Tips
+- Most of the content sits under 'app > views > content'
+- When starting a new branch, make sure to always start with the latest version of 'master' by starting from this link: https://github.com/DFE-Digital/get-into-teaching-app
+- In the folders, blue arrow icons are the pages and the content, the red <> icons are components
+- Markdown tutorial is useful when learning to write content in github https://www.markdowntutorial.com/
+- 
+
 
 ## Finding a Page/Content to Edit
 
@@ -517,8 +538,4 @@ At the top there will be a line saying something like: 'you merged 1 commit into
 If you want to move where this branch sits, click on the first title 'page titles' and it will produce a drop down
 Select the correct place from the drop down.
 
-
-
-   
-   
 
