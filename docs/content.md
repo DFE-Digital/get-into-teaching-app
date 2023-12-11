@@ -452,7 +452,7 @@ When updating not just the text content within the file, but the actual list of 
 1. **Make sure you start by creating a new branch on master**
 2. Navigate to the right hand side bar, where you want the new page to sit
 3. Right hand click and select 'New file'
-4. Give name to file ie. when-to-appy.md **make sure you put md on the end of the name**
+4. Give name to file ie. when-to-apply.md **make sure you put md on the end of the name if it is a markdown file**
 
 Now you have created a page - you will need to fill in the top details:
 
