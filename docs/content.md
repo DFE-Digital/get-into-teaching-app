@@ -450,9 +450,15 @@ When updating not just the text content within the file, but the actual list of 
 ## Creating a new page
 
 1. **Make sure you start by creating a new branch on master**
-2. Navigate to the right hand side bar, where you want the new page to sit
-3. Right hand click and select 'New file'
-4. Give name to file ie. when-to-apply.md **make sure you put md on the end of the name if it is a markdown file**
+To do this you will need to
+	- always open Visual Code Studio from https://github.com/DFE-Digital/get-into-teaching-app and open from the green code button
+	- once Visual Code Studio is open, click the search bar and select 'Create new branch'
+	- type in the name of your new branch and press enter
+	- if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
+
+3. Navigate to the right hand side bar, where you want the new page to sit
+4. Right hand click and select 'New file'
+5. Give name to file ie. when-to-apply.md **make sure you put md on the end of the name if it is a markdown file**
 
 Now you have created a page - you will need to fill in the top details:
 
