@@ -214,7 +214,7 @@ You can also search courses by:
 
 It's important that you give yourself time to write the best possible [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
 
-Your personal statement can be up to 1000 words. 90% of successful candidates write 500 words or more.
+Your personal statement should be between 500 and 1000 words long. 90% of successful candidates write 500 words or more.
 
 Your [teacher training adviser](#get-support-and-advice) can help you write your personal statement and will also give advice on: 
 
@@ -307,9 +307,9 @@ Watch our video interviews with non-UK citizens who've successfully relocated to
 
 $why-train-to-teach$
 
-[Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/).
+[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript).
 
-[Read interviews with real teachers](/blog).
+
 
 ### Understand English education
 
@@ -321,6 +321,8 @@ Learn more about:
 - [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
 - [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/guidance-for-teachers) – a charity gathering international evidence on teaching 5 to 16 year olds
 - [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
+- [join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
+- [read interviews with real teachers](/blog)
 
 ## Contact
 
