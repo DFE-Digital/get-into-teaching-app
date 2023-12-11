@@ -190,7 +190,7 @@ You can only receive the [international relocation payment (IRP)](#get-an-intern
 
 $why-train-to-teach$
 
-[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript)
+[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript).
 
 ## Plan your move to England
 
