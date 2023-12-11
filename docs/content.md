@@ -458,7 +458,7 @@ Now you have created a page - you will need to fill in the top details:
 
 **If you have created a page that will appear in one of the tile sections ie. How to apply**
 
-title: 	title will appear as the h1 title and the tab
+title: 	title will appear as the h1 and in the browser tab
 
 description: must start with |- and then you can write the text here
 
