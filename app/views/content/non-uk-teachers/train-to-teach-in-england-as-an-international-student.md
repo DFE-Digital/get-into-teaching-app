@@ -214,7 +214,7 @@ You can also search courses by:
 
 It's important that you give yourself time to write the best possible [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
 
-Your personal statement should be between 500 and 1000 words long. 90% of successful candidates write 500 words or more.
+Your personal statement can be up to 1000 words. 90% of successful candidates write 500 words or more.
 
 Your [teacher training adviser](#get-support-and-advice) can help you write your personal statement and will also give advice on: 
 
