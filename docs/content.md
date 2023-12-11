@@ -502,7 +502,7 @@ When you have made a change in Visual Studio Code and want to save your work.
 3. You will need to type a name for this change in the 'message' box
 4. Click the plus button that appears on the change - this will stage the change
 5. Click 'sync changes'
-6. and then Commit changes
+6. Commit the changes
    
    
 
