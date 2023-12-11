@@ -32,7 +32,8 @@ This documentation aims to be a reference for content editors that want to make 
 8. [Creating a new page](#creating-a-new-page)
 9. [Preview a change](#preview-a-change)
 10. [Saving a change](saving-a-change)
-9. [If you add something to the wrong branch](wrong-branch)
+11. [If you add something to the wrong branch](wrong-branch)
+12. [Redirect URLs](redirect-urls) 
 
 ## Setting up Codespaces and Github
 
@@ -539,5 +540,14 @@ You can change the branch you've put changes under by going onto the pull reques
 At the top there will be a line saying something like: 'you merged 1 commit into page-titles from Cookies-policy-update 3 hours ago'
 If you want to move where this branch sits, click on the first title 'page titles' and it will produce a drop down
 Select the correct place from the drop down.
+
+## Redirect URLs
+If you search in Visual Code Studios 'redirects' it will take you to a page 'redirects.yml'
+**You can only redirect internal links. If you want to redirect to external links you should ask devs in the team to help you.**
+You will need to follow the pattern that the list of redirects uses in this file.
+It will need to be in quotation marks. Then, you need to put the old url a semi colon and then the new url like this "/oldurl": "/newurl"
+Example: "/train-to-be-a-teacher/teacher-training-personal-statement": "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
+Press enter to create an indention - 
+Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
 
 
