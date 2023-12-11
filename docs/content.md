@@ -509,6 +509,16 @@ When you have made a change in Visual Studio Code and want to save your work.
 4. Click the plus button that appears on the change - this will stage the change
 5. Click 'sync changes'
 6. Commit the changes
+
+## If you add something to the wrong branch
+
+You can change the branch you've put changes under by going onto the pull request from the branch.
+At the top there will be a line saying something like: 'you merged 1 commit into page-titles from Cookies-policy-update 3 hours ago'
+If you want to move where this branch sits, click on the first title 'page titles' and it will produce a drop down
+Select the correct place from the drop down.
+
+
+
    
    
 
