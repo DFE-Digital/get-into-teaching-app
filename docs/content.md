@@ -496,7 +496,7 @@ keywords:
 The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
 
 ## Saving a change
-When you have made a change in visual studio and want to save your work.
+When you have made a change in Visual Studio Code and want to save your work.
 1. Save the change by CTRL-S
 2. This will cause a notification on the source control
 3. You will need to type a name for this change in the 'message' box
