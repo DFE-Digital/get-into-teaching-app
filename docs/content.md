@@ -50,7 +50,7 @@ You will need to download and set up an account on Github and Visual Code Studio
 - When starting a new branch, make sure to always start with the latest version of 'master' by starting from this link: https://github.com/DFE-Digital/get-into-teaching-app
 - In the folders, blue arrow icons are the pages and the content, the red <> icons are components
 - Markdown tutorial is useful when learning to write content in github https://www.markdowntutorial.com/
-- 
+
 
 
 ## Finding a Page/Content to Edit
