@@ -69,7 +69,7 @@ Learn more about how a subject knowledge enhancement course can help prepare you
 
 $ske-course-video$
 
- [Read the transcript for the 'Subject enhancement knowledge explained' video](/how-to-apply-for-teacher-training/ske-explained-transcript).
+ [Read the transcript for the 'Subject knowledge enhancement explained' video](/how-to-apply-for-teacher-training/ske-explained-transcript).
  
 ## How SKE courses work
 
