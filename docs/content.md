@@ -470,7 +470,7 @@ navigation_title: This is the title that will appear in the tiles
 
 navigation_description: This is the description that will appear in the tiles
 
-keywords: use semrush to put keywords here, do a bulletpointed list using dashes like below:
+keywords: use Semrush to put keywords here, do a bulletpointed list using dashes like below:
   - adviser
   - advisor
   - ITT
