@@ -456,7 +456,7 @@ When updating not just the text content within the file, but the actual list of 
 
 Now you have created a page - you will need to fill in the top details:
 
-**If you have created a page that will appear in one of the tile sections ie. How to apply**
+**If you have created a page that will appear in one of the category pages ie. How to apply**
 
 title: 	title will appear as the h1 and in the browser tab
 
