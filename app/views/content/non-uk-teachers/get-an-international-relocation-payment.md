@@ -180,7 +180,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * a non-UK citizen who moved to England to live permanently more than 3 months before the start of your job
 
-* in England on a dependant partner visa linked to your partner’s Skilled Worker or Student visa   
+* in England on a dependant visa linked to your partner or parent’s visa   
 
 * teaching only English language
 
@@ -302,7 +302,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * a non-UK citizen who moved to England to live permanently more than 3 months before the start of your course
 
-* in England on a dependant partner visa linked to your partner’s Student or Skilled Worker visa
+* in England on a dependant visa linked to your partner or parent’s visa
 
 * doing an assessment only QTS
 
