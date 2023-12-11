@@ -530,6 +530,8 @@ When you have made a change in Visual Studio Code and want to save your work.
 4. Click the plus button that appears on the change - this will stage the change
 5. Click 'sync changes'
 6. Commit the changes
+7. This will then open a pull request, you will need to fill in the details for this and click 'Create pull request'
+8. You can monitor pull requests and assign reviewers here https://github.com/DFE-Digital/get-into-teaching-app/pulls
 
 ## If you add something to the wrong branch
 
