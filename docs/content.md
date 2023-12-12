@@ -488,7 +488,9 @@ Now you have created a page - you will need to fill in the top details:
 
 **If you have created a page that will appear in one of the category pages ie. How to apply**
 
-title: 	title will appear as the h1 and in the browser tab
+title: 	title will appear in the browser tab
+
+heading: is the h1 for the page
 
 description: must start with |- and then you can write the text here
 
@@ -507,6 +509,7 @@ keywords: use Semrush to put keywords here, do a bulletpointed list using dashes
 
 Here is a blank version to take and fill in:
 title:
+heading:
 description: 
 related_content: 
 navigation:  
