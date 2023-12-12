@@ -21,7 +21,7 @@ I did my A Level but it was nearly 9 years ago now – I'm getting on a bit! So 
 
 Originally, I was interested in biology but when I contacted the University of Southampton, they said that I didn’t have enough to do biology but because I’d done A Level physics, the physics programme would be very much open to me to apply. And as a result of that, got more interested in that. 
 
-**Speaker 2 - Michael Ashton, SKE Co-ordinator, Edge Hill University:** 
+**Speaker 2 - Michael Ashton:** 
 
 There’s lots of people who’ve thought about teaching, perhaps drifted into different career paths and they’ve perhaps had a hankering, a desire in the background to be a teacher. I think it’s particularly for those sort of people who’ve got in a job that’s bringing money in, but they’re not totally satisfied in what they’re doing and they think teaching will give them more job satisfaction – the idea of making a difference to people and the world. 
 
