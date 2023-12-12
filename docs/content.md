@@ -517,7 +517,7 @@ keywords:
 ## Preview a change
 1. Go to the terminal tab on Visual Studio Code **or** Go the top bar of your laptop - click terminal - click 'new terminal'
 2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
-3. When it is finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000, this will open the browser
+3. When it has finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000. This will open the browser
 4. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
 5. Go to the url: http://127.0.0.1:3000 and insert a / on the end
 6. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
