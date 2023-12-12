@@ -1,4 +1,4 @@
-@mixin button($bg: $green, $fg: $white) {
+@mixin button($bg: $cta-green, $fg: $white) {
   display: block;
   font-weight: bold;
   background-color: $bg;
@@ -13,7 +13,7 @@
   }
 
   &:hover {
-    background: $green-dark;
+    background: $cta-green-dark;
     color: $fg;
   }
 

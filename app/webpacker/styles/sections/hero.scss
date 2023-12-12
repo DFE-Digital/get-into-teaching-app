@@ -225,7 +225,7 @@ $mobile-cutoff: 800px;
 .hero__mailing-strip {
   display: flex;
   align-items: center;
-  background-color: $green;
+  background-color: $cta-green;
   margin-top: 1em;
 
   @include mq($until: tablet) {
