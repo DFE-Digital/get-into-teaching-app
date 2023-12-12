@@ -519,7 +519,7 @@ keywords:
 2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
 3. When it is finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000, this will open the browser
 4. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
-5. go to the url: http://127.0.0.1:3000 and insert a / on the end
+5. Go to the url: http://127.0.0.1:3000 and insert a / on the end
 6. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
 7. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
 
