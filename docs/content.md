@@ -543,7 +543,7 @@ Select the correct place from the drop down.
 
 ## Redirect URLs
 If you search in Visual Code Studios 'redirects' it will take you to a page 'redirects.yml'
-**You can only redirect internal links. If you want to redirect to external links you should ask devs in the team to help you.**
+**Currently you can only redirect internal links in this file. External redirects are handled in the routes file; you may need developer support to create or amend these.**
 You will need to follow the pattern that the list of redirects uses in this file.
 It will need to be in quotation marks. Then, you need to put the old url a semi colon and then the new url like this "/oldurl": "/newurl"
 Example: "/train-to-be-a-teacher/teacher-training-personal-statement": "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
