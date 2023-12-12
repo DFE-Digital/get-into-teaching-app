@@ -516,7 +516,7 @@ keywords:
 
 ## Preview a change
 1. Go to the terminal tab on Visual Studio Code **or** Go the top bar of your laptop - click terminal - click 'new terminal'
-2. a line of code will come up and you should type in **bin/dev**, this will start a series of code
+2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
 3. When it is finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000, this will open the browser
 4. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
 5. go to the url: http://127.0.0.1:3000 and insert a / on the end
@@ -547,7 +547,7 @@ Select the correct place from the drop down.
 If you search in Visual Studio Code 'redirects' it will take you to a page 'redirects.yml'
 **Currently you can only redirect internal links in this file. External redirects are handled in the routes file; you may need developer support to create or amend these.**
 You will need to follow the pattern that the list of redirects uses in this file.
-It will need to be in quotation marks. Then, you need to put the old url a semi colon and then the new url like this "/oldurl": "/newurl"
+It will need to be in quotation marks. Then, you need to put the old url a colon and then the new url like this "/oldurl": "/newurl"
 Example: "/train-to-be-a-teacher/teacher-training-personal-statement": "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
 Press enter to create an indention - 
 Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
