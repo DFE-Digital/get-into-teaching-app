@@ -724,7 +724,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       @include did-you-know-layout;
 
       display: grid;
-      background: $cta-green;
+      background: $green;
 
       .triangle {
         background: $grey;
@@ -732,8 +732,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
         &.green {
           svg {
-            fill: $cta-green;
-            stroke: $cta-green;
+            fill: $green;
+            stroke: $green;
             stroke-width: 1;
           }
         }
@@ -792,7 +792,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       @include exciting-times-ahead-layout;
 
       display: grid;
-      background-color: $cta-green;
+      background-color: $green;
 
       .yellow {
         background: $yellow;
