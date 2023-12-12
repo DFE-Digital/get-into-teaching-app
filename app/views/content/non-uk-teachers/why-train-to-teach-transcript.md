@@ -7,17 +7,17 @@ description: |-
 
 ###  Why train to teach in England? 
 
-**Christobel Gondwe, Maths teacher:**
+**Christobel Gondwe, maths teacher:**
 
 If you want a job that you will love and you will feel wanted, and you will be looked after in essence, and you want a job where you can develop and progress, I’d definitely say to consider teaching in the UK. 
 
 ### Is it hard to get on to a teacher training course in England? 
 
-**Nellie D’Costa, Trainee science teacher:**
+**Nellie D’Costa, trainee science teacher:**
 
 I assumed that it would be hard because I come from India. But then it was quite straightforward and easy. 
 
-**Giorgio Tatananni, Trainee modern foreign languages teacher:**
+**Giorgio Tatananni, trainee modern foreign languages teacher:**
 
 Getting a training place here was so much easier than I thought. 
 
