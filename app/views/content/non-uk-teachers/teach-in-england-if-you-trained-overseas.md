@@ -190,6 +190,8 @@ You can only receive the [international relocation payment (IRP)](#get-an-intern
 
 $why-train-to-teach$
 
+[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript).
+
 ## Plan your move to England
 
 Once you have been offered a teaching job and successfully applied for your visa, you can start planning your move to England. 
@@ -211,4 +213,3 @@ The Department for Education (DfE) does not employ teachers directly. Do not sen
 Please do not email to ask when a country or subject will be added to [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). We'll publish updates about eligiblity for the service at ['A fairer approach to awarding QTS to overseas teachers'](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
-
