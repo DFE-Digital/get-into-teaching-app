@@ -33,24 +33,26 @@ This documentation aims to be a reference for content editors that want to make 
 9. [Preview a change](#preview-a-change)
 10. [Saving a change](saving-a-change)
 11. [If you add something to the wrong branch](wrong-branch)
-12. [Redirect URLs](redirect-urls) 
+12. [Redirect URLs](redirect-urls)
+13. [Finding links on the site](links-site)
 
 ## Setting up Codespaces and Github
 
-You will need to download and set up an account on Github and Visual Code Studio with help from the team. Once you're ready:
+You will need to download and set up an account on Github and Visual Studio Code with help from the team. Once you're ready:
 
 1. Go to the master branch link: https://github.com/DFE-Digital/get-into-teaching-app
 2. Select the green button '<> Code' and create a branch
 3. This will start 'setting up a Codespace'
 4. Once this is loaded, go to the top left hand corner and select the three horizontal lines - this will open a drop down
 5. Select 'Open in VS Code Desktop'
-6. This will open the file on Visual Code Studios
+6. This will open the file on Visual Studio Code
+7. When you run a codespace it will make up a branch name: **when you next go on to github and want to run a codespace, you should use the same branch everytime. You do not need to make a new one every time.**
 
 ### Tips
 - Most of the content sits under 'app > views > content'
 - When starting a new branch, make sure to always start with the latest version of 'master' by starting from this link: https://github.com/DFE-Digital/get-into-teaching-app
 - In the folders, blue arrow icons are the pages and the content, the red <> icons are components
-- Markdown tutorial is useful when learning to write content in github https://www.markdowntutorial.com/
+- Markdown tutorial is useful when learning to write content in Github https://www.markdowntutorial.com/
 
 
 
@@ -473,8 +475,8 @@ When updating not just the text content within the file, but the actual list of 
 
 1. **Make sure you start by creating a new branch on master**
 To do this you will need to
-	- always open Visual Code Studio from https://github.com/DFE-Digital/get-into-teaching-app and open from the green code button
-	- once Visual Code Studio is open, click the search bar and select 'Create new branch'
+	- always open Visual Studio Code from https://github.com/DFE-Digital/get-into-teaching-app and open from the green code button
+	- once Visual Studio Code is open, click the search bar and select 'Create new branch'
 	- type in the name of your new branch and press enter
 	- if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
 
@@ -513,10 +515,10 @@ navigation_description:
 keywords: 
 
 ## Preview a change
-1. Go to the terminal tab on Visual studio codes **or** Go the top bar of your laptop - click terminal - click 'new terminal'
+1. Go to the terminal tab on Visual Studio Code **or** Go the top bar of your laptop - click terminal - click 'new terminal'
 2. a line of code will come up and you should type in **bin/dev**, this will start a series of code
 3. When it is finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000, this will open the browser
-4. When putting in a page to preview it, right click the page title on the left hand side bar in visual studio code and copy path
+4. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
 5. go to the url: http://127.0.0.1:3000 and insert a / on the end
 6. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
 7. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
@@ -542,12 +544,21 @@ If you want to move where this branch sits, click on the first title 'page title
 Select the correct place from the drop down.
 
 ## Redirect URLs
-If you search in Visual Code Studios 'redirects' it will take you to a page 'redirects.yml'
+If you search in Visual Studio Code 'redirects' it will take you to a page 'redirects.yml'
 **Currently you can only redirect internal links in this file. External redirects are handled in the routes file; you may need developer support to create or amend these.**
 You will need to follow the pattern that the list of redirects uses in this file.
 It will need to be in quotation marks. Then, you need to put the old url a semi colon and then the new url like this "/oldurl": "/newurl"
 Example: "/train-to-be-a-teacher/teacher-training-personal-statement": "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
 Press enter to create an indention - 
 Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
+
+## Finding links on the site
+You can find everywhere a page is linked to by:
+1. Go to [Github](https://github.com/DFE-Digital/get-into-teaching-app)
+2. There is a search bar in the top right hand side
+3. You should search a pages path here ie. /subjects/maths
+4. The system will search for whereever this link is in the code across the website
+
+
 
 
