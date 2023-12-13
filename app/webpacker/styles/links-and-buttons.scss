@@ -13,7 +13,7 @@
   }
 
   &:hover {
-    background: $cta-green-dark;
+    background: darken($bg, 5%);
     color: $fg;
   }
 
