@@ -21,10 +21,12 @@ export default class extends Controller {
       this.element.classList.remove('open');
       this.searchToggler.ariaExpanded = 'false';
       document.getElementById(this.searchInputIdValue).ariaExpanded = 'false';
+      this.searchToggler.classList.remove('background-close-icon');
     } else {
       this.element.classList.add('open');
       this.searchToggler.ariaExpanded = 'true';
       document.getElementById(this.searchInputIdValue).ariaExpanded = 'true';
+      this.searchToggler.classList.add('background-close-icon');
       this.input.focus();
     }
   }
