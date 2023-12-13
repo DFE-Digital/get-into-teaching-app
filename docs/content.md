@@ -490,7 +490,7 @@ Now you have created a page - you will need to fill in the top details:
 
 title: 	title will appear in the browser tab
 
-heading: is the h1 for the page
+heading: this is the h1 for the page - only needed if you want the h1 and the title to be different. If not, just add the title
 
 description: must start with |- and then you can write the text here
 
