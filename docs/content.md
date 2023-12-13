@@ -46,7 +46,7 @@ You will need to download and set up an account on Github and Visual Studio Code
 4. Once this is loaded, go to the top left hand corner and select the three horizontal lines - this will open a drop down
 5. Select 'Open in VS Code Desktop'
 6. This will open the file on Visual Studio Code
-7. When you run a codespace it will make up a branch name: **when you next go on to github and want to run a codespace, you should use the same branch everytime. You do not need to make a new one every time.**
+7. When you run a codespace it will make up a branch name: **when you next go on to github and want to run a codespace, you should use the same branch every time. You do not need to make a new one every time.**
 
 ### Tips
 - Most of the content sits under 'app > views > content'
@@ -525,8 +525,8 @@ keywords:
 5. Go to the url: http://127.0.0.1:3000 and insert a / on the end
 6. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
 7. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
-
 The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
+8. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it.
 
 ## Saving a change
 When you have made a change in Visual Studio Code and want to save your work.
