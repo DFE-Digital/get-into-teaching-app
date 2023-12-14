@@ -1,19 +1,5 @@
 @import "accessible-autocomplete";
 
-.background-search-icon {
-  width: fit-content;
-  margin: 0;
-  padding: 5px 8px;
-  background-image: url("../images/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: center right 8px;
-  background-size: 24px 24px;
-}
-
-.background-close-icon {
-  background-image: url("../images/icon-close.svg");
-}
-
 .extra-navigation {
   &__list {
     font-size: 14px;
@@ -93,9 +79,8 @@
     a {
       background-color: $pink;
       margin-left: 1em;
-      padding: 0.75em 3em 0.75em 0.75em;
+      padding: .75em;
       line-height: 24px;
-      color: white;
 
       &:hover {
         background-color: $pink-dark;
