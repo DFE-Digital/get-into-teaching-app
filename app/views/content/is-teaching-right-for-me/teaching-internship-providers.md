@@ -371,7 +371,7 @@ provider_groups:
         name: "Graeme Balfour"
         email: "gbalfour@loreto.ac.uk"
       - header: "Valley Learning Partnership"
-        link: "https://www.brighouse.calderdale.sch.uk/join-us/train-with-us/"
+        link: "https://www.brighouse.calderdale.sch.uk/join-us/work-for-us/"
         applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Calderdale, Kirklees"
