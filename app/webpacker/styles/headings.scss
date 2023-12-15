@@ -102,7 +102,7 @@
 }
 
 .heading--box-green {
-  @include box-heading($green, $white);
+  @include box-heading($green, $black);
 }
 
 .heading--box-grey {
@@ -114,7 +114,7 @@
 }
 
 .heading--box-purple {
-  @include box-heading($purple, $white);
+  @include box-heading($purple, $black);
 }
 
 .heading--box-pink {
@@ -158,7 +158,7 @@
 }
 
 .heading--highlight-white-on-purple {
-  @include highlight-text($purple, $white);
+  @include highlight-text($purple, $black);
 }
 
 .heading--highlight-blue {
