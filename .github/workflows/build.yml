@@ -241,7 +241,7 @@ jobs:
 
       - name: Keep Rubocop output
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: rubocop_results
           path: ${{ github.workspace }}/out/rubocop-result.json
@@ -341,14 +341,14 @@ jobs:
 
       - name:  Keep Code Coverage Report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: code_coverage
           path: ${{ github.workspace }}/coverage
 
       - name:  Keep Unit Tests Results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: unit_tests
           path: ${{ github.workspace }}/out/*
