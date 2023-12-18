@@ -57,19 +57,24 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 
 If you are interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for a single payment of £10,000 from the UK government. [Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment). 
 
-## Apply for qualified teacher status (QTS)
+## English qualified teacher status (QTS)
 
 Qualified teacher status (QTS) is the professional status teachers in England gain at the end of their teacher training. Schools use QTS as a measure of teaching skills and experience, so you will find it much easier to get a teaching job in England if you have QTS.
 
 However, if you’re a qualified teacher from outside the UK, you can [work as a teacher in England for up to 4 years without QTS](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#qts-exemption-for-teachers-from-outside-the-uk).
 
 After that, you will need QTS to teach in many schools in England, although it is not a legal requirement in some types of school (for example, [academy schools, free schools and private schools](https://www.gov.uk/types-of-school)). 
+ 
 
-It’s important to note that, even if you decide to apply for QTS, you will have to apply for your teaching job and your visa separately. 
+### Applying for QTS
 
-### How to apply for QTS
+Depending on where you qualified and the subject you teach, you may be able to use a new service to check if you meet the requirements for English QTS and apply.  
 
-If you have a teaching qualification from the following countries and regions, you can [check if you meet the requirements for QTS and apply](https://apply-for-qts-in-england.education.gov.uk/eligibility/start):
+You will not have to pay a fee or undergo further training. However, you will have to meet strict requirements. These requirements are mandatory and must be met in full exactly as set out in [‘Awarding qualified teacher status to overseas teachers’](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).  
+
+It's important to note that an award of QTS does not lead to a teaching job or visa. You will need to apply for teaching jobs and visas separately. There are small number of schools in England that sponsor visas. 
+
+If you have a teaching qualification from the following countries and regions, you can check if you meet the requirements for QTS and apply:
 
 
 * Australia
@@ -94,28 +99,29 @@ In addition, if you have a subject specialism in languages, mathematics or scien
 * Nigeria
 * Singapore
 * South Africa
-* Zimbabwe
 
-You will not have to pay a fee or undergo further training. However, to be awarded QTS you will need to meet certain criteria. [Learn more about the qualifications and experience you'll need to get QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers). 
+ Visit ['Awarding qualified teacher status](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) to check the eligibility criteria and apply for QTS in England.  
 
-<p class="call-to-action__action">
-  <a href="https://apply-for-qts-in-england.education.gov.uk/eligibility/start">Apply for QTS <span>in England</span></a>
-</p>
+### Other routes to QTS in England 
 
-
+Many teachers will not meet the requirements for QTS. If you’re not eligible, you may be able to: 
 If you’re not eligible to use the new service, you may be able to:
 
 * [complete initial teacher training in England](/non-uk-teachers/train-to-teach-in-england-as-an-international-student)
 * [apply for international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status)
 
 
-## Find a teaching job
+### Find a teaching job in England  
 
-Once you've obtained QTS, you will need to find a teaching job in England. To do this, you must apply to individual schools (not the Department for Education). 
+To find a teaching job, you must apply to indvidual schools (not the Department for Education).  
+
+You can search for a teaching job through the government’s official Teaching Vacancies service. Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas.  
+
+Set up job alerts so you don’t miss out on new roles. 
 
 ### Check the school you apply to can sponsor your visa
 
-Before you apply for a teaching job, contact the school to make sure it is a Home Office licensed visa sponsor. If the school is a sponsor, it can help you apply for your visa. Schools can also become sponsors to employ you. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
+Before you apply for a teaching job, check the school advertising the role offers visa sponsorship. If the school is a sponsor, it can help you apply for your visa. Schools can also become sponsors to employ you. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
 
 ### Your professional qualifications 
 
