@@ -104,11 +104,7 @@ In addition, if you have a subject specialism in languages, mathematics or scien
 
 ### Other routes to QTS in England 
 
-Many teachers will not meet the requirements for QTS. If you’re not eligible, you may be able to: 
-If you’re not eligible to use the new service, you may be able to:
-
-* [complete initial teacher training in England](/non-uk-teachers/train-to-teach-in-england-as-an-international-student)
-* [apply for international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status)
+Many teachers will not meet the requirements for QTS. If you’re not eligible, you may be able to [find an alternative route to QTS which better suits your circumstances](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk).
 
 
 ### Find a teaching job in England  
