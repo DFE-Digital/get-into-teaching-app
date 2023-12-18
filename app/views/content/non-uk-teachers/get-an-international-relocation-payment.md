@@ -166,7 +166,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 ### 3. Date of arrival for teachers
 
-You must move to England no more than 3 months before the start of your job.  
+You must move to the UK no more than 3 months before the start of your job.  
 
 ### Non-eligibility for teachers
 
@@ -288,7 +288,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 ### 4. Date of arrival for trainees
 
-You must move to England no more than 3 months before the start of your course.   
+You must move to the UK no more than 3 months before the start of your course.   
 
 ### Non-eligibility for trainee teachers
 
@@ -326,13 +326,13 @@ To remain eligible for the IRP, you must apply in either the first or second ter
 
 Teachers and salaried trainee teachers will not need to pay an agent or any other third party to complete their application. Any agency or person contacting you offering to apply for the IRP on your behalf is likely to be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
-### Visiting England more than 3 months before the start of your course or job
+### Visiting the UK more than 3 months before the start of your course or job
 
-Your eligibility for the international relocation payment (IRP) will not be affected if you spend short periods in England at a time more than 3 months before the start of your course or job.
+Your eligibility for the international relocation payment (IRP) will not be affected if you spend short periods in the UK at a time more than 3 months before the start of your course or job.
 
-Example 1: You attend a job interview in England under a Standard Visitor visa in May 2024. You return home, and learn you have been given the job, which starts in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to England in July 2024. You will still be eligible for the IRP.
+Example 1: You attend a job interview in the UK under a Standard Visitor visa in May 2024. You return home, and learn you have been given the job, which starts in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024. You will still be eligible for the IRP.
 
-Example 2: You have a UK Ancestry visa and use it to visit relations in England in February 2024. You return home and successfully apply for a place on a teacher training course starting in September 2024. You move to England in June 2024. You will still be eligible for the IRP.
+Example 2: You have a UK Ancestry visa and use it to visit relations in the UK in February 2024. You return home and successfully apply for a place on a teacher training course starting in September 2024. You move to the UK in June 2024. You will still be eligible for the IRP.
 
 You will also still be eligible for the IRP if you live in another part of the UK (for example, Scotland or Wales) as long as you are employed in a school in England.  
 
