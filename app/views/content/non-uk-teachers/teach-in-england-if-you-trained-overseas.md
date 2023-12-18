@@ -72,7 +72,7 @@ Depending on where you qualified and the subject you teach, you may be able to u
 
 You will not have to pay a fee or undergo further training. However, you will have to meet strict requirements. These requirements are mandatory and must be met in full exactly as set out in [‘Awarding qualified teacher status to overseas teachers’](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).  
 
-It's important to note that an award of QTS does not lead to a teaching job or visa. You will need to apply for teaching jobs and visas separately. There are small number of schools in England that sponsor visas. 
+It's important to note that an award of QTS does not lead to a teaching job or visa – you will need to apply for these separately. 
 
 If you have a teaching qualification from the following countries and regions, you can check if you meet the requirements for QTS and apply:
 
@@ -109,13 +109,13 @@ Many teachers will not meet the requirements for QTS. If you’re not eligible, 
 
 ### Find a teaching job in England  
 
-To find a teaching job, you must apply to indvidual schools (not the Department for Education).  
+To find a teaching job, you must apply to indvidual schools (not the Department for Education). If you need a Skilled Worker visa, you must find a school which can sponsor your visa.
 
 You can search for a teaching job through the government’s official [Teaching Vacancies service](https://teaching-vacancies.service.gov.uk/). Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas and set up job alerts so you don’t miss out on new roles. 
 
 ### Visa sponsorship
 
-If the school is a sponsor, it can help you apply for your visa. Schools can also become sponsors to employ you. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
+If the school is a sponsor, it can help you apply for your visa. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
 
 ### Your professional qualifications 
 
