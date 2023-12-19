@@ -332,7 +332,7 @@ Teachers and salaried trainee teachers will not need to pay an agent or any othe
 
 Your eligibility for the international relocation payment (IRP) will not be affected if you spend short periods in the UK at a time more than 3 months before the start of your course or job.
 
-Example 1: You attend a job interview in the UK under a Standard Visitor visa in May 2024. You return home, and learn you have been given the job, which starts in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024. You will still be eligible for the IRP.
+Example 1: You travel to attend a job interview in the UK under a Standard Visitor visa in May 2024. You return home, and learn you have been given the job, which starts in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024. You will still be eligible for the IRP.
 
 Example 2: You have a UK Ancestry visa and use it to visit relations in the UK in February 2024. You return home and successfully apply for a place on a teacher training course starting in September 2024. You move to the UK in June 2024. You will still be eligible for the IRP.
 
