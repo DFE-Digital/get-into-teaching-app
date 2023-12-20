@@ -194,7 +194,7 @@ To remain eligible for the IRP, you must apply in either the first or second ter
 
 You will need a teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
-You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open later in 2024.
+You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications reopen later in 2024.
 
 ## Criteria for trainee teachers (fee-paying and salaried) 
 
@@ -320,7 +320,7 @@ Applications for the [international relocation payment (IRP)](https://get-a-teac
 
 To remain eligible for the IRP, you must apply in either the first or second term of your teacher training course. Applications will reopen between May and June 2024.  
 
-If you have not yet started your salaried teacher training course, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications re-open in 2024.
+If you have not yet started your salaried teacher training course, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications reopen later in 2024.
 
 ## General information about the international relocation payment  
 
