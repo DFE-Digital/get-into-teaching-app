@@ -318,7 +318,7 @@ If you believe you meet the eligibility requirements, but have not been informed
 
 Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk) for salaried trainees are open from 2 January 2024 to 29 February 2024.
 
-To remain eligible for the IRP, you must apply in either the first or second term of your teacher training course. Applications will reopen between May and June 2024.  
+To remain eligible for the IRP, you must apply in either the first or second term of your teacher training course. Applications will reopen between May and June 2024.
 
 If you have not yet started your salaried teacher training course, you can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications reopen later in 2024.
 
