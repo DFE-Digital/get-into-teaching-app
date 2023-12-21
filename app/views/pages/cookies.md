@@ -2,7 +2,7 @@
 title: Cookies Policy
 ---
 
-Last updated: 11 December 2023
+Last updated: 2 January 2024
 
 This Cookies Policy explains what Cookies are and how we use them. You should read this policy so you can understand what type of Cookies we use, or the information we collect using Cookies and how that information is used.
 
@@ -98,6 +98,7 @@ The information gathered via these Cookies may directly or indirectly identify y
 | `SRM_B`                                                | This cookie identifies unique web browsers visiting Microsoft sites. These cookies are used for advertising, site analytics, and other operational purposes                                                                                                                              | 13 months                                                  |
 | `FPLC`                                              | Registers a unique ID that is used to generate statistical data on how the visitor uses the website                | 1 day                                                  |
 | `FPID`                                                | This cookie is used to recognise visitors                                                                                                        | 13 months                                                  |
+| `dax_listenerid`                                                | This cookie name is associated with Global Dax and is used for campaign monitoring, reporting and optimisation when running digital audio activity                                                                                                        | 540 days                                                  |
 
 ## Marketing Cookies
 
