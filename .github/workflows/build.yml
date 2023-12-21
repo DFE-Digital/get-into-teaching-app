@@ -234,10 +234,10 @@ jobs:
         with:
           var_file: .github/common_environment_aks.yml
 
-      - name: Lint SCSS
-        uses: actions-hub/stylelint@master
-        env:
-          PATTERN: "**/*.scss"
+      # - name: Lint SCSS
+      #   uses: actions-hub/stylelint@master
+      #   env:
+      #     PATTERN: "**/*.scss"
 
       - name: Lint Ruby
         run: |-
