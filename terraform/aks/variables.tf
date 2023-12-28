@@ -85,6 +85,15 @@ variable "postgres_flexible_server_sku" {
 variable "postgres_enable_high_availability" {
   default = false
 }
+variable "redis_cache_capacity" {
+  default = 1
+}
+variable "redis_cache_family" {
+  default = "C"
+}
+variable "redis_cache_sku_name" {
+  default = "Standard"
+}
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)
 

@@ -34,4 +34,7 @@ module "redis-cache" {
   azure_enable_monitoring   = var.enable_monitoring
   azure_patch_schedule      = [{ "day_of_week" : "Sunday", "start_hour_utc" : 01 }]
   server_version            = "6"
+  azure_capacity            = var.redis_cache_capacity
+  azure_family              = var.redis_cache_family
+  azure_sku_name            = var.redis_cache_sku_name
 }
