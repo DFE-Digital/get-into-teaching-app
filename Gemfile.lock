@@ -351,7 +351,7 @@ GEM
       timeout
     net-smtp (0.3.3)
       net-protocol
-    nio4r (2.5.8)
+    nio4r (2.7.0)
     nokogiri (1.14.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
@@ -374,7 +374,7 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (5.0.3)
-    puma (6.3.1)
+    puma (6.4.0)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
@@ -615,7 +615,7 @@ DEPENDENCIES
   prometheus-client
   pry-byebug
   pry-rails
-  puma (~> 6.3)
+  puma (~> 6.4)
   rack-attack
   rack-cors
   rack-host-redirect
