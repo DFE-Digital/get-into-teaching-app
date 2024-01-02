@@ -6,7 +6,7 @@ image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
 colour: "yellow"
 layout: "layouts/category"
 title_paragraph: |-
-    Choosing or changing a career can be a big decision. If you're wondering if teaching is right for you, find out what it's really like and how varied and rewarding teaching can be.
+    Choosing or changing a career can be a big decision. If you're wondering if teaching is right for you, find out what it's really like, and how varied and rewarding teaching can be.
 navigation: 5
 navigation_title: Is teaching right for me?
 navigation_path: "/is-teaching-right-for-me"
