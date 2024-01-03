@@ -1,5 +1,5 @@
 ---
-title: "What are the benefits of teaching?"
+title: "Inspire lives, transform your own"
 description: Find out your options for teacher training, including postgraduate teacher training, undergraduate teacher training, and the assessment only route to QTS.
 content:
     - content/landing/career-progression/header
