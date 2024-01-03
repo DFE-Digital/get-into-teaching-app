@@ -16,15 +16,15 @@ module Events
       end
 
       def save
-        self.channel_id = nil if channel_invalid?
+        self.channel_id = nil unless channel_valid?
 
         super
       end
 
     private
 
-      def channel_invalid?
-        channel_id.present? && !channel_id.in?(channel_ids)
+      def channel_valid?
+        channel_id.present? && channel_id.in?(channel_ids)
       end
 
       def query_channels
