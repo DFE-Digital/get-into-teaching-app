@@ -1,6 +1,6 @@
 ---
-title: "Inspire lives transform your own"
-description: Find out your options for teacher training, including postgraduate teacher training, undergraduate teacher training, and the assessment only route to QTS.
+title: "Inspire lives, transform your own"
+description: Find out how teaching offers opportunities for career progression, personal development and ways to increase your pay
 content:
     - content/landing/grow/header
     - content/landing/grow/collage
