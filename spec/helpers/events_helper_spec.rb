@@ -173,8 +173,9 @@ describe EventsHelper, type: "helper" do
 
   describe "#categorise_events" do
     let(:events) { build_list(:event_api, 2) }
+    let(:params) { {} }
 
-    subject(:categorised_events) { categorise_events(events, {}) }
+    subject(:categorised_events) { categorise_events(events, params) }
 
     it { expect(categorised_events.count).to eq(events.count) }
     it { is_expected.to all(have_attributes(title: be_a(String), description: be_a(String), path: be_a(String))) }
@@ -183,6 +184,14 @@ describe EventsHelper, type: "helper" do
       let(:events) { build_list(:event_api, 2, :online) }
 
       it { is_expected.to all(have_attributes(title: be_a(String), description: be_a(String), path: be_a(String))) }
+    end
+
+    context "when the event has a channel" do
+      let(:params) { { channel: "123" } }
+      it "includes the channel in the path" do
+        expect(categorised_events.first.path).to include("channel=123")
+      end
+
     end
   end
 
