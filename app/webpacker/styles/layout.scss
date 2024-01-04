@@ -72,6 +72,15 @@ section.container {
   flex-direction: column;
   margin: 1em 0;
 
+  > main.within-section, > .back-link {
+    margin: auto $indent-amount;
+
+    @include mq($from: tablet) {
+      margin: 0 0;
+      width: 100%;
+    }
+  }
+
   &.centered {
     justify-content: center;
   }
