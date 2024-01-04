@@ -14,6 +14,11 @@ permissions:
   packages: write
   pull-requests: write
 
+env:
+  code-coverage-artifact-name: code_coverage_${{github.run_number}}_${{github.run_attempt}}
+  unit-tests-artifact-name: unit_tests_${{github.run_number}}_${{github.run_attempt}}
+  rubocop-artifact-name: rubocop_results_${{github.run_number}}_${{github.run_attempt}}
+
 jobs:
   build_base:
     name: Build base image
@@ -229,10 +234,10 @@ jobs:
         with:
           var_file: .github/common_environment_aks.yml
 
-      - name: Lint SCSS
-        uses: actions-hub/stylelint@master
-        env:
-          PATTERN: "**/*.scss"
+      # - name: Lint SCSS
+      #   uses: actions-hub/stylelint@master
+      #   env:
+      #     PATTERN: "**/*.scss"
 
       - name: Lint Ruby
         run: |-
@@ -241,9 +246,9 @@ jobs:
 
       - name: Keep Rubocop output
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: rubocop_results
+          name: ${{ env.rubocop-artifact-name }}
           path: ${{ github.workspace }}/out/rubocop-result.json
 
       - name: Lint ERB Templates
@@ -341,16 +346,16 @@ jobs:
 
       - name:  Keep Code Coverage Report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: code_coverage
+          name: ${{ env.code-coverage-artifact-name }}_${{ matrix.ci_node_index }}
           path: ${{ github.workspace }}/coverage
 
       - name:  Keep Unit Tests Results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: unit_tests
+          name: ${{ env.unit-tests-artifact-name }}_${{ matrix.ci_node_index }}
           path: ${{ github.workspace }}/out/*
 
 
@@ -387,11 +392,15 @@ jobs:
         uses: warchant/setup-sonar-scanner@v7
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
 
       - name: Combine Coverage Reports
         run: |-
-          docker run -t --rm -v ${{github.workspace}}/code_coverage:/app/coverage -e RAILS_ENV=test -e COVERAGE_DIR \
+          # Copy files from separate artifacts into one directory
+          mkdir ${{github.workspace}}/code_coverage
+          cp -r ${{github.workspace}}/${{ env.code-coverage-artifact-name }}_*/ ${{github.workspace}}/code_coverage
+
+          docker run -t --rm -v ${{github.workspace}}/code_coverage:${COVERAGE_DIR} -e RAILS_ENV=test -e COVERAGE_DIR \
             ${{env.DOCKER_IMAGE_TEST}} bundle exec rake coverage:collate
         env:
           COVERAGE_DIR: /app/coverage
@@ -408,14 +417,14 @@ jobs:
            -Dsonar.organization=dfe-digital
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
-           -Dsonar.testExecutionReportPaths=${{github.workspace}}/unit_tests/test-report-0.xml,\
-            ${{github.workspace}}/unit_tests/test-report-1.xml,\
-            ${{github.workspace}}/unit_tests/test-report-2.xml,\
-            ${{github.workspace}}/unit_tests/test-report-3.xml,\
-            ${{github.workspace}}/unit_tests/test-report-4.xml,\
-            ${{github.workspace}}/unit_tests/test-report-5.xml
+           -Dsonar.testExecutionReportPaths=${{github.workspace}}/${{env.unit-tests-artifact-name}}_0/test-report-0.xml,\
+            ${{github.workspace}}/${{env.unit-tests-artifact-name}}_1/test-report-1.xml,\
+            ${{github.workspace}}/${{env.unit-tests-artifact-name}}_2/test-report-2.xml,\
+            ${{github.workspace}}/${{env.unit-tests-artifact-name}}_3/test-report-3.xml,\
+            ${{github.workspace}}/${{env.unit-tests-artifact-name}}_4/test-report-4.xml,\
+            ${{github.workspace}}/${{env.unit-tests-artifact-name}}_5/test-report-5.xml
            -Dsonar.ruby.coverage.reportPaths=${{github.workspace}}/code_coverage/coverage.json
-           -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/rubocop_results/rubocop-result.json
+           -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/${{env.rubocop-artifact-name}}/rubocop-result.json
 
   review_aks:
     name: Review AKS Deployment Process

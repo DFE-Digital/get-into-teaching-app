@@ -30,7 +30,7 @@ The main differences between courses are:
 
 * what you need to get onto the course
 * the qualifications awarded by the course
-* if the course is fee-paying or salaried 
+* if the course is fee-funded or salaried 
 * the type of course provider 
 * if the course is full-time or part-time 
 
@@ -38,26 +38,19 @@ The main differences between courses are:
 
 Some training courses have specific eligibility requirements. 
 
-It's important to check the requirements for each course you apply to, so you do not waste time on an application you’re unlikely to be successful with. 
+It's important to check the requirements for each course you apply to on the training provider's course page. This is so you do not waste time on an application you’re unlikely to be successful with. 
 
 ### Your qualifications 
 
-All postgraduate teacher training courses require you to have: 
-
-* a degree in any subject 
-* GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary) 
-
-Most course providers will accept a degree grade of 2:2 or higher, but some may require you to have a 2:1. 
-
-Check each course provider’s requirements on their course page. You can also [find out about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach).
+You need to have a degree in any subject to be able to train to teach. But the degree grade that course providers will accept may vary. For example, most providers will accept a minimum degree grade of 2:2, but some may require you to have a 2:1. So you’ll need to check each course provider’s requirements on their course page. [Find out about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach).
 
 <div class="inset">
 
-<p> If you have qualifications from outside the UK, you’ll need to show that they’re the same standard as UK qualifications. You can get a statement to show this from the <a href="https://enic.org.uk/Qualifications/SOC/Default.aspx">UK European Network of Information Centres (UK ENIC)</a>.</p>
+<p> If you have qualifications from outside the UK, you’ll need to show that they’re the same standard as UK qualifications. You can <a href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student">get help comparing English and international qualifications</a>.</p>
 
 </div> 
 
-### Your right to work in the UK 
+### Your right to work or study in the UK 
 
 You’ll need the right to work or study in the UK to do your teacher training in England. 
 
@@ -67,17 +60,17 @@ If your application is successful, the training provider may be able to help you
 
 ## The qualifications awarded by the course
 
-Most schools in England need you to have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach. 
+Most schools in England need you to have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach. Without QTS you may not be fully qualified to teach in your chosen school and will not receive the same pay and support when you start teaching.
 
 Most teacher training courses will award QTS, but some will just award a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce), and some will award both. 
 
-Without QTS, you will not eligible for a scholarship or bursary to help you train. You also may not be fully qualified to teach in your chosen school and will not receive the same pay and support when you start teaching.
+If your teacher training course leads to QTS, you may be eligible for a scholarship or bursary to help you train.
 
 ## If the course is fee-funded or salaried
 
 ### Fee-funded teacher training
 
-Most teacher training courses are fee-funded – this means you have to pay tuition fees and will not earn a salary while you train. 
+Most teacher training courses are fee-funded. This means you have to pay tuition fees and will not earn a salary while you train. 
 
 There are ways to fund your training, for example, through tuition fee and maintenance loans. You may also be eligible for a bursary or scholarship.
 
@@ -85,7 +78,9 @@ You can [find out about the different ways to fund your training](/funding-and-s
 
 <div class="inset">
 
-<p> If you’re a non-UK citizen without indefinite leave to remain in the UK, you will not usually be eligible for a bursary or scholarship, unless you train to teach languages or physics.</p>
+<p> If you’re a non-UK citizen with settled status or indefinite leave to remain in the UK,  you may be eligible for a tuition fee loan, maintenance loan, bursary or scholarship. </p> 
+
+<p> Other non-UK citizens will not be eligible for student finance, but may be eligible for a bursary or scholarship to train to teach languages and physics. <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">Learn more about fees and financial support for non-UK trainee teachers</a>.</p>
 
 </div>
 
@@ -93,13 +88,9 @@ You can [find out about the different ways to fund your training](/funding-and-s
 
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
 
-Places on salaried courses are limited and very competitive. You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
+Places on salaried courses are limited and very competitive. If you’re a non-UK citizen, you're very unlikely to get a place on a salaried course. 
 
-<div class="inset">
-
-<p>If you’re a non-UK citizen, the chance of getting a place on a salaried course is very limited.</p>
-
-</div>
+You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
 
 ## The type of course provider 
 
@@ -109,29 +100,29 @@ Your teacher training course might be provided by:
 * a school or group of schools (sometimes referred to as school-led training, or an apprenticeship) 
 * [Teach First](https://www.teachfirst.org.uk/) (a charitable organisation)  
 
-Once you’ve found a course that you’re interested in, you can talk to the training provider before you apply. For example, you might want to find out: 
+Once you’ve found a course you’re interested in, you can talk to the training provider before you apply. For example, you might want to find out: 
 
 * where your placements and theoretical learning might happen
 * how many schools you’ll be doing placements in and how long each placement will last 
 * the start and finish dates of the course 
 
-It’s a good idea to apply to a range of providers to increase your chances of being successful on a course. 
+It’s a good idea to apply to a range of providers to increase your chances of being successful on a course. For example, if you’re applying for 4 courses, you might want to apply for 2 courses provided by universities, and 2 provided by schools.
 
-For example, if you’re applying for 4 courses, you might want to apply for 2 courses provided by universities, and 2 provided by schools.
+You can apply to a maximum of 4 courses at one time. 
 
 <div class="inset">
 <p>If you’re a non-UK citizen, you should confirm with the training provider:</p>
   <ul>
      <li>if they offer visa sponsorship</li>
-     <li>the timing for non-UK applications</li>
+     <li>the timing for non-UK applications (they may close earlier)</li>
  </ul>
 
 </div>
 
 ## Full-time or part-time courses 
 
-Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
-
 There are usually more full-time courses available than part-time.
 
-You can [find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
+Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
+
+[Find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).

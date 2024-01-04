@@ -7,7 +7,7 @@ ruby File.read(".ruby-version").chomp
 gem "rails", "~> 7.0.2.3"
 
 # Use Puma as the app server
-gem "puma", "~> 6.3"
+gem "puma", "~> 6.4"
 
 gem "pg"
 
@@ -75,7 +75,7 @@ gem "skylight", "~> 5.3.4"
 
 gem "text"
 
-gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
+gem "get_into_teaching_api_client_faraday", ">= 3.1.3", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 

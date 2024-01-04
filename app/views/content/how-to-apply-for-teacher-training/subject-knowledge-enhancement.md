@@ -20,8 +20,8 @@ youtube_video:
     id: mWuHMtyFrFU
     title: Subject knowledge enhancement explained
 navigation: 30.25
-navigation_title: Subject knowledge enhancement
-navigation_description: Find out how to improve your subject knowledge with a subject knowledge enhancement (SKE) course.
+navigation_title: Subject knowledge enhancement (SKE)
+navigation_description: Find out how to improve your subject knowledge with a subject knowledge enhancement course.
 keywords:
   - Subject knowledge
   - Subject knowledge enhancement
@@ -69,6 +69,8 @@ Learn more about how a subject knowledge enhancement course can help prepare you
 
 $ske-course-video$
 
+ [Read the transcript for the 'Subject knowledge enhancement explained' video](/how-to-apply-for-teacher-training/ske-explained-transcript).
+ 
 ## How SKE courses work
 
 They're usually online, but some courses can be classroom based and some can be a mixture of both. 

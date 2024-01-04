@@ -155,6 +155,10 @@
     flex: 0 1 50%;
     margin-inline: 1em;
 
+    h2 {
+      margin-top: 0;
+    }
+
     a {
       @extend .link--black;
     }
