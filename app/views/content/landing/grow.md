@@ -1,5 +1,5 @@
 ---
-title: "Inspire lives, transform your own"
+title: "Grow as only a teacher can"
 description: Find out how teaching offers opportunities for career progression, personal development and ways to increase your pay
 content:
     - content/landing/grow/header
