@@ -5,6 +5,6 @@ class BackComponent < ViewComponent::Base
     super
     @path = path
     @text = text
-    @css_class = options[:class] || 'govuk-back-link'
+    @css_class = options[:class] || "govuk-back-link"
   end
 end
