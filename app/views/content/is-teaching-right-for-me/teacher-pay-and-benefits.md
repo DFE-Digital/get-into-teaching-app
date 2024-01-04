@@ -87,7 +87,8 @@ Or it might be an extra responsibility attached to your job role, for example, b
 
 Depending on your responsibilities, you could earn up to an extra £15,690. Your school will determine how much you receive. 
 
-## <a name="career-progression">Career progression </a>
+<a name="career-progression">
+## Career progression
 
 ### Leading practitioner salary
 
