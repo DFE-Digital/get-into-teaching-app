@@ -1,10 +1,11 @@
 class BackComponent < ViewComponent::Base
-  attr_reader :path, :text, :css_class
+  attr_reader :path, :text, :options
 
   def initialize(path: :back, text: "Back", **options)
     super
     @path = path
     @text = text
-    @css_class = options[:class] || "govuk-back-link"
+    @options = options
+    @options[:class] = "govuk-back-link #{options[:class]}".strip
   end
 end
