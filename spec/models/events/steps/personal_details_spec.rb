@@ -37,27 +37,28 @@ describe Events::Steps::PersonalDetails do
   end
 
   describe "#channel_ids" do
-    it "returns an array of channel ids" do
-      query_channels = [
-        double(id: 1),
-        double(id: 2),
-        double(id: 3),
-      ]
-      allow(instance).to receive(:query_channels).and_return(query_channels)
+    it "fetches candidate event subscription channels from the API" do
+      picklist_items_api = instance_double(GetIntoTeachingApiClient::PickListItemsApi)
 
-      expect(instance.channel_ids).to eq([1, 2, 3])
+      allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(picklist_items_api)
+
+      expect(picklist_items_api).to receive(:get_candidate_event_subscription_channels)
+
+      instance.send(:query_channels)
+    end
+
+    it "returns an array of channel ids" do
+      allow(instance).to receive(:query_channels).and_return(
+        [OpenStruct.new({ id: 1, value: "one" }), OpenStruct.new({ id: 2, value: "two" })],
+      )
+
+      expect(instance.channel_ids).to eq([1, 2])
     end
   end
 
   describe "#save" do
     shared_context "with query channels" do
-      let(:query_channels) do
-        [
-          double(id: 1),
-          double(id: 2),
-          double(id: 3),
-        ]
-      end
+      let(:query_channels) { [OpenStruct.new({ id: 1, value: "one" }), OpenStruct.new({ id: 2, value: "two" })] }
       before { allow(instance).to receive(:query_channels).and_return(query_channels) }
     end
 

@@ -188,10 +188,10 @@ describe EventsHelper, type: "helper" do
 
     context "when the event has a channel" do
       let(:params) { { channel: "123" } }
+
       it "includes the channel in the path" do
         expect(categorised_events.first.path).to include("channel=123")
       end
-
     end
   end
 
