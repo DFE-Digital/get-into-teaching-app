@@ -7,8 +7,8 @@ description: |-
 date: "2021-06-24"
 backlink: "../../"
 navigation: 5.10
-navigation_title: How much do teachers get paid?
-navigation_description: Find out the starting salary for a qualified teacher and how your pay could increase during your career.
+navigation_title: How can I move up the career ladder in teaching?
+navigation_description: Top tips from teacher training advisors on how you can progress a career in teaching.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
