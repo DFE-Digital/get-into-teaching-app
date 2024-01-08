@@ -1,6 +1,6 @@
 ---
-title: "Teacher pay and benefits"
-heading: "Teacher pay and benefits"
+title: "Tips on how to move up the career ladder in teaching"
+heading: "Tips on how to move up the career ladder in teaching"
 subcategory: Pay and benefits
 description: |-
   All qualified teachers will have a starting salary of at least £30,000 (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
