@@ -70,9 +70,9 @@ After that, you will need QTS to teach in many schools in England, although it i
 
 Depending on where you qualified and the subject you teach, you may be able to use a new service to check if you meet the requirements for English QTS and apply.  
 
-You will not have to pay a fee or undergo further training. However, you will have to meet strict requirements. These requirements are mandatory and must be met in full exactly as set out in [‘Awarding qualified teacher status to overseas teachers’](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).  
+You will not have to pay a fee or undergo further training when you apply for QTS. However, you will have to meet strict requirements. These requirements are mandatory and must be met in full exactly as set out in [‘Awarding qualified teacher status to overseas teachers’](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).  
 
-It's important to note that an award of QTS does not lead to a teaching job or visa – you will need to apply for these separately. 
+It's important to note that getting QTS does not lead to a teaching job or visa – you'll need to apply for these separately. 
 
 If you have a teaching qualification from the following countries and regions, you can check if you meet the requirements for QTS and apply:
 
@@ -91,7 +91,7 @@ If you have a teaching qualification from the following countries and regions, y
 * Ukraine
 * the USA
 
-In addition, if you have a subject specialism in languages, mathematics or science and a teaching qualification to teach to teach 11 to 16 year olds from the following countries, you will be able to use the service to check if you meet the requirements for QTS and apply: 
+In addition, if you have a subject specialism in languages, mathematics or science and a teaching qualification to teach 11 to 16 year olds from the following countries, you'll be able to use the service to check if you meet the requirements for QTS and apply: 
 
 * Ghana
 * India
@@ -109,13 +109,13 @@ Many teachers will not meet the requirements for QTS. If you’re not eligible, 
 
 ### Find a teaching job in England  
 
-To find a teaching job, you must apply to indvidual schools (not the Department for Education). If you need a Skilled Worker visa, you must find a school which can sponsor your visa.
+To find a teaching job, you must apply to individual schools (not the Department for Education). If you need a Skilled Worker visa, you must find a school that can sponsor your visa.
 
-You can search for a teaching job through the government’s official [Teaching Vacancies service](https://teaching-vacancies.service.gov.uk/). Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas and set up job alerts so you don’t miss out on new roles. 
+You can search for a teaching job through the government’s official [Teaching Vacancies service](https://teaching-vacancies.service.gov.uk/). Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas. Set up job alerts so you don’t miss out on new roles. 
 
-### Visa sponsorship
-
-If the school is a sponsor, it can help you apply for your visa. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
+### Apply for your visa
+ 
+Submit your application to a school that can sponsor visas, and if you are offered the job, you’ll then be able to apply for your visa. 
 
 ### Your professional qualifications 
 
