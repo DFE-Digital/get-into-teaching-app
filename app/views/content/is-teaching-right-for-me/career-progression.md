@@ -64,3 +64,15 @@ Teacher training advisers Chris Farr, Fran Lee, Sian Mills and Elaine Boyd have 
 ## Can you change the subject you teach?
 
 <strong>Fran:</strong> I've had people wanting to know if they train in geography can they move out of that subject area or become head of year. Once you get qualified teacher status (QTS) you can essentially teach anything as long as your headteacher supports you and you have the expertise to show you can do this. 
+
+## What are teacher pastoral care roles?
+
+<strong>Fran:</strong>  Pastoral care in schools is looking at nurturing pathways. It’s about recognising all children have a right to feel safe and happy in school and guiding children on a more personal level. A [special educational needs co-ordinator (SENCO)](/teach-disabled-pupils-and-pupils-with-special-educational-needs) is part of pastoral care. Or you might be a form tutor and look after your pupils’ emotional wellbeing. 
+
+That pastoral level is the link between form, tutor, classroom teacher, senior leadership, home parents, carers, extended family and wider community. 
+
+## How long does it take to progress between teaching roles?
+
+<strong>Fran:</strong> Once your training has finished, it's not about other people, it's about how you direct your career. You have to carve out your own journey and make it your own. Lots of people expect to be told what they’ll do in teaching, when they’ll do it and how to progress. 
+
+<strong>Chris:</strong> Promotion in teaching won't come and find you. You go and look for it. Traditionally it used to be based on length of service. But people I've known who have become secondary school deputy heads and head teachers in recent years have gone into teaching with a plan. They sought things proactively and put themselves forward to bring themselves to the attention of leaders and build their CV within the schools. 
