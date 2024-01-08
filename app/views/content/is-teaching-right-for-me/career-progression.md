@@ -96,3 +96,11 @@ To get a TLR you've got to have a proven track record. It’s not just a case of
 <strong>Fran:</strong> Realistically you’d want to do at least a year or two in the same setting before then thinking about applying for a role with more responsibility. But you have to prove your worth to get a teaching and learning responsibility (TLR) payment. 
 
 The head at my school was looking to create an alternative for key stage 3 (KS3) pupils who weren’t able to access the curriculum properly. As part of a shift in my lead practitioner responsibility for English I was given a permanent TLR to research and implement this. I had to come up with case studies and a proposal. It's about showing you’re prepared to invest in your personal development and know what’s going on out there. You have to keep up with legislation and news and topical priorities. 
+
+<strong>Sian:</strong> It may be the case that your school hasn’t got the budget for a TLR. So if you really want to take on more responsibility you may need to think about moving school.
+
+## How can teachers increase their salary? 
+
+<strong>Fran:</strong> If you have qualified teacher status (QTS) and work in a maintained school, a school funded by the local authority, your salary is reviewed every year. Most teachers on the main pay scale get an annual pay rise but it may depend on your school’s management performance data to prove you’re completing whole school and individual targets. So you could potentially go from a starting salary of £30,000 to over £41,000, or more if you’re in London, in 5 years.
+
+As well as helping you understand the demands of a more senior role, a teaching and learning responsibility (TLR) could make a big difference to your pay. If you’re in London it could be around an extra £15,000.
