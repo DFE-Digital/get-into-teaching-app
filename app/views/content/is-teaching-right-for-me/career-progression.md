@@ -90,3 +90,9 @@ To get a TLR you've got to have a proven track record. It’s not just a case of
 <strong>Fran:</strong> If you put yourself forward for opportunities, or you're brave enough to say I don't mind somebody filming my lesson and giving me feedback, it can be a way to make good progress.
 
 <strong>Sian:</strong> Voice to the senior leadership team that career progression is something you're interested in when you have your performance management review. If you don't say anything they'll assume you're happy staying as you are. I had a supportive head that wanted me to do a [national professional qualification (NPQ)](https://www.gov.uk/guidance/national-professional-qualification-npq-courses).
+
+## How can you take on more responsibilities?
+
+<strong>Fran:</strong> Realistically you’d want to do at least a year or two in the same setting before then thinking about applying for a role with more responsibility. But you have to prove your worth to get a teaching and learning responsibility (TLR) payment. 
+
+The head at my school was looking to create an alternative for key stage 3 (KS3) pupils who weren’t able to access the curriculum properly. As part of a shift in my lead practitioner responsibility for English I was given a permanent TLR to research and implement this. I had to come up with case studies and a proposal. It's about showing you’re prepared to invest in your personal development and know what’s going on out there. You have to keep up with legislation and news and topical priorities. 
