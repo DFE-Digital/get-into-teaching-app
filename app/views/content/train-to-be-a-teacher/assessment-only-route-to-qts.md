@@ -341,7 +341,7 @@ provider_groups:
       name: Mike Lambert / Diane Carr
       email: AOQTS@sussex.ac.uk
     - header: University of Winchester
-      link: https://www.winchester.ac.uk/pages/home.aspx
+      link: https://www.winchester.ac.uk/study/Short-courses/Courses/Assessment-Only-Route-to-Qualified-Teacher-Status/
       name: Keith Smith
       email: ao@winchester.ac.uk
     - header: West Berkshire Training Partnership
