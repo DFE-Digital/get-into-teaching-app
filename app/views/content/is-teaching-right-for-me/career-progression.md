@@ -76,3 +76,11 @@ That pastoral level is the link between form, tutor, classroom teacher, senior l
 <strong>Fran:</strong> Once your training has finished, it's not about other people, it's about how you direct your career. You have to carve out your own journey and make it your own. Lots of people expect to be told what they’ll do in teaching, when they’ll do it and how to progress. 
 
 <strong>Chris:</strong> Promotion in teaching won't come and find you. You go and look for it. Traditionally it used to be based on length of service. But people I've known who have become secondary school deputy heads and head teachers in recent years have gone into teaching with a plan. They sought things proactively and put themselves forward to bring themselves to the attention of leaders and build their CV within the schools. 
+
+## How do you know when you’re ready to apply for a teaching promotion? 
+
+<strong>Fran:</strong> When I was working as an English teacher I got offered a fixed-term teaching and learning responsibility (TLR) payment to work as an assistant head of year. It was a good way for me to test the water to see if I could deal with the demands of a more senior role. Fixed-term TLRs are usually for one-off projects. There are also TLRs that are for permanent roles. You apply for these as you would any job and get paid the TLR while you're doing it. 
+
+To get a TLR you've got to have a proven track record. It’s not just a case of asking for one and you’ll get it. You need to show you’ve got good relationships with your classes. Your teaching has to be consistently solid and you’ve got to get decent results. And that does take time. 
+
+<strong>Elaine:</strong> I was ready for leadership after 6 years of teaching. I tried to take the next step from head of faculty to assistant head but I couldn't get interviewed. So I applied for deputy headships, which was the role above, and was offered every job. Because I'd done a master's degree I was leapfrogged. So you can't put years on it. I think you know when you know.
