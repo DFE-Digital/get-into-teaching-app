@@ -19,12 +19,10 @@ export default class extends Controller {
 
     if (this.element.classList.contains('open')) {
       this.element.classList.remove('open');
-      this.searchToggler.ariaExpanded = 'false';
-      document.getElementById(this.searchInputIdValue).ariaExpanded = 'false';
+      this.searchTogglerExpanded(false);
     } else {
       this.element.classList.add('open');
-      this.searchToggler.ariaExpanded = 'true';
-      document.getElementById(this.searchInputIdValue).ariaExpanded = 'true';
+      this.searchTogglerExpanded(true);
       this.input.focus();
     }
   }
@@ -67,6 +65,18 @@ export default class extends Controller {
     // auto-complete input.
     if (this.hasLabelTarget) {
       this.input.ariaLabel = this.labelTarget.textContent;
+    }
+  }
+
+  searchTogglerExpanded(expanded) {
+    var toggle = document.getElementById('search-toggle');
+    var searchInput = document.getElementById(this.searchInputIdValue);
+
+    if (toggle) {
+      toggle.ariaExpanded = expanded;
+    }
+    if (searchInput) {
+      searchInput.ariaExpanded = expanded;
     }
   }
 
@@ -166,7 +176,5 @@ export default class extends Controller {
     return this.searchbarTarget.querySelector('input');
   }
 
-  get searchToggler() {
-    return document.getElementById('search-toggle');
-  }
+
 }
