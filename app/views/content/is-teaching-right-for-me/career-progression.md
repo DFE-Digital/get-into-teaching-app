@@ -3,20 +3,19 @@ title: "Tips on how to move up the career ladder in teaching"
 heading: "Tips on how to move up the career ladder in teaching"
 subcategory: Pay and benefits
 description: |-
-  All qualified teachers will have a starting salary of at least £30,000 (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
+  Teacher training advisors talk about teacher development and how you can progress a career in teaching.
 date: "2021-06-24"
 backlink: "../../"
-navigation: 5.10
+navigation: 5.15
 navigation_title: How can I move up the career ladder in teaching?
 navigation_description: Top tips from teacher training advisors on how you can progress a career in teaching.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
-    Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
+    Teacher pay and benefits : "/teacher-pay-and-benefits" 
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
-    Why I became a teacher : "/blog/the-head-of-science-inspiring-students-in-blackpool"
-    Abigail's career progression story : "/blog/abigails-career-progression-story"
+
 keywords:
   - Salary
   - Salaries
