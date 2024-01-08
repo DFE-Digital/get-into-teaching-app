@@ -84,3 +84,9 @@ That pastoral level is the link between form, tutor, classroom teacher, senior l
 To get a TLR you've got to have a proven track record. It’s not just a case of asking for one and you’ll get it. You need to show you’ve got good relationships with your classes. Your teaching has to be consistently solid and you’ve got to get decent results. And that does take time. 
 
 <strong>Elaine:</strong> I was ready for leadership after 6 years of teaching. I tried to take the next step from head of faculty to assistant head but I couldn't get interviewed. So I applied for deputy headships, which was the role above, and was offered every job. Because I'd done a master's degree I was leapfrogged. So you can't put years on it. I think you know when you know.
+
+## What are good ways to let people know you’re ready to progress?
+
+<strong>Fran:</strong> If you put yourself forward for opportunities, or you're brave enough to say I don't mind somebody filming my lesson and giving me feedback, it can be a way to make good progress.
+
+<strong>Sian:</strong> Voice to the senior leadership team that career progression is something you're interested in when you have your performance management review. If you don't say anything they'll assume you're happy staying as you are. I had a supportive head that wanted me to do a [national professional qualification (NPQ).](https://www.gov.uk/guidance/national-professional-qualification-npq-courses)
