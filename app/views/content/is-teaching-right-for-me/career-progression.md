@@ -51,20 +51,16 @@ keywords:
   - Teacher training courses
 ---
 
-If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on.
+Teacher training advisers Chris Farr, Fran Lee, Sian Mills and Elaine Boyd have years of teaching experience. They talk about teacher development and how you can progress a career in teaching.
 
-The pay ranges below apply to maintained schools (schools funded by local authorities).
+## Is there a set path to getting promoted as a teacher?
 
-Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges. 
+<strong>Fran:</strong> Your career progression can vary vastly depending on where you’re located, your employer and your training experience. For example, you might decide in your training period to set your targets in a particular area such as special educational needs and disabilities (SEND), or you might work in a sixth-form environment. And that can sway where your future takes you.  
 
-Figures apply from 1 September 2023.
+<strong>Sian:</strong> When I worked at a maintained primary state school it was quite traditional in terms of class teacher, head of year, deputy/assistant then head. When I moved to a headship in an academy trust there was no deputy head. So you might not always go into a school that has a traditional structure. There’s not always a neat pathway.
 
-## Primary and secondary teacher salary
+<strong>Chris:</strong> People may not realise there is much progression in teaching. They think they go into the world of the classroom and that’s it. Lots of teachers have added responsibilities they enjoy doing and find fulfilling. 
 
-If you have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you’ll get a minimum starting salary of £30,000 (or more in London) as a primary or secondary school teacher in England. 
+## Can you change the subject you teach?
 
-Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.    
-
-A typical teacher could earn at least £41,333 (or more in London) within 5 years.
-
-### Qualified teacher salary
+<strong>Fran:</strong> I've had people wanting to know if they train in geography can they move out of that subject area or become head of year. Once you get qualified teacher status (QTS) you can essentially teach anything as long as your headteacher supports you and you have the expertise to show you can do this. 
