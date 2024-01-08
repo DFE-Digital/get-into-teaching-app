@@ -14,7 +14,7 @@ $icon-size: 3rem;
     background: $purple url("../images/icon-git-white.svg") no-repeat left center;
     background-size: 1.2em;
     background-position: .4em;
-    color: $white;
+    color: $black;
     font-weight: bold;
     padding: .4em 1em .4em 2.5em;
   }
@@ -597,7 +597,7 @@ $icon-size: 3rem;
 
   &--message {
     background: $purple;
-    color: $white;
+    color: $black;
     flex-basis: 60%;
 
     p {
