@@ -48,7 +48,7 @@ This could be through having a degree in the subject, or having:
 
 Talk to your training provider to find out what you can train to teach.
 
-You could also receive a scholarship or bursary of up to £30,000 to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
+You could also receive a tax-free bursary or scholarship of up to £30,000 to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
 You may also have the opportunity to teach other subjects in your career and can train to teach more than one subject.
 
