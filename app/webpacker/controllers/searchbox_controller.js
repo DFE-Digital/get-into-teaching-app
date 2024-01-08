@@ -69,8 +69,8 @@ export default class extends Controller {
   }
 
   searchTogglerExpanded(expanded) {
-    var toggle = document.getElementById('search-toggle');
-    var searchInput = document.getElementById(this.searchInputIdValue);
+    const toggle = document.getElementById('search-toggle');
+    const searchInput = document.getElementById(this.searchInputIdValue);
 
     if (toggle) {
       toggle.ariaExpanded = expanded;
@@ -175,6 +175,4 @@ export default class extends Controller {
   get input() {
     return this.searchbarTarget.querySelector('input');
   }
-
-
 }
