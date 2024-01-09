@@ -4,7 +4,7 @@ heading: "Tips on how to move up the career ladder in teaching"
 subcategory: Pay and benefits
 description: |-
   Teacher training advisors talk about teacher development and how you can progress a career in teaching.
-date: "2021-06-24"
+date: "2024-01-09"
 backlink: "../../"
 navigation: 5.15
 navigation_title: How can I move up the career ladder in teaching?
