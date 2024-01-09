@@ -11,12 +11,12 @@
         <% end %>
       </li>
     <%= tag.li(class: %w[extra-navigation__link extra-navigation__search]) do %>
-      <%= tag.label("Search", for: search_input_id, class: %w[searchbox__label visually-hidden], data: { "searchbox-target": "label" }) %>
-      <%= link_to(search_path, aria: { label: "Search" }, data: { action: "searchbox#toggle" }) do %>
+      <%= tag.label("Search", for: search_input_id, class: %w[searchbox__label visually-hidden hidden], data: { "searchbox-target": "label" }) %>
+      <%= link_to(search_path, id: "search-toggle", role: "button", aria: { label: "Search", expanded: "false", controls: "search-bar" }, data: { action: "searchbox#toggle" }) do %>
         <span class="icon icon-search"></span>
         <span class="icon icon-close"></span>
       <% end %>
     <% end %>
   </ul>
-  <div class="searchbar" data-searchbox-target="searchbar" role="search"></div>
+  <div id="search-bar" class="searchbar" data-searchbox-target="searchbar" role="search"></div>
 <% end %>
