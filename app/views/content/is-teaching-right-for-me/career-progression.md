@@ -105,7 +105,7 @@ The headteacher at my school was looking to create an alternative for key stage 
 
 As well as helping you understand the demands of a more senior role, a teaching and learning responsibility (TLR) payment could make a big difference to your pay. If you’re in London it could be around an extra £15,000.
 
-## What steps do you need to consider if you want to be a head?
+## What steps do you need to consider if you want to be a headteacher?
 
 <strong>Chris:</strong> If you want to go into senior leadership in a secondary school you’ll need to build both a curriculum role and a pastoral role, for example, head of geography and head of year into your early career.
 
