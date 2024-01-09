@@ -2,7 +2,7 @@ $slightly-darker-grey: darken($grey, 10%);
 $icon-size: 3rem;
 
 @mixin get-into-teaching-event-box {
-  border: 2px solid $purple;
+  border: 3px solid $yellow;
   padding: 3rem 1rem 1rem;
 
   &:after {
@@ -11,7 +11,7 @@ $icon-size: 3rem;
     content: "Get Into Teaching event";
     right: 5%;
     top: -1em;
-    background: $purple url("../images/icon-git-white.svg") no-repeat left center;
+    background: $yellow url("../images/icon-git-white.svg") no-repeat left center;
     background-size: 1.2em;
     background-position: .4em;
     color: $black;
@@ -152,7 +152,7 @@ $icon-size: 3rem;
     margin: 0;
     position: relative;
     background: white;
-    border: 2px solid $slightly-darker-grey;
+    border: 3px solid $slightly-darker-grey;
     padding: 0;
 
     &__info {
@@ -596,7 +596,7 @@ $icon-size: 3rem;
   }
 
   &--message {
-    background: $purple;
+    background: $yellow;
     color: $black;
     flex-basis: 60%;
 
