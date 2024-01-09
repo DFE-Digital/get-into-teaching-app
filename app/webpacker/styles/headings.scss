@@ -110,7 +110,7 @@
 }
 
 .heading--box-blue {
-  @include box-heading($blue, $white);
+  @include box-heading($blue, $black);
 }
 
 .heading--box-purple {
