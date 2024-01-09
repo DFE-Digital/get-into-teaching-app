@@ -91,7 +91,7 @@ If you have a teaching qualification from the following countries and regions, y
 * Ukraine
 * the USA
 
-In addition, if you have a subject specialism in languages, mathematics or science and a teaching qualification to teach 11 to 16 year olds from the following countries, you'll be able to use the service to check if you meet the requirements for QTS and apply: 
+In addition, if you have a subject specialism in languages, maths or science and a teaching qualification to teach 11 to 16 year olds from the following countries, you'll be able to use the service to check if you meet the requirements for QTS and apply: 
 
 * Ghana
 * India
