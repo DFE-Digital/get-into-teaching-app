@@ -68,13 +68,13 @@ After that, you will need QTS to teach in many schools in England, although it i
 
 ### Applying for QTS
 
-Depending on where you qualified and the subject you teach, you may be able to use a new service to check if you meet the requirements for English QTS and apply.  
+Depending on where you qualified, the subject you teach and your qualifications, you may be able to use a new professional recognition service to apply for English qualified teacher status.  
 
 You will not have to pay a fee or undergo further training when you apply for QTS. However, you will have to meet strict requirements. These requirements are mandatory and must be met in full exactly as set out in [‘Awarding qualified teacher status to overseas teachers’](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).  
 
 It's important to note that getting QTS does not lead to a teaching job or visa – you'll need to apply for these separately. 
 
-If you have a teaching qualification from the following countries and regions, you can check if you meet the requirements for QTS and apply:
+If you have a teaching qualification from the following countries and regions, you can use the new professional recognition service to apply for QTS, if you meet the requirements:
 
 
 * Australia
@@ -91,7 +91,7 @@ If you have a teaching qualification from the following countries and regions, y
 * Ukraine
 * the USA
 
-In addition, if you have a subject specialism in languages, maths or science and a teaching qualification to teach 11 to 16 year olds from the following countries, you'll be able to use the service to check if you meet the requirements for QTS and apply: 
+In addition, if you have a subject specialism in languages, maths or science and a teaching qualification to teach 11 to 16 year olds from the following countries, you can use the new professional recognition service to apply for QTS, if you meet the requirements:
 
 * Ghana
 * India
