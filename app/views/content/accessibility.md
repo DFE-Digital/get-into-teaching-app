@@ -65,8 +65,6 @@ This website is partially compliant with the WCAG (Web Content Accessibility Gui
 
 * on our form pages, our ‘Skip to main content’ link does not move the main focus to the correct place. This fails to meet [WCAG 2.1 2.4.1 Bypass Blocks (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
 
-* our search bar does not programmatically indicate whether it is collapsed or expanded, which affects screen reader users. This fails to meet [WCAG 2.1 1.3.1 Info and Relationships (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html) and [WCAG 2.1 4.1.2 Name, Role, Value (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
-
 * on the bursaries and scholarships page, the widget in the ‘What funding could I get for teacher training’ section is difficult for screen reader and keyboard users to navigate due to the way the page refreshes when the selection changes. In addition, the page title is re-announced for screen reader users. This fails to meet [WCAG 2.1 3.2.2 On Input (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/on-input.html)
 
 * the hover state of our 'Set cookie preferences' button on our cookie modal, the ‘How to become a teacher’ block on the home page, the 'Get free one-to-one support' block on the how to become a teacher page and the 'Find out more about getting into teaching' block on the how to become a teacher landing page all have insufficient colour contrast ratios for non-text elements. This fails to meet [WCAG 2.1 1.4.11 Non-text Contrast (Level AA)](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)
