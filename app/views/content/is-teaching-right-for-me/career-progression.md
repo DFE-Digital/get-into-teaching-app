@@ -1,6 +1,6 @@
 ---
-title: "Tips on how to move up the career ladder in teaching"
-heading: "Tips on how to move up the career ladder in teaching"
+title: "How to move up the career ladder in teaching"
+heading: "How to move up the career ladder in teaching"
 subcategory: Pay and benefits
 description: |-
   Teacher training advisors talk about teacher development and how you can progress a career in teaching.
