@@ -57,7 +57,7 @@ Teacher training advisers Chris Farr, Fran Lee, Sian Mills and Elaine Boyd have 
 
 <strong>Fran:</strong> Your career progression can vary vastly depending on where you’re located, your employer and your training experience. For example, you might decide in your training period to set your targets in a particular area such as special educational needs and disabilities (SEND), or you might work in a sixth-form environment. And that can sway where your future takes you.  
 
-<strong>Sian:</strong> When I worked at a maintained primary state school it was quite traditional in terms of class teacher, head of year, deputy/assistant then head. When I moved to a headship in an academy trust there was no deputy head. So you might not always go into a school that has a traditional structure. There’s not always a neat pathway.
+<strong>Sian:</strong> When I worked at a maintained primary state school it was quite traditional in terms of class teacher, head of year, deputy/assistant then headteacher. When I moved to a headship in an academy trust there was no deputy head. So you might not always go into a school that has a traditional structure. There’s not always a neat pathway.
 
 <strong>Chris:</strong> People may not realise there is much progression in teaching. They think they go into the world of the classroom and that’s it. Lots of teachers have added responsibilities they enjoy doing and find fulfilling. 
 
@@ -75,7 +75,7 @@ That pastoral level is the link between form, tutor, classroom teacher, senior l
 
 <strong>Fran:</strong> Once your training has finished, it's not about other people, it's about how you direct your career. You have to carve out your own journey and make it your own. Lots of people expect to be told what they’ll do in teaching, when they’ll do it and how to progress. 
 
-<strong>Chris:</strong> Promotion in teaching won't come and find you. You go and look for it. Traditionally it used to be based on length of service. But people I've known who have become secondary school deputy heads and head teachers in recent years have gone into teaching with a plan. They sought things proactively and put themselves forward to bring themselves to the attention of leaders and build their CV within the schools. 
+<strong>Chris:</strong> Promotion in teaching won't come and find you. You go and look for it. Traditionally it used to be based on length of service. But people I've known who have become secondary school deputy heads and headteachers in recent years have gone into teaching with a plan. They sought things proactively and put themselves forward to bring themselves to the attention of leaders and build their CV within the schools. 
 
 ## How do you know when you’re ready to apply for a teaching promotion? 
 
@@ -95,7 +95,7 @@ To get a TLR you've got to have a proven track record. It’s not just a case of
 
 <strong>Fran:</strong> Realistically you’d want to do at least a year or two in the same setting before then thinking about applying for a role with more responsibility. But you have to prove your worth to get a teaching and learning responsibility (TLR) payment. 
 
-The head at my school was looking to create an alternative for key stage 3 (KS3) pupils who weren’t able to access the curriculum properly. As part of a shift in my lead practitioner responsibility for English I was given a permanent TLR to research and implement this. I had to come up with case studies and a proposal. It's about showing you’re prepared to invest in your personal development and know what’s going on out there. You have to keep up with legislation and news and topical priorities. 
+The headteacher at my school was looking to create an alternative for key stage 3 (KS3) pupils who weren’t able to access the curriculum properly. As part of a shift in my lead practitioner responsibility for English I was given a permanent TLR to research and implement this. I had to come up with case studies and a proposal. It's about showing you’re prepared to invest in your personal development and know what’s going on out there. You have to keep up with legislation and news and topical priorities. 
 
 <strong>Sian:</strong> It may be the case that your school hasn’t got the budget for a TLR. So if you really want to take on more responsibility you may need to think about moving school.
 
@@ -109,11 +109,11 @@ As well as helping you understand the demands of a more senior role, a teaching 
 
 <strong>Chris:</strong> If you want to go into senior leadership in a secondary school you’ll need to build both a curriculum role and a pastoral role, for example, head of geography and head of year into your early career.
 
-<strong>Elaine:</strong> I've got curriculum and pastoral experience and I also did school timetabling. As a head you need experience of everything to get to the top.
+<strong>Elaine:</strong> I've got curriculum and pastoral experience and I also did school timetabling. As a headteacher you need experience of everything to get to the top.
 
-## How long does it take to go from an early career teacher to a head?
+## How long does it take to go from an early career teacher to a headteacher?
 
-<strong>Sian:</strong> I think 8 to 10 years is realistic to become a head for primary schools although you may be able to climb the career ladder a bit quicker.
+<strong>Sian:</strong> I think 8 to 10 years is realistic to become a headteacher for primary schools although you may be able to climb the career ladder a bit quicker.
 
 <strong>Elaine:</strong> If you’re driven you could probably get to headship in between 9 to 12 years. It took me longer but at the time it suited me to stay where I was.
 
