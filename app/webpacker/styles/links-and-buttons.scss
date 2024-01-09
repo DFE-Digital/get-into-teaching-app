@@ -1,10 +1,10 @@
-@mixin button($bg: $green, $fg: $white) {
+@mixin button($bg: $cta-green, $fg: $white) {
   display: block;
   font-weight: bold;
   background-color: $bg;
   text-decoration: none;
   color: $fg;
-  padding: 14px $indent-amount;
+  padding: 12px 1em 12px .9em;
   @include font-size("small");
   border: none;
 
@@ -68,7 +68,7 @@
   }
 
   &:focus:after {
-    @include chevron-icon($white, .6em);
+    @include chevron-icon($black, .6em);
   }
 }
 
