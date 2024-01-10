@@ -7,7 +7,7 @@ content:
     - content/landing/grow/mailing_list
     - content/landing/grow/content
     - content/landing/grow/promo
-image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
+image: "static/content/hero-images/0026.jpg"
 colour: "yellow"
 layout: "layouts/minimal"
 talk_to_us: false
