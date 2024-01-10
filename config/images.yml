@@ -175,7 +175,13 @@
     - "static/content/hero-images/0026--tablet.jpg"
 
 "static/content/hero-images/0027.jpg":
-  alt: "Ben."
+  alt: "Grow as only a teacher can."
+  variants:
+    - "static/content/hero-images/0027--mobile.jpg"
+    - "static/content/hero-images/0027--tablet.jpg"
+
+"static/content/hero-images/0027.jpg":
+  alt: "Grow as only a teacher can."
   variants:
     - "static/content/hero-images/0027--mobile.jpg"
     - "static/content/hero-images/0027--tablet.jpg"
