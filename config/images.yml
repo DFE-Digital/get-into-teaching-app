@@ -180,12 +180,6 @@
     - "static/content/hero-images/0027--mobile.jpg"
     - "static/content/hero-images/0027--tablet.jpg"
 
-"static/content/hero-images/0028.jpg":
-  alt: "Grow as only a teacher can."
-  variants:
-    - "static/content/hero-images/0028--mobile.jpg"
-    - "static/content/hero-images/0028--tablet.jpg"
-
 "static/content/ttalianne.jpg":
   alt: "Lianne, an explore teaching adviser"
 
