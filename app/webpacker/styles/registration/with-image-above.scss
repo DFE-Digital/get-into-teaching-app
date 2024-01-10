@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .registration-with-image-above {
   display: grid;
 
@@ -6,7 +8,7 @@
   @include mq($from: desktop) {
     grid-template-rows: 14em 4em min-content;
 
-    $right-center-col: ($content-max-width / 3);
+    $right-center-col: math.div($content-max-width, 3);
     $left-center-col: $right-center-col * 2;
 
     grid-template-columns: auto minmax(min-content, $left-center-col) minmax(min-content, 300px) auto;
