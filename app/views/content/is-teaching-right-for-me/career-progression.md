@@ -62,7 +62,7 @@ Teacher training advisers Chris Farr, Fran Lee, Sian Mills and Elaine Boyd have 
 
 ## Is there a set path to getting promoted as a teacher?
 
-<strong>Fran:</strong> Your career progression can vary vastly depending on where you’re located, your employer and your training experience. For example, you might decide in your training period to set your targets in a particular area such as special educational needs and disabilities (SEND), or you might work in a sixth-form environment. And that can sway where your future takes you.  
+<strong>Fran:</strong> Your career prospects can vary vastly depending on where you’re located, your employer and your training experience. For example, you might decide in your training period to set your targets in a particular area such as special educational needs and disabilities (SEND), or you might work in a sixth-form environment. And that can sway where your future takes you.  
 
 <strong>Sian:</strong> When I worked at a maintained primary state school it was quite traditional in terms of class teacher, head of year, deputy/assistant then headteacher. When I moved to a headship in an academy trust there was no deputy head. So you might not always go into a school that has a traditional structure. There’s not always a neat pathway.
 
