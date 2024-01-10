@@ -41,6 +41,7 @@ keywords:
   - Responsibility
   - Responsibilities
   - Career
+  - Career Prospects
   - Benefits
   - Earnings
   - Leadership
