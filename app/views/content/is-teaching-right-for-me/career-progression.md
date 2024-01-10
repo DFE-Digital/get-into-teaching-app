@@ -17,33 +17,40 @@ related_content:
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
 
 keywords:
-  - Salary
-  - Salaries
-  - Band
-  - Pay
-  - Pay scale
+  - Professional Development
+  - Teacher Promotion
+  - Career Development
+  - Progression
+  - Career Progression
+  - Development
   - Scale
   - Teacher Salary
   - Teacher Salaries
   - Leading Practitioner
   - Headteacher
   - Progression
-  - Unqualified Teacher
+  - Promotion
   - Teaching and learning responsibility
+  - Teaching and learning responsibility payment
   - TLR
-  - Holiday
-  - Annual Leave
-  - Pension
+  - Teaching Roles
+  - Promoted
+  - Teaching Responsibilities
   - Additional
+  - Payments
   - Responsibility
   - Responsibilities
   - Career
   - Benefits
   - Earnings
   - Leadership
-  - Early Career Framework
+  - NQT
+  - National professional qualification
   - Support
   - Training
+  - Salary increase
+  - Salary review
+  - Pastoral care
   - ECF
   - Teaching
   - Teacher training
