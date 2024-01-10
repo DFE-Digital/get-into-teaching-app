@@ -11,7 +11,7 @@ Assessment only training providers cannot give you advice about:
 * other routes to QTS, including Apply for QTS in England
 * applying for a visa to work or study in the UK
 
-[Learn more about working in England if you’re a teacher from outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas#apply-for-qualified-teacher-status-qts).
+[Learn more about working in England if you’re a teacher from outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas#english-qualified-teacher-status-qts).
 
 #### Apply for QTS in England
 
