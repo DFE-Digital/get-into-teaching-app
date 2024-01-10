@@ -11,7 +11,7 @@ describe Content::AdviserComponent, type: :component do
   let(:heading) { :m }
   let(:component) { described_class.new(title: "title", intro: "intro", color: color, heading: heading, margin: margin) }
 
-  it { is_expected.to have_css("h2.heading-m.heading--box-purple", text: "title") }
+  it { is_expected.to have_css("h2.heading-m.heading--box-pink", text: "title") }
   it { is_expected.to have_css("p", text: "intro") }
   it { is_expected.to have_css(".action-container--purple") }
   it { is_expected.to have_css("form") }
