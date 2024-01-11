@@ -17,7 +17,7 @@ navigation_title: How do I change to a career in teaching?
 navigation_description: Use your experience to inspire students and bring your skills and expertise to the classroom.
 ---
 
-Turn your passion into your profession with a career change into teaching. Not only can you use the skills and expertise you’ve already developed to inspire young people, teaching gives you the opportunity to grow and fulfill your own potential too.
+Turn your passion into your profession with a career change into teaching. Not only can you use the skills and expertise you’ve already developed to inspire young people, teaching gives you the opportunity to grow and fulfil your own potential too.
 
 You’ll need a degree and [qualified teacher status](/train-to-be-a-teacher/what-is-qts) (QTS) to work in the majority of schools in England including state maintained primary, secondary and special schools. There are different ways to get QTS.
 
