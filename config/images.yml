@@ -210,6 +210,12 @@
     - "static/content/hero-images/0034--mobile.jpg"
     - "static/content/hero-images/0034--tablet.jpg"
 
+  "static/content/hero-images/0035.jpg":
+  alt: "A teacher discusses text with two students."
+  variants:
+    - "static/content/hero-images/0035--mobile.jpg"
+    - "static/content/hero-images/0035--tablet.jpg"
+
 "static/content/ttalianne.jpg":
   alt: "Lianne, an explore teaching adviser"
 
