@@ -6,14 +6,14 @@ describe Content::MailingListComponent, type: :component do
     page
   end
 
-  let(:color) { "purple" }
+  let(:color) { "pink" }
   let(:margin) { true }
   let(:heading) { :m }
   let(:component) { described_class.new(title: "title", intro: "intro", color: color, heading: heading, margin: margin) }
 
-  it { is_expected.to have_css("h2.heading-m.heading--box-purple", text: "title") }
+  it { is_expected.to have_css("h2.heading-m.heading--box-#{color}", text: "title") }
   it { is_expected.to have_css("p", text: "intro") }
-  it { is_expected.to have_css(".action-container--purple") }
+  it { is_expected.to have_css(".action-container--#{color}") }
   it { is_expected.to have_css("form") }
   it { is_expected.to have_link("privacy notice", href: "/privacy-policy?id=123") }
   it { is_expected.not_to have_css(".action-container--no-margin") }
