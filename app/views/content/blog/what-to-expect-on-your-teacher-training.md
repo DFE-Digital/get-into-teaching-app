@@ -4,8 +4,8 @@ date: "2020-03-06"
 author: Jan Ashbridge
 images:
   seminar_room:
-    path: "static/content/blog/seminar-room.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/seminar-room.jpg"
+    path: "static/images/content/blog/seminar-room.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/seminar-room.jpg"
 description: |-
   A university-based PGCE year is an exciting, challenging and exhilarating one — a real roller coaster of an experience. Find out more about what you can expect on your teacher training course.
 keywords:

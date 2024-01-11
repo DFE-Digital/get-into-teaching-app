@@ -11,7 +11,7 @@ navigation: 20.30
 navigation_title: Teach in England as a non-UK qualified teacher
 navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from overseas.
 date: "2021-05-27"
-image: "static/content/hero-images/0002.jpg"
+image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"
 youtube_video:
   why-train-to-teach:

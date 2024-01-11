@@ -3,8 +3,8 @@ title: Product engineer turned science teacher
 date: "2022-07-18"
 images:
   chris_wallis:
-    path: "static/content/blog/thumbnails/chris-wallis.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/chris-wallis.jpg"
+    path: "static/images/content/blog/thumbnails/chris-wallis.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/chris-wallis.jpg"
 author: Chris Wallis
 description: |-
   Chris Wallis talks about his career change from a product engineer to a science teacher, and how he uses his engineering skills and experience in the classroom.

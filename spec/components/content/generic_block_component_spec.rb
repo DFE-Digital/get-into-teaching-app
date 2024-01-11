@@ -10,7 +10,7 @@ describe Content::GenericBlockComponent, type: "component" do
 
   let(:title) { "Block of content" }
   let(:content) { "Some content" }
-  let(:icon_image) { "icon-school-black.svg" }
+  let(:icon_image) { "static/images/icon-school-black.svg" }
   let(:custom_class) { "purple" }
   let(:icon_size) { "30x50" }
 
