@@ -15,7 +15,7 @@ layout: "layouts/category"
 content:
     - content/non-uk-teachers/questions
     - content/non-uk-teachers/why-teach
-image: "static/content/hero-images/0018.jpg"
+image: "static/content/hero-images/0034.jpg"
 ---
 
 
