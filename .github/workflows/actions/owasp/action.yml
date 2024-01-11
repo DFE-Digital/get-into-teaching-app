@@ -2,13 +2,11 @@ name: owasp
 
 inputs:
       environment:
-        description: The environment to deploy to Development/Test/Production/Review/Speed/UR etc
+        description: The environment to deploy to Development/Test/Production/Review etc
         required: true
       AZURE_CREDENTIALS:
         required: true
       KEY_VAULT:
-        required: true
-      ARM_ACCESS_KEY:
         required: true
       GITHUB_TOKEN:
         required: true
@@ -41,18 +39,16 @@ runs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - name: Setup Application Name
         id:   app_name
         shell: bash
         run: |
-             if [[ "${{ inputs.environment }}" == "production_aks" ]] ; then
+             if [[ "${{ inputs.environment }}" == "production" ]] ; then
                  rval="${{env.AKS_APPLICATION_NAME}}-production.${{env.DOMAIN}}"
-             elif [[ "${{ inputs.environment }}" == "test_aks" ]] ; then
+             elif [[ "${{ inputs.environment }}" == "test" ]] ; then
                  rval="${{env.AKS_APPLICATION_NAME}}-test.test.${{env.DOMAIN}}"
-             elif [[ "${{ inputs.environment }}" == "development_aks" ]] ; then
+             elif [[ "${{ inputs.environment }}" == "development" ]] ; then
                  rval="${{env.AKS_APPLICATION_NAME}}-development.test.${{env.DOMAIN}}"
              fi
              echo "SCAN=${rval}" >> $GITHUB_OUTPUT
