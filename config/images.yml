@@ -198,6 +198,12 @@
     - "static/content/hero-images/0031--mobile.jpg"
     - "static/content/hero-images/0031--tablet.jpg"
 
+"static/content/hero-images/0032.jpg":
+  alt: "An english teacher talking to pupils in a classroom."
+  variants:
+    - "static/content/hero-images/0032--mobile.jpg"
+    - "static/content/hero-images/0032--tablet.jpg"
+
 "static/content/hero-images/0034.jpg":
   alt: "A language teacher talking to pupils in a classroom."
   variants:
