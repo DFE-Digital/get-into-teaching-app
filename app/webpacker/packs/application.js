@@ -11,7 +11,6 @@ require.context('../documents', true);
 
 require('../javascript/perfume');
 require('../javascript/zendesk_chat_reload');
-require('../javascript/skip_links');
 
 Rails.start();
 Turbolinks.start();
