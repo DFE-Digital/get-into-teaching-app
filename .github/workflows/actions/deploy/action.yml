@@ -2,7 +2,7 @@ name: Deploy to AKS
 
 inputs:
       environment:
-        description: The environment to deploy to Development/Test/Production/Review/Speed/UR etc
+        description: The environment to deploy to Development/Test/Production/Review etc
         required: true
       sha:
         description: Commit sha to be deployed
@@ -14,8 +14,6 @@ inputs:
         required: true
       KEY_VAULT:
         required: true
-      ARM_ACCESS_KEY:
-        required: true
 
 runs:
     using: composite
@@ -25,8 +23,10 @@ runs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: DFE-Digital/github-actions/set-arm-environment-variables@master
         with:
-          var_file: .github/common_environment_aks.yml
+          azure-credentials: ${{ inputs.AZURE_CREDENTIALS }}
 
       - uses: azure/login@v1
         with:
@@ -49,12 +49,12 @@ runs:
              echo "TERRAFORM_VERSION=$terraform_version" >> $GITHUB_ENV
 
              case ${{ inputs.environment }} in
-               review_aks)
+               review)
                  pr_name="${{env.REVIEW_APPLICATION}}-${{inputs.pr}}"
                  echo "pr_name=${pr_name}" >> $GITHUB_OUTPUT
                  echo "healthcheck=${pr_name}${cluster_domain}" >> $GITHUB_OUTPUT
                  ;;
-               production_aks)
+               production)
                  echo "healthcheck=${{env.AKS_APPLICATION_NAME}}-${appenv}" >> $GITHUB_OUTPUT
                  ;;
                *)
@@ -80,18 +80,16 @@ runs:
 
       - name: Terraform init, plan & apply
         shell: bash
-        run: make ${{ inputs.environment }} ci terraform-apply-aks
+        run: make ${{ inputs.environment }} ci terraform-apply
         env:
-          ARM_ACCESS_KEY: ${{ inputs.ARM_ACCESS_KEY }}
           DOCKER_IMAGE_TAG: sha-${{ steps.sha.outputs.short}}
           PR_NUMBER: ${{ inputs.pr }}
           CONFIRM_PRODUCTION: true
 
       - name: Smoke tests
         shell: bash
-        if: ${{ inputs.environment != 'Speed' && inputs.environment != 'pagespeed' }}
         run: |
-             tests/confidence/healthcheck_aks.sh  "${{steps.variables.outputs.healthcheck}}"  "sha-${{ steps.sha.outputs.short }}"
+             tests/confidence/healthcheck.sh  "${{steps.variables.outputs.healthcheck}}"  "sha-${{ steps.sha.outputs.short }}"
         env:
           HTTPAUTH_PASSWORD: ${{ steps.fetch-secrets.outputs.HTTP_PASSWORD }}
           HTTPAUTH_USERNAME: ${{ steps.fetch-secrets.outputs.HTTP_USERNAME }}
