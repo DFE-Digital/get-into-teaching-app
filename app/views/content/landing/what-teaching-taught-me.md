@@ -5,7 +5,6 @@ content:
     - content/landing/what-teaching-taught-me/header
     - content/landing/what-teaching-taught-me/collage
     - content/landing/what-teaching-taught-me/mailing-list
-    - content/landing/what-teaching-taught-me/steps
     - content/landing/what-teaching-taught-me/content
     - content/landing/what-teaching-taught-me/promo
 image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
