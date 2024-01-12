@@ -160,11 +160,19 @@ section.container {
 .row {
   .grey {
     background-color: $grey;
-    padding: 3em 0;
+    padding: 1em 0;
+
+     @include mq($from: tablet) {
+      padding: 3em 0;
+    }
   }
 
   .col {
-    margin: 0 auto 3 * $indent-amount auto;
+    margin: 0 auto 2 * $indent-amount auto;
+
+    @include mq($from: tablet) {
+      margin: 0 auto 3 * $indent-amount auto;
+    }
   }
 
   .col-space-s {
