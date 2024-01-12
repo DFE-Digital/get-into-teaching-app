@@ -1,4 +1,4 @@
-name: Destroy AKS Review Instance
+name: Destroy Review Instance
 on:
   pull_request:
     types: [closed]
@@ -7,10 +7,10 @@ jobs:
   destroy:
     name: Destroy
     environment:
-       name: review_aks
+       name: review
     runs-on: ubuntu-latest
 
-    concurrency: Review_aks_${{github.event.number}}
+    concurrency: Review_${{github.event.number}}
 
     defaults:
       run:
@@ -21,8 +21,10 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
         with:
-          var_file: .github/common_environment_aks.yml
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Setup Environment Variables
         id: variables
@@ -35,14 +37,17 @@ jobs:
         with:
           terraform_version: ${{ env.TERRAFORM_VERSION }}
 
+      - uses: DFE-Digital/github-actions/set-arm-environment-variables@master
+        with:
+          azure-credentials: ${{ secrets.AZURE_CREDENTIALS }}
+
       - name: Terraform Destroy
         shell: bash
-        run: make review_aks ci terraform-destroy-aks
+        run: make review ci terraform-destroy
         env:
-          ARM_ACCESS_KEY: ${{ secrets.ARM_ACCESS_KEY }}
           TF_VAR_azure_credentials_json: ${{ secrets.AZURE_CREDENTIALS }}
           DOCKER_IMAGE_TAG: ${{ github.sha }}
           PR_NUMBER: ${{github.event.number}}
 
       - name: Delete Terraform Storage File
-        run:  az storage blob delete --container-name terraform-state --account-name s189t01gitrvtfsa --account-key ${{secrets.ARM_ACCESS_KEY}} -n ${{steps.variables.outputs.pr_name}}.tfstate
+        run:  az storage blob delete --container-name terraform-state --account-name s189t01gitrvtfsa -n ${{steps.variables.outputs.pr_name}}.tfstate

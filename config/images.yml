@@ -173,6 +173,12 @@
   variants:
     - "static/content/hero-images/0026--mobile.jpg"
     - "static/content/hero-images/0026--tablet.jpg"
+    
+ "static/content/hero-images/0027.jpg":
+  alt: "Grow as only a teacher can."
+  variants:
+    - "static/content/hero-images/0027--mobile.jpg"
+    - "static/content/hero-images/0027--tablet.jpg"
 
 "static/content/hero-images/0028.jpg":
   alt: "A teacher taking notes in a classroom."
@@ -210,7 +216,7 @@
     - "static/content/hero-images/0034--mobile.jpg"
     - "static/content/hero-images/0034--tablet.jpg"
 
-  "static/content/hero-images/0035.jpg":
+"static/content/hero-images/0035.jpg":
   alt: "A teacher discusses text with two students."
   variants:
     - "static/content/hero-images/0035--mobile.jpg"
@@ -432,6 +438,10 @@
   alt: "Teacher Keri Gell"
 "static/content/food-for-thought/Amrita_Panesar.jpg":
   alt: "Teacher Amrita Panesar"
+
+# grow
+"static/content/grow/Smiling_Student.jpg":
+  alt: "Smiling student in a classroom."
 
 # is teaching right for me
 "static/content/is-teaching-right-for-me/fellowship.jpg":
