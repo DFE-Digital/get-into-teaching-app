@@ -5,7 +5,7 @@
   description: |-
     Find out how to become a teacher in England, including the qualifications you need, how to fund your training and where to find school experience.
   date: "2021-06-24"
-  image: "static/content/hero-images/0017.jpg"
+  image: "static/content/hero-images/0030.jpg"
   backlink: "../"
   navigation: 10
   steps:
