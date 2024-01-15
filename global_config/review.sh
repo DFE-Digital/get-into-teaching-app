@@ -1,6 +1,6 @@
-CONFIG=development_aks
-ENVIRONMENT=development
-CONFIG_SHORT=dv
+CONFIG=review
+ENVIRONMENT=review
+CONFIG_SHORT=rv
 AZURE_SUBSCRIPTION=s189-teacher-services-cloud-test
 AZURE_RESOURCE_PREFIX=s189t01
 KV_PURGE_PROTECTION=false

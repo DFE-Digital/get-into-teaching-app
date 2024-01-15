@@ -1,6 +1,6 @@
-CONFIG=production_aks
-ENVIRONMENT=production
-CONFIG_SHORT=pd
+CONFIG=beta
+ENVIRONMENT=beta
+CONFIG_SHORT=bt
 AZURE_SUBSCRIPTION=s189-teacher-services-cloud-production
 AZURE_RESOURCE_PREFIX=s189p01
 ENABLE_KV_DIAGNOSTICS=true

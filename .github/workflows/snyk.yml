@@ -14,22 +14,20 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - uses: Azure/login@v1
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_AKS_REVIEW }}
+            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v1
         id: keyvault-yaml-secret
         with:
           inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_AKS_REVIEW }}" --query "value" -o tsv)
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
             echo "::add-mask::$SLACK_WEBHOOK"
             echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
-            SNYK_TOKEN=$(az keyvault secret show --name "SNYK-TOKEN" --vault-name "${{ secrets.KEY_VAULT_AKS_REVIEW }}" --query "value" -o tsv)
+            SNYK_TOKEN=$(az keyvault secret show --name "SNYK-TOKEN" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
             echo "::add-mask::$SNYK_TOKEN"
             echo "SNYK_TOKEN=$SNYK_TOKEN" >> $GITHUB_OUTPUT
 

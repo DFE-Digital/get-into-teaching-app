@@ -2,7 +2,7 @@
 title: "Is teaching right for me?"
 description: Choosing or changing a career can be a big decision. Find out about teacher pay and benefits and more to decide if teaching is right for you.
 content:
-image: "static/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
+image: "static/images/content/hero-images/0029.jpg"
 colour: "yellow"
 layout: "layouts/category"
 title_paragraph: |-

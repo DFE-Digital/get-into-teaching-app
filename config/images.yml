@@ -174,6 +174,54 @@
     - "static/images/content/hero-images/0026--mobile.jpg"
     - "static/images/content/hero-images/0026--tablet.jpg"
 
+"static/images/content/hero-images/0027.jpg":
+  alt: "Grow as only a teacher can."
+  variants:
+    - "static/images/content/hero-images/0027--mobile.jpg"
+    - "static/images/content/hero-images/0027--tablet.jpg"
+
+"static/images/content/hero-images/0028.jpg":
+  alt: "A teacher taking notes in a classroom."
+  variants:
+    - "static/images/content/hero-images/0028--mobile.jpg"
+    - "static/images/content/hero-images/0028--tablet.jpg"
+
+"static/images/content/hero-images/0029.jpg":
+  alt: "A geography teacher talking to pupils in a classroom."
+  variants:
+    - "static/images/content/hero-images/0029--mobile.jpg"
+    - "static/images/content/hero-images/0029--tablet.jpg"
+
+"static/images/content/hero-images/0030.jpg":
+  alt: "A science teacher talking to pupils in a classroom."
+  variants:
+    - "static/images/content/hero-images/0030--mobile.jpg"
+    - "static/images/content/hero-images/0030--tablet.jpg"
+
+"static/images/content/hero-images/0031.jpg":
+  alt: "A teacher walking down a school corridor."
+  variants:
+    - "static/images/content/hero-images/0031--mobile.jpg"
+    - "static/images/content/hero-images/0031--tablet.jpg"
+
+"static/images/content/hero-images/0032.jpg":
+  alt: "An English teacher talking to pupils in a classroom."
+  variants:
+    - "static/images/content/hero-images/0032--mobile.jpg"
+    - "static/images/content/hero-images/0032--tablet.jpg"
+
+"static/images/content/hero-images/0034.jpg":
+  alt: "A language teacher talking to pupils in a classroom."
+  variants:
+    - "static/images/content/hero-images/0034--mobile.jpg"
+    - "static/images/content/hero-images/0034--tablet.jpg"
+
+"static/images/content/hero-images/0035.jpg":
+  alt: "A teacher discusses text with two students."
+  variants:
+    - "static/images/content/hero-images/0035--mobile.jpg"
+    - "static/images/content/hero-images/0035--tablet.jpg"
+
 "static/images/content/ttalianne.jpg":
   alt: "Lianne, an explore teaching adviser"
 
@@ -372,6 +420,12 @@
   alt: "A male teacher stands alone in a classroom looking at the camera."
 "static/images/content/homepage/directory3.jpg":
   alt: "An adviser talks to someone attending a event."
+"static/images/content/homepage/directory4.jpg":
+  alt: "Three teachers laughing and joking."
+"static/images/content/homepage/directory5.jpg":
+  alt: "A chemistry teacher with two students in a science classroom."
+"static/images/content/homepage/directory6.jpg":
+  alt: "An English teacher with a student."
 
 # food for thought
 "static/images/content/food-for-thought/Jake_Athorn.jpg":
@@ -384,6 +438,10 @@
   alt: "Teacher Keri Gell"
 "static/images/content/food-for-thought/Amrita_Panesar.jpg":
   alt: "Teacher Amrita Panesar"
+
+# grow
+"static/images/content/grow/Smiling_Student.jpg":
+  alt: "Smiling student in a classroom."
 
 # is teaching right for me
 "static/images/content/is-teaching-right-for-me/fellowship.jpg":
