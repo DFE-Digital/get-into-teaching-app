@@ -1,10 +1,10 @@
+<% content_for(:back_link) do %>
+  <%= render BackComponent.new(path: step_path(wizard.previous_key)) if wizard.previous_key %>
+<% end %>
+
 <% complete_button_text ||= "Complete sign up" %>
 
 <%= tag.section(class: "registration__#{section_class}") do %>
-  <p>
-    <%= back_link step_path(wizard.previous_key) if wizard.previous_key %>
-  </p>
-
   <%= tag.div(class: "registration__#{section_class}--container") do %>
     <%= govuk_form_for current_step, url: step_path do |f| %>
       <%= f.govuk_error_summary %>
