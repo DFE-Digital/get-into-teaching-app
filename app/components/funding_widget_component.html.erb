@@ -8,7 +8,7 @@
           <div class="field">
             <%= tag.div(class: input_field_classes(:subject)) do %>
               <%= f.label :subject, 'Choose the subject you want to teach' %>
-              <%= f.select :subject, grouped_options_for_select(grouped_options, form.subject), { prompt: true }, { class: "govuk-select", data: { action: "funding-widget#submitForm"}} %>
+              <%= f.select :subject, grouped_options_for_select(grouped_options, form.subject), { prompt: true }, { class: "govuk-select" } %>
             <% end %>
           </div>
           <% if error_messages.any? %>
@@ -18,7 +18,7 @@
               <% end %>
             </div>
           <% end %>
-          <div class="actions hidden-when-js-enabled">
+          <div class="actions">
             <%= f.button 'See funding', type: 'submit', class: 'button' %>
           </div>
         <% end %>
