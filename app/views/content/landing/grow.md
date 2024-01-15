@@ -7,7 +7,7 @@ content:
     - content/landing/grow/mailing_list
     - content/landing/grow/content
     - content/landing/grow/promo
-image: "static/content/hero-images/0027.jpg"
+image: "static/images/content/hero-images/0027.jpg"
 colour: "yellow"
 layout: "layouts/minimal"
 talk_to_us: false
