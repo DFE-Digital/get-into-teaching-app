@@ -20,7 +20,7 @@
       margin-top: 0;
 
       @include mq($from: tablet) {
-        margin-top: $space-between-sections;
+        margin-top: 1em;
       }
     }
   }
