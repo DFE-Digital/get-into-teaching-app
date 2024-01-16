@@ -3,7 +3,7 @@
   description: |-
     Find out about a day in the life of a teacher in a secondary school, including an example of teacher working hours and their day to day routine.
   date: "2021-03-08"
-  image: "static/content/hero-images/0011.jpg"
+  image: "static/images/content/hero-images/0011.jpg"
   backlink: "../"
   keywords:
     - Typical

@@ -8,7 +8,7 @@ describe Content::PhotoQuoteListComponent, type: :component do
 
   let(:quote1) do
     {
-      image: "static/content/hero-images/0010.jpg",
+      image: "static/images/content/hero-images/0010.jpg",
       heading: "Heading 1",
       text: "Text 1",
       accreditation: "Accreditation 1",
@@ -16,7 +16,7 @@ describe Content::PhotoQuoteListComponent, type: :component do
   end
   let(:quote2) do
     {
-      image: "static/content/hero-images/0011.jpg",
+      image: "static/images/content/hero-images/0011.jpg",
       heading: "Heading 2",
       text: "Text 2",
       accreditation: "Accreditation 2",

@@ -78,7 +78,7 @@ RSpec.configure do |config|
   config.include SpecHelpers::BasicAuth
   config.include SpecHelpers::Integration, type: :feature
   config.include SpecHelpers::Contract, type: :feature
-  config.include Webpacker::Helper, type: :helper
+  config.include Shakapacker::Helper, type: :helper
 
   config.verbose_retry = true
   config.default_retry_count = 2
@@ -88,7 +88,7 @@ RSpec.configure do |config|
   config.exceptions_to_retry = [Net::ReadTimeout]
 
   config.before(:suite) do
-    Webpacker.compile
+    Shakapacker.compile
   end
 
   config.before do

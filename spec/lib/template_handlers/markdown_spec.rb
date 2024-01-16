@@ -166,8 +166,8 @@ describe TemplateHandlers::Markdown, type: :view do
       {
         "title": "Page with images",
         "images" => {
-          "first" => { "path" => "static/content/hero-images/0001.jpg", "other_attr" => "ignore" },
-          "second" => { "path" => "static/content/hero-images/0002.jpg", "other_attr" => "ignore" },
+          "first" => { "path" => "static/images/content/hero-images/0001.jpg", "other_attr" => "ignore" },
+          "second" => { "path" => "static/images/content/hero-images/0002.jpg", "other_attr" => "ignore" },
         },
       }
     end
@@ -195,8 +195,8 @@ describe TemplateHandlers::Markdown, type: :view do
 
       %w[0001 0002].each do |photo|
         expect(rendered).to have_css("img")
-        expect(rendered).to match(%r{src="/packs-test/v1/static/content/hero-images/#{photo}-.*.jpg"})
-        key = Image.new.alt("static/content/hero-images/#{photo}.jpg")
+        expect(rendered).to match(%r{src="/packs-test/v1/static/images/content/hero-images/#{photo}-.*.jpg"})
+        key = Image.new.alt("static/images/content/hero-images/#{photo}.jpg")
         expect(rendered).to have_css(%(img[alt="#{key}"]))
       end
     end

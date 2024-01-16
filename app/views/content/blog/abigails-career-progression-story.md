@@ -3,8 +3,8 @@ title: Abigail's career progression story
 date: "2021-07-05"
 images:
   abigail_beeley:
-    path: "static/content/blog/abigail-beeley.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/abigail-beeley.jpg"
+    path: "static/images/content/blog/abigail-beeley.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/abigail-beeley.jpg"
 description: |-
   Abigail Beeley is a maths teacher at St John Fisher Catholic High School in
   Wigan. After achieving promotions in her NQT year and her third year of

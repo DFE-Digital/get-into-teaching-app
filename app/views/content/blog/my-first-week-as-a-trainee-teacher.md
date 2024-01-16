@@ -4,8 +4,8 @@ author: Cindy Ventura
 date: "2021-09-17"
 images:
   cindy-ventura:
-    path: "static/content/blog/cindy-ventura.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/cindy-ventura.jpg"
+    path: "static/images/content/blog/cindy-ventura.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/cindy-ventura.jpg"
 description: |-
   Cindy recently started the Postgraduate Diploma in Education (PGDE) teacher training course at Sheffield University. She kept a diary during her first week on the course and shares her experiences here.
 keywords:

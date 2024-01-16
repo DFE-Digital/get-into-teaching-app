@@ -4,8 +4,8 @@ date: "2019-12-02"
 author: Emma Maskell
 images:
   q-emma:
-    path: "static/content/blog/thumbnails/stories-emma.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/stories-emma.jpg"
+    path: "static/images/content/blog/thumbnails/stories-emma.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/stories-emma.jpg"
 description: |-
   Emma Maskell explains how her experience helping out as a teaching assistant inspired her to change careers and train to be a teacher.
 keywords:
