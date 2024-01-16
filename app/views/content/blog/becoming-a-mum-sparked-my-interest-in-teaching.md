@@ -4,8 +4,8 @@ date: "2019-07-15"
 author: Claire Johnson
 images:
   claire-johnson:
-    path: "static/content/blog/thumbnails/stories-claire.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/stories-claire.jpg"
+    path: "static/images/content/blog/thumbnails/stories-claire.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/stories-claire.jpg"
 description: |-
   Being a mum, physics teacher Claire Johnson realised that education in this country was more important to her than ever.
 keywords:

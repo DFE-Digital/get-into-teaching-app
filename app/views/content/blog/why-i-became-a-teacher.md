@@ -4,8 +4,8 @@ date: "2021-02-01"
 author: Giorgio Rubbo
 images:
   giorgio_rubbo:
-    path: "static/content/blog/giorgio-rubbo.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/giorgio-rubbo.jpg"
+    path: "static/images/content/blog/giorgio-rubbo.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/giorgio-rubbo.jpg"
 description: |-
   Giorgio Rubbo talks about what inspired him to become a teacher, his
   application process, concerns he had, and why you should become a teacher if

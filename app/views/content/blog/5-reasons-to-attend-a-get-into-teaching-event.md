@@ -3,8 +3,8 @@ title: 5 reasons to attend a Get Into Teaching event
 date: "2021-08-26"
 images:
   get_into_teaching:
-    path: "static/content/blog/get-into-teaching.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/get-into-teaching.jpg"
+    path: "static/images/content/blog/get-into-teaching.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/get-into-teaching.jpg"
 description: |-
   Whether you’re ready to apply or it’s just an idea, here are five reasons why a Get Into Teaching event can help you on your journey to the classroom.
 keywords:

@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Content::ImageComponent, type: "component" do
-  let(:image_name) { "content/hero-images/0024" }
+  let(:image_name) { "images/content/hero-images/0024" }
   let(:example_args) { { path: "static/#{image_name}.jpg" } }
 
   before { render_inline(described_class.new(**example_args)) }
