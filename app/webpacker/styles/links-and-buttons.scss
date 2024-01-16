@@ -165,6 +165,10 @@ body a.govuk-back-link {
     @include button($bg: $cta-grey, $fg: $black);
     @include chevron($color: $black);
     box-shadow: 0 2px 0 $cta-grey-box-shadow;
+
+    &:hover {
+      background: $cta-grey-dark;
+    }
   }
 
   &--nowrap {
@@ -180,6 +184,10 @@ body a.govuk-back-link {
   }
 }
 
+.button--secondary:hover {
+  background: $cta-grey-dark;
+}
+
 .call-to-action-icon-button {
   @include button;
   display: inline-block;
@@ -189,6 +197,10 @@ body a.govuk-back-link {
   @include button($bg: $cta-grey, $fg: black);
   display: inline-block;
   box-shadow: 0 2px 0 $cta-grey-box-shadow;
+
+  &:hover {
+    background: $cta-grey-dark;
+  }
 }
 
 .request-button {
