@@ -4,8 +4,8 @@ date: "2019-08-26"
 author: Danny Holliday
 images:
   danny:
-    path: "static/content/blog/thumbnails/stories-danny.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/stories-danny.jpg"
+    path: "static/images/content/blog/thumbnails/stories-danny.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/stories-danny.jpg"
 description: |-
   PE teacher Danny Holliday shares his experience of dealing with behaviour management out on the rugby field with his year 10 class.
 keywords:

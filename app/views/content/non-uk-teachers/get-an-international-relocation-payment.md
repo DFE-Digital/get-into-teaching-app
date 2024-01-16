@@ -9,7 +9,7 @@ related_content:
     Apply for your visa to train to teach in England: "/non-uk-teachers/visas-for-non-uk-trainees"
 promo_content:
 date: "2021-05-27"
-image: "static/content/hero-images/0002.jpg"
+image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"
 talk_to_us: false
 inset_text:

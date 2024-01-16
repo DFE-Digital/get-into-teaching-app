@@ -15,5 +15,5 @@ layout: "layouts/category"
 content:
     - content/how-to-apply-for-teacher-training/questions
     - content/how-to-apply-for-teacher-training/why-teach
-image: "static/content/blog/notepad.jpg"
+image: "static/images/content/blog/notepad.jpg"
 ---

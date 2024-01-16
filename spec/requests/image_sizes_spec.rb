@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "Image Sizes", type: :request do
-  let(:src) { "/packs/v1/static/content/hero-images/0013-3570599669a8da7d375320f4003d2d61.jpg" }
+  let(:src) { "/packs/v1/static/images/content/hero-images/0013-3570599669a8da7d375320f4003d2d61.jpg" }
 
   before do
     allow(ENV).to receive(:[]).and_call_original

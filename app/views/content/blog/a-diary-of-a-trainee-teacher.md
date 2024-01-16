@@ -4,10 +4,10 @@ date: "2021-10-07"
 author: Mel O'Connor
 images:
   mel_oconnor:
-    path: "static/content/blog/mel-oconnor.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/mel-oconnor.jpg"
+    path: "static/images/content/blog/mel-oconnor.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/mel-oconnor.jpg"
   mel_stta_screen:
-    path: "static/content/blog/mel-stta-screen.jpg"
+    path: "static/images/content/blog/mel-stta-screen.jpg"
 description: |- 
   Mel recently started a Postgraduate Diploma in Education (PGDE) teacher training course in maths with the Sheffield Teacher Training Alliance and the University of Sheffield. She kept a diary of her first days on the course.
 keywords:

@@ -4,8 +4,8 @@ date: "2019-11-04"
 author: Hasina Nizamee
 images:
   q-hasina:
-    path: "static/content/blog/thumbnails/stories-generic.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/stories-generic.jpg"
+    path: "static/images/content/blog/thumbnails/stories-generic.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/stories-generic.jpg"
 description: |-
     Hasina Nizamee explains how teacher training has been one of the most fulfilling experiences of her life, helping her realise her potential.
 keywords:

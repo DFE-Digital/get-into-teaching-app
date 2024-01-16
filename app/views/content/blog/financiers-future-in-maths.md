@@ -4,8 +4,8 @@ date: "2020-01-27"
 author: Peter Bassett
 images:
   q-peter:
-    path: "static/content/blog/thumbnails/stories-peter.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/stories-peter.jpg"
+    path: "static/images/content/blog/thumbnails/stories-peter.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/stories-peter.jpg"
 description: |-
   Peter Bassett shares how he switched his role in finance for the classroom.
 keywords:
