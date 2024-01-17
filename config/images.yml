@@ -446,6 +446,10 @@
 # landing
 "static/images/content/landing/train-to-teach.jpg":
   alt: "A geography teacher laughing with students in a classroom."
+"static/images/content/landing/train-to-teach-if-you-have-a-degree-1.jpg":
+  alt: "A biology teacher examining leaves with students."
+"static/images/content/landing/train-to-teach-if-you-have-a-degree-2.jpg":
+  alt: "A biology teacher examining leaves with students."
 
 # is teaching right for me
 "static/images/content/is-teaching-right-for-me/fellowship.jpg":
