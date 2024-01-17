@@ -1,5 +1,5 @@
 .purple-box {
-  background: $purple;
+  background: $grey;
   color: $white;
 
   &__background {
@@ -10,16 +10,16 @@
   // general styles (grid fallback)
   &__heading {
     @include font-size("large");
-    color: $white;
-    background-color: $purple;
+    color: $black;
+    background-color: $grey;
 
     line-height: 1.25em;
     max-width: 80%;
   }
 
   &__text {
-    color: $white;
-    background-color: $purple;
+    color: $black;
+    background-color: $grey;
   }
 
   &__cta {
@@ -55,7 +55,7 @@
 
     &__background {
       display: block;
-      background-color: $purple;
+      background-color: $grey;
       grid-area: 1 / 2 / 4 / 6;
     }
 
