@@ -7,8 +7,8 @@ content:
     - content/landing/how-much-do-teachers-get-paid/mailing_list
     - content/landing/how-much-do-teachers-get-paid/content
     - content/landing/how-much-do-teachers-get-paid/promo
-image: "static/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
-colour: "pink"
+image: "static/images/content/landing/how-much-do-teachers-get-paid-1"
+colour: "yellow"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true
