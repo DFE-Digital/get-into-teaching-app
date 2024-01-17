@@ -443,6 +443,10 @@
 "static/images/content/grow/Smiling_Student.jpg":
   alt: "Smiling student in a classroom."
 
+# landing
+"static/images/content/landing/train-to-teach.jpg":
+  alt: "A geography teacher laughing with students in a classroom."
+
 # is teaching right for me
 "static/images/content/is-teaching-right-for-me/fellowship.jpg":
   alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"

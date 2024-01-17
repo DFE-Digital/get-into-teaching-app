@@ -7,7 +7,7 @@ content:
     - content/landing/how-to-become-a-teacher/steps
     - content/landing/how-to-become-a-teacher/content
     - content/landing/how-to-become-a-teacher/promo
-image: "static/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
+image: "static/images/content/hero-images/0031.jpg"
 colour: "yellow"
 layout: "layouts/minimal"
 talk_to_us: false
