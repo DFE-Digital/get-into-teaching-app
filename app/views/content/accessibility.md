@@ -73,6 +73,6 @@ We’ll continue to test the accessibility of this service as it develops.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 12 December 2023. It was last reviewed on 17 January 2024.
+This statement was prepared on 12 December 2023. It was last reviewed on 18 January 2024.
 
 This website was last tested independently on 25 September 2023. The test was carried out by Digital Accessibility Centre (DAC) Limited.
