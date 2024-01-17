@@ -5,26 +5,39 @@
     <div class="call-to-action__text">
       <div class="call-to-action__form">
         <%= form_with(model: form, url: path, method: :get, local: true, html: { data: { "controller": "funding-widget", "funding-widget-target": 'form'}}) do |f| %>
+          <% if form.errors.any? %>
+            <div class="govuk-error-summary" data-module="govuk-error-summary">
+              <div role="alert">
+                <h2 class="govuk-error-summary__title">There is a problem</h2>
+                <div class="govuk-error-summary__body">
+                  <ul class="govuk-list govuk-error-summary__list">
+                    <%= safe_join(form.errors.map { |e| tag.a(tag.li(e.message), href: "#funding_widget_#{e.attribute}") }) %>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          <% end %>
+
           <div class="field">
             <%= tag.div(class: input_field_classes(:subject)) do %>
               <%= f.label :subject, 'Choose the subject you want to teach' %>
+              <% if error_messages.any? %>
+               <div class="form__errors">
+                  <% error_messages.each do |error_message| %>
+                    <%= tag.div(error_message) %>
+                  <% end %>
+                </div>
+              <% end %>
               <%= f.select :subject, grouped_options_for_select(grouped_options, form.subject), { prompt: true }, { class: "govuk-select" } %>
             <% end %>
           </div>
-          <% if error_messages.any? %>
-            <div class="form__errors">
-              <% error_messages.each do |error_message| %>
-                <%= tag.div(error_message) %>
-              <% end %>
-            </div>
-          <% end %>
           <div class="actions">
             <%= f.button 'See funding', type: 'submit', class: 'button' %>
           </div>
         <% end %>
       </div>
 
-      <% if form.subject %>
+      <% if form.valid? %>
         <% if funding_results.blank? %>
           <div class="call-to-action__text">
             <h3><%= sub_head %></h3>
