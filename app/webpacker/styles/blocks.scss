@@ -14,7 +14,7 @@ $space-between-sections: 3.7em;
 
   &.homepage-feature {
     @supports (display: grid) {
-      margin: $space-between-sections $px-either-side-of-content 0;
+      margin: 1em $px-either-side-of-content 0;
     }
   }
 
