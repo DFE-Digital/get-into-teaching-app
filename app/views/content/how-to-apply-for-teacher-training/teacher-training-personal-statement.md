@@ -59,6 +59,11 @@ Teacher training providers want to see your passion and that you understand the 
 
 Make sure you check your spelling and grammar in your application. You want to make the best possible impression.
 
+You can use ChatGPT or other artificial intelligence (AI) tools to help you write your personal statement. Remember that 
+
+*  AI tools are easy to notice because they use bland language and will not be able to give details about you as a person
+* your account to apply for teacher training may be blocked if you consistently submit personal statements that look like they have been written with AI tools
+
 ## Do I use the same personal statement for each application?
 
 You can use the same personal statement for every course you apply to.
