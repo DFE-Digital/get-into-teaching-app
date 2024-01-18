@@ -71,7 +71,7 @@ Teacher training advisers Chris Farr, Fran Lee, Sian Mills and Elaine Boyd have 
 
 ## Can you change the subject you teach?
 
-<strong>Fran:</strong> I've had people wanting to know if they train in geography can they move out of that subject area or become head of year. Once you get qualified teacher status (QTS) you can essentially teach anything as long as your headteacher supports you and you have the expertise to show you can do this. 
+<strong>Fran:</strong> People have asked me if they train in geography, for example, can they move out of that subject area or become head of year. Once you get qualified teacher status (QTS) you can essentially teach anything as long as your headteacher supports you and you have the expertise to show you can do this. 
 
 ## What are teacher pastoral care roles?
 
