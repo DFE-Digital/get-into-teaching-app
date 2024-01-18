@@ -37,7 +37,7 @@
         <% end %>
       </div>
 
-      <% if form.valid? %>
+      <% if form.subject.present? %>
         <% if funding_results.blank? %>
           <div class="call-to-action__text">
             <h3><%= sub_head %></h3>
