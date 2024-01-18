@@ -355,6 +355,9 @@ provider_groups:
       telephone: '01932 578682'
   South West:
     providers:
+    - header: Bath Spa University
+      name: Darren McKay
+      email: assessmentonly@bathspa.ac.uk
     - header: Cornwall School Centred Initial Teacher Training (Cornwall SCITT)
       link: https://www.cornwallscitt.org/
       name: Lex Blake
@@ -459,9 +462,9 @@ provider_groups:
       telephone: 0113 283 7123
       email: admissions@leedstrinity.ac.uk
     - header: North Lincolnshire SCITT Partnership
-      name: Jo Leedham
-      telephone: 01724 297950
-      email: jo.leedham@northlincs.gov.uk
+      name: Vicky Crossley
+      telephone: 01724 297119
+      email: vicky.crossley@northlincs.gov.uk
     - header: The Sheffield SCITT
       link: https://www.sheffieldscitt.org.uk/
       email: admin@sheffieldscitt.org.uk
