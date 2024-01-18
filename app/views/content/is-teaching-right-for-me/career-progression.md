@@ -67,7 +67,7 @@ Teacher training advisers Chris Farr, Fran Lee, Sian Mills and Elaine Boyd have 
 
 <strong>Sian:</strong> When I worked at a maintained primary state school it was quite traditional in terms of class teacher, head of year, deputy/assistant then headteacher. When I moved to a headship in an academy trust there was no deputy head. So you might not always go into a school that has a traditional structure. There’s not always a neat pathway.
 
-<strong>Chris:</strong> People may not realise there is much progression in teaching. They think they go into the world of the classroom and that’s it. Lots of teachers have added responsibilities they enjoy doing and find fulfilling. 
+<strong>Chris:</strong> People may not realise how much potential there is for progression in teaching. They think they go into the world of the classroom and that’s it. Lots of teachers have added responsibilities they enjoy doing and find fulfilling. 
 
 ## Can you change the subject you teach?
 
