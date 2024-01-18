@@ -103,7 +103,7 @@ To get a TLR you've got to have a proven track record. It’s not just a case of
 
 <strong>Fran:</strong> Realistically you’d want to do at least a year or two in the same setting before then thinking about applying for a role with more responsibility. But you have to prove your worth to get a teaching and learning responsibility (TLR) payment. 
 
-The headteacher at my school was looking to create an alternative for key stage 3 (KS3) pupils who weren’t able to access the curriculum properly. As part of a shift in my lead practitioner responsibility for English I was given a permanent TLR to research and implement this. I had to come up with case studies and a proposal. It's about showing you’re prepared to invest in your personal development and know what’s going on out there. You have to keep up with legislation and news and topical priorities. 
+The headteacher at my school was looking to create an alternative for key stage 3 (KS3) pupils who weren’t able to access the curriculum properly. As part of a shift in my lead practitioner responsibility for English I was given a permanent TLR to research and implement this. I had to come up with case studies and a proposal. It's about showing you’re prepared to invest in your personal development and know what’s going on out there. You have to keep up with legislation, news and topical priorities. 
 
 <strong>Sian:</strong> It may be the case that your school hasn’t got the budget for a TLR. So if you really want to take on more responsibility you may need to think about moving school.
 
