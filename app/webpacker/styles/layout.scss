@@ -72,11 +72,12 @@ section.container {
   flex-direction: column;
   margin: 1em 0;
 
-  > main.within-section, > .back-link {
+  > main.within-section,
+  > .back-link {
     margin: auto $indent-amount;
 
     @include mq($from: tablet) {
-      margin: 0 0;
+      margin: 0;
       width: 100%;
     }
   }
@@ -162,7 +163,7 @@ section.container {
     background-color: $grey;
     padding: 1em 0;
 
-     @include mq($from: tablet) {
+    @include mq($from: tablet) {
       padding: 3em 0;
     }
   }

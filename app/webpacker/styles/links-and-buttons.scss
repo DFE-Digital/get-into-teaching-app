@@ -184,10 +184,6 @@ body a.govuk-back-link {
   }
 }
 
-.button--secondary:hover {
-  background: $cta-grey-dark;
-}
-
 .call-to-action-icon-button {
   @include button;
   display: inline-block;
