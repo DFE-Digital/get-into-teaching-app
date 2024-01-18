@@ -228,10 +228,10 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      # - name: Lint SCSS
-      #   uses: actions-hub/stylelint@master
-      #   env:
-      #     PATTERN: "**/*.scss"
+      - name: Lint SCSS
+        uses: actions-hub/stylelint@master
+        env:
+          PATTERN: "**/*.scss"
 
       - name: Lint Ruby
         run: |-
