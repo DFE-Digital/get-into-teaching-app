@@ -125,7 +125,7 @@ As well as helping you understand the demands of a more senior role, a teaching 
 
 <strong>Elaine:</strong> If you’re driven you could probably get to headship in between 9 to 12 years. It took me longer but at the time it suited me to stay where I was.
 
-<strong>Chris:</strong> If you want to develop your leadership skills there are [national professional qualification (NPQ) leadership courses](https://www.gov.uk/guidance/national-professional-qualification-npq-courses#leadership-npqs) available to help teachers progress their careers.
+<strong>Chris:</strong> If you want to develop your leadership skills there are national professional qualification (NPQ) leadership courses available to help teachers progress their careers.
 
 ## How has teaching helped your professional development? 
 
