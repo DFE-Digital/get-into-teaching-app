@@ -229,9 +229,9 @@ jobs:
         uses: DFE-Digital/github-actions/set-up-environment@master
 
       - name: Lint SCSS
-        uses: actions-hub/stylelint@master
-        env:
-          PATTERN: "**/*.scss"
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true -e PATTERN="**/*.scss" \
+            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn scss-lint"
 
       - name: Lint Ruby
         run: |-
