@@ -2,7 +2,7 @@
   max-width: $content-max-width;
   display: flex;
   flex-direction: column;
-  gap: $indent-amount * 0.5;
+  gap: $indent-amount * .5;
   margin: 0 $indent-amount;
 
   @include mq($from: tablet) {

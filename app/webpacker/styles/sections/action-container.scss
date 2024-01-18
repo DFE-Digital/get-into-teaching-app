@@ -39,17 +39,17 @@
   &:after {
     content: "";
     position: absolute;
-    right: -$indent-amount * 0.5;
-    bottom: -$indent-amount * 0.5;
+    right: -$indent-amount * .5;
+    bottom: -$indent-amount * .5;
   }
 
   &:before {
-    width: $indent-amount * 0.5;
+    width: $indent-amount * .5;
     height: 100px;
   }
 
   &:after {
-    height: $indent-amount * 0.5;
+    height: $indent-amount * .5;
     width: 100px;
   }
 
