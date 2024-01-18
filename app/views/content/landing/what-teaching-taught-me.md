@@ -1,6 +1,6 @@
 ---
 title: "How teaching can help you grow"
-description: If you're thinking about teaching in England, an adviser can offer free one-to-one support as little or as often as you need it.
+description: We’ve partnered with Buzzfeed to show how a career in the classroom gives both pupils and teachers the opportunity to learn and grow.
 content:
     - content/landing/what-teaching-taught-me/header
     - content/landing/what-teaching-taught-me/collage

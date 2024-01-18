@@ -1,13 +1,8 @@
 <div class="row">
-  <div class="grey col-space-l">
-    <section class="col col-720 col-space-0">
-      <%= render Content::MailingListComponent.new(
-        title: "Find out more about the benefits of teaching",
-        intro: "Discover how exciting and rewarding teaching can be. Get free help and advice on getting into teacher training, tailored to you, straight to your inbox. Just answer a few quick questions about yourself.",
-        color: "transparent",
-        margin: false,
-        heading: :l
-      ) %>
-    </section>
-  </div>
+  <section class="col col-720">
+    <%= render Content::MailingListComponent.new(
+      title: "Find out more about the benefits of teaching",
+      intro: "Discover how exciting and rewarding teaching can be. Get free help and advice on getting into teacher training, tailored to you, straight to your inbox. Just answer a few quick questions about yourself.",
+    ) %>
+  </section>
 </div>
