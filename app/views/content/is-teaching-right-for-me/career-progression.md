@@ -129,4 +129,4 @@ As well as helping you understand the demands of a more senior role, a teaching 
 
 ## How has teaching helped your professional development? 
 
-<strong>Fran:</strong> Teaching helps anybody. You can be thrown into a unique situation every day in a classroom. A good teacher can recognise if they continue developing and learning and follow the theory side of education it’s always going to empower you as an individual, regardless of where you end up working. Teaching has allowed me to look at the theories behind education, the psychology and sociology, which I’d never have done had I not been a teacher. 
+<strong>Fran:</strong> Teaching helps anybody. You can be thrown into a unique situation every day in a classroom. A good teacher can recognise that if they continue developing and learning and follow the theory side of education, it’s always going to empower you as an individual, regardless of where you end up working. Teaching has allowed me to look at the theories behind education, the psychology and sociology, which I’d never have done had I not been a teacher. 
