@@ -443,6 +443,24 @@
 "static/images/content/grow/Smiling_Student.jpg":
   alt: "Smiling student in a classroom."
 
+# landing
+"static/images/content/landing/train-to-teach.jpg":
+  alt: "A geography teacher laughing with students in a classroom."
+"static/images/content/landing/train-to-teach-if-you-have-a-degree-1.jpg":
+  alt: "A biology teacher examining leaves with students."
+"static/images/content/landing/train-to-teach-if-you-have-a-degree-2.jpg":
+  alt: "A biology teacher examining leaves with students."
+"static/images/content/landing/how-to-fund-your-teacher-training-1.jpg":
+  alt: "A chemistry teacher teaching students about chemical reactions."
+"static/images/content/landing/how-to-fund-your-teacher-training-2.jpg":
+  alt: "Students learn about chemical reactions with a chemistry teacher."
+"static/images/content/landing/how-to-become-a-teacher-1.jpg":
+  alt: "Three teachers walking down a corridor."
+"static/images/content/landing/how-to-become-a-teacher-2.jpg":
+  alt: "A teacher looks over students sat around a table."
+"static/images/content/landing/how-much-do-teachers-get-paid-1.jpg":
+  alt: "A teacher discusses a topic with two students."
+
 # is teaching right for me
 "static/images/content/is-teaching-right-for-me/fellowship.jpg":
   alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
