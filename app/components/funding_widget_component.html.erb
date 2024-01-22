@@ -5,19 +5,20 @@
     <div class="call-to-action__text">
       <div class="call-to-action__form">
         <%= form_with(model: form, url: path, method: :get, local: true, html: { data: { "controller": "funding-widget", "funding-widget-target": 'form'}}) do |f| %>
-          <div class="field">
-            <%= tag.div(class: input_field_classes(:subject)) do %>
-              <%= f.label :subject, 'Choose the subject you want to teach' %>
-              <% if error_messages.any? %>
-               <div class="form__errors">
-                  <% error_messages.each do |error_message| %>
-                    <%= tag.div(error_message) %>
+          <%= tag.div(class: "govuk-form-group #{input_field_classes(:subject)}") do %>
+            <%= f.label :subject, 'Choose the subject you want to teach', class: 'govuk-label', id: 'funding_widget_subject_label' %>
+            <% if error_messages.any? %>
+              <div class="form__errors">
+                <% error_messages.each do |error_message| %>
+                  <%= tag.p(class:'govuk-error-message') do %>
+                    <span class="govuk-visually-hidden">Error:</span>
+                    <%= error_message %>
                   <% end %>
-                </div>
-              <% end %>
-              <%= f.select :subject, grouped_options_for_select(grouped_options, form.subject), { prompt: true }, { class: "govuk-select" } %>
+                <% end %>
+              </div>
             <% end %>
-          </div>
+            <%= f.select :subject, grouped_options_for_select(grouped_options, form.subject), { prompt: true }, { class: "govuk-select", aria: { describedby: "funding_widget_subject_label" }} %>
+          <% end %>
           <div class="actions">
             <%= f.button 'Continue', type: 'submit', class: 'button' %>
           </div>

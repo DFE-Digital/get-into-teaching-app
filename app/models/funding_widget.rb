@@ -7,7 +7,7 @@ class FundingWidget
 
   def content_errors
     errors.map do |e|
-      Pages::ContentError.new("#{e.message}", "#funding_widget_#{e.attribute}")
+      Pages::ContentError.new(e.message.to_s, "#funding_widget_#{e.attribute}")
     end
   end
 end

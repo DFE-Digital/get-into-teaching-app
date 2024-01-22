@@ -85,9 +85,9 @@ private
     if params[:funding_widget].present?
       @funding_widget = FundingWidget.new(funding_widget_params)
       @funding_widget.valid?
-      @funding_widget.content_errors.each{ |e| add_content_error(e) }
+      @funding_widget.content_errors.each { |e| add_content_error(e) }
     else
-      @funding_widget = FundingWidget.new()
+      @funding_widget = FundingWidget.new
     end
   end
 
