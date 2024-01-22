@@ -10,7 +10,7 @@
             <% if error_messages.any? %>
               <div class="form__errors">
                 <% error_messages.each do |error_message| %>
-                  <%= tag.p(class:'govuk-error-message') do %>
+                  <%= tag.p(class: 'govuk-error-message') do %>
                     <span class="govuk-visually-hidden">Error:</span>
                     <%= error_message %>
                   <% end %>
