@@ -40,24 +40,17 @@
 
   p {
     margin: 0;
+    padding: 0 1em 1em 1.5em;
+    font-weight: normal;
 
     span {
       white-space: nowrap;
       font-weight: normal;
     }
   }
-
-  p {
-    padding: 0 1em 1em 1.5em;
-    font-weight: normal;
-  }
-
+  
   .footer {
     padding: 0 1em 0 1.5em;
-  }
-
-  .footer {
-    padding-top: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
