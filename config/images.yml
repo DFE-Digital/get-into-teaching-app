@@ -1,223 +1,261 @@
 ---
 # hero
 "static/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg":
-  alt: "A teacher standing in a classroom"
+  # A teacher standing in a classroom
+  alt: ""
   variants:
     - "static/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445--mobile.jpg"
     - "static/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445--tablet.jpg"
 
 "static/images/content/hero-images/event-image.jpg":
-  alt: "A Get Into Teaching event in progress with people talking to teachers and advisers"
+  # A Get Into Teaching event in progress with people talking to teachers and advisers
+  alt: ""
   variants:
     - "static/images/content/hero-images/event-image--mobile.jpg"
     - "static/images/content/hero-images/event-image--tablet.jpg"
 
 "static/images/content/hero-images/cake.png":
-  alt: "A multicoloured cake with sprinkles."
+  # A multicoloured cake with sprinkles.
+  alt: ""
   variants:
     - "static/images/content/hero-images/cake--mobile.png"
     - "static/images/content/hero-images/cake--tablet.png"
 
 "static/images/content/hero-images/0001.jpg":
-  alt: "Maths teacher standing in front of a whiteboard with maths equations."
+  # Maths teacher standing in front of a whiteboard with maths equations.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0001--mobile.jpg"
     - "static/images/content/hero-images/0001--tablet.jpg"
 
 "static/images/content/hero-images/0002.jpg":
-  alt: "Teacher in a staff room talking to two colleagues sat on a sofa."
+  # Teacher in a staff room talking to two colleagues sat on a sofa.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0002--mobile.jpg"
     - "static/images/content/hero-images/0002--tablet.jpg"
 
 "static/images/content/hero-images/0003.jpg":
-  alt: "Male and female teacher talking in a staff room."
+  # Male and female teacher talking in a staff room.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0003--mobile.jpg"
     - "static/images/content/hero-images/0003--tablet.jpg"
 
 "static/images/content/hero-images/0004.jpg":
-  alt: "Maths teacher explaining a problem to a classroom of students using calculators."
+  # Maths teacher explaining a problem to a classroom of students using calculators.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0004--mobile.jpg"
     - "static/images/content/hero-images/0004--tablet.jpg"
 
 "static/images/content/hero-images/0005.jpg":
-  alt: "Teacher helping a pupil with their work in a classroom."
+  # Teacher helping a pupil with their work in a classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0005--mobile.jpg"
     - "static/images/content/hero-images/0005--tablet.jpg"
 
 "static/images/content/hero-images/0006.jpg":
-  alt: "Classroom full of pupils."
+  # Classroom full of pupils.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0006--mobile.jpg"
     - "static/images/content/hero-images/0006--tablet.jpg"
 
 "static/images/content/hero-images/0007.jpg":
-  alt: "Teacher talking to a pupil in a classroom."
+  # Teacher talking to a pupil in a classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0007--mobile.jpg"
     - "static/images/content/hero-images/0007--tablet.jpg"
 
 "static/images/content/hero-images/0008.jpg":
-  alt: "Teacher helping a child with their reading."
+  # Teacher helping a child with their reading.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0008--mobile.jpg"
     - "static/images/content/hero-images/0008--tablet.jpg"
 
 "static/images/content/hero-images/0009.jpg":
-  alt: "Teacher smiling in front of a maths display board."
+  # Teacher smiling in front of a maths display board.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0009--mobile.jpg"
     - "static/images/content/hero-images/0009--tablet.jpg"
 
 "static/images/content/hero-images/0010.jpg":
-  alt: "Child raising their hand in a classroom to answer a question."
+  # Child raising their hand in a classroom to answer a question.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0010--mobile.jpg"
     - "static/images/content/hero-images/0010--tablet.jpg"
 
 "static/images/content/hero-images/0011.jpg":
-  alt: "Child pointing something out to a teacher in the classroom."
+  # Child pointing something out to a teacher in the classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0011--mobile.jpg"
     - "static/images/content/hero-images/0011--tablet.jpg"
 
 "static/images/content/hero-images/0012.jpg":
-  alt: "Pupils listening to a science lesson."
+  # Pupils listening to a science lesson.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0012--mobile.jpg"
     - "static/images/content/hero-images/0012--tablet.jpg"
 
 "static/images/content/hero-images/0013.jpg":
-  alt: "Physics teacher explaining the concept of time to pupils on a whiteboard."
+  # Physics teacher explaining the concept of time to pupils on a whiteboard.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0013--mobile.jpg"
     - "static/images/content/hero-images/0013--tablet.jpg"
     - "static/images/content/blog/thumbnails/0013.jpg"
 
 "static/images/content/hero-images/0014.jpg":
-  alt: "Geography teacher laughing in a classroom in front of a map display."
+  # Geography teacher laughing in a classroom in front of a map display.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0014--mobile.jpg"
     - "static/images/content/hero-images/0014--tablet.jpg"
 
 "static/images/content/hero-images/0015.jpg":
-  alt: "Teacher working alongside another teacher, writing in a notebook."
+  # Teacher working alongside another teacher, writing in a notebook.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0015--mobile.jpg"
     - "static/images/content/hero-images/0015--tablet.jpg"
 
 "static/images/content/hero-images/0016.jpg":
-  alt: "Young boy listening in a classroom."
+  # Young boy listening in a classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0016--mobile.jpg"
     - "static/images/content/hero-images/0016--tablet.jpg"
 
 "static/images/content/hero-images/0017.jpg":
-  alt: "Maths teacher helping a pupil work out a problem."
+  # Maths teacher helping a pupil work out a problem.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0017--mobile.jpg"
     - "static/images/content/hero-images/0017--tablet.jpg"
 
 "static/images/content/hero-images/0018.jpg":
-  alt: "Young boy with a pencil behind his ear listening to a teacher."
+  # Young boy with a pencil behind his ear listening to a teacher.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0018--mobile.jpg"
     - "static/images/content/hero-images/0018--tablet.jpg"
-"static/images/content/hero-images/0019.jpg":
 
-  alt: "Student in a science lesson."
+"static/images/content/hero-images/0019.jpg":
+  # Student in a science lesson.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0019--mobile.jpg"
     - "static/images/content/hero-images/0019--tablet.jpg"
+
 "static/images/content/hero-images/0020.jpg":
-  alt: "Child standing in a classroom in front of a brightly coloured wall display."
+  # Child standing in a classroom in front of a brightly coloured wall display.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0020--mobile.jpg"
     - "static/images/content/hero-images/0020--tablet.jpg"
 
 "static/images/content/hero-images/0021.jpg":
-  alt: "Maths teacher explaining how to work out the area of a trapezium on a whiteboard."
+  # Maths teacher explaining how to work out the area of a trapezium on a whiteboard.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0021--mobile.jpg"
     - "static/images/content/hero-images/0021--tablet.jpg"
 
 "static/images/content/hero-images/0022.jpg":
-  alt: "Pupils listening to a maths teacher at the front of a classroom."
+  # Pupils listening to a maths teacher at the front of a classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0022--mobile.jpg"
     - "static/images/content/hero-images/0022--tablet.jpg"
 
 "static/images/content/hero-images/0023.jpg":
-  alt: "Classroom of smiling primary school children."
+  # Classroom of smiling primary school children.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0023--mobile.jpg"
     - "static/images/content/hero-images/0023--tablet.jpg"
 
 "static/images/content/hero-images/0024.jpg":
-  alt: "Maths teacher and pupil discussing a problem in a classroom."
+  # Maths teacher and pupil discussing a problem in a classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0024--mobile.jpg"
     - "static/images/content/hero-images/0024--tablet.jpg"
 
 "static/images/content/hero-images/0025.jpg":
-  alt: "A teacher training provider talking to an attendee at a teacher training event."
+  # A teacher training provider talking to an attendee at a teacher training event.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0025--mobile.jpg"
     - "static/images/content/hero-images/0025--tablet.jpg"
 
 "static/images/content/hero-images/0026.jpg":
-  alt: "A teacher talking to pupils in a classroom."
+  # A teacher talking to pupils in a classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0026--mobile.jpg"
     - "static/images/content/hero-images/0026--tablet.jpg"
 
 "static/images/content/hero-images/0027.jpg":
-  alt: "Grow as only a teacher can."
+  # Grow as only a teacher can.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0027--mobile.jpg"
     - "static/images/content/hero-images/0027--tablet.jpg"
 
 "static/images/content/hero-images/0028.jpg":
-  alt: "A teacher taking notes in a classroom."
+  # A teacher taking notes in a classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0028--mobile.jpg"
     - "static/images/content/hero-images/0028--tablet.jpg"
 
 "static/images/content/hero-images/0029.jpg":
-  alt: "A geography teacher talking to pupils in a classroom."
+  # A geography teacher talking to pupils in a classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0029--mobile.jpg"
     - "static/images/content/hero-images/0029--tablet.jpg"
 
 "static/images/content/hero-images/0030.jpg":
-  alt: "A science teacher talking to pupils in a classroom."
+  # A science teacher talking to pupils in a classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0030--mobile.jpg"
     - "static/images/content/hero-images/0030--tablet.jpg"
 
 "static/images/content/hero-images/0031.jpg":
-  alt: "A teacher walking down a school corridor."
+  # A teacher walking down a school corridor.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0031--mobile.jpg"
     - "static/images/content/hero-images/0031--tablet.jpg"
 
 "static/images/content/hero-images/0032.jpg":
-  alt: "An English teacher talking to pupils in a classroom."
+  # An English teacher talking to pupils in a classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0032--mobile.jpg"
     - "static/images/content/hero-images/0032--tablet.jpg"
 
 "static/images/content/hero-images/0034.jpg":
-  alt: "A language teacher talking to pupils in a classroom."
+  # A language teacher talking to pupils in a classroom.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0034--mobile.jpg"
     - "static/images/content/hero-images/0034--tablet.jpg"
 
 "static/images/content/hero-images/0035.jpg":
-  alt: "A teacher discusses text with two students."
+  # A teacher discusses text with two students.
+  alt: ""
   variants:
     - "static/images/content/hero-images/0035--mobile.jpg"
     - "static/images/content/hero-images/0035--tablet.jpg"
@@ -409,23 +447,32 @@
 
 # homepage
 "static/images/content/homepage/here-to-help.jpg":
-  alt: "Back of an adviser's T-shirt saying 'here to help' at a teacher training event."
+  # Back of an adviser's T-shirt saying 'here to help' at a teacher training event.
+  alt: ""
 "static/images/content/homepage/science-teacher.jpg":
-  alt: "A chemistry teacher standing in a science classroom in front of a periodic table."
+  # A chemistry teacher standing in a science classroom in front of a periodic table.
+  alt: ""
 "static/images/content/homepage/teacher-training-adviser.jpg":
-  alt: "Teacher training advisers at an event."
+  # Teacher training advisers at an event.
+  alt: ""
 "static/images/content/homepage/directory1.jpg":
-  alt: "A female teacher talks to a student in a classroom."
+  # A female teacher talks to a student in a classroom.
+  alt: ""
 "static/images/content/homepage/directory2.jpg":
-  alt: "A male teacher stands alone in a classroom looking at the camera."
+  # A male teacher stands alone in a classroom looking at the camera.
+  alt: ""
 "static/images/content/homepage/directory3.jpg":
-  alt: "An adviser talks to someone attending a event."
+  # An adviser talks to someone attending a event.
+  alt: ""
 "static/images/content/homepage/directory4.jpg":
-  alt: "Three teachers laughing and joking."
+  # Three teachers laughing and joking.
+  alt: ""
 "static/images/content/homepage/directory5.jpg":
-  alt: "A chemistry teacher with two students in a science classroom."
+  # A chemistry teacher with two students in a science classroom.
+  alt: ""
 "static/images/content/homepage/directory6.jpg":
-  alt: "An English teacher with a student."
+  # An English teacher with a student.
+  alt: ""
 
 # food for thought
 "static/images/content/food-for-thought/Jake_Athorn.jpg":
