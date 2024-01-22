@@ -1,15 +1,16 @@
 .quote {
-  margin: 0;
-  width: 100%;
+  margin: 2.5em 1.5rem;
 
   &--background-yellow {
-    @include quote($yellow);
+    @include quote($white);
+
+    border-left: 5px solid $pink;
 
     p {
-      @include fancy-quotes-before($white);
+      @include fancy-quotes-before($black);
 
       span {
-        @include fancy-quotes-after($white);
+        @include fancy-quotes-after($black);
       }
     }
   }
@@ -42,12 +43,17 @@
 
     span {
       white-space: nowrap;
+      font-weight: normal;
     }
   }
 
-  p,
+  p {
+    padding: 0 1em 1em 1.5em;
+    font-weight: normal;
+  }
+
   .footer {
-    padding: $indent-amount 25px $indent-amount 42px;
+    padding: 0 1em 0 1.5em;
   }
 
   .footer {
@@ -60,6 +66,7 @@
       display: inline-flex;
       gap: 1em;
       font-size: 1em;
+      font-weight: bold;
     }
 
     .name,

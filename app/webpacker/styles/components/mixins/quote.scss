@@ -20,20 +20,14 @@ $quote-color: $white;
 
 @mixin fancy-quotes-before($quote-color) {
   &:before {
-    @include quote-icon($quote-color);
-
-    content: open-quote;
-    left: 13px;
-    top: 10px;
+    color: $quote-color;
+    content: '"';
   }
 }
 
 @mixin fancy-quotes-after($quote-color) {
   &:after {
-    @include quote-icon($quote-color);
-
-    content: close-quote;
-    right: -28px;
-    top: -15px;
+    color: $quote-color;
+    content: '"';
   }
 }
