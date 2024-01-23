@@ -6,11 +6,11 @@
       <div class="call-to-action__form">
         <%= form_with(model: form, url: path, method: :get, local: true, html: { data: { "controller": "funding-widget", "funding-widget-target": 'form'}}) do |f| %>
           <%= tag.div(class: "govuk-form-group #{input_field_classes(:subject)}") do %>
-            <%= f.label :subject, 'Choose the subject you want to teach', class: 'govuk-label', id: 'funding_widget_subject_label' %>
+            <%= f.label :subject, 'Choose the subject you want to teach', class: 'govuk-label field', id: 'funding_widget_subject_label' %>
             <% if error_messages.any? %>
               <div class="form__errors">
                 <% error_messages.each do |error_message| %>
-                  <%= tag.p(class: 'govuk-error-message') do %>
+                  <%= tag.p(class: 'govuk-error-message field') do %>
                     <span class="govuk-visually-hidden">Error:</span>
                     <%= error_message %>
                   <% end %>
