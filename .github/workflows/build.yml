@@ -212,8 +212,6 @@ jobs:
            SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
 
-
-
   linting:
     name: Linting
     runs-on: ubuntu-latest
@@ -227,6 +225,10 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
       - name: Lint SCSS
         run: |-
@@ -257,6 +259,25 @@ jobs:
         run: |-
           docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
             ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn js-lint"
+
+      - name: Fetch secrets from key vault
+        if: failure()
+        uses: azure/CLI@v1
+        id: keyvault-yaml-secret
+        with:
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+           SLACK_COLOR: ${{env.SLACK_ERROR}}
+           SLACK_MESSAGE: ':alert: Lint failure  on commit ${{env.DOCKER_IMAGE_TEST}}  :sadparrot:'
+           SLACK_TITLE: Lint Failure
+           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
 
   javascript_tests:
     name: Javascript Tests
@@ -348,6 +369,14 @@ jobs:
           name: ${{ env.unit-tests-artifact-name }}_${{ matrix.ci_node_index }}
           path: ${{ github.workspace }}/out/*
 
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_ERROR}}
+          SLACK_TITLE: Failure in Unit
+          SLACK_MESSAGE: Error running Unit test for ${{env.APPLICATION}}
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
 
   sonarscanner:
     name: Sonar Scanner
@@ -413,6 +442,15 @@ jobs:
             ${{github.workspace}}/${{env.unit-tests-artifact-name}}_5/test-report-5.xml
            -Dsonar.ruby.coverage.reportPaths=${{github.workspace}}/code_coverage/coverage.json
            -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/${{env.rubocop-artifact-name}}/rubocop-result.json
+
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_ERROR}}
+          SLACK_TITLE: Failure in running sonarscanner
+          SLACK_MESSAGE: Error running sonarscanner for ${{env.APPLICATION}}
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
 
   review:
     name: Review Deployment Process
@@ -541,6 +579,15 @@ jobs:
           RELEASE_ID: ${{ steps.release.outputs.id }}
           TOKEN: ${{secrets.GITHUB_TOKEN}}
 
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_ERROR}}
+          SLACK_TITLE: Failure in Deploy to Development
+          SLACK_MESSAGE: Error deploying to development for ${{env.APPLICATION}}
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+
   owasp:
     name: OWASP Checks
     needs: [ development ]
@@ -552,6 +599,19 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v4
 
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Fetch secrets from key vault
+        uses: azure/CLI@v1
+        id: keyvault-yaml-secret
+        with:
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+
       - name: Vunerability Test
         uses: ./.github/workflows/actions/owasp
         id: deploy
@@ -560,6 +620,15 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           GITHUB_TOKEN:      ${{secrets.GITHUB_TOKEN}}
+
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_ERROR}}
+          SLACK_TITLE: Failure in OWASP Checks
+          SLACK_MESSAGE: Error running OWASP test for ${{env.APPLICATION}}
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
 
   test:
     name: Test Deployment
@@ -605,7 +674,7 @@ jobs:
           SLACK_COLOR: ${{env.SLACK_ERROR}}
           SLACK_TITLE: Failure in Post-Development Deploy
           SLACK_MESSAGE: Failure with initialising Test deployment for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
 
   integration:
     name: Run Integration Tests on test
@@ -641,6 +710,16 @@ jobs:
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v1
+        id: slack-secret
+        with:
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+
+
+      - name: Fetch secrets from key vault
+        uses: azure/CLI@v1
         id: keyvault-yaml-secret
         with:
           inlineScript: |
@@ -667,6 +746,16 @@ jobs:
           HTTP_USERNAME: ${{ steps.keyvault-yaml-secret.outputs.HTTP_USERNAME }}
           HTTP_PASSWORD: ${{ steps.keyvault-yaml-secret.outputs.HTTP_PASSWORD }}
           MAILSAC_API_KEY: ${{ steps.keyvault-yaml-secret.outputs.MAILSAC_API_KEY }}
+
+
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_ERROR}}
+          SLACK_TITLE: Failure in integration test
+          SLACK_MESSAGE: Failure  running integration test
+          SLACK_WEBHOOK: ${{ steps.slack-secret.outputs.SLACK_WEBHOOK }}
 
   production:
     name: Production Deployment
