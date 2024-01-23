@@ -88,7 +88,7 @@ If you trained to teach in Wales, your QTS will be automatically recognised in E
 
 If you trained to teach in Scotland or Northern Ireland, you can [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without any further fees or training.
 
-### QTS for non-UK teachers who qualified as a teacher outside England
+### QTS for non-UK citizens who qualified to teach outside the UK
 
 Depending on where you qualified, the subject you teach and your qualifications, you may be able to use a new professional recognition service, Apply for QTS in England. [Learn more about applying for QTS in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas#english-qualified-teacher-status-qts).
 
