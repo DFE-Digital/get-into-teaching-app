@@ -285,7 +285,8 @@
     - "static/images/content/blog/thumbnails/ben-breen.jpg"
 
 "static/images/content/blog/calculator.jpg":
-  alt: "A calculator on top of maths homework and a pencil case."
+  # A calculator on top of maths homework and a pencil case.
+  alt: ""
   variants:
     - "static/images/content/blog/thumbnails/calculator.jpg"
 
@@ -305,7 +306,8 @@
     - "static/images/content/blog/thumbnails/habiba-cabdi-teacher-applicant.jpg"
 
 "static/images/content/blog/interview.jpg":
-  alt: "A teacher training candidate being interviewed by a provider sitting at opposite sides of a desk."
+  # A teacher training candidate being interviewed by a provider sitting at opposite sides of a desk.
+  alt: ""
   variants:
     - "static/images/content/blog/thumbnails/interview.jpg"
 
@@ -335,7 +337,8 @@
     - "static/images/content/blog/thumbnails/olivia.jpg"
 
 "static/images/content/blog/pupil-chatting-to-teacher-in-classroom.jpg":
-  alt: "Languages teacher talking to a student in front of a whiteboard with Spanish phrases written on it."
+  # Languages teacher talking to a student in front of a whiteboard with Spanish phrases written on it.
+  alt: ""
   variants:
     - "static/images/content/blog/thumbnails/pupil-chatting-to-teacher-in-classroom.jpg"
 
@@ -345,27 +348,32 @@
     - "static/images/content/blog/thumbnails/right_provider.jpg"
 
 "static/images/content/blog/school-aisle.jpg":
-  alt: "The corridor of a school filled with children."
+  # The corridor of a school filled with children.
+  alt: ""
   variants:
     - "static/images/content/blog/thumbnails/school-aisle.jpg"
 
 "static/images/content/blog/schoolyard.jpg":
-  alt: "A school playground with secondary school children playing outdoors."
+  # A school playground with secondary school children playing outdoors.
+  alt: ""
   variants:
     - "static/images/content/blog/thumbnails/schoolyard.jpg"
 
 "static/images/content/blog/seminar-room.jpg":
-  alt: "PGCE lecturer at a whiteboard in a seminar room with teacher training students sitting at a table."
+  # PGCE lecturer at a whiteboard in a seminar room with teacher training students sitting at a table.
+  alt: ""
   variants:
     - "static/images/content/blog/thumbnails/seminar-room.jpg"
 
 "static/images/content/blog/staff-room.jpg":
-  alt: "Teacher in a staff room talking to two colleagues sat on a sofa."
+  # Teacher in a staff room talking to two colleagues sat on a sofa.
+  alt: ""
   variants:
     - "static/images/content/blog/thumbnails/staff-room.jpg"
 
 "static/images/content/blog/get-into-teaching.jpg":
-  alt: "A busy Get Into Teaching event with attendees having conversations with Teacher Training Advisers."
+  # A busy Get Into Teaching event with attendees having conversations with Teacher Training Advisers.
+  alt: ""
   variants:
     - "static/images/content/blog/thumbnails/get-into-teaching.jpg"
 
@@ -390,7 +398,7 @@
     - "static/images/content/blog/thumbnails/jessica-walmsley.jpg"
 
 "static/images/content/blog/thumbnails/stories-will.jpg":
-  alt: English teacher Will Fordham
+  alt: "English teacher Will Fordham"
 
 "static/images/content/blog/thumbnails/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
@@ -401,49 +409,49 @@
     - "static/images/content/blog/thumbnails/brooke-harvey.jpg"
 
 "static/images/content/blog/thumbnails/stories-peter.jpg":
-  alt: Ex-financeer, Peter
+  alt: "Ex-financeer, Peter"
 
 "static/images/content/blog/thumbnails/stories-gavin.jpg":
-  alt: Assistant headteacher, Gavin
+  alt: "Assistant headteacher, Gavin"
 
 "static/images/content/blog/thumbnails/stories-nathan.jpg":
-  alt: Nathan Sproule, teacher
+  alt: "Nathan Sproule, teacher"
 
 "static/images/content/blog/thumbnails/stories-emma.jpg":
-  alt: Trainee science teacher, Emma
+  alt: "Trainee science teacher, Emma"
 
 "static/images/content/blog/thumbnails/stories-paul.jpg":
-  alt: Paul Evason, assistant headteacher
+  alt: "Paul Evason, assistant headteacher"
 
 "static/images/content/blog/thumbnails/stories-sarah-f.jpg":
-  alt: Sarah Fisher, head of biology
+  alt: "Sarah Fisher, head of biology"
 
 "static/images/content/blog/thumbnails/stories-generic.jpg":
-  alt: Students enjoying a lesson in a classroom
+  alt: "Students enjoying a lesson in a classroom"
 
 "static/images/content/blog/thumbnails/stories-jon.jpg":
-  alt: Head of department, Jon Simmons
+  alt: "Head of department, Jon Simmons"
 
 "static/images/content/blog/thumbnails/stories-danny.jpg":
-  alt: PE teacher, Danny Holliday
+  alt: "PE teacher, Danny Holliday"
 
 "static/images/content/blog/thumbnails/stories-claire.jpg":
-  alt: Claire Johnson, physics teacher
+  alt: "Claire Johnson, physics teacher"
 
 "static/images/content/blog/thumbnails/stories-sandra.jpg":
-  alt: Inspirational teacher, Sandra.
+  alt: "Inspirational teacher, Sandra."
 
 "static/images/content/blog/thumbnails/stories-roger.jpg":
-  alt: Roger Brown, physics teacher
+  alt: "Roger Brown, physics teacher"
 
 "static/images/content/blog/thumbnails/stories-katie.jpg":
-  alt: Head of faculty, Katie Lockett
+  alt: "Head of faculty, Katie Lockett"
 
 "static/images/content/blog/thumbnails/chris-wallis.jpg":
-  alt: Product engineer turned science teacher, Chris Wallis
+  alt: "Product engineer turned science teacher, Chris Wallis"
 
 "static/images/content/blog/thumbnails/david-payling.jpg":
-  alt: Veteran and trainee teacher, Daivd Payling
+  alt: "Veteran and trainee teacher, David Payling"
 
 # homepage
 "static/images/content/homepage/here-to-help.jpg":
@@ -488,25 +496,34 @@
 
 # grow
 "static/images/content/grow/Smiling_Student.jpg":
-  alt: "Smiling student in a classroom."
+  # Smiling student in a classroom.
+  alt: ""
 
 # landing
 "static/images/content/landing/train-to-teach.jpg":
-  alt: "A geography teacher laughing with students in a classroom."
+  # A geography teacher laughing with students in a classroom.
+  alt: ""
 "static/images/content/landing/train-to-teach-if-you-have-a-degree-1.jpg":
-  alt: "A biology teacher examining leaves with students."
+  # A biology teacher examining leaves with students.
+  alt: ""
 "static/images/content/landing/train-to-teach-if-you-have-a-degree-2.jpg":
-  alt: "A biology teacher examining leaves with students."
+  # A biology teacher examining leaves with students.
+  alt: ""
 "static/images/content/landing/how-to-fund-your-teacher-training-1.jpg":
-  alt: "A chemistry teacher teaching students about chemical reactions."
+  # A chemistry teacher teaching students about chemical reactions.
+  alt: ""
 "static/images/content/landing/how-to-fund-your-teacher-training-2.jpg":
-  alt: "Students learn about chemical reactions with a chemistry teacher."
+  # Students learn about chemical reactions with a chemistry teacher.
+  alt: ""
 "static/images/content/landing/how-to-become-a-teacher-1.jpg":
-  alt: "Three teachers walking down a corridor."
+  # Three teachers walking down a corridor.
+  alt: ""
 "static/images/content/landing/how-to-become-a-teacher-2.jpg":
-  alt: "A teacher looks over students sat around a table."
+  # A teacher looks over students sat around a table.
+  alt: ""
 "static/images/content/landing/how-much-do-teachers-get-paid-1.jpg":
-  alt: "A teacher discusses a topic with two students."
+  # A teacher discusses a topic with two students.
+  alt: ""
 
 # is teaching right for me
 "static/images/content/is-teaching-right-for-me/fellowship.jpg":
@@ -516,45 +533,60 @@
 "static/images/content/is-teaching-right-for-me/Physics_MissHayre_4.jpg":
   alt: "Miss Hayre, Physics teacher"
 "static/images/content/is-teaching-right-for-me/collage1.jpg":
-  alt: "Teacher smiling in front of a maths display board."
+  # Teacher smiling in front of a maths display board.
+  alt: ""
 "static/images/content/is-teaching-right-for-me/collage2.jpg":
-  alt: "Teacher helping a pupil with their work in a classroom."
+  # Teacher helping a pupil with their work in a classroom.
+  alt: ""
 
 # how much do teachers get paid
 "static/images/content/how-much-do-teachers-get-paid/collage1.jpg":
-  alt: "Teacher smiling in front of a maths display board."
+  # Teacher smiling in front of a maths display board.
+  alt: ""
 "static/images/content/how-much-do-teachers-get-paid/collage2.jpg":
-  alt: "Maths teacher explaining a problem to a classroom of students using calculators."
+  # Maths teacher explaining a problem to a classroom of students using calculators.
+  alt: ""
 "static/images/content/how-much-do-teachers-get-paid/collage3.jpg":
-  alt: "Teacher working alongside another teacher, writing in a notebook."
+  # Teacher working alongside another teacher, writing in a notebook.
+  alt: ""
 "static/images/content/how-much-do-teachers-get-paid/collage4.jpg":
-  alt: "Three teachers having a conversation in the staff room."
+  # Three teachers having a conversation in the staff room.
+  alt: ""
 
 # event
 "static/images/content/event-signup/event-regional-online-listing.jpg":
-  alt: "An online Get Into Teaching event on a computer screen."
+  # An online Get Into Teaching event on a computer screen.
+  alt: ""
 "static/images/content/event-signup/event-regional-listing.jpg":
-  alt: "A busy Get Into Teaching event with people having one-on-one conversations with expert advisers and teachers"
+  # A busy Get Into Teaching event with people having one-on-one conversations with expert advisers and teachers
+  alt: ""
 "static/images/content/event-signup/event-regional-online.jpg":
-  alt: "An online Get Into Teaching event on a computer screen."
+  # An online Get Into Teaching event on a computer screen.
+  alt: ""
 "static/images/content/event-signup/event-regional.jpg":
-  alt: "A busy Get Into Teaching event with people having one-on-one conversations with expert advisers and teachers."
+  # A busy Get Into Teaching event with people having one-on-one conversations with expert advisers and teachers.
+  alt: ""
 
 # campus mailing list landing page
 "static/images/content/campus-mailing-list/campus-mailing-list.jpeg":
-  alt: "A smiling young man with a beard in a black leather jacket and black beanie hat stands in front of a screen with holes in."
+  # A smiling young man with a beard in a black leather jacket and black beanie hat stands in front of a screen with holes in.
+  alt: ""
 
 # get more from events page
 "static/images/content/events/collage1.jpeg":
-  alt: "A lady holding papers standing in front of someone smiling with other people and an event banner in the background."
+  # A lady holding papers standing in front of someone smiling with other people and an event banner in the background.
+  alt: ""
 "static/images/content/events/collage2.jpeg":
-  alt: "A man holding an iPad wearing a blue Get Into Teaching t-shirt talking to a lady with an event banner in the background."
+  # A man holding an iPad wearing a blue Get Into Teaching t-shirt talking to a lady with an event banner in the background.
+  alt: ""
 "static/images/content/events/teaching-event.jpeg":
-  alt: "A man smiling wearing a blue Get Into Teaching sweatshirt talking to a lady with banner behind them."
+  # A man smiling wearing a blue Get Into Teaching sweatshirt talking to a lady with banner behind them.
+  alt: ""
 
 # campus advisers landing page
 "static/images/content/campus-advisers/adviser.jpeg":
-  alt: "A smiling female adviser in a pink t-shirt standing in front of a Get Into Teaching stand."
+  # A smiling female adviser in a pink t-shirt standing in front of a Get Into Teaching stand.
+  alt: ""
 
 # subjects
 "static/images/content/subjects/rotna-roy.jpeg":
