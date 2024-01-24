@@ -107,13 +107,13 @@ In addition, if you have a subject specialism in languages, maths or science and
 Many teachers will not meet the requirements for QTS. If you’re not eligible, you may be able to [find an alternative route to QTS which better suits your circumstances](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk).
 
 
-### Find a teaching job in England  
+## Find a teaching job in England  
 
 To find a teaching job, you must apply to individual schools (not the Department for Education). If you need a Skilled Worker visa, you must find a school that can sponsor your visa.
 
 You can search for a teaching job through the government’s official [Teaching Vacancies service](https://teaching-vacancies.service.gov.uk/). Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas. Set up job alerts so you don’t miss out on new roles. 
 
-### Apply for your visa
+### Get a job, then apply for your visa
  
 Submit your application to a school that can sponsor visas, and if you are offered the job, you’ll then be able to apply for your visa. 
 
