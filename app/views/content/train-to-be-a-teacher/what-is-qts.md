@@ -92,6 +92,4 @@ If you trained to teach in Scotland or Northern Ireland, you can [apply for QTS 
 
 Depending on where you qualified, the subject you teach and your qualifications, you may be able to use a new professional recognition service, Apply for QTS in England. [Learn more about applying for QTS in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas#english-qualified-teacher-status-qts).
 
-If you are a UK citizen without QTS, you will not be able to use Apply for QTS in England unless you trained to teach in an eligible overseas country. Depending on your teaching experience and qualifications, you may want to consider the assessment only or teacher training routes to QTS. 
-
-[Get international qualified teacher status (iQTS)](/international-qualified-teacher-status) explains how to get QTS without visiting the UK. 
+Many teachers will not meet the requirements for QTS. If you’re not eligible, you may be able to [find an alternative route to QTS which better suits your circumstances](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk). 
