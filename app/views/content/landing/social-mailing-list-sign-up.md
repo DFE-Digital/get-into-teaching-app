@@ -3,6 +3,7 @@ title: "Sign up for emails"
 description: Free advice and support on how to become a teacher. Get the latest information sent straight to your inbox.
 content:
     - content/landing/social-mailing-list-sign-up/header
+    - content/landing/social-mailing-list-sign-up/content
     - content/landing/social-mailing-list-sign-up/mailing-list
 image: "static/images/content/hero-images/0027.jpg"
 colour: "pink"
