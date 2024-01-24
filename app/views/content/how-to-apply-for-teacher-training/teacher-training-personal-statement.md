@@ -63,7 +63,7 @@ When writing your personal statement you should make sure you check your spellin
 
 You can use ChatGPT or other artificial intelligence (AI) tools to help you write your personal statement. You should not rely on it to write your entire statement because:
 
-* AI tools use bland language and will not be able to give details about you as a person and using them may result in your application being unsuccessful
+* AI tools use bland language and will not be able to give details about you as a person. Using them may result in your application being unsuccessful
 
 * your account to apply for teacher training may be blocked if you consistently submit personal statements that look like they have been written with AI tools
 
