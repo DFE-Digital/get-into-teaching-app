@@ -16,7 +16,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/subjects/engineers-teach-physics/header"
-  - "content/subjects/engineers-teach-physics/article"
+  - "content/is-teaching-right-for-me/engineers-teach-physics/header"
+  - "content/is-teaching-right-for-me/engineers-teach-physics/article"
 ---
 

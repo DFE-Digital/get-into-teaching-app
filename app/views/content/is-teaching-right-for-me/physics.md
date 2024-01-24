@@ -16,7 +16,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/subjects/physics/header"
-  - "content/subjects/physics/article"
-  - "content/subjects/physics/adviser-promo-physics"
+  - "content/is-teaching-right-for-me/physics/header"
+  - "content/is-teaching-right-for-me/physics/article"
+  - "content/is-teaching-right-for-me/physics/adviser-promo-physics"
 ---
