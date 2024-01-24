@@ -113,7 +113,7 @@ To find a teaching job, you must apply to individual schools (not the Department
 
 You can search for a teaching job through the government’s official [Teaching Vacancies service](https://teaching-vacancies.service.gov.uk/). Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas. Set up job alerts so you don’t miss out on new roles. 
 
-### Apply for your visa
+### Get a job, then apply for your visa
  
 Submit your application to a school that can sponsor visas, and if you are offered the job, you’ll then be able to apply for your visa. 
 
