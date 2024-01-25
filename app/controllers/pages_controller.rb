@@ -82,12 +82,14 @@ private
   end
 
   def init_funding_widget
-    @funding_widget =
-      if params[:funding_widget].blank?
-        FundingWidget.new
-      else
-        FundingWidget.new(funding_widget_params).tap(&:valid?)
-      end
+    if params[:funding_widget].present?
+      @funding_widget = FundingWidget.new(funding_widget_params)
+      @funding_widget.valid?
+      @funding_widget.content_errors.each { |e| add_content_error(e) }
+      @content_errors_title = "There is a problem" unless @funding_widget.valid?
+    else
+      @funding_widget = FundingWidget.new
+    end
   end
 
   def render_page(path)

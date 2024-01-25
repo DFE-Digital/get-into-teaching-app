@@ -57,7 +57,16 @@ You could include:
 
 Teacher training providers want to see your passion and that you understand the bigger picture of teaching.
 
-Make sure you check your spelling and grammar in your application. You want to make the best possible impression.
+### How to write your personal statement
+
+When writing your personal statement you should make sure you check your spelling and grammar in your application. You want to make the best possible impression.
+
+You can use ChatGPT or other artificial intelligence (AI) tools to help you write your personal statement. You should not rely on it to write your entire statement because:
+
+* AI tools use bland language and will not be able to give details about you as a person. Using them may result in your application being unsuccessful
+
+* your account to apply for teacher training may be blocked if you consistently submit personal statements that look like they have been written with AI tools
+
 
 ## Do I use the same personal statement for each application?
 
