@@ -10,14 +10,14 @@
 
     <div class="main-section registration-with-side-images">
       <section class="signup-container">
-        <%= image_pack_tag(content_for?(:left_image) ? yield(:left_image) : 'images/content/mailing-list-signup/left.jpg', class: 'left-img hide-on-mobile hide-on-tablet', alt: "") %>
+        <%= image_pack_tag(content_for?(:left_image) ? yield(:left_image) : 'images/content/mailing-list-signup/left.jpg', class: 'left-img hide-on-mobile hide-on-tablet', **image_alt_attribs_for_text("")) %>
         <div class="signup-form">
-          <%= image_pack_tag(content_for?(:mobile_image) ? yield(:mobile_image) : 'images/content/mailing-list-signup/mobile.jpg', class: 'hide-on-desktop', alt: "") %>
+          <%= image_pack_tag(content_for?(:mobile_image) ? yield(:mobile_image) : 'images/content/mailing-list-signup/mobile.jpg', class: 'hide-on-desktop', **image_alt_attribs_for_text("")) %>
           <%= main_tag do %>
             <%= yield %>
           <% end %>
         </div>
-        <%= image_pack_tag(content_for?(:right_image) ? yield(:right_image) : 'images/content/mailing-list-signup/right.jpg', class: 'right-img hide-on-mobile hide-on-tablet', alt: "") %>
+        <%= image_pack_tag(content_for?(:right_image) ? yield(:right_image) : 'images/content/mailing-list-signup/right.jpg', class: 'right-img hide-on-mobile hide-on-tablet', **image_alt_attribs_for_text("")) %>
       </section>
     </div>
 
