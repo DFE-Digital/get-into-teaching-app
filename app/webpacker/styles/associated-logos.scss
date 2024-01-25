@@ -1,0 +1,14 @@
+.associated-logos {
+  > .associated-logos-holder {
+    @extend .col-horizontal;
+
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0 3em;
+
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+}
