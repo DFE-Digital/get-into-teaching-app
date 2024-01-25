@@ -2,7 +2,7 @@ module Content
   class MailingListComponent < ViewComponent::Base
     attr_reader :title, :intro, :color, :margin, :heading
 
-    def initialize(title:, intro:, color: "pink", margin: true, heading: :m)
+    def initialize(title:, intro: nil, color: "pink", margin: true, heading: :m)
       super
 
       @title = title
