@@ -270,15 +270,6 @@ jobs:
             echo "::add-mask::$SLACK_WEBHOOK"
             echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_MESSAGE: ':alert: Lint failure  on commit ${{env.DOCKER_IMAGE_TEST}}  :sadparrot:'
-           SLACK_TITLE: Lint Failure
-           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
-
   javascript_tests:
     name: Javascript Tests
     runs-on: ubuntu-latest
@@ -369,15 +360,6 @@ jobs:
           name: ${{ env.unit-tests-artifact-name }}_${{ matrix.ci_node_index }}
           path: ${{ github.workspace }}/out/*
 
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{env.SLACK_ERROR}}
-          SLACK_TITLE: Failure in Unit
-          SLACK_MESSAGE: Error running Unit test for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
-
   sonarscanner:
     name: Sonar Scanner
     runs-on: ubuntu-latest
@@ -442,15 +424,6 @@ jobs:
             ${{github.workspace}}/${{env.unit-tests-artifact-name}}_5/test-report-5.xml
            -Dsonar.ruby.coverage.reportPaths=${{github.workspace}}/code_coverage/coverage.json
            -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/${{env.rubocop-artifact-name}}/rubocop-result.json
-
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{env.SLACK_ERROR}}
-          SLACK_TITLE: Failure in running sonarscanner
-          SLACK_MESSAGE: Error running sonarscanner for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
 
   review:
     name: Review Deployment Process
@@ -746,16 +719,6 @@ jobs:
           HTTP_USERNAME: ${{ steps.keyvault-yaml-secret.outputs.HTTP_USERNAME }}
           HTTP_PASSWORD: ${{ steps.keyvault-yaml-secret.outputs.HTTP_PASSWORD }}
           MAILSAC_API_KEY: ${{ steps.keyvault-yaml-secret.outputs.MAILSAC_API_KEY }}
-
-
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{env.SLACK_ERROR}}
-          SLACK_TITLE: Failure in integration test
-          SLACK_MESSAGE: Failure  running integration test
-          SLACK_WEBHOOK: ${{ steps.slack-secret.outputs.SLACK_WEBHOOK }}
 
   production:
     name: Production Deployment
