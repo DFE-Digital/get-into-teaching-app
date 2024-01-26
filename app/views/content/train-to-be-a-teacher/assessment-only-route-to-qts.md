@@ -470,9 +470,9 @@ provider_groups:
       email: admin@sheffieldscitt.org.uk
     - header: Yorkshire and Humber Teacher Training
       link: https://www.yhtt.co.uk
-      name: Chris Fletcher
-      telephone: '01482 349611'
-      email: cfletcher@yhtt.co.uk
+      name: Kirstin Hilgenfeldt
+      telephone: 01482 686699
+      email: admin@yhtt.ac.uk
   National:
     providers:
     - header: TES Institute
