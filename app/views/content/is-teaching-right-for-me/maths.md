@@ -3,7 +3,7 @@ title: Become a maths teacher
 description: |-
     Find out how to become a maths teacher, including what you'll be teaching and what funding is available to help you train.
 subcategory: What to teach
-navigation: 5.43
+navigation: 5.46
 navigation_title: Maths
 navigation_description: Find out how to become a maths teacher.
 layout: "layouts/minimal"
@@ -17,5 +17,5 @@ keywords:
 content:
   - "content/is-teaching-right-for-me/maths/header"
   - "content/is-teaching-right-for-me/maths/article"
-  - "content/is-teaching-right-for-e/maths/adviser-promo-maths"
+  - "content/is-teaching-right-for-me/maths/adviser-promo-maths"
 ---
