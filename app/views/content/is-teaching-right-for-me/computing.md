@@ -1,5 +1,5 @@
 ---
-title: How to become a computing teacher
+title: Become a computing teacher
 description: |-
     Find out how to become a computing teacher, including what you'll be teaching and what funding is available to help you train.
 backlink: "../../"
@@ -9,7 +9,7 @@ navigation_title: Computing
 navigation_description: Discover what it'd be like to be a computing teach and how you would encourage pupils to learn new digital skills.
 layout: "layouts/minimal"
 colour: "yellow"
-image: "static/images/content/hero-images/0004.jpg"
+image: "static/images/content/hero-images/0035.jpg"
 keywords:
   - computing
   - teaching computing
