@@ -222,6 +222,18 @@
     - "static/images/content/hero-images/0035--mobile.jpg"
     - "static/images/content/hero-images/0035--tablet.jpg"
 
+"static/images/content/hero-images/0036.jpg":
+  alt: "A language teacher talking to pupils in a classroom."
+  variants:
+    - "static/images/content/hero-images/0036--mobile.jpg"
+    - "static/images/content/hero-images/0036--tablet.jpg"
+
+"static/images/content/hero-images/0037.jpg":
+  alt: "A teacher discusses text with two students."
+  variants:
+    - "static/images/content/hero-images/0037--mobile.jpg"
+    - "static/images/content/hero-images/0037--tablet.jpg"
+
 "static/images/content/ttalianne.jpg":
   alt: "Lianne, an explore teaching adviser"
 
