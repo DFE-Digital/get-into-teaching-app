@@ -9,7 +9,7 @@ navigation_title: Computing
 navigation_description: Discover what it'd be like to be a computing teach and how you would encourage pupils to learn new digital skills.
 layout: "layouts/minimal"
 colour: "yellow"
-image: "static/images/content/hero-images/0035.jpg"
+image: "static/images/content/hero-images/0036.jpg"
 keywords:
   - computing
   - teaching computing
