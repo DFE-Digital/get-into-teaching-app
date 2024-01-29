@@ -13,7 +13,7 @@ module Content
 
     def icon
       tag.div(class: "blocks__icon") do
-        image_pack_tag(@icon_image, size: @icon_size, alt: "")
+        image_pack_tag(@icon_image, size: @icon_size, **helpers.image_alt_attribs_for_text(""))
       end
     end
   end
