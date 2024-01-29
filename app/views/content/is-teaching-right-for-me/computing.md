@@ -16,7 +16,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/subjects/computing/header"
-  - "content/subjects/computing/article"
-  - "content/subjects/computing/adviser-promo-computing"
+  - "content/is-teaching-right-for-me/computing/header"
+  - "content/is-teaching-right-for-me/computing/article"
+  - "content/is-teaching-right-for-me/computing/adviser-promo-computing"
 ---
