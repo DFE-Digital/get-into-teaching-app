@@ -113,7 +113,7 @@ You should also be able to use eligibility for a bursary in your [visa applicati
 
 You do not need to pay an agent or any other third party to access a bursary or scholarship. Any agency or person offering to help you access a bursary may be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
-[Learn more about bursaries and scholarships for physics and languages](/funding-and-support/scholarships-and-bursaries)
+[Learn more about bursaries and scholarships for physics and languages](/funding-and-support/scholarships-and-bursaries).
 
 ## Student loans
 
