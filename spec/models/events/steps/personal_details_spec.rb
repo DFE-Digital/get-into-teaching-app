@@ -36,6 +36,12 @@ describe Events::Steps::PersonalDetails do
     end
   end
 
+  describe "#export" do
+    it "does not include sub_channel_id" do
+      expect(instance.export).not_to include("sub_channel_id")
+    end
+  end
+
   describe "#channel_ids" do
     it "fetches candidate event subscription channels from the API" do
       picklist_items_api = instance_double(GetIntoTeachingApiClient::PickListItemsApi)
