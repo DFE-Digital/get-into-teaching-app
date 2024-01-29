@@ -96,6 +96,11 @@
     margin-left: $indent-amount;
   }
 
+  .quote--inline-full {
+    margin-left: $indent-amount;
+    margin-right: $indent-amount;
+  }
+
   .quote:not(.quote--inline-left):not(.quote--inline-right) {
     .footer {
       flex-direction: row;

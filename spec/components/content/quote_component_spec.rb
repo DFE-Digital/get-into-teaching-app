@@ -73,6 +73,12 @@ describe Content::QuoteComponent, type: :component do
     it { is_expected.to have_css(".quote--inline-left") }
   end
 
+  context "when inline full" do
+    let(:inline) { "full" }
+
+    it { is_expected.to have_css(".quote--inline-full") }
+  end
+
   context "when background grey" do
     let(:background) { "grey" }
 
@@ -105,7 +111,7 @@ describe Content::QuoteComponent, type: :component do
 
     it do
       expect { described_class.new(text: text, inline: "bottom") }.to \
-        raise_error(ArgumentError, "inline must be right or left")
+        raise_error(ArgumentError, "inline must be right or left or full")
     end
 
     it do

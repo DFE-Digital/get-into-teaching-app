@@ -23,7 +23,7 @@ module Content
 
       fail(ArgumentError, "text must be present") if text.blank?
       fail(ArgumentError, "background must be yellow or grey") unless %w[yellow grey white].any?(background)
-      fail(ArgumentError, "inline must be right or left") unless inline.nil? || %w[right left].any?(inline)
+      fail(ArgumentError, "inline must be right or left or full") unless inline.nil? || %w[right left full].any?(inline)
     end
 
     def show_footer?
