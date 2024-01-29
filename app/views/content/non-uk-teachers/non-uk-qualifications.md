@@ -92,7 +92,7 @@ You will also need to:
 * have the health and physical capacity to train to teach
 * undergo safeguarding and criminal record checks carried out by your training provider or employer
 
-### Help comparing English and international qualifications
+## Help comparing English and international qualifications
 
 We can check your degree and other qualifications meet the standards set for English teacher training. 
 
@@ -108,7 +108,7 @@ When you make your application for teacher training, some teacher training provi
 A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. We can help you with a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this.
 
 
-### English language, maths and science proficiency
+## English language, maths and science proficiency
 
 Your English language qualification could be evidence you’ve reached a certain standard in an English language test, for example one of the following: 
 
@@ -118,7 +118,7 @@ Your English language qualification could be evidence you’ve reached a certain
 
 If you haven’t passed an English language test like this, or do not have qualifications in maths or science which are the same standard as grade 4 GCSE, some teacher training providers will let you sit tests in these subjects. It’s best to contact them to ask about their policy before you apply. 
 
-### If you do not have a university degree
+## If you do not have a university degree
 
 If you do not have a degree, you can apply to study a 3 to 4 year [undergraduate course in England](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) which combines a teaching degree with [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
