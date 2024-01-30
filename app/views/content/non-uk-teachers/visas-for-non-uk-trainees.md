@@ -7,6 +7,9 @@ related_content:
     Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
+navigation: 20.30
+navigation_title: Apply for your visa
+navigation_description: Learn more about applying for a Student or Skilled worker visa to train to teach in England.
 date: "2021-05-27"
 image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"
