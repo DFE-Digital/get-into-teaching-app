@@ -36,7 +36,7 @@ keywords:
   - Statement
   - Comparability
 ---
-The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) supports and encourages schools and training providers to recruit Ukrainian teachers and teacher trainees. 
+The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) supports and encourages Ukrainian teachers and teacher trainees seeking jobs and training places. 
 
 We can help if you’re interested in teaching children aged 5 to 18. If you'd like to teach other age groups, try [teaching in a university](https://nationalcareers.service.gov.uk/job-profiles/higher-education-lecturer) or [teaching in further education](https://www.teach-in-further-education.campaign.gov.uk/). 
 
@@ -46,7 +46,7 @@ If you're coming to the UK from Ukraine, [check what you need to do before you t
 
 ### Check if you are eligible for an international relocation payment worth £10,000
 
-The international relocation payment (IRP) is a single payment of £10,000 which the UK government is making available to non-UK trainees and teachers of languages and physics. To be eligible, you must be coming to England to work or train in the 2023 to 2024 academic year. 
+To be eligible for the international relocation payment, you must be coming to England to teach or train to teach languages or physics in the 2023 to 2024 academic year. 
 
 [Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
 
@@ -69,7 +69,7 @@ If you’re not sure of the status of your visa, check:
 
 If you are already in the UK under a [different type of visa](https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support) (for example, a visitor or seasonal worker visa) you can apply to the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme). 
 
-### Best visa for Ukrainians wanting to stay in the UK long-term
+### Staying in the UK long-term
 
 If you are interested in working as a teacher and applying for [indefinite leave to remain in the UK](https://www.gov.uk/indefinite-leave-to-remain), you should consider a [skilled worker visa](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).   
 
@@ -77,7 +77,6 @@ Time spent in the UK under the skilled worker visa counts towards an application
 You can apply for a skilled worker visa whichever type of visa you currently have allowing you to stay in the UK. 
 
 ### What you’ll need to pass safeguarding and criminal records checks
-
 
 For safeguarding reasons, schools will assess your suitability to teach from a range of different sources, including:
 
@@ -94,8 +93,6 @@ Teacher training providers will ask for:
 
 You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mvs.gov.ua/app/landing) for a criminal record check, which will be emailed to you. You can then contact the [Ukrainian Embassy in the UK](https://uk.mfa.gov.ua/en) for a translation of the criminal record check and a letter confirming its validity.
 
-We understand it might not be possible to provide all this evidence. However, it’s helpful to show schools and training providers you have made every effort to do so. They can then reach a decision about your suitability, looking at the evidence available. 
-
 ### Help proving your professional qualification to training providers and employers
 
 UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. If you are applying to train to teach, you can [get your statement of comparability for free](#get-help-with-international-qualifications).
@@ -107,6 +104,8 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 * teaching skills and experience you can demonstrate to an employer
 * to pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
 * a high standard of written and spoken English – for example, [Common European Framework of Reference for Languages, English level B2](https://www.efset.org/cefr/b2/) 
+
+### English qualified teacher status (QTS)
 
 [Teach in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas) give information about: 
 
