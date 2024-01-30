@@ -20,12 +20,12 @@ describe Content::QuoteComponent, type: :component do
   let(:name) { "name" }
   let(:job_title) { "job-title" }
   let(:inline) { nil }
-  let(:background) { "yellow" }
+  let(:background) { "white" }
   let(:large) { false }
 
   describe "quote classes" do
     it { is_expected.to have_css(".quote") }
-    it { is_expected.to have_css(".quote--background-yellow") }
+    it { is_expected.to have_css(".quote--background-white") }
   end
 
   describe "quote text" do
@@ -73,12 +73,6 @@ describe Content::QuoteComponent, type: :component do
     it { is_expected.to have_css(".quote--inline-left") }
   end
 
-  context "when inline full" do
-    let(:inline) { "full" }
-
-    it { is_expected.to have_css(".quote--inline-full") }
-  end
-
   context "when background grey" do
     let(:background) { "grey" }
 
@@ -111,12 +105,12 @@ describe Content::QuoteComponent, type: :component do
 
     it do
       expect { described_class.new(text: text, inline: "bottom") }.to \
-        raise_error(ArgumentError, "inline must be right or left or full")
+        raise_error(ArgumentError, "inline must be right or left")
     end
 
     it do
       expect { described_class.new(text: text, background: "green") }.to \
-        raise_error(ArgumentError, "background must be yellow or grey")
+        raise_error(ArgumentError, "background must be grey or white")
     end
   end
 end

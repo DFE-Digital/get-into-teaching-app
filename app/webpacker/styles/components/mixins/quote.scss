@@ -1,5 +1,5 @@
-$bg-color: $yellow;
-$quote-color: $white;
+$bg-color: $white;
+$quote-color: $black;
 
 @mixin quote-icon($quote-color) {
   position: absolute;
@@ -18,14 +18,14 @@ $quote-color: $white;
   }
 }
 
-@mixin fancy-quotes-before($quote-color) {
+@mixin simple-quotes-before($quote-color) {
   &:before {
     color: $quote-color;
     content: '"';
   }
 }
 
-@mixin fancy-quotes-after($quote-color) {
+@mixin simple-quotes-after($quote-color) {
   &:after {
     color: $quote-color;
     content: '"';

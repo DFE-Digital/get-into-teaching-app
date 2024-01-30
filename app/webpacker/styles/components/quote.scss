@@ -1,35 +1,30 @@
 .quote {
   margin: 2.5em 1.5rem;
 
-  &--background-yellow {
+  &--background-white {
     @include quote($white);
 
     border-left: 5px solid $pink;
 
     p {
-      @include fancy-quotes-before($black);
+      @include simple-quotes-before($black);
 
       span {
-        @include fancy-quotes-after($black);
+        @include simple-quotes-after($black);
       }
     }
   }
 
-  &--background-grey,
-  &--background-white {
+  &--background-grey {
     @include quote($grey);
 
     p {
-      @include fancy-quotes-before($pink);
+      @include simple-quotes-before($pink);
 
       span {
-        @include fancy-quotes-after($pink);
+        @include simple-quotes-after($pink);
       }
     }
-  }
-
-  &--background-white {
-    @include quote($white);
   }
 
   &--large {

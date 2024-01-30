@@ -8,7 +8,7 @@ module Content
       job_title: nil,
       image: nil,
       inline: nil,
-      background: "yellow",
+      background: "white",
       large: false
     )
       super
@@ -22,8 +22,8 @@ module Content
       @large = large
 
       fail(ArgumentError, "text must be present") if text.blank?
-      fail(ArgumentError, "background must be yellow or grey") unless %w[yellow grey white].any?(background)
-      fail(ArgumentError, "inline must be right or left or full") unless inline.nil? || %w[right left full].any?(inline)
+      fail(ArgumentError, "background must be grey or white") unless %w[grey white].any?(background)
+      fail(ArgumentError, "inline must be right or left") unless inline.nil? || %w[right left].any?(inline)
     end
 
     def show_footer?
