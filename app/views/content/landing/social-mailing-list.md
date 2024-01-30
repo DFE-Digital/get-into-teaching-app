@@ -5,7 +5,7 @@ content:
     - content/landing/social-mailing-list/header
     - content/landing/social-mailing-list/mailing-list
 image: "static/images/content/hero-images/0027.jpg"
-colour: "pink"
+colour: "grow"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true
