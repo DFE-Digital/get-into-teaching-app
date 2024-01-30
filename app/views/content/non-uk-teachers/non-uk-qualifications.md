@@ -128,7 +128,7 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 Have you spoken to one of our advisers to check have the required qualifications for teacher training in England? They can also help you submit your application. 
 
-Learn more about [how to apply for teacher training](/how-to-apply-for-teacher-training/teacher-training-application)
+Learn more about [how to search and apply for teacher training courses](/non-uk-teachers/train-to-teach-in-england-as-an-international-student/#search-and-apply-for-teacher-training-courses).
 
 ## Contact
 
