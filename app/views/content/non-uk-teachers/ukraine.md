@@ -36,8 +36,7 @@ keywords:
   - Statement
   - Comparability
 ---
-
-Overseas teachers enrich the lives of students and add value to schools and the wider community. The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) wants to help Ukrainian refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
+The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) supports and encourages schools and training providers to recruit Ukrainian teachers and teacher trainees. 
 
 We can help if you’re interested in teaching children aged 5 to 18. If you'd like to teach other age groups, try [teaching in a university](https://nationalcareers.service.gov.uk/job-profiles/higher-education-lecturer) or [teaching in further education](https://www.teach-in-further-education.campaign.gov.uk/). 
 
@@ -109,6 +108,16 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 * to pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
 * a high standard of written and spoken English – for example, [Common European Framework of Reference for Languages, English level B2](https://www.efset.org/cefr/b2/) 
 
+[Teach in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas) give information about: 
+
+* how teachers who qualified in Ukraine can apply for English qualified teacher status without further fees or training 
+
+* finding a teaching job in England 
+
+* life as a teacher in England 
+
+
+
 ### Meeting the standard for written and spoken English
 
 Most local authorities (also called 'councils') offer English to Speakers of Other Languages (ESOL) courses as part of adult education.
@@ -124,28 +133,10 @@ You can also learn English with a private provider. Well respected English langu
 * [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl)
 * [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/)
 
-### Qualified teacher status
-
-[Qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) is the professional status teachers in England gain at the end of their teacher training. Schools use QTS as a measure of teaching skills and experience, so you will find it much easier to get a teaching job in England if you have QTS.
-
-### Apply for QTS in England
-
-Qualified teachers from Ukraine who [meet the criteria for QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) can [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without paying a fee or undergoing more training. 
-
 ### Assessment only QTS
 If you find you do not meet the eligibility criteria to apply for QTS, you could consider assessment only QTS. This means you can work in an English school and, alongside your job, apply to an English teacher training provider who will assess if you meet the standards for English QTS.
 
 Check with [assessment only training providers](/train-to-be-a-teacher/assessment-only-route-to-qts) for more information about eligibility.
-
-### Apply for a teaching job
-
-To find a teaching job, you must apply to individual schools (not DfE). [Search for teaching jobs](https://teaching-vacancies.service.gov.uk/) by region, subject specialism and age group. 
-
-You could also consider [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system working in a teaching assistant or support role before you apply for teaching jobs. [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) also lists these jobs. 
-
-For a short-term unpaid placement, you can [request school experience in a primary or secondary school in England](https://schoolexperience.education.gov.uk/). 
-
-Most teaching vacancies are advertised in March, April or the first half of May, with jobs starting at the beginning of the school year in September. Set up a [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) job alert to be updated about opportunities throughout the year.
 
 ### Other teaching job options
 
@@ -153,22 +144,10 @@ Most teaching vacancies are advertised in March, April or the first half of May,
 
 [Find your local authority ('council')](https://www.gov.uk/find-local-council) and then search their website for teaching roles.
 
-### Tips on applying 
+You could also consider [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system working in a teaching assistant or support role before you apply for teaching jobs. [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) also lists these jobs. 
 
-As part of your application, schools will usually ask for your:
+For a short-term unpaid placement, you can [request school experience in a primary or secondary school in England](https://schoolexperience.education.gov.uk/). 
 
-* educational and professional qualifications
-* employment history
-* personal statement
-* references
-
-Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school. 
-
-[Get tips on writing a personal statement](https://www.tes.com/jobs/careers-advice/application-and-interview/how-write-perfect-teaching-personal-statement).
-
-Some schools may ask for a curriculum vitae (CV) – [get tips on writing a CV](https://nationalcareers.service.gov.uk/careers-advice/cv-sections).
-
-If you're shortlisted, you’ll be invited for interview and asked to teach part of a class. If the school makes you a conditional offer, you’ll then have to pass [safeguarding and criminal records checks](#what-youll-need-to-pass-safeguarding-and-criminal-records-checks).
 
 ### Salaries and benefits
 
@@ -186,9 +165,13 @@ You have the right to apply to train to teach in England if you are resident in 
 * [the Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 * [the Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
-### When to apply for teacher training
+[Train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student) gives information about: 
 
-Applications for teacher training open in October for courses starting the following year, usually in September. Applications remain open right up until courses start, however, it's best to apply as early as you can. 
+* the qualifications you will need to apply for teacher training 
+
+* how to apply 
+
+* help you can get with your application 
 
 If you intend to [apply for teacher training](https://www.gov.uk/apply-for-teacher-training), you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain valuable experience until your teacher training course starts. 
 
@@ -202,59 +185,7 @@ Ukrainian refugees in the UK under [the Ukraine Family Scheme visa](https://www.
 
 If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#check-the-status-of-your-visa) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
-Teacher training in England takes 1 year of full-time study and leads to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). At the end of your training you can apply for paid teaching jobs.
-
-### What you’ll need
-
-To train to teach children aged 11 to 18 in secondary school, you’ll need:
-
-* a bachelor’s degree (this can be from a university outside the UK)
-* to meet a standard in English and maths equivalent to a grade 4 GCSE
-
-To teach children aged 3 to 11 in primary school, you will also need to meet a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
-
-A GCSE is an academic qualification awarded for exams in England, usually taken at age 16.
-
-You will also need to:
-
-* have the health and physical capacity to train to teach
-* undergo safeguarding and criminal record checks carried out by your training provider or employer
-* show your training provider you meet their standards for maths and English (you’ll usually have to show you’ve passed an [English language test](#meeting-the-standard-for-written-and-spoken-english))
-
-### Get help applying for teacher training
-
-To get advice about training to teach, you can:
-
-* call +44 (0) 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England – calls are free within the UK but will otherwise be charged at your standard rate
-* use the live chat service at the bottom of this page
-* [sign up to get a dedicated adviser](/teacher-training-adviser/sign_up/identity) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
-
-### Get help with international qualifications
-
-If your qualifications come from a non-UK institution, your teacher training provider may want to see a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) from UK ENIC. A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
-
-Call us on +44 (0) 800 389 2500 for:
-
-* guidance on the UK equivalents of your qualifications
-* a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this
-* advice about what to do if you do not have English, maths and science qualifications of grade 4 GCSE standard
-
-
-### How to find and apply for a teacher training course
-
-[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) that lead to QTS by region, subject and age group.
-
-Then, you can [apply for teacher training](https://www.gov.uk/apply-for-teacher-training). 
- 
-### If you do not have a university degree
-
-If you do not have a degree, you can [apply to study a 3 to 4 year undergraduate course](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) in England which combines a teaching degree with QTS. When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
-
-The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) has lots of helpful information about studying at an English university.
-
 ### Further information
-
-[Find out more about training to be a teacher in England](/train-to-be-a-teacher). 
 
 Find out what financial support is available to [fund your training](/funding-and-support) if you are in the UK under the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
 
