@@ -1,5 +1,6 @@
 ---
 title: "Apply for your visa to train to teach in England"
+subcategory: Train to teach in England as a non-UK citizen
 description: |-
   Learn more about types of visa non-UK citizens will need to study or work in England, and how to apply.
 related_content:

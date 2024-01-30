@@ -1,5 +1,6 @@
 ---
 title: "Ukrainian teachers and trainees coming to the UK"
+subcategory: Train to teach in England as a non-UK citizen
 description: |-
   Advice for Ukrainian refugees who wish to teach or train to teach in England.
 related_content:
