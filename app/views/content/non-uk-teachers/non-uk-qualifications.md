@@ -10,7 +10,7 @@ promo_content:
     - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.20
 navigation_title: Check your eligibility to train to teach in England
-navigation_description: Find out what qualifications you need to train to teach in England and get help comparing non-UK and English qualifications.
+navigation_description: Before you apply, find out what qualifications you need to train to teach in England and get help comparing non-UK and English qualifications.
 date: "2021-05-27"
 image: "static/images/content/hero-images/0003.jpg"
 backlink: "../../"
@@ -70,7 +70,7 @@ keywords:
 
 $new-international-funding$
 
-Before you apply for teacher training in England, you must check that you have the right qualifications. If you gained your qualifications outside the UK, we can help you check that they meet the required standard. 
+Before you apply for teacher training in England, you must check that you have the right qualifications. If you gained your qualifications outside the UK, we can help you check they meet the required standard. 
 
 ## Already a qualified teacher?
 
@@ -123,6 +123,12 @@ If you haven’t passed an English language test like this, or do not have quali
 If you do not have a degree, you can apply to study a 3 to 4 year [undergraduate course in England](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) which combines a teaching degree with [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) has lots of helpful information about studying at an English university.
+
+## How to apply
+
+Have you spoken to one of our advisers to check have the required qualifications for teacher training in England? They can also help you submit your application. 
+
+Learn more about [how to apply for teacher training](/how-to-apply-for-teacher-training/teacher-training-application)
 
 ## Contact
 
