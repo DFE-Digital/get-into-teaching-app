@@ -44,14 +44,14 @@ We can help if you’re interested in teaching children aged 5 to 18. If you'd l
 
 If you're coming to the UK from Ukraine, [check what you need to do before you travel and what to do after you arrive](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine).
 
-### Check if you are eligible for an international relocation payment worth £10,000
+### Get an international relocation payment worth £10,000
 
 To be eligible for the international relocation payment, you must be coming to England to teach or train to teach languages or physics in the 2023 to 2024 academic year. 
 
 [Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
 
 
-### Check the status of your visa
+### Visas giving you the right to teach or train to teach in England
 
 You already have the right to work or train as a teacher in England if you are in the UK on (one of the following):
 
@@ -76,9 +76,9 @@ If you are interested in working as a teacher and applying for [indefinite leave
 Time spent in the UK under the skilled worker visa counts towards an application for permanent residence. You will still need to meet the eligibility requirements for this type of visa.
 You can apply for a skilled worker visa whichever type of visa you currently have allowing you to stay in the UK. 
 
-### What you’ll need to pass safeguarding and criminal records checks
+### Safeguarding and criminal records checks
 
-For safeguarding reasons, schools will assess your suitability to teach from a range of different sources, including:
+Schools will assess your suitability to teach from a range of different sources, including:
 
 
 * 2 references from previous employers
@@ -88,12 +88,12 @@ For safeguarding reasons, schools will assess your suitability to teach from a r
 
 Teacher training providers will ask for:
 
-* evidence that applicants for teacher training have a bachelor’s degree from a university (non-UK or in the UK)
+* evidence you have a bachelor’s degree from a university (non-UK or in the UK)
 * a criminal record check
 
 You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mvs.gov.ua/app/landing) for a criminal record check, which will be emailed to you. You can then contact the [Ukrainian Embassy in the UK](https://uk.mfa.gov.ua/en) for a translation of the criminal record check and a letter confirming its validity.
 
-### Help proving your professional qualification to training providers and employers
+### Your professional qualifications
 
 UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. If you are applying to train to teach, you can [get your statement of comparability for free](#get-help-with-international-qualifications).
 
@@ -101,7 +101,7 @@ UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qual
 
 If you are already a qualified teacher, you will not need to retrain to get a job as a teacher in England. However, you will need:
 
-* teaching skills and experience you can demonstrate to an employer
+* to apply for English qualified teacher status (QTS), or be able to demonstrate strong non-UK qualifications and experience 
 * to pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
 * a high standard of written and spoken English – for example, [Common European Framework of Reference for Languages, English level B2](https://www.efset.org/cefr/b2/) 
 
@@ -115,8 +115,6 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 
 * life as a teacher in England 
 
-
-
 ### Meeting the standard for written and spoken English
 
 Most local authorities (also called 'councils') offer English to Speakers of Other Languages (ESOL) courses as part of adult education.
@@ -124,7 +122,6 @@ Most local authorities (also called 'councils') offer English to Speakers of Oth
 If you’re in the UK under a Ukrainian visa scheme (Ukraine Sponsorship Scheme, Ukraine Family Scheme or Ukraine Extension Scheme) and aged 19 or over, you are eligible for funding to study an ESOL course (as well as other educational or training courses).
 
 Depending on your circumstances, your ESOL course will either be free or reduced in price. [Find your local authority ('council')](https://www.gov.uk/find-local-council) and then search their website for English to Speakers of Other Languages (ESOL) courses. Or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
-
  
 You can also learn English with a private provider. Well respected English language courses include: 
 
@@ -147,22 +144,11 @@ You could also consider [teaching assistant](https://nationalcareers.service.gov
 
 For a short-term unpaid placement, you can [request school experience in a primary or secondary school in England](https://schoolexperience.education.gov.uk/). 
 
-
 ### Salaries and benefits
 
-Your salary as a teacher depends on whether you have QTS, and your level of experience.
-
-[Find out more about teacher pay and benefits](/is-teaching-right-for-me/teacher-pay-and-benefits) in England.
-
-[Find out more about teaching in England if you trained overseas](/non-uk-teachers/teach-in-england-if-you-trained-overseas). 
+Your [salary as a teacher](/is-teaching-right-for-me/teacher-pay-and-benefits) will depend on whether you have QTS, and your level of experience.
 
 ## Train to teach in England
-
-You have the right to apply to train to teach in England if you are resident in the UK under:
-
-* [the Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
-* [the Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
-* [the Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
 [Train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student) gives information about: 
 
@@ -184,40 +170,6 @@ Ukrainian refugees in the UK under [the Ukraine Family Scheme visa](https://www.
 
 If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#check-the-status-of-your-visa) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
-### Further information
-
-Find out what financial support is available to [fund your training](/funding-and-support) if you are in the UK under the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
-
-## Information for schools and training providers
-
-### Help from DfE
-
-From 1 February 2023, Ukrainians will be able to obtain QTS through DfE's new professional recognition service,[Apply for QTS in England](#apply-for-qts-in-england).
-
-[Learn more about the new service](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#). 
-
-### Visas and immigration
-
-Most Ukrainian refugees will not need to be sponsored for a skilled worker or student visa. [Find out more about visa schemes for Ukrainian refugees, allowing them to live, work and study in the UK](#check-the-status-of-your-visa).
-
-### Qualifications
-
-Schools should assess the qualifications and experience of Ukrainian teachers in the same way as other overseas applicants, bearing in mind the exemption provided by the [4 year rule](https://www.gov.uk/guidance/recruit-teachers-from-overseas#employing-overseas-teachers-without-qts-the-4-year-rule).
-
-UK ENIC can provide a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) to applicants showing how their academic and professional qualifications compare to the English equivalents.
-
-### Alternative roles in school
-
-DfE encourages schools to employ Ukrainian teachers and prospective teachers as teaching assistants if a qualified teacher role isn't available. Ukrainians can then be supported to gain QTS via [assessment only QTS](#assessment-only-qts). 
-
-### Safeguarding
-
-Schools must adopt robust recruitment procedures preventing overseas applicants who are unsuitable to work with children from securing a role in school.
-
-Schools must be guided by the [statutory guidance on safeguarding children and safer recruitment](https://www.gov.uk/government/publications/keeping-children-safe-in-education--2). They should also carry out [additional checks related to international recruitment and training](https://www.gov.uk/guidance/recruit-teachers-from-overseas#makean).  
-
-Given documentation may be difficult for refugees to provide, we expect schools to draw on a varying range of sources on a case by case basis, depending on the individual in question. It is good practice to carry out a risk assessment recording the evidence you have gathered to reach your decision. 
-
 ## Useful links
 
 [Move to the UK if you’re coming from Ukraine](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine).
@@ -227,7 +179,6 @@ Given documentation may be difficult for refugees to provide, we expect schools 
 [Ukrainians in the UK](https://www.ukrainiansintheuk.info/index.htm) – an online encyclopaedia.
 
 [The Association of Ukrainians in Great Britain (AUGB)](https://www.augb.co.uk/) – including a list of [Ukrainian community schools in the UK](https://www.augb.co.uk/about-us-and-our-community/ukrainian-community-schools-in-great-britain).
-
 
 ## Contact
 
