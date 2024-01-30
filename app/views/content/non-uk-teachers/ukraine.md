@@ -95,11 +95,11 @@ You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mv
 
 ### Your professional qualifications
 
-UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. If you are applying to train to teach, you can [get your statement of comparability for free](#get-help-with-international-qualifications).
+UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. If you are applying to train to teach, you can [get your statement of comparability for free](/non-uk-teachers/train-to-teach-in-england-as-an-international-student/check-your-eligibility).
 
 ## Teach in England 
 
-If you are already a qualified teacher, you will not need to retrain to get a job as a teacher in England. However, you will need:
+If you are already a qualified teacher, you do not need to retrain to get a job as a teacher in England. However, you will need:
 
 * to apply for English qualified teacher status (QTS), or be able to demonstrate strong non-UK qualifications and experience 
 * to pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
@@ -107,7 +107,7 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 
 ### English qualified teacher status (QTS)
 
-[Teach in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas) give information about: 
+[Teach in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas) gives information about: 
 
 * how teachers who qualified in Ukraine can apply for English qualified teacher status without further fees or training 
 
@@ -117,11 +117,9 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 
 ### Meeting the standard for written and spoken English
 
-Most local authorities (also called 'councils') offer English to Speakers of Other Languages (ESOL) courses as part of adult education.
+If you’re in the UK under a Ukrainian visa scheme and aged 19 or over, you are eligible for funding to study an English for Speakers for Other Languages (ESOL) course (as well as other educational or training courses).
 
-If you’re in the UK under a Ukrainian visa scheme (Ukraine Sponsorship Scheme, Ukraine Family Scheme or Ukraine Extension Scheme) and aged 19 or over, you are eligible for funding to study an ESOL course (as well as other educational or training courses).
-
-Depending on your circumstances, your ESOL course will either be free or reduced in price. [Find your local authority ('council')](https://www.gov.uk/find-local-council) and then search their website for English to Speakers of Other Languages (ESOL) courses. Or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
+[Find your local authority ('council')](https://www.gov.uk/find-local-council) and then search their website for ESOL courses. Or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
  
 You can also learn English with a private provider. Well respected English language courses include: 
 
@@ -140,7 +138,7 @@ Check with [assessment only training providers](/train-to-be-a-teacher/assessmen
 
 [Find your local authority ('council')](https://www.gov.uk/find-local-council) and then search their website for teaching roles.
 
-You could also consider [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system working in a teaching assistant or support role before you apply for teaching jobs. [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) also lists these jobs. 
+You could also consider [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system before you apply for teaching jobs. [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) lists these jobs. 
 
 For a short-term unpaid placement, you can [request school experience in a primary or secondary school in England](https://schoolexperience.education.gov.uk/). 
 
@@ -158,17 +156,16 @@ Your [salary as a teacher](/is-teaching-right-for-me/teacher-pay-and-benefits) w
 
 * help you can get with your application 
 
-If you intend to [apply for teacher training](https://www.gov.uk/apply-for-teacher-training), you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain valuable experience until your teacher training course starts. 
+If you intend to apply for teacher training, you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain experience until your teacher training course starts. 
 
 ### Fees and financial support
 
-Ukrainian refugees in the UK under [the Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa),
-[the Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or [the Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme) have access to the same financial support as UK applicants. This means you will:
+Ukrainian refugees in the UK under a Ukraine visa scheme have access to the same financial support as UK applicants. This means you will:
 
 * have the right to apply for a [student loan, bursary, scholarship](/funding-and-support) or an [advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
 * pay the same training fees as UK applicants (up to £9,250 for a full-time course)
 
-If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#check-the-status-of-your-visa) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
+If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#visas-giving-you-the-right-to-teach-or-train-to teach-in-England) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
 ## Useful links
 
