@@ -95,7 +95,7 @@ You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mv
 
 ### Your professional qualifications
 
-UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. If you are applying to train to teach, you can [get your statement of comparability for free](/non-uk-teachers/train-to-teach-in-england-as-an-international-student/check-your-eligibility).
+UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. If you are applying to train to teach, you can [get your statement of comparability for free](/non-uk-teachers/train-to-teach-in-england-as-an-international-student#check-your-eligibility).
 
 ## Teach in England 
 
@@ -165,7 +165,7 @@ Ukrainian refugees in the UK under a Ukraine visa scheme have access to the same
 * have the right to apply for a [student loan, bursary, scholarship](/funding-and-support) or an [advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
 * pay the same training fees as UK applicants (up to £9,250 for a full-time course)
 
-If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#visas-giving-you-the-right-to-teach-or-train-to-teach-in-England) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
+If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#visas-giving-you-the-right-to-teach-or-train-to-teach-in-england) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
 ## Useful links
 
