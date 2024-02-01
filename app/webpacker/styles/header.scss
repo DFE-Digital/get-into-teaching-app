@@ -8,8 +8,15 @@ body > header {
 
   // mobile (default) layout
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: max-content 1fr;
   grid-auto-rows: auto;
+
+  .extra-navigation {
+    grid-column: 1/3;
+  }
+  nav {
+    grid-column: 1/3;
+  }
 
   @include mq($from: tablet) {
     border-bottom: 1px solid $grey;
