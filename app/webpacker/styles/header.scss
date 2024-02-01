@@ -15,9 +15,10 @@ body > header {
     grid-column: 1/3;
   }
 
-  nav {
-    grid-column: 1/3;
-  }
+  // allow navigation bar to move up to logo for > wide
+  // nav {
+  //  grid-column: 1/3;
+  // }
 
   @include mq($from: tablet) {
     border-bottom: 1px solid $grey;
@@ -42,6 +43,7 @@ body > header {
 
   // desktop
   @include mq($from: desktop, $until: wide) {
+    // ensure navigation bar is on its own line for < wide
     nav {
       grid-column: 1/3;
     }
