@@ -59,7 +59,7 @@
     z-index: 1000;
 
     @include mq($until: tablet) {
-      margin-right: 0.3em;
+      margin-right: .3em;
     }
 
     // position the logo slightly off the left of the page
@@ -72,8 +72,8 @@
       transform: rotate(3deg);
 
       @include mq($until: tablet) {
-        margin: 0.3em 0.9em 0 1.3em;
-        padding: 0.5em;
+        margin: .3em .9em 0 1.3em;
+        padding: .5em;
       }
 
       // use the margin to set the size/aspect ratio of the logo's background

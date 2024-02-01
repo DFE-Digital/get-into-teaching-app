@@ -48,8 +48,8 @@
 
     @include mq($until: tablet) {
       // applies when width < 740px
-      margin-left: 0.1em;
-      margin-right: 0.4em;
+      margin-left: .1em;
+      margin-right: .4em;
     }
 
     &:focus .menu-button__icon {
