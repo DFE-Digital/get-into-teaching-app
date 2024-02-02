@@ -193,6 +193,14 @@ describe EventsHelper, type: "helper" do
         expect(categorised_events.first.path).to include("channel=123")
       end
     end
+
+    context "when the event has a sub_channel" do
+      let(:params) { { sub_channel: "ABC" } }
+
+      it "includes the channel in the path" do
+        expect(categorised_events.first.path).to include("sub_channel=ABC")
+      end
+    end
   end
 
   describe "#pluralised_category_name" do

@@ -24,7 +24,7 @@ runs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: DFE-Digital/github-actions/set-arm-environment-variables@master
+      - uses: DFE-Digital/github-actions/set-kubelogin-environment@master
         with:
           azure-credentials: ${{ inputs.AZURE_CREDENTIALS }}
 

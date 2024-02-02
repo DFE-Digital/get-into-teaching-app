@@ -29,7 +29,7 @@ module CallsToAction
       image_pack_tag("static/images/#{icon}.svg",
                      width: 50,
                      height: 50,
-                     alt: "",
+                     **helpers.image_alt_attribs_for_text(""),
                      class: "call-to-action__icon")
     end
 

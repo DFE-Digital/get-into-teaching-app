@@ -123,6 +123,8 @@ Their role is wide ranging, but includes leading and motivating teachers, and en
 | Outer London                             | £57,124 | £134,765 |
 | Inner London                             | £62,304 | £139,891 |
 
+Find out more about [how to move up the career ladder in teaching](/is-teaching-right-for-me/career-progression).
+
 ## If you do not have qualified teacher status (QTS)
 
 You need qualified teacher status (QTS) to work in maintained primary, secondary and special schools in England. 
