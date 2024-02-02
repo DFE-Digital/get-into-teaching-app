@@ -14,6 +14,7 @@ describe Content::QuoteComponent, type: :component do
       inline: inline,
       background: background,
       large: large,
+      classes: classes
     )
   end
   let(:text) { "text goes here" }
@@ -22,10 +23,12 @@ describe Content::QuoteComponent, type: :component do
   let(:inline) { nil }
   let(:background) { "white" }
   let(:large) { false }
+  let(:classes) { "quote--extra" }
 
   describe "quote classes" do
     it { is_expected.to have_css(".quote") }
     it { is_expected.to have_css(".quote--background-white") }
+    it { is_expected.to have_css(".quote--extra") }
   end
 
   describe "quote text" do

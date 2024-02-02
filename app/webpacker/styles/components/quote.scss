@@ -1,5 +1,5 @@
 .quote {
-  margin: 2.5em 1.5rem;
+  margin: 2.5em 1.5rem 2.5em 0;
 
   &--background-white {
     @include quote($white);
@@ -27,10 +27,8 @@
     }
   }
 
-  &--large {
-    p {
-      @include font-size(medium);
-    }
+  &--indent {
+    margin-left: 1.5rem;
   }
 
   p {
@@ -42,10 +40,22 @@
       white-space: nowrap;
       font-weight: normal;
     }
+
+    &:nth-last-child(2),
+    &:only-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  &--large {
+    p {
+      @include font-size(medium);
+      padding-left: 1em; // keeps large p indented with attribution
+    }
   }
 
   .footer {
-    padding: 0 1em 0 1.5em;
+    padding: 1em 1em 0 1.5em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

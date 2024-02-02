@@ -166,15 +166,15 @@
         &:after {
           content: '"';
         }
+        padding-bottom: 0;
       }
 
-      // if we have more than one paragraph make the last one smaller,
-      // it should be an attribution
+      // if we have more than one paragraph make the last one the attribution
       &:last-child:not(:only-of-type) {
-        //font-size: medium;
         display: block;
         font-style: normal;
         font-weight: bold;
+        margin-top: 1em;
         margin-bottom: 0;
         padding-bottom: 0;
       }
