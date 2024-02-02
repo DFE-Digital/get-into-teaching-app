@@ -388,7 +388,7 @@ jobs:
             echo "SONAR_TOKEN=$SONAR_TOKEN" >> $GITHUB_OUTPUT
 
       - name: Setup sonarqube
-        uses: warchant/setup-sonar-scanner@v7
+        uses: warchant/setup-sonar-scanner@v8
 
       - name: Download Artifacts
         uses: actions/download-artifact@v4
