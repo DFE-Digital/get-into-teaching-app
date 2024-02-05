@@ -39,7 +39,7 @@ SecureHeaders::Configuration.default do |config|
   youtube     = %w[*.youtube.com *.youtube-nocookie.com i.ytimg.com www.youtube.com www.youtube-nocookie.com]
   sentry      = %w[*.ingest.sentry.io]
   gtm_server  = %w[get-into-teaching-staging-gtm.nw.r.appspot.com analytics.getintoteaching.education.gov.uk]
-  reddit      = %w[www.redditstatic.com alb.reddit.com]
+  reddit      = %w[www.redditstatic.com alb.reddit.com conversions-config.reddit.com]
   clarity     = %w[www.clarity.ms *.clarity.ms *.bing.com]
   vwo         = %w[app.vwo.com *.visualwebsiteoptimizer.com]
 
