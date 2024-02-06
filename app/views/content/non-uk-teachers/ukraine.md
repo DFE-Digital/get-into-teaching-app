@@ -53,7 +53,7 @@ To be eligible for the international relocation payment, you must be coming to E
 
 ### Visas giving you the right to teach or train to teach in England
 
-You already have the right to work or train as a teacher in England if you are in the UK on (one of the following):
+You already have the right to work or train as a teacher in England if you're in the UK on (one of the following):
 
 * the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
 * the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
@@ -67,13 +67,13 @@ If you’re not sure of the status of your visa, check:
 * [UK visa support for Ukrainian nationals](https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk)
 * [Apply to stay in the UK under the Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
-If you are already in the UK under a [different type of visa](https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support) (for example, a visitor or seasonal worker visa) you can apply to the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme). 
+If you're already in the UK under a [different type of visa](https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support) (for example, a visitor or seasonal worker visa) you can apply to the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme). 
 
 ### Staying in the UK long-term
 
-If you are interested in working as a teacher and applying for [indefinite leave to remain in the UK](https://www.gov.uk/indefinite-leave-to-remain), you should consider a [skilled worker visa](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).   
+If you're interested in working as a teacher and applying for [indefinite leave to remain in the UK](https://www.gov.uk/indefinite-leave-to-remain), you should consider a [skilled worker visa](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).   
 
-Time spent in the UK under the skilled worker visa counts towards an application for permanent residence. You will still need to meet the eligibility requirements for this type of visa.
+Time spent in the UK under the skilled worker visa counts towards an application for permanent residence. You'll still need to meet the eligibility requirements for this type of visa.
 You can apply for a skilled worker visa whichever type of visa you currently have allowing you to stay in the UK. 
 
 ### Safeguarding and criminal records checks
@@ -95,11 +95,32 @@ You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mv
 
 ### Your professional qualifications
 
-UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. If you are applying to train to teach, you can [get your statement of comparability for free](/non-uk-teachers/train-to-teach-in-england-as-an-international-student#check-your-eligibility).
+UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you'll need scans or photographs of your original documents. If you're applying to train to teach, you can [get your statement of comparability for free](/non-uk-teachers/train-to-teach-in-england-as-an-international-student#check-your-eligibility).
+
+## Train to teach in England
+
+[Train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student) gives information about: 
+
+* the qualifications you'll need to apply for teacher training 
+
+* how to apply 
+
+* help you can get with your application 
+
+If you intend to apply for teacher training, you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain experience until your teacher training course starts. 
+
+### Fees and financial support
+
+Ukrainian refugees in the UK under a Ukraine visa scheme have access to the same financial support as UK applicants. This means you'll:
+
+* have the right to apply for a [student loan, bursary, scholarship](/funding-and-support) or an [advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
+* pay the same training fees as UK applicants (up to £9,250 for a full-time course)
+
+If you're not in the UK under one of these schemes, [find out about switching to a different type of visa](#visas-giving-you-the-right-to-teach-or-train-to-teach-in-england) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
 ## Teach in England 
 
-If you are already a qualified teacher, you do not need to retrain to get a job as a teacher in England. However, you will need:
+If you're already a qualified teacher, you do not need to retrain to get a job as a teacher in England. However, you'll need:
 
 * to apply for English qualified teacher status (QTS), or be able to demonstrate strong non-UK qualifications and experience 
 * to pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
@@ -146,26 +167,7 @@ For a short-term unpaid placement, you can [request school experience in a prima
 
 Your [salary as a teacher](/is-teaching-right-for-me/teacher-pay-and-benefits) will depend on whether you have QTS, and your level of experience.
 
-## Train to teach in England
 
-[Train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student) gives information about: 
-
-* the qualifications you will need to apply for teacher training 
-
-* how to apply 
-
-* help you can get with your application 
-
-If you intend to apply for teacher training, you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain experience until your teacher training course starts. 
-
-### Fees and financial support
-
-Ukrainian refugees in the UK under a Ukraine visa scheme have access to the same financial support as UK applicants. This means you will:
-
-* have the right to apply for a [student loan, bursary, scholarship](/funding-and-support) or an [advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
-* pay the same training fees as UK applicants (up to £9,250 for a full-time course)
-
-If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#visas-giving-you-the-right-to-teach-or-train-to-teach-in-england) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
 ## Useful links
 
