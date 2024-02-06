@@ -14,7 +14,7 @@ describe Content::QuoteComponent, type: :component do
       inline: inline,
       background: background,
       large: large,
-      classes: classes
+      classes: classes,
     )
   end
   let(:text) { "text goes here" }

@@ -19,16 +19,21 @@
     @include quote($grey);
 
     p {
-      @include simple-quotes-before($pink);
+      @include simple-quotes-before($black);
 
       span {
-        @include simple-quotes-after($pink);
+        @include simple-quotes-after($black);
       }
     }
   }
 
   &--indent {
     margin-left: 1.5rem;
+  }
+
+  &--narrow-margins {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   p {
