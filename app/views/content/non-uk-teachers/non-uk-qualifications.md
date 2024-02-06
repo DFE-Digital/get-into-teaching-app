@@ -9,8 +9,8 @@ related_content:
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.20
-navigation_title: Check your eligibility to train to teach in England
-navigation_description: Before you apply, find out what qualifications you need to train to teach in England and get help comparing non-UK and English qualifications.
+navigation_title: Qualifications you'll need to train to teach in England
+navigation_description: Before you apply, get help checking you have the correct qualifications for English teacher training.
 date: "2021-05-27"
 image: "static/images/content/hero-images/0003.jpg"
 backlink: "../../"
@@ -64,13 +64,19 @@ keywords:
   - Comparability
 ---
 
-Before you apply for teacher training in England, you must check that you have the right qualifications. If you gained your qualifications outside the UK, we can help you check they meet the required standard. 
+Before you apply for teacher training in England, you must check that you have the right qualifications.  
 
-## Already a qualified teacher?
+## Help comparing English and international qualifications
 
-If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+If you gained your qualifications outside the UK, we can help you check your degree and other qualifications meet the standards set for English teacher training. 
 
-## Check your eligibility
+Before applying, you can:
+
+* sign up to [get a teacher training adviser](/teacher-training-adviser/sign_up/identity) – you’ll be asked for your phone number, email and location so a dedicated adviser can call you back in your time zone
+* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate
+* use the live chat service at the bottom of this page
+
+## Qualifications you'll need to train to teach in England
 
 To train to teach in England, you will need:
 
@@ -86,21 +92,11 @@ You will also need to:
 * have the health and physical capacity to train to teach
 * undergo safeguarding and criminal record checks carried out by your training provider or employer
 
-## Help comparing English and international qualifications
-
-We can check your degree and other qualifications meet the standards set for English teacher training. 
-
-For help, you can:
-
-* sign up to [get a teacher training adviser](/teacher-training-adviser/sign_up/identity) – you’ll be asked for your phone number, email and location so a dedicated adviser can call you back in your time zone
-* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate
-* use the live chat service at the bottom of this page
-
+### Get a statement of comparability
 
 When you make your application for teacher training, some teacher training providers will want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
 
 A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. We can help you with a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this.
-
 
 ## English language, maths and science proficiency
 
@@ -123,6 +119,10 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 Have you spoken to one of our advisers to check have the required qualifications for teacher training in England? They can also help you submit your application. 
 
 Learn more about [how to search and apply for teacher training courses](/non-uk-teachers/train-to-teach-in-england-as-an-international-student/#search-and-apply-for-teacher-training-courses).
+
+## Already a qualified teacher?
+
+If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ## Contact
 
