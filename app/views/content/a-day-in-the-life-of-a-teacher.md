@@ -20,19 +20,19 @@
   quote:
     q-sarah-primary:
       text: "I like to get in early so I can get organised — in teaching, preparation is everything."
-      name: "Sarah, Primary school teacher"
+      name: "Sarah, primary school teacher"
       classes: quote--indent
     q-sarah-geography-1:
       text: "I have four free periods a week, which I use as my own time."
-      name: "Sarah, Geography teacher"
+      name: "Sarah, geography teacher"
       classes: quote--indent
     q-gavin:
       text: "Teaching and learning does not stop with the bell at the end of the school day."
-      name: "Gavin, Assistant headteacher"
+      name: "Gavin, assistant headteacher"
       classes: quote--indent
     q-sarah-geography-2:
       text: "I sometimes do a couple of hours at the weekend but I try to keep my weekends free to make sure I have some real downtime."
-      name: "Sarah, Geography teacher"
+      name: "Sarah, geography teacher"
       classes: quote--indent
 ---
 
