@@ -7,9 +7,9 @@ RSpec.describe "BigQuery Analytics", type: :request do
 
   it "namespaces DFE analytics web request events" do
     get root_path
-
     event_namespaces = enqueued_jobs
-      .find { |j| j["job_class"] == "DfE::Analytics::SendEvents" }["arguments"]
+      .find_all { |j| j["job_class"] == "DfE::Analytics::SendEvents" && j["arguments"].first.first["event_type"] == "web_request" }
+      .map { |j| j["arguments"] }
       .flatten
       .map { |a| a["namespace"] }
 
