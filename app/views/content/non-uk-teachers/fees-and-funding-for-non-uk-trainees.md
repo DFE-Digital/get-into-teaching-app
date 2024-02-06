@@ -1,6 +1,6 @@
 ---
 title: "Fees and financial support for non-UK trainee teachers"
-subcategory: Train to teach in England
+subcategory: If you want to train to teach
 description: |-
   Learn more about funding and financial support for non-UK students, including details of the international relocation payment.
 related_content:
