@@ -66,7 +66,7 @@ keywords:
 
 Before you apply for teacher training in England, you must check that you have the right qualifications.  
 
-## Help comparing English and international qualifications
+## Get help checking your qualifications
 
 If you gained your qualifications outside the UK, we can help you check your degree and other qualifications meet the standards set for English teacher training. 
 
