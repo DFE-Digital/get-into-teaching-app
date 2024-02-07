@@ -19,11 +19,10 @@ Knapsack::Adapters::RSpecAdapter.bind
 require "simplecov"
 require "simplecov_json_formatter"
 
-
 require "active_support"
 # require "active_support/testing/file_fixtures"
 require "webmock/rspec"
-require "Nokogiri"
+require "nokogiri"
 
 SimpleCov.start "rails" do
   add_filter "/app/services/get_into_teaching_api/fake_endpoints.rb"
@@ -36,7 +35,6 @@ SimpleCov.start "rails" do
     SimpleCov::Formatter::JSONFormatter,
   ]
 end
-
 
 RSpec.configure do |config|
   config.example_status_persistence_file_path = "tmp/examples.txt"
