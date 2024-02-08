@@ -20,7 +20,6 @@ require "simplecov"
 require "simplecov_json_formatter"
 
 require "active_support"
-# require "active_support/testing/file_fixtures"
 require "webmock/rspec"
 require "nokogiri"
 
