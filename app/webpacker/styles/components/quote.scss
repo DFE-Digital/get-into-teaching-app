@@ -3,20 +3,14 @@
 
   &--background-white {
     @include quote($white);
-
-    border-left: 5px solid $pink;
-
-    p {
-      @include simple-quotes-before($black);
-
-      span {
-        @include simple-quotes-after($black);
-      }
-    }
   }
 
   &--background-grey {
     @include quote($grey);
+  }
+
+  &--background-grey, &--background-white {
+    border-left: 5px solid $pink;
 
     p {
       @include simple-quotes-before($black);

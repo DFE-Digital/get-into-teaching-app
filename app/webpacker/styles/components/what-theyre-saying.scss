@@ -49,7 +49,6 @@
 
       &:before,
       &:after {
-        @include font-size(xlarge);
         color: $black;
         content: '"';
       }
