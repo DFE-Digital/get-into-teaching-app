@@ -7,7 +7,7 @@
       Everyone remembers their favourite teacher at school. As a teacher you can have a massive impact on the children you teach, helping them to build their confidence and succeed. Which is why teaching is a rewarding job you can feel proud of.
       </p>
       <%= render Content::QuoteComponent.new(
-    text: "“There’s nothing better than those light bulb moments when students just ‘get it’, or when they are successful at a task or score amazingly on a test and they’re really proud of themselves.",
+    text: "There’s nothing better than those light bulb moments when students just ‘get it’, or when they are successful at a task or score amazingly on a test and they’re really proud of themselves.",
     name: "Jessica Walmsley, Head of science, Blackpool",
   ) %>
 
@@ -22,7 +22,10 @@
       <p>
      When you teach what you love, your passion will bring subjects to life for your pupils. There’s lots of variety when it comes to teaching, no two days are the same. So you'll have plenty of opportunities to get creative and build on the skills and experience you already have. 
       </p>
-
+      <%= render Content::QuoteComponent.new(
+    text: "I have a love of meaningless facts and I like to start my lessons with a ‘fact of the day’. It’s usually completely unrelated to the lesson, but it sparks some really interesting conversations with students, especially ones that might be struggling to connect with the subject.",
+    name: "Ben Breen, science and maths teacher",
+  ) %>
       <p><%= link_to("Find out more about support and development for early career teachers (ECTs)", page_path("support-for-early-career-teachers")) %>.</p>
     </div>
   </section>
