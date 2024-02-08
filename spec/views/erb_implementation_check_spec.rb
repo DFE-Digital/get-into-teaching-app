@@ -1,6 +1,6 @@
+require "rails_helper"
 require "better_html"
 require "better_html/better_erb/erubi_implementation"
-require "rails_helper"
 
 describe "ERB Implementation Check" do
   erb_glob = Rails.root.join(
