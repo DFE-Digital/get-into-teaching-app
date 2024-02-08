@@ -1,7 +1,6 @@
 require "rails_helper"
 
 RSpec.describe "BigQuery Analytics", type: :request do
-
   around do |example|
     # During testing, the DfE Analytics library is disabled by default to help
     # speed things up. So we turn it on here temporarily.
