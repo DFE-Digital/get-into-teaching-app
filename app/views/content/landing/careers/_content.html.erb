@@ -6,6 +6,10 @@
       <p>
       Everyone remembers their favourite teacher at school. As a teacher you can have a massive impact on the children you teach, helping them to build their confidence and succeed. Which is why teaching is a rewarding job you can feel proud of.
       </p>
+      <%= render Content::QuoteComponent.new(
+    text: "This is a quote. orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum eu risus a pellentesque. Maecenas in mattis odio.",
+    name: "Jane Doran, physics and robotics teacher, West Midlands",
+  ) %>
 
       <p><%= link_to("Find out more about career progression", page_path("is-teaching-right-for-me/career-progression")) %>.</p>
     </div>
