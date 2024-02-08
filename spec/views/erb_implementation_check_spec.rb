@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 require "better_html"
 require "better_html/better_erb/erubi_implementation"
 
