@@ -1,10 +1,10 @@
 <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
   <% promo.left_section( classes: %w[ml-background]) %>
   <% promo.right_section(
-    heading: "Find out more about the benefits of teaching"
+    heading: "Learn more about the benefits of teaching"
   ) do %>
-      <p>Discover how you can get into teaching in a primary or secondary school and shape your own path.</p>
+      <p>Find out how you can get into teaching in a primary or secondary school and shape your own path.</p>
 
-      <%= link_to("Get tailored guidance in your inbox", "/mailinglist/signup/name", class: "button") %>
+      <%= link_to("Get tips and advice sent to your inbox", "/mailinglist/signup/name", class: "button") %>
   <% end %>
 <% end %>
