@@ -19,7 +19,7 @@ Explore the A-Z of all the subjects you could choose for your teacher training c
 
 ## Ancient Greek
 
-As an ancient Greek teacher you'll teach pupils about Greek life and achievements and their influence on the western world. 
+As an ancient Greek teacher you'll teach pupils about what life was like in ancient Greece, and the achievements of the people and their impact on the western world. 
 
 <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&subjects%5B%5D=A1&visa_status=false">Search for ancient Greek teacher training courses</a>.
 
@@ -37,7 +37,8 @@ You can <a href="https://www.thenational.academy/teachers/programmes/art-seconda
 
 <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=biology&button=#funding-widget">Tax-free bursaries of £25,000 are available for eligible trainee biology teachers</a>.
 
-As a biology teacher you'll teach pupils how science impacts people’s lives and the environment. 
+As a biology teacher you'll teach pupils about life and organisms. From cells and genetics to the process of evolution, you'll help pupils understand the living world.
+
 
 You can <a href="https://www.thenational.academy/teachers/programmes/biology-secondary-ks4-l/units">explore what teaching a biology GCSE lesson could look like</a>. 
 
@@ -59,13 +60,13 @@ As a business studies teacher you'll teach pupils more about the business world 
 
 ## Citizenship 
 
-As a citizenship teacher you'll teach pupils how to become informed and active citizens in society. You'll teach pupils the importance of democracy and political action.    
+As a citizenship teacher you'll teach pupils how to become informed and active citizens in society. You'll teach pupils the importance of democracy and politics.    
 
  <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&subjects%5B%5D=09&visa_status=false">Search for citizenship teacher training courses</a>.
 
 ## Classics
 
-As a classics teacher you'll teach pupils about the literature and culture of the classical world and how it relates to themes and issues of today's world.
+As a classics teacher you'll teach pupils about the literature and culture of the classical world, like the Roman empire, and how it relates to themes and issues of today's world.
 
 <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&subjects%5B%5D=Q8&visa_status=false">Search for classics teacher training courses</a>.
 
