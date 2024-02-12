@@ -14,18 +14,21 @@ describe Content::QuoteComponent, type: :component do
       inline: inline,
       background: background,
       large: large,
+      classes: classes,
     )
   end
   let(:text) { "text goes here" }
   let(:name) { "name" }
   let(:job_title) { "job-title" }
   let(:inline) { nil }
-  let(:background) { "yellow" }
+  let(:background) { "white" }
   let(:large) { false }
+  let(:classes) { "quote--extra" }
 
   describe "quote classes" do
     it { is_expected.to have_css(".quote") }
-    it { is_expected.to have_css(".quote--background-yellow") }
+    it { is_expected.to have_css(".quote--background-white") }
+    it { is_expected.to have_css(".quote--extra") }
   end
 
   describe "quote text" do
@@ -110,7 +113,7 @@ describe Content::QuoteComponent, type: :component do
 
     it do
       expect { described_class.new(text: text, background: "green") }.to \
-        raise_error(ArgumentError, "background must be yellow or grey")
+        raise_error(ArgumentError, "background must be grey or white")
     end
   end
 end

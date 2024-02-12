@@ -25,10 +25,13 @@ quote:
   q-jane-wilkinson:
     text: "I specifically wanted to work with children identified with Special Educational Needs and Disabilities (SEND). I was fortunate to find a teacher training course provider that was able to allow me to practice in a mainstream school that also hosted a hearing impairment unit. And another school that offered support for children with a variety of learning needs. They were great at teaching me and letting me practice my classroom management skills early on. I was able to research and understand ways to differentiate resources for children who were on the autistic spectrum. And I was able to create and implement a scheme of work to reflect on and evaluate for later use once qualified."
     name: "Jane Wilkinson, former teacher and teacher training adviser"
+    classes: quote--indent
 ---
 Most disabled pupils and pupils with special educational needs learn in mainstream schools.
 
 No matter what settings you train and work in – whether it's mainstream schools, special schools, or both – you’ll work with pupils with complex needs.
+
+$q-jane-wilkinson$
 
 You can [find a teacher training course](https://www.find-postgraduate-teacher-training.service.gov.uk/) and filter by 'courses with a SEND specialism' if you have a particular interest in the area.
 
@@ -37,8 +40,6 @@ However, it’s not essential to do a course specialising in SEND.
 As you train and teach you'll get the skills you need to work with disabled pupils and pupils with special educational needs.
 
 This will enable you to work in a range of settings throughout your career.
-
-$q-jane-wilkinson$
 
 ## Teach pupils with sensory impairments
 
