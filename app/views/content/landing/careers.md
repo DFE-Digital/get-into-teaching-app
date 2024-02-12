@@ -7,7 +7,7 @@ content:
     - content/landing/careers/mailing_list
     - content/landing/careers/content
     - content/landing/careers/promo
-image: "static/images/content/hero-images/0027.jpg"
+image: "static/images/content/hero-images/0029.jpg"
 colour: "yellow"
 layout: "layouts/minimal"
 talk_to_us: false
