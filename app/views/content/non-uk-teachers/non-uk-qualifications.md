@@ -83,7 +83,7 @@ You will also need to:
 * undergo safeguarding and criminal record checks carried out by your training provider or employer
 
 
-### Get a statement of comparability
+### Get a certificate validating your qualifications
 
 The simplest way to check your qualifications meet the required standard is to get a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
 
