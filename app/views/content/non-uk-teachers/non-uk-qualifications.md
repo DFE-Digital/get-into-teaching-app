@@ -66,24 +66,14 @@ keywords:
 
 Before you apply for teacher training in England, you must check that you have the right qualifications.  
 
-## Get help checking your qualifications
-
-If you gained your qualifications outside the UK, we can help you check your degree and other qualifications meet the standards set for English teacher training. 
-
-Before applying, you can:
-
-* sign up to [get a teacher training adviser](/teacher-training-adviser/sign_up/identity) – you’ll be asked for your phone number, email and location so a dedicated adviser can call you back in your time zone
-* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate
-* use the live chat service at the bottom of this page
-
-## Qualifications you'll need to train to teach in England
+## How to check your qualifications
 
 To train to teach in England, you will need:
 
-* a bachelor’s degree (this can be from a university outside the UK)
-* an English language qualification which is the same standard as a grade 4 General Certificate of Secondary Education (GCSE)
-* a maths qualification which is the same standard as a grade 4 GCSE
-* if teaching children aged 3 to 11 in primary school, a physics, chemistry or biology (science) qualification which is the same standard as a grade 4 GCSE
+* a degree which meets the standard of a UK bachelor’s degree (this can come from a non-UK university)
+* an English language qualification which meets the standard of a grade 4 General Certificate of Secondary Education (GCSE)
+* a maths qualification which meets the standard of a grade 4 GCSE
+* if teaching children aged 3 to 11 in primary school, a physics, chemistry or biology (science) qualification which meets the standard of a grade 4 GCSE
 
 A GCSE is an academic qualification awarded for exams in England, usually taken at age 16.
 
@@ -92,11 +82,25 @@ You will also need to:
 * have the health and physical capacity to train to teach
 * undergo safeguarding and criminal record checks carried out by your training provider or employer
 
+
 ### Get a statement of comparability
 
-When you make your application for teacher training, some teacher training providers will want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
+The simplest way to check your qualifications meet the required standard is to get a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
 
-A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. We can help you with a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this.
+This is a certificate proving that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. 
+
+When you apply for teacher training, you'll be asked to submit details of your statement of comparability. Teacher training providers will then be confident you meet the qualification entry requirements. 
+
+
+## Get help with qualifications
+
+You can also contact us for advice about your qualifications.Before applying, you can:
+
+* sign up to [get a teacher training adviser](/teacher-training-adviser/sign_up/identity) – you’ll be asked for your phone number, email and location so a dedicated adviser can call you back in your time zone
+* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate
+* use the live chat service at the bottom of this page
+
+We can help you with a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this.
 
 ## English language, maths and science proficiency
 
