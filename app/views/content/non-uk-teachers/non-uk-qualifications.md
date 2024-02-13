@@ -87,7 +87,7 @@ You will also need to:
 
 The simplest way to check your qualifications meet the required standard is to get a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
 
-This is a certificate proving that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. 
+This is a certificate costing £49.50 + VAT that proves your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. 
 
 When you apply for teacher training, you'll be asked to submit details of your statement of comparability. Teacher training providers will then be confident you meet the qualification entry requirements. 
 
