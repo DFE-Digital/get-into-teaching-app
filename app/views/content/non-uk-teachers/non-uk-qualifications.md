@@ -94,7 +94,7 @@ When you apply for teacher training, you'll be asked to submit details of your s
 
 ## Get help with qualifications
 
-You can also contact us for advice about your qualifications.Before applying, you can:
+You can also contact us for advice about your qualifications. Before applying, you can:
 
 * sign up to [get a teacher training adviser](/teacher-training-adviser/sign_up/identity) – you’ll be asked for your phone number, email and location so a dedicated adviser can call you back in your time zone
 * call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate
