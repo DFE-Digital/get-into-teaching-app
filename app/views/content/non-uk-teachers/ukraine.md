@@ -36,7 +36,7 @@ keywords:
   - Statement
   - Comparability
 ---
-The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) supports and encourages Ukrainian teachers and teacher trainees seeking jobs and training places. 
+The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) supports and encourages Ukrainian trainees and teachers seeking teacher training places and jobs. 
 
 We can help if you’re interested in teaching children aged 5 to 18. If you'd like to teach other age groups, try [teaching in a university](https://nationalcareers.service.gov.uk/job-profiles/higher-education-lecturer) or [teaching in further education](https://www.teach-in-further-education.campaign.gov.uk/). 
 
@@ -44,22 +44,26 @@ We can help if you’re interested in teaching children aged 5 to 18. If you'd l
 
 If you're coming to the UK from Ukraine, [check what you need to do before you travel and what to do after you arrive](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine).
 
-### Get an international relocation payment worth £10,000
+### Get an international relocation payment (IRP) worth £10,000
 
-To be eligible for the international relocation payment, you must be coming to England to teach or train to teach languages or physics in the 2023 to 2024 academic year. 
+To be eligible for the IRP, you must be coming to England to teach or train to teach languages or physics in:
 
-[Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
+* the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024)
+
+* the 2024 to 2025 academic year (which runs from 1 September 2024 to 31 August 2025) 
+
+[Learn more about the IRP](/non-uk-teachers/get-an-international-relocation-payment).
 
 
-### Visas giving you the right to teach or train to teach in England
+### Visas giving you the right to train to teach or teach in England
 
-You already have the right to work or train as a teacher in England if you're in the UK on (one of the following):
+You already have the right to train or work as a teacher in England if you're in the UK on (one of the following):
 
-* the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
-* the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
-* the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
+* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
+* [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
+* [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
-You are also eligible to [apply for financial support if you choose to train to teach](#fees-and-financial-support).
+You're also eligible to [apply for financial support if you choose to train to teach](#fees-and-financial-support).
 
 If you’re not sure of the status of your visa, check:
 
@@ -130,7 +134,7 @@ If you're already a qualified teacher, you do not need to retrain to get a job a
 
 [Teach in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas) gives information about: 
 
-* how teachers who qualified in Ukraine can apply for English qualified teacher status without further fees or training 
+* how teachers who qualified in Ukraine can apply for English QTS without further fees or training 
 
 * finding a teaching job in England 
 
@@ -138,7 +142,7 @@ If you're already a qualified teacher, you do not need to retrain to get a job a
 
 ### Meeting the standard for written and spoken English
 
-If you’re in the UK under a Ukrainian visa scheme and aged 19 or over, you are eligible for funding to study an English for Speakers for Other Languages (ESOL) course (as well as other educational or training courses).
+If you’re in the UK under a Ukrainian visa scheme and aged 19 or over, you're eligible for funding to study an English for Speakers for Other Languages (ESOL) course (as well as other educational or training courses).
 
 [Find your local authority ('council')](https://www.gov.uk/find-local-council) and then search their website for ESOL courses. Or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
  
@@ -153,7 +157,7 @@ If you find you do not meet the eligibility criteria to apply for QTS, you could
 
 Check with [assessment only training providers](/train-to-be-a-teacher/assessment-only-route-to-qts) for more information about eligibility.
 
-### Other teaching job options
+### Other ways to get teaching work and experience
 
 [Supply teachers](https://www.tes.com/jobs/careers-advice/supply-teaching/how-become-supply-teacher) fill in when schools are temporarily short of staff. Register with a supply teacher agency for short-term roles in school.  
 
@@ -161,11 +165,11 @@ Check with [assessment only training providers](/train-to-be-a-teacher/assessmen
 
 You could also consider [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system before you apply for teaching jobs. [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) lists these jobs. 
 
-For a short-term unpaid placement, you can [request school experience in a primary or secondary school in England](https://schoolexperience.education.gov.uk/). 
+For a short-term unpaid placement, you can [get school experience in a primary or secondary school in England](https://schoolexperience.education.gov.uk/). 
 
 ### Salaries and benefits
 
-Your [salary as a teacher](/is-teaching-right-for-me/teacher-pay-and-benefits) will depend on whether you have QTS, and your level of experience.
+Your [salary as a teacher](/is-teaching-right-for-me/teacher-pay-and-benefits) will depend on whether you have QTS, your level of experience, your school and your location.
 
 
 
