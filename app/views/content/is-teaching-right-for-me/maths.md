@@ -15,7 +15,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/is-teaching-right-for-me/maths/maths/header"
-  - "content/is-teaching-right-for-me/maths/maths/article"
-  - "content/is-teaching-right-for-me/maths/maths/adviser-promo-maths"
+  - "content/is-teaching-right-for-me/maths/header"
+  - "content/is-teaching-right-for-me/maths/article"
+  - "content/is-teaching-right-for-me/maths/adviser-promo-maths"
 ---
