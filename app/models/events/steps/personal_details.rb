@@ -4,8 +4,13 @@ module Events
       attribute :is_walk_in, :boolean
       attribute :event_id
       attribute :channel_id, :integer
+      attribute :sub_channel_id
 
       validates :event_id, presence: true
+
+      def export
+        super.except("sub_channel_id")
+      end
 
       def channel_ids
         query_channels.map { |channel| channel.id.to_i }

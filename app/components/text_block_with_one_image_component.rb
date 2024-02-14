@@ -11,6 +11,6 @@ class TextBlockWithOneImageComponent < ViewComponent::Base
   end
 
   def image
-    image_pack_tag(@image_path, alt: @image_alt)
+    image_pack_tag(@image_path, **helpers.image_alt_attribs_for_text(@image_alt))
   end
 end

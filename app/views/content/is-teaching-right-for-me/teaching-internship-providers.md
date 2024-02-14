@@ -12,7 +12,7 @@ backlink: /
 fullwidth: true
 navigation: 5.55
 navigation_title: Can I do a teaching internship?
-navigation_description: Earn £300 per week and find out what it is really like in the classroom with a teaching internship.
+navigation_description: Earn from £300 per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/is-teaching-right-for-me/teaching-internship-providers/listing
 
@@ -247,13 +247,6 @@ provider_groups:
         areas: "Richmond upon Thames"
         name: "Claire Lane"
         email: "c.lane@waldegravesch.org"
-      - header: "Xavier Teach SouthEast"
-        link: "https://www.teachsoutheast.co.uk/page/?title=Undergraduate+teaching+internship&pid=17"
-        applications: "Open"
-        subjects: "chemistry, computing, maths, physics, languages"
-        areas: "Kensington and Chelsea, Southwark"
-        name: "Emily Bertolone"
-        email: "e.bertolone@xaviercet.org.uk"
   North East:
     providers:
       - header: "Bishop Wilkinson Catholic Education Trust - Centre for Teaching"
@@ -414,13 +407,6 @@ provider_groups:
         areas: "Surrey"
         name: "Joanna Jones"
         email: "jjones@georgeabbot.surrey.sch.uk"
-      - header: "Northfleet Technology College"
-        link: "https://ntc.kent.sch.uk/"
-        applications: "Open"
-        subjects: "chemistry, computing, maths, physics, languages"
-        areas: "Bromley, Greenwich, Kent, Lewisham, Medway"
-        name: "Miriam Hayes"
-        email: "HayesM@ntc.kent.sch.uk"
       - header: "Ringwood School"
         link: "https://www.ringwood.hants.sch.uk/teacher-training/paid-internships/"
         applications: "Open"
@@ -435,11 +421,11 @@ provider_groups:
         areas: "Windsor and Maidenhead"
         name: "Maria Avellano"
         email: "maria.avellano@furzeplatt.net"
-      - header: "The Cherwell School"
+      - header: "The Cherwell School in Partnership with Oxfordshire Teacher Training (SCITT)"
         link: "https://www.mynewterm.com/jobs/137970/EDV-2023-CS-85912"
         applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
-        areas: "Oxfordshire"
+        areas: "Oxfordshire, Berkshire, and Wiltshire"
         name: "James Thomas"
         email: "jthomas@cherwellschool.org"
       - header: "Thinking Schools Academy Trust"

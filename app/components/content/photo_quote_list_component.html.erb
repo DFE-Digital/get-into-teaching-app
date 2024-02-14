@@ -2,7 +2,7 @@
   <% quotes.each_with_index do |quote, index| %>
     <%= tag.li(class: ["item", item_color(index)]) do %>
       <div class="wrapper">
-        <%= image_pack_tag(quote[:image], alt: helpers.image_alt(quote[:image])) %>
+        <%= image_pack_tag(quote[:image], **helpers.image_alt_attribs(quote[:image])) %>
         <h3><span><%= quote[:heading] %></span></h3>
         <%= render Content::QuoteComponent.new(
           text: quote[:text],

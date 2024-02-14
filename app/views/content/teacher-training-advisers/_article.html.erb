@@ -7,7 +7,8 @@
     </p>
     <%= render Content::QuoteComponent.new(
       text: "They would answer any question I had, small or big, in a relaxed environment.",
-      background: "grey"
+      name: "Teacher training candidate",
+      classes: "quote--indent"
     ) %>
     <h2 class="heading--box-blue">How does it work?</h2>
     <p>You’ll be matched with your own dedicated adviser. You’ll have the same adviser throughout your journey into teaching.</p>
@@ -53,14 +54,15 @@
       <li>preparing for interviews</li>
     </ul>
 
-      <%= render Content::QuoteListComponent.new(
-        quotes: [{
-          heading: "Habiba, teacher with a hearing impairment",
-          text: "The application process went smoothly thanks to the help of my teacher training adviser, Ellie.",
-          background: "grey",
-          accreditation: "<a href=\"/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment\">Read how Habiba successfully applied to train to teach</a>",
-        }]
-      ) %>
+    <%= render Content::QuoteComponent.new(
+      text: "The application process went smoothly thanks to the help of my teacher training adviser, Ellie.",
+      name: "Habiba, teacher with a hearing impairment",
+      classes: "quote--indent"
+    ) %>
+
+    <p>
+      Read how <a href="/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment">Habiba successfully applied to train to teach</a>.
+    </p>
 
     <h3>If you’ve applied and been unsuccessful</h3>
 

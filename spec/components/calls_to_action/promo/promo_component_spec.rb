@@ -15,8 +15,8 @@ RSpec.describe CallsToAction::Promo::PromoComponent, type: :component do
 
   before do
     render_inline(component) do |c|
-      c.left_section(**left_args)
-      c.right_section(**right_args) { "right-content" }
+      c.with_left_section(**left_args)
+      c.with_right_section(**right_args) { "right-content" }
     end
   end
 

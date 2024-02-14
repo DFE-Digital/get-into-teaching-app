@@ -4,6 +4,7 @@ module Events
   class Wizard < ::GITWizard::Base
     ATTRIBUTES_TO_LEAVE = %w[
       is_walk_in
+      sub_channel_id
     ].freeze
 
     self.steps = [

@@ -18,7 +18,7 @@
 
     <div class="why-teach__image">
       <% "static/images/content/hero-images/0011.jpg".tap do |path| %>
-        <%= image_pack_tag(path, alt: image_alt(path)) %>
+        <%= image_pack_tag(path, **image_alt_attribs(path)) %>
       <% end %>
     </div>
   </div>
