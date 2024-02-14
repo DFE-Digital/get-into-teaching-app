@@ -8,7 +8,7 @@ navigation_title: Physics
 navigation_description: Find out how to become a physics teacher and what teaching pupils a wide range of experiments would be like.
 layout: "layouts/minimal"
 colour: "yellow"
-image: "static/images/content/hero-images/0013.jpg"
+image: "static/images/content/hero-images/physics_1383.jpg"
 keywords:
   - physics
   - teaching physics
