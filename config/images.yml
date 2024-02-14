@@ -272,6 +272,12 @@
     - "static/images/content/hero-images/0037--mobile.jpg"
     - "static/images/content/hero-images/0037--tablet.jpg"
 
+"static/images/content/hero-images/physics_1383.jpg":
+  alt: "A physics teacher talking to pupils in a classroom."
+  variants:
+    - "static/images/content/hero-images/physics_1383-mobile.jpg"
+    - "static/images/content/hero-images/physics_1383-tablet.jpg"    
+
 "static/images/content/ttalianne.jpg":
   alt: "Lianne, an explore teaching adviser"
 
