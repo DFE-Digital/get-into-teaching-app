@@ -126,7 +126,7 @@ If you're not in the UK under one of these schemes, [find out about switching to
 
 If you're already a qualified teacher, you do not need to retrain to get a job as a teacher in England. However, you'll need:
 
-* to apply for English qualified teacher status (QTS), or be able to demonstrate strong non-UK qualifications and experience 
+* to get English qualified teacher status (QTS), or be able to demonstrate strong non-UK qualifications and experience 
 * to pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
 * a high standard of written and spoken English – for example, [Common European Framework of Reference for Languages, English level B2](https://www.efset.org/cefr/b2/) 
 
