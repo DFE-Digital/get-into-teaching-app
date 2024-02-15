@@ -82,6 +82,9 @@ describe Internal::Event do
 
     context "when online event" do
       before { allow(subject).to receive(:online_event?).and_return(true) }
+
+      it { is_expected.to allow_values(true, false).for :is_online }
+      it { is_expected.not_to allow_value(nil).for :is_online }
     end
 
     context "when provider event" do
