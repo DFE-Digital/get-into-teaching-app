@@ -1,5 +1,6 @@
-require "rails_helper"
+require "spec_helper"
 require "asset_checker"
+require "faraday"
 
 describe AssetChecker do
   let(:root_url) { "https://example.com" }

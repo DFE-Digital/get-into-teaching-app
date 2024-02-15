@@ -43,9 +43,12 @@
     <div class="featured">
       <h2>This year I'm looking forward to&hellip;</h2>
 
-      <figure>
-        <blockquote>Witnessing the progress of my students. I have such a great relationship with them and can't wait to spend more time in the classroom again.</blockquote>
-      </figure>
+      <%= render Content::QuoteComponent.new(
+        text: "Witnessing the progress of my students. I have such a great relationship with them and can't wait to spend more time in the classroom again.",
+        background: "grey",
+        large: true,
+        classes: "quote--narrow-margins"
+      ) %>
     </div>
 
   <% elsif subject_category == "science" %>
@@ -216,9 +219,11 @@
       and became numeracy coordinator within a few months.
     </p>
 
-    <figure>
-      <blockquote>This was a new role in the school, so I could really make it my own.</blockquote>
-    </figure>
+    <%= render Content::QuoteComponent.new(
+      text: "This was a new role in the school, so I could really make it my own.",
+      background: "grey",
+      classes: "quote--narrow-margins"
+    ) %>
 
     <h2>Rising through the ranks</h2>
 
@@ -226,9 +231,11 @@
       In her third year as a teacher, Abigail was promoted to senior leadership.
     </p>
 
-    <figure>
-      <blockquote>What I like most about being in a leadership role is having more responsibility for key decisions and empowering others. I’m ultimately impacting on pupils’ lives and the experience that they have at school.</blockquote>
-    </figure>
+    <%= render Content::QuoteComponent.new(
+      text: "What I like most about being in a leadership role is having more responsibility for key decisions and empowering others. I’m ultimately impacting on pupils’ lives and the experience that they have at school.",
+      background: "grey",
+      classes: "quote--narrow-margins"
+    ) %>
 
     <h2>What’s next?</h2>
 
@@ -240,9 +247,12 @@
 
     <h2>A final word of advice:</h2>
 
-    <figure>
-      <blockquote class="bigger last-on-page">Remember that you’ll make a difference - growing the minds of your students and improving their understanding of the world. It might be challenging at times, but it’s worth it!</blockquote>
-    </figure>
+    <%= render Content::QuoteComponent.new(
+      text: "Remember that you’ll make a difference - growing the minds of your students and improving their understanding of the world. It might be challenging at times, but it’s worth it!",
+      background: "grey",
+      large: true,
+      classes: "quote--narrow-margins"
+    ) %>
 
     <div class="back">
       <%# Abigail has no shoutout so manually add a link here %>

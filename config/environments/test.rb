@@ -54,5 +54,7 @@ Rails.application.configure do
   config.x.integration_host = "get-into-teaching-app-test.test.teacherservices.cloud"
   config.x.integration_credentials = { username: ENV["HTTP_USERNAME"], password: ENV["HTTP_PASSWORD"] }
   config.x.mailsac_api_key = ENV["MAILSAC_API_KEY"]
-  config.x.dfe_analytics = true
+
+  # Turn off dfe analytics during tests to speed them up a smidgen
+  config.x.dfe_analytics = false
 end

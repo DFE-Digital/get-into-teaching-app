@@ -8,7 +8,8 @@
       <%= render Content::QuoteComponent.new(
         text: quote[:text],
         name: quote[:accreditation],
-        background: "grey"
+        background: quote[:background] || "grey",
+        classes: quote[:classes]
       ) %>
     <% end %>
   <% end %>

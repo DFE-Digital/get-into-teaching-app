@@ -1,6 +1,6 @@
 <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
-  <% promo.left_section(classes: %w[tta-background]) %>
-  <% promo.right_section(
+  <% promo.with_left_section(classes: %w[tta-background]) %>
+  <% promo.with_right_section(
     heading: "Get free one-to-one support"
   ) do %>
       <p>An adviser can support you with your application and answer all your questions about training to teach in England. Chat through phone, text or email, as little or as often as you need.</p>

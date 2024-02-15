@@ -1,8 +1,8 @@
 <div class="row">
   <section class="col col-full-content">
     <%= render(CallsToAction::Promo::PromoComponent.new(border: :top)) do |promo| %>
-      <% promo.left_section(classes: %w[events-background]) %>
-      <% promo.right_section(
+      <% promo.with_left_section(classes: %w[events-background]) %>
+      <% promo.with_right_section(
             caption: "Events near you",
             heading: "Events are a great place to ask questions") do %>
           <p>Speak to teachers, local teacher training providers and expert advisers at an in-person event.</p>
