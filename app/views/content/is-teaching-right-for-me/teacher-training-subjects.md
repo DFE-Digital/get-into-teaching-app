@@ -51,6 +51,8 @@ As a business studies teacher you'll teach pupils more about the business world 
 
 ## Chemistry
 
+As a chemistry teacher you'll teach your pupils about elements, molecules and atoms to help them understand what everything is made of, from human life to metals.
+
 <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=chemistry&button=#funding-widget">Tax-free scholarships of £30,000 and bursaries of £28,000 are available for trainee chemistry teachers</a>.
 
  <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&subjects%5B%5D=F1&visa_status=false">Find chemistry teacher training courses</a>.
@@ -75,7 +77,7 @@ As a communication and media studies teacher you can offer pupils insight into h
 
 ## Computing
 
-<a href="/is-teaching-right-for-me/computing">You can learn more about teaching computing</a>. 
+As a computing teacher you'll help pupils develop valuable computing skills to prepare them for everyday life. <a href="/is-teaching-right-for-me/computing">You can learn more about teaching computing</a>. 
 
 <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=computing&button=#funding-widget">Tax-free scholarships of £30,000 and bursaries of £28,000 are available for eligible trainee computing teachers</a>.
 
@@ -147,7 +149,7 @@ As a geography teacher you'll inspire curiosity in your pupils for the world and
 
 ## Health and social care 
 
-As a health and social care teacher you'll help pupils to understand aspects of personal development and teach them about major life changes and sources of support. 
+As a health and social care teacher you'll help pupils to understand aspects of personal development and teach them how to handle major life changes and ways to find support during them. 
 
 You can <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=health_and_social_care&button=#funding-widget">explore what teaching a health and care lesson could look like</a>.
 
@@ -179,6 +181,7 @@ As a Japanese teacher you'll help pupils learn a new language and open them up t
 
 ## Latin
 
+As a Latin teacher you'll give pupils an opporunity to learn about an ancient language and culture. You can let pupils explore the influence of Latin language and compare it to today's English by studying historical stories.
 
 <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=languages&button=#funding-widget">Tax-free bursaries of £25,000 are available for all eligible trainee Latin teachers</a>.
 
@@ -194,7 +197,7 @@ As a Mandarin teacher you'll help pupils learn a new language and open them up t
 
 ## Mathematics 
 
-<a href="/is-teaching-right-for-me/maths">You can learn more about teaching maths</a>. 
+As a maths teacher you'll provide pupils with problem-solving and analytics skills they'll use in their future. <a href="/is-teaching-right-for-me/maths">You can learn more about teaching maths</a>. 
 
 <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=maths&button=#funding-widget">Tax-free scholarships of £30,000 and bursaries of £28,000 are available for eligible trainee maths teachers</a>.
 
@@ -210,7 +213,7 @@ As a modern languages teacher you'll help pupils learn a new language and open t
 
 ## Music 
 
-As a music teacher you'll inspire pupils to develop a love of music and their talent as musicians. 
+As a music teacher you'll help pupils to develop their talent as musicians. Whether in singing or playing an instrument, you'll develop their performance skills and ability to compose original pieces.
 
 <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=music&button=#funding-widget">Tax-free bursaries of £10,000 are available for eligible trainee music teachers</a>. 
 
@@ -224,24 +227,24 @@ As a philosophy teacher you'll teach pupils ways of thinking about ethics, time 
 
 <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&subjects%5B%5D=P1&visa_status=false">Find philosophy teacher training courses</a>.
 
-## Physical education (P.E)
+## Physical education (PE)
 
-As a P.E teacher you'll help pupils to develop motor skills and an interest for physical activity and fitness. 
+As a PE teacher you'll help pupils to develop motor skills and an interest for physical activity and fitness. 
 
-You can <a href="https://www.thenational.academy/teachers/programmes/physical-education-secondary-ks3-l/units">explore what teaching a P.E lesson could look like</a>.
+You can <a href="https://www.thenational.academy/teachers/programmes/physical-education-secondary-ks3-l/units">explore what teaching a PE lesson could look like</a>.
 
 <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&subjects%5B%5D=C6&visa_status=false">Find physical education teacher training courses</a>.
 
 
 ## Physical education with an EBacc subject
 
-You'll be able to teach P.E teacher and another subject from: English, maths, history, languages or geography.
+You'll be able to teach PE and another subject from: English, maths, history, languages or geography.
 
 <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&subjects%5B%5D=C7&visa_status=false">Find physical education with an EBacc subject teacher training courses</a>.
 
 ## Physics
 
-<a href="/is-teaching-right-for-me/physics">You can learn more about teaching physics</a>. 
+As a physics teacher you'll teach pupils about the concepts used to understand how the universe works. <a href="/is-teaching-right-for-me/physics">You can learn more about teaching physics</a>. 
 
 <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=physics&button=#funding-widget">Tax-free scholarships of £30,000 and bursaries of £28,000 are available for eligible trainee physics teachers</a>. 
 
@@ -255,7 +258,7 @@ As a psychology teacher you'll help pupils develop an understanding of the ideas
 
 ## Religious education 
 
-As a religious education teacher you'll play a part in your pupils spiritual and moral development and prepare them for experiences of later life. 
+As a religious education teacher you'll play a part in your pupils' spiritual and moral development and prepare them for experiences of later life. 
 
 <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=religious_group&button=#funding-widget">Tax-free bursaries of £10,000 are available for eligible trainee religious education teachers</a>. 
 
@@ -273,7 +276,7 @@ As a Russian teacher you'll help pupils learn a new language and open them up to
 
 ## Science 
 
-As a science teacher you'll perform experiments with pupils and teach them physics, chemistry and biology.
+As a science teacher you'll teach pupils physics, chemistry and biology. You'll make science interesting by performing experiments and organising interactive exercises.
 
 You can <a href="https://www.thenational.academy/teachers/programmes/science-secondary-ks3-l/units">explore what teaching a science lesson could look like</a>.
 
