@@ -64,10 +64,6 @@
                type: "button",
                data: { action: "click->internal-events#populatePartialUrl" } %>
 
-  <% if @event.online_event? %>
-    <%= f.govuk_url_field :scribble_id, label: { text: 'Scribble ID' } %>
-  <% end %>
-
   <% if @event.provider_event? %>
     <div class="no-left-margin">
       <%= f.fields_for :building, @event.building do |b| %>
