@@ -685,8 +685,6 @@ en:
               blank: Enter the date and time the event starts
             end_at:
               blank: Enter the date and time the event ends
-            scribble_id:
-              blank: Enter a Scribble ID
 
         internal/event_building:
           attributes:

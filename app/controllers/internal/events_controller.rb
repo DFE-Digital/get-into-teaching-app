@@ -160,7 +160,6 @@ module Internal
         :provider_website_url,
         :venue_type,
         :type_id,
-        :scribble_id,
       )
     end
 

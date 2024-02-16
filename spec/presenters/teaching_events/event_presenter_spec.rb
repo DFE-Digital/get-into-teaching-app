@@ -22,7 +22,6 @@ describe TeachingEvents::EventPresenter do
       provider_target_audience
       provider_website_url
       readable_id
-      scribble_id
       start_at
       summary
       type_id
