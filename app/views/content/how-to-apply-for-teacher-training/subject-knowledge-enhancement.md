@@ -81,7 +81,7 @@ You can do a part-time course and complete it over a longer period or complete i
 
 ## When to complete your course
 
-You should complete your course before starting your teacher training. If you run out of time, your provider may allow you to continue your course at the same time as your teacher training.
+You should complete your course before starting your teacher training. If you run out of time, your provider may allow you to continue your course at the same time as your teacher training. But if you get an SKE bursary, your payments will stop once your teacher training starts. 
 
 ## Get an SKE bursary
 
@@ -101,6 +101,6 @@ You’ll need (one of the following):
 * a master’s degree
 * a PhD
 
-You'll need to complete your course before your teacher training starts to receive your SKE bursary.
+You can still do your SKE course while you do your teacher training but you'll only be eligible for a SKE bursary up until your teacher training course starts. This is because you may then be eligible for other financial support, for example a subject bursary or tuition fee loan.
 
 $international-content$
