@@ -448,7 +448,7 @@ provider_groups:
     providers:
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
-       name: Educate Group HQ
+      name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: GORSE SCITT
