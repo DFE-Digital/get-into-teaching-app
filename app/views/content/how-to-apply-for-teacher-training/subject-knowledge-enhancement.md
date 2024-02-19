@@ -101,6 +101,6 @@ You’ll need (one of the following):
 * a master’s degree
 * a PhD
 
-You're only eligible for a SKE bursary up until your teacher training course starts. You can still do your SKE course while you do your teacher training but it will not be funded because you may then be eligible for other financial support, such as a subject bursary or tuition fee loan.
+You can still do your SKE course while you do your teacher training but you'll only be eligible for a SKE bursary up until your teacher training course starts. This is because you may then be eligible for other financial support, for example a subject bursary or tuition fee loan.
 
 $international-content$
