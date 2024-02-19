@@ -81,7 +81,7 @@ You can do a part-time course and complete it over a longer period or complete i
 
 ## When to complete your course
 
-You should complete your course before starting your teacher training. If you run out of time, your provider may allow you to continue your course at the same time as your teacher training. But if you get a bursary, your payments will stop once your teacher training starts. 
+You should complete your course before starting your teacher training. If you run out of time, your provider may allow you to continue your course at the same time as your teacher training. But if you get a SKE bursary, your payments will stop once your teacher training starts. 
 
 ## Get an SKE bursary
 
