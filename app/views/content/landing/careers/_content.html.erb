@@ -1,0 +1,50 @@
+<div class="row">
+  <section class="col col-720">
+    <h2 class="heading--box-blue">Shape future generations</h2>
+
+    <div class="inset">
+      <p>
+      Everyone remembers their favourite teacher at school. As a teacher you can have a massive impact on the pupils you teach, helping them to build their confidence and succeed. Which is why teaching is a rewarding job you can feel proud of.
+      </p>
+      <%= render Content::QuoteComponent.new(
+    text: "There’s nothing better than those light bulb moments when students just ‘get it’, or when they are successful at a task or score amazingly on a test and they’re really proud of themselves.",
+    name: "Jessica Walmsley, Head of science, Blackpool",
+  ) %>
+
+      <p><%= link_to("Find out how to get into teaching", "/") %>.</p>
+    </div>
+  </section>
+
+  <section class="col col-720">
+    <h2 class="heading--box-blue">Bring your energy to the classroom</h2>
+
+    <div class="inset">
+      <p>
+      When you teach what you love, your passion will bring subjects to life for your pupils. If you bring your energy to the classroom, you’ll get it back multiplied.
+      </p>
+      There are different ways to train to teach, letting you choose your own path. And whether you want to climb the ladder into leadership roles, or focus on the areas that motivate you, life as a teacher offers varied and exciting prospects.
+      <p>
+      Teaching offers you the flexibility to shape your career. No two days are the same, with plenty of opportunities to get creative and build on the skills you already have. Whether that’s working at a local school or discovering what being a teacher is like in another part of the world.
+      </p>
+      <p><%= link_to("Discover if teaching is right for you", page_path("is-teaching-right-for-me")) %>.</p>
+    </div>
+  </section>
+
+  <section class="col col-720">
+    <h2 class="heading--box-blue">Earn more than you might expect</h2>
+
+    <div class="inset">
+      <p>
+      You might be surprised to learn that teachers get a starting salary of £30k (or more in London). And there are plenty of ways to increase your pay as you progress your career:
+      </p>
+
+      <ul>
+      <li>most teachers get a pay rise every year, depending on your school. You could earn over £41k within 5 years</li>
+      <li>you may get extra payments for taking on more responsibilities, for example creating a timetable or becoming head of a department</li>
+      <li>as a headteacher you can expect to earn between £53k to £139k depending on your location and school</li>
+      </ul>
+
+      <p><%= link_to("Find out more about teacher pay and benefits", page_path("is-teaching-right-for-me/teacher-pay-and-benefits")) %>.</p>
+    </div>
+  </section>
+</div>
