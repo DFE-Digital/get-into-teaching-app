@@ -9,17 +9,25 @@
 
   <section class="col col-space-s col-content-max">
     <%= render TextBlockWithTwoImagesComponent.new(
-      heading: "quote",
-      colour: "pink",
+      heading: "",
+      colour: "white",
       image_1_path: "static/images/content/hero-images/0017.jpg",
       image_1_alt: "",
       image_2_path: "static/images/content/hero-images/0024.jpg",
       image_2_alt: "",
     ) do %>
-      <p>
-       quote </p>
+  
     <% end %>
   </section>
+
+    <section class="col col-720">
+  <%= render Content::QuoteComponent.new(
+    text: "As a language teacher, you can light the flame of language learning and build cultural capital for all young people",
+    name: "Teacher",
+    background: "grey",
+    large: true
+  ) %>
+</section>
 
   <section class="col col-720 col-horizontal col-space-m">
     <div>
