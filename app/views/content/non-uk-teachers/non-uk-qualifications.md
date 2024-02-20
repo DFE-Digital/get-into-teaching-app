@@ -66,7 +66,7 @@ keywords:
 
 Before you apply for teacher training in England, you must check that you have the [the right qualifications](#qualifications-you-will-need-to-train-to-teach) and they meet the standard set for English teacher training. 
  
-## Get a certificate validating your qualifications
+## How to validate your qualifications
 
 The simplest way to check your qualifications meet the required standard is to get a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
 
