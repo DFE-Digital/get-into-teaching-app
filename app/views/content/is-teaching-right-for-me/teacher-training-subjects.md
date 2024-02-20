@@ -53,7 +53,7 @@ As a business studies teacher you'll teach pupils more about the business world 
 
 As a chemistry teacher you'll teach your pupils about elements, molecules and atoms to help them understand what everything is made of, from human life to metals.
 
-<a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=chemistry&button=#funding-widget">Tax-free scholarships of £30,000 and bursaries of £28,000 are available for trainee chemistry teachers</a>.
+<a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=chemistry&button=#funding-widget">Tax-free bursaries of £28,000 or scholarships of £30,000 are available for trainee chemistry teachers</a>.
 
  <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&subjects%5B%5D=F1&visa_status=false">Find chemistry teacher training courses</a>.
 
@@ -79,7 +79,7 @@ As a communication and media studies teacher you can offer pupils insight into h
 
 As a computing teacher you'll help pupils develop valuable computing skills to prepare them for everyday life. <a href="/is-teaching-right-for-me/computing">You can learn more about teaching computing</a>. 
 
-<a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=computing&button=#funding-widget">Tax-free scholarships of £30,000 and bursaries of £28,000 are available for eligible trainee computing teachers</a>.
+<a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=computing&button=#funding-widget">Tax-free bursaries of £28,000 or scholarships of £30,000 are available for eligible trainee computing teachers</a>.
 
 <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&subjects%5B%5D=11&visa_status=false">Find computing teacher training courses</a>.
 
@@ -127,7 +127,7 @@ You can <a href="https://www.thenational.academy/teachers/programmes/english-sec
 
 As a French teacher you'll help pupils learn a new language and open them up to a different culture.
 
-<a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=geography&button=#funding-widget">Tax-free scholarships of £27,000 or bursaries of £25,000 are available for eligible trainee French teachers</a>. 
+<a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=geography&button=#funding-widget">Tax-free bursaries of £25,000 or scholarships of £27,000 are available for eligible trainee French teachers</a>. 
 
 <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&qualification%5B%5D=qts&qualification%5B%5D=pgce_with_qts&qualification%5B%5D=pgce+pgde&send_courses=false&study_type%5B%5D=full_time&study_type%5B%5D=part_time&subjects%5B%5D=15&visa_status=false">Find French teacher training courses</a>.
 
@@ -143,7 +143,7 @@ As a geography teacher you'll inspire curiosity in your pupils for the world and
  
  As a German teacher you'll help pupils learn a new language and open them up to a different culture.
 
- <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=languages&button=#funding-widget">Tax-free scholarships of £27,000 or bursaries of £25,000 are available for all eligible trainee German teachers</a>.
+ <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=languages&button=#funding-widget">Tax-free bursaries of £25,000 or scholarships of £27,000 are available for all eligible trainee German teachers</a>.
 
 <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&qualification%5B%5D=qts&qualification%5B%5D=pgce_with_qts&qualification%5B%5D=pgce+pgde&send_courses=false&study_type%5B%5D=full_time&study_type%5B%5D=part_time&subjects%5B%5D=17&visa_status=false">Find German teacher training courses</a>.
 
@@ -199,7 +199,7 @@ As a Mandarin teacher you'll help pupils learn a new language and open them up t
 
 As a maths teacher you'll provide pupils with problem-solving and analytics skills they'll use in their future. <a href="/is-teaching-right-for-me/maths">You can learn more about teaching maths</a>. 
 
-<a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=maths&button=#funding-widget">Tax-free scholarships of £30,000 and bursaries of £28,000 are available for eligible trainee maths teachers</a>.
+<a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=maths&button=#funding-widget">Tax-free bursaries of £28,000 or scholarships of £30,000 are available for eligible trainee maths teachers</a>.
 
 <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&subjects%5B%5D=G1&visa_status=false">Find maths teacher training courses</a>.
 
@@ -246,7 +246,7 @@ You'll be able to teach PE and another subject from: English, maths, history, la
 
 As a physics teacher you'll teach pupils about the concepts used to understand how the universe works. <a href="/is-teaching-right-for-me/physics">You can learn more about teaching physics</a>. 
 
-<a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=physics&button=#funding-widget">Tax-free scholarships of £30,000 and bursaries of £28,000 are available for eligible trainee physics teachers</a>. 
+<a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries?funding_widget%5Bsubject%5D=physics&button=#funding-widget">Tax-free bursaries of £28,000 or scholarships of £30,000 are available for eligible trainee physics teachers</a>. 
 
 <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&subjects%5B%5D=F3&visa_status=false">Find physics teacher training courses</a>.
 
