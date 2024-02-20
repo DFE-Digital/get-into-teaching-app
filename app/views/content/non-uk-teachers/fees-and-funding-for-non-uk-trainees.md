@@ -8,7 +8,7 @@ related_content:
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 
-navigation: 20.30
+navigation: 20.20
 navigation_title: Fees and financial support for non-UK trainee teachers
 navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
 
