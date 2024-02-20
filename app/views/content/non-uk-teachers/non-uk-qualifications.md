@@ -64,9 +64,29 @@ keywords:
   - Comparability
 ---
 
-Before you apply for teacher training in England, you must check that you have the right qualifications.  
+Before you apply for teacher training in England, you must check that you have the [the right qualifications](#qualifications-you-will-need-to-train-to-teach) and they meet the standard set for English teacher training. 
+ 
+## Get a certificate validating your qualifications
 
-## How to check your qualifications
+The simplest way to check your qualifications meet the required standard is to get a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
+
+This is a certificate costing £49.50 + VAT that proves your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. 
+
+When you apply for teacher training, you'll be asked to submit details of your statement of comparability. Teacher training providers will then be confident you meet the qualification entry requirements. 
+
+
+## Get help checking your qualifications
+
+You can also contact us for advice about your qualifications. Before applying, you can:
+
+* sign up to [get a teacher training adviser](/teacher-training-adviser/sign_up/identity) – you’ll be asked for your phone number, email and location so a dedicated adviser can call you back in your time zone
+* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate
+* use the live chat service at the bottom of this page
+
+We can help you with a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this.
+
+
+## Qualifications you will need to train to teach
 
 To train to teach in England, you will need:
 
@@ -81,26 +101,6 @@ You will also need to:
 
 * have the health and physical capacity to train to teach
 * undergo safeguarding and criminal record checks carried out by your training provider or employer
-
-
-### Get a certificate validating your qualifications
-
-The simplest way to check your qualifications meet the required standard is to get a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
-
-This is a certificate costing £49.50 + VAT that proves your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. 
-
-When you apply for teacher training, you'll be asked to submit details of your statement of comparability. Teacher training providers will then be confident you meet the qualification entry requirements. 
-
-
-## Get help with qualifications
-
-You can also contact us for advice about your qualifications. Before applying, you can:
-
-* sign up to [get a teacher training adviser](/teacher-training-adviser/sign_up/identity) – you’ll be asked for your phone number, email and location so a dedicated adviser can call you back in your time zone
-* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate
-* use the live chat service at the bottom of this page
-
-We can help you with a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this.
 
 ## English language, maths and science proficiency
 
