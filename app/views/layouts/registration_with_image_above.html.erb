@@ -6,6 +6,7 @@
 
   <%= render "sections/head" %>
   <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
     <%= render HeaderComponent.new %>
     <%= yield(:back_link) %>
 

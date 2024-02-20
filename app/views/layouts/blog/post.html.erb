@@ -6,6 +6,7 @@
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
   <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
     <%= main_tag do %>

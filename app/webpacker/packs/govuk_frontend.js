@@ -4,7 +4,9 @@ import { ErrorSummary, Radios } from 'govuk-frontend';
 var $errorSummary = document.querySelector(
   '[data-module="govuk-error-summary"]'
 );
-new ErrorSummary($errorSummary).init();
+if ($errorSummary) {
+  new ErrorSummary($errorSummary);
+}
 
 var $radios = [...document.querySelectorAll('[data-module="govuk-radios"]')];
 $radios.forEach(($radio) => {
