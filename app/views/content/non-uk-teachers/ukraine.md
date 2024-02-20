@@ -1,16 +1,17 @@
 ---
 title: "Ukrainian teachers and trainees coming to the UK"
+subcategory: If you're from Ukraine
 description: |-
-  Advice for Ukrainian refugees who wish to teach or train to teach in England.
+  Advice for Ukrainian refugees who wish to train to teach or teach in England.
 related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Teach in England if you trained overseas : "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-ukraine
-navigation: 20.50
+navigation: 20.60
 navigation_title: Ukrainian teachers and trainees coming to the UK
-navigation_description: Find information and advice for Ukrainian citizens seeking teaching jobs and training places in England.
+navigation_description: Find information and advice for Ukrainian citizens seeking training places and teaching jobs in England.
 date: "2022-06-24"
 image: "static/images/content/hero-images/0003.jpg"
 backlink: "../../"
