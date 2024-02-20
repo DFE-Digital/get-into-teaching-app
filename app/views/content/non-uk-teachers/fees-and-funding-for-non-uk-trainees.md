@@ -77,9 +77,26 @@ Some support may be available if:
 
 ## Teacher training fees
 
-As a non-UK candidate, you can expect to pay between £9,250 and about £36,000 to train to teach in England – fees vary between training providers. You’ll also have to cover your living costs. Most non-UK candidates will not be eligible for financial support to help with fees.
+Teacher training fees for non-UK candidates range from £XX,XXX to about £36,000 and average at £XX,XXX – fees vary between training providers. 
 
-However, if you're an Irish citizen or have settled status, you may get a reduction in your fees to the 'home fee rate' paid by UK applicants (set at a maximum of £9,250). If you're eligible, this fee will be the same for all courses offered by accredited training providers. You may also be eligible for [student loans](#student-loans).  
+You’ll also have to cover your living costs. 
+
+Most non-UK candidates will not be eligible for financial support to help with fees.
+
+## Support for Irish citizens or those with settled status 
+
+Irish citizens or non-UK citizens who have settled status may be eligible for: 
+
+* a reduction in your fees to the ‘home fee rate’ paid by UK applicants (set at a maximum of £9,250) – if you’re eligible, this fee will be the same for all courses offered by accredited training providers 
+
+* student loans 
+
+* [bursaries and scholarships in the subjects offered to UK citizens](/funding-and-support/scholarships-and-bursaries) 
+
+[How to apply for student loans, bursaries and scholarships](#how-to-apply-for-student-loans-bursaries-and-scholarships).
+
+
+## Salaried teacher training courses  
 
 You can apply for a [salaried teacher training course](/funding-and-support/salaried-teacher-training). On this type of course, you will not pay a fee, and you can earn money while you train in a school. However, these courses are limited in number and very competitive. 
 
