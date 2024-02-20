@@ -17,13 +17,9 @@ navigation_title: If you do not have a degree
 navigation_description: You need a degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about undergraduate degree courses.
 ---
 
-You need a bachelor’s degree in any subject to train to teach in primary, secondary and special schools in England.
+You need a bachelor’s degree in any subject to train to teach in primary, secondary and special schools in England. If you do not already have a degree, you can train to be a teacher as part of your bachelor’s degree and get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
-For secondary teacher training, your provider will also want to make sure you have a good knowledge of the subject you’re applying to teach.
-
-If you do not already have a degree, you can train to be a teacher as part of your bachelor’s degree and get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
-
-QTS is what you need to teach in maintained primary, secondary and special schools in England (schools funded by local authorities).
+You need QTS to teach in maintained primary, secondary and special schools in England (schools funded by local authorities).
 
 Degree courses that include QTS typically cost £9,250 per year and can take up to 4 years but you can get [funding for your training](/funding-and-support).
 
