@@ -77,7 +77,7 @@ Some support may be available if:
 
 ## Teacher training fees
 
-Teacher training fees for non-UK candidates fees vary between training providers.
+Teacher training fees for non-UK candidates vary between training providers.
 
 Fees:
 
@@ -154,7 +154,13 @@ To start your application for student loans, you need to have chosen your teache
 * maintenance loans to help with living costs
 * extra help if you have a disability, children or an adult dependant
 
-If you are eligible for student loans, you will also usually be eligible for the home fee rate, bursaries and scholarships.
+If you are eligible for student loans, you will also usually be eligible: 
+
+* for a home fee rate 
+
+* for bursaries in the subjects offered to UK citizens 
+
+* to apply for scholarships 
 
 Talk to your training provider about:
 
