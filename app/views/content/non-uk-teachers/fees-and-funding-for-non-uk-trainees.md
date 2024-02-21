@@ -78,7 +78,9 @@ Some support may be available if:
 ## Teacher training fees
 
 Teacher training fees for non-UK candidates fees vary between training providers.
+
 Fees:
+
 * cost £36,000 at their most expensive
 * average at £14,765 
 
