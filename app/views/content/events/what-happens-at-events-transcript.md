@@ -9,11 +9,7 @@ description: Full transcript for the video 'What happens at a Get Into Teaching 
 Here we are in Manchester for the first Get Into Teaching event of the series.
 If you’ve ever wondered what happens at a Get Into Teaching event, let’s go take a look.
 
-[Music]
-
-“Advice Zone” pop-out graphic
-
-“Teacher Hub” pop-out graphic
+[Music and stalls at the event, the 'advice zone' and 'teacher hub']
 
 **Speaker 1:** 
 
@@ -23,13 +19,7 @@ These Get Into Teaching events will provide information, advice and support to a
 
 The purpose of this event is to get people like you into teaching, to inspire the next generation. Teachers are fundamental to our society, so we want to help you on your journey to becoming a teacher.
 
-“Teaching Presentations” pop-out graphic
-
-[Music]
-
-“Training Provider Zone” pop out graphic
-
-[Music]
+[Music and showing whats on at the event, like teaching presentations and stalls in the 'training provider zone']
 
 **Speaker 1:**
 
@@ -37,7 +27,7 @@ It’d be really interesting to hear how you found today’s event.
 
 **Speaker 3:** 
 
-I found it interesting and informative. Um, I didn’t realize there were that many options to go down.
+I found it interesting and informative. I didn’t realize there were that many options to go down.
 
 **Speaker 4:**
 
@@ -49,7 +39,7 @@ I came here looking for more advice, maybe, possibly some internships perhaps an
 
 **Speaker 6:**
 
-I am a student at University of Birmingham. We didn’t really know what provider or what route to go down. I’ve always been set on doing it through the university based [providers] but talking to the advisers, talking to the relevant teachers, it… they really did open my eyes to the…the possibilities of going through a school direct approach.
+I am a student at University of Birmingham. We didn’t really know what provider or what route to go down. I’ve always been set on doing it through the university based [approach], but talking to the advisers, talking to the relevant teachers, they really did open my eyes to the possibilities of going through a school direct approach.
 
 **Speaker 7:**
 
