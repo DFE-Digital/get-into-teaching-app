@@ -200,7 +200,7 @@ body a.govuk-back-link {
 }
 
 .request-button {
-  @include button($bg: $pink);
+  @include button($bg: $cta-green);
 }
 
 .survey-button {
