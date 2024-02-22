@@ -43,4 +43,4 @@ Qualifications vary depending on the course. For example, you could get QTS with
 ## Teacher Degree Apprenticeships (TDAs)
 If you do not have a degree and want to become a teacher you may be eligible to apply for a TDA. This new course allows you work in a school and earn a salary while getting a batchelor's degree and QTS. Applications for both primary and secondary are expected to launch in autumn 2024. And training is due to start in autumn 2025. 
 
-Find out more about Teacher Degree Apprenticeships 
+<a href="https://educationhub.blog.gov.uk/2024/02/04/teacher-degree-apprenticeships-how-they-work-and-when-to-apply/">Find out more about Teacher Degree Apprenticeships(TDAs)</a>
