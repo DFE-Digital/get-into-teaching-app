@@ -1,5 +1,5 @@
 ---
-title: Teach physics
+title: Become a physics teacher
 description: |-
     Find out how to become a physics teacher, including what you'll be teaching and what funding is available to help you train.
 subcategory: What to teach
