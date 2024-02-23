@@ -63,9 +63,9 @@ You can do a subject knowledge enhancement course before or sometimes during you
 
 ## If you do not have a degree
 
-You may be eligible to apply for a new [Teacher Degree Apprenticeship (TDA)](https://educationhub.blog.gov.uk/2024/02/04/teacher-degree-apprenticeships-how-they-work-and-when-to-apply/). This means you can work in a school and earn a salary while getting a batchelor’s degree and QTS. 
+You may be eligible to apply for a new [teacher degree apprenticeship (TDA)](https://educationhub.blog.gov.uk/2024/02/04/teacher-degree-apprenticeships-how-they-work-and-when-to-apply/). This means you'll work in a school and earn a salary while getting a bachelor’s degree and QTS. So you will not have to pay tuition fees.
 
-Applications for the new TDAs are expected to launch in autumn 2024 for both primary and secondary and training is due to start in autumn 2025.
+Applications for the new TDAs are expected to open in autumn 2024 for both primary and secondary, with training is due to start in autumn 2025.
 
 ## If you have qualifications from overseas
 
