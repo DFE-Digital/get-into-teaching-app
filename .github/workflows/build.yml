@@ -310,8 +310,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ci_node_total: [6]
-        ci_node_index: [0, 1, 2, 3, 4, 5]
+        ci_node_total: [10]
+        ci_node_index: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
@@ -388,7 +388,7 @@ jobs:
             echo "SONAR_TOKEN=$SONAR_TOKEN" >> $GITHUB_OUTPUT
 
       - name: Setup sonarqube
-        uses: warchant/setup-sonar-scanner@v7
+        uses: warchant/setup-sonar-scanner@v8
 
       - name: Download Artifacts
         uses: actions/download-artifact@v4

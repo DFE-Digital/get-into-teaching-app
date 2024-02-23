@@ -1,0 +1,19 @@
+<% @fullwidth = @hide_page_helpful_question = true %>
+<% @page_title = "Bad request" %>
+
+<section class="container supplementary">
+  <header>
+    <%= render Content::HeadingComponent.new(
+      heading: @page_title,
+      heading_size: :xxl,
+      caption: "Error 400",
+      caption_size: :xxl,
+      caption_purple: false,
+      caption_bold: false
+    ) %>
+  </header>
+
+  <article class="text-content">
+    <p><a href="#talk-to-us">Contact us</a> if you need to speak to someone about Get Into Teaching</p>
+  </article>
+</section>

@@ -12,7 +12,7 @@ backlink: /
 fullwidth: true
 navigation: 5.55
 navigation_title: Can I do a teaching internship?
-navigation_description: Earn £300 per week and find out what it is really like in the classroom with a teaching internship.
+navigation_description: Earn from £300 per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/is-teaching-right-for-me/teaching-internship-providers/listing
 
@@ -52,8 +52,8 @@ provider_groups:
         applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Leicestershire"
-        name: "Laura Wharton"
-        email: "lwharton@rushey-tmet.uk"
+        name: "Craig Benham"
+        email: "enquiries@leicesterscitt.co.uk"
       - header: "Lionheart Teach"
         link: "https://www.lionheartteach.org.uk/opportunities/internships/"
         applications: "Open"
@@ -191,13 +191,6 @@ provider_groups:
         areas: "Bromley"
         name: "Jo Fogg"
         email: "jo.fogg@tkat.org"
-      - header: "GLF Teacher Training"
-        link: "https://www.inspiringfutureteachers.org/"
-        applications: "Open"
-        subjects: "chemistry, computing, maths, physics, languages"
-        areas: "Croydon"
-        name: "Katie Blackburn"
-        email: "k.blackburn@glfschools.org"
       - header: "LETTA (London East Teacher Training Alliance)"
         link: "https://letta.org.uk/train/teachinginternships/"
         applications: "Open"
@@ -393,13 +386,6 @@ provider_groups:
         areas: "East Sussex, Hampshire, Kent, West Sussex"
         name: "Jo Fogg"
         email: "jo.fogg@tkat.org"
-      - header: "GLF Teacher Training"
-        link: "https://www.inspiringfutureteachers.org/"
-        applications: "Open"
-        subjects: "chemistry, computing, maths, physics, languages"
-        areas: "Surrey, West Sussex"
-        name: "Katie Blackburn"
-        email: "k.blackburn@glfschools.org"
       - header: "George Abbot School in partnership with George Abbot SCITT"
         link: "https://georgeabbottraining.co.uk/"
         applications: "Open"
@@ -458,13 +444,6 @@ provider_groups:
         areas: "Bristol, West Berkshire, Wiltshire"
         name: "Emma Hawes"
         email: "ehawes@stjohns.excalibur.org.uk"
-      - header: "GLF Teacher Training"
-        link: "https://www.inspiringfutureteachers.org/"
-        applications: "Open"
-        subjects: "chemistry, computing, maths, physics, languages"
-        areas: "Dorset"
-        name: "Katie Blackburn"
-        email: "k.blackburn@glfschools.org"
       - header: "Odyssey Teaching School Hub"
         link: "https://www.odysseytsh.org/page/?title=Undergraduate+Paid+Internships&pid=76"
         applications: "Open"

@@ -1,6 +1,6 @@
 module Content
   class QuoteComponent < ViewComponent::Base
-    attr_reader :text, :name, :job_title, :cta, :image, :inline, :background, :large
+    attr_reader :text, :name, :job_title, :cta, :image, :inline, :background, :large, :classes
 
     def initialize(
       text:,
@@ -8,8 +8,9 @@ module Content
       job_title: nil,
       image: nil,
       inline: nil,
-      background: "yellow",
-      large: false
+      background: "white",
+      large: false,
+      classes: nil
     )
       super
 
@@ -20,9 +21,10 @@ module Content
       @inline = inline
       @background = background
       @large = large
+      @classes = classes
 
       fail(ArgumentError, "text must be present") if text.blank?
-      fail(ArgumentError, "background must be yellow or grey") unless %w[yellow grey white].any?(background)
+      fail(ArgumentError, "background must be grey or white") unless %w[grey white].any?(background)
       fail(ArgumentError, "inline must be right or left") unless inline.nil? || %w[right left].any?(inline)
     end
 
@@ -44,6 +46,7 @@ module Content
         c << "quote--inline-#{inline}" if inline
         c << "quote--background-#{background}" if background
         c << "quote--large" if large
+        c << classes if classes.present?
       end
     end
   end

@@ -1,4 +1,4 @@
-require "rails_helper"
+require "spec_helper"
 require "error_title"
 
 describe ErrorTitle do
