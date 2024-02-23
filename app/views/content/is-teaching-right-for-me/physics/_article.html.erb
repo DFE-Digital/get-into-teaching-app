@@ -16,9 +16,9 @@ You could inspire your pupils to consider rewarding careers from tackling climat
       heading: "Spark curiosity in physics",
       colour: "yellow",
       image_1_path: "static/images/content/hero-images/0012.jpg",
-      image_1_alt: "Pupils listening to a science lesson.",
+      image_1_alt: "",
       image_2_path: "static/images/content/hero-images/0007.jpg",
-      image_2_alt: "Teacher talking to a pupil in a classroom.",
+      image_2_alt: "",
     ) do %>
        <p>As a physics teacher, you’ll be engaging students in a wide range of experiments that can spark their interest.</p>
 
@@ -29,7 +29,8 @@ You could inspire your pupils to consider rewarding careers from tackling climat
 <section class="col col-720">
       <h2>What you'll be teaching</h2>
       <p>
-      You'll teach the content of the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study">national curriculum</a>, with opportunities to develop your pupils' ability to think like physicists and see physics as a solution to many challenges. The themes you are likely to cover for 11 to 14 year olds (key stage 3) include:</p>
+      You'll teach the content of the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study">national curriculum</a>, with opportunities to develop your pupils' ability to think like physicists and see physics as a solution to many challenges.</p> 
+      <p>The themes you are likely to cover for 11 to 14 year olds (key stage 3) include:</p>
         <ul class="vertical-tags">
           <li class="tag">Energy</li>
           <li class="tag">Motion and forces</li>
@@ -67,14 +68,12 @@ You could inspire your pupils to consider rewarding careers from tackling climat
     large: true
   ) %>
 </section>
-
- <section class="col col-space-s col-content-max">
-    <%= render TextBlockWithOneImageComponent.new(
-      heading: "",
-      colour: "wnite",
-      image_path: "static/images/content/hero-images/0006.jpg",
-      image_alt: "Classroom full of pupils.",
-    ) %>
+  <section class="col col-720">
+    <div class="why-teach__image">
+      <% "static/images/content/hero-images/0006.jpg".tap do |path| %>
+        <%= image_pack_tag(path, **image_alt_attribs(path)) %>
+      <% end %>
+    </div>
   </section>
   <section class="col col-space-m col-720">
     <h2>Check your qualifications</h2>
