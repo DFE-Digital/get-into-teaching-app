@@ -45,4 +45,4 @@ If you do not have a degree and want to become a teacher you may be eligible to 
 
 Applications for both primary and secondary are expected to open in autumn 2024, with training due to start in autumn 2025. 
 
-<a href="https://educationhub.blog.gov.uk/2024/02/04/teacher-degree-apprenticeships-how-they-work-and-when-to-apply/">Find out more about Teacher Degree Apprenticeships (TDAs)</a>.
+<a href="https://educationhub.blog.gov.uk/2024/02/04/teacher-degree-apprenticeships-how-they-work-and-when-to-apply/">Find out more about teacher degree apprenticeships (TDAs)</a>.
