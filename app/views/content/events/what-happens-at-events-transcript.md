@@ -42,7 +42,7 @@ I am a student at University of Birmingham. We didn’t really know what provide
 
 **Attendee 5:**
 
-In a couple years' time I’d like to be a teacher, and how I get to that point, and they pointed me the right directions, so I’ve managed to find and speak to the right people during the exhibition and find the right providers and I feel like super confident now to go forward and start applying.
+In a couple years' time I’d like to be a teacher, and how I get to that point, and they pointed me the right directions, so I’ve managed to go and speak to the right people during the exhibition and find the right providers and I feel like super confident now to go forward and start applying.
 
 **Speaker 1:** 
 
