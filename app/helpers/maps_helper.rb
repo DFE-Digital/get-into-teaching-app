@@ -7,10 +7,9 @@ module MapsHelper
 
   def include_maps_in_head
     map_api_key = Rails.application.config.x.google_maps_key
-
     content_for :head do
       javascript_include_tag \
-        "https://maps.googleapis.com/maps/api/js?key=#{map_api_key}&callback=mapsLoadedCallback",
+        "https://maps.googleapis.com/maps/api/js?key=#{map_api_key}&loading=async&callback=mapsLoadedCallback",
         defer: true, async: true
     end
   end
@@ -56,7 +55,7 @@ module MapsHelper
 
     tag.div class: "embedded-map", data: map_data, **aria_attributes do
       tag.div class: "embedded-map__inner-container",
-              data: { target: "map.container" } do
+              data: { "map-target": "container" } do
         image_tag static_url, class: "embedded-map__nojs-img", alt: "Map showing #{title}", **aria_attributes
       end
     end
