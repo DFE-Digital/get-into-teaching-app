@@ -1,8 +1,8 @@
-import Clarity from '../javascript/clarity'
+import Clarity from '../javascript/clarity';
 
-const clarityId = document.querySelector("[data-clarity-id]").dataset.clarityId
+const clarityId = document.querySelector('[data-clarity-id]').dataset.clarityId;
 
 if (clarityId) {
-  const clarity = new Clarity(clarityId)
-  clarity.init()
+  const clarity = new Clarity(clarityId);
+  clarity.init();
 }

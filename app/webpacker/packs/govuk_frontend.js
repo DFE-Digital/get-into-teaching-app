@@ -1,11 +1,14 @@
-import { ErrorSummary, Radios } from 'govuk-frontend'
+import { ErrorSummary, Radios } from 'govuk-frontend';
 
 // Find first error summary module to enhance.
-var $errorSummary = document.querySelector('[data-module="govuk-error-summary"]');
-new ErrorSummary($errorSummary).init();
+var $errorSummary = document.querySelector(
+  '[data-module="govuk-error-summary"]'
+);
+if ($errorSummary) {
+  new ErrorSummary($errorSummary);
+}
 
 var $radios = [...document.querySelectorAll('[data-module="govuk-radios"]')];
 $radios.forEach(($radio) => {
-  new Radios($radio).init();
+  new Radios($radio);
 });
-
