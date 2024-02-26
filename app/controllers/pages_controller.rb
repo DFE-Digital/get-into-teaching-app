@@ -64,6 +64,10 @@ class PagesController < ApplicationController
     render_page("events/get-the-most-from-events")
   end
 
+  def what_happens_at_events_transcript
+    render_page("events/what-happens-at-events-transcript")
+  end
+
   def scholarships_and_bursaries
     render_page("funding-and-support/scholarships-and-bursaries")
   end
