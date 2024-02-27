@@ -1,22 +1,19 @@
 .logo-wrapper {
   z-index: 0;
   overflow: hidden;
-  top: 0px;
-  //left: -20px;
+  top: 0;
+  left: -8px;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   display: flex;
   align-items: center;
 
   @include mq($from: tablet) {
     overflow: visible;
-    padding-bottom: 0;
-    position: relative;
-  }
-
-  @include mq($from: tablet) {
     top: -26px;
-
+    left: -3px;
+    margin-bottom: -16px;
+    padding-bottom: 0;
   }
 }
 
