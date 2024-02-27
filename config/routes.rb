@@ -65,6 +65,7 @@ Rails.application.routes.draw do
 
   get "/landing/campus-mailing-list", to: "pages#campus_mailing_list", as: "campus_mailing_list"
   get "/events/get-the-most-from-events", to: "pages#get_the_most_from_events", as: "get_the_most_from_events"
+  get "/events/what-happens-at-events-transcript", to: "pages#what_happens_at_events_transcript", as: "what_happens_at_events_transcript"
   get "/funding-and-support/scholarships-and-bursaries", to: "pages#scholarships_and_bursaries", as: "scholarships_and_bursaries"
   get "/funding-and-support/scholarships-and-bursaries-search", to: "pages#scholarships_and_bursaries_search", as: "scholarships_and_bursaries_search"
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
