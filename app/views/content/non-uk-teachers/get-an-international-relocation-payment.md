@@ -15,7 +15,7 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      <p>Applications for the international relocation payment (IRP) for teachers and salaried trainees are are now closed. They will reopen between 2 April and 31 May 2024. 
+      <p>Applications for the international relocation payment (IRP) for teachers and salaried trainees are now closed. They will reopen between 2 April and 31 May 2024. 
 
       <p>If you are a trainee on a fee-paying course, you do not need to apply. <a href="/non-uk-teachers/get-an-international-relocation-payment#how-trainee-teachers-can-get-the-international-relocation-payment">Learn more about the process for fee paying courses</a>.</p>
 keywords:
@@ -188,7 +188,7 @@ You will not be eligible for the international relocation payment if you are:
 
 ## How teachers can apply for the international relocation payment (IRP)
 
-Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk) for teachers are are now closed. They will reopen between 2 April and 31 May 2024. 
+Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk) for teacher are now closed. They will reopen between 2 April and 31 May 2024. 
 
 You will need a teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas). To remain eligible for the IRP, you must apply in either the first or second term of your employment as a teacher.
 
