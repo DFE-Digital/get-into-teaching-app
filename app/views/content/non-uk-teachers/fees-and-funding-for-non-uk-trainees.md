@@ -81,12 +81,12 @@ Teacher training fees for non-UK candidates vary between training providers.
 
 Fees:
 
-* cost £36,000 at their most expensive
-* average at £14,765 
-
-You’ll also have to cover your living costs. 
+* cost a maximum of about £36,000
+* cost an average of £14,765 
 
 Most non-UK candidates will not be eligible for financial support to help with fees.
+
+You’ll also have to cover your living costs. 
 
 ## Financial support for Irish citizens or those with settled status 
 
@@ -146,9 +146,7 @@ You do not need to pay an agent or any other third party to access a bursary or 
 
 To start your application for student loans, you need to have chosen your teacher training course, but you do not need a confirmed place. 
 
-[Check your eligibility](https://www.gov.uk/student-finance/who-qualifies).
-
-[Apply to Student Finance England](https://www.gov.uk/student-finance) for:
+[Check your eligibility and apply to Student Finance England](https://www.gov.uk/student-finance) for:
 
 * tuition fee loans
 * maintenance loans to help with living costs
@@ -162,10 +160,7 @@ If you are eligible for student loans, you will also usually be eligible:
 
 * to apply for scholarships 
 
-Talk to your training provider about:
-
-* home fee rate
-* a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries)
+Talk to your training provider about the home fee rate, [bursaries and scholarships](/funding-and-support/scholarships-and-bursaries).
 
 ## Get help
 
