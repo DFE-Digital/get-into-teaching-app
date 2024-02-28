@@ -64,7 +64,7 @@ keywords:
   - Comparability
 ---
 
-Before you apply for teacher training in England, you must check that you have the [the right qualifications](#qualifications-you'll-need-to-train-to-teach) and they meet the standard set for English teacher training. 
+Before you apply for teacher training in England, you must check that you have the [the right qualifications](#qualifications-youll-need-to-train-to-teach) and they meet the standard set for English teacher training. 
  
 ## How to check your qualifications
 
@@ -117,7 +117,7 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 Have you spoken to one of our advisers to check you have the required qualifications for teacher training in England? They can also help you submit your application. 
 
-Learn more about [how to find and apply for teacher training courses](/non-uk-teachers/train-to-teach-in-england-as-an-international-student/#find-and-apply-for-teacher-training-courses).
+Learn more about [how to find and apply for teacher training courses](/non-uk-teachers/train-to-teach-in-england-as-an-international-student#find-and-apply-for-teacher-training-courses).
 
 ## Already a qualified teacher?
 
