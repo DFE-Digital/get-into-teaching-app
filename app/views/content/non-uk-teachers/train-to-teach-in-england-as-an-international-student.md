@@ -163,7 +163,14 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 ## Find out about fees and financial support
 
-Fees vary between training providers, but range from £9,250 to about £32,000. You’ll also have to pay your living costs.
+Teacher training fees for non-UK candidates vary between training providers.
+
+Fees:
+
+* cost a maximum of about £36,000
+* cost an average of £14,765
+
+You’ll also have to cover your living costs.
 
 If you are planning on training to teach languages and physics, you could be eligible for financial help worth up to £40,000, including an international relocation payment worth £10,000.
 
