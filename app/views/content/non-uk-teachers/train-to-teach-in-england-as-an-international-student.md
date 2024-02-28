@@ -165,7 +165,7 @@ It's important that you give yourself time to write the best possible [personal 
 
 Your personal statement can be up to 1000 words. 90% of successful candidates write 500 words or more.
 
-Your [teacher training adviser](#get-support-and-advice) can help you write your personal statement and will also give advice on: 
+Your [teacher training adviser](#check-your-eligibility-and-get-help) can help you write your personal statement and will also give advice on: 
 
 * your choice of course and training provider
 * your choice of subject

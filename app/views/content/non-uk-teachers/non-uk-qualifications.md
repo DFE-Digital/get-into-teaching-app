@@ -3,9 +3,9 @@ title: "Check your eligibility to train to teach in England"
 description: |-
   Find out what qualifications you need to train to teach in England. 
 related_content:
-    Learn more about fees and funding for non-UK trainees : "fees-and-funding-for-non-uk-trainees"
-    Train to teach in England as a non-UK citizen : "train-to-teach-in-england-as-an-international-student"
-    Learn more about international qualified teacher status : "international-qualified-teacher-status"
+    Learn more about fees and funding for non-UK trainees : "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
+    Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
+    Learn more about international qualified teacher status : "/non-uk-teachers/international-qualified-teacher-status"
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.20
