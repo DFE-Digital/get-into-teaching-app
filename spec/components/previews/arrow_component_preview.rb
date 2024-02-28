@@ -29,7 +29,7 @@ class ArrowComponentPreview < ViewComponent::Preview
     render(arrow)
   end
 
-  def with_straight_vertial_line_top_to_bottom
+  def with_straight_vertical_line_top_to_bottom
     arrow = ArrowComponent.new(
       width: 50,
       height: 200,
@@ -44,7 +44,7 @@ class ArrowComponentPreview < ViewComponent::Preview
     render(arrow)
   end
 
-  def with_straight_vertial_line_bottom_to_top
+  def with_straight_vertical_line_bottom_to_top
     arrow = ArrowComponent.new(
       width: 50,
       height: 200,

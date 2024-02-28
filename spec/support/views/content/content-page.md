@@ -1,11 +1,5 @@
 ---
   title: "Sample content page"
-  accordion:
-    steps:
-      Step 1:
-        partial: content/accordion/step1
-      Step 2:
-        partial: content/accordion/step2
   content:
     - content/samples/intro
   alert: This is an alert

@@ -1,7 +1,6 @@
 <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
-  <% promo.left_section(classes: []) %>
-
-  <% promo.right_section(
+  <% promo.with_left_section %>
+  <% promo.with_right_section(
         caption: "Online events",
         heading: "Teacher training events") do %>
       <p>Events are one of the best ways to talk to experts and get answers to all your questions.</p>

@@ -8,7 +8,7 @@
   <div class="content">
     <div class="inset">
       <p>
-        <%= intro %>
+        <%= intro || content %>
       </p>
 
       <%= form_with builder: GOVUKDesignSystemFormBuilder::FormBuilder, url: mailing_list_step_path(:name), scope: :mailing_list_steps_name, method: :put do |f| %>
@@ -23,7 +23,7 @@
 
         <p>Our privacy notice explains how we use your personal data. It's important you read this before signing up to receive emails.</p>
 
-        <% button_text = "Next step <span></span>" %>
+        <% button_text = helpers.safe_html_format("Next step <span></span>") %>
         <%= f.button button_text, class: "call-to-action-button button", data: { "prevent-double-click": true, "disable-with": button_text } %>
       <% end %>
     </div>

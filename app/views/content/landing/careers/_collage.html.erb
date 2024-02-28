@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="grey col">
+    <section class="col col-full-content">
+      <div class="inset">
+        <p class="col-720">Teaching is a rewarding career. You can use your voice, passion, background and view of the world to inspire young people. Plus, you also get to learn new skills, build your confidence and become your best self. As a teacher you can:</p>
+        <%= render Content::ChecklistCollageComponent.new(
+          checklist: [
+            "shape future generations",
+            "bring your energy to the classroom",
+            "earn more than you might expect"
+          ],
+          image_paths: [
+            "static/images/content/grow/Smiling_Student.jpg",
+          ]
+        ) %>
+      </div>
+    </section>
+  </div>
+</div>

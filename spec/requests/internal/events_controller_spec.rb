@@ -15,7 +15,6 @@ describe Internal::EventsController, type: :request do
           :online_event,
           :without_get_into_teaching_fields,
           name: "Pending online event",
-          scribble_id: "/scribble/id/12345",
           building: nil)
   end
   let(:events) { [pending_provider_event, build(:event_api, name: "Open event"), pending_online_event] }
@@ -405,7 +404,6 @@ describe Internal::EventsController, type: :request do
       context "when online event" do
         let(:params) do
           attributes_for :internal_event,
-                         :online_event,
                          type_id: Crm::EventType.online_event_id
         end
         let(:expected_request_body) do
@@ -419,7 +417,6 @@ describe Internal::EventsController, type: :request do
                 description: params[:description],
                 start_at: params[:start_at].getutc.floor,
                 end_at: params[:end_at].getutc.floor,
-                scribble_id: params[:scribble_id],
                 building: nil,
                 is_virtual: nil,
                 video_url: nil,

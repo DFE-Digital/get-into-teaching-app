@@ -13,8 +13,9 @@
   <% if Rails.env.test? && params.key?(:fake_browser_time) %>
     <% js_packs.unshift('fake_browser_time') %>
   <% end %>
-  <%= javascript_pack_tag *js_packs, 'data-turbolinks-track': 'reload', data:
+  <%= javascript_pack_tag *js_packs, type: 'module', data:
   {
+    "turbolinks-track": 'reload',
     "sentry-dsn": sentry_dsn,
     "sentry-environment": Rails.env,
     "gtm-id": ENV["GTM_ID"],

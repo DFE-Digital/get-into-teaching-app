@@ -10,8 +10,6 @@ describe "ensuring frontmatter from content pages is rendered", type: :request d
 
     [
       "Sample content page",
-      "Step 1",
-      "Step 2",
       "Introduction",
       "This is an alert",
       "Related content 1",

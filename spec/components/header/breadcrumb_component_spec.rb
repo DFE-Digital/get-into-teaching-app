@@ -1,15 +1,21 @@
 require "rails_helper"
 
 describe Header::BreadcrumbComponent, type: "component" do
+  let(:controller_class) do
+    class_double("ApplicationController", {
+      new: ApplicationController.new.tap do |controller|
+        controller.breadcrumb "Page 1", "/page/1"
+        controller.breadcrumb "Page 2", "/page/2"
+        controller.breadcrumb "Page 3", "/page/3"
+        controller.breadcrumb "Current Page", "/my/current/page", match: :force
+      end,
+    })
+  end
+
   subject! do
-    component = described_class.new
-
-    controller.breadcrumb "Page 1", "/page/1"
-    controller.breadcrumb "Page 2", "/page/2"
-    controller.breadcrumb "Page 3", "/page/3"
-    controller.breadcrumb "Current Page", controller.request.path
-
-    render_inline(component)
+    with_controller_class(controller_class) do
+      render_inline(described_class.new)
+    end
     page
   end
 

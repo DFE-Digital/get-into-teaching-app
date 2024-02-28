@@ -53,7 +53,7 @@ RSpec.feature "Internal section", type: :feature do
       navigate_to_new_submission(event_type)
 
       enter_valid_provider_event_details if event_type == "provider"
-      enter_valid_online_event_details if event_type == "online"
+      enter_common_event_details if event_type == "online"
 
       click_button "Submit for review"
       expect(page).to have_text "Event submitted for review"
@@ -262,12 +262,6 @@ private
     fill_in "Provider website/registration link", with: "test"
     choose "Yes"
     choose "No venue"
-  end
-
-  def enter_valid_online_event_details
-    enter_common_event_details
-
-    fill_in "Scribble ID", with: "test"
   end
 
   def enter_common_event_details
