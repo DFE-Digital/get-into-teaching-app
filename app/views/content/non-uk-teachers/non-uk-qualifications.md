@@ -1,5 +1,6 @@
 ---
 title: "Check your eligibility to train to teach in England"
+subcategory: If you want to train to teach
 description: |-
   Find out what qualifications you need to train to teach in England. 
 related_content:
