@@ -76,7 +76,7 @@ Citizens of every country in the world can apply to train to teach in England. W
 living costs, to train (depending on your immigration status and the subject you train to teach, you may get some financial support)
 - training lasts one academic year full-time, or longer part-time
 - you can apply for paid teaching jobs as soon as you successfully complete your training
-- you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher
+- you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher and gain English qualified teacher status (QTS)
 - you can update, extend or switch your visa to live and work in the UK long-term
 
 ## Already a qualified teacher?
@@ -103,11 +103,10 @@ For teachers who qualified outside the UK, as well as those with teaching experi
 
 ## Check your eligibility and get help
 
-Before you apply, you must [check your eligibility](/non-uk-teachers/non-uk-qualifications). If you gained your qualifications outside the UK, we can help you check they meet the required standard. 
+Before you apply, you must [check your eligibility](/non-uk-teachers/non-uk-qualifications). If you gained your qualifications outside the UK, we can help you check they meet the required standard in England. 
 
-For help with qualifications and completing your application for teacher training, you can:
+For help checking your qualifications and completing your application for teacher training, you can:
 
-* sign up to [get a teacher training adviser](/teacher-training-adviser/sign_up/identity) – you’ll be asked for your phone number, email and location so a dedicated adviser can call you back in your time zone
 * call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate
 * use the live chat service at the bottom of this page
 
@@ -119,7 +118,7 @@ If you are planning on training to teach languages and physics, you could be eli
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
-## Search and apply for teacher training courses
+## Find and apply for teacher training courses
 
 Your teacher training course must lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/train-to-be-a-teacher/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
 
