@@ -88,20 +88,20 @@ When you call, we can tell you if you are eligible for a [teacher training advis
 To train to teach in England, you'll need:
 
 * a degree which meets the standard of a UK bachelor’s degree (this can come from a non-UK university)
-* an English language qualification which meets the standard of a grade 4 General Certificate of Secondary Education (GCSE) – a GCSE is an academic qualification awarded for exams in England, usually taken at age 16
+* an English language qualification which meets the standard of a grade 4 General Certificate of Secondary Education (GCSE) – a qualification awarded for exams taken at age 16 in England
 * a maths qualification which meets the standard of a grade 4 GCSE
 * if teaching children aged 3 to 11 in primary school, a physics, chemistry or biology (science) qualification which meets the standard of a grade 4 GCSE
 
 You'll also need to:
 
-* complete a fitness questionnaire before starting training – training providers should only ask relevant questions to make sure you’re able to teach
+* complete a fitness questionnaire before starting training
 * undergo safeguarding and criminal record checks carried out by your training provider or employer
 
 ## English language, maths and science proficiency
 
 If you’ve reached a certain proficiency in an English language test, you can use this as evidence you meet the standard of a grade 4 GCSE in English – for example: 
 
-* the [International English Language Testing System (IELTS)](https://www.ielts.org/)
+* [International English Language Testing System (IELTS)](https://www.ielts.org/)
 * [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl)
 * [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/)  
 
