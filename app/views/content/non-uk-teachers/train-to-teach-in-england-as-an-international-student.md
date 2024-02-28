@@ -75,8 +75,8 @@ Citizens of every country in the world can apply to train to teach in England. W
 - international candidates can expect to pay between £9,250 and £32,000, plus
 living costs, to train (depending on your immigration status and the subject you train to teach, you may get some financial support)
 - training lasts one academic year full-time, or longer part-time
-- you can apply for paid teaching jobs as soon as you successfully complete your training
-- you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher and gain English qualified teacher status (QTS)
+- you can apply for paid teaching jobs as soon as you successfully complete your training and gain English qualified teacher status (QTS)
+- you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher 
 - you can update, extend or switch your visa to live and work in the UK long-term
 
 ## Already a qualified teacher?
