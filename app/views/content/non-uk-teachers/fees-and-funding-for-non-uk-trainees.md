@@ -1,5 +1,6 @@
 ---
 title: "Fees and financial support for non-UK trainee teachers"
+subcategory: If you want to train to teach
 description: |-
   Learn more about funding and financial support for non-UK students, including details of the international relocation payment.
 related_content:
@@ -7,13 +8,12 @@ related_content:
     Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
-
 navigation: 20.20
 navigation_title: Fees and financial support for non-UK trainee teachers
 navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
 
 date: "2021-05-27"
-image: "static/content/hero-images/0002.jpg"
+image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"
 keywords:
   - International

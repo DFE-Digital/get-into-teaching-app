@@ -2,7 +2,7 @@ module Content
   class AdviserComponent < ViewComponent::Base
     attr_reader :title, :intro, :color, :margin, :heading
 
-    def initialize(title:, intro:, color: "purple", margin: true, heading: :m)
+    def initialize(title:, intro:, color: "pink", margin: true, heading: :m)
       super
 
       @title = title

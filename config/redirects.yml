@@ -1,3 +1,4 @@
+# NB: see /config/routes.rb for external redirects
 redirects:
   # Guidance
   "/ways-to-train-guidance": "/train-to-be-a-teacher"
@@ -25,6 +26,7 @@ redirects:
   "/start-teacher-training-this-september": "/how-to-apply-for-teacher-training"
   "/landing/secure-your-september": "/"
   "/landing/still-time-to-apply": "/"
+  "/grow": "/landing/grow"
 
   # International content
   "/iqts": "/non-uk-teachers/international-qualified-teacher-status"
@@ -216,7 +218,6 @@ redirects:
   "/whats-your-learning-style": "/train-to-be-a-teacher"
   "/overseas-applicants": "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
   "/five-things-every-prospective-teacher-needs-to-know": "/steps-to-become-a-teacher"
-  "/explore-my-options/return-to-teaching/return-to-teaching-in-england-from-overseas": "/non-uk-teachers/return-to-england-after-teaching-overseas"
   "/submitting-your-application": "/how-to-apply-for-teacher-training"
   "/competitive-salary-and-great-benefits": "/is-teaching-right-for-me/teacher-pay-and-benefits"
   "/explore-my-options/further-education-teacher-training/bursaries": "/is-teaching-right-for-me/become-a-further-education-teacher"
@@ -299,7 +300,6 @@ redirects:
   "/ways-to-train": "/train-to-be-a-teacher"
   "/train-to-teach-in-england-as-an-international-student": "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
   "/international-qualified-teacher-status": "/non-uk-teachers/international-qualified-teacher-status"
-  "/international-returners": "/non-uk-teachers/return-to-england-after-teaching-overseas"
   "/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk": "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
   "/non-uk-teachers/teach-in-england-if-you-trained-outside-the-uk": "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
   "/funding-your-training": "/funding-and-support"
@@ -345,6 +345,7 @@ redirects:
   "/blog/7-things-to-include-in-your-teacher-training-application": "/how-to-apply-for-teacher-training"
   "/blog/application-tips-from-a-teacher-training-provider": "/how-to-apply-for-teacher-training"
   "/blog/9-tips-to-help-you-apply-for-teacher-training": "/how-to-apply-for-teacher-training"
+  "/blog/choosing-the-right-teacher-training-course-provider": "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
   "/blog/how-to-find-school-experience": "/is-teaching-right-for-me/get-school-experience"
 
   # Covid page

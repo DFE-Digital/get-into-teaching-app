@@ -2,6 +2,7 @@
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
     <%= body_tag do %>
+      <%= render "sections/govuk_javascript" %>
       <%= render HeaderComponent.new(breadcrumbs: true) %>
 
       <%= main_tag do %>
@@ -32,26 +33,6 @@
 
             <% @front_matter["content"]&.each do |partial| %>
               <%= render(partial) %>
-            <% end %>
-
-            <% @front_matter.key?("accordion") && @front_matter["accordion"].tap do |accordion_fm| %>
-              <%= render Content::AccordionComponent.new(numbered: accordion_fm["numbered"], active_step: accordion_fm["active_step"]) do |accordion| %>
-                <% accordion.content_before_accordion(
-                  partial: accordion_fm.dig("content_before_accordion", "partial"),
-                  call_to_action: accordion_fm.dig("content_before_accordion", "cta")
-                ) %>
-
-                <% accordion_fm["steps"]&.each do |title, contents| %>
-                  <%= accordion.step(title: title, call_to_action: contents["cta"]) do %>
-                    <%= render(partial: contents["partial"]) %>
-                  <% end %>
-                <% end %>
-
-                <% accordion.content_after_accordion(
-                  partial: accordion_fm.dig("content_after_accordion", "partial"),
-                  call_to_action: accordion_fm.dig("content_after_accordion", "cta")
-                ) %>
-              <% end %>
             <% end %>
 
             <% if @front_matter.key?("external_content") %>

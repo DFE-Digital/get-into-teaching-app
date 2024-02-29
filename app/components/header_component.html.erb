@@ -2,11 +2,11 @@
 
 <div id="skiplink-container">
   <div>
-    <a href="#main-content" class="skiplink">Skip to main content</a>
+    <a href="#main-content" class="skiplink" data-module="govuk-skip-link">Skip to main content</a>
   </div>
 </div>
 
-<header class="limit-content-width" data-controller="navigation" role="banner">
+<header class="limit-content-width" data-controller="navigation" role="banner" data-module="govuk-header">
   <%= render Header::ExtraNavigationComponent.new(search_input_id: "searchbox__input--desktop") %>
   <%= render Header::LogoComponent.new %>
   <div class="menu-button" id="mobile-navigation-menu-button">

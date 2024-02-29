@@ -1,7 +1,7 @@
 <%= render Content::CampaignHeroComponent.new(
   title: ["Get Into Teaching", "events"],
   colour: "yellow",
-  image: "static/content/hero-images/0025.jpg"
+  image: "static/images/content/hero-images/0025.jpg"
 ) %>
 
 <div class="row inset">
@@ -28,11 +28,20 @@
       <li>find out how to apply for teacher training</li>
       <li>explore what funding is available</li>
     </ul>
+
+<p>Watch our video to see how people like you have got help and advice on training to teach at Get Into Teaching events.</p>
+
+    <div class="video">
+      <%= render Content::YoutubeVideoComponent.new(
+        id: "w3AVk-ByUaA",
+        title: "A video about what happens at a Get Into Teaching event"
+      ) %>
+      <p><a href="/events/what-happens-at-events-transcript">Read the transcript for the 'What happens at a Get Into Teaching event' video</a>.</p>
+    </div>
   </section>
 
   <section class="col col-720">
     <h3 class="heading-m">Reserve your place</h3>
-
     <p>You'll need to register to attend a Get Into Teaching event. Places are limited, so the sooner you sign up, the better.</p>
   </section>
 </div>
@@ -43,7 +52,7 @@
       <%= render TextBlockWithOneImageComponent.new(
         heading: "Events in your region",
         colour: "blue",
-        image_path: "static/content/homepage/here-to-help.jpg",
+        image_path: "static/images/content/homepage/here-to-help.jpg",
         image_alt: "A woman at a Get Into Teaching event wearing a blue T-shirt with Here to Help written on it.",
       ) %>
 
@@ -51,7 +60,7 @@
         <section id="events" class="category__cards">
           <%= tag.nav(class: "category__nav-cards") do %>
             <ul class="one-column horizontal">
-              <%= render(Events::CardComponent.with_collection(categorise_events(@git_events))) %>
+              <%= render(Events::CardComponent.with_collection(categorise_events(@git_events, params))) %>
             </ul>
           <% end %>
           <div>

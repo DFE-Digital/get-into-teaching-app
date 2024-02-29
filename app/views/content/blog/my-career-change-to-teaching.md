@@ -4,8 +4,8 @@ author: Ian Wallace
 date: "2022-02-03"
 images:
   ian:
-    path: "static/content/blog/ian-wallace.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/ian-wallace.jpg"
+    path: "static/images/content/blog/ian-wallace.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/ian-wallace.jpg"
 description: |-
   Ian Wallace had always wanted to be a teacher but didn’t feel ready when he finished university. After several different jobs and careers he finally took the plunge and hasn’t looked back.
 keywords:

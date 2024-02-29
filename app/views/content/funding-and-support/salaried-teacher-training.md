@@ -82,8 +82,6 @@ It’s usually wise to apply for non-salaried courses as well to increase your c
 
 ### Teach First 
 
-Teach First delivers a 2 year employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards QTS and a postgraduate diploma in education (PGDE). 
-
-A PGDE is similar to a PGCE, but awards more academic credits and usually involves more assignments. 
+Teach First delivers a 2 year employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards QTS and a postgraduate certificate in education (PGCE). 
 
 To apply and find out more, you should [visit the Teach First website](https://www.teachfirst.org.uk/).

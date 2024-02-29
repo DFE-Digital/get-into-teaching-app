@@ -4,8 +4,8 @@ date: "2022-02-09"
 author: Jessica Walmsley
 images:
   jessica-walmsley:
-    path: "static/content/blog/jessica-walmsley.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/jessica-walmsley.jpg"
+    path: "static/images/content/blog/jessica-walmsley.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/jessica-walmsley.jpg"
 description: |-
   Head of Science Jessica Walmsley shares how she brings her passion for science into her Blackpool classroom and why she decided to become a teacher.
 keywords:

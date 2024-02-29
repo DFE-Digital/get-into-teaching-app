@@ -5,7 +5,7 @@ describe StructuredDataHelper, type: "helper" do
   include EventsHelper
   include ApplicationHelper
 
-  let(:image_path) { "static/getintoteachinglogo.svg" }
+  let(:image_path) { "static/images/getintoteachinglogo.svg" }
 
   describe ".structured_data" do
     subject(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
@@ -345,9 +345,9 @@ describe StructuredDataHelper, type: "helper" do
 
       it "has the online images" do
         is_expected.to include({ image: [
-          asset_pack_url("static/structured_data/git_online_1x1.jpeg"),
-          asset_pack_url("static/structured_data/git_online_4x3.jpeg"),
-          asset_pack_url("static/structured_data/git_online_16x9.jpeg"),
+          asset_pack_url("static/images/structured_data/git_online_1x1.jpeg"),
+          asset_pack_url("static/images/structured_data/git_online_4x3.jpeg"),
+          asset_pack_url("static/images/structured_data/git_online_16x9.jpeg"),
         ] })
       end
     end
@@ -355,9 +355,9 @@ describe StructuredDataHelper, type: "helper" do
     context "when the event is in-person" do
       it "has the in-person images" do
         is_expected.to include({ image: [
-          asset_pack_url("static/structured_data/git_in_person_1x1.jpeg"),
-          asset_pack_url("static/structured_data/git_in_person_4x3.jpeg"),
-          asset_pack_url("static/structured_data/git_in_person_16x9.jpeg"),
+          asset_pack_url("static/images/structured_data/git_in_person_1x1.jpeg"),
+          asset_pack_url("static/images/structured_data/git_in_person_4x3.jpeg"),
+          asset_pack_url("static/images/structured_data/git_in_person_16x9.jpeg"),
         ] })
       end
     end

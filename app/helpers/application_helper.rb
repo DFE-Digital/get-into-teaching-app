@@ -69,12 +69,6 @@ module ApplicationHelper
     form_for(*args, **merged, &block)
   end
 
-  def back_link(path = :back, text: "Back", **options)
-    options[:class] = "govuk-back-link #{options[:class]}".strip
-
-    link_to text, path, **options
-  end
-
   def internal_referer
     referer = request.referer
 

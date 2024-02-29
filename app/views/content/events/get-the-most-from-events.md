@@ -5,9 +5,10 @@ content:
     - content/events/get-the-most-from-events/header
     - content/events/get-the-most-from-events/steps
     - content/events/get-the-most-from-events/content
-image: "static/content/events/teaching-event.jpeg"
+image: "static/images/content/events/teaching-event.jpeg"
 colour: "yellow"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true
+
 ---

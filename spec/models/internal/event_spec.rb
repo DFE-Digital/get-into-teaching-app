@@ -83,10 +83,8 @@ describe Internal::Event do
     context "when online event" do
       before { allow(subject).to receive(:online_event?).and_return(true) }
 
-      describe "#scribble_id" do
-        it { is_expected.to allow_values("test", "", nil).for :scribble_id }
-        it { is_expected.to validate_length_of(:scribble_id).is_at_most(300) }
-      end
+      it { is_expected.to allow_values(true, false).for :is_online }
+      it { is_expected.not_to allow_value(nil).for :is_online }
     end
 
     context "when provider event" do

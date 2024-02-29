@@ -14,6 +14,11 @@ permissions:
   packages: write
   pull-requests: write
 
+env:
+  code-coverage-artifact-name: code_coverage_${{github.run_number}}_${{github.run_attempt}}
+  unit-tests-artifact-name: unit_tests_${{github.run_number}}_${{github.run_attempt}}
+  rubocop-artifact-name: rubocop_results_${{github.run_number}}_${{github.run_attempt}}
+
 jobs:
   build_base:
     name: Build base image
@@ -27,8 +32,6 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - name: Set up Docker Buildx
         id: buildx
@@ -80,7 +83,7 @@ jobs:
       - uses: Azure/login@v1
         if: failure() && github.ref == 'refs/heads/master'
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_AKS_REVIEW }}
+            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
       - name: Fetch secrets from key vault
         if: failure() && github.ref == 'refs/heads/master'
@@ -88,7 +91,7 @@ jobs:
         id: keyvault-yaml-secret
         with:
           inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_AKS_REVIEW }}" --query "value" -o tsv)
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
             echo "::add-mask::$SLACK_WEBHOOK"
             echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
@@ -114,8 +117,6 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - name: Set up Docker Buildx
         id: buildx
@@ -190,7 +191,7 @@ jobs:
       - uses: Azure/login@v1
         if: failure() && github.ref == 'refs/heads/master'
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_AKS_REVIEW }}
+            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
       - name: Fetch secrets from key vault
         if: failure() && github.ref == 'refs/heads/master'
@@ -198,7 +199,7 @@ jobs:
         id: keyvault-yaml-secret
         with:
           inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_AKS_REVIEW }}" --query "value" -o tsv)
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
             echo "::add-mask::$SLACK_WEBHOOK"
             echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
@@ -210,8 +211,6 @@ jobs:
            SLACK_MESSAGE: 'There has been a failure building the application'
            SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
-
-
 
   linting:
     name: Linting
@@ -226,13 +225,15 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
         with:
-          var_file: .github/common_environment_aks.yml
+            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
       - name: Lint SCSS
-        uses: actions-hub/stylelint@master
-        env:
-          PATTERN: "**/*.scss"
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true -e PATTERN="**/*.scss" \
+            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn scss-lint"
 
       - name: Lint Ruby
         run: |-
@@ -241,9 +242,9 @@ jobs:
 
       - name: Keep Rubocop output
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: rubocop_results
+          name: ${{ env.rubocop-artifact-name }}
           path: ${{ github.workspace }}/out/rubocop-result.json
 
       - name: Lint ERB Templates
@@ -259,6 +260,16 @@ jobs:
           docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
             ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn js-lint"
 
+      - name: Fetch secrets from key vault
+        if: failure()
+        uses: azure/CLI@v1
+        id: keyvault-yaml-secret
+        with:
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+
   javascript_tests:
     name: Javascript Tests
     runs-on: ubuntu-latest
@@ -271,8 +282,6 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - name: Run Javascript Tests
         run: |-
@@ -301,27 +310,25 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ci_node_total: [6]
-        ci_node_index: [0, 1, 2, 3, 4, 5]
+        ci_node_total: [10]
+        ci_node_index: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - uses: Azure/login@v1
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_AKS_REVIEW }}
+            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v1
         id: keyvault-yaml-secret
         with:
           inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_AKS_REVIEW }}" --query "value" -o tsv)
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
             echo "::add-mask::$SLACK_WEBHOOK"
             echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
@@ -341,18 +348,17 @@ jobs:
 
       - name:  Keep Code Coverage Report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: code_coverage
+          name: ${{ env.code-coverage-artifact-name }}_${{ matrix.ci_node_index }}
           path: ${{ github.workspace }}/coverage
 
       - name:  Keep Unit Tests Results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: unit_tests
+          name: ${{ env.unit-tests-artifact-name }}_${{ matrix.ci_node_index }}
           path: ${{ github.workspace }}/out/*
-
 
   sonarscanner:
     name: Sonar Scanner
@@ -367,31 +373,33 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - uses: Azure/login@v1
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_AKS_REVIEW }}
+            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v1
         id: keyvault-yaml-secret
         with:
           inlineScript: |
-            SONAR_TOKEN=$(az keyvault secret show --name "SONAR-TOKEN" --vault-name "${{ secrets.KEY_VAULT_AKS_REVIEW }}" --query "value" -o tsv)
+            SONAR_TOKEN=$(az keyvault secret show --name "SONAR-TOKEN" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
             echo "::add-mask::$SONAR_TOKEN"
             echo "SONAR_TOKEN=$SONAR_TOKEN" >> $GITHUB_OUTPUT
 
       - name: Setup sonarqube
-        uses: warchant/setup-sonar-scanner@v7
+        uses: warchant/setup-sonar-scanner@v8
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
 
       - name: Combine Coverage Reports
         run: |-
-          docker run -t --rm -v ${{github.workspace}}/code_coverage:/app/coverage -e RAILS_ENV=test -e COVERAGE_DIR \
+          # Copy files from separate artifacts into one directory
+          mkdir ${{github.workspace}}/code_coverage
+          cp -r ${{github.workspace}}/${{ env.code-coverage-artifact-name }}_*/ ${{github.workspace}}/code_coverage
+
+          docker run -t --rm -v ${{github.workspace}}/code_coverage:${COVERAGE_DIR} -e RAILS_ENV=test -e COVERAGE_DIR \
             ${{env.DOCKER_IMAGE_TEST}} bundle exec rake coverage:collate
         env:
           COVERAGE_DIR: /app/coverage
@@ -408,39 +416,37 @@ jobs:
            -Dsonar.organization=dfe-digital
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
-           -Dsonar.testExecutionReportPaths=${{github.workspace}}/unit_tests/test-report-0.xml,\
-            ${{github.workspace}}/unit_tests/test-report-1.xml,\
-            ${{github.workspace}}/unit_tests/test-report-2.xml,\
-            ${{github.workspace}}/unit_tests/test-report-3.xml,\
-            ${{github.workspace}}/unit_tests/test-report-4.xml,\
-            ${{github.workspace}}/unit_tests/test-report-5.xml
+           -Dsonar.testExecutionReportPaths=${{github.workspace}}/${{env.unit-tests-artifact-name}}_0/test-report-0.xml,\
+            ${{github.workspace}}/${{env.unit-tests-artifact-name}}_1/test-report-1.xml,\
+            ${{github.workspace}}/${{env.unit-tests-artifact-name}}_2/test-report-2.xml,\
+            ${{github.workspace}}/${{env.unit-tests-artifact-name}}_3/test-report-3.xml,\
+            ${{github.workspace}}/${{env.unit-tests-artifact-name}}_4/test-report-4.xml,\
+            ${{github.workspace}}/${{env.unit-tests-artifact-name}}_5/test-report-5.xml
            -Dsonar.ruby.coverage.reportPaths=${{github.workspace}}/code_coverage/coverage.json
-           -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/rubocop_results/rubocop-result.json
+           -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/${{env.rubocop-artifact-name}}/rubocop-result.json
 
-  review_aks:
-    name: Review AKS Deployment Process
+  review:
+    name: Review Deployment Process
     needs: [ build_release ]
     if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     continue-on-error: true
-    concurrency: Review_aks_${{github.event.number}}
+    concurrency: Review_${{github.event.number}}
     environment:
-       name: review_aks
+       name: review
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - name: Setup Environment Variables
         if: github.actor == 'dependabot[bot]'
         id: variables
         shell: bash
         run: |
-             secret_suffix="_AKS_REVIEW"
+             secret_suffix="_REVIEW"
              echo "SECRET_SUFFIX=$secret_suffix" >> $GITHUB_ENV
 
       - uses: Azure/login@v1
@@ -456,38 +462,37 @@ jobs:
             echo "::add-mask::$SLACK_WEBHOOK"
             echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
-      - name: Deploy to Review AKS
-        uses: ./.github/workflows/actions/deploy_v2
-        id: deploy_v2
+      - name: Deploy to Review
+        uses: ./.github/workflows/actions/deploy
+        id: deploy
         with:
-          environment: review_aks
+          environment: review
           sha:  ${{ github.sha }}
           pr:   ${{github.event.number}}
           AZURE_CREDENTIALS: ${{ secrets[format('AZURE_CREDENTIALS{0}', env.SECRET_SUFFIX)] }}
           KEY_VAULT:         ${{ secrets[format('KEY_VAULT{0}', env.SECRET_SUFFIX)] }}
-          ARM_ACCESS_KEY:    ${{ secrets[format('ARM_ACCESS_KEY{0}', env.SECRET_SUFFIX)] }}
 
       - name: Post sticky pull request comment
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           recreate: true
           header: AKS
-          message:  AKS Review app deployed to https://${{env.REVIEW_APPLICATION}}-${{github.event.number}}.test.${{env.DOMAIN}}
+          message:  Review app deployed to https://${{env.REVIEW_APPLICATION}}-${{github.event.number}}.test.${{env.DOMAIN}}
 
-      - name: Add Review_v2 Label
+      - name: Add Review Label
         if: contains(github.event.pull_request.user.login, 'dependabot') == false
         uses: actions-ecosystem/action-add-labels@v1
         with:
-          labels: Review_v2
+          labels: Review
 
-  development_aks:
-    name: Development AKS Deployment
+  development:
+    name: Development Deployment
     needs: [  feature_tests, javascript_tests, build_release  ]
     if: github.ref == 'refs/heads/master'
-    concurrency: Development_aks
+    concurrency: Development
     runs-on: ubuntu-latest
     environment:
-      name: development_aks
+      name: development
     outputs:
       release_tag: ${{steps.tag_version.outputs.pr_number}}
       release_sha: ${{github.sha }}
@@ -497,8 +502,6 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - uses: Azure/login@v1
         with:
@@ -513,15 +516,14 @@ jobs:
             echo "::add-mask::$SLACK_WEBHOOK"
             echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
-      - name: Deploy to Development AKS
-        uses: ./.github/workflows/actions/deploy_v2
-        id: deploy_v2
+      - name: Deploy to Development
+        uses: ./.github/workflows/actions/deploy
+        id: deploy
         with:
-          environment: development_aks
+          environment: development
           sha:  ${{ github.sha }}
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
-          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
 
       - name: Generate Tag from PR Number
         id: tag_version
@@ -550,43 +552,25 @@ jobs:
           RELEASE_ID: ${{ steps.release.outputs.id }}
           TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-  owasp_aks:
-    name: OWASP AKS Checks
-    needs: [ development_aks ]
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_ERROR}}
+          SLACK_TITLE: Failure in Deploy to Development
+          SLACK_MESSAGE: Error deploying to development for ${{env.APPLICATION}}
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+
+  owasp:
+    name: OWASP Checks
+    needs: [ development ]
     runs-on: ubuntu-latest
     environment:
-      name: development_aks
+      name: development
     continue-on-error: true
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
-
-      - name: Vunerability Test
-        uses: ./.github/workflows/actions/owasp_v2
-        id: deploy
-        with:
-          environment: development_aks
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
-          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
-          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{secrets.GITHUB_TOKEN}}
-
-  test_aks:
-    name: Test AKS Deployment
-    needs: [  feature_tests, javascript_tests, build_release ]
-    if: github.ref == 'refs/heads/master'
-    concurrency: test_aks
-    runs-on: ubuntu-latest
-    environment:
-       name: test_aks
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v4
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - uses: Azure/login@v1
         with:
@@ -601,15 +585,60 @@ jobs:
             echo "::add-mask::$SLACK_WEBHOOK"
             echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
-      - name: Deploy to Test AKS
-        uses: ./.github/workflows/actions/deploy_v2
-        id: deploy_v2
+      - name: Vunerability Test
+        uses: ./.github/workflows/actions/owasp
+        id: deploy
         with:
-          environment: test_aks
+          environment: development
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          GITHUB_TOKEN:      ${{secrets.GITHUB_TOKEN}}
+
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_ERROR}}
+          SLACK_TITLE: Failure in OWASP Checks
+          SLACK_MESSAGE: Error running OWASP test for ${{env.APPLICATION}}
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+
+  test:
+    name: Test Deployment
+    needs: [  feature_tests, javascript_tests, build_release ]
+    if: github.ref == 'refs/heads/master'
+    concurrency: test
+    runs-on: ubuntu-latest
+    environment:
+       name: test
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Fetch secrets from key vault
+        uses: azure/CLI@v1
+        id: keyvault-yaml-secret
+        with:
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+
+      - name: Deploy to Test
+        uses: ./.github/workflows/actions/deploy
+        id: deploy
+        with:
+          environment: test
           sha:  ${{ github.sha }}
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
-          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
 
       - name: Slack Notification
         if: failure()
@@ -617,15 +646,15 @@ jobs:
         env:
           SLACK_COLOR: ${{env.SLACK_ERROR}}
           SLACK_TITLE: Failure in Post-Development Deploy
-          SLACK_MESSAGE: Failure with initialising AKS Test deployment for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
+          SLACK_MESSAGE: Failure with initialising Test deployment for ${{env.APPLICATION}}
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
 
-  integration_aks:
-    name: Run Integration Tests on AKS test
+  integration:
+    name: Run Integration Tests on test
     runs-on: ubuntu-latest
-    needs: [ build_base, test_aks ]
+    needs: [ build_base, test ]
     environment:
-       name: test_aks
+       name: test
     services:
       postgres:
         image: postgres:13.10
@@ -647,12 +676,20 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - uses: Azure/login@v1
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Fetch secrets from key vault
+        uses: azure/CLI@v1
+        id: slack-secret
+        with:
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v1
@@ -683,21 +720,19 @@ jobs:
           HTTP_PASSWORD: ${{ steps.keyvault-yaml-secret.outputs.HTTP_PASSWORD }}
           MAILSAC_API_KEY: ${{ steps.keyvault-yaml-secret.outputs.MAILSAC_API_KEY }}
 
-  production_aks:
-    name: Production AKS Deployment
+  production:
+    name: Production Deployment
     runs-on: ubuntu-latest
-    needs: [ integration_aks, development_aks ]
-    concurrency: production_aks
+    needs: [ integration, development ]
+    concurrency: production
     environment:
-       name: production_aks
+       name: production
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-        with:
-          var_file: .github/common_environment_aks.yml
 
       - uses: Azure/login@v1
         with:
@@ -719,7 +754,7 @@ jobs:
         id: tag_id
         uses: DFE-Digital/github-actions/DraftReleaseByTag@master
         with:
-          TAG: ${{needs.development_aks.outputs.release_tag}}
+          TAG: ${{needs.development.outputs.release_tag}}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish Release
@@ -730,15 +765,14 @@ jobs:
         with:
           release_id: ${{steps.tag_id.outputs.release_id}}
 
-      - name: Deploy to Production AKS
-        uses: ./.github/workflows/actions/deploy_v2
-        id: deploy_v2
+      - name: Deploy to Production
+        uses: ./.github/workflows/actions/deploy
+        id: deploy
         with:
-          environment: production_aks
+          environment: production
           sha:  ${{ github.sha }}
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
-          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
 
       - name: Slack Release Notification
         if: steps.tag_id.outputs.release_id
@@ -756,5 +790,5 @@ jobs:
         env:
           SLACK_COLOR: ${{env.SLACK_FAILURE}}
           SLACK_TITLE: Production Release ${{github.event.title}}
-          SLACK_MESSAGE: Failure deploying Production AKS release
+          SLACK_MESSAGE: Failure deploying Production release
           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}

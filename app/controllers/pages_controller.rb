@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   class InvalidTemplateName < RuntimeError; end
+  class InvalidPrivacyPolicy < RuntimeError; end
 
   before_action :init_funding_widget, only: %i[scholarships_and_bursaries scholarships_and_bursaries_search]
 
@@ -9,12 +10,14 @@ class PagesController < ApplicationController
   ].freeze
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}
+  PRIVACY_POLICY_ID_FILTER = %r{^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$}
 
   caches_page :cookies
   caches_page :show
 
   before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && (params[:subject] || params[:degree_status]) }
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
+  rescue_from InvalidPrivacyPolicy, with: :rescue_invalid_privacy_policy
 
   PAGE_LAYOUTS = [
     "layouts/home",
@@ -31,6 +34,8 @@ class PagesController < ApplicationController
   def privacy_policy
     @page_title = "Privacy Policy"
     policy_id = params[:id]
+
+    raise InvalidPrivacyPolicy if policy_id && policy_id !~ PRIVACY_POLICY_ID_FILTER
 
     @privacy_policy = if policy_id
                         GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_privacy_policy(policy_id)
@@ -59,6 +64,10 @@ class PagesController < ApplicationController
     render_page("events/get-the-most-from-events")
   end
 
+  def what_happens_at_events_transcript
+    render_page("events/what-happens-at-events-transcript")
+  end
+
   def scholarships_and_bursaries
     render_page("funding-and-support/scholarships-and-bursaries")
   end
@@ -82,12 +91,14 @@ private
   end
 
   def init_funding_widget
-    @funding_widget =
-      if params[:funding_widget].blank?
-        FundingWidget.new
-      else
-        FundingWidget.new(funding_widget_params).tap(&:valid?)
-      end
+    if params[:funding_widget].present?
+      @funding_widget = FundingWidget.new(funding_widget_params)
+      @funding_widget.valid?
+      @funding_widget.content_errors.each { |e| add_content_error(e) }
+      @content_errors_title = "There is a problem" unless @funding_widget.valid?
+    else
+      @funding_widget = FundingWidget.new
+    end
   end
 
   def render_page(path)
@@ -142,6 +153,21 @@ private
 
       format.all do
         render status: :not_found, body: nil
+      end
+    end
+  end
+
+  def rescue_invalid_privacy_policy
+    respond_to do |format|
+      format.html do
+        render \
+          template: "errors/bad_request",
+          layout: "application",
+          status: :bad_request
+      end
+
+      format.all do
+        render status: :bad_request, body: nil
       end
     end
   end

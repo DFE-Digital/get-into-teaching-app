@@ -12,7 +12,7 @@ module Content
     end
 
     def header_image
-      image_pack_tag(@image, alt: helpers.image_alt(@image)) if @image
+      image_pack_tag(@image, **helpers.image_alt_attribs(@image)) if @image
     end
 
     def classes

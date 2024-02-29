@@ -6,7 +6,7 @@
           <% if numeric %>
             <%= i %>
           <% else %>
-            <%= image_pack_tag("static/icon-tick.svg", alt: "") %>
+            <%= image_pack_tag("static/images/icon-tick.svg", **helpers.image_alt_attribs_for_text("")) %>
           <% end %>
         </div>
         <%= tag.h2(title, class: "heading-m") %>

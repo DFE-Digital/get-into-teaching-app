@@ -33,17 +33,13 @@ We’ve also made the website text as simple as possible to understand.
 
 [AbilityNet](https://mcmw.abilitynet.org.uk/) has advice on making your device easier to use if you have a disability.
 
-## How accessible this website is
-
-We know some parts of this website are not fully accessible. These are listed below in detail. We are working to address these.
-
 ## Feedback and contact information
 
 If you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille:
 
 * email [getintoteaching.helpdesk@education.gov.uk](mailto:getintoteaching.helpdesk@education.gov.uk)
 
-We’ll consider your request and get back to you within 5 days.
+We’ll consider your request and get back to you within 5 working days.
 
 ## Reporting accessibility problems with this website
 
@@ -61,28 +57,10 @@ The Department for Education is committed to making its websites accessible, in 
 
 ## Compliance status
 
-This website is partially compliant with the WCAG (Web Content Accessibility Guidelines) version 2.1 AA standard, due to the following non-compliances:
-
-* on our form pages, our ‘Skip to main content’ link does not move the main focus to the correct place. This fails to meet [WCAG 2.1 2.4.1 Bypass Blocks (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
-
-* our search bar does not programmatically indicate whether it is collapsed or expanded, which affects screen reader users. This fails to meet [WCAG 2.1 1.3.1 Info and Relationships (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html) and [WCAG 2.1 4.1.2 Name, Role, Value (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
-
-* on the bursaries and scholarships page, the widget in the ‘What funding could I get for teacher training’ section is difficult for screen reader and keyboard users to navigate due to the way the page refreshes when the selection changes. In addition, the page title is re-announced for screen reader users. This fails to meet [WCAG 2.1 3.2.2 On Input (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/on-input.html)
-
-* our video content does not include all content in the audio. This fails to meet [WCAG 2.1 1.2.3 Audio Description or Media Alternative (Pre-recorded) (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html) and [WCAG 2.1 1.2.5 Audio Description (Pre-recorded) (Level AA)](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
-
-* our menu and buttons have insufficient colour contrast ratios. This fails to meet [WCAG 2.1 1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
-
-* the hover state of our 'Set cookie preferences' button on our cookie modal, the ‘How to become a teacher’ block on the home page and the 'Register for this event' button in the header of individual event pages all have insufficient colour contrast ratios for non-text elements. This fails to meet [WCAG 2.1 1.4.11 Non-text Contrast (Level AA)](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)
-
-## What we’re doing to improve accessibility
-
-We are currently working to address the known accessibility issues.
-
-We’ll continue to test the accessibility of this service as it develops.
+This website is fully compliant with the WCAG version 2.1 AA standard.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 6 December 2023. It was last reviewed on 6 December 2023.
+This statement was prepared on 29 January 2024. It was last reviewed on 29 January 2024.
 
 This website was last tested independently on 25 September 2023. The test was carried out by Digital Accessibility Centre (DAC) Limited.

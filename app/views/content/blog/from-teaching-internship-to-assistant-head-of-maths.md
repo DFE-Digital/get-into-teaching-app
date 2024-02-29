@@ -3,8 +3,8 @@ title: From teaching internship to assistant head of maths
 date: "2021-07-05"
 images:
   ben_breen:
-    path: "static/content/blog/ben-breen.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/ben-breen.jpg"
+    path: "static/images/content/blog/ben-breen.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/ben-breen.jpg"
 description: |-
   Within three years Ben Breen went from a teaching intern to the assistant head of maths.
 keywords:
@@ -32,15 +32,11 @@ One of the great things about teaching is that pupils are often asking questions
 
 My teacher training year was definitely a learning curve. I have vivid memories of my first lesson, where a task that I had thought would take five minutes ended up lasting the entire hour! I found the training really interesting because as well as practising the skills of teaching, you’re also learning the theory behind why certain approaches work. It’s what I had felt was missing from my research work — in teaching I really got to see the application of what I was doing. More recently I have continued to pursue this through an MA in Science Education at the UCL Institute of Education.
 
-> When students ask me why I decided to teach rather than pursue research I tell them that teaching is so much more interesting and fun!
-
 ## Progression
 
 I applied for the Head of Physics role during my first year of teaching and was successful. This was a big jump for me and essentially allowed me to have a bigger impact beyond the walls of my classroom, improving provision for all students studying key stage 5 physics and the staff that taught them.
 
 As I became more experienced and developed my leadership skills, I realised I wanted to continue to progress in leadership so that I could affect decisions at a higher level and have a wider impact on students. I enjoyed the challenge of not just coming up with something that would work in my classroom, but that would work for other teachers and their students.
-
-> I’ve also found the more informal mentoring opportunities, like having a coffee and a chat with a colleague, useful for exploring my leadership ambitions.
 
 ## Increased responsibility and support
 
@@ -49,8 +45,6 @@ I had a great mentor in senior leadership who talked through how they made their
 I’ve really enjoyed the additional responsibility that Head of Physics and now Assistant Head of Mathematics brings. In my department we have great policies that allow us to play to our strengths, and we have a very organised leadership team. The enhanced responsibility has allowed me to see not just the difference we can make to our students, but also to our staff, who have faced a challenging year with the pandemic.
 
 There are of course challenges to the job. I was 21 when I began teaching and 22 when I became head of department. Managing colleagues that were older and more experienced than me was difficult to begin with, but I can say now, after having stayed at the same school for six years and developed my reputation, that it’s not so much of a challenge anymore. I found the best approach was to acknowledge other people’s experience and seek their advice, while still driving forward with a clear vision. When I moved over to the maths department, I had to develop a new management style, but fortunately I already knew the staff well.
-
-> My students are enthusiastic and they push me to understand more about physics and maths too.
 
 ## The best things about teaching
 

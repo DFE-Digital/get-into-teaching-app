@@ -4,6 +4,8 @@
 <%= f.hidden_field :is_walk_in, value: f.object.is_walk_in? %>
 <%= f.hidden_field :accepted_policy_id, value: f.object.latest_privacy_policy.id %>
 <%= f.hidden_field :event_id, value: @event.id %>
+<%= f.hidden_field :channel_id, value: params[:channel] || f.object&.channel_id %>
+<%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id %>
 
 <p>Your details are protected under the terms of our <%= link_to("privacy notice", privacy_policy_path(id: f.object.latest_privacy_policy.id), { target: :blank }) %>.</p>
 

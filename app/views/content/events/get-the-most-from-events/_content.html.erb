@@ -71,9 +71,9 @@
     <%= render TextBlockWithTwoImagesComponent.new(
       heading: "Where to find the experts",
       colour: "yellow",
-      image_1_path: "static/content/events/collage1.jpeg",
+      image_1_path: "static/images/content/events/collage1.jpeg",
       image_1_alt: "A lady holding papers standing in front of someone smiling with other people and an event banner in the background.",
-      image_2_path: "static/content/events/collage2.jpeg",
+      image_2_path: "static/images/content/events/collage2.jpeg",
       image_2_alt: "A man holding an iPad wearing a blue Get Into Teaching t-shirt talking to a lady with an event banner behind.",
     ) do %>
       <p>
@@ -110,14 +110,20 @@
       <h3>Event staff</h3>
       <p> Our friendly team will be there to welcome you at the door. Ask them about the event, where to find the experts, and where you can get overseas qualifications checked.</p>
 
-    <h2 class="heading-l heading--box-blue">You're good to go</h2>
-      <p>
-        Put the time in now to make the most of this event and you’ll be all set for a great future.
-      </p>
-      <p>
-        Want this information to hand on the day? Just bookmark it, take a picture of the bits you want to keep, or add it to the notes on your phone.
-      </p>
+    <h3>Hear from attendees at Get Into Teaching events</h3>
+    <p>Watch our video to see how people like you have got help and advice on training to teach at Get Into Teaching events.</p>
 
+    <div class="video">
+      <%= render Content::YoutubeVideoComponent.new(
+        id: "w3AVk-ByUaA",
+        title: "A video about What happens at a Get Into Teaching event"
+      ) %>
+      <p><a href="/events/what-happens-at-events-transcript">Read the transcript for the 'What happens at a Get Into Teaching event' video</a>.</p>
+    </div>
+
+    <h2 class="heading-l heading--box-blue">You're good to go</h2>
+    <p>Put the time in now to make the most of this event and you’ll be all set for a great future.</p>
+    <p>Want this information to hand on the day? Just bookmark it, take a picture of the bits you want to keep, or add it to the notes on your phone.</p>
     <h2 class="heading-l heading--box-blue">Need some help?</h2>
       <p>
         <a href="tel:08003892500">Call us on 0800 389 2500</a> Monday to Friday between 8:30am and 5:30pm, (except on <a href="https://www.gov.uk/bank-holidays">bank holidays</a>).

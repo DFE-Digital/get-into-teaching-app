@@ -6,13 +6,15 @@
 
   <%= render "sections/head" %>
   <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
     <%= render HeaderComponent.new %>
+    <%= yield(:back_link) %>
 
     <%= main_tag(class: "main-section registration-with-image-above") do %>
       <% if @event.is_online %>
-        <%= render Content::ImageComponent.new(path: "static/content/event-signup/event-regional-online.jpg") %>
+        <%= render Content::ImageComponent.new(path: "static/images/content/event-signup/event-regional-online.jpg") %>
       <% else %>
-        <%= render Content::ImageComponent.new(path: "static/content/event-signup/event-regional.jpg") %>
+        <%= render Content::ImageComponent.new(path: "static/images/content/event-signup/event-regional.jpg") %>
       <% end %>
 
       <div class="event-info">

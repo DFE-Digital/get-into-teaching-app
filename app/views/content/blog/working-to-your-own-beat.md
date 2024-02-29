@@ -3,8 +3,8 @@ title: Working to your own beat
 date: "2021-11-22"
 images:
   staff-room:
-    path: "static/content/blog/staff-room.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/staff-room.jpg"
+    path: "static/images/content/blog/staff-room.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/staff-room.jpg"
 description: |-
   A recent survey has revealed the extent to which people feel they can be their true selves in the workplace.
 keywords:

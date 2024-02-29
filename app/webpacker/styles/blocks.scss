@@ -14,7 +14,7 @@ $space-between-sections: 3.7em;
 
   &.homepage-feature {
     @supports (display: grid) {
-      margin: $space-between-sections $px-either-side-of-content 0;
+      margin: 1em $px-either-side-of-content 0;
     }
   }
 
@@ -90,7 +90,7 @@ $space-between-sections: 3.7em;
 
   @include mq($from: tablet) {
     display: flex;
-    gap: $indent-amount / 2;
+    gap: $indent-amount * .5;
     padding: 0 15px;
 
     .image-block {

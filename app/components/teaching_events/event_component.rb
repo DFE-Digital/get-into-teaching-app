@@ -44,8 +44,8 @@ module TeachingEvents
     end
 
     def image
-      image_path = "static/content/event-signup/event-regional#{'-online' if online?}-listing.jpg"
-      helpers.image_pack_tag(image_path, alt: helpers.image_alt(image_path))
+      image_path = "static/images/content/event-signup/event-regional#{'-online' if online?}-listing.jpg"
+      helpers.image_pack_tag(image_path, **helpers.image_alt_attribs(image_path))
     end
 
     def classes

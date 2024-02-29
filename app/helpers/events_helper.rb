@@ -83,7 +83,7 @@ module EventsHelper
     end
   end
 
-  def categorise_events(events)
+  def categorise_events(events, params)
     events.map do |event|
       address = if event.building.present?
                   "#{event.building.venue}, #{event.building.address_city}"
@@ -101,7 +101,7 @@ module EventsHelper
       OpenStruct.new(
         title: Crm::EventRegion.lookup_by_id(event.region_id),
         description: description,
-        path: event_path(event.readable_id),
+        path: event_path(event.readable_id, channel: params[:channel], sub_channel: params[:sub_channel]),
       )
     end
   end

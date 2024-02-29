@@ -1,39 +1,53 @@
 ---
 
 Style:
-  - app/**/*.scss
-  - app/**/*.css
-  
+- changed-files:
+  - any-glob-to-any-file:
+    - app/**/*.scss
+    - app/**/*.css
+
 Ruby:
-  - app/**/*.rb
-  - app/**/*.erb
-  - db/**/*.rb
-  - config/**/*.rb
-  - lib/**/*.rb
-  - lib/**/*.rake
+- changed-files:
+  - any-glob-to-any-file:
+    - app/**/*.rb
+    - app/**/*.erb
+    - db/**/*.rb
+    - config/**/*.rb
+    - lib/**/*.rb
+    - lib/**/*.rake
 
 Test:
-  - spec/**/*
-  - tests/**/*
+- changed-files:
+  - any-glob-to-any-file:
+    - spec/**/*
+    - tests/**/*
 
 DevOps:
-  - terraform/**/*
-  - .github/**/*.yml
+- changed-files:
+  - any-glob-to-any-file:
+    - terraform/**/*
+    - .github/**/*.yml
 
 Docker:
-  - Dockerfile 
-  - docker-run.sh
+- changed-files:
+  - any-glob-to-any-file:
+    - Dockerfile
+    - docker-run.sh
 
 Rails:
-  - get-into-teaching-app/.env.*
+- changed-files:
+  - any-glob-to-any-file: 'get-into-teaching-app/.env.*'
+
 
 Assets:
-  - public/assets/**/*
+- changed-files:
+  - any-glob-to-any-file: 'public/assets/**/*'
+
 
 Content:
-  - app/views/content/**/*
+- changed-files:
+  - any-glob-to-any-file: 'app/views/content/**/*'
 
 Config:
-  - config/**/*
-
-
+- changed-files:
+  - any-glob-to-any-file: 'config/**/*'

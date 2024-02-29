@@ -12,7 +12,7 @@ html:not(.js-enabled) {
   background-color: $purple;
   font-weight: bold;
   font-size: .8em;
-  margin-right: $indent-amount / 4;
+  margin-right: $indent-amount * .25;
   text-align: center;
 
   span {

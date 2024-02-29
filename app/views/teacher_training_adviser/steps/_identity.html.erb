@@ -1,6 +1,6 @@
-<% content_for(:left_image) { "content/tta-sign-up/left.jpg" } %>
-<% content_for(:right_image) { "content/tta-sign-up/right.jpg" } %>
-<% content_for(:mobile_image) { "content/tta-sign-up/mobile.jpg" } %>
+<% content_for(:left_image) { "images/content/tta-sign-up/left.jpg" } %>
+<% content_for(:right_image) { "images/content/tta-sign-up/right.jpg" } %>
+<% content_for(:mobile_image) { "images/content/tta-sign-up/mobile.jpg" } %>
 
 <h1>Get an adviser</h1>
 
@@ -27,9 +27,9 @@
   color: "grey"
 ) %>
 
-<%= f.govuk_text_field :first_name, width: 'two-thirds' %>
-<%= f.govuk_text_field :last_name, width: 'two-thirds' %>
-<%= f.govuk_email_field :email, width: 'two-thirds' %>
+<%= f.govuk_text_field :first_name, width: 'two-thirds', autocomplete: "given-name" %>
+<%= f.govuk_text_field :last_name, width: 'two-thirds', autocomplete: "family-name" %>
+<%= f.govuk_email_field :email, width: 'two-thirds', autocomplete: "email" %>
 <%= f.hidden_field :channel_id, value: f.object.channel_id.presence || params[:channel] %>
 <%= f.hidden_field :sub_channel_id, value: f.object.sub_channel_id.presence || params[:sub_channel] %>
 <%= f.hidden_field :accepted_policy_id, value: f.object.latest_privacy_policy.id %>

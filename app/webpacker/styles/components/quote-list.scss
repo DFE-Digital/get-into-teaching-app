@@ -12,7 +12,7 @@ ol.quote-list {
     grid-template-rows: 50% 50%;
 
     h3 {
-      @extend .heading--highlight-white-on-purple;
+      @extend .heading--highlight-pink;
       grid-area: 1 / 1 / span 2 / span 1;
       margin-left: 2.5rem;
     }

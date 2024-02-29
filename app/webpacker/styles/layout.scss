@@ -72,6 +72,16 @@ section.container {
   flex-direction: column;
   margin: 1em 0;
 
+  > main.within-section,
+  > .back-link {
+    margin: auto $indent-amount;
+
+    @include mq($from: tablet) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
   &.centered {
     justify-content: center;
   }
@@ -151,11 +161,19 @@ section.container {
 .row {
   .grey {
     background-color: $grey;
-    padding: 3em 0;
+    padding: 1em 0;
+
+    @include mq($from: tablet) {
+      padding: 3em 0;
+    }
   }
 
   .col {
-    margin: 0 auto 3 * $indent-amount auto;
+    margin: 0 auto 2 * $indent-amount auto;
+
+    @include mq($from: tablet) {
+      margin: 0 auto 3 * $indent-amount auto;
+    }
   }
 
   .col-space-s {
@@ -192,6 +210,10 @@ section.container {
 
   .col-640 {
     max-width: $column-640;
+  }
+
+  .col-center {
+    text-align: center;
   }
 
   .col-horizontal {

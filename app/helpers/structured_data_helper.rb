@@ -90,7 +90,7 @@ module StructuredDataHelper
   def logo_structured_data
     data = {
       url: root_url,
-      logo: asset_pack_url("static/getintoteachinglogo.svg"),
+      logo: asset_pack_url("static/images/getintoteachinglogo.svg"),
     }
 
     structured_data("Organization", data)
@@ -139,15 +139,15 @@ module StructuredDataHelper
   def event_image_data(event)
     images = if event.is_online
                [
-                 asset_pack_url("static/structured_data/git_online_1x1.jpeg"),
-                 asset_pack_url("static/structured_data/git_online_4x3.jpeg"),
-                 asset_pack_url("static/structured_data/git_online_16x9.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_online_1x1.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_online_4x3.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_online_16x9.jpeg"),
                ]
              else
                [
-                 asset_pack_url("static/structured_data/git_in_person_1x1.jpeg"),
-                 asset_pack_url("static/structured_data/git_in_person_4x3.jpeg"),
-                 asset_pack_url("static/structured_data/git_in_person_16x9.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_in_person_1x1.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_in_person_4x3.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_in_person_16x9.jpeg"),
                ]
              end
 

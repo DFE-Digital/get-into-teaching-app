@@ -1,4 +1,4 @@
-require "rails_helper"
+require "spec_helper"
 require "lazy_load_images"
 
 describe LazyLoadImages do

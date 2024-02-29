@@ -19,9 +19,10 @@ module SpecHelpers
           candidate_data = data.find do |d|
             [d["first_name"], d["last_name"], d["email"]].map(&:downcase) == matchback_values
           end
+          filtered_candidate_data = candidate_data.except("address_line1", "address_line2", "address_city")
 
-          GetIntoTeachingApiClient::TeacherTrainingAdviserSignUp.new(candidate_data).tap do |c|
-            c.date_of_birth = Date.parse(candidate_data["date_of_birth"]) if candidate_data["date_of_birth"].present?
+          GetIntoTeachingApiClient::TeacherTrainingAdviserSignUp.new(filtered_candidate_data).tap do |c|
+            c.date_of_birth = Date.parse(filtered_candidate_data["date_of_birth"]) if filtered_candidate_data["date_of_birth"].present?
           end
         end
     end

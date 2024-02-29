@@ -82,10 +82,14 @@ You can usually do this if you’ve worked as an unqualified teacher:
 
 [Find out how to get QTS through assessment only](/train-to-be-a-teacher/assessment-only-route-to-qts ).
 
-## Get QTS if you qualified as a teacher outside England
+## Get QTS if you qualified as a teacher in Wales, Scotland or Northern Ireland
 
 If you trained to teach in Wales, your QTS will be automatically recognised in England and awarded by the [Education Workforce Council (EWC)](https://www.ewc.wales/site/index.php/en/).
 
-If you trained to teach in Scotland, Northern Ireland or in a country outside the UK, you may be able to apply for QTS in England without any further fees or training.
+If you trained to teach in Scotland or Northern Ireland, you can [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without any further fees or training.
 
-You can [check your eligibility to apply for qualified teacher status (QTS) if you qualified as a teacher outside England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start).
+## QTS for non-UK citizens who qualified to teach outside the UK
+
+Depending on where you qualified, the subject you teach and your qualifications and experience, you may be able to use a professional recognition service called Apply for QTS in England. [Learn more about applying for QTS in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas#english-qualified-teacher-status-qts).
+
+Many teachers will not meet the requirements for QTS. If you’re not eligible, you may be able to [find an alternative route to QTS which better suits your circumstances](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk). 

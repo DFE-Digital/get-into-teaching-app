@@ -3,8 +3,8 @@ title: Being myself in the classroom
 date: "2020-10-15"
 images:
   olivia:
-    path: "static/content/blog/olivia.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/olivia.jpg"
+    path: "static/images/content/blog/olivia.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/olivia.jpg"
 description: |-
   Early Career Teacher (ECT), Olivia Lee, did her teacher training in Drama with the Outwood Grange Academies Trust. Here she explains how being herself in the classroom has made her the teacher she has become.
 keywords:

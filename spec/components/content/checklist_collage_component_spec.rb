@@ -15,9 +15,9 @@ describe Content::ChecklistCollageComponent, type: :component do
   end
   let(:image_paths) do
     [
-      "static/content/is-teaching-right-for-me/Physics_MissHayre_4.jpg",
-      "static/content/is-teaching-right-for-me/collage1.jpg",
-      "static/content/is-teaching-right-for-me/collage2.jpg",
+      "static/images/content/is-teaching-right-for-me/Physics_MissHayre_4.jpg",
+      "static/images/content/is-teaching-right-for-me/collage1.jpg",
+      "static/images/content/is-teaching-right-for-me/collage2.jpg",
     ]
   end
   let(:cta) do

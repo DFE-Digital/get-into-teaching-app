@@ -4,8 +4,9 @@ This documentation aims to be a reference for content editors that want to make 
 
 ## Table of Contents
 
-1. [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
-2. [Content Editing Tips/Info](#content-editing-tips-info)
+1. [Setting up Codespaces and Github](#getting-started)
+2. [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
+3. [Content Editing Tips/Info](#content-editing-tips-info)
 	* [Headings](#headings)
 	* [Frontmatter](#frontmatter)
 	* [Links](#links)
@@ -20,14 +21,40 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Inset text](#inset-text)
 	* [YouTube Video](#youtube-video)
 	* [Hero](#hero)
-3. [Creating a Blog Post](#creating-a-blog-post)
+4. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
-4. [Navigation](#navigation)
+5. [Navigation](#navigation)
 	* [Main Navigation](#main-navigation)
 	* [Category Pages](#category-pages)
-5. [Build errors](#build-errors)
-6. [Internship providers](#internship-providers)
+6. [Build errors](#build-errors)
+7. [Internship providers](#internship-providers)
+8. [Creating a new page](#creating-a-new-page)
+9. [Preview a change](#preview-a-change)
+10. [Saving a change](saving-a-change)
+11. [If you add something to the wrong branch](wrong-branch)
+12. [Redirect URLs](redirect-urls)
+13. [Finding links on the site](links-site)
+
+## Setting up Codespaces and Github
+
+You will need to download and set up an account on Github and Visual Studio Code with help from the team. Once you're ready:
+
+1. Go to the master branch link: https://github.com/DFE-Digital/get-into-teaching-app
+2. Select the green button '<> Code' and create a branch
+3. This will start 'setting up a Codespace'
+4. Once this is loaded, go to the top left hand corner and select the three horizontal lines - this will open a drop down
+5. Select 'Open in VS Code Desktop'
+6. This will open the file on Visual Studio Code
+7. When you run a codespace it will make up a branch name: **when you next go on to github and want to run a codespace, you should use the same branch every time. You do not need to make a new one every time.**
+
+### Tips
+- Most of the content sits under 'app > views > content'
+- When starting a new branch, make sure to always start with the latest version of 'master' by starting from this link: https://github.com/DFE-Digital/get-into-teaching-app
+- In the folders, blue arrow icons are the pages and the content, the red <> icons are components
+- Markdown tutorial is useful when learning to write content in Github https://www.markdowntutorial.com/
+
+
 
 ## Finding a Page/Content to Edit
 
@@ -113,7 +140,7 @@ If you need to include a link to a document or embed an image in your page conte
 ```
 [Download a document](static/documents/my-document.pdf)
 
-![An image](static/content/my-image.jpg)
+![An image](static/images/content/my-image.jpg)
 ```
 
 Images should be appropriately scaled and compressed prior to adding them to the website.
@@ -123,14 +150,14 @@ Images should be appropriately scaled and compressed prior to adding them to the
 The images used in the hero and on blog posts now pull their alt text from a central store. This allows us to set it once and include it wherever the image is used. The data is stored in `config/images.yml` and the format is as follows:
 
 ```yaml
-"static/content/hero-images/0001.jpg":
+"static/images/content/hero-images/0001.jpg":
   alt: "Maths teacher standing in front of a whiteboard with maths equations."
   variants:
-    - "static/content/hero-images/0001--mobile.jpg"
-    - "static/content/hero-images/0001--tablet.jpg"
+    - "static/images/content/hero-images/0001--mobile.jpg"
+    - "static/images/content/hero-images/0001--tablet.jpg"
 ```
 
-The key (`"static/content/hero-images/0001.jpg"`) is the **primary** variant of the image, the full resolution one. Beneath it the following items are nested:
+The key (`"static/images/content/hero-images/0001.jpg"`) is the **primary** variant of the image, the full resolution one. Beneath it the following items are nested:
 
 * `alt:` - the alt text for the image, wrapped in quotes
 * `variants` - a list of **other versions of the same image**. The alternate versions can be thumbnails or crops and are considered alternates if the same `alt` text can be applied to them as the primary variant
@@ -270,11 +297,11 @@ title: Article title
 date: "2021-08-26"
 images:
 an_image:
-  path: "static/content/blog/image.jpg"
-  thumbnail_path: "static/content/blog/thumbnails/image.jpg"
+  path: "static/images/content/blog/image.jpg"
+  thumbnail_path: "static/images/content/blog/thumbnails/image.jpg"
   alt: "A description of the image"
 another_image:
-  path: "static/content/blog/another_image.jpg"
+  path: "static/images/content/blog/another_image.jpg"
   alt: "A description of the image"
 description: |-
   A brief description of the blog article.
@@ -442,3 +469,99 @@ When updating not just the text content within the file, but the actual list of 
 - Export the XLSX to CSV with filename `internship_providers.csv`
 - Place it in the `lib/tasks/support` directory.
 - Run `bundle exec rake teaching_internship_providers:generate`.
+
+
+## Creating a new page
+
+1. **Make sure you start by creating a new branch on master**
+To do this you will need to
+	- always open Visual Studio Code from https://github.com/DFE-Digital/get-into-teaching-app and open from the green code button
+	- once Visual Studio Code is open, click the search bar and select 'Create new branch'
+	- type in the name of your new branch and press enter
+	- if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
+
+3. Navigate to the right hand side bar, where you want the new page to sit
+4. Right hand click and select 'New file'
+5. Give name to file ie. when-to-apply.md **make sure you put md on the end of the name if it is a markdown file**
+
+Now you have created a page - you will need to fill in the top details:
+
+**If you have created a page that will appear in one of the category pages ie. How to apply**
+
+title: 	title will appear in the browser tab
+
+heading: this is the h1 for the page - only needed if you want the h1 and the title to be different. If not, just add the title
+
+description: must start with |- and then you can write the text here
+
+related_content: list your related content links here, formatted as internal links
+
+navigation:  this is to decide where the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the category page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an in between number.  
+
+navigation_title: This is the title that will appear in the tiles
+
+navigation_description: This is the description that will appear in the tiles
+
+keywords: use Semrush to put keywords here, do a bulletpointed list using dashes like below:
+  - adviser
+  - advisor
+  - ITT
+
+Here is a blank version to take and fill in:
+title:
+heading:
+description: 
+related_content: 
+navigation:  
+navigation_title: 
+navigation_description: 
+keywords: 
+
+## Preview a change
+1. Go to the terminal tab on Visual Studio Code **or** Go the top bar of your laptop - click terminal - click 'new terminal'
+2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
+3. When it has finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000. This will open the browser
+4. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
+5. Go to the url: http://127.0.0.1:3000 and insert a / on the end
+6. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
+7. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
+The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
+8. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it.
+
+## Saving a change
+When you have made a change in Visual Studio Code and want to save your work.
+1. Save the change by CTRL-S
+2. This will cause a notification on the source control
+3. You will need to type a name for this change in the 'message' box
+4. Click the plus button that appears on the change - this will stage the change
+5. Click 'sync changes'
+6. Commit the changes
+7. This will then open a pull request, you will need to fill in the details for this and click 'Create pull request'
+8. You can monitor pull requests and assign reviewers here https://github.com/DFE-Digital/get-into-teaching-app/pulls
+
+## If you add something to the wrong branch
+
+You can change the branch you've put changes under by going onto the pull request from the branch.
+At the top there will be a line saying something like: 'you merged 1 commit into page-titles from Cookies-policy-update 3 hours ago'
+If you want to move where this branch sits, click on the first title 'page titles' and it will produce a drop down
+Select the correct place from the drop down.
+
+## Redirect URLs
+If you search in Visual Studio Code 'redirects' it will take you to a page 'redirects.yml'
+**Currently you can only redirect internal links in this file. External redirects are handled in the routes file; you may need developer support to create or amend these.**
+You will need to follow the pattern that the list of redirects uses in this file.
+It will need to be in quotation marks. Then, you need to put the old url a colon and then the new url like this "/oldurl": "/newurl"
+Example: "/train-to-be-a-teacher/teacher-training-personal-statement": "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
+Press enter to create an indention - 
+Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
+
+## Finding links on the site
+You can find everywhere a page is linked to by:
+1. Go to [Github](https://github.com/DFE-Digital/get-into-teaching-app)
+2. There is a search bar in the top right hand side
+3. You should search a pages path here ie. /subjects/maths
+4. The system will search for whereever this link is in the code across the website
+
+
+
+

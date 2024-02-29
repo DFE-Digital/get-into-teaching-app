@@ -1,5 +1,5 @@
 module MetadataHelper
-  include Webpacker::Helper
+  include Shakapacker::Helper
 
   def meta_tag(key:, value:, opengraph: false)
     return if value.blank?

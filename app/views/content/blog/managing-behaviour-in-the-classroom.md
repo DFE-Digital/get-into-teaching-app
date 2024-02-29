@@ -3,8 +3,8 @@ title: Managing behaviour in the classroom
 date: "2020-10-09"
 images:
   header_image:
-    path: "static/content/blog/pupil-chatting-to-teacher-in-classroom.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/pupil-chatting-to-teacher-in-classroom.jpg"
+    path: "static/images/content/blog/pupil-chatting-to-teacher-in-classroom.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/pupil-chatting-to-teacher-in-classroom.jpg"
 description: |-
   Teacher training adviser Jane Wilkinson answers some common questions from
   aspiring teachers about behaviour management

@@ -1,12 +1,13 @@
-@mixin button($bg: $green, $fg: $white) {
+@mixin button($bg: $cta-green, $fg: $white) {
   display: block;
   font-weight: bold;
   background-color: $bg;
   text-decoration: none;
   color: $fg;
-  padding: 14px $indent-amount;
+  padding: 12px 1em 12px .9em;
   @include font-size("small");
   border: none;
+  box-shadow: 0 2px 0 $cta-green-box-shadow;
 
   @media (forced-colors: active) {
     border: 2px solid transparent;
@@ -21,7 +22,7 @@
     color: $white;
     background-color: $black;
     z-index: 100;
-    box-shadow: 0 4px $pink;
+    box-shadow: 0 2px $pink;
     outline: 4px solid transparent;
   }
 }
@@ -68,7 +69,7 @@
   }
 
   &:focus:after {
-    @include chevron-icon($white, .6em);
+    @include chevron-icon($black, .6em);
   }
 }
 
@@ -161,8 +162,13 @@ body a.govuk-back-link {
   }
 
   &--secondary {
-    @include button($bg: $grey, $fg: $black);
+    @include button($bg: $cta-grey, $fg: $black);
     @include chevron($color: $black);
+    box-shadow: 0 2px 0 $cta-grey-box-shadow;
+
+    &:hover {
+      background: $cta-grey-dark;
+    }
   }
 
   &--nowrap {
@@ -184,12 +190,17 @@ body a.govuk-back-link {
 }
 
 .secondary-button {
-  @include button($bg: $grey-light, $fg: black);
+  @include button($bg: $cta-grey, $fg: black);
   display: inline-block;
+  box-shadow: 0 2px 0 $cta-grey-box-shadow;
+
+  &:hover {
+    background: $cta-grey-dark;
+  }
 }
 
 .request-button {
-  @include button($bg: $pink);
+  @include button($bg: $cta-green);
 }
 
 .survey-button {

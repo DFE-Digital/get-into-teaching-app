@@ -62,11 +62,11 @@ Figures apply from 1 September 2023.
 
 ## Primary and secondary teacher salary
 
-If you have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you’ll start on at least £30,000 (or more in London) as a primary or secondary school teacher in England. 
+If you have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you’ll get a minimum starting salary of £30,000 (or more in London) as a primary or secondary school teacher in England. 
 
 Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.    
 
-A typical teacher with 5 years’ experience could earn at least £41,333, or more in London.
+A typical teacher could earn at least £41,333 (or more in London) within 5 years.
 
 ### Qualified teacher salary
 
@@ -86,6 +86,8 @@ This could be a one-off payment for a specific project, for example, creating a 
 Or it might be an extra responsibility attached to your job role, for example, being the head of department. 
 
 Depending on your responsibilities, you could earn up to an extra £15,690. Your school will determine how much you receive. 
+
+<a name="career-progression"></a>
 
 ## Career progression
 
@@ -120,6 +122,8 @@ Their role is wide ranging, but includes leading and motivating teachers, and en
 | London fringe                            | £54,685 | £132,352 |
 | Outer London                             | £57,124 | £134,765 |
 | Inner London                             | £62,304 | £139,891 |
+
+Find out more about [how to move up the career ladder in teaching](/is-teaching-right-for-me/career-progression).
 
 ## If you do not have qualified teacher status (QTS)
 

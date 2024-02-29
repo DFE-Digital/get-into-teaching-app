@@ -7,7 +7,7 @@ content:
     - content/landing/train-to-teach-if-you-have-a-degree/mailing_list
     - content/landing/train-to-teach-if-you-have-a-degree/content
     - content/landing/train-to-teach-if-you-have-a-degree/promo
-image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
+image: "static/images/content/landing/train-to-teach-if-you-have-a-degree-1.jpg"
 colour: "yellow"
 layout: "layouts/minimal"
 talk_to_us: false

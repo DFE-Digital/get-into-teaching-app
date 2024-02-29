@@ -39,8 +39,8 @@ provider_groups:
       email: enquiries@colchesterttc.org.uk
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
-      name: Claire King
-      telephone: 01476 512793
+      name: Educate Group HQ
+      telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: Essex and Thames SCITT
       link: https://etpscitt.co.uk/
@@ -76,11 +76,6 @@ provider_groups:
       name: Jackie Atkin
       telephone: '01234 907896'
       email: jatkin@pilgrimpartnership.org
-    - header: University of Bedfordshire
-      link: https://www.beds.ac.uk/
-      name: Bedford Admissions
-      telephone: 01234 793279
-      email: admission@beds.ac.uk
     - header: University of Hertfordshire
       link: https://www.herts.ac.uk/apply/schools-of-study/education/initial-teacher-training/assessment-only-route
       name: AO Administration Team
@@ -98,8 +93,8 @@ provider_groups:
       email: jwoolley@cfbt.com
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
-      name: Claire King
-      telephone: 01476 512793
+      name: Educate Group HQ
+      telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: Inspiring Leaders Teacher Training
       link: https://inspiringleadersscitt.com/aor/
@@ -220,8 +215,8 @@ provider_groups:
       email: ed.ite@durham.ac.uk
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
-      name: Claire King
-      telephone: 01476 512793
+      name: Educate Group HQ
+      telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: Stockton-on-Tees Teacher Training Partnership
       link: https://www.stocktonscitt.uk
@@ -246,8 +241,8 @@ provider_groups:
       email: admin@scitt.bright-futures.co.uk 
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
-      name: Claire King
-      telephone: 01476 512793
+      name: Educate Group HQ
+      telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: Kingsbridge EIP SCITT
       name: Gail Thomson
@@ -346,7 +341,7 @@ provider_groups:
       name: Mike Lambert / Diane Carr
       email: AOQTS@sussex.ac.uk
     - header: University of Winchester
-      link: https://www.winchester.ac.uk/pages/home.aspx
+      link: https://www.winchester.ac.uk/study/Short-courses/Courses/Assessment-Only-Route-to-Qualified-Teacher-Status/
       name: Keith Smith
       email: ao@winchester.ac.uk
     - header: West Berkshire Training Partnership
@@ -356,10 +351,13 @@ provider_groups:
     - header: Xavier Catholic Education Trust
       link: https://www.teachsoutheast.co.uk/
       name: Joanna Crome
-      email: j.crome@xaviercet.org.uk
       telephone: '01932 578682'
+      email: j.crome@xaviercet.org.uk
   South West:
     providers:
+    - header: Bath Spa University
+      name: Darren McKay
+      email: assessmentonly@bathspa.ac.uk
     - header: Cornwall School Centred Initial Teacher Training (Cornwall SCITT)
       link: https://www.cornwallscitt.org/
       name: Lex Blake
@@ -450,8 +448,8 @@ provider_groups:
     providers:
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
-      name: Claire King
-      telephone: 01476 512793
+      name: Educate Group HQ
+      telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: GORSE SCITT
       link: https://gorsescitt.org.uk/
@@ -464,17 +462,17 @@ provider_groups:
       telephone: 0113 283 7123
       email: admissions@leedstrinity.ac.uk
     - header: North Lincolnshire SCITT Partnership
-      name: Jo Leedham
-      telephone: 01724 297950
-      email: jo.leedham@northlincs.gov.uk
+      name: Vicky Crossley
+      telephone: 01724 297119
+      email: vicky.crossley@northlincs.gov.uk
     - header: The Sheffield SCITT
       link: https://www.sheffieldscitt.org.uk/
       email: admin@sheffieldscitt.org.uk
     - header: Yorkshire and Humber Teacher Training
       link: https://www.yhtt.co.uk
-      name: Chris Fletcher
-      telephone: '01482 349611'
-      email: cfletcher@yhtt.co.uk
+      name: Kirstin Hilgenfeldt
+      telephone: 01482 686699
+      email: admin@yhtt.ac.uk
   National:
     providers:
     - header: TES Institute

@@ -316,10 +316,17 @@ en:
       preferred_education_phase_id:
         title: "Which stage are you interested in teaching?"
         change: "the stage you are interested in teaching"
+      preferred_teaching_subject_id:
+        title: "Which subject would you like to teach if you return to teaching?"
+        change: "the subject you would like to teach if you return to teaching"
     stage_of_degree:
       degree_status_id:
         title: "In which year are you studying?"
         change: "the year in which you are studying"
+    stage_taught:
+      stage_taught_id:
+        title: "Which stage did you previously teach?"
+        change: "the stage you previously taught"
     start_teacher_training:
       initial_teacher_training_year_id:
         title: "When do you want to start teacher training?"
@@ -471,6 +478,10 @@ en:
         teacher_training_adviser/steps/stage_interested_teaching:
           attributes:
             preferred_education_phase_id:
+              invalid_type: "You must select either primary or secondary"
+        teacher_training_adviser/steps/stage_taught:
+          attributes:
+            stage_taught_id:
               invalid_type: "You must select either primary or secondary"
         teacher_training_adviser/steps/returning_teacher:
           attributes:
@@ -674,8 +685,6 @@ en:
               blank: Enter the date and time the event starts
             end_at:
               blank: Enter the date and time the event ends
-            scribble_id:
-              blank: Enter a Scribble ID
 
         internal/event_building:
           attributes:
@@ -735,6 +744,10 @@ en:
           Overseas: "Overseas"
       teacher_training_adviser_steps_stage_interested_teaching:
         preferred_education_phase_id_options:
+          222750000: "Primary"
+          222750001: "Secondary"
+      teacher_training_adviser_steps_stage_taught:
+        stage_taught_id_options:
           222750000: "Primary"
           222750001: "Secondary"
       teacher_training_adviser_steps_gcse_science:
@@ -839,6 +852,8 @@ en:
         initial_teacher_training_year_id: "Choose the year you would like to start your teacher training."
       teacher_training_adviser_steps_stage_interested_teaching:
         preferred_education_phase_id: "Select a stage even if you're not sure yet — we try and match you with an adviser based on who you'd like to teach. You can change your mind later."
+      teacher_training_adviser_steps_stage_taught:
+        stage_taught_id:
       teacher_training_adviser_steps_returning_teacher:
         type_id: "Only select 'yes' if you have English qualified teacher status (QTS)."
       teacher_training_adviser_steps_have_a_degree:
@@ -872,6 +887,8 @@ en:
         degree_status_id: "In which year are you studying?"
       teacher_training_adviser_steps_stage_interested_teaching:
         preferred_education_phase_id: "Which stage are you interested in teaching?"
+      teacher_training_adviser_steps_stage_taught:
+        stage_taught_id: "Which stage did you previously teach?"
       teacher_training_adviser_steps_gcse_science:
         has_gcse_science_id: "Do you have grade 4 (C) or above in GCSE science, or equivalent?"
       teacher_training_adviser_steps_retake_gcse_maths_english:

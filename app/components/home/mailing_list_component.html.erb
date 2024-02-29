@@ -23,7 +23,7 @@
         <%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id.presence %>
         <%= f.hidden_field :accepted_policy_id, value: privacy_policy.id %>
 
-        <% button_text = "Next step <span></span>" %>
+        <% button_text = helpers.safe_html_format("Next step <span></span>") %>
         <%= f.button button_text, class: "button", data: { "prevent-double-click": true, "disable-with": button_text } %>
       <% end %>
     </div>

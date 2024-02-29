@@ -9,7 +9,7 @@ module Content
     end
 
     def icon(icon_name)
-      image_pack_tag("static/#{icon_name}.svg", alt: "")
+      image_pack_tag("static/images/#{icon_name}.svg", **helpers.image_alt_attribs_for_text(""))
     end
 
   private

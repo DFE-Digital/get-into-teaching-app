@@ -10,15 +10,15 @@
         <ul>
           <%= render Categories::CardComponent.new(heading_tag: "h3", card:
             OpenStruct.new(
-              title: "Explore teaching advisers",
-              description: "If you're a student and not in your final year of study, an adviser can help you find out more about teaching as a career.",
-              path: "/explore-teaching-advisers"
+              title: "If you already have a degree or you're a final year student",
+              description: "A teacher training adviser can help you understand how to get into teaching.",
+              path: "/teacher-training-advisers"
             )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h3", card:
             OpenStruct.new(
-              title: "Teacher training advisers",
-              description: "If you already have a degree or are a final year student, an adviser can help you understand how to get into teaching.",
-              path: "/teacher-training-advisers"
+              title: "If you're a student and not in your final year of study",
+              description: "An explore teaching adviser can help you find out more about teaching as a career.",
+              path: "/explore-teaching-advisers"
             )) %>
         </ul>
       </nav>

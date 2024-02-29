@@ -21,10 +21,11 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
 
     it "returning, teacher reference number, in the UK and telephone" do
       submit_choice_step("Yes", :returning_teacher)
-      submit_choice_step("Secondary", :stage_interested_teaching)
       submit_choice_step("Yes", :has_teacher_id)
       submit_previous_teacher_id_step("12345")
+      submit_choice_step("Secondary", :stage_taught)
       submit_select_step("Maths", :subject_taught)
+      submit_choice_step("Secondary", :stage_interested_teaching)
       submit_select_step("Physics", :subject_like_to_teach)
       submit_date_of_birth_step(Date.new(1974, 3, 16))
       submit_choice_step("UK", :uk_or_overseas)
@@ -37,10 +38,11 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
 
     it "returning, no teacher reference number, overseas and no telephone" do
       submit_choice_step("Yes", :returning_teacher)
-      submit_choice_step("Secondary", :stage_interested_teaching)
       submit_choice_step("Yes", :has_teacher_id)
       submit_previous_teacher_id_step("12345")
+      submit_choice_step("Secondary", :stage_taught)
       submit_select_step("Maths", :subject_taught)
+      submit_choice_step("Secondary", :stage_interested_teaching)
       submit_select_step("Physics", :subject_like_to_teach)
       submit_date_of_birth_step(Date.new(1974, 3, 16))
       submit_choice_step("Overseas", :uk_or_overseas)
@@ -152,12 +154,14 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       submit_verification_code(candidate_identity)
       submit_choice_step("Yes", :returning_teacher)
 
-      expect_current_step(:stage_interested_teaching)
-      expect(page.find_field("Secondary")).to be_checked
-      click_on_continue
+      expect_current_step(:stage_taught)
+      submit_choice_step("Secondary", :stage_taught)
 
       expect_current_step(:subject_taught)
-      expect(page).to have_select("Which main subject did you previously teach?", selected: "Maths")
+      submit_select_step("Maths", :subject_taught)
+
+      expect_current_step(:stage_interested_teaching)
+      expect(page.find_field("Secondary")).to be_checked
       click_on_continue
 
       expect_current_step(:subject_like_to_teach)

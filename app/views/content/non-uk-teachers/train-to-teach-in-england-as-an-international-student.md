@@ -1,5 +1,6 @@
 ---
 title: "Train to teach in England as a non-UK citizen"
+subcategory: If you want to train to teach
 description: |-
   Find out how to train to teach in England as a student from outside the UK. Get help and guidance on your qualifications, funding and visa.
 related_content:
@@ -12,7 +13,7 @@ navigation: 20.10
 navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
 date: "2021-05-27"
-image: "static/content/hero-images/0003.jpg"
+image: "static/images/content/hero-images/0003.jpg"
 backlink: "../../"
 youtube_video:
   why-train-to-teach:
@@ -314,9 +315,9 @@ Watch our video interviews with non-UK citizens who've successfully relocated to
 
 $why-train-to-teach$
 
-[Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/).
+[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript).
 
-[Read interviews with real teachers](/blog).
+
 
 ### Understand English education
 
@@ -328,6 +329,8 @@ Learn more about:
 - [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
 - [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/guidance-for-teachers) – a charity gathering international evidence on teaching 5 to 16 year olds
 - [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
+- [join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
+- [read interviews with real teachers](/blog)
 
 ## Contact
 

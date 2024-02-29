@@ -1,2 +1,2 @@
 rails: bundle exec rails s --port=3000
-webpacker: ./bin/webpacker-dev-server
+webpacker: ./bin/shakapacker-dev-server

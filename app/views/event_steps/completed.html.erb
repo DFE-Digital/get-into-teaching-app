@@ -1,7 +1,7 @@
 <% @hide_page_helpful_question = true %>
 
-<section>
-  <h1 class="heading-l heading--box-green">Sign up complete</h2>
+<%= tag.section data: { "sub-channel-id": session.dig('events', params['event_id'], 'sub_channel_id') } do %>
+  <h1 class="heading-l heading--box-green">Sign up complete</h1>
 
   <%= tag.h2("You are signed up for #{@event.name}.", class: "heading-m") %>
 
@@ -13,7 +13,7 @@
     <p>You're ready to receive email updates to help you get into teaching.</p>
   <%- end -%>
 
-  <h2 class="heading-m">What happens next?</h3>
+  <h2 class="heading-m">What happens next?</h2>
   <p>
     You will receive a confirmation email with details of the event. If there
     is an issue with the event we will contact you via phone.
@@ -34,12 +34,12 @@
       'Other'
     ]
   ) %>
-</section>
+<% end %>
 
 <div class="blocks">
   <%= render Content::GenericBlockComponent.new(
     title: "Life as a teacher",
-    icon_image: "icon-school-black.svg",
+    icon_image: "static/images/icon-school-black.svg",
     icon_size: "40x30",
     classes: "blocks__directory"
   ) do %>
@@ -52,7 +52,7 @@
 
   <%= render Content::GenericBlockComponent.new(
     title: "Your next steps",
-    icon_image: "icon-doc-black.svg",
+    icon_image: "static/images/icon-doc-black.svg",
     icon_size: "40x35",
     classes: "blocks__directory"
   ) do %>
@@ -65,7 +65,7 @@
 
   <%= render Content::GenericBlockComponent.new(
     title: "Sign up to get a teacher training adviser",
-    icon_image: "icon-git-black.svg",
+    icon_image: "static/images/icon-git-black.svg",
     icon_size: "33x33",
     classes: "blocks__directory"
   ) do %>

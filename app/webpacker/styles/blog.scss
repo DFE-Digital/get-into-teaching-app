@@ -125,15 +125,21 @@
   }
 
   blockquote {
-    $color: $pink-dark;
+    margin: 2em 1.5rem;
 
-    padding: 2em;
-    background: $grey;
-    margin: 2em auto;
-    $blog-content-width: 50ch;
+    @include quote($white);
+
+    border-left: 5px solid $pink;
 
     p {
-      position: relative;
+      margin: 0;
+      padding: 0 1em 1em 1.5em;
+      font-weight: normal;
+
+      span {
+        white-space: nowrap;
+        font-weight: normal;
+      }
 
       // some extra rules to make the quotes a bit nicer. this 'smart' css
       // unfortunately has the side affect of requiring attribution for
@@ -143,17 +149,13 @@
 
       &:before,
       &:after {
-        @include font-size(xlarge);
-        color: $pink-dark;
+        color: $black;
       }
 
       // always open the quote on the first paragraph
       &:first-child {
         &:before {
-          content: open-quote;
-          position: absolute;
-          left: -.6em;
-          top: -.3em;
+          content: '"';
         }
       }
 
@@ -162,17 +164,19 @@
       &:nth-last-child(2),
       &:only-of-type {
         &:after {
-          position: absolute;
-          content: close-quote;
-          margin-left: .02em;
-          margin-top: -.1em;
+          content: '"';
         }
+        padding-bottom: 0;
       }
 
-      // if we have more than one paragraph make the last one smaller,
-      // it should be an attribution
+      // if we have more than one paragraph make the last one the attribution
       &:last-child:not(:only-of-type) {
-        font-size: medium;
+        display: block;
+        font-style: normal;
+        font-weight: bold;
+        margin-top: 1em;
+        margin-bottom: 0;
+        padding-bottom: 0;
       }
     }
   }

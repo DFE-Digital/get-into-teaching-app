@@ -66,6 +66,7 @@ describe Events::Wizard do
         "candidateId" => nil,
         "qualificationId" => nil,
         "eventId" => "abc123",
+        "channelId" => nil,
         "acceptedPolicyId" => "789",
         "preferredTeachingSubjectId" => nil,
         "considerationJourneyStageId" => nil,
@@ -77,6 +78,7 @@ describe Events::Wizard do
         "addressTelephone" => "[FILTERED]",
         "isWalkIn" => true,
       }.to_json
+
       expect(Rails.logger).to have_received(:info).with("Events::Wizard#add_attendee_to_event: #{filtered_json}")
     end
   end

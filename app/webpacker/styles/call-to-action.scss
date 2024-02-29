@@ -207,7 +207,7 @@
 
     .call-to-action__heading {
       color: $white;
-      background: $green;
+      background: $cta-green;
       display: inline-block;
       padding: .625em 1.25em;
       margin-left: -22px;
@@ -232,7 +232,7 @@
       position: absolute;
       bottom: -1.25em;
       right: -1.25em;
-      background-color: $green;
+      background-color: $cta-green;
     }
   }
 
@@ -245,9 +245,14 @@
       max-width: calc(100% - 1.25em);
     }
 
+    .govuk-form-group,
+    .form__errors {
+      margin-bottom: 1em;
+    }
+
     .call-to-action__heading {
-      color: white;
-      background: $purple;
+      color: $black;
+      background: $pink;
       display: inline-block;
       padding: .5em 1.25em;
       margin-left: -22px;

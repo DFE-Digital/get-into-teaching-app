@@ -1,6 +1,10 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
+#
+# NB: This is a heavy-weight file. Only include it in your specs if you need the
+# full Rails infrastructure for your test. Otherwise use the light-weight
+# spec_helper instead (which is included here)
 require "spec_helper"
-require_relative "capybara_driver_helper"
+
 ENV["RAILS_ENV"] ||= "test"
 require File.expand_path("../config/environment", __dir__)
 # Prevent database truncation if the environment is production
@@ -8,12 +12,14 @@ unless Rails.env.development? || Rails.env.test?
   abort("The Rails environment is running in #{Rails.env} mode!")
 end
 
+# Add additional requires below this line. Rails is not loaded until this point!
 require "rspec/rails"
 require "active_record"
 require "view_component/test_helpers"
 require "dfe/analytics/rspec/matchers"
 
-# Add additional requires below this line. Rails is not loaded until this point!
+require_relative "capybara_driver_helper"
+require "dfe/analytics/testing"
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -78,7 +84,7 @@ RSpec.configure do |config|
   config.include SpecHelpers::BasicAuth
   config.include SpecHelpers::Integration, type: :feature
   config.include SpecHelpers::Contract, type: :feature
-  config.include Webpacker::Helper, type: :helper
+  config.include Shakapacker::Helper, type: :helper
 
   config.verbose_retry = true
   config.default_retry_count = 2
@@ -88,7 +94,7 @@ RSpec.configure do |config|
   config.exceptions_to_retry = [Net::ReadTimeout]
 
   config.before(:suite) do
-    Webpacker.compile
+    Shakapacker.compile
   end
 
   config.before do
@@ -99,6 +105,8 @@ RSpec.configure do |config|
     allow(FastImage).to receive(:size).and_return(nil)
   end
 end
+
+DfE::Analytics::Testing.fake!
 
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|

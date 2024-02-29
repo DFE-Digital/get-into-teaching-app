@@ -8,9 +8,9 @@
   }
 
   .menu-button__button {
-    @include button($bg: $white, $fg: $green);
+    @include button($bg: $white, $fg: $cta-green);
 
-    border: 4px solid $green;
+    border: 4px solid $cta-green;
     display: flex;
     margin-right: 2em;
     margin-left: 1em;
@@ -30,7 +30,7 @@
     }
 
     &.open {
-      background-color: $green;
+      background-color: $cta-green;
       color: $white;
 
       &:focus {

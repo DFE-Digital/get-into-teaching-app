@@ -1,6 +1,23 @@
-<% @page_title = "Do you have your previous teacher reference number?" %>
-
-<%= f.govuk_radio_buttons_fieldset(:has_id, inline: true, legend: { tag: "h1" }) do %>
+<%= f.govuk_radio_buttons_fieldset(:has_id, inline: true, legend: { tag: "h1", text: "Do you have a teacher reference number (TRN)?" }) do %>
   <%= f.govuk_radio_button :has_id, true, label: { text: 'Yes' }, link_errors: true %>
   <%= f.govuk_radio_button :has_id, false, label: { text: 'No' }, link_errors: true %>
 <% end %>
+
+<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      What is a teacher reference number (TRN)?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <p>A TRN is a 7 digit number that uniquely identifies you in the education sector in England.</p>
+    <p>You will have a TRN if you:</p>
+    <ul>
+      <li>hold qualified teacher status (QTS) in England</li>
+      <li>hold early years teacher status (EYTS) in England</li>
+      <li>hold a national professional qualification (NPQ)</li>
+      <li>are working towards QTS, EYTS or a national professional qualification (NPQ)</li>
+      <li>contribute to the Teachers’ Pensions scheme in England</li>
+    </ul>
+  </div>
+</details>

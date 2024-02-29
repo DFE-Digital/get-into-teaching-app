@@ -25,7 +25,12 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/returning-to-teaching", to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-teaching/")
+  get "/returning-to-teaching",                                                             to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-teaching/")
+  get "/non-uk-teachers/return-to-england-after-teaching-overseas",                         to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/")
+  get "/international-returners",                                                           to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/")
+  get "/explore-my-options/return-to-teaching/return-to-teaching-in-england-from-overseas", to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/")
+  get "/blog/returning-to-teaching-with-international-experience",                          to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/")
+  get "/blog/tag/non-uk-teachers",                                                          to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/")
 
   if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production? || Rails.env.pagespeed?
     get "/assets/*missing", to: "errors#not_found", via: :all
@@ -60,6 +65,7 @@ Rails.application.routes.draw do
 
   get "/landing/campus-mailing-list", to: "pages#campus_mailing_list", as: "campus_mailing_list"
   get "/events/get-the-most-from-events", to: "pages#get_the_most_from_events", as: "get_the_most_from_events"
+  get "/events/what-happens-at-events-transcript", to: "pages#what_happens_at_events_transcript", as: "what_happens_at_events_transcript"
   get "/funding-and-support/scholarships-and-bursaries", to: "pages#scholarships_and_bursaries", as: "scholarships_and_bursaries"
   get "/funding-and-support/scholarships-and-bursaries-search", to: "pages#scholarships_and_bursaries_search", as: "scholarships_and_bursaries_search"
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy

@@ -1,11 +1,9 @@
-<section class="why-teach" aria-label="Why teach?">
+<section class="why-teach" aria-label="Inspire the next generation">
   <div class="why-teach__container">
     <div class="why-teach__content">
       <%= render Content::HeadingComponent.new(
         heading: "Inspire the next generation",
         tag: :h2,
-        caption: "Why teach?",
-        caption_size: :l
       ) %>
 
       <p>
@@ -19,8 +17,8 @@
     </div>
 
     <div class="why-teach__image">
-      <% "static/content/hero-images/0011.jpg".tap do |path| %>
-        <%= image_pack_tag(path, alt: image_alt(path)) %>
+      <% "static/images/content/hero-images/0011.jpg".tap do |path| %>
+        <%= image_pack_tag(path, **image_alt_attribs(path)) %>
       <% end %>
     </div>
   </div>

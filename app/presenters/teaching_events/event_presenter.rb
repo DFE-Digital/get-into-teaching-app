@@ -22,7 +22,6 @@ module TeachingEvents
       :provider_website_url,
       :providers_list,
       :readable_id,
-      :scribble_id,
       :start_at,
       :summary,
       :type_id,
@@ -115,12 +114,12 @@ module TeachingEvents
     def get_into_teaching_event_image_details
       if online?
         {
-          path: "static/content/event-signup/event-regional-online.jpg",
+          path: "static/images/content/event-signup/event-regional-online.jpg",
           alt: "An online Get Into Teaching event on a computer screen.",
         }
       else
         {
-          path: "static/content/event-signup/event-regional.jpg",
+          path: "static/images/content/event-signup/event-regional.jpg",
           alt: "A busy Get Into Teaching event with people having one-on-one conversations with expert advisers and teachers",
         }
       end

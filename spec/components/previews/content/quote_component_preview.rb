@@ -1,12 +1,12 @@
 class Content::QuoteComponentPreview < ViewComponent::Preview
   def default
-    component = Content::QuoteComponent.new(text)
+    component = Content::QuoteComponent.new(**text)
     render(component)
   end
 
   def with_inline
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(inline),
     )
 
@@ -18,7 +18,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_author
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author),
     )
     render(component)
@@ -26,7 +26,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_name
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author.slice(:name)),
     )
     render(component)
@@ -34,7 +34,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_job_title
     component = Content::QuoteComponent.new(
-      text
+      **text
       .merge(author.slice(:job_title)),
     )
     render(component)
@@ -42,7 +42,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_author_and_image
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author)
         .merge(image),
     )
@@ -51,7 +51,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_author_and_image_and_inline
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author)
         .merge(image)
         .merge(inline),
@@ -82,7 +82,7 @@ private
 
   def image
     {
-      image: "static/homepage/science-teacher.jpg",
+      image: "static/images/homepage/science-teacher.jpg",
     }
   end
 

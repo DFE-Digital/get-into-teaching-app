@@ -35,7 +35,7 @@
   &__content {
     width: 100%;
     max-width: $column-720;
-    background-color: $grey;
+    background-color: $white;
     box-sizing: border-box;
     position: relative;
     overflow-x: clip;
@@ -43,7 +43,7 @@
 
     .logo-wrapper {
       padding: 0;
-      top: -30px;
+      top: -26px;
 
       @include mq($until: desktop) {
         top: 0;

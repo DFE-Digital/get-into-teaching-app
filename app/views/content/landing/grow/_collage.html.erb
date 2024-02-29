@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="grey col">
+    <section class="col col-full-content">
+      <div class="inset">
+        <p class="col-720">Teaching is a fulfilling career. Not only can you inspire the pupils you teach, you also get to learn new skills, build your confidence and become your best self. The benefits of being a teacher include:</p>
+        <%= render Content::ChecklistCollageComponent.new(
+          checklist: [
+            "career progression ",
+            "personal development",
+            "opportunities to increase your pay"
+          ],
+          image_paths: [
+            "static/images/content/grow/Smiling_Student.jpg",
+          ]
+        ) %>
+      </div>
+    </section>
+  </div>
+</div>

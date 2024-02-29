@@ -49,22 +49,8 @@
 
       &:before,
       &:after {
-        @include font-size(xlarge);
         color: $black;
-      }
-
-      &:before {
-        content: open-quote;
-        position: absolute;
-        left: -.6em;
-        top: -.1em;
-      }
-
-      &:after {
-        position: absolute;
-        content: close-quote;
-        margin-left: .1em;
-        margin-top: -.1em;
+        content: '"';
       }
     }
 

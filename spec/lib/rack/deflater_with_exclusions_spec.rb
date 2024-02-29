@@ -1,4 +1,5 @@
-require "rails_helper"
+require "spec_helper"
+require "rack/deflater"
 require_relative "../../../lib/rack/deflater_with_exclusions"
 
 describe Rack::DeflaterWithExclusions do

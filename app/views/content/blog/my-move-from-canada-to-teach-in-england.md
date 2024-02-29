@@ -4,8 +4,8 @@ date: "2022-05-09"
 author: Brooke Harvey
 images:
   brooke-harvey:
-    path: "static/content/blog/brooke-harvey.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/brooke-harvey.jpg"
+    path: "static/images/content/blog/brooke-harvey.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/brooke-harvey.jpg"
 description: |-
   Find out what made Canadian Brooke Harvey want to move to teach in England. Explore her advice for overseas teachers, and the benefits of teaching in England.
 keywords:

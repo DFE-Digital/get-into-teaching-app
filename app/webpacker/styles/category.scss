@@ -75,7 +75,7 @@
     }
 
     &:hover {
-      border-color: $blue;
+      border-color: $blue-dark;
 
       h2,
       h3 {
@@ -154,6 +154,10 @@
   &__content {
     flex: 0 1 50%;
     margin-inline: 1em;
+
+    h2 {
+      margin-top: 0;
+    }
 
     a {
       @extend .link--black;

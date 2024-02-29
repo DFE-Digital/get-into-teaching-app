@@ -8,7 +8,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   mix-blend-mode: darken;
 }
 
-@mixin selected-quote($color: pink, $size: large) {
+@mixin selected-quote($color: black, $size: large) {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -26,18 +26,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       &:after {
         content: '"';
         color: $color;
-      }
-
-      &:before {
-        content: open-quote;
-        position: absolute;
-        left: -.8em;
-        top: -.3em;
-      }
-
-      &:after {
-        content: close-quote;
-        margin-left: .2em;
       }
     }
 
@@ -377,7 +365,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       .selected-quote {
         padding: 8em 0 0;
-        @include selected-quote($color: $pink);
+        @include selected-quote($color: black);
       }
 
       .arrow-container {
@@ -1009,7 +997,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   }
 
   article {
-    @include selected-quote($color: $pink, $size: small);
+    @include selected-quote($color: black, $size: small);
 
     figure > blockquote {
       font-weight: 500;
@@ -1028,7 +1016,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     padding: 1em;
 
     .featured {
-      @include selected-quote($color: $yellow, $size: medium);
+      @include selected-quote($color: black, $size: medium);
     }
 
     .intro {
@@ -1157,7 +1145,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
       }
 
-      @include selected-quote($color: $pink, $size: medium);
+      @include selected-quote($color: black, $size: medium);
 
       figure {
         margin-top: 2em;

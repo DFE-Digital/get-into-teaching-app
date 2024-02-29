@@ -4,8 +4,8 @@ author: Felix
 date: "2021-03-22"
 images:
   header_image:
-    path: "static/content/blog/school-aisle.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/school-aisle.jpg"
+    path: "static/images/content/blog/school-aisle.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/school-aisle.jpg"
 description: |-
   Felix offered to speak to Teacher Training Adviser, Jane Wilkinson, about the challenges faced by someone who lives with additional needs and their progress towards achieving the dream of becoming a teacher.
 keywords:

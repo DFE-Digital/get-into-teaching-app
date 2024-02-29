@@ -4,8 +4,8 @@ date: "2021-04-06"
 author: Anna Shirley
 images:
   anna_shirley:
-    path: "static/content/blog/anna-shirley.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/anna-shirley.jpg"
+    path: "static/images/content/blog/anna-shirley.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/anna-shirley.jpg"
 description: |-
   From logistics to presentation, Sheffield SCITT communications manager Anna Shirley shares her top tips for video interviews.
 keywords:

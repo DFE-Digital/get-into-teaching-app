@@ -7,7 +7,7 @@ ruby File.read(".ruby-version").chomp
 gem "rails", "~> 7.0.2.3"
 
 # Use Puma as the app server
-gem "puma", "~> 6.3"
+gem "puma", "~> 6.4"
 
 gem "pg"
 
@@ -18,7 +18,7 @@ gem "invisible_captcha"
 
 gem "iso_country_codes"
 
-gem "shakapacker", "6.6.0"
+gem "shakapacker", "7.2.1"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -56,7 +56,7 @@ gem "faraday_middleware"
 
 gem "fastimage"
 
-gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.8.0"
+gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.11.6"
 
 gem "hashids"
 
@@ -75,12 +75,12 @@ gem "skylight", "~> 5.3.4"
 
 gem "text"
 
-gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
+gem "get_into_teaching_api_client_faraday", ">= 3.1.3", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 2.78.0"
+gem "view_component", "~> 3.10.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 

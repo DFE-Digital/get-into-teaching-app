@@ -13,7 +13,7 @@ ul.fact-list {
 
   li {
     border: 3px solid $purple;
-    padding: $indent-amount / 2;
+    padding: $indent-amount * .5;
     display: flex;
     flex-direction: column;
     flex: 1;

@@ -3,7 +3,7 @@
   description: |-
     Find out about a day in the life of a teacher in a secondary school, including an example of teacher working hours and their day to day routine.
   date: "2021-03-08"
-  image: "static/content/hero-images/0011.jpg"
+  image: "static/images/content/hero-images/0011.jpg"
   backlink: "../"
   keywords:
     - Typical
@@ -20,24 +20,20 @@
   quote:
     q-sarah-primary:
       text: "I like to get in early so I can get organised — in teaching, preparation is everything."
-      name: "Sarah"
-      job_title: "Primary school teacher"
-      inline: left
+      name: "Sarah, primary school teacher"
+      classes: quote--indent
     q-sarah-geography-1:
       text: "I have four free periods a week, which I use as my own time."
-      name: "Sarah"
-      job_title: "Geography teacher"
-      inline: right
+      name: "Sarah, geography teacher"
+      classes: quote--indent
     q-gavin:
       text: "Teaching and learning does not stop with the bell at the end of the school day."
-      name: "Gavin"
-      job_title: "Assistant headteacher"
-      inline: left
+      name: "Gavin, assistant headteacher"
+      classes: quote--indent
     q-sarah-geography-2:
       text: "I sometimes do a couple of hours at the weekend but I try to keep my weekends free to make sure I have some real downtime."
-      name: "Sarah"
-      job_title: "Geography teacher"
-      inline: left
+      name: "Sarah, geography teacher"
+      classes: quote--indent
 ---
 
 A day in the life of a teacher is really varied, and no two days will be the same. Your day as a teacher will look different depending on whether you teach primary, secondary, or what subject you teach. Each school will have its own schedule and different responsibilities outside of teaching hours.

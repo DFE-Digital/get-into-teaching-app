@@ -63,6 +63,17 @@
     }
   }
 
+  &.grow {
+    @include slanted-bottom($pink, $grey);
+
+    background-color: $pink;
+    color: $black;
+
+    h1 > span {
+      background: $blue;
+    }
+  }
+
   h1 {
     margin: 1em auto 0 1em;
     z-index: 5;
@@ -78,7 +89,7 @@
     span {
       @include font-size(xxlarge);
 
-      padding: .05rem .7rem;
+      padding: .05rem 1.5rem;
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone;
     }

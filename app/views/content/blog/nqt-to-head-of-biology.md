@@ -4,8 +4,8 @@ date: "2019-11-18"
 author: Sarah Fisher
 images:
   q-sarah:
-    path: "static/content/blog/thumbnails/stories-sarah-f.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/stories-sarah-f.jpg"
+    path: "static/images/content/blog/thumbnails/stories-sarah-f.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/stories-sarah-f.jpg"
 description: |-
   Sarah Fisher shares her story of how she became a department head in a subject she loves.
 keywords:

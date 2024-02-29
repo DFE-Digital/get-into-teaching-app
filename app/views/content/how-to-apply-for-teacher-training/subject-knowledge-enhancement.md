@@ -20,8 +20,8 @@ youtube_video:
     id: mWuHMtyFrFU
     title: Subject knowledge enhancement explained
 navigation: 30.25
-navigation_title: Subject knowledge enhancement
-navigation_description: Find out how to improve your subject knowledge with a subject knowledge enhancement (SKE) course.
+navigation_title: Subject knowledge enhancement (SKE)
+navigation_description: Find out how to improve your subject knowledge with a subject knowledge enhancement course.
 keywords:
   - Subject knowledge
   - Subject knowledge enhancement
@@ -69,6 +69,8 @@ Learn more about how a subject knowledge enhancement course can help prepare you
 
 $ske-course-video$
 
+ [Read the transcript for the 'Subject knowledge enhancement explained' video](/how-to-apply-for-teacher-training/ske-explained-transcript).
+ 
 ## How SKE courses work
 
 They're usually online, but some courses can be classroom based and some can be a mixture of both. 
@@ -79,7 +81,7 @@ You can do a part-time course and complete it over a longer period or complete i
 
 ## When to complete your course
 
-You should complete your course before starting your teacher training. If you run out of time, your provider may allow you to continue your course at the same time as your teacher training.
+You should complete your course before starting your teacher training. If you run out of time, your provider may allow you to continue your course at the same time as your teacher training. But if you get an SKE bursary, your payments will stop once your teacher training starts. 
 
 ## Get an SKE bursary
 
@@ -99,6 +101,6 @@ You’ll need (one of the following):
 * a master’s degree
 * a PhD
 
-You'll need to complete your course before your teacher training starts to receive your SKE bursary.
+You can still do your SKE course while you do your teacher training but you'll only be eligible for a SKE bursary up until your teacher training course starts. This is because you may then be eligible for other financial support, for example a subject bursary or tuition fee loan.
 
 $international-content$

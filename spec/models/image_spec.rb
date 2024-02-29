@@ -16,10 +16,10 @@ describe Image do
       subject { described_class.new.build_args(path) }
 
       context "with a valid image path" do
-        let(:path) { "static/content/hero-images/0003.jpg" }
+        let(:path) { "static/images/content/ttalianne.jpg" }
 
         specify "returns the correct image path and alt text" do
-          expect(subject).to eql([path, { alt: "Male and female teacher talking in a staff room." }])
+          expect(subject).to eql([path, { alt: "Lianne, an explore teaching adviser" }])
         end
       end
 
@@ -35,11 +35,19 @@ describe Image do
     describe "#alt" do
       subject { described_class.new.alt(path) }
 
-      context "with a valid image path" do
-        let(:path) { "static/content/hero-images/0003.jpg" }
+      context "with blank alt text" do
+        let(:path) { "static/images/content/hero-images/0003.jpg" }
 
         specify "returns the correct image path and alt text" do
-          expect(subject).to eql("Male and female teacher talking in a staff room.")
+          expect(subject).to eql("")
+        end
+      end
+
+      context "with a valid image path" do
+        let(:path) { "static/images/content/ttalianne.jpg" }
+
+        specify "returns the correct image path and alt text" do
+          expect(subject).to eql("Lianne, an explore teaching adviser")
         end
       end
 

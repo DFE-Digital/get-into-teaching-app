@@ -12,7 +12,7 @@ layout: "layouts/category"
 content:
     - content/funding-and-support/questions
     - content/funding-and-support/why-teach
-image: "static/content/hero-images/0013.jpg"
+image: "static/images/content/hero-images/0032.jpg"
 hero_bg_color: yellow
 title_bg_color: white
 hero_blend_content: true

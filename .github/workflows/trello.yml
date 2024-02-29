@@ -12,17 +12,17 @@ jobs:
     steps:
       - uses: Azure/login@v1
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_AKS_REVIEW }}
+            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v1
         id: keyvault-yaml-secret
         with:
           inlineScript: |
-            TRELLO_KEY=$(az keyvault secret show --name "TRELLO-KEY" --vault-name "${{ secrets.KEY_VAULT_AKS_REVIEW }}" --query "value" -o tsv)
+            TRELLO_KEY=$(az keyvault secret show --name "TRELLO-KEY" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
             echo "::add-mask::$TRELLO_KEY"
             echo "TRELLO_KEY=$TRELLO_KEY" >> $GITHUB_OUTPUT
-            TRELLO_TOKEN=$(az keyvault secret show --name "TRELLO-TOKEN" --vault-name "${{ secrets.KEY_VAULT_AKS_REVIEW }}" --query "value" -o tsv)
+            TRELLO_TOKEN=$(az keyvault secret show --name "TRELLO-TOKEN" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
             echo "::add-mask::$TRELLO_TOKEN"
             echo "TRELLO_TOKEN=$TRELLO_TOKEN" >> $GITHUB_OUTPUT
 

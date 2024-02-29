@@ -1,57 +1,61 @@
 .quote {
-  margin: 0;
-  width: 100%;
-
-  &--background-yellow {
-    @include quote($yellow);
-
-    p {
-      @include fancy-quotes-before($white);
-
-      span {
-        @include fancy-quotes-after($white);
-      }
-    }
-  }
-
-  &--background-grey,
-  &--background-white {
-    @include quote($grey);
-
-    p {
-      @include fancy-quotes-before($pink);
-
-      span {
-        @include fancy-quotes-after($pink);
-      }
-    }
-  }
+  margin: 2.5em 1.5rem 2.5em 0;
 
   &--background-white {
     @include quote($white);
   }
 
-  &--large {
+  &--background-grey {
+    @include quote($grey);
+  }
+
+  &--background-grey,
+  &--background-white {
+    border-left: 5px solid $pink;
+
     p {
-      @include font-size(medium);
+      @include simple-quotes-before($black);
+
+      span {
+        @include simple-quotes-after($black);
+      }
     }
+  }
+
+  &--indent {
+    margin-left: 1.5rem;
+  }
+
+  &--narrow-margins {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   p {
     margin: 0;
+    padding: 0 1em 1em 1.5em;
+    font-weight: normal;
 
     span {
       white-space: nowrap;
+      font-weight: normal;
+    }
+
+    &:nth-last-child(2),
+    &:only-of-type {
+      padding-bottom: 0;
     }
   }
 
-  p,
-  .footer {
-    padding: $indent-amount 25px $indent-amount 42px;
+  &--large {
+    p {
+      @include font-size(medium);
+      padding-left: 1em; // keeps large p indented with attribution
+    }
   }
 
   .footer {
-    padding-top: 0;
+    padding: 1em 1em 0 1.5em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -60,6 +64,7 @@
       display: inline-flex;
       gap: 1em;
       font-size: 1em;
+      font-weight: bold;
     }
 
     .name,
@@ -94,6 +99,11 @@
   .quote--inline-right {
     float: right;
     margin-left: $indent-amount;
+  }
+
+  .quote--inline-full {
+    margin-left: $indent-amount;
+    margin-right: $indent-amount;
   }
 
   .quote:not(.quote--inline-left):not(.quote--inline-right) {

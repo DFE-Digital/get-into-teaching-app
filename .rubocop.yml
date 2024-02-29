@@ -15,6 +15,7 @@ AllCops:
     - bin/*
     - node_modules/**/*
     - spec/models/wizard/**/*  # Separate PR splits this out into gem
+    - fetch_config.rb # auto-generated file to authenticate with Azure
 
 RSpec/Capybara/FeatureMethods:
   Enabled: false

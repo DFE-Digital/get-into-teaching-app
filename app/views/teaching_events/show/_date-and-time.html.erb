@@ -1,5 +1,5 @@
 <div class="date-and-time">
-  <%= image_pack_tag("static/icon-calendar.svg", width: 20, height: 20, alt: "") %>
+  <%= image_pack_tag("static/images/icon-calendar.svg", width: 20, height: 20, **image_alt_attribs_for_text("")) %>
 
   <%= @event.start_at.to_formatted_s(:event) %>
   at

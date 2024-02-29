@@ -4,8 +4,8 @@ date: "2021-09-28"
 author: Jane Wilkinson
 images:
   jacob:
-    path: "static/content/blog/jacob.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/jacob.jpg"
+    path: "static/images/content/blog/jacob.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/jacob.jpg"
 description: |-
   This September, trainee teachers across the country began their courses. Jacob describes their last-minute application and their first few days as a trainee.
     

@@ -11,6 +11,8 @@ section.registration {
   }
 
   @include mq($from: tablet) {
+    main.within-section,
+    .back-link,
     .registration__mailing-list,
     .registration__teacher-training-adviser,
     .registration__callback {

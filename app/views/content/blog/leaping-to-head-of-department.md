@@ -4,8 +4,8 @@ date: "2019-09-23"
 author: Jon Simmons
 images:
   stories-jon:
-    path: "static/content/blog/thumbnails/stories-jon.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/stories-jon.jpg"
+    path: "static/images/content/blog/thumbnails/stories-jon.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/stories-jon.jpg"
 description: |-
   Jon Simmons shares his experience of becoming head of department after just two and a half years teaching.
 keywords:

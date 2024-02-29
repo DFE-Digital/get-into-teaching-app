@@ -2,7 +2,7 @@
   max-width: $content-max-width;
   display: flex;
   flex-direction: column;
-  gap: $indent-amount / 2;
+  gap: $indent-amount * .5;
   margin: 0 $indent-amount;
 
   @include mq($from: tablet) {
@@ -49,8 +49,8 @@
     }
 
     &.ml-background {
-      background-image: url("../images/content/hero-images/0015.jpg");
-      background-position-y: 20%;
+      background-image: url("../images/content/hero-images/0035.jpg");
+      background-position-y: 50%;
     }
 
     &.gse-background {

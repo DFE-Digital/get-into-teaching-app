@@ -4,8 +4,8 @@ date: "2020-02-01"
 author: Will Fordham
 images:
   will-fordham:
-    path: "static/content/blog/thumbnails/stories-will.jpg"
-    thumbnail_path: "static/content/blog/thumbnails/stories-will.jpg"
+    path: "static/images/content/blog/thumbnails/stories-will.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/stories-will.jpg"
 description: |-
   Teaching trainee Will Fordham was working as a communications manager, when he realised that teaching was what he loved.
 keywords:

@@ -37,28 +37,28 @@ local:
 	$(eval export KEY_VAULT=s189t01-git-local-app-kv)
 	$(eval export AZURE_SUBSCRIPTION=s189-teacher-services-cloud-test)
 
-.PHONY: review_aks
-review_aks: test-cluster
+.PHONY: review
+review: test-cluster
 	$(if $(PR_NUMBER), , $(error Missing environment variable "PR_NUMBER", Please specify a pr number for your review app))
-	$(eval include global_config/review_aks.sh)
+	$(eval include global_config/review.sh)
 	$(eval export DEPLOY_ENV=review)
 	$(eval export TF_VAR_pr_number=-${PR_NUMBER})
 
-.PHONY: development_aks
-development_aks: test-cluster
-	$(eval include global_config/development_aks.sh)
+.PHONY: development
+development: test-cluster
+	$(eval include global_config/development.sh)
 
-.PHONY: test_aks
-test_aks: test-cluster
-	$(eval include global_config/test_aks.sh)
+.PHONY: test
+test: test-cluster
+	$(eval include global_config/test.sh)
 
-.PHONY: production_aks
-production_aks: production-cluster
-	$(eval include global_config/production_aks.sh)
+.PHONY: production
+production: production-cluster
+	$(eval include global_config/production.sh)
 
-.PHONY: beta_aks
-beta_aks: production-cluster
-	$(eval include global_config/beta_aks.sh)
+.PHONY: beta
+beta: production-cluster
+	$(eval include global_config/beta.sh)
 
 clean:
 	[ ! -f fetch_config.rb ]  \
@@ -99,7 +99,7 @@ bin/konduit.sh:
 	curl -s https://raw.githubusercontent.com/DFE-Digital/teacher-services-cloud/main/scripts/konduit.sh -o bin/konduit.sh \
 		&& chmod +x bin/konduit.sh
 
-terraform-init-aks: composed-variables bin/terrafile set-azure-account
+terraform-init: composed-variables bin/terrafile set-azure-account
 	$(if ${DOCKER_IMAGE_TAG}, , $(eval DOCKER_IMAGE_TAG=master))
 	$(if $(PR_NUMBER), $(eval KEY_PREFIX=$(PR_NUMBER)), $(eval KEY_PREFIX=$(ENVIRONMENT)))
 
@@ -115,13 +115,13 @@ terraform-init-aks: composed-variables bin/terrafile set-azure-account
 	$(eval export TF_VAR_service_short=${SERVICE_SHORT})
 	$(eval export TF_VAR_docker_image=${DOCKER_REPOSITORY}:${DOCKER_IMAGE_TAG})
 
-terraform-plan-aks: terraform-init-aks
+terraform-plan: terraform-init
 	terraform -chdir=terraform/aks plan -var-file "config/${CONFIG}.tfvars.json"
 
-terraform-apply-aks: terraform-init-aks
+terraform-apply: terraform-init
 	terraform -chdir=terraform/aks apply -var-file "config/${CONFIG}.tfvars.json" ${AUTO_APPROVE}
 
-terraform-destroy-aks: terraform-init-aks
+terraform-destroy: terraform-init
 	terraform -chdir=terraform/aks destroy -var-file "config/${CONFIG}.tfvars.json" ${AUTO_APPROVE}
 
 domains:
@@ -181,10 +181,10 @@ domains-init: bin/terrafile domains-composed-variables set-azure-account
 		-backend-config=storage_account_name=${STORAGE_ACCOUNT_NAME} \
 		-backend-config=key=${ENVIRONMENT}.tfstate
 
-domains-plan: domains domains-init ## Terraform plan for DNS environment domains. Usage: make development_aks domains-plan
+domains-plan: domains domains-init ## Terraform plan for DNS environment domains. Usage: make development domains-plan
 	terraform -chdir=terraform/domains/environment_domains plan -var-file config/${ENVIRONMENT}.tfvars.json
 
-domains-apply: domains domains-init ## Terraform apply for DNS environment domains. Usage: make development_aks domains-apply
+domains-apply: domains domains-init ## Terraform apply for DNS environment domains. Usage: make development domains-apply
 	terraform -chdir=terraform/domains/environment_domains apply -var-file config/${ENVIRONMENT}.tfvars.json ${AUTO_APPROVE}
 
 test-cluster:
@@ -197,6 +197,7 @@ production-cluster:
 
 get-cluster-credentials: set-azure-account
 	az aks get-credentials --overwrite-existing -g ${CLUSTER_RESOURCE_GROUP_NAME} -n ${CLUSTER_NAME}
+	kubelogin convert-kubeconfig -l $(if ${GITHUB_ACTIONS},spn,azurecli)
 
 edit-local-secrets-aks: install-fetch-config set-azure-account
 	./fetch_config.rb -s azure-key-vault-secret:s189t01-git-local-app-kv/${APPLICATION_SECRETS} -e -d azure-key-vault-secret:s189t01-git-local-app-kv/${APPLICATION_SECRETS} -f yaml -c
@@ -204,7 +205,7 @@ edit-local-secrets-aks: install-fetch-config set-azure-account
 print-local-secrets-aks: install-fetch-config set-azure-account
 	./fetch_config.rb -s azure-key-vault-secret:s189t01-git-local-app-kv/${APPLICATION_SECRETS}  -f yaml
 
-action-group-resources: set-azure-account # make env_aks action-group-resources ACTION_GROUP_EMAIL=notificationemail@domain.com . Must be run before setting enable_monitoring=true for each subscription
+action-group-resources: set-azure-account # make env action-group-resources ACTION_GROUP_EMAIL=notificationemail@domain.com . Must be run before setting enable_monitoring=true for each subscription
 	$(if $(ACTION_GROUP_EMAIL), , $(error Please specify a notification email for the action group))
 	echo ${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-mn-rg
 	az group create -l uksouth -g ${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-mn-rg --tags "Product=Get into teaching website" "Environment=Test" "Service Offering=Teacher services cloud"

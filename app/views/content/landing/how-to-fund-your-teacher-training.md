@@ -7,7 +7,7 @@ content:
     - content/landing/how-to-fund-your-teacher-training/mailing_list
     - content/landing/how-to-fund-your-teacher-training/content
     - content/landing/how-to-fund-your-teacher-training/promo
-image: "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
+image: "static/images/content/landing/how-to-fund-your-teacher-training-1.jpg"
 colour: "yellow"
 layout: "layouts/minimal"
 talk_to_us: false

@@ -33,7 +33,7 @@ module Content
     end
 
     def picture
-      helpers.image_pack_tag(@image, alt: helpers.image_alt(@image), **picture_data_args)
+      helpers.image_pack_tag(@image, **helpers.image_alt_attribs(@image), **picture_data_args)
     end
 
     def picture_data_args

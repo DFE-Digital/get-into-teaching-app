@@ -1,4 +1,4 @@
-require "rails_helper"
+require "spec_helper"
 require "responsive_images"
 
 describe ResponsiveImages do
@@ -7,7 +7,7 @@ describe ResponsiveImages do
 
     let(:fingerprint) { "-fingerprint1" }
     let(:asset_host) { "" }
-    let(:src) { "#{asset_host}/static/content/an-image#{fingerprint}.jpg" }
+    let(:src) { "#{asset_host}/static/images/content/an-image#{fingerprint}.jpg" }
     let(:body) do
       "<picture>
         <source srcset=\"#{src}\" type=\"image/jpeg\"></source>
@@ -70,10 +70,10 @@ describe ResponsiveImages do
 
   def setup_responsive_img(breakpoint)
     fingerprint = "1234abc"
-    responsive_src = "static/content/an-image--#{breakpoint}-#{fingerprint}.jpg"
+    responsive_src = "static/images/content/an-image--#{breakpoint}-#{fingerprint}.jpg"
     public_path = Rails.public_path
     responsive_file = "#{public_path}/#{responsive_src}"
-    responsive_pattern = "#{public_path}/static/content/an-image--#{breakpoint}*.jpg"
+    responsive_pattern = "#{public_path}/static/images/content/an-image--#{breakpoint}*.jpg"
 
     allow(Dir).to receive(:glob).with(responsive_pattern) { [responsive_file] }
 

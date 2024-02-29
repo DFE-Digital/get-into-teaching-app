@@ -9,7 +9,7 @@ related_content:
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 date: "2021-05-27"
-image: "static/content/hero-images/0002.jpg"
+image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"
 keywords:
   - International
@@ -212,4 +212,3 @@ You can also [contact UK Visas and Immigration for help](https://www.gov.uk/cont
 
 
 
- 
