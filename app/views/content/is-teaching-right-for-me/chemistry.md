@@ -13,6 +13,6 @@ keywords:
 
 content:
   - "/content/is-teaching-right-for-me/chemistry/header"
-  - "/content/is-teaching-right-for-me/chemistry"
-  - "/content/is-teaching-right-for-me/chemistry/_adviser-promo-chemistry"
+  - "/content/is-teaching-right-for-me/chemistry/article"
+  - "/content/is-teaching-right-for-me/chemistry/adviser-promo-chemistry"
 ---
