@@ -22,7 +22,6 @@ module TeachingEvents
       :provider_website_url,
       :providers_list,
       :readable_id,
-      :scribble_id,
       :start_at,
       :summary,
       :type_id,

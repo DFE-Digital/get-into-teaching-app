@@ -33,7 +33,6 @@ SecureHeaders::Configuration.default do |config|
   govuk       = %w[*.gov.uk www.gov.uk]
   jquery      = %w[code.jquery.com]
   pinterest   = %w[*.pinterest.com *.pinterest.co.uk *.pinimg.com]
-  scribble    = %w[embed.scribblelive.com]
   snapchat    = %w[*.snapchat.com sc-static.net]
   twitter     = %w[t.co *.twitter.com static.ads-twitter.com analytics.twitter.com]
   youtube     = %w[*.youtube.com *.youtube-nocookie.com i.ytimg.com www.youtube.com www.youtube-nocookie.com]
@@ -68,12 +67,12 @@ SecureHeaders::Configuration.default do |config|
     connect_src: self_base.concat(google_apis, pinterest, google_analytics, google_supported, google_doubleclick, facebook, zendesk, snapchat, sentry, gtm_server, clarity, vwo),
     font_src: self_base.concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: self_base.concat(snapchat, facebook, govuk),
-    frame_src: self_base.concat(scribble, snapchat, facebook, youtube, google_doubleclick, google_analytics, data, pinterest, clarity, vwo),
+    frame_src: self_base.concat(snapchat, facebook, youtube, google_doubleclick, google_analytics, data, pinterest, clarity, vwo),
     frame_ancestors: self_base,
     img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, gtm_server, reddit, clarity, vwo, %w[chart.googleapis.com wingify-assets.s3.amazonaws.com cx.atdmt.com linkbam.uk]),
     manifest_src: self_base,
     media_src: self_base.concat(zendesk).concat(assets),
-    script_src: quoted_unsafe_inline + quoted_unsafe_eval + self_base.concat(google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, scribble, twitter, snapchat, youtube, zendesk, reddit, clarity, vwo),
+    script_src: quoted_unsafe_inline + quoted_unsafe_eval + self_base.concat(google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, twitter, snapchat, youtube, zendesk, reddit, clarity, vwo),
     style_src: quoted_unsafe_inline + self_base.concat(govuk, google_apis, google_supported, vwo),
     worker_src: self_base.concat(blob),
   }

@@ -39,8 +39,8 @@ provider_groups:
       email: enquiries@colchesterttc.org.uk
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
-      name: Claire King
-      telephone: 01476 512793
+      name: Educate Group HQ
+      telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: Essex and Thames SCITT
       link: https://etpscitt.co.uk/
@@ -93,8 +93,8 @@ provider_groups:
       email: jwoolley@cfbt.com
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
-      name: Claire King
-      telephone: 01476 512793
+      name: Educate Group HQ
+      telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: Inspiring Leaders Teacher Training
       link: https://inspiringleadersscitt.com/aor/
@@ -215,8 +215,8 @@ provider_groups:
       email: ed.ite@durham.ac.uk
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
-      name: Claire King
-      telephone: 01476 512793
+      name: Educate Group HQ
+      telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: Stockton-on-Tees Teacher Training Partnership
       link: https://www.stocktonscitt.uk
@@ -241,8 +241,8 @@ provider_groups:
       email: admin@scitt.bright-futures.co.uk 
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
-      name: Claire King
-      telephone: 01476 512793
+      name: Educate Group HQ
+      telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: Kingsbridge EIP SCITT
       name: Gail Thomson
@@ -351,8 +351,8 @@ provider_groups:
     - header: Xavier Catholic Education Trust
       link: https://www.teachsoutheast.co.uk/
       name: Joanna Crome
-      email: j.crome@xaviercet.org.uk
       telephone: '01932 578682'
+      email: j.crome@xaviercet.org.uk
   South West:
     providers:
     - header: Bath Spa University
@@ -448,8 +448,8 @@ provider_groups:
     providers:
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
-      name: Claire King
-      telephone: 01476 512793
+      name: Educate Group HQ
+      telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: GORSE SCITT
       link: https://gorsescitt.org.uk/

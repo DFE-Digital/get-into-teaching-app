@@ -9,10 +9,6 @@ FactoryBot.define do
     end_at { start_at + 1.hour }
   end
 
-  trait :online_event do
-    scribble_id { "/scribble/id/1234" }
-  end
-
   trait :provider_event do
     is_online { true }
     provider_contact_email { "test@test.com" }
