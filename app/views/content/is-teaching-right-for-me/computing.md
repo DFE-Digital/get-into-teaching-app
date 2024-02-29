@@ -1,7 +1,7 @@
 ---
 title: Become a computing teacher
 description: |-
-   Find out how to become a computing teacher and what funding is available to help you train.
+   Find out how to become a computing teacher including what you'll be teaching and what funding is available to help you train.
 backlink: "../../"
 subcategory: What to teach
 navigation: 5.43
