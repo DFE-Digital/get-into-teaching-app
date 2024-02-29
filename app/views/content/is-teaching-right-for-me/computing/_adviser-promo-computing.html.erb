@@ -1,11 +1,7 @@
 <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
   <% promo.with_left_section(classes: %w[tta-background]) %>
   <% promo.with_right_section(heading: "Get free one-to-one support") do %>
-<p>Our experienced teacher training advisers can guide you through everything you need to know to apply for computing teacher training, free of charge. They can help you to: </p>
-<ul>
-<li>understand more about available courses </li>
-<li>guide you through fees and funding for the course </li>
-<li>help you make an application for a computing course </li>
-</ul>      <%= link_to("Find out more about advisers", "/teacher-training-advisers", class: "button") %>
+<p>An adviser with years of teaching experience can help you to become a computing teacher. Chat by phone, text, or email as little or often as you need.</p>
+<%= link_to("Find out more about advisers", "/teacher-training-advisers", class: "button") %>
   <% end %>
 <% end %>
