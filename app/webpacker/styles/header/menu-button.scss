@@ -46,12 +46,6 @@
       }
     }
 
-    @include mq($until: tablet) {
-      flex: 1;
-      justify-content: space-between;
-      margin: 1rem $indent-amount $indent-amount;
-    }
-
     &:focus .menu-button__icon {
       background-image: url("../images/icon-arrow-down-white.svg");
     }
