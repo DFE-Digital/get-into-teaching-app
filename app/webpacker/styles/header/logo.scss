@@ -2,7 +2,7 @@
   z-index: 0;
   overflow: hidden;
   top: 0;
-  left: -8px;
+  left: -20px;
   position: relative;
   padding-bottom: 5px;
   display: flex;
@@ -11,9 +11,12 @@
   @include mq($from: tablet) {
     overflow: visible;
     top: -26px;
-    left: -3px;
     margin-bottom: -16px;
     padding-bottom: 0;
+  }
+
+  @include mq($from: desktop) {
+    left: -10px;
   }
 }
 
