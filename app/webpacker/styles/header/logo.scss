@@ -8,6 +8,10 @@
   display: flex;
   align-items: center;
 
+  @include mq($until: 375px) {
+    left: 0px;
+  }
+
   @include mq($from: tablet) {
     overflow: visible;
     top: -26px;
@@ -59,18 +63,13 @@
     img {
       margin-top: 12px;
 
-      //@include mq($until: 300px) {
-      //  max-width: 120px;
-      //}
-      //
-      //@include mq($from: 300px, $until: 400px) {
-      //  max-width: 170px;
-      //}
-      //
-      //@include mq($from: 400px, $until: mobile) {
-      //  max-width: 225px;
-      //}
+      @include mq($until: 375px) {
+        width: 100%;
+      }
 
+      @include mq($from: 375px, $until: mobile) {
+        width: 100%;
+      }
     }
   }
 }
