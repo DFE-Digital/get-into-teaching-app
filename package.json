@@ -13,7 +13,7 @@
     "accessible-autocomplete": "^2.0.4",
     "babel-loader": "9",
     "babel-plugin-macros": "^3.1.0",
-    "compression-webpack-plugin": "9",
+    "compression-webpack-plugin": "10",
     "css-loader": "^6.8.1",
     "dayjs": "^1.11.10",
     "file-loader": "^6.2.0",
