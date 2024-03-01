@@ -11,9 +11,12 @@
   @include mq($from: tablet) {
     overflow: visible;
     top: -26px;
-    left: -10px;
     margin-bottom: -16px;
     padding-bottom: 0;
+  }
+
+  @include mq($from: desktop) {
+    left: -10px;
   }
 }
 
