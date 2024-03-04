@@ -31,7 +31,7 @@ keywords:
 
 Funding is available to help you train to teach. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs. 
 
-You can still apply for a tuition fee and a maintenance loan if you already have a student loan, and regardless of whether you get a teaching bursary or scholarship.
+You can still apply for a tuition fee and a maintenance loan if you already have a student loan, and regardless of whether you get a teaching bursary or scholarship. And you will only have to make loan repayments once you’re earning.
 
 You do not need to wait until you have a confirmed offer to apply for student funding. 
 
@@ -48,17 +48,18 @@ The maximum amount you can borrow depends on how much your course costs.
 Tuition fees loans are not means tested, so you do not need to provide evidence of yours or anyone else’s income to be eligible to receive one.
 
 ## Maintenance loans
-You may also be eligible for a maintenance loan to help you cover your living expenses. The amount you can borrow depends on if you: 
+You may also be eligible for a maintenance loan to help you cover your living expenses. 
+
+maintenance loan of up to £13,022  to help with living costs
+
+
+The amount you can borrow depends on if you: 
 
 * live at home with your parents 
 * live somewhere else 
 * live in London 
 * are 60 years or over on the first day of the academic year 
 
-maintenance loan of up to £13,022  to help with living costs
-
-
-You will only have to make loan repayments once you’re earning.
 
 $student-finance-calculator$
 
