@@ -166,10 +166,10 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 Teacher training fees for non-UK candidates vary between training providers.
 
-Fees:
+Fees cost:
 
-* cost an average of £14,765
-* cost a maximum of about £36,000
+* an average of £14,765
+* a maximum of about £36,000
 
 You’ll also have to cover your living costs.
 
