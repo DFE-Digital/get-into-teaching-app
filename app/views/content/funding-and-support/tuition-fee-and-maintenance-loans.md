@@ -43,6 +43,13 @@ You can apply for a tuition fee loan to cover the cost of your postgraduate teac
 Tuition fees loans are not means tested, so you do not need to provide evidence of yours or anyone else’s income to be eligible to receive one.
 
 ## Maintenance loans
+You may also be eligible for a maintenance loan to help you cover your living expenses. The amount you can borrow depends on if you: 
+
+* live at home with your parents 
+* live somewhere else 
+* live in London 
+* are 60 years or over on the first day of the academic year 
+
 maintenance loan of up to £13,022  to help with living costs
 
 
