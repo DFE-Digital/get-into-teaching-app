@@ -152,7 +152,7 @@ To start your application for student loans, you need to have chosen your teache
 * maintenance loans to help with living costs
 * extra help if you have a disability, children or an adult dependant
 
-If you are eligible for student loans, you will also usually be eligible: 
+If you're eligible for student loans, you'll also usually be eligible: 
 
 * for a home fee rate 
 
