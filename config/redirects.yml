@@ -379,3 +379,9 @@ redirects:
   "/blog/stephens-return-to-teaching-story": "/returning-to-teaching"
   "/blog/top-tips-for-returning-teachers": "/returning-to-teaching"
   "/blog/tag/returning-to-teaching": "/returning-to-teaching"
+
+# Subject pages 
+  "/subjects/physics": "/is-teaching-right-for-me/physics"   
+  "/subjects/maths": "/is-teaching-right-for-me/maths"
+  "/subjects/engineers-teach-physics": "/is-teaching-right-for-me/engineers-teach-physics"
+  
