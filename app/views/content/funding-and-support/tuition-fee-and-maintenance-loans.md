@@ -53,12 +53,12 @@ You may also be eligible for a maintenance loan to help you cover your living ex
 maintenance loan of up to £13,022  to help with living costs
 
 
-The amount you can borrow depends on if you: 
+The maximum amount you can borrow is up to: 
 
-* live at home with your parents 
-* live somewhere else 
-* live in London 
-* are 60 years or over on the first day of the academic year 
+* £8,610 if you live at home with your parents
+* £10,227 if you live somewhere else
+* £13,348 if you live in London
+* £4,327 if you're 60 years or over on the first day of the academic year of your course  
 
 
 $student-finance-calculator$
