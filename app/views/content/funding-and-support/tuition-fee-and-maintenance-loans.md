@@ -29,12 +29,22 @@ keywords:
     - Financial Support
 ---
 
-Funding is available to help you train to teach. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs.
-
-- tuition fee loan of up to £9,250 to cover your teacher training, so you do not need to pay course fees upfront
-- maintenance loan of up to £13,022  to help with living costs
+Funding is available to help you train to teach. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs. 
 
 You can still apply for a tuition fee and a maintenance loan if you already have a student loan, and regardless of whether you get a teaching bursary or scholarship.
+
+You can apply for student funding online and you do not need to wait until you have a confirmed offer to apply for student funding. 
+
+## Tuition fee loans
+You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course so you do not have to pay your course fees upfront. If you’re eligible for a tuition fee loan the amount you borrow is paid directly to your course provider.
+
+Tuition fees loans are not means tested, so you do not need to provide evidence of yours or anyone else’s income to be eligible to receive one.
+
+The maximum tuition fee for a full-time postgraduate teacher training course is £9,250 for UK applicants. The maximum amount you can borrow depends on how much your course costs. 
+
+## Maintenance loans
+maintenance loan of up to £13,022  to help with living costs
+
 
 You will only have to make loan repayments once you’re earning.
 
