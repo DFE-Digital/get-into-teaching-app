@@ -33,7 +33,7 @@ Funding is available to help you train to teach. You may be eligible for a stude
 
 You can still apply for a tuition fee and a maintenance loan if you already have a student loan, and regardless of whether you get a teaching bursary or scholarship.
 
-You can apply for student funding online and you do not need to wait until you have a confirmed offer to apply for student funding. 
+You do not need to wait until you have a confirmed offer to apply for student funding. 
 
 ## Tuition fee loans
 You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course so you do not have to pay your course fees upfront. If you’re eligible for a tuition fee loan the amount you borrow is paid directly to your course provider.
