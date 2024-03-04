@@ -99,12 +99,12 @@ For teachers who qualified outside the UK, as well as those with teaching experi
 
 When you plan your training, bear in mind that:
 
-- international candidates can expect to pay between £9,250 and £32,000, plus
-living costs, to train (depending on your immigration status and the subject you train to teach, you may get some financial support)
-- training lasts one academic year full-time, or longer part-time
-- you can apply for paid teaching jobs as soon as you successfully complete your training
-- you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher
-- you can update, extend or switch your visa to live and work in the UK long-term
+* international candidates can expect to pay an average of £14,765, plus living costs, to train 
+* depending on your immigration status and the subject you train to teach, you may get some financial support
+* training lasts one academic year full-time, or longer part-time
+* you can apply for paid teaching jobs as soon as you successfully complete your training
+* you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher
+* you can update, extend or switch your visa to live and work in the UK long-term
 
 
 
