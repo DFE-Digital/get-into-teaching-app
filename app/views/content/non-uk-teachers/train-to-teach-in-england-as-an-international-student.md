@@ -173,7 +173,7 @@ Fees:
 
 You’ll also have to cover your living costs.
 
-If you are planning on training to teach languages and physics, you could be eligible for financial help worth up to £40,000, including an international relocation payment worth £10,000.
+If you're planning on training to teach languages and physics, you could be eligible for financial help worth up to £40,000, including an international relocation payment (IRP) worth £10,000.
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
