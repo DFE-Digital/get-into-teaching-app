@@ -29,7 +29,7 @@ keywords:
     - Financial Support
 ---
 
-Funding is available to help you train to teach. You can apply for a:
+Funding is available to help you train to teach. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs.
 
 - tuition fee loan of up to £9,250 to cover your teacher training, so you do not need to pay course fees upfront
 - maintenance loan of up to £13,022  to help with living costs
