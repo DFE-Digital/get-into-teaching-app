@@ -22,7 +22,7 @@ jobs:
           args: --exclude-mail --max-retries 20 app/views/content
           fail: true
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 

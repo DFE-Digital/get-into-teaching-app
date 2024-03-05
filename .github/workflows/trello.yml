@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains( 'dependabot[bot] snyk-bot' , github.actor )"
     steps:
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
