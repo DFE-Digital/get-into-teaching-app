@@ -279,25 +279,7 @@
     - "static/images/content/hero-images/physics_1383-tablet.jpg"    
 
 "static/images/content/ttalianne.jpg":
-  alt: "Lianne, an explore teaching adviser"
-
-"static/images/content/hero-images/Languages_4580.jpg":
-  alt: "A languages teacher smiling at a student holding a spanish card in the classroom."
-  variants:
-    - "static/images/content/hero-images/Languages_4580-mobile.jpg"
-    - "static/images/content/hero-images/Languages_4580-tablet.jpg"     
-
- "static/images/content/hero-images/Languages_4809.jpg":
-  alt: "A languages teacher helping a student in the classroom."
-  variants:
-    - "static/images/content/hero-images/Languages_4809-mobile.jpg"
-    - "static/images/content/hero-images/Languages_4809-tablet.jpg"    
-
- "static/images/content/hero-images/Languages_4836.jpg":
-  alt: "A languages teacher helping a student in the classroom."
-  variants:
-    - "static/images/content/hero-images/Languages_4836-mobile.jpg"
-    - "static/images/content/hero-images/Languages_4836-tablet.jpg"      
+  alt: "Lianne, an explore teaching adviser"   
 
 # blog
 "static/images/content/blog/abigail-beeley.jpg":
