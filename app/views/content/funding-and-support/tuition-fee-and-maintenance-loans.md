@@ -16,7 +16,7 @@ calls_to_action:
       name: simple
       arguments:
         icon: "icon-arrow"
-        text: "Use the student finance calculator on GOV.UK to find out how much funding you can get."
+        text: "Use the student finance calculator on GOV.UK to get an estimate of how much funding you may get."
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
 navigation: 20.10
@@ -86,7 +86,7 @@ If you’re not a UK citizen, you are unlikely to get help funding your training
 
 ## Check your eligibility for a scholarship or bursary
 
-You may also be eligible for a scholarship or bursary, depending on the subject you're training to teach.
+You may also be eligible for a tax-free scholarship or bursary, depending on the subject you're training to teach.
 
 You do not have to pay a scholarship or bursary back. You can receive this as well as any tuition fee and maintenance loans.
 
