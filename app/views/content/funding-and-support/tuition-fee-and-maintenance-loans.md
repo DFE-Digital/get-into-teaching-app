@@ -38,10 +38,10 @@ You do not need to wait until you have a confirmed offer for a teacher training 
 ## Tuition fee loans
 You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course so you do not have to pay your course fees upfront. If you’re eligible for a tuition fee loan the amount you borrow is paid directly to your course provider.
 
-The maximum tuition fee loan for a:
+The maximum tuition fee loan for a UK applicant:
 
-* full-time postgraduate teacher training course is £9,250 per year for UK applicants
-* part-time postgraduate teacher training course is £6,935 per year for UK applicants
+* full-time postgraduate teacher training course is £9,250 per year 
+* part-time postgraduate teacher training course is £6,935 per year 
 
 The maximum amount you can borrow depends on how much your course costs. 
 
