@@ -8,7 +8,7 @@ navigation_title: Modern languages
 navigation_description: Discover what it'd be like to a modern languages teacher and help pupils to communicate with people from other countries and cultures.
 layout: "layouts/minimal"
 colour: "yellow"
-image: "static/images/content/hero-images/Languages_4580.jpg"
+image: "static/images/content/hero-images/0004.jpg"
 keywords:
   - languages
   - teaching languages
