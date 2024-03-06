@@ -86,6 +86,6 @@ If you’re not a UK citizen, you're unlikely to get help funding your training 
 
 You may also be eligible for a tax-free bursary or scholarship, depending on the subject you're training to teach.
 
-You do not have to pay a bursary or scholarship back. You can get a bursary or scholarship as well as any tuition fee loans and maintenance loans.
+You do not have to pay a bursary or scholarship back. You can get a bursary or scholarship as well as any tuition fee loan and maintenance loan.
 
 Find out if you're eligible for a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries).
