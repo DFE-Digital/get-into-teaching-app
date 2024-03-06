@@ -54,7 +54,7 @@ You could get 85% of your childcare costs or a fixed maximum amount, whichever i
 
 The maximum you can get is: 
 
-* up to £193.962 a week for 1 child 
+* up to £193.62 a week for 1 child 
 * up to £331.95 a week for 2 or more children 
 
 Grants are paid into a Childcare Grant Payment Service (CCGPS) account. Your childcare provider would then be paid directly from this account. 
