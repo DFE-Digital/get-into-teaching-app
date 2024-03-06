@@ -40,8 +40,8 @@ You can apply for a tuition fee loan to cover the cost of your postgraduate teac
 
 The maximum tuition fee loan for a postgraduate teacher training course for a UK applicant is:
 
-* £9,250 per year for a full time
-* £6,935 per year for a part time
+* £9,250 per year, full time
+* £6,935 per year, part time
 
 The maximum amount you can borrow depends on how much your course costs. 
 
