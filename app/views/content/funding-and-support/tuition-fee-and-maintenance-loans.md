@@ -48,7 +48,7 @@ The maximum amount you can borrow depends on how much your course costs.
 Tuition fees loans are not means tested, so you do not need to provide evidence of yours or anyone else’s income to be eligible to receive one.
 
 ## Maintenance loans
-You may also be eligible for a maintenance loan to help you cover your living costs. 
+You may also be eligible for a maintenance loan to help cover your living costs. 
 
 The maximum amount you may be eligible to borrow is to: 
 
