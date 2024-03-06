@@ -71,7 +71,7 @@ To be eligible, you need to:
 
 The Parents’ Learning Allowance could help you with your learning costs if you’re a full-time student with children. 
 
-You could be eligible for between £50 and £1,915 a year, depending on your household income. 
+You could be eligible for between £50 and £1,963 a year, depending on your household income. 
 
 This is usually paid to you in 3 instalments, one at the start of each term. 
 
@@ -79,13 +79,13 @@ To be eligible, you need to:
 
 * be doing a full-time undergraduate course or a teacher training course in England 
 * have dependent children 
-* have a household income of less than £18,739.99 a year 
+* have a household income of less than £18,835.98 a year 
 
 [Find out more about the Parents’ Learning Allowance and how to apply](https://www.gov.uk/parents-learning-allowance). 
 
 ## If you’re a carer 
 
-You could be eligible for an Adult Dependants’ Grant of up to £3,354, depending on: 
+You could be eligible for an Adult Dependants’ Grant of up to £3,438, depending on: 
 
 * your household income 
 * the adult dependant’s income 
@@ -98,6 +98,6 @@ To be eligible, you need to:
 
 * be a full-time student in higher education 
 * have an adult depend on you financially 
-* have a household income of less than £15,453.98 
+* have a household income of less than £15,621.98 
 
 [Find out more about the Adult Dependants’ Grants and how to apply](https://www.gov.uk/adult-dependants-grant). 
