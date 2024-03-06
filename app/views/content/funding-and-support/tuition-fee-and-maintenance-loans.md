@@ -35,7 +35,7 @@ You can still apply for a tuition fee loan and a maintenance loan if you already
 
 You do not need to wait until you have a confirmed offer for a teacher training course to apply for student funding. 
 
-## Tuition fee loans
+## Tuition fee loan
 You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course. If you’re eligible for a tuition fee loan, the amount you borrow is paid directly to your course provider.
 
 The maximum tuition fee loan for a postgraduate teacher training course for a UK applicant is:
@@ -47,7 +47,7 @@ The maximum amount you can borrow depends on how much your course costs.
 
 Tuition fees loans are not means tested, so you do not need to provide evidence of your income or anyone else’s to be eligible to receive one.
 
-## Maintenance loans
+## Maintenance loan
 You may also be eligible for a maintenance loan to help cover your living costs. 
 
 The maximum amount you may be eligible to borrow is: 
