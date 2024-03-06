@@ -33,7 +33,7 @@ If you have children or other caring responsibilities, you may be able to get ex
 
 You do not have to pay this money back, and you’ll get it on top of your other student finance.
 
-Figures are for the 2023/24 academic year.
+Figures are for the 2024/25 academic year.
 
 There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the following funding. If you’re doing a part-time course, you may be eligible for [Universal Credit](https://www.gov.uk/guidance/universal-credit-and-students).
 
@@ -54,8 +54,8 @@ You could get 85% of your childcare costs or a fixed maximum amount, whichever i
 
 The maximum you can get is: 
 
-* up to £188.90 a week for 1 child 
-* up to £323.85 a week for 2 or more children 
+* up to £193.962 a week for 1 child 
+* up to £331.95 a week for 2 or more children 
 
 Grants are paid into a Childcare Grant Payment Service (CCGPS) account. Your childcare provider would then be paid directly from this account. 
 
