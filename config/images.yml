@@ -253,6 +253,28 @@
     - "static/images/content/hero-images/0034--mobile.jpg"
     - "static/images/content/hero-images/0034--tablet.jpg"
 
+"static/images/content/hero-images/languages_4580.jpg":
+  # A language teacher talking to pupils in a classroom.
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/languages_4580--mobile.jpg"
+    - "static/images/content/hero-images/languages_4580--tablet.jpg"
+
+"static/images/content/hero-images/languages_4809.jpg":
+  # A language teacher talking to pupils in a classroom.
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/languages_4809--mobile.jpg"
+    - "static/images/content/hero-images/languages_4809--tablet.jpg"
+
+"static/images/content/hero-images/languages_4836.jpg":
+  # A language teacher talking to pupils in a classroom.
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/languages_4836--mobile.jpg"
+    - "static/images/content/hero-images/languages_4836--tablet.jpg"
+
+
 "static/images/content/hero-images/0035.jpg":
   # A teacher discusses text with two students.
   alt: ""
