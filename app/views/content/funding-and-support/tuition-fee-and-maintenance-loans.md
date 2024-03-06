@@ -7,8 +7,6 @@ related_content:
     Who do you want to teach?: "/is-teaching-right-for-me/who-do-you-want-to-teach"
     Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
     Teacher pay and benefits: "/is-teaching-right-for-me/teacher-pay-and-benefits"
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 calls_to_action:
