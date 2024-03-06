@@ -64,19 +64,19 @@ $student-finance-calculator$
 
 You’ll need to contact your country’s student finance body to find out about your eligibility for funding if you live in Wales, Scotland, or Northern Ireland.
 
-Find out about:
+Find out about student finance in:
 
-* [student finance in Wales](https://www.studentfinancewales.co.uk/)
-* [student finance in Scotland](https://www.saas.gov.uk/)
-* [student finance in Northern Ireland](https://www.studentfinanceni.co.uk/)
+* [Wales](https://www.studentfinancewales.co.uk/)
+* [Scotland](https://www.saas.gov.uk/)
+* [Northern Ireland](https://www.studentfinanceni.co.uk/)
 
 Or, you'll need to contact the education authority if you live in Jersey, Guernsey, or the Isle of Man.
 
-Find out about:
+Find out about funding in:
 
-* [funding in Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx)
-* [funding in Guernsey](https://www.gov.gg/article/152744/Policies)
-* [funding in the Isle of Man](https://www.gov.im/student-grants)
+* [Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx)
+* [Guernsey](https://www.gov.gg/article/152744/Policies)
+* [Isle of Man](https://www.gov.im/student-grants)
 
 ### Non-UK citizens
 
