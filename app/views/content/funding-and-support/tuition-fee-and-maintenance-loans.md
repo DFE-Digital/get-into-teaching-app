@@ -45,7 +45,7 @@ The maximum tuition fee loan for a postgraduate teacher training course for a UK
 
 The maximum amount you can borrow depends on how much your course costs. 
 
-Tuition fees loans are not means tested, so you do not need to provide evidence of your income or anyone else’s to be eligible to receive one.
+Tuition fees loans are not means tested. So you do not need to provide evidence of your income or anyone else’s to be eligible to receive one.
 
 ## Maintenance loan
 You may also be eligible for a maintenance loan to help cover your living costs. 
