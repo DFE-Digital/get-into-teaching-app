@@ -16,7 +16,7 @@ calls_to_action:
       name: simple
       arguments:
         icon: "icon-arrow"
-        text: "Use the student finance calculator on GOV.UK to get an estimate of how much funding you may get."
+        text: "Use the student finance calculator on GOV.UK to get an estimate of how much funding you might get."
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
 navigation: 20.10
