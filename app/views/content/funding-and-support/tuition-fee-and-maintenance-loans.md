@@ -50,7 +50,7 @@ Tuition fees loans are not means tested, so you do not need to provide evidence 
 ## Maintenance loans
 You may also be eligible for a maintenance loan to help cover your living costs. 
 
-The maximum amount you may be eligible to borrow is to: 
+The maximum amount you may be eligible to borrow is: 
 
 * £8,610, if you live at home with your parents
 * £10,227, if you live somewhere else
