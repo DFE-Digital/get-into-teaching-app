@@ -84,10 +84,10 @@ If you’re not a UK citizen, you are unlikely to get help funding your training
 
 [Find out about funding for non-UK citizens](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
 
-## Check your eligibility for a scholarship or bursary
+## Check your eligibility for a bursary or scholarship
 
-You may also be eligible for a tax-free scholarship or bursary, depending on the subject you're training to teach.
+You may also be eligible for a tax-free bursary or scholarship, depending on the subject you're training to teach.
 
-You do not have to pay a scholarship or bursary back. You can receive this as well as any tuition fee and maintenance loans.
+You do not have to pay a bursary or scholarship back. You can receive this as well as any tuition fee and maintenance loans.
 
-Find out if you're eligible for a [scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
+Find out if you're eligible for a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries).
