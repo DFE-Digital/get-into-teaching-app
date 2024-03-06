@@ -80,7 +80,7 @@ Find out about funding in:
 
 ### Non-UK citizens
 
-If you’re not a UK citizen, you are unlikely to get help funding your training unless you have permission to [live permanently in the UK](https://www.gov.uk/browse/visas-immigration/settle-in-the-uk), for example under the EU Settlement Scheme, or are training to teach languages or physics. You will also need to meet some other eligibility requirements.
+If you’re not a UK citizen, you are unlikely to get help funding your training unless you have permission to [live permanently in the UK](https://www.gov.uk/browse/visas-immigration/settle-in-the-uk), for example under the EU Settlement Scheme, or are training to teach languages or physics. You'll also need to meet some other eligibility requirements.
 
 [Find out about funding for non-UK citizens](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
 
