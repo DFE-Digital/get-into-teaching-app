@@ -87,7 +87,7 @@ jobs:
 
       - name: Fetch secrets from key vault
         if: failure() && github.ref == 'refs/heads/master'
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
@@ -195,7 +195,7 @@ jobs:
 
       - name: Fetch secrets from key vault
         if: failure() && github.ref == 'refs/heads/master'
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
@@ -262,7 +262,7 @@ jobs:
 
       - name: Fetch secrets from key vault
         if: failure()
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
@@ -324,7 +324,7 @@ jobs:
             creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
       - name: Fetch secrets from key vault
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
@@ -379,7 +379,7 @@ jobs:
             creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
       - name: Fetch secrets from key vault
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
@@ -454,7 +454,7 @@ jobs:
             creds: ${{ secrets[format('AZURE_CREDENTIALS{0}', env.SECRET_SUFFIX)] }}
 
       - name: Fetch secrets from key vault
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
@@ -508,7 +508,7 @@ jobs:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Fetch secrets from key vault
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
@@ -577,7 +577,7 @@ jobs:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Fetch secrets from key vault
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
@@ -623,7 +623,7 @@ jobs:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Fetch secrets from key vault
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
@@ -682,7 +682,7 @@ jobs:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Fetch secrets from key vault
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: slack-secret
         with:
           inlineScript: |
@@ -692,7 +692,7 @@ jobs:
 
 
       - name: Fetch secrets from key vault
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
@@ -739,7 +739,7 @@ jobs:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Fetch secrets from key vault
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
