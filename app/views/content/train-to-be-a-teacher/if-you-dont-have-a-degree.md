@@ -5,7 +5,7 @@ description: |-
   Explore how you can get into teaching without a degree by taking an undergraduate course to gain qualified teacher status (QTS) alongside a degree.
 related_content:
     Is teaching right for me? : "/is-teaching-right-for-me"
-    5 reasons to attend a Get Into Teaching event : "/blog/5-reasons-to-attend-a-get-into-teaching-event"
+    Get Into Teaching events what to expect : "/events/about-get-into-teaching-events"
     Funding your training : "/funding-and-support"
     Teach in further education without a degree : "https://www.teach-in-further-education.campaign.gov.uk"
 external_content:
