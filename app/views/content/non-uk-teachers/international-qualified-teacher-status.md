@@ -119,7 +119,7 @@ The following providers are accepting applications from all over the world:
 
 * [University of Buckingham](https://www.buckingham.ac.uk/courses/postgraduate/international-qualified-teacher-status-iqts)
 
-* University of Derby: for more information, email ipgce@derby.ac.uk
+* [University of Derby](https://www.derby.ac.uk/online/education-courses/international-qualified-teacher-status-iqts-online/)
 
 * [University of Sunderland](https://www.sunderland.ac.uk/study/education/pgce-iqts/)
 
