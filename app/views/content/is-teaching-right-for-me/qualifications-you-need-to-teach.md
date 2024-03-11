@@ -54,10 +54,9 @@ This could be through having a degree in the subject, or having:
 * a degree related to but not in the subject – for example, your degree is in engineering but you’d like to teach physics
 * an unrelated degree but relevant professional experience
 
-You can also train to teach two subjects at primary or secondary. You can:
+You can also train to teach primary with a specialist subject, for example primary with maths, so you can develop your knowledge of that particular subject.
 
-* choose primary with a subject, this will allow you to teach more of that other subject in your primary school
-* choose two subjects at secondary, this will allow you to teach both subjects in your secondary school
+Or you can train to teach two subjects at secondary, for example PE with computing, so you can develop the skills to teach in an additional subject.
 
 Talk to your training provider to find out what you can train to teach.
 
