@@ -88,4 +88,4 @@ You may also be eligible for a tax-free bursary or scholarship, depending on the
 
 You do not have to pay a bursary or scholarship back. You can get a bursary or scholarship as well as any tuition fee loan and maintenance loan.
 
-Find out if you're eligible for a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries).
+[Find out if you're eligible for a bursary or scholarship](/funding-and-support/scholarships-and-bursaries).
