@@ -337,7 +337,7 @@ redirects:
   "/urgent-call-for-qualified-teachers": "/returning-to-teaching"
 
   # Blog pages
-  "/blog/5-reasons-to-attend-a-get-into-teaching-event" : "/events/about-get-into-teaching-events"
+  "/blog/5-reasons-to-attend-a-train-to-teach-event": "/events/about-get-into-teaching-events"
   "/blog/teachers-pension-scheme": "/is-teaching-right-for-me/what-pension-does-a-teacher-get"
   "/blog/how-to-fund-your-teacher-training": "/funding-and-support"
   "/blog/11-top-tips-for-interview-success": "/how-to-apply-for-teacher-training/teacher-training-interview"
