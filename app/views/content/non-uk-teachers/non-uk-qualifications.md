@@ -79,9 +79,11 @@ A statement of comparability costs £49.50 + VAT. It takes 15 working days to co
 
 ## Get help checking your qualifications
 
-For help with qualifications, call us on +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate.
+For help with qualifications, you can use the live chat service at the bottom of this page, or call us on +44 800 389 2500. 
 
-When you call, we can tell you if you are eligible for a [teacher training adviser](/teacher-training-advisers). If you're eligible, we can help you with a free digital e-statement of comparability, once you’ve submitted your application, if your provider asks for this.
+We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England. Phone calls will be charged at your standard rate.
+
+When you call or chat, we can tell you if you are eligible for a [teacher training adviser](/teacher-training-advisers). 
 
 
 ## Qualifications you'll need to train to teach
