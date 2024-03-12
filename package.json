@@ -64,7 +64,7 @@
     "prettier": "^2.8.4",
     "semver": "7.5.4",
     "stylelint": "^15.11.0",
-    "stylelint-config-gds": "^0.3.0"
+    "stylelint-config-gds": "^2.0.0"
   },
   "jest": {
     "testRegex": ".*_spec.js",
