@@ -22,7 +22,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
       - name: Fetch secrets from key vault
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         id: keyvault-yaml-secret
         with:
           inlineScript: |
