@@ -62,11 +62,11 @@ $student-finance-calculator$
 
 You’ll need to contact your country’s student finance body to find out about your eligibility for funding if you live in Wales, Scotland, or Northern Ireland.
 
-Find out about student finance in:
+Find out about:
 
-* [Wales](https://www.studentfinancewales.co.uk/)
-* [Scotland](https://www.saas.gov.uk/)
-* [Northern Ireland](https://www.studentfinanceni.co.uk/)
+* [student finance in Wales](https://www.studentfinancewales.co.uk/)
+* [student finance in Scotland](https://www.saas.gov.uk/)
+* [student finance in Northern Ireland](https://www.studentfinanceni.co.uk/)
 
 Or, you'll need to contact the education authority if you live in Jersey, Guernsey, or the Isle of Man.
 
