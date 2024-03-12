@@ -348,6 +348,9 @@ redirects:
   "/blog/choosing-the-right-teacher-training-course-provider": "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
   "/blog/how-to-find-school-experience": "/is-teaching-right-for-me/get-school-experience"
 
+  # Blog tags
+  "/blog/tag/get-into-teaching-events": "/events/about-get-into-teaching-events"
+
   # Covid page
   "/covid-19": "/"
   "/impact-of-covid-19-on-teacher-training": "/"
