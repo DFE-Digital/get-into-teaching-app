@@ -72,9 +72,9 @@ Or, you'll need to contact the education authority if you live in Jersey, Guerns
 
 Find out about funding in:
 
-* [Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx)
-* [Guernsey](https://www.gov.gg/article/152744/Policies)
-* [Isle of Man](https://www.gov.im/student-grants)
+* [funding in Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx)
+* [funding in Guernsey](https://www.gov.gg/article/152744/Policies)
+* [funding in the Isle of Man](https://www.gov.im/student-grants)
 
 ### Non-UK citizens
 
