@@ -80,7 +80,7 @@ jobs:
           build-args: |
             BUILDKIT_INLINE_CACHE=1
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         if: failure() && github.ref == 'refs/heads/master'
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
@@ -188,7 +188,7 @@ jobs:
             BUILDKIT_INLINE_CACHE=1
             SHA=${{ steps.sha.outputs.short }}
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         if: failure() && github.ref == 'refs/heads/master'
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
@@ -226,7 +226,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
@@ -319,7 +319,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
@@ -374,7 +374,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
@@ -449,7 +449,7 @@ jobs:
              secret_suffix="_REVIEW"
              echo "SECRET_SUFFIX=$secret_suffix" >> $GITHUB_ENV
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets[format('AZURE_CREDENTIALS{0}', env.SECRET_SUFFIX)] }}
 
@@ -503,7 +503,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
@@ -572,7 +572,7 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v4
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
@@ -618,7 +618,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
@@ -677,7 +677,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
@@ -734,7 +734,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 

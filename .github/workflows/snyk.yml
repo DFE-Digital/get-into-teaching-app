@@ -15,7 +15,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
