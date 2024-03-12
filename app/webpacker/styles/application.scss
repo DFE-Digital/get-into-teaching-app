@@ -2,6 +2,10 @@
 
 $git-font-family: sans-serif;
 $govuk-font-family: $git-font-family;
+// NB: enabling the new typography scale will affect text rendering at lower
+// resolutions. Consider waiting to upgrade until v6.
+// https://design-system.service.gov.uk/get-started/new-type-scale/
+$govuk-new-typography-scale: false;
 
 @import "./git";
 
