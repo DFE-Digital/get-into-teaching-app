@@ -70,7 +70,7 @@ Find out about:
 
 Or, you'll need to contact the education authority if you live in Jersey, Guernsey, or the Isle of Man.
 
-Find out about funding in:
+Find out about:
 
 * [funding in Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx)
 * [funding in Guernsey](https://www.gov.gg/article/152744/Policies)
