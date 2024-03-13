@@ -147,14 +147,14 @@
       // something more powerful like the regular quote module that wraps
       // the <blockquote> in a <figure> with a <figcaption>
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         color: $black;
       }
 
       // always open the quote on the first paragraph
       &:first-child {
-        &:before {
+        &::before {
           content: '"';
         }
       }
@@ -163,7 +163,7 @@
       // or the second last if there is
       &:nth-last-child(2),
       &:only-of-type {
-        &:after {
+        &::after {
           content: '"';
         }
         padding-bottom: 0;

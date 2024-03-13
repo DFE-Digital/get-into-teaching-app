@@ -45,13 +45,13 @@ $chevron-direction-map: (
     // after governs whether the chevron is placed after (on the right) or
     // before (on the left) of the link text
     @if $after {
-      &:after {
+      &::after {
         @include chevron-icon($color: $color, $dimensions: $dimensions, $rotate: $degrees);
 
         margin-left: $chevron-margin;
       }
     } @else {
-      &:before {
+      &::before {
         @include chevron-icon($color: $color, $dimensions: $dimensions, $rotate: $degrees);
 
         margin-right: $chevron-margin;
@@ -60,8 +60,8 @@ $chevron-direction-map: (
   }
 
   &:focus > * {
-    &:after,
-    &:before {
+    &::after,
+    &::before {
       border-color: $focus-color;
     }
   }

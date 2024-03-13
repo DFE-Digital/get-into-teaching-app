@@ -22,8 +22,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       position: relative;
       font-weight: bold;
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         content: '"';
         color: $color;
       }
@@ -272,7 +272,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         align-items: center;
         margin-left: .5em;
 
-        span:before {
+        span::before {
           content: "\2012"; // emdash
           margin-right: .2em;
         }
@@ -653,7 +653,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           .q {
             font-weight: bold;
 
-            &:before {
+            &::before {
               @include question-decoration("Q");
             }
           }
@@ -665,23 +665,23 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
             }
 
             blockquote {
-              &:before {
+              &::before {
                 content: open-quote;
               }
 
-              &:after {
+              &::after {
                 content: close-quote;
               }
             }
 
             figcaption {
-              &:before {
+              &::before {
                 content: "\2014 "; // emdash
                 margin-right: .3em;
               }
             }
 
-            &:before {
+            &::before {
               @include question-decoration("A");
             }
           }

@@ -51,7 +51,7 @@ html.js-enabled {
   position: absolute;
   width: 200px;
 
-  &:after {
+  &::after {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-top: 8px solid govuk-colour("white");

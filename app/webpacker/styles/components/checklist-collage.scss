@@ -25,7 +25,7 @@
       position: relative;
       margin: 0 0 2em;
 
-      &:before {
+      &::before {
         content: "";
         background-image: url("../images/icon-tick.svg");
         background-repeat: no-repeat;

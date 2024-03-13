@@ -22,8 +22,8 @@ input.govuk-input {
   }
 }
 
-input.govuk-radios__input:focus + .govuk-radios__label:before,
-input.govuk-checkboxes__input:focus + .govuk-checkboxes__label:before {
+input.govuk-radios__input:focus + .govuk-radios__label::before,
+input.govuk-checkboxes__input:focus + .govuk-checkboxes__label::before {
   @include input-focus;
   box-shadow: none;
 }
