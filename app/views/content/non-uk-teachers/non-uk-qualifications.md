@@ -65,7 +65,7 @@ keywords:
   - Comparability
 ---
 
-Before you apply for teacher training in England, you must check that you have the [the right qualifications](#qualifications-youll-need-to-train-to-teach) and they meet the standard set for English teacher training. 
+Before you apply for teacher training in England, you must check that you have [the right qualifications](#qualifications-youll-need-to-train-to-teach) and they meet the standard set for English teacher training. 
  
 ## How to check your qualifications
 
@@ -79,11 +79,11 @@ A statement of comparability costs £49.50 + VAT. It takes 15 working days to co
 
 ## Get help checking your qualifications
 
-For help with qualifications, you can use the live chat service at the bottom of this page, or call us on +44 800 389 2500. 
+To get help with your qualifications, you can use the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country's standard rate.
 
-We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England. Phone calls will be charged at your standard rate.
+We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England. 
 
-When you call or chat, we can tell you if you are eligible for a [teacher training adviser](/teacher-training-advisers). 
+When you speak to us, we can tell you if you're eligible for a [teacher training adviser](/teacher-training-advisers). 
 
 
 ## Qualifications you'll need to train to teach
