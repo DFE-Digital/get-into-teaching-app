@@ -19,14 +19,14 @@ $quote-color: $black;
 }
 
 @mixin simple-quotes-before($quote-color) {
-  &:before {
+  &::before {
     color: $quote-color;
     content: '"';
   }
 }
 
 @mixin simple-quotes-after($quote-color) {
-  &:after {
+  &::after {
     color: $quote-color;
     content: '"';
   }

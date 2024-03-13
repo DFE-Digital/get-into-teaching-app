@@ -12,7 +12,7 @@
         display: flex;
         align-items: center;
 
-        &:before {
+        &::before {
           content: counter(item);
           flex: 0 0 1.5em;
           background-color: $pink-dark;
@@ -35,11 +35,11 @@
             flex-grow: 1;
           }
 
-          &:focus:after {
+          &:focus::after {
             background-image: url("../images/icon-down-white.svg");
           }
 
-          &:after {
+          &::after {
             flex-basis: 2em;
             align-self: center;
             height: 2em;

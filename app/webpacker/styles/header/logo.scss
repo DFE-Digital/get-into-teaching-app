@@ -32,7 +32,7 @@
     text-decoration: none;
 
     &:focus {
-      &:before {
+      &::before {
         content: "";
         display: block;
         width: 100%;
