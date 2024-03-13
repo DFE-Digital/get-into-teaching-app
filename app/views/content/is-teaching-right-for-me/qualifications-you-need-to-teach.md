@@ -56,7 +56,7 @@ This could be through having a degree in the subject, or having:
 
 You can also train to teach primary with a specialist subject, for example primary with maths, so you can develop your knowledge of that particular subject.
 
-Or you can train to teach two subjects at secondary, for example PE with computing, so you can develop the skills to teach in an additional subject.
+Or you can train to teach two subjects at secondary, for example maths with physics, so you can develop the skills to teach in an additional subject.
 
 Talk to your training provider to find out what you can train to teach.
 
