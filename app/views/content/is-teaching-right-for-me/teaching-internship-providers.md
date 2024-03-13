@@ -8,10 +8,6 @@ date: "2021-04-14"
 image: false
 promo_content:
   - content/train-to-be-a-teacher/promos/eta-promo-internships
-related_content:
-    Become a computing teacher: "/is-teaching-right-for-me/computing"
-    Become a maths teacher : "/is-teaching-right-for-me/maths"
-    Become a physics teacher : "/is-teaching-right-for-me/physics"
 backlink: /
 fullwidth: true
 navigation: 5.55
