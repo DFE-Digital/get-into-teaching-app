@@ -108,7 +108,7 @@ If you’ve reached a certain proficiency in an English language test, you can u
 * [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl)
 * [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/)  
 
-If you haven’t passed an English language test like this, or do not have qualifications in maths or science which are the same standard as grade 4 GCSE, some teacher training providers will let you sit tests in these subjects. It’s best to contact them to ask about their policy before you apply. 
+If you have not passed an English language test like this, or do not have qualifications in maths or science which are the same standard as grade 4 GCSE, some teacher training providers will let you sit tests in these subjects. It’s best to contact them to ask about their policy before you apply. 
 
 ## If you do not have a bachelor's degree
 

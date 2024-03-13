@@ -73,8 +73,8 @@ $new-international-funding$
 
 Citizens of every country in the world can apply to train to teach in England. When you plan your training, bear in mind that:
 
-- international candidates can expect to pay an average of £14,765, plus
-living costs, to train
+- international candidates can expect to pay an average of £14,765 to train, plus
+living costs
 - depending on your immigration status and the subject you train to teach, you may get some financial support
 - training lasts one academic year full-time, or longer part-time
 - you can apply for paid teaching jobs as soon as you successfully complete your training and gain English qualified teacher status (QTS)
@@ -107,10 +107,11 @@ For teachers who qualified outside the UK, as well as those with teaching experi
 
 Before you apply, you must [check your qualifications](/non-uk-teachers/non-uk-qualifications). If you gained your qualifications outside the UK, we can help you check they meet the required standard in England. 
 
-For help checking your qualifications and completing your application for teacher training, you can:
+To get help with your qualifications, you can use the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country's standard rate.
 
-* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate
-* use the live chat service at the bottom of this page
+We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England. 
+
+When you speak to us, we can also tell you if you're eligible for a [teacher training adviser](/teacher-training-advisers). 
 
 ## Find out about fees and financial support
 
@@ -123,7 +124,7 @@ Fees cost:
 
 You’ll also have to cover your living costs.
 
-If you're planning on training to teach languages and physics, you could be eligible for financial help worth up to £40,000, including an international relocation payment (IRP) worth £10,000.
+If you're planning on training to teach languages or physics, you could be eligible for financial help worth up to £40,000, including an international relocation payment (IRP) worth £10,000.
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
