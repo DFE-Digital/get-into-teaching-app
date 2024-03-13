@@ -103,7 +103,6 @@ If you don’t want to come to England to study you can apply to train for inter
 
 For teachers who qualified outside the UK, as well as those with teaching experience, [other routes to qualified teacher status (QTS)](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) are also open.
 
-## Check your eligibility and get help
 
 Before you apply, you must [check your eligibility](/non-uk-teachers/non-uk-qualifications). If you gained your qualifications outside the UK, we can help you check they meet the required standard in England. 
 
@@ -114,9 +113,16 @@ For help checking your qualifications and completing your application for teache
 
 ## Find out about fees and financial support
 
-Fees vary between training providers, but range from £9,250 to about £32,000. You’ll also have to pay your living costs.
+Teacher training fees for non-UK candidates vary between training providers.
 
-If you are planning on training to teach languages and physics, you could be eligible for financial help worth up to £40,000, including an international relocation payment worth £10,000.
+Fees cost:
+
+* an average of £14,765
+* a maximum of about £36,000
+
+You’ll also have to cover your living costs.
+
+If you're planning on training to teach languages and physics, you could be eligible for financial help worth up to £40,000, including an international relocation payment (IRP) worth £10,000.
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 

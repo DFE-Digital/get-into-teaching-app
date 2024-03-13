@@ -260,6 +260,24 @@
     - "static/images/content/hero-images/0035--mobile.jpg"
     - "static/images/content/hero-images/0035--tablet.jpg"
 
+"static/images/content/hero-images/0036.jpg":
+  alt: "A teacher talks to his pupils and shows them how to use a robotic arm."
+  variants:
+    - "static/images/content/hero-images/0036--mobile.jpg"
+    - "static/images/content/hero-images/0036--tablet.jpg"
+
+"static/images/content/hero-images/0037.jpg":
+  alt: "Two children have fun using the robotic arm in the classroom."
+  variants:
+    - "static/images/content/hero-images/0037--mobile.jpg"
+    - "static/images/content/hero-images/0037--tablet.jpg"
+
+"static/images/content/hero-images/physics_1383.jpg":
+  alt: "A physics teacher talking about gravity with balls in the classroom."
+  variants:
+    - "static/images/content/hero-images/physics_1383-mobile.jpg"
+    - "static/images/content/hero-images/physics_1383-tablet.jpg"    
+
 "static/images/content/ttalianne.jpg":
   alt: "Lianne, an explore teaching adviser"
 
