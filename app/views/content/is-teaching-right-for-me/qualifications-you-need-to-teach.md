@@ -54,11 +54,13 @@ This could be through having a degree in the subject, or having:
 * a degree related to but not in the subject – for example, your degree is in engineering but you’d like to teach physics
 * an unrelated degree but relevant professional experience
 
+You can also train to teach primary with a specialist subject, for example primary with maths, so you can develop your knowledge of that particular subject.
+
+Or you can train to teach two subjects at secondary, for example maths with physics, so you can develop the skills to teach in an additional subject.
+
 Talk to your training provider to find out what you can train to teach.
 
 You could also receive a tax-free bursary or scholarship of up to £30,000 to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
-
-You may also have the opportunity to teach other subjects in your career and can train to teach more than one subject.
 
 ## Do a subject knowledge enhancement (SKE) course
 
