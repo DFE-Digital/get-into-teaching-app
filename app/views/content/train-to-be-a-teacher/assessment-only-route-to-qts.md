@@ -363,6 +363,11 @@ provider_groups:
       name: Lex Blake
       telephone: '01872 305728'
       email: scitt@truro-penwith.ac.uk
+    - header: Gloucestershire Initial Teacher Education Partnership
+      link: https://gitep.org.uk/
+      name: Becky Rose
+      telephone: '01242 505945'
+      email: admin@gitep.org.uk
     - header: Mid Somerset Consortium for Teacher Training
       link: https://www.mscitt.org.uk/Routes/Assessment-only/
       name: Sarah Lewis
