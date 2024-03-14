@@ -11,11 +11,15 @@ body > header {
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
 
-  .extra-navigation {
-    grid-column: 1/3;
+  // controls placement of menu button
+  @include mq($from: narrow) {
+    .extra-navigation {
+      grid-column: 1/3;
+    }
   }
 
-  @include mq($until: tablet) {
+  // controls layout of menu dropdown items + logo
+  @include mq($from: narrow, $until: tablet) {
     nav {
       grid-column: 1/3;
     }
