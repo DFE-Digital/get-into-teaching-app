@@ -337,7 +337,8 @@ redirects:
   "/urgent-call-for-qualified-teachers": "/returning-to-teaching"
 
   # Blog pages
-  "/blog/5-reasons-to-attend-a-train-to-teach-event": "/blog/5-reasons-to-attend-a-get-into-teaching-event"
+  "/blog/5-reasons-to-attend-a-train-to-teach-event": "/events/about-get-into-teaching-events"
+  "/blog/5-reasons-to-attend-a-get-into-teaching-event": "/events/about-get-into-teaching-events"
   "/blog/teachers-pension-scheme": "/is-teaching-right-for-me/what-pension-does-a-teacher-get"
   "/blog/how-to-fund-your-teacher-training": "/funding-and-support"
   "/blog/11-top-tips-for-interview-success": "/how-to-apply-for-teacher-training/teacher-training-interview"
@@ -347,6 +348,9 @@ redirects:
   "/blog/9-tips-to-help-you-apply-for-teacher-training": "/how-to-apply-for-teacher-training"
   "/blog/choosing-the-right-teacher-training-course-provider": "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
   "/blog/how-to-find-school-experience": "/is-teaching-right-for-me/get-school-experience"
+
+  # Blog tags
+  "/blog/tag/get-into-teaching-events": "/events/about-get-into-teaching-events"
 
   # Covid page
   "/covid-19": "/"
