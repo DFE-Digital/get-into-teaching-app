@@ -5,7 +5,7 @@ $icon-size: 3rem;
   border: 3px solid $yellow;
   padding: 3rem 1rem 1rem;
 
-  &:after {
+  &::after {
     @include font-size(small);
     position: absolute;
     content: "Get Into Teaching event";

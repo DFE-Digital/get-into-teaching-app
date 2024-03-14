@@ -154,7 +154,8 @@ GEM
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
-    brakeman (6.0.1)
+    brakeman (6.1.2)
+      racc
     builder (3.2.4)
     byebug (11.1.3)
     canonical-rails (0.2.14)
@@ -192,10 +193,10 @@ GEM
       rubocop
       smart_properties
     erubi (1.12.0)
-    factory_bot (6.2.0)
+    factory_bot (6.4.6)
       activesupport (>= 5.0.0)
-    factory_bot_rails (6.2.0)
-      factory_bot (~> 6.2.0)
+    factory_bot_rails (6.4.3)
+      factory_bot (~> 6.4)
       railties (>= 5.0.0)
     faraday (1.10.3)
       faraday-em_http (~> 1.0)
@@ -316,7 +317,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     loaf (0.10.0)
       railties (>= 3.2)
-    logger (1.5.3)
+    logger (1.6.0)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -351,10 +352,10 @@ GEM
     net-smtp (0.4.0.1)
       net-protocol
     nio4r (2.7.0)
-    nokogiri (1.14.3)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.16.2)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.14.3-x86_64-linux)
+    nokogiri (1.16.2-x86_64-linux)
       racc (~> 1.4)
     observer (0.1.1)
     os (1.1.4)
@@ -377,10 +378,10 @@ GEM
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.7.3)
-    rack (2.2.8)
+    rack (2.2.8.1)
     rack-attack (6.7.0)
       rack (>= 1.0, < 4)
-    rack-cors (2.0.1)
+    rack-cors (2.0.2)
       rack (>= 2.0.0)
     rack-host-redirect (1.3.0)
       rack
@@ -533,7 +534,7 @@ GEM
     stoplight (3.0.2)
       redlock (~> 1.0)
     text (1.3.1)
-    thor (1.3.0)
+    thor (1.3.1)
     timeliness (0.4.5)
     timeout (0.4.1)
     tomlrb (2.0.3)
@@ -562,7 +563,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.12)
+    zeitwerk (2.6.13)
 
 PLATFORMS
   ruby
@@ -574,7 +575,7 @@ DEPENDENCIES
   amazing_print
   better_html (>= 1.0.16)
   bootsnap (>= 1.16.0)
-  brakeman (~> 6.0.1)
+  brakeman (~> 6.1.2)
   byebug
   canonical-rails (>= 0.2.14)
   capybara (~> 3.39.1)

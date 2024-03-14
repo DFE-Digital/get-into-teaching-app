@@ -57,7 +57,7 @@ ol.photo-quote-list {
     background-color: $grey;
 
     &.blue {
-      &:before {
+      &::before {
         @extend .heading--box-black-on-blue;
       }
 
@@ -67,7 +67,7 @@ ol.photo-quote-list {
     }
 
     &.pink {
-      &:before {
+      &::before {
         @extend .heading--box-pink;
       }
 
@@ -77,7 +77,7 @@ ol.photo-quote-list {
     }
 
     &.green {
-      &:before {
+      &::before {
         @extend .heading--box-black-on-green;
       }
 
@@ -87,7 +87,7 @@ ol.photo-quote-list {
     }
 
     &.yellow {
-      &:before {
+      &::before {
         @extend .heading--box-yellow;
       }
 
@@ -97,7 +97,7 @@ ol.photo-quote-list {
     }
 
     &.purple {
-      &:before {
+      &::before {
         @extend .heading--box-purple;
       }
 
@@ -106,7 +106,7 @@ ol.photo-quote-list {
       }
     }
 
-    &:before {
+    &::before {
       content: counter(quotes) ".";
       position: absolute;
       left: 0;
@@ -138,7 +138,7 @@ ol.photo-quote-list {
   }
 
   &:not(&--numbered) { /* stylelint-disable-line selector-not-notation */
-    .item:before {
+    .item::before {
       display: none;
     }
   }

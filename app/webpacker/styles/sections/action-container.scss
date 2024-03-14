@@ -25,47 +25,47 @@
     margin: 0;
   }
 
-  &.action-container--purple:before,
-  &.action-container--purple:after {
+  &.action-container--purple::before,
+  &.action-container--purple::after {
     background: $purple;
   }
 
-  &.action-container--transparent:before,
-  &.action-container--transparent:after {
+  &.action-container--transparent::before,
+  &.action-container--transparent::after {
     background: transparent;
   }
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     right: -$indent-amount * .5;
     bottom: -$indent-amount * .5;
   }
 
-  &:before {
+  &::before {
     width: $indent-amount * .5;
     height: 100px;
   }
 
-  &:after {
+  &::after {
     height: $indent-amount * .5;
     width: 100px;
   }
 
   @include mq($from: tablet) {
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       right: -$indent-amount;
       bottom: -$indent-amount;
     }
 
-    &:before {
+    &::before {
       width: $indent-amount;
       height: 175px;
     }
 
-    &:after {
+    &::after {
       height: $indent-amount;
       width: 175px;
     }
@@ -80,7 +80,7 @@
   .heading-container {
     position: relative;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       background: $grey;

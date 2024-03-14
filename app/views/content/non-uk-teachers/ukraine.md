@@ -60,7 +60,7 @@ To be eligible for the IRP, you must be coming to England to teach or train to t
 
 You already have the right to train or work as a teacher in England if you're in the UK on (one of the following):
 
-* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
+* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa) – please note this scheme closed to new applications on 19 February 2024
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 * [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
@@ -100,7 +100,7 @@ You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mv
 
 ### Your professional qualifications
 
-UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you'll need scans or photographs of your original documents. If you're applying to train to teach, you can [get your statement of comparability for free](/non-uk-teachers/train-to-teach-in-england-as-an-international-student#check-your-eligibility).
+UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you'll need scans or photographs of your original documents. 
 
 ## Train to teach in England
 
