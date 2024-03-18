@@ -14,6 +14,7 @@ keywords:
   - computing
   - teaching computing
   - teacher training
+  - teach computing
 
 content:
   - "content/is-teaching-right-for-me/computing/header"
