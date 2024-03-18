@@ -32,6 +32,9 @@ body > header nav {
       @include reset;
       line-height: 1.2;
       margin-bottom: 0;
+
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -119,5 +122,23 @@ body > header nav {
         }
       }
     }
+  }
+}
+
+.nav-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 21px;
+  height: 12px;
+  margin-top: 4px;
+
+  &__arrow-down {
+    background-image: url("../images/navigation/arrow-down-pink.svg");
+  }
+
+  &__arrow-up {
+    background-image: url("../images/navigation/arrow-up-pink.svg");
   }
 }

@@ -19,9 +19,14 @@ module Header
 
   private
 
-    def nav_link(link_text, link_path)
-      tag.li class: class_name(link_path) do
-        link_to_unless_current(link_text, link_path, class: "link--black link--no-underline") { tag.div(link_text) }
+    def nav_link(resource)
+      tag.li class: class_name(resource.path) do
+        safe_join( [
+          link_to_unless_current(resource.title, resource.path, class: "link--black link--no-underline") { tag.div(resource.title) },
+          if resource.children?
+            tag.span(class: "nav-icon nav-icon__arrow-#{current_page?(resource.path) ? 'up' : 'down'}", "aria-hidden": true)
+          end
+        ])
       end
     end
 

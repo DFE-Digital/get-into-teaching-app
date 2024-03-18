@@ -54,6 +54,10 @@ module Pages
         navigation.all_pages.select { |page| page.path.start_with?(path) && page.path != path }
       end
 
+      def children?
+        children.any?
+      end
+
       def menu?
         @menu
       end
