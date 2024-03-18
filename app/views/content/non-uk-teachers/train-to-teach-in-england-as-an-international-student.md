@@ -287,4 +287,10 @@ Learn more about:
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
-For help with individual applications to training providers or schools, please [register with a teacher training adviser](/teacher-training-adviser/sign_up/identity). Advisers can give you personalised support with your application.
+You may be eligible for a [teacher training adviser](/teacher-training-advisers). Advisers can give you personalised support with your application to a training provider or school.
+
+To check your eligibility for an adviser, please use the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate.
+
+We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
+
+
