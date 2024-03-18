@@ -208,6 +208,12 @@ You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigratio
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
+You may be eligible for personalised support with your application to a training provider or school from a [teacher training adviser](/teacher-training-advisers).
+
+To check if you're eligible for an adviser, please contact us using the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate.
+
+We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
+
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
 
