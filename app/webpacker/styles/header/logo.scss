@@ -13,6 +13,10 @@
     left: 1px;
   }
 
+  @include mq($from: narrow, $until: tablet)  {
+    left: 0;
+  }
+
   @include mq($from: tablet) {
     overflow: visible;
     top: -26px;
