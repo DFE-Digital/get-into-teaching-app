@@ -4,8 +4,8 @@ description: If you're thinking about teaching in England, an adviser can offer 
 content:
    - content/landing/return-to-teaching-advisers/header
    - content/landing/return-to-teaching-advisers/adviser
-#image: "static/images/content/campus-advisers/adviser.jpeg"
-#colour: "pink"
+image: "static/images/content/campus-advisers/adviser.jpeg"
+colour: "pink"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true
