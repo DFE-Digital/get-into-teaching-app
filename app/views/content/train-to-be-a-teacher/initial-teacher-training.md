@@ -79,7 +79,7 @@ School placements vary in length and structure, but the minimum length is usuall
 Read about [what teacher training is like doing a QTS with PGCE with one training provider](/blog/what-to-expect-on-your-teacher-training).
 
 ## Holidays
-Teacher training aligns with the school year. You get holidays at Christmas and Easter in-line with university holidays. If your placement goes across half terms you'll have the school half term to catch up and perhaps even get ahead with your planning. But dates of the holidays in schools near you may not be the same as the university or your placement schools.
+If you're studying for a PGCE, teacher training aligns with the school year. You get holidays at Christmas and Easter in-line with university holidays. If your placement goes across half terms you'll have the school half term to catch up and perhaps even get ahead with your planning. But dates of the holidays in schools near you may not be the same as the university or your placement schools.
 
 ## How you’ll be assessed 
 
