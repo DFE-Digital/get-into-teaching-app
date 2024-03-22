@@ -1,12 +1,13 @@
 module Header
   class NavigationComponent < ViewComponent::Base
-    attr_reader :resources, :extra_resources
+    attr_reader :resources, :extra_resources, :front_matter
 
-    def initialize(resources: nil, extra_resources: {})
+    def initialize(resources: nil, extra_resources: {}, front_matter: {})
       super
 
       @resources       = resources
       @extra_resources = build_additional_resource_nodes(extra_resources)
+      @front_matter    = front_matter
     end
 
     def before_render
@@ -20,18 +21,31 @@ module Header
   private
 
     def nav_link(resource)
-      tag.li class: class_name(resource.path) do
+      tag.li class: class_name(resource.path), data: { "id": "menu-#{resource.path.parameterize}" } do
         safe_join( [
-          link_to_unless_current(resource.title, resource.path, class: "link--black link--no-underline") { tag.div(resource.title) },
-          if resource.children?
-            tag.span(class: "nav-icon nav-icon__arrow-#{current_page?(resource.path) ? 'up' : 'down'}", "aria-hidden": true)
-          end
-        ])
+                     link_to_unless_current(resource.title, resource.path, class: "link--black link--no-underline") { tag.div(resource.title) },
+                     if resource.children?
+                       tag.span(class: "nav-icon nav-icon__arrow-#{current_page?(resource.path) ? 'up' : 'down'}", "aria-hidden": true)
+                     end
+                   ])
+      end
+    end
+
+    def category_link(subcategory)
+      tag.li class: category_class_name(subcategory), data: { "id": "menu-#{subcategory.parameterize}" } do
+        safe_join( [
+                     link_to_unless(subcategory == front_matter["subcategory"], subcategory, "#", class: "link--black link--no-underline") { tag.div(subcategory) },
+                     tag.span(class: "nav-icon nav-icon__arrow-right", "aria-hidden": true),
+                   ])
       end
     end
 
     def class_name(link_path)
       "active" if uri_is_root?(link_path) || first_uri_segment_matches_link?(link_path)
+    end
+
+    def category_class_name(subcategory)
+      "active" if subcategory == front_matter["subcategory"]
     end
 
     def uri_is_root?(link_path)

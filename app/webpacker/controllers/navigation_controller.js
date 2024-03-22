@@ -1,26 +1,13 @@
 import { Controller } from '@hotwired/stimulus';
 
 export default class extends Controller {
-  static targets = ['primary', 'nav', 'menu'];
+  static targets = ['primary', 'nav', 'menu', 'categories'];
 
   connect() {}
 
-  toggleMenu(event) {
-    event.preventDefault();
-    event.stopPropagation();
-
-    const toggle = event.target.closest('li');
-    const secondary = event.target.closest('li').querySelector('ol.secondary');
-
-    if (secondary.classList.contains(this.menuHiddenClass)) {
-      this.expandMenu(secondary, toggle);
-    } else {
-      this.collapseMenu(secondary, toggle);
-    }
-  }
-
   // toggles the entire nav on tablet/mobile
   toggleNav(event) {
+    // fires when the user clicks on the Menu button
     event.preventDefault();
     event.stopPropagation();
 
@@ -33,6 +20,30 @@ export default class extends Controller {
       this.collapseNav();
       this.menuToggler.ariaExpanded = 'false';
     }
+  }
+
+  toggleMenu(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    console.log('TOGGLE MENU');
+    console.log('DATASET', event.target.closest('li').dataset.id);
+    console.log('OL', event.target.closest('ol').dataset);
+
+    this.showMenu(event.target.closest('li').dataset.id, event.target.closest('ol').dataset.selectors);
+  }
+
+  showMenu(id, selectors) {
+    [].forEach.call(
+      this.categoriesTarget.querySelectorAll(selectors),
+      function (child) {
+        if (child.id === id && child.classList.contains('hidden-menu')) {
+          child.classList.remove('hidden-menu');
+        } else if (child.id !== id && !child.classList.contains('hidden-menu')) {
+          child.classList.add('hidden-menu');
+        }
+      }
+    );
   }
 
   collapseMenu(menu, item) {
