@@ -68,7 +68,11 @@
     img {
       margin-top: 12px;
 
-      @include mq($until: mobile) {
+      @include mq($until: narrow) {
+        max-width: 100%;
+      }
+
+      @include mq($from: narrow, $until: mobile) {
         width: 100%;
       }
     }
