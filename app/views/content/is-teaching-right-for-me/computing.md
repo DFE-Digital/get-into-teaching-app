@@ -6,7 +6,7 @@ backlink: "../../"
 subcategory: What to teach
 navigation: 5.43
 navigation_title: Computing
-navigation_description: Discover why teaching computing is vital in helping children from all backgrounds to learn the digital skills they'll need throughout life.
+navigation_description: Discover how computing is vital, helping children learn digital skills they'll need throughout life.
 layout: "layouts/minimal"
 colour: "yellow"
 image: "static/images/content/hero-images/0036.jpg"
