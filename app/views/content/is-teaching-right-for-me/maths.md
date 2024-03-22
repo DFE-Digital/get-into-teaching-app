@@ -5,7 +5,7 @@ description: |-
 subcategory: What to teach
 navigation: 5.46
 navigation_title: Maths
-navigation_description: Find out how to become a maths teacher and what it's like to help pupils learn to solve equations.
+navigation_description: Find out how to become a maths teacher and show children the importance of maths in everything we do.
 layout: "layouts/minimal"
 colour: "yellow"
 image: "static/images/content/hero-images/0004.jpg"
