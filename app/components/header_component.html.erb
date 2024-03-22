@@ -15,7 +15,7 @@
       <span class="menu-button__icon"></span>
     <% end %>
   </div>
-  <%= render Header::NavigationComponent.new %>
+  <%= render Header::NavigationComponent.new(front_matter: front_matter) %>
 </header>
 
 <% if breadcrumbs %>
