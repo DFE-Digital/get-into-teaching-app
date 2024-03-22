@@ -44,9 +44,9 @@ provider_groups:
       email: aor@educate-group.co.uk
     - header: Essex and Thames SCITT
       link: https://etpscitt.co.uk/
-      name: Eleanor French
+      name: Emma Day and Sarah Sloper
       telephone: '01268 988580'
-      email: eleanor@ete.org.uk
+      email: assessmentonly@ete.org.uk
     - header: Mid Essex Initial Teacher Training
       link: https://midessexteachertraining.com/courses/assessment-only
       name: Steve Fox
