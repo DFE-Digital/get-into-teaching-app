@@ -10,7 +10,6 @@ navigation_description: Find out what your teacher training will be like, what y
 related_content:
     Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    What to expect on your teacher training : "/blog/what-to-expect-on-your-teacher-training"
     Training and support for early career teachers : "/support-for-early-career-teachers"
     How to apply : "/how-to-apply-for-teacher-training"
 promo_content:
