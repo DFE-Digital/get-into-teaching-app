@@ -15,7 +15,7 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      <p>Applications for the international relocation payment (IRP) are now closed. They will reopen between 2 April and 31 May 2024.</p>
+      <p>Applications for the <a href="https://get-a-teacher-relocation-payment.education.gov.uk/closed">international relocation payment (IRP)</a> will reopen between 2 April and 31 May 2024.</p>
 
       <h3>Changes to eligibility and payment</h3>  
       
