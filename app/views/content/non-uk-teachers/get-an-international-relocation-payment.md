@@ -1,5 +1,6 @@
 ---
 title: "Get an international relocation payment"
+subcategory: If you're already a teacher
 description: |-
   Non-UK teachers in physics and languages could be eligible for financial help in the form of an international relocation payment from the UK government.
 related_content:
@@ -8,6 +9,9 @@ related_content:
     Apply for your visa to teach in England: "/non-uk-teachers/visas-for-non-uk-teachers"
     Apply for your visa to train to teach in England: "/non-uk-teachers/visas-for-non-uk-trainees"
 promo_content:
+navigation: 20.50
+navigation_title: Get an international relocation payment
+navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth £10,000.
 date: "2021-05-27"
 image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"
