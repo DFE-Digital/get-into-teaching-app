@@ -85,6 +85,12 @@ $chevron-direction-map: (
     display: none !important;
   }
 }
+
+.hide-on-narrow {
+  @include mq($until: narrow) {
+    display: none !important;
+  }
+}
 /* stylelint-enable */
 
 // Mixins for targetting specific legacy/quirky/inferior browsers
