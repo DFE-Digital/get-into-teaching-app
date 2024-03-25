@@ -23,7 +23,7 @@ inset_text:
 
       <h3>Changes to eligibility and payment</h3>  
       
-      <p>Teacher trainees in languages or physics starting teacher training courses from September 2024 are no longer eligible for the IRP. Trainees in languages or physics are still eligible to apply for a <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries">bursary or scholarship</a> worth up to £30,000.</p>
+      <p>Teacher trainees in languages or physics starting teacher training courses in the 2024 to 2025 academic year are no longer eligible for the IRP. Trainees in languages or physics are still eligible to apply for a <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries">bursary or scholarship</a> worth up to £30,000.</p>
       
       <p>Payments to teachers applying from September 2024 will now be split into two £5,000 payments rather than given as a single £10,000 sum. Teachers will be able to apply for the first payment at the start of their first year of employment and the second payment at the start of their second year.</p>
   
@@ -74,7 +74,13 @@ $applications-open$
   
 If you are considering coming to England to teach languages or physics, you could be eligible for financial help from the UK government worth £10,000.  
 
-The international relocation payment (IRP) is designed to cover some of the costs of moving to England.
+The international relocation payment (IRP) is designed to cover some of the costs of moving to England, including: 
+
+* the costs of visas 
+
+* the immigration health surcharge 
+
+* other relocation expenses 
 
 The IRP is a grant – you will not have to pay this money back. You can only receive the IRP once.
 
