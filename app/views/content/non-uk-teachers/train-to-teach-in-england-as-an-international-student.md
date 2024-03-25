@@ -19,10 +19,6 @@ youtube_video:
   why-train-to-teach:
     id: u0W7UTnGcc0
     title: A video about why you should Train to Teach in England
-inset_text:
-  new-international-funding:
-    text: |-
-      If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth £10,000</a>.
 keywords:
   - International
   - Overseas
@@ -69,7 +65,7 @@ keywords:
   - Comparability
 ---
 
-$new-international-funding$
+
 
 Citizens of every country in the world can apply to train to teach in England. When you plan your training, bear in mind that:
 
