@@ -170,7 +170,42 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 ### 3. Date of arrival
 
-You must move to the UK no more than 3 months before the start of your job.  
+You must move to the UK no more than 3 months before the start of your job.
+
+#### What happens if I spend time in the UK more than 3 months before the start of my job? 
+
+You will not be eligible for the IRP if you have spent more than 90 days in the UK in the 12 months preceding the start of your teaching job, even if you return home before taking up your post (see example 1).  
+
+However, you will remain eligible for the IRP if: 
+
+* you have spent short periods of time living in the UK more than 3 months before the start of your job, where these periods of time do not add up to more than 90 days in total (see example 2) 
+
+* you have spent more than 90 days in the UK at any time before the 12 months preceding the start of your teaching job (see example 3) 
+
+Example 1:  
+
+You arrive in the UK in September 2023 on a Student visa for a course of study at a UK university.  
+You complete your course and return home in July 2024.  
+You return to the UK to take up an eligible teaching job in September 2024.  
+You will not be eligible for the IRP. 
+
+Example 2:  
+
+You travel to attend an interview for an eligible teaching job in the UK under a Standard Visitor visa in May 2024.  
+The visit lasts 2 days and you return home, and learn you have been successful in your application. The role begins in September 2024.  
+You apply for a Skilled Worker visa in June 2024, 3 months before your job begins.  
+You move to the UK in July 2024.  
+You will be eligible for the IRP. 
+
+Example 3:  
+
+You study in the UK on a Student visa for three years from September 2019 to July 2022, before returning home.  
+You apply for an eligible teaching job in England starting in September 2024.  
+You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job.  
+You move to the UK in July 2024.  
+You will be eligible for the IRP. 
+
+If you are in any doubt about meeting the 3-month requirement, please email us for advice before planning your move. 
 
 ### Non-eligibility
 
@@ -180,7 +215,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * an Irish citizen
 
-* a non-UK citizen who moved to England to live permanently more than 3 months before the start of your job
+* a non-UK citizen who moved to England more than 3 months before the start of your job, except in the circumstances outlined in ‘Date of arrival’
 
 * in England on a dependant visa linked to your partner or parent’s visa   
 
@@ -189,6 +224,8 @@ You will not be eligible for the international relocation payment if you are:
 * employed on a contract lasting less than one year
 
 * employed by a recruitment agency – an agency can find and place you in a school, but your contract must be with the school and your salary must be paid directly to you by the school, not by the recruitment agency
+
+* teaching in Scotland, Wales or Northern Ireland 
 
 ## How to apply for the international relocation payment (IRP)
 
@@ -208,29 +245,16 @@ You can express your interest in the IRP by emailing us at IRP.ExpressInterest@e
 
 You will not need to pay an agent or any other third party to complete your application. Any agency or person contacting you offering to apply for the IRP on your behalf is likely to be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
-### Visiting the UK more than 3 months before the start of your job
-
-Your eligibility for the international relocation payment (IRP) will not be affected if you spend short periods in the UK at a time more than 3 months before the start of your job.
-
-Example 1: You travel to attend a job interview in the UK under a Standard Visitor visa in May 2024. You return home, and learn you have been given the job, which starts in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024. You will still be eligible for the IRP.
-
-You will also still be eligible for the IRP if you live in another part of the UK (for example, Scotland or Wales) as long as you are employed in a school in England.  
-
-If you are in any doubt about meeting the 3-month requirement, please email us for advice before planning your move.
 
 ### Using the international relocation payment to support your visa application
 
 You will not be able to use eligibility for the international relocation payment in your visa application as proof that you have enough money to support yourself.
 
-### Subject eligibility  
-
-The international relocation payment (IRP) has been limited to languages and physics because non-UK teachers play an important part in teaching these priority subjects. The Department for Education is piloting the IRP to encourage more non-UK teachers in these subjects to bring their skills, experience and potential to English schools.
-
 ### Payment
 
 The international relocation payment (IRP) cannot be paid to you in advance, before you take up your teaching job. This is because eligibility requirement checks can only be completed after you’ve arrived in England. 
 
-In order to be paid the IRP, you must have a UK bank account in your name (this can be digital). The IRP cannot be paid into a building society account (building societies are financial institutions owned by members that offer banking services). 
+In order to be paid the IRP, you must have a UK bank account in your name (this can be digital). The IRP cannot be paid into a building society account. 
 
 You must also have a [UK National Insurance number](https://www.gov.uk/apply-national-insurance-number). You can apply for this once you arrive in England, as long as your visa gives you the right to work and you have a confirmed job.  
 
@@ -240,9 +264,7 @@ You will not have to justify any expenses or give us receipts or any other evide
 
 If your details, such as your address, change after you have applied, please inform us as soon as possible to avoid any delay to your payment. 
 
-The Department for Education reserves the right to withhold payment if you are no longer employed in an eligible job on the payment date.
-
-If you were eligible for and have received the international relocation payment, you will not be asked to pay it back, even if you leave England or your job as a teacher.
+The Department for Education reserves the right to withhold payment if you no longer meet eligibility requirements or we discover an error.  
 
 ### Tax
 
