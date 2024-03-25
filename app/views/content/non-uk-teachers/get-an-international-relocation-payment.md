@@ -15,15 +15,14 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      <p>Applications for the <a href="https://get-a-teacher-relocation-payment.education.gov.uk/closed">international relocation payment (IRP)</a> will reopen between 2 April and 31 May 2024.</p>
+      <p>Applications for the <a href="https://get-a-teacher-relocation-payment.education.gov.uk/closed">international relocation payment (IRP)</a> are open between 2 April and 31 May 2024.</p>
 
       <h3>Changes to eligibility and payment</h3>  
       
       <p>Teacher trainees in languages or physics starting teacher training courses from September 2024 are no longer eligible for the IRP. Trainees in languages or physics are still eligible to apply for a <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries">bursary or scholarship</a> worth up to £30,000.</p>
       
       <p>Payments to teachers applying from September 2024 will now be split into two £5,000 payments rather than given as a single £10,000 sum. Teachers will be able to apply for the first payment at the start of their first year of employment and the second payment at the start of their second year.</p>
-
-      <p>We’ll publish further details about how these split payments will be made to teachers on this page in due course.</p>  
+  
 
 keywords:
   - International
@@ -68,12 +67,6 @@ keywords:
   - Settlement Scheme
 ---
 $applications-open$
-
-
-
-The information on this page is for:
-
-* [non-UK teachers of languages, physics and general or combined science when it includes physics](#criteria-for-teachers)
   
 If you are considering coming to England to teach languages or physics, you could be eligible for financial help from the UK government worth £10,000.  
 
@@ -86,6 +79,8 @@ The IRP is a grant – you will not have to pay this money back. You can only re
 ## Criteria  
 
 To be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
+
+If your teaching job starts after 1 September 2024, please keep checking this page for updates to the eligibility criteria, which we’ll publish in due course.  
 
 ### 1. Teaching subject
 
@@ -176,27 +171,22 @@ However, you will remain eligible for the IRP if:
 
 * you have spent more than 90 days in the UK at any time before the 12 months preceding the start of your teaching job (see example 3) 
 
-Example 1:  
+#### Example 1:  
 
-You arrive in the UK in September 2023 on a Student visa for a course of study at a UK university.  
-You complete your course and return home in July 2024.  
-You return to the UK to take up an eligible teaching job in September 2024.  
+You arrive in the UK in September 2023 on a Student visa for a course of study at a UK university. You complete your course and return home in July 2024. You return to the UK to take up an eligible teaching job in September 2024. 
+
 You will not be eligible for the IRP. 
 
-Example 2:  
+#### Example 2:  
 
-You travel to attend an interview for an eligible teaching job in the UK under a Standard Visitor visa in May 2024.  
-The visit lasts 2 days and you return home, and learn you have been successful in your application. The role begins in September 2024.  
-You apply for a Skilled Worker visa in June 2024, 3 months before your job begins.  
-You move to the UK in July 2024.  
+You travel to attend an interview for an eligible teaching job in the UK under a Standard Visitor visa in May 2024. The visit lasts 2 days and you return home, and learn you have been successful in your application. The role begins in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before your job begins. You move to the UK in July 2024.  
+
 You will be eligible for the IRP. 
 
-Example 3:  
+#### Example 3:  
 
-You study in the UK on a Student visa for three years from September 2019 to July 2022, before returning home.  
-You apply for an eligible teaching job in England starting in September 2024.  
-You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job.  
-You move to the UK in July 2024.  
+You study in the UK on a Student visa for three years from September 2019 to July 2022, before returning home. You apply for an eligible teaching job in England starting in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024.  
+
 You will be eligible for the IRP. 
 
 If you are in any doubt about meeting the 3-month requirement, please email us for advice before planning your move. 
@@ -223,13 +213,13 @@ You will not be eligible for the international relocation payment if you are:
 
 ## How to apply for the international relocation payment (IRP)
 
-Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk) for teachers are now closed. They will reopen between 2 April and 31 May 2024. 
+Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk) are open between 2 April and 31 May 2024. 
 
 You will need a teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas). To remain eligible for the IRP, you must apply in either the first or second term of your employment as a teacher.
 
-Eligible applicants who start a job and apply for IRP before September 2024 will receive a single payment of £10,000  around the end of their first term  working in England.  
+Eligible applicants who start a job and apply for the IRP before 1 September 2024 will receive a single payment of £10,000  around the end of their first term  working in England.  
 
-Eligible applicants who start a job after 1 September 2024 will receive two £5,000 payments. Teachers will be able to apply for the first payment at the start of their first year teaching in England and the second payment at the start of their second year. We’ll publish further details about how these split payments will be made to teachers on this page in due course. 
+Eligible applicants who start a job and apply for the IRP after 1 September 2024 will receive two £5,000 payments. Teachers will be able to apply for the first payment at the start of their first year teaching in England and the second payment at the start of their second year. We’ll publish further details about how these split payments will be made to teachers on this page in due course. 
 
 You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications reopen later in 2024.
 
