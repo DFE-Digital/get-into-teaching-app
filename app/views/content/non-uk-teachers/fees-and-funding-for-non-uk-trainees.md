@@ -111,23 +111,12 @@ You will also need a [visa or immigration status](/non-uk-teachers/visas-for-non
 
 ## Financial support for non-UK trainee languages and physics teachers
 
-There are 3 types of financial support you can get if you’re interested in training to teach languages or physics:
+There are 2 types of financial support you can get if you’re interested in training to teach languages or physics:
 
-* an international relocation payment worth £10,000 for French, German, Spanish and physics
 * bursaries worth up to £28,000 for languages and physics
 * scholarships worth up to £30,000 for French, German, Spanish and physics
 
-If you're eligible, you can receive both an international relocation payment and a bursary or scholarship. You cannot receive both a bursary and a scholarship.
-
-## Get an international relocation payment (IRP) worth £10,000
-
-The IRP is designed to repay some of the relocation expenses of French, German, Spanish or physics teacher trainees moving to England. 
-
-If you're eligible, you’ll receive a single payment of £10,000 from the Department for Education (DfE) around the end of your first term training in England. You will not have to pay this money back. You can only receive the IRP once.
-
-Please note that you will not be able to use eligibility for the international relocation payment in your [visa application](/non-uk-teachers/visas-for-non-uk-trainees) as proof that you have enough money to support yourself. 
-
-[Check your eligibility for the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
+You cannot receive both a bursary and a scholarship.
 
 ## Bursaries and scholarships for physics and languages
 
