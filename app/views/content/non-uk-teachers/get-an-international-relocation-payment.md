@@ -77,13 +77,7 @@ The information on this page is for:
   
 If you are considering coming to England to teach languages or physics, you could be eligible for financial help from the UK government worth £10,000.  
 
-The international relocation payment (IRP) is designed to cover some of the costs of moving to England, including:
-
-* the costs of visas
-
-* the immigration health surcharge
-
-* other relocation expenses
+The international relocation payment (IRP) is designed to cover some of the costs of moving to England.
 
 The IRP is a grant – you will not have to pay this money back. You can only receive the IRP once.
 
