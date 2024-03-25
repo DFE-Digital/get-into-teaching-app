@@ -22,6 +22,11 @@ promo_content:
 navigation: 5.50
 navigation_title: How do I get experience in a school?
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
+quote:
+  q-jacub-pask:
+    text: "I volunteered at a local primary school for 2 days a week and from the moment I walked into my first class, it felt very natural to be interacting with children."
+    name: "Zainab"
+    classes: quote--indent
 ---
 
 You can visit schools to get unpaid experience in the classroom before you start your initial teacher training (ITT).
@@ -43,6 +48,10 @@ During your experience, you’ll get to do things like:
 - find out how specific subjects are taught
 - speak to teachers and meet pupils
 - learn more about teacher training - including the application and interview process
+
+<br />
+$q-zainab$
+<br />
 
 ## Find school experience
 
