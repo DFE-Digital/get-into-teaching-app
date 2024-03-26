@@ -10,7 +10,6 @@ navigation_description: Find out what your teacher training will be like, what y
 related_content:
     Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    What to expect on your teacher training : "/blog/what-to-expect-on-your-teacher-training"
     Training and support for early career teachers : "/support-for-early-career-teachers"
     How to apply : "/how-to-apply-for-teacher-training"
 promo_content:
@@ -76,8 +75,6 @@ Full-time teacher training usually takes 9 months, in line with the academic yea
 Some courses begin with time spent in a university or school where you start your theoretical learning. Your course pattern will be different depending on your training provider.
 
 School placements vary in length and structure, but the minimum length is usually around 6 weeks. You should check with your training provider what their course and placement patterns are.
-
-Read about [what teacher training is like doing a QTS with PGCE with one training provider](/blog/what-to-expect-on-your-teacher-training).
 
 ## How you’ll be assessed 
 
