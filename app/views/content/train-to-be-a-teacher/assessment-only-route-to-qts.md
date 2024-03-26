@@ -277,9 +277,9 @@ provider_groups:
       telephone: 01227 925555
       email: pgadmissions@canterbury.ac.uk
     - header: Chepping View Primary Academy SCITT
-      name: Katherine Harrison
+      name: Hayley Rouse
       telephone: 01494 535564, option 3
-      email: kharrison@cvpa.school
+      email: scitt@cvpa.school
     - header: George Abbot SCITT
       link: https://georgeabbottraining.co.uk/courses/
       name: Joanna Jones
