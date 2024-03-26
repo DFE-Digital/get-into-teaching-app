@@ -2,7 +2,7 @@
 title: "Fees and financial support for non-UK trainee teachers"
 subcategory: If you want to train to teach
 description: |-
-  Learn more about bursaries and scholarships for non-UK students.
+  Learn more about bursaries and scholarships for non-UK teacher trainees.
 related_content:
     Career progression stories: "/blog/tag/career-progression"
     Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
@@ -109,7 +109,7 @@ You will also need a [visa or immigration status](/non-uk-teachers/visas-for-non
 
 [Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses). 
 
-## Financial support for non-UK trainee languages and physics teachers
+## Bursaries and scholarships for non-UK trainee languages and physics teachers
 
 There are 2 types of financial support you can get if you’re interested in training to teach languages or physics:
 
@@ -117,8 +117,6 @@ There are 2 types of financial support you can get if you’re interested in tra
 * scholarships worth up to £30,000 for French, German, Spanish and physics
 
 You cannot receive both a bursary and a scholarship.
-
-## Bursaries and scholarships for physics and languages
 
 Bursaries and scholarships are tax-free payments from the UK government that you do not have to pay back. They are paid to you by your teacher training provider. 
 

@@ -14,10 +14,6 @@ navigation_description: Find out how you can bring your skills and perspective t
 date: "2021-05-27"
 image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"
-youtube_video:
-  why-train-to-teach:
-    id: u0W7UTnGcc0
-    title: A video about why you should Train to Teach in England
 inset_text:
   new-international-funding:
     text: |-
@@ -188,10 +184,6 @@ You'll also be able to develop your career through the [national professional qu
 You may be eligible for the [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) or the [early career payment](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools). 
 
 You can only receive the [international relocation payment (IRP)](#get-an-international-relocation-payment-irp-worth-10000) once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
-
-$why-train-to-teach$
-
-[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript).
 
 ## Plan your move to England
 

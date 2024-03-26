@@ -15,10 +15,6 @@ navigation_description: Find out how to train to teach in England as a non-UK ci
 date: "2021-05-27"
 image: "static/images/content/hero-images/0003.jpg"
 backlink: "../../"
-youtube_video:
-  why-train-to-teach:
-    id: u0W7UTnGcc0
-    title: A video about why you should Train to Teach in England
 keywords:
   - International
   - Overseas
@@ -255,16 +251,6 @@ You may need to apply for a different visa to work in England as a qualified tea
 ## Learn more about life as a teacher and the English education system
 
 Meet other non-UK teachers and trainees and find information about English schools and teaching methods. 
-
-### Why train to teach in England?
-
-Watch our video interviews with non-UK citizens who've successfully relocated to train and teach in England.
-
-$why-train-to-teach$
-
-[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript).
-
-
 
 ### Understand English education
 
