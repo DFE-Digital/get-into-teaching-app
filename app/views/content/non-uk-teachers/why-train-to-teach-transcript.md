@@ -59,6 +59,6 @@ The value of gaining a transferable qualification through training to teach in E
 
 ### Help for non-UK trainees 
 
-If you are interested in training to teach languages or physics, you could be eligible for a bursary or scholarship worth up to £30,000. 
+If you're interested in training to teach languages or physics, you could be eligible for a bursary or scholarship worth up to £30,000. 
 
 To learn more you can [read our guidance for non-UK trainees](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
