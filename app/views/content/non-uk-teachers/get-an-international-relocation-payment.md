@@ -19,11 +19,11 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      <p>Applications for the <a href="https://get-a-teacher-relocation-payment.education.gov.uk/closed">international relocation payment (IRP)</a> are open between 2 April and 31 May 2024.</p>
+      <p>Applications for the <a href="https://get-a-teacher-relocation-payment.education.gov.uk/closed">international relocation payment (IRP)</a> are open for teachers between 2 April and 31 May 2024.</p>
 
       <h3>Changes to eligibility and payment</h3>  
       
-      <p>Trainees in languages or physics starting teacher training courses in the 2024 to 2025 academic year are no longer eligible for the IRP, even if their course starts before September 2024. Trainees in languages or physics are still eligible to <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries">apply for a scholarship or get a bursary</a> worth up to £30,000.</p>
+      <p>Trainees in languages or physics starting teacher training courses in the 2024 to 2025 academic year are no longer eligible for the IRP, even if their course starts before September 2024. Trainees in languages or physics are still eligible to <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to £30,000.</p>
       
       <p>Payments to teachers applying from September 2024 will now be split into two £5,000 payments rather than given as a single £10,000 sum. Teachers can apply for the first payment at the start of their first year of employment and the second payment at the start of their second year.</p>
   
@@ -72,7 +72,7 @@ keywords:
 ---
 $applications-open$
   
-If you are considering coming to England to teach languages or physics, you could be eligible for financial help from the UK government worth £10,000.  
+If you are a teacher considering coming to England to teach languages or physics, you could be eligible for financial help from the UK government worth £10,000.  
 
 The international relocation payment (IRP) is designed to cover some of the costs of moving to England, including: 
 
@@ -86,13 +86,13 @@ The IRP is a grant – you will not have to pay this money back. You can only re
 
 [Learn more about teaching in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
-## Criteria  
+## Criteria for teachers  
 
 To be eligible for the international relocation payment (IRP), you must meet all 3 of the following requirements.
 
 If your teaching job starts after 1 September 2024, please keep checking this page for updates to the eligibility criteria, which we’ll publish in due course.  
 
-### 1. Teaching subject
+### 1. Teaching subject for teachers
 
 You must be employed by and in an English state secondary school on a contract beginning in one of the following academic years:
 
@@ -137,7 +137,7 @@ Ongoing or permanent contracts lasting longer than 1 year are also eligible.
 
 [Check the type and age range of the school](https://www.get-information-schools.service.gov.uk/) where you’ll be teaching. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school).
 
-### 2. Type of visa
+### 2. Type of visa for teachers
 
 You must come to England on one of the visas listed here. Most teachers will need a Skilled Worker visa. 
 
@@ -167,7 +167,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 
-### 3. Date of arrival
+### 3. Date of arrival for teachers
 
 You must move to the UK no more than 3 months before the start of your job.
 
@@ -225,19 +225,19 @@ You will not be eligible for the international relocation payment if you are:
 
 Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk) are open between 2 April and 31 May 2024. 
 
-You will need a teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas). To remain eligible for the IRP, you must apply in either the first or second term of your employment as a teacher.
+You'll need a teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas). To remain eligible for the IRP, you must apply in either the first or second term of your employment as a teacher.
 
 Eligible applicants who start a job and apply for the IRP before 1 September 2024 will receive a single payment of £10,000  around the end of their first term  working in England.  
 
 Eligible applicants who start a job and apply for the IRP after 1 September 2024 will receive two £5,000 payments. Teachers will be able to apply for the first payment at the start of their first year teaching in England and the second payment, if they remain eligible, at the start of their second year. We’ll publish further details about how these split payments will be made to teachers on this page in due course. 
 
-You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications reopen later in 2024.
+You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We'll email you when applications reopen later in 2024.
 
 ## General information about the international relocation payment  
 
 ### Protect yourself from fraud
 
-You will not need to pay an agent or any other third party to complete your application. Any agency or person contacting you offering to apply for the IRP on your behalf is likely to be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
+You do not need to pay an agent or any other third party to complete your application. Any agency or person contacting you offering to apply for the IRP on your behalf is likely to be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
 
 ### Using the international relocation payment to support your visa application
