@@ -82,7 +82,7 @@ You’ll be able to apply for your visa if you:
 
 ### How a bursary or scholarship can help with your student visa application
 
-If you are training to teach physics or languages, you may be eligible for a [bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees#financial-support-for-non-uk-trainee-languages-and-physics-teachers). Bursaries and scholarships are tax-free payments from the UK government which you do not have to pay back. You can use them in your student visa application as proof that you have enough money to support yourself. 
+If you are training to teach physics or languages, you may be eligible for a [bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees#bursaries-and-scholarships-for-non-uk-trainee-languages-and-physics-teachers). Bursaries and scholarships are tax-free payments from the UK government which you do not have to pay back. You can use them in your student visa application as proof that you have enough money to support yourself. 
 
 Your training provider should confirm that you will receive a bursary or scholarship when they offer you a training place and send you your confirmation of acceptance for studies (CAS) reference number. They should also give you documentary proof of your bursary or scholarship, which you may be asked to include in your visa application.
 
