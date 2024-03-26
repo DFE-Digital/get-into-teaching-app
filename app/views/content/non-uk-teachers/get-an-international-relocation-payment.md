@@ -23,7 +23,7 @@ inset_text:
 
       <h3>Changes to eligibility and payment</h3>  
       
-      <p>Trainees in languages or physics starting teacher training courses in the 2024 to 2025 academic year are no longer eligible for the IRP, even if their course starts before September 2024. Trainees in languages or physics are still eligible to apply for a <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries">bursary or scholarship</a> worth up to £30,000.</p>
+      <p>Trainees in languages or physics starting teacher training courses in the 2024 to 2025 academic year are no longer eligible for the IRP, even if their course starts before September 2024. Trainees in languages or physics are still eligible to <a href="https://getintoteaching.education.gov.uk/funding-and-support/scholarships-and-bursaries">apply for a scholarship or get a bursary</a> worth up to £30,000.</p>
       
       <p>Payments to teachers applying from September 2024 will now be split into two £5,000 payments rather than given as a single £10,000 sum. Teachers will be able to apply for the first payment at the start of their first year of employment and the second payment at the start of their second year.</p>
   
@@ -96,9 +96,9 @@ If your teaching job starts after 1 September 2024, please keep checking this pa
 
 You must be employed by and in an English state secondary school on a contract beginning in one of the following academic years:
 
-* the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024) 
+* the 2023 to 2024 academic year (which usually runs from 1 September 2023 to 31 August 2024) 
 
-* the 2024 to 2025 academic year (which runs from 1 September 2024 to 31 August 2025) 
+* the 2024 to 2025 academic year (which usually runs from 1 September 2024 to 31 August 2025) 
 
 Your contract must last at least one year and you must be working as: 
 
@@ -177,7 +177,7 @@ You will not be eligible for the IRP if you have spent more than 90 days in the 
 
 However, you will remain eligible for the IRP if: 
 
-* you have spent short periods of time living in the UK more than 3 months before the start of your job, where these periods of time do not add up to more than 90 days in total (see example 2) 
+* you have spent short periods of time staying in the UK more than 3 months before the start of your job, where these periods of time do not add up to more than 90 days in total (see example 2) 
 
 * you have spent more than 90 days in the UK at any time before the 12 months preceding the start of your teaching job (see example 3) 
 
@@ -229,7 +229,7 @@ You will need a teaching job to apply for the IRP. [Learn more about finding a j
 
 Eligible applicants who start a job and apply for the IRP before 1 September 2024 will receive a single payment of £10,000  around the end of their first term  working in England.  
 
-Eligible applicants who start a job and apply for the IRP after 1 September 2024 will receive two £5,000 payments. Teachers will be able to apply for the first payment at the start of their first year teaching in England and the second payment at the start of their second year. We’ll publish further details about how these split payments will be made to teachers on this page in due course. 
+Eligible applicants who start a job and apply for the IRP after 1 September 2024 will receive two £5,000 payments. Teachers will be able to apply for the first payment at the start of their first year teaching in England and the second payment, if they remain eligible, at the start of their second year. We’ll publish further details about how these split payments will be made to teachers on this page in due course. 
 
 You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We will email you when applications reopen later in 2024.
 
@@ -275,7 +275,7 @@ Teachers who meet the eligibility requirements can also apply for the following 
 * [the levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers)  
 * [early career payments](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools)  
 
-However, you should be aware that you can only receive the IRP once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
+However, you should be aware that you can only be eligible for the IRP once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
 
 This means that teachers in their first year of employment in England could receive either the IRP and the levelling up premium payment, or the IRP and the early career payment.
 
