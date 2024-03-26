@@ -23,7 +23,7 @@ inset_text:
 
       <h3>Changes to eligibility and payment</h3>  
       
-      <p>Trainees in languages or physics starting teacher training courses in the 2024 to 2025 academic year are no longer eligible for the IRP, even if their course starts before September 2024. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to £30,000.</p>
+      <p>Teacher trainees in languages or physics who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees starting courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to £30,000.</p>
       
       <p>Payments to teachers applying from September 2024 will now be split into two £5,000 payments rather than given as a single £10,000 sum. Teachers can apply for the first payment at the start of their first year of employment and the second payment at the start of their second year.</p>
   
@@ -240,9 +240,9 @@ You can express your interest in the IRP by emailing us at IRP.ExpressInterest@e
 You do not need to pay an agent or any other third party to complete your application. Any agency or person contacting you offering to apply for the IRP on your behalf is likely to be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
 
-### Using the international relocation payment to support your visa application
+### Using the international relocation payment (IRP) to support your visa application
 
-You will not be able to use eligibility for the international relocation payment in your visa application as proof that you have enough money to support yourself.
+You will not be able to use eligibility for the IRP in your visa application as proof that you have enough money to support yourself.
 
 ### Payment
 
@@ -285,4 +285,4 @@ For general enquiries about the IRP, please email us at teach.inengland@educatio
 
 Please do not send us your CV or enquiries about training places or teaching jobs, as the Department for Education does not directly run training courses or employ teachers.
 
-[Find out more about training to teach or working as a teacher in England](/non-uk-teachers).
+[Find out more about working as a teacher in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
