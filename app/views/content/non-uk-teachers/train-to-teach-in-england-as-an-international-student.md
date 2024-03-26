@@ -171,7 +171,7 @@ If you have a [teacher training adviser](/help-and-support), they can help you w
 
 * your choice of course and training provider
 * your choice of subject
-* ways to research the [English education system](#understand-English-education)
+* ways to research the [English education system](#understand-english-education)
 * preparing for your interview
 
 
