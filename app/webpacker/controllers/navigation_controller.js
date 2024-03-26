@@ -23,14 +23,17 @@ export default class extends Controller {
   }
 
   toggleMenu(event) {
-    event.preventDefault();
-    event.stopPropagation();
+    if (!event.target.closest('li').dataset.direct) {
+      event.preventDefault();
+      event.stopPropagation();
 
-    console.log('TOGGLE MENU');
-    console.log('DATASET', event.target.closest('li').dataset.id);
-    console.log('OL', event.target.closest('ol').dataset);
+      // console.log('TOGGLE MENU');
+      // console.log('DATASET', event.target.closest('li').dataset.id);
+      // console.log('OL', event.target.closest('ol').dataset);
+      // console.log('DIRECT', event.target.closest('li').dataset.direct);
 
-    this.showMenu(event.target.closest('li').dataset.id, event.target.closest('ol').dataset.selectors);
+      this.showMenu(event.target.closest('li').dataset.id, event.target.closest('ol').dataset.selectors);
+    }
   }
 
   showMenu(id, selectors) {

@@ -6,21 +6,30 @@
   <% end %>
 <% end %>
 
-<div id="category-navigation" data-navigation-target="categories">
-  <% all_resources.each do |root_resource| %>
-    <%= tag.ol class: "category-navigation hidden-menu", id: "menu-#{root_resource.path.parameterize}", data: {action: "click->navigation#toggleMenu", "selectors": "ol.page-navigation"} do %>
-      <% root_resource.subcategories.each do |category| %>
-       <%= category_link(category) %>
+<div class="dropdown-menu-container" data-navigation-target="categories">
+  <div class="category-links">
+    <% all_resources.each do |resource| %>
+      <%= tag.ol class: "category-navigation hidden-menu", id: "menu-#{resource.path.parameterize}", data: {action: "click->navigation#toggleMenu", "selectors": "ol.page-navigation"} do %>
+        <% resource.subcategories.each do |category| %>
+          <%= category_link(category, resource) %>
+        <% end %>
+        <%= view_all_in_resource_link(resource) %>
       <% end %>
     <% end %>
+  </div>
 
-
-    <% root_resource.subcategories.each do |category| %>
-      <%= tag.ol class: "page-navigation hidden-menu", id: "menu-#{category.parameterize}" do %>
-        <% root_resource.children_in_subcategory(category).each do |child_resource| %>
-          <%= nav_link(child_resource) %>
+  <div class="page-links">
+    <% all_resources.each do |resource| %>
+      <% resource.subcategories.each do |category| %>
+        <%= tag.ol class: "page-navigation hidden-menu", id: "menu-#{category.parameterize}" do %>
+          <% resource.children_in_subcategory(category).each do |child_resource| %>
+            <%= nav_link(child_resource) %>
+          <% end %>
         <% end %>
       <% end %>
     <% end %>
-  <% end %>
+  </div>
+
+  <div class="key-links">
+  </div>
 </div>

@@ -151,7 +151,7 @@ body > header nav {
   }
 }
 
-#category-navigation {
+.dropdown-menu-container {
 
   .hidden-menu {
     display: none !important;
@@ -213,20 +213,4 @@ body > header nav {
       }
     }
   }
-
-
-
-
-
-  //.category-navigation-list-item {
-  //
-  //  a {
-  //    &:hover,
-  //    &:focus {
-  //      border-bottom: 4px solid $black;
-  //    }
-  //  }
-  //
-  //}
-
 }

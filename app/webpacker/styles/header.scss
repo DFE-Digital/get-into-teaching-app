@@ -10,22 +10,27 @@ body > header {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
+  //background: green;
 
   @include mq($from: tablet) {
     border-bottom: 1px solid $grey;
+    //background: red;
   }
 
   // tablet
   @include mq($from: tablet, $until: desktop) {
     grid-template-columns: max-content 1fr;
+    //background: blue;
 
     nav {
       grid-column: 1/3;
+      //background: orange;
     }
   }
 
   @include mq($from: tablet) {
     grid-template-columns: max-content 2fr;
+    //background: orange;
 
     .extra-navigation {
       grid-column: 1/3;
@@ -34,8 +39,39 @@ body > header {
 
   // desktop
   @include mq($from: desktop, $until: wide) {
+    //background: purple;
     nav {
       grid-column: 1/3;
+      //background: pink;
     }
   }
+}
+
+.dropdown-menu-container {
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  display: grid;
+  grid-template-columns: [left] 100px [category-links-start] 1fr [page-links-start] 1fr [hot-links-start] 1fr [content-end] 100px [right];
+  grid-template-rows: [main-start] 1fr [main-end];
+  background: #eee;
+}
+
+.category-links {
+  grid-column-start: category-links-start;
+  grid-column-end: page-links-start;
+  border: dotted lightgrey 1px;
+}
+
+.page-links {
+  grid-column-start: page-links-start;
+  grid-column-end: hot-links-start;
+  border: dotted lightgrey 1px;
+  border-left: solid 1px darkgrey;
+}
+
+.key-links {
+  grid-column-start: hot-links-start;
+  grid-column-end: content-end;
+  border: dotted lightgrey 1px;
 }
