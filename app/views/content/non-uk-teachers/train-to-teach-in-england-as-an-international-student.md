@@ -248,11 +248,7 @@ You may need to apply for a different visa to work in England as a qualified tea
 
 <a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#job">Learn more about your first teaching job in England</a>.
 
-## Learn more about life as a teacher and the English education system
-
-Meet other non-UK teachers and trainees and find information about English schools and teaching methods. 
-
-### Understand English education
+## Understand English education
 
 Learn more about:
 
