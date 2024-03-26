@@ -38,7 +38,7 @@ provider_groups:
       telephone: 01206 364728
       email: enquiries@colchesterttc.org.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/initial-teacher-training/
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
@@ -92,7 +92,7 @@ provider_groups:
       telephone: '07919 568841'
       email: jwoolley@cfbt.com
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/initial-teacher-training/
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
@@ -214,7 +214,7 @@ provider_groups:
     - header: Durham University
       email: ed.ite@durham.ac.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/initial-teacher-training/
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
@@ -240,7 +240,7 @@ provider_groups:
       name: Hilary Langmead-Jones
       email: admin@scitt.bright-futures.co.uk 
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/initial-teacher-training/
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
@@ -399,6 +399,11 @@ provider_groups:
       name: Emily Giubertoni
       telephone: 07714 672398
       email: e.giubertoni@bishopchalloner.bham.sch.uk
+    - header: Educate Group Initial Teacher Training
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
+      name: Educate Group HQ
+      telephone: 01978 281881
+      email: aor@educate-group.co.uk
     - header: Haybridge Alliance SCITT
       link: https://www.teachwithhaybridge.co.uk
       email: tforward@haybridge.worcs.sch.uk
@@ -452,7 +457,7 @@ provider_groups:
   Yorkshire and the Humber:
     providers:
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/initial-teacher-training/
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
