@@ -62,8 +62,8 @@ module Pages
         children.map(&:subcategory).compact.uniq
       end
 
-      def children?
-        children.any?
+      def subcategories?
+        subcategories.any?
       end
 
       def menu?

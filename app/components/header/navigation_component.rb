@@ -21,43 +21,56 @@ module Header
   private
 
     def nav_link(resource)
-      tag.li class: class_name(resource.path), data: { "id": "menu-#{resource.path.parameterize}" } do
+      title = resource.title
+      path = resource.path
+      id = "menu-#{path.parameterize}"
+      li_css = "active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)
+      link_css = "link--black link--no-underline"
+      show_dropdown = resource.subcategories?
+
+      tag.li class: li_css, data: { "id": id, "direct-link": !show_dropdown } do
         safe_join( [
-                     link_to_unless_current(resource.title, resource.path, class: "link--black link--no-underline") { tag.div(resource.title) },
-                     if resource.children?
-                       tag.span(class: "nav-icon nav-icon__arrow-#{current_page?(resource.path) ? 'up' : 'down'}", "aria-hidden": true)
+                     link_to_unless_current(title, path, class: link_css) { tag.div(title) },
+                     if show_dropdown
+                       down_arrow_icon
                      end
                    ])
       end
     end
 
     def category_link(subcategory, resource)
-      tag.li class: category_class_name(subcategory), data: { "id": "menu-#{subcategory.parameterize}" } do
+      title = subcategory
+      path = "#{resource.path}##{subcategory}"
+      id = "menu-#{subcategory.parameterize}"
+      active = subcategory == front_matter["subcategory"]
+      li_css = "active" if active
+      link_css = "link--black link--no-underline"
+
+      tag.li class: li_css, data: { "id": id } do
         safe_join( [
-                     link_to_unless(subcategory == front_matter["subcategory"], subcategory, "#{resource.path}##{subcategory}", class: "link--black link--no-underline") { tag.div(subcategory) },
-                     tag.span(class: "nav-icon nav-icon__arrow-right", "aria-hidden": true),
+                     link_to_unless(active, title, path, class: link_css) { tag.div(title) },
+                     right_arrow_icon,
                    ])
       end
     end
 
-    def view_all_in_resource_link(resource)
-      "View all in #{resource.title}".then do |title|
-        tag.li class: view_all_in_class_name(resource.path), data: { direct: true } do
-          link_to_unless_current(title, resource.path, class: "link--black") { tag.div(title) }
-        end
+    def view_all_link(resource)
+      title = "View all in #{resource.title}"
+      path = resource.path
+      li_css = "active" if uri_is_root?(path)
+      link_css = "link--black"
+
+      tag.li class: li_css, data: { "direct-link": true } do
+        link_to_unless_current(title, path, class: link_css) { tag.div(title) }
       end
     end
 
-    def class_name(link_path)
-      "active" if uri_is_root?(link_path) || first_uri_segment_matches_link?(link_path)
+    def down_arrow_icon
+      tag.span(class: "nav-icon nav-icon__arrow-down", "aria-hidden": true)
     end
 
-    def category_class_name(subcategory)
-      "active" if subcategory == front_matter["subcategory"]
-    end
-
-    def view_all_in_class_name(link_path)
-      "active" if uri_is_root?(link_path)
+    def right_arrow_icon
+      tag.span(class: "nav-icon nav-icon__arrow-right", "aria-hidden": true)
     end
 
     def uri_is_root?(link_path)

@@ -1,4 +1,4 @@
-<%= tag.nav id: "primary-navigation", class: "hidden-mobile", data: { "navigation-target": "nav", action: "click->navigation#toggleMenu" }, "aria-label": "Primary navigation", role: "navigation" do %>
+<%= tag.nav id: "primary-navigation", class: "hidden-mobile", data: { "navigation-target": "nav", action: "click->navigation#toggleNavMenu" }, "aria-label": "Primary navigation", role: "navigation" do %>
   <%= tag.ol class: "primary", data: { "navigation-target": "primary", "selectors": "ol.category-navigation, ol.page-navigation" } do %>
     <% all_resources.each do |resource| %>
       <%= nav_link(resource) %>
@@ -6,14 +6,14 @@
   <% end %>
 <% end %>
 
-<div class="dropdown-menu-container" data-navigation-target="categories">
+<div class="dropdown-menu-container" data-navigation-target="dropdown">
   <div class="category-links">
     <% all_resources.each do |resource| %>
       <%= tag.ol class: "category-navigation hidden-menu", id: "menu-#{resource.path.parameterize}", data: {action: "click->navigation#toggleMenu", "selectors": "ol.page-navigation"} do %>
         <% resource.subcategories.each do |category| %>
           <%= category_link(category, resource) %>
         <% end %>
-        <%= view_all_in_resource_link(resource) %>
+        <%= view_all_link(resource) %>
       <% end %>
     <% end %>
   </div>
