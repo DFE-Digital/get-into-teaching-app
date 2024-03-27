@@ -169,7 +169,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 ### 3. Date of arrival for teachers
 
-You must move to the UK on one of the visas listed on this page no more than 3 months before the start of your job. You can find further guidance about what this may mean for you in the next section.
+You must move to the UK on one of the visas listed on this page no more than 3 months before the start of your job. You can find further guidance about what this may mean for you in this section.
 
 #### What happens if I spend time in the UK more than 3 months before the start of my job? 
 
@@ -209,7 +209,7 @@ You will not be eligible for the international relocation payment if you are:
 
 * an Irish citizen
 
-* a non-UK citizen who moved to England more than 3 months before the start of your job, except in the circumstances outlined in ‘Date of arrival’
+* a non-UK citizen who moved to England more than 3 months before the start of your job, except in the circumstances outlined in ‘Date of arrival for teachers’
 
 * in England on a dependant visa linked to your partner or parent’s visa   
 
@@ -237,7 +237,7 @@ You can express your interest in the IRP by emailing us at IRP.ExpressInterest@e
 
 ### Protect yourself from fraud
 
-You do not need to pay an agent or any other third party to complete your application. Any agency or person contacting you offering to apply for the IRP on your behalf is likely to be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
+You do not need to pay an agent or any other third party to complete your application. Any agency or person contacting you offering to apply for the international relocation payment on your behalf is likely to be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
 
 ### Using the international relocation payment (IRP) to support your visa application
