@@ -49,8 +49,6 @@ During your experience, you’ll get to do things like:
 - speak to teachers and meet pupils
 - learn more about teacher training - including the application and interview process
 
-$q-Zainab$
-
 ## Find school experience
 
 Use our Get school experience service to search for and request experience in England. If you enter your postcode you can find schools in your area that offer placements. You can filter these by the subject and age group you're looking to teach. It also tells you whether the type of experience available is in-school, virtual or both.
@@ -66,6 +64,8 @@ You can also organise school placements yourself by contacting your old school. 
 Or you can call a school directly. You can [get information about schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience so your request goes to the right person. 
 
 Bear in mind that schools are busy places, so they may not always respond quickly and you may need to be flexible about when you visit. 
+
+$q-Zainab$
 
 ## Other ways to get experience 
 
