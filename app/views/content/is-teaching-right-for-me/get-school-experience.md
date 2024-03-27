@@ -25,7 +25,7 @@ navigation_description: Spending some time in a school can help you understand i
 quote:
   q-Zainab:
     text: "I volunteered at a local primary school for 2 days a week and from the moment I walked into my first class, it felt very natural to be interacting with children."
-    name: "Zainab"
+    name: "Zainab, career changer"
     classes: quote--indent
 ---
 
