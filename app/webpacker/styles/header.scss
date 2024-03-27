@@ -54,7 +54,7 @@ body > header {
   display: grid;
   grid-template-columns: [left] 100px [category-links-start] 1fr [page-links-start] 1fr [hot-links-start] 1fr [content-end] 100px [right];
   grid-template-rows: [main-start] 1fr [main-end];
-  background: #eee;
+  background: #eeeeee;
 }
 
 .category-links {

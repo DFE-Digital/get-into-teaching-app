@@ -152,7 +152,6 @@ body > header nav {
 }
 
 .dropdown-menu-container {
-
   .hidden-menu {
     display: none !important;
   }
@@ -170,8 +169,8 @@ body > header nav {
     display: flex;
     list-style: none;
     flex-direction: column;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    margin: 0;
+    padding: 0;
     background: #F0F0F0;
 
     > li {

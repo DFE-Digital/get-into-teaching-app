@@ -29,12 +29,12 @@ module Header
       show_dropdown = resource.subcategories?
 
       tag.li class: li_css, data: { "id": id, "direct-link": !show_dropdown } do
-        safe_join( [
-                     link_to_unless_current(title, path, class: link_css) { tag.div(title) },
-                     if show_dropdown
-                       down_arrow_icon
-                     end
-                   ])
+        safe_join([
+          link_to_unless_current(title, path, class: link_css) { tag.div(title) },
+          if show_dropdown
+            down_arrow_icon
+          end,
+        ])
       end
     end
 
@@ -47,10 +47,10 @@ module Header
       link_css = "link--black link--no-underline"
 
       tag.li class: li_css, data: { "id": id } do
-        safe_join( [
-                     link_to_unless(active, title, path, class: link_css) { tag.div(title) },
-                     right_arrow_icon,
-                   ])
+        safe_join([
+          link_to_unless(active, title, path, class: link_css) { tag.div(title) },
+          right_arrow_icon,
+        ])
       end
     end
 

@@ -37,7 +37,7 @@ export default class extends Controller {
           } else {
             self.toggleIconDown(icon);
             console.log('Closing menu');
-            self.hideMenu()
+            self.hideMenu();
           }
         } else {
           self.toggleIconDown(icon);
@@ -45,7 +45,6 @@ export default class extends Controller {
       }
     );
   }
-
 
   toggleIconUp(icon) {
     if (icon && icon.classList.contains('nav-icon__arrow-down')) {
@@ -64,7 +63,6 @@ export default class extends Controller {
     }
     return false;
   }
-
 
   toggleMenu(event) {
     if (!(event.target.closest('li').dataset.directLink === 'true')) {
@@ -96,7 +94,9 @@ export default class extends Controller {
 
   hideMenu() {
     [].forEach.call(
-      this.dropdownTarget.querySelectorAll("ol.category-navigation, ol.page-navigation"),
+      this.dropdownTarget.querySelectorAll(
+        'ol.category-navigation, ol.page-navigation'
+      ),
       function (child) {
         if (!child.classList.contains('hidden-menu')) {
           child.classList.add('hidden-menu');
