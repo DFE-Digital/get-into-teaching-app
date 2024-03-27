@@ -169,7 +169,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 ### 3. Date of arrival for teachers
 
-You must move to the UK on one of the visas listed on this page no more than 3 months before the start of your job.
+You must move to the UK on one of the visas listed on this page no more than 3 months before the start of your job. You can find further guidance about what this may mean for you in the next section.
 
 #### What happens if I spend time in the UK more than 3 months before the start of my job? 
 
