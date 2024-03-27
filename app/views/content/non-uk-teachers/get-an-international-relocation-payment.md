@@ -169,7 +169,7 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 ### 3. Date of arrival for teachers
 
-You must move to the UK on one of the visas listed on this page no more than 3 months before the start of your job. You can find further guidance about what this may mean for you in this section.
+You must not have spent more than 90 days in the UK in the 12 months previous to the start of the job for which you are relocating and you must not move to the UK more than 3 months before that start.
 
 #### What happens if I spend time in the UK more than 3 months before the start of my job? 
 
@@ -185,19 +185,19 @@ However, you will remain eligible for the IRP if:
 
 You arrive in the UK in September 2023 on a Student visa for a course of study at a UK university. You complete your course and return home in July 2024. You return to the UK to take up an eligible teaching job in September 2024. 
 
-You will not be eligible for the IRP. 
+You will not be eligible for the IRP, because you have spent more than 90 days in the UK in the 12 months preceding the start of your teaching job.
 
 #### Example 2:  
 
 You travel to attend an interview for an eligible teaching job in the UK under a Standard Visitor visa in May 2024. The visit lasts 2 days and you return home, and learn you have been successful in your application. The role begins in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before your job begins. You move to the UK in July 2024.  
 
-You will be eligible for the IRP. 
+You will be eligible for the IRP, because you have spent less than 90 days in the UK in the previous 12 months and have moved to the UK less than 3 months before the start of your teaching job. 
 
 #### Example 3:  
 
 You study in the UK on a Student visa for three years from September 2019 to July 2022, before returning home. You apply for an eligible teaching job in England starting in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024.  
 
-You will be eligible for the IRP. 
+You will be eligible for the IRP because you have spent less than 90 days in the UK in the previous 12 months and have moved to the UK less than 3 months before the start of your job. 
 
 If you are in any doubt about meeting the 3-month requirement, please email us for advice before planning your move. 
 
@@ -209,7 +209,9 @@ You will not be eligible for the international relocation payment if you are:
 
 * an Irish citizen
 
-* a non-UK citizen who moved to England more than 3 months before the start of your job, except in the circumstances outlined in ‘Date of arrival for teachers’
+* a non-UK citizen who moved to England more than 3 months before the start of your job
+
+* a non-UK citizen who has spent more than 90 days in the UK in the 12 months previous to the start of your job 
 
 * in England on a dependant visa linked to your partner or parent’s visa   
 
