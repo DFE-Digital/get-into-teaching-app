@@ -1,7 +1,35 @@
-<nav id="primary-navigation" class="hidden-mobile" data-navigation-target="nav" aria-label="Primary navigation" role="navigation">
-  <ol class="primary" data-navigation-target="primary">
+<%= tag.nav id: "primary-navigation", class: "hidden-mobile", data: { "navigation-target": "nav", action: "click->navigation#toggleNavMenu" }, "aria-label": "Primary navigation", role: "navigation" do %>
+  <%= tag.ol class: "primary", data: { "navigation-target": "primary", "selectors": "ol.category-navigation, ol.page-navigation" } do %>
     <% all_resources.each do |resource| %>
-      <%= nav_link(resource.title, resource.path) %>
+      <%= nav_link(resource) %>
     <% end %>
-  </ol>
-</nav>
+  <% end %>
+<% end %>
+
+<div class="dropdown-menu-container" data-navigation-target="dropdown">
+  <div class="category-links">
+    <% all_resources.each do |resource| %>
+      <%= tag.ol class: "category-navigation hidden-menu", id: "menu-#{resource.path.parameterize}", data: {action: "click->navigation#toggleMenu", "selectors": "ol.page-navigation"} do %>
+        <% resource.subcategories.each do |category| %>
+          <%= category_link(category, resource) %>
+        <% end %>
+        <%= view_all_link(resource) %>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="page-links">
+    <% all_resources.each do |resource| %>
+      <% resource.subcategories.each do |category| %>
+        <%= tag.ol class: "page-navigation hidden-menu", id: "menu-#{category.parameterize}" do %>
+          <% resource.children_in_subcategory(category).each do |child_resource| %>
+            <%= nav_link(child_resource) %>
+          <% end %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="key-links">
+  </div>
+</div>
