@@ -59,8 +59,6 @@ The value of gaining a transferable qualification through training to teach in E
 
 ### Help for non-UK trainees 
 
-If you are interested in training to teach languages or physics, you could be eligible for up to £39,000 in a bursary or scholarship and international relocation payment. 
+If you're interested in training to teach languages or physics, you could be eligible for a bursary or scholarship worth up to £30,000. 
 
-Teachers from 47 countries worldwide can now apply for English qualified teacher status – plus, languages and physics teachers could be eligible for a £10,000 international relocation payment. 
-
-To learn more you can [read our guidance for non-UK trainees and teachers](/non-uk-teachers).
+To learn more you can [read our guidance for non-UK trainees](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
