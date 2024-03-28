@@ -40,7 +40,7 @@ module Header
 
     def category_link(subcategory, resource)
       title = subcategory
-      path = "#{resource.path}##{subcategory}"
+      path = "#{resource.path}##{subcategory.parameterize}"
       id = "menu-#{subcategory.parameterize}"
       active = subcategory == front_matter["subcategory"]
       li_css = "active" if active
@@ -57,10 +57,11 @@ module Header
     def view_all_link(resource)
       title = "View all in #{resource.title}"
       path = resource.path
+      id = "menu-view-all-#{resource.path.parameterize}"
       li_css = "active" if uri_is_root?(path)
       link_css = "link--black"
 
-      tag.li class: li_css, data: { "direct-link": true } do
+      tag.li class: li_css, data: { id: id, "direct-link": true } do
         link_to_unless_current(title, path, class: link_css) { tag.div(title) }
       end
     end
