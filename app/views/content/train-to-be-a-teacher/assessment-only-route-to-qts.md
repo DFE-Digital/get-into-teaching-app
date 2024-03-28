@@ -38,15 +38,15 @@ provider_groups:
       telephone: 01206 364728
       email: enquiries@colchesterttc.org.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/initial-teacher-training/
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
     - header: Essex and Thames SCITT
       link: https://etpscitt.co.uk/
-      name: Eleanor French
+      name: Emma Day and Sarah Sloper
       telephone: '01268 988580'
-      email: eleanor@ete.org.uk
+      email: assessmentonly@ete.org.uk
     - header: Mid Essex Initial Teacher Training
       link: https://midessexteachertraining.com/courses/assessment-only
       name: Steve Fox
@@ -92,7 +92,7 @@ provider_groups:
       telephone: '07919 568841'
       email: jwoolley@cfbt.com
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/initial-teacher-training/
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
@@ -214,7 +214,7 @@ provider_groups:
     - header: Durham University
       email: ed.ite@durham.ac.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/initial-teacher-training/
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
@@ -240,7 +240,7 @@ provider_groups:
       name: Hilary Langmead-Jones
       email: admin@scitt.bright-futures.co.uk 
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/initial-teacher-training/
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
@@ -277,9 +277,9 @@ provider_groups:
       telephone: 01227 925555
       email: pgadmissions@canterbury.ac.uk
     - header: Chepping View Primary Academy SCITT
-      name: Katherine Harrison
+      name: Hayley Rouse
       telephone: 01494 535564, option 3
-      email: kharrison@cvpa.school
+      email: scitt@cvpa.school
     - header: George Abbot SCITT
       link: https://georgeabbottraining.co.uk/courses/
       name: Joanna Jones
@@ -399,6 +399,11 @@ provider_groups:
       name: Emily Giubertoni
       telephone: 07714 672398
       email: e.giubertoni@bishopchalloner.bham.sch.uk
+    - header: Educate Group Initial Teacher Training
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
+      name: Educate Group HQ
+      telephone: 01978 281881
+      email: aor@educate-group.co.uk
     - header: Haybridge Alliance SCITT
       link: https://www.teachwithhaybridge.co.uk
       email: tforward@haybridge.worcs.sch.uk
@@ -452,7 +457,7 @@ provider_groups:
   Yorkshire and the Humber:
     providers:
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/initial-teacher-training/
+      link: https://educate-group.co.uk/initial-teacher-training-about-us/
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk

@@ -37,7 +37,7 @@ describe "reading the blog", type: :feature do
   end
 
   include_context "paginating blog posts", "/blog", 10, true
-  include_context "paginating blog posts", "/blog/tag/advisers", 4, false
+  include_context "paginating blog posts", "/blog/tag/advisers", 3, false
 
   scenario "viewing a post" do
     path = "grasp-every-opportunity"

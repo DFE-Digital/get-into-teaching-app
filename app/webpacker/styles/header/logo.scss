@@ -8,6 +8,15 @@
   display: flex;
   align-items: center;
 
+  @include mq($until: narrow) {
+    // for very small screens, don't offset the logo
+    left: 1px;
+  }
+
+  @include mq($from: narrow, $until: tablet)  {
+    left: 0;
+  }
+
   @include mq($from: tablet) {
     overflow: visible;
     top: -26px;
@@ -58,6 +67,14 @@
   &__image {
     img {
       margin-top: 12px;
+
+      @include mq($until: narrow) {
+        max-width: 100%;
+      }
+
+      @include mq($from: narrow, $until: mobile) {
+        width: 100%;
+      }
     }
   }
 }

@@ -12,6 +12,20 @@ body > header {
   grid-auto-rows: auto;
   //background: green;
 
+  // controls placement of menu button
+  @include mq($from: narrow) {
+    .extra-navigation {
+      grid-column: 1/3;
+    }
+  }
+
+  // controls layout of menu dropdown items + logo
+  @include mq($from: narrow, $until: tablet) {
+    nav {
+      grid-column: 1/3;
+    }
+  }
+
   @include mq($from: tablet) {
     border-bottom: 1px solid $grey;
     //background: red;
@@ -39,7 +53,7 @@ body > header {
 
   // desktop
   @include mq($from: desktop, $until: wide) {
-    //background: purple;
+    // ensure navigation bar is on its own line for < wide
     nav {
       grid-column: 1/3;
       //background: pink;
