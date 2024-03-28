@@ -1,6 +1,7 @@
 ---
 title: "Student finance for teacher training"
 heading: "Student finance for teacher training"
+subcategory: Courses with fees
 description: |-
     Find out about the available student finance for teacher training, including tuition fee loans and maintenance loans to support you while you train.
 related_content:
