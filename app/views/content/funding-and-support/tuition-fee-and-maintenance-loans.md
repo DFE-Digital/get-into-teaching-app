@@ -18,7 +18,7 @@ calls_to_action:
         text: "Use the student finance calculator on GOV.UK to get an estimate of how much funding you might get."
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
-navigation: 20.10
+navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 keywords:
     - Tuition Fee Loan
