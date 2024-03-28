@@ -1,5 +1,6 @@
 ---
 title: "Salaried teacher training"
+subcategory: Courses with a salary
 description: |-
     Explore salaried teacher training, including School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 related_content:
