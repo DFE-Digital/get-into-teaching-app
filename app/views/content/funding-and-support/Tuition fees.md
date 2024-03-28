@@ -24,7 +24,6 @@ keywords:
 ---
 Find out about the cost of training to teach in England, including the amount you'll pay for course tuition fees.
 
-
 ## Postgraduate teacher training course tuition fees
 
 The maximum tuition fee for UK For a full-time postgraduate teacher training course, the maximum tuition fee is £9,250 per year for UK applicants. 
