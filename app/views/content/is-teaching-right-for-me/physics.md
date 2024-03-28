@@ -5,7 +5,7 @@ description: |-
 subcategory: What to teach
 navigation: 5.48
 navigation_title: Physics
-navigation_description: Find out how to become a physics teacher and what teaching pupils a wide range of experiments would be like.
+navigation_description: Find out how to become a physics teacher and inspire the next generation of scientists, engineers and innovators.
 layout: "layouts/minimal"
 colour: "yellow"
 image: "static/images/content/hero-images/physics_1383.jpg"

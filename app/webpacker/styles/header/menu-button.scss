@@ -46,6 +46,7 @@
       }
     }
 
+    // more spacing around menu button and full width on narrow screens
     @include mq($until: tablet) {
       flex: 1;
       justify-content: space-between;
