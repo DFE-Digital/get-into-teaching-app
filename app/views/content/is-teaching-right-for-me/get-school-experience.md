@@ -8,7 +8,6 @@ related_content:
     Teacher pay and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
     What is a Get Into Teaching event? : "/events/about-get-into-teaching-events"
-    School experience helped me change careers : "/blog/school-experience-helped-me-decide-to-switch"
 calls_to_action:
     get-school-experience:
       name: simple
@@ -23,6 +22,11 @@ promo_content:
 navigation: 5.50
 navigation_title: How do I get experience in a school?
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
+quote:
+  q-Zainab:
+    text: "I volunteered at a local primary school for 2 days a week and from the moment I walked into my first class, it felt very natural to be interacting with children."
+    name: "Zainab, career changer"
+    classes: quote--indent
 ---
 
 You can visit schools to get unpaid experience in the classroom before you start your initial teacher training (ITT).
@@ -60,6 +64,8 @@ You can also organise school placements yourself by contacting your old school. 
 Or you can call a school directly. You can [get information about schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience so your request goes to the right person. 
 
 Bear in mind that schools are busy places, so they may not always respond quickly and you may need to be flexible about when you visit. 
+
+$q-Zainab$
 
 ## Other ways to get experience 
 
