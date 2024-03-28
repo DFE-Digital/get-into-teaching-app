@@ -42,3 +42,5 @@ Find out more about [fees and financial support for non-UK trainee teachers](/no
 Some providers may also charge registration fees. You’ll need to check with the relevant provider.  
 
 You’ll also need to be able to cover your living costs and any travel expenses if you need to travel to school placements. [Find out about student finance for teacher training](/funding-and-support/tuition-fee-and-maintenance-loans).
+
+If your teacher training course has a salary and you do not pay fees you will not be eligible for any student finance.
