@@ -18,9 +18,9 @@ describe Header::NavigationComponent, type: "component" do
 
   let(:page_five_subpages) do
     {
-      "/page-five/part-1" => { title: "Page five: part 1", subcategory: 'category 1', navigation: 5.1 },
-      "/page-five/part-2" => { title: "Page five: part 2", subcategory: 'category 1', navigation: 5.2 },
-      "/page-five/part-3" => { title: "Page five: part 3", subcategory: 'category 2', navigation: 5.3 },
+      "/page-five/part-1" => { title: "Page five: part 1", subcategory: "category 1", navigation: 5.1 },
+      "/page-five/part-2" => { title: "Page five: part 2", subcategory: "category 1", navigation: 5.2 },
+      "/page-five/part-3" => { title: "Page five: part 3", subcategory: "category 2", navigation: 5.3 },
     }
   end
 
@@ -63,5 +63,4 @@ describe Header::NavigationComponent, type: "component" do
   it "renders a view all link" do
     expect(page).to have_css("div.dropdown-menu-container > div.category-links > ol.category-navigation > li[data-id='menu-view-all-page-five'] > a")
   end
-
 end

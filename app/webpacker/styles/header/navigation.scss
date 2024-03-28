@@ -152,18 +152,11 @@ body > header nav {
 }
 
 .dropdown-menu-container {
-  .hidden-menu {
-    display: none !important;
+  div.category-links, div.page-links, div.key-links {
+    ol.hidden-menu {
+      display: none;
+    }
   }
-
-  //background: #F0F0F0;
-
-  //@include mq($until: desktop) {
-  //  flex-direction: column-reverse;
-
-    //&.hidden-mobile {
-    //  display: none;
-    //}
 
   ol.category-navigation, ol.page-navigation {
     display: flex;
@@ -194,19 +187,12 @@ body > header nav {
       &.active {
         border-left: solid $pink 4px;
         background: $white;
-        //padding-left: 10px;
-
-        //background-image: url("../images/icon-arrow-right.png");
-        //background-position: left;
-        //background-repeat: no-repeat;
-        //padding-left: 1rem;
       }
 
       > a,
       div {
         display: block;
         padding: 1em 0;
-        //color: $white;
         font-weight: bold;
         font-size: 16px;
       }

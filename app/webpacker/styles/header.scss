@@ -10,27 +10,22 @@ body > header {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  //background: green;
 
   @include mq($from: tablet) {
     border-bottom: 1px solid $grey;
-    //background: red;
   }
 
   // tablet
   @include mq($from: tablet, $until: desktop) {
     grid-template-columns: max-content 1fr;
-    //background: blue;
 
     nav {
       grid-column: 1/3;
-      //background: orange;
     }
   }
 
   @include mq($from: tablet) {
     grid-template-columns: max-content 2fr;
-    //background: orange;
 
     .extra-navigation {
       grid-column: 1/3;
@@ -39,10 +34,8 @@ body > header {
 
   // desktop
   @include mq($from: desktop, $until: wide) {
-    //background: purple;
     nav {
       grid-column: 1/3;
-      //background: pink;
     }
   }
 }
