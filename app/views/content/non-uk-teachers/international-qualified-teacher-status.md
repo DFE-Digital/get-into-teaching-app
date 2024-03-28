@@ -179,15 +179,11 @@ While induction is a requirement to teach in most schools in England, you do not
 
 ## Contact 
 
-To get advice about iQTS, you can: 
+To get advice about iQTS, you can contact us using the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate.
 
-• call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on bank holidays  in England – calls will be charged at your standard rate 
+We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
 
-• use the live chat service at the bottom of this page 
-
-• sign up to get a teacher training adviser – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone 
-
-• email us on iqts.policy@education.gov.uk  
+You can also email us on iqts.policy@education.gov.uk.  
 
 
 
