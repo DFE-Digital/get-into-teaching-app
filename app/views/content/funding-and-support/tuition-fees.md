@@ -32,7 +32,12 @@ The maximum tuition fee for a postgraduate teacher training course for UK applic
 * £6,935 per year for a part-time course 
 
 ### Non-UK citizens
-Tuition fees for a full-time postgraduate teacher training course for non-UK citizens vary depending on the provider but can range from £9,250 to about £36,000. 
+Tuition fees for postgraduate teacher training course for non-UK citizens vary depending on the provider. 
+
+The maximum tuition fee for a postgraduate teacher training course for non-UK citizens is about:
+
+* £36,000 per year for a full-time course
+* £17,500 per year for a part-time course 
 
 The average full-time tuition fee for non-UK citizens is around £14,765.
 
