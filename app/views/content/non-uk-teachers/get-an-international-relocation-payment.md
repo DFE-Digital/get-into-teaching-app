@@ -15,7 +15,7 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      <p>Applications for <a href="https://get-a-teacher-relocation-payment.education.gov.uk/>the international relocation payment (IRP)</a> are open between 2 April and 31 May 2024.</p>
+      <p>Applications for the <a href="https://get-a-teacher-relocation-payment.education.gov.uk">international relocation payment (IRP)</a> are open between 2 April and 31 May 2024.</p>
 
       <p>If you are a trainee on a fee-paying course, you do not need to apply. <a href="/non-uk-teachers/get-an-international-relocation-payment#how-trainee-teachers-can-get-the-international-relocation-payment">Learn more about the process for fee paying courses</a>.</p>
 keywords:
