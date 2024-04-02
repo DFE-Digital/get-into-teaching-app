@@ -23,9 +23,9 @@ inset_text:
 
       <h3>Changes to eligibility and payment</h3>  
       
-      <p>Teacher trainees in languages or physics who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees starting courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to £30,000.</p>
+      <p>Trainees in languages or physics who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees starting courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to £30,000.</p>
       
-      <p>Payments to teachers applying from September 2024 will now be split into two £5,000 payments rather than given as a single £10,000 sum. Teachers can apply for the first payment at the start of their first year of employment and the second payment at the start of their second year.</p>
+      <p>Payments to teachers applying from September 2024 will now be split into two £5,000 payments rather than given as a single £10,000 sum. Teachers can apply for the first payment at the start of their first year of employment and the second payment at the start of their second year of employment.</p>
   
 
 keywords:
@@ -82,7 +82,7 @@ The international relocation payment (IRP) is designed to cover some of the cost
 
 * other relocation expenses 
 
-The IRP is a grant – you will not have to pay this money back. You can only receive the IRP once.
+The IRP is a grant – you will not have to pay this money back. If you are eligible, you can only receive the IRP once.
 
 [Learn more about teaching in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
@@ -171,6 +171,8 @@ For the following Ukrainian and Afghan visas, you can apply for your visa from w
 
 You must not have spent more than 90 days in the UK in the 12 months previous to the start of the job for which you are relocating and you must not move to the UK more than 3 months before that start.
 
+If you are in any doubt about meeting the 3-month requirement, please email us for advice before planning your move. 
+
 #### What happens if I spend time in the UK more than 3 months before the start of my job? 
 
 You will not be eligible for the IRP if you have spent more than 90 days in the UK in the 12 months preceding the start of your teaching job, even if you return home before taking up your post (see example 1).  
@@ -198,8 +200,6 @@ You will be eligible for the IRP, because you have spent less than 90 days in th
 You study in the UK on a Student visa for three years from September 2019 to July 2022, before returning home. You apply for an eligible teaching job in England starting in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024.  
 
 You will be eligible for the IRP because you have spent less than 90 days in the UK in the previous 12 months and have moved to the UK less than 3 months before the start of your job. 
-
-If you are in any doubt about meeting the 3-month requirement, please email us for advice before planning your move. 
 
 ### Non-eligibility
 
