@@ -7,7 +7,7 @@ export default class extends Controller {
 
   // toggles the entire nav on tablet/mobile
   toggleNav(event) {
-    // fires when the user clicks on the Menu button
+    // fires when the user clicks on the "Menu" button (not a menu item)
     event.preventDefault();
     event.stopPropagation();
 
@@ -22,21 +22,27 @@ export default class extends Controller {
     }
   }
 
-  toggleNavMenu(event) {
-    const selectedIcon = event.target
-      .closest('li')
-      .querySelector('span.nav-icon');
+  toggleNavMenuItem(event) {
+    // fires when the user clicks on a navigation menu item
     const self = this;
+    const ol = event.target.closest('ol');
+    const li = event.target.closest('li');
+    const selectedIcon = li.querySelector('span.nav-icon');
 
     [].forEach.call(
       this.navTarget.querySelectorAll('span.nav-icon'),
       function (icon) {
         if (icon === selectedIcon) {
           if (self.toggleIconUp(icon)) {
-            self.toggleMenu(event);
+            if (!(li.dataset.directLink === 'true')) {
+              event.preventDefault();
+              event.stopPropagation();
+              self.showMenu(li.dataset.id, ol.dataset.selectors);
+            }
           } else {
+            event.preventDefault();
+            event.stopPropagation();
             self.toggleIconDown(icon);
-            console.log('Closing menu');
             self.hideMenu();
           }
         } else {
@@ -64,15 +70,15 @@ export default class extends Controller {
     return false;
   }
 
-  toggleMenu(event) {
-    if (!(event.target.closest('li').dataset.directLink === 'true')) {
+  toggleCategoryMenuItem(event) {
+    // fires when the user clicks on a category menu item
+    const ol = event.target.closest('ol');
+    const li = event.target.closest('li');
+
+    if (!(li.dataset.directLink === 'true')) {
       event.preventDefault();
       event.stopPropagation();
-
-      this.showMenu(
-        event.target.closest('li').dataset.id,
-        event.target.closest('ol').dataset.selectors
-      );
+      this.showMenu(li.dataset.id, ol.dataset.selectors);
     }
   }
 

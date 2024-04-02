@@ -11,7 +11,7 @@ describe('NavigationController', () => {
           <span class="menu-button__icon"></span>
         </button>
       </div>
-      <nav id="primary-navigation" class="hidden-mobile" data-navigation-target="nav" data-action="click->navigation#toggleNavMenu" aria-label="Primary navigation" role="navigation">
+      <nav id="primary-navigation" class="hidden-mobile" data-navigation-target="nav" data-action="click->navigation#toggleNavMenuItem" aria-label="Primary navigation" role="navigation">
         <ol class="primary" data-navigation-target="primary" data-selectors="ol.category-navigation, ol.page-navigation">
           <li data-id="menu-is-teaching-right-for-me" data-direct-link="false">
             <a class="link--black link--no-underline" href="/is-teaching-right-for-me">Is teaching right for me?</a>
@@ -28,7 +28,7 @@ describe('NavigationController', () => {
       </nav>
       <div class="dropdown-menu-container" data-navigation-target="dropdown">
         <div class="category-links">
-          <ol class="category-navigation hidden-menu" id="menu-is-teaching-right-for-me" data-action="click->navigation#toggleMenu" data-selectors="ol.page-navigation">
+          <ol class="category-navigation hidden-menu" id="menu-is-teaching-right-for-me" data-action="click->navigation#toggleCategoryMenuItem" data-selectors="ol.page-navigation">
             <li data-id="menu-pay-and-benefits">
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me#pay-and-benefits" data-turbolinks="false">Pay and benefits</a>
               <span class="nav-icon nav-icon__arrow-right" aria-hidden="true"></span>

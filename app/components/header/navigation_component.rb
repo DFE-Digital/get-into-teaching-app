@@ -30,7 +30,7 @@ module Header
 
       tag.li class: li_css, data: { "id": id, "direct-link": !show_dropdown } do
         safe_join([
-          link_to_unless_current(title, path, class: link_css) { tag.div(title) },
+          link_to(title, path, class: link_css),
           if show_dropdown
             down_arrow_icon
           end,
@@ -42,13 +42,12 @@ module Header
       title = subcategory
       path = "#{resource.path}##{subcategory.parameterize}"
       id = "menu-#{subcategory.parameterize}"
-      active = subcategory == front_matter["subcategory"]
-      li_css = "active" if active
+      li_css = "active" if subcategory == front_matter["subcategory"]
       link_css = "link--black link--no-underline"
 
       tag.li class: li_css, data: { "id": id } do
         safe_join([
-          link_to_unless(active, title, path, class: link_css) { tag.div(title) },
+          link_to(title, path, class: link_css),
           right_arrow_icon,
         ])
       end
@@ -62,7 +61,7 @@ module Header
       link_css = "link--black"
 
       tag.li class: li_css, data: { id: id, "direct-link": true } do
-        link_to_unless_current(title, path, class: link_css) { tag.div(title) }
+        link_to(title, path, class: link_css)
       end
     end
 
