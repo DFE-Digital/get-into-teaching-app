@@ -74,6 +74,17 @@
     }
   }
 
+  &.green {
+    @include slanted-bottom($green, $grey);
+
+    background-color: $green;
+    color: $black;
+
+    h1 > span {
+      background: $yellow;
+    }
+  }
+
   h1 {
     margin: 1em auto 0 1em;
     z-index: 5;
