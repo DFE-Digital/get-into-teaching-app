@@ -250,7 +250,11 @@ Learn more about [getting an IHS refund](https://www.gov.uk/guidance/immigration
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
-For help with individual applications to training providers or schools, please [register with a teacher training adviser](/teacher-training-adviser/sign_up/identity). Advisers can give you personalised support with your application.
+You may be eligible for personalised support with your application to a training provider or school from a [teacher training adviser](/teacher-training-advisers).
+
+To check if you're eligible for an adviser, please contact us using the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate.
+
+We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
 
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
