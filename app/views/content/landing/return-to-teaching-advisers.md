@@ -1,6 +1,6 @@
 ---
-title: "Get an adviser"
-description: If you're thinking about teaching in England, an adviser can offer free one-to-one support as little or as often as you need it.
+title: "Get a return to teaching adviser"
+description: If you're thinking about returning to teaching in England, an adviser can give you free one-to-one support and help you get classroom experience, search for teaching jobs and guide you through the application process. 
 content:
    - content/landing/return-to-teaching-advisers/header
    - content/landing/return-to-teaching-advisers/adviser
