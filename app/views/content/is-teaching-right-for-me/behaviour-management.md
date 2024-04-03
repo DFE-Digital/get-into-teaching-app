@@ -49,8 +49,12 @@ Make sure you’re very clear. If children understand your expectations of them 
 ## Is there any support for trainee teachers?
 As a teacher you’re never going to be perfect. You’re constantly learning and the variety and support you get through your day through learning all of these different things is really important.
 
+If you have to pay a fee to do your teacher training course and it leads to qualified teacher status (QTS) you might see lots of different classes and how a particular teacher works with them. Or you might go round with a particular student and see what a day in their lives looks like, with the different teachers they may have that day. This allows you to pick up strategies other people may use while also seeing what kind of challenges a particular class or  child might have during that period of time. 
+
+Then you might work either with small groups or one-to-one with pupils. Again you're observing and analysing what's working. You're not alone. You've got a teacher there so if you think something didn't quite land you've got somebody to bounce ideas off and look at how you might change it.
+
 ## How do I manage more disruptive behaviour?
-Worry for anyone, it was the thing I mentioned in my interview for my own training course. There’s a big focus on how to create a learning environment to enable young people to achieve their learning. If they’re engrossed in their learning and know what it is they need to be doing. In my experience of teaching hundreds of thousands of children, they'll be much less disruptive. The biggest challenge usually isn't the big things it’s more like low level chatting and disruption.  
+
 
 ## How do I build relationships with pupils? 
 
