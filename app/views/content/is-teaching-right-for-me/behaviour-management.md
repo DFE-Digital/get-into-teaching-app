@@ -1,14 +1,14 @@
 ---
-title: "How to move up the career ladder in teaching"
-heading: "How to move up the career ladder in teaching"
+title: "Managing behaviour in the classroom"
+heading: "Managing behaviour in the classroom"
 subcategory: Pay and benefits
 description: |-
   Teacher training adviser Jane Wilkinson answers questions about behaviour management
 date: "2024-01-09"
 backlink: "../../"
 navigation: 5.15
-navigation_title: How can I move up the career ladder in teaching?
-navigation_description: Top tips from teacher training advisers on how you can progress a career in teaching.
+navigation_title: How can I manage behaviour in the classroom?
+navigation_description: Teacher training adviser Jane Wilkinson answers common concerns about behaviour management.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
