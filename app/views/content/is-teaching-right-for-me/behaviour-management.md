@@ -1,7 +1,7 @@
 ---
 title: "Managing behaviour in the classroom"
 heading: "Managing behaviour in the classroom"
-subcategory: Pay and benefits
+subcategory: PQualifications and experience
 description: |-
   Teacher training adviser Jane Wilkinson answers questions about behaviour management
 date: "2024-01-09"
