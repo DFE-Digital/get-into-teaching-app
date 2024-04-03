@@ -168,18 +168,17 @@ body > header nav {
     background: #F0F0F0;
 
     > li {
-      border-bottom: 1px solid $white;
-
       @include list-item-nav;
       @include reset;
       line-height: 1.2;
-      margin-bottom: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 0.63em 0.94em 0.63em 0.94em;
 
-      padding-left: 10px;
-
+      &:hover {
+        background: #DEDEDE;
+      }
 
       &:last-child {
         border-bottom: none;
@@ -193,9 +192,7 @@ body > header nav {
       > a,
       div {
         display: block;
-        padding: 1em 0;
-        font-weight: bold;
-        font-size: 16px;
+        font-size: 1em;
       }
     }
   }
