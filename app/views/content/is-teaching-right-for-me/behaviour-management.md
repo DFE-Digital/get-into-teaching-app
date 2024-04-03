@@ -46,7 +46,7 @@ In my experience of teaching hundreds of thousands of children, if they’re eng
 
 Make sure you’re very clear. If children understand your expectations of them in terms of workload, behaviour and outcome and you scaffold that journey then behaviour becomes much less of a problem. Start off by modelling what you would want in your classroom. Do you want the children lining up at the start of the lesson? Or do you want them coming straight in and starting with the work? Now, I would always go for the later. So you've got to be as well organised as possible to have some kind of activity. 
 
-## Is there any support to help trainee teachers manage behaviour in the classroom?
+## Is there any support for trainee teachers?
 As a teacher you’re never going to be perfect. You’re constantly learning and the variety and support you get through your day through learning all of these different things is really important.
 
 ## How do I manage more disruptive behaviour?
