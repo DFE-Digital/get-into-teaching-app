@@ -14,7 +14,7 @@ promo_content:
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Teacher pay and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits" 
-    Bursaries and scholarships for training to teach : "/funding-and-support/scholarships-and-bursaries"
+    Early career teachers : "/support-for-early-career-teachers"
 
 keywords:
   - Behaviour management
