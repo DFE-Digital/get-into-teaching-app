@@ -53,11 +53,13 @@ Your teacher training course will allow you to experiment with the best tone of 
 
 I found that having a quieter voice required pupils to listen more actively. It was an excellent way to manage behaviour. 
 
-## What are teacher pastoral care roles?
+## How can I remember childrens' names?
 
-<strong>Fran:</strong>  Pastoral care in schools is looking at nurturing pathways. It’s about recognising all children have a right to feel safe and happy in school and guiding children on a more personal level. A [special educational needs co-ordinator (SENCO)](/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs) is part of pastoral care. Or you might be a form tutor and look after your pupils’ emotional wellbeing. 
+Knowing a child’s name is a really powerful behaviour management tool, so learning names is essential for building strong relationships. 
 
-That pastoral level is the link between form, tutor, classroom teacher, senior leadership, home parents, carers, extended family and wider community. 
+Making sure pupils put their names on the top of their page provides a helpful prompt for you. You can also make a seating plan and keep that handy. Doing an ice-breaker activity with new classes where pupils say their names and something that is unique to them is a great technique too. 
+
+Giving them nicknames can also be a good way to help you remember and it makes the children feel special too. 
 
 ## How long does it take to progress between teaching roles?
 
