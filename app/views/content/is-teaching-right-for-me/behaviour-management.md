@@ -51,7 +51,10 @@ Have routines and rituals or standard operational procedures so children know wh
 ## How do I manage more disruptive behaviour?
 Managing behaviour is a learning curve, and exactly what a teacher training course is designed for. You'll be offered practical guidance and support so don’t worry if you don’t get it right every time.
 
-It’s all about the relationships you build with pupils. If they know they’ll get away with disruptive learning, they'll disrupt learning. Set and communicate firm but fair boundaries and follow up on infringements, regardless of how long it takes to reach the result you intend. But don’t threaten anything you're not able to follow up with, like detention for the rest of their life!
+It’s all about the relationships you build with pupils. If they know they’ll get away with disruptive learning, they'll disrupt learning.
+You have to set and communicate firm but fair boundaries so they know they're safe and won't be ridiculed or be embarrassed and their learning comes first. They’ll push against these boundaries because that’s what children do. But if they find they meet with a brick wall they won't push any further because they know what's going to happen in any lesson they turn up to. 
+
+And follow up on infringements, regardless of how long it takes to reach the result you intend. But don’t threaten anything you're not able to follow up with, like detention for the rest of their life!
 
 ## How do I build relationships with pupils?
 Often building relationships with pupils happens outside of the classroom. It’s having conversations at break time in the corridor or as the kids are coming into school or at after school club. And talking to pupils, not just about what they're learning from you, but taking an interest in them as people. What did they have for their tea last night? How’s their poorly dog? What kind of things that make them laugh or sad and getting to know their authentic self.
