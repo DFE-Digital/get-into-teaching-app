@@ -44,9 +44,16 @@ Teacher training adviser Jane Wilkinson has years of teaching experience. She an
 ## How can I create a positive learning environment?
 In my experience of teaching hundreds of thousands of children, if they’re engrossed in their learning and know what it is they need to be doing, they'll be much less disruptive. The biggest challenge isn't usually big things it’s more like chatting and low-level disruption.  
 
-Make sure you’re very clear. If children understand your expectations of them in terms of workload, behaviour and outcome and you scaffold that journey then behaviour becomes much less of a problem. Start off by modelling what you would want in your classroom. Do you want the children lining up at the start of the lesson? Or do you want them coming straight in and starting with the work? Now, I would always go for the later. So you've got to be as well organised as possible to have some kind of activity.
+Make sure you’re very clear. If children understand your expectations of them in terms of workload, behaviour and outcome and you scaffold that journey then behaviour becomes much less of a problem. Start off by modelling what you would want in your classroom. Do you want the children lining up at the start of the lesson? Or do you want them coming straight in and starting with the work?
+
+Have routines and rituals or standard operational procedures so children know when they go to your class, this is what they do. So they understand what's required from them and know they'll be rewarded if they get that behaviour right.
 
 ## How do I manage more disruptive behaviour?
+
+## Should I reward good behaviour?
+Children tend to respond well to praise. It might be telling them they've done really well. Or it might be giving them a merit or a community point or whatever your school does. 
+
+I always worked with parents as well, sending out postcards or making phone calls to tell them their child's been brilliant that day. It only takes a few seconds to do but the rewards in that can be huge. I might start a class and tell them I've got 2 brilliant phone calls home to give out. So they're competing with themselves to try and be the best that they can. But never promise something you're not going to deliver. 
 
 ## How can I build relationships with pupils?
 
