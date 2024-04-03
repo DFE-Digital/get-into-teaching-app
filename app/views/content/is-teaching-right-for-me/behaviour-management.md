@@ -48,7 +48,7 @@ Make sure you’re very clear. If children understand your expectations of them 
 
 ## How do I manage more disruptive behaviour?
 
-## How do I build relationships with pupils?
+## How can I build relationships with pupils?
 
 Often building relationships with pupils happens outside of the classroom. It’s having conversations with them at break time in the corridor or as they're coming into school or at after school club. And talking to them, not just about what they're learning from you, but taking an interest in them as people. What did they have for their tea last night? How’s their poorly dog? What kind of things that make them laugh or sad and getting to know their authentic self.
 
