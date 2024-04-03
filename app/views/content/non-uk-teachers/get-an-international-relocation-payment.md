@@ -108,7 +108,7 @@ Your contract must last at least one year and you must be working as:
 
 * a language teacher – any language taught in an English state school is eligible, except English 
 
-If you are employed to teach more than one subject, physics, general or combined science or a language or languages must make up at least 50% of your time in the classroom. Your school can tell you how much of your time is allocated to teaching eligible subjects. The Department for Education will then validate this with the school as part of the application process. 
+If you are employed to teach more than one subject, then physics, general or combined science or a language or languages must make up at least 50% of your time in the classroom. Your school can tell you how much of your time is allocated to teaching eligible subjects. The Department for Education will then validate this with the school as part of the application process. 
 
 Examples of eligible teaching jobs include: 
 
