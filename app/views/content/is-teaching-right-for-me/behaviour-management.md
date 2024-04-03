@@ -3,7 +3,7 @@ title: "How to move up the career ladder in teaching"
 heading: "How to move up the career ladder in teaching"
 subcategory: Pay and benefits
 description: |-
-  Teacher training advisers talk about teacher development and how you can progress a career in teaching.
+  Teacher training adviser Jane Wilkinson answers questions about behaviour management
 date: "2024-01-09"
 backlink: "../../"
 navigation: 5.15
@@ -17,44 +17,21 @@ related_content:
     Bursaries and scholarships for training to teach : "/funding-and-support/scholarships-and-bursaries"
 
 keywords:
-  - Professional Development
-  - Teacher Promotion
-  - Career Development
-  - Progression
-  - Career Progression
-  - Development
-  - Scale
-  - Teacher Salary
-  - Teacher Salaries
-  - Leading Practitioner
-  - Headteacher
-  - Progression
-  - Promotion
-  - Teaching and learning responsibility
-  - Teaching and learning responsibility payment
-  - TLR
-  - Teaching Roles
-  - Promoted
-  - Teaching Responsibilities
-  - Additional
-  - Payments
-  - Responsibility
-  - Responsibilities
-  - Career
-  - Career Prospects
-  - Benefits
-  - Earnings
-  - Leadership
+  - Behaviour management
+  - Managing behaviour
+  - Disruptive behaviour
+  - Challenging behaviour
+  - Disruptive pupils
+  - Difficult pupils
+  - Positive behaviour
+  - Classroom teaching
   - NQT
   - National professional qualification
   - Support
   - Training
-  - Salary increase
-  - Salary review
-  - Pastoral care
+  - Teacher training
   - ECF
   - Teaching
-  - Teacher training
   - How to become a teacher
   - Teacher training courses
 ---
