@@ -8,7 +8,7 @@ date: "2024-01-09"
 backlink: "../../"
 navigation: 5.15
 navigation_title: How can I manage behaviour in the classroom?
-navigation_description: Teacher training adviser Jane Wilkinson answers common concerns about behaviour management.
+navigation_description: Teacher training adviser Jane Wilkinson answers common concerns around behaviour management.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
