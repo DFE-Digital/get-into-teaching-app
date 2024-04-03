@@ -49,19 +49,21 @@ Make sure you’re very clear. If children understand your expectations of them 
 Have routines and rituals or standard operational procedures so children know when they go to your class, this is what they do. So they understand what's required from them and know they'll be rewarded if they get that behaviour right.
 
 ## How do I manage more disruptive behaviour?
+Managing behaviour is a learning curve, and exactly what a teacher training course is designed for. You'll be offered practical guidance and support so don’t worry if you don’t get it right every time.
+
+It’s all about the relationships you build with pupils. If they know they’ll get away with disruptive learning, they'll disrupt learning. Set and communicate firm but fair boundaries and follow up on infringements, regardless of how long it takes to reach the result you intend. But don’t threaten anything you're not able to follow up with, like detention for the rest of their life!
+
+## How do I build relationships with pupils?
+Often building relationships with pupils happens outside of the classroom. It’s having conversations with them at break time in the corridor or as they're coming into school or at after school club. And talking to them, not just about what they're learning from you, but taking an interest in them as people. What did they have for their tea last night? How’s their poorly dog? What kind of things that make them laugh or sad and getting to know their authentic self.
+
+But it has to be a two-way thing, you’ve got to give a little of yourself so they can empathise. So you could share your hopes and dreams. And if you've got a cat at home, that always helps.
 
 ## Should I reward good behaviour?
 Children tend to respond well to praise. It might be telling them they've done really well, or giving them a merit or a community point or whatever your school does. 
 
 I always worked with parents as well, sending out postcards or making phone calls to tell them their child's been brilliant that day. It only takes a few seconds to do but the rewards in that can be huge. I might start a class and tell them I've got 2 brilliant phone calls home to give out. So they're competing with themselves to try and be the best that they can. But never promise something you're not going to deliver. 
 
-## How can I build relationships with pupils?
-
-Often building relationships with pupils happens outside of the classroom. It’s having conversations with them at break time in the corridor or as they're coming into school or at after school club. And talking to them, not just about what they're learning from you, but taking an interest in them as people. What did they have for their tea last night? How’s their poorly dog? What kind of things that make them laugh or sad and getting to know their authentic self.
-
-But it has to be a two-way thing, you’ve got to give a little of yourself so they can empathise. So you could share your hopes and dreams. And if you've got a cat at home, that always helps.
-
-## Is there any support for trainee teachers?
+## What support is there for trainee teachers?
 As a teacher you’re never going to be perfect. You’re constantly learning and the variety and support you get through your day through learning all of these different things is really important.
 
 If you have to pay a fee to do your teacher training course and it leads to qualified teacher status (QTS) you might see lots of different classes and how a particular teacher works with them. Or you might go round with a particular student and see what a day in their lives looks like, with the different teachers they may have that day. This allows you to pick up strategies other people may use while also seeing what kind of challenges a particular class or  child might have during that period of time.
