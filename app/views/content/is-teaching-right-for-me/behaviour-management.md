@@ -48,6 +48,12 @@ Make sure you’re very clear. If children understand your expectations of them 
 
 ## How do I manage more disruptive behaviour?
 
+## How do I build relationships with pupils?
+
+Often building relationships with pupils happens outside of the classroom. It’s having conversations with them at break time in the corridor or as they're coming into school or at after school club. And talking to them, not just about what they're learning from you, but taking an interest in them as people. What did they have for their tea last night? How’s their poorly dog? What kind of things that make them laugh or sad and getting to know their authentic self.
+
+But it has to be a two-way thing, you’ve got to give a little of yourself so they can empathise. So you could share your hopes and dreams. And if you've got a cat at home, that always helps.
+
 ## Is there any support for trainee teachers?
 As a teacher you’re never going to be perfect. You’re constantly learning and the variety and support you get through your day through learning all of these different things is really important.
 
@@ -58,14 +64,7 @@ Then you might work either with small groups or one-to-one with pupils. Again yo
 ## Once I become a teacher is there any support available?
 All schools have behaviour policies in place, so you work within a remit. If your course leads to QTS within the first two years of teaching you've got a named mentor. But you've also got other colleagues and it's not unheard of for somebody to sit down and say they're having a problem with child A what are you doing to keep them in line? You're constantly working together to swap ideas, sanctions and bits of information about that child.
 
-## How do I build relationships with pupils?
-
-Often building relationships with pupils happens outside of the classroom. It’s having conversations with them at break time in the corridor or as they're coming into school or at after school club. And talking to them, not just about what they're learning from you, but taking an interest in them as people. What did they have for their tea last night? How’s their poorly dog? What kind of things that make them laugh or sad and getting to know their authentic self.
-
-But it has to be a two-way thing, you’ve got to give a little of yourself so they can empathise. So you could share your hopes and dreams. And if you've got a cat at home, that always helps.
-
 ## How can I remember children's names?
-
 Knowing a child’s name is a really powerful behaviour management tool, so learning names is essential for building strong relationships.
 
 Making sure pupils put their names on the top of their page provides a helpful prompt for you. You can also make a seating plan and keep that handy. Doing an ice-breaker activity with new classes where pupils say their names and something that is unique to them is a great technique too.
