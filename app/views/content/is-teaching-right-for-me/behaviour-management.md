@@ -47,9 +47,11 @@ Often building relationships with pupils happens outside of the classroom. It’
 
 But it has to be a two-way thing, you’ve got to give a little of yourself so they can empathise. So you could share your hopes and dreams. And if you've got a cat at home, that always helps.  
 
-## Can you change the subject you teach?
+## I’m quite quiet. Will I be assertive enough? 
 
-<strong>Fran:</strong> People have asked me if they train in geography, for example, can they move out of that subject area or become head of year. Once you get qualified teacher status (QTS) you can essentially teach anything as long as your headteacher supports you and you have the expertise to show you can do this. 
+Your teacher training course will allow you to experiment with the best tone of voice for your own teaching style. Observe as many teachers as you can and cherry-pick the techniques and skills that they use for your own classroom. 
+
+I found that having a quieter voice required pupils to listen more actively. It was an excellent way to manage behaviour. 
 
 ## What are teacher pastoral care roles?
 
