@@ -38,15 +38,18 @@ export default class extends Controller {
               event.preventDefault();
               event.stopPropagation();
               self.showMenu(li.dataset.id, ol.dataset.selectors);
+              li.ariaExpanded = true;
             }
           } else {
             event.preventDefault();
             event.stopPropagation();
             self.toggleIconDown(icon);
             self.hideMenu();
+            li.ariaExpanded = false;
           }
         } else {
           self.toggleIconDown(icon);
+          icon.closest('li').ariaExpanded = false;
         }
       }
     );
@@ -75,11 +78,23 @@ export default class extends Controller {
     const ol = event.target.closest('ol');
     const li = event.target.closest('li');
 
+    // set expanded=true on selected category link
     if (!(li.dataset.directLink === 'true')) {
       event.preventDefault();
       event.stopPropagation();
       this.showMenu(li.dataset.id, ol.dataset.selectors);
+      li.ariaExpanded = true;
     }
+
+    // set expanded=false on all other category links
+    [].forEach.call(
+      ol.querySelectorAll('ol.category-navigation li'),
+      function (child) {
+        if (child !== li && !child.dataset.directLink) {
+          child.ariaExpanded = false;
+        }
+      }
+    );
   }
 
   showMenu(id, selectors) {

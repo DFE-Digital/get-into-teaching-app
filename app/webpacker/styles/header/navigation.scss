@@ -9,11 +9,11 @@
 }
 
 @mixin active-identifier($colour) {
-  border-left: 6px solid $colour;
+  border-left: 5px solid $colour;
   border-bottom: none;
 
   @include mq($from: desktop) {
-    border-bottom: 6px solid $colour;
+    border-bottom: 5px solid $colour;
     border-left: none;
   }
 }
@@ -95,16 +95,16 @@ body > header nav {
       > li {
         position: relative;
         flex-direction: row;
-        border-bottom: 6px solid $white;
-        padding: 1em 1em 1.5em;
+        border-bottom: 5px solid $white;
+        padding: 1.25em;
 
         &.active {
-          border-bottom: 6px solid $purple;
+          border-bottom: 5px solid $purple;
         }
 
         &.down {
           background-color: $grey;
-          border-bottom: 6px solid $grey;
+          border-bottom: 5px solid $grey;
         }
 
         a {
@@ -134,6 +134,7 @@ body > header nav {
   width: 21px;
   height: 12px;
   margin-top: 4px;
+  margin-left: 10px;
 
   &__arrow-down {
     background-image: url("../images/navigation/arrow-down-pink.svg");

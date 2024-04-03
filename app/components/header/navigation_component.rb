@@ -27,8 +27,9 @@ module Header
       li_css = "active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)
       link_css = "link--black link--no-underline"
       show_dropdown = resource.subcategories?
+      aria_attributes = show_dropdown ? { expanded: false } : {}
 
-      tag.li class: li_css, data: { "id": id, "direct-link": !show_dropdown } do
+      tag.li class: li_css, aria: aria_attributes, data: { "id": id, "direct-link": !show_dropdown } do
         safe_join([
           link_to(title, path, class: link_css),
           if show_dropdown
@@ -45,7 +46,7 @@ module Header
       li_css = "active" if subcategory == front_matter["subcategory"]
       link_css = "link--black link--no-underline"
 
-      tag.li class: li_css, data: { "id": id } do
+      tag.li class: li_css, aria: { expanded: false }, data: { "id": id } do
         safe_join([
           link_to(title, path, class: link_css),
           right_arrow_icon,
