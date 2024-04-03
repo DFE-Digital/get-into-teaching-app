@@ -27,11 +27,11 @@ module Header
       li_css = "active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)
       link_css = "link--black link--no-underline"
       show_dropdown = resource.subcategories?
-      aria_attributes = show_dropdown ? { expanded: false } : {}
+      aria_attributes = show_dropdown ? { expanded: false, controls: id } : {}
 
-      tag.li class: li_css, aria: aria_attributes, data: { "id": id, "direct-link": !show_dropdown } do
+      tag.li class: li_css, data: { "id": id, "direct-link": !show_dropdown } do
         safe_join([
-          link_to(title, path, class: link_css),
+          link_to(title, path, class: link_css, aria: aria_attributes),
           if show_dropdown
             down_arrow_icon
           end,
@@ -45,10 +45,11 @@ module Header
       id = "menu-#{subcategory.parameterize}"
       li_css = "active" if subcategory == front_matter["subcategory"]
       link_css = "link--black link--no-underline"
+      aria_attributes = { expanded: false, controls: id }
 
-      tag.li class: li_css, aria: { expanded: false }, data: { "id": id } do
+      tag.li class: li_css, data: { "id": id } do
         safe_join([
-          link_to(title, path, class: link_css),
+          link_to(title, path, class: link_css, aria: aria_attributes),
           right_arrow_icon,
         ])
       end

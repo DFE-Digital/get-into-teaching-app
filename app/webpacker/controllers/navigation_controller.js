@@ -38,18 +38,18 @@ export default class extends Controller {
               event.preventDefault();
               event.stopPropagation();
               self.showMenu(li.dataset.id, ol.dataset.selectors);
-              li.ariaExpanded = true;
+              li.querySelector('a').ariaExpanded = true;
             }
           } else {
             event.preventDefault();
             event.stopPropagation();
             self.toggleIconDown(icon);
             self.hideMenu();
-            li.ariaExpanded = false;
+            li.querySelector('a').ariaExpanded = false;
           }
         } else {
           self.toggleIconDown(icon);
-          icon.closest('li').ariaExpanded = false;
+          icon.closest('li').querySelector('a').ariaExpanded = false;
         }
       }
     );
@@ -83,7 +83,7 @@ export default class extends Controller {
       event.preventDefault();
       event.stopPropagation();
       this.showMenu(li.dataset.id, ol.dataset.selectors);
-      li.ariaExpanded = true;
+      li.querySelector('a').ariaExpanded = true;
     }
 
     // set expanded=false on all other category links
@@ -91,7 +91,7 @@ export default class extends Controller {
       ol.querySelectorAll('ol.category-navigation li'),
       function (child) {
         if (child !== li && !child.dataset.directLink) {
-          child.ariaExpanded = false;
+          child.querySelector('a').ariaExpanded = false;
         }
       }
     );
