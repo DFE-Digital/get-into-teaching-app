@@ -76,7 +76,7 @@ If you have to pay a fee to do your teacher training course and it leads to qual
 Then you might work either with small groups or one-to-one with pupils. Again you're observing and analysing what's working. You're not alone. You've got a teacher there so if you think something didn't quite land you've got somebody to bounce ideas off and look at how you might change it.
 
 ## Once I become a teacher is there any support available?
-All schools have behaviour policies in place, so you work within a remit. If your course leads to QTS within the first two years of teaching you've got a named mentor. But you've also got other colleagues and it's not unheard of for somebody to sit down and say they're having a problem with child A what are you doing to keep them in line? You're constantly working together to swap ideas, sanctions and bits of information about that child. 
+All schools have behaviour policies in place, so you work within a remit. If your course leads to QTS, for the first two years of teaching as an Early Career Teacher you'll have a named mentor. But you've also got other colleagues and it's not unheard of for somebody to sit down and say they're having a problem with child A what are you doing to keep them in line? You're constantly working together to swap ideas, sanctions and bits of information about that child. 
 
 If you want to develop your behaviour management skills there are [specialist national professional qualification (NPQ) courses](https://www.gov.uk/guidance/national-professional-qualification-npq-courses) available to help teachers learn how to create a culture of good behaviour in schools. 
 
