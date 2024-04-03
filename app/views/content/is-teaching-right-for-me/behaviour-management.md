@@ -47,7 +47,7 @@ Often building relationships with pupils happens outside of the classroom. It’
 
 But it has to be a two-way thing, you’ve got to give a little of yourself so they can empathise. So you could share your hopes and dreams. And if you've got a cat at home, that always helps.  
 
-## I’m quite quiet. Will I be assertive enough? 
+## If I'm a quiet person will I be assertive enough? 
 
 Your teacher training course will allow you to experiment with the best tone of voice for your own teaching style. Observe as many teachers as you can and cherry-pick the techniques and skills that they use for your own classroom. 
 
