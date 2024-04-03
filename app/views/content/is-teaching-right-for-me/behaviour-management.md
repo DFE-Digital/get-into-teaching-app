@@ -42,7 +42,7 @@ keywords:
 Teacher training adviser Jane Wilkinson has years of teaching experience. She answers some common concerns that trainee teachers have around how to manage behaviour in the classroom.
 
 ## How can I create a positive learning environment?
-There’s a big focus on how to create a learning environment to enable children to achieve their learning. In my experience of teaching hundreds of thousands of children, if they’re engrossed in their learning and know what it is they need to be doing, they'll be much less disruptive. The biggest challenge usually isn't the big things it’s more like low level chatting and disruption.  
+In my experience of teaching hundreds of thousands of children, if they’re engrossed in their learning and know what it is they need to be doing, they'll be much less disruptive. The biggest challenge usually isn't the big things it’s more like low level chatting and disruption.  
 
 Make sure you’re very clear. If children understand your expectations of them in terms of workload, behaviour and outcome and you scaffold that journey then behaviour becomes much less of a problem. Start off by modelling what you would want in your classroom. Do you want the children lining up at the start of the lesson? Or do you want them coming straight in and starting with the work? Now, I would always go for the later. So you've got to be as well organised as possible to have some kind of activity. 
 
