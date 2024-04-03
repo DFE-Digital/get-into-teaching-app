@@ -34,6 +34,9 @@ keywords:
   - Teaching
   - How to become a teacher
   - Teacher training courses
+  - Behaviour
+  - Management
+  - classroom concerns
 ---
 
 Teacher training advisers Chris Farr, Fran Lee, Sian Mills and Elaine Boyd have years of teaching experience. They talk about teacher development and how you can progress a career in teaching.
