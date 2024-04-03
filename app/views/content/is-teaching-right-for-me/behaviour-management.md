@@ -13,7 +13,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
-    Teacher pay and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits" 
+    What to expect in teacher training : "/train-to-be-a-teacher/initial-teacher-training" 
     Early career teachers : "/support-for-early-career-teachers"
 
 keywords:
