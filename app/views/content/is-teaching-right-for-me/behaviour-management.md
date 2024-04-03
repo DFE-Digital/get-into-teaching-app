@@ -39,15 +39,13 @@ keywords:
   - classroom concerns
 ---
 
-Teacher training advisers Chris Farr, Fran Lee, Sian Mills and Elaine Boyd have years of teaching experience. They talk about teacher development and how you can progress a career in teaching.
+Teacher training adviser Jane Wilkinson has years of teaching experience. She answers some common concerns that trainee teachers have around how to manage behaviour in the classroom.
 
-## Is there a set path to getting promoted as a teacher?
+## How do I build relationships with pupils? 
 
-<strong>Fran:</strong> Your career prospects can vary vastly depending on where you’re located, your employer and your training experience. For example, you might decide in your training period to set your targets in a particular area such as special educational needs and disabilities (SEND), or you might work in a sixth-form environment. And that can sway where your future takes you.  
+Often building relationships with pupils happens outside of the classroom. It’s having conversations with them at break time in the corridor or as they're coming into school or at after school club. And talking to them, not just about what they're learning from you, but taking an interest in them as people. What did they have for their tea last night? How’s their poorly dog? What kind of things that make them laugh or sad and getting to know their authentic self. 
 
-<strong>Sian:</strong> When I worked at a maintained primary state school it was quite traditional in terms of class teacher, head of year, deputy/assistant then headteacher. When I moved to a headship in an academy trust there was no deputy head. So you might not always go into a school that has a traditional structure. There’s not always a neat pathway.
-
-<strong>Chris:</strong> People may not realise how much potential there is for progression in teaching. They think they go into the world of the classroom and that’s it. Lots of teachers have added responsibilities they enjoy doing and find fulfilling. 
+But it has to be a two-way thing, you’ve got to give a little of yourself so they can empathise. So you could share your hopes and dreams. And if you've got a cat at home, that always helps.  
 
 ## Can you change the subject you teach?
 
