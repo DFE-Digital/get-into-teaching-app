@@ -53,7 +53,7 @@ Your teacher training course will allow you to experiment with the best tone of 
 
 I found that having a quieter voice required pupils to listen more actively. It was an excellent way to manage behaviour. 
 
-## How can I remember childrens' names?
+## How can I remember children's names?
 
 Knowing a child’s name is a really powerful behaviour management tool, so learning names is essential for building strong relationships. 
 
