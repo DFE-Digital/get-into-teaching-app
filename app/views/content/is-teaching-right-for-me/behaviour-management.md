@@ -51,7 +51,7 @@ Have routines and rituals or standard operational procedures so children know wh
 ## How do I manage more disruptive behaviour?
 
 ## Should I reward good behaviour?
-Children tend to respond well to praise. It might be telling them they've done really well. Or it might be giving them a merit or a community point or whatever your school does. 
+Children tend to respond well to praise. It might be telling them they've done really well, or giving them a merit or a community point or whatever your school does. 
 
 I always worked with parents as well, sending out postcards or making phone calls to tell them their child's been brilliant that day. It only takes a few seconds to do but the rewards in that can be huge. I might start a class and tell them I've got 2 brilliant phone calls home to give out. So they're competing with themselves to try and be the best that they can. But never promise something you're not going to deliver. 
 
