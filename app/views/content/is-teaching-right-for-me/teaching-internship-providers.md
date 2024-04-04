@@ -10,7 +10,7 @@ promo_content:
   - content/train-to-be-a-teacher/promos/eta-promo-internships
 backlink: /
 fullwidth: true
-navigation: 5.55
+navigation: 5.60
 navigation_title: Can I do a teaching internship?
 navigation_description: Earn from £300 per week and find out what it is really like in the classroom with a teaching internship.
 content:
