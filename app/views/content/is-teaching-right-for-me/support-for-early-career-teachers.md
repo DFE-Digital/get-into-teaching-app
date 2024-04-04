@@ -5,6 +5,8 @@ subcategory: Personal development
 description: |-
   Find out about the support early career teachers get when they start teaching, including mentor support and training based on the early career framework (ECF).
 navigation: 5.8
+navigation_title: Early career teachers (ECTs)
+navigation_description: Find out about the training and support available in your first two years as a teacher.
 related_content:
     Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
     Advice from an early career teacher : "/blog/being-myself-in-the-classroom"
