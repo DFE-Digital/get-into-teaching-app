@@ -39,7 +39,7 @@ keywords:
   - classroom concerns
 ---
 
-Teacher training adviser Jane Wilkinson has years of teaching experience. She answers some common concerns that trainee teachers have around how to manage behaviour in the classroom.
+Teacher training adviser Jane Wilkinson has years of teaching experience. She answers some common concerns trainee teachers often have around how to manage behaviour in the classroom.
 
 ## How can I create a positive learning environment?
 In my experience of teaching thousands of children, if they’re engrossed in their learning and know what it is they need to be doing, they'll be much less disruptive. The biggest challenge isn't usually big things it’s more the chatting and low-level disruption.  
