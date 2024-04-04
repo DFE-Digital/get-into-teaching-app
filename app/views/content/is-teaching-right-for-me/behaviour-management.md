@@ -49,7 +49,7 @@ Make sure you’re very clear. If children understand your expectations of them 
 Have routines and rituals or standard operational procedures so children know when they go to your class, this is what they do. So they understand what's required from them and know they'll be rewarded if they get that behaviour right.
 
 ## How do I manage more disruptive behaviour?
-Managing behaviour is a learning curve, and exactly what a teacher training course is designed for. You'll be offered practical guidance and support so don’t worry if you don’t get it right every time.
+Managing behaviour is a learning curve, and exactly what a teacher training course is designed for. Don't worry if you feel a bit nervous as you'll be offered practical guidance and support. And you're never going to get it right all of the time, which is OK.
 
 It’s all about the relationships you build with pupils. If they know they’ll get away with disruptive learning, they'll disrupt learning.
 You have to set and communicate firm but fair boundaries so they know they're safe and won't be ridiculed or embarrassed and their learning comes first. They’ll push against these boundaries because that’s what children do. But if they find they meet with a brick wall they won't push any further because they know what's going to happen in any lesson they turn up to. 
