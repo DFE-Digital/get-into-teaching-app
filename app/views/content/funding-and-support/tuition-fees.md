@@ -22,7 +22,7 @@ keywords:
     - Student Finance
     - Financial Support
 ---
-Find out about the cost of training to teach in England, including the amount you'll pay for course tuition fees.
+Find out about the cost of post graduate teacher training courses in England, including the amount you'll pay for courses that have tuition fees.
 
 ## Postgraduate teacher training course fees
 
