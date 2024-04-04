@@ -44,7 +44,7 @@ Teacher training adviser Jane Wilkinson has years of teaching experience. She an
 ## How can I create a positive learning environment?
 In my experience of teaching thousands of children, if they’re engrossed in their learning and know what it is they need to be doing, they'll be much less disruptive. The biggest challenge isn't usually big things, it’s more the chatting and low-level disruption.  
 
-Make sure you’re very clear. If children understand your expectations of them in terms of workload, behaviour and outcome and you scaffold that journey then behaviour becomes much less of a problem. Start off by modelling what you would want in your classroom. Do you want the children lining up at the start of the lesson? Or do you want them coming straight in and starting with the work?
+Make sure you’re very clear. If children understand your expectations of them in terms of workload, behaviour and outcomes then behaviour becomes much less of a problem. Start off by modelling what you would want in your classroom. Do you want the children lining up at the start of the lesson? Or do you want them coming straight in and starting with the work?
 
 Have routines and rituals or standard operational procedures so children know when they go to your class, this is what they do. So they understand what's required from them and know they'll be rewarded if they get that behaviour right.
 
