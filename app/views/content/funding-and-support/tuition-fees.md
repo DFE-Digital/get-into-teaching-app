@@ -3,7 +3,7 @@ title: "Teacher training tuition fees"
 heading: "Tuition fees"
 subcategory: Courses with fees
 description: |-
-    Find out about the cost of training to teach in England including the amount you'll pay for course tuition fees.
+    Find out about the cost of post graduate teacher training courses in England, including the amount you'll pay for courses that have tuition fees.
 related_content:
     Bursaries and scholarships: "/funding-and-support/scholarships-and-bursaries"
     Student finance for teacher training: "/funding-and-support/tuition-fee-and-maintenance-loans"
@@ -13,7 +13,7 @@ external_content:
 promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 navigation: 20.10
-navigation_description: Find out about the cost of training to teach in England including the amount you'll pay for tuition fees.
+navigation_description: Find out about the cost of post graduate teacher training courses in England, including the amount you'll pay for courses that have tuition fees.
 keywords:
     - Tuition Fees
     - Teacher Training Course Fees
