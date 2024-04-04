@@ -24,7 +24,7 @@ keywords:
 ---
 Find out about the cost of training to teach in England, including the amount you'll pay for course tuition fees.
 
-## Postgraduate teacher training course tuition fees
+## Postgraduate teacher training course fees
 
 The maximum tuition fee for a postgraduate teacher training course for UK applicants is:
 
