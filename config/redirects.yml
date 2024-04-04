@@ -354,6 +354,8 @@ redirects:
 
   # Blog tags
   "/blog/tag/get-into-teaching-events": "/events/about-get-into-teaching-events"
+  "/blog/tag/behaviour": "/is-teaching-right-for-me/behaviour-management"
+  "blog/tag/classroom-concerns": "/is-teaching-right-for-me/behaviour-management"
 
   # Covid page
   "/covid-19": "/"
