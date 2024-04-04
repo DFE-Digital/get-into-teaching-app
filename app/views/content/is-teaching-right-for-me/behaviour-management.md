@@ -62,7 +62,7 @@ Often building relationships with pupils happens outside of the classroom. It’
 But it has to be a two-way thing, you’ve got to give a little of yourself so they can empathise. So you could share your hopes and dreams. And if you've got a cat at home, that always helps.
 
 ## How can I reward good behaviour?
-Children tend to respond well to praise. It might be telling them they've done really well, or giving them a merit or a community point or whatever your school does. It's this kind of positive reinforcement that you would constantly do.
+Children tend to respond well to praise. It might be telling them they've done really well, or giving them a merit or a community point or whatever your school does. You constantly give them this kind of positive reinforcement.
 
 I always worked with parents and carers as well, sending out postcards or making phone calls to tell them their child's been brilliant that day. It only takes a few seconds to do but the rewards in that can be huge. I might start a class and tell them I've got 2 brilliant phone calls home to give out. So they're competing with themselves to try and be the best that they can. But never promise something you're not going to deliver. 
 
