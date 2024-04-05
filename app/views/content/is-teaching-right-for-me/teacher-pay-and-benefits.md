@@ -154,7 +154,7 @@ For comparison, you'd work 227 days per year (on average) if you worked full tim
 
 ## Teachers' pension scheme
 
-The teachers’ pension scheme is one of the most generous in the country and includes an employer contribution of 23.6%.
+The teachers’ pension scheme is one of the most generous in the country and includes an employer contribution of 28.6%.
 
 It is a 'defined benefit' pension and is:
 
