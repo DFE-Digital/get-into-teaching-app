@@ -3,7 +3,7 @@ title: "Managing behaviour in the classroom"
 heading: "Managing behaviour in the classroom"
 subcategory: Personal development
 description: |-
-  Teacher training adviser Jane Wilkinson answers questions about how to manage behaviour in the classroom.
+  Strategies to help behaviour management in the classroom so teachers can create a positive learning environment for children.
 date: "2024-01-09"
 backlink: "../../"
 navigation: 5.5
