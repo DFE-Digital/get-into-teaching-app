@@ -8,6 +8,7 @@ related_content:
     Teacher pay and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
     What is a Get Into Teaching event? : "/events/about-get-into-teaching-events"
+    Managing behaviour in the classroom: "/is-teaching-right-for-me/behaviour-management"
 calls_to_action:
     get-school-experience:
       name: simple
