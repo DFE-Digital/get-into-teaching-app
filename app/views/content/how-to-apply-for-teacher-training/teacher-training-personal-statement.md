@@ -35,6 +35,11 @@ external_content:
     - content/train-to-be-a-teacher/promos/apply-for-your-course
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
+quote:
+  q-Felix:
+    text: "Having a teacher training adviser was really beneficial when editing my personal statement and preparing for interviews. My top tips for the application process would be to get an adviser, and to think about what transferrable skills you have when writing your personal statement and answering interview questions."
+    name: "Felix, former teacher trainee"
+    classes: quote--indent
 
 ---
 
