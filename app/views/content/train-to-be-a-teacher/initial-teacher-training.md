@@ -11,6 +11,7 @@ related_content:
     Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Training and support for early career teachers : "/support-for-early-career-teachers"
+    Managing behaviour in the classroom: "/is-teaching-right-for-me/behaviour-management"
     How to apply : "/how-to-apply-for-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-itt
