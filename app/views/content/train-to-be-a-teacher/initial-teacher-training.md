@@ -50,7 +50,7 @@ All initial teacher training will help you:
 * plan and teach well structured lessons
 * adapt teaching to respond to the strengths and needs of all pupils
 * make accurate and productive use of assessment
-* manage behaviour effectively to ensure a good and safe learning
+* [manage behaviour effectively](/is-teaching-right-for-me/behaviour-management) to ensure a good and safe learning
 environment
 * make a positive contribution to your school community
 
