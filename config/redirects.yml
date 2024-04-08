@@ -352,9 +352,12 @@ redirects:
   "/blog/what-to-expect-on-your-teacher-training": "/train-to-be-a-teacher/initial-teacher-training"
   "/blog/school-experience-helped-me-decide-to-switch": "/is-teaching-right-for-me/get-school-experience"
   "/blog/working-to-your-own-beat": "/research"
+  "/blog/overcoming-challenges-to-become-a-teacher-autism": "/funding-and-support/if-youre-disabled"
 
   # Blog tags
   "/blog/tag/get-into-teaching-events": "/events/about-get-into-teaching-events"
+  "/blog/tag/autism": "/funding-and-support/if-youre-disabled"
+  "/blog/tag/neurodiversity": "/funding-and-support/if-youre-disabled"
 
   # Covid page
   "/covid-19": "/"
