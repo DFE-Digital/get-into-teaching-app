@@ -117,10 +117,10 @@ The salary threshold you must meet depends on the region you work in as a salari
 
 Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a skilled worker visa – this varies by region, as follows:
 
-* inner London: £23,099
-* outer London: £21,832
-* London fringe: £20,960
-* rest of England: £20,960
+* inner London: £25,831
+* outer London: £24,415
+* London fringe: £23,200
+* rest of England: £23,000
 
 Check the region you will be working in with your teacher training provider.
 
@@ -130,14 +130,14 @@ You may be able to train part-time, but your salary must meet the threshold for 
 
 There are 2 requirements:
 
-Your part-time salary must be at least £20,960.
+Your part-time salary must be at least £23,200.
 
 The full-time equivalent of your salary must meet the threshold set for the skilled worker visa in your region, as follows: 
 
-* inner London: £23,099
-* outer London: £21,832
-* London fringe: £20,960
-* rest of England: £20,960
+* inner London: £25,831
+* outer London: £24,415
+* London fringe: £23,200
+* rest of England: £23,000
 
 Check the region you will be working in with your teacher training provider.
 
