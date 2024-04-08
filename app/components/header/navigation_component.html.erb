@@ -6,34 +6,36 @@
   <% end %>
 <% end %>
 
-<div class="dropdown-menu-container" data-navigation-target="dropdown">
-  <div class="category-links">
-    <% all_resources.each do |resource| %>
-      <% if resource.subcategories.present? %>
-        <%= tag.ol class: "category-navigation hidden-menu", id: "menu-#{resource.path.parameterize}", data: {action: "click->navigation#toggleCategoryMenuItem", "selectors": "ol.page-navigation"} do %>
-          <% resource.subcategories.each do |category| %>
-            <%= category_link(category, resource) %>
-          <% end %>
-          <%= view_all_link(resource) %>
-        <% end %>
-      <% end %>
-    <% end %>
-  </div>
 
-  <div class="page-links">
-    <% all_resources.each do |resource| %>
-      <% if resource.subcategories.present? %>
-        <% resource.subcategories.each do |category| %>
-          <%= tag.ol class: "page-navigation hidden-menu", id: "menu-#{category.parameterize}" do %>
-            <% resource.children_in_subcategory(category).each do |child_resource| %>
-              <%= nav_link(child_resource) %>
-            <% end %>
-          <% end %>
-        <% end %>
-      <% end %>
-    <% end %>
-  </div>
 
-  <div class="key-links">
-  </div>
-</div>
+<!--<div class="dropdown-menu-container hidden-mobile" data-navigation-target="dropdown">-->
+<!--  <div class="category-links">-->
+    <%# all_resources.each do |resource| %>
+      <%# if resource.subcategories.present? %>
+        <%#= tag.ol class: "category-navigation hidden-menu", id: "menu-#{resource.path.parameterize}", data: {action: "click->navigation#toggleCategoryMenuItem", "selectors": "ol.page-navigation"} do %>
+          <%# resource.subcategories.each do |category| %>
+            <%#= category_link(category, resource) %>
+          <%# end %>
+          <%#= view_all_link(resource) %>
+        <%# end %>
+      <%# end %>
+    <%# end %>
+<!--  </div>-->
+
+<!--  <div class="page-links">-->
+    <%# all_resources.each do |resource| %>
+      <%# if resource.subcategories.present? %>
+        <%# resource.subcategories.each do |category| %>
+          <%#= tag.ol class: "page-navigation hidden-menu", id: "menu-#{category.parameterize}" do %>
+            <%# resource.children_in_subcategory(category).each do |child_resource| %>
+              <%#= nav_link(child_resource) %>
+            <%# end %>
+          <%# end %>
+        <%# end %>
+      <%# end %>
+    <%# end %>
+<!--  </div>-->
+
+<!--  <div class="key-links">-->
+<!--  </div>-->
+<!--</div>-->

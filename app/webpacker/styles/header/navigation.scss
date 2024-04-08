@@ -27,7 +27,7 @@ body > header nav {
     list-style: none;
     display: flex;
 
-    > li {
+    li {
       @include list-item-nav;
       @include reset;
       line-height: 1.2;
@@ -53,31 +53,103 @@ body > header nav {
 
     ol.primary {
       flex-direction: column;
+      flex-wrap: wrap;
       margin: 0;
       padding: 0 1em;
-      background: $cta-green;
 
-      > li {
-        border-bottom: 1px solid $white;
+      li {
+        // NB: this is for all <li> elements in the mobile menu
+        //border-bottom: 1px solid $white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: start;
+
+        .grow {
+          flex-grow: 1;
+        }
+
+        .break {
+          flex-basis: 100%;
+          height: 2px;
+          padding: 0;
+          margin: 0;
+        }
 
         &:last-child {
           border-bottom: none;
         }
+      }
 
-        &.active {
-          background-image: url("../images/icon-arrow-right.png");
-          background-position: left;
-          background-repeat: no-repeat;
-          padding-left: 1rem;
-        }
-
-        > a,
-        div {
-          display: block;
-          padding: 1em 0;
-          color: $white;
+      > li {
+        > a {
           font-weight: bold;
-          font-size: 16px;
+        }
+      }
+
+      a {
+        // NB: this is for all <a> elements
+        padding: 0.875em 1.25em;
+      }
+    }
+
+        //
+        //&.active {
+        //  background-image: url("../images/icon-arrow-right.png");
+        //  background-position: left;
+        //  background-repeat: no-repeat;
+        //  padding-left: 1rem;
+        //}
+
+        //> a, div {
+        //  display: block;
+        //  padding: 1em 0;
+        //  font-weight: bold;
+        //  font-size: 16px;
+        //}
+
+
+
+    ol.category-links-list {
+      //border: solid red 1px;
+      padding-left: 1em;
+      flex-basis: 100%;
+
+      >  li.active {
+        background: #F162A3;
+        > a {
+          font-weight: bold;
+        }
+      }
+
+      > li.view-all {
+        background: #ffffff;
+        border-left: none;
+      }
+
+      > li {
+        background: #F0F0F0;
+        font-size: 1em;
+        font-weight: normal;
+        border-left: solid #F162A3 4px;
+        //border-bottom: solid #fff 4px;
+      }
+    }
+
+    ol.page-links-list {
+      padding: 0;
+      flex-basis: 100%;
+
+      > li {
+        background: #ffffff;
+        //border-left: solid 4px #F162A3;
+        border-bottom: solid 1px #B7B9BB;
+      }
+
+      >  li.active {
+        > a {
+          font-weight: bold;
         }
       }
     }

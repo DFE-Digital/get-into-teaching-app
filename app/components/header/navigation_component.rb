@@ -25,7 +25,7 @@ module Header
       path = resource.path
       id = "menu-#{path.parameterize}"
       li_css = "active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)
-      link_css = "link--black link--no-underline"
+      link_css = "grow link--black link--no-underline"
       show_dropdown = resource.subcategories?
       aria_attributes = show_dropdown ? { expanded: false, controls: id } : {}
 
@@ -33,8 +33,21 @@ module Header
         safe_join([
           link_to(title, path, class: link_css, aria: aria_attributes),
           if show_dropdown
-            down_arrow_icon
+            expandable_icon
           end,
+          if resource.subcategories?
+            [
+              row_break,
+              tag.ol(class: "category-links-list") do
+                safe_join(
+                  [
+                    resource.subcategories.map { |category| category_link(category, resource) },
+                    view_all_link(resource),
+                  ]
+                )
+              end
+            ]
+          end
         ])
       end
     end
@@ -46,11 +59,18 @@ module Header
       li_css = "active" if subcategory == front_matter["subcategory"]
       link_css = "link--black link--no-underline"
       aria_attributes = { expanded: false, controls: id }
-
       tag.li class: li_css, data: { "id": id } do
         safe_join([
           link_to(title, path, class: link_css, aria: aria_attributes),
-          right_arrow_icon,
+          expandable_icon,
+          row_break,
+          tag.ol(class: 'page-links-list') do
+            safe_join(
+              [
+                resource.children_in_subcategory(subcategory).map { |child_resource| nav_link(child_resource) }
+              ]
+            )
+          end
         ])
       end
     end
@@ -59,7 +79,7 @@ module Header
       title = "View all in #{resource.title}"
       path = resource.path
       id = "menu-view-all-#{resource.path.parameterize}"
-      li_css = "active" if uri_is_root?(path)
+      li_css = "view-all #{active if uri_is_root?(path)}"
       link_css = "link--black"
 
       tag.li class: li_css, data: { id: id, "direct-link": true } do
@@ -67,12 +87,20 @@ module Header
       end
     end
 
-    def down_arrow_icon
-      tag.span(class: "nav-icon nav-icon__arrow-down", "aria-hidden": true)
-    end
+  def row_break
+    tag.div(class: "break", "aria-hidden": true)
+  end
 
-    def right_arrow_icon
-      tag.span(class: "nav-icon nav-icon__arrow-right", "aria-hidden": true)
+    # def down_arrow_icon
+    #   tag.span(class: "nav-icon nav-icon__arrow-down", "aria-hidden": true)
+    # end
+
+    # def right_arrow_icon
+    #   tag.span(class: "nav-icon nav-icon__arrow-right", "aria-hidden": true)
+    # end
+
+    def expandable_icon
+      tag.span(class: "nav-icon nav-icon__arrow-down", "aria-hidden": true)
     end
 
     def uri_is_root?(link_path)
