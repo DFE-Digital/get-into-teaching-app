@@ -355,6 +355,7 @@ redirects:
 
   # Blog tags
   "/blog/tag/get-into-teaching-events": "/events/about-get-into-teaching-events"
+  "/blog/tag/autism": "/funding-and-support/if-youre-disabled"
 
   # Covid page
   "/covid-19": "/"
