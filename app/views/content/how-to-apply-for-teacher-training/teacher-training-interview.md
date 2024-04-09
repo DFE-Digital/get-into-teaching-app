@@ -31,7 +31,7 @@ Congratulations on being invited for an interview! This is an important stage in
 
 These tips can help you prepare for a successful interview. 
 
-It could be an interview for a course that leads to qualified teacher status (QTS), QTS with postgraduate certificate in education (PGCE), or PGCE without QTS. 
+It could be an interview for a course that leads to qualified teacher status (QTS), QTS with a postgraduate certificate in education (PGCE), or PGCE without QTS. 
 
 The exact interview process will vary depending on the teacher training provider.
 
