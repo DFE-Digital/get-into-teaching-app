@@ -1,7 +1,10 @@
 import { Controller } from '@hotwired/stimulus';
 
+const menuSelectors =
+  'ol.category-links-list, ol.page-links-list, ol.category-navigation, ol.page-navigation';
+
 export default class extends Controller {
-  static targets = ['primary', 'nav', 'menu', 'dropdown'];
+  static targets = ['primary', 'nav', 'menu', 'desktop'];
 
   connect() {}
 
@@ -28,6 +31,8 @@ export default class extends Controller {
     const ol = event.target.closest('ol');
     const li = event.target.closest('li');
     const selectedIcon = li.querySelector('span.nav-icon');
+    const selectors = ol.dataset.selectors || menuSelectors;
+    const toggleIds = li.dataset.toggleIds || [];
 
     [].forEach.call(
       this.navTarget.querySelectorAll('span.nav-icon'),
@@ -37,14 +42,14 @@ export default class extends Controller {
             if (!(li.dataset.directLink === 'true')) {
               event.preventDefault();
               event.stopPropagation();
-              self.showMenu(li.dataset.id, ol.dataset.selectors);
+              self.showMenu(toggleIds.split(' '), selectors);
               li.querySelector('a').ariaExpanded = true;
             }
           } else {
             event.preventDefault();
             event.stopPropagation();
             self.toggleIconDown(icon);
-            self.hideMenu();
+            self.hideMenu(selectors);
             li.querySelector('a').ariaExpanded = false;
           }
         } else {
@@ -73,38 +78,17 @@ export default class extends Controller {
     return false;
   }
 
-  toggleCategoryMenuItem(event) {
-    // fires when the user clicks on a category menu item
-    const ol = event.target.closest('ol');
-    const li = event.target.closest('li');
-
-    // set expanded=true on selected category link
-    if (!(li.dataset.directLink === 'true')) {
-      event.preventDefault();
-      event.stopPropagation();
-      this.showMenu(li.dataset.id, ol.dataset.selectors);
-      li.querySelector('a').ariaExpanded = true;
-    }
-
-    // set expanded=false on all other category links
+  showMenu(toggleIds, selectors) {
     [].forEach.call(
-      ol.querySelectorAll('ol.category-navigation li'),
+      this.navTarget.querySelectorAll(selectors),
       function (child) {
-        if (child !== li && !child.dataset.directLink) {
-          child.querySelector('a').ariaExpanded = false;
-        }
-      }
-    );
-  }
-
-  showMenu(id, selectors) {
-    [].forEach.call(
-      this.dropdownTarget.querySelectorAll(selectors),
-      function (child) {
-        if (child.id === id && child.classList.contains('hidden-menu')) {
+        if (
+          toggleIds.includes(child.id) &&
+          child.classList.contains('hidden-menu')
+        ) {
           child.classList.remove('hidden-menu');
         } else if (
-          child.id !== id &&
+          !toggleIds.includes(child.id) &&
           !child.classList.contains('hidden-menu')
         ) {
           child.classList.add('hidden-menu');
@@ -113,11 +97,9 @@ export default class extends Controller {
     );
   }
 
-  hideMenu() {
+  hideMenu(selectors) {
     [].forEach.call(
-      this.dropdownTarget.querySelectorAll(
-        'ol.category-navigation, ol.page-navigation'
-      ),
+      this.navTarget.querySelectorAll(selectors),
       function (child) {
         if (!child.classList.contains('hidden-menu')) {
           child.classList.add('hidden-menu');

@@ -59,7 +59,6 @@ body > header nav {
 
       li {
         // NB: this is for all <li> elements in the mobile menu
-        //border-bottom: 1px solid $white;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -94,30 +93,13 @@ body > header nav {
       }
     }
 
-        //
-        //&.active {
-        //  background-image: url("../images/icon-arrow-right.png");
-        //  background-position: left;
-        //  background-repeat: no-repeat;
-        //  padding-left: 1rem;
-        //}
-
-        //> a, div {
-        //  display: block;
-        //  padding: 1em 0;
-        //  font-weight: bold;
-        //  font-size: 16px;
-        //}
-
-
-
     ol.category-links-list {
-      //border: solid red 1px;
       padding-left: 1em;
       flex-basis: 100%;
 
       >  li.active {
         background: #F162A3;
+
         > a {
           font-weight: bold;
         }
@@ -133,7 +115,6 @@ body > header nav {
         font-size: 1em;
         font-weight: normal;
         border-left: solid #F162A3 4px;
-        //border-bottom: solid #fff 4px;
       }
     }
 
@@ -143,7 +124,7 @@ body > header nav {
 
       > li {
         background: #ffffff;
-        //border-left: solid 4px #F162A3;
+        // border-left: solid 4px #F162A3;
         border-bottom: solid 1px #B7B9BB;
       }
 
@@ -198,6 +179,12 @@ body > header nav {
   }
 }
 
+ol.primary {
+  ol.hidden-menu, li.hidden-menu {
+    display: none;
+  }
+}
+
 .nav-icon {
   background-position: center;
   background-repeat: no-repeat;
@@ -225,11 +212,11 @@ body > header nav {
 }
 
 .dropdown-menu-container {
-  div.category-links, div.page-links, div.key-links {
-    ol.hidden-menu {
-      display: none;
-    }
-  }
+  // div.category-links, div.page-links, div.key-links {
+  //  ol.hidden-menu {
+  //    display: none;
+  //  }
+  // }
 
   ol.category-navigation, ol.page-navigation {
     display: flex;

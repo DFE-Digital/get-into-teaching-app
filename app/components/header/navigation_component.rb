@@ -23,13 +23,15 @@ module Header
     def nav_link(resource)
       title = resource.title
       path = resource.path
-      id = "menu-#{path.parameterize}"
-      li_css = "active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)
+      toggle_child_menu_inline_id = "#{path.parameterize}-menu-categories"
+      toggle_child_menu_dropdown_id = "#{path.parameterize}-dropdown-categories"
+      toggle_child_menu_ids = [toggle_child_menu_inline_id, toggle_child_menu_dropdown_id].join(" ")
+
+      li_css = ("active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)).to_s
       link_css = "grow link--black link--no-underline"
       show_dropdown = resource.subcategories?
-      aria_attributes = show_dropdown ? { expanded: false, controls: id } : {}
-
-      tag.li class: li_css, data: { "id": id, "direct-link": !show_dropdown } do
+      aria_attributes = show_dropdown ? { expanded: false, controls: toggle_child_menu_ids } : {}
+      tag.li class: li_css, data: { "toggle-ids": toggle_child_menu_ids, "direct-link": !show_dropdown } do
         safe_join([
           link_to(title, path, class: link_css, aria: aria_attributes),
           if show_dropdown
@@ -38,16 +40,17 @@ module Header
           if resource.subcategories?
             [
               row_break,
-              tag.ol(class: "category-links-list") do
+
+              tag.ol(class: "category-links-list hidden-menu", id: toggle_child_menu_inline_id, data: { selectors: "ol.page-links-list, ol.page-navigation" }) do
                 safe_join(
                   [
                     resource.subcategories.map { |category| category_link(category, resource) },
                     view_all_link(resource),
-                  ]
+                  ],
                 )
-              end
+              end,
             ]
-          end
+          end,
         ])
       end
     end
@@ -55,22 +58,26 @@ module Header
     def category_link(subcategory, resource)
       title = subcategory
       path = "#{resource.path}##{subcategory.parameterize}"
-      id = "menu-#{subcategory.parameterize}"
-      li_css = "active" if subcategory == front_matter["subcategory"]
+      toggle_child_menu_inline_id = "#{resource.path.parameterize}-#{subcategory.parameterize}-menu-pages"
+      toggle_child_menu_dropdown_id = "#{resource.path.parameterize}-#{subcategory.parameterize}-dropdown-pages"
+      toggle_child_menu_ids = [toggle_child_menu_inline_id, toggle_child_menu_dropdown_id].join(" ")
+
+      li_css = ("active" if subcategory == front_matter["subcategory"]).to_s
       link_css = "link--black link--no-underline"
-      aria_attributes = { expanded: false, controls: id }
-      tag.li class: li_css, data: { "id": id } do
+      aria_attributes = { expanded: false, controls: toggle_child_menu_ids }
+      tag.li class: li_css, data: { "toggle-ids": toggle_child_menu_ids } do
         safe_join([
           link_to(title, path, class: link_css, aria: aria_attributes),
           expandable_icon,
           row_break,
-          tag.ol(class: 'page-links-list') do
+
+          tag.ol(class: "page-links-list hidden-menu", id: toggle_child_menu_inline_id) do
             safe_join(
               [
-                resource.children_in_subcategory(subcategory).map { |child_resource| nav_link(child_resource) }
-              ]
+                resource.children_in_subcategory(subcategory).map { |child_resource| nav_link(child_resource) },
+              ],
             )
-          end
+          end,
         ])
       end
     end
@@ -79,7 +86,7 @@ module Header
       title = "View all in #{resource.title}"
       path = resource.path
       id = "menu-view-all-#{resource.path.parameterize}"
-      li_css = "view-all #{active if uri_is_root?(path)}"
+      li_css = "view-all #{'active' if uri_is_root?(path)}"
       link_css = "link--black"
 
       tag.li class: li_css, data: { id: id, "direct-link": true } do
@@ -87,9 +94,9 @@ module Header
       end
     end
 
-  def row_break
-    tag.div(class: "break", "aria-hidden": true)
-  end
+    def row_break
+      tag.div(class: "break", "aria-hidden": true)
+    end
 
     # def down_arrow_icon
     #   tag.span(class: "nav-icon nav-icon__arrow-down", "aria-hidden": true)

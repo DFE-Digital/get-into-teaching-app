@@ -1,14 +1,14 @@
+<!-- mobile navigation -->
 <%= tag.nav id: "primary-navigation", class: "hidden-mobile", data: { "navigation-target": "nav", action: "click->navigation#toggleNavMenuItem" }, "aria-label": "Primary navigation", role: "navigation" do %>
-  <%= tag.ol class: "primary", data: { "navigation-target": "primary", "selectors": "ol.category-navigation, ol.page-navigation" } do %>
+  <%= tag.ol class: "primary", data: { "navigation-target": "primary", "selectors": "ol.category-navigation, ol.category-links-list, ol.page-navigation" } do %>
     <% all_resources.each do |resource| %>
       <%= nav_link(resource) %>
     <% end %>
   <% end %>
 <% end %>
 
-
-
-<!--<div class="dropdown-menu-container hidden-mobile" data-navigation-target="dropdown">-->
+<!-- desktop navigation -->
+<!--<div class="dropdown-menu-container hidden-mobile" data-navigation-target="desktop">-->
 <!--  <div class="category-links">-->
     <%# all_resources.each do |resource| %>
       <%# if resource.subcategories.present? %>
