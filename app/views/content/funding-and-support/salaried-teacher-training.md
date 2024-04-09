@@ -5,7 +5,6 @@ description: |-
 related_content:
     Nathan's experience of salaried teacher training: "/blog/salaried-teacher-training-classroom-learning"
     If you've worked as an unqualified teacher: "/train-to-be-a-teacher/assessment-only-route-to-qts"
-    What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:
