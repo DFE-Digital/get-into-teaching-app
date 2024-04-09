@@ -21,6 +21,8 @@ keywords:
   - PGCE
   - Post-graduate
   - Post-grad
+  - Postgraduate
+  - Postgrad
   - Certificate
   - Education
   - QTS
