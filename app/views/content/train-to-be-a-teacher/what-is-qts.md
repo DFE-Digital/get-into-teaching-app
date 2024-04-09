@@ -23,8 +23,9 @@ inset_text:
     color: grey
 keywords:
   - PGCE
+  - Postgraduate
+  - Postgrad
   - Post-graduate
-  - Post-grad
   - Certificate
   - Diploma
   - Education
