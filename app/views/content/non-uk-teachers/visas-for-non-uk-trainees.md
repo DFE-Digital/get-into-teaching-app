@@ -120,7 +120,7 @@ Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a
 * inner London: £25,831
 * outer London: £24,415
 * London fringe: £23,200
-* rest of England: £23,000
+* rest of England: £23,200
 
 Check the region you will be working in with your teacher training provider.
 
@@ -137,7 +137,7 @@ The full-time equivalent of your salary must meet the threshold set for the skil
 * inner London: £25,831
 * outer London: £24,415
 * London fringe: £23,200
-* rest of England: £23,000
+* rest of England: £23,200
 
 Check the region you will be working in with your teacher training provider.
 
