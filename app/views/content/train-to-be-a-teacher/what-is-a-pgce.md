@@ -49,14 +49,16 @@ Many teacher training courses also offer you a postgraduate qualification such a
 You can do a teacher training course that leads to:
 
 * QTS only
-* PGCE only
 * QTS with PGCE
+* PGCE without QTS
 
-Getting QTS only means that you’re qualified to teach in most schools in England. It may also mean that your course fees are lower, you submit fewer assignments, and the course could be shorter.
+## Benefits of having QTS
 
-Getting PGCE only means you will not be qualified to teach in most primary, secondary and special schools in England, although some schools will employ teachers without QTS.
+Getting QTS means you’re qualified to teach in most schools in England. It may also mean that your course fees are lower, you submit fewer assignments, and the course could be shorter.
 
-A PGCE alone will also not entitle you to the same benefits during your training and career as QTS. For example, better pay and support when you start teaching.
+Getting a PGCE without QTS means you will not be qualified to teach in most primary, secondary and special schools in England, although some schools will employ teachers without QTS.
+
+A PGCE without QTS will also not entitle you to the same benefits during your training and career as a PGCE with QTS. For example, better pay and support when you start teaching.
 
 [Read about Nathan who chose to get QTS with PGCE](/blog/salaried-teacher-training-classroom-learning).
 
