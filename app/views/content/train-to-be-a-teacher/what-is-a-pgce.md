@@ -58,7 +58,7 @@ Getting QTS means you’re qualified to teach in most schools in England. It may
 
 Getting a PGCE without QTS means you will not be qualified to teach in most primary, secondary and special schools in England, although some schools will employ teachers without QTS.
 
-A PGCE without QTS will also not entitle you to the same benefits during your training and career as a PGCE with QTS. For example, better pay and support when you start teaching.
+A PGCE without QTS will also not entitle you to the same benefits during your training and career as QTS with PGCE. For example, better pay and support when you start teaching.
 
 [Read about Nathan who chose to get QTS with PGCE](/blog/salaried-teacher-training-classroom-learning).
 
