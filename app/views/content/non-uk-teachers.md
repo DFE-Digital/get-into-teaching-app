@@ -1,6 +1,6 @@
 ---
-title: "Non-UK teachers"
-heading: "Non-UK teachers"
+title: "Non-UK citizens"
+heading: "Non-UK citizens"
 description: |-
   Find out how you can train to teach or teach in England if you're a non-UK citizen.
 title_paragraph: |-
@@ -9,7 +9,7 @@ title_bg_color: white
 hero_bg_color: yellow
 hero_blend_content: true
 navigation: 35
-navigation_title: Non-UK teachers
+navigation_title: Non-UK citizens
 navigation_path: "/non-uk-teachers"
 layout: "layouts/category"
 content:
