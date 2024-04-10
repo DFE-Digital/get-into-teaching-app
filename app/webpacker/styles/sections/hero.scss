@@ -301,6 +301,7 @@ $mobile-cutoff: 800px;
 	
 		.title {
 			padding: 90px;
+			z-index: 1;
 
 			@media only screen and (max-width: 1200px) {
 				padding: 50px;
@@ -342,6 +343,7 @@ $mobile-cutoff: 800px;
 				object-position: 100% 30%;
 				width: 100%;
 				height: 100%;
+				vertical-align: bottom;
 			}
 		}
 
