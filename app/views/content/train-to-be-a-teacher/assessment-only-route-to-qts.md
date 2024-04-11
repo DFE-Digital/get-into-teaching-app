@@ -510,7 +510,7 @@ provider_groups:
     - header: University of Derby
       link: https://www.derby.ac.uk/
       name: Jayne Leggott
-      email: AO@derby.ac.uk
+      email: askadmissions@derby.ac.uk
     - header: University of Sunderland
       link: https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/
       name: Ian Elliott
