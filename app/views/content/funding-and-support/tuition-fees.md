@@ -22,7 +22,7 @@ keywords:
     - Student Finance
     - Financial Support
 ---
-For most postgraduate teacher training courses in England you need to pay a tuition fee. There are a few salaried teacher training courses that do not have tuition fees and pay you while you train to teach. But it can be difficult to get a place on a salaried teacher training course.
+For most postgraduate teacher training courses in England you need to pay a tuition fee. There are some salaried teacher training courses that do not have tuition fees and pay you while you train to teach. These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible.
 
 ## Postgraduate teacher training course fees
 
