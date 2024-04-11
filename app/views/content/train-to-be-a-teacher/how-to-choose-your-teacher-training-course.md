@@ -24,7 +24,7 @@ keywords:
 
 ---
 
-All postgraduate teacher training courses include time spent in school placements with some theoretical learning. 
+All primary and secondary postgraduate teacher training courses include time spent in school placements with some theoretical learning. 
 
 The main differences between courses are: 
 
