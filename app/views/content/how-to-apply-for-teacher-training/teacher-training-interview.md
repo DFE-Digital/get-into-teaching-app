@@ -27,11 +27,11 @@ promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-interviews
 ---
 
-Congratulations on being invited for an interview! This is an important stage in successfully getting a place on a teacher training course.
+Congratulations on being invited for an interview! This is an important stage in successfully getting a place on a primary or secondary teacher training course.
 
 These tips can help you prepare for a successful interview. 
 
-It could be an interview for a course that leads to qualified teacher status (QTS), QTS with a postgraduate certificate in education (PGCE), or PGCE without QTS. 
+It could be an interview for a course that leads to qualified teacher status (QTS) or QTS with a postgraduate certificate in education (PGCE). 
 
 The exact interview process will vary depending on the teacher training provider.
 
