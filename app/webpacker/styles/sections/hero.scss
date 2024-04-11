@@ -289,7 +289,7 @@ $mobile-cutoff: 800px;
 		justify-content: center;
 		align-items: center;
 		padding:0;
-		max-height:500px;
+		max-height:420px;
 		max-width:100%;
 		overflow: hidden;
 		
@@ -325,7 +325,7 @@ $mobile-cutoff: 800px;
 				display:inline;
 				-webkit-box-decoration-break: clone;
 				box-decoration-break: clone;
-				line-height: 1.11;	
+				line-height: 1.15;	
 				
 				@media only screen and (max-width: 1200px) {
 					font-size: 54px;
