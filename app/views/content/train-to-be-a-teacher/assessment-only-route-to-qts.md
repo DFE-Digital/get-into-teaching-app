@@ -118,7 +118,7 @@ provider_groups:
     - header: University of Derby
       link: https://www.derby.ac.uk/
       name: Jayne Leggott
-      email: AO@derby.ac.uk
+      email: askadmissions@derby.ac.uk
     - header: University of Northampton
       email: admissions@northampton.ac.uk
   Greater London:
