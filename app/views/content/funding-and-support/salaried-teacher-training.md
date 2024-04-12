@@ -69,7 +69,7 @@ Full-time salaried teacher training will usually last:
 
 Some courses can begin at other points in the year and there may be part-time courses available. 
 
-As well as QTS, you may also be able to work towards QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce) but you may have to pay an extra fee. 
+Some salaried courses award QTS only. You may have the option to do a salaried course where you can work towards QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce) but you may have to pay an extra fee. 
 
 [Find out more about what to expect during your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
 
