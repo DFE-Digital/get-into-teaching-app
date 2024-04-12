@@ -52,10 +52,6 @@ You can do a teacher training course that leads to:
 * QTS with PGCE
 * PGCE without QTS
 
-## Benefits of having QTS
-
-Getting QTS means you’re qualified to teach in most schools in England. It may also mean that your course fees are lower, you submit fewer assignments, and the course could be shorter.
-
 Getting a PGCE without QTS means you will not be qualified to teach in most primary, secondary and special schools in England, although some schools will employ teachers without QTS.
 
 If you get a PGCE without QTS you will also not be entitled to the same benefits during your training and career as QTS with PGCE. For example, better pay and support when you start teaching.
@@ -74,11 +70,13 @@ You may want to do a master’s in education, for example, for your professional
 
 ## Types of PGCE courses
 
-You can get a PGCE in primary education, secondary education, or further/adult education. Your course will involve both school placements and academic theory.
+You can get QTS with a PGCE in primary and secondary education. Your course will involve both school placements and academic theory.
 
 You can do this through a school-led, university-led, or an apprenticeship teacher training programme.
 
 You can do a full or part-time PGCE course.
+
+You can also do a PGCE without QTS in [further education](/is-teaching-right-for-me/become-a-further-education-teacher).
 
 As part of selecting your course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
 
