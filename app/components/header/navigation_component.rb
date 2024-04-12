@@ -20,69 +20,95 @@ module Header
 
   private
 
-    def nav_link(resource)
+    def sync_mode(mode)
+      mode == :mobile ? :desktop : :mobile
+    end
+
+    def nav_link(resource, mode)
       title = resource.title
       path = resource.path
-      toggle_child_menu_inline_id = "#{path.parameterize}-menu-categories"
-      toggle_child_menu_dropdown_id = "#{path.parameterize}-dropdown-categories"
-      toggle_child_menu_ids = [toggle_child_menu_inline_id, toggle_child_menu_dropdown_id].join(" ")
-
+      li_id = "#{path.parameterize}-#{mode}"
+      li_sync_id = "#{path.parameterize}-#{sync_mode(mode)}"
+      child_menu_id = category_list_id(resource, mode)
+      child_menu_sync_id = category_list_id(resource, sync_mode(mode))
+      child_menu_ids = [child_menu_id, child_menu_sync_id].join(" ")
       li_css = ("active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)).to_s
       link_css = "grow link--black link--no-underline"
       show_dropdown = resource.subcategories?
-      aria_attributes = show_dropdown ? { expanded: false, controls: toggle_child_menu_ids } : {}
-      tag.li class: li_css, data: { "toggle-ids": toggle_child_menu_ids, "direct-link": !show_dropdown } do
+      aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_ids } : {}
+      tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": !show_dropdown } do
         safe_join([
           link_to(title, path, class: link_css, aria: aria_attributes),
           if show_dropdown
             expandable_icon
           end,
-          if resource.subcategories?
+          if mode == :mobile && resource.subcategories?
             [
               row_break,
-
-              tag.ol(class: "category-links-list hidden-menu", id: toggle_child_menu_inline_id, data: { selectors: "ol.page-links-list, ol.page-navigation" }) do
-                safe_join(
-                  [
-                    resource.subcategories.map { |category| category_link(category, resource) },
-                    view_all_link(resource),
-                  ],
-                )
-              end,
+              category_list(resource: resource, css_class: "category-links-list hidden-menu hidden-desktop", mode: mode)
             ]
           end,
         ])
       end
     end
 
-    def category_link(subcategory, resource)
+    def category_list(resource:, css_class:, mode:)
+      tag.ol(class: css_class, id: category_list_id(resource, mode)) do
+        safe_join(
+          [
+            resource.subcategories.map do |category|
+              category_link(category, resource, mode)
+            end,
+            view_all_link(resource, mode),
+          ],
+          )
+      end
+    end
+
+    def category_list_id(resource, mode)
+      "#{resource.path.parameterize}-categories-#{mode}"
+    end
+
+    def category_link(subcategory, resource, mode)
       title = subcategory
       path = "#{resource.path}##{subcategory.parameterize}"
-      toggle_child_menu_inline_id = "#{resource.path.parameterize}-#{subcategory.parameterize}-menu-pages"
-      toggle_child_menu_dropdown_id = "#{resource.path.parameterize}-#{subcategory.parameterize}-dropdown-pages"
-      toggle_child_menu_ids = [toggle_child_menu_inline_id, toggle_child_menu_dropdown_id].join(" ")
-
+      li_id = "#{resource.path.parameterize}-#{subcategory.parameterize}-#{mode}"
+      li_sync_id = "#{resource.path.parameterize}-#{subcategory.parameterize}-#{sync_mode(mode)}"
+      child_menu_id = page_list_id(resource, subcategory, mode)
+      child_menu_sync_id = page_list_id(resource, subcategory, sync_mode(mode))
+      child_menu_ids = [child_menu_id, child_menu_sync_id].join(" ")
       li_css = ("active" if subcategory == front_matter["subcategory"]).to_s
       link_css = "link--black link--no-underline"
-      aria_attributes = { expanded: false, controls: toggle_child_menu_ids }
-      tag.li class: li_css, data: { "toggle-ids": toggle_child_menu_ids } do
+      aria_attributes = { expanded: false, controls: child_menu_ids }
+      tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": false } do
         safe_join([
           link_to(title, path, class: link_css, aria: aria_attributes),
           expandable_icon,
           row_break,
-
-          tag.ol(class: "page-links-list hidden-menu", id: toggle_child_menu_inline_id) do
-            safe_join(
-              [
-                resource.children_in_subcategory(subcategory).map { |child_resource| nav_link(child_resource) },
-              ],
-            )
-          end,
+          if mode == :mobile
+            page_list(resource: resource, subcategory: subcategory, css_class: "page-links-list hidden-menu hidden-desktop", mode: mode)
+          end
         ])
       end
     end
 
-    def view_all_link(resource)
+    def page_list_id(resource, subcategory, mode)
+      "#{resource.path.parameterize}-#{subcategory.parameterize}-pages-#{mode}"
+    end
+
+    def page_list(resource:, subcategory:, css_class:, mode:)
+      tag.ol(class: css_class, id: page_list_id(resource, subcategory, mode)) do
+        safe_join(
+          [
+            resource.children_in_subcategory(subcategory).map do |child_resource|
+              nav_link(child_resource, mode)
+            end
+          ],
+          )
+      end
+    end
+
+    def view_all_link(resource, mode)
       title = "View all in #{resource.title}"
       path = resource.path
       id = "menu-view-all-#{resource.path.parameterize}"

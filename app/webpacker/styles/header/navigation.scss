@@ -48,7 +48,7 @@ body > header nav {
     flex-direction: column-reverse;
 
     &.hidden-mobile {
-      display: none;
+      display: none !important;
     }
 
     ol.primary {
@@ -138,6 +138,11 @@ body > header nav {
 
   // desktop and wide
   @include mq($from: desktop) {
+
+    .hidden-desktop {
+      display: none;
+    }
+
     ol.primary {
       flex-grow: 1;
       align-items: flex-end;
@@ -179,11 +184,15 @@ body > header nav {
   }
 }
 
-ol.primary {
-  ol.hidden-menu, li.hidden-menu {
-    display: none;
-  }
+ol.hidden-menu {
+  display: none !important;
 }
+
+//ol.primary {
+//  ol.hidden-menu, li.hidden-menu {
+//    display: none;
+//  }
+//}
 
 .nav-icon {
   background-position: center;
@@ -211,7 +220,7 @@ ol.primary {
   }
 }
 
-.dropdown-menu-container {
+.desktop-menu-container {
   // div.category-links, div.page-links, div.key-links {
   //  ol.hidden-menu {
   //    display: none;

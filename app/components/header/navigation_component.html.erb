@@ -1,41 +1,34 @@
 <!-- mobile navigation -->
-<%= tag.nav id: "primary-navigation", class: "hidden-mobile", data: { "navigation-target": "nav", action: "click->navigation#toggleNavMenuItem" }, "aria-label": "Primary navigation", role: "navigation" do %>
-  <%= tag.ol class: "primary", data: { "navigation-target": "primary", "selectors": "ol.category-navigation, ol.category-links-list, ol.page-navigation" } do %>
+<%= tag.nav id: "primary-navigation", class: "hidden-mobile", data: { "navigation-target": "nav", action: "click->navigation#handleNavMenuClick" }, "aria-label": "Primary navigation", role: "navigation" do %>
+  <%= tag.ol class: "primary", data: { "navigation-target": "primary" } do %> <!-- "selectorsXXX": "ol.category-navigation, ol.category-links-list, ol.page-navigation" -->
     <% all_resources.each do |resource| %>
-      <%= nav_link(resource) %>
+      <%= nav_link(resource, :mobile) %>
     <% end %>
   <% end %>
 <% end %>
 
-<!-- desktop navigation -->
-<!--<div class="dropdown-menu-container hidden-mobile" data-navigation-target="desktop">-->
-<!--  <div class="category-links">-->
-    <%# all_resources.each do |resource| %>
-      <%# if resource.subcategories.present? %>
-        <%#= tag.ol class: "category-navigation hidden-menu", id: "menu-#{resource.path.parameterize}", data: {action: "click->navigation#toggleCategoryMenuItem", "selectors": "ol.page-navigation"} do %>
-          <%# resource.subcategories.each do |category| %>
-            <%#= category_link(category, resource) %>
-          <%# end %>
-          <%#= view_all_link(resource) %>
-        <%# end %>
-      <%# end %>
-    <%# end %>
-<!--  </div>-->
 
-<!--  <div class="page-links">-->
-    <%# all_resources.each do |resource| %>
-      <%# if resource.subcategories.present? %>
-        <%# resource.subcategories.each do |category| %>
-          <%#= tag.ol class: "page-navigation hidden-menu", id: "menu-#{category.parameterize}" do %>
-            <%# resource.children_in_subcategory(category).each do |child_resource| %>
-              <%#= nav_link(child_resource) %>
-            <%# end %>
-          <%# end %>
-        <%# end %>
-      <%# end %>
-    <%# end %>
-<!--  </div>-->
+<!-- desktop dropdown navigation -->
+<%= tag.div id: "secondary-navigation", class: "desktop-menu-container hidden-mobile", data: {"navigation-target": "desktop", action:"click->navigation#handleNavMenuClick"}, "aria-label": "Secondary navigation", role: "navigation" do %>
+  <div class="category-links">
+    <% all_resources.each do |resource| %>
+      <% if resource.subcategories.present? %>
+        <%= category_list(resource: resource, css_class: "category-navigation hidden-menu", mode: :desktop ) %>
+      <% end %>
+    <% end %>
+  </div>
 
-<!--  <div class="key-links">-->
-<!--  </div>-->
-<!--</div>-->
+  <div class="page-links">
+    <% all_resources.each do |resource| %>
+      <% if resource.subcategories.present? %>
+        <% resource.subcategories.each do |subcategory| %>
+          <%= page_list(resource: resource, subcategory: subcategory, css_class: "page-navigation hidden-menu", mode: :desktop) %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+
+    <div class="key-links">
+    </div>
+
+<% end %>
