@@ -184,6 +184,12 @@ body > header nav {
   }
 }
 
+@include mq($until: desktop) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
 ol.hidden-menu {
   display: none !important;
 }
