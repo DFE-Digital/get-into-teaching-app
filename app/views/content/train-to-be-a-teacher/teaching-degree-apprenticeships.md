@@ -1,5 +1,5 @@
 ---
-title: "How to get into teaching without a degree"
+title: "Teacher degree apprenticeships (TDAs)"
 heading: "Train to teach if you do not have a degree"
 description: |-
   Explore how you can get into teaching without a degree by taking an undergraduate course to gain qualified teacher status (QTS) alongside a degree.
@@ -16,32 +16,27 @@ navigation_title: If you do not have a degree
 navigation_description: You need a degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about undergraduate degree courses.
 ---
 
-## Undergraduate degree courses
-You need a bachelor’s degree in any subject to train to teach in primary, secondary and special schools in England. If you do not already have a degree, you can train to be a teacher as part of your bachelor’s degree and get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
+# Teacher degree apprenticeships (TDAs)
+If you do not already have an undergraduate degree, you may be eligible to do a teacher degree apprenticeship (TDA), a new route to become a qualified teacher.
 
-You need QTS to teach in maintained primary, secondary and special schools in England (schools funded by local authorities).
+##  How do TDAs work?
+This new teacher training programme means you’ll work in a school and earn a salary while getting a bachelor’s degree and qualified teacher status (QTS)(/train-to-be-a-teacher/what-is-qts).
+ 
+The TDA is a 4-year, full-time course for people to train as either a primary or secondary teacher. Trainee teachers will spend around 40% of their time studying for their degree with an accredited teacher training provider.
 
-As part of selecting your undergraduate degree course, you'll need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
+The salary you’ll earn as a trainee will reflect the level of responsibility that’s suitable for each stage of your course. You do not have to pay tuition fees but you will not be eligible for student finance.
 
-Full-time degree courses that include QTS typically cost £9,250 per year and can take up to 4 years but you can get [funding for your training](/funding-and-support).
+The teacher training providers confirmed so far will offer TDAs in maths, with other subjects likely to follow.
 
-Qualifications vary depending on the course. For example, you could get QTS with a:
+## Who’s eligible to apply for a TDA?
+The TDA will be available to both people who are leaving school, or at the start of their careers, and those already working who are interested in becoming a teacher, including teaching assistants.
 
-- Bachelor of Arts (BA)
-- Bachelor of Education (BEd)
-- Bachelor of Science (BSc)
+To be eligible to apply for a TDA you’ll need:
 
-[Find out more about the qualifications you need to be a teacher in England](/is-teaching-right-for-me/qualifications-you-need-to-teach).
+Qualifications
 
-<div class="inset">
+• GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 
-<p>If you're a non-UK citizen who wants to study in England, you can visit the <a href="https://www.ukcisa.org.uk/">UK Council for International Student Affairs</a> for information about studying at an English university.</p>
+Other eligibility requirements: 
 
-</div>
-
-## Teacher degree apprenticeships (TDAs)
-If you do not have a degree you may be eligible to apply for a TDA. This new course will allow you work in a school and earn a salary while getting a bachelor's degree and QTS. So you will not have to pay tuition fees. 
-
-Applications for both primary and secondary are expected to open in autumn 2024, with training due to start in autumn 2025. 
-
-<a href="https://educationhub.blog.gov.uk/2024/02/04/teacher-degree-apprenticeships-how-they-work-and-when-to-apply/">Find out more about teacher degree apprenticeships (TDAs)</a>.
+• to be a resident of England for the last 3 years or more 
