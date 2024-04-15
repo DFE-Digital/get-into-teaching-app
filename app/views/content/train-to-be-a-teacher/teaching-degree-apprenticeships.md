@@ -6,6 +6,7 @@ description: |-
 related_content:
     Is teaching right for me? : "/is-teaching-right-for-me"
     Train to teach if you do not have a degree : "/train-to-be-a-teacher/if-you-dont-have-a-degree"
+    Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
 promo_content:
