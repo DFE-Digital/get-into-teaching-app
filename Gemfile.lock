@@ -335,7 +335,7 @@ GEM
       mixlib-shellout
     method_source (1.0.0)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.5)
+    mini_portile2 (2.8.6)
     minitest (5.22.3)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.27)
@@ -424,7 +424,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rainbow (3.1.1)
-    rake (13.1.0)
+    rake (13.2.1)
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -502,10 +502,11 @@ GEM
     semantic_logger (4.15.0)
       concurrent-ruby (~> 1.0)
     semantic_range (3.0.0)
-    sentry-rails (5.10.0)
+    sentry-rails (5.17.3)
       railties (>= 5.0)
-      sentry-ruby (~> 5.10.0)
-    sentry-ruby (5.10.0)
+      sentry-ruby (~> 5.17.3)
+    sentry-ruby (5.17.3)
+      bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
     shakapacker (7.2.1)
       activesupport (>= 5.2)
@@ -636,7 +637,7 @@ DEPENDENCIES
   secure_headers
   selenium-webdriver (~> 3.142)
   sentry-rails (>= 5.10.0)
-  sentry-ruby (~> 5.10.0)
+  sentry-ruby (~> 5.17.3)
   shakapacker (= 7.2.1)
   shoulda-matchers
   simplecov
