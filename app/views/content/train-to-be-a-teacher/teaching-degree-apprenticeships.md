@@ -14,6 +14,7 @@ promo_content:
 navigation: 20.20
 navigation_title: Teacher degree apprenticeships (TDAs)
 navigation_description: A TDA lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).
+talk_to_us: false
 ---
 
 # Teacher degree apprenticeships (TDAs)
