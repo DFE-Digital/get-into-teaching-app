@@ -20,7 +20,7 @@ navigation_description: A TDA lets you work at a school and earn a salary while 
 If you do not already have an undergraduate degree, you may be eligible to do a teacher degree apprenticeship (TDA), a new route to become a qualified teacher.
 
 ##  How do TDAs work?
-This new teacher training programme means you’ll work in a school and earn a salary while getting a bachelor’s degree and qualified teacher status (QTS)(/train-to-be-a-teacher/what-is-qts).
+This new teacher training programme means you’ll work in a school and earn a salary while getting a bachelor’s degree and [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
  
 The TDA is a 4-year, full-time course for people to train as either a primary or secondary teacher. Trainee teachers will spend around 40% of their time studying for their degree with an accredited teacher training provider.
 
