@@ -1,6 +1,6 @@
 ---
 title: "Teacher degree apprenticeships (TDAs)"
-heading: "Train to teach if you do not have a degree"
+heading: "Teacher degree apprenticeships (TDAs)"
 description: |-
   Explore how you can get into teaching without a degree by taking an undergraduate course to gain qualified teacher status (QTS) alongside a degree.
 related_content:
