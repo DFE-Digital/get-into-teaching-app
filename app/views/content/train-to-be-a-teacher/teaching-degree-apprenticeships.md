@@ -2,18 +2,17 @@
 title: "Teacher degree apprenticeships (TDAs)"
 heading: "Teacher degree apprenticeships (TDAs)"
 description: |-
-  Explore how you can get into teaching without a degree by taking an undergraduate course to gain qualified teacher status (QTS) alongside a degree.
+ A new route to become a teacher without a degree, a teacher degree apprenticeship (TDA) lets you work at a school while you qualify as a teacher.
 related_content:
     Is teaching right for me? : "/is-teaching-right-for-me"
-    Funding your training : "/funding-and-support"
-    Teach in further education without a degree : "https://www.teach-in-further-education.campaign.gov.uk"
+    Train to teach if you do not have a degree : "/train-to-be-a-teacher/if-you-dont-have-a-degree"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-no-degree
 navigation: 20.20
-navigation_title: If you do not have a degree
-navigation_description: You need a degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about undergraduate degree courses.
+navigation_title: Teacher degree apprenticeships (TDAs)
+navigation_description: A new route to become a teacher without a degree, a teacher degree apprenticeship (TDA) lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).
 ---
 
 # Teacher degree apprenticeships (TDAs)
