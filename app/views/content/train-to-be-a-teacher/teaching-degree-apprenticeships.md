@@ -30,9 +30,7 @@ The teacher training providers confirmed so far will offer TDAs in maths, with o
 ## Who’s eligible to apply for a TDA?
 The TDA will be available to both people who are leaving school, or at the start of their careers, and those already working who are interested in becoming a teacher, including teaching assistants.
 
-To be eligible to apply for a TDA you’ll need:
-
-Qualifications
+To be eligible to apply for a TDA you’ll need the following qualifications:
 
 • GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 
