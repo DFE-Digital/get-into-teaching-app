@@ -9,8 +9,6 @@ related_content:
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
-promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-no-degree
 navigation: 20.20
 navigation_title: Teacher degree apprenticeships (TDAs)
 navigation_description: A TDA lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).
