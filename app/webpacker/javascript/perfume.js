@@ -1,7 +1,6 @@
-import Perfume from 'perfume.js';
+import { initPerfume } from 'perfume.js';
 
-/* eslint-disable no-new */
-new Perfume({
+initPerfume({
   analyticsTracker: (options) => {
     const { metricName, data, navigatorInformation } = options;
     const metricNames = [
