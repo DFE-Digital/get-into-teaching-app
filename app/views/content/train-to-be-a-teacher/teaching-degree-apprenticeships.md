@@ -31,6 +31,7 @@ The TDA will be available to both people who are leaving school, or at the start
 To be eligible to apply for a TDA you’ll need the following qualifications:
 
 • GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
+* A levels - the number of A levels and grades required will be set by individual universities
 
 Other eligibility requirements:
 
