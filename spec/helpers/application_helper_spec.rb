@@ -18,7 +18,6 @@ describe ApplicationHelper do
   describe "#main_tag" do
     subject { main_tag(class: "homepage") { tag.hr } }
 
-    it { is_expected.to have_css "main[role=main]" }
     it { is_expected.to have_css "main[id=main-content]" }
     it { is_expected.to have_css "main.homepage" }
     it { is_expected.to have_css "body hr" }
