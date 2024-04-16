@@ -8,7 +8,7 @@
   <div class="content">
     <div class="inset">
       <p>
-        <%= intro %>
+        <%= intro || content %>
       </p>
 
       <%= form_with builder: GOVUKDesignSystemFormBuilder::FormBuilder, url: teacher_training_adviser_step_path(:identity), scope: :teacher_training_adviser_steps_identity, method: :put do |f| %>
