@@ -41,8 +41,8 @@ export default class extends Controller {
         this.contractAndHideSiblingMenus(item, itemSync);
       } else if (this.toggleIconContracted(item)) {
         this.toggleIconContracted(itemSync);
-        this.hideMenu(childMenu);
-        this.hideMenu(childMenuSync);
+        this.contractAndHideChildMenu(childMenu);
+        this.contractAndHideChildMenu(childMenuSync);
       }
     }
   }

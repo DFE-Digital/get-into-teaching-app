@@ -1,6 +1,6 @@
 <!-- mobile navigation -->
 <%= tag.nav id: "primary-navigation", class: "hidden-mobile", data: { "navigation-target": "nav", action: "click->navigation#handleNavMenuClick" }, "aria-label": "Primary navigation", role: "navigation" do %>
-  <%= tag.ol class: "primary", data: { "navigation-target": "primary" } do %> <!-- "selectorsXXX": "ol.category-navigation, ol.category-links-list, ol.page-navigation" -->
+  <%= tag.ol class: "primary", data: { "navigation-target": "primary" } do %> <!-- "selectorsXXX": "ol.category-links-list, ol.page-links-list" -->
     <% all_resources.each do |resource| %>
       <%= nav_link(resource, :mobile) %>
     <% end %>
@@ -12,7 +12,7 @@
   <div class="category-links">
     <% all_resources.each do |resource| %>
       <% if resource.subcategories.present? %>
-        <%= category_list(resource: resource, css_class: "category-navigation hidden-menu", mode: :desktop ) %>
+        <%= category_list(resource: resource, css_class: "category-links-list hidden-menu", mode: :desktop ) %>
       <% end %>
     <% end %>
   </div>
@@ -21,7 +21,7 @@
     <% all_resources.each do |resource| %>
       <% if resource.subcategories.present? %>
         <% resource.subcategories.each do |subcategory| %>
-          <%= page_list(resource: resource, subcategory: subcategory, css_class: "page-navigation hidden-menu", mode: :desktop) %>
+          <%= page_list(resource: resource, subcategory: subcategory, css_class: "page-links-list hidden-menu", mode: :desktop) %>
         <% end %>
       <% end %>
     <% end %>

@@ -12,7 +12,7 @@ describe('NavigationController', () => {
         </button>
       </div>
       <nav id="primary-navigation" class="hidden-mobile" data-navigation-target="nav" data-action="click->navigation#toggleNavMenuItem" aria-label="Primary navigation" role="navigation">
-        <ol class="primary" data-navigation-target="primary" data-selectors="ol.category-navigation, ol.page-navigation">
+        <ol class="primary" data-navigation-target="primary" data-selectors="ol.category-links-list, ol.page-links-list">
           <li data-id="menu-is-teaching-right-for-me" data-direct-link="false">
             <a class="link--black link--no-underline" href="/is-teaching-right-for-me">Is teaching right for me?</a>
             <span class="nav-icon nav-icon__arrow-down" aria-hidden="true"></span>
@@ -28,7 +28,7 @@ describe('NavigationController', () => {
       </nav>
       <div class="dropdown-menu-container" data-navigation-target="dropdown">
         <div class="category-links">
-          <ol class="category-navigation hidden-menu" id="menu-is-teaching-right-for-me" data-action="click->navigation#toggleCategoryMenuItem" data-selectors="ol.page-navigation">
+          <ol class="category-links-list hidden-menu" id="menu-is-teaching-right-for-me" data-action="click->navigation#toggleCategoryMenuItem" data-selectors="ol.page-links-list">
             <li data-id="menu-pay-and-benefits">
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me#pay-and-benefits" data-turbolinks="false">Pay and benefits</a>
               <span class="nav-icon nav-icon__arrow-right" aria-hidden="true"></span>
@@ -53,7 +53,7 @@ describe('NavigationController', () => {
               <a class="link--black" href="/is-teaching-right-for-me">View all in Is teaching right for me?</a>
             </li>
           </ol>
-          <ol class="category-navigation hidden-menu" id="menu-train-to-be-a-teacher" data-action="click->navigation#toggleMenu" data-selectors="ol.page-navigation">
+          <ol class="category-links-list hidden-menu" id="menu-train-to-be-a-teacher" data-action="click->navigation#toggleMenu" data-selectors="ol.page-links-list">
             <li data-id="menu-postgraduate-teacher-training">
               <a class="link--black link--no-underline" href="/train-to-be-a-teacher#postgraduate-teacher-training" data-turbolinks="false">Postgraduate teacher training</a>
               <span class="nav-icon nav-icon__arrow-right" aria-hidden="true"></span>
@@ -68,7 +68,7 @@ describe('NavigationController', () => {
           </ol>
         </div>
         <div class="page-links">
-          <ol class="page-navigation hidden-menu" id="menu-pay-and-benefits">
+          <ol class="page-links-list hidden-menu" id="menu-pay-and-benefits">
             <li data-id="menu-is-teaching-right-for-me-teacher-pay-and-benefits" data-direct-link="true">
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me/teacher-pay-and-benefits">How much do teachers get paid?</a>
             </li>
@@ -79,7 +79,7 @@ describe('NavigationController', () => {
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me/what-pension-does-a-teacher-get">What pension does a teacher get?</a>
             </li>
           </ol>
-          <ol class="page-navigation hidden-menu" id="menu-qualifications-and-experience">
+          <ol class="page-links-list hidden-menu" id="menu-qualifications-and-experience">
             <li data-id="menu-is-teaching-right-for-me-qualifications-you-need-to-teach" data-direct-link="true">
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me/qualifications-you-need-to-teach">What qualifications do I need to be a teacher?</a>
             </li>
@@ -87,7 +87,7 @@ describe('NavigationController', () => {
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me/if-you-want-to-change-career">How do I change to a career in teaching?</a>
             </li>
           </ol>
-          <ol class="page-navigation hidden-menu" id="menu-who-to-teach">
+          <ol class="page-links-list hidden-menu" id="menu-who-to-teach">
             <li data-id="menu-is-teaching-right-for-me-who-do-you-want-to-teach" data-direct-link="true">
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me/who-do-you-want-to-teach">Which age group should I teach?</a>
             </li>
@@ -95,7 +95,7 @@ describe('NavigationController', () => {
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs">How can I teach children with special educational needs?</a>
             </li>
           </ol>
-          <ol class="page-navigation hidden-menu" id="menu-what-to-teach">
+          <ol class="page-links-list hidden-menu" id="menu-what-to-teach">
             <li data-id="menu-is-teaching-right-for-me-computing" data-direct-link="true">
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me/computing">Computing</a>
             </li>
@@ -106,7 +106,7 @@ describe('NavigationController', () => {
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me/physics">Physics</a>
             </li>
           </ol>
-          <ol class="page-navigation hidden-menu" id="menu-school-experience">
+          <ol class="page-links-list hidden-menu" id="menu-school-experience">
             <li data-id="menu-is-teaching-right-for-me-get-school-experience" data-direct-link="true">
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me/get-school-experience">How do I get experience in a school?</a>
             </li>
@@ -114,7 +114,7 @@ describe('NavigationController', () => {
               <a class="link--black link--no-underline" href="/is-teaching-right-for-me/teaching-internship-providers">Can I do a teaching internship?</a>
             </li>
           </ol>
-          <ol class="page-navigation hidden-menu" id="menu-postgraduate-teacher-training">
+          <ol class="page-links-list hidden-menu" id="menu-postgraduate-teacher-training">
             <li data-id="menu-train-to-be-a-teacher-how-to-choose-your-teacher-training-course" data-direct-link="true">
               <a class="link--black link--no-underline" href="/train-to-be-a-teacher/how-to-choose-your-teacher-training-course">How to choose your course</a>
             </li>
@@ -122,7 +122,7 @@ describe('NavigationController', () => {
               <a class="link--black link--no-underline" href="/train-to-be-a-teacher/initial-teacher-training">What to expect in teacher training</a>
             </li>
           </ol>
-          <ol class="page-navigation hidden-menu" id="menu-qualifications-you-can-get">
+          <ol class="page-links-list hidden-menu" id="menu-qualifications-you-can-get">
             <li data-id="menu-train-to-be-a-teacher-what-is-qts" data-direct-link="true">
               <a class="link--black link--no-underline" href="/train-to-be-a-teacher/what-is-qts">Qualified teacher status (QTS)</a>
             </li>
@@ -161,12 +161,12 @@ describe('NavigationController', () => {
       menu.click();
 
       expect(document.querySelector('ol.primary > li[data-id=menu-is-teaching-right-for-me] > span.nav-icon').classList).toContain('nav-icon__arrow-up');
-      expect(document.querySelector('div.category-links > ol.category-navigation#menu-is-teaching-right-for-me').classList).not.toContain('hidden-menu');
+      expect(document.querySelector('div.category-links > ol.category-links-list#menu-is-teaching-right-for-me').classList).not.toContain('hidden-menu');
 
       menu.click();
 
       expect(document.querySelector('ol.primary > li[data-id=menu-is-teaching-right-for-me] > span.nav-icon').classList).toContain('nav-icon__arrow-down');
-      expect(document.querySelector('div.category-links > ol.category-navigation#menu-is-teaching-right-for-me').classList).toContain('hidden-menu');
+      expect(document.querySelector('div.category-links > ol.category-links-list#menu-is-teaching-right-for-me').classList).toContain('hidden-menu');
     });
   });
 });
