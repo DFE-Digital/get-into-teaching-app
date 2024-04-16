@@ -35,7 +35,7 @@ To be eligible to apply for a TDA you’ll need the following qualifications:
 
 Other eligibility requirements:
 
-• a resident of England for the last 3 years or more
+• resident of England for the last 3 years or more
 • age 16 years or over 
 
 ## How to apply for a TDA
