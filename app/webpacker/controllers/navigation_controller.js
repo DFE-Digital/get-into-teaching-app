@@ -146,7 +146,8 @@ export default class extends Controller {
       self.hideMenu(menu);
 
       [].forEach.call(menu.children, function (childMenuItem) {
-        if (childMenuItem) { // && childMenuItem.dataset && childMenuItem.dataset.childMenuId) {
+        if (childMenuItem) {
+          // && childMenuItem.dataset && childMenuItem.dataset.childMenuId) {
           self.toggleIconContracted(childMenuItem);
           self.contractAndHideChildItem(childMenuItem);
         }

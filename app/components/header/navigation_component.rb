@@ -45,7 +45,7 @@ module Header
           if mode == :mobile && resource.subcategories?
             [
               row_break,
-              category_list(resource: resource, css_class: "category-links-list hidden-menu hidden-desktop", mode: mode)
+              category_list(resource: resource, css_class: "category-links-list hidden-menu hidden-desktop", mode: mode),
             ]
           end,
         ])
@@ -61,7 +61,7 @@ module Header
             end,
             view_all_link(resource, mode),
           ],
-          )
+        )
       end
     end
 
@@ -87,7 +87,7 @@ module Header
           row_break,
           if mode == :mobile
             page_list(resource: resource, subcategory: subcategory, css_class: "page-links-list hidden-menu hidden-desktop", mode: mode)
-          end
+          end,
         ])
       end
     end
@@ -102,13 +102,13 @@ module Header
           [
             resource.children_in_subcategory(subcategory).map do |child_resource|
               nav_link(child_resource, mode)
-            end
+            end,
           ],
-          )
+        )
       end
     end
 
-    def view_all_link(resource, mode)
+    def view_all_link(resource, _mode)
       title = "View all in #{resource.title}"
       path = resource.path
       id = "menu-view-all-#{resource.path.parameterize}"

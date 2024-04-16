@@ -48,7 +48,7 @@ body > header nav {
     flex-direction: column-reverse;
 
     &.hidden-mobile {
-      display: none !important;
+      display: none; // !important;
     }
 
     ol.primary {
@@ -138,7 +138,6 @@ body > header nav {
 
   // desktop and wide
   @include mq($from: desktop) {
-
     .hidden-desktop {
       display: none;
     }
@@ -186,19 +185,19 @@ body > header nav {
 
 @include mq($until: desktop) {
   .hidden-mobile {
-    display: none !important;
+    display: none; // !important;
   }
 }
 
 ol.hidden-menu {
-  display: none !important;
+  display: none; // !important;
 }
 
-//ol.primary {
+// ol.primary {
 //  ol.hidden-menu, li.hidden-menu {
 //    display: none;
 //  }
-//}
+// }
 
 .nav-icon {
   background-position: center;
