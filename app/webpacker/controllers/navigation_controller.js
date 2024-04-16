@@ -67,9 +67,9 @@ export default class extends Controller {
     if (item) {
       const icon = item.querySelector('span.nav-icon');
       if (icon) {
-        if (icon.classList.contains('nav-icon__arrow-down')) {
-          icon.classList.remove('nav-icon__arrow-down');
-          icon.classList.add('nav-icon__arrow-up');
+        if (icon.classList.contains('nav-icon__contracted')) {
+          icon.classList.remove('nav-icon__contracted');
+          icon.classList.add('nav-icon__expanded');
           item.querySelector('a,btn').ariaExpanded = true;
           return true;
         }
@@ -82,9 +82,9 @@ export default class extends Controller {
     if (item) {
       const icon = item.querySelector('span.nav-icon');
       if (icon) {
-        if (icon.classList.contains('nav-icon__arrow-up')) {
-          icon.classList.remove('nav-icon__arrow-up');
-          icon.classList.add('nav-icon__arrow-down');
+        if (icon.classList.contains('nav-icon__expanded')) {
+          icon.classList.remove('nav-icon__expanded');
+          icon.classList.add('nav-icon__contracted');
           item.querySelector('a,btn').ariaExpanded = false;
           return true;
         }

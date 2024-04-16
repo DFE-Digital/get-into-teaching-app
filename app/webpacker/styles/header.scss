@@ -5,10 +5,6 @@
 @import "header/menu-button";
 
 body > header {
-  nav {
-    border: solid 2px red;
-  }
-
   // mobile (default) layout
   display: grid;
   grid-template-columns: 1fr;
@@ -59,8 +55,6 @@ body > header {
 }
 
 .desktop-menu-container {
-  border: solid 5px green;
-
   grid-column-start: 1;
   grid-column-end: -1;
   display: grid;

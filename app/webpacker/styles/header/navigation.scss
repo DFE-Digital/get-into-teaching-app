@@ -54,6 +54,10 @@
         display: block;
         font-size: 1em;
       }
+
+      .break {
+        display: none;
+      }
     }
   }
 }
@@ -192,7 +196,7 @@ body > header nav {
         padding: 1.25em;
 
         &.active {
-          border-bottom: 5px solid $purple;
+          border-bottom: 5px solid $pink;
         }
 
         &.down {
@@ -221,7 +225,8 @@ body > header nav {
 
 
 #primary-navigation, #secondary-navigation {
-  // NB: this section must appear below main menu definitions
+  // NB: this section must appear below main menu definitions and applies to
+  // both mobile and desktop menus
   ol.hidden-menu {
     display: none;
   }
@@ -241,20 +246,29 @@ body > header nav {
     height: 12px;
     margin-top: 4px;
     margin-left: 10px;
+  }
+}
 
-    &__arrow-down {
+#primary-navigation {
+  .nav-icon {
+    &__contracted {
       background-image: url("../images/navigation/arrow-down-pink.svg");
     }
 
-    &__arrow-up {
+    &__expanded {
       background-image: url("../images/navigation/arrow-up-pink.svg");
     }
+  }
+}
 
-    &__arrow-right {
+#secondary-navigation {
+  .nav-icon {
+    width: 12px;
+    height: 21px;
+    margin-top: 0;
+
+    &__contracted, &__expanded {
       background-image: url("../images/navigation/arrow-right-black.svg");
-      width: 12px;
-      height: 21px;
-      margin-top: 0;
     }
   }
 }

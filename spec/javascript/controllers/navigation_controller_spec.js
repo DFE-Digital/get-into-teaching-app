@@ -15,14 +15,14 @@ describe('NavigationController', () => {
         <ol class="primary" data-navigation-target="primary" data-selectors="ol.category-links-list, ol.page-links-list">
           <li data-id="menu-is-teaching-right-for-me" data-direct-link="false">
             <a class="link--black link--no-underline" href="/is-teaching-right-for-me">Is teaching right for me?</a>
-            <span class="nav-icon nav-icon__arrow-down" aria-hidden="true"></span>
+            <span class="nav-icon nav-icon__contracted" aria-hidden="true"></span>
           </li>
           <li data-id="menu-steps-to-become-a-teacher" data-direct-link="true">
             <a class="link--black link--no-underline" href="/steps-to-become-a-teacher">How to become a teacher</a>
           </li>
           <li class="active" data-id="menu-train-to-be-a-teacher" data-direct-link="false">
             <div>Train to be a teacher</div>
-            <span class="nav-icon nav-icon__arrow-down" aria-hidden="true"></span>
+            <span class="nav-icon nav-icon__contracted" aria-hidden="true"></span>
           </li>
         </ol>
       </nav>
@@ -160,12 +160,12 @@ describe('NavigationController', () => {
       const menu = document.querySelector('ol.primary > li[data-id=menu-is-teaching-right-for-me] > a');
       menu.click();
 
-      expect(document.querySelector('ol.primary > li[data-id=menu-is-teaching-right-for-me] > span.nav-icon').classList).toContain('nav-icon__arrow-up');
+      expect(document.querySelector('ol.primary > li[data-id=menu-is-teaching-right-for-me] > span.nav-icon').classList).toContain('nav-icon__expanded');
       expect(document.querySelector('div.category-links > ol.category-links-list#menu-is-teaching-right-for-me').classList).not.toContain('hidden-menu');
 
       menu.click();
 
-      expect(document.querySelector('ol.primary > li[data-id=menu-is-teaching-right-for-me] > span.nav-icon').classList).toContain('nav-icon__arrow-down');
+      expect(document.querySelector('ol.primary > li[data-id=menu-is-teaching-right-for-me] > span.nav-icon').classList).toContain('nav-icon__contracted');
       expect(document.querySelector('div.category-links > ol.category-links-list#menu-is-teaching-right-for-me').classList).toContain('hidden-menu');
     });
   });

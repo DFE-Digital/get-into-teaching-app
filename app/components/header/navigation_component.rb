@@ -40,7 +40,7 @@ module Header
         safe_join([
           link_to(title, path, class: link_css, aria: aria_attributes),
           if show_dropdown
-            expandable_icon
+            contracted_icon
           end,
           if mode == :mobile && resource.subcategories?
             [
@@ -83,7 +83,7 @@ module Header
       tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": false } do
         safe_join([
           link_to(title, path, class: link_css, aria: aria_attributes),
-          expandable_icon,
+          contracted_icon,
           row_break,
           if mode == :mobile
             page_list(resource: resource, subcategory: subcategory, css_class: "page-links-list hidden-menu hidden-desktop", mode: mode)
@@ -124,16 +124,8 @@ module Header
       tag.div(class: "break", "aria-hidden": true)
     end
 
-    # def down_arrow_icon
-    #   tag.span(class: "nav-icon nav-icon__arrow-down", "aria-hidden": true)
-    # end
-
-    # def right_arrow_icon
-    #   tag.span(class: "nav-icon nav-icon__arrow-right", "aria-hidden": true)
-    # end
-
-    def expandable_icon
-      tag.span(class: "nav-icon nav-icon__arrow-down", "aria-hidden": true)
+    def contracted_icon
+      tag.span(class: "nav-icon nav-icon__contracted", aria: { hidden: true })
     end
 
     def uri_is_root?(link_path)
