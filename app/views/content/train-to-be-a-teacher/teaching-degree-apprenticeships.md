@@ -31,11 +31,12 @@ The TDA will be available to both people who are leaving school, or at the start
 To be eligible to apply for a TDA you’ll need the following qualifications:
 
 • GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
-* A levels - the number of A levels and grades required will be set by individual universities
+• A levels - the number of A levels and grades required will be set by individual universities
 
 Other eligibility requirements:
 
-• to be a resident of England for the last 3 years or more
+• a resident of England for the last 3 years or more
+• age 16 years or over 
 
 ## How to apply for a TDA
 Applications for the new TDAs are expected to open in autumn 2024 for both primary and secondary, with training due to start in autumn 2025.
