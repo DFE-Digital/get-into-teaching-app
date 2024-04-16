@@ -60,6 +60,16 @@
       }
     }
   }
+
+  .nav-icon {
+    width: 12px;
+    height: 21px;
+    margin-top: 0;
+
+    &__contracted, &__expanded {
+      background-image: url("../images/navigation/arrow-right-black.svg");
+    }
+  }
 }
 
 body > header nav {
@@ -257,18 +267,6 @@ body > header nav {
 
     &__expanded {
       background-image: url("../images/navigation/arrow-up-pink.svg");
-    }
-  }
-}
-
-#secondary-navigation {
-  .nav-icon {
-    width: 12px;
-    height: 21px;
-    margin-top: 0;
-
-    &__contracted, &__expanded {
-      background-image: url("../images/navigation/arrow-right-black.svg");
     }
   }
 }
