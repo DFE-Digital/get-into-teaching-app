@@ -58,7 +58,7 @@ If you get a PGCE without QTS you will also not be entitled to the same benefits
 
 [Read about Nathan who chose to get QTS with PGCE](/blog/salaried-teacher-training-classroom-learning).
 
-## Benefits of having a PGCE
+## Benefits of having QTS with PGCE
 
 A PGCE can give you a better understanding of teaching practices, educational research and theory.
 
