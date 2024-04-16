@@ -120,7 +120,7 @@ You cannot receive both a bursary and a scholarship.
 
 Bursaries and scholarships are tax-free payments from the UK government that you do not have to pay back. They are paid to you by your teacher training provider. 
 
-If your training provider asks you to pay some or all of your teacher training fees in advance, you can sometimes use a bursary or scholarship to meet these costs. 
+If some or all of your teacher training fees are due in advance, your training provider may let you use a bursary or scholarship to meet these costs – contact them to check.
 
 You should also be able to use eligibility for a bursary in your [visa application](/non-uk-teachers/visas-for-non-uk-trainees) as proof that you have enough money to support yourself. 
 
