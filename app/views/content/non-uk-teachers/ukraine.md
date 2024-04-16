@@ -9,7 +9,7 @@ related_content:
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-ukraine
-navigation: 20.60
+navigation: 20.70
 navigation_title: Ukrainian teachers and trainees coming to the UK
 navigation_description: Find information and advice for Ukrainian citizens seeking training places and teaching jobs in England.
 date: "2022-06-24"
@@ -47,7 +47,7 @@ If you're coming to the UK from Ukraine, [check what you need to do before you t
 
 ### Get an international relocation payment (IRP) worth £10,000
 
-To be eligible for the IRP, you must be coming to England to teach or train to teach languages or physics in:
+To be eligible for the IRP, you must be a teacher coming to England to teach languages or physics in:
 
 * the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024)
 

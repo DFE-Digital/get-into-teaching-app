@@ -63,6 +63,13 @@ RSpec.feature "Integration tests", :integration, type: :feature, js: true do
   def sign_up_if_not_qualified(first_name, last_name, email)
     submit_personal_details(first_name, last_name, email)
 
+    if page.body.include?("There is a problem") && page.body.include?("Enter your last name")
+      # very rarely, for reasons unknown, the test returns an error indicating the last_name is empty. In this case, try and fill it in again.
+      Rails.logger.warn("Integration test failed to set last_name correctly; re-setting with: #{last_name}")
+      fill_in "Last name", with: last_name
+      click_on "Next step"
+    end
+
     expect(page).to have_text "Are you already qualified to teach?"
     find("label", text: "No").click
     click_on "Next step"

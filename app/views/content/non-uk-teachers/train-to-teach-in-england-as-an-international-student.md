@@ -15,14 +15,6 @@ navigation_description: Find out how to train to teach in England as a non-UK ci
 date: "2021-05-27"
 image: "static/images/content/hero-images/0003.jpg"
 backlink: "../../"
-youtube_video:
-  why-train-to-teach:
-    id: u0W7UTnGcc0
-    title: A video about why you should Train to Teach in England
-inset_text:
-  new-international-funding:
-    text: |-
-      If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth £10,000</a>.
 keywords:
   - International
   - Overseas
@@ -69,7 +61,7 @@ keywords:
   - Comparability
 ---
 
-$new-international-funding$
+
 
 Citizens of every country in the world can apply to train to teach in England. When you plan your training, bear in mind that:
 
@@ -124,7 +116,7 @@ Fees cost:
 
 You’ll also have to cover your living costs.
 
-If you're planning on training to teach languages or physics, you could be eligible for financial help worth up to £40,000, including an international relocation payment (IRP) worth £10,000.
+If you're planning on training to teach languages or physics, you could be eligible for a bursary or scholarship worth up to £30,000. 
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
@@ -179,7 +171,7 @@ If you have a [teacher training adviser](/help-and-support), they can help you w
 
 * your choice of course and training provider
 * your choice of subject
-* ways to research the [English education system](#learn-more-about-life-as-a-teacher-and-the-english-education-system)
+* ways to research the [English education system](#understand-english-education)
 * preparing for your interview
 
 
@@ -256,21 +248,7 @@ You may need to apply for a different visa to work in England as a qualified tea
 
 <a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#job">Learn more about your first teaching job in England</a>.
 
-## Learn more about life as a teacher and the English education system
-
-Meet other non-UK teachers and trainees and find information about English schools and teaching methods. 
-
-### Why train to teach in England?
-
-Watch our video interviews with non-UK citizens who've successfully relocated to train and teach in England.
-
-$why-train-to-teach$
-
-[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-transcript).
-
-
-
-### Understand English education
+## Understand English education
 
 Learn more about:
 
