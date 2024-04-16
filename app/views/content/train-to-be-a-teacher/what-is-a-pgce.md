@@ -70,7 +70,7 @@ You may want to do a master’s in education, for example, for your professional
 
 ## Types of PGCE courses
 
-You can get QTS with a PGCE in primary and secondary education. Your course will involve both school placements and academic theory.
+You can get QTS with a PGCE in primary or secondary education. Your course will involve both school placements and academic theory.
 
 You can do this through a school-led, university-led, or an apprenticeship teacher training programme.
 
