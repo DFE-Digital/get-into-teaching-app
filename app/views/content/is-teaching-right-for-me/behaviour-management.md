@@ -78,7 +78,7 @@ Then you might work either with small groups or one-to-one with pupils. Again yo
 ## Is there any support once I become a teacher?
 All schools have behaviour policies in place, so you work within a remit. If your course leads to QTS, for the first two years of teaching as an [early career teacher (ECT)](/support-for-early-career-teachers) you get ongoing training and development that includes effective behaviour management. Plus you'll have a dedicated mentor to give you support. And you've also got other colleagues who can help. It's not unheard of for somebody to sit down and say they're struggling to manage the behaviour of child A, are there any strategies you've found successful? You're constantly working together to swap ideas, sanctions and bits of information about that child.
 
-If you want to develop your behaviour management skills there are [specialist national professional qualification (NPQ) courses](https://www.gov.uk/guidance/national-professional-qualification-npq-courses) available to help teachers learn how to create a culture of good behaviour in schools. 
+There are also [specialist national professional qualification (NPQ) courses](https://www.gov.uk/guidance/national-professional-qualification-npq-courses) available if you want to broaden your knowledge and skills in some areas of practice, both inside and outside of the classroom. These include an NPQ in Leading Behaviour and Culture (NPQLBC) for teachers who have, or are aspiring to have, responsibilities for leading behaviour or supporting pupil wellbeing in their schools.
 
 ## How can I remember children's names?
 Knowing a child’s name is a really powerful behaviour management tool, so learning names is essential for building strong relationships.
