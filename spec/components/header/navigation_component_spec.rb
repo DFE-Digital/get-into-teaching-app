@@ -50,17 +50,17 @@ describe Header::NavigationComponent, type: "component" do
   end
 
   it "renders a dropdown menu for category links" do
-    expect(page).to have_css("div.dropdown-menu-container > div.category-links > ol.category-links-list > li[data-id='menu-category-1'] > a")
-    expect(page).to have_css("div.dropdown-menu-container > div.category-links > ol.category-links-list > li[data-id='menu-category-2'] > a")
+    expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='page-five-category-1-desktop'] > a")
+    expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='page-five-category-2-desktop'] > a")
   end
 
   it "renders a dropdown menu for page links" do
-    expect(page).to have_css("div.dropdown-menu-container > div.page-links > ol.page-links-list > li[data-id='menu-page-five-part-1'] > a")
-    expect(page).to have_css("div.dropdown-menu-container > div.page-links > ol.page-links-list > li[data-id='menu-page-five-part-2'] > a")
-    expect(page).to have_css("div.dropdown-menu-container > div.page-links > ol.page-links-list > li[data-id='menu-page-five-part-3'] > a")
+    expect(page).to have_css("#secondary-navigation > div.page-links > ol.page-links-list > li[id='page-five-part-1-desktop'] > a")
+    expect(page).to have_css("#secondary-navigation > div.page-links > ol.page-links-list > li[id='page-five-part-2-desktop'] > a")
+    expect(page).to have_css("#secondary-navigation > div.page-links > ol.page-links-list > li[id='page-five-part-3-desktop'] > a")
   end
 
   it "renders a view all link" do
-    expect(page).to have_css("div.dropdown-menu-container > div.category-links > ol.category-links-list > li[data-id='menu-view-all-page-five'] > a")
+    expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[data-id='menu-view-all-page-five'] > a")
   end
 end
