@@ -21,6 +21,8 @@ keywords:
   - PGCE
   - Post-graduate
   - Post-grad
+  - Postgraduate
+  - Postgrad
   - Certificate
   - Education
   - QTS
@@ -47,18 +49,16 @@ Many teacher training courses also offer you a postgraduate qualification such a
 You can do a teacher training course that leads to:
 
 * QTS only
-* PGCE only
 * QTS with PGCE
+* PGCE without QTS
 
-Getting QTS only means that you’re qualified to teach in most schools in England. It may also mean that your course fees are lower, you submit fewer assignments, and the course could be shorter.
+Getting a PGCE without QTS means you will not be qualified to teach in most primary, secondary and special schools in England, although some schools will employ teachers without QTS.
 
-Getting PGCE only means you will not be qualified to teach in most primary, secondary and special schools in England, although some schools will employ teachers without QTS.
-
-A PGCE alone will also not entitle you to the same benefits during your training and career as QTS. For example, better pay and support when you start teaching.
+If you get a PGCE without QTS you will also not be entitled to the same benefits during your training and career as QTS with PGCE. For example, better pay and support when you start teaching.
 
 [Read about Nathan who chose to get QTS with PGCE](/blog/salaried-teacher-training-classroom-learning).
 
-## Benefits of having a PGCE
+## Benefits of having QTS with PGCE
 
 A PGCE can give you a better understanding of teaching practices, educational research and theory.
 
@@ -70,13 +70,15 @@ You may want to do a master’s in education, for example, for your professional
 
 ## Types of PGCE courses
 
-You can get a PGCE in primary education, secondary education, or further/adult education. Your course will involve both school placements and academic theory.
+You can get QTS with a PGCE in primary or secondary education. Your course will involve both school placements and academic theory.
 
 You can do this through a school-led, university-led, or an apprenticeship teacher training programme.
 
 You can do a full or part-time PGCE course.
 
 As part of selecting your course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
+
+You can also do a PGCE without QTS in [further education](/is-teaching-right-for-me/become-a-further-education-teacher).
 
 ### Entry requirements
 

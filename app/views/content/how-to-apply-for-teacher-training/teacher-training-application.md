@@ -37,13 +37,13 @@ navigation_description: Find out what you need to include in your teacher traini
 
 ---
 
-Find out what you need to include in your teacher training application and what happens as part of the application process. 
+Find out what you need to include in your primary or secondary teacher training application and what happens as part of the application process. 
 
 You can get help with your application from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support. 
 
 ## What course should I apply for? 
 
-Make sure you check which qualification you’ll get through your training course. Some will award [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), some a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce), and some both. 
+Make sure you check which qualification you’ll get through your training course. Some will award [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) and some QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
 
 While you do not need a PGCE to teach in England, you do need QTS to teach in many primary and secondary schools.
 
