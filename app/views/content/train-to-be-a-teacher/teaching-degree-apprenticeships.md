@@ -19,7 +19,7 @@ If you do not already have an undergraduate degree, you may be eligible to do a 
 ##  How do TDAs work?
 This new teacher training programme means you’ll work in a school and earn a salary while getting a bachelor’s degree and [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
  
-The TDA is a 4-year, full-time course for people to train as either a primary or secondary teacher. Trainee teachers will spend an average of 40% of their time studying for their degree with an accredited teacher training provider.
+The TDA is a 4-year, full-time course that lets you train as either a primary or secondary teacher. Trainee teachers will spend an average of 40% of their time studying for their degree with an accredited teacher training provider.
 
 The salary you’ll earn as a trainee will reflect the level of responsibility that’s suitable for each stage of your course. You do not have to pay tuition fees but you will not be eligible for student finance.
 
