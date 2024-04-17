@@ -47,4 +47,4 @@ If I could give any advice it would be this: from the moment you enter the class
 
 You will learn a lot about yourself during your teacher training year and it is the most rewarding journey to be on.
 
-If you're interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). Or find out about the [support given to early career teachers based on the early career framework](is-teaching-right-for-me/support-for-early-career-teachers).
+If you're interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). Or find out about the [support given to early career teachers based on the early career framework](/is-teaching-right-for-me/support-for-early-career-teachers).
