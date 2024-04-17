@@ -76,7 +76,7 @@ On most teacher training courses you might watch lots of different classes and l
 Then you might work with either small groups or one-to-one with pupils. Again you're observing and analysing what's working. You're not alone. You've got a teacher there so if you think something didn't quite land you've got somebody to bounce ideas off and look at how you might change it.
 
 ## Is there any support once I become a teacher?
-All schools have behaviour policies in place. So you work within a remit to ensure best practice and there's consistency with how behaviour is managed as a school. As a teacher you're not expected to manage behaviour on your own, you'll get an induction on your school's behaviour policies and preferred ways of management.
+All schools have behaviour policies in place. So you work within a remit to ensure best practice and that there's consistency with how behaviour is managed as a school. As a teacher you're not expected to manage behaviour on your own, you'll get an induction on your school's behaviour policies and preferred ways of management.
 
 If your course leads to QTS, for the first two years of teaching as an [early career teacher (ECT)](/support-for-early-career-teachers) you get ongoing training and development that includes effective behaviour management. Plus you'll have a dedicated mentor to give you support. And you've also got other senior members of staff and colleagues who can help. It's not unheard of for somebody to sit down and say they're struggling to manage the behaviour of child A, are there any strategies you've found successful? You're constantly working together to swap ideas, sanctions and bits of information about that child.
 
