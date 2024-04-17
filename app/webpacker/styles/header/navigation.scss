@@ -113,7 +113,7 @@ body > header nav {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: start;
+        align-items: center;
 
         .grow {
           flex-grow: 1;
@@ -165,6 +165,7 @@ body > header nav {
         font-size: 1em;
         font-weight: normal;
         border-left: solid #F162A3 4px;
+        margin-bottom: 4px;
       }
     }
 
@@ -174,7 +175,6 @@ body > header nav {
 
       > li {
         background: #ffffff;
-        // border-left: solid 4px #F162A3;
         border-bottom: solid 1px #B7B9BB;
       }
 
@@ -194,7 +194,7 @@ body > header nav {
 
     ol.primary {
       flex-grow: 1;
-      align-items: flex-end;
+      align-items: start;
       justify-content: flex-end;
       margin: 0 1em;
       padding: 0 1em;
@@ -250,16 +250,30 @@ body > header nav {
   .nav-icon {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: block;
     width: 21px;
-    height: 12px;
-    margin-top: 4px;
-    margin-left: 10px;
+    height: 21px;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 
 #primary-navigation {
+  @include mq($until: desktop) {
+    ol.primary > li {
+      > span.nav-icon {
+        &__contracted {
+          background-image: url("../images/navigation/arrow-down-black.svg");
+        }
+
+        &__expanded {
+          background-image: url("../images/navigation/arrow-up-black.svg");
+        }
+      }
+    }
+  }
+
   .nav-icon {
     &__contracted {
       background-image: url("../images/navigation/arrow-down-pink.svg");
