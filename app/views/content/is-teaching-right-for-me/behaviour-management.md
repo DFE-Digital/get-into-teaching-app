@@ -64,14 +64,14 @@ But it has to be a two-way thing, you’ve got to give a little of yourself so t
 ## How can I reward good behaviour?
 Children tend to respond well to praise. It might be telling them they've done really well, or giving them a merit or a community point or whatever your school does. You constantly give them this kind of positive reinforcement.
 
-I always worked with parents and carers as well, sending out postcards or making phone calls to tell them their child's been brilliant that day. It only takes a few seconds to do but the rewards can be huge. I might start a class and tell them I've got 2 brilliant phone calls home to give out. So they're competing with themselves to try and be the best that they can. But never promise something you're not going to deliver. 
+I always worked with parents and carers as well, sending out postcards or making phone calls to tell them their child's been brilliant that day. It only takes a few seconds to do but the rewards can be huge. I might start a class and tell them I've got two brilliant phone calls home to give out. So they're competing with themselves to try and be the best that they can. But never promise something you're not going to deliver. 
 
 A lot of the worst behaviours are when children feel rejected so they strive towards that. It's about resetting that mindset in that child. So rather than wanting for example to be the class clown, the label they've given themself is reframed so they’re the better learner, or the most organised, or best at sport. It’s recognising where can they achieve. Finding that is the key to getting it right. 
 
 ## What support is there for trainee teachers?
 As a teacher you’re never going to be perfect. You’re constantly learning and the variety and support you get through your day through learning all of these different things is really important.
 
-On most teacher training courses you might watch lots of different classes and learn how a particular teacher works with them. Or you might go round with a particular student and see what a day in their lives looks like, with the different teachers they may have that day. This allows you to pick up strategies other people may use while also seeing what kind of challenges a particular class or child might have during that period of time.
+On most teacher training courses you might watch lots of different classes and learn how a particular teacher works with them. Or you might go round with one student and see what a day in their lives looks like, with the different teachers they may have that day. This allows you to pick up strategies other people may use while also seeing what kind of challenges a particular class or child might have during that period of time.
 
 Then you might work either with small groups or one-to-one with pupils. Again you're observing and analysing what's working. You're not alone. You've got a teacher there so if you think something didn't quite land you've got somebody to bounce ideas off and look at how you might change it.
 
