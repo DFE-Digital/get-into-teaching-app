@@ -73,7 +73,7 @@ As a teacher you’re never going to be perfect. You’re constantly learning an
 
 On most teacher training courses you might watch lots of different classes and learn how a particular teacher works with them. Or you might go round with one student and see what a day in their lives looks like, with the different teachers they may have that day. This allows you to pick up strategies other people may use while also seeing what kind of challenges an individual class or child might have during that period of time.
 
-Then you might work either with small groups or one-to-one with pupils. Again you're observing and analysing what's working. You're not alone. You've got a teacher there so if you think something didn't quite land you've got somebody to bounce ideas off and look at how you might change it.
+Then you might work with either small groups or one-to-one with pupils. Again you're observing and analysing what's working. You're not alone. You've got a teacher there so if you think something didn't quite land you've got somebody to bounce ideas off and look at how you might change it.
 
 ## Is there any support once I become a teacher?
 All schools have behaviour policies in place. So you work within a remit to ensure there's consistency with how behaviour is managed as a school, which is best practice. As a teacher you're not expected to manage behaviour on your own, you'll get an induction on your school's behaviour policies and preferred ways of management.
