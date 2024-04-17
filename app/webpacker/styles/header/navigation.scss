@@ -261,7 +261,7 @@ body > header nav {
 
 #primary-navigation {
   @include mq($until: desktop) {
-    ol.primary > li {
+    ol.primary > li, ol.primary li.active {
       > span.nav-icon {
         &__contracted {
           background-image: url("../images/navigation/arrow-down-black.svg");
