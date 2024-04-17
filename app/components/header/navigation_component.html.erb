@@ -1,6 +1,6 @@
 <!-- mobile navigation -->
 <%= tag.nav id: "primary-navigation", class: "hidden-mobile", data: { "navigation-target": "nav", action: "click->navigation#handleNavMenuClick" }, "aria-label": "Primary navigation", role: "navigation" do %>
-  <%= tag.ol class: "primary", data: { "navigation-target": "primary" } do %> <!-- "selectorsXXX": "ol.category-links-list, ol.page-links-list" -->
+  <%= tag.ol class: "primary", data: { "navigation-target": "primary" } do %>
     <% all_resources.each do |resource| %>
       <%= nav_link(resource, :mobile) %>
     <% end %>
@@ -27,7 +27,7 @@
     <% end %>
   </div>
 
-    <div class="key-links">
-    </div>
+  <div class="key-links">
+  </div>
 
 <% end %>
