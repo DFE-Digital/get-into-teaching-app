@@ -57,7 +57,7 @@ You have to set and communicate firm but fair boundaries so they know they're sa
 And follow up on infringements, regardless of how long it takes to reach the result you intend. But don’t threaten anything you're not able to follow up with, like detention for the rest of their life!
 
 ## How do I build relationships with pupils?
-Often building relationships with pupils happens outside of the classroom. It’s having conversations at break time in the corridor or as the kids are coming into school or at after school club. And talking to pupils, not just about what they're learning from you, but taking an interest in them as people. What did they have for their tea last night? How’s their poorly dog? What kind of things that make them laugh or sad and getting to know their authentic self.
+Often building relationships with pupils happens outside of the classroom. It’s having conversations at break time in the corridor, or as the kids are coming into school or at after school club. And talking to pupils, not just about what they're learning from you, but taking an interest in them as people. What did they have for their tea last night? How’s their poorly dog? What kind of things that make them laugh or sad and getting to know their authentic self.
 
 But it has to be a two-way thing, you’ve got to give a little of yourself so they can empathise. So you could share your hopes and dreams. And if you've got a cat at home, that always helps.
 
