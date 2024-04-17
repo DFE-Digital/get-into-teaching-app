@@ -8,7 +8,7 @@ date: "2024-01-09"
 backlink: "../../"
 navigation: 5.5
 navigation_title: How can I manage behaviour in the classroom?
-navigation_description: Common concerns trainee teachers often have around behaviour management in schools.
+navigation_description: Find out what common concerns trainee teachers often have around behaviour management in schools.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
