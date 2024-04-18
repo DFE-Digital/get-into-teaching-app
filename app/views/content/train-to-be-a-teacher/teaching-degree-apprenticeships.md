@@ -10,8 +10,8 @@ related_content:
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
 navigation: 20.20
-navigation_title: If you want to do a teaching apprenticeships
-navigation_description: A teacher degree apprenticeship (TDA)) lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).
+navigation_title: If you want to do a teaching apprenticeship
+navigation_description: A teacher degree apprenticeship (TDA) lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).
 talk_to_us: false
 ---
 If you do not already have an undergraduate degree, you may be eligible to do a teacher degree apprenticeship (TDA), a new route to become a qualified teacher.
@@ -30,13 +30,13 @@ Teaching degree apprenticeships will be available to both people who are leaving
 
 To be eligible to apply for a teacher apprenticeship degree you’ll need the following qualifications:
 
-• GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
-• A levels - the number of A levels and grades required will be set by individual universities
+* GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
+* A levels - the number of A levels and grades required will be set by individual universities
 
 You must also be:
 
-• a resident of England for the last 3 years or more
-• age 16 years or over 
+* a resident of England for the last 3 years or more
+* age 16 years or over 
 
 ## How to apply for a teacher degree apprenticeship (TDA)
 Applications for the new TDAs are expected to open in autumn 2024 for both primary and secondary, with training due to start in autumn 2025.
