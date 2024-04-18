@@ -28,7 +28,7 @@ keywords:
     - Financial Support
 ---
 
-Funding is available to help you train to teach if you choose a course that tuition fees. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs. 
+Funding is available to help you train to teach if you choose a course that has tuition fees. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs. 
 
 You can still apply for a tuition fee loan and a maintenance loan if you already have a student loan, and regardless of whether you get a teaching bursary or scholarship. And you will only have to make loan repayments once you’re earning.
 
