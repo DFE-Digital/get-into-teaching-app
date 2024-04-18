@@ -26,7 +26,7 @@ The salary you’ll earn as a trainee will reflect the level of responsibility t
 The [teacher training providers confirmed so far](https://www.gov.uk/government/publications/secondary-maths-teacher-degree-apprenticeship-funding-pilot-providers?) will offer TDAs in maths, with other subjects likely to follow.
 
 ## Who’s eligible to apply for a teacher degree apprenticeship (TDA)?
-Teaching degree apprenticeships will be available to both people who are leaving school, or at the start of their careers, and those already working who are interested in becoming a teacher, including teaching assistants.
+Teaching degree apprenticeships will be available to both people who are leaving school and those already working who are interested in becoming a teacher, including teaching assistants.
 
 To be eligible to apply for a teacher apprenticeship degree you’ll need the following qualifications:
 
