@@ -33,9 +33,9 @@ To be eligible to apply for a teacher apprenticeship degree you’ll need the fo
 • GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 • A levels - the number of A levels and grades required will be set by individual universities
 
-Other eligibility requirements:
+You must also be:
 
-• resident of England for the last 3 years or more
+• a resident of England for the last 3 years or more
 • age 16 years or over 
 
 ## How to apply for a teacher degree apprenticeship (TDA)
