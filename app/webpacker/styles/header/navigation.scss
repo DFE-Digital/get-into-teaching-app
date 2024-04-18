@@ -3,7 +3,7 @@
 
   padding: .5em;
 
-  a {
+  a, button.btn-as-link {
     display: inline-block;
   }
 }
@@ -24,7 +24,7 @@
     list-style: none;
     flex-direction: column;
     margin: 0;
-    padding: 0;
+    padding: 0.8em 0 0;
     background: #F0F0F0;
 
     > li {
@@ -93,7 +93,7 @@ body > header nav {
     }
   }
 
-  li > a {
+  li > a, li > button.btn-as-link {
     cursor: pointer;
   }
 
@@ -132,25 +132,26 @@ body > header nav {
       }
 
       > li {
-        > a {
+        > a, button.btn-as-link {
           font-weight: bold;
         }
       }
 
-      a {
+      a, button.btn-as-link {
         // NB: this is for all <a> elements
         padding: 0.875em 1.25em;
       }
     }
 
     ol.category-links-list {
+      padding-top: 6px;
       padding-left: 1em;
       flex-basis: 100%;
 
       >  li.active {
         background: #F162A3;
 
-        > a {
+        > a, button.btn-as-link {
           font-weight: bold;
         }
       }
@@ -179,7 +180,7 @@ body > header nav {
       }
 
       >  li.active {
-        > a {
+        > a, button.btn-as-link {
           font-weight: bold;
         }
       }
@@ -203,7 +204,7 @@ body > header nav {
         position: relative;
         flex-direction: row;
         border-bottom: 5px solid $white;
-        padding: 1.25em;
+        padding: 1.25em 0.75em;
 
         &.active {
           border-bottom: 5px solid $pink;
@@ -214,7 +215,7 @@ body > header nav {
           border-bottom: 5px solid $grey;
         }
 
-        a {
+        a, button.btn-as-link {
           &:hover,
           &:focus {
             border-bottom: 4px solid $black;
@@ -222,6 +223,7 @@ body > header nav {
         }
 
         a,
+        button.btn-as-link,
         div {
           line-height: 1.5;
           display: inline-block;
@@ -283,4 +285,13 @@ body > header nav {
       background-image: url("../images/navigation/arrow-up-pink.svg");
     }
   }
+}
+
+
+button.btn-as-link {
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  font: inherit;
+  text-align: start;
+  -moz-appearance: none;
 }

@@ -71,18 +71,17 @@ module Header
 
     def category_link(subcategory, resource, mode)
       title = subcategory
-      path = "#{resource.path}##{subcategory.parameterize}"
       li_id = "#{resource.path.parameterize}-#{subcategory.parameterize}-#{mode}"
       li_sync_id = "#{resource.path.parameterize}-#{subcategory.parameterize}-#{sync_mode(mode)}"
       child_menu_id = page_list_id(resource, subcategory, mode)
       child_menu_sync_id = page_list_id(resource, subcategory, sync_mode(mode))
       child_menu_ids = [child_menu_id, child_menu_sync_id].join(" ")
       li_css = ("active" if subcategory == front_matter["subcategory"]).to_s
-      link_css = "link--black link--no-underline"
+      link_css = "link link--black link--no-underline btn-as-link"
       aria_attributes = { expanded: false, controls: child_menu_ids }
       tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": false } do
         safe_join([
-          link_to(title, path, class: link_css, aria: aria_attributes),
+          tag.button(title, type: "button", class: link_css, aria: aria_attributes),
           contracted_icon,
           row_break,
           if mode == :mobile
