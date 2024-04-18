@@ -40,8 +40,6 @@ Qualifications vary depending on the course. For example, you could get QTS with
 </div>
 
 ## Teacher degree apprenticeships (TDAs)
-If you do not have a degree you may be eligible to apply for a TDA. This new course will allow you work in a school and earn a salary while getting a bachelor's degree and QTS. So you will not have to pay tuition fees. 
-
-Applications for both primary and secondary are expected to open in autumn 2024, with training due to start in autumn 2025. 
+If you do not have a degree you may be eligible to apply for a TDA. This new course will allow you work in a school and earn a salary while getting a bachelor's degree and QTS. So you will not have to pay tuition fees.
 
 Find out more about [teacher degree apprenticeships (TDAs)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
