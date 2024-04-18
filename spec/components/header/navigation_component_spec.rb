@@ -50,8 +50,8 @@ describe Header::NavigationComponent, type: "component" do
   end
 
   it "renders a dropdown menu for category links" do
-    expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='page-five-category-1-desktop'] > a")
-    expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='page-five-category-2-desktop'] > a")
+    expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='page-five-category-1-desktop'] > button")
+    expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='page-five-category-2-desktop'] > button")
   end
 
   it "renders a dropdown menu for page links" do
