@@ -40,7 +40,7 @@ Talk to your teacher training provider or [find a course](https://www.find-postg
 
 If you do not already have an undergraduate degree, you can train to be a teacher as part of your bachelor's degree and get QTS.
 
-Or you may be eligible to apply for a new [teacher degree apprenticeship (TDA)](/train-to-be-a-teacher/teaching-degree-apprenticeships).
+Or you may be eligible to apply for a new [teacher degree apprenticeship (TDA)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
 
 ## What can you teach?
 
