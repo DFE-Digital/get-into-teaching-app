@@ -19,7 +19,7 @@ If you do not already have an undergraduate degree, you may be eligible to do a 
 ##  How do teacher degree apprenticeships (TDAs) work?
 This new teacher training programme means you’ll work in a school and earn a salary while getting a bachelor’s degree and [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
  
-The teaching apprenticeship is a 4-year, full-time course that lets you train as either a primary or secondary teacher with an accredited teacher training provider. Trainee teachers will spend an average of 40% of their time studying for their degree with a university.
+The teaching apprenticeship is a 4-year, full-time course that lets you train as either a primary or secondary teacher with an accredited teacher training provider. Trainee teachers will spend an average of 40% of their time (two days a week) studying for their degree with a university.
 
 The salary you’ll earn as a trainee will reflect the level of responsibility that’s suitable for each stage of your course. You do not have to pay tuition fees but you will not be eligible for student finance.
 
