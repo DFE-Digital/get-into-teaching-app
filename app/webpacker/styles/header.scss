@@ -61,8 +61,6 @@ body > header {
   grid-template-columns: [left] 100px [category-links-start] 1fr [page-links-start] 1fr [hot-links-start] 1fr [content-end] 100px [right];
   grid-template-rows: [main-start] 1fr [main-end];
   background: #F0F0F0;
-  border-top: solid #F0F0F0 15px;
-  border-bottom: solid #F0F0F0 15px;
 }
 
 .category-links {
