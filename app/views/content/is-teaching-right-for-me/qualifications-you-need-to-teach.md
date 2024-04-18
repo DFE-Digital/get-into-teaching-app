@@ -42,8 +42,6 @@ If you do not already have an undergraduate degree, you can train to be a teache
 
 Or you may be eligible to apply for a new [teacher degree apprenticeship (TDA)](/train-to-be-a-teacher/teaching-degree-apprenticeships). This means you'll work in a school and earn a salary while getting a bachelor’s degree and QTS. So you will not have to pay tuition fees.
 
-Applications for the new TDAs are expected to open in autumn 2024 for both primary and secondary, with training due to start in autumn 2025.
-
 ## What can you teach?
 
 Your degree can be in any subject to teach primary or secondary. For secondary courses, your provider will also want to make sure you have a good knowledge of the subject you're applying to teach.
