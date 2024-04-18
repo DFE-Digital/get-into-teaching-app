@@ -1,0 +1,16 @@
+<h1>Content List</h1>
+
+<%= tag.ul do %>
+  <% Pages::Navigation.root_pages.each do |resource| %>
+    <li>
+      <%= link_to(resource.title, resource.path) %>
+      <% if resource.subcategories? %>
+        <ul>
+          <% resource.subcategories.map do |category| %>
+          <li><%= category %></li>
+          <% end %>
+        </ul>
+      <% end %>
+    </li>
+  <% end %>
+<% end %>
