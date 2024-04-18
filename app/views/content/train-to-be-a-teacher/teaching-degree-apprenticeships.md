@@ -23,7 +23,7 @@ The teaching apprenticeship is a 4-year, full-time course that lets you train as
 
 The salary you’ll earn as a trainee will reflect the level of responsibility that’s suitable for each stage of your course. You do not have to pay tuition fees but you will not be eligible for student finance.
 
-The [teacher training providers confirmed so far](https://www.gov.uk/government/publications/secondary-maths-teacher-degree-apprenticeship-funding-pilot-providers?) will offer TDAs in maths, with other subjects likely to follow.
+The [teacher training providers confirmed so far](https://www.gov.uk/government/publications/secondary-maths-teacher-degree-apprenticeship-funding-pilot-providers?) will offer TDAs in maths, with other subjects likely to be offered too.
 
 ## Who’s eligible to apply for a teacher degree apprenticeship (TDA)?
 Teaching degree apprenticeships will be available to both people who are leaving school and those already working who are interested in becoming a teacher, including teaching assistants.
