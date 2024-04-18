@@ -44,4 +44,4 @@ If you do not have a degree you may be eligible to apply for a TDA. This new cou
 
 Applications for both primary and secondary are expected to open in autumn 2024, with training due to start in autumn 2025. 
 
-Find out more about [teacher degree apprenticeships (TDAs)](/train-to-be-a-teacher/teaching-degree-apprenticeships).
+Find out more about [teacher degree apprenticeships (TDAs)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
