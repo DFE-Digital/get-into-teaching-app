@@ -52,7 +52,7 @@ Have routines and rituals or standard operational procedures so children know wh
 Managing behaviour is a learning curve, and exactly what a teacher training course is designed for. Don't worry if you feel a bit nervous as you'll be offered practical guidance and support. And you're never going to get it right all of the time, which is OK.
 
 It’s all about the relationships you build with pupils. If they know they’ll get away with disruptive learning, they'll disrupt learning.
-You have to set and communicate firm but fair boundaries so they know they're safe and won't be ridiculed or embarrassed and their learning comes first. They’ll push against these boundaries because that’s what children do. But if they find the're met with a brick wall they won't push any further because they know what's going to happen in any lesson they turn up to. 
+You have to set and communicate firm but fair boundaries so they know they're safe and won't be ridiculed or embarrassed and their learning comes first. They’ll push against these boundaries because that’s what children do. But if these are consistent they won't push any further because they know what's going to happen in any lesson they turn up to. 
 
 And follow up on infringements, regardless of how long it takes to reach the result you intend. But don’t threaten anything you're not able to follow up with, like detention for the rest of their life!
 
