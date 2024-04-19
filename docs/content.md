@@ -534,12 +534,13 @@ When you have made a change in Visual Studio Code and want to save your work.
 1. Go to the terminal tab on Visual Studio Code **or** Go the top bar of your laptop - click terminal - click 'new terminal'
 2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
 3. When it has finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000. This will open the browser
-4. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
-5. Go to the url: http://127.0.0.1:3000 and insert a / on the end
-6. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
-7. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
+4. If you're not able to preview, try typing **bundle install** in the terminal followed by **yarn install** as this will update the libraries
+5. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
+6. Go to the url: http://127.0.0.1:3000 and insert a / on the end
+7. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
+8. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
 The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
-8. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it. But you don't need to commit the change to be able to view it.
+9. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it. But you don't need to commit the change to be able to view it.
 
 ## If you add something to the wrong branch
 
