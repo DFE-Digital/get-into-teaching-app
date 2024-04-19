@@ -279,80 +279,82 @@ $mobile-cutoff: 800px;
 
 
 .landing-hero {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
 	margin: auto;
 	width: 100%;
 	max-width: 2000px;
-	
-	.content {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: center;
-		align-items: center;
-		padding:0;
-		max-height:420px;
-		max-width:100%;
-		overflow: hidden;
+	max-height:420px;
+	overflow: hidden;
 		
-		@media only screen and (max-width: 767px) {			
-			flex-direction: column;	
-			overflow: visible;
-			max-height: fit-content;
-		}
+	@media only screen and (max-width: 767px) {			
+		flex-direction: column;	
+		overflow: visible;
+		max-height: fit-content;
+	} 
 	
-		.title {
-			padding: 90px;
-			z-index: 1;
+	&.pink {
+		background-color: $pink;
+	}
+	
+	&.blue {
+		background-color: $blue;
+	}
 
-			@media only screen and (max-width: 1200px) {
-				padding: 50px;
-			}
+	.content {
+		padding: 90px;
+		z-index: 1;
 
-			@media only screen and (max-width: 767px) {			
-				padding: 20px;		
-				width: 100%;
-			}
-			
-			.landing_hero__title {
-				@media only screen and (max-width: 767px) {			
-					margin-top:-50px;
-				}
-			}
-
-			h1 {
-				font-size: 70px;
-				padding: 0 10px;
-				background: #00b1eb;
-				display:inline;
-				-webkit-box-decoration-break: clone;
-				box-decoration-break: clone;
-				line-height: 1.15;	
-				
-				@media only screen and (max-width: 1200px) {
-					font-size: 54px;
-				}
-			}
+		@media only screen and (max-width: 1200px) {
+			padding: 50px;
 		}
 
-		picture img {
-			-o-object-fit: cover;
-			object-fit: cover;
-			-o-object-position: 100% 30%;
-			object-position: 100% 30%;
+		@media only screen and (max-width: 767px) {			
+			padding: 20px;		
 			width: 100%;
-			height: 100%;
-			vertical-align: bottom;
 		}
-
-		& > * {
-			width:50%;
-
-			@media only screen and (max-width: 767px) {		
-				width:100%;
+		
+		.landing_hero__title {
+			@media only screen and (max-width: 767px) {			
+				margin-top:-50px;
 			}
 		}
 
-		& * {
-			box-sizing: border-box;
+		h1 {
+			font-size: 70px;
+			padding: 0 10px;
+			display:inline;
+			-webkit-box-decoration-break: clone;
+			box-decoration-break: clone;
+			line-height: 1.15;	
+			
+			@media only screen and (max-width: 1200px) {
+				font-size: 54px;
+			}
 		}
+	}
+
+	picture img {
+		-o-object-fit: cover;
+		object-fit: cover;
+		-o-object-position: 100% 30%;
+		object-position: 100% 30%;
+		width: 100%;
+		height: 100%;
+		vertical-align: bottom;
+	}
+
+	& > * {
+		width:50%;
+
+		@media only screen and (max-width: 767px) {		
+			width:100%;
+		}
+	}
+
+	& * {
+		box-sizing: border-box;
 	}
 }

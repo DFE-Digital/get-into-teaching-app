@@ -14,8 +14,8 @@ module Content
         @subtitle_button    = fm["subtitle_button"]
         @image              = fm["image"]
         @paragraph          = fm["title_paragraph"]
-        @title_bg_color     = fm["title_bg_color"] || "pink"
-        @hero_bg_color      = fm["hero_bg_color"] || "grey"
+        @title_bg_color     = fm["title_bg_color"] || "blue"
+        @hero_bg_color      = fm["hero_bg_color"] || "pink"
         @hero_blend_content = fm["hero_blend_content"] || false
         @hero_content_width = fm["hero_content_width"] || "even"
       end

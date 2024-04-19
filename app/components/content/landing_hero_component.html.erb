@@ -1,9 +1,8 @@
 <%= tag.div(class: classes) do %>
-<div class="content heading--box-<%= @title_bg_color %>">
   <%= picture %>
-  <div class="title">
+  <div class="content">
     <div class="landing_hero__title">
-      <h1 class="heading--box-padded heading--box-padding-l"><%= title %></h1>
+    <h1 class="heading--box-padded heading--box-padding-l heading--box-<%= @title_bg_color %>"><%= title %></h1>
     </div>
     <% if show_subtitle? %>
       <div class="hero__subtitle">
@@ -27,5 +26,4 @@
       </div>
     <% end %>
   </div>
-</div>
 <% end %>
