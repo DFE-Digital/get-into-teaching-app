@@ -16,7 +16,7 @@ RSpec.describe Content::LandingHeroComponent, type: "component" do
                   ))
   end
 
-  it { is_expected.to have_css(".campaign-hero") }
+  it { is_expected.to have_css(".landing-hero") }
   it { is_expected.to have_css("header") }
   it { is_expected.to have_css("h1", text: "My page") }
   it { is_expected.to have_css(%(img)) }
