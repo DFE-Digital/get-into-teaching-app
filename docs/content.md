@@ -557,6 +557,10 @@ It will need to be in quotation marks. Then, you need to put the old url a colon
 Example: "/train-to-be-a-teacher/teacher-training-personal-statement": "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
 Press enter to create an indention - 
 Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
+The easiest way to make sure you don't miss any pages to redirect is to do a search which will show you all the pages you need to include.
+
+## Redirect blog tags
+If you're deleting any blog posts as well as setting up redirects you'll also need to check the blog tags to see if there are any that need to be deleted too. **Blog tags live in the config file**.
 
 ## Finding links on the site
 You can find everywhere a page is linked to by:
