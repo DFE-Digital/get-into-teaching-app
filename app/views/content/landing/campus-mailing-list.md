@@ -6,10 +6,6 @@ content:
     - content/landing/campus-mailing-list/mailing-list
 image: "static/images/content/hero-images/chemistry.jpg"
 layout: "layouts/minimal"
-hero_bg_color: blue
-title_bg_color: white
 talk_to_us: false
 noindex: true
 ---
-
-

@@ -293,14 +293,78 @@ $mobile-cutoff: 800px;
 		flex-direction: column;	
 		overflow: visible;
 		max-height: fit-content;
-	} 
-	
-	&.pink {
-		background-color: $pink;
 	}
-	
-	&.blue {
+
+	&.pink-blue {
+		background-color: $pink;
+
+		h1 span {
+		  background: $blue;
+		}
+
+		&.pastel {
+			background-color: rgba($pink, 0.4);
+		}
+	}
+
+	&.blue-pink {
 		background-color: $blue;
+
+		h1 span {
+		  background: $pink;
+		}
+
+		&.pastel {
+			background-color: rgba($blue, 0.4);
+		}
+	}
+
+	&.pink-green {
+		background-color: $pink;
+	
+		h1 span {
+		  background: $green;
+		}
+		
+		&.pastel {
+			background-color: rgba($pink, 0.4);
+		}
+	}
+
+	&.green-pink {
+		background-color: $green;
+	
+		h1 span {
+		  background: $pink;
+		}
+		
+		&.pastel {
+			background-color: rgba($green, 0.4);
+		}
+	}
+
+	&.green-yellow {
+		background-color: $green;
+	
+		h1 span {
+		  background: $yellow;
+		}
+		
+		&.pastel {
+			background-color: rgba($green, 0.4);
+		}
+	}
+
+	&.yellow-green {
+		background-color: $yellow;
+
+		h1 span {
+		  background: $green;
+		}
+
+		&.pastel {
+			background-color: rgba($yellow, 0.4);
+		}
 	}
 
 	.content {
@@ -315,23 +379,24 @@ $mobile-cutoff: 800px;
 			padding: 20px;		
 			width: 100%;
 		}
-		
-		.landing_hero__title {
-			@media only screen and (max-width: 767px) {			
-				margin-top:-50px;
-			}
-		}
 
 		h1 {
 			font-size: 70px;
-			padding: 0 10px;
-			display:inline;
-			-webkit-box-decoration-break: clone;
-			box-decoration-break: clone;
 			line-height: 1.15;	
+			margin:0;
 			
 			@media only screen and (max-width: 1200px) {
 				font-size: 54px;
+			}
+
+			@media only screen and (max-width: 767px) {			
+				margin-top:-50px;
+			}
+
+			span {
+				padding: 0 10px;
+				-webkit-box-decoration-break: clone;
+				box-decoration-break: clone;
 			}
 		}
 	}

@@ -1,29 +1,10 @@
-<%= tag.div(class: classes) do %>
-  <%= picture %>
+<%= tag.header(class: classes) do %>
+  <%= header_image %>
   <div class="content">
-    <div class="landing_hero__title">
-    <h1 class="heading--box-padded heading--box-padding-l heading--box-<%= @title_bg_color %>"><%= title %></h1>
-    </div>
-    <% if show_subtitle? %>
-      <div class="hero__subtitle">
-        <%= tag.div(subtitle, class: "landing_hero__subtitle__text") %>
-
-        <% if show_subtitle_button? %>
-          <%= link_to(@subtitle_button, @subtitle_link, class: "landing_hero__subtitle__button button") %>
-        <% end %>
-    </div>
-    <% end %>
-
-    <% if content.present? %>
-      <div class="landing_hero__content">
-        <%= content %>
-      </div>
-    <% end %>
-
-    <% if paragraph.present? %>
-      <div class="landing_hero__paragraph">
-        <%== paragraph %>
-      </div>
+    <%= tag.h1(class: "heading") do %>
+      <% Array.wrap(title).each do |p| %>
+        <%= tag.span(p) %>
+      <% end %>
     <% end %>
   </div>
 <% end %>
