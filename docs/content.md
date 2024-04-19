@@ -519,6 +519,17 @@ navigation_title:
 navigation_description: 
 keywords: 
 
+## Saving a change
+When you have made a change in Visual Studio Code and want to save your work.
+1. Save the change by CTRL-S
+2. This will cause a notification on the source control
+3. You will need to type a name for this change in the 'message' box
+4. Click the plus button that appears on the change - this will stage the change
+5. Click 'sync changes'
+6. Commit the changes - make sure you name each commit in the box above the blue box where it says commit
+7. This will then open a pull request, you will need to fill in the details for this and click 'Create pull request' if you want to create one. But you may not want to create a pull request until you've made all of your changes so you don't have to publish the branch or create a pull request until you're ready
+8. You can monitor pull requests and assign reviewers here https://github.com/DFE-Digital/get-into-teaching-app/pulls
+
 ## Preview a change
 1. Go to the terminal tab on Visual Studio Code **or** Go the top bar of your laptop - click terminal - click 'new terminal'
 2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
@@ -529,17 +540,6 @@ keywords:
 7. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
 The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
 8. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it.
-
-## Saving a change
-When you have made a change in Visual Studio Code and want to save your work.
-1. Save the change by CTRL-S
-2. This will cause a notification on the source control
-3. You will need to type a name for this change in the 'message' box
-4. Click the plus button that appears on the change - this will stage the change
-5. Click 'sync changes'
-6. Commit the changes
-7. This will then open a pull request, you will need to fill in the details for this and click 'Create pull request'
-8. You can monitor pull requests and assign reviewers here https://github.com/DFE-Digital/get-into-teaching-app/pulls
 
 ## If you add something to the wrong branch
 
