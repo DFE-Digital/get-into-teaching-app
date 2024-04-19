@@ -3,8 +3,7 @@ title: Explore teaching advisers
 description: |-
     Find out if teaching is for you with an explore teaching adviser who can help you discover what teaching is really like.
 layout: "layouts/minimal"
-colour: "yellow"
-image: "static/images/content/ttalianne.jpg"
+image: "static/images/content/campus-advisers/adviser.jpeg"
 keywords:
   - explore teaching advisers
   - adviser

@@ -8,7 +8,6 @@ content:
     - content/landing/careers/content
     - content/landing/careers/promo
 image: "static/images/content/hero-images/0029.jpg"
-colour: "yellow"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true

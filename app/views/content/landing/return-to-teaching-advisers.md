@@ -5,7 +5,6 @@ content:
    - content/landing/return-to-teaching-advisers/header
    - content/landing/return-to-teaching-advisers/adviser
 image: "static/images/content/campus-advisers/adviser.jpeg"
-colour: "green"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true

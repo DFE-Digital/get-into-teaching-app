@@ -8,7 +8,6 @@ content:
     - content/landing/train-to-teach/content
     - content/landing/train-to-teach/promo
 image: "static/images/content/hero-images/0029.jpg"
-colour: "yellow"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true

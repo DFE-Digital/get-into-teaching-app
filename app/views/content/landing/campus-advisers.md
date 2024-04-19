@@ -5,7 +5,6 @@ content:
     - content/landing/campus-advisers/header
     - content/landing/campus-advisers/adviser
 image: "static/images/content/campus-advisers/adviser.jpeg"
-colour: "pink"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true

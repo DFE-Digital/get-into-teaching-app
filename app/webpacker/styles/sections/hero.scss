@@ -367,6 +367,18 @@ $mobile-cutoff: 800px;
 		}
 	}
 
+	&.yellow-yellow {
+		background-color: $yellow;
+
+		h1 span {
+		  background: $yellow;
+		}
+
+		&.pastel {
+			background-color: rgba($yellow, 0.4);
+		}
+	}
+
 	.content {
 		padding: 90px;
 		z-index: 1;
