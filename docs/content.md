@@ -571,6 +571,7 @@ You can find everywhere a page is linked to by:
 3. You should search a pages path here ie. /subjects/maths
 4. The system will search for whereever this link is in the code across the website
 
+## Resolving comments
+People can add comments to pull requests in Github which makes it easier to see feedback and keep track of changes. You can also tag people and reply to their comments.
 
-
-
+Once you've addressed a comment click on resolve. This hides it from the conversation making it easier to keep track of what's been updated.
