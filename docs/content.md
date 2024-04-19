@@ -539,7 +539,7 @@ When you have made a change in Visual Studio Code and want to save your work.
 6. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
 7. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
 The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
-8. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it.
+8. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it. But you don't need to commit the change to be able to view it.
 
 ## If you add something to the wrong branch
 
