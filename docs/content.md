@@ -80,6 +80,8 @@ The majority of pages on the website are formatted in Markdown, which is a light
 
 There is a [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) that serves as a good reference on how to standard formatting, such as making something **bold** or *italic*. In conjunction with page frontmatter (see below) we can do some extra GiT-specific things in our Markdown, which this section aims to explain.
 
+**You'll need to check if the page is in markdown or html** as some pages have been coded in html. Depending on which it is you need to make sure you're consistent, so for e.g. if you have a section in markdown you can't add a link using html code it needs to also be in markdown.
+
 ### Headings
 
 Where possible we should use the `HeadingComponent` to render a heading; especially if it contains a caption. For example:
