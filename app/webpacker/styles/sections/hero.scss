@@ -281,8 +281,6 @@ $mobile-cutoff: 800px;
 .landing-hero {
 	display: flex;
 	flex-direction: row-reverse;
-	justify-content: center;
-	align-items: center;
 	margin: auto;
 	width: 100%;
 	max-width: 2000px;
@@ -307,18 +305,6 @@ $mobile-cutoff: 800px;
 		}
 	}
 
-	&.blue-pink {
-		background-color: $blue;
-
-		h1 span {
-		  background: $pink;
-		}
-
-		&.pastel {
-			background-color: rgba($blue, 0.4);
-		}
-	}
-
 	&.pink-green {
 		background-color: $pink;
 	
@@ -328,6 +314,30 @@ $mobile-cutoff: 800px;
 		
 		&.pastel {
 			background-color: rgba($pink, 0.4);
+		}
+	}
+
+	&.pink-yellow {
+		background-color: $pink;
+	
+		h1 span {
+		  background: $yellow;
+		}
+		
+		&.pastel {
+			background-color: rgba($pink, 0.4);
+		}
+	}
+
+	&.blue-pink {
+		background-color: $blue;
+
+		h1 span {
+		  background: $pink;
+		}
+
+		&.pastel {
+			background-color: rgba($blue, 0.4);
 		}
 	}
 
@@ -380,6 +390,7 @@ $mobile-cutoff: 800px;
 	}
 
 	.content {
+		align-self:center;
 		padding: 90px;
 		z-index: 1;
 
@@ -413,14 +424,18 @@ $mobile-cutoff: 800px;
 		}
 	}
 
-	picture img {
-		-o-object-fit: cover;
-		object-fit: cover;
-		-o-object-position: 100% 30%;
-		object-position: 100% 30%;
-		width: 100%;
-		height: 100%;
-		vertical-align: bottom;
+	picture {
+		align-self:stretch;
+
+		img {
+			-o-object-fit: cover;
+			object-fit: cover;
+			-o-object-position: 100% 30%;
+			object-position: 100% 30%;
+			width: 100%;
+			height: 100%;
+			vertical-align: bottom;
+		}
 	}
 
 	& > * {
