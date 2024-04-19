@@ -480,6 +480,8 @@ To do this you will need to
 	- type in the name of your new branch and press enter
 	- if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
 
+  **Make sure you're in the new branch when you create the doc and not master as you can't make changes to the master doc**
+
 3. Navigate to the right hand side bar, where you want the new page to sit
 4. Right hand click and select 'New file'
 5. Give name to file ie. when-to-apply.md **make sure you put md on the end of the name if it is a markdown file**
