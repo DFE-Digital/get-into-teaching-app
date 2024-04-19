@@ -48,3 +48,5 @@ The website is deployed to AKS. The environments can be confusing because our Ra
 ## License
 
 [MIT Licence](LICENCE)
+
+This project is tested with BrowserStack
