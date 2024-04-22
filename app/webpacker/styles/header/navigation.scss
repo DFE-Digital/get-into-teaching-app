@@ -45,6 +45,10 @@
       }
 
       &.active {
+        background: #DEDEDE;
+      }
+
+      &.selected {
         border-left: solid $pink 4px;
         background: $white;
       }
@@ -206,7 +210,7 @@ body > header nav {
         border-bottom: 5px solid $white;
         padding: 1.25em 0.75em;
 
-        &.active {
+        &.selected {
           border-bottom: 5px solid $pink;
         }
 
@@ -228,7 +232,10 @@ body > header nav {
           line-height: 1.5;
           display: inline-block;
           padding: 0 .2em;
-          border-bottom: 4px solid $white;
+        }
+
+        .break {
+          display: none;
         }
       }
     }
@@ -256,7 +263,7 @@ body > header nav {
     display: block;
     width: 21px;
     height: 21px;
-    margin-left: 1em;
+    margin-left: 0.5em;
     margin-right: 1em;
   }
 }

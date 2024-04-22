@@ -70,6 +70,7 @@ export default class extends Controller {
         if (icon.classList.contains('nav-icon__contracted')) {
           icon.classList.remove('nav-icon__contracted');
           icon.classList.add('nav-icon__expanded');
+          item.classList.add('selected');
           item.querySelector('a,button').ariaExpanded = true;
           return true;
         }
@@ -85,6 +86,7 @@ export default class extends Controller {
         if (icon.classList.contains('nav-icon__expanded')) {
           icon.classList.remove('nav-icon__expanded');
           icon.classList.add('nav-icon__contracted');
+          item.classList.remove('selected');
           item.querySelector('a,button').ariaExpanded = false;
           return true;
         }
