@@ -277,143 +277,55 @@ $mobile-cutoff: 800px;
 }
 
 
-
+// New styles for LandingHeroComponent
 .landing-hero {
 	display: flex;
 	flex-direction: row-reverse;
 	margin: auto;
 	width: 100%;
 	max-width: 2000px;
-	max-height:420px;
-	overflow: hidden;
-		
-	@media only screen and (max-width: 767px) {			
-		flex-direction: column;	
-		overflow: visible;
+	max-height: 420px;
+
+	@media only screen and (max-width: 767px) {
+		flex-direction: column;
 		max-height: fit-content;
 	}
 
-	&.pink-blue {
-		background-color: $pink;
+	// 50% width on child items '.content' and 'picture' (100% on mobile)
+	& > * {
+		width: 50%;
 
-		h1 span {
-		  background: $blue;
-		}
-
-		&.pastel {
-			background-color: rgba($pink, 0.4);
-		}
-	}
-
-	&.pink-green {
-		background-color: $pink;
-	
-		h1 span {
-		  background: $green;
-		}
-		
-		&.pastel {
-			background-color: rgba($pink, 0.4);
-		}
-	}
-
-	&.pink-yellow {
-		background-color: $pink;
-	
-		h1 span {
-		  background: $yellow;
-		}
-		
-		&.pastel {
-			background-color: rgba($pink, 0.4);
-		}
-	}
-
-	&.blue-pink {
-		background-color: $blue;
-
-		h1 span {
-		  background: $pink;
-		}
-
-		&.pastel {
-			background-color: rgba($blue, 0.4);
-		}
-	}
-
-	&.green-pink {
-		background-color: $green;
-	
-		h1 span {
-		  background: $pink;
-		}
-		
-		&.pastel {
-			background-color: rgba($green, 0.4);
-		}
-	}
-
-	&.green-yellow {
-		background-color: $green;
-	
-		h1 span {
-		  background: $yellow;
-		}
-		
-		&.pastel {
-			background-color: rgba($green, 0.4);
-		}
-	}
-
-	&.yellow-green {
-		background-color: $yellow;
-
-		h1 span {
-		  background: $green;
-		}
-
-		&.pastel {
-			background-color: rgba($yellow, 0.4);
-		}
-	}
-
-	&.yellow-yellow {
-		background-color: $yellow;
-
-		h1 span {
-		  background: $yellow;
-		}
-
-		&.pastel {
-			background-color: rgba($yellow, 0.4);
+		@media only screen and (max-width: 767px) {
+			width: 100%;
 		}
 	}
 
 	.content {
-		align-self:center;
+		align-self: center;
 		padding: 90px;
+		box-sizing: border-box;
 		z-index: 1;
 
 		@media only screen and (max-width: 1200px) {
 			padding: 50px;
 		}
 
-		@media only screen and (max-width: 767px) {			
-			padding: 20px;		
+		@media only screen and (max-width: 767px) {
+			padding: 20px;
 			width: 100%;
 		}
 
 		h1 {
 			font-size: 70px;
-			line-height: 1.15;	
-			margin:0;
+			line-height: 1.15;
+			margin: 0;
 			
 			@media only screen and (max-width: 1200px) {
 				font-size: 54px;
 			}
 
-			@media only screen and (max-width: 767px) {			
-				margin-top:-50px;
+			@media only screen and (max-width: 767px) {
+				margin-top: -50px;
 			}
 
 			span {
@@ -425,28 +337,39 @@ $mobile-cutoff: 800px;
 	}
 
 	picture {
-		align-self:stretch;
+		align-self: stretch;
 
 		img {
 			-o-object-fit: cover;
 			object-fit: cover;
-			-o-object-position: 100% 30%;
-			object-position: 100% 30%;
+			-o-object-position: 100% 50%;
+			object-position: 100% 50%;
 			width: 100%;
 			height: 100%;
 			vertical-align: bottom;
 		}
 	}
 
-	& > * {
-		width:50%;
-
-		@media only screen and (max-width: 767px) {		
-			width:100%;
+	// Colour themes
+	@mixin colours($background-color, $highlight-color) {
+		background-color: $background-color;
+		
+		h1 span {
+			background: $highlight-color;
+		}
+	  
+		&.pastel {
+			background-color: rgba($background-color, 0.4);
 		}
 	}
 
-	& * {
-		box-sizing: border-box;
-	}
+	&.pink-blue { @include colours($pink, $blue); }
+	&.pink-green { @include colours($pink, $green); }
+	&.pink-yellow { @include colours($pink, $yellow); }
+	&.blue-pink { @include colours($blue, $pink); }
+	&.green-pink { @include colours($green, $pink); }
+	&.green-yellow { @include colours($green, $yellow); }
+	&.yellow-green { @include colours($yellow, $green); }
+	&.yellow-yellow { @include colours($yellow, $yellow); }
+
 }
