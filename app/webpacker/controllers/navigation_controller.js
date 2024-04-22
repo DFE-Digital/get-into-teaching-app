@@ -29,6 +29,7 @@ export default class extends Controller {
     const itemSync = this.getTargetItem(item.dataset.syncId);
     const childMenu = this.getTargetItem(item.dataset.childMenuId);
     const childMenuSync = this.getTargetItem(item.dataset.childMenuSyncId);
+    const toggleSecondaryNavigation = item.dataset.toggleSecondaryNavigation;
 
     if (item && !directLink) {
       event.preventDefault();
@@ -39,10 +40,16 @@ export default class extends Controller {
         this.showMenu(childMenu);
         this.showMenu(childMenuSync);
         this.contractAndHideSiblingMenus(item, itemSync);
+        if (toggleSecondaryNavigation) {
+          this.expandSecondaryNavigation();
+        }
       } else if (this.toggleIconContracted(item)) {
         this.toggleIconContracted(itemSync);
         this.contractAndHideChildMenu(childMenu);
         this.contractAndHideChildMenu(childMenuSync);
+        if (toggleSecondaryNavigation) {
+          this.contractSecondaryNavigation();
+        }
       }
     }
   }
@@ -115,6 +122,14 @@ export default class extends Controller {
         return false;
       }
     }
+  }
+
+  expandSecondaryNavigation() {
+    this.desktopTarget.classList.add('expanded');
+  }
+
+  contractSecondaryNavigation() {
+    this.desktopTarget.classList.remove('expanded');
   }
 
   contractAndHideSiblingMenus(item) {

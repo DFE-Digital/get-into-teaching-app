@@ -19,6 +19,11 @@
 }
 
 #secondary-navigation {
+  &.expanded {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   ol.category-links-list, ol.page-links-list {
     display: flex;
     list-style: none;
@@ -54,9 +59,11 @@
       }
 
       > a,
+      button.btn-as-link,
       div {
         display: block;
         font-size: 1em;
+        padding-left: 0;
       }
 
       .break {
@@ -84,12 +91,14 @@ body > header nav {
   ol.primary {
     list-style: none;
     display: flex;
+    border: dotted green 1px;
 
     li {
       @include list-item-nav;
       @include reset;
       line-height: 1.2;
       margin-bottom: 0;
+      border: dotted red 1px;
 
       display: flex;
       justify-content: space-between;
@@ -199,7 +208,7 @@ body > header nav {
 
     ol.primary {
       flex-grow: 1;
-      align-items: start;
+      align-items: flex-end;
       justify-content: flex-end;
       margin: 0 1em;
       padding: 0 1em;
@@ -207,6 +216,9 @@ body > header nav {
       > li {
         position: relative;
         flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
         border-bottom: 5px solid $white;
         padding: 1.25em 0.75em;
 
@@ -220,9 +232,11 @@ body > header nav {
         }
 
         a, button.btn-as-link {
+          border: dotted orange 1px;
+
           &:hover,
           &:focus {
-            border-bottom: 4px solid $black;
+            text-decoration: underline;
           }
         }
 
@@ -236,6 +250,10 @@ body > header nav {
 
         .break {
           display: none;
+        }
+
+        .nav-icon {
+          order: 2;
         }
       }
     }
@@ -265,6 +283,7 @@ body > header nav {
     height: 21px;
     margin-left: 0.5em;
     margin-right: 1em;
+    border: dotted blue 1px;
   }
 }
 
