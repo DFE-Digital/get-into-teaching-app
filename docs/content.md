@@ -528,7 +528,7 @@ When you have made a change in Visual Studio Code and want to save your work.
 3. You will need to type a name for this change in the 'message' box
 4. Click the plus button that appears on the change - this will stage the change
 5. Click 'sync changes'
-6. Commit the changes - make sure you name each commit in the box above the blue box where it says commit
+6. Commit the changes - make sure you name each commit in the box above the blue box where it says commit. You should name each commit to the specific change being made. This makes it easier to review any changes in the pull request and is useful for auditing.
 7. This will then open a pull request, you will need to fill in the details for this and click 'Create pull request' if you want to create one. But you may not want to create a pull request until you've made all of your changes so you don't have to publish the branch or create a pull request until you're ready
 8. You can monitor pull requests and assign reviewers here https://github.com/DFE-Digital/get-into-teaching-app/pulls
 
