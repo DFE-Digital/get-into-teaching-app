@@ -14,7 +14,7 @@ promo_content:
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     What to expect in teacher training : "/train-to-be-a-teacher/initial-teacher-training" 
-    Early career teachers (ECTs) : "/support-for-early-career-teachers"
+    Early career teachers (ECTs) : "is-teaching-right-for-me/support-for-early-career-teachers"
 
 keywords:
   - Behaviour management
