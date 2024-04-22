@@ -1,5 +1,6 @@
-<h1>Content List</h1>
-
+<h1>Content</h1>
+<!-- The <ul> element is dynamically generated -->
+<!-- //NOSONAR -->
 <%= tag.ul do %>
   <% Pages::Navigation.root_pages.each do |resource| %>
     <li>
