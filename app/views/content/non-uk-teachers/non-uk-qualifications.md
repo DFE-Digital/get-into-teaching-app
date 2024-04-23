@@ -7,8 +7,6 @@ related_content:
     Learn more about fees and funding for non-UK trainees : "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
     Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Learn more about international qualified teacher status : "/non-uk-teachers/international-qualified-teacher-status"
-promo_content:
-    - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.20
 navigation_title: Qualifications you'll need to train to teach in England
 navigation_description: Before you apply, get help checking you have the correct qualifications for English teacher training.
@@ -130,4 +128,8 @@ If you're already a qualified teacher, find out how you can [teach in England if
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
-For help with individual applications to training providers or schools, please [register with a teacher training adviser](/teacher-training-adviser/sign_up/identity). Advisers can give you personalised support with your application.
+You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your application to a training provider or school.
+
+To check if you're eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
+
+We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.

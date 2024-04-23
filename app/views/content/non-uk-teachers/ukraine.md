@@ -7,8 +7,6 @@ related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Teach in England if you trained overseas : "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
-promo_content:
-    - content/non-uk-teachers/promos/adviser-promo-ukraine
 navigation: 20.70
 navigation_title: Ukrainian teachers and trainees coming to the UK
 navigation_description: Find information and advice for Ukrainian citizens seeking training places and teaching jobs in England.
@@ -186,8 +184,13 @@ Your [salary as a teacher](/is-teaching-right-for-me/teacher-pay-and-benefits) w
 
 ## Contact
 
-For help and further information, please email us at teach.inengland@education.gov.uk.
+If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
+You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your application to a training provider or school.
+
+To check if you're eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
+
+We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
 
 
 
