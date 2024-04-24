@@ -40,6 +40,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 0.63em 0.94em;
+      border-left: solid #F0F0F0 4px;
 
       &:hover {
         background: #DEDEDE;
@@ -91,14 +92,14 @@ body > header nav {
   ol.primary {
     list-style: none;
     display: flex;
-    border: dotted green 1px;
+    //border: dotted green 1px;
 
     li {
       @include list-item-nav;
       @include reset;
       line-height: 1.2;
       margin-bottom: 0;
-      border: dotted red 1px;
+      //border: dotted red 1px;
 
       display: flex;
       justify-content: space-between;
@@ -119,6 +120,7 @@ body > header nav {
       flex-wrap: wrap;
       margin: 0;
       padding: 0 1em;
+      //padding: 0;
 
       li {
         // NB: this is for all <li> elements in the mobile menu
@@ -127,6 +129,7 @@ body > header nav {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        font-size: 1em;
 
         .grow {
           flex-grow: 1;
@@ -145,8 +148,15 @@ body > header nav {
       }
 
       > li {
-        > a, button.btn-as-link {
+        > a, > button.btn-as-link {
           font-weight: bold;
+          border-left: solid transparent 4px;
+        }
+
+        border-bottom: solid 1px #B7B9BB;
+
+        &:last-child {
+          border-bottom: solid 1px #B7B9BB;
         }
       }
 
@@ -158,10 +168,10 @@ body > header nav {
 
     ol.category-links-list {
       padding-top: 6px;
-      padding-left: 1em;
+      padding-left: 0;
       flex-basis: 100%;
 
-      >  li.active {
+      >  li.selected {
         background: #F162A3;
 
         > a, button.btn-as-link {
@@ -192,7 +202,7 @@ body > header nav {
         border-bottom: solid 1px #B7B9BB;
       }
 
-      >  li.active {
+      >  li.selected {
         > a, button.btn-as-link {
           font-weight: bold;
         }
@@ -232,7 +242,7 @@ body > header nav {
         }
 
         a, button.btn-as-link {
-          border: dotted orange 1px;
+          //border: dotted orange 1px;
 
           &:hover,
           &:focus {
@@ -283,13 +293,13 @@ body > header nav {
     height: 21px;
     margin-left: 0.5em;
     margin-right: 1em;
-    border: dotted blue 1px;
+    //border: dotted blue 1px;
   }
 }
 
 #primary-navigation {
   @include mq($until: desktop) {
-    ol.primary > li, ol.primary li.active {
+    ol.primary > li, ol.primary li.selected {
       > span.nav-icon {
         &__contracted {
           background-image: url("../images/navigation/arrow-down-black.svg");

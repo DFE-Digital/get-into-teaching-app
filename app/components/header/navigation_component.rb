@@ -34,7 +34,7 @@ module Header
       child_menu_ids = [child_menu_id, child_menu_sync_id].join(" ")
       li_css = ("active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)).to_s
       link_css = "grow link--black link--no-underline"
-      show_dropdown = resource.subcategories?
+      show_dropdown = resource.children?
       aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_ids } : {}
       tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown } do
         safe_join([
@@ -42,7 +42,7 @@ module Header
           if show_dropdown
             contracted_icon
           end,
-          if mode == :mobile && resource.subcategories?
+          if mode == :mobile && resource.children?
             [
               row_break,
               category_list(resource: resource, css_class: "category-links-list hidden-menu hidden-desktop", mode: mode),
@@ -70,9 +70,9 @@ module Header
     end
 
     def category_link(subcategory, resource, mode)
-      title = subcategory
-      li_id = "#{resource.path.parameterize}-#{subcategory.parameterize}-#{mode}"
-      li_sync_id = "#{resource.path.parameterize}-#{subcategory.parameterize}-#{sync_mode(mode)}"
+      title = subcategory || 'Main details'
+      li_id = "#{resource.path.parameterize}-#{title.parameterize}-#{mode}"
+      li_sync_id = "#{resource.path.parameterize}-#{title.parameterize}-#{sync_mode(mode)}"
       child_menu_id = page_list_id(resource, subcategory, mode)
       child_menu_sync_id = page_list_id(resource, subcategory, sync_mode(mode))
       child_menu_ids = [child_menu_id, child_menu_sync_id].join(" ")
@@ -92,7 +92,7 @@ module Header
     end
 
     def page_list_id(resource, subcategory, mode)
-      "#{resource.path.parameterize}-#{subcategory.parameterize}-pages-#{mode}"
+      "#{resource.path.parameterize}-#{(subcategory || 'details').parameterize}-pages-#{mode}"
     end
 
     def page_list(resource:, subcategory:, css_class:, mode:)
