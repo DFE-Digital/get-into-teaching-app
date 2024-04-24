@@ -24,7 +24,7 @@ module Header
       mode == :mobile ? :desktop : :mobile
     end
 
-    def nav_link(resource, mode)
+    def nav_link(resource, mode, level: 1)
       title = resource.title
       path = resource.path
       li_id = "#{path.parameterize}-#{mode}"
@@ -33,8 +33,8 @@ module Header
       child_menu_sync_id = category_list_id(resource, sync_mode(mode))
       child_menu_ids = [child_menu_id, child_menu_sync_id].join(" ")
       li_css = ("active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)).to_s
-      link_css = "grow link--black link--no-underline"
       show_dropdown = resource.children?
+      link_css = show_dropdown || level > 1 ? "grow link--black link--no-underline" : "grow link--black"
       aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_ids } : {}
       tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown } do
         safe_join([
@@ -100,7 +100,7 @@ module Header
         safe_join(
           [
             resource.children_in_subcategory(subcategory).map do |child_resource|
-              nav_link(child_resource, mode)
+              nav_link(child_resource, mode, level: 3)
             end,
           ],
         )

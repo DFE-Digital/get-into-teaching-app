@@ -92,14 +92,14 @@ body > header nav {
   ol.primary {
     list-style: none;
     display: flex;
-    //border: dotted green 1px;
+    // border: dotted green 1px;
 
     li {
       @include list-item-nav;
       @include reset;
       line-height: 1.2;
       margin-bottom: 0;
-      //border: dotted red 1px;
+      // border: dotted red 1px;
 
       display: flex;
       justify-content: space-between;
@@ -120,7 +120,6 @@ body > header nav {
       flex-wrap: wrap;
       margin: 0;
       padding: 0 1em;
-      //padding: 0;
 
       li {
         // NB: this is for all <li> elements in the mobile menu
@@ -244,7 +243,7 @@ body > header nav {
         }
 
         a, button.btn-as-link {
-          //border: dotted orange 1px;
+          // border: dotted orange 1px;
 
           &:hover,
           &:focus {
@@ -293,9 +292,9 @@ body > header nav {
     display: block;
     width: 21px;
     height: 21px;
-    margin-left: 0.5em;
-    margin-right: 1em;
-    //border: dotted blue 1px;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    // border: dotted blue 1px;
   }
 }
 
