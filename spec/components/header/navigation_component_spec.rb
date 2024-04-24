@@ -49,18 +49,37 @@ describe Header::NavigationComponent, type: "component" do
     expect(component.all_resources.map(&:title)).to end_with(extra_resources.values)
   end
 
-  it "renders a dropdown menu for category links" do
-    expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='page-five-category-1-desktop'] > button")
-    expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='page-five-category-2-desktop'] > button")
+  context "when using a desktop browser" do
+    it "renders a dropdown menu for category links" do
+      expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='page-five-category-1-desktop'] > button")
+      expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='page-five-category-2-desktop'] > button")
+    end
+
+    it "renders a dropdown menu for page links" do
+      expect(page).to have_css("#secondary-navigation > div.page-links > ol.page-links-list > li[id='page-five-part-1-desktop'] > a")
+      expect(page).to have_css("#secondary-navigation > div.page-links > ol.page-links-list > li[id='page-five-part-2-desktop'] > a")
+      expect(page).to have_css("#secondary-navigation > div.page-links > ol.page-links-list > li[id='page-five-part-3-desktop'] > a")
+    end
+
+    it "renders a view all link" do
+      expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[data-id='menu-view-all-page-five-desktop'] > a")
+    end
   end
 
-  it "renders a dropdown menu for page links" do
-    expect(page).to have_css("#secondary-navigation > div.page-links > ol.page-links-list > li[id='page-five-part-1-desktop'] > a")
-    expect(page).to have_css("#secondary-navigation > div.page-links > ol.page-links-list > li[id='page-five-part-2-desktop'] > a")
-    expect(page).to have_css("#secondary-navigation > div.page-links > ol.page-links-list > li[id='page-five-part-3-desktop'] > a")
-  end
+  context "when using a mobile browser" do
+    it "renders a dropdown menu for category links" do
+      expect(page).to have_css("#primary-navigation > ol.primary > li[id='page-five-mobile'] > ol.category-links-list > li[id='page-five-category-1-mobile'] > button")
+      expect(page).to have_css("#primary-navigation > ol.primary > li[id='page-five-mobile'] > ol.category-links-list > li[id='page-five-category-2-mobile'] > button")
+    end
 
-  it "renders a view all link" do
-    expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[data-id='menu-view-all-page-five'] > a")
+    it "renders a dropdown menu for page links" do
+      expect(page).to have_css("#primary-navigation > ol.primary > li[id='page-five-mobile'] > ol.category-links-list > li[id='page-five-category-1-mobile'] > ol.page-links-list > li[id='page-five-part-1-mobile'] > a")
+      expect(page).to have_css("#primary-navigation > ol.primary > li[id='page-five-mobile'] > ol.category-links-list > li[id='page-five-category-1-mobile'] > ol.page-links-list > li[id='page-five-part-2-mobile'] > a")
+      expect(page).to have_css("#primary-navigation > ol.primary > li[id='page-five-mobile'] > ol.category-links-list > li[id='page-five-category-2-mobile'] > ol.page-links-list > li[id='page-five-part-3-mobile'] > a")
+    end
+
+    it "renders a view all link" do
+      expect(page).to have_css("#primary-navigation > ol.primary > li[id='page-five-mobile'] > ol.category-links-list > li[data-id='menu-view-all-page-five-mobile'] > a")
+    end
   end
 end
