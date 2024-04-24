@@ -61,7 +61,7 @@ module Pages
       def children_in_subcategory(subcategory)
         children.select { |page| page.subcategory == subcategory }
       end
-      
+
       def subcategories
         children.map(&:subcategory).uniq
       end
