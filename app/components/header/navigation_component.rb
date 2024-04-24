@@ -70,7 +70,7 @@ module Header
     end
 
     def category_link(subcategory, resource, mode)
-      title = subcategory || 'Main details'
+      title = subcategory || "Main details"
       li_id = "#{resource.path.parameterize}-#{title.parameterize}-#{mode}"
       li_sync_id = "#{resource.path.parameterize}-#{title.parameterize}-#{sync_mode(mode)}"
       child_menu_id = page_list_id(resource, subcategory, mode)
@@ -107,10 +107,10 @@ module Header
       end
     end
 
-    def view_all_link(resource, _mode)
+    def view_all_link(resource, mode)
       title = "View all in #{resource.title}"
       path = resource.path
-      id = "menu-view-all-#{resource.path.parameterize}"
+      id = "menu-view-all-#{path.parameterize}-#{mode.parameterize}"
       li_css = "view-all #{'active' if uri_is_root?(path)}"
       link_css = "link--black"
 
