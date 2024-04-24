@@ -110,7 +110,7 @@ module Header
     def view_all_link(resource, mode)
       title = "View all in #{resource.title}"
       path = resource.path
-      id = "menu-view-all-#{path.parameterize}-#{mode.parameterize}"
+      id = "menu-view-all-#{path.parameterize}-#{mode}"
       li_css = "view-all #{'active' if uri_is_root?(path)}"
       link_css = "link--black"
 
