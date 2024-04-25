@@ -58,12 +58,16 @@ module Pages
         children.any?
       end
 
+      def children_without_subcategory
+        children.select { |page| page.subcategory.nil? }
+      end
+
       def children_in_subcategory(subcategory)
         children.select { |page| page.subcategory == subcategory }
       end
 
       def subcategories
-        children.map(&:subcategory).uniq
+        children.map(&:subcategory).compact.uniq
       end
 
       def subcategories?

@@ -21,6 +21,7 @@ describe Header::NavigationComponent, type: "component" do
       "/page-five/part-1" => { title: "Page five: part 1", subcategory: "category 1", navigation: 5.1 },
       "/page-five/part-2" => { title: "Page five: part 2", subcategory: "category 1", navigation: 5.2 },
       "/page-five/part-3" => { title: "Page five: part 3", subcategory: "category 2", navigation: 5.3 },
+      "/page-seven/part-0" => { title: "Page seven: part 0", subcategory: nil, navigation: 7.1 },
     }
   end
 
@@ -64,6 +65,10 @@ describe Header::NavigationComponent, type: "component" do
     it "renders a view all link" do
       expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[data-id='menu-view-all-page-five-desktop'] > a")
     end
+
+    it "renders uncategorised links" do
+      expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='page-seven-part-0-desktop'] > a")
+    end
   end
 
   context "when using a mobile browser" do
@@ -80,6 +85,10 @@ describe Header::NavigationComponent, type: "component" do
 
     it "renders a view all link" do
       expect(page).to have_css("#primary-navigation > ol.primary > li[id='page-five-mobile'] > ol.category-links-list > li[data-id='menu-view-all-page-five-mobile'] > a")
+    end
+
+    it "renders uncategorised links" do
+      expect(page).to have_css("#primary-navigation > ol.primary > li[id='page-seven-mobile'] > ol.category-links-list > li[id='page-seven-part-0-mobile'] > a")
     end
   end
 end

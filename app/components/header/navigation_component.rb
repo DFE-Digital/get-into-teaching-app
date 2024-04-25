@@ -45,17 +45,20 @@ module Header
           if mode == :mobile && resource.children?
             [
               row_break,
-              category_list(resource: resource, css_class: "category-links-list hidden-menu hidden-desktop", mode: mode),
+              category_list(resource, mode, css_class: "category-links-list hidden-menu hidden-desktop"),
             ]
           end,
         ])
       end
     end
 
-    def category_list(resource:, css_class:, mode:)
+    def category_list(resource, mode, css_class:)
       tag.ol(class: css_class, id: category_list_id(resource, mode)) do
         safe_join(
           [
+            resource.children_without_subcategory.map do |child_resource|
+              nav_link(child_resource, mode, level: 2)
+            end,
             resource.subcategories.map do |category|
               category_link(category, resource, mode)
             end,
@@ -70,7 +73,7 @@ module Header
     end
 
     def category_link(subcategory, resource, mode)
-      title = subcategory || "Main details"
+      title = subcategory
       li_id = "#{resource.path.parameterize}-#{title.parameterize}-#{mode}"
       li_sync_id = "#{resource.path.parameterize}-#{title.parameterize}-#{sync_mode(mode)}"
       child_menu_id = page_list_id(resource, subcategory, mode)
@@ -85,17 +88,17 @@ module Header
           contracted_icon,
           row_break,
           if mode == :mobile
-            page_list(resource: resource, subcategory: subcategory, css_class: "page-links-list hidden-menu hidden-desktop", mode: mode)
+            page_list(resource, subcategory, mode, css_class: "page-links-list hidden-menu hidden-desktop")
           end,
         ])
       end
     end
 
     def page_list_id(resource, subcategory, mode)
-      "#{resource.path.parameterize}-#{(subcategory || 'details').parameterize}-pages-#{mode}"
+      "#{resource.path.parameterize}-#{subcategory.parameterize}-pages-#{mode}"
     end
 
-    def page_list(resource:, subcategory:, css_class:, mode:)
+    def page_list(resource, subcategory, mode, css_class:)
       tag.ol(class: css_class, id: page_list_id(resource, subcategory, mode)) do
         safe_join(
           [

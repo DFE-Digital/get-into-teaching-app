@@ -11,8 +11,8 @@
 <%= tag.div id: "secondary-navigation", class: "desktop-menu-container hidden-mobile", data: { "navigation-target": "desktop", action: "click->navigation#handleNavMenuClick" }, "aria-label": "Secondary navigation", role: "navigation" do %>
   <div class="category-links">
     <% all_resources.each do |resource| %>
-      <% if resource.subcategories.present? %>
-        <%= category_list(resource: resource, css_class: "category-links-list hidden-menu", mode: :desktop ) %>
+      <% if resource.children? %>
+        <%= category_list(resource, :desktop, css_class: "category-links-list hidden-menu") %>
       <% end %>
     <% end %>
   </div>
@@ -21,7 +21,7 @@
     <% all_resources.each do |resource| %>
       <% if resource.subcategories.present? %>
         <% resource.subcategories.each do |subcategory| %>
-          <%= page_list(resource: resource, subcategory: subcategory, css_class: "page-links-list hidden-menu", mode: :desktop) %>
+          <%= page_list(resource, subcategory, :desktop, css_class: "page-links-list hidden-menu") %>
         <% end %>
       <% end %>
     <% end %>
