@@ -295,20 +295,27 @@ body > header nav {
     height: 21px;
     margin-left: 0.25em;
     margin-right: 0.25em;
+
     // border: dotted blue 1px;
   }
 }
 
 #primary-navigation {
   @include mq($until: desktop) {
-    ol.primary > li, ol.primary li.selected {
-      > span.nav-icon {
-        &__contracted {
-          background-image: url("../images/navigation/arrow-down-black.svg");
-        }
+    ol.primary {
+      .nav-icon {
+        padding-right: 1em;
+      }
 
-        &__expanded {
-          background-image: url("../images/navigation/arrow-up-black.svg");
+      > li, li.selected {
+        > span.nav-icon {
+          &__contracted {
+            background-image: url("../images/navigation/arrow-down-black.svg");
+          }
+
+          &__expanded {
+            background-image: url("../images/navigation/arrow-up-black.svg");
+          }
         }
       }
     }
