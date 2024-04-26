@@ -200,20 +200,6 @@ describe ApplicationHelper do
     end
   end
 
-  describe "#minimal_footer_kwargs" do
-    let(:front_matter) { {} }
-
-    subject { minimal_footer_kwargs(front_matter) }
-
-    it { is_expected.to eq({ talk_to_us: true, feedback: false }) }
-
-    context "when overriden in the front_matter" do
-      let(:front_matter) { { talk_to_us: false, feedback: false, other: false } }
-
-      it { is_expected.to eq({ talk_to_us: false, feedback: false }) }
-    end
-  end
-
   describe "#content_footer_kwargs" do
     let(:front_matter) { {} }
 
