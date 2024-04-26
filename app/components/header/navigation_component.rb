@@ -24,7 +24,7 @@ module Header
       mode == :mobile ? :desktop : :mobile
     end
 
-    def nav_link(resource, mode, level: 1)
+    def nav_link(resource, mode)
       title = resource.title
       path = resource.path
       li_id = "#{path.parameterize}-#{mode}"
@@ -57,7 +57,7 @@ module Header
         safe_join(
           [
             resource.children_without_subcategory.map do |child_resource|
-              nav_link(child_resource, mode, level: 2)
+              nav_link(child_resource, mode)
             end,
             resource.subcategories.map do |category|
               category_link(category, resource, mode)
@@ -103,7 +103,7 @@ module Header
         safe_join(
           [
             resource.children_in_subcategory(subcategory).map do |child_resource|
-              nav_link(child_resource, mode, level: 3)
+              nav_link(child_resource, mode)
             end,
           ],
         )
