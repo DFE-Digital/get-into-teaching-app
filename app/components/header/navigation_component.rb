@@ -34,7 +34,7 @@ module Header
       child_menu_ids = [child_menu_id, child_menu_sync_id].join(" ")
       li_css = ("active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)).to_s
       show_dropdown = resource.children?
-      link_css = show_dropdown || level > 1 ? "grow link--black link--no-underline" : "grow link--black"
+      link_css = "grow link--black link--no-underline"
       aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_ids } : {}
       tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown } do
         safe_join([
