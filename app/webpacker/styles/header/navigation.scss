@@ -149,7 +149,8 @@ body > header nav {
       > li {
         > a, > button.btn-as-link {
           font-weight: bold;
-          border-left: solid transparent 4px;
+          border-left: none;
+          padding-left: 0;
         }
 
         border-bottom: solid 1px #B7B9BB;
