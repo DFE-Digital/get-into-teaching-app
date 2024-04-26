@@ -162,7 +162,8 @@ body > header nav {
       a, button.btn-as-link {
         // NB: this is for all <a> elements
         padding: 0.875em 1.25em;
-        flex-basis: 60%;
+        flex-basis: 80px; // NB: setting this too large can cause some
+                          // elements to unexpectedly increase in height
         flex-grow: 1;
       }
     }
