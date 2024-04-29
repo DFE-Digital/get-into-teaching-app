@@ -478,11 +478,6 @@ provider_groups:
     - header: The Sheffield SCITT
       link: https://www.sheffieldscitt.org.uk/
       email: admin@sheffieldscitt.org.uk
-    - header: Yorkshire and Humber Teacher Training
-      link: https://www.yhtt.co.uk
-      name: Kirstin Hilgenfeldt
-      telephone: 01482 686699
-      email: admin@yhtt.ac.uk
   National:
     providers:
     - header: TES Institute
