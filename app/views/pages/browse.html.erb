@@ -1,7 +1,5 @@
 <h1>Content</h1>
-<!-- The <ul> element is dynamically generated -->
-<!-- //NOSONAR -->
-<%= tag.ul do %>
+<ul>
   <% Pages::Navigation.root_pages.each do |resource| %>
     <li>
       <%= link_to(resource.title, resource.path) %>
@@ -14,4 +12,4 @@
       <% end %>
     </li>
   <% end %>
-<% end %>
+</ul>
