@@ -1,0 +1,15 @@
+<h1>Values</h1>
+<table>
+  <% Value.data.each do |key, value| %>
+    <tr>
+      <td>
+        <code>
+          $<%= key %>$
+        </code>
+      </td>
+      <td>
+        <%= value %>
+      </td>
+    </tr>
+  <% end %>
+</table>
