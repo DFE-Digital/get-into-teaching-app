@@ -56,13 +56,13 @@ Email your chosen provider to check they can sponsor you, then apply for your te
 
 When you have a confirmed offer of a training place, you’ll be able to apply for your visa.  
 
-For a Student visa, you will also need to: 
+For a [Student visa](https://www.gov.uk/student-visa), you will also need to: 
 
 * have a reference number, called a confirmation of acceptance for studies (CAS), which your training provider will give you
 * [have enough money to support yourself and pay for your course](https://www.gov.uk/student-visa/money)
 * [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/student-visa/knowledge-of-english)
 
-For a Skilled worker visa, you will also need to: 
+For a [Skilled worker visa](https://www.gov.uk/skilled-worker-visa), you will also need to: 
 
 * have a ‘certificate of sponsorship’ from the school which is paying you, confirming they will sponsor you 
 * [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
