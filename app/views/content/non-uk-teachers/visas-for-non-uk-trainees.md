@@ -52,7 +52,7 @@ Some teacher training courses in England are salaried – this means you work an
 
 Visit [Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) and filter your search results by visa sponsorship. 
 
-Email your chosen provider to check they can sponsor you, then apply for your teacher training course. 
+Email your chosen provider to check they can sponsor you, then [apply for your teacher training course](/how-to-apply-for-teacher-training). 
 
 When you have a confirmed offer of a training place, you’ll be able to apply for your visa.  
 
