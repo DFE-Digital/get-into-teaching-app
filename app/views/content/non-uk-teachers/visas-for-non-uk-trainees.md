@@ -38,17 +38,17 @@ keywords:
 
 If you’re applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study or work in England. 
 
-### How to apply for your visa
+## How to apply for your visa
 
-#### Student visas 
+### Student visas 
 
 Most teacher training courses in England are fee-paying. You will need a Student visa if you are studying on a fee-paying course. Your Student visa must be sponsored by your teacher training provider. 
 
-#### Skilled worker visas 
+### Skilled worker visas 
 
 Some teacher training courses in England are salaried – this means you work and earn a salary while you train. Currently, places on these courses are very limited. You will need a Skilled worker visa if you are studying on a salaried training course. Your Skilled worker visa must be sponsored by the school employing you.  
 
-#### To apply for your visa, follow these steps 
+### To apply for your visa, follow these steps 
 
 Visit [Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) and filter your search results by visa sponsorship. 
 
@@ -63,11 +63,12 @@ For a Student visa, you will also need to:
 * [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/student-visa/knowledge-of-english)
 
 For a Skilled worker visa, you will also need to: 
+
 * have a ‘certificate of sponsorship’ from the school which is paying you, confirming they will sponsor you 
 * [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * check your salary meets the requirement for a Skilled worker visa 
 
-#### Salary requirement for a Skilled worker visa 
+### Salary requirement for a Skilled worker visa 
 
 Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a Skilled worker visa – this varies by region, as follows: 
 
@@ -83,17 +84,17 @@ Check the region you will be working in with your teacher training provider.
 
 You may be able to train part-time, but your part-time salary must be at least £23,200.
 
-#### Your partner and children 
+### Your partner and children 
 
 If your course starts after 1 January 2024, you will not be able to bring your partner and children with you on a Student visa. 
 
 You may be able to bring your partner and children with you on a Skilled worker visa. 
 
-#### How a bursary or scholarship can help with your Student visa application 
+### How a bursary or scholarship can help with your Student visa application 
 
 If you are training to teach physics or languages, you may be eligible for a [bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees?#bursaries-and-scholarships-for-non-uk-trainee-languages-and-physics-teachers). You can use them in your Student visa application as proof that you have enough money to support yourself. 
 
-### Check your status
+## Check your status
 
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
 
@@ -106,20 +107,22 @@ You will not need a visa to train to teach in the UK if you:
 
 You will not need to be sponsored for a Student or Skilled worker visa if you have a: 
 
-[British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa) 
+* [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa) 
 
-[Family visa](https://www.gov.uk/uk-family-visa) 
+* [Family visa](https://www.gov.uk/uk-family-visa) 
 
-[Graduate visa](https://www.gov.uk/graduate-visa) 
+* [Graduate visa](https://www.gov.uk/graduate-visa) 
 
-[High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)
+* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)
 
-[India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa) 
+* [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa) 
 
-[UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
+* [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
 
-[Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility) 
+* [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility) 
 
+
+### Dependents
 
 You will not need to be sponsored for a Student or Skilled worker visa if you have you have permission to live in the UK as a dependent (usually partner) of someone on a visa. You can work or study without a sponsor for the duration of your partner’s visa. 
 
@@ -140,9 +143,7 @@ You will usually need to show you have enough money to support yourself in Engla
 
 ### Visa fees
 
-You’ll also have to pay visa fees.
-
-[Calculate how much your visa will cost](https://www.gov.uk/visa-fees).
+You’ll also have to pay [visa fees](https://www.gov.uk/visa-fees).
 
 ### Immigration Health Surcharge
 
