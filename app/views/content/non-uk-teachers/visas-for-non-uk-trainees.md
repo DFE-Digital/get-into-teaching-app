@@ -36,7 +36,7 @@ keywords:
   
 ---
 
-If you’re applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study or work in England. 
+If you’re applying for teacher training as a non-UK citizen, you will need a [visa or immigration status allowing you to study or work in England](#check-your-status). 
 
 ## How to apply for your visa
 
@@ -162,13 +162,15 @@ Learn more about [getting an IHS refund](https://www.gov.uk/guidance/immigration
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
+You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
+
 You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your application to a training provider or school.
 
 To check if you're eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
 
 We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
 
-You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
+
 
 
 
