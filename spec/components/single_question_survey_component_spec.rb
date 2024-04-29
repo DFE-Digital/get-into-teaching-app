@@ -16,10 +16,10 @@ RSpec.describe SingleQuestionSurveyComponent, type: :component do
 
     describe "answers" do
       it "renders all the answers" do
-        expect(page).to have_link("red")
-        expect(page).to have_link("blue")
-        expect(page).to have_link("green")
-        expect(page).to have_css("a", count: 3)
+        expect(page).to have_button("red")
+        expect(page).to have_button("blue")
+        expect(page).to have_button("green")
+        expect(page).to have_css("button", count: 3)
       end
     end
 

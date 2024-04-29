@@ -1,6 +1,7 @@
 ---
 title: "Student finance for teacher training"
 heading: "Student finance for teacher training"
+subcategory: Courses with fees
 description: |-
     Find out about the available student finance for teacher training, including tuition fee loans and maintenance loans to support you while you train.
 related_content:
@@ -17,7 +18,7 @@ calls_to_action:
         text: "Use the student finance calculator on GOV.UK to get an estimate of how much funding you might get."
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
-navigation: 20.10
+navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 keywords:
     - Tuition Fee Loan
@@ -27,11 +28,13 @@ keywords:
     - Financial Support
 ---
 
-Funding is available to help you train to teach. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs. 
+Funding is available to help you train to teach if you choose a course that has tuition fees. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs. 
 
 You can still apply for a tuition fee loan and a maintenance loan if you already have a student loan, and regardless of whether you get a teaching bursary or scholarship. And you will only have to make loan repayments once you’re earning.
 
 You do not need to wait until you have a confirmed offer for a teacher training course to apply for student funding. 
+
+If you choose a teacher training course that has a salary you're not eligible for any student finance.
 
 ## Tuition fee loan
 You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course. If you’re eligible for a tuition fee loan, the amount you borrow is paid directly to your course provider.

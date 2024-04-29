@@ -120,7 +120,7 @@ You cannot receive both a bursary and a scholarship.
 
 Bursaries and scholarships are tax-free payments from the UK government that you do not have to pay back. They are paid to you by your teacher training provider. 
 
-If your training provider asks you to pay some or all of your teacher training fees in advance, you can sometimes use a bursary or scholarship to meet these costs. 
+If some, or all, of your training fees are due in advance, your training provider may let you use a bursary or scholarship to meet these costs. Contact them to check.
 
 You should also be able to use eligibility for a bursary in your [visa application](/non-uk-teachers/visas-for-non-uk-trainees) as proof that you have enough money to support yourself. 
 
@@ -154,3 +154,13 @@ Talk to your training provider about the home fee rate, [bursaries and scholarsh
 [Student Finance England](https://www.gov.uk/contact-student-finance-england) has a dedicated service for EU students and for EEA citizens working in the UK.
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
+
+## Contact us
+
+If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
+
+You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your application to a training provider or school.
+
+To check if you're eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
+
+We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.

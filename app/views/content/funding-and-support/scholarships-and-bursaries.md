@@ -1,6 +1,7 @@
 ---
 title: "Teacher training bursaries"
 heading: "Bursaries and scholarships"
+subcategory: Courses with fees
 description: |-
    Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.
 related_content:

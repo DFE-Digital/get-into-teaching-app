@@ -14,6 +14,6 @@
       <%= yield %>
     <% end %>
 
-    <%= render FooterComponent.new(**minimal_footer_kwargs(@front_matter)) %>
+    <%= render FooterComponent.new(**content_footer_kwargs(@front_matter)) %>
   <% end %>
 </html>

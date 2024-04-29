@@ -23,8 +23,9 @@ inset_text:
     color: grey
 keywords:
   - PGCE
+  - Postgraduate
+  - Postgrad
   - Post-graduate
-  - Post-grad
   - Certificate
   - Diploma
   - Education
@@ -65,9 +66,7 @@ You can get QTS through undergraduate or postgraduate initial teacher training. 
 
 You can apply for either a primary or secondary teacher training course awarding QTS. [Find out more about deciding who to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
 
-You can also get a postgraduate qualification through teacher training such as a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce). 
-
-Some courses just offer a PGCE without QTS, but this means you may not be fully qualified to teach in your chosen school or entitled to the same benefits.
+You can also get a postgraduate qualification through teacher training such as QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
 
 [Find out how to get QTS through teacher training](/train-to-be-a-teacher).
 

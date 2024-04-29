@@ -3,7 +3,7 @@
   <div class="govuk-hint" data-feedback-target="text"><%= hint %></div>
   <p>
     <% answers.each do |answer| %>
-      <a href="javascript:void(0)" data-feedback-target="link" data-action="feedback#answer" role="button" class="survey-button"><%= answer %></a>
+      <button type="button" data-feedback-target="link" data-action="feedback#answer" class="survey-button"><%= answer %></button>
     <% end %>
   </p>
 </div>

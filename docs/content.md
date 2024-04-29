@@ -80,6 +80,8 @@ The majority of pages on the website are formatted in Markdown, which is a light
 
 There is a [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) that serves as a good reference on how to standard formatting, such as making something **bold** or *italic*. In conjunction with page frontmatter (see below) we can do some extra GiT-specific things in our Markdown, which this section aims to explain.
 
+**You'll need to check if the page is in markdown or html** as some pages have been coded in html. Depending on which it is you need to make sure you're consistent, so for e.g. if you have a section in markdown you can't add a link using html code it needs to also be in markdown.
+
 ### Headings
 
 Where possible we should use the `HeadingComponent` to render a heading; especially if it contains a caption. For example:
@@ -480,6 +482,8 @@ To do this you will need to
 	- type in the name of your new branch and press enter
 	- if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
 
+  **Make sure you're in the new branch when you create the doc and not master as you can't make changes to the master doc**
+
 3. Navigate to the right hand side bar, where you want the new page to sit
 4. Right hand click and select 'New file'
 5. Give name to file ie. when-to-apply.md **make sure you put md on the end of the name if it is a markdown file**
@@ -517,17 +521,6 @@ navigation_title:
 navigation_description: 
 keywords: 
 
-## Preview a change
-1. Go to the terminal tab on Visual Studio Code **or** Go the top bar of your laptop - click terminal - click 'new terminal'
-2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
-3. When it has finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000. This will open the browser
-4. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
-5. Go to the url: http://127.0.0.1:3000 and insert a / on the end
-6. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
-7. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
-The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
-8. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it.
-
 ## Saving a change
 When you have made a change in Visual Studio Code and want to save your work.
 1. Save the change by CTRL-S
@@ -535,9 +528,21 @@ When you have made a change in Visual Studio Code and want to save your work.
 3. You will need to type a name for this change in the 'message' box
 4. Click the plus button that appears on the change - this will stage the change
 5. Click 'sync changes'
-6. Commit the changes
-7. This will then open a pull request, you will need to fill in the details for this and click 'Create pull request'
+6. Commit the changes - make sure you name each commit in the box above the blue box where it says commit. You should name each commit to the specific change being made. This makes it easier to review any changes in the pull request and is useful for auditing.
+7. This will then open a pull request, you will need to fill in the details for this and click 'Create pull request' if you want to create one. But you may not want to create a pull request until you've made all of your changes so you don't have to publish the branch or create a pull request until you're ready
 8. You can monitor pull requests and assign reviewers here https://github.com/DFE-Digital/get-into-teaching-app/pulls
+
+## Preview a change
+1. Go to the terminal tab on Visual Studio Code **or** Go the top bar of your laptop - click terminal - click 'new terminal'
+2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
+3. When it has finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000. This will open the browser
+4. If you're not able to preview, try typing **bundle install** in the terminal followed by **yarn install** as this will update the libraries
+5. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
+6. Go to the url: http://127.0.0.1:3000 and insert a / on the end
+7. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
+8. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
+The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
+9. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it. But you don't need to commit the change to be able to view it.
 
 ## If you add something to the wrong branch
 
@@ -554,6 +559,10 @@ It will need to be in quotation marks. Then, you need to put the old url a colon
 Example: "/train-to-be-a-teacher/teacher-training-personal-statement": "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
 Press enter to create an indention - 
 Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
+The easiest way to make sure you don't miss any pages to redirect is to do a search which will show you all the pages you need to include.
+
+## Redirect blog tags
+If you're deleting any blog posts as well as setting up redirects you'll also need to check the blog tags to see if there are any that need to be deleted too. **Blog tags live in the config file**.
 
 ## Finding links on the site
 You can find everywhere a page is linked to by:
@@ -562,6 +571,7 @@ You can find everywhere a page is linked to by:
 3. You should search a pages path here ie. /subjects/maths
 4. The system will search for whereever this link is in the code across the website
 
+## Resolving comments
+People can add comments to pull requests in Github which makes it easier to see feedback and keep track of changes. You can also tag people and reply to their comments.
 
-
-
+Once you've addressed a comment click on resolve. This hides it from the conversation making it easier to keep track of what's been updated.
