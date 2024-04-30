@@ -11,7 +11,6 @@ RSpec.describe Content::LandingHeroComponent, type: "component" do
                     title: title,
                     colour: colour,
                     image: image_path,
-                    background_colour: background_colour,
                   ))
   end
 
@@ -33,11 +32,5 @@ RSpec.describe Content::LandingHeroComponent, type: "component" do
     let(:colour) { "purple" }
 
     it { is_expected.to have_css("header.purple") }
-  end
-
-  context "when the background colour is overridden" do
-    let(:background_colour) { "grey" }
-
-    it { is_expected.to have_css("header.bg-grey") }
   end
 end
