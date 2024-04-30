@@ -21,7 +21,7 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Inset text](#inset-text)
 	* [YouTube Video](#youtube-video)
 	* [Hero](#hero)
-    * [Values](#values)
+	* [Values](#values)
 4. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
