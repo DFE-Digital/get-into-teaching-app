@@ -281,6 +281,7 @@ $mobile-cutoff: 800px;
 .landing-hero {
 	display: flex;
 	flex-direction: row-reverse;
+	justify-content: center;
 	margin: auto;
 	width: 100%;
 	max-width: 2000px;
@@ -315,9 +316,26 @@ $mobile-cutoff: 800px;
 			width: 100%;
 		}
 
-		h1 {
+		// If no image use this
+		&.wide {
+			width: 80%;	
+			padding: 60px 0;
+			
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+			}
+
+			h1.title {
+				
+				@media only screen and (max-width: 767px) {
+					margin-top: 0;
+				}
+			}
+		}
+
+		h1.title {
 			font-size: 70px;
-			line-height: 1.15;
+			line-height: 1.11;
 			margin: 0;
 			
 			@media only screen and (max-width: 1200px) {
@@ -333,6 +351,10 @@ $mobile-cutoff: 800px;
 				-webkit-box-decoration-break: clone;
 				box-decoration-break: clone;
 			}
+		}
+
+		p.title_paragraph {
+			margin: 2rem 0 0 0;
 		}
 	}
 

@@ -9,6 +9,7 @@ content:
     - content/landing/careers/promo
 image: "static/images/content/hero-images/0029.jpg"
 layout: "layouts/minimal"
+colour: pink-blue
 talk_to_us: false
 noindex: true
 ---

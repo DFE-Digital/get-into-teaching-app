@@ -6,6 +6,7 @@ content:
     - content/landing/campus-advisers/adviser
 image: "static/images/content/campus-advisers/adviser.jpeg"
 layout: "layouts/minimal"
+colour: pink-yellow
 talk_to_us: false
 noindex: true
 ---

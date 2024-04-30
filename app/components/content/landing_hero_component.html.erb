@@ -1,10 +1,25 @@
 <%= tag.header(class: classes) do %>
+  
   <%= header_image %>
-  <div class="content">
-    <%= tag.h1(class: "heading") do %>
+      
+  <% if header_image %>
+    <div class="content">
+  <% end %>
+  
+  <% if ! header_image %>
+    <div class="content wide">
+  <% end %>
+
+    <%= tag.h1(class: "title") do %>
       <% Array.wrap(title).each do |p| %>
         <%= tag.span(p) %>
       <% end %>
     <% end %>
+
+    <% if show_title_paragraph? %>
+      <%= tag.p(title_paragraph, class: "title_paragraph") %>
+    <% end %>
+
   </div>
+
 <% end %>

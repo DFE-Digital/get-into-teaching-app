@@ -9,6 +9,7 @@ content:
     - content/landing/how-to-fund-your-teacher-training/promo
 image: "static/images/content/hero-images/chemistry.jpg"
 layout: "layouts/minimal"
+colour: pink-blue
 talk_to_us: false
 noindex: true
 ---
