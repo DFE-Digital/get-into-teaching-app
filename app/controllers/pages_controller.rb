@@ -84,6 +84,17 @@ class PagesController < ApplicationController
     render_page("welcome/my-journey-into-teaching")
   end
 
+  def authenticate?
+    # restrict the /values page to any user who has a login
+    %w[values].include?(action_name) || super
+  end
+
+  def values
+    # restrict the /values page to any user who has a login
+    render_forbidden if session[:user].blank?
+    render template: "pages/values", layout: "content"
+  end
+
 private
 
   def adviser_sign_up_url
