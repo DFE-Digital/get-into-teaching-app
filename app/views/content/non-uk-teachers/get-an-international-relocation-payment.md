@@ -19,7 +19,7 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      <p>Applications for the <a href="https://get-a-teacher-relocation-payment.education.gov.uk">international relocation payment (IRP)</a> are open for teachers between 2 April and 31 May 2024.</p>
+      <p>Applications for the <a href="https://get-a-teacher-relocation-payment.education.gov.uk">international relocation payment (IRP)</a> are open for teachers between 2 April and 16 June 2024.</p>
 
       <h3>Changes to eligibility and payment</h3>  
       
@@ -225,7 +225,7 @@ You will not be eligible for the international relocation payment if you are:
 
 ## How to apply for the international relocation payment (IRP)
 
-Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk) are open between 2 April and 31 May 2024. 
+Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk) are open between 2 April and 16 June 2024. 
 
 You'll need to have started your teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas). You must apply in either the first or second term of your employment as a teacher.
 
