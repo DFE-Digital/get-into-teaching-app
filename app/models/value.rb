@@ -11,6 +11,8 @@ class Value
     @data = load_values(path || Rails.root.join(PATH))
   end
 
+private
+
   def load_values(dir_spec)
     {}.tap do |data|
       Dir[dir_spec].each do |filename|
@@ -18,8 +20,6 @@ class Value
       end
     end
   end
-
-private
 
   def flatten_hash(hash)
     # based on https://stackoverflow.com/questions/23521230/flattening-nested-hash-to-a-single-hash-with-ruby-rails
