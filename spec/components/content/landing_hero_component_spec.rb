@@ -6,7 +6,6 @@ RSpec.describe Content::LandingHeroComponent, type: "component" do
   let(:image_path) { "static/images/content/hero-images/0013.jpg" }
   let(:title) { "My page" }
   let(:colour) { nil }
-  let(:background_colour) { nil }
   let(:component) do
     render_inline(described_class.new(
                     title: title,
