@@ -300,7 +300,7 @@ dates:
 dates_example_closing: 31/12/2024
 ```
 
-These values can then be used in markdown files by referencing the value as `$``value_name``$`, e.g. `$``dates_example_opening``$` or `$``dates_example_closing``$`. Note that structured composite keys will be flattened to a single key.
+These values can then be used in markdown files by referencing the value as `$value_name$`, e.g. `$dates_example_opening$` or `$dates_example_closing$`. Note that structured composite keys will be flattened to a single key.
 
 An example markdown implementation might be:
 
