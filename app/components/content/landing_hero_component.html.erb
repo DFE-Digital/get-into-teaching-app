@@ -2,13 +2,7 @@
 
   <%= header_image %>
 
-  <% if header_image %>
-    <div class="content">
-  <% end %>
-
-  <% if ! header_image %>
-    <div class="content wide">
-  <% end %>
+  <%= tag.div(class: header_image ? "content" : "content wide") do %>
 
     <%= tag.h1(class: "title") do %>
       <% Array.wrap(title).each do |p| %>
@@ -20,6 +14,6 @@
       <%= tag.p(title_paragraph, class: "title_paragraph") %>
     <% end %>
 
-  </div>
+  <% end %>
 
 <% end %>

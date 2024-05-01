@@ -280,70 +280,67 @@ $mobile-cutoff: 800px;
 // New styles for LandingHeroComponent
 .landing-hero {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: column;
 	justify-content: center;
 	margin: auto;
 	width: 100%;
 	max-width: 2000px;
-	max-height: 420px;
+	max-height: fit-content;
 
-	@media only screen and (max-width: 767px) {
-		flex-direction: column;
-		max-height: fit-content;
+	@include mq($from: tablet) {
+		max-height: 420px;
+		flex-direction: row-reverse;
 	}
 
 	// 50% width on child items '.content' and 'picture' (100% on mobile)
 	& > * {
-		width: 50%;
+		width: 100%;
 
-		@media only screen and (max-width: 767px) {
-			width: 100%;
+		@include mq($from: tablet) {
+			width: 50%;
 		}
 	}
 
 	.content {
 		align-self: center;
-		padding: 90px;
 		box-sizing: border-box;
 		z-index: 1;
+		padding: 20px;
 
-		@media only screen and (max-width: 1200px) {
+		@include mq($from: tablet) {
 			padding: 50px;
 		}
 
-		@media only screen and (max-width: 767px) {
-			padding: 20px;
-			width: 100%;
+		@media only screen and (min-width: 1200px) {
+			padding: 90px;
 		}
 
 		// If no image use this
 		&.wide {
-			width: 80%;	
 			padding: 60px 0;
+			width: 100%;
 			
-			@media only screen and (max-width: 767px) {
-				width: 100%;
+			@include mq($from: tablet) {
+				width: 80%;	
 			}
-
+	
 			h1.title {
-				
-				@media only screen and (max-width: 767px) {
-					margin-top: 0;
-				}
+				margin-top: 0;
 			}
 		}
 
 		h1.title {
-			font-size: 70px;
+			font-size: 54px;
 			line-height: 1.11;
-			margin: 0;
+			margin-top: -50px;
+			margin-bottom: 0;
 			
-			@media only screen and (max-width: 1200px) {
-				font-size: 54px;
+			@include mq($from: tablet) {
+				margin: 0;	
 			}
 
-			@media only screen and (max-width: 767px) {
-				margin-top: -50px;
+			@media only screen and (min-width: 1200px) {
+				font-size: 70px;			
 			}
 
 			span {
