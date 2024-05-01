@@ -7,7 +7,7 @@ content:
     - content/landing/how-much-do-teachers-get-paid/mailing_list
     - content/landing/how-much-do-teachers-get-paid/content
     - content/landing/how-much-do-teachers-get-paid/promo
-image: "static/images/content/landing/how-much-do-teachers-get-paid-1.jpg"
+image: "static/images/content/hero-images/science.jpg"
 colour: "pink-blue"
 layout: "layouts/minimal"
 talk_to_us: false
