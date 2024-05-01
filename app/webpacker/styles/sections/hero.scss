@@ -305,19 +305,18 @@ $mobile-cutoff: 800px;
 		align-self: center;
 		box-sizing: border-box;
 		z-index: 1;
-		padding: 20px;
+		padding: 1.5rem;
 
 		@include mq($from: tablet) {
-			padding: 50px;
+			padding: 3rem;
 		}
 
 		@media only screen and (min-width: 1200px) {
-			padding: 90px;
+			padding: 5.5rem;
 		}
 
 		// If no image use this
 		&.wide {
-			padding: 60px 0;
 			width: 100%;
 			
 			@include mq($from: tablet) {
@@ -330,21 +329,22 @@ $mobile-cutoff: 800px;
 		}
 
 		h1.title {
-			font-size: 54px;
-			line-height: 1.11;
-			margin-top: -50px;
+			font-size: 2.3rem;
+			line-height: 1.12;
+			margin-top: -2.5rem;
 			margin-bottom: 0;
 			
 			@include mq($from: tablet) {
-				margin: 0;	
+				margin: 0;
+				font-size: 3.3rem;
 			}
 
 			@media only screen and (min-width: 1200px) {
-				font-size: 70px;			
+				font-size: 4.3rem;
 			}
 
 			span {
-				padding: 0 10px;
+				padding: 0 0.6rem;
 				-webkit-box-decoration-break: clone;
 				box-decoration-break: clone;
 			}
