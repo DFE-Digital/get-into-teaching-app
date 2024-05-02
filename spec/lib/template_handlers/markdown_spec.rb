@@ -262,4 +262,38 @@ describe TemplateHandlers::Markdown, type: :view do
       is_expected.to have_css("ol.steps")
     end
   end
+
+  describe "injecting values" do
+    let(:front_matter) { { "title": "Page with view components" } }
+
+    let :markdown do
+      <<~MARKDOWN
+        # Some page
+
+        data1_example_amount: $data1_example_amount$
+
+        Some text
+
+        data2_example_string: $data2_example_string$
+      MARKDOWN
+    end
+
+    let(:value_data) { Value.new("spec/fixtures/files/example_values/**/*.yml").data }
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter)
+      allow(Value).to receive(:data).and_return(value_data)
+      stub_template "page_with_rich_content.md" => markdown
+      render template: "page_with_rich_content"
+    end
+
+    subject { rendered }
+
+    it "contains the specified view components" do
+      is_expected.to have_text("Some page")
+      is_expected.to have_text("data1_example_amount: £1,234.56")
+      is_expected.to have_text("Some text")
+      is_expected.to have_text("data2_example_string: Hello World!")
+    end
+  end
 end

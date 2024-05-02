@@ -57,7 +57,7 @@ module TemplateHandlers
       # entire placeholder to the arg (including dollar symbols) but we only
       # want what's inside the capture group
       parsed.content.gsub(COMPONENT_PLACEHOLDER_REGEX) do
-        safe_join([cta_component($1), content_component($1), image($1)].compact).strip
+        safe_join([cta_component($1), content_component($1), image($1), value($1)].compact).strip
       end
     end
     # rubocop:enable Style/PerlBackrefs
@@ -93,6 +93,10 @@ module TemplateHandlers
       component = Content::ImageComponent.new(path: image_args["path"])
 
       ApplicationController.render(component, layout: false)
+    end
+
+    def value(placeholder)
+      Value.data[placeholder]
     end
 
     def front_matter

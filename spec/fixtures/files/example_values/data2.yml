@@ -1,0 +1,5 @@
+data2:
+  example:
+    string: Hello World!
+
+data2_example_number: 0.01
