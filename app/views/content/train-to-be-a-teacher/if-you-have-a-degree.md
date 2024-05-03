@@ -43,10 +43,10 @@ $international-content$
 
 ## Teacher training course providers
 
-Your postgraduate teacher training course might be provided by: 
+Your postgraduate teacher training course might be provided by:
 
-* a university (sometimes referred to as university-led training) 
-* a school or group of schools (sometimes referred to as school-led training, or an apprenticeship) 
+* a university (sometimes referred to as university-led training)
+* a school or group of schools (sometimes referred to as school-led training, or an apprenticeship)
 * [Teach First](https://www.teachfirst.org.uk/) (a charitable organisation)
 
 Some providers are ‘accredited’ – this means they've been approved by the Department for Education (DfE) to run teacher training courses.
@@ -55,27 +55,27 @@ Providers who have not been accredited can also run courses if they're in a part
 
 ## What does teacher training involve?
 
-Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time. 
+Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
 
-All teacher training involves mostly classroom placements with some theoretical learning.  
+All teacher training involves mostly classroom placements with some theoretical learning.
 
-This means that even if your course provider is a university, you will still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a university. 
+This means that even if your course provider is a university, you will still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a university.
 
 The important thing to remember is that regardless of your course provider, all teacher training involves around 120 days of school placements in at least 2 schools.
 
-You can [find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
+You can [find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
 
 ## Where will my training take place?
 
-Because all teacher training must involve placements in at least 2 schools, your training will not all happen in the same place. Some courses may also have a separate location for your theoretical learning. 
+Because all teacher training must involve placements in at least 2 schools, your training will not all happen in the same place. Some courses may also have a separate location for your theoretical learning.
 
 Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get an idea.
 
 ## How much does teacher training cost?
 
-Postgraduate teacher training course fees are around £9,250 per year (or higher for non-UK citizens). 
+Postgraduate teacher training course fees are around $fees_pgitt_domestic-full-time$ per year (or higher for non-UK citizens).
 
-You can apply for tuition fee and maintenance loans, even if you already have a student loan. 
+You can apply for tuition fee and maintenance loans, even if you already have a student loan.
 
 You may be eligible for extra financial support if:
 
@@ -89,6 +89,6 @@ You may be eligible for extra financial support if:
 
 ## How to choose your teacher training course
 
-There are some differences in postgraduate teacher training courses. 
+There are some differences in postgraduate teacher training courses.
 
 [Find out how to decide on the best course for you](/train-to-be-a-teacher/how-to-choose-your-teacher-training-course).

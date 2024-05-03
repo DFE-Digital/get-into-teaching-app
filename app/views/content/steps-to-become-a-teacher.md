@@ -11,7 +11,7 @@
   steps:
     steps-1:
       numeric: false
-      steps: 
+      steps:
         Check your qualifications:
           partial: content/steps-to-become-a-teacher/step_1_check_your_qualifications
         Understand funding:
@@ -38,7 +38,7 @@
       id: "step-2"
       image: "static/images/content/hero-images/0017.jpg"
       directions:
-        - Undergraduate and postgraduate teacher training course fees are around £9,250 per year, but there is funding available.
+        - Undergraduate and postgraduate teacher training course fees are around $fees_pgitt-and-ugitt$ per year, but there is funding available.
     Consider getting experience:
       id: "step-3"
       image: "static/images/content/hero-images/0011.jpg"
@@ -112,7 +112,7 @@
 
 <b>These steps can help you to achieve [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), which you need to teach in many primary and secondary schools in England.</b>
 
-<b>With QTS you also get additional training and support in your first 2 years as a teacher, helping you to grow in confidence and develop the skills you need to succeed.</b> 
+<b>With QTS you also get additional training and support in your first 2 years as a teacher, helping you to grow in confidence and develop the skills you need to succeed.</b>
 
 <b>You do not have to follow all of the steps in order and some may take longer than others.</b>
 
