@@ -132,12 +132,12 @@ provider_groups:
       link: https://www.bscteach.co.uk/
       name: Derek Boyle
       telephone: 020 8300 6566
-      email: Administrator@gradteach.co.uk      
+      email: Administrator@gradteach.co.uk
     - header: Future Teacher Training (Future Academies)
       link: https://www.futureteachertraining.org/
       name: Clare Foster
       telephone: 020 7802 3455
-      email: enquiries@scitt.futureacademies.org    
+      email: enquiries@scitt.futureacademies.org
     - header: Goldsmiths, University of London
       link: https://www.gold.ac.uk/
       name: Lynsey Salt
@@ -189,7 +189,7 @@ provider_groups:
       link: https://scitt.tkat.org/
       name: Jo Fogg
       telephone: 020 3740 1808 (option 1)
-      email: scitt@tkat.org     
+      email: scitt@tkat.org
     - header: University of East London
       link: https://www.uel.ac.uk/
       name: Bryce Wilby
@@ -238,7 +238,7 @@ provider_groups:
     - header: Bright Futures SCITT
       link: https://www.bright-futures.co.uk/professional-development-institute/bright-futures-scitt/our-programmes/assessment-only-route-to-qts-aor/
       name: Hilary Langmead-Jones
-      email: admin@scitt.bright-futures.co.uk 
+      email: admin@scitt.bright-futures.co.uk
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training-about-us/
       name: Educate Group HQ
@@ -496,7 +496,7 @@ provider_groups:
     - header: Educational Success Partners (ESP)
       link: https://www.espeducation.co.uk/ao-route
       name: Mark Bignell
-      email: mark@espeducation.co.uk      
+      email: mark@espeducation.co.uk
     - header: TES Institute (International)
       link: https://www.tes.com/institute/courses/international-assessment-only-route
       name: Andrew Locke
@@ -510,7 +510,7 @@ provider_groups:
       link: https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/
       name: Ian Elliott
       telephone: 0191 515 2159
-      email: ian.elliott@sunderland.ac.uk          
+      email: ian.elliott@sunderland.ac.uk
 keywords:
   - Assessment Only
   - Assessment
@@ -533,9 +533,9 @@ The assessment programme takes up to 12 weeks.
 
 ## How much does assessment only QTS cost?
 
-Fees range from about £1,500 to £4,000, but vary between provider so it’s best to check with them for more information.
+Fees range from about $fees_assessment-only_low$ to $fees_assessment-only_high$, but vary between provider so it’s best to check with them for more information.
 
-Fees may be paid by you or your school at the start of the programme. If you’re currently working in a school, talk to your employer about your funding options. 
+Fees may be paid by you or your school at the start of the programme. If you’re currently working in a school, talk to your employer about your funding options.
 
 ## Eligibility for assessment only QTS
 
