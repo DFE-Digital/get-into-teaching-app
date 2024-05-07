@@ -15,7 +15,6 @@
 
 body > header {
   button.btn-as-link {
-    background-color: rgba(0, 0, 0, 0);
     border-style: none;
     font: inherit;
     text-align: start;
@@ -92,10 +91,9 @@ body > header {
           }
 
           > .menu-link {
-
             font-weight: bold;
             border-left: none;
-            padding-left: 0;
+            padding-left: 0.625em;
 
             .nav-icon {
               &__contracted {
@@ -130,6 +128,18 @@ body > header {
 
             &__expanded {
               background-image: url("../images/navigation/arrow-up-black.svg");
+            }
+          }
+
+          &:focus {
+            .nav-icon {
+              &__contracted {
+                background-image: url("../images/navigation/arrow-down-pink.svg");
+              }
+
+              &__expanded {
+                background-image: url("../images/navigation/arrow-up-pink.svg");
+              }
             }
           }
         }
@@ -291,8 +301,6 @@ body > header {
           @include reset;
 
           .menu-link {
-            border: dotted green 1px;
-            // line-height: 1.2;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -300,15 +308,23 @@ body > header {
             border-left: solid #F0F0F0 4px;
             width: 100%;
 
-            // a, button.btn-as-link {
-            // NB: this is for all <a> elements
-            // padding: 0.875em 1.25em;
-            // flex-basis: 80px; // NB: setting this too large can cause some
-            //  elements to unexpectedly increase in height
-            // flex-grow: 1;
+            &:focus {
+              .nav-icon {
+                &__contracted, &__expanded {
+                  background-image: url("../images/navigation/arrow-right-white.svg");
+                }
+              }
+            }
 
             &:hover {
+              color: $black;
               background: #DEDEDE;
+
+              .nav-icon {
+                &__contracted, &__expanded {
+                  background-image: url("../images/navigation/arrow-right-black.svg");
+                }
+              }
             }
 
             &:last-child {
@@ -316,6 +332,7 @@ body > header {
             }
 
             &.active {
+              color: $black;
               background: #DEDEDE;
             }
 
@@ -334,6 +351,28 @@ body > header {
         > li.selected > .menu-link {
           border-left: solid $pink 4px;
           background: $white;
+
+          &:hover {
+            color: $black;
+            background: #DEDEDE;
+
+            .nav-icon {
+              &__contracted, &__expanded {
+                background-image: url("../images/navigation/arrow-right-black.svg");
+              }
+            }
+          }
+
+          &:focus {
+            color: $white;
+            background: $black;
+
+            .nav-icon {
+              &__contracted, &__expanded {
+                background-image: url("../images/navigation/arrow-right-white.svg");
+              }
+            }
+          }
         }
       }
 
