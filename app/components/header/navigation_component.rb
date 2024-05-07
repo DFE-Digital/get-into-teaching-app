@@ -38,12 +38,12 @@ module Header
       aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_ids } : {}
       tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown } do
         safe_join([
-                    link_to(path, class: link_css, aria: aria_attributes) do
-                      safe_join([
-                                  tag.span(title, class: 'menu-title'),
-                                  contracted_icon(visible: show_dropdown),
-                                ])
-                    end,
+          link_to(path, class: link_css, aria: aria_attributes) do
+            safe_join([
+              tag.span(title, class: "menu-title"),
+              contracted_icon(visible: show_dropdown),
+            ])
+          end,
           if mode == :mobile && resource.children?
             [
               row_break,
@@ -90,15 +90,17 @@ module Header
             tag.button(type: "button", class: link_css, aria: aria_attributes) do
               safe_join(
                 [
-                  tag.span(title, class: 'menu-title'),
+                  tag.span(title, class: "menu-title"),
                   contracted_icon(visible: true),
-                ])
+                ],
+              )
             end,
             row_break,
             if mode == :mobile
               page_list(resource, subcategory, mode, css_class: "page-links-list hidden-menu hidden-desktop")
             end,
-        ])
+          ],
+        )
       end
     end
 
@@ -128,8 +130,8 @@ module Header
       tag.li class: li_css, data: { id: id, "direct-link": true } do
         safe_join([
           link_to(path, class: link_css) do
-            tag.span(title, class: 'menu-title')
-          end
+            tag.span(title, class: "menu-title")
+          end,
         ])
       end
     end
