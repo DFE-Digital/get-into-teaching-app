@@ -75,6 +75,7 @@ Rails.application.routes.draw do
   get "/cookies", to: "pages#cookies", as: :cookies
   get "/session-expired", to: "pages#session_expired", as: :session_expired
   get "/browse", to: "pages#browse", as: :browse
+  get "/values", to: "pages#values", as: :values
 
   get "/welcome", to: "pages#welcome", as: :welcome_guide
   get "/welcome/my-journey-into-teaching", to: "pages#welcome_my_journey_into_teaching", as: :welcome_my_journey_into_teaching

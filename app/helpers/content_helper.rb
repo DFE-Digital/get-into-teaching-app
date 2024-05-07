@@ -8,4 +8,9 @@ module ContentHelper
   def display_content_errors?
     Rails.application.config.x.display_content_errors
   end
+
+  def value(key)
+    Value.data[key.to_s]
+  end
+  alias_method :v, :value
 end
