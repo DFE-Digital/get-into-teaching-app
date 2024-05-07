@@ -34,14 +34,16 @@ module Header
       child_menu_ids = [child_menu_id, child_menu_sync_id].join(" ")
       li_css = ("active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)).to_s
       show_dropdown = resource.children?
-      link_css = "grow link--black link--no-underline"
+      link_css = "menu-link link link--black link--no-underline"
       aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_ids } : {}
       tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown } do
         safe_join([
-          link_to(title, path, class: link_css, aria: aria_attributes),
-          if show_dropdown
-            contracted_icon
-          end,
+                    link_to(path, class: link_css, aria: aria_attributes) do
+                      safe_join([
+                                  tag.span(title, class: 'menu-title'),
+                                  contracted_icon(visible: show_dropdown),
+                                ])
+                    end,
           if mode == :mobile && resource.children?
             [
               row_break,
@@ -80,16 +82,22 @@ module Header
       child_menu_sync_id = page_list_id(resource, subcategory, sync_mode(mode))
       child_menu_ids = [child_menu_id, child_menu_sync_id].join(" ")
       li_css = ("active" if subcategory == front_matter["subcategory"]).to_s
-      link_css = "link link--black link--no-underline btn-as-link"
+      link_css = "menu-link link link--black link--no-underline btn-as-link"
       aria_attributes = { expanded: false, controls: child_menu_ids }
       tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": false } do
-        safe_join([
-          tag.button(title, type: "button", class: link_css, aria: aria_attributes),
-          contracted_icon,
-          row_break,
-          if mode == :mobile
-            page_list(resource, subcategory, mode, css_class: "page-links-list hidden-menu hidden-desktop")
-          end,
+        safe_join(
+          [
+            tag.button(type: "button", class: link_css, aria: aria_attributes) do
+              safe_join(
+                [
+                  tag.span(title, class: 'menu-title'),
+                  contracted_icon(visible: true),
+                ])
+            end,
+            row_break,
+            if mode == :mobile
+              page_list(resource, subcategory, mode, css_class: "page-links-list hidden-menu hidden-desktop")
+            end,
         ])
       end
     end
@@ -115,10 +123,14 @@ module Header
       path = resource.path
       id = "menu-view-all-#{path.parameterize}-#{mode}"
       li_css = "view-all #{'active' if uri_is_root?(path)}"
-      link_css = "link--black"
+      link_css = "menu-link link link--black"
 
       tag.li class: li_css, data: { id: id, "direct-link": true } do
-        link_to(title, path, class: link_css)
+        safe_join([
+          link_to(path, class: link_css) do
+            tag.span(title, class: 'menu-title')
+          end
+        ])
       end
     end
 
@@ -126,8 +138,10 @@ module Header
       tag.div(class: "break", "aria-hidden": true)
     end
 
-    def contracted_icon
-      tag.span(class: "nav-icon nav-icon__contracted", aria: { hidden: true })
+    def contracted_icon(visible: true)
+      if visible
+        tag.span(class: "nav-icon nav-icon__contracted", aria: { hidden: true })
+      end
     end
 
     def uri_is_root?(link_path)

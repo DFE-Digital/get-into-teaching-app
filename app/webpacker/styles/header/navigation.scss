@@ -1,11 +1,6 @@
 @mixin list-item-nav {
   @include font-size("xsmall");
-
   padding: .5em;
-
-  a, button.btn-as-link {
-    display: inline-block;
-  }
 }
 
 @mixin active-identifier($colour) {
@@ -18,71 +13,6 @@
   }
 }
 
-#secondary-navigation {
-  &.expanded {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  ol.category-links-list, ol.page-links-list {
-    display: flex;
-    list-style: none;
-    flex-direction: column;
-    margin: 0;
-    padding: 0.8em 0 0;
-    background: #F0F0F0;
-
-    > li {
-      @include list-item-nav;
-      @include reset;
-      line-height: 1.2;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.63em 0.94em;
-      border-left: solid #F0F0F0 4px;
-
-      &:hover {
-        background: #DEDEDE;
-      }
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      &.active {
-        background: #DEDEDE;
-      }
-
-      &.selected {
-        border-left: solid $pink 4px;
-        background: $white;
-      }
-
-      > a,
-      button.btn-as-link,
-      div {
-        display: block;
-        font-size: 1em;
-        padding-left: 0;
-      }
-
-      .break {
-        display: none;
-      }
-    }
-  }
-
-  .nav-icon {
-    width: 12px;
-    height: 21px;
-    margin-top: 0;
-
-    &__contracted, &__expanded {
-      background-image: url("../images/navigation/arrow-right-black.svg");
-    }
-  }
-}
 
 body > header nav {
   // general
@@ -92,18 +22,12 @@ body > header nav {
   ol.primary {
     list-style: none;
     display: flex;
-    // border: dotted green 1px;
 
     li {
       @include list-item-nav;
       @include reset;
       line-height: 1.2;
       margin-bottom: 0;
-      // border: dotted red 1px;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
     }
   }
 
@@ -213,7 +137,7 @@ body > header nav {
     }
   }
 
-  // desktop and wide
+  // desktop and wide screen
   @include mq($from: desktop) {
     .hidden-desktop {
       display: none;
@@ -232,11 +156,9 @@ body > header nav {
         flex-wrap: nowrap;
         justify-content: flex-start;
 
-        border-bottom: 5px solid $white;
-        padding: 1.25em 0.75em;
-
-        &.selected {
-          border-bottom: 5px solid $pink;
+        &.selected > .menu-link {
+          box-shadow: 0 4px $pink;
+          outline: 4px solid transparent;
         }
 
         &.down {
@@ -244,29 +166,17 @@ body > header nav {
           border-bottom: 5px solid $grey;
         }
 
-        a, button.btn-as-link {
-          // border: dotted orange 1px;
-
-          &:hover,
-          &:focus {
-            text-decoration: underline;
-          }
-        }
 
         a,
         button.btn-as-link,
         div {
           line-height: 1.5;
-          display: inline-block;
-          padding: 0 .2em;
+          //display: inline-block;
+          //padding: 0 .2em;
         }
 
         .break {
           display: none;
-        }
-
-        .nav-icon {
-          order: 2;
         }
       }
     }
@@ -274,9 +184,204 @@ body > header nav {
 }
 
 
+
+
+
+
+// NB: desktop only - no mobile version of secondary menu
+#secondary-navigation {
+  @include mq($from: desktop) {
+    &.expanded {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+
+    .nav-icon {
+      padding-right: 0;
+      border: dotted blue 1px;
+    }
+
+    ol.category-links-list, ol.page-links-list {
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+      margin: 0;
+      padding: 0.8em 0 0;
+      background: #F0F0F0;
+
+      > li {
+        @include list-item-nav;
+        @include reset;
+
+        .menu-link {
+          border: dotted green 1px;
+          //line-height: 1.2;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.63em 0.94em;
+          border-left: solid #F0F0F0 4px;
+          width: 100%;
+
+          //a, button.btn-as-link {
+          // NB: this is for all <a> elements
+          //padding: 0.875em 1.25em;
+          //flex-basis: 80px; // NB: setting this too large can cause some
+          // elements to unexpectedly increase in height
+          //flex-grow: 1;
+
+
+          &:hover {
+            background: #DEDEDE;
+          }
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          &.active {
+            background: #DEDEDE;
+          }
+
+
+          .menu-title {
+            display: block;
+            font-size: 1em;
+            padding-left: 0;
+          }
+        }
+
+
+        .break {
+          display: none;
+        }
+      }
+
+      > li.selected > .menu-link {
+        border-left: solid $pink 4px;
+        //background: $white;
+      }
+    }
+
+    .nav-icon {
+      width: 12px;
+      height: 21px;
+      margin-top: 0;
+
+      &__contracted, &__expanded {
+        background-image: url("../images/navigation/arrow-right-black.svg");
+      }
+    }
+  }
+}
+
+// NEW DEFINITIONS ---------------------
+
+#primary-navigation ol.primary {
+  // general (mobile and desktop)
+  .nav-icon {
+    &__contracted {
+      background-image: url("../images/navigation/arrow-down-pink.svg");
+    }
+
+    &__expanded {
+      background-image: url("../images/navigation/arrow-up-pink.svg");
+    }
+  }
+
+  // mobile+tablet
+  @include mq($until: desktop) {
+    //root level item only
+    > li {
+      > .menu-link {
+        padding-left: 0.75em;
+        .nav-icon {
+          &__contracted {
+            background-image: url("../images/navigation/arrow-down-black.svg");
+          }
+
+          &__expanded {
+            background-image: url("../images/navigation/arrow-up-black.svg");
+          }
+        }
+
+        &:focus {
+          .nav-icon {
+            &__contracted {
+              background-image: url("../images/navigation/arrow-down-pink.svg");
+            }
+
+            &__expanded {
+              background-image: url("../images/navigation/arrow-up-pink.svg");
+            }
+          }
+        }
+      }
+    }
+
+    // category-level item only
+    ol.category-links-list > li > .menu-link {
+      background: green !important;
+      > .nav-icon {
+        &__contracted {
+          background-image: url("../images/navigation/arrow-down-black.svg");
+        }
+
+        &__expanded {
+          background-image: url("../images/navigation/arrow-up-black.svg");
+        }
+      }
+    }
+
+    // all mobile menu links
+    .menu-link {
+      border: dotted green 1px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding-right: 0.5em;
+    }
+
+    .nav-icon {
+      padding-right: 0;
+      border: dotted blue 1px;
+    }
+  }
+
+  // desktop only
+  @include mq($from: desktop) {
+    .menu-link {
+      border: dotted green 1px;
+      display: inline-grid;
+      grid-template-columns: minmax(min-content, max-content) min-content;
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      padding: 1.25em 0.75em;
+
+      .menu-title {
+        border: dotted orange 1px;
+        grid-area: 1 / 1 / 2 / 2;
+        display: block;
+      }
+
+      .nav-icon {
+        border: dotted red 1px;
+        grid-area: 1 / 2 / 2 / 3;
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+// NB: this section must appear below main menu definitions and applies to both mobile and desktop menus
 #primary-navigation, #secondary-navigation {
-  // NB: this section must appear below main menu definitions and applies to
-  // both mobile and desktop menus
   ol.hidden-menu {
     display: none;
   }
@@ -296,42 +401,10 @@ body > header nav {
     height: 21px;
     margin-left: 0.25em;
     margin-right: 0.25em;
-
-    // border: dotted blue 1px;
   }
 }
 
-#primary-navigation {
-  @include mq($until: desktop) {
-    ol.primary {
-      .nav-icon {
-        padding-right: 1em;
-      }
 
-      > li, li.selected {
-        > span.nav-icon {
-          &__contracted {
-            background-image: url("../images/navigation/arrow-down-black.svg");
-          }
-
-          &__expanded {
-            background-image: url("../images/navigation/arrow-up-black.svg");
-          }
-        }
-      }
-    }
-  }
-
-  .nav-icon {
-    &__contracted {
-      background-image: url("../images/navigation/arrow-down-pink.svg");
-    }
-
-    &__expanded {
-      background-image: url("../images/navigation/arrow-up-pink.svg");
-    }
-  }
-}
 
 
 button.btn-as-link {
