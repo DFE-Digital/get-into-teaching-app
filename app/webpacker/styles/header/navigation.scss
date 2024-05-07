@@ -13,405 +13,366 @@
   }
 }
 
-
-body > header nav {
-  // general
-  display: flex;
-  flex-grow: 1;
-
-  ol.primary {
-    list-style: none;
-    display: flex;
-
-    li {
-      @include list-item-nav;
-      @include reset;
-      line-height: 1.2;
-      margin-bottom: 0;
-    }
+body > header {
+  button.btn-as-link {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    font: inherit;
+    text-align: start;
+    -moz-appearance: none;
+    line-height: 1.375;
   }
 
-  li > a, li > button.btn-as-link {
+  .menu-link {
     cursor: pointer;
   }
 
-  // mobile and tablet
-  @include mq($until: desktop) {
-    flex-direction: column-reverse;
+  #primary-navigation {
+    // general
+    display: flex;
+    flex-grow: 1;
 
     ol.primary {
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin: 0;
-      padding: 0 1em;
+      list-style: none;
+      display: flex;
 
       li {
-        // NB: this is for all <li> elements in the mobile menu
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1em;
-
-        .grow {
-          flex-grow: 1;
-        }
-
-        .break {
-          flex-basis: 100%;
-          height: 2px;
-          padding: 0;
-          margin: 0;
-        }
-
-        &:last-child {
-          border-bottom: none;
-        }
-      }
-
-      > li {
-        > a, > button.btn-as-link {
-          font-weight: bold;
-          border-left: none;
-          padding-left: 0;
-        }
-
-        border-bottom: solid 1px #B7B9BB;
-
-        &:last-child {
-          border-bottom: solid 1px #B7B9BB;
-        }
-      }
-
-      a, button.btn-as-link {
-        // NB: this is for all <a> elements
-        padding: 0.875em 1.25em;
-        flex-basis: 80px; // NB: setting this too large can cause some
-                          // elements to unexpectedly increase in height
-        flex-grow: 1;
-      }
-    }
-
-    ol.category-links-list {
-      padding-top: 6px;
-      padding-left: 0;
-      flex-basis: 100%;
-
-      >  li.selected {
-        background: #F162A3;
-
-        > a, button.btn-as-link {
-          font-weight: bold;
-        }
-      }
-
-      > li.view-all {
-        background: #ffffff;
-        border-left: none;
-      }
-
-      > li {
-        background: #F0F0F0;
-        font-size: 1em;
-        font-weight: normal;
-        border-left: solid #F162A3 4px;
-        margin-bottom: 4px;
-      }
-    }
-
-    ol.page-links-list {
-      padding: 0;
-      flex-basis: 100%;
-
-      > li {
-        background: #ffffff;
-        border-bottom: solid 1px #B7B9BB;
-      }
-
-      >  li.selected {
-        > a, button.btn-as-link {
-          font-weight: bold;
-        }
-      }
-    }
-  }
-
-  // desktop and wide screen
-  @include mq($from: desktop) {
-    .hidden-desktop {
-      display: none;
-    }
-
-    ol.primary {
-      flex-grow: 1;
-      align-items: flex-end;
-      justify-content: flex-end;
-      margin: 0 1em;
-      padding: 0 1em;
-
-      > li {
-        position: relative;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-
-        &.selected > .menu-link {
-          box-shadow: 0 4px $pink;
-          outline: 4px solid transparent;
-        }
-
-        &.down {
-          background-color: $grey;
-          border-bottom: 5px solid $grey;
-        }
-
-
-        a,
-        button.btn-as-link,
-        div {
-          line-height: 1.5;
-          //display: inline-block;
-          //padding: 0 .2em;
-        }
-
-        .break {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
-
-
-
-
-
-// NB: desktop only - no mobile version of secondary menu
-#secondary-navigation {
-  @include mq($from: desktop) {
-    &.expanded {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-
-    .nav-icon {
-      padding-right: 0;
-      border: dotted blue 1px;
-    }
-
-    ol.category-links-list, ol.page-links-list {
-      display: flex;
-      list-style: none;
-      flex-direction: column;
-      margin: 0;
-      padding: 0.8em 0 0;
-      background: #F0F0F0;
-
-      > li {
         @include list-item-nav;
         @include reset;
+        line-height: 1.2;
+        margin-bottom: 0;
+      }
 
-        .menu-link {
-          border: dotted green 1px;
-          //line-height: 1.2;
+      // general (mobile and desktop)
+      .nav-icon {
+        &__contracted {
+          background-image: url("../images/navigation/arrow-down-pink.svg");
+        }
+
+        &__expanded {
+          background-image: url("../images/navigation/arrow-up-pink.svg");
+        }
+      }
+
+      // mobile only
+      @include mq($until: desktop) {
+
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0 1em;
+
+        li {
+          // NB: this is for all <li> elements in the mobile menu
           display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
           justify-content: space-between;
           align-items: center;
-          padding: 0.63em 0.94em;
-          border-left: solid #F0F0F0 4px;
-          width: 100%;
+          font-size: 1em;
 
-          //a, button.btn-as-link {
-          // NB: this is for all <a> elements
-          //padding: 0.875em 1.25em;
-          //flex-basis: 80px; // NB: setting this too large can cause some
-          // elements to unexpectedly increase in height
-          //flex-grow: 1;
-
-
-          &:hover {
-            background: #DEDEDE;
+          .break {
+            flex-basis: 100%;
+            height: 2px;
+            padding: 0;
+            margin: 0;
           }
 
           &:last-child {
             border-bottom: none;
           }
+        }
 
-          &.active {
-            background: #DEDEDE;
+        // root level item only
+        > li {
+          border-bottom: solid 1px #B7B9BB;
+
+          &:last-child {
+            border-bottom: solid 1px #B7B9BB;
           }
 
+          > .menu-link {
 
-          .menu-title {
-            display: block;
-            font-size: 1em;
+            font-weight: bold;
+            border-left: none;
             padding-left: 0;
+
+            .nav-icon {
+              &__contracted {
+                background-image: url("../images/navigation/arrow-down-black.svg");
+              }
+
+              &__expanded {
+                background-image: url("../images/navigation/arrow-up-black.svg");
+              }
+            }
+
+            &:focus {
+              .nav-icon {
+                &__contracted {
+                  background-image: url("../images/navigation/arrow-down-pink.svg");
+                }
+
+                &__expanded {
+                  background-image: url("../images/navigation/arrow-up-pink.svg");
+                }
+              }
+            }
           }
         }
 
-
-        .break {
-          display: none;
-        }
-      }
-
-      > li.selected > .menu-link {
-        border-left: solid $pink 4px;
-        //background: $white;
-      }
-    }
-
-    .nav-icon {
-      width: 12px;
-      height: 21px;
-      margin-top: 0;
-
-      &__contracted, &__expanded {
-        background-image: url("../images/navigation/arrow-right-black.svg");
-      }
-    }
-  }
-}
-
-// NEW DEFINITIONS ---------------------
-
-#primary-navigation ol.primary {
-  // general (mobile and desktop)
-  .nav-icon {
-    &__contracted {
-      background-image: url("../images/navigation/arrow-down-pink.svg");
-    }
-
-    &__expanded {
-      background-image: url("../images/navigation/arrow-up-pink.svg");
-    }
-  }
-
-  // mobile+tablet
-  @include mq($until: desktop) {
-    //root level item only
-    > li {
-      > .menu-link {
-        padding-left: 0.75em;
-        .nav-icon {
-          &__contracted {
-            background-image: url("../images/navigation/arrow-down-black.svg");
-          }
-
-          &__expanded {
-            background-image: url("../images/navigation/arrow-up-black.svg");
-          }
-        }
-
-        &:focus {
-          .nav-icon {
+        // category-level item only
+        ol.category-links-list > li > .menu-link {
+          > .nav-icon {
             &__contracted {
-              background-image: url("../images/navigation/arrow-down-pink.svg");
+              background-image: url("../images/navigation/arrow-down-black.svg");
             }
 
             &__expanded {
-              background-image: url("../images/navigation/arrow-up-pink.svg");
+              background-image: url("../images/navigation/arrow-up-black.svg");
             }
+          }
+        }
+
+        // all mobile menu links
+        .menu-link {
+          display: flex;
+          justify-content: space-between;
+          align-items: start;
+
+          // NB: this is for all <a> elements
+          padding: 0.875em 1.25em;
+          flex-basis: 80px; // NB: setting this too large can cause some
+          // elements to unexpectedly increase in height
+          flex-grow: 1;
+        }
+
+        .nav-icon {
+          padding-right: 0;
+        }
+      } // mobile
+
+      // desktop only
+      @include mq($from: desktop) {
+        flex-grow: 1;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin: 0 1em;
+        padding: 0 1em;
+
+        > li {
+          position: relative;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: flex-start;
+
+          &.selected > .menu-link {
+            box-shadow: 0 4px $pink;
+            outline: 4px solid transparent;
+          }
+
+          &.down {
+            background-color: $grey;
+            border-bottom: 5px solid $grey;
+          }
+
+
+          a,
+          button.btn-as-link,
+          div {
+            line-height: 1.5;
+          }
+
+          .break {
+            display: none;
+          }
+        }
+
+
+        .menu-link {
+          display: inline-grid;
+          grid-template-columns: minmax(min-content, max-content) min-content;
+          grid-template-rows: 1fr;
+          grid-column-gap: 0;
+          grid-row-gap: 0;
+          padding: 1.25em 0.75em;
+
+          .menu-title {
+            grid-area: 1 / 1 / 2 / 2;
+            display: block;
+          }
+
+          .nav-icon {
+            grid-area: 1 / 2 / 2 / 3;
+            display: block;
+          }
+        }
+      } // desktop
+    } // ol.primary
+
+    ol.category-links-list {
+      @include mq($until: desktop) {
+        padding-top: 6px;
+        padding-left: 0;
+        flex-basis: 100%;
+
+        > li.selected {
+          background: #F162A3;
+
+          > a, button.btn-as-link {
+            font-weight: bold;
+          }
+        }
+
+        > li.view-all {
+          background: #ffffff;
+          border-left: none;
+        }
+
+        > li {
+          background: #F0F0F0;
+          font-size: 1em;
+          font-weight: normal;
+          border-left: solid #F162A3 4px;
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    ol.page-links-list {
+      @include mq($until: desktop) {
+        padding: 0;
+        flex-basis: 100%;
+
+        > li {
+          background: #ffffff;
+          border-bottom: solid 1px #B7B9BB;
+        }
+
+        > li.selected {
+          > a, button.btn-as-link {
+            font-weight: bold;
           }
         }
       }
     }
 
-    // category-level item only
-    ol.category-links-list > li > .menu-link {
-      background: green !important;
-      > .nav-icon {
-        &__contracted {
-          background-image: url("../images/navigation/arrow-down-black.svg");
-        }
+    // mobile and tablet
+    @include mq($until: desktop) {
+      flex-direction: column-reverse;
+    }
 
-        &__expanded {
-          background-image: url("../images/navigation/arrow-up-black.svg");
-        }
+    // desktop and wide screen
+    @include mq($from: desktop) {
+      .hidden-desktop {
+        display: none;
       }
-    }
-
-    // all mobile menu links
-    .menu-link {
-      border: dotted green 1px;
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      padding-right: 0.5em;
-    }
-
-    .nav-icon {
-      padding-right: 0;
-      border: dotted blue 1px;
     }
   }
 
-  // desktop only
-  @include mq($from: desktop) {
-    .menu-link {
-      border: dotted green 1px;
-      display: inline-grid;
-      grid-template-columns: minmax(min-content, max-content) min-content;
-      grid-template-rows: 1fr;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      padding: 1.25em 0.75em;
+  // NB: desktop only - no mobile version of secondary menu
+  #secondary-navigation {
+    @include mq($from: desktop) {
+      &.expanded {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
 
-      .menu-title {
-        border: dotted orange 1px;
-        grid-area: 1 / 1 / 2 / 2;
-        display: block;
+      ol.category-links-list, ol.page-links-list {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        margin: 0;
+        padding: 0.8em 0 0;
+        background: #F0F0F0;
+
+        > li {
+          @include list-item-nav;
+          @include reset;
+
+          .menu-link {
+            border: dotted green 1px;
+            // line-height: 1.2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.63em 0.94em;
+            border-left: solid #F0F0F0 4px;
+            width: 100%;
+
+            // a, button.btn-as-link {
+            // NB: this is for all <a> elements
+            // padding: 0.875em 1.25em;
+            // flex-basis: 80px; // NB: setting this too large can cause some
+            //  elements to unexpectedly increase in height
+            // flex-grow: 1;
+
+            &:hover {
+              background: #DEDEDE;
+            }
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            &.active {
+              background: #DEDEDE;
+            }
+
+            .menu-title {
+              display: block;
+              font-size: 1em;
+              padding-left: 0;
+            }
+          }
+
+          .break {
+            display: none;
+          }
+        }
+
+        > li.selected > .menu-link {
+          border-left: solid $pink 4px;
+          background: $white;
+        }
       }
 
       .nav-icon {
-        border: dotted red 1px;
-        grid-area: 1 / 2 / 2 / 3;
-        display: block;
+        padding-right: 0;
+        width: 12px;
+        height: 21px;
+        margin-top: 0;
+
+        &__contracted, &__expanded {
+          background-image: url("../images/navigation/arrow-right-black.svg");
+        }
       }
     }
   }
-}
 
-
-
-
-
-
-// NB: this section must appear below main menu definitions and applies to both mobile and desktop menus
-#primary-navigation, #secondary-navigation {
-  ol.hidden-menu {
-    display: none;
-  }
-
-  @include mq($until: desktop) {
-    &.hidden-mobile {
+  // NB: this section must appear below main menu definitions and applies to both mobile and desktop menus
+  #primary-navigation, #secondary-navigation {
+    ol.hidden-menu {
       display: none;
     }
-  }
 
-  .nav-icon {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    display: block;
-    width: 21px;
-    height: 21px;
-    margin-left: 0.25em;
-    margin-right: 0.25em;
+    @include mq($until: desktop) {
+      &.hidden-mobile {
+        display: none;
+      }
+    }
+
+    .nav-icon {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      display: block;
+      width: 21px;
+      height: 21px;
+      margin-left: 0.25em;
+      margin-right: 0.25em;
+    }
   }
 }
 
 
-
-
-button.btn-as-link {
-  background-color: rgba(0, 0, 0, 0);
-  border-style: none;
-  font: inherit;
-  text-align: start;
-  -moz-appearance: none;
-  line-height: 1.375;
-}
