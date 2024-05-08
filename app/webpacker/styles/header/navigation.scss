@@ -123,7 +123,7 @@ body > header {
         ol.category-links-list > li > .menu-link {
           > .nav-icon {
             &__contracted {
-              background-image: url("../images/navigation/arrow-down-black.svg");
+              background-image: url("../images/navigation/arrow-down-pink.svg");
             }
 
             &__expanded {
@@ -139,6 +139,20 @@ body > header {
 
               &__expanded {
                 background-image: url("../images/navigation/arrow-up-pink.svg");
+              }
+            }
+          }
+        }
+
+        ol.category-links-list > li.selected > .menu-link {
+          &:focus {
+            .nav-icon {
+              &__contracted {
+                background-image: url("../images/navigation/arrow-down-pink.svg");
+              }
+
+              &__expanded {
+                background-image: url("../images/navigation/arrow-up-black.svg");
               }
             }
           }
@@ -221,6 +235,7 @@ body > header {
     } // ol.primary
 
     ol.category-links-list {
+      // mobile and tablet
       @include mq($until: desktop) {
         padding-top: 6px;
         padding-left: 0;
@@ -231,6 +246,7 @@ body > header {
 
           > a, button.btn-as-link {
             font-weight: bold;
+            background: transparent;
           }
         }
 
