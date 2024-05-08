@@ -15,7 +15,7 @@ global.mapsLoadedCallback = function () {
   for (const map of maps) {
     const instance = application.getControllerForElementAndIdentifier(
       map,
-      'map'
+      'map',
     );
     instance.initMap();
   }

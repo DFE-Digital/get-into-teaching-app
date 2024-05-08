@@ -14,7 +14,7 @@ export default class extends Controller {
       this.toggleErrorMessageVisibility(false);
       this.partialUrlTarget.value = this.generatePartialUrl(
         startAtValue,
-        nameValue
+        nameValue,
       );
     }
   }
