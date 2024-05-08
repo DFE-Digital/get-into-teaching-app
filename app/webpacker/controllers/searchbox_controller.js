@@ -146,7 +146,7 @@ export default class extends Controller {
 
     this.analyticsSubmitter = window.setTimeout(
       this.sendToAnalytics.bind(this),
-      2000
+      2000,
     );
   }
 
@@ -159,7 +159,7 @@ export default class extends Controller {
       window.ga(
         'set',
         'page',
-        '/search?' + this.searchParams(this.redactedQuery)
+        '/search?' + this.searchParams(this.redactedQuery),
       );
       window.ga('send', 'pageview');
     }
