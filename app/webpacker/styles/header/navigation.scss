@@ -300,13 +300,16 @@ body > header {
           @include list-item-nav;
           @include reset;
 
+          button.menu-link {
+            width: 100%;
+          }
+
           .menu-link {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0.63em 0.94em;
             border-left: solid #F0F0F0 4px;
-            width: 100%;
 
             &:focus {
               .nav-icon {
