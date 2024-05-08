@@ -12,7 +12,7 @@ export default class extends Controller {
 
   toggle(event) {
     this.toggleCollapsable(
-      event.target.closest('.step').getAttribute('data-id')
+      event.target.closest('.step').getAttribute('data-id'),
     );
   }
 

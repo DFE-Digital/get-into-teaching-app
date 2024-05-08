@@ -44,14 +44,14 @@ export default class extends Controller {
 
   prepareChevronOnButtonLinks() {
     const links = this.contentTarget.querySelectorAll(
-      '.button,.type-description__link'
+      '.button,.type-description__link',
     );
 
     [...links]
       .filter((link) => link.querySelector('span') === null) // don't touch buttons that already include a span
       .forEach((link) => {
         link.innerHTML = this.wrapFinalWordInSpan(
-          link.textContent.trim().split(' ')
+          link.textContent.trim().split(' '),
         );
       });
   }

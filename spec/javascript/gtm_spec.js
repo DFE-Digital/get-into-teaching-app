@@ -57,7 +57,7 @@ describe('Google Tag Manager', () => {
           expect.objectContaining({
             originalLocation: 'https://localhost/path?utm=tag',
           }),
-        ])
+        ]),
       );
     });
   });
@@ -87,7 +87,7 @@ describe('Google Tag Manager', () => {
 
     it('does not append the GTM script', () => {
       const scriptTag = document.querySelector(
-        "script[src^='https://www.googletagmanager.com/gtm.js?id=ABC-123']"
+        "script[src^='https://www.googletagmanager.com/gtm.js?id=ABC-123']",
       );
       expect(scriptTag).toBeNull();
     });
@@ -113,7 +113,7 @@ describe('Google Tag Manager', () => {
 
       it('appends the GTM script', () => {
         const scriptTag = document.querySelector(
-          "script[src^='https://www.googletagmanager.com/gtm.js?id=ABC-123']"
+          "script[src^='https://www.googletagmanager.com/gtm.js?id=ABC-123']",
         );
         expect(scriptTag).not.toBeNull();
       });
@@ -136,7 +136,7 @@ describe('Google Tag Manager', () => {
 
     it('appends the GTM script', () => {
       const scriptTag = document.querySelector(
-        "script[src^='https://www.googletagmanager.com/gtm.js?id=ABC-123']"
+        "script[src^='https://www.googletagmanager.com/gtm.js?id=ABC-123']",
       );
       expect(scriptTag).not.toBeNull();
     });

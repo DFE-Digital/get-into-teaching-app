@@ -27,13 +27,13 @@ describe('CookiePreferences', () => {
     expect(xhrMock.open).toHaveBeenCalledWith('POST', '/client_metrics', true);
     expect(xhrMock.setRequestHeader).toHaveBeenCalledWith(
       'Content-Type',
-      'application/json'
+      'application/json',
     );
     expect(xhrMock.send).toHaveBeenCalledWith(
       JSON.stringify({
         key: 'app_client_cookie_consent_total',
         labels: labels,
-      })
+      }),
     );
   }
 
