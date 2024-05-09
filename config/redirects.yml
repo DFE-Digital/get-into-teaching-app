@@ -57,6 +57,7 @@ redirects:
   "/explore-my-options/return-to-teaching/events": "/events"
   "/node/478": "/events"
   "/presentations": "/events/about-get-into-teaching-events"
+  "/events/240518-get-into-teaching-london-eventutm(*event)": "/events/240518-get-into-teaching-london-event"
 
   # School Experience
   "/get-school-experience/get-school-experience": "/is-teaching-right-for-me/get-school-experience"
