@@ -7,6 +7,6 @@ content:
     - content/landing/food-for-thought/promo
 image: "static/images/content/hero-images/cake.png"
 layout: "layouts/minimal"
-colour: pink-blue
+colour: pink-yellow
 noindex: true
 ---
