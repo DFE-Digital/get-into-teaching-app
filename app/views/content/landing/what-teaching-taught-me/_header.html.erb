@@ -1,6 +1,5 @@
-<%= render Content::CampaignHeroComponent.new(
-  title: ["How teaching", "can help you grow"],
-  colour: "grow",
+<%= render Content::LandingHeroComponent.new(
+  title: "How teaching can help you grow",
+  colour: @front_matter["colour"],
   image: @front_matter["image"],
-  background_colour: "grey"
 ) %>

@@ -1,6 +1,5 @@
-<%= render Content::CampaignHeroComponent.new(
-  title: ["You're more of a teacher than", "you think"],
-  colour: "grow",
+<%= render Content::LandingHeroComponent.new(
+  title: "You're more of a teacher than you think",
+  colour: @front_matter["colour"],
   image: @front_matter["image"],
-  background_colour: "grey"
 ) %>

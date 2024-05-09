@@ -8,8 +8,8 @@ content:
     - content/landing/what-teaching-taught-me/content
     - content/landing/what-teaching-taught-me/promo
 image: "static/images/content/hero-images/0028.jpg"
-colour: "pink"
 layout: "layouts/minimal"
+colour: pink-blue
 talk_to_us: false
 noindex: true
 ---
