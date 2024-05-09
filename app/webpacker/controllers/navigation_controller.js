@@ -25,32 +25,55 @@ export default class extends Controller {
   handleNavMenuClick(event) {
     // fires when the user clicks on a navigation menu item
     const item = event.target.closest('li');
-    const directLink = item.dataset.directLink === 'true';
-    const itemSync = this.getTargetItem(item.dataset.syncId);
-    const childMenu = this.getTargetItem(item.dataset.childMenuId);
-    const childMenuSync = this.getTargetItem(item.dataset.childMenuSyncId);
-    const toggleSecondaryNavigation = item.dataset.toggleSecondaryNavigation;
 
-    if (item && !directLink) {
-      event.preventDefault();
-      event.stopPropagation();
+    if (item) {
+      const directLink = item.dataset.directLink === 'true';
+      const itemSync = this.getTargetItem(item.dataset.syncId);
+      const childMenu = this.getTargetItem(item.dataset.childMenuId);
+      const childMenuSync = this.getTargetItem(item.dataset.childMenuSyncId);
+      const toggleSecondaryNavigation = item.dataset.toggleSecondaryNavigation;
 
-      if (this.toggleIconExpanded(item)) {
-        this.toggleIconExpanded(itemSync);
-        this.showMenu(childMenu);
-        this.showMenu(childMenuSync);
-        this.contractAndHideSiblingMenus(item, itemSync);
-        if (toggleSecondaryNavigation) {
-          this.expandSecondaryNavigation();
-        }
-      } else if (this.toggleIconContracted(item)) {
-        this.toggleIconContracted(itemSync);
-        this.contractAndHideChildMenu(childMenu);
-        this.contractAndHideChildMenu(childMenuSync);
-        if (toggleSecondaryNavigation) {
-          this.contractSecondaryNavigation();
+      if (!directLink) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (this.toggleIconExpanded(item)) {
+          this.toggleIconExpanded(itemSync);
+          this.showMenu(childMenu);
+          this.showMenu(childMenuSync);
+          this.contractAndHideSiblingMenus(item, itemSync);
+          if (toggleSecondaryNavigation) {
+            this.expandSecondaryNavigation();
+          }
+        } else if (this.toggleIconContracted(item)) {
+          this.toggleIconContracted(itemSync);
+          this.contractAndHideChildMenu(childMenu);
+          this.contractAndHideChildMenu(childMenuSync);
+          if (toggleSecondaryNavigation) {
+            this.contractSecondaryNavigation();
+          }
         }
       }
+    }
+  }
+
+  handleMenuTab(event) {
+    const item = event.target.closest('li');
+    if (item && item.classList.contains('selected')) {
+      const childMenu = this.getTargetItem(item.dataset.childMenuId);
+      const nextItem = childMenu.querySelector('li > .menu-link');
+      const childSyncMenu = this.getTargetItem(item.dataset.childMenuSyncId);
+      const nextSyncItem = childSyncMenu.querySelector('li > .menu-link');
+
+      if (nextItem) {
+        nextItem.focus();
+      }
+
+      if (nextSyncItem) {
+        nextSyncItem.focus();
+      }
+
+      event.preventDefault();
     }
   }
 

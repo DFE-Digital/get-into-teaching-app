@@ -36,7 +36,7 @@ module Header
       show_dropdown = resource.children?
       link_css = "menu-link link link--black link--no-underline"
       aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_ids } : {}
-      tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown } do
+      tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown, action: "keydown.tab->navigation#handleMenuTab" } do
         safe_join([
           link_to(path, class: link_css, aria: aria_attributes) do
             safe_join([
@@ -84,7 +84,7 @@ module Header
       li_css = ("active" if subcategory == front_matter["subcategory"]).to_s
       link_css = "menu-link link link--black link--no-underline btn-as-link"
       aria_attributes = { expanded: false, controls: child_menu_ids }
-      tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": false } do
+      tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": false, action: "keydown.tab->navigation#handleMenuTab" } do
         safe_join(
           [
             tag.button(type: "button", class: link_css, aria: aria_attributes) do
