@@ -190,9 +190,22 @@ body > header {
           flex-wrap: nowrap;
           justify-content: flex-start;
 
+          > .menu-link {
+            border-bottom: solid 4px transparent;
+          }
+
+          > .menu-link:hover {
+            border-bottom: solid 4px $black;
+          }
+
+          > .menu-link:focus {
+            box-shadow: none;
+            outline: none;
+            border-bottom: solid 4px $pink;
+          }
+
           &.selected > .menu-link {
-            box-shadow: 0 4px $pink;
-            outline: 4px solid transparent;
+            border-bottom: solid 4px $pink;
           }
 
           &.down {
@@ -219,7 +232,8 @@ body > header {
           grid-template-rows: 1fr;
           grid-column-gap: 0;
           grid-row-gap: 0;
-          padding: 1.25em 0.75em;
+          padding: 0.755em 0.75em;
+          margin: 0.75em 0;
 
           .menu-title {
             grid-area: 1 / 1 / 2 / 2;
