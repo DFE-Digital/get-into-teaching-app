@@ -147,6 +147,7 @@ body > header {
         ol.category-links-list > li.selected > .menu-link {
           &:focus {
             color: $black;
+
             .nav-icon {
               &__contracted {
                 background-image: url("../images/navigation/arrow-down-pink.svg");
