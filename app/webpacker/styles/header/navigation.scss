@@ -146,6 +146,7 @@ body > header {
 
         ol.category-links-list > li.selected > .menu-link {
           &:focus {
+            color: $black;
             .nav-icon {
               &__contracted {
                 background-image: url("../images/navigation/arrow-down-pink.svg");
@@ -256,7 +257,7 @@ body > header {
         flex-basis: 100%;
 
         > li.selected {
-          background: #F162A3;
+          background: $pink;
 
           > a, button.btn-as-link {
             font-weight: bold;
@@ -273,7 +274,7 @@ body > header {
           background: #F0F0F0;
           font-size: 1em;
           font-weight: normal;
-          border-left: solid #F162A3 4px;
+          border-left: solid $pink 4px;
           margin-bottom: 4px;
         }
       }
@@ -339,7 +340,7 @@ body > header {
             justify-content: space-between;
             align-items: center;
             padding: 0.63em 0.94em;
-            border-left: solid #F0F0F0 4px;
+            border-left: solid transparent 4px;
 
             &:focus {
               .nav-icon {
@@ -406,6 +407,12 @@ body > header {
               }
             }
           }
+        }
+      }
+
+      ol.page-links-list {
+        > li {
+          border-left: none;
         }
       }
 
