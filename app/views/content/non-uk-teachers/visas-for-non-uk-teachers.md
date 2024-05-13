@@ -68,7 +68,9 @@ Visit the UK government’s official [Teaching Vacancies](https://teaching-vacan
 
 Apply for a teaching job with a school which can sponsor your visa. Your salary must meet the requirements for a Skilled Worker visa. 
 
-When you have a confirmed offer of job, you’ll be able to apply for your [Skilled worker visa](https://www.gov.uk/skilled-worker-visa).  
+[Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+
+When you have a confirmed offer of a job, you’ll be able to apply for your [Skilled worker visa](https://www.gov.uk/skilled-worker-visa).  
 
 You will need to show: 
 
@@ -76,7 +78,6 @@ You will need to show:
 * [you meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * your salary meets the requirement for a Skilled Worker visa
 
-[Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ### Salary requirement for a skilled worker visa
  
