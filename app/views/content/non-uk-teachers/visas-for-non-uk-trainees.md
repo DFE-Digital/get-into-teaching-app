@@ -40,13 +40,15 @@ If you’re applying for teacher training as a non-UK citizen, you will need a [
 
 ## How to apply for your visa
 
+Most candidates who don't already have a visa or immigration status allowing them to study or work in England will need to apply for a Student or Skilled worker visa.
+
 ### Student visa 
 
-Most teacher training courses in England are fee-paying. If you don't already have a visa or immigration status allowing you to study in England, you will need a Student visa if you train on a fee-paying course. Your Student visa must be sponsored by your teacher training provider. 
+Most teacher training courses in England are fee-paying. You will need a Student visa if you train on a fee-paying course. Your Student visa must be sponsored by your teacher training provider. 
 
 ### Skilled worker visa 
 
-Some teacher training courses in England are salaried – this means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). Currently, places on these courses are very limited. If you don't already have a visa or immigration status allowing you to work in England, you will need a Skilled worker visa if you train on a salaried training course. Your Skilled worker visa must be sponsored by the school employing you.  
+Some teacher training courses in England are salaried – this means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). Currently, places on these courses are very limited. You will need a Skilled worker visa if you train on a salaried training course. Your Skilled worker visa must be sponsored by the school employing you.  
 
 ### To apply for your visa, follow these steps 
 
