@@ -80,10 +80,12 @@ If you have a teaching qualification from the following countries and regions, y
 * Guernsey
 * Gibraltar
 * Hong Kong
+* Jamaica
 * Jersey
 * New Zealand
 * Northern Ireland
 * Scotland
+* South Africa
 * Switzerland
 * Ukraine
 * the USA
@@ -92,10 +94,9 @@ In addition, if you have a subject specialism in languages, maths or science and
 
 * Ghana
 * India
-* Jamaica
 * Nigeria
 * Singapore
-* South Africa
+
 
  Visit ['Awarding qualified teacher status to overseas teachers'](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) to check the eligibility criteria and apply for QTS in England.  
 
