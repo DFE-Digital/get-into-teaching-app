@@ -7,9 +7,9 @@ content:
     - content/landing/how-to-become-a-teacher/steps
     - content/landing/how-to-become-a-teacher/content
     - content/landing/how-to-become-a-teacher/promo
-image: "static/images/content/landing/how-to-become-a-teacher-1.jpg"
-colour: "yellow"
+image: "static/images/content/hero-images/0031.jpg"
 layout: "layouts/minimal"
+colour: pink-blue  
 talk_to_us: false
 noindex: true
 ---

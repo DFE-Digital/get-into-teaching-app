@@ -8,8 +8,8 @@ content:
     - content/landing/grow/content
     - content/landing/grow/promo
 image: "static/images/content/hero-images/0027.jpg"
-colour: "yellow"
 layout: "layouts/minimal"
+colour: pink-blue
 talk_to_us: false
 noindex: true
 ---
