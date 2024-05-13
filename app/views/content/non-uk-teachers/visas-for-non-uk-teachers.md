@@ -24,7 +24,7 @@ keywords:
   - Switzerland
   - USA
   - Visa
-  - Skilled worker visa
+  - Skilled Worker visa
   - EU
   - EU Settlement Scheme
   - NARIC
@@ -56,60 +56,45 @@ keywords:
 ---
 
 
-If you’re applying for teaching jobs in England as a non-UK citizen, you will need a visa or immigration status allowing you to work in England.
+If you’re applying for teaching jobs in England as a non-UK citizen, you will need a [visa or immigration status allowing you to work in England](#check-your-status).
 
-The information on this page is for:
+## How to apply for your visa
 
-* non-UK citizens living in the UK
-* non-UK citizens living outside the UK
+Most non-UK citizens who don't already have a visa or immigration status allowing them to work in England will need a Skilled Worker visa to teach in England. 
 
-You will not need a visa if you:
+### To apply for your visa, follow these steps
 
-* are an Irish citizen
-* have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
-* have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk)
+Visit the UK government’s official [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service to search for teaching jobs in the UK. Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas. 
 
-If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](#graduate-visa).
+Apply for a teaching job with a school which can sponsor your visa. Your salary must meet the requirements for a Skilled Worker visa. 
 
-### EU Settlement Scheme
+When you have a confirmed offer of job, you’ll be able to apply for your [Skilled worker visa](https://www.gov.uk/skilled-worker-visa).  
 
-If you or your family are from the European Economic Area (EEA) or Switzerland, and you or a family member were living in the UK by 31 December 2020, you may still be able to apply to the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families).
+You will need to show: 
 
-### Check your status
-
-If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa
-).
-
-## Skilled worker visa
-
-The main visa route for non-UK citizens wishing to teach in England is the skilled worker visa.
-
-You’ll be able to apply for your skilled worker visa if:
-
-* you have a job offer from a school that is a Home Office licensed visa sponsor 
-* you have a certificate of sponsorship from this school, confirming they have offered you a job and will sponsor you
+* you have a certificate of sponsorship from the school, confirming they have offered you a job and will sponsor you  
 * [you meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
-* your salary meets the requirement for a skilled worker visa
+* your salary meets the requirement for a Skilled Worker visa
 
 [Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ### Salary requirement for a skilled worker visa
  
-The salary you must be paid to get a visa varies according to  whether you are employed as a ‘qualified’ or ‘unqualified’ teacher. This depends on your level of experience and qualifications – your employing school can explain whether the role you are applying for is qualified or unqualified. The salary requirement also varies depending on the region you are applying to work in.
+The salary you must be paid to get a visa varies according to whether you are employed as a ‘qualified’ or ‘unqualified’ teacher. This depends on your level of experience and qualifications – your employing school can explain whether the role you are applying for is qualified or unqualified. The salary requirement also varies depending on the region you are applying to work in.
 
 If you are employed as a qualified teacher and work in:
 
-* inner London, you must earn £36,745
-* outer London, you must earn £34,514
-* London fringe, you must earn £31,350
-* the rest of England, you must earn £30,000
+* inner London, you must earn at least £36,745
+* outer London, you must earn at least £34,514
+* London fringe, you must earn at least £31,350
+* the rest of England, you must earn at least £30,000
 
 If you are employed as an unqualified teacher and work in:
 
-* inner London, you must earn £25,831
-* outer London, you must earn £24,415
-* London fringe, you must earn £23,200
-* the rest of England, you must earn £23,200
+* inner London, you must earn at least £25,831
+* outer London, you must earn at least £24,415
+* London fringe, you must earn at least £23,200
+* the rest of England, you must earn at least £23,200
 
 Check the region you will be working in with the school employing you. 
 
@@ -122,25 +107,46 @@ You can work part time, but your salary must meet the threshold for a skilled wo
 
 Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary on offer does not meet the skilled worker visa requirements.
 
-The salary requirements for a skilled worker visa apply whether [the type of school you work in is funded by the UK government or is in the private sector](https://www.gov.uk/types-of-school).
+### Your partner and children
 
-If you are successful in applying for a skilled worker visa, [your partner and children may also be able to apply to come to the UK with you](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
+You may be able to [bring your partner and children with you on a Skilled worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
 
-<p class="call-to-action__action">
-  <a href="https://www.gov.uk/skilled-worker-visa">Apply for a skilled worker visa<span></span></a>
-</p>
 
- 
+## Check your status
+
+If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
+
+You will not need a visa to teach in the UK if you:
+
+* are an Irish citizen
+
+* have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
+
+* have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
+
+You will not need to be sponsored for a Skilled Worker visa if you have a: 
+
+* [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa) 
+
+* [Family visa](https://www.gov.uk/uk-family-visa) 
+
+* [Graduate visa](https://www.gov.uk/graduate-visa) 
+
+* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)
+
+* [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa) 
+
+* [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
+
+* [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility) 
 
 ## Visa fees and other charges
 
-You will usually need to show proof of a certain level of savings or income, depending on which visa you are applying for. You’ll be guided through this process when you apply for your visa.
+You will usually need to show proof of a certain level of savings or income. You’ll be guided through this process when you apply for your visa.
 
 ### Visa fees
 
-You’ll also have to pay visa fees which vary depending on which visa you are applying for.
-
-[Calculate how much your visa will cost](https://www.gov.uk/visa-fees).
+You’ll also have to pay [visa fees](https://www.gov.uk/visa-fees).
 
 ### Immigration Health Surcharge 
 
