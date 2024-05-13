@@ -25,6 +25,20 @@
     position: relative;
   }
 
+  h2.mailing-list-title {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    & > i {
+      flex-basis: auto;
+    }
+
+    & > span {
+      display: inline-block;
+    }
+  }
+
   h2::before {
     content: "";
     background-image: url("../images/content/homepage/dashed-lineV2.svg");
