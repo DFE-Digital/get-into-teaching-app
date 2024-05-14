@@ -120,7 +120,7 @@ The amount you receive depends on the year that you start your QTS course. You d
 
 ### Undergraduate bursary if you're former military personnel
 
-You may be eligible for a £40,000 tax-free undergraduate bursary for veterans if you’re:
+You may be eligible for a $bursaries_veteran_full-amount$ tax-free undergraduate bursary for veterans if you’re:
 
 * training to teach secondary biology, chemistry, computing, languages, maths, or physics
 * doing an undergraduate degree leading to QTS in England
