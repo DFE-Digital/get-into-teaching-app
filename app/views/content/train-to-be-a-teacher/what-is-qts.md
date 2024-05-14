@@ -14,7 +14,7 @@ related_content:
     What will your teacher training be like?: "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
-navigation: 20.50
+navigation: 20.20
 navigation_title: Qualified teacher status (QTS)
 navigation_description: You need English qualified teacher status (QTS) to teach in maintained schools in England. Find out how to get QTS through teacher training.
 inset_text:
