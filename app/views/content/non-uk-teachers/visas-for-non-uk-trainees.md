@@ -36,9 +36,9 @@ keywords:
   
 ---
 
-If you’re applying for teacher training as a non-UK citizen, you will need a [visa or immigration status allowing you to study or work in England](#check-your-status). 
-
 ## How to apply for your visa
+
+If you’re applying for teacher training as a non-UK citizen, you will need a [visa or immigration status allowing you to study or work in England](#check-your-status). 
 
 Most candidates who don't already have a visa or immigration status allowing them to study or work in England will need to apply for a Student or Skilled worker visa.
 
