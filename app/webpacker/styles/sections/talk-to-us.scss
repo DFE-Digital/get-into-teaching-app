@@ -1,77 +1,63 @@
 .talk-to-us {
   background-color: $grey;
-  margin-top: 3em;
 
+  .container {
+    margin-bottom:0;
+  }
+  
   .content {
     width: 100%;
     display: flex;
     flex-direction: column;
-
-    > div {
-      flex: 1 0;
-      margin: $indent-amount;
-
-      &.contact {
-        padding: $indent-amount;
-        background-color: $white;
-
-        .options {
-          display: flex;
-          flex-direction: column;
-
-          > div {
-            flex: 1 0;
-
-            &.live-chat {
-              word-break: break-all;
-              border-bottom: 1px solid $purple;
-              padding-bottom: $indent-amount;
-              margin-bottom: $indent-amount;
-              flex-basis: 40%;
-
-              span > span {
-                font-weight: bold;
-              }
-            }
-
-            p {
-              margin-top: $indent-amount;
-            }
-
-            .telephone {
-              font-weight: bold;
-              text-decoration: none;
-              color: $black;
-              font-size: 1.3em;
-            }
-          }
-        }
-      }
+    margin-bottom: $indent-amount;
+    
+    @include mq($from: tablet) {
+      gap: 2px;
     }
-  }
-}
 
-@include mq($from: tablet) {
-  .talk-to-us {
-    .content {
-      flex-direction: row;
+    > p {
+      background-color: $white;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      padding: 0; 
+      gap: 2px;
+      margin: 2px 0;
+
+      @include mq($from: tablet) {
+        flex-direction: row;
+        padding: 1.5rem 1rem 1rem 1rem;
+        background-color: $white;
+        gap: 0;
+        margin: 0;
+      }
 
       > div {
-        margin: 0 $indent-amount $indent-amount $indent-amount;
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: $white;
+        box-sizing: border-box;
 
-        &.contact .options {
-          flex-direction: row;
+        @include mq($from: tablet) {
+          margin: 0;
+          padding: 0;
+        }
 
-          > div {
-            flex: initial;
+        p {
+          margin-top: 0.25rem;
+          margin-bottom: 0;
+        }
 
-            &.live-chat {
-              border: 0;
-              border-right: 1px solid $purple;
-              padding: 0 $indent-amount 0 0;
-              margin: 0 $indent-amount 0 0;
-            }
-          }
+        .telephone {
+          font-weight: bold;
+          color: $black;
+          font-size: 2em;
         }
       }
     }
@@ -101,7 +87,6 @@
 
     .telephone {
       font-weight: bold;
-      text-decoration: none;
       font-size: 1.3em;
     }
   }
