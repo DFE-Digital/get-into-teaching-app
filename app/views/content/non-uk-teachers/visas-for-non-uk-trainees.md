@@ -90,7 +90,7 @@ You may be able to train part-time, but your part-time salary must be at least Â
 
 If your course starts after 1 January 2024, you will not be able to bring your partner and children with you on a Student visa. 
 
-You may be able to bring your partner and children with you on a Skilled worker visa. 
+You may be able to bring your partner and children with you on a Skilled Worker visa. 
 
 ### How a bursary or scholarship can help with your Student visa application 
 
