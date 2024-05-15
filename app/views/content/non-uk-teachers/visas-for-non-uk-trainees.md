@@ -126,7 +126,7 @@ You will not need to be sponsored for a Student or Skilled worker visa if you ha
 
 ### Dependents
 
-You will not need to be sponsored for a Student or Skilled worker visa if you have you have permission to live in the UK as a dependent (usually partner) of someone on a visa. You can work or study without a sponsor for the duration of your partner’s visa. 
+You will not need to be sponsored for a Student or Skilled Worker visa if you have you have permission to live in the UK as a dependent (usually partner) of someone on a visa. You can work or study without a sponsor for the duration of your partner’s visa. 
 
 ### Refugees and asylum seekers 
 
