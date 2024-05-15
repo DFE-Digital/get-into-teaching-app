@@ -2,7 +2,7 @@ bursaries:
   SKE-weekly: £175
   veteran:
     total: £40,000
-    installment: £20,000
+    instalment: £20,000
 ## implemented above this line
   postgraduate:
     chemistry: £28,000
