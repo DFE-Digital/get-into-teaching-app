@@ -70,7 +70,7 @@ For a [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa), you will al
 * [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * check your salary meets the requirement for a Skilled worker visa 
 
-### Salary requirement for a Skilled worker visa 
+### Salary requirement for a Skilled Worker visa 
 
 Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a Skilled worker visa – this varies by region, as follows: 
 
