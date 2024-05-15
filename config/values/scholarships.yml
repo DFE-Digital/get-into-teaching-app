@@ -8,5 +8,4 @@ scholarships:
   generic:
     max: £30,000
     max-shortened: £30k
-  non-uk:
-    french-german-spanish-physics: £30,000
+  non-uk: £30,000
