@@ -107,7 +107,7 @@ You will not need a visa to train to teach in the UK if you:
 * have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
 
-You will not need to be sponsored for a Student or Skilled worker visa if you have a: 
+You will not need to be sponsored for a Student or Skilled Worker visa if you have a: 
 
 * [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa) 
 
