@@ -10,7 +10,7 @@ related_content:
 promo_content:
 navigation: 20.30
 navigation_title: Apply for your visa to train to teach
-navigation_description: Learn more about applying for a Student or Skilled worker visa to train to teach in England.
+navigation_description: Learn more about applying for a Student or Skilled Worker visa to train to teach in England.
 date: "2021-05-27"
 image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"
@@ -24,7 +24,7 @@ keywords:
   - Foreign
   - Non-UK
   - Visa
-  - Skilled worker visa
+  - Skilled Worker visa
   - Immigration
   - Student Visa
   - Graduate Visa
@@ -40,15 +40,15 @@ keywords:
 
 If you’re applying for teacher training as a non-UK citizen, you will need a [visa or immigration status allowing you to study or work in England](#check-your-status). 
 
-Most candidates who don't already have a visa or immigration status allowing them to study or work in England will need to apply for a Student or Skilled worker visa.
+Most candidates who don't already have a visa or immigration status allowing them to study or work in England will need to apply for a Student or Skilled Worker visa.
 
 ### Student visa 
 
 Most teacher training courses in England are fee-paying. You will need a Student visa if you train on a fee-paying course. Your Student visa must be sponsored by your teacher training provider. 
 
-### Skilled worker visa 
+### Skilled Worker visa 
 
-Some teacher training courses in England are salaried – this means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). Currently, places on these courses are very limited. You will need a Skilled worker visa if you train on a salaried training course. Your Skilled worker visa must be sponsored by the school employing you.  
+Some teacher training courses in England are salaried – this means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). Currently, places on these courses are very limited. You will need a Skilled Worker visa if you train on a salaried training course. Your Skilled Worker visa must be sponsored by the school employing you.  
 
 ### To apply for your visa, follow these steps 
 
@@ -64,7 +64,7 @@ For a [Student visa](https://www.gov.uk/student-visa), you will also need to:
 * [have enough money to support yourself and pay for your course](https://www.gov.uk/student-visa/money)
 * [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/student-visa/knowledge-of-english)
 
-For a [Skilled worker visa](https://www.gov.uk/skilled-worker-visa), you will also need to: 
+For a [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa), you will also need to: 
 
 * have a ‘certificate of sponsorship’ from the school which is paying you, confirming they will sponsor you 
 * [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
