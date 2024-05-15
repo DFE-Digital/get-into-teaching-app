@@ -58,7 +58,7 @@ To be eligible for the IRP, you must be a teacher coming to England to teach lan
 
 You already have the right to train or work as a teacher in England if you're in the UK on (one of the following):
 
-* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa) – please note this scheme closed to new applications on 19 February 2024
+* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa) – please note this scheme closed to new applications on 19 February 2024
 * [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 * [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
