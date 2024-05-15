@@ -1,10 +1,9 @@
 bursaries:
-  SKE: £175
+  SKE-weekly: £175
   veteran:
-    full-amount: £40,000
-    installment-amount: £20,000
+    total: £40,000
+    installment: £20,000
 ## implemented above this line
-  undergraduate: £9,000
   postgraduate:
     chemistry: £28,000
     computing: £28,000
@@ -21,5 +20,6 @@ bursaries:
     music: £10,000
     religious-education: £10,000
     non-uk-languages-physics: £28,000
+  undergraduate: £9,000
 
 

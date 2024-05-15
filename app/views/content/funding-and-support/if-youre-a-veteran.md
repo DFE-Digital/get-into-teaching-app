@@ -32,7 +32,7 @@ There are full and part-time teacher training courses available.
 
 ## Undergraduate bursary for veterans
 
-You may be eligible for a tax-free undergraduate bursary of $bursaries_veteran_full-amount$ if you are (all of the following):
+You may be eligible for a tax-free undergraduate bursary of $bursaries_veteran_total$ if you are (all of the following):
 
 * a veteran who has left full-time employment with the British Army, Royal Air Force or Royal Navy no more than 5 years before the start of the course
 * training to teach secondary biology, chemistry, computing, languages, maths or physics
@@ -42,7 +42,7 @@ Doing an undergraduate degree leading to QTS means that you would be qualified t
 
 You do not need to apply for a bursary to get one. Your teacher training provider will determine if you're eligible.
 
-You’ll receive $bursaries_veteran_installment-amount$ in each of the last 2 years of your course in equal monthly instalments.
+You’ll receive $bursaries_veteran_installment$ in each of the last 2 years of your course in equal monthly instalments.
 
 ## Postgraduate scholarships and bursaries
 
