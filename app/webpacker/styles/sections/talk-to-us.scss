@@ -30,7 +30,7 @@
 
       @include mq($from: tablet) {
         flex-direction: row;
-        padding: 1.5rem 1rem 1rem 1rem;
+        padding: 1.5rem 1rem 1rem;
         background-color: $white;
         gap: 0;
         margin: 0;
