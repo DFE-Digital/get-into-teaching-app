@@ -58,22 +58,22 @@ export default class extends Controller {
 
   handleMenuTab(event) {
     const item = event.target.closest('li');
-    if (item && item.classList.contains('selected')) {
-      const childMenu = this.getTargetItem(item.dataset.childMenuId);
-      const nextItem = childMenu.querySelector('li > .menu-link');
-      const childSyncMenu = this.getTargetItem(item.dataset.childMenuSyncId);
-      const nextSyncItem = childSyncMenu.querySelector('li > .menu-link');
+    if (!item || !item.classList.contains('selected')) return false;
 
-      if (nextItem) {
-        nextItem.focus();
-      }
+    const childMenu = this.getTargetItem(item.dataset.childMenuId);
+    const nextItem = childMenu.querySelector('li > .menu-link');
+    const childSyncMenu = this.getTargetItem(item.dataset.childMenuSyncId);
+    const nextSyncItem = childSyncMenu.querySelector('li > .menu-link');
 
-      if (nextSyncItem) {
-        nextSyncItem.focus();
-      }
-
-      event.preventDefault();
+    if (nextItem) {
+      nextItem.focus();
     }
+
+    if (nextSyncItem) {
+      nextSyncItem.focus();
+    }
+
+    event.preventDefault();
   }
 
   getTarget(id) {
@@ -92,20 +92,20 @@ export default class extends Controller {
     }
   }
 
-  toggleIcon(item, expanded = true) {
+  toggleIcon(item, expand = true) {
     if (!item) return false;
     const icon = item.querySelector('span.nav-icon');
     const linkOrButton = item.querySelector('a, button');
 
     if (!icon || !linkOrButton) return false;
 
-    const currentClass = expanded ? 'nav-icon__contracted' : 'nav-icon__expanded';
-    const newClass = expanded ? 'nav-icon__expanded' : 'nav-icon__contracted';
+    const currentClass = expand ? 'nav-icon__contracted' : 'nav-icon__expanded';
+    const newClass = expand ? 'nav-icon__expanded' : 'nav-icon__contracted';
 
     if (icon.classList.contains(currentClass)) {
       icon.classList.replace(currentClass, newClass);
-      item.classList.toggle('selected', expanded);
-      linkOrButton.ariaExpanded = expanded;
+      item.classList.toggle('selected', expand);
+      linkOrButton.ariaExpanded = expand;
       return true;
     }
 
@@ -120,26 +120,23 @@ export default class extends Controller {
     return this.toggleIcon(item, false);
   }
 
-  toggleMenuVisibility(menu, show = true) {
+  toggleMenuVisibility(menu, shouldHide = true) {
     if (!menu) return false;
 
-    const shouldHide = !show;
     const currentlyHidden = menu.classList.contains('hidden-menu');
 
-    if (currentlyHidden === shouldHide) {
-      menu.classList.toggle('hidden-menu', shouldHide);
-      return true;
-    }
+    if (currentlyHidden === shouldHide) return false;
 
-    return false;
+    menu.classList.toggle('hidden-menu', shouldHide);
+    return true;
   }
 
   showMenu(menu) {
-    return this.toggleMenuVisibility(menu, true);
+    return this.toggleMenuVisibility(menu, false);
   }
 
   hideMenu(menu) {
-    return this.toggleMenuVisibility(menu, false);
+    return this.toggleMenuVisibility(menu, true);
   }
 
   expandSecondaryNavigation() {
@@ -166,28 +163,26 @@ export default class extends Controller {
   }
 
   contractAndHideChildItem(item) {
-    if (item) {
-      const childMenu = this.getTargetItem(item.dataset.childMenuId);
-      const childSyncMenu = this.getTargetItem(item.dataset.childMenuSyncId);
+    if (!item) return;
 
-      this.contractAndHideChildMenu(childMenu);
-      this.contractAndHideChildMenu(childSyncMenu);
-    }
+    const childMenu = this.getTargetItem(item.dataset.childMenuId);
+    const childSyncMenu = this.getTargetItem(item.dataset.childMenuSyncId);
+    this.contractAndHideChildMenu(childMenu);
+    this.contractAndHideChildMenu(childSyncMenu);
   }
 
   contractAndHideChildMenu(menu) {
-    if (menu) {
-      const self = this;
-      self.hideMenu(menu);
+    if (!menu) return;
 
-      [].forEach.call(menu.children, function (childMenuItem) {
-        if (childMenuItem) {
-          // && childMenuItem.dataset && childMenuItem.dataset.childMenuId) {
-          self.toggleIconContracted(childMenuItem);
-          self.contractAndHideChildItem(childMenuItem);
-        }
-      });
-    }
+    const self = this;
+    self.hideMenu(menu);
+
+    [].forEach.call(menu.children, function (childMenuItem) {
+      if (childMenuItem) {
+        self.toggleIconContracted(childMenuItem);
+        self.contractAndHideChildItem(childMenuItem);
+      }
+    });
   }
 
   collapseMenu(menu, item) {
