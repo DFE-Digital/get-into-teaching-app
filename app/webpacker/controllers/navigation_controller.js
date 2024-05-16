@@ -125,26 +125,26 @@ export default class extends Controller {
     }
   }
 
-  showMenu(menu) {
-    if (menu) {
-      if (menu.classList.contains('hidden-menu')) {
-        menu.classList.remove('hidden-menu');
-        return true;
-      } else {
-        return false;
-      }
+  toggleMenuVisibility(menu, show = true) {
+    if (!menu) return false;
+
+    const shouldHide = !show;
+    const currentlyHidden = menu.classList.contains('hidden-menu');
+
+    if (currentlyHidden === shouldHide) {
+      menu.classList.toggle('hidden-menu', shouldHide);
+      return true;
     }
+
+    return false;
+  }
+
+  showMenu(menu) {
+    return this.toggleMenuVisibility(menu, true);
   }
 
   hideMenu(menu) {
-    if (menu) {
-      if (!menu.classList.contains('hidden-menu')) {
-        menu.classList.add('hidden-menu');
-        return true;
-      } else {
-        return false;
-      }
-    }
+    return this.toggleMenuVisibility(menu, false);
   }
 
   expandSecondaryNavigation() {
