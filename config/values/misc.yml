@@ -1,8 +1,8 @@
 misc:
-  ## implemented above this line
   adult-dependants-grant:
     value: £3,438
     income-threshold: £15,621.98
+  ## implemented above this line
   childcare-grant-weekly-payment:
     one-child: £193.62
     two-or-more-children: £331.95
