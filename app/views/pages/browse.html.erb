@@ -1,15 +1,13 @@
-<!-- The <ul> element is dynamically generated -->
-<!-- //NOSONAR -->
 <h1>Menu</h1>
 <% Pages::Navigation.root_pages.each do |resource| %>
   <h3>
     <%= link_to(resource.title, resource.path) %>
-    <% if resource.subcategories? %>
   </h3>
-     <ul>
-        <% resource.subcategories.map do |category| %>
+  <% if resource.subcategories? %>
+    <ul>
+      <% resource.subcategories.map do |category| %>
         <li><%= category %></li>
-        <% end %>
-      </ul>
-    <% end %>
+      <% end %>
+    </ul>
+  <% end %>
 <% end %>
