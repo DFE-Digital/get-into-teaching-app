@@ -32,7 +32,9 @@ export default class extends Controller {
 
     const correspondingItem = this.getTargetItem(item.dataset.correspondingId);
     const childMenu = this.getTargetItem(item.dataset.childMenuId);
-    const correspondingChildMenu = this.getTargetItem(item.dataset.correspondingChildMenuId);
+    const correspondingChildMenu = this.getTargetItem(
+      item.dataset.correspondingChildMenuId,
+    );
     const toggleSecondaryNavigation = item.dataset.toggleSecondaryNavigation;
 
     event.preventDefault();
@@ -62,8 +64,11 @@ export default class extends Controller {
 
     const childMenu = this.getTargetItem(item.dataset.childMenuId);
     const nextItem = childMenu.querySelector('li > .menu-link');
-    const correspondingChildMenu = this.getTargetItem(item.dataset.correspondingChildMenuId);
-    const correspondingNextItem = correspondingChildMenu.querySelector('li > .menu-link');
+    const correspondingChildMenu = this.getTargetItem(
+      item.dataset.correspondingChildMenuId,
+    );
+    const correspondingNextItem =
+      correspondingChildMenu.querySelector('li > .menu-link');
 
     if (nextItem) {
       nextItem.focus();
@@ -152,7 +157,9 @@ export default class extends Controller {
     [].forEach.call(item.closest('ol').children, function (sibling) {
       if (sibling !== item) {
         if (self.toggleIconContracted(sibling)) {
-          const correspondingItem = self.getTargetItem(sibling.dataset.correspondingId);
+          const correspondingItem = self.getTargetItem(
+            sibling.dataset.correspondingId,
+          );
 
           self.toggleIconContracted(correspondingItem);
           self.contractAndHideChildItem(sibling);
@@ -166,7 +173,9 @@ export default class extends Controller {
     if (!item) return;
 
     const childMenu = this.getTargetItem(item.dataset.childMenuId);
-    const correspondingChildMenu = this.getTargetItem(item.dataset.correspondingChildMenuId);
+    const correspondingChildMenu = this.getTargetItem(
+      item.dataset.correspondingChildMenuId,
+    );
     this.contractAndHideChildMenu(childMenu);
     this.contractAndHideChildMenu(correspondingChildMenu);
   }
