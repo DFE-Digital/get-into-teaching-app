@@ -30,26 +30,26 @@ export default class extends Controller {
     const directLink = item.dataset.directLink === 'true';
     if (directLink) return;
 
-    const itemSync = this.getTargetItem(item.dataset.syncId);
+    const correspondingItem = this.getTargetItem(item.dataset.correspondingId);
     const childMenu = this.getTargetItem(item.dataset.childMenuId);
-    const childMenuSync = this.getTargetItem(item.dataset.childMenuSyncId);
+    const correspondingChildMenu = this.getTargetItem(item.dataset.correspondingChildMenuId);
     const toggleSecondaryNavigation = item.dataset.toggleSecondaryNavigation;
 
     event.preventDefault();
     event.stopPropagation();
 
     if (this.toggleIconExpanded(item)) {
-      this.toggleIconExpanded(itemSync);
+      this.toggleIconExpanded(correspondingItem);
       this.showMenu(childMenu);
-      this.showMenu(childMenuSync);
-      this.contractAndHideSiblingMenus(item, itemSync);
+      this.showMenu(correspondingChildMenu);
+      this.contractAndHideSiblingMenus(item, correspondingItem);
       if (toggleSecondaryNavigation) {
         this.expandSecondaryNavigation();
       }
     } else if (this.toggleIconContracted(item)) {
-      this.toggleIconContracted(itemSync);
+      this.toggleIconContracted(correspondingItem);
       this.contractAndHideChildMenu(childMenu);
-      this.contractAndHideChildMenu(childMenuSync);
+      this.contractAndHideChildMenu(correspondingChildMenu);
       if (toggleSecondaryNavigation) {
         this.contractSecondaryNavigation();
       }
@@ -62,15 +62,15 @@ export default class extends Controller {
 
     const childMenu = this.getTargetItem(item.dataset.childMenuId);
     const nextItem = childMenu.querySelector('li > .menu-link');
-    const childSyncMenu = this.getTargetItem(item.dataset.childMenuSyncId);
-    const nextSyncItem = childSyncMenu.querySelector('li > .menu-link');
+    const correspondingChildMenu = this.getTargetItem(item.dataset.correspondingChildMenuId);
+    const correspondingNextItem = correspondingChildMenu.querySelector('li > .menu-link');
 
     if (nextItem) {
       nextItem.focus();
     }
 
-    if (nextSyncItem) {
-      nextSyncItem.focus();
+    if (correspondingNextItem) {
+      correspondingNextItem.focus();
     }
 
     event.preventDefault();
@@ -152,11 +152,11 @@ export default class extends Controller {
     [].forEach.call(item.closest('ol').children, function (sibling) {
       if (sibling !== item) {
         if (self.toggleIconContracted(sibling)) {
-          const syncItem = self.getTargetItem(sibling.dataset.syncId);
+          const correspondingItem = self.getTargetItem(sibling.dataset.correspondingId);
 
-          self.toggleIconContracted(syncItem);
+          self.toggleIconContracted(correspondingItem);
           self.contractAndHideChildItem(sibling);
-          self.contractAndHideChildItem(syncItem);
+          self.contractAndHideChildItem(correspondingItem);
         }
       }
     });
@@ -166,9 +166,9 @@ export default class extends Controller {
     if (!item) return;
 
     const childMenu = this.getTargetItem(item.dataset.childMenuId);
-    const childSyncMenu = this.getTargetItem(item.dataset.childMenuSyncId);
+    const correspondingChildMenu = this.getTargetItem(item.dataset.correspondingChildMenuId);
     this.contractAndHideChildMenu(childMenu);
-    this.contractAndHideChildMenu(childSyncMenu);
+    this.contractAndHideChildMenu(correspondingChildMenu);
   }
 
   contractAndHideChildMenu(menu) {

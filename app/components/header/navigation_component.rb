@@ -20,7 +20,7 @@ module Header
 
   private
 
-    def sync_mode(mode)
+    def corresponding_mode(mode)
       mode == :mobile ? :desktop : :mobile
     end
 
@@ -28,15 +28,15 @@ module Header
       title = resource.title
       path = resource.path
       li_id = "#{path.parameterize}-#{mode}"
-      li_sync_id = "#{path.parameterize}-#{sync_mode(mode)}"
+      corresponding_li_id = "#{path.parameterize}-#{corresponding_mode(mode)}"
       child_menu_id = category_list_id(resource, mode)
-      child_menu_sync_id = category_list_id(resource, sync_mode(mode))
-      child_menu_ids = [child_menu_id, child_menu_sync_id].join(" ")
+      corresponding_child_menu_id = category_list_id(resource, corresponding_mode(mode))
+      child_menu_ids = [child_menu_id, corresponding_child_menu_id].join(" ")
       li_css = ("active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)).to_s
       show_dropdown = resource.children?
       link_css = "menu-link link link--black link--no-underline"
       aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_ids } : {}
-      tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown, action: "keydown.tab->navigation#handleMenuTab" } do
+      tag.li id: li_id, class: li_css, data: { "corresponding-id": corresponding_li_id, "child-menu-id": child_menu_id, "corresponding-child-menu-id": corresponding_child_menu_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown, action: "keydown.tab->navigation#handleMenuTab" } do
         safe_join([
           link_to(path, class: link_css, aria: aria_attributes) do
             safe_join([
@@ -77,14 +77,14 @@ module Header
     def category_link(subcategory, resource, mode)
       title = subcategory
       li_id = "#{resource.path.parameterize}-#{title.parameterize}-#{mode}"
-      li_sync_id = "#{resource.path.parameterize}-#{title.parameterize}-#{sync_mode(mode)}"
+      corresponding_li_id = "#{resource.path.parameterize}-#{title.parameterize}-#{corresponding_mode(mode)}"
       child_menu_id = page_list_id(resource, subcategory, mode)
-      child_menu_sync_id = page_list_id(resource, subcategory, sync_mode(mode))
-      child_menu_ids = [child_menu_id, child_menu_sync_id].join(" ")
+      corresponding_child_menu_id = page_list_id(resource, subcategory, corresponding_mode(mode))
+      child_menu_ids = [child_menu_id, corresponding_child_menu_id].join(" ")
       li_css = ("active" if subcategory == front_matter["subcategory"]).to_s
       link_css = "menu-link link link--black link--no-underline btn-as-link"
       aria_attributes = { expanded: false, controls: child_menu_ids }
-      tag.li id: li_id, class: li_css, data: { "sync-id": li_sync_id, "child-menu-id": child_menu_id, "child-menu-sync-id": child_menu_sync_id, "direct-link": false, action: "keydown.tab->navigation#handleMenuTab" } do
+      tag.li id: li_id, class: li_css, data: { "corresponding-id": corresponding_li_id, "child-menu-id": child_menu_id, "corresponding-child-menu-id": corresponding_child_menu_id, "direct-link": false, action: "keydown.tab->navigation#handleMenuTab" } do
         safe_join(
           [
             tag.button(type: "button", class: link_css, aria: aria_attributes) do
