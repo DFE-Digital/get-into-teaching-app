@@ -25,34 +25,33 @@ export default class extends Controller {
   handleNavMenuClick(event) {
     // fires when the user clicks on a navigation menu item
     const item = event.target.closest('li');
+    if (!item) return;
 
-    if (item) {
-      const directLink = item.dataset.directLink === 'true';
-      const itemSync = this.getTargetItem(item.dataset.syncId);
-      const childMenu = this.getTargetItem(item.dataset.childMenuId);
-      const childMenuSync = this.getTargetItem(item.dataset.childMenuSyncId);
-      const toggleSecondaryNavigation = item.dataset.toggleSecondaryNavigation;
+    const directLink = item.dataset.directLink === 'true';
+    if (directLink) return;
 
-      if (!directLink) {
-        event.preventDefault();
-        event.stopPropagation();
+    const itemSync = this.getTargetItem(item.dataset.syncId);
+    const childMenu = this.getTargetItem(item.dataset.childMenuId);
+    const childMenuSync = this.getTargetItem(item.dataset.childMenuSyncId);
+    const toggleSecondaryNavigation = item.dataset.toggleSecondaryNavigation;
 
-        if (this.toggleIconExpanded(item)) {
-          this.toggleIconExpanded(itemSync);
-          this.showMenu(childMenu);
-          this.showMenu(childMenuSync);
-          this.contractAndHideSiblingMenus(item, itemSync);
-          if (toggleSecondaryNavigation) {
-            this.expandSecondaryNavigation();
-          }
-        } else if (this.toggleIconContracted(item)) {
-          this.toggleIconContracted(itemSync);
-          this.contractAndHideChildMenu(childMenu);
-          this.contractAndHideChildMenu(childMenuSync);
-          if (toggleSecondaryNavigation) {
-            this.contractSecondaryNavigation();
-          }
-        }
+    event.preventDefault();
+    event.stopPropagation();
+
+    if (this.toggleIconExpanded(item)) {
+      this.toggleIconExpanded(itemSync);
+      this.showMenu(childMenu);
+      this.showMenu(childMenuSync);
+      this.contractAndHideSiblingMenus(item, itemSync);
+      if (toggleSecondaryNavigation) {
+        this.expandSecondaryNavigation();
+      }
+    } else if (this.toggleIconContracted(item)) {
+      this.toggleIconContracted(itemSync);
+      this.contractAndHideChildMenu(childMenu);
+      this.contractAndHideChildMenu(childMenuSync);
+      if (toggleSecondaryNavigation) {
+        this.contractSecondaryNavigation();
       }
     }
   }
@@ -78,12 +77,12 @@ export default class extends Controller {
   }
 
   getTarget(id) {
-    if (id) {
-      if (id.endsWith('-desktop')) {
-        return this.desktopTarget;
-      } else if (id.endsWith('-mobile')) {
-        return this.navTarget;
-      }
+    if (!id) return;
+
+    if (id.endsWith('-desktop')) {
+      return this.desktopTarget;
+    } else if (id.endsWith('-mobile')) {
+      return this.navTarget;
     }
   }
 
@@ -93,36 +92,32 @@ export default class extends Controller {
     }
   }
 
-  toggleIconExpanded(item) {
-    if (item) {
-      const icon = item.querySelector('span.nav-icon');
-      if (icon) {
-        if (icon.classList.contains('nav-icon__contracted')) {
-          icon.classList.remove('nav-icon__contracted');
-          icon.classList.add('nav-icon__expanded');
-          item.classList.add('selected');
-          item.querySelector('a,button').ariaExpanded = true;
-          return true;
-        }
-        return false;
-      }
+  toggleIcon(item, expanded = true) {
+    if (!item) return false;
+    const icon = item.querySelector('span.nav-icon');
+    const linkOrButton = item.querySelector('a, button');
+
+    if (!icon || !linkOrButton) return false;
+
+    const currentClass = expanded ? 'nav-icon__contracted' : 'nav-icon__expanded';
+    const newClass = expanded ? 'nav-icon__expanded' : 'nav-icon__contracted';
+
+    if (icon.classList.contains(currentClass)) {
+      icon.classList.replace(currentClass, newClass);
+      item.classList.toggle('selected', expanded);
+      linkOrButton.ariaExpanded = expanded;
+      return true;
     }
+
+    return false;
+  }
+
+  toggleIconExpanded(item) {
+    return this.toggleIcon(item, true);
   }
 
   toggleIconContracted(item) {
-    if (item) {
-      const icon = item.querySelector('span.nav-icon');
-      if (icon) {
-        if (icon.classList.contains('nav-icon__expanded')) {
-          icon.classList.remove('nav-icon__expanded');
-          icon.classList.add('nav-icon__contracted');
-          item.classList.remove('selected');
-          item.querySelector('a,button').ariaExpanded = false;
-          return true;
-        }
-        return false;
-      }
-    }
+    return this.toggleIcon(item, false);
   }
 
   showMenu(menu) {
