@@ -71,13 +71,6 @@
     - "static/images/content/hero-images/0005--mobile.jpg"
     - "static/images/content/hero-images/0005--tablet.jpg"
 
-"static/images/content/hero-images/0006.jpg":
-  # Classroom full of pupils.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0006--mobile.jpg"
-    - "static/images/content/hero-images/0006--tablet.jpg"
-
 "static/images/content/hero-images/0007.jpg":
   # Teacher talking to a pupil in a classroom.
   alt: ""
@@ -142,13 +135,6 @@
     - "static/images/content/hero-images/0015--mobile.jpg"
     - "static/images/content/hero-images/0015--tablet.jpg"
 
-"static/images/content/hero-images/0016.jpg":
-  # Young boy listening in a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0016--mobile.jpg"
-    - "static/images/content/hero-images/0016--tablet.jpg"
-
 "static/images/content/hero-images/0017.jpg":
   # Maths teacher helping a pupil work out a problem.
   alt: ""
@@ -163,33 +149,12 @@
     - "static/images/content/hero-images/0018--mobile.jpg"
     - "static/images/content/hero-images/0018--tablet.jpg"
 
-"static/images/content/hero-images/0019.jpg":
-  # Student in a science lesson.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0019--mobile.jpg"
-    - "static/images/content/hero-images/0019--tablet.jpg"
-
-"static/images/content/hero-images/0020.jpg":
-  # Child standing in a classroom in front of a brightly coloured wall display.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0020--mobile.jpg"
-    - "static/images/content/hero-images/0020--tablet.jpg"
-
 "static/images/content/hero-images/0021.jpg":
   # Maths teacher explaining how to work out the area of a trapezium on a whiteboard.
   alt: ""
   variants:
     - "static/images/content/hero-images/0021--mobile.jpg"
     - "static/images/content/hero-images/0021--tablet.jpg"
-
-"static/images/content/hero-images/0022.jpg":
-  # Pupils listening to a maths teacher at the front of a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0022--mobile.jpg"
-    - "static/images/content/hero-images/0022--tablet.jpg"
 
 "static/images/content/hero-images/0023.jpg":
   # Classroom of smiling primary school children.
@@ -487,17 +452,11 @@
 "static/images/content/homepage/here-to-help.jpg":
   # Back of an adviser's T-shirt saying 'here to help' at a teacher training event.
   alt: ""
-"static/images/content/homepage/science-teacher.jpg":
-  # A chemistry teacher standing in a science classroom in front of a periodic table.
-  alt: ""
 "static/images/content/homepage/teacher-training-adviser.jpg":
   # Teacher training advisers at an event.
   alt: ""
 "static/images/content/homepage/directory1.jpg":
   # A female teacher talks to a student in a classroom.
-  alt: ""
-"static/images/content/homepage/directory2.jpg":
-  # A male teacher stands alone in a classroom looking at the camera.
   alt: ""
 "static/images/content/homepage/directory3.jpg":
   # An adviser talks to someone attending a event.
@@ -562,12 +521,6 @@
   alt: "Zainab Kasmani, English teacher"
 "static/images/content/is-teaching-right-for-me/Physics_MissHayre_4.jpg":
   alt: "Miss Hayre, Physics teacher"
-"static/images/content/is-teaching-right-for-me/collage1.jpg":
-  # Teacher smiling in front of a maths display board.
-  alt: ""
-"static/images/content/is-teaching-right-for-me/collage2.jpg":
-  # Teacher helping a pupil with their work in a classroom.
-  alt: ""
 
 # how much do teachers get paid
 "static/images/content/how-much-do-teachers-get-paid/collage1.jpg":
@@ -575,12 +528,6 @@
   alt: ""
 "static/images/content/how-much-do-teachers-get-paid/collage2.jpg":
   # Maths teacher explaining a problem to a classroom of students using calculators.
-  alt: ""
-"static/images/content/how-much-do-teachers-get-paid/collage3.jpg":
-  # Teacher working alongside another teacher, writing in a notebook.
-  alt: ""
-"static/images/content/how-much-do-teachers-get-paid/collage4.jpg":
-  # Three teachers having a conversation in the staff room.
   alt: ""
 
 # event
