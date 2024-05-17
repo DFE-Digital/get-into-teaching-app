@@ -291,10 +291,7 @@
   alt: "A physics teacher demonstrating how gravity works by juggling balls at the front of the classroom."
   variants:
     - "static/images/content/hero-images/physics_1383-mobile.jpg"
-    - "static/images/content/hero-images/physics_1383-tablet.jpg"    
-
-"static/images/content/ttalianne.jpg":
-  alt: "Lianne, an explore teaching adviser"
+    - "static/images/content/hero-images/physics_1383-tablet.jpg"
 
 # blog
 "static/images/content/blog/abigail-beeley.jpg":
