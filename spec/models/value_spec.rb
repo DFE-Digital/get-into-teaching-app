@@ -24,10 +24,10 @@ describe Value do
       it {
         is_expected.to eql(
           {
-            "data1_example_amount" => "£1,234.56",
-            "data1_example_date" => "01/02/2003",
-            "data2_example_number" => 0.01,
-            "data2_example_string" => "Hello World!",
+            data1_example_amount: "£1,234.56",
+            data1_example_date: "01/02/2003",
+            data2_example_number: 0.01,
+            data2_example_string: "Hello World!",
           },
         )
       }

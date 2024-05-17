@@ -14,7 +14,7 @@ class Value
 private
 
   def load_values(dir_spec)
-    Hash.new.tap do |data|
+    {}.tap do |data|
       Dir[dir_spec].each do |filename|
         data.merge!(flatten_hash(YAML.safe_load_file(filename, symbolize_names: true)))
       end
@@ -23,7 +23,7 @@ private
 
   def flatten_hash(hash)
     # based on https://stackoverflow.com/questions/23521230/flattening-nested-hash-to-a-single-hash-with-ruby-rails
-    hash.each_with_object(Hash.new) do |(k, v), h|
+    hash.each_with_object({}) do |(k, v), h|
       if v.is_a? Hash
         flatten_hash(v).map do |h_k, h_v|
           h["#{k}_#{h_k}".to_sym] = h_v

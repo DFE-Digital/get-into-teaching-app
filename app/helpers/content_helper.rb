@@ -10,7 +10,7 @@ module ContentHelper
   end
 
   def value(key)
-    Value.data[key.to_s]
+    Value.data[key.to_sym]
   end
   alias_method :v, :value
 end
