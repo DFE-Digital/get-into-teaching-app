@@ -14,7 +14,7 @@
     <tr class="govuk-table__row">
       <td class="govuk-table__cell"><%= feedback.created_at.to_formatted_s(:govuk_date) %></td>
       <td class="govuk-table__cell"><%= feedback.topic %></td>
-      <td class="govuk-table__cell"><%= t("helpers.label.teacher_training_adviser_feedback.rating_options.#{feedback.rating}") %></td>
+      <td class="govuk-table__cell"><%= t("helpers.label.teacher_training_adviser_feedback.rating_options.#{feedback.rating}", **Value.data) %></td>
       <td class="govuk-table__cell"><%= feedback.explanation %></td>
     </tr>
     <% end %>
