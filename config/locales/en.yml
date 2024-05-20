@@ -85,7 +85,7 @@ en:
         name: "Art and design"
         group: "Secondary"
         sub_head: "Art and design - Secondary"
-        funding: "Bursaries of %{widget_subject_art-and-design-bursary} are available for trainee art and design teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible). I've also added this line with a value that's already in prod, here is our AO low fee: %{fees_assessment-only-low}."
+        funding: "Bursaries of %{widget_subject_art-and-design-bursary} are available for trainee art and design teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible). I've also added this line with a value that's already in prod, here is our AO low fee: %{fees_assessment-only_low}."
       biology:
         name: "Biology"
         group: "Secondary"
