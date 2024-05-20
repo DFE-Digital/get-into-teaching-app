@@ -54,6 +54,26 @@ module Pages
         navigation.all_pages.select { |page| page.path.start_with?(path) && page.path != path }
       end
 
+      def children?
+        children.any?
+      end
+
+      def children_without_subcategory
+        children.select { |page| page.subcategory.nil? }
+      end
+
+      def children_in_subcategory(subcategory)
+        children.select { |page| page.subcategory == subcategory }
+      end
+
+      def subcategories
+        children.map(&:subcategory).compact.uniq
+      end
+
+      def subcategories?
+        subcategories.any?
+      end
+
       def menu?
         @menu
       end

@@ -10,12 +10,15 @@
   <%= render Header::ExtraNavigationComponent.new(search_input_id: "searchbox__input--desktop") %>
   <%= render Header::LogoComponent.new %>
   <div class="menu-button" id="mobile-navigation-menu-button">
-    <%= tag.button(class: "menu-button__button", id: 'menu-toggle', aria: { expanded: false, controls: 'primary-navigation'}, data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
+    <%= link_to(browse_path, class: "menu-button__button hidden-when-js-enabled") do %>
+      <span class="menu-button__text">Menu</span>
+    <% end %>
+    <%= tag.button(class: "menu-button__button hidden-when-js-disabled", id: 'menu-toggle', aria: { expanded: false, controls: 'primary-navigation'}, data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
       <span class="menu-button__text">Menu</span>
       <span class="menu-button__icon"></span>
     <% end %>
   </div>
-  <%= render Header::NavigationComponent.new %>
+  <%= render Header::NavigationComponent.new(front_matter: front_matter) %>
 </header>
 
 <% if breadcrumbs %>
