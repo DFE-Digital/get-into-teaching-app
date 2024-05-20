@@ -85,7 +85,7 @@ en:
         name: "Art and design"
         group: "Secondary"
         sub_head: "Art and design - Secondary"
-        funding: "Bursaries of %{funding-widget_subject_art-and-design-bursary} are available for trainee art and design teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Bursaries of %{widget_subject_art-and-design-bursary} are available for trainee art and design teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
       biology:
         name: "Biology"
         group: "Secondary"
