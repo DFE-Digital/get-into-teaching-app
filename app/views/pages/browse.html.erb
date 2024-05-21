@@ -1,0 +1,13 @@
+<h1>Menu</h1>
+<% Pages::Navigation.root_pages.each do |resource| %>
+  <h3>
+    <%= link_to(resource.title, resource.path) %>
+  </h3>
+  <% if resource.subcategories? %>
+    <ul>
+      <% resource.subcategories.map do |category| %>
+        <li><%= category %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>

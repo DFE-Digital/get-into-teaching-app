@@ -93,6 +93,20 @@ $chevron-direction-map: (
 }
 /* stylelint-enable */
 
+html.js-enabled {
+  // hide components if javascript is enabled
+  .hidden-when-js-enabled {
+    display: none;
+  }
+}
+
+html:not(.js-enabled) {
+  // hide components if javascript is disabled
+  .hidden-when-js-disabled {
+    display: none;
+  }
+}
+
 // Mixins for targetting specific legacy/quirky/inferior browsers
 
 @mixin safari-only {
