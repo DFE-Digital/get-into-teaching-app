@@ -1,5 +1,5 @@
 fees:
-  assessment-only:
+  assessment__only:
     low: £1,500
     high: £4,000
   iQTS:

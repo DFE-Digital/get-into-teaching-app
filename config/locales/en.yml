@@ -85,7 +85,7 @@ en:
         name: "Art and design"
         group: "Secondary"
         sub_head: "Art and design - Secondary"
-        funding: "Bursaries of %{widget_subject_art_and_design_bursary} are available for trainee art and design teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible). Also inserting another variable as a test, our AO low value: %{fees_assessment_only_low} and one without any hyphens in, our low iQTS fee: %{fees_iQTS_low}."
+        funding: "Bursaries of %{widget_subject_art__and__design__bursary} are available for trainee art and design teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible). Also inserting another variable as a test, our AO low value: %{fees_assessment__only_low} and one without any hyphens in, our low iQTS fee: %{fees_iQTS_low}."
       biology:
         name: "Biology"
         group: "Secondary"
