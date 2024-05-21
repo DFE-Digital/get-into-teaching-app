@@ -96,7 +96,7 @@ module TemplateHandlers
     end
 
     def value(placeholder)
-      Value.data[placeholder.to_sym]
+      Value.get(placeholder)
     end
 
     def front_matter

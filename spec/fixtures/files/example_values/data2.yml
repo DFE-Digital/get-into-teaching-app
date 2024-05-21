@@ -1,6 +1,6 @@
 data2:
   example:
     string: Hello World!
-    value-with-hyphens: 987654321
+    value-with-hyphens: A-value-with-hyphens
 
 data2_example_number: 0.01
