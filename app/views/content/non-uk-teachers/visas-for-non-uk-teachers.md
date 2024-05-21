@@ -55,24 +55,23 @@ keywords:
   - Settlement Scheme
 ---
 
+## How to apply for your visa
 
 If you’re applying for teaching jobs in England as a non-UK citizen, you will need a [visa or immigration status allowing you to work in England](#check-your-status).
 
-## How to apply for your visa
+Most non-UK citizens who don't already have the correct visa or immigration status will need to apply for a Skilled Worker visa to teach in England. 
 
-Most non-UK citizens who don't already have a visa or immigration status allowing them to work in England will need a Skilled Worker visa to teach in England. 
+### To apply for your visa, follow these steps
 
-### To apply for your visa, follow these steps
-
-Step 1: 
+#### Step 1 
 Visit the UK government’s official [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service to search for teaching jobs in the UK. Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas. 
 
-Step 2:
+#### Step 2
 Apply for a teaching job with a school which can sponsor your visa. Your salary must meet the requirements for a Skilled Worker visa. 
 
 [Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
-Step 3:
+#### Step 3
 When you have a confirmed offer of a job, you’ll be able to apply for your [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa).  
 
 You will need to show: 
@@ -88,7 +87,7 @@ The salary you need to get a visa depends on if you're employed as a 'qualified'
 
 Your employing school can explain if the role you're applying for is qualified or unqualified. Qualified roles require more experience or qualifications.
 
-The salary requirement also varies depending on the region you're applying to work in.
+The salary requirement also varies depending on the region you're applying to work in. You can check the region with the school employing you. 
 
 If you are employed as a qualified teacher and work in:
 
@@ -103,8 +102,6 @@ If you are employed as an unqualified teacher and work in:
 * outer London, you must earn at least £24,415
 * London fringe, you must earn at least £23,200
 * the rest of England, you must earn at least £23,200
-
-Check the region you will be working in with the school employing you. 
 
 ### Working part time as a teacher
 
