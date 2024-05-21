@@ -64,13 +64,16 @@ Most non-UK citizens who don't already have a visa or immigration status allowin
 
 ### To apply for your visa, follow these steps
 
+Step 1: 
 Visit the UK government’s official [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service to search for teaching jobs in the UK. Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas. 
 
+Step 2:
 Apply for a teaching job with a school which can sponsor your visa. Your salary must meet the requirements for a Skilled Worker visa. 
 
 [Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
-When you have a confirmed offer of a job, you’ll be able to apply for your [Skilled worker visa](https://www.gov.uk/skilled-worker-visa).  
+Step 3:
+When you have a confirmed offer of a job, you’ll be able to apply for your [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa).  
 
 You will need to show: 
 
@@ -79,9 +82,13 @@ You will need to show:
 * your salary meets the requirement for a Skilled Worker visa
 
 
-### Salary requirement for a skilled worker visa
+### Salary requirement for a Skilled Worker visa
  
-The salary you must be paid to get a visa varies according to whether you are employed as a ‘qualified’ or ‘unqualified’ teacher. This depends on your level of experience and qualifications – your employing school can explain whether the role you are applying for is qualified or unqualified. The salary requirement also varies depending on the region you are applying to work in.
+The salary you need to get a visa depends on if you're employed as a 'qualified' or 'unqualified teacher'.
+
+Your employing school can explain if the role you're applying for is qualified or unqualified. Qualified roles require more experience or qualifications.
+
+The salary requirement also varies depending on the region you're applying to work in.
 
 If you are employed as a qualified teacher and work in:
 
@@ -101,16 +108,16 @@ Check the region you will be working in with the school employing you.
 
 ### Working part time as a teacher
 
-You can work part time, but your salary must meet the threshold for a skilled worker visa. There are 2 requirements:
+You can work part time, but your salary must meet the threshold for a Skilled Worker visa. There are 2 requirements:
 
 * your part-time salary must be at least £23,200
 * the full-time equivalent of your salary must meet the minimum set for your region and status (for qualified and unqualified teachers)
 
-Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary on offer does not meet the skilled worker visa requirements.
+Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary on offer does not meet the Skilled Worker visa requirements.
 
 ### Your partner and children
 
-You may be able to [bring your partner and children with you on a Skilled worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
+You may be able to [bring your partner and children with you on a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
 
 
 ## Check your status
