@@ -28,6 +28,7 @@ describe Value do
             data1_example_date: "01/02/2003",
             data2_example_number: 0.01,
             data2_example_string: "Hello World!",
+            "data2_example_value-with-hyphens": 987654321
           },
         )
       }
