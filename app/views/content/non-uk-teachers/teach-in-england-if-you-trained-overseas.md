@@ -48,7 +48,7 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 * to apply for English 'qualified teacher status', or be able to demonstrate strong non-UK qualifications and experience 
 * a high standard of written and spoken English
 * to pass criminal and professional safeguarding checks (these will be organised by your employer)
-* a visa or immigration status allowing you to work in the UK
+* [a visa or immigration status allowing you to work in the UK](#apply-for-your-visa)
 
 ## Get an international relocation payment (IRP) worth £10,000
 
