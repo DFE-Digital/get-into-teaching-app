@@ -155,19 +155,7 @@ You can prepare for these checks by getting a letter from the organisation which
 
 To teach in England, you will need a visa or immigration status allowing you to work in the UK.
 
-You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them.
-
-[If you're an Irish citizen you do not need a visa](https://www.gov.uk/government/publications/common-travel-area-guidance).
-
-If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa) or [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
-
-#### Already living in the UK?
-
-You may have a pre-existing right to work in the UK, such as settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain in the UK](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk).
-
-#### How to apply
-
- Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](/non-uk-teachers/visas-for-non-uk-teachers).  
+Learn more about [applying for the right visa for your teaching job](/non-uk-teachers/visas-for-non-uk-teachers). 
 
 ## Life as a teacher in England
 
