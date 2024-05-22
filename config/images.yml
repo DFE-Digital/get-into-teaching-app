@@ -1,24 +1,24 @@
 ---
 # hero
 "static/images/content/hero-images/classroom.jpg":
-  # A teacher standing at the front of a classroom teaching maths
-  alt: "A teacher standing at the front of a classroom teaching maths"
+  # A teacher shelping a student
+  alt: ""
   variants:
     - "static/images/content/hero-images/classroom--mobile.jpg"
     - "static/images/content/hero-images/classroom--tablet.jpg"
 
 # hero
-"static/images/content/hero-images/classroom2.jpg":
-  # A teacher standing at the front of a classroom teaching maths
-  alt: "A teacher standing at the front of a classroom teaching maths"
+"static/images/content/hero-images/classroom-2.jpg":
+  # A teacher standing at the back of the classroom helping a student
+  alt: ""
   variants:
-    - "static/images/content/hero-images/classroom2--mobile.jpg"
-    - "static/images/content/hero-images/classroom2--tablet.jpg"
+    - "static/images/content/hero-images/classroom-2--mobile.jpg"
+    - "static/images/content/hero-images/classroom-2--tablet.jpg"
 
 # hero
 "static/images/content/hero-images/maths.jpg":
   # A teacher standing at the front of a classroom teaching maths
-  alt: "A teacher standing at the front of a classroom teaching maths"
+  alt: ""
   variants:
     - "static/images/content/hero-images/maths--mobile.jpg"
     - "static/images/content/hero-images/maths--tablet.jpg"
