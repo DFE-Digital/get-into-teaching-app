@@ -1,5 +1,21 @@
 ---
 # hero
+"static/images/content/hero-images/classroom.jpg":
+  # A teacher standing at the front of a classroom teaching maths
+  alt: "A teacher standing at the front of a classroom teaching maths"
+  variants:
+    - "static/images/content/hero-images/classroom--mobile.jpg"
+    - "static/images/content/hero-images/classroom--tablet.jpg"
+
+# hero
+"static/images/content/hero-images/classroom2.jpg":
+  # A teacher standing at the front of a classroom teaching maths
+  alt: "A teacher standing at the front of a classroom teaching maths"
+  variants:
+    - "static/images/content/hero-images/classroom2--mobile.jpg"
+    - "static/images/content/hero-images/classroom2--tablet.jpg"
+
+# hero
 "static/images/content/hero-images/maths.jpg":
   # A teacher standing at the front of a classroom teaching maths
   alt: "A teacher standing at the front of a classroom teaching maths"
@@ -58,13 +74,6 @@
     - "static/images/content/hero-images/0003--mobile.jpg"
     - "static/images/content/hero-images/0003--tablet.jpg"
 
-"static/images/content/hero-images/0005.jpg":
-  # Teacher helping a pupil with their work in a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0005--mobile.jpg"
-    - "static/images/content/hero-images/0005--tablet.jpg"
-
 "static/images/content/hero-images/0007.jpg":
   # Teacher talking to a pupil in a classroom.
   alt: ""
@@ -85,13 +94,6 @@
   variants:
     - "static/images/content/hero-images/0009--mobile.jpg"
     - "static/images/content/hero-images/0009--tablet.jpg"
-
-"static/images/content/hero-images/0010.jpg":
-  # Child raising their hand in a classroom to answer a question.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0010--mobile.jpg"
-    - "static/images/content/hero-images/0010--tablet.jpg"
 
 "static/images/content/hero-images/0011.jpg":
   # Child pointing something out to a teacher in the classroom.
@@ -114,13 +116,6 @@
     - "static/images/content/hero-images/0013--mobile.jpg"
     - "static/images/content/hero-images/0013--tablet.jpg"
     - "static/images/content/blog/thumbnails/0013.jpg"
-
-"static/images/content/hero-images/0014.jpg":
-  # Geography teacher laughing in a classroom in front of a map display.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0014--mobile.jpg"
-    - "static/images/content/hero-images/0014--tablet.jpg"
 
 "static/images/content/hero-images/0017.jpg":
   # Maths teacher helping a pupil work out a problem.
@@ -156,13 +151,6 @@
   variants:
     - "static/images/content/hero-images/0025--mobile.jpg"
     - "static/images/content/hero-images/0025--tablet.jpg"
-
-"static/images/content/hero-images/0026.jpg":
-  # A teacher talking to pupils in a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0026--mobile.jpg"
-    - "static/images/content/hero-images/0026--tablet.jpg"
 
 "static/images/content/hero-images/0027.jpg":
   # Grow as only a teacher can.
@@ -430,9 +418,6 @@
 "static/images/content/homepage/directory4.jpg":
   # Three teachers laughing and joking.
   alt: ""
-"static/images/content/homepage/directory5.jpg":
-  # A chemistry teacher with two students in a science classroom.
-  alt: ""
 "static/images/content/homepage/directory6.jpg":
   # An English teacher with a student.
   alt: ""
@@ -458,23 +443,11 @@
 "static/images/content/landing/train-to-teach.jpg":
   # A geography teacher laughing with students in a classroom.
   alt: ""
-"static/images/content/landing/train-to-teach-if-you-have-a-degree-1.jpg":
+ "static/images/content/landing/train-to-teach-if-you-have-a-degree-2.jpg":
   # A biology teacher examining leaves with students.
-  alt: ""
-"static/images/content/landing/train-to-teach-if-you-have-a-degree-2.jpg":
-  # A biology teacher examining leaves with students.
-  alt: ""
-"static/images/content/landing/how-to-fund-your-teacher-training-1.jpg":
-  # A chemistry teacher teaching students about chemical reactions.
   alt: ""
 "static/images/content/landing/how-to-fund-your-teacher-training-2.jpg":
   # Students learn about chemical reactions with a chemistry teacher.
-  alt: ""
-"static/images/content/landing/how-to-become-a-teacher-2.jpg":
-  # A teacher looks over students sat around a table.
-  alt: ""
-"static/images/content/landing/how-much-do-teachers-get-paid-1.jpg":
-  # A teacher discusses a topic with two students.
   alt: ""
 
 # is teaching right for me
