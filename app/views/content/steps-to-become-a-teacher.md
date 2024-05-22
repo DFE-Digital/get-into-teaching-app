@@ -36,7 +36,7 @@
         - If you have a degree, you can do postgraduate teacher training. If you do not have a degree, you can do undergraduate teacher training.
     Understand funding:
       id: "step-2"
-      image: "static/images/content/hero-images/0017.jpg"
+      image: "static/images/content/hero-images/maths.jpg"
       directions:
         - Undergraduate and postgraduate teacher training course fees are around £9,250 per year, but there is funding available.
     Consider getting experience:
