@@ -338,7 +338,7 @@ en:
 
 A list of the current values available on the site can be viewed at the `/values` endpoint.
 
-Values should be named using only the characters `A` to `Z`, the numbers `0` to `9`, and the underscore `_` character. Unsupported characters such as the hyphen `-` are converted into underscores.
+Values should be named using only _lowercase_ characters `a` to `z`, the numbers `0` to `9`, and the underscore `_` character. Unsupported characters such as the hyphen `-` are converted into underscores.
 
 ## Creating a Blog Post
 
