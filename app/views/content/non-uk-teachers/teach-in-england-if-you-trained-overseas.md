@@ -97,9 +97,9 @@ In addition, if you have a subject specialism in languages, maths or science and
 * Singapore
 * South Africa
 
- Visit ['Awarding qualified teacher status to overseas teachers'](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) to check the eligibility criteria and apply for QTS in England.  
-
-### Other routes to QTS in England 
+ Visit ['Awarding qualified teacher status to overseas teachers'](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) to check the eligibility criteria and apply for QTS in England.
+ 
+ ### Other routes to QTS in England 
 
 Many teachers will not meet the requirements for QTS. If you’re not eligible, you may be able to [find an alternative route to QTS which better suits your circumstances](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk).
 
