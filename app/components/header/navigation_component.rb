@@ -127,7 +127,7 @@ module Header
       li_css = "view-all #{'active' if uri_is_root?(path)}"
       link_css = "menu-link link link--black"
 
-      tag.li class: li_css, data: { id: id, "direct-link": true } do
+      tag.li class: li_css, data: { id: id, "direct-link": true, action: "keydown.tab->navigation#handleMenuTab" } do
         safe_join([
           link_to(path, class: link_css) do
             tag.span(title, class: "menu-title")

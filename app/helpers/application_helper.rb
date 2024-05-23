@@ -18,7 +18,8 @@ module ApplicationHelper
 
   def main_tag(attributes = {}, &block)
     attributes[:id] = "main-content"
-
+    attributes[:tabindex] = -1
+    attributes[:class] = "#{attributes[:class]} tab-after-nav-menu".strip
     tag.main(**attributes, &block)
   end
 
