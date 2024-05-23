@@ -310,7 +310,7 @@ An example markdown implementation might be:
 The closing date for applications is $dates_example_closing$. It is important to submit your application in good time.
 ```
 
-Values can also be used in ERB templates using `<%= value :value_name %>` (or as a shorthand, `<%= v :value_name %>`). 
+Values can be used in ERB templates using `<%= value :value_name %>` (or as a shorthand, `<%= v :value_name %>`). 
 
 An example ERB implementation might be:
 
@@ -321,7 +321,24 @@ An example ERB implementation might be:
 </p>
 ```
 
+Values can also be utilised in the YAML-based internationalisation (I18n) translation definitions as used in the funding widget. The value should be specified as `%{value_name}`.
+
+An example YAML implementation might be: 
+
+```yaml
+en:
+  funding_widget:
+    subjects:
+      maths:
+        name: "Maths"
+        group: "Secondary"
+        sub_head: "Maths - starting salary: %{salaries_example_min}"
+        funding: "The opening date for applications is %{dates_example_opening} so get ready to apply soon."
+```
+
 A list of the current values available on the site can be viewed at the `/values` endpoint.
+
+Values should be named using only _lowercase_ characters `a` to `z`, the numbers `0` to `9`, and the underscore `_` character. Unsupported characters such as the hyphen `-` are converted into underscores.
 
 ## Creating a Blog Post
 

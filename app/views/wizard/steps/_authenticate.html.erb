@@ -1,11 +1,11 @@
 <%
-  hint_text = t("helpers.hint.wizard_steps_authenticate.timed_one_time_password.text")
+  hint_text = t("helpers.hint.wizard_steps_authenticate.timed_one_time_password.text", **Value.data)
   hint_text += "<br><b>#{t('helpers.hint.wizard_steps_authenticate.timed_one_time_password.resent')}</b>" if params[:verification_resent]
 %>
 
 <%= f.govuk_text_field :timed_one_time_password,
 autocomplete: "off",
-label: { text: t('helpers.label.wizard_steps_authenticate.timed_one_time_password'), class: "govuk-hint" },
+label: { text: t('helpers.label.wizard_steps_authenticate.timed_one_time_password', **Value.data), class: "govuk-hint" },
 hint: { text: safe_html_format(hint_text) } %>
 
 <% content_for(:form_help) do %>
