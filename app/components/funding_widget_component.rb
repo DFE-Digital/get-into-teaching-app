@@ -39,7 +39,7 @@ class FundingWidgetComponent < ViewComponent::Base
 private
 
   def subjects
-    t("funding_widget.subjects")
+    @subjects ||= t("funding_widget.subjects", **{ deep_interpolation: true }.merge(Value.data))
   end
 
   def subject_groups
@@ -51,6 +51,6 @@ private
   end
 
   def subject_data
-    t("funding_widget.subjects")[form.subject.to_sym]
+    subjects[form.subject.to_sym]
   end
 end

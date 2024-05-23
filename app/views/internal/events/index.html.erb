@@ -2,11 +2,11 @@
   <div class="confirmation-panel-container">
     <div class="govuk-panel govuk-panel--confirmation">
       <h1 class="govuk-panel__title">
-        <%= t("internal.status.#{@status}.title") %>
+        <%= t("internal.status.#{@status}.title", **Value.data) %>
       </h1>
       <% if @readable_id %>
         <div class="govuk-panel__body">
-          <%= t("internal.status.#{@status}.body") %>
+          <%= t("internal.status.#{@status}.body", **Value.data) %>
           <strong>
             <%= link_to @readable_id,
                         @status == "published" ? event_path(@readable_id) : internal_event_path(@readable_id) %>

@@ -107,7 +107,7 @@ module EventsHelper
   end
 
   def pluralised_category_name(type_id)
-    t("event_types.#{type_id}.name.plural")
+    t("event_types.#{type_id}.name.plural", **Value.data)
   end
 
   def display_no_git_events_message?(performed_search, events, event_search_type)

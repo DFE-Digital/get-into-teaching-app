@@ -28,7 +28,7 @@ module Events
     end
 
     def type_name
-      t("event_types.#{type}.name.singular")
+      t("event_types.#{type}.name.singular", **Value.data)
     end
 
     def type_color
