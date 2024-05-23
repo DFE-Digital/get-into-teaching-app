@@ -11,7 +11,7 @@ external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-degree
-navigation: 20.25
+navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.
 keywords:

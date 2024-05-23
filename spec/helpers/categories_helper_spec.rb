@@ -6,8 +6,8 @@ describe CategoriesHelper, type: :helper do
   describe "#ungrouped_categories" do
     subject { ungrouped_categories(sample_path) }
 
-    specify "returns only pages with no subcategory" do
-      expect(subject.map(&:subcategory)).to all(be_nil)
+    specify "should not return any pages" do
+      expect(subject).to be_nil
     end
   end
 

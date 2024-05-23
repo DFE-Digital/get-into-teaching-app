@@ -1,6 +1,7 @@
 ---
 title: "Train to teach if you have a degree or are studying for one"
 heading: "Train to teach if you have a degree or are studying for one"
+subcategory: Postgraduate teacher training
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:
