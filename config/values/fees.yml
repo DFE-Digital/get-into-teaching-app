@@ -1,0 +1,18 @@
+fees:
+  assessment-only:
+    low: £1,500
+    high: £4,000
+  iQTS:
+    low: £7,950
+    high: £9,950
+  ## to implement below this line
+  pgitt:
+    domestic-full-time: £9,250
+    domestic-part-time: £6,935
+    international-average: £14,765
+    international-max-full-time: £36,000
+    international-max-part-time: £17,500
+  ugitt: £9,250
+  eyitt: £9,250
+  pgitt-and-ugitt: £9,250
+

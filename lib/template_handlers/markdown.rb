@@ -96,7 +96,7 @@ module TemplateHandlers
     end
 
     def value(placeholder)
-      Value.data[placeholder]
+      Value.get(placeholder)
     end
 
     def front_matter

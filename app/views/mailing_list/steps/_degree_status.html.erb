@@ -10,7 +10,7 @@
   f.object.degree_status_options,
   :id,
   ->(option) { degree_status_text(option) },
-  legend: { tag: 'h1', text: t("helpers.label.mailing_list_steps_degree_status.degree_status_id") } do
+  legend: { tag: 'h1', text: t("helpers.label.mailing_list_steps_degree_status.degree_status_id", **Value.data) } do
 %>
   <p>
     You'll find out how to become a teacher based on your current circumstances.

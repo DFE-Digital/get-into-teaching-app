@@ -74,6 +74,7 @@ Rails.application.routes.draw do
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
   get "/cookies", to: "pages#cookies", as: :cookies
   get "/session-expired", to: "pages#session_expired", as: :session_expired
+  get "/browse", to: "pages#browse", as: :browse
   get "/values", to: "pages#values", as: :values
 
   get "/welcome", to: "pages#welcome", as: :welcome_guide

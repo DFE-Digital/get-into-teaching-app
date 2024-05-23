@@ -51,6 +51,12 @@
   }
 }
 
+ol.primary > li {
+  &:focus {
+    border: dotted red 1px;
+  }
+}
+
 .link--chevron {
   text-decoration: none;
   padding-right: .3em;
