@@ -11,10 +11,10 @@ $govuk-new-typography-scale: false;
 
 // Only import the used parts of the GOV.UK frontend.
 @import "~govuk-frontend/dist/govuk/base";
-@import "~govuk-frontend/dist/govuk/core/all";
-@import "~govuk-frontend/dist/govuk/objects/all";
-@import "~govuk-frontend/dist/govuk/utilities/all";
-@import "~govuk-frontend/dist/govuk/overrides/all";
+@import "~govuk-frontend/dist/govuk/core/index";
+@import "~govuk-frontend/dist/govuk/objects/index";
+@import "~govuk-frontend/dist/govuk/utilities/index";
+@import "~govuk-frontend/dist/govuk/overrides/index";
 @import "~govuk-frontend/dist/govuk/components/back-link/index";
 @import "~govuk-frontend/dist/govuk/components/button/index";
 @import "~govuk-frontend/dist/govuk/components/checkboxes/index";
