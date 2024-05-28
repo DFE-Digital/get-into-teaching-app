@@ -60,25 +60,54 @@ export default class extends Controller {
 
   handleMenuTab(event) {
     const item = event.target.closest('li');
-    if (!item || !item.classList.contains('selected')) return false;
+    if (!item) return false;
 
-    const childMenu = this.getTargetItem(item.dataset.childMenuId);
-    const nextItem = childMenu.querySelector('li > .menu-link');
-    const correspondingChildMenu = this.getTargetItem(
-      item.dataset.correspondingChildMenuId,
-    );
-    const correspondingNextItem =
-      correspondingChildMenu.querySelector('li > .menu-link');
-
-    if (nextItem) {
-      nextItem.focus();
-    }
-
-    if (correspondingNextItem) {
-      correspondingNextItem.focus();
+    const nextItem = this.getNext(item);
+    if (!nextItem) {
+      // When there is no next item set the focus to below the dropdown menu
+      document.querySelector('.tab-after-nav-menu').focus();
+      return false;
     }
 
     event.preventDefault();
+    nextItem.querySelector('.menu-link').focus();
+
+    const correspondingNextItem = this.getTargetItem(
+      nextItem.dataset.correspondingId,
+    );
+    if (!correspondingNextItem) return false;
+    correspondingNextItem.querySelector('.menu-link').focus();
+  }
+
+  getNext(item) {
+    if (!item) return;
+
+    if (item.classList.contains('selected') && item.dataset.childMenuId) {
+      const nextChild = this.getTargetItem(
+        item.dataset.childMenuId,
+      ).querySelector('li');
+      if (nextChild) return nextChild;
+    }
+
+    const nextSibling = item.nextElementSibling;
+    if (nextSibling) return nextSibling;
+
+    // If the current item is from the primary nav list and there is no sibling
+    // return null and let the handler move the focus to below the nav menu
+    const parentList = item.closest('ol');
+    if (parentList.classList.contains('primary')) return;
+
+    const nextCategoryItem = this.desktopTarget.querySelector(
+      'div.category-links > ol > li.selected',
+    )?.nextElementSibling;
+    const nextPrimaryItem =
+      this.primaryTarget.querySelector('li.selected')?.nextElementSibling;
+
+    if (parentList.classList.contains('page-links-list'))
+      return nextCategoryItem || nextPrimaryItem;
+
+    if (parentList.classList.contains('category-links-list'))
+      return nextPrimaryItem;
   }
 
   getTarget(id) {
