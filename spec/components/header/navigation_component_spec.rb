@@ -63,7 +63,7 @@ describe Header::NavigationComponent, type: "component" do
     end
 
     it "renders a view all link" do
-      expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[data-id='menu-view-all-page-five-desktop'] > a")
+      expect(page).to have_css("#secondary-navigation > div.category-links > ol.category-links-list > li[id='menu-view-all-page-five-desktop'] > a")
     end
 
     it "renders uncategorised links" do
@@ -84,7 +84,7 @@ describe Header::NavigationComponent, type: "component" do
     end
 
     it "renders a view all link" do
-      expect(page).to have_css("#primary-navigation > ol.primary > li[id='page-five-mobile'] > ol.category-links-list > li[data-id='menu-view-all-page-five-mobile'] > a")
+      expect(page).to have_css("#primary-navigation > ol.primary > li[id='page-five-mobile'] > ol.category-links-list > li[id='menu-view-all-page-five-mobile'] > a")
     end
 
     it "renders uncategorised links" do
