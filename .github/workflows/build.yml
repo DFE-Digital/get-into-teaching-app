@@ -59,7 +59,7 @@ jobs:
              echo "DOCKER_IMAGE_TEST=${{ env.DOCKER_REPOSITORY }}:base-sha-${{steps.sha.outputs.short }}" >> $GITHUB_OUTPUT
 
       - name: Login to Docker registry
-        uses: docker/login-action@v3.1.0
+        uses: docker/login-action@v3.2.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
@@ -144,7 +144,7 @@ jobs:
              echo "DOCKER_IMAGE=${{ env.DOCKER_REPOSITORY }}:sha-${{steps.sha.outputs.short }}" >> $GITHUB_OUTPUT
 
       - name: Login to Docker registry
-        uses: docker/login-action@v3.1.0
+        uses: docker/login-action@v3.2.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
