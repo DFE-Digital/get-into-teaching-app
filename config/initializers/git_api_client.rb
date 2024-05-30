@@ -1,3 +1,5 @@
+require "uri_checker"
+
 GetIntoTeachingApiClient.configure do |config|
   config.api_key["apiKey"] = ENV["GIT_API_TOKEN"].presence
 
@@ -11,7 +13,7 @@ GetIntoTeachingApiClient.configure do |config|
     config.host = parsed.port == 443 ? parsed.hostname : "#{parsed.hostname}:#{parsed.port}"
 
     # if using a local API for dev, don't verify self-certified ssl certs
-    if Rails.env.development? && parsed.hostname == "localhost" && parsed.scheme == "https"
+    if Rails.env.development? && URIChecker.new(parsed).local_https?
       config.ssl_verify = false
     end
 
