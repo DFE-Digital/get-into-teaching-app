@@ -7,7 +7,18 @@ GetIntoTeachingApiClient.configure do |config|
   if endpoint
     parsed = URI.parse(endpoint)
 
-    config.host = parsed.hostname
+    # if using a non-standard port, include it as part of the host setting
+    config.host = if parsed.port != 443
+                    "#{parsed.hostname}:#{parsed.port}"
+                  else
+                    parsed.hostname
+                  end
+
+    # if using a local API for dev, don't verify self-certified ssl certs
+    if Rails.env.development? && parsed.hostname == "localhost" && parsed.scheme == "https"
+      config.ssl_verify = false
+    end
+
     config.base_path = parsed.path.gsub(%r{\A/api}, "")
   end
 
