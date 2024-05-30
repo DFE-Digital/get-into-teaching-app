@@ -8,11 +8,7 @@ GetIntoTeachingApiClient.configure do |config|
     parsed = URI.parse(endpoint)
 
     # if using a non-standard port, include it as part of the host setting
-    config.host = if parsed.port != 443
-                    "#{parsed.hostname}:#{parsed.port}"
-                  else
-                    parsed.hostname
-                  end
+    config.host = parsed.port == 443 ? parsed.hostname : "#{parsed.hostname}:#{parsed.port}"
 
     # if using a local API for dev, don't verify self-certified ssl certs
     if Rails.env.development? && parsed.hostname == "localhost" && parsed.scheme == "https"
