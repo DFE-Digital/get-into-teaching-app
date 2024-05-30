@@ -12,7 +12,7 @@
 ### Running the app with a local api
 
 * Build the [get-into-teaching-api](https://github.com/DFE-Digital/get-into-teaching-api) following the documentation in that project. Configure it use a dev CRM instance and docker-based Redis and Postgresql database
-* Run the api on https://localhost:5001/api
+* Run the API on https://localhost:5001/api
 * Run the app using env vars to point to the local api:
 ```bash
 GIT_API_ENDPOINT=https://localhost:5001/api  \
