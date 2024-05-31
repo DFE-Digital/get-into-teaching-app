@@ -48,12 +48,9 @@ export default class extends Controller {
       if (toggleSecondaryNavigation) {
         this.expandSecondaryNavigation();
       }
-
-      console.log('Expanding menu', item.id);
-      gtag('event', 'expand_menu', {
-        menuItemId: item.id
+      window.gtag('event', 'expand_menu', {
+        menuItemId: item.id,
       });
-
     } else if (this.toggleIconContracted(item)) {
       this.toggleIconContracted(correspondingItem);
       this.contractAndHideChildMenu(childMenu);
@@ -61,10 +58,8 @@ export default class extends Controller {
       if (toggleSecondaryNavigation) {
         this.contractSecondaryNavigation();
       }
-
-      console.log('Contracting menu', item.id);
-      gtag('event', 'contract_menu', {
-        menuItemId: item.id
+      window.gtag('event', 'contract_menu', {
+        menuItemId: item.id,
       });
     }
   }
