@@ -9,17 +9,6 @@
 * Run `bundle exec rails server` to launch the app on http://localhost:3000
 * Run `./bin/shakapacker-dev-server` in a separate shell for faster compilation of assets
 
-### Running the app with a local api
-
-* Build the [get-into-teaching-api](https://github.com/DFE-Digital/get-into-teaching-api) following the documentation in that project. Configure it use a dev CRM instance and docker-based Redis and Postgresql database
-* Run the API on https://localhost:5001/api
-* Run the app using env vars to point to the local API:
-```bash
-GIT_API_ENDPOINT=https://localhost:5001/api  \
- GIT_API_TOKEN=secret-git  \
- bundle exec rails server
-```
-
 ## Running the test suites
 
 You need to have the correct version of `chromedriver` installed for the version of Chrome you are running.
