@@ -60,40 +60,22 @@ keywords:
 ---
 
 
+Citizens of every country in the world can apply to train to teach in England.
 
-Citizens of every country in the world can apply to train to teach in England. When you plan your training, bear in mind that:
+When you have successfully completed your training, you will be awarded English [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
 
-- international candidates can expect to pay an average of £14,765 to train, plus
-living costs
+QTS will allow you to apply for teaching jobs in all schools in England.   
+
+When you plan your training, bear in mind that:
+
+- international candidates can expect to pay an average of about £15,000 to train, plus living costs
 - depending on your immigration status and the subject you train to teach, you may get some financial support
 - training lasts one academic year full-time, or longer part-time
 - you can apply for paid teaching jobs as soon as you successfully complete your training and gain English qualified teacher status (QTS)
 - you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher 
 - you can update, extend or switch your visa to live and work in the UK long-term
 
-## Already a qualified teacher?
-
-If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
-
-## Why train to teach in England?
-
-Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way.
-
-When you have successfully completed your training, you will be awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
-
-QTS will allow you to apply for teaching jobs in all schools in England.    
-
-[Read teachers' stories about the rewards of training to teach in England](/blog).
-
-## Other ways to train
-
-You can also apply to [train to teach in Wales](https://educators.wales/home), [train to teach in Scotland](https://teachinscotland.scot/) or [train to teach in Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
-
-If you don’t want to come to England to study you can apply to train for international qualified teacher status (iQTS). This meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and, if successfully completed, leads to the automatic award of QTS.
-
-For teachers who qualified outside the UK, as well as those with teaching experience, [other routes to qualified teacher status (QTS)](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) are also open.
-
-## Check your qualifications and get help
+## Step 1: check your qualifications
 
 Before you apply, you must [check your qualifications](/non-uk-teachers/non-uk-qualifications). If you gained your qualifications outside the UK, we can help you check they meet the required standard in England. 
 
@@ -103,67 +85,50 @@ We're available Monday to Friday between 8:30am and 5:30pm (UK local time) excep
 
 When you speak to us, we can also tell you if you're eligible for a [teacher training adviser](/teacher-training-advisers). 
 
-## Find out about fees and financial support
+## Step 2: find out about fees and financial support
 
 Teacher training fees for non-UK candidates vary between training providers.
 
 Fees cost:
 
-* an average of £14,765
+* an average of about £15,000
 * a maximum of about £36,000
 
 You’ll also have to cover your living costs.
 
 If you're planning on training to teach languages or physics, you could be eligible for a bursary or scholarship worth up to £30,000. 
 
-If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
+[Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
-## Find and apply for teacher training courses
+## Step 3: find and apply for teacher training courses
 
 If you’re applying for teacher training as a non-UK citizen, the process is different to that for UK citizens.
 
-Read our tips to increase your chances of success.
+[Read our tips to increase your chances of success](/tips-on-applying-for-teacher-training-as-a-non-UK-citizen).
 
-## Apply for your visa
+## Step 4: apply for your visa
 
 To train to teach in England, you will need a visa or immigration status allowing you to study (or work, for salaried courses) in the UK. 
 
+You can apply for your visa once you have a confirmed offer of a training place. 
+
 [Learn more about applying for the right visa for your teacher training course](/non-uk-teachers/visas-for-non-uk-trainees).
 
-## Plan your move to the UK
+## Step 5: plan your move to the UK
 
-Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) for advice about immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
-
-Your teacher training provider may also be able to help you plan your move to the UK  – contact them directly to ask.
+For help with your move, [read our tips on relocation](to come)
 
 
-## Complete your teacher training and gain qualified teacher status (QTS)
+## Step 6: complete your teacher training and gain qualified teacher status (QTS)
 
-If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
+If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/what-is-qts).
 
 
-## Apply for your first teaching job
+## Step 7: apply for your first teaching job
 
-When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England.
+When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England. 
 
-To find a teaching job, you must apply to individual schools (not the Department for Education). Use the [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service to search for jobs by region, subject specialism and age group.
-
-You may need to apply for a different visa to work in England as a qualified teacher. Our [guidance for non-UK nationals wishing to teach in England](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk) explains the skilled worker visa and covers other ways you can update, extend or switch your visa when you finish your training.
-
-<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#job">Learn more about your first teaching job in England</a>.
-
-## Understand English education
-
-Learn more about:
-
-- [types of English school](https://www.gov.uk/types-of-school)
-- [curriculum and qualifications](https://www.gov.uk/national-curriculum)
-- [behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
-- [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
-- [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/guidance-for-teachers) – a charity gathering international evidence on teaching 5 to 16 year olds
-- [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
-- [join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
-- [read interviews with real teachers](/blog)
+[How to apply for your first teaching job](to come).
 
 ## Contact
 
