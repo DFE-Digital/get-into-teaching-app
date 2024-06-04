@@ -48,6 +48,9 @@ export default class extends Controller {
       if (toggleSecondaryNavigation) {
         this.expandSecondaryNavigation();
       }
+      window.gtag('event', 'expand_menu', {
+        menuItemId: item.id,
+      });
     } else if (this.toggleIconContracted(item)) {
       this.toggleIconContracted(correspondingItem);
       this.contractAndHideChildMenu(childMenu);
@@ -55,6 +58,9 @@ export default class extends Controller {
       if (toggleSecondaryNavigation) {
         this.contractSecondaryNavigation();
       }
+      window.gtag('event', 'contract_menu', {
+        menuItemId: item.id,
+      });
     }
   }
 
