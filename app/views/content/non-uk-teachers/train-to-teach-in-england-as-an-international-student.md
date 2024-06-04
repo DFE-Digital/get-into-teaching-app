@@ -116,7 +116,7 @@ You can apply for your visa once you have a confirmed offer of a training place.
 
 ## Step 5: plan your move to the UK
 
-For help with your move, [read our tips on relocation](/plan-your-move-to-the-UK)
+For help with your move, [read our tips on relocation](/plan-your-move-to-the-UK).
 
 
 ## Step 6: complete your teacher training and gain qualified teacher status (QTS)
