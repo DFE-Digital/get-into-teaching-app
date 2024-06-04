@@ -152,7 +152,7 @@ end
 
 group :test do
   gem "rspec-retry"
-  gem "selenium-webdriver", "~> 3.142"
+  gem "selenium-webdriver", "~> 4.21.1"
   gem "shoulda-matchers"
   gem "vcr"
   gem "webmock", ">= 3.14.0"
