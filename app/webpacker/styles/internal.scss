@@ -11,7 +11,7 @@ $govuk-include-default-font-face: false;
 $govuk-font-url-function: frontend-font-url;
 $govuk-image-url-function: frontend-image-url;
 
-@import "~govuk-frontend/dist/govuk/all";
+@import "~govuk-frontend/dist/govuk/index";
 @import "~trix";
 @import "~flatpickr";
 @import "colours";

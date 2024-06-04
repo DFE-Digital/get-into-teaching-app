@@ -36,9 +36,9 @@ module Header
       show_dropdown = resource.children?
       link_css = "menu-link link link--black link--no-underline"
       aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_ids } : {}
-      tag.li id: li_id, class: li_css, data: { "corresponding-id": corresponding_li_id, "child-menu-id": child_menu_id, "corresponding-child-menu-id": corresponding_child_menu_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown, action: "keydown.tab->navigation#handleMenuTab" } do
+      tag.li id: li_id, class: li_css, data: { "corresponding-id": corresponding_li_id, "child-menu-id": child_menu_id, "corresponding-child-menu-id": corresponding_child_menu_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown } do
         safe_join([
-          link_to(path, class: link_css, aria: aria_attributes) do
+          link_to(path, class: link_css, aria: aria_attributes, data: { action: "keydown.enter->navigation#handleNavMenuClick keydown.tab->navigation#handleMenuTab" }) do
             safe_join([
               tag.span(title, class: "menu-title"),
               contracted_icon(visible: show_dropdown),
@@ -84,10 +84,10 @@ module Header
       li_css = ("active" if subcategory == front_matter["subcategory"]).to_s
       link_css = "menu-link link link--black link--no-underline btn-as-link"
       aria_attributes = { expanded: false, controls: child_menu_ids }
-      tag.li id: li_id, class: li_css, data: { "corresponding-id": corresponding_li_id, "child-menu-id": child_menu_id, "corresponding-child-menu-id": corresponding_child_menu_id, "direct-link": false, action: "keydown.tab->navigation#handleMenuTab" } do
+      tag.li id: li_id, class: li_css, data: { "corresponding-id": corresponding_li_id, "child-menu-id": child_menu_id, "corresponding-child-menu-id": corresponding_child_menu_id, "direct-link": false } do
         safe_join(
           [
-            tag.button(type: "button", class: link_css, aria: aria_attributes) do
+            tag.button(type: "button", class: link_css, aria: aria_attributes, data: { action: "keydown.enter->navigation#handleNavMenuClick keydown.tab->navigation#handleMenuTab" }) do
               safe_join(
                 [
                   tag.span(title, class: "menu-title"),
@@ -123,13 +123,14 @@ module Header
     def view_all_link(resource, mode)
       title = "View all in #{resource.title}"
       path = resource.path
-      id = "menu-view-all-#{path.parameterize}-#{mode}"
+      li_id = "menu-view-all-#{path.parameterize}-#{mode}"
+      corresponding_li_id = "menu-view-all-#{path.parameterize}-#{corresponding_mode(mode)}"
       li_css = "view-all #{'active' if uri_is_root?(path)}"
       link_css = "menu-link link link--black"
 
-      tag.li class: li_css, data: { id: id, "direct-link": true } do
+      tag.li class: li_css, id: li_id, data: { "corresponding-id": corresponding_li_id, "direct-link": true } do
         safe_join([
-          link_to(path, class: link_css) do
+          link_to(path, class: link_css, data: { action: "keydown.enter->navigation#handleNavMenuClick keydown.tab->navigation#handleMenuTab" }) do
             tag.span(title, class: "menu-title")
           end,
         ])

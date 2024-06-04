@@ -1,6 +1,7 @@
 ---
 title: "How to get into teaching without a degree"
 heading: "Train to teach if you do not have a degree"
+subcategory: Other routes into teaching
 description: |-
   Explore how you can get into teaching without a degree by taking an undergraduate course to gain qualified teacher status (QTS) alongside a degree.
 related_content:
@@ -11,7 +12,7 @@ external_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-no-degree
-navigation: 20.20
+navigation: 20.30
 navigation_title: If you do not have a degree
 navigation_description: You need a degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about undergraduate degree courses.
 ---
@@ -42,6 +43,4 @@ Qualifications vary depending on the course. For example, you could get QTS with
 ## Teacher degree apprenticeships (TDAs)
 If you do not have a degree you may be eligible to apply for a TDA. This new course will allow you work in a school and earn a salary while getting a bachelor's degree and QTS. So you will not have to pay tuition fees. 
 
-Applications for both primary and secondary are expected to open in autumn 2024, with training due to start in autumn 2025. 
-
-<a href="https://educationhub.blog.gov.uk/2024/02/04/teacher-degree-apprenticeships-how-they-work-and-when-to-apply/">Find out more about teacher degree apprenticeships (TDAs)</a>.
+Find out more about [teacher degree apprenticeships (TDAs)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
