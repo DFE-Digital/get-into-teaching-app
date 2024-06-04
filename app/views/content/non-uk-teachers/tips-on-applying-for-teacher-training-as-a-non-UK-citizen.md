@@ -9,8 +9,8 @@ related_content:
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 navigation: 20.30
-navigation_title: How to apply for teacher training in England if you're a non-UK citizen
-navigation_description: Improve your chances of success with our guide to applying.
+navigation_title: Tips on applying for teacher training in England as a non-UK citizen
+navigation_description: Improve your chances of success with our guide to teacher training application.
 date: "2021-05-27"
 image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"
@@ -36,13 +36,9 @@ keywords:
   
 ---
 
-Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. 
-
-Teacher training leads to [English qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), a professional qualification valued globally. 
-
-QTS will allow you to apply for teaching jobs in all schools in England.  
-
 If you’re applying for teacher training as a non-UK citizen, the process is different to that for UK citizens. 
+
+Read our tips and guidance to increase your chances of success. 
 
 ## Check you can afford to train to teach 
 
@@ -50,19 +46,19 @@ Fees are higher for non-UK citizens and you’re unlikely to get financial suppo
 
 ## Get school experience 
 
-Consider getting unpaid experience in a school. This will help you understand if teaching is right for you and get an insight into teaching. You can also write about what you learn in your [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement?).  
+Consider getting experience in a school. This will help you understand if teaching is right for you and give you an insight into teaching. You can also write about what you learn in your [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement?).  
 
-If you’re in the UK, you can find out about services to help you get [unpaid work experience in schools](/is-teaching-right-for-me/get-school-experience?).  
+If you’re in the UK, you can get help finding [unpaid work experience in schools](/is-teaching-right-for-me/get-school-experience?).  
 
-If you’re outside the UK, you could contact local schools to ask about work experience opportunities.  
- 
-## Apply for teacher training before you apply for your visa
+If you’re outside the UK, you could contact local schools to ask about work experience opportunities.
 
-Before you apply for your visa, you must have a confirmed training offer of a training place from a training provider who can sponsor visas before you apply for your visa. 
+## Apply for teacher training before you apply for your visa
 
-If you have settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families?), or [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk?), you can apply to any English teacher training provider. 
+Before you apply for your visa, you must have a confirmed offer of a training place from a provider who can sponsor visas. 
 
-## Apply for teacher training as early as you can 
+If you have settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families?) or [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk?), you can apply to any English teacher training provider. 
+
+## Apply to train as early as you can 
 
 For your teacher training place offer to be confirmed, you’ll have to pass criminal record checks, so we recommend applying early. You can apply for teacher training from October, for courses starting the following year in September or January. 
 
@@ -118,7 +114,9 @@ You can also search courses by:
 
 * courses which pay a salary 
 
-## Do your research before you apply 
+## How to increase your chance of success 
+
+### Do your research before you apply 
 
 You can read up on: 
 
@@ -139,16 +137,6 @@ You can read up on:
  
 Email your chosen provider to check they can sponsor you, then apply for your teacher training course. 
 
-## How to increase your chance of success 
-
- 
-### Get help 
-
-You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your application to a training provider or school. 
-
-To check if you’re eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page. 
-
-We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England. 
 
 ### Check your qualifications 
 
@@ -179,7 +167,13 @@ You can learn more by:
 
 * [reading interviews with real teachers](https://getintoteaching.education.gov.uk/blog) 
 
- 
+## Get help 
+
+You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your application to a training provider or school. 
+
+To check if you’re eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page. 
+
+We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England. 
 
 ## Find and apply for teacher training 
 
