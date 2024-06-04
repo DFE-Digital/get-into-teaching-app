@@ -37,6 +37,16 @@ export default class extends Controller {
     );
     const toggleSecondaryNavigation = item.dataset.toggleSecondaryNavigation;
 
+    const containerClassList = item.closest('ol').classList;
+    let menuLevel;
+    if (containerClassList.contains('primary')) {
+      menuLevel = 1;
+    } else if (containerClassList.contains('category-links-list')) {
+      menuLevel = 2;
+    } else if (containerClassList.contains('page-links-list')) {
+      menuLevel = 3;
+    }
+
     event.preventDefault();
     event.stopPropagation();
 
@@ -50,6 +60,7 @@ export default class extends Controller {
       }
       window.gtag('event', 'expand_menu', {
         menuItemId: item.id,
+        menuLevel: menuLevel,
       });
     } else if (this.toggleIconContracted(item)) {
       this.toggleIconContracted(correspondingItem);
@@ -60,6 +71,7 @@ export default class extends Controller {
       }
       window.gtag('event', 'contract_menu', {
         menuItemId: item.id,
+        menuLevel: menuLevel,
       });
     }
   }
