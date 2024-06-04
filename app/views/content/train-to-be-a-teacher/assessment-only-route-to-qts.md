@@ -170,7 +170,7 @@ provider_groups:
       email: qtsao@lsbu.ac.uk
     - header: Middlesex University
       telephone: 020 8411 5555
-      email: enquiries@mdx.ac.uk
+      email: AO@mdx.ac.uk
     - header: St Mary’s University
       link: https://www.stmarys.ac.uk/education-theology-and-leadership/assessment-only-qts.htm
       name: Elizabeth Jackson
