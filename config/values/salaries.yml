@@ -45,7 +45,7 @@ salaries:
     outerlondonmax: £35,954
     innerlondonmin: £25,831
     innerlondonmax: £37,362
-  TLR:
+  tlr:
     salarywithtlr: £43k
     maximumvalue: £15,000
   skilledworkervisaminimumsalaryft:
