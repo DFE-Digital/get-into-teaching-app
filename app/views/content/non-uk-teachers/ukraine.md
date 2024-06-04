@@ -11,7 +11,7 @@ navigation: 20.70
 navigation_title: Ukrainian teachers and trainees coming to the UK
 navigation_description: Find information and advice for Ukrainian citizens seeking training places and teaching jobs in England.
 date: "2022-06-24"
-image: "static/images/content/hero-images/0003.jpg"
+image: "static/images/content/hero-images/0032.jpg"
 backlink: "../../"
 keywords:
   - International

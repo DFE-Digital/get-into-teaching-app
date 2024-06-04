@@ -1,5 +1,54 @@
 ---
-# hero
+# hero images
+"static/images/content/hero-images/teacher.jpg":
+  # A teacher talking to students
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/teacher--mobile.jpg"
+    - "static/images/content/hero-images/teacher--tablet.jpg"
+
+"static/images/content/hero-images/teacher2.jpg":
+  # A teacher listening to students
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/teacher2--mobile.jpg"
+    - "static/images/content/hero-images/teacher2--tablet.jpg"
+
+"static/images/content/hero-images/teacher3.jpg":
+  # A teacher laughing with students
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/teacher3--mobile.jpg"
+    - "static/images/content/hero-images/teacher3--tablet.jpg"
+
+"static/images/content/hero-images/english.jpg":
+  # A teacher in an english lesson
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/english--mobile.jpg"
+    - "static/images/content/hero-images/english--tablet.jpg"  
+
+"static/images/content/hero-images/classroom.jpg":
+  # A teacher helping a student
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/classroom--mobile.jpg"
+    - "static/images/content/hero-images/classroom--tablet.jpg"
+
+"static/images/content/hero-images/classroom-2.jpg":
+  # A teacher standing at the back of the classroom helping a student
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/classroom-2--mobile.jpg"
+    - "static/images/content/hero-images/classroom-2--tablet.jpg"
+
+"static/images/content/hero-images/maths.jpg":
+  # A teacher standing at the front of a classroom teaching maths
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/maths--mobile.jpg"
+    - "static/images/content/hero-images/maths--tablet.jpg"
+
 "static/images/content/hero-images/chemistry.jpg":
   # A teacher with two students doing a science experiment
   alt: ""
@@ -7,7 +56,34 @@
     - "static/images/content/hero-images/chemistry--mobile.jpg"
     - "static/images/content/hero-images/chemistry--tablet.jpg"
 
-# hero
+"static/images/content/hero-images/chemistry2.jpg":
+  # A teacher with students during a science lesson
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/chemistry2--mobile.jpg"
+    - "static/images/content/hero-images/chemistry2--tablet.jpg"
+
+"static/images/content/hero-images/physics.jpg":
+  # A teacher showing children a physics demonstration
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/physics--mobile.jpg"
+    - "static/images/content/hero-images/physics--tablet.jpg"
+
+"static/images/content/hero-images/geography.jpg":
+  # A teacher showing children a map in a geography lesson
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/geography--mobile.jpg"
+    - "static/images/content/hero-images/geography--tablet.jpg"
+
+"static/images/content/hero-images/geography2.jpg":
+  # A teacher interacting with children in a geography lesson
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/geography2--mobile.jpg"
+    - "static/images/content/hero-images/geography2--tablet.jpg"
+
 "static/images/content/hero-images/science.jpg":
   # A teacher with two students doing a science experiment
   alt: ""

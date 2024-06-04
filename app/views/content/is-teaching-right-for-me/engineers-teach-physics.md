@@ -5,7 +5,7 @@ description: |-
 
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/hero-images/0013.jpg"
+image: "static/images/content/hero-images/0032.jpg"
 keywords:
   - engineers
   - material scientists
