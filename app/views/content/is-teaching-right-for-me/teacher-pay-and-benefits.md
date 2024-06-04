@@ -58,7 +58,7 @@ The pay ranges below apply to maintained schools (schools funded by local author
 
 Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges.
 
-Figures apply from $salaries_date_applies-from$.
+Figures apply from $salaries_date_appliesfrom$.
 
 ## Primary and secondary teacher salary
 
@@ -103,10 +103,10 @@ What this will involve will depend on your school, but could include:
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| England (excluding London)     | $salaries_leading-practitioner_england-min$ | $salaries_leading-practitioner_england-max$ |
-| London fringe                            | $salaries_leading-practitioner_london-fringe-min$ | $salaries_leading-practitioner_london-fringe-max$ |
-| Outer London                             | $salaries_leading-practitioner_outer-london-min$ | $salaries_leading-practitioner_outer-london-max$ |
-| Inner London                             | $salaries_leading-practitioner_inner-london-min$ | $salaries_leading-practitioner_inner-london-max$ |
+| England (excluding London)     | $salaries_leadingpractitioner_englandmin$ | $salaries_leadingpractitioner_englandmax$ |
+| London fringe                            | $salaries_leadingpractitioner_londonfringemin$ | $salaries_leadingpractitioner_londonfringemax$ |
+| Outer London                             | $salaries_leadingpractitioner_outerlondonmin$ | $salaries_leadingpractitioner_outerlondonmax$ |
+| Inner London                             | $salaries_leadingpractitioner_innerlondonmin$ | $salaries_leadingpractitioner_innerlondonmax$ |
 
 ### Headteacher salary
 

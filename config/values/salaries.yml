@@ -1,63 +1,63 @@
-salaries_date_applies-from: 1 September 2023
+salaries_date_appliesfrom: 1 September 2023
 salaries:
-  leading-practitioner:
-    england-min: £47,417
-    england-max: £72,085
-    london-fringe-min: £48,723
-    london-fringe-max: £73,393
-    outer-london-min: £51,179
-    outer-london-max: £75,850
-    inner-london-min: £56,377
-    inner-london-max: £81,051
+  leadingpractitioner:
+    englandmin: £47,417
+    englandmax: £72,085
+    londonfringemin: £48,723
+    londonfringemax: £73,393
+    outerlondonmin: £51,179
+    outerlondonmax: £75,850
+    innerlondonmin: £56,377
+    innerlondonmax: £81,051
 ## implemented above line
   starting:
     min: £30,000
     max: £41,000
-    min-shortened: £30k
-    max-shortened: £41k
-    max-within-5-years: £41,333
-  qualified-teacher:
-    england-min: £30,000
-    england-max: £46,525
-    london-fringe-min: £31,350
-    london-fringe-max: £47,839
-    outer-london-min: £34,514
-    outer-london-max: £51,179
-    inner-london-min: £36,745
-    inner-london-max: £56,959
+    minshortened: £30k
+    maxshortened: £41k
+    maxwithin5years: £41,333
+  qualifiedteacher:
+    englandmin: £30,000
+    englandmax: £46,525
+    londonfringemin: £31,350
+    londonfringemax: £47,839
+    outerlondonmin: £34,514
+    outerlondonmax: £51,179
+    innerlondonmin: £36,745
+    innerlondonmax: £56,959
   headteacher:
-    min-shortened: £53k
-    max-shortened: £139k
-    england-min: £53,380
-    england-max: £131,056
-    london-fringe-min: £54,685
-    london-fringe-max: £132,352
-    outer-london-min: £57,124
-    outer-london-max: £134,765
-    inner-london-min: £62,304
-    inner-london-max: £139,891
-  unqualified-teacher:
-    england-min: £20,598
-    england-max: £32,134
-    london-fringe-min: £21,933
-    london-fringe-max: £33,464
-    outer-london-min: £24,415
-    outer-london-max: £35,954
-    inner-london-min: £25,831
-    inner-london-max: £37,362
+    minshortened: £53k
+    maxshortened: £139k
+    englandmin: £53,380
+    englandmax: £131,056
+    londonfringemin: £54,685
+    londonfringemax: £132,352
+    outerlondonmin: £57,124
+    outerlondonmax: £134,765
+    innerlondonmin: £62,304
+    innerlondonmax: £139,891
+  unqualifiedteacher:
+    englandmin: £20,598
+    englandmax: £32,134
+    londonfringemin: £21,933
+    londonfringemax: £33,464
+    outerlondonmin: £24,415
+    outerlondonmax: £35,954
+    innerlondonmin: £25,831
+    innerlondonmax: £37,362
   TLR:
-    salary-with-tlr: £43k
-    maximum-value: £15,000
-  skilled-worker-visa-minimum-salary-full-time-training:
-    inner-london: £25,831
-    outer-london: £24,415
-    london-fringe: £23,200
-    rest-of-england: £23,200
-  skilled-worker-visa-minimum-salary-part-time-training:
-    rest-of-england: £23,200
-  skiller-worker-visa-minimum-qualified-teacher:
-    inner-london: £36,745
-    outer-london: £34,514
-    london-fringe: £31,350
-    rest-of-england: £30,000
+    salarywithtlr: £43k
+    maximumvalue: £15,000
+  skilledworkervisaminimumsalaryft:
+    innerlondon: £25,831
+    outerlondon: £24,415
+    londonfringe: £23,200
+    restofengland: £23,200
+  skilledworkervisaminimumsalarypt:
+    restofengland: £23,200
+  skillerworkervisaminimumqualifiedteacher:
+    innerlondon: £36,745
+    outerlondon: £34,514
+    londonfringe: £31,350
+    restofengland: £30,000
 salaries_average_shortened: £40k
