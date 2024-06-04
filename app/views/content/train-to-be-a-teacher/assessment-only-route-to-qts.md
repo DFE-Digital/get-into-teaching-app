@@ -534,7 +534,7 @@ The assessment programme takes up to 12 weeks.
 
 ## How much does assessment only QTS cost?
 
-Fees range from about $fees_assessment-only_low$ to $fees_assessment-only_high$, but vary between provider so it’s best to check with them for more information.
+Fees range from about $fees_assessmentonly_low$ to $fees_assessmentonly_high$, but vary between provider so it’s best to check with them for more information.
 
 Fees may be paid by you or your school at the start of the programme. If you’re currently working in a school, talk to your employer about your funding options.
 
