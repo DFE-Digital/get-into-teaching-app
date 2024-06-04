@@ -140,10 +140,10 @@ Email your chosen provider to check they can sponsor you, then apply for your te
 
 ### Check your qualifications 
 
-Make sure you have the right qualifications and apply for a [statement of comparability](/non-uk-teachers/non-uk-qualifications) proving your school and university qualifications are the same standard as UK GCSEs and a UK bachelor’s degree. 
+Make sure you have the right qualifications and apply for a [statement of comparability](/non-uk-teachers/non-uk-qualifications) proving your school and university qualifications are the same standard as UK GCSEs and a UK bachelor’s degree.
 
- 
-### Research English education 
+
+### Research English education 
 
 Even if you’ve never spent time in an English school, teacher training providers will want to know you’re familiar with: 
 
