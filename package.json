@@ -8,8 +8,7 @@
     "@babel/runtime": "7",
     "@fortawesome/fontawesome-free": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "@sentry/browser": "^7.50.0",
-    "@sentry/tracing": "^7.99.0",
+    "@sentry/browser": "^8.7.0",
     "accessible-autocomplete": "^3.0.0",
     "babel-loader": "9",
     "babel-plugin-macros": "^3.1.0",
@@ -32,7 +31,7 @@
     "sass": "^1.69.7",
     "sass-loader": "^13.2.2",
     "sass-mq": "^5.0.1",
-    "semver": "7.5.4",
+    "semver": "7.6.2",
     "shakapacker": "7.2.1",
     "sinon": "^17.0.1",
     "stimulus": "^3.1",
@@ -44,9 +43,6 @@
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "^4.11.1",
     "webpack-merge": "5"
-  },
-  "overrides": {
-    "semver": "7.5.3"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.5",
@@ -62,7 +58,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "postcss": "8",
     "prettier": "^3.2.5",
-    "semver": "7.5.4",
+    "semver": "7.6.2",
     "stylelint": "^16.3.1",
     "stylelint-config-gds": "^2.0.0"
   },
