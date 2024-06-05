@@ -133,41 +133,6 @@
     - "static/images/content/hero-images/0003--mobile.jpg"
     - "static/images/content/hero-images/0003--tablet.jpg"
 
-"static/images/content/hero-images/0004.jpg":
-  # Maths teacher explaining a problem to a classroom of students using calculators.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0004--mobile.jpg"
-    - "static/images/content/hero-images/0004--tablet.jpg"
-
-"static/images/content/hero-images/0005.jpg":
-  # Teacher helping a pupil with their work in a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0005--mobile.jpg"
-    - "static/images/content/hero-images/0005--tablet.jpg"
-
-"static/images/content/hero-images/0006.jpg":
-  # Classroom full of pupils.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0006--mobile.jpg"
-    - "static/images/content/hero-images/0006--tablet.jpg"
-
-"static/images/content/hero-images/0007.jpg":
-  # Teacher talking to a pupil in a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0007--mobile.jpg"
-    - "static/images/content/hero-images/0007--tablet.jpg"
-
-"static/images/content/hero-images/0008.jpg":
-  # Teacher helping a child with their reading.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0008--mobile.jpg"
-    - "static/images/content/hero-images/0008--tablet.jpg"
-
 "static/images/content/hero-images/0009.jpg":
   # Teacher smiling in front of a maths display board.
   alt: ""
@@ -204,26 +169,12 @@
     - "static/images/content/hero-images/0013--tablet.jpg"
     - "static/images/content/blog/thumbnails/0013.jpg"
 
-"static/images/content/hero-images/0014.jpg":
-  # Geography teacher laughing in a classroom in front of a map display.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0014--mobile.jpg"
-    - "static/images/content/hero-images/0014--tablet.jpg"
-
 "static/images/content/hero-images/0015.jpg":
   # Teacher working alongside another teacher, writing in a notebook.
   alt: ""
   variants:
     - "static/images/content/hero-images/0015--mobile.jpg"
     - "static/images/content/hero-images/0015--tablet.jpg"
-
-"static/images/content/hero-images/0016.jpg":
-  # Young boy listening in a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0016--mobile.jpg"
-    - "static/images/content/hero-images/0016--tablet.jpg"
 
 "static/images/content/hero-images/0017.jpg":
   # Maths teacher helping a pupil work out a problem.
@@ -239,40 +190,12 @@
     - "static/images/content/hero-images/0018--mobile.jpg"
     - "static/images/content/hero-images/0018--tablet.jpg"
 
-"static/images/content/hero-images/0019.jpg":
-  # Student in a science lesson.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0019--mobile.jpg"
-    - "static/images/content/hero-images/0019--tablet.jpg"
-
-"static/images/content/hero-images/0020.jpg":
-  # Child standing in a classroom in front of a brightly coloured wall display.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0020--mobile.jpg"
-    - "static/images/content/hero-images/0020--tablet.jpg"
-
 "static/images/content/hero-images/0021.jpg":
   # Maths teacher explaining how to work out the area of a trapezium on a whiteboard.
   alt: ""
   variants:
     - "static/images/content/hero-images/0021--mobile.jpg"
     - "static/images/content/hero-images/0021--tablet.jpg"
-
-"static/images/content/hero-images/0022.jpg":
-  # Pupils listening to a maths teacher at the front of a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0022--mobile.jpg"
-    - "static/images/content/hero-images/0022--tablet.jpg"
-
-"static/images/content/hero-images/0023.jpg":
-  # Classroom of smiling primary school children.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0023--mobile.jpg"
-    - "static/images/content/hero-images/0023--tablet.jpg"
 
 "static/images/content/hero-images/0024.jpg":
   # Maths teacher and pupil discussing a problem in a classroom.
@@ -287,13 +210,6 @@
   variants:
     - "static/images/content/hero-images/0025--mobile.jpg"
     - "static/images/content/hero-images/0025--tablet.jpg"
-
-"static/images/content/hero-images/0026.jpg":
-  # A teacher talking to pupils in a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0026--mobile.jpg"
-    - "static/images/content/hero-images/0026--tablet.jpg"
 
 "static/images/content/hero-images/0027.jpg":
   # Grow as only a teacher can.
@@ -442,12 +358,6 @@
   variants:
     - "static/images/content/blog/thumbnails/olivia.jpg"
 
-"static/images/content/blog/pupil-chatting-to-teacher-in-classroom.jpg":
-  # Languages teacher talking to a student in front of a whiteboard with Spanish phrases written on it.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/pupil-chatting-to-teacher-in-classroom.jpg"
-
 "static/images/content/blog/right_provider.jpg":
   alt: ""
   variants:
@@ -470,12 +380,6 @@
   alt: ""
   variants:
     - "static/images/content/blog/thumbnails/seminar-room.jpg"
-
-"static/images/content/blog/staff-room.jpg":
-  # Teacher in a staff room talking to two colleagues sat on a sofa.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/staff-room.jpg"
 
 "static/images/content/blog/get-into-teaching.jpg":
   # A busy Get Into Teaching event with attendees having conversations with Teacher Training Advisers.
@@ -569,12 +473,6 @@
 "static/images/content/homepage/teacher-training-adviser.jpg":
   # Teacher training advisers at an event.
   alt: ""
-"static/images/content/homepage/directory1.jpg":
-  # A female teacher talks to a student in a classroom.
-  alt: ""
-"static/images/content/homepage/directory2.jpg":
-  # A male teacher stands alone in a classroom looking at the camera.
-  alt: ""
 "static/images/content/homepage/directory3.jpg":
   # An adviser talks to someone attending a event.
   alt: ""
@@ -609,26 +507,14 @@
 "static/images/content/landing/train-to-teach.jpg":
   # A geography teacher laughing with students in a classroom.
   alt: ""
-"static/images/content/landing/train-to-teach-if-you-have-a-degree-1.jpg":
-  # A biology teacher examining leaves with students.
-  alt: ""
 "static/images/content/landing/train-to-teach-if-you-have-a-degree-2.jpg":
   # A biology teacher examining leaves with students.
-  alt: ""
-"static/images/content/landing/how-to-fund-your-teacher-training-1.jpg":
-  # A chemistry teacher teaching students about chemical reactions.
   alt: ""
 "static/images/content/landing/how-to-fund-your-teacher-training-2.jpg":
   # Students learn about chemical reactions with a chemistry teacher.
   alt: ""
-"static/images/content/landing/how-to-become-a-teacher-1.jpg":
-  # Three teachers walking down a corridor.
-  alt: ""
 "static/images/content/landing/how-to-become-a-teacher-2.jpg":
   # A teacher looks over students sat around a table.
-  alt: ""
-"static/images/content/landing/how-much-do-teachers-get-paid-1.jpg":
-  # A teacher discusses a topic with two students.
   alt: ""
 
 # is teaching right for me
@@ -651,12 +537,6 @@
   alt: ""
 "static/images/content/how-much-do-teachers-get-paid/collage2.jpg":
   # Maths teacher explaining a problem to a classroom of students using calculators.
-  alt: ""
-"static/images/content/how-much-do-teachers-get-paid/collage3.jpg":
-  # Teacher working alongside another teacher, writing in a notebook.
-  alt: ""
-"static/images/content/how-much-do-teachers-get-paid/collage4.jpg":
-  # Three teachers having a conversation in the staff room.
   alt: ""
 
 # event
