@@ -267,9 +267,9 @@ provider_groups:
     - header: Astra School Centred Initial Teacher Training / Dr Challoner's Grammar
         School
       link: https://www.astra-alliance.com/285/the-assessment-only-route
-      name: Stephanie Rodgers
+      name: Andrew Millar
       telephone: '01494 787573'
-      email: sro@challoners.org
+      email: hello@astra-alliance.com
     - header: Boleyn Trust
       link: https://www.londondistricteast.org/scitt
       email: elascitt@tollgate.boleyntrust.org
