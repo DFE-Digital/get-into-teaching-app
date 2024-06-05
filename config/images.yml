@@ -183,13 +183,6 @@
     - "static/images/content/hero-images/0018--mobile.jpg"
     - "static/images/content/hero-images/0018--tablet.jpg"
 
-"static/images/content/hero-images/0024.jpg":
-  # Maths teacher and pupil discussing a problem in a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0024--mobile.jpg"
-    - "static/images/content/hero-images/0024--tablet.jpg"
-
 "static/images/content/hero-images/0025.jpg":
   # A teacher training provider talking to an attendee at a teacher training event.
   alt: ""
