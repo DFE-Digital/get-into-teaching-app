@@ -2,7 +2,7 @@ bursaries:
   skeweekly: £175
   veteran:
     total: £40,000
-    instalment: £20,000
+    annual: £20,000
 ## implemented above this line
   postgraduate:
     artanddesign: £10,000

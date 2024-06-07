@@ -42,7 +42,7 @@ Doing an undergraduate degree leading to QTS means that you would be qualified t
 
 You do not need to apply for a bursary to get one. Your teacher training provider will determine if you're eligible.
 
-You’ll receive $bursaries_veteran_instalment$ in each of the last 2 years of your course in equal monthly instalments.
+You’ll receive $bursaries_veteran_annual$ in each of the last 2 years of your course in equal monthly instalments.
 
 ## Postgraduate scholarships and bursaries
 
