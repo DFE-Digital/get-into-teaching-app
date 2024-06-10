@@ -54,9 +54,10 @@ If you’re outside the UK, you could contact local schools to ask about work ex
 
 ## Apply for teacher training before you apply for your visa
 
-Before you apply for your visa, you must have a confirmed offer of a training place from a provider who can sponsor visas. 
+If you’re a non-UK citizen, you will need a [visa or immigration status giving you the right to study or work in the UK](/non-uk-teachers/visas-for-non-uk-trainees). 
 
-If you have settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families?) or [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk?), you can apply to any English teacher training provider. 
+If you don’t already have the right to study or work in the UK, before you apply for your visa, you must have a confirmed offer of a training place from a provider who can sponsor visas. 
+
 
 ## Apply to train as early as you can 
 
@@ -68,8 +69,7 @@ You can prepare by:
 
 * [getting your references ready](/how-to-apply-for-teacher-training/teacher-training-references)  
 
-Once your training place is confirmed, you can apply for your visa up to 6 months before the start of your course.  
-
+  
 ## Ways to train 
 
 You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years).  
@@ -90,7 +90,7 @@ A [subject knowledge enhancement course](/how-to-apply-for-teacher-training/subj
 
 ## Choosing an age group to teach 
 
-Education in English is divided into: 
+Schools in England are divided into: 
 
 * [primary (ages 5 to 11)](/is-teaching-right-for-me/who-do-you-want-to-teach/#primary-ages-5-to-11) 
 
