@@ -36,7 +36,7 @@ keywords:
   
 ---
 
-If you’re applying for teacher training as a non-UK citizen, the process is different to that for UK citizens. 
+If you’re applying for teacher training as a non-UK citizen, the process may be different to that for UK citizens. 
 
 Read our tips and guidance to increase your chances of success. 
 
@@ -48,7 +48,7 @@ Fees are higher for non-UK citizens and you’re unlikely to get financial suppo
 
 Consider getting experience in a school. This will help you understand if teaching is right for you and give you an insight into teaching. You can also write about what you learn in your [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement?).  
 
-If you’re in the UK, you can get help finding [unpaid work experience in schools](/is-teaching-right-for-me/get-school-experience?).  
+If you’re in the UK and your visa allows it, you can get help finding [unpaid work experience in schools](/is-teaching-right-for-me/get-school-experience?).  
 
 If you’re outside the UK, you could contact local schools to ask about work experience opportunities.
 

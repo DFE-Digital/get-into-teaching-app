@@ -64,7 +64,7 @@ Citizens of every country in the world can apply to train to teach in England.
 
 When you have successfully completed your training, you will be awarded English [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
 
-QTS will allow you to apply for teaching jobs in all schools in England.   
+QTS will allow you to apply for teaching jobs in all schools in England. Depending on your immigration status, you may also need to apply for a visa allowing you to work in the UK.   
 
 When you plan your training, bear in mind that:
 
@@ -101,7 +101,7 @@ If you're planning on training to teach languages or physics, you could be eligi
 
 If you’re applying for teacher training as a non-UK citizen, the process may be different to that for UK citizens.
 
-Learn more and [read our tips on making an application to increase your chances of success](/tips-on-applying-for-teacher-training-as-a-non-uk-citizen).
+Learn more and [read our tips on making an application to increase your chances of success](/tips-on-applying-for-teacher-training-as-a-non-UK-citizen).
 
 ## Step 4: apply for your visa
 
@@ -113,7 +113,7 @@ You can apply for your visa once you have a confirmed offer of a training place.
 
 ## Step 5: plan your move to the UK
 
-For help with your move, [read our tips on relocation](/plan-your-move-to-the-uk).
+For help with your move, [read our tips on relocation](/plan-your-move-to-the-UK).
 
 
 ## Step 6: complete your teacher training and gain qualified teacher status (QTS)
