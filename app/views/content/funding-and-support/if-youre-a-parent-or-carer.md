@@ -85,7 +85,7 @@ To be eligible, you need to:
 
 ## If you’re a carer
 
-You could be eligible for an Adult Dependants’ Grant of up to $misc_adultdependantsgrant_value$, depending on:
+You could be eligible for an Adult Dependants’ Grant of up to $finance_adultdependantsgrant_value$, depending on:
 
 * your household income
 * the adult dependant’s income
@@ -98,6 +98,6 @@ To be eligible, you need to:
 
 * be a full-time student in higher education
 * have an adult depend on you financially
-* have a household income of less than $misc_adultdependantsgrant_incomethreshold$
+* have a household income of less than $finance_adultdependantsgrant_incomethreshold$
 
 [Find out more about the Adult Dependants’ Grants and how to apply](https://www.gov.uk/adult-dependants-grant).
