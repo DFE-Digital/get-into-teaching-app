@@ -51,7 +51,6 @@ module TemplateHandlers
       autolink_html render_markdown
     end
 
-
     def markdown
       # use $1 rather than a block argument here because gsub assigns the
       # entire placeholder to the arg (including dollar symbols) but we only
