@@ -1,0 +1,19 @@
+finance:
+  adultdependantsgrant:
+    value: £3,438
+    incomethreshold: £15,621.98
+  ## implemented above this line
+  childcaregrantweeklypayment:
+    onechild: £193.62
+    twoormorechildren: £331.95
+  disabilityadditionalfunding: £26,948
+  maintenanceloanpaymentvalue:
+    liveathomewithparents: £8,610
+    awayfromparentsoutsidelondon: £10,227
+    awayfromparentsinsidelondon: £13,348
+    oversixty: £4,327
+  parentslearningallowance:
+    lowpayment: £50
+    maxpayment: £1,963
+    incomethreshold: £18,835.98
+  statementofcomparabilitycost: £49.50 plus VAT
