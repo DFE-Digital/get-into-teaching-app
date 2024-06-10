@@ -104,7 +104,7 @@ If you're planning on training to teach languages or physics, you could be eligi
 
 If you’re applying for teacher training as a non-UK citizen, the process is different to that for UK citizens.
 
-[Read our tips to increase your chances of success](/tips-on-applying-for-teacher-training-as-a-non-UK-citizen).
+[Read our tips to increase your chances of success](/tips-on-applying-for-teacher-training-as-a-non-uk-citizen).
 
 ## Step 4: apply for your visa
 
@@ -116,7 +116,7 @@ You can apply for your visa once you have a confirmed offer of a training place.
 
 ## Step 5: plan your move to the UK
 
-For help with your move, [read our tips on relocation](/plan-your-move-to-the-UK).
+For help with your move, [read our tips on relocation](/plan-your-move-to-the-uk).
 
 
 ## Step 6: complete your teacher training and gain qualified teacher status (QTS)
