@@ -1,0 +1,11 @@
+## implemented above this line
+scholarships:
+  chemistry: £30,000
+  computing: £30,000
+  languagesfrenchgermanspanish: £27,000
+  maths: £30,000
+  physics: £30,000
+  generic:
+    max: £30,000
+    maxshortened: £30k
+  nonuk: £30,000
