@@ -177,7 +177,7 @@ en:
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
         funding: |-
-          Scholarships of %{scholarships_languages} are available for trainee French, German, and Spanish language teachers.
+          Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers.
 
           Bursaries of £25,000 are available for all trainee language teachers, including ancient languages.
 
