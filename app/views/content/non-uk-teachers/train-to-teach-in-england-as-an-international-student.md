@@ -4,8 +4,8 @@ subcategory: If you want to train to teach
 description: |-
   Find out how to train to teach in England as a student from outside the UK. Get help and guidance on your qualifications, funding and visa.
 related_content:
-    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
-    Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
+    Gain the equivalent of English QTS, from outside the UK : "/non-uk-teachers/international-qualified-teacher-status"
+    Teach in England if you trained outside the UK : "/teach-in-england-if-you-trained-overseas"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
 navigation: 20.10
 navigation_title: Train to teach in England as a non-UK citizen
@@ -73,7 +73,7 @@ When you plan your training, bear in mind that:
 - training lasts one academic year full-time, or longer part-time
 - you can apply for paid teaching jobs as soon as you successfully complete your training and gain English qualified teacher status (QTS)
 - you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher 
-- you can update, extend or switch your visa to live and work in the UK long-term
+- you may need to extend or switch your visa to live and work in the UK long-term
 
 ## Step 1: check your qualifications
 
@@ -89,10 +89,7 @@ When you speak to us, we can also tell you if you're eligible for a [teacher tra
 
 Teacher training fees for non-UK candidates vary between training providers.
 
-Fees cost:
-
-* an average of about £15,000
-* a maximum of about £36,000
+Fees cost an average of £15,000, with some over £30,000.
 
 You’ll also have to cover your living costs.
 
@@ -102,9 +99,9 @@ If you're planning on training to teach languages or physics, you could be eligi
 
 ## Step 3: find and apply for teacher training courses
 
-If you’re applying for teacher training as a non-UK citizen, the process is different to that for UK citizens.
+If you’re applying for teacher training as a non-UK citizen, the process may be different to that for UK citizens.
 
-[Read our tips to increase your chances of success](/tips-on-applying-for-teacher-training-as-a-non-uk-citizen).
+Learn more and [read our tips on making an application to increase your chances of success](/tips-on-applying-for-teacher-training-as-a-non-uk-citizen).
 
 ## Step 4: apply for your visa
 
@@ -126,7 +123,7 @@ If you’re accepted on to a teacher training course in England, you’ll train 
 
 ## Step 7: apply for your first teaching job
 
-When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England. 
+When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England. Depending on your immigration status, you may also need to apply for a visa allowing you to work in the UK. 
 
 [How to apply for your first teaching job](to come).
 
