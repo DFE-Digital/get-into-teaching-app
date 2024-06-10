@@ -125,7 +125,7 @@ If you’re accepted on to a teacher training course in England, you’ll train 
 
 When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England. Depending on your immigration status, you may also need to apply for a visa allowing you to work in the UK. 
 
-[How to apply for your first teaching job](to come).
+[How to apply for your first teaching job](/non-uk-teachers/find-a-teaching-job-as-a-non-uk-citizen).
 
 ## Contact
 
