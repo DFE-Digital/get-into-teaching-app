@@ -23,7 +23,7 @@ inset_text:
 
       <h3>Changes to eligibility and payment</h3>
 
-      <p>Trainees in languages or physics who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees starting courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to %{scholarships_nonuk}.</p>
+      <p>Trainees in languages or physics who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees starting courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk$.</p>
 
       <p>Payments to teachers applying from September 2024 will now be split into two £5,000 payments rather than given as a single £10,000 sum. Teachers can apply for the first payment at the start of their first year of employment and the second payment at the start of their second year of employment.</p>
 
