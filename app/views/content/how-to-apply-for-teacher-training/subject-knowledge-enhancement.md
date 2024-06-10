@@ -42,7 +42,7 @@ This could be because you have (one or more of the following):
 
 ## How to do an SKE course
 
-If your training provider thinks you need to improve your subject knowledge then they might decide that you'll benefit from an SKE course. 
+If your training provider thinks you need to improve your subject knowledge then they might decide that you'll benefit from an SKE course.
 
 You can only complete a funded SKE course if your training provider makes it a condition of the offer to train with them.
 
@@ -65,10 +65,10 @@ Learn more about how a subject knowledge enhancement course can help prepare you
 $ske-course-video$
 
  [Read the transcript for the 'Subject knowledge enhancement explained' video](/how-to-apply-for-teacher-training/ske-explained-transcript).
- 
+
 ## How SKE courses work
 
-They're usually online, but some courses can be classroom based and some can be a mixture of both. 
+They're usually online, but some courses can be classroom based and some can be a mixture of both.
 
 Course lengths range from 8 to 28 weeks and are 25 hours per week. Your provider will decide which course length you need based on your gap in knowledge. Different providers may offer different course lengths.
 
@@ -76,11 +76,11 @@ You can do a part-time course and complete it over a longer period or complete i
 
 ## When to complete your course
 
-You should complete your course before starting your teacher training. If you run out of time, your provider may allow you to continue your course at the same time as your teacher training. But if you get an SKE bursary, your payments will stop once your teacher training starts. 
+You should complete your course before starting your teacher training. If you run out of time, your provider may allow you to continue your course at the same time as your teacher training. But if you get an SKE bursary, your payments will stop once your teacher training starts.
 
 ## Get an SKE bursary
 
-If you start your teacher training course between September 2023 and July 2024, you could be eligible for a bursary of £175 per week to complete your SKE course. 
+If you start your teacher training course between September 2023 and July 2024, you could be eligible for a bursary of $bursaries_skeweekly$ per week to complete your SKE course.
 
 If you do a part-time course and complete less than 25 hours a week, this will be paid in proportion to your course hours.
 
