@@ -1,5 +1,5 @@
 ---
-title: "Tips on applying for teacher training in England as a non-UK citizen"
+title: "How to apply for teacher training in England as a non-UK citizen"
 subcategory: If you want to train to teach
 description: |-
   Learn more about choosing a course and increasing your chances of success.
@@ -9,7 +9,7 @@ related_content:
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 navigation: 20.50
-navigation_title: Tips on applying for teacher training in England as a non-UK citizen
+navigation_title: How to apply for teacher training in England as a non-UK citizen
 navigation_description: Improve your chances of success with our guide to teacher training application.
 date: "2021-05-27"
 image: "static/images/content/hero-images/0002.jpg"
@@ -54,10 +54,11 @@ If you’re outside the UK, you could contact local schools to ask about work ex
 
 ## Apply for teacher training before you apply for your visa
 
-If you’re a non-UK citizen, you will need a [visa or immigration status giving you the right to study or work in the UK](/non-uk-teachers/visas-for-non-uk-trainees). 
+If you’re a non-UK citizen, you will need a visa or immigration status giving you the right to study or work in the UK. 
 
 If you don’t already have the right to study or work in the UK, before you apply for your visa, you must have a confirmed offer of a training place from a provider who can sponsor visas. 
 
+[Learn more about applying for your visa](/non-uk-teachers/visas-for-non-uk-trainees).
 
 ## Apply to train as early as you can 
 
@@ -78,7 +79,7 @@ Teacher training courses can also be:
 
 * ‘fee-paying’ – you [pay a fee to study](/funding-and-support/tuition-fees) 
 
-* ‘salaried’– you are [paid to work in a school while you study](/funding-and-support/salaried-teacher-training) 
+* ‘salaried’– you are [paid to work in a school while you study](/funding-and-support/salaried-teacher-training)
 
 ### Postgraduate teaching apprenticeships
 
@@ -94,9 +95,9 @@ If you do not have settled or pre-settled status under the EU Settlement Scheme,
 * you must apply for a visa or immigration status allowing you to work in the UK
 * you must have been living in the UK for 3 or more years before the start of your apprenticeship
 
-If you are resident in the UK, you may already have a visa or immigration status allowing you to work – for example, a graduate visa. If you need to apply for another visa – for example, a Skilled Worker visa – you’ll need to do this after you’ve been given a place on a postgraduate teaching apprenticeship.
+If you are resident in the UK, you may already have a visa or immigration status allowing you to work – for example, a Graduate visa. 
 
-Find postgraduate teacher training courses lists fee-paying and salaried training courses, including postgraduate teaching apprenticeships, leading to qualified teacher status.
+If you need to apply for another visa – for example, a Skilled Worker visa – you’ll need to do this after you’ve been given a place on a postgraduate teaching apprenticeship.
 
 ### If you don't have a degree
 
@@ -134,7 +135,7 @@ You can also search courses by:
 
 * courses which pay a salary 
 
-## How to increase your chance of success 
+## How to increase your chance of success
 
 ### Do your research before you apply 
 
@@ -197,7 +198,7 @@ We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) exc
 
 ## Find and apply for teacher training 
 
-Use [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) to find and apply for a teacher training course. It lists fee-paying and salaried training courses leading to qualified teacher status.  
+Use [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) to find and apply for a teacher training course. It lists fee-paying and salaried training courses, including postgraduate teaching apprenticeships leading to qualified teacher status.  
 
  
 

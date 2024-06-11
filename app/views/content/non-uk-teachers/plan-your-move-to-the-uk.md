@@ -33,9 +33,7 @@ keywords:
   
 ---
 
-Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/?) for advice about all aspects of your relocation. 
-
-Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone. 
+Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/?) for advice about all aspects of your relocation. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone. 
 
 Your teacher training provider may be able to help you plan your move to the UK – contact them directly to ask. 
 
@@ -53,8 +51,8 @@ The following suggestions and resources may also be useful:
 
 * [learn about indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
 
- 
- ## Contact
+
+## Contact
 
 You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your application to a training provider or school.
 

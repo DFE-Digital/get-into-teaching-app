@@ -74,7 +74,7 @@ Read up on how to:
 
 * [write a great teaching job application in 5 steps](https://teaching-vacancies.campaign.gov.uk/get-help-applying-for-teacher-jobs/write-a-great-teaching-job-application) 
 
-* [write a teacher personal statement](teaching-vacancies.service.gov.uk/jobseeker-guides/how-to-write-teacher-personal-statement)  
+* [write a teacher personal statement](https://teaching-vacancies.service.gov.uk/jobseeker-guides/how-to-write-teacher-personal-statement)  
 
 * [prepare for a teaching interview lesson](https://teaching-vacancies.campaign.gov.uk/get-help-applying-for-teacher-jobs/prepare-for-a-teaching-interview-lesson)  
 
