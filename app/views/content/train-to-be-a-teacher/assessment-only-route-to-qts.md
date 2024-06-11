@@ -170,7 +170,7 @@ provider_groups:
       email: qtsao@lsbu.ac.uk
     - header: Middlesex University
       telephone: 020 8411 5555
-      email: enquiries@mdx.ac.uk
+      email: AO@mdx.ac.uk
     - header: St Mary’s University
       link: https://www.stmarys.ac.uk/education-theology-and-leadership/assessment-only-qts.htm
       name: Elizabeth Jackson
@@ -267,9 +267,9 @@ provider_groups:
     - header: Astra School Centred Initial Teacher Training / Dr Challoner's Grammar
         School
       link: https://www.astra-alliance.com/285/the-assessment-only-route
-      name: Stephanie Rodgers
+      name: Andrew Millar
       telephone: '01494 787573'
-      email: sro@challoners.org
+      email: hello@astra-alliance.com
     - header: Boleyn Trust
       link: https://www.londondistricteast.org/scitt
       email: elascitt@tollgate.boleyntrust.org
@@ -534,7 +534,7 @@ The assessment programme takes up to 12 weeks.
 
 ## How much does assessment only QTS cost?
 
-Fees range from about $fees_assessment-only_low$ to $fees_assessment-only_high$, but vary between provider so it’s best to check with them for more information.
+Fees range from about $fees_assessmentonly_low$ to $fees_assessmentonly_high$, but vary between provider so it’s best to check with them for more information.
 
 Fees may be paid by you or your school at the start of the programme. If you’re currently working in a school, talk to your employer about your funding options.
 

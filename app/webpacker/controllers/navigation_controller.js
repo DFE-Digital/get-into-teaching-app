@@ -37,6 +37,16 @@ export default class extends Controller {
     );
     const toggleSecondaryNavigation = item.dataset.toggleSecondaryNavigation;
 
+    const containerClassList = item.closest('ol').classList;
+    let menuLevel;
+    if (containerClassList.contains('primary')) {
+      menuLevel = 1;
+    } else if (containerClassList.contains('category-links-list')) {
+      menuLevel = 2;
+    } else if (containerClassList.contains('page-links-list')) {
+      menuLevel = 3;
+    }
+
     event.preventDefault();
     event.stopPropagation();
 
@@ -48,6 +58,10 @@ export default class extends Controller {
       if (toggleSecondaryNavigation) {
         this.expandSecondaryNavigation();
       }
+      window.gtag('event', 'expand_menu', {
+        menuItemId: item.id,
+        menuLevel: menuLevel,
+      });
     } else if (this.toggleIconContracted(item)) {
       this.toggleIconContracted(correspondingItem);
       this.contractAndHideChildMenu(childMenu);
@@ -55,6 +69,10 @@ export default class extends Controller {
       if (toggleSecondaryNavigation) {
         this.contractSecondaryNavigation();
       }
+      window.gtag('event', 'contract_menu', {
+        menuItemId: item.id,
+        menuLevel: menuLevel,
+      });
     }
   }
 
