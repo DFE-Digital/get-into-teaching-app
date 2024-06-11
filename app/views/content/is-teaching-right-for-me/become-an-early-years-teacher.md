@@ -26,14 +26,14 @@ calls_to_action:
   EY-graduate:
     name: feature_table
     arguments:
-      - Cost: "Your course fees of up to $earlyyears_coursefeescoveredbydfe$ are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
+      - Cost: "Your course fees of up to %{earlyyears_coursefeescoveredbydfe} are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
         Salary: "No"
         Length of training: "Typically 1 academic year"
         Qualification: "Early years teacher status"
   EY-graduate-employment:
     name: feature_table
     arguments:
-      - Cost: "Your course fees of up to $earlyyears_coursefeescoveredbydfe$ are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
+      - Cost: "Your course fees of up to %{earlyyears_coursefeescoveredbydfe} are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
         Salary: "Provided by employer"
         Length of training: "Typically 1 academic year"
         Qualification: "Early years teacher status"
@@ -47,7 +47,7 @@ calls_to_action:
   EY-self-funded:
     name: feature_table
     arguments:
-      - Cost: "This could be around $earlyyears_coursefeesselffundedlow$ or $earlyyears_coursefeesselffundedhigh$ depending on the provider"
+      - Cost: "This could be around %{earlyyears_coursefeesselffundedlow} or $earlyyears_coursefeesselffundedhigh$ depending on the provider"
         Salary: "No"
         Length of training: "3 months"
         Qualification: "Early years teacher status"
