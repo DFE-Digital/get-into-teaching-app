@@ -1,5 +1,6 @@
 salaries_date_appliesfrom: 1 September 2023
 salaries:
+# Detailed salaries
   leadingpractitioner:
     englandmin: £47,417
     englandmax: £72,085
@@ -10,6 +11,7 @@ salaries:
     innerlondonmin: £56,377
     innerlondonmax: £81,051
 ## implemented above line
+# Summary salaries
   starting:
     min: £30,000
     minshortened: £30k
@@ -19,6 +21,7 @@ salaries:
     maxshortened: £41k
   average:
     classroomshortened: £40k
+# Detailed salaries
   qualifiedteacher:
     englandmin: £30,000
     englandmax: £46,525
@@ -48,10 +51,12 @@ salaries:
     outerlondonmax: £35,954
     innerlondonmin: £25,831
     innerlondonmax: £37,362
+# Additional payments
   tlr:
     salarywithtlr: £43k
     maximumrounded: £15,000
     max: £15,690
+# Non-UK salary thresholds
   skilledworkervisatraineeminfulltime:
     innerlondon: £25,831
     outerlondon: £24,415
