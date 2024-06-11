@@ -36,7 +36,7 @@ keywords:
   
 ---
 
-English qualified teacher status allows you to teach in any type of  schools in England.
+English qualified teacher status allows you to teach in any type of school in England.
 
 Depending on your immigration status, you may have to [apply for a new visa](/non-uk-teachers/visas-for-non-uk-teachers) (usually a Skilled worker visa) to work as a teacher in the UK. 
 
@@ -48,16 +48,17 @@ You can search for a teaching job through the government’s official [Teaching 
 
 Most teaching vacancies are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September.  
 
-Learn more at [Find a teaching role at the right school](https://teaching-vacancies.campaign.gov.uk/find-a-teaching-role-at-the-right-school/?). 
+Learn more at [Find a teaching role at the right school](https://teaching-vacancies.campaign.gov.uk/find-a-teaching-role-at-the-right-school/?).
 
- 
-### Salaries and benefits 
+
+### Salaries and benefits 
 
 Schools have some flexibility on [teachers’ salaries](/is-teaching-right-for-me/teacher-pay-and-benefits). It varies by region and your level of skill, experience and qualifications. 
 
-There are [specific salary requirements for a Skilled Worker visa](/non-uk-teachers/visas-for-non-uk-teachers/#salary-requirement-for-a-skilled-worker-visa). 
+There are [specific salary requirements for a Skilled Worker visa](/non-uk-teachers/visas-for-non-uk-teachers/#salary-requirement-for-a-skilled-worker-visa).
 
-### Get help applying for teaching jobs 
+
+### Get help applying for teaching jobs 
 
 As part of your application, schools will usually ask for your: 
 
@@ -84,13 +85,17 @@ Read up on how to:
 
 You’ll need a job offer from a school before you apply for your Skilled Worker visa.   
 
-Apply for your visa to teach in England has more information. 
+You can apply for a Skilled Worker visa up to 3 months before your new job starts.
+
+[Apply for your visa to teach in England](/non-uk-teachers/visas-for-non-uk-teachers) has more information. 
 
  
 
 ## Career progression 
 
-In your first teaching job, you’ll complete an early career teacher (ECT) 2-year induction period, when you’ll work and be assessed as a paid teacher in a school. This induction period is part of the UK government’s [early career framework](https://www.gov.uk/government/publications/early-career-framework) for teachers in England, which helps teachers succeed by developing their professional practice, knowledge and working habits. You’ll get training and support from a mentor to help you meet the Teachers’ Standards. 
+In your first teaching job, you’ll complete an early career teacher (ECT) 2-year induction period, when you’ll work and be assessed as a paid teacher in a school. 
+
+This induction period is part of the UK government’s [early career framework](https://www.gov.uk/government/publications/early-career-framework) for teachers in England, which helps teachers succeed by developing their professional practice, knowledge and working habits. You’ll get training and support from a mentor to help you meet the Teachers’ Standards. 
 
 You’ll also be able to develop your career through the [national professional qualifications framework](https://www.gov.uk/guidance/national-professional-qualifications-framework). 
 
@@ -98,7 +103,15 @@ Learn more about [moving up the career ladder in teaching](/is-teaching-right-fo
 
 ## Financial incentives 
 
-You may be eligible for the levelling up premium payment(opens in new window) or the early career payment(opens in new window). 
+You may be eligible for the:
+
+* [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers)
+* [early career payment](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools)
+
+## Contact
+
+If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
+
 
  
 

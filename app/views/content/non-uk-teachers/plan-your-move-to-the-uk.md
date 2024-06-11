@@ -37,7 +37,7 @@ Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.
 
 Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone. 
 
-Your teacher training provider may also be able to help you plan your move to the UK – contact them directly to ask. 
+Your teacher training provider may be able to help you plan your move to the UK – contact them directly to ask. 
 
 The following suggestions and resources may also be useful: 
 
@@ -49,12 +49,17 @@ The following suggestions and resources may also be useful:
 
 * [register with a doctor](https://www.nhs.uk/nhs-services/gps/how-to-register-with-a-gp-surgery/) 
 
-* [find childcare](https://www.gov.uk/get-childcare) 
-
 * [learn about tax](https://www.gov.uk/income-tax) 
 
 * [learn about indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
 
  
+ ## Contact
+
+You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your application to a training provider or school.
+
+To check if you're eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
+
+We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
 
  
