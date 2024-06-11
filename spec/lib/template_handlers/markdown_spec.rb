@@ -3,6 +3,10 @@ require "rails_helper"
 describe TemplateHandlers::Markdown, type: :view do
   subject { rendered }
 
+  let(:value_data) { Value.new("spec/fixtures/files/example_values/**/*.yml").data }
+
+  before { allow(Value).to receive(:data).and_return(value_data) }
+
   context "with generic markdown page" do
     let(:markdown) do
       <<~MARKDOWN
@@ -278,11 +282,8 @@ describe TemplateHandlers::Markdown, type: :view do
       MARKDOWN
     end
 
-    let(:value_data) { Value.new("spec/fixtures/files/example_values/**/*.yml").data }
-
     before do
       allow(described_class).to receive(:global_front_matter).and_return(front_matter)
-      allow(Value).to receive(:data).and_return(value_data)
       stub_template "page_with_rich_content.md" => markdown
       render template: "page_with_rich_content"
     end
@@ -294,6 +295,57 @@ describe TemplateHandlers::Markdown, type: :view do
       is_expected.to have_text("data1_example_amount: £1,234.56")
       is_expected.to have_text("Some text")
       is_expected.to have_text("data2_example_string: Hello World!")
+    end
+  end
+
+  describe "injecting content view components with values" do
+    let(:front_matter_with_images) do
+      {
+        "title": "Page with view components and values",
+        "quote" => {
+          "quote-1" => { "text" => "quote with a value $data1_example_amount$", "name" => "name", "job_title" => "job title", "inline" => "left" },
+        },
+        "inset_text" => {
+          "inset-text-1" => { "text" => "text with a value $data1_example_amount$" },
+        },
+        "youtube_video" => {
+          "video-1" => { "id" => "abc123", "title" => "Video title with a value $data2_example_string$" },
+        },
+      }
+    end
+
+    let :markdown do
+      <<~MARKDOWN
+        # Some page
+
+        $quote-1$
+
+        Some text
+
+        $inset-text-1$
+
+        Some more text
+
+        $video-1$
+
+        Some more text
+
+        $steps-1$
+      MARKDOWN
+    end
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter_with_images)
+      stub_template "page_with_rich_content.md" => markdown
+      render template: "page_with_rich_content"
+    end
+
+    subject { rendered }
+
+    it "contains the specified view components" do
+      is_expected.to have_css(".quote", text: "quote with a value £1,234.56")
+      is_expected.to have_css(".inset-text", text: "text with a value £1,234.56")
+      is_expected.to have_css("iframe[title='Video title with a value Hello World!']")
     end
   end
 end
