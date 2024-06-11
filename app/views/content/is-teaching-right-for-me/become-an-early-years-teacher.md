@@ -47,7 +47,7 @@ calls_to_action:
   EY-self-funded:
     name: feature_table
     arguments:
-      - Cost: "This could be around %{earlyyears_coursefeesselffundedlow} or $earlyyears_coursefeesselffundedhigh$ depending on the provider"
+      - Cost: "This could be around %{earlyyears_coursefeesselffundedlow} or %{earlyyears_coursefeesselffundedhigh} depending on the provider"
         Salary: "No"
         Length of training: "3 months"
         Qualification: "Early years teacher status"
