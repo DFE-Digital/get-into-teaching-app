@@ -70,3 +70,7 @@ salaries:
     londonfringe: £31,350
     restofengland: £30,000
   skilledworkervisateacherminparttime: £23,200
+# Example variables - used in documentation
+  example:
+    min: £30,000
+salaries_example_max: £41k
