@@ -1,6 +1,7 @@
 ---
 title: "Assessment only route to QTS"
 heading: "Assessment only route to QTS for unqualified teachers"
+subcategory: Other routes into teaching
 description: |-
   Find out about the assessment only route to qualified teacher status (QTS) for unqualified teachers who have worked in a classroom.
 date: "2021-06-08"
@@ -12,7 +13,7 @@ related_content:
     Attend an event : "/events"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-assessment-only
-navigation: 20.10
+navigation: 20.35
 navigation_title: If you’ve worked as an unqualified teacher
 navigation_description: If you've worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through an assessment only route.
 fullwidth: true
@@ -169,7 +170,7 @@ provider_groups:
       email: qtsao@lsbu.ac.uk
     - header: Middlesex University
       telephone: 020 8411 5555
-      email: enquiries@mdx.ac.uk
+      email: AO@mdx.ac.uk
     - header: St Mary’s University
       link: https://www.stmarys.ac.uk/education-theology-and-leadership/assessment-only-qts.htm
       name: Elizabeth Jackson
@@ -266,9 +267,9 @@ provider_groups:
     - header: Astra School Centred Initial Teacher Training / Dr Challoner's Grammar
         School
       link: https://www.astra-alliance.com/285/the-assessment-only-route
-      name: Stephanie Rodgers
+      name: Andrew Millar
       telephone: '01494 787573'
-      email: sro@challoners.org
+      email: hello@astra-alliance.com
     - header: Boleyn Trust
       link: https://www.londondistricteast.org/scitt
       email: elascitt@tollgate.boleyntrust.org
@@ -533,7 +534,7 @@ The assessment programme takes up to 12 weeks.
 
 ## How much does assessment only QTS cost?
 
-Fees range from about $fees_assessment-only_low$ to $fees_assessment-only_high$, but vary between provider so it’s best to check with them for more information.
+Fees range from about $fees_assessmentonly_low$ to $fees_assessmentonly_high$, but vary between provider so it’s best to check with them for more information.
 
 Fees may be paid by you or your school at the start of the programme. If you’re currently working in a school, talk to your employer about your funding options.
 

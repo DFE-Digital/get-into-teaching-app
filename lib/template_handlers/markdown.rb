@@ -51,14 +51,23 @@ module TemplateHandlers
       autolink_html render_markdown
     end
 
-    # rubocop:disable Style/PerlBackrefs
     def markdown
       # use $1 rather than a block argument here because gsub assigns the
       # entire placeholder to the arg (including dollar symbols) but we only
       # want what's inside the capture group
-      parsed.content.gsub(COMPONENT_PLACEHOLDER_REGEX) do
+      # NB: we need to parse a second time as a component may contain a $value$
+      substitute_values(substitute_components_and_values(parsed.content))
+    end
+
+    # rubocop:disable Style/PerlBackrefs
+    def substitute_components_and_values(content)
+      content.gsub(COMPONENT_PLACEHOLDER_REGEX) do
         safe_join([cta_component($1), content_component($1), image($1), value($1)].compact).strip
       end
+    end
+
+    def substitute_values(content)
+      content.gsub(COMPONENT_PLACEHOLDER_REGEX) { safe_join([value($1)].compact).strip }
     end
     # rubocop:enable Style/PerlBackrefs
 
@@ -96,7 +105,7 @@ module TemplateHandlers
     end
 
     def value(placeholder)
-      Value.data[placeholder]
+      Value.get(placeholder)
     end
 
     def front_matter

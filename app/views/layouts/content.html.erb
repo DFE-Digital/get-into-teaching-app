@@ -3,7 +3,7 @@
     <%= render "sections/head" %>
     <%= body_tag do %>
       <%= render "sections/govuk_javascript" %>
-      <%= render HeaderComponent.new(breadcrumbs: true) %>
+      <%= render HeaderComponent.new(breadcrumbs: true, front_matter: @front_matter) %>
 
       <%= main_tag do %>
         <%= render Content::HeroComponent.new(@front_matter) %>

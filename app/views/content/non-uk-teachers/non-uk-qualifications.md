@@ -100,7 +100,7 @@ You'll also need to:
 
 ## English language, maths and science proficiency
 
-If you’ve reached a certain proficiency in an English language test, you can use this as evidence you meet the standard of a grade 4 GCSE in English – for example: 
+If you’ve reached a certain proficiency in an English language test, some providers will accept this as evidence you meet the standard of a grade 4 GCSE in English – for example: 
 
 * [International English Language Testing System (IELTS)](https://www.ielts.org/)
 * [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl)

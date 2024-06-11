@@ -209,19 +209,6 @@ If you are resident in the UK, you may already have a visa or immigration status
 
 To train to teach in England, you will need a visa or immigration status allowing you to study (or work, for salaried courses) in the UK. 
 
-When you have been accepted on to a teacher training course offering student or skilled worker visa sponsorship, you will be able to apply for your visa.
-
-[If you're an Irish citizen you do not need a visa](https://www.gov.uk/government/publications/common-travel-area-guidance).
-
-If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa) or [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
-
-### Already living in the UK?
-
-If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a> or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>
-you will not need a visa to train to teach in the UK.
-
-### How to apply
-
 [Learn more about applying for the right visa for your teacher training course](/non-uk-teachers/visas-for-non-uk-trainees).
 
 ## Plan your move to the UK

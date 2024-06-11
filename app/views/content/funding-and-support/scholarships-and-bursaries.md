@@ -41,21 +41,21 @@ You must be eligible for student finance to receive a bursary or scholarship (un
 
 You cannot receive a scholarship or bursary if you're on a [salaried teacher training course](/funding-and-support/salaried-teacher-training).
 
-| Subject                                                | Bursary  | Scholarship      |
-| -------------                                          | -------: | ---------------: |
-| **Art and design**                                     | £10,000  |                  |
-| **Biology**                                            | £25,000  |                  |
-| **Chemistry**                                          | £28,000  | £30,000          |
-| **Computing**                                          | £28,000  | £30,000          |
-| **Design and technology**                              | £25,000  |                  |
-| **English**                                            | £10,000  |                  |
-| **Geography**                                          | £25,000  |                  |
-| **Languages**<br/> (French, German and Spanish only)   | £25,000  | £27,000          |
-| **Languages**<br/> (all other languages, including ancient languages)       | £25,000  |                  |
-| **Maths**                                              | £28,000  | £30,000          |
-| **Music**                                              | £10,000  |                  |
-| **Physics**                                            | £28,000  | £30,000          |
-| **Religious education**                                | £10,000  |                  |
+| Subject                                                               | Bursary  | Scholarship      |
+|-----------------------------------------------------------------------| -------: | ---------------: |
+| **Art and design**                                                    | £10,000  |                  |
+| **Biology**                                                           | £25,000  |                  |
+| **Chemistry**                                                         | £28,000  | £30,000          |
+| **Computing**                                                         | £28,000  | £30,000          |
+| **Design and technology**                                             | £25,000  |                  |
+| **English**                                                           | £10,000  |                  |
+| **Geography**                                                         | £25,000  |                  |
+| **Languages**<br/> (French, German and Spanish only)                  | £25,000  | £27,000          |
+| **Languages**<br/> (all other languages, including ancient languages) | £25,000  |                  |
+| **Maths**                                                             | £28,000  | £30,000          |
+| **Music**                                                             | £10,000  |                  |
+| **Physics**                                                           | £28,000  | £30,000          |
+| **Religious education**                                               | £10,000  |                  |
 
 ### Bursaries
 
@@ -120,7 +120,7 @@ The amount you receive depends on the year that you start your QTS course. You d
 
 ### Undergraduate bursary if you're former military personnel
 
-You may be eligible for a £40,000 tax-free undergraduate bursary for veterans if you’re:
+You may be eligible for a $bursaries_veteran_total$ tax-free undergraduate bursary for veterans if you’re:
 
 * training to teach secondary biology, chemistry, computing, languages, maths, or physics
 * doing an undergraduate degree leading to QTS in England
