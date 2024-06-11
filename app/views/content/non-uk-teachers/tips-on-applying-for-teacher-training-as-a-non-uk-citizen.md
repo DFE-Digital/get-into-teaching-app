@@ -8,7 +8,7 @@ related_content:
     Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
-navigation: 20.30
+navigation: 20.50
 navigation_title: Tips on applying for teacher training in England as a non-UK citizen
 navigation_description: Improve your chances of success with our guide to teacher training application.
 date: "2021-05-27"
