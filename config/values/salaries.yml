@@ -12,10 +12,13 @@ salaries:
 ## implemented above line
   starting:
     min: £30,000
-    max: £41,000
     minshortened: £30k
+  fiveyears:
+    max: £41,333
+    maxrounded: £41,000
     maxshortened: £41k
-    maxwithin5years: £41,333
+  average:
+    classroomshortened: £40k
   qualifiedteacher:
     englandmin: £30,000
     englandmax: £46,525
@@ -47,17 +50,18 @@ salaries:
     innerlondonmax: £37,362
   tlr:
     salarywithtlr: £43k
-    maximumvalue: £15,000
-  skilledworkervisaminimumsalaryft:
+    maximumrounded: £15,000
+    max: £15,690
+  skilledworkervisatraineeminfulltime:
     innerlondon: £25,831
     outerlondon: £24,415
     londonfringe: £23,200
     restofengland: £23,200
-  skilledworkervisaminimumsalarypt:
+  skilledworkervisatraineeminparttime:
     restofengland: £23,200
-  skillerworkervisaminimumqualifiedteacher:
+  skilledworkervisateacherminfulltime:
     innerlondon: £36,745
     outerlondon: £34,514
     londonfringe: £31,350
     restofengland: £30,000
-salaries_average_shortened: £40k
+  skilledworkervisateacherminparttime: £23,200
