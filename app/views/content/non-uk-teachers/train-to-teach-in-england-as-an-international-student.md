@@ -77,6 +77,10 @@ When you plan your training, bear in mind that:
 - you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher 
 - you may need to extend or switch your visa to live and work in the UK long-term
 
+## Meet non-UK citizens who trained to teach in England
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhBBL_DpHFo?si=_TAmdD4kgpPewADA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 1. Check your qualifications
 
 Before you apply, you must [check your qualifications](/non-uk-teachers/non-uk-qualifications). If you gained your qualifications outside the UK, we can help you check they meet the required standard in England. 
