@@ -1,39 +1,9 @@
 ---
-title: "Why teach in England video transcript"
-subcategory: 
-description: |-
-  
-related_content:
-    Train to teach in England as an international student: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
-    Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
-    A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
-promo_content:
-date: "2021-05-27"
-image: "static/images/content/hero-images/0002.jpg"
-backlink: "../../"
-keywords:
-  - International
-  - Teaching
-  - Education
-  - Schools
-  - Teacher
-  - Overseas
-  - Foreign
-  - Non-UK
-  - Visa
-  - Skilled Worker visa
-  - Immigration
-  - Student Visa
-  - Graduate Visa
-  - Youth Mobility Scheme
-  - Family Visa
-  - UK Ancestry Visa
-  - Refugees
-  - Settlement Scheme
-  
+title: Why train to teach in England video transcript
+description: Full transcript for the 'Subject knowledge enhancement' video.
 ---
 
-### Why train to teach in England? 
+### Why train to teach in England video transcript
 
 #### Christobel Gondwe, maths teacher: 
 
