@@ -3,8 +3,6 @@ title: Why train to teach in England video transcript
 description: Full transcript for the 'Subject knowledge enhancement' video.
 ---
 
-### Why train to teach in England video transcript
-
 #### Christobel Gondwe, maths teacher: 
 
 If you want a job that you will love and you will feel wanted, and you will be looked after in essence, and you want a job where you can develop and progress, I’d definitely say to consider teaching in the UK. 

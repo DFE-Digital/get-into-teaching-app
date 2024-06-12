@@ -66,7 +66,7 @@ When you have successfully completed your training, you will be awarded English 
 
 QTS will allow you to apply for teaching jobs in all schools in England. When you get a teaching job, depending on your immigration status, you may also need to [apply for a visa allowing you to work in the UK](/non-uk-teachers/visas-for-non-uk-teachers).   
 
-## Meet non-UK citizens who trained to teach in England
+### Meet non-UK citizens who trained to teach in England
 
 Read a [transcript of this video](/non-uk-teachers/why-train-to-teach-in-england-video-transcript).
 
