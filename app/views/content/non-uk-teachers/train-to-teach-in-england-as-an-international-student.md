@@ -62,9 +62,15 @@ keywords:
 
 Citizens of every country in the world can apply to train to teach in England.
 
-When you have successfully completed your training, you will be awarded English [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
+When you have successfully completed your training, you will be awarded English [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), a professional qualification valued globally.
 
 QTS will allow you to apply for teaching jobs in all schools in England. When you get a teaching job, depending on your immigration status, you may also need to [apply for a visa allowing you to work in the UK](/non-uk-teachers/visas-for-non-uk-teachers).   
+
+## Meet non-UK citizens who trained to teach in England
+
+Read a [transcript of this video](/non-uk-teachers/why-teach-in-england-video-transcript).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhBBL_DpHFo?si=_TAmdD4kgpPewADA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Useful to know
 
@@ -76,12 +82,6 @@ When you plan your training, bear in mind that:
 - you can apply for paid teaching jobs as soon as you successfully complete your training and gain English qualified teacher status (QTS)
 - you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher 
 - you may need to extend or switch your visa to live and work in the UK long-term
-
-## Meet non-UK citizens who trained to teach in England
-
-Read a [transcript of this video](/non-uk-teachers/why-teach-in-england-video-transcript).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhBBL_DpHFo?si=_TAmdD4kgpPewADA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 1. Check your qualifications
 
