@@ -7,4 +7,5 @@ scholarships:
   generic:
     max: £30,000
     maxshortened: £30k
-  nonuk: £30,000
+  nonuk:
+    max: £30,000
