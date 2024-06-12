@@ -68,7 +68,7 @@ QTS will allow you to apply for teaching jobs in all schools in England. When yo
 
 ## Meet non-UK citizens who trained to teach in England
 
-Read a [transcript of this video](/non-uk-teachers/why-teach-in-england-video-transcript).
+Read a [transcript of this video](/non-uk-teachers/why-train-to-teach-in-england-video-transcript).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WhBBL_DpHFo?si=_TAmdD4kgpPewADA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
