@@ -17,7 +17,7 @@ backlink: "../../"
 inset_text:
   new-international-funding:
     text: |-
-      If you're a non-UK teacher interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth %nonuk_internationalrelocationpayment_value$</a>.
+      If you're a non-UK teacher interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth $nonuk_internationalrelocationpayment_value$</a>.
 keywords:
   - International
   - Overseas
