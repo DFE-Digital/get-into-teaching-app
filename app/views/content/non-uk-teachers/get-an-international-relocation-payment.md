@@ -11,7 +11,7 @@ related_content:
 promo_content:
 navigation: 20.50
 navigation_title: Get an international relocation payment
-navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth %{nonuk_internationalrelocationpayment_value}.
+navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth $nonuk_internationalrelocationpayment_value$.
 date: "2021-05-27"
 image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"
@@ -25,7 +25,7 @@ inset_text:
 
       <p>Trainees in languages or physics who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees starting courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to £30,000.</p>
 
-      <p>Payments to teachers applying from September 2024 will now be split into two %{nonuk_internationalrelocationpayment_instalment} payments rather than given as a single %{nonuk_internationalrelocationpayment_value} sum. Teachers can apply for the first payment at the start of their first year of employment and the second payment at the start of their second year of employment.</p>
+      <p>Payments to teachers applying from September 2024 will now be split into two $nonuk_internationalrelocationpayment_instalment$ payments rather than given as a single $nonuk_internationalrelocationpayment_value$ sum. Teachers can apply for the first payment at the start of their first year of employment and the second payment at the start of their second year of employment.</p>
 
 
 keywords:
