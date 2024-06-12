@@ -36,7 +36,7 @@ keywords:
   
 ---
 
-English qualified teacher status allows you to teach in any type of school in England.
+English [qualified teacher status](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/what-is-qts) allows you to teach in any type of school in England.
 
 Depending on your immigration status, you may have to [apply for a new visa](/non-uk-teachers/visas-for-non-uk-teachers) (usually a Skilled worker visa) to work as a teacher in the UK. 
 
@@ -93,9 +93,9 @@ You can apply for a Skilled Worker visa up to 3 months before your new job start
 
 ## Career progression 
 
-In your first teaching job, you’ll complete an early career teacher (ECT) 2-year induction period, when you’ll work and be assessed as a paid teacher in a school. 
+In your first teaching job after you qualify, you’ll complete an early career teacher (ECT) 2-year induction period, when you’ll work and be assessed as a paid teacher in a school. 
 
-This induction period is part of the UK government’s [early career framework](https://www.gov.uk/government/publications/early-career-framework) for teachers in England, which helps teachers succeed by developing their professional practice, knowledge and working habits. You’ll get training and support from a mentor to help you meet the Teachers’ Standards. 
+This induction period is part of the UK government’s [early career framework](https://www.gov.uk/government/publications/early-career-framework) for teachers in England, which helps teachers succeed by developing their professional practice, knowledge and working habits. You’ll get training and support from a mentor to help you meet the [Teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). 
 
 You’ll also be able to develop your career through the [national professional qualifications framework](https://www.gov.uk/guidance/national-professional-qualifications-framework). 
 

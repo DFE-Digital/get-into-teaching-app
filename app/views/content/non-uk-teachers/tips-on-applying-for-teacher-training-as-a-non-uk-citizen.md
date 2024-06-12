@@ -81,7 +81,7 @@ Teacher training courses can also be:
 
 * ‘salaried’– you are [paid to work in a school while you study](/funding-and-support/salaried-teacher-training)
 
-### Postgraduate teaching apprenticeships
+### Postgraduate teaching apprenticeships
 
 If you are resident in the UK, you may also be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train.
 
