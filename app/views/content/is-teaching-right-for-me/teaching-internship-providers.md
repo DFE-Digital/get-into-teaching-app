@@ -12,7 +12,7 @@ backlink: /
 fullwidth: true
 navigation: 5.55
 navigation_title: Can I do a teaching internship?
-navigation_description: Earn from $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
+navigation_description: Earn from %{teachinginternship_weekly} per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/is-teaching-right-for-me/teaching-internship-providers/listing
 
