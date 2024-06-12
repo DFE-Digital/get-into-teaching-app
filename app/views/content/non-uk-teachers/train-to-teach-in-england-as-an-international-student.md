@@ -72,7 +72,7 @@ Read a [transcript of this video](/non-uk-teachers/why-teach-in-england-video-tr
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WhBBL_DpHFo?si=_TAmdD4kgpPewADA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Useful to know
+## Useful info
 
 When you plan your training, bear in mind that:
 
@@ -124,7 +124,7 @@ You can apply for your visa once you have a confirmed offer of a training place.
 For help with your move, [read our tips on relocation](/non-uk-teachers/plan-your-move-to-the-uk).
 
 
-## 6. Complete your teacher training and gain qualified teacher status (QTS)
+## 6. Complete your teacher training and gain QTS
 
 If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/what-is-qts).
 
