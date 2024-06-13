@@ -54,9 +54,9 @@ The training did meet my expectations and it was much more than I expected. It w
 
 **Nellie D’Costa:** 
 
-The value of gaining a transferable qualification through training to teach in England is that you can go anywhere in the world and you can teach, and you can go in that part of the world and you can make a difference, not just in the lives of the children but also in the people around you. 
+The value of gaining a transferable qualification through training to teach in England is that you can go anywhere in the world and you can teach, and you can go in that part of the world and you can make a difference, not just in the lives of the children but also in the people around you.
 
-## Learn more about English teacher training
+## Learn more about English teacher training
 
 Learn more about [training to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student)
 
