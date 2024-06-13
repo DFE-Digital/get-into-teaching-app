@@ -7,6 +7,10 @@ related_content:
     Gain the equivalent of English QTS, from outside the UK : "/non-uk-teachers/international-qualified-teacher-status"
     Teach in England if you trained outside the UK : "/teach-in-england-if-you-trained-overseas"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
+youtube_video:
+  why-train-video:
+    id: WhBBL_DpHFo
+    title: Why train to teach in England
 navigation: 20.10
 navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
@@ -68,9 +72,9 @@ QTS will allow you to apply for teaching jobs in all schools in England. When yo
 
 ### Meet non-UK citizens who trained to teach in England
 
-Read a [transcript of this video](/non-uk-teachers/why-train-to-teach-in-england-video-transcript).
+$why-train-video$
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhBBL_DpHFo?si=_TAmdD4kgpPewADA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-in-england-video-transcript).
 
 ## Useful info
 
