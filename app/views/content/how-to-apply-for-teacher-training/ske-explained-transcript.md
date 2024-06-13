@@ -1,5 +1,5 @@
 ---
-title: 
+title: Subject knowledge enhancement explained video transcript
 description: Full transcript for the 'Subject knowledge enhancement' video.
 ---
 

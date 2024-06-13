@@ -36,7 +36,7 @@ keywords:
   
 ---
 
-English [qualified teacher status](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/what-is-qts) allows you to teach in any type of school in England.
+English [qualified teacher status](/train-to-be-a-teacher/what-is-qts) allows you to teach in any type of school in England.
 
 Depending on your immigration status, you may have to [apply for a new visa](/non-uk-teachers/visas-for-non-uk-teachers) (usually a Skilled worker visa) to work as a teacher in the UK. 
 

@@ -186,7 +186,7 @@ You can learn more by:
 
 * [joining the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
 
-* [reading interviews with real teachers](https://getintoteaching.education.gov.uk/blog) 
+* [reading interviews with real teachers](/blog) 
 
 ## Get help 
 
