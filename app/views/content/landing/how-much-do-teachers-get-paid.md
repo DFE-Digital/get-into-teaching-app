@@ -1,6 +1,6 @@
 ---
 title: "How much do teachers get paid?"
-description: There are great benefits to teaching including a starting salary of at least £30k (or higher in London). Learn more about teachers' salaries and other benefits.
+description: There are great benefits to teaching including a starting salary of at least $salaries_starting_min$ (or higher in London). Learn more about teachers' salaries and other benefits.
 content:
     - content/landing/how-much-do-teachers-get-paid/header
     - content/landing/how-much-do-teachers-get-paid/collage
