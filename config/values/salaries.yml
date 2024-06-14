@@ -10,6 +10,34 @@ salaries:
     outerlondonmax: £75,850
     innerlondonmin: £56,377
     innerlondonmax: £81,051
+  unqualifiedteacher:
+    englandmin: £20,598
+    englandmax: £32,134
+    londonfringemin: £21,933
+    londonfringemax: £33,464
+    outerlondonmin: £24,415
+    outerlondonmax: £35,954
+    innerlondonmin: £25,831
+    innerlondonmax: £37,362
+# Non-UK salary thresholds
+  skilledworkervisatraineeminfulltime:
+    innerlondon: £25,831
+    outerlondon: £24,415
+    londonfringe: £23,200
+    restofengland: £23,200
+  skilledworkervisatraineeminparttime:
+    restofengland: £23,200
+  skilledworkervisateacherminfulltime:
+    innerlondon: £36,745
+    outerlondon: £34,514
+    londonfringe: £31,350
+    restofengland: £30,000
+  skilledworkervisateacherminparttime: £23,200
+# Additional payments
+  tlr:
+    salarywithtlr: £43k
+    maximumrounded: £15,000
+    max: £15,690
 ## implemented above line
 # Summary salaries
   starting:
@@ -42,34 +70,6 @@ salaries:
     outerlondonmax: £134,765
     innerlondonmin: £62,304
     innerlondonmax: £139,891
-  unqualifiedteacher:
-    englandmin: £20,598
-    englandmax: £32,134
-    londonfringemin: £21,933
-    londonfringemax: £33,464
-    outerlondonmin: £24,415
-    outerlondonmax: £35,954
-    innerlondonmin: £25,831
-    innerlondonmax: £37,362
-# Additional payments
-  tlr:
-    salarywithtlr: £43k
-    maximumrounded: £15,000
-    max: £15,690
-# Non-UK salary thresholds
-  skilledworkervisatraineeminfulltime:
-    innerlondon: £25,831
-    outerlondon: £24,415
-    londonfringe: £23,200
-    restofengland: £23,200
-  skilledworkervisatraineeminparttime:
-    restofengland: £23,200
-  skilledworkervisateacherminfulltime:
-    innerlondon: £36,745
-    outerlondon: £34,514
-    londonfringe: £31,350
-    restofengland: £30,000
-  skilledworkervisateacherminparttime: £23,200
 # Example variables - used in documentation
   example:
     min: £30,000

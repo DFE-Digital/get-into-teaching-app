@@ -86,7 +86,7 @@ The main visa route for non-UK citizens wishing to teach in England is the skill
 
 You’ll be able to apply for your skilled worker visa if:
 
-* you have a job offer from a school that is a Home Office licensed visa sponsor 
+* you have a job offer from a school that is a Home Office licensed visa sponsor
 * you have a certificate of sponsorship from this school, confirming they have offered you a job and will sponsor you
 * [you meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
 * your salary meets the requirement for a skilled worker visa
@@ -94,30 +94,30 @@ You’ll be able to apply for your skilled worker visa if:
 [Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ### Salary requirement for a skilled worker visa
- 
+
 The salary you must be paid to get a visa varies according to  whether you are employed as a ‘qualified’ or ‘unqualified’ teacher. This depends on your level of experience and qualifications – your employing school can explain whether the role you are applying for is qualified or unqualified. The salary requirement also varies depending on the region you are applying to work in.
 
 If you are employed as a qualified teacher and work in:
 
-* inner London, you must earn £36,745
-* outer London, you must earn £34,514
-* London fringe, you must earn £31,350
-* the rest of England, you must earn £30,000
+* inner London, you must earn $salaries_skilledworkervisateacherminfulltime_innerlondon$
+* outer London, you must earn $salaries_skilledworkervisateacherminfulltime_outerlondon$
+* London fringe, you must earn $salaries_skilledworkervisateacherminfulltime_londonfringe$
+* the rest of England, you must earn $salaries_skilledworkervisateacherminfulltime_restofengland$
 
 If you are employed as an unqualified teacher and work in:
 
-* inner London, you must earn £25,831
-* outer London, you must earn £24,415
-* London fringe, you must earn £23,200
-* the rest of England, you must earn £23,200
+* inner London, you must earn $salaries_skilledworkervisatraineeminfulltime_innerlondon$
+* outer London, you must earn $salaries_skilledworkervisatraineeminfulltime_outerlondon$
+* London fringe, you must earn $salaries_skilledworkervisatraineeminfulltime_londonfringe$
+* the rest of England, you must earn $salaries_skilledworkervisatraineeminfulltime_restofengland$
 
-Check the region you will be working in with the school employing you. 
+Check the region you will be working in with the school employing you.
 
 ### Working part time as a teacher
 
 You can work part time, but your salary must meet the threshold for a skilled worker visa. There are 2 requirements:
 
-* your part-time salary must be at least £23,200
+* your part-time salary must be at least $salaries_skilledworkervisateacherminparttime$
 * the full-time equivalent of your salary must meet the minimum set for your region and status (for qualified and unqualified teachers)
 
 Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary on offer does not meet the skilled worker visa requirements.
@@ -136,7 +136,7 @@ If you are already an international student in the UK, you can apply for a gradu
 
 To apply, you must have been sponsored by a Home Office licensed student sponsor over the course of your studies.
 
-The graduate visa will allow you to work or look for work in the UK for up to 2 years after completing your studies (3 years for PhD students) without a sponsor. This includes working as a teacher. 
+The graduate visa will allow you to work or look for work in the UK for up to 2 years after completing your studies (3 years for PhD students) without a sponsor. This includes working as a teacher.
 
 You will be able to switch from a graduate visa to another visa (such as the skilled worker visa) without having to leave the UK, if you meet the requirements for the new visa route.
 
@@ -154,7 +154,7 @@ To be eligible for a high potential individual visa, you must:
 * have personal funds of £1,270
 * pass a security and criminality check
 
-You do not need an offer of a teaching job to apply for this visa and you’ll be able to stay in the UK for 2 years with a bachelor’s or master’s degree, and 3 years with a PhD. 
+You do not need an offer of a teaching job to apply for this visa and you’ll be able to stay in the UK for 2 years with a bachelor’s or master’s degree, and 3 years with a PhD.
 
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/high-potential-individual-visa">Apply for a high potential individual visa<span></span></a>
@@ -169,26 +169,26 @@ To be eligible for the India young professionals scheme visa, you must:
 * have an eligible qualification
 * have £2,530 in savings
 
-The visa allows you to live and work in the UK for up to 2 years. To apply for the visa, you must first enter a ballot. 
+The visa allows you to live and work in the UK for up to 2 years. To apply for the visa, you must first enter a ballot.
 
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/india-young-professionals-scheme-visa">Apply for the India young professionals scheme<span></span></a>
 </p>
 
-## Youth Mobility Scheme visa 
+## Youth Mobility Scheme visa
 
 The [Youth Mobility Scheme](https://www.gov.uk/youth-mobility) allows [young people from certain countries](https://www.gov.uk/youth-mobility/eligibility) to come to the UK to work without a sponsor. This includes working as a teacher.
 
 A Youth Mobility Scheme visa lasts up to 2 years. You may be able to switch from a Youth Mobility Scheme visa to another visa route (for example, the skilled worker visa) without having to leave the UK. You’ll need to meet the requirements for the new visa route.
 
-## Other visas 
+## Other visas
 Depending on your personal circumstances, you may be eligible for alternative visas that allow you to work in the UK – for example:
 
 * on a [Family visa](https://www.gov.uk/uk-family-visa)
-* on a [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
+* on a [UK Ancestry visa](https://www.gov.uk/ancestry-visa)
 * if you are from Hong Kong, on a [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
-* as a [family member of someone on a student visa](https://www.gov.uk/student-visa/family-members) 
-* as a [family member of someone on a skilled worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children) 
+* as a [family member of someone on a student visa](https://www.gov.uk/student-visa/family-members)
+* as a [family member of someone on a skilled worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children)
 
 ## Visa fees and other charges
 
@@ -200,7 +200,7 @@ You’ll also have to pay visa fees which vary depending on which visa you are a
 
 [Calculate how much your visa will cost](https://www.gov.uk/visa-fees).
 
-### Immigration Health Surcharge 
+### Immigration Health Surcharge
 
 You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application – this is called the Immigration Health Surcharge (IHS).
 

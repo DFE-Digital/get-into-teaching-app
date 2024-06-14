@@ -85,7 +85,7 @@ This could be a one-off payment for a specific project, for example, creating a 
 
 Or it might be an extra responsibility attached to your job role, for example, being the head of department.
 
-Depending on your responsibilities, you could earn up to an extra £15,690. Your school will determine how much you receive.
+Depending on your responsibilities, you could earn up to an extra $salaries_tlr_max$. Your school will determine how much you receive.
 
 <a name="career-progression"></a>
 
@@ -141,10 +141,10 @@ Or find out how you can earn an unqualified teacher salary while training to get
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| England (excluding London)     | £20,598 | £32,134 |
-| London fringe                            | £21,933 | £33,464 |
-| Outer London                             | £24,415 | £35,954 |
-| Inner London                             | £25,831 | £37,362 |
+| England (excluding London)     | $salaries_unqualifiedteacher_englandmin$ | $salaries_unqualifiedteacher_englandmax$ |
+| London fringe                            | $salaries_unqualifiedteacher_londonfringemin$ | $salaries_unqualifiedteacher_londonfringemax$ |
+| Outer London                             | $salaries_unqualifiedteacher_outerlondonmin$ | $salaries_unqualifiedteacher_outerlondonmax$ |
+| Inner London                             | $salaries_unqualifiedteacher_innerlondonmin$ | $salaries_unqualifiedteacher_innerlondonmax$ |
 
 ## Holidays
 
