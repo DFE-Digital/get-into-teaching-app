@@ -10,7 +10,6 @@ salaries:
     outerlondonmax: £75,850
     innerlondonmin: £56,377
     innerlondonmax: £81,051
-## implemented above line
 # Summary salaries
   starting:
     min: £30,000
@@ -21,6 +20,7 @@ salaries:
     maxshortened: £41k
   average:
     classroomshortened: £40k
+## implemented above line
 # Detailed salaries
   qualifiedteacher:
     englandmin: £30,000

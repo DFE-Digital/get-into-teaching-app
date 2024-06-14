@@ -3,7 +3,7 @@ title: "Teacher pay and benefits"
 heading: "Teacher pay and benefits"
 subcategory: Pay and benefits
 description: |-
-  All qualified teachers will have a starting salary of at least £30,000 (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
+  All qualified teachers will have a starting salary of at least $starting_salary_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 date: "2021-06-24"
 backlink: "../../"
 navigation: 5.10
@@ -62,7 +62,7 @@ Figures apply from $salaries_date_appliesfrom$.
 
 ## Primary and secondary teacher salary
 
-If you have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you’ll get a minimum starting salary of £30,000 (or more in London) as a primary or secondary school teacher in England.
+If you have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you’ll get a minimum starting salary of $salaries_starting_min$ (or more in London) as a primary or secondary school teacher in England.
 
 Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.
 
@@ -72,10 +72,10 @@ A typical teacher could earn at least $salaries_fiveyears_max$ (or more in Londo
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| England (excluding London)     | £30,000 | £46,525 |
-| London fringe                            | £31,350 | £47,839 |
-| Outer London                             | £34,514 | £51,179 |
-| Inner London                             | £36,745 | £56,959 |
+| England (excluding London)     | $salaries_qualifiedteacher_englandmin$ | $salaries_qualifiedteacher_englandmax$ |
+| London fringe                            | $salaries_qualifiedteacher_londonfringemin$ | $salaries_qualifiedteacher_londonfringemax$ |
+| Outer London                             | $salaries_qualifiedteacher_outerlondonmin$ | $salaries_qualifiedteacher_outerlondonmax$ |
+| Inner London                             | $salaries_qualifiedteacher_innerlondonmin$ | $salaries_qualifiedteacher_innerlondonmax$ |
 
 ### Additional payments
 
