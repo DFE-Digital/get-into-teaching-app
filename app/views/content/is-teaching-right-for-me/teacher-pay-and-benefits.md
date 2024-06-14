@@ -3,7 +3,7 @@ title: "Teacher pay and benefits"
 heading: "Teacher pay and benefits"
 subcategory: Pay and benefits
 description: |-
-  All qualified teachers will have a starting salary of at least $starting_salary_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
+  All qualified teachers will have a starting salary of at least £30k (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 date: "2021-06-24"
 backlink: "../../"
 navigation: 5.10
