@@ -37,15 +37,13 @@
   &:hover { 
     text-decoration-thickness: max(3px, .1875rem);
   }
-  &:focus {
-    text-decoration: none;
-  }
-
+  
   &:focus {
     color: $white;
     background-color: $black;
     box-shadow: 0 4px $pink;
     outline: 4px solid transparent;
+    text-decoration: none;
 
     &::after {
       border-color: $white;
