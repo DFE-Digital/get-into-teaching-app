@@ -35,8 +35,8 @@
   box-shadow: none;
 
   &:hover { 
-    text-decoration-thickness: max(3px, .1875rem)};
-
+    text-decoration-thickness: max(3px, .1875rem);
+  }
   &:focus {
     text-decoration: none;
   }
