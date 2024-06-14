@@ -34,7 +34,9 @@
   text-underline-offset: .08em;
   box-shadow: none;
 
-  &:hover,
+  &:hover { 
+    text-decoration-thickness: max(3px, .1875rem)};
+
   &:focus {
     text-decoration: none;
   }
@@ -97,6 +99,9 @@ ol.primary > li {
   &::after {
     border-color: $black;
   }
+
+  &:hover { 
+    text-decoration-thickness: max(3px, .1875rem, .12em)};
 
   &:focus {
     color: $white;
