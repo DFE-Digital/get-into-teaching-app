@@ -20,8 +20,6 @@ salaries:
     maxshortened: £41k
   average:
     classroomshortened: £40k
-## implemented above line
-# Detailed salaries
   qualifiedteacher:
     englandmin: £30,000
     englandmax: £46,525
@@ -31,6 +29,8 @@ salaries:
     outerlondonmax: £51,179
     innerlondonmin: £36,745
     innerlondonmax: £56,959
+## implemented above line
+# Detailed salaries
   headteacher:
     minshortened: £53k
     maxshortened: £139k
