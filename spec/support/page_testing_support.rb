@@ -1,15 +1,23 @@
 class PageLister
   class << self
-    def md_files
+    def md_files_excluding_partials
       Dir["app/views/content/**/[^_]*.md"]
     end
 
-    def html_files
+    def md_files_including_partials
+      Dir["app/views/content/**/*.md"]
+    end
+
+    def html_files_excluding_partials
       Dir["app/views/content/**/[^_]*.html.erb"]
     end
 
+    def html_files_including_partials
+      Dir["app/views/content/**/*.erb"]
+    end
+
     def files
-      html_files + md_files
+      html_files_excluding_partials + md_files_excluding_partials
     end
 
     def remove_folders(filename)
@@ -92,4 +100,8 @@ class LinkChecker
 
     url.gsub(*@adjust_packs_path)
   end
+end
+
+class MonetaryChecker
+  MONEY_REGEXP = /([$£€](0|[1-9][0-9]{0,2})(,\d{3})*([.,]\d{1,2})?p?)/m
 end
