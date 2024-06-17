@@ -85,6 +85,8 @@ variable "postgres_flexible_server_sku" {
 variable "postgres_enable_high_availability" {
   default = false
 }
+variable "enable_logit" { default = false }
+
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)
 
