@@ -43,24 +43,18 @@ We can help if you’re interested in teaching children aged 5 to 18. If you'd l
 
 If you're coming to the UK from Ukraine, [check what you need to do before you travel and what to do after you arrive](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine).
 
-### Get an international relocation payment (IRP) worth £10,000
+### Get an international relocation payment (IRP) worth up to £10,000
 
-To be eligible for the IRP, you must be a teacher coming to England to teach languages or physics in:
-
-* the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024)
-
-* the 2024 to 2025 academic year (which runs from 1 September 2024 to 31 August 2025) 
-
-[Learn more about the IRP](/non-uk-teachers/get-an-international-relocation-payment).
+If you are a teacher coming to England to teach languages or physics, you may be eligible for the IRP. [Learn more about the IRP](/non-uk-teachers/get-an-international-relocation-payment).
 
 
 ### Visas giving you the right to train to teach or teach in England
 
 You already have the right to train or work as a teacher in England if you're in the UK on (one of the following):
 
-* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa) – please note this scheme closed to new applications on 19 February 2024
-* [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
-* [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
+* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa) – please note this scheme closed to new applicants on 19 February 2024
+* [Homes for Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
+* [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme) – please note this scheme closed to most new applicants on 16 May 2024 
 
 You're also eligible to [apply for financial support if you choose to train to teach](#fees-and-financial-support).
 
