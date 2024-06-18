@@ -94,7 +94,7 @@ If your teaching job starts after 1 September 2024, please keep checking this pa
 
 ### 1. Teaching subject for teachers
 
-You must be employed by and in an English state secondary school on a contract of employment beginning in the 2024 to 2025 academic year (which usually runs from 1 September 2024 to 31 August 2025). 
+You must be employed by and working in an English state secondary school on a contract of employment beginning in the 2024 to 2025 academic year (which usually runs from 1 September 2024 to 31 August 2025). 
 
 Your contract must last at least one year and you must be working as: 
 
