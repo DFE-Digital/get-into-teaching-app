@@ -11,7 +11,7 @@ related_content:
 promo_content:
 navigation: 20.70
 navigation_title: Apply for your visa to teach in England
-navigation_description: Learn more about applying for a Skilled worker visa to teach in England
+navigation_description: Learn more about applying for a Skilled Worker visa to teach in England
 date: "2021-05-27"
 image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"

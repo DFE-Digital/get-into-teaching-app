@@ -76,7 +76,7 @@ If you have a teaching qualification from the following countries and regions, y
 
 * Australia
 * Canada
-* the EEA
+* the [EEA](https://www.gov.uk/eu-eea)
 * Guernsey
 * Gibraltar
 * Hong Kong

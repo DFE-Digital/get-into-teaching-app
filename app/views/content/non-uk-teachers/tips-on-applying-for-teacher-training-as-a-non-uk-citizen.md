@@ -2,7 +2,7 @@
 title: "How to apply for teacher training in England as a non-UK citizen"
 subcategory: If you want to train to teach
 description: |-
-  Learn more about choosing a course and increasing your chances of success.
+  Learn more about applying for a teacher training course in England and increasing your chance of a successful application.
 related_content:
     Train to teach in England as an international student: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
@@ -46,9 +46,9 @@ Fees are higher for non-UK citizens and you’re unlikely to get financial suppo
 
 ## Get school experience 
 
-Consider getting experience in a school. This will help you understand if teaching is right for you and give you an insight into teaching. You can also write about what you learn in your [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement?).  
+Consider getting experience in a school. This will help you understand if teaching is right for you and give you an insight into teaching. You can [write about your school experience in your personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement).  
 
-If you’re in the UK and your visa allows it, you can get help finding [unpaid work experience in schools](/is-teaching-right-for-me/get-school-experience?).  
+If you’re in the UK and your visa allows it, you can get help [finding unpaid work experience in schools](/is-teaching-right-for-me/get-school-experience).  
 
 If you’re outside the UK, you could contact local schools to ask about work experience opportunities.
 
@@ -83,12 +83,12 @@ Teacher training courses can also be:
 
 ### Postgraduate teaching apprenticeships
 
-If you are resident in the UK, you may also be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train.
+If you are resident in the UK, you may be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train.
 
 To apply, you will need to meet both the following conditions:
 
 * you must have settled or pre-settled status under the EU Settlement Scheme
-* you must have been living in the UK or the EEA for 3 or more years before the start of your apprenticeship
+* you must have been living in the UK or the [EEA](https://www.gov.uk/eu-eea) for 3 or more years before the start of your apprenticeship
 
 If you do not have settled or pre-settled status under the EU Settlement Scheme, you will need to meet both the following conditions:
 
@@ -99,7 +99,7 @@ If you are resident in the UK, you may already have a visa or immigration status
 
 If you need to apply for another visa – for example, a Skilled Worker visa – you’ll need to do this after you’ve been given a place on a postgraduate teaching apprenticeship.
 
-### If you don't have a degree
+### If you don't have a bachelor’s degree
 
 If you don’t have a bachelor’s degree, you can explore [other routes into teacher training](/non-uk-teachers/non-uk-qualifications/#if-you-do-not-have-a-bachelors-degree). 
 
@@ -123,7 +123,7 @@ You can also teach children with [special educational needs](/is-teaching-right-
 
 [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists courses leading to [English qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). 
 
-If you need a visa, remember to filter your search results by visa sponsorship. 
+If you need a visa, remember to filter your search results by 'visa sponsorship'. 
 
 You can also search courses by: 
 
@@ -135,11 +135,13 @@ You can also search courses by:
 
 * courses which pay a salary 
 
+Email your chosen provider to check they can sponsor you, then apply for your teacher training course. 
+
 ## How to increase your chance of success
 
 ### Do your research before you apply 
 
-You can read up on: 
+You can find out more about: 
 
 * [teacher training application](/how-to-apply-for-teacher-training/teacher-training-application) 
 
@@ -155,16 +157,14 @@ You can read up on:
 
 * [what to do if your application is unsuccessful](/how-to-apply-for-teacher-training/if-your-application-is-unsuccessful) 
 
- 
-Email your chosen provider to check they can sponsor you, then apply for your teacher training course. 
 
 
 ### Check your qualifications 
 
-Make sure you have the right qualifications and apply for a [statement of comparability](/non-uk-teachers/non-uk-qualifications) proving your school and university qualifications are the same standard as UK GCSEs and a UK bachelor’s degree.
+Make sure you have the right qualifications and [apply for a statement of comparability](/non-uk-teachers/non-uk-qualifications) proving your school and university qualifications are the same standard as UK GCSEs and a UK bachelor’s degree.
 
 
-### Research English education 
+### Research education in England 
 
 Even if you’ve never spent time in an English school, teacher training providers will want to know you’re familiar with: 
 
@@ -184,9 +184,9 @@ You can learn more by:
 
 * visiting [Times Educational Supplement (TES)](https://www.tes.com/en-gb) – information and resources for teachers 
 
-* [joining the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
+* joining [the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
 
-* [reading interviews with real teachers](/blog) 
+* reading [interviews with real teachers](/blog) 
 
 ## Get help 
 
@@ -198,8 +198,4 @@ We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) exc
 
 ## Find and apply for teacher training 
 
-Use [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) to find and apply for a teacher training course. It lists fee-paying and salaried training courses, including postgraduate teaching apprenticeships leading to qualified teacher status.  
-
- 
-
- 
+Use [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) to find and apply for a teacher training course. This service lists fee-paying and salaried training courses, including postgraduate teaching apprenticeships leading to qualified teacher status.

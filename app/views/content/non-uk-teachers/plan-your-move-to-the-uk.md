@@ -2,7 +2,7 @@
 title: "Plan your move to the UK"
 subcategory: If you want to train to teach
 description: |-
-  Useful links to help you plan your relocation.
+  Useful links to help you plan your relocation to the UK as a trainee teacher.
 related_content:
     Train to teach in England as an international student: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
@@ -33,7 +33,7 @@ keywords:
   
 ---
 
-Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/?) for advice about all aspects of your relocation. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone. 
+Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/?) for advice about relocating to the UK. You can get support over the phone on their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us). 
 
 Your teacher training provider may be able to help you plan your move to the UK – contact them directly to ask. 
 

@@ -2,7 +2,7 @@
 title: "Find a teaching job as a non-UK citizen"
 subcategory: If you want to train to teach
 description: |-
-  Learn more about applying for teaching jobs after you qualify.
+  Learn more about applying for teaching jobs after you qualify as a non-UK citizen.
 related_content:
     Train to teach in England as an international student: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
@@ -42,13 +42,13 @@ Depending on your immigration status, you may have to [apply for a new visa](/no
 
 ## Apply for your teaching job  
 
-To find a teaching job, you must apply to individual schools (not the Department for Education). If you need a Skilled Worker visa, you must find a school that can sponsor your visa. 
+To find a teaching job, you must apply to individual schools, not the Department for Education. If you need a Skilled Worker visa, you must find a school that can sponsor your visa. 
 
-You can search for a teaching job through the government’s official [Teaching Vacancies service](https://teaching-vacancies.service.gov.uk/). Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas. Set up job alerts so you don’t miss out on new roles. 
+You can search for a teaching job through the government’s official [Teaching Vacancies service](https://teaching-vacancies.service.gov.uk/). Filter your search by ‘visa sponsorship’ to find jobs that can sponsor visas. Set up job alerts so you don’t miss out on new roles. 
 
 Most teaching vacancies are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September.  
 
-Learn more at [Find a teaching role at the right school](https://teaching-vacancies.campaign.gov.uk/find-a-teaching-role-at-the-right-school/?).
+Learn more about [what to consider when looking for a teaching job](https://teaching-vacancies.campaign.gov.uk/find-a-teaching-role-at-the-right-school).
 
 
 ### Salaries and benefits 
@@ -70,7 +70,7 @@ As part of your application, schools will usually ask for your:
 
 * references 
 
-Read up on how to: 
+Find out how to: 
 
 * [write a great teaching job application in 5 steps](https://teaching-vacancies.campaign.gov.uk/get-help-applying-for-teacher-jobs/write-a-great-teaching-job-application) 
 
@@ -95,11 +95,11 @@ You can apply for a Skilled Worker visa up to 3 months before your new job start
 
 In your first teaching job after you qualify, you’ll complete an early career teacher (ECT) 2-year induction period, when you’ll work and be assessed as a paid teacher in a school. 
 
-This induction period is part of the UK government’s [early career framework](https://www.gov.uk/government/publications/early-career-framework) for teachers in England, which helps teachers succeed by developing their professional practice, knowledge and working habits. You’ll get training and support from a mentor to help you meet the [Teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). 
+This induction period is part of the UK government’s [early career framework](https://www.gov.uk/government/publications/early-career-framework) for teachers in England, which helps teachers succeed by developing their professional practice, knowledge and working habits. You’ll get training and support from a mentor to help you meet the [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards). 
 
 You’ll also be able to develop your career through the [national professional qualifications framework](https://www.gov.uk/guidance/national-professional-qualifications-framework). 
 
-Learn more about [moving up the career ladder in teaching](/is-teaching-right-for-me/career-progression).  
+Learn more about [progressing in your career as a teacher](/is-teaching-right-for-me/career-progression).  
 
 ## Financial incentives 
 

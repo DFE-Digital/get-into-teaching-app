@@ -8,7 +8,7 @@ related_content:
     Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
-navigation: 20.20
+navigation: 20.30
 navigation_title: Fees and financial support for non-UK trainee teachers
 navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
 
@@ -151,7 +151,7 @@ Talk to your training provider about the home fee rate, [bursaries and scholarsh
 
 ## Get help
 
-[Student Finance England](https://www.gov.uk/contact-student-finance-england) has a dedicated service for EU students and for EEA citizens working in the UK.
+[Student Finance England](https://www.gov.uk/contact-student-finance-england) has a dedicated service for EU students and for [EEA](https://www.gov.uk/eu-eea) citizens working in the UK.
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
 

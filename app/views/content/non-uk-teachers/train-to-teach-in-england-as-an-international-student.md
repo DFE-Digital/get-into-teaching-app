@@ -70,13 +70,7 @@ When you have successfully completed your training, you will be awarded English 
 
 QTS will allow you to apply for teaching jobs in all schools in England. When you get a teaching job, depending on your immigration status, you may also need to [apply for a visa allowing you to work in the UK](/non-uk-teachers/visas-for-non-uk-teachers).   
 
-### Meet non-UK citizens who trained to teach in England
-
-$why-train-video$
-
-[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-in-england-video-transcript).
-
-## Useful info
+## Planning your teacher training
 
 When you plan your training, bear in mind that:
 
@@ -89,7 +83,7 @@ When you plan your training, bear in mind that:
 
 ## 1. Check your qualifications
 
-Before you apply, you must [check your qualifications](/non-uk-teachers/non-uk-qualifications). If you gained your qualifications outside the UK, we can help you check they meet the required standard in England. 
+Before you apply, you must [check your qualifications](/non-uk-teachers/non-uk-qualifications). If you gained your qualifications outside the UK, we can help you check if they meet the required standard in England. 
 
 To get help with your qualifications, you can use the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country's standard rate.
 
@@ -130,7 +124,7 @@ For help with your move, [read our tips on relocation](/non-uk-teachers/plan-you
 
 ## 6. Complete your teacher training and gain QTS
 
-If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/what-is-qts).
+If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 
 ## 7. Apply for your first teaching job
@@ -138,6 +132,12 @@ If you’re accepted on to a teacher training course in England, you’ll train 
 When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England. Depending on your immigration status, you may also need to apply for a visa allowing you to work in the UK. 
 
 [How to apply for your first teaching job](/non-uk-teachers/find-a-teaching-job-as-a-non-uk-citizen).
+
+### Meet non-UK citizens who trained to teach in England
+
+$why-train-video$
+
+[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-in-england-video-transcript).
 
 ## Contact
 
