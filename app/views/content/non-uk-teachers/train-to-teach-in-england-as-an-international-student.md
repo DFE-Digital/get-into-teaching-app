@@ -133,7 +133,7 @@ When you have qualified teacher status, you will be able to apply for paid teach
 
 [How to apply for your first teaching job](/non-uk-teachers/find-a-teaching-job-as-a-non-uk-citizen).
 
-### Meet non-UK citizens who trained to teach in England
+## Meet non-UK citizens who trained to teach in England
 
 $why-train-video$
 

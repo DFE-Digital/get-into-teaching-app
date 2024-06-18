@@ -139,7 +139,7 @@ Email your chosen provider to check they can sponsor you, then apply for your te
 
 ## How to increase your chance of success
 
-### Do your research before you apply 
+### Do your research before you apply 
 
 You can find out more about: 
 
