@@ -68,10 +68,10 @@ If you're already in the UK under a [different type of visa](https://www.gov.uk/
 
 ### Staying in the UK long-term
 
-If you're interested in working as a teacher and applying for [indefinite leave to remain in the UK](https://www.gov.uk/indefinite-leave-to-remain), you should consider a [skilled worker visa](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).   
+If you're interested in working as a teacher and applying for [indefinite leave to remain in the UK](https://www.gov.uk/indefinite-leave-to-remain), you should consider a [Skilled Worker visa](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).   
 
-Time spent in the UK under the skilled worker visa counts towards an application for permanent residence. You'll still need to meet the eligibility requirements for this type of visa.
-You can apply for a skilled worker visa whichever type of visa you currently have allowing you to stay in the UK. 
+Time spent in the UK under the Skilled Worker visa counts towards an application for permanent residence. You'll still need to meet the eligibility requirements for this type of visa.
+You can apply for a Skilled Worker visa whichever type of visa you currently have allowing you to stay in the UK. 
 
 ### Safeguarding and criminal records checks
 
