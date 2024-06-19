@@ -45,7 +45,7 @@ If you're coming to the UK from Ukraine, [check what you need to do before you t
 
 ### Get an international relocation payment (IRP) worth up to £10,000
 
-If you are a teacher coming to England to teach languages or physics, you may be eligible for the IRP.[Learn more about the international relocation payment (IRP)]](/non-uk-teachers/get-an-international-relocation-payment).
+If you are a teacher coming to England to teach languages or physics, you may be eligible for the IRP.[Learn more about the international relocation payment (IRP)](/non-uk-teachers/get-an-international-relocation-payment).
 
 
 ### Visas giving you the right to train to teach or teach in England
