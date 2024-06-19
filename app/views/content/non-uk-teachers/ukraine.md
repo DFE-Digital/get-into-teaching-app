@@ -45,12 +45,12 @@ If you're coming to the UK from Ukraine, [check what you need to do before you t
 
 ### Get an international relocation payment (IRP) worth up to £10,000
 
-If you are a teacher coming to England to teach languages or physics, you may be eligible for the IRP.[Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
+If you are a teacher coming to England to teach languages or physics, you may be eligible for the IRP.[Learn more about the international relocation payment (IRP)]](/non-uk-teachers/get-an-international-relocation-payment).
 
 
 ### Visas giving you the right to train to teach or teach in England
 
-You already have the right to train or work as a teacher in England if you're in the UK on (one of the following):
+You already have the right to train or work as a teacher in England if you're in the UK on one of the following visas:
 
 * [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa) – please note this scheme closed to new applicants on 19 February 2024
 * [Homes for Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
