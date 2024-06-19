@@ -34,10 +34,10 @@
   text-underline-offset: .08em;
   box-shadow: none;
 
-  &:hover { 
+  &:hover {
     text-decoration-thickness: max(3px, .1875rem);
   }
-  
+
   &:focus {
     color: $white;
     background-color: $black;
@@ -98,7 +98,7 @@ ol.primary > li {
     border-color: $black;
   }
 
-  &:hover { 
+  &:hover {
     text-decoration-thickness: max(3px, .1875rem, .12em)};
 
   &:focus {
@@ -137,6 +137,13 @@ ol.primary > li {
 
 .link--no-underline {
   text-decoration: none;
+}
+
+.link--underline-on-hover {
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: max(3px, .1875rem, .12em);
+  }
 }
 
 a {
