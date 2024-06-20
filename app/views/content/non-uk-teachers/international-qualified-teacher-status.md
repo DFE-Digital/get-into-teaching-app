@@ -21,7 +21,7 @@ keywords:
     - Qualified teacher status
 ---
 
-International qualified teacher status (iQTS) is a new teaching qualification backed by the UK government. iQTS meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), and leads to the automatic award of QTS. You can train where you live and work, with no need to visit the UK.
+International qualified teacher status (iQTS) is a teaching qualification backed by the UK government. iQTS meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), and leads to the automatic award of QTS. You can train where you live and work, with no need to visit the UK.
 
 ## Why choose iQTS?
 
@@ -31,7 +31,7 @@ iQTS allows you to train to teach children aged 5 to 11, or children aged 11 to 
 
 When you complete the course, you’ll have the skills, experience and knowledge to become an excellent teacher. You will also automatically be awarded English qualified teacher status (QTS) with no further fees or training. QTS is recognised all over the world as a teaching gold standard and will also qualify you to teach in England.
 
-If you decide to [teach in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas), as an early career teacher you’ll benefit from a two-year induction period alongside your work in school. You’ll earn a salary and get mentoring and continuous professional development to help you succeed as a teacher.
+If you decide to [teach in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas), as an early career teacher you’ll benefit from a two-year induction period alongside your work in a school. You’ll earn a salary and get mentoring and continuous professional development to help you succeed as a teacher.
 
 ## Entry requirements
 
@@ -67,13 +67,13 @@ If you’re not sure whether your qualifications meet the entry requirements for
 
 Fees range from $fees_iQTS_low$ to $fees_iQTS_high$ for a one-year, full-time iQTS course. Check training provider websites for full details.
 
-Applicants for iQTS are not eligible for loans, bursaries or any other type of financial support from the UK government to help cover the costs of studying iQTS.
+Applicants for iQTS are not eligible for loans, bursaries or any other type of financial support from Student Finance England to help cover the costs of studying iQTS.
 
 To find out about scholarship opportunities, contact your chosen iQTS training provider directly.
 
 ## Placement schools and working while you train
 
-iQTS is delivered by English training providers working in close partnership with schools outside the UK. These placement schools offer iQTS trainees practical experience and in-person mentoring.
+iQTS is delivered by English training providers working in close partnership with schools outside England. These placement schools offer iQTS trainees practical experience and in-person mentoring.
 
 Some training providers will already have relationships with schools in your region and will be able to match you to a particular school. Others will make it an entry requirement for their course that you set up your own placement with a local school.
 
@@ -83,9 +83,7 @@ To learn more, contact your chosen iQTS provider directly.
 
 ## How to apply
 
-There's still time to apply for the 2023/24 academic year with some providers listed on this page. Other providers are now accepting applications for the 2024/25 academic year. For more details and to apply, visit provider websites.
-
-We hope to announce additional iQTS training providers in autumn 2023. Check back to this page for more about our new providers and the regions you’ll be able to apply from.
+For more details and to apply, visit the provider websites listed on this page. 
 
 All iQTS training providers are approved by the UK government and must meet the same strict standards. However, they may vary in their approach to:
 
