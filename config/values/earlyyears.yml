@@ -1,7 +1,12 @@
 earlyyears:
-  bursarywithfirstclassdegree: £5,000
-  bursarywithtwoone: £4,000
-  bursarywithtwotwo: £2,000
-  coursefeescoveredbydfe: £7,000
-  coursefeesselffundedlow: £2,500
-  coursefeesselffundedhigh: £3,000
+
+bursaries
+  ey_bursarywithfirstclass: £5,000
+  ey_bursarywithtwoone: £4,000
+  ey_bursarywithtwotwo: £2,000
+
+  Fees:
+  ey_coursefeescoveredbydfe: £7,000
+  ey_coursefeesselffundedlow: £2,500
+  ey_coursefeesselffundedhigh: £3,000
+  ey_coursefeesundergrad: £9,250
