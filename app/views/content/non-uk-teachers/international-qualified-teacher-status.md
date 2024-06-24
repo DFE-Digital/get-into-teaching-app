@@ -2,7 +2,7 @@
 title: Get international qualified teacher status (iQTS)
 subcategory: Get international qualified teacher status (iQTS)
 description: |-
- Get international qualified teacher status (iQTS) from anywhere in the world, a teaching qualification backed by England’s Department for Education (DfE).
+ Applicants outside England can get international qualified teacher status (iQTS) from anywhere in the world, a teaching qualification backed by England’s Department for Education (DfE).
 related_content:
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
     Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"

@@ -2,7 +2,7 @@
 title: "Find a teaching job as a non-UK citizen"
 subcategory: If you want to train to teach
 description: |-
-  Learn more about applying for teaching jobs after you qualify as a non-UK citizen.
+  Learn more about applying for teaching jobs as a non-UK citizen after you qualify as a teacher.
 related_content:
     Train to teach in England as an international student: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"

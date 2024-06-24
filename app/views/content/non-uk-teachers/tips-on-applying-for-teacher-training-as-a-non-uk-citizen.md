@@ -2,7 +2,7 @@
 title: "How to apply for teacher training in England as a non-UK citizen"
 subcategory: If you want to train to teach
 description: |-
-  Learn more about applying for a teacher training course in England and increasing your chance of a successful application.
+  Learn more about applying for a teacher training course in England as a non-UK citizen and increasing your chance of a successful application.
 related_content:
     Train to teach in England as an international student: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Teacher pay and benefits in England : "/is-teaching-right-for-me/teacher-pay-and-benefits"

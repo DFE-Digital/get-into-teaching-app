@@ -2,7 +2,7 @@
 title: "Check your eligibility to train to teach in England"
 subcategory: If you want to train to teach
 description: |-
-  Find out what qualifications you need to train to teach in England. 
+  Find out what qualifications you need to train to teach in England as a non-UK citizen. 
 related_content:
     Learn more about fees and funding for non-UK trainees : "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
     Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
