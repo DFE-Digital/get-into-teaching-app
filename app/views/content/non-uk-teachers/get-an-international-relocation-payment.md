@@ -227,7 +227,7 @@ You will not be eligible for the international relocation payment if you are:
 
 Applications for the international relocation payment (IRP) are now closed. You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We'll email you when applications reopen in autumn 2024.
 
-You'll need to have started your teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas). You must apply in either the first or second term of your employment as a teacher.
+You'll need to have started your teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas). 
 
 Eligible applicants who apply for the IRP after 1 September 2024 will receive two £5,000 payments over 2 years, as long as they remain eligible. Teachers will be able to apply for the first payment at the start of their first year teaching in England and the second payment at the start of their second year. We’ll publish further details about how these split payments will be made to teachers on this page in due course. 
 
