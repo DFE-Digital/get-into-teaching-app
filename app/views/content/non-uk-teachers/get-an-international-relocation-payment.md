@@ -19,7 +19,7 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      <p>Applications for the <a href="https://get-a-teacher-relocation-payment.education.gov.uk">international relocation payment (IRP)</a> are now closed. You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We'll email you when applications reopen in autumn 2024.</p>
+      <p>Applications for the international relocation payment (IRP) are now closed. You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We'll email you when applications reopen in autumn 2024.</p>
 
       <h3>Changes to eligibility and payment</h3>  
       
@@ -94,7 +94,11 @@ If your teaching job starts after 1 September 2024, please keep checking this pa
 
 ### 1. Teaching subject for teachers
 
-You must be employed by and working in an English state secondary school on a contract of employment beginning in the 2024 to 2025 academic year (which usually runs from 1 September 2024 to 31 August 2025). 
+You must be employed by and in an English state secondary school on a contract of employment beginning in one of the following academic years:
+
+* the 2023 to 2024 academic year (which usually runs from 1 September 2023 to 31 August 2024)
+
+* the 2024 to 2025 academic year (which usually runs from 1 September 2024 to 31 August 2025)
 
 Your contract must last at least one year and you must be working as: 
 
@@ -221,7 +225,7 @@ You will not be eligible for the international relocation payment if you are:
 
 ## How to apply for the international relocation payment (IRP)
 
-Applications for the [international relocation payment (IRP)](https://get-a-teacher-relocation-payment.education.gov.uk) are now closed. You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We'll email you when applications reopen in autumn 2024.
+Applications for the international relocation payment (IRP) are now closed. You can express your interest in the IRP by emailing us at IRP.ExpressInterest@education.gov.uk. We'll email you when applications reopen in autumn 2024.
 
 You'll need to have started your teaching job to apply for the IRP. [Learn more about finding a job and applying for your visa](/non-uk-teachers/teach-in-england-if-you-trained-overseas). You must apply in either the first or second term of your employment as a teacher.
 
