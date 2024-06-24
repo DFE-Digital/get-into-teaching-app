@@ -1,0 +1,54 @@
+.expander-details {
+  padding: 0.4em 1.5em;
+
+  &__background-grey {
+    background: $grey;
+  }
+
+  &__summary {
+    list-style: none;
+
+    &__header {
+      font-weight: bold;
+    }
+
+    &__show {
+      display: block;
+    }
+
+    &__hide {
+      display: none;
+    }
+
+    &__icon {
+      display: inline-block;
+      padding-right: 0;
+      width: 21px;
+      height: 21px;
+      margin-top: 0;
+      background-repeat: no-repeat;
+
+      &__open {
+        background-image: url("../images/navigation/arrow-down-pink.svg");
+      }
+
+      &__close {
+        background-image: url("../images/navigation/arrow-up-pink.svg");
+      }
+    }
+  }
+
+  &__text {
+    padding-top: 1em;
+  }
+}
+
+.expander-details[open] {
+  .expander-details__summary__hide {
+    display: block;
+  }
+
+  .expander-details__summary__show {
+    display: none;
+  }
+}

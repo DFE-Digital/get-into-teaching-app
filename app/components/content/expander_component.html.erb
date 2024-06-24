@@ -1,0 +1,32 @@
+<%= tag.details(class: expander_class, open: expanded) do %>
+  <summary class="expander-details__summary">
+    <% if header.present? %>
+      <span class="expander-details__summary__header">
+        <%= header %>
+      </span>
+    <% end %>
+    <span class="expander-details__summary__title">
+      <%= title %>
+    </span>
+
+    <div class="expander-details__summary__show">
+      <span class="expander-details__summary__icon expander-details__summary__icon__open" aria-hidden="true"></span>
+      Show
+    </div>
+    <div class="expander-details__summary__hide">
+      <span class="expander-details__summary__icon expander-details__summary__icon__close" aria-hidden="true"></span>
+      Hide
+    </div>
+  </summary>
+
+  <div class="expander-details__text">
+    <p>
+      <%= text %>
+    </p>
+    <% if show_link? %>
+      <p>
+        <%= link_to link_title, link_url %>
+      </p>
+    <% end %>
+  </div>
+<% end %>
