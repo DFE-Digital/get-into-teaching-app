@@ -8,15 +8,15 @@
     - "static/images/content/hero-images/teacher--tablet.jpg"
 
 "static/images/content/hero-images/teacher2.jpg":
-  # A teacher listening to students
-  alt: ""
+  # A teacher listening to a group of students
+  alt: "A teacher listening to a group of students"
   variants:
     - "static/images/content/hero-images/teacher2--mobile.jpg"
     - "static/images/content/hero-images/teacher2--tablet.jpg"
 
 "static/images/content/hero-images/teacher3.jpg":
   # A teacher laughing with students
-  alt: ""
+  alt: "a teacher laughing with students"
   variants:
     - "static/images/content/hero-images/teacher3--mobile.jpg"
     - "static/images/content/hero-images/teacher3--tablet.jpg"
