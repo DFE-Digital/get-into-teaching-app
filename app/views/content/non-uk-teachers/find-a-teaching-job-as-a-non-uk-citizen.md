@@ -55,7 +55,7 @@ Learn more about [what to consider when looking for a teaching job](https://teac
 
 Schools have some flexibility on [teachers’ salaries](/is-teaching-right-for-me/teacher-pay-and-benefits). It varies by region and your level of skill, experience and qualifications. 
 
-There are [specific salary requirements for a Skilled Worker visa](/non-uk-teachers/visas-for-non-uk-teachers/#salary-requirement-for-a-skilled-worker-visa).
+There are [specific salary requirements for a Skilled Worker visa](/non-uk-teachers/visas-for-non-uk-teachers).
 
 
 ### Get help applying for teaching jobs 
