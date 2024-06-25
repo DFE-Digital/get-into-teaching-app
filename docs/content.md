@@ -253,6 +253,35 @@ inset_text:
 $important-content$
 ```
 
+### Details expander
+
+You can use the details expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
+
+```yaml
+---
+expander:
+  check-your-qualifications:
+    title: Check your qualifications
+    text: If you're a non-UK citizen and need a visa to come to the UK to train to teach, you need to make sure the course you’re applying for sponsors visas.
+    link_title: Find out more about how to apply for a visa to train to teach in England
+    link_url: /non-uk-teachers/visas-for-non-uk-trainees
+
+  another-example:
+    title: Another example
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, purus eget lobortis maximus, diam leo consequat tellus, in interdum odio nisl sed nibh.
+    header: Non-UK citizens
+    background: purple
+    expanded: true
+---
+
+# My page
+
+$check-your-qualifications$
+
+$another-example$
+
+```
+
 ### YouTube video
 
 To add a YouTube video to your content you need to know the video ID. You can find this out by visiting the video on [youtube.com](https://www.youtube.com/) and looking in the address bar of your browser (it is in the format `watch?v=<video_id>`).
