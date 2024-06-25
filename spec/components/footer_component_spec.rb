@@ -24,14 +24,6 @@ describe FooterComponent, type: "component" do
     expect(page).to have_css(".cookie-acceptance")
   end
 
-  context "when feedback is disabled" do
-    subject! { render_inline(described_class.new(feedback: false)) }
-
-    specify "does not render the feedback bar" do
-      expect(page).not_to have_css(feedback_selector)
-    end
-  end
-
   context "when 'Talk to us' is disabled" do
     subject! { render_inline(described_class.new(talk_to_us: false)) }
 
