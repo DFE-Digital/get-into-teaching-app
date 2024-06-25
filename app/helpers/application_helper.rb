@@ -95,6 +95,6 @@ module ApplicationHelper
 
   def content_footer_kwargs(front_matter)
     defaults = { talk_to_us: true }
-    defaults.merge(front_matter.symbolize_keys.slice(:talk_to_us, :feedback))
+    defaults.merge(front_matter.symbolize_keys.slice(:talk_to_us))
   end
 end

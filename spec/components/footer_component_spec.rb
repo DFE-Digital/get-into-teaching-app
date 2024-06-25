@@ -5,15 +5,10 @@ describe FooterComponent, type: "component" do
 
   before { render }
 
-  let(:feedback_selector) { ".feedback-bar" }
   let(:talk_to_us_selector) { ".talk-to-us" }
 
   specify "renders the footer" do
     expect(page).to have_css(".site-footer")
-  end
-
-  specify "renders the 'Feedback bar' by default" do
-    expect(page).not_to have_css(feedback_selector)
   end
 
   specify "renders the 'Talk To Us' section by default" do
