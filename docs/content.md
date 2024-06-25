@@ -270,7 +270,6 @@ expander:
     title: Another example
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, purus eget lobortis maximus, diam leo consequat tellus, in interdum odio nisl sed nibh.
     header: Non-UK citizens
-    background: purple
     expanded: true
 ---
 
