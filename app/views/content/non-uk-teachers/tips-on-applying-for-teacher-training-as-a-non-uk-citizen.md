@@ -83,7 +83,7 @@ Teacher training courses can also be:
 
 ### If you don't have a bachelor’s degree
 
-If you don’t have a bachelor’s degree, you can explore [other routes into teacher training](/non-uk-teachers/non-uk-qualifications/#if-you-do-not-have-a-bachelors-degree). 
+If you don't have a bachelor's degree, you can explore [other routes into teacher training](/non-uk-teachers/non-uk-qualifications#if-you-do-not-have-a-bachelors-degree) 
 
 ## Choosing a subject to teach 
 
@@ -95,9 +95,9 @@ A [subject knowledge enhancement course](/how-to-apply-for-teacher-training/subj
 
 Schools in England are divided into: 
 
-* [primary (ages 5 to 11)](/is-teaching-right-for-me/who-do-you-want-to-teach/#primary-ages-5-to-11) 
+* [primary (ages 5 to 11)](/is-teaching-right-for-me/who-do-you-want-to-teach#primary-ages-5-to-11) 
 
-* [secondary (ages 11 to 18)](/is-teaching-right-for-me/who-do-you-want-to-teach/#secondary-ages-11-to-18) 
+* [secondary (ages 11 to 18)](/is-teaching-right-for-me/who-do-you-want-to-teach#secondary-ages-11-to-18) 
 
 You can also teach children with [special educational needs](/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs). 
 
