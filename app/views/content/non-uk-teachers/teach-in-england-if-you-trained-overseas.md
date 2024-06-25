@@ -52,7 +52,7 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 
 ## Get an international relocation payment (IRP) worth £10,000
 
-If you are interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for a single payment of £10,000 from the UK government. [Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
+If you're interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for a single payment of £10,000 from the UK government. [Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
 
 ## English qualified teacher status (QTS)
 

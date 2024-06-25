@@ -83,20 +83,20 @@ You will need to show:
 
 ### Salary requirement for a Skilled Worker visa
  
-The salary you need to get a visa depends on if you're employed as a 'qualified' or 'unqualified teacher'.
+The salary you need to get a visa depends on if you're employed as a qualified or unqualified teacher.
 
-Your employing school can explain if the role you're applying for is qualified or unqualified. Qualified roles require more experience or qualifications.
+The school you're applying to work in can explain if the role you're applying for is qualified or unqualified. Qualified roles require more experience or qualifications.
 
-The salary requirement also varies depending on the region you're applying to work in. You can check the region with the school employing you. 
+The salary requirement also varies depending on the region you're applying to work in. You can check which region you'll be working in with the school employing you.
 
-If you are employed as a qualified teacher and work in:
+If you're employed as a qualified teacher and work in:
 
 * inner London, you must earn at least £36,745
 * outer London, you must earn at least £34,514
 * London fringe, you must earn at least £31,350
 * the rest of England, you must earn at least £30,000
 
-If you are employed as an unqualified teacher and work in:
+If you're employed as an unqualified teacher and work in:
 
 * inner London, you must earn at least £25,831
 * outer London, you must earn at least £24,415
@@ -119,7 +119,7 @@ You may be able to [bring your partner and children with you on a Skilled Worker
 
 ## Check your status
 
-If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
+If you’re not sure about your immigration status, you can [check if you need a UK visa to teach in the UK](https://www.gov.uk/check-uk-visa).
 
 You will not need a visa to teach in the UK if you:
 
@@ -137,7 +137,7 @@ You will not need to be sponsored for a Skilled Worker visa if you have a:
 
 * [Graduate visa](https://www.gov.uk/graduate-visa) 
 
-* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)
+* [High Potential Individual visa (HPI)](https://www.gov.uk/high-potential-individual-visa)
 
 * [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa) 
 
@@ -151,7 +151,7 @@ You will usually need to show proof of a certain level of savings or income. You
 
 ### Visa fees
 
-You’ll also have to pay [visa fees](https://www.gov.uk/visa-fees).
+You’ll also have to [pay visa fees](https://www.gov.uk/visa-fees).
 
 ### Immigration Health Surcharge 
 
