@@ -23,13 +23,13 @@ describe Content::ExpanderComponent, type: :component do
   let(:text) { "text goes here" }
   let(:link_title) { "link title goes here" }
   let(:link_url) { "/somewhere/over/the/rainbow" }
-  let(:background) { "grey" }
+  let(:background) { "purple" }
   let(:expanded) { false }
   let(:classes) { "extra-class1 extra-class2" }
 
   describe "expander classes" do
     it { is_expected.to have_css(".expander-details") }
-    it { is_expected.to have_css(".expander-details__background-grey") }
+    it { is_expected.to have_css(".expander-details__background-purple") }
     it { is_expected.to have_css(".extra-class1") }
     it { is_expected.to have_css(".extra-class2") }
   end
@@ -77,7 +77,7 @@ describe Content::ExpanderComponent, type: :component do
 
     it do
       expect { described_class.new(text: text, title: title, background: "green") }.to \
-        raise_error(ArgumentError, "background must be grey")
+        raise_error(ArgumentError, "background must be purple")
     end
   end
 end

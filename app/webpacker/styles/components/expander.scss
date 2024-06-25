@@ -4,7 +4,7 @@
   margin-top: 2em;
   margin-bottom: 2em;
 
-  &__background-grey {
+  &__background-purple {
     background: rgba($purple, .1);
   }
 
@@ -45,7 +45,7 @@
   &__text {
     padding-top: 1em;
   }
-  
+
   .expander-details__summary__show {
 	margin-top: 0.25em;
 	cursor:pointer;
@@ -54,12 +54,12 @@
 
 .expander-details[open] {
   .expander-details__summary__hide {
-    display: block;	
+    display: block;
 	  cursor:pointer;
-	  margin-top: 0.25em;	
+	  margin-top: 0.25em;
   }
 
   .expander-details__summary__show {
-    display: none;	
+    display: none;
   }
 }
