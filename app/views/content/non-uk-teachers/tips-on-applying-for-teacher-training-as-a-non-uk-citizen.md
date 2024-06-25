@@ -83,7 +83,7 @@ Teacher training courses can also be:
 
 ### If you don't have a bachelor’s degree
 
-If you don't have a bachelor's degree, you can explore [other routes into teacher training](/non-uk-teachers/non-uk-qualifications#if-you-do-not-have-a-bachelors-degree) 
+If you don't have a bachelor's degree, you can explore [other routes into teacher training](/non-uk-teachers/non-uk-qualifications#if-you-do-not-have-a-bachelors-degree). 
 
 ## Choosing a subject to teach 
 
