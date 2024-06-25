@@ -81,24 +81,6 @@ Teacher training courses can also be:
 
 * ‘salaried’– you are [paid to work in a school while you study](/funding-and-support/salaried-teacher-training)
 
-### Postgraduate teaching apprenticeships
-
-If you are resident in the UK, you may be eligible to apply for a postgraduate teaching apprenticeship. This allows you to earn a salary while you train.
-
-To apply, you will need to meet both the following conditions:
-
-* you must have settled or pre-settled status under the EU Settlement Scheme
-* you must have been living in the UK or the [EEA](https://www.gov.uk/eu-eea) for 3 or more years before the start of your apprenticeship
-
-If you do not have settled or pre-settled status under the EU Settlement Scheme, you will need to meet both the following conditions:
-
-* you must apply for a visa or immigration status allowing you to work in the UK
-* you must have been living in the UK for 3 or more years before the start of your apprenticeship
-
-If you are resident in the UK, you may already have a visa or immigration status allowing you to work – for example, a Graduate visa. 
-
-If you need to apply for another visa – for example, a Skilled Worker visa – you’ll need to do this after you’ve been given a place on a postgraduate teaching apprenticeship.
-
 ### If you don't have a bachelor’s degree
 
 If you don’t have a bachelor’s degree, you can explore [other routes into teacher training](/non-uk-teachers/non-uk-qualifications/#if-you-do-not-have-a-bachelors-degree). 

@@ -50,6 +50,8 @@ Most teacher training courses in England are fee-paying. You will need a Student
 
 Some teacher training courses in England are salaried – this means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). Currently, places on these courses are very limited. You will need a Skilled Worker visa if you train on a salaried training course. Your Skilled Worker visa must be sponsored by the school employing you.  
 
+If you apply for a salaried postgraduate teaching apprenticeship, you must also have been living in the UK for three years or more.  
+
 ### To apply for your visa, follow these steps 
 
 Visit [Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) and filter your search results by visa sponsorship. 
