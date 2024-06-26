@@ -9,11 +9,11 @@
       <%= title %>
     </span>
 
-    <div class="expander-details__summary__show">
+    <div class="expander-details__summary__show" aria-hidden="true">
       <span class="expander-details__summary__icon expander-details__summary__icon__open" aria-hidden="true"></span>
       <%= tag.a "Show", class: "link--underline", id: show_link_id %>
     </div>
-    <div class="expander-details__summary__hide">
+    <div class="expander-details__summary__hide" aria-hidden="true">
       <span class="expander-details__summary__icon expander-details__summary__icon__close" aria-hidden="true"></span>
       <%= tag.a "Hide", class: "link--underline", id: hide_link_id %>
     </div>
@@ -25,7 +25,7 @@
     </p>
     <% if show_link? %>
       <p>
-        <%= link_to link_title, link_url %>
+        <%= link_to link_title, link_url %>.
       </p>
     <% end %>
   </div>

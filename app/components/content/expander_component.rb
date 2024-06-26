@@ -18,7 +18,7 @@ module Content
       @header = header
       @title = title
       @text = text
-      @link_title = link_title
+      @link_title = link_title&.strip&.chomp(".")
       @link_url = link_url
       @background = background
       @expanded = expanded

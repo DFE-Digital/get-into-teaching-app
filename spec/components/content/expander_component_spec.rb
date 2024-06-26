@@ -54,6 +54,14 @@ describe Content::ExpanderComponent, type: :component do
     it { is_expected.to have_css("div.expander-details__text p", text: text) }
   end
 
+  describe "link title" do
+    let(:link_title) { " link title with a full stop. " }
+    let(:expanded) { true }
+
+    it { is_expected.to have_link("link title with a full stop", href: link_url) }
+    it { is_expected.not_to have_link("link title with a full stop.", href: link_url) }
+  end
+
   describe "argument checks" do
     it do
       expect { described_class.new(title: title, text: nil) }.to \
