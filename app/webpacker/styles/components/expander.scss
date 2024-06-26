@@ -8,6 +8,10 @@
     background: rgba($purple, .1);
   }
 
+  &__summary::-webkit-details-marker{
+    display:none
+  }
+
   &__summary {
     list-style: none;
 
