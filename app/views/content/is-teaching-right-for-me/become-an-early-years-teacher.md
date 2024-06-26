@@ -26,28 +26,28 @@ calls_to_action:
   EY-graduate:
     name: feature_table
     arguments:
-      - Cost: "Your course fees of up to $earlyyears_coursefeescoveredbydfe$ are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
+      - Cost: "Your course fees of up to $earlyyears_fees_coveredbydfe$ are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
         Salary: "No"
         Length of training: "Typically 1 academic year"
         Qualification: "Early years teacher status"
   EY-graduate-employment:
     name: feature_table
     arguments:
-      - Cost: "Your course fees of up to $earlyyears_coursefeescoveredbydfe$ are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
+      - Cost: "Your course fees of up to $earlyyears_fees_coveredbydfe$ are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
         Salary: "Provided by employer"
         Length of training: "Typically 1 academic year"
         Qualification: "Early years teacher status"
   EY-undergraduate:
     name: feature_table
     arguments:
-      - Cost: "Up to £9,250"
+      - Cost: "Up to $earlyyears_fees_undergrad$"
         Salary: "No"
         Length of training: "3 or 4 years"
         Qualification: "Early years teacher status"
   EY-self-funded:
     name: feature_table
     arguments:
-      - Cost: "This could be around $earlyyears_coursefeesselffundedlow$ or $earlyyears_coursefeesselffundedhigh$ depending on the provider"
+      - Cost: "This could be around $earlyyears_fees_selffundedlow$ or $earlyyears_fees_selffundedhigh$ depending on the provider"
         Salary: "No"
         Length of training: "3 months"
         Qualification: "Early years teacher status"
@@ -84,9 +84,9 @@ $EY-graduate$
 
 Bursaries are only available for this route as follows:
 
-* $earlyyears_bursarywithfirstclassdegree$ if you have a first class degree
-* $earlyyears_bursarywithtwoone$ if you have a 2:1 degree
-* $earlyyears_bursarywithtwotwo$ if you have a 2:2 degree
+* $earlyyears_bursaries_withfirstclass$ if you have a first class degree
+* $earlyyears_bursaries_withtwoone$ if you have a 2:1 degree
+* $earlyyears_bursaries_withtwotwo$ if you have a 2:2 degree
 
 You are not eligible for a bursary if you do not have these qualifications or if you're completing any other EYITT routes.
 
