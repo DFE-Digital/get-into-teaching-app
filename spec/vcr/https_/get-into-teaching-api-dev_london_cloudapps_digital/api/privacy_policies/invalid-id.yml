@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-api-dev.london.cloudapps.digital/api/privacy_policies/invalid-id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swagger-Codegen/1.0.6/ruby
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Authorization:
+      - ENV[api_key]
+      Expect:
+      - ''
+  response:
+    status:
+      code: 400
+      message: ''
+    headers:
+      date:
+      - Sat, 22 Aug 2020 13:27:21 GMT
+      content-type:
+      - application/problem+json; charset=utf-8
+      content-length:
+      - '220'
+      server:
+      - Kestrel
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-vcap-request-id:
+      - cc2f367c-31f3-4e7e-77fe-5508573a881b
+    body:
+      encoding: UTF-8
+      string: '{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One
+        or more validation errors occurred.","status":400,"traceId":"|b5d48eaf-4e740aa9776a1edc.","errors":{"id":["The
+        value ''invalid-id'' is not valid."]}}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://get-into-teaching-api-dev.london.cloudapps.digital/api/privacy_policies/invalid-id
+  recorded_at: Sat, 22 Aug 2020 13:27:21 GMT
+recorded_with: VCR 6.0.0

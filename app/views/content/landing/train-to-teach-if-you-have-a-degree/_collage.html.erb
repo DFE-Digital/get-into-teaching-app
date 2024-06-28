@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="grey col">
+    <section class="col col-full-content">
+      <div class="inset">
+        <p class="col-720">
+        If you have a degree, you can do postgraduate teacher training to get qualified teacher status (QTS). Postgraduate teacher training:
+        </p>
+
+        <%= render Content::ChecklistCollageComponent.new(
+          checklist: [
+            "takes 9 months full time, or up to 24 months part time",
+            "typically includes 120 days of classroom experience",
+            "involves both practical and theoretical learning"
+          ],
+          image_paths: [
+            "static/images/content/landing/train-to-teach-if-you-have-a-degree-2.jpg",
+          ]
+        ) do %>
+        <% end %>
+      </div>
+    </section>
+  </div>
+</div>

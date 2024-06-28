@@ -1,5 +1,5 @@
 import CookiePreferences from '../javascript/cookie_preferences';
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 
 export default class extends Controller {
   static targets = ['category'];
@@ -15,7 +15,7 @@ export default class extends Controller {
       const allowed = this.cookiePreferences.allowed(categoryName);
       const value = allowed ? '1' : '0';
       const radio = category.querySelector(
-        'input[type="radio"][value="' + value + '"]'
+        'input[type="radio"][value="' + value + '"]',
       );
 
       if (radio) radio.checked = true;

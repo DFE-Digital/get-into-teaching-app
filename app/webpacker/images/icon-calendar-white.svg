@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-icon-calendar-white.svg);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-icon-calendar-white.svg">
+      <rect width="38" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="icon-calendar-white.svg" class="cls-1">
+    <g id="icon-calendar" transform="translate(0.561 0.561)">
+      <path id="Path_1313" data-name="Path 1313" class="cls-2" d="M1349.182,445.433c-.635-1.27-1.145-2.541-1.78-3.815-.635,1.27-1.145,2.541-1.781,3.815l-4.2.382c1.018.89,2.162,1.906,3.179,2.8-.254,1.4-.635,2.8-.891,4.2,1.271-.763,2.416-1.4,3.688-2.162,1.27.763,2.416,1.4,3.688,2.162-.254-1.4-.635-2.8-.891-4.2,1.018-.89,2.162-1.906,3.179-2.8a23.413,23.413,0,0,1-4.2-.382" transform="translate(-1329.09 -423.052)"/>
+      <path id="Path_1314" data-name="Path 1314" class="cls-2" d="M1334.277,394.479v-3.815h-3.815v3.815h-8.9v-3.815h-3.815v3.815h-10.173v33.063h36.878V394.479Zm-16.532,3.815v2.541h3.815v-2.541h8.9v2.541h3.815v-2.541h6.358v5.086h-29.248v-5.086Zm-6.358,8.9h29.248v16.532h-29.248Z" transform="translate(-1307.572 -390.664)"/>
+    </g>
+  </g>
+</svg>

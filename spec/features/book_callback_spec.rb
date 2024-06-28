@@ -49,6 +49,7 @@ RSpec.feature "Book a callback", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Choose a time for your callback"
+    expect(page).not_to have_text("We can't call you back at the moment")
     expect(find_field("Phone number").value).to eq(response.address_telephone)
     # Select time in local time zone (London)
     select "11:00am to 12:00pm", from: "Select your preferred day and time for a callback"
@@ -56,10 +57,6 @@ RSpec.feature "Book a callback", type: :feature do
 
     expect(page).to have_text "Tell us what you’d like to talk to us about"
     select "Routes into teaching", from: "Choose an option"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Book your callback"
 
     expect(page).to have_title(callback_page_title)
@@ -100,7 +97,7 @@ RSpec.feature "Book a callback", type: :feature do
 
     expect(page).to have_text "Please enter the latest verification code"
 
-    click_link "Send another code to verify my details."
+    click_link "Send another code to verify my details"
     expect(page).to have_text "We've sent you another email"
 
     fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
@@ -109,24 +106,18 @@ RSpec.feature "Book a callback", type: :feature do
     expect(page).to have_text "Choose a time for your callback"
     click_on "Next step"
     expect(page).to have_text "Enter your telephone number"
-    fill_in "Phone number", with: "12"
+    fill_in "Phone number", with: "abc123def"
     click_on "Next step"
-    expect(page).to have_text "Enter a valid phone number"
+    expect(page).to have_text "Enter your telephone number in the correct format"
     fill_in "Phone number", with: "123456789"
     # Select time in local time zone (London)
     select "11:00am to 12:00pm", from: "Select your preferred day and time for a callback"
     click_on "Next step"
 
     expect(page).to have_text "Tell us what you’d like to talk to us about"
-    click_on "Next step"
+    click_on "Book your callback"
     expect(page).to have_text "Choose an option"
     select "Routes into teaching", from: "Choose an option"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    click_on "Book your callback"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    check "Yes"
     click_on "Book your callback"
 
     expect(page).to have_title(callback_page_title)
@@ -171,6 +162,21 @@ RSpec.feature "Book a callback", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Sorry, a technical problem means we can’t book your callback right now."
+  end
+
+  context "when here are no callback slots available" do
+    before do
+      allow_any_instance_of(GetIntoTeachingApiClient::CallbackBookingQuotasApi).to \
+        receive(:get_callback_booking_quotas).and_return([])
+    end
+
+    scenario "Viewing the callback page" do
+      visit callbacks_step_path(:callback)
+
+      expect(page).not_to have_text("Choose a time for your callback")
+      expect(page).to have_text("We can't call you back at the moment")
+      expect(page).to have_link("Call us on: 0800 389 2500")
+    end
   end
 
   def fill_in_personal_details_step(

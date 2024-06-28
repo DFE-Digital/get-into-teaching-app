@@ -3,8 +3,14 @@
 
 <section class="container supplementary">
   <header>
-    <span class="caption">Error 422</span>
-    <h1><%= @page_title %></h1>
+    <%= render Content::HeadingComponent.new(
+      heading: @page_title,
+      heading_size: :xxl,
+      caption: "Error 422",
+      caption_size: :xxl,
+      caption_purple: false,
+      caption_bold: false
+    ) %>
   </header>
 
   <article class="text-content">

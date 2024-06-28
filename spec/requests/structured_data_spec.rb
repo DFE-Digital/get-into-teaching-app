@@ -51,7 +51,7 @@ describe "Google Structured Data", type: :request do
   end
 
   context "when not viewing the home page" do
-    let(:path) { "/ways-to-train" }
+    let(:path) { "/train-to-be-a-teacher" }
 
     before { get path }
 
@@ -75,7 +75,7 @@ describe "Google Structured Data", type: :request do
   end
 
   context "when viewing a page without a how_to section of frontmatter" do
-    let(:path) { "/ways-to-train" }
+    let(:path) { "/train-to-be-a-teacher" }
 
     before { get path }
 

@@ -1,15 +1,11 @@
 require "rails_helper"
 
-module CallsToAction
-  class WithWhiteSpaceComponent < ViewComponent::Base
-    def call
-      "  text  "
-    end
-  end
-end
-
 describe TemplateHandlers::Markdown, type: :view do
   subject { rendered }
+
+  let(:value_data) { Value.new("spec/fixtures/files/example_values/**/*.yml").data }
+
+  before { allow(Value).to receive(:data).and_return(value_data) }
 
   context "with generic markdown page" do
     let(:markdown) do
@@ -224,10 +220,10 @@ describe TemplateHandlers::Markdown, type: :view do
     it { is_expected.to have_css "abbr[title=\"Pay as you earn\"]", text: "PAYE" }
   end
 
-  describe "injecting rich content" do
+  describe "injecting CTAs" do
     let(:front_matter_with_calls_to_action) do
       {
-        "title": "Page with rich content (calls to action)",
+        "title": "Page with calls to action",
         "calls_to_action" => {
           "big-warning" => {
             "name" => "simple",
@@ -237,8 +233,10 @@ describe TemplateHandlers::Markdown, type: :view do
               "link_target" => "#",
               "icon" => "icon-arrow",
             },
+            "small-warning" => {
+              "name" => "attachment",
+            },
           },
-          "small-warning" => "chat_online",
         },
       }
     end
@@ -272,24 +270,6 @@ describe TemplateHandlers::Markdown, type: :view do
     specify "unregistered calls to action should be omitted" do
       expect(rendered).not_to have_content(/one-that-does-not-exist/)
     end
-
-    context "when the rich content has surrounding white space" do
-      let(:front_matter_with_calls_to_action) do
-        {
-          "title": "Page with rich content (calls to action)",
-          "calls_to_action" => {
-            "big-warning" => "with_white_space",
-            "small-warning" => "with_white_space",
-          },
-        }
-      end
-
-      it "strips the white space" do
-        rendered_component = CallsToAction::WithWhiteSpaceComponent.new.call
-        expect(rendered).to include(rendered_component.strip)
-        expect(rendered).not_to include(rendered_component)
-      end
-    end
   end
 
   describe "injecting images" do
@@ -297,8 +277,8 @@ describe TemplateHandlers::Markdown, type: :view do
       {
         "title": "Page with images",
         "images" => {
-          "first" => { "path" => "media/images/content/hero-images/0001.jpg", "other_attr" => "ignore" },
-          "second" => { "path" => "media/images/content/hero-images/0002.jpg", "other_attr" => "ignore" },
+          "first" => { "path" => "static/images/content/hero-images/0001.jpg", "other_attr" => "ignore" },
+          "second" => { "path" => "static/images/content/hero-images/0002.jpg", "other_attr" => "ignore" },
         },
       }
     end
@@ -326,10 +306,153 @@ describe TemplateHandlers::Markdown, type: :view do
 
       %w[0001 0002].each do |photo|
         expect(rendered).to have_css("img")
-        expect(rendered).to match(%r{src="/packs-test/v1/media/images/content/hero-images/#{photo}-.*.jpg"})
-        key = Image.new.alt("media/images/content/hero-images/#{photo}.jpg")
+        expect(rendered).to match(%r{src="/packs-test/v1/static/images/content/hero-images/#{photo}-.*.jpg"})
+        key = Image.new.alt("static/images/content/hero-images/#{photo}.jpg")
         expect(rendered).to have_css(%(img[alt="#{key}"]))
       end
+    end
+  end
+
+  describe "injecting content view components" do
+    let(:front_matter_with_images) do
+      {
+        "title": "Page with view components",
+        "quote" => {
+          "quote-1" => { "text" => "quote 1", "name" => "name", "job_title" => "job title", "inline" => "left" },
+        },
+        "inset_text" => {
+          "inset-text-1" => { "text" => "text 1" },
+          "inset-text-2" => { "text" => "text 2" },
+        },
+        "youtube_video" => {
+          "video-1" => { "id" => "abc123", "title" => "Video title" },
+        },
+        "steps" => {
+          "steps-1" => { "numeric" => true, "steps" => { "First step" => { "partial" => "/content/home/test_content" } } },
+        },
+      }
+    end
+
+    let :markdown do
+      <<~MARKDOWN
+        # Some page
+
+        $quote-1$
+
+        Some text
+
+        $inset-text-1$
+
+        Some more text
+
+        $inset-text-2$
+
+        Some more text
+
+        $video-1$
+
+        Some more text
+
+        $steps-1$
+      MARKDOWN
+    end
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter_with_images)
+      stub_template "page_with_rich_content.md" => markdown
+      render template: "page_with_rich_content"
+    end
+
+    subject { rendered }
+
+    it "contains the specified view components" do
+      is_expected.to have_css(".quote", text: "quote 1")
+      is_expected.to have_css(".inset-text", text: "text 1")
+      is_expected.to have_css(".inset-text", text: "text 2")
+      is_expected.to have_css("iframe[title='Video title']")
+      is_expected.to have_css("ol.steps")
+    end
+  end
+
+  describe "injecting values" do
+    let(:front_matter) { { "title": "Page with view components" } }
+
+    let :markdown do
+      <<~MARKDOWN
+        # Some page
+
+        data1_example_amount: $data1_example_amount$
+
+        Some text
+
+        data2_example_string: $data2_example_string$
+      MARKDOWN
+    end
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter)
+      stub_template "page_with_rich_content.md" => markdown
+      render template: "page_with_rich_content"
+    end
+
+    subject { rendered }
+
+    it "contains the specified view components" do
+      is_expected.to have_text("Some page")
+      is_expected.to have_text("data1_example_amount: £1,234.56")
+      is_expected.to have_text("Some text")
+      is_expected.to have_text("data2_example_string: Hello World!")
+    end
+  end
+
+  describe "injecting content view components with values" do
+    let(:front_matter_with_images) do
+      {
+        "title": "Page with view components and values",
+        "quote" => {
+          "quote-1" => { "text" => "quote with a value $data1_example_amount$", "name" => "name", "job_title" => "job title", "inline" => "left" },
+        },
+        "inset_text" => {
+          "inset-text-1" => { "text" => "text with a value $data1_example_amount$" },
+        },
+        "youtube_video" => {
+          "video-1" => { "id" => "abc123", "title" => "Video title with a value $data2_example_string$" },
+        },
+      }
+    end
+
+    let :markdown do
+      <<~MARKDOWN
+        # Some page
+
+        $quote-1$
+
+        Some text
+
+        $inset-text-1$
+
+        Some more text
+
+        $video-1$
+
+        Some more text
+
+        $steps-1$
+      MARKDOWN
+    end
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter_with_images)
+      stub_template "page_with_rich_content.md" => markdown
+      render template: "page_with_rich_content"
+    end
+
+    subject { rendered }
+
+    it "contains the specified view components" do
+      is_expected.to have_css(".quote", text: "quote with a value £1,234.56")
+      is_expected.to have_css(".inset-text", text: "text with a value £1,234.56")
+      is_expected.to have_css("iframe[title='Video title with a value Hello World!']")
     end
   end
 end

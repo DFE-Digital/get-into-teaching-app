@@ -6,10 +6,6 @@
     background-color: $grey;
   }
 
-  &--yellow {
-    background-color: $yellow;
-  }
-
   &__content {
     padding: 3em 0;
   }
@@ -21,7 +17,7 @@
     }
   }
 
-  &__title {
-    transform: translate(0, -50%);
+  h2 {
+    @extend .heading--box-purple, .heading--overlap;
   }
 }

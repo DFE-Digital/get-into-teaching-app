@@ -1,0 +1,39 @@
+ul.fact-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: $indent-amount;
+  flex-direction: column;
+  margin: 2 * $indent-amount 0;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
+
+  li {
+    border: 3px solid $purple;
+    padding: $indent-amount * .5;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 0;
+
+    img {
+      height: 25px;
+      width: auto;
+    }
+
+    strong {
+      @include font-size("large");
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    a {
+      @extend .link--black, .link--chevron;
+    }
+  }
+}

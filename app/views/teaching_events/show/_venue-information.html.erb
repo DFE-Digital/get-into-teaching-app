@@ -1,5 +1,5 @@
 <section class="teaching-event__venue-information">
-  <h2>Venue information</h2>
+  <h2 class="heading-s">Venue information</h2>
 
   <%= tag.p(safe_join(@event.venue_address, tag.br)) %>
 
@@ -7,7 +7,7 @@
 
   <ul>
     <li>
-      <%= link_to("Open in Google Maps", "https://maps.google.com/?q=#{event_address(@event)}", target: "blank") %>
+      <%= link_to("Open venue map in Google Maps", "https://maps.google.com/?q=#{event_address(@event)}", target: "blank") %>
     </li>
     <% if display_event_provider_info?(@event) && @event.provider_website_url %>
       <li>

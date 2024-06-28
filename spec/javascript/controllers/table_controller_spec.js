@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import TableController from 'table_controller.js';
 
 describe('TableController', () => {

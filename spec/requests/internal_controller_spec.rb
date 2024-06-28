@@ -1,24 +1,18 @@
 require "rails_helper"
 
 describe InternalController, type: :request do
-  let(:publisher_username) { "publisher_username" }
-  let(:publisher_password) { "publisher_password" }
-  let(:author_username) { "author_username" }
-  let(:author_password) { "author_password" }
-
   before do
-    BasicAuth.class_variable_set(:@@credentials, nil)
-
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-      .to receive(:search_teaching_events_grouped_by_type).and_return([])
+      .to receive(:search_teaching_events).and_return([])
 
-    allow(Rails.application.config.x).to receive(:http_auth) do
-      "#{publisher_username}|#{publisher_password}|publisher,#{author_username}|#{author_password}|author"
-    end
+    allow_basic_auth_users([
+      { username: "publisher", password: "password1", role: "publisher" },
+      { username: "author", password: "password2", role: "author" },
+    ])
   end
 
   it "rejects unauthenticated users" do
-    get internal_events_path, headers: generate_auth_headers(:bad_credentials)
+    get internal_events_path, headers: basic_auth_headers("publisher", "wrong-password")
 
     assert_response :unauthorized
   end
@@ -30,17 +24,17 @@ describe InternalController, type: :request do
   end
 
   it "sets the account role of publishers" do
-    get internal_events_path, headers: generate_auth_headers(:publisher)
+    get internal_events_path, headers: basic_auth_headers("publisher", "password1")
 
-    expect(session[:user].username).to eq(publisher_username)
+    expect(session[:user].username).to eq("publisher")
     expect(session[:user].publisher?).to be true
     assert_response :success
   end
 
   it "sets the account role of authors" do
-    get internal_events_path, headers: generate_auth_headers(:author)
+    get internal_events_path, headers: basic_auth_headers("author", "password2")
 
-    expect(session[:user].username).to eq(author_username)
+    expect(session[:user].username).to eq("author")
     expect(session[:user].author?).to be true
     assert_response :success
   end

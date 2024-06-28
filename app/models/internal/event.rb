@@ -10,10 +10,10 @@ module Internal
     attribute :readable_id, :string
     attribute :status_id,
               :integer,
-              default: EventStatus.pending_id
+              default: Crm::EventStatus.pending_id
     attribute :type_id,
               :integer,
-              default: EventType.school_or_university_event_id
+              default: Crm::EventType.school_or_university_event_id
     attribute :name, :string
     attribute :summary, :string
     attribute :description, :string
@@ -24,7 +24,6 @@ module Internal
     attribute :provider_organiser, :string, default: nil
     attribute :provider_target_audience, :string, default: nil
     attribute :provider_website_url, :string, default: nil
-    attribute :scribble_id, :string, default: nil
     attribute :building
     attribute :venue_type, default: VENUE_TYPES[:none]
 
@@ -43,7 +42,6 @@ module Internal
     validates :provider_organiser, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
     validates :provider_target_audience, presence: true, allow_blank: false, length: { maximum: 500 }, if: -> { provider_event? }
     validates :provider_website_url, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
-    validates :scribble_id, length: { maximum: 300 }, if: -> { online_event? }
     validates :venue_type, inclusion: { in: VENUE_TYPES.values }
     validate :dates_in_future
     validate :end_after_start
@@ -116,11 +114,11 @@ module Internal
     end
 
     def provider_event?
-      type_id == EventType.school_or_university_event_id
+      type_id == Crm::EventType.school_or_university_event_id
     end
 
     def online_event?
-      type_id == EventType.online_event_id
+      type_id == Crm::EventType.online_event_id
     end
 
   private

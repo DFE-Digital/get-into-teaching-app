@@ -6,6 +6,8 @@ export default class Gtm {
   }
 
   init() {
+    this.containerInitialized = false;
+
     this.initWindow();
     this.sendDefaultConsent();
     this.initContainer();
@@ -29,6 +31,12 @@ export default class Gtm {
   }
 
   initContainer() {
+    if (!this.cookiePreferences.cookieSet || this.containerInitialized) {
+      return;
+    }
+
+    this.containerInitialized = true;
+
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -44,6 +52,7 @@ export default class Gtm {
   listenForConsentChanges() {
     document.addEventListener('cookies:accepted', () => {
       window.gtag('consent', 'update', this.consent());
+      this.initContainer();
     });
   }
 
@@ -66,7 +75,7 @@ export default class Gtm {
   }
 
   consentValue(category) {
-    return new CookiePreferences().allowedCategories.includes(category)
+    return this.cookiePreferences.allowedCategories.includes(category)
       ? 'granted'
       : 'denied';
   }
@@ -74,5 +83,9 @@ export default class Gtm {
   get originalLocation() {
     const l = window.location;
     return `${l.protocol}://${l.hostname}${l.pathname}${l.search}`;
+  }
+
+  get cookiePreferences() {
+    return new CookiePreferences();
   }
 }

@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Callbacks::Wizard do
-  subject { described_class.new wizardstore, "privacy_policy" }
+  subject { described_class.new wizardstore, "talking_points" }
 
   let(:uuid) { SecureRandom.uuid }
   let(:store) do
@@ -14,7 +14,7 @@ describe Callbacks::Wizard do
       },
     }
   end
-  let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
+  let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
 
   describe ".steps" do
     subject { described_class.steps }
@@ -23,10 +23,9 @@ describe Callbacks::Wizard do
       is_expected.to eql [
         Callbacks::Steps::PersonalDetails,
         Callbacks::Steps::MatchbackFailed,
-        ::DFEWizard::Steps::Authenticate,
+        ::GITWizard::Steps::Authenticate,
         Callbacks::Steps::Callback,
         Callbacks::Steps::TalkingPoints,
-        Callbacks::Steps::PrivacyPolicy,
       ]
     end
   end
@@ -40,7 +39,11 @@ describe Callbacks::Wizard do
   describe "#complete!" do
     let(:request) do
       GetIntoTeachingApiClient::GetIntoTeachingCallback.new(
-        email: "email@address.com", first_name: "John", last_name: "Doe", talking_points: "Something",
+        email: "email@address.com",
+        first_name: "John",
+        last_name: "Doe",
+        talking_points: "Something",
+        accepted_policy_id: "123",
       )
     end
 
@@ -59,6 +62,7 @@ describe Callbacks::Wizard do
     it "logs the request model (filtering sensitive attributes)" do
       filtered_json = {
         "candidateId" => nil,
+        "acceptedPolicyId" => "123",
         "email" => "[FILTERED]",
         "firstName" => "[FILTERED]",
         "lastName" => "[FILTERED]",

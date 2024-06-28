@@ -6,6 +6,12 @@
   <hr class="group__card__divider">
 
   <div class="group__card__content">
+    <% if status %>
+      <div class="group__card__fields">
+       <p><strong><%= status %></strong></p>
+      </div>
+    <% end %>
+
     <% for field, value in fields %>
       <div class="group__card__fields">
         <span><%= field.humanize %>:</span>

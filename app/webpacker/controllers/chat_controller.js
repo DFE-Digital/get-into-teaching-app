@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 
 export default class extends Controller {
   static targets = ['online', 'offline', 'unavailable', 'chat'];
@@ -32,6 +32,7 @@ export default class extends Controller {
   }
 
   start(e) {
+    this.previousTarget = e.target;
     e.preventDefault();
     this.loadChat();
   }
@@ -46,7 +47,6 @@ export default class extends Controller {
     this.waitForZendeskScript(() => {
       this.showWebWidget();
       this.waitForWebWidget(() => {
-        document.getElementById('webWidget').focus();
         this.chatTarget.textContent = 'Chat online';
       });
     });
@@ -66,7 +66,7 @@ export default class extends Controller {
 
   waitForWebWidget(callback) {
     const interval = setInterval(() => {
-      if (document.getElementById('webWidget')) {
+      if (window.zEACLoaded) {
         clearInterval(interval);
         // Small delay to account for the chat box animating in.
         setTimeout(() => {
@@ -78,7 +78,7 @@ export default class extends Controller {
 
   waitForZendeskScript(callback) {
     const interval = setInterval(() => {
-      if (window.$zopim && window.$zopim.livechat) {
+      if (window.zEACLoaded) {
         clearInterval(interval);
         callback();
       }
@@ -86,7 +86,7 @@ export default class extends Controller {
   }
 
   showWebWidget() {
-    window.$zopim.livechat.window.show();
+    window.zE('messenger', 'open');
   }
 
   get zendeskScriptLoaded() {

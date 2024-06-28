@@ -35,7 +35,7 @@ describe TeachingEvents::Search do
           it { is_expected.to allow_value(val).for(:postcode) }
         end
 
-        [nil, "", "M", "Manchester", "M1-2WD"].each do |val|
+        %w[M Manchester M1-2WD].each do |val|
           it { is_expected.not_to allow_value(val).for(:postcode) }
         end
       end
@@ -61,16 +61,65 @@ describe TeachingEvents::Search do
     end
   end
 
+  describe "#get_into_teaching_event?" do
+    let(:type) { %w[onlineqa git] }
+
+    subject { described_class.new(type: type) }
+
+    it { is_expected.to be_get_into_teaching_event }
+
+    context "when type does not contain get into teaching" do
+      let(:type) { %w[onlineqa] }
+
+      it { is_expected.not_to be_get_into_teaching_event }
+    end
+
+    context "when the type has not been set" do
+      let(:type) { nil }
+
+      it { is_expected.not_to be_get_into_teaching_event }
+    end
+  end
+
+  describe "online/in-person toggling" do
+    let(:online) { nil }
+
+    subject { described_class.new(online: online) }
+
+    it { is_expected.not_to be_online_only }
+    it { is_expected.not_to be_in_person_only }
+
+    context "when online only" do
+      let(:online) { ["true", ""] }
+
+      it { is_expected.to be_online_only }
+      it { is_expected.not_to be_in_person_only }
+    end
+
+    context "when in-person only" do
+      let(:online) { ["false", ""] }
+
+      it { is_expected.not_to be_online_only }
+      it { is_expected.to be_in_person_only }
+    end
+
+    context "when online and in-person" do
+      let(:online) { ["true", "false", ""] }
+
+      it { is_expected.not_to be_online_only }
+      it { is_expected.not_to be_in_person_only }
+    end
+  end
+
   describe "#results" do
-    ttt           = EventType.train_to_teach_event_id
-    qt            = EventType.question_time_event_id
-    online        = EventType.online_event_id
-    school_or_uni = EventType.school_or_university_event_id
+    git           = "git"
+    online        = "onlineqa"
+    school_or_uni = "provider"
 
     let(:fake_api) do
       instance_double(
         GetIntoTeachingApiClient::TeachingEventsApi,
-        search_teaching_events_grouped_by_type: [],
+        search_teaching_events: [],
       )
     end
 
@@ -137,21 +186,21 @@ describe TeachingEvents::Search do
       ),
 
       OpenStruct.new(
-        description: "Train to Teach and Online",
-        input: { type: [ttt, online].map(&:to_s) },
-        expected_conditions: { type_ids: [ttt, online] },
+        description: "Get Into Teaching and Online",
+        input: { type: [git, online].map(&:to_s) },
+        expected_conditions: { type_ids: Crm::EventType.lookup_by_query_params(git, online) },
       ),
 
       OpenStruct.new(
-        description: "School or University or Question Time",
-        input: { type: [qt, school_or_uni].map(&:to_s) },
-        expected_conditions: { type_ids: [qt, school_or_uni] },
+        description: "School or University or Get Into Teaching",
+        input: { type: [git, school_or_uni].map(&:to_s) },
+        expected_conditions: { type_ids: Crm::EventType.lookup_by_query_params(git, school_or_uni) },
       ),
 
       OpenStruct.new(
         description: "All types",
-        input: { type: [qt, school_or_uni, ttt, online].map(&:to_s) },
-        expected_conditions: { type_ids: [qt, school_or_uni, ttt, online] },
+        input: { type: [school_or_uni, git, online].map(&:to_s) },
+        expected_conditions: { type_ids: Crm::EventType.lookup_by_query_params(school_or_uni, git, online) },
       ),
     ].each do |query|
       context "#{query.description} (#{query.input})" do
@@ -160,7 +209,7 @@ describe TeachingEvents::Search do
         subject! { described_class.new(**query.input).results }
 
         specify "passes the expected values to the search API (#{query.expected_conditions})" do
-          expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(query.expected_conditions))
+          expect(fake_api).to have_received(:search_teaching_events).with(hash_including(query.expected_conditions))
         end
       end
     end
@@ -174,7 +223,7 @@ describe TeachingEvents::Search do
 
   describe "#start_before" do
     specify "is 6 months in the future" do
-      expect(described_class.new.send(:start_before)).to be_within(1.second).of(6.months.from_now)
+      expect(described_class.new.send(:start_before)).to be_within(1.second).of(24.months.from_now)
     end
   end
 end

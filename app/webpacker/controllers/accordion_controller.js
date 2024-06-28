@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 
 export default class extends Controller {
   static targets = ['header', 'content'];
@@ -12,7 +12,7 @@ export default class extends Controller {
 
   toggle(event) {
     this.toggleCollapsable(
-      event.target.closest('.step').getAttribute('data-id')
+      event.target.closest('.step').getAttribute('data-id'),
     );
   }
 

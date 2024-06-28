@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import ChatController from 'chat_controller.js';
 
 describe('ChatController', () => {
@@ -7,6 +7,7 @@ describe('ChatController', () => {
   afterEach(() => jest.useRealTimers());
 
   let chatShowSpy;
+  let chatOpenSpy;
 
   const setBody = () => {
     document.body.innerHTML = `
@@ -40,8 +41,10 @@ describe('ChatController', () => {
 
   describe('when the chat is online', () => {
     beforeEach(() => {
-      chatShowSpy = jest.fn();
-      jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ $zopim: { livechat: { window: { show: chatShowSpy } } } }));
+      chatShowSpy = jest.fn(() => true);
+      chatOpenSpy = jest.fn();
+
+      jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ zE: chatOpenSpy, zEACLoaded: chatShowSpy }));
 
       setBody();
       setCurrentTime('2021-01-01 10:00');
@@ -60,16 +63,14 @@ describe('ChatController', () => {
     describe('when clicking the chat button', () => {
       it('appends the Zendesk snippet, shows a loading message and then opens the chat window', () => {
         const button = document.querySelector('a');
-        expect(document.activeElement.id).not.toEqual("webWidget");
         button.click();
         expect(document.querySelector('#ze-snippet')).not.toBeNull();
         expect(getButtonText()).toEqual("Starting chat...");
         jest.runOnlyPendingTimers(); // Timer for script loading,
         jest.runOnlyPendingTimers(); // Timer to wait for the widget to load.
         jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
-        expect(chatShowSpy).toHaveBeenCalled();
+        expect(chatOpenSpy).toHaveBeenCalled();
         expect(getButtonText()).toEqual("Chat online");
-        expect(document.activeElement.id).toEqual("webWidget");
       });
     });
 
@@ -81,7 +82,7 @@ describe('ChatController', () => {
         jest.runOnlyPendingTimers(); // Timer for script loading,
         jest.runOnlyPendingTimers(); // Timer to wait for the widget to load.
         jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
-        expect(chatShowSpy).toHaveBeenCalled();
+        expect(chatOpenSpy).toHaveBeenCalled();
         expect(button.textContent).toEqual("Chat online");
         button.click();
         expect(button.textContent).toEqual("Chat online");

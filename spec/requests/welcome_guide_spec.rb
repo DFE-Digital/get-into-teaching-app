@@ -73,10 +73,10 @@ describe "Welcome guide landing page", type: :request do
       get("/welcome/email/subject/#{subject_key}")
       get("/welcome/my-journey-into-teaching")
 
-      expect(response.body).to match(metadata.name)
-      expect(response.body).to match(metadata.shoutout_name)
-      expect(response.body).to match(metadata.shoutout_text)
-      expect(response.body).to match(metadata.story_text)
+      expect(response.body).to include(metadata.name)
+      expect(response.body).to include(metadata.shoutout_name)
+      expect(response.body).to include(metadata.shoutout_text)
+      expect(response.body).to include(metadata.story_text)
     end
   end
 end

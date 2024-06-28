@@ -26,6 +26,7 @@ module Rack
         issue_verification_code_paths = [
           %r{mailinglist/signup/name},
           %r{events/.*/apply/personal_details},
+          %r{teacher-training-adviser/sign_up/identity},
         ]
 
         path_issues_verification_code = issue_verification_code_paths.any? do |pattern|
@@ -42,9 +43,15 @@ module Rack
         req.ip if req.get? && path_resends_verification_code
       end
 
+      # Throttle teacher training adviser sign ups by IP (5rpm)
+      throttle("teacher_training_adviser_sign_up req/ip", limit: 5, period: 1.minute) do |req|
+        req.ip if (req.patch? || req.put?) && req.path == "/teacher-training-adviser/sign_up/review_answers"
+      end
+
       # Throttle mailing list sign ups by IP (5rpm)
       throttle("mailing_list_sign_up req/ip", limit: 5, period: 1.minute) do |req|
-        req.ip if (req.patch? || req.put?) && req.path == "/mailinglist/signup/privacy_policy"
+        # The sign up endpoint can be either of these two steps.
+        req.ip if (req.patch? || req.put?) && req.path == "/mailinglist/signup/postcode" || req.path == "/mailinglist/signup/subject"
       end
 
       # Throttle event sign ups by IP (5rpm)
@@ -62,7 +69,7 @@ module Rack
       end
 
       # Throttle event upsert by IP (5rpm)
-      throttle("event upsert", limit: 5, period: 1.minute) do |req|
+      throttle("event upsert", limit: 10, period: 20.seconds) do |req|
         event_upsert_paths = [
           %r{/internal/events},
           %r{/internal/approve},

@@ -1,0 +1,35 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: git_service_dev
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: <%= ENV['DB_HOSTNAME'] %>
+  port: <%= ENV['DB_PORT'] %>
+
+test:
+  <<: *default
+  database: git_service_test<%= ENV['TEST_ENV_NUMBER'] %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: <%= ENV['DB_HOSTNAME'] %>
+  port: <%= ENV['DB_PORT'] %>
+
+production: &production
+  <<: *default
+  <% if ENV.key?("VCAP_APPLICATION") %>
+  url: <%= Rails.application.config.x.vcap_services.dig("postgres", 0, "credentials", "uri") %>
+  <% else %>
+  url: <%= ENV["DATABASE_URL"] %>
+  <% end %>
+
+rolling:
+  <<: *production
+
+preprod:
+  <<: *production

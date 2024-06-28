@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 
 export default class extends Controller {
   static targets = ['name', 'startAt', 'partialUrl', 'errorMessage'];
@@ -14,7 +14,7 @@ export default class extends Controller {
       this.toggleErrorMessageVisibility(false);
       this.partialUrlTarget.value = this.generatePartialUrl(
         startAtValue,
-        nameValue
+        nameValue,
       );
     }
   }

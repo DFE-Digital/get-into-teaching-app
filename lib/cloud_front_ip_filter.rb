@@ -17,6 +17,8 @@ private
     cloudfront_proxies.any? do |range|
       range.include? ip
     end
+  rescue IPAddr::InvalidAddressError
+    false
   end
 
   def cloudfront_proxies

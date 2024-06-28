@@ -1,0 +1,221 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-api-dev.london.cloudapps.digital/api/callback_booking_quotas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swagger-Codegen/1.0.6/ruby
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Authorization:
+      - ENV[api_key]
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      date:
+      - Wed, 19 Aug 2020 06:30:15 GMT
+      content-type:
+      - application/json; charset=utf-8
+      server:
+      - Kestrel
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-vcap-request-id:
+      - c0a3fb0b-b879-4691-64d3-c92870430b2a
+    body:
+      encoding: UTF-8
+      string: '[{"timeSlot":"9am - 9:30am","day":"Wednesday 19 August","startAt":"2020-08-19T08:00:00Z","endAt":"2020-08-19T08:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"3d543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9:30am
+        - 10am","day":"Wednesday 19 August","startAt":"2020-08-19T08:30:00Z","endAt":"2020-08-19T09:00:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"3f543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10am
+        - 10:30am","day":"Wednesday 19 August","startAt":"2020-08-19T09:00:00Z","endAt":"2020-08-19T09:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"41543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10:30am
+        - 11am","day":"Wednesday 19 August","startAt":"2020-08-19T09:30:00Z","endAt":"2020-08-19T10:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"43543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11am
+        - 11:30am","day":"Wednesday 19 August","startAt":"2020-08-19T10:00:00Z","endAt":"2020-08-19T10:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"45543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11:30am
+        - Midday","day":"Wednesday 19 August","startAt":"2020-08-19T10:30:00Z","endAt":"2020-08-19T11:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"47543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"Midday
+        - 12:30pm","day":"Wednesday 19 August","startAt":"2020-08-19T11:00:00Z","endAt":"2020-08-19T11:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"49543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"12:30pm
+        - 1pm","day":"Wednesday 19 August","startAt":"2020-08-19T11:30:00Z","endAt":"2020-08-19T12:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"4b543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1pm
+        - 1:30pm","day":"Wednesday 19 August","startAt":"2020-08-19T12:00:00Z","endAt":"2020-08-19T12:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"4d543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1:30pm
+        - 2pm","day":"Wednesday 19 August","startAt":"2020-08-19T12:30:00Z","endAt":"2020-08-19T13:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"4f543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2pm
+        - 2:30pm","day":"Wednesday 19 August","startAt":"2020-08-19T13:00:00Z","endAt":"2020-08-19T13:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"51543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2:30pm
+        - 3pm","day":"Wednesday 19 August","startAt":"2020-08-19T13:30:00Z","endAt":"2020-08-19T14:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"53543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3pm
+        - 3:30pm","day":"Wednesday 19 August","startAt":"2020-08-19T14:00:00Z","endAt":"2020-08-19T14:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"55543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3:30pm
+        - 4pm","day":"Wednesday 19 August","startAt":"2020-08-19T14:30:00Z","endAt":"2020-08-19T15:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"57543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4pm
+        - 4:30pm","day":"Wednesday 19 August","startAt":"2020-08-19T15:00:00Z","endAt":"2020-08-19T15:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"59543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4:30pm
+        - 5pm","day":"Wednesday 19 August","startAt":"2020-08-19T15:30:00Z","endAt":"2020-08-19T16:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"5b543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5pm
+        - 5:30pm","day":"Wednesday 19 August","startAt":"2020-08-19T16:00:00Z","endAt":"2020-08-19T16:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"5d543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5:30pm
+        - 6pm","day":"Wednesday 19 August","startAt":"2020-08-19T16:30:00Z","endAt":"2020-08-19T17:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"5f543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6pm
+        - 6:30pm","day":"Wednesday 19 August","startAt":"2020-08-19T17:00:00Z","endAt":"2020-08-19T17:30:00Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"61543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6:30pm
+        - 7pm","day":"Wednesday 19 August","startAt":"2020-08-19T17:30:00Z","endAt":"2020-08-19T18:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"63543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9am
+        - 9:30am","day":"Thursday 20 August","startAt":"2020-08-20T08:00:00Z","endAt":"2020-08-20T08:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"65543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9:30am
+        - 10am","day":"Thursday 20 August","startAt":"2020-08-20T08:30:00Z","endAt":"2020-08-20T09:00:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"67543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10am
+        - 10:30am","day":"Thursday 20 August","startAt":"2020-08-20T09:00:00Z","endAt":"2020-08-20T09:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"69543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10:30am
+        - 11am","day":"Thursday 20 August","startAt":"2020-08-20T09:30:00Z","endAt":"2020-08-20T10:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"6b543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11am
+        - 11:30am","day":"Thursday 20 August","startAt":"2020-08-20T10:00:00Z","endAt":"2020-08-20T10:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"6d543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11:30am
+        - Midday","day":"Thursday 20 August","startAt":"2020-08-20T10:30:00Z","endAt":"2020-08-20T11:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"6f543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"Midday
+        - 12:30pm","day":"Thursday 20 August","startAt":"2020-08-20T11:00:00Z","endAt":"2020-08-20T11:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"71543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"12:30pm
+        - 1pm","day":"Thursday 20 August","startAt":"2020-08-20T11:30:00Z","endAt":"2020-08-20T12:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"73543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1pm
+        - 1:30pm","day":"Thursday 20 August","startAt":"2020-08-20T12:00:00Z","endAt":"2020-08-20T12:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"75543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1:30pm
+        - 2pm","day":"Thursday 20 August","startAt":"2020-08-20T12:30:00Z","endAt":"2020-08-20T13:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"77543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2pm
+        - 2:30pm","day":"Thursday 20 August","startAt":"2020-08-20T13:00:00Z","endAt":"2020-08-20T13:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"79543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2:30pm
+        - 3pm","day":"Thursday 20 August","startAt":"2020-08-20T13:30:00Z","endAt":"2020-08-20T14:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"7b543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3pm
+        - 3:30pm","day":"Thursday 20 August","startAt":"2020-08-20T14:00:00Z","endAt":"2020-08-20T14:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"7d543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3:30pm
+        - 4pm","day":"Thursday 20 August","startAt":"2020-08-20T14:30:00Z","endAt":"2020-08-20T15:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"7f543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4pm
+        - 4:30pm","day":"Thursday 20 August","startAt":"2020-08-20T15:00:00Z","endAt":"2020-08-20T15:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"81543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4:30pm
+        - 5pm","day":"Thursday 20 August","startAt":"2020-08-20T15:30:00Z","endAt":"2020-08-20T16:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"83543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5pm
+        - 5:30pm","day":"Thursday 20 August","startAt":"2020-08-20T16:00:00Z","endAt":"2020-08-20T16:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"85543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5:30pm
+        - 6pm","day":"Thursday 20 August","startAt":"2020-08-20T16:30:00Z","endAt":"2020-08-20T17:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"87543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6pm
+        - 6:30pm","day":"Thursday 20 August","startAt":"2020-08-20T17:00:00Z","endAt":"2020-08-20T17:30:00Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"89543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6:30pm
+        - 7pm","day":"Thursday 20 August","startAt":"2020-08-20T17:30:00Z","endAt":"2020-08-20T18:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"8b543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9am
+        - 9:30am","day":"Friday 21 August","startAt":"2020-08-21T08:00:00Z","endAt":"2020-08-21T08:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"8d543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9:30am
+        - 10am","day":"Friday 21 August","startAt":"2020-08-21T08:30:00Z","endAt":"2020-08-21T09:00:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"8f543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10am
+        - 10:30am","day":"Friday 21 August","startAt":"2020-08-21T09:00:00Z","endAt":"2020-08-21T09:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"91543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10:30am
+        - 11am","day":"Friday 21 August","startAt":"2020-08-21T09:30:00Z","endAt":"2020-08-21T10:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"93543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11am
+        - 11:30am","day":"Friday 21 August","startAt":"2020-08-21T10:00:00Z","endAt":"2020-08-21T10:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"95543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11:30am
+        - Midday","day":"Friday 21 August","startAt":"2020-08-21T10:30:00Z","endAt":"2020-08-21T11:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"97543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"Midday
+        - 12:30pm","day":"Friday 21 August","startAt":"2020-08-21T11:00:00Z","endAt":"2020-08-21T11:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"99543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"12:30pm
+        - 1pm","day":"Friday 21 August","startAt":"2020-08-21T11:30:00Z","endAt":"2020-08-21T12:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"9b543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1pm
+        - 1:30pm","day":"Friday 21 August","startAt":"2020-08-21T12:00:00Z","endAt":"2020-08-21T12:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"9d543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1:30pm
+        - 2pm","day":"Friday 21 August","startAt":"2020-08-21T12:30:00Z","endAt":"2020-08-21T13:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"9f543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2pm
+        - 2:30pm","day":"Friday 21 August","startAt":"2020-08-21T13:00:00Z","endAt":"2020-08-21T13:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"a1543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2:30pm
+        - 3pm","day":"Friday 21 August","startAt":"2020-08-21T13:30:00Z","endAt":"2020-08-21T14:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"a3543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3pm
+        - 3:30pm","day":"Friday 21 August","startAt":"2020-08-21T14:00:00Z","endAt":"2020-08-21T14:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"a5543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3:30pm
+        - 4pm","day":"Friday 21 August","startAt":"2020-08-21T14:30:00Z","endAt":"2020-08-21T15:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"a7543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4pm
+        - 4:30pm","day":"Friday 21 August","startAt":"2020-08-21T15:00:00Z","endAt":"2020-08-21T15:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"a9543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4:30pm
+        - 5pm","day":"Friday 21 August","startAt":"2020-08-21T15:30:00Z","endAt":"2020-08-21T16:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"ab543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5pm
+        - 5:30pm","day":"Friday 21 August","startAt":"2020-08-21T16:00:00Z","endAt":"2020-08-21T16:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"ad543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5:30pm
+        - 6pm","day":"Friday 21 August","startAt":"2020-08-21T16:30:00Z","endAt":"2020-08-21T17:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"af543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6pm
+        - 6:30pm","day":"Friday 21 August","startAt":"2020-08-21T17:00:00Z","endAt":"2020-08-21T17:30:00Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"b1543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6:30pm
+        - 7pm","day":"Friday 21 August","startAt":"2020-08-21T17:30:00Z","endAt":"2020-08-21T18:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"b3543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9am
+        - 9:30am","day":"Monday 24 August","startAt":"2020-08-24T08:00:00Z","endAt":"2020-08-24T08:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"b5543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9:30am
+        - 10am","day":"Monday 24 August","startAt":"2020-08-24T08:30:00Z","endAt":"2020-08-24T09:00:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"b7543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10am
+        - 10:30am","day":"Monday 24 August","startAt":"2020-08-24T09:00:00Z","endAt":"2020-08-24T09:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"b9543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10:30am
+        - 11am","day":"Monday 24 August","startAt":"2020-08-24T09:30:00Z","endAt":"2020-08-24T10:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"bb543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11am
+        - 11:30am","day":"Monday 24 August","startAt":"2020-08-24T10:00:00Z","endAt":"2020-08-24T10:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"bd543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11:30am
+        - Midday","day":"Monday 24 August","startAt":"2020-08-24T10:30:00Z","endAt":"2020-08-24T11:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"bf543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"Midday
+        - 12:30pm","day":"Monday 24 August","startAt":"2020-08-24T11:00:00Z","endAt":"2020-08-24T11:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"c1543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"12:30pm
+        - 1pm","day":"Monday 24 August","startAt":"2020-08-24T11:30:00Z","endAt":"2020-08-24T12:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"c3543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1pm
+        - 1:30pm","day":"Monday 24 August","startAt":"2020-08-24T12:00:00Z","endAt":"2020-08-24T12:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"c5543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1:30pm
+        - 2pm","day":"Monday 24 August","startAt":"2020-08-24T12:30:00Z","endAt":"2020-08-24T13:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"c7543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2pm
+        - 2:30pm","day":"Monday 24 August","startAt":"2020-08-24T13:00:00Z","endAt":"2020-08-24T13:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"c9543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2:30pm
+        - 3pm","day":"Monday 24 August","startAt":"2020-08-24T13:30:00Z","endAt":"2020-08-24T14:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"cb543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3pm
+        - 3:30pm","day":"Monday 24 August","startAt":"2020-08-24T14:00:00Z","endAt":"2020-08-24T14:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"cd543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3:30pm
+        - 4pm","day":"Monday 24 August","startAt":"2020-08-24T14:30:00Z","endAt":"2020-08-24T15:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"cf543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4pm
+        - 4:30pm","day":"Monday 24 August","startAt":"2020-08-24T15:00:00Z","endAt":"2020-08-24T15:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"d1543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4:30pm
+        - 5pm","day":"Monday 24 August","startAt":"2020-08-24T15:30:00Z","endAt":"2020-08-24T16:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"d3543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5pm
+        - 5:30pm","day":"Monday 24 August","startAt":"2020-08-24T16:00:00Z","endAt":"2020-08-24T16:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"d5543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5:30pm
+        - 6pm","day":"Monday 24 August","startAt":"2020-08-24T16:30:00Z","endAt":"2020-08-24T17:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"d7543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6pm
+        - 6:30pm","day":"Monday 24 August","startAt":"2020-08-24T17:00:00Z","endAt":"2020-08-24T17:30:00Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"d9543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6:30pm
+        - 7pm","day":"Monday 24 August","startAt":"2020-08-24T17:30:00Z","endAt":"2020-08-24T18:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"db543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9am
+        - 9:30am","day":"Tuesday 25 August","startAt":"2020-08-25T08:00:00Z","endAt":"2020-08-25T08:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"dd543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9:30am
+        - 10am","day":"Tuesday 25 August","startAt":"2020-08-25T08:30:00Z","endAt":"2020-08-25T09:00:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"df543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10am
+        - 10:30am","day":"Tuesday 25 August","startAt":"2020-08-25T09:00:00Z","endAt":"2020-08-25T09:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"e1543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10:30am
+        - 11am","day":"Tuesday 25 August","startAt":"2020-08-25T09:30:00Z","endAt":"2020-08-25T10:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"e3543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11am
+        - 11:30am","day":"Tuesday 25 August","startAt":"2020-08-25T10:00:00Z","endAt":"2020-08-25T10:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"e5543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11:30am
+        - Midday","day":"Tuesday 25 August","startAt":"2020-08-25T10:30:00Z","endAt":"2020-08-25T11:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"e7543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"Midday
+        - 12:30pm","day":"Tuesday 25 August","startAt":"2020-08-25T11:00:00Z","endAt":"2020-08-25T11:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"e9543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"12:30pm
+        - 1pm","day":"Tuesday 25 August","startAt":"2020-08-25T11:30:00Z","endAt":"2020-08-25T12:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"eb543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1pm
+        - 1:30pm","day":"Tuesday 25 August","startAt":"2020-08-25T12:00:00Z","endAt":"2020-08-25T12:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"ed543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1:30pm
+        - 2pm","day":"Tuesday 25 August","startAt":"2020-08-25T12:30:00Z","endAt":"2020-08-25T13:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"ef543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2pm
+        - 2:30pm","day":"Tuesday 25 August","startAt":"2020-08-25T13:00:00Z","endAt":"2020-08-25T13:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"f1543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2:30pm
+        - 3pm","day":"Tuesday 25 August","startAt":"2020-08-25T13:30:00Z","endAt":"2020-08-25T14:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"f3543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3pm
+        - 3:30pm","day":"Tuesday 25 August","startAt":"2020-08-25T14:00:00Z","endAt":"2020-08-25T14:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"f5543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3:30pm
+        - 4pm","day":"Tuesday 25 August","startAt":"2020-08-25T14:30:00Z","endAt":"2020-08-25T15:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"f7543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4pm
+        - 4:30pm","day":"Tuesday 25 August","startAt":"2020-08-25T15:00:00Z","endAt":"2020-08-25T15:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"f9543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4:30pm
+        - 5pm","day":"Tuesday 25 August","startAt":"2020-08-25T15:30:00Z","endAt":"2020-08-25T16:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"fb543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5pm
+        - 5:30pm","day":"Tuesday 25 August","startAt":"2020-08-25T16:00:00Z","endAt":"2020-08-25T16:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"fd543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5:30pm
+        - 6pm","day":"Tuesday 25 August","startAt":"2020-08-25T16:30:00Z","endAt":"2020-08-25T17:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"ff543378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6pm
+        - 6:30pm","day":"Tuesday 25 August","startAt":"2020-08-25T17:00:00Z","endAt":"2020-08-25T17:30:00Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"01553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6:30pm
+        - 7pm","day":"Tuesday 25 August","startAt":"2020-08-25T17:30:00Z","endAt":"2020-08-25T18:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"03553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9am
+        - 9:30am","day":"Wednesday 26 August","startAt":"2020-08-26T08:00:00Z","endAt":"2020-08-26T08:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"05553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9:30am
+        - 10am","day":"Wednesday 26 August","startAt":"2020-08-26T08:30:00Z","endAt":"2020-08-26T09:00:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"07553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10am
+        - 10:30am","day":"Wednesday 26 August","startAt":"2020-08-26T09:00:00Z","endAt":"2020-08-26T09:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"09553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10:30am
+        - 11am","day":"Wednesday 26 August","startAt":"2020-08-26T09:30:00Z","endAt":"2020-08-26T10:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"0b553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11am
+        - 11:30am","day":"Wednesday 26 August","startAt":"2020-08-26T10:00:00Z","endAt":"2020-08-26T10:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"0d553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11:30am
+        - Midday","day":"Wednesday 26 August","startAt":"2020-08-26T10:30:00Z","endAt":"2020-08-26T11:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"0f553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"Midday
+        - 12:30pm","day":"Wednesday 26 August","startAt":"2020-08-26T11:00:00Z","endAt":"2020-08-26T11:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"11553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"12:30pm
+        - 1pm","day":"Wednesday 26 August","startAt":"2020-08-26T11:30:00Z","endAt":"2020-08-26T12:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"13553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1pm
+        - 1:30pm","day":"Wednesday 26 August","startAt":"2020-08-26T12:00:00Z","endAt":"2020-08-26T12:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"15553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1:30pm
+        - 2pm","day":"Wednesday 26 August","startAt":"2020-08-26T12:30:00Z","endAt":"2020-08-26T13:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"17553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2pm
+        - 2:30pm","day":"Wednesday 26 August","startAt":"2020-08-26T13:00:00Z","endAt":"2020-08-26T13:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"19553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2:30pm
+        - 3pm","day":"Wednesday 26 August","startAt":"2020-08-26T13:30:00Z","endAt":"2020-08-26T14:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"1b553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3pm
+        - 3:30pm","day":"Wednesday 26 August","startAt":"2020-08-26T14:00:00Z","endAt":"2020-08-26T14:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"1d553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3:30pm
+        - 4pm","day":"Wednesday 26 August","startAt":"2020-08-26T14:30:00Z","endAt":"2020-08-26T15:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"1f553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4pm
+        - 4:30pm","day":"Wednesday 26 August","startAt":"2020-08-26T15:00:00Z","endAt":"2020-08-26T15:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"21553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4:30pm
+        - 5pm","day":"Wednesday 26 August","startAt":"2020-08-26T15:30:00Z","endAt":"2020-08-26T16:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"23553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5pm
+        - 5:30pm","day":"Wednesday 26 August","startAt":"2020-08-26T16:00:00Z","endAt":"2020-08-26T16:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"25553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5:30pm
+        - 6pm","day":"Wednesday 26 August","startAt":"2020-08-26T16:30:00Z","endAt":"2020-08-26T17:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"27553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6pm
+        - 6:30pm","day":"Wednesday 26 August","startAt":"2020-08-26T17:00:00Z","endAt":"2020-08-26T17:30:00Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"29553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6:30pm
+        - 7pm","day":"Wednesday 26 August","startAt":"2020-08-26T17:30:00Z","endAt":"2020-08-26T18:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"2b553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9am
+        - 9:30am","day":"Thursday 27 August","startAt":"2020-08-27T08:00:00Z","endAt":"2020-08-27T08:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"2d553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9:30am
+        - 10am","day":"Thursday 27 August","startAt":"2020-08-27T08:30:00Z","endAt":"2020-08-27T09:00:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"2f553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10am
+        - 10:30am","day":"Thursday 27 August","startAt":"2020-08-27T09:00:00Z","endAt":"2020-08-27T09:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"31553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10:30am
+        - 11am","day":"Thursday 27 August","startAt":"2020-08-27T09:30:00Z","endAt":"2020-08-27T10:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"33553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11am
+        - 11:30am","day":"Thursday 27 August","startAt":"2020-08-27T10:00:00Z","endAt":"2020-08-27T10:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"35553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11:30am
+        - Midday","day":"Thursday 27 August","startAt":"2020-08-27T10:30:00Z","endAt":"2020-08-27T11:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"37553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"Midday
+        - 12:30pm","day":"Thursday 27 August","startAt":"2020-08-27T11:00:00Z","endAt":"2020-08-27T11:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"39553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"12:30pm
+        - 1pm","day":"Thursday 27 August","startAt":"2020-08-27T11:30:00Z","endAt":"2020-08-27T12:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"3b553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1pm
+        - 1:30pm","day":"Thursday 27 August","startAt":"2020-08-27T12:00:00Z","endAt":"2020-08-27T12:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"3d553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1:30pm
+        - 2pm","day":"Thursday 27 August","startAt":"2020-08-27T12:30:00Z","endAt":"2020-08-27T13:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"3f553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2pm
+        - 2:30pm","day":"Thursday 27 August","startAt":"2020-08-27T13:00:00Z","endAt":"2020-08-27T13:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"41553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2:30pm
+        - 3pm","day":"Thursday 27 August","startAt":"2020-08-27T13:30:00Z","endAt":"2020-08-27T14:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"43553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3pm
+        - 3:30pm","day":"Thursday 27 August","startAt":"2020-08-27T14:00:00Z","endAt":"2020-08-27T14:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"45553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3:30pm
+        - 4pm","day":"Thursday 27 August","startAt":"2020-08-27T14:30:00Z","endAt":"2020-08-27T15:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"47553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4pm
+        - 4:30pm","day":"Thursday 27 August","startAt":"2020-08-27T15:00:00Z","endAt":"2020-08-27T15:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"49553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4:30pm
+        - 5pm","day":"Thursday 27 August","startAt":"2020-08-27T15:30:00Z","endAt":"2020-08-27T16:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"4b553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5pm
+        - 5:30pm","day":"Thursday 27 August","startAt":"2020-08-27T16:00:00Z","endAt":"2020-08-27T16:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"4d553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5:30pm
+        - 6pm","day":"Thursday 27 August","startAt":"2020-08-27T16:30:00Z","endAt":"2020-08-27T17:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"4f553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6pm
+        - 6:30pm","day":"Thursday 27 August","startAt":"2020-08-27T17:00:00Z","endAt":"2020-08-27T17:30:00Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"51553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6:30pm
+        - 7pm","day":"Thursday 27 August","startAt":"2020-08-27T17:30:00Z","endAt":"2020-08-27T18:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"53553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9am
+        - 9:30am","day":"Friday 28 August","startAt":"2020-08-28T08:00:00Z","endAt":"2020-08-28T08:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"55553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9:30am
+        - 10am","day":"Friday 28 August","startAt":"2020-08-28T08:30:00Z","endAt":"2020-08-28T09:00:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"57553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10am
+        - 10:30am","day":"Friday 28 August","startAt":"2020-08-28T09:00:00Z","endAt":"2020-08-28T09:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"59553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10:30am
+        - 11am","day":"Friday 28 August","startAt":"2020-08-28T09:30:00Z","endAt":"2020-08-28T10:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"5b553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11am
+        - 11:30am","day":"Friday 28 August","startAt":"2020-08-28T10:00:00Z","endAt":"2020-08-28T10:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"5d553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11:30am
+        - Midday","day":"Friday 28 August","startAt":"2020-08-28T10:30:00Z","endAt":"2020-08-28T11:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"5f553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"Midday
+        - 12:30pm","day":"Friday 28 August","startAt":"2020-08-28T11:00:00Z","endAt":"2020-08-28T11:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"61553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"12:30pm
+        - 1pm","day":"Friday 28 August","startAt":"2020-08-28T11:30:00Z","endAt":"2020-08-28T12:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"63553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1pm
+        - 1:30pm","day":"Friday 28 August","startAt":"2020-08-28T12:00:00Z","endAt":"2020-08-28T12:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"65553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1:30pm
+        - 2pm","day":"Friday 28 August","startAt":"2020-08-28T12:30:00Z","endAt":"2020-08-28T13:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"67553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2pm
+        - 2:30pm","day":"Friday 28 August","startAt":"2020-08-28T13:00:00Z","endAt":"2020-08-28T13:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"69553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2:30pm
+        - 3pm","day":"Friday 28 August","startAt":"2020-08-28T13:30:00Z","endAt":"2020-08-28T14:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"6b553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3pm
+        - 3:30pm","day":"Friday 28 August","startAt":"2020-08-28T14:00:00Z","endAt":"2020-08-28T14:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"6d553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3:30pm
+        - 4pm","day":"Friday 28 August","startAt":"2020-08-28T14:30:00Z","endAt":"2020-08-28T15:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"6f553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4pm
+        - 4:30pm","day":"Friday 28 August","startAt":"2020-08-28T15:00:00Z","endAt":"2020-08-28T15:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"71553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4:30pm
+        - 5pm","day":"Friday 28 August","startAt":"2020-08-28T15:30:00Z","endAt":"2020-08-28T16:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"73553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5pm
+        - 5:30pm","day":"Friday 28 August","startAt":"2020-08-28T16:00:00Z","endAt":"2020-08-28T16:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"75553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5:30pm
+        - 6pm","day":"Friday 28 August","startAt":"2020-08-28T16:30:00Z","endAt":"2020-08-28T17:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"77553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6pm
+        - 6:30pm","day":"Friday 28 August","startAt":"2020-08-28T17:00:00Z","endAt":"2020-08-28T17:30:00Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"79553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6:30pm
+        - 7pm","day":"Friday 28 August","startAt":"2020-08-28T17:30:00Z","endAt":"2020-08-28T18:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"7b553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9am
+        - 9:30am","day":"Tuesday 1 September","startAt":"2020-09-01T08:00:00Z","endAt":"2020-09-01T08:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"7d553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"9:30am
+        - 10am","day":"Tuesday 1 September","startAt":"2020-09-01T08:30:00Z","endAt":"2020-09-01T09:00:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"7f553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10am
+        - 10:30am","day":"Tuesday 1 September","startAt":"2020-09-01T09:00:00Z","endAt":"2020-09-01T09:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"81553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"10:30am
+        - 11am","day":"Tuesday 1 September","startAt":"2020-09-01T09:30:00Z","endAt":"2020-09-01T10:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"83553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11am
+        - 11:30am","day":"Tuesday 1 September","startAt":"2020-09-01T10:00:00Z","endAt":"2020-09-01T10:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"85553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"11:30am
+        - Midday","day":"Tuesday 1 September","startAt":"2020-09-01T10:30:00Z","endAt":"2020-09-01T11:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"87553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"Midday
+        - 12:30pm","day":"Tuesday 1 September","startAt":"2020-09-01T11:00:00Z","endAt":"2020-09-01T11:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"89553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"12:30pm
+        - 1pm","day":"Tuesday 1 September","startAt":"2020-09-01T11:30:00Z","endAt":"2020-09-01T12:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"8b553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1pm
+        - 1:30pm","day":"Tuesday 1 September","startAt":"2020-09-01T12:00:00Z","endAt":"2020-09-01T12:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"8d553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"1:30pm
+        - 2pm","day":"Tuesday 1 September","startAt":"2020-09-01T12:30:00Z","endAt":"2020-09-01T13:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"8f553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2pm
+        - 2:30pm","day":"Tuesday 1 September","startAt":"2020-09-01T13:00:00Z","endAt":"2020-09-01T13:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"91553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"2:30pm
+        - 3pm","day":"Tuesday 1 September","startAt":"2020-09-01T13:30:00Z","endAt":"2020-09-01T14:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"93553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3pm
+        - 3:30pm","day":"Tuesday 1 September","startAt":"2020-09-01T14:00:00Z","endAt":"2020-09-01T14:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"95553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"3:30pm
+        - 4pm","day":"Tuesday 1 September","startAt":"2020-09-01T14:30:00Z","endAt":"2020-09-01T15:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"97553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4pm
+        - 4:30pm","day":"Tuesday 1 September","startAt":"2020-09-01T15:00:00Z","endAt":"2020-09-01T15:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"99553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"4:30pm
+        - 5pm","day":"Tuesday 1 September","startAt":"2020-09-01T15:30:00Z","endAt":"2020-09-01T16:00:59Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"9b553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5pm
+        - 5:30pm","day":"Tuesday 1 September","startAt":"2020-09-01T16:00:00Z","endAt":"2020-09-01T16:30:00Z","numberOfBookings":0,"quota":3,"isAvailable":true,"id":"9d553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"5:30pm
+        - 6pm","day":"Tuesday 1 September","startAt":"2020-09-01T16:30:00Z","endAt":"2020-09-01T17:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"9f553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6pm
+        - 6:30pm","day":"Tuesday 1 September","startAt":"2020-09-01T17:00:00Z","endAt":"2020-09-01T17:30:00Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"a1553378-dfcc-ea11-a812-000d3a44ad35"},{"timeSlot":"6:30pm
+        - 7pm","day":"Tuesday 1 September","startAt":"2020-09-01T17:30:00Z","endAt":"2020-09-01T18:00:59Z","numberOfBookings":0,"quota":0,"isAvailable":false,"id":"a3553378-dfcc-ea11-a812-000d3a44ad35"}]'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://get-into-teaching-api-dev.london.cloudapps.digital/api/callback_booking_quotas
+  recorded_at: Wed, 19 Aug 2020 06:30:15 GMT
+recorded_with: VCR 6.0.0

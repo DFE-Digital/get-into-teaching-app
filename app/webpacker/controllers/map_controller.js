@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 
 export default class extends Controller {
   static targets = ['container'];
@@ -19,7 +19,7 @@ export default class extends Controller {
         if (status === 'OK') {
           this.drawMap(results[0].geometry.location);
         }
-      }
+      },
     );
   }
 
@@ -67,7 +67,7 @@ export default class extends Controller {
     const openContent = document.createElement('div');
     openContent.insertAdjacentHTML(
       'beforeend',
-      `<p class="govuk-body">${this.data.get('description')}</p>`
+      `<p class="govuk-body">${this.data.get('description')}</p>`,
     );
 
     const popup = new Popup(latLng, closedContent, openContent);
@@ -96,7 +96,7 @@ export default class extends Controller {
       content.classList.add('map-marker__content');
       content.insertAdjacentHTML(
         'beforeend',
-        '<button class="map-marker__close">&times;<span class="govuk-visually-hidden">Close this popup</span></button>'
+        '<button class="map-marker__close">&times;<span class="govuk-visually-hidden">Close this popup</span></button>',
       );
       closedContent.classList.add('map-marker__title');
       openContent.classList.add('map-marker__body');
@@ -141,7 +141,7 @@ export default class extends Controller {
     // Called when the popup needs to draw itself.
     Popup.prototype.draw = function () {
       const divPosition = this.getProjection().fromLatLngToDivPixel(
-        this.position
+        this.position,
       );
       // Hide the popup when it is far out of view.
       const display =

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "/events/not-available", to: "events#not_available"
   get "/mailinglist/not-available", to: "mailing_list/steps#not_available"
   get "/callbacks/not-available", to: "callbacks/steps#not_available"
+  get "/teacher-training-adviser/not_available", to: "teacher_training_adviser/steps#not_available"
 
   get "/404", to: "errors#not_found", via: :all
   get "/422", to: "errors#unprocessable_entity", via: :all
@@ -12,9 +13,26 @@ Rails.application.routes.draw do
   get "/403", to: "errors#forbidden"
   get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
   get "/sitemap.xml", to: "sitemap#show", via: :all
+  get "/check", to: proc { [200, {}, %w[OK]] }
 
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
-    redirect_rules.each { |from, to| get from, to: redirect(path: to) }
+    redirect_rules.each do |from, to|
+      get from => lambda { |env|
+        request = Rack::Request.new(env)
+        Rails.logger.info(redirect: { request: env["ORIGINAL_FULLPATH"], from: from, to: to })
+        redirect(path: to, params: request.params.except("page")).call(env)
+      }
+    end
+  end
+
+  get "/returning-to-teaching", to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-teaching/")
+
+  "https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/".tap do |teaching_vacancies|
+    get "/non-uk-teachers/return-to-england-after-teaching-overseas",                         to: redirect(teaching_vacancies)
+    get "/international-returners",                                                           to: redirect(teaching_vacancies)
+    get "/explore-my-options/return-to-teaching/return-to-teaching-in-england-from-overseas", to: redirect(teaching_vacancies)
+    get "/blog/returning-to-teaching-with-international-experience",                          to: redirect(teaching_vacancies)
+    get "/blog/tag/non-uk-teachers",                                                          to: redirect(teaching_vacancies)
   end
 
   if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production? || Rails.env.pagespeed?
@@ -48,11 +66,16 @@ Rails.application.routes.draw do
     get "/open_events", to: "events#open_events"
   end
 
-  get "/funding-your-training", to: "pages#funding_your_training", as: :funding_your_training
+  get "/landing/campus-mailing-list", to: "pages#campus_mailing_list", as: "campus_mailing_list"
+  get "/events/get-the-most-from-events", to: "pages#get_the_most_from_events", as: "get_the_most_from_events"
+  get "/events/what-happens-at-events-transcript", to: "pages#what_happens_at_events_transcript", as: "what_happens_at_events_transcript"
+  get "/funding-and-support/scholarships-and-bursaries", to: "pages#scholarships_and_bursaries", as: "scholarships_and_bursaries"
+  get "/funding-and-support/scholarships-and-bursaries-search", to: "pages#scholarships_and_bursaries_search", as: "scholarships_and_bursaries_search"
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
   get "/cookies", to: "pages#cookies", as: :cookies
-  get "/tta-service", to: "pages#tta_service", as: :tta_service
-  get "/tta", to: "pages#tta_service", as: nil
+  get "/session-expired", to: "pages#session_expired", as: :session_expired
+  get "/browse", to: "pages#browse", as: :browse
+  get "/values", to: "pages#values", as: :values
 
   get "/welcome", to: "pages#welcome", as: :welcome_guide
   get "/welcome/my-journey-into-teaching", to: "pages#welcome_my_journey_into_teaching", as: :welcome_my_journey_into_teaching
@@ -63,10 +86,6 @@ Rails.application.routes.draw do
   get "/welcome/email/subject/:subject/degree-status/:degree_status", to: "pages#welcome"
 
   resource :search, only: %i[show]
-  # resource :eligibility_checker,
-  #          only: %i[show],
-  #          controller: "eligibility_checker",
-  #          path: "eligibility-checker"
 
   resource "cookie_preference", only: %i[show]
   get "/cookie-policy", to: redirect("/cookies")
@@ -80,11 +99,12 @@ Rails.application.routes.draw do
     end
   end
 
-  resources "events", path: "/events", only: %i[index show search] do
+  resources "teaching_events", as: "events", path: "/events", controller: "teaching_events" do
     collection do
-      get "search"
-      post "search", to: "events#perform_search"
+      get :about_git_events, path: "about-get-into-teaching-events", as: "about_git"
+      get :git_statistics
     end
+
     resources "steps",
               path: "/apply",
               controller: "event_steps",
@@ -93,12 +113,6 @@ Rails.application.routes.draw do
         get :completed
         get :resend_verification
       end
-    end
-  end
-
-  resources "teaching_events", path: "/teaching-events", controller: "teaching_events" do
-    collection do
-      get :about_ttt_events, path: "about-ttt-events", as: "about_ttt"
     end
   end
 
@@ -111,21 +125,6 @@ Rails.application.routes.draw do
     end
   end
 
-  # Needs to have higher priority to redirect the category
-  get "event-categories/online-events", to: redirect("/event-categories/online-q-as")
-
-  resources :event_categories, only: %i[show], path: "event-categories" do
-    member do
-      post "", to: "event_categories#create"
-    end
-  end
-  # The event category pages used to exist here - once we're sure no traffic is
-  # coming to these paths we can safely remove these redirects.
-  get "events/category/:id/", to: redirect("/event-categories/%{id}")
-  get "events/category/:id/archive", to: redirect("/event-categories/%{id}/archive")
-  get "event_categories/:id", to: redirect("/event-categories/%{id}")
-  get "event_categories/:id/archive", to: redirect("/event-categories/%{id}/archive")
-
   namespace :mailing_list, path: "/mailinglist" do
     resources :steps,
               path: "/signup",
@@ -134,6 +133,33 @@ Rails.application.routes.draw do
         get :completed
         get :resend_verification
       end
+    end
+  end
+
+  namespace :teacher_training_adviser, path: "/teacher-training-adviser" do
+    resources :steps,
+              path: "/sign_up",
+              only: %i[index show update] do
+      collection do
+        get :completed
+        get :resend_verification
+      end
+    end
+  end
+
+  namespace :feedback, path: "/feedback" do
+    resources :steps,
+              path: "/",
+              only: %i[index show update] do
+      collection do
+        get :completed
+      end
+    end
+  end
+
+  resources :feedbacks, only: %i[new create index] do
+    collection do
+      post :export
     end
   end
 

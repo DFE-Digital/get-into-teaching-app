@@ -24,7 +24,7 @@ module StructuredDataHelper
 
     data = {
       headline: frontmatter[:title],
-      image: frontmatter[:images].values.map { |h| asset_pack_url(h["path"]) },
+      image: frontmatter[:images]&.values&.map { |h| asset_pack_url(h["path"]) },
       datePublished: frontmatter[:date],
       keywords: frontmatter[:keywords],
       author: [
@@ -33,7 +33,7 @@ module StructuredDataHelper
           name: author_name || "Get Into Teaching",
         },
       ],
-    }
+    }.compact
 
     structured_data("BlogPosting", data)
   end
@@ -70,8 +70,9 @@ module StructuredDataHelper
     structured_data("HowTo", data)
   end
 
-  def search_structured_data
+  def home_structured_data
     data = {
+      name: "Get Into Teaching",
       url: root_url,
       potentialAction: {
         "@type": "SearchAction",
@@ -89,7 +90,7 @@ module StructuredDataHelper
   def logo_structured_data
     data = {
       url: root_url,
-      logo: asset_pack_url("media/images/getintoteachinglogo.svg"),
+      logo: asset_pack_url("static/images/getintoteachinglogo.svg"),
     }
 
     structured_data("Organization", data)
@@ -111,7 +112,7 @@ module StructuredDataHelper
   end
 
   def event_structured_data(event)
-    return unless event.type_id.in?([qt_event_type_id, ttt_event_type_id])
+    return unless event.type_id.in?([git_event_type_id])
 
     building_data = event_building_data(event)
     provider_data = event_provider_data(event)
@@ -128,7 +129,7 @@ module StructuredDataHelper
         "@type": "Offer",
         price: 0,
         priceCurrency: "GBP",
-        availability: EventStatus.new(event).open? ? IN_STOCK : SOLD_OUT,
+        availability: Crm::EventStatus.new(event).open? ? IN_STOCK : SOLD_OUT,
       },
     }.merge(building_data, provider_data, image_data)
 
@@ -138,15 +139,15 @@ module StructuredDataHelper
   def event_image_data(event)
     images = if event.is_online
                [
-                 asset_pack_url("media/images/structured_data/ttt_online_1x1.jpeg"),
-                 asset_pack_url("media/images/structured_data/ttt_online_4x3.jpeg"),
-                 asset_pack_url("media/images/structured_data/ttt_online_16x9.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_online_1x1.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_online_4x3.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_online_16x9.jpeg"),
                ]
              else
                [
-                 asset_pack_url("media/images/structured_data/ttt_in_person_1x1.jpeg"),
-                 asset_pack_url("media/images/structured_data/ttt_in_person_4x3.jpeg"),
-                 asset_pack_url("media/images/structured_data/ttt_in_person_16x9.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_in_person_1x1.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_in_person_4x3.jpeg"),
+                 asset_pack_url("static/images/structured_data/git_in_person_16x9.jpeg"),
                ]
              end
 

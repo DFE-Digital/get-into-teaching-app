@@ -1,4 +1,4 @@
-class Content::FeatureComponentPreview < ViewComponent::Preview
+class Content::FeatureTableComponentPreview < ViewComponent::Preview
   def with_title_and_data
     render(Content::FeatureTableComponent.new(data, "Features"))
   end

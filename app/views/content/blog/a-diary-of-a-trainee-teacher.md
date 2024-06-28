@@ -4,10 +4,10 @@ date: "2021-10-07"
 author: Mel O'Connor
 images:
   mel_oconnor:
-    path: "media/images/content/blog/mel-oconnor.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/mel-oconnor.jpg"
+    path: "static/images/content/blog/mel-oconnor.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/mel-oconnor.jpg"
   mel_stta_screen:
-    path: "media/images/content/blog/mel-stta-screen.jpg"
+    path: "static/images/content/blog/mel-stta-screen.jpg"
 description: |- 
   Mel recently started a Postgraduate Diploma in Education (PGDE) teacher training course in maths with the Sheffield Teacher Training Alliance and the University of Sheffield. She kept a diary of her first days on the course.
 keywords:
@@ -31,9 +31,9 @@ When lockdown hit in 2020, I began to reassess my career choices as I knew I had
 
 ## The first few days
 
-My course started on 1st September, and I spent the first three days with my School Direct partner, Sheffield Teacher Training Alliance. This was a fantastic opportunity to get to know the rest of the cohort, including students training to teach other subjects on the curriculum. Sheffield Teacher Training Alliance had organised various sessions over these three days which were linked to the [Initial Teacher Training Core Content Framework](https://www.gov.uk/government/publications/initial-teacher-training-itt-core-content-framework). 
+My course started on 1 September, and I spent the first 3 days with Sheffield Teacher Training Alliance. This was a fantastic opportunity to get to know the rest of the cohort, including students training to teach other subjects on the curriculum. Sheffield Teacher Training Alliance had organised various sessions over these 3 days which were linked to the [Initial Teacher Training Core Content Framework](https://www.gov.uk/government/publications/initial-teacher-training-itt-core-content-framework). 
 
-For some sessions, outside speakers came in to deliver the lesson. I particularly enjoyed the sessions on attention deficit hyperactivity disorder (ADHD) and dyslexia, where our presenters gave us a real insight into what it feels like to have those conditions. The activities we took part in really opened my eyes to the challenges faced and provided me with practical advice on how to support a student with ADHD and/or dyslexia. At the end of the Friday session, those of us studying with the University of Sheffield said goodbye to our School Direct cohort (for a little while anyway!) and relaxed over the weekend ready for our first week at university!
+For some sessions, outside speakers came in to deliver the lesson. I particularly enjoyed the sessions on attention deficit hyperactivity disorder (ADHD) and dyslexia, where our presenters gave us a real insight into what it feels like to have those conditions. The activities we took part in really opened my eyes to the challenges faced and provided me with practical advice on how to support a student with ADHD and/or dyslexia. At the end of the Friday session, those of us studying with the University of Sheffield said goodbye to those on our course training at a school (for a little while anyway!) and relaxed over the weekend ready for our first week at university!
 
 ## Monday
 
@@ -61,4 +61,4 @@ I attended the first EPS group discussion and debate. This took place remotely w
 
 The first week and a half was jam-packed with new information and a variety of activities. It can be a challenge to keep up with the volume of information initially, but I stayed organised by downloading all the materials to my laptop and taking notes electronically. There is a heavy workload and lots of independent work in the evenings, however I felt energised and engaged throughout the week, confirming I had made the right career choice! I am excited to visit my local primary school next week and observe how maths is taught in the younger year groups, before returning to university and preparing for my first placement in a secondary school which starts in a few weeks’ time.
 
-If you're interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). If you have a passion for maths, find out more about [becoming a maths teacher](/subjects/maths).
+If you're interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). If you have a passion for maths, find out more about [becoming a maths teacher](/is-teaching-right-for-me/maths).

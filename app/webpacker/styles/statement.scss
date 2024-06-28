@@ -1,0 +1,57 @@
+.statement {
+  $colours: ("pink": $pink, "blue": $blue, "yellow": $yellow, "purple": $purple);
+
+  > h2 {
+    margin-top: 0;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .slashed-list {
+    @include reset;
+    list-style: none;
+
+    li {
+      display: inline;
+    }
+
+    li + li {
+      &::before {
+        content: "/";
+        margin-inline: .3em .5em;
+      }
+    }
+  }
+
+  @each $name, $val in $colours {
+    .#{$name} {
+      padding: 1rem .7rem;
+      background: $val;
+      display: inline-block;
+      margin-bottom: .5rem;
+
+      p {
+        margin-block: 0;
+      }
+
+      @include mq($from: tablet) {
+        max-width: 50%;
+      }
+    }
+
+    .#{$name} + .#{$name} {
+      margin-top: .5rem;
+    }
+  }
+
+  $sizes: "xlarge", "xxlarge", "xxxlarge";
+
+  @each $name in $sizes {
+    .#{$name} {
+      @include font-size($name);
+      padding-block: .5rem;
+    }
+  }
+}

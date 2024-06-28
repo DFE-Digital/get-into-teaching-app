@@ -1,14 +1,23 @@
-<h1>Would you like to hear about teacher training events in your area?</h1>
-
-<%= f.govuk_error_summary %>
-
-<p>
-  We'll let you know via email about upcoming teacher training events near you
-</p>
-
-<%= f.govuk_radio_buttons_fieldset(:send_event_emails, legend: nil) do %>
-  <%= f.govuk_radio_button :send_event_emails, "true", link_errors: true do %>
-    <%= f.govuk_text_field :address_postcode, autocomplete: "postal-code", label: { text: t('helpers.label.mailing_list_steps_postcode.address_postcode') }, width: 10 %>
-  <% end %>
-  <%= f.govuk_radio_button :send_event_emails, "false" %>
+<%= f.govuk_text_field :address_postcode,
+  autocomplete: "postal-code",
+  width: 10,
+  label: {
+    tag: 'h1',
+    size: "xl",
+    text: t('helpers.label.mailing_list_steps_postcode.address_postcode', **Value.data),
+  } do %>
+  <p>If you give us your postcode, we'll let you know about events happening near you.</p>
 <% end %>
+
+<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      What if I do not have a UK postcode?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <p>We run in-person events in the UK that we can tell you about if you give us your UK postcode.</p>
+    <p>If you do not live in the UK, you do not need to give us your postcode.</p>
+    <p>Instead, you can just select 'Complete sign up' to receive tailored guidance around teacher training.</p>
+  </div>
+</details>

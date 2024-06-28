@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 import accessibleAutocomplete from 'accessible-autocomplete';
 import Redacter from '../javascript/redacter';
 
@@ -19,8 +19,10 @@ export default class extends Controller {
 
     if (this.element.classList.contains('open')) {
       this.element.classList.remove('open');
+      this.searchTogglerExpanded(false);
     } else {
       this.element.classList.add('open');
+      this.searchTogglerExpanded(true);
       this.input.focus();
     }
   }
@@ -63,6 +65,18 @@ export default class extends Controller {
     // auto-complete input.
     if (this.hasLabelTarget) {
       this.input.ariaLabel = this.labelTarget.textContent;
+    }
+  }
+
+  searchTogglerExpanded(expanded) {
+    const toggle = document.getElementById('search-toggle');
+    const searchInput = document.getElementById(this.searchInputIdValue);
+
+    if (toggle) {
+      toggle.ariaExpanded = expanded;
+    }
+    if (searchInput) {
+      searchInput.ariaExpanded = expanded;
     }
   }
 
@@ -132,7 +146,7 @@ export default class extends Controller {
 
     this.analyticsSubmitter = window.setTimeout(
       this.sendToAnalytics.bind(this),
-      2000
+      2000,
     );
   }
 
@@ -145,7 +159,7 @@ export default class extends Controller {
       window.ga(
         'set',
         'page',
-        '/search?' + this.searchParams(this.redactedQuery)
+        '/search?' + this.searchParams(this.redactedQuery),
       );
       window.ga('send', 'pageview');
     }

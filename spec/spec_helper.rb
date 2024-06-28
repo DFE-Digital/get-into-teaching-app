@@ -13,13 +13,16 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-require "knapsack_pro"
-KnapsackPro::Adapters::RSpecAdapter.bind
-
-require "webmock/rspec"
+require "knapsack"
+Knapsack::Adapters::RSpecAdapter.bind
 
 require "simplecov"
 require "simplecov_json_formatter"
+
+require "active_support"
+require "webmock/rspec"
+require "nokogiri"
+
 SimpleCov.start "rails" do
   add_filter "/app/services/get_into_teaching_api/fake_endpoints.rb"
   add_filter "/bin/"
@@ -32,19 +35,9 @@ SimpleCov.start "rails" do
   ]
 end
 
-KnapsackPro::Hooks::Queue.before_queue do |_queue_id|
-  # See https://knapsackpro.com/faq/question/how-to-use-simplecov-in-queue-mode
-  SimpleCov.command_name("rspec_ci_node_#{KnapsackPro::Config::Env.ci_node_index}")
-end
-
-KnapsackPro::Hooks::Queue.after_subset_queue do |_queue_id, _subset_queue_id|
-  # See https://knapsackpro.com/faq/question/how-to-use-json-formatter-for-rspec
-  if File.exist?(ENV["TEST_REPORT_FILE"])
-    FileUtils.mv(ENV["TEST_REPORT_FILE"], ENV["TEST_REPORT_FINAL_FILE"])
-  end
-end
-
 RSpec.configure do |config|
+  config.example_status_persistence_file_path = "tmp/examples.txt"
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

@@ -1,0 +1,101 @@
+.promo {
+  max-width: $content-max-width;
+  display: flex;
+  flex-direction: column;
+  gap: $indent-amount * .5;
+  margin: 0 $indent-amount;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 2 * $indent-amount;
+  }
+
+  &--border-top {
+    padding-top: 4em;
+    border-top: 1px solid $grey-mid;
+  }
+
+  &--border-bottom {
+    padding-bottom: 4em;
+    border-bottom: 1px solid $grey-mid;
+    margin-bottom: 3em;
+  }
+
+  &:last-of-type {
+    margin-bottom: 3em;
+  }
+
+  &__left,
+  &__right {
+    flex: 0 1 50%;
+  }
+
+  &__left {
+    background-image: url("../images/content/homepage/here-to-help.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-block: 2em;
+    min-height: 8em;
+
+    &.tta-background {
+      background-image: url("../images/content/homepage/teacher-training-adviser.jpg");
+      background-position-y: 40%;
+    }
+
+    &.veteran-background {
+      background-image: url("../images/content/hero-images/0015.jpg");
+      background-position-y: 20%;
+    }
+
+    &.ml-background {
+      background-image: url("../images/content/hero-images/0035.jpg");
+      background-position-y: 50%;
+    }
+
+    &.gse-background {
+      background-image: url("../images/content/hero-images/0021.jpg");
+      background-position-y: 50%;
+    }
+  }
+
+  &__right {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    @include mq($from: tablet) {
+      padding-right: $indent-amount;
+    }
+
+    p,
+    h2 {
+      margin-top: 0;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+    }
+
+    label,
+    input {
+      margin-bottom: .4em;
+    }
+
+    form {
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+
+      input {
+        margin: 0 1em .5rem 0;
+        max-width: 10rem;
+      }
+
+      div {
+        display: flex;
+      }
+    }
+  }
+}

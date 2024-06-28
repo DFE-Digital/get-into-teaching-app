@@ -2,15 +2,6 @@
   <%= render Footer::TalkToUsComponent.new %>
 <% end %>
 
-<% if feedback? %>
-  <%= render Footer::FeedbackComponent.new %>
-<% end %>
-
-<% if mailing_list? %>
-  <%= render Footer::MailingListComponent.new %>
-<% end %>
-
-<%= render Footer::VideoPlayerComponent.new %>
 <%= render Footer::CookieAcceptanceComponent.new %>
 
 <footer class="site-footer">
@@ -30,38 +21,27 @@
           <span class="visually-hidden">LinkedIn - opens in a new tab</span>
         </a>
         <a href="https://twitter.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener">
-          <%= helpers.fab_icon("twitter", "icon") %>
-          <span class="visually-hidden">Twitter - opens in a new tab</span>
+          <%= helpers.fab_icon("x-twitter", "icon") %>
+          <span class="visually-hidden">X, formerly known as Twitter - opens in a new tab</span>
         </a>
         <a href="http://www.youtube.com/user/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener">
           <%= helpers.fab_icon("youtube", "icon") %>
           <span class="visually-hidden">Youtube - opens in a new tab</span>
         </a>
       </div>
-      <div class="site-footer-top__links-container">
-        <% helpers.navigation_resources.each do |resource| %>
-          <a href="<%= resource.path %>"><%= resource.title %></a>
-        <% end %>
-        <%= link_to "Find an event near you", events_path %>
-        <%= link_to "Sign up for updates", "/mailinglist/signup/name" %>
-        <%= link_to("Three things to help you get into teaching", page_path(page: "three-things-to-help-you-get-into-teaching")) %>
-        <%= link_to("COVID-19", page_path(page: "covid-19")) %>
-        <%= link_to("Teach supply", page_path(page: "urgent-call-for-qualified-teachers")) %>
-        <%= link_to("Search", search_path) %>
-      </div>
     </div>
     <div class="site-footer-bottom">
-      <div class="site-footer-bottom__logo-container">
-        <%= image_pack_tag 'media/images/dfelogo-white.svg', alt: "Department for Education", size: "124x73" %>
-        <%= image_pack_tag 'media/images/plan-for-jobs.svg', alt: "Plan for jobs", size: "124x73" %>
-      </div>
       <div class="site-footer-bottom__links-container">
-        <a target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSdBXbU5nwP6_3TH7HY5rB4ehkSDNzfKqB5X2G7wG4K6LY97-g/viewform">Feedback</a>
+        <%= link_to("Search", search_path) %>
+        <%= link_to "Feedback", feedback_steps_path %>
         <%= link_to "Cookies", cookies_path %>
         <%= link_to "Privacy notice", privacy_policy_path %>
         <%= link_to("Accessibility", page_path(page: :accessibility)) %>
         <a target="_blank" rel="noopener" href="https://form.education.gov.uk/en/AchieveForms/?form_uri=sandbox-publish://AF-Process-f1453496-7d8a-463f-9f33-1da2ac47ed76/AF-Stage-1e64d4cc-25fb-499a-a8d7-74e98203ac00/definition.json&redirectlink=%2Fen&cancelRedirectLink=%2Fen">Freedom of information</a>
         <div class="site-footer-bottom__links-container__license">All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0,</a> except where otherwise stated.</div>
+      </div>
+      <div class="site-footer-bottom__logo-container">
+        <%= image_pack_tag 'static/images/dfelogo-white.svg', alt: "Department for Education logo", size: "124x73" %>
       </div>
     </div>
   </div>

@@ -1,0 +1,109 @@
+<%= render Content::LandingHeroComponent.new(
+  title: "Get Into Teaching events",
+  colour: "pastel yellow-yellow",
+  image: "static/images/content/hero-images/0025.jpg"
+) %>
+
+<div class="row inset">
+  <section class="col col-720 statement">
+    <h2 class="pink xlarge bold col-space-l-top">What to expect</h2>
+  </section>
+
+  <section class="col col-720">
+    <p>We understand everyone’s journey into the classroom is different. But whether you're ready to start your career in teaching, or just curious, we can answer your queries at a Get Into Teaching event.</p>
+
+    <p>These relaxed and informative events provide a one-stop shop of information and support. They'll give you the opportunity to get expert advice and talk to teachers and local training providers.</p>
+
+  </section>
+
+  <section class="col col-720">
+    <h3 class="heading-m">At our Get Into Teaching events</h3>
+    <p>You can drop in at any time during an event to:</p>
+    <ul>
+      <li>chat to teachers and find out what life as a teacher is really like</li>
+      <li>understand what qualifications you need and the different ways to train</li>
+      <li>talk to training providers about the courses they offer</li>
+      <li>learn what funding is available</li>
+      <li>get tips from expert advisers on how to apply for teacher training</li>
+      <li>meet people like you who are thinking about becoming a teacher</li>
+    </ul>
+
+<p>Watch our video to find out how what happens at a Get Into Teaching event.</p>
+
+    <div class="video">
+      <%= render Content::YoutubeVideoComponent.new(
+        id: "w3AVk-ByUaA",
+        title: "A video about what happens at a Get Into Teaching event"
+      ) %>
+      <p><a href="/events/what-happens-at-events-transcript">Read the transcript for the 'What happens at a Get Into Teaching event' video</a>.</p>
+    </div>
+  </section>
+
+  <section class="col col-720">
+    <h3 class="heading-m">Reserve your place</h3>
+    <p>You'll need to register to attend a Get Into Teaching event. Places are limited, so the sooner you sign up, the better.</p>
+  </section>
+</div>
+
+<div class="row">
+  <div class="grey">
+    <section class="col col-full-content inset">
+      <%= render TextBlockWithOneImageComponent.new(
+        heading: "Events in your region",
+        colour: "blue",
+        image_path: "static/images/content/homepage/here-to-help.jpg",
+        image_alt: "A woman at a Get Into Teaching event wearing a blue T-shirt with Here to Help written on it.",
+      ) %>
+
+      <% if @git_events.any? %>
+        <section id="events" class="category__cards">
+          <%= tag.nav(class: "category__nav-cards") do %>
+            <ul class="one-column horizontal">
+              <%= render(Events::CardComponent.with_collection(categorise_events(@git_events, params))) %>
+            </ul>
+          <% end %>
+          <div>
+            <h3 class="heading-s">Can't find what you're looking for?</h3>
+            <p>You can also take a look at <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }}), class: "link--black") %> in your area.</p>
+          </div>
+        </section>
+      <% else %>
+        <section class="col col-720 col-space-m">
+          <p><strong>We do not have any Get Into Teaching events open for registration right now. We'll update this page with new Get Into Teaching events soon.</strong></p>
+        </section>
+
+        <section class="col col-720">
+          <p>In the meantime, take a look at <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }}), class: "link--black") %> in your area or online.</p>
+        </section>
+
+        <section class="col col-720">
+          <h2 class="heading-m">Get event updates and advice in your inbox</h2>
+
+          <p>Get a better idea if teaching is right for you with regular information on:</p>
+
+          <ul>
+            <li>what it's like to be a teacher</li>
+            <li>different ways to train</li>
+            <li>events near you</li>
+          </ul>
+
+          <p><%= link_to("Get event updates and advice in your inbox", mailing_list_steps_path, class: "link--black") %>.</p>
+        </section>
+      <% end %>
+    </section>
+  </div>
+
+  <section class="col col-full-page what-theyre-saying">
+    <div class="triangle on-grey yellow-triangle">
+      <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="0,100 100,0 100,100"></polygon>
+      </svg>
+    </div>
+    <div class="subheading">
+      <h2 class="heading--box-pink heading-xl heading--margin-0">What they're saying</h2>
+    </div>
+    <figure>
+      <blockquote>Really helpful and friendly. Provided very tangible advice on next steps.</blockquote>
+    </figure>
+  </section>
+</div>

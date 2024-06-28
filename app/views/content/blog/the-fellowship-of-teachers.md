@@ -4,8 +4,8 @@ date: "2022-01-10"
 author: Mike Halton and Phil Young
 images:
   fellowship:
-    path: "media/images/content/blog/fellowship.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/fellowship.jpg"
+    path: "static/images/content/blog/fellowship.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/fellowship.jpg"
 description: |-
    Fellow teachers Mike Halton and Phil Young describe the friendships and fun they have outside of the classroom.
 keywords:
@@ -55,4 +55,5 @@ Phil: Underneath it, I’m a big softie though!
 
 Phil: I know a lot of people wrestle with the idea for a while, and think, do I take this step? There’s always something that could hold you back, but you've got to have the courage to make the jump. I promise the level of satisfaction is like nothing you’ll get in another job. I wake up every morning and want to get into school.
 
-Whatever stage you’re at with your application, our expert advisers can help. [Sign up for a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/) who can give you free, one-to-one support. 
+[Talk to an adviser](/teacher-training-advisers) to get free, one-to-one support on your journey into the classroom. All our advisers have years of teaching experience — chat by phone, text or email to find out if teaching is for you.
+

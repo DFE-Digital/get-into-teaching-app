@@ -47,13 +47,6 @@ module Prometheus
     )
 
     prometheus.counter(
-      :app_cache_read_total,
-      docstring: "A counter of cache reads",
-      labels: %i[key hit] + preset_labels.keys,
-      preset_labels: preset_labels,
-    )
-
-    prometheus.counter(
       :app_csp_violations_total,
       docstring: "A counter of CSP violations",
       labels: %i[blocked_uri document_uri violated_directive] + preset_labels.keys,
@@ -85,6 +78,20 @@ module Prometheus
       :app_client_cookie_consent_total,
       docstring: "A counter of cookie consent",
       labels: %i[non_functional marketing] + preset_labels.keys,
+      preset_labels: preset_labels,
+    )
+
+    prometheus.counter(
+      :app_tta_feedback_visit_total,
+      docstring: "A counter of feedback visit responses",
+      labels: %i[topic] + preset_labels.keys,
+      preset_labels: preset_labels,
+    )
+
+    prometheus.counter(
+      :app_tta_feedback_rating_total,
+      docstring: "A counter of feedback rating responses",
+      labels: %i[rating] + preset_labels.keys,
       preset_labels: preset_labels,
     )
   end

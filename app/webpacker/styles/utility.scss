@@ -16,7 +16,7 @@
   }
 }
 
-@mixin chevron-icon($color, $dimensions, $rotate: '45deg') {
+@mixin chevron-icon($color, $dimensions, $rotate: 45deg) {
   content: "";
   display: inline-block;
   position: relative;
@@ -34,8 +34,8 @@ $chevron-direction-map: (
   down: 135deg
 );
 
-@mixin chevron($color: $white, $after: true, $direction: right, $dimensions: .6em, $focus-color: $black) {
-  $chevron-margin: .1em;
+@mixin chevron($color: $white, $after: true, $direction: right, $dimensions: .6em, $focus-color: $white) {
+  $chevron-margin: .5em;
 
   $degrees: map-get($chevron-direction-map, $direction);
 
@@ -45,13 +45,13 @@ $chevron-direction-map: (
     // after governs whether the chevron is placed after (on the right) or
     // before (on the left) of the link text
     @if $after {
-      &:after {
+      &::after {
         @include chevron-icon($color: $color, $dimensions: $dimensions, $rotate: $degrees);
 
         margin-left: $chevron-margin;
       }
     } @else {
-      &:before {
+      &::before {
         @include chevron-icon($color: $color, $dimensions: $dimensions, $rotate: $degrees);
 
         margin-right: $chevron-margin;
@@ -60,8 +60,8 @@ $chevron-direction-map: (
   }
 
   &:focus > * {
-    &:after,
-    &:before {
+    &::after,
+    &::before {
       border-color: $focus-color;
     }
   }
@@ -85,7 +85,27 @@ $chevron-direction-map: (
     display: none !important;
   }
 }
+
+.hide-on-narrow {
+  @include mq($until: narrow) {
+    display: none !important;
+  }
+}
 /* stylelint-enable */
+
+html.js-enabled {
+  // hide components if javascript is enabled
+  .hidden-when-js-enabled {
+    display: none;
+  }
+}
+
+html:not(.js-enabled) {
+  // hide components if javascript is disabled
+  .hidden-when-js-disabled {
+    display: none;
+  }
+}
 
 // Mixins for targetting specific legacy/quirky/inferior browsers
 
@@ -122,24 +142,4 @@ hr {
   height: 1px;
   border: 0;
   margin: $indent-amount 0;
-}
-
-// responsively resize youtube videos by surrounding
-// the iframe in a .youtube-video-container wrapper
-//
-// approach lifted from https://embedresponsively.com/
-.youtube-video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 }

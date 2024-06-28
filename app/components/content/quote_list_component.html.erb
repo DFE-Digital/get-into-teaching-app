@@ -1,0 +1,16 @@
+<%= tag.ol(class: "quote-list") do %>
+  <% quotes.each do |quote| %>
+    <%= tag.li do %>
+      <div class="heading-wrapper">
+        <div></div>
+        <h3><span><%= quote[:heading] %></span></h3>
+      </div>
+      <%= render Content::QuoteComponent.new(
+        text: quote[:text],
+        name: quote[:accreditation],
+        background: quote[:background] || "grey",
+        classes: quote[:classes]
+      ) %>
+    <% end %>
+  <% end %>
+<% end %>

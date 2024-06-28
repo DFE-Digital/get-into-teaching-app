@@ -1,0 +1,194 @@
+@mixin box-heading($backgroundColor, $color) {
+  background-color: $backgroundColor;
+  color: $color;
+  display: inline-block;
+  padding: .6rem $indent-amount;
+  box-sizing: border-box;
+  max-width: calc(100% - 1.25rem);
+}
+
+@mixin highlight-text($backgroundColor, $color) {
+  // Multi-line padded highlight effect without horizontal
+  // gabs between lines.
+  margin: 0 1rem;
+  color: $color;
+
+  span {
+    box-decoration-break: clone;
+    padding: .18em 0;
+    background: $backgroundColor;
+    box-shadow: 1rem 0 0 $backgroundColor, -1rem 0 0 $backgroundColor;
+  }
+}
+
+@mixin caption($fontSize) {
+  @include font-size($fontSize);
+  display: block;
+  font-weight: normal;
+}
+
+.caption-xxl {
+  @include caption(medium);
+}
+
+.caption-l {
+  @include caption(medium);
+}
+
+.caption-m {
+  @include font-size(small);
+  @include caption(small);
+}
+
+.caption--purple {
+  color: $purple;
+}
+
+.caption--bold {
+  font-weight: bold;
+}
+
+.heading-xxl {
+  @include font-size("xxlarge");
+
+  margin-top: 0;
+  max-width: 30ch;
+}
+
+.heading-xl {
+  @include font-size("xlarge");
+}
+
+.heading-l {
+  @include font-size("large");
+}
+
+.heading-m {
+  @include font-size("medium");
+  font-weight: bold;
+}
+
+.heading-s {
+  @include font-size("small");
+}
+
+.heading--margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.heading--margin-top-0 {
+  margin-top: 0;
+}
+
+.heading--margin-0 {
+  margin: 0;
+}
+
+.heading--normal {
+  font-weight: normal;
+}
+
+.heading--overlap {
+  margin: 0;
+  transform: translateY(-50%);
+}
+
+.heading--with-caption {
+  margin-top: 0;
+}
+
+.heading--box-transparent {
+  @include box-heading(transparent, $black);
+}
+
+.heading--box-green {
+  @include box-heading($green, $black);
+}
+
+.heading--box-grey {
+  @include box-heading($grey, $black);
+}
+
+.heading--box-blue {
+  @include box-heading($blue, $black);
+}
+
+.heading--box-purple {
+  @include box-heading($purple, $black);
+}
+
+.heading--box-pink {
+  @include box-heading($pink, $black);
+}
+
+.heading--box-yellow {
+  @include box-heading($yellow-dark, $black);
+}
+
+.heading--box-white {
+  @include box-heading($white, $black);
+}
+
+.heading--box-black-on-purple {
+  @include box-heading($purple, $black);
+}
+
+.heading--box-black-on-blue {
+  @include box-heading($blue, $black);
+}
+
+.heading--box-black-on-green {
+  @include box-heading($green, $black);
+}
+
+.heading--box-padding-l {
+  padding: .5em .7em;
+}
+
+.heading--highlight-yellow {
+  @include highlight-text($yellow-dark, $black);
+}
+
+.heading--highlight-pink {
+  @include highlight-text($pink, $black);
+}
+
+.heading--highlight-purple {
+  @include highlight-text($purple, $black);
+}
+
+.heading--highlight-black-on-purple {
+  @include highlight-text($purple, $black);
+}
+
+.heading--highlight-blue {
+  @include highlight-text($blue, $black);
+}
+
+.heading--highlight-green {
+  @include highlight-text($green, $black);
+}
+
+h1 {
+  @extend .heading-xxl;
+}
+
+h2 {
+  @extend .heading-xl;
+
+  > i.icon {
+    margin-right: .3em;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+h3 {
+  @extend .heading-m;
+}
+
+h4 {
+  @extend .heading-s;
+}

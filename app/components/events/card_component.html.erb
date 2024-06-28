@@ -1,0 +1,9 @@
+<!-- This <li> element is dynamically generated within a parent template that includes the surrounding <ul>. -->
+<!-- //NOSONAR --><li class="category__nav-card">
+  <%= link_to(path, class: "link--black") do %>
+    <div class="category__nav-card--content">
+      <%= content_tag(heading_tag, title) %>
+      <%= tag.p(helpers.safe_html_format(description)) %>
+    </div>
+  <% end %>
+</li>

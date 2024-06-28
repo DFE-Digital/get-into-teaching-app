@@ -20,7 +20,7 @@ describe PagesController, type: :request do
     end
 
     context "when the page is noindexed" do
-      before { get "/thank-you" }
+      before { get "/welcome" }
 
       subject { response }
 
@@ -47,7 +47,7 @@ describe PagesController, type: :request do
 
     let(:params) do
       {
-        "preferred_teaching_subject_id" => TeachingSubject.lookup_by_key(:biology),
+        "preferred_teaching_subject_id" => Crm::TeachingSubject.lookup_by_key(:biology),
         "degree_status_id" => 222_750_003,
         "a_key_that_shouldnt_be_accepted" => "abc123",
       }
@@ -61,30 +61,6 @@ describe PagesController, type: :request do
 
     specify "the params are saved to the session" do
       expect(session["welcome_guide"]).to eql(params.except("a_key_that_shouldnt_be_accepted"))
-    end
-  end
-
-  describe "redirect to TTA site" do
-    include_context "with stubbed env vars", "TTA_SERVICE_URL" => "https://tta-service/"
-    subject { response }
-
-    context "with /tta-service url" do
-      before { get "/tta-service" }
-
-      it { is_expected.to redirect_to "https://tta-service/" }
-      it { expect(response).to have_http_status(:moved_permanently) }
-    end
-
-    context "with /tta url" do
-      before { get "/tta" }
-
-      it { is_expected.to redirect_to "https://tta-service/" }
-    end
-
-    context "with utm params" do
-      before { get "/tta-service?utm_test=abc&test=def" }
-
-      it { is_expected.to redirect_to "https://tta-service/?utm_test=abc" }
     end
   end
 

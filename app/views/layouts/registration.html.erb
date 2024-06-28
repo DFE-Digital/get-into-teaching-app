@@ -5,18 +5,19 @@
   <% end %>
 
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
-
+  <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
     <%= render HeaderComponent.new %>
 
-    <main id="main-content">
+    <section class="main-section">
       <section class="feature registration container">
-        <%= yield %>
+        <%= yield(:back_link) %>
+        <%= main_tag(class: "within-section") do %>
+          <%= yield %>
+        <% end %>
       </section>
-    </main>
+    </section>
 
-    <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
-    <%= javascript_pack_tag 'govuk/frontend', 'data-turbolinks-track': 'reload', async: true %>
+    <%= render FooterComponent.new(talk_to_us: false) %>
   <% end %>
 </html>

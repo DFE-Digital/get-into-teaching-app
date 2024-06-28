@@ -1,0 +1,45 @@
+table {
+  $table-spacing: .5em;
+  border-spacing: 0 $table-spacing;
+  border-color: $grey;
+  width: 100%;
+
+  caption {
+    text-align: left;
+  }
+
+  thead > tr {
+    > th {
+      text-align: left;
+      padding: 0 $table-spacing $table-spacing $table-spacing;
+      margin-bottom: $table-spacing;
+      border-bottom: 1px solid $grey-light;
+      word-break: normal;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  tbody td {
+    @include font-size("xsmall");
+  }
+
+  &.first-column-headings {
+    tr > td:first-child {
+      font-weight: bold;
+    }
+  }
+
+  &.right-aligned-values {
+    tr > td:not(:first-child),
+    tr > th:not(:first-child) {
+      text-align: right;
+    }
+  }
+}

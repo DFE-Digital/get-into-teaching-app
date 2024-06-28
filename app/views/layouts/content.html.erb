@@ -1,96 +1,69 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
-    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
+    <%= body_tag do %>
+      <%= render "sections/govuk_javascript" %>
+      <%= render HeaderComponent.new(breadcrumbs: true, front_matter: @front_matter) %>
 
-    <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
-      <%= c.hero(@front_matter) %>
-    <% end %>
+      <%= main_tag do %>
+        <%= render Content::HeroComponent.new(@front_matter) %>
 
-    <main id="main-content">
-      <section class="container">
-        <% if !@front_matter["image"] %>
-          <header>
-            <% if @front_matter["title_caption"].present? %>
-              <%= tag.span(@front_matter["title_caption"], class: "caption") %>
+        <section class="container main-section">
+          <%= render(partial: "sections/content_errors") %>
+
+          <% if !@front_matter["image"] %>
+            <header>
+              <%= render Content::HeadingComponent.new(
+                heading: @front_matter["heading"] || @front_matter["title"],
+                heading_size: :xxl
+              ) %>
+            </header>
+          <% end %>
+
+          <%= tag.article(class: article_classes(@front_matter), data: { controller: 'abbreviation' }) do %>
+            <% if @front_matter["alert"].present? %>
+              <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
             <% end %>
 
-            <%= tag.h1 do %>
-              <%= @front_matter["heading"] || @front_matter["title"] %>
+            <% @front_matter["before-content"]&.each do |partial| %>
+              <%= render(partial) %>
+            <% end %>
 
-              <% if @front_matter["subheading"].present? || @front_matter["subtitle"].present? %>
-                <%= tag.div(@front_matter["subheading"] || @front_matter["subtitle"], class: "subheading") %>
+            <%= yield %>
+
+            <% @front_matter["content"]&.each do |partial| %>
+              <%= render(partial) %>
+            <% end %>
+
+            <% if @front_matter.key?("external_content") %>
+              <% @front_matter["external_content"]&.each do |partial| %>
+                <%= render(partial) %>
               <% end %>
             <% end %>
-
-          </header>
-        <% end %>
-
-        <%= tag.article(class: article_classes(@front_matter), data: { controller: 'abbreviation' }) do %>
-          <% if @front_matter["alert"].present? %>
-            <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
           <% end %>
 
-          <% @front_matter["before-content"]&.each do |partial| %>
-            <%= render(partial) %>
-          <% end %>
-
-          <%= yield %>
-
-          <% @front_matter["content"]&.each do |partial| %>
-            <%= render(partial) %>
-          <% end %>
-
-          <% @front_matter.key?("accordion") && @front_matter["accordion"].tap do |accordion_fm| %>
-            <%= render Content::AccordionComponent.new(numbered: accordion_fm["numbered"], active_step: accordion_fm["active_step"]) do |accordion| %>
-              <% accordion.content_before_accordion(
-                partial: accordion_fm.dig("content_before_accordion", "partial"),
-                call_to_action: accordion_fm.dig("content_before_accordion", "cta")
-              ) %>
-
-              <% accordion_fm["steps"]&.each do |title, contents| %>
-                <%= accordion.step(title: title, call_to_action: contents["cta"]) do %>
-                  <%= render(partial: contents["partial"]) %>
-                <% end %>
-              <% end %>
-
-              <% accordion.content_after_accordion(
-                partial: accordion_fm.dig("content_after_accordion", "partial"),
-                call_to_action: accordion_fm.dig("content_after_accordion", "cta")
-              ) %>
+          <% if @front_matter["fullwidth"].blank? %>
+            <% if @front_matter["related_content"].present? %>
+              <aside class="link-block link-block--related" role="complementary">
+                <h2 class="link-block__header">Related content</h2>
+                <ul class="link-block__list">
+                  <% @front_matter["related_content"].each do |item, anchor| %>
+                    <li><%= link_to(item, anchor) %></li>
+                  <% end %>
+                </ul>
+              </aside>
             <% end %>
           <% end %>
-        <% end %>
 
-        <% if @front_matter["fullwidth"].blank? %>
-          <% if @front_matter["related_content"].present? %>
-            <aside class="link-block link-block--related">
-              <h2 class="link-block__header">Related content</h2>
-              <ul class="link-block__list">
-                <% @front_matter["related_content"].each do |item, anchor| %>
-                  <li><%= link_to(item, anchor) %></li>
-                <% end %>
-              </ul>
-            </aside>
+        </section>
+
+        <% if @front_matter.key?("promo_content") %>
+          <% @front_matter["promo_content"]&.each do |partial| %>
+            <%= render(partial) %>
           <% end %>
-
-          <% if @front_matter["right_column"].present? %>
-            <aside>
-              <%= render partial: "layouts/shared/narrow_call_to_action" %>
-            </aside>
-          <% end %>
-        <% end %>
-
-      </section>
-
-      <% if @front_matter.key?("promo_content") %>
-        <% @front_matter["promo_content"]&.each do |partial| %>
-          <%= render(partial) %>
         <% end %>
       <% end %>
-    </main>
 
-    <%= render FooterComponent.new %>
+      <%= render FooterComponent.new(**content_footer_kwargs(@front_matter)) %>
     <% end %>
 </html>

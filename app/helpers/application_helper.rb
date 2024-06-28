@@ -1,10 +1,26 @@
 module ApplicationHelper
-  def analytics_body_tag(attributes = {}, &block)
+  def body_tag(attributes = {}, &block)
     attributes[:data] ||= {}
+
     attributes[:data][:controller] ||= ""
-    attributes[:data][:controller] << " gtm-consent"
+    (attributes[:data][:controller] << " link table").strip!
+
+    attributes[:data]["link-target"] = "content"
+    attributes[:data]["link-asset-url-value"] = ENV["APP_ASSETS_URL"]
+
+    attributes[:class] ||= ""
+    (attributes[:class] <<= " govuk-template__body govuk-body").strip!
+
+    attributes[:id] = "body"
 
     tag.body(**attributes, &block)
+  end
+
+  def main_tag(attributes = {}, &block)
+    attributes[:id] = "main-content"
+    attributes[:tabindex] = -1
+    attributes[:class] = "#{attributes[:class]} tab-after-nav-menu".strip
+    tag.main(**attributes, &block)
   end
 
   def gtm_enabled?
@@ -16,12 +32,16 @@ module ApplicationHelper
     title || frontmatter["title"] || params[:page].to_s.humanize
   end
 
-  def prefix_title(title)
+  def suffix_title(title)
     if title
-      "#{title} | Get Into Teaching"
+      "#{title} | Get Into Teaching GOV.UK"
     else
-      "Get Into Teaching"
+      "Get Into Teaching GOV.UK"
     end
+  end
+
+  def human_boolean(boolean)
+    boolean ? "Yes" : "No"
   end
 
   # FA supports several styles:
@@ -29,7 +49,7 @@ module ApplicationHelper
   # https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
   def fa_icon(icon_name, *additional_classes, style: "fas")
     classes = [style, "fa-#{icon_name}"] + additional_classes
-    tag.span("", class: classes)
+    tag.span("", class: classes, "aria-hidden": true)
   end
 
   def fas_icon(*args)
@@ -47,12 +67,6 @@ module ApplicationHelper
     merged[:html][:novalidate] = true
 
     form_for(*args, **merged, &block)
-  end
-
-  def back_link(path = :back, text: "Back", **options)
-    options[:class] = "govuk-back-link #{options[:class]}".strip
-
-    link_to text, path, **options
   end
 
   def internal_referer
@@ -73,27 +87,14 @@ module ApplicationHelper
     ["/cookie_preference", "/cookies", "/privacy-policy"].include?(path)
   end
 
-  def google_optimize_script
-    paths = google_optimize_config[:paths]
-    id = ENV["GOOGLE_OPTIMIZE_ID"]
-
-    return unless paths.present? && id.present?
-
-    javascript_pack_tag "google_optimize", 'data-turbolinks-track': "reload", data: {
-      "google-optimize-id": id,
-      "google-optimize-paths": paths,
-    }
-  end
-
-  def google_optimize_config
-    @@google_optimize_config ||=
-      YAML.safe_load(File.read(Rails.root.join("config/google_optimize.yml")))
-        .deep_symbolize_keys
-  end
-
   def sentry_dsn
     return nil if Rails.env.production?
 
     Sentry.configuration.dsn&.to_s
+  end
+
+  def content_footer_kwargs(front_matter)
+    defaults = { talk_to_us: true }
+    defaults.merge(front_matter.symbolize_keys.slice(:talk_to_us))
   end
 end

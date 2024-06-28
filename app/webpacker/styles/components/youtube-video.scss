@@ -1,0 +1,58 @@
+.youtube-video {
+  margin-bottom: $indent-amount;
+
+  iframe {
+    width: 100%;
+    outline: 3px solid $pink;
+    aspect-ratio: 16 / 9;
+  }
+
+  // Simulates 16 / 9 aspect ratio.
+  @supports not (aspect-ratio: 1) {
+    position: relative;
+    padding-bottom: 56.25%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.youtube-videos {
+  display: flex;
+  flex-direction: column;
+
+  .video {
+    padding-bottom: $indent-amount;
+
+    .youtube-video {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq($from: tablet) {
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .video {
+        flex: 0 0 50%;
+        box-sizing: border-box;
+        padding-bottom: 0;
+
+        &:nth-child(odd) {
+          padding-right: $indent-amount;
+        }
+
+        &:nth-child(even) {
+          padding-left: $indent-amount;
+        }
+      }
+    }
+  }
+}

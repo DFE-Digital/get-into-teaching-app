@@ -3,9 +3,9 @@ require "rails_helper"
 describe StructuredDataHelper, type: "helper" do
   include ERB::Util
   include EventsHelper
-  include Webpacker::Helper
+  include ApplicationHelper
 
-  let(:image_path) { "media/images/getintoteachinglogo.svg" }
+  let(:image_path) { "static/images/getintoteachinglogo.svg" }
 
   describe ".structured_data" do
     subject(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
@@ -170,10 +170,10 @@ describe StructuredDataHelper, type: "helper" do
     end
   end
 
-  describe ".search_structured_data" do
+  describe ".home_structured_data" do
     subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
-    let(:html) { search_structured_data }
+    let(:html) { home_structured_data }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
 
     before { enable_structured_data(:web_site) }
@@ -183,10 +183,16 @@ describe StructuredDataHelper, type: "helper" do
       expect(script_tag).to be_nil
     end
 
-    it "includes search information" do
+    it "includes site information" do
       expect(data).to include({
         "@type": "WebSite",
         url: root_url,
+        name: "Get Into Teaching",
+      })
+    end
+
+    it "includes search information" do
+      expect(data).to include({
         potentialAction: {
           "@type": "SearchAction",
           "target": {
@@ -294,17 +300,14 @@ describe StructuredDataHelper, type: "helper" do
       expect(script_tag).to be_nil
     end
 
-    it "returns nil when not a TTT/QT event" do
+    it "returns nil when not a GIT event" do
       event = build(:event_api, :school_or_university_event)
       expect(event_structured_data(event)).to be_nil
 
       event = build(:event_api, :online_event)
       expect(event_structured_data(event)).to be_nil
 
-      event = build(:event_api, :train_to_teach_event)
-      expect(event_structured_data(event)).not_to be_nil
-
-      event = build(:event_api, :question_time_event)
+      event = build(:event_api, :get_into_teaching_event)
       expect(event_structured_data(event)).not_to be_nil
     end
 
@@ -342,9 +345,9 @@ describe StructuredDataHelper, type: "helper" do
 
       it "has the online images" do
         is_expected.to include({ image: [
-          "/packs-test/v1/media/images/structured_data/ttt_online_1x1-bf484c635cd3e795df567d2949dcf934.jpeg",
-          "/packs-test/v1/media/images/structured_data/ttt_online_4x3-b85e3f4f32bc44694c87fa0fac81bbe1.jpeg",
-          "/packs-test/v1/media/images/structured_data/ttt_online_16x9-a44602bd76aaec3798f3798d711310bd.jpeg",
+          asset_pack_url("static/images/structured_data/git_online_1x1.jpeg"),
+          asset_pack_url("static/images/structured_data/git_online_4x3.jpeg"),
+          asset_pack_url("static/images/structured_data/git_online_16x9.jpeg"),
         ] })
       end
     end
@@ -352,9 +355,9 @@ describe StructuredDataHelper, type: "helper" do
     context "when the event is in-person" do
       it "has the in-person images" do
         is_expected.to include({ image: [
-          "/packs-test/v1/media/images/structured_data/ttt_in_person_1x1-7536d67c191fbc627baefc64808659a9.jpeg",
-          "/packs-test/v1/media/images/structured_data/ttt_in_person_4x3-5c08900b1f812a977d05b21a4428eb7f.jpeg",
-          "/packs-test/v1/media/images/structured_data/ttt_in_person_16x9-76e0739a9059dad3e151f07cfe169a75.jpeg",
+          asset_pack_url("static/images/structured_data/git_in_person_1x1.jpeg"),
+          asset_pack_url("static/images/structured_data/git_in_person_4x3.jpeg"),
+          asset_pack_url("static/images/structured_data/git_in_person_16x9.jpeg"),
         ] })
       end
     end

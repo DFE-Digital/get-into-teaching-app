@@ -1,9 +1,14 @@
-<section class="breadcrumbs container container--narrow">
-  <nav class="breadcrumb" aria-label="breadcrumb">
-    <ol>
+<section class="container breadcrumbs tab-after-nav-menu" tabindex="-1">
+  <nav class="govuk-breadcrumbs" aria-label="breadcrumbs" role="navigation">
+    <ol class="govuk-breadcrumbs__list">
       <% helpers.breadcrumb_trail do |crumb| %>
-        <% next if crumb.current? %>
-        <li><%= link_to crumb.name, crumb.url %></li>
+        <li class="govuk-breadcrumbs__list-item">
+          <% if crumb.current? %>
+            <%= tag.span(crumb.name, class: "govuk-breadcrumbs__current") %>
+          <% else %>
+            <%= link_to(crumb.name, crumb.url, class: "govuk-breadcrumbs__link") %>
+          <% end %>
+        </li>
       <% end %>
     </ol>
   </nav>

@@ -1,0 +1,10 @@
+<%= tag.ul(class: "fact-list") do %>
+  <% facts.each do |fact| %>
+    <%= tag.li do %>
+      <%= icon(fact[:icon]) %>
+      <strong><%= fact[:value] %></strong>
+      <p><%= fact[:title] %></p>
+      <p><%= fact[:link] %></p>
+    <% end %>
+  <% end %>
+<% end %>

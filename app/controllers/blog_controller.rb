@@ -1,25 +1,35 @@
 class BlogController < ApplicationController
   include PaginatablePosts
 
+  caches_page :show
+
   layout "layouts/blog/index"
 
   def index
-    @front_matter = { "title" => "Get Into Teaching Blog" }
+    @front_matter = {
+      "title" => "Get Into Teaching Blog",
+      "description" => "Read about the real life experiences of teachers and teachers in training, as well as tips on how to start your journey into the classroom.",
+    }
+
+    breadcrumb "Blog", blog_index_path
 
     @posts = paginate_posts(::Pages::Blog.posts)
   end
 
   def show
-    breadcrumb "Blog", blog_index_path
-
     @post = ::Pages::Blog.find(request.path)
 
+    begin
+      @post.validate!
+    rescue ::Pages::ContentError => e
+      raise e unless helpers.display_content_errors?
+
+      add_content_error(e)
+    end
+
+    breadcrumb "Blog", blog_index_path
+    breadcrumb @post.title, request.path
+
     render template: @post.template, layout: "layouts/blog/post"
-  end
-
-protected
-
-  def static_page_actions
-    %i[show]
   end
 end

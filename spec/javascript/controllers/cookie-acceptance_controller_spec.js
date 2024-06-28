@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie';
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import CookieAcceptanceController from 'cookie-acceptance_controller.js';
 
 describe('CookieAcceptanceController', () => {
@@ -19,7 +19,7 @@ describe('CookieAcceptanceController', () => {
                 <a tabindex="-1" href="#" id="biscuits-agree" data-cookie-acceptance-target="agree" class="call-to-action-button" data-action="click->cookie-acceptance#accept">
                     Yes, I agree. Continue to the new <span>website</span>
                 </a>
-                <a tabindex="-1" class="secondary-link" href='https://getintoteaching.education.gov.uk/' data-cookie-acceptance-target="disagree" id="cookies-disagree">
+                <a tabindex="-1" class="secondary-link" href='/cookie_preferences' data-cookie-acceptance-target="disagree" id="cookies-disagree">
                   No, I want to go to the current website <i class="fas fa-chevron-right"></i>
                 </a>
             </div>
@@ -33,6 +33,11 @@ describe('CookieAcceptanceController', () => {
 
   beforeEach(() => {
     Cookies.remove('git-cookie-preferences-v1');
+
+    Object.defineProperty(window, 'location', {
+      configurable: true,
+      value: new URL('https://getintoteaching.education.gov.uk/?query=param'),
+    });
 
     acceptButton = document.getElementById('biscuits-agree');
     infoButton = document.querySelector('.cookies-info');
@@ -61,6 +66,10 @@ describe('CookieAcceptanceController', () => {
     it('shows the cookie acceptance dialog', () => {
       const overlay = document.getElementById('overlay');
       expect(overlay.classList.contains('visible')).toBe(true);
+    });
+
+    it('updates the disagree href to retain query parameters', () => {
+      expect(disagreeButton.href).toEqual('http://localhost/cookie_preferences?query=param');
     });
 
     it('updates the tab indexes', () => {

@@ -6,13 +6,6 @@
   vertical-align: middle;
 }
 
-.icon-close {
-  @include icon;
-  background-image: url("../images/icon-hamburger-close.svg");
-  width: 23px;
-  height: 23px;
-}
-
 .icon-hamburger {
   @include icon;
   background-image: url("../images/icon-hamburger.svg");
@@ -70,9 +63,9 @@
   height: 36px;
 }
 
-.icon-train-to-teach-event {
+.icon-get-into-teaching-event {
   @include icon;
-  background-image: url("../images/icon-ttt.svg");
+  background-image: url("../images/icon-git.svg");
   width: 32px;
   height: 32px;
 }
@@ -111,4 +104,59 @@
   background-image: url("../images/icon-mail.svg");
   width: 30px;
   height: 30px;
+}
+
+.icon-mail-white {
+  @include icon;
+  background-image: url("../images/icon-mail-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-calendar {
+  @include icon;
+  background-image: url("../images/icon-calendar.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-calendar-white {
+  @include icon;
+  background-image: url("../images/icon-calendar-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-chat {
+  @include icon;
+  background-image: url("../images/icon-chat.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-call {
+  @include icon;
+  background-image: url("../images/icon-phone.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-warning {
+  @include icon;
+  background-image: url("../images/icon-warning.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-arrow-black {
+  @include icon;
+  background-image: url("../images/icon-arrow-black.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon--on-yellow {
+  background-color: $yellow;
+  padding: $indent-amount;
+  background-size: 60%;
 }

@@ -1,0 +1,104 @@
+.checklist-collage {
+  display: flex;
+  flex-direction: column;
+  gap: 2 * $indent-amount;
+  margin-top: 2 * $indent-amount;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
+
+  > div {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+  }
+
+  ul {
+    position: relative;
+    list-style: none;
+    padding-left: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 2 * $indent-amount;
+
+    li {
+      position: relative;
+      margin: 0 0 2em;
+
+      &::before {
+        content: "";
+        background-image: url("../images/icon-tick.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40px 40px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        margin-left: -3.5rem;
+        border: solid 4px $black;
+        top: -5px;
+      }
+    }
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: (4 * $indent-amount) auto (2 * $indent-amount);
+    grid-template-rows: auto (2 * $indent-amount) auto;
+
+    &.images-1 {
+      display: none;
+    }
+
+    &.images-0 {
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+    }
+
+    picture:nth-of-type(1) {
+      grid-area: 1 / 1 / span 2 / span 2;
+    }
+
+    picture:nth-of-type(2) {
+      grid-area: 2 / 2 / span 2 / span 2;
+    }
+
+    @include mq($until: tablet) {
+      picture:last-of-type {
+        display: none;
+      }
+    }
+
+    @include mq($from: tablet) {
+      grid-template-columns: (2 * $indent-amount) auto (4 * $indent-amount) (6 * $indent-amount) (2 * $indent-amount);
+      grid-template-rows: auto (2 * $indent-amount) $indent-amount auto;
+
+      &.images-1 {
+        display: grid;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      picture:nth-of-type(1) {
+        grid-area: 1 / 2 / span 2 / span 3;
+      }
+
+      picture:nth-of-type(2) {
+        grid-area: 4 / 3 / span 1 / span 3;
+      }
+
+      picture:nth-of-type(3) {
+        grid-area: 2 / 1 / span 3 / span 3;
+      }
+    }
+  }
+}

@@ -29,6 +29,13 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
+telephone_errors: &telephone_errors
+  invalid: "Enter your telephone number in the correct format"
+  invalid_dial_in_code: "Telephone number must start with a country dial-in code (e.g. 44)"
+  too_short: "Telephone number is too short (minimum is 5 characters)"
+  too_long: "Telephone number is too long (maximum is 20 characters)"
+  blank: "Enter your telephone number"
+
 en:
   views:
     pagination:
@@ -37,47 +44,6 @@ en:
       previous: "<i class=\"fas fa-arrow-left\"></i> Prev<span class=\"hide-on-mobile\">ious page</span>"
       next: "Next <span class=\"hide-on-mobile\">page</span> <i class=\"fas fa-arrow-right\"></i>"
       truncate: "&hellip;"
-  find_an_event:
-    types:
-      222750001: |-
-        <p>Our Train to Teach events will provide you with a wealth of information and help you turn questions to confidence on your journey to the classroom.</p>
-        <p>At some of our Train to Teach events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts.
-        Some events are in person and others replicate the experience online.</p>
-        <p>Whichever event you choose to attend, you will have the chance to:</p>
-        <ul>
-          <li>put your questions to expert advisers, teachers and training providers</li>
-          <li>chat with current teachers and find out what a career in teaching is really like</li>
-          <li>watch presentations which provide a step-by-step guide on how to get into teaching, the application
-          process and funding your training</li>
-        </ul>
-        <p>You need to register for Train to Teach events in advance, as spaces are
-        limited and fill up on a first come, first served basis.</p>
-        <p>
-        The presentations used at these events can be found <a href="/presentations">here</a>.
-        </p>
-      222750008: |-
-        <p>
-          Ask a panel of specialists the questions that matter to you in one of our real-time Q&A online events.
-          These Q&A sessions cover a range of different topics and give you the opportunity to ask specific questions
-          and receive advice tailored to your circumstances.
-        </p>
-      222750009: |-
-        <p>
-          Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to
-          get a feel for what their teacher training course might be like.
-        </p>
-
-        <p>Each event is different, but typically they’ll cover areas such as:</p>
-
-        <ul>
-          <li><span>course information</span></li>
-          <li><span>application advice</span></li>
-          <li><span>school experience</span></li>
-          <li><span>a chance to talk to current trainees or staff</span></li>
-        </ul>
-
-        <p>Use the search tool below to find events being held by
-        training providers in the area you would like to train.</p>
   funding_widget:
     subjects:
       primary:
@@ -119,12 +85,12 @@ en:
         name: "Art and design"
         group: "Secondary"
         sub_head: "Art and design - Secondary"
-        funding: ""
+        funding: "Bursaries of £10,000 are available for trainee art and design teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
       biology:
         name: "Biology"
         group: "Secondary"
         sub_head: "Biology - Secondary"
-        funding: "Bursaries of £10,000 are available for trainee biology teachers."
+        funding: "Bursaries of £25,000 are available for trainee biology teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
       business_studies:
         name: "Business studies"
         group: "Secondary"
@@ -134,7 +100,7 @@ en:
         name: "Chemistry"
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
-        funding: "Scholarships of £26,000 and bursaries of £24,000 are available for trainee chemistry teachers."
+        funding: "Scholarships of £30,000 and bursaries of £28,000 are available for trainee chemistry teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
       citizenship:
         name: "Citizenship"
         group: "Secondary"
@@ -145,7 +111,8 @@ en:
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding: |-
-          Bursaries of £15,000 may be available for trainee classics teachers when more than 50% of the course content covers an ancient language.
+
+          Bursaries of £25,000 may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible).
 
           Your course provider will confirm if this applies.
       communication_and_media_studies:
@@ -157,7 +124,9 @@ en:
         name: "Computing"
         group: "Secondary"
         sub_head: "Computing - Secondary"
-        funding: "Scholarships of £26,000 and bursaries of £24,000 are available for trainee computing teachers."
+        funding: "Scholarships of £30,000 and bursaries of £28,000 are available for trainee computing teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        next_steps: |-
+          Find out more about <a href="/is-teaching-right-for-me/computing">how to become a computing teacher</a>.
       dance:
         name: "Dance"
         group: "Secondary"
@@ -167,7 +136,7 @@ en:
         name: "Design and technology"
         group: "Secondary"
         sub_head: "Design and technology - Secondary"
-        funding: "Bursaries of £15,000 are available for trainee design and technology teachers."
+        funding: "Bursaries of £25,000 are available for trainee design and technology teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
       drama:
         name: "Drama"
         group: "Secondary"
@@ -182,7 +151,7 @@ en:
         name: "English"
         group: "Secondary"
         sub_head: "English - Secondary"
-        funding: ""
+        funding: "Bursaries of £10,000 are available for trainee English teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
       english_as_a_second_or_other_language:
         name: "English as a second or other language"
         group: "Secondary"
@@ -192,7 +161,7 @@ en:
         name: "Geography"
         group: "Secondary"
         sub_head: "Geography - Secondary"
-        funding: "Bursaries of £15,000 are available for trainee geography teachers."
+        funding: "Bursaries of £25,000 are available for trainee geography teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
       health_and_social_care:
         name: "Health and social care"
         group: "Secondary"
@@ -207,19 +176,24 @@ en:
         name: "Languages (including ancient languages)"
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
-        funding: "Bursaries of £15,000 are available for trainee language teachers."
-      mathematics:
-        name: "Mathematics"
+        funding: |-
+          Scholarships of £27,000 are available for trainee French, German, and Spanish language teachers.
+
+          Bursaries of £25,000 are available for all trainee language teachers, including ancient languages.
+
+          Non-UK citizens without indefinite leave to remain in the UK are eligible for this support.
+      maths:
+        name: "Maths"
         group: "Secondary"
-        sub_head: "Mathematics - Secondary"
-        funding: "Scholarships of £26,000 and bursaries of £24,000 are available for trainee maths teachers."
+        sub_head: "Maths - Secondary"
+        funding: "Scholarships of £30,000 and bursaries of £28,000 are available for trainee maths teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
         next_steps: |-
           If you have a passion for maths, find out more about <a href="/subjects/maths">becoming a maths teacher</a>.
       music:
         name: "Music"
         group: "Secondary"
         sub_head: "Music - Secondary"
-        funding: ""
+        funding: "Bursaries of £10,000 are available for trainee music teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
       physical_group:
         name: "Physical education"
         group: "Secondary"
@@ -229,9 +203,9 @@ en:
         name: "Physics"
         group: "Secondary"
         sub_head: "Physics - Secondary"
-        funding: "Scholarships of £26,000 and bursaries of £24,000 are available for trainee physics teachers."
+        funding: "Scholarships of £30,000 and bursaries of £28,000 are available for trainee physics teachers (including non-UK citizens)."
         next_steps: |-
-          Discover how to become a physics teacher if you’re an <a href="/subjects/engineers-teach-physics">engineering or material sciences graduate.</a>
+          Learn more about <a href="/subjects/physics">how to become a physics teacher</a>.
       psychology:
         name: "Psychology"
         group: "Secondary"
@@ -241,7 +215,7 @@ en:
         name: "Religious education"
         group: "Secondary"
         sub_head: "Religious education - Secondary"
-        funding: ""
+        funding: "Bursaries of £10,000 are available for trainee religious education teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
       science:
         name: "Science"
         group: "Secondary"
@@ -254,38 +228,166 @@ en:
         funding: ""
 
   event_types:
-    222750001:
+    222750012:
       name:
-        singular: "Train to Teach event"
-        plural: "Train to Teach events"
-      description:
-        short: The main event - hear from teachers, training providers and our expert advisers. Get answers to your questions and learn more about ways to train and funding.
-        long: |-
-          Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training
-          will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
-    222750007: # Question Time (displayed as Train to Teach)
-      name:
-        singular: "Train to Teach event"
-        plural: "Train to Teach events"
+        singular: "Get Into Teaching event"
+        plural: "Get Into Teaching events"
     222750008:
       name:
         singular: "Online Q&A"
         plural: "Online Q&As"
-        past: "Past online Q&As"
-      description:
-        short: Join our online Q&A to ask our experts about teacher training so you can take the next step.
-        long: |-
-          In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train.
-          Get fast answers to your questions so you can take the next step to becoming a teacher.
     222750009:
       name:
         singular: "School or University event"
         plural: "School and University events"
-      description:
-        short: Hear directly from teacher training providers about the courses they offer to help you decide.
-        long: |-
-          These events, run by schools and universities, are a great way to and find out more about a particular training provider.
-          Find out what they have to offer and help make your decision on where to apply.
+
+  have_a_degree:
+    degree_options:
+      "yes": "Yes"
+      equivalent: "I have, or I'm studying for, an equivalent qualification from another country"
+      "no": "No"
+      studying: "I'm studying for a degree"
+
+  answers:
+    identity:
+      name:
+        title: "Name"
+        change: "your name"
+      email:
+        title: "Email"
+        change: "your email"
+    date_of_birth:
+      date_of_birth:
+        title: "Date of birth"
+        change: "your date of birth"
+    gcse_maths_english:
+      has_gcse_maths_and_english_id:
+        title: "Do you have grade 4 (C) or above in maths and English GCSE, or equivalent?"
+        change: "if you have grade 4 (C) or above in maths and English GCSE, or equivalent"
+    gcse_science:
+      has_gcse_science_id:
+        title: "Do you have science GCSE Grade 4 or above?"
+        change: "if you have science GCSE Grade 4 or above"
+    has_teacher_id:
+      has_id:
+        title: "Do you have your previous teacher reference number?"
+        change: "if you have a previous teacher reference number"
+    have_a_degree:
+      degree_options:
+        title: "Do you have a degree?"
+        change: "if you have a degree"
+    overseas_callback:
+      callback_date:
+        title: "Callback date"
+        change: "callback date"
+      callback_time:
+        title: "Callback time"
+        change: "callback time"
+    overseas_country:
+      country_id:
+        title: "Which country do you live in?"
+        change: "which country you live in"
+    overseas_telephone:
+      address_telephone:
+        title: "Telephone"
+        change: "your telephone"
+    overseas_time_zone:
+      time_zone:
+        title: "Time zone"
+        change: "callback time zone"
+      address_telephone:
+        title: "Telephone"
+        change: "your telephone"
+    previous_teacher_id:
+      teacher_id:
+        title: "What is your previous teacher reference number?"
+        change: "your previous teacher reference number"
+    retake_gcse_maths_english:
+      planning_to_retake_gcse_maths_and_english_id:
+        title: "Are you planning to retake your English or maths GCSEs?"
+        change: "if you are planning to retake your English or maths GCSEs"
+    retake_gcse_science:
+      planning_to_retake_gcse_science_id:
+        title: "Are you planning to retake your science GCSE?"
+        change: "if you have planning to retake your science GCSE"
+    returning_teacher:
+      returning_to_teaching:
+        title: "Are you qualified to teach?"
+        change: "if you are qualified to teach"
+    stage_interested_teaching:
+      preferred_education_phase_id:
+        title: "Which stage are you interested in teaching?"
+        change: "the stage you are interested in teaching"
+      preferred_teaching_subject_id:
+        title: "Which subject would you like to teach if you return to teaching?"
+        change: "the subject you would like to teach if you return to teaching"
+    stage_of_degree:
+      degree_status_id:
+        title: "In which year are you studying?"
+        change: "the year in which you are studying"
+    stage_taught:
+      stage_taught_id:
+        title: "Which stage did you previously teach?"
+        change: "the stage you previously taught"
+    start_teacher_training:
+      initial_teacher_training_year_id:
+        title: "When do you want to start teacher training?"
+        change: "when you want to start teacher training"
+    subject_interested_teaching:
+      preferred_teaching_subject_id:
+        title: "Which subject are you interested in teaching?"
+        change: "which subject you are interested in teaching"
+    subject_like_to_teach:
+      preferred_teaching_subject_id:
+        title: "Which subject would you like to teach if you return to teaching?"
+        change: "the subject you would like to teach if you return to teaching"
+    subject_taught:
+      subject_taught_id:
+        title: "Which main subject did you previously teach?"
+        change: "the main subject you previously taught"
+    uk_address:
+      address_postcode:
+        title: "Postcode"
+        change: "your postcode"
+    uk_callback:
+      callback_date:
+        title: "Callback date"
+        change: "the callback date"
+      callback_time:
+        title: "Callback time"
+        change: "the callback time"
+      address_telephone:
+        title: "Telephone"
+        change: "your telephone"
+    uk_or_overseas:
+      uk_or_overseas:
+        title: "Where do you live?"
+        change: "where you live"
+    uk_telephone:
+      address_telephone:
+        title: "Telephone"
+        change: "your telephone"
+    what_degree_class:
+      uk_degree_grade_id:
+        title: "Which class is your degree?"
+        change: "the class of your degree"
+    what_subject_degree:
+      degree_subject:
+        title: "Which subject is your degree?"
+        change: "the subject of your degree"
+
+  activerecord:
+    errors:
+      models:
+        teacher_training_adviser/feedback:
+          attributes:
+            successful_visit:
+              inclusion: "Select whether you achieved what you wanted from your visit"
+            unsuccessful_visit_explanation:
+              blank: "Provide details"
+            rating:
+              invalid: "Select an option for how did you feel about the service"
+
   activemodel:
     errors:
       magic_link_token:
@@ -294,6 +396,141 @@ en:
         already_exchanged: "This link has been used already. Enter the details below to help us verify you."
 
       models:
+        feedback/steps/explanation:
+          attributes:
+            explanation:
+              blank: "Enter your feedback"
+        feedback/steps/purpose:
+          attributes:
+            topic:
+              blank: "Select an option from the list"
+        feedback/steps/rating:
+          attributes:
+            rating:
+              blank: "Select how satisfied were you with your experience"
+        feedback_search:
+            attributes:
+              created_on_or_after:
+                blank: "You must specify a created on or after date"
+                on_or_before: "Created on or after must be earlier than created on or before"
+              created_on_or_before:
+                blank: "You must specify a created on or before date"
+                on_or_before: "Created on or before cannot be in the future"
+
+        teacher_training_adviser/steps/identity:
+          attributes:
+            first_name:
+              blank: "You need to enter your first name"
+              too_long: "You have entered too many characters - you need to enter your first name"
+            last_name:
+              blank: "You need to enter your last name"
+              too_long: "You have entered too many characters - you need to enter your last name"
+            email:
+              blank: "You need to enter your email address"
+              invalid: "You need to enter your email address"
+              too_long: "Your email address is too long - you need to enter a valid email address"
+            channel_id:
+              inclusion: The link you used to sign up is no longer valid.
+        teacher_training_adviser/steps/subject_taught:
+          attributes:
+            subject_taught_id:
+              invalid_type: "The subject you have entered is not valid - you need to choose one from the subject list"
+        teacher_training_adviser/steps/what_degree_class:
+          attributes:
+            uk_degree_grade_id:
+              inclusion: "Select an option from the list"
+        teacher_training_adviser/steps/uk_or_overseas:
+          attributes:
+            uk_or_overseas:
+              inclusion: "Select if you live in the UK or overseas"
+        teacher_training_adviser/steps/what_subject_degree:
+          attributes:
+            degree_subject:
+              blank: "You need to choose a degree subject"
+        teacher_training_adviser/steps/uk_callback:
+          attributes:
+            address_telephone:
+              <<: *telephone_errors
+            phone_call_scheduled_at:
+              blank: "You need to choose a time to call"
+        teacher_training_adviser/steps/uk_telephone:
+          attributes:
+            address_telephone:
+              <<: *telephone_errors
+        teacher_training_adviser/steps/uk_address:
+          attributes:
+            address_postcode:
+              invalid: "Enter a real postcode"
+        teacher_training_adviser/steps/subject_like_to_teach:
+          attributes:
+            preferred_teaching_subject_id:
+              inclusion: "Choose a subject or other"
+        teacher_training_adviser/steps/subject_interested_teaching:
+          attributes:
+            preferred_teaching_subject_id:
+              invalid_type: "Please select a subject"
+        teacher_training_adviser/steps/start_teacher_training:
+          attributes:
+            initial_teacher_training_year_id:
+              inclusion: "You must select an option from the list"
+        teacher_training_adviser/steps/stage_of_degree:
+          attributes:
+            degree_status_id:
+              invalid_type: "Select which year you are currently studying"
+        teacher_training_adviser/steps/stage_interested_teaching:
+          attributes:
+            preferred_education_phase_id:
+              invalid_type: "You must select either primary or secondary"
+        teacher_training_adviser/steps/stage_taught:
+          attributes:
+            stage_taught_id:
+              invalid_type: "You must select either primary or secondary"
+        teacher_training_adviser/steps/returning_teacher:
+          attributes:
+            type_id:
+              invalid_type: "Select yes if you are returning to teaching"
+        teacher_training_adviser/steps/retake_gcse_science:
+          attributes:
+            planning_to_retake_gcse_science_id:
+              invalid_type: "Select yes if you are planning to retake Science GCSE or equivalent"
+        teacher_training_adviser/steps/retake_gcse_maths_english:
+          attributes:
+            planning_to_retake_gcse_maths_and_english_id:
+              invalid_type: "Select yes if you are planning to retake either English or maths (or both) GCSEs, or equivalent"
+        teacher_training_adviser/steps/overseas_time_zone:
+          attributes:
+            address_telephone:
+              <<: *telephone_errors
+            time_zone:
+              blank: "Select a time zone"
+        teacher_training_adviser/steps/overseas_telephone:
+          attributes:
+            address_telephone:
+              <<: *telephone_errors
+        teacher_training_adviser/steps/has_teacher_id:
+          attributes:
+            has_id:
+              inclusion: "Select yes if you have a previous teacher reference number"
+        teacher_training_adviser/steps/gcse_science:
+          attributes:
+            has_gcse_science_id:
+              invalid_type: "Select yes if you have Science GCSE or equivalent"
+        teacher_training_adviser/steps/gcse_maths_english:
+          attributes:
+            has_gcse_maths_and_english_id:
+              invalid_type: "Select yes if you have grade 4(C) or above in English and Maths GCSE or equivalent"
+        teacher_training_adviser/steps/have_a_degree:
+          attributes:
+            degree_options:
+              inclusion: "Select an option from the list"
+        teacher_training_adviser/steps/date_of_birth:
+          attributes:
+            date_of_birth:
+              blank: "You need to enter your date of birth"
+              on_or_before: "You must be 18 years or older to use this service"
+              on_or_after: "You must be less than 70 years old"
+              invalid: "You did not enter a valid date of birth"
+
         funding_widget:
           attributes:
             subject:
@@ -303,7 +540,7 @@ en:
           attributes:
             postcode:
               blank: Enter a postcode
-              invalid: Enter a valid postcode
+              invalid: Enter a valid UK postcode
 
         events/search:
           attributes:
@@ -330,23 +567,21 @@ en:
         events/steps/contact_details:
           attributes:
             address_telephone:
-              invalid: Enter a valid phone number
+              <<: *telephone_errors
         events/steps/further_details:
           attributes:
-            privacy_policy:
-              blank: Accept the privacy policy to continue
             subscribe_to_mailing_list:
               inclusion: Choose yes or no
         events/steps/personalised_updates:
           attributes:
             address_postcode:
-              invalid: Enter a valid postcode, or leave blank
+              invalid: Enter a valid UK postcode, or leave blank
             degree_status_id:
-              inclusion: Select the stage of your degree you are at
+              inclusion: Select your degree stage
             consideration_journey_stage_id:
               inclusion: Select how close you are to applying for teacher training
             preferred_teaching_subject_id:
-              inclusion: Select the subject do you want to teach
+              inclusion: Select the subject you want to teach
 
         callbacks/steps/personal_details:
           attributes:
@@ -360,15 +595,9 @@ en:
         callbacks/steps/callback:
           attributes:
             address_telephone:
-              blank: Enter your telephone number
-              invalid: Enter a valid phone number
+              <<: *telephone_errors
             phone_call_scheduled_at:
               blank: "You need to choose a time to call"
-        callbacks/steps/privacy_policy:
-          attributes:
-            accept_privacy_policy:
-              blank: Accept the privacy policy to continue
-              accepted: Accept the privacy policy to continue
         callbacks/steps/talking_points:
           attributes:
             talking_points:
@@ -383,6 +612,10 @@ en:
             email:
               blank: Enter your full email address
               invalid: Enter a valid email address
+        mailing_list/steps/returning_teacher:
+          attributes:
+            qualified_to_teach:
+              inclusion: Select yes if you are qualified to teach
         mailing_list/steps/degree_status:
           attributes:
             degree_status_id:
@@ -402,14 +635,7 @@ en:
           attributes:
             address_postcode:
               blank: Enter your postcode
-              invalid: Enter a valid postcode
-            send_event_emails:
-              inclusion: Select if you would like to hear about teacher training events
-        mailing_list/steps/privacy_policy:
-          attributes:
-            accept_privacy_policy:
-              blank: Accept the privacy policy to continue
-              accepted: Accept the privacy policy to continue
+              invalid: Enter a valid UK postcode
 
         # one-page mailing list
         mailing_list/signup:
@@ -431,10 +657,7 @@ en:
               blank: Choose a subject from the list
               inclusion: Choose a subject from the list
             address_postcode:
-              invalid: Enter a valid postcode
-            accept_privacy_policy:
-              blank: Accept the terms and conditions to continue
-              accepted: Accept the terms and conditions to continue
+              invalid: Enter a valid UK postcode
             timed_one_time_password:
               wrong_code: Enter the code you received by email
 
@@ -464,8 +687,6 @@ en:
               blank: Enter the date and time the event starts
             end_at:
               blank: Enter the date and time the event ends
-            scribble_id:
-              blank: Enter a Scribble ID
 
         internal/event_building:
           attributes:
@@ -489,6 +710,85 @@ en:
       wizard_steps_authenticate:
         timed_one_time_password: "To verify your details, we've sent a code to your email address."
 
+      teacher_training_adviser_steps_identity:
+        first_name: "First name"
+        last_name: "Last name"
+        email: "Email address"
+      teacher_training_adviser_steps_overseas_callback:
+        phone_call_scheduled_at: "Select your preferred day and time for a callback"
+      teacher_training_adviser_steps_overseas_time_zone:
+        address_telephone: "Contact telephone number"
+        time_zone: "Select your time zone"
+      teacher_training_adviser_steps_overseas_telephone:
+        address_telephone: "Overseas telephone number (optional)"
+      teacher_training_adviser_steps_previous_teacher_id:
+        teacher_id: "Teacher reference number (optional)"
+      teacher_training_adviser_steps_what_subject_degree:
+        degree_subject: "What subject is your degree?"
+      teacher_training_adviser_steps_subject_like_to_teach:
+        preferred_teaching_subject_id: "Which subject would you like to teach if you return to teaching?"
+      teacher_training_adviser_steps_subject_taught:
+        subject_taught_id: "Which main subject did you previously teach?"
+      teacher_training_adviser_steps_subject_interested_teaching:
+        preferred_teaching_subject_id: "What would you like to teach?"
+      teacher_training_adviser_steps_start_teacher_training:
+        initial_teacher_training_year_id: "When do you want to start your teacher training?"
+      teacher_training_adviser_steps_uk_telephone:
+        address_telephone: "UK telephone number (optional)"
+      teacher_training_adviser_steps_uk_callback:
+        address_telephone: "Contact telephone number"
+        phone_call_scheduled_at: "Select your preferred day and time for a callback"
+      teacher_training_adviser_steps_overseas_country:
+        country_id: "Which country do you live in?"
+      teacher_training_adviser_steps_uk_or_overseas:
+        uk_or_overseas_options:
+          UK: "UK"
+          Overseas: "Overseas"
+      teacher_training_adviser_steps_stage_interested_teaching:
+        preferred_education_phase_id_options:
+          222750000: "Primary"
+          222750001: "Secondary"
+      teacher_training_adviser_steps_stage_taught:
+        stage_taught_id_options:
+          222750000: "Primary"
+          222750001: "Secondary"
+      teacher_training_adviser_steps_gcse_science:
+        has_gcse_science_id_options:
+          222750000: "Yes"
+          222750001: "No"
+      teacher_training_adviser_steps_retake_gcse_maths_english:
+        planning_to_retake_gcse_maths_and_english_id_options:
+          222750000: "Yes"
+          222750001: "No"
+      teacher_training_adviser_steps_retake_gcse_science:
+        planning_to_retake_gcse_science_id_options:
+          222750000: "Yes"
+          222750001: "No"
+      teacher_training_adviser_steps_gcse_maths_english:
+        has_gcse_maths_and_english_id_options:
+          222750000: "Yes"
+          222750001: "No"
+      teacher_training_adviser_steps_returning_teacher:
+        type_id_options:
+          222750001: "Yes"
+          222750000: "No"
+      teacher_training_adviser_steps_have_a_degree:
+        degree_options_options:
+          "yes": "Yes"
+          equivalent: "I am not a UK citizen and have, or am studying for, an equivalent qualification"
+          "no": "No"
+          studying: "I'm studying for a degree"
+
+      teacher_training_adviser_feedback:
+        unsuccessful_visit_explanation: "Give details"
+        improvements: "How could we improve the service? (optional)"
+        rating_options:
+          very_satisfied: "Very satisfied"
+          satisfied: "Satisfied"
+          neither_satisfied_or_dissatisfied: "Neither satisfied or dissatisfied"
+          dissatisfied: "Dissatisfied"
+          very_dissatisfied: "Very dissatisfied"
+
       events_steps_personal_details:
         first_name: First name
         last_name: Last name
@@ -496,10 +796,10 @@ en:
       events_steps_contact_details:
         address_telephone: What is your telephone number? (optional)
       events_steps_personalised_updates:
-        address_postcode: What is your postcode? (optional)
+        address_postcode: What is your UK postcode? (optional)
         degree_status_id: Do you have a degree?
         consideration_journey_stage_id: How close are you to applying for teacher training?
-        preferred_teaching_subject_id: What subject do you want to teach?
+        preferred_teaching_subject_id: What do you want to teach?
 
       callbacks_steps_personal_details:
         first_name: First name
@@ -522,10 +822,7 @@ en:
       mailing_list_steps_subject:
         preferred_teaching_subject_id: Which subject do you want to teach?
       mailing_list_steps_postcode:
-        address_postcode: Your postcode
-        send_event_emails_options:
-          "true": "Yes"
-          "false": "No"
+        address_postcode: Your UK postcode (optional)
 
       search:
         search: Search for ...
@@ -540,26 +837,74 @@ en:
           resent: We've sent you another email
       events_steps_personalised_updates:
         address_postcode: |-
-          We want to send you relevant information about events in your area.
+          If you give us your postcode, we'll let you know about events happening near you.
       mailing_list_signup:
         address_postcode: |-
-          We want to send you relevant information about events in your area.
+          If you give us your postcode, we'll let you know about events happening near you.
+      teacher_training_adviser_steps_what_subject_degree:
+        degree_subject: "If your subject is not listed choose the option that is nearest to your degree."
+      teacher_training_adviser_steps_subject_interested_teaching:
+        preferred_teaching_subject_id: "Choose a subject, even if you're not sure yet. We try and match you with an adviser based on your subject."
+      teacher_training_adviser_steps_uk_telephone:
+        address_telephone: |-
+          Your adviser can talk to you by text and WhatsApp, as well as by
+          phone. Giving your phone number is the easiest way to talk to an
+          adviser.
+      teacher_training_adviser_steps_start_teacher_training:
+        initial_teacher_training_year_id: "Choose the year you would like to start your teacher training."
+      teacher_training_adviser_steps_stage_interested_teaching:
+        preferred_education_phase_id: "Select a stage even if you're not sure yet — we try and match you with an adviser based on who you'd like to teach. You can change your mind later."
+      teacher_training_adviser_steps_stage_taught:
+        stage_taught_id:
+      teacher_training_adviser_steps_returning_teacher:
+        type_id: "Only select 'yes' if you have English qualified teacher status (QTS)."
+      teacher_training_adviser_steps_have_a_degree:
+        degree_options: "To use this service your bachelor's degree or predicted grade needs to be a 2:2 class honours or above."
+      teacher_training_adviser_steps_overseas_telephone:
+        address_telephone_html: "We recommend you provide us with your phone number as this is the most effective way to talk to your adviser.<br /><br />For international numbers include the country code."
+      teacher_training_adviser_steps_date_of_birth:
+        date_of_birth: "For example, 31 3 1980"
+      teacher_training_adviser_steps_overseas_country:
+        country_id_html: |-
+          You can apply to train or teach from any country in the world, but you may need a visa. Our guidance for
+          <a target="_blank" href="/non-uk-teachers/teach-in-england-if-you-trained-overseas">international teachers</a>
+          and <a target="_blank" href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student">international
+          trainees</a> explains how to apply for the correct visa or immigration status for your employment or study in the UK.
 
     legend:
       events_steps_further_details:
-        privacy_policy:
-          text: Are you over 16 and do you agree to our %{link}?
-          link: privacy policy
         subscribe_to_mailing_list: |-
           Would you like to receive email updates to help you get into teaching? If you say no, you will still receive confirmation emails about any events you sign up to attend.
-      mailing_list_steps_privacy_policy:
-        accept_privacy_policy:
-          text: Are you over 16 and do you agree to our %{link}?
-          link: privacy policy
-      callbacks_steps_privacy_policy:
-        accept_privacy_policy:
-          text: Are you over 16 and do you agree to our %{link}?
-          link: privacy policy
+      teacher_training_adviser_feedback:
+        successful_visit: "Did you achieve what you wanted from your visit?"
+        rating: "Overall, how did you feel about the service you received?"
+      teacher_training_adviser_feedback_search:
+        created_on_or_after: "Created on or after"
+        created_on_or_before: "Created on or before"
+      teacher_training_adviser_steps_date_of_birth:
+        date_of_birth: "Enter your date of birth"
+      teacher_training_adviser_steps_uk_or_overseas:
+        uk_or_overseas: "Where do you live?"
+      teacher_training_adviser_steps_stage_of_degree:
+        degree_status_id: "In which year are you studying?"
+      teacher_training_adviser_steps_stage_interested_teaching:
+        preferred_education_phase_id: "Which stage are you interested in teaching?"
+      teacher_training_adviser_steps_stage_taught:
+        stage_taught_id: "Which stage did you previously teach?"
+      teacher_training_adviser_steps_gcse_science:
+        has_gcse_science_id: "Do you have grade 4 (C) or above in GCSE science, or equivalent?"
+      teacher_training_adviser_steps_retake_gcse_maths_english:
+        planning_to_retake_gcse_maths_and_english_id: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent?"
+      teacher_training_adviser_steps_retake_gcse_science:
+        planning_to_retake_gcse_science_id: "Are you planning to retake your science GCSE?"
+      teacher_training_adviser_steps_gcse_maths_english:
+        has_gcse_maths_and_english_id: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent?"
+      teacher_training_adviser_steps_returning_teacher:
+        type_id: "Are you qualified to teach?"
+      teacher_training_adviser_steps_has_teacher_id:
+        has_id: "Do you have your previous teacher reference number?"
+      teacher_training_adviser_steps_have_a_degree:
+        degree_options: "Do you have a degree?"
 
   internal:
     status:

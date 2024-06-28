@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import ConditionalFieldController from 'conditional_field_controller.js';
 
 describe('ConditionalFieldController', () => {

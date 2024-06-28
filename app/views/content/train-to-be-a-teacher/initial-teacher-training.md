@@ -1,15 +1,22 @@
 ---
-title: "Initial teacher training (ITT)"
-heading: "Initial teacher training (ITT)"
+title: "What to expect in teacher training"
+heading: "What to expect in teacher training"
+subcategory: Postgraduate teacher training
 description: |-
-  Find out what initial teacher training (ITT) is like. Learn about your classroom placements, the theoretical learning, and how you’ll be assessed.
+  Find out what initial teacher training (ITT) is like, from your classroom placements and theoretical learning, to how you'll be assessed.
+navigation: 20.15
+navigation_title: What to expect in teacher training
+navigation_description: Find out what your teacher training will be like, what you'll learn, and what classroom experience you'll get.
 related_content:
     Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
-    Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
-    What to expect on your teacher training : "/blog/what-to-expect-on-your-teacher-training"
+    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
+    Training and support for early career teachers : "/support-for-early-career-teachers"
+    How to apply : "/how-to-apply-for-teacher-training"
 promo_content:
-    - content/train-to-be-a-teacher/promos/events-near-you
+    - content/train-to-be-a-teacher/promos/mailing-list-promo-itt
+    
 ---
+
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
 
@@ -31,9 +38,9 @@ There are full-time and part-time teacher training courses available.
 
 ## What you’ll learn in initial teacher training
 
-What you’ll learn will depend on your course and the qualifications it offers. Some teacher training courses award [qualified teacher status (QTS)](/what-is-qts), while some award QTS with [PGCE or PGDE](/what-is-a-pgce).
+What you’ll learn will depend on your course and the qualifications it offers. Some teacher training courses award [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), while some award QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
 
-Initial teacher training helps you meet the [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards). You must meet the Teachers’ Standards to be awarded QTS.
+Initial teacher training helps you meet the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). You must meet the teachers’ standards to be awarded QTS.
 
 All initial teacher training will help you:
 
@@ -49,13 +56,17 @@ environment
 
 ## Your classroom placements
 
-Typically, you will get 120 days of classroom experience in a minimum of two schools. Through your placements, you’ll have the opportunity to teach, plan, observe and research.
+You should get 120 days of classroom experience as part of a postgraduate teacher training course.
 
-You’ll get classroom experience whether you do school-led or university-led training. School-led training programmes like School Direct usually include more time in school than university-led training.
+Your placements will be in a minimum of 2 schools. Through your placements, you’ll have the opportunity to teach, plan, observe and research.
 
-Some courses may offer placements in specific kinds of schools, like special schools. You can talk to your course provider about the opportunities available.
+You’ll get classroom experience whether you do school-led or university-led training. Some courses may offer placements in specific kinds of schools, like special schools. You can talk to your course provider about the opportunities available.
 
-If you apply to train with a specific school, your placements may not take place within that school. They may take place at a school within their partnership or trust. Speak to your course provider for more details.
+Where you complete your classroom placements will depend on whether you've chosen a primary or secondary teacher training course. [Learn about deciding who to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
+
+If you apply to train with a specific school, your placements may not all take place within that school. They may take place at a school within their partnership or trust. 
+
+You will need experience of teaching in 2 schools to be awarded qualified teacher status. Speak to your course provider for more details.
 
 ## Your teacher training timetable
 
@@ -65,10 +76,8 @@ Some courses begin with time spent in a university or school where you start you
 
 School placements vary in length and structure, but the minimum length is usually around 6 weeks. You should check with your training provider what their course and placement patterns are.
 
-Read about [Cindy’s first week as a trainee teacher doing a PGDE with QTS](/blog/my-first-week-as-a-trainee-teacher).
-
 ## How you’ll be assessed 
 
 There are two types of assessments you’ll have as part of your training - formative and summative. Formative assessments are less formal and happen throughout your course. Summative assessments are formal assessments, usually at the end of your course.
 
-You might be assessed through written assignments, lesson observations, or by a portfolio of evidence showing how you’re meeting the [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards). Assessments vary by provider and the qualifications you’re working towards.
+You might be assessed through written assignments, lesson observations, or by a portfolio of evidence showing how you’re meeting the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). Assessments vary by provider and the qualifications you’re working towards.

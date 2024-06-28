@@ -1,6 +1,6 @@
 module MailingList
   module Steps
-    class Subject < ::DFEWizard::Step
+    class Subject < ::GITWizard::Step
       attribute :preferred_teaching_subject_id
       validates :preferred_teaching_subject_id,
                 presence: true,
@@ -17,9 +17,7 @@ module MailingList
     private
 
       def query_teaching_subjects
-        GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects.reject do |type|
-          TeachingSubject.ignore?(type.id)
-        end
+        Crm::TeachingSubject.all
       end
     end
   end

@@ -4,11 +4,6 @@ module Content
       "attachment" => CallsToAction::AttachmentComponent,
       "simple" => CallsToAction::SimpleComponent,
       "chat" => ChatComponent,
-      "chat_online" => CallsToAction::ChatOnlineComponent,
-      "story" => CallsToAction::StoryComponent,
-      "next_steps" => CallsToAction::NextStepsComponent,
-      "multiple_buttons" => CallsToAction::MultipleButtonsComponent,
-      "ect" => CallsToAction::EctComponent,
       "feature_table" => Content::FeatureTableComponent,
     }.freeze
 
@@ -64,6 +59,8 @@ module Content
         [args, {}]
       when Hash
         [[], args.symbolize_keys]
+      else
+        raise ArgumentError, "arguments should be an Array or Hash"
       end
     end
   end

@@ -1,9 +1,9 @@
-require "rails_helper"
+require "spec_helper"
 require "lazy_load_images"
 
 describe LazyLoadImages do
   describe "#html" do
-    subject { instance.html }
+    subject { instance.process.to_html }
 
     let(:original_src) { "image.jpg" }
     let(:original_ext) { File.extname(original_src) }
@@ -11,7 +11,7 @@ describe LazyLoadImages do
     let(:source) { "<source srcset=\"#{original_src}\"></source>" }
     let(:picture) { "<picture>#{img}#{source}</picture>" }
     let(:no_js_picture) { "<noscript><picture class=\"no-js\">#{img}#{source}</picture></noscript>" }
-    let(:instance) { described_class.new(picture) }
+    let(:instance) { described_class.new(Nokogiri::HTML(picture)) }
 
     it do
       lazy_image = "<img class=\"test lazyload\" src=\"#{LazyLoadImages::TINY_GIF}\" data-src=\"#{original_src}\">"

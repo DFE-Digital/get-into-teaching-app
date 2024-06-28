@@ -18,7 +18,7 @@ body {
   }
 }
 
-main,
+.main-section,
 .hero {
   @extend %content-width-limiter-shared;
 }
@@ -46,14 +46,12 @@ main,
 .hidden {
   // We use important! to ensure any component-level
   // display values (such as flex) are still hidden.
-  display: none !important;
+  display: none !important; /* stylelint-disable-line declaration-no-important */
 }
 
 // new layouts, intended to remove the reliance on float and instead use semantic markup and flexbox:
 
-$content-max-width: 1200px;
-
-main {
+.main-section {
   margin-bottom: 3em;
 
   flex-grow: 1;
@@ -72,21 +70,31 @@ section.container {
   flex-grow: 0;
   flex-wrap: wrap;
   flex-direction: column;
-
   margin: 1em 0;
+
+  > main.within-section,
+  > .back-link {
+    margin: auto $indent-amount;
+
+    @include mq($from: tablet) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &.centered {
+    justify-content: center;
+  }
 
   @include mq($from: tablet) {
     flex-direction: row;
     justify-content: flex-start;
     margin: 1.5em auto 0;
     max-width: $content-max-width;
-  }
 
-  &--narrow {
-    margin-top: 0;
-    margin-bottom: 0;
-    flex-direction: row;
-    justify-content: flex-start;
+    &--845 {
+      max-width: $column-845;
+    }
   }
 
   // most pages won't have a h1 here but on those where
@@ -96,35 +104,22 @@ section.container {
     flex: 0 1 100%;
     max-width: $content-max-width;
     @include indent-left-and-right;
-
-    h1 {
-      @include font-size(xxlarge);
-      margin-bottom: 3rem;
-      max-width: 30ch;
-
-      .subheading {
-        @include font-size(medium);
-
-        margin-top: .2em;
-      }
-    }
-
-    span.caption {
-      @include font-size(medium);
-      margin-top: 3em;
-      color: $grey-dark;
-    }
-
-    span.caption + h1 {
-      margin-top: 0;
-    }
   }
 
   > article {
     flex: 0 1 65%;
+    margin-bottom: 4em;
 
     &.fullwidth {
       flex: 1 0 100%;
+    }
+
+    .col {
+      margin: 0 auto 3em;
+
+      &.col-720 {
+        max-width: 720px;
+      }
     }
   }
 
@@ -146,5 +141,96 @@ section.container {
   > .supplementary {
     flex: 0 1 100%;
     @include indent-left-and-right;
+  }
+
+  &--no-bottom-margin {
+    margin-bottom: 0;
+
+    > article {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.inset {
+  padding: 0 $indent-amount;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.row {
+  .grey {
+    background-color: $grey;
+    padding: 1em 0;
+
+    @include mq($from: tablet) {
+      padding: 3em 0;
+    }
+  }
+
+  .col {
+    margin: 0 auto 2 * $indent-amount auto;
+
+    @include mq($from: tablet) {
+      margin: 0 auto 3 * $indent-amount auto;
+    }
+  }
+
+  .col-space-s {
+    margin-bottom: 1 * $indent-amount;
+  }
+
+  .col-space-m {
+    margin-bottom: 2 * $indent-amount;
+  }
+
+  .col-space-l {
+    margin-bottom: 3 * $indent-amount;
+  }
+
+  .col-space-l-top {
+    margin-top: 3 * $indent-amount;
+  }
+
+  .col-space-0 {
+    margin-bottom: 0;
+  }
+
+  .col-full-page {
+    max-width: $page-max-width;
+  }
+
+  .col-full-content {
+    max-width: $content-max-width;
+  }
+
+  .col-845 {
+    max-width: $column-845;
+  }
+
+  .col-720 {
+    max-width: $column-720;
+  }
+
+  .col-640 {
+    max-width: $column-640;
+  }
+
+  .col-center {
+    text-align: center;
+  }
+
+  .col-horizontal {
+    display: flex;
+    gap: $indent-amount;
+    flex-direction: column;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+    }
+
+    > * {
+      flex: 1 1 0;
+    }
   }
 }

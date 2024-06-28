@@ -1,5 +1,12 @@
+@mixin input-focus {
+  outline-color: $pink;
+  outline-offset: 2px;
+}
+
 select,
-input {
+select.govuk-select,
+input,
+input.govuk-input {
   @include font-size("small");
   margin-left: $indent-amount;
   margin-right: $indent-amount;
@@ -9,11 +16,16 @@ input {
   width: 100%;
 
   &:focus {
-    outline: 3px solid $yellow;
-    outline-offset: 0;
+    @include input-focus;
     -webkit-box-shadow: inset 0 0 0 2px;
     box-shadow: inset 0 0 0 2px;
   }
+}
+
+input.govuk-radios__input:focus + .govuk-radios__label::before,
+input.govuk-checkboxes__input:focus + .govuk-checkboxes__label::before {
+  @include input-focus;
+  box-shadow: none;
 }
 
 input {
@@ -21,12 +33,16 @@ input {
   padding-right: .4em;
 }
 
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
 form {
-  .govuk-label,
-  h3.govuk-fieldset__heading {
-    @include font-size("small");
-    color: $black;
-    font-weight: bold;
+  h1.govuk-fieldset__heading,
+  h1.govuk-label-wrapper .govuk-label,
+  h1 {
+    @extend .heading-l;
   }
 
   h1,
@@ -37,6 +53,12 @@ form {
     > label.govuk-label {
       font-size: inherit;
     }
+  }
+
+  legend h3.govuk-fieldset__heading,
+  .govuk-label {
+    font-weight: bold;
+    @include font-size("small");
   }
 
   .govuk-form-group {
@@ -68,7 +90,7 @@ form {
     }
 
     span {
-      color: $green;
+      color: $cta-green;
       display: none;
     }
   }
@@ -105,4 +127,8 @@ form {
   select {
     border-color: $red;
   }
+}
+
+#cookie-preferences-form {
+  word-break: normal;
 }

@@ -1,6 +1,17 @@
 $govuk-include-default-font-face: false;
 
-@import "~govuk-frontend/govuk/all";
+@function frontend-font-url($filename) {
+  @return url("~assets/fonts/" + $filename);
+}
+
+@function frontend-image-url($filename) {
+  @return url("~assets/images/" + $filename);
+}
+
+$govuk-font-url-function: frontend-font-url;
+$govuk-image-url-function: frontend-image-url;
+
+@import "~govuk-frontend/dist/govuk/index";
 @import "~trix";
 @import "~flatpickr";
 @import "colours";
@@ -46,7 +57,7 @@ $grey-very-light: #f3f2f1;
         margin-bottom: 30px;
         text-align: left;
         font-weight: bold;
-        @include font-size('xlarge');
+        @include font-size("xlarge");
       }
     }
   }

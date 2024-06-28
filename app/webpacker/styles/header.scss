@@ -1,16 +1,28 @@
-@import 'header/covid';
-@import 'header/logo';
-@import 'header/skiplink';
-@import 'header/navigation';
-@import 'header/extra-navigation';
-@import 'header/menu-button';
+@import "header/logo";
+@import "header/skiplink";
+@import "header/navigation";
+@import "header/extra-navigation";
+@import "header/menu-button";
 
 body > header {
-
   // mobile (default) layout
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
+
+  // controls placement of menu button
+  @include mq($from: narrow) {
+    .extra-navigation {
+      grid-column: 1/3;
+    }
+  }
+
+  // controls layout of menu dropdown items + logo
+  @include mq($from: narrow, $until: tablet) {
+    nav {
+      grid-column: 1/3;
+    }
+  }
 
   @include mq($from: tablet) {
     border-bottom: 1px solid $grey;
@@ -35,8 +47,34 @@ body > header {
 
   // desktop
   @include mq($from: desktop, $until: wide) {
+    // ensure navigation bar is on its own line for < wide
     nav {
       grid-column: 1/3;
     }
   }
+}
+
+.desktop-menu-container {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: grid;
+  grid-template-columns: [left] 100px [category-links-start] 1fr [page-links-start] 1fr [hot-links-start] 1fr [content-end] 100px [right];
+  grid-template-rows: [main-start] 1fr [main-end];
+  background: #F0F0F0;
+}
+
+.category-links {
+  grid-column-start: category-links-start;
+  grid-column-end: page-links-start;
+}
+
+.page-links {
+  grid-column-start: page-links-start;
+  grid-column-end: hot-links-start;
+  border-left: dotted lightgrey 1px;
+}
+
+.key-links {
+  grid-column-start: hot-links-start;
+  grid-column-end: content-end;
 }

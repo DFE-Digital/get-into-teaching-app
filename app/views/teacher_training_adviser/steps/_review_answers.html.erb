@@ -1,0 +1,19 @@
+<% @page_title = "Check your answers before you continue" %>
+
+<h1>Check your answers before you continue</h1>
+
+<h2 class="govuk-heading-m">Personal details</h2>
+
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <% f.object.personal_detail_answers_by_step.each do |step, answers| %>
+    <%= render partial: "teacher_training_adviser/steps/review_answers/answer", collection: answers, locals: { step: step } %>
+  <% end %>
+</dl>
+
+<h2 class="govuk-heading-m">What you've told us</h2>
+
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <% f.object.other_answers_by_step.each do |step, answers| %>
+    <%= render partial: "teacher_training_adviser/steps/review_answers/answer", collection: answers, locals: { step: step } %>
+  <% end %>
+</dl>

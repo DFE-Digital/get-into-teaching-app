@@ -1,12 +1,10 @@
 class HeaderComponent < ViewComponent::Base
-  renders_one :hero, Header::HeroComponent
-  renders_one :above_hero
+  attr_reader :breadcrumbs, :front_matter
 
-  attr_reader :breadcrumbs
-
-  def initialize(breadcrumbs: false)
+  def initialize(breadcrumbs: false, front_matter: {})
     super
 
     @breadcrumbs = breadcrumbs
+    @front_matter = front_matter
   end
 end

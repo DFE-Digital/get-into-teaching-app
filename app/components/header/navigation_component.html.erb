@@ -1,7 +1,33 @@
-<nav class="hidden-mobile" data-navigation-target="nav" aria-label="Primary navigation">
-  <ol class="primary" data-navigation-target="primary">
+<!-- mobile navigation -->
+<%= tag.nav id: "primary-navigation", class: "hidden-mobile", data: { "navigation-target": "nav", action: "click->navigation#handleNavMenuClick" }, "aria-label": "Primary navigation", role: "navigation" do %>
+  <%= tag.ol class: "primary", data: { "navigation-target": "primary" } do %>
     <% all_resources.each do |resource| %>
-      <%= nav_link(resource.title, resource.path) %>
+      <%= nav_link(resource, :mobile, underline_on_hover: false) %>
     <% end %>
-  </ol>
-</nav>
+  <% end %>
+<% end %>
+
+<!-- desktop dropdown navigation -->
+<%= tag.div id: "secondary-navigation", class: "desktop-menu-container hidden-mobile", data: { "navigation-target": "desktop", action: "click->navigation#handleNavMenuClick" }, "aria-label": "Secondary navigation", role: "navigation" do %>
+  <div class="category-links">
+    <% all_resources.each do |resource| %>
+      <% if resource.children? %>
+        <%= category_list(resource, :desktop, css_class: "category-links-list hidden-menu") %>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="page-links">
+    <% all_resources.each do |resource| %>
+      <% if resource.subcategories.present? %>
+        <% resource.subcategories.each do |subcategory| %>
+          <%= page_list(resource, subcategory, :desktop, css_class: "page-links-list hidden-menu") %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="key-links">
+  </div>
+
+<% end %>

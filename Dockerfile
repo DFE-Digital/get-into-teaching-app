@@ -1,6 +1,7 @@
-ARG BUILD_TYPE
+# To use or update to a ruby version, change BASE_RUBY_IMAGE
+ARG BASE_RUBY_IMAGE=ruby:3.1.4-alpine3.18
 
-FROM ruby:3.1.2-alpine3.14 as base
+FROM ${BASE_RUBY_IMAGE} as base
 
 ENV RAILS_ENV=production \
     NODE_ENV=production \
@@ -13,22 +14,22 @@ ENV RAILS_ENV=production \
 RUN mkdir /app
 WORKDIR /app
 
-RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn \
-    chromium chromium-chromedriver && rm -rf /var/lib/apt/lists/*
+RUN apk update
 
-# Copy node_modules/gem as cache
-# hadolint ignore=DL3022
-COPY --from=ghcr.io/dfe-digital/get-into-teaching-frontend:master /usr/local/bundle /usr/local/bundle
-# hadolint ignore=DL3022
-COPY --from=ghcr.io/dfe-digital/get-into-teaching-frontend:master /app/node_modules /app/node_modules
+RUN apk add --no-cache \
+  "procps-ng=4.0.4-r0" \
+  "libproc2=4.0.4-r0"
 
-# install NPM packages removign artifacts
-COPY package.json yarn.lock ./
-# hadolint ignore=DL3060
-RUN yarn install
+RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
+        chromium chromium-chromedriver postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
 
 # Install bundler
 RUN gem install bundler --version=2.3.4
+
+# Install NPM packages removing artifacts
+COPY package.json yarn.lock ./
+# hadolint ignore=DL3060
+RUN yarn install
 
 # Install Gems removing artifacts
 COPY .ruby-version Gemfile Gemfile.lock ./
@@ -36,20 +37,25 @@ RUN bundle install --jobs=$(nproc --all) && \
     rm -rf /root/.bundle/cache && \
     rm -rf /usr/local/bundle/cache
 
-FROM base AS build-release
-
-# Extra dependencies for image processing
-# Test packages are also removed (added earlier to benefit the cache)
-RUN apk add --no-cache pngquant jpegoptim imagemagick parallel && \
-    rm -rf /var/lib/apt/lists/* && \
-    apk del chromium chromium-chromedriver
-
-# Add code and compile assets
+# Add all remaining files
 COPY . .
+
+
+FROM base as release-build
+
+RUN apk update
+RUN apk add --no-cache \
+        pngquant jpegoptim imagemagick parallel \
+        && rm -rf /var/lib/apt/lists/*
+
+COPY --from=base /app /app
 
 # See https://github.com/rails/rails/issues/32947 for why we
 # bypass the credentials here.
 RUN SECRET_KEY_BASE=1 RAILS_BUILD=1 bundle exec rake assets:precompile
+
+# Remove node_modules since they are only used to generated the assets and take a lot of space
+RUN rm -rf node_modules
 
 # Cap images to have a max width of 1000px
 # Lossless optimize PNGs
@@ -66,17 +72,33 @@ SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 RUN find public \( -type f -a \( -iname "*.jpg" -o -iname ".jpeg" -o -iname ".png" \) \) | parallel -eta magick {} -quality 75 "{.}.webp" \
     && find public \( -type f -a \( -iname "*.jpg" -o -iname ".jpeg" \) \) | parallel -eta magick {} -quality 75 "{.}.jp2"
 
-FROM base AS build-test
 
-# Add code and compile assets
-COPY . .
+FROM ${BASE_RUBY_IMAGE} as release
 
-# hadolint ignore=DL3006
-FROM build-${BUILD_TYPE} AS final
+ENV RAILS_ENV=production \
+    RAILS_SERVE_STATIC_FILES=true \
+    RAILS_LOG_TO_STDOUT=true \
+    RACK_TIMEOUT_SERVICE_TIMEOUT=60
+
+RUN mkdir /app
+WORKDIR /app
+
+# Install production image dependencies
+RUN apk update
+
+RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN apk add --no-cache \
+  "procps-ng=4.0.4-r0" \
+  "libproc2=4.0.4-r0"
+
+COPY --from=release-build /app /app
+COPY --from=release-build /usr/local/bundle/ /usr/local/bundle/
 
 EXPOSE 3000
 ENTRYPOINT ["bundle", "exec"]
-CMD ["rails", "server" ]
+CMD ["rails db:migrate && rails server"]
 
 ARG SHA
 RUN echo "sha-${SHA}" > /etc/get-into-teaching-app-sha

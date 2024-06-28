@@ -1,6 +1,8 @@
 require "rails_helper"
 
 RSpec.feature "Chat", type: :feature do
+  include_context "when requesting a page with the Get Into Teaching events badge"
+
   around do |example|
     travel_to(date.in_time_zone("London")) { example.run }
   end

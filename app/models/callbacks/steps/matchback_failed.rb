@@ -1,6 +1,6 @@
 module Callbacks
   module Steps
-    class MatchbackFailed < ::DFEWizard::Step
+    class MatchbackFailed < ::GITWizard::Step
       def skipped?
         @store["authenticate"]
       end

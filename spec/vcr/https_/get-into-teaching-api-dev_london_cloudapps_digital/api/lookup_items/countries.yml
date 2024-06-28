@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-api-dev.london.cloudapps.digital/api/lookup_items/countries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swagger-Codegen/1.0.6/ruby
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Authorization:
+      - ENV[api_key]
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      date:
+      - Wed, 19 Aug 2020 06:28:35 GMT
+      content-type:
+      - application/json; charset=utf-8
+      etag:
+      - 3B20AECC86803D85CB5B859EEA099D09AB2CED8488C2B61369E4922C3BBC1212
+      server:
+      - Kestrel
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-vcap-request-id:
+      - e90dd86d-8c8c-40cb-6556-5a005bc35441
+    body:
+      encoding: UTF-8
+      string: '[{"id":"00f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Nicaragua"},{"id":"01f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Algeria"},{"id":"02f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Niger"},{"id":"03f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Andorra"},{"id":"04f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Nigeria"},{"id":"05f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Angola"},{"id":"06f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"North
+        Korea"},{"id":"07f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Antigua and
+        Barbuda"},{"id":"08f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Norway"},{"id":"09f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Argentina"},{"id":"0af5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Oman"},{"id":"0bf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Armenia"},{"id":"0cf5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Pakistan"},{"id":"0df4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Australia"},{"id":"0ef5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Palau"},{"id":"0ff4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Austria"},{"id":"10f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Palestinian
+        Territory, Occupied"},{"id":"11f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Azerbaijan"},{"id":"12f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Panama"},{"id":"13f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Bahamas"},{"id":"14f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Papua
+        New Guinea"},{"id":"15f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Bahrain"},{"id":"16f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Paraguay"},{"id":"17f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Bangladesh"},{"id":"18f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Peru"},{"id":"19f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Barbados"},{"id":"1af5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Philippines"},{"id":"1bf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Belarus"},{"id":"1cf5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Poland"},{"id":"1df4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Belgium"},{"id":"1ef5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Portugal"},{"id":"1ff4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Belize"},{"id":"20f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Qatar"},{"id":"21f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Benin"},{"id":"22f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Republic
+        Of Ireland"},{"id":"23f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Bhutan"},{"id":"24f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Romania"},{"id":"25f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Bolivia"},{"id":"26f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Russia"},{"id":"27f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Bosnia
+        and Herzegovina"},{"id":"28f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Rwanda"},{"id":"29f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Botswana"},{"id":"2bf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Brazil"},{"id":"2cf5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Saint
+        Vincent and the Grenadines"},{"id":"2df4c2e6-74f9-e811-a97a-000d3a2760f2","value":"British
+        Overseas Territories"},{"id":"2ef5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Sao
+        Tome and Principe"},{"id":"2ff4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Brunei"},{"id":"30f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Saudi
+        Arabia"},{"id":"31f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Bulgaria"},{"id":"32f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Senegal"},{"id":"33f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Burkina
+        Faso"},{"id":"34f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Serbia"},{"id":"35f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Burundi"},{"id":"36f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Seychelles"},{"id":"37f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Cambodia"},{"id":"38f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Sierra
+        Leone"},{"id":"39f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Cameroon"},{"id":"3af5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Singapore"},{"id":"3bf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Canada"},{"id":"3cf5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Slovakia"},{"id":"3df4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Cape
+        Verde"},{"id":"3ef5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Slovenia"},{"id":"3ff4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Central
+        African Republic"},{"id":"40f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Solomon
+        Islands"},{"id":"41f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Chad"},{"id":"42f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Somalia"},{"id":"43f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Channel
+        Islands"},{"id":"44f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"South Africa"},{"id":"45f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Chile"},{"id":"46f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Spain"},{"id":"47f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"China"},{"id":"48f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Sri
+        Lanka"},{"id":"49f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Colombia"},{"id":"4af5c2e6-74f9-e811-a97a-000d3a2760f2","value":"St
+        Kitts"},{"id":"4bf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Comoros"},{"id":"4cf5c2e6-74f9-e811-a97a-000d3a2760f2","value":"St
+        Lucia"},{"id":"4df4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Congo"},{"id":"4ef5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Sudan"},{"id":"4ff4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Congo,
+        The Democratic Republic of the"},{"id":"50f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Suriname"},{"id":"51f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Costa
+        Rica"},{"id":"52f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Swaziland"},{"id":"53f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Ivory
+        Coast"},{"id":"54f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Sweden"},{"id":"55f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Croatia"},{"id":"56f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Switzerland"},{"id":"57f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Cuba"},{"id":"58f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Syrian
+        Arab Republic"},{"id":"59f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Cyprus"},{"id":"5af5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Tajikistan"},{"id":"5bf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Czech
+        Republic"},{"id":"5cf5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Tanzania,
+        United Republic of"},{"id":"5df4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Denmark"},{"id":"5ef5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Thailand"},{"id":"5ff4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Djibouti"},{"id":"60f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Togo"},{"id":"61f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Dominica"},{"id":"62f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Trinidad
+        and Tobago"},{"id":"63f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Dominican
+        Republic"},{"id":"64f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Tunisia"},{"id":"65f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"East
+        Timor"},{"id":"66f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Turkey"},{"id":"67f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Ecuador"},{"id":"68f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Turkmenistan"},{"id":"69f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Egypt"},{"id":"6af5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Tuvalu"},{"id":"6bf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"El
+        Salvador"},{"id":"6cf5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Uganda"},{"id":"6df4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Equatorial
+        Guinea"},{"id":"6ef5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Ukraine"},{"id":"6ff4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Eritrea"},{"id":"70f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"United
+        Arab Emirates"},{"id":"71f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Estonia"},{"id":"72f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"United
+        Kingdom"},{"id":"73f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Ethiopia"},{"id":"74f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"United
+        States"},{"id":"75f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Falkland Islands
+        (Malvinas)"},{"id":"76f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Unknown"},{"id":"77f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Fiji"},{"id":"78f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Uruguay"},{"id":"79f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Finland"},{"id":"7af5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Uzbekistan"},{"id":"7bf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"France"},{"id":"7cf5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Vanuatu"},{"id":"7df4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Gabon"},{"id":"7ef5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Venezuela"},{"id":"7ff4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Gambia"},{"id":"80f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Vietnam"},{"id":"81f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Georgia"},{"id":"82f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Yemen"},{"id":"83f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Germany"},{"id":"84f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Zambia"},{"id":"85f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Ghana"},{"id":"86f5c2e6-74f9-e811-a97a-000d3a2760f2","value":"Zimbabwe"},{"id":"87f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Gibraltar"},{"id":"88958c2f-cbfe-e811-a982-000d3a276620","value":"Mauritania"},{"id":"89f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Greece"},{"id":"8a958c2f-cbfe-e811-a982-000d3a276620","value":"Micronesia,
+        Federated States of"},{"id":"8bf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Grenada"},{"id":"8df4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Guatemala"},{"id":"8ff4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Guinea"},{"id":"90958c2f-cbfe-e811-a982-000d3a276620","value":"Martinique"},{"id":"91f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Guyana"},{"id":"93f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Haiti"},{"id":"95f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Honduras"},{"id":"97f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Hong
+        Kong"},{"id":"99f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Hungary"},{"id":"9bf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Guinea-Bissau"},{"id":"9df4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Iceland"},{"id":"9ff4c2e6-74f9-e811-a97a-000d3a2760f2","value":"India"},{"id":"a1f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Indonesia"},{"id":"a3f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Iran,
+        Islamic Republic of"},{"id":"a414714f-b3ff-e811-a971-000d3a206976","value":"Tonga"},{"id":"a5f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Iraq"},{"id":"a7f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Isle
+        of Man"},{"id":"a9f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Israel"},{"id":"abf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Italy"},{"id":"adf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Jamaica"},{"id":"aff4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Japan"},{"id":"b2f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Jordan"},{"id":"b4f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Kazakhstan"},{"id":"b6f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Kenya"},{"id":"b8f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Kiribati"},{"id":"baf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Korea,
+        Republic of"},{"id":"bcf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Kosovo"},{"id":"bef4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Kuwait"},{"id":"c0f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Kyrgyzstan"},{"id":"c2f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Laos"},{"id":"c4f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Latvia"},{"id":"c6f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Lebanon"},{"id":"c8f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Lesotho"},{"id":"caf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Liberia"},{"id":"ccf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Liechtenstein"},{"id":"cef4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Lithuania"},{"id":"d0f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Luxembourg"},{"id":"d2f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Libya"},{"id":"d4f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Macedonia,
+        The Former Yugoslav Republic of"},{"id":"d6f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Madagascar"},{"id":"d8f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Malawi"},{"id":"daf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Malaysia"},{"id":"dcf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Maldives"},{"id":"def4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Mali"},{"id":"e0f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Malta"},{"id":"e2f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Marshall
+        Islands"},{"id":"e4f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Mauritius"},{"id":"e6f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Mexico"},{"id":"e8f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Moldova,
+        Republic of"},{"id":"eaf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Monaco"},{"id":"ecf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Mongolia"},{"id":"eef4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Montenegro"},{"id":"f0f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Morocco"},{"id":"f2f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Mozambique"},{"id":"f4f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Myanmar"},{"id":"f6f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Namibia"},{"id":"f8f4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Nepal"},{"id":"faf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Netherlands"},{"id":"fcf4c2e6-74f9-e811-a97a-000d3a2760f2","value":"Netherlands
+        Antilles"},{"id":"fdf3c2e6-74f9-e811-a97a-000d3a2760f2","value":"Afghanistan"},{"id":"fef4c2e6-74f9-e811-a97a-000d3a2760f2","value":"New
+        Zealand"},{"id":"fff3c2e6-74f9-e811-a97a-000d3a2760f2","value":"Albania"}]'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://get-into-teaching-api-dev.london.cloudapps.digital/api/lookup_items/countries
+  recorded_at: Wed, 19 Aug 2020 06:28:35 GMT
+recorded_with: VCR 6.0.0

@@ -13,12 +13,16 @@ footer.site-footer {
     display: flex;
 
     @include mq($until: tablet) {
-      flex-direction: column-reverse;
+      flex-direction: column;
       // gap: 2em;
     }
 
     &__links-container {
-      flex: 66% 0 0%;
+      flex: 70% 0 0%;
+
+      @include mq($from: 1800px) {
+        flex: 50% 0 0%;
+      }
 
       display: flex;
       flex-wrap: wrap;
@@ -27,14 +31,10 @@ footer.site-footer {
 
       a {
         @include font-size("xsmall");
+        @extend .link--grey;
 
-        color: $grey-mid;
         margin-bottom: .5em;
         padding: .5em 0;
-
-        &:focus {
-          color: $black;
-        }
       }
 
       // column-gap: 1.5em;
@@ -56,7 +56,6 @@ footer.site-footer {
 
   .site-footer-top {
     display: flex;
-    padding-bottom: 2em;
 
     .icon {
       @include font-size(large);
@@ -70,6 +69,7 @@ footer.site-footer {
       a {
         max-height: 2em;
         padding: .5em;
+        color: $grey-mid;
       }
 
       // gap: 1em;
@@ -77,13 +77,13 @@ footer.site-footer {
         margin-left: 1em;
       }
 
-      a,
       a:hover {
         text-decoration: none;
+        color: $white;
       }
 
       a:focus {
-        color: $black;
+        color: $white;
       }
     }
   }
@@ -93,20 +93,30 @@ footer.site-footer {
     margin-top: 2em;
     padding-top: 2em;
 
+    @include mq($from: tablet) {
+      flex-direction: row-reverse;
+    }
+
     &__logo-container {
-      flex: 33% 0 0;
+      flex: 30% 0 0;
       flex-direction: column;
+
+      @include mq($from: 1800px) {
+        flex: 50% 0 0;
+      }
 
       display: flex;
       align-content: center;
 
-      * + picture, a {
+      * + picture,
+      a {
         margin-top: 1em;
       }
 
       @include mq($from: tablet) {
         // gap: 3em;
-        * + picture, a {
+        * + picture,
+        a {
           margin-top: 0;
           margin-left: 3em;
         }

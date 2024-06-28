@@ -1,16 +1,6 @@
 .feature-table {
-
   &:not(:first-of-type) {
     margin-top: 2em;
-  }
-
-  h2,
-  h3,
-  h4,
-  h5 {
-    padding: .8em $indent-amount .4em;
-    @include font-size(large);
-    margin-block: .1em .4em;
   }
 
   dl {
@@ -35,8 +25,8 @@
       font-weight: bold;
       flex-basis: 38%;
 
-      &:after {
-        content: ':';
+      &::after {
+        content: ":";
       }
     }
 

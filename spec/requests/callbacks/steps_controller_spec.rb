@@ -2,8 +2,8 @@ require "rails_helper"
 
 describe Callbacks::StepsController, type: :request do
   include_context "with stubbed candidate create access token api"
-  include_context "with stubbed latest privacy policy api"
   include_context "with stubbed book callback api"
+  include_context "with stubbed callback quotas api"
 
   it_behaves_like "a controller with a #resend_verification action" do
     def perform_request

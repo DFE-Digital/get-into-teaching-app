@@ -5,13 +5,11 @@ RSpec.feature "Breadcrumbs", type: :feature do
 
   subject { page }
 
-  let(:event) { GetIntoTeachingApiClient::TeachingEvent.new(status_id: 1) }
+  let(:event) { build(:event_api) }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event) { event }
-    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events_grouped_by_type).and_return([])
 
     visit path
   end
@@ -19,16 +17,17 @@ RSpec.feature "Breadcrumbs", type: :feature do
   context "when visiting the home page" do
     let(:path) { "/home-page" }
 
-    it { is_expected.not_to have_css(".breadcrumb") }
+    it { is_expected.not_to have_css(".breadcrumbs") }
   end
 
   context "when visiting a content page" do
     let(:path) { page_path("test/subfolder/nested") }
 
-    it { is_expected.to have_css(".breadcrumb") }
+    it { is_expected.to have_css(".breadcrumbs") }
 
-    it "links to all ancestor pages" do
-      page.within ".breadcrumb" do
+    it "links to all ancestor pages and plain text of current page" do
+      page.within ".breadcrumbs" do
+        is_expected.to have_text "Nested Page Test"
         is_expected.to have_link "Subfolder", href: "/test/subfolder"
         is_expected.to have_link "Test", href: "/test"
         is_expected.to have_link "Home", href: "/"
@@ -37,19 +36,20 @@ RSpec.feature "Breadcrumbs", type: :feature do
   end
 
   context "when query params are present" do
-    let(:path) { page_path("ways-to-train", amazing: "yes") }
+    let(:path) { page_path("train-to-be-a-teacher", amazing: "yes") }
 
-    it { is_expected.to have_css(".breadcrumb") }
+    it { is_expected.to have_css(".breadcrumbs") }
 
     it "includes the parent page" do
-      page.within ".breadcrumb" do
+      page.within ".breadcrumbs" do
         is_expected.to have_link "Home", href: "/"
       end
     end
 
-    it "doesn't include the current page" do
-      page.within ".breadcrumb" do
-        is_expected.not_to have_link "Ways to train"
+    it "includes the current page in plain text" do
+      page.within ".breadcrumbs" do
+        is_expected.not_to have_link "Train to be a teacher"
+        is_expected.to have_text "Train to be a teacher"
       end
     end
   end
@@ -63,42 +63,36 @@ RSpec.feature "Breadcrumbs", type: :feature do
   context "when visiting a disclaimer page" do
     let(:path) { page_path("disclaimer") }
 
-    it { is_expected.to have_css(".breadcrumb") }
+    it { is_expected.to have_css(".breadcrumbs") }
   end
 
   context "when visiting the stories landing page" do
     let(:path) { page_path("stories/landing-page") }
 
-    it { is_expected.to have_css(".breadcrumb") }
+    it { is_expected.to have_css(".breadcrumbs") }
   end
 
   context "when visiting the story listing page" do
     let(:path) { page_path("stories/list-page") }
 
-    it { is_expected.to have_css(".breadcrumb") }
+    it { is_expected.to have_css(".breadcrumbs") }
   end
 
   context "when visiting the story page" do
     let(:path) { page_path("stories/story-page") }
 
-    it { is_expected.to have_css(".breadcrumb") }
+    it { is_expected.to have_css(".breadcrumbs") }
   end
 
   context "when visiting the mailing list sign up page" do
     let(:path) { mailing_list_steps_path }
 
-    it { is_expected.not_to have_css(".breadcrumb") }
+    it { is_expected.not_to have_css(".breadcrumbs") }
   end
 
   context "when visiting the event sign up page" do
-    let(:path) { event_steps_path("123") }
+    let(:path) { event_steps_path(event.readable_id) }
 
-    it { is_expected.not_to have_css(".breadcrumb") }
-  end
-
-  context "when visiting an event category" do
-    let(:path) { event_category_path("online-events") }
-
-    it { is_expected.to have_css(".breadcrumb") }
+    it { is_expected.not_to have_css(".breadcrumbs") }
   end
 end

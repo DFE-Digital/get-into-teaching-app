@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe WelcomeHelper, type: :helper do
-  let(:physics_uuid) { TeachingSubject.lookup_by_key(:physics) }
+  let(:physics_uuid) { Crm::TeachingSubject.lookup_by_key(:physics) }
 
   shared_context "with first name" do
     before { allow(session).to receive(:dig).with("mailinglist", "first_name") { name } }
@@ -20,34 +20,34 @@ RSpec.describe WelcomeHelper, type: :helper do
 
   describe "#show_welcome_guide?" do
     context "when degree_status is second year" do
-      let(:second_year) { OptionSet.lookup_by_key(:degree_status, :second_year) }
+      let(:second_year) { Crm::OptionSet.lookup_by_key(:degree_status, :second_year) }
 
       it { expect(show_welcome_guide?(degree_status: second_year)).to be false }
     end
 
     context "when degree_status is final year" do
-      let(:final_year) { OptionSet.lookup_by_key(:degree_status, :final_year) }
+      let(:final_year) { Crm::OptionSet.lookup_by_key(:degree_status, :final_year) }
 
       it { expect(show_welcome_guide?(degree_status: final_year)).to be true }
     end
 
     context "when degree_status is 'graduate or postgraduate'" do
-      let(:graduate) { OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate) }
+      let(:graduate) { Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate) }
 
       context "when consideration journey stage is 'it's just an idea'" do
-        let(:just_an_idea) { OptionSet.lookup_by_key(:consideration_journey_stage, :it_s_just_an_idea) }
+        let(:just_an_idea) { Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :it_s_just_an_idea) }
 
         it { expect(show_welcome_guide?(degree_status: graduate, consideration_journey_stage: just_an_idea)).to be true }
       end
 
       context "when consideration journey stage is 'I’m not sure and finding out more'" do
-        let(:finding_out_more) { OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_not_sure_and_finding_out_more) }
+        let(:finding_out_more) { Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_not_sure_and_finding_out_more) }
 
         it { expect(show_welcome_guide?(degree_status: graduate, consideration_journey_stage: finding_out_more)).to be true }
       end
 
       context "when consideration journey stage is 'I’m fairly sure and exploring my options'" do
-        let(:fairly_sure) { OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_fairly_sure_and_exploring_my_options) }
+        let(:fairly_sure) { Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_fairly_sure_and_exploring_my_options) }
 
         it { expect(show_welcome_guide?(degree_status: graduate, consideration_journey_stage: fairly_sure)).to be false }
       end
@@ -80,7 +80,7 @@ RSpec.describe WelcomeHelper, type: :helper do
     context "when set by query param and stored in the welcome_guide session store" do
       include_context "with preferred teaching subject set in welcome_guide"
 
-      let(:subject_id) { TeachingSubject.lookup_by_key(:chemistry) }
+      let(:subject_id) { Crm::TeachingSubject.lookup_by_key(:chemistry) }
 
       specify "returns the correct subject" do
         expect(subject).to eql("chemistry")
@@ -89,13 +89,13 @@ RSpec.describe WelcomeHelper, type: :helper do
 
     context "when stored in the mailinglist session store" do
       context "when the subject name is a common noun" do
-        %i[art_and_design biology chemistry general_science languages_other maths physics_with_maths physics].each do |subject_key|
+        %i[art_and_design biology chemistry science languages_other maths physics].each do |subject_key|
           describe "#{subject_key} is lowercased" do
-            let(:subject_id) { TeachingSubject.lookup_by_key(subject_key) }
+            let(:subject_id) { Crm::TeachingSubject.lookup_by_key(subject_key) }
 
             include_context "with preferred teaching subject set in welcome_guide"
 
-            it { is_expected.to eql(TeachingSubject.lookup_by_uuid(subject_id).downcase) }
+            it { is_expected.to eql(Crm::TeachingSubject.lookup_by_uuid(subject_id).downcase) }
           end
         end
       end
@@ -103,11 +103,11 @@ RSpec.describe WelcomeHelper, type: :helper do
       context "when the subject name is a proper noun" do
         %i[english german spanish french].each do |subject_key|
           describe "#{subject_key} is not lowercased" do
-            let(:subject_id) { TeachingSubject.lookup_by_key(subject_key) }
+            let(:subject_id) { Crm::TeachingSubject.lookup_by_key(subject_key) }
 
             include_context "with preferred teaching subject set in welcome_guide"
 
-            it { is_expected.to eql(TeachingSubject.lookup_by_uuid(subject_id)) }
+            it { is_expected.to eql(Crm::TeachingSubject.lookup_by_uuid(subject_id)) }
           end
         end
       end
@@ -186,7 +186,7 @@ RSpec.describe WelcomeHelper, type: :helper do
     subject { welcome_guide_subject }
 
     context "when the subject id is in the welcome_guide session store" do
-      let(:subject_id) { TeachingSubject.lookup_by_key(:languages_other) }
+      let(:subject_id) { Crm::TeachingSubject.lookup_by_key(:languages_other) }
 
       include_context "with preferred teaching subject set in welcome_guide"
 
@@ -196,7 +196,7 @@ RSpec.describe WelcomeHelper, type: :helper do
     end
 
     context "when the subject id is in the mailinglist session store" do
-      let(:subject_id) { TeachingSubject.lookup_by_key(:german) }
+      let(:subject_id) { Crm::TeachingSubject.lookup_by_key(:german) }
 
       include_context "with preferred teaching subject set in welcome_guide and mailinglist"
 

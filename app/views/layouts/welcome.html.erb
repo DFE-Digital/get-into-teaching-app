@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
+  <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
+    <%= render(partial: "sections/content_errors") %>
 
     <%= render HeaderComponent.new %>
 
-    <main class="welcome-guide" id="main-content">
+    <%= main_tag(class: "main-section welcome-guide") do %>
       <%= yield %>
 
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>
       <% end %>
-    </main>
+    <% end %>
 
-    <%= render FooterComponent.new(talk_to_us: true, mailing_list: false, feedback: false) %>
+    <%= render FooterComponent.new(talk_to_us: true) %>
   <% end %>
 </html>

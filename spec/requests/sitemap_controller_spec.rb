@@ -5,8 +5,8 @@ RSpec.describe SitemapController, type: :request do
 
   let(:content_pages) do
     {
-      "/ways-to-train" => {
-        name: "Ways to train",
+      "/train-to-be-a-teacher" => {
+        name: "Train to be a teacher",
         priority: 0.8,
         date: "2020-11-11",
       },
@@ -25,9 +25,21 @@ RSpec.describe SitemapController, type: :request do
       },
     }
   end
-  let(:sitemap_pages) { content_pages.except("/test/a") }
+  let(:event_pages) do
+    events.map { |e| event_path(e.readable_id) }.index_with({})
+  end
+  let(:all_sitemap_pages) { content_sitemap_pages.merge(event_pages) }
+  let(:content_sitemap_pages) { content_pages.except("/test/a") }
+  let(:events) { build_list(:event_api, 3) }
 
   before do
+    freeze_time
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      receive(:search_teaching_events).with(
+        start_after: Time.zone.now,
+        quantity: 100,
+        type_ids: [Crm::EventType.get_into_teaching_event_id, Crm::EventType.online_event_id],
+      ).and_return(events)
     allow(Pages::Frontmatter).to receive(:list) { content_pages }
     get("/sitemap.xml")
   end
@@ -39,15 +51,15 @@ RSpec.describe SitemapController, type: :request do
       expect(subject.at_xpath("/xmlns:urlset").namespace.href).to eql(sitemap_namespace)
     end
 
-    describe "content_pages" do
-      let(:expected) { SitemapController::OTHER_PATHS.count + sitemap_pages.count }
-      let(:paths) { sitemap_pages.keys.concat(SitemapController::OTHER_PATHS) }
+    describe "sitemap pages" do
+      let(:expected) { SitemapController::OTHER_PATHS.count + all_sitemap_pages.count }
+      let(:paths) { all_sitemap_pages.keys.concat(SitemapController::OTHER_PATHS) }
 
-      specify "should have the right number of content_pages" do
+      specify "should have the right number of pages" do
         expect(expected).to eql(subject.xpath("/xmlns:urlset/xmlns:url").size)
       end
 
-      specify "the content_pages should have the correct paths" do
+      specify "the pages should have the correct paths" do
         expect(
           subject
             .xpath("xmlns:urlset/xmlns:url/xmlns:loc")
@@ -58,7 +70,7 @@ RSpec.describe SitemapController, type: :request do
 
     describe "priority" do
       specify "priority should be assinged from frontmatter" do
-        sitemap_pages.each do |path, data|
+        content_sitemap_pages.each do |path, data|
           importance = subject.at_xpath(
             %(/xmlns:urlset/xmlns:url[xmlns:loc = 'http://www.example.com#{path}']/xmlns:priority),
           ).text
@@ -70,7 +82,7 @@ RSpec.describe SitemapController, type: :request do
 
     describe "lastmod" do
       specify "last modified date should be assinged from frontmatter" do
-        sitemap_pages.each do |path, data|
+        content_sitemap_pages.each do |path, data|
           last_modified = subject.at_xpath(
             %(/xmlns:urlset/xmlns:url[xmlns:loc = 'http://www.example.com#{path}']/xmlns:lastmod),
           ).text

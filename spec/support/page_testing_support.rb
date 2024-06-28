@@ -1,12 +1,4 @@
 class PageLister
-  IGNORE = %w[
-    /test
-    /guidance_archive
-    /index
-    /steps-to-become-a-teacher/v2-index
-    /privacy-policy
-  ].freeze
-
   class << self
     def md_files
       Dir["app/views/content/**/[^_]*.md"]
@@ -29,7 +21,7 @@ class PageLister
     end
 
     def content_urls
-      files.map(&method(:remove_folders)).map(&method(:remove_extension)) - IGNORE
+      files.map(&method(:remove_folders)).map(&method(:remove_extension))
     end
   end
 end

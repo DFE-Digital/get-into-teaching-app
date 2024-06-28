@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <% content_for :head do %>
+    <%= csrf_meta_tags %>
+  <% end %>
+  <style>
+    section {
+      margin: auto 1.5rem !important;
+    }
+  </style>
+
+  <%= render "sections/head" %>
+  <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
+    <%= render HeaderComponent.new %>
+
+    <%= main_tag(class: "main-section") do %>
+      <section class="feature registration container">
+        <%= yield %>
+      </section>
+    <% end %>
+
+    <%= render FooterComponent.new(talk_to_us: false) %>
+  <% end %>
+</html>

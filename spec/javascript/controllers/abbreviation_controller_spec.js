@@ -1,7 +1,7 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import AbbreviationController from 'abbreviation_controller.js';
 
-describe('AccordionController', () => {
+describe('AbbreviationController', () => {
   const original = `
     <article data-controller="abbreviation">
       <p>You need a <abbr id="abbr-1" title="Postgraduate Certificate in Education">PGCE</abbr> to get <abbr title="Qualified Teacher Status">QTS<abbr>.</p>

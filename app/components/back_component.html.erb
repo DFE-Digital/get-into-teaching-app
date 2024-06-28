@@ -1,0 +1,6 @@
+<div class="back-link">
+  <%= link_to text, path, **options %>
+</div>
+<!-- This 1x1 blank image ensures that iOS VoiceOver reads the title in the main
+section below the back link, rather than the back link above -->
+<%= image_pack_tag('static/images/1x1.png', size: '1x1', aria: { hidden: true }, role: 'none', alt: '') %>

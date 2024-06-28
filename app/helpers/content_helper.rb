@@ -4,4 +4,13 @@ module ContentHelper
       classes << "fullwidth" if front_matter["fullwidth"]
     end
   end
+
+  def display_content_errors?
+    Rails.application.config.x.display_content_errors
+  end
+
+  def value(key)
+    Value.get(key)
+  end
+  alias_method :v, :value
 end

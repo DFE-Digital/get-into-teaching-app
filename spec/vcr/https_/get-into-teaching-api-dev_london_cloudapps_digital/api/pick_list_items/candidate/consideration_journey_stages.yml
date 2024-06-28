@@ -1,0 +1,32 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-api-dev.london.cloudapps.digital/api/pick_list_items/candidate/consideration_journey_stages
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/3.1.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer test
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      content-type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '[{"id":222750000,"value":"It''s just an idea"},{"id":222750001,"value":"I''m
+        not sure and finding out more"},{"id":222750002,"value":"I''m fairly sure
+        and exploring my options"},{"id":222750003,"value":"I''m very sure and think
+        I''ll apply"}]'
+  recorded_at: Tue, 25 Apr 2023 12:27:24 GMT
+recorded_with: VCR 6.1.0

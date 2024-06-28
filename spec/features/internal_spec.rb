@@ -2,25 +2,25 @@ require "rails_helper"
 require "action_text/system_test_helper"
 
 RSpec.feature "Internal section", type: :feature do
-  let(:types) { Events::Search.available_event_type_ids }
+  let(:types) { Crm::EventType::ALL.values }
   let(:pending_provider_event) do
     build(:event_api,
           :with_provider_info,
           name: "Pending provider event",
           readable_id: "Readable_id",
-          status_id: EventStatus.pending_id,
-          type_id: EventType.school_or_university_event_id)
+          status_id: Crm::EventStatus.pending_id,
+          type_id: Crm::EventType.school_or_university_event_id)
   end
   let(:pending_online_event) do
     build(:event_api,
           :with_provider_info,
           name: "Pending online event",
           readable_id: "Readable_id",
-          status_id: EventStatus.pending_id,
-          type_id: EventType.online_event_id)
+          status_id: Crm::EventStatus.pending_id,
+          type_id: Crm::EventType.online_event_id)
   end
-  let(:provider_events_by_type) { group_events_by_type([pending_provider_event]) }
-  let(:online_events_by_type) { group_events_by_type([pending_online_event]) }
+  let(:provider_events) { [pending_provider_event] }
+  let(:online_events) { [pending_online_event] }
   let(:publisher_username) { "publisher_username" }
   let(:publisher_password) { "publisher_password" }
 
@@ -45,7 +45,7 @@ RSpec.feature "Internal section", type: :feature do
       receive(:get_teaching_event) { pending_provider_event }
 
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+      receive(:search_teaching_events) { provider_events }
   end
 
   shared_examples "pending events" do |event_type|
@@ -53,7 +53,7 @@ RSpec.feature "Internal section", type: :feature do
       navigate_to_new_submission(event_type)
 
       enter_valid_provider_event_details if event_type == "provider"
-      enter_valid_online_event_details if event_type == "online"
+      enter_common_event_details if event_type == "online"
 
       click_button "Submit for review"
       expect(page).to have_text "Event submitted for review"
@@ -79,7 +79,7 @@ RSpec.feature "Internal section", type: :feature do
     include_examples "pending events", "provider" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-          receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+          receive(:search_teaching_events) { provider_events }
       end
     end
 
@@ -146,7 +146,7 @@ RSpec.feature "Internal section", type: :feature do
     include_examples "pending events", "online" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-          receive(:search_teaching_events_grouped_by_type) { online_events_by_type }
+          receive(:search_teaching_events) { online_events }
       end
     end
 
@@ -168,11 +168,10 @@ RSpec.feature "Internal section", type: :feature do
     let(:live_online_event) { build(:event_api, :online_event, name: "Open online event") }
     let(:live_provider_event) { build(:event_api, :school_or_university_event, name: "Open provider event", start_at: start_at) }
     let(:events) { [live_online_event, live_provider_event] }
-    let(:events_by_type) { group_events_by_type(events) }
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-        .to receive(:search_teaching_events_grouped_by_type) { events_by_type }
+        .to receive(:search_teaching_events) { events }
 
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
         .to receive(:get_teaching_event) { live_provider_event }
@@ -263,12 +262,6 @@ private
     fill_in "Provider website/registration link", with: "test"
     choose "Yes"
     choose "No venue"
-  end
-
-  def enter_valid_online_event_details
-    enter_common_event_details
-
-    fill_in "Scribble ID", with: "test"
   end
 
   def enter_common_event_details

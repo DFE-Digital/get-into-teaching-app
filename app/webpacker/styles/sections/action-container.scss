@@ -1,0 +1,97 @@
+.action-container {
+  $wide-spacing: 2.5 * $indent-amount;
+
+  position: relative;
+  margin: $wide-spacing $indent-amount;
+
+  @include mq($from: tablet) {
+    margin: $wide-spacing $indent-amount $wide-spacing 0;
+
+    h3 {
+      @include font-size(medium);
+    }
+  }
+
+  .content {
+    background-color: $grey;
+    padding-bottom: $indent-amount;
+
+    .inset > p:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &.action-container--no-margin {
+    margin: 0;
+  }
+
+  &.action-container--purple::before,
+  &.action-container--purple::after {
+    background: $purple;
+  }
+
+  &.action-container--transparent::before,
+  &.action-container--transparent::after {
+    background: transparent;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: -$indent-amount * .5;
+    bottom: -$indent-amount * .5;
+  }
+
+  &::before {
+    width: $indent-amount * .5;
+    height: 100px;
+  }
+
+  &::after {
+    height: $indent-amount * .5;
+    width: 100px;
+  }
+
+  @include mq($from: tablet) {
+    &::before,
+    &::after {
+      right: -$indent-amount;
+      bottom: -$indent-amount;
+    }
+
+    &::before {
+      width: $indent-amount;
+      height: 175px;
+    }
+
+    &::after {
+      height: $indent-amount;
+      width: 175px;
+    }
+  }
+
+  h2 {
+    margin-left: $indent-amount;
+    position: relative;
+    margin-right: 10%;
+  }
+
+  .heading-container {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: $grey;
+      height: 50%;
+      top: 50%;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  > p {
+    padding: 0 $indent-amount;
+  }
+}

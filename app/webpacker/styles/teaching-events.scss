@@ -1,84 +1,61 @@
 $slightly-darker-grey: darken($grey, 10%);
 $icon-size: 3rem;
 
-@mixin train-to-teach-event-box {
-  border: 2px solid $pink;
-  padding: 2rem 1rem 1rem;
+@mixin get-into-teaching-event-box {
+  border: 3px solid $yellow;
+  padding: 3rem 1rem 1rem;
 
   &::after {
     @include font-size(small);
     position: absolute;
-    content: "Train to Teach event";
+    content: "Get Into Teaching event";
     right: 5%;
     top: -1em;
-    background: $pink url(../images/icon-ttt-white.svg) no-repeat left center;
+    background: $yellow url("../images/icon-git-white.svg") no-repeat left center;
     background-size: 1.2em;
     background-position: .4em;
+    color: $black;
     font-weight: bold;
-    padding: .4em .4em .4em 2em;
+    padding: .4em 1em .4em 2.5em;
   }
 }
 
 .teaching-events {
   header {
-    margin: 1rem;
-
-    h1 {
-      @include reset;
-      background: $yellow;
-      display: inline-block;
-      padding: .4rem;
-
-      @include mq($from: tablet) {
-        padding: 1rem;
-      }
-    }
+    margin: $indent-amount;
 
     @include mq($from: tablet) {
       p {
-        padding: 0 1rem;
+        padding: 0 $indent-amount;
+      }
+    }
+  }
+
+  &__descriptions {
+    &--summary {
+      @extend .link;
+      cursor: pointer;
+      text-decoration: underline;
+
+      &::marker {
+        padding-right: 2em;
       }
     }
 
     dl {
-      margin: 2em 0 1em;
+      padding: 0 1rem;
 
       div {
-        display: flex;
-        flex-direction: column;
-
-        @include mq($from: tablet) {
-          flex-direction: row;
-          gap: 1rem;
-          padding-inline: 1rem;
-        }
-      }
-
-      div + div {
-        margin-top: 2em;
+        margin-bottom: .5em;
       }
 
       dt {
         font-weight: bold;
-
-        flex: 0 1 25%;
+        margin-block: .2em;
       }
 
       dd {
         margin-left: 0;
-
-        flex: 1 0 75%;
-      }
-
-      dd + dt {
-        margin-top: 1em;
-      }
-
-      @include mq($from: tablet) {
-        dt,
-        dd {
-          display: inline-block;
-        }
       }
     }
   }
@@ -99,18 +76,14 @@ $icon-size: 3rem;
   &__filter,
   &__listing {
     @include mq($from: desktop) {
-      margin: 1rem;
+      margin: $indent-amount;
     }
   }
 
   &__filter {
-    padding: 1rem;
+    padding: $indent-amount;
     @include mq($from: desktop) {
       flex-basis: 25%;
-    }
-
-    h2 {
-      @include font-size(medium);
     }
 
     &--group {
@@ -135,29 +108,17 @@ $icon-size: 3rem;
     }
   }
 
-  &__none {
-    &--message {
-      padding: 1rem 1rem 2rem;
-      background: $grey;
-
-      h3 {
-        margin: 1em 0;
-        @include font-size(large);
-      }
-    }
-  }
-
   &__events {
     @include reset;
 
-    padding: 1rem;
+    padding: $indent-amount;
 
     ol {
       list-style: none;
       padding: 0;
 
       @include mq($from: desktop) {
-        padding: 1rem;
+        padding: $indent-amount;
       }
 
       li.event + li.event {
@@ -167,13 +128,20 @@ $icon-size: 3rem;
 
     &--featured {
       background: $grey;
-      padding: 2rem 1rem 2rem;
-      margin-bottom: 1rem;
+      padding: 2rem $indent-amount 2rem;
+    }
 
+    &--featured,
+    &--regular,
+    &--none {
       h2 {
-        @include font-size(medium);
         margin-block: 1rem 2rem;
-        padding-inline: 1rem;
+      }
+    }
+
+    &--none {
+      ul {
+        list-style-type: square;
       }
     }
   }
@@ -184,17 +152,20 @@ $icon-size: 3rem;
     margin: 0;
     position: relative;
     background: white;
-    border: 2px solid $slightly-darker-grey;
+    border: 3px solid $slightly-darker-grey;
     padding: 0;
 
     &__info {
       @include font-size(xsmall);
+      padding: 2em 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
 
       &__name {
         @include font-size(small, $adjust: .2rem);
         font-weight: bold;
       }
-
     }
 
     &__meta {
@@ -229,7 +200,7 @@ $icon-size: 3rem;
       align-items: center;
       overflow: hidden;
 
-      @supports(overflow: clip) {
+      @supports (overflow: clip) {
         overflow: clip;
       }
 
@@ -240,7 +211,7 @@ $icon-size: 3rem;
 
         @include mq($from: mobile) {
           padding: .2em 1em .2em 4.3em;
-          background: url(../images/content/icons/icon-calendar.svg) no-repeat left center;
+          background: url("../images/content/icons/icon-calendar.svg") no-repeat left center;
           background-position: .7em;
           background-size: $icon-size;
         }
@@ -281,7 +252,7 @@ $icon-size: 3rem;
         gap: .5em 2em;
       }
 
-      &--right{
+      &--right {
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -291,15 +262,8 @@ $icon-size: 3rem;
       }
     }
 
-    &__info {
-      padding: 2em 1em;
-      display: flex;
-      flex-direction: column;
-      gap: 2em;
-    }
-
-    &--train-to-teach {
-      @include train-to-teach-event-box;
+    &--get-into-teaching {
+      @include get-into-teaching-event-box;
 
       flex-direction: column-reverse;
 
@@ -329,7 +293,7 @@ $icon-size: 3rem;
           }
 
           &__date-and-time {
-            background: url(../images/content/icons/icon-calendar.svg) no-repeat left center;
+            background: url("../images/content/icons/icon-calendar.svg") no-repeat left center;
             background-size: $icon-size;
             flex-direction: column;
             align-items: baseline;
@@ -344,20 +308,19 @@ $icon-size: 3rem;
           }
 
           &__location {
-            background: url(../images/content/icons/icon-location.svg) no-repeat left center;
+            background: url("../images/content/icons/icon-location.svg") no-repeat left center;
             background-size: $icon-size;
           }
 
           &__setting {
-
             &.online {
-              background: url(../images/content/icons/icon-online.svg) no-repeat left center;
+              background: url("../images/content/icons/icon-online.svg") no-repeat left center;
               background-size: $icon-size;
             }
 
             &.in-person {
-              background: url(../images/icon-building.svg) no-repeat left center;
-              background-size: 2em; // using 2em because it's an old icon and is bigger than the others
+              background: url("../images/content/icons/icon-building.svg") no-repeat left center;
+              background-size: $icon-size;
             }
           }
         }
@@ -392,21 +355,20 @@ $icon-size: 3rem;
         }
 
         @include mq($from: mobile) {
-
           &__setting {
             &.online {
-              background: url(../images/content/icons/icon-online.svg) no-repeat left center;
+              background: url("../images/content/icons/icon-online.svg") no-repeat left center;
               background-size: $icon-size;
             }
 
             &.in-person {
-              background: url(../images/icon-building.svg) no-repeat left center;
+              background: url("../images/icon-building.svg") no-repeat left center;
               background-size: 2em; // using 2em because it's an old icon and is bigger than the others
             }
           }
 
           &__location {
-            background: url(../images/content/icons/icon-location.svg) no-repeat left center;
+            background: url("../images/content/icons/icon-location.svg") no-repeat left center;
             background-size: $icon-size;
           }
         }
@@ -427,11 +389,11 @@ $icon-size: 3rem;
     grid-template-rows: repeat(3, auto) 1em;
 
     @include mq($from: tablet) {
-      grid-template-rows: minmax(2rem, auto) 5rem minmax(2rem, auto) 2rem;
+      grid-template-rows: minmax(2rem, auto) minmax(5rem, auto) minmax(2rem, auto) 2rem;
       grid-template-columns: minmax(5rem, auto) minmax(auto, 40rem) 14rem minmax(auto, 20rem) minmax(5rem, auto);
 
-      .breadcrumbs-and-heading {
-        grid-area: 1 / 2 / 3 / 4;
+      .heading {
+        grid-area: 2 / 2 / 3 / 4;
       }
 
       .event-details {
@@ -456,7 +418,7 @@ $icon-size: 3rem;
     display: grid;
 
     > *:not(.triangle) {
-      padding-inline: 1rem;
+      padding-inline: $indent-amount;
     }
 
     @include mq($from: tablet) {
@@ -471,7 +433,7 @@ $icon-size: 3rem;
       }
     }
 
-    .breadcrumbs-and-heading {
+    .heading {
       z-index: 5;
 
       display: flex;
@@ -479,26 +441,8 @@ $icon-size: 3rem;
       flex-direction: column;
       justify-content: space-between;
 
-      .breadcrumbs {
-        margin-top: .5em;
-
-        > .breadcrumb > ol {
-          margin-top: 0;
-          margin-left: 0;
-          padding-left: 0;
-        }
-      }
-
-      h1 {
-        background: white;
-        display: inline-block;
-        margin: 0;
-        padding: .2em $overhang;
-        margin-left: -$overhang;
-
-        @include mq($from: tablet) {
-          max-width: 20em;
-        }
+      @include mq($until: tablet) {
+        margin-top: $indent-amount;
       }
     }
 
@@ -519,8 +463,10 @@ $icon-size: 3rem;
 
     .image {
       padding-bottom: 1rem;
+
       img {
         width: 100%;
+        height: auto;
       }
 
       @include mq($from: tablet) {
@@ -528,6 +474,7 @@ $icon-size: 3rem;
           margin: 1em;
           max-height: 14em;
           object-position: center;
+          object-fit: cover;
         }
         padding-bottom: 0;
       }
@@ -551,7 +498,7 @@ $icon-size: 3rem;
 
   &__info {
     max-width: $content-max-width;
-    margin: auto;
+    margin: auto auto 4em;
 
     display: flex;
     gap: 1em;
@@ -559,7 +506,11 @@ $icon-size: 3rem;
 
     article,
     aside {
-      margin: 0 1em;
+      margin: 0 $indent-amount;
+    }
+
+    .inset-text.grey {
+      margin: 0;
     }
 
     @include mq($from: tablet) {
@@ -578,21 +529,6 @@ $icon-size: 3rem;
       // standardise so smaller h2 in right col lines up
       margin-top: 2rem;
     }
-
-    article > h2 {
-      @include font-size(large);
-    }
-  }
-
-  &__message {
-    background: $purple;
-    color: $white;
-    padding: .2em 1em;
-    margin-bottom: 1em;
-
-    p {
-      @include reset;
-    }
   }
 
   &__venue-information {
@@ -609,31 +545,30 @@ $icon-size: 3rem;
 
   &__venue-image {
     margin-top: 2em;
+
     picture {
       img {
+        height: auto;
         max-width: 80%;
       }
     }
   }
 
   &__attending-providers,
-  &__scribble,
   &__how-to-attend {
     margin-top: 2em;
-  }
-
-  &__provider-information {
-    h2 {
-      @include font-size(medium);
-    }
   }
 
   &__video {
     margin-block: 2em;
   }
+
+  &__provider-information a {
+    word-wrap: break-word;
+  }
 }
 
-.teaching-events__about-ttt-banner {
+.teaching-events__about-git-banner {
   $desktop-unskew-amount: 12deg;
   $desktop-skew-amount: -12deg;
 
@@ -655,8 +590,8 @@ $icon-size: 3rem;
   }
 
   &--message {
-    background: $pink;
-
+    background: $yellow;
+    color: $black;
     flex-basis: 60%;
 
     p {
@@ -701,58 +636,57 @@ $icon-size: 3rem;
   }
 }
 
-.about-ttt-events {
+.about-git-events {
   header {
     display: grid;
     margin: 1em 2em;
 
-    grid-template-rows: min-content 1em min-content;
+    grid-template-rows: min-content min-content min-content;
     grid-template-columns: auto;
 
     h1 {
-      grid-area: 1 / 1 / 3 / 2;
+      grid-area: 1 / 1 / 1 / 1;
+      z-index: 1;
+    }
+
+    .inset-text {
+      grid-area: 3 / 1 / 3 / 1;
     }
 
     picture {
       transform: rotate(3deg);
-      grid-area: 2 / 1 / 4 / 2;
+      grid-area: 2 / 1 / 2 / 1;
       text-align: right;
+      margin: $indent-amount 0;
+
+      img {
+        max-height: 12em;
+        width: 300px;
+        height: auto;
+      }
     }
 
     @include mq($from: tablet) {
       grid-template-rows: auto;
-      grid-template-columns: 2fr 3em 1fr;
 
       h1 {
-        grid-area: 1 / 1 / 2 / 3;
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .inset-text {
+        grid-area: 2 / 1 / 2 / 1;
+        margin-right: $indent-amount;
       }
 
       picture {
-        grid-area: 1 / 2 / 2 / 4;
+        grid-area: 1 / 2 / 3 / 4;
         text-align: left;
-      }
-    }
-
-
-    h1 {
-      @include font-size(xxlarge);
-      margin: 0;
-      z-index: 100;
-
-      span {
-        background: $pink;
-      }
-    }
-
-    picture {
-      img {
-        max-height: 12em;
       }
     }
   }
 
   article {
-    max-width: 65ch;
+    max-width: $column-720;
     margin: 2em;
 
     .button {
@@ -760,87 +694,8 @@ $icon-size: 3rem;
     }
   }
 
-  .youtube-video-container {
+  .youtube-video {
     max-width: 40em;
     margin-block: 2em;
-  }
-}
-
-.what-theyre-saying {
-  margin-top: 4em;
-  display: grid;
-  background: $yellow;
-
-  grid-template-columns: auto minmax(2em, 30em) auto;
-  grid-template-rows: 1em auto;
-
-  @include mq($from: tablet) {
-    grid-template-rows: 2em auto;
-  }
-
-  .triangle {
-    grid-area: 1 / 1 / 2 / 4;
-    background-color: white;
-    margin-bottom: -5px;
-
-    &.yellow {
-      svg {
-        fill: $yellow;
-        stroke: $yellow;
-        stroke-width: 1;
-      }
-    }
-  }
-
-  .subheading {
-    grid-area: 1 / 2 / 2 / 3;
-
-    h3 {
-      @include font-size(medium);
-      @include reset;
-      background-color: $pink;
-      color: $black;
-      display: inline-block;
-      padding: .2em .5em;
-    }
-  }
-
-  figure {
-    grid-area: 2 / 2 / 3 / 3;
-    margin-bottom: 1.5em;
-
-    blockquote {
-      @include font-size(small);
-
-      font-weight: bold;
-      margin: 2em 0 1em;
-      padding: 0;
-      position: relative;
-
-      &:before,
-      &:after {
-        @include font-size(xlarge);
-        color: $pink-dark;
-      }
-
-      &:before {
-        content: open-quote;
-        position: absolute;
-        left: -.6em;
-        top: -.3em;
-      }
-
-      &:after {
-        position: absolute;
-        content: close-quote;
-        margin-left: .02em;
-        margin-top: -.1em;
-      }
-    }
-
-    figcaption {
-      margin-top: .6em;
-      @include font-size(xsmall);
-    }
   }
 }

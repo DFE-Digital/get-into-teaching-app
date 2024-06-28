@@ -15,6 +15,7 @@ AllCops:
     - bin/*
     - node_modules/**/*
     - spec/models/wizard/**/*  # Separate PR splits this out into gem
+    - fetch_config.rb # auto-generated file to authenticate with Azure
 
 RSpec/Capybara/FeatureMethods:
   Enabled: false
@@ -68,10 +69,14 @@ RSpec/InstanceVariable:
   Exclude:
     - spec/features/content_pages_spec.rb
     - spec/requests/redirects_spec.rb
+    - spec/components/**/*.rb
 
 RSpec/NamedSubject:
   Exclude:
     - spec/**/*.rb
+
+RSpec/StubbedMock:
+  Enabled: false
 
 RSpec/SubjectStub:
   Exclude:

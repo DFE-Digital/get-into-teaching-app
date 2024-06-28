@@ -4,8 +4,8 @@ author: Cindy Ventura
 date: "2021-09-17"
 images:
   cindy-ventura:
-    path: "media/images/content/blog/cindy-ventura.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/cindy-ventura.jpg"
+    path: "static/images/content/blog/cindy-ventura.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/cindy-ventura.jpg"
 description: |-
   Cindy recently started the Postgraduate Diploma in Education (PGDE) teacher training course at Sheffield University. She kept a diary during her first week on the course and shares her experiences here.
 keywords:
@@ -62,7 +62,7 @@ Reflecting on this experience, I admit that this practice presentation was a goo
 
 My day starts differently to previous days. I spend the morning at home reading an article and watching a pre-recorded seminar on children and poverty. I then read some papers and watch two short documentaries on education and poverty. After completing these tasks, I meet my subject group on Google Meet and we spend the rest of the morning discussing what we have seen.
 
-In the afternoon I attend a seminar on GCSE and A-level assessment. In this session we work in a group to identify and discuss the different assessment specifications for languages.
+In the afternoon I attend a seminar on GCSE and A level assessment. In this session we work in a group to identify and discuss the different assessment specifications for languages.
 
 The group work is important because it aimed to familiarise us with the different subjects’ language specifications and syllabus, particularly interesting for me as I didn’t attend school in the UK, so learning about specifications and the curriculum is exciting to me.
 

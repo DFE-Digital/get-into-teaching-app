@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="32px" viewBox="0 0 44 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-arrow</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-arrow-black" transform="translate(-10.000000, -12.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="icon-arrow" transform="translate(10.843000, 12.059000)">
+                <g id="Group_945" transform="translate(0.000000, -0.000000)">
+                    <path d="M21.772,17.673 L17.218,15.109 L22.564,4.602 L36.259,25.835 L21.772,17.673 Z M6.155,22.564 L15.718,16.931 L34.826,27.472 L6.155,22.564 Z M12.21,29.529 L12.126,25.852 L30.491,28.89 L12.21,29.529 Z M40.999,28.652 L40.915,28.517 L40.915,28.5 L22.33,0 L14.791,14.774 L0,23.847 L9.8,25.466 L9.952,31.942 L41.001,30.829 L42.316,30.745 L40.999,28.652 Z" id="Path_1318"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

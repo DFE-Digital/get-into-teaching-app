@@ -2,7 +2,7 @@
 
 .extra-navigation {
   &__list {
-    font-size: .9rem;
+    font-size: 14px;
     background-color: $grey;
     margin: 0 auto;
     list-style: none;
@@ -11,16 +11,31 @@
     justify-content: flex-end;
   }
 
+  .extra-navigation__link {
+    margin-bottom: 0;
+  }
+
+  &__flex {
+    display: flex;
+
+    @include mq($until: mobile) {
+      margin-right: auto;
+    }
+  }
+
   &__link a {
     display: inline-block;
-    padding: 0.6em $indent-amount;
-    color: $black;
-    text-decoration: none;
+    padding: .75em 1em;
+    line-height: 24px;
+
+    @include mq($until: mobile) {
+      padding: .75em .8em;
+    }
 
     .icon {
-      margin-left: 0.5em;
-      width: 20px;
-      height: 20px;
+      margin-left: .5em;
+      width: 24px;
+      height: 24px;
 
       &.icon-close {
         display: none;
@@ -28,12 +43,56 @@
     }
   }
 
-  &__search a {
-    background-color: $pink;
-    padding: 0.6em $indent-amount / 2;
+  &__mail a {
+    &:not(:focus) {
+      .icon-mail-white {
+        display: none;
+      }
+    }
 
-    .icon {
-      margin: 0;
+    &:focus {
+      .icon-mail {
+        display: none;
+      }
+    }
+  }
+
+  &__calendar a {
+    &:not(:focus) {
+      .icon-calendar-white {
+        display: none;
+      }
+    }
+
+    &:focus {
+      .icon-calendar {
+        display: none;
+      }
+    }
+  }
+
+  &__search {
+    @include mq($until: mobile) {
+      margin-left: auto;
+    }
+
+    a {
+      background-color: $pink;
+      margin-left: 1em;
+      padding: .75em;
+      line-height: 24px;
+
+      &:hover {
+        background-color: $pink-dark;
+      }
+
+      &:focus {
+        background-color: $black;
+      }
+
+      .icon {
+        margin: 0;
+      }
     }
   }
 
@@ -56,10 +115,16 @@
 
 .autocomplete__option {
   padding-left: 1em;
+  margin-bottom: 0;
+
+  h3 {
+    @extend .heading-s, .heading--margin-0;
+  }
 
   &:hover,
   &:focus {
-    p, h3 {
+    p,
+    h3 {
       color: $white;
     }
   }
@@ -68,7 +133,7 @@
 .searchbar {
   display: none;
   background-color: $pink;
-  padding: 0.6em;
+  padding: .6em;
   justify-content: flex-end;
 
   @include mq($from: tablet) {
@@ -82,6 +147,11 @@
       width: 100%;
       background-color: $white;
       margin: 0;
+      padding: 5px 8px;
+      background-image: url("../images/icon-search-black.svg");
+      background-repeat: no-repeat;
+      background-position: center right 8px;
+      background-size: 24px 24px;
     }
 
     @include mq($from: tablet) {

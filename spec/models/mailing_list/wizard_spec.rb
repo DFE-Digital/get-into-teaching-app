@@ -1,11 +1,11 @@
 require "rails_helper"
 
 describe MailingList::Wizard do
-  subject { described_class.new wizardstore, "privacy_policy" }
+  subject { described_class.new wizardstore, "postcode" }
 
   let(:uuid) { SecureRandom.uuid }
-  let(:degree_status_id) { OptionSet.lookup_by_key(:degree_status, :final_year) }
-  let(:preferred_teaching_subject_id) { TeachingSubject.lookup_by_key(:physics_with_maths) }
+  let(:degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :final_year) }
+  let(:preferred_teaching_subject_id) { Crm::TeachingSubject.lookup_by_key(:physics) }
   let(:store) do
     { uuid => {
       "email" => "email@address.com",
@@ -16,7 +16,7 @@ describe MailingList::Wizard do
       "accepted_policy_id" => "789",
     } }
   end
-  let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
+  let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
 
   describe ".steps" do
     subject { described_class.steps }
@@ -24,13 +24,14 @@ describe MailingList::Wizard do
     it do
       is_expected.to eql [
         MailingList::Steps::Name,
-        ::DFEWizard::Steps::Authenticate,
+        ::GITWizard::Steps::Authenticate,
         MailingList::Steps::AlreadySubscribed,
+        MailingList::Steps::ReturningTeacher,
+        MailingList::Steps::AlreadyQualified,
         MailingList::Steps::DegreeStatus,
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,
         MailingList::Steps::Postcode,
-        MailingList::Steps::PrivacyPolicy,
       ]
     end
   end
@@ -42,7 +43,7 @@ describe MailingList::Wizard do
   end
 
   describe "#complete!" do
-    let(:variant) { "/email/subject/physics_with_maths/degree-status/final_year" }
+    let(:variant) { "/email/subject/physics/degree-status/final_year" }
     let(:request) do
       GetIntoTeachingApiClient::MailingListAddMember.new({
         email: wizardstore[:email],
@@ -76,6 +77,7 @@ describe MailingList::Wizard do
         "degree_status_id" => wizardstore[:degree_status_id],
         "preferred_teaching_subject_id" => wizardstore[:preferred_teaching_subject_id],
       })
+
       expect(wizardstore).to have_received(:prune!).with({ leave: MailingList::Wizard::ATTRIBUTES_TO_LEAVE }).once
     end
 
@@ -100,7 +102,7 @@ describe MailingList::Wizard do
     end
 
     context "when not qualified for the welcome guide" do
-      let(:degree_status_id) { OptionSet.lookup_by_key(:degree_status, :first_year) }
+      let(:degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :first_year) }
       let(:variant) { nil }
 
       it "does not populate the welcome_guide_variant field" do

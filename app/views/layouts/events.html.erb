@@ -4,30 +4,31 @@
     <%= csrf_meta_tags %>
   <% end %>
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
+  <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
+    <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
-      <%= c.hero(@front_matter) %>
+    <%= main_tag do %>
+      <%= render Content::HeroComponent.new(@front_matter) %>
+
+      <section class="main-section">
+        <section class="container events">
+          <article class="markdown<%= " fullwidth" if @before_search_fullwidth %> ">
+            <%= yield :before_search %>
+          </article>
+        </section>
+        <% if @search_component %>
+          <div class="feature">
+            <%= render @search_component %>
+          </div>
+        <% end %>
+        <section class="container events">
+          <article class="fullwidth">
+            <%= yield %>
+          </article>
+        </section>
+      </section>
     <% end %>
-
-    <main id="main-content">
-      <section class="container events">
-        <article class="markdown<%= " fullwidth" if @before_search_fullwidth %> ">
-          <%= yield :before_search %>
-        </article>
-      </section>
-      <% if @search_component %>
-        <div class="feature">
-          <%= render @search_component %>
-        </div>
-      <% end %>
-      <section class="container events">
-        <article class="fullwidth">
-          <%= yield %>
-        </article>
-      </section>
-    </main>
 
     <%= render FooterComponent.new %>
   <% end %>

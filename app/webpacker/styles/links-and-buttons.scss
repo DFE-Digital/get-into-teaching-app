@@ -1,12 +1,17 @@
-@mixin button($bg: $green, $fg: $white) {
+@mixin button($bg: $cta-green, $fg: $white) {
   display: block;
   font-weight: bold;
   background-color: $bg;
   text-decoration: none;
   color: $fg;
-  padding: 14px $indent-amount;
+  padding: 12px 1em 12px .9em;
   @include font-size("small");
   border: none;
+  box-shadow: 0 2px 0 $cta-green-box-shadow;
+
+  @media (forced-colors: active) {
+    border: 2px solid transparent;
+  }
 
   &:hover {
     background: darken($bg, 5%);
@@ -14,36 +19,153 @@
   }
 
   &:focus {
-    outline: 3px solid transparent;
-    color: #1d1d1b;
-    background-color: $yellow;
-    box-shadow: 0 -2px $yellow, 0 4px #1d1d1b;
+    color: $white;
+    background-color: $black;
     z-index: 100;
+    box-shadow: 0 2px $pink;
+    outline: 4px solid transparent;
+  }
+}
+
+.link {
+  @include font;
+  color: $blue-dark;
+  line-height: 1.5;
+  text-underline-offset: .08em;
+  box-shadow: none;
+
+  &:hover {
+    text-decoration-thickness: max(3px, .1875rem);
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $black;
+    box-shadow: 0 4px $pink;
+    outline: 4px solid transparent;
+    text-decoration: none;
+
+    &::after {
+      border-color: $white;
+    }
+  }
+}
+
+ol.primary > li {
+  &:focus {
+    border: dotted red 1px;
+  }
+}
+
+.link--chevron {
+  text-decoration: none;
+  padding-right: .3em;
+  font-weight: bold;
+
+  &::after {
+    @include chevron-icon($black, .6em);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:focus::after {
+    @include chevron-icon($black, .6em);
+  }
+}
+
+.link--grey {
+  color: $grey-mid;
+
+  &::after {
+    border-color: $grey-mid;
+  }
+
+  &:focus {
+    color: $white;
+  }
+}
+
+.link--black {
+  color: $black;
+
+  &::after {
+    border-color: $black;
+  }
+
+  &:hover {
+    text-decoration-thickness: max(3px, .1875rem, .12em)};
+
+  &:focus {
+    color: $white;
+  }
+}
+
+.link--normal {
+  font-weight: normal;
+}
+
+.link--bold {
+  font-weight: bold;
+}
+
+.link--white {
+  color: $white;
+
+  &::after {
+    border-color: $white;
+  }
+}
+
+.link--red {
+  color: $red;
+}
+
+// passes accessibility contrast check on grey/yellow background
+.link--dark {
+  color: $black;
+
+  &:focus {
+    color: $white;
+  }
+}
+
+.link--no-underline {
+  text-decoration: none;
+}
+
+.link--underline-on-hover {
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: max(3px, .1875rem, .12em);
   }
 }
 
 a {
-  color: $blue-dark;
-
-  &:hover {
-    color: darken($blue-dark, 15%);
-    text-decoration: none;
-  }
+  @extend .link;
 }
 
-.external-link-icon {
-  margin-left: .2em;
-  width: .8em !important;
-  height: .8em !important;
+body a.govuk-back-link {
+  @extend .link, .link--black;
+
+  &:focus::before {
+    border-color: $white;
+  }
 }
 
 .button {
   @include button;
   @include chevron;
   display: inline-block;
+  cursor: pointer;
 
   &:disabled {
-    opacity: 0.7;
+    opacity: .7;
   }
 
   span {
@@ -56,8 +178,13 @@ a {
   }
 
   &--secondary {
-    @include button($bg: $grey, $fg: $black);
+    @include button($bg: $cta-grey, $fg: $black);
     @include chevron($color: $black);
+    box-shadow: 0 2px 0 $cta-grey-box-shadow;
+
+    &:hover {
+      background: $cta-grey-dark;
+    }
   }
 
   &--nowrap {
@@ -79,29 +206,24 @@ a {
 }
 
 .secondary-button {
-  @include button($bg: $grey-light, $fg: black);
+  @include button($bg: $cta-grey, $fg: black);
   display: inline-block;
+  box-shadow: 0 2px 0 $cta-grey-box-shadow;
+
+  &:hover {
+    background: $cta-grey-dark;
+  }
 }
 
 .request-button {
-  @include button($bg: $pink);
+  @include button($bg: $cta-green);
 }
 
 .survey-button {
   @include button($bg: $blue-dark);
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 
   @include mq($from: tablet) {
     display: inline-block;
   }
-}
-
-// passes accessibility contrast check on grey/yellow background
-@mixin dark-link {
-  color: $blue-very-dark;
-}
-
-// Default Zendesk chat button (hidden as we use our own).
-iframe#launcher {
-  display: none;
 }

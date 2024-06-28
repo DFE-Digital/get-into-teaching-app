@@ -1,6 +1,6 @@
 module Events
   module Steps
-    class ContactDetails < ::DFEWizard::Step
+    class ContactDetails < ::GITWizard::Step
       attribute :address_telephone
       validates :address_telephone, telephone: true, allow_blank: true
 

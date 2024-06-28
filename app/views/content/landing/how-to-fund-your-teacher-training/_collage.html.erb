@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="grey col">
+    <section class="col col-full-content">
+      <div class="inset">
+        <p class="col-720">
+          If you train to be a teacher, you could be eligible to receive a
+          scholarship or bursary of up to £30k to help you train.
+        </p>
+
+        <%= render Content::ChecklistCollageComponent.new(
+          checklist: [
+            "Scholarships and bursaries do not have to be paid back.",
+            "You can get a scholarship or bursary alongside tuition fee and maintenance loans.",
+            "The exact amount you could receive will depend on the subject that you train to teach."
+          ],
+          image_paths: [
+            "static/images/content/landing/how-to-fund-your-teacher-training-2.jpg",
+          ]
+        ) do %>
+        <% end %>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,23 +1,13 @@
-<div class="cookie-acceptance" data-controller="cookie-acceptance" data-cookie-acceptance-target="modal" role="complementary">
+<div class="cookie-acceptance" data-controller="cookie-acceptance" data-cookie-acceptance-target="modal" role="dialog" aria-modal="true">
   <div class="dialog" data-cookie-acceptance-target="overlay">
     <div class="dialog__background"></div>
     <div class="dialog__content">
-      <div class="logo-wrapper">
-        <div class="logo">
-          <a tabindex="-1" href="/" class="logo__image">
-            <%= image_pack_tag 'media/images/getintoteachinglogo.svg', alt: "Go to Home page", size: "180x62", data: { "lazy-disable": true } %>
-          </a>
-        </div>
-      </div>
-
-      <div class="dialog__text">
-
+      <div class="dialog__text govuk-!-margin-top-4">
         <p>
-          We use <a tabindex="-1" id="cookies-info" href="/cookies" class="dark-link" data-cookie-acceptance-target="info">cookies</a> to collect information about how you use this website.
+          We use <a tabindex="-1" id="cookies-info" href="/cookies" class="link--dark" data-cookie-acceptance-target="info">cookies</a> to collect information about how you use this website.
           We use this information to make the website work as well as possible, and improve this website.
           We also share some of this information with our social media, advertising and analytics partners.
         </p>
-
       </div>
 
       <div class="dialog__buttons">
@@ -28,9 +18,10 @@
         <a tabindex="-1" href="#" class="button call-to-action-button" data-action="click->cookie-acceptance#accept" data-cookie-acceptance-target="agree" id="biscuits-agree">
           <span>Accept all cookies</span>
         </a>
-        <a tabindex="-1" class="button button--secondary" href="/cookie_preference" data-cookie-acceptance-target="disagree" id="cookies-disagree">
+
+        <%= link_to(cookie_preference_path, tabindex: -1, id: "cookies-disagree", class: "button button--secondary", data: { "cookie-acceptance-target": "disagree" }) do %>
           <span>Set cookie preferences</span>
-        </a>
+        <% end %>
       </div>
     </div>
   </div>

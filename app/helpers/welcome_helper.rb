@@ -1,12 +1,12 @@
 module WelcomeHelper
   def show_welcome_guide?(degree_status: degree_status_id, consideration_journey_stage: consideration_journey_stage_id)
-    gradudate_or_postgraduate = OptionSet.lookup_by_keys(:degree_status, :graduate_or_postgraduate)
-    allowed_graduate_consideration_stages = OptionSet.lookup_by_keys(
+    gradudate_or_postgraduate = Crm::OptionSet.lookup_by_keys(:degree_status, :graduate_or_postgraduate)
+    allowed_graduate_consideration_stages = Crm::OptionSet.lookup_by_keys(
       :consideration_journey_stage,
       :it_s_just_an_idea,
       :i_m_not_sure_and_finding_out_more,
     )
-    final_year_student = OptionSet.lookup_by_keys(:degree_status, :final_year)
+    final_year_student = Crm::OptionSet.lookup_by_keys(:degree_status, :final_year)
 
     degree_status.in?(final_year_student) || (
       degree_status.in?(gradudate_or_postgraduate) && consideration_journey_stage.in?(allowed_graduate_consideration_stages)
@@ -73,11 +73,11 @@ private
   # return the subject name from its uuid, downcasing all except
   # proper nouns
   def retrieve_subject(uuid, leave_capitalised:)
-    subject = TeachingSubject.lookup_by_uuid(uuid)
+    subject = Crm::TeachingSubject.lookup_by_uuid(uuid)
 
     return if subject.blank?
 
-    proper_nouns = TeachingSubject.lookup_by_keys(:english, :french, :german, :spanish)
+    proper_nouns = Crm::TeachingSubject.lookup_by_keys(:english, :french, :german, :spanish)
 
     return subject if leave_capitalised || uuid.in?(proper_nouns)
 

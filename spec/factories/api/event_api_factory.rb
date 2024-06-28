@@ -2,9 +2,9 @@ FactoryBot.define do
   factory :event_api, class: "GetIntoTeachingApiClient::TeachingEvent" do
     id { SecureRandom.uuid }
     sequence(:readable_id, &:to_s)
-    type_id { EventType.train_to_teach_event_id }
+    type_id { Crm::EventType.get_into_teaching_event_id }
     web_feed_id { "123" }
-    status_id { EventStatus.open_id }
+    status_id { Crm::EventStatus.open_id }
     sequence(:name) { |i| "Become a Teacher #{i}" }
     sequence(:description) { |i| "<b>Become a Teacher #{i} event description</b>" }
     sequence(:summary) { |i| "Become a Teacher #{i} event summary" }
@@ -15,9 +15,10 @@ FactoryBot.define do
     is_online { false }
     is_virtual { false }
     building { build :event_building_api }
+    region_id { Crm::EventRegion.all_ids.sample }
 
     trait :closed do
-      status_id { EventStatus.closed_id }
+      status_id { Crm::EventStatus.closed_id }
     end
 
     trait :past do
@@ -31,12 +32,8 @@ FactoryBot.define do
       provider_contact_email { "jim@smith.com" }
     end
 
-    trait :train_to_teach_event do
-      type_id { EventType.train_to_teach_event_id }
-    end
-
-    trait :question_time_event do
-      type_id { EventType.question_time_event_id }
+    trait :get_into_teaching_event do
+      type_id { Crm::EventType.get_into_teaching_event_id }
     end
 
     trait :virtual do
@@ -52,11 +49,11 @@ FactoryBot.define do
 
     trait :online_event do
       online
-      type_id { EventType.online_event_id }
+      type_id { Crm::EventType.online_event_id }
     end
 
     trait :school_or_university_event do
-      type_id { EventType.school_or_university_event_id }
+      type_id { Crm::EventType.school_or_university_event_id }
     end
 
     trait :no_event_type do
@@ -68,10 +65,10 @@ FactoryBot.define do
     end
 
     trait :pending do
-      status_id { EventStatus.pending_id }
+      status_id { Crm::EventStatus.pending_id }
     end
 
-    trait :without_train_to_teach_fields do
+    trait :without_get_into_teaching_fields do
       is_virtual { nil }
       video_url { nil }
       message { nil }

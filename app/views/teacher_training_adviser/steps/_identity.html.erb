@@ -1,0 +1,39 @@
+<% content_for(:left_image) { "images/content/tta-sign-up/left.jpg" } %>
+<% content_for(:right_image) { "images/content/tta-sign-up/right.jpg" } %>
+<% content_for(:mobile_image) { "images/content/tta-sign-up/mobile.jpg" } %>
+
+<h1>Get an adviser</h1>
+
+<p>
+  If you're thinking about teaching in England, an adviser can provide free, one-to-one support by phone,
+  text or email. You can talk to them as little or as much as you need.
+</p>
+
+<p>
+  To sign up you'll need to have, or be studying for, a bachelor's degree with honours. If you already have a degree, it needs to be a grade 2:2 or higher (or an equivalent).
+</p>
+
+<p>
+  If you got your qualifications outside the UK, call us on <a href="tel:08003892500">0800 389 2500</a> to check if you're eligible.
+</p>
+
+<p>
+  If you're already a qualified teacher, you'll need English qualified teacher status (QTS) and want to
+  teach in an English state school to be eligible for an adviser.
+</p>
+
+<%= render Content::InsetTextComponent.new(
+  text: "If you qualified as a teacher outside the UK, you need English qualified teacher status (QTS) to get an adviser. <a href=\"/non-uk-teachers/teach-in-england-if-you-trained-overseas\">Find out about teaching in England if you qualified outside the UK</a>.",
+  color: "grey"
+) %>
+
+<%= f.govuk_text_field :first_name, width: 'two-thirds', autocomplete: "given-name" %>
+<%= f.govuk_text_field :last_name, width: 'two-thirds', autocomplete: "family-name" %>
+<%= f.govuk_email_field :email, width: 'two-thirds', autocomplete: "email" %>
+<%= f.hidden_field :channel_id, value: f.object.channel_id.presence || params[:channel] %>
+<%= f.hidden_field :sub_channel_id, value: f.object.sub_channel_id.presence || params[:sub_channel] %>
+<%= f.hidden_field :accepted_policy_id, value: f.object.latest_privacy_policy.id %>
+
+<p>Your details are protected under the terms of our <%= link_to "privacy notice", privacy_policy_path(id: session[:privacy_policy_id].presence || GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy.id), target: :blank %>.</p>
+
+<p>Our privacy notice explains how we use your personal data. It's important you read this before signing up to get support from an adviser.</p>

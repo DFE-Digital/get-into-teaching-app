@@ -8,7 +8,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   mix-blend-mode: darken;
 }
 
-@mixin selected-quote($color: pink, $size: large) {
+@mixin selected-quote($color: black, $size: large) {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -22,22 +22,10 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       position: relative;
       font-weight: bold;
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         content: '"';
         color: $color;
-      }
-
-      &:before {
-        content: open-quote;
-        position: absolute;
-        left: -.8em;
-        top: -.3em;
-      }
-
-      &:after {
-        content: close-quote;
-        margin-left: .2em;
       }
     }
 
@@ -53,6 +41,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   margin: 0 auto;
 
   img {
+    height: auto;
     display: block;
   }
 
@@ -142,7 +131,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
 
     .welcome-container {
-      max-width: 30em;
+      max-width: $column-570;
       margin: 0 auto;
     }
 
@@ -257,7 +246,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
 
     &.introduction {
-      padding: 0 0 2em 0;
+      padding: 0 0 2em;
 
       p {
         font-weight: bold;
@@ -283,7 +272,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         align-items: center;
         margin-left: .5em;
 
-        span:before {
+        span::before {
           content: "\2012"; // emdash
           margin-right: .2em;
         }
@@ -304,7 +293,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         .text { grid-area: 2 / 3 / 4 / 6; }
 
         picture:nth-of-type(1) { grid-area: 3 / 1 / 5 / 4; }
-        picture:nth-of-type(2) { grid-area: 3 / 4 / 5 / 6; }
+        picture:nth-of-type(2) { grid-area: 3 / 4 / 5 / 7; }
 
         .selected-quote { grid-area: 5 / 2 / 6 / 5; }
       }
@@ -339,13 +328,14 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
         > img {
           width: 80%;
+          max-width: 600px;
         }
 
         &:nth-of-type(1) {
           img {
             @include mq($from: desktop) {
               margin-top: 5em;
-              margin-left: 1em;
+              margin-left: 5em;
             }
 
             transform: rotate(-3deg);
@@ -375,7 +365,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       .selected-quote {
         padding: 8em 0 0;
-        @include selected-quote($color: $pink);
+        @include selected-quote($color: black);
       }
 
       .arrow-container {
@@ -513,7 +503,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         z-index: map-get($z-indices, "top");
 
         @include mq($from: desktop) {
-          margin-top: 250px
+          margin-top: 250px;
         }
 
         article > p {
@@ -645,7 +635,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
 
         .questions-and-answers {
-          flex-basis: 60%;
           flex: 1 0 fill;
           padding: 0 4em;
           display: flex;
@@ -664,7 +653,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           .q {
             font-weight: bold;
 
-            &:before {
+            &::before {
               @include question-decoration("Q");
             }
           }
@@ -676,23 +665,23 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
             }
 
             blockquote {
-              &:before {
+              &::before {
                 content: open-quote;
               }
 
-              &:after {
+              &::after {
                 content: close-quote;
               }
             }
 
             figcaption {
-              &:before {
+              &::before {
                 content: "\2014 "; // emdash
                 margin-right: .3em;
               }
             }
 
-            &:before {
+            &::before {
               @include question-decoration("A");
             }
           }
@@ -750,7 +739,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       .text {
         margin: 1rem;
-        max-width: 65ch;
+        max-width: $column-720;
 
         h2 {
           @include font-size(xxlarge);
@@ -773,14 +762,13 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
-
     @mixin exciting-times-ahead-layout {
       grid-template-columns: minmax(2em, auto) auto minmax(2em, auto);
       grid-template-rows: repeat(5, minmax(3em, max-content));
 
       .text { grid-area: 2 / 2 / 3 / 3; }
-      .stages { grid-area: 3 / 2 / 4 / 3 }
-      .good-luck { grid-area: 4 / 2 / 5 / 3 }
+      .stages { grid-area: 3 / 2 / 4 / 3; }
+      .good-luck { grid-area: 4 / 2 / 5 / 3; }
 
       @include mq($from: desktop) {
         grid-template-columns: minmax(10em, auto) auto minmax(10em, auto);
@@ -816,7 +804,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
 
         p {
-          max-width: 40ch;
+          max-width: $column-720;
           padding: .5em 1em;
           margin-top: .4em;
         }
@@ -918,7 +906,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       @include mq($from: desktop) {
         grid-template-columns: minmax(10em, auto) 1fr 4em 2fr;
 
-
         .background { grid-area: 1 / 1 / 5 / 5; }
         .triangle { grid-area: 5 / 1 / 6 / 5; }
         .back { grid-area: 1 / 2 / 2 / 5; }
@@ -1010,7 +997,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   }
 
   article {
-    @include selected-quote($color: $pink, $size: small);
+    @include selected-quote($color: black, $size: small);
 
     figure > blockquote {
       font-weight: 500;
@@ -1024,12 +1011,12 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
-    max-width: 60ch;
+    max-width: $column-640;
     margin: 1em auto 0;
     padding: 1em;
 
     .featured {
-      @include selected-quote($color: $yellow, $size: medium);
+      @include selected-quote($color: black, $size: medium);
     }
 
     .intro {
@@ -1059,7 +1046,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   .three-things-youll-never-hear-me-say {
     @include three-things-youll-never-hear-me-say-layout;
 
-    max-width: 60ch;
+    max-width: $column-720;
     margin: 1em auto 0;
     padding: 1em;
 
@@ -1132,7 +1119,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
 
     .triangle {
-
       &.yellow {
         svg {
           fill: $yellow;
@@ -1144,7 +1130,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
     .text {
       margin: 0 auto;
-      max-width: 60ch;
+      max-width: $column-720;
 
       h2 {
         margin: 0;
@@ -1159,7 +1145,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
       }
 
-      @include selected-quote($color: $pink, $size: medium);
+      @include selected-quote($color: black, $size: medium);
 
       figure {
         margin-top: 2em;
@@ -1169,7 +1155,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
   .advice {
     @include selected-quote($color: $yellow, $size: medium);
-    max-width: 60ch;
+    max-width: $column-720;
     padding: 1em;
     margin: 1em auto 0;
 
@@ -1179,7 +1165,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
 
     figure {
-      max-width: 65ch;
+      max-width: $column-720;
       margin: auto;
     }
   }

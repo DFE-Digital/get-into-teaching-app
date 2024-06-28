@@ -5,16 +5,17 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
-
+  <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <main id="main-content">
-      <section class="container blog">
+    <%= main_tag do %>
+      <section class="container blog main-section">
+        <%= render(partial: "sections/content_errors") %>
+
         <article class="markdown longform blog-article">
           <header>
-            <%= tag.h1(@front_matter["title"]) %>
+            <%= tag.h1(@front_matter["title"], class: "heading-l heading--margin-bottom-0") %>
             <% if @front_matter.key?("subtitle") %>
               <%= tag.div(@front_matter["subtitle"], role: 'doc-subtitle') %>
             <% end %>
@@ -31,9 +32,9 @@
           <hr>
 
           <footer>
-            <h2>Related to this article</h2>
+            <h2 class="heading-m">Related to this article</h2>
             <div class="blog-tags-list container ">
-              <h3>Tags</h3>
+              <h3 id="tags">Tags</h3>
               <%= render partial: "blog/tag_list", locals: { tags: @front_matter["tags"] } %>
             </div>
 
@@ -46,7 +47,13 @@
           </footer>
         </article>
       </section>
-    </main>
+
+      <% if @front_matter.key?("promo_content") %>
+        <% @front_matter["promo_content"]&.each do |partial| %>
+          <%= render(partial) %>
+        <% end %>
+      <% end %>
+    <% end %>
 
     <%= render FooterComponent.new %>
   <% end %>

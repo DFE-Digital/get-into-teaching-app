@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col col-full-content">
+    <%= render Content::PurpleBoxComponent.new(
+      heading: "Find out more about getting into teaching",
+      text: "Explore how you can get into teaching primary or secondary and find top tips on making a successful application.",
+      cta: {
+        text: "Get tailored guidance in your inbox",
+        path: "/mailinglist/signup/name",
+      },
+      image: image_pack_tag("static/images/ml-graphic-black.png", **image_alt_attribs_for_text("")),
+    ) %>
+  </div>
+</div>

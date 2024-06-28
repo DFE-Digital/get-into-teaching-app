@@ -1,0 +1,12 @@
+[
+  {
+    "timeSlot": "1:00 pm - 1:30 pm",
+    "day": "Wednesday 24 March",
+    "startAt": "2021-03-24T13:00:00:00Z",
+    "endAt": "2021-03-24T13:30:00:00Z",
+    "numberOfBookings": 0,
+    "quota": 20,
+    "isAvailable": true,
+    "id": "8eea03be-eba1-eb11-b1ac-000d3abecc3f"
+  }
+]

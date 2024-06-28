@@ -7,21 +7,16 @@ describe "Google Tag Manager", type: :request do
   let(:layout_paths) do
     [
       "/cookies",
-      "/my-story-into-teaching",
-      "/my-story-into-teaching/career-changers/financiers-future-in-maths",
-      "/my-story-into-teaching/internaltional-career-changers",
       "/steps-to-become-a-teacher",
-      "/three-things-to-help-you-get-into-teaching",
       "/ways_to_train",
       "/welcome",
-      blog_path("choosing-the-right-teacher-training-course-provider"),
+      blog_path("back-to-school-as-a-trainee-teacher"),
       blog_index_path,
       event_path(event.readable_id),
       event_step_path(event.readable_id, :personal_details),
       event_step_path(event.readable_id, :further_details),
       events_path,
-      teaching_events_path,
-      teaching_event_path(event.readable_id),
+      event_path(event.readable_id),
       root_path,
     ]
   end
@@ -30,7 +25,7 @@ describe "Google Tag Manager", type: :request do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event).with(event.readable_id) { event }
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events_grouped_by_type).and_return([])
+      receive(:search_teaching_events).and_return([])
   end
 
   it "has the GTM and fallback scripts" do

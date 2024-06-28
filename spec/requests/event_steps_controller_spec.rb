@@ -3,7 +3,6 @@ require "rails_helper"
 describe EventStepsController, type: :request do
   include_context "with stubbed types api"
   include_context "with stubbed candidate create access token api"
-  include_context "with stubbed latest privacy policy api"
   include_context "with stubbed event add attendee api"
 
   it_behaves_like "a controller with a #resend_verification action" do
@@ -39,7 +38,7 @@ describe EventStepsController, type: :request do
     it { is_expected.to have_http_status :success }
     it { is_expected.not_to be_indexed }
 
-    context "when the event is closed" do
+    context "when the event is closed (not accepting registrations)" do
       let(:event) { build :event_api, :closed, readable_id: readable_event_id }
 
       it { is_expected.to redirect_to(event_path(id: event.readable_id)) }
@@ -84,7 +83,7 @@ describe EventStepsController, type: :request do
     before do
       allow_any_instance_of(Events::Steps::PersonalDetails).to \
         receive(:is_walk_in?).and_return(true)
-      allow_any_instance_of(DFEWizard::Steps::Authenticate).to \
+      allow_any_instance_of(GITWizard::Steps::Authenticate).to \
         receive(:candidate_identity_data) { identity_data }
     end
 
@@ -147,7 +146,7 @@ describe EventStepsController, type: :request do
           allow_any_instance_of(Events::Steps::PersonalDetails).to \
             receive(:valid?).and_return true
 
-          allow_any_instance_of(::DFEWizard::Steps::Authenticate).to \
+          allow_any_instance_of(::GITWizard::Steps::Authenticate).to \
             receive(:valid?).and_return true
 
           allow_any_instance_of(Events::Steps::ContactDetails).to \
@@ -185,5 +184,17 @@ describe EventStepsController, type: :request do
     end
 
     it { is_expected.to have_http_status :success }
+
+    context "when the event is in the past" do
+      let(:event) { build :event_api, :past, readable_id: readable_event_id }
+
+      it { is_expected.to redirect_to(event_path(id: event.readable_id)) }
+
+      context "when the candidate is a 'walk-in'" do
+        before { get event_step_path(readable_event_id, :personal_details, walk_in: true) }
+
+        it { is_expected.to have_http_status :success }
+      end
+    end
   end
 end

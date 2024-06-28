@@ -2,7 +2,7 @@ module EventsHelper
   include TextFormattingHelper
 
   def show_events_teaching_logo(index, type_id)
-    index.zero? && type_id != EventType.school_or_university_event_id
+    index.zero? && type_id != Crm::EventType.school_or_university_event_id
   end
 
   def format_event_date(event, stacked: true)
@@ -26,11 +26,7 @@ module EventsHelper
   end
 
   def can_sign_up_online?(event)
-    event.web_feed_id && EventStatus.new(event).open? && !EventType.new(event).provider_event?
-  end
-
-  def embed_event_video_url(video_url)
-    video_url&.sub("watch?v=", "embed/")
+    Crm::EventStatus.new(event).accepts_online_registration?
   end
 
   def formatted_event_description(description)
@@ -42,7 +38,7 @@ module EventsHelper
   end
 
   def display_event_provider_info?(event)
-    !event.type_id.in?([qt_event_type_id, ttt_event_type_id])
+    !event.type_id.in?([git_event_type_id])
   end
 
   def event_has_provider_info?(event)
@@ -80,46 +76,60 @@ module EventsHelper
 
   def event_type_color(type_id)
     case type_id
-    when ttt_event_type_id
+    when git_event_type_id
       "purple"
     else
       "blue"
     end
   end
 
+  def categorise_events(events, params)
+    events.map do |event|
+      address = if event.building.present?
+                  "#{event.building.venue}, #{event.building.address_city}"
+                else
+                  "Online event"
+                end
+
+      description = tag.div do
+        safe_join([
+          tag.div(address),
+          tag.p(tag.strong(event.start_at.to_formatted_s(:event))),
+        ])
+      end
+
+      OpenStruct.new(
+        title: Crm::EventRegion.lookup_by_id(event.region_id),
+        description: description,
+        path: event_path(event.readable_id, channel: params[:channel], sub_channel: params[:sub_channel]),
+      )
+    end
+  end
+
   def pluralised_category_name(type_id)
-    t("event_types.#{type_id}.name.plural")
+    t("event_types.#{type_id}.name.plural", **Value.data)
   end
 
-  def past_category_name(type_id)
-    t "event_types.#{type_id}.name.past",
-      default: "Past #{pluralised_category_name(type_id)}"
-  end
-
-  def display_no_ttt_events_message?(performed_search, events, event_search_type)
-    train_to_teach_id = ttt_event_type_id
-    searching_for_ttt = train_to_teach_id.to_s == event_search_type
+  def display_no_git_events_message?(performed_search, events, event_search_type)
+    get_into_teaching_id = git_event_type_id
+    searching_for_git = get_into_teaching_id.to_s == event_search_type
     searching_for_all = event_search_type.blank?
 
-    no_ttt_events = events.map(&:first).exclude?(train_to_teach_id)
+    no_git_events = events.map(&:first).exclude?(get_into_teaching_id)
 
-    performed_search && (searching_for_ttt || searching_for_all) && no_ttt_events
+    performed_search && (searching_for_git || searching_for_all) && no_git_events
   end
 
   # Determines if the "see all events" button should
   # be shown in the events blocks or not.
   #
   # Currently the button needs to be hidden only in
-  # the TTT block and when the are no TTT events.
+  # the GIT block and when the are no GIT events.
   def show_see_all_events_button?(type_id, events)
-    events.present? || type_id != ttt_event_type_id
+    events.present? || type_id != git_event_type_id
   end
 
-  def ttt_event_type_id
-    EventType.train_to_teach_event_id
-  end
-
-  def qt_event_type_id
-    EventType.question_time_event_id
+  def git_event_type_id
+    Crm::EventType.get_into_teaching_event_id
   end
 end

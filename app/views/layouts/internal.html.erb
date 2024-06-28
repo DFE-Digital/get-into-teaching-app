@@ -1,28 +1,28 @@
+<% append_javascript_pack_tag 'internal' %>
+
 <!doctype html>
 <html lang="en" class="govuk-template">
 <% content_for :head do %>
   <%= csrf_meta_tags %>
   <%= stylesheet_pack_tag 'internal', 'data-turbolinks-track': 'reload', media: 'all' %>
-  <%= javascript_pack_tag 'internal', 'data-turbolinks-track': 'reload', async: true %>
 <% end %>
 
 <%= render "sections/head" %>
-<%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video internal-events", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+<%= body_tag data: { controller: "internal-events" } do %>
+  <%= render "sections/govuk_javascript" %>
   <div id="skiplink-container">
     <div>
-      <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+      <a href="#main-content" class="skiplink" data-module="govuk-skip-link">Skip to main content</a>
     </div>
   </div>
 
-  <main id="main-content" class="<%= class_names("internal", action_name ) %>">
+  <%= main_tag(class: class_names("internal", action_name )) do %>
     <section class="container internal-container">
       <article class="fullwidth">
         <%= yield %>
         <%= yield(:feature) %>
       </article>
     </section>
-  </main>
-
-  <%= render "components/videoplayer" %>
+  <% end %>
 <% end %>
 </html>

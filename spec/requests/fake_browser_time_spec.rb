@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "Fake browser time", type: :request do
-  subject { Nokogiri.parse(response.body).css("#fake-browser-time") }
+  subject { response.body }
 
   before do
     allow(Rails).to receive(:env) { environment.inquiry }
@@ -14,13 +14,13 @@ describe "Fake browser time", type: :request do
     context "when the path has fake_browser_time in the query string" do
       let(:path) { root_path(fake_browser_time: Time.zone.now.to_i) }
 
-      it { is_expected.to be_present }
+      it { is_expected.to include("fake_browser_time") }
     end
 
     context "when the path does not have fake_browser_time in the query string" do
       let(:path) { root_path }
 
-      it { is_expected.to be_empty }
+      it { is_expected.not_to include("fake_browser_time") }
     end
   end
 
@@ -30,7 +30,7 @@ describe "Fake browser time", type: :request do
     context "when the path has fake_browser_time in the query string" do
       let(:path) { root_path(fake_browser_time: Time.zone.now.to_i) }
 
-      it { is_expected.not_to be_present }
+      it { is_expected.not_to include("fake_browser_time") }
     end
   end
 end

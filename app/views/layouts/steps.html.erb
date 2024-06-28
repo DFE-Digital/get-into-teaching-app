@@ -1,62 +1,37 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
-    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
+    <%= body_tag do %>
+      <%= render "sections/govuk_javascript" %>
+      <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
-      <%= c.hero(@front_matter) %>
-    <% end %>
+      <%= main_tag do %>
+        <%= render Content::HeroComponent.new(@front_matter) %>
 
-    <main id="main-content">
-      <section class="container">
-        <% if !@front_matter["image"] %>
-          <header>
-            <% if @front_matter["title_caption"].present? %>
-              <%= tag.span(@front_matter["title_caption"], class: "caption") %>
-            <% end %>
+        <section class="main-section container">
+          <%= render(partial: "sections/content_errors") %>
 
-            <%= tag.h1(@front_matter["title"]) %>
-          </header>
-        <% end %>
-
-        <%= tag.article(class: article_classes(@front_matter)) do %>
-
-          <%= yield %>
-
-          <% @front_matter.key?("steps") && @front_matter["steps"].tap do |steps_fm| %>
-
-            <ol class="steps">
-              <% steps_fm.each.with_index(1) do |(title, contents), i| %>
-                <%= tag.section(class: "step", id: "step-#{i}") do %>
-                  <li>
-                    <header class="step__header">
-                      <div class="step__number">
-                        <%= i %>
-                      </div>
-                      <%= tag.h2(title) %>
-                    </header>
-
-                    <div class="step__content">
-                      <%= render(partial: contents["partial"]) %>
-                    </div>
-                  </li>
-                <% end %>
-              <% end %>
-            </ol>
-
+          <%= tag.article(class: article_classes(@front_matter)) do %>
+            <%= yield %>
           <% end %>
+        </section>
 
-          <div class="supplementary steps-cta">
-            <%= render CallsToAction::NextStepsComponent.new %>
+        <section class="row">
+          <div class="col col-full-content">
+            <%= render Content::PurpleBoxComponent.new(
+              heading: "Get free one-to-one support",
+              text: "An adviser with years of teaching experience can help you with your teacher training application. Chat through phone, text or email as little or often as you need.",
+              cta: {
+                text: "Find out more about advisers",
+                path: "/teacher-training-advisers",
+              },
+              image: image_pack_tag("static/images/adviser-graphic-black.png", **image_alt_attribs_for_text("")),
+            ) %>
           </div>
+        </section>
 
-        <% end %>
+      <% end %>
 
-      </section>
-
-    </main>
-
-    <%= render FooterComponent.new %>
+      <%= render FooterComponent.new %>
     <% end %>
 </html>

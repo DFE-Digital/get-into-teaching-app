@@ -2,8 +2,9 @@
   0% {
     transform: translateY(110vh);
   }
+
   100% {
-    transform: translateY(0vh);
+    transform: translateY(0);
   }
 }
 
@@ -33,8 +34,8 @@
 
   &__content {
     width: 100%;
-    max-width: 40em;
-    background-color: $grey;
+    max-width: $column-720;
+    background-color: $white;
     box-sizing: border-box;
     position: relative;
     overflow-x: clip;
@@ -42,7 +43,7 @@
 
     .logo-wrapper {
       padding: 0;
-      top: -30px;
+      top: -26px;
 
       @include mq($until: desktop) {
         top: 0;
@@ -58,7 +59,7 @@
 
   &__text {
     a {
-      @include dark-link;
+      @extend .link--dark;
     }
   }
 

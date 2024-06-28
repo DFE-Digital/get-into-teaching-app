@@ -1,0 +1,31 @@
+<%= tag.div(class: classes) do %>
+  <div class="heading-container">
+    <%= tag.h2(class: heading_classes) do %>
+      <%= title %>
+    <% end %>
+  </div>
+
+  <div class="content">
+    <div class="inset">
+      <p>
+        <%= intro || content %>
+      </p>
+
+      <%= form_with builder: GOVUKDesignSystemFormBuilder::FormBuilder, url: mailing_list_step_path(:name), scope: :mailing_list_steps_name, method: :put do |f| %>
+        <%= f.govuk_text_field :first_name, width: 'two-thirds', autocomplete: "given-name" %>
+        <%= f.govuk_text_field :last_name, width: 'two-thirds', autocomplete: "family-name" %>
+        <%= f.govuk_email_field :email, width: 'two-thirds', autocomplete: "email" %>
+        <%= f.hidden_field :channel_id, value: params[:channel] || f.object&.channel_id.presence %>
+        <%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id.presence %>
+        <%= f.hidden_field :accepted_policy_id, value: privacy_policy.id %>
+
+        <p>Your details are protected under the terms of our <%= link_to("privacy notice", privacy_policy_path(id: privacy_policy.id), { class: "link--black", target: :blank }) %>.</p>
+
+        <p>Our privacy notice explains how we use your personal data. It's important you read this before signing up to receive emails.</p>
+
+        <% button_text = helpers.safe_html_format("Next step <span></span>") %>
+        <%= f.button button_text, class: "call-to-action-button button", data: { "prevent-double-click": true, "disable-with": button_text } %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

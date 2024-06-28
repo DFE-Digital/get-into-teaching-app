@@ -1,11 +1,11 @@
 <%= content_for :aside do %>
   <div>
-    <h2>Popular tags</h2>
+    <h2 class="heading-s">Popular tags</h2>
     <%= render partial: "blog/tag_list", locals: { tags: Pages::Blog.popular_tags } %>
   </div>
 
   <div>
-    <h2>Highlights</h2>
+    <h2 class="heading-s">Highlights</h2>
     <%= render partial: "blog/highlights" %>
   </div>
 

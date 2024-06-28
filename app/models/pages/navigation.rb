@@ -31,7 +31,7 @@ module Pages
     end
 
     class Node
-      attr_reader :navigation, :path, :title, :rank, :description
+      attr_reader :navigation, :path, :title, :rank, :description, :subcategory
 
       def initialize(navigation, path, front_matter)
         @navigation = navigation
@@ -42,6 +42,7 @@ module Pages
           @rank        = fm.fetch(:navigation, nil)
           @menu        = fm.fetch(:menu, false)
           @description = fm.fetch(:navigation_description, nil)
+          @subcategory = fm.fetch(:subcategory, nil)
         end
       end
 
@@ -51,6 +52,26 @@ module Pages
 
       def children
         navigation.all_pages.select { |page| page.path.start_with?(path) && page.path != path }
+      end
+
+      def children?
+        children.any?
+      end
+
+      def children_without_subcategory
+        children.select { |page| page.subcategory.nil? }
+      end
+
+      def children_in_subcategory(subcategory)
+        children.select { |page| page.subcategory == subcategory }
+      end
+
+      def subcategories
+        children.map(&:subcategory).compact.uniq
+      end
+
+      def subcategories?
+        subcategories.any?
       end
 
       def menu?

@@ -1,6 +1,6 @@
 module Callbacks
   module Steps
-    class TalkingPoints < ::DFEWizard::Step
+    class TalkingPoints < ::GITWizard::Step
       OPTIONS = [
         "Eligibility to become a teacher",
         "Routes into teaching",

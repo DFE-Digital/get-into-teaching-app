@@ -1,5 +1,5 @@
 .registration-with-side-images {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding-top: 4rem;
   padding-bottom: 8rem;
 
@@ -10,7 +10,9 @@
 
     .signup-form {
       position: relative;
-      .registration__mailing-list {
+
+      .registration__mailing-list,
+      .registration__teacher-training-adviser {
         background-color: $white;
         padding: 2em;
         position: relative;
@@ -29,17 +31,18 @@
 
         img {
           width: 100%;
+          height: auto;
         }
       }
     }
 
     @include mq($from: desktop) {
       display: grid;
-      grid-template-columns: 0.5fr 2fr 0.5fr;
+      grid-template-columns: .5fr $column-720 .5fr;
       grid-template-rows: 1fr;
-      gap: 0px 0px;
+      gap: 0 0;
 
-      .signup-form:before {
+      .signup-form::before {
         content: "";
         width: calc(60% + 1.25em);
         height: calc(30% + 1.25em);

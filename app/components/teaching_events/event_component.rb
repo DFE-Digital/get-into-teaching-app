@@ -5,7 +5,7 @@ module TeachingEvents
     def initialize(event:)
       @event     = event
       @title     = event.name
-      @type      = EventType.new(event)
+      @type      = Crm::EventType.new(event)
       @online    = event.is_online
       @in_person = event.building.present?
       @start_at  = event.start_at
@@ -17,9 +17,7 @@ module TeachingEvents
 
     delegate :provider_event?, to: :type
 
-    def train_to_teach?
-      type.train_to_teach_or_question_time_event?
-    end
+    delegate :get_into_teaching_event?, to: :type
 
     def online?
       @online
@@ -45,11 +43,16 @@ module TeachingEvents
       safe_join([@start_at.to_formatted_s(:time), @end_at.to_formatted_s(:time)], "&ndash;".html_safe)
     end
 
+    def image
+      image_path = "static/images/content/event-signup/event-regional#{'-online' if online?}-listing.jpg"
+      helpers.image_pack_tag(image_path, **helpers.image_alt_attribs(image_path))
+    end
+
     def classes
       class_names(
         "event",
-        "event--train-to-teach" => train_to_teach?,
-        "event--regular" => !train_to_teach?,
+        "event--get-into-teaching" => get_into_teaching_event?,
+        "event--regular" => !get_into_teaching_event?,
         "event--training-provider" => provider_event?,
       )
     end

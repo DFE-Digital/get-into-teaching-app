@@ -10,6 +10,7 @@ module TemplateHandlers
     DEFAULTS = {}.freeze
     GLOBAL_FRONT_MATTER = Rails.root.join("config/frontmatter.yml").freeze
     COMPONENT_PLACEHOLDER_REGEX = /\$([A-z0-9-]+)\$/
+    COMPONENT_TYPES = %w[quote quote_list inset_text youtube_video steps].freeze
 
     class << self
       def call(template, source = nil)
@@ -18,7 +19,7 @@ module TemplateHandlers
 
       def global_front_matter
         @global_front_matter ||= if GLOBAL_FRONT_MATTER.exist?
-                                   YAML.load_file GLOBAL_FRONT_MATTER
+                                   YAML.load_file(GLOBAL_FRONT_MATTER) || {}
                                  else
                                    {}
                                  end
@@ -61,14 +62,23 @@ module TemplateHandlers
       add_table_captions add_acronyms autolink_html render_markdown
     end
 
-    # rubocop:disable Style/PerlBackrefs
     def markdown
       # use $1 rather than a block argument here because gsub assigns the
       # entire placeholder to the arg (including dollar symbols) but we only
       # want what's inside the capture group
-      parsed.content.gsub(COMPONENT_PLACEHOLDER_REGEX) do
-        safe_join([cta_component($1), component("quote", $1), image($1)].compact).strip
+      # NB: we need to parse a second time as a component may contain a $value$
+      substitute_values(substitute_components_and_values(parsed.content))
+    end
+
+    # rubocop:disable Style/PerlBackrefs
+    def substitute_components_and_values(content)
+      content.gsub(COMPONENT_PLACEHOLDER_REGEX) do
+        safe_join([cta_component($1), content_component($1), image($1), value($1)].compact).strip
       end
+    end
+
+    def substitute_values(content)
+      content.gsub(COMPONENT_PLACEHOLDER_REGEX) { safe_join([value($1)].compact).strip }
     end
     # rubocop:enable Style/PerlBackrefs
 
@@ -82,10 +92,12 @@ module TemplateHandlers
       ApplicationController.render(component, layout: false)
     end
 
-    def component(type, placeholder)
+    def content_component(placeholder)
+      component_type = COMPONENT_TYPES.find { |type| front_matter.dig(type, placeholder) }
+
       component = Content::ComponentInjector.new(
-        type,
-        front_matter.dig(type, placeholder),
+        component_type,
+        front_matter.dig(component_type, placeholder),
       ).component
 
       return unless component
@@ -101,6 +113,10 @@ module TemplateHandlers
       component = Content::ImageComponent.new(path: image_args["path"])
 
       ApplicationController.render(component, layout: false)
+    end
+
+    def value(placeholder)
+      Value.get(placeholder)
     end
 
     def front_matter

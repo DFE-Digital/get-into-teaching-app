@@ -3,6 +3,8 @@
 // override the flexbox settings. This will give us graceful
 // degredation back to IE10.
 // Older browsers will just get a list.
+@use "sass:math";
+
 @mixin cards-grid($columns: 3, $gap: 1em) {
   // fall back to flexbox if there's no
   // css grid support
@@ -18,7 +20,7 @@
 
   > * {
     flex: 1;
-    flex-basis: ((100% / $columns) - 2%);
+    flex-basis: (math.div(100%, $columns) - 2%);
     flex-grow: inherit;
     margin-right: 1em;
     margin-bottom: 1em;

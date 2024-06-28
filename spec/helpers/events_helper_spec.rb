@@ -10,20 +10,20 @@ describe EventsHelper, type: "helper" do
 
   describe "#show_events_teaching_logo" do
     it "returns false if the index != 0" do
-      show_logo = show_events_teaching_logo(1, EventType.train_to_teach_event_id)
+      show_logo = show_events_teaching_logo(1, Crm::EventType.get_into_teaching_event_id)
       expect(show_logo).to be_falsy
     end
 
     it "returns false if the type_id is School or University event" do
-      show_logo = show_events_teaching_logo(0, EventType.school_or_university_event_id)
+      show_logo = show_events_teaching_logo(0, Crm::EventType.school_or_university_event_id)
       expect(show_logo).to be_falsy
     end
 
     it "returns true if the index is 0 and the type_id is not School or University event" do
-      show_logo = show_events_teaching_logo(0, EventType.train_to_teach_event_id)
+      show_logo = show_events_teaching_logo(0, Crm::EventType.get_into_teaching_event_id)
       expect(show_logo).to be_truthy
 
-      show_logo = show_events_teaching_logo(0, EventType.online_event_id)
+      show_logo = show_events_teaching_logo(0, Crm::EventType.online_event_id)
       expect(show_logo).to be_truthy
     end
   end
@@ -79,39 +79,47 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#can_sign_up_online?" do
-    it "returns true for events with a web_feed_id that are not closed" do
-      event = GetIntoTeachingApiClient::TeachingEvent.new(
-        web_feed_id: "abc-123",
-        status_id: EventStatus.open_id,
-      )
-      expect(can_sign_up_online?(event)).to be_truthy
+    subject { can_sign_up_online?(event) }
+
+    context "when GIT (with web feed id), future-dated, open" do
+      let(:event) { build(:event_api, :get_into_teaching_event) }
+
+      it { is_expected.to be_truthy }
     end
 
-    it "returns false for events without a web_feed_id" do
-      event = GetIntoTeachingApiClient::TeachingEvent.new(
-        web_feed_id: nil,
-        status_id: EventStatus.open_id,
-      )
-      expect(can_sign_up_online?(event)).to be_falsy
+    context "when not GIT, future-dated, open" do
+      let(:event) { build(:event_api, :online_event) }
+
+      it { is_expected.to be_falsy }
     end
 
-    it "returns false for closed events" do
-      event = GetIntoTeachingApiClient::TeachingEvent.new(
-        web_feed_id: "abc-123",
-        status_id: EventStatus.closed_id,
-      )
-      expect(can_sign_up_online?(event)).to be_falsy
+    context "when GIT (with web feed id), past, open" do
+      let(:event) { build(:event_api, :get_into_teaching_event, :past) }
+
+      it { is_expected.to be_falsy }
+    end
+
+    context "when GIT (with web feed id), future-dated, closed" do
+      let(:event) { build(:event_api, :get_into_teaching_event, :closed) }
+
+      it { is_expected.to be_falsy }
+    end
+
+    context "when GIT (without web feed id), future-dated, open" do
+      let(:event) { build(:event_api, :get_into_teaching_event, web_feed_id: nil) }
+
+      it { is_expected.to be_falsy }
     end
   end
 
   describe "#event_type_color" do
-    it "returns purple for train to teach events" do
-      expect(event_type_color(EventType.train_to_teach_event_id)).to eq("purple")
+    it "returns purple for get into teaching events" do
+      expect(event_type_color(Crm::EventType.get_into_teaching_event_id)).to eq("purple")
     end
 
-    it "returns blue for non-train to teach events" do
-      expect(event_type_color(EventType.online_event_id)).to eq("blue")
-      expect(event_type_color(EventType.school_or_university_event_id)).to eq("blue")
+    it "returns blue for non-get into teaching events" do
+      expect(event_type_color(Crm::EventType.online_event_id)).to eq("blue")
+      expect(event_type_color(Crm::EventType.school_or_university_event_id)).to eq("blue")
     end
   end
 
@@ -138,17 +146,15 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#display_event_provider_info?" do
-    it "returns false if train to teach or question time" do
-      event.type_id = EventType.train_to_teach_event_id
-      expect(display_event_provider_info?(event)).to be(false)
-      event.type_id = EventType.question_time_event_id
+    it "returns false if get into teaching event" do
+      event.type_id = Crm::EventType.get_into_teaching_event_id
       expect(display_event_provider_info?(event)).to be(false)
     end
 
-    it "returns true if not train to teach or question time" do
-      event.type_id = EventType.online_event_id
+    it "returns true if not get into teaching event" do
+      event.type_id = Crm::EventType.online_event_id
       expect(display_event_provider_info?(event)).to be(true)
-      event.type_id = EventType.school_or_university_event_id
+      event.type_id = Crm::EventType.school_or_university_event_id
       expect(display_event_provider_info?(event)).to be(true)
     end
   end
@@ -165,26 +171,41 @@ describe EventsHelper, type: "helper" do
     end
   end
 
-  describe "#embed_event_video_url" do
-    it "returns nil if the event video is nil" do
-      expect(embed_event_video_url(nil)).to be_nil
+  describe "#categorise_events" do
+    let(:events) { build_list(:event_api, 2) }
+    let(:params) { {} }
+
+    subject(:categorised_events) { categorise_events(events, params) }
+
+    it { expect(categorised_events.count).to eq(events.count) }
+    it { is_expected.to all(have_attributes(title: be_a(String), description: be_a(String), path: be_a(String))) }
+
+    context "when the event does not have a building" do
+      let(:events) { build_list(:event_api, 2, :online) }
+
+      it { is_expected.to all(have_attributes(title: be_a(String), description: be_a(String), path: be_a(String))) }
     end
 
-    it "returns an embedded url when given an embedded url" do
-      standard_url = "https://www.youtube.com/watch?v=BelJ2AjtHoQ"
-      embed_url = "https://www.youtube.com/embed/BelJ2AjtHoQ"
-      expect(embed_event_video_url(standard_url)).to eq(embed_url)
+    context "when the event has a channel" do
+      let(:params) { { channel: "123" } }
+
+      it "includes the channel in the path" do
+        expect(categorised_events.first.path).to include("channel=123")
+      end
     end
 
-    it "returns an embedded url when given a standard url" do
-      embed_url = "https://www.youtube.com/embed/BelJ2AjtHoQ"
-      expect(embed_event_video_url(embed_url)).to eq(embed_url)
+    context "when the event has a sub_channel" do
+      let(:params) { { sub_channel: "ABC" } }
+
+      it "includes the channel in the path" do
+        expect(categorised_events.first.path).to include("sub_channel=ABC")
+      end
     end
   end
 
   describe "#pluralised_category_name" do
     {
-      222_750_001 => "Train to Teach events",
+      222_750_012 => "Get Into Teaching events",
       222_750_008 => "Online Q&As",
       222_750_009 => "School and University events",
     }.each do |type_id, name|
@@ -194,43 +215,33 @@ describe EventsHelper, type: "helper" do
     end
   end
 
-  describe "#past_category_name" do
-    it "returns 'Past online Q&As' if the category name contains 'online'" do
-      expect(past_category_name(222_750_008)).to eql("Past online Q&As")
-    end
-
-    it "returns the category name with 'Past' prepended if the category name does not contain 'online'" do
-      expect(past_category_name(222_750_001)).to eql("Past Train to Teach events")
-    end
-  end
-
-  describe "#display_no_ttt_events_message?" do
+  describe "#display_no_git_events_message?" do
     let(:performed_search) { true }
     let(:events) { [] }
-    let(:event_search_type) { "222750001" }
-    let(:dummy_events) { [[222_750_001, []]] }
+    let(:event_search_type) { "222750012" }
+    let(:dummy_events) { [[222_750_012, []]] }
 
-    it "returns true when searching for TTT events and there are none" do
-      expect(display_no_ttt_events_message?(performed_search, events, event_search_type)).to be true
+    it "returns true when searching for GIT events and there are none" do
+      expect(display_no_git_events_message?(performed_search, events, event_search_type)).to be true
     end
 
     it "returns false when search was not performed" do
-      expect(display_no_ttt_events_message?(false, events, event_search_type)).to be false
+      expect(display_no_git_events_message?(false, events, event_search_type)).to be false
     end
 
-    it "returns false when there are TTT events" do
-      expect(display_no_ttt_events_message?(true, dummy_events, event_search_type)).to be false
+    it "returns false when there are GIT events" do
+      expect(display_no_git_events_message?(true, dummy_events, event_search_type)).to be false
     end
 
-    it "returns false when the search is not for TTT events" do
-      expect(display_no_ttt_events_message?(true, dummy_events, "")).to be false
+    it "returns false when the search is not for GIT events" do
+      expect(display_no_git_events_message?(true, dummy_events, "")).to be false
     end
   end
 
   describe "#show_see_all_events_button?" do
-    let(:type_id) { EventType.train_to_teach_event_id }
+    let(:type_id) { Crm::EventType.get_into_teaching_event_id }
 
-    context "when checking for TTT event type id" do
+    context "when checking for GIT event type id" do
       it "returns false when events is empty" do
         events = []
 
@@ -238,14 +249,14 @@ describe EventsHelper, type: "helper" do
       end
 
       it "returns true when events is not empty" do
-        events = build_list(:event_api, 2, :train_to_teach_event)
+        events = build_list(:event_api, 2, :get_into_teaching_event)
 
         expect(show_see_all_events_button?(type_id, events)).to be true
       end
     end
 
     context "when checking for any other event type ids" do
-      let(:type_id) { EventType.online_event_id }
+      let(:type_id) { Crm::EventType.online_event_id }
 
       it "returns true when events is empty" do
         events = build_list(:event_api, 2, :online_event)
@@ -261,9 +272,9 @@ describe EventsHelper, type: "helper" do
     end
   end
 
-  describe "#ttt_event_type_id?" do
-    it "returns the TTT event id" do
-      expect(ttt_event_type_id).to eq EventType.train_to_teach_event_id
+  describe "#git_event_type_id?" do
+    it "returns the GIT event id" do
+      expect(git_event_type_id).to eq Crm::EventType.get_into_teaching_event_id
     end
   end
 end

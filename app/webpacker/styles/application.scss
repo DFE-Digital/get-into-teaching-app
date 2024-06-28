@@ -2,35 +2,39 @@
 
 $git-font-family: sans-serif;
 $govuk-font-family: $git-font-family;
+// NB: enabling the new typography scale will affect text rendering at lower
+// resolutions. Consider waiting to upgrade until v6.
+// https://design-system.service.gov.uk/get-started/new-type-scale/
+$govuk-new-typography-scale: false;
 
-@import './git';
+@import "./git";
 
 // Only import the used parts of the GOV.UK frontend.
-@import "~govuk-frontend/govuk/base";
-@import "~govuk-frontend/govuk/core/all";
-@import "~govuk-frontend/govuk/objects/all";
-@import "~govuk-frontend/govuk/utilities/all";
-@import "~govuk-frontend/govuk/overrides/all";
-@import "~govuk-frontend/govuk/components/back-link/index";
-@import "~govuk-frontend/govuk/components/button/index";
-@import "~govuk-frontend/govuk/components/checkboxes/index";
-@import "~govuk-frontend/govuk/components/error-message/index";
-@import "~govuk-frontend/govuk/components/error-summary/index";
-@import "~govuk-frontend/govuk/components/fieldset/index";
-@import "~govuk-frontend/govuk/components/hint/index";
-@import "~govuk-frontend/govuk/components/input/index";
-@import "~govuk-frontend/govuk/components/label/index";
-@import "~govuk-frontend/govuk/components/notification-banner/index";
-@import "~govuk-frontend/govuk/components/panel/index";
-@import "~govuk-frontend/govuk/components/radios/index";
-@import "~govuk-frontend/govuk/components/table/index";
+@import "~govuk-frontend/dist/govuk/base";
+@import "~govuk-frontend/dist/govuk/core/index";
+@import "~govuk-frontend/dist/govuk/objects/index";
+@import "~govuk-frontend/dist/govuk/utilities/index";
+@import "~govuk-frontend/dist/govuk/overrides/index";
+@import "~govuk-frontend/dist/govuk/components/back-link/index";
+@import "~govuk-frontend/dist/govuk/components/button/index";
+@import "~govuk-frontend/dist/govuk/components/checkboxes/index";
+@import "~govuk-frontend/dist/govuk/components/error-message/index";
+@import "~govuk-frontend/dist/govuk/components/error-summary/index";
+@import "~govuk-frontend/dist/govuk/components/fieldset/index";
+@import "~govuk-frontend/dist/govuk/components/hint/index";
+@import "~govuk-frontend/dist/govuk/components/input/index";
+@import "~govuk-frontend/dist/govuk/components/label/index";
+@import "~govuk-frontend/dist/govuk/components/notification-banner/index";
+@import "~govuk-frontend/dist/govuk/components/panel/index";
+@import "~govuk-frontend/dist/govuk/components/radios/index";
+@import "~govuk-frontend/dist/govuk/components/table/index";
 
-@import './govuk-reset';
+@import "./govuk-reset";
 
-@import './components/map';
+@import "./components/map";
 
-$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/regular';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/brands';
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";

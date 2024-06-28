@@ -1,11 +1,10 @@
 <div class="promo__right">
-  <h2>
-    <% if caption %>
-      <%= tag.div(caption, class: "caption") %>
-    <% end %>
-
-    <%= tag.div(heading) %>
-  </h2>
-
+  <%= render Content::HeadingComponent.new(
+    heading: heading,
+    heading_size: :l,
+    tag: :h2,
+    caption: caption,
+    caption_size: :l
+  ) %>
   <%= content %>
 </div>

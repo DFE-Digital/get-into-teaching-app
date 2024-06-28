@@ -1,0 +1,133 @@
+.campaign-hero {
+  // the two ratios don't overlap exactly because we'd get a jagged
+  // edge - instead adjust the second slightly so it blurs smoothly
+
+  @mixin slanted-bottom($accent, $bg) {
+    $accent-ratio: 75%;
+    $bg-ratio: $accent_ratio + .5%;
+    background: linear-gradient(182deg, $accent $accent-ratio, $bg $bg-ratio);
+  }
+
+  min-height: 15em;
+  padding-block: 1em;
+
+  .container {
+    max-width: $column-845;
+    margin: 0 auto;
+
+    align-items: center;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include mq($from: mobile) {
+      grid-template-columns: 1fr 10em 1fr;
+    }
+  }
+
+  &.yellow {
+    @include slanted-bottom($yellow, $white);
+
+    background-color: $yellow;
+    color: $black;
+
+    h1 > span {
+      background: $purple;
+    }
+
+    &.bg-grey {
+      @include slanted-bottom($yellow, $grey);
+    }
+  }
+
+  &.blue {
+    @include slanted-bottom($blue, $white);
+
+    background-color: $blue;
+    color: $black;
+
+    h1 > span {
+      background: $pink;
+    }
+  }
+
+  &.pink {
+    @include slanted-bottom($pink, $white);
+
+    background-color: $pink;
+    color: $black;
+
+    h1 > span {
+      background: $yellow;
+    }
+  }
+
+  &.grow {
+    @include slanted-bottom($pink, $grey);
+
+    background-color: $pink;
+    color: $black;
+
+    h1 > span {
+      background: $blue;
+    }
+  }
+
+  &.green {
+    @include slanted-bottom($green, $grey);
+
+    background-color: $green;
+    color: $black;
+
+    h1 > span {
+      background: $yellow;
+    }
+  }
+
+  h1 {
+    margin: 1em auto 0 1em;
+    z-index: 5;
+
+    @include mq($from: mobile) {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+
+    @include mq($from: tablet) {
+      margin: 1em inherit;
+    }
+
+    span {
+      @include font-size(xxlarge);
+
+      padding: .05rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+
+    span:last-of-type {
+      @include font-size(xxxlarge, $adjust: .75rem);
+
+      @include mq($from: mobile) {
+        @include font-size(xxxlarge, $adjust: .5rem);
+      }
+    }
+  }
+
+  picture {
+    @include mq($from: mobile) {
+      grid-area: 1 / 2 / 2 / 4;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+
+      @include mq($from: tablet) {
+        max-width: 90%;
+      }
+    }
+  }
+}

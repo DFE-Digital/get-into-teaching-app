@@ -5,45 +5,45 @@
     <div class="call-to-action__text">
       <div class="call-to-action__form">
         <%= form_with(model: form, url: path, method: :get, local: true, html: { data: { "controller": "funding-widget", "funding-widget-target": 'form'}}) do |f| %>
-          <div class="field">
-            <%= tag.div(class: input_field_classes(:subject)) do %>
-              <%= f.label :subject, 'Choose the subject you want to teach' %>
-              <%= f.select :subject, grouped_options_for_select(grouped_options, form.subject), { prompt: true }, { data: { action: "funding-widget#submitForm"}} %>
+          <%= tag.div(class: "govuk-form-group #{input_field_classes(:subject)}") do %>
+            <%= f.label :subject, 'Choose the subject you want to teach', class: 'govuk-label field', id: 'funding_widget_subject_label' %>
+            <% if error_messages.any? %>
+              <div class="form__errors">
+                <% error_messages.each do |error_message| %>
+                  <%= tag.p(class: 'govuk-error-message field') do %>
+                    <span class="govuk-visually-hidden">Error:</span>
+                    <%= error_message %>
+                  <% end %>
+                <% end %>
+              </div>
             <% end %>
-          </div>
-          <% if error_messages.any? %>
-            <div class="form__errors">
-              <% error_messages.each do |error_message| %>
-                <%= tag.div(error_message) %>
-              <% end %>
-            </div>
+            <%= f.select :subject, grouped_options_for_select(grouped_options, form.subject), { prompt: true }, { class: "govuk-select", aria: { describedby: "funding_widget_subject_label" }} %>
           <% end %>
-          <div class="actions hidden-when-js-enabled">
-            <%= f.button 'See funding', type: 'submit', class: 'button' %>
+          <div class="actions">
+            <%= f.button 'Continue', type: 'submit', class: 'button' %>
           </div>
         <% end %>
       </div>
 
-      <% if form.subject %>
+      <% if form.subject.present? %>
         <% if funding_results.blank? %>
           <div class="call-to-action__text">
             <h3><%= sub_head %></h3>
             <div>
               <p>
-                Tuition fee and maintenance loans are available.
+                A scholarship or bursary isn't available for your chosen subject, but you can still get a <a href="/funding-and-support/tuition-fee-and-maintenance-loans">tuition fee and maintenance loan</a> if you're eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible).
               </p>
 
               <p>
-                Adding loans for teacher training will not increase your monthly payments.
-                Currently, no scholarships or bursaries are offered for this subject.
+                You might be able to get extra funding support <a href="/funding-and-support/if-youre-a-parent-or-carer">if you're a parent or carer</a> and <a href="/funding-and-support/if-youre-disabled">if you're disabled</a>.
               </p>
             </div>
           </div>
           <div>
             <h3>Next steps</h3>
             <div>
-              Use the <a href="https://www.gov.uk/student-finance-calculator">student finance calculator</a> to find out how much you can get.<br>
-              Explore <a href="/ways-to-train">ways to train</a>.
+              <p>Use the <a href="https://www.gov.uk/student-finance-calculator">student finance calculator</a> to find out what tuition fee and maintenance loan you could get.<br></p>
+              <p>Explore <a href="/train-to-be-a-teacher">how to train to be a teacher</a>.</p>
             </div>
           </div>
         <% else %>
@@ -52,20 +52,25 @@
             <div>
               <%= helpers.safe_format(funding_results) %>
 
-              <p>Tuition fee and maintenance loans are also available.</p>
+              <p>You can receive this alongside a <a href="/funding-and-support/tuition-fee-and-maintenance-loans">tuition fee and maintenance loan</a>.</p>
+              <p>You could also get extra funding support <a href="/funding-and-support/if-youre-a-parent-or-carer">if you're a parent or carer</a> and <a href="/funding-and-support/if-youre-disabled">if you're disabled</a>.</p>
             </div>
           </div>
           <div>
             <h3>Next steps</h3>
             <div>
-              Find out more about <a href="#bursaries-and-scholarships">bursaries and scholarships</a>, including terms and conditions.<br>
-              Explore <a href="/ways-to-train">ways to train</a>.
+            Continue on this page to find out more about your eligibility for funding.
+            </div>
+
+            <div>
+             <p> Explore <a href="/train-to-be-a-teacher">how to train to become a teacher</a>.</p>
             </div>
 
             <%= helpers.safe_html_format(next_steps) if next_steps.present? %>
           </div>
         <% end %>
-        <p>You may be able to get extra support <a href="#if-youre-disabled">if you're disabled</a>, <a href="#if-youre-a-parent-or-carer">if you're a parent or carer</a>. You may still be eligible for funding <a href="#if-you-come-from-outside-england">if you're an international candidate</a>.</p>
+        <p>Talk to a <a href="/teacher-training-advisers">teacher training adviser</a> before you apply for free advice on funding your training. Chat by phone, text or email, as little or as often as you need.</p>
+        <p><a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">Find out more about funding for non-UK citizens</a>.</p>
       <% end %>
     </div>
   </div>

@@ -1,0 +1,25 @@
+ol.quote-list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-top: 3rem;
+  }
+
+  .heading-wrapper {
+    display: grid;
+    grid-template-rows: 50% 50%;
+
+    h3 {
+      @extend .heading--highlight-pink;
+      grid-area: 1 / 1 / span 2 / span 1;
+      margin-left: 2.5rem;
+    }
+
+    > div {
+      grid-area: 2 / 1 / span 1 / span 1;
+      background-color: $grey;
+    }
+  }
+}

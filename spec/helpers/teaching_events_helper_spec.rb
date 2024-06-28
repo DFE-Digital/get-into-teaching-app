@@ -7,6 +7,29 @@ describe TeachingEventsHelper, type: "helper" do
     end
   end
 
+  describe "#add_online_events" do
+    let(:online) { [false] }
+    let(:params) do
+      ActionController::Parameters.new({
+        teaching_events_search: {
+          distance: 20,
+          online: online,
+        },
+        other: "param",
+      })
+    end
+
+    subject { add_online_events(params) }
+
+    it { is_expected.to eq({ teaching_events_search: { distance: 20, online: [false, true] } }) }
+
+    context "when online is nil" do
+      let(:online) { nil }
+
+      it { is_expected.to eq({ teaching_events_search: { distance: 20, online: [true] } }) }
+    end
+  end
+
   describe "#event_format" do
     [
       {
@@ -56,25 +79,25 @@ describe TeachingEventsHelper, type: "helper" do
   end
 
   describe "#is_event_type?" do
-    let(:ttt) { "Train to Teach event" }
-    let(:qt) { "Question Time" }
+    let(:git) { "Get Into Teaching event" }
+    let(:provider) { "School or University event" }
 
-    let(:ttt_event) do
-      OpenStruct.new(type_id: EventType.lookup_by_name(ttt))
+    let(:git_event) do
+      OpenStruct.new(type_id: Crm::EventType.lookup_by_name(git))
     end
 
     specify "returns true when there's a match" do
-      expect(is_event_type?(ttt_event, ttt)).to be true
+      expect(is_event_type?(git_event, git)).to be true
     end
 
     specify "returns false when there's no match" do
-      expect(is_event_type?(ttt_event, qt)).to be false
+      expect(is_event_type?(git_event, provider)).to be false
     end
   end
 
   describe "#event_type_name" do
     specify "returns the event name given a valid id" do
-      expect(event_type_name(222_750_007)).to eql("Question Time")
+      expect(event_type_name(222_750_009)).to eql("Training provider")
     end
 
     specify "returns nil when given an invalid id" do
@@ -85,12 +108,12 @@ describe TeachingEventsHelper, type: "helper" do
       let(:custom_event) { "Bingo night" }
 
       specify "returns online forum instead of online event by default" do
-        expect(EventType.lookup_by_id(222_750_008)).to eql("Online event")
+        expect(Crm::EventType.lookup_by_id(222_750_008)).to eql("Online event")
         expect(event_type_name(222_750_008)).to eql("DfE Online Q&A")
       end
 
       specify "returns training provider instead of school or uni event by default" do
-        expect(EventType.lookup_by_id(222_750_009)).to eql("School or University event")
+        expect(Crm::EventType.lookup_by_id(222_750_009)).to eql("School or University event")
         expect(event_type_name(222_750_009)).to eql("Training provider")
       end
 
@@ -100,20 +123,18 @@ describe TeachingEventsHelper, type: "helper" do
     end
   end
 
-  describe "#is_a_train_to_teach_event?" do
-    let(:ttt_event) { OpenStruct.new(type_id: EventType.train_to_teach_event_id) }
-    let(:qt_event) { OpenStruct.new(type_id: EventType.question_time_event_id) }
-    let(:online_event) { OpenStruct.new(type_id: EventType.online_event_id) }
-    let(:school_or_university_event) { OpenStruct.new(type_id: EventType.school_or_university_event_id) }
+  describe "#is_a_get_into_teaching_event?" do
+    let(:git_event) { OpenStruct.new(type_id: Crm::EventType.get_into_teaching_event_id) }
+    let(:online_event) { OpenStruct.new(type_id: Crm::EventType.online_event_id) }
+    let(:school_or_university_event) { OpenStruct.new(type_id: Crm::EventType.school_or_university_event_id) }
 
-    specify "returns true when the event is either Train to Teach or Question Time" do
-      expect(is_a_train_to_teach_event?(ttt_event)).to be true
-      expect(is_a_train_to_teach_event?(qt_event)).to be true
+    specify "returns true when the event is Get Into Teaching" do
+      expect(is_a_get_into_teaching_event?(git_event)).to be true
     end
 
     specify "returns false when the event is online or school and university" do
-      expect(is_a_train_to_teach_event?(online_event)).to be false
-      expect(is_a_train_to_teach_event?(school_or_university_event)).to be false
+      expect(is_a_get_into_teaching_event?(online_event)).to be false
+      expect(is_a_get_into_teaching_event?(school_or_university_event)).to be false
     end
   end
 end

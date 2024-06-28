@@ -2,7 +2,7 @@ module MailingList
   class StepsController < ApplicationController
     include CircuitBreaker
 
-    include DFEWizard::Controller
+    include GITWizard::Controller
     self.wizard_class = MailingList::Wizard
 
     before_action :noindex, unless: -> { request.path.include?("/name") }
@@ -13,6 +13,12 @@ module MailingList
 
     def not_available
       render "not_available"
+    end
+
+    def completed
+      super
+
+      @first_name = wizard_store[:first_name]
     end
 
   protected
@@ -29,7 +35,7 @@ module MailingList
     helper_method :step_path
 
     def wizard_store
-      ::DFEWizard::Store.new app_store, crm_store
+      ::GITWizard::Store.new app_store, crm_store
     end
 
     def app_store
@@ -49,8 +55,9 @@ module MailingList
     end
 
     def set_step_page_title
-      @page_title = "Get personalised guidance to your inbox"
-      unless @current_step.nil?
+      @page_title = "Get tailored guidance in your inbox"
+
+      if @current_step&.title
         @page_title += ", #{@current_step.title.downcase} step"
       end
     end

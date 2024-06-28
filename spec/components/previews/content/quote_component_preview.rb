@@ -1,12 +1,12 @@
 class Content::QuoteComponentPreview < ViewComponent::Preview
   def default
-    component = Content::QuoteComponent.new(text)
+    component = Content::QuoteComponent.new(**text)
     render(component)
   end
 
   def with_inline
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(inline),
     )
 
@@ -18,7 +18,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_author
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author),
     )
     render(component)
@@ -26,7 +26,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_name
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author.slice(:name)),
     )
     render(component)
@@ -34,91 +34,26 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_job_title
     component = Content::QuoteComponent.new(
-      text
+      **text
       .merge(author.slice(:job_title)),
     )
     render(component)
   end
 
-  def with_cta
+  def with_author_and_image
     component = Content::QuoteComponent.new(
-      text
-        .merge(cta),
-    )
-    render(component)
-  end
-
-  def with_author_and_cta
-    component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author)
-        .merge(cta),
-    )
-    render(component)
-  end
-
-  def with_author_image_and_cta
-    component = Content::QuoteComponent.new(
-      text
-        .merge(author)
-        .merge(cta)
         .merge(image),
     )
     render(component)
   end
 
-  def with_author_image_and_cta_inline
+  def with_author_and_image_and_inline
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author)
-        .merge(cta)
         .merge(image)
-        .merge(inline),
-    )
-
-    render_with_template(
-      template: "content/quote_component_preview/inline",
-      locals: { component: component },
-    )
-  end
-
-  def with_author_hanging_right
-    component = Content::QuoteComponent.new(
-      text
-        .merge(author)
-        .merge(hang_right),
-    )
-    render(component)
-  end
-
-  def with_author_and_cta_hanging_right
-    component = Content::QuoteComponent.new(
-      text
-        .merge(author)
-        .merge(cta)
-        .merge(hang_right),
-    )
-    render(component)
-  end
-
-  def with_author_image_and_cta_hanging_right
-    component = Content::QuoteComponent.new(
-      text
-        .merge(author)
-        .merge(cta)
-        .merge(image)
-        .merge(hang_right),
-    )
-    render(component)
-  end
-
-  def with_author_image_and_cta_hanging_right_inline
-    component = Content::QuoteComponent.new(
-      text
-        .merge(author)
-        .merge(cta)
-        .merge(image)
-        .merge(hang_right)
         .merge(inline),
     )
 
@@ -145,24 +80,9 @@ private
     }
   end
 
-  def cta
-    {
-      cta: {
-        title: "Call to Action",
-        link: "/",
-      },
-    }
-  end
-
   def image
     {
-      image: "media/images/homepage/science-teacher.jpg",
-    }
-  end
-
-  def hang_right
-    {
-      hang: "right",
+      image: "static/images/homepage/science-teacher.jpg",
     }
   end
 

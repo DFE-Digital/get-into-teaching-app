@@ -16,8 +16,8 @@ RSpec.describe Pages::Navigation do
   let(:page_five_subpages) do
     {
       "/page-five/part-1" => { title: "Page five: part 1", navigation: 5.1 },
-      "/page-five/part-2" => { title: "Page five: part 2", navigation: 5.2 },
-      "/page-five/part-3" => { title: "Page five: part 3", navigation: 5.3 },
+      "/page-five/part-2" => { title: "Page five: part 2", navigation: 5.2, subcategory: "category-1" },
+      "/page-five/part-3" => { title: "Page five: part 3", navigation: 5.3, subcategory: "category-2" },
     }
   end
 
@@ -191,6 +191,66 @@ RSpec.describe Pages::Navigation do
       specify "contains only the nodes that start with the same path" do
         expect(subject.children.map(&:path)).to all(start_with("/page-five"))
         expect(subject.children.map(&:rank)).to all(be_in(5..6))
+      end
+    end
+
+    describe "#children?" do
+      let(:nav) { Pages::Navigation.new(page_five_subpages.merge(page_six_subpages)) }
+
+      context "when there are child resources" do
+        subject { described_class.new(nav, "/page-five", { title: "Five", rank: 5, menu: true }) }
+
+        it "returns true" do
+          expect(subject.children?).to be true
+        end
+      end
+
+      context "when there are no child resources" do
+        subject { described_class.new(nav, "/page-five/part-3", { title: "Five", rank: 5, menu: true }) }
+
+        it "returns false" do
+          expect(subject.children?).to be false
+        end
+      end
+    end
+
+    describe "#subcategories" do
+      let(:nav) { Pages::Navigation.new(page_five_subpages.merge(page_six_subpages)) }
+
+      subject { described_class.new(nav, "/page-five", { title: "Five", rank: 5, menu: true }).subcategories }
+
+      it "returns a list of non-nil subcategories" do
+        expect(subject).to match_array(%w[category-1 category-2])
+      end
+    end
+
+    describe "#subcategories?" do
+      let(:nav) { Pages::Navigation.new(page_five_subpages.merge(page_six_subpages)) }
+
+      subject { described_class.new(nav, "/page-five", { title: "Five", rank: 5, menu: true }).subcategories? }
+
+      it "returns true" do
+        expect(subject).to be true
+      end
+    end
+
+    describe "#children_without_subcategory" do
+      let(:nav) { Pages::Navigation.new(page_five_subpages.merge(page_six_subpages)) }
+
+      subject { described_class.new(nav, "/page-five", { title: "Five", rank: 5, menu: true }).children_without_subcategory.map(&:title) }
+
+      it "returns a list of child pages without a subcategory" do
+        expect(subject).to match_array(["Page five: part 1"])
+      end
+    end
+
+    describe "#children_in_subcategory" do
+      let(:nav) { Pages::Navigation.new(page_five_subpages.merge(page_six_subpages)) }
+
+      subject { described_class.new(nav, "/page-five", { title: "Five", rank: 5, menu: true }).children_in_subcategory("category-2").map(&:title) }
+
+      it "returns a list of child pages with the specified subcategory" do
+        expect(subject).to match_array(["Page five: part 3"])
       end
     end
 

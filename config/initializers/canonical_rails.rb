@@ -16,7 +16,7 @@ CanonicalRails.setup do |config|
   #
   # Acts as a whitelist for routes to have trailing slashes
 
-  config.collection_actions # = [:index]
+  config.collection_actions = []
 
   # Parameter spamming can cause index dilution by creating seemingly different URLs with identical or near-identical content.
   # Unless allowed, these parameters will be omitted

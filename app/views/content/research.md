@@ -5,11 +5,35 @@ description: |-
 date: "2021-05-17"
 image: false
 calls_to_action:
+  lessons-shape-lives:
+    name: attachment
+    arguments:
+      text: Read the Lessons shape lives report summary
+      file_path: static/documents/lessons-shape-lives-teaching-report.pdf
+      file_type: PDF
+      file_size: 271KB
+      published_at: 29 March 2023
+  proud-parents:
+    name: attachment
+    arguments:
+      text: Read the Proud parents report summary
+      file_path: static/documents/proud-parents-teaching-report.pdf
+      file_type: PDF
+      file_size: 260KB
+      published_at: 10 November 2022
+  career-countdown:
+    name: attachment
+    arguments:
+      text: Read the Career countdown report summary
+      file_path: static/documents/career-countdown-campaign-teaching-report.pdf
+      file_type: PDF
+      file_size: 267KB
+      published_at: 6 July 2022
   life-lessons:
     name: attachment
     arguments:
-      text: Read the Life Lessons report summary
-      file_path: media/documents/life-lessons-learnt-campaign-teaching.pdf
+      text: Read the Life lessons report summary
+      file_path: static/documents/life-lessons-learnt-campaign-teaching.pdf
       file_type: PDF
       file_size: 270KB
       published_at: 7 April 2022
@@ -17,7 +41,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Be the career change report summary
-      file_path: media/documents/be-the-career-change.pdf
+      file_path: static/documents/be-the-career-change.pdf
       file_type: PDF
       file_size: 244KB
       published_at: 13 January 2022
@@ -25,7 +49,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Bring it report summary
-      file_path: media/documents/bringit-report.pdf
+      file_path: static/documents/bringit-report.pdf
       file_type: PDF
       file_size: 258KB
       published_at: 18 November 2021
@@ -33,7 +57,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Breakthrough moments report summary
-      file_path: media/documents/breakthrough-moments.pdf
+      file_path: static/documents/breakthrough-moments.pdf
       file_type: PDF
       file_size: 274KB
       published_at: 29 July 2021
@@ -41,7 +65,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the My favourite subject report summary
-      file_path: media/documents/my-favourite-subject.pdf
+      file_path: static/documents/my-favourite-subject.pdf
       file_type: PDF
       file_size: 266KB
       published_at: 20 May 2021
@@ -49,7 +73,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Decade dilemmas report summary
-      file_path: media/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf
+      file_path: static/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf
       file_type: PDF
       file_size: 754KB
       published_at: 19 January 2021
@@ -57,7 +81,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the career aspirations and what it takes to teach survey
-      file_path: media/documents/it-takes-you-to-teach.pdf
+      file_path: static/documents/it-takes-you-to-teach.pdf
       file_type: PDF
       file_size: 764KB
       published_at: 23 September 2020
@@ -65,7 +89,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the appreciation for teachers survey
-      file_path: media/documents/thank-a-teacher.pdf
+      file_path: static/documents/thank-a-teacher.pdf
       file_type: PDF
       file_size: 754KB
       published_at: 20 May 2020
@@ -73,7 +97,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Millennial Career Crossroads report summary
-      file_path: media/documents/millenial-career-crossroads.pdf
+      file_path: static/documents/millenial-career-crossroads.pdf
       file_type: PDF
       file_size: 752KB
       published_at: 7 January 2020
@@ -81,7 +105,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the career change conundrum survey
-      file_path: media/documents/career-conundrum.pdf
+      file_path: static/documents/career-conundrum.pdf
       file_type: PDF
       file_size: 460KB
       published_at: 4 September 2019
@@ -89,7 +113,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the switching careers survey
-      file_path: media/documents/career-change-research.pdf
+      file_path: static/documents/career-change-research.pdf
       file_type: PDF
       file_size: 450KB
       published_at: 3 January 2019
@@ -97,7 +121,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the perceptions of influence survey
-      file_path: media/documents/perceptions-of-influence.pdf
+      file_path: static/documents/perceptions-of-influence.pdf
       file_type: PDF
       file_size: 450KB
       published_at: 14 November 2018
@@ -105,7 +129,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the careers survey
-      file_path: media/documents/career-survey-summary.pdf
+      file_path: static/documents/career-survey-summary.pdf
       file_type: PDF
       file_size: 424KB
       published_at: 29 November 2017
@@ -114,13 +138,31 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the soft messaging survey
-      file_path: media/documents/soft-messaging.pdf
+      file_path: static/documents/soft-messaging.pdf
       file_type: PDF
       file_size: 459KB 
       published_at: 10 November 2016
 keywords:
   - Research
 ---
+
+## Student lessons shape lives: exploring the life “lessons” teachers have learnt from their students
+
+Kindred Agency commissioned research company OnePoll to carry out a survey, on behalf of Get Into Teaching, exploring the ‘life lessons’ teachers say they have learnt from the interactions with their students. The purpose was to gain insights into the fulfilment and personal growth opportunities a career in teaching can offer.
+
+$lessons-shape-lives$
+
+## Proud Parents: exploring the sense of pride parents derive from their child’s career
+
+Kindred Agency commissioned research company OnePoll to carry out a survey on behalf of Get Into Teaching exploring the views of parents of children aged 18 and over. The purpose was to gain insights into the sense of pride they feel as a result of their child’s career achievements and how they would feel if they were in a role considered to be giving something back to society.
+
+$proud-parents$
+
+## Career Countdown: exploring how students and recent graduates are feeling about taking their next steps
+
+Kindred Agency commissioned research company Censuswide to carry out a survey on behalf of Get Into Teaching exploring the views of final year university students and recent graduates. The purpose was to gain insights into how this cohort feel when it comes to making decisions about their future career and what factors are influencing them.
+
+$career-countdown$
 
 ## Life Lessons: exploring the broader life lessons from people’s school days
 

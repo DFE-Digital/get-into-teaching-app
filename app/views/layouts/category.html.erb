@@ -1,35 +1,37 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
+  <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
+    <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <%= render HeaderComponent.new do |c| %>
-      <%= c.hero(@front_matter) %>
-    <% end %>
+    <%= main_tag(class: "category") do %>
+      <%= render Content::HeroComponent.new(@front_matter) %>
 
-    <main class="category" id="main-content">
-      <section class="container category__cards">
+      <section class="container category__cards inset main-section">
         <%= tag.nav(aria: { label: "#{@page.title} navigation" }, class: "category__nav-cards") do %>
-          <% Pages::Navigation.find(@page.path).children.each do |c| %>
-            <%= link_to(c.path, class: "category__nav-card") do %>
-              <div class="category__nav-card--content">
-                <%= tag.h2(c.title) %>
-
-                <%= tag.p(c.description) %>
-              </div>
-
-              <div class="category__nav-card--icon"></div>
-            <% end %>
-          <% end %>
+          <ul class="inset">
+            <%= render(Categories::CardComponent.with_collection(ungrouped_categories(@page.path))) %>
+          </ul>
         <% end %>
-      </div>
-    </main>
+      </section>
+
+      <% grouped_categories(@page.path).each do |title, pages| %>
+        <section class="container category__cards main-section">
+          <%= tag.h2(title, id: title.parameterize, class: "heading--box-blue") %>
+          <%= tag.nav(aria: { label: "#{title} category" }, class: "category__nav-cards inset") do %>
+            <ul class="inset">
+              <%= render(Categories::CardComponent.with_collection(pages, heading_tag: "h3")) %>
+            </ul>
+          <% end %>
+        </section>
+      <% end %>
+    <% end %>
 
     <% @front_matter["content"]&.each do |partial| %>
       <%= render(partial) %>
     <% end %>
 
-    <%= render FooterComponent.new(talk_to_us: false, feedback: false) %>
+    <%= render FooterComponent.new(talk_to_us: false) %>
   <% end %>
 </html>

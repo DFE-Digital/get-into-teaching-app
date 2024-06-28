@@ -1,0 +1,25 @@
+<% content_for(:back_link) do %>
+  <%= render BackComponent.new(path: step_path(wizard.previous_key)) if wizard.previous_key %>
+<% end %>
+
+<% complete_button_text ||= "Complete sign up" %>
+
+<%= tag.section(class: "registration__#{section_class}") do %>
+  <%= tag.div(class: "registration__#{section_class}--container") do %>
+    <%= govuk_form_for current_step, url: step_path do |f| %>
+      <%= f.govuk_error_summary %>
+
+      <%= render current_step.key, current_step: current_step, f: f %>
+
+      <% if wizard.step_can_proceed? %>
+        <% button_text = safe_html_format(wizard.last_step? ? "#{complete_button_text} <span></span>" : "Next step <span></span>") %>
+        <%= f.button button_text, class: "call-to-action-button button", data: { "prevent-double-click": true, "disable-with": button_text } %>
+      <% end %>
+
+      <% if content_for?(:form_help) %>
+        <div class="form-help"><%= yield(:form_help) %></div>
+      <% end %>
+    <% end %>
+    <%= yield %>
+  <% end %>
+<% end %>

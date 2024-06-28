@@ -1,19 +1,31 @@
 .logo-wrapper {
   z-index: 0;
   overflow: hidden;
-  top: 8px;
-  padding-bottom: 20px;
+  top: 0;
+  left: -20px;
+  position: relative;
+  padding-bottom: 5px;
   display: flex;
   align-items: center;
 
-  @include mq($from: tablet) {
-    overflow: visible;
-    padding-bottom: 0;
-    position: relative;
+  @include mq($until: narrow) {
+    // for very small screens, don't offset the logo
+    left: 1px;
+  }
+
+  @include mq($from: narrow, $until: tablet)  {
+    left: 0;
   }
 
   @include mq($from: tablet) {
-    top: -23px;
+    overflow: visible;
+    top: -26px;
+    margin-bottom: -16px;
+    padding-bottom: 0;
+  }
+
+  @include mq($from: desktop) {
+    left: -10px;
   }
 }
 
@@ -21,44 +33,48 @@
   display: block;
   overflow-x: clip;
 
+  @media (forced-colors: active) {
+    forced-color-adjust: none;
+  }
+
   a {
     text-decoration: none;
-    display: block;
 
     &:focus {
-      &:before {
+      &::before {
         content: "";
         display: block;
-        background: $yellow;
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
       }
+
+      picture:last-child {
+        display: block;
+      }
+
+      picture:first-child {
+        display: none;
+      }
+    }
+
+    picture:last-child {
+      display: none;
     }
   }
 
   &__image {
-    @include rotated-block;
-    background-color: $green-dark;
-    z-index: 1000;
-
-    // position the logo slightly off the left of the page
-    // and make sure there's a slight gap beneath the extra nav
-    // and that the DfE logo's suitably far away
-    margin: 1em 1em 0 -.5em;
-
     img {
-      padding: 1em;
-      transform: rotate(3deg);
+      margin-top: 12px;
 
-      // use the margin to set the size/aspect ratio of the logo's background
+      @include mq($until: narrow) {
+        max-width: 100%;
+      }
 
-      // from the styleguide the ratios around the checkbox in the logo should be (using the checkbox for scale)
-      // - border-at-edge-of-screen: 1.5 (the left side on the main header logo)
-      // - border-closest-to-centre-of-screen: 1 (the right side on the main header logo)
-      // - border-below: 1.5
-      margin: .3em 1.5em .2em 2em;
+      @include mq($from: narrow, $until: mobile) {
+        width: 100%;
+      }
     }
   }
 }

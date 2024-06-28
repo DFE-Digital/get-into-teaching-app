@@ -28,7 +28,7 @@ module Events
     end
 
     def type_name
-      t("event_types.#{type}.name.singular")
+      t("event_types.#{type}.name.singular", **Value.data)
     end
 
     def type_color
@@ -71,7 +71,7 @@ module Events
     end
 
     def is_online_event_category?
-      type == EventType.online_event_id
+      type == Crm::EventType.online_event_id
     end
   end
 end

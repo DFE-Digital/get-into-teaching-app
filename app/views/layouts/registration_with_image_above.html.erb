@@ -5,26 +5,28 @@
   <% end %>
 
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
-
+  <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
     <%= render HeaderComponent.new %>
+    <%= yield(:back_link) %>
 
-    <main role="main" id="main-content" class="registration-with-image-above">
-
-      <%= image_pack_tag("content/event-signup/birmingham-event-1.jpg", alt: "A busy train to teach event with banners and attendees chatting with advisers") %>
+    <%= main_tag(class: "main-section registration-with-image-above") do %>
+      <% if @event.is_online %>
+        <%= render Content::ImageComponent.new(path: "static/images/content/event-signup/event-regional-online.jpg") %>
+      <% else %>
+        <%= render Content::ImageComponent.new(path: "static/images/content/event-signup/event-regional.jpg") %>
+      <% end %>
 
       <div class="event-info">
-        <%= render Events::DesktopSignupInfo.new(@event) %>
-        <%= render Events::MobileSignupInfo.new(@event) %>
+        <%= render Events::DesktopSignupInfoComponent.new(@event) %>
+        <%= render Events::MobileSignupInfoComponent.new(@event) %>
       </div>
 
       <section class="feature registration">
         <%= yield %>
       </section>
-    </main>
+    <% end %>
 
-    <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
-    <%= javascript_pack_tag 'govuk/frontend', 'data-turbolinks-track': 'reload', async: true %>
+    <%= render FooterComponent.new(talk_to_us: false) %>
   <% end %>
 </html>

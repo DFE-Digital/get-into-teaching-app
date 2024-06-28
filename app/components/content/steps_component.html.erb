@@ -1,0 +1,20 @@
+<%= list_tag(class: :steps) do %>
+  <% steps.each.with_index(1) do |(title, contents), i| %>
+    <%= tag.li(class: "step", id: "step-#{i}") do %>
+      <header class="step__header">
+        <div class="step__number">
+          <% if numeric %>
+            <%= i %>
+          <% else %>
+            <%= image_pack_tag("static/images/icon-tick.svg", **helpers.image_alt_attribs_for_text("")) %>
+          <% end %>
+        </div>
+        <%= tag.h2(title, class: "heading-m") %>
+      </header>
+
+      <div class="step__content">
+        <%= render(partial: contents[:partial]) %>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>

@@ -4,10 +4,10 @@ date: "2021-04-06"
 author: Anna Shirley
 images:
   anna_shirley:
-    path: "media/images/content/blog/anna-shirley.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/anna-shirley.jpg"
+    path: "static/images/content/blog/anna-shirley.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/anna-shirley.jpg"
 description: |-
-  From logistics to presentation, Sheffield SCITT communications manager Anna Shirley shares her top tips for video interviews. 
+  From logistics to presentation, Sheffield SCITT communications manager Anna Shirley shares her top tips for video interviews.
 keywords:
   - applications
   - interviews
@@ -23,7 +23,7 @@ $anna_shirley$
 
 While some teacher training providers may be returning to face-to-face interviews, others are continuing to ask that interviews take place by video call. 
 
-The [Sheffield SCITT](https://www.sheffieldscitt.org.uk/) has done virtual interviews this year, and we have put together a guide on how to smash a video interview!
+The [Sheffield SCITT (school-centred initial teacher training)](https://www.sheffieldscitt.org.uk/) has done virtual interviews this year, and we have put together a guide on how to smash a video interview!
 
 ## Logistics
 

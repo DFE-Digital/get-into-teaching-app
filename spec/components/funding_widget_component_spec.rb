@@ -6,9 +6,9 @@ RSpec.describe FundingWidgetComponent, type: :component do
 
   let(:component) { described_class.new(funding_widget, path) }
 
-  before { render_inline(component) }
-
   describe "rendering the component" do
+    before { render_inline(component) }
+
     it "builds a funding_widget form" do
       expect(page).to have_css("form[action='#{path}'][method='get']")
     end
@@ -53,21 +53,39 @@ RSpec.describe FundingWidgetComponent, type: :component do
       end
 
       it "has additional info for extra support" do
-        expect(page).to have_css("p", text: "You may be able to get extra support")
+        expect(page).to have_css("p", text: "Talk to a")
       end
     end
   end
 
   describe "custom content" do
-    context "when subject is mathematics" do
-      let(:funding_widget) { FundingWidget.new(subject: "mathematics") }
+    let(:funding_widget) { FundingWidget.new(subject: "maths") }
+
+    context "when subject is maths" do
+      before { render_inline(component) }
 
       it "contains subject-specific funding content" do
-        expect(page).to have_text("Scholarships of £26,000 and bursaries of £24,000 are available for trainee maths teachers.")
+        expect(page).to have_text("Scholarships of £30,000 and bursaries of £28,000 are available for trainee maths teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible).")
       end
 
       it "contains subject-specific next steps content" do
         expect(page).to have_text("If you have a passion for maths")
+      end
+    end
+
+    context "when the content contains %{variables}" do
+      before do
+        I18n.with_locale(:test) do
+          render_inline(component)
+        end
+      end
+
+      it "substitutes the variable for a value in sub heading" do
+        expect(page).to have_text("Test Subject - example salary: £41k")
+      end
+
+      it "substitutes the variable for a value in funding content" do
+        expect(page).to have_text("If you have a passion for testing example date: 1st September 2024")
       end
     end
   end

@@ -13,14 +13,14 @@ end
 RSpec.feature "content pages check", type: :feature, content: true do
   include_context "with stubbed types api"
 
-  let(:other_paths) { %w[/ /blog /search /tta-service /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
+  let(:other_paths) { %w[/ /feedback /blog /blog/post_invalid_tag /search /teacher-training-adviser/sign_up/identity /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
   let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}, %r{/test}] }
 
   before do
     # we don't care about the contents of the events pages here, just
     # that they exist.
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-      .to(receive(:search_teaching_events_grouped_by_type))
+      .to(receive(:search_teaching_events))
       .and_return([])
   end
 
@@ -56,7 +56,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
         sp.body
           .css("a")
           .map { |fragment| fragment["href"] }
-          .select { |href| href.start_with?("#") }
+          .select { |href| href&.start_with?("#") }
           .reject { |href| href == "#" }
           .each do |href|
             # we need to use XPath here because Nokogiri doesn't like selectors
@@ -74,6 +74,23 @@ RSpec.feature "content pages check", type: :feature, content: true do
           .css("a")
           .map { |fragment| fragment["href"] }
           .each { |href| expect(href).not_to match(%r{https?://(localhost|127\.0\.0\.1|::1)}) }
+      end
+    end
+
+    scenario "ensure all YouTube videos are emebedded using the YouTubeVideoComponent" do
+      @stored_pages.each do |sp|
+        sp.body.css("iframe[src*='youtube']").each do |iframe|
+          expect(iframe.parent).to have_css(".youtube-video")
+        end
+      end
+    end
+
+    scenario "there are no absolute adviser URL links" do
+      @stored_pages.each do |sp|
+        sp.body
+          .css("a")
+          .map { |fragment| fragment["href"] }
+          .each { |href| expect(href.to_s).not_to include("adviser-getintoteaching.education.gov.uk") }
       end
     end
 
@@ -101,16 +118,23 @@ RSpec.feature "content pages check", type: :feature, content: true do
       end
     end
 
+    scenario "all filenames are lower case hyphenated" do
+      @stored_pages.each do |sp|
+        expect(sp.path).to match(/^[a-z0-9\-\/]+$/)
+      end
+    end
+
     scenario "the internal links reference existing pages" do
       paths = other_paths.concat(@stored_pages.map(&:path))
       @stored_pages.each do |sp|
         sp.body
           .css("a")
           .map { |fragment| fragment["href"] }
+          .reject(&:nil?)
           .reject { |href| href.start_with?(Regexp.union("http:", "https:", "tel:", "mailto:")) }
           .reject { |href| href.start_with?("/blog/tag") }
-          .reject { |href| href.match?("media/") }
-          .reject { |href| href.match?(Regexp.union("privacy-policy", "events", "javascript")) }
+          .reject { |href| href.match?("static/") }
+          .reject { |href| href.match?(Regexp.union("privacy-policy", "events", "javascript", "browse")) }
           .select { |href| href.start_with?(Regexp.union("/", /\w+/)) }
           .uniq
           .each do |href|
@@ -118,7 +142,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
 
             uri = URI.parse(href)
 
-            expect(paths).to include(uri.path)
+            expect(paths).to(include(uri.path), "invalid path #{href} on page #{sp.path}")
 
             if (fragment = uri.fragment)
               expect(@stored_pages_by_path[uri.path].body).to(have_css("##{fragment}"), "invalid link on #{sp.path} - #{href}, (missing fragment #{fragment})")
@@ -179,7 +203,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
 
     scenario "the child pages are represented by navigation cards" do
       Pages::Navigation.find(path).children.each do |child|
-        expect(page).to have_link(child.title, href: child.path, class: "category__nav-card")
+        expect(page).to have_link(child.title, href: child.path, class: "link--black")
         expect(page).to have_content(child.description)
       end
     end

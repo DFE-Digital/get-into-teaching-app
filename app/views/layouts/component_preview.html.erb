@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
+  <% @front_matter ||= {} %>
   <%= render "sections/head" %>
   <body>
-  <%= yield %>
+    <%= render "sections/govuk_javascript" %>
+    <%= yield %>
   </body>
 </html>

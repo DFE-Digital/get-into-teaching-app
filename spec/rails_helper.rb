@@ -1,6 +1,10 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
+#
+# NB: This is a heavy-weight file. Only include it in your specs if you need the
+# full Rails infrastructure for your test. Otherwise use the light-weight
+# spec_helper instead (which is included here)
 require "spec_helper"
-require_relative "capybara_driver_helper"
+
 ENV["RAILS_ENV"] ||= "test"
 require File.expand_path("../config/environment", __dir__)
 # Prevent database truncation if the environment is production
@@ -8,10 +12,14 @@ unless Rails.env.development? || Rails.env.test?
   abort("The Rails environment is running in #{Rails.env} mode!")
 end
 
+# Add additional requires below this line. Rails is not loaded until this point!
 require "rspec/rails"
 require "active_record"
 require "view_component/test_helpers"
-# Add additional requires below this line. Rails is not loaded until this point!
+require "dfe/analytics/rspec/matchers"
+
+require_relative "capybara_driver_helper"
+require "dfe/analytics/testing"
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -48,7 +56,7 @@ RSpec.configure do |config|
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
-  # config.use_transactional_fixtures = true
+  config.use_transactional_fixtures = true
 
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
@@ -73,10 +81,10 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   config.include ViewComponent::TestHelpers, type: :component
   config.include ActiveSupport::Testing::TimeHelpers
-  config.include SpecHelpers::Events
   config.include SpecHelpers::BasicAuth
   config.include SpecHelpers::Integration, type: :feature
-  config.include Webpacker::Helper, type: :helper
+  config.include SpecHelpers::Contract, type: :feature
+  config.include Shakapacker::Helper, type: :helper
 
   config.verbose_retry = true
   config.default_retry_count = 2
@@ -86,9 +94,19 @@ RSpec.configure do |config|
   config.exceptions_to_retry = [Net::ReadTimeout]
 
   config.before(:suite) do
-    Webpacker.compile
+    Shakapacker.compile
+  end
+
+  config.before do
+    # If we don't mock this out for some pages it can result
+    # in FastImage trying to make an external web request (even
+    # though its actually just to our test host). Returning nil
+    # is the same as FastImage failing to determine the size.
+    allow(FastImage).to receive(:size).and_return(nil)
   end
 end
+
+DfE::Analytics::Testing.fake!
 
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|

@@ -57,15 +57,6 @@ describe Prometheus::Metrics do
     it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
   end
 
-  describe "app_cache_read_total" do
-    subject { registry.get(:app_cache_read_total) }
-
-    it { is_expected.not_to be_nil }
-    it { is_expected.to have_attributes(docstring: "A counter of cache reads") }
-    it { expect { subject.get(labels: %i[key hit]) }.not_to raise_error }
-    it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
-  end
-
   describe "app_page_speed_score_performance" do
     subject { registry.get(:app_page_speed_score_performance) }
 
@@ -100,6 +91,24 @@ describe Prometheus::Metrics do
     it { is_expected.to have_attributes(docstring: "A counter of cookie consent") }
     it { expect { subject.get(labels: %i[non_functional marketing]) }.not_to raise_error }
     it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
+  end
+
+  describe "app_tta_feedback_visit_total" do
+    subject { registry.get(:app_tta_feedback_visit_total) }
+
+    it { is_expected.not_to be_nil }
+    it { is_expected.to have_attributes(docstring: "A counter of feedback visit responses") }
+    it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
+    it { expect { subject.get(labels: %i[topic]) }.not_to raise_error }
+  end
+
+  describe "app_tta_feedback_rating_total" do
+    subject { registry.get(:app_tta_feedback_rating_total) }
+
+    it { is_expected.not_to be_nil }
+    it { is_expected.to have_attributes(docstring: "A counter of feedback rating responses") }
+    it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
+    it { expect { subject.get(labels: %i[rating]) }.not_to raise_error }
   end
 
   def expected_preset_labels

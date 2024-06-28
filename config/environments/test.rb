@@ -51,7 +51,10 @@ Rails.application.configure do
     "beta-getintoteaching.education.gov.uk" => "getintoteaching.education.gov.uk",
   }
 
-  config.x.integration_host = "get-into-teaching-app-test.london.cloudapps.digital"
+  config.x.integration_host = "get-into-teaching-app-test.test.teacherservices.cloud"
   config.x.integration_credentials = { username: ENV["HTTP_USERNAME"], password: ENV["HTTP_PASSWORD"] }
   config.x.mailsac_api_key = ENV["MAILSAC_API_KEY"]
+
+  # Turn off dfe analytics during tests to speed them up a smidgen
+  config.x.dfe_analytics = false
 end

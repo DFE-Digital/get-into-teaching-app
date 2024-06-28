@@ -1,23 +1,14 @@
 ---
-title: "Accessibility information"
+title: "Accessibility statement"
 image: false
 description: |-
-  This website is run by the Department for Education. It is designed to be
-  used by as many people as possible. The text should be clear and easy to
-  understand.
+  This accessibility statement applies to the Get into Teaching website, which is run by the Department for Education.
 date: "2020-11-06"
 backlink: "../"
-calls_to_action:
-  dac-git-report:
-    name: attachment
-    arguments:
-      text: Read the full Digital Accessibility Centre Report
-      file_path: media/documents/dac_git_report.pdf
-      file_type: PDF
-      published_at: 01 September 2020
 keywords:
   - Accessibility
   - Accessibility information
+  - Accessibility statement
   - PDF
   - Braille
   - Audio Recording
@@ -26,60 +17,50 @@ keywords:
   - DAC
 ---
 
-This service is run by the Department for Education (DfE).
+This accessibility statement applies to the Get into Teaching website.
 
-We want as many people as possible to be able to use this service. For example, that means you should be able to:
+This website is run by the Department for Education. We want as many people as possible to be able to use this website.
+
+For example, that means you should be able to:
 
 * change colours, contrast levels and fonts
 * zoom in up to 300% without the text spilling off the screen
-* navigate most of the service using just a keyboard and speech recognition software
-* listen to most of the service using a screen reader (including the most recent versions of [JAWS](https://www.freedomscientific.com/products/software/jaws/), [NVDA](https://www.nvaccess.org/) and [VoiceOver](https://www.apple.com/uk/accessibility/mac/vision/))
+* navigate most of the website using just a keyboard
+* navigate most of the website using speech recognition software
+* listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
 
-We've also made the service text as simple as possible to understand.
+We’ve also made the website text as simple as possible to understand.
 
-For advice on making your device easier to use if you have a disability visit [AbilityNet](https://mcmw.abilitynet.org.uk/).
+[AbilityNet](https://mcmw.abilitynet.org.uk/) has advice on making your device easier to use if you have a disability.
 
-You can also find [accessibility advice on GOV.UK](https://www.gov.uk/help/accessibility).
+## Feedback and contact information
 
-## Service accessibility
+If you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille:
 
-We are not aware of any parts of our service which are not accessible.
+* email [getintoteaching.helpdesk@education.gov.uk](mailto:getintoteaching.helpdesk@education.gov.uk)
 
-## What to do if you cannot access parts of this service
+We’ll consider your request and get back to you within 5 working days.
 
-[Email us](mailto:getintoteaching.helpdesk@education.gov.uk) if you need information on this service in any of the following formats:
+## Reporting accessibility problems with this website
 
-* accessible PDF
-* audio recording
-* braille, easy read or large print format email
-
-We'll consider your request and get back to you within 5 working days.
-Reporting accessibility problems with this service
-
-We're always looking to improve the accessibility of this service.
-
-If you find any problems that are not listed on this page or think we're not meeting accessibility requirements email getintoteaching.helpdesk@education.gov.uk
+We’re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we’re not meeting accessibility requirements, contact our helpdesk by emailing [getintoteaching.helpdesk@education.gov.uk](mailto:getintoteaching.helpdesk@education.gov.uk).
 
 ## Enforcement procedure
 
-The Equality and Human Rights Commission (EHRC) is responsible for enforcing the 'accessibility regulations' - officially known as the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
+The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’).
 
-If you're not happy with how we respond to your complaint, contact the Equality Advisory and Support Service (EASS).
+If you’re not happy with how we respond to your complaint, [contact the Equality Advisory and Support Service](https://www.equalityadvisoryservice.com/).
 
-## Technical information about this service's accessibility
+## Technical information about this website’s accessibility
 
-DfE is committed to making its service accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
+The Department for Education is committed to making its websites accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
 
-This service is fully compliant with the Web Content Accessibility Guidelines version 2.1 AA standard.
+## Compliance status
 
-### Navigation and accessing information
+This website is fully compliant with the WCAG version 2.1 AA standard.
 
-We have not identified any problems relating to interactive tools and transactions.
+## Preparation of this accessibility statement
 
-## How we tested this service
+This statement was prepared on 29 January 2024. It was last reviewed on 29 January 2024.
 
-This service was last tested on 01 September 2020. The test was carried out by the [Digital Accessibility Centre (DAC)](https://digitalaccessibilitycentre.org/).
-
-We tested our whole service platform.
-
-$dac-git-report$
+This website was last tested independently on 25 September 2023. The test was carried out by Digital Accessibility Centre (DAC) Limited.

@@ -57,15 +57,8 @@ describe('Google Tag Manager', () => {
           expect.objectContaining({
             originalLocation: 'https://localhost/path?utm=tag',
           }),
-        ])
+        ]),
       );
-    });
-
-    it('appends the GTM script', () => {
-      const scriptTag = document.querySelector(
-        "script[src^='https://www.googletagmanager.com/gtm.js?id=ABC-123']"
-      );
-      expect(scriptTag).not.toBeNull();
     });
   });
 
@@ -92,6 +85,13 @@ describe('Google Tag Manager', () => {
       run();
     });
 
+    it('does not append the GTM script', () => {
+      const scriptTag = document.querySelector(
+        "script[src^='https://www.googletagmanager.com/gtm.js?id=ABC-123']",
+      );
+      expect(scriptTag).toBeNull();
+    });
+
     it('sends GTM defaults with all cookies denied', () => {
       expect(window.gtag).toHaveBeenCalledWith('consent', 'default', {
         analytics_storage: 'denied',
@@ -100,12 +100,22 @@ describe('Google Tag Manager', () => {
     });
 
     describe('when cookies are accepted', () => {
-      it('updates GTM of all cookie preferences', () => {
+      beforeEach(() => {
         new CookiePreferences().setCategories({ marketing: true });
+      });
+
+      it('updates GTM of all cookie preferences', () => {
         expect(window.gtag).toHaveBeenCalledWith('consent', 'update', {
           analytics_storage: 'denied',
           ad_storage: 'granted',
         });
+      });
+
+      it('appends the GTM script', () => {
+        const scriptTag = document.querySelector(
+          "script[src^='https://www.googletagmanager.com/gtm.js?id=ABC-123']",
+        );
+        expect(scriptTag).not.toBeNull();
       });
     });
   });
@@ -122,6 +132,13 @@ describe('Google Tag Manager', () => {
         analytics_storage: 'granted',
         ad_storage: 'denied',
       });
+    });
+
+    it('appends the GTM script', () => {
+      const scriptTag = document.querySelector(
+        "script[src^='https://www.googletagmanager.com/gtm.js?id=ABC-123']",
+      );
+      expect(scriptTag).not.toBeNull();
     });
   });
 });

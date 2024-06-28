@@ -1,0 +1,28 @@
+<% @page_title = "You told us you have an equivalent degree and live overseas" %>
+
+<%= f.govuk_fieldset legend: { text: "You told us you have an equivalent degree and live overseas", tag: "h1" } do %>
+
+<% if f.object.class.callback_booking_quotas.any? %>
+  <p>We need to call you to check your degree. When we call, our adviser will ask for more details about the qualification you have.</p>
+
+  <p>We will call you between 8.30am and 5.30pm (UK time).</p>
+
+  <p>Or, you can call us on 0800 389 2500.<p>
+
+  <%= f.govuk_phone_field :address_telephone, width: 20, prefix_text: "+", value: f.object.address_telephone_value %>
+
+  <%= f.govuk_collection_select :time_zone,
+    f.object.filtered_time_zones,
+    :name,
+    ->(option) { option.to_s },
+    options: { prompt: "Please select" }
+  %>
+
+  <%= f.hidden_field :callback_offered, value: true %>
+<% else %>
+  <p>We need to speak to you to check your degree.</p>
+  <p>Call us on <%= link_to("0800 389 2500", "tel://08003892500") %> between 8.30am and 5.30pm (UK time).</p>
+  <p>When you call, our adviser will ask for more details about the qualification you have.</p>
+  <%= f.hidden_field :callback_offered, value: false %>
+<% end %>
+<% end %>

@@ -12,6 +12,8 @@
 #
 # /path/to/image--tablet.png
 class ResponsiveImages
+  attr_reader :doc
+
   BREAKPOINTS = {
     mobile: "500px",
     tablet: "768px",
@@ -19,20 +21,18 @@ class ResponsiveImages
     wide: "1500px",
   }.freeze
 
-  def initialize(page)
-    @page = page
+  def initialize(doc)
+    @doc = doc
   end
 
-  def html
-    doc = Nokogiri::HTML(@page)
-
+  def process
     doc.css("picture source").each do |source|
       BREAKPOINTS.each do |breakpoint, max_width|
         prepend_responsive_source(source, breakpoint, max_width)
       end
     end
 
-    doc.to_html(encoding: "UTF-8", indent: 2)
+    doc
   end
 
 private

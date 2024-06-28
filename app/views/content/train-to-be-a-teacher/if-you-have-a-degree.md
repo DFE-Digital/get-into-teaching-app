@@ -1,64 +1,95 @@
 ---
-title: "Ways to train if you have a degree"
-heading: "If you have a degree"
+title: "Train to teach if you have a degree or are studying for one"
+heading: "Train to teach if you have a degree or are studying for one"
+subcategory: Postgraduate teacher training
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:
-    Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
-    Improve your subject knowledge : "/improve-your-subject-knowledge"
-    Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
-promo_content:
+    Is teaching right for me? : "/is-teaching-right-for-me"
+    Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
+    What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
+    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
+    Improve your subject knowledge : "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
+external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
-    - content/train-to-be-a-teacher/promos/events-near-you
+promo_content:
+    - content/train-to-be-a-teacher/promos/adviser-promo-degree
 navigation: 20.05
-navigation_description: Find out how to get QTS if you have a degree or you’re studying for one now. There are different options you can choose.
+navigation_title: If you have or are studying for a degree
+navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one.
+inset_text:
+  international-content:
+    text: If you’re not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
+    color: grey
+keywords:
+  - becoming a teacher
+  - teacher training
+  - school direct (salaried)
+  - pgce
+  - qts
+  - Teach First
+  - Postgraduate teaching apprenticeship
+
 ---
 
-If you have a degree, or you’re currently studying for one, there are different routes you can take to getting [qualified teacher status](/what-is-qts) (QTS). You need QTS to work in the majority of schools in England including state maintained primary, secondary and special schools.
+You need a bachelor's degree (in any subject) to teach in primary, secondary and special schools in England.
 
-We also have information for [international students who want to apply for teacher training](/train-to-teach-in-england-as-an-international-student).
+For secondary teacher training, your provider will want to make sure you have a good knowledge of the subject you’re applying to teach.
 
-## Study for a PGCE or PGDE
-You can study for [a PGCE or PGDE](/what-is-a-pgce) (an academic qualification) with QTS at a university. Most of the time you will be in schools on placement but there is some academic learning. Courses typically take one year but you may be able to study part-time.
+If you have a degree, you can do postgraduate teacher training to get qualified teacher status (QTS).
 
-Fees for full-time courses are usually around £9,250 but you can:
+Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time.
 
-- get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
-- [apply for a student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
+$international-content$
 
-Fees are higher for international students.
+## Teacher training course providers
 
-You should check the fees for a particular course you are interested in with the course provider.
+Your postgraduate teacher training course might be provided by: 
 
-## Training with a school or groups of schools (fee paying)
-There are different programmes that focus on training you while you teach in a school:
+* a university (sometimes referred to as university-led training) 
+* a school or group of schools (sometimes referred to as school-led training, or an apprenticeship) 
+* [Teach First](https://www.teachfirst.org.uk/) (a charitable organisation)
 
-- School-centred initial teacher training (SCITT)
-- School Direct (fee-funded)
+Some providers are ‘accredited’ – this means they've been approved by the Department for Education (DfE) to run teacher training courses.
 
-SCITT programmes are delivered by a network of schools, providing school-based training. You won’t be paid a salary while you are training and will pay fees.
+Providers who have not been accredited can also run courses if they're in a partnership with an organisation that has. For example, you might see a school running a course that has a university as their ‘accredited provider’.
 
-School Direct (fee-funded) programmes are delivered by groups of schools in collaboration with a SCITT or university. The content and structure of a School Direct course is broadly similar to a SCITT course and they don't pay you a salary.
+## What does teacher training involve?
 
-Some SCITT and School Direct (fee-funded) programmes give you a PGCE or PGDE in addition to QTS. Courses typically take one year but you may be able to study part-time.
+Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time. 
 
-Fees are usually around £9,250 but you can:
+All teacher training involves mostly classroom placements with some theoretical learning.  
 
-- get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
-- [apply for a student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
+This means that even if your course provider is a university, you will still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a university. 
 
-You should check the fees for a particular course you are interested in with the course provider.
+The important thing to remember is that regardless of your course provider, all teacher training involves around 120 days of school placements in at least 2 schools.
 
-## Earn a salary while you train
-These courses are usually only suitable for specific candidates, for example, some are for people who already have relevant teaching experience or are already working as unqualified teachers. You will be able to find out more about eligibility from the training provider. You may be able to study part-time.
+You can [find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
 
-### School Direct (salaried)
+## Where will my training take place?
 
-If you have the right experience, School Direct (salaried) give you QTS with many courses also offering a PGCE or PGDE. It takes a year to complete.
+Because all teacher training must involve placements in at least 2 schools, your training will not all happen in the same place. Some courses may also have a separate location for your theoretical learning. 
 
-[Find postgraduate training to be a teacher, including School Direct (salaried) courses](https://www.gov.uk/find-postgraduate-teacher-training-courses)
+Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get an idea.
 
-### Teach First
-Teach First is a 2-year programme leading to a PGDE and QTS. At the end of your first year, you will have QTS. The PGDE is awarded at the end of the second year.
+## How much does teacher training cost?
 
-[Find out more about Teach First](https://www.teachfirst.org.uk/)
+Postgraduate teacher training course fees are around £9,250 per year (or higher for non-UK citizens). 
+
+You can apply for tuition fee and maintenance loans, even if you already have a student loan. 
+
+You may be eligible for extra financial support if:
+
+* you train to teach certain subjects
+* you're disabled
+* you're a parent or carer
+* you're a veteran
+* you're eligible for a salaried teacher training course
+
+[Find out how to fund your training](/funding-and-support).
+
+## How to choose your teacher training course
+
+There are some differences in postgraduate teacher training courses. 
+
+[Find out how to decide on the best course for you](/train-to-be-a-teacher/how-to-choose-your-teacher-training-course).

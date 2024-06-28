@@ -1,34 +1,25 @@
+<%= render(partial: "sections/gtm_fallback") %>
+
 <div id="skiplink-container">
   <div>
-    <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+    <a href="#main-content" class="skiplink" data-module="govuk-skip-link">Skip to main content</a>
   </div>
 </div>
 
-<% if Rails.application.config.x.covid_banner %>
-<div>
-  <div class="covid" data-controller="banner" data-banner-name-value="Covid">
-    <div class="limit-content-width">
-      <span class="covid__header"><a href="/covid-19">Find out how coronavirus is affecting teacher training</a></span>
-      <a href="#" data-action="click->banner#hide" class="covid__close"><span class="visually-hidden">Hide this message</span></a>
-    </div>
-  </div>
-</div>
-<% end %>
-
-<header class="limit-content-width" data-controller="navigation">
+<header class="limit-content-width" data-controller="navigation" data-module="govuk-header">
   <%= render Header::ExtraNavigationComponent.new(search_input_id: "searchbox__input--desktop") %>
   <%= render Header::LogoComponent.new %>
   <div class="menu-button" id="mobile-navigation-menu-button">
-    <%= tag.button(class: "menu-button__button", data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
-      <span class="menu-button__icon"></span>
+    <%= link_to(browse_path, class: "menu-button__button hidden-when-js-enabled") do %>
       <span class="menu-button__text">Menu</span>
     <% end %>
+    <%= tag.button(class: "menu-button__button hidden-when-js-disabled", id: 'menu-toggle', aria: { expanded: false, controls: 'primary-navigation'}, data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
+      <span class="menu-button__text">Menu</span>
+      <span class="menu-button__icon"></span>
+    <% end %>
   </div>
-  <%= render Header::NavigationComponent.new(extra_resources: { "/events" => "Teacher training events", "/blog" => "Blog" }) %>
+  <%= render Header::NavigationComponent.new(front_matter: front_matter) %>
 </header>
-
-<%= above_hero %>
-<%= hero %>
 
 <% if breadcrumbs %>
   <%= render Header::BreadcrumbComponent.new %>

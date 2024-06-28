@@ -3,41 +3,6 @@
   font-style: normal;
 }
 
-h1 {
-  @include font;
-  @include font-size("large");
-
-  // Multi-line padded highlight effect without horizontal
-  // gabs between lines.
-  &.yellow {
-    margin: 0 1rem;
-
-    span {
-      box-decoration-break: clone;
-      padding: 0.15em 0;
-      background: $yellow-dark;
-      box-shadow: 1rem 0 0 $yellow-dark, -1rem 0 0 $yellow-dark;
-    }
-  }
-}
-
-h2 {
-  @include font;
-  @include font-size("small");
-  line-height: 1.25;
-}
-
-h3 {
-  @include font;
-  @include font-size("small");
-  font-weight: bold;
-}
-
-h4 {
-  @include font;
-  @include font-size("small");
-}
-
 p,
 ul,
 ol,
@@ -51,74 +16,10 @@ dt,
 }
 
 li {
-  margin-bottom: 0.3em;
+  margin-bottom: .5em;
 
   &:last-child {
     margin-bottom: 0;
-  }
-}
-
-a {
-  @include font;
-  color: $black;
-  line-height: 1.5;
-
-  &:focus {
-    outline: 3px solid transparent;
-    color: $black;
-    background-color: $yellow;
-    box-shadow: 0 -2px $yellow, 0 4px $black;
-    text-decoration: none;
-  }
-}
-
-.git-link {
-  @include font;
-  font-weight: bold;
-  @include font-size("small");
-  color: $black;
-  text-decoration: none;
-  display: inline-block;
-
-  &:hover {
-    color: inherit;
-    text-decoration: underline;
-  }
-
-  i {
-    margin-left: 4px;
-    vertical-align: middle;
-  }
-
-  &:after {
-    @extend .fas;
-    @extend .fa-chevron-right;
-
-    content: '';
-    width: 12px;
-    height: 19px;
-    margin-left: 8px;
-  }
-
-  &.white {
-    color: $white;
-
-    &:focus {
-      color: $black;
-    }
-  }
-
-  &.underline {
-    text-decoration: underline;
-    text-underline-offset: .2em;
-
-    &:hover, &:focus {
-      text-decoration: none;
-    }
-
-    &:after {
-      content: none;
-    }
   }
 }
 
@@ -129,4 +30,3 @@ a {
 .extra-bottom-margin {
   margin-bottom: 3em;
 }
-

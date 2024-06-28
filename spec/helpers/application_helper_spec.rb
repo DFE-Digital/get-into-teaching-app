@@ -1,14 +1,42 @@
 require "rails_helper"
 
 describe ApplicationHelper do
-  describe "#analytics_body_tag" do
-    subject { analytics_body_tag(data: { timefmt: "24", controller: "something" }, class: "homepage") { tag.hr } }
+  describe "#body_tag" do
+    before { allow(ENV).to receive(:[]).with("APP_ASSETS_URL").and_return("asset-url") }
 
-    it { is_expected.not_to have_css "body[data-controller=gtm]" }
-    it { is_expected.to have_css "body[data-controller='something gtm-consent']" }
+    subject { body_tag(data: { timefmt: "24", controller: "something" }, class: "homepage") { tag.hr } }
+
+    it { is_expected.to have_css "body[data-controller='something link table']" }
     it { is_expected.to have_css "body[data-timefmt=24]" }
-    it { is_expected.to have_css "body.homepage" }
+    it { is_expected.to have_css "body[data-link-target=content]" }
+    it { is_expected.to have_css "body[data-link-asset-url-value=asset-url]" }
+    it { is_expected.to have_css "body.homepage.govuk-template__body.govuk-body" }
+    it { is_expected.to have_css "body#body" }
     it { is_expected.to have_css "body hr" }
+  end
+
+  describe "#main_tag" do
+    subject { main_tag(class: "homepage") { tag.hr } }
+
+    it { is_expected.to have_css "main[id=main-content]" }
+    it { is_expected.to have_css "main.homepage" }
+    it { is_expected.to have_css "body hr" }
+  end
+
+  describe "#suffix_title" do
+    subject { suffix_title(title) }
+
+    context "when no title is provided" do
+      let(:title) { nil }
+
+      it { is_expected.to eq("Get Into Teaching GOV.UK") }
+    end
+
+    context "when a title is provided" do
+      let(:title) { "My Title" }
+
+      it { is_expected.to eq("My Title | Get Into Teaching GOV.UK") }
+    end
   end
 
   describe "#new_gtm_enabled?" do
@@ -57,6 +85,10 @@ describe ApplicationHelper do
 
     it "returns an empty span with the default classes" do
       expect(subject).to have_css("span.fas.fa-#{icon_name}")
+    end
+
+    it "hides the icon from screen readers" do
+      expect(subject).to have_css("span[aria-hidden=true]")
     end
 
     context "with FA styles" do
@@ -145,67 +177,9 @@ describe ApplicationHelper do
     end
   end
 
-  describe "#google_optimize_script" do
-    before do
-      allow(ENV).to receive(:[]).and_call_original
-      allow(ENV).to receive(:[]).with("GOOGLE_OPTIMIZE_ID") { id }
-      described_class.class_variable_set(:@@google_optimize_config, { paths: paths })
-    end
-
-    after do
-      described_class.class_variable_set(:@@google_optimize_config, nil)
-    end
-
-    subject { google_optimize_script }
-
-    context "when the GOOGLE_OPTIMIZE_ID is not set" do
-      let(:id) { nil }
-
-      context "when there are experiment paths" do
-        let(:paths) { ["/experiment"] }
-
-        it { is_expected.to be_nil }
-      end
-
-      context "when there are no experiment paths" do
-        let(:paths) { [] }
-
-        it { is_expected.to be_nil }
-      end
-    end
-
-    context "when the GOOGLE_OPTIMIZE_ID is set" do
-      let(:id) { "ABC-123" }
-
-      context "when there are experiment paths" do
-        let(:paths) { ["/experiment"] }
-
-        it "renders the Google Optimize script" do
-          regex = %r{
-            <script\s
-            src="/packs-test/v1/js/google_optimize.*\.js"\s
-            data-turbolinks-track="reload"\s
-            data-google-optimize-id="ABC-123"\s
-            data-google-optimize-paths="\[&quot;/experiment&quot;\]"
-            ></script>
-          }x
-
-          is_expected.to match(regex)
-        end
-      end
-
-      context "when there are no experiment paths" do
-        let(:paths) { [] }
-
-        it { is_expected.to be_nil }
-      end
-    end
-  end
-
-  describe "#google_optimize_config" do
-    subject { google_optimize_config }
-
-    it { is_expected.to eq({ paths: [] }) }
+  describe "#human_boolean" do
+    it { expect(human_boolean(true)).to eq("Yes") }
+    it { expect(human_boolean(false)).to eq("No") }
   end
 
   describe "#sentry_dsn" do
@@ -223,6 +197,20 @@ describe ApplicationHelper do
 
         it { is_expected.to be_nil }
       end
+    end
+  end
+
+  describe "#content_footer_kwargs" do
+    let(:front_matter) { {} }
+
+    subject { content_footer_kwargs(front_matter) }
+
+    it { is_expected.to eq({ talk_to_us: true }) }
+
+    context "when overriden in the front_matter" do
+      let(:front_matter) { { talk_to_us: false, other: false } }
+
+      it { is_expected.to eq({ talk_to_us: false }) }
     end
   end
 end

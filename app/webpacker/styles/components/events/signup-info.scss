@@ -9,14 +9,6 @@
     @include mq($from: desktop) {
       display: block;
     }
-
-    h4 {
-      .caption {
-        display: block;
-        font-size: .8em;
-        color: $grey-dark;
-      }
-    }
   }
 
   &.mobile {

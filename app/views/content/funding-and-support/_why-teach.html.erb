@@ -1,0 +1,26 @@
+<section class="why-teach" aria-label="Find out what teaching is really like">
+  <div class="why-teach__container">
+    <div class="why-teach__content">
+      <%= render Content::HeadingComponent.new(
+        heading: "Find out what teaching is really like",
+        tag: :h2,
+      ) %>
+
+      <p>
+        If you’re not sure if teaching is the right career for you,
+        you can find out more about what being a teacher is all about.
+      </p>
+
+      <ul>
+        <li><%= link_to("Experience life in the classroom", "/is-teaching-right-for-me/get-school-experience") %></li>
+        <li><%= link_to("Read teachers' stories", "/blog") %></li>
+      </ul>
+    </div>
+
+    <div class="why-teach__image">
+      <% "static/images/content/hero-images/0011.jpg".tap do |path| %>
+        <%= image_pack_tag(path, **image_alt_attribs(path)) %>
+      <% end %>
+    </div>
+  </div>
+</section>

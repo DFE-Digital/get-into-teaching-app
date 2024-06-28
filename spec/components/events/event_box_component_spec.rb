@@ -36,7 +36,7 @@ describe Events::EventBoxComponent, type: "component" do
     end
 
     context "when the event is online, with no associated building (not virtual)" do
-      let(:event) { build(:event_api, :train_to_teach_event, :online) }
+      let(:event) { build(:event_api, :get_into_teaching_event, :online) }
 
       specify "it's marked as being online" do
         expect(page).to have_css(".event-box__footer__meta", text: online_heading)
@@ -44,7 +44,7 @@ describe Events::EventBoxComponent, type: "component" do
     end
 
     context "when the event has moved online (virtual)" do
-      let(:event) { build(:event_api, :train_to_teach_event, :virtual) }
+      let(:event) { build(:event_api, :get_into_teaching_event, :virtual) }
 
       specify "it's marked as being moved online" do
         expect(page).to have_css(".event-box__footer__meta", text: moved_online_heading)
@@ -61,15 +61,15 @@ describe Events::EventBoxComponent, type: "component" do
     end
   end
 
-  context "with Train to Teach category offline event" do
-    let(:event) { build :event_api, :train_to_teach_event }
+  context "with Get Into Teaching category offline event" do
+    let(:event) { build :event_api, :get_into_teaching_event }
 
     specify %(the event type name should be displayed) do
-      expect(page).to have_content("Train to Teach event")
+      expect(page).to have_content("Get Into Teaching event")
     end
 
     specify %(the box should have the right type of divider) do
-      expect(page).to have_css(%(.event-box__divider.event-box__divider--train-to-teach-event))
+      expect(page).to have_css(%(.event-box__divider.event-box__divider--get-into-teaching-event))
     end
   end
 
@@ -93,11 +93,11 @@ describe Events::EventBoxComponent, type: "component" do
     end
   end
 
-  context "with Train to Teach category online event" do
-    let(:event) { build :event_api, :train_to_teach_event, :virtual }
+  context "with Get Into Teaching category online event" do
+    let(:event) { build :event_api, :get_into_teaching_event, :virtual }
 
     specify %(the event type name should be displayed) do
-      expect(page).to have_content("Train to Teach event")
+      expect(page).to have_content("Get Into Teaching event")
     end
 
     specify %(the event should also be described as a 'Event has moved online') do
@@ -109,7 +109,7 @@ describe Events::EventBoxComponent, type: "component" do
     end
 
     specify %(the box should have the right type of divider) do
-      expect(page).to have_css(%(.event-box__divider.event-box__divider--train-to-teach-event))
+      expect(page).to have_css(%(.event-box__divider.event-box__divider--get-into-teaching-event))
     end
   end
 end

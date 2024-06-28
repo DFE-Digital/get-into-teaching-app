@@ -2,13 +2,11 @@ name: owasp
 
 inputs:
       environment:
-        description: The environment to deploy to Development/Test/Production/Review/Speed/UR etc
+        description: The environment to deploy to Development/Test/Production/Review etc
         required: true
       AZURE_CREDENTIALS:
         required: true
       KEY_VAULT:
-        required: true
-      ARM_ACCESS_KEY:
         required: true
       GITHUB_TOKEN:
         required: true
@@ -18,18 +16,26 @@ runs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v4
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
             creds: ${{ inputs.AZURE_CREDENTIALS }}
 
-      - uses: DfE-Digital/keyvault-yaml-secret@v1
-        id:  keyvault-yaml-secret
+      - name: Fetch secrets from key vault
+        uses: azure/CLI@v2
+        id: keyvault-yaml-secret
         with:
-          keyvault: ${{ inputs.KEY_VAULT}}
-          secret: INFRA-KEYS
-          key: SLACK-WEBHOOK, HTTP-PASSWORD, HTTP-USERNAME
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ inputs.KEY_VAULT}}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+            HTTP_PASSWORD=$(az keyvault secret show --name "HTTP-PASSWORD" --vault-name "${{ inputs.KEY_VAULT}}" --query "value" -o tsv)
+            echo "::add-mask::$HTTP_PASSWORD"
+            echo "HTTP_PASSWORD=$HTTP_PASSWORD" >> $GITHUB_OUTPUT
+            HTTP_USERNAME=$(az keyvault secret show --name "HTTP-USERNAME" --vault-name "${{ inputs.KEY_VAULT}}" --query "value" -o tsv)
+            echo "::add-mask::$HTTP_USERNAME"
+            echo "HTTP_USERNAME=$HTTP_USERNAME" >> $GITHUB_OUTPUT
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -38,20 +44,20 @@ runs:
         id:   app_name
         shell: bash
         run: |
-             if [[ "${{ inputs.environment }}" == "Production" ]] ; then
-                 rval="${{env.PAAS_APPLICATION_NAME}}-prod.${{env.DOMAIN}}"
-             elif [[ "${{ inputs.environment }}" == "Test" ]] ; then
-                 rval="${{env.PAAS_APPLICATION_NAME}}-test.${{env.DOMAIN}}"
-             elif [[ "${{ inputs.environment }}" == "Development" ]] ; then
-                 rval="${{env.PAAS_APPLICATION_NAME}}-dev.${{env.DOMAIN}}"
+             if [[ "${{ inputs.environment }}" == "production" ]] ; then
+                 rval="${{env.AKS_APPLICATION_NAME}}-production.${{env.DOMAIN}}"
+             elif [[ "${{ inputs.environment }}" == "test" ]] ; then
+                 rval="${{env.AKS_APPLICATION_NAME}}-test.test.${{env.DOMAIN}}"
+             elif [[ "${{ inputs.environment }}" == "development" ]] ; then
+                 rval="${{env.AKS_APPLICATION_NAME}}-development.test.${{env.DOMAIN}}"
              fi
-             echo ::set-output name=SCAN::$rval
+             echo "SCAN=${rval}" >> $GITHUB_OUTPUT
 
       - name: ZAP Scan
-        uses: zaproxy/action-full-scan@v0.3.0
+        uses: zaproxy/action-full-scan@v0.10.0
         with:
           token: ${{ inputs.GITHUB_TOKEN }}
-          docker_name: 'owasp/zap2docker-stable'
+          docker_name: 'ghcr.io/zaproxy/zaproxy:stable'
           target: 'https://${{ steps.keyvault-yaml-secret.outputs.HTTP-USERNAME }}:${{ steps.keyvault-yaml-secret.outputs.HTTP-PASSWORD }}@${{steps.app_name.outputs.SCAN}}/'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
@@ -61,6 +67,6 @@ runs:
         uses: rtCamp/action-slack-notify@master
         env:
            SLACK_COLOR: ${{env.SLACK_FAILURE}}
-           SLACK_MESSAGE: 'Pipeline Failure carrying out OWASP Testing on https://${{env.PAAS_APPLICATION_NAME}}-${{ inputs.environment }}.${{env.DOMAIN}}/'
+           SLACK_MESSAGE: 'Pipeline Failure carrying out AKS OWASP Testing on https://${{steps.app_name.outputs.SCAN}}/'
            SLACK_TITLE: 'Failure: OWSAP Testing has failed on ${{ inputs.environment }}'
-           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
+           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}

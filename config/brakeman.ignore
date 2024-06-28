@@ -9,7 +9,7 @@
       "file": "app/views/events/show.html.erb",
       "line": 2,
       "link": "https://brakemanscanner.org/docs/warning_types/dynamic_render_path/",
-      "code": "render(action => Sections::HeaderComponent.new(:title => GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id]).name, :image => \"media/images/events-hero-dt.jpg\"), {})",
+      "code": "render(action => Sections::HeaderComponent.new(:title => GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id]).name, :image => \"static/events-hero-dt.jpg\"), {})",
       "render_path": [
         {
           "type": "controller",

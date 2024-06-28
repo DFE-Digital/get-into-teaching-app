@@ -9,16 +9,33 @@
     text-decoration: none;
   }
 
-  .prev, .first {
-    padding-right: 8px;
+  .prev,
+  .first {
+    padding-right: 15px;
+
+    @include mq($until: mobile) {
+      padding-right: 12px;
+    }
   }
 
-  .next, .last {
-    padding-left: 8px;
+  .next,
+  .last {
+    padding-left: 15px;
+
+    @include mq($until: mobile) {
+      padding-left: 12px;
+    }
   }
 
-  .page a, .current, .gap {
+  .page a,
+  .current,
+  .gap {
     padding: 0 8px;
+    margin: 0 7px;
+
+    @include mq($until: mobile) {
+      margin: 0 4px;
+    }
   }
 
   .current {

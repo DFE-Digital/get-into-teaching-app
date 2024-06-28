@@ -6,7 +6,7 @@
   fullwidth: true
   hide_page_helpful_question: true
   subtitle: "Get information and support to help you become a teacher"
-  image: "media/images/content/hero-images/0012.jpg"
+  image: "static/images/content/hero-images/0012.jpg"
   content:
     - content/home/test_content
 ---

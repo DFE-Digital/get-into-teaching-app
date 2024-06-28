@@ -1,0 +1,9 @@
+<%= f.govuk_collection_radio_buttons :rating,
+                                     f.object.ratings,
+                                     :id,
+                                     :value,
+                                     legend: {
+                                       tag: 'h1',
+                                       text: "Overall, how satisfied were you with your experience",
+                                     }
+%>

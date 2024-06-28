@@ -1,18 +1,38 @@
-.steps {
+ol.steps {
+  &::before {
+    border-left: 6px dotted $black;
+  }
+}
+
+ul.steps {
+  .step__number {
+    img,
+    picture {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+ul.steps,
+ol.steps {
   position: relative;
-  margin: 0;
   box-sizing: border-box;
   list-style: none;
   padding: 0;
+  margin: 2.5em 0;
 
-  &:before {
+  @include mq($from: tablet) {
+    padding: 0;
+  }
+
+  &::before {
     content: "";
     width: 0;
-    height: calc(100% - 20px);
+    height: calc(100% - 47px);
     position: absolute;
     top: 20px;
     left: 37px;
-    border-left: 6px dotted $black;
     @include mq($until: tablet) {
       left: 27px;
     }
@@ -42,6 +62,8 @@
       font-size: 28px;
       background-color: $yellow;
       position: relative;
+      flex-shrink: 0;
+
       @include mq($until: tablet) {
         width: 60px;
         height: 60px;
@@ -52,24 +74,6 @@
     &__header {
       display: flex;
       align-items: center;
-
-      h2 {
-        margin: 0;
-        padding: 0;
-        @include font-size(large);
-        line-height: 1.25em;
-        width: calc(100% - 100px);
-        background: transparent;
-        color: $black;
-
-        @include mq($until: tablet) {
-          @include font-size(medium);
-        }
-
-        &:after {
-          display: none;
-        }
-      }
     }
 
     &__content {

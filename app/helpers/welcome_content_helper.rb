@@ -1,6 +1,11 @@
 module WelcomeContentHelper
+  GENERIC_VIDEO = {
+    filename: "welcome-guide-generic",
+    formats: %w[mp4 webm],
+  }.freeze
+
   MATHS = {
-    video: "welcome-guide-generic.webm",
+    video: GENERIC_VIDEO,
     story: {
       name: "Dimitra",
       job_title_and_location: "maths teacher, London",
@@ -28,7 +33,10 @@ module WelcomeContentHelper
   }.freeze
 
   SCIENCES = {
-    video: "welcome-guide-science.webm",
+    video: {
+      filename: "welcome-guide-science",
+      formats: %w[mp4 webm],
+    },
     story: {
       name: "Holly",
       job_title_and_location: "science teacher, Essex",
@@ -57,7 +65,7 @@ module WelcomeContentHelper
   }.freeze
 
   ENGLISH = {
-    video: "welcome-guide-generic.webm",
+    video: GENERIC_VIDEO,
     story: {
       name: "Laura",
       job_title_and_location: "English teacher, Doncaster",
@@ -85,7 +93,10 @@ module WelcomeContentHelper
   }.freeze
 
   MFL = {
-    video: "welcome-guide-mfl.webm",
+    video: {
+      filename: "welcome-guide-mfl",
+      formats: %w[mp4 webm],
+    },
     story: {
       name: "Tom",
       job_title_and_location: "Spanish teacher, Coventry",
@@ -113,7 +124,7 @@ module WelcomeContentHelper
   }.freeze
 
   GENERIC = {
-    video: "welcome-guide-generic.webm",
+    video: GENERIC_VIDEO,
     story: {
       name: "Abigail",
       job_title_and_location: "head of maths, Wigan",
@@ -139,8 +150,9 @@ module WelcomeContentHelper
     find_mapping(id).fetch(:quote)
   end
 
-  def subject_specific_video_path(id = welcome_guide_subject_id, prefix: "/videos/")
-    prefix + find_mapping(id).fetch(:video)
+  def subject_specific_video_paths(id = welcome_guide_subject_id, prefix: "/videos/")
+    video = find_mapping(id)[:video]
+    video[:formats].map { |ext| "#{prefix}#{video[:filename]}.#{ext}#t=0.1" }
   end
 
   def subject_category(id = welcome_guide_subject_id, downcase: true)
@@ -150,13 +162,13 @@ module WelcomeContentHelper
   end
 
   def featured_subject?(id)
-    mappings.key?(TeachingSubject.key_with_uuid(id))
+    mappings.key?(Crm::TeachingSubject.key_with_uuid(id))
   end
 
 private
 
   def find_mapping(id)
-    mappings.fetch(TeachingSubject.key_with_uuid(id)) { GENERIC }
+    mappings.fetch(Crm::TeachingSubject.key_with_uuid(id)) { GENERIC }
   end
 
   def mappings
@@ -168,7 +180,7 @@ private
       chemistry: SCIENCES,
       physics: SCIENCES,
       physics_with_maths: SCIENCES,
-      general_science: SCIENCES,
+      science: SCIENCES,
 
       french: MFL,
       german: MFL,

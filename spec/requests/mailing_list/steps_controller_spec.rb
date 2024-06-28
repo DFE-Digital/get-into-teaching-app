@@ -3,8 +3,8 @@ require "rails_helper"
 describe MailingList::StepsController, type: :request do
   include_context "with stubbed types api"
   include_context "with stubbed candidate create access token api"
-  include_context "with stubbed latest privacy policy api"
   include_context "with stubbed mailing list add member api"
+  include_context "with stubbed callback quotas api"
 
   it_behaves_like "a controller with a #resend_verification action" do
     def perform_request
@@ -67,7 +67,7 @@ describe MailingList::StepsController, type: :request do
         follow_redirect!
       end
 
-      it { is_expected.to redirect_to(mailing_list_step_path(:degree_status)) }
+      it { is_expected.to redirect_to(mailing_list_step_path(:returning_teacher)) }
 
       it "logs the response model (filtering sensitive attributes)" do
         filtered_json = { "candidateId" => "abc123", "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]" }.to_json

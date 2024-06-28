@@ -4,6 +4,7 @@ module Internal
     before_action :authorize_publisher, only: %i[approve withdraw]
     helper_method :event_type_name
 
+    EVENTS_PER_PAGE = 10
     DEFAULT_EVENT_TYPE = "provider".freeze
     NILIFY_ON_DUPLICATE = %i[id readable_id start_at end_at].freeze
 
@@ -18,8 +19,11 @@ module Internal
     end
 
     def show
-      @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      raise_not_found unless EventStatus.new(@event).pending?
+      raw_teaching_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+
+      raise_not_found unless Crm::EventStatus.new(raw_teaching_event).pending?
+
+      @event = TeachingEvents::EventPresenter.new(raw_teaching_event)
 
       @page_title = @event.name
     end
@@ -37,7 +41,7 @@ module Internal
 
     def approve
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      api_event.status_id = EventStatus.open_id
+      api_event.status_id = Crm::EventStatus.open_id
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       Rails.logger.info("#{@user.username} - publish - #{api_event.to_json}")
       redirect_to internal_events_path(
@@ -49,7 +53,7 @@ module Internal
 
     def withdraw
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      api_event.status_id = EventStatus.pending_id
+      api_event.status_id = Crm::EventStatus.pending_id
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       Rails.logger.info("#{@user.username} - withdrawn - #{api_event.to_json}")
       redirect_to internal_events_path(
@@ -60,14 +64,12 @@ module Internal
     end
 
     def open_events
-      events = GetIntoTeachingApiClient::TeachingEventsApi
-                 .new
-                 .search_teaching_events_grouped_by_type(quantity_per_type: 1_000,
-                                                         start_after: Time.zone.now.utc.beginning_of_day,
-                                                         status_ids: [EventStatus.open_id],
-                                                         type_ids: [event_types[:provider], event_types[:online]])
-
-      @open_events = events.map(&:teaching_events).flatten
+      @open_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
+        quantity: 1_000,
+        start_after: Time.zone.now.utc.beginning_of_day,
+        status_ids: [Crm::EventStatus.open_id],
+        type_ids: [event_types[:provider], event_types[:online]],
+      )
     end
 
     def create
@@ -116,32 +118,27 @@ module Internal
     end
 
     def load_pending_events(event_type)
-      search_results = GetIntoTeachingApiClient::TeachingEventsApi
-                         .new
-                         .search_teaching_events_grouped_by_type(
-                           events_search_params(event_type),
-                         )
+      api = GetIntoTeachingApiClient::TeachingEventsApi.new
+      results = api.search_teaching_events(events_search_params(event_type))
 
-      @group_presenter = Events::GroupPresenter.new(search_results)
-      @events = @group_presenter.paginated_events_of_type(
-        event_type,
-        params[:page],
-      )
+      @events = Kaminari.paginate_array(results, total_count: results.count)
+        .page(params[:page])
+        .per(EVENTS_PER_PAGE)
     end
 
     def events_search_params(event_type)
       {
         type_ids: [event_type],
-        status_ids: [EventStatus.pending_id],
+        status_ids: [Crm::EventStatus.pending_id],
         start_after: Time.zone.now.utc.beginning_of_day,
-        quantity_per_type: 1_000,
+        quantity: 1_000,
       }
     end
 
     def event_types
       {
-        provider: EventType.school_or_university_event_id,
-        online: EventType.online_event_id,
+        provider: Crm::EventType.school_or_university_event_id,
+        online: Crm::EventType.online_event_id,
       }
         .with_indifferent_access
         .freeze
@@ -163,7 +160,6 @@ module Internal
         :provider_website_url,
         :venue_type,
         :type_id,
-        :scribble_id,
       )
     end
 

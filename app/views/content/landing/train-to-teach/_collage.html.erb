@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="grey col">
+    <section class="col col-full-content">
+      <div class="inset">
+        <p class="col-720">
+        Whatever your qualifications and experience, find out how you can become a teacher through:
+        </p>
+
+        <%= render Content::ChecklistCollageComponent.new(
+          checklist: [
+            "postgraduate teacher training",
+            "undergraduate teacher training",
+            "an assessment only route"
+          ],
+          image_paths: [
+            "static/images/content/landing/train-to-teach.jpg",
+          ]
+        ) do %>
+        <% end %>
+      </div>
+    </section>
+  </div>
+</div>

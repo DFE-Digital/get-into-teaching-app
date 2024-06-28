@@ -1,6 +1,6 @@
 module MailingList
   module Steps
-    class AlreadySubscribed < ::DFEWizard::Step
+    class AlreadySubscribed < ::GITWizard::Step
       def skipped?
         !subscribed_to_mailing_list?
       end

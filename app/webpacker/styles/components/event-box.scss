@@ -24,12 +24,9 @@
   &__header {
     width: 100%;
     overflow: hidden;
+    padding: 0 0 .3em;
 
-    h2,
     h4 {
-      line-height: 1.3em;
-      margin: 0 0 .4em;
-
       a:hover &,
       a:focus,
       a:active {
@@ -64,7 +61,7 @@
     }
   }
 
-  &__divider--train-to-teach-event {
+  &__divider--get-into-teaching-event {
     background-color: $purple;
   }
 

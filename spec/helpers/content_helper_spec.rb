@@ -29,4 +29,18 @@ describe ContentHelper, type: :helper do
       end
     end
   end
+
+  describe "#display_content_errors?" do
+    before { allow(Rails.application.config.x).to receive(:display_content_errors).and_return(false) }
+
+    subject { display_content_errors? }
+
+    it { is_expected.to be(false) }
+
+    context "when config is set to true" do
+      before { allow(Rails.application.config.x).to receive(:display_content_errors).and_return(true) }
+
+      it { is_expected.to be(true) }
+    end
+  end
 end

@@ -11,17 +11,22 @@ RSpec.describe Content::CallToActionComponentInjector, type: :component do
         "icon" => "icon-person",
       },
     },
-    "chat online component" => "chat_online",
-    "next steps component" => "next_steps",
-    "story component" => {
-      "name" => "story",
+    "attachment component" => {
+      "name" => "attachment",
       "arguments" => {
-        "name" => "story component",
-        "link" => "/story/component",
-        "text" => "this is a story component",
-        "heading" => "story component heading",
-        "image" => "chat-online-card.jpg",
+        "text" => "Text",
+        "file_path" => "static/documents/bringit-report.pdf",
+        "file_type" => "PDF",
+        "published_at" => "01 September 2020",
       },
+    },
+    "chat component" => "chat",
+    "feature table component" => {
+      "name" => "feature_table",
+      "arguments" => [
+        { "Row 1" => "Value 1" },
+        { "title" => "Title" },
+      ],
     },
   }.each do |name, meta|
     describe "rendering a #{name}" do
@@ -40,6 +45,14 @@ RSpec.describe Content::CallToActionComponentInjector, type: :component do
 
     specify "raises an error describing bad config of the component" do
       expect { described_class.new(invalid_args).component }.to raise_error(ArgumentError, /call to action not properly configured/)
+    end
+  end
+
+  context "with non-Array/Hash arguments" do
+    let(:invalid_args) { { "arguments" => 123 } }
+
+    it "raises an ArgumentError" do
+      expect { described_class.new(invalid_args).component }.to raise_error(ArgumentError, "arguments should be an Array or Hash")
     end
   end
 end

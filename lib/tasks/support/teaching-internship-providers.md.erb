@@ -1,0 +1,54 @@
+---
+title: Teaching internships
+heading: "Get teaching experience with an internship"
+subcategory: School experience
+description: |-
+  Find paid teaching internships to gain new skills and see what classroom life is like. Explore chemistry, computing, languages, maths and physics internships.
+date: "2021-04-14"
+image: false
+promo_content:
+  - content/train-to-be-a-teacher/promos/eta-promo-internships
+backlink: /
+fullwidth: true
+navigation: 5.55
+navigation_title: Can I do a teaching internship?
+navigation_description: Earn from £300 per week and find out what it is really like in the classroom with a teaching internship.
+content:
+  - content/is-teaching-right-for-me/teaching-internship-providers/listing
+
+provider_groups:
+<% provider_groups.each do |group_name, providers| %>
+  <%= group_name %>:
+    providers:
+<% providers.each do |provider| %>
+      - header: <%= provider["header"].inspect %>
+        link: <%= provider["link"].inspect %>
+        applications: <%= provider["applications"].inspect %>
+        subjects: <%= provider["subjects"].inspect %>
+        areas: <%= provider["areas"].inspect %>
+        name: <%= provider["name"].inspect %>
+        email: <%= provider["email"].inspect %>
+<% end %>
+<% end %>
+
+keywords:
+  - teaching internship
+  - internship
+  - providers
+  - maths
+  - physics
+  - STEM
+  - paid internship
+  - TI
+  - T.I.
+  - summer internship
+  - T.I
+  - internships
+  - teaching intern
+  - intern
+  - interns
+  - teaching internship programme
+  - T.I. programme
+  - TI programme
+---
+$applications-open$

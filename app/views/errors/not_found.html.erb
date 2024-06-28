@@ -3,8 +3,14 @@
 
 <section class="container supplementary">
   <header>
-    <span class="caption">Error 404</span>
-    <h1><%= @page_title %></h1>
+    <%= render Content::HeadingComponent.new(
+      heading: @page_title,
+      heading_size: :xxl,
+      caption: "Error 404",
+      caption_size: :xxl,
+      caption_purple: false,
+      caption_bold: false
+    ) %>
   </header>
 
   <article class="text-content">
@@ -21,42 +27,41 @@
 
 <section>
   <h3>Explore the site<h3>
-  <aside class="blocks blocks--no-top-margin">
+  <aside class="blocks blocks--no-top-margin" role="complementary">
     <%= render Content::GenericBlockComponent.new(
       title: "Life as a teacher",
-      icon_image: "icon-school-black.svg",
+      icon_image: "static/images/icon-school-black.svg",
       icon_size: "40x30",
       classes: "blocks__directory"
     ) do %>
       <ul>
-        <li><a href="/my-story-into-teaching">Read teachers' stories</a></li>
+        <li><a href="/blog">Read teachers' stories</a></li>
         <li><a href="https://schoolexperience.education.gov.uk/">Experience a real school</a></li>
-        <li><a href="/salaries-and-benefits">Teachers' salaries</a></li>
+        <li><a href="/is-teaching-right-for-me/teacher-pay-and-benefits">Teachers' salaries</a></li>
       </ul>
     <% end %>
 
     <%= render Content::GenericBlockComponent.new(
       title: "Your training",
-      icon_image: "icon-doc-black.svg",
+      icon_image: "static/images/icon-doc-black.svg",
       icon_size: "40x35",
       classes: "blocks__directory"
     ) do %>
       <ul>
         <li><a href="/steps-to-become-a-teacher">How to become a teacher</a></li>
-        <li><a href="/ways-to-train">Explore ways to train</a></li>
-        <li><a href="/funding-your-training">Find your funding options</a></li>
-        <li><a href="/returning-to-teaching">Returning to teaching</a></li>
+        <li><a href="/train-to-be-a-teacher">Explore ways to train</a></li>
+        <li><a href="/funding-and-support">Find your funding options</a></li>
       </ul>
     <% end %>
 
     <%= render Content::GenericBlockComponent.new(
       title: "Take the next step",
-      icon_image: "icon-git-black.svg",
+      icon_image: "static/images/icon-git-black.svg",
       icon_size: "33x33",
       classes: "blocks__directory"
     ) do %>
       <ul>
-        <li><a href="/tta-service">Get an adviser</a></li>
+        <li><a href="/teacher-training-adviser/sign_up/identity">Get an adviser</a></li>
         <li><a href="/events">Go to an event</a></li>
         <li><a href="/mailinglist/signup/name">Sign up for personalised updates</a></li>
       </ul>

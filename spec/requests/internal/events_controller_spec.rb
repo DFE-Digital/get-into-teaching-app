@@ -6,32 +6,26 @@ describe Internal::EventsController, type: :request do
           :with_provider_info,
           :pending,
           :school_or_university_event,
-          :without_train_to_teach_fields,
+          :without_get_into_teaching_fields,
           name: "Pending provider event")
   end
   let(:pending_online_event) do
     build(:event_api,
           :pending,
           :online_event,
-          :without_train_to_teach_fields,
+          :without_get_into_teaching_fields,
           name: "Pending online event",
-          scribble_id: "/scribble/id/12345",
           building: nil)
   end
   let(:events) { [pending_provider_event, build(:event_api, name: "Open event"), pending_online_event] }
-  let(:provider_events_by_type) { group_events_by_type([pending_provider_event]) }
-  let(:online_events_by_type) { group_events_by_type([pending_online_event]) }
-  let(:publisher_username) { "publisher_username" }
-  let(:publisher_password) { "publisher_password" }
-  let(:author_username) { "author_username" }
-  let(:author_password) { "author_password" }
+  let(:provider_events) { [pending_provider_event] }
+  let(:online_events) { [pending_online_event] }
 
   before do
-    BasicAuth.class_variable_set(:@@credentials, nil)
-
-    allow(Rails.application.config.x).to receive(:http_auth) do
-      "#{publisher_username}|#{publisher_password}|publisher,#{author_username}|#{author_password}|author"
-    end
+    allow_basic_auth_users([
+      { username: "publisher", password: "password1", role: "publisher" },
+      { username: "author", password: "password2", role: "author" },
+    ])
   end
 
   describe "#index" do
@@ -39,9 +33,9 @@ describe Internal::EventsController, type: :request do
       context "when there are no pending #{event_type || default_event_type} events" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type).and_return([])
+            .to receive(:search_teaching_events).and_return([])
 
-          get internal_events_path, headers: generate_auth_headers(:author), params: { event_type: event_type }
+          get internal_events_path, headers: basic_auth_headers("author", "password2"), params: { event_type: event_type }
         end
 
         it "shows a no events banner" do
@@ -56,13 +50,13 @@ describe Internal::EventsController, type: :request do
 
       context "when there are pending #{event_params || default_event_type} events" do
         before do
-          get internal_events_path, headers: generate_auth_headers(:author), params: { event_type: event_type }
+          get internal_events_path, headers: basic_auth_headers("author", "password2"), params: { event_type: event_type }
         end
 
         it "shows pending #{event_params || default_event_type} events" do
           assert_response :success
           expect(response.body).not_to include("No pending events")
-          expect(response.body).to include("<h4>Pending #{event_type || default_event_type} event</h4>")
+          expect(response.body).to match(%r{<h4.*>Pending #{event_type || default_event_type} event</h4>})
           expect(response.body).not_to include("<h4>Open event</h4>")
         end
       end
@@ -76,28 +70,28 @@ describe Internal::EventsController, type: :request do
       include_examples "pending events", "provider" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type)
+            .to receive(:search_teaching_events)
                   .with({
-                    type_ids: [EventType.school_or_university_event_id],
-                    status_ids: [EventStatus.pending_id],
+                    type_ids: [Crm::EventType.school_or_university_event_id],
+                    status_ids: [Crm::EventStatus.pending_id],
                     start_after: Time.zone.now.utc.beginning_of_day,
-                    quantity_per_type: 1_000,
+                    quantity: 1_000,
                   })
-                  .and_return provider_events_by_type
+                  .and_return provider_events
         end
       end
 
       include_examples "pending events", "online" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type)
+            .to receive(:search_teaching_events)
                   .with({
-                    type_ids: [EventType.online_event_id],
-                    status_ids: [EventStatus.pending_id],
+                    type_ids: [Crm::EventType.online_event_id],
+                    status_ids: [Crm::EventStatus.pending_id],
                     start_after: Time.zone.now.utc.beginning_of_day,
-                    quantity_per_type: 1_000,
+                    quantity: 1_000,
                   })
-                  .and_return online_events_by_type
+                  .and_return online_events
         end
       end
 
@@ -107,7 +101,7 @@ describe Internal::EventsController, type: :request do
         include_examples "pending events", nil, default_event_type do
           before do
             allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-              .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+              .to receive(:search_teaching_events) { provider_events }
           end
         end
 
@@ -118,11 +112,11 @@ describe Internal::EventsController, type: :request do
     context "when publisher user type" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+          .to receive(:search_teaching_events) { provider_events }
       end
 
       it "shows a 'withdraw event' box" do
-        get internal_events_path, headers: generate_auth_headers(:publisher)
+        get internal_events_path, headers: basic_auth_headers("publisher", "password1")
 
         assert_response :success
         expect(response.body).to include("Edit a published event?")
@@ -132,11 +126,11 @@ describe Internal::EventsController, type: :request do
     context "when author user type" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+          .to receive(:search_teaching_events) { provider_events }
       end
 
       it "shows a 'withdraw event' box" do
-        get internal_events_path, headers: generate_auth_headers(:author)
+        get internal_events_path, headers: basic_auth_headers("author", "password2")
 
         assert_response :success
         expect(response.body).not_to include("Edit a published event?")
@@ -153,13 +147,13 @@ describe Internal::EventsController, type: :request do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event_to_get_readable_id) { pending_provider_event }
 
-          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
+          get internal_event_path(event_to_get_readable_id), headers: basic_auth_headers("author", "password2")
         end
 
         it "shows pending events" do
           assert_response :success
           expect(response.body).to include("This is a pending event")
-          expect(response.body).to include("<h1>Pending provider event</h1>")
+          expect(response.body).to match(%r{<h1.*>Pending provider event</h1>})
         end
       end
 
@@ -168,7 +162,7 @@ describe Internal::EventsController, type: :request do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event_to_get_readable_id) { events[1] }
 
-          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
+          get internal_event_path(event_to_get_readable_id), headers: basic_auth_headers("author", "password2")
         end
 
         it "redirects to not found" do
@@ -184,7 +178,7 @@ describe Internal::EventsController, type: :request do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event_to_get_readable_id) { pending_provider_event }
 
-          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
+          get internal_event_path(event_to_get_readable_id), headers: basic_auth_headers("author", "password2")
         end
 
         it "does not have a final submit button" do
@@ -200,7 +194,7 @@ describe Internal::EventsController, type: :request do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event_to_get_readable_id) { pending_provider_event }
 
-          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:publisher)
+          get internal_event_path(event_to_get_readable_id), headers: basic_auth_headers("publisher", "password1")
         end
 
         it "has a final submit button" do
@@ -219,7 +213,7 @@ describe Internal::EventsController, type: :request do
 
     shared_examples "new event" do |event_params|
       it "renders #{event_params || 'provider'} events form" do
-        get new_internal_event_path, headers: generate_auth_headers(:author), params: { event_type: event_params }
+        get new_internal_event_path, headers: basic_auth_headers("author", "password2"), params: { event_type: event_params }
 
         assert_response :success
         expect(response.body).to include("#{event_params ? event_params.capitalize : 'Provider'} event details")
@@ -238,14 +232,14 @@ describe Internal::EventsController, type: :request do
         end
 
         it "renders the events form with populated fields" do
-          get new_internal_event_path(duplicate: event_to_duplicate_readable_id), headers: generate_auth_headers(:author)
+          get new_internal_event_path(duplicate: event_to_duplicate_readable_id), headers: basic_auth_headers("author", "password2")
 
           assert_response :success
           expect(response.body).to include("value=\"Pending online event\"")
         end
 
         it "removes 'id', 'partial url', 'start at' and 'end at' values" do
-          get new_internal_event_path(duplicate: event_to_duplicate_readable_id), headers: generate_auth_headers(:author)
+          get new_internal_event_path(duplicate: event_to_duplicate_readable_id), headers: basic_auth_headers("author", "password2")
 
           assert_response :success
           expect(css_select("#internal_event_id").first[:value]).to be_nil
@@ -279,7 +273,7 @@ describe Internal::EventsController, type: :request do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
           .to receive(:get_teaching_event).with(event_to_edit_readable_id) { pending_provider_event }
 
-        get edit_internal_event_path(event_to_edit_readable_id), headers: generate_auth_headers(:author)
+        get edit_internal_event_path(event_to_edit_readable_id), headers: basic_auth_headers("author", "password2")
       end
 
       it "has an events form with populated fields" do
@@ -319,6 +313,7 @@ describe Internal::EventsController, type: :request do
                 is_virtual: nil,
                 video_url: nil,
                 message: nil,
+                region_id: nil,
                 web_feed_id: nil)
         end
 
@@ -337,11 +332,11 @@ describe Internal::EventsController, type: :request do
               .to receive(:upsert_teaching_event).with(expected_request_body)
 
             post internal_events_path,
-                 headers: generate_auth_headers(:author),
+                 headers: basic_auth_headers("author", "password2"),
                  params: { internal_event: params }
 
             expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
-            expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
+            expect(Rails.logger).to have_received(:info).with(%r{author - create/update - .*#{expected_request_body.id}.*})
           end
 
           context "when \"no venue\" is selected" do
@@ -358,11 +353,11 @@ describe Internal::EventsController, type: :request do
                 .to receive(:upsert_teaching_event).with(expected_request_body)
 
               post internal_events_path,
-                   headers: generate_auth_headers(:author),
+                   headers: basic_auth_headers("author", "password2"),
                    params: { internal_event: params }
 
               expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
-              expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
+              expect(Rails.logger).to have_received(:info).with(%r{author - create/update - .*#{expected_request_body.id}.*})
             end
           end
 
@@ -396,11 +391,11 @@ describe Internal::EventsController, type: :request do
                 .to receive(:upsert_teaching_event).with(expected_request_body)
 
               post internal_events_path,
-                   headers: generate_auth_headers(:author),
+                   headers: basic_auth_headers("author", "password2"),
                    params: { internal_event: params }
 
               expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
-              expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
+              expect(Rails.logger).to have_received(:info).with(%r{author - create/update - .*#{expected_request_body.id}.*})
             end
           end
         end
@@ -409,8 +404,7 @@ describe Internal::EventsController, type: :request do
       context "when online event" do
         let(:params) do
           attributes_for :internal_event,
-                         :online_event,
-                         type_id: EventType.online_event_id
+                         type_id: Crm::EventType.online_event_id
         end
         let(:expected_request_body) do
           build(:event_api,
@@ -423,11 +417,11 @@ describe Internal::EventsController, type: :request do
                 description: params[:description],
                 start_at: params[:start_at].getutc.floor,
                 end_at: params[:end_at].getutc.floor,
-                scribble_id: params[:scribble_id],
                 building: nil,
                 is_virtual: nil,
                 video_url: nil,
                 message: nil,
+                region_id: nil,
                 web_feed_id: nil)
         end
 
@@ -436,11 +430,11 @@ describe Internal::EventsController, type: :request do
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
           post internal_events_path,
-               headers: generate_auth_headers(:author),
+               headers: basic_auth_headers("author", "password2"),
                params: { internal_event: params }
 
           expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "online"))
-          expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
+          expect(Rails.logger).to have_received(:info).with(%r{author - create/update - .*#{expected_request_body.id}.*})
         end
       end
     end
@@ -463,7 +457,7 @@ describe Internal::EventsController, type: :request do
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = EventStatus.open_id
+            event.status_id = Crm::EventStatus.open_id
           end
         end
 
@@ -478,7 +472,7 @@ describe Internal::EventsController, type: :request do
               .to receive(:upsert_teaching_event).with(expected_request_body)
 
             put internal_approve_path,
-                headers: generate_auth_headers(:publisher),
+                headers: basic_auth_headers("publisher", "password1"),
                 params: params
 
             expect(response).to redirect_to(internal_events_path(
@@ -486,7 +480,7 @@ describe Internal::EventsController, type: :request do
                                               event_type: :provider,
                                               readable_id: event.readable_id,
                                             ))
-            expect(Rails.logger).to have_received(:info).with("#{publisher_username} - publish - #{event.to_json}")
+            expect(Rails.logger).to have_received(:info).with("publisher - publish - #{event.to_json}")
           end
         end
 
@@ -500,7 +494,7 @@ describe Internal::EventsController, type: :request do
               .to receive(:upsert_teaching_event).with(expected_request_body)
 
             put internal_approve_path,
-                headers: generate_auth_headers(:publisher),
+                headers: basic_auth_headers("publisher", "password1"),
                 params: params
 
             expect(response).to redirect_to(internal_events_path(
@@ -508,7 +502,7 @@ describe Internal::EventsController, type: :request do
                                               event_type: :provider,
                                               readable_id: event.readable_id,
                                             ))
-            expect(Rails.logger).to have_received(:info).with("#{publisher_username} - publish - #{event.to_json}")
+            expect(Rails.logger).to have_received(:info).with("publisher - publish - #{event.to_json}")
           end
         end
       end
@@ -518,7 +512,7 @@ describe Internal::EventsController, type: :request do
         let(:params) { { "id": event.id } }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = EventStatus.open_id
+            event.status_id = Crm::EventStatus.open_id
           end
         end
 
@@ -527,7 +521,7 @@ describe Internal::EventsController, type: :request do
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
           put internal_approve_path,
-              headers: generate_auth_headers(:publisher),
+              headers: basic_auth_headers("publisher", "password1"),
               params: params
 
           expect(response).to redirect_to(internal_events_path(
@@ -535,14 +529,14 @@ describe Internal::EventsController, type: :request do
                                             event_type: :online,
                                             readable_id: event.readable_id,
                                           ))
-          expect(Rails.logger).to have_received(:info).with("#{publisher_username} - publish - #{event.to_json}")
+          expect(Rails.logger).to have_received(:info).with("publisher - publish - #{event.to_json}")
         end
       end
     end
 
     context "when author user type" do
       it "responds with forbidden" do
-        put internal_approve_path, headers: generate_auth_headers(:author)
+        put internal_approve_path, headers: basic_auth_headers("author", "password2")
 
         expect(response).to have_http_status(:forbidden)
       end
@@ -566,7 +560,7 @@ describe Internal::EventsController, type: :request do
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = EventStatus.pending_id
+            event.status_id = Crm::EventStatus.pending_id
             event.building = nil
           end
         end
@@ -580,7 +574,7 @@ describe Internal::EventsController, type: :request do
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
           put internal_withdraw_path,
-              headers: generate_auth_headers(:publisher),
+              headers: basic_auth_headers("publisher", "password1"),
               params: params
 
           expect(response).to redirect_to(internal_events_path(
@@ -588,7 +582,7 @@ describe Internal::EventsController, type: :request do
                                             event_type: :provider,
                                             readable_id: event.readable_id,
                                           ))
-          expect(Rails.logger).to have_received(:info).with("#{publisher_username} - withdrawn - #{event.to_json}")
+          expect(Rails.logger).to have_received(:info).with("publisher - withdrawn - #{event.to_json}")
         end
       end
 
@@ -597,7 +591,7 @@ describe Internal::EventsController, type: :request do
         let(:params) { { "id": event.id } }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = EventStatus.pending_id
+            event.status_id = Crm::EventStatus.pending_id
           end
         end
 
@@ -606,7 +600,7 @@ describe Internal::EventsController, type: :request do
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
           put internal_withdraw_path,
-              headers: generate_auth_headers(:publisher),
+              headers: basic_auth_headers("publisher", "password1"),
               params: params
 
           expect(response).to redirect_to(internal_events_path(
@@ -614,14 +608,14 @@ describe Internal::EventsController, type: :request do
                                             event_type: :online,
                                             readable_id: event.readable_id,
                                           ))
-          expect(Rails.logger).to have_received(:info).with("#{publisher_username} - withdrawn - #{event.to_json}")
+          expect(Rails.logger).to have_received(:info).with("publisher - withdrawn - #{event.to_json}")
         end
       end
     end
 
     context "when author user type" do
       it "responds with forbidden" do
-        put internal_approve_path, headers: generate_auth_headers(:author)
+        put internal_approve_path, headers: basic_auth_headers("author", "password2")
 
         expect(response).to have_http_status(:forbidden)
       end
@@ -629,16 +623,16 @@ describe Internal::EventsController, type: :request do
   end
 
   describe "#open_events" do
-    let(:events_by_type) { group_events_by_type(pen) }
+    let(:events) { pen }
 
     context "when there a no events" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:search_teaching_events_grouped_by_type).and_return([])
+          .to receive(:search_teaching_events).and_return([])
       end
 
       it "shows 'no open events'" do
-        get internal_open_events_path, headers: generate_auth_headers(:author)
+        get internal_open_events_path, headers: basic_auth_headers("author", "password2")
 
         assert_response :success
         expect(response.body).to include("No open events")
@@ -653,22 +647,21 @@ describe Internal::EventsController, type: :request do
           build(:event_api, :school_or_university_event, name: "Open provider event", start_at: start_at),
         ]
       end
-      let(:events_by_type) { group_events_by_type(events) }
 
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:search_teaching_events_grouped_by_type)
+          .to receive(:search_teaching_events)
                 .with({
-                  type_ids: [EventType.school_or_university_event_id, EventType.online_event_id],
-                  status_ids: [EventStatus.open_id],
+                  type_ids: [Crm::EventType.school_or_university_event_id, Crm::EventType.online_event_id],
+                  status_ids: [Crm::EventStatus.open_id],
                   start_after: Time.zone.now.utc.beginning_of_day,
-                  quantity_per_type: 1_000,
+                  quantity: 1_000,
                 })
-                .and_return events_by_type
+                .and_return events
       end
 
       it "shows a table of events" do
-        get internal_open_events_path, headers: generate_auth_headers(:author)
+        get internal_open_events_path, headers: basic_auth_headers("author", "password2")
 
         assert_response :success
 

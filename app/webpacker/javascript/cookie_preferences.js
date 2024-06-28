@@ -39,7 +39,7 @@ export default class CookiePreferences {
 
   static clearCookie(key) {
     CookiePreferences.cookieDomains.forEach((domain) =>
-      Cookies.remove(key, { domain })
+      Cookies.remove(key, { domain }),
     );
   }
 
@@ -86,7 +86,7 @@ export default class CookiePreferences {
     this.readCookie();
 
     const newlyAllowed = this.allowedCategories.filter(
-      (category) => !existingAllowed.includes(category)
+      (category) => !existingAllowed.includes(category),
     );
 
     this.emitEvent(newlyAllowed);

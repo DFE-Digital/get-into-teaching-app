@@ -45,15 +45,17 @@ describe "Instrumentation", type: :request do
     end
   end
 
-  describe "cache_read.active_support" do
-    after { Rails.cache.read("test") }
+  describe "app.tta_feedback" do
+    after { UserFeedback.create(attributes_for(:user_feedback)) }
 
-    it "observes the :app_cache_read_total metric" do
-      metric = registry.get(:app_cache_read_total)
-      expect(metric).to receive(:increment).with(labels: {
-        key: instance_of(String),
-        hit: false,
-      }).once
+    it "increments the :app_tta_feedback_visit_total metric" do
+      metric = registry.get(:app_tta_feedback_visit_total)
+      expect(metric).to receive(:increment).with(labels: { topic: "website" }).once
+    end
+
+    it "increments the :app_tta_feedback_rating_total metric" do
+      metric = registry.get(:app_tta_feedback_rating_total)
+      expect(metric).to receive(:increment).with(labels: { rating: "very_satisfied" }).once
     end
   end
 

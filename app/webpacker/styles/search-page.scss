@@ -1,20 +1,8 @@
-.new_search {
-  button .fas {
-    margin-left: .4em;
-    vertical-align: bottom;
-  }
-}
-
 .search-result {
   display: block;
   text-decoration: none;
   color: initial;
   padding: .25em 0;
-
-  h3 {
-    margin-top: .2rem;
-    margin-bottom: 0;
-  }
 
   p {
     margin-top: 0;
@@ -45,9 +33,5 @@
   &:hover {
     color: $blue-dark;
     background: $grey;
-
-    h3 {
-      text-decoration: none;
-    }
   }
 }

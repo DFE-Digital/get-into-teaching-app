@@ -1,5 +1,6 @@
 class SitemapController < ApplicationController
   DEFAULT_LASTMOD = "2021-03-01".freeze
+  FUTURE_EVENTS_LIMIT = 100
 
   ALIASES = {
     "/home" => "/",
@@ -9,11 +10,9 @@ class SitemapController < ApplicationController
   # Ensure any index route (collection) has a trailing slash (representing the semantics of a directory).
   # This will keep it consistent with how canonical-rails behaves and ensure search engines are happy.
   OTHER_PATHS = %w[
-    /events/
-    /blog/
-    /event-categories/train-to-teach-events
-    /event-categories/online-q-as
-    /event-categories/school-and-university-events
+    /events
+    /blog
+    /events/about-get-into-teaching-events
     /mailinglist/signup/name
   ].freeze
 
@@ -47,6 +46,22 @@ private
   end
 
   def published_pages
+    content_pages.merge(event_pages)
+  end
+
+  def event_pages
+    events.map { |e| event_path(e.readable_id) }.index_with({})
+  end
+
+  def events
+    GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
+      start_after: Time.zone.now,
+      quantity: FUTURE_EVENTS_LIMIT,
+      type_ids: [Crm::EventType.get_into_teaching_event_id, Crm::EventType.online_event_id],
+    )
+  end
+
+  def content_pages
     ::Pages::Frontmatter.list.reject { |_path, fm| fm[:draft] }
   end
 

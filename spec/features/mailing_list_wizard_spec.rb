@@ -2,8 +2,9 @@ require "rails_helper"
 
 RSpec.feature "Mailing list wizard", type: :feature do
   include_context "with wizard data"
+  include_context "with stubbed callback quotas api"
 
-  let(:mailing_list_page_title) { "Get personalised guidance to your inbox, name step | Get Into Teaching" }
+  let(:mailing_list_page_title) { "Get tailored guidance in your inbox | Get Into Teaching GOV.UK" }
 
   scenario "Full journey as a new candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
@@ -13,11 +14,15 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_title(mailing_list_page_title)
 
-    expect(page).to have_text "Get personalised guidance to your inbox"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
     expect(page).not_to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
+
+    expect(page).to have_text "Are you already qualified to teach?"
+    choose "No"
+    click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
     choose "Not yet, I'm a first year student"
@@ -31,23 +36,13 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
-    choose "Yes"
-    fill_in "Your postcode", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    click_on "Complete sign up"
-
-    expect(page).to have_text "Accept privacy policy"
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    check "Yes"
+    expect(page).to have_text "If you give us your postcode"
+    fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
     expect(page).to have_title("You've signed up | Get Into Teaching")
-    expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
+    expect(page).to have_text "Test, you're signed up"
+    expect(page).to have_link("choose a time for us to give you a call")
   end
 
   scenario "Full journey as an on-campus candidate" do
@@ -59,11 +54,15 @@ RSpec.feature "Mailing list wizard", type: :feature do
     channel_id = channels.first.id
     visit mailing_list_steps_path({ id: :name, channel: channel_id, sub_channel: sub_channel_id })
 
-    expect(page).to have_text "Get personalised guidance to your inbox"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     # Error to ensure channel/sub-channel persists over page reload.
     click_on "Next step"
     expect(page).to have_text("Enter your full email address")
     fill_in_name_step
+    click_on "Next step"
+
+    expect(page).to have_text "Are you already qualified to teach?"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
@@ -78,17 +77,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
-    choose "Yes"
-    fill_in "Your postcode", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
+    expect(page).to have_text "If you give us your postcode"
+    fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
-    expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
+    expect(page).to have_text "Test, you're signed up"
 
     # We pass this to the BAM tracking pixel in GTM.
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
@@ -103,8 +96,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     channel_id = channels.first.id
     visit mailing_list_steps_path({ id: :name, channel: channel_id, sub_channel: sub_channel_id })
 
-    expect(page).to have_text("Get personalised guidance to your inbox")
+    expect(page).to have_text("Get personalised guidance on teacher training in your inbox")
     fill_in_name_step
+    click_on "Next step"
+
+    expect(page).to have_text "Are you already qualified to teach?"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
@@ -119,17 +116,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
-    choose "Yes"
-    fill_in "Your postcode", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
+    expect(page).to have_text "If you give us your postcode"
+    fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
     expect(page).to have_text "Test, you're signed up"
-    expect(page).to have_link("Continue your journey")
+    expect(page).to have_link("helpful guide")
 
     # We pass this to the BAM tracking pixel in GTM.
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
@@ -143,8 +135,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path({ id: :name, channel: "invalid", sub_channel: sub_channel_id })
 
-    expect(page).to have_text "Get personalised guidance to your inbox"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
+    click_on "Next step"
+
+    expect(page).to have_text "Are you already qualified to teach?"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
@@ -159,17 +155,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
-    choose "Yes"
-    fill_in "Your postcode", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
+    expect(page).to have_text "If you give us your postcode"
+    fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
-    expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
+    expect(page).to have_text "Test, you're signed up"
   end
 
   scenario "Full journey as an existing candidate" do
@@ -179,9 +169,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      preferred_teaching_subject_id: TeachingSubject.lookup_by_key(:maths),
-      consideration_journey_stage_id: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degree_status_id: OptionSet.lookup_by_key(:degree_status, :final_year),
+      preferred_teaching_subject_id: Crm::TeachingSubject.lookup_by_key(:maths),
+      consideration_journey_stage_id: Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
+      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :final_year),
       address_postcode: "TE57 1NG",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
@@ -189,12 +179,16 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised guidance to your inbox"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step(first_name: first_name)
     click_on "Next step"
 
     expect(page).to have_text "You're already registered with us"
     fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    click_on "Next step"
+
+    expect(page).to have_text "Are you already qualified to teach?"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
@@ -212,20 +206,29 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Which subject do you want to teach"
     expect(page).to have_select(
       "Which subject do you want to teach?",
-      selected: TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
+      selected: Crm::TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
     )
+    click_on "Complete sign up"
+
+    expect(page).to have_text "Joey, you're signed up"
+  end
+
+  scenario "Full journey as a candidate that is already qualified to teach" do
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+
+    visit mailing_list_steps_path
+
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
+    fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
+    expect(page).to have_text "Are you already qualified to teach?"
     choose "Yes"
     click_on "Next step"
 
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
-    click_on "Complete sign up"
-
-    expect(page).to have_text "#{first_name}, you're signed up"
-    expect(page).to have_text("We'll send your first email shortly")
+    expect(page).to have_text "We're sorry, but our emails are for people who are not already qualified to teach"
+    expect(page).not_to have_button("Next step")
   end
 
   scenario "Full journey as an existing candidate that resends the verification code" do
@@ -240,7 +243,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised guidance to your inbox"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
@@ -250,13 +253,13 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Please enter the latest verification code"
 
-    click_link "Send another code to verify my details."
+    click_link "Send another code to verify my details"
     expect(page).to have_text "We've sent you another email"
 
     fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "Do you have a degree?"
+    expect(page).to have_text "Are you already qualified to teach?"
   end
 
   scenario "Full journey as an existing candidate that has already subscribed to the mailing list" do
@@ -271,7 +274,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised guidance to your inbox"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
@@ -295,7 +298,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised guidance to your inbox"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
@@ -303,7 +306,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "Do you have a degree?"
+    expect(page).to have_text "Are you already qualified to teach?"
   end
 
   scenario "Full journey as an existing candidate using a magic link" do
@@ -312,13 +315,17 @@ RSpec.feature "Mailing list wizard", type: :feature do
       first_name: "Test",
       last_name: "User",
       email: "test@user.com",
-      consideration_journey_stage_id: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degree_status_id: OptionSet.lookup_by_key(:degree_status, :final_year),
+      consideration_journey_stage_id: Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
+      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :final_year),
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { response }
 
     visit mailing_list_steps_path(magic_link_token: token)
+
+    expect(page).to have_text "Are you already qualified to teach?"
+    choose "No"
+    click_on "Next step"
 
     expect(page).to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
 
@@ -338,16 +345,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
-    choose "No"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
+    expect(page).to have_text "If you give us your postcode"
+    fill_in "Your UK postcode (optional)", with: ""
     click_on "Complete sign up"
 
-    expect(page).to have_text "You've signed up"
-    expect(page).to have_text("We'll send your first email shortly")
+    expect(page).to have_text "you're signed up"
   end
 
   scenario "Invalid magic link tokens" do
@@ -376,7 +378,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised guidance to your inbox"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
@@ -393,11 +395,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
-    expect(page).to have_text "Get personalised guidance to your inbox"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step(email: "test2@user.com")
     click_on "Next step"
 
-    expect(page).to have_text "Do you have a degree?"
+    expect(page).to have_text "Are you already qualified to teach?"
   end
 
   scenario "Partial journey with candidate encountering an error" do
@@ -415,6 +417,17 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Enter your last name"
     expect(page).to have_text "Enter your full email address"
     expect(page).to have_title(mailing_list_page_title)
+  end
+
+  context "when there are no callback slots available" do
+    let(:quotas) { [] }
+
+    scenario "Viewing the completion page" do
+      visit mailing_list_step_path(:completed)
+
+      expect(page).to have_text("you're signed up")
+      expect(page).not_to have_link("Book a callback")
+    end
   end
 
   def fill_in_name_step(

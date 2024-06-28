@@ -1,0 +1,38 @@
+section.inset-text {
+  margin-top: 2 * $indent-amount;
+  margin-bottom: 2 * $indent-amount;
+  padding: $indent-amount;
+  border-left: 6px solid;
+
+  &.yellow {
+    background-color: $yellow-light;
+    border-left-color: $black;
+
+    @at-root (with: rule) {
+      a {
+        @extend .link--black;
+      }
+    }
+  }
+
+  &.grey {
+    border-left-color: $grey-mid;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  h2,
+  p {
+    @include font-size("small");
+  }
+}

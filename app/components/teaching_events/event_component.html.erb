@@ -1,5 +1,5 @@
 <%= tag.li(class: classes) do %>
-  <% if train_to_teach? %>
+  <% if get_into_teaching_event? %>
 
     <div class="event__info">
       <div class="event__info__date-and-time">
@@ -8,7 +8,7 @@
       </div>
 
       <div class="event__info__name">
-        <%= link_to(title, teaching_event_path(slug)) %>
+        <%= link_to(title, event_path(slug)) %>
       </div>
 
       <% if location.present? %>
@@ -32,11 +32,11 @@
 
     <div class="event__meta">
       <div class="event-image">
-        <%= image_pack_tag("media/images/content/event-signup/birmingham-event-2.jpg", alt: "A popular train to teach event in a hall with stalls and banners" ) %>
+        <%= image %>
       </div>
 
       <div class="dfelogo">
-        <%= image_pack_tag("media/images/dfelogo-black.svg", alt: "This is an official Department for Education event") %>
+        <%= image_pack_tag("static/images/dfelogo-black.svg", alt: "This is an official Department for Education event") %>
       </div>
     </div>
 
@@ -55,7 +55,7 @@
 
     <div class="event__info">
       <div class="event__info__name">
-        <%= link_to(title, teaching_event_path(slug)) %>
+        <%= link_to(title, event_path(slug)) %>
       </div>
     </div>
 
@@ -82,7 +82,7 @@
 
       <% unless provider_event? %>
         <div class="event__bottom-bar--right">
-          <%= image_pack_tag "media/images/dfelogo-black.svg", class: "dfelogo", alt: "This is an official Department for Education event" %>
+          <%= image_pack_tag "static/images/dfelogo-black.svg", class: "dfelogo", alt: "This is an official Department for Education event" %>
         </div>
       <% end %>
     </div>

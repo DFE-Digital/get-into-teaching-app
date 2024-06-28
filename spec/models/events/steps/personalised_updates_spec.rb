@@ -14,7 +14,7 @@ describe Events::Steps::PersonalisedUpdates do
   end
 
   describe "validations" do
-    let(:msg) { "Enter a valid postcode, or leave blank" }
+    let(:msg) { "Enter a valid UK postcode, or leave blank" }
 
     it { is_expected.to allow_value("TE571NG").for :address_postcode }
     it { is_expected.to allow_value("TE57 1NG").for :address_postcode }
@@ -103,8 +103,8 @@ describe Events::Steps::PersonalisedUpdates do
     subject { instance.teaching_subject_options }
 
     let(:teaching_subject_types) do
-      subjects = TeachingSubject::ALL.merge(TeachingSubject::IGNORED)
-      subjects.map { |k, v| GetIntoTeachingApiClient::LookupItem.new({ id: v, value: k }) }
+      subjects = Crm::TeachingSubject.all_hash.merge(Crm::TeachingSubject::IGNORED)
+      subjects.map { |k, v| GetIntoTeachingApiClient::TeachingSubject.new({ id: v, value: k }) }
     end
 
     before do
@@ -112,7 +112,7 @@ describe Events::Steps::PersonalisedUpdates do
         receive(:get_teaching_subjects).and_return(teaching_subject_types)
     end
 
-    it { expect(subject.map(&:id)).to eq(TeachingSubject.all_uuids) }
-    it { expect(subject.map(&:value)).to eq(TeachingSubject.all_subjects) }
+    it { expect(subject.map(&:id)).to eq(Crm::TeachingSubject.all_uuids) }
+    it { expect(subject.map(&:value)).to eq(Crm::TeachingSubject.all_subjects) }
   end
 end

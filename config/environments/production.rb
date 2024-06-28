@@ -47,6 +47,7 @@ Rails.application.configure do
   # config.force_ssl = true
   unless ENV["SKIPSSL"].in? %w[1 true yes]
     config.force_ssl = true
+    config.ssl_options = { redirect: { exclude: ->(request) { request.path.include?("/check") } } }
   end
 
   # Use the lowest log level to ensure availability of diagnostic information
@@ -81,7 +82,7 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-  # config.active_record.dump_schema_after_migration = false
+  config.active_record.dump_schema_after_migration = false
 
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
@@ -105,7 +106,7 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
   config.x.git_api_endpoint = \
-    "https://get-into-teaching-api-prod.london.cloudapps.digital/api"
+    "https://getintoteachingapi-production.teacherservices.cloud/api"
   config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence
 
   config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence
@@ -138,7 +139,7 @@ Rails.application.configure do
   config.x.structured_data.event = true
   config.x.structured_data.how_to = false
 
-  config.x.covid_banner = false
+  config.x.dfe_analytics = true
 
   # Ensure beta redirect happens before static page cache.
   config.middleware.insert_before ActionDispatch::Static, Rack::HostRedirect, {

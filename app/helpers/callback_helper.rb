@@ -15,4 +15,8 @@ module CallbackHelper
       quota.start_at.in_time_zone.to_date.to_formatted_s(:govuk_date_long)
     end
   end
+
+  def callback_available?
+    Callbacks::Steps::Callback.callback_booking_quotas.any?
+  end
 end

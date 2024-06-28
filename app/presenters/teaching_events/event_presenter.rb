@@ -22,14 +22,19 @@ module TeachingEvents
       :provider_website_url,
       :providers_list,
       :readable_id,
-      :scribble_id,
       :start_at,
+      :summary,
       :type_id,
       :status_id,
-      :video_url,
       :web_feed_id,
       to: :event,
     )
+
+    def video_id
+      return nil if event.video_url.blank?
+
+      event.video_url[/(v=|embed\/)(.{11})/, 2]
+    end
 
     def venue_address
       return if event_building.blank?
@@ -48,6 +53,14 @@ module TeachingEvents
       event_building.present?
     end
 
+    def online?
+      is_online
+    end
+
+    def in_person?
+      is_in_person
+    end
+
     def location
       if show_venue_information?
         [event_building.venue,
@@ -59,49 +72,37 @@ module TeachingEvents
     end
 
     def event_type
-      EventType.lookup_by_id(type_id)
+      Crm::EventType.lookup_by_id(type_id)
     end
 
     def quote
       case event_type
-      when "Train to Teach event", "Question Time"
+      when "Get Into Teaching event"
         "So useful! I got answers to questions I didn't know I had yet and I'm so inspired and excited."
-
-      when "Online event"
-        nil
-      when "School or University event"
-        nil
       end
     end
 
     def image
       case event_type
-      when "Train to Teach event", "Question Time"
-        {
-          path: "media/images/content/event-signup/birmingham-event-1.jpg",
-          alt: "A bustling Train to Teach event taking place in a church, busy with stalls and visitors",
-        }
-      when "Online event"
-        nil
-      when "School or University event"
-        nil
+      when "Get Into Teaching event"
+        get_into_teaching_event_image_details
       end
     end
 
     def allow_registration?
-      EventStatus.new(@event).accepts_online_registration?
+      Crm::EventStatus.new(@event).accepts_online_registration?
     end
 
     def open?
-      EventStatus.new(@event).open?
+      Crm::EventStatus.new(@event).open?
     end
 
     def closed?
-      EventStatus.new(@event).closed?
+      Crm::EventStatus.new(@event).closed?
     end
 
     def show_provider_information?
-      !type_id.in?([EventType.question_time_event_id, EventType.train_to_teach_event_id])
+      !type_id.in?([Crm::EventType.get_into_teaching_event_id])
     end
 
     def show_venue_information?
@@ -109,6 +110,20 @@ module TeachingEvents
     end
 
   private
+
+    def get_into_teaching_event_image_details
+      if online?
+        {
+          path: "static/images/content/event-signup/event-regional-online.jpg",
+          alt: "An online Get Into Teaching event on a computer screen.",
+        }
+      else
+        {
+          path: "static/images/content/event-signup/event-regional.jpg",
+          alt: "A busy Get Into Teaching event with people having one-on-one conversations with expert advisers and teachers",
+        }
+      end
+    end
 
     def event_building
       @event.building

@@ -1,0 +1,8 @@
+<% @page_title = "Which subject would you like to teach if you return to teaching?" %>
+
+<%= f.govuk_collection_select :preferred_teaching_subject_id,
+  f.object.class.options,
+  :last,
+  :first,
+  label: { tag: "h1", size: "m" }
+%>

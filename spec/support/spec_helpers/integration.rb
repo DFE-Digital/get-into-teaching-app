@@ -4,6 +4,7 @@ module SpecHelpers
       host = Rails.application.config.x.integration_host
       creds = Rails.application.config.x.integration_credentials
       Capybara.run_server = false
+      Capybara.default_max_wait_time = 5
       Capybara.app_host = "https://#{creds[:username]}:#{creds[:password]}@#{host}"
     end
 
@@ -19,6 +20,16 @@ module SpecHelpers
       expect(page).to have_text("You're already registered with us")
       code = retrieve_verification_code(email)
       fill_in "To verify your details, we've sent a code to your email address.", with: code
+      click_on "Next step"
+    end
+
+    def submit_label_step(text, step)
+      expect_current_step(step)
+
+      # Capybara choose/check methods aren't working
+      # for radio/checkbox inputs on integration tests.
+      find("label", text: text).click
+
       click_on "Next step"
     end
 
@@ -42,6 +53,10 @@ module SpecHelpers
 
     def rand_email
       "#{rand}@#{rand}.com"
+    end
+
+    def rand_another_email
+      "#{rand}@#{rand}-another.com"
     end
 
     def wait_for_jobs

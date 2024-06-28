@@ -1,0 +1,10 @@
+<%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
+  <% promo.with_left_section(classes: %w[events-background]) %>
+  <% promo.with_right_section(
+        caption: "Online and in-person events",
+        heading: "Get tips on your application") do %>
+      <p>Talk to teacher training providers, expert advisers and teachers to get help writing your teacher training application.</p>
+
+      <%= link_to("Find a Get Into Teaching event", "/events/about-get-into-teaching-events", class: "button") %>
+  <% end %>
+<% end %>

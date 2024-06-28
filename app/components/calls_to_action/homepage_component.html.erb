@@ -1,6 +1,16 @@
 <%= tag.div(class: %w[call-to-action call-to-action--homepage]) do %>
-    <%= tag.div(icon, class: "call-to-action__icon__container") %>
-    <%= tag.span(title, class: "call-to-action__heading") %>
+    <%= tag.div(icon) %>
+    <%= tag.div(class: "call-to-action__content") do %>
+      <%= render Content::HeadingComponent.new(
+        heading: title,
+        tag: :h2,
+        caption: caption,
+        caption_size: :m,
+        class: %w[call-to-action__heading]
+      ) %>
+
+      <%= tag.p(text) if text.present? %>
+    <% end %>
     <div class="call-to-action__action">
       <%= link %>
     </div>

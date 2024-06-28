@@ -1,0 +1,146 @@
+---
+title: Your teacher training application
+description: |-
+  Find out what to include in your teacher training application, how the process works and when to apply.
+related_content:
+    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
+    Get school experience : "/is-teaching-right-for-me/get-school-experience"
+    My first week as a trainee teacher: "/blog/my-first-week-as-a-trainee-teacher"
+date: "2021-06-24"
+keywords:
+  - adviser
+  - advisor
+  - ITT
+  - Initial Teacher Training
+  - QTS
+  - Qualified Teacher Status
+  - Teacher Training Adviser
+  - application
+  - apply
+  - how to apply
+  - applying for teacher training
+  - referees
+  - references
+  - process
+  - personal statement
+  - when to apply
+  - interviews
+  - offers
+  - teacher training application
+external_content:
+    - content/train-to-be-a-teacher/promos/apply-for-your-course
+promo_content:
+    - content/train-to-be-a-teacher/promos/adviser-promo-apply
+navigation: 30.05
+navigation_title: Teacher training application
+navigation_description: Find out what you need to include in your teacher training application and when to apply.
+
+---
+
+Find out what you need to include in your primary or secondary teacher training application and what happens as part of the application process. 
+
+You can get help with your application from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support. 
+
+## What course should I apply for? 
+
+Make sure you check which qualification you’ll get through your training course. Some will award [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) and some QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
+
+While you do not need a PGCE to teach in England, you do need QTS to teach in many primary and secondary schools.
+
+<div class="inset">
+<p>If you're a non-UK citizen and need a visa to come to the UK to train to teach, you need to make sure the course you’re applying for sponsors visas. <a href="/non-uk-teachers/visas-for-non-uk-trainees">Find out more about how to apply for a visa to train to teach in England</a>.</p>
+
+</div>
+
+[Find a postgraduate teacher training course](https://www.find-postgraduate-teacher-training.service.gov.uk/). 
+
+## When should I apply for teacher training? 
+
+You can start applying for courses from October, ready to start the following September (some courses may start at other points during the year).
+
+It’s wise to apply as soon as you’re ready as:
+
+* training providers allocate places as people apply, so some courses can get full quickly 
+
+* providers may set conditions of offer, such as completing a [subject knowledge enhancement (SKE) course](/how-to-apply-for-teacher-training/subject-knowledge-enhancement) before you start your training 
+
+* this will give you more time to plan how to fund your training 
+
+<p> <a href="/how-to-apply-for-teacher-training/when-to-apply-for-teacher-training">Find out more about when to apply for teacher training courses</a>.</p>
+
+
+## What do I need to include in my teacher training application? 
+
+You can apply to up to 4 courses at a time and will need to provide the following. 
+
+### Your qualifications 
+
+You’ll need to provide details about your: 
+
+* GCSEs 
+* A levels (and other qualifications) 
+* degree 
+
+Training providers will also accept some equivalent qualifications, for example, if you’re a non-UK citizen. 
+
+[Find out more about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach). 
+
+### Your work experience 
+
+You should enter all the jobs you’ve had since you left school. Make sure you explain any gaps longer than a month. 
+
+If you do not have any work history (for example, if you’ve always been in full-time education, or you’ve been caring for a family member), you can mention that here. 
+
+You can also talk about any unpaid experience you have and how this supports your application to become a teacher. 
+
+### Your personal statement 
+
+Your personal statement explains why you want to be a teacher. It’s a crucial part of your application so it’s worth taking your time on it. 
+
+[Find out more about writing your teacher training personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). 
+
+### Your adjustments 
+
+You can ask for extra support if you’re disabled, have a mental health condition or educational needs. 
+
+Your training provider can then make adjustments so you can attend an interview and do the training. 
+
+[Find out what support you’re entitled to if you’re disabled](/funding-and-support/if-youre-disabled). 
+
+### Your references 
+
+You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course. 
+
+[Find out more about how to choose your references for teacher training](/how-to-apply-for-teacher-training/teacher-training-references).
+
+## Start your application
+
+You’ll need to [create an account](https://www.apply-for-teacher-training.service.gov.uk/candidate/account) and then complete the different sections of your application form.
+
+You do not have to complete the sections all at once – you can save and come back to them later.
+
+## When will I find out if my application has been successful? 
+
+Each training provider should review your application within 30 working days and decide whether to offer you a place on their course.
+
+If a training provider does not respond within 30 working days, you can apply to another course while you wait for their response. You can also contact the training provider for more information about your application.
+
+Holiday periods in England (such as Christmas and Easter) are not included in the 30 working days.
+
+### If you’re invited to interview 
+
+If your application is successful with a provider, you’ll be invited to an interview. 
+
+Interviews vary from provider to provider – you’ll be given all the information you need when you’re invited to attend. 
+
+[Find tips for your teacher training interview](/how-to-apply-for-teacher-training/teacher-training-interview). 
+
+### If you do not get a place 
+
+Your teacher training provider should give you feedback if your application is unsuccessful. 
+
+You may need to get an additional qualification, work on your interview technique or improve the quality of your application. 
+
+You can apply to more courses if all your applications are unsuccessful. 
+
+[Find out what to do if you do not get a place on a teacher training course](/how-to-apply-for-teacher-training/if-your-application-is-unsuccessful). 

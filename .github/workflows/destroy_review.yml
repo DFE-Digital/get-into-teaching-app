@@ -1,0 +1,53 @@
+name: Destroy Review Instance
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  destroy:
+    name: Destroy
+    environment:
+       name: review
+    runs-on: ubuntu-latest
+
+    concurrency: Review_${{github.event.number}}
+
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Setup Environment Variables
+        id: variables
+        run: |
+              echo "pr_name=${{github.event.number}}" >> $GITHUB_OUTPUT
+              terraform_version=$(awk '/{/{f=/^terraform/;next}f' terraform/aks/terraform.tf | grep -o [0-9\.]*)
+              echo "TERRAFORM_VERSION=$terraform_version" >> $GITHUB_ENV
+
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TERRAFORM_VERSION }}
+
+      - uses: DFE-Digital/github-actions/set-kubelogin-environment@master
+        with:
+          azure-credentials: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Terraform Destroy
+        shell: bash
+        run: make review ci terraform-destroy
+        env:
+          TF_VAR_azure_credentials_json: ${{ secrets.AZURE_CREDENTIALS }}
+          DOCKER_IMAGE_TAG: ${{ github.sha }}
+          PR_NUMBER: ${{github.event.number}}
+
+      - name: Delete Terraform Storage File
+        run:  az storage blob delete --container-name terraform-state --account-name s189t01gitrvtfsa -n ${{steps.variables.outputs.pr_name}}.tfstate

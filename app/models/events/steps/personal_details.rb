@@ -1,31 +1,39 @@
 module Events
   module Steps
-    class PersonalDetails < ::DFEWizard::Step
-      include ::DFEWizard::IssueVerificationCode
-
-      attribute :email
-      attribute :first_name
-      attribute :last_name
+    class PersonalDetails < ::GITWizard::Steps::Identity
       attribute :is_walk_in, :boolean
+      attribute :event_id
+      attribute :channel_id, :integer
+      attribute :sub_channel_id
 
-      validates :email, presence: true, email_format: true
-      validates :first_name, presence: true, length: { maximum: 256 }
-      validates :last_name, presence: true, length: { maximum: 256 }
+      validates :event_id, presence: true
+
+      def export
+        super.except("sub_channel_id")
+      end
+
+      def channel_ids
+        query_channels.map { |channel| channel.id.to_i }
+      end
 
       def is_walk_in?
         is_walk_in.present?
       end
 
-      before_validation if: :email do
-        self.email = email.to_s.strip
+      def save
+        self.channel_id = nil unless channel_valid?
+
+        super
       end
 
-      before_validation if: :first_name do
-        self.first_name = first_name.to_s.strip
+    private
+
+      def channel_valid?
+        channel_id.present? && channel_id.in?(channel_ids)
       end
 
-      before_validation if: :last_name do
-        self.last_name = last_name.to_s.strip
+      def query_channels
+        @query_channels ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_event_subscription_channels
       end
     end
   end

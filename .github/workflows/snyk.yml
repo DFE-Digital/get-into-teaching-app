@@ -10,29 +10,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
+      - uses: Azure/login@v2
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
 
-      - uses: DfE-Digital/keyvault-yaml-secret@v1
-        id:  keyvault-yaml-secret
+      - name: Fetch secrets from key vault
+        uses: azure/CLI@v2
+        id: keyvault-yaml-secret
         with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          secret: INFRA-KEYS
-          key: SLACK-WEBHOOK, SNYK-TOKEN
+          inlineScript: |
+            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
+            echo "::add-mask::$SLACK_WEBHOOK"
+            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+            SNYK_TOKEN=$(az keyvault secret show --name "SNYK-TOKEN" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
+            echo "::add-mask::$SNYK_TOKEN"
+            echo "SNYK_TOKEN=$SNYK_TOKEN" >> $GITHUB_OUTPUT
 
       - name: Run Snyk to check Docker image for vulnerabilities
         uses: snyk/actions/docker@master
         env:
-          SNYK_TOKEN: ${{ steps.keyvault-yaml-secret.outputs.SNYK-TOKEN }}
+          SNYK_TOKEN: ${{ steps.keyvault-yaml-secret.outputs.SNYK_TOKEN }}
         with:
           image:  ${{ env.DOCKER_REPOSITORY }}:master
-          args: --severity-threshold=high --file=Dockerfile
+          args: --severity-threshold=high --file=Dockerfile --exclude-app-vulns
 
       - name: Run Brakeman static security scanner
         run: |-
@@ -45,4 +50,4 @@ jobs:
           SLACK_COLOR: ${{env.SLACK_ERROR}}
           SLACK_TITLE: Failure with Nightly Anchore Security Scan
           SLACK_MESSAGE: Failure Nightly Anchore Security Scan for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}

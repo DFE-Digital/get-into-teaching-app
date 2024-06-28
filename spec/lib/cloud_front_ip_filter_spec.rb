@@ -32,5 +32,9 @@ RSpec.describe CloudFrontIpFilter do
       it { expect(subject.call("15.207.13.1")).to be false }
       it { expect(subject.call("15.207.13.127")).to be false }
     end
+
+    context "with an invalid ip" do
+      it { expect(subject.call("a.b.c.d")).to be false }
+    end
   end
 end

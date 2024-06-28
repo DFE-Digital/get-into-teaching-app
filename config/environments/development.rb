@@ -40,10 +40,10 @@ Rails.application.configure do
   config.active_support.deprecation = :log
 
   # Raise an error on page load if there are pending migrations.
-  # config.active_record.migration_error = :page_load
+  config.active_record.migration_error = :page_load
 
   # Highlight code that triggered database queries in logs.
-  # config.active_record.verbose_query_logs = true
+  config.active_record.verbose_query_logs = true
 
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
@@ -53,7 +53,7 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.x.git_api_endpoint = \
-    "https://get-into-teaching-api-dev.london.cloudapps.digital/api"
+    "https://getintoteachingapi-development.test.teacherservices.cloud/api"
   config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence
 
   config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence
@@ -69,8 +69,8 @@ Rails.application.configure do
   config.x.structured_data.event = true
   config.x.structured_data.how_to = true
 
-  config.x.covid_banner = false
+  config.x.dfe_analytics = true
 
   # Allow access from Codespaces
-  config.hosts << /[a-z0-9\-]+\.githubpreview\.dev/
+  config.hosts << /[a-z0-9\-]+\.(preview\.app\.github|githubpreview)\.dev/
 end

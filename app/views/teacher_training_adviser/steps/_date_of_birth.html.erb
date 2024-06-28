@@ -1,0 +1,8 @@
+<% @page_title = "Enter your date of birth" %>
+
+<%= f.govuk_date_field(:date_of_birth, date_of_birth: true, legend: { tag: "h1" }) do %>
+  <p class="govuk-body">
+    We ask for your date of birth to check you're over 18. We also use it to
+    better understand who is using this service, which helps us to improve it.
+  </p>
+<% end %>

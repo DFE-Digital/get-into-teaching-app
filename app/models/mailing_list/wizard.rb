@@ -1,7 +1,7 @@
 require "attribute_filter"
 
 module MailingList
-  class Wizard < ::DFEWizard::Base
+  class Wizard < ::GITWizard::Base
     ATTRIBUTES_TO_LEAVE = %w[
       first_name
       last_name
@@ -13,13 +13,14 @@ module MailingList
 
     self.steps = [
       Steps::Name,
-      ::DFEWizard::Steps::Authenticate,
+      ::GITWizard::Steps::Authenticate,
       Steps::AlreadySubscribed,
+      Steps::ReturningTeacher,
+      Steps::AlreadyQualified,
       Steps::DegreeStatus,
       Steps::TeacherTraining,
       Steps::Subject,
       Steps::Postcode,
-      Steps::PrivacyPolicy,
     ].freeze
 
     def matchback_attributes
@@ -85,11 +86,11 @@ module MailingList
     def welcome_guide_variant(degree_status_id: nil, preferred_teaching_subject_id: nil)
       %w[/email].tap { |path|
         if preferred_teaching_subject_id
-          path << ["subject", TeachingSubject.lookup_by_uuid(preferred_teaching_subject_id).parameterize(separator: "_")]
+          path << ["subject", Crm::TeachingSubject.lookup_by_uuid(preferred_teaching_subject_id).parameterize(separator: "_")]
         end
 
         if degree_status_id
-          path << ["degree-status", OptionSet.lookup_by_value(:degree_status, degree_status_id).downcase]
+          path << ["degree-status", Crm::OptionSet.lookup_by_value(:degree_status, degree_status_id).downcase]
         end
       }.join("/")
     end

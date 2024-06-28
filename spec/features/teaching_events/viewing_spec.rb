@@ -7,11 +7,11 @@ RSpec.feature "Searching for teaching events", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).and_return(event)
   end
 
-  shared_examples "train-to-teach teaching event" do
+  shared_examples "get-into-teaching teaching event" do
     scenario "the page has the right contents" do
-      visit teaching_event_path(event.readable_id)
+      visit event_path(event.readable_id)
 
-      expect(page).to have_current_path("/teaching-events/#{event.readable_id}")
+      expect(page).to have_current_path("/events/#{event.readable_id}")
 
       expect(page).to have_css("h1", text: event.name)
 
@@ -30,9 +30,9 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
   shared_examples "regular teaching event" do |expect_venue|
     scenario "the page has the right contents" do
-      visit teaching_event_path(event.readable_id)
+      visit event_path(event.readable_id)
 
-      expect(page).to have_current_path("/teaching-events/#{event.readable_id}")
+      expect(page).to have_current_path("/events/#{event.readable_id}")
 
       expect(page).to have_css("h1", text: event.name)
 
@@ -51,16 +51,10 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
   end
 
-  describe "viewing a train to teach event" do
+  describe "viewing a get into teaching event" do
     let(:event) { build(:event_api, :with_provider_info) }
 
-    include_examples "train-to-teach teaching event"
-  end
-
-  describe "viewing a question time event" do
-    let(:event) { build(:event_api, :question_time_event, :with_provider_info) }
-
-    include_examples "train-to-teach teaching event"
+    include_examples "get-into-teaching teaching event"
   end
 
   describe "viewing a online event" do
@@ -78,7 +72,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
   describe "provider information" do
     let(:event) { build(:event_api, :school_or_university_event, :with_provider_info) }
 
-    before { visit teaching_event_path(event.readable_id) }
+    before { visit event_path(event.readable_id) }
 
     specify "the provider info is included on the page" do
       within(".teaching-event__provider-information") do
@@ -102,15 +96,31 @@ RSpec.feature "Searching for teaching events", type: :feature do
   describe "instructions on attending" do
     let(:register_link_text) { "Register for this event" }
 
-    before { visit teaching_event_path(event.readable_id) }
+    before { visit event_path(event.readable_id) }
 
     subject { page }
 
     context "when can the event can be signed up for online" do
       let(:event) { build(:event_api) }
 
-      it { is_expected.to have_content("To attend this event, you must register for a place") }
       it { is_expected.to have_link(register_link_text) }
+    end
+
+    context "when the event is online" do
+      let(:event) { build(:event_api, :online) }
+
+      let(:expected) do
+        "Register for this event and you'll receive joining instructions via email."
+      end
+
+      it { is_expected.to have_content(expected) }
+    end
+
+    context "when the event isn't online" do
+      let(:event) { build(:event_api) }
+
+      it { is_expected.not_to have_content(/you will receive log-in information/) }
+      it { is_expected.not_to have_content(/to access this event you will require a laptop/) }
     end
 
     context "when can the event can't be signed up for online" do
@@ -147,14 +157,14 @@ RSpec.feature "Searching for teaching events", type: :feature do
     let(:event) { build(:event_api) }
 
     before do
-      allow_any_instance_of(EventStatus).to receive(:viewable?).and_return(false)
+      allow_any_instance_of(Crm::EventStatus).to receive(:viewable?).and_return(false)
     end
 
     scenario do
-      visit teaching_event_path(event.readable_id)
+      visit event_path(event.readable_id)
 
       expect(page).to have_css("h1", text: "Unfortunately that event has already happened")
-      expect(page).to have_link("All events", href: "/teaching-events", class: "button")
+      expect(page).to have_link("All events", href: "/events", class: "button")
     end
   end
 end

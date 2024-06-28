@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import LastStepController from 'last_step_controller';
 
 describe('LastStepController', () => {

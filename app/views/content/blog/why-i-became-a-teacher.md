@@ -4,8 +4,8 @@ date: "2021-02-01"
 author: Giorgio Rubbo
 images:
   giorgio_rubbo:
-    path: "media/images/content/blog/giorgio-rubbo.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/giorgio-rubbo.jpg"
+    path: "static/images/content/blog/giorgio-rubbo.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/giorgio-rubbo.jpg"
 description: |-
   Giorgio Rubbo talks about what inspired him to become a teacher, his
   application process, concerns he had, and why you should become a teacher if
@@ -17,13 +17,10 @@ keywords:
   - teacher training
 tags:
   - becoming a teacher
-  - teacher training advisers
-closing_paragraph: enriching-the-lives-of-young-people
+  - advisers
 ---
 
 $giorgio_rubbo$
-
-In addition to supporting aspiring teachers to achieve a place on a teacher training course, Teacher Training Advisers run a number of [groups hosted on Facebook](https://www.facebook.com/groups/1357146377672255), to allow those who are thinking about training, those what are doing their training and others who are now qualified teachers to support one-another.
 
 Following the successful completion of his training year, Giorgio Rubbo invited aspiring teachers to ask him questions about a day in the life of a beginner teacher. Here are some of his answers.
 
@@ -33,7 +30,7 @@ My inspiration to teach was my love of biology and science in general. I am pass
 
 ## How did you find the application process?
 
-I found the application process long! It isn’t a difficult process but there are a lot of forms and hoops to jump through. My best advice would be to [get a Teacher Training Adviser](/tta-service), they are fantastically knowledgeable and helpful at all stages of the application. Another tip would be to make a list of all the things you need to do (there will be lots — application forms, personal statements, finding GCSE and A Level Certificates, sorting referees out). Whilst I found the paperwork stages stressful, I found the interview process quite enjoyable! My best advice for a successful application is to be reflective in your personal statement and interview, think about why you want to teach, about the sort of classroom you envisage yourself in (and why) and talk about it!
+I found the application process long! It isn’t a difficult process but there are a lot of forms and hoops to jump through. My best advice would be to [get a Teacher Training Adviser](/teacher-training-adviser/sign_up/identity), they are fantastically knowledgeable and helpful at all stages of the application. Another tip would be to make a list of all the things you need to do (there will be lots — application forms, personal statements, finding GCSE and A Level Certificates, sorting referees out). Whilst I found the paperwork stages stressful, I found the interview process quite enjoyable! My best advice for a successful application is to be reflective in your personal statement and interview, think about why you want to teach, about the sort of classroom you envisage yourself in (and why) and talk about it!
 
 ## What were your concerns prior to beginning the course
 
@@ -54,3 +51,5 @@ We had a university session on teaching science through debate. We were all assi
 ## What would your answer be if someone asked you ‘Should I teach?’
 
 It isn’t easy, but it’s the most fantastic and rewarding job. If you are willing to put in a lot of hard work, it is genuinely fantastic.
+
+If you're thinking about a life in the classroom, explore [if teaching is right for you](/is-teaching-right-for-me).

@@ -1,18 +1,22 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
+  <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
+    <%= render HeaderComponent.new %>
 
-    <%= render HeaderComponent.new do |c| %>
-      <%= c.hero(@front_matter) %>
+    <%= main_tag do %>
+      <%= render Content::HeroComponent.new(@front_matter) %>
+      <%= render Home::MailingListComponent.new if @front_matter["mailing_list"] %>
+
+      <section class="main-section home">
+        <%= render(partial: "sections/content_errors") %>
+
+        <% @front_matter["content"]&.each do |partial| %>
+          <%= render(partial) %>
+        <% end %>
+      </section>
     <% end %>
-
-    <main class="home" id="main-content">
-      <% @front_matter["content"]&.each do |partial| %>
-        <%= render(partial) %>
-      <% end %>
-    </main>
 
     <%= render FooterComponent.new %>
   <% end %>

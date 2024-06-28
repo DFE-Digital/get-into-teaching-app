@@ -26,11 +26,33 @@ describe "Rate limiting", type: :request do
     end
   end
 
-  it_behaves_like "an IP-based rate limited endpoint", "PATCH */mailinglist/signup/privacy_policy", 5, 1.minute do
+  it_behaves_like "an IP-based rate limited endpoint", "PATCH */mailinglist/signup/postcode", 5, 1.minute do
     def perform_request
-      key = MailingList::Steps::PrivacyPolicy.model_name.param_key
-      params = { key => attributes_for(:mailing_list_privacy_policy) }
-      patch mailing_list_step_path(:privacy_policy), params: params, headers: { "REMOTE_ADDR" => ip }
+      key = MailingList::Steps::Postcode.model_name.param_key
+      params = { key => attributes_for(:mailing_list_postcode) }
+      patch mailing_list_step_path(:postcode), params: params, headers: { "REMOTE_ADDR" => ip }
+    end
+  end
+
+  it_behaves_like "an IP-based rate limited endpoint", "PATCH */mailinglist/signup/subject", 5, 1.minute do
+    def perform_request
+      key = MailingList::Steps::Subject.model_name.param_key
+      params = { key => attributes_for(:mailing_list_subject) }
+      patch mailing_list_step_path(:subject), params: params, headers: { "REMOTE_ADDR" => ip }
+    end
+  end
+
+  it_behaves_like "an IP-based rate limited endpoint", "PATCH /teacher-training-adviser/sign_up/identity", 5, 1.minute do
+    def perform_request
+      key = TeacherTrainingAdviser::Steps::Identity.model_name.param_key
+      params = { key => { first_name: "first", last_name: "last", email: "email@address.com" } }
+      patch teacher_training_adviser_step_path(:identity), params: params, headers: { "REMOTE_ADDR" => ip }
+    end
+  end
+
+  it_behaves_like "an IP-based rate limited endpoint", "PATCH */teacher-training-adviser/sign_up/review_answers", 5, 1.minute do
+    def perform_request
+      patch teacher_training_adviser_step_path(:review_answers), params: {}, headers: { "REMOTE_ADDR" => ip }
     end
   end
 
@@ -70,10 +92,6 @@ describe "Rate limiting", type: :request do
   end
 
   describe "event upsert endpoint rate limiting" do
-    let(:publisher_username) { "publisher_username" }
-    let(:publisher_password) { "publisher_password" }
-    let(:author_username) { "author_username" }
-    let(:author_password) { "author_password" }
     let(:event) { attributes_for(:internal_event, { "building": { "id": "" } }) }
 
     before do
@@ -84,27 +102,26 @@ describe "Rate limiting", type: :request do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
         .to receive(:get_teaching_event).with(event[:id]) { build(:event_api) }
 
-      BasicAuth.class_variable_set(:@@credentials, nil)
-
-      allow(Rails.application.config.x).to receive(:http_auth) do
-        "#{publisher_username}|#{publisher_password}|publisher,#{author_username}|#{author_password}|author"
-      end
+      allow_basic_auth_users([
+        { username: "publisher", password: "password1", role: "publisher" },
+        { username: "author", password: "password2", role: "author" },
+      ])
     end
 
-    it_behaves_like "an IP-based rate limited endpoint", "POST /internal/events", 5, 1.minute do
+    it_behaves_like "an IP-based rate limited endpoint", "POST /internal/events", 10, 20.seconds do
       def perform_request
         post internal_events_path,
-             headers: { "REMOTE_ADDR" => ip }.merge(generate_auth_headers(:author)),
+             headers: { "REMOTE_ADDR" => ip }.merge(basic_auth_headers("author", "password2")),
              params: { internal_event: event }
       end
     end
 
-    it_behaves_like "an IP-based rate limited endpoint", "PUT /internal/approve", 5, 1.minute do
+    it_behaves_like "an IP-based rate limited endpoint", "PUT /internal/approve", 10, 20.seconds do
       let(:params) { { "id": event[:id] } }
 
       def perform_request
         put internal_approve_path,
-            headers: { "REMOTE_ADDR" => ip }.merge(generate_auth_headers(:publisher)),
+            headers: { "REMOTE_ADDR" => ip }.merge(basic_auth_headers("publisher", "password2")),
             params: params
       end
     end

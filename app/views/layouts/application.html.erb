@@ -1,14 +1,16 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
-    <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
-      <%= c.hero(@front_matter) %>
-    <% end %>
+  <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
+    <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <main id="main-content">
-      <section class="container">
+    <%= main_tag do %>
+      <%= render Content::HeroComponent.new(@front_matter) %>
+
+      <section class="container main-section">
+        <%= render(partial: "sections/content_errors") %>
+
         <article class="markdown <%= " fullwidth" if @fullwidth %>">
           <%= yield %>
         </article>
@@ -16,7 +18,7 @@
           <%= yield :feature %>
         </section>
       </section>
-    </main>
+    <% end %>
 
     <%= render FooterComponent.new %>
   <% end %>

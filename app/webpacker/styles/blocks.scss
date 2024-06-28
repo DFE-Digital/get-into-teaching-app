@@ -14,7 +14,7 @@ $space-between-sections: 3.7em;
 
   &.homepage-feature {
     @supports (display: grid) {
-      margin: $space-between-sections $px-either-side-of-content 0;
+      margin: 1em $px-either-side-of-content 0;
     }
   }
 
@@ -46,11 +46,6 @@ $space-between-sections: 3.7em;
     border: 3px solid $purple;
     padding: 1em;
 
-    h3 {
-      @include font-size('small');
-      margin: .2em auto .1em;
-    }
-
     ul {
       list-style: none;
       padding: 0;
@@ -59,28 +54,56 @@ $space-between-sections: 3.7em;
         margin: 1em 0;
 
         > a {
-          @include font-size('xsmall');
-          color: $black;
-          line-height: 1.8em;
-          text-underline-offset: .2em;
-          padding: .6em 0;
-
-          &:hover {
-            color: $purple;
-            text-decoration: underline;
-            text-decoration-thickness: .12em;
-          }
+          @include font-size("xsmall");
+          @extend .link--black;
         }
       }
     }
 
     p {
-      @include font-size('xsmall');
+      @include font-size("xsmall");
     }
   }
 
   &__icon {
     // placeholders for now
-    @include font-size('xlarge');
+    @include font-size("xlarge");
+  }
+}
+
+.image-blocks {
+  .image-block {
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0 $indent-amount $indent-amount 1rem;
+
+      a {
+        @extend .link--black;
+      }
+    }
+  }
+
+  @include mq($from: tablet) {
+    display: flex;
+    gap: $indent-amount * .5;
+    padding: 0 15px;
+
+    .image-block {
+      h2 {
+        @include font-size("medium");
+        margin-left: 2 * $indent-amount;
+      }
+
+      ul {
+        padding-left: 2 * $indent-amount;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
   }
 }

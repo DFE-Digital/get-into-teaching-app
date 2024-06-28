@@ -1,0 +1,20 @@
+<p>You may be eligible for a bursary or scholarship if your teacher training course leads to <%= link_to("qualified teacher status (QTS)", page_path("train-to-be-a-teacher/what-is-qts")) %>. These are tax-free amounts of money you receive to train in certain subjects. You do not need to pay them back.</p>
+
+<p>Your bursary or scholarship will be paid in a minimum of 10 equal monthly instalments over the duration of your course by your teacher training provider.</p>
+
+<p>Your teacher training provider will confirm the payment dates and amounts.</p>
+
+<p>The following amounts apply if you're starting your teacher training course between September 2024 and July 2025.</p>
+
+<%= render Content::InsetTextComponent.new(
+  text: "If you’re a non-UK citizen without <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you will not usually be eligible for a bursary or scholarship,
+  unless you train to teach languages or physics. <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">Find out more about funding for non-UK citizens</a>.",
+  color: "grey"
+) %>
+
+<section id="funding-widget">
+  <%= render FundingWidgetComponent.new(
+    @funding_widget,
+    page_path(request.path.delete_prefix("/"), anchor: 'funding-widget'))
+  %>
+</section>
