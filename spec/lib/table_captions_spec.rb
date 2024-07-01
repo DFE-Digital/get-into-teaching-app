@@ -19,7 +19,7 @@ describe TableCaptions do
     is_expected.to match_html(
       <<~HTML,
         <table>
-          <caption>My caption</caption>
+          <caption class="govuk-table__caption govuk-table__caption--m">My caption</caption>
           <tr>
             <td>cell</td>
           </tr>
@@ -42,10 +42,10 @@ describe TableCaptions do
       is_expected.to match_html(
         <<~HTML,
           <table>
-            <caption>My first caption</caption>
+            <caption class="govuk-table__caption govuk-table__caption--m">My first caption</caption>
           </table>
           <table>
-            <caption>My second caption</caption>
+            <caption class="govuk-table__caption govuk-table__caption--m">My second caption</caption>
           </table>
         HTML
       )

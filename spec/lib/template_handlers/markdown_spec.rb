@@ -137,7 +137,7 @@ describe TemplateHandlers::Markdown, type: :view do
       is_expected.to match_html(
         <<~HTML,
           <table>
-            <caption>My caption</caption>
+            <caption class="govuk-table__caption govuk-table__caption--m">My caption</caption>
             <thead>
               <tr>
                 <th>Heading 1</th>
