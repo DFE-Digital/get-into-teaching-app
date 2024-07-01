@@ -38,7 +38,7 @@ private
   end
 
   def table_caption(node)
-    "<caption>#{node.content.delete_prefix(TABLE_CAPTION_PREFIX)}</caption>"
+    "<caption class=\"govuk-table__caption govuk-table__caption--m\">#{node.content.delete_prefix(TABLE_CAPTION_PREFIX)}</caption>"
   end
 
   def caption_tables(document)
