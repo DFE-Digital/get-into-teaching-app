@@ -1,4 +1,3 @@
-require "acronyms"
 require "table_captions"
 
 module TemplateHandlers
@@ -50,16 +49,12 @@ module TemplateHandlers
       Rinku.auto_link content
     end
 
-    def add_acronyms(content)
-      Acronyms.new(content, front_matter["acronyms"]).render
-    end
-
     def add_table_captions(content)
       TableCaptions.new(content).render
     end
 
     def render
-      add_table_captions add_acronyms autolink_html render_markdown
+      add_table_captions autolink_html render_markdown
     end
 
     def markdown
