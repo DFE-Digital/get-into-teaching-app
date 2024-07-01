@@ -358,6 +358,10 @@ body > header {
               color: $black;
               background: #DEDEDE;
 
+              .menu-title {
+                text-decoration-thickness: max(3px, .1875rem, .12em); // fix required for Safari
+              }
+
               .nav-icon {
                 &__contracted, &__expanded {
                   background-image: url("../images/navigation/arrow-right-black.svg");
