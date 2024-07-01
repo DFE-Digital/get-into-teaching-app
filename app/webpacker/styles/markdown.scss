@@ -82,34 +82,11 @@
   table {
     margin: 1em $indent-amount 2em;
     width: 90%;
-    //border-color: $grey;
 
     caption {
       text-align: left;
       margin-top: $indent-amount;
     }
-
-    //thead > tr {
-    //  > th {
-    //    text-align: left;
-    //    padding: 0 $table-spacing $table-spacing $table-spacing;
-    //    margin-bottom: $table-spacing;
-    //    border-bottom: 1px solid $grey-light;
-    //    word-break: normal;
-    //
-    //    &:first-child {
-    //      padding-left: 0;
-    //    }
-    //
-    //    &:last-child {
-    //      padding-right: 0;
-    //    }
-    //  }
-    //}
-    //
-    //tbody td {
-    //  @include font-size("xsmall");
-    //}
   }
 
   .inset {
