@@ -18,8 +18,11 @@ body > header {
     border-style: none;
     font: inherit;
     text-align: start;
-    -moz-appearance: none;
     line-height: 1.375;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: rgba(0,0,0,0);
   }
 
   .menu-link {
