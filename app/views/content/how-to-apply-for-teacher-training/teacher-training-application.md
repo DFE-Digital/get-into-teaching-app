@@ -48,7 +48,8 @@ Make sure you check which qualification you’ll get through your training cours
 While you do not need a PGCE to teach in England, you do need QTS to teach in many primary and secondary schools.
 
 <div class="inset">
-  <p>If you're a non-UK citizen and need a visa to come to the UK to train to teach, you need to make sure the course you’re applying for sponsors visas. <a href="/non-uk-teachers/visas-for-non-uk-trainees">Find out more about how to apply for a visa to train to teach in England</a>.</p>
+<p>If you're a non-UK citizen and need a visa to come to the UK to train to teach, you need to make sure the course you’re applying for sponsors visas. <a href="/non-uk-teachers/visas-for-non-uk-trainees">Find out more about how to apply for a visa to train to teach in England</a>.</p>
+
 </div>
 
 [Find a postgraduate teacher training course](https://www.find-postgraduate-teacher-training.service.gov.uk/). 
