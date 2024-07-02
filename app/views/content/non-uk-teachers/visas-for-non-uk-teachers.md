@@ -99,17 +99,17 @@ The salary you must be paid to get a visa varies according to  whether you are e
 
 If you are employed as a qualified teacher and work in:
 
-* inner London, you must earn $salaries_skilledworkervisateacherminfulltime_innerlondon$
-* outer London, you must earn $salaries_skilledworkervisateacherminfulltime_outerlondon$
-* London fringe, you must earn $salaries_skilledworkervisateacherminfulltime_londonfringe$
-* the rest of England, you must earn $salaries_skilledworkervisateacherminfulltime_restofengland$
+* inner London, you must earn $salaries_skilledworkerteacherfulltimemin_innerlondon$
+* outer London, you must earn $salaries_skilledworkerteacherfulltimemin_outerlondon$
+* London fringe, you must earn $salaries_skilledworkerteacherfulltimemin_londonfringe$
+* the rest of England, you must earn $salaries_skilledworkerteacherfulltimemin_restofengland$
 
 If you are employed as an unqualified teacher and work in:
 
-* inner London, you must earn $salaries_skilledworkervisatraineeminfulltime_innerlondon$
-* outer London, you must earn $salaries_skilledworkervisatraineeminfulltime_outerlondon$
-* London fringe, you must earn $salaries_skilledworkervisatraineeminfulltime_londonfringe$
-* the rest of England, you must earn $salaries_skilledworkervisatraineeminfulltime_restofengland$
+* inner London, you must earn $salaries_skilledworkertraineefulltimemin_innerlondon$
+* outer London, you must earn $salaries_skilledworkertraineefulltimemin_outerlondon$
+* London fringe, you must earn $salaries_skilledworkertraineefulltimemin_londonfringe$
+* the rest of England, you must earn $salaries_skilledworkertraineefulltimemin_restofengland$
 
 Check the region you will be working in with the school employing you.
 
