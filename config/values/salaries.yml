@@ -20,19 +20,19 @@ salaries:
     innerlondonmin: £25,831
     innerlondonmax: £37,362
 # Non-UK salary thresholds
-  skilledworkervisatraineeminfulltime:
+  skilledworkertraineefulltimemin:
     innerlondon: £25,831
     outerlondon: £24,415
     londonfringe: £23,200
     restofengland: £23,200
-  skilledworkervisatraineeminparttime:
+  skilledworkertraineeparttimemin:
     restofengland: £23,200
-  skilledworkervisateacherminfulltime:
+  skilledworkerteacherfulltimemin:
     innerlondon: £36,745
     outerlondon: £34,514
     londonfringe: £31,350
     restofengland: £30,000
-  skilledworkervisateacherminparttime: £23,200
+  skilledworkerteacherparttimemin: £23,200
 # Additional payments
   tlr:
     salarywithtlr: £43k
