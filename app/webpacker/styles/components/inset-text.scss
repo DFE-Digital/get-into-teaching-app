@@ -35,4 +35,9 @@ section.inset-text {
   p {
     @include font-size("small");
   }
+
+  &.purple {
+    background: rgba($purple, .1);
+    border-left-color: $purple;
+  }
 }

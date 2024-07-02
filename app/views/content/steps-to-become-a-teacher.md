@@ -105,7 +105,7 @@
   inset_text:
     international-content:
       text: There are more steps to consider if you're <a href="/non-uk-teachers">a non-UK citizen</a>.
-      color: grey
+      color: purple
 ---
 
 <strong>Discover if a career teaching in a primary or secondary school in England is right for you.</strong>
