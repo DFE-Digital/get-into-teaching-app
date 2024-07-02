@@ -18,8 +18,11 @@ body > header {
     border-style: none;
     font: inherit;
     text-align: start;
-    -moz-appearance: none;
     line-height: 1.375;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: rgba(0,0,0,0);
   }
 
   .menu-link {
@@ -354,6 +357,10 @@ body > header {
             &:hover {
               color: $black;
               background: #DEDEDE;
+
+              .menu-title {
+                text-decoration-thickness: max(3px, .1875rem, .12em); // fix required for Safari
+              }
 
               .nav-icon {
                 &__contracted, &__expanded {
