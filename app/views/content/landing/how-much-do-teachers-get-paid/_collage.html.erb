@@ -9,8 +9,8 @@
 
         <%= render Content::ChecklistCollageComponent.new(
           checklist: [
-            "You'll earn at least <%= v :salaries_starting_minshortened %> (or more in London) if you're just starting as a teacher.",
-            "The average salary for a classroom teacher in England is over <%= v :salaries_average_classroomshortened %> a year."
+            "You'll earn at least #{v :salaries_starting_minshortened } (or more in London) if you're just starting as a teacher.",
+            "The average salary for a classroom teacher in England is over #{ v :salaries_average_classroomshortened } a year."
           ],
           image_paths: [
             "static/images/content/landing/how-to-fund-your-teacher-training-1.jpg",
