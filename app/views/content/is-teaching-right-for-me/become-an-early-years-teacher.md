@@ -26,28 +26,28 @@ calls_to_action:
   EY-graduate:
     name: feature_table
     arguments:
-      - Cost: "Your course fees of up to £7,000 are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
+      - Cost: "Your course fees of up to $earlyyears_fees_coveredbydfe$ are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
         Salary: "No"
         Length of training: "Typically 1 academic year"
         Qualification: "Early years teacher status"
   EY-graduate-employment:
     name: feature_table
     arguments:
-      - Cost: "Your course fees of up to £7,000 are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
+      - Cost: "Your course fees of up to $earlyyears_fees_coveredbydfe$ are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
         Salary: "Provided by employer"
         Length of training: "Typically 1 academic year"
         Qualification: "Early years teacher status"
   EY-undergraduate:
     name: feature_table
     arguments:
-      - Cost: "Up to £9,250"
+      - Cost: "Up to $earlyyears_fees_undergrad$"
         Salary: "No"
         Length of training: "3 or 4 years"
         Qualification: "Early years teacher status"
   EY-self-funded:
     name: feature_table
     arguments:
-      - Cost: "This could be around £2,500 or £3,000 depending on the provider"
+      - Cost: "This could be around $earlyyears_fees_selffundedlow$ or $earlyyears_fees_selffundedhigh$ depending on the provider"
         Salary: "No"
         Length of training: "3 months"
         Qualification: "Early years teacher status"
@@ -56,13 +56,13 @@ talk_to_us: false
 
 The early years are critical in children’s development. As an early years teacher you’ll work with young children up to the age of 5. You’ll use your knowledge and skills to help young children enjoy high standards of teaching and open their minds to new ideas every day.
 
-You’ll need to do early years initial teacher training (EYITT) to achieve early years teacher status (EYTS). This will allow you to work in a nursery or early years setting. 
+You’ll need to do early years initial teacher training (EYITT) to achieve early years teacher status (EYTS). This will allow you to work in a nursery or early years setting.
 
 If you want to teach in a primary school, including in a reception class, or secondary school then you will need to achieve qualified teacher status (QTS). [Find out more about training to teach primary and secondary pupils](/train-to-be-a-teacher).
 
 ## What you need to become an early years teacher
 
-There are 2 ways to train to become an early years teacher, either as a postgraduate if you already have a degree, or as part of an undergraduate degree. 
+There are 2 ways to train to become an early years teacher, either as a postgraduate if you already have a degree, or as part of an undergraduate degree.
 
 To do postgraduate training, you’ll need a bachelor’s degree or an equivalent, for example, a vocational, professional, or overseas qualification.
 
@@ -77,22 +77,22 @@ $international-content$
 ## Routes to early years teacher status
 
 ### Postgraduate training
-This route is designed for people who have an undergraduate degree and want to continue full-time study to achieve early years teacher status. 
+This route is designed for people who have an undergraduate degree and want to continue full-time study to achieve early years teacher status.
 
 $EY-graduate$
 
 Bursaries are only available for this route as follows:
 
-* £5,000 if you have a first class degree
-* £4,000 if you have a 2:1 degree
-* £2,000 if you have a 2:2 degree
+* $earlyyears_bursaries_withfirstclass$ if you have a first class degree
+* $earlyyears_bursaries_withtwoone$ if you have a 2:1 degree
+* $earlyyears_bursaries_withtwotwo$ if you have a 2:2 degree
 
-You are not eligible for a bursary if you do not have these qualifications or if you're completing any other EYITT  routes.
+You are not eligible for a bursary if you do not have these qualifications or if you're completing any other EYITT routes.
 
 You do not need to do anything to access this funding. You can [learn more about early years initial teacher training funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2024-to-2025-funding-guidance).
 
 ### Postgraduate employment-based training
-This route is for graduates working in an early years setting who want to achieve early years teacher status.    
+This route is for graduates working in an early years setting who want to achieve early years teacher status.
 
 $EY-graduate-employment$
 
