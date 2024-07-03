@@ -10,6 +10,17 @@ salaries:
     outerlondonmax: £75,850
     innerlondonmin: £56,377
     innerlondonmax: £81,051
+  headteacher:
+    minshortened: £53k
+    maxshortened: £139k
+    englandmin: £53,380
+    englandmax: £131,056
+    londonfringemin: £54,685
+    londonfringemax: £132,352
+    outerlondonmin: £57,124
+    outerlondonmax: £134,765
+    innerlondonmin: £62,304
+    innerlondonmax: £139,891
 ## implemented above line
 # Summary salaries
   starting:
@@ -31,17 +42,6 @@ salaries:
     outerlondonmax: £51,179
     innerlondonmin: £36,745
     innerlondonmax: £56,959
-  headteacher:
-    minshortened: £53k
-    maxshortened: £139k
-    englandmin: £53,380
-    englandmax: £131,056
-    londonfringemin: £54,685
-    londonfringemax: £132,352
-    outerlondonmin: £57,124
-    outerlondonmax: £134,765
-    innerlondonmin: £62,304
-    innerlondonmax: £139,891
   unqualifiedteacher:
     englandmin: £20,598
     englandmax: £32,134
