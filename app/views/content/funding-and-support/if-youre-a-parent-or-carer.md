@@ -54,8 +54,8 @@ You could get 85% of your childcare costs or a fixed maximum amount, whichever i
 
 The maximum you can get is:
 
-* up to $finance_childcaregrantweeklypayment_onechild$ a week for 1 child
-* up to $finance_childcaregrantweeklypayment_twoormorechildren$ a week for 2 or more children
+* up to $finance_childcaregrantweeklypayment_one$ a week for 1 child
+* up to $finance_childcaregrantweeklypayment_twoplus$ a week for 2 or more children
 
 Grants are paid into a Childcare Grant Payment Service (CCGPS) account. Your childcare provider would then be paid directly from this account.
 
@@ -71,7 +71,7 @@ To be eligible, you need to:
 
 The Parents’ Learning Allowance could help you with your learning costs if you’re a full-time student with children.
 
-You could be eligible for between $finance_parentslearningallowance_lowpayment$ and $finance_parentslearningallowance_maxpayment$ a year, depending on your household income.
+You could be eligible for between $finance_parentslearningallowance_min$ and $finance_parentslearningallowance_max$ a year, depending on your household income.
 
 This is usually paid to you in 3 instalments, one at the start of each term.
 
@@ -79,7 +79,7 @@ To be eligible, you need to:
 
 * be doing a full-time undergraduate course or a teacher training course in England
 * have dependent children
-* have a household income of less than $finance_parentslearningallowance_incomethreshold$ a year
+* have a household income of less than $finance_parentslearningallowance_income$ a year
 
 [Find out more about the Parents’ Learning Allowance and how to apply](https://www.gov.uk/parents-learning-allowance).
 
@@ -98,6 +98,6 @@ To be eligible, you need to:
 
 * be a full-time student in higher education
 * have an adult depend on you financially
-* have a household income of less than $finance_adultdependantsgrant_incomethreshold$
+* have a household income of less than $finance_adultdependantsgrant_income$
 
 [Find out more about the Adult Dependants’ Grants and how to apply](https://www.gov.uk/adult-dependants-grant).
