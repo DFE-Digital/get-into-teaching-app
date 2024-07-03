@@ -1,12 +1,7 @@
 .content-alert {
-  background-color: $purple;
-  color: $white;
-  padding: 1.5em;
-  line-height: 1.5em;
+  background-color: $grey;
   display: flex;
-  width: 78%;
-  box-sizing: border-box;
-  margin-bottom: $indent-amount;
+  margin: 0 0 3em 0;
 
   @include mq($until: tablet) {
     width: inherit;
@@ -14,11 +9,7 @@
 
   &--fullwidth {
     width: inherit;
-    margin-bottom: 2 * $indent-amount;
-  }
-
-  .icon {
-    margin-right: $indent-amount;
+    margin-bottom: 3 * $indent-amount;
   }
 
   h4,
@@ -43,19 +34,12 @@
     margin: 0;
   }
 
-  &__icon {
-    position: relative;
-    background-color: $white;
-    min-width: 62px;
-    max-width: 62px;
-    height: 62px;
-    margin-right: $indent-amount;
+  .left > .icon {
+    background: $yellow;
+    padding: .8em .8em .6em;
   }
 
-  img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  .right {
+    padding: 1.5em;
   }
 }
