@@ -57,7 +57,7 @@ You cannot receive a scholarship or bursary if you're on a [salaried teacher tra
 | **Physics**                                                           | £28,000  | £30,000          |
 | **Religious education**                                               | £10,000  |                  |
 
-Table caption: Details of postgraduate bursaries and scholarships
+Table caption: Available postgraduate bursaries and scholarships
 
 ### Bursaries
 
