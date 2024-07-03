@@ -1,12 +1,12 @@
 finance:
-   adultdependantsgrant:
+  adultdependantsgrant:
     value: £3,438
     income: £15,621.98
   childcaregrantweeklypayment:
     one: £193.62
     twoplus: £331.95
   disabilityadditionalfunding: £26,948
-  maintenanceloanvalue:
+  maintenanceloan:
     withparents: £8,610
     notwithparentsoutsidelondon: £10,227
     notwithparentsinsidelondon: £13,348
