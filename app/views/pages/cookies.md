@@ -70,7 +70,7 @@ The Cookies we use are listed below with details about why we use them and how l
 | `_vwo_referrer`                           | This cookie stores referral info allowing VWO to identify the original Traffic source in case of the Split URL campaign                                                                                                                           | 15 seconds                                           |
 | `_vwo`                                    | This VWO cookie is a jar of all the VWO cookies. It is currently created only for the Safari browser browser                                                                                                                                      | Expires in 2096 years                                |
 
-Table caption: Details of essential cookies
+Table caption: Essential cookies we use
 
 ## Tracking and Performance Cookies
 
@@ -101,7 +101,7 @@ The information gathered via these Cookies may directly or indirectly identify y
 | `FPID`                            | This cookie is used to recognise visitors                                                                                                                   | 13 months            |
 | `dax_listenerid`                  | This cookie name is associated with Global Dax and is used for campaign monitoring, reporting and optimisation when running digital audio activity          | 540 days             |
 
-Table caption: Details of tracking and performance cookies
+Table caption: Tracking and performance cookies we use
 
 ## Marketing Cookies
 
@@ -130,7 +130,7 @@ We place marketing tags on our pages to track the success of our content on each
 | `_scid_r`            | This cookie is used by Snapchat to assign a unique ID to a user                                                                                                 | 1 year        |
 | `X-AB`               | This cookie is associated with embedding content from Snapchat                                                                                                  | 1 day         |
 
-Table caption: Details of marketing cookies
+Table caption: Marketing cookies we use
 
 ## Your choices regarding Cookies
 
