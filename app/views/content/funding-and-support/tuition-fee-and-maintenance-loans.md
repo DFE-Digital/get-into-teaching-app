@@ -53,10 +53,10 @@ You may also be eligible for a maintenance loan to help cover your living costs.
 
 The maximum amount you may be eligible to borrow is:
 
-* $finance_maintenanceloanvalue_withparents$, if you live at home with your parents
-* $finance_maintenanceloanvalue_notwithparentsoutsidelondon$, if you live away from your parents, out of London
-* $finance_maintenanceloanvalue_notwithparentsinsidelondon$, if you live away from your parents, in London
-* $finance_maintenanceloanvalue_oversixty$, if you're 60 years or over on the first day of the academic year of your course
+* $finance_maintenanceloan_withparents$, if you live at home with your parents
+* $finance_maintenanceloan_notwithparentsoutsidelondon$, if you live away from your parents, out of London
+* $finance_maintenanceloan_notwithparentsinsidelondon$, if you live away from your parents, in London
+* $finance_maintenanceloan_oversixty$, if you're 60 years or over on the first day of the academic year of your course
 
 
 $student-finance-calculator$
