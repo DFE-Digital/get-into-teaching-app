@@ -45,16 +45,16 @@ You cannot receive a scholarship or bursary if you're on a [salaried teacher tra
 |-----------------------------------------------------------------------| -------: | ---------------: |
 | **Art and design**                                                    | £10,000  |                  |
 | **Biology**                                                           | £25,000  |                  |
-| **Chemistry**                                                         | £28,000  | £30,000          |
-| **Computing**                                                         | £28,000  | £30,000          |
+| **Chemistry**                                                         | £28,000  | $scholarships_chemistry$          |
+| **Computing**                                                         | £28,000  | $scholarships_computing$          |
 | **Design and technology**                                             | £25,000  |                  |
 | **English**                                                           | £10,000  |                  |
 | **Geography**                                                         | £25,000  |                  |
-| **Languages**<br/> (French, German and Spanish only)                  | £25,000  | £27,000          |
+| **Languages**<br/> (French, German and Spanish only)                  | £25,000  | $scholarships_languagesfrenchgermanspanish$      |
 | **Languages**<br/> (all other languages, including ancient languages) | £25,000  |                  |
-| **Maths**                                                             | £28,000  | £30,000          |
+| **Maths**                                                             | £28,000  | $scholarships_maths$         |
 | **Music**                                                             | £10,000  |                  |
-| **Physics**                                                           | £28,000  | £30,000          |
+| **Physics**                                                           | £28,000  | $scholarships_physics$        |
 | **Religious education**                                               | £10,000  |                  |
 
 ### Bursaries
