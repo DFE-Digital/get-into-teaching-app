@@ -4,7 +4,7 @@ description: There's still time for you to apply and start teacher training this
 content:
     - content/landing/still-time-to-apply/header
     - content/landing/still-time-to-apply/content
-    - content/landing/still-time-to-apply/adviser-promo-degree
+    - content/train-to-be-a-teacher/promos/adviser-promo-degree
 image: "static/images/content/hero-images/0027.jpg"
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
