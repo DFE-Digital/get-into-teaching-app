@@ -108,7 +108,7 @@ If you are employed as an unqualified teacher and work in:
 
 * inner London, you must earn $salaries_skilledworkertraineefulltimemin_innerlondon$
 * outer London, you must earn $salaries_skilledworkertraineefulltimemin_outerlondon$
-* London fringe, you must earn$salaries_skilledworkertraineefulltimemin_londonfringe$
+* London fringe, you must earn $salaries_skilledworkertraineefulltimemin_londonfringe$
 * the rest of England, you must earn $salaries_skilledworkertraineefulltimemin_restofengland$
 
 Check the region you will be working in with the school employing you. 
