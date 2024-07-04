@@ -100,7 +100,7 @@ The salary you must be paid to get a visa varies according to  whether you are e
 If you are employed as a qualified teacher and work in:
 
 * inner London, you must earn £36,745
-* outer London, you must earn £34,514
+* outer London, you must earn $salaries_skilledworkervisatraineeminfulltime_outerlondon$ tyuigiviu
 * London fringe, you must earn £31,350
 * the rest of England, you must earn £30,000
 
