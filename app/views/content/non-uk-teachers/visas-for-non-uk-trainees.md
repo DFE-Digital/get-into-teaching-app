@@ -74,13 +74,13 @@ For a [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa), you will al
 
 Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a Skilled Worker visa – this varies by region, as follows: 
 
-* inner London: £25,831 
+* inner London: $salaries_skilledworkervisatraineeminfulltime_innerlondon$
 
-* outer London: £24,415 
+* outer London: $salaries_skilledworkervisatraineeminfulltime_outerlondon$
 
-* London fringe: £23,200 
+* London fringe: $salaries_skilledworkervisatraineeminfulltime_restofengland$
 
-* rest of England: £23,200 
+* rest of England: $salaries_skilledworkervisatraineeminparttime$
 
 Check the region you will be working in with your teacher training provider. 
 
