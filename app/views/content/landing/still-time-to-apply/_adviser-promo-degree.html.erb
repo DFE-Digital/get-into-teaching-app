@@ -1,0 +1,8 @@
+<%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
+  <% promo.with_left_section(classes: %w[tta-background]) %>
+  <% promo.with_right_section(heading: "Get free one-to-one support") do %>
+      <p>Talk to an adviser with years of teaching experience about your different training and funding options. Chat through phone, text or email, as little or as often as you need.</p>
+
+      <%= link_to("Find out more about advisers", "/teacher-training-advisers", class: "button") %>
+  <% end %>
+<% end %>
