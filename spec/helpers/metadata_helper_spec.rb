@@ -48,7 +48,7 @@ describe MetadataHelper, type: "helper" do
 
       allow_any_instance_of(described_class).to receive(:asset_pack_url) { fake_host }
 
-      tags = image_meta_tags(image_path: "static/images/content/hero-images/0012.jpg")
+      tags = image_meta_tags(image_path: "static/images/content/hero-images/0001.jpg")
 
       expect(tags).to match(fake_host)
     end

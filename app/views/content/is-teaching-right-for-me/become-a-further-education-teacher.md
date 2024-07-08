@@ -1,7 +1,7 @@
 ---
 title: Teach in further education
 article_classes: ['longform']
-image: "static/images/content/hero-images/0015.jpg"
+image: "static/images/content/hero-images/0031.jpg"
 description: |-
   Find out how to teach in further education in England. Explore which qualifications you need and how to find further education teacher training.
 date: "2023-02-23"

@@ -13,7 +13,7 @@ navigation: 20.50
 navigation_title: Get an international relocation payment
 navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth £10,000.
 date: "2021-05-27"
-image: "static/images/content/hero-images/0002.jpg"
+image: "static/images/content/hero-images/geography.jpg"
 backlink: "../../"
 talk_to_us: false
 inset_text:
