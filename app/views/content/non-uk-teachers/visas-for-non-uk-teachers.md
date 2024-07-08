@@ -105,7 +105,7 @@ If you're employed as an unqualified teacher and work in:
 
 ### Working part time as a teacher
 
-You can work part time, but your salary must meet the threshold for a Skilled Worker visa. There are 2 requirements:
+You can work part-time, but your salary must meet the threshold for a Skilled Worker visa. There are 2 requirements:
 
 * your part-time salary must be at least £23,200
 * the full-time equivalent of your salary must meet the minimum set for your region and status (for qualified and unqualified teachers)
