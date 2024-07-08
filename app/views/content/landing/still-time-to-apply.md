@@ -5,9 +5,9 @@ content:
     - content/landing/still-time-to-apply/header
     - content/landing/still-time-to-apply/content
     - content/train-to-be-a-teacher/promos/adviser-promo-degree
-image: "static/images/content/hero-images/0027.jpg"
+image: "static/images/content/hero-images/0035.jpg"
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pink-blue
 talk_to_us: false
 noindex: true
 ---
