@@ -111,15 +111,3 @@ You may be eligible for the:
 ## Contact
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
-
-
- 
-
- 
-
-
- 
-
- 
-
- 
