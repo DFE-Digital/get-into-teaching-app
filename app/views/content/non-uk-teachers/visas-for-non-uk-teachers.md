@@ -64,7 +64,7 @@ Most non-UK citizens who don't already have the correct visa or immigration stat
 ### To apply for your visa, follow these steps
 
 #### Step 1 
-Visit the UK government’s official [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service to search for teaching jobs in the UK. Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas. 
+Visit the UK government’s official [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service to search for teaching jobs in the UK. Filter your search by ‘visa sponsorship’ to find jobs that can sponsor visas. 
 
 #### Step 2
 Apply for a teaching job with a school which can sponsor your visa. Your salary must meet the requirements for a Skilled Worker visa. 
