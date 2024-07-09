@@ -143,7 +143,7 @@ We have recently approved the following providers to offer iQTS for the 2024/25 
 
 * [University of Chichester](https://www.chi.ac.uk/)
 
-* [University of Northampton](https://www.northampton.ac.uk/)
+* [University of Northampton](https://www.northampton.ac.uk/courses/postgraduate-certificate-in-education-international-iqts/)
 
 ## Assessment
 
