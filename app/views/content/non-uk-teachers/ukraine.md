@@ -11,7 +11,7 @@ navigation: 20.70
 navigation_title: Ukrainian teachers and trainees coming to the UK
 navigation_description: Find information and advice for Ukrainian citizens seeking training places and teaching jobs in England.
 date: "2022-06-24"
-image: "static/images/content/hero-images/0003.jpg"
+image: "static/images/content/hero-images/english.jpg"
 backlink: "../../"
 keywords:
   - International
@@ -19,7 +19,7 @@ keywords:
   - Foreign
   - Nationality
   - Visa
-  - Skilled worker visa
+  - Skilled Worker visa
   - NARIC
   - UK NARIC
   - ENIC
@@ -43,24 +43,18 @@ We can help if you’re interested in teaching children aged 5 to 18. If you'd l
 
 If you're coming to the UK from Ukraine, [check what you need to do before you travel and what to do after you arrive](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine).
 
-### Get an international relocation payment (IRP) worth £10,000
+### Get an international relocation payment (IRP) worth up to £10,000
 
-To be eligible for the IRP, you must be a teacher coming to England to teach languages or physics in:
-
-* the 2023 to 2024 academic year (which runs from 1 September 2023 to 31 August 2024)
-
-* the 2024 to 2025 academic year (which runs from 1 September 2024 to 31 August 2025) 
-
-[Learn more about the IRP](/non-uk-teachers/get-an-international-relocation-payment).
+If you are a teacher coming to England to teach languages or physics, you may be eligible for the IRP. [Learn more about the international relocation payment (IRP)](/non-uk-teachers/get-an-international-relocation-payment).
 
 
 ### Visas giving you the right to train to teach or teach in England
 
-You already have the right to train or work as a teacher in England if you're in the UK on (one of the following):
+You already have the right to train or work as a teacher in England if you're in the UK on one of the following visas:
 
-* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa) – please note this scheme closed to new applications on 19 February 2024
-* [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
-* [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
+* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa) – please note this scheme closed to new applicants on 19 February 2024
+* [Homes for Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
+* [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme) – please note this scheme closed to most new applicants on 16 May 2024 
 
 You're also eligible to [apply for financial support if you choose to train to teach](#fees-and-financial-support).
 
@@ -74,10 +68,10 @@ If you're already in the UK under a [different type of visa](https://www.gov.uk/
 
 ### Staying in the UK long-term
 
-If you're interested in working as a teacher and applying for [indefinite leave to remain in the UK](https://www.gov.uk/indefinite-leave-to-remain), you should consider a [skilled worker visa](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).   
+If you're interested in working as a teacher and applying for [indefinite leave to remain in the UK](https://www.gov.uk/indefinite-leave-to-remain), you should consider a [Skilled Worker visa](/non-uk-teachers/visas-for-non-uk-teachers).   
 
-Time spent in the UK under the skilled worker visa counts towards an application for permanent residence. You'll still need to meet the eligibility requirements for this type of visa.
-You can apply for a skilled worker visa whichever type of visa you currently have allowing you to stay in the UK. 
+Time spent in the UK under the Skilled Worker visa counts towards an application for permanent residence. You'll still need to meet the eligibility requirements for this type of visa.
+You can apply for a Skilled Worker visa whichever type of visa you currently have allowing you to stay in the UK. 
 
 ### Safeguarding and criminal records checks
 

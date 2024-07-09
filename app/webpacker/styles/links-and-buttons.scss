@@ -34,9 +34,8 @@
   text-underline-offset: .08em;
   box-shadow: none;
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
+  &:hover {
+    text-decoration-thickness: max(3px, .1875rem);
   }
 
   &:focus {
@@ -44,6 +43,7 @@
     background-color: $black;
     box-shadow: 0 4px $pink;
     outline: 4px solid transparent;
+    text-decoration: none;
 
     &::after {
       border-color: $white;
@@ -98,6 +98,9 @@ ol.primary > li {
     border-color: $black;
   }
 
+  &:hover {
+    text-decoration-thickness: max(3px, .1875rem, .12em)};
+
   &:focus {
     color: $white;
   }
@@ -132,8 +135,19 @@ ol.primary > li {
   }
 }
 
+.link--underline {
+  text-decoration: underline;
+}
+
 .link--no-underline {
   text-decoration: none;
+}
+
+.link--underline-on-hover {
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: max(3px, .1875rem, .12em);
+  }
 }
 
 a {

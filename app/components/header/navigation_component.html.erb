@@ -2,7 +2,7 @@
 <%= tag.nav id: "primary-navigation", class: "hidden-mobile", data: { "navigation-target": "nav", action: "click->navigation#handleNavMenuClick" }, "aria-label": "Primary navigation", role: "navigation" do %>
   <%= tag.ol class: "primary", data: { "navigation-target": "primary" } do %>
     <% all_resources.each do |resource| %>
-      <%= nav_link(resource, :mobile) %>
+      <%= nav_link(resource, :mobile, underline_on_hover: false) %>
     <% end %>
   <% end %>
 <% end %>

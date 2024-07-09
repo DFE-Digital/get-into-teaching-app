@@ -12,7 +12,7 @@ navigation: 20.50
 navigation_title: Gain the equivalent of English QTS, from outside the UK
 navigation_description: Train from anywhere in the world to get international qualified teacher status (iQTS), backed by England’s Department for Education.
 date: "2021-08-06"
-image: "static/images/content/hero-images/0001.jpg"
+image: "static/images/content/hero-images/0034.jpg"
 backlink: "../"
 keywords:
     - international
@@ -143,7 +143,7 @@ We have recently approved the following providers to offer iQTS for the 2024/25 
 
 * [University of Chichester](https://www.chi.ac.uk/)
 
-* [University of Northampton](https://www.northampton.ac.uk/)
+* [University of Northampton](https://www.northampton.ac.uk/courses/postgraduate-certificate-in-education-international-iqts/)
 
 ## Assessment
 
