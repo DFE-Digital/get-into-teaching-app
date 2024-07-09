@@ -34,9 +34,9 @@
     <%= render TextBlockWithTwoImagesComponent.new(
       heading: "Engineering the future",
       colour: "pink",
-      image_1_path: "static/images/content/hero-images/0017.jpg",
+      image_1_path: "static/images/content/hero-images/teacher2.jpg",
       image_1_alt: "",
-      image_2_path: "static/images/content/hero-images/0004.jpg",
+      image_2_path: "static/images/content/hero-images/physics.jpg",
       image_2_alt: "",
     ) do %>
       <p>
@@ -111,18 +111,10 @@
     ) %>
   </section>
 
-  <section class="col col-content-max col-space-s">
-    <%= render TextBlockWithOneImageComponent.new(
-      heading: "Fund your teaching training",
-      colour: "yellow",
-      image_path: "static/images/content/hero-images/0009.jpg",
-      image_alt: "A teacher standing at the front of her classroom teaching a class",
-    ) %>
-  </section>
-
-  <section class="col col-720">
+  <section class="col col-720 col-space-m">
+    <h2>Fund your teacher training</h2>
     <p>
-      Scholarships of £30,000 or bursaries of £28,000 are available for trainee physics teachers starting their teacher training course between September 2024 and July 2025.
+      Scholarships of <%= v :scholarships_physics %> or bursaries of £28,000 are available for trainee physics teachers starting their teacher training course between September 2024 and July 2025.
     </p>
 
     <p>

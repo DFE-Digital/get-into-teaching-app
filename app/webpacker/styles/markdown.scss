@@ -82,6 +82,11 @@
   table {
     margin: 1em $indent-amount 2em;
     width: 90%;
+
+    caption {
+      text-align: left;
+      margin-top: $indent-amount;
+    }
   }
 
   .inset {

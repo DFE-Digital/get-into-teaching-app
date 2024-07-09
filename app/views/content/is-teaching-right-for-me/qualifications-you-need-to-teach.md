@@ -21,7 +21,7 @@ You need qualified teacher status (QTS) to teach in maintained primary, secondar
 
 You do not need QTS to [teach in further education](/is-teaching-right-for-me/become-a-further-education-teacher) or to [teach in early years](/is-teaching-right-for-me/become-an-early-years-teacher).
 
-[Find out more about qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). 
+[Find out more about qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 ## What qualifications do you need to train?
 
@@ -58,7 +58,7 @@ Or you can train to teach two subjects at secondary, for example maths with phys
 
 Talk to your training provider to find out what you can train to teach.
 
-You could also receive a tax-free bursary or scholarship of up to £30,000 to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
+You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
 ## Do a subject knowledge enhancement (SKE) course
 

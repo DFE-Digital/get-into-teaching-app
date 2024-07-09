@@ -3,10 +3,8 @@
     <h2 class="heading--box-blue">How can I fund my teacher training?</h2>
 
     <div class="inset">
-      <h3>Postgraduate bursaries and scholarships</h3>
-
       <table class="first-column-headings right-aligned-values">
-        <caption>Postgraduate bursaries and scholarships are available for the subjects listed below.</caption>
+        <caption class="govuk-table__caption govuk-table__caption--m">Available postgraduate bursaries and scholarships</caption>
         <thead>
           <tr>
             <th scope="col">Subject</th>
@@ -28,12 +26,12 @@
           <tr>
             <td>Chemistry</td>
             <td>£28,000</td>
-            <td>£30,000</td>
+            <td><%= v :scholarships_chemistry %></td>
           </tr>
           <tr>
             <td>Computing</td>
             <td>£28,000</td>
-            <td>£30,000</td>
+            <td><%= v :scholarships_computing %></td>
           </tr>
           <tr>
             <td>Design and technology</td>
@@ -53,7 +51,7 @@
           <tr>
             <td>Languages<br> (French, German and Spanish only)</td>
             <td>£25,000</td>
-            <td>£27,000</td>
+            <td><%= v :scholarships_languagesfrenchgermanspanish %></td>
           </tr>
           <tr>
             <td>Languages<br> (all other languages, including ancient languages)</td>
@@ -63,7 +61,7 @@
           <tr>
             <td>Maths</td>
             <td>£28,000</td>
-            <td>£30,000</td>
+            <td><%= v :scholarships_maths %></td>
           </tr>
           <tr>
             <td>Music</td>
@@ -73,7 +71,7 @@
           <tr>
             <td>Physics</td>
             <td>£28,000</td>
-            <td>£30,000</td>
+            <td><%= v :scholarships_physics %></td>
           </tr>
           <tr>
             <td>Religious education</td>
@@ -99,9 +97,9 @@
       <p>You could also be eligible for up to:</p>
 
       <ul>
-        <li>£331.95 a week to support childcare costs for 2 or more children</li>
+        <li><%= v :finance_childcaregrantweeklypayment_twoplus %> a week to support childcare costs for 2 or more children</li>
         <li><%= v :finance_adultdependantsgrant_value %> a year if an adult depends on you</li>
-        <li>£26,948 a year if you're disabled</li>
+        <li><%= v :finance_disabilityadditionalfunding %> a year if you're disabled</li>
       </ul>
 
       <p><%= link_to("Find out more about how you could fund your training", page_path("funding-and-support")) %>.</p>
