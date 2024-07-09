@@ -118,10 +118,10 @@ Their role is wide ranging, but includes leading and motivating teachers, and en
 
 | Area                                     | Minimum | Maximum  |
 | -------                                  | -----   | -----    |
-| England (excluding London)     | £53,380 | £131,056 |
-| London fringe                            | £54,685 | £132,352 |
-| Outer London                             | £57,124 | £134,765 |
-| Inner London                             | £62,304 | £139,891 |
+| England (excluding London)     | $salaries_headteacher_englandmin$ | $salaries_headteacher_englandmax$ |
+| London fringe                            | $salaries_headteacher_londonfringemin$ | $salaries_headteacher_londonfringemax$ |
+| Outer London                             | $salaries_headteacher_outerlondonmin$ | $salaries_headteacher_outerlondonmax$ |
+| Inner London                             | $salaries_headteacher_innerlondonmin$ | $salaries_headteacher_innerlondonmax$ |
 
 Find out more about [how to move up the career ladder in teaching](/is-teaching-right-for-me/career-progression).
 
