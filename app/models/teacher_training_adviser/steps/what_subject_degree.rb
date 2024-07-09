@@ -19,5 +19,9 @@ module TeacherTrainingAdviser::Steps
 
       have_a_degree_skipped || not_studying_or_have_a_degree
     end
+
+    def autocomplete?
+      @autocomplete ||= ActiveModel::Type::Boolean.new.cast(ENV.fetch("ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE", false))
+    end
   end
 end

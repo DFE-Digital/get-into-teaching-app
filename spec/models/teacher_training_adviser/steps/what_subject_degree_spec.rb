@@ -42,4 +42,35 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatSubjectDegree do
       expect(subject).to be_skipped
     end
   end
+
+  describe "#autocomplete?" do
+    before do
+      allow(ENV).to receive(:fetch).and_call_original
+      allow(ENV).to receive(:fetch).with("ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE", false).and_return(adviser_degree_subject_autocomplete_flag)
+    end
+
+    context "when ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE is not set" do
+      let(:adviser_degree_subject_autocomplete_flag) { nil }
+
+      it "returns false" do
+        expect(subject).not_to be_autocomplete
+      end
+    end
+
+    context "when ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE=0" do
+      let(:adviser_degree_subject_autocomplete_flag) { "0" }
+
+      it "returns false" do
+        expect(subject).not_to be_autocomplete
+      end
+    end
+
+    context "when ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE=1" do
+      let(:adviser_degree_subject_autocomplete_flag) { "1" }
+
+      it "returns true" do
+        expect(subject).to be_autocomplete
+      end
+    end
+  end
 end
