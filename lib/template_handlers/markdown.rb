@@ -1,3 +1,5 @@
+require "table_captions"
+
 module TemplateHandlers
   class Markdown
     include ActionView::Helpers::OutputSafetyHelper
@@ -47,8 +49,12 @@ module TemplateHandlers
       Rinku.auto_link content
     end
 
+    def add_table_captions(content)
+      TableCaptions.new(content).render
+    end
+
     def render
-      autolink_html render_markdown
+      add_table_captions autolink_html render_markdown
     end
 
     def markdown
