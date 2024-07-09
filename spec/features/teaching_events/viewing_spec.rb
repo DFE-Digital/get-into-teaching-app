@@ -127,7 +127,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       context "when it's a School or University event" do
         let(:event) { build(:event_api, :school_or_university_event, web_feed_id: nil) }
 
-        it { is_expected.to have_content("To register for this event, follow the instructions in the event information section.") }
+        it { is_expected.not_to have_css("h2", text: "How to attend") }
         it { is_expected.not_to have_link(register_link_text) }
       end
 
@@ -136,17 +136,14 @@ RSpec.feature "Searching for teaching events", type: :feature do
           let(:url) { "https://event-provider.com" }
           let(:event) { build(:event_api, :online_event, web_feed_id: nil, provider_website_url: url) }
 
-          it { is_expected.to have_content("To register for this event, visit the event provider's website.") }
-          it { is_expected.to have_link(register_link_text, href: url) }
+          it { is_expected.to have_link("Visit the event provider's website", href: url) }
         end
 
         context "when the provider has an email address" do
           let(:email) { "events@event-provider.com" }
           let(:event) { build(:event_api, :online_event, web_feed_id: nil, provider_contact_email: email) }
 
-          it { is_expected.to have_content("To register for this event,") }
-          it { is_expected.to have_link("email the event provider", href: "mailto:" + email) }
-          it { is_expected.not_to have_link(register_link_text) }
+          it { is_expected.to have_link(email, href: "mailto:" + email) }
         end
       end
     end
