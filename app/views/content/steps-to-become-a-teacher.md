@@ -104,6 +104,8 @@
     - get an adviser
   inset_text:
     international-content:
+      header: Non-UK citizens
+      title: additional steps
       text: There are more steps to consider if you're <a href="/non-uk-teachers">a non-UK citizen</a>.
       color: purple
 ---
