@@ -9,5 +9,5 @@ image: "static/images/content/hero-images/0035.jpg"
 layout: "layouts/minimal"
 colour: pink-blue
 talk_to_us: false
-noindex: true
+noindex: false
 ---
