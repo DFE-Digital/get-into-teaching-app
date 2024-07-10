@@ -62,20 +62,20 @@ Figures apply from $salaries_date_appliesfrom$.
 
 ## Primary and secondary teacher salary
 
-If you have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you’ll get a minimum starting salary of £30,000 (or more in London) as a primary or secondary school teacher in England.
+If you have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you’ll get a minimum starting salary of $salaries_starting_min$ (or more in London) as a primary or secondary school teacher in England.
 
 Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.
 
-A typical teacher could earn at least £41,333 (or more in London) within 5 years.
+A typical teacher could earn at least $salaries_fiveyears_max$ (or more in London) within 5 years.
 
 ### Qualified teacher salary
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| England (excluding London)     | £30,000 | £46,525 |
-| London fringe                            | £31,350 | £47,839 |
-| Outer London                             | £34,514 | £51,179 |
-| Inner London                             | £36,745 | £56,959 |
+| England (excluding London)     | $salaries_qualifiedteacher_englandmin$ | $salaries_qualifiedteacher_englandmax$ |
+| London fringe                            | $salaries_qualifiedteacher_londonfringemin$ | $salaries_qualifiedteacher_londonfringemax$ |
+| Outer London                             | $salaries_qualifiedteacher_outerlondonmin$ | $salaries_qualifiedteacher_outerlondonmax$ |
+| Inner London                             | $salaries_qualifiedteacher_innerlondonmin$ | $salaries_qualifiedteacher_innerlondonmax$ |
 
 ### Additional payments
 

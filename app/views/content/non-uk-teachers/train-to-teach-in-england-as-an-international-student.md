@@ -68,7 +68,7 @@ living costs
 - depending on your immigration status and the subject you train to teach, you may get some financial support
 - training lasts one academic year full-time, or longer part-time
 - you can apply for paid teaching jobs as soon as you successfully complete your training and gain English qualified teacher status (QTS)
-- you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher 
+- you'll earn at least $salaries_starting_min$ a year (or more in London) when you qualify as a teacher
 - you can update, extend or switch your visa to live and work in the UK long-term
 
 ## Already a qualified teacher?
@@ -81,7 +81,7 @@ Teacher training in England is practical, hands-on and supportive. As an interna
 
 When you have successfully completed your training, you will be awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
 
-QTS will allow you to apply for teaching jobs in all schools in England.    
+QTS will allow you to apply for teaching jobs in all schools in England.
 
 [Read teachers' stories about the rewards of training to teach in England](/blog).
 
@@ -95,13 +95,13 @@ For teachers who qualified outside the UK, as well as those with teaching experi
 
 ## Check your qualifications and get help
 
-Before you apply, you must [check your qualifications](/non-uk-teachers/non-uk-qualifications). If you gained your qualifications outside the UK, we can help you check they meet the required standard in England. 
+Before you apply, you must [check your qualifications](/non-uk-teachers/non-uk-qualifications). If you gained your qualifications outside the UK, we can help you check they meet the required standard in England.
 
 To get help with your qualifications, you can use the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country's standard rate.
 
-We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England. 
+We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
 
-When you speak to us, we can also tell you if you're eligible for a [teacher training adviser](/teacher-training-advisers). 
+When you speak to us, we can also tell you if you're eligible for a [teacher training adviser](/teacher-training-advisers).
 
 ## Find out about fees and financial support
 
@@ -114,7 +114,7 @@ Fees cost:
 
 You’ll also have to cover your living costs.
 
-If you're planning on training to teach languages or physics, you could be eligible for a bursary or scholarship worth up to £30,000. 
+If you're planning on training to teach languages or physics, you could be eligible for a bursary or scholarship worth up to £30,000.
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
@@ -142,14 +142,14 @@ Salaried courses include:
 * postgraduate teaching apprenticeships
 
 [Find out more about salaried teacher training](/funding-and-support/salaried-teacher-training).
- 
-### Choosing a subject to teach 
 
-The subject you apply to teach must usually be the same as, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) 
+### Choosing a subject to teach
+
+The subject you apply to teach must usually be the same as, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.)
 
 ### Finding the right course for you and getting help
 
-[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists courses leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
+[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists courses leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
 
 You can also search courses by:
 
@@ -165,7 +165,7 @@ It's important that you give yourself time to write the best possible [personal 
 
 Your personal statement can be up to 1000 words. 90% of successful candidates write 500 words or more.
 
-If you have a [teacher training adviser](/help-and-support), they can help you write your personal statement and will also give advice on: 
+If you have a [teacher training adviser](/help-and-support), they can help you write your personal statement and will also give advice on:
 
 * your choice of course and training provider
 * your choice of subject
@@ -177,7 +177,7 @@ If you have a [teacher training adviser](/help-and-support), they can help you w
 
 If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
 
-For your teacher training place offer to be confirmed, you’ll have to pass criminal record and health checks, so we recommend applying to your training provider early. You can apply for teacher training from October, for courses starting the following year in September or January. 
+For your teacher training place offer to be confirmed, you’ll have to pass criminal record and health checks, so we recommend applying to your training provider early. You can apply for teacher training from October, for courses starting the following year in September or January.
 
 Due to rules about immigration, not all providers can accept international applicants – we suggest you contact them before you apply to check.
 
@@ -198,7 +198,7 @@ If you do not have settled or pre-settled status under the EU Settlement Scheme,
 
 * you must apply for a visa or immigration status allowing you to work in the UK
 * you must have been living in the UK for 3 or more years before the start of your apprenticeship
- 
+
 If you are resident in the UK, you may already have a visa or immigration status allowing you to work – for example, a graduate visa. If you need to apply for another visa – for example, a skilled worker visa – you'll need to do this after you've been given a place on a postgraduate teaching apprenticeship.
 
 [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists fee-paying and salaried training courses, including postgraduate teaching apprenticeships, leading to qualified teacher status.
@@ -207,7 +207,7 @@ If you are resident in the UK, you may already have a visa or immigration status
 
 ## Apply for your visa
 
-To train to teach in England, you will need a visa or immigration status allowing you to study (or work, for salaried courses) in the UK. 
+To train to teach in England, you will need a visa or immigration status allowing you to study (or work, for salaried courses) in the UK.
 
 [Learn more about applying for the right visa for your teacher training course](/non-uk-teachers/visas-for-non-uk-trainees).
 

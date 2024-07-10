@@ -32,7 +32,6 @@ salaries:
     maxshortened: £41k
   average:
     classroomshortened: £40k
-# Detailed salaries
   qualifiedteacher:
     englandmin: £30,000
     englandmax: £46,525
