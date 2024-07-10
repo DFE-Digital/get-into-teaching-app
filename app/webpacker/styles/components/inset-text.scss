@@ -42,15 +42,11 @@ section.inset-text {
   h2,
   p {
     @include font-size("small");
+    margin: 0;
   }
 
   &.purple {
     background: rgba($purple, .1);
     border-left-color: $purple;
-  }
-
-  h2, 
-  p {
-    margin: 0;
   }
 }
