@@ -48,4 +48,9 @@ section.inset-text {
     background: rgba($purple, .1);
     border-left-color: $purple;
   }
+
+  h2, 
+  p {
+    margin: 0;
+  }
 }
