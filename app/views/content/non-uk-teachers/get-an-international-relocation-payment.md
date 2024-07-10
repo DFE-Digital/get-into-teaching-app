@@ -11,7 +11,7 @@ related_content:
 promo_content:
 navigation: 20.50
 navigation_title: Get an international relocation payment
-navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth $nonuk_internationalrelocationpayment_value$.
+navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth <%= v :nonuk_internationalrelocationpayment_value %>.
 date: "2021-05-27"
 image: "static/images/content/hero-images/0002.jpg"
 backlink: "../../"
