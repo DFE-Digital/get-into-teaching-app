@@ -45,16 +45,16 @@ You cannot receive a scholarship or bursary if you're on a [salaried teacher tra
 |-----------------------------------------------------------------------| -------: | ---------------: |
 | **Art and design**                                                    | $bursaries_postgraduate_artanddesign$  |                  |
 | **Biology**                                                           | $bursaries_postgraduate_biology$  |                  |
-| **Chemistry**                                                         | $bursaries_postgraduate_chemistry$  | £30,000          |
-| **Computing**                                                         | $bursaries_postgraduate_computing$  | £30,000          |
+| **Chemistry**                                                         | $bursaries_postgraduate_chemistry$  | $scholarships_chemistry$          |
+| **Computing**                                                         | $bursaries_postgraduate_computing$  | $scholarships_computing$          |
 | **Design and technology**                                             | $bursaries_postgraduate_designandtechnology$  |                  |
 | **English**                                                           | $bursaries_postgraduate_english$  |                  |
 | **Geography**                                                         | $bursaries_postgraduate_geography$  |                  |
-| **Languages**<br/> (French, German and Spanish only)                  | $bursaries_postgraduate_languagesfrenchgermanspanish$  | £27,000          |
+| **Languages**<br/> (French, German and Spanish only)                  | $bursaries_postgraduate_languagesfrenchgermanspanish$  | $scholarships_languagesfrenchgermanspanish$      |
 | **Languages**<br/> (all other languages, including ancient languages) | $bursaries_postgraduate_languagesother$  |                  |
-| **Maths**                                                             | $bursaries_postgraduate_maths$  | £30,000          |
+| **Maths**                                                             | $bursaries_postgraduate_maths$  | $scholarships_maths$         |
 | **Music**                                                             | $bursaries_postgraduate_music$  |                  |
-| **Physics**                                                           | $bursaries_postgraduate_physics$  | £30,000          |
+| **Physics**                                                           | $bursaries_postgraduate_physics$  | $scholarships_physics$        |
 | **Religious education**                                               | $bursaries_postgraduate_religiouseducation$  |                  |
 
 Table caption: Available postgraduate bursaries and scholarships
