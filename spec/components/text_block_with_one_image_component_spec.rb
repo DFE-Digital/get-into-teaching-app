@@ -4,7 +4,7 @@ RSpec.describe TextBlockWithOneImageComponent, type: "component" do
   subject! { Capybara.string(component) }
 
   let(:heading) { "A heading" }
-  let(:image_path) { "static/images/content/hero-images/0013.jpg" }
+  let(:image_path) { "static/images/content/hero-images/0001.jpg" }
   let(:image_alt) { "A very nice photograph" }
   let(:colour) { nil }
   let(:component) { render_inline(described_class.new(heading: heading, image_path: image_path, image_alt: image_alt, colour: colour)) }

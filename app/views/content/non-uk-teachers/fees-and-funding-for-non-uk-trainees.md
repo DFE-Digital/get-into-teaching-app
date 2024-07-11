@@ -13,7 +13,7 @@ navigation_title: Fees and financial support for non-UK trainee teachers
 navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
 
 date: "2021-05-27"
-image: "static/images/content/hero-images/0002.jpg"
+image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 keywords:
   - International
@@ -114,7 +114,7 @@ You will also need a [visa or immigration status](/non-uk-teachers/visas-for-non
 There are 2 types of financial support you can get if you’re interested in training to teach languages or physics:
 
 * bursaries worth up to $bursaries_postgraduate_nonuk$ for languages and physics
-* scholarships worth up to £30,000 for French, German, Spanish and physics
+* scholarships worth up to $scholarships_nonuk_max$ for French, German, Spanish and physics
 
 You cannot receive both a bursary and a scholarship.
 

@@ -24,7 +24,7 @@ module Header
       mode == :mobile ? :desktop : :mobile
     end
 
-    def nav_link(resource, mode)
+    def nav_link(resource, mode, underline_on_hover: true)
       title = resource.title
       path = resource.path
       li_id = "#{path.parameterize}-#{mode}"
@@ -34,7 +34,7 @@ module Header
       child_menu_ids = [child_menu_id, corresponding_child_menu_id].join(" ")
       li_css = ("active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)).to_s
       show_dropdown = resource.children?
-      link_css = "menu-link link link--black link--no-underline"
+      link_css = "menu-link link link--black link--no-underline #{underline_on_hover ? 'link--underline-on-hover' : ''}"
       aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_ids } : {}
       tag.li id: li_id, class: li_css, data: { "corresponding-id": corresponding_li_id, "child-menu-id": child_menu_id, "corresponding-child-menu-id": corresponding_child_menu_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown } do
         safe_join([
@@ -82,7 +82,7 @@ module Header
       corresponding_child_menu_id = page_list_id(resource, subcategory, corresponding_mode(mode))
       child_menu_ids = [child_menu_id, corresponding_child_menu_id].join(" ")
       li_css = ("active" if subcategory == front_matter["subcategory"]).to_s
-      link_css = "menu-link link link--black link--no-underline btn-as-link"
+      link_css = "menu-link link link--black link--no-underline link--underline-on-hover btn-as-link"
       aria_attributes = { expanded: false, controls: child_menu_ids }
       tag.li id: li_id, class: li_css, data: { "corresponding-id": corresponding_li_id, "child-menu-id": child_menu_id, "corresponding-child-menu-id": corresponding_child_menu_id, "direct-link": false } do
         safe_join(

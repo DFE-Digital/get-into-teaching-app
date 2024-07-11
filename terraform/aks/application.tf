@@ -49,4 +49,7 @@ module "web_application" {
   kubernetes_secret_name     = module.application_configuration.kubernetes_secret_name
 
   docker_image = var.docker_image
+  enable_logit = var.enable_logit
+
+  enable_prometheus_monitoring  = var.enable_prometheus_monitoring
 }

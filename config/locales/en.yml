@@ -100,7 +100,7 @@ en:
         name: "Chemistry"
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
-        funding: "Scholarships of £30,000 and bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Scholarships of %{scholarships_chemistry} and bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
       citizenship:
         name: "Citizenship"
         group: "Secondary"
@@ -124,7 +124,7 @@ en:
         name: "Computing"
         group: "Secondary"
         sub_head: "Computing - Secondary"
-        funding: "Scholarships of £30,000 and bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Scholarships of %{scholarships_computing} and bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
         next_steps: |-
           Find out more about <a href="/is-teaching-right-for-me/computing">how to become a computing teacher</a>.
       dance:
@@ -177,7 +177,7 @@ en:
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
         funding: |-
-          Scholarships of £27,000 are available for trainee French, German, and Spanish language teachers.
+          Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers.
 
           Bursaries of %{bursaries_postgraduate_languagesother} are available for all trainee language teachers, including ancient languages.
 
@@ -186,7 +186,7 @@ en:
         name: "Maths"
         group: "Secondary"
         sub_head: "Maths - Secondary"
-        funding: "Scholarships of £30,000 and bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Scholarships of %{scholarships_maths} and bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
         next_steps: |-
           If you have a passion for maths, find out more about <a href="/subjects/maths">becoming a maths teacher</a>.
       music:
@@ -203,7 +203,7 @@ en:
         name: "Physics"
         group: "Secondary"
         sub_head: "Physics - Secondary"
-        funding: "Scholarships of £30,000 and bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers (including non-UK citizens)."
+        funding: "Scholarships of %{scholarships_physics} and bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers (including non-UK citizens)."
         next_steps: |-
           Learn more about <a href="/subjects/physics">how to become a physics teacher</a>.
       psychology:

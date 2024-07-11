@@ -2,14 +2,6 @@
   <%= render Footer::TalkToUsComponent.new %>
 <% end %>
 
-<% if feedback? %>
-  <%= render Footer::FeedbackComponent.new %>
-<% end %>
-
-<% if mailing_list? %>
-  <%= render Footer::MailingListComponent.new %>
-<% end %>
-
 <%= render Footer::CookieAcceptanceComponent.new %>
 
 <footer class="site-footer">
