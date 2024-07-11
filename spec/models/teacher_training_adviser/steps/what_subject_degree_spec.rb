@@ -46,10 +46,10 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatSubjectDegree do
   describe "#autocomplete?" do
     before do
       allow(ENV).to receive(:fetch).and_call_original
-      allow(ENV).to receive(:fetch).with("ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE", false).and_return(adviser_degree_subject_autocomplete_flag)
+      allow(ENV).to receive(:fetch).with("ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE_ENABLED", false).and_return(adviser_degree_subject_autocomplete_flag)
     end
 
-    context "when ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE is not set" do
+    context "when ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE_ENABLED is not set" do
       let(:adviser_degree_subject_autocomplete_flag) { nil }
 
       it "returns false" do
@@ -57,7 +57,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatSubjectDegree do
       end
     end
 
-    context "when ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE=0" do
+    context "when ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE_ENABLED=0" do
       let(:adviser_degree_subject_autocomplete_flag) { "0" }
 
       it "returns false" do
@@ -65,7 +65,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatSubjectDegree do
       end
     end
 
-    context "when ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE=1" do
+    context "when ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE_ENABLED=1" do
       let(:adviser_degree_subject_autocomplete_flag) { "1" }
 
       it "returns true" do

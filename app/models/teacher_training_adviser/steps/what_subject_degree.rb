@@ -21,7 +21,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def autocomplete?
-      @autocomplete ||= ActiveModel::Type::Boolean.new.cast(ENV.fetch("ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE", false))
+      @autocomplete ||= ActiveModel::Type::Boolean.new.cast(ENV.fetch("ADVISER_DEGREE_SUBJECT_AUTOCOMPLETE_ENABLED", false))
     end
   end
 end
