@@ -48,11 +48,11 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 * to apply for English 'qualified teacher status', or be able to demonstrate strong non-UK qualifications and experience 
 * a high standard of written and spoken English
 * to pass criminal and professional safeguarding checks (these will be organised by your employer)
-* a visa or immigration status allowing you to work in the UK
+* [a visa or immigration status allowing you to work in the UK](/non-uk-teachers/visas-for-non-uk-teachers)
 
 ## Get an international relocation payment (IRP) worth £10,000
 
-If you are interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for a single payment of £10,000 from the UK government. [Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment). 
+If you're interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for a single payment of £10,000 from the UK government. [Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
 
 ## English qualified teacher status (QTS)
 
@@ -97,9 +97,9 @@ In addition, if you have a subject specialism in languages, maths or science and
 * Singapore
 * South Africa
 
- Visit ['Awarding qualified teacher status to overseas teachers'](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) to check the eligibility criteria and apply for QTS in England.  
-
-### Other routes to QTS in England 
+ Visit ['Awarding qualified teacher status to overseas teachers'](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) to check the eligibility criteria and apply for QTS in England.
+ 
+### Other routes to QTS in England 
 
 Many teachers will not meet the requirements for QTS. If you’re not eligible, you may be able to [find an alternative route to QTS which better suits your circumstances](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk).
 
@@ -155,19 +155,7 @@ You can prepare for these checks by getting a letter from the organisation which
 
 To teach in England, you will need a visa or immigration status allowing you to work in the UK.
 
-You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them.
-
-[If you're an Irish citizen you do not need a visa](https://www.gov.uk/government/publications/common-travel-area-guidance).
-
-If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa) or [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
-
-#### Already living in the UK?
-
-You may have a pre-existing right to work in the UK, such as settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain in the UK](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk).
-
-#### How to apply
-
- Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](/non-uk-teachers/visas-for-non-uk-teachers).  
+Learn more about [applying for the right visa for your teaching job](/non-uk-teachers/visas-for-non-uk-teachers). 
 
 ## Life as a teacher in England
 

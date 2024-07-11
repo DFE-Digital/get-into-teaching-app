@@ -9,7 +9,7 @@ related_content:
     Apply for your visa to teach in England: "/non-uk-teachers/visas-for-non-uk-teachers"
     Apply for your visa to train to teach in England: "/non-uk-teachers/visas-for-non-uk-trainees"
 promo_content:
-navigation: 20.50
+navigation: 20.60
 navigation_title: Get an international relocation payment
 navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth £10,000.
 date: "2021-05-27"
