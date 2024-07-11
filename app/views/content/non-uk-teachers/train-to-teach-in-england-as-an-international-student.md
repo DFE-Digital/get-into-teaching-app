@@ -11,7 +11,7 @@ navigation: 20.10
 navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
 date: "2021-05-27"
-image: "static/images/content/hero-images/0003.jpg"
+image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 keywords:
   - International
@@ -114,7 +114,7 @@ Fees cost:
 
 You’ll also have to cover your living costs.
 
-If you're planning on training to teach languages or physics, you could be eligible for a bursary or scholarship worth up to £30,000.
+If you're planning on training to teach languages or physics, you could be eligible for a bursary or scholarship worth up to $scholarships_nonuk_max$.
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
