@@ -18,6 +18,12 @@ calls_to_action:
           Use our service to search for and organise a primary or secondary school placement in England.        
         link_text: "Get school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
+expander:
+  experience:
+    title: experience in a classroom in England
+    text: To get experience in a school in England, you'll need the right to work in the UK. If you don't have experience in a classroom, you can still apply for teacher training.
+    link_title: Find out about applying for teacher training from outside the UK.
+    link_url: /non-uk-teachers/train-to-teach-in-england-as-an-international-student        
 ---
 
 It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. You might need specific training or qualifications in some areas. This page explains more about the different options.
@@ -62,6 +68,7 @@ Once you have QTS, you're qualified to teach in primary and secondary schools. H
 The best way to work out which age group you would like to teach is to get real life experience in a classroom. 
 
 $get-school-experience$
+$experience$
 
 If you’re studying for an undergraduate or master's degree and interested in teaching chemistry, computing, languages, maths or physics, then you could do a [paid teaching internship](/is-teaching-right-for-me/teaching-internship-providers) to find out if teaching is right for you.
 
