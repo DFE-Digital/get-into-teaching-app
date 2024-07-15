@@ -38,7 +38,21 @@ inset_text:
   still-time-to-apply:
     text: There's still time for you to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn how you can find the right course for you and get help with your application</a>.
     color: yellow
-
+expander:
+  visas:
+    title: visas
+    text: |-
+      <p>
+      If you're a non-UK citizen and need a visa to come to England to train to teach, you need to make sure the course you’re applying for sponsors visas.  
+      </p>
+      <p>
+      Find out <a href="/non-uk-teachers/visas-for-non-uk-trainees">how to apply for a visa to train to teach in England</a>.</p>
+  check-your-qualifications:
+    title: check your qualifications
+    text: |-
+      <p>
+      If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>. 
+      </p>
 ---
 
 $still-time-to-apply$
@@ -53,12 +67,9 @@ Make sure you check which qualification you’ll get through your training cours
 
 While you do not need a PGCE to teach in England, you do need QTS to teach in many primary and secondary schools.
 
-<div class="inset">
-<p>If you're a non-UK citizen and need a visa to come to the UK to train to teach, you need to make sure the course you’re applying for sponsors visas. <a href="/non-uk-teachers/visas-for-non-uk-trainees">Find out more about how to apply for a visa to train to teach in England</a>.</p>
-
-</div>
-
 [Find a postgraduate teacher training course](https://www.find-postgraduate-teacher-training.service.gov.uk/). 
+
+$visas$
 
 ## When should I apply for teacher training? 
 
@@ -89,7 +100,9 @@ You’ll need to provide details about your:
 
 Training providers will also accept some equivalent qualifications, for example, if you’re a non-UK citizen. 
 
-[Find out more about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach). 
+[Find out more about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach).
+
+$check-your-qualifications$
 
 ### Your work experience 
 

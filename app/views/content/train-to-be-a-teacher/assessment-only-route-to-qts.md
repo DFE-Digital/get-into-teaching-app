@@ -20,6 +20,12 @@ fullwidth: true
 content:
   - content/train-to-be-a-teacher/assessment-only-route-to-qts/listing
   - content/train-to-be-a-teacher/assessment-only-route-to-qts/update-details
+expander:
+  assessment-only-qts:
+    title: assessment only QTS
+    text: |-
+      <p>
+      Find out about the <a href="/train-to-be-a-teacher/assessment-only-route-to-qts#group--non-uk">assessment only route to qualified teacher status for non-UK citizens</a>.</p>
 provider_groups:
   East of England:
     providers:
@@ -523,6 +529,8 @@ keywords:
 If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) through an assessment only programme.
 
 If you already have QTS, find out how you can [return to teaching](https://teaching-vacancies.campaign.gov.uk/return-to-teaching/).
+
+$assessment-only-qts$
 
 ## What is the assessment only route to QTS?
 

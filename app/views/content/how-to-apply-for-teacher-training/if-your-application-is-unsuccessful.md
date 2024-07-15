@@ -25,6 +25,22 @@ keywords:
   - applying for teacher training
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
+expander:
+  check-your-qualifications:
+    title: check your qualifications
+    text: |-
+      <p>
+      If you have qualifications from outside the UK, you should be able to request copies of your school results and degree from the places where you did them.
+      </p>
+      <p>You’ll need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>.</p>
+  visa-sponsorship:
+    title: visa sponsorship
+    text: |-
+      <p>
+      You’ll need the right to work or study in the UK to do your teacher training in England.
+      </p>
+      <p>If you do not have the right to work in the UK, you should only apply to courses that have visa sponsorship available. You can filter by ‘visa sponsorship’ to <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/">find courses where visas can be sponsored</a>.</p>
+      <p>If your application is successful, the training provider may be able to help you with applying for your visa. <a href="/non-uk-teachers/visas-for-non-uk-trainees">Find out how to apply for your visa to train to teach in England</a>.</p>
 ---
 
 Try not to worry - you can reapply if your application is unsuccessful. Many people are successful the second or third time around.
@@ -55,7 +71,7 @@ You’ll need a bachelor's degree or equivalent to train to teach. If you do not
 
 To help show your qualifications, you can [get a certified statement of your exam results](https://www.gov.uk/replacement-exam-certificate) if you did your GCSEs and A levels in the UK. You should also be able to request a copy of your degree certificate from the organisation where you studied in the UK.
 
-If you got your qualifications outside the UK, you should be able to request copies of your school results and degree from the places where you did them.
+$check-your-qualifications$
 
 ### Lack of subject knowledge
 
@@ -65,9 +81,7 @@ You may be able to do a subject knowledge enhancement (SKE) course to top up you
 
 It may help to [get some school experience](/is-teaching-right-for-me/get-school-experience) so you can find out what it’s like to be a teacher and improve your knowledge and skills.
 
-### No visa sponsorship
-
-Find out more about [how visa sponsorships work](/non-uk-teachers/train-to-teach-in-england-as-an-international-student) if you want to train to teach in the UK. You may also find another training provider that will sponsor a visa by searching for courses and then filtering by ‘Only show courses with visa sponsorship’.
+$visa-sponsorship$
 
 ## Get advice on what to do next
 

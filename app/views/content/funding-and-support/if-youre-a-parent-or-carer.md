@@ -23,10 +23,15 @@ keywords:
     - Grant
     - Parents
     - Carers
-inset_text:
+expander:
   international-content:
-    text: Most non-UK citizens without <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a> will not be eligible for this financial support. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.
-    color: grey
+    title: funding and support if you're disabled
+    text: |-
+      <p>
+      If you do not have <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for this financial support (unless you’ve applied to the Afghan or Ukraine resettlement schemes).  
+      </p>
+      <p>
+      You will still be entitled to adjustments to help you train. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.</p>
 ---
 
 If you have children or other caring responsibilities, you may be able to get extra financial support while training to teach.
