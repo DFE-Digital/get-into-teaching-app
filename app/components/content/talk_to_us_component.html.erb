@@ -25,6 +25,13 @@
           <%= render ChatComponent.new %>
         </div>
       </div>
+        </div>
+      <div class="inset">
+          <%= render Content::InsetTextComponent.new(
+            header: "Non-UK citizens:",
+            text: "You can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate.",
+            color: "purple-white"
+          ) %>
+      </div>
     </div>
-  </div>
 </div>
