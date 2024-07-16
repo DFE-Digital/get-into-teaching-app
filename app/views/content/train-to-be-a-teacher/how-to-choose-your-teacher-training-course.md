@@ -31,9 +31,6 @@ expander:
       <p>
       <a href="/non-uk-teachers/non-uk-qualifications">You can get help comparing English and international qualifications</a>.
       </p>
-      <p>
-      If your application is successful, the training provider may be able to help you with applying for your visa. <a href="https://www.find-postgraduate-teacher-training.service.gov.uk/">Find out how to apply for your visa to train to teach in England</a>.
-      </p>
       <h3>Your right to work or study in the UK<h3>
       <p>
       You’ll need the right to work or study in the UK to do your teacher training in England.</p>
