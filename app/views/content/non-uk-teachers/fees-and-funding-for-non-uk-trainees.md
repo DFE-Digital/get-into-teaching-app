@@ -113,7 +113,7 @@ You will also need a [visa or immigration status](/non-uk-teachers/visas-for-non
 
 There are 2 types of financial support you can get if you’re interested in training to teach languages or physics:
 
-* bursaries worth up to £28,000 for languages and physics
+* bursaries worth up to $bursaries_postgraduate_nonuk$ for languages and physics
 * scholarships worth up to $scholarships_nonuk_max$ for French, German, Spanish and physics
 
 You cannot receive both a bursary and a scholarship.
