@@ -10,42 +10,29 @@
       Tax-free bursaries of £28,000 or scholarships of <%= v :scholarships_maths %> are available for eligible trainee maths teachers.
     </p>
   </section>
-
-  <section class="col col-space-s col-content-max">
-    <%= render TextBlockWithTwoImagesComponent.new(
-      heading: "Making maths add up",
-      colour: "pink",
-      image_1_path: "static/images/content/hero-images/classroom-2.jpg",
-      image_1_alt: "",
-      image_2_path: "static/images/content/hero-images/teacher.jpg",
-      image_2_alt: "",
-    ) do %>
-      <p>
-        Maths is critical to science, technology and engineering as well as being fundamental for most jobs.
-      </p>
-      <p>
-        A good understanding of maths can help children develop life skills such as cooking, managing a budget and problem solving.
-      </p>
-      <p>
-        It's also our government's goal for all young people to study maths to age 18.
-      </p>
-    <% end %>
+   
+   <section class="col col-720">
+    <h2 class="heading--box-blue">Making maths add up</h2>
+    <div class="inset">
+      <p>Maths is critical to science, technology and engineering as well as being fundamental for most jobs.</p>
+      <p>A good understanding of maths can help children develop life skills such as cooking, managing a budget and problem solving. It's also our government's goal for all young people to study maths to age 18.</p>
+    </div>
   </section>
 
   <section class="col col-720">
-    <h2>What you'll be teaching</h2>
+    <h2 class="heading--box-blue">What you'll be teaching</h2>
     <p>
       You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study">national curriculum for maths</a>.
     </p>
-    <p>
+    <h4>
       Themes you’ll cover when you teach 11 to 16 year olds (key stage 3 and 4) include:
-    </p>
-    <ul class="vertical-tags">
-      <li class="tag">Numbers</li>
-      <li class="tag">Algebra</li>
-      <li class="tag">Ratio, proportion and rates of change</li>
-      <li class="tag">Geometry and measures</li>
-      <li class="tag">Probability and statistics</li>
+    </h4>
+    <ul>
+      <li>Numbers</li>
+      <li>Algebra</li>
+      <li>Ratio, proportion and rates of change</li>
+      <li>Geometry and measures</li>
+      <li>Probability and statistics</li>
     </ul>
     <p>
       When you're teaching key stages 3 and 4 you can use interactive games with conkers and dice to help your pupils understand algebra and probability.
@@ -53,23 +40,26 @@
     <p>
       <a href="https://www.thenational.academy/teachers/programmes/maths-secondary-ks3-l/units">Explore what teaching a key stage 3 maths lesson would be like</a>.
     </p>
-    <p>
-      Themes you’ll cover when you teach 16 to 18 year olds (key stage 5), A or AS level core maths include:
-    </p>
-    <ul class="vertical-tags">
-      <li class="tag">Analysis of data</li>
-      <li class="tag">Maths for personal finance</li>
-      <li class="tag">Estimation</li>
-      <li class="tag">Critical analysis of given data and models</li>
-    </ul>
   </section>
-
   <section class="col col-720">
-    <%= render Content::QuoteComponent.new(
+      <%= render Content::QuoteComponent.new(
       text: "I try to find out what they’re interested in, whether it’s card games, football or whatever, and use this to make maths relevant.",
       name: "Dimitra, maths teacher",
       large: true
     ) %>
+  </section>
+
+  <section class="col col-720">
+    <h4>Themes you’ll cover when you teach 16 to 18 year olds (key stage 5), A or AS level core maths include:</h4>
+    <ul>
+      <li>Analysis of data</li>
+      <li>Maths for personal finance</li>
+      <li>Estimation</li>
+      <li>Critical analysis of given data and models</li>
+    </ul>
+  </section>
+
+  <section class="col col-720">
     <%= render Content::PhotoQuoteListComponent.new(
       [
         {
@@ -85,7 +75,8 @@
   </section>
 
   <section class="col col-space-m col-720">
-    <h2>Check your qualifications</h2>
+    <h2 class="heading--box-blue">Start your teaching journey</h2>
+    <h3>Check your qualifications</h3>
     <p>
       To train to teach in secondary schools in England, you’ll need:
     </p>
@@ -102,13 +93,17 @@
     <p>
       Non-UK citizens can <a href="/non-uk-teachers/non-uk-qualifications">check your eligibility to train to teach in England</a>.
     </p>
+  </section>
 
+  <section class="col col-space-m col-720">
     <h3>Subject knowledge enhancement course (SKE)</h3>
     <p>
       If your training provider thinks you need to top up your maths knowledge, you might need to do an <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">SKE course</a> before you start your teacher training.
     </p>
+  </section>
 
-    <h2>Fund your teacher training</h2>
+  <section class="col col-space-m col-720">
+    <h3>Fund your teacher training</h3>
     <p>
       <a href="/funding-and-support/scholarships-and-bursaries"> Tax-free bursaries of £28,000 or scholarships of <%= v :scholarships_maths %></a> are available for eligible trainee maths teachers.
     </p>
@@ -128,8 +123,10 @@
     <p>
       Find out more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.
     </p>
+  </section>
 
-    <h2>Paid internship</h2>
+  <section class="col col-space-m col-720">
+    <h3>Paid internship</h3>
     <p>
       If you’re currently doing an undergraduate or master's degree and are interested in teaching maths, you could apply for a <a href="/is-teaching-right-for-me/teaching-internship-providers">paid teaching internship</a>.
     </p>
