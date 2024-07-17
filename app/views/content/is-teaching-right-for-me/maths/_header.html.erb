@@ -1,10 +1,6 @@
 <%= render Content::LandingHeroComponent.new(
-  title: "Become a maths teacher",
-  title_paragraph: "If maths is your passion, you'll know that it's not just learning formulas or solving equations. It's a way of thinking and problem solving that’s important in every walk of life.
-
-As a secondary maths teacher, an exciting career spent passing your knowledge on to the next generation could be for you.
-
-Tax-free bursaries of £28,000 or scholarships of £30,000 are available for eligible trainee maths teachers.",
+  title: @front_matter ["title"],
+  title_paragraph: @front_matter ["title_paragraph"],
   colour: @front_matter["colour"],
   image: @front_matter["image"]
 ) %>

@@ -9,8 +9,10 @@
         <%= tag.span(p) %>
       <% end %>
     <% end %>
+    
+    <% if show_title_paragraph? %>
     <%= helpers.safe_format(title_paragraph) %>
-
+    <% end %>
   <% end %>
 
 <% end %>
