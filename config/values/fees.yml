@@ -5,11 +5,10 @@ fees:
   iQTS:
     low: £7,950
     high: £9,950
-  ## to implement below this line
   pgitt:
     domesticfulltime: £9,250
     domesticparttime: £6,935
-    internationalaverage: £14,765
+    internationalaverage: £15,000
     internationalmaxfulltime: £36,000
     internationalmaxparttime: £17,500
   ugitt: £9,250

@@ -63,7 +63,7 @@ keywords:
 
 Citizens of every country in the world can apply to train to teach in England. When you plan your training, bear in mind that:
 
-- international candidates can expect to pay an average of £14,765 to train, plus
+- international candidates can expect to pay an average of about $fees_pgitt_internationalaverage$ to train, plus
 living costs
 - depending on your immigration status and the subject you train to teach, you may get some financial support
 - training lasts one academic year full-time, or longer part-time
