@@ -7,7 +7,7 @@ related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
- youtube_video:
+youtube_video:
   why-train-video:
     id: WhBBL_DpHFo
     title: Why train to teach in England 
