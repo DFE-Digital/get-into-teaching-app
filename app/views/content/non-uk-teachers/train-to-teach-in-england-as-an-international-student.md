@@ -7,6 +7,10 @@ related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
+ youtube_video:
+  why-train-video:
+    id: WhBBL_DpHFo
+    title: Why train to teach in England 
 navigation: 20.10
 navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
@@ -245,6 +249,12 @@ Learn more about:
 - [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
 - [join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
 - [read interviews with real teachers](/blog)
+
+## Non-UK citizens who trained to teach in England share their experiences
+
+$why-train-video$
+
+[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-in-england-video-transcript).
 
 ## Contact
 
