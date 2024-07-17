@@ -1,4 +1,4 @@
-<%= tag.header(class: classes) do %>
+<%= tag.header(class: "#{classes.join(' ')} #{title_paragraph ? 'deeper' : 'landing-hero'}") do %>
 
   <%= header_image %>
 
@@ -9,10 +9,7 @@
         <%= tag.span(p) %>
       <% end %>
     <% end %>
-
-    <% if show_title_paragraph? %>
-      <%= tag.p(title_paragraph, class: "title_paragraph") %>
-    <% end %>
+    <%= helpers.safe_format(title_paragraph) %>
 
   <% end %>
 

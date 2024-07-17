@@ -1,21 +1,24 @@
 <div class="row inset">
   <section class="col col-720 col-space-l-top">
-    <p>
-      If maths is your passion, you'll know that it's not just learning formulas or solving equations. It's a way of thinking and problem solving that’s important in every walk of life.
-    </p>
-    <p>
-      As a secondary maths teacher, an exciting career spent passing your knowledge on to the next generation could be for you.
-    </p>
-    <p>
-      Tax-free bursaries of £28,000 or scholarships of <%= v :scholarships_maths %> are available for eligible trainee maths teachers.
-    </p>
-  </section>
-  <section class="col col-720">
     <h2 class="heading--box-blue">Making maths add up</h2>
     <div class="inset">
       <p>Maths is critical to science, technology and engineering as well as being fundamental for most jobs.</p>
       <p>A good understanding of maths can help children develop life skills such as cooking, managing a budget and problem solving. It's also our government's goal for all young people to study maths to age 18.</p>
     </div>
+  </section>
+    <section class="col col-720">
+    <%= render Content::PhotoQuoteListComponent.new(
+      [
+        {
+          image: "static/images/content/subjects/rotna-roy.jpeg",
+          heading: "Empowering my pupils",
+          text: "I enjoy showing my pupils that maths is essential in everyday life. Whether it is identifying patterns, interpreting data, managing finances, or understanding the spaces and structures around us, everything uses maths.",
+          accreditation: "Rotna, maths teacher",
+        }
+      ],
+      colors: %w[yellow],
+      numbered: false
+    ) %>
   </section>
   <section class="col col-720">
     <h2 class="heading--box-blue">What you'll be teaching</h2>
@@ -40,13 +43,6 @@
     </p>
   </section>
   <section class="col col-720">
-      <%= render Content::QuoteComponent.new(
-      text: "I try to find out what they’re interested in, whether it’s card games, football or whatever, and use this to make maths relevant.",
-      name: "Dimitra, maths teacher",
-      large: true
-    ) %>
-  </section>
-  <section class="col col-720">
     <h4>Themes you’ll cover when you teach 16 to 18 year olds (key stage 5), A or AS level core maths include:</h4>
     <ul>
       <li>Analysis of data</li>
@@ -55,18 +51,11 @@
       <li>Critical analysis of given data and models</li>
     </ul>
   </section>
-  <section class="col col-720">
-    <%= render Content::PhotoQuoteListComponent.new(
-      [
-        {
-          image: "static/images/content/subjects/rotna-roy.jpeg",
-          heading: "Empowering my pupils",
-          text: "I enjoy showing my pupils that maths is essential in everyday life. Whether it is identifying patterns, interpreting data, managing finances, or understanding the spaces and structures around us, everything uses maths.",
-          accreditation: "Rotna, maths teacher",
-        }
-      ],
-      colors: %w[yellow],
-      numbered: false
+    <section class="col col-720">
+      <%= render Content::QuoteComponent.new(
+      text: "I try to find out what they’re interested in, whether it’s card games, football or whatever, and use this to make maths relevant.",
+      name: "Dimitra, maths teacher",
+      large: true
     ) %>
   </section>
   <section class="col col-space-m col-720">

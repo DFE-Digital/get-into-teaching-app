@@ -290,6 +290,15 @@ $mobile-cutoff: 800px;
 	@include mq($from: tablet) {
 		max-height: 420px;
 		flex-direction: row-reverse;
+		
+		// Deeper headings if there's a paragraph
+		&.deeper {
+			max-height: fit-content;
+
+			.content h1.title {
+				margin-bottom: 0.5em;
+			}
+		}
 	}
 
 	// 50% width on child items '.content' and 'picture' (100% on mobile)
