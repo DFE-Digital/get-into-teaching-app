@@ -131,7 +131,7 @@ As part of your application, schools will usually ask for your:
 * personal statement
 * references
 
-Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school. [Get tips on writing a personal statement](https://teaching-vacancies.service.gov.uk/jobseeker-guides/how-to-write-teacher-personal-statement).
+Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school. [Get tips on writing a personal statement](https://teaching-vacancies.service.gov.uk/jobseeker-guides/get-help-applying-for-your-teaching-role/how-to-write-teacher-personal-statement).
 
 If you’re shortlisted, you’ll be invited for interview and asked to demonstrate your teaching skills. 
 
@@ -148,7 +148,7 @@ You can prepare for these checks by getting a letter from the organisation which
 
 
 <p class="call-to-action__action">
-  <a href="https://teaching-vacancies.service.gov.uk/?utm_source=int_teacher_recruitment&utm_medium=referral&utm_campaign=AY21-22">Search for teaching jobs in England</a>
+  <a href="https://teaching-vacancies.service.gov.uk/">Search for teaching jobs in England</a>
 </p>
 
 ## Apply for your visa
