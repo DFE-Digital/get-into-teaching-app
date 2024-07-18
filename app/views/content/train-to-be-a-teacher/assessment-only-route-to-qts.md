@@ -254,6 +254,11 @@ provider_groups:
       name: Gill Makin
       telephone: 0151 443 2663
       email: merseyboroughsitt@knowsley.gov.uk
+    - header: Prestolee SCITT
+      link: https://www.prestoleescitt.org.uk/assessment-only-qts
+      name: Lynsey Smith
+      telephone: 0161 843 6362
+      email: training@prestoleescitt.org.uk
     - header: University of Chester
       link: https://www.chester.ac.uk/
       name: Jane Bulkeley
