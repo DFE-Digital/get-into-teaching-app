@@ -18,7 +18,7 @@ quote:
 expander:
   application-deadlines:
     title: application deadlines
-    text: You should check the deadline for non-UK applications with training providers. They make close earlier than other applicants. 
+    text: You should check the deadline for non-UK applications with training providers. They may close earlier than for other applicants. 
 ---
 
 You can apply for postgraduate teacher training courses starting in September 2024 from 10 October 2023 to 17 September 2024. 
