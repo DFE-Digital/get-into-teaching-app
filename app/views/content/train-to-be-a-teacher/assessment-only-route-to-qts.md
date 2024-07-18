@@ -20,12 +20,13 @@ fullwidth: true
 content:
   - content/train-to-be-a-teacher/assessment-only-route-to-qts/listing
   - content/train-to-be-a-teacher/assessment-only-route-to-qts/update-details
-expander:
+inset_text:
   assessment-only-qts:
-    title: assessment only QTS
+    header: "Non-UK citizens:"
     text: |-
       <p>
       Find out about the <a href="/train-to-be-a-teacher/assessment-only-route-to-qts#group--non-uk">assessment only route to qualified teacher status for non-UK citizens</a>.</p>
+    color: purple
 provider_groups:
   East of England:
     providers:
