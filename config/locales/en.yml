@@ -51,36 +51,6 @@ en:
         group: "Primary"
         sub_head: "Primary"
         funding: ""
-      primary_with_english:
-        name: "Primary with English"
-        group: "Primary"
-        sub_head: "Primary with English"
-        funding: ""
-      primary_with_geography_and_history:
-        name: "Primary with geography and history"
-        group: "Primary"
-        sub_head: "Primary with geography and history"
-        funding: ""
-      primary_with_mathematics:
-        name: "Primary with mathematics"
-        group: "Primary"
-        sub_head: "Primary with mathematics"
-        funding: ""
-      primary_with_modern_languages:
-        name: "Primary with modern languages"
-        group: "Primary"
-        sub_head: "Primary with modern languages"
-        funding: ""
-      primary_with_physical_group:
-        name: "Primary with physical education"
-        group: "Primary"
-        sub_head: "Primary with physical education"
-        funding: ""
-      primary_with_science:
-        name: "Primary with science"
-        group: "Primary"
-        sub_head: "Primary with science"
-        funding: ""
       art_and_design:
         name: "Art and design"
         group: "Secondary"

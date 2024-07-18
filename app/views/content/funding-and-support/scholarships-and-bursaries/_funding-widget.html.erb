@@ -1,17 +1,20 @@
-<p>You may be eligible for a bursary or scholarship if your teacher training course leads to <%= link_to("qualified teacher status (QTS)", page_path("train-to-be-a-teacher/what-is-qts")) %>. These are tax-free amounts of money you receive to train in certain subjects. You do not need to pay them back.</p>
+<section class="col col-720">
+  <p>This page is for people who have a degree or are studying towards one, and want to do postgraduate teacher training in England.  To help fund your training, you may be eligible for a bursary or scholarship.</p>
 
-<p>Your bursary or scholarship will be paid in a minimum of 10 equal monthly instalments over the duration of your course by your teacher training provider.</p>
+  <%= render Content::ExpanderComponent.new(
+  title: "bursaries and scholarships",
+  text: "If you train to teach languages or physics, you may be eligible for a bursary or scholarship. Bursaries and scholarships are not available for other subjects..",
+  link_title: "Learn more about fees and financial support for non-UK trainee teachers.",
+  link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
+  ) %>
 
-<p>Your teacher training provider will confirm the payment dates and amounts.</p>
-
-<p>The following amounts apply if you're starting your teacher training course between September 2024 and July 2025.</p>
-
-<%= render Content::InsetTextComponent.new(
-  text: "If you’re a non-UK citizen without <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you will not usually be eligible for a bursary or scholarship,
-  unless you train to teach languages or physics. <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">Find out more about funding for non-UK citizens</a>.",
-  color: "grey"
-) %>
-
+  <p>Bursaries are tax-free payments aimed at encouraging graduates to train to teach certain subjects. If you're eligible for a bursary, you'll get it automatically.</p>
+  <p>Scholarships are tax-free payments provided by charitable organisations. As well as money, you'll have the opportunity to access benefits like mentors and networking. If you're eligible, you must apply and only a limited number of scholarships are awarded.</p>
+  <p>You cannot receive both a scholarship and a bursary.</p>
+  <p>This funding is not available for salaried teacher training. If you're considering a subject with available bursaries or scholarships, this may offer more financial support than salaried teacher training.</p>
+  <p>Although only certain subjects have bursaries and scholarships, this changes every year.</p>
+  <p>The figures on this page apply for [year period].</p>
+</section>
 <section id="funding-widget">
   <%= render FundingWidgetComponent.new(
     @funding_widget,
