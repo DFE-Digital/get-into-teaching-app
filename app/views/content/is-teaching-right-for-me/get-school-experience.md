@@ -30,7 +30,7 @@ quote:
 expander:
   non-uk-get-school-experience:
     title: get school experience
-    text: To get school experience in England, you'll need the right to work in the UK. This may be difficult if you have not started your training yet. However, you do not need classroom experience to train to teach in England.  
+    text: To use the Get school experience service, you'll need the right to work in the UK. This may be difficult if you have not started your training yet. However, you do not need classroom experience to train to teach in England.  
 ---
 
 You can visit schools to get unpaid experience in the classroom before you start your initial teacher training (ITT).
