@@ -32,7 +32,7 @@ expander:
     title: get QTS through teacher training
     text: |-
       <p>
-      If live outside of the UK, you can either get <a href="/non-uk-teachers/teach-in-england-if-you-trained-overseas#english-qualified-teacher-status-qts">qualified teacher status (QTS)</a> or <a href="/non-uk-teachers/international-qualified-teacher-status">international qualified teacher status (iQTS)</a>.</p>
+      If you live outside the UK, you can either get qualified teacher status (QTS) or <a href="/non-uk-teachers/international-qualified-teacher-status">international qualified teacher status (iQTS)</a>.</p>
       <p>
       With iQTS, you train to teach where you live or work, with no need to visit the UK. If you get iQTS, you automatically get QTS.
       </p>
