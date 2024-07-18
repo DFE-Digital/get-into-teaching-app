@@ -59,8 +59,8 @@ Use our Get school experience service to search for and request experience in En
 
 Once you've chosen a school, you can get more information about their placement availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a DBS check. 
 
-$get-school-experience$
 $non-uk-get-school-experience$
+$get-school-experience$
 
 ### Arrange school experience independently
 
