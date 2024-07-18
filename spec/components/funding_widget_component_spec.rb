@@ -35,7 +35,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
         it "is populated correclty" do
           expect(page).to have_css("optgroup[label='Primary']")
           expect(page).to have_css("optgroup[label='Secondary']")
-          expect(page).to have_css("option[value='primary_with_english']", text: "Primary with English")
+          expect(page).to have_css("option[value='primary']", text: "Primary")
           expect(page).to have_css("option[value='languages']", text: "Languages (including ancient languages)")
         end
       end
