@@ -6,7 +6,8 @@
       <p>A good understanding of maths can help children develop life skills such as cooking, managing a budget and problem solving. It's also our government's goal for all young people to study maths to age 18.</p>
     </div>
   </section>
-    <section class="col col-720">
+
+  <section class="col col-720">
     <%= render Content::PhotoQuoteListComponent.new(
       [
         {
@@ -20,14 +21,11 @@
       numbered: false
     ) %>
   </section>
+
   <section class="col col-720">
     <h2 class="heading--box-blue">What you'll be teaching</h2>
-    <p>
-      You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study">national curriculum for maths</a>.
-    </p>
-    <h4>
-      Themes you’ll cover when you teach 11 to 16 year olds (key stage 3 and 4) include:
-    </h4>
+    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study">national curriculum for maths</a>.</p>
+    <h4>Themes you'll cover when you teach 11 to 16 year olds (key stage 3 and 4) include:</h4>
     <ul>
       <li>Numbers</li>
       <li>Algebra</li>
@@ -35,15 +33,12 @@
       <li>Geometry and measures</li>
       <li>Probability and statistics</li>
     </ul>
-    <p>
-      When you're teaching key stages 3 and 4 you can use interactive games with conkers and dice to help your pupils understand algebra and probability.
-    </p>
-    <p>
-      <a href="https://www.thenational.academy/teachers/programmes/maths-secondary-ks3-l/units">Explore what teaching a key stage 3 maths lesson would be like</a>.
-    </p>
+    <p>When you're teaching key stages 3 and 4 you can use interactive games with conkers and dice to help your pupils understand algebra and probability.</p>
+    <p><a href="https://www.thenational.academy/teachers/programmes/maths-secondary-ks3-l/units">Explore what teaching a key stage 3 maths lesson would be like</a>.</p>
   </section>
+
   <section class="col col-720">
-    <h4>Themes you’ll cover when you teach 16 to 18 year olds (key stage 5), A or AS level core maths include:</h4>
+    <h4>Themes you'll cover when you teach 16 to 18 year olds (key stage 5), A or AS level core maths include:</h4>
     <ul>
       <li>Analysis of data</li>
       <li>Maths for personal finance</li>
@@ -51,74 +46,59 @@
       <li>Critical analysis of given data and models</li>
     </ul>
   </section>
-    <section class="col col-720">
-      <%= render Content::QuoteComponent.new(
-      text: "I try to find out what they’re interested in, whether it’s card games, football or whatever, and use this to make maths relevant.",
-      name: "Dimitra, maths teacher",
-      large: true
+
+  <section class="col col-720">
+    <%= render Content::QuoteComponent.new(
+    text: "I try to find out what they're interested in, whether it's card games, football or whatever, and use this to make maths relevant.",
+    name: "Dimitra, maths teacher",
+    large: true
     ) %>
   </section>
+
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching</h2>
     <h3>Check your qualifications</h3>
-    <p>
-      To train to teach in secondary schools in England, you’ll need:
-    </p>
+    <p>To train to teach in secondary schools in England, you'll need:</p>
     <ul>
       <li>GCSEs at grade 4 (C) or above in English and maths</li>
-      <li>a bachelor’s degree in any subject</li>
+      <li>a bachelor's degree in any subject</li>
     </ul>
-    <p>
-      Maths teacher training courses have had successful applications from candidates with a range of degrees, including psychology, music, architecture and law.
-    </p>
-    <p>
-      Find out more about what <a href="/is-teaching-right-for-me/qualifications-you-need-to-teach">qualifications you need to train to teach</a>.
-    </p>
- <%= render Content::ExpanderComponent.new(
+    <p>Maths teacher training courses have had successful applications from candidates with a range of degrees, including psychology, music, architecture and law.</p>
+    <p>Find out more about what <a href="/is-teaching-right-for-me/qualifications-you-need-to-teach">qualifications you need to train to teach</a>.</p>
+    <%= render Content::ExpanderComponent.new(
     title: "check your qualifications",
     text: "If you have qualifications from outside the UK, you'll need to show that they meet the standards set for teacher training in England.",
     link_title: "You can get help comparing English and international qualifications.",
     link_url: "/non-uk-teachers/non-uk-qualifications",
-  ) %>
+    ) %>
   </section>
+
   <section class="col col-space-m col-720">
     <h3>Subject knowledge enhancement course (SKE)</h3>
-    <p>
-      If your training provider thinks you need to top up your maths knowledge, you might need to do an <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">SKE course</a> before you start your teacher training.
-    </p>
+    <p>If your training provider thinks you need to top up your maths knowledge, you might need to do an <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">SKE course</a> before you start your teacher training.</p>
   </section>
+
   <section class="col col-space-m col-720">
     <h3>Fund your teacher training</h3>
-    <p>
-      <a href="/funding-and-support/scholarships-and-bursaries"> Tax-free bursaries of <%= v :bursaries_postgraduate_maths %> or scholarships of <%= v :scholarships_maths %></a> are available for eligible trainee maths teachers.
-    </p>
-    <p>
-      You can get a bursary or scholarship alongside a tuition fee loan and maintenance loan.
-    </p>
-    <p>
-      You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:
-    </p>
+    <p><a href="/funding-and-support/scholarships-and-bursaries"> Tax-free bursaries of <%= v :bursaries_postgraduate_maths %> or scholarships of <%= v :scholarships_maths %></a> are available for eligible trainee maths teachers.</p>
+    <p>You can get a bursary or scholarship alongside a tuition fee loan and maintenance loan.</p>
+    <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
     <ul>
       <li>a parent or carer</li>
       <li>disabled</li>
     </ul>
-    <p>
-      Find out more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.
-    </p>
-  <%= render Content::ExpanderComponent.new(
-    title: "bursaries and scholarships",
-    text: "If you do not have indefinite leave to remain in the UK, you're unlikely to be eligible for funding.",
-    link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
-    link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
-  ) %>
+    <p>Find out more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.</p>
+    <%= render Content::ExpanderComponent.new(
+      title: "bursaries and scholarships",
+      text: "If you do not have indefinite leave to remain in the UK, you're unlikely to be eligible for funding.",
+      link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
+      link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
+    ) %>
   </section>
+
   <section class="col col-space-m col-720">
     <h3>Paid internship</h3>
-    <p>
-      If you’re currently doing an undergraduate or master's degree and are interested in teaching maths, you could apply for a <a href="/is-teaching-right-for-me/teaching-internship-providers">paid teaching internship</a>.
-    </p>
-    <p>
-      The 3-week programme could help you to understand what it’s really like in the classroom and get a feel for school life.
-    </p>
+    <p>If you're currently doing an undergraduate or master's degree and are interested in teaching maths, you could apply for a <a href="/is-teaching-right-for-me/teaching-internship-providers">paid teaching internship</a>.</p>
+    <p>The 3-week programme could help you to understand what it's really like in the classroom and get a feel for school life.</p>
   </section>
 </div>
