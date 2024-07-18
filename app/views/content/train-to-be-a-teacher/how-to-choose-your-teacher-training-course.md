@@ -25,13 +25,11 @@ expander:
   what-you-need-to-get-onto-the-course:
     title: what you need to get onto the course
     text: |-
-      <h3>Check your qualifications<h3>
       <p>
       If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England.</p>
       <p>
       <a href="/non-uk-teachers/non-uk-qualifications">You can get help comparing English and international qualifications</a>.
       </p>
-      <h3>Your right to work or study in the UK<h3>
       <p>
       You’ll need the right to work or study in the UK to do your teacher training in England.</p>
       <p>
