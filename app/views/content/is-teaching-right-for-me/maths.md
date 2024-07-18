@@ -6,7 +6,7 @@ title_paragraph: |-
   <p>
   As a secondary maths teacher, an exciting career spent passing your knowledge on to the next generation could be for you. 
   <p>
-  Tax-free bursaries of <%= v :bursaries_postgraduate_maths %> or scholarships of $scholarships_maths$ are available for eligible trainee maths teachers.</p>
+  Tax-free bursaries of £28,000 or scholarships of £30,000 are available for eligible trainee maths teachers.</p>
 description: |-
     Find out how to become a maths teacher, including what you'll be teaching and what funding is available to help you train.
 subcategory: What to teach
