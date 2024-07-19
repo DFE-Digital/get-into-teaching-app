@@ -51,6 +51,8 @@ It’s worth looking at the feedback the course provider has given to understand
 
 There could be a number of reasons your application was unsuccessful:
 
+$visa-sponsorship$
+
 ### The course is full
 
 Unfortunately, popular courses do fill up quickly. You can [search for other courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) with a different provider if the one you applied for is now full.
@@ -80,8 +82,6 @@ You may be able to do a subject knowledge enhancement (SKE) course to top up you
 ### Lack of teaching or safeguarding knowledge
 
 It may help to [get some school experience](/is-teaching-right-for-me/get-school-experience) so you can find out what it’s like to be a teacher and improve your knowledge and skills.
-
-$visa-sponsorship$
 
 ## Get advice on what to do next
 

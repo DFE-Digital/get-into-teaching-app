@@ -531,8 +531,6 @@ If you’ve worked as an unqualified teacher, you may be able to get [qualified 
 
 If you already have QTS, find out how you can [return to teaching](https://teaching-vacancies.campaign.gov.uk/return-to-teaching/).
 
-$assessment-only-qts$
-
 ## What is the assessment only route to QTS?
 
 You can take the assessment only route to QTS if you already meet the standards for qualified teacher status, so do not need any further training.

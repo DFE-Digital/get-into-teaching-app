@@ -20,7 +20,7 @@ expander:
     title: undergraduate degree courses
     text: |-
       <p>
-      If you're a non-UK citizen who wants to study in England, you can visit the <a href="https://www.ukcisa.org.uk/">UK Council for International Student Affairs</a> for information about studying at an English University.
+      If you're a non-UK citizen who wants to study in England, you can visit the <a href="https://www.ukcisa.org.uk/">UK Council for International Student Affairs</a> for information about studying at an English university.
       </p>      
   teacher-degree-apprenticeships:
     title: teacher degree apprenticeships
@@ -51,4 +51,3 @@ If you do not have a degree you may be eligible to apply for a TDA. This new cou
 
 Find out more about [teacher degree apprenticeships (TDAs)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
 
-$teacher-degree-apprenticeships$
