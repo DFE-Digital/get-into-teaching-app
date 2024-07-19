@@ -41,7 +41,5 @@ You also need to be:
 * a resident of England for the last 3 years or more
 * age 16 years or over 
 
-$teacher-degree-apprenticeships$
-
 ## How to apply for a teacher degree apprenticeship (TDA)
 Applications for the new TDAs are expected to open in autumn 2024 for both primary and secondary, with training due to start in autumn 2025.
