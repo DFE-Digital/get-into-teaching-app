@@ -112,7 +112,7 @@ The headteacher at my school was looking to create an alternative for key stage 
 <strong>Fran:</strong> If you have qualified teacher status (QTS) and work in a maintained school, a school funded by the local authority, your salary is reviewed every year. Most teachers on the main pay scale get an annual pay rise but it may depend on your school’s performance data to prove you’re completing whole school and individual targets. So you could potentially go from a starting salary of $salaries_starting_min$ to at least $salaries_fiveyears_maxrounded$, or more if you’re in London, in 5 years.
 
 
-As well as helping you understand the demands of a more senior role, a teaching and learning responsibility (TLR) payment could make a big difference to your pay. If you’re in London it could be around an extra £15,000.
+As well as helping you understand the demands of a more senior role, a teaching and learning responsibility (TLR) payment could make a big difference to your pay. If you’re in London it could be around an extra $salaries_tlr_maxrounded$.
 
 ## What steps do you need to consider if you want to be a headteacher?
 
