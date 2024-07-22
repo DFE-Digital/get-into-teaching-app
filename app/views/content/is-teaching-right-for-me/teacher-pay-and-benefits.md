@@ -56,36 +56,36 @@ If you’re a primary or secondary teacher in England, your salary will depend o
 
 The pay ranges below apply to maintained schools (schools funded by local authorities).
 
-Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges. 
+Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges.
 
-Figures apply from 1 September 2023.
+Figures apply from $salaries_date_appliesfrom$.
 
 ## Primary and secondary teacher salary
 
-If you have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you’ll get a minimum starting salary of £30,000 (or more in London) as a primary or secondary school teacher in England. 
+If you have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you’ll get a minimum starting salary of $salaries_starting_min$ (or more in London) as a primary or secondary school teacher in England.
 
-Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.    
+Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.
 
-A typical teacher could earn at least £41,333 (or more in London) within 5 years.
+A typical teacher could earn at least $salaries_fiveyears_max$ (or more in London) within 5 years.
 
 ### Qualified teacher salary
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| England (excluding London)     | £30,000 | £46,525 |
-| London fringe                            | £31,350 | £47,839 |
-| Outer London                             | £34,514 | £51,179 |
-| Inner London                             | £36,745 | £56,959 |
+| England (excluding London)     | $salaries_qualifiedteacher_englandmin$ | $salaries_qualifiedteacher_englandmax$ |
+| London fringe                            | $salaries_qualifiedteacher_londonfringemin$ | $salaries_qualifiedteacher_londonfringemax$ |
+| Outer London                             | $salaries_qualifiedteacher_outerlondonmin$ | $salaries_qualifiedteacher_outerlondonmax$ |
+| Inner London                             | $salaries_qualifiedteacher_innerlondonmin$ | $salaries_qualifiedteacher_innerlondonmax$ |
 
 ### Additional payments
 
-You may also receive additional payments on top of your regular salary for taking on extra responsibilities. 
+You may also receive additional payments on top of your regular salary for taking on extra responsibilities.
 
-This could be a one-off payment for a specific project, for example, creating a timetable. 
+This could be a one-off payment for a specific project, for example, creating a timetable.
 
-Or it might be an extra responsibility attached to your job role, for example, being the head of department. 
+Or it might be an extra responsibility attached to your job role, for example, being the head of department.
 
-Depending on your responsibilities, you could earn up to an extra £15,690. Your school will determine how much you receive. 
+Depending on your responsibilities, you could earn up to an extra £15,690. Your school will determine how much you receive.
 
 <a name="career-progression"></a>
 
@@ -98,36 +98,36 @@ Some schools also have a leading practitioner pay range for teachers with exempl
 What this will involve will depend on your school, but could include:
 
 * coaching and mentoring other teachers, including trainees and early career teachers
-* undertaking a national professional qualification (NPQ) 
+* undertaking a national professional qualification (NPQ)
 * supporting your school with plans to reduce workload
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| England (excluding London)     | £47,417 | £72,085 |
-| London fringe                            | £48,723 | £73,393 |
-| Outer London                             | £51,179 | £75,850 |
-| Inner London                             | £56,377 | £81,051 |
+| England (excluding London)     | $salaries_leadingpractitioner_englandmin$ | $salaries_leadingpractitioner_englandmax$ |
+| London fringe                            | $salaries_leadingpractitioner_londonfringemin$ | $salaries_leadingpractitioner_londonfringemax$ |
+| Outer London                             | $salaries_leadingpractitioner_outerlondonmin$ | $salaries_leadingpractitioner_outerlondonmax$ |
+| Inner London                             | $salaries_leadingpractitioner_innerlondonmin$ | $salaries_leadingpractitioner_innerlondonmax$ |
 
 ### Headteacher salary
 
 You could also go into a leadership position, such as a headteacher.
 
-A headteacher is the most senior person in a school. They are ultimately responsible for all teachers and pupils. 
+A headteacher is the most senior person in a school. They are ultimately responsible for all teachers and pupils.
 
 Their role is wide ranging, but includes leading and motivating teachers, and ensuring all pupils get a good education.
 
 | Area                                     | Minimum | Maximum  |
 | -------                                  | -----   | -----    |
-| England (excluding London)     | £53,380 | £131,056 |
-| London fringe                            | £54,685 | £132,352 |
-| Outer London                             | £57,124 | £134,765 |
-| Inner London                             | £62,304 | £139,891 |
+| England (excluding London)     | $salaries_headteacher_englandmin$ | $salaries_headteacher_englandmax$ |
+| London fringe                            | $salaries_headteacher_londonfringemin$ | $salaries_headteacher_londonfringemax$ |
+| Outer London                             | $salaries_headteacher_outerlondonmin$ | $salaries_headteacher_outerlondonmax$ |
+| Inner London                             | $salaries_headteacher_innerlondonmin$ | $salaries_headteacher_innerlondonmax$ |
 
 Find out more about [how to move up the career ladder in teaching](/is-teaching-right-for-me/career-progression).
 
 ## If you do not have qualified teacher status (QTS)
 
-You need qualified teacher status (QTS) to work in maintained primary, secondary and special schools in England. 
+You need qualified teacher status (QTS) to work in maintained primary, secondary and special schools in England.
 
 If you do not have QTS (for example, if you just have a PGCE), you can work in some schools as an unqualified teacher.
 
@@ -148,7 +148,7 @@ Or find out how you can earn an unqualified teacher salary while training to get
 
 ## Holidays
 
-You'll get more days holiday than people in many other professions. In school, full-time teachers work 195 days per year. 
+You'll get more days holiday than people in many other professions. In school, full-time teachers work 195 days per year.
 
 For comparison, you'd work 227 days per year (on average) if you worked full time in an office.
 

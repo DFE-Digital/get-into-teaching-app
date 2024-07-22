@@ -72,7 +72,7 @@ living costs
 - depending on your immigration status and the subject you train to teach, you may get some financial support
 - training lasts one academic year full-time, or longer part-time
 - you can apply for paid teaching jobs as soon as you successfully complete your training and gain English qualified teacher status (QTS)
-- you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher
+- you'll earn at least $salaries_starting_min$ a year (or more in London) when you qualify as a teacher
 - you can update, extend or switch your visa to live and work in the UK long-term
 
 ## Already a qualified teacher?
