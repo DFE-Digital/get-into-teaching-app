@@ -1,5 +1,12 @@
 ---
 title: Become a physics teacher
+title_paragraph: |-
+  <p>
+  Teaching secondary physics is an exciting and worthwhile career. Schools need more specialist physics teachers, so it's a great choice of subject.</p>
+  <p>
+  You could inspire your pupils to consider rewarding professions, from tackling climate change to artificial intelligence (AI). 
+  <p>
+  Tax-free bursaries of £28,000 or scholarships of £30,000 are available for eligible trainee physics teachers.</p>
 description: |-
     Find out how to become a physics teacher, including what you'll be teaching and what funding is available to help you train.
 subcategory: What to teach
