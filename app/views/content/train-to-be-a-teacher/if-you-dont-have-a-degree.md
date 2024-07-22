@@ -22,9 +22,6 @@ expander:
       <p>
       If you're a non-UK citizen who wants to study in England, you can visit the <a href="https://www.ukcisa.org.uk/">UK Council for International Student Affairs</a> for information about studying at an English university.
       </p>      
-  teacher-degree-apprenticeships:
-    title: teacher degree apprenticeships
-    text: You can only do a teacher degree apprenticeship (TDA) if you've been a resident in England for the last 3 years or more. 
 ---
 
 ## Undergraduate degree courses

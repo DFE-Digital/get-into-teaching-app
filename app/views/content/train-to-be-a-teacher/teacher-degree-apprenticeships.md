@@ -11,7 +11,7 @@ related_content:
 navigation: 20.40
 navigation_title: If you want to do a teaching apprenticeship
 navigation_description: A teacher degree apprenticeship (TDA) lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).
-talk_to_us: false 
+talk_to_us: false
 ---
 If you do not already have an undergraduate degree, you may be eligible to do a teacher degree apprenticeship (TDA), a new route to become a qualified teacher.
 
