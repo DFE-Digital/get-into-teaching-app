@@ -79,7 +79,7 @@ You do not have to pay a bursary or scholarship back. You can get a bursary or s
 
 [Find out if you're eligible for a bursary or scholarship](/funding-and-support/scholarships-and-bursaries).
 
-## If you're from other UK countries or Crown Dependencies
+## If you're from Wales, Scotland, Northern Ireland or the Crown Dependencies
 
 You’ll need to contact your country’s student finance body to find out about your eligibility for funding if you live in Wales, Scotland, or Northern Ireland.
 
