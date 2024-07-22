@@ -27,6 +27,10 @@ quote:
     text: "I volunteered at a local primary school for 2 days a week and from the moment I walked into my first class, it felt very natural to be interacting with children."
     name: "Zainab, career changer"
     classes: quote--indent
+expander:
+  non-uk-get-school-experience:
+    title: get school experience
+    text: To use the Get school experience service, you'll need the right to work in the UK. This may be difficult if you have not started your training yet. However, you do not need classroom experience to train to teach in England.  
 ---
 
 You can visit schools to get unpaid experience in the classroom before you start your initial teacher training (ITT).
@@ -55,6 +59,7 @@ Use our Get school experience service to search for and request experience in En
 
 Once you've chosen a school, you can get more information about their placement availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a DBS check. 
 
+$non-uk-get-school-experience$
 $get-school-experience$
 
 ### Arrange school experience independently

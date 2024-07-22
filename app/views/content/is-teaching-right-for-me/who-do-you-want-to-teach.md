@@ -9,15 +9,6 @@ navigation_title: Which age group should I teach?
 navigation_description: Explore the different ages and stages of teaching and decide which is right for you.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-who-do-you-want-to-teach
-calls_to_action:
-    get-school-experience:
-      name: simple
-      arguments:
-        icon: "icon-arrow"
-        text: |-
-          Use our service to search for and organise a primary or secondary school placement in England.        
-        link_text: "Get school experience"
-        link_target: "https://schoolexperience.education.gov.uk/"
 ---
 
 It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. You might need specific training or qualifications in some areas. This page explains more about the different options.
@@ -61,9 +52,9 @@ Once you have QTS, you're qualified to teach in primary and secondary schools. H
 
 The best way to work out which age group you would like to teach is to get real life experience in a classroom. 
 
-$get-school-experience$
-
 If you’re studying for an undergraduate or master's degree and interested in teaching chemistry, computing, languages, maths or physics, then you could do a [paid teaching internship](/is-teaching-right-for-me/teaching-internship-providers) to find out if teaching is right for you.
+
+Find out more about opportunities to [get school experience in England](/is-teaching-right-for-me/get-school-experience).
 
 ### Teach pupils with special educational needs and disabilities (SEND)
 

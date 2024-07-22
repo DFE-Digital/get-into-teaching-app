@@ -19,8 +19,9 @@ navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one.
 inset_text:
   international-content:
+    header: "Non-UK citizens:"
     text: If you’re not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
-    color: grey
+    color: purple
   still-time-to-apply:
     text: There's still time for you to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn how you can find the right course for you and get help with your application</a>.
     color: yellow
@@ -32,7 +33,12 @@ keywords:
   - qts
   - Teach First
   - Postgraduate teaching apprenticeship
-
+expander:
+  fees-and-funding:
+    title: fees and funding
+    text: "Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance loans. If you train to teach languages or physics, you may be eligible for a bursary or scholarship."
+    link_title: Learn more about fees and financial support for non-UK trainee teachers.
+    link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees   
 ---
 
 $still-time-to-apply$
@@ -92,6 +98,8 @@ You may be eligible for extra financial support if:
 * you're eligible for a salaried teacher training course
 
 [Find out how to fund your training](/funding-and-support).
+
+$fees-and-funding$
 
 ## How to choose your teacher training course
 
