@@ -3,6 +3,7 @@ require "table_captions"
 module TemplateHandlers
   class Markdown
     include ActionView::Helpers::OutputSafetyHelper
+    include ContentHelper
 
     attr_reader :template, :source, :options
 
@@ -71,10 +72,6 @@ module TemplateHandlers
         safe_join([cta_component($1), content_component($1), image($1), value($1)].compact).strip
       end
     end
-
-    def substitute_values(content)
-      content.gsub(COMPONENT_PLACEHOLDER_REGEX) { safe_join([value($1)].compact).strip }
-    end
     # rubocop:enable Style/PerlBackrefs
 
     def cta_component(placeholder)
@@ -108,10 +105,6 @@ module TemplateHandlers
       component = Content::ImageComponent.new(path: image_args["path"])
 
       ApplicationController.render(component, layout: false)
-    end
-
-    def value(placeholder)
-      Value.get(placeholder)
     end
 
     def front_matter
