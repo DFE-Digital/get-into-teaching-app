@@ -36,7 +36,7 @@ class Healthcheck
   def test_redis
     return nil unless ENV["REDIS_URL"]
 
-    $redis.ping == "PONG"
+    REDIS.ping == "PONG"
   rescue Redis::CannotConnectError
     false
   rescue RuntimeError
