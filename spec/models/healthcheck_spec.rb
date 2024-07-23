@@ -85,7 +85,7 @@ describe Healthcheck do
 
     context "with working connection" do
       before do
-        allow(Redis).to receive(:current).and_return instance_double(Redis, ping: "PONG")
+        allow($redis).to receive(:ping).and_return "PONG"
       end
 
       it { is_expected.to be true }
@@ -93,7 +93,7 @@ describe Healthcheck do
 
     context "with broken connection" do
       before do
-        allow(Redis).to receive(:current).and_raise Redis::CannotConnectError
+        allow($redis).to receive(:ping).and_raise Redis::CannotConnectError
       end
 
       it { is_expected.to be false }
