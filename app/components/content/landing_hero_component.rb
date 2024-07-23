@@ -2,12 +2,14 @@ module Content
   class LandingHeroComponent < ViewComponent::Base
     attr_accessor :colour, :image, :title, :title_paragraph
 
+    include ContentHelper
+
     def initialize(colour:, image:, title:, title_paragraph: nil)
       super
       @colour = colour
       @image = image
-      @title = title
-      @title_paragraph = title_paragraph
+      @title = substitute_values(title)
+      @title_paragraph = substitute_values(title_paragraph)
     end
 
     def header_image
