@@ -85,7 +85,7 @@ This could be a one-off payment for a specific project, for example, creating a 
 
 Or it might be an extra responsibility attached to your job role, for example, being the head of department.
 
-Depending on your responsibilities, you could earn up to an extra £15,690. Your school will determine how much you receive.
+Depending on your responsibilities, you could earn up to an extra $salaries_tlr_max$. Your school will determine how much you receive.
 
 <a name="career-progression"></a>
 

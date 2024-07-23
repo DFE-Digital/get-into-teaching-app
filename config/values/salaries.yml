@@ -52,8 +52,8 @@ salaries:
 # Additional payments
   tlr:
     salarywithtlr: £43k
-    maximumrounded: £15,000
     max: £15,690
+    maxrounded: £15,000
 # Non-UK salary thresholds
   skilledworkervisatraineeminfulltime:
     innerlondon: £25,831
