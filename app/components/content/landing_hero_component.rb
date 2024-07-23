@@ -8,7 +8,7 @@ module Content
       super
       @colour = colour
       @image = image
-      @title = substitute_values(title)
+      @title = title # NB this is an array of titles
       @title_paragraph = substitute_values(title_paragraph)
     end
 

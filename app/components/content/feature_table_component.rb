@@ -2,13 +2,11 @@ module Content
   class FeatureTableComponent < ViewComponent::Base
     attr_reader :data, :title, :heading_tag
 
-    include ContentHelper
-
     def initialize(data, title = nil, heading_tag: "h3")
       super
 
       @data = data
-      @title = substitute_values(title)
+      @title = title
       @heading_tag = heading_tag
 
       fail(ArgumentError, "data must be present") unless data?
