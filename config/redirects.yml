@@ -59,16 +59,19 @@ redirects:
   "/presentations": "/events/about-get-into-teaching-events"
 
   # School Experience
-  "/get-school-experience/get-school-experience": "/is-teaching-right-for-me/get-school-experience"
-  "/get-school-experience": "/is-teaching-right-for-me/get-school-experience"
-  "/getting-school-experience": "/is-teaching-right-for-me/get-school-experience"
-  "/arranging-school-experience-independently": "/is-teaching-right-for-me/get-school-experience"
-  "/node/2313": "/is-teaching-right-for-me/get-school-experience"
-  "/school-experience/paid-internships": "/is-teaching-right-for-me/teaching-internship-providers"
-  "/school-experience/arranging-school-experience-independently": "/is-teaching-right-for-me/get-school-experience"
-  "/school-experience/making-your-mind-up-with-school-experience": "/is-teaching-right-for-me/get-school-experience"
-  "/school-experience/what-happens-on-a-school-experience-day": "/is-teaching-right-for-me/get-school-experience"
-  "/school-experience": "/is-teaching-right-for-me/get-school-experience"
+  "/get-school-experience/get-school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/get-school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/getting-school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/arranging-school-experience-independently": "/train-to-be-a-teacher/get-school-experience"
+  "/node/2313": "/train-to-be-a-teacher/get-school-experience"
+  "/school-experience/paid-internships": "/train-to-be-a-teacher/teaching-internships"
+  "/school-experience/arranging-school-experience-independently": "/train-to-be-a-teacher/get-school-experience"
+  "/school-experience/making-your-mind-up-with-school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/school-experience/what-happens-on-a-school-experience-day": "/train-to-be-a-teacher/get-school-experience"
+  "/school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/is-teaching-right-for-me/get-school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/is-teaching-right-for-me/teaching-internship-providers": "/train-to-be-a-teacher/teaching-internships"
+
 
   # Scholarships and bursaries
   "/funding-and-salary/overview/funding-by-subject/funding-for-training-to-teach-(*subject)": "/funding-and-support/scholarships-and-bursaries"
@@ -314,9 +317,8 @@ redirects:
   "/train-to-be-a-teacher/teacher-training-interview": "/how-to-apply-for-teacher-training/teacher-training-interview"
   "/train-to-be-a-teacher/if-your-application-is-unsuccessful": "/how-to-apply-for-teacher-training/if-your-application-is-unsuccessful"
   "/train-to-be-a-teacher/subject-knowledge-enhancement": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-  "/train-to-be-a-teacher/get-school-experience": "/is-teaching-right-for-me/get-school-experience"
   "/salaries-and-benefits": /is-teaching-right-for-me/teacher-pay-and-benefits
-  "/teaching-internship-providers": "/is-teaching-right-for-me/teaching-internship-providers"
+  "/teaching-internship-providers": "/train-to-be-a-teacher/teaching-internships"
   "/train-to-be-a-teacher/if-you-want-to-change-career": "/is-teaching-right-for-me/if-you-want-to-change-career"
   "/train-to-be-a-teacher/who-do-you-want-to-teach": "/is-teaching-right-for-me/who-do-you-want-to-teach"
   "/what-pension-does-a-teacher-get": "/is-teaching-right-for-me/what-pension-does-a-teacher-get"
@@ -348,9 +350,9 @@ redirects:
   "/blog/application-tips-from-a-teacher-training-provider": "/how-to-apply-for-teacher-training"
   "/blog/9-tips-to-help-you-apply-for-teacher-training": "/how-to-apply-for-teacher-training"
   "/blog/choosing-the-right-teacher-training-course-provider": "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-  "/blog/how-to-find-school-experience": "/is-teaching-right-for-me/get-school-experience"
+  "/blog/how-to-find-school-experience": "/train-to-be-a-teacher/get-school-experience"
   "/blog/what-to-expect-on-your-teacher-training": "/train-to-be-a-teacher/initial-teacher-training"
-  "/blog/school-experience-helped-me-decide-to-switch": "/is-teaching-right-for-me/get-school-experience"
+  "/blog/school-experience-helped-me-decide-to-switch": "/train-to-be-a-teacher/get-school-experience"
   "/blog/working-to-your-own-beat": "/research"
   "/blog/overcoming-challenges-to-become-a-teacher-autism": "/funding-and-support/if-youre-disabled"
 
@@ -391,11 +393,7 @@ redirects:
   "/blog/top-tips-for-returning-teachers": "/returning-to-teaching"
   "/blog/tag/returning-to-teaching": "/returning-to-teaching"
 
-# Subject pages 
-  "/subjects/physics": "/is-teaching-right-for-me/physics"   
+# Subject pages
+  "/subjects/physics": "/is-teaching-right-for-me/physics"
   "/subjects/maths": "/is-teaching-right-for-me/maths"
   "/subjects/engineers-teach-physics": "/is-teaching-right-for-me/engineers-teach-physics"
-  
-# moving school experience content
-  "/is-teaching-right-for-me/get-school-experience": "/train-to-be-a-teacher/get-school-experience"
-  "/is-teaching-right-for-me/teaching-internship-providers": "/train-to-be-a-teacher/teaching-internships"
