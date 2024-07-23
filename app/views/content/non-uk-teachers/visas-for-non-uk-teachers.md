@@ -91,17 +91,17 @@ The salary requirement also varies depending on the region you're applying to wo
 
 If you're employed as a qualified teacher and work in:
 
-* inner London, you must earn at least $nonuk_skilledworkerteacherfulltimemin_innerlondon$
-* outer London, you must earn at least $nonuk_skilledworkerteacherfulltimemin_outerlondon$
-* London fringe, you must earn at least $nonuk_skilledworkerteacherfulltimemin_londonfringe$
-* the rest of England, you must earn at least $nonuk_skilledworkerteacherfulltimemin_restofengland$
+* inner London, you must earn at least $nonuk_skilledworkervisateacherminfulltime_innerlondon$
+* outer London, you must earn at least $nonuk_skilledworkervisateacherminfulltime_outerlondon$
+* London fringe, you must earn at least $nonuk_skilledworkervisateacherminfulltime_londonfringe$
+* the rest of England, you must earn at least $nonuk_skilledworkervisateacherminfulltime_restofengland$
 
 If you're employed as an unqualified teacher and work in:
 
-* inner London, you must earn at least $nonuk_skilledworkertraineefulltimemin_innerlondon$
-* outer London, you must earn at least $nonuk_skilledworkertraineefulltimemin_outerlondon$
-* London fringe, you must earn at least $nonuk_skilledworkertraineefulltimemin_londonfringe$
-* the rest of England, you must earn at least $nonuk_skilledworkertraineefulltimemin_restofengland$
+* inner London, you must earn at least $nonuk_skilledworkervisatraineefulltimemin_innerlondon$
+* outer London, you must earn at least $nonuk_skilledworkervisatraineefulltimemin_outerlondon$
+* London fringe, you must earn at least $nonuk_skilledworkervisatraineefulltimemin_londonfringe$
+* the rest of England, you must earn at least $nonuk_skilledworkervisatraineefulltimemin_restofengland$
 
 ### Working part time as a teacher
 
