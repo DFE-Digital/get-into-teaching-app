@@ -103,7 +103,7 @@ You must be:
  * on a contract of employment lasting at least 1 year
 
 Your contract of employment must begin between 1 March 2024 and 1 May 2025.
-State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 or 11 to 18. Schools for pupils aged 16 to 18 only are not eligible. Schools for pupils aged 5 to 18 are eligible, but you must teach the secondary age range (11 to 16 or 11 to 18).
+State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 years old or 11 to 18 years old. Schools for pupils aged 16 to 18 years old only are not eligible. Schools for pupils aged 5 to 18 years old are eligible, but you must teach the secondary age range (11 to 16 years old or 11 to 18 years old).
 
 [Check the type and age range of the school](https://www.get-information-schools.service.gov.uk) where you’ll be teaching to see if it meets our eligibility criteria. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school).
 
@@ -234,7 +234,7 @@ To be eligible for the second instalment of the IRP, you must:
 
 * be contracted to work as a teacher for at least another year
 
-* be teaching in a subject and school which meets the requirements for the first instalment, as set out on this page
+* be teaching in a subject and school which meets the requirements for the first instalment, as detailed on this page
 
 * have successfully applied for and received the first instalment of the IRP
 
@@ -249,7 +249,11 @@ You can start midway through the academic year and as long as you complete 3 ful
 Any term time employment gaps will make you ineligible for the second instalment (see example 3).
 
 #### Example 1
-You start your first eligible teaching job in England in September 2024 and successfully apply for the first instalment of the IRP. You work a full academic year of 3 terms, leaving the school in July 2025. You successfully apply for a new IRP eligible teaching job on a one-year contract starting in September 2025. You visit family overseas for the summer holidays and return to England to take up your teaching job and apply for the second instalment of the IRP. You are eligible for the second instalment of the IRP because you have been continuously employed as a teacher in eligible schools. 
+You start your first eligible teaching job in England in September 2024 and successfully apply for the first instalment of the IRP.  You work a full academic year of 3 terms, leaving the school in July 2025. 
+
+You successfully apply for a new IRP eligible teaching job on a one-year contract starting in September 2025. You visit family overseas for the summer holidays and return to England to take up your teaching job and apply for the second instalment of the IRP. 
+
+You are eligible for the second instalment of the IRP because you have been continuously employed as a teacher in eligible schools. 
 
 #### Example 2
 You start your first teaching job in England in January 2025 and successfully apply for the first instalment of the IRP, working for the rest of that academic year of 2 terms. You decide to stay on at the school and return after the summer holidays in September 2025. Your contract is extended for a further year, and you apply for the second instalment of the IRP after the end of your third term of employment in January 2025. You are eligible for the second instalment of the IRP because you have been continuously employed as a teacher and have a contract for further 12 months.
@@ -279,7 +283,9 @@ Before you apply for the first and second instalments of the IRP, you’ll need 
 
 Applications are open from 30 September 2024 to end of March 2025.
 
-If you start your teaching job between 1 March 2024 and 28 February 2025 you should apply between 30 September 2024 and the end of March 2025. If you are eligible, you should receive the money following successful completion of our eligibility checks.You must apply between 30 September 2024 and the end of March 2025 to remain eligible.
+If you start your teaching job between 1 March 2024 and 28 February 2025 you should apply between 30 September 2024 and the end of March 2025. 
+
+If you are eligible, you should receive the money following successful completion of our eligibility checks. You must apply between 30 September 2024 and the end of March 2025 to remain eligible.
 
 
 ## DfE eligibility requirements for IRP instalments
@@ -332,11 +338,14 @@ You will not be paid your first instalment of the IRP before you start your teac
 
 If your eligibility checks are successful you'll get the second instalment of the IRP at the start of your second year of employment. 
 
-To be paid the IRP, you must have a UK bank account in your name (this can be digital). The IRP cannot be paid into a building society account.
 
 You must also have a [UK National Insurance number](https://www.gov.uk/apply-national-insurance-number). You can apply for this once you arrive in England, as long as your visa gives you the right to work and you have a confirmed job.
 
 You’ll be paid the first and second instalments of the IRP after your eligibility checks are completed. We cannot guarantee an exact payment date.
+
+To be paid the IRP, you must have a UK bank account in your name (this can be digital). The IRP cannot be paid into a building society account.
+
+You must also have a [UK National Insurance number](https://www.gov.uk/apply-national-insurance-number). You can apply for this once you arrive in England, as long as your visa gives you the right to work and you have a confirmed job.
 
 You will not have to provide any evidence of the relocation costs you have incurred.
 
