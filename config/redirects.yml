@@ -396,3 +396,6 @@ redirects:
   "/subjects/maths": "/is-teaching-right-for-me/maths"
   "/subjects/engineers-teach-physics": "/is-teaching-right-for-me/engineers-teach-physics"
   
+# moving school experience content
+  "/is-teaching-right-for-me/get-school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/is-teaching-right-for-me/teaching-internship-providers": "/train-to-be-a-teacher/teaching-internships"
