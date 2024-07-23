@@ -1,7 +1,7 @@
 ---
 title: "Get school experience"
 heading: "Get school experience"
-subcategory: School experience
+subcategory: Postgraduate teacher training
 description: |-
   Get school experience to explore what life is like in a primary or secondary classroom and find out if teaching is right for you.
 related_content:

@@ -1,7 +1,7 @@
 ---
 title: Teaching internships
 heading: "Get teaching experience with an internship"
-subcategory: School experience
+subcategory: Postgraduate teacher training
 description: |-
   Find paid teaching internships to gain new skills and see what classroom life is like. Explore chemistry, computing, languages, maths and physics internships.
 date: "2021-04-14"
