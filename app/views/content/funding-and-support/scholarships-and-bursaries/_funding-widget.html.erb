@@ -6,11 +6,10 @@
 
 <p>The following amounts apply if you're starting your teacher training course between September 2024 and July 2025.</p>
 
-<%= render Content::InsetTextComponent.new(
-  text: "If you’re a non-UK citizen without <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you will not usually be eligible for a bursary or scholarship,
-  unless you train to teach languages or physics. <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">Find out more about funding for non-UK citizens</a>.",
-  color: "grey"
-) %>
+<%= render Content::ExpanderComponent.new(
+    title: "bursaries and scholarships",
+    text: "If you train to teach languages or physics, you may be eligible for a bursary or scholarship. Learn more about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">fees and financial support for non-UK trainee teachers</a>.",
+  ) %>
 
 <section id="funding-widget">
   <%= render FundingWidgetComponent.new(

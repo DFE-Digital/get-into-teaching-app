@@ -3,6 +3,7 @@
     <h2 class="heading--box-blue">Spark curiosity in physics</h2>
     <div class="inset">
       <p>As a physics teacher, you’ll be engaging students in a wide range of experiments that can spark their interest.</p>
+    </div>
   </section>
 
   <section class="col col-720">
@@ -70,17 +71,17 @@
     <h3>Fund your teacher training</h3>
     <p><a href="/funding-and-support/scholarships-and-bursaries">Tax-free bursaries of <%= v :bursaries_postgraduate_physics %> or scholarships of <%= v :scholarships_physics %> </a>are available for eligible trainee physics teachers.</p>
     <p>You can get a bursary or scholarship alongside a tuition fee loan and maintenance loan.</p>
-  <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
-  <ul>
-    <li>a parent or carer</li>
-    <li>disabled</li>
-  </ul>
-  <%= render Content::ExpanderComponent.new(
-      title: "funding your training",
-      text: "If you train to teach physics, you may be eligible for a bursary or scholarship.",
-      link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
-      link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
-    ) %>
+    <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
+    <ul>
+      <li>a parent or carer</li>
+      <li>disabled</li>
+    </ul>
+    <%= render Content::ExpanderComponent.new(
+        title: "funding your training",
+        text: "If you train to teach physics, you may be eligible for a bursary or scholarship.",
+        link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
+        link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
+      ) %>
   </section>
 
   <section class="col col-space-m col-720">

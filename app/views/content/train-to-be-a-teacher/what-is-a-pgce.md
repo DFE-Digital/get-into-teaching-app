@@ -30,6 +30,12 @@ keywords:
   - Teaching
   - Qualification
   - State-school
+expander:
+  check-your-qualifications:
+    title: check your qualifications
+    text: If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. 
+    link_title: You can get help comparing English and international qualifications.
+    link_url: /non-uk-teachers/non-uk-qualifications
 ---
 
 A postgraduate certificate in education (PGCE) is an academic qualification. You can get this through teacher training.
@@ -89,6 +95,8 @@ You also need the following GCSEs at grade 4 (C) or above, or equivalent qualifi
 * English
 * maths
 * science (if you want to teach primary)
+
+$check-your-qualifications$
 
 ## What is a postgraduate diploma in education (PGDE)?
 

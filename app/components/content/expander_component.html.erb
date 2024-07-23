@@ -23,7 +23,7 @@
 
   <div class="expander-details__text">
     <p>
-      <%= text %>
+      <%= tag.p(helpers.safe_html_format(text)) %>
     </p>
     <% if show_link? %>
       <p>

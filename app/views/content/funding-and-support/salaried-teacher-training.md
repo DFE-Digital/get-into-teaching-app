@@ -22,6 +22,15 @@ keywords:
     - Salaried teacher training
     - Salaried teacher training course
     - Paid teacher training
+expander:
+  salaried-teacher-training:
+    title: salaried teacher training
+    text: |-
+      <p>
+      You can apply for a salaried teacher training course</a>. However, these courses are limited in number and very competitive. On this type of course, you will not pay a fee, and you can earn money while you train in a school. 
+      </p>
+      <p>
+      You will also need a <a href="/non-uk-teachers/visas-for-non-uk-trainees">visa or immigration status</a> allowing you to work in the UK.</p>
 ---
 
 There are some teacher training courses that come with a salary. 
@@ -43,6 +52,8 @@ Some also want you to have already arranged a school to work in while you train.
 You can also [find out more about the qualifications you need to apply for all teacher training courses](/is-teaching-right-for-me/qualifications-you-need-to-teach). 
 
 Or talk to a [teacher training adviser](/teacher-training-advisers) who can help you understand which courses you could be eligible for. 
+
+$salaried-teacher-training$
 
 ## How much will I be paid on a salaried course? 
 

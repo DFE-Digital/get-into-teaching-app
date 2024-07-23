@@ -49,4 +49,10 @@ section.inset-text {
     background: rgba($purple, .1);
     border-left-color: $purple;
   }
+
+  &.purple-white {
+    background: $white;
+    border-left-color: $purple;
+    margin-bottom:0;
+  }
 }
