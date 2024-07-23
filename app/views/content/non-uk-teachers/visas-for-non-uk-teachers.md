@@ -91,23 +91,23 @@ The salary requirement also varies depending on the region you're applying to wo
 
 If you're employed as a qualified teacher and work in:
 
-* inner London, you must earn at least £36,745
-* outer London, you must earn at least £34,514
-* London fringe, you must earn at least £31,350
-* the rest of England, you must earn at least £30,000
+* inner London, you must earn at least $salaries_skilledworkerteacherfulltimemin_innerlondon$
+* outer London, you must earn at least $salaries_skilledworkerteacherfulltimemin_outerlondon$
+* London fringe, you must earn at least $salaries_skilledworkerteacherfulltimemin_londonfringe$
+* the rest of England, you must earn at least $salaries_skilledworkerteacherfulltimemin_restofengland$
 
 If you're employed as an unqualified teacher and work in:
 
-* inner London, you must earn at least £25,831
-* outer London, you must earn at least £24,415
-* London fringe, you must earn at least £23,200
-* the rest of England, you must earn at least £23,200
+* inner London, you must earn at least $salaries_skilledworkertraineefulltimemin_innerlondon$
+* outer London, you must earn at least $salaries_skilledworkertraineefulltimemin_outerlondon$
+* London fringe, you must earn at least $salaries_skilledworkertraineefulltimemin_londonfringe$
+* the rest of England, you must earn at least $salaries_skilledworkertraineefulltimemin_restofengland$
 
 ### Working part time as a teacher
 
 You can work part-time, but your salary must meet the threshold for a Skilled Worker visa. There are 2 requirements:
 
-* your part-time salary must be at least £23,200
+* your part-time salary must be at least $salaries_skilledworkervisateacherminparttime$
 * the full-time equivalent of your salary must meet the minimum set for your region and status (for qualified and unqualified teachers)
 
 Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary on offer does not meet the Skilled Worker visa requirements.
