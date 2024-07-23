@@ -32,6 +32,7 @@ expander:
       <li>$fees_pgitt_internationalmaxfulltime$ per year for a full-time course</li>
       <li>$fees_pgitt_internationalmaxparttime$ per year for a part-time course</li></ul>
       </p>
+      <p>The average fee for non-UK citizens is around $fees_pgitt_internationalaverage$.</p>
       <p>
       Find out more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.</p>
 ---
