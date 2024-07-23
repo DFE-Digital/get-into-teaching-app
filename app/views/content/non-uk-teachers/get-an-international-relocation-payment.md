@@ -339,7 +339,6 @@ You will not be paid your first instalment of the IRP before you start your teac
 If your eligibility checks are successful you'll get the second instalment of the IRP at the start of your second year of employment. 
 
 
-You must also have a [UK National Insurance number](https://www.gov.uk/apply-national-insurance-number). You can apply for this once you arrive in England, as long as your visa gives you the right to work and you have a confirmed job.
 
 You’ll be paid the first and second instalments of the IRP after your eligibility checks are completed. We cannot guarantee an exact payment date.
 
