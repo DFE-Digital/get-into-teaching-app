@@ -9,16 +9,27 @@
     <h2>Provider information</h2>
 
     <% if @event.provider_website_url %>
-      <p><strong>Event website</strong><br><%= link_to(@event.provider_website_url, @event.provider_website_url, { target: "blank" }) %><em class="icon"></em></p>
+      <p>
+        <%= link_to("Visit the event provider's website", @event.provider_website_url, { target: "blank" }) %>.
+      </p>
     <% end %>
     <% if @event.provider_target_audience %>
-      <p><strong>Target audience</strong><br><%= @event.provider_target_audience %></p>
+      <h4 class="heading--margin-bottom-0">Target audience</h4>
+      <div>
+        <%= @event.provider_target_audience %>
+      </div>
     <% end %>
     <% if @event.provider_organiser %>
-      <p><strong>Organiser</strong><br><%= @event.provider_organiser %></p>
+      <h4 class="heading--margin-bottom-0">Organiser</h4>
+      <div>
+        <%= @event.provider_organiser %>
+      </div>
     <% end %>
     <% if @event.provider_contact_email %>
-      <p><strong>Contact email</strong><br><%= mail_to(@event.provider_contact_email) %></p>
+      <h4 class="heading--margin-bottom-0">Contact email</h4>
+      <div>
+        <%= mail_to(@event.provider_contact_email) %>
+      </div>
     <% end %>
   </section>
 <% end %>

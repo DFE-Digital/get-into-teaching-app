@@ -15,6 +15,10 @@ quote:
     text: "Applying late was stressful. I was limited in my choice of teacher training course provider, and I'd lost my GCSE certificates. I had to go back to my school and get new copies so I could confirm my place on the course and my student finance."
     name: "Jacob Pask, former teacher trainee"
     classes: quote--indent
+expander:
+  application-deadlines:
+    title: application deadlines
+    text: You should check the deadline for non-UK applications with training providers. They may close earlier than for other applicants. 
 ---
 
 You can apply for postgraduate teacher training courses starting in September 2024 from 10 October 2023 to 17 September 2024. 
@@ -38,6 +42,8 @@ It’s wise to apply as soon as you’re ready because:
 </ul>
 
 You can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
+
+$application-deadlines$
 
 <br />
 $q-jacub-pask$

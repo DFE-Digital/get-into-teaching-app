@@ -11,7 +11,7 @@ navigation: 20.20
 navigation_title: Qualifications you'll need to train to teach in England
 navigation_description: Before you apply, get help checking you have the correct qualifications for English teacher training.
 date: "2021-05-27"
-image: "static/images/content/hero-images/0003.jpg"
+image: "static/images/content/hero-images/0032.jpg"
 backlink: "../../"
 youtube_video:
   why-train-to-teach:
@@ -73,7 +73,7 @@ This is a certificate that proves your school and university qualifications are 
 
 When you apply for teacher training, you'll be asked to submit details of your statement of comparability. Applications which include this are 28% more likely to be successful.
 
-A statement of comparability costs $finance_statementofcomparabilitycost$. It takes 15 working days to complete your order from the date ENIC receives your qualification documents and payment.
+A statement of comparability costs $nonuk_statementofcomparabilitycost$. It takes 15 working days to complete your order from the date ENIC receives your qualification documents and payment.
 
 ## Get help checking your qualifications
 

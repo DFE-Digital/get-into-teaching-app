@@ -18,7 +18,7 @@ gem "invisible_captcha"
 
 gem "iso_country_codes"
 
-gem "shakapacker", "7.2.1"
+gem "shakapacker", "8.0.0"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
