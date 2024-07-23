@@ -25,7 +25,7 @@ inset_text:
 
       <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to get a bursary or apply for a scholarship worth up to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.</p>.
 
-      <h4>Changes to eligibility and payment for teachers</p>
+      <h4>Changes to eligibility and payment for teachers</h4>
       <p>Eligible teachers will receive an IRP of up to £10,000, in 2 instalments of £5,000 spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment. Learn more about applying for the IRP.</p>
 
 
@@ -105,7 +105,7 @@ You must be:
 Your contract of employment must begin between 1 March 2024 and 1 May 2025.
 State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 or 11 to 18. Schools for pupils aged 16 to 18 only are not eligible. Schools for pupils aged 5 to 18 are eligible, but you must teach the secondary age range (11 to 16 or 11 to 18).
 
-[Check the type and age range of the school](https://www.get-information-schools.service.gov.uk) where you’ll be teaching to see if it meets our eligibility criteria. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school)
+[Check the type and age range of the school](https://www.get-information-schools.service.gov.uk) where you’ll be teaching to see if it meets our eligibility criteria. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school).
 
 
 
@@ -140,13 +140,13 @@ Examples of eligible languages commonly taught in English state secondary school
 * Russian
 * Spanish
 
-Teaching English is not classed as an eligible subject for the IRP
+Teaching English is not classed as an eligible subject for the IRP.
 
 You will not be eligible if you are:
 
 * employed by a recruitment agency – an agency can find you a job in a school, but your contract must be with the school and your salary must be paid directly to you by the school, not by the recruitment agency
 
-* teaching in Scotland, Wales or Northern Ireland
+* teaching in Wales, Scotland or Northern Ireland
 
 * a UK citizen, including citizens of Wales, Scotland and Northern Ireland
 
@@ -158,7 +158,7 @@ If you are unsure about meeting any of the eligibility requirements, email irp.m
 
 You will need to come to England on a visa listed in this section to be eligible for IRP. You must have applied for your visa from outside the UK.
 
-Most teachers will need a Skilled Worker visa, other eligible visas are:
+Most teachers will need a Skilled Worker visa. Other eligible visas are:
 
 * [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa)
 
@@ -220,7 +220,7 @@ You will be eligible for the first instalment of IRP, because you have spent les
 
 You study in the UK on a Student visa for three years from September 2019 to July 2022, before returning home. You apply for an eligible teaching job in England starting in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024.
 
-You will be eligible for the first installment of IRP because you have spent less than 90 days in the UK in the previous 12 months and have moved to the UK less than 3 months before the start of your job.
+You will be eligible for the first instalment of IRP because you have spent less than 90 days in the UK in the previous 12 months and have moved to the UK less than 3 months before the start of your job.
 
 ### Eligibility requirements for IRP instalment 2 (£5,000)
 
@@ -230,7 +230,7 @@ To get the second instalment of the IRP, you must meet all the eligibility requi
 
 To be eligible for the second instalment of the IRP, you must:
 
-* have worked as a teacher for the previous year, that is, 3 consecutive terms
+* have worked as a teacher for the previous year (3 consecutive terms)
 
 * be contracted to work as a teacher for at least another year
 
@@ -240,7 +240,7 @@ To be eligible for the second instalment of the IRP, you must:
 
 Your term time employment must be continuous, unless you [take time off work for statutory leave](https://www.gov.uk/browse/employing-people/time-off) take time off work for statutory leave, such as parental leave or sick leave.
 
-The Department for Education (DfE) will review time taken off for any other reasons on a case-by-case basis.
+The Department for Education (DfE) will review time taken off for any other reason on a case-by-case basis.
 
 You can move between eligible schools and remain eligible for the second instalment (see example 1).
 
@@ -277,7 +277,7 @@ We will update this page with a link to the application form when it is live.
 
 Before you apply for the first and second instalments of the IRP, you’ll need to check you meet the eligibility requirements.
 
-Applications are open from 30 September 2024 to end of March 2025
+Applications are open from 30 September 2024 to end of March 2025.
 
 If you start your teaching job between 1 March 2024 and 28 February 2025 you should apply between 30 September 2024 and the end of March 2025. If you are eligible, you should receive the money following successful completion of our eligibility checks.You must apply between 30 September 2024 and the end of March 2025 to remain eligible.
 
@@ -290,7 +290,7 @@ DfE will check you meet the eligibility requirements for the first instalment of
 
 * [UK Visas and Immigration](https://www.gov.uk/government/organisations/uk-visas-and-immigration) 
 
-* the school where you are employed.
+* the school where you are employed
 
 If your eligibility checks are successful, you will get the first instalment of £5,000. 
 
@@ -315,7 +315,7 @@ If you complete 3 terms of employment as a teacher after March 2026, missing the
 DfE cannot process late applications for the IRP. If you fail to apply during the correct time period, DfE will not process your application. 
 
 
-##General information about the international relocation payment
+## General information about the international relocation payment
 
 ### Protect yourself from fraud
 
