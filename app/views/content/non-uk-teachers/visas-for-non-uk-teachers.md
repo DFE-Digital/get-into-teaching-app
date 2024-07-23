@@ -98,10 +98,10 @@ If you're employed as a qualified teacher and work in:
 
 If you're employed as an unqualified teacher and work in:
 
-* inner London, you must earn at least $nonuk_skilledworkervisatraineefulltimemin_innerlondon$
-* outer London, you must earn at least $nonuk_skilledworkervisatraineefulltimemin_outerlondon$
-* London fringe, you must earn at least $nonuk_skilledworkervisatraineefulltimemin_londonfringe$
-* the rest of England, you must earn at least $nonuk_skilledworkervisatraineefulltimemin_restofengland$
+* inner London, you must earn at least $nonuk_skilledworkervisatraineeminfulltime_innerlondon$
+* outer London, you must earn at least $nonuk_skilledworkervisatraineeminfulltime_outerlondon$
+* London fringe, you must earn at least $nonuk_skilledworkervisatraineeminfulltime_londonfringe$
+* the rest of England, you must earn at least $nonuk_skilledworkervisatraineeminfulltime_restofengland$
 
 ### Working part time as a teacher
 
