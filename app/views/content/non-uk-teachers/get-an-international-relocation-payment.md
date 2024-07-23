@@ -73,7 +73,7 @@ keywords:
 ---
 $applications-open$
 
-If you are a teacher considering moving to England to teach languages or physics, you could be eligible for an interntional relocation payment (IRP) from the UK government worth up to £10,000.
+If you are a teacher considering moving to England to teach languages or physics, you could be eligible for an international relocation payment (IRP) from the UK government worth up to £10,000.
 
 The international relocation payment (IRP) is designed to cover some of the costs of moving to England, including:
 
