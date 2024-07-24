@@ -2,6 +2,8 @@ module Content
   class QuoteComponent < ViewComponent::Base
     attr_reader :text, :name, :job_title, :cta, :image, :inline, :background, :large, :classes
 
+    include ContentHelper
+
     def initialize(
       text:,
       name: nil,
@@ -14,9 +16,9 @@ module Content
     )
       super
 
-      @text = text
-      @name = name
-      @job_title = job_title
+      @text = substitute_values(text)
+      @name = substitute_values(name)
+      @job_title = substitute_values(job_title)
       @image = image
       @inline = inline
       @background = background

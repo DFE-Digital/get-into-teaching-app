@@ -8,6 +8,8 @@ module Content
                 :caption_bold,
                 :caption_purple
 
+    include ContentHelper
+
     def initialize(
       heading: nil,
       tag: :h1,
@@ -20,9 +22,9 @@ module Content
     )
       super
 
-      @heading = heading
+      @heading = substitute_values(heading)
       @heading_size = heading_size
-      @caption = caption
+      @caption = substitute_values(caption)
       @caption_size = caption_size
       @caption_bold = caption_bold
       @caption_purple = caption_purple

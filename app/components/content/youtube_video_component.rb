@@ -2,11 +2,13 @@ module Content
   class YoutubeVideoComponent < ViewComponent::Base
     attr_reader :id, :title
 
+    include ContentHelper
+
     def initialize(id:, title:)
       super
 
       @id = id
-      @title = title
+      @title = substitute_values(title)
     end
 
     def src

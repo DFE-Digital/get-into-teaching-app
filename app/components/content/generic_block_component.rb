@@ -2,10 +2,12 @@ module Content
   class GenericBlockComponent < ViewComponent::Base
     attr_reader :title, :classes
 
+    include ContentHelper
+
     def initialize(title:, icon_image:, icon_size: nil, classes: [])
       super
 
-      @title      = title
+      @title      = substitute_values(title)
       @icon_image = icon_image
       @icon_size  = icon_size
       @classes    = classes
