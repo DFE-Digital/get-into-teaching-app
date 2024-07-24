@@ -113,7 +113,7 @@ If you get a scholarship, you need to tell your teacher training provider.
 
 Table caption: Available postgraduate bursaries and scholarships
 
-## Next steps
+## If you think you're not eligible
 
 If you're not eligible for a bursary or scholarship, there are other funding options. 
 
