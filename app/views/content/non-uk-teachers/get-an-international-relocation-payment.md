@@ -273,7 +273,7 @@ You continue to work at the school for a total of 3 terms, leaving in December 2
 
 To be eligible for the second instalment of the IRP, you must remain on an eligible visa throughout your employment in England. 
 You can change your visa, as long as any new visa appears on the list of eligible visas on this page (example 1). You will not need to apply for any new visa from outside the UK.
-If your new visa is not listed on this page, you will not be eligible for the second instalment (see example 2) 
+If your new visa is not listed on this page, you will not be eligible for the second instalment (see example 2).
 
 #### Example 1
 You arrive in the UK in September 2024 on a Youth Mobility Scheme visa. You are employed as a teacher on a contract lasting 1 academic year, and successfully apply for the first instalment of the IRP. 
