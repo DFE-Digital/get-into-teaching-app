@@ -338,24 +338,11 @@ If you complete 3 terms of employment as a teacher after March 2026, missing the
 DfE cannot process late applications for the IRP. If you fail to apply during the correct time period, DfE will not process your application. 
 
 
-## General information about the international relocation payment
-
-### Protect yourself from fraud
-
-You do not need to pay an agent or any other third party to complete your application. Any agency or person contacting you offering to apply for the international relocation payment on your behalf is likely to be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
-
-
-### Using the international relocation payment (IRP) to support your visa application
-
-You will not be able to use eligibility for the IRP in your visa application as proof that you have enough money to support yourself.
-
-### Receiving payments
+## Receiving the IRP payments
 
 You will not be paid your first instalment of the IRP before you start your teaching job. This is because eligibility requirement checks can only be completed after you’ve arrived in England.
 
 If your eligibility checks are successful you'll get the second instalment of the IRP at the start of your second year of employment. 
-
-
 
 You’ll be paid the first and second instalments of the IRP after your eligibility checks are completed. We cannot guarantee an exact payment date.
 
@@ -376,6 +363,11 @@ You cannot reapply for the IRP in following years if you leave the UK and then r
 ### Tax and the IRP
 
 DfE will pay the UK tax owed on the IRP to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 in the year you receive the IRP. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) on any earnings which take you over £50,270.
+
+### Protect yourself from fraud
+
+You do not need to pay an agent or any other third party to complete your application. Any agency or person contacting you offering to apply for the international relocation payment on your behalf is likely to be fraudulent. [Avoid and report internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
+
 
 ### Other types of financial support from the UK government
 
