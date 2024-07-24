@@ -110,7 +110,7 @@ State schools are schools funded by the UK government. Secondary schools teach c
 
 
 
-In your role in a school in England, you must be working as:
+In your role in a school in England, you must be working as one of the following:
 
 * a physics teacher
 
@@ -161,7 +161,7 @@ If you are unsure about meeting any of the eligibility requirements, email irp.m
 
 You will need to come to England on a visa listed in this section to be eligible for IRP. You must have applied for your visa from outside the UK.
 
-Most teachers will need a Skilled Worker visa. Other eligible visas are:
+Most teachers will need a Skilled Worker visa. Eligible visas are:
 
 * [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa)
 
@@ -241,7 +241,7 @@ To be eligible for the second instalment of the IRP, you must:
 
 * have successfully applied for and received the first instalment of the IRP
 
-Your term time employment must be continuous, unless you [take time off work for statutory leave](https://www.gov.uk/browse/employing-people/time-off) take time off work for statutory leave, such as parental leave or sick leave.
+Your term time employment must be continuous, unless you [take time off work for statutory leave](https://www.gov.uk/browse/employing-people/time-off), such as parental leave or sick leave.
 
 The Department for Education (DfE) will review time taken off for any other reason on a case-by-case basis.
 
@@ -270,7 +270,7 @@ You start a teaching job in England in January 2025 and successfully apply for t
 
 You continue to work at the school for a total of 3 terms, leaving in December 2025. However, you do not find a new teaching job until March 2026. Because there is a gap (December 2025 to March 2026) between your 2 jobs that is not covered by any statutory leave, you will not be eligible for the second instalment of the IRP because you have not been in continuous employment as a teacher. 
 
-### Type of visa
+#### Type of visa
 
 To be eligible for the second instalment of the IRP, you must remain on an eligible visa throughout your employment in England. 
 You can change your visa, as long as any new visa appears on the list of eligible visas on this page (example 1). You will not need to apply for any new visa from outside the UK.
