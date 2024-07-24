@@ -3,8 +3,7 @@
     <%= render(CallsToAction::Promo::PromoComponent.new(border: :top)) do |promo| %>
       <% promo.with_left_section(classes: %w[events-background]) %>
       <% promo.with_right_section(
-            caption: "Events near you",
-            heading: "Events are a great place to ask questions") do %>
+            heading: "Events near you") do %>
           <p>Speak to teachers, local teacher training providers and expert advisers at an in-person event.</p>
 
           <%= form_for TeachingEvents::Search.new, method: :post, url: events_path do |f| %>
@@ -14,8 +13,9 @@
             <%= f.text_field :postcode, class: "govuk-input", autocomplete: "postal-code" %>
             <%= tag.button("Search", class: "button", type: :submit, id: "event-search") %>
           <% end %>
-
-          <p>Or <%= link_to("find an online event", events_path(add_online_events(params))) %>.</p>
+          <p class="govuk-!-padding-top-5">
+            Or <%= link_to("find an online event", events_path(add_online_events(params))) %>.
+          </p>
       <% end %>
     <% end %>
   </section>

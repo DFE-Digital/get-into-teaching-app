@@ -12,10 +12,6 @@ external_content:
     - content/train-to-be-a-teacher/promos/find-your-ske-course
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-ske
-inset_text:
-  international-content:
-    text: If you’re a non-UK citizen, you may be eligible for a SKE bursary if you’re training to teach physics or modern foreign languages.
-    color: grey
 youtube_video:
   ske-course-video:
     id: mWuHMtyFrFU
@@ -28,6 +24,10 @@ keywords:
   - Subject knowledge enhancement
   - SKE
   - enhance
+expander:
+  SKE-bursaries:
+    title: SKE bursaries
+    text: Most bursaries are only for UK citizens. However, you may be eligible for an SKE bursary if you're training to teach physics or languages.
 ---
 
 You might need to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
@@ -98,4 +98,4 @@ You’ll need (one of the following):
 
 You can still do your SKE course while you do your teacher training but you'll only be eligible for a SKE bursary up until your teacher training course starts. This is because you may then be eligible for other financial support, for example a subject bursary or tuition fee loan.
 
-$international-content$
+$SKE-bursaries$

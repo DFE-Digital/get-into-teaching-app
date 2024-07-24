@@ -47,8 +47,8 @@ f=false,d=document,vwoCodeEl=d.querySelector('#vwoCode'),code={use_existing_jque
   <% end %>
 
   <% if @front_matter['description'] %>
-    <%= meta_tag(key: 'description', value: @front_matter['description']) %>
-    <%= meta_tag(key: 'description', value: @front_matter['description'], opengraph: true) %>
+    <%= meta_tag(key: 'description', value: substitute_values(@front_matter['description'])) %>
+    <%= meta_tag(key: 'description', value: substitute_values(@front_matter['description']), opengraph: true) %>
   <% end %>
 
   <%= meta_tag(key: 'type', value: 'website', opengraph: true) %>

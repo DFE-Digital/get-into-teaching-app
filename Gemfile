@@ -18,7 +18,7 @@ gem "invisible_captcha"
 
 gem "iso_country_codes"
 
-gem "shakapacker", "7.2.1"
+gem "shakapacker", "8.0.0"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -75,6 +75,7 @@ gem "skylight", "~> 6.0.4"
 
 gem "text"
 
+gem "connection_pool"
 gem "get_into_teaching_api_client_faraday", ">= 3.1.3", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"

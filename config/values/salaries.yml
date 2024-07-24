@@ -1,5 +1,61 @@
+salaries_date_appliesfrom: 1 September 2023
+
 salaries:
+# Summary salaries
+  starting:
+    min: £30,000
+    minshortened: £30k
+  fiveyears:
+    max: £41,333
+    maxrounded: £41,000
+    maxshortened: £41k
+  average:
+    classroomshortened: £40k
+# Detailed salaries
+  qualifiedteacher:
+    englandmin: £30,000
+    englandmax: £46,525
+    londonfringemin: £31,350
+    londonfringemax: £47,839
+    outerlondonmin: £34,514
+    outerlondonmax: £51,179
+    innerlondonmin: £36,745
+    innerlondonmax: £56,959
+  leadingpractitioner:
+    englandmin: £47,417
+    englandmax: £72,085
+    londonfringemin: £48,723
+    londonfringemax: £73,393
+    outerlondonmin: £51,179
+    outerlondonmax: £75,850
+    innerlondonmin: £56,377
+    innerlondonmax: £81,051
+  headteacher:
+    minshortened: £53k
+    maxshortened: £139k
+    englandmin: £53,380
+    englandmax: £131,056
+    londonfringemin: £54,685
+    londonfringemax: £132,352
+    outerlondonmin: £57,124
+    outerlondonmax: £134,765
+    innerlondonmin: £62,304
+    innerlondonmax: £139,891
+  unqualifiedteacher:
+    englandmin: £20,598
+    englandmax: £32,134
+    londonfringemin: £21,933
+    londonfringemax: £33,464
+    outerlondonmin: £24,415
+    outerlondonmax: £35,954
+    innerlondonmin: £25,831
+    innerlondonmax: £37,362
+# Additional payments
+  tlr:
+    salarywithtlr: £43k
+    max: £15,690
+    maxrounded: £15,000
+# Example variables - used in documentation
   example:
     min: £30,000
-
 salaries_example_max: £41k

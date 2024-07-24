@@ -106,7 +106,9 @@ Many teachers will not meet the requirements for QTS. If you’re not eligible, 
 
 ## Find a teaching job in England  
 
-To find a teaching job, you must apply to individual schools (not the Department for Education). If you need a Skilled Worker visa, you must find a school that can sponsor your visa.
+To find a teaching job, you must apply to individual schools (not the Department for Education). The Department for Education does not appoint teachers and will never offer jobs for teaching roles.
+
+If you need a Skilled Worker visa, you must find a school that can sponsor your visa.
 
 You can search for a teaching job through the government’s official [Teaching Vacancies service](https://teaching-vacancies.service.gov.uk/). Filter your search by ‘Visa sponsorship’ to find jobs that can sponsor visas. Set up job alerts so you don’t miss out on new roles. 
 

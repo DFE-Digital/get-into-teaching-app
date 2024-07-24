@@ -1,12 +1,13 @@
 module Content
   class AdviserComponent < ViewComponent::Base
+    include ContentHelper
     attr_reader :title, :intro, :color, :margin, :heading
 
     def initialize(title:, intro: nil, color: "pink", margin: true, heading: :m)
       super
 
-      @title = title
-      @intro = intro
+      @title = substitute_values(title)
+      @intro = substitute_values(intro)
       @color = color
       @margin = margin
       @heading = heading
