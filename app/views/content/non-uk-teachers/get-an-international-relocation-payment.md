@@ -21,11 +21,11 @@ inset_text:
     text: |-
 
       <h3>Changes to eligibility and payment</h3>
-      <h4>Changes to eligibility and payment for trainees</h4>
+      <h2>Changes to eligibility and payment for trainees</h2>
 
       <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to get a bursary or apply for a scholarship worth up to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.</p>
 
-      <h4>Changes to eligibility and payment for teachers</h4>
+      <h2>Changes to eligibility and payment for teachers</h2>
       <p>Eligible teachers will receive an IRP of up to £10,000, in 2 instalments of £5,000 spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment. Learn more about applying for the IRP.</p>
 
 
@@ -72,6 +72,8 @@ keywords:
   - Settlement Scheme
 ---
 $applications-open$
+
+## What the IRP is for
 
 If you are a teacher considering moving to England to teach languages or physics, you could be eligible for an international relocation payment (IRP) from the UK government worth up to £10,000.
 
