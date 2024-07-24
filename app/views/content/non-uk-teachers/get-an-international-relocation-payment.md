@@ -258,10 +258,16 @@ You successfully apply for a new IRP eligible teaching job on a one-year contrac
 You are eligible for the second instalment of the IRP because you have been continuously employed as a teacher in eligible schools. 
 
 #### Example 2
-You start your first teaching job in England in January 2025 and successfully apply for the first instalment of the IRP, working for the rest of that academic year of 2 terms. You decide to stay on at the school and return after the summer holidays in September 2025. Your contract is extended for a further year, and you apply for the second instalment of the IRP after the end of your third term of employment in January 2025. You are eligible for the second instalment of the IRP because you have been continuously employed as a teacher and have a contract for further 12 months.
+You start your first teaching job in England in January 2025 and successfully apply for the first instalment of the IRP, working for the rest of that academic year of 2 terms. 
+
+You decide to stay on at the school and return after the summer holidays in September 2025. Your contract is extended for a further year, and you apply for the second instalment of the IRP after the end of your third term of employment in January 2025. 
+
+You are eligible for the second instalment of the IRP because you have been continuously employed as a teacher and have a contract for further 12 months.
 
 #### Example 3
-You start a teaching job in England in January 2025 and successfully apply for the first instalment of the IRP in your first term. You continue to work at the school for a total of 3 terms, leaving in December 2025. However, you do not find a new teaching job until March 2026. Because there is a gap (December 2025 to March 2026) between your 2 jobs that is not covered by any statutory leave, you will not be eligible for the second instalment of the IRP because you have not been in continuous employment as a teacher. 
+You start a teaching job in England in January 2025 and successfully apply for the first instalment of the IRP in your first term. 
+
+You continue to work at the school for a total of 3 terms, leaving in December 2025. However, you do not find a new teaching job until March 2026. Because there is a gap (December 2025 to March 2026) between your 2 jobs that is not covered by any statutory leave, you will not be eligible for the second instalment of the IRP because you have not been in continuous employment as a teacher. 
 
 ### Type of visa
 
@@ -270,10 +276,18 @@ You can change your visa, as long as any new visa appears on the list of eligibl
 If your new visa is not listed on this page, you will not be eligible for the second instalment (see example 2) 
 
 #### Example 1
-You arrive in the UK in September 2024 on a Youth Mobility Scheme visa. You are employed as a teacher on a contract lasting 1 academic year, and successfully apply for the first instalment of the IRP. At the end of the academic year, your school offers to make your contract permanent and sponsor you for a Skilled Worker visa for 3 years. As your Youth Mobility Scheme visa is only valid for 2 years, and you are planning to work as a teacher in England for longer than this, you agree to switch your visa. You apply for the second instalment of the IRP in September 2025. You remain eligible because the Youth Mobility Scheme visa and the Skilled Worker visa are on the list of eligible visas on this page. 
+You arrive in the UK in September 2024 on a Youth Mobility Scheme visa. You are employed as a teacher on a contract lasting 1 academic year, and successfully apply for the first instalment of the IRP. 
+
+At the end of the academic year, your school offers to make your contract permanent and sponsor you for a Skilled Worker visa for 3 years. As your Youth Mobility Scheme visa is only valid for 2 years, and you are planning to work as a teacher in England for longer than this, you agree to switch your visa. 
+
+You apply for the second instalment of the IRP in September 2025. You remain eligible because the Youth Mobility Scheme visa and the Skilled Worker visa are on the list of eligible visas on this page. 
 
 #### Example 2
-You arrive in the UK in September 2024 on a Youth Mobility Scheme visa. You are employed as a teacher on a contract lasting 2 academic years and successfully apply for the first instalment of the IRP. Early in 2025, your partner moves to the UK on a Skilled Worker visa lasting 3 years. You visit family overseas during the summer holidays. As your Youth Mobility Scheme visa is limited to 2 years, you decide to apply to join your partner as a dependant on their visa instead. You return to the UK to continue your employment in September 2025 on a dependant visa. You are not eligible for the second instalment of the IRP as the dependant visa does not appear on the list of eligible visas on this page.
+You arrive in the UK in September 2024 on a Youth Mobility Scheme visa. You are employed as a teacher on a contract lasting 2 academic years and successfully apply for the first instalment of the IRP. 
+
+Early in 2025, your partner moves to the UK on a Skilled Worker visa lasting 3 years. You visit family overseas during the summer holidays. As your Youth Mobility Scheme visa is limited to 2 years, you decide to apply to join your partner as a dependant on their visa instead. You return to the UK to continue your employment in September 2025 on a dependant visa.
+
+You are not eligible for the second instalment of the IRP as the dependant visa does not appear on the list of eligible visas on this page.
 
 
 
@@ -360,7 +374,7 @@ You cannot reapply for the IRP in following years if you leave the UK and then r
 
 ### Tax and the IRP
 
-The DfE will pay the UK tax owed on the IRP to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 in the year you receive the IRP. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) on any earnings which take you over £50,270.
+DfE will pay the UK tax owed on the IRP to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 in the year you receive the IRP. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) on any earnings which take you over £50,270.
 
 ### Other types of financial support from the UK government
 
@@ -373,7 +387,7 @@ You cannot receive both the levelling up premium payment and the early career pa
 
 ## Contact us
 
-For help with the international relocation payment, email teach.inengland@education.gov.uk.
+For help with the IRP email teach.inengland@education.gov.uk.
 
 Do not send us a CV or enquiries about teaching jobs. DfE does not employ teachers.
 
