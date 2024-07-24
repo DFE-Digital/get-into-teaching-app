@@ -26,7 +26,8 @@ expander:
     title: postgraduate fees
     text: |-
       <p>
-      Tuition fees vary depending on the provider. The maximum fee is around:</p>
+      Tuition fees vary depending on the provider. On average, they cost around $fees_pgitt_internationalaverage$ for non-UK citizens.</p>
+      <p>The maximum fee is around:</p>
       <p>
       <ul>
       <li>$fees_pgitt_internationalmaxfulltime$ per year for a full-time course</li>
