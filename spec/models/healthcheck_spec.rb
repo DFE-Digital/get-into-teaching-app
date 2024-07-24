@@ -85,7 +85,7 @@ describe Healthcheck do
 
     context "with working connection" do
       before do
-        allow(REDIS).to receive(:ping).and_return "PONG"
+        allow(REDIS).to receive(:with).and_return "PONG"
       end
 
       it { is_expected.to be true }
@@ -93,7 +93,7 @@ describe Healthcheck do
 
     context "with broken connection" do
       before do
-        allow(REDIS).to receive(:ping).and_raise Redis::CannotConnectError
+        allow(REDIS).to receive(:with).and_raise Redis::CannotConnectError
       end
 
       it { is_expected.to be false }

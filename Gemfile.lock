@@ -594,6 +594,7 @@ DEPENDENCIES
   byebug
   canonical-rails (>= 0.2.14)
   capybara (~> 3.40.0)
+  connection_pool
   delegate (>= 0.2.0)
   dfe-analytics!
   dotenv-rails (>= 2.7.6)
