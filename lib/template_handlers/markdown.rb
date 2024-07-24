@@ -1,12 +1,15 @@
+require "table_captions"
+require "values"
+
 module TemplateHandlers
   class Markdown
     include ActionView::Helpers::OutputSafetyHelper
+    include Values
 
     attr_reader :template, :source, :options
 
     DEFAULTS = {}.freeze
     GLOBAL_FRONT_MATTER = Rails.root.join("config/frontmatter.yml").freeze
-    COMPONENT_PLACEHOLDER_REGEX = /\$([A-z0-9-]+)\$/
     COMPONENT_TYPES = %w[quote quote_list inset_text youtube_video steps expander].freeze
 
     class << self
@@ -47,8 +50,12 @@ module TemplateHandlers
       Rinku.auto_link content
     end
 
+    def add_table_captions(content)
+      TableCaptions.new(content).render
+    end
+
     def render
-      autolink_html render_markdown
+      add_table_captions autolink_html render_markdown
     end
 
     def markdown
@@ -61,13 +68,9 @@ module TemplateHandlers
 
     # rubocop:disable Style/PerlBackrefs
     def substitute_components_and_values(content)
-      content.gsub(COMPONENT_PLACEHOLDER_REGEX) do
+      content.gsub(PLACEHOLDER_REGEX) do
         safe_join([cta_component($1), content_component($1), image($1), value($1)].compact).strip
       end
-    end
-
-    def substitute_values(content)
-      content.gsub(COMPONENT_PLACEHOLDER_REGEX) { safe_join([value($1)].compact).strip }
     end
     # rubocop:enable Style/PerlBackrefs
 
@@ -102,10 +105,6 @@ module TemplateHandlers
       component = Content::ImageComponent.new(path: image_args["path"])
 
       ApplicationController.render(component, layout: false)
-    end
-
-    def value(placeholder)
-      Value.get(placeholder)
     end
 
     def front_matter

@@ -15,6 +15,17 @@ external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
+expander:
+  check-your-qualifications:
+    title: check your qualifications
+    text: If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England.
+    link_title: You can get help comparing English and international qualifications.
+    link_url: /non-uk-teachers/non-uk-qualifications
+  bursaries:
+    title: bursaries and scholarships
+    text: If you train to teach languages or physics, you may be eligible for a bursary or scholarship.
+    link_title: Learn more about fees and financial support for non-UK trainee teachers.
+    link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees
 ---
 
 You need qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.
@@ -35,6 +46,8 @@ Different training providers may also have specific criteria. For example, some 
 Some training providers may consider candidates with pending GCSEs. If you do not have the GCSEs required, they may also ask you to sit an equivalency test or to offer other evidence to show your ability.
 
 Talk to your teacher training provider or [find a course](https://www.find-postgraduate-teacher-training.service.gov.uk/) to check what your provider will accept.
+
+$check-your-qualifications$
 
 ### If you do not have a degree
 
@@ -60,6 +73,8 @@ Talk to your training provider to find out what you can train to teach.
 
 You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
+$bursaries$
+
 ## Do a subject knowledge enhancement (SKE) course
 
 You can do a subject knowledge enhancement course before or sometimes during your teacher training to improve your subject knowledge. Your teacher training provider might make this a requirement of accepting you on their course if:
@@ -68,11 +83,3 @@ You can do a subject knowledge enhancement course before or sometimes during you
 * you completed your degree more than 5 years ago
 
 [Find out more about subject knowledge enhancement courses](/how-to-apply-for-teacher-training/subject-knowledge-enhancement).
-
-## If you have qualifications from overseas
-
-If you have qualifications from outside the UK, you’ll need to show that they’re the same standard as UK GCSEs and a UK bachelor’s degree.
-
-You can [get a statement of comparability from the UK European Network of Information Centres (UK ENIC)](https://enic.org.uk/Qualifications/SOC/Default.aspx) to show the standard of your qualifications.
-
-Talk to us to [get help and support with understanding your qualifications](/help-and-support).

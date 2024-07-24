@@ -8,7 +8,7 @@ navigation_title: Maths
 navigation_description: Find out how to become a maths teacher and show children the importance of maths in everything we do.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/hero-images/0004.jpg"
+image: "static/images/content/hero-images/maths.jpg"
 keywords:
   - maths
   - teaching maths

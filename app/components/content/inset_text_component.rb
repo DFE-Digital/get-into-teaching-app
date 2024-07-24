@@ -1,12 +1,15 @@
 module Content
   class InsetTextComponent < ViewComponent::Base
-    attr_reader :title, :text, :color
+    attr_reader :header, :title, :text, :color
 
-    def initialize(text:, title: nil, color: "yellow")
+    include ContentHelper
+
+    def initialize(text:, title: nil, header: nil, color: "yellow")
       super
 
-      @text = text
-      @title = title
+      @text = substitute_values(text)
+      @title = substitute_values(title)
+      @header = substitute_values(header.present? && title.present? ? "#{header}:" : header)
       @color = color
     end
 

@@ -15,6 +15,13 @@ promo_content:
 navigation: 20.30
 navigation_title: If you do not have a degree
 navigation_description: You need a degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about undergraduate degree courses.
+expander:
+  international:
+    title: undergraduate degree courses
+    text: |-
+      <p>
+      If you're a non-UK citizen who wants to study in England, you can visit the <a href="https://www.ukcisa.org.uk/">UK Council for International Student Affairs</a> for information about studying at an English university.
+      </p>      
 ---
 
 ## Undergraduate degree courses
@@ -34,13 +41,10 @@ Qualifications vary depending on the course. For example, you could get QTS with
 
 [Find out more about the qualifications you need to be a teacher in England](/is-teaching-right-for-me/qualifications-you-need-to-teach).
 
-<div class="inset">
-
-<p>If you're a non-UK citizen who wants to study in England, you can visit the <a href="https://www.ukcisa.org.uk/">UK Council for International Student Affairs</a> for information about studying at an English university.</p>
-
-</div>
+$international$
 
 ## Teacher degree apprenticeships (TDAs)
 If you do not have a degree you may be eligible to apply for a TDA. This new course will allow you work in a school and earn a salary while getting a bachelor's degree and QTS. So you will not have to pay tuition fees. 
 
 Find out more about [teacher degree apprenticeships (TDAs)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
+

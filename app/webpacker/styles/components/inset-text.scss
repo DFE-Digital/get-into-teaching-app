@@ -21,6 +21,14 @@ section.inset-text {
 
   h2 {
     margin-top: 0;
+
+    span.header {
+      font-weight: bold;
+    }
+
+    span.title {
+      font-weight: normal;
+    }
   }
 
   p:first-child {
@@ -34,5 +42,17 @@ section.inset-text {
   h2,
   p {
     @include font-size("small");
+    margin: 0;
+  }
+
+  &.purple {
+    background: rgba($purple, .1);
+    border-left-color: $purple;
+  }
+
+  &.purple-white {
+    background: $white;
+    border-left-color: $purple;
+    margin-bottom:0;
   }
 }

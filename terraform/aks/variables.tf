@@ -86,6 +86,10 @@ variable "postgres_enable_high_availability" {
   default = false
 }
 variable "enable_logit" { default = false }
+variable "enable_prometheus_monitoring" {
+  type    = bool
+  default = false
+}
 
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)

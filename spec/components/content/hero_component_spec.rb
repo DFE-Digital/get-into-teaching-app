@@ -12,7 +12,7 @@ describe Content::HeroComponent, type: "component" do
       "subtitle" => "Teach all the subjects!",
       "subtitle_link" => "/signup",
       "subtitle_button" => "Find out more",
-      "image" => "static/images/content/hero-images/0012.jpg",
+      "image" => "static/images/content/hero-images/0001.jpg",
     }.merge(extra_front_matter)
   end
   let(:component) { described_class.new(front_matter) }
@@ -76,7 +76,7 @@ describe Content::HeroComponent, type: "component" do
             "subtitle" => "Teach all the subjects!",
             "subtitle_button" => "Click here to find out",
             "subtitle_link" => "https://foo.com",
-            "image" => "static/images/content/hero-images/0012.jpg",
+            "image" => "static/images/content/hero-images/0001.jpg",
           }
         end
 

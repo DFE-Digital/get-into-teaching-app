@@ -12,7 +12,7 @@ navigation: 20.30
 navigation_title: Apply for your visa to train to teach
 navigation_description: Learn more about applying for a Student or Skilled Worker visa to train to teach in England.
 date: "2021-05-27"
-image: "static/images/content/hero-images/0002.jpg"
+image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 keywords:
   - International
@@ -74,17 +74,17 @@ For a [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa), you will al
 
 Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a Skilled Worker visa – this varies by region, as follows: 
 
-* inner London: £25,831 
+* inner London: $nonuk_skilledworkervisatraineeminfulltime_innerlondon$ 
 
-* outer London: £24,415 
+* outer London: $nonuk_skilledworkervisatraineeminfulltime_outerlondon$ 
 
-* London fringe: £23,200 
+* London fringe: $nonuk_skilledworkervisatraineeminfulltime_londonfringe$ 
 
-* rest of England: £23,200 
+* rest of England: $nonuk_skilledworkervisatraineeminfulltime_restofengland$ 
 
 Check the region you will be working in with your teacher training provider. 
 
-You may be able to train part-time, but your part-time salary must be at least £23,200.
+You may be able to train part-time, but your part-time salary must be at least $nonuk_skilledworkervisatraineeminparttime$.
 
 ### Your partner and children 
 

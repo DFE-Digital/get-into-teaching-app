@@ -4,14 +4,18 @@ subcategory: If you want to train to teach
 description: |-
   Find out how to train to teach in England as a student from outside the UK. Get help and guidance on your qualifications, funding and visa.
 related_content:
-    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
+    Fees and funding for non-UK trainees: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
+youtube_video:
+  why-train-video:
+    id: WhBBL_DpHFo
+    title: Why train to teach in England 
 navigation: 20.10
 navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
 date: "2021-05-27"
-image: "static/images/content/hero-images/0003.jpg"
+image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 keywords:
   - International
@@ -68,7 +72,7 @@ living costs
 - depending on your immigration status and the subject you train to teach, you may get some financial support
 - training lasts one academic year full-time, or longer part-time
 - you can apply for paid teaching jobs as soon as you successfully complete your training and gain English qualified teacher status (QTS)
-- you'll earn at least £30,000 a year (or more in London) when you qualify as a teacher
+- you'll earn at least $salaries_starting_min$ a year (or more in London) when you qualify as a teacher
 - you can update, extend or switch your visa to live and work in the UK long-term
 
 ## Already a qualified teacher?
@@ -245,6 +249,12 @@ Learn more about:
 - [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
 - [join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
 - [read interviews with real teachers](/blog)
+
+## Non-UK citizens who trained to teach in England share their experiences
+
+$why-train-video$
+
+[Read the transcript for the 'Why train to teach in England?' video](/non-uk-teachers/why-train-to-teach-in-england-video-transcript).
 
 ## Contact
 

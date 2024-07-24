@@ -2,7 +2,7 @@
   <section class="col col-720 col-space-l-top">
 <p>As a secondary computing teacher you'll help pupils become responsible and confident users of information and technology in an increasingly digital world.</p>
 <p>Whether it's teaching your pupils about artificial intelligence (AI) or creating apps, you could inspire them to look at a future role in tech.</p>
-<p>Tax-free bursaries of £28,000 or scholarships of <%= v :scholarships_computing %> are available for eligible trainee computing teachers.</p>
+<p>Tax-free bursaries of <%= v :bursaries_postgraduate_computing %> or scholarships of <%= v :scholarships_computing %> are available for eligible trainee computing teachers.</p>
 </section>
   <section class="col col-space-s col-content-max">
 <%= render TextBlockWithTwoImagesComponent.new(
@@ -76,19 +76,29 @@ image_2_alt: "",
 </ul>
 <p>Computing teacher training courses have had successful applications from candidates with a range of degrees, including business and management, data science, history and economics.</p>
 <p>Find out more about what <a href="/is-teaching-right-for-me/qualifications-you-need-to-teach">qualifications you need to train to teach</a>.</p>
-<p>Non-UK citizens can <a href="/non-uk-teachers/non-uk-qualifications">check your eligibility to train to teach in England</a>.</p>
+<%= render Content::ExpanderComponent.new(
+  title: "check your qualifications",
+  text: "If you have qualifications from outside the UK, you'll need to show that they meet the standards set for teacher training in England.",
+  link_title: "You can get help comparing English and international qualifications.",
+  link_url: "/non-uk-teachers/non-uk-qualifications",
+) %>
 <h3> Subject knowledge enhancement course (SKE)
 <p>If your training provider thinks you need to top up your computing knowledge, you might need to do an <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">SKE course</a> before you start your teacher training.</p>
 <h2>Fund your teacher training</h2>
-<p><a href="/funding-and-support/scholarships-and-bursaries">Tax-free bursaries of £28,000 or scholarships of <%= v :scholarships_computing %></a> are available for eligible trainee computing teachers</a>.</p>
+<p><a href="/funding-and-support/scholarships-and-bursaries">Tax-free bursaries of <%= v :bursaries_postgraduate_computing %> or scholarships of <%= v :scholarships_computing %></a> are available for eligible trainee computing teachers</a>.</p>
 <p>You can get a bursary or scholarship alongside a tuition fee loan and maintenance loan.</p>
 <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
 <ul>
 <li>a parent or carer</li>
 <li>disabled</li>
 </ul>
-<p>Non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible for funding.</p>
 <p>Find out more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.</p>
+<%= render Content::ExpanderComponent.new(
+  title: "funding your training",
+  text: "If you do not have <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for funding.",
+  link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
+  link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
+) %>
 <h2>Paid internship </h2>
 <p>If you’re currently doing an undergraduate or master's degree and are interested in teaching computing, you could apply for a <a href="/is-teaching-right-for-me/teaching-internship-providers">paid teaching internship</a>.</p>
 <p>The 3-week programme could help you to understand what it’s really like in the classroom and get a feel for school life.</p>

@@ -11,7 +11,7 @@
     <div class="event-details">
       <%= render(partial: 'teaching_events/show/date-and-time') %>
       <%= render(partial: 'teaching_events/show/location-and-setting') %>
-      <%= render(partial: 'teaching_events/show/register-button') if @event.allow_registration? %>
+      <%= render(partial: 'teaching_events/show/online-register-button') if @event.allow_registration? %>
     </div>
 
     <%= render(partial: 'teaching_events/show/event-image') %>

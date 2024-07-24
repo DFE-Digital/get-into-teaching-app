@@ -244,8 +244,10 @@ If you need to call-out something important in an article and differentiate it f
 ---
 inset_text:
   important-content:
+    header: Optional title header
     title: Optional title
     text: Text that can contain <a href="#">links</a>
+    color: yellow|grey|purple
 ---
 
 # My page
