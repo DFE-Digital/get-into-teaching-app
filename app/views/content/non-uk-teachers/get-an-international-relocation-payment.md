@@ -119,6 +119,8 @@ In your role in a school in England, you must be working as:
 
 If you are employed to teach more than one subject, then physics, general or combined science or a language or languages must make up at least 50% of your time in the classroom. Your school can tell you how much of your time is allocated to teaching eligible subjects. 
 
+You will not be eligible if you are teaching English, unless it is combined with an eligible subject.
+
 Examples of eligible teaching jobs include:
 
 * 50% modern foreign languages (for example, French, Spanish or German) and 50% another subject (for example, history)
