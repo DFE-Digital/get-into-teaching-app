@@ -9,6 +9,6 @@ REDIS = ConnectionPool.new(size: ENV["RAILS_MAX_THREADS"] || 5) do
   Redis.new(url: ENV["REDIS_URL"] || "")
 end
 
-if ENV["REDIS_URL"].present? && REDIS.ping != "PONG"
+if ENV["REDIS_URL"].present? && REDIS.with(&:ping) != "PONG"
   raise "Cannot connect to Redis"
 end
