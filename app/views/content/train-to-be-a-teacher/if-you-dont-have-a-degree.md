@@ -31,7 +31,7 @@ You need QTS to teach in maintained primary, secondary and special schools in En
 
 As part of selecting your undergraduate degree course, you'll need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
 
-Full-time degree courses that include QTS typically cost £9,250 per year and can take up to 4 years but you can get [funding for your training](/funding-and-support).
+Full-time degree courses that include QTS typically cost $fees_ugitt$ per year and can take up to 4 years but you can get [funding for your training](/funding-and-support).
 
 Qualifications vary depending on the course. For example, you could get QTS with a:
 
