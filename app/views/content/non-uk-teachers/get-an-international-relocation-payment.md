@@ -24,8 +24,9 @@ inset_text:
 
       <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to get a bursary or apply for a scholarship worth up to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.</p>
 
+
       <h2>Changes to eligibility and payment for teachers</h2>
-      <p>Eligible teachers will receive an IRP of up to £10,000, in 2 instalments of £5,000 spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment. Learn more about applying for the IRP.</p>
+      <p>Eligible teachers will receive an IRP of up to £10,000, in 2 instalments of £5,000 spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment.</p>
 
 
 keywords:
@@ -76,7 +77,7 @@ $applications-open$
 
 If you are a teacher considering moving to England to teach languages or physics, you could be eligible for an international relocation payment (IRP) from the UK government worth up to £10,000.
 
-The international relocation payment (IRP) is designed to cover some of the costs of moving to England, including:
+The IRP is designed to cover some of the costs of moving to England, including:
 
 * the costs of visas
 
@@ -94,6 +95,8 @@ The IRP is available whether you teach full-time or part-time.
 
 To be eligible for the maximum IRP of £10,000, you must meet all the eligibility requirements when you apply for both the first and second instalments.
 
+You will not be able to use eligibility for the IRP in your visa application as proof that you have enough money to support yourself.
+
 ### Eligibility requirements for IRP instalment 1 (£5,000)
 
 #### Teaching subject and school
@@ -102,6 +105,7 @@ You must be:
  
  * employed by and working in a state secondary school in England
  * on a contract of employment lasting at least 1 year
+
 
 Your contract of employment must begin between 1 March 2024 and 1 May 2025.
 State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 years old or 11 to 18 years old. Schools for pupils aged 16 to 18 years old only are not eligible. Schools for pupils aged 5 to 18 years old are eligible, but you must teach the secondary age range (11 to 16 years old or 11 to 18 years old).
@@ -292,7 +296,7 @@ You are not eligible for the second instalment of the IRP as the dependant visa 
 
 
 
-## How to apply for the international relocation payment (IRP)
+## How to apply for the IRP
 
 We will update this page with a link to the application form when it is live.
 
@@ -307,7 +311,7 @@ If you are eligible, you should receive the money following successful completio
 
 ## DfE eligibility requirements for IRP instalments
 
-### First instalment of IRP
+### First instalment of the IRP
 
 DfE will check you meet the eligibility requirements for the first instalment of IRP by validating your application with:
 
@@ -317,9 +321,11 @@ DfE will check you meet the eligibility requirements for the first instalment of
 
 If your eligibility checks are successful, you will get the first instalment of £5,000. 
 
-### Second instalment of IRP
+### Second instalment of the IRP
 
-At the start of your second year of employment as a teacher, apply for the second instalment of the IRP. To get the second instalment of the IRP, you will need to have:
+At the start of your second year of employment as a teacher, apply for the second instalment of the IRP. 
+
+To get the second instalment of the IRP, you will need to have:
 
 * made a successful claim for the first instalment
 
