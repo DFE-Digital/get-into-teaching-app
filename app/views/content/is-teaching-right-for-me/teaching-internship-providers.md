@@ -7,16 +7,32 @@ description: |-
 date: "2021-04-14"
 image: false
 before-content:
-    - content/train-to-be-a-teacher/promos/application-closure
+  - content/train-to-be-a-teacher/promos/application-closure
 promo_content:
   - content/train-to-be-a-teacher/promos/eta-promo-internships
 backlink: /
 fullwidth: true
 navigation: 5.55
 navigation_title: Can I do a teaching internship?
-navigation_description: Earn from £300 per week and find out what it is really like in the classroom with a teaching internship.
+navigation_description: Earn from $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/is-teaching-right-for-me/teaching-internship-providers/listing
+
+
+# provider_groups:
+# 
+#   :
+#     providers:
+# 
+#       - header: 
+#         link: 
+#         applications: 
+#         subjects: 
+#         areas: 
+#         name: 
+#         email: 
+# 
+# 
 
 keywords:
   - teaching internship
