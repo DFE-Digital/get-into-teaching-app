@@ -18,6 +18,7 @@
 
 # Ignore local databases
 /db/*.sqlite*
+dump.rdb
 
 .byebug_history
 
