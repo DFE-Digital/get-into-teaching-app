@@ -21,7 +21,10 @@ expander:
     text: |-
       <p>
       If you're a non-UK citizen who wants to study in England, you can visit the <a href="https://www.ukcisa.org.uk/">UK Council for International Student Affairs</a> for information about studying at an English university.
-      </p>      
+      </p>  
+  teacher-degree-apprenticeships:
+    title: teacher degree apprenticeships
+    text: "You can normally only do a teacher degree apprenticeship (TDA) if you've been resident in the UK for the last 3 years or more. There are some exceptions to this. For example, if you've applied to the Afghan or Ukraine resettlement schemes. Speak to providers for more information."    
 ---
 
 ## Undergraduate degree courses
@@ -48,3 +51,4 @@ If you do not have a degree you may be eligible to apply for a TDA. This new cou
 
 Find out more about [teacher degree apprenticeships (TDAs)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
 
+$teacher-degree-apprenticeships$
