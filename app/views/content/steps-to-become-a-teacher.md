@@ -38,7 +38,7 @@
       id: "step-2"
       image: "static/images/content/hero-images/0017.jpg"
       directions:
-        - Undergraduate and postgraduate teacher training course fees are around £9,250 per year, but there is funding available.
+        - Undergraduate and postgraduate teacher training course fees are around $fees_pgittandugitt$ per year, but there is funding available.
     Consider getting experience:
       id: "step-3"
       image: "static/images/content/hero-images/0011.jpg"
