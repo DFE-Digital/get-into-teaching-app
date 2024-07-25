@@ -72,6 +72,7 @@ To be eligible for a scholarship, you’ll need at least one of the following:
 If you achieved a 2:2 in your degree you may get a scholarship if you have enough relevant experience.
 
 Scholarship providers set their own:
+
 * eligibility requirements 
 * application deadlines
 
