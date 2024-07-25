@@ -111,7 +111,7 @@ If you intend to apply for teacher training, you could consider finding work as 
 Ukrainian refugees in the UK under a Ukraine visa scheme have access to the same financial support as UK applicants. This means you'll:
 
 * have the right to apply for a [student loan, bursary, scholarship](/funding-and-support) or an [advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
-* pay the same training fees as UK applicants (up to £9,250 for a full-time course)
+* pay the same training fees as UK applicants (up to $fees_pgitt_domesticfulltime$ for a full-time course)
 
 If you're not in the UK under one of these schemes, [find out about switching to a different type of visa](#visas-giving-you-the-right-to-train-to-teach-or-teach-in-england) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
