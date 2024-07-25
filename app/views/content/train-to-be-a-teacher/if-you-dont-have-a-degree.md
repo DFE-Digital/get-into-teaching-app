@@ -24,7 +24,7 @@ expander:
       </p>  
   teacher-degree-apprenticeships:
     title: teacher degree apprenticeships
-    text: "You can normally only do a teacher degree apprenticeship (TDA) if you've been resident in the UK for the last 3 years or more. There are some exceptions to this. For example, if you've applied to the Afghan or Ukraine resettlement schemes. Speak to providers for more information."    
+    text: "You can normally only do a teacher degree apprenticeship (TDA) if you've been a resident in the UK for the last 3 years or more. There are some exceptions to this. For example, if you've applied to the Afghan or Ukraine resettlement schemes. Speak to providers for more information."    
 ---
 
 ## Undergraduate degree courses
