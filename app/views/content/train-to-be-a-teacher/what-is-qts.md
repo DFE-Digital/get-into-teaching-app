@@ -7,7 +7,7 @@ description: |-
 date: "2021-11-01"
 backlink: "../../"
 related_content:
-    What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
+    What qualifications do you need to be a teacher? : "/train-to-be-a-teacher/qualifications-you-need-to-teach"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
     How to apply for teacher training : "/how-to-apply-for-teacher-training"
     How to choose a teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"

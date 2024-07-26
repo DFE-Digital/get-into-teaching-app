@@ -100,7 +100,7 @@ You’ll need to provide details about your:
 
 Training providers will also accept some equivalent qualifications, for example, if you’re a non-UK citizen. 
 
-[Find out more about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach).
+[Find out more about the qualifications you need to teach](/train-to-be-a-teacher/qualifications-you-need-to-teach).
 
 $check-your-qualifications$
 

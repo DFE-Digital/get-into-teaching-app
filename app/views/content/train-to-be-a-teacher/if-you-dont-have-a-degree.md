@@ -42,7 +42,7 @@ Qualifications vary depending on the course. For example, you could get QTS with
 - Bachelor of Education (BEd)
 - Bachelor of Science (BSc)
 
-[Find out more about the qualifications you need to be a teacher in England](/is-teaching-right-for-me/qualifications-you-need-to-teach).
+[Find out more about the qualifications you need to be a teacher in England](/train-to-be-a-teacher/qualifications-you-need-to-teach).
 
 $international$
 
