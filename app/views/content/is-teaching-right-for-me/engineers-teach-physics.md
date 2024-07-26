@@ -2,7 +2,7 @@
 title: Engineers teach physics
 title_paragraph: |-
   <p>
-  Physics initial teacher training courses for engineers and material scientists.
+  If you're an engineer or material scientist, an engineers teach physics initial teacher training course could be a great start to your teaching journey.
   </p>
   <p>
   Continue your engineering career by getting into the classroom and use your skills and passion to inspire the next generation.
