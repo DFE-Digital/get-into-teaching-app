@@ -12,7 +12,7 @@ promo_content:
   - content/train-to-be-a-teacher/promos/eta-promo-internships
 backlink: /
 fullwidth: true
-navigation: 20:25
+navigation: 20.25
 navigation_title: Teaching internships
 navigation_description: Earn from $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
 content:
