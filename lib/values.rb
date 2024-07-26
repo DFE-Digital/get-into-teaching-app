@@ -1,4 +1,6 @@
 module Values
+  include ActionView::Helpers::OutputSafetyHelper
+
   PLACEHOLDER_REGEX = /\$([A-z0-9-]+)\$/
 
   def value(key)
