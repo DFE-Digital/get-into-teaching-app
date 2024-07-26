@@ -10,7 +10,6 @@ else
                                          secure: true,
                                          redis: {
                                            expire_after: 1.day,
-                                           ttl: 1.day,
                                            key_prefix: "get-into-teaching-app:session:",
                                            url: ENV["REDIS_URL"],
                                          }

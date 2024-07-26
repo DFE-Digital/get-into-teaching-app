@@ -26,7 +26,8 @@ expander:
     title: postgraduate fees
     text: |-
       <p>
-      Tuition fees vary depending on the provider. The maximum fee is around:</p>
+      Tuition fees vary depending on the provider. On average, they cost around $fees_pgitt_internationalaverage$ for non-UK citizens.</p>
+      <p>The maximum fee is around:</p>
       <p>
       <ul>
       <li>$fees_pgitt_internationalmaxfulltime$ per year for a full-time course</li>
@@ -41,8 +42,8 @@ For most postgraduate teacher training courses in England you need to pay a tuit
 
 The maximum tuition fee for a postgraduate teacher training course for UK applicants is:
 
-* £9,250 per year for a full-time course
-* £6,935 per year for a part-time course 
+* $fees_pgitt_domesticfulltime$ per year for a full-time course
+* $fees_pgitt_domesticparttime$ per year for a part-time course 
 
 $postgraduate-fees$
 

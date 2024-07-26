@@ -1,4 +1,5 @@
 salaries_date_appliesfrom: 1 September 2023
+
 salaries:
 # Summary salaries
   starting:
@@ -54,20 +55,6 @@ salaries:
     salarywithtlr: £43k
     max: £15,690
     maxrounded: £15,000
-# Non-UK salary thresholds
-  skilledworkervisatraineeminfulltime:
-    innerlondon: £25,831
-    outerlondon: £24,415
-    londonfringe: £23,200
-    restofengland: £23,200
-  skilledworkervisatraineeminparttime:
-    restofengland: £23,200
-  skilledworkervisateacherminfulltime:
-    innerlondon: £36,745
-    outerlondon: £34,514
-    londonfringe: £31,350
-    restofengland: £30,000
-  skilledworkervisateacherminparttime: £23,200
 # Example variables - used in documentation
   example:
     min: £30,000

@@ -12,5 +12,5 @@ describe ChatComponent, type: "component" do
   it { is_expected.to have_css("[data-chat-target=online] a[data-action='chat#start']") }
   it { is_expected.to have_css("[data-chat-target=offline].hidden") }
   it { is_expected.to have_css("[data-chat-target=unavailable]:not(.hidden)") }
-  it { is_expected.to have_css("[data-chat-target=unavailable] a[href='mailto:getintoteaching.getintoteaching@education.gov.uk']") }
+  it { is_expected.to have_css("[data-chat-target=unavailable] a[href='mailto:getinto.teaching@service.education.gov.uk']") }
 end

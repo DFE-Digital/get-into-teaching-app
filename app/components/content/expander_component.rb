@@ -4,6 +4,7 @@ module Content
                 :background, :expanded, :classes
 
     include ActiveSupport::Inflector
+    include ContentHelper
 
     def initialize(
       title:, text:, header: "Non-UK citizens:",
@@ -15,10 +16,10 @@ module Content
     )
       super
 
-      @header = header
-      @title = title
-      @text = text
-      @link_title = link_title&.strip&.chomp(".")
+      @header = substitute_values(header)
+      @title = substitute_values(title)
+      @text = substitute_values(text)
+      @link_title = substitute_values(link_title)&.strip&.chomp(".")
       @link_url = link_url
       @background = background
       @expanded = expanded

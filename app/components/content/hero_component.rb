@@ -1,5 +1,6 @@
 module Content
   class HeroComponent < ViewComponent::Base
+    include ContentHelper
     attr_accessor :title, :subtitle, :image, :show_mailing_list, :paragraph, :title_bg_color, :hero_bg_color, :hero_blend_content, :hero_content_width
 
     def initialize(front_matter)
@@ -8,12 +9,12 @@ module Content
       super
 
       front_matter.with_indifferent_access.tap do |fm|
-        @title              = fm["heading"] || fm["title"]
-        @subtitle           = fm["subtitle"]
+        @title              = substitute_values(fm["heading"] || fm["title"])
+        @subtitle           = substitute_values(fm["subtitle"])
         @subtitle_link      = fm["subtitle_link"]
-        @subtitle_button    = fm["subtitle_button"]
+        @subtitle_button    = substitute_values(fm["subtitle_button"])
         @image              = fm["image"]
-        @paragraph          = fm["title_paragraph"]
+        @paragraph          = substitute_values(fm["title_paragraph"])
         @title_bg_color     = fm["title_bg_color"] || "yellow"
         @hero_bg_color      = fm["hero_bg_color"] || "grey"
         @hero_blend_content = fm["hero_blend_content"] || false

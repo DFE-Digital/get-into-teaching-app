@@ -1,4 +1,6 @@
 module ContentHelper
+  include Values
+
   def article_classes(front_matter)
     ["markdown", front_matter["article_classes"]].flatten.compact.tap do |classes|
       classes << "fullwidth" if front_matter["fullwidth"]
@@ -8,9 +10,4 @@ module ContentHelper
   def display_content_errors?
     Rails.application.config.x.display_content_errors
   end
-
-  def value(key)
-    Value.get(key)
-  end
-  alias_method :v, :value
 end
