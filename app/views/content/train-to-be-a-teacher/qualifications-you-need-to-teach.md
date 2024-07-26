@@ -1,5 +1,5 @@
 ---
-title: "What qualifications do I need to be a teacher?"
+title: "Qualifications needed to teach"
 heading: "What qualifications do I need to be a teacher?"
 subcategory: Qualifications
 description: |-
