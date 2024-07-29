@@ -1,3 +1,5 @@
+variable "app_name" { default = null }
+
 variable "cluster" {
   description = "AKS cluster where this app is deployed. Either 'test' or 'production'"
 }
