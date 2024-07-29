@@ -93,6 +93,7 @@ variable "enable_prometheus_monitoring" {
 
 variable "sidekiq_memory_max" {
   description = "maximum memory of the sidekiq"
+  default = "1Gi"
 }
 
 variable "sidekiq_replicas" {
