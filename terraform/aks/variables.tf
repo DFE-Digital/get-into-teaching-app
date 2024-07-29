@@ -97,6 +97,7 @@ variable "sidekiq_memory_max" {
 
 variable "sidekiq_replicas" {
   description = "number of replicas of the sidekiq"
+  default = 1
 }
 
 locals {
