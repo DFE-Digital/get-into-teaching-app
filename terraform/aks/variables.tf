@@ -91,8 +91,16 @@ variable "enable_prometheus_monitoring" {
   default = false
 }
 
+variable "sidekiq_memory_max" {
+  description = "maximum memory of the sidekiq"
+}
+
+variable "sidekiq_replicas" {
+  description = "number of replicas of the sidekiq"
+}
+
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)
-
   postgres_ssl_mode = var.enable_postgres_ssl ? "require" : "disable"
+  app_name_suffix   = var.app_name == null ? var.environment : var.app_name
 }
