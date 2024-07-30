@@ -38,38 +38,6 @@ module StructuredDataHelper
     structured_data("BlogPosting", data)
   end
 
-  def how_to_structured_data(page)
-    frontmatter = page.frontmatter
-
-    steps = frontmatter[:how_to].with_indifferent_access.map do |name, step|
-      {
-        "@type": "HowToStep",
-        url: "#{root_url.chomp('/')}#{page.path}##{step[:id]}",
-        name: name,
-        itemListElement: step[:directions].map { |text| { "@type": "HowToDirection", text: text } },
-        image: {
-          "@type": "ImageObject",
-          url: asset_pack_url(step[:image]),
-        },
-      }
-    end
-
-    data = {
-      name: frontmatter[:title],
-      description: frontmatter[:description],
-      step: steps,
-    }
-
-    if frontmatter[:image]
-      data[:image] = {
-        "@type": "ImageObject",
-        url: asset_pack_url(frontmatter[:image]),
-      }
-    end
-
-    structured_data("HowTo", data)
-  end
-
   def home_structured_data
     data = {
       name: "Get Into Teaching",

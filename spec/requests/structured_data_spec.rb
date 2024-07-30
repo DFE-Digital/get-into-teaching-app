@@ -7,7 +7,7 @@ describe "Google Structured Data", type: :request do
   let(:json_contents) { parsed_response.css("script[type='application/ld+json']").map(&:content) }
 
   before do
-    %i[how_to event blog_posting organization breadcrumb_list web_site].each do |type|
+    %i[event blog_posting organization breadcrumb_list web_site].each do |type|
       allow(Rails.application.config.x.structured_data).to \
         receive(type).and_return(true)
     end
@@ -64,21 +64,5 @@ describe "Google Structured Data", type: :request do
     before { get path }
 
     it { is_expected.to include(a_hash_including("@type": "BlogPosting")) }
-  end
-
-  context "when viewing a page with a how_to section of frontmatter" do
-    let(:path) { "/steps-to-become-a-teacher" }
-
-    before { get path }
-
-    it { is_expected.to include(a_hash_including("@type": "HowTo")) }
-  end
-
-  context "when viewing a page without a how_to section of frontmatter" do
-    let(:path) { "/train-to-be-a-teacher" }
-
-    before { get path }
-
-    it { is_expected.not_to include(a_hash_including("@type": "HowTo")) }
   end
 end
