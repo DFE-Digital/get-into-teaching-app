@@ -96,4 +96,6 @@ Many school and training provider websites have helpful information like “day 
 
 There are other ways to gain valuable experience of working with young people. Sports coaching, youth groups, after-school clubs or other volunteering activities are great opportunities that may be easier to fit around work and other commitments. 
 
+For example, you could get paid to work in a school that offers childcare before and after school. This is known as wraparound because the childcare wraps around the school day.
 
+Working in wraparound gives you experience working with children and in a school environment. Contact your local council or school to find out about any available opportunities. 
