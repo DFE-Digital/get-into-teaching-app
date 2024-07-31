@@ -56,14 +56,6 @@ GIT
       rspec (~> 3.0)
 
 GIT
-  remote: https://github.com/pkorenev/rack-page_caching.git
-  revision: 9ca404f7f7e4773030e75799da7ab02e27cbe9a3
-  ref: 9ca404f
-  specs:
-    rack-page_caching (0.0.3)
-      rack
-
-GIT
   remote: https://github.com/waiting-for-dev/front_matter_parser.git
   revision: 01187017cb5b20ff1cf92809969ecd385d613aaa
   specs:
@@ -107,6 +99,8 @@ GEM
     actionpack-cloudfront (1.2.0)
       actionpack (>= 4.2)
       railties (>= 4.2)
+    actionpack-page_caching (1.2.4)
+      actionpack (>= 4.0.0)
     actiontext (7.0.2.4)
       actionpack (= 7.0.2.4)
       activerecord (= 7.0.2.4)
@@ -586,6 +580,7 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack-cloudfront (>= 1.2.0)
+  actionpack-page_caching
   addressable (~> 2.8.4)
   amazing_print
   better_html (>= 1.0.16)
@@ -636,7 +631,6 @@ DEPENDENCIES
   rack-attack
   rack-cors
   rack-host-redirect
-  rack-page_caching!
   rails (~> 7.0.2.3)
   rails_semantic_logger (>= 4.12.0)
   redis

@@ -3,6 +3,7 @@ require "middleware/page_cache_exclusion"
 
 describe Middleware::PageCacheExclusion, type: :request do
   let(:path) { "/test" }
+  let(:cache) { instance_double(ActionController::Caching::Pages::PageCache) }
   let(:response) do
     [
       <<~HTML,
@@ -14,27 +15,27 @@ describe Middleware::PageCacheExclusion, type: :request do
   end
 
   before do
-    allow(Rack::PageCaching::Cache).to receive(:delete)
+    allow(cache).to receive(:expire)
 
     app = ->(env) { [200, env, response] }
     middleware = described_class.new(app)
     middleware.call(Rack::MockRequest.env_for("http://example.com#{path}"))
   end
 
-  subject { Rack::PageCaching::Cache }
+  subject { cache }
 
-  it { is_expected.not_to have_received(:delete) }
+  it { is_expected.not_to have_received(:expire) }
 
   context "when the response body is nil" do
     let(:response) { [nil] }
 
-    it { is_expected.not_to have_received(:delete) }
+    it { is_expected.not_to have_received(:expire) }
   end
 
   context "when the response body is an instance of ActionDispatch::Response::RackBody" do
     let(:response) { ActionDispatch::Response::RackBody.new(ActionDispatch::Response.new) }
 
-    it { is_expected.not_to have_received(:delete) }
+    it { is_expected.not_to have_received(:expire) }
   end
 
   shared_context "when the response body contains a matching form method" do

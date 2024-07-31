@@ -37,6 +37,7 @@ module GetIntoTeachingWebsite
     config.view_component.default_preview_layout = "component_preview"
 
     config.skylight.environments.append("preprod", "dev", "test", "staging", "rolling")
+    config.action_controller.page_cache_directory = Rails.root.join("public/cached_pages")
   end
 end
 
