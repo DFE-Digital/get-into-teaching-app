@@ -81,8 +81,8 @@ Teacher training fees for non-UK candidates vary between training providers.
 
 Fees cost:
 
-* an average of £14,765
-* a maximum of about £36,000
+* an average of $fees_pgitt_internationalaverage$
+* a maximum of about $fees_pgitt_internationalmaxfulltime$
 
 Most non-UK candidates will not be eligible for financial support to help with fees.
 

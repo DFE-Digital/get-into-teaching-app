@@ -21,7 +21,10 @@ expander:
     text: |-
       <p>
       If you're a non-UK citizen who wants to study in England, you can visit the <a href="https://www.ukcisa.org.uk/">UK Council for International Student Affairs</a> for information about studying at an English university.
-      </p>
+      </p>  
+  teacher-degree-apprenticeships:
+    title: teacher degree apprenticeships
+    text: "You can normally only do a teacher degree apprenticeship (TDA) if you've been a resident in the UK for the last 3 years or more. There are some exceptions to this. For example, if you've applied to the Afghan or Ukraine resettlement schemes. Speak to providers for more information."    
 ---
 
 ## Undergraduate degree courses
@@ -31,7 +34,7 @@ You need QTS to teach in maintained primary, secondary and special schools in En
 
 As part of selecting your undergraduate degree course, you'll need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
 
-Full-time degree courses that include QTS typically cost £9,250 per year and can take up to 4 years but you can get [funding for your training](/funding-and-support).
+Full-time degree courses that include QTS typically cost $fees_ugitt$ per year and can take up to 4 years but you can get [funding for your training](/funding-and-support).
 
 Qualifications vary depending on the course. For example, you could get QTS with a:
 
@@ -65,3 +68,4 @@ If you do not have a degree you may be eligible to apply for a TDA. This new cou
 
 Find out more about [teacher degree apprenticeships (TDAs)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
 
+$teacher-degree-apprenticeships$

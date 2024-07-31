@@ -149,11 +149,6 @@ provider_groups:
       name: Lynsey Salt
       telephone: 020 7717 2245
       email: ao@gold.ac.uk
-    - header: Henry Maynard Training E17
-      link: http://www.henrymaynardtraining.co.uk
-      name: Clare Hunton
-      telephone: '020 8520 3142'
-      email: training@henrymaynard.waltham.sch.uk
     - header: London School of Jewish Studies (LSJS)
       link: https://www.lsjs.ac.uk/
       name: Galia Segal

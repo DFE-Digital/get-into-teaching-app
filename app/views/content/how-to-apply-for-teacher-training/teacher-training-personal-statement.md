@@ -97,7 +97,7 @@ Teacher training providers like to see that you have a good understanding of tea
 
 Getting some school experience can also be a good way to make sure teaching is right for you before you apply for a course. 
 
-[Find out how you could get school experience](/is-teaching-right-for-me/get-school-experience). 
+[Find out how you could get school experience](/train-to-be-a-teacher/get-school-experience). 
 
 ## Get help with your personal statement 
 
