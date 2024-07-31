@@ -12,6 +12,7 @@ end
 
 RSpec.feature "content pages check", type: :feature, content: true do
   include_context "with stubbed types api"
+  include Values
 
   let(:other_paths) { %w[/ /feedback /blog /blog/post_invalid_tag /search /teacher-training-adviser/sign_up/identity /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
   let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}, %r{/test}] }
@@ -204,7 +205,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
     scenario "the child pages are represented by navigation cards" do
       Pages::Navigation.find(path).children.each do |child|
         expect(page).to have_link(child.title, href: child.path, class: "link--black")
-        expect(page).to have_content(child.description)
+        expect(page).to have_content(substitute_values(child.description))
       end
     end
   end
