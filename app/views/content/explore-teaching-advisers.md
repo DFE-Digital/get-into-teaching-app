@@ -1,8 +1,7 @@
 ---
 title: Explore teaching advisers
 title_paragraph: |-
-  <p>
-  Finding out which career is right for you is not always easy. How do you know what something is like if you've never done it before?</p>
+  <p>Our explore teaching advisers can help you discover whether the classroom is where you belong. Your dedicated adviser will give you free support and guidance, and can answer all your questions about what teaching is really like.</p>
 description: |-
     Our explore teaching advisers can help you discover whether the classroom is where you belong. Your dedicated adviser will give you free support and guidance, and can answer all your questions about what teaching is really like.
 layout: "layouts/minimal"
