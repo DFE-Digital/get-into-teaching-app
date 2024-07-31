@@ -55,11 +55,7 @@ You will not need to pay tax or National Insurance on bursary payments.
 
 You do not need to apply for a bursary. When you apply for teacher training, your provider will check if you're eligible for a bursary. If you are, your provider will confirm this in writing before you start your course. 
 
-## Scholarships
-
-Scholarships are provided by charitable organisations. They offer more than just financial benefits. For example, you can get mentoring, subject specialist events, or access to networking events. 
-
-#### Eligibility
+## Eligibility for scholarships
 
 To be eligible for a scholarship, you’ll need at least one of the following:
 
@@ -67,14 +63,24 @@ To be eligible for a scholarship, you’ll need at least one of the following:
 * a master’s degree
 * a PhD
 
-If you achieved a 2:2 in your degree you may get a scholarship if you have enough relevant experience.
+If you achieved a 2:2 in your degree you may be awarded a scholarship if you have enough relevant experience.
 
 Scholarship providers set their own:
 
 * eligibility requirements 
 * application deadlines
 
-#### How they're paid
+Scholarships are provided by charitable organisations. They offer more than just financial benefits, including:
+
+* subject specialist events and webinars
+* online and face-to-face workshops
+* mentoring and coaching
+* a community of ex-scholars, teachers and subject leaders
+* access to classroom resources
+* networking events during your teacher training and beyond
+
+
+#### How scholarships are paid
 
 A scholarship is paid over a minimum of 10 months by your teacher training provider. They will confirm when you will get the payments. 
 
@@ -82,9 +88,7 @@ You will not need to pay tax or National Insurance on scholarship payments.
 
 #### How to apply
 
-You need to apply directly to the scholarship provider via their website. They will confirm if you meet their eligibility requirements. 
-
-If you get a scholarship, you need to tell your teacher training provider.   
+You need to apply directly to the scholarship provider via their website. They will confirm if you meet their eligibility requirements.  
 
 * [the Royal Society of Chemistry](https://www.rsc.org/prizes-funding/funding/find-funding/teacher-training-scholarships/) (chemistry)
 * [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
@@ -112,11 +116,8 @@ If you get a scholarship, you need to tell your teacher training provider.
 
 Table caption: Available postgraduate bursaries and scholarships
 
-## If you think you're not eligible
+## Other funding options
 
-If you're not eligible for a bursary or scholarship, there are other funding options. 
+If you're not eligible for a bursary or scholarship, here may be other funding options available, such as [tuition fees and maintenance loans](/funding-and-support/tuition-fees).
 
-You can:
-
-* find out more about [tuition fees and maintenance loans](/funding-and-support/tuition-fees)
-* talk to a [teacher training adviser](/help-and-support)
+For advice on funding, you can speak to a [teacher training adviser](/help-and-support). They can help you work out what support you could be eligible for.
