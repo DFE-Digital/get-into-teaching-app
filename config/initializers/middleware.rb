@@ -4,12 +4,6 @@ require "middleware/page_cache_exclusion"
 # Prevent certain pages from being cached
 Rails.application.config.middleware.use(Middleware::PageCacheExclusion)
 
-# Page caching middleware
-# Rails.application.config.middleware.use Rack::PageCaching,
-#                                         page_cache_directory: Rails.root.join("public/cached_pages"),
-#                                         gzip: :best_compression,
-#                                         include_hostname: false
-
 # Transform HTML responses (image optimisations, links)
 Rails.application.config.middleware.use(Middleware::HtmlResponseTransformer)
 
