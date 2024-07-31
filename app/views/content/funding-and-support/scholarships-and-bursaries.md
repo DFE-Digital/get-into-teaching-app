@@ -1,5 +1,5 @@
 ---
-title: "Teacher training bursaries and scholarships"
+title: "Teacher training bursaries"
 heading: "Bursaries and scholarships"
 subcategory: Courses with fees
 description: |-
