@@ -1,18 +1,21 @@
 <section class="col col-720">
-  <p>This page is for people who have a degree or are studying towards one, and want to do postgraduate teacher training in England.  To help fund your training, you may be eligible for a bursary or scholarship.</p>
-  <h2>What's a bursary?</h2>
-  <p>Bursaries are tax-free payments aimed at encouraging graduates to train to teach certain subjects. If you're eligible for a bursary, you'll get it automatically.</p>
-  <h2>What's a scholarship?</h2>
-  <p>Scholarships are tax-free payments provided by charitable organisations. As well as money, you'll have the opportunity to access benefits like mentoring and networking. If you're eligible, you must apply and only a limited number of scholarships are awarded.</p>
-  <h2>What to consider</h2>
-  <p>If you're considering a bursary or scholarship, you should know:<ul><li>you cannot receive both</li><li>they're not available for salaried teacher training</li><li>only certain subjects have bursaries and scholarships but this changes every year</li><li>the figures on this page apply if you're starting your training between September 2024 and July 2025</li></p>
-
-<%= render Content::ExpanderComponent.new(
+  <p>If you want to do postgraduate teacher training in England, you may be eligible for a bursary or scholarship.</p>
+  <%= render Content::ExpanderComponent.new(
   title: "bursaries and scholarships",
   text: "If you train to teach languages or physics, you may be eligible for a bursary or scholarship. Bursaries and scholarships are not available for other subjects..",
   link_title: "Learn more about fees and financial support for non-UK trainee teachers.",
   link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
 ) %>
+</section>
+<h2>What are bursaries and scholarships?</h2>
+<section>
+  <p>Bursaries are tax-free payments you receive if you're training to teach certain subjects. If you're eligible for a bursary, you'll get it automatically.</p>
+  <p>Scholarships are tax-free payments provided by charitable organisations. As well as financial benefits, you'll have access to opportunities like mentoring and networking. If you're eligible, you must apply and only a limited number of scholarships are awarded.</p>
+  <p>You cannot receive both a bursary and a scholarship.</p>
+  <p>Bursaries and scholarships are not available for:<ul><li>every subject</li><li>salaried teacher training</li></p>
+</section>
+<section>
+  <p>The figures on this page apply if you're starting your training between September 2024 and July 2025.</p>
 </section>
 <section id="funding-widget">
   <%= render FundingWidgetComponent.new(
