@@ -33,11 +33,9 @@ keywords:
     - Military
 ---
 
-## Bursaries
+## Eligibility for bursaries
 
 You do not need to apply for a bursary. If you’re eligible, you’ll automatically receive it.
-
-#### Eligibility
 
 To be eligible for a bursary, you’ll need at least one of the following:
 
@@ -47,15 +45,15 @@ To be eligible for a bursary, you’ll need at least one of the following:
 
 If your course combines 2 subjects (for example, English and history), at least 50% of your course content must be made up of the bursary subject to be eligible.
 
-#### How they're paid
+#### How bursaries are paid
 
 A bursary is paid over a minimum of 10 months by your teacher training provider. They will confirm when you will get the payments. 
 
 You will not need to pay tax or National Insurance on bursary payments. 
 
-#### How to get one
+#### How to get a bursary
 
-You do not need to apply for a bursary. When you apply for teacher training, your course provider will check if you're eligible for a bursary. If you are, your teacher training provider will confirm this in writing before you start your course. 
+You do not need to apply for a bursary. When you apply for teacher training, your provider will check if you're eligible for a bursary. If you are, your provider will confirm this in writing before you start your course. 
 
 ## Scholarships
 
