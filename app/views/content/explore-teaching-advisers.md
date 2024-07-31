@@ -1,9 +1,9 @@
 ---
 title: Explore teaching advisers
 title_paragraph: |-
-  <p>Our explore teaching advisers can help you discover whether the classroom is where you belong. Your dedicated adviser will give you free support and guidance, and can answer all your questions about what teaching is really like.</p>
+  Our explore teaching advisers can help you discover whether the classroom is where you belong. Your dedicated adviser will give you free support and guidance, and can answer all your questions about what teaching is really like.
 description: |-
-    Our explore teaching advisers can help you discover whether the classroom is where you belong. Your dedicated adviser will give you free support and guidance, and can answer all your questions about what teaching is really like.
+    Find out if teaching is for you with an explore teaching adviser who can help you discover what teaching is really like.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/campus-advisers/adviser.jpeg"
