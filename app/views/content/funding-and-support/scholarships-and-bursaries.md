@@ -86,7 +86,7 @@ A scholarship is paid over a minimum of 10 months by your teacher training provi
 
 You will not need to pay tax or National Insurance on scholarship payments. 
 
-#### How to apply
+#### How to apply for a scholarship
 
 You need to apply directly to the scholarship provider via their website. They will confirm if you meet their eligibility requirements.  
 
