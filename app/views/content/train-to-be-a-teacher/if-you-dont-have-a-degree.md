@@ -21,7 +21,7 @@ expander:
     text: |-
       <p>
       If you're a non-UK citizen who wants to study in England, you can visit the <a href="https://www.ukcisa.org.uk/">UK Council for International Student Affairs</a> for information about studying at an English university.
-      </p>      
+      </p>
 ---
 
 ## Undergraduate degree courses
@@ -42,6 +42,23 @@ Qualifications vary depending on the course. For example, you could get QTS with
 [Find out more about the qualifications you need to be a teacher in England](/is-teaching-right-for-me/qualifications-you-need-to-teach).
 
 $international$
+
+## Bursaries for undergraduate degrees
+
+You may be eligible for a [bursary of $bursaries_undergraduate$](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2024-to-2025#undergraduate-bursary) if you do a secondary maths or physics course that leads to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
+
+You may also be eligible if you do an opt-in QTS course in secondary computing, languages, mathematics or physics. This is where you start a standard undergraduate degree but then opt-in to initial teacher training to get QTS.
+
+The amount you receive depends on the year that you start your QTS course. You do not get a bursary in every year of an undergraduate course. Depending on the type of course you do, you may get the bursary in your final year or final two years.
+
+#### Undergraduate bursary if you're former military personnel
+
+You may be eligible for a $bursaries_veteran_total$ tax-free undergraduate bursary for veterans if you’re:
+
+* training to teach secondary biology, chemistry, computing, languages, maths, or physics
+* doing an undergraduate degree leading to QTS in England
+
+[Find out more about how to get support training to teach if you're a veteran](/funding-and-support/if-youre-a-veteran).
 
 ## Teacher degree apprenticeships (TDAs)
 If you do not have a degree you may be eligible to apply for a TDA. This new course will allow you work in a school and earn a salary while getting a bachelor's degree and QTS. So you will not have to pay tuition fees. 

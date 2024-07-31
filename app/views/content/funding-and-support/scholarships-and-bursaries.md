@@ -25,12 +25,6 @@ keywords:
     - Grants
     - Financial Support
     - Undergraduate
-    - Troops to Teachers
-    - Army
-    - Air Force
-    - RAF
-    - Navy
-    - Military
 ---
 
 ## Eligibility for bursaries
