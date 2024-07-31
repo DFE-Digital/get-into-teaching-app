@@ -26,6 +26,7 @@ module Middleware
 
       cache_file = cache_file_for(path)
       return if cache_file.blank?
+
       @cache.expire(cache_file)
     end
 
@@ -33,6 +34,7 @@ module Middleware
       raise "No cache present" if @cache.blank?
 
       return if path.blank?
+
       @cache.send(:cache_file, path, extension)
     end
 
