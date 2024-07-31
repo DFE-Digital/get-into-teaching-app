@@ -1,7 +1,7 @@
 ---
 title: "Get school experience"
 heading: "Get school experience"
-subcategory: School experience
+subcategory: Postgraduate teacher training
 description: |-
   Get school experience to explore what life is like in a primary or secondary classroom and find out if teaching is right for you.
 related_content:
@@ -19,8 +19,8 @@ calls_to_action:
         link_target: "https://schoolexperience.education.gov.uk/"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo
-navigation: 5.50
-navigation_title: How do I get experience in a school?
+navigation: 20.20
+navigation_title: Get school experience
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
 quote:
   q-Zainab:
@@ -86,7 +86,7 @@ A paid teaching internship could help you to understand what it’s really like 
 
 You’ll get to experience a range of activities to help you get a feel for school life.
 
-[Find out more about paid teaching internships](/is-teaching-right-for-me/teaching-internship-providers).
+[Find out more about paid teaching internships](/train-to-be-a-teacher/teaching-internships).
 
 ### Watch pre-recorded lessons
 

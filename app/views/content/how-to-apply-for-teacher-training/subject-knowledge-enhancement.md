@@ -1,7 +1,7 @@
 ---
 title: Subject knowledge enhancement (SKE)
 related_content:
-    Get school experience : "/is-teaching-right-for-me/get-school-experience"
+    Get school experience : "/train-to-be-a-teacher/get-school-experience"
     How to choose a teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Teach computing : "/is-teaching-right-for-me/computing"
     Teach maths : "/is-teaching-right-for-me/maths"
