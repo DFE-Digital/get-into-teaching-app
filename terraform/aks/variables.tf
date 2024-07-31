@@ -106,5 +106,4 @@ variable "sidekiq_replicas" {
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)
   postgres_ssl_mode = var.enable_postgres_ssl ? "require" : "disable"
-  app_name_suffix   = var.app_name == null ? var.environment : var.app_name
 }

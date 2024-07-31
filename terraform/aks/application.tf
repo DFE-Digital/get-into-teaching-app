@@ -59,7 +59,7 @@ module "worker_application" {
   name                       = "worker"
   is_web                     = false
   namespace                  = var.namespace
-  environment                = local.app_name_suffix
+  environment                = local.environment
   service_name               = var.service_name
   cluster_configuration_map  = module.cluster_data.configuration_map
   kubernetes_config_map_name = module.application_configuration.kubernetes_config_map_name
