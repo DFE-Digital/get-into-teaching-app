@@ -4,7 +4,7 @@ RSpec.describe TextBlockWithTwoImagesComponent, type: "component" do
   subject! { Capybara.string(component) }
 
   let(:heading) { "A heading" }
-  let(:image_1_path) { "static/images/content/hero-images/0001.jpg" }
+  let(:image_1_path) { "static/images/content/hero-images/0032.jpg" }
   let(:image_1_alt) { "Photo 1" }
 
   let(:image_2_path) { "static/images/content/hero-images/0027.jpg" }

@@ -126,13 +126,6 @@
     - "static/images/content/hero-images/cake--mobile.png"
     - "static/images/content/hero-images/cake--tablet.png"
 
-"static/images/content/hero-images/0001.jpg":
-  # Maths teacher standing in front of a whiteboard with maths equations.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0001--mobile.jpg"
-    - "static/images/content/hero-images/0001--tablet.jpg"
-
 "static/images/content/hero-images/0011.jpg":
   # Child pointing something out to a teacher in the classroom.
   alt: ""
