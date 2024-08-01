@@ -6,7 +6,6 @@ class Chat
       skillid: skillid,
       available: available,
       status_age: status_age,
-      url: url,
     }
   end
 
@@ -22,10 +21,6 @@ private
 
   def status_age
     availability["status_age"] if availability
-  end
-
-  def url
-    ENV.fetch("CHAT_WIDGET_URL", nil) if available
   end
 
   def availability

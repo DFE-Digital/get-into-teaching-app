@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <%= render "sections/head" %>
+  <%= body_tag do %>
+    <%= render "sections/govuk_javascript" %>
+    <%= render(partial: "sections/content_errors") %>
+
+
+
+    <%= main_tag(class: @front_matter["main_class"]) do %>
+      <% @front_matter["content"]&.each do |partial| %>
+        <%= render(partial) %>
+      <% end %>
+      <%= yield %>
+    <% end %>
+
+
+  <% end %>
+</html>

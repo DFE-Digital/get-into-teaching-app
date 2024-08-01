@@ -87,6 +87,8 @@ Rails.application.routes.draw do
 
   resource :search, only: %i[show]
 
+  resource :chat, only: %i[show]
+
   resource "cookie_preference", only: %i[show]
   get "/cookie-policy", to: redirect("/cookies")
 
