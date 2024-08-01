@@ -51,7 +51,7 @@
         - Full-time postgraduate teacher training courses usually take 9 months. Undergraduate teacher training usually takes 4 years.
     Apply for teacher training:
       id: "step-5"
-      image: "static/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
+      image: "static/images/content/hero-images/0036.jpg"
       directions:
         - You can usually start applying in October, the year before your course starts.
     Start your teacher training:
