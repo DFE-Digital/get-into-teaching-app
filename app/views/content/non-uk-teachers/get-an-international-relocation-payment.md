@@ -19,6 +19,8 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
+Applications are closed. You can apply for the international relocation payment (IRP) between 30 September 2024 and the end of March 2025. We will update this page with a link to the application form when it is live.
+
 
       <h2>Changes to eligibility and payment</h2>
 
