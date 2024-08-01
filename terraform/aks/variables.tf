@@ -1,3 +1,5 @@
+variable "app_name" { default = null }
+
 variable "cluster" {
   description = "AKS cluster where this app is deployed. Either 'test' or 'production'"
 }
@@ -91,8 +93,17 @@ variable "enable_prometheus_monitoring" {
   default = false
 }
 
+variable "sidekiq_memory_max" {
+  description = "maximum memory of the sidekiq"
+  default = "1Gi"
+}
+
+variable "sidekiq_replicas" {
+  description = "number of replicas of the sidekiq"
+  default = 1
+}
+
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)
-
   postgres_ssl_mode = var.enable_postgres_ssl ? "require" : "disable"
 }

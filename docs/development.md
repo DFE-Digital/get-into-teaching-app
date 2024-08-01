@@ -6,8 +6,7 @@
 * Run `yarn` to install node dependencies
 * Run `rails db:prepare` to setup the database
 * Run `az login` and then `make local setup-local-env` to populate development secrets
-* Run `bundle exec rails server` to launch the app on http://localhost:3000
-* Run `./bin/shakapacker-dev-server` in a separate shell for faster compilation of assets
+* Run `./bin/dev` to run the rails server, shakapacker-dev-server, redis and sidekiq.
 
 ### Running the app with a local api
 
