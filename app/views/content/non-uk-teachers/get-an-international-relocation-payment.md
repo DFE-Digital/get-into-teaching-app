@@ -27,7 +27,7 @@ Applications are closed. You can apply for the international relocation payment 
       <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.</p>
 
 
-      <p>Eligible teachers will receive an IRP of up to £10,000, in 2 instalments of £5,000 spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment.</p>
+      <p>Eligible teachers will receive the IRP of up to £10,000, in 2 instalments of £5,000 spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment.</p>
 
 
 keywords:
@@ -87,7 +87,7 @@ The IRP is designed to cover some of the costs of moving to England, including:
 * other relocation expenses
 
 If you are eligible, you will receive a maximum IRP of £10,000, in 2 instalments of £5,000 spread over 2 years.
-If you received an IRP payment for the 2023 to 2024 academic year you cannot receive the IRP again.
+If you received the IRP payment for the 2023 to 2024 academic year you cannot receive the IRP again.
 The IRP is available whether you teach full-time or part-time.
 The IRP is a 2 year trial to support non-UK citizen who want to teach in England. 2024 to 2025 is the second year of the trial.
 [Learn more about teaching in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
@@ -164,7 +164,7 @@ If you are unsure about meeting any of the eligibility requirements, email irp.m
 
 #### Type of visa
 
-You will need to come to England on a visa listed in this section to be eligible for IRP. You must have applied for your visa from outside the UK.
+You will need to come to England on a visa listed in this section to be eligible for the IRP. You must have applied for your visa from outside the UK.
 
 Most teachers will need a Skilled Worker visa. Eligible visas are:
 
