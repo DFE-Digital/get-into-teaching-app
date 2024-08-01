@@ -20,12 +20,11 @@ inset_text:
   applications-open:
     text: |-
 
-      <h2>Changes to eligibility and payment for trainees</h2>
+      <h2>Changes to eligibility and payment</h2>
 
       <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.</p>
 
 
-      <h2>Changes to eligibility and payment for teachers</h2>
       <p>Eligible teachers will receive an IRP of up to £10,000, in 2 instalments of £5,000 spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment.</p>
 
 
@@ -85,7 +84,7 @@ The IRP is designed to cover some of the costs of moving to England, including:
 
 * other relocation expenses
 
-You can apply for the IRP between September 2024 and March 2025. If you are eligible, you will receive a maximum IRP of £10,000, in 2 instalments of £5,000 spread over 2 years.
+If you are eligible, you will receive a maximum IRP of £10,000, in 2 instalments of £5,000 spread over 2 years.
 
 The IRP is available whether you teach full-time or part-time.
 
@@ -304,9 +303,9 @@ Before you apply for the first and second instalments of the IRP, you’ll need 
 
 Applications are open from 30 September 2024 to end of March 2025.
 
-If you start your teaching job between 1 March 2024 and 28 February 2025 you should apply between 30 September 2024 and the end of March 2025. 
+If you start your teaching job between 1 March 2024 and 28 February 2025 you must apply between 30 September 2024 and the end of March 2025 to remain eligible. 
 
-If you are eligible, you should receive the money following successful completion of our eligibility checks. You must apply between 30 September 2024 and the end of March 2025 to remain eligible.
+If you are eligible, you should receive the money following successful completion of our eligibility checks.
 
 
 ## DfE eligibility requirements for IRP instalments
@@ -323,7 +322,7 @@ If your eligibility checks are successful, you will get the first instalment of 
 
 ### Second instalment of the IRP
 
-At the start of your second year of employment as a teacher, apply for the second instalment of the IRP. 
+At the start of your second year of employment as a teacher, you will need to apply for the second instalment of the IRP. 
 
 To get the second instalment of the IRP, you will need to have:
 
@@ -335,20 +334,16 @@ Applications for the second instalment are open from September 2025 to March 202
 
 The Department for Education will validate your application with [UK Visas and Immigration](https://www.gov.uk/government/organisations/uk-visas-and-immigration) and the school or schools where you have worked since applying for the first instalment of the IRP. If you meet the eligibility requirements for the second instalment set out on this page, you should receive the second instalment of £5,000 following successful completion of our eligibility checks. 
 
-### IRP application deadlines
 
-If you take up your first teaching job in England after March 2025 and miss the deadline to apply for the first instalment of the IRP, you can apply when applications reopen in autumn 2025.
 
 If you complete 3 terms of employment as a teacher after March 2026, missing the deadline for the second instalment of the IRP, you can apply when applications reopen in autumn 2026.
 
-DfE cannot process late applications for the IRP. If you fail to apply during the correct time period, DfE will not process your application. 
 
 
 ## Receiving the IRP payments
 
-You will not be paid your first instalment of the IRP before you start your teaching job. This is because eligibility requirement checks can only be completed after you’ve arrived in England.
+You can only apply for your first instalment of the IRP when you start your teaching job. This is because eligibility requirement checks can only be completed after you’ve arrived in England.
 
-If your eligibility checks are successful you'll get the second instalment of the IRP at the start of your second year of employment. 
 
 You’ll be paid the first and second instalments of the IRP after your eligibility checks are completed. We cannot guarantee an exact payment date.
 
