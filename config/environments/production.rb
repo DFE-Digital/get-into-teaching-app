@@ -127,6 +127,7 @@ Rails.application.configure do
   config.rails_semantic_logger.processing = false
   config.rails_semantic_logger.format = :json
   config.rails_semantic_logger.add_file_appender = false
+  config.rails_semantic_logger.filter = proc { |log| log.name != "DfE::Analytics::SendEvents" }
   config.semantic_logger.add_appender \
     io: $stdout,
     level: Rails.application.config.log_level,
