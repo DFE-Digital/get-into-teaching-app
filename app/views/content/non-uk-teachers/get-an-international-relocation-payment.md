@@ -22,7 +22,8 @@ inset_text:
       <p>Applications are closed. You can apply for the international relocation payment (IRP) between 30 September 2024 and the end of March 2025. We will update this page with a link to the application form when it is live.</p>
 
 
-      <h2>Changes to eligibility and payment</h2>
+        <br>
+        <h2>Changes to eligibility and payment</h2>
 
       <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.</p>
 
