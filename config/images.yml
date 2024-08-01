@@ -133,13 +133,6 @@
     - "static/images/content/hero-images/0001--mobile.jpg"
     - "static/images/content/hero-images/0001--tablet.jpg"
 
-"static/images/content/hero-images/0009.jpg":
-  # Teacher smiling in front of a maths display board.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0009--mobile.jpg"
-    - "static/images/content/hero-images/0009--tablet.jpg"
-
 "static/images/content/hero-images/0011.jpg":
   # Child pointing something out to a teacher in the classroom.
   alt: ""

@@ -31,7 +31,7 @@
   how_to:
     Check your qualifications:
       id: "step-1"
-      image: "static/images/content/hero-images/0009.jpg"
+      image: "static/images/content/hero-images/0027.jpg"
       directions:
         - If you have a degree, you can do postgraduate teacher training. If you do not have a degree, you can do undergraduate teacher training.
     Understand funding:

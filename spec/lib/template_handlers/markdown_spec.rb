@@ -214,7 +214,7 @@ describe TemplateHandlers::Markdown, type: :view do
         "title": "Page with images",
         "images" => {
           "first" => { "path" => "static/images/content/hero-images/0001.jpg", "other_attr" => "ignore" },
-          "second" => { "path" => "static/images/content/hero-images/0009.jpg", "other_attr" => "ignore" },
+          "second" => { "path" => "static/images/content/hero-images/0027.jpg", "other_attr" => "ignore" },
         },
       }
     end
