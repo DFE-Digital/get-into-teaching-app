@@ -87,9 +87,9 @@ The IRP is designed to cover some of the costs of moving to England, including:
 * other relocation expenses
 
 If you are eligible, you will receive a maximum IRP of £10,000, in 2 instalments of £5,000 spread over 2 years.
-
+If you received an IRP payment for the 2023 to 2024 academic year you cannot receive the IRP again.
 The IRP is available whether you teach full-time or part-time.
-
+The IRP is a 2 year trial to support non-UK citizen who want to teach in England. 2024 to 2025 is the second year of the trial.
 [Learn more about teaching in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ## Check your eligibility
@@ -309,7 +309,17 @@ If you start your teaching job between 1 March 2024 and 28 February 2025 you mus
 
 If you are eligible, you should receive the money following successful completion of our eligibility checks.
 
+## Future application windows for IRPs
 
+Applications will open again from 30 September 2025 to end of March 2026.
+
+If you start your teaching job between 1 April 2025 and 31 May 2025, you can apply when applications re-open in September 2025.
+
+If you start your teaching job in March 2025, you can either apply before applications close at the end of March 2025 or when they open again in September 2025.  
+
+You can apply for IRP instalment 2 once you have completed 3 full terms teaching.
+
+DfE cannot process late applications for the IRP. If you do not apply during the correct time period, DfE will not process your application.
 ## DfE eligibility requirements for IRP instalments
 
 ### First instalment of the IRP
@@ -346,7 +356,7 @@ If you complete 3 terms of employment as a teacher after March 2026, missing the
 
 You can only apply for your first instalment of the IRP when you start your teaching job. This is because eligibility requirement checks can only be completed after you’ve arrived in England.
 
-
+You can apply for the second IRP instalment once you have completed consecutive terms of employment as a teacher which will be from September 2025 at the earliest.
 You’ll be paid the first and second instalments of the IRP after your eligibility checks are completed. We cannot guarantee an exact payment date.
 
 To be paid the IRP, you must have a UK bank account in your name (this can be digital). The IRP cannot be paid into a building society account.
