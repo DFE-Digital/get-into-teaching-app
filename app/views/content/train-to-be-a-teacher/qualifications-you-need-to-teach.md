@@ -1,10 +1,11 @@
 ---
-title: "What qualifications do I need to be a teacher?"
+title: "Qualifications needed to teach"
 heading: "What qualifications do I need to be a teacher?"
-subcategory: Qualifications and experience
+subcategory: Qualifications
 description: |-
   Find out what qualifications you need to be a teacher in primary and secondary schools in England and which subjects you can train to teach.
-navigation: 5.30
+navigation: 20.20
+navigation_title: Qualifications you need to be a teacher
 navigation_description: Check what qualifications you need to teach in primary, secondary and special schools in England.
 related_content:
     Teacher pay and benefits: "/is-teaching-right-for-me/teacher-pay-and-benefits"

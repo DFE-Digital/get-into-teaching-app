@@ -100,7 +100,7 @@ redirects:
   # Legacy site path redirects
   "/get-help-and-support/teacher-training-advisers": "/teacher-training-advisers"
   "/post-teacher-training-application/preparing-for-the-professional-skills-tests": "/train-to-be-a-teacher"
-  "/eligibility-for-teacher-training": "/is-teaching-right-for-me/qualifications-you-need-to-teach"
+  "/eligibility-for-teacher-training": "/train-to-be-a-teacher/qualifications-you-need-to-teach"
   "/explore-my-options/training-to-teach-primary-subjects/training-to-teach-primary-as-a-pe-specialist": "/steps-to-become-a-teacher"
   "/explore-my-options/teacher-training-routes/specialist-training-options/troops-to-teachers": "/funding-and-support/if-youre-a-veteran"
   "/how-to-apply-for-teacher-training/preparing-your-teacher-training-personal-statement": "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
@@ -396,3 +396,6 @@ redirects:
   "/subjects/physics": "/is-teaching-right-for-me/physics"
   "/subjects/maths": "/is-teaching-right-for-me/maths"
   "/subjects/engineers-teach-physics": "/is-teaching-right-for-me/engineers-teach-physics"
+
+# Moving qualifications page
+  "/is-teaching-right-for-me/qualifications-you-need-to-teach": "/train-to-be-a-teacher/qualifications-you-need-to-teach"

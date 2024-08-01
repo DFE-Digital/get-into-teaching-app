@@ -7,7 +7,7 @@ description: |-
 related_content:
     Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
     Teacher pay and benefits: "/is-teaching-right-for-me/teacher-pay-and-benefits"
-    What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
+    What qualifications do you need to be a teacher? : "/train-to-be-a-teacher/qualifications-you-need-to-teach"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:
