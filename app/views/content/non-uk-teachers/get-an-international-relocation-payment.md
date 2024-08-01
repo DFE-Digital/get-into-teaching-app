@@ -310,7 +310,7 @@ If you start your teaching job between 1 March 2024 and 28 February 2025 you mus
 
 If you are eligible, you should receive the money following successful completion of our eligibility checks.
 
-## Future application windows for IRPs
+### Future application windows for IRPs
 
 Applications will open again from 30 September 2025 to end of March 2026.
 
