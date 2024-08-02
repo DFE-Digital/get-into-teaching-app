@@ -226,7 +226,7 @@ You will be eligible for the first instalment of IRP, because you have spent les
 
 #### Example 3:
 
-You study in the UK on a Student visa for three years from September 2019 to July 2022, before returning home. You apply for an eligible teaching job in England starting in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024.
+You study in the UK on a Student visa for 3 years from September 2019 to July 2022, before returning home. You apply for an eligible teaching job in England starting in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024.
 
 You will be eligible for the first instalment of IRP because you have spent less than 90 days in the UK in the previous 12 months and have moved to the UK less than 3 months before the start of your job.
 
@@ -351,7 +351,7 @@ The Department for Education will validate your application with [UK Visas and I
 
 You can only apply for your first instalment of the IRP when you start your teaching job. This is because eligibility requirement checks can only be completed after you’ve arrived in England.
 
-You can apply for the second IRP instalment once you have completed consecutive terms of employment as a teacher which will be from September 2025 at the earliest.
+You can apply for the second IRP instalment once you have completed 3 consecutive terms of employment as a teacher which will be from September 2025 at the earliest.
 You’ll be paid the first and second instalments of the IRP after your eligibility checks are completed. We cannot guarantee an exact payment date.
 
 To be paid the IRP, you must have a UK bank account in your name (this can be digital). The IRP cannot be paid into a building society account.
