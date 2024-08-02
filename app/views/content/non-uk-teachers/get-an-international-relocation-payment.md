@@ -347,12 +347,6 @@ Applications for the second instalment are open from September 2025 to March 202
 
 The Department for Education will validate your application with [UK Visas and Immigration](https://www.gov.uk/government/organisations/uk-visas-and-immigration) and the school or schools where you have worked since applying for the first instalment of the IRP. If you meet the eligibility requirements for the second instalment set out on this page, you should receive the second instalment of £5,000 following successful completion of our eligibility checks. 
 
-
-
-If you complete 3 terms of employment as a teacher after March 2026, missing the deadline for the second instalment of the IRP, you can apply when applications reopen in autumn 2026.
-
-
-
 ## Receiving the IRP payments
 
 You can only apply for your first instalment of the IRP when you start your teaching job. This is because eligibility requirement checks can only be completed after you’ve arrived in England.
