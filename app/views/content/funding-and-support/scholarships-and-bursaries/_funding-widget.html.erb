@@ -1,14 +1,6 @@
 <section class="col col-720">
   <p>If you want to do postgraduate teacher training in England, you may be eligible for a bursary or scholarship.</p>
-  <%= render Content::ExpanderComponent.new(
-  title: "bursaries and scholarships",
-  text: "If you train to teach languages or physics, you may be eligible for a bursary or scholarship. Bursaries and scholarships are not available for other subjects.",
-  link_title: "Learn more about fees and financial support for non-UK trainee teachers.",
-  link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
-) %>
-</section>
-<section class="col col-720">
-  <h2 class="heading--box-blue">What are bursaries and scholarships?</h2>
+<h2 class="heading--box-blue">What are bursaries and scholarships?</h2>
   <p>Bursaries are tax-free payments you receive if you're training to teach certain subjects. If you're eligible for a bursary, you'll get it automatically.</p>
   <p>Scholarships are tax-free payments provided by charitable organisations. As well as financial benefits, you'll have access to opportunities like mentoring and networking. If you're eligible, you must apply and only a limited number of scholarships are awarded.</p>
   <p>You cannot receive both a bursary and a scholarship.</p>
@@ -17,6 +9,16 @@
       <li>every subject</li>
       <li>salaried teacher training</li>
     </ul>
+</section>
+<section class="col col-720">
+  <%= render Content::ExpanderComponent.new(
+  title: "bursaries and scholarships",
+  text: "If you train to teach languages or physics, you may be eligible for a bursary or scholarship. Bursaries and scholarships are not available for other subjects.",
+  link_title: "Learn more about fees and financial support for non-UK trainee teachers.",
+  link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
+) %>
+</section>
+<section>
   <p>The figures on this page apply if you're starting your training between September 2024 and July 2025.</p>
 </section>
 <section id="funding-widget">

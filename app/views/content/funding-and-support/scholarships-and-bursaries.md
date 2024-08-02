@@ -59,20 +59,9 @@ To be eligible for a scholarship, you’ll need at least one of the following:
 
 If you achieved a 2:2 in your degree you may be awarded a scholarship if you have enough relevant experience.
 
-Scholarship providers set their own:
+Scholarships are provided by charitable organisations. They set their own eligibility requirements and application deadlines. 
 
-* eligibility requirements 
-* application deadlines
-
-Scholarships are provided by charitable organisations. They offer more than just financial benefits, including:
-
-* subject specialist events and webinars
-* online and face-to-face workshops
-* mentoring and coaching
-* a community of ex-scholars, teachers and subject leaders
-* access to classroom resources
-* networking events during your teacher training and beyond
-
+They offer more than just financial benefits, including mentoring, events and classroom resources.
 
 #### How scholarships are paid
 
