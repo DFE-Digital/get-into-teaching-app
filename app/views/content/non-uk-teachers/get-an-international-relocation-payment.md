@@ -86,10 +86,10 @@ The IRP is designed to cover some of the costs of moving to England, including:
 
 * other relocation expenses
 
-If you are eligible, you will receive a maximum IRP of £10,000, in 2 instalments of £5,000 spread over 2 years.
-If you received the IRP payment for the 2023 to 2024 academic year you cannot receive the IRP again.
-The IRP is available whether you teach full-time or part-time.
-The IRP is a 2 year trial to support non-UK citizen who want to teach in England. 2024 to 2025 is the second year of the trial.
+If you are eligible, you will receive a maximum IRP of £10,000, in 2 instalments of £5,000 spread over 2 years. If you received the IRP payment for the 2023 to 2024 academic year you cannot receive the IRP again. The IRP is available whether you teach full-time or part-time.
+
+The IRP is a 2 year trial to support non-UK citizens who want to teach in England. 2024 to 2025 is the second year of the trial.
+
 [Learn more about teaching in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ## Check your eligibility
