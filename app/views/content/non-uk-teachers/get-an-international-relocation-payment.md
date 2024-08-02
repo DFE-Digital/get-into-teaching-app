@@ -320,6 +320,7 @@ If you start your teaching job in March 2025, you can either apply before applic
 You can apply for IRP instalment 2 once you have completed 3 full terms teaching.
 
 DfE cannot process late applications for the IRP. If you do not apply during the correct time period, DfE will not process your application.
+
 ## DfE eligibility requirements for IRP instalments
 
 ### First instalment of the IRP
