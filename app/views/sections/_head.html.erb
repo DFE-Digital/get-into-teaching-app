@@ -40,7 +40,6 @@ f=false,d=document,vwoCodeEl=d.querySelector('#vwoCode'),code={use_existing_jque
   <%= breadcrumbs_structured_data(breadcrumb_trail) %>
   <%= logo_structured_data %>
   <%= home_structured_data if current_page?(root_path) %>
-  <%= how_to_structured_data(@page) if @page.present? && @front_matter.key?("how_to") %>
 
   <% if @front_matter["noindex"] || @noindex %>
     <%= meta_tag(key: "robots", value: "noindex") %>

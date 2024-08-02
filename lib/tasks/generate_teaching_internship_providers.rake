@@ -17,7 +17,7 @@ namespace :teaching_internship_providers do
     providers.transform_values! { |v| v["providers"].sort_by { |a| a["header"] } }
     provider_groups = providers.sort
 
-    File.open("app/views/content/is-teaching-right-for-me/teaching-internship-providers.md", "w") do |f|
+    File.open("app/views/content/train-to-be-a-teacher/teaching-internships.md", "w") do |f|
       f.write ERB.new(File.read("lib/tasks/support/teaching-internship-providers.md.erb"), trim_mode: "<>").result(binding)
     end
   end

@@ -67,7 +67,6 @@ Rails.application.configure do
   config.x.structured_data.organization = true
   config.x.structured_data.breadcrumb_list = true
   config.x.structured_data.event = true
-  config.x.structured_data.how_to = true
 
   config.x.dfe_analytics = true
 
