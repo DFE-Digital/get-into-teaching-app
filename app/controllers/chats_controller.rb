@@ -15,11 +15,10 @@ class ChatsController < ApplicationController
     end
   end
 
-
-  private
+private
 
   def show_html
-    render layout: 'chat'
+    render layout: "chat"
 
     # render \
     #   template: "errors/not_found",
@@ -33,7 +32,6 @@ class ChatsController < ApplicationController
     render json: Chat.new
     # render status: :not_found, body: nil
   end
-
 
   def authenticate?
     false

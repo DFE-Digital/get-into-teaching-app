@@ -1,4 +1,4 @@
-<div data-controller="chat" class="chat">
+<%= tag.div id: "foofoo", data: { controller: "chat", enabled: Chat.enabled?, "chat-target": "container" }, class: "chat" do %>
   <div data-chat-target="online" class="hidden">
     <p>
       <a class="button" href="javascript:void(0)" data-action="chat#start" data-chat-target="chat">Chat online</a>
@@ -16,4 +16,4 @@
       Email: <%= mail_to("getinto.teaching@service.education.gov.uk", class: "link--dark") %>
     </p>
   </div>
-</div>
+<% end %>

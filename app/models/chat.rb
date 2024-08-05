@@ -1,6 +1,10 @@
 class Chat
   delegate :to_json, to: :to_h
 
+  def self.enabled?
+    ActiveModel::Type::Boolean.new.cast(ENV.fetch("CHAT_ENABLED", false))
+  end
+
   def to_h
     {
       skillid: skillid,

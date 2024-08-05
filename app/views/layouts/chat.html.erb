@@ -5,8 +5,6 @@
     <%= render "sections/govuk_javascript" %>
     <%= render(partial: "sections/content_errors") %>
 
-
-
     <%= main_tag(class: @front_matter["main_class"]) do %>
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>
