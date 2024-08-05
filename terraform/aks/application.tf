@@ -53,3 +53,22 @@ module "web_application" {
 
   enable_prometheus_monitoring  = var.enable_prometheus_monitoring
 }
+
+module "worker_application" {
+  source                     = "./vendor/modules/aks//aks/application"
+  name                       = "worker"
+  is_web                     = false
+  namespace                  = var.namespace
+  environment                = local.environment
+  service_name               = var.service_name
+  cluster_configuration_map  = module.cluster_data.configuration_map
+  kubernetes_config_map_name = module.application_configuration.kubernetes_config_map_name
+  kubernetes_secret_name     = module.application_configuration.kubernetes_secret_name
+  docker_image               = var.docker_image
+  command                    = ["/bin/sh", "-c", "bundle exec sidekiq -C config/sidekiq.yml"]
+  max_memory                 = var.sidekiq_memory_max
+  replicas                   = var.sidekiq_replicas
+  enable_logit               = var.enable_logit
+
+  enable_prometheus_monitoring  = var.enable_prometheus_monitoring
+}

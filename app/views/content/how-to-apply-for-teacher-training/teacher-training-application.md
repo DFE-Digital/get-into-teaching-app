@@ -4,7 +4,7 @@ description: |-
   Find out what to include in your teacher training application, how the process works and when to apply.
 related_content:
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    Get school experience : "/is-teaching-right-for-me/get-school-experience"
+    Get school experience : "/train-to-be-a-teacher/get-school-experience"
     My first week as a trainee teacher: "/blog/my-first-week-as-a-trainee-teacher"
 date: "2021-06-24"
 keywords:
@@ -100,7 +100,7 @@ You’ll need to provide details about your:
 
 Training providers will also accept some equivalent qualifications, for example, if you’re a non-UK citizen. 
 
-[Find out more about the qualifications you need to teach](/is-teaching-right-for-me/qualifications-you-need-to-teach).
+[Find out more about the qualifications you need to teach](/train-to-be-a-teacher/qualifications-you-need-to-teach).
 
 $check-your-qualifications$
 

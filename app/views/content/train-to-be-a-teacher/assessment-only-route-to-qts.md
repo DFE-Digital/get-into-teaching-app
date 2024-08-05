@@ -13,7 +13,7 @@ related_content:
     Attend an event : "/events"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-assessment-only
-navigation: 20.35
+navigation: 20.40
 navigation_title: If you’ve worked as an unqualified teacher
 navigation_description: If you've worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through an assessment only route.
 fullwidth: true

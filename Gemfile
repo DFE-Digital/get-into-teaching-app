@@ -88,6 +88,8 @@ gem "google-api-client", ">= 0.53.0", require: false
 gem "net-smtp", ">= 0.3.3", require: false
 gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
 
+gem "sidekiq"
+
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
 gem "logger", ">= 1.5.1"

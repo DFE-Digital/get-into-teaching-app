@@ -72,7 +72,7 @@ You may be able to do a subject knowledge enhancement (SKE) course to top up you
 
 ### Lack of teaching or safeguarding knowledge
 
-It may help to [get some school experience](/is-teaching-right-for-me/get-school-experience) so you can find out what it’s like to be a teacher and improve your knowledge and skills.
+It may help to [get some school experience](/train-to-be-a-teacher/get-school-experience) so you can find out what it’s like to be a teacher and improve your knowledge and skills.
 
 ### No visa sponsorship
 

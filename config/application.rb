@@ -30,6 +30,7 @@ module GetIntoTeachingWebsite
     # the framework and any gems in your application.
 
     config.exceptions_app = routes
+    config.active_job.queue_adapter = :sidekiq
 
     # View component previews
     config.view_component.preview_controller = "PreviewController"
