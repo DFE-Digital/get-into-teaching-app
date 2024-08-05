@@ -11,17 +11,26 @@ describe('ChatController', () => {
 
   const setBody = () => {
     document.body.innerHTML = `
-      <div data-controller="chat">
-        <div data-chat-target="online" class="hidden">
-          <a href="javascript:void(0)" data-action="chat#start" data-chat-target="chat">Chat online</a>
+      <div data-controller="chat" data-enabled="false" data-chat-target="container" class="chat">
+        <div data-chat-target="online" class="">
+          <p>
+            <a class="button" href="javascript:void(0)" data-action="chat#start" data-chat-target="chat">Chat <span>online</span></a>
+          </p>
         </div>
         <div data-chat-target="offline" class="hidden">
-          Chat closed
+          <p>
+            Chat is <strong>closed</strong>
+          </p>
         </div>
-        <div data-chat-target="unavailable">
-          Chat unavailable
+        <div data-chat-target="unavailable" class="hidden">
+          <p>
+            <strong>Chat not available</strong>
+            <br>
+            Email: <a class="link--dark" href="mailto:getinto.teaching@service.education.gov.uk">getinto.teaching@service.education.gov.uk</a>
+          </p>
         </div>
       </div>
+
       <iframe id="webWidget"></iframe> // Zendesk modal.
     `;
   }
