@@ -123,7 +123,7 @@ Their role is wide ranging, but includes leading and motivating teachers, and en
 | Outer London                             | $salaries_headteacher_outerlondonmin$ | $salaries_headteacher_outerlondonmax$ |
 | Inner London                             | $salaries_headteacher_innerlondonmin$ | $salaries_headteacher_innerlondonmax$ |
 
-Find out more about [how to move up the career ladder in teaching](/is-teaching-right-for-me/career-progression).
+Find out more about [how to move up the career ladder in teaching](/life-as-a-teacher/career-progression).
 
 ## If you do not have qualified teacher status (QTS)
 
@@ -162,4 +162,4 @@ It is a 'defined benefit' pension and is:
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
-You also get other insurance benefits too. Find out more about the [teachers' pension scheme](/is-teaching-right-for-me/what-pension-does-a-teacher-get).
+You also get other insurance benefits too. Find out more about the [teachers' pension scheme](/life-as-a-teacher/what-pension-does-a-teacher-get).

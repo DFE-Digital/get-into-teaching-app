@@ -5,8 +5,8 @@ subcategory: Postgraduate teacher training
 description: |-
   Get school experience to explore what life is like in a primary or secondary classroom and find out if teaching is right for you.
 related_content:
-    Teacher pay and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits"
-    Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
+    Teacher pay and benefits : "/life-as-a-teacher/teacher-pay-and-benefits"
+    Who do you want to teach? : "/life-as-a-teacher/who-do-you-want-to-teach"
     What is a Get Into Teaching event? : "/events/about-get-into-teaching-events"
 calls_to_action:
     get-school-experience:

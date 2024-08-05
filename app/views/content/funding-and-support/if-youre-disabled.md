@@ -6,7 +6,7 @@ description: |-
     Find out about the support you can get while training to teach if you're disabled.
 related_content:
     Becoming a teacher with a hearing impairment: "/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment"
-    Who do you want to teach?: "/is-teaching-right-for-me/who-do-you-want-to-teach"
+    Who do you want to teach?: "/life-as-a-teacher/who-do-you-want-to-teach"
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.25

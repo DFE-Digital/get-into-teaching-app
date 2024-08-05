@@ -52,4 +52,4 @@ We had a university session on teaching science through debate. We were all assi
 
 It isn’t easy, but it’s the most fantastic and rewarding job. If you are willing to put in a lot of hard work, it is genuinely fantastic.
 
-If you're thinking about a life in the classroom, explore [if teaching is right for you](/is-teaching-right-for-me).
+If you're thinking about a life in the classroom, explore [if teaching is right for you](/life-as-a-teacher).

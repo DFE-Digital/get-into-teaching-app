@@ -12,7 +12,7 @@ navigation_description: Learn more about the teachers' pension scheme which is o
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
-    Teacher pay and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits"
+    Teacher pay and benefits : "/life-as-a-teacher/teacher-pay-and-benefits"
     Steps to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"

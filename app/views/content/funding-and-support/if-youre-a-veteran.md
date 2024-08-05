@@ -6,7 +6,7 @@ description: |-
     Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 related_content:
     David’s journey from the army to teacher training: "/blog/from-the-army-to-teacher-training"
-    Is teaching right for me? : "/is-teaching-right-for-me"
+    Is teaching right for me? : "/life-as-a-teacher"
     Teach in further education without a degree: "https://www.teach-in-further-education.campaign.gov.uk/"
 promo_content:
     - content/funding-and-support/promos/get-adviser-veterans-promo
@@ -72,7 +72,7 @@ Our telephone service is available Monday to Friday between 8:30am and 5:30pm, e
 
 ## Military equivalent qualifications
 
-You’ll need different qualifications depending on [who you want to teach](/is-teaching-right-for-me/who-do-you-want-to-teach).
+You’ll need different qualifications depending on [who you want to teach](/life-as-a-teacher/who-do-you-want-to-teach).
 
 If you’re unsure about whether your qualifications achieved through military service meet the standard required, talk to your course provider, or a [teacher training adviser](/teacher-training-advisers).
 

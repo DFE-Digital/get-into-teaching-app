@@ -7,7 +7,7 @@ description: |-
 related_content:
     Train to be a teacher : "/train-to-be-a-teacher"
     Changing career from engineering to teaching physics: "/blog/natural-transition-from-engineering-to-teaching-physics"
-    Engineers teach physics teacher training courses : "/is-teaching-right-for-me/engineers-teach-physics"
+    Engineers teach physics teacher training courses : "/life-as-a-teacher/engineers-teach-physics"
     Transferring my skills to teaching: "/blog/transferring-my-skills-to-teaching"
     Fund your training if you're a parent or carer: "/funding-and-support/if-youre-a-parent-or-carer"
 promo_content:

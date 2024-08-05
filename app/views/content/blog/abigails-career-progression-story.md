@@ -60,4 +60,4 @@ And finally, I do love the holidays! I try to switch off outside of term time an
 
 My advice for anyone thinking of getting into teaching is to remember that you will make a difference, even though it might be challenging at times! When pupils are in your classroom, you have the opportunity to grow their minds and improve their understanding of the world. You are responsible for helping pupils achieve the best possible outcomes and for inspiring them to build their resilience and determination.
 
-If you’ve been inspired by Abigail’s story, find out more about [career progression opportunities and teacher pay](/is-teaching-right-for-me/teacher-pay-and-benefits). Or, find out more about [becoming a maths teacher](/is-teaching-right-for-me/maths).
+If you’ve been inspired by Abigail’s story, find out more about [career progression opportunities and teacher pay](/life-as-a-teacher/teacher-pay-and-benefits). Or, find out more about [becoming a maths teacher](/life-as-a-teacher/maths).

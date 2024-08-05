@@ -13,7 +13,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
-    Teacher pay and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits"
+    Teacher pay and benefits : "/life-as-a-teacher/teacher-pay-and-benefits"
     Bursaries and scholarships for training to teach : "/funding-and-support/scholarships-and-bursaries"
 
 keywords:
@@ -75,7 +75,7 @@ Teacher training advisers Chris Farr, Fran Lee, Sian Mills and Elaine Boyd have 
 
 ## What are teacher pastoral care roles?
 
-<strong>Fran:</strong>  Pastoral care in schools is looking at nurturing pathways. It’s about recognising all children have a right to feel safe and happy in school and guiding children on a more personal level. A [special educational needs co-ordinator (SENCO)](/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs) is part of pastoral care. Or you might be a form tutor and look after your pupils’ emotional wellbeing.
+<strong>Fran:</strong>  Pastoral care in schools is looking at nurturing pathways. It’s about recognising all children have a right to feel safe and happy in school and guiding children on a more personal level. A [special educational needs co-ordinator (SENCO)](/life-as-a-teacher/teach-disabled-pupils-and-pupils-with-special-educational-needs) is part of pastoral care. Or you might be a form tutor and look after your pupils’ emotional wellbeing.
 
 That pastoral level is the link between form, tutor, classroom teacher, senior leadership, home parents, carers, extended family and wider community.
 

@@ -33,4 +33,4 @@ For me, the decision to apply to teach later on in life meant I felt even more c
 
 As far as benefits are concerned, I am paid at a graduate level and have excellent holidays, which I get to spend with my family because we're all off together at the same time. In all, it was a great decision. Even though my whole training and subsequent teaching has been during a pandemic, I have loved every minute. I would advise anyone thinking about changing careers that you will be embraced and more importantly an asset to the profession and students.
 
-If you're interested in enriching the lives of young people, explore [if teaching is right for you](/is-teaching-right-for-me).
+If you're interested in enriching the lives of young people, explore [if teaching is right for you](/life-as-a-teacher).

@@ -56,4 +56,4 @@ One of the most rewarding moments of this year was when a student chose to come 
 
 One of the most gratifying things about being a teacher is when a student, who at 11 years old was asking you what would happen if there was no gravity, leaves school at 18 to do a physics, maths or engineering degree. You know you’ve shaped their life by making them passionate about your subject. I’ve also had cards at the end of one school year from students not going on to study anything to do with physics, but saying they would continue to read about and engage with it for the rest of their lives.
 
-If you’ve been inspired by Ben’s story, find out more about [career progression opportunities and teacher pay](/is-teaching-right-for-me/teacher-pay-and-benefits). Or, find out more about [becoming a maths teacher](/is-teaching-right-for-me/maths).
+If you’ve been inspired by Ben’s story, find out more about [career progression opportunities and teacher pay](/life-as-a-teacher/teacher-pay-and-benefits). Or, find out more about [becoming a maths teacher](/life-as-a-teacher/maths).

@@ -23,7 +23,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/is-teaching-right-for-me/computing/header"
-  - "content/is-teaching-right-for-me/computing/article"
-  - "content/is-teaching-right-for-me/computing/adviser-promo-computing"
+  - "content/life-as-a-teacher/computing/header"
+  - "content/life-as-a-teacher/computing/article"
+  - "content/life-as-a-teacher/computing/adviser-promo-computing"
 ---

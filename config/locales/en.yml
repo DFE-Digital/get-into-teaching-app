@@ -126,7 +126,7 @@ en:
         sub_head: "Computing - Secondary"
         funding: "Scholarships of %{scholarships_computing} and bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
         next_steps: |-
-          Find out more about <a href="/is-teaching-right-for-me/computing">how to become a computing teacher</a>.
+          Find out more about <a href="/life-as-a-teacher/computing">how to become a computing teacher</a>.
       dance:
         name: "Dance"
         group: "Secondary"
