@@ -328,7 +328,6 @@ redirects:
   "/what-is-qts": "/train-to-be-a-teacher/what-is-qts"
 
   # Wildcards
-  "/life-as-a-teacher(*page)": "/blog"
   "/why-teach(*reason)": "/blog"
   "/content/stories(*story)": "/blog"
   "/my-story-into-teaching(*story)": "/blog"
