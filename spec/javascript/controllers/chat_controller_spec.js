@@ -48,91 +48,94 @@ describe('ChatController', () => {
     return document.querySelector('a').textContent;
   }
 
-  describe('when the chat is online', () => {
-    beforeEach(() => {
-      chatShowSpy = jest.fn(() => true);
-      chatOpenSpy = jest.fn();
+  describe('when the old chat is enabled', () => {
 
-      jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ zE: chatOpenSpy, zEACLoaded: chatShowSpy }));
+    describe('when the chat is online', () => {
+      beforeEach(() => {
+        chatShowSpy = jest.fn(() => true);
+        chatOpenSpy = jest.fn();
 
-      setBody();
-      setCurrentTime('2021-01-01 10:00');
-    });
+        jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ zE: chatOpenSpy, zEACLoaded: chatShowSpy }));
 
-    it('hides the unavailable message', () => {
-      const button = document.querySelector('[data-chat-target="unavailable"]')
-      expect(button.classList.contains('hidden')).toBe(true)
-    })
-
-    it('displays the chat online button', () => {
-      const button = document.querySelector('[data-chat-target="online"]')
-      expect(button.classList.contains('hidden')).toBe(false)
-    })
-
-    describe('when clicking the chat button', () => {
-      it('appends the Zendesk snippet, shows a loading message and then opens the chat window', () => {
-        const button = document.querySelector('a');
-        button.click();
-        expect(document.querySelector('#ze-snippet')).not.toBeNull();
-        expect(getButtonText()).toEqual("Starting chat...");
-        jest.runOnlyPendingTimers(); // Timer for script loading,
-        jest.runOnlyPendingTimers(); // Timer to wait for the widget to load.
-        jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
-        expect(chatOpenSpy).toHaveBeenCalled();
-        expect(getButtonText()).toEqual("Chat online");
+        setBody();
+        setCurrentTime('2021-01-01 10:00');
       });
-    });
 
-    describe('when clicking the chat button twice', () => {
-      it('only appends the Zendesk snippet once and does not show the loading message for the second click', () => {
-        const button = document.querySelector('a');
-        button.click();
-        expect(button.textContent).toEqual("Starting chat...");
-        jest.runOnlyPendingTimers(); // Timer for script loading,
-        jest.runOnlyPendingTimers(); // Timer to wait for the widget to load.
-        jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
-        expect(chatOpenSpy).toHaveBeenCalled();
-        expect(button.textContent).toEqual("Chat online");
-        button.click();
-        expect(button.textContent).toEqual("Chat online");
-        expect(document.querySelectorAll('#ze-snippet').length).toEqual(1);
+      it('hides the unavailable message', () => {
+        const button = document.querySelector('[data-chat-target="unavailable"]')
+        expect(button.classList.contains('hidden')).toBe(true)
+      })
+
+      it('displays the chat online button', () => {
+        const button = document.querySelector('[data-chat-target="online"]')
+        expect(button.classList.contains('hidden')).toBe(false)
+      })
+
+      describe('when clicking the chat button', () => {
+        it('appends the Zendesk snippet, shows a loading message and then opens the chat window', () => {
+          const button = document.querySelector('a');
+          button.click();
+          expect(document.querySelector('#ze-snippet')).not.toBeNull();
+          expect(getButtonText()).toEqual("Starting chat...");
+          jest.runOnlyPendingTimers(); // Timer for script loading,
+          jest.runOnlyPendingTimers(); // Timer to wait for the widget to load.
+          jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
+          expect(chatOpenSpy).toHaveBeenCalled();
+          expect(getButtonText()).toEqual("Chat online");
+        });
       });
-    });
-  })
 
-  describe("when the chat is offline (too early)", () => {
-    beforeEach(() => {
-      setBody();
-      setCurrentTime('2021-01-01 08:29');
-    });
-
-    it('displays the chat offline message', () => {
-      const button = document.querySelector('[data-chat-target="offline"]')
-      expect(button.classList.contains('hidden')).toBe(false)
+      describe('when clicking the chat button twice', () => {
+        it('only appends the Zendesk snippet once and does not show the loading message for the second click', () => {
+          const button = document.querySelector('a');
+          button.click();
+          expect(button.textContent).toEqual("Starting chat...");
+          jest.runOnlyPendingTimers(); // Timer for script loading,
+          jest.runOnlyPendingTimers(); // Timer to wait for the widget to load.
+          jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
+          expect(chatOpenSpy).toHaveBeenCalled();
+          expect(button.textContent).toEqual("Chat online");
+          button.click();
+          expect(button.textContent).toEqual("Chat online");
+          expect(document.querySelectorAll('#ze-snippet').length).toEqual(1);
+        });
+      });
     })
-  })
 
-  describe("when the chat is offline (too late)", () => {
-    beforeEach(() => {
-      setBody();
-      setCurrentTime('2021-01-01 17:31');
-    });
+    describe("when the chat is offline (too early)", () => {
+      beforeEach(() => {
+        setBody();
+        setCurrentTime('2021-01-01 08:29');
+      });
 
-    it('displays the chat offline message', () => {
-      const button = document.querySelector('[data-chat-target="offline"]')
-      expect(button.classList.contains('hidden')).toBe(false)
+      it('displays the chat offline message', () => {
+        const button = document.querySelector('[data-chat-target="offline"]')
+        expect(button.classList.contains('hidden')).toBe(false)
+      })
     })
-  })
 
-  describe("when the chat is offline (weekend)", () => {
-    beforeEach(() => {
-      setBody();
-      setCurrentTime('2021-12-18 11:00');
-    });
+    describe("when the chat is offline (too late)", () => {
+      beforeEach(() => {
+        setBody();
+        setCurrentTime('2021-01-01 17:31');
+      });
 
-    it('displays the chat offline message', () => {
-      const button = document.querySelector('[data-chat-target="offline"]')
-      expect(button.classList.contains('hidden')).toBe(false)
+      it('displays the chat offline message', () => {
+        const button = document.querySelector('[data-chat-target="offline"]')
+        expect(button.classList.contains('hidden')).toBe(false)
+      })
     })
-  })
+
+    describe("when the chat is offline (weekend)", () => {
+      beforeEach(() => {
+        setBody();
+        setCurrentTime('2021-12-18 11:00');
+      });
+
+      it('displays the chat offline message', () => {
+        const button = document.querySelector('[data-chat-target="offline"]')
+        expect(button.classList.contains('hidden')).toBe(false)
+      })
+    })
+  });
 });
