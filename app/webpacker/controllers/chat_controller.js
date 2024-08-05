@@ -6,7 +6,7 @@ export default class extends Controller {
   static values = {
     chatApiUrl: '/chat',
     chatWindowUrl: '/chat',
-    refreshInterval: 60000,
+    refreshInterval: 20000,
   };
 
   initialize() {
@@ -46,9 +46,14 @@ export default class extends Controller {
 
   setNewChatState() {
     fetch(this.chatApiUrlValue, { headers: { Accept: 'application/json' } })
-      .then((response) => response.json())
+      .then(
+        (response) => response.json(),
+        (result) => this.stopRefreshing(),
+      )
       .then((data) => {
-        this.toggleState(data.available);
+        if (data) {
+          this.toggleState(data.available);
+        }
       });
   }
 
@@ -96,10 +101,17 @@ export default class extends Controller {
   }
 
   loadNewChat() {
-    const windowFeatures = "left=100,top=100,width=400,height=600";
-    const handle = window.open(this.chatWindowUrlValue,"chatWindow", windowFeatures);
+    const windowFeatures = 'left=100,top=100,width=400,height=600';
+
+    this.chatTarget.textContent = 'Starting chat...';
+
+    const handle = window.open(
+      this.chatWindowUrlValue,
+      'chatWindow',
+      windowFeatures,
+    );
     if (!handle) {
-      alert("Please enable pop-ups to open the chat window")
+      alert('Please enable pop-ups to open the chat window');
     }
   }
 
