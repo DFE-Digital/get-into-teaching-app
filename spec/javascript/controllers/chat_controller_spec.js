@@ -9,12 +9,12 @@ describe('ChatController', () => {
   let chatShowSpy;
   let chatOpenSpy;
 
-  const setBody = () => {
+  const setBody = (chatEnabled = 'true') => {
     document.body.innerHTML = `
-      <div data-controller="chat" data-enabled="false" data-chat-target="container" class="chat">
-        <div data-chat-target="online" class="">
+      <div data-controller="chat" data-enabled="${chatEnabled}" data-chat-target="container" class="chat">
+        <div data-chat-target="online" class="hidden">
           <p>
-            <a class="button" href="javascript:void(0)" data-action="chat#start" data-chat-target="chat">Chat <span>online</span></a>
+            <a class="button" href="javascript:void(0)" data-action="chat#start" data-chat-target="chat">Chat online</a>
           </p>
         </div>
         <div data-chat-target="offline" class="hidden">
@@ -22,7 +22,7 @@ describe('ChatController', () => {
             Chat is <strong>closed</strong>
           </p>
         </div>
-        <div data-chat-target="unavailable" class="hidden">
+        <div data-chat-target="unavailable">
           <p>
             <strong>Chat not available</strong>
             <br>
@@ -48,7 +48,61 @@ describe('ChatController', () => {
     return document.querySelector('a').textContent;
   }
 
-  describe('when the old chat is enabled', () => {
+
+  describe('when the new chat is enabled', () => {
+
+    const mockFetch = (result) => {
+      global.fetch = jest.fn(() => {
+        return Promise.resolve({
+          json: () => (result)
+        })
+      })
+    }
+
+    describe('when the chat is online', () => {
+      beforeEach(() => {
+        mockFetch({ "skillid": 123456, "available": true, "status_age": 123 } );
+        setBody('true');
+      });
+
+      it('hides the unavailable message', () => {
+        const button = document.querySelector('[data-chat-target="unavailable"]')
+        expect(button.classList.contains('hidden')).toBe(true)
+      })
+
+      it('displays the chat online button', () => {
+        const button = document.querySelector('[data-chat-target="online"]')
+        expect(button.classList.contains('hidden')).toBe(false)
+      })
+
+      describe('when clicking the chat button', () => {
+        it('shows a loading message and then opens the chat window', () => {
+          const button = document.querySelector('a');
+          button.click();
+          expect(getButtonText()).toEqual("Starting chat...");
+        });
+      });
+    });
+
+    describe('when the chat is offline', () => {
+      beforeEach(() => {
+        mockFetch({ "skillid": 123456, "available": false, "status_age": 123 } );
+        setBody('true');
+      });
+
+      it('hides the unavailable message', () => {
+        const button = document.querySelector('[data-chat-target="unavailable"]')
+        expect(button.classList.contains('hidden')).toBe(true)
+      })
+
+      it('displays the chat offline message', () => {
+        const button = document.querySelector('[data-chat-target="offline"]')
+        expect(button.classList.contains('hidden')).toBe(false)
+      })
+    });
+  });
+
+  describe('when the new chat is not enabled', () => {
 
     describe('when the chat is online', () => {
       beforeEach(() => {
@@ -57,7 +111,7 @@ describe('ChatController', () => {
 
         jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ zE: chatOpenSpy, zEACLoaded: chatShowSpy }));
 
-        setBody();
+        setBody('false');
         setCurrentTime('2021-01-01 10:00');
       });
 
@@ -104,7 +158,7 @@ describe('ChatController', () => {
 
     describe("when the chat is offline (too early)", () => {
       beforeEach(() => {
-        setBody();
+        setBody('false');
         setCurrentTime('2021-01-01 08:29');
       });
 
@@ -116,7 +170,7 @@ describe('ChatController', () => {
 
     describe("when the chat is offline (too late)", () => {
       beforeEach(() => {
-        setBody();
+        setBody('false');
         setCurrentTime('2021-01-01 17:31');
       });
 
@@ -128,7 +182,7 @@ describe('ChatController', () => {
 
     describe("when the chat is offline (weekend)", () => {
       beforeEach(() => {
-        setBody();
+        setBody('false');
         setCurrentTime('2021-12-18 11:00');
       });
 
