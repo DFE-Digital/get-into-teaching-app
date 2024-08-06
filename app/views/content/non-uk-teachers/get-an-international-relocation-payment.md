@@ -11,7 +11,7 @@ related_content:
 promo_content:
 navigation: 20.60
 navigation_title: Get an international relocation payment
-navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth £10,000.
+navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth $nonuk_internationalrelocationpayment_value$.
 date: "2021-05-27"
 image: "static/images/content/hero-images/geography.jpg"
 backlink: "../../"
@@ -27,7 +27,7 @@ inset_text:
       <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.</p>
 
       <br>
-      <p>Eligible teachers will receive the IRP of up to £10,000, in 2 instalments of £5,000 spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment.</p>
+      <p>Eligible teachers will receive the IRP of up to $nonuk_internationalrelocationpayment_value$, in 2 instalments of $nonuk_internationalrelocationpayment_instalment$ spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment.</p>
 
 
 keywords:
@@ -76,7 +76,7 @@ $applications-open$
 
 ## What the IRP is for
 
-If you are a teacher considering moving to England to teach languages or physics, you could be eligible for an international relocation payment (IRP) from the UK government worth up to £10,000.
+If you are a teacher considering moving to England to teach languages or physics, you could be eligible for an international relocation payment (IRP) from the UK government worth up to $nonuk_internationalrelocationpayment_value$.
 
 The IRP is designed to cover some of the costs of moving to England, including:
 
@@ -86,7 +86,7 @@ The IRP is designed to cover some of the costs of moving to England, including:
 
 * other relocation expenses
 
-If you are eligible, you will receive a maximum IRP of £10,000, in 2 instalments of £5,000 spread over 2 years. If you received the IRP payment for the 2023 to 2024 academic year you cannot receive the IRP again. The IRP is available whether you teach full-time or part-time.
+If you are eligible, you will receive a maximum IRP of $nonuk_internationalrelocationpayment_value$, in 2 instalments of $nonuk_internationalrelocationpayment_instalment$ spread over 2 years. If you received the IRP payment for the 2023 to 2024 academic year you cannot receive the IRP again. The IRP is available whether you teach full-time or part-time.
 
 The IRP is a 2 year trial to support non-UK citizens who want to teach in England. 2024 to 2025 is the second year of the trial.
 
@@ -94,11 +94,11 @@ The IRP is a 2 year trial to support non-UK citizens who want to teach in Englan
 
 ## Check your eligibility
 
-To be eligible for the maximum IRP of £10,000, you must meet all the eligibility requirements when you apply for both the first and second instalments.
+To be eligible for the maximum IRP of $nonuk_internationalrelocationpayment_value$, you must meet all the eligibility requirements when you apply for both the first and second instalments.
 
 You will not be able to use eligibility for the IRP in your visa application as proof that you have enough money to support yourself.
 
-### Eligibility requirements for IRP instalment 1 (£5,000)
+### Eligibility requirements for IRP instalment 1 ($nonuk_internationalrelocationpayment_instalment$)
 
 #### Teaching subject and school
 
@@ -230,7 +230,7 @@ You study in the UK on a Student visa for 3 years from September 2019 to July 20
 
 You will be eligible for the first instalment of IRP because you have spent less than 90 days in the UK in the previous 12 months and have moved to the UK less than 3 months before the start of your job.
 
-### Eligibility requirements for IRP instalment 2 (£5,000)
+### Eligibility requirements for IRP instalment 2 ($nonuk_internationalrelocationpayment_instalment$)
 
 To get the second instalment of the IRP, you must meet all the eligibility requirements set out in this section.
 
@@ -331,7 +331,7 @@ DfE will check you meet the eligibility requirements for the first instalment of
 
 * the school where you are employed
 
-If your eligibility checks are successful, you will get the first instalment of £5,000. 
+If your eligibility checks are successful, you will get the first instalment of $nonuk_internationalrelocationpayment_instalment$. 
 
 ### Second instalment of the IRP
 
@@ -345,7 +345,7 @@ To get the second instalment of the IRP, you will need to have:
 
 Applications for the second instalment are open from September 2025 to March 2026.
 
-The Department for Education will validate your application with [UK Visas and Immigration](https://www.gov.uk/government/organisations/uk-visas-and-immigration) and the school or schools where you have worked since applying for the first instalment of the IRP. If you meet the eligibility requirements for the second instalment set out on this page, you should receive the second instalment of £5,000 following successful completion of our eligibility checks. 
+The Department for Education will validate your application with [UK Visas and Immigration](https://www.gov.uk/government/organisations/uk-visas-and-immigration) and the school or schools where you have worked since applying for the first instalment of the IRP. If you meet the eligibility requirements for the second instalment set out on this page, you should receive the second instalment of $nonuk_internationalrelocationpayment_instalment$ following successful completion of our eligibility checks. 
 
 ## Receiving the IRP payments
 
@@ -370,7 +370,7 @@ You cannot reapply for the IRP in following years if you leave the UK and then r
 
 ### Tax and the IRP
 
-DfE will pay the UK tax owed on the IRP to ensure you receive the full £10,000, as long as your overall earnings do not exceed £50,270 in the year you receive the IRP. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) on any earnings which take you over £50,270.
+DfE will pay the UK tax owed on the IRP to ensure you receive the full $nonuk_internationalrelocationpayment_value$, as long as your overall earnings do not exceed $nonuk_internationalrelocationpayment_thresholdfortaxonpayments$ in the year you receive the IRP. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) on any earnings which take you over $nonuk_internationalrelocationpayment_thresholdfortaxonpayments$.
 
 ### Protect yourself from fraud
 
