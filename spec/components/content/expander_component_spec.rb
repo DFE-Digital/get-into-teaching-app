@@ -42,6 +42,18 @@ describe Content::ExpanderComponent, type: :component do
     it { is_expected.to have_css("span.expander-details__summary__title", text: title) }
   end
 
+  describe "show_link_id" do
+    it { is_expected.to have_css("#show-header-goes-here-title-goes-here") }
+  end
+
+  describe "hide_link_id" do
+    it { is_expected.to have_css("#hide-header-goes-here-title-goes-here") }
+  end
+
+  describe "details_id" do
+    it { is_expected.to have_css("#details-header-goes-here-title-goes-here") }
+  end
+
   context "when the expander is closed" do
     it { is_expected.not_to have_link(link_title, href: link_url) }
     it { is_expected.not_to have_css("div.expander-details__text p", text: text) }
