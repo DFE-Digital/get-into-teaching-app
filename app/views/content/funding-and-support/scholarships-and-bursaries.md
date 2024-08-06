@@ -101,6 +101,6 @@ Table caption: Available postgraduate bursaries and scholarships
 
 ## Other funding options
 
-If you're not eligible for a bursary or scholarship, here may be other funding options available, such as [tuition fees and maintenance loans](/funding-and-support/tuition-fees).
+If you're not eligible for a bursary or scholarship, there may be other funding options available, such as [tuition fees and maintenance loans](/funding-and-support/tuition-fees).
 
 For advice on funding, you can speak to a [teacher training adviser](/help-and-support). They can help you work out what support you could be eligible for.
