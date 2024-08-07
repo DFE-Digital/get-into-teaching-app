@@ -6,7 +6,7 @@ image: "static/images/content/hero-images/0029.jpg"
 colour: "yellow"
 layout: "layouts/category"
 title_paragraph: |-
-    Choosing or changing a career can be a big decision. Find out what it's like to be a teacher in England, including how varied and rewarding teaching can be.
+    Choosing or changing a career can be a big decision. Find out what life is like as a teacher in England, including how varied and rewarding teaching can be.
 navigation: 5
 navigation_title: Life as a teacher
 navigation_path: "/life-as-a-teacher"
