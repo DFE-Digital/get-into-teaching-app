@@ -53,6 +53,25 @@
     margin-bottom: 0;
     border-bottom: 4px solid $grey-light;
 
+    &__with-image {
+      grid-column: 1 / -1;
+    }
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      min-height: 0;
+      min-width: 0;
+
+      &__col1 {
+        padding: 0 3em 0 0;
+      }
+
+      &__col2 {
+        overflow: hidden;
+      }
+    }
+
     a {
       padding: 1.25em;
       text-decoration: none;
@@ -64,7 +83,7 @@
       h3 {
         text-decoration: underline;
       }
-      
+
       &:focus h2 {
         color: $white;
       }

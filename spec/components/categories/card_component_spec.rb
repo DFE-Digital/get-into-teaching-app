@@ -49,4 +49,19 @@ describe Categories::CardComponent, type: "component" do
       expect(subject).to have_css("a > .category__nav-card--content > #{custom_heading_tag}", text: item.title)
     end
   end
+
+  context "when an image is included" do
+    let(:item) do
+      OpenStruct.new(
+        title: "Test category card title",
+        description: description,
+        path: "/a/b/c/",
+        image: "static/images/content/hero-images/0032.jpg",
+        )
+    end
+
+    it "renders an image tag" do
+      expect(subject).to have_css("div.category__nav-card__wrapper__col2 img")
+    end
+  end
 end
