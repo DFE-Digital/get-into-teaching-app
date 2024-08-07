@@ -42,6 +42,10 @@ module Content
       parameterize("hide #{header} #{title}")
     end
 
+    def details_id
+      parameterize("details #{header} #{title}")
+    end
+
     def expander_class
       %w[expander-details].tap do |c|
         c << "expander-details__background-#{background}" if background

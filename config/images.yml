@@ -112,13 +112,6 @@
     - "static/images/content/hero-images/student--mobile.jpg"
     - "static/images/content/hero-images/student--tablet.jpg"
 
-"static/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg":
-  # A teacher standing in a classroom
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445--mobile.jpg"
-    - "static/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445--tablet.jpg"
-
 "static/images/content/hero-images/event-image.jpg":
   # A Get Into Teaching event in progress with people talking to teachers and advisers
   alt: ""
@@ -133,20 +126,6 @@
     - "static/images/content/hero-images/cake--mobile.png"
     - "static/images/content/hero-images/cake--tablet.png"
 
-"static/images/content/hero-images/0001.jpg":
-  # Maths teacher standing in front of a whiteboard with maths equations.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0001--mobile.jpg"
-    - "static/images/content/hero-images/0001--tablet.jpg"
-
-"static/images/content/hero-images/0009.jpg":
-  # Teacher smiling in front of a maths display board.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0009--mobile.jpg"
-    - "static/images/content/hero-images/0009--tablet.jpg"
-
 "static/images/content/hero-images/0011.jpg":
   # Child pointing something out to a teacher in the classroom.
   alt: ""
@@ -154,28 +133,12 @@
     - "static/images/content/hero-images/0011--mobile.jpg"
     - "static/images/content/hero-images/0011--tablet.jpg"
 
-"static/images/content/hero-images/0017.jpg":
-  # Maths teacher helping a pupil work out a problem.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0017--mobile.jpg"
-    - "static/images/content/hero-images/0017--tablet.jpg"
-
 "static/images/content/hero-images/0018.jpg":
   # Young boy with a pencil behind his ear listening to a teacher.
   alt: ""
   variants:
     - "static/images/content/hero-images/0018--mobile.jpg"
     - "static/images/content/hero-images/0018--tablet.jpg"
-
-# Todo: delete image 0024.jpg
-"static/images/content/hero-images/0024.jpg":
-  # Maths teacher and pupil discussing a problem in a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0024--mobile.jpg"
-    - "static/images/content/hero-images/0024--tablet.jpg"
-# Todo: delete image 0024.jpg
 
 "static/images/content/hero-images/0025.jpg":
   # A teacher training provider talking to an attendee at a teacher training event.
@@ -486,12 +449,6 @@
 "static/images/content/landing/how-to-become-a-teacher-2.jpg":
   # A teacher looks over students sat around a table.
   alt: ""
-
-# is teaching right for me
-"static/images/content/is-teaching-right-for-me/fellowship.jpg":
-  alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
-"static/images/content/is-teaching-right-for-me/stories-zainab.jpg":
-  alt: "Zainab Kasmani, English teacher"
 
 # event
 "static/images/content/event-signup/event-regional-online-listing.jpg":
