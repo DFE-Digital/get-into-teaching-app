@@ -57,7 +57,7 @@ describe Categories::CardComponent, type: "component" do
         description: description,
         path: "/a/b/c/",
         image: "static/images/content/hero-images/0032.jpg",
-        )
+      )
     end
 
     it "renders an image tag" do
