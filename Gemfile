@@ -56,7 +56,7 @@ gem "faraday_middleware"
 
 gem "fastimage"
 
-gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.11.6"
+gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.13.0"
 
 gem "hashids"
 
@@ -89,6 +89,7 @@ gem "net-smtp", ">= 0.3.3", require: false
 gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
 
 gem "sidekiq", "~> 6.5.0"
+gem "sidekiq-cron"
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
