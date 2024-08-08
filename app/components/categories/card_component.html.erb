@@ -1,5 +1,6 @@
 <% if image? %>
-  <li class="category__nav-card category__nav-card__with-image">
+  <!-- This <li> element is dynamically generated within a parent template that includes the surrounding <ul>. -->
+  <!-- //NOSONAR --><li class="category__nav-card category__nav-card__with-image">
     <div class="category__nav-card__wrapper">
       <div class="category__nav-card__wrapper__col1">
         <%= link_to(path, class: "link--black") do %>
@@ -15,7 +16,7 @@
     </div>
   </li>
 <% else %>
-  <li class="category__nav-card">
+  <!-- //NOSONAR --><li class="category__nav-card">
     <%= link_to(path, class: "link--black") do %>
       <div class="category__nav-card--content">
         <%= content_tag(heading_tag, title) %>
