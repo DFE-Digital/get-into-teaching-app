@@ -63,7 +63,22 @@
 
     &__wrapper {
       display: grid;
-      grid-template-columns: 50% 50%;
+
+      @include mq($until: tablet) {
+        grid-template-columns: 100%;
+
+        &__col1 {
+          order: 2;
+        }
+
+        &__col2 {
+          order: 1;
+        }
+      }
+
+      @include mq($from: tablet) {
+        grid-template-columns: 50% 50%;
+      }
       min-height: 0;
       min-width: 0;
 
