@@ -69,6 +69,13 @@
 
       &__col2 {
         overflow: hidden;
+        line-height: 0;
+
+        img {
+          object-fit: cover;
+          object-position: center center;
+          max-height: 300px;
+        }
       }
     }
 
