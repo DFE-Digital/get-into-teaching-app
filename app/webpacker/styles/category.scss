@@ -55,6 +55,10 @@
 
     &__with-image {
       grid-column: 1 / -1;
+
+      a.link--black {
+        padding: 0;
+      }
     }
 
     &__wrapper {
@@ -64,7 +68,7 @@
       min-width: 0;
 
       &__col1 {
-        padding: 0 3em 0 0;
+        padding: 1.25em;
       }
 
       &__col2 {
@@ -75,6 +79,7 @@
           object-fit: cover;
           object-position: center center;
           max-height: 300px;
+          max-width: 100%;
         }
       }
     }
