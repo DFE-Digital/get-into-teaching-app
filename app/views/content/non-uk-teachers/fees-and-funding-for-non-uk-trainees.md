@@ -92,7 +92,7 @@ You’ll also have to cover your living costs.
 
 Irish citizens or non-UK citizens who have settled status may be eligible for:
 
-* a reduction in fees to the ‘home fee rate’ paid by UK applicants (set at a maximum of £9,250) – if you’re eligible, this fee will be the same for all courses offered by training providers
+* a reduction in fees to the ‘home fee rate’ paid by UK applicants (set at a maximum of $fees_pgitt_domesticfulltime$) – if you’re eligible, this fee will be the same for all courses offered by training providers
 
 * student loans to help with tuition fees and living costs
 

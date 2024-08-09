@@ -8,7 +8,7 @@ related_content:
     Is teaching right for me? : "/is-teaching-right-for-me"
     Train to teach if you do not have a degree : "/train-to-be-a-teacher/if-you-dont-have-a-degree"
     Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
-navigation: 20.40
+navigation: 20.45
 navigation_title: If you want to do a teaching apprenticeship
 navigation_description: A teacher degree apprenticeship (TDA) lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).
 talk_to_us: false

@@ -36,7 +36,7 @@ describe Image do
       subject { described_class.new.alt(path) }
 
       context "with blank alt text" do
-        let(:path) { "static/images/content/hero-images/0001.jpg" }
+        let(:path) { "static/images/content/hero-images/0032.jpg" }
 
         specify "returns the correct image path and alt text" do
           expect(subject).to eql("")
