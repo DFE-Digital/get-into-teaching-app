@@ -1,23 +1,31 @@
 class PageLister
   class << self
-    def md_files_excluding_partials
+    def all_md_files
+      Dir["app/views/**/*.md"]
+    end
+
+    def all_erb_files
+      Dir["app/views/**/*.erb"]
+    end
+
+    def all_locale_files
+      Dir["config/locales/**/*.{yml,yaml}"]
+    end
+
+    def all_ruby_files
+      Dir["app/**/*.rb"]
+    end
+
+    def content_md_files_excl_partials
       Dir["app/views/content/**/[^_]*.md"]
     end
 
-    def md_files_including_partials
-      Dir["app/views/content/**/*.md"]
-    end
-
-    def html_files_excluding_partials
+    def content_html_files_excl_partials
       Dir["app/views/content/**/[^_]*.html.erb"]
     end
 
-    def html_files_including_partials
-      Dir["app/views/content/**/*.erb"]
-    end
-
-    def files
-      html_files_excluding_partials + md_files_excluding_partials
+    def content_files_excl_partials
+      content_html_files_excl_partials + content_md_files_excl_partials
     end
 
     def remove_folders(filename)
@@ -29,7 +37,7 @@ class PageLister
     end
 
     def content_urls
-      files.map(&method(:remove_folders)).map(&method(:remove_extension))
+      content_files_excl_partials.map(&method(:remove_folders)).map(&method(:remove_extension))
     end
   end
 end
@@ -103,5 +111,5 @@ class LinkChecker
 end
 
 class MonetaryChecker
-  MONEY_REGEXP = /([$£€](0|[1-9][0-9]{0,2})(,\d{3})*([.,]\d{1,2})?p?)/m
+  MONEY_REGEXP = /([$£€]\d+(,\d{3})*([.,]\d{1,2}p?)?k?)/m
 end

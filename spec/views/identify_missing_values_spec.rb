@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Check files", type: :feature do
+describe "Monetary values checker" do
   RSpec.shared_examples "do not contain monetary values" do |files|
     let(:something) { [123] }
     it "do not contain monetary values" do
@@ -14,10 +14,18 @@ RSpec.feature "Check files", type: :feature do
   end
 
   describe "markdown files" do
-    include_examples "do not contain monetary values", PageLister.md_files_including_partials
+    include_examples "do not contain monetary values", PageLister.all_md_files
   end
 
-  describe "html files" do
-    include_examples "do not contain monetary values", PageLister.html_files_including_partials
+  describe "erb files" do
+    include_examples "do not contain monetary values", PageLister.all_erb_files
+  end
+
+  describe "locale files" do
+    include_examples "do not contain monetary values", PageLister.all_locale_files
+  end
+
+  describe "ruby files" do
+    include_examples "do not contain monetary values", PageLister.all_ruby_files
   end
 end
