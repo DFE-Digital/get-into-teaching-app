@@ -30,20 +30,13 @@
           <div class="call-to-action__text">
             <h3><%= sub_head %></h3>
             <div>
-              <p>
-                A scholarship or bursary isn't available for your chosen subject, but you can still get a <a href="/funding-and-support/tuition-fee-and-maintenance-loans">tuition fee and maintenance loan</a> if you're eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible).
-              </p>
-
-              <p>
-                You might be able to get extra funding support <a href="/funding-and-support/if-youre-a-parent-or-carer">if you're a parent or carer</a> and <a href="/funding-and-support/if-youre-disabled">if you're disabled</a>.
-              </p>
-            </div>
-          </div>
-          <div>
-            <h3>Next steps</h3>
-            <div>
-              <p>Use the <a href="https://www.gov.uk/student-finance-calculator">student finance calculator</a> to find out what tuition fee and maintenance loan you could get.<br></p>
-              <p>Explore <a href="/train-to-be-a-teacher">how to train to be a teacher</a>.</p>
+              <p>For this option, a scholarship or bursary is not available. You can still get a <a href="/funding-and-support/tuition-fee-and-maintenance-loans">tuition fee and maintenance loan</a> if you're eligible.</p>
+              <p>You might be able to get extra funding support <a href="/funding-and-support/if-youre-a-parent-or-carer">if you're a parent or carer</a> or <a href="/funding-and-support/if-youre-disabled">if you're disabled</a>.</p>
+              <%= render Content::InsetTextComponent.new(
+                header: "Non-UK citizens:",
+                text: "You're unlikely to get help funding your training unless you have permission to <a href=\"https://www.gov.uk/browse/visas-immigration/settle-in-the-uk\">live permanently in the UK</a>. Find out about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">funding for non-UK citizens</a>.",
+                color: "purple-white"
+            ) %>
             </div>
           </div>
         <% else %>
@@ -51,26 +44,19 @@
             <h3><%= sub_head %></h3>
             <div>
               <%= helpers.safe_format(funding_results) %>
-
               <p>You can receive this alongside a <a href="/funding-and-support/tuition-fee-and-maintenance-loans">tuition fee and maintenance loan</a>.</p>
-              <p>You could also get extra funding support <a href="/funding-and-support/if-youre-a-parent-or-carer">if you're a parent or carer</a> and <a href="/funding-and-support/if-youre-disabled">if you're disabled</a>.</p>
+              <p>You could also get extra funding support <a href="/funding-and-support/if-youre-a-parent-or-carer">if you're a parent or carer</a> or <a href="/funding-and-support/if-youre-disabled">if you're disabled</a>.</p>
+              <%= render Content::InsetTextComponent.new(
+                header: "Non-UK citizens:",
+                text: "<p>If you train to teach languages or physics, you may be eligible for a bursary or scholarship. You're unlikely to be eligible for bursaries and scholarships in other subjects.</p>
+                      <p>Other funding like tuition fee loans and maintenance loans are normally only available for UK citizens or non-UK citizens with permission to <a href=\"https://www.gov.uk/browse/visas-immigration/settle-in-the-uk\">live permanently in the UK</a>.</p>
+                      <p>Find out about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">funding for non-UK citizens</a>.</p>",
+                color: "purple-white"
+            ) %>
             </div>
           </div>
-          <div>
-            <h3>Next steps</h3>
-            <div>
-            Continue on this page to find out more about your eligibility for funding.
-            </div>
-
-            <div>
-             <p> Explore <a href="/train-to-be-a-teacher">how to train to become a teacher</a>.</p>
-            </div>
-
-            <%= helpers.safe_html_format(next_steps) if next_steps.present? %>
           </div>
         <% end %>
-        <p>Talk to a <a href="/teacher-training-advisers">teacher training adviser</a> before you apply for free advice on funding your training. Chat by phone, text or email, as little or as often as you need.</p>
-        <p><a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">Find out more about funding for non-UK citizens</a>.</p>
       <% end %>
     </div>
   </div>
