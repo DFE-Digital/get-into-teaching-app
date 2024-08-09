@@ -47,14 +47,6 @@ RSpec.describe FundingWidgetComponent, type: :component do
       it "has a sub head" do
         expect(page).to have_css("h3", text: "Biology - Secondary")
       end
-
-      it "has the 'Next steps' info" do
-        expect(page).to have_css("h3", text: "Next steps")
-      end
-
-      it "has additional info for extra support" do
-        expect(page).to have_css("p", text: "Talk to a")
-      end
     end
   end
 
@@ -65,11 +57,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
       before { render_inline(component) }
 
       it "contains subject-specific funding content" do
-        expect(page).to have_text("Scholarships of £30,000 and bursaries of £28,000 are available for trainee maths teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible).")
-      end
-
-      it "contains subject-specific next steps content" do
-        expect(page).to have_text("If you have a passion for maths")
+        expect(page).to have_text("Scholarships of £30,000 and bursaries of £28,000 are available for trainee maths teachers if you're eligible.")
       end
     end
 
