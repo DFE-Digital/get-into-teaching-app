@@ -573,9 +573,3 @@ There may be exceptional cases where teaching assistants have worked for a signi
 Talk to your provider about whether your experience makes you eligible for this route.
 
 Or, find other ways you can [train to be a teacher](/train-to-be-a-teacher).
-
-### Are non-UK citizens eligible?
-
-If you’re a non-UK citizen, you should contact [training providers who assess international teachers](#group--non-uk).
-
-None of the other UK regional or national providers can help with non-UK enquiries. Please do not contact them if you are not in the UK.
