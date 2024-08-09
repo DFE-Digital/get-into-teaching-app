@@ -73,12 +73,23 @@
 
         &__col2 {
           order: 1;
+
+          img {
+            max-height: 200px;
+          }
         }
       }
 
       @include mq($from: tablet) {
         grid-template-columns: 50% 50%;
+
+        &__col2 {
+          img {
+            max-height: 300px;
+          }
+        }
       }
+
       min-height: 0;
       min-width: 0;
 
@@ -93,7 +104,6 @@
         img {
           object-fit: cover;
           object-position: center center;
-          max-height: 300px;
           max-width: 100%;
         }
       }
