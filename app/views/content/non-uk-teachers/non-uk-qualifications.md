@@ -2,7 +2,7 @@
 title: "Check your eligibility to train to teach in England"
 subcategory: If you want to train to teach
 description: |-
-  Find out what qualifications you need to train to teach in England. 
+  Find out what qualifications you need to train to teach in England.
 related_content:
     Learn more about fees and funding for non-UK trainees : "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
     Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
@@ -11,7 +11,7 @@ navigation: 20.20
 navigation_title: Qualifications you'll need to train to teach in England
 navigation_description: Before you apply, get help checking you have the correct qualifications for English teacher training.
 date: "2021-05-27"
-image: "static/images/content/hero-images/0003.jpg"
+image: "static/images/content/hero-images/0032.jpg"
 backlink: "../../"
 youtube_video:
   why-train-to-teach:
@@ -63,25 +63,25 @@ keywords:
   - Comparability
 ---
 
-Before you apply for teacher training in England, you must check that you have [the right qualifications](#qualifications-youll-need-to-train-to-teach) and they meet the standard set for English teacher training. 
- 
+Before you apply for teacher training in England, you must check that you have [the right qualifications](#qualifications-youll-need-to-train-to-teach) and they meet the standard set for English teacher training.
+
 ## How to check your qualifications
 
-The simplest way to check your qualifications meet the required standard in England is to get a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
+The simplest way to check your qualifications meet the required standard in England is to get a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC).
 
 This is a certificate that proves your school and university qualifications are the same standard as UK GCSEs and a UK bachelor's degree.
 
-When you apply for teacher training, you'll be asked to submit details of your statement of comparability. Applications which include this are 28% more likely to be successful. 
+When you apply for teacher training, you'll be asked to submit details of your statement of comparability. Applications which include this are 28% more likely to be successful.
 
-A statement of comparability costs £49.50 + VAT. It takes 15 working days to complete your order from the date ENIC receives your qualification documents and payment.
+A statement of comparability costs $nonuk_statementofcomparabilitycost$. It takes 15 working days to complete your order from the date ENIC receives your qualification documents and payment.
 
 ## Get help checking your qualifications
 
 To get help with your qualifications, you can use the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country's standard rate.
 
-We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England. 
+We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
 
-When you speak to us, we can tell you if you're eligible for a [teacher training adviser](/teacher-training-advisers). 
+When you speak to us, we can tell you if you're eligible for a [teacher training adviser](/teacher-training-advisers).
 
 
 ## Qualifications you'll need to train to teach
@@ -100,13 +100,13 @@ You'll also need to:
 
 ## English language, maths and science proficiency
 
-If you’ve reached a certain proficiency in an English language test, some providers will accept this as evidence you meet the standard of a grade 4 GCSE in English – for example: 
+If you’ve reached a certain proficiency in an English language test, some providers will accept this as evidence you meet the standard of a grade 4 GCSE in English – for example:
 
 * [International English Language Testing System (IELTS)](https://www.ielts.org/)
 * [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl)
-* [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/)  
+* [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/)
 
-If you have not passed an English language test like this, or do not have qualifications in maths or science which are the same standard as grade 4 GCSE, some teacher training providers will let you sit tests in these subjects. It’s best to contact them to ask about their policy before you apply. 
+If you have not passed an English language test like this, or do not have qualifications in maths or science which are the same standard as grade 4 GCSE, some teacher training providers will let you sit tests in these subjects. It’s best to contact them to ask about their policy before you apply.
 
 ## If you do not have a bachelor's degree
 
@@ -116,7 +116,7 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 ## How to apply
 
-Have you spoken to one of our advisers to check you have the required qualifications for teacher training in England? They can also help you submit your application. 
+Have you spoken to one of our advisers to check you have the required qualifications for teacher training in England? They can also help you submit your application.
 
 Learn more about [how to find and apply for teacher training courses](/non-uk-teachers/train-to-teach-in-england-as-an-international-student#find-and-apply-for-teacher-training-courses).
 

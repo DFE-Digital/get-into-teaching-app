@@ -18,7 +18,7 @@ gem "invisible_captcha"
 
 gem "iso_country_codes"
 
-gem "shakapacker", "7.2.1"
+gem "shakapacker", "8.0.0"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -45,7 +45,7 @@ gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.4.0"
 gem "rinku"
 
-gem "addressable", "~> 2.8.4"
+gem "addressable", "~> 2.8.7"
 
 gem "rack-attack"
 
@@ -56,7 +56,7 @@ gem "faraday_middleware"
 
 gem "fastimage"
 
-gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.11.6"
+gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.13.0"
 
 gem "hashids"
 
@@ -75,6 +75,7 @@ gem "skylight", "~> 6.0.4"
 
 gem "text"
 
+gem "connection_pool"
 gem "get_into_teaching_api_client_faraday", ">= 3.1.3", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"
@@ -86,6 +87,9 @@ gem "google-api-client", ">= 0.53.0", require: false
 
 gem "net-smtp", ">= 0.3.3", require: false
 gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
+
+gem "sidekiq", "~> 6.5.0"
+gem "sidekiq-cron"
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"

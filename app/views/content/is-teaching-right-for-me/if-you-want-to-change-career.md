@@ -1,7 +1,7 @@
 ---
 title: Career change to teaching
 heading: How do I change to a career in teaching?
-subcategory: Qualifications and experience
+subcategory: Changing careers
 description: |-
   Find out what extra support you can get if you want a career change into teaching. Bring your skills and experience to life in the classroom.
 related_content:
@@ -12,9 +12,17 @@ related_content:
     Fund your training if you're a parent or carer: "/funding-and-support/if-youre-a-parent-or-carer"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-career-changers
-navigation: 5.40
+navigation: 5.25
 navigation_title: How do I change to a career in teaching?
 navigation_description: Use your experience to inspire students and bring your skills and expertise to the classroom.
+inset_text:
+  international:
+    header: Non-UK citizens
+    text: |-
+      <p>
+      Find information if you're a <a href="/non-uk-teachers">non-UK citizen interested in teaching in England</a>.
+      </p>
+    color: purple
 ---
 
 Turn your passion into your profession with a career change into teaching. Not only can you use the skills and expertise you’ve already developed to inspire young people, teaching gives you the opportunity to grow and fulfil your own potential too.
@@ -27,4 +35,4 @@ If you already have an undergraduate degree, you can [search for postgraduate te
 
 If you're concerned about your subject knowledge, you may also be able to do a <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE) course</a>. This can help if you have an unrelated degree but relevant professional experience, or you haven't used your subject knowledge for a while.
 
-Find information if you're a [non-UK citizen interested in teaching in England](/non-uk-teachers).
+$international$

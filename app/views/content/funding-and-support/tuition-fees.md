@@ -21,6 +21,20 @@ keywords:
     - Teacher Training Tuition Fees
     - Student Finance
     - Financial Support
+expander:
+  postgraduate-fees:
+    title: postgraduate fees
+    text: |-
+      <p>
+      Tuition fees vary depending on the provider. On average, they cost around $fees_pgitt_internationalaverage$ for non-UK citizens.</p>
+      <p>The maximum fee is around:</p>
+      <p>
+      <ul>
+      <li>$fees_pgitt_internationalmaxfulltime$ per year for a full-time course</li>
+      <li>$fees_pgitt_internationalmaxparttime$ per year for a part-time course</li></ul>
+      </p>
+      <p>
+      Find out more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.</p>
 ---
 For most postgraduate teacher training courses in England you need to pay a tuition fee. 
 
@@ -28,18 +42,10 @@ For most postgraduate teacher training courses in England you need to pay a tuit
 
 The maximum tuition fee for a postgraduate teacher training course for UK applicants is:
 
-* £9,250 per year for a full-time course
-* £6,935 per year for a part-time course 
+* $fees_pgitt_domesticfulltime$ per year for a full-time course
+* $fees_pgitt_domesticparttime$ per year for a part-time course 
 
-### Non-UK citizens
-Tuition fees for postgraduate teacher training courses for non-UK citizens vary depending on the provider. 
-
-The maximum tuition fee for a postgraduate teacher training course for non-UK citizens is about:
-
-* £36,000 per year for a full-time course
-* £17,500 per year for a part-time course
-
-Find out more about [fees and financial support for non-UK trainee teachers](/non-uk-teachers/fees-and-funding-for-non-uk-trainees). 
+$postgraduate-fees$
 
 ## Additional costs
 You’ll also need to be able to cover your living costs and any travel expenses if you need to travel to school placements. Find out about [student finance for teacher training](/funding-and-support/tuition-fee-and-maintenance-loans).

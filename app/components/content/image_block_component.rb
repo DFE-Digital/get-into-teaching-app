@@ -2,10 +2,12 @@ module Content
   class ImageBlockComponent < ViewComponent::Base
     attr_reader :title, :image_path
 
+    include ContentHelper
+
     def initialize(title:, image_path:)
       super
 
-      @title = title
+      @title = substitute_values(title)
       @image_path = image_path
     end
 

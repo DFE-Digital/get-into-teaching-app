@@ -9,7 +9,7 @@ DfE::Analytics.configure do |config|
 
   # Which ActiveJob queue to put events on
   #
-  # config.queue = :default
+  config.queue = :dfe_analytics
 
   # The name of the BigQuery table we’re writing to.
   #
@@ -50,6 +50,8 @@ DfE::Analytics.configure do |config|
   # config.environment = ENV.fetch('RAILS_ENV', 'development')
 
   config.user_identifier = proc { |user| user&.username }
+
+  config.entity_table_checks_enabled = true
 
   # A proc which will be called with the rack env, and which should
   # return a boolean indicating whether the page is cached and will

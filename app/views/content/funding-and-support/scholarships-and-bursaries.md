@@ -7,7 +7,7 @@ description: |-
 related_content:
     Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
     Teacher pay and benefits: "/is-teaching-right-for-me/teacher-pay-and-benefits"
-    What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
+    What qualifications do you need to be a teacher? : "/train-to-be-a-teacher/qualifications-you-need-to-teach"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:
@@ -43,19 +43,21 @@ You cannot receive a scholarship or bursary if you're on a [salaried teacher tra
 
 | Subject                                                               | Bursary  | Scholarship      |
 |-----------------------------------------------------------------------| -------: | ---------------: |
-| **Art and design**                                                    | £10,000  |                  |
-| **Biology**                                                           | £25,000  |                  |
-| **Chemistry**                                                         | £28,000  | £30,000          |
-| **Computing**                                                         | £28,000  | £30,000          |
-| **Design and technology**                                             | £25,000  |                  |
-| **English**                                                           | £10,000  |                  |
-| **Geography**                                                         | £25,000  |                  |
-| **Languages**<br/> (French, German and Spanish only)                  | £25,000  | £27,000          |
-| **Languages**<br/> (all other languages, including ancient languages) | £25,000  |                  |
-| **Maths**                                                             | £28,000  | £30,000          |
-| **Music**                                                             | £10,000  |                  |
-| **Physics**                                                           | £28,000  | £30,000          |
-| **Religious education**                                               | £10,000  |                  |
+| **Art and design**                                                    | $bursaries_postgraduate_artanddesign$  |                  |
+| **Biology**                                                           | $bursaries_postgraduate_biology$  |                  |
+| **Chemistry**                                                         | $bursaries_postgraduate_chemistry$  | $scholarships_chemistry$          |
+| **Computing**                                                         | $bursaries_postgraduate_computing$  | $scholarships_computing$          |
+| **Design and technology**                                             | $bursaries_postgraduate_designandtechnology$  |                  |
+| **English**                                                           | $bursaries_postgraduate_english$  |                  |
+| **Geography**                                                         | $bursaries_postgraduate_geography$  |                  |
+| **Languages**<br/> (French, German and Spanish only)                  | $bursaries_postgraduate_languagesfrenchgermanspanish$  | $scholarships_languagesfrenchgermanspanish$      |
+| **Languages**<br/> (all other languages, including ancient languages) | $bursaries_postgraduate_languagesother$  |                  |
+| **Maths**                                                             | $bursaries_postgraduate_maths$  | $scholarships_maths$         |
+| **Music**                                                             | $bursaries_postgraduate_music$  |                  |
+| **Physics**                                                           | $bursaries_postgraduate_physics$  | $scholarships_physics$        |
+| **Religious education**                                               | $bursaries_postgraduate_religiouseducation$  |                  |
+
+Table caption: Available postgraduate bursaries and scholarships
 
 ### Bursaries
 
@@ -112,7 +114,7 @@ Each scholarship body will have its own deadline for applications. You can find 
 
 ## Undergraduate bursaries
 
-You may be eligible for a [bursary of £9,000](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2024-to-2025#undergraduate-bursary) if you do a secondary maths or physics course that leads to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
+You may be eligible for a [bursary of $bursaries_undergraduate$](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2024-to-2025#undergraduate-bursary) if you do a secondary maths or physics course that leads to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 You may also be eligible if you do an opt-in QTS course in secondary computing, languages, mathematics or physics. This is where you start a standard undergraduate degree but then opt-in to initial teacher training to get QTS.
 

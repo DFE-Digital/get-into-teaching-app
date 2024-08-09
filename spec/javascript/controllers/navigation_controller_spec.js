@@ -123,7 +123,7 @@ describe('NavigationController', () => {
 								</a>
 							</li>
 							<li id="is-teaching-right-for-me-teaching-internship-providers-mobile" class="" data-corresponding-id="is-teaching-right-for-me-teaching-internship-providers-desktop" data-child-menu-id="is-teaching-right-for-me-teaching-internship-providers-categories-mobile" data-corresponding-child-menu-id="is-teaching-right-for-me-teaching-internship-providers-categories-desktop" data-direct-link="true" data-toggle-secondary-navigation="false">
-								<a class="menu-link link link--black link--no-underline" data-action="keydown.enter->navigation#handleNavMenuClick keydown.tab->navigation#handleMenuTab" href="/is-teaching-right-for-me/teaching-internship-providers">
+								<a class="menu-link link link--black link--no-underline" data-action="keydown.enter->navigation#handleNavMenuClick keydown.tab->navigation#handleMenuTab" href="/train-to-be-a-teacher/teaching-internships">
 									<span class="menu-title">Can I do a teaching internship?</span>
 								</a>
 							</li>
@@ -689,7 +689,7 @@ describe('NavigationController', () => {
 					</a>
 				</li>
 				<li id="is-teaching-right-for-me-teaching-internship-providers-desktop" class="" data-corresponding-id="is-teaching-right-for-me-teaching-internship-providers-mobile" data-child-menu-id="is-teaching-right-for-me-teaching-internship-providers-categories-desktop" data-corresponding-child-menu-id="is-teaching-right-for-me-teaching-internship-providers-categories-mobile" data-direct-link="true" data-toggle-secondary-navigation="false">
-					<a class="menu-link link link--black link--no-underline" data-action="keydown.enter->navigation#handleNavMenuClick keydown.tab->navigation#handleMenuTab" href="/is-teaching-right-for-me/teaching-internship-providers">
+					<a class="menu-link link link--black link--no-underline" data-action="keydown.enter->navigation#handleNavMenuClick keydown.tab->navigation#handleMenuTab" href="/train-to-be-a-teacher/teaching-internships">
 						<span class="menu-title">Can I do a teaching internship?</span>
 					</a>
 				</li>

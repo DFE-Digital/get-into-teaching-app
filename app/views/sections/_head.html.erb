@@ -40,15 +40,14 @@ f=false,d=document,vwoCodeEl=d.querySelector('#vwoCode'),code={use_existing_jque
   <%= breadcrumbs_structured_data(breadcrumb_trail) %>
   <%= logo_structured_data %>
   <%= home_structured_data if current_page?(root_path) %>
-  <%= how_to_structured_data(@page) if @page.present? && @front_matter.key?("how_to") %>
 
   <% if @front_matter["noindex"] || @noindex %>
     <%= meta_tag(key: "robots", value: "noindex") %>
   <% end %>
 
   <% if @front_matter['description'] %>
-    <%= meta_tag(key: 'description', value: @front_matter['description']) %>
-    <%= meta_tag(key: 'description', value: @front_matter['description'], opengraph: true) %>
+    <%= meta_tag(key: 'description', value: substitute_values(@front_matter['description'])) %>
+    <%= meta_tag(key: 'description', value: substitute_values(@front_matter['description']), opengraph: true) %>
   <% end %>
 
   <%= meta_tag(key: 'type', value: 'website', opengraph: true) %>

@@ -113,6 +113,49 @@ describe TemplateHandlers::Markdown, type: :view do
     end
   end
 
+  context "with table captions" do
+    let(:markdown) do
+      <<~MARKDOWN
+        ---
+        title: My page
+        ---
+
+        | Heading 1   | Heading 2   |
+        | ----------- | ----------- |
+        | Cell 1      | Cell 2      |
+
+        Table caption: My caption
+      MARKDOWN
+    end
+
+    before do
+      stub_template "frontmatter.md" => markdown
+      render template: "frontmatter"
+    end
+
+    it "adds the caption to the table" do
+      is_expected.to match_html(
+        <<~HTML,
+          <table>
+            <caption class="govuk-table__caption govuk-table__caption--m">My caption</caption>
+            <thead>
+              <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+              </tr>
+            </tbody>
+          </table>
+        HTML
+      )
+    end
+  end
+
   describe "injecting CTAs" do
     let(:front_matter_with_calls_to_action) do
       {
@@ -170,8 +213,8 @@ describe TemplateHandlers::Markdown, type: :view do
       {
         "title": "Page with images",
         "images" => {
-          "first" => { "path" => "static/images/content/hero-images/0001.jpg", "other_attr" => "ignore" },
-          "second" => { "path" => "static/images/content/hero-images/0002.jpg", "other_attr" => "ignore" },
+          "first" => { "path" => "static/images/content/hero-images/0032.jpg", "other_attr" => "ignore" },
+          "second" => { "path" => "static/images/content/hero-images/0027.jpg", "other_attr" => "ignore" },
         },
       }
     end
@@ -197,7 +240,7 @@ describe TemplateHandlers::Markdown, type: :view do
     specify "the rendered output contains the specified images" do
       expect(rendered).to have_css("img", count: 2)
 
-      %w[0001 0002].each do |photo|
+      %w[0027 0032].each do |photo|
         expect(rendered).to have_css("img")
         expect(rendered).to match(%r{src="/packs-test/v1/static/images/content/hero-images/#{photo}-.*.jpg"})
         key = Image.new.alt("static/images/content/hero-images/#{photo}.jpg")

@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe Content::LandingHeroComponent, type: "component" do
   subject! { Capybara.string(component) }
 
-  let(:image_path) { "static/images/content/hero-images/0013.jpg" }
+  let(:image_path) { "static/images/content/hero-images/0032.jpg" }
   let(:title) { "My page" }
   let(:colour) { nil }
   let(:component) do

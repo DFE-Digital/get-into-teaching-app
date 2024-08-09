@@ -28,47 +28,6 @@
           partial: content/steps-to-become-a-teacher/step_7_apply_for_a_teaching_role
         Start your career:
           partial: content/steps-to-become-a-teacher/step_8_start_your_career
-  how_to:
-    Check your qualifications:
-      id: "step-1"
-      image: "static/images/content/hero-images/0009.jpg"
-      directions:
-        - If you have a degree, you can do postgraduate teacher training. If you do not have a degree, you can do undergraduate teacher training.
-    Understand funding:
-      id: "step-2"
-      image: "static/images/content/hero-images/0017.jpg"
-      directions:
-        - Undergraduate and postgraduate teacher training course fees are around £9,250 per year, but there is funding available.
-    Consider getting experience:
-      id: "step-3"
-      image: "static/images/content/hero-images/0011.jpg"
-      directions:
-        - Experiencing life in a school can help you decide if teaching is right for you and who you want to teach.
-    Find a teacher training course:
-      id: "step-4"
-      image: "static/images/content/hero-images/0018.jpg"
-      directions:
-        - Full-time postgraduate teacher training courses usually take 9 months. Undergraduate teacher training usually takes 4 years.
-    Apply for teacher training:
-      id: "step-5"
-      image: "static/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
-      directions:
-        - You can usually start applying in October, the year before your course starts.
-    Start your teacher training:
-      id: "step-6"
-      image: "static/images/content/blog/seminar-room.jpg"
-      directions:
-        - Teacher training involves classroom placements in at least 2 schools, with some theoretical learning.
-    Apply for a teaching role:
-      id: "step-7"
-      image: "static/images/content/blog/applying-for-teacher.jpg"
-      directions:
-        - Schools start to advertise their vacancies from January.
-    Start your career:
-      id: "step-8"
-      image: "static/images/content/hero-images/0001.jpg"
-      directions:
-        - For your first 2 years as an early career teacher, you'll receive a package of support to help you find your feet.
   keywords:
     - QTS
     - Qualified Teacher Status
@@ -104,8 +63,10 @@
     - get an adviser
   inset_text:
     international-content:
+      header: Non-UK citizens
+      title: additional steps
       text: There are more steps to consider if you're <a href="/non-uk-teachers">a non-UK citizen</a>.
-      color: grey
+      color: purple
 ---
 
 <strong>Discover if a career teaching in a primary or secondary school in England is right for you.</strong>

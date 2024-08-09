@@ -153,14 +153,14 @@ Images should be appropriately scaled and compressed prior to adding them to the
 The images used in the hero and on blog posts now pull their alt text from a central store. This allows us to set it once and include it wherever the image is used. The data is stored in `config/images.yml` and the format is as follows:
 
 ```yaml
-"static/images/content/hero-images/0001.jpg":
-  alt: "Maths teacher standing in front of a whiteboard with maths equations."
+"static/images/content/hero-images/0032.jpg":
+  alt: "An English teacher talking to pupils in a classroom."
   variants:
-    - "static/images/content/hero-images/0001--mobile.jpg"
-    - "static/images/content/hero-images/0001--tablet.jpg"
+    - "static/images/content/hero-images/0032--mobile.jpg"
+    - "static/images/content/hero-images/0032--tablet.jpg"
 ```
 
-The key (`"static/images/content/hero-images/0001.jpg"`) is the **primary** variant of the image, the full resolution one. Beneath it the following items are nested:
+The key (`"static/images/content/hero-images/0032.jpg"`) is the **primary** variant of the image, the full resolution one. Beneath it the following items are nested:
 
 * `alt:` - the alt text for the image, wrapped in quotes
 * `variants` - a list of **other versions of the same image**. The alternate versions can be thumbnails or crops and are considered alternates if the same `alt` text can be applied to them as the primary variant
@@ -244,13 +244,43 @@ If you need to call-out something important in an article and differentiate it f
 ---
 inset_text:
   important-content:
+    header: Optional title header
     title: Optional title
     text: Text that can contain <a href="#">links</a>
+    color: yellow|grey|purple
 ---
 
 # My page
 
 $important-content$
+```
+
+### Details expander
+
+You can use the details expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
+
+```yaml
+---
+expander:
+  check-your-qualifications:
+    title: Check your qualifications
+    text: If you're a non-UK citizen and need a visa to come to the UK to train to teach, you need to make sure the course you’re applying for sponsors visas.
+    link_title: Find out more about how to apply for a visa to train to teach in England
+    link_url: /non-uk-teachers/visas-for-non-uk-trainees
+
+  another-example:
+    title: Another example
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, purus eget lobortis maximus, diam leo consequat tellus, in interdum odio nisl sed nibh.
+    header: Non-UK citizens
+    expanded: true
+---
+
+# My page
+
+$check-your-qualifications$
+
+$another-example$
+
 ```
 
 ### YouTube video

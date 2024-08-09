@@ -78,8 +78,8 @@ RSpec.feature "Searching for teaching events", type: :feature do
       within(".teaching-event__provider-information") do
         expect(page).to have_css("h2", text: "Provider information")
 
-        expect(page).to have_content("Event website")
-        expect(page).to have_link(event.provider_website_url)
+        expect(page).to have_content("Visit the event provider's website")
+        expect(page).to have_link(href: event.provider_website_url)
 
         expect(page).to have_content("Target audience")
         expect(page).to have_content(event.provider_target_audience)
@@ -127,7 +127,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       context "when it's a School or University event" do
         let(:event) { build(:event_api, :school_or_university_event, web_feed_id: nil) }
 
-        it { is_expected.to have_content("To register for this event, follow the instructions in the event information section.") }
+        it { is_expected.not_to have_css("h2", text: "How to attend") }
         it { is_expected.not_to have_link(register_link_text) }
       end
 
@@ -136,18 +136,14 @@ RSpec.feature "Searching for teaching events", type: :feature do
           let(:url) { "https://event-provider.com" }
           let(:event) { build(:event_api, :online_event, web_feed_id: nil, provider_website_url: url) }
 
-          it { is_expected.to have_content("To attend this event, please visit this website") }
-          it { is_expected.to have_link("visit this website", href: url) }
-          it { is_expected.not_to have_link(register_link_text) }
+          it { is_expected.to have_link("Visit the event provider's website", href: url) }
         end
 
         context "when the provider has an email address" do
           let(:email) { "events@event-provider.com" }
           let(:event) { build(:event_api, :online_event, web_feed_id: nil, provider_contact_email: email) }
 
-          it { is_expected.to have_content("To attend this event, please email us") }
-          it { is_expected.to have_link("email us", href: "mailto:" + email) }
-          it { is_expected.not_to have_link(register_link_text) }
+          it { is_expected.to have_link(email, href: "mailto:" + email) }
         end
       end
     end

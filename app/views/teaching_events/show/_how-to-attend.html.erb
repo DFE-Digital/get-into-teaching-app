@@ -1,47 +1,20 @@
-<%
-    if @event.open? && [
-      can_sign_up_online?(@event),
-      is_event_type?(@event, "School or University event"),
-      @event.provider_website_url,
-      @event.provider_contact_email
-    ].any?
-%>
+<% if @event.open? && can_sign_up_online?(@event) %>
   <section class="teaching-event__how-to-attend">
     <h2>How to attend</h2>
 
-    <% if can_sign_up_online?(@event) %>
-
-      <% if @event.in_person? %>
+    <% if @event.in_person? %>
       <p>
         Register for this event to secure your place and check in faster on arrival using a QR code.
       </p>
-      <% end %>
-
-      <% if @event.online? %>
+    <% elsif @event.online? %>
       <p>
-          Register for this event and you'll receive joining
-          instructions via email.
+        Register for this event and you'll receive joining instructions via email.
       </p>
-
       <p>
-          For the best experience when accessing this event, we recommend using Google Chrome on a laptop or desktop PC.
-      </p>
-      <% end %>
-
-      <%= render(partial: 'teaching_events/show/register-button') %>
-    <% elsif is_event_type?(@event, "School or University event") %>
-      <p>
-        To register for this event, follow the instructions in the event information section.
-      </p>
-    <% elsif @event.provider_website_url %>
-      <p>
-        To attend this event, please <%= link_to("visit this website", @event.provider_website_url) %>.
-      </p>
-    <% elsif @event.provider_contact_email %>
-      <p>
-        To attend this event, please
-        <%= mail_to(@event.provider_contact_email, "email us") %>.
+        For the best experience when accessing this event, we recommend using Google Chrome on a laptop or desktop PC.
       </p>
     <% end %>
+
+    <%= render(partial: 'teaching_events/show/online-register-button') %>
   </section>
 <% end %>

@@ -1,8 +1,21 @@
-## implemented above this line
 nonuk:
-  highpotentialindividualvisaminimumsavings: £1,270
-  indiayoungprofessionalsschememinimumsavings: £2,530
+# IRP
   internationalrelocationpayment:
     value: £10,000
     instalment: £5,000
-    salarythresholdfortaxonpayments: £50,270
+    thresholdfortaxonpayments: £50,270
+# Statement of comparability  
+  statementofcomparabilitycost: £49.50 + VAT
+# Visa salary thresholds
+  skilledworkervisatraineeminfulltime:
+    innerlondon: £25,831
+    outerlondon: £24,415
+    londonfringe: £23,200
+    restofengland: £23,200
+  skilledworkervisatraineeminparttime: £23,200
+  skilledworkervisateacherminfulltime:
+    innerlondon: £36,745
+    outerlondon: £34,514
+    londonfringe: £31,350
+    restofengland: £30,000
+  skilledworkervisateacherminparttime: £23,200

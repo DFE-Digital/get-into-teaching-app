@@ -2,12 +2,10 @@
   <div class="heading-container">
     <h2 class="heading-m heading--box-pink">Talk to us</h2>
   </div>
-
   <div class="content">
     <div class="inset">
       <p>Get support through live chat or on the phone, Monday to Friday, <strong>8:30am until 5:30pm</strong> except on <a class="link--dark" href="https://www.gov.uk/bank-holidays">bank holidays</a>.</p>
     </div>
-
     <div class="contact-options">
       <div>
         <i class="icon-call icon--on-yellow"></i>
@@ -25,6 +23,13 @@
           <%= render ChatComponent.new %>
         </div>
       </div>
+        </div>
+      <div class="inset">
+          <%= render Content::InsetTextComponent.new(
+            header: "Non-UK citizens:",
+            text: "You can call us on <a href=\"tel:+448003892500\">+44 800 389 2500</a>, or use the free live chat service. Calls will be charged at your country's standard rate.",
+            color: "purple-white"
+          ) %>
+      </div>
     </div>
-  </div>
 </div>

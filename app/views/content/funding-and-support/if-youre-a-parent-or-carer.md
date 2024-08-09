@@ -23,10 +23,15 @@ keywords:
     - Grant
     - Parents
     - Carers
-inset_text:
+expander:
   international-content:
-    text: Most non-UK citizens without <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a> will not be eligible for this financial support. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.
-    color: grey
+    title: funding and support if you're a parent or carer
+    text: |-
+      <p>
+      If you do not have <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for this financial support.
+      </p>
+      <p>
+      You will still be entitled to adjustments to help you train. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.</p>
 ---
 
 If you have children or other caring responsibilities, you may be able to get extra financial support while training to teach.
@@ -54,8 +59,8 @@ You could get 85% of your childcare costs or a fixed maximum amount, whichever i
 
 The maximum you can get is:
 
-* up to £193.62 a week for 1 child
-* up to £331.95 a week for 2 or more children
+* up to $finance_childcaregrantweeklypayment_one$ a week for 1 child
+* up to $finance_childcaregrantweeklypayment_twoplus$ a week for 2 or more children
 
 Grants are paid into a Childcare Grant Payment Service (CCGPS) account. Your childcare provider would then be paid directly from this account.
 
@@ -71,7 +76,7 @@ To be eligible, you need to:
 
 The Parents’ Learning Allowance could help you with your learning costs if you’re a full-time student with children.
 
-You could be eligible for between £50 and £1,963 a year, depending on your household income.
+You could be eligible for between $finance_parentslearningallowance_min$ and $finance_parentslearningallowance_max$ a year, depending on your household income.
 
 This is usually paid to you in 3 instalments, one at the start of each term.
 
@@ -79,7 +84,7 @@ To be eligible, you need to:
 
 * be doing a full-time undergraduate course or a teacher training course in England
 * have dependent children
-* have a household income of less than £18,835.98 a year
+* have a household income of less than $finance_parentslearningallowance_income$ a year
 
 [Find out more about the Parents’ Learning Allowance and how to apply](https://www.gov.uk/parents-learning-allowance).
 
@@ -98,6 +103,6 @@ To be eligible, you need to:
 
 * be a full-time student in higher education
 * have an adult depend on you financially
-* have a household income of less than $finance_adultdependantsgrant_incomethreshold$
+* have a household income of less than $finance_adultdependantsgrant_income$
 
 [Find out more about the Adult Dependants’ Grants and how to apply](https://www.gov.uk/adult-dependants-grant).

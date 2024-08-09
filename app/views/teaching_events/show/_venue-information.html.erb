@@ -9,11 +9,6 @@
     <li>
       <%= link_to("Open venue map in Google Maps", "https://maps.google.com/?q=#{event_address(@event)}", target: "blank") %>
     </li>
-    <% if display_event_provider_info?(@event) && @event.provider_website_url %>
-      <li>
-        <%= link_to("Visit venue website", @event.provider_website_url, { target: "blank" }) %>
-      </li>
-    <% end %>
   </ul>
 
   <% if @event.building.image_url %>

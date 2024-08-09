@@ -13,7 +13,7 @@ related_content:
     Attend an event : "/events"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-assessment-only
-navigation: 20.35
+navigation: 20.40
 navigation_title: If you’ve worked as an unqualified teacher
 navigation_description: If you've worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through an assessment only route.
 fullwidth: true
@@ -97,6 +97,11 @@ provider_groups:
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
+    - header: Exchange Teacher Training
+      link: https://www.exchangeteachertraining.com/wider-offer/assessment-only
+      name: Rebecca Turner-Loisel
+      telephone: 0345 145 0075 (option 1)
+      email: info@exchangeteachertraining.com
     - header: Inspiring Leaders Teacher Training
       link: https://inspiringleadersscitt.com/aor/
       name: Dirk Smith
@@ -144,11 +149,6 @@ provider_groups:
       name: Lynsey Salt
       telephone: 020 7717 2245
       email: ao@gold.ac.uk
-    - header: Henry Maynard Training E17
-      link: http://www.henrymaynardtraining.co.uk
-      name: Clare Hunton
-      telephone: '020 8520 3142'
-      email: training@henrymaynard.waltham.sch.uk
     - header: London School of Jewish Studies (LSJS)
       link: https://www.lsjs.ac.uk/
       name: Galia Segal
@@ -219,6 +219,11 @@ provider_groups:
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
+    - header: Exchange Teacher Training
+      link: https://www.exchangeteachertraining.com/wider-offer/assessment-only
+      name: Rebecca Turner-Loisel
+      telephone: 0345 145 0075 (option 1)
+      email: info@exchangeteachertraining.com
     - header: Stockton-on-Tees Teacher Training Partnership
       link: https://www.stocktonscitt.uk
       name: Kirsten Webber
@@ -254,6 +259,11 @@ provider_groups:
       name: Gill Makin
       telephone: 0151 443 2663
       email: merseyboroughsitt@knowsley.gov.uk
+    - header: Prestolee SCITT
+      link: https://www.prestoleescitt.org.uk/assessment-only-qts
+      name: Lynsey Smith
+      telephone: 0161 843 6362
+      email: training@prestoleescitt.org.uk
     - header: University of Chester
       link: https://www.chester.ac.uk/
       name: Jane Bulkeley
@@ -357,7 +367,7 @@ provider_groups:
   South West:
     providers:
     - header: Bath Spa University
-      name: Darren McKay
+      name: Fiona Hunt
       email: assessmentonly@bathspa.ac.uk
     - header: Cornwall School Centred Initial Teacher Training (Cornwall SCITT)
       link: https://www.cornwallscitt.org/
@@ -462,6 +472,11 @@ provider_groups:
       name: Educate Group HQ
       telephone: 01978 281881
       email: aor@educate-group.co.uk
+    - header: Exchange Teacher Training
+      link: https://www.exchangeteachertraining.com/wider-offer/assessment-only
+      name: Rebecca Turner-Loisel
+      telephone: 0345 145 0075 (option 1)
+      email: info@exchangeteachertraining.com
     - header: GORSE SCITT
       link: https://gorsescitt.org.uk/
       name: Emma Worrincy
