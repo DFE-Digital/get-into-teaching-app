@@ -34,6 +34,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       )
       submit_uk_telephone_step("123456789")
       submit_review_answers_step
+      expect(page).to have_text("we'll give you a call")
     end
 
     it "returning, no teacher reference number, overseas and no telephone" do
@@ -49,6 +50,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       submit_select_step("Brazil", :overseas_country)
       submit_overseas_telephone_step
       submit_review_answers_step
+      expect(page).to have_text("we'll give you a call")
     end
 
     it "not returning, has degree, primary, has gcses, in the UK and telephone" do
@@ -67,6 +69,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       )
       submit_uk_telephone_step("123456789")
       submit_review_answers_step
+      expect(page).to have_text("we'll give you a call")
     end
 
     it "not returning, has degree, secodary, retaking gcses, overseas and no telephone" do
@@ -84,6 +87,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       submit_select_step("Canada", :overseas_country)
       submit_overseas_telephone_step
       submit_review_answers_step
+      expect(page).to have_text("we'll give you a call")
     end
 
     it "not returning, studying for degree (not final year), overseas and telephone" do
@@ -98,6 +102,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       submit_select_step("Barbados", :overseas_country)
       submit_overseas_telephone_step("123456789")
       submit_review_answers_step
+      expect(page).to have_text("we'll give you a call")
     end
 
     it "not returning, studying for degree (final year), overseas and telephone" do
@@ -116,6 +121,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       submit_select_step("Barbados", :overseas_country)
       submit_overseas_telephone_step("123456789")
       submit_review_answers_step
+      expect(page).to have_text("we'll give you a call")
     end
 
     it "not returning, equivalent degree, primary, has/retaking gcses, overseas" do
@@ -130,6 +136,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       )
       submit_uk_callback_step("123456789", "1:00pm to 1:30pm")
       submit_review_answers_step
+      expect(page).to have_text("we'll give you a call")
     end
 
     it "not returning, equivalent degree, secondary, has gcses, is in uk" do
@@ -144,6 +151,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       submit_overseas_time_zone_step("447584736574", "(GMT-04:00) Caracas")
       submit_select_step("9:00am to 9:30am", :overseas_callback)
       submit_review_answers_step
+      expect(page).to have_text("we'll give you a call")
     end
   end
 

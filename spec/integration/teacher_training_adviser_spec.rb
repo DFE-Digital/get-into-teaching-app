@@ -17,6 +17,7 @@ RSpec.describe "Sign up", :integration, :js, type: :feature do
   it "Full journey as a new candidate" do
     submit_personal_details(rand_first_name, rand_last_name, rand_email)
     complete_sign_up
+    expect(page).to have_text("we'll give you a call")
   end
 
   it "Full journey as an existing candidate" do
@@ -40,7 +41,5 @@ RSpec.describe "Sign up", :integration, :js, type: :feature do
     )
     submit_uk_callback_step("123456789")
     submit_review_answers_step
-
-    expect(page).to have_text("we'll give you a call")
   end
 end
