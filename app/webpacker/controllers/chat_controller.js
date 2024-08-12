@@ -2,7 +2,12 @@ import dayjs from 'dayjs';
 import { Controller } from '@hotwired/stimulus';
 
 export default class extends Controller {
-  static targets = ['online', 'offline', 'unavailable', 'chat'];
+  static targets = ['online', 'offline', 'unavailable', 'chat', 'container'];
+  static values = {
+    chatApiUrl: '/chat',
+    chatWindowUrl: '/chat',
+    refreshInterval: 20000,
+  };
 
   initialize() {
     const utc = require('dayjs/plugin/utc');
@@ -12,16 +17,24 @@ export default class extends Controller {
   }
 
   connect() {
+    this.newChatEnabled = this.containerTarget.dataset.enabled === 'true';
     this.unavailableTarget.classList.add('hidden');
 
-    if (this.isChatOnline()) {
-      this.onlineTarget.classList.remove('hidden');
+    if (this.newChatEnabled) {
+      this.setNewChatState();
+      if (this.hasRefreshIntervalValue) {
+        this.startRefreshing();
+      }
     } else {
-      this.offlineTarget.classList.remove('hidden');
+      this.toggleState(this.isOldChatOnline());
     }
   }
 
-  isChatOnline() {
+  disconnect() {
+    this.stopRefreshing();
+  }
+
+  isOldChatOnline() {
     const timeZone = 'Europe/London';
     const openTime = dayjs().set('hour', 8).set('minute', 30).tz(timeZone);
     const closeTime = dayjs().set('hour', 17).set('minute', 30).tz(timeZone);
@@ -31,13 +44,75 @@ export default class extends Controller {
     return !weekend && now >= openTime && now <= closeTime;
   }
 
+  setNewChatState() {
+    fetch(this.chatApiUrlValue, { headers: { Accept: 'application/json' } })
+      .then(
+        (response) => response.json(),
+        (result) => this.stopRefreshing(),
+      )
+      .then((data) => {
+        if (data) {
+          this.toggleState(data.available);
+        }
+      });
+  }
+
+  toggleState(online) {
+    if (online) {
+      // enable chat button
+      if (this.onlineTarget.classList.contains('hidden')) {
+        this.onlineTarget.classList.remove('hidden');
+      }
+      if (!this.offlineTarget.classList.contains('hidden')) {
+        this.offlineTarget.classList.add('hidden');
+      }
+    } else {
+      // disable chat button
+      if (!this.onlineTarget.classList.contains('hidden')) {
+        this.onlineTarget.classList.add('hidden');
+      }
+      if (this.offlineTarget.classList.contains('hidden')) {
+        this.offlineTarget.classList.remove('hidden');
+      }
+    }
+  }
+
+  startRefreshing() {
+    this.refreshTimer = setInterval(() => {
+      this.setNewChatState();
+    }, this.refreshIntervalValue);
+  }
+
+  stopRefreshing() {
+    if (this.refreshTimer) {
+      clearInterval(this.refreshTimer);
+    }
+  }
+
   start(e) {
     this.previousTarget = e.target;
     e.preventDefault();
-    this.loadChat();
+
+    if (this.newChatEnabled) {
+      this.loadNewChat();
+    } else {
+      this.loadOldChat();
+    }
   }
 
-  loadChat() {
+  loadNewChat() {
+    const windowFeatures = 'left=100,top=100,width=400,height=600';
+    const handle = window.open(
+      this.chatWindowUrlValue,
+      'chatWindow',
+      windowFeatures,
+    );
+    if (!handle) {
+      alert('Please enable pop-ups to open the chat window');
+    }
+  }
+
+  loadOldChat() {
     if (!this.zendeskScriptLoaded) {
       this.chatTarget.textContent = 'Starting chat...';
     }
