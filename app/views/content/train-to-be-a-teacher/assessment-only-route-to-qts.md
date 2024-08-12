@@ -367,7 +367,7 @@ provider_groups:
   South West:
     providers:
     - header: Bath Spa University
-      name: Darren McKay
+      name: Fiona Hunt
       email: assessmentonly@bathspa.ac.uk
     - header: Cornwall School Centred Initial Teacher Training (Cornwall SCITT)
       link: https://www.cornwallscitt.org/

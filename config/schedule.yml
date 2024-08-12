@@ -1,0 +1,4 @@
+send_entity_table_checks_to_bigquery:
+  cron: "30 0 * * *"  # Every day at 00:30.
+  class: "DfE::Analytics::EntityTableCheckJob"
+  queue: "dfe_analytics"

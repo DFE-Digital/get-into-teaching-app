@@ -1,4 +1,4 @@
 ---
-image: "static/images/content/hero-images/0001.jpg"
+image: "static/images/content/hero-images/0032.jpg"
 ---
 ## Featured content
