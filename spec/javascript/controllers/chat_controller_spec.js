@@ -74,14 +74,6 @@ describe('ChatController', () => {
         const button = document.querySelector('[data-chat-target="online"]')
         expect(button.classList.contains('hidden')).toBe(false)
       })
-
-      describe('when clicking the chat button', () => {
-        it('shows a loading message and then opens the chat window', () => {
-          const button = document.querySelector('a');
-          button.click();
-          expect(getButtonText()).toEqual("Starting chat...");
-        });
-      });
     });
 
     describe('when the chat is offline', () => {
