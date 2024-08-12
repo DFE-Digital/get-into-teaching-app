@@ -12,7 +12,7 @@ RSpec.feature "Chat", type: :feature do
   context "when new-chat is enabled" do
     let(:new_chat_enabled) { "1" }
 
-    context "when javascript is enabled", js: true do
+    context "when javascript is enabled", :js do
       context "when agents are available" do
         before do
           stub_request(:get, "http://api.example/")
@@ -71,7 +71,7 @@ RSpec.feature "Chat", type: :feature do
       travel_to(date.in_time_zone("London")) { example.run }
     end
 
-    context "when Javascript is enabled", js: true do
+    context "when Javascript is enabled", :js do
       context "when chat is online" do
         let(:date) { Time.zone.local(2021, 1, 1, 9) }
 
