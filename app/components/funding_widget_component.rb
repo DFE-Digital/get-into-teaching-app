@@ -21,7 +21,7 @@ class FundingWidgetComponent < ViewComponent::Base
   end
 
   def input_field_classes(field)
-    return "govuk-form-group--error form__field--error" if form.errors[field].any?
+    "govuk-form-group--error form__field--error" if form.errors[field].any?
   end
 
   def funding_results

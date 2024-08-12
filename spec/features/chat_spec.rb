@@ -7,7 +7,7 @@ RSpec.feature "Chat", type: :feature do
     travel_to(date.in_time_zone("London")) { example.run }
   end
 
-  context "when Javascript is enabled", js: true do
+  context "when Javascript is enabled", :js do
     context "when chat is online" do
       let(:date) { Time.zone.local(2021, 1, 1, 9) }
 

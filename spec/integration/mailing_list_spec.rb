@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Integration tests", :integration, type: :feature, js: true do
+RSpec.feature "Integration tests", :integration, :js, type: :feature do
   before { config_capybara }
 
   around do |example|
@@ -13,12 +13,14 @@ RSpec.feature "Integration tests", :integration, type: :feature, js: true do
     visit mailing_list_steps_path
     click_link "Accept all cookies"
     sign_up(rand_first_name, rand_last_name, rand_email)
+    expect(page).to have_text("you're signed up")
   end
 
   it "Sign up journey as a new candidate if not qualified" do
     visit mailing_list_steps_path
     click_link "Accept all cookies"
     sign_up_if_not_qualified(rand_first_name, rand_last_name, rand_another_email)
+    expect(page).to have_text("you're signed up")
   end
 
   it "Sign up journey as an existing candidate" do

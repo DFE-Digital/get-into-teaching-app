@@ -20,7 +20,7 @@ describe PostcodeValidator do
 
   context "with invalid full postcodes" do
     ["F00BAR", "123ABC", "TE57 ING"].each do |postcode|
-      context "checking '#{postcode}'" do
+      context "when checking '#{postcode}'" do
         let(:instance) { test_model.new(postcode: postcode) }
 
         it { is_expected.to include postcode: ["is invalid"] }
@@ -30,7 +30,7 @@ describe PostcodeValidator do
 
   context "with valid full postcodes" do
     ["M1 2WD", "TE57 1NG", ""].each do |postcode|
-      context "checking '#{postcode}'" do
+      context "when checking '#{postcode}'" do
         let(:instance) { test_model.new(postcode: postcode) }
 
         it { is_expected.not_to include :postcode }
@@ -40,7 +40,7 @@ describe PostcodeValidator do
 
   context "with valid outward only postcodes" do
     %w[ST6 M1 TE57].each do |postcode|
-      context "checking '#{postcode}'" do
+      context "when checking '#{postcode}'" do
         let(:instance) { test_model.new(postcode: postcode, accept_partial_postcode: true) }
 
         it { is_expected.not_to include :postcode }

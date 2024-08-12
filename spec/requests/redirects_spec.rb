@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Redirects", content: true, type: :request do
+describe "Redirects", :content, type: :request do
   before(:all) { @result = {} }
 
   let(:teaching_vacancies_url) { "https://teaching-vacancies.campaign.gov.uk/return-to-teaching/" }

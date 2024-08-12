@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Sign up", :integration, type: :feature, js: true do
+RSpec.describe "Sign up", :integration, :js, type: :feature do
   before do
     config_capybara
 
