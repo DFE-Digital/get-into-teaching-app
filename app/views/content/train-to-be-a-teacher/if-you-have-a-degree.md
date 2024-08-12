@@ -5,7 +5,7 @@ subcategory: Postgraduate teacher training
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:
-    Is teaching right for me? : "/life-as-a-teacher"
+    Explore life as a teacher : "/life-as-a-teacher"
     Who do you want to teach? : "/life-as-a-teacher/who-do-you-want-to-teach"
     What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"

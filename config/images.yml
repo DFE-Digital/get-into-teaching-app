@@ -449,12 +449,6 @@
 "static/images/content/landing/how-to-become-a-teacher-2.jpg":
   # A teacher looks over students sat around a table.
   alt: ""
-
-# is teaching right for me
-"static/images/content/life-as-a-teacher/fellowship.jpg":
-  alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
-"static/images/content/life-as-a-teacher/stories-zainab.jpg":
-  alt: "Zainab Kasmani, English teacher"
   
 # event
 "static/images/content/event-signup/event-regional-online-listing.jpg":

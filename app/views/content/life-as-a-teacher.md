@@ -1,6 +1,6 @@
 ---
 title: "Life as a teacher"
-description: Wondering whether teaching is the right career for your? Learn how rewarding life as a teacher can be, including pay, benefits, and career progression.
+description: Wondering if teaching is the right career for you? Learn how rewarding life as a teacher can be, including pay, benefits, and career progression. 
 content:
 image: "static/images/content/hero-images/0029.jpg"
 colour: "yellow"

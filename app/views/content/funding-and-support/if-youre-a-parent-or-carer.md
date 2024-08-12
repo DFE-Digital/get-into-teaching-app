@@ -9,7 +9,7 @@ related_content:
     Get support training to teach if you're changing career: "/life-as-a-teacher/if-you-want-to-change-career"
     Tuition fee and maintenance loans: "/funding-and-support/tuition-fee-and-maintenance-loans"
     Bursaries and scholarships: "/funding-and-support/scholarships-and-bursaries"
-    Is teaching right for me? : "/life-as-a-teacher"
+    Explore life as a teacher: "/life-as-a-teacher"
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.30
