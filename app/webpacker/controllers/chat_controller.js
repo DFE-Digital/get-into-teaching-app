@@ -102,9 +102,6 @@ export default class extends Controller {
 
   loadNewChat() {
     const windowFeatures = 'left=100,top=100,width=400,height=600';
-
-    this.chatTarget.textContent = 'Starting chat...';
-
     const handle = window.open(
       this.chatWindowUrlValue,
       'chatWindow',
