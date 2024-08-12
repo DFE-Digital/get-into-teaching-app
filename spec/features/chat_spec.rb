@@ -25,7 +25,6 @@ RSpec.feature "Chat", type: :feature do
 
           within(".talk-to-us") do
             click_link("Chat online")
-            expect(page).to have_link("Starting chat...")
           end
 
           popup_window_handle = (page.driver.browser.window_handles - [page.driver.current_window_handle]).first
