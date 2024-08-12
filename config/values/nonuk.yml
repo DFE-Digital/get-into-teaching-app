@@ -3,7 +3,7 @@ nonuk:
   internationalrelocationpayment:
     value: £10,000
     instalment: £5,000
-    salarythresholdfortaxonpayments: £50,270
+    thresholdfortaxonpayments: £50,270
 # Statement of comparability  
   statementofcomparabilitycost: £49.50 + VAT
 # Visa salary thresholds

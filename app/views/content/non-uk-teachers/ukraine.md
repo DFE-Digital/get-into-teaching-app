@@ -43,7 +43,7 @@ We can help if you’re interested in teaching children aged 5 to 18. If you'd l
 
 If you're coming to the UK from Ukraine, [check what you need to do before you travel and what to do after you arrive](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine).
 
-### Get an international relocation payment (IRP) worth up to £10,000
+### Get an international relocation payment (IRP) worth up to $nonuk_internationalrelocationpayment_value$
 
 If you are a teacher coming to England to teach languages or physics, you may be eligible for the IRP. [Learn more about the international relocation payment (IRP)](/non-uk-teachers/get-an-international-relocation-payment).
 
