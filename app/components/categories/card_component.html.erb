@@ -1,8 +1,27 @@
-<li class="category__nav-card">
-  <%= link_to(path, class: "link--black") do %>
-    <div class="category__nav-card--content">
-      <%= content_tag(heading_tag, title) %>
-      <%= tag.p(helpers.safe_html_format(description)) %>
-    </div>
-  <% end %>
-</li>
+<% if image? %>
+  <!-- This <li> element is dynamically generated within a parent template that includes the surrounding <ul>. -->
+  <!-- //NOSONAR --><li class="category__nav-card category__nav-card__with-image">
+    <%= link_to(path, class: "link--black") do %>
+      <div class="category__nav-card__wrapper">
+        <div class="category__nav-card__wrapper__col1">
+          <div class="category__nav-card--content">
+            <%= content_tag(heading_tag, title) %>
+            <%= tag.p(helpers.safe_html_format(description)) %>
+          </div>
+        </div>
+        <div class="category__nav-card__wrapper__col2">
+          <%= image_tag %>
+        </div>
+      </div>
+    <% end %>
+  </li>
+<% else %>
+  <!-- //NOSONAR --><li class="category__nav-card">
+    <%= link_to(path, class: "link--black") do %>
+      <div class="category__nav-card--content">
+        <%= content_tag(heading_tag, title) %>
+        <%= tag.p(helpers.safe_html_format(description)) %>
+      </div>
+    <% end %>
+  </li>
+<% end %>
