@@ -25,9 +25,9 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/returning-to-teaching", to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-teaching/")
+  get "/returning-to-teaching", to: redirect("https://teaching-vacancies.service.gov.uk/jobseeker-guides/return-to-teaching-in-england/return-to-teaching/")
 
-  "https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/".tap do |teaching_vacancies|
+  "https://teaching-vacancies.service.gov.uk/jobseeker-guides/return-to-teaching-in-england/return-to-england-after-teaching-overseas".tap do |teaching_vacancies|
     get "/non-uk-teachers/return-to-england-after-teaching-overseas",                         to: redirect(teaching_vacancies)
     get "/international-returners",                                                           to: redirect(teaching_vacancies)
     get "/explore-my-options/return-to-teaching/return-to-teaching-in-england-from-overseas", to: redirect(teaching_vacancies)
