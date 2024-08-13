@@ -173,7 +173,7 @@ You'll also be able to develop your career through the [national professional qu
 
 You may be eligible for the [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) or the [early career payment](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools). 
 
-You can only receive the [international relocation payment (IRP)](#get-an-international-relocation-payment-irp-worth-10000) once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
+You can only receive the [international relocation payment (IRP)](#get-an-international-relocation-payment-irp-worth-up-to-10000) once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
 
 ## Plan your move to England
 
