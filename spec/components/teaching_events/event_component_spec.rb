@@ -4,7 +4,7 @@ describe TeachingEvents::EventComponent, type: "component" do
   let(:event) { build(:event_api) }
 
   describe "methods" do
-    let(:subject) { described_class.new(event: event) }
+    subject { described_class.new(event: event) }
 
     describe "#get_into_teaching_event?" do
       context "when the event is a GIT event" do

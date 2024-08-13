@@ -17,7 +17,7 @@ AllCops:
     - spec/models/wizard/**/*  # Separate PR splits this out into gem
     - fetch_config.rb # auto-generated file to authenticate with Azure
 
-RSpec/Capybara/FeatureMethods:
+RSpec/Dialect:
   Enabled: false
 
 Lint/AmbiguousOperator:
@@ -33,6 +33,14 @@ Rails/LexicallyScopedActionFilter:
 Naming/MethodParameterName:
   Exclude:
     - 'app/components/arrow_component.rb'
+
+Naming/VariableNumber:
+  AllowedIdentifiers:
+    - fact1
+    - fact2
+    - quote1
+    - quote2
+    - quote3
 
 Rails/UnknownEnv:
   Environments:

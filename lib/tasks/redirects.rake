@@ -16,7 +16,7 @@ namespace :redirects do
   task :find_unused, %i[file threshold] => :environment do |_t, args|
     require "csv"
 
-    threshold = args[:threshold]&.to_i || 0
+    threshold = args[:threshold].to_i
     redirects = YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects")
     csv = File.read(args[:file])
     used_redirects = CSV.parse(csv, headers: true)

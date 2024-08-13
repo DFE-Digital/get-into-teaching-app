@@ -12,8 +12,8 @@ RSpec.describe SearchesController, type: :request do
 
         it { is_expected.to have_http_status :success }
         it { is_expected.to have_attributes media_type: "application/json" }
-        it { expect(json).to be_kind_of Array }
-        it { expect(json).to all be_kind_of Hash }
+        it { expect(json).to be_a Array }
+        it { expect(json).to all be_a Hash }
       end
 
       context "without search term" do

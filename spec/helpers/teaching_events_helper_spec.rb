@@ -101,7 +101,7 @@ describe TeachingEventsHelper, type: "helper" do
     end
 
     specify "returns nil when given an invalid id" do
-      expect(event_type_name(987_654_321)).to be nil
+      expect(event_type_name(987_654_321)).to be_nil
     end
 
     context "when overriding values" do

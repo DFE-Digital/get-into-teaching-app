@@ -10,7 +10,7 @@
   <div class="govuk-form-group">
     <%= f.button name: nil, class: "request-button" do %>
       Search
-      <%= "again" if @search.search&.present? %>
+      <%= "again" if @search.search.present? %>
       <%= fas_icon "search" %>
     <% end %>
   </div>

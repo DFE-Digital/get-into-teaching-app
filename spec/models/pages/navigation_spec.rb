@@ -147,7 +147,7 @@ RSpec.describe Pages::Navigation do
       end
 
       specify "title is nil and warning logged" do
-        expect(subject.title).to be(nil)
+        expect(subject.title).to be_nil
 
         expect(Rails.logger).to have_received(:warn).with(/has no title/)
       end
@@ -240,7 +240,7 @@ RSpec.describe Pages::Navigation do
       subject { described_class.new(nav, "/page-five", { title: "Five", rank: 5, menu: true }).children_without_subcategory.map(&:title) }
 
       it "returns a list of child pages without a subcategory" do
-        expect(subject).to match_array(["Page five: part 1"])
+        expect(subject).to contain_exactly("Page five: part 1")
       end
     end
 
@@ -250,7 +250,7 @@ RSpec.describe Pages::Navigation do
       subject { described_class.new(nav, "/page-five", { title: "Five", rank: 5, menu: true }).children_in_subcategory("category-2").map(&:title) }
 
       it "returns a list of child pages with the specified subcategory" do
-        expect(subject).to match_array(["Page five: part 3"])
+        expect(subject).to contain_exactly("Page five: part 3")
       end
     end
 

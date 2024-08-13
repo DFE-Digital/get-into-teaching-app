@@ -11,7 +11,10 @@ describe "ERB Implementation Check" do
     pathname = Pathname.new(filename).relative_path_from(Rails.root)
     it "does not have html errors in #{pathname}" do
       data = File.read(filename)
-      BetterHtml::BetterErb::ErubiImplementation.new(data).validate!
+
+      expect {
+        BetterHtml::BetterErb::ErubiImplementation.new(data).validate!
+      }.not_to raise_error
     end
   end
 end

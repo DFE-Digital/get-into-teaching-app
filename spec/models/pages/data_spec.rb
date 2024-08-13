@@ -18,6 +18,6 @@ RSpec.describe Pages::Data do
 
     before { allow(::Pages::Page).to receive(:featured).and_call_original }
 
-    it { is_expected.to be_kind_of ::Pages::Page }
+    it { is_expected.to be_a ::Pages::Page }
   end
 end

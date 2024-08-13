@@ -102,7 +102,7 @@ describe Healthcheck do
     context "with no configured connection" do
       before { allow(ENV).to receive(:[]).with("REDIS_URL").and_return nil }
 
-      it { is_expected.to be nil }
+      it { is_expected.to be_nil }
     end
   end
 
