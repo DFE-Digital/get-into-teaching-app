@@ -42,7 +42,7 @@ The providers offering teacher degree apprenticeships are:
 * Xavier Teach Southeast, in partnership with the University of Sussex
 
 ## Who’s eligible to apply for a teacher degree apprenticeship?
-Teacher degree apprenticeship will be open to anyone who would like to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
+Teacher degree apprenticeships will be open to anyone who would like to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
 
 To be eligible to apply for a teacher degree apprenticeship you’ll need the following qualifications:
 
