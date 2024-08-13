@@ -28,13 +28,13 @@ The teaching apprenticeship is a 4-year, full-time course that lets you train as
 
 The salary you’ll earn as a trainee will reflect the level of responsibility that’s suitable for each stage of your teaching apprenticeship course. You do not have to pay tuition fees but you will not be eligible for student finance.
 
-The teacher training providers confirmed so far will offer TDAs in maths, with other subjects likely to be offered too.
+The teacher training providers confirmed so far will offer TDAs in secondary maths, with other subjects likely to be offered too.
 
 The providers offering teacher degree apprenticeships are:
 
 * Nottingham Trent University
-* Staffordshire University, in partnership with the Stoke-on-Trent and Staffordshire Teacher Education Collective (SSTEC)
-* University College London (UCL)
+* Staffordshire University, in partnership with the Stoke-on-Trent and Staffordshire Teacher Education Collective
+* University College London
 * University of Brighton
 * University of Huddersfield
 * University of Nottingham
@@ -42,7 +42,7 @@ The providers offering teacher degree apprenticeships are:
 * Xavier Teach Southeast, in partnership with the University of Sussex
 
 ## Who’s eligible to apply for a teacher degree apprenticeship?
-Teacher degree apprenticeships will be available to people who are leaving school and those already working who are interested in becoming a teacher, including teaching assistants.
+Teacher degree apprenticeship will be open to anyone who would like to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
 
 To be eligible to apply for a teacher degree apprenticeship you’ll need the following qualifications:
 
