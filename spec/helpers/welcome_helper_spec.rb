@@ -122,7 +122,7 @@ RSpec.describe WelcomeHelper, type: :helper do
         allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id").and_return(physics_uuid)
       end
 
-      specify { is_expected.to eql("Physics") }
+      it { is_expected.to eql("Physics") }
     end
   end
 
@@ -133,13 +133,13 @@ RSpec.describe WelcomeHelper, type: :helper do
       include_context "with preferred teaching subject set in welcome_guide"
       subject { subject_teachers }
 
-      specify { is_expected.to eql("physics teachers") }
+      it { is_expected.to eql("physics teachers") }
     end
 
     context "when no subject is set" do
       subject { subject_teachers }
 
-      specify { is_expected.to eql("teachers") }
+      it { is_expected.to eql("teachers") }
     end
   end
 

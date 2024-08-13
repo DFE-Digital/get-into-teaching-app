@@ -17,7 +17,7 @@ backlink: "../../"
 inset_text:
   new-international-funding:
     text: |-
-      If you're a non-UK teacher interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth $nonuk_internationalrelocationpayment_value$</a>.
+      If you're a non-UK teacher interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth up to $nonuk_internationalrelocationpayment_value$</a>.
 keywords:
   - International
   - Overseas
@@ -50,9 +50,9 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 * to pass criminal and professional safeguarding checks (these will be organised by your employer)
 * [a visa or immigration status allowing you to work in the UK](/non-uk-teachers/visas-for-non-uk-teachers)
 
-## Get an international relocation payment (IRP) worth $nonuk_internationalrelocationpayment_value$
+## Get an international relocation payment (IRP) worth up to $nonuk_internationalrelocationpayment_value$
 
-If you're interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for a single payment of $nonuk_internationalrelocationpayment_value$ from the UK government. [Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
+If you're interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for up to $nonuk_internationalrelocationpayment_value$ from the UK government. [Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
 
 ## English qualified teacher status (QTS)
 
@@ -173,7 +173,7 @@ You'll also be able to develop your career through the [national professional qu
 
 You may be eligible for the [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) or the [early career payment](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools). 
 
-You can only receive the [international relocation payment (IRP)](#get-an-international-relocation-payment-irp-worth-10000) once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
+You can only receive the [international relocation payment (IRP)](#get-an-international-relocation-payment-irp-worth-up-to-10000) once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
 
 ## Plan your move to England
 

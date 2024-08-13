@@ -55,7 +55,7 @@ describe ApplicationHelper do
   end
 
   describe "#internal_referer" do
-    before { helper.request = instance_double("ActionDispatch::Request") }
+    before { helper.request = instance_double(ActionDispatch::Request) }
 
     it "returns nil if the referrer is not set" do
       allow(helper.request).to receive(:referer).and_return nil

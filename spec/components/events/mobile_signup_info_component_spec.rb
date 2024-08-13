@@ -2,7 +2,8 @@ require "rails_helper"
 
 describe Events::MobileSignupInfoComponent, type: "component" do
   let(:event) { build(:event_api) }
-  let(:subject) { described_class.new(event) }
+
+  subject { described_class.new(event) }
 
   describe "#date" do
     specify "formats the date in the GOV.UK style" do

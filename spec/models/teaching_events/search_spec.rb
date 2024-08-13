@@ -203,7 +203,7 @@ describe TeachingEvents::Search do
         expected_conditions: { type_ids: Crm::EventType.lookup_by_query_params(school_or_uni, git, online) },
       ),
     ].each do |query|
-      context "#{query.description} (#{query.input})" do
+      context "with #{query.description} (#{query.input})" do
         before { freeze_time }
 
         subject! { described_class.new(**query.input).results }

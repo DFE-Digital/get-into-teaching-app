@@ -1,3 +1,5 @@
+require "ostruct"
+
 module Feedback
   module Steps
     class Purpose < ::GITWizard::Step

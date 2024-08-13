@@ -104,7 +104,7 @@ describe ImageSizes do
       it { is_expected.not_to be_empty }
       it { expect(cache.keys).to all(start_with("/images/")) }
       it { expect(cache.values).to include(be_a(Array)) }
-      it { expect(cache.values).to all(be_a(Array).or(eq(nil))) }
+      it { expect(cache.values).to all(be_a(Array).or(be_nil)) }
     end
   end
 end

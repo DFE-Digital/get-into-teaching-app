@@ -108,8 +108,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         allow_any_instance_of(GetIntoTeachingApiClient::TeacherTrainingAdviserApi).to \
           receive(:sign_up_teacher_training_adviser_candidate).with(request)
 
-        allow(subject).to receive(:valid?).and_return(true)
-        allow(subject).to receive(:can_proceed?).and_return(true)
+        allow(subject).to receive_messages(valid?: true, can_proceed?: true)
 
         subject.complete!
       end

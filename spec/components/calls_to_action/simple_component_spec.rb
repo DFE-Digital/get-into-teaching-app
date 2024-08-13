@@ -68,7 +68,7 @@ RSpec.describe CallsToAction::SimpleComponent, type: :component do
 
     describe "utility classes" do
       %w[mobile tablet desktop].each do |size|
-        context "hiding on #{size}" do
+        context "when hiding on #{size}" do
           let(:display_arg_key) { "hide_on_#{size}".to_sym }
           let(:display_args) { { display_arg_key => true } }
           let(:component) { described_class.new(**kwargs.merge(display_args)) }

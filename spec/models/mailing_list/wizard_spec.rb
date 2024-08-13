@@ -109,6 +109,8 @@ describe MailingList::Wizard do
         allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
           receive(:add_mailing_list_member).with(request)
         subject.complete!
+
+        expect(request.welcome_guide_variant).to be_nil
       end
     end
   end

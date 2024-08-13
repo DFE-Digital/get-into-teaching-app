@@ -25,9 +25,9 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/returning-to-teaching", to: redirect("https://teaching-vacancies.campaign.gov.uk/return-to-teaching/")
+  get "/returning-to-teaching", to: redirect("https://teaching-vacancies.service.gov.uk/jobseeker-guides/return-to-teaching-in-england/return-to-teaching/")
 
-  "https://teaching-vacancies.campaign.gov.uk/return-to-england-after-teaching-overseas/".tap do |teaching_vacancies|
+  "https://teaching-vacancies.service.gov.uk/jobseeker-guides/return-to-teaching-in-england/return-to-england-after-teaching-overseas".tap do |teaching_vacancies|
     get "/non-uk-teachers/return-to-england-after-teaching-overseas",                         to: redirect(teaching_vacancies)
     get "/international-returners",                                                           to: redirect(teaching_vacancies)
     get "/explore-my-options/return-to-teaching/return-to-teaching-in-england-from-overseas", to: redirect(teaching_vacancies)
@@ -86,6 +86,8 @@ Rails.application.routes.draw do
   get "/welcome/email/subject/:subject/degree-status/:degree_status", to: "pages#welcome"
 
   resource :search, only: %i[show]
+
+  resource :chat, only: %i[show]
 
   resource "cookie_preference", only: %i[show]
   get "/cookie-policy", to: redirect("/cookies")

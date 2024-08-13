@@ -10,7 +10,7 @@ class StoredPage
   end
 end
 
-RSpec.feature "content pages check", type: :feature, content: true do
+RSpec.feature "content pages check", :content, type: :feature do
   include_context "with stubbed types api"
   include Values
 

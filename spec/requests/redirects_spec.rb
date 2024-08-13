@@ -1,9 +1,9 @@
 require "rails_helper"
 
-describe "Redirects", content: true, type: :request do
+describe "Redirects", :content, type: :request do
   before(:all) { @result = {} }
 
-  let(:teaching_vacancies_url) { "https://teaching-vacancies.campaign.gov.uk/return-to-teaching/" }
+  let(:teaching_vacancies_url) { "https://teaching-vacancies.service.gov.uk/jobseeker-guides/return-to-teaching-in-england/return-to-teaching/" }
   let(:query_string) { "#{expected_query_string}&page=5" }
   let(:expected_query_string) { "abc=def&ghi=jkl" }
   let(:valid_results) { [200, 301, 302] }

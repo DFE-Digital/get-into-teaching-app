@@ -30,7 +30,7 @@ describe TemplateHandlers::Markdown, type: :view do
     it { is_expected.to have_css("p", count: 3) }
     it { is_expected.to have_css('a[href="https://www.gov.uk"]', text: "link") }
 
-    it "will autolink urls" do
+    it "autolinks urls" do
       is_expected.to have_css \
         'a[href="https://www.gov.uk/autolink"]',
         text: "https://www.gov.uk/autolink"
@@ -79,17 +79,17 @@ describe TemplateHandlers::Markdown, type: :view do
 
     it { is_expected.to have_css "h1", text: "Page with frontmatter" }
 
-    it "will strip out the frontmatter from the rendered page" do
+    it "strips out the frontmatter from the rendered page" do
       is_expected.not_to match(/My frontmatter page/)
       is_expected.not_to match(/---/)
     end
 
-    it "will assign frontmatter to @frontmatter variable" do
+    it "assigns frontmatter to @frontmatter variable" do
       expect(frontmatter).to include "title" => "My frontmatter page"
       expect(frontmatter).to include "other" => "some value"
     end
 
-    it "will parse booleans" do
+    it "parses booleans" do
       expect(frontmatter).to include "front" => true
     end
   end
@@ -108,7 +108,7 @@ describe TemplateHandlers::Markdown, type: :view do
       render template: "test"
     end
 
-    it "won't overwrite existing frontmatter with no data" do
+    it "does not overwrite existing frontmatter with no data" do
       expect(view.instance_variable_get("@front_matter")).to eql(original_front_matter)
     end
   end
