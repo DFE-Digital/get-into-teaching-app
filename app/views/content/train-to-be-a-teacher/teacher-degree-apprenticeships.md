@@ -28,7 +28,7 @@ The teaching apprenticeship is a 4-year, full-time course that lets you train as
 
 The salary you’ll earn as a trainee will reflect the level of responsibility that’s suitable for each stage of your teaching apprenticeship course. You do not have to pay tuition fees but you will not be eligible for student finance.
 
-The [teacher training providers confirmed so far](https://www.gov.uk/government/publications/secondary-maths-teacher-degree-apprenticeship-funding-pilot-providers?) will offer TDAs in maths, with other subjects likely to be offered too.
+The teacher training providers confirmed so far will offer TDAs in maths, with other subjects likely to be offered too.
 
 The providers offering teacher degree apprenticeships are:
 
