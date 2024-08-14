@@ -1,0 +1,26 @@
+---
+title: Become a Chemistry teacher
+title_paragraph: |-
+  <p>
+  As a chemistry teacher, you'll spark curiosity and challenge young minds to explore the fundamental principles that govern our world. You'll inspire students to question, experiment, and discover, fuelling their passion for science.</p>
+  <p>
+  Tax-free bursaries of $bursaries_postgraduate_chemistry$ or scholarships of $scholarships_chemistry$ are available for eligible trainee chemistry teachers.</p>
+description: |-
+    Find out how to become a maths teacher, including what you'll be teaching and what funding is available to help you train.
+subcategory: What to teach
+navigation: 5.46
+navigation_title: Chemistry
+navigation_description: Find out how to become a maths teacher and show children the importance of maths in everything we do.
+layout: "layouts/minimal"
+colour: pastel yellow-yellow
+image: "static/images/content/hero-images/chemistry.jpg"
+keywords:
+  - maths
+  - teaching maths
+  - teacher training
+
+content:
+  - "content/life-as-a-teacher/chemistry/header"
+  - "content/life-as-a-teacher/chemistry/article"
+  - "content/life-as-a-teacher/chemistry/adviser-promo-chemistry"
+---
