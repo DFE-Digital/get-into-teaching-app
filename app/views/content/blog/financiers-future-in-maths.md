@@ -26,4 +26,4 @@ Having worked with adults all my life, I was used to dealing with people who are
 
 Of course, there are highs and lows in teaching, but the highs are immeasurable. You might have a child who starts the lesson not particularly focused because they're struggling with the subject. As you guide them and encourage them, their understanding increases and all of a sudden they've got their hand up to answer a question. That light-bulb moment really gives you a buzz.
 
-If you're thinking about a life in the classroom, explore [if teaching is right for you](/is-teaching-right-for-me).
+If you're thinking about a life in the classroom, discover [what teaching is really like](/life-as-a-teacher).

@@ -22,7 +22,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/is-teaching-right-for-me/maths/header"
-  - "content/is-teaching-right-for-me/maths/article"
-  - "content/is-teaching-right-for-me/maths/adviser-promo-maths"
+  - "content/life-as-a-teacher/maths/header"
+  - "content/life-as-a-teacher/maths/article"
+  - "content/life-as-a-teacher/maths/adviser-promo-maths"
 ---

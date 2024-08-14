@@ -62,7 +62,7 @@ Most disabled pupils and pupils with special educational needs learn in mainstre
 
 You can choose to apply for a teacher training course that specialises in SEND or you can gain the skills and experience as you train to teach.
 
-Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs).
+Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/life-as-a-teacher/teach-disabled-pupils-and-pupils-with-special-educational-needs).
 
 ## Teaching other stages
 
@@ -72,7 +72,7 @@ If you want to help young children under 5 years old to develop, you might consi
 
 Early years teachers play an essential role in children’s development up to the age of 5 and provide high-quality early education.
 
-Learn more about [the routes to become an early years teacher](/is-teaching-right-for-me/become-an-early-years-teacher).
+Learn more about [the routes to become an early years teacher](/life-as-a-teacher/become-an-early-years-teacher).
 
 ### Further education
 
@@ -84,4 +84,4 @@ There are three key areas:
 * academic courses on subjects like English and maths
 * basic skills courses covering literacy and numeracy. 
 
-Learn more about [teaching in further education](/is-teaching-right-for-me/become-a-further-education-teacher).
+Learn more about [teaching in further education](/life-as-a-teacher/become-a-further-education-teacher).

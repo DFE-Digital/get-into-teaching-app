@@ -7,10 +7,6 @@ description: |-
 date: "2021-06-08"
 image: false
 backlink: /
-related_content:
-    Career progression stories: "/blog/tag/career-progression"
-    Teacher pay and benefits : "/is-teaching-right-for-me/teacher-pay-and-benefits"
-    Attend an event : "/events"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-assessment-only
 navigation: 20.40

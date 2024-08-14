@@ -36,12 +36,12 @@ describe "Redirects", :content, type: :request do
 
   describe "path redirects" do
     {
-      "/life-as-a-teacher/some-old-page" => "/blog",
-      "/life-as-a-teacher/some-old-page/some-old-subpage" => "/blog",
       "/why-teach" => "/blog",
       "/why-teach/why-teach-subpage" => "/blog",
       "/content/stories" => "/blog",
       "/content/stories/subpage" => "/blog",
+      "/my-story-into-teaching" => "/blog",
+      "/my-story-into-teaching/subpage" => "/blog",
     }.each do |from, to|
       describe "'#{from}' redirects to '#{to}'" do
         subject { get(build_url(from, query_string)) }

@@ -6,7 +6,7 @@ description: |-
 related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Teach in England if you trained overseas : "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
-    Who do you want to teach? : "/is-teaching-right-for-me/who-do-you-want-to-teach"
+    Who do you want to teach? : "/life-as-a-teacher/who-do-you-want-to-teach"
 navigation: 20.70
 navigation_title: Ukrainian teachers and trainees coming to the UK
 navigation_description: Find information and advice for Ukrainian citizens seeking training places and teaching jobs in England.
@@ -162,7 +162,7 @@ For a short-term unpaid placement, you can [get school experience in a primary o
 
 ### Salaries and benefits
 
-Your [salary as a teacher](/is-teaching-right-for-me/teacher-pay-and-benefits) will depend on whether you have QTS, your level of experience, your school and your location.
+Your [salary as a teacher](/life-as-a-teacher/teacher-pay-and-benefits) will depend on whether you have QTS, your level of experience, your school and your location.
 
 
 

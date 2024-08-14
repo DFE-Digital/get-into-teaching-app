@@ -126,7 +126,7 @@ en:
         sub_head: "Computing - Secondary"
         funding: "Scholarships of %{scholarships_computing} and bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
         next_steps: |-
-          Find out more about <a href="/is-teaching-right-for-me/computing">how to become a computing teacher</a>.
+          Find out more about <a href="/life-as-a-teacher/computing">how to become a computing teacher</a>.
       dance:
         name: "Dance"
         group: "Secondary"
@@ -188,7 +188,7 @@ en:
         sub_head: "Maths - Secondary"
         funding: "Scholarships of %{scholarships_maths} and bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
         next_steps: |-
-          If you have a passion for maths, find out more about <a href="/subjects/maths">becoming a maths teacher</a>.
+          If you have a passion for maths, find out more about <a href="/life-as-a-teacher/maths">becoming a maths teacher</a>.
       music:
         name: "Music"
         group: "Secondary"
@@ -205,7 +205,7 @@ en:
         sub_head: "Physics - Secondary"
         funding: "Scholarships of %{scholarships_physics} and bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers (including non-UK citizens)."
         next_steps: |-
-          Learn more about <a href="/subjects/physics">how to become a physics teacher</a>.
+          Learn more about <a href="/life-as-a-teacher/physics">how to become a physics teacher</a>.
       psychology:
         name: "Psychology"
         group: "Secondary"
