@@ -564,7 +564,7 @@ To be eligible, you need (all of the following):
 
 Specific entry criteria may vary by teacher training provider. You should ask them about eligibility before you apply.
 
-### Are teaching assistants eligible?
+### If you're a teaching assistant
 
 If you've worked as a teaching assistant, it's unlikely you'll have the experience required for assessment only.
 
@@ -574,8 +574,8 @@ Talk to your provider about whether your experience makes you eligible for this 
 
 Or, find other ways you can [train to be a teacher](/train-to-be-a-teacher).
 
-### Are non-UK citizens eligible?
+### If you're based overseas or are a non-UK citizen
 
-If you’re a non-UK citizen, you should contact [training providers who assess international teachers](#group--non-uk).
+If you’re based overseas, you will need to contact a [non-UK assessment only provider](/train-to-be-a-teacher/assessment-only-route-to-qts#group--non-uk). You may also be interested in [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status). With iQTS, you can train where you live and work, with no need to visit the UK.
 
-None of the other UK regional or national providers can help with non-UK enquiries. Please do not contact them if you are not in the UK.
+If you’re a non-UK citizen based in the UK, contact one of the regional or national providers listed on this page.
