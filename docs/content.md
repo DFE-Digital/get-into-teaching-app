@@ -238,7 +238,7 @@ When adding an iFrame elemet as part of Markdown content or a HTML page we shoul
 
 ### Inset text
 
-If you need to call-out something important in an article and differentiate it from the surrounding text, you can use the inset text component. Specify the component in the frontmatter and then include it anywhere in the page:
+If you need to call out something important in a page and differentiate it from the surrounding text, you can use the inset text component. Specify the component in the frontmatter and then include it anywhere in the page:
 
 ```yaml
 ---
@@ -255,7 +255,20 @@ inset_text:
 $important-content$
 ```
 
-### Details expander
+Use this component for non-UK content when:  
+
+* it will be the only non-UK component on the page  
+* you need to call out a short amount of non-UK content  
+* you need to call out non-UK content within another component, for example the funding widget 
+
+If using this component for non-UK content: 
+
+* always use the purple colour (or purple-white on a grey background) 
+* the header must be ‘Non-UK citizens:’ 
+
+If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the details expander.  
+
+### Details expander for non-UK content
 
 You can use the details expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
 
