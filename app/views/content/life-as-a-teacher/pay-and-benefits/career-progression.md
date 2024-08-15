@@ -6,9 +6,6 @@ description: |-
   Teacher training advisers talk about teacher development and how you can progress a career in teaching.
 date: "2024-01-09"
 backlink: "../../"
-navigation: 5.15
-navigation_title: How can I move up the career ladder in teaching?
-navigation_description: Top tips from teacher training advisers on how you can progress a career in teaching.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:

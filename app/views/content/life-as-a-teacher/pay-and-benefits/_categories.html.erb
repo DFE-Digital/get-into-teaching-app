@@ -1,0 +1,28 @@
+<div class="row">
+  <section class="category col-space-m">
+    <section class="container category__cards main-section">
+      <nav class="category__nav-cards inset">
+        <ul>
+          <%= render Categories::CardComponent.new(heading_tag: "h3", card:
+            OpenStruct.new(
+              title: "How much do teachers get paid?",
+              description: "Find out the starting salary for a qualified teacher and how your pay could increase during your career.",
+              path: "/life-as-a-teacher/pay-and-benefits/teacher-pay-and-benefits"
+            )) %>
+          <%= render Categories::CardComponent.new(heading_tag: "h3", card:
+            OpenStruct.new(
+              title: "How can I move up the career ladder in teaching?",
+              description: "Top tips from teacher training advisers on how you can progress a career in teaching.",
+              path: "/life-as-a-teacher/pay-and-benefits/career-progression"
+            )) %>
+          <%= render Categories::CardComponent.new(heading_tag: "h3", card:
+            OpenStruct.new(
+              title: "What pension does a teacher get?",
+              description: "Learn more about the teachers' pension scheme which is one of the most generous in the country.",
+              path: "/life-as-a-teacher/pay-and-benefits/what-pension-does-a-teacher-get"
+            )) %>
+        </ul>
+      </nav>
+    </section>
+  </section>
+</div>
