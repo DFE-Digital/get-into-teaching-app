@@ -8,9 +8,8 @@ description: |-
   Find out about all the benefits that come with a career in teaching.
 navigation: 40.1
 layout: "layouts/minimal"
-talk_to_us: false
+talk_to_us: true
 content:
-  - content/help-and-support/header
+  - content/life-as-a-teacher/header
   - content/life-as-a-teacher/pay-and-benefits/categories
-  - content/help-and-support/talk-to-us
 ---
