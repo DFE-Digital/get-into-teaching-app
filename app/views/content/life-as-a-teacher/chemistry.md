@@ -1,5 +1,5 @@
 ---
-title: Become a Chemistry teacher
+title: Become a chemistry teacher
 title_paragraph: |-
   <p>
   As a chemistry teacher, you'll spark curiosity and challenge young minds to explore the fundamental principles that govern our world. You'll inspire students to question, experiment, and discover, fuelling their passion for science.</p>
