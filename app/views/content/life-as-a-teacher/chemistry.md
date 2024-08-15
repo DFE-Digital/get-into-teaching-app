@@ -8,7 +8,7 @@ title_paragraph: |-
 description: |-
     Find out how to become a chemistry teacher, including what you'll teach and what funding is available to help you train.
 subcategory: What to teach
-navigation: 5.46
+navigation: 5.42
 navigation_title: Chemistry
 navigation_description: Find out how to become a chemistry teacher and inspire students to fuel their passion for science.
 layout: "layouts/minimal"
