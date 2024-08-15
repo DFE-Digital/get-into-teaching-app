@@ -6,17 +6,17 @@ title_paragraph: |-
   <p>
   Tax-free bursaries of $bursaries_postgraduate_chemistry$ or scholarships of $scholarships_chemistry$ are available for eligible trainee chemistry teachers.</p>
 description: |-
-    Find out how to become a maths teacher, including what you'll be teaching and what funding is available to help you train.
+    Find out how to become a chemistry teacher, including what you'll teach and what funding is available to help you train.
 subcategory: What to teach
 navigation: 5.46
 navigation_title: Chemistry
-navigation_description: Find out how to become a maths teacher and show children the importance of maths in everything we do.
+navigation_description: Find out how to become a chemistry teacher and inspire students to fuel their passion for science.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/chemistry.jpg"
 keywords:
-  - maths
-  - teaching maths
+  - chemistry
+  - teaching chemistry
   - teacher training
 
 content:
