@@ -9,6 +9,8 @@ description: |-
 navigation: 40.1
 layout: "layouts/minimal"
 talk_to_us: true
+backlink: "../"
+breadcrumb: true
 content:
   - content/life-as-a-teacher/header
   - content/life-as-a-teacher/pay-and-benefits/categories
