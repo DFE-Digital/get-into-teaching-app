@@ -1,0 +1,82 @@
+<div class="row inset">
+  <section class="col col-720 col-space-l-top">
+    <h2 class="heading--box-blue">Why teach art and design</h2>
+    <div class="inset">
+    <p>Teaching art and design gives students the technical skills needed to express their ideas in a wide variety of materials and media. You'll help students develop their own skills by encouraging them to critically review their work. Your students will develop an appreciation of art and design, and of the diverse ideas and perspectives of others.</p>
+    </div>
+  </section>
+
+  <section class="col col-720">
+    <%= render Content::QuoteComponent.new(
+    text: "People may not realise how much potential there is for progression in teaching. They think they go into the world of the classroom and that's it. Lots of teachers have added responsibilities they enjoy doing and find fulfilling.",
+    name: "Chris Farr, teacher training adviser",
+    large: true
+  ) %>
+  </section>
+
+  <section class="col col-720 col-space-l-top">
+    <h2 class="heading--box-blue">Shape your students' futures</h2>
+    <div class="inset">
+      <p>Teaching art and design opens the door for your students to pursue exciting careers in fields as diverse as fashion and textiles, to illustration and video game design.</p>
+      <p>By thinking creatively, your students could make significant contributions to these diverse and impactful areas.</p>
+      <p>Your students will learn more from you that you might think.  As their teacher, you will guide your students though the skills they need to show their understanding of art and design. You will teach them valuable life skills such as critical thinking, adaptability and communication.</p>
+    </div>
+  </section>
+
+  <section class="col col-720">
+    <h2 class="heading--box-blue">What you'll teach</h2>
+    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-art-and-design-programmes-of-study/national-curriculum-in-england-art-and-design-programmes-of-study">national curriculum for art and design</a>.</p>
+    <p>Themes you'll cover when you teach 11 to 14 year olds (key stage 3) include:</p>
+    <ul>
+      <li>observation and recording techniques</li>
+      <li>media exploration</li>
+      <li>proficiency in material handling</li>
+      <li>creativity and idea development</li>
+      <li>contextual understanding</li>
+    </ul>
+  </section>
+
+  <section class="col col-720">
+    <p>In key stage 4 (14 to 16 years olds) you will help pupils demonstrate skills in:</p>
+    <ul>
+      <li>composition and design</li>
+      <li>making appropriate use of colour, line, tone, texture, shape and form, in response to an idea, theme or brief</li>
+      <li>explain and critically review their work throughout</li>
+  </section>
+
+   <section class="col col-space-m col-720">
+    <h2 class="heading--box-blue">Start your journey into teaching art and design</h2>
+    <h3>Check your qualifications</h3>
+    <p>To train to teach in secondary schools in England, you’ll need:</p>
+    <ul>
+      <li>GCSEs at grade 4 (C) or above in English and maths</li>
+      <li>a bachelor’s degree in any subject</li>
+    </ul>
+    <p>Art and design teacher training courses have had successful applications from candidates with a range of degrees, including...</p>
+    <p>Find out more about what <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">qualifications you need to train to teach</a>.</p>
+    <%= render Content::ExpanderComponent.new(
+      title: "check your qualifications",
+      text: "If you have qualifications from outside the UK, you'll need to show that they meet the standards set for teacher training in England.",
+      link_title: "You can get help comparing English and international qualifications.",
+      link_url: "/non-uk-teachers/non-uk-qualifications",
+    ) %>
+  </section>
+
+  <section class="col col-space-m col-720">
+    <h3>Fund your teacher training</h3>
+    <p><a href="/funding-and-support/scholarships-and-bursaries">Tax-free bursaries of <%= v :bursaries_postgraduate_artanddesign %> are available for eligible trainee art and design teachers.</p>
+    <p>You can get a bursary alongside a tuition fee loan and maintenance loan.</p>
+    <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
+    <ul>
+      <li>a parent or carer</li>
+      <li>disabled</li>
+    </ul>
+    <%= render Content::ExpanderComponent.new(
+      title: "funding your training",
+      text: "If you do not have <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for funding.",
+      link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
+      link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
+    ) %>
+  </section>
+
+</div>
