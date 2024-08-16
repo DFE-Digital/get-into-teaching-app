@@ -57,11 +57,11 @@ To be eligible for a scholarship, you’ll need at least one of the following:
 * a master’s degree
 * a PhD
 
-If you achieved a 2:2 in your degree you may be awarded a scholarship if you have enough relevant experience.
+If you achieved a 2:2 in your degree, you may still be eligible. You would need to show you have enough relevant experience and subject knowledge. 
 
-Scholarships are provided by charitable organisations. They set their own eligibility requirements and application deadlines. 
+As scholarships are awarded by independent organisations, they set their own assessment requirements and application deadlines.
 
-They offer more than just financial benefits, including mentoring, events and classroom resources.
+They offer more than just financial benefits. For example, they can provide professional body membership, subject-specific support, mentoring, events and classroom resources. 
 
 #### How scholarships are paid
 
