@@ -1,5 +1,4 @@
 .category {
-  background-color: $white;
   margin-bottom: 3.5em;
 
   &__hero {
@@ -53,10 +52,14 @@
     margin-bottom: 0;
     border-bottom: 4px solid $grey-light;
 
+    &__white {
+      background: $white;
+    }
+
     &__with-image {
       grid-column: 1 / -1;
 
-      a.link--black {
+      a.link--black, a.link--pink {
         padding: 0;
       }
     }
@@ -132,6 +135,10 @@
 
     &:hover {
       border-color: $blue-dark;
+
+      &:has(a.link--pink) {
+        border-color: $pink;
+      }
 
       h2,
       h3 {
