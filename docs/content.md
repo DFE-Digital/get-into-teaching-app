@@ -238,7 +238,7 @@ When adding an iFrame elemet as part of Markdown content or a HTML page we shoul
 
 ### Inset text
 
-If you need to call out something important in a page and differentiate it from the surrounding text, you can use the inset text component. Specify the component in the frontmatter and then include it anywhere in the page:
+If you need to call out something important in a page and differentiate it from the surrounding text, you can use the inset text component. Specify the component in the frontmatter and then include it anywhere in the page. We use the purple colour for non-UK content and the purple-white colour for non-UK content on a grey background.
 
 ```yaml
 ---
@@ -247,13 +247,23 @@ inset_text:
     header: Optional title header
     title: Optional title
     text: Text that can contain <a href="#">links</a>
-    color: yellow|grey|purple
+    color: yellow|grey|purple|purple-white
 ---
 
 # My page
 
 $important-content$
 ```
+If you need to insert an inset text component in an erb file:
+
+```yaml
+<%= render Content::InsetTextComponent.new(
+  header: "Non-UK citizens:",
+  text: "You can call us on <a href=\"tel:+448003892500\">+44 800 389 2500</a>, or use the free live chat service. Calls will be charged at your country's standard rate.",
+  color: "purple-white"
+  ) %>
+```
+
 
 Use this component for non-UK content when:  
 
@@ -287,6 +297,17 @@ expander:
     header: Non-UK citizens
     expanded: true
 ---
+```
+If you need to insert an expander into an erb file:
+
+```yaml
+<%= render Content::ExpanderComponent.new(
+    title: "check your qualifications",
+    text: "If you have qualifications from outside the UK, you'll need to show that they meet the standards set for teacher training in England.",
+    link_title: "You can get help comparing English and international qualifications.",
+    link_url: "/non-uk-teachers/non-uk-qualifications",
+  ) %>
+```
 
 # My page
 
