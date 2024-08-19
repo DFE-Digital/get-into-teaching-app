@@ -46,7 +46,7 @@ Different training providers may also have specific criteria. For example, some 
 
 Some training providers may consider candidates with pending GCSEs. If you do not have the GCSEs required, they may also ask you to sit an equivalency test or to offer other evidence to show your ability.
 
-Talk to your teacher training provider or [find a course](https://www.find-postgraduate-teacher-training.service.gov.uk/) to check what your provider will accept.
+Talk to your teacher training provider or [find a course](https://find-teacher-training-courses.service.gov.uk/) to check what your provider will accept.
 
 $check-your-qualifications$
 
