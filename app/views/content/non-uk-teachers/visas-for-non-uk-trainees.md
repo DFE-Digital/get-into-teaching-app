@@ -5,7 +5,7 @@ description: |-
   Learn more about types of visa non-UK citizens will need to study or work in England, and how to apply.
 related_content:
     Train to teach in England as an international student: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
-    Teacher pay and benefits in England : "/life-as-a-teacher/teacher-pay-and-benefits"
+    Teacher pay and benefits in England : "/life-as-a-teacher/pay-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 navigation: 20.30

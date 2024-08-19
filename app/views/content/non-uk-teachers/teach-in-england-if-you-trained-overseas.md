@@ -5,7 +5,7 @@ description: |-
   Teach in England if you're a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
 related_content:
     Career progression stories: "/blog/tag/career-progression"
-    Teacher pay and benefits in England : "/life-as-a-teacher/teacher-pay-and-benefits"
+    Teacher pay and benefits in England : "/life-as-a-teacher/pay-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 navigation: 20.40
@@ -35,7 +35,7 @@ $new-international-funding$
 
 Teach in England and you’ll benefit from working in a world-class education system.
 
-You’ll earn a [competitive salary](/life-as-a-teacher/teacher-pay-and-benefits), get supported in your professional development and have varied job opportunities.
+You’ll earn a [competitive salary](/life-as-a-teacher/pay-and-benefits/teacher-pay), get supported in your professional development and have varied job opportunities.
 
 You could also consider teaching in [Wales](https://www.ewc.wales/site/index.php/en/registration/index.php?option=com_content&view=article&id=12&Itemid=170&lang=en), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 

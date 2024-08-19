@@ -10,7 +10,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
-    Teacher pay and benefits : "/life-as-a-teacher/teacher-pay-and-benefits"
+    Teacher pay and benefits : "/life-as-a-teacher/pay-and-benefits"
     Bursaries and scholarships for training to teach : "/funding-and-support/scholarships-and-bursaries"
 
 keywords:

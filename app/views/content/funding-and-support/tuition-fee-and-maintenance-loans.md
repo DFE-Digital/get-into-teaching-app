@@ -7,7 +7,7 @@ description: |-
 related_content:
     Who do you want to teach?: "/life-as-a-teacher/who-do-you-want-to-teach"
     Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-    Teacher pay and benefits: "/life-as-a-teacher/teacher-pay-and-benefits"
+    Teacher pay and benefits: "/life-as-a-teacher/pay-and-benefits"
 promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 calls_to_action:

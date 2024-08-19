@@ -5,7 +5,7 @@ description: |-
 related_content:
     Teach in England if you trained outside the UK: " /non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Career progression stories: "/blog/tag/career-progression"
-    Teacher pay and benefits in England : "/life-as-a-teacher/teacher-pay-and-benefits"
+    Teacher pay and benefits in England : "/life-as-a-teacher/pay-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 date: "2021-05-27"

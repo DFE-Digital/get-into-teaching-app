@@ -5,7 +5,7 @@ description: |-
   Learn more about bursaries and scholarships for non-UK teacher trainees.
 related_content:
     Career progression stories: "/blog/tag/career-progression"
-    Teacher pay and benefits in England : "/life-as-a-teacher/teacher-pay-and-benefits"
+    Teacher pay and benefits in England : "/life-as-a-teacher/pay-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 navigation: 20.20
