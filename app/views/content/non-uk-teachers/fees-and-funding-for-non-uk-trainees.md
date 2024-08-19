@@ -107,7 +107,7 @@ Non-UK citizens can apply for a [salaried teacher training course](/funding-and-
 
 You will also need a [visa or immigration status](/non-uk-teachers/visas-for-non-uk-trainees#skilled-worker-visa) allowing you to work in the UK.
 
-[Find teacher training courses](https://find-teacher-training-courses.service.gov.uk/).
+[Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
 ## Bursaries and scholarships for non-UK trainee languages and physics teachers
 
