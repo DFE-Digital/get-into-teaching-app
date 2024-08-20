@@ -46,7 +46,7 @@ There could be a number of reasons your application was unsuccessful:
 
 ### The course is full
 
-Unfortunately, popular courses do fill up quickly. You can [search for other courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) with a different provider if the one you applied for is now full.
+Unfortunately, popular courses do fill up quickly. You can [search for other courses](https://find-teacher-training-courses.service.gov.uk/) with a different provider if the one you applied for is now full.
 
 ### You do not have the GCSEs at minimum grade 4 (C), or equivalent
 
@@ -54,7 +54,7 @@ To train to teach in primary and secondary schools in England, you’ll need:
 
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 
-You could [find another course](https://www.gov.uk/find-postgraduate-teacher-training-courses) with a training provider that will accept an equivalency test. You can also take your GCSE exams at any age if you do not have them or you can retake them to improve your grades. You can do this through a [GCSE training provider](https://nationalcareers.service.gov.uk/find-a-course/search). Make sure when you visit the website, you search for GCSE courses.
+You could [find another course](https://find-teacher-training-courses.service.gov.uk/) with a training provider that will accept an equivalency test. You can also take your GCSE exams at any age if you do not have them or you can retake them to improve your grades. You can do this through a [GCSE training provider](https://nationalcareers.service.gov.uk/find-a-course/search). Make sure when you visit the website, you search for GCSE courses.
 
 ### You do not have a bachelor’s degree or equivalent
 
