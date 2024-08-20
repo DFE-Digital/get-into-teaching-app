@@ -2,7 +2,7 @@
 title: Become an art and design teacher
 title_paragraph: |-
   <p>
-  Teaching art and design opens up a world of creativity for students.  When students create, they learn to take risks, embrace mistakes, and persevere to bring their ideas to life.</p>
+  Teaching art and design opens up a world of creativity.  When pupils create, they learn to take risks, embrace mistakes, and persevere to bring their ideas to life.</p>
   <p>
   Tax-free bursaries of $bursaries_postgraduate_artanddesign$ are available for eligible trainee art and design teachers.</p>
 description: |-
@@ -10,7 +10,7 @@ description: |-
 subcategory: What to teach
 navigation: 5.42
 navigation_title: Art and design
-navigation_description: Find out how to become an art and design teacher and inspire student to fuel their passion for art and design.
+navigation_description: Find out how to become an art and design teacher and inspire children to fuel their passion for creativity.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/maths.jpg"
