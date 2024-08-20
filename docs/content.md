@@ -297,13 +297,14 @@ expander:
     header: Non-UK citizens
     expanded: true
 ---
-```
+
 
 # My page
 
 $check-your-qualifications$
 
 $another-example$
+
 ```
 If you need to insert an expander into an erb file:
 
