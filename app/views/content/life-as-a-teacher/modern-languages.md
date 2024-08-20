@@ -2,7 +2,7 @@
 title: Become a modern languages teacher
 title_paragraph: |-
   <p>
-  By teaching students modern languages, you can help them gain a greater appreciation and understanding of the world. As they learn French, Spanish or German, your students will get a unique insight into the countries that speak these languages.</p>
+  By teaching pupils modern languages, you can help them gain a greater appreciation and understanding of the world. As they learn French, Spanish or German, your pupils will get a unique insight into the countries that speak these languages.</p>
   <p>
   Tax-free bursaries of $bursaries_postgraduate_languagesother$ or scholarships of $scholarships_languagesfrenchgermanspanish$ are available for eligible trainee modern languages teachers.</p>
 description: |-
