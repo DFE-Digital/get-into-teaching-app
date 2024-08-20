@@ -155,7 +155,7 @@ The subject you apply to teach must usually be the same as, or closely related t
 
 You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
 
-To find the right training for you, you can also filter courses by:
+To find the right training for you, you can filter courses by:
 
 * location
 * teaching subject
