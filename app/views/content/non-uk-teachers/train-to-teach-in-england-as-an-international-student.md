@@ -151,11 +151,11 @@ Salaried courses include:
 
 The subject you apply to teach must usually be the same as, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.)
 
-### Finding the right course for you and getting help
+### Finding the right course for you
 
-[Find postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) lists courses leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
+You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
 
-You can also search courses by:
+To find the right training for you, you can also filter courses by:
 
 * location
 * teaching subject
@@ -205,9 +205,9 @@ If you do not have settled or pre-settled status under the EU Settlement Scheme,
 
 If you are resident in the UK, you may already have a visa or immigration status allowing you to work – for example, a graduate visa. If you need to apply for another visa – for example, a skilled worker visa – you'll need to do this after you've been given a place on a postgraduate teaching apprenticeship.
 
-[Find postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) lists fee-paying and salaried training courses, including postgraduate teaching apprenticeships, leading to qualified teacher status.
+You can explore all the available training options online. 
 
-<a class="button" href="https://find-teacher-training-courses.service.gov.uk/">Find and apply for teacher training courses<span> in England</span></a>
+<a class="button" href="https://find-teacher-training-courses.service.gov.uk/">Find teacher training courses<span> in England</span></a>
 
 ## Apply for your visa
 

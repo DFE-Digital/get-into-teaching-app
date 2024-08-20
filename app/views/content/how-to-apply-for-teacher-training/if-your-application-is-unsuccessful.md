@@ -46,7 +46,7 @@ There could be a number of reasons your application was unsuccessful:
 
 ### The course is full
 
-Unfortunately, popular courses do fill up quickly. You can [search for other courses](https://find-teacher-training-courses.service.gov.uk/) with a different provider if the one you applied for is now full.
+Unfortunately, popular courses do fill up quickly. You can [find another course](https://find-teacher-training-courses.service.gov.uk/) with a different provider if the one you applied for is now full.
 
 ### You do not have the GCSEs at minimum grade 4 (C), or equivalent
 

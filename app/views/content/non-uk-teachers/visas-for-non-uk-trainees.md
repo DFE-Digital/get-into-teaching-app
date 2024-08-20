@@ -52,7 +52,7 @@ Some teacher training courses in England are salaried – this means you [work a
 
 ### To apply for your visa, follow these steps 
 
-Visit [Find postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and filter your search results by visa sponsorship. 
+[Search for postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and filter your results by visa sponsorship. 
 
 Email your chosen provider to check they can sponsor you, then [apply for your teacher training course](/how-to-apply-for-teacher-training). 
 
@@ -99,7 +99,6 @@ If you are training to teach physics or languages, you may be eligible for a [bu
 ## Check your status
 
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
-
 
 You will not need a visa to train to teach in the UK if you:
 
