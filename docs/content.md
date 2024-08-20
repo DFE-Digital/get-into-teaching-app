@@ -298,6 +298,13 @@ expander:
     expanded: true
 ---
 ```
+
+# My page
+
+$check-your-qualifications$
+
+$another-example$
+```
 If you need to insert an expander into an erb file:
 
 ```yaml
@@ -307,14 +314,6 @@ If you need to insert an expander into an erb file:
     link_title: "You can get help comparing English and international qualifications.",
     link_url: "/non-uk-teachers/non-uk-qualifications",
   ) %>
-```
-
-# My page
-
-$check-your-qualifications$
-
-$another-example$
-
 ```
 
 ### YouTube video
