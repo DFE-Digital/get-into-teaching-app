@@ -2,7 +2,7 @@
 title: "Pay and benefits"
 heading: "Pay and benefits"
 category: Life as a teacher
-image: "static/images/content/hero-images/0025.jpg"
+image: "static/images/content/hero-images/0029.jpg"
 title_paragraph: Find out about all the benefits that come with a career in teaching. 
 description: |-
   Find out about all the benefits that come with a career in teaching, including pay, pensions and career progression.

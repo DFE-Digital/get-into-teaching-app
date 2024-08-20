@@ -5,7 +5,7 @@ description: |-
   Teach in England if you're a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
 related_content:
     Career progression stories: "/blog/tag/career-progression"
-    Teacher pay and benefits in England : "/life-as-a-teacher/pay-and-benefits"
+    Teacher pay England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 navigation: 20.40

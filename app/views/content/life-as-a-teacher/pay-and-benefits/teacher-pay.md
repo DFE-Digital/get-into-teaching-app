@@ -1,5 +1,5 @@
 ---
-title: "Teacher pay and salaries"
+title: "Teacher pay"
 heading: "Teacher pay and salaries"
 description: |-
   All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
