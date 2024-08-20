@@ -16,7 +16,7 @@ layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/homepage/directory4.jpg"
 keywords:
-  - langauges
+  - languages
   - modern languages
   - teaching languages
   - teaching modern languages
