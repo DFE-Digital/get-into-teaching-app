@@ -4,7 +4,7 @@ description: Free advice and support on how to become a teacher. Get the latest 
 content:
     - content/landing/mailing-list-3/header
     - content/landing/mailing-list-3/mailing-list
-image: "static/images/content/hero-images/0027.jpg"
+image: "static/images/content/hero-images/english.jpg"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true
