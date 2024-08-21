@@ -11,6 +11,7 @@
   hero_bg_color: yellow
   title_bg_color: white
   mailing_list: true
+  breadcrumbs: false
   content:
     - content/home/purple-box
     - content/home/calls-to-action
