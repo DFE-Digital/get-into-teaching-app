@@ -15,7 +15,7 @@ RSpec.feature "Searching for funding options", type: :feature do
 
     scenario "The submitted subject is pre-selected" do
       page.select("Biology", from: "funding_widget_subject")
-      find("button", text: "Continue").click
+      find("button", text: "Check funding").click
 
       expect(page).to have_select("funding_widget_subject", selected: "Biology")
     end
