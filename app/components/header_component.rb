@@ -4,7 +4,7 @@ class HeaderComponent < ViewComponent::Base
   def initialize(front_matter = {})
     super
 
-    @breadcrumbs = front_matter["breadcrumbs"] != false
+    @breadcrumbs = front_matter.with_indifferent_access["breadcrumbs"] != false
     @front_matter = front_matter
   end
 end
