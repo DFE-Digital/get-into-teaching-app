@@ -365,6 +365,11 @@ provider_groups:
     - header: Bath Spa University
       name: Fiona Hunt
       email: assessmentonly@bathspa.ac.uk
+    - header: Bournemouth Bay Teacher Training Partnership
+      link: https://bournemouthbay-partnership.com/  
+      name: James Mosley
+      telephone: 01202 662038
+      email: j.mosley@poolehigh.poole.sch.uk
     - header: Cornwall School Centred Initial Teacher Training (Cornwall SCITT)
       link: https://www.cornwallscitt.org/
       name: Lex Blake
@@ -390,10 +395,6 @@ provider_groups:
       name: Carrie McMillan
       telephone: 01392 686165
       email: swtt@westexe.devon.sch.uk
-    - header: Wessex Schools Training Partnership
-      name: Claire Porter
-      telephone: 01202 662038
-      email: WSTP@poolehigh.poole.sch.uk
   West Midlands:
     providers:
     - header: Birmingham City University
