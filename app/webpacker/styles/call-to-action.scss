@@ -10,6 +10,11 @@
 
   @include mq($until: tablet) {
     flex-direction: column;
+    &--simple {
+      picture {
+        display: none;
+      }
+    }
   }
 
   &__icon {
