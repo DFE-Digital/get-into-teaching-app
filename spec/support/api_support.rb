@@ -1,6 +1,3 @@
-shared_context "with stubbed types api" do
-end
-
 shared_context "with stubbed candidate create access token api" do
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
