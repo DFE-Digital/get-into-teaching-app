@@ -52,9 +52,9 @@ You may be eligible for a [bursary of $bursaries_undergraduate$](https://www.gov
 
 You may also be eligible if you do an opt-in QTS course in secondary computing, languages, mathematics or physics. This is where you start a standard undergraduate degree but then opt-in to initial teacher training to get QTS.
 
-The amount you receive depends on the year that you start your QTS course. You do not get a bursary in every year of an undergraduate course. Depending on the type of course you do, you may get the bursary in your final year or final two years.
+The amount you receive depends on the year that you start your QTS course. You do not get a bursary in every year of an undergraduate course. Depending on the type of course you do, you may get the bursary in your final year or final 2 years.
 
-#### Undergraduate bursary if you're former military personnel
+### Undergraduate bursary if you're former military personnel
 
 You may be eligible for a $bursaries_veteran_total$ tax-free undergraduate bursary for veterans if you’re:
 
