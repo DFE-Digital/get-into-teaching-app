@@ -370,6 +370,7 @@ provider_groups:
       name: Fiona Hunt
       email: assessmentonly@bathspa.ac.uk
     - header: Bournemouth Bay Teacher Training Partnership
+      link: https://bournemouthbay-partnership.com/  
       name: James Mosley
       telephone: 01202 662038
       email: j.mosley@poolehigh.poole.sch.uk
