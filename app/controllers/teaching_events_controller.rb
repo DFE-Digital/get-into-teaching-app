@@ -23,7 +23,7 @@ class TeachingEventsController < ApplicationController
     @front_matter = {
       title: "Find an event near you or online",
       description: "Find out more about getting into teaching at a free event where you can get all your questions answered by teachers, advisers and training providers.",
-      breadcrumbs: false
+      breadcrumbs: false,
     }.with_indifferent_access
 
     setup_results
