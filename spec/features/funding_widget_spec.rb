@@ -8,7 +8,7 @@ RSpec.feature "Searching for funding options", type: :feature do
   context "when javascript is disabled" do
     scenario "Submits the form when clicking the 'Continue' button" do
       page.select("Biology", from: "funding_widget_subject")
-      find("button", text: "Continue").click
+      find("button", text: "Check funding").click
 
       expect(page).to have_css "h3", text: "Biology - Secondary"
     end
