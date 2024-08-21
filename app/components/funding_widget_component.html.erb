@@ -1,7 +1,6 @@
-<div class="call-to-action call-to-action--funding-widget">
-  <div class="call-to-action__content">
+<div class="call-to-action">
+  <%= render CallsToAction::SimpleComponent.new(icon: "icon-money") do %>
     <h2 class="call-to-action__heading">What funding could I get for teacher training?</h2>
-
     <div class="call-to-action__text">
       <div class="call-to-action__form">
         <%= form_with(model: form, url: path, method: :get, local: true, html: { data: { "controller": "funding-widget", "funding-widget-target": 'form'}}) do |f| %>
@@ -61,5 +60,5 @@
         <% end %>
       <% end %>
     </div>
-  </div>
+  <% end %>
 </div>
