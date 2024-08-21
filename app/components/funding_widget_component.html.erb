@@ -19,7 +19,7 @@
             <%= f.select :subject, grouped_options_for_select(grouped_options, form.subject), { prompt: true }, { class: "govuk-select", aria: { describedby: "funding_widget_subject_label" }} %>
           <% end %>
           <div class="actions">
-            <%= f.button 'Continue', type: 'submit', class: 'button' %>
+            <%= f.button 'Check funding', type: 'submit', class: 'button' %>
           </div>
         <% end %>
       </div>
@@ -29,7 +29,7 @@
           <div class="call-to-action__text">
             <h3><%= sub_head %></h3>
             <div>
-              <p>For this option, a scholarship or bursary is not available. You can still get a <a href="/funding-and-support/tuition-fee-and-maintenance-loans">tuition fee and maintenance loan</a> if you're eligible.</p>
+              <p>Scholarships or bursaries are not available for primary school teacher training. You can still get a <a href="/funding-and-support/tuition-fee-and-maintenance-loans">tuition fee and maintenance loan</a> if you're eligible.</p>
               <p>You might be able to get extra funding support <a href="/funding-and-support/if-youre-a-parent-or-carer">if you're a parent or carer</a> or <a href="/funding-and-support/if-youre-disabled">if you're disabled</a>.</p>
               <%= render Content::InsetTextComponent.new(
                 header: "Non-UK citizens:",

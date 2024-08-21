@@ -47,7 +47,7 @@ en:
   funding_widget:
     subjects:
       primary:
-        name: "Primary"
+        name: "Any primary subject"
         group: "Primary"
         sub_head: "Primary"
         funding: ""
@@ -65,7 +65,7 @@ en:
         name: "Business studies"
         group: "Secondary"
         sub_head: "Business - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       chemistry:
         name: "Chemistry"
         group: "Secondary"
@@ -75,7 +75,7 @@ en:
         name: "Citizenship"
         group: "Secondary"
         sub_head: "Citizenship - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       classics:
         name: "Classics"
         group: "Secondary"
@@ -89,7 +89,7 @@ en:
         name: "Communication and media studies"
         group: "Secondary"
         sub_head: "Communication and media studies - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       computing:
         name: "Computing"
         group: "Secondary"
@@ -101,7 +101,7 @@ en:
         name: "Dance"
         group: "Secondary"
         sub_head: "Dance - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       design_and_technology:
         name: "Design and technology"
         group: "Secondary"
@@ -111,12 +111,12 @@ en:
         name: "Drama"
         group: "Secondary"
         sub_head: "Drama - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       economics:
         name: "Economics"
         group: "Secondary"
         sub_head: "Economics - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       english:
         name: "English"
         group: "Secondary"
@@ -126,7 +126,7 @@ en:
         name: "English as a second or other language"
         group: "Secondary"
         sub_head: "English as a second or other language - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       geography:
         name: "Geography"
         group: "Secondary"
@@ -136,20 +136,20 @@ en:
         name: "Health and social care"
         group: "Secondary"
         sub_head: "Health and social care - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       history:
         name: "History"
         group: "Secondary"
         sub_head: "History - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       languages:
         name: "Languages (including ancient languages)"
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
         funding: |-
-          Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers.
+          Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers (including non-UK citizens).
 
-          Bursaries of %{bursaries_postgraduate_languagesother} are available for all trainee language teachers, including ancient languages.
+          Bursaries of %{bursaries_postgraduate_languagesother} are available for all trainee language teachers (including non-UK citizens). These bursaries include ancient languages.
       maths:
         name: "Maths"
         group: "Secondary"
@@ -166,7 +166,7 @@ en:
         name: "Physical education"
         group: "Secondary"
         sub_head: "Physical education - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       physics:
         name: "Physics"
         group: "Secondary"
@@ -178,7 +178,7 @@ en:
         name: "Psychology"
         group: "Secondary"
         sub_head: "Psychology - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       religious_group:
         name: "Religious education"
         group: "Secondary"
@@ -188,12 +188,12 @@ en:
         name: "Science"
         group: "Secondary"
         sub_head: "Science - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       social_sciences:
         name: "Social sciences"
         group: "Secondary"
         sub_head: "Social sciences - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
 
   event_types:
     222750012:
