@@ -118,7 +118,7 @@ Knowing which frontmatter values are available for a page is not always obvious,
 
 ### Breadcrumbs
 
-Breadcrumbs are included by default on most layouts. You can chose to optionally disable breadcrumbs by setting the following in the front matter:
+Breadcrumbs are included by default on most layouts with the exception of registration layouts. You can chose to optionally disable breadcrumbs by setting the following in the front matter:
 
 ```yaml
 ---

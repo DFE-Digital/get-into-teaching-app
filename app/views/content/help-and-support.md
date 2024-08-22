@@ -8,7 +8,6 @@ description: |-
 navigation: 40
 layout: "layouts/minimal"
 talk_to_us: false
-breadcrumbs: false
 content:
   - content/help-and-support/header
   - content/help-and-support/talk-to-us
