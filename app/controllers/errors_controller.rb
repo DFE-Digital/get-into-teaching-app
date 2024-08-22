@@ -34,7 +34,7 @@ class ErrorsController < ApplicationController
     end
   end
 
-  private
+private
 
   def set_breadcrumbs
     breadcrumb params[:action].humanize, request.path
