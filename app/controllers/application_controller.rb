@@ -103,6 +103,8 @@ private
       return render status: :invalid_server_error, body: nil
     end
 
+    breadcrumb status_code_symbol.to_s.humanize, request.path
+
     respond_to do |format|
       format.html do
         render \

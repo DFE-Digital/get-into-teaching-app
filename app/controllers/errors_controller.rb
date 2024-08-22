@@ -1,5 +1,6 @@
 class ErrorsController < ApplicationController
   layout "application"
+  before_action :set_breadcrumbs
 
   def not_found
     respond_to do |format|
@@ -31,5 +32,11 @@ class ErrorsController < ApplicationController
       format.json { render json: { error: "Unprocessable entity" }, status: :unprocessable_entity }
       format.all { render status: :unprocessable_entity, body: nil }
     end
+  end
+
+  private
+
+  def set_breadcrumbs
+    breadcrumb params[:action].humanize, request.path
   end
 end

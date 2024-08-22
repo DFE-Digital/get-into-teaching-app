@@ -64,6 +64,8 @@ class TeachingEventsController < ApplicationController
       description: "Find out what happens at a Get Into Teaching event and book your place, whether you’re ready to start your career in teaching or just curious.",
     }.with_indifferent_access
 
+    breadcrumb @front_matter[:title], request.path
+
     render layout: "minimal"
   end
 
