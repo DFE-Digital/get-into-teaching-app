@@ -7,6 +7,7 @@ date: "2021-06-24"
 backlink: "../../"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+    - "content/life-as-a-teacher/directory"
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"

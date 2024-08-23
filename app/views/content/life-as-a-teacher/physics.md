@@ -23,5 +23,5 @@ keywords:
 content:
   - "content/life-as-a-teacher/physics/header"
   - "content/life-as-a-teacher/physics/article"
-  - "content/life-as-a-teacher/physics/adviser-promo-physics"
+  - "content/life-as-a-teacher/directory"
 ---

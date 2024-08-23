@@ -489,4 +489,14 @@
 "static/images/content/subjects/rotna-roy.jpeg":
   alt: "Rotna, maths teacher"
 
+# life as a teacher directory
+"static/images/content/directory/directory1.jpg":
+  alt: "a teacher standing at the front of the class"
+
+"static/images/content/directory/directory2.jpg":
+  alt: "a teacher standing in front of a group of students"
+
+"static/images/content/directory/directory3.jpg":
+  alt: "a group of three teachers walking down a corridoor"
+
 

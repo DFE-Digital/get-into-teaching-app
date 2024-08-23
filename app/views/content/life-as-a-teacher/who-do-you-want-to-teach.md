@@ -9,6 +9,7 @@ navigation_title: Which age group should I teach?
 navigation_description: Explore the different ages and stages of teaching and decide which is right for you.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-who-do-you-want-to-teach
+    - content/life-as-a-teacher/directory
 ---
 
 It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. You might need specific training or qualifications in some areas. This page explains more about the different options.

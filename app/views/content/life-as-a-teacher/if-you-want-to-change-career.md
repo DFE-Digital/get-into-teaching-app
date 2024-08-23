@@ -12,6 +12,7 @@ related_content:
     Fund your training if you're a parent or carer: "/funding-and-support/if-youre-a-parent-or-carer"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-career-changers
+    - content/life-as-a-teacher/directory
 navigation: 5.25
 navigation_title: How do I change to a career in teaching?
 navigation_description: Use your experience to inspire students and bring your skills and expertise to the classroom.

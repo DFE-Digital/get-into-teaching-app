@@ -10,5 +10,6 @@ navigation_path: "/life-as-a-teacher"
 content:
   - content/life-as-a-teacher/header
   - content/life-as-a-teacher/categories
+  - content/life-as-a-teacher/directory
 talk_to_us: true
 ---

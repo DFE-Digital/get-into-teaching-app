@@ -8,6 +8,7 @@ date: "2024-01-09"
 backlink: "../../"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+    - content/life-as-a-teacher/directory
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"

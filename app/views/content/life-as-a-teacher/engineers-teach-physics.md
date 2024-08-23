@@ -26,5 +26,6 @@ keywords:
 content:
   - "content/life-as-a-teacher/engineers-teach-physics/header"
   - "content/life-as-a-teacher/engineers-teach-physics/article"
+  - "content/life-as-a-teacher/directory"
 ---
 

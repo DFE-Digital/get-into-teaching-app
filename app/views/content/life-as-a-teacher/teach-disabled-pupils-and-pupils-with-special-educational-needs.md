@@ -11,7 +11,7 @@ navigation_title: How can I teach children with special educational needs?
 navigation_description: Find out more about teaching pupils with special educational needs and disabilities.
 article_classes: ['longform']
 promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-send
+    - content/life-as-a-teacher/directory
 keywords:
   - SEND
   - disabled

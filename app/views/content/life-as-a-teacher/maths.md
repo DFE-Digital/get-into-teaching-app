@@ -24,5 +24,5 @@ keywords:
 content:
   - "content/life-as-a-teacher/maths/header"
   - "content/life-as-a-teacher/maths/article"
-  - "content/life-as-a-teacher/maths/adviser-promo-maths"
+  - "content/life-as-a-teacher/directory"
 ---

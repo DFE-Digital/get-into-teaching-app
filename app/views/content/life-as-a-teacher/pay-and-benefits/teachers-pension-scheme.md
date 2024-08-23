@@ -8,6 +8,7 @@ date: "2022-11-29"
 image: false
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+    - "content/life-as-a-teacher/directory"
 related_content:
     Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     Steps to become a teacher : "/steps-to-become-a-teacher"

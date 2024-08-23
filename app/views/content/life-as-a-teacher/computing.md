@@ -25,5 +25,5 @@ keywords:
 content:
   - "content/life-as-a-teacher/computing/header"
   - "content/life-as-a-teacher/computing/article"
-  - "content/life-as-a-teacher/computing/adviser-promo-computing"
+  - "content/life-as-a-teacher/directory"
 ---
