@@ -15,3 +15,16 @@
     </section>
   </section>
 </div>
+
+<%= main_tag(class: "category") do %>
+  <% grouped_categories(@page.path).each do |title, pages| %>
+    <section class="container category__cards main-section">
+      <%= tag.h2(title, id: title.parameterize, class: "heading--box-blue") %>
+      <%= tag.nav(aria: { label: "#{title} category" }, class: "category__nav-cards inset") do %>
+        <ul class="inset">
+          <%= render(Categories::CardComponent.with_collection(pages, heading_tag: "h3")) %>
+        </ul>
+      <% end %>
+    </section>
+  <% end %>
+<% end %>

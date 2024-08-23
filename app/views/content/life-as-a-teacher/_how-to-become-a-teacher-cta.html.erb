@@ -1,13 +1,5 @@
 <div class="row">
   <section class="container">
-    <%= render Content::PurpleBoxComponent.new(
-      heading: "How to become a teacher",
-      text: "Find out which qualifications you need, what funding you can get and how to train to teach.",
-      cta: {
-        text: "Find your route into teaching",
-        path: "/steps-to-become-a-teacher",
-      },
-      image: image_pack_tag("static/images/steps-graphic-black.png", **image_alt_attribs_for_text("")),
-    ) %>
+    <%= render "content/home/purple-box" %>
   </section>
 </div>
