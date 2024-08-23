@@ -24,8 +24,6 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Hero](#hero)
 	* [Values](#values)
 4. [Creating a subject page](#creating-a-subject-page)
-	* [Images](#images)
-	* [Footers](#footers)  
 5. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
@@ -281,6 +279,7 @@ If using this component for non-UK content:
 * the header must be ‘Non-UK citizens:’ 
 
 If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the details expander.  
+
 
 ### Details expander for non-UK content
 
