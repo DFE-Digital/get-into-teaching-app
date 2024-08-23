@@ -47,9 +47,9 @@ en:
   funding_widget:
     subjects:
       primary:
-        name: "Primary"
+        name: "Primary (including specialisms)"
         group: "Primary"
-        sub_head: "Primary (including specialisms)"
+        sub_head: "Primary"
         funding: ""
       art_and_design:
         name: "Art and design"
