@@ -9,7 +9,7 @@ This documentation aims to be a reference for content editors that want to make 
 3. [Content Editing Tips/Info](#content-editing-tips-info)
 	* [Headings](#headings)
 	* [Frontmatter](#frontmatter)
-    * [Breadcrumbs](#breadcrumbs)
+	* [Breadcrumbs](#breadcrumbs)
 	* [Links](#links)
 	* [SEO](#seo)
 	* [Prevent Indexing](#prevent-indexing)
