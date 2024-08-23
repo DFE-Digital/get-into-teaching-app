@@ -73,7 +73,7 @@ You will not need to pay tax or National Insurance on scholarship payments.
 
 ### How to apply for a scholarship
 
-You need to apply directly to the scholarship provider via their website. They will confirm if you meet their eligibility requirements. Each scholarship provider sets their own application deadline, which you can find on their website:
+You need to apply directly to the scholarship provider. Each provider sets their own application deadline and will confirm if you meet their eligibility requirements. You can find about how to apply, deadlines and more details about each scholarship on the scholarship providers' websites:
 
 * [the Royal Society of Chemistry](https://www.rsc.org/prizes-funding/funding/find-funding/teacher-training-scholarships/) (chemistry)
 * [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
