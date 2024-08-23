@@ -47,7 +47,7 @@ en:
   funding_widget:
     subjects:
       primary:
-        name: "Primary (including specialisms)"
+        name: "Primary (all subjects)"
         group: "Primary"
         sub_head: "Primary"
         funding: ""
