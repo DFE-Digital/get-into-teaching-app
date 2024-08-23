@@ -489,4 +489,8 @@
 "static/images/content/subjects/rotna-roy.jpeg":
   alt: "Rotna, maths teacher"
 
-
+# case studies
+"static/images/content/case-studies/abigail.jpg":
+  alt: "Maths teacher Abigail Beeley in front of a maths display board."
+  variants:
+    - "static/images/content/blog/thumbnails/abigail-beeley.jpg"
