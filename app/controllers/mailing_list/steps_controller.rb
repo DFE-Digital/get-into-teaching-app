@@ -20,7 +20,7 @@ module MailingList
 
       @first_name = wizard_store[:first_name]
       @degree_status_id = wizard_store[:degree_status_id]
-      @degree_status_key = Crm::OptionSet.lookup_by_value(:degree_status, @degree_status_id)
+      @degree_status_key = Crm::OptionSet.lookup_by_value(:degree_status, @degree_status_id) if @degree_status_id
     end
 
   protected
