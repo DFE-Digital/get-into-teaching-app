@@ -1,5 +1,12 @@
 ---
 # hero images
+"static/images/content/hero-images/chemistry-crop.jpg":
+  # A teacher talking to students
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/chemistry-crop--mobile.jpg"
+    - "static/images/content/hero-images/chemistry-crop--tablet.jpg"
+
 "static/images/content/hero-images/teacher.jpg":
   # A teacher talking to students
   alt: ""
