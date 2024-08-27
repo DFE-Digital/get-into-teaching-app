@@ -106,4 +106,8 @@ variable "sidekiq_replicas" {
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)
   postgres_ssl_mode = var.enable_postgres_ssl ? "require" : "disable"
+
+  gcp_project = "get-into-teaching"
+  gcp_region = "europe-west2"
+  gcp_dataset_name = replace("${var.service_short}_events_${local.environment}_spike", "-", "_")
 }

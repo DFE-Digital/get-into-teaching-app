@@ -54,6 +54,6 @@ provider "statuscake" {
 }
 
 provider "google" {
-  project     = "get-into-teaching"
-  region      = "europe-west2"
+  project     = local.gcp_project
+  region      = local.gcp_region
 }
