@@ -4,7 +4,7 @@ module Content
 
     include ContentHelper
 
-    def initialize(colour:, image:, title:, title_paragraph: nil)
+    def initialize(colour:, title:, image: nil, title_paragraph: nil)
       super
       @colour = colour
       @image = image

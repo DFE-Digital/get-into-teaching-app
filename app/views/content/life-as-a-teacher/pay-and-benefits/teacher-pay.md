@@ -1,14 +1,10 @@
 ---
-title: "Teacher pay and benefits"
-heading: "Teacher pay and benefits"
-subcategory: Pay and benefits
+title: "Teacher pay"
+heading: "Teacher pay"
 description: |-
   All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 date: "2021-06-24"
 backlink: "../../"
-navigation: 5.10
-navigation_title: How much do teachers get paid?
-navigation_description: Find out the starting salary for a qualified teacher and how your pay could increase during your career.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
@@ -123,7 +119,7 @@ Their role is wide ranging, but includes leading and motivating teachers, and en
 | Outer London                             | $salaries_headteacher_outerlondonmin$ | $salaries_headteacher_outerlondonmax$ |
 | Inner London                             | $salaries_headteacher_innerlondonmin$ | $salaries_headteacher_innerlondonmax$ |
 
-Find out more about [how to move up the career ladder in teaching](/life-as-a-teacher/career-progression).
+Find out more about [how to move up the career ladder in teaching](/life-as-a-teacher/pay-and-benefits/career-progression).
 
 ## If you do not have qualified teacher status (QTS)
 
@@ -162,4 +158,4 @@ It is a 'defined benefit' pension and is:
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
-You also get other insurance benefits too. Find out more about the [teachers' pension scheme](/life-as-a-teacher/what-pension-does-a-teacher-get).
+You also get other insurance benefits too. Find out more about the [teachers' pension scheme](/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme).
