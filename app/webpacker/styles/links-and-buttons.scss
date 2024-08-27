@@ -36,7 +36,7 @@
     box-decoration-break: clone;
     padding: .5rem;
     background: $backgroundColor;
-    box-shadow: 0rem 0 0 $backgroundColor, -0rem 0 0 $backgroundColor;
+    box-shadow: 0 0 0 $backgroundColor, -0 0 0 $backgroundColor;
   }
 }
 
@@ -119,7 +119,7 @@ ol.primary > li {
   }
 }
 
-.link--black {
+.link--pink {
   @include highlight-text($pink, $black);
 
   &::after {
