@@ -1,8 +1,6 @@
 require "rails_helper"
 
 RSpec.feature "Searching for teaching events", type: :feature do
-  include_context "with stubbed types api"
-
   let(:event_count) { 5 }
   let(:events) { build_list(:event_api, event_count) }
 

@@ -43,11 +43,13 @@ class PagesController < ApplicationController
                         GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
                       end
 
-    render template: "pages/privacy_policy"
+    breadcrumb @page_title, request.path
   end
 
   def cookies
-    render template: "pages/cookies", layout: "disclaimer"
+    breadcrumb "Cookies Policy", request.path
+
+    render layout: "disclaimer"
   end
 
   def show

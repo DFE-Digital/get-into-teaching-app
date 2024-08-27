@@ -1,5 +1,6 @@
 class SearchesController < ApplicationController
   before_action :set_page_title, :noindex
+  before_action :set_breadcrumbs
 
   def show
     @search = Search.new(search_params)
@@ -14,6 +15,10 @@ private
 
   def set_page_title
     @page_title = "Search Get Into Teaching"
+  end
+
+  def set_breadcrumbs
+    breadcrumb @page_title, request.path
   end
 
   def search_params

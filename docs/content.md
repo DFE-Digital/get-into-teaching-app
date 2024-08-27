@@ -9,6 +9,7 @@ This documentation aims to be a reference for content editors that want to make 
 3. [Content Editing Tips/Info](#content-editing-tips-info)
 	* [Headings](#headings)
 	* [Frontmatter](#frontmatter)
+	* [Breadcrumbs](#breadcrumbs)
 	* [Links](#links)
 	* [SEO](#seo)
 	* [Prevent Indexing](#prevent-indexing)
@@ -114,6 +115,16 @@ nested:
 ```
 
 Knowing which frontmatter values are available for a page is not always obvious, but the best method is to look at a similar page and copy the frontmatter from there (or look at the page examples in this document).
+
+### Breadcrumbs
+
+Breadcrumbs are included by default on most layouts with the exception of registration layouts. You can chose to optionally disable breadcrumbs by setting the following in the front matter:
+
+```yaml
+---
+breadcrumbs: false
+---
+```
 
 ### Links
 

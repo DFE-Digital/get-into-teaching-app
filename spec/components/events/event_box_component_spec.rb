@@ -1,7 +1,6 @@
 require "rails_helper"
 
 describe Events::EventBoxComponent, type: "component" do
-  include_context "with stubbed types api"
   subject! { render_inline(described_class.new(event)) }
 
   let(:event) { build(:event_api) }

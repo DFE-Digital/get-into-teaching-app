@@ -9,4 +9,5 @@ image: "static/images/content/hero-images/cake.png"
 layout: "layouts/minimal"
 colour: pink-yellow
 noindex: true
+breadcrumbs: false
 ---
