@@ -13,6 +13,10 @@ terraform {
       source  = "StatusCakeDev/statuscake"
       version = "2.2.2"
     }
+    google = {
+      source = "hashicorp/google"
+      version = "6.0.1"
+    }
   }
   backend "azurerm" {
     container_name = "terraform-state"
@@ -47,4 +51,9 @@ provider "kubernetes" {
 
 provider "statuscake" {
   api_token = module.infrastructure_secrets.map.SC-PASSWORD
+}
+
+provider "google" {
+  project     = "get-into-teaching"
+  region      = "europe-west2"
 }
