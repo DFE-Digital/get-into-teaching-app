@@ -1,0 +1,30 @@
+<div class="row">
+  <section class="category col-space-m">
+    <section class="container category__cards main-section">
+      <nav class="category__nav-cards">
+        <ul>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Pay and benefits",
+              description: "Find out the starting salary for a qualified teacher and how your pay could increase during your career.",
+              path: "/life-as-a-teacher/pay-and-benefits",
+              image: "static/images/content/hero-images/teacher.jpg"
+            )) %>
+        </ul>
+      </nav>
+    </section>
+  </section>
+</div>
+
+<%= main_tag(class: "category") do %>
+  <% grouped_categories(@page.path).each do |title, pages| %>
+    <section class="container category__cards main-section">
+      <%= tag.h2(title, id: title.parameterize, class: "heading--box-blue") %>
+      <%= tag.nav(aria: { label: "#{title} category" }, class: "category__nav-cards inset") do %>
+        <ul class="inset">
+          <%= render(Categories::CardComponent.with_collection(pages, heading_tag: "h3")) %>
+        </ul>
+      <% end %>
+    </section>
+  <% end %>
+<% end %>

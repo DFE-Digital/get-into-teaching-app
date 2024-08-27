@@ -1,7 +1,6 @@
 require "rails_helper"
 
 describe EventStepsController, type: :request do
-  include_context "with stubbed types api"
   include_context "with stubbed candidate create access token api"
   include_context "with stubbed event add attendee api"
 

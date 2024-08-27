@@ -7,9 +7,10 @@ content:
     - content/landing/grow/mailing_list
     - content/landing/grow/content
     - content/landing/grow/promo
-image: "static/images/content/hero-images/0027.jpg"
+image: "static/images/content/hero-images/english.jpg"
 layout: "layouts/minimal"
 colour: pink-blue
 talk_to_us: false
 noindex: true
+breadcrumbs: false
 ---

@@ -6,7 +6,7 @@ description: |-
    Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.
 related_content:
     Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-    Teacher pay and benefits: "/life-as-a-teacher/teacher-pay-and-benefits"
+    Teacher pay: "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     What qualifications do you need to be a teacher? : "/train-to-be-a-teacher/qualifications-you-need-to-teach"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course

@@ -12,4 +12,5 @@ colour: "pink-blue"
 layout: "layouts/minimal"
 talk_to_us: false
 noindex: true
+breadcrumbs: false
 ---

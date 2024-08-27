@@ -1,18 +1,15 @@
 ---
-title: "About the teachers' pension scheme"
-heading: "About the teachers' pension scheme"
+title: "Teachers' pension scheme"
+heading: "Teachers' pension scheme"
 subcategory: Pay and benefits
 description: |-
-  The teachers' pension is one of the most generous in the country. Learn more about the benefits of the teachers' pension scheme.
+  The teachers' pension scheme is one of the most generous in the country. Learn more about the benefits of the teachers' pension scheme.
 date: "2022-11-29"
 image: false
-navigation: 5.20
-navigation_title: What pension does a teacher get?
-navigation_description: Learn more about the teachers' pension scheme which is one of the most generous in the country.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
-    Teacher pay and benefits : "/life-as-a-teacher/teacher-pay-and-benefits"
+    Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     Steps to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"

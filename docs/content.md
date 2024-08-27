@@ -9,6 +9,7 @@ This documentation aims to be a reference for content editors that want to make 
 3. [Content Editing Tips/Info](#content-editing-tips-info)
 	* [Headings](#headings)
 	* [Frontmatter](#frontmatter)
+	* [Breadcrumbs](#breadcrumbs)
 	* [Links](#links)
 	* [SEO](#seo)
 	* [Prevent Indexing](#prevent-indexing)
@@ -114,6 +115,16 @@ nested:
 ```
 
 Knowing which frontmatter values are available for a page is not always obvious, but the best method is to look at a similar page and copy the frontmatter from there (or look at the page examples in this document).
+
+### Breadcrumbs
+
+Breadcrumbs are included by default on most layouts with the exception of registration layouts. You can chose to optionally disable breadcrumbs by setting the following in the front matter:
+
+```yaml
+---
+breadcrumbs: false
+---
+```
 
 ### Links
 
@@ -238,7 +249,7 @@ When adding an iFrame elemet as part of Markdown content or a HTML page we shoul
 
 ### Inset text
 
-If you need to call-out something important in an article and differentiate it from the surrounding text, you can use the inset text component. Specify the component in the frontmatter and then include it anywhere in the page:
+If you need to call out something important in a page and differentiate it from the surrounding text, you can use the inset text component. Specify the component in the frontmatter and then include it anywhere in the page. We use the purple colour for non-UK content and the purple-white colour for non-UK content on a grey background.
 
 ```yaml
 ---
@@ -247,15 +258,38 @@ inset_text:
     header: Optional title header
     title: Optional title
     text: Text that can contain <a href="#">links</a>
-    color: yellow|grey|purple
+    color: yellow|grey|purple|purple-white
 ---
 
 # My page
 
 $important-content$
 ```
+If you need to insert an inset text component in an erb file:
 
-### Details expander
+```yaml
+<%= render Content::InsetTextComponent.new(
+  header: "Non-UK citizens:",
+  text: "You can call us on <a href=\"tel:+448003892500\">+44 800 389 2500</a>, or use the free live chat service. Calls will be charged at your country's standard rate.",
+  color: "purple-white"
+  ) %>
+```
+
+
+Use this component for non-UK content when:  
+
+* it will be the only non-UK component on the page  
+* you need to call out a short amount of non-UK content  
+* you need to call out non-UK content within another component, for example the funding widget 
+
+If using this component for non-UK content: 
+
+* always use the purple colour (or purple-white on a grey background) 
+* the header must be ‘Non-UK citizens:’ 
+
+If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the details expander.  
+
+### Details expander for non-UK content
 
 You can use the details expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
 
@@ -275,12 +309,23 @@ expander:
     expanded: true
 ---
 
+
 # My page
 
 $check-your-qualifications$
 
 $another-example$
 
+```
+If you need to insert an expander into an erb file:
+
+```yaml
+<%= render Content::ExpanderComponent.new(
+    title: "check your qualifications",
+    text: "If you have qualifications from outside the UK, you'll need to show that they meet the standards set for teacher training in England.",
+    link_title: "You can get help comparing English and international qualifications.",
+    link_url: "/non-uk-teachers/non-uk-qualifications",
+  ) %>
 ```
 
 ### YouTube video
