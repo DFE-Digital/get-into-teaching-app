@@ -391,7 +391,7 @@ redirects:
   "/blog/tag/returning-to-teaching": "/returning-to-teaching"
 
 # Subject pages
-  "/subjects/physics": "/life-as-a-teacher/physics"
+  "/subjects/physics": "/life-as-a-teacher/what-you-could-teach/physics"
   "/subjects/maths": "/life-as-a-teacher/what-you-could-teach/maths"
   "/subjects/engineers-teach-physics": "/life-as-a-teacher/engineers-teach-physics"
 
@@ -408,7 +408,7 @@ redirects:
   "/is-teaching-right-for-me/teach-disabled-pupils-and-pupils-with-special-educational-needs": "/life-as-a-teacher/teach-disabled-pupils-and-pupils-with-special-educational-needs"
   "/is-teaching-right-for-me/computing": "/life-as-a-teacher/computing"
   "/is-teaching-right-for-me/maths": "/life-as-a-teacher/what-you-could-teach/maths"
-  "/is-teaching-right-for-me/physics": "/life-as-a-teacher/physics"
+  "/is-teaching-right-for-me/physics": "/life-as-a-teacher/what-you-could-teach/physics"
   "/is-teaching-right-for-me/engineers-teach-physics": "/life-as-a-teacher/engineers-teach-physics"
   "/is-teaching-right-for-me/become-a-further-education-teacher": "/life-as-a-teacher/become-a-further-education-teacher"
   "/is-teaching-right-for-me/become-an-early-years-teacher": "/life-as-a-teacher/become-an-early-years-teacher"

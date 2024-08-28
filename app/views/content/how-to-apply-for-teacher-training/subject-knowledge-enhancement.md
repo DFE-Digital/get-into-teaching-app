@@ -5,7 +5,7 @@ related_content:
     How to choose a teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Teach computing : "/life-as-a-teacher/computing"
     Teach maths : "/life-as-a-teacher/what-you-could-teach/maths"
-    Teach physics : "/life-as-a-teacher/physics"
+    Teach physics : "/life-as-a-teacher/what-you-could-teach/physics"
 description: |-
   Find out more about subject knowledge enhancement (SKE) courses which will help you brush up your knowledge on the subject you want to teach.
 external_content:
