@@ -1,6 +1,6 @@
 <div id="salary-banner" class="banner">
   <%= render CallsToAction::SimpleComponent.new(icon: "icon-money") do %>
-    <h2 class="call-to-action__heading">Earn a minimum of &pound;30k a year</h2>
+    <h2 class="call-to-action__heading">Earn a minimum of <%= v :salaries_starting_minshortened %> a year</h2>
     <p>All qualified teachers get a <strong>minimum starting salary of <%= v :salaries_starting_minshortened %></strong> (or higher in London), so it pays to do what you love.</p>
     <p>And with lots of opportunities to progress, you could <strong>earn over <%= v :salaries_fiveyears_maxshortened %> after 5 years</strong>.</p>
     <p><%= link_to("Find out more about teacher pay", page_path("life-as-a-teacher/pay-and-benefits/teacher-pay")) %>.</p>
