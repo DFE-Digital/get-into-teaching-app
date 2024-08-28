@@ -57,7 +57,7 @@ $salaried-teacher-training$
 
 ## How much will I be paid on a salaried course? 
 
-You'll receive an [unqualified teacher’s salary](/life-as-a-teacher/teacher-pay-and-benefits) – the exact amount will vary depending on the school you work in. 
+You'll receive an [unqualified teacher’s salary](/life-as-a-teacher/pay-and-benefits/teacher-pay) – the exact amount will vary depending on the school you work in. 
 
 It’s worth checking if there is a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) available for your subject before you apply for a salaried course. 
 

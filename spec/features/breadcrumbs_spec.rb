@@ -1,8 +1,6 @@
 require "rails_helper"
 
 RSpec.feature "Breadcrumbs", type: :feature do
-  include_context "with stubbed types api"
-
   subject { page }
 
   let(:event) { build(:event_api) }
