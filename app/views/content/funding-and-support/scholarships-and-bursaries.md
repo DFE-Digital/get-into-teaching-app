@@ -1,6 +1,6 @@
 ---
 title: "Teacher training bursaries"
-heading: "Bursaries and scholarships"
+heading: "Bursaries and scholarships for postgraduate teacher training"
 subcategory: Courses with fees
 description: |-
    Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.
@@ -13,6 +13,7 @@ external_content:
 promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 navigation: 20.15
+navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
 before-content:
     - content/funding-and-support/scholarships-and-bursaries/funding-widget
@@ -25,21 +26,62 @@ keywords:
     - Grants
     - Financial Support
     - Undergraduate
-    - Troops to Teachers
-    - Army
-    - Air Force
-    - RAF
-    - Navy
-    - Military
+    - Postgraduate
 ---
 
-## Postgraduate bursaries and scholarships
+## Eligibility for bursaries
 
-Postgraduate teaching bursaries and scholarships are only available for the subjects listed below. You cannot receive both a teaching bursary and a scholarship.
+You do not need to apply for a bursary. If you’re eligible, you’ll automatically receive it.
 
-You must be eligible for student finance to receive a bursary or scholarship (unless you’re training to teach physics or languages).
+You must be eligible for student finance to receive a bursary (unless you’re training to teach physics or languages). You'll also need at least one of the following:
 
-You cannot receive a scholarship or bursary if you're on a [salaried teacher training course](/funding-and-support/salaried-teacher-training).
+* a bachelor’s degree class 2:2 (honours) or higher
+* a master’s degree
+* a PhD
+
+If your course combines 2 subjects (for example, English and history), at least 50% of your course content must be made up of the bursary subject to be eligible.
+
+### How bursaries are paid
+
+A bursary is paid over a minimum of 10 months by your teacher training provider across the duration of your course. They will confirm when you will get the payments. 
+
+You will not need to pay tax or National Insurance on bursary payments. 
+
+### How to get a bursary
+
+You do not need to apply for a bursary. When you apply for teacher training, your provider will check if you're eligible for a bursary. If you are, your provider will confirm this in writing before you start your course. 
+
+## Eligibility for scholarships
+
+You must be eligible for student finance to receive a scholarship (unless you’re training to teach physics or languages). You’ll also need at least one of the following:
+
+* a bachelor’s degree class 2:1 (honours) or higher
+* a master’s degree
+* a PhD
+
+If you achieved a 2:2 in your degree, you may still be eligible. You would need to show you have enough relevant experience and subject knowledge. 
+
+Scholarships are awarded by independent organisations which set their own assessment requirements.
+
+Scholarships offer more than just financial benefits. For example, they can provide professional body membership, subject-specific support, mentoring, events and classroom resources. 
+
+### How scholarships are paid
+
+A scholarship is paid over a minimum of 10 months by your teacher training provider across the duration of your course. They will confirm when you will get the payments. 
+
+You will not need to pay tax or National Insurance on scholarship payments. 
+
+### How to apply for a scholarship
+
+You need to apply directly to the scholarship provider. Each provider sets their own application deadline and will confirm if you meet their eligibility requirements. You can find about how to apply, deadlines and more details about each scholarship on the scholarship providers' websites:
+
+* [the Royal Society of Chemistry](https://www.rsc.org/prizes-funding/funding/find-funding/teacher-training-scholarships/) (chemistry)
+* [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
+* [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
+* [the Institute of Mathematics and its Applications, and partners](https://teachingmathsscholars.org/home) (maths)
+* [the Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
+
+## Compare bursaries and scholarships
 
 | Subject                                                               | Bursary  | Scholarship      |
 |-----------------------------------------------------------------------| -------: | ---------------: |
@@ -59,72 +101,8 @@ You cannot receive a scholarship or bursary if you're on a [salaried teacher tra
 
 Table caption: Available postgraduate bursaries and scholarships
 
-### Bursaries
+## Other funding options
 
-You do not need to apply for a bursary. If you’re eligible, you’ll automatically receive it.
+If you're not eligible for a bursary or scholarship, there may be other funding options available, such as [tuition fees and maintenance loans](/funding-and-support/tuition-fees).
 
-To be eligible for a bursary, you’ll need at least one of the following:
-
-* a bachelor’s degree class 2:2 (honours) or higher
-* a master’s degree
-* a PhD
-
-If your course combines 2 subjects (for example, English and history), at least 50% of your course content must be made up of the bursary subject to be eligible.
-
-You’ll also need to meet the bursary scheme’s individual terms and conditions.
-
-[Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2024-to-2025).
-
-### Scholarships
-
-#### Eligibility
-
-To be eligible for a scholarship, you’ll need at least one of the following:
-
-* a bachelor’s degree class 2:1 (honours) or higher
-* a master’s degree
-* a PhD
-
-In exceptional circumstances, if you achieved a 2:2 in your degree you may still be awarded a scholarship if you have significant relevant experience.
-
-#### Benefits
-
-Scholarships are provided by charitable organisations with a passion for their subject area.
-
-They offer more than just financial benefits, including:
-
-* subject specialist events and webinars
-* online and face-to-face workshops
-* mentoring and coaching
-* a community of ex-scholars, teachers and subject leaders
-* access to classroom resources
-* networking events during your teacher training and beyond
-
-#### How to apply
-
-Scholarships are offered by independent institutions. They set their own eligibility criteria and you’ll need to apply through the relevant scholarship body:
-
-* [the Royal Society of Chemistry](https://www.rsc.org/prizes-funding/funding/find-funding/teacher-training-scholarships/) (chemistry)
-* [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
-* [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
-* [the Institute of Mathematics and its Applications, and partners](https://teachingmathsscholars.org/home) (maths)
-* [the Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
-
-Each scholarship body will have its own deadline for applications. You can find these on their individual websites.
-
-## Undergraduate bursaries
-
-You may be eligible for a [bursary of $bursaries_undergraduate$](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2024-to-2025#undergraduate-bursary) if you do a secondary maths or physics course that leads to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
-
-You may also be eligible if you do an opt-in QTS course in secondary computing, languages, mathematics or physics. This is where you start a standard undergraduate degree but then opt-in to initial teacher training to get QTS.
-
-The amount you receive depends on the year that you start your QTS course. You do not get a bursary in every year of an undergraduate course. Depending on the type of course you do, you may get the bursary in your final year or final two years.
-
-### Undergraduate bursary if you're former military personnel
-
-You may be eligible for a $bursaries_veteran_total$ tax-free undergraduate bursary for veterans if you’re:
-
-* training to teach secondary biology, chemistry, computing, languages, maths, or physics
-* doing an undergraduate degree leading to QTS in England
-
-[Find out more about how to get support training to teach if you're a veteran](/funding-and-support/if-youre-a-veteran).
+For advice on funding, you can speak to a [teacher training adviser](/teacher-training-advisers). They can help you work out what support you could be eligible for.
