@@ -62,7 +62,7 @@ If you have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts)
 
 Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.
 
-A typical teacher could earn at least $salaries_fiveyears_max$ (or more in London) within 5 years.
+A typical teacher could earn at least $salaries_fiveyears_max$ (or more in London) after 5 years.
 
 ### Qualified teacher salary
 
