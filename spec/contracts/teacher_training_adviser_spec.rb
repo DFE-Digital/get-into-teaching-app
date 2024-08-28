@@ -72,10 +72,10 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       expect(page).to have_text("you're signed up")
     end
 
-    it "not returning, has degree, secodary, retaking gcses, overseas and no telephone" do
+    it "not returning, has degree, secondary, retaking gcses, overseas and no telephone" do
       submit_choice_step("No", :returning_teacher)
       submit_choice_step("Yes", :have_a_degree)
-      submit_select_step("Maths", :what_subject_degree)
+      submit_select_step("Mathematics", :what_subject_degree)
       submit_select_step("Not applicable", :what_degree_class)
       submit_choice_step("Secondary", :stage_interested_teaching)
       submit_choice_step("No", :gcse_maths_english)
@@ -203,7 +203,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_choice_step("Yes", :have_a_degree)
 
         expect_current_step(:what_subject_degree)
-        expect(page).to have_select("What subject is your degree?", selected: "Maths")
+        expect(page).to have_select("What subject is your degree?", selected: "Mathematics")
         click_on_continue
 
         expect_current_step(:what_degree_class)
