@@ -20,23 +20,25 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Accessibility](#accessibility)
 		* [iframe](#iframe)
 	* [Inset text](#inset-text)
+  * [Details expander for non-UK content](#details-expander-for-non-uk-content)
 	* [YouTube Video](#youtube-video)
 	* [Hero](#hero)
 	* [Values](#values)
-4. [Creating a Blog Post](#creating-a-blog-post)
+4. [Creating a subject page](#creating-a-subject-page)
+5. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
-5. [Navigation](#navigation)
+6. [Navigation](#navigation)
 	* [Main Navigation](#main-navigation)
 	* [Category Pages](#category-pages)
-6. [Build errors](#build-errors)
-7. [Internship providers](#internship-providers)
-8. [Creating a new page](#creating-a-new-page)
-9. [Preview a change](#preview-a-change)
-10. [Saving a change](saving-a-change)
-11. [If you add something to the wrong branch](wrong-branch)
-12. [Redirect URLs](redirect-urls)
-13. [Finding links on the site](links-site)
+7. [Build errors](#build-errors)
+8. [Internship providers](#internship-providers)
+9. [Creating a new page](#creating-a-new-page)
+10. [Preview a change](#preview-a-change)
+11. [Saving a change](saving-a-change)
+12. [If you add something to the wrong branch](wrong-branch)
+13. [Redirect URLs](redirect-urls)
+14. [Finding links on the site](links-site)
 
 ## Setting up Codespaces and Github
 
@@ -289,6 +291,7 @@ If using this component for non-UK content:
 
 If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the details expander.  
 
+
 ### Details expander for non-UK content
 
 You can use the details expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
@@ -414,6 +417,59 @@ en:
 A list of the current values available on the site can be viewed at the `/values` endpoint.
 
 Values should be named using only _lowercase_ characters `a` to `z`, the numbers `0` to `9`, and the underscore `_` character. Unsupported characters such as the hyphen `-` are converted into underscores.
+
+## Creating a subject page
+
+Create a subject folder under ‘content/life as a teacher’
+
+From a previous published subject page copy the 3 files:
+
+-	_adviser-promo-subject-html.erb (replace with subject name)
+-	_article.html/erb
+-	_header.html.erb
+
+Also copy and paste a previous subject ‘.md’ file and rename it with the subject (e.g english.md)
+
+#### File changes:
+
+_adviser-promo-subject.html.erb - change line 4 to relate to the subject 
+
+_header.html.erb – no changes needed
+
+The main content of subject pages should be written in HTML format using the following template as a guide:
+
+_article.html/erb 
+
+Update the markdown file to edit the hero banner image, hero banner text (title and title_paragraph) and the page’s card component. You will also need to ensure the links to the html erb files are updated
+
+Subject.md
+
+```yaml
+---
+title: Become a subject teacher
+title_paragraph: |-
+  <p>Tax-free bursaries of $bursaries_postgraduate_subject$ or scholarships of $scholarships_subject $ are available for eligible trainee subject teachers.</p>
+description: |-
+   Find out how to become a subject teacher including what you'll be teaching and what funding is available to help you train.
+backlink: "../../"
+subcategory: What to teach
+navigation: 5.43
+navigation_title: Subject name
+navigation_description: Subject content
+layout: "layouts/minimal"
+colour: pastel yellow-yellow
+image: "static/images/content/homepage/directory4.jpg"
+keywords:
+  - keyword 1
+  - keyword 2
+  - keyword 3
+ 
+content:
+  - "content/life-as-a-teacher/subject/header"
+  - "content/life-as-a-teacher/subject/article"
+  - "content/life-as-a-teacher/subject/adviser-promo-subject"
+---
+```
 
 ## Creating a Blog Post
 
