@@ -156,7 +156,7 @@ en:
         sub_head: "Maths - Secondary"
         funding: "Scholarships of %{scholarships_maths} and bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you're eligible."
         next_steps: |-
-          If you have a passion for maths, find out more about <a href="/life-as-a-teacher/maths">becoming a maths teacher</a>.
+          If you have a passion for maths, find out more about <a href="/life-as-a-teacher/what-you-could-teach/maths">becoming a maths teacher</a>.
       music:
         name: "Music"
         group: "Secondary"
