@@ -7,7 +7,6 @@ salaries:
     minshortened: £31k
   fiveyears:
     max: £43,607
-    maxrounded: £43,000
     maxshortened: £43k
   average:
     classroomshortened: £46k
@@ -55,7 +54,6 @@ salaries:
 # Additional payments
   tlr:
     max: £16,553
-    maxrounded: £16,000
 # Example variables - used in documentation
   example:
     min: £30,000
