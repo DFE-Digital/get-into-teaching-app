@@ -35,6 +35,7 @@ resource "google_bigquery_table" "events" {
     type = "DAY"
   }
 
+# https://github.com/DFE-Digital/dfe-analytics/blob/main/docs/create-events-table.sql
   schema = <<EOF
 [
   {
