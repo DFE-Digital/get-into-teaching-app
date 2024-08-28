@@ -67,16 +67,16 @@ variable "internet_hostnames" {
   default = []
 }
 variable "command" {
-  type = list(string)
+  type    = list(string)
   default = []
 }
 variable "replicas" {
   default = 1
-  type = number
+  type    = number
 }
 variable "memory_max" {
   default = "1Gi"
-  type = string
+  type    = string
 }
 variable "azure_maintenance_window" {
   default = null
@@ -95,19 +95,24 @@ variable "enable_prometheus_monitoring" {
 
 variable "sidekiq_memory_max" {
   description = "maximum memory of the sidekiq"
-  default = "1Gi"
+  default     = "1Gi"
 }
 
 variable "sidekiq_replicas" {
   description = "number of replicas of the sidekiq"
-  default = 1
+  default     = 1
 }
 
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)
   postgres_ssl_mode = var.enable_postgres_ssl ? "require" : "disable"
 
-  gcp_project = "get-into-teaching"
-  gcp_region = "europe-west2"
-  gcp_dataset_name = replace("${var.service_short}_events_${local.environment}_spike", "-", "_")
+  gcp_project                = "get-into-teaching"
+  gcp_region                 = "europe-west2"
+  gcp_project_number         = "574582782335"
+  gcp_dataset_name           = replace("${var.service_short}_events_${local.environment}_spike", "-", "_")
+  gcp_workload_id_pool       = "azure-cip-identity-pool"
+  gcp_principal              = "principal://iam.googleapis.com/projects/${local.gcp_project_number}/locations/global/workloadIdentityPools/${local.gcp_workload_id_pool}"
+  azure_mi_object_id         = "9d05ace4-549b-40cd-9280-73df80dfc3cb"
+  gcp_principal_with_subject = "${local.gcp_principal}/subject/${local.azure_mi_object_id}"
 }
