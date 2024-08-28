@@ -415,3 +415,6 @@ redirects:
   "/life-as-a-teacher/teacher-pay-and-benefits": "/life-as-a-teacher/pay-and-benefits/teacher-pay"
   "/life-as-a-teacher/career-progression": "/life-as-a-teacher/pay-and-benefits/career-progression"
   "/life-as-a-teacher/what-pension-does-a-teacher-get": "/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme"
+  "/life-as-a-teacher/maths": "/life-as-a-teacher/what-you-could-teach/maths"
+  "/life-as-a-teacher/physics": "/life-as-a-teacher/what-you-could-teach/physics"
+  "/life-as-a-teacher/computing": "/life-as-a-teacher/what-you-could-teach/computing"
