@@ -126,7 +126,7 @@
     - "static/images/content/hero-images/cake--mobile.png"
     - "static/images/content/hero-images/cake--tablet.png"
 
-"static/images/content//hero-images/languages.jpg":
+"static/images/content/hero-images/languages.jpg":
   # A language teacher talking to pupils in a classroom.
   alt: ""
   variants:
@@ -415,6 +415,9 @@
   alt: ""
 "static/images/content/homepage/directory3.jpg":
   # An adviser talks to someone attending a event.
+  alt: ""
+"static/images/content/homepage/directory4.jpg":
+  # A language teacher talking to pupils in a classroom.
   alt: ""
 "static/images/content/homepage/directory5.jpg":
   # A chemistry teacher with two students in a science classroom.

@@ -14,7 +14,7 @@ navigation_title: Modern languages
 navigation_description: Find out how to become a modern languages teacher and help children gain a greater appreciation and understanding of the world.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/homepage/directory4.jpg"
+image: "static/images/content/hero-images/languages.jpg"
 keywords:
   - languages
   - modern languages
