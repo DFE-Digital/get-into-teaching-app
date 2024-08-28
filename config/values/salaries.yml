@@ -11,7 +11,7 @@ salaries:
   average:
     classroomshortened: £46k
   sustainedcontribution:
-    minrounded: £45,000
+    minshortened: £45k
 # Detailed salaries
   qualifiedteacher:
     englandmin: £31,650
