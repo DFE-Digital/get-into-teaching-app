@@ -54,7 +54,7 @@ DfE::Analytics.configure do |config|
   config.entity_table_checks_enabled = true
 
   # Enable Azure to GCP federation
-  config.azure_federated_auth = true
+  config.azure_federated_auth = ENV.key? "GOOGLE_CLOUD_CREDENTIALS"
 
   # A proc which will be called with the rack env, and which should
   # return a boolean indicating whether the page is cached and will
