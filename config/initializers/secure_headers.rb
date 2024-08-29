@@ -93,8 +93,8 @@ SecureHeaders::Configuration.override(:api) do |config|
 end
 
 SecureHeaders::Configuration.override(:chat) do |config|
-  config.csp[:default_src] << "*.niceincontact.com"
-  config.csp[:connect_src] << "*.niceincontact.com ws:"
+  config.csp[:default_src] << "*.niceincontact.com ws: wss:"
+  config.csp[:connect_src] << "*.niceincontact.com ws: wss:"
 end
 
 # rubocop:enable Lint/PercentStringArray
