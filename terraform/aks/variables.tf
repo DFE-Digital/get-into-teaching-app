@@ -117,6 +117,9 @@ locals {
   azure_tenant_id            = "9c7d9dd3-840c-4b3f-818e-552865082e16"
   azure_mi_object_id         = "9d05ace4-549b-40cd-9280-73df80dfc3cb"
   gcp_principal_with_subject = "${local.gcp_principal}/subject/${local.azure_mi_object_id}"
+  gcp_table_deletion_protection = false
+  gcp_project_key_ring       = "git-key-ring"
+  gcp_project_key            = "git-key"
   # gcp_credentials = <<EOT
   # {
   #   "universe_domain": "googleapis.com",
