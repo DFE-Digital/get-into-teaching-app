@@ -18,12 +18,12 @@ class ChatsController < ApplicationController
 private
 
   def show_html
+    use_secure_headers_override(:chat)
     render layout: "chat"
   end
 
   def show_json
-    # De-activate the CSP header on the chats page
-    SecureHeaders.opt_out_of_header(request, "csp")
+    use_secure_headers_override(:api)
     render json: Chat.new
   end
 

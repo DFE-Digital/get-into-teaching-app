@@ -1,16 +1,14 @@
-<!doctype html>
-<!-- //NOSONAR --><html lang="en" class="govuk-template">
-  <%= render "sections/head" %>
-  <%= body_tag do %>
-    <%= render "sections/govuk_javascript" %>
-    <%= render(partial: "sections/content_errors") %>
-
-    <%= main_tag(class: @front_matter["main_class"]) do %>
-      <% @front_matter["content"]&.each do |partial| %>
-        <%= render(partial) %>
-      <% end %>
-      <%= yield %>
-    <% end %>
-
-  <% end %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/chat/chaticon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat</title>
+  <script type="module" crossorigin src="/assets/chat/index-a5520abe.js"></script>
+  <link rel="stylesheet" href="/assets/chat/index-e3036c89.css">
+</head>
+<body>
+<%= yield %>
+</body>
 </html>
