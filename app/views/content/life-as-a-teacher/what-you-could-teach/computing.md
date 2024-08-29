@@ -19,7 +19,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/computing/header"
-  - "content/life-as-a-teacher/computing/article"
-  - "content/life-as-a-teacher/computing/adviser-promo-computing"
+  - "content/life-as-a-teacher/what-you-could-teach/computing/header"
+  - "content/life-as-a-teacher/what-you-could-teach/computing/article"
+  - "content/life-as-a-teacher/what-you-could-teach/computing/adviser-promo-computing"
 ---

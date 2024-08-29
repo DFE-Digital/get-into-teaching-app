@@ -18,7 +18,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/maths/header"
-  - "content/life-as-a-teacher/maths/article"
-  - "content/life-as-a-teacher/maths/adviser-promo-maths"
+  - "content/life-as-a-teacher/what-you-could-teach/maths/header"
+  - "content/life-as-a-teacher/what-you-could-teach/maths/article"
+  - "content/life-as-a-teacher/what-you-could-teach/maths/adviser-promo-maths"
 ---
