@@ -130,7 +130,7 @@ ol.primary > li {
     text-decoration-thickness: max(3px, .1875rem, .12em)};
 
   &:focus {
-    color: $white;
+    @include highlight-text($black, $white);
   }
 }
 

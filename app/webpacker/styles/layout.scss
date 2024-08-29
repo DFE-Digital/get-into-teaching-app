@@ -159,6 +159,10 @@ section.container {
 }
 
 .row {
+  + .grey {
+    background-color: $grey;
+  }
+
   .grey {
     background-color: $grey;
     padding: 1em 0;
