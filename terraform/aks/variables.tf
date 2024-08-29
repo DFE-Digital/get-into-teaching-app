@@ -111,6 +111,7 @@ locals {
   gcp_region                 = "europe-west2"
   gcp_project_number         = "574582782335"
   gcp_dataset_name           = replace("${var.service_short}_events_${local.environment}_spike", "-", "_")
+  gcp_table_name             = "events"
   gcp_workload_id_pool       = "azure-cip-identity-pool"
   gcp_principal              = "principal://iam.googleapis.com/projects/${local.gcp_project_number}/locations/global/workloadIdentityPools/${local.gcp_workload_id_pool}"
   azure_tenant_id            = "9c7d9dd3-840c-4b3f-818e-552865082e16"

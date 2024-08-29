@@ -39,7 +39,10 @@ module "application_configuration" {
     APP_URL           = length(var.internet_hostnames) == 0 ? "" : "https://${var.internet_hostnames[0]}.education.gov.uk",
 #   keeping here as a reminder, but went be set in aks and need to confirm impact
     APP_ASSETS_URL    = length(var.asset_hostnames) == 0 ? "" : "https://${var.asset_hostnames[0]}.education.gov.uk"
-    GOOGLE_CLOUD_CREDENTIALS = local.gcp_credentials
+    GOOGLE_CLOUD_CREDENTIALS  = local.gcp_credentials
+    BIGQUERY_TABLE_NAME       = local.gcp_table_name
+    BIGQUERY_PROJECT_ID       = local.gcp_project
+    BIGQUERY_DATASET          = local.gcp_dataset_name
   }
 }
 

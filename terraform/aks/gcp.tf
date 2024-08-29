@@ -29,28 +29,12 @@ resource "google_bigquery_dataset" "main" {
 
 resource "google_bigquery_table" "events" {
   dataset_id = google_bigquery_dataset.main.dataset_id
-  table_id   = "events"
+  table_id   = local.gcp_table_name
 
   time_partitioning {
     type = "DAY"
   }
 
-# https://github.com/DFE-Digital/dfe-analytics/blob/main/docs/create-events-table.sql
-  schema = <<EOF
-[
-  {
-    "name": "permalink",
-    "type": "STRING",
-    "mode": "NULLABLE",
-    "description": "The Permalink"
-  },
-  {
-    "name": "state",
-    "type": "STRING",
-    "mode": "NULLABLE",
-    "description": "State where the head office is located"
-  }
-]
-EOF
-
+  # https://github.com/DFE-Digital/dfe-analytics/blob/main/docs/create-events-table.sql
+  schema = file("${path.module}/config/events.json")
 }
