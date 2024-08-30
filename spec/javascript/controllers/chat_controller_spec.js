@@ -9,9 +9,9 @@ describe('ChatController', () => {
   let chatShowSpy;
   let chatOpenSpy;
 
-  const setBody = (chatEnabled = 'true') => {
+  const setBody = (chatEnabled = 'true', chatAvailable = 'true') => {
     document.body.innerHTML = `
-      <div data-controller="chat" data-enabled="${chatEnabled}" data-chat-target="container" class="chat">
+      <div data-controller="chat" data-enabled="${chatEnabled}" data-available="${chatAvailable}" data-chat-target="container" class="chat">
         <div data-chat-target="online" class="hidden">
           <p>
             <a class="button" href="javascript:void(0)" data-action="chat#start" data-chat-target="chat">Chat online</a>
@@ -62,7 +62,7 @@ describe('ChatController', () => {
     describe('when the chat is online', () => {
       beforeEach(() => {
         mockFetch({ "skillid": 123456, "available": true, "status_age": 123 } );
-        setBody('true');
+        setBody('true', 'true');
       });
 
       it('hides the unavailable message', () => {
@@ -79,7 +79,7 @@ describe('ChatController', () => {
     describe('when the chat is offline', () => {
       beforeEach(() => {
         mockFetch({ "skillid": 123456, "available": false, "status_age": 123 } );
-        setBody('true');
+        setBody('true', 'false');
       });
 
       it('hides the unavailable message', () => {
