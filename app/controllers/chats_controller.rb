@@ -1,5 +1,6 @@
 class ChatsController < ApplicationController
   def show
+    expires_in 1.minute, public: true
     respond_to do |format|
       format.html do
         show_html
