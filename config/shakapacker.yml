@@ -28,7 +28,7 @@ default: &default
 
   # Additional paths webpack should look up modules
   # ['app/assets', 'engine/foo/app/assets']
-  additional_paths: ['node_modules/govuk-frontend/dist/govuk']
+  additional_paths: ['node_modules/govuk-frontend/dist/govuk', 'public/chat']
 
   # Reload manifest.json on all requests so we reload latest compiled packs
   cache_manifest: false
