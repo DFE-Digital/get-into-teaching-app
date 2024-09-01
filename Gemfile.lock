@@ -571,7 +571,7 @@ GEM
     skylight (6.0.4)
       activesupport (>= 5.2.0)
     smart_properties (1.17.0)
-    spring (4.1.0)
+    spring (4.2.1)
     spring-watcher-listen (2.1.0)
       listen (>= 2.7, < 4.0)
       spring (>= 4)
