@@ -6,7 +6,7 @@ image: "static/images/content/hero-images/0029.jpg"
 title_paragraph: Discover the subjects that you could teach in the classroom. 
 description: |-
   Discover the subjects that you could teach in the classroom.
-navigation: 40.2
+navigation: 40.10
 layout: "layouts/minimal"
 talk_to_us: true
 backlink: "../"
