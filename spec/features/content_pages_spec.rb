@@ -143,6 +143,14 @@ RSpec.feature "content pages check", :content, type: :feature do
 
             uri = URI.parse(href)
 
+            unless paths.include?(uri.path)
+              # temporary debugging information
+              puts "INVALID PATH DETECTED------------"
+              puts "URI: #{uri.inspect}"
+              puts "URI.PATH: #{uri.path.inspect}"
+              puts "PATHS: #{paths.inspect}"
+            end
+
             expect(paths).to(include(uri.path), "invalid path #{href} on page #{sp.path}")
 
             if (fragment = uri.fragment)
