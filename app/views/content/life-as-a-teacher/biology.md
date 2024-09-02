@@ -2,7 +2,7 @@
 title: Become a biology teacher
 title_paragraph: |-
   <p>
-  Teaching biology helps pupils understand the world around them. You can spark a passion for discovery, guiding students through the natural world, from the tiniest cells to vast ecosystems.</p>
+  Teaching biology helps pupils understand the world around them. You can spark a passion for discovery, guiding students through the natural world, from tiny cells to vast ecosystems.</p>
   <p>
   Tax-free bursaries of $bursaries_postgraduate_biology$ are available for eligible trainee biology teachers.</p>
 description: |-
@@ -11,7 +11,7 @@ backlink: "../../"
 subcategory: What to teach
 navigation: 5.43
 navigation_title: Biology
-navigation_description: Find out how to become a biology teacher and inspire children to fuel their passion for science.
+navigation_description: Find out how to become a biology teacher and inspire pupils to fuel their passion for science.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/0030.jpg"
