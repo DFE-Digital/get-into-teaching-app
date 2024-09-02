@@ -14,6 +14,7 @@ salaries:
   qualifiedteacher:
     englandmin: £31,650
     englandmax: £49,084
+    englandmaxshortened: £49k
     londonfringemin: £33,075
     londonfringemax: £50,471
     outerlondonmin: £36,413
