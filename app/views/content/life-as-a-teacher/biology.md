@@ -9,7 +9,7 @@ description: |-
    Find out how to become a biology teacher including what you'll be teaching and what funding is available to help you train.
 backlink: "../../"
 subcategory: What to teach
-navigation: 5.43
+navigation: 5.40
 navigation_title: Biology
 navigation_description: Find out how to become a biology teacher and inspire pupils to fuel their passion for science.
 layout: "layouts/minimal"
