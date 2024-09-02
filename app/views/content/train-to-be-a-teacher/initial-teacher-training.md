@@ -39,7 +39,7 @@ You’ll also have a mentor to support you in your school placements and learnin
 
 There are full-time and part-time teacher training courses available.
 
-[Find postgraduate teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/).
+[Find postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/).
 
 ## What you’ll learn in initial teacher training
 

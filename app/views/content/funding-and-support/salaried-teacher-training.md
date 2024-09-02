@@ -57,7 +57,7 @@ $salaried-teacher-training$
 
 ## How much will I be paid on a salaried course? 
 
-You'll receive an [unqualified teacher’s salary](/life-as-a-teacher/teacher-pay-and-benefits) – the exact amount will vary depending on the school you work in. 
+You'll receive an [unqualified teacher’s salary](/life-as-a-teacher/pay-and-benefits/teacher-pay) – the exact amount will vary depending on the school you work in. 
 
 It’s worth checking if there is a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) available for your subject before you apply for a salaried course. 
 
@@ -87,7 +87,7 @@ Some salaried courses award QTS only. You may have the option to do a salaried c
 
 ## How do I find a salaried teacher training course? 
 
-You can [find postgraduate teacher training](https://www.find-postgraduate-teacher-training.service.gov.uk/) and filter by salaried courses. 
+You can [find postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and filter by salaried courses. 
 
 It’s usually wise to apply for non-salaried courses as well to increase your chances of getting a place on a course. 
 

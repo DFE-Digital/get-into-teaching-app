@@ -11,7 +11,6 @@ class StoredPage
 end
 
 RSpec.feature "content pages check", :content, type: :feature do
-  include_context "with stubbed types api"
   include Values
 
   let(:other_paths) { %w[/ /feedback /blog /blog/post_invalid_tag /search /teacher-training-adviser/sign_up/identity /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
