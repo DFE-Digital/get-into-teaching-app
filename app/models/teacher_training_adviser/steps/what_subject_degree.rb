@@ -2,6 +2,8 @@ module TeacherTrainingAdviser::Steps
   class WhatSubjectDegree < GITWizard::Step
     attribute :degree_subject, :string
     attr_accessor :degree_subject_raw
+    attr_accessor :degree_subject_nojs
+    attr_accessor :nojs
 
     validates :degree_subject, presence: true
 
