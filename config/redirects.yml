@@ -390,11 +390,6 @@ redirects:
   "/blog/top-tips-for-returning-teachers": "/returning-to-teaching"
   "/blog/tag/returning-to-teaching": "/returning-to-teaching"
 
-# Subject pages
-  "/subjects/physics": "/life-as-a-teacher/what-you-could-teach/physics"
-  "/subjects/maths": "/life-as-a-teacher/what-you-could-teach/maths"
-  "/subjects/engineers-teach-physics": "/life-as-a-teacher/what-you-could-teach/engineers-teach-physics"
-
 # Moving qualifications page
   "/is-teaching-right-for-me/qualifications-you-need-to-teach": "/train-to-be-a-teacher/qualifications-you-need-to-teach"
 
@@ -419,3 +414,6 @@ redirects:
   "/life-as-a-teacher/physics": "/life-as-a-teacher/what-you-could-teach/physics"
   "/life-as-a-teacher/computing": "/life-as-a-teacher/what-you-could-teach/computing"
   "/life-as-a-teacher/engineers-teach-physics": "/life-as-a-teacher/what-you-could-teach/engineers-teach-physics" 
+  "/subjects/physics": "/life-as-a-teacher/what-you-could-teach/physics"
+  "/subjects/maths": "/life-as-a-teacher/what-you-could-teach/maths"
+  "/subjects/engineers-teach-physics": "/life-as-a-teacher/what-you-could-teach/engineers-teach-physics"
