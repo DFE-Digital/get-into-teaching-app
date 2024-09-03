@@ -368,24 +368,23 @@ hero_blend_content: true
 
 ### Values
 
-You can use the Values system to maintain key values (e.g. salaries, dates, fees etc) in a single file, and then use these values throughout the site's content. Set up a list of values in one or more YML files stored in the `config/values/` folder (or sub-folder), for example `config/values/dates.yml`:
+You can use the Values system to maintain key values (e.g. salaries, bursaries, fees etc) in a single file, and then use these values throughout the site's content. Set up a list of values in one or more YML files stored in the `config/values/` folder (or sub-folder), for example `config/values/salaries.yml`:
 
 ```yaml
-dates:
+salaries:
   example:
-    opening: 1st September 2024
+    max: £40,000
 
-dates_example_closing: 31/12/2024
 ```
 
-These values can then be used in markdown files by referencing the value as `$value_name$`, e.g. `$dates_example_opening$` or `$dates_example_closing$`. Note that structured composite keys will be flattened to a single key.
+These values can then be used in markdown files by referencing the value as `$value_name$`, e.g. `$salaries_example_max$`. Note that structured composite keys will be flattened to a single key.
 
 An example markdown implementation might be:
 
 ```markdown
-# Useful dates
+# Starting salary
 
-The closing date for applications is $dates_example_closing$. It is important to submit your application in good time.
+All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London).
 ```
 
 Values can be used in ERB templates using `<%= value :value_name %>` (or as a shorthand, `<%= v :value_name %>`). 
@@ -393,9 +392,9 @@ Values can be used in ERB templates using `<%= value :value_name %>` (or as a sh
 An example ERB implementation might be:
 
 ```html
-<h1>Useful dates</h1>
+<h1>Starting salary</h1>
 <p>
-  The opening date for applications is <%= v :dates_example_opening %>.	
+  All qualified teachers will have a starting salary of at least <%= v :salaries_starting_min %> (or higher in London).	
 </p>
 ```
 
@@ -410,8 +409,8 @@ en:
       maths:
         name: "Maths"
         group: "Secondary"
-        sub_head: "Maths - starting salary: %{salaries_example_min}"
-        funding: "The opening date for applications is %{dates_example_opening} so get ready to apply soon."
+        sub_head: "Maths - starting salary: %{salaries_starting_min}"
+        funding: "Bursaries of %{bursaries_postgraduate_maths} are available."
 ```
 
 A list of the current values available on the site can be viewed at the `/values` endpoint.

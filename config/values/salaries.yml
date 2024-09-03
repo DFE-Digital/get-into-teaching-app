@@ -55,7 +55,4 @@ salaries:
     salarywithtlr: £43k
     max: £15,690
     maxrounded: £15,000
-# Example variables - used in documentation
-  example:
-    min: £30,000
-salaries_example_max: £41k
+
