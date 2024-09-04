@@ -2,7 +2,7 @@
 title: "What you could teach"
 heading: "What you could teach"
 category: Life as a teacher
-image: "static/images/content/hero-images/0029.jpg"
+image: "static/images/content/hero-images/physics_1383.jpg"
 title_paragraph: Discover the subjects that you could teach in the classroom. 
 description: |-
   Discover the subjects that you could teach in the classroom.
