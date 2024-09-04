@@ -1,11 +1,11 @@
 ---
-title: "What you could teach"
-heading: "What you could teach"
+title: "Explore subjects you could teach"
+heading: "Explore subjects"
 category: Life as a teacher
 image: "static/images/content/hero-images/physics_1383.jpg"
-title_paragraph: Discover the subjects that you could teach in the classroom. 
+title_paragraph: Discover what you could teach, the benefits of teaching specific subjects and how to take your next steps to become a teacher. 
 description: |-
-  Discover the subjects that you could teach in the classroom.
+  Discover what you could teach, the benefits of teaching specific subjects and how to take your next steps to become a teacher.
 navigation: 40.10
 layout: "layouts/minimal"
 talk_to_us: true
