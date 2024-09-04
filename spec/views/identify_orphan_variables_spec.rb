@@ -1,13 +1,13 @@
 require "rails_helper"
 include I18n::Backend::Flatten
 
-VARIABLE_REGEX = /<%=\s*v\s*:(?<content>.+?)\s*%> |
-                  \$(?<content>.+?)\$ |
-                  %\{(?<content>.+?)\} |
-                  \#\{\s*v\s*:(?<content>.+>?)\}
+VARIABLE_REGEX = /<%=\s*(v|value)\s*:(?<content>[a-zA-Z-_0-9]+?)\s*%> |
+                  \$(?<content>[a-zA-Z-_0-9]+?)\$ |
+                  %\{(?<content>[a-zA-Z-_0-9]+?)\} |
+                  \#\{\s*v\s*:(?<content>[a-zA-Z-_0-9]+>?)\}
                   /x
 
-# Matches <%= v :thing %>
+# Matches <%= v :thing %> or <%= value :thing %>
 # Matches $thing$
 # Matches %{thing}
 # Matches #{v :thing}
