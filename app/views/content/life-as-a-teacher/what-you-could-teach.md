@@ -12,6 +12,6 @@ talk_to_us: true
 backlink: "../"
 content:
   - content/life-as-a-teacher/header
-  - content/life-as-a-teacher/what-you-could-teach/categories
+  - content/life-as-a-teacher/explore-subjects/categories
   - content/life-as-a-teacher/how-to-become-a-teacher-cta
 ---

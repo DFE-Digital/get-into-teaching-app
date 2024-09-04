@@ -17,7 +17,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/what-you-could-teach/physics/header"
-  - "content/life-as-a-teacher/what-you-could-teach/physics/article"
-  - "content/life-as-a-teacher/what-you-could-teach/physics/adviser-promo-physics"
+  - "content/life-as-a-teacher/explore-subjects/physics/header"
+  - "content/life-as-a-teacher/explore-subjects/physics/article"
+  - "content/life-as-a-teacher/explore-subjects/physics/adviser-promo-physics"
 ---
