@@ -17,7 +17,6 @@ CONTENT_FILES = [
   PageLister.all_md_files,
   PageLister.all_erb_files,
   PageLister.all_locale_files,
-  PageLister.all_ruby_files,
 ].flatten
 
 yaml_files_and_values = YAML_FILES.to_h do |file|
@@ -70,7 +69,7 @@ describe "Orphan variables checker" do
 
   orphan_yaml_variables.each do |file, orphan|
     it "is not an orphan value" do
-      fail "#{file} contains the key(s) '#{orphan}' which is not referenced in any markdown, erb, locale or ruby file. Consider removing this if it is no longer used."
+      fail "#{file} contains the key(s) '#{orphan}' which is not referenced in any markdown, erb or locale file. Consider removing this if it is no longer used."
     end
   end
 end
