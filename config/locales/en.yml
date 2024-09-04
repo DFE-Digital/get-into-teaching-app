@@ -810,7 +810,7 @@ en:
         address_postcode: |-
           If you give us your postcode, we'll let you know about events happening near you.
       teacher_training_adviser_steps_what_subject_degree:
-        degree_subject: "If your subject is not listed choose the option that is nearest to your degree."
+        degree_subject: "Type to enter your degree subject or select from the suggestions."
       teacher_training_adviser_steps_subject_interested_teaching:
         preferred_teaching_subject_id: "Choose a subject, even if you're not sure yet. We try and match you with an adviser based on your subject."
       teacher_training_adviser_steps_uk_telephone:
