@@ -35,26 +35,23 @@ component_files_and_keys = PageLister.all_md_files.index_with do |file|
   content = File.open(file).read
   front_matter = FrontMatterParser::Parser.new(:md).call(content).front_matter
 
-  TemplateHandlers::Markdown::COMPONENT_TYPES.map { |type| front_matter.dig(type) }.compact.map(&:keys).flatten
+  TemplateHandlers::Markdown::COMPONENT_TYPES.map { |type| front_matter[type] }.compact.map(&:keys).flatten
 end
 
-
-#yaml_variable_values = yaml_files_and_values.values.flatten
-#content_variable_values = content_files_and_values.values.flatten
-#component_variable_values = component_files_and_keys.values.flatten
-
+# yaml_variable_values = yaml_files_and_values.values.flatten
+# content_variable_values = content_files_and_values.values.flatten
+# component_variable_values = component_files_and_keys.values.flatten
 
 # orphan_variables = yaml_variable_values - content_variable_values
 
-orphan_frontend_variables = content_files_and_values.transform_values do |values|
-  values.reject { |value| ((yaml_files_and_values.values + component_files_and_keys.values).flatten).include?(value) }
-end.compact_blank
+orphan_frontend_variables = content_files_and_values.transform_values { |values|
+  values.reject { |value| (yaml_files_and_values.values + component_files_and_keys.values).flatten.include?(value) }
+}.compact_blank
 
 # orphan_variables = content_variable_values - yaml_variable_values - component_variable_values
-orphan_yaml_variables = yaml_files_and_values.transform_values do |values|
+orphan_yaml_variables = yaml_files_and_values.transform_values { |values|
   values.reject { |value| content_files_and_values.values.flatten.include?(value) }
-end.compact_blank
-
+}.compact_blank
 
 describe "Orphan variables checker" do
   it "does not find variables in the config/values/*.yml files that are not included in the content" do
