@@ -81,6 +81,13 @@
     <p>Chemistry teacher training courses have had successful applications from candidates with a range of degrees, including biomedical sciences, forensic science, pharmacy, and natural sciences.
     <p>Find out about <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">the qualifications needed to teach</a>.</p>
   </section>
+      <%= render Content::ExpanderComponent.new(
+      title: "check your qualifications",
+      text: "If you have qualifications from outside the UK, you'll need to show that they meet the standards set for teacher training in England.",
+      link_title: "You can get help comparing English and international qualifications.",
+      link_url: "/non-uk-teachers/non-uk-qualifications",
+    ) %>
+  </section>
 
   <section class="col col-720">
     <h3>Improve your subject knowledge</h3>
