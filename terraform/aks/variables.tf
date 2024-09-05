@@ -67,16 +67,16 @@ variable "internet_hostnames" {
   default = []
 }
 variable "command" {
-  type = list(string)
+  type    = list(string)
   default = []
 }
 variable "replicas" {
   default = 1
-  type = number
+  type    = number
 }
 variable "memory_max" {
   default = "1Gi"
-  type = string
+  type    = string
 }
 variable "azure_maintenance_window" {
   default = null
@@ -95,15 +95,47 @@ variable "enable_prometheus_monitoring" {
 
 variable "sidekiq_memory_max" {
   description = "maximum memory of the sidekiq"
-  default = "1Gi"
+  default     = "1Gi"
 }
 
 variable "sidekiq_replicas" {
   description = "number of replicas of the sidekiq"
-  default = 1
+  default     = 1
 }
 
 locals {
   azure_credentials = try(jsondecode(var.azure_credentials_json), null)
   postgres_ssl_mode = var.enable_postgres_ssl ? "require" : "disable"
+
+  gcp_project                = "get-into-teaching"
+  gcp_region                 = "europe-west2"
+  gcp_project_number         = "574582782335"
+  gcp_dataset_name           = replace("${var.service_short}_events_${local.environment}_spike", "-", "_")
+  gcp_table_name             = "events"
+  gcp_workload_id_pool       = "azure-cip-identity-pool"
+  gcp_principal              = "principal://iam.googleapis.com/projects/${local.gcp_project_number}/locations/global/workloadIdentityPools/${local.gcp_workload_id_pool}"
+  azure_tenant_id            = "9c7d9dd3-840c-4b3f-818e-552865082e16"
+  azure_mi_object_id         = "9d05ace4-549b-40cd-9280-73df80dfc3cb"
+  gcp_principal_with_subject = "${local.gcp_principal}/subject/${local.azure_mi_object_id}"
+  gcp_table_deletion_protection = false
+  gcp_project_key_ring       = "git-key-ring"
+  gcp_project_key            = "git-key"
+  # gcp_credentials = <<EOT
+  # {
+  #   "universe_domain": "googleapis.com",
+  #   "type": "external_account",
+  #   "audience": "//iam.googleapis.com/projects/${local.gcp_project_number}/locations/global/workloadIdentityPools/azure-cip-identity-pool/providers/azure-cip-oidc-provider",
+  #   "subject_token_type": "urn:ietf:params:oauth:token-type:jwt",
+  #   "token_url": "https://sts.googleapis.com/v1/token",
+  #   "credential_source": {
+  #       "url": "https://login.microsoftonline.com/${local.azure_tenant_id}/oauth2/v2.0/token"
+  #   },
+  #   "service_account_impersonation_url": "https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/${google_service_account.appender.email}:generateAccessToken",
+  #   "service_account_impersonation": {
+  #       "token_lifetime_seconds": 3600
+  #   }
+  # }
+  # EOT
+  gcp_credentials = "{\"universe_domain\":\"googleapis.com\",\"type\":\"external_account\",\"audience\":\"//iam.googleapis.com/projects/${local.gcp_project_number}/locations/global/workloadIdentityPools/azure-cip-identity-pool/providers/azure-cip-oidc-provider\",\"subject_token_type\":\"urn:ietf:params:oauth:token-type:jwt\",\"token_url\":\"https://sts.googleapis.com/v1/token\",\"credential_source\":{\"url\":\"https://login.microsoftonline.com/${local.azure_tenant_id}/oauth2/v2.0/token\"},\"service_account_impersonation_url\":\"https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/${google_service_account.appender.email}:generateAccessToken\",\"service_account_impersonation\":{\"token_lifetime_seconds\":3600}}"
+
 }

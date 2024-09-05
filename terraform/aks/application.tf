@@ -17,6 +17,17 @@ module "application_configuration" {
 
   config_variables = {
     PGSSLMODE        = local.postgres_ssl_mode
+      # The name of the BigQuery table we’re writing to.
+  #
+  # config.bigquery_table_name = ENV['BIGQUERY_TABLE_NAME']
+
+  # The name of the BigQuery project we’re writing to.
+  #
+  # config.bigquery_project_id = ENV['BIGQUERY_PROJECT_ID']
+
+  # The name of the BigQuery dataset we're writing to.
+  #
+  # config.bigquery_dataset = ENV['BIGQUERY_DATASET']
   }
   secret_variables = {
     DATABASE_URL = module.postgres.url
@@ -28,6 +39,10 @@ module "application_configuration" {
     APP_URL           = length(var.internet_hostnames) == 0 ? "" : "https://${var.internet_hostnames[0]}.education.gov.uk",
 #   keeping here as a reminder, but went be set in aks and need to confirm impact
     APP_ASSETS_URL    = length(var.asset_hostnames) == 0 ? "" : "https://${var.asset_hostnames[0]}.education.gov.uk"
+    GOOGLE_CLOUD_CREDENTIALS  = local.gcp_credentials
+    BIGQUERY_TABLE_NAME       = local.gcp_table_name
+    BIGQUERY_PROJECT_ID       = local.gcp_project
+    BIGQUERY_DATASET          = local.gcp_dataset_name
   }
 }
 
@@ -69,6 +84,7 @@ module "worker_application" {
   max_memory                 = var.sidekiq_memory_max
   replicas                   = var.sidekiq_replicas
   enable_logit               = var.enable_logit
+  enable_gcp_wif = true
 
   enable_prometheus_monitoring  = var.enable_prometheus_monitoring
 }

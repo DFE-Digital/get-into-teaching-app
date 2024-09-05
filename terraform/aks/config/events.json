@@ -1,0 +1,145 @@
+[
+  {
+    "description": "The timestamp at which the event occurred in the application.",
+    "mode": "REQUIRED",
+    "name": "occurred_at",
+    "type": "TIMESTAMP"
+  },
+  {
+    "description": "The type of the event, for example web_request. This determines the schema of the data which will be included in the data field.",
+    "mode": "REQUIRED",
+    "name": "event_type",
+    "type": "STRING"
+  },
+  {
+    "description": "If a user was logged in when they sent a web request event that is this event, then this is the UID of this user.",
+    "name": "user_id",
+    "type": "STRING"
+  },
+  {
+    "description": "Unique ID of the web request, if this event is a web request event",
+    "name": "request_uuid",
+    "type": "STRING"
+  },
+  {
+    "description": "Whether this web request was a GET or POST request, if this event is a web request event.",
+    "name": "request_method",
+    "type": "STRING"
+  },
+  {
+    "description": "The path, starting with a / and excluding any query parameters, of this web request, if this event is a web request",
+    "name": "request_path",
+    "type": "STRING"
+  },
+  {
+    "description": "The user agent of this web request, if this event is a web request. Allows a user's browser and operating system to be identified",
+    "name": "request_user_agent",
+    "type": "STRING"
+  },
+  {
+    "description": "The URL of any page the user was viewing when they initiated this web request, if this event is a web request. This is the full URL, including protocol (https://) and any query parameters, if the browser shared these with our application as part of the web request. It is very common for this referer to be truncated for referrals from external sites.",
+    "name": "request_referer",
+    "type": "STRING"
+  },
+  {
+    "description": "ARRAY of STRUCTs, each with a key and a value. Contains any query parameters that were sent to the application as part of this web reques, if this event is a web request.",
+    "fields": [
+      {
+        "description": "Name of the query parameter e.g. if the URL ended ?foo=bar then this will be foo.",
+        "mode": "REQUIRED",
+        "name": "key",
+        "type": "STRING"
+      },
+      {
+        "description": "Contents of the query parameter e.g. if the URL ended ?foo=bar then this will be bar.",
+        "mode": "REPEATED",
+        "name": "value",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "request_query",
+    "type": "RECORD"
+  },
+  {
+    "description": "Content type of any data that was returned to the browser following this web request, if this event is a web request. For example, 'text/html; charset=utf-8'. Image views, for example, may have a non-text/html content type.",
+    "name": "response_content_type",
+    "type": "STRING"
+  },
+  {
+    "description": "HTTP response code returned by the application in response to this web request, if this event is a web request. See https://developer.mozilla.org/en-US/docs/Web/HTTP/Status.",
+    "name": "response_status",
+    "type": "STRING"
+  },
+  {
+    "description": "ARRAY of STRUCTs, each with a key and a value. Contains a set of data points appropriate to the event_type of this event. For example, if this event was an entity create, update, delete or import event, data will contain the values of each field in the database after this event took place - according to the settings in the analytics.yml configured for this instance of dfe-analytics. Value be anonymised as a one way hash, depending on configuration settings.",
+    "fields": [
+      {
+        "description": "Name of the field in the entity_table_name table in the database after it was created or updated, or just before it was imported or destroyed.",
+        "mode": "REQUIRED",
+        "name": "key",
+        "type": "STRING"
+      },
+      {
+        "description": "Contents of the field in the database after it was created or updated, or just before it was imported or destroyed.",
+        "mode": "REPEATED",
+        "name": "value",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "DATA",
+    "type": "RECORD"
+  },
+  {
+    "description": "If event_type was an entity create, update, delete or import event, the name of the table in the database that this entity is stored in. NULL otherwise.",
+    "name": "entity_table_name",
+    "type": "STRING"
+  },
+  {
+    "description": "Currently left blank for future use.",
+    "mode": "REPEATED",
+    "name": "event_tags",
+    "type": "STRING"
+  },
+  {
+    "description": "One way hash of a combination of the user's IP address and user agent, if this event is a web request. Can be used to identify the user anonymously, even when user_id is not set. Cannot be used to identify the user over a time period of longer than about a month, because of IP address changes and browser updates.",
+    "name": "anonymised_user_agent_and_ip",
+    "type": "STRING"
+  },
+  {
+    "description": "The application environment that the event was streamed from.",
+    "name": "environment",
+    "type": "STRING"
+  },
+  {
+    "description": "The namespace of the instance of dfe-analytics that streamed this event. For example this might identify the name of the service that streamed the event.",
+    "name": "namespace",
+    "type": "STRING"
+  },
+  {
+    "description": "Defined in the same way as the DATA ARRAY of STRUCTs, except containing fields configured to be hidden in analytics_hidden_pii.yml",
+    "fields": [
+      {
+        "description": "Name of the field in the entity_table_name table in the database after it was created or updated, or just before it was imported or destroyed.",
+        "mode": "REQUIRED",
+        "name": "KEY",
+        "type": "STRING"
+      },
+      {
+        "description": "Contents of the field in the database after it was created or updated, or just before it was imported or destroyed.",
+        "mode": "REPEATED",
+        "name": "value",
+        "policyTags": {
+          "names": [
+            "projects/get-into-teaching/locations/europe-west2/taxonomies/6582996680844371982/policyTags/3882815557042264125"
+          ]
+        },
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "hidden_DATA",
+    "type": "RECORD"
+  }
+]
