@@ -40,7 +40,7 @@
       display: grid;
       grid-template-columns: .5fr $column-720 .5fr;
       grid-template-rows: 1fr;
-      gap: 0 0;
+      gap: 0;
 
       .signup-form::before {
         content: "";
