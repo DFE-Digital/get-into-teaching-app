@@ -83,7 +83,6 @@ gem "redis-session-store", ">= 0.11.4"
 gem "kaminari", "~> 1.2", ">= 1.2.2"
 gem "view_component", "~> 3.10.0"
 
-gem "google-api-client", ">= 0.53.0", require: false
 
 gem "net-smtp", ">= 0.3.3", require: false
 gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
@@ -142,6 +141,8 @@ group :development, :test do
   # Linting
   gem "erb_lint", ">= 0.1.1", require: false
   gem "mdl"
+
+  gem "google-api-client", ">= 0.53.0", require: false
 end
 
 group :development do
