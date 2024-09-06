@@ -53,6 +53,9 @@ DfE::Analytics.configure do |config|
 
   config.entity_table_checks_enabled = true
 
+  # Enable Azure to GCP Federation
+  config.azure_federated_auth = true
+
   # A proc which will be called with the rack env, and which should
   # return a boolean indicating whether the page is cached and will
   # be served by rack middleware.
