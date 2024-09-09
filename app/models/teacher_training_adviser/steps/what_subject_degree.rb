@@ -1,11 +1,12 @@
 module TeacherTrainingAdviser::Steps
   class WhatSubjectDegree < GITWizard::Step
     attribute :degree_subject, :string
+    attr_accessor :degree_subject_raw
 
     validates :degree_subject, presence: true
 
-    def self.options
-      Crm::TeachingSubject.all_hash
+    def available_degree_subjects
+      @available_degree_subjects ||= DfE::ReferenceData::Degrees::SUBJECTS.all
     end
 
     def skipped?
