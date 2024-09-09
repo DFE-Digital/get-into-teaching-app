@@ -1,1 +1,18 @@
-<div id="root"></div>
+<div id="root" tabindex="0" autofocus></div>
+
+<script type="text/javascript">
+
+  function setFocusToTopOfChat(){
+    // this is a function to ensure the focus starts at the top of the chat page;
+    // otherwise iOS Voiceover seems to start reading from wherever the user
+    // last clicked / at random
+
+    window.focus()
+    document.getElementById('root').focus();
+  }
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+    // in testing of Voiceover, we need a delay before switching the focus
+    window.setTimeout(setFocusToTopOfChat, 1000);
+  });
+</script>
