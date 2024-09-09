@@ -14,6 +14,15 @@
         <ul>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
+              title: "Teaching as a career",
+              description: "Learn about the career progression in teaching, and the support available for early career teachers and career changers.",
+              path: "/life-as-a-teacher/teaching-as-a-career",
+              image: "static/images/content/hero-images/teacher3.jpg"
+            )) %>
+        </ul>
+        <ul>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
               title: "Explore subjects you could teach",
               description: "Discover what you could teach, what teaching different subjects is really like, and how to take your next steps to become a teacher.",
               path: "/life-as-a-teacher/explore-subjects",
