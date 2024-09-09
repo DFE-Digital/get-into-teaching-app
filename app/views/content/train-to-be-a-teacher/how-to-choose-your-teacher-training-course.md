@@ -52,7 +52,7 @@ expander:
     title: salaried teacher training
     text: |-
       <p>
-      You can apply for a salaried teacher training course. However, these courses are limited in number and very competitive.
+      You can apply for a salaried teacher training course. However, places on these courses are limited and very competitive.
       </p>
       <p>
       Before you apply, contact the salaried teacher training provider to check you meet the entry requirements.
