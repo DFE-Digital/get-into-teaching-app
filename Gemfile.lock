@@ -182,8 +182,8 @@ GEM
       racc
     builder (3.3.0)
     byebug (11.1.3)
-    canonical-rails (0.2.14)
-      rails (>= 4.1, <= 7.1)
+    canonical-rails (0.2.15)
+      actionview (>= 4.1, <= 7.2)
     capybara (3.40.0)
       addressable
       matrix
@@ -196,7 +196,7 @@ GEM
     chef-utils (18.4.12)
       concurrent-ruby
     coderay (1.1.3)
-    concurrent-ruby (1.3.3)
+    concurrent-ruby (1.3.4)
     connection_pool (2.4.1)
     crack (1.0.0)
       bigdecimal
@@ -260,7 +260,7 @@ GEM
       stoplight (>= 2.1, < 4.0)
     fastimage (2.3.1)
     ffi (1.15.5)
-    foreman (0.87.2)
+    foreman (0.88.1)
     fugit (1.11.0)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
@@ -379,7 +379,7 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     mini_portile2 (2.8.7)
-    minitest (5.24.1)
+    minitest (5.25.1)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.27)
       tomlrb
@@ -397,7 +397,7 @@ GEM
       timeout
     net-smtp (0.5.0)
       net-protocol
-    nio4r (2.7.1)
+    nio4r (2.7.3)
     nokogiri (1.16.5)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -458,10 +458,10 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    rails_semantic_logger (4.14.0)
+    rails_semantic_logger (4.17.0)
       rack
       railties (>= 5.1)
-      semantic_logger (~> 4.13)
+      semantic_logger (~> 4.16)
     railties (7.0.2.4)
       actionpack (= 7.0.2.4)
       activesupport (= 7.0.2.4)
@@ -557,7 +557,7 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    semantic_logger (4.15.0)
+    semantic_logger (4.16.0)
       concurrent-ruby (~> 1.0)
     semantic_range (3.0.0)
     sentry-rails (5.17.3)
@@ -596,7 +596,7 @@ GEM
     skylight (6.0.4)
       activesupport (>= 5.2.0)
     smart_properties (1.17.0)
-    spring (4.1.0)
+    spring (4.2.1)
     spring-watcher-listen (2.1.0)
       listen (>= 2.7, < 4.0)
       spring (>= 4)
@@ -604,7 +604,7 @@ GEM
       redlock (~> 1.0)
     strscan (3.1.0)
     text (1.3.1)
-    thor (1.3.1)
+    thor (1.3.2)
     timeliness (0.4.5)
     timeout (0.4.1)
     tomlrb (2.0.3)
