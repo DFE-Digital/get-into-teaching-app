@@ -687,6 +687,7 @@ en:
         teacher_id: "Teacher reference number (optional)"
       teacher_training_adviser_steps_what_subject_degree:
         degree_subject: "What subject is your degree?"
+        degree_subject_nojs: "What subject is your degree?"
       teacher_training_adviser_steps_subject_like_to_teach:
         preferred_teaching_subject_id: "Which subject would you like to teach if you return to teaching?"
       teacher_training_adviser_steps_subject_taught:
@@ -805,6 +806,7 @@ en:
           If you give us your postcode, we'll let you know about events happening near you.
       teacher_training_adviser_steps_what_subject_degree:
         degree_subject: "Type to enter your degree subject or select from the suggestions."
+        degree_subject_nojs: "Type to enter your degree subject."
       teacher_training_adviser_steps_subject_interested_teaching:
         preferred_teaching_subject_id: "Choose a subject, even if you're not sure yet. We try and match you with an adviser based on your subject."
       teacher_training_adviser_steps_uk_telephone:

@@ -56,7 +56,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
     it "not returning, has degree, primary, has gcses, in the UK and telephone" do
       submit_choice_step("No", :returning_teacher)
       submit_choice_step("Yes", :have_a_degree)
-      submit_select_step("Physics", :what_subject_degree)
+      submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
       submit_select_step("2:1", :what_degree_class)
       submit_choice_step("Primary", :stage_interested_teaching)
       submit_choice_step("Yes", :gcse_maths_english)
@@ -75,7 +75,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
     it "not returning, has degree, secondary, retaking gcses, overseas and no telephone" do
       submit_choice_step("No", :returning_teacher)
       submit_choice_step("Yes", :have_a_degree)
-      submit_select_step("Mathematics", :what_subject_degree)
+      submit_fill_in_step("What subject is your degree?", "Mathematics", :what_subject_degree)
       submit_select_step("Not applicable", :what_degree_class)
       submit_choice_step("Secondary", :stage_interested_teaching)
       submit_choice_step("No", :gcse_maths_english)
@@ -94,7 +94,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       submit_choice_step("No", :returning_teacher)
       submit_choice_step("I'm studying for a degree", :have_a_degree)
       submit_choice_step("First year", :stage_of_degree)
-      submit_select_step("Physics", :what_subject_degree)
+      submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
       submit_choice_step("Secondary", :stage_interested_teaching)
       submit_select_step("Maths", :subject_interested_teaching)
       submit_date_of_birth_step(Date.new(1974, 3, 16))
@@ -109,7 +109,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       submit_choice_step("No", :returning_teacher)
       submit_choice_step("I'm studying for a degree", :have_a_degree)
       submit_choice_step("Final year", :stage_of_degree)
-      submit_select_step("Physics", :what_subject_degree)
+      submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
       submit_select_step("First class", :what_degree_class)
       submit_choice_step("Primary", :stage_interested_teaching)
       submit_choice_step("No", :gcse_maths_english)
@@ -203,7 +203,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_choice_step("Yes", :have_a_degree)
 
         expect_current_step(:what_subject_degree)
-        expect(page).to have_select("What subject is your degree?", selected: "Mathematics")
+        expect(page.find_field("What subject is your degree?").value).to eql("Mathematics")
         click_on_continue
 
         expect_current_step(:what_degree_class)
