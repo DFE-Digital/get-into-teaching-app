@@ -5,7 +5,7 @@
     <%= render "sections/govuk_javascript" %>
     <%= render(partial: "sections/content_errors") %>
 
-    <%= render HeaderComponent.new %>
+    <%= render HeaderComponent.new(@front_matter) %>
 
     <%= main_tag(class: "main-section welcome-guide") do %>
       <%= yield %>
