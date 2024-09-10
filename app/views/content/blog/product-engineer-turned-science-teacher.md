@@ -58,4 +58,4 @@ I believe every experience prior to going into teaching adds to the skills that 
 
 I have found the skills I learnt in engineering have stood me in good stead for a teaching career. I have never regretted my decision to go into this profession.
 
-If you're interested in switching your current role for a life in the classroom, [explore how you can train to teach if you're changing careers](/life-as-a-teacher/if-you-want-to-change-career). Or find out how you can [train to teach physics as an engineer](/life-as-a-teacher/engineers-teach-physics) like Chris.
+If you're interested in switching your current role for a life in the classroom, [explore how you can train to teach if you're changing careers](/life-as-a-teacher/if-you-want-to-change-career). Or find out how you can [train to teach physics as an engineer](/life-as-a-teacher/explore-subjects/engineers-teach-physics) like Chris.

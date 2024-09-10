@@ -90,7 +90,7 @@ You’ll get to experience a range of activities to help you get a feel for scho
 
 ### Watch pre-recorded lessons
 
-Many school and training provider websites have helpful information like “day in the life” videos and recorded lessons. You can also [observe teachers’ lessons](https://teachers.thenational.academy/lessons-for-itt) on the Oak National Academy website to help you get to know teaching better, before or alongside your ITT.
+Many school and training provider websites have helpful information like “day in the life” videos and recorded lessons. You can also [observe teachers’ lessons](https://www.thenational.academy/teachers) on the Oak National Academy website to help you get to know teaching better, before or alongside your ITT.
 
 ### Beyond the classroom
 
