@@ -20,7 +20,10 @@ describe Value do
   end
 
   describe "##get (class method)" do
-    before { stub_const("Value::PATH", "spec/fixtures/files/example_values/**/*.yml") }
+    before do
+      Value.remove_class_variable :@@data if Value.class_variable_defined? :@@data
+      stub_const("Value::PATH", "spec/fixtures/files/example_values/**/*.yml")
+    end
 
     subject { described_class.get(key) }
 
