@@ -21,7 +21,7 @@ describe Value do
 
   describe "##get (class method)" do
     before do
-      Value.remove_class_variable :@@data if Value.class_variable_defined? :@@data
+      described_class.remove_class_variable :@@data if described_class.class_variable_defined? :@@data
       stub_const("Value::PATH", "spec/fixtures/files/example_values/**/*.yml")
     end
 
