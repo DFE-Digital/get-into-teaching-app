@@ -7,7 +7,7 @@ related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Teach in England if you trained overseas : "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Who do you want to teach? : "/life-as-a-teacher/who-do-you-want-to-teach"
-navigation: 20.70
+navigation: 20.90
 navigation_title: Ukrainian teachers and trainees coming to the UK
 navigation_description: Find information and advice for Ukrainian citizens seeking training places and teaching jobs in England.
 date: "2022-06-24"
@@ -45,7 +45,7 @@ If you're coming to the UK from Ukraine, [check what you need to do before you t
 
 ### Get an international relocation payment (IRP) worth up to $nonuk_internationalrelocationpayment_value$
 
-If you are a teacher coming to England to teach languages or physics, you may be eligible for the IRP. [Learn more about the international relocation payment (IRP)](/non-uk-teachers/get-an-international-relocation-payment).
+If you're a teacher coming to England to teach languages or physics, you may be eligible for the IRP. [Learn more about the international relocation payment (IRP)](/non-uk-teachers/get-an-international-relocation-payment).
 
 
 ### Visas giving you the right to train to teach or teach in England
@@ -71,12 +71,11 @@ If you're already in the UK under a [different type of visa](https://www.gov.uk/
 If you're interested in working as a teacher and applying for [indefinite leave to remain in the UK](https://www.gov.uk/indefinite-leave-to-remain), you should consider a [Skilled Worker visa](/non-uk-teachers/visas-for-non-uk-teachers).   
 
 Time spent in the UK under the Skilled Worker visa counts towards an application for permanent residence. You'll still need to meet the eligibility requirements for this type of visa.
-You can apply for a Skilled Worker visa whichever type of visa you currently have allowing you to stay in the UK. 
+You can apply for a Skilled Worker visa no matter what type of visa you currently have that allows you to stay in the UK. 
 
 ### Safeguarding and criminal records checks
 
 Schools will assess your suitability to teach from a range of different sources, including:
-
 
 * 2 references from previous employers
 * your complete employment history
@@ -117,11 +116,11 @@ If you're not in the UK under one of these schemes, [find out about switching to
 
 ## Teach in England 
 
-If you're already a qualified teacher, you do not need to retrain to get a job as a teacher in England. However, you'll need:
+If you're already a qualified teacher, you do not need to retrain to get a job as a teacher in England. However, you'll need to:
 
-* to get English qualified teacher status (QTS), or be able to demonstrate strong non-UK qualifications and experience 
-* to pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
-* a high standard of written and spoken English – for example, [Common European Framework of Reference for Languages, English level B2](https://www.efset.org/cefr/b2/) 
+* get English qualified teacher status (QTS), or be able to demonstrate strong non-UK qualifications and experience 
+* pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
+* have a high standard of written and spoken English – for example, [Common European Framework of Reference for Languages, English level B2](https://www.efset.org/cefr/b2/) 
 
 ### English qualified teacher status (QTS)
 
@@ -137,7 +136,7 @@ If you're already a qualified teacher, you do not need to retrain to get a job a
 
 If you’re in the UK under a Ukrainian visa scheme and aged 19 or over, you're eligible for funding to study an English for Speakers for Other Languages (ESOL) course (as well as other educational or training courses).
 
-[Find your local authority ('council')](https://www.gov.uk/find-local-council) and then search their website for ESOL courses. Or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
+[Find your local authority (council)](https://www.gov.uk/find-local-council) and then search their website for ESOL courses. Or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
  
 You can also learn English with a private provider. Well respected English language courses include: 
 
@@ -154,7 +153,7 @@ Check with [assessment only training providers](/train-to-be-a-teacher/assessmen
 
 [Supply teachers](https://www.tes.com/jobs/careers-advice/supply-teaching/how-become-supply-teacher) fill in when schools are temporarily short of staff. Register with a supply teacher agency for short-term roles in school.  
 
-[Find your local authority ('council')](https://www.gov.uk/find-local-council) and then search their website for teaching roles.
+[Find your local authority (council)](https://www.gov.uk/find-local-council) and then search their website for teaching roles.
 
 You could also consider [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system before you apply for teaching jobs. [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) lists these jobs. 
 
@@ -172,7 +171,7 @@ Your [salary as a teacher](/life-as-a-teacher/pay-and-benefits/teacher-pay) will
 
 [Welcome guide for Ukrainians in the UK](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1086088/Ukraine_Welcome_Guide.pdf).
 
-[Ukrainians in the UK](https://www.ukrainiansintheuk.info/index.htm) – an online encyclopaedia.
+[Ukrainians in the UK online encyclopaedia](https://www.ukrainiansintheuk.info/index.htm).
 
 [The Association of Ukrainians in Great Britain (AUGB)](https://www.augb.co.uk/) – including a list of [Ukrainian community schools in the UK](https://www.augb.co.uk/about-us-and-our-community/ukrainian-community-schools-in-great-britain).
 
