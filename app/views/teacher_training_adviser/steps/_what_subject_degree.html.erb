@@ -8,7 +8,6 @@
     <%= f.hidden_field :nojs, value: true, data: {'what-subject-degree-target': 'noJSEnabled' } %>
   <% end %>
 
-
   <%= render DfE::Autocomplete::View.new(
     f,
     attribute_name: :degree_subject,
