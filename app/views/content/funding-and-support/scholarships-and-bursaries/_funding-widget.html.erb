@@ -1,19 +1,32 @@
-<p>You may be eligible for a bursary or scholarship if your teacher training course leads to <%= link_to("qualified teacher status (QTS)", page_path("train-to-be-a-teacher/what-is-qts")) %>. These are tax-free amounts of money you receive to train in certain subjects. You do not need to pay them back.</p>
+<div class="content">
+  <p>If you want to do postgraduate teacher training in England that leads to <a href="/train-to-be-a-teacher/what-is-qts">qualified teacher status (QTS)</a>, you may be eligible for a bursary or scholarship.</p>
+</div>
 
-<p>Your bursary or scholarship will be paid in a minimum of 10 equal monthly instalments over the duration of your course by your teacher training provider.</p>
+<h2 class="heading--box-blue">What are bursaries and scholarships?</h2>
 
-<p>Your teacher training provider will confirm the payment dates and amounts.</p>
-
-<p>The following amounts apply if you're starting your teacher training course between September 2024 and July 2025.</p>
-
-<%= render Content::ExpanderComponent.new(
+<div class="content">
+  <section class="col col-720">
+    <p>Bursaries are tax-free payments you receive if you're training to teach certain subjects. If you're eligible for a bursary, you'll get it automatically.</p>
+    <p>Scholarships are awarded by organisations with a passion for their subject area. They combine tax-free payments with extra benefits like subject-specific support, mentoring and networking opportunities. If you're eligible, you can apply directly to the scholarship provider.</p>
+    <p>You cannot receive both a bursary and a scholarship.</p>
+    <p>If you receive either a bursary or a scholarship, you do not need to pay it back.</p>
+    <p>Bursaries and scholarships are not available for:</p>
+    <ul>
+      <li>every subject</li>
+      <li>salaried teacher training</li>
+    </ul>
+    <%= render Content::ExpanderComponent.new(
     title: "bursaries and scholarships",
-    text: "If you train to teach languages or physics, you may be eligible for a bursary or scholarship. Learn more about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">fees and financial support for non-UK trainee teachers</a>.",
+    text: "If you train to teach languages or physics, you may be eligible for a bursary or scholarship. You're unlikely to be eligible for bursaries or scholarships in other subjects.",
+    link_title: "Learn more about fees and financial support for non-UK trainee teachers.",
+    link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
   ) %>
-
-<section id="funding-widget">
-  <%= render FundingWidgetComponent.new(
-    @funding_widget,
-    page_path(request.path.delete_prefix("/"), anchor: 'funding-widget'))
-  %>
-</section>
+    <p>The figures on this page apply if you're starting your training <%= value :bursaries_fundingdates %>.</p>
+  </section>
+  <section id="funding-widget">
+    <%= render FundingWidgetComponent.new(
+      @funding_widget,
+      page_path(request.path.delete_prefix("/"), anchor: 'funding-widget'))
+   %>
+  </section>
+</div>

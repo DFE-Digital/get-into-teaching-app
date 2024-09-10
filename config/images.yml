@@ -1,5 +1,12 @@
 ---
 # hero images
+"static/images/content/hero-images/chemistry-crop.jpg":
+  # A teacher talking to students
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/chemistry-crop--mobile.jpg"
+    - "static/images/content/hero-images/chemistry-crop--tablet.jpg"
+
 "static/images/content/hero-images/teacher.jpg":
   # A teacher talking to students
   alt: ""
@@ -146,20 +153,6 @@
   variants:
     - "static/images/content/hero-images/0025--mobile.jpg"
     - "static/images/content/hero-images/0025--tablet.jpg"
-
-"static/images/content/hero-images/0027.jpg":
-  # Grow as only a teacher can.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0027--mobile.jpg"
-    - "static/images/content/hero-images/0027--tablet.jpg"
-
-"static/images/content/hero-images/0028.jpg":
-  # A teacher taking notes in a classroom.
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/0028--mobile.jpg"
-    - "static/images/content/hero-images/0028--tablet.jpg"
 
 "static/images/content/hero-images/0029.jpg":
   # A geography teacher talking to pupils in a classroom.

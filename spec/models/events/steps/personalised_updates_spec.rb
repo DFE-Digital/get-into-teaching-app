@@ -2,7 +2,6 @@ require "rails_helper"
 
 describe Events::Steps::PersonalisedUpdates do
   include_context "with wizard step"
-  include_context "with stubbed types api"
 
   it_behaves_like "a with wizard step"
 

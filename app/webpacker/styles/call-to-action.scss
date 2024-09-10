@@ -10,6 +10,12 @@
 
   @include mq($until: tablet) {
     flex-direction: column;
+    
+  &--simple {
+      picture {
+        display: none;
+      }
+    }
   }
 
   &__icon {
@@ -252,7 +258,7 @@
 
     .call-to-action__heading {
       color: $black;
-      background: $pink;
+      background: $yellow;
       display: inline-block;
       padding: .5em 1.25em;
       margin-left: -22px;
@@ -289,15 +295,5 @@
       }
     }
 
-    &::before {
-      content: "";
-      display: block;
-      width: calc(50% + 1.25em);
-      height: calc(50% + 1.25em);
-      position: absolute;
-      bottom: -1.25em;
-      right: -1.25em;
-      background-color: $purple;
-    }
   }
 }

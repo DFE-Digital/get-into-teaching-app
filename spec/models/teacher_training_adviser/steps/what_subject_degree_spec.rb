@@ -13,10 +13,10 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatSubjectDegree do
     it { is_expected.to allow_value("Maths").for :degree_subject }
   end
 
-  describe "#options" do
-    subject { described_class.options }
+  describe "#available_degree_subjects" do
+    subject { instance.available_degree_subjects }
 
-    it { is_expected.to eq(Crm::TeachingSubject.all_hash) }
+    it { is_expected.to eq(DfE::ReferenceData::Degrees::SUBJECTS.all) }
   end
 
   describe "#skipped?" do

@@ -47,185 +47,147 @@ en:
   funding_widget:
     subjects:
       primary:
-        name: "Primary"
+        name: "Primary (all subjects)"
         group: "Primary"
         sub_head: "Primary"
-        funding: ""
-      primary_with_english:
-        name: "Primary with English"
-        group: "Primary"
-        sub_head: "Primary with English"
-        funding: ""
-      primary_with_geography_and_history:
-        name: "Primary with geography and history"
-        group: "Primary"
-        sub_head: "Primary with geography and history"
-        funding: ""
-      primary_with_mathematics:
-        name: "Primary with mathematics"
-        group: "Primary"
-        sub_head: "Primary with mathematics"
-        funding: ""
-      primary_with_modern_languages:
-        name: "Primary with modern languages"
-        group: "Primary"
-        sub_head: "Primary with modern languages"
-        funding: ""
-      primary_with_physical_group:
-        name: "Primary with physical education"
-        group: "Primary"
-        sub_head: "Primary with physical education"
-        funding: ""
-      primary_with_science:
-        name: "Primary with science"
-        group: "Primary"
-        sub_head: "Primary with science"
         funding: ""
       art_and_design:
         name: "Art and design"
         group: "Secondary"
         sub_head: "Art and design - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_artanddesign} are available for trainee art and design teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Bursaries of %{bursaries_postgraduate_artanddesign} are available for trainee art and design teachers if you're eligible."
       biology:
         name: "Biology"
         group: "Secondary"
         sub_head: "Biology - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_biology} are available for trainee biology teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Bursaries of %{bursaries_postgraduate_biology} are available for trainee biology teachers if you're eligible."
       business_studies:
         name: "Business studies"
         group: "Secondary"
         sub_head: "Business - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       chemistry:
         name: "Chemistry"
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
-        funding: "Scholarships of %{scholarships_chemistry} and bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Scholarships of %{scholarships_chemistry} and bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you're eligible."
       citizenship:
         name: "Citizenship"
         group: "Secondary"
         sub_head: "Citizenship - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       classics:
         name: "Classics"
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding: |-
 
-          Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible).
+          Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
 
           Your course provider will confirm if this applies.
       communication_and_media_studies:
         name: "Communication and media studies"
         group: "Secondary"
         sub_head: "Communication and media studies - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       computing:
         name: "Computing"
         group: "Secondary"
         sub_head: "Computing - Secondary"
-        funding: "Scholarships of %{scholarships_computing} and bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
-        next_steps: |-
-          Find out more about <a href="/life-as-a-teacher/computing">how to become a computing teacher</a>.
+        funding: "Scholarships of %{scholarships_computing} and bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you're eligible."
       dance:
         name: "Dance"
         group: "Secondary"
         sub_head: "Dance - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       design_and_technology:
         name: "Design and technology"
         group: "Secondary"
         sub_head: "Design and technology - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_designandtechnology} are available for trainee design and technology teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Bursaries of %{bursaries_postgraduate_designandtechnology} are available for trainee design and technology teachers if you're eligible."
       drama:
         name: "Drama"
         group: "Secondary"
         sub_head: "Drama - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       economics:
         name: "Economics"
         group: "Secondary"
         sub_head: "Economics - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       english:
         name: "English"
         group: "Secondary"
         sub_head: "English - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_english} are available for trainee English teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Bursaries of %{bursaries_postgraduate_english} are available for trainee English teachers if you're eligible."
       english_as_a_second_or_other_language:
         name: "English as a second or other language"
         group: "Secondary"
         sub_head: "English as a second or other language - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       geography:
         name: "Geography"
         group: "Secondary"
         sub_head: "Geography - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_geography} are available for trainee geography teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Bursaries of %{bursaries_postgraduate_geography} are available for trainee geography teachers if you're eligible."
       health_and_social_care:
         name: "Health and social care"
         group: "Secondary"
         sub_head: "Health and social care - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       history:
         name: "History"
         group: "Secondary"
         sub_head: "History - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       languages:
         name: "Languages (including ancient languages)"
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
         funding: |-
-          Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers.
+          Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers (including non-UK citizens).
 
-          Bursaries of %{bursaries_postgraduate_languagesother} are available for all trainee language teachers, including ancient languages.
-
-          Non-UK citizens without indefinite leave to remain in the UK are eligible for this support.
+          Bursaries of %{bursaries_postgraduate_languagesother} are available for all trainee language teachers (including non-UK citizens). These bursaries include ancient languages.
       maths:
         name: "Maths"
         group: "Secondary"
         sub_head: "Maths - Secondary"
-        funding: "Scholarships of %{scholarships_maths} and bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
-        next_steps: |-
-          If you have a passion for maths, find out more about <a href="/life-as-a-teacher/maths">becoming a maths teacher</a>.
+        funding: "Scholarships of %{scholarships_maths} and bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you're eligible."
       music:
         name: "Music"
         group: "Secondary"
         sub_head: "Music - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_music} are available for trainee music teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Bursaries of %{bursaries_postgraduate_music} are available for trainee music teachers if you're eligible."
       physical_group:
         name: "Physical education"
         group: "Secondary"
         sub_head: "Physical education - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       physics:
         name: "Physics"
         group: "Secondary"
         sub_head: "Physics - Secondary"
         funding: "Scholarships of %{scholarships_physics} and bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers (including non-UK citizens)."
-        next_steps: |-
-          Learn more about <a href="/life-as-a-teacher/physics">how to become a physics teacher</a>.
       psychology:
         name: "Psychology"
         group: "Secondary"
         sub_head: "Psychology - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       religious_group:
         name: "Religious education"
         group: "Secondary"
         sub_head: "Religious education - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_religiouseducation} are available for trainee religious education teachers if you’re eligible (non-UK citizens without indefinite leave to remain in the UK are unlikely to be eligible)."
+        funding: "Bursaries of %{bursaries_postgraduate_religiouseducation} are available for trainee religious education teachers if you're eligible."
       science:
         name: "Science"
         group: "Secondary"
         sub_head: "Science - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
       social_sciences:
         name: "Social sciences"
         group: "Secondary"
         sub_head: "Social sciences - Secondary"
-        funding: ""
+        funding: "Scholarships or bursaries are not available for this subject."
 
   event_types:
     222750012:
@@ -842,7 +804,7 @@ en:
         address_postcode: |-
           If you give us your postcode, we'll let you know about events happening near you.
       teacher_training_adviser_steps_what_subject_degree:
-        degree_subject: "If your subject is not listed choose the option that is nearest to your degree."
+        degree_subject: "Type to enter your degree subject or select from the suggestions."
       teacher_training_adviser_steps_subject_interested_teaching:
         preferred_teaching_subject_id: "Choose a subject, even if you're not sure yet. We try and match you with an adviser based on your subject."
       teacher_training_adviser_steps_uk_telephone:
