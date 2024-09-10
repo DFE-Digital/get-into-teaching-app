@@ -396,7 +396,7 @@ redirects:
 # Life as a teacher new section
   "/is-teaching-right-for-me": "/life-as-a-teacher"
   "/is-teaching-right-for-me/teacher-pay-and-benefits": "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-  "/is-teaching-right-for-me/career-progression": "/life-as-a-teacher/pay-and-benefits/career-progression"
+  "/is-teaching-right-for-me/career-progression": "/life-as-a-teacher/teaching-as-a-career/career-progression"
   "/is-teaching-right-for-me/what-pension-does-a-teacher-get": "/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme"
   "/is-teaching-right-for-me/if-you-want-to-change-career": "/life-as-a-teacher/if-you-want-to-change-career"
   "/is-teaching-right-for-me/who-do-you-want-to-teach": "/life-as-a-teacher/who-do-you-want-to-teach"
@@ -408,7 +408,7 @@ redirects:
   "/is-teaching-right-for-me/become-a-further-education-teacher": "/life-as-a-teacher/become-a-further-education-teacher"
   "/is-teaching-right-for-me/become-an-early-years-teacher": "/life-as-a-teacher/become-an-early-years-teacher"
   "/life-as-a-teacher/teacher-pay-and-benefits": "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-  "/life-as-a-teacher/career-progression": "/life-as-a-teacher/pay-and-benefits/career-progression"
+  "/life-as-a-teacher/career-progression": "/life-as-a-teacher/teaching-as-a-career/career-progression"
   "/life-as-a-teacher/what-pension-does-a-teacher-get": "/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme"
   "/life-as-a-teacher/maths": "/life-as-a-teacher/explore-subjects/maths"
   "/life-as-a-teacher/physics": "/life-as-a-teacher/explore-subjects/physics"
@@ -417,3 +417,7 @@ redirects:
   "/subjects/physics": "/life-as-a-teacher/explore-subjects/physics"
   "/subjects/maths": "/life-as-a-teacher/explore-subjects/maths"
   "/subjects/engineers-teach-physics": "/life-as-a-teacher/explore-subjects/engineers-teach-physics"
+  "/life-as-a-teacher/pay-and-benefits/career-progression": "/life-as-a-teacher/teaching-as-a-career/career-progression"
+  "/life-as-a-teacher/if-you-want-to-change-career":  "/life-as-a-teacher/teaching-as-a-career/change-careers"
+  "/life-as-a-teacher/early-career-teachers":  "/life-as-a-teacher/teaching-as-a-career/early-career-teachers"
+ 
