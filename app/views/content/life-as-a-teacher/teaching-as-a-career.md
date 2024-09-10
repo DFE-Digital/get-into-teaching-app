@@ -2,7 +2,7 @@
 title: "Teaching as a career"
 heading: "Teaching as a career"
 category: Life as a teacher
-image: "static/images/content/hero-images/physics_1383.jpg"
+image: "static/images/content/hero-images/0029.jpg"
 description: |-
   Learn about the career progression in teaching, and the support available for early career teachers and career changers.
 navigation: 40.10

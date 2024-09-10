@@ -1,6 +1,6 @@
 ---
 title: Career change to teaching
-heading: How do I change to a career in teaching?
+heading: Change to a career in teaching
 description: |-
   Find out what extra support you can get if you want a career change into teaching. Bring your skills and experience to life in the classroom.
 related_content:
