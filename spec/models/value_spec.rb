@@ -20,9 +20,9 @@ describe Value do
   end
 
   describe "##get (class method)" do
-    subject { described_class.get(key) }
-
     before { stub_const("Value::PATH", "spec/fixtures/files/example_values/**/*.yml") }
+
+    subject { described_class.get(key) }
 
     context "when the key contains hyphens" do
       let(:key) { "data2-example-value-with-hyphens" }
