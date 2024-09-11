@@ -7,10 +7,6 @@ title_paragraph: |-
   Tax-free bursaries of $bursaries_postgraduate_artanddesign$ are available for eligible trainee art and design teachers.</p>
 description: |-
     Find out how to become an art and design teacher, including what you'll be teaching and what funding is available to help you train.
-subcategory: What to teach
-navigation: 5.42
-navigation_title: Art and design
-navigation_description: Find out how to become an art and design teacher and inspire children to fuel their passion for creativity.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/maths.jpg"
@@ -20,7 +16,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/art-and-design/header"
-  - "content/life-as-a-teacher/art-and-design/article"
-  - "content/life-as-a-teacher/art-and-design/adviser-promo-art-and-design"
+  - "content/life-as-a-teacher/explore-subjects/art-and-design/header"
+  - "content/life-as-a-teacher/explore-subjects/art-and-design/article"
+  - "content/life-as-a-teacher/explore-subjects/art-and-design/adviser-promo-art-and-design"
 ---
