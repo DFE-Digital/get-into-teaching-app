@@ -25,6 +25,10 @@ describe Value do
       stub_const("Value::PATH", "spec/fixtures/files/example_values/**/*.yml")
     end
 
+    after do
+      described_class.remove_class_variable :@@data if described_class.class_variable_defined? :@@data
+    end
+
     subject { described_class.get(key) }
 
     context "when the key contains hyphens" do
