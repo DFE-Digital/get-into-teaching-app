@@ -111,5 +111,5 @@ class LinkChecker
 end
 
 class MonetaryChecker
-  MONEY_REGEXP = /([$£€]\d+(,\d{3})*([.,]\d{1,2}p?)?k?)/m
+  MONEY_REGEXP = /(([$£€]|&dollar;|&pound;|&euro;|&#36;|&#163;|&#8364;)\d+(,\d{3})*([.,]\d{1,2}p?)?k?)/m
 end

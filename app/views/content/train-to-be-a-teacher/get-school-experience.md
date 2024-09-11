@@ -5,7 +5,7 @@ subcategory: Postgraduate teacher training
 description: |-
   Get school experience to explore what life is like in a primary or secondary classroom and find out if teaching is right for you.
 related_content:
-    Teacher pay and benefits : "/life-as-a-teacher/teacher-pay-and-benefits"
+    Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     Who do you want to teach? : "/life-as-a-teacher/who-do-you-want-to-teach"
     What is a Get Into Teaching event? : "/events/about-get-into-teaching-events"
 calls_to_action:
@@ -90,7 +90,7 @@ You’ll get to experience a range of activities to help you get a feel for scho
 
 ### Watch pre-recorded lessons
 
-Many school and training provider websites have helpful information like “day in the life” videos and recorded lessons. You can also [observe teachers’ lessons](https://teachers.thenational.academy/lessons-for-itt) on the Oak National Academy website to help you get to know teaching better, before or alongside your ITT.
+Many school and training provider websites have helpful information like “day in the life” videos and recorded lessons. You can also [observe teachers’ lessons](https://www.thenational.academy/teachers) on the Oak National Academy website to help you get to know teaching better, before or alongside your ITT.
 
 ### Beyond the classroom
 

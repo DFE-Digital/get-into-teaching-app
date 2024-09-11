@@ -10,10 +10,6 @@ title_paragraph: |-
 description: |-
    Find out how to become a computing teacher including what you'll be teaching and what funding is available to help you train.
 backlink: "../../"
-subcategory: What to teach
-navigation: 5.43
-navigation_title: Computing
-navigation_description: Discover how computing is vital, helping children learn digital skills they'll need throughout life.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/0036.jpg"
@@ -23,7 +19,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/computing/header"
-  - "content/life-as-a-teacher/computing/article"
-  - "content/life-as-a-teacher/computing/adviser-promo-computing"
+  - "content/life-as-a-teacher/explore-subjects/computing/header"
+  - "content/life-as-a-teacher/explore-subjects/computing/article"
+  - "content/life-as-a-teacher/explore-subjects/computing/adviser-promo-computing"
 ---

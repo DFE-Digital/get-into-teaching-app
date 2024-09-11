@@ -1,0 +1,29 @@
+<div class="row">
+  <section class="category col-space-m">
+    <section class="container category__cards main-section">
+      <nav class="category__nav-cards">
+        <ul>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Teacher pay",
+              description: "Find out the starting salary for a qualified teacher and how your pay could increase during your career.",
+              path: "/life-as-a-teacher/pay-and-benefits/teacher-pay",
+              image: "static/images/content/hero-images/0031.jpg"
+            )) %>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Teacher pensions",
+              description: "Learn more about the teachers' pension scheme which is one of the most generous in the country.",
+              path: "/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme"
+            )) %>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Teacher insights: moving up the career ladder",
+              description: "Top tips from teacher training advisers on how you can progress a career in teaching.",
+              path: "/life-as-a-teacher/pay-and-benefits/career-progression"
+            )) %>
+        </ul>
+      </nav>
+    </section>
+  </section>
+</div>

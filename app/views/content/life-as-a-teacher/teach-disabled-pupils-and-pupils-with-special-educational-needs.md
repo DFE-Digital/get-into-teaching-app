@@ -33,7 +33,7 @@ No matter what settings you train and work in – whether it's mainstream school
 
 $q-jane-wilkinson$
 
-You can [find a teacher training course](https://www.find-postgraduate-teacher-training.service.gov.uk/) and filter by 'courses with a SEND specialism' if you have a particular interest in the area.
+You can [find a teacher training course](https://find-teacher-training-courses.service.gov.uk/) and filter by 'courses with a SEND specialism' if you have a particular interest in the area.
 
 However, it’s not essential to do a course specialising in SEND.
 

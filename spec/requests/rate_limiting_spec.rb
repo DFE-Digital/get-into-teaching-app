@@ -1,7 +1,6 @@
 require "rails_helper"
 
 describe "Rate limiting", type: :request do
-  include_context "with stubbed types api"
   include_context "with stubbed candidate create access token api"
 
   let(:ip) { "1.2.3.4" }

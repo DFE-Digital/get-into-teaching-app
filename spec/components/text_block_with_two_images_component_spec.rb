@@ -7,7 +7,7 @@ RSpec.describe TextBlockWithTwoImagesComponent, type: "component" do
   let(:image_1_path) { "static/images/content/hero-images/0032.jpg" }
   let(:image_1_alt) { "Photo 1" }
 
-  let(:image_2_path) { "static/images/content/hero-images/0027.jpg" }
+  let(:image_2_path) { "static/images/content/hero-images/0030.jpg" }
   let(:image_2_alt) { "Photo 2" }
   let(:colour) { nil }
 

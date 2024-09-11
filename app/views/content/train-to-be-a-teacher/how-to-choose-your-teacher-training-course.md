@@ -48,6 +48,15 @@ expander:
       <p>
       Learn more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.
       </p>
+  salaried-teacher-training:
+    title: salaried teacher training
+    text: |-
+      <p>
+      You can apply for a salaried teacher training course. However, places on these courses are limited and very competitive.
+      </p>
+      <p>
+      Before you apply, contact the salaried teacher training provider to check you meet the entry requirements.
+      </p>
   what-to-check-with-training-providers:
     title: what to check with training providers
     text: |-
@@ -108,9 +117,11 @@ $fee-funded-teacher-training$
 
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
 
-Places on salaried courses are limited and very competitive. If you’re a non-UK citizen, you're very unlikely to get a place on a salaried course. 
+Places on salaried courses are limited and very competitive. 
 
 You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
+
+$salaried-teacher-training$
 
 ## The type of course provider 
 

@@ -7,9 +7,10 @@ content:
     - content/landing/what-teaching-taught-me/mailing-list
     - content/landing/what-teaching-taught-me/content
     - content/landing/what-teaching-taught-me/promo
-image: "static/images/content/hero-images/0028.jpg"
+image: "static/images/content/hero-images/english.jpg"
 layout: "layouts/minimal"
 colour: pink-blue
 talk_to_us: false
 noindex: true
+breadcrumbs: false
 ---
