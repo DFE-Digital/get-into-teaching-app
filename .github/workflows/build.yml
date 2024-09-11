@@ -398,9 +398,10 @@ jobs:
           # Copy files from separate artifacts into one directory
           mkdir ${{github.workspace}}/code_coverage
           cp -r ${{github.workspace}}/${{ env.code-coverage-artifact-name }}_*/ ${{github.workspace}}/code_coverage
+          ls -la ${{github.workspace}}/code_coverage
 
           docker run -t --rm -v ${{github.workspace}}/code_coverage:${COVERAGE_DIR} -e RAILS_ENV=test -e COVERAGE_DIR \
-            ${{env.DOCKER_IMAGE_TEST}} bundle exec rake coverage:collate
+            ${{env.DOCKER_IMAGE_TEST}} bundle exec rake coverage:collate --trace
         env:
           COVERAGE_DIR: /app/coverage
 
