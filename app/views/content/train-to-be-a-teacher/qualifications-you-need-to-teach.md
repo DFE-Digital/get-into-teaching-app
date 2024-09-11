@@ -8,7 +8,7 @@ navigation: 20.20
 navigation_title: Qualifications you need to be a teacher
 navigation_description: Check what qualifications you need to teach in primary, secondary and special schools in England.
 related_content:
-    Teacher pay and benefits: "/life-as-a-teacher/teacher-pay-and-benefits"
+    Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     Train to be a teacher if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Teacher training : "/train-to-be-a-teacher/initial-teacher-training"
     My career change to teaching : "/blog/my-career-change-to-teaching"
@@ -46,7 +46,7 @@ Different training providers may also have specific criteria. For example, some 
 
 Some training providers may consider candidates with pending GCSEs. If you do not have the GCSEs required, they may also ask you to sit an equivalency test or to offer other evidence to show your ability.
 
-Talk to your teacher training provider or [find a course](https://www.find-postgraduate-teacher-training.service.gov.uk/) to check what your provider will accept.
+Talk to your teacher training provider or [find a course](https://find-teacher-training-courses.service.gov.uk/) to check what your provider will accept.
 
 $check-your-qualifications$
 

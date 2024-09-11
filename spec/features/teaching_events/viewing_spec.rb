@@ -1,8 +1,6 @@
 require "rails_helper"
 
 RSpec.feature "Searching for teaching events", type: :feature do
-  include_context "with stubbed types api"
-
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).and_return(event)
   end

@@ -162,7 +162,7 @@ For a short-term unpaid placement, you can [get school experience in a primary o
 
 ### Salaries and benefits
 
-Your [salary as a teacher](/life-as-a-teacher/teacher-pay-and-benefits) will depend on whether you have QTS, your level of experience, your school and your location.
+Your [salary as a teacher](/life-as-a-teacher/pay-and-benefits/teacher-pay) will depend on whether you have QTS, your level of experience, your school and your location.
 
 
 
