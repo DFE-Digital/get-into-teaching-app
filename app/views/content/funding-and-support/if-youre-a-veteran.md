@@ -72,7 +72,7 @@ Our telephone service is available Monday to Friday between 8:30am and 5:30pm, e
 
 ## Military equivalent qualifications
 
-You’ll need different qualifications depending on [who you want to teach](/life-as-a-teacher/who-do-you-want-to-teach).
+You’ll need different qualifications depending on [who you want to teach](/life-as-a-teacher/ages-and-specialisms/age-groups-you-could-teach).
 
 If you’re unsure about whether your qualifications achieved through military service meet the standard required, talk to your course provider, or a [teacher training adviser](/teacher-training-advisers).
 

@@ -87,7 +87,7 @@ You should use your personal statement to explain why you feel passionate about 
 
 If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can talk about that, too. 
 
-If you’re not sure if you want to teach primary or secondary, you can [find out more about teaching different age groups](/life-as-a-teacher/who-do-you-want-to-teach). 
+If you’re not sure if you want to teach primary or secondary, you can [find out more about teaching different age groups](/life-as-a-teacher/ages-and-specialisms/age-groups-you-could-teach). 
 
 ## Do I need school experience? 
 

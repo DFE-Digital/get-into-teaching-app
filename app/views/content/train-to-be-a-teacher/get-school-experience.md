@@ -6,7 +6,7 @@ description: |-
   Get school experience to explore what life is like in a primary or secondary classroom and find out if teaching is right for you.
 related_content:
     Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    Who do you want to teach? : "/life-as-a-teacher/who-do-you-want-to-teach"
+    Age groups you could teach : "/life-as-a-teacher/ages-and-specialisms/age-groups-you-could-teach"
     What is a Get Into Teaching event? : "/events/about-get-into-teaching-events"
 calls_to_action:
     get-school-experience:
