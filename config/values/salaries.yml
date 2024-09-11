@@ -53,3 +53,7 @@ salaries:
 # Additional payments
   tlr:
     max: £16,553
+# Example variables - used in documentation
+  example:
+    min: £30,000
+salaries_example_max: £41k
