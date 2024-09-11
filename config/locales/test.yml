@@ -4,5 +4,5 @@ test:
       maths:
         name: "Test Subject"
         group: "Secondary"
-        sub_head: "Test Subject - example salary: %{salaries_example_max}"
-        funding: "If you have a passion for testing example date: %{dates_example_opening}"
+        sub_head: "Maths - starting salary: %{salaries_starting_min}"
+        funding: "Bursaries of %{bursaries_postgraduate_maths} are available."
