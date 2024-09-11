@@ -7,11 +7,6 @@ title_paragraph: |-
   Tax-free bursaries of $bursaries_postgraduate_designandtechnology$ are available for eligible trainee design and technology teachers.</p>
 description: |-
    Find out how to become a design and technology teacher including what you'll be teaching and what funding is available to help you train.
-backlink: "../../"
-subcategory: What to teach
-navigation: 5.43
-navigation_title: Design and technology
-navigation_description: Find out how to become a design and technology teacher to empower pupils to turn their ideas into reality.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/0037.jpg"
@@ -21,7 +16,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/design-and-technology/header"
-  - "content/life-as-a-teacher/design-and-technology/article"
-  - "content/life-as-a-teacher/design-and-technology/adviser-promo-design-and-technology"
+  - "content/life-as-a-teacher/explore-subjects/design-and-technology/header"
+  - "content/life-as-a-teacher/explore-subjects/design-and-technology/article"
+  - "content/life-as-a-teacher/explore-subjects/design-and-technology/adviser-promo-design-and-technology"
 ---
