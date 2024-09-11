@@ -157,42 +157,42 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
       wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:studying]
     end
 
-    it "returns current calendar year + 2 years if first year ends before 17th September" do
+    it "returns current calendar year + 2 years if degree stage is 'first year', and date is before 17th September" do
       wizardstore["degree_status_id"] = TeacherTrainingAdviser::Steps::StageOfDegree::NOT_FINAL_YEAR[:first_year]
       travel_to(Date.new(2022, 9, 16)) do
         expect(instance.inferred_year_id).to eq(12_922)
       end
     end
 
-    it "returns current calendar year + 3 years if first year ends on or after 17th September" do
+    it "returns current calendar year + 3 years if degree stage is 'first year', and date is on or after 17th September" do
       wizardstore["degree_status_id"] = TeacherTrainingAdviser::Steps::StageOfDegree::NOT_FINAL_YEAR[:first_year]
       travel_to(Date.new(2022, 9, 17)) do
         expect(instance.inferred_year_id).to eq(12_923)
       end
     end
 
-    it "returns current calendar year + 1 years if second year ends before 17th September" do
+    it "returns current calendar year + 1 year if degree stage is 'second year', and date is before 17th September" do
       wizardstore["degree_status_id"] = TeacherTrainingAdviser::Steps::StageOfDegree::NOT_FINAL_YEAR[:second_year]
       travel_to(Date.new(2022, 9, 16)) do
         expect(instance.inferred_year_id).to eq(12_921)
       end
     end
 
-    it "returns current calendar year + 2 year if second year ends on or after 17th September" do
+    it "returns current calendar year + 2 years if degree stage is 'second year', and date is on or after 17th September" do
       wizardstore["degree_status_id"] = TeacherTrainingAdviser::Steps::StageOfDegree::NOT_FINAL_YEAR[:second_year]
       travel_to(Date.new(2022, 9, 17)) do
         expect(instance.inferred_year_id).to eq(12_922)
       end
     end
 
-    it "returns current calendar year + 1 years if other ends before 17th September" do
+    it "returns current calendar year + 1 year if degree stage is 'other', and date is before 17th September" do
       wizardstore["degree_status_id"] = TeacherTrainingAdviser::Steps::StageOfDegree::NOT_FINAL_YEAR[:other]
       travel_to(Date.new(2022, 9, 16)) do
         expect(instance.inferred_year_id).to eq(12_921)
       end
     end
 
-    it "returns current calendar year + 2 year if other ends on or after 17th September" do
+    it "returns current calendar year + 2 years if degree stage is 'other', and date is on or after 17th September" do
       wizardstore["degree_status_id"] = TeacherTrainingAdviser::Steps::StageOfDegree::NOT_FINAL_YEAR[:other]
       travel_to(Date.new(2022, 9, 17)) do
         expect(instance.inferred_year_id).to eq(12_922)

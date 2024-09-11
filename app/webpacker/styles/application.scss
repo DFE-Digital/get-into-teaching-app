@@ -29,6 +29,8 @@ $govuk-new-typography-scale: false;
 @import "~govuk-frontend/dist/govuk/components/radios/index";
 @import "~govuk-frontend/dist/govuk/components/table/index";
 
+@import "~dfe-autocomplete/src/dfe-autocomplete";
+
 @import "./govuk-reset";
 
 @import "./components/map";
