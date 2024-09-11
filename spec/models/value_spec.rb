@@ -20,18 +20,23 @@ describe Value do
   end
 
   describe "##get (class method)" do
+    before do
+      described_class.remove_class_variable :@@data if described_class.class_variable_defined? :@@data
+      stub_const("Value::PATH", "spec/fixtures/files/example_values/**/*.yml")
+    end
+
     subject { described_class.get(key) }
 
     context "when the key contains hyphens" do
-      let(:key) { "dates-example-closing" }
+      let(:key) { "data2-example-value-with-hyphens" }
 
-      it { is_expected.to eql("31/12/2024") }
+      it { is_expected.to eql("A-value-with-hyphens") }
     end
 
     context "when the key contains undersscores" do
-      let(:key) { :dates_example_closing }
+      let(:key) { :data2_example_value_with_hyphens }
 
-      it { is_expected.to eql("31/12/2024") }
+      it { is_expected.to eql("A-value-with-hyphens") }
     end
   end
 
