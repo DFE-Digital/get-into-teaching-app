@@ -401,7 +401,7 @@ jobs:
           ls -la ${{github.workspace}}/code_coverage
 
           docker run -t --rm -v ${{github.workspace}}/code_coverage:${COVERAGE_DIR} -e RAILS_ENV=test -e COVERAGE_DIR \
-            ${{env.DOCKER_IMAGE_TEST}} bundle exec rake coverage:collate --trace
+            ${{env.DOCKER_IMAGE_TEST}} ls -la /app/coverage && bundle exec rake coverage:collate --trace
         env:
           COVERAGE_DIR: /app/coverage
 
