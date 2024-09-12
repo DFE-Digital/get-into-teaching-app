@@ -2,7 +2,7 @@
 title: Age groups you could teach
 heading: Age groups you could teach
 description: |-
-  Explore the key stages and ages you want to teach, whether that's primary, secondary, early years, further education, or pupils with special educational needs.
+  Explore the key stages and ages you could teach, whether that's primary, secondary, early years, college, or pupils with special educational needs.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-who-do-you-want-to-teach
 ---
@@ -58,7 +58,7 @@ Most disabled pupils and pupils with special educational needs learn in mainstre
 
 You can choose to apply for a teacher training course that specialises in SEND or you can gain the skills and experience as you train to teach.
 
-Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/life-as-a-teacher/ages-and-specialisms/special-educational-need).
+Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/life-as-a-teacher/ages-and-specialisms/special-educational-needs).
 
 ## Teaching other stages
 
