@@ -107,10 +107,6 @@ The following providers are accepting applications from all over the world:
 
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
 
-* [Edge Hill University iQTS primary teacher training course](https://www.edgehill.ac.uk/course/iqts-primary-3-11/)
-
-* [Edge Hill University iQTS secondary teacher training course](https://www.edgehill.ac.uk/course/iqts-secondary/)
-
 * [National Institute of Teaching and Education (NITE), part of the Coventry University Group](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/)
 
 * [Tes Institute](https://www.tes.com/institute/courses/iqts) – this provider cannot accept applications from Hong Kong
@@ -138,8 +134,6 @@ The following providers specialise in particular regions, or should be contacted
 We have recently approved the following providers to offer iQTS for the 2024/25 academic year. Their iQTS courses are still being designed – check back to provider websites for more information.
 
 * [St Mary’s University](https://www.stmarys.ac.uk/courses/postgraduate/iqts)
-
-* [University of Bristol](https://www.bristol.ac.uk/)
 
 * [University of Chichester](https://www.chi.ac.uk/)
 
