@@ -1,8 +1,27 @@
 <% @page_title = "What subject is your degree?" %>
 
-<%= f.govuk_collection_select :degree_subject,
-  f.object.class.options,
-  :first,
-  :first,
-  label: { tag: "h1", size: "m" }
-%>
+<%= tag.div id: "what-subject-degree-container", data: {controller: 'what-subject-degree'} do %>
+
+  <%= tag.div data: {'what-subject-degree-target': 'noJSContainer' } do %>
+    <!-- no-javascript version of autocomplete box -->
+    <%= f.govuk_text_field :degree_subject_nojs, label: { size: 'm' }, data: {'what-subject-degree-target': 'noJSDegreeSubject' } %>
+    <%= f.hidden_field :nojs, value: true, data: {'what-subject-degree-target': 'noJSEnabled' } %>
+  <% end %>
+
+  <%= render DfE::Autocomplete::View.new(
+    f,
+    attribute_name: :degree_subject,
+    form_field: f.govuk_select(
+      :degree_subject,
+      options_for_select(dfe_autocomplete_options( f.object.available_degree_subjects), f.object.degree_subject),
+      label: { text: t('helpers.label.teacher_training_adviser_steps_what_subject_degree.degree_subject'), size: 'm', tag: 'h1' },
+      hint: { text: t('helpers.hint.teacher_training_adviser_steps_what_subject_degree.degree_subject') },
+      data: { 'what-subject-degree-target': 'degreeSubjectSelect' },
+      class: "enable-with-javascript",
+      disabled: true,
+    ),
+    classes: "show-with-javascript",
+    html_attributes: { data: {'what-subject-degree-target': 'degreeSubjectAutoComplete'} }
+  ) %>
+
+<% end %>

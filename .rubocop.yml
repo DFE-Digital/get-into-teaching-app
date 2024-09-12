@@ -17,6 +17,10 @@ AllCops:
     - spec/models/wizard/**/*  # Separate PR splits this out into gem
     - fetch_config.rb # auto-generated file to authenticate with Azure
 
+Gemspec/RequiredRubyVersion:
+  Exclude:
+    - node_modules/dfe-autocomplete/dfe-autocomplete.gemspec
+
 RSpec/Dialect:
   Enabled: false
 
