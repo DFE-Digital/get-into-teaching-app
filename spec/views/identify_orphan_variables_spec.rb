@@ -8,15 +8,17 @@ CONTENT_FILES = [
   PageLister.all_locale_files,
 ].flatten
 
-VARIABLE_REGEX = /<%=\s*(?:v|value)\s*:(?<content>[a-zA-Z-_0-9]+?)\s*%> |
-                  \$(?<content>[a-zA-Z-_0-9]+?)\$ |
-                  %\{(?<content>[a-zA-Z-_0-9]+?)\} |
-                  \#\{\s*v\s*:(?<content>[a-zA-Z-_0-9]+>?)\}/x
+VARIABLE_REGEX = /<%=\s*(?:v|value)\s*:(?<content>[a-zA-Z_0-9-]+?)\s*%> |
+                  \$(?<content>[a-zA-Z_0-9-]+?)\$ |
+                  %\{(?<content>[a-zA-Z_0-9-]+?)\} |
+                  \#\{\s*v\s*:(?<content>[a-zA-Z_0-9-]+>?)\}/x
 
 # Matches <%= v :thing %> or <%= value :thing %>
 # Matches $thing$
 # Matches %{thing}
 # Matches #{v :thing}
+
+COMPONENT_TYPES = TemplateHandlers::Markdown::COMPONENT_TYPES + %w[images]
 
 IGNORE_VARIABLES = {
   "config/locales/loaf.yml" => %w[invalid valid],
@@ -45,7 +47,7 @@ RSpec.describe "orphan variables checker" do
       content = File.open(file).read
       front_matter = FrontMatterParser::Parser.new(:md).call(content).front_matter
 
-      TemplateHandlers::Markdown::COMPONENT_TYPES.map { |type| front_matter[type] }.compact.map(&:keys).flatten
+      COMPONENT_TYPES.map { |type| front_matter[type] }.compact.map(&:keys).flatten
     end
   end
 

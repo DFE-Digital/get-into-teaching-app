@@ -10,7 +10,7 @@ module TemplateHandlers
 
     DEFAULTS = {}.freeze
     GLOBAL_FRONT_MATTER = Rails.root.join("config/frontmatter.yml").freeze
-    COMPONENT_TYPES = %w[quote quote_list inset_text youtube_video steps expander calls_to_action images].freeze
+    COMPONENT_TYPES = %w[quote quote_list inset_text youtube_video steps expander calls_to_action].freeze
 
     class << self
       def call(template, source = nil)
