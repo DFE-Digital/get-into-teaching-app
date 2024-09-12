@@ -31,7 +31,7 @@ expander:
 
 You need qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.
 
-You do not need QTS to [teach in further education](/life-as-a-teacher/further-education-teacher) or to [teach in early years](/life-as-a-teacher/become-an-early-years-teacher).
+You do not need QTS to [teach in further education](/life-as-a-teacher/further-education-teacher) or to [teach in early years](/life-as-a-teacher/early-years-teacher).
 
 [Find out more about qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
