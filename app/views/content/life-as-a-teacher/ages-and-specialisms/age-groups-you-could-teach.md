@@ -80,4 +80,4 @@ There are three key areas:
 * academic courses on subjects like English and maths
 * basic skills courses covering literacy and numeracy. 
 
-Learn more about [teaching in further education](/life-as-a-teacher/ages-and-specialisms/further-education-teacher).
+Learn more about [teaching in further education](/life-as-a-teacher/ages-and-specialisms/further-education-teachers).
