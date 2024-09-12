@@ -18,7 +18,7 @@ VARIABLE_REGEX = /<%=\s*(?:v|value)\s*:(?<content>[a-zA-Z_0-9-]+?)\s*%> |
 # Matches %{thing}
 # Matches #{v :thing}
 
-COMPONENT_TYPES = TemplateHandlers::Markdown::COMPONENT_TYPES + %w[images]
+COMPONENT_TYPES = TemplateHandlers::Markdown::COMPONENT_TYPES + %w[calls_to_action images]
 
 IGNORE_VARIABLES = {
   "config/locales/loaf.yml" => %w[invalid valid],
