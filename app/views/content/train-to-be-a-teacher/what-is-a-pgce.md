@@ -84,7 +84,7 @@ You can do a full or part-time PGCE course.
 
 As part of selecting your course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about the different age groups you could teach](/life-as-a-teacher/ages-and-specialisms/age-groups-you-could-teach).
 
-You can also do a PGCE without QTS in [further education](/life-as-a-teacher/become-a-further-education-teacher).
+You can also do a PGCE without QTS in [further education](/life-as-a-teacher/further-education-teacher).
 
 ### Entry requirements
 
