@@ -8,16 +8,19 @@ CONTENT_FILES = [
   PageLister.all_locale_files,
 ].flatten
 
-VARIABLE_REGEX = /<%=\s*(v|value)\s*:(?<content>[a-zA-Z-_0-9]+?)\s*%> |
-\$(?<content>[a-zA-Z-_0-9]+?)\$ |
-%\{(?<content>[a-zA-Z-_0-9]+?)\} |
-  \#\{\s*v\s*:(?<content>[a-zA-Z-_0-9]+>?)\}
-/x
+VARIABLE_REGEX = /<%=\s*(?:v|value)\s*:(?<content>[a-zA-Z-_0-9]+?)\s*%> |
+                  \$(?<content>[a-zA-Z-_0-9]+?)\$ |
+                  %\{(?<content>[a-zA-Z-_0-9]+?)\} |
+                  \#\{\s*v\s*:(?<content>[a-zA-Z-_0-9]+>?)\}/x
 
 # Matches <%= v :thing %> or <%= value :thing %>
 # Matches $thing$
 # Matches %{thing}
 # Matches #{v :thing}
+
+IGNORE_VARIABLES = {
+  "config/locales/loaf.yml" => %w[invalid valid],
+}.freeze
 
 RSpec.describe "orphan variables checker" do
   include I18n::Backend::Flatten
@@ -33,7 +36,7 @@ RSpec.describe "orphan variables checker" do
 
   let!(:content_files_and_values) do
     CONTENT_FILES.index_with do |file|
-      File.read(file).scan(VARIABLE_REGEX).map(&:compact).map(&:first)
+      File.read(file).scan(VARIABLE_REGEX).map(&:compact).flatten
     end
   end
 
@@ -47,28 +50,42 @@ RSpec.describe "orphan variables checker" do
   end
 
   let!(:orphan_frontend_variables) do
-    content_files_and_values.transform_values { |values|
+    orphan_frontend_variables = content_files_and_values.transform_values { |values|
       values.reject { |value| (yaml_files_and_values.values + component_files_and_keys.values).flatten.include?(value) }
     }.compact_blank
+
+    remove_ignored_variables(orphan_frontend_variables)
   end
 
   let!(:orphan_yaml_variables) do
-    yaml_files_and_values.transform_values { |values|
+    orphan_yaml_variables = yaml_files_and_values.transform_values { |values|
       values.reject { |value| content_files_and_values.values.flatten.include?(value) }
     }.compact_blank
+
+    remove_ignored_variables(orphan_yaml_variables)
   end
 
   it "does not find any variables in the config/values/*.yml files that are not references in any markdown, erb, or locale file" do
-    expect(orphan_yaml_variables).to be_empty, error_messages(orphan_yaml_variables)
+    expect(orphan_yaml_variables).to be_empty, error_message(orphan_yaml_variables)
   end
 
   it "does not find any variables in the frontend that are not referenced in any front matter component or /config/values/*.yml file" do
-    expect(orphan_frontend_variables).to be_empty, error_messages(orphan_frontend_variables)
+    expect(orphan_frontend_variables).to be_empty, error_message(orphan_frontend_variables)
   end
 
-  def error_messages(file_variables_hash)
+  def error_message(file_variables_hash)
     file_variables_hash.map.with_index { |(file, orphan), index|
       "#{index.next}: #{file} contains orphan key(s) '#{orphan.join(', ')}'"
     }.join("\n")
+  end
+
+  def remove_ignored_variables(hash, ignore_hash = IGNORE_VARIABLES)
+    ignore_hash.map do |file, orphans|
+      next if hash[file].nil?
+
+      hash[file] = hash[file] - orphans
+    end
+
+    hash.compact_blank
   end
 end
