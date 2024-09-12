@@ -165,7 +165,7 @@ Many teachers who qualified outside the UK settle in England long-term and devel
 
 ### Career progression
 
-If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/support-for-early-career-teachers).
+If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/life-as-a-teacher/teaching-as-a-career/early-career-teachers).
 
 You'll also be able to develop your career through the [national professional qualifications framework](https://www.gov.uk/guidance/national-professional-qualifications-framework).
 
