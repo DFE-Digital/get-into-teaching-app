@@ -2,8 +2,14 @@ module TeacherTrainingAdviser::Steps
   class WhatSubjectDegree < GITWizard::Step
     attribute :degree_subject, :string
     attr_accessor :degree_subject_raw
+    attr_accessor :degree_subject_nojs, :nojs
 
     validates :degree_subject, presence: true
+
+    def initialize(wizard, store, attributes = {}, *args)
+      super
+      assign_attributes({ degree_subject_nojs: degree_subject })
+    end
 
     def available_degree_subjects
       @available_degree_subjects ||= DfE::ReferenceData::Degrees::SUBJECTS.all

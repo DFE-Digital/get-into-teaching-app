@@ -27,6 +27,19 @@
   }
 }
 
+@mixin highlight-text($backgroundColor, $color) {
+  // Multi-line padded highlight effect without horizontal
+  // gaps between lines.
+  color: $color;
+
+  span {
+    box-decoration-break: clone;
+    padding: .5rem;
+    background: $backgroundColor;
+    box-shadow: 0 0 0 $backgroundColor, -0 0 0 $backgroundColor;
+  }
+}
+
 .link {
   @include font;
   color: $blue-dark;
@@ -103,6 +116,21 @@ ol.primary > li {
 
   &:focus {
     color: $white;
+  }
+}
+
+.link--pink {
+  @include highlight-text($pink, $black);
+
+  &::after {
+    border-color: $pink;
+  }
+
+  &:hover {
+    text-decoration-thickness: max(3px, .1875rem, .12em)};
+
+  &:focus {
+    @include highlight-text($black, $white);
   }
 }
 

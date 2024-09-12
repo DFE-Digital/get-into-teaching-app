@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/DFE-Digital/dfe-analytics.git
-  revision: b2ea063f7c3616b034118589efe48cea30134b4c
-  tag: v1.13.0
+  revision: 706595e52fed211cee53ad99ceaeaabb47a059cc
+  tag: v1.14.2
   specs:
-    dfe-analytics (1.13.0)
+    dfe-analytics (1.14.2)
       google-cloud-bigquery (~> 1.38)
       httparty (~> 0.21)
       multi_xml (~> 0.6.0)
@@ -296,7 +296,7 @@ GEM
       google-cloud-core (~> 1.6)
       googleauth (~> 1.9)
       mini_mime (~> 1.0)
-    google-cloud-core (1.7.0)
+    google-cloud-core (1.7.1)
       google-cloud-env (>= 1.0, < 3.a)
       google-cloud-errors (~> 1.0)
     google-cloud-env (2.1.0)

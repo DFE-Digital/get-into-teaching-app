@@ -30,8 +30,12 @@ module TeacherTrainingAdviser
   protected
 
     def step_params_what_subject_degree
-      params.fetch(step_param_key, {}).permit(:degree_subject, :degree_subject_raw).tap do |params|
-        params[:degree_subject] = params[:degree_subject_raw] if params.key?(:degree_subject_raw)
+      params.fetch(step_param_key, {}).permit(:degree_subject, :degree_subject_raw, :degree_subject_nojs, :nojs).tap do |params|
+        if params.key?(:degree_subject_raw)
+          params[:degree_subject] = params[:degree_subject_raw]
+        elsif params.key?(:nojs) && ActiveModel::Type::Boolean.new.cast(params[:nojs])
+          params[:degree_subject] = params[:degree_subject_nojs]
+        end
       end
     end
 
