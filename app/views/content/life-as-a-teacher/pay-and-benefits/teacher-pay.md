@@ -124,7 +124,7 @@ Their role is wide ranging, but includes leading and motivating teachers, and en
 | Outer London                             | $salaries_headteacher_outerlondonmin$ | $salaries_headteacher_outerlondonmax$ |
 | Inner London                             | $salaries_headteacher_innerlondonmin$ | $salaries_headteacher_innerlondonmax$ |
 
-Find out more about [how to move up the career ladder in teaching](/life-as-a-teacher/pay-and-benefits/career-progression).
+Find out more about [how to move up the career ladder in teaching](/life-as-a-teacher/teaching-as-a-career/career-progression).
 
 ## If you do not have qualified teacher status (QTS)
 
