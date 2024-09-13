@@ -25,5 +25,3 @@ When I spot the exact barrier stopping a child from learning, I always make sure
 When you train to teach physics, you can get an income. During my teacher training my family and I could afford for me to train for a year.
 
 We’re here to answer your questions and provide advice about teaching, whether you’re just thinking about it or you’re ready to apply. [Find out how you can get help and support with getting into teaching](/help-and-support).
-
-$physics-initial-teacher-training$
