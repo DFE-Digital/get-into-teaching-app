@@ -19,7 +19,25 @@ module TeacherTrainingAdviser
       @first_name = wizard_store[:first_name]
     end
 
+    def step_params
+      if @current_step.instance_of?(TeacherTrainingAdviser::Steps::WhatSubjectDegree)
+        step_params_what_subject_degree
+      else
+        super
+      end
+    end
+
   protected
+
+    def step_params_what_subject_degree
+      params.fetch(step_param_key, {}).permit(:degree_subject, :degree_subject_raw, :degree_subject_nojs, :nojs).tap do |params|
+        if params.key?(:degree_subject_raw)
+          params[:degree_subject] = params[:degree_subject_raw]
+        elsif params.key?(:nojs) && ActiveModel::Type::Boolean.new.cast(params[:nojs])
+          params[:degree_subject] = params[:degree_subject_nojs]
+        end
+      end
+    end
 
     def not_available_path
       teacher_training_adviser_not_available_path

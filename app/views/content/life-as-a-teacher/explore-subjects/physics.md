@@ -7,10 +7,6 @@ title_paragraph: |-
   Tax-free bursaries of $bursaries_postgraduate_physics$ or scholarships of $scholarships_physics$ are available for eligible trainee physics teachers.</p>
 description: |-
     Find out how to become a physics teacher, including what you'll be teaching and what funding is available to help you train.
-subcategory: What to teach
-navigation: 5.48
-navigation_title: Physics
-navigation_description: Find out how to become a physics teacher and inspire the next generation of scientists, engineers and innovators.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/physics_1383.jpg"
@@ -21,7 +17,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/physics/header"
-  - "content/life-as-a-teacher/physics/article"
-  - "content/life-as-a-teacher/physics/adviser-promo-physics"
+  - "content/life-as-a-teacher/explore-subjects/physics/header"
+  - "content/life-as-a-teacher/explore-subjects/physics/article"
+  - "content/life-as-a-teacher/explore-subjects/physics/adviser-promo-physics"
 ---

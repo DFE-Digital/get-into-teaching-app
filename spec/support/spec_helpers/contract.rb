@@ -171,6 +171,12 @@ module SpecHelpers
       click_on_continue
     end
 
+    def submit_fill_in_step(field, value, step)
+      expect_current_step(step)
+      fill_in field, with: value
+      click_on_continue
+    end
+
     def submit_identity_step(first_name:, last_name:, email:, existing: false)
       expect_current_step(:identity)
 
