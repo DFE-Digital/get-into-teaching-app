@@ -51,9 +51,11 @@ RSpec.describe "orphan variables checker" do
     end
   end
 
+  let!(:frontend_files_and_values) { (yaml_files_and_values.values + component_files_and_keys.values).flatten }
+
   let!(:orphan_frontend_variables) do
     orphan_frontend_variables = content_files_and_values.transform_values { |values|
-      values.reject { |value| (yaml_files_and_values.values + component_files_and_keys.values).flatten.include?(value) }
+      values.reject { |value| frontend_files_and_values.include?(value) }
     }.compact_blank
 
     remove_ignored_variables(orphan_frontend_variables)
