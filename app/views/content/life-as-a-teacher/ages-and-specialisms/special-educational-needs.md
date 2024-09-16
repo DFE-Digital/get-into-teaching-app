@@ -46,5 +46,3 @@ You need [specific qualifications to teach a class of pupils with hearing impair
 A special educational needs coordinator (SENCO) assesses, plans and monitors the progress of disabled pupils and pupils with special educational needs.
 
 Once you’re a qualified teacher you'll need to complete the [National Award in Special Educational Needs Coordination (NASENCo)](https://nasen.org.uk/page/nasenco) when you take up your SENCO post.
-
-$get-an-adviser$
