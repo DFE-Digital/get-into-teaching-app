@@ -1,7 +1,7 @@
 <%= tag.div data: { controller: "chat", enabled: Chat.enabled?, available: Chat.available?, "chat-target": "container" }, class: "chat" do %>
   <div data-chat-target="online" class="hidden">
     <p>
-      <a class="button" href="/chat#root" target="chat" data-action="chat#start" data-chat-target="chat">Chat online <span class="visually-hidden">(opens in new window)</span> <span></span></a>
+      <a class="button" href="/chat#root" target="chat" data-action="chat#start" data-chat-target="chat" aria-label="Chat online (opens in new window)">Chat online <span class="visually-hidden">(opens in new window)</span> <span></span></a>
     </p>
   </div>
   <div data-chat-target="offline" class="hidden">
