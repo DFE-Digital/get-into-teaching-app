@@ -11,6 +11,9 @@ layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/languages.jpg"
 keywords:
+  - French
+  - German
+  - Spanish
   - languages
   - modern languages
   - teaching languages
