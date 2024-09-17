@@ -6,7 +6,7 @@ description: |-
 related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Teach in England if you trained overseas : "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
-    Age groups you could teach : "/life-as-a-teacher/ages-and-specialisms/age-groups-you-could-teach"
+    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
 navigation: 20.70
 navigation_title: Ukrainian teachers and trainees coming to the UK
 navigation_description: Find information and advice for Ukrainian citizens seeking training places and teaching jobs in England.

@@ -6,7 +6,7 @@ description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:
     Explore life as a teacher : "/life-as-a-teacher"
-    Age groups you could teach : "/life-as-a-teacher/ages-and-specialisms/age-groups-you-could-teach"
+    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
     What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Improve your subject knowledge : "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
