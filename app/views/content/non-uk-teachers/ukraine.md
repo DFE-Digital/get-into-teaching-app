@@ -79,7 +79,7 @@ Schools will assess your suitability to teach from a range of different sources,
 
 * 2 references from previous employers
 * your complete employment history
-* evidence of your professional standing in Ukraine – for example, documentation from the [Ministry of Education and Science](https://mon.gov.ua/ua) showing you are qualified and have no sanctions against you as a teacher
+* evidence of your professional standing in Ukraine – for example, documentation from the [Ministry of Education and Science of Ukraine](https://mon.gov.ua/ua) showing you are qualified and have no sanctions against you as a teacher
 * a criminal record check
 
 Teacher training providers will ask for:
@@ -87,11 +87,11 @@ Teacher training providers will ask for:
 * evidence you have a bachelor’s degree from a university (non-UK or in the UK)
 * a criminal record check
 
-You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mvs.gov.ua/app/landing) for a criminal record check, which will be emailed to you. You can then contact the [Ukrainian Embassy in the UK](https://uk.mfa.gov.ua/en) for a translation of the criminal record check and a letter confirming its validity.
+You can [visit the Ministry of Internal Affairs of Ukraine website](https://vytiah.mvs.gov.ua/app/landing) to find out how to apply for a criminal record check, which will be emailed to you. You can then [contact the Ukrainian Embassy in the UK](https://uk.mfa.gov.ua/en) for a translation of the criminal record check and a letter confirming its validity.
 
 ### Your professional qualifications
 
-UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you'll need scans or photographs of your original documents. 
+You can find out more about [getting a statement of comparability from the UKENIC](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you'll need scans or photographs of your original documents. 
 
 ## Train to teach in England
 
@@ -119,8 +119,8 @@ If you're not in the UK under one of these schemes, [find out about switching to
 If you're already a qualified teacher, you do not need to retrain to get a job as a teacher in England. However, you'll need to:
 
 * get English qualified teacher status (QTS), or be able to demonstrate strong non-UK qualifications and experience 
-* pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
-* have a high standard of written and spoken English – for example, [Common European Framework of Reference for Languages, English level B2](https://www.efset.org/cefr/b2/) 
+* pass criminal and professional safeguarding checks, including [completing an enhanced check from the Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) (these will be organised by your employer)
+* have a high standard of written and spoken English – for example, [having an English level B2 certification from the Common European Framework of Reference for Languages](https://www.efset.org/cefr/b2/) 
 
 ### English qualified teacher status (QTS)
 
@@ -136,9 +136,9 @@ If you're already a qualified teacher, you do not need to retrain to get a job a
 
 If you’re in the UK under a Ukrainian visa scheme and aged 19 or over, you're eligible for funding to study an English for Speakers for Other Languages (ESOL) course (as well as other educational or training courses).
 
-[Find your local authority (council)](https://www.gov.uk/find-local-council) and then search their website for ESOL courses. Or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
+[Find your local authority (council)](https://www.gov.uk/find-local-council) and then search their website for ESOL courses. Or, search for courses using the [National Careers Service website](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
  
-You can also learn English with a private provider. Well respected English language courses include: 
+You can also learn English with a private provider. You can visit the websites of these English language courses for more information: 
 
 * [International English Language Testing System (IELTS)](https://www.ielts.org/)
 * [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl)
