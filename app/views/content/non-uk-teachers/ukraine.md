@@ -91,7 +91,7 @@ You can [visit the Ministry of Internal Affairs of Ukraine website](https://vyti
 
 ### Your professional qualifications
 
-You can find out more about [getting a statement of comparability from the UKENIC](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you'll need scans or photographs of your original documents. 
+You can find out more about [getting a statement of comparability from the UK ENIC](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you'll need scans or photographs of your original documents. 
 
 ## Train to teach in England
 
@@ -109,7 +109,7 @@ If you intend to apply for teacher training, you could consider [finding work as
 
 Ukrainian refugees in the UK under a Ukraine visa scheme have access to the same financial support as UK applicants. This means you'll:
 
-* have the right to [apply for a student loan, bursary, scholarship](/funding-and-support) or an [advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
+* have the right to [apply for a student loan, bursary, scholarship](/funding-and-support) or [apply for an advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
 * pay the same training fees as UK applicants (up to $fees_pgitt_domesticfulltime$ for a full-time course)
 
 If you're not in the UK under one of these schemes, [find out about switching to a different type of visa](#visas-giving-you-the-right-to-train-to-teach-or-teach-in-england) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
@@ -153,7 +153,7 @@ Check with [assessment only training providers](/train-to-be-a-teacher/assessmen
 
 Supply teachers provide teaching cover when schools are temporarily short of staff. Register with a supply teacher agency for short-term roles in school. [Find out more about being a supply teacher on the tes website](https://www.tes.com/jobs/careers-advice/supply-teaching/how-become-supply-teacher). 
 
-[Find your local authority (council)](https://www.gov.uk/find-local-council) and then search their website for teaching roles.
+[Find your local council](https://www.gov.uk/find-local-council) and then search their website for teaching roles.
 
 You could also consider [working as a teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) or in education support roles. It can be helpful to gain experience of the English education system before you apply for teaching jobs. [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) lists these jobs. 
 
