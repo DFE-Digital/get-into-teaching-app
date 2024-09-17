@@ -103,13 +103,13 @@ You can find out more about [getting a statement of comparability from the UKENI
 
 * help you can get with your application 
 
-If you intend to apply for teacher training, you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain experience until your teacher training course starts. 
+If you intend to apply for teacher training, you could consider [finding work as a teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain experience until your teacher training course starts. 
 
 ### Fees and financial support
 
 Ukrainian refugees in the UK under a Ukraine visa scheme have access to the same financial support as UK applicants. This means you'll:
 
-* have the right to apply for a [student loan, bursary, scholarship](/funding-and-support) or an [advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
+* have the right to [apply for a student loan, bursary, scholarship](/funding-and-support) or an [advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
 * pay the same training fees as UK applicants (up to $fees_pgitt_domesticfulltime$ for a full-time course)
 
 If you're not in the UK under one of these schemes, [find out about switching to a different type of visa](#visas-giving-you-the-right-to-train-to-teach-or-teach-in-england) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
@@ -151,7 +151,7 @@ Check with [assessment only training providers](/train-to-be-a-teacher/assessmen
 
 ### Other ways to get teaching work and experience
 
-[Supply teachers](https://www.tes.com/jobs/careers-advice/supply-teaching/how-become-supply-teacher) fill in when schools are temporarily short of staff. Register with a supply teacher agency for short-term roles in school.  
+Supply teachers provide teaching cover when schools are temporarily short of staff. Register with a supply teacher agency for short-term roles in school. [Find out more about being a supply teacher on the tes website](https://www.tes.com/jobs/careers-advice/supply-teaching/how-become-supply-teacher). 
 
 [Find your local authority (council)](https://www.gov.uk/find-local-council) and then search their website for teaching roles.
 
