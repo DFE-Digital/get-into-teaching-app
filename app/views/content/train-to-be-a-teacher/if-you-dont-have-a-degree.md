@@ -32,7 +32,7 @@ You need a bachelor’s degree in any subject to train to teach in primary, seco
 
 You need QTS to teach in maintained primary, secondary and special schools in England (schools funded by local authorities).
 
-As part of selecting your undergraduate degree course, you'll need to decide if you want to train to teach at a primary or secondary level. [Learn about deciding who to teach](/life-as-a-teacher/who-do-you-want-to-teach).
+As part of selecting your undergraduate degree course, you'll need to decide if you want to train to teach at a primary or secondary level. [Learn about the different age groups you could teach](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach).
 
 Full-time degree courses that include QTS typically cost $fees_ugitt$ per year and can take up to 4 years but you can get [funding for your training](/funding-and-support).
 

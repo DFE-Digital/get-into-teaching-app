@@ -6,7 +6,7 @@ description: |-
 related_content:
     Fees and funding for non-UK trainees: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
-    Who do you want to teach? : "/life-as-a-teacher/who-do-you-want-to-teach"
+    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
 youtube_video:
   why-train-video:
     id: WhBBL_DpHFo

@@ -8,7 +8,7 @@ date: "2021-11-01"
 backlink: "../../"
 related_content:
     What qualifications do you need to be a teacher? : "/train-to-be-a-teacher/qualifications-you-need-to-teach"
-    Who do you want to teach? : "/life-as-a-teacher/who-do-you-want-to-teach"
+    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
     How to apply for teacher training : "/how-to-apply-for-teacher-training"
     How to choose a teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     What will your teacher training be like?: "/train-to-be-a-teacher/initial-teacher-training"
@@ -55,7 +55,7 @@ You need English qualified teacher status (QTS) to teach in maintained primary, 
 
 Some schools can employ teachers without QTS (for example, [private schools](https://www.gov.uk/types-of-school/private-schools) and [academy schools](https://www.gov.uk/types-of-school/academies)) but most still prefer teachers to have it.
 
-You do not need QTS to teach in [further education](/life-as-a-teacher/become-a-further-education-teacher) or work in [early years education](/life-as-a-teacher/become-an-early-years-teacher).
+You do not need QTS to teach in [further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers) or work in [early years education](/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers).
 
 $qualified-outside-the-uk$
 
@@ -79,7 +79,7 @@ But if your course does not lead to QTS, you will not be a qualified teacher.
 
 You can get QTS through undergraduate or postgraduate initial teacher training. This mostly involves school placements with some theoretical learning.
 
-You can apply for either a primary or secondary teacher training course awarding QTS. [Find out more about deciding who to teach](/life-as-a-teacher/who-do-you-want-to-teach).
+You can apply for either a primary or secondary teacher training course awarding QTS. [Find out more about the age groups you could teach](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach).
 
 You can also get a postgraduate qualification through teacher training such as QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
 

@@ -58,7 +58,7 @@ You could [find another course](https://find-teacher-training-courses.service.go
 
 ### You do not have a bachelor’s degree or equivalent
 
-You’ll need a bachelor's degree or equivalent to train to teach. If you do not have one, you can still train to teach by doing an [undergraduate degree in teacher training](/train-to-be-a-teacher/if-you-dont-have-a-degree) or become a [further education teacher](/life-as-a-teacher/become-a-further-education-teacher).
+You’ll need a bachelor's degree or equivalent to train to teach. If you do not have one, you can still train to teach by doing an [undergraduate degree in teacher training](/train-to-be-a-teacher/if-you-dont-have-a-degree) or become a [further education teacher](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers).
 
 ### The provider could not verify your qualifications
 
