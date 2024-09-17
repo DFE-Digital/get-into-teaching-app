@@ -48,7 +48,7 @@ Most teacher training courses in England are fee-paying. You will need a Student
 
 ### Skilled Worker visa 
 
-Some teacher training courses in England are salaried – this means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). Currently, places on these courses are very limited. You will need a Skilled Worker visa if you train on a salaried training course. Your Skilled Worker visa must be sponsored by the school employing you.  
+Some teacher training courses in England are salaried – this means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). Currently, places on these courses are very limited. You will need a Skilled Worker visa if you train on a salaried training course. Your Skilled Worker visa must be sponsored by the school employing you.
 
 ### To apply for your visa, follow these steps 
 
@@ -94,7 +94,7 @@ You may be able to bring your partner and children with you on a Skilled Worker 
 
 ### How a bursary or scholarship can help with your Student visa application 
 
-If you are training to teach physics or languages, you may be eligible for a [bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees?#bursaries-and-scholarships-for-non-uk-trainee-languages-and-physics-teachers). You can use them in your Student visa application as proof that you have enough money to support yourself. 
+If you are training to teach physics or languages, you may be [eligible for a bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees?#bursaries-and-scholarships-for-non-uk-trainee-languages-and-physics-teachers). You can use them in your Student visa application as proof that you have enough money to support yourself. 
 
 ## Check your status
 
@@ -125,13 +125,13 @@ You will not need to be sponsored for a Student or Skilled Worker visa if you ha
 
 ### Dependents
 
-You will not need to be sponsored for a Student or Skilled Worker visa if you have you have permission to live in the UK as a dependent (usually partner) of someone on a visa. You can work or study without a sponsor for the duration of your partner’s visa. 
+You will not need to be sponsored for a Student or Skilled Worker visa if you have permission to live in the UK as a dependent (usually partner) of someone on a visa. You can work or study without a sponsor for the duration of your partner’s visa. 
 
 ### Refugees and asylum seekers 
 
 If you have been granted refugee status, you can apply for teacher training – either salaried or fee-paying – and will usually be eligible for [financial support to train to teach on a fee-paying course](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
-If you are in the process of [seeking asylum](https://www.gov.uk/claim-asylum), you should refer to your immigration bail conditions to see if you have permission to study on a teacher training course. 
+If you are in [the process of seeking asylum](https://www.gov.uk/claim-asylum), you should refer to your immigration bail conditions to see if you have permission to study on a teacher training course. 
 
 Learn more about:
 
