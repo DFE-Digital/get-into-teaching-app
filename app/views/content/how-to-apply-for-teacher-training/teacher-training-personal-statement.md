@@ -52,15 +52,17 @@ You do not have to write it all at once – you can start it and come back to it
 
 Your personal statement can be up to 1000 words. 90% of successful candidates write 500 words or more.
 
-You could include: 
+## What should I write about in my personal statement?
 
-* skills you have that are relevant to teaching 
-* any experience of working with young people 
-* your understanding of why teaching is important 
-* your reasons for wanting to train to be a teacher 
-* any activities you’ve done that could be relevant to teaching (such as first aid courses, sports coaching or volunteering) 
+Your personal statement should include:
 
-Teacher training providers want to see your passion and that you understand the bigger picture of teaching.
+* why you want to be a teacher
+
+* why you want to teach the subject or specialism you're applying for - if you're applying for primary, describe why you want to teach this age group
+
+* the experience and personal characteristics you have, and why they would make you a great teacher 
+
+You can include any information you think is relevant to demonstrate your knowledge, qualifications, and experience. Teacher training providers want to see your passion and that you understand what a career in teaching involves.
 
 ### How to write your personal statement
 
