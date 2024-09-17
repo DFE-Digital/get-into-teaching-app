@@ -58,11 +58,11 @@ Your personal statement should include:
 
 * why you want to be a teacher
 
-* why you want to teach the subject or specialism you're applying - for primary, describe why you want to teach this age group  
+* why you want to teach the subject or specialism you're applying for - if you're applying for primary, describe why you want to teach this age group
 
 * the experience and personal characteristics you have, and why they would make you a great teacher 
 
-You can include any information you think is relevant to demonstrate your knowledge, qualifications, and experience. Teacher training providers want to see your passion and that you understand the bigger picture of teaching.
+You can include any information you think is relevant to demonstrate your knowledge, qualifications, and experience. Teacher training providers want to see your passion and that you understand what a career in teaching involves.
 
 ### How to write your personal statement
 
