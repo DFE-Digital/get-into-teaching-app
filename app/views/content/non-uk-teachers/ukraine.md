@@ -155,7 +155,7 @@ Supply teachers provide teaching cover when schools are temporarily short of sta
 
 [Find your local authority (council)](https://www.gov.uk/find-local-council) and then search their website for teaching roles.
 
-You could also consider [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system before you apply for teaching jobs. [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) lists these jobs. 
+You could also consider [working as a teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) or in education support roles. It can be helpful to gain experience of the English education system before you apply for teaching jobs. [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) lists these jobs. 
 
 For a short-term unpaid placement, you can [get school experience in a primary or secondary school in England](https://schoolexperience.education.gov.uk/). 
 
