@@ -1,2 +1,7 @@
 recruitmentcycle:
-  dates: from 9am on 10 October 2024 to 6pm on 16 September 2025
+  coursestart: September 2025
+  alltimesanddates: from 9am on 10 October 2024 to 6pm on 16 September 2025
+  openingdateonly: 10 October 2024
+  deadlinedateonly: 16 September 2025
+  deadlinetimeonly: 6pm
+  
