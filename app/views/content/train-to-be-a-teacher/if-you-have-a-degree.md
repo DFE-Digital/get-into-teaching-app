@@ -22,9 +22,6 @@ inset_text:
     header: "Non-UK citizens:"
     text: If you’re not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
     color: purple
-  still-time-to-apply:
-    text: There's still time for you to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn how you can find the right course for you and get help with your application</a>.
-    color: yellow
 keywords:
   - becoming a teacher
   - teacher training
@@ -40,8 +37,6 @@ expander:
     link_title: Learn more about fees and financial support for non-UK trainee teachers.
     link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees   
 ---
-
-$still-time-to-apply$
 
 You need a bachelor's degree (in any subject) to teach in primary, secondary and special schools in England.
 
