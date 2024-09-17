@@ -53,11 +53,11 @@ $q-jacub-pask$
 
 ## Deadlines for applications and training provider decisions 
 
-### $recruitmentcycle_openingdateonly$ 
+### $recruitmentcycle_deadlinedateonly$
 
-This is the last day you’ll be able to apply for a postgraduate teacher training courses starting in $recruitmentcycle_coursestart$.
+This is the last day you’ll be able to apply for a postgraduate teacher training courses starting in $recruitmentcycle_coursestart$. You must submit your application before $recruitmentcycle_deadlinetimeonly$.
 
-### $recruitmentcycle_deadlinedateonly$ 
+### $recruitmentcycle_providerresponsedeadline$
 
 This is the last day for training providers to make a decision on all applications for courses starting in $recruitmentcycle_coursestart$. 
 
