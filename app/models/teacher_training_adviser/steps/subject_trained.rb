@@ -1,5 +1,8 @@
 module TeacherTrainingAdviser::Steps
-  class SubjectTaught < GITWizard::Step
+  class SubjectTrained < GITWizard::Step
+    # NB: for convenience, we are storing the response for "what subject did you train to teach"
+    # in the same CRM field we use for "what subject did you previously teach".
+
     attribute :subject_taught_id, :string
 
     validates :subject_taught_id, lookup_items: { method: :get_teaching_subjects }
@@ -11,9 +14,10 @@ module TeacherTrainingAdviser::Steps
     def skipped?
       returning_teacher = other_step(:returning_teacher).returning_to_teaching
       has_paid_experience_in_uk = other_step(:paid_teaching_experience_in_uk).has_paid_experience_in_uk
-      stage_taught_primary = other_step(:stage_taught).stage_taught_primary?
+      train_to_teach_in_uk = other_step(:train_to_teach_in_uk).train_to_teach_in_uk
+      stage_trained_primary = other_step(:stage_trained).stage_taught_primary?
 
-      !returning_teacher || !has_paid_experience_in_uk || stage_taught_primary
+      !returning_teacher || has_paid_experience_in_uk || !train_to_teach_in_uk || stage_trained_primary
     end
 
     def reviewable_answers

@@ -264,6 +264,14 @@ en:
       teacher_id:
         title: "What is your previous teacher reference number?"
         change: "your previous teacher reference number"
+    paid_teaching_experience_in_uk:
+      has_paid_experience_in_uk:
+        title: "Do you have paid teaching experience in the UK?"
+        change: "if you have paid teaching experience in the UK"
+    train_to_teach_in_uk:
+      train_to_teach_in_uk:
+        title: "Did you train to teach in the UK?"
+        change: "if you have trained to teach in the UK"
     retake_gcse_maths_english:
       planning_to_retake_gcse_maths_and_english_id:
         title: "Are you planning to retake your English or maths GCSEs?"
@@ -287,6 +295,10 @@ en:
       degree_status_id:
         title: "In which year are you studying?"
         change: "the year in which you are studying"
+    stage_trained:
+      stage_taught_id:
+        title: "Which stage did you train to teach?"
+        change: "the stage you trained to teach"
     stage_taught:
       stage_taught_id:
         title: "Which stage did you previously teach?"
@@ -307,6 +319,10 @@ en:
       subject_taught_id:
         title: "Which main subject did you previously teach?"
         change: "the main subject you previously taught"
+    subject_trained:
+      subject_taught_id:
+        title: "Which subject did you train to teach?"
+        change: "the subject you trained to teach"
     uk_address:
       address_postcode:
         title: "Postcode"
@@ -394,6 +410,10 @@ en:
             channel_id:
               inclusion: The link you used to sign up is no longer valid.
         teacher_training_adviser/steps/subject_taught:
+          attributes:
+            subject_taught_id:
+              invalid_type: "The subject you have entered is not valid - you need to choose one from the subject list"
+        teacher_training_adviser/steps/subject_trained:
           attributes:
             subject_taught_id:
               invalid_type: "The subject you have entered is not valid - you need to choose one from the subject list"
@@ -692,6 +712,8 @@ en:
         preferred_teaching_subject_id: "Which subject would you like to teach if you return to teaching?"
       teacher_training_adviser_steps_subject_taught:
         subject_taught_id: "Which main subject did you previously teach?"
+      teacher_training_adviser_steps_subject_trained:
+        subject_taught_id: "Which subject did you train to teach?"
       teacher_training_adviser_steps_subject_interested_teaching:
         preferred_teaching_subject_id: "What would you like to teach?"
       teacher_training_adviser_steps_start_teacher_training:
@@ -709,6 +731,10 @@ en:
           Overseas: "Overseas"
       teacher_training_adviser_steps_stage_interested_teaching:
         preferred_education_phase_id_options:
+          222750000: "Primary"
+          222750001: "Secondary"
+      teacher_training_adviser_steps_stage_trained:
+        stage_taught_id_options:
           222750000: "Primary"
           222750001: "Secondary"
       teacher_training_adviser_steps_stage_taught:
@@ -853,6 +879,8 @@ en:
         degree_status_id: "In which year are you studying?"
       teacher_training_adviser_steps_stage_interested_teaching:
         preferred_education_phase_id: "Which stage are you interested in teaching?"
+      teacher_training_adviser_steps_stage_trained:
+        stage_taught_id: "Which stage did you train to teach?"
       teacher_training_adviser_steps_stage_taught:
         stage_taught_id: "Which stage did you previously teach?"
       teacher_training_adviser_steps_gcse_science:

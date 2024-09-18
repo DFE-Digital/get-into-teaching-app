@@ -19,139 +19,165 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
   context "with a new candidate" do
     let(:candidate_identity) { new_candidate_identity }
 
-    it "returning, teacher reference number, in the UK and telephone" do
-      submit_choice_step("Yes", :returning_teacher)
-      submit_choice_step("Yes", :has_teacher_id)
-      submit_previous_teacher_id_step("12345")
-      submit_choice_step("Secondary", :stage_taught)
-      submit_select_step("Maths", :subject_taught)
-      submit_choice_step("Secondary", :stage_interested_teaching)
-      submit_select_step("Physics", :subject_like_to_teach)
-      submit_date_of_birth_step(Date.new(1974, 3, 16))
-      submit_choice_step("UK", :uk_or_overseas)
-      submit_uk_address_step(
-        postcode: "TE7 5TR",
-      )
-      submit_uk_telephone_step("123456789")
-      submit_review_answers_step
-      expect(page).to have_text("you're signed up")
+    context "with a returning teacher (RTTA)" do
+      it "teacher reference number, paid UK experience, in the UK and telephone" do
+        submit_choice_step("Yes", :returning_teacher)
+        submit_choice_step("Yes", :has_teacher_id)
+        submit_previous_teacher_id_step("12345")
+        submit_choice_step("Yes", :paid_teaching_experience_in_uk)
+        submit_choice_step("Secondary", :stage_taught)
+        submit_select_step("Maths", :subject_taught)
+        submit_choice_step("Secondary", :stage_interested_teaching)
+        submit_select_step("Physics", :subject_like_to_teach)
+        submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("UK", :uk_or_overseas)
+        submit_uk_address_step(
+          postcode: "TE7 5TR",
+        )
+        submit_uk_telephone_step("123456789")
+        submit_review_answers_step
+        expect(page).to have_text("you're signed up")
+      end
+
+      it "no teacher reference number, paid UK experience, overseas and no telephone" do
+        submit_choice_step("Yes", :returning_teacher)
+        submit_choice_step("Yes", :has_teacher_id)
+        submit_previous_teacher_id_step("12345")
+        submit_choice_step("Yes", :paid_teaching_experience_in_uk)
+        submit_choice_step("Secondary", :stage_taught)
+        submit_select_step("Maths", :subject_taught)
+        submit_choice_step("Secondary", :stage_interested_teaching)
+        submit_select_step("Physics", :subject_like_to_teach)
+        submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("Overseas", :uk_or_overseas)
+        submit_select_step("Brazil", :overseas_country)
+        submit_overseas_telephone_step
+        submit_review_answers_step
+        expect(page).to have_text("you're signed up")
+      end
+
+      it "teacher reference number, no paid UK experience, trained in the uk, in the UK and telephone" do
+        submit_choice_step("Yes", :returning_teacher)
+        submit_choice_step("Yes", :has_teacher_id)
+        submit_previous_teacher_id_step("12345")
+        submit_choice_step("No", :paid_teaching_experience_in_uk)
+        submit_choice_step("Yes", :train_to_teach_in_uk)
+        submit_choice_step("Secondary", :stage_trained)
+        submit_select_step("Maths", :subject_trained)
+        submit_choice_step("Secondary", :stage_interested_teaching)
+        submit_select_step("Physics", :subject_like_to_teach)
+        submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("UK", :uk_or_overseas)
+        submit_uk_address_step(
+          postcode: "TE7 5TR",
+        )
+        submit_uk_telephone_step("123456789")
+        submit_review_answers_step
+        expect(page).to have_text("you're signed up")
+      end
     end
 
-    it "returning, no teacher reference number, overseas and no telephone" do
-      submit_choice_step("Yes", :returning_teacher)
-      submit_choice_step("Yes", :has_teacher_id)
-      submit_previous_teacher_id_step("12345")
-      submit_choice_step("Secondary", :stage_taught)
-      submit_select_step("Maths", :subject_taught)
-      submit_choice_step("Secondary", :stage_interested_teaching)
-      submit_select_step("Physics", :subject_like_to_teach)
-      submit_date_of_birth_step(Date.new(1974, 3, 16))
-      submit_choice_step("Overseas", :uk_or_overseas)
-      submit_select_step("Brazil", :overseas_country)
-      submit_overseas_telephone_step
-      submit_review_answers_step
-      expect(page).to have_text("you're signed up")
-    end
+    context "when not returning" do
+      it "has degree, primary, has gcses, in the UK and telephone" do
+        submit_choice_step("No", :returning_teacher)
+        submit_choice_step("Yes", :have_a_degree)
+        submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
+        submit_select_step("2:1", :what_degree_class)
+        submit_choice_step("Primary", :stage_interested_teaching)
+        submit_choice_step("Yes", :gcse_maths_english)
+        submit_choice_step("Yes", :gcse_science)
+        submit_select_step("2022", :start_teacher_training)
+        submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("UK", :uk_or_overseas)
+        submit_uk_address_step(
+          postcode: "TE7 5TR",
+        )
+        submit_uk_telephone_step("123456789")
+        submit_review_answers_step
+        expect(page).to have_text("you're signed up")
+      end
 
-    it "not returning, has degree, primary, has gcses, in the UK and telephone" do
-      submit_choice_step("No", :returning_teacher)
-      submit_choice_step("Yes", :have_a_degree)
-      submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
-      submit_select_step("2:1", :what_degree_class)
-      submit_choice_step("Primary", :stage_interested_teaching)
-      submit_choice_step("Yes", :gcse_maths_english)
-      submit_choice_step("Yes", :gcse_science)
-      submit_select_step("2022", :start_teacher_training)
-      submit_date_of_birth_step(Date.new(1974, 3, 16))
-      submit_choice_step("UK", :uk_or_overseas)
-      submit_uk_address_step(
-        postcode: "TE7 5TR",
-      )
-      submit_uk_telephone_step("123456789")
-      submit_review_answers_step
-      expect(page).to have_text("you're signed up")
-    end
+      it "has degree, secondary, retaking gcses, overseas and no telephone" do
+        submit_choice_step("No", :returning_teacher)
+        submit_choice_step("Yes", :have_a_degree)
+        submit_fill_in_step("What subject is your degree?", "Mathematics", :what_subject_degree)
+        submit_select_step("Not applicable", :what_degree_class)
+        submit_choice_step("Secondary", :stage_interested_teaching)
+        submit_choice_step("No", :gcse_maths_english)
+        submit_choice_step("Yes", :retake_gcse_maths_english)
+        submit_select_step("Chemistry", :subject_interested_teaching)
+        submit_select_step("Not sure", :start_teacher_training)
+        submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("Overseas", :uk_or_overseas)
+        submit_select_step("Canada", :overseas_country)
+        submit_overseas_telephone_step
+        submit_review_answers_step
+        expect(page).to have_text("you're signed up")
+      end
 
-    it "not returning, has degree, secondary, retaking gcses, overseas and no telephone" do
-      submit_choice_step("No", :returning_teacher)
-      submit_choice_step("Yes", :have_a_degree)
-      submit_fill_in_step("What subject is your degree?", "Mathematics", :what_subject_degree)
-      submit_select_step("Not applicable", :what_degree_class)
-      submit_choice_step("Secondary", :stage_interested_teaching)
-      submit_choice_step("No", :gcse_maths_english)
-      submit_choice_step("Yes", :retake_gcse_maths_english)
-      submit_select_step("Chemistry", :subject_interested_teaching)
-      submit_select_step("Not sure", :start_teacher_training)
-      submit_date_of_birth_step(Date.new(1974, 3, 16))
-      submit_choice_step("Overseas", :uk_or_overseas)
-      submit_select_step("Canada", :overseas_country)
-      submit_overseas_telephone_step
-      submit_review_answers_step
-      expect(page).to have_text("you're signed up")
-    end
+      it "studying for degree (not final year), overseas and telephone" do
+        submit_choice_step("No", :returning_teacher)
+        submit_choice_step("I'm studying for a degree", :have_a_degree)
+        submit_choice_step("First year", :stage_of_degree)
+        submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
+        submit_choice_step("Secondary", :stage_interested_teaching)
+        submit_select_step("Maths", :subject_interested_teaching)
+        submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("Overseas", :uk_or_overseas)
+        submit_select_step("Barbados", :overseas_country)
+        submit_overseas_telephone_step("123456789")
+        submit_review_answers_step
+        expect(page).to have_text("you're signed up")
+      end
 
-    it "not returning, studying for degree (not final year), overseas and telephone" do
-      submit_choice_step("No", :returning_teacher)
-      submit_choice_step("I'm studying for a degree", :have_a_degree)
-      submit_choice_step("First year", :stage_of_degree)
-      submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
-      submit_choice_step("Secondary", :stage_interested_teaching)
-      submit_select_step("Maths", :subject_interested_teaching)
-      submit_date_of_birth_step(Date.new(1974, 3, 16))
-      submit_choice_step("Overseas", :uk_or_overseas)
-      submit_select_step("Barbados", :overseas_country)
-      submit_overseas_telephone_step("123456789")
-      submit_review_answers_step
-      expect(page).to have_text("you're signed up")
-    end
+      it "studying for degree (final year), overseas and telephone" do
+        submit_choice_step("No", :returning_teacher)
+        submit_choice_step("I'm studying for a degree", :have_a_degree)
+        submit_choice_step("Final year", :stage_of_degree)
+        submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
+        submit_select_step("First class", :what_degree_class)
+        submit_choice_step("Primary", :stage_interested_teaching)
+        submit_choice_step("No", :gcse_maths_english)
+        submit_choice_step("Yes", :retake_gcse_maths_english)
+        submit_choice_step("Yes", :gcse_science)
+        submit_select_step("2021", :start_teacher_training)
+        submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("Overseas", :uk_or_overseas)
+        submit_select_step("Barbados", :overseas_country)
+        submit_overseas_telephone_step("123456789")
+        submit_review_answers_step
+        expect(page).to have_text("you're signed up")
+      end
 
-    it "not returning, studying for degree (final year), overseas and telephone" do
-      submit_choice_step("No", :returning_teacher)
-      submit_choice_step("I'm studying for a degree", :have_a_degree)
-      submit_choice_step("Final year", :stage_of_degree)
-      submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
-      submit_select_step("First class", :what_degree_class)
-      submit_choice_step("Primary", :stage_interested_teaching)
-      submit_choice_step("No", :gcse_maths_english)
-      submit_choice_step("Yes", :retake_gcse_maths_english)
-      submit_choice_step("Yes", :gcse_science)
-      submit_select_step("2021", :start_teacher_training)
-      submit_date_of_birth_step(Date.new(1974, 3, 16))
-      submit_choice_step("Overseas", :uk_or_overseas)
-      submit_select_step("Barbados", :overseas_country)
-      submit_overseas_telephone_step("123456789")
-      submit_review_answers_step
-      expect(page).to have_text("you're signed up")
-    end
+      it "equivalent degree, primary, has/retaking gcses, overseas" do
+        submit_choice_step("No", :returning_teacher)
+        submit_choice_step("I am not a UK citizen and have, or am studying for, an equivalent qualification", :have_a_degree)
+        submit_choice_step("Primary", :stage_interested_teaching)
+        submit_select_step("2022", :start_teacher_training)
+        submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("UK", :uk_or_overseas)
+        submit_uk_address_step(
+          postcode: "TE7 5TR",
+        )
+        submit_uk_callback_step("123456789", "1:00pm to 1:30pm")
+        submit_review_answers_step
+        expect(page).to have_text("We'll give you a call")
+      end
 
-    it "not returning, equivalent degree, primary, has/retaking gcses, overseas" do
-      submit_choice_step("No", :returning_teacher)
-      submit_choice_step("I am not a UK citizen and have, or am studying for, an equivalent qualification", :have_a_degree)
-      submit_choice_step("Primary", :stage_interested_teaching)
-      submit_select_step("2022", :start_teacher_training)
-      submit_date_of_birth_step(Date.new(1974, 3, 16))
-      submit_choice_step("UK", :uk_or_overseas)
-      submit_uk_address_step(
-        postcode: "TE7 5TR",
-      )
-      submit_uk_callback_step("123456789", "1:00pm to 1:30pm")
-      submit_review_answers_step
-      expect(page).to have_text("We'll give you a call")
-    end
-
-    it "not returning, equivalent degree, secondary, has gcses, is in uk" do
-      submit_choice_step("No", :returning_teacher)
-      submit_choice_step("I am not a UK citizen and have, or am studying for, an equivalent qualification", :have_a_degree)
-      submit_choice_step("Secondary", :stage_interested_teaching)
-      submit_select_step("Maths", :subject_interested_teaching)
-      submit_select_step("2021", :start_teacher_training)
-      submit_date_of_birth_step(Date.new(1974, 3, 16))
-      submit_choice_step("Overseas", :uk_or_overseas)
-      submit_select_step("China", :overseas_country)
-      submit_overseas_time_zone_step("447584736574", "(GMT-04:00) Caracas")
-      submit_select_step("9:00am to 9:30am", :overseas_callback)
-      submit_review_answers_step
-      expect(page).to have_text("We'll give you a call")
+      it "equivalent degree, secondary, has gcses, is in uk" do
+        submit_choice_step("No", :returning_teacher)
+        submit_choice_step("I am not a UK citizen and have, or am studying for, an equivalent qualification", :have_a_degree)
+        submit_choice_step("Secondary", :stage_interested_teaching)
+        submit_select_step("Maths", :subject_interested_teaching)
+        submit_select_step("2021", :start_teacher_training)
+        submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("Overseas", :uk_or_overseas)
+        submit_select_step("China", :overseas_country)
+        submit_overseas_time_zone_step("447584736574", "(GMT-04:00) Caracas")
+        submit_select_step("9:00am to 9:30am", :overseas_callback)
+        submit_review_answers_step
+        expect(page).to have_text("We'll give you a call")
+      end
     end
   end
 
@@ -161,6 +187,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
     it "returning, existing data, change address" do
       submit_verification_code(candidate_identity)
       submit_choice_step("Yes", :returning_teacher)
+      submit_choice_step("Yes", :paid_teaching_experience_in_uk)
 
       expect_current_step(:stage_taught)
       submit_choice_step("Secondary", :stage_taught)
