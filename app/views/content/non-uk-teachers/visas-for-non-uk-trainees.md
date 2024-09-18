@@ -88,7 +88,7 @@ You may be able to train part-time, but your part-time salary must be at least $
 
 ### Your partner and children 
 
-If your course starts after 1 January 2024, you'll not be able to bring your partner and children with you on a Student visa. 
+If your course starts after 1 January 2024, you will not be able to bring your partner and children with you on a Student visa. 
 
 You may be able to bring your partner and children with you on a Skilled Worker visa. 
 
@@ -100,13 +100,13 @@ If you're training to teach physics or languages, you may be [eligible for a bur
 
 If you're not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
 
-You'll not need a visa to train to teach in the UK if you:
+You will not need a visa to train to teach in the UK if you:
 
 * are an Irish citizen
 * have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
 
-You'll not need to be sponsored for a Student or Skilled Worker visa if you have a: 
+You will not need to be sponsored for a Student or Skilled Worker visa if you have a: 
 
 * [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa) 
 
@@ -125,7 +125,7 @@ You'll not need to be sponsored for a Student or Skilled Worker visa if you have
 
 ### Dependents
 
-You'll not need to be sponsored for a Student or Skilled Worker visa if you have permission to live in the UK as a dependent (usually partner) of someone on a visa. You can work or study without a sponsor for the duration of your partner’s visa. 
+You will not need to be sponsored for a Student or Skilled Worker visa if you have permission to live in the UK as a dependent (usually partner) of someone on a visa. You can work or study without a sponsor for the duration of your partner’s visa. 
 
 ### Refugees and asylum seekers 
 
