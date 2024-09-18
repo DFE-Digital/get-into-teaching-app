@@ -34,10 +34,6 @@ promo_content:
 navigation: 30.05
 navigation_title: Teacher training application
 navigation_description: Find out what you need to include in your teacher training application and when to apply.
-inset_text:
-  still-time-to-apply:
-    text: There's still time for you to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn how you can find the right course for you and get help with your application</a>.
-    color: yellow
 expander:
   visas:
     title: visas
@@ -54,8 +50,6 @@ expander:
       If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>. 
       </p>
 ---
-
-$still-time-to-apply$
 
 Find out what you need to include in your primary or secondary teacher training application and what happens as part of the application process. 
 

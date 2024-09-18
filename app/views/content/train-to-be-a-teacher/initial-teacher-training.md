@@ -14,14 +14,8 @@ related_content:
     How to apply : "/how-to-apply-for-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-itt
-inset_text:
-  still-time-to-apply:
-    text: There's still time for you to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn how you can find the right course for you and get help with your application</a>.
-    color: yellow
     
 ---
-
-$still-time-to-apply$
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
 
@@ -67,7 +61,7 @@ Your placements will be in a minimum of 2 schools. Through your placements, youâ
 
 Youâ€™ll get classroom experience whether you do school-led or university-led training. Some courses may offer placements in specific kinds of schools, like special schools. You can talk to your course provider about the opportunities available.
 
-Where you complete your classroom placements will depend on whether you've chosen a primary or secondary teacher training course. [Learn about deciding who to teach](/life-as-a-teacher/who-do-you-want-to-teach).
+Where you complete your classroom placements will depend on whether you've chosen a primary or secondary teacher training course. [Learn about the age groups you could teach](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach).
 
 If you apply to train with a specific school, your placements may not all take place within that school. They may take place at a school within their partnership or trust. 
 
