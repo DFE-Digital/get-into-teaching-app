@@ -50,7 +50,7 @@ Most teacher training courses in England are fee-paying. You'll need a Student v
 
 Some teacher training courses in England are salaried – this means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). Currently, places on these courses are very limited. You'll need a Skilled Worker visa if you train on a salaried training course. Your Skilled Worker visa must be sponsored by the school employing you.
 
-### To apply for your visa, follow these steps 
+### What you need to do to apply for your visa 
 
 [Search for postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and filter your results by visa sponsorship. 
 
@@ -58,7 +58,7 @@ Email your chosen provider to check they can sponsor you, then [apply for your t
 
 When you have a confirmed offer of a training place, you’ll be able to apply for your visa.  
 
-For a [Student visa](https://www.gov.uk/student-visa), you'll also need to: 
+To [apply for a Student visa](https://www.gov.uk/student-visa), you'll also need to: 
 
 * have a reference number, called a confirmation of acceptance for studies (CAS), which your training provider will give you
 * [have enough money to support yourself and pay for your course](https://www.gov.uk/student-visa/money)
@@ -68,7 +68,7 @@ For a [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa), you'll also
 
 * have a ‘certificate of sponsorship’ from the school which is paying you, confirming they will sponsor you 
 * [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
-* check your salary meets the requirement for a Skilled worker visa 
+* check your salary meets the requirement for a Skilled Worker visa 
 
 ### Salary requirement for a Skilled Worker visa 
 
