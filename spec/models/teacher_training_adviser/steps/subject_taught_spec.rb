@@ -26,9 +26,16 @@ RSpec.describe TeacherTrainingAdviser::Steps::SubjectTaught do
   end
 
   describe "#skipped?" do
-    it "returns false if returning_to_teaching is true" do
+    it "returns false if returning_to_teaching is true and has_paid_experience_in_uk is true" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::ReturningTeacher).to receive(:returning_to_teaching).and_return(true)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::PaidTeachingExperienceInUk).to receive(:has_paid_experience_in_uk).and_return(true)
       expect(subject).not_to be_skipped
+    end
+
+    it "returns true if returning_to_teaching is true and has_paid_experience_in_uk is false" do
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::ReturningTeacher).to receive(:returning_to_teaching).and_return(true)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::PaidTeachingExperienceInUk).to receive(:has_paid_experience_in_uk).and_return(false)
+      expect(subject).to be_skipped
     end
 
     it "returns true if returning_to_teaching is false" do

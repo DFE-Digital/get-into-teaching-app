@@ -19,7 +19,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
   context "with a new candidate" do
     let(:candidate_identity) { new_candidate_identity }
 
-    context "with a returning teacher (RTTA)" do
+    context "when returning" do
       it "teacher reference number, paid UK experience, in the UK and telephone" do
         submit_choice_step("Yes", :returning_teacher)
         submit_choice_step("Yes", :has_teacher_id)
