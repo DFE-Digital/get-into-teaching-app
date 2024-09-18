@@ -47,7 +47,6 @@ If you're coming to the UK from Ukraine, [check what you need to do before you t
 
 If you're a teacher coming to England to teach languages or physics, you may be eligible for the IRP. [Learn more about the international relocation payment (IRP)](/non-uk-teachers/get-an-international-relocation-payment).
 
-
 ### Visas giving you the right to train to teach or teach in England
 
 You already have the right to train or work as a teacher in England if you're in the UK on one of the following visas:
@@ -136,7 +135,7 @@ If you're already a qualified teacher, you do not need to retrain to get a job a
 
 If you’re in the UK under a Ukrainian visa scheme and aged 19 or over, you're eligible for funding to study an English for Speakers for Other Languages (ESOL) course (as well as other educational or training courses).
 
-[Find your local authority (council)](https://www.gov.uk/find-local-council) and then search their website for ESOL courses. Or, search for courses using the [National Careers Service website](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
+[Find your local council](https://www.gov.uk/find-local-council) and then search their website for ESOL courses. Or, search for courses using the [National Careers Service website](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
  
 You can also learn English with a private provider. You can visit the websites of these English language courses for more information: 
 
