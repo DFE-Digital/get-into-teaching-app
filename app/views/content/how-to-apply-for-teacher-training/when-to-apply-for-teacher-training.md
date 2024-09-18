@@ -21,11 +21,11 @@ expander:
     text: You should check the deadline for non-UK applications with training providers. They may close earlier than for other applicants. 
 ---
 
-You can apply for postgraduate teacher training courses starting in September 2024 from 10 October 2023 to 17 September 2024. 
+You can apply for postgraduate teacher training courses starting in $recruitmentcycle_coursestart$ $recruitmentcycle_openanddeadline$. 
 
 ## Find and apply for teacher training courses
 
-From 10 October 2023, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for a teacher training course</a>.
+From $recruitmentcycle_openingdate$, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for a teacher training course</a>.
  
 You can apply to up to 4 courses at a time.  
 
@@ -53,15 +53,15 @@ $q-jacub-pask$
 
 ## Deadlines for applications and training provider decisions 
 
-### 17 September 2024 
+### $recruitmentcycle_deadlinedate$
 
-This is the last day you’ll be able to apply for a postgraduate teacher training courses starting in September 2024.
+This is the last day you’ll be able to apply for a postgraduate teacher training courses starting in $recruitmentcycle_coursestart$. You must submit your application before $recruitmentcycle_deadlinetime$.
 
-### 25 September 2024 
+### $recruitmentcycle_providerdeadline$
 
-This is the last day for training providers to make a decision on all applications for courses starting in September 2024. 
+This is the last day for training providers to make a decision on all applications for courses starting in $recruitmentcycle_coursestart$. 
 
-If a decision has not been made by the end of September, your applications will automatically be rejected so that you can start applying for next year’s courses in October. 
+If a decision has not been made by $recruitmentcycle_providerdeadline$, your applications will automatically be rejected so that you can start applying for next year’s courses in $recruitmentcycle_openingmonth$. 
 
 ## Interview timeline 
 
