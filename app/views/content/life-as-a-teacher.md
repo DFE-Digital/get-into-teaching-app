@@ -1,6 +1,6 @@
 ---
 title: "Life as a teacher"
-description: Learn how rewarding teaching can be, including pay, career progression, support for early career teachers and career changers, and the subjects and pupils you could teach.
+description: Explore the rewards of teaching, including pay, career growth, support, and the range of subjects and pupils you could teach.
 layout: "layouts/minimal"
 navigation: 5
 navigation_title: Life as a teacher
