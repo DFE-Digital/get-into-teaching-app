@@ -2,7 +2,7 @@
 title: Become a languages teacher
 title_paragraph: |-
   <p>
-  By teaching pupils languages, you can help them gain a greater appreciation and understanding of the world. As they learn a new language, your pupils will get a unique insight into the countries that speak these languages.</p>
+Learning a language teaches pupils more than just grammar and vocabulary. As a languages teacher, you'll help pupils gain a greater appreciation and understanding of the world.</p>
   <p>
   Bursaries of $bursaries_postgraduate_languagesother$ are available for all trainee language teachers. These bursaries include ancient languages.</p> 
   <p>
