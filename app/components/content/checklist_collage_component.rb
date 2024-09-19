@@ -2,10 +2,12 @@ module Content
   class ChecklistCollageComponent < ViewComponent::Base
     attr_reader :checklist, :image_paths, :cta
 
+    include ContentHelper
+
     def initialize(checklist:, image_paths:, cta: nil)
       super
 
-      @checklist = checklist
+      @checklist = checklist.map { |item| substitute_values(item) }
       @image_paths = image_paths
       @cta = cta
     end
