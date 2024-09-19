@@ -24,7 +24,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/explore-subjects/modern-languages/header"
-  - "content/life-as-a-teacher/explore-subjects/modern-languages/article"
-  - "content/life-as-a-teacher/explore-subjects/modern-languages/adviser-promo-modern-languages"
+  - "content/life-as-a-teacher/explore-subjects/languages/header"
+  - "content/life-as-a-teacher/explore-subjects/languages/article"
+  - "content/life-as-a-teacher/explore-subjects/languages/adviser-promo-languages"
 ---
