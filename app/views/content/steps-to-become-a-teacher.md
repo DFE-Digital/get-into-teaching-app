@@ -12,22 +12,24 @@
     steps-1:
       numeric: false
       steps: 
+        Explore subjects and ages to teach:
+          partial: content/steps-to-become-a-teacher/step_1_explore_subjects_and_age_groups
         Check your qualifications:
-          partial: content/steps-to-become-a-teacher/step_1_check_your_qualifications
+          partial: content/steps-to-become-a-teacher/step_2_check_your_qualifications
         Understand funding:
-          partial: content/steps-to-become-a-teacher/step_2_understand_funding
+          partial: content/steps-to-become-a-teacher/step_3_understand_funding
         Consider getting experience:
-          partial: content/steps-to-become-a-teacher/step_3_consider_getting_experience
+          partial: content/steps-to-become-a-teacher/step_4_consider_getting_experience
         Find a teacher training course:
-          partial: content/steps-to-become-a-teacher/step_4_find_a_teacher_training_course
+          partial: content/steps-to-become-a-teacher/step_5_find_a_teacher_training_course
         Apply for teacher training:
-          partial: content/steps-to-become-a-teacher/step_5_apply_for_teacher_training
+          partial: content/steps-to-become-a-teacher/step_6_apply_for_teacher_training
         Start your teacher training:
-          partial: content/steps-to-become-a-teacher/step_6_start_your_teacher_training
+          partial: content/steps-to-become-a-teacher/step_7_start_your_teacher_training
         Apply for a teaching role:
-          partial: content/steps-to-become-a-teacher/step_7_apply_for_a_teaching_role
+          partial: content/steps-to-become-a-teacher/step_8_apply_for_a_teaching_role
         Start your career:
-          partial: content/steps-to-become-a-teacher/step_8_start_your_career
+          partial: content/steps-to-become-a-teacher/step_9_start_your_career
   keywords:
     - QTS
     - Qualified Teacher Status
@@ -69,16 +71,10 @@
       color: purple
 ---
 
-<strong>Discover if a career teaching in a primary or secondary school in England is right for you.</strong>
+These steps can help you to achieve [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), which you need to teach in many primary and secondary schools in England.
 
-<b>These steps can help you to achieve [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), which you need to teach in many primary and secondary schools in England.</b>
-
-<b>With QTS you also get additional training and support in your first 2 years as a teacher, helping you to grow in confidence and develop the skills you need to succeed.</b> 
-
-<b>You do not have to follow all of the steps in order and some may take longer than others.</b>
+You do not have to follow all the steps in order, and some might take longer than others. If you need support, a [teacher training adviser](/teacher-training-advisers) can give you free practical advice and reassurance about all of these steps and more.
 
 $international-content$
-
-A teacher training adviser can give free practical advice and reassurance about all of these steps and more. [Learn more about teacher training advisers](/teacher-training-advisers).
 
 $steps-1$
