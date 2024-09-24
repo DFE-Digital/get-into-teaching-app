@@ -9,7 +9,7 @@
   }
 
   @include mq($until: tablet) {
-    flex-direction: column;
+    // flex-direction: column;
     
   &--simple {
       picture {
