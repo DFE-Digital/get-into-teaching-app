@@ -11,12 +11,12 @@ describe Content::SubjectPageContentComponent, type: :component do
     allow_any_instance_of(ContentHelper).to receive(:substitute_values).with(subject_name).and_return(substituted_name)
     # Mock substitute_values to return the default value when no subject_name is provided
     allow_any_instance_of(ContentHelper).to receive(:substitute_values).with("a subject").and_return("a subject")
+    # Render the component with the subject_name by default
+    render_inline(component)
   end
 
   context "when rendering the component" do
     it "renders the component with the correct structure and content" do
-      # Render the component with the subject_name
-      render_inline(component)
       # Test that the main container has the correct class
       expect(page).to have_css("div.subject-benefits")
       # Test that the list items are rendered correctly
@@ -29,8 +29,6 @@ describe Content::SubjectPageContentComponent, type: :component do
 
   context "when changing the subject name" do
     it "substitutes the subject name on line 1 and renders correctly in the output" do
-      # Render the component with the subject_name
-      render_inline(component)
       # Test that the substituted name is rendered correctly
       expect(page).to have_content(substituted_name)
       # Verify that the substituted subject name appears in the output
@@ -51,8 +49,6 @@ describe Content::SubjectPageContentComponent, type: :component do
 
   context "when rendering the salary value" do
     it "renders the salary in either full numeric or shorthand format" do
-      # Render the component with the subject_name
-      render_inline(component)
       # Check for either full numeric or 'k' shorthand format
       expect(page).to have_content(/£\d{1,3}(,\d{3})?k?/)
     end
