@@ -50,14 +50,4 @@ The main goal is to help pupils leave school with the best possible GCSE results
 
 This year I’ve been doing the National Professional Qualification for Senior Leadership (NPQSL), which has involved running a project across the whole school. This has given me the opportunity to work more closely with the senior leadership team and has helped strengthen my relationships with colleagues in other departments in the school.
 
-## The best thing about teaching
-
-The best thing about teaching is having a positive impact on pupils’ school experience by helping them to understand maths and enjoy learning about it too! I also enjoy being a form tutor and looking out for pupils’ wellbeing.
-
-Building good relationships with pupils so that they are keen to learn and keep trying even when they find topics challenging is really rewarding. Pupils can have mixed feelings about maths, so it is great when they try really hard and master a new concept.
-
-And finally, I do love the holidays! I try to switch off outside of term time and travel as much as possible.
-
-My advice for anyone thinking of getting into teaching is to remember that you will make a difference, even though it might be challenging at times! When pupils are in your classroom, you have the opportunity to grow their minds and improve their understanding of the world. You are responsible for helping pupils achieve the best possible outcomes and for inspiring them to build their resilience and determination.
-
 If you’ve been inspired by Abigail’s story, find out more about [career progression opportunities and teacher pay](/life-as-a-teacher/pay-and-benefits). Or, find out more about [becoming a maths teacher](/life-as-a-teacher/explore-subjects/maths).

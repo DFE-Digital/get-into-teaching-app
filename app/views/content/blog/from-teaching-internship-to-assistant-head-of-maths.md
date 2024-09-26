@@ -46,14 +46,4 @@ I’ve really enjoyed the additional responsibility that Head of Physics and now
 
 There are of course challenges to the job. I was 21 when I began teaching and 22 when I became head of department. Managing colleagues that were older and more experienced than me was difficult to begin with, but I can say now, after having stayed at the same school for six years and developed my reputation, that it’s not so much of a challenge anymore. I found the best approach was to acknowledge other people’s experience and seek their advice, while still driving forward with a clear vision. When I moved over to the maths department, I had to develop a new management style, but fortunately I already knew the staff well.
 
-## The best things about teaching
-
-What I particularly love about my school is the excitement and energy I can feel in the corridors. My students are enthusiastic and they push me to understand more about physics and maths too. It also helps that my colleagues are really friendly and supportive. I know that everyone is pulling in the same direction and we have a good joke in the office.
-
-I like that I’m able to bring myself into the classroom. I have a love of meaningless facts and I like to start my lessons with a ‘fact of the day’. It’s usually completely unrelated to the lesson, but it sparks some really interesting conversations with students, especially ones that might be struggling to connect with the subject.
-
-One of the most rewarding moments of this year was when a student chose to come to me when they were struggling with their home schooling. It meant a lot to me that they trusted me with that information, and I was able to help them with strategies to manage their situation.
-
-One of the most gratifying things about being a teacher is when a student, who at 11 years old was asking you what would happen if there was no gravity, leaves school at 18 to do a physics, maths or engineering degree. You know you’ve shaped their life by making them passionate about your subject. I’ve also had cards at the end of one school year from students not going on to study anything to do with physics, but saying they would continue to read about and engage with it for the rest of their lives.
-
 If you’ve been inspired by Ben’s story, find out more about [career progression opportunities and teacher pay](/life-as-a-teacher/pay-and-benefits). Or, find out more about [becoming a maths teacher](/life-as-a-teacher/explore-subjects/maths).
