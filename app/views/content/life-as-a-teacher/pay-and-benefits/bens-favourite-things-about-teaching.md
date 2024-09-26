@@ -1,5 +1,5 @@
 ---
-title: Ben's favourite thing about teaching
+title: Ben's favourite things about teaching
 title paragraph: Ben is a science and maths teacher from Dartford.
 description: |-
   Hear from Ben about his favourite things about teaching.
