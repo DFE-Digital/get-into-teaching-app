@@ -9,7 +9,6 @@
   }
 
   @include mq($until: tablet) {
-    
   &--simple {
       picture {
         display: none;
