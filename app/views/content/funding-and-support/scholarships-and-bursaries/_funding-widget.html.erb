@@ -23,7 +23,7 @@
   ) %>
   </section>
   <section>
-    <%= render Content::InsetTextComponent.new(text: "The figures on this page apply if you're starting your training <%= value :bursaries_fundingdates %>. Financial support for courses starting the following year will be announced in autumn 2024.") %>
+    <%= render Content::InsetTextComponent.new(text: "The figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following year will be announced in autumn 2024.") %>
   </section>
   <section id="funding-widget">
     <%= render FundingWidgetComponent.new(
