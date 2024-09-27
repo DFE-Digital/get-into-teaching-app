@@ -22,6 +22,9 @@ inset_text:
   international-content:
     text: If you're a non-UK candidate, you can apply for early years initial teacher training, if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2024-to-2025-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
     color: grey
+  funding-holding-message:
+    text: |-
+      The bursary figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following year will be announced in autumn 2024
 calls_to_action:
   EY-graduate:
     name: feature_table
@@ -86,6 +89,8 @@ Bursaries are only available for this route as follows:
 * $earlyyears_bursaries_withfirstclass$ if you have a first class degree
 * $earlyyears_bursaries_withtwoone$ if you have a 2:1 degree
 * $earlyyears_bursaries_withtwotwo$ if you have a 2:2 degree
+
+$funding-holding-message$
 
 You are not eligible for a bursary if you do not have these qualifications or if you're completing any other EYITT routes.
 
