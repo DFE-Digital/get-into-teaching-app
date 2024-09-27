@@ -5,10 +5,22 @@ module Content
 
     include ContentHelper
 
-    def initialize(subject_name: "a subject")
-      # do we need a defalut value for subject_name and if so is this appropriate? Alternatively I think we can throw an error if no subject_name is provided? Will need to adjust tests if default value is removed or changed
+    def initialize(subject_name:)
       super
       @subject_name = substitute_values(subject_name)
+    end
+
+  private
+
+    def before_render
+      validate!
+    end
+
+    def validate!
+      %i[subject_name].each do |required_attr|
+        error_message = "#{required_attr} must be present"
+        fail(ArgumentError, error_message) if send(required_attr).blank?
+      end
     end
   end
 end
