@@ -24,6 +24,10 @@ keywords:
   - Subject knowledge enhancement
   - SKE
   - enhance
+inset_text:
+  funding-holding-message:
+    text: |-
+      The figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following year will be announced in autumn 2024.
 expander:
   SKE-bursaries:
     title: SKE bursaries
@@ -79,6 +83,8 @@ You can do a part-time course and complete it over a longer period or complete i
 You should complete your course before starting your teacher training. If you run out of time, your provider may allow you to continue your course at the same time as your teacher training. But if you get an SKE bursary, your payments will stop once your teacher training starts.
 
 ## Get an SKE bursary
+
+$funding-holding-message$
 
 If you start your teacher training course between September 2023 and July 2024, you could be eligible for a bursary of $bursaries_skeweekly$ per week to complete your SKE course.
 
