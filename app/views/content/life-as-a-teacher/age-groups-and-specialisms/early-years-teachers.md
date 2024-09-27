@@ -24,7 +24,7 @@ inset_text:
     color: grey
   funding-holding-message:
     text: |-
-      The bursary figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following year will be announced in autumn 2024
+      The bursary figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following year will be announced in autumn 2024.
 calls_to_action:
   EY-graduate:
     name: feature_table
