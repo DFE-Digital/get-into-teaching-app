@@ -11,7 +11,10 @@ promo_content:
 navigation: 20.20
 navigation_title: Fees and financial support for non-UK trainee teachers
 navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
-
+inset_text:
+  funding-holding-message:
+    text: |-
+      The figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following year will be announced in autumn 2024.
 date: "2021-05-27"
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
@@ -110,6 +113,8 @@ You will also need a [visa or immigration status](/non-uk-teachers/visas-for-non
 [Find teacher training courses](https://find-teacher-training-courses.service.gov.uk/).
 
 ## Bursaries and scholarships for non-UK trainee languages and physics teachers
+
+$funding-holding-message$
 
 There are 2 types of financial support you can get if you’re interested in training to teach languages or physics:
 
