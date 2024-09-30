@@ -12,24 +12,24 @@
     steps-1:
       numeric: false
       steps: 
-        Explore subjects and ages to teach:
-          partial: content/steps-to-become-a-teacher/step_1_explore_subjects_and_age_groups
         Check your qualifications:
-          partial: content/steps-to-become-a-teacher/step_2_check_your_qualifications
+          partial: content/steps-to-become-a-teacher/step_1_check_your_qualifications
         Understand funding:
-          partial: content/steps-to-become-a-teacher/step_3_understand_funding
+          partial: content/steps-to-become-a-teacher/
+          step_2_understand_funding
         Consider getting experience:
-          partial: content/steps-to-become-a-teacher/step_4_consider_getting_experience
+          partial: content/steps-to-become-a-teacher/step_3_consider_getting_experience
         Find a teacher training course:
-          partial: content/steps-to-become-a-teacher/step_5_find_a_teacher_training_course
+          partial: content/steps-to-become-a-teacher/step_4_find_a_teacher_training_course
         Apply for teacher training:
-          partial: content/steps-to-become-a-teacher/step_6_apply_for_teacher_training
+          partial: content/steps-to-become-a-teacher/step_5_apply_for_teacher_training
         Start your teacher training:
-          partial: content/steps-to-become-a-teacher/step_7_start_your_teacher_training
+          partial: content/steps-to-become-a-teacher/step_6_start_your_teacher_training
         Apply for a teaching role:
-          partial: content/steps-to-become-a-teacher/step_8_apply_for_a_teaching_role
+          partial: content/steps-to-become-a-teacher/step_7_apply_for_a_teaching_role
         Start your career:
-          partial: content/steps-to-become-a-teacher/step_9_start_your_career
+          partial: content/steps-to-become-a-teacher/
+          step_8_start_your_career
   keywords:
     - QTS
     - Qualified Teacher Status
