@@ -19,7 +19,7 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      <p>Applications are closed. You can apply for the international relocation payment (IRP) between 30 September 2024 and the end of March 2025. We will update this page with a link to the application form when it is live.</p>
+      <p>Applications for the international relocation payment (IRP) are open until 31 March 2025.</p>
         
         <br>
         <h2>Changes to eligibility and payment</h2>
@@ -160,7 +160,7 @@ You will not be eligible if you are:
 
 * an Irish citizen
 
-If you are unsure about meeting any of the eligibility requirements, email irp.mailbox@education.gov.uk for advice before planning your move.
+If you are unsure about meeting any of the eligibility requirements, email international.relocationpayment@education.gov.uk for advice before planning your move.
 
 #### Type of visa
 
@@ -200,7 +200,7 @@ You must not have spent more than 90 days in the UK in the 12 months prior to th
 
 You must not move to the UK more than 3 months before you start your teaching job.
 
-If you are unsure about meeting any of the eligibility requirements, email irp.mailbox@education.gov.uk for advice before planning your move.
+If you are unsure about meeting any of the eligibility requirements, email international.relocationpayment@education.gov.uk for advice before planning your move.
 
 #### Time spent in the UK
 
@@ -299,13 +299,13 @@ You are not eligible for the second instalment of the IRP as the dependant visa 
 
 ## How to apply for the IRP
 
-We will update this page with a link to the application form when it is live.
+Applications for the IRP are open until 31 March 2025.
+
+<a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.
 
 Before you apply for the first and second instalments of the IRP, you’ll need to check you meet the eligibility requirements.
 
-Applications are open from 30 September 2024 to end of March 2025.
-
-If you start your teaching job between 1 March 2024 and 28 February 2025 you must apply between 30 September 2024 and the end of March 2025 to remain eligible. 
+If you start your teaching job between 1 March 2024 and 28 February 2025 you must apply between 30 September 2024 and 31 March 2025 to remain eligible. 
 
 If you are eligible, you should receive the money following successful completion of our eligibility checks.
 
@@ -354,7 +354,7 @@ You can only apply for your first instalment of the IRP when you start your teac
 You can apply for the second IRP instalment once you have completed 3 consecutive terms of employment as a teacher which will be from September 2025 at the earliest.
 You’ll be paid the first and second instalments of the IRP after your eligibility checks are completed. We cannot guarantee an exact payment date.
 
-To be paid the IRP, you must have a UK bank account in your name (this can be digital). The IRP cannot be paid into a building society account.
+To be paid the IRP, you must have a UK bank account (this can be digital). The IRP cannot be paid into a building society account.
 
 You must also have a [UK National Insurance number](https://www.gov.uk/apply-national-insurance-number). You can apply for this once you arrive in England, as long as your visa gives you the right to work and you have a confirmed job.
 
@@ -388,7 +388,7 @@ You cannot receive both the levelling up premium payment and the early career pa
 
 ## Contact us
 
-For help with the IRP email teach.inengland@education.gov.uk.
+For help with the IRP, email international.relocationpayment@education.gov.uk.
 
 Do not send us a CV or enquiries about teaching jobs. DfE does not employ teachers.
 

@@ -611,7 +611,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What subject is your degree?"
-      select "Mathematics"
+      fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
@@ -675,7 +675,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What subject is your degree?"
-      select "Mathematics"
+      fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What degree class are you predicted to get?"
@@ -903,7 +903,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What subject is your degree?"
-      select "Mathematics"
+      fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which class is your degree?"
@@ -950,7 +950,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What subject is your degree?"
-      select "Mathematics"
+      fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which class is your degree?"
@@ -989,7 +989,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What subject is your degree?"
-      select "Mathematics"
+      fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which class is your degree?"

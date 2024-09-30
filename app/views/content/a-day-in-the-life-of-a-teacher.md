@@ -93,6 +93,6 @@ $q-sarah-geography-2$
     <li>discover <a href="/life-as-a-teacher">what life as a teacher is really like</a></li>
     <li>speak to a current teacher at one of our <a href="/events/about-get-into-teaching-events">Get Into Teaching events</a></li>
     <li>find a <a href="https://find-teacher-training-courses.service.gov.uk/">postgraduate teacher training course</a> to help you get <a href="/train-to-be-a-teacher/what-is-qts">qualified teacher status (QTS)</a></li>
-    <li>learn about the <a href="/support-for-early-career-teachers">support given to early career teachers based on the early career framework</a></li>
+    <li>learn about the <a href="/life-as-a-teacher/teaching-as-a-career/early-career-teachers">support given to early career teachers based on the early career framework</a></li>
   </ul>
 </section>
