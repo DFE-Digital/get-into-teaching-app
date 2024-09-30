@@ -301,7 +301,7 @@ You are not eligible for the second instalment of the IRP as the dependant visa 
 
 Applications for the IRP are open until 31 March 2025.
 
-Apply for the International Relocation Payment.
+<a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the International Relocation Payment</a>.
 
 Before you apply for the first and second instalments of the IRP, you’ll need to check you meet the eligibility requirements.
 
