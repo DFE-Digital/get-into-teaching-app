@@ -15,10 +15,6 @@ promo_content:
 navigation: 20.35
 navigation_title: If you do not have a degree
 navigation_description: You need a degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about undergraduate degree courses.
-inset_text:
- funding-holding-message:
-    text: |-
-      The figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following year will be announced in autumn 2024.
 expander:
   international:
     title: undergraduate degree courses
@@ -51,8 +47,6 @@ Qualifications vary depending on the course. For example, you could get QTS with
 $international$
 
 ## Bursaries for undergraduate degrees
-
-$funding-holding-message$
 
 You may be eligible for a [bursary of $bursaries_undergraduate$](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2024-to-2025#undergraduate-bursary) if you do a secondary maths or physics course that leads to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
