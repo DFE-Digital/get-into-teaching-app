@@ -5,6 +5,12 @@
         <ul>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
+              title: "Art and design",
+              description: "Become an art and design teacher and inspire pupils to fuel their passion for creativity.",
+              path: "/life-as-a-teacher/explore-subjects/art-and-design",
+            )) %>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
               title: "Biology",
               description: "Find out how to become a biology teacher including what you'll be teaching and what funding is available to help you train.",
               path: "/life-as-a-teacher/explore-subjects/biology",
