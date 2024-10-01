@@ -1,41 +1,46 @@
 .quote-with-image {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background-color: #8ACE00;
 
-  // @include mq($from: mobile) {
-  //   flex-direction: row;
-  //   align-items: center;
-  // }
+  @include mq($from: mobile) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-  > .title {
+  > .quote-with-image__title {
     @extend .heading-m;
     @extend .heading--box-pink;
     @extend .heading--overlap;
 
     order: 2;
-    //position: absolute;
+
     // position: relative;
     // left: 1.5em;
-    // width: fit-content;
+    width: fit-content;
 
-    @include mq($from: tablet) {
-      //position: absolute;
-      left: 220px;
-      top: 0px;
+    h2 {
+      margin: 0;
+    }
+
+    @include mq($from: mobile) {
+      flex-basis: 100%;
+      background-color: red;
+      // left: 220px;
+      // top: 0px;
       order: 1;
     }
   }
 
   picture {
     order: 1;
-    width: 100%;
-    justify-self: end;
+    // width: 100%;
 
     @include mq($from: mobile) {
-      width: 50%;
       order: 3;
+      flex-basis: 50%;
+      background-color: blue;
+      flex-basis: 50%
     }
 
     img {
@@ -46,40 +51,73 @@
       width: 100%;
       height: 100%;
       vertical-align: bottom;
+      background-color: blue;
+      flex-basis: 50%
     }
   }
 
-  .content {
+  > .quote-with-image__image {
+    @include mq($from: mobile) {
+      order: 3;
+      background-color: blue;
+      flex-basis: 50%;
+    }
+  }
+
+  > .quote-with-image__content {
     display: flex;
-    margin: 1.5em;
-    padding: 10px;
+    // margin: 3.125em 1.5em;
+    // margin-top: 1.25em;
+    // padding: 10px;
     background-color: $white;
     order: 3;
 
-    @include mq($from: narrow) {
-      width: 320px;
+    // @include mq($from: mobile) {
+      // width: 400px;
+      // margin: 50px;
+    // }
+
+    @include mq($from: mobile) {
       order: 2;
-    }
-
-    @include mq($from: mobile) {
-      width: 400px;
-      margin: 50px;
-    }
-
-    &__quote-icon {
-      position: relative;
-      top: -20px;
-      left: -20px;
-      color: pink;
-    }
-
-    @include mq($from: mobile) {
-      margin: 0;
-      position: relative;
-      left: 220px;
-      height: fit-content;
-      width: 700px;
+      // margin: 0;
+      flex-basis: 50%;
+      // position: relative;
+      // left: 50px;
+      // top: 5px;
     }
   }
 }
 
+
+
+
+
+
+
+
+
+.a-container {
+  background-color: orange;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .a {
+    flex-basis: 100%;
+    background-color: red;
+  }
+
+  .b {
+    background-color: green;
+    flex-basis: 50%;
+    position: relative;
+    left: 50px;
+    top: 5px;
+  }
+
+  .c {
+    background-color: blue;
+    flex-basis: 50%
+  }
+}
