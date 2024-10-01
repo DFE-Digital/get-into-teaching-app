@@ -6,7 +6,7 @@ description: |-
   Hear what Abigail enjoys most about teaching, and the impact she has through her job.
 layout: "layouts/minimal" 
 colour: grey-pink 
-image: "static/images/content/blog/abigail-beeley.jpg" 
+image: "static/images/content/case-studies/abigail-beeley.jpg" 
 keywords:
   - teaching
   - maths
