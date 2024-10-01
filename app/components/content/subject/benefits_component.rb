@@ -1,7 +1,6 @@
-# This component is used to display the content for the subject page.
 module Content
   module Subject
-    class SubjectPageBenefitsComponent < ViewComponent::Base
+    class BenefitsComponent < ViewComponent::Base
       attr_reader :subject_name
 
       include ContentHelper

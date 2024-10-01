@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Content::Subject::SubjectPageBenefitsComponent, type: :component do
+describe Content::Subject::BenefitsComponent, type: :component do
   let(:subject_name) { "chemistry" }
   let(:component) { described_class.new(subject_name: subject_name) }
   let(:salary_value) { YAML.load_file("config/values/salaries.yml").dig("salaries", "starting", "minshortened") }
