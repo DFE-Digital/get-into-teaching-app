@@ -12,7 +12,21 @@
       large: true
     ) %>
   </section>
+</div>
 
+
+
+
+<%= render Content::QuoteWithImageComponent.new(
+  title: "Hello world 123",
+  text: "content goes here",
+  image: "static/images/content/hero-images/teacher.jpg"
+) %>
+
+
+
+
+<div class="row inset">
   <section class="col col-720">
     <h2 class="heading--box-blue">What explore teaching advisers can do</h2>
     <p>Your adviser can help you:</p>
