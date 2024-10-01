@@ -14,4 +14,15 @@
       <p>One of the most rewarding moments of this year was when a student chose to come to me when they were struggling with their home schooling. It meant a lot to me that they trusted me with that information, and I was able to help them with strategies to manage their situation.</p>
       <p>One of the most gratifying things about being a teacher is when a student, who at 11 years old was asking you what would happen if there was no gravity, leaves school at 18 to do a physics, maths or engineering degree. You know you’ve shaped their life by making them passionate about your subject. I’ve also had cards at the end of one school year from students not going on to study anything to do with physics, but saying they would continue to read about and engage with it for the rest of their lives.</p>
   </section>
+  <section>
+  <%= render Content::PurpleBoxComponent.new(
+  heading: "Explore how to become a teacher",
+  text: "Find out which qualifications you need, what funding you can get and how to train to teach.",
+  cta: {
+    text: "Find your route into teaching",
+    path: "/steps-to-become-a-teacher",
+  },
+  image: image_pack_tag("static/images/steps-graphic-black.png", **image_alt_attribs_for_text("")),
+  ) %>
+  </section>
 </div>

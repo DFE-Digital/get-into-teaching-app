@@ -1,6 +1,6 @@
 ---
 title: Abigail's favourite things about teaching
-title paragraph: |-
+title_paragraph: |-
   <p>Abigail is a maths teacher from Wigan.</p>
 description: |-
   Hear what Abigail enjoys most about teaching, and the impact she can have through her job.
