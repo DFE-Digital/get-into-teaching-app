@@ -215,7 +215,7 @@
     - "static/images/content/hero-images/physics_1383-tablet.jpg"
 
 # blog
-"static/images/content/case-studies/abigail-beeley.jpg":
+"static/images/content/case-studies/abigail.jpg":
   alt: "Maths teacher Abigail in front of a maths display board."
   variants:
     - "static/images/content/blog/thumbnails/abigail-beeley.jpg"

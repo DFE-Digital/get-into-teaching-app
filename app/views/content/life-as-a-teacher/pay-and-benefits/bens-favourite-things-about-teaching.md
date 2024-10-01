@@ -6,7 +6,7 @@ description: |-
   Hear from Ben about his favourite things about teaching.
 layout: "layouts/minimal" 
 colour: grey-pink 
-image: "static/images/content/case-studies/ben-breen.jpg" 
+image: "static/images/content/case-studies/ben.jpg" 
 keywords:
   - teaching
   - maths
