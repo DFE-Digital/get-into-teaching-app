@@ -1,0 +1,6 @@
+<% @page_title = "Do you have paid teaching experience in the UK?" %>
+
+<%= f.govuk_radio_buttons_fieldset(:has_paid_experience_in_uk, inline: true, legend: { tag: "h1", text: "Do you have paid teaching experience in the UK of at least one term?" }) do %>
+  <%= f.govuk_radio_button :has_paid_experience_in_uk, true, label: { text: 'Yes' }, link_errors: true %>
+  <%= f.govuk_radio_button :has_paid_experience_in_uk, false, label: { text: 'No' }, link_errors: true %>
+<% end %>

@@ -69,6 +69,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
+      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
+      choose "Yes"
+      click_on "Next step"
+
       expect(page).to have_css "h1", text: "Which stage did you previously teach?"
       choose "Secondary"
       click_on "Next step"
@@ -144,6 +148,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
+      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
+      choose "Yes"
+      click_on "Next step"
+
       expect(page).to have_css "h1", text: "Which stage did you previously teach?"
       choose "Secondary"
       click_on "Next step"
@@ -213,6 +221,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
+      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
+      choose "Yes"
+      click_on "Next step"
+
       expect(page).to have_css "h1", text: "Which stage did you previously teach?"
       choose "Secondary"
       click_on "Next step"
@@ -277,6 +289,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       expect(page).to have_css "h1", text: "What is your teacher reference number (TRN)?"
       fill_in "Teacher reference number (optional)", with: "1234"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
+      choose "Yes"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which stage did you previously teach?"
@@ -754,6 +770,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in "Teacher reference number (optional)", with: "1234"
       click_on "Next step"
 
+      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
+      choose "Yes"
+      click_on "Next step"
+
       expect(page).to have_css "h1", text: "Which stage did you previously teach?"
       choose "Secondary"
       click_on "Next step"
@@ -825,6 +845,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       expect(page).to have_css "h1", text: "What is your teacher reference number (TRN)?"
       fill_in "Teacher reference number (optional)", with: "1234"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
+      choose "Yes"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which stage did you previously teach?"
@@ -1139,6 +1163,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       expect(page).not_to have_css "h1", text: "Do you have your previous teacher reference number?"
       expect(page).not_to have_css "h1", text: "What is your teacher reference number (TRN)?"
+
+      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
+      choose "Yes"
+      click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which stage did you previously teach?"
       choose "Secondary"
