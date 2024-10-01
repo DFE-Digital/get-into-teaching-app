@@ -15,8 +15,7 @@
         Check your qualifications:
           partial: content/steps-to-become-a-teacher/step_1_check_your_qualifications
         Understand funding:
-          partial: content/steps-to-become-a-teacher/
-          step_2_understand_funding
+          partial: content/steps-to-become-a-teacher/step_2_understand_funding
         Consider getting experience:
           partial: content/steps-to-become-a-teacher/step_3_consider_getting_experience
         Find a teacher training course:
@@ -28,8 +27,7 @@
         Apply for a teaching role:
           partial: content/steps-to-become-a-teacher/step_7_apply_for_a_teaching_role
         Start your career:
-          partial: content/steps-to-become-a-teacher/
-          step_8_start_your_career
+          partial: content/steps-to-become-a-teacher/step_8_start_your_career
   keywords:
     - QTS
     - Qualified Teacher Status
