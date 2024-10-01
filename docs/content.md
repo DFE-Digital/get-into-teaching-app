@@ -476,13 +476,17 @@ There is a text component available to use on the subject pages that describes t
 
 <img src="images/content_subject_page_benefits_example.png" alt="Example Content: Subject Page Benefits" style="width: 500px;">
 
-For the subject pages, the component would usually be rendered in the _artcle.html.erb file. If you need to insert the subject page benefits component in an erb file you can use the code below (please note that the subject_name can be changed to reflect the subject page you are working on. If no subject name is included, the page will throw an error):
+For the subject pages, the component would usually be rendered in the `_artcle.html.erb` file. If you need to insert the subject page benefits component in an `erb` file you can use the code below (please note that the `subject_name` can be changed to reflect the subject page you are working on. If no subject name is included, the page will throw an error):
 
 ```ruby
  <%= render(Content::Subject::SubjectPageBenefitsComponent.new(subject_name: "biology")) %>
 ```
 
-If you need to make changes to the benefts content, you can do so in the html.erb file of the component itself. You can navigate to the subject_page_benefits_component using the following path: app/components/content/subject/subject_page_benefits_component.html.erb. You can edit the html (text) and the hyperlinks here. The salaries information is being rendered via a variable which can also be changed if needed.
+If you need to make changes to the benefts content, you can do so in the `html.erb` file of the component itself. 
+You can navigate to the component using the following path: `app/components/content/subject/subject_page_benefits_component.html.erb`. 
+You can edit the html (text) and the hyperlinks here. The salaries information is being rendered via a variable which can also be changed if needed. You can find the list of salaries variables in `config/values/salaries.yml`.
+
+#### subject_page_benefits_component.html.erb
 
 ```html
  <div class="subject-benefits">
