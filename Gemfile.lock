@@ -613,7 +613,8 @@ GEM
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
     unicode-display_width (2.5.0)
-    vcr (6.2.0)
+    vcr (6.3.1)
+      base64
     victor (0.3.4)
     view_component (3.10.0)
       activesupport (>= 5.2.0, < 8.0)
