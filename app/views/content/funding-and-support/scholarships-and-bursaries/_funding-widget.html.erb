@@ -1,3 +1,7 @@
+<section>
+    <%= render Content::InsetTextComponent.new(text: "The figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following year will be announced in autumn 2024.") %>
+</section>
+
 <div class="content">
   <p>If you want to do postgraduate teacher training in England that leads to <a href="/train-to-be-a-teacher/what-is-qts">qualified teacher status (QTS)</a>, you may be eligible for a bursary or scholarship.</p>
 </div>
@@ -21,7 +25,6 @@
     link_title: "Learn more about fees and financial support for non-UK trainee teachers.",
     link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
   ) %>
-    <p>The figures on this page apply if you're starting your training <%= value :bursaries_fundingdates %>.</p>
   </section>
   <section id="funding-widget">
     <%= render FundingWidgetComponent.new(
