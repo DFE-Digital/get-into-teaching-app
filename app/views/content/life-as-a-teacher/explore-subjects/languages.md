@@ -8,7 +8,7 @@ title_paragraph: |-
   <p>
   If you're training to teach French, German or Spanish, then you could be eligible for a scholarship of $scholarships_languagesfrenchgermanspanish$.</p>
 description: |-
-Teaching languages helps pupils develop their cultural awareness and communication skills. Explore what you'll teach and what funding is available for training.
+  Teaching languages helps pupils develop their cultural awareness and communication skills. Explore what you'll teach and what funding is available for training.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/languages.jpg"
