@@ -353,6 +353,7 @@ jobs:
         with:
           name: ${{ env.code-coverage-artifact-name }}_${{ matrix.ci_node_index }}
           path: ${{ github.workspace }}/coverage
+          include-hidden-files: true
 
       - name:  Keep Unit Tests Results
         if: always()
@@ -360,6 +361,7 @@ jobs:
         with:
           name: ${{ env.unit-tests-artifact-name }}_${{ matrix.ci_node_index }}
           path: ${{ github.workspace }}/out/*
+          include-hidden-files: true
 
   sonarscanner:
     name: Sonar Scanner
