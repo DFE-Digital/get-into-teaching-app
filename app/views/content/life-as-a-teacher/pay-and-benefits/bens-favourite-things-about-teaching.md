@@ -13,6 +13,7 @@ keywords:
   - science
 content: 
   - "content/life-as-a-teacher/pay-and-benefits/bens-favourite-things-about-teaching/header" 
-  - "content/life-as-a-teacher/pay-and-benefits/bens-favourite-things-about-teaching/article" 
+  - "content/life-as-a-teacher/pay-and-benefits/bens-favourite-things-about-teaching/article"
+  - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
 ---
 
