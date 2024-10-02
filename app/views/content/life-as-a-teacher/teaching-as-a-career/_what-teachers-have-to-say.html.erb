@@ -1,0 +1,21 @@
+<div class="row grey">
+  <section class="container">
+    <div>
+      <h2 class="heading--box-pink">Find out what teachers have to say</h2>
+      <section class="category col-space-m">
+        <section class="category__cards">
+          <nav class="category__nav-cards">
+            <ul>
+              <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
+                OpenStruct.new(
+                  title: "Why becoming a parent sparked my interest in teaching",
+                  description: "Hear how bursaries helped physics teacher and mum Claire get into teaching, and why she loves working with young people. ",
+                  path: "/life-as-a-teacher/teaching-as-a-career/becoming-a-parent-sparked-my-interest-in-teaching"
+                )) %>
+            </ul>
+          </nav>
+        </section>
+      </section>
+    </div>
+  </section>
+</div>
