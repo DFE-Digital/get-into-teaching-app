@@ -1,6 +1,6 @@
 ---
-title: "Get school experience"
-heading: "Get school experience"
+title: "Get school work experience"
+heading: "Get school work experience"
 subcategory: Postgraduate teacher training
 description: |-
   Get school experience to explore what life is like in a primary or secondary classroom and find out if teaching is right for you.
@@ -20,7 +20,7 @@ calls_to_action:
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo
 navigation: 20.25
-navigation_title: Get school experience
+navigation_title: Get school work experience
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
 quote:
   q-Zainab:

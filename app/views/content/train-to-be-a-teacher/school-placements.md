@@ -5,7 +5,7 @@ subcategory: Postgraduate teacher training
 description: |-
   Learn about teacher training school placements, including how long they are, what trainees do on placements, and the support available. 
 navigation: 20.20
-navigation_title: School placements
+navigation_title: Teacher training school placements
 navigation_description: Learn about teacher training school placements, including how long they are, what trainees will do on placements, and the support available. 
 quote:
   q-giorgio:
