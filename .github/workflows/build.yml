@@ -342,6 +342,7 @@ jobs:
           docker run --net=host -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage/coverage-${{ matrix.ci_node_index }}:/app/coverage \
             -e CI_NODE_TOTAL -e CI_NODE_INDEX -e RAILS_ENV=test -e DATABASE_URL="postgresql://postgres:postgres@localhost" ${{ env.DOCKER_IMAGE_TEST }} \
             bundle exec rake 'knapsack:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report-${{ matrix.ci_node_index }}.xml --format progress]' spec
+          ls -laR /app/coverage
         env:
           CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
           CI_NODE_INDEX: ${{ matrix.ci_node_index }}
@@ -399,7 +400,6 @@ jobs:
           mkdir ${{github.workspace}}/code_coverage
           cp -r ${{github.workspace}}/${{ env.code-coverage-artifact-name }}_*/ ${{github.workspace}}/code_coverage
           ls -laR ${{github.workspace}}/code_coverage
-          ls -la ${{github.workspace}}/code_coverage/**/*.resultset.json
 
           docker run -t --rm -v ${{github.workspace}}/code_coverage:${COVERAGE_DIR} -e RAILS_ENV=test -e COVERAGE_DIR \
             ${{env.DOCKER_IMAGE_TEST}} bundle exec rake coverage:collate --trace
