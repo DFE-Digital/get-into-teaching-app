@@ -21,7 +21,7 @@ keywords:
     
 ---
 
-School placements are an important and exciting part of fee-funded or salaried postgraduate teacher training. They're a chance to:
+School placements are an important and exciting part of school-led or university-led postgraduate teacher training. They're a chance to:
 
 * get experience in the classroom
 * immerse yourself in your placement schools

@@ -3,7 +3,7 @@ title: "What to expect in teacher training"
 heading: "What to expect in teacher training"
 subcategory: Postgraduate teacher training
 description: |-
-  Find out what initial teacher training (ITT) is like, from your classroom placements and theoretical learning, to how you'll be assessed.
+  Find out what initial teacher training (ITT) is like, from your school placements and theoretical learning, to how you'll be assessed.
 navigation: 20.15
 navigation_title: What to expect in teacher training
 navigation_description: Find out what your teacher training will be like, what you'll learn, and what classroom experience you'll get.
@@ -53,27 +53,15 @@ All initial teacher training will help you:
 environment
 * make a positive contribution to your school community
 
-## Your classroom placements
+## Your school placements
 
-You should get 120 days of classroom experience as part of a postgraduate teacher training course.
-
-Your placements will be in a minimum of 2 schools. Through your placements, you’ll have the opportunity to teach, plan, observe and research.
-
-You’ll get classroom experience whether you do school-led or university-led training. Some courses may offer placements in specific kinds of schools, like special schools. You can talk to your course provider about the opportunities available.
-
-Where you complete your classroom placements will depend on whether you've chosen a primary or secondary teacher training course. [Learn about the age groups you could teach](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach).
-
-If you apply to train with a specific school, your placements may not all take place within that school. They may take place at a school within their partnership or trust. 
-
-You will need experience of teaching in 2 schools to be awarded qualified teacher status. Speak to your course provider for more details.
+You’ll get classroom experience whether you do school-led or university-led training. This is called your school placements. [Find out more about school placements](/train-to-be-a-teacher/school-placements).
 
 ## Your teacher training timetable
 
 Full-time teacher training usually takes 9 months, in line with the academic year. Part-time teacher training can take 18 to 24 months.
 
 Some courses begin with time spent in a university or school where you start your theoretical learning. Your course pattern will be different depending on your training provider.
-
-School placements vary in length and structure, but the minimum length is usually around 6 weeks. You should check with your training provider what their course and placement patterns are.
 
 ## How you’ll be assessed 
 
