@@ -5,7 +5,8 @@ namespace :coverage do
     require "simplecov"
     require "simplecov_json_formatter"
 
-    SimpleCov.collate Dir["#{ENV['COVERAGE_DIR']}/**/.resultset.json"], "rails" do
+    # SimpleCov.collate Dir["#{ENV['COVERAGE_DIR']}/**/.resultset.json"], "rails" do
+    SimpleCov.collate Dir["#{ENV['COVERAGE_DIR']}/**/coverage.json"], "rails" do
       formatter SimpleCov::Formatter::MultiFormatter.new([
         SimpleCov::Formatter::HTMLFormatter,
         SimpleCov::Formatter::JSONFormatter,
