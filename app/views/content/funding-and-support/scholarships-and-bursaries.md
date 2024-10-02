@@ -101,6 +101,8 @@ You need to apply directly to the scholarship provider. Each provider sets their
 
 Table caption: Available postgraduate bursaries and scholarships
 
+Find out more about the [subjects you could teach](/life-as-a-teacher/explore-subjects).
+
 ## Other funding options
 
 If you're not eligible for a bursary or scholarship, there may be other funding options available, such as [tuition fees and maintenance loans](/funding-and-support/tuition-fees).

@@ -1,7 +1,6 @@
 ---
 title: "How to move up the career ladder in teaching"
 heading: "How to move up the career ladder in teaching"
-subcategory: Pay and benefits
 description: |-
   Teacher training advisers talk about teacher development and how you can progress a career in teaching.
 date: "2024-01-09"
@@ -72,7 +71,7 @@ Teacher training advisers Chris Farr, Fran Lee, Sian Mills and Elaine Boyd have 
 
 ## What are teacher pastoral care roles?
 
-<strong>Fran:</strong>  Pastoral care in schools is looking at nurturing pathways. It’s about recognising all children have a right to feel safe and happy in school and guiding children on a more personal level. A [special educational needs co-ordinator (SENCO)](/life-as-a-teacher/teach-disabled-pupils-and-pupils-with-special-educational-needs) is part of pastoral care. Or you might be a form tutor and look after your pupils’ emotional wellbeing.
+<strong>Fran:</strong>  Pastoral care in schools is looking at nurturing pathways. It’s about recognising all children have a right to feel safe and happy in school and guiding children on a more personal level. A [special educational needs co-ordinator (SENCO)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs) is part of pastoral care. Or you might be a form tutor and look after your pupils’ emotional wellbeing.
 
 That pastoral level is the link between form, tutor, classroom teacher, senior leadership, home parents, carers, extended family and wider community.
 

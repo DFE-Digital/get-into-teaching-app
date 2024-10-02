@@ -15,7 +15,9 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
-      !returning_teacher?
+      has_paid_experience_in_uk = other_step(:paid_teaching_experience_in_uk).has_paid_experience_in_uk
+
+      !returning_teacher? || !has_paid_experience_in_uk
     end
 
     def stage_taught_primary?

@@ -6,7 +6,7 @@ description: |-
 related_content:
     Fees and funding for non-UK trainees: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
-    Who do you want to teach? : "/life-as-a-teacher/who-do-you-want-to-teach"
+    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
 youtube_video:
   why-train-video:
     id: WhBBL_DpHFo
@@ -149,7 +149,7 @@ Salaried courses include:
 
 ### Choosing a subject to teach
 
-The subject you apply to teach must usually be the same as, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.)
+The subject you apply to teach must usually be the same as, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) Find out more about the [subjects you could teach](/life-as-a-teacher/explore-subjects).
 
 ### Finding the right course for you
 

@@ -1,0 +1,3 @@
+<% @page_title = "Which stage did you train to teach?" %>
+
+<%= f.govuk_collection_radio_buttons :stage_taught_id, f.object.class::OPTIONS, :last, nil, inline: true, hint: { hidden: f.object.returning_teacher? }, legend: { tag: "h1" } %>

@@ -1,12 +1,8 @@
 ---
-title: Who do you want to teach
-heading: Who do you want to teach?
-subcategory: Who to teach
+title: Age groups you could teach
+heading: Age groups you could teach
 description: |-
-  Explore the key stages and ages you want to teach, whether that's primary, secondary, early years, further education, or pupils with special educational needs.
-navigation: 5.35
-navigation_title: Which age group should I teach?
-navigation_description: Explore the different ages and stages of teaching and decide which is right for you.
+  Explore the key stages and ages you could teach, whether that's primary, secondary, early years, college, or pupils with special educational needs.
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-who-do-you-want-to-teach
 ---
@@ -38,9 +34,11 @@ Children start secondary school when they’re 11. There are up to 3 stages in s
 * key stage 4 (KS4) includes years 10 and 11, with pupils aged 14 to 16
 * key stage 5 (KS5) includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms, or colleges
 
-Pupils work towards national qualifications, which are usually GCSEs during KS4. Students take A levels or other similar qualifications during KS5. 
+Pupils work towards national qualifications, which are usually GCSEs during KS4. Pupils take A levels or other similar qualifications during KS5. 
 
 Subjects at this level include core subjects such as English, maths and science, as well as many others. The full range of subjects available to teach at secondary level will depend on the school.
+
+[Explore the subjects you could teach at secondary school level](/life-as-a-teacher/explore-subjects). 
 
 ### What you need to teach in primary and secondary schools
 
@@ -62,7 +60,7 @@ Most disabled pupils and pupils with special educational needs learn in mainstre
 
 You can choose to apply for a teacher training course that specialises in SEND or you can gain the skills and experience as you train to teach.
 
-Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/life-as-a-teacher/teach-disabled-pupils-and-pupils-with-special-educational-needs).
+Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs).
 
 ## Teaching other stages
 
@@ -72,7 +70,7 @@ If you want to help young children under 5 years old to develop, you might consi
 
 Early years teachers play an essential role in children’s development up to the age of 5 and provide high-quality early education.
 
-Learn more about [the routes to become an early years teacher](/life-as-a-teacher/become-an-early-years-teacher).
+Learn more about [the routes to become an early years teacher](/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers).
 
 ### Further education
 
@@ -84,4 +82,4 @@ There are three key areas:
 * academic courses on subjects like English and maths
 * basic skills courses covering literacy and numeracy. 
 
-Learn more about [teaching in further education](/life-as-a-teacher/become-a-further-education-teacher).
+Learn more about [teaching in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers).
