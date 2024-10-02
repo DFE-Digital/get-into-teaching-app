@@ -36,7 +36,7 @@ School placements last for a minimum of 24 weeks. This time is spread across at 
 
 Your training provider will select placement schools for you. They will contact you and discuss your situation to help them select a location that you can travel to. 
 
-## What will I do on my placement?  
+## What will I do on my placements?  
 
 You school placement aims to give you enough experience to: 
 
@@ -50,7 +50,7 @@ Over your placement you’ll get to see your pupils progress and get an insight 
 
 $q-giorgio$
 
-## What support will I get during my placement? 
+## What support will I get during my placements? 
 
 School placements can be daunting, but there's lots of support available.
 
