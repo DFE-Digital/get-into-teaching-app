@@ -69,16 +69,10 @@
       color: purple
 ---
 
-<strong>Discover if a career teaching in a primary or secondary school in England is right for you.</strong>
+These steps can help you to achieve [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), which you need to teach in many primary and secondary schools in England.
 
-<b>These steps can help you to achieve [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), which you need to teach in many primary and secondary schools in England.</b>
-
-<b>With QTS you also get additional training and support in your first 2 years as a teacher, helping you to grow in confidence and develop the skills you need to succeed.</b> 
-
-<b>You do not have to follow all of the steps in order and some may take longer than others.</b>
+You do not have to follow all the steps in order, and some might take longer than others. If you need support, a [teacher training adviser](/teacher-training-advisers) can give you free practical advice and reassurance about all of these steps and more.
 
 $international-content$
-
-A teacher training adviser can give free practical advice and reassurance about all of these steps and more. [Learn more about teacher training advisers](/teacher-training-advisers).
 
 $steps-1$
