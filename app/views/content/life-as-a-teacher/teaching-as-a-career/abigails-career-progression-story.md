@@ -4,9 +4,8 @@ title_paragraph: |-
   <p>Hear from Abigail about her journey to becoming Head of Maths, only 6 years into her teaching career.</p>
 description: |-
   Hear from Abigail about her journey to becoming Head of Maths, only 6 years into her teaching career.
-layout: "layouts/minimal" 
+layout: "layouts/minimal"
 colour: grey-pink
-image: "static/images/content/case-studies/abigail.jpg"
 keywords:
   - teaching
   - maths
