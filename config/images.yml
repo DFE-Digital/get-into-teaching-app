@@ -354,9 +354,6 @@
   variants:
     - "static/images/content/blog/thumbnails/brooke-harvey.jpg"
 
-"static/images/content/blog/thumbnails/stories-peter.jpg":
-  alt: "Ex-financeer, Peter"
-
 "static/images/content/blog/thumbnails/stories-gavin.jpg":
   alt: "Assistant headteacher, Gavin"
 
