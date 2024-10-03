@@ -8,9 +8,17 @@ navigation: 20.20
 navigation_title: Teacher training school placements
 navigation_description: Learn about teacher training school placements, including how long they are, what trainees do on placements, and the support available. 
 quote:
-  q-giorgio:
-    text: "The highlight of my placements was getting to teach!"
-    name: "Giorgio, biology teacher"
+  jennifer:
+    text: "My mentor was highly knowledgeable and experienced and had high expectations which helped me to flourish."
+    name: "Jennifer, trainee teacher"
+    classes: quote--indent
+  aaron:
+    text: "My first placement was an academy with an experienced teacher in a year 3 classroom. She took me under her wing and taught me all the basics on how to conduct myself in the classroom along with how to best motivate and nurture the children to promote positive behaviour responses and enhance the classroom culture."
+    name: "Aaron, trainee teacher"
+    classes: quote--indent
+  abbe:
+    text: "My mentor was the special educational needs co-ordinator. This meant I was able to learn more about this role and improve my understanding of the strategies and support available for children with special educational needs and disabilities (SEND)."
+    name: "Abbe, trainee teacher"
     classes: quote--indent
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
@@ -28,6 +36,8 @@ School placements are an important and exciting part of school-led or university
 * get to know your pupils and see their progress
 * be part of a school community and learn from other teachers
 * start your career as a teacher
+
+$aaron$
 
 ## How long are placements?
 
@@ -49,7 +59,7 @@ On your school placement, you'll get hands-on experience of what it's like to be
 
 During your placement you’ll get to see your pupils progress and get an insight into how rewarding teaching can be.  
 
-$q-giorgio$
+$abbe$
 
 ## What support will I get during my placements? 
 
@@ -63,6 +73,8 @@ You’ll start your placements well equipped with a toolkit of theory and techni
 In each placement school, you'll have a dedicated mentor. Mentors are expert professionals and role models, who will give you knowledge, support and feedback throughout your placement to help you learn. 
 
 Mentors also receive training on how to develop teachers and what trainees need to know to complete their course. 
+
+$jennifer$
 
 ### Tutors
 
