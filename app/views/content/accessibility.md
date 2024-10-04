@@ -64,3 +64,5 @@ This website is fully compliant with the WCAG version 2.1 AA standard.
 This statement was prepared on 29 January 2024. It was last reviewed on 29 January 2024.
 
 This website was last tested independently on 25 September 2023. The test was carried out by Digital Accessibility Centre (DAC) Limited.
+
+Our next external audit is scheduled for October 2024.
