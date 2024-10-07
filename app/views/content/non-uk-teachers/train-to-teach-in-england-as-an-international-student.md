@@ -118,7 +118,7 @@ Fees cost:
 
 You’ll also have to cover your living costs.
 
-If you're planning on training to teach languages or physics, you could be eligible for a bursary or scholarship worth up to $scholarships_nonuk_max$.
+If you're planning on training to teach languages or physics, you could be eligible for a bursary or scholarship.
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 

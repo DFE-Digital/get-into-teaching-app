@@ -24,7 +24,7 @@ inset_text:
         <br>
         <h2>Changes to eligibility and payment</h2>
 
-      <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics are still eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.</p>
+      <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in certain languages may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a>.</p>
 
       <br>
       <p>Eligible teachers will receive the IRP of up to $nonuk_internationalrelocationpayment_value$, in 2 instalments of $nonuk_internationalrelocationpayment_instalment$ spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment.</p>
@@ -212,19 +212,19 @@ You will be eligible for the first instalment of the IRP if:
 
 * you have spent more than 90 days in the UK at any time before the 12 months preceding the start of your teaching job (see example 3)
 
-#### Example 1:
+#### Example 1
 
 You arrive in the UK in September 2023 on a Student visa for a course of study at a UK university. You complete your course and return home in July 2024. You return to the UK to take up an eligible teaching job in September 2024.
 
 You will not be eligible for the IRP, because you have spent more than 90 days in the UK in the 12 months preceding the start of your teaching job.
 
-#### Example 2:
+#### Example 2
 
 You travel to attend an interview for an eligible teaching job in the UK under a Standard Visitor visa in May 2024. The visit lasts 2 days and you return home, and learn you have been successful in your application. The role begins in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before your job begins. You move to the UK in July 2024.
 
 You will be eligible for the first instalment of IRP, because you have spent less than 90 days in the UK in the previous 12 months and have moved to the UK less than 3 months before the start of your teaching job.
 
-#### Example 3:
+#### Example 3
 
 You study in the UK on a Student visa for 3 years from September 2019 to July 2022, before returning home. You apply for an eligible teaching job in England starting in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024.
 
