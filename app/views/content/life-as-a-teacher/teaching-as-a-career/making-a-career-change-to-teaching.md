@@ -1,9 +1,9 @@
 ---
 title: Making a career change to teaching 
 title_paragraph: |-
-  <p>Peter shares how he switched careers to teaching, after more than 20 years working in finance.</p>
+  <p>Peter shares how he switched careers to teaching, after a long career in finance.</p>
 description: |-
-  Peter shares how he switched careers to teaching, after more than 20 years working in finance.
+  Peter shares how he switched careers to teaching, after more than 25 years working in finance.
 layout: "layouts/minimal" 
 colour: grey-pink
 keywords:
