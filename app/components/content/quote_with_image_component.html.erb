@@ -1,17 +1,31 @@
+<!--<div class="quote-with-image">-->
+<!--  <div class="quote-with-image__title"><%= @title %></div>-->
+<!---->
+<!--  <div class="quote-with-image__content-container">-->
+<!--    <div class="quote-with-image__content">-->
+<!--      Hello there-->
+<!--    </div>-->
+<!--  </div>-->
+<!---->
+<!--  <div class="quote-with-image__image">-->
+<!--    <%= image %>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+
+
+<!--<div class="a-container">-->
+<!--  <div class="a">hello</div>-->
+<!--  <div class="b">bello</div>-->
+<!--  <div class="c">cello</div>-->
+<!--</div>-->
+
 <div class="quote-with-image">
-  <div class="quote-with-image__title"><%= @title %></div>
-
-  <div class="quote-with-image__content">
-    Hello there
+  <div class="quote-with-image__content-container">
+    <div class="quote-with-image__title"><%= title %></div>
+    <div class="quote-with-image__content"><%= text.html_safe %></div>
   </div>
 
-  <div class="quote-with-image__image">
-    <%= image %>
-  </div>
-</div>
-
-<div class="a-container">
-  <div class="a">hello</div>
-  <div class="b">bello</div>
-  <div class="c">cello</div>
+  <%= image %>
 </div>
