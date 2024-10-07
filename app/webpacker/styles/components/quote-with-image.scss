@@ -5,8 +5,13 @@
   margin: auto;
 
   &:not(:has(> picture)) {
-    padding: 10px;
-    background-color: red;
+    .quote-with-image__content {
+      left: 0;
+
+      @include mq($from: tablet) {
+        margin: auto;
+      }
+    }
   }
 
   @include mq($from: tablet) {
@@ -51,10 +56,6 @@
     border-bottom: 4px solid $grey-light;
     position: relative;
 
-    &:not(:has(& + picture)) {
-      margin: auto;
-    }
-
     @include mq($from: mobile) {
       margin: auto 50px;
     }
@@ -73,36 +74,38 @@
       width: 700px;
     }
 
-    &:before, &:after{
-      position: absolute;
-      color: $pink;
-      font-weight: 800;
-      font-size: 100px;
+    &--with-quotes {
+      &:before, &:after{
+        position: absolute;
+        color: $pink;
+        font-weight: 800;
+        font-size: 100px;
 
-      @include mq($from: tablet) {
-        font-size: 150px;
+        @include mq($from: tablet) {
+          font-size: 150px;
+        }
       }
-    }
 
-    &:before{
-      content: '\201c';
-      top: -35px;
-      left: -35px;
+      &:before{
+        content: '\201c';
+        top: -35px;
+        left: -35px;
 
-      @include mq($from: tablet) {
-        top: -58px;
-        left: -50px;
+        @include mq($from: tablet) {
+          top: -58px;
+          left: -50px;
+        }
       }
-    }
 
-    &:after{
-      content: '\201d';
-      bottom: -102px;
-      right: -32px;
+      &:after{
+        content: '\201d';
+        bottom: -102px;
+        right: -32px;
 
-      @include mq($from: tablet) {
-        bottom: -158px;
-        right: -50px;
+        @include mq($from: tablet) {
+          bottom: -158px;
+          right: -50px;
+        }
       }
     }
   }
