@@ -4,7 +4,7 @@ date: "2021-07-05"
 images:
   ben_breen:
     path: "static/images/content/case-studies/ben.jpg"
-    thumbnail_path: "static/images/content/blog/thumbnails/ben.jpg"
+    thumbnail_path: "static/images/content/blog/thumbnails/ben-breen.jpg"
 description: |-
   Within three years Ben Breen went from a teaching intern to the assistant head of maths.
 keywords:
