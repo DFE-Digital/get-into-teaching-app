@@ -1,5 +1,5 @@
 <div class="quote-with-image">
-  <div class="quote-with-image__content-container">
+  <div class="quote-with-image__content-container <%= background_color %>">
     <div class="quote-with-image__title"><%= title %></div>
     <div class="quote-with-image__content <%= quotes ? "quote-with-image__content--with-quotes" : "" %>">
       <%= text.html_safe %>

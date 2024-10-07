@@ -29,6 +29,8 @@
     @include mq($from: tablet) {
       width: 50%;
     }
+
+    .grey { background-color: $grey; }
   }
 
 
