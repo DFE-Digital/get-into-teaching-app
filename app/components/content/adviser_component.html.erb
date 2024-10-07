@@ -19,7 +19,7 @@
         <%= f.hidden_field :sub_channel_id, value: f.object&.sub_channel_id.presence || params[:sub_channel] %>
         <%= f.hidden_field :accepted_policy_id, value: privacy_policy.id %>
 
-        <p>Your details are protected under the terms of our <%= link_to("privacy notice", privacy_policy_path(id: privacy_policy.id), { class: "link--black", target: :blank }) %>.</p>
+        <p>Your details are protected under the terms of our <%= link_to("privacy notice (opens in a new tab)", privacy_policy_path(id: privacy_policy.id), { class: "link--black", target: :blank }) %>.</p>
 
         <p>Our privacy notice explains how we use your personal data. It's important you read this before signing up to receive emails.</p>
 
