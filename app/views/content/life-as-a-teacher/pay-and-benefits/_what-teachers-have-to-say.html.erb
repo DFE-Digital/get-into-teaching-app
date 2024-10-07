@@ -1,29 +1,26 @@
 <div class="row grey">
   <section class="container">
     <div>
-      <h2 class="heading--box-pink">Find out what teachers have to say...</h2>
+      <h2 class="heading--box-pink">Find out what teachers have to say</h2>
       <section class="category col-space-m">
         <section class="category__cards">
           <nav class="category__nav-cards">
             <ul>
               <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
                 OpenStruct.new(
-                  title: "Teacher pay",
-                  description: "Find out the starting salary for a qualified teacher and how your pay could increase during your career.",
-                  path: "/life-as-a-teacher/pay-and-benefits/teacher-pay",
-                  image: "static/images/content/hero-images/teacher.jpg"
+                  title: "Ben's favourite things about teaching",
+                  description: "Maths and science teacher Ben shares his favourite things about teaching.",
+                  path: "/life-as-a-teacher/pay-and-benefits/bens-favourite-things-about-teaching",
+                  image: "static/images/content/case-studies/ben.jpg"
                 )) %>
+            </ul>
+            <ul>
               <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
                 OpenStruct.new(
-                  title: "Teacher pensions",
-                  description: "Learn more about the teachers' pension scheme which is one of the most generous in the country.",
-                  path: "/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme"
-                )) %>
-              <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
-                OpenStruct.new(
-                  title: "Teacher insights: moving up the career ladder",
-                  description: "Top tips from teacher training advisers on how you can progress a career in teaching.",
-                  path: "/life-as-a-teacher/pay-and-benefits/career-progression"
+                  title: "Abigail's favourite things about teaching",
+                  description: "Hear what Abigail enjoys most about teaching, and the impact she has through her job.   ",
+                  path: "/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching",
+                  image: "static/images/content/case-studies/abigail.jpg"
                 )) %>
             </ul>
           </nav>
