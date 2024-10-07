@@ -112,7 +112,7 @@ You will also need a [visa or immigration status](/non-uk-teachers/visas-for-non
 
 [Find teacher training courses](https://find-teacher-training-courses.service.gov.uk/).
 
-## Bursaries and scholarships for non-UK languages and physics teachers
+## Bursaries and scholarships for non-UK trainee languages and physics teachers
 
 $funding-holding-message$
 
