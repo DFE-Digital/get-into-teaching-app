@@ -19,21 +19,33 @@ li {
   margin-bottom: 0.5em; 
 
   &:last-child {
-    margin-bottom: 0; // Remove margin from the last <li> in a list
+    margin-bottom: 0;
   }
 
-  // Apply margin if this <li> has a link and is followed by another <li> with a link
+  a {
+    display: inline-block;
+    min-width: 24px;
+    min-height: 24px;
+  }
+
   &:has(a) {
-    // Ensure this <li> applies margin to the next <li> that has a link
     &:not(:last-child) {
       & + li:has(a) {
-        margin-top: 1.5em; // Adds 1.5em margin above the next <li> with a link
+        margin-top: 1.5em;
       }
     }
   }
 }
 
 p {
+
+  a {
+    display: inline-block;
+    min-width: 24px;
+    min-height: 24px;
+  }
+
+
   &:has(a) {
     &:not(:last-child) {
       & +p:has(a) {
