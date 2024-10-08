@@ -1,8 +1,8 @@
 module Content
   class QuoteWithImageComponent < ViewComponent::Base
-    attr_reader :title, :text, :image, :heading, :color, :quotes, :background_color,
+    attr_reader :title, :text, :image, :heading, :color, :quotes, :background_color
 
-    def initialize(title:, text:, image: nil, heading: :m, color: "pink", background_color: "grey", quotes: true)
+    def initialize(title:, text:, image: nil, heading: :m, color: "pink", background_color: "blue", quotes: true)
       super
 
       @title = title

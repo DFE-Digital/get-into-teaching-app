@@ -30,7 +30,8 @@
       width: 50%;
     }
 
-    .grey { background-color: $grey; }
+    &.grey { background-color: $grey; }
+    &.blue { background-color: $blue; }
   }
 
 
