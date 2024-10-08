@@ -30,8 +30,9 @@
       width: 50%;
     }
 
-    &.grey { background-color: $grey; }
-    &.blue { background-color: $blue; }
+    &.blue { background-color: lighten($blue, 20%); }
+    &.pink { background-color: lighten($pink, 20%); }
+    &.yellow { background-color: $yellow-light; }
   }
 
 
@@ -78,7 +79,7 @@
     }
 
     &--with-quotes {
-      &:before, &:after{
+      &:before, &:after {
         position: absolute;
         color: $pink;
         font-weight: 800;
@@ -88,6 +89,10 @@
           font-size: 150px;
         }
       }
+
+      &.blue { &:before, &:after { color: $blue; }}
+      &.pink { &:before, &:after { color: $pink; }}
+      &.yellow { &:before, &:after { color: $yellow; }}
 
       &:before{
         content: '\201c';
@@ -128,6 +133,10 @@
     @include mq($from: desktop) {
       left: 170px;
     }
+
+    &.blue { background-color: $blue }
+    &.pink { background-color: $pink }
+    &.yellow { background-color: $yellow }
   }
 }
 

@@ -1,29 +1,21 @@
 module Content
   class QuoteWithImageComponent < ViewComponent::Base
-    attr_reader :title, :text, :image, :heading, :color, :quotes, :background_color
+    attr_reader :title, :text, :image_path, :heading, :heading_color, :quotes, :background_color
 
-    def initialize(title:, text:, image: nil, heading: :m, color: "pink", background_color: "blue", quotes: true)
+    def initialize(title:, text:, image_path: nil, heading: :m, heading_color: "pink", background_color: "blue", quotes: true)
       super
 
       @title = title
       @text = text
-      @image = image
+      @image_path = image_path
       @heading = heading
-      @color = color
+      @heading_color = heading_color
       @quotes = quotes
       @background_color = background_color
     end
 
     def image
-      image_pack_tag(@image, **helpers.image_alt_attribs(@image)) if @image
+      image_pack_tag(@image_path, **helpers.image_alt_attribs(@image_path)) if @image_path
     end
-
-    # def heading_classes
-    #   %w[].tap do |c|
-    #     c << "heading-#{heading}"
-    #     c << "heading--box-#{color}" unless color == "transparent"
-    #   end
-    # end
   end
 end
-
