@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat</title>
   <%= javascript_pack_tag "chat.js" %>
-  <%= javascript_tag do %>
-    window.env = {
-      TENANT_TARGET: "<%= ENV['CHAT_TENANT_TARGET'] %>",
-      CHANNEL_ID_TARGET: "<%= ENV['CHAT_CHANNEL_ID_TARGET'] %>"
-    }
-  <% end %>
+  <script type="text/javascript">
+//<![CDATA[
+    window.env = <%= raw { TENANT_TARGET: ENV['CHAT_TENANT_TARGET'], CHANNEL_ID_TARGET: ENV['CHAT_CHANNEL_ID_TARGET'] }.to_json %>;
+//]]>
+  </script>
   <link rel="stylesheet" href="/chat/index-95f0ba89.css">
 </head>
 <body>
