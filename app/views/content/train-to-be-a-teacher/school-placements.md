@@ -6,10 +6,10 @@ description: |-
   Learn about teacher training school placements, including how long they are, what trainees do on placements, and the support available. 
 navigation: 20.20
 navigation_title: Teacher training school placements
-navigation_description: Learn about teacher training school placements, including how long they are, what trainees do on placements, and the support available. 
+navigation_description: Learn about teacher training school placements, including how long they are, what trainees do on placements, and the support available.
 quote:
   jennifer:
-    text: "My mentor was highly knowledgeable and experienced and had high expectations which helped me to flourish."
+    text: "My mentor was highly knowledgeable and experienced, and had high expectations which helped me to flourish."
     name: "Jennifer, trainee teacher"
     classes: quote--indent
   aaron:
@@ -41,50 +41,58 @@ $aaron$
 
 ## How long are placements?
 
-School placements last for a minimum of 24 weeks. This time is spread across at least 2 schools. This is to give you a varied and thorough experience in the classroom. For example, in your first placement you might teach key stage 4, and in your second placement you might teach key stage 3 in a school for pupils with [special educational needs and disabilities (SEND)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs). 
+School placements last for a minimum of 24 weeks. This time is spread across at least 2 schools. This is to give you a varied and thorough experience in the classroom. 
 
-## Where will my placements take place? 
+For example, in your first placement you might teach key stage 4, and in your second placement you might teach key stage 3 in a school for pupils with [special educational needs and disabilities (SEND)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs).
 
-Your training provider will select placement schools for you. They will contact you and discuss your situation to help them select a location that you can travel to. 
+You'll need experience of teaching in 2 schools to be awarded [qualified teacher status](/train-to-be-a-teacher/what-is-qts).
 
-## What will I do on my placements?  
+## Where will my placements take place?
 
-You school placement aims to give you enough experience to: 
+Where you complete your classroom placements will depend on whether you've chosen a primary or secondary teacher training course.
+
+Your training provider will select placement schools for you. They will contact you and discuss your situation to help them select a location that you can travel to.
+
+## What will I do on my placements?
+
+You school placements aims to give you enough experience to: 
 
 * meet all the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards)
 
-* achieve [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) 
+* achieve [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts)
 
-On your school placement, you'll get hands-on experience of what it's like to be a teacher. So, you’ll be spending a lot of time in the classroom learning how to teach lessons. Beyond the classroom, you can get involved in other aspects of school life, like school trips, school plays, parents' evenings and staff meetings.  
+On your school placements, you'll get hands-on experience of what it's like to be a teacher. So, you’ll be spending a lot of time in the classroom learning how to teach lessons. Beyond the classroom, you can get involved in other aspects of school life, like school trips, school plays, parents' evenings and staff meetings.
 
-During your placement you’ll get to see your pupils progress and get an insight into how rewarding teaching can be.  
+During your placements you’ll get to see your pupils progress and get an insight into how rewarding teaching can be.
 
 $abbe$
 
-## What support will I get during my placements? 
+## What support will I get during my placements?
 
-School placements can be daunting, but there's lots of support available.
+School placements can seem daunting, but there's lots of support available.
 
 ### Your skills from training
-You’ll start your placements well equipped with a toolkit of theory and techniques that you'll learn in training. Placements are a chance to put that into practice.  
+
+You’ll start your placements well equipped with a toolkit of theory and techniques that you'll learn in training. Placements are a chance to put your new skills into practice.
 
 ### Mentors
 
-In each placement school, you'll have a dedicated mentor. Mentors are expert professionals and role models, who will give you knowledge, support and feedback throughout your placement to help you learn. 
+In each placement school, you'll have a dedicated mentor. Mentors are expert professionals and role models, who will give you knowledge, support and feedback throughout your placement to help you learn.
 
-Mentors also receive training on how to develop teachers and what trainees need to know to complete their course. 
+Mentors also receive training on how to develop teachers and what trainees need to know to complete their course.
 
 $jennifer$
 
 ### Tutors
 
-While your mentor is specific to each placement school, your tutor provides consistent support from your training provider throughout your placements. They'll work with you and your mentors to make sure you have enough support and are making good progress towards your placement goals.  
+While your mentor is specific to each placement school, your tutor provides consistent support from your training provider throughout your placements. They'll work with you and your mentors to make sure you have enough support and are making good progress towards your placement goals.
 
 ### School leadership and policies
-Like qualified teachers, your school leadership team and colleagues will be there to support you. Your placement school may also have documents and policies in place to support their teachers. For example, all schools will have a behaviour policy that explains what's expected of pupils and what will happen if they misbehave.  
 
-## Are placements paid? 
+Your school leadership team and colleagues will be there to support you. Your placement schools may also have documents and policies in place to support their teachers. For example, all schools will have a behaviour policy that explains what's expected of pupils and what will happen if they misbehave.
 
-For fee-funded postgraduate training, you can [get financial support through student finance](/funding-and-support/tuition-fee-and-maintenance-loans), or [you may be eligible for bursaries or scholarships](/funding-and-support/scholarships-and-bursaries). This support is available for your whole training course, including school placements. 
+## Are placements paid?
 
-For salaried teacher training, you’ll receive a salary throughout your teacher training, including placements. Because of this, your placement school may also be referred to as your ‘employing school’.  
+For fee-funded postgraduate training, you can [get financial support through student finance](/funding-and-support/tuition-fee-and-maintenance-loans), or [you may be eligible for bursaries or scholarships](/funding-and-support/scholarships-and-bursaries). This support is available for your whole training course, including school placements.
+
+For salaried teacher training, you’ll receive a salary throughout your teacher training, including placements. Because of this, your placement school may also be referred to as your ‘employing school’.

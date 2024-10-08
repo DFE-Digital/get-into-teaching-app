@@ -55,7 +55,9 @@ environment
 
 ## Your school placements
 
-You’ll get classroom experience whether you do school-led or university-led training. This is called your school placements. [Find out more about school placements](/train-to-be-a-teacher/school-placements).
+School placements allow you to get experience in the classroom. They're an important and exciting part of your training, and help you learn the skills you need to be a teacher.
+
+[Find out more about school placements](/train-to-be-a-teacher/school-placements).  
 
 ## Your teacher training timetable
 
