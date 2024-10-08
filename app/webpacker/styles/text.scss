@@ -22,37 +22,37 @@ li {
     margin-bottom: 0;
   }
 
-  a {
-    display: inline-block;
-    min-width: 24px;
-    min-height: 24px;
+  a { // Selects the anchor tag within the li element 
+    display: inline-block; // Makes the anchor tag a block element
+    min-width: 24px; // Sets the minimum width of the anchor tag
+    min-height: 24px; // Sets the minimum height of the anchor tag
   }
 
-  &:has(a) {
-    &:not(:last-child) {
-      & + li:has(a) {
-        margin-top: 1.5em;
-      }
-    }
-  }
+  // &:has(a) { // Selects the li element that contains an anchor tag
+  //   &:not(:last-child) { // Selects the li element that contains an anchor tag and is not the last child
+  //     & + li:has(a) { 
+  //       margin-top: 1.5em; // Adds margin to the top of the next li element that contains an anchor tag
+  //     }
+  //   }
+  // }
 }
 
-p {
-  a {
-    display: inline-block;
-    min-width: 24px;
-    min-height: 24px;
-  }
+// p {
+//   a {
+//     display: inline-block;
+//     min-width: 24px;
+//     min-height: 24px;
+//   }
 
 
-  &:has(a) {
-    &:not(:last-child) {
-      & +p:has(a) {
-        margin-top: 1.5em;
-      }
-    }
-  }
-}
+//   &:has(a) {
+//     &:not(:last-child) {
+//       & +p:has(a) {
+//         margin-top: 1.5em;
+//       }
+//     }
+//   }
+// }
 
 .strong {
   font-weight: bold;
