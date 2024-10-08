@@ -49,7 +49,7 @@ You'll need experience of teaching in 2 schools to be awarded [qualified teacher
 
 ## Where will my placements take place?
 
-Where you complete your classroom placements will depend on whether you've chosen a primary or secondary teacher training course.
+Where you complete your school placements will depend on whether you've chosen a primary or secondary teacher training course.
 
 Your training provider will select placement schools for you. They will contact you and discuss your situation to help them select a location that you can travel to.
 
