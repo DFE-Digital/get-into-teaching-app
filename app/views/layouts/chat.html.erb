@@ -7,7 +7,10 @@
   <title>Chat</title>
   <%= javascript_pack_tag "chat.js" %>
   <%= javascript_tag do %>
-    window.env = { CHAT_ENVIRONMENT: "<%= ENV['CHAT_ENVIRONMENT'] %>" }
+    window.env = {
+      TENANT_TARGET: "<%= ENV['CHAT_TENANT_TARGET'] %>",
+      CHANNEL_ID_TARGET: "<%= ENV['CHAT_CHANNEL_ID_TARGET'] %>"
+    }
   <% end %>
   <link rel="stylesheet" href="/chat/index-95f0ba89.css">
 </head>
