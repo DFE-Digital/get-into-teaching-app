@@ -26,13 +26,13 @@
     "perfume.js": "^9.4.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.0.1",
-    "postcss-loader": "^7.3.3",
+    "postcss-loader": "^8.1.1",
     "postcss-preset-env": "^9.1.2",
     "rails-ujs": "^5.2.8",
     "sass": "^1.69.7",
     "sass-loader": "^13.2.2",
     "sass-mq": "^5.0.1",
-    "semver": "7.6.2",
+    "semver": "7.6.3",
     "shakapacker": "7.2.1",
     "sinon": "^18.0.0",
     "stimulus": "^3.1",
@@ -46,7 +46,7 @@
     "webpack-merge": "5"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.24.5",
+    "@babel/eslint-parser": "^7.25.1",
     "@stimulus/test": "^2.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^9.1.0",
@@ -59,7 +59,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "postcss": "8",
     "prettier": "^3.2.5",
-    "semver": "7.6.2",
+    "semver": "7.6.3",
     "stylelint": "^16.9.0",
     "stylelint-config-gds": "^2.0.0"
   },

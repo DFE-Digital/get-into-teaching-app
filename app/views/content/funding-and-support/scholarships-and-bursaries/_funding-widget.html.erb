@@ -1,5 +1,5 @@
 <section>
-    <%= render Content::InsetTextComponent.new(text: "The figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following year will be announced in autumn 2024.") %>
+    <%= render Content::InsetTextComponent.new(text: "Financial support for courses starting between September 2025 and July 2026 will be announced soon.") %>
 </section>
 
 <div class="content">
@@ -25,11 +25,5 @@
     link_title: "Learn more about fees and financial support for non-UK trainee teachers.",
     link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
   ) %>
-  </section>
-  <section id="funding-widget">
-    <%= render FundingWidgetComponent.new(
-      @funding_widget,
-      page_path(request.path.delete_prefix("/"), anchor: 'funding-widget'))
-   %>
   </section>
 </div>

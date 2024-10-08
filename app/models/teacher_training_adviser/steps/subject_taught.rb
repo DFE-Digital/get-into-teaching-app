@@ -9,8 +9,11 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
-      !other_step(:returning_teacher).returning_to_teaching ||
-        other_step(:stage_taught).stage_taught_primary?
+      returning_teacher = other_step(:returning_teacher).returning_to_teaching
+      has_paid_experience_in_uk = other_step(:paid_teaching_experience_in_uk).has_paid_experience_in_uk
+      stage_taught_primary = other_step(:stage_taught).stage_taught_primary?
+
+      !returning_teacher || !has_paid_experience_in_uk || stage_taught_primary
     end
 
     def reviewable_answers

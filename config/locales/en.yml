@@ -55,12 +55,12 @@ en:
         name: "Art and design"
         group: "Secondary"
         sub_head: "Art and design - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_artanddesign} are available for trainee art and design teachers if you're eligible."
+        funding: "Bursaries are available for trainee art and design teachers if you're eligible."
       biology:
         name: "Biology"
         group: "Secondary"
         sub_head: "Biology - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_biology} are available for trainee biology teachers if you're eligible."
+        funding: "Bursaries are available for trainee biology teachers if you're eligible."
       business_studies:
         name: "Business studies"
         group: "Secondary"
@@ -70,7 +70,7 @@ en:
         name: "Chemistry"
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
-        funding: "Scholarships of %{scholarships_chemistry} and bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you're eligible."
+        funding: "Scholarships and bursaries are available for trainee chemistry teachers if you're eligible."
       citizenship:
         name: "Citizenship"
         group: "Secondary"
@@ -82,7 +82,7 @@ en:
         sub_head: "Classics - Secondary"
         funding: |-
 
-          Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
+          Bursaries of may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
 
           Your course provider will confirm if this applies.
       communication_and_media_studies:
@@ -94,7 +94,7 @@ en:
         name: "Computing"
         group: "Secondary"
         sub_head: "Computing - Secondary"
-        funding: "Scholarships of %{scholarships_computing} and bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you're eligible."
+        funding: "Scholarships and bursaries are available for trainee computing teachers if you're eligible."
       dance:
         name: "Dance"
         group: "Secondary"
@@ -104,7 +104,7 @@ en:
         name: "Design and technology"
         group: "Secondary"
         sub_head: "Design and technology - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_designandtechnology} are available for trainee design and technology teachers if you're eligible."
+        funding: "Bursaries are available for trainee design and technology teachers if you're eligible."
       drama:
         name: "Drama"
         group: "Secondary"
@@ -119,7 +119,7 @@ en:
         name: "English"
         group: "Secondary"
         sub_head: "English - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_english} are available for trainee English teachers if you're eligible."
+        funding: "Bursaries are available for trainee English teachers if you're eligible."
       english_as_a_second_or_other_language:
         name: "English as a second or other language"
         group: "Secondary"
@@ -129,7 +129,7 @@ en:
         name: "Geography"
         group: "Secondary"
         sub_head: "Geography - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_geography} are available for trainee geography teachers if you're eligible."
+        funding: "Bursaries are available for trainee geography teachers if you're eligible."
       health_and_social_care:
         name: "Health and social care"
         group: "Secondary"
@@ -145,19 +145,19 @@ en:
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
         funding: |-
-          Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers (including non-UK citizens).
+          Scholarships are available for trainee French, German, and Spanish language teachers (including non-UK citizens).
 
-          Bursaries of %{bursaries_postgraduate_languagesother} are available for all trainee language teachers (including non-UK citizens). These bursaries include ancient languages.
+          Bursaries are available for all trainee language teachers (including non-UK citizens). These bursaries include ancient languages.
       maths:
         name: "Maths"
         group: "Secondary"
         sub_head: "Maths - Secondary"
-        funding: "Scholarships of %{scholarships_maths} and bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you're eligible."
+        funding: "Scholarships and bursaries are available for trainee maths teachers if you're eligible."
       music:
         name: "Music"
         group: "Secondary"
         sub_head: "Music - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_music} are available for trainee music teachers if you're eligible."
+        funding: "Bursaries are available for trainee music teachers if you're eligible."
       physical_group:
         name: "Physical education"
         group: "Secondary"
@@ -167,7 +167,7 @@ en:
         name: "Physics"
         group: "Secondary"
         sub_head: "Physics - Secondary"
-        funding: "Scholarships of %{scholarships_physics} and bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers (including non-UK citizens)."
+        funding: "Scholarships and bursaries are available for trainee physics teachers (including non-UK citizens)."
       psychology:
         name: "Psychology"
         group: "Secondary"
@@ -177,7 +177,7 @@ en:
         name: "Religious education"
         group: "Secondary"
         sub_head: "Religious education - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_religiouseducation} are available for trainee religious education teachers if you're eligible."
+        funding: "Bursaries are available for trainee religious education teachers if you're eligible."
       science:
         name: "Science"
         group: "Secondary"
@@ -264,6 +264,14 @@ en:
       teacher_id:
         title: "What is your previous teacher reference number?"
         change: "your previous teacher reference number"
+    paid_teaching_experience_in_uk:
+      has_paid_experience_in_uk:
+        title: "Do you have paid teaching experience in the UK?"
+        change: "if you have paid teaching experience in the UK"
+    train_to_teach_in_uk:
+      train_to_teach_in_uk:
+        title: "Did you train to teach in the UK?"
+        change: "if you have trained to teach in the UK"
     retake_gcse_maths_english:
       planning_to_retake_gcse_maths_and_english_id:
         title: "Are you planning to retake your English or maths GCSEs?"
@@ -287,6 +295,10 @@ en:
       degree_status_id:
         title: "In which year are you studying?"
         change: "the year in which you are studying"
+    stage_trained:
+      stage_taught_id:
+        title: "Which stage did you train to teach?"
+        change: "the stage you trained to teach"
     stage_taught:
       stage_taught_id:
         title: "Which stage did you previously teach?"
@@ -307,6 +319,10 @@ en:
       subject_taught_id:
         title: "Which main subject did you previously teach?"
         change: "the main subject you previously taught"
+    subject_trained:
+      subject_taught_id:
+        title: "Which subject did you train to teach?"
+        change: "the subject you trained to teach"
     uk_address:
       address_postcode:
         title: "Postcode"
@@ -394,6 +410,10 @@ en:
             channel_id:
               inclusion: The link you used to sign up is no longer valid.
         teacher_training_adviser/steps/subject_taught:
+          attributes:
+            subject_taught_id:
+              invalid_type: "The subject you have entered is not valid - you need to choose one from the subject list"
+        teacher_training_adviser/steps/subject_trained:
           attributes:
             subject_taught_id:
               invalid_type: "The subject you have entered is not valid - you need to choose one from the subject list"
@@ -692,6 +712,8 @@ en:
         preferred_teaching_subject_id: "Which subject would you like to teach if you return to teaching?"
       teacher_training_adviser_steps_subject_taught:
         subject_taught_id: "Which main subject did you previously teach?"
+      teacher_training_adviser_steps_subject_trained:
+        subject_taught_id: "Which subject did you train to teach?"
       teacher_training_adviser_steps_subject_interested_teaching:
         preferred_teaching_subject_id: "What would you like to teach?"
       teacher_training_adviser_steps_start_teacher_training:
@@ -709,6 +731,10 @@ en:
           Overseas: "Overseas"
       teacher_training_adviser_steps_stage_interested_teaching:
         preferred_education_phase_id_options:
+          222750000: "Primary"
+          222750001: "Secondary"
+      teacher_training_adviser_steps_stage_trained:
+        stage_taught_id_options:
           222750000: "Primary"
           222750001: "Secondary"
       teacher_training_adviser_steps_stage_taught:
@@ -853,6 +879,8 @@ en:
         degree_status_id: "In which year are you studying?"
       teacher_training_adviser_steps_stage_interested_teaching:
         preferred_education_phase_id: "Which stage are you interested in teaching?"
+      teacher_training_adviser_steps_stage_trained:
+        stage_taught_id: "Which stage did you train to teach?"
       teacher_training_adviser_steps_stage_taught:
         stage_taught_id: "Which stage did you previously teach?"
       teacher_training_adviser_steps_gcse_science:

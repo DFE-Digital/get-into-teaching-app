@@ -5,6 +5,12 @@
         <ul>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
+              title: "Art and design",
+              description: "Become an art and design teacher and inspire pupils to fuel their passion for creativity.",
+              path: "/life-as-a-teacher/explore-subjects/art-and-design",
+            )) %>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
               title: "Biology",
               description: "Find out how to become a biology teacher including what you'll be teaching and what funding is available to help you train.",
               path: "/life-as-a-teacher/explore-subjects/biology",
@@ -32,6 +38,12 @@
               title: "Maths",
               description: "Find out how to become a maths teacher, so you can show pupils how important maths is in everyday life and in understanding the world.",
               path: "/life-as-a-teacher/explore-subjects/maths"
+            )) %>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Languages",
+              description: "Help pupils to explore cultures around the world through learning a language. There's a wide range of languages you could teach, like French, Mandarin, Spanish or ancient Greek.",
+              path: "/life-as-a-teacher/explore-subjects/languages",
             )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(

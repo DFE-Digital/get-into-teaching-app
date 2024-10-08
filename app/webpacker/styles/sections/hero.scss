@@ -400,5 +400,5 @@ $mobile-cutoff: 800px;
 	&.green-yellow { @include colours($green, $yellow); }
 	&.yellow-green { @include colours($yellow, $green); }
 	&.yellow-yellow { @include colours($yellow, $yellow); }
-
+  &.grey-pink { @include colours($grey, $pink); }
 }
