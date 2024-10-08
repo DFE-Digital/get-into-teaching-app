@@ -8,7 +8,7 @@
   <%= javascript_pack_tag "chat.js" %>
   <script type="text/javascript">
 //<![CDATA[
-    window.env = <%= raw { TENANT_TARGET: ENV['CHAT_TENANT_TARGET'], CHANNEL_ID_TARGET: ENV['CHAT_CHANNEL_ID_TARGET'] }.to_json %>;
+    window.env = <%= raw @window_envs.to_json %>;
 //]]>
   </script>
   <link rel="stylesheet" href="/chat/index-95f0ba89.css">

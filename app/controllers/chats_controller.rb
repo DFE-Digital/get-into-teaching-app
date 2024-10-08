@@ -20,6 +20,7 @@ private
 
   def show_html
     use_secure_headers_override(:chat)
+    window_envs
     render layout: "chat"
   end
 
@@ -30,5 +31,12 @@ private
 
   def authenticate?
     false
+  end
+
+  def window_envs
+    @window_envs ||= {
+      TENANT_TARGET: ENV["CHAT_TENANT_TARGET"],
+      CHANNEL_ID_TARGET: ENV["CHAT_CHANNEL_ID_TARGET"],
+    }
   end
 end
