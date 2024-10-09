@@ -79,7 +79,7 @@
     }
 
     &--with-quotes {
-      &:before, &:after {
+      &::before, &::after {
         position: absolute;
         color: $pink;
         font-weight: 800;
@@ -90,11 +90,11 @@
         }
       }
 
-      &.blue { &:before, &:after { color: $blue; }}
-      &.pink { &:before, &:after { color: $pink; }}
-      &.yellow { &:before, &:after { color: $yellow; }}
+      &.blue { &::before, &::after { color: $blue; }}
+      &.pink { &::before, &::after { color: $pink; }}
+      &.yellow { &::before, &::after { color: $yellow; }}
 
-      &:before{
+      &::before{
         content: '\201c';
         top: -35px;
         left: -35px;
@@ -105,7 +105,7 @@
         }
       }
 
-      &:after{
+      &::after{
         content: '\201d';
         bottom: -102px;
         right: -32px;
