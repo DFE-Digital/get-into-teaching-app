@@ -45,7 +45,7 @@ School placements are designed to last for a minimum of 24 weeks. This time is s
 
 For example, in your first placement you might teach key stage 4, and in your second placement you might teach key stage 3 in a school for pupils with [special educational needs and disabilities (SEND)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs).
 
-You'll need experience of teaching in 2 schools to be awarded [qualified teacher status](/train-to-be-a-teacher/what-is-qts).
+You'll need experience of teaching in 2 schools to be awarded [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 ## Where will my placements take place?
 
