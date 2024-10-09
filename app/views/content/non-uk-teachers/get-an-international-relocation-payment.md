@@ -22,7 +22,7 @@ inset_text:
       <p>Applications for the international relocation payment (IRP) are open until 31 March 2025.</p>
       <p>Before you apply, you must read the guidance on this page to check you are eligible for the IRP.
       </p>
-  <a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.</p>
+ <p><a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.</p>
         
         <br>
         <h2>Changes to eligibility and payment</h2>
