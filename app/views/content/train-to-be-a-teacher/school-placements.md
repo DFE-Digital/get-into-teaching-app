@@ -55,7 +55,7 @@ Your training provider will usually select placement schools for you. They'll co
 
 You school placements aims to give you enough experience to: 
 
-* meet all the [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards)
+* meet all the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards)
 
 * achieve [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts)
 
