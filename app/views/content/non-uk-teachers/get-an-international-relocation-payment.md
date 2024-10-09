@@ -382,7 +382,7 @@ You do not need to pay an agent or any other third party to complete your applic
 
 ### Other types of financial support from the UK government
 
-Teachers who meet the eligibility requirements can also [apply for other targeted incentive payments](https://www.gov.uk/government/collections/additional-payments-for-teaching-eligibility-and-payment-details) which support recruitment and retention in priority subjects.the following payments in addition to the IRP.
+Teachers who meet the eligibility requirements can also [apply for other targeted incentive payments](https://www.gov.uk/government/collections/additional-payments-for-teaching-eligibility-and-payment-details) which support recruitment and retention in priority subjects.
 
 ## Contact us
 
