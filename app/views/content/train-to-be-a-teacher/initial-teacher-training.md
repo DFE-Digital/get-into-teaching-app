@@ -55,7 +55,7 @@ environment
 
 ## Your school placements
 
-School placements allow you to get experience in the classroom. They're an important and exciting part of your training, and help you learn the skills you need to be a teacher.
+School placements enable you to get experience in the classroom. They're an essential and exciting part of your training, and help you learn the skills you need to be a teacher.
 
 [Find out more about school placements](/train-to-be-a-teacher/school-placements).  
 

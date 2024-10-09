@@ -53,7 +53,7 @@ Your training provider will usually select placement schools for you. They'll co
 
 ## What will I do on my placements?
 
-You school placements aims to give you enough experience to: 
+Your school placements aim to give you enough experience to: 
 
 * meet all the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards)
 
