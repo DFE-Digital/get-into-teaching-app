@@ -29,7 +29,7 @@ keywords:
     
 ---
 
-School placements are an important and exciting part of school-led or university-led postgraduate teacher training. They're a chance to:
+School placements are an essential and exciting part of school-led or university-led postgraduate teacher training. They're a chance to:
 
 * get experience in the classroom
 * immerse yourself in your placement schools
@@ -41,7 +41,7 @@ $aaron$
 
 ## How long are placements?
 
-School placements last for a minimum of 24 weeks. This time is spread across at least 2 schools. This is to give you a varied and thorough experience in the classroom. 
+School placements are designed to last for a minimum of 24 weeks. This time is spread across at least 2 schools. This is to give you a varied and thorough experience in the classroom. 
 
 For example, in your first placement you might teach key stage 4, and in your second placement you might teach key stage 3 in a school for pupils with [special educational needs and disabilities (SEND)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs).
 
@@ -49,7 +49,7 @@ You'll need experience of teaching in 2 schools to be awarded [qualified teacher
 
 ## Where will my placements take place?
 
-Your training provider will usually select placement schools for you. They will contact you and discuss your situation to help them select a location that you can travel to.
+Your training provider will usually select placement schools for you. They will contact you and discuss your situation to help them select the most appropriate locations. They'll take into consideration your course, subject, commute and personal circumstance.
 
 Where you complete your classroom placements will also depend on whether you've chosen a primary or secondary teacher training course.
 
@@ -57,7 +57,7 @@ Where you complete your classroom placements will also depend on whether you've 
 
 You school placements aims to give you enough experience to: 
 
-* meet all the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards)
+* meet all the [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards)
 
 * achieve [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts)
 
@@ -77,7 +77,7 @@ You’ll start your placements well equipped with a toolkit of theory and techni
 
 ### Mentors
 
-In each placement school, you'll have a dedicated mentor. Mentors are expert professionals and role models, who will give you knowledge, support and feedback throughout your placement to help you learn.
+In each placement school, you'll have a dedicated mentor. Mentors are expert professionals and role models, who will give you knowledge, support and feedback throughout your placement to help you learn. You'll get to spend at least 1.5 hours a week with your mentor. 
 
 Mentors also receive training on how to develop teachers and what trainees need to know to complete their course.
 
@@ -93,6 +93,8 @@ Your school leadership team and colleagues will be there to support you. Your pl
 
 ## Are placements paid?
 
-For fee-funded postgraduate training, you can [get financial support through student finance](/funding-and-support/tuition-fee-and-maintenance-loans), or [you may be eligible for bursaries or scholarships](/funding-and-support/scholarships-and-bursaries). This support is available for your whole training course, including school placements.
+For fee-funded postgraduate training, you can get financial support through student finance, or you may be eligible for bursaries or scholarships. This support is available for your whole training course, including school placements. 
 
 For salaried teacher training, you’ll receive a salary throughout your teacher training, including placements. Because of this, your placement school may also be referred to as your ‘employing school’.
+
+Find out more about [financial support for postgraduate teacher training](/funding-and-support).
