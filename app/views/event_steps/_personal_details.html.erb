@@ -7,6 +7,6 @@
 <%= f.hidden_field :channel_id, value: params[:channel] || f.object&.channel_id %>
 <%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id %>
 
-<p>Your details are protected under the terms of our <%= link_to("privacy notice", privacy_policy_path(id: f.object.latest_privacy_policy.id), { target: :blank }) %>.</p>
+<p>Your details are protected under the terms of our <%= link_to("privacy notice (opens in new tab)", privacy_policy_path(id: f.object.latest_privacy_policy.id), { target: :blank }) %>.</p>
 
 <p>Our privacy notice explains how we use your personal data. It's important you read this before signing up for an event.</p>
