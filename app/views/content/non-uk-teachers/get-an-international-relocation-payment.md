@@ -20,6 +20,9 @@ inset_text:
   applications-open:
     text: |-
       <p>Applications for the international relocation payment (IRP) are open until 31 March 2025.</p>
+      <p>Before you apply, you must read the guidance on this page to check you are eligible for the IRP.
+      </p>
+  <a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.</p>
         
         <br>
         <h2>Changes to eligibility and payment</h2>
@@ -379,12 +382,7 @@ You do not need to pay an agent or any other third party to complete your applic
 
 ### Other types of financial support from the UK government
 
-Teachers who meet the eligibility requirements can also apply for the following payments in addition to the IRP:
-
-* [the levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers)
-* [early career payments](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools)
-
-You cannot receive both the levelling up premium payment and the early career payment in the same year.
+Teachers who meet the eligibility requirements can also [apply for other targeted incentive payments](https://www.gov.uk/government/collections/additional-payments-for-teaching-eligibility-and-payment-details) which support recruitment and retention in priority subjects.the following payments in addition to the IRP.
 
 ## Contact us
 
