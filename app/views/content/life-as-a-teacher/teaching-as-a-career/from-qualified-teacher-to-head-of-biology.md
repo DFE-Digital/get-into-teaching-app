@@ -1,5 +1,5 @@
 ---
-title: From qualified teacher to head of biology
+title: From qualified teacher to Head of Biology
 title_paragraph: |-
   <p>Sarah shares her story of how she became a department head in a subject she loves.</p>
 description: |-
