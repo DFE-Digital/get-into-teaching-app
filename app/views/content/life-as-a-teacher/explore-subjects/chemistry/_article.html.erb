@@ -3,6 +3,8 @@
     <h2 class="heading--box-blue">Why teach <%= @subject %></h2> 
     <div class="inset">
       <p><%= @subject.capitalize %> underpins everything, so you'll be amazed at the questions your pupils will start asking. Leading hands-on lab experiments and creating engaging lessons will mean no two days are the same in the classroom.</p>
+
+      <!-- Why teach: benefits -->
       <%=render 'content/life-as-a-teacher/explore-subjects/benefits', subject: @subject %>
     </div>
   </section>
@@ -19,10 +21,8 @@
     <h2 class="heading--box-blue">Shape your pupils' futures</h2>
     <div class="inset">
       <p>Teaching <%= @subject %> opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from medicine and forensic science, to palaeontology and oceanography.</p>
-       <!-- 
-       <p>By solving challenging problems, your pupils could make significant contributions to these impactful areas.</p>
-      <p>Your pupils will learn more from you than you might think.  As their teacher, you’ll guide your pupils though the skills they need to show their understanding of chemistry. You'll teach them valuable life skills such as critical thinking, decision making and communication.</p>
-      -->
+
+       <!-- Shape futures -->
       <%=render 'content/life-as-a-teacher/explore-subjects/shape_futures' %>
     </div>
   </section>
@@ -76,25 +76,18 @@
       <li>organic chemistry</li>
       <li>modern analytical techniques</li>
     </ul>
-    <!-- 
-    <p>Teaching pupils at different ages and abilities means you'll always be expanding your knowledge and approach to meet pupils' needs. Once you have qualified teacher status (QTS) you can also teach any other subject, as long as you can show you have enough expertise.</p> 
-    -->
+
+    <!-- Teaching pupils-->
     <%=render 'content/life-as-a-teacher/explore-subjects/teaching_pupils' %>
   </section>
 
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching <%= @subject %></h2>
-    <!-- 
-    <h3>Check your qualifications</h3>
-    <p>To train to teach chemistry in England, you'll need:</p>
-    <ul>
-      <li>GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)</li>
-      <li>a bachelor's degree in any subject</li>
-    </ul>
-     <p>Having relevant A levels can show your subject knowledge, if you do not have a degree in chemistry.</p> 
-     -->
+    
+    <!-- Check your qualifications-->
     <%=render 'content/life-as-a-teacher/explore-subjects/check_qualifcations' %>
-    <p><%= @subject %> teacher training courses have had successful applications from candidates with a range of degrees, including biomedical sciences, forensic science, pharmacy, and natural sciences.
+
+    <p><%= @subject.capitalize %> teacher training courses have had successful applications from candidates with a range of degrees, including biomedical sciences, forensic science, pharmacy, and natural sciences.
     <p>Find out about <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">the qualifications needed to teach</a>.</p>
       <%= render Content::ExpanderComponent.new(
       title: "check your qualifications",
@@ -104,31 +97,17 @@
     ) %>
   </section>
 
+  <!-- Improve your subject knowledge -->
+  <%=render 'content/life-as-a-teacher/explore-subjects/subject_knowledge' %>
 
-
-  <section class="col col-720">
-    <!--
-    <h3>Improve your subject knowledge</h3>
-    <p>If your training provider thinks you need to top up your subject knowledge in <%= @subject %> before you become a teacher, you can do a subject knowledge enhancement (SKE) course.</p>
-    <p>There are lots of reasons why someone might need to complete an SKE course. For example, if you finished your degree more than 5 years ago or if you have an A level but not a degree in the subject you want to teach.</p>
-    <p>Find out more about <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement courses</a>.</p>
-    -->
-    <%=render 'content/life-as-a-teacher/explore-subjects/subject_knowledge' %>
-  </section>
 
   <section class="col col-space-m col-720">
     <h3>Fund your teacher training</h3>
     <p><a href="/funding-and-support/scholarships-and-bursaries"> Tax-free bursaries of <%= v :bursaries_postgraduate_chemistry %> or scholarships of <%= v :scholarships_chemistry %></a> are available for eligible trainee <%= @subject %> teachers.</p>
-    <!--
-    <p>You can get a bursary or scholarship alongside a tuition fee and maintenance loan. Even if you've had financial support for a previous course, you could still be eligible for funding to support your teacher training.</p>
-    <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
-    <ul>
-      <li>a parent or carer</li>
-      <li>disabled</li>
-      <li>a veteran</li>
-    </ul>
-    -->
+
+    <!-- Funding your training -->
     <%=render 'content/life-as-a-teacher/explore-subjects/funding' %>
+    
     <%= render Content::ExpanderComponent.new(
     title: "funding your training",
     text: "If you do not have <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for funding.",
@@ -137,28 +116,8 @@
   ) %>
   </section>
 
-  <section class="col col-space-m col-720">
-    <!-- 
-    <h3>Apply for a paid internship</h3>
-    <p>If you're currently doing an undergraduate or master's degree and are interested in teaching chemistry, you could apply for a <a href="/train-to-be-a-teacher/teaching-internships">paid teaching internship</a>.</p>
-    <p>The 3-week programme could help you to understand what it's really like in the classroom and get a feel for school life.</p>> %>
-    -->
-    <%=render 'content/life-as-a-teacher/explore-subjects/internships', subject: 'chemistry' %>
-  </section>
+  <!-- Internships -->
+  <%=render 'content/life-as-a-teacher/explore-subjects/internships', subject: @subject %>
 
-  <section class="col col-720">
-    <h2 class="heading--box-blue">Support with teacher training</h2>
-     <!--
-     <p>Throughout your initial teacher training in chemistry, you'll have the support of a mentor.</p>
-    <p>Your mentor will:</p>
-    <ul>
-      <li>guide you through your training, sharing learning and career development opportunities with you</li>
-      <li>meet with you regularly to make sure your training is a positive experience</li>
-    </ul>
-    <p>You'll also be part of a welcoming school community where you'll learn from fellow teachers through taught sessions, seminars and workshops.</p>
-    <p>Once you've completed your initial teacher training, you'll continue to be supported during your first 2 years of teaching. Find out what support you'll get as <a href="/life-as-a-teacher/teaching-as-a-career/early-career-teachers">an early career teacher</a>.</p>
-    -->
-    <%=render 'content/life-as-a-teacher/explore-subjects/support', subject: @subject %>
-  </section>
-</div>
-
+  <!-- Support with teacher training -->
+  <%=render 'content/life-as-a-teacher/explore-subjects/support', subject: @subject %>
