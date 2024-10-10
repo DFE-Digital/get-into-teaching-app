@@ -238,6 +238,11 @@
   variants:
     - "static/images/content/blog/thumbnails/applying-for-teacher.jpg"
 
+"static/images/content/blog/ben-breen.jpg":
+  alt: "Maths and science teacher Ben Breen marking work at home."
+  variants:
+    - "static/images/content/blog/thumbnails/ben-breen.jpg"
+
 "static/images/content/blog/calculator.jpg":
   # A calculator on top of maths homework and a pencil case.
   alt: ""
@@ -350,9 +355,6 @@
   variants:
     - "static/images/content/blog/thumbnails/brooke-harvey.jpg"
 
-"static/images/content/blog/thumbnails/stories-peter.jpg":
-  alt: "Ex-financeer, Peter"
-
 "static/images/content/blog/thumbnails/stories-gavin.jpg":
   alt: "Assistant headteacher, Gavin"
 
@@ -376,9 +378,6 @@
 
 "static/images/content/blog/thumbnails/stories-danny.jpg":
   alt: "PE teacher, Danny Holliday"
-
-"static/images/content/blog/thumbnails/stories-claire.jpg":
-  alt: "Claire Johnson, physics teacher"
 
 "static/images/content/blog/thumbnails/stories-sandra.jpg":
   alt: "Inspirational teacher, Sandra."

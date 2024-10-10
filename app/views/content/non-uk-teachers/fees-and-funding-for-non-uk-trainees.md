@@ -14,7 +14,7 @@ navigation_description: Learn more about teacher training fees in England and fi
 inset_text:
   funding-holding-message:
     text: |-
-      The figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following year will be announced in autumn 2024.
+      Financial support for courses starting between September 2025 and July 2026 will be announced soon.
 date: "2021-05-27"
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
@@ -118,12 +118,12 @@ $funding-holding-message$
 
 There are 2 types of financial support you can get if you’re interested in training to teach languages or physics:
 
-* bursaries worth up to $bursaries_postgraduate_nonuk$ for languages and physics
-* scholarships worth up to $scholarships_nonuk_max$ for French, German, Spanish and physics
-
-You cannot receive both a bursary and a scholarship.
+* bursaries for languages and physics
+* scholarships for French, German, Spanish and physics
 
 Bursaries and scholarships are tax-free payments from the UK government that you do not have to pay back. They are paid to you by your teacher training provider.
+
+You cannot receive both a bursary and a scholarship.
 
 If some, or all, of your training fees are due in advance, your training provider may let you use a bursary or scholarship to meet these costs. Contact them to check.
 
