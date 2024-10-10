@@ -5,6 +5,10 @@ class Chat
     ActiveModel::Type::Boolean.new.cast(ENV.fetch("CHAT_ENABLED", false))
   end
 
+  def self.available?
+    new.available
+  end
+
   def to_h
     {
       skillid: skillid,
@@ -13,14 +17,14 @@ class Chat
     }
   end
 
+  def available
+    availability ? availability["available"] : false
+  end
+
 private
 
   def skillid
     availability["skillid"] if availability
-  end
-
-  def available
-    availability ? availability["available"] : false
   end
 
   def status_age

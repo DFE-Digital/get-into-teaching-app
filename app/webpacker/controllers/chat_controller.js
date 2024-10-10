@@ -6,7 +6,7 @@ export default class extends Controller {
   static values = {
     chatApiUrl: '/chat',
     chatWindowUrl: '/chat',
-    refreshInterval: 20000,
+    refreshInterval: 61000,
   };
 
   initialize() {
@@ -21,7 +21,8 @@ export default class extends Controller {
     this.unavailableTarget.classList.add('hidden');
 
     if (this.newChatEnabled) {
-      this.setNewChatState();
+      // We set the initial state of the chat on the server side to reduce requests
+      this.toggleState(this.isNewChatInitiallyAvailable());
       if (this.hasRefreshIntervalValue) {
         this.startRefreshing();
       }
@@ -32,6 +33,10 @@ export default class extends Controller {
 
   disconnect() {
     this.stopRefreshing();
+  }
+
+  isNewChatInitiallyAvailable() {
+    return this.containerTarget.dataset.available === 'true';
   }
 
   isOldChatOnline() {

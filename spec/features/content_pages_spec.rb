@@ -13,7 +13,7 @@ end
 RSpec.feature "content pages check", :content, type: :feature do
   include Values
 
-  let(:other_paths) { %w[/ /feedback /blog /blog/post_invalid_tag /search /teacher-training-adviser/sign_up/identity /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
+  let(:other_paths) { %w[/ /feedback /blog /blog/post_invalid_tag /search /teacher-training-adviser/sign_up/identity /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference /chat] }
   let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}, %r{/test}] }
 
   before do
@@ -133,6 +133,7 @@ RSpec.feature "content pages check", :content, type: :feature do
           .reject(&:nil?)
           .reject { |href| href.start_with?(Regexp.union("http:", "https:", "tel:", "mailto:")) }
           .reject { |href| href.start_with?("/blog/tag") }
+          .reject { |href| href.start_with?("/chat") }
           .reject { |href| href.match?("static/") }
           .reject { |href| href.match?(Regexp.union("privacy-policy", "events", "javascript", "browse")) }
           .select { |href| href.start_with?(Regexp.union("/", /\w+/)) }

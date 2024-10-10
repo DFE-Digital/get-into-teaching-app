@@ -1,5 +1,6 @@
 class ChatsController < ApplicationController
   def show
+    expires_in 1.minute, public: true
     respond_to do |format|
       format.html do
         show_html
@@ -18,16 +19,24 @@ class ChatsController < ApplicationController
 private
 
   def show_html
+    use_secure_headers_override(:chat)
+    window_envs
     render layout: "chat"
   end
 
   def show_json
-    # De-activate the CSP header on the chats page
-    SecureHeaders.opt_out_of_header(request, "csp")
+    use_secure_headers_override(:api)
     render json: Chat.new
   end
 
   def authenticate?
     false
+  end
+
+  def window_envs
+    @window_envs ||= {
+      TENANT_TARGET: ENV["CHAT_TENANT_TARGET"],
+      CHANNEL_ID_TARGET: ENV["CHAT_CHANNEL_ID_TARGET"],
+    }
   end
 end
