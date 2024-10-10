@@ -18,6 +18,24 @@
                   description: "Peter shares how he switched careers to teaching, after more than 25 years working in finance.",
                   path: "/life-as-a-teacher/teaching-as-a-career/making-a-career-change-to-teaching"
                 )) %>
+              <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
+                OpenStruct.new(
+                  title: "Abigail's career progression story",
+                  description: "Hear from Abigail about her journey to becoming Head of Maths, only 6 years into her teaching career.",
+                  path: "/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story"
+                )) %>
+              <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
+                OpenStruct.new(
+                  title: "From qualified teacher to Head of Biology",
+                  description: "Sarah shares her story of how she became a department head in a subject she loves.",
+                  path: "/life-as-a-teacher/teaching-as-a-career/from-qualified-teacher-to-head-of-biology"
+                )) %>
+              <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
+                OpenStruct.new(
+                  title: "From teaching intern to leadership roles",
+                  description: "In Ben’s second year of teaching, he took on the role of Head of Physics. 3 years later, he was promoted to Assistant Head of Maths.",
+                  path: "/life-as-a-teacher/teaching-as-a-career/from-teaching-intern-to-leadership-roles"
+                )) %>
             </ul>
           </nav>
         </section>

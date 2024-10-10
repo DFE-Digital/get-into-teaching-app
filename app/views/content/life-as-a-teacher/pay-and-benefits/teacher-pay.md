@@ -12,7 +12,6 @@ related_content:
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
     Why I became a teacher : "/blog/the-head-of-science-inspiring-students-in-blackpool"
-    Abigail's career progression story : "/blog/abigails-career-progression-story"
 inset_text:
   new-salaries:
     text: |-

@@ -7,7 +7,6 @@ related_content:
     Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
     Advice from an early career teacher : "/blog/being-myself-in-the-classroom"
     Managing behaviour in the classroom : "/blog/managing-behaviour-in-the-classroom"
-    Becoming a numeracy coordinator in my first year of teaching : "/blog/abigails-career-progression-story"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-ect
 ---
