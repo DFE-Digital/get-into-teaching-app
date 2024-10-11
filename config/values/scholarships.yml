@@ -4,3 +4,5 @@ scholarships:
   languagesfrenchgermanspanish: £28,000
   maths: £31,000
   physics: £31,000
+  generic:
+    maxshortened: £31k
