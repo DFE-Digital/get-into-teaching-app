@@ -1,9 +1,9 @@
 ---
-title: From teaching intern to leadership roles
+title: From teaching internship to leadership roles
 title_paragraph: |-
-  <p>In Ben’s second year of teaching, he took on the role of Head of Physics. 3 years later, he was promoted to Assistant Head of Maths.</p>
+  <p>In Ben’s second year of teaching, he took on the role of head of physics. Only 3 years later, he was promoted to assistant head of maths.</p>
 description: |-
-  In Ben’s second year of teaching, he took on the role of Head of Physics. 3 years later, he was promoted to Assistant Head of Maths.
+  In Ben’s second year of teaching, he took on the role of head of physics. Only 3 years later, he was promoted to assistant head of maths.
 layout: "layouts/minimal"
 colour: grey-pink
 keywords:

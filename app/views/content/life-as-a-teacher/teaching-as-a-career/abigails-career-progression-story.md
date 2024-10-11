@@ -1,9 +1,9 @@
 ---
 title: Abigail's career progression story 
 title_paragraph: |-
-  <p>Hear from Abigail about her journey to becoming Head of Maths, only 6 years into her teaching career.</p>
+  <p>Hear from Abigail about her journey to becoming head of maths, only 6 years into her teaching career.</p>
 description: |-
-  Hear from Abigail about her journey to becoming Head of Maths, only 6 years into her teaching career.
+  Hear from Abigail about her journey to becoming head of maths, only 6 years into her teaching career.
 layout: "layouts/minimal"
 colour: grey-pink
 keywords:
