@@ -116,7 +116,6 @@ private
 
   def render_page(path)
     @page = ::Pages::Page.find content_template(path)
-    @subject = @page.frontmatter["subject"]
 
     (@page.ancestors.reverse + [@page]).each do |page|
       title = page.heading || page.title

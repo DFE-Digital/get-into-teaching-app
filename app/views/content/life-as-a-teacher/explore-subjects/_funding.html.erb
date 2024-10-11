@@ -1,9 +1,16 @@
-<div class="funding">
-  <p>You can get a bursary or scholarship alongside a tuition fee and maintenance loan. Even if you've had financial support for a previous course, you could still be eligible for funding to support your teacher training.</p>
-  <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
+  
+<section class="col col-space-m col-720">
+  <h3>Fund your teacher training</h3>
+  <p>You may be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
   <ul>
     <li>a parent or carer</li>
     <li>disabled</li>
     <li>a veteran</li>
   </ul>
-</div>
+  <%= render Content::ExpanderComponent.new(
+    title: "funding your training",
+    text: "If you do not have <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for funding.",
+    link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
+    link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
+  ) %>
+</section>

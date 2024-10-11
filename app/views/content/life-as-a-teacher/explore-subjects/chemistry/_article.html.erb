@@ -1,43 +1,31 @@
 <div class="row inset">
   <section class="col col-720 col-space-l-top">
-    <h2 class="heading--box-blue">Why teach <%= @subject %></h2> 
+    <h2 class="heading--box-blue">Why teach <%= @front_matter["subject"] %></h2> 
     <div class="inset">
-      <p><%= @subject.capitalize %> underpins everything, so you'll be amazed at the questions your pupils will start asking. Leading hands-on lab experiments and creating engaging lessons will mean no two days are the same in the classroom.</p>
-
+      <p><%= @front_matter["subject"].titleize %> underpins everything, so you'll be amazed at the questions your pupils will start asking. Leading hands-on lab experiments and creating engaging lessons will mean no two days are the same in the classroom.</p>
       <!-- Why teach: benefits -->
-      <%=render 'content/life-as-a-teacher/explore-subjects/benefits', subject: @subject %>
+      <%=render 'content/life-as-a-teacher/explore-subjects/benefits' %>
     </div>
   </section>
 
-  <section class="col col-720">
-    <%= render Content::QuoteComponent.new(
-    text: "People may not realise how much potential there is for progression in teaching. They think they go into the world of the classroom and that's it. Lots of teachers have added responsibilities they enjoy doing and find fulfilling.",
-    name: "Chris Farr, teacher training adviser",
-    large: true
-  ) %>
-  </section>
+  <!-- Quote: Chris Farr -->
+  <%=render 'content/life-as-a-teacher/explore-subjects/quote_chris' %>
 
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Shape your pupils' futures</h2>
     <div class="inset">
-      <p>Teaching <%= @subject %> opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from medicine and forensic science, to palaeontology and oceanography.</p>
-
+      <p>Teaching <%= @front_matter["subject"] %> opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from medicine and forensic science, to palaeontology and oceanography.</p>
        <!-- Shape futures -->
       <%=render 'content/life-as-a-teacher/explore-subjects/shape_futures' %>
     </div>
   </section>
 
-  <section class="col col-720">
-    <%= render Content::QuoteComponent.new(
-    text: "For me, science is all about being inquisitive. I was always the kid in class who was thinking, 'I wonder how that works, or I wonder why that does that'. I recognise that so much in the kids I teach and being able to give them the tools to develop that curiosity and knowledge is genuinely exhilarating.",
-    name: "Holly, science teacher",
-    large: true
-  ) %>
-  </section>
+  <!-- Quote: Holly -->
+  <%=render 'content/life-as-a-teacher/explore-subjects/quote_holly' %>
 
   <section class="col col-720">
     <h2 class="heading--box-blue">What you'll teach</h2>
-    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study">national curriculum for <%= @subject %></a>.</p>
+    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study">national curriculum for <%= @front_matter["subject"] %></a>.</p>
     <p>You could have the opportunity to teach or support physics and biology lessons throughout key stages 3 and 4.</p>
     <p>When you teach 11 to 14 year olds (key stage 3), you'll cover themes from the 3 science disciplines of chemistry, biology and physics.</p>
     <p>The chemistry themes are:</p>
@@ -76,49 +64,30 @@
       <li>organic chemistry</li>
       <li>modern analytical techniques</li>
     </ul>
-
     <!-- Teaching pupils-->
     <%=render 'content/life-as-a-teacher/explore-subjects/teaching_pupils' %>
   </section>
 
   <section class="col col-space-m col-720">
-    <h2 class="heading--box-blue">Start your journey into teaching <%= @subject %></h2>
-    
+    <h2 class="heading--box-blue">Start your journey into teaching <%= @front_matter["subject"] %></h2>
     <!-- Check your qualifications-->
     <%=render 'content/life-as-a-teacher/explore-subjects/check_qualifcations' %>
-
-    <p><%= @subject.capitalize %> teacher training courses have had successful applications from candidates with a range of degrees, including biomedical sciences, forensic science, pharmacy, and natural sciences.
+    <p><%= @front_matter ["subject"].titleize %> teacher training courses have had successful applications from candidates with a range of degrees, including biomedical sciences, forensic science, pharmacy, and natural sciences.
     <p>Find out about <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">the qualifications needed to teach</a>.</p>
-      <%= render Content::ExpanderComponent.new(
-      title: "check your qualifications",
-      text: "If you have qualifications from outside the UK, you'll need to show that they meet the standards set for teacher training in England.",
-      link_title: "You can get help comparing English and international qualifications.",
-      link_url: "/non-uk-teachers/non-uk-qualifications",
-    ) %>
+    <!-- Non-UK qualifications expander -->
+    <%=render 'content/life-as-a-teacher/explore-subjects/non_uk_qualifications' %>
   </section>
 
   <!-- Improve your subject knowledge -->
   <%=render 'content/life-as-a-teacher/explore-subjects/subject_knowledge' %>
 
-
-  <section class="col col-space-m col-720">
-    <h3>Fund your teacher training</h3>
-    <p>You may be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
-    <ul>
-      <li>a parent or carer</li>
-      <li>disabled</li>
-      <li>a veteran</li>
-    </ul>
-    <%= render Content::ExpanderComponent.new(
-    title: "funding your training",
-    text: "If you do not have <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for funding.",
-    link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
-    link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
-  ) %>
-  </section>
+  <!-- Fund your teacher training -->
+  <%=render 'content/life-as-a-teacher/explore-subjects/funding' %>
 
   <!-- Internships -->
-  <%=render 'content/life-as-a-teacher/explore-subjects/internships', subject: @subject %>
+  <%=render 'content/life-as-a-teacher/explore-subjects/internships' %>
 
   <!-- Support with teacher training -->
-  <%=render 'content/life-as-a-teacher/explore-subjects/support', subject: @subject %>
+  <%=render 'content/life-as-a-teacher/explore-subjects/support' %>
+
+  </div>
