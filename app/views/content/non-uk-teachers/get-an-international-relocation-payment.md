@@ -24,7 +24,7 @@ inset_text:
         <br>
         <h2>Changes to eligibility and payment</h2>
 
-      <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a>.</p>
+      <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a></a> worth up to $scholarships_nonuk_max$.</p>
 
       <br>
       <p>Eligible teachers will receive the IRP of up to $nonuk_internationalrelocationpayment_value$, in 2 instalments of $nonuk_internationalrelocationpayment_instalment$ spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment.</p>
