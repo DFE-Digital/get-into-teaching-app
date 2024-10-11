@@ -1,27 +1,27 @@
 <div class="row inset">
   <section class="col col-720 col-space-l-top">
-    <h2 class="heading--box-blue">Why teach <%= @front_matter["subject"] %></h2> 
+    <h2 class="heading--box-blue">Why teach <%= @front_matter["subject"] %></h2>
     <div class="inset">
       <p><%= @front_matter["subject"].titleize %> underpins everything, so you'll be amazed at the questions your pupils will start asking. Leading hands-on lab experiments and creating engaging lessons will mean no two days are the same in the classroom.</p>
       <!-- Why teach: benefits -->
-      <%=render 'content/life-as-a-teacher/explore-subjects/benefits' %>
+      <%= render 'content/life-as-a-teacher/explore-subjects/benefits' %>
     </div>
   </section>
 
   <!-- Quote: Chris Farr -->
-  <%=render 'content/life-as-a-teacher/explore-subjects/quote_chris' %>
+  <%= render 'content/life-as-a-teacher/explore-subjects/quote_chris' %>
 
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Shape your pupils' futures</h2>
     <div class="inset">
       <p>Teaching <%= @front_matter["subject"] %> opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from medicine and forensic science, to palaeontology and oceanography.</p>
        <!-- Shape futures -->
-      <%=render 'content/life-as-a-teacher/explore-subjects/shape_futures' %>
+      <%= render 'content/life-as-a-teacher/explore-subjects/shape_futures' %>
     </div>
   </section>
 
   <!-- Quote: Holly -->
-  <%=render 'content/life-as-a-teacher/explore-subjects/quote_holly' %>
+  <%= render 'content/life-as-a-teacher/explore-subjects/quote_holly' %>
 
   <section class="col col-720">
     <h2 class="heading--box-blue">What you'll teach</h2>
@@ -65,29 +65,29 @@
       <li>modern analytical techniques</li>
     </ul>
     <!-- Teaching pupils-->
-    <%=render 'content/life-as-a-teacher/explore-subjects/teaching_pupils' %>
+    <%= render 'content/life-as-a-teacher/explore-subjects/teaching_pupils' %>
   </section>
 
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching <%= @front_matter["subject"] %></h2>
     <!-- Check your qualifications-->
-    <%=render 'content/life-as-a-teacher/explore-subjects/check_qualifcations' %>
+    <%= render 'content/life-as-a-teacher/explore-subjects/check_qualifcations' %>
     <p><%= @front_matter ["subject"].titleize %> teacher training courses have had successful applications from candidates with a range of degrees, including biomedical sciences, forensic science, pharmacy, and natural sciences.
     <p>Find out about <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">the qualifications needed to teach</a>.</p>
     <!-- Non-UK qualifications expander -->
-    <%=render 'content/life-as-a-teacher/explore-subjects/non_uk_qualifications' %>
+    <%= render 'content/life-as-a-teacher/explore-subjects/non_uk_qualifications' %>
   </section>
 
   <!-- Improve your subject knowledge -->
-  <%=render 'content/life-as-a-teacher/explore-subjects/subject_knowledge' %>
+  <%= render 'content/life-as-a-teacher/explore-subjects/subject_knowledge' %>
 
   <!-- Fund your teacher training -->
-  <%=render 'content/life-as-a-teacher/explore-subjects/funding' %>
+  <%= render 'content/life-as-a-teacher/explore-subjects/funding' %>
 
   <!-- Internships -->
-  <%=render 'content/life-as-a-teacher/explore-subjects/internships' %>
+  <%= render 'content/life-as-a-teacher/explore-subjects/internships' %>
 
   <!-- Support with teacher training -->
-  <%=render 'content/life-as-a-teacher/explore-subjects/support' %>
+  <%= render 'content/life-as-a-teacher/explore-subjects/support' %>
 
-  </div>
+</div>
