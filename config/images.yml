@@ -238,10 +238,8 @@
   variants:
     - "static/images/content/blog/thumbnails/applying-for-teacher.jpg"
 
-"static/images/content/blog/ben-breen.jpg":
+"static/images/content/case-studies/ben.jpg":
   alt: "Maths and science teacher Ben marking work at home."
-  variants:
-    - "static/images/content/blog/thumbnails/ben-breen.jpg"
 
 "static/images/content/blog/calculator.jpg":
   # A calculator on top of maths homework and a pencil case.
