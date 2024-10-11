@@ -1,11 +1,6 @@
 scholarships:
-  chemistry: £30,000
-  computing: £30,000
-  languagesfrenchgermanspanish: £27,000
-  maths: £30,000
-  physics: £30,000
-  generic:
-    max: £30,000
-    maxshortened: £30k
-  nonuk:
-    max: £30,000
+  chemistry: £31,000
+  computing: £31,000
+  languagesfrenchgermanspanish: £28,000
+  maths: £31,000
+  physics: £31,000

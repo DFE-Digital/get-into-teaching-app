@@ -133,6 +133,13 @@
     - "static/images/content/hero-images/cake--mobile.png"
     - "static/images/content/hero-images/cake--tablet.png"
 
+"static/images/content/hero-images/languages.jpg":
+  # A language teacher talking to pupils in a classroom.
+  alt: ""
+  variants:
+    - "static/images/content/hero-images/languages--mobile.jpg"
+    - "static/images/content/hero-images/languages--tablet.jpg"
+
 "static/images/content/hero-images/0011.jpg":
   # Child pointing something out to a teacher in the classroom.
   alt: ""
@@ -183,7 +190,7 @@
     - "static/images/content/hero-images/0032--tablet.jpg"
 
 "static/images/content/hero-images/0034.jpg":
-  # A language teacher talking to pupils in a classroom.
+  # Three teachers laughing and joking.
   alt: ""
   variants:
     - "static/images/content/hero-images/0034--mobile.jpg"
@@ -215,8 +222,8 @@
     - "static/images/content/hero-images/physics_1383-tablet.jpg"
 
 # blog
-"static/images/content/blog/abigail-beeley.jpg":
-  alt: "Maths teacher Abigail Beeley in front of a maths display board."
+"static/images/content/case-studies/abigail.jpg":
+  alt: "Maths teacher Abigail in front of a maths display board."
   variants:
     - "static/images/content/blog/thumbnails/abigail-beeley.jpg"
 
@@ -230,8 +237,8 @@
   variants:
     - "static/images/content/blog/thumbnails/applying-for-teacher.jpg"
 
-"static/images/content/blog/ben-breen.jpg":
-  alt: "Maths and science teacher Ben Breen marking work at home."
+"static/images/content/case-studies/ben.jpg":
+  alt: "Maths and science teacher Ben marking work at home."
   variants:
     - "static/images/content/blog/thumbnails/ben-breen.jpg"
 
@@ -347,9 +354,6 @@
   variants:
     - "static/images/content/blog/thumbnails/brooke-harvey.jpg"
 
-"static/images/content/blog/thumbnails/stories-peter.jpg":
-  alt: "Ex-financeer, Peter"
-
 "static/images/content/blog/thumbnails/stories-gavin.jpg":
   alt: "Assistant headteacher, Gavin"
 
@@ -373,9 +377,6 @@
 
 "static/images/content/blog/thumbnails/stories-danny.jpg":
   alt: "PE teacher, Danny Holliday"
-
-"static/images/content/blog/thumbnails/stories-claire.jpg":
-  alt: "Claire Johnson, physics teacher"
 
 "static/images/content/blog/thumbnails/stories-sandra.jpg":
   alt: "Inspirational teacher, Sandra."
@@ -403,7 +404,7 @@
   # An adviser talks to someone attending a event.
   alt: ""
 "static/images/content/homepage/directory4.jpg":
-  # Three teachers laughing and joking.
+  # A language teacher talking to pupils in a classroom.
   alt: ""
 "static/images/content/homepage/directory5.jpg":
   # A chemistry teacher with two students in a science classroom.

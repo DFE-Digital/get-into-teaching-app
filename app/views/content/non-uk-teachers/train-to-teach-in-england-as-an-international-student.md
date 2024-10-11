@@ -118,7 +118,7 @@ Fees cost:
 
 You’ll also have to cover your living costs.
 
-If you're planning on training to teach languages or physics, you could be eligible for a bursary or scholarship worth up to $scholarships_nonuk_max$.
+If you're planning on training to teach languages or physics, you could be eligible for a bursary or scholarship.
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
@@ -149,7 +149,7 @@ Salaried courses include:
 
 ### Choosing a subject to teach
 
-The subject you apply to teach must usually be the same as, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.)
+The subject you apply to teach must usually be the same as, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) Find out more about the [subjects you could teach](/life-as-a-teacher/explore-subjects).
 
 ### Finding the right course for you
 

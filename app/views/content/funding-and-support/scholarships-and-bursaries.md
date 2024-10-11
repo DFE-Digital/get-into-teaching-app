@@ -7,7 +7,6 @@ description: |-
 related_content:
     Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
     Teacher pay: "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    What qualifications do you need to be a teacher? : "/train-to-be-a-teacher/qualifications-you-need-to-teach"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:
@@ -73,7 +72,7 @@ You will not need to pay tax or National Insurance on scholarship payments.
 
 ### How to apply for a scholarship
 
-You need to apply directly to the scholarship provider. Each provider sets their own application deadline and will confirm if you meet their eligibility requirements. You can find about how to apply, deadlines and more details about each scholarship on the scholarship providers' websites:
+You need to apply directly to the scholarship provider. Each provider sets their own application deadline and will confirm if you meet their eligibility requirements. You can out find about how to apply, deadlines and more details about each scholarship on the scholarship providers' websites:
 
 * [the Royal Society of Chemistry](https://www.rsc.org/prizes-funding/funding/find-funding/teacher-training-scholarships/) (chemistry)
 * [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
@@ -100,6 +99,8 @@ You need to apply directly to the scholarship provider. Each provider sets their
 | **Religious education**                                               | $bursaries_postgraduate_religiouseducation$  |                  |
 
 Table caption: Available postgraduate bursaries and scholarships
+
+Find out more about the [subjects you could teach](/life-as-a-teacher/explore-subjects).
 
 ## Other funding options
 

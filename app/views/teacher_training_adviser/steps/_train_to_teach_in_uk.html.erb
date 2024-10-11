@@ -1,0 +1,6 @@
+<% @page_title = "Did you train to teach in the UK?" %>
+
+<%= f.govuk_radio_buttons_fieldset(:train_to_teach_in_uk, inline: true, legend: { tag: "h1", text: "Did you train to teach in the UK?" }) do %>
+  <%= f.govuk_radio_button :train_to_teach_in_uk, true, label: { text: 'Yes' }, link_errors: true %>
+  <%= f.govuk_radio_button :train_to_teach_in_uk, false, label: { text: 'No' }, link_errors: true %>
+<% end %>

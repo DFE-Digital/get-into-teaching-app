@@ -15,7 +15,7 @@ describe Content::MailingListComponent, type: :component do
   it { is_expected.to have_css("p", text: "intro") }
   it { is_expected.to have_css(".action-container--#{color}") }
   it { is_expected.to have_css("form") }
-  it { is_expected.to have_link("privacy notice", href: "/privacy-policy?id=123") }
+  it { is_expected.to have_link("privacy notice (opens in new tab)", href: "/privacy-policy?id=123") }
   it { is_expected.not_to have_css(".action-container--no-margin") }
 
   context "when color is trasparent" do
