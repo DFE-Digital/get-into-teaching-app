@@ -82,4 +82,19 @@ SecureHeaders::Configuration.default do |config|
     config.csp[:connect_src] += %w[http://localhost:3035 ws://localhost:3035 wss://localhost:3035]
   end
 end
+
+SecureHeaders::Configuration.override(:api) do |config|
+  config.csp = { default_src: SecureHeaders::OPT_OUT, script_src: SecureHeaders::OPT_OUT }
+  config.hsts = SecureHeaders::OPT_OUT
+  config.x_frame_options = SecureHeaders::OPT_OUT
+  config.x_content_type_options = SecureHeaders::OPT_OUT
+  config.x_xss_protection = SecureHeaders::OPT_OUT
+  config.x_permitted_cross_domain_policies = SecureHeaders::OPT_OUT
+end
+
+SecureHeaders::Configuration.override(:chat) do |config|
+  config.csp[:default_src] << "*.niceincontact.com ws: wss:"
+  config.csp[:connect_src] << "*.niceincontact.com ws: wss:"
+end
+
 # rubocop:enable Lint/PercentStringArray
