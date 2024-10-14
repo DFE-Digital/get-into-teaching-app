@@ -4,7 +4,7 @@ title_paragraph: |-
   <p>
   Learning a language teaches pupils more than just grammar and vocabulary. As a languages teacher, you'll help pupils gain a greater appreciation and understanding of the world.</p>
   <p>
-  Tax-free bursaries or scholarships are available for eligible trainee teachers of certain languages.</p>
+  Tax-free bursaries of $bursaries_postgraduate_languagesother$ are availabe for eligilbe trainee teachers in all languages. For French, German and Spanish trainee teachers, tax-free scholarships of $scholarships_languagesfrenchgermanspanish$ are available.</p>
 description: |-
   Teaching languages helps pupils develop their cultural awareness and communication skills. Explore what you'll teach and what funding is available for training.
 layout: "layouts/minimal"
