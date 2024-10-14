@@ -19,7 +19,7 @@ calls_to_action:
         link_target: "https://schoolexperience.education.gov.uk/"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo
-navigation: 20.20
+navigation: 20.25
 navigation_title: Get school experience
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
 quote:
@@ -43,7 +43,7 @@ It can help you:
 
 ## What to expect
 
-Your experience will either be in a school or joining classes and meeting teachers online. Placements usually last one or 2 days, but some can last up to 3 weeks.
+Your experience will either be in a school or joining classes and meeting teachers online. Experiences usually last one or 2 days, but some can last up to 3 weeks.
 
 During your experience, you’ll get to do things like:
 
@@ -55,16 +55,16 @@ During your experience, you’ll get to do things like:
 
 ## Find school experience
 
-Use our Get school experience service to search for and request experience in England. If you enter your postcode you can find schools in your area that offer placements. You can filter these by the subject and age group you're looking to teach. It also tells you whether the type of experience available is in-school, virtual or both.
+Use our Get school experience service to search for and request experience in England. If you enter your postcode you can find schools in your area that offer experience. You can filter these by the subject and age group you're looking to teach. It also tells you whether the type of experience available is in-school, virtual or both.
 
-Once you've chosen a school, you can get more information about their placement availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a DBS check. 
+Once you've chosen a school, you can get more information about their availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a DBS check. 
 
 $non-uk-get-school-experience$
 $get-school-experience$
 
 ### Arrange school experience independently
 
-You can also organise school placements yourself by contacting your old school. If you’re a student you can check whether your university has any existing links with local schools. 
+You can also organise school experience yourself by contacting your old school. If you’re a student you can check whether your university has any existing links with local schools. 
 
 Or you can call a school directly. You can [get information about schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience so your request goes to the right person. 
 

@@ -51,7 +51,7 @@ $international$
 
 ## Bursaries for undergraduate degrees
 
-You may be eligible for a [bursary of $bursaries_undergraduate$](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2024-to-2025#undergraduate-bursary) if you do a secondary maths or physics course that leads to qualified teacher status (QTS).
+You may be eligible for a [bursary of $bursaries_undergraduate$](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2025-to-2026#undergraduate-bursary) if you do a secondary maths or physics course that leads to qualified teacher status (QTS).
 
 You may also be eligible if you do an opt-in QTS course in secondary computing, languages, mathematics or physics. This is where you start a standard undergraduate degree but then opt-in to initial teacher training to get QTS.
 
