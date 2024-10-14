@@ -56,8 +56,8 @@ RSpec.describe FundingWidgetComponent, type: :component do
     context "when subject is maths" do
       before { render_inline(component) }
 
-      it "contains subject-specific funding content", skip: "Temporarily removed" do
-        expect(page).to have_text("Scholarships of £30,000 and bursaries of £28,000 are available for trainee maths teachers if you're eligible.")
+      it "contains subject-specific funding content" do
+        expect(page).to have_text("Scholarships of £31,000 and bursaries of £29,000 are available for trainee maths teachers if you're eligible.")
       end
     end
 
@@ -72,8 +72,8 @@ RSpec.describe FundingWidgetComponent, type: :component do
         expect(page).to have_text("Maths - starting salary: £31,650")
       end
 
-      it "substitutes the variable for a value in funding content", skip: "Temporarily removed" do
-        expect(page).to have_text("Bursaries of £28,000 are available.")
+      it "substitutes the variable for a value in funding content" do
+        expect(page).to have_text("Bursaries of £29,000 are available.")
       end
     end
   end
