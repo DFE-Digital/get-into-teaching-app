@@ -6,3 +6,5 @@ scholarships:
   physics: £31,000
   nonuk:
     max: £31,000
+  generic:
+    maxshortened: £31k

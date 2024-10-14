@@ -2,6 +2,83 @@
   <section class="col col-720">
     <h2 class="heading--box-blue">How can I fund my teacher training?</h2>
     <div class="inset">
+      <table class="first-column-headings right-aligned-values">
+      <caption class="govuk-table__caption govuk-table__caption--m">Available postgraduate bursaries and scholarships</caption>
+        <thead>
+          <tr>
+            <th scope="col">Subject</th>
+            <th scope="col">Bursary</th>
+            <th scope="col">Scholarship</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Art and design</td>
+            <td><%= v :bursaries_postgraduate_artanddesign %></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Biology</td>
+            <td><%= v :bursaries_postgraduate_biology %></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Chemistry</td>
+            <td><%= v :bursaries_postgraduate_chemistry %></td>
+            <td><%= v :scholarships_chemistry %></td>
+          </tr>
+          <tr>
+            <td>Computing</td>
+            <td><%= v :bursaries_postgraduate_computing %></td>
+            <td><%= v :scholarships_computing %></td>
+          </tr>
+          <tr>
+            <td>Design and technology</td>
+            <td><%= v :bursaries_postgraduate_designandtechnology %></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td><%= v :bursaries_postgraduate_english %></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Geography</td>
+            <td><%= v :bursaries_postgraduate_geography %></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Languages<br> (French, German and Spanish only)</td>
+            <td><%= v :bursaries_postgraduate_languagesfrenchgermanspanish %></td>
+            <td><%= v :scholarships_languagesfrenchgermanspanish %></td>
+          </tr>
+          <tr>
+            <td>Languages<br> (all other languages, including ancient languages)</td>
+            <td><%= v :bursaries_postgraduate_languagesother %></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Maths</td>
+            <td><%= v :bursaries_postgraduate_maths %></td>
+            <td><%= v :scholarships_maths %></td>
+          </tr>
+          <tr>
+            <td>Music</td>
+            <td><%= v :bursaries_postgraduate_music %></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Physics</td>
+            <td><%= v :bursaries_postgraduate_physics %></td>
+            <td><%= v :scholarships_physics %></td>
+          </tr>
+          <tr>
+            <td>Religious education</td>
+            <td><%= v :bursaries_postgraduate_religiouseducation %></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
       <p><%= link_to("Find out more about how to get a bursary or scholarship", page_path("funding-and-support/scholarships-and-bursaries")) %>.</p>
     </div>
   </section>
