@@ -67,7 +67,7 @@ The Cookies we use are listed below with details about why we use them and how l
 | `_vis_opt_exp_{CAMPAIGNID}_combi_choose`  | This VWO cookie stores the chosen combination. It’s a temporary cookie that gets deleted when the campaign changes are applied                                                                                                                    | Persists until campaign changes are applied          |
 | `_vwo_referrer`                           | This cookie stores referral info allowing VWO to identify the original Traffic source in case of the Split URL campaign                                                                                                                           | 15 seconds                                           |
 | `_vwo`                                    | This VWO cookie is a jar of all the VWO cookies. It is currently created only for the Safari browser browser                                                                                                                                      | Expires in 2096 years 
-| `STORAGE_CHAT_CUSTOMER_ID`                | This is a unique identifier when using our webchat to maintain the chat session.     | End of web chat session 
+| `STORAGE_CHAT_CUSTOMER_ID`                | This is a unique identifier when using our webchat to maintain the chat session.     | End of webchat session 
 
 Table caption: Essential cookies we use
 
