@@ -18,7 +18,7 @@ module.exports = {
       },
     ],
   },
-  ignorePatterns: ['polyfills/'],
+  ignorePatterns: ['polyfills/', 'app/webpacker/javascript/index-*.js'],
   overrides: [
     {
       files: ['*_spec.js', '*spec_helper.js'],
