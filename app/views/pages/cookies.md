@@ -2,7 +2,7 @@
 title: Cookies Policy
 ---
 
-Last updated: 15 January 2024
+Last updated: 15 October 2024
 
 This Cookies Policy explains what Cookies are and how we use them. You should read this policy so you can understand what type of Cookies we use, or the information we collect using Cookies and how that information is used.
 
@@ -53,8 +53,6 @@ The Cookies we use are listed below with details about why we use them and how l
 | Name                                      | Purpose                                                                                                                                                                                                                                           | Expires                                              |
 |-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
 | `_dfe_session`                            | Temporary session data                                                                                                                                                                                                                            | End of browser session                               |
-| `__zlcmid`                                | Zendesk cookie that identifies your webchat session                                                                                                                                                                                               | 1 year                                               |
-| `__zlcprivacy`                            | Zendesk cookie that stores your webchat cookie preferences                                                                                                                                                                                        | 1 year                                               |
 | `git-cookie-preferences-v1`               | Website cookie that stores your cookie preferences                                                                                                                                                                                                | 90 days                                              |
 | `_vis_opt_exp_{CAMPAIGNID}_goal_{GOALID}` | This VWO cookie is created when a campaign goal is triggered. This cookie, when created, will always have a value of 1                                                                                                                            | 100 days                                             |
 | `_vis_opt_test_cookie`                    | This VWO cookie is to read if cookies can be placed                                                                                                                                                                                               | Browser closes                                       |
@@ -68,7 +66,8 @@ The Cookies we use are listed below with details about why we use them and how l
 | `_vwo_sn`                                 | This VWO cookie stores session-level information                                                                                                                                                                                                  | 30 minutes and reset again to 30 minutes on activity |
 | `_vis_opt_exp_{CAMPAIGNID}_combi_choose`  | This VWO cookie stores the chosen combination. It’s a temporary cookie that gets deleted when the campaign changes are applied                                                                                                                    | Persists until campaign changes are applied          |
 | `_vwo_referrer`                           | This cookie stores referral info allowing VWO to identify the original Traffic source in case of the Split URL campaign                                                                                                                           | 15 seconds                                           |
-| `_vwo`                                    | This VWO cookie is a jar of all the VWO cookies. It is currently created only for the Safari browser browser                                                                                                                                      | Expires in 2096 years                                |
+| `_vwo`                                    | This VWO cookie is a jar of all the VWO cookies. It is currently created only for the Safari browser browser                                                                                                                                      | Expires in 2096 years 
+| `STORAGE_CHAT_CUSTOMER_ID`                | This is a unique identifier when using our webchat to maintain the chat session.     | End of webchat session 
 
 Table caption: Essential cookies we use
 
@@ -138,13 +137,13 @@ If you prefer to avoid the use of Cookies on the website, you must disable the u
 
 If you do not accept our Cookies, you may experience some inconvenience in your use of the website and some features may not function properly.
 
-If you'd like to delete Cookies or instruct your web browser to delete or refuse Cookies, please visit the help pages of your web browser:
+If you'd like to delete Cookies or instruct your web browser to delete or refuse Cookies, visit the help pages of your web browser:
 
-- [Google Chrome](https://support.google.com/chrome/answer/95647?hl=en-GB&p=cpn_cookies)
-- [Microsoft Edge](https://support.microsoft.com/en-us/help/4468242/microsoft-edge-browsing-data-and-privacy)
-- [Mozilla Firefox](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&redirectslug=Cookies)
-- [Safari on Mac](https://support.apple.com/en-gb/guide/safari/sfri11471/mac)
-- [Safari on iPhone or iPad](https://support.apple.com/en-us/HT201265)
+- [visit Google for Cookie guidance when using Chrome](https://support.google.com/chrome/answer/95647?hl=en-GB&p=cpn_cookies)
+- [visit  Microsoft for Cookie guidance when using Edge](https://support.microsoft.com/en-us/help/4468242/microsoft-edge-browsing-data-and-privacy)
+- [visit Mozilla for Cookie guidance when using Firefox](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&redirectslug=Cookies)
+- [visit Apple for Cookie guidance when using Safari on a Mac ](https://support.apple.com/en-gb/guide/safari/sfri11471/mac)
+- [visit Apple for Cookie guidance when using Safari on an iPhone or iPad](https://support.apple.com/en-us/HT201265)
 
 Find out [how we use your personal data](/privacy-policy) when you sign up for our services.
 
