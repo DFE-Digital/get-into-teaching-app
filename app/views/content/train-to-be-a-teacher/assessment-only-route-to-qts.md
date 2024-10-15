@@ -44,11 +44,6 @@ provider_groups:
       name: Emma Day and Sarah Sloper
       telephone: '01268 988580'
       email: assessmentonly@ete.org.uk
-    - header: Mid Essex Initial Teacher Training
-      link: https://midessexteachertraining.com/courses/assessment-only
-      name: Steve Fox
-      telephone: 01376 556398
-      email: admin@midessexteachertraining.com
     - header: Norfolk Teacher Training Centre
       link: https://www.norfolkttc.org.uk/
       name: Jacqui Waring
@@ -73,10 +68,6 @@ provider_groups:
       name: Jackie Atkin
       telephone: '01234 907896'
       email: jatkin@pilgrimpartnership.org
-    - header: University of Hertfordshire
-      link: https://www.herts.ac.uk/apply/schools-of-study/education/initial-teacher-training/assessment-only-route
-      name: AO Administration Team
-      email: AOenquiries@herts.ac.uk
   East Midlands:
     providers:
    #- header: Bishop Grosseteste University
@@ -98,10 +89,6 @@ provider_groups:
       name: Rebecca Turner-Loisel
       telephone: 0345 145 0075 (option 1)
       email: info@exchangeteachertraining.com
-    - header: Inspiring Leaders Teacher Training
-      link: https://inspiringleadersscitt.com/aor/
-      name: Dirk Smith
-      email: dsmith@iltt.org.uk
     - header: Lincolnshire SCITT
       link: https://www.lincolnshirescitt.co.uk/aor
       name: Nicki Shore
@@ -121,8 +108,6 @@ provider_groups:
       link: https://www.derby.ac.uk/
       name: Jayne Leggott
       email: askadmissions@derby.ac.uk
-    - header: University of Northampton
-      email: admissions@northampton.ac.uk
   Greater London:
     providers:
     - header: 2Schools Consortium
@@ -130,11 +115,6 @@ provider_groups:
       name: Isabella Mora
       telephone: '020 8807 6906'
       email: training@oakthorpe.enfield.sch.uk
-    - header: Bromley Schools’ Collegiate
-      link: https://www.bscteach.co.uk/
-      name: Derek Boyle
-      telephone: 020 8300 6566
-      email: Administrator@gradteach.co.uk
     - header: Future Teacher Training (Future Academies)
       link: https://www.futureteachertraining.org/
       name: Clare Foster
@@ -164,14 +144,6 @@ provider_groups:
       name: Andrew Read
       telephone: 020 7815 5444
       email: qtsao@lsbu.ac.uk
-    - header: Middlesex University
-      telephone: 020 8411 5555
-      email: AO@mdx.ac.uk
-    - header: St Mary’s University
-      link: https://www.stmarys.ac.uk/education-theology-and-leadership/assessment-only-qts.htm
-      name: Elizabeth Jackson
-      telephone: '020 8240 4326'
-      email: ao@stmarys.ac.uk
     - header: 'Teaching London: LDBS SCITT'
       link: https://teachinglondon.org
       name: Saskia Rossi
@@ -300,9 +272,6 @@ provider_groups:
     - header: Kent and Medway Training
       link: https://www.kmtraining.org.uk/
       email: polly.butterfield-tracey@kmtraining.org.uk
-    - header: Oxford Brookes University
-      name: Lorna Shires
-      email: assessment-only-qts@brookes.ac.uk
     - header: Surrey South Farnham SCITT
       name: Eukaria Finch
       telephone: 01252 717408
@@ -335,9 +304,6 @@ provider_groups:
       name: Sarah Hand
       telephone: '01908 533284'
       email: info@mkitt.co.uk
-    - header: University of Chichester
-      link: https://www.chi.ac.uk/institute-education/degrees-qts/assessment-only-route
-      email: ao@chi.ac.uk
     - header: University of Reading
       link: https://www.reading.ac.uk/education/pgce-qts-and-eyts/assessment-only
       # name: Marc Jacobs
@@ -347,10 +313,6 @@ provider_groups:
       link: https://www.sussex.ac.uk/education/ite/assessmentonly
       name: Mike Lambert / Diane Carr
       email: AOQTS@sussex.ac.uk
-    - header: University of Winchester
-      link: https://www.winchester.ac.uk/study/Short-courses/Courses/Assessment-Only-Route-to-Qualified-Teacher-Status/
-      name: Keith Smith
-      email: ao@winchester.ac.uk
     - header: West Berkshire Training Partnership
       name: Emmeline Bird
       telephone: 01635 42155
@@ -419,10 +381,6 @@ provider_groups:
       link: https://knste-shaw.org.uk/assessment-only-route
       telephone: '01782 432537'
       email: ao@knste-shaw.org.uk
-    - header: National Institute of Teaching and Education, Coventry University
-      link: https://www.coventry.ac.uk/nite/about-us/services/assessment-route-to-qts/
-      telephone: 024 7765 0660
-      email: nite@coventry.ac.uk
     - header: St. Joseph's College Stoke Secondary Partnership
       link: http://www.stjosephstrentvale.com/teaching-school/partnership/
       email: schater@stjosephsmail.com
@@ -431,9 +389,6 @@ provider_groups:
       name: Jayne Bartrop
       telephone: '01782 295977'
       email: J.Bartrop@staffs.ac.uk
-    - header: The Coventry SCITT
-      link: https://www.coventryscitt.org.uk
-      email: info@coventryscitt.org.uk
     - header: The OAKS (Ormiston and Keele SCITT)
       name: Rob Tweats
       telephone: '01782 734332'
@@ -447,10 +402,6 @@ provider_groups:
       link: https://www.ucb.ac.uk/home.aspx
       name: Dr. Marj Jeavons
       email: m.jeavons@ucb.ac.uk
-    - header: University of Warwick
-      link: https://warwick.ac.uk/fac/soc/cte/professionaldevelopment/assessmentonly/
-      name: CTE Admissions and Enrolment Team
-      email: cte.admissions@warwick.ac.uk
     - header: University of Wolverhampton – primary
       link: https://www.wlv.ac.uk/
       email: AOPrimary@wlv.ac.uk
@@ -510,11 +461,6 @@ provider_groups:
       link: https://www.espeducation.co.uk/ao-route
       name: Mark Bignell
       email: mark@espeducation.co.uk
-    - header: TES Institute (International)
-      link: https://www.tes.com/institute/courses/international-assessment-only-route
-      name: Andrew Locke
-      telephone: 020 3194 3200
-      email: institute@tesglobal.com
     - header: University of Derby
       link: https://www.derby.ac.uk/
       name: Jayne Leggott
