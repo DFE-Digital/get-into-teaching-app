@@ -15,7 +15,7 @@
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Shape your pupils' futures</h2>
     <div class="inset">
-      <p>Teaching <%= @front_matter["subject"] %> opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from medicine and forensic science, to palaeontology and oceanography.</p>
+      <p>Teaching chemistry opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from medicine and forensic science, to palaeontology and oceanography.</p>
        <!-- Shape futures -->
       <%= render 'content/life-as-a-teacher/explore-subjects/shape_futures' %>
     </div>
@@ -82,23 +82,8 @@
   <!-- Improve your subject knowledge -->
   <%= render 'content/life-as-a-teacher/explore-subjects/subject_knowledge' %>
 
-  <section class="col col-space-m col-720">
-    <h3>Fund your teacher training</h3>
-    <p><a href="/funding-and-support/scholarships-and-bursaries">Tax-free bursaries of <%= v :bursaries_postgraduate_chemistry %> or scholarships of <%= v :scholarships_chemistry %></a> are available for eligible trainee chemistry teachers.</p>
-    <p>You can get a bursary or scholarship alongside a tuition fee and maintenance loan. Even if you've had financial support for a previous course, you could still be eligible for funding to support your teacher training.</p>
-    <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
-    <ul>
-      <li>a parent or carer</li>
-      <li>disabled</li>
-      <li>a veteran</li>
-    </ul>
-    <%= render Content::ExpanderComponent.new(
-    title: "funding your training",
-    text: "If you do not have <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for funding.",
-    link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
-    link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
-  ) %>
-  </section>
+  <!-- Fund your teacher training -->
+  <%= render 'content/life-as-a-teacher/explore-subjects/funding', show_veteran: true %>
 
   <!-- Internships -->
   <%= render 'content/life-as-a-teacher/explore-subjects/paid_internships' %>
