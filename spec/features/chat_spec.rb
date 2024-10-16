@@ -7,6 +7,8 @@ RSpec.feature "Chat", type: :feature do
     allow(ENV).to receive(:fetch).and_call_original
     allow(ENV).to receive(:fetch).with("CHAT_ENABLED", false).and_return(new_chat_enabled)
     allow(ENV).to receive(:fetch).with("CHAT_AVAILABILITY_API", nil).and_return("http://api.example/")
+    stub_request(:get, "http://api.example/")
+      .to_return(status: 200, body: "{\"skillid\": 123456, \"available\": false, \"status_age\": 123 }")
   end
 
   context "when new-chat is enabled" do
@@ -30,7 +32,7 @@ RSpec.feature "Chat", type: :feature do
           popup_window_handle = (page.driver.browser.window_handles - [page.driver.current_window_handle]).first
           page.driver.switch_to_window(popup_window_handle)
           expect(page.driver.current_url).to end_with("/chat")
-          expect(page).to have_content("[Chat goes here]")
+          expect(page).to have_css("#root", visible: false)
           page.driver.close_window(popup_window_handle)
         end
       end

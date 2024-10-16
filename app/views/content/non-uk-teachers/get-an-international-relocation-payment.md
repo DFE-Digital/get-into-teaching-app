@@ -19,16 +19,15 @@ talk_to_us: false
 inset_text:
   applications-open:
     text: |-
-      <p>Applications for the international relocation payment (IRP) are open until 31 March 2025.</p>
+      <p><h2>Applications for the international relocation payment (IRP) are open</h2></p>
+      
+      <p>Before you apply, you must read the guidance on this page to check you are eligible for the IRP. Applications are open until 31 March 2025.</p>
+      <p><a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.</p>
         
-        <br>
-        <h2>Changes to eligibility and payment</h2>
-
-      <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a>.</p>
-
       <br>
-      <p>Eligible teachers will receive the IRP of up to $nonuk_internationalrelocationpayment_value$, in 2 instalments of $nonuk_internationalrelocationpayment_instalment$ spread over 2 years. Teachers must make separate applications for each year showing they meet the eligibility requirements to receive each instalment.</p>
+      <h2>Changes to eligibility and payment</h2>
 
+      <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a></a> worth up to $scholarships_nonuk_max$.</p>
 
 keywords:
   - International
@@ -111,7 +110,7 @@ You must be:
 Your contract of employment must begin between 1 March 2024 and 1 May 2025.
 State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 years old or 11 to 18 years old. Schools for pupils aged 16 to 18 years old only are not eligible. Schools for pupils aged 5 to 18 years old are eligible, but you must teach the secondary age range (11 to 16 years old or 11 to 18 years old).
 
-[Check the type and age range of the school](https://www.get-information-schools.service.gov.uk) where you’ll be teaching to see if it meets our eligibility criteria. You can also find out about the [different types of state school in England](https://www.gov.uk/types-of-school).
+[Check the type and age range of the school](https://www.get-information-schools.service.gov.uk) where you’ll be teaching to see if it meets our eligibility criteria. You can also [find out about the different types of state school in England](https://www.gov.uk/types-of-school).
 
 
 
@@ -246,7 +245,7 @@ To be eligible for the second instalment of the IRP, you must:
 
 * have successfully applied for and received the first instalment of the IRP
 
-Your term time employment must be continuous, unless you [take time off work for statutory leave](https://www.gov.uk/browse/employing-people/time-off), such as parental leave or sick leave.
+Your term time employment must be continuous, unless [you take time off work for statutory leave](https://www.gov.uk/browse/employing-people/time-off), such as parental leave or sick leave.
 
 The Department for Education (DfE) will review time taken off for any other reason on a case-by-case basis.
 
@@ -370,7 +369,7 @@ You cannot reapply for the IRP in following years if you leave the UK and then r
 
 ### Tax and the IRP
 
-DfE will pay the UK tax owed on the IRP to ensure you receive the full $nonuk_internationalrelocationpayment_value$, as long as your overall earnings do not exceed $nonuk_internationalrelocationpayment_thresholdfortaxonpayments$ in the year you receive the IRP. You may have to pay higher rate [UK Income Tax](https://www.gov.uk/browse/tax/income-tax) on any earnings which take you over $nonuk_internationalrelocationpayment_thresholdfortaxonpayments$.
+DfE will pay the UK tax owed on the IRP to ensure you receive the full $nonuk_internationalrelocationpayment_value$, as long as your overall earnings do not exceed $nonuk_internationalrelocationpayment_thresholdfortaxonpayments$ in the year you receive the IRP. You may have to [pay higher rate of UK Income Tax](https://www.gov.uk/browse/tax/income-tax) on any earnings which take you over $nonuk_internationalrelocationpayment_thresholdfortaxonpayments$.
 
 ### Protect yourself from fraud
 
@@ -379,12 +378,7 @@ You do not need to pay an agent or any other third party to complete your applic
 
 ### Other types of financial support from the UK government
 
-Teachers who meet the eligibility requirements can also apply for the following payments in addition to the IRP:
-
-* [the levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers)
-* [early career payments](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools)
-
-You cannot receive both the levelling up premium payment and the early career payment in the same year.
+Teachers who meet the eligibility requirements can also [apply for other targeted incentive payments](https://www.gov.uk/government/collections/additional-payments-for-teaching-eligibility-and-payment-details) which support recruitment and retention in priority subjects.
 
 ## Contact us
 

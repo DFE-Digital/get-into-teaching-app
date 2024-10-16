@@ -353,6 +353,11 @@ redirects:
   "/blog/school-experience-helped-me-decide-to-switch": "/train-to-be-a-teacher/get-school-experience"
   "/blog/working-to-your-own-beat": "/research"
   "/blog/overcoming-challenges-to-become-a-teacher-autism": "/funding-and-support/if-youre-disabled"
+  "/blog/becoming-a-mum-sparked-my-interest-in-teaching": "/life-as-a-teacher/teaching-as-a-career/becoming-a-parent-sparked-my-interest-in-teaching"
+  "/blog/financiers-future-in-maths": "/life-as-a-teacher/teaching-as-a-career/making-a-career-change-to-teaching"
+  "/blog/abigails-career-progression-story": "/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story"
+  "/blog/nqt-to-head-of-biology": "/life-as-a-teacher/teaching-as-a-career/from-qualified-teacher-to-head-of-biology"
+  "/blog/from-teaching-internship-to-assistant-head-of-maths":  "/life-as-a-teacher/teaching-as-a-career/from-teaching-internship-to-leadership-roles"
 
   # Blog tags
   "/blog/tag/get-into-teaching-events": "/events/about-get-into-teaching-events"
@@ -391,6 +396,27 @@ redirects:
   "/blog/top-tips-for-returning-teachers": "/returning-to-teaching"
   "/blog/tag/returning-to-teaching": "/returning-to-teaching"
 
+  # Research and PR page and associated documents
+  "/research": "/"
+  "/packs/v1/static/documents/be-the-career-change.pdf": "/"
+  "/packs/v1/static/documents/breakthrough-moments.pdf": "/"
+  "/packs/v1/static/documents/bringit-report.pdf": "/"
+  "/packs/v1/static/documents/career-change-research.pdf": "/"
+  "/packs/v1/static/documents/career-conundrum.pdf": "/"
+  "/packs/v1/static/documents/career-countdown-campaign-teaching-report.pdf": "/"
+  "/packs/v1/static/documents/career-survey-summary.pdf": "/"
+  "/packs/v1/static/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf": "/"
+  "/packs/v1/static/documents/ICT_skills_audit_returners.pdf": "/"
+  "/packs/v1/static/documents/it-takes-you-to-teach.pdf": "/"
+  "/packs/v1/static/documents/lessons-shape-lives-teaching-report.pdf": "/"
+  "/packs/v1/static/documents/life-lessons-learnt-campaign-teaching.pdf": "/"
+  "/packs/v1/static/documents/millenial-career-crossroads.pdf": "/"
+  "/packs/v1/static/documents/my-favourite-subject.pdf": "/"
+  "/packs/v1/static/documents/perceptions-of-influence.pdf": "/"
+  "/packs/v1/static/documents/proud-parents-teaching-report.pdf": "/"
+  "/packs/v1/static/documents/soft-messaging.pdf": "/"
+  "/packs/v1/static/documents/thank-a-teacher.pdf": "/"
+
 # Moving qualifications page
   "/is-teaching-right-for-me/qualifications-you-need-to-teach": "/train-to-be-a-teacher/qualifications-you-need-to-teach"
 
@@ -425,6 +451,4 @@ redirects:
   "/life-as-a-teacher/teach-disabled-pupils-and-pupils-with-special-educational-needs": "/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs"
   "/life-as-a-teacher/become-a-further-education-teacher": "/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers"
   "/life-as-a-teacher/become-an-early-years-teacher": "/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers"
-  "/blog/becoming-a-mum-sparked-my-interest-in-teaching": "/life-as-a-teacher/teaching-as-a-career/becoming-a-parent-sparked-my-interest-in-teaching"
-  "/blog/financiers-future-in-maths": "/life-as-a-teacher/teaching-as-a-career/making-a-career-change-to-teaching"
   

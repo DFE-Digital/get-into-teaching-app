@@ -80,7 +80,7 @@ You should complete your course before starting your teacher training. If you ru
 
 ## Get an SKE bursary
 
-If you start your teacher training course between September 2023 and July 2024, you could be eligible for a bursary of $bursaries_skeweekly$ per week to complete your SKE course.
+If you start your teacher training course $bursaries_fundingdates$, you could be eligible for a bursary of $bursaries_skeweekly$ per week to complete your SKE course.
 
 If you do a part-time course and complete less than 25 hours a week, this will be paid in proportion to your course hours.
 

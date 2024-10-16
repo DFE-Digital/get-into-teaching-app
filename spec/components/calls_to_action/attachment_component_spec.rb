@@ -2,6 +2,10 @@ require "rails_helper"
 
 RSpec.describe CallsToAction::AttachmentComponent, type: :component do
   subject do
+    allow_any_instance_of(Shakapacker::Helper).to receive(:asset_pack_path)
+      .with("static/documents/example.pdf")
+      .and_return("packs-test/v1/static/documents/example.pdf")
+
     render_inline described_class.new(**args)
     page
   end
@@ -9,7 +13,7 @@ RSpec.describe CallsToAction::AttachmentComponent, type: :component do
   let(:basic_args) do
     {
       text: "Lorem ipsum ....",
-      file_path: "static/documents/ICT_skills_audit_returners.pdf",
+      file_path: "static/documents/example.pdf",
     }
   end
 
@@ -21,7 +25,7 @@ RSpec.describe CallsToAction::AttachmentComponent, type: :component do
 
   context "with the basic arguments" do
     specify "includes a link to the attachment" do
-      is_expected.to have_css(%(a[href*="packs-test/v1/static/documents/ICT_skills_audit_returners"]))
+      is_expected.to have_css(%(a[href*="packs-test/v1/static/documents/example.pdf"]))
     end
 
     specify "includes the text in the link" do
