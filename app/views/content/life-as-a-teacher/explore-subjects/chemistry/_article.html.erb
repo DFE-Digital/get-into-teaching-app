@@ -4,12 +4,13 @@
     <div class="inset">
       <p><%= @front_matter["subject"].titleize %> underpins everything, so you'll be amazed at the questions your pupils will start asking. Leading hands-on lab experiments and creating engaging lessons will mean no two days are the same in the classroom.</p>
       <!-- Why teach: benefits -->
-      <%= render 'content/life-as-a-teacher/explore-subjects/benefits' %>
+      <!--Example of alternative way to pass front matter or alernative text to the partial templates -->
+      <%= render 'content/life-as-a-teacher/explore-subjects/benefits', subject: @front_matter["subject"] %>
     </div>
   </section>
 
   <!-- Quote: Chris Farr -->
-  <%= render 'content/life-as-a-teacher/explore-subjects/quote_chris' %>
+  <%= render 'content/general/quotes/quote_chris' %>
 
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Shape your pupils' futures</h2>
@@ -21,7 +22,7 @@
   </section>
 
   <!-- Quote: Holly, science teacher -->
-  <%= render 'content/life-as-a-teacher/explore-subjects/quote_holly' %>
+  <%= render 'content/general/quotes/quote_holly' %>
 
   <section class="col col-720">
     <h2 class="heading--box-blue">What you'll teach</h2>
@@ -65,7 +66,7 @@
       <li>modern analytical techniques</li>
     </ul>
     <!-- Teaching pupils-->
-    <%= render 'content/life-as-a-teacher/explore-subjects/teaching_pupils' %>
+    <%= render 'content/life-as-a-teacher/explore-subjects/ages_abilities' %>
   </section>
 
   <section class="col col-space-m col-720">
@@ -85,7 +86,7 @@
   <%= render 'content/life-as-a-teacher/explore-subjects/funding' %>
 
   <!-- Internships -->
-  <%= render 'content/life-as-a-teacher/explore-subjects/internships' %>
+  <%= render 'content/life-as-a-teacher/explore-subjects/paid_internships' %>
 
   <!-- Support with teacher training -->
   <%= render 'content/life-as-a-teacher/explore-subjects/support' %>
