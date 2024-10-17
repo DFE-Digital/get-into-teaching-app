@@ -1,4 +1,4 @@
-<section class="col col-space-m col-720">
+<div class="funding">
   <h3>Fund your teacher training</h3>
   <p><a href="/funding-and-support/scholarships-and-bursaries">Tax-free bursaries of <%= v :bursaries_postgraduate_chemistry %> or scholarships of <%= v :scholarships_chemistry %></a> are available for eligible trainee <%= @front_matter["subject"] %> teachers.</p>
   <p>You can get a bursary or scholarship alongside a tuition fee and maintenance loan. Even if you've had financial support for a previous course, you could still be eligible for funding to support your teacher training.</p>
@@ -6,7 +6,7 @@
   <ul>
     <li>a parent or carer</li>
     <li>disabled</li>
-    <% if show_veteran %>
+    <% if @front_matter["veteran"] %>
       <li>a veteran</li>
     <% end %>
   </ul>
@@ -16,4 +16,4 @@
     link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
     link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
   ) %>
-</section>
+</div>

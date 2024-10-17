@@ -4,25 +4,28 @@
     <div class="inset">
       <p><%= @front_matter["subject"].titleize %> underpins everything, so you'll be amazed at the questions your pupils will start asking. Leading hands-on lab experiments and creating engaging lessons will mean no two days are the same in the classroom.</p>
       <!-- Why teach: benefits -->
-      <!--Example of alternative way to pass front matter or alernative text to the partial templates -->
-      <%= render 'content/life-as-a-teacher/explore-subjects/benefits', subject: @front_matter["subject"] %>
+      <%= render 'content/partials/teaching/benefits' %>
     </div>
   </section>
 
-  <!-- Quote: Chris Farr -->
-  <%= render 'content/general/quotes/quote_chris' %>
+  <section class="col col-720">
+    <!-- Quote: Chris Farr -->
+    <%= render 'content/partials/quotes/quote_chris' %>
+  </section>
 
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Shape your pupils' futures</h2>
     <div class="inset">
       <p>Teaching chemistry opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from medicine and forensic science, to palaeontology and oceanography.</p>
-       <!-- Shape futures -->
-      <%= render 'content/life-as-a-teacher/explore-subjects/shape_futures' %>
+      <p>By solving challenging problems, your pupils could make significant contributions to these impactful areas.</p>
+      <p>Your pupils will learn more from you than you might think.  As their teacher, you’ll guide your pupils though the skills they need to show their understanding of <%= @front_matter["subject"] %>. You'll teach them valuable life skills such as critical thinking, decision making and communication.</p>
     </div>
   </section>
 
-  <!-- Quote: Holly, science teacher -->
-  <%= render 'content/general/quotes/quote_holly' %>
+  <section class="col col-720">
+    <!-- Quote: Holly, science teacher -->
+    <%= render 'content/partials/quotes/quote_holly' %>
+  </section>
 
   <section class="col col-720">
     <h2 class="heading--box-blue">What you'll teach</h2>
@@ -65,30 +68,38 @@
       <li>organic chemistry</li>
       <li>modern analytical techniques</li>
     </ul>
-    <!-- Teaching pupils-->
-    <%= render 'content/life-as-a-teacher/explore-subjects/ages_abilities' %>
+    <!-- Teaching pupils: ages and abilities -->
+    <%= render 'content/partials/teaching/ages_abilities' %>
   </section>
 
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching <%= @front_matter["subject"] %></h2>
     <!-- Check your qualifications-->
-    <%= render 'content/life-as-a-teacher/explore-subjects/check_qualifcations' %>
+    <%= render 'content/partials/qualifications-training/check_qualifcations' %>
     <p><%= @front_matter ["subject"].titleize %> teacher training courses have had successful applications from candidates with a range of degrees, including biomedical sciences, forensic science, pharmacy, and natural sciences.
     <p>Find out about <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">the qualifications needed to teach</a>.</p>
     <!-- Non-UK qualifications expander -->
-    <%= render 'content/life-as-a-teacher/explore-subjects/non_uk_qualifications' %>
+    <%= render 'content/partials/qualifications-training/non_uk_qualifications' %>
   </section>
 
-  <!-- Improve your subject knowledge -->
-  <%= render 'content/life-as-a-teacher/explore-subjects/subject_knowledge' %>
+  <section class="col col-space-m col-720">
+    <!-- Improve your subject knowledge -->
+    <%= render 'content/partials/qualifications-training/subject_knowledge' %>
+  </section>
 
-  <!-- Fund your teacher training -->
-  <%= render 'content/life-as-a-teacher/explore-subjects/funding', show_veteran: true %>
+  <section class="col col-space-m col-720">
+    <!-- Fund your teacher training -->
+    <%= render 'content/partials/teaching/funding' %>
+  </section>
 
-  <!-- Internships -->
-  <%= render 'content/life-as-a-teacher/explore-subjects/paid_internships' %>
+  <section class="col col-space-m col-720">
+    <!-- Internships -->
+    <%= render 'content/partials/qualifications-training/paid_internships' %>
+  </section>
 
-  <!-- Support with teacher training -->
-  <%= render 'content/life-as-a-teacher/explore-subjects/support' %>
+  <section class="col col-720">
+    <!-- Support with teacher training -->
+    <%= render 'content/partials/teaching/support' %>
+  </section>
 
 </div>
