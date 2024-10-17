@@ -1,7 +1,7 @@
 # To use or update to a ruby version, change BASE_RUBY_IMAGE
 ARG BASE_RUBY_IMAGE=ruby:3.1.4-alpine3.18
 
-FROM ${BASE_RUBY_IMAGE} as base
+FROM ${BASE_RUBY_IMAGE} AS base
 
 ENV RAILS_ENV=production \
     NODE_ENV=production \
@@ -41,7 +41,7 @@ RUN bundle install --jobs=$(nproc --all) && \
 COPY . .
 
 
-FROM base as release-build
+FROM base AS release-build
 
 RUN apk update
 RUN apk add --no-cache \
@@ -73,7 +73,7 @@ RUN find public \( -type f -a \( -iname "*.jpg" -o -iname ".jpeg" -o -iname ".pn
     && find public \( -type f -a \( -iname "*.jpg" -o -iname ".jpeg" \) \) | parallel -eta magick {} -quality 75 "{.}.jp2"
 
 
-FROM ${BASE_RUBY_IMAGE} as release
+FROM ${BASE_RUBY_IMAGE} AS release
 
 ENV RAILS_ENV=production \
     RAILS_SERVE_STATIC_FILES=true \
