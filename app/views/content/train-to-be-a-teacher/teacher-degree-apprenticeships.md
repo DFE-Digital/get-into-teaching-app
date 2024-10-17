@@ -64,8 +64,6 @@ You also need to be:
 * age 16 years or over 
 
 ## How to apply for a teacher degree apprenticeship 
-Applications for new teaching apprenticeships are expected to open from autumn 2024 for both primary and secondary, with the first trainees due to start their apprenticeships in autumn 2025.
-
 Courses for new teaching apprenticeships will be published on [Find Teacher Training](https://find-teacher-training-courses.service.gov.uk/) between October 2024 and September 2025, with training due to start in autumn 2025.
 
 Individual training providers will add courses throughout the academic year.
