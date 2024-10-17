@@ -48,7 +48,7 @@ The providers offering teacher degree apprenticeships are:
 * Xavier Teach Southeast, in partnership with the University of Sussex
 * University of Derby
 
-To view all courses for the TDA in secondary maths, please visit [Find Teacher Training](https://find-teacher-training-courses.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&university_degree_status=false&visa_status=false).
+To view all courses for the TDA in secondary maths, please visit [Find Teacher Training](https://www.gov.uk/find-teacher-training-courses).
 
 ## Who’s eligible to apply for a teacher degree apprenticeship?
 Teacher degree apprenticeships will be open to anyone who would like to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
@@ -64,36 +64,14 @@ You also need to be:
 * age 16 years or over 
 
 ## How to apply for a teacher degree apprenticeship 
+Applications for new teaching apprenticeships are expected to open from autumn 2024 for both primary and secondary, with the first trainees due to start their apprenticeships in autumn 2025.
+
 Courses for new teaching apprenticeships are expected to will be published on [Find Teacher Training](https://find-teacher-training-courses.service.gov.uk/) between October 2024 and September 2025, with training due to start in autumn 2025.
 
 Individual training providers will add courses throughout the academic year.
 
 Visit [Find Teacher Training](https://find-teacher-training-courses.service.gov.uk/) to stay updated on the latest courses.
 
-## When will applications be available?
-Applications for new teaching apprenticeships are expected to be published between October 2024 – September 2025, with trainees due to start their apprenticeship training in autumn 2025.  
 
-Courses will be added by individual training providers. We therefore cannot give exact dates of when courses will be published on Find but we anticipate that more courses will be available towards the end of the year. 
-
-We recommend visiting [Find Teacher Training](https://find-teacher-training-courses.service.gov.uk/) regularly to keep up to date with courses. 
-
-## What subjects will this be in? 
-The TDA will be available across all primary and secondary subjects from autumn 2024 but we anticipate that most courses will be offered in maths. Please keep an eye on Find Teacher Training to view teaching apprenticeship courses and the subjects they are available in. 
-
-The providers offering teacher degree apprenticeships are:
-
-* Nottingham Trent University 
-* Staffordshire University, in partnership with Stoke-on-Trent and Staffordshire Teacher Education Collective 
-* University College London 
-* University of Brighton 
-* University of Huddersfield 
-* University of Nottingham 
-* University of Wolverhampton 
-* Xavier Teach Southeast, in partnership with the University of Sussex 
-
-## Where can I receive support to apply for courses? 
-If you are currently employed in a school, please speak to your employer about   applying for a TDA course.  
-
-If you are studying at a school or college, please speak to the available career advisers. 
 
 
