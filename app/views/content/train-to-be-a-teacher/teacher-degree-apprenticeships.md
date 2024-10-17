@@ -70,8 +70,6 @@ Courses for new teaching apprenticeships will be published on [Find Teacher Trai
 
 Individual training providers will add courses throughout the academic year.
 
-Visit [Find Teacher Training](https://find-teacher-training-courses.service.gov.uk/) to stay updated on the latest courses.
-
 
 
 
