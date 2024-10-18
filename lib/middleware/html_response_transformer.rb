@@ -13,7 +13,7 @@ module Middleware
       NextGenImages,
       ResponsiveImages,
       LazyLoadImages,
-      ExternalLinks,
+      # ExternalLinks,
       ErrorTitle,
       AccessibleFootnotes,
     ].freeze
