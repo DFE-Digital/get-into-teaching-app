@@ -9,7 +9,9 @@
         <div class="category__nav-card__wrapper__col1">
           <div class="category__nav-card--content">
             <%= content_tag heading_tag do %>
-              <%= content_tag :span, title %>
+              <%= content_tag :span do %>
+                <%= content_tag :span, title %>
+              <% end %>
             <% end %>
             <%= tag.p(helpers.safe_html_format(description)) %>
           </div>
@@ -22,7 +24,9 @@
     <%= link_to(path, class: "link--pink") do %>
       <div class="category__nav-card--content">
         <%= content_tag heading_tag do %>
-          <%= content_tag :span, title %>
+          <%= content_tag :span do %>
+            <%= content_tag :span, title %>
+          <% end %>
         <% end %>
         <%= tag.p(helpers.safe_html_format(description)) %>
       </div>
