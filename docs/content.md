@@ -470,38 +470,6 @@ content:
 ---
 ```
 
-### Benefits Component
-
-There is a text component available to use on the subject pages that describes the benefits of teaching a subject (second paragraph within the 'Why teach....' section). The subject name can be changed to reflect the subject page you are using the component on. 
-
-<img src="images/content_subject_page_benefits_example.png" alt="Example Content: Subject Page Benefits" style="width: 500px;">
-
-For the subject pages, the component would usually be rendered in the `_artcle.html.erb` file. If you need to insert the `BenefitsComponent` in an `erb` file you can use the code below (please note that the `subject_name` can be changed to reflect the subject page you are working on. If no subject name is included, the page will throw an error):
-
-```ruby
- <%= render(Content::Subject::BenefitsComponent.new(subject_name: "biology")) %>
-```
-
-If you need to make changes to the content of the benefits section, you can do so in the `html.erb` file of the component itself. 
-You can navigate to the component using the following path: `app/components/content/subject/benefits_component.html.erb`. 
-You can edit the html (text) and the hyperlinks here. The salaries information is being rendered via a variable which can also be changed if needed. You can find the list of salaries variables in `config/values/salaries.yml`.
-Please note that any changes made in the component file, will be reflected anywhere the component is used. 
-
-#### subject_page_benefits_component.html.erb
-
-```html
- <div class="subject-benefits">
-    <p> In addition to the personal rewards of teaching <%= subject_name %>, there are practical benefits too, including:</p>
-    <ul>
-         <li>a <a href="/life-as-a-teacher/pay-and-benefits/teacher-pay">competitive salary starting at <%= value :salaries_starting_minshortened %></a> (or higher in London)</li>
-          <li>a <a href="/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme">generous and secure pension</a></li>
-        <li>more holiday days than people in many other professions</li>
-        <li>opportunities for progression</li>
-  </ul>
-</div>
-```
-
-
 ## Creating a Blog Post
 
 Blog posts should be written in Markdown format using the following template as a guide:
