@@ -12,16 +12,16 @@ export default class extends Controller {
     this.preventTurboLinksOnJumpLinks();
   }
 
-  openExternalContentLinksInNewWindow() {
-    const links = Array.from(this.contentTarget.querySelectorAll('a'));
+  // openExternalContentLinksInNewWindow() {
+  //   const links = Array.from(this.contentTarget.querySelectorAll('a'));
 
-    links
-      .filter((l) => this.isExternal(l))
-      .forEach((l) => {
-        l.setAttribute('target', '_blank');
-        l.setAttribute('rel', 'noopener');
-      });
-  }
+  //   links
+  //     .filter((l) => this.isExternal(l))
+  //     .forEach((l) => {
+  //       l.setAttribute('target', '_blank');
+  //       l.setAttribute('rel', 'noopener');
+  //     });
+  // }
 
   preventTurboLinksOnJumpLinks() {
     const links = this.contentTarget.querySelectorAll('a');
