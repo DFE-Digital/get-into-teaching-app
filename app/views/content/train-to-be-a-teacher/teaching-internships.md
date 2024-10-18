@@ -18,15 +18,6 @@ content:
 
 
 provider_groups:
-  East:
-    providers:
-      - header: "Thinking Schools Academy Trust"
-        link: "https://www.tsatrust.org.uk/"
-        applications: "Open January"
-        subjects: "chemistry, computing, maths, physics, languages"
-        areas: "Essex"
-        name: "Ashley Wicken"
-        email: "Ashley.Wicken@tsatrust.org.uk"
   East Midlands:
     providers:
       - header: "Bluecoat SCITT Alliance"
@@ -164,6 +155,13 @@ provider_groups:
         areas: "East Hertfordshire and West Essex"
         name: "Claire Ruthven"
         email: "claire.ruthven@hertsandessex.herts.sch.uk"
+      - header: "Thinking Schools Academy Trust"
+        link: "https://www.tsatrust.org.uk/"
+        applications: "Open January"
+        subjects: "chemistry, computing, maths, physics, languages"
+        areas: "Essex"
+        name: "Ashley Wicken"
+        email: "Ashley.Wicken@tsatrust.org.uk"
   London:
     providers:
       - header: "Debden Park High School (TKAT Teacher Training)"
@@ -204,7 +202,7 @@ provider_groups:
       - header: "Reach Academy Feltham"
         link: "https://www.reachtraining.org/teaching-internships"
         applications: "Open November"
-        subjects: "chemistry, maths, physics, languages"
+        subjects: "chemistry, computing, maths, physics, languages"
         areas: "Hounslow"
         name: "Ryan Holmes"
         email: "reachteachertraining@reachacademy.org.uk"
@@ -274,7 +272,7 @@ provider_groups:
         subjects: "chemistry, computing, maths, physics"
         areas: "Trafford, Warrington,  Salford, Manchester"
         name: "Eleanor Davidson"
-        email: "edavidson@bright-futures.co.uk"
+        email: "admin@scitt.bright-futures.co.uk"
       - header: "Chorlton High School"
         link: "https://www.chorltonhigh.manchester.sch.uk/about-us/work-and-train-with-us"
         applications: "Open December"
@@ -288,7 +286,7 @@ provider_groups:
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Oldham, Manchester, Salford, Merseyside, Bradford, Pudsey, Leeds, Stoke"
         name: "Andy Gibson"
-        email: "andy.gibson@coopacademies.co.uk"
+        email: "teachertraining@coopacademies.co.uk"
       - header: "Cumbria Education Trust"
         link: "https://www.williamhoward.cumbria.sch.uk/teaching-internship-programme/"
         applications: "Open October"
