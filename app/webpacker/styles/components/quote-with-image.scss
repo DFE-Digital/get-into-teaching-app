@@ -30,9 +30,11 @@
       width: 50%;
     }
 
-    &.blue { background-color: lighten($blue, 30%); }
-    &.pink { background-color: lighten($pink, 20%); }
-    &.yellow { background-color: $yellow-light; }
+    &.blue { background-color: rgba($blue, 0.4); }
+    &.pink { background-color: rgba($pink, 0.4); }
+    &.yellow { background-color: rgba($yellow, 0.4); }
+    &.green { background-color: rgba($green, 0.4); }
+    &.purple { background-color: rgba($purple, 0.4); }
   }
 
   > picture {
@@ -44,8 +46,6 @@
       height: 100%;
       -o-object-fit: cover;
       object-fit: cover;
-      -o-object-position: 100% 50%;
-      object-position: 100% 50%;
       vertical-align: bottom;
       flex-basis: 50%;
     }
@@ -71,12 +71,12 @@
     }
 
     @include mq($from: desktop, $until: wide) {
-      left: 120px;
+      left: 50px;
       width: 500px;
     }
 
     @include mq($from: wide) {
-      left: 120px;
+      left: 50px;
       width: 700px;
     }
 
@@ -95,6 +95,8 @@
       &.blue { &::before, &::after { color: $blue; }}
       &.pink { &::before, &::after { color: $pink; }}
       &.yellow { &::before, &::after { color: $yellow; }}
+      &.green { &::before, &::after { color: $green; }}
+      &.purple { &::before, &::after { color: $purple; }}
 
       &::before{
         content: '\201c';
@@ -133,11 +135,13 @@
     }
 
     @include mq($from: desktop) {
-      left: 170px;
+      left: 100px;
     }
 
     &.blue { background-color: $blue }
     &.pink { background-color: $pink }
     &.yellow { background-color: $yellow }
+    &.green { background-color: $green }
+    &.purple { background-color: $purple }
   }
 }
