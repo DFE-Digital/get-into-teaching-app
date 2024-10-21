@@ -39,6 +39,7 @@ This documentation aims to be a reference for content editors that want to make 
 12. [If you add something to the wrong branch](wrong-branch)
 13. [Redirect URLs](redirect-urls)
 14. [Finding links on the site](links-site)
+15. [Resolving merge conflicts](merge-conflicts)
 
 ## Setting up Codespaces and Github
 
@@ -758,3 +759,12 @@ You can find everywhere a page is linked to by:
 People can add comments to pull requests in Github which makes it easier to see feedback and keep track of changes. You can also tag people and reply to their comments.
 
 Once you've addressed a comment click on resolve. This hides it from the conversation making it easier to keep track of what's been updated.
+
+## Merge Conflicts
+Merge conflicts arise when two different branches alter the same content and both compete to have their changes merged into a common branch (usually `master`). Merge conflicts can be reduced by regularly keeping your branch synchronised with the `master` branch. Also try to co-ordinate with colleagues to ensure that you are not working on the same files/content as they are.
+
+Simple merge conflicts can be resolved in the Github text editor by preseving the content which should persist and manually deleting the content which should lapse. For full steps please see:
+
+* [Resolving a merge conflict on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
+
+Complex merge conflicts will need to be resolved via the git commandline and will require developer assistance.
