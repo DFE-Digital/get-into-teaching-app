@@ -480,7 +480,7 @@ From a previous published page copy the files:
 _article.html/erb
 _header.html.erb
 
-Also copy and paste a previous ‘.md’ file and rename it with the title (e.g abigails-career-progression-story.md)
+Also copy and paste a previous ‘.md’ file and rename it with the title (e.g abigails-career-progression-story.md). This should live inside the subcategory folder, but not within the same folder as the artcile and header file.
 
 #### File changes:
 
