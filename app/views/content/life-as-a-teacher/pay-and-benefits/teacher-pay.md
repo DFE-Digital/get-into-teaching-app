@@ -12,10 +12,6 @@ related_content:
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
     Why I became a teacher : "/blog/the-head-of-science-inspiring-students-in-blackpool"
-inset_text:
-  new-salaries:
-    text: |-
-      The pay award for 2024/25 is subject to a statutory consultation period. Schools can choose how to implement the award.
 keywords:
   - Salary
   - Salaries
@@ -50,8 +46,6 @@ keywords:
   - How to become a teacher
   - Teacher training courses
 ---
-$new-salaries$
-
 If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on.
 
 The pay ranges below apply to maintained schools (schools funded by local authorities).
