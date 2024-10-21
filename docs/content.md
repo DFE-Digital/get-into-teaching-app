@@ -25,21 +25,23 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Hero](#hero)
 	* [Values](#values)
 4. [Creating a subject page](#creating-a-subject-page)
-5. [Creating a Blog Post](#creating-a-blog-post)
+5. [Creating an inspirational page](#creating-an-inspirational-page)
+6. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
-6. [Navigation](#navigation)
+7. [Navigation](#navigation)
 	* [Main Navigation](#main-navigation)
 	* [Category Pages](#category-pages)
-7. [Build errors](#build-errors)
-8. [Internship providers](#internship-providers)
-9. [Creating a new page](#creating-a-new-page)
-10. [Preview a change](#preview-a-change)
-11. [Saving a change](saving-a-change)
-12. [If you add something to the wrong branch](wrong-branch)
-13. [Redirect URLs](redirect-urls)
-14. [Finding links on the site](links-site)
-15. [Resolving merge conflicts](merge-conflicts)
+8. [Build errors](#build-errors)
+9. [Internship providers](#internship-providers)
+10. [Creating a new page](#creating-a-new-page)
+11. [Preview a change](#preview-a-change)
+12. [Saving a change](saving-a-change)
+13. [If you add something to the wrong branch](wrong-branch)
+14. [Redirect URLs](redirect-urls)
+15. [Finding links on the site](links-site)
+16. [Resolving merge conflicts](merge-conflicts)
+
 
 ## Setting up Codespaces and Github
 
@@ -470,6 +472,67 @@ content:
   - "content/life-as-a-teacher/subject/adviser-promo-subject"
 ---
 ```
+
+## Creating an inspiration page
+
+Create a folder under ‘content/life-as-a-teacher/sub-category’
+
+From a previous published page copy the files:
+
+_article.html/erb
+_header.html.erb
+
+Also copy and paste a previous ‘.md’ file and rename it with the title (e.g abigails-career-progression-story.md). This should live inside the subcategory folder, but not within the same folder as the article and header files.
+
+#### File changes:
+
+_header.html.erb – no changes needed
+
+The main content of page should be written in HTML format using the following template as a guide:
+
+_article.html/erb 
+
+Update the markdown file to edit the hero banner image, hero banner text (title and title_paragraph) and the page’s card component. Hero images on inspirational pages always use the grey-pink colours as shown below. You will also need to ensure the links to the html erb files are updated:
+
+```yaml
+---
+title: Abigail's favourite things about teaching
+title_paragraph: |-
+  <p>Abigail is a maths teacher from Wigan.</p>
+description: |-
+  Hear what Abigail enjoys most about teaching, and the impact she has through her job.
+layout: "layouts/minimal" 
+colour: grey-pink 
+image: "static/images/content/case-studies/abigail.jpg" 
+keywords:
+  - teaching
+  - maths
+  - science
+content: 
+  - "content/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching/header" 
+  - "content/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching/article"
+  - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
+---
+```
+
+To add the pages card component go to the relevant category page eg. content/life-as-a-teacher/pay-and-benefits/_what-teachers-have-to-say.html.erb
+
+And copy and paste an exiting card such as:
+
+```yaml
+<ul>
+  <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
+    OpenStruct.new(
+      title: "Abigail's favourite things about teaching",
+      description: "Hear what Abigail enjoys most about teaching, and the impact she has through her job.   ",
+      path: "/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching",
+      image: "static/images/content/case-studies/abigail.jpg"
+    )) %>
+</ul>
+```
+
+Update the title, description and image as required.
+
 
 ## Creating a Blog Post
 
