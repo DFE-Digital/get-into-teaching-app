@@ -114,3 +114,5 @@ $EY-self-funded$
 Contact accredited early years training providers directly to apply for a place.
 
 <a href="https://www.gov.uk/government/publications/early-years-initial-teacher-training-itt-providers-and-school-direct-early-years-lead-organisations/early-years-initial-teacher-training-itt-providers-and-school-direct-lead-organisations" class="button">Find early years training providers</a>
+
+<p>Interested in exploring other opportunities working with pre-school children? <a href =' https://earlyyearscareers.campaign.gov.uk/?utm_source=Website &utm_medium=GiT'>Find out more about a range of careers in early years education</a>. </p>
