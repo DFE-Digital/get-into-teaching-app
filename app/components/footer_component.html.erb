@@ -14,13 +14,15 @@
           </div>
         </div>
 
-        <div class="talk-to-us__icon-section">
-          <i class="icon-chat icon--on-yellow"></i>
-          <div>
-            <h3 class="heading-s">Chat to us</h3>
-            <%= render ChatComponent.new %>
+        <% unless helpers.privacy_page?(request.path) %>
+          <div class="talk-to-us__icon-section">
+            <i class="icon-chat icon--on-yellow"></i>
+            <div>
+              <h3 class="heading-s">Chat to us</h3>
+              <%= render ChatComponent.new %>
+            </div>
           </div>
-        </div>
+        <% end %>
       </div>
 
       <div>
