@@ -7,7 +7,6 @@ content:
 image: "static/images/content/campus-advisers/adviser.jpeg"
 layout: "layouts/minimal"
 colour: green-yellow
-talk_to_us: false
 noindex: true
 breadcrumbs: false
 ---

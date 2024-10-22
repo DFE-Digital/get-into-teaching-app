@@ -7,7 +7,6 @@ description: |-
   Find out about all the benefits that come with a career in teaching, including pay, pensions and career progression.
 navigation: 40.05
 layout: "layouts/minimal"
-talk_to_us: true
 backlink: "../"
 content:
   - content/life-as-a-teacher/header

@@ -51,7 +51,6 @@ calls_to_action:
         Salary: "No"
         Length of training: "3 months"
         Qualification: "Early years teacher status"
-talk_to_us: false
 ---
 
 The early years are critical in children’s development. As an early years teacher you’ll work with young children up to the age of 5. You’ll use your knowledge and skills to help young children enjoy high standards of teaching and open their minds to new ideas every day.
