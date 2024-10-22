@@ -25,11 +25,12 @@ provider_groups:
 <% end %>
     providers:
 <% providers.each do |provider| %>
-    - header: <%= provider["header"] %>
-      link: <%= provider["link"] %>
-      name: <%= provider["name"] %>
-      email: <%= provider["email"] %>
-      telephone: <%= provider["telephone"] %>
+    - header: <%= provider["header"].inspect %>
+      <% if provider["link"] %>link: <%= provider["link"].inspect %><% end %>
+      <% if provider["name"] %>name: <%= provider["name"].inspect %><% end %>
+      <% if provider["email"] %>email: <%= provider["email"].inspect %><% end %>
+      <% if provider["telephone"] %>telephone: <%= provider["telephone"].inspect %><% end %>
+      <% if provider["extension"] %>extension: <%= provider["extension"].inspect %><% end %>
 <% end %>
 <% end %>
 
