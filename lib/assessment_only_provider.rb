@@ -11,7 +11,7 @@ class AssessmentOnlyProvider
 
     data.tap do |d|
       @provider = d[0]&.strip
-      @regions = d["region"]&.split(/[\;\,\|]+/)&.map(&:strip)
+      @regions = d["region"]&.split(/[;,|]+/)&.map(&:strip)
       @website = d["website"]&.strip
       @contact = d["contact"]&.strip
       @email = d["email"]&.strip
@@ -25,7 +25,7 @@ class AssessmentOnlyProvider
       "link" => website,
       "name" => contact,
       "email" => email,
-      "telephone" => phone
+      "telephone" => phone,
     }
   end
 
