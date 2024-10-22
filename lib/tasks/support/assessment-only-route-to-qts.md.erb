@@ -20,6 +20,9 @@ content:
 provider_groups:
 <% provider_groups.each do |group_name, providers| %>
   <%= group_name %>:
+<% if group_name =~ /Non-UK/i %>
+    description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
+<% end %>
     providers:
 <% providers.each do |provider| %>
     - header: <%= provider["header"] %>

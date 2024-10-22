@@ -2,13 +2,6 @@ class AssessmentOnlyProvider
   attr_reader :provider, :regions, :website, :contact, :email, :phone
 
   def initialize(data)
-    # provider
-    # region
-    # website
-    # contact
-    # email
-    # phone
-
     data.tap do |d|
       @provider = d[0]&.strip
       @regions = d["region"]&.split(/[;,|]+/)&.map(&:strip)
