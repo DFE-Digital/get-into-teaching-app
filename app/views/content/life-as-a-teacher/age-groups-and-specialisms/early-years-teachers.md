@@ -60,6 +60,8 @@ You’ll need to do early years initial teacher training (EYITT) to achieve earl
 
 If you want to teach in a primary school, including in a reception class, or secondary school then you will need to achieve qualified teacher status (QTS). [Find out more about training to teach primary and secondary pupils](/train-to-be-a-teacher).
 
+If you're interested in exploring other opportunities to work with pre-school children, you can [find out more about a range of careers in early years education](https://earlyyearscareers.campaign.gov.uk/?utm_source=Website&utm_medium=GiT). 
+
 ## What you need to become an early years teacher
 
 There are 2 ways to train to become an early years teacher, either as a postgraduate if you already have a degree, or as part of an undergraduate degree.
