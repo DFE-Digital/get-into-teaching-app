@@ -1,7 +1,7 @@
 require "next_gen_images"
 require "lazy_load_images"
 require "responsive_images"
-require "external_links"
+require "new_tab_links"
 require "image_sizes"
 require "error_title"
 require "accessible_footnotes"
@@ -13,7 +13,7 @@ module Middleware
       NextGenImages,
       ResponsiveImages,
       LazyLoadImages,
-      # ExternalLinks,
+      NewTabLinks,
       ErrorTitle,
       AccessibleFootnotes,
     ].freeze
