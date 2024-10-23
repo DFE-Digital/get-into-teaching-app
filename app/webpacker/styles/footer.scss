@@ -144,12 +144,12 @@ footer.site-footer {
       flex-direction: column;
       gap: 20px;
 
-      @include mq($from: mobile) {
+      @include mq($from: tablet) {
         flex-direction: row;
       }
 
       div {
-        @include mq($from: mobile) {
+        @include mq($from: tablet) {
           flex-basis: 50%;
         }
       }
