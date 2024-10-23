@@ -37,7 +37,10 @@ keywords:
 ---
 The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) supports and encourages Ukrainian trainees and teachers seeking teacher training places and jobs. 
 
-We can help if you’re interested in teaching children aged 5 to 18. If you'd like to teach other age groups, try [teaching in a university](https://nationalcareers.service.gov.uk/job-profiles/higher-education-lecturer) or [teaching in further education](https://www.teach-in-further-education.campaign.gov.uk/). 
+We can help if you’re interested in teaching children aged 5 to 18. If you'd like to teach other age groups, visit:
+
+* the National Careers Service for information on [teaching in a university](https://nationalcareers.service.gov.uk/job-profiles/higher-education-lecturer)
+* the Teach In Further Education for information on [teaching in further education](https://www.teach-in-further-education.campaign.gov.uk/)
 
 ## General information for Ukrainian teachers and trainees coming to the UK
 
