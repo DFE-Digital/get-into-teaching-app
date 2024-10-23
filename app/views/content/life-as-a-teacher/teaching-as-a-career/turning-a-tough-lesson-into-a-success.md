@@ -1,9 +1,9 @@
 ---
 title: Turning a tough lesson into a success
 title_paragraph: |-
-  <p>PE teacher Danny shares how he tackles challenging behaviour in PE lessons.</p>
+  <p>Physical education (PE) teacher Danny shares how he tackles challenging behaviour in lessons.</p>
 description: |-
-  PE teacher Danny shares how he tackles challenging behaviour in PE lessons.
+  Physical education (PE) teacher Danny shares how he tackles challenging behaviour in lessons.
 layout: "layouts/minimal"
 colour: grey-pink
 keywords:
