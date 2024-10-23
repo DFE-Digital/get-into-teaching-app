@@ -91,7 +91,11 @@ QTS will allow you to apply for teaching jobs in all schools in England.
 
 ## Other ways to train
 
-You can also apply to [train to teach in Wales](https://educators.wales/home), [train to teach in Scotland](https://teachinscotland.scot/) or [train to teach in Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
+You can apply to train to teach in other areas of the UK, including:
+
+* [Wales at the Educator Wales website](https://educators.wales/home)
+* [Scotland at the Teach in Scotland website](https://teachinscotland.scot/)
+* [Northern Ireland at the Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland)
 
 If you don’t want to come to England to study you can apply to train for international qualified teacher status (iQTS). This meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and, if successfully completed, leads to the automatic award of QTS.
 
@@ -167,7 +171,7 @@ To find the right training for you, you can filter courses by:
 
 ### Writing your personal statement
 
-It's important that you give yourself time to write the best possible [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
+It's important that you give yourself time to [write the best possible personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
 
 Your personal statement can be up to 1000 words. 90% of successful candidates write 500 words or more.
 
@@ -222,7 +226,7 @@ To train to teach in England, you will need a visa or immigration status allowin
 
 ## Plan your move to the UK
 
-Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) for advice about immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
+[Visit the UK Council for International Student Affairs](https://www.ukcisa.org.uk/) (UKCISA) for advice about immigration, finding a place to live and opening a bank account. For support over the phone, [visit the UKCISA Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
 
 Your teacher training provider may also be able to help you plan your move to the UK  – contact them directly to ask.
 
@@ -250,10 +254,10 @@ Learn more about:
 - [curriculum and qualifications](https://www.gov.uk/national-curriculum)
 - [behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
 - [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
-- [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/guidance-for-teachers) – a charity gathering international evidence on teaching 5 to 16 year olds
-- [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
+- [The Education Endowment Foundation website](https://educationendowmentfoundation.org.uk/guidance-for-teachers) – a charity gathering international evidence on teaching 5 to 16 year olds
+- [Times Educational Supplement (TES) website](https://www.tes.com/) – information and resources for teachers
 - [join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
-- [read interviews with real teachers](/blog)
+
 
 ## Non-UK citizens who trained to teach in England share their experiences
 
