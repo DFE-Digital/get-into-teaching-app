@@ -40,7 +40,7 @@ There are full-time and part-time teacher training courses available.
 What you’ll learn will depend on your course and the qualifications it offers. You'll train towards one of the following qualifications:
 
 * [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts)
-* [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce) with QTS
+* QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce)
 
 Initial teacher training helps you meet the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). You must meet the teachers’ standards to be awarded QTS.
 
