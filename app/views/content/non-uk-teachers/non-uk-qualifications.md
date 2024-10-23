@@ -67,7 +67,7 @@ Before you apply for teacher training in England, you must check that you have [
 
 ## How to check your qualifications
 
-The simplest way to check your qualifications meet the required standard in England is to get a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC).
+The simplest way to check your qualifications meet the required standard in England is to get a [statement of comparability from the UK European Network of Information Centres (UK ENIC)](https://enic.org.uk/Qualifications/SOC/Default.aspx).
 
 This is a certificate that proves your school and university qualifications are the same standard as UK GCSEs and a UK bachelor's degree.
 
@@ -110,9 +110,9 @@ If you have not passed an English language test like this, or do not have qualif
 
 ## If you do not have a bachelor's degree
 
-If you do not have a degree, you can apply to study a 3 to 4 year [undergraduate course in England](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) which combines a teaching degree with [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
+If you do not have a degree, you can apply for an [undergraduate course in England on the UCAS website](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes). These ungergraduate courses are 3 to 4 years and combine a teaching degree with [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
-The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) has lots of helpful information about studying at an English university.
+The [UK Council for International Student Affairs website](https://www.ukcisa.org.uk/) has lots of helpful information about studying at an English university.
 
 ## How to apply
 
