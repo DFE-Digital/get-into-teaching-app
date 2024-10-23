@@ -46,7 +46,7 @@ You’ll get confirmation of whether your application has been successful within
 
 It can take up to 14 weeks to get your DSA support, so you should take this into consideration if you need the support in place for the start of your course.
 
-### Other support for funding your training
+### Other funding and support
 
 If you get paid for your training (for example, salaried training or a teacher degree apprenticeship), you may be [eligible for support through Access to Work](https://www.gov.uk/access-to-work).
 
