@@ -124,7 +124,9 @@ If you are not training to teach in these subjects, any support you get will dep
 
 ## Find and apply for teacher training courses
 
-Your teacher training course must lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/train-to-be-a-teacher/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
+Your teacher training course must lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
+
+Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/train-to-be-a-teacher/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
 
 You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Teacher training courses can also be 'fee-paying' or 'salaried'.
 
@@ -153,7 +155,7 @@ The subject you apply to teach must usually be the same as, or closely related t
 
 ### Finding the right course for you
 
-You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
+You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to qualified teacher status (QTS).
 
 To find the right training for you, you can filter courses by:
 
@@ -187,7 +189,10 @@ Due to rules about immigration, not all providers can accept international appli
 
 ### Already living in the UK?
 
-If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.
+You can apply to any English teacher training provider if you have settled or pre-settled status under either:
+
+* <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>
+* <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>
 
 ### Postgraduate teaching apprenticeships
 
