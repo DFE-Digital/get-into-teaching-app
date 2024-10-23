@@ -15,7 +15,7 @@
     <% for field, value in fields %>
       <div class="group__card__fields">
         <span><%= field.humanize %>:</span>
-        <span><%= linked_value(field, value) %></span>
+        <span><%= linked_value(value) %></span>
       </div>
     <% end %>
   </div>

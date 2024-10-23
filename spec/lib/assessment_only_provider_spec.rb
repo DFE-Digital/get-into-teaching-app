@@ -4,7 +4,7 @@ require "csv"
 
 describe AssessmentOnlyProvider do
   let(:csv) do
-    CSV.parse("provider,region,website,contact,email,phone\nProvider1,Region1;Region2,www.example.com,Someone,test@test.test,01234 56789\n", headers: true)
+    CSV.parse("provider,region,website,contact,email,phone,extension\nProvider1,Region1;Region2,www.example.com,Someone,test@test.test,01234 56789,1234\n", headers: true)
   end
   let(:data) do
     described_class.new(csv.first)
@@ -46,15 +46,21 @@ describe AssessmentOnlyProvider do
     it { is_expected.to eql("01234 56789") }
   end
 
+  describe "#extension" do
+    subject { data.extension }
+
+    it { is_expected.to eql("1234") }
+  end
+
   describe "#to_h" do
     subject { data.to_h }
 
-    it { is_expected.to eql({ "email" => "test@test.test", "header" => "Provider1", "link" => "www.example.com", "name" => "Someone", "telephone" => "01234 56789" }) }
+    it { is_expected.to eql({ "email" => "test@test.test", "header" => "Provider1", "link" => "www.example.com", "name" => "Someone", "telephone" => "01234 56789", "extension" => "1234" }) }
   end
 
   describe "#to_str" do
     subject { data.to_str }
 
-    it { is_expected.to eql("Provider1|Region1;Region2|www.example.com|Someone|test@test.test|01234 56789") }
+    it { is_expected.to eql("Provider1|Region1;Region2|www.example.com|Someone|test@test.test|01234 56789|1234") }
   end
 end
