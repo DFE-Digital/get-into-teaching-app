@@ -2,13 +2,7 @@ footer.site-footer {
   background-color: $grey;
   color: $black;
   padding: 2em;
-  padding-top: 0em;
-
-  // .site-footer__wrapper {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-
+  padding-top: 0;
 
   .site-footer__links-container {
     display: grid;
@@ -23,48 +17,6 @@ footer.site-footer {
       ul {
         list-style: none;
         padding-left: 0;
-      }
-    }
-  }
-
-  .site-footer-bottom {
-    display: flex;
-
-    @include mq($until: tablet) {
-      flex-direction: column;
-    }
-
-    &__links-container {
-      flex: 70% 0 0%;
-
-      @include mq($from: 1800px) {
-        flex: 50% 0 0%;
-      }
-
-      display: flex;
-      flex-wrap: wrap;
-
-      justify-content: flex-end;
-
-      a {
-        @include font-size("xsmall");
-        @extend .link--black;
-
-        margin-bottom: .5em;
-        padding: .5em 0;
-      }
-
-      a + a {
-        margin-left: 1.5em;
-      }
-
-      @include mq($until: tablet) {
-        flex-direction: column;
-        padding-bottom: 2em;
-
-        a + a {
-          margin-left: 0;
-        }
       }
     }
   }
@@ -98,7 +50,12 @@ footer.site-footer {
   }
 
   .site-footer-bottom {
+    display: flex;
     margin-top: 1em;
+
+    @include mq($until: tablet) {
+      flex-direction: column;
+    }
 
     @include mq($from: tablet) {
       flex-direction: row-reverse;
@@ -133,6 +90,38 @@ footer.site-footer {
     }
 
     &__links-container {
+      flex: 70% 0 0%;
+
+      @include mq($from: 1800px) {
+        flex: 50% 0 0%;
+      }
+
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: flex-end;
+
+      a {
+        @include font-size("xsmall");
+        @extend .link--black;
+
+        margin-bottom: .5em;
+        padding: .5em 0;
+      }
+
+      a + a {
+        margin-left: 1.5em;
+      }
+
+      @include mq($until: tablet) {
+        flex-direction: column;
+        padding-bottom: 2em;
+
+        a + a {
+          margin-left: 0;
+        }
+      }
+
       &__license {
         @include font-size("xsmall");
         color: $black;
@@ -180,9 +169,6 @@ footer.site-footer {
       font-weight: bold;
       @include font-size("large");
       line-height: inherit;
-
-      // @include mq($from: mobile) {
-      // }
     }
   }
 }
