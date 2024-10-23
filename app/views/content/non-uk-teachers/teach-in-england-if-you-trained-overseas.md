@@ -37,9 +37,15 @@ Teach in England and you’ll benefit from working in a world-class education sy
 
 You’ll earn a [competitive salary](/life-as-a-teacher/pay-and-benefits/teacher-pay), get supported in your professional development and have varied job opportunities.
 
-You could also consider teaching in [Wales](https://www.ewc.wales/site/index.php/en/registration/index.php?option=com_content&view=article&id=12&Itemid=170&lang=en), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
+You could also consider teaching in other areas of the UK, including:
 
-Not qualified as a teacher yet? Find out [how to train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). If you don't want to come to England to train, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status), which leads to the automatic award of English qualified teacher status. 
+* [Wales at the Educator Wales website](https://www.ewc.wales/site/index.php/en/registration/index.php?option=com_content&view=article&id=12&Itemid=170&lang=en)
+* [Scotland at the Teach in Scotland website](https://teachinscotland.scot/)
+* [Northern Ireland at the Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland)
+
+Not qualified as a teacher yet? Find out [how to train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). 
+
+If you do not want to come to England to train, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status), which leads to the automatic award of English qualified teacher status. 
 
 ## What you'll need to teach in England
 
@@ -140,7 +146,7 @@ If you’re shortlisted, you’ll be invited for interview and asked to demonstr
 
 ### Prepare for your interview
 
-You may be asked about your knowledge of English education in interviews for teaching jobs. To prepare, you can [read other teachers’ stories](/blog) and research the [English national curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
+You may be asked about your knowledge of English education in interviews for teaching jobs. To prepare, you can research the [English national curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
 ### Safeguarding checks
 
@@ -184,7 +190,7 @@ The following suggestions and resources may be useful:
 * open an account with a digital bank based in the UK – you can do this before you arrive in the UK, and you will not need a UK address to do so
 * [find somewhere to live](https://www.gov.uk/government/publications/how-to-rent)
 * [get a national insurance (NI) number](https://www.gov.uk/national-insurance/your-national-insurance-number)
-* [register with a doctor](https://www.nhs.uk/nhs-services/gps/how-to-register-with-a-gp-surgery/)
+* [register with a doctor through the NHS](https://www.nhs.uk/nhs-services/gps/how-to-register-with-a-gp-surgery/)
 * [find childcare](https://www.gov.uk/get-childcare)
 * [learn about tax](https://www.gov.uk/income-tax)
 * learn about [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
@@ -193,6 +199,6 @@ The following suggestions and resources may be useful:
 
 The Department for Education (DfE) does not employ teachers directly. Do not send us your CV, as we will not be able to help you find a teaching job. 
 
-Please do not email to ask when a country or subject will be added to [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). We'll publish updates about eligiblity for the service at ['A fairer approach to awarding QTS to overseas teachers'](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
+Please do not email to ask when a country or subject will be added to [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). We'll publish updates about eligiblity for the service at [A fairer approach to awarding QTS to overseas teachers](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
