@@ -6,9 +6,7 @@
   <ul>
     <li>a parent or carer</li>
     <li>disabled</li>
-    <% if @front_matter["veteran"] %>
-      <li>a veteran</li>
-    <% end %>
+    <li>a veteran</li>
   </ul>
   <%= render Content::ExpanderComponent.new(
     title: "funding your training",
