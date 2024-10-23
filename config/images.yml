@@ -220,11 +220,6 @@
   variants:
     - "static/images/content/blog/thumbnails/abigail-beeley.jpg"
 
-  "static/images/content/blog/abigail-beeley-crop.jpg":
-  alt: "Maths teacher Abigail Beeley in front of a maths display board."
-  variants:
-    - "static/images/content/blog/abigail-beeley-crop.jpg"
-
 "static/images/content/blog/anna-shirley.jpg":
   alt: "Sheffield SCITT communciations manager Anna Shirley."
   variants:
@@ -447,7 +442,7 @@
 "static/images/content/landing/how-to-become-a-teacher-2.jpg":
   # A teacher looks over students sat around a table.
   alt: ""
-  
+
 # event
 "static/images/content/event-signup/event-regional-online-listing.jpg":
   # An online Get Into Teaching event on a computer screen.
