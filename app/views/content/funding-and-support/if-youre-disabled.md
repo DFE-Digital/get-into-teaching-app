@@ -60,7 +60,7 @@ Teacher training providers can make adjustments so that you can attend an interv
 
 Sharing that you’re disabled when you [apply for teacher training](https://www.gov.uk/apply-for-teacher-training) can help providers make adjustments. You should contact your provider to discuss any adjustments you may need.
 
-If you need help to identify techology to help you study, [visit AbilityNet for resources and guides](https://abilitynet.org.uk/about-abilitynet).
+If you need help to identify technology to help you study, [visit AbilityNet for resources and guides](https://abilitynet.org.uk/about-abilitynet).
 
 You can also explore [Disability Rights UK's guide for disabled students and apprentices](https://www.disabilityrightsuk.org/).
 
