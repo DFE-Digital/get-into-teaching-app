@@ -148,6 +148,10 @@ Interviews vary from provider to provider – you’ll be given all the informat
 
 [Find tips for your teacher training interview](/how-to-apply-for-teacher-training/teacher-training-interview). 
 
+### Essential checks
+
+If you get offered a place on a course, your provider will arrange a background and criminal records check. This is known as a Disclosure and Barring Service (DBS) check. You must pass these checks in order to teach students under 18.
+
 ### If you do not get a place 
 
 Your teacher training provider should give you feedback if your application is unsuccessful. 
