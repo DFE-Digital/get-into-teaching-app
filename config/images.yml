@@ -466,6 +466,9 @@
 "static/images/content/events/teaching-event.jpeg":
   # A man smiling wearing a blue Get Into Teaching sweatshirt talking to a lady with banner behind them.
   alt: ""
+"static/images/content/events/event-image.jpg":
+  # a woman talking to a woman holding a coffee cup with an event banner in the background.
+  alt: ""
 
 # campus advisers landing page
 "static/images/content/campus-advisers/adviser.jpeg":
