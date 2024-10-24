@@ -7,7 +7,7 @@ describe "_benefits.html.erb" do
   subject do
     assign(:front_matter, { "subject" => subject_name })
     assign(:salaries_starting_minshortened, "£31k")
-    render partial: "content/partials/teaching/benefits"
+    render partial: "content/shared/teaching/benefits"
     rendered
   end
 

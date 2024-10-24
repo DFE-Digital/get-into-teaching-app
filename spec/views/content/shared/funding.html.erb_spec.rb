@@ -8,12 +8,13 @@ describe "_funding.html.erb" do
     assign(:front_matter, { "subject" => subject_name })
     assign(:bursaries_postgraduate_chemistry, "£25,000")
     assign(:scholarships_chemistry, "£10,000")
-    render partial: "content/partials/teaching/funding"
+    render partial: "content/shared/teaching/funding"
     rendered
   end
 
   it { is_expected.to have_css("ul li") }
   it { is_expected.to have_link("extra funding and support", href: "/funding-and-support") }
+  it { is_expected.to have_link("Tax-free bursaries of", href: "/funding-and-support/scholarships-and-bursaries") }
   it { is_expected.to have_text(subject_name) }
   it { is_expected.to have_text(salary_value) }
 end
