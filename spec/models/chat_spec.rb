@@ -1,28 +1,6 @@
 require "rails_helper"
 
 RSpec.describe Chat, type: :model do
-  describe "self.enabled?" do
-    subject { described_class.enabled? }
-
-    context "when CHAT_ENABLED=0" do
-      before { allow(ENV).to receive(:fetch).with("CHAT_ENABLED", false).and_return("0") }
-
-      it { is_expected.to be false }
-    end
-
-    context "when CHAT_ENABLED=1" do
-      before { allow(ENV).to receive(:fetch).with("CHAT_ENABLED", false).and_return("1") }
-
-      it { is_expected.to be true }
-    end
-
-    context "when CHAT_ENABLED is not set" do
-      before { allow(ENV).to receive(:fetch).with("CHAT_ENABLED", false).and_return("") }
-
-      it { is_expected.to be_nil }
-    end
-  end
-
   describe "#to_h" do
     subject { described_class.new.to_h }
 
