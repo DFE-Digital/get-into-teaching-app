@@ -2,7 +2,6 @@ import { Application } from '@hotwired/stimulus';
 import ChatController from 'chat_controller.js';
 
 describe('ChatController', () => {
-
   beforeAll(() => registerController());
   afterEach(() => jest.useRealTimers());
 
