@@ -66,14 +66,14 @@ Qualified teacher status (QTS) is the professional status teachers in England ga
 
 However, if you’re a qualified teacher from outside the UK, you can [work as a teacher in England for up to 4 years without QTS](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#qts-exemption-for-teachers-from-outside-the-uk).
 
-After that, you will need QTS to teach in many schools in England, although it is not a legal requirement in some types of school (for example, [academy schools, free schools and private schools](https://www.gov.uk/types-of-school)). 
+After that, you will need QTS to teach in many schools in England, although it is not a legal requirement in some types of school, such as academy schools, free schools and private schools. Find out more about [the different types of schools in England](https://www.gov.uk/types-of-school). 
  
 
 ### Applying for QTS
 
 Depending on where you qualified, the subject you teach and your qualifications, you may be able to use a new professional recognition service to apply for English qualified teacher status.  
 
-You will not have to pay a fee or undergo further training when you apply for QTS. However, you will have to meet strict requirements. These requirements are mandatory and must be met in full exactly as set out in [‘Awarding qualified teacher status to overseas teachers’](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).  
+You will not have to pay a fee or undergo further training when you apply for QTS. However, you will have to meet strict requirements. These requirements are mandatory and must be met in full exactly as set out on [the GOV.UK website](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).  
 
 It's important to note that getting QTS does not lead to a teaching job or visa – you'll need to apply for these separately. 
 
@@ -124,7 +124,7 @@ Submit your application to a school that can sponsor visas, and if you are offer
 
 ### Your professional qualifications 
 
-If you haven't got QTS, schools you apply to will want to see alternative evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your qualifications compare to English ones.  
+If you haven't got QTS, schools you apply to will want to see alternative evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) (UK ENIC) showing how your qualifications compare to English ones.  
 
 ### Tips on applying
 
