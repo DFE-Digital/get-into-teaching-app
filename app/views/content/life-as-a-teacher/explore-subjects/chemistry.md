@@ -17,7 +17,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/partials/subject-pages/header"
+  - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/chemistry/article"
-  - "content/partials/subject-pages/adviser-promo"
+  - "content/shared/subject-pages/adviser-promo"
 ---
