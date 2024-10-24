@@ -51,7 +51,7 @@ If you do not want to come to England to train, you should consider [internation
 
 If you are already a qualified teacher, you do not need to retrain to teach in England. However, you will need:
 
-* to apply for English 'qualified teacher status', or be able to demonstrate strong non-UK qualifications and experience 
+* to apply for English qualified teacher status, or be able to demonstrate strong non-UK qualifications and experience 
 * a high standard of written and spoken English
 * to pass criminal and professional safeguarding checks (these will be organised by your employer)
 * [a visa or immigration status allowing you to work in the UK](/non-uk-teachers/visas-for-non-uk-teachers)
