@@ -91,11 +91,11 @@ QTS will allow you to apply for teaching jobs in all schools in England.
 
 ## Other ways to train
 
-You can apply to train to teach in other areas of the UK, including:
+To find out about teaching in other areas of the UK, visit the:
 
-* [Wales at the Educator Wales website](https://educators.wales/home)
-* [Scotland at the Teach in Scotland website](https://teachinscotland.scot/)
-* [Northern Ireland at the Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland)
+* [Educator Wales website](https://educators.wales/home)
+* [Teach in Scotland website](https://teachinscotland.scot/)
+* [Northern Ireland Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland)
 
 If you don’t want to come to England to study you can apply to train for international qualified teacher status (iQTS). This meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and, if successfully completed, leads to the automatic award of QTS.
 
@@ -128,7 +128,7 @@ If you are not training to teach in these subjects, any support you get will dep
 
 ## Find and apply for teacher training courses
 
-Your teacher training course must lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
+Your teacher training course must lead to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). 
 
 Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/train-to-be-a-teacher/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
 
@@ -195,7 +195,7 @@ Due to rules about immigration, not all providers can accept international appli
 
 You can apply to any English teacher training provider if you have settled or pre-settled status under either:
 
-* <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>
+* <a href="https://www.gov.uk/settled-status-eu-citizens-families">the EU Settlement Scheme</a>
 * <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>
 
 ### Postgraduate teaching apprenticeships
@@ -226,7 +226,7 @@ To train to teach in England, you will need a visa or immigration status allowin
 
 ## Plan your move to the UK
 
-[Visit the UK Council for International Student Affairs](https://www.ukcisa.org.uk/) (UKCISA) for advice about immigration, finding a place to live and opening a bank account. For support over the phone, [visit the UKCISA Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
+[Visit the UK Council for International Student Affairs](https://www.ukcisa.org.uk/) (UKCISA) for advice about immigration, finding a place to live and opening a bank account. For support over the phone, [visit the UKCISA Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us).
 
 Your teacher training provider may also be able to help you plan your move to the UK  – contact them directly to ask.
 

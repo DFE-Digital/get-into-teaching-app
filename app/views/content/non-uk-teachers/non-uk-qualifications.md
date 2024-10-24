@@ -110,7 +110,7 @@ If you have not passed an English language test like this, or do not have qualif
 
 ## If you do not have a bachelor's degree
 
-If you do not have a degree, you can apply for an [undergraduate course in England on the UCAS website](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes). These ungergraduate courses are 3 to 4 years and combine a teaching degree with [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
+If you do not have a degree, you can apply for an [undergraduate course in England on the UCAS website](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes). These undergraduate courses are 3 to 4 years and combine a teaching degree with [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
 The [UK Council for International Student Affairs website](https://www.ukcisa.org.uk/) has lots of helpful information about studying at an English university.
 

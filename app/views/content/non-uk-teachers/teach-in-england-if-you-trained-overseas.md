@@ -37,11 +37,11 @@ Teach in England and you’ll benefit from working in a world-class education sy
 
 You’ll earn a [competitive salary](/life-as-a-teacher/pay-and-benefits/teacher-pay), get supported in your professional development and have varied job opportunities.
 
-You could also consider teaching in other areas of the UK, including:
+To find out about teaching in other areas of the UK, visit the:
 
-* [Wales at the Educator Wales website](https://www.ewc.wales/site/index.php/en/registration/index.php?option=com_content&view=article&id=12&Itemid=170&lang=en)
-* [Scotland at the Teach in Scotland website](https://teachinscotland.scot/)
-* [Northern Ireland at the Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland)
+* [Educator Wales website](https://www.ewc.wales/site/index.php/en/registration/index.php?option=com_content&view=article&id=12&Itemid=170&lang=en)
+* [Teach in Scotland website](https://teachinscotland.scot/)
+* [Northern Ireland Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland)
 
 Not qualified as a teacher yet? Find out [how to train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). 
 
@@ -199,6 +199,6 @@ The following suggestions and resources may be useful:
 
 The Department for Education (DfE) does not employ teachers directly. Do not send us your CV, as we will not be able to help you find a teaching job. 
 
-Please do not email to ask when a country or subject will be added to [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). We'll publish updates about eligiblity for the service at [A fairer approach to awarding QTS to overseas teachers](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
+Do not email to ask when a country or subject will be added. We'll publish [updates about eligibility for the service on the GOV.UK website](https://apply-for-qts-in-england.education.gov.uk/eligibility/start).
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.

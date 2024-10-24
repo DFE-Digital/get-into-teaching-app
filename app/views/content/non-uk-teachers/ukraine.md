@@ -39,8 +39,8 @@ The [Department for Education (DfE)](https://www.gov.uk/government/organisations
 
 We can help if you’re interested in teaching children aged 5 to 18. If you'd like to teach other age groups, visit:
 
-* the National Careers Service for information on [teaching in a university](https://nationalcareers.service.gov.uk/job-profiles/higher-education-lecturer)
-* the Teach In Further Education for information on [teaching in further education](https://www.teach-in-further-education.campaign.gov.uk/)
+* the [National Careers Service website](https://nationalcareers.service.gov.uk/job-profiles/higher-education-lecturer) for information on teaching in a university
+* the [Teach in further education website](https://www.teach-in-further-education.campaign.gov.uk/) for information on teaching people over 16 who are not studying for a degree
 
 ## General information for Ukrainian teachers and trainees coming to the UK
 
