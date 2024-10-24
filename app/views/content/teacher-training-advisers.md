@@ -8,6 +8,5 @@ content:
     - content/teacher-training-advisers/sign-up
     - content/teacher-training-advisers/ending
 image: "static/images/content/homepage/teacher-training-adviser.jpg"
-talk_to_us: true
 noindex: false
 ---

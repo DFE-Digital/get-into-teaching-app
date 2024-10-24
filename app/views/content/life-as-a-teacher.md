@@ -8,5 +8,4 @@ navigation_path: "/life-as-a-teacher"
 content:
   - content/life-as-a-teacher/header
   - content/life-as-a-teacher/categories
-talk_to_us: true
 ---
