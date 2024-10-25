@@ -13,6 +13,7 @@ related_content:
     Training and support for early career teachers : "/life-as-a-teacher/teaching-as-a-career/early-career-teachers"
     How to apply : "/how-to-apply-for-teacher-training"
 promo_content:
+    - content/train-to-be-a-teacher/quote-initial-teacher-training
     - content/train-to-be-a-teacher/promos/mailing-list-promo-itt
     
 ---
