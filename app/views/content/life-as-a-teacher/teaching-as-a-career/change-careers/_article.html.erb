@@ -4,13 +4,6 @@
     <p>So if you're interested in changing careers to become a teacher, there's lots of support available to help you find your route into teaching. </p>
   </section>
   <section class="col col-720">
-    <%= render Content::QuoteComponent.new(
-    text: "I would advise anyone thinking about changing careers that you will be embraced and more importantly an asset to the profession and students.",
-    name: "Ian, career changer",
-    large: false
-  ) %>
-  </section>
-  <section class="col col-720">
     <h2 class="heading--box-blue">Benefits of changing your career to teaching</h2>
     <p>Transfering your existing skills to teaching can be incredibly rewarding. You'll be in demand as someone who has real-world experience of working in your career.</p>
     <p>As a teacher, you can watch pupils progress as they learn, making an impact from your very first lesson.</p>
@@ -20,7 +13,7 @@
     text: "I tried many things until I realised that working with young people and helping them develop skills truly inspired me.",
     name: "Chris, career changer",
     large: false
-  ) %>
+      ) %>
   </section>
   <section class="col col-720">
     <p>There are practical benefits too, including:
@@ -61,12 +54,21 @@
     <h3>If you do not have a degree</h3>
     <p>If you do not have a degree, you can:</p>
     <ul>
-        <li>do undergraduate teacher training to get a degree alongside qualified teacher status QTS</li>
-        <li>check if you're eligible to do a teaching degree apprenticeship</li>
+      <li>do undergraduate teacher training to get a degree alongside qualified teacher status QTS</li>
+      <li>check if you're eligible to do a teaching degree apprenticeship</li>
     </ul>
     <p>Find out more about <a href="/train-to-be-a-teacher/if-you-dont-have-a-degree">training to teach if you do not have a degree</a>.</p>
     <h3>If you're unable to get a degree</h3>
     <p>You do not need a degree and QTS to <a href="/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers">teach in further education</a> or to <a href="/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers">teach in early years</a>. So if you want to become a teacher, but are not able to get a degree, you can explore these options.</p>
+  </section>
+  <section class="col col-720">
+    <%= render Content::QuoteComponent.new(
+    text: "I would advise anyone thinking about changing careers that you will be embraced and more importantly an asset to the profession and students.",
+    name: "Ian, career changer",
+    large: false
+      ) %>
+  </section>
+  <section class="col col-720">
     <h2 class="heading--box-blue">Fund your training</h2>
     <p>Tax-free bursaries and scholarships of upto <%= v :scholarships_generic_maxshortened %> are available for eligible trainee teachers. You can get these alongside a tuition fee loan and maintenance loan.</p>
     <p>You may also be able to get extra funding and support if you're:</p>
@@ -78,8 +80,8 @@
     <p>Find out how you can <a href="/funding-and-support">fund your teacher training</a>.</p>
   </section>
 </div>
-  <div class="row">
-    <div class="col-space-l col-space-l-top">
+<div class="row">
+  <div class="col-space-l col-space-l-top">
     <%= render Content::QuoteWithImageComponent.new(
       title: "Teacher stories - Claire",
       text: "<p>As a parent and professional with a regular income, the financial support available to me as a trainee physics teacher made the option of re-training seem not only viable, but attractive.</p><a href='/life-as-a-teacher/teaching-as-a-career/becoming-a-parent-sparked-my-interest-in-teaching'>Read more about Claire's career change to teaching</a>",
@@ -87,14 +89,14 @@
       background_color: "blue",
       heading_color: "pink",
     ) %>
-    </div>
   </div>
+</div>
 <div class="row inset">
   <section class="col col-720">
     <h2 class="heading--box-blue">Support for career changers</h2>
     <h3>Finding and applying for training</h3>
     <p>Our experienced teaching advisers can support you through the switch if you're thinking about changing careers. You can chat to an adviser by phone, text or email.</p>
-    <p>Find out more about <a href="teacher-training-adviser/sign_up/identity">getting a teacher training adviser</a>.</p>
+    <p>Find out more about <a href="/teacher-training-adviser/sign_up/identity">getting a teacher training adviser</a>.</p>
     <p><a href="https://nowteach.org.uk/">Now Teach</a> is a service that specifically helps people get into teaching who are changing career.</p>
     <h3>During your training and early career</h3>
     <p>Throughout teacher training, you'll have the support of a mentor.</p>
@@ -108,7 +110,7 @@
     text: "My fellow trainees and I are a close group; everyone’s friendly and really supportive of everyone else.",
     name: "Emma, career changer",
     large: false
-  ) %>
+    ) %>
     <p>Once you've completed your teacher training, you'll continue to be supported during your first 2 years of teaching. Find out what support you'll get as <a href="/life-as-a-teacher/teaching-as-a-career/early-career-teachers">an early career teacher</a>.</p>
   </section>
 </div>
