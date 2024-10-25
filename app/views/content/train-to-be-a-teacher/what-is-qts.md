@@ -79,7 +79,7 @@ But if your course does not lead to QTS, you will not be a qualified teacher.
 
 You can get QTS through undergraduate or postgraduate initial teacher training. This mostly involves school placements with some theoretical learning.
 
-You can apply for either a primary or secondary teacher training course awarding QTS. [Find out more about the age groups you could teach](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach).
+You can apply for either primary teaching with QTS or a secondary teacher training course awarding QTS. [Find out more about the age groups you could teach](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach).
 
 You can also get a postgraduate qualification through teacher training such as QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
 
@@ -102,4 +102,4 @@ You can usually do this if you’ve worked as an unqualified teacher:
 
 If you trained to teach in Wales, your QTS will be automatically recognised in England and awarded by the [Education Workforce Council (EWC)](https://www.ewc.wales/site/index.php/en/).
 
-If you trained to teach in Scotland or Northern Ireland, you can [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without any further fees or training.
+If you trained to teach in Scotland or Northern Ireland, you can [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). If your QTS application is successful, you will gain QTS without any further fees or training.
