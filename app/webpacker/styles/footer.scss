@@ -34,15 +34,10 @@ footer.site-footer {
     .icon {
       @include font-size(medium);
       color: $black;
-    }
 
-    a:hover {
-      text-decoration: none;
-      color: $black;
-    }
-
-    a:focus {
-      color: $white;
+      &:active {
+        color: $white;
+      }
     }
   }
 
@@ -78,12 +73,17 @@ footer.site-footer {
         margin-top: 1em;
       }
 
+      img {
+        &:active {
+          @extend .link--black;
+          filter: invert(1);
+        }
+      }
+
       @include mq($from: tablet) {
-        // gap: 3em;
         * + picture,
         a {
           margin-top: 0;
-          margin-left: 3em;
         }
 
         flex-direction: row;
