@@ -87,7 +87,7 @@ When you have successfully completed your training, you will be awarded [qualifi
 
 QTS will allow you to apply for teaching jobs in all schools in England.
 
-[Read teachers' stories about the rewards of training to teach in England](/blog).
+[Read more about life as a teacher in England](/life-as-a-teacher).
 
 ## Other ways to train
 
