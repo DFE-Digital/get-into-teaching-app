@@ -37,6 +37,13 @@
     padding: .5rem;
     background: $backgroundColor;
     box-shadow: 0 0 0 $backgroundColor, -0 0 0 $backgroundColor;
+
+    span {
+      position: relative;
+      background: none;
+      padding: 0;
+      box-shadow: none;
+    }
   }
 }
 

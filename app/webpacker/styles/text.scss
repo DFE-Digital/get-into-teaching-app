@@ -16,10 +16,16 @@ dt,
 }
 
 li {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em; 
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  a {
+    display: inline-block; 
+    min-width: 24px; 
+    min-height: 24px; 
   }
 }
 

@@ -359,9 +359,6 @@
 "static/images/content/blog/thumbnails/stories-emma.jpg":
   alt: "Trainee science teacher, Emma"
 
-"static/images/content/blog/thumbnails/stories-paul.jpg":
-  alt: "Paul Evason, assistant headteacher"
-
 "static/images/content/blog/thumbnails/stories-sarah-f.jpg":
   alt: "Sarah Fisher, head of biology"
 
@@ -370,12 +367,6 @@
 
 "static/images/content/blog/thumbnails/stories-jon.jpg":
   alt: "Head of department, Jon Simmons"
-
-"static/images/content/blog/thumbnails/stories-danny.jpg":
-  alt: "PE teacher, Danny Holliday"
-
-"static/images/content/blog/thumbnails/stories-sandra.jpg":
-  alt: "Inspirational teacher, Sandra."
 
 "static/images/content/blog/thumbnails/stories-roger.jpg":
   alt: "Roger Brown, physics teacher"
@@ -439,7 +430,7 @@
 "static/images/content/landing/how-to-become-a-teacher-2.jpg":
   # A teacher looks over students sat around a table.
   alt: ""
-  
+
 # event
 "static/images/content/event-signup/event-regional-online-listing.jpg":
   # An online Get Into Teaching event on a computer screen.
@@ -468,6 +459,9 @@
   alt: ""
 "static/images/content/events/teaching-event.jpeg":
   # A man smiling wearing a blue Get Into Teaching sweatshirt talking to a lady with banner behind them.
+  alt: ""
+"static/images/content/events/event-image.jpg":
+  # A woman talking to another woman while holding a coffee cup with an event banner in the background.
   alt: ""
 
 # campus advisers landing page

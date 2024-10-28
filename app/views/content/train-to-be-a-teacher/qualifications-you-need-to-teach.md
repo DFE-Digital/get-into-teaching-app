@@ -29,11 +29,9 @@ expander:
     link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees
 ---
 
-You need qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.
+You need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.
 
 You do not need QTS to [teach in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers) or to [teach in early years](/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers).
-
-[Find out more about qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 ## What qualifications do you need to train?
 

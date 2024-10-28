@@ -1,0 +1,159 @@
+.quote-with-image {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 1500px;
+  margin: auto;
+
+  &:not(:has(> picture)) {
+    .quote-with-image__content {
+      left: 0;
+
+      @include mq($from: tablet) {
+        margin: auto;
+      }
+    }
+  }
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: $blue;
+    padding-bottom: 40px; // this compensates for the space taken up by the title
+
+    @include mq($from: tablet) {
+      width: 50%;
+    }
+
+    &.blue { background-color: rgba($blue, 0.4); }
+    &.pink { background-color: rgba($pink, 0.4); }
+    &.yellow { background-color: rgba($yellow, 0.4); }
+    &.green { background-color: rgba($green, 0.4); }
+    &.purple { background-color: rgba($purple, 0.4); }
+  }
+
+  > picture {
+    background-color: green;
+    flex-basis: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      vertical-align: bottom;
+      flex-basis: 50%;
+    }
+  }
+
+  &__content {
+    margin: auto 30px;
+    background-color: white;
+    padding: 40px;
+    border-bottom: 4px solid $grey-light;
+    position: relative;
+
+    &:hover {
+      border-color: $blue-dark;
+    }
+
+    a, p, h1, h2, h3, h4, h5 {
+      font-size: inherit;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include mq($from: mobile) {
+      margin: auto 50px;
+    }
+
+    @include mq($from: tablet, $until: desktop) {
+      width: 368px;
+    }
+
+    @include mq($from: desktop, $until: wide) {
+      left: 50px;
+      width: 500px;
+    }
+
+    @include mq($from: wide) {
+      left: 50px;
+      width: 700px;
+    }
+
+    &--with-quotes {
+      &::before, &::after {
+        position: absolute;
+        color: $pink;
+        font-weight: 800;
+        font-size: 100px;
+
+        @include mq($from: tablet) {
+          font-size: 150px;
+        }
+      }
+
+      &.blue { &::before, &::after { color: $blue; }}
+      &.pink { &::before, &::after { color: $pink; }}
+      &.yellow { &::before, &::after { color: $yellow; }}
+      &.green { &::before, &::after { color: $green; }}
+      &.purple { &::before, &::after { color: $purple; }}
+
+      &::before{
+        content: '\201c';
+        top: -35px;
+        left: -35px;
+
+        @include mq($from: tablet) {
+          top: -58px;
+          left: -50px;
+        }
+      }
+
+      &::after{
+        content: '\201d';
+        bottom: -102px;
+        right: -32px;
+
+        @include mq($from: tablet) {
+          bottom: -158px;
+          right: -50px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    @extend .heading-m;
+    @extend .heading--box-pink;
+    @extend .heading--overlap;
+    width: fit-content;
+    position: relative;
+    left: 30px;
+
+    @include mq($from: mobile, $until: desktop) {
+      left: 50px;
+    }
+
+    @include mq($from: desktop) {
+      left: 100px;
+    }
+
+    &.blue { background-color: $blue }
+    &.pink { background-color: $pink }
+    &.yellow { background-color: $yellow }
+    &.green { background-color: $green }
+    &.purple { background-color: $purple }
+  }
+}
