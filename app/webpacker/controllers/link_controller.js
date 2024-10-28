@@ -8,20 +8,8 @@ export default class extends Controller {
 
   connect() {
     this.prepareChevronOnButtonLinks();
-    this.openExternalContentLinksInNewWindow();
     this.preventTurboLinksOnJumpLinks();
   }
-
-  // openExternalContentLinksInNewWindow() {
-  //   const links = Array.from(this.contentTarget.querySelectorAll('a'));
-
-  //   links
-  //     .filter((l) => this.isExternal(l))
-  //     .forEach((l) => {
-  //       l.setAttribute('target', '_blank');
-  //       l.setAttribute('rel', 'noopener');
-  //     });
-  // }
 
   preventTurboLinksOnJumpLinks() {
     const links = this.contentTarget.querySelectorAll('a');
@@ -31,15 +19,6 @@ export default class extends Controller {
         l.dataset.turbolinks = 'false';
       }
     });
-  }
-
-  isExternal(link) {
-    const href = link.getAttribute('href');
-
-    return (
-      href?.startsWith('http') &&
-      !href?.includes(this.assetsUrlValue || window.location.host)
-    );
   }
 
   prepareChevronOnButtonLinks() {
