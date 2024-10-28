@@ -99,3 +99,7 @@ There are other ways to gain valuable experience of working with young people. S
 For example, you could get paid to work in a school that offers childcare before and after school. This is known as wraparound because the childcare wraps around the school day.
 
 Working in wraparound gives you experience working with children and in a school environment. Contact your local council or school to find out about any available opportunities. 
+
+## Next steps 
+
+Once you have completed your school experience, you can decide if you want to apply to teacher training in England and gain your qualified teacher status (QTS). [Find out more about the benefits of gaining QTS](/train-to-be-a-teacher/what-is-qts).
