@@ -31,13 +31,17 @@ footer.site-footer {
       justify-content: end;
     }
 
+    .site-footer-top__social__link {
+      &:focus {
+        .icon {
+          color: $white;
+        }
+      }
+    }
+
     .icon {
       @include font-size(medium);
       color: $black;
-
-      &:active {
-        color: $white;
-      }
     }
   }
 
@@ -68,15 +72,11 @@ footer.site-footer {
       display: flex;
       align-content: center;
 
-      * + picture,
       a {
-        margin-top: 1em;
-      }
-
-      img {
-        &:active {
-          @extend .link--black;
-          filter: invert(1);
+        &:focus {
+          picture > img {
+            filter: invert(1);
+          }
         }
       }
 

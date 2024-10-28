@@ -71,6 +71,7 @@
     </section>
 
     <div class="site-footer__social-icons">
+      <h2 class="visually-hidden">Support links</h2>
       <a href="https://www.facebook.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener">
         <%= helpers.fab_icon("facebook-f", "icon") %>
         <span class="visually-hidden">Facebook - opens in a new tab</span>
@@ -95,7 +96,6 @@
 
     <div class="site-footer-bottom">
       <div class="site-footer-bottom__links-container">
-        <h2 class="visually-hidden">Support links</h2>
         <%= link_to("Search", search_path) %>
         <%= link_to "Feedback", feedback_steps_path %>
         <%= link_to "Cookies", cookies_path %>
@@ -105,7 +105,7 @@
         <div class="site-footer-bottom__links-container__license">All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0,</a> except where otherwise stated.</div>
       </div>
       <div class="site-footer-bottom__logo-container">
-        <%= link_to root_path do %>
+        <%= link_to "https://www.gov.uk/government/organisations/department-for-education" do %>
           <%= image_pack_tag 'static/images/dfelogo-black.svg', alt: "Department for Education logo", size: "124x73" %>
         <% end %>
       </div>
