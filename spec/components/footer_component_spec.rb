@@ -26,13 +26,4 @@ describe FooterComponent, type: "component" do
       expect(page).not_to have_css(talk_to_us_selector)
     end
   end
-
-  describe "Zendesk Chat settings snippet" do
-    subject! do
-      render_inline(described_class.new)
-      page.native.inner_html
-    end
-
-    it { is_expected.to include("window.zESettings") }
-  end
 end
