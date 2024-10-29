@@ -1,5 +1,6 @@
 ---
 title: Become a maths teacher
+subject: maths
 title_paragraph: |-
   <p>
   If maths is your passion, you'll know that it's not just learning formulas or solving equations. It's a way of thinking and problem solving that’s important in every walk of life.</p>
@@ -18,7 +19,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/explore-subjects/maths/header"
+  - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/maths/article"
-  - "content/life-as-a-teacher/explore-subjects/maths/adviser-promo-maths"
+  - "content/shared/subject-pages/adviser-promo"
 ---
