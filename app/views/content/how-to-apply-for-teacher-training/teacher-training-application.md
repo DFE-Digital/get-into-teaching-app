@@ -57,7 +57,10 @@ You can get help with your application from our [teacher training advisers](/tea
 
 ## What course should I apply for? 
 
-Make sure you check which qualification you’ll get through your training course. Some will award [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) and some QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
+Make sure you check which qualification you’ll get through your training course. You'll train towards one of the following qualifications:
+
+* [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts)
+* QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce)
 
 While you do not need a PGCE to teach in England, you do need QTS to teach in many primary and secondary schools.
 
@@ -147,6 +150,10 @@ If your application is successful with a provider, you’ll be invited to an int
 Interviews vary from provider to provider – you’ll be given all the information you need when you’re invited to attend. 
 
 [Find tips for your teacher training interview](/how-to-apply-for-teacher-training/teacher-training-interview). 
+
+### Essential checks
+
+If you get offered a place on a course, your provider will arrange a background and criminal records check. This is known as a Disclosure and Barring Service (DBS) check. You must pass these checks in order to teach students under 18.
 
 ### If you do not get a place 
 

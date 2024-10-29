@@ -17,12 +17,11 @@ describe FooterComponent, type: "component" do
     expect(page).to have_css(".cookie-acceptance")
   end
 
-  describe "Zendesk Chat settings snippet" do
-    subject! do
-      render_inline(described_class.new)
-      page.native.inner_html
-    end
+  context "when 'Talk to us' is disabled" do
+    subject! { render_inline(described_class.new(talk_to_us: false)) }
 
-    it { is_expected.to include("window.zESettings") }
+    specify "does not render the 'Talk to us' section" do
+      expect(page).not_to have_css(talk_to_us_selector)
+    end
   end
 end
