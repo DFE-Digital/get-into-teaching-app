@@ -8,14 +8,7 @@ colour: pastel yellow-yellow
 content: 
   - "content/life-as-a-teacher/teaching-as-a-career/change-careers/header" 
   - "content/life-as-a-teacher/teaching-as-a-career/change-careers/article"
-inset_text:
-  international:
-    header: Non-UK citizens
-    text: |-
-      <p>
-      Find information if you're a <a href="/non-uk-teachers">non-UK citizen interested in teaching in England</a>.
-      </p>
-    color: purple
+  - "content/life-as-a-teacher/teaching-as-a-career/change-careers/adviser-promo-change-careers"
 ---
 
 
