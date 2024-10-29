@@ -350,23 +350,14 @@
   variants:
     - "static/images/content/blog/thumbnails/brooke-harvey.jpg"
 
-"static/images/content/blog/thumbnails/stories-gavin.jpg":
-  alt: "Assistant headteacher, Gavin"
-
 "static/images/content/blog/thumbnails/stories-nathan.jpg":
   alt: "Nathan Sproule, teacher"
-
-"static/images/content/blog/thumbnails/stories-emma.jpg":
-  alt: "Trainee science teacher, Emma"
 
 "static/images/content/blog/thumbnails/stories-sarah-f.jpg":
   alt: "Sarah Fisher, head of biology"
 
 "static/images/content/blog/thumbnails/stories-generic.jpg":
   alt: "Students enjoying a lesson in a classroom"
-
-"static/images/content/blog/thumbnails/stories-jon.jpg":
-  alt: "Head of department, Jon Simmons"
 
 "static/images/content/blog/thumbnails/stories-katie.jpg":
   alt: "Head of faculty, Katie Lockett"
