@@ -21,7 +21,7 @@ describe FooterComponent, type: "component" do
     subject! { render_inline(described_class.new(talk_to_us: false)) }
 
     specify "does not render the 'Talk to us' section" do
-      expect(page).not_to have_css(talk_to_us_selector)
+      expect(page).not_to have_css(".talk-to-us")
     end
   end
 end
