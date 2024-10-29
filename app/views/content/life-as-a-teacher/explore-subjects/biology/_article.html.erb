@@ -1,44 +1,31 @@
 <div class="row inset">
   <section class="col col-720 col-space-l-top">
-    <h2 class="heading--box-blue">Why teach biology</h2>
+    <h2 class="heading--box-blue">Why teach <%= @front_matter["subject"] %></h2>
     <div class="inset">
-      <p>Biology is the study of living things, the intricate systems that sustain them, and the delicate balance of our ecosystems. As a biology teacher, you'll have the opportunity to inspire the next generation to explore the wonders of life itself.</p>
-      <p>In addition to the personal rewards of teaching biology, there are practical benefits too, including:</p>
-      <ul>
-        <li>a <a href="/life-as-a-teacher/pay-and-benefits/teacher-pay">competitive salary starting at <%= value :salaries_starting_minshortened %></a> (or higher in London)</li>
-        <li>a <a href="/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme">generous and secure pension</a></li>
-        <li>more holiday days than people in many other professions</li>
-        <li>opportunities for progression</li>
-      </ul>
+      <p><%= @front_matter["subject"].titleize %> is the study of living things, the intricate systems that sustain them, and the delicate balance of our ecosystems. As a biology teacher, you'll have the opportunity to inspire the next generation to explore the wonders of life itself.</p>
+      <%= render 'content/shared/teaching/benefits' %>
     </div>
   </section>
 
-  <section class="col col-720">
-    <%= render Content::QuoteComponent.new(
-    text: "People may not realise how much potential there is for progression in teaching. They think they go into the world of the classroom and that's it. Lots of teachers have added responsibilities they enjoy doing and find fulfilling.",
-    name: "Chris Farr, teacher training adviser",
-    large: true
-  ) %>
+    <section class="col col-720">
+    <!-- Quote: Chris Farr -->
+    <%= render 'content/shared/quotes/quote_progression_chris' %>
   </section>
 
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Shape your pupils' futures</h2>
-      <p>Teaching biology opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from zoology and wildlife conservation, to medicine and dentistry.</p>
-      <p>By solving challenging problems, your pupils could make significant contributions to these impactful areas.</p>
-      <p>Your pupils will learn more from you than you might think.  As their teacher, you'll guide them though the skills they need to show their understanding of biology. You'll teach them valuable life skills such as critical thinking, decision making and communication.</p>
+      <p>Teaching <%= @front_matter["subject"] %> opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from zoology and wildlife conservation, to medicine and dentistry.</p>
+      <p>Your pupils will learn more from you than you might think.  As their teacher, you'll guide them though the skills they need to show their understanding of <%= @front_matter["subject"] %>. You'll teach them valuable life skills such as critical thinking, decision making and communication.</p>
   </section>
 
   <section class="col col-720">
-    <%= render Content::QuoteComponent.new(
-    text: "For me, science is all about being inquisitive. I was always the kid in class who was thinking, 'I wonder how that works, or I wonder why that does that'. I recognise that so much in the kids I teach and being able to give them the tools to develop that curiosity and knowledge is genuinely exhilarating.",
-    name: "Holly, science teacher",
-    large: true
-  ) %>
+    <!-- Quote: Holly, science teacher -->
+    <%= render 'content/shared/quotes/quote_science_holly' %>
   </section>
 
   <section class="col col-720">
     <h2 class="heading--box-blue">What you'll teach</h2>
-    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study">national curriculum for biology</a>.</p>
+    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study">national curriculum for <%= @front_matter["subject"] %></a>.</p>
     <p>You could have the opportunity to teach or support physics and chemistry lessons throughout key stages 3 and 4.</p>
     <p>When you teach 11 to 14 year olds (key stage 3), you'll cover themes from the 3 science disciplines of biology, chemistry and physics.</p>
     <p>The biology themes are:</p>
@@ -49,7 +36,7 @@
       <li>genetics and evolution</li>
     </ul>
 
-    <p>Themes you'll cover when you teach 14 to 16 year olds (key stage 4) will be more specific to biology, and include:</p>
+    <p>Themes you'll cover when you teach 14 to 16 year olds (key stage 4) will be more specific to <%= @front_matter["subject"] %>, and include:</p>
     <ul>
       <li>cell biology</li>
       <li>transport systems</li>
@@ -59,7 +46,7 @@
       <li>ecosystems</li>
       <li>evolution, inheritance and variation</li>
     </ul>
-    <p><a href="https://www.thenational.academy/teachers/curriculum/science-secondary/units">Explore what teaching a key stage 4 biology lesson would be like</a>.</p>
+    <p>Explore what teaching a key stage 4 <%= @front_matter["subject"] %> lesson would be like at the<a href="https://www.thenational.academy/teachers/curriculum/science-secondary/units"> Oak National Academy website</a>.</p>
     <p>At A level and AS level (key stage 5), you’ll help pupils develop a deeper knowledge and understanding of:</p>
     <ul>
       <li>biodiversity</li>
@@ -71,55 +58,31 @@
       <li>genetics and evolution</li>
       <li>energy for biological processes</li>
     </ul>
-    <p>Teaching pupils at different ages and abilities means you'll always be expanding your knowledge and approach to meet pupils' needs. Once you have qualified teacher status (QTS) you can also teach any other subject, as long as you can show you have enough expertise.</p>
+    <!-- Teaching pupils: ages and abilities -->
+    <%= render 'content/shared/teaching/ages_abilities' %>
 </section>
 
   <section class="col col-space-m col-720">
-    <h2 class="heading--box-blue">Start your journey into teaching biology</h2>
-    <h3>Check your qualifications</h3>
-    <p>To train to teach in secondary schools in England, you’ll need:</p>
-    <ul>
-      <li>GCSEs at grade 4 (C) or above in English and maths</li>
-      <li>a bachelor’s degree in any subject</li>
-    </ul>
-    <p>Having relevant A levels can show your subject knowledge, if you do not have a degree in biology.</p>
-    <p>Biology teacher training courses have had successful applications from candidates with a range of degrees, including biomedical sciences, zoology, psychology, and sport and exercise sciences.
-    <p>Find out more about what <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">qualifications you need to train to teach</a>.</p>
-    <%= render Content::ExpanderComponent.new(
-      title: "check your qualifications",
-      text: "If you have qualifications from outside the UK, you'll need to show that they meet the standards set for teacher training in England.",
-      link_title: "You can get help comparing English and international qualifications.",
-      link_url: "/non-uk-teachers/non-uk-qualifications",
-    ) %>
+    <h2 class="heading--box-blue">Start your journey into teaching <%= @front_matter["subject"] %></h2>
+    <!-- Check your qualifications-->
+    <%= render 'content/shared/qualifications-training/check_qualifcations' %>
+    <p><%= @front_matter ["subject"].titleize %> teacher training courses have had successful applications from candidates with a range of degrees, including biomedical sciences, forensic science, pharmacy, and natural sciences.
+    <p>Find out about <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">the qualifications needed to teach</a>.</p>
+    <!-- Non-UK qualifications expander -->
+    <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
   </section>
-
   <section class="col col-space-m col-720">
     <h3>Fund your teacher training</h3>
-    <p><a href="/funding-and-support/scholarships-and-bursaries">Tax-free bursaries of <%= v :bursaries_postgraduate_biology %> are available for eligible trainee biology teachers</a>.</p>
-    <p>You can get a bursary alongside a tuition fee loan and maintenance loan.</p>
-    <p>You may also be able to get extra funding and support if you're:</p>
-    <ul>
-      <li>a parent or carer</li>
-      <li>disabled</li>
-    </ul>
-    <p>Find out how you can <a href="/funding-and-support">fund your teacher training</a>.</p>
-    <%= render Content::ExpanderComponent.new(
-      title: "funding your training",
-      text: "If you do not have <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for funding.",
-      link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
-      link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
-    ) %>
+    <!-- Bursaries and Scholarships -->
+    <%= render 'content/shared/teaching/bursary_only' %>
+    <!-- Funding and Support -->
+    <%= render 'content/shared/teaching/funding_support' %>
   </section>
-    <section class="col col-720">
-    <h2 class="heading--box-blue">Support with teacher training</h2>
-    <p>Throughout your initial teacher training in biology, you'll have the support of a mentor.</p>
-    <p>Your mentor will:</p>
-    <ul>
-      <li>guide you through your training, sharing learning and career development opportunities with you</li>
-      <li>meet with you regularly to make sure your training is a positive experience</li>
-    </ul>
-    <p>You'll also be part of a welcoming school community where you'll learn from fellow teachers through taught sessions, seminars and workshops.</p>
-    <p>Find out more about what support you'll get as <a href="/life-as-a-teacher/teaching-as-a-career/early-career-teachers">an early career teacher</a>.</p>
+
+  <section class="col col-720">
+    <!-- Support with teacher training -->
+    <%= render 'content/shared/teaching/ect_support' %>
   </section>
+
 </div>
 </div>
