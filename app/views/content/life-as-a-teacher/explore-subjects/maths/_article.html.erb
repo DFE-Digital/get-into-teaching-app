@@ -3,6 +3,8 @@
     <h2 class="heading--box-blue">Why teach <%= @front_matter["subject"] %></h2>
       <p><%= @front_matter["subject"].titleize %> is critical to science, technology and engineering as well as being fundamental for most jobs.</p>
       <p>A good understanding of <%= @front_matter["subject"] %> can help children develop life skills such as cooking, managing a budget and problem solving. It's also our government's goal for all young people to study maths to age 18.</p>
+      <!-- Why teach: benefits -->
+      <%= render 'content/shared/teaching/benefits' %>
   </section>
 
   <section class="col col-720">
