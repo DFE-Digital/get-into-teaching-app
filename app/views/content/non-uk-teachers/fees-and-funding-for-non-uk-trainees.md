@@ -4,7 +4,6 @@ subcategory: If you want to train to teach
 description: |-
   Learn more about bursaries and scholarships for non-UK teacher trainees.
 related_content:
-    Career progression stories: "/blog/tag/career-progression"
     Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
