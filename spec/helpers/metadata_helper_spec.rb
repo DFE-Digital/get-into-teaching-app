@@ -32,7 +32,7 @@ describe MetadataHelper, type: "helper" do
 
       expect(tags).to include(
         <<~HTML.chomp,
-          <meta name="og:image" content="/packs/v1/static/images/content/hero-images/teacher2-e8f0d711e6d72e7ee752.jpg">
+          <meta name="og:image" content="/packs-test/v1/static/images/content/hero-images/teacher2-e8f0d711e6d72e7ee752.jpg">
         HTML
       )
 
