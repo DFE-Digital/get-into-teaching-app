@@ -83,7 +83,7 @@ If you're already a qualified teacher, find out how you can [teach in England if
 
 Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way.
 
-When you have successfully completed your training, you will be awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
+When you have successfully completed your training, you will be awarded [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), a professional qualification valued globally.
 
 QTS will allow you to apply for teaching jobs in all schools in England.
 
@@ -97,7 +97,7 @@ To find out about teaching in other areas of the UK, visit the:
 * [Teach in Scotland website](https://teachinscotland.scot/)
 * [Northern Ireland Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland)
 
-If you don’t want to come to England to study you can apply to train for international qualified teacher status (iQTS). This meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and, if successfully completed, leads to the automatic award of QTS.
+If you don’t want to come to England to study you can apply to train for international qualified teacher status (iQTS). This meets the same high standards as [English qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) and, if successfully completed, leads to the automatic award of QTS.
 
 For teachers who qualified outside the UK, as well as those with teaching experience, [other routes to qualified teacher status (QTS)](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) are also open.
 
@@ -233,7 +233,7 @@ Your teacher training provider may also be able to help you plan your move to th
 
 ## Complete your teacher training and gain qualified teacher status (QTS)
 
-If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
+If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 
 ## Apply for your first teaching job
