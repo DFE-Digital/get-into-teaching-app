@@ -6,7 +6,6 @@ content:
     - content/landing/mailing-list-1/mailing-list
 image: "static/images/content/hero-images/english.jpg"
 layout: "layouts/minimal"
-talk_to_us: false
 noindex: true
 breadcrumbs: false
 ---
