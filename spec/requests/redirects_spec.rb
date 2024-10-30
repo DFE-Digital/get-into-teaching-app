@@ -36,7 +36,7 @@ describe "Redirects", :content, type: :request do
 
   describe "path redirects" do
     {
-      "/why-teach" => "/life-as-a-teacher",
+      "/why-teach" => "/life-as-a-teacher/pay-and-benefits",
       "/why-teach/why-teach-subpage" => "/life-as-a-teacher",
       "/content/stories" => "/life-as-a-teacher",
       "/content/stories/subpage" => "/life-as-a-teacher",
