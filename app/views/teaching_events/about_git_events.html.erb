@@ -92,18 +92,15 @@
       <% end %>
     </section>
   </div>
-
-  <section class="col col-full-page what-theyre-saying">
-    <div class="triangle on-grey yellow-triangle">
-      <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0,100 100,0 100,100"></polygon>
-      </svg>
-    </div>
-    <div class="subheading">
-      <h2 class="heading--box-pink heading-xl heading--margin-0">What they're saying</h2>
-    </div>
-    <figure>
-      <blockquote>Really helpful and friendly. Provided very tangible advice on next steps.</blockquote>
-    </figure>
-  </section>
+</div>
+<div class="row">
+  <div class="col-space-l col-space-l-top">
+    <%= render Content::QuoteWithImageComponent.new(
+      title: "What they're saying",
+      text: "Really helpful and friendly. Provided very tangible advice on next steps.",
+      quotes: true,
+      background_color: "yellow",
+      heading_color: "pink",
+    ) %>
+  </div>
 </div>
