@@ -18,6 +18,27 @@ module StructuredDataHelper
     end
   end
 
+  def government_organization_structured_data
+    data = {
+      "@context": "https://schema.org/",
+      "@type": "GovernmentOrganization",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://www.getintoteaching.education.gov.uk/",
+      },
+      name: "Get Into Teaching",
+      description: "Nobody knows teaching like we do. Whether you're just thinking about it or ready to apply, we offer free advice and support to decide if teaching in a primary or secondary school in England is right for you. Discover a career with lots of opportunities to grow.",
+      potentialAction: {
+        "@type": "SearchAction",
+        description: "Search for content from Get Into Teaching",
+        target: "https://www.getintoteaching.education.gov.uk/search?q={search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    }
+
+    structured_data("GovernmentOrganization", data)
+  end
+
   def blog_structured_data(page)
     frontmatter = page.frontmatter
     author_name = frontmatter[:author]
