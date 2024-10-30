@@ -79,7 +79,7 @@ But if your course does not lead to QTS, you will not be a qualified teacher.
 
 You can get QTS through undergraduate or postgraduate initial teacher training. This mostly involves school placements with some theoretical learning.
 
-You can apply for either primary teaching with QTS or a secondary teacher training course awarding QTS. [Find out more about the age groups you could teach](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach).
+You can apply for courses that offer either primary teaching with QTS or secondary teaching with QTS. [Find out more about the age groups you could teach](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach).
 
 You can also get a postgraduate qualification through teacher training such as QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
 
