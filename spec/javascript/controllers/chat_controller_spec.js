@@ -5,9 +5,6 @@ describe('ChatController', () => {
   beforeAll(() => registerController());
   afterEach(() => jest.useRealTimers());
 
-  let chatShowSpy;
-  let chatOpenSpy;
-
   const setBody = (chatAvailable = 'true') => {
     document.body.innerHTML = `
       <div data-controller="chat" data-available="${chatAvailable}" data-chat-target="container" class="chat">
@@ -29,8 +26,6 @@ describe('ChatController', () => {
           </p>
         </div>
       </div>
-
-      <iframe id="webWidget"></iframe> // Zendesk modal.
     `;
   }
 
@@ -39,23 +34,15 @@ describe('ChatController', () => {
     application.register('chat', ChatController);
   }
 
-  const setCurrentTime = (time) => {
-    jest.useFakeTimers().setSystemTime(new Date(time).getTime())
-  }
-
-  const getButtonText = () => {
-    return document.querySelector('a').textContent;
-  }
-
-  describe('when the new chat is enabled', () => {
-
-    const mockFetch = (result) => {
-      global.fetch = jest.fn(() => {
-        return Promise.resolve({
-          json: () => (result)
-        })
+  const mockFetch = (result) => {
+    global.fetch = jest.fn(() => {
+      return Promise.resolve({
+        json: () => (result)
       })
-    }
+    })
+  }
+
+  describe('chat', () => {
 
     describe('when the chat is online', () => {
       beforeEach(() => {
