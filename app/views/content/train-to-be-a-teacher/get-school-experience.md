@@ -90,7 +90,7 @@ You’ll get to experience a range of activities to help you get a feel for scho
 
 ### Watch pre-recorded lessons
 
-Many school and training provider websites have helpful information like “day in the life” videos and recorded lessons. You can also [observe teachers’ lessons](https://www.thenational.academy/teachers) on the Oak National Academy website to help you get to know teaching better, before or alongside your ITT.
+Many school and training provider websites have helpful information like “day in the life” videos and recorded lessons. You can also observe teachers’ lessons on the [Oak National Academy website](https://www.thenational.academy/teachers) to help you get to know teaching better, before or alongside your ITT.
 
 ### Beyond the classroom
 
@@ -102,6 +102,6 @@ Working in wraparound gives you experience working with children and in a school
 
 ## Next steps 
 
-Once you have completed your school experience, you can decide if you want to [apply for teacher training in England] (/how-to-apply-for-teacher-training/teacher-training-application) and gain your qualified teacher status (QTS). 
+Once you have completed your school experience, you can decide if you want to [apply for teacher training in England](/how-to-apply-for-teacher-training/teacher-training-application) and get qualified teacher status (QTS). 
 
-[Find out more about the benefits of gaining QTS](/train-to-be-a-teacher/what-is-qts).
+[Find out more about the benefits of getting QTS](/train-to-be-a-teacher/what-is-qts).
