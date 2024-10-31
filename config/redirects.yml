@@ -369,6 +369,7 @@ redirects:
   "/blog/the-fellowship-of-teachers": "/life-as-a-teacher"
   "/blog/why-i-became-a-teacher": "/life-as-a-teacher"
   "/blog/how-to-ace-a-video-interview": "/how-to-apply-for-teacher-training/teacher-training-interview"
+  "/blog/back-to-school-as-a-trainee-teacher":  "/train-to-be-a-teacher/initial-teacher-training"
 
   # Blog tags
   "/blog/tag/get-into-teaching-events": "/events/about-get-into-teaching-events"
@@ -379,6 +380,7 @@ redirects:
   "/blog/tag/personal-statements":  "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
   "/blog/tag/school-experience":  "/train-to-be-a-teacher/get-school-experience"
   "/blog/tag/teaching-internships": "/train-to-be-a-teacher/teaching-internships"
+  "/blog/tag/advisers": "/teacher-training-advisers"
 
   # Covid page
   "/covid-19": "/"
