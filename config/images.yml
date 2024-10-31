@@ -244,11 +244,6 @@
   variants:
     - "static/images/content/blog/thumbnails/cindy-ventura.jpg"
 
-"static/images/content/blog/giorgio-rubbo.jpg":
-  alt: "Biology teacher Giorgio Rubbo wearing a suit and tie."
-  variants:
-    - "static/images/content/blog/thumbnails/giorgio-rubbo.jpg"
-
 "static/images/content/blog/habiba-cabdi-teacher-applicant.jpg":
   alt: "Teacher training course student Habiba Cabdi with a hearing impairment."
   variants:
