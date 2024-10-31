@@ -260,11 +260,6 @@
   variants:
     - "static/images/content/blog/thumbnails/interview.jpg"
 
-"static/images/content/blog/jacob.jpg":
-  alt: "Teacher training course student and biology graduate Jacob."
-  variants:
-    - "static/images/content/blog/thumbnails/jacob.jpg"
-
 "static/images/content/blog/mel-oconnor.jpg":
   alt: "Trainee teacher Mel O'Connor taking a PGDE teacher training course in maths."
   variants:
