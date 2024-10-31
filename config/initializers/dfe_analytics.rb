@@ -28,7 +28,25 @@ DfE::Analytics.configure do |config|
   #
   # We base64 encode the secret otherwise the raw JSON is mangled when it gets
   # written to/read from the Azure keyvault.
-  config.bigquery_api_json_key = ENV["BIGQUERY_API_JSON_KEY"] ? Base64.decode64(ENV["BIGQUERY_API_JSON_KEY"]) : nil
+  config.bigquery_api_json_key = ''
+  config.bigquery_project_id = 'rugged-abacus-218110'
+  config.bigquery_dataset = 'git_review_4299'
+  config.bigquery_table_name = 'events'
+  config.google_cloud_credentials = {
+    universe_domain: "googleapis.com",
+    type: "external_account",
+    audience: "//iam.googleapis.com/projects/712009772377/locations/global/workloadIdentityPools/azure-cip-identity-pool/providers/azure-cip-oidc-provider",
+    subject_token_type: "urn:ietf:params:oauth:token-type:jwt",
+    token_url: "https://sts.googleapis.com/v1/token",
+    credential_source: {
+      url: "https://login.microsoftonline.com/9c7d9dd3-840c-4b3f-818e-552865082e16/oauth2/v2.0/token"
+    },
+    service_account_impersonation_url: "https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/appender-git-review-4299@rugged-abacus-218110.iam.gserviceaccount.com:generateAccessToken",
+    service_account_impersonation: {
+      token_lifetime_seconds: 3600
+    }
+  }
+
 
   # Passed directly to the retries: option on the BigQuery client
   #
