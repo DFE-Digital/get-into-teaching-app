@@ -8,7 +8,6 @@ description: |-
   Discover what you could teach, what teaching different subjects is really like, and how to take your next steps to become a teacher.
 navigation: 40.15
 layout: "layouts/minimal"
-talk_to_us: true
 backlink: "../"
 content:
   - content/life-as-a-teacher/header

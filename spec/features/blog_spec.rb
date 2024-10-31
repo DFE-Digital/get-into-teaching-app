@@ -37,7 +37,7 @@ describe "reading the blog", type: :feature do
   end
 
   include_context "paginating blog posts", "/blog", 10, true
-  include_context "paginating blog posts", "/blog/tag/advisers", 2, false
+  include_context "paginating blog posts", "/blog/tag/advisers", 1, false
 
   scenario "viewing a post" do
     path = "my-career-change-to-teaching"

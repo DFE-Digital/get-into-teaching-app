@@ -1,5 +1,6 @@
 ---
 title: Become a biology teacher
+subject: biology
 title_paragraph: |-
   <p>
   Teaching biology helps pupils understand the world around them. You can spark a passion for discovery, guiding pupils through the natural world from tiny cells to vast ecosystems.</p>
@@ -16,7 +17,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/explore-subjects/biology/header"
+  - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/biology/article"
-  - "content/life-as-a-teacher/explore-subjects/biology/adviser-promo-biology"
+  - "content/shared/subject-pages/adviser-promo"
 ---

@@ -207,7 +207,7 @@ redirects:
   "/explore-my-options/return-to-teaching/return-to-teaching-support-for-languages-maths-or-physics-returnees": "/returning-to-teaching"
   "/explore-my-options/teacher-training-routes": "/train-to-be-a-teacher"
   "/explore-my-options/teacher-training-routes/specialist-training-options": "/train-to-be-a-teacher"
-  "/teacher-training-scholar-stories": "/blog"
+  "/teacher-training-scholar-stories": "/life-as-a-teacher"
   "/three-things-to-help-you-get-into-teachingFacebook": "/three-things-to-help-you-get-into-teaching"
   "/how-to-apply/prepare/eu-nationals": "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
   "/passing-the-skills-tests/": "/steps-to-become-a-teacher"
@@ -230,7 +230,7 @@ redirects:
   "/explore-my-options/teach-primary": "/train-to-be-a-teacher"
   "/explore-my-options/teacher-trai-ning-routes/specialist-training-options/researchers-in-schools": "/train-to-be-a-teacher"
   "/explore-my-options/teacher-training-routes/specialist-training-options/teach-first": "/train-to-be-a-teacher"
-  "/why-teach": "/blog"
+  "/why-teach": "/life-as-a-teacher/pay-and-benefits"
   "/become-an-early-years-teacher": "/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers"
   "/youre-a-kinesthetic-learner": "/"
   "/get-help-and-support/premier-plus/get-extra-support-with-premier-plus": "/help-and-support"
@@ -328,9 +328,9 @@ redirects:
   "/what-is-qts": "/train-to-be-a-teacher/what-is-qts"
 
   # Wildcards
-  "/why-teach(*reason)": "/blog"
-  "/content/stories(*story)": "/blog"
-  "/my-story-into-teaching(*story)": "/blog"
+  "/why-teach(*reason)": "/life-as-a-teacher"
+  "/content/stories(*story)": "/life-as-a-teacher"
+  "/my-story-into-teaching(*story)": "/life-as-a-teacher"
   "/blog/how-to-apply-for-teacher-training": "/how-to-apply-for-teacher-training"
   "/three-things-to-help-you-get-into-teaching": "/help-and-support"
 
@@ -362,13 +362,23 @@ redirects:
   "/blog/teacher-training-its-worth-it":  "/train-to-be-a-teacher/initial-teacher-training"
   "/blog/grasp-every-opportunity":  "/life-as-a-teacher"
   "/blog/going-back-and-giving-back": "/life-as-a-teacher"
+  "/blog/natural-transition-from-engineering-to-teaching-physics":  "/life-as-a-teacher/explore-subjects/engineers-teach-physics"
+  "/blog/leaping-to-head-of-department":  "/life-as-a-teacher"
   "/blog/why-dont-you-teach-miss":  "/life-as-a-teacher"
   "/blog/no-two-days-are-the-same": "/life-as-a-teacher"
+  "/blog/the-fellowship-of-teachers": "/life-as-a-teacher"
+  "/blog/why-i-became-a-teacher": "/life-as-a-teacher"
+  "/blog/how-to-ace-a-video-interview": "/how-to-apply-for-teacher-training/teacher-training-interview"
 
   # Blog tags
   "/blog/tag/get-into-teaching-events": "/events/about-get-into-teaching-events"
   "/blog/tag/autism": "/funding-and-support/if-youre-disabled"
   "/blog/tag/neurodiversity": "/funding-and-support/if-youre-disabled"
+  "/blog/tag/behaviour":  "/life-as-a-teacher/teaching-as-a-career/turning-a-tough-lesson-into-a-success"
+  "/blog/tag/career-progression": "/life-as-a-teacher/career-progression"
+  "/blog/tag/personal-statements":  "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
+  "/blog/tag/school-experience":  "/train-to-be-a-teacher/get-school-experience"
+  "/blog/tag/teaching-internships": "/train-to-be-a-teacher/teaching-internships"
 
   # Covid page
   "/covid-19": "/"
