@@ -1,5 +1,6 @@
 ---
 title: Become a physics teacher
+subject: physics
 title_paragraph: |-
   <p>
   Teaching secondary physics is an exciting and worthwhile career. Schools need more specialist physics teachers, so it's a great choice of subject.</p> 
@@ -17,7 +18,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/explore-subjects/physics/header"
+  - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/physics/article"
-  - "content/life-as-a-teacher/explore-subjects/physics/adviser-promo-physics"
+  - "content/shared/subject-pages/adviser-promo"
 ---
