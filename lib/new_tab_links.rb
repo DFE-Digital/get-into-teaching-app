@@ -9,7 +9,10 @@ class NewTabLinks
     links = doc.css("a.new-tab")
 
     links.each do |anchor|
-      anchor.add_child(%{ <span>(opens in new tab)</span>})
+      unless anchor["class"]&.include?("button")
+        anchor.add_child(%{ <span>(opens in new tab)</span>})
+      end
+
       anchor[:target] = "_blank"
       anchor[:rel] = "noopener"
     end
