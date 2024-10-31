@@ -379,6 +379,7 @@ redirects:
   "/blog/tag/personal-statements":  "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
   "/blog/tag/school-experience":  "/train-to-be-a-teacher/get-school-experience"
   "/blog/tag/teaching-internships": "/train-to-be-a-teacher/teaching-internships"
+  "/blog/tag/advisers": "/teacher-training-advisers"
 
   # Covid page
   "/covid-19": "/"
