@@ -10,7 +10,7 @@ describe "Google Tag Manager", type: :request do
       "/steps-to-become-a-teacher",
       "/ways_to_train",
       "/welcome",
-      blog_path("back-to-school-as-a-trainee-teacher"),
+      blog_path("my-career-change-to-teaching"),
       blog_index_path,
       event_path(event.readable_id),
       event_step_path(event.readable_id, :personal_details),

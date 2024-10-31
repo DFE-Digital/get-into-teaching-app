@@ -1,28 +1,98 @@
-<% if talk_to_us? %>
-  <%= render Footer::TalkToUsComponent.new %>
-<% end %>
 <%= render Footer::CookieAcceptanceComponent.new %>
 <footer class="site-footer">
-  <div class="site-footer__wrapper limit-content-width">
-    <div class="site-footer-top">
-      <div class="site-footer-top__social">
-        <a href="https://www.facebook.com/getintoteaching" class="site-footer-top__social__link">
-          <%= helpers.fab_icon("facebook-f", "icon") %>
-        </a>
-        <a href="https://www.instagram.com/get_into_teaching/" class="site-footer-top__social__link">
-          <%= helpers.fab_icon("instagram", "icon") %>
-        </a>
-        <a href="https://www.linkedin.com/company/9258520?trk=tyah&trkInfo=idx%3A1-1-1%2CtarId%3A1424345327269%2Ctas%3Aget+into+teaching" class="site-footer-top__social__link">
-          <%= helpers.fab_icon("linkedin-in", "icon") %>
-        </a>
-        <a href="https://twitter.com/getintoteaching" class="site-footer-top__social__link">
-          <%= helpers.fab_icon("x-twitter", "icon") %>
-        </a>
-        <a href="http://www.youtube.com/user/getintoteaching" class="site-footer-top__social__link">
-          <%= helpers.fab_icon("youtube", "icon") %>
-        </a>
+  <div class="limit-content-width">
+    <h2 class="heading-m heading--box-blue heading--overlap">Talk to us</h2>
+
+    <section class="talk-to-us">
+      <div class="talk-to-us__content">
+        <div class="talk-to-us__icon-section">
+          <i class="icon-call icon--on-yellow"></i>
+          <div>
+            <h3 class="heading-s">Call us</h3>
+            <a href="tel:08003892500" class="telephone link">0800 389 2500</a>
+          </div>
+        </div>
+
+        <% unless helpers.privacy_page?(request.path) %>
+          <div class="talk-to-us__icon-section">
+            <i class="icon-chat icon--on-yellow"></i>
+            <div>
+              <h3 class="heading-s">Chat to us</h3>
+              <%= render ChatComponent.new %>
+            </div>
+          </div>
+        <% end %>
       </div>
+
+      <div>
+        <p>Call or chat to us Monday to Friday, <strong>8:30am until 5:30pm</strong> except on <a class="link" href="https://www.gov.uk/bank-holidays">bank holidays</a>.</p>
+        <p class="small">Your details are protected under the terms of our <%= link_to "privacy notice", privacy_policy_path, class: "link" %>. Our privacy notice explains how we use your personal data. It's important you read this before chatting to us.</p>
+      </div>
+    </section>
+
+    <section>
+      <hr class="site-footer__divider">
+
+      <div class="site-footer__links-container">
+        <div class="site-footer__links-column">
+          <h2 class="heading-m">Become a teacher</h2>
+          <ul>
+            <li><a class="link--black" href="/steps-to-become-a-teacher">How to become a teacher</a></li>
+            <li><a class="link--black" href="/train-to-be-a-teacher/qualifications-you-need-to-teach">Qualifications needed to teach</a></li>
+            <li><a class="link--black" href="/train-to-be-a-teacher">Teacher training</a></li>
+            <li><a class="link--black" href="/train-to-be-a-teacher/what-is-qts">Qualified teacher status (QTS)</a></li>
+            <li><a class="link--black" href="/life-as-a-teacher/pay-and-benefits/teacher-pay">Teacher salary</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__links-column">
+          <h2 class="heading-m">Finance and funding</h2>
+          <ul>
+            <li><a class="link--black" href="/funding-and-support/scholarships-and-bursaries">Bursaries and scholarships</a></li>
+            <li><a class="link--black" href="/funding-and-support/salaried-teacher-training">Salaried teacher training</a></li>
+            <li><a class="link--black" href="/funding-and-support/tuition-fees">Tuition fees</a></li>
+            <li><a class="link--black" href="/funding-and-support/tuition-fee-and-maintenance-loans">Student finance</a></li>
+            <li><a class="link--black" href="/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme">Teacher pensions</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__links-column">
+          <h2 class="heading-m">Routes into teaching</h2>
+          <ul>
+            <li><a class="link--black" href="/train-to-be-a-teacher/if-you-have-a-degree">Train to teach with a degree</a></li>
+            <li><a class="link--black" href="/train-to-be-a-teacher/if-you-dont-have-a-degree">Train to teach without a degree</a></li>
+            <li><a class="link--black" href="/train-to-be-a-teacher/teacher-degree-apprenticeships">Teacher degree apprenticeship</a></li>
+            <li><a class="link--black" href="/train-to-be-a-teacher/assessment-only-route-to-qts">Assessment only QTS</a></li>
+            <li><a class="link--black" href="/life-as-a-teacher/teaching-as-a-career/change-careers">Retrain as a teacher</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="site-footer__divider">
+    </section>
+
+    <div class="site-footer__social-icons">
+      <h2 class="visually-hidden">Support links</h2>
+      <a href="https://www.facebook.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener">
+        <%= helpers.fab_icon("facebook-f", "icon") %>
+        <span class="visually-hidden">Facebook - opens in a new tab</span>
+      </a>
+      <a href="https://www.instagram.com/get_into_teaching/" class="site-footer-top__social__link" target="_blank" rel="noopener">
+        <%= helpers.fab_icon("instagram", "icon") %>
+        <span class="visually-hidden">Instagram - opens in a new tab</span>
+      </a>
+      <a href="https://www.linkedin.com/company/9258520?trk=tyah&trkInfo=idx%3A1-1-1%2CtarId%3A1424345327269%2Ctas%3Aget+into+teaching" class="site-footer-top__social__link" target="_blank" rel="noopener">
+        <%= helpers.fab_icon("linkedin-in", "icon") %>
+        <span class="visually-hidden">LinkedIn - opens in a new tab</span>
+      </a>
+      <a href="https://twitter.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener">
+        <%= helpers.fab_icon("x-twitter", "icon") %>
+        <span class="visually-hidden">X, formerly known as Twitter - opens in a new tab</span>
+      </a>
+      <a href="http://www.youtube.com/user/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener">
+        <%= helpers.fab_icon("youtube", "icon") %>
+        <span class="visually-hidden">Youtube - opens in a new tab</span>
+      </a>
     </div>
+
     <div class="site-footer-bottom">
       <div class="site-footer-bottom__links-container">
         <%= link_to("Search", search_path) %>
@@ -34,9 +104,10 @@
         <div class="site-footer-bottom__links-container__license">All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0,</a> except where otherwise stated.</div>
       </div>
       <div class="site-footer-bottom__logo-container">
-        <%= image_pack_tag 'static/images/dfelogo-white.svg', alt: "Department for Education logo", size: "124x73" %>
+        <%= link_to "https://www.gov.uk/government/organisations/department-for-education" do %>
+          <%= image_pack_tag 'static/images/dfelogo-black.svg', alt: "Department for Education logo", size: "124x73" %>
+        <% end %>
       </div>
     </div>
   </div>
 </footer>
-<%= render "sections/zendesk_chat_settings" %>

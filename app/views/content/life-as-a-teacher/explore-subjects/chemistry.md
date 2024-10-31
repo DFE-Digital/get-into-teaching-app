@@ -1,5 +1,6 @@
 ---
 title: Become a chemistry teacher
+subject: chemistry
 title_paragraph: |-
   <p>
   As a chemistry teacher, you'll spark curiosity and challenge young minds to explore the fundamental principles that govern our world. You'll inspire students to question, experiment, and discover, fuelling their passion for science.</p>
@@ -16,7 +17,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/explore-subjects/chemistry/header"
+  - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/chemistry/article"
-  - "content/life-as-a-teacher/explore-subjects/chemistry/adviser-promo-chemistry"
+  - "content/shared/subject-pages/adviser-promo"
 ---

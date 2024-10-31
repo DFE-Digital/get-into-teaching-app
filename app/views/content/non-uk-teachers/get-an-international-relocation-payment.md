@@ -15,7 +15,6 @@ navigation_description: Teachers of languages or physics could be eligible for f
 date: "2021-05-27"
 image: "static/images/content/hero-images/geography.jpg"
 backlink: "../../"
-talk_to_us: false
 inset_text:
   applications-open:
     text: |-
