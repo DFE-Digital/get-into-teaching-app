@@ -21,7 +21,7 @@ keywords:
     - Qualified teacher status
 ---
 
-International qualified teacher status (iQTS) is a teaching qualification backed by the UK government. iQTS meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), and leads to the automatic award of QTS. You can train where you live and work, with no need to visit the UK.
+International qualified teacher status (iQTS) is a teaching qualification backed by the UK government. iQTS meets the same high standards as [English qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), and leads to the automatic award of QTS. You can train where you live and work, with no need to visit the UK.
 
 ## Why choose iQTS?
 
@@ -143,7 +143,7 @@ We have recently approved the following providers to offer iQTS for the 2024/25 
 
 At the end of your training, your iQTS provider and school will assess you to check you meet the [iQTS Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards).
 
-Your training provider will award you international qualified teacher status (iQTS) when you have successfully passed this assessment process. You will then be automatically awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) by England’s Department for Education.
+Your training provider will award you international qualified teacher status (iQTS) when you have successfully passed this assessment process. You will then be automatically awarded [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) by England’s Department for Education.
 
 ## Other routes to QTS
 

@@ -324,11 +324,6 @@
   variants:
     - "static/images/content/blog/thumbnails/whiteboard.jpg"
 
-"static/images/content/blog/fellowship.jpg":
-  alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
-  variants:
-    - "static/images/content/blog/thumbnails/fellowship.jpg"
-
 "static/images/content/blog/ian-wallace.jpg":
   alt: "Science teacher and career changer, Ian Wallace"
   variants:

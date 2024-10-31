@@ -42,7 +42,7 @@ You need a bachelor's degree (in any subject) to teach in primary, secondary and
 
 For secondary teacher training, your provider will want to make sure you have a good knowledge of the subject you’re applying to teach.
 
-If you have a degree, you can do postgraduate teacher training to get qualified teacher status (QTS).
+If you have a degree, you can do postgraduate teacher training to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time.
 

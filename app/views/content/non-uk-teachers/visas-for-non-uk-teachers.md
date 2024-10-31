@@ -4,7 +4,6 @@ description: |-
   Learn more about types of visa non-UK citizens will need to work in England, and how to apply.
 related_content:
     Teach in England if you trained outside the UK: " /non-uk-teachers/teach-in-england-if-you-trained-overseas"
-    Career progression stories: "/blog/tag/career-progression"
     Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
