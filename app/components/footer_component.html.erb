@@ -2,7 +2,6 @@
 <footer class="site-footer">
   <div class="limit-content-width">
     <h2 class="heading-m heading--box-blue heading--overlap">Talk to us</h2>
-
     <section class="talk-to-us">
       <div class="talk-to-us__content">
         <div class="talk-to-us__icon-section">
@@ -12,7 +11,6 @@
             <a href="tel:08003892500" class="telephone link">0800 389 2500</a>
           </div>
         </div>
-
         <% unless helpers.privacy_page?(request.path) %>
           <div class="talk-to-us__icon-section">
             <i class="icon-chat icon--on-yellow"></i>
@@ -23,16 +21,13 @@
           </div>
         <% end %>
       </div>
-
       <div>
         <p>Call or chat to us Monday to Friday, <strong>8:30am until 5:30pm</strong> except on <a class="link" href="https://www.gov.uk/bank-holidays">bank holidays</a>.</p>
         <p class="small">Your details are protected under the terms of our <%= link_to "privacy notice", privacy_policy_path, class: "link" %>. Our privacy notice explains how we use your personal data. It's important you read this before chatting to us.</p>
       </div>
     </section>
-
     <section>
       <hr class="site-footer__divider">
-
       <div class="site-footer__links-container">
         <div class="site-footer__links-column">
           <h2 class="heading-m">Become a teacher</h2>
@@ -65,34 +60,26 @@
           </ul>
         </div>
       </div>
-
       <hr class="site-footer__divider">
     </section>
-
     <div class="site-footer__social-icons">
       <h2 class="visually-hidden">Support links</h2>
-      <a href="https://www.facebook.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener">
+      <a href="https://www.facebook.com/getintoteaching" class="site-footer-top__social__link">
         <%= helpers.fab_icon("facebook-f", "icon") %>
-        <span class="visually-hidden">Facebook - opens in a new tab</span>
       </a>
-      <a href="https://www.instagram.com/get_into_teaching/" class="site-footer-top__social__link" target="_blank" rel="noopener">
+      <a href="https://www.instagram.com/get_into_teaching/" class="site-footer-top__social__link">
         <%= helpers.fab_icon("instagram", "icon") %>
-        <span class="visually-hidden">Instagram - opens in a new tab</span>
       </a>
-      <a href="https://www.linkedin.com/company/9258520?trk=tyah&trkInfo=idx%3A1-1-1%2CtarId%3A1424345327269%2Ctas%3Aget+into+teaching" class="site-footer-top__social__link" target="_blank" rel="noopener">
+      <a href="https://www.linkedin.com/company/9258520?trk=tyah&trkInfo=idx%3A1-1-1%2CtarId%3A1424345327269%2Ctas%3Aget+into+teaching" class="site-footer-top__social__link">
         <%= helpers.fab_icon("linkedin-in", "icon") %>
-        <span class="visually-hidden">LinkedIn - opens in a new tab</span>
       </a>
-      <a href="https://twitter.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener">
+      <a href="https://twitter.com/getintoteaching" class="site-footer-top__social__link">
         <%= helpers.fab_icon("x-twitter", "icon") %>
-        <span class="visually-hidden">X, formerly known as Twitter - opens in a new tab</span>
       </a>
-      <a href="http://www.youtube.com/user/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener">
+      <a href="http://www.youtube.com/user/getintoteaching" class="site-footer-top__social__link">
         <%= helpers.fab_icon("youtube", "icon") %>
-        <span class="visually-hidden">Youtube - opens in a new tab</span>
       </a>
     </div>
-
     <div class="site-footer-bottom">
       <div class="site-footer-bottom__links-container">
         <%= link_to("Search", search_path) %>
