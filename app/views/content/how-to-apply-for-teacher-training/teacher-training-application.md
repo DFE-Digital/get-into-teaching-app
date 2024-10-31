@@ -49,6 +49,11 @@ expander:
       <p>
       If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>. 
       </p>
+quote:
+  giorgio:
+    text: "My best advice for a successful application is to be reflective in your personal statement and interview, think about why you want to teach, about the sort of classroom you envisage yourself in (and why) and talk about it!"
+    name: "Giorgio, biology teacher"
+    classes: quote--indent
 ---
 
 Find out what you need to include in your primary or secondary teacher training application and what happens as part of the application process. 
@@ -128,6 +133,8 @@ Your training provider can then make adjustments so you can attend an interview 
 You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course. 
 
 [Find out more about how to choose your references for teacher training](/how-to-apply-for-teacher-training/teacher-training-references).
+
+$giorgio$
 
 ## Start your application
 
