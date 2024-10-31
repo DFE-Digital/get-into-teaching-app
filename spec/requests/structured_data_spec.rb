@@ -59,7 +59,7 @@ describe "Google Structured Data", type: :request do
   end
 
   context "when viewing a blog page" do
-    let(:path) { "/blog/how-to-ace-a-video-interview" }
+    let(:path) { "/blog/my-career-change-to-teaching" }
 
     before { get path }
 
