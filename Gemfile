@@ -126,7 +126,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 5.0.2"
 
   # Static security scanner
-  gem "brakeman", "~> 6.1.2", require: false
+  gem "brakeman", "~> 6.2.2", require: false
 
   # Debugging
   gem "pry-byebug"
