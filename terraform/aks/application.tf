@@ -33,7 +33,6 @@ module "application_configuration" {
 
 # Run database migrations
 # https://guides.rubyonrails.org/active_record_migrations.html#preparing-the-database
-# https://github.com/ilyakatz/data-migrate
 # Terraform waits for this to complete before starting web_application and worker_application
 resource "kubernetes_job" "migrations" {
   metadata {
