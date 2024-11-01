@@ -5,7 +5,6 @@ description: |-
   Find out what extra support you can get if you want a career change into teaching. Bring your skills and experience to life in the classroom.
 related_content:
     Train to be a teacher : "/train-to-be-a-teacher"
-    Changing career from engineering to teaching physics: "/blog/natural-transition-from-engineering-to-teaching-physics"
     Engineers teach physics teacher training courses : "/life-as-a-teacher/explore-subjects/engineers-teach-physics"
     Transferring my skills to teaching: "/blog/transferring-my-skills-to-teaching"
     Fund your training if you're a parent or carer: "/funding-and-support/if-youre-a-parent-or-carer"

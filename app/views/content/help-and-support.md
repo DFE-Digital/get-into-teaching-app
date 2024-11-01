@@ -7,7 +7,6 @@ description: |-
   Contact Get Into Teaching by phone or live chat and find out how to get dedicated support from an adviser, attend an event, or sign up for tailored emails.
 navigation: 40
 layout: "layouts/minimal"
-talk_to_us: false
 content:
   - content/help-and-support/header
   - content/help-and-support/talk-to-us
