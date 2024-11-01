@@ -36,14 +36,14 @@ module "application_configuration" {
 # Terraform waits for this to complete before starting web_application and worker_application
 resource "kubernetes_job" "migrations" {
   metadata {
-    name      = "${var.service_name}-${var.environment}-migrations"
+    name      = "${var.service_name}-${local.environment}-migrations"
     namespace = var.namespace
   }
 
   spec {
     template {
       metadata {
-        labels = { app = "${var.service_name}-${var.environment}-migrations" }
+        labels = { app = "${var.service_name}-${local.environment}-migrations" }
         annotations = {
           "logit.io/send"        = "true"
           "fluentbit.io/exclude" = "true"
