@@ -56,7 +56,7 @@ module StructuredDataHelper
         "https://www.instagram.com/get_into_teaching/",
         "https://www.linkedin.com/company/get-into-teaching/",
         "https://twitter.com/getintoteaching",
-        "http://www.youtube.com/user/getintoteaching",
+        "https://www.youtube.com/user/getintoteaching",
       ],
       "potentialAction": {
         "@type": "SearchAction",
