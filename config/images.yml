@@ -265,11 +265,6 @@
   variants:
     - "static/images/content/blog/thumbnails/notepad.jpg"
 
-"static/images/content/blog/olivia.jpg":
-  alt: "Teacher training course student Olivia with the Outwood Grange Academies Trust."
-  variants:
-    - "static/images/content/blog/thumbnails/olivia.jpg"
-
 "static/images/content/blog/right_provider.jpg":
   alt: ""
   variants:
