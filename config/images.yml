@@ -239,11 +239,6 @@
   variants:
     - "static/images/content/blog/thumbnails/calculator.jpg"
 
-"static/images/content/blog/cindy-ventura.jpg":
-  alt: "Trainee teacher Cindy Ventura in her first week on a PGDE teacher training course."
-  variants:
-    - "static/images/content/blog/thumbnails/cindy-ventura.jpg"
-
 "static/images/content/blog/habiba-cabdi-teacher-applicant.jpg":
   alt: "Teacher training course student Habiba Cabdi with a hearing impairment."
   variants:
@@ -318,10 +313,7 @@
   alt: "Jessica Walmsley, Head of Science."
   variants:
     - "static/images/content/blog/thumbnails/jessica-walmsley.jpg"
-
-"static/images/content/blog/thumbnails/stories-will.jpg":
-  alt: "English teacher Will Fordham"
-
+  
 "static/images/content/blog/thumbnails/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
 
@@ -341,9 +333,6 @@
 
 "static/images/content/blog/thumbnails/stories-katie.jpg":
   alt: "Head of faculty, Katie Lockett"
-
-"static/images/content/blog/thumbnails/chris-wallis.jpg":
-  alt: "Product engineer turned science teacher, Chris Wallis"
 
 "static/images/content/blog/thumbnails/david-payling.jpg":
   alt: "Veteran and trainee teacher, David Payling"

@@ -1,28 +1,19 @@
 <div class="row inset">
   <section class="col col-720 col-space-l-top">
-    <h2 class="heading--box-blue">Why teach maths</h2>
-      <p>Maths is critical to science, technology and engineering as well as being fundamental for most jobs.</p>
-      <p>A good understanding of maths can help children develop life skills such as cooking, managing a budget and problem solving. It's also our government's goal for all young people to study maths to age 18.</p>
+    <h2 class="heading--box-blue">Why teach <%= @front_matter["subject"] %></h2>
+      <p> Maths is critical to science, technology and engineering as well as being fundamental for most jobs.</p>
+      <p>A good understanding of maths can help children develop life skills such as cooking, managing a budget and problem solving.</p>
+      <!-- Why teach: benefits -->
+      <%= render 'content/shared/teaching/benefits' %>
   </section>
 
   <section class="col col-720">
-    <%= render Content::PhotoQuoteListComponent.new(
-      [
-        {
-          image: "static/images/content/subjects/rotna-roy.jpeg",
-          heading: "Empowering my pupils",
-          text: "I enjoy showing my pupils that maths is essential in everyday life. Whether it is identifying patterns, interpreting data, managing finances, or understanding the spaces and structures around us, everything uses maths.",
-          accreditation: "Rotna, maths teacher",
-        }
-      ],
-      colors: %w[pink],
-      numbered: false
-    ) %>
+   <%= render 'content/shared/quotes/quote_maths_rotna' %>
   </section>
 
   <section class="col col-720">
     <h2 class="heading--box-blue">What you'll teach</h2>
-    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study">national curriculum for maths</a>.</p>
+    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study">national curriculum for <%= @front_matter["subject"] %></a>.</p>
     <p>Themes you'll cover when you teach 11 to 16 year olds (key stage 3 and 4) include:</p>
     <ul>
       <li>numbers</li>
@@ -32,10 +23,7 @@
       <li>probability and statistics</li>
     </ul>
     <p>When you're teaching key stages 3 and 4 you can use interactive games with conkers and dice to help your pupils understand algebra and probability.</p>
-    <p><a href="https://www.thenational.academy/teachers/programmes/maths-secondary-ks3-l/units">Explore what teaching a key stage 3 maths lesson would be like</a>.</p>
-  </section>
-
-  <section class="col col-720">
+    <p>Explore what teaching a key stage 3 maths lesson would be like at the <a href="https://www.thenational.academy/teachers/programmes/maths-secondary-ks3-l/units">Oak National Academy website</a>.</p>
     <p>Themes you'll cover when you teach 16 to 18 year olds (key stage 5) include:</p>
     <ul>
       <li>analysis of data</li>
@@ -46,56 +34,35 @@
   </section>
 
   <section class="col col-720">
-    <%= render Content::QuoteComponent.new(
-    text: "I try to find out what they're interested in, whether it's card games, football or whatever, and use this to make maths relevant.",
-    name: "Dimitra, maths teacher",
-    large: true
-  ) %>
+   <%= render 'content/shared/quotes/quote_maths_dimitra' %>
   </section>
 
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching</h2>
-    <h3>Check your qualifications</h3>
-    <p>To train to teach in secondary schools in England, you'll need:</p>
-    <ul>
-      <li>GCSEs at grade 4 (C) or above in English and maths</li>
-      <li>a bachelor's degree in any subject</li>
-    </ul>
-    <p>Maths teacher training courses have had successful applications from candidates with a range of degrees, including psychology, music, architecture and law.</p>
+     <%= render 'content/shared/qualifications-training/check_qualifcations' %>
+    <p><p><%= @front_matter ["subject"].titleize %> teacher training courses have had successful applications from candidates with a range of degrees, including psychology, music, architecture and law.</p>
     <p>Find out more about what <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">qualifications you need to train to teach</a>.</p>
-    <%= render Content::ExpanderComponent.new(
-    title: "check your qualifications",
-    text: "If you have qualifications from outside the UK, you'll need to show that they meet the standards set for teacher training in England.",
-    link_title: "You can get help comparing English and international qualifications.",
-    link_url: "/non-uk-teachers/non-uk-qualifications",
-  ) %>
+     <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
   </section>
 
   <section class="col col-space-m col-720">
-    <h3>Subject knowledge enhancement course (SKE)</h3>
-    <p>If your training provider thinks you need to top up your maths knowledge, you might need to do an <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">SKE course</a> before you start your teacher training.</p>
+    <%= render 'content/shared/qualifications-training/subject_knowledge' %>
   </section>
 
   <section class="col col-space-m col-720">
     <h3>Fund your teacher training</h3>
-    <p><a href="/funding-and-support/scholarships-and-bursaries">Tax-free bursaries of <%= v :bursaries_postgraduate_maths %> or scholarships of <%= v :scholarships_maths %></a> are available for eligible trainee maths teachers.</p>
-    <p>You can get a bursary or scholarship alongside a tuition fee loan and maintenance loan.</p>
-    <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
-    <ul>
-      <li>a parent or carer</li>
-      <li>disabled</li>
-    </ul>
-    <%= render Content::ExpanderComponent.new(
-    title: "funding your training",
-    text: "If you do not have <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for funding.",
-    link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
-    link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
-  ) %>
+    <!-- Bursaries and Scholarships -->
+    <%= render 'content/shared/teaching/bursary_scholarship' %>
+    <!-- Funding and Support -->
+    <%= render 'content/shared/teaching/funding_support' %>
   </section>
 
   <section class="col col-space-m col-720">
-    <h3>Paid internship</h3>
-    <p>If you’re currently doing an undergraduate or master's degree and are interested in teaching maths, you could apply for a <a href="/train-to-be-a-teacher/teaching-internships">paid teaching internship</a>.</p>
-    <p>The 3-week programme could help you to understand what it's really like in the classroom and get a feel for school life.</p>
+    <%= render 'content/shared/qualifications-training/paid_internships' %>
+  </section>
+
+  <section class="col col-720">
+    <!-- Support with teacher training -->
+    <%= render 'content/shared/teaching/ect_support' %>
   </section>
 </div>
