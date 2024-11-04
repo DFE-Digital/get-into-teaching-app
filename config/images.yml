@@ -228,11 +228,6 @@
 "static/images/content/case-studies/ben.jpg":
   alt: "Maths and science teacher Ben marking work at home."
 
-"static/images/content/blog/anna-shirley.jpg":
-  alt: "Sheffield SCITT communciations manager Anna Shirley."
-  variants:
-    - "static/images/content/blog/thumbnails/anna-shirley.jpg"
-
 "static/images/content/blog/applying-for-teacher.jpg":
   alt: ""
   variants:
@@ -249,11 +244,6 @@
   variants:
     - "static/images/content/blog/thumbnails/cindy-ventura.jpg"
 
-"static/images/content/blog/giorgio-rubbo.jpg":
-  alt: "Biology teacher Giorgio Rubbo wearing a suit and tie."
-  variants:
-    - "static/images/content/blog/thumbnails/giorgio-rubbo.jpg"
-
 "static/images/content/blog/habiba-cabdi-teacher-applicant.jpg":
   alt: "Teacher training course student Habiba Cabdi with a hearing impairment."
   variants:
@@ -264,11 +254,6 @@
   alt: ""
   variants:
     - "static/images/content/blog/thumbnails/interview.jpg"
-
-"static/images/content/blog/jacob.jpg":
-  alt: "Teacher training course student and biology graduate Jacob."
-  variants:
-    - "static/images/content/blog/thumbnails/jacob.jpg"
 
 "static/images/content/blog/mel-oconnor.jpg":
   alt: "Trainee teacher Mel O'Connor taking a PGDE teacher training course in maths."
@@ -324,11 +309,6 @@
   variants:
     - "static/images/content/blog/thumbnails/whiteboard.jpg"
 
-"static/images/content/blog/fellowship.jpg":
-  alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
-  variants:
-    - "static/images/content/blog/thumbnails/fellowship.jpg"
-
 "static/images/content/blog/ian-wallace.jpg":
   alt: "Science teacher and career changer, Ian Wallace"
   variants:
@@ -338,10 +318,7 @@
   alt: "Jessica Walmsley, Head of Science."
   variants:
     - "static/images/content/blog/thumbnails/jessica-walmsley.jpg"
-
-"static/images/content/blog/thumbnails/stories-will.jpg":
-  alt: "English teacher Will Fordham"
-
+  
 "static/images/content/blog/thumbnails/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
 
@@ -361,9 +338,6 @@
 
 "static/images/content/blog/thumbnails/stories-katie.jpg":
   alt: "Head of faculty, Katie Lockett"
-
-"static/images/content/blog/thumbnails/chris-wallis.jpg":
-  alt: "Product engineer turned science teacher, Chris Wallis"
 
 "static/images/content/blog/thumbnails/david-payling.jpg":
   alt: "Veteran and trainee teacher, David Payling"
