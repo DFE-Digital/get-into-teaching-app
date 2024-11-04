@@ -5,7 +5,7 @@ subcategory: Extra support
 description: |-
     Find out about the support you can get while training to teach if you're disabled.
 related_content:
-    Becoming a teacher with a hearing impairment: "/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment"
+    Explore the benefits of teaching: "/life-as-a-teacher/pay-and-benefits"
     Age groups you could teach: "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo

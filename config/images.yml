@@ -239,11 +239,6 @@
   variants:
     - "static/images/content/blog/thumbnails/calculator.jpg"
 
-"static/images/content/blog/habiba-cabdi-teacher-applicant.jpg":
-  alt: "Teacher training course student Habiba Cabdi with a hearing impairment."
-  variants:
-    - "static/images/content/blog/thumbnails/habiba-cabdi-teacher-applicant.jpg"
-
 "static/images/content/blog/interview.jpg":
   # A teacher training candidate being interviewed by a provider sitting at opposite sides of a desk.
   alt: ""
