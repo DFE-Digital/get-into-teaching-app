@@ -28,11 +28,18 @@ expander:
       </p>
       <p>
       You will still be entitled to adjustments to help you train. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.</p>
+quote:
+  habiba:
+    text: "Growing up as a profoundly deaf child, I had a positive upbringing in my mainstream primary school. The teachers were amazing in terms of support and treating me equally. They inspired me to become a primary school teacher."
+    name: "Habiba, primary school teacher"
+    classes: quote--indent
 ---
 
 The experience and perspective of a diverse workforce is valued in school culture.
 
 If you’re disabled, have a mental health condition or educational needs, you can get support to become a teacher.
+
+$habiba$
 
 $international-content$
 
