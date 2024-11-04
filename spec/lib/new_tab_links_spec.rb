@@ -26,5 +26,15 @@ describe NewTabLinks do
         )
       end
     end
+
+    context "when the link has class of 'new-tab' and 'button'" do
+      let(:link) { %(<a class="new-tab button" href="https://link.link">link</a>) }
+
+      it "does not add new tab attributes and text" do
+        is_expected.to include(
+          %(<a class="new-tab button" href="https://link.link" target="_blank" rel="noopener">link</a>),
+        )
+      end
+    end
   end
 end
