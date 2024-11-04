@@ -370,6 +370,7 @@ redirects:
   "/blog/why-i-became-a-teacher": "/life-as-a-teacher"
   "/blog/how-to-ace-a-video-interview": "/how-to-apply-for-teacher-training/teacher-training-interview"
   "/blog/back-to-school-as-a-trainee-teacher":  "/train-to-be-a-teacher/initial-teacher-training"
+  "/blog/transferring-my-skills-to-teaching": "/life-as-a-teacher"
   "/blog/product-engineer-turned-science-teacher":  "/life-as-a-teacher/explore-subjects/engineers-teach-physics"
 
   # Blog tags
@@ -382,6 +383,9 @@ redirects:
   "/blog/tag/school-experience":  "/train-to-be-a-teacher/get-school-experience"
   "/blog/tag/teaching-internships": "/train-to-be-a-teacher/teaching-internships"
   "/blog/tag/advisers": "/teacher-training-advisers"
+  "/blog/tag/career-change-to-teaching": "/life-as-a-teacher/teaching-as-a-career/change-careers"
+  "/blog/tag/changing-career-to-teaching": "/life-as-a-teacher/teaching-as-a-career/change-careers"
+  "/blog/tag/interviews": "/how-to-apply-for-teacher-training/teacher-training-interview"
 
   # Covid page
   "/covid-19": "/"
