@@ -14,7 +14,7 @@ calls_to_action:
       arguments:
         icon: "icon-arrow"
         text: |-
-          Use our service to search for and organise a placement in England.
+          Use our service to search for and organise school experience in England.
         link_text: "Search for school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
 promo_content:
