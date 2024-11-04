@@ -15,7 +15,7 @@ calls_to_action:
         icon: "icon-arrow"
         text: |-
           Use our service to search for and organise a placement in England.
-        link_text: "Get school experience"
+        link_text: "Search for school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo
