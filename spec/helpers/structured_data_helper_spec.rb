@@ -104,22 +104,22 @@ describe StructuredDataHelper, type: "helper" do
     end
   end
 
-  describe ".home_structured_data" do
+  describe ".government_organization_structured_data" do
     subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
-    let(:html) { home_structured_data }
+    let(:html) { government_organization_structured_data }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
 
-    before { enable_structured_data(:web_site) }
+    before { enable_structured_data(:government_organization) }
 
     it "returns nil when disabled by config" do
-      disable_structured_data(:web_site)
+      disable_structured_data(:government_organization)
       expect(script_tag).to be_nil
     end
 
     it "includes site information" do
       expect(data).to include({
-        "@type": "WebSite",
+        "@type": "GovernmentOrganization",
         url: root_url,
         name: "Get Into Teaching",
       })
