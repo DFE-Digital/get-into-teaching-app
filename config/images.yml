@@ -308,11 +308,6 @@
   alt: "Science teacher and career changer, Ian Wallace"
   variants:
     - "static/images/content/blog/thumbnails/ian-wallace.jpg"
-
-"static/images/content/blog/jessica-walmsley.jpg":
-  alt: "Jessica Walmsley, Head of Science."
-  variants:
-    - "static/images/content/blog/thumbnails/jessica-walmsley.jpg"
   
 "static/images/content/blog/thumbnails/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
