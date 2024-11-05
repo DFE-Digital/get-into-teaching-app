@@ -35,7 +35,12 @@ expander:
     title: fees and funding
     text: "Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance loans. If you train to teach languages or physics, you may be eligible for a bursary or scholarship."
     link_title: Learn more about fees and financial support for non-UK trainee teachers.
-    link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees   
+    link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees
+quote:
+  olivia:
+    text: "You'll learn a lot about yourself during your teacher training year, and it 's the most rewarding journey to be on."
+    name: "Olivia, drama teacher"
+    classes: quote--indent
 ---
 
 You need a bachelor's degree (in any subject) to teach in primary, secondary and special schools in England.
@@ -71,6 +76,8 @@ This means that even if your course provider is a university, you will still do 
 The important thing to remember is that regardless of your course provider, all teacher training involves around 120 days of school placements in at least 2 schools.
 
 You can [find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
+
+$olivia$
 
 ## Where will my training take place?
 
