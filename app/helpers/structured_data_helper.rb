@@ -65,7 +65,7 @@ module StructuredDataHelper
   def logo_structured_data
     data = {
       url: root_url,
-      logo: asset_pack_url("static/images/getintoteachinglogo.svg"),
+      logo: asset_pack_url("static/images/logo/teaching_blue_background.svg"),
     }
 
     structured_data("Organization", data)
