@@ -396,6 +396,17 @@ redirects:
   "/blog/tag/career-change-to-teaching": "/life-as-a-teacher/teaching-as-a-career/change-careers"
   "/blog/tag/changing-career-to-teaching": "/life-as-a-teacher/teaching-as-a-career/change-careers"
   "/blog/tag/interviews": "/how-to-apply-for-teacher-training/teacher-training-interview"
+  "/blog/tag/applications": "/how-to-apply-for-teacher-training/teacher-training-application"
+  "/blog/tag/becoming-a-teacher": "/steps-to-become-a-teacher"
+  "/blog/tag/benefits": "/life-as-a-teacher/pay-and-benefits"
+  "/blog/tag/classroom-concerns": "/life-as-a-teacher"
+  "/blog/tag/deafness": "/funding-and-support/if-youre-disabled"
+  "/blog/tag/international":  "/non-uk-teachers"
+  "/blog/tag/life-as-a-teacher":  "/life-as-a-teacher"
+  "/blog/tag/mentors":  "/train-to-be-a-teacher/initial-teacher-training"
+  "/blog/tag/support":  "/help-and-support"
+  "/blog/tag/teacher-training": "/train-to-be-a-teacher"
+  "/blog/tag/veterans": "/funding-and-support/if-youre-a-veteran"
 
   # Covid page
   "/covid-19": "/"
