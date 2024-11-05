@@ -143,7 +143,7 @@ describe StructuredDataHelper, type: "helper" do
       expect(data).to include({
         "@type": "Organization",
         url: root_url,
-        logo: asset_pack_url(image_path),
+        logo: asset_pack_url("static/images/logo/teaching_blue_background.svg"),
       })
     end
   end
