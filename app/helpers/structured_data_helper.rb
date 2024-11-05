@@ -58,14 +58,6 @@ module StructuredDataHelper
         "https://twitter.com/getintoteaching",
         "http://www.youtube.com/user/getintoteaching",
       ],
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": CGI.unescape(search_url(search: { search: "{search_term_string}" })),
-        },
-        "query-input": "required name=search_term_string",
-      },
     }
     structured_data("GovernmentOrganization", data)
   end

@@ -124,19 +124,6 @@ describe StructuredDataHelper, type: "helper" do
         name: "Get Into Teaching",
       })
     end
-
-    it "includes search information" do
-      expect(data).to include({
-        potentialAction: {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "http://test.host/search?search[search]={search_term_string}",
-          },
-          "query-input": "required name=search_term_string",
-        },
-      })
-    end
   end
 
   describe ".logo_structured_data" do
