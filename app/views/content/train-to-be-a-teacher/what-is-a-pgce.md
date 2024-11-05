@@ -62,8 +62,6 @@ Getting a PGCE without QTS means you will not be qualified to teach in most prim
 
 If you get a PGCE without QTS you will also not be entitled to the same benefits during your training and career as QTS with PGCE. For example, better pay and support when you start teaching.
 
-[Read about Nathan who chose to get QTS with PGCE](/blog/salaried-teacher-training-classroom-learning).
-
 ## Benefits of having QTS with PGCE
 
 A PGCE can give you a better understanding of teaching practices, educational research and theory.

@@ -4,7 +4,7 @@ subcategory: Courses with a salary
 description: |-
     Explore salaried teacher training, including School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 related_content:
-    Nathan's experience of salaried teacher training: "/blog/salaried-teacher-training-classroom-learning"
+    Explore the benefits of teaching: "/life-as-a-teacher/pay-and-benefits"
     If you've worked as an unqualified teacher: "/train-to-be-a-teacher/assessment-only-route-to-qts"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
@@ -31,6 +31,11 @@ expander:
       </p>
       <p>
       You will also need a <a href="/non-uk-teachers/visas-for-non-uk-trainees">visa or immigration status</a> allowing you to work in the UK.</p>
+quote:
+  nathan:
+    text: "From the outset I was working within the school, learning and training in the classroom whilst being supported by qualified teachers and mentors. This gave me valuable experience of school life and a real feel for school."
+    name: "Nathan, salaried teacher trainee"
+    classes: quote--indent
 ---
 
 There are some teacher training courses that come with a salary. 
@@ -68,6 +73,8 @@ If you’re eligible for a bursary or scholarship, you could receive more money 
 ## How does salaried teacher training work? 
 
 Salaried teacher training is usually similar to non-salaried teacher training – you'll spend most of your time in school placements, with some theoretical learning. 
+
+$nathan$
 
 You will not perform more than 90% of a full-time teacher’s duties (unless you’re on a postgraduate teaching apprenticeship, in which case it’s 80%). 
 
