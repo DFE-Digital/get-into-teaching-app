@@ -312,11 +312,6 @@
 "static/images/content/blog/thumbnails/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
 
-"static/images/content/blog/brooke-harvey.jpg":
-  alt: "Brooke Harvey, a Canadian national who moved to England to teach, standing in front of a bookcase."
-  variants:
-    - "static/images/content/blog/thumbnails/brooke-harvey.jpg"
-
 "static/images/content/blog/thumbnails/stories-nathan.jpg":
   alt: "Nathan Sproule, teacher"
 
