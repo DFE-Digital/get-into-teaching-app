@@ -1,5 +1,24 @@
 require "rails_helper"
 
+describe "Google Tag Manager", type: :request do
+  include_context "with wizard data"
+
+  let(:event) { build(:event_api) }
+  let(:layout_paths) do
+    [
+      "/cookies",
+      "/steps-to-become-a-teacher",
+      "/ways_to_train",
+      "/welcome",
+      event_path(event.readable_id),
+      event_step_path(event.readable_id, :personal_details),
+      event_step_path(event.readable_id, :further_details),
+      events_path,
+      event_path(event.readable_id),
+      root_path,
+    ]
+  end
+
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event).with(event.readable_id) { event }
