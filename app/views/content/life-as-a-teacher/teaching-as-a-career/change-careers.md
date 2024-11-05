@@ -6,7 +6,6 @@ description: |-
 related_content:
     Train to be a teacher : "/train-to-be-a-teacher"
     Engineers teach physics teacher training courses : "/life-as-a-teacher/explore-subjects/engineers-teach-physics"
-    Transferring my skills to teaching: "/blog/transferring-my-skills-to-teaching"
     Fund your training if you're a parent or carer: "/funding-and-support/if-youre-a-parent-or-carer"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-career-changers

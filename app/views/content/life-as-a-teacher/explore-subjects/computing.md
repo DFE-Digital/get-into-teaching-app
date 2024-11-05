@@ -1,5 +1,6 @@
 ---
 title: Become a computing teacher
+subject: computing
 title_paragraph: |-
   <p>
   As a secondary computing teacher you'll help pupils become responsible and confident users of information and technology in an increasingly digital world.</p>
@@ -19,7 +20,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/explore-subjects/computing/header"
+  - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/computing/article"
-  - "content/life-as-a-teacher/explore-subjects/computing/adviser-promo-computing"
+  - "content/shared/subject-pages/adviser-promo"
 ---

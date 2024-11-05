@@ -12,7 +12,7 @@ backlink: /
 fullwidth: true
 navigation: 20.30
 navigation_title: Teaching internships
-navigation_description: Earn from $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
+navigation_description: Earn $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/train-to-be-a-teacher/teaching-internship-providers/listing
 

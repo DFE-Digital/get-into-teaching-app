@@ -31,8 +31,87 @@ module "application_configuration" {
   }
 }
 
+# Run database migrations
+# https://guides.rubyonrails.org/active_record_migrations.html#preparing-the-database
+# Terraform waits for this to complete before starting web_application and worker_application
+resource "kubernetes_job" "migrations" {
+  metadata {
+    name      = "${var.service_name}-${local.environment}-migrations"
+    namespace = var.namespace
+  }
+
+  spec {
+    template {
+      metadata {
+        labels = { app = "${var.service_name}-${local.environment}-migrations" }
+        annotations = {
+          "logit.io/send"        = "true"
+          "fluentbit.io/exclude" = "true"
+        }
+      }
+
+      spec {
+        container {
+          name    = "migrate"
+          image   = var.docker_image
+          command = ["bundle"]
+          args    = ["exec", "rails", "db:prepare"]
+
+          env_from {
+            config_map_ref {
+              name = module.application_configuration.kubernetes_config_map_name
+            }
+          }
+
+          env_from {
+            secret_ref {
+              name = module.application_configuration.kubernetes_secret_name
+            }
+          }
+
+          resources {
+            requests = {
+              cpu    = module.cluster_data.configuration_map.cpu_min
+              memory = "1Gi"
+            }
+            limits = {
+              cpu    = 1
+              memory = "1Gi"
+            }
+          }
+
+          security_context {
+            allow_privilege_escalation = false
+
+            seccomp_profile {
+              type = "RuntimeDefault"
+            }
+
+            capabilities {
+              drop = ["ALL"]
+              add  = ["NET_BIND_SERVICE"]
+            }
+          }
+        }
+
+        restart_policy = "Never"
+      }
+    }
+
+    backoff_limit = 1
+  }
+
+  wait_for_completion = true
+
+  timeouts {
+    create = "11m"
+    update = "11m"
+  }
+}
+
 module "web_application" {
   source = "./vendor/modules/aks//aks/application"
+  depends_on = [kubernetes_job.migrations]
 
   is_web = true
 
@@ -56,6 +135,8 @@ module "web_application" {
 
 module "worker_application" {
   source                     = "./vendor/modules/aks//aks/application"
+  depends_on = [kubernetes_job.migrations]
+
   name                       = "worker"
   is_web                     = false
   namespace                  = var.namespace
