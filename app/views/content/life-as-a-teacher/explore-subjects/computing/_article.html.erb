@@ -2,20 +2,24 @@
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Why teach computing</h2>
     <p>You'll inspire pupils to access new fields and teach them transferable skills that will open lots of sectors, from engineering to healthcare, and could lead to careers such as software engineering and web design.</p>
-    <p>Computing focuses on 3 areas:</p>
-    <ul>
-      <li>information and communication technology</li>
-      <li>digital literacy</li>
-      <li>computer science</li>
-    </ul>
+    <%= render 'content/shared/teaching/benefits' %>
   </section>
 
   <section class="col col-720">
-    <%= render Content::QuoteComponent.new(
-      text: "Every lesson presents an opportunity to delve into the latest advancements in the field and inspire students to become innovators. Teaching computing is about fostering a deep understanding of technology while enabling students to develop the skills and resilience to thrive in this digital age.",
-      name: "Shiulee, Curriculum lead for computing and business",
-      large: true
-    ) %>
+    <%= render 'content/shared/quotes/quote_progression_chris' %>
+  </section>
+
+  <section class="col col-720 col-space-l-top">
+    <h2 class="heading--box-blue">Shape your pupils' futures</h2>
+    <div class="inset">
+      <p>Teaching computing opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from cybersecurity and programming, to data analysis and teaching.</p>
+      <p>By solving challenging problems, your pupils could make significant contributions to these impactful areas.</p>
+      <p>Your pupils will learn more from you than you might think. As their teacher, you’ll guide your pupils though the skills they need to show their understanding of computing. You'll teach them valuable life skills such as critical thinking, decision making and problem solving.</p>
+    </div>
+  </section>
+
+  <section class="col col-720">
+    <%= render 'content/shared/quotes/quote_computing_shiulee' %>
   </section>
 
   <section class="col col-720">
@@ -32,10 +36,7 @@
       <li>online safety </li>
     </ul>
     <p>When you're teaching key stage 3 you could use interactive exercises during your lessons, like creating a robot car.</p>
-    <p><a href="https://www.thenational.academy/teachers/programmes/computing-secondary-ks3-l/units">Explore what teaching a key stage 3 computing lesson would be like</a>.</p>
-  </section>
-
-  <section class="col col-720">
+    <p>Explore what teaching a key stage 3 computing lesson would be like at the <a href="https://www.thenational.academy/teachers/programmes/computing-secondary-ks3-l/units">Oak National Academy website</a>.</p>
     <p>Themes you'll cover when you teach 14 to 16 year olds (key stage 4) include:</p>
     <ul>
       <li>computational thinking</li>
@@ -46,10 +47,7 @@
       <li>digital technology</li>
     </ul>
     <p>When you're teaching key stage 4 you'll teach pupils ways to protect their online privacy and identity.</p>
-    <p><a href="https://www.thenational.academy/teachers/programmes/computing-secondary-ks4-l/units">Explore what teaching a key stage 4 computing lesson would be like</a>.</p>
-  </section>
-
-  <section class="col col-720">
+    <p>Explore what teaching a key stage 4 computing lesson would be like at the <a href="https://www.thenational.academy/teachers/programmes/computing-secondary-ks4-l/units">Oak National Academy website</a>.</p>
     <p>Themes you'll cover when you teach 16 to 18 year olds (key stage 5) include:</p>
     <ul>
       <li>abstraction</li>
@@ -62,57 +60,26 @@
     <p>When you're teaching key stage 5 you'll help pupils to develop websites and prepare them for further learning or employment.</p>
   </section>
 
-  <section class="col col-720">
-    <%= render Content::QuoteComponent.new(
-      text: "People may not realise how much potential there is for progression in teaching. They think they go into the world of the classroom and that’s it. Lots of teachers have added responsibilities they enjoy doing and find fulfilling.",
-      name: "Chris Farr, teacher training adviser",
-      large: true
-    ) %>
+  <section class="col col-space-m col-720">
+    <h2 class="heading--box-blue">Start your journey into teaching computing</h2>
+    <%= render 'content/shared/qualifications-training/check_qualifcations' %>
+     <p>Computing teacher training courses have had successful applications from candidates with a range of degrees, including business and management, data science, history and economics.</p>
+      <%= render 'content/shared/qualifications-training/find_out_more' %>
+    <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
   </section>
 
   <section class="col col-space-m col-720">
-    <h2 class="heading--box-blue">Start your journey into teaching</h2>
-    <h3>Check your qualifications</h3>
-    <p>To train to teach in secondary schools in England, you’ll need:</p>
-    <ul>
-      <li>GCSEs at grade 4 (C) or above in English and maths</li>
-      <li>a bachelor’s degree in any subject</li>
-    </ul>
-    <p>Computing teacher training courses have had successful applications from candidates with a range of degrees, including business and management, data science, history and economics.</p>
-    <p>Find out more about what <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">qualifications you need to train to teach</a>.</p>
-    <%= render Content::ExpanderComponent.new(
-      title: "check your qualifications",
-      text: "If you have qualifications from outside the UK, you'll need to show that they meet the standards set for teacher training in England.",
-      link_title: "You can get help comparing English and international qualifications.",
-      link_url: "/non-uk-teachers/non-uk-qualifications",
-    ) %>
-  </section>
-
-  <section class="col col-space-m col-720">
-    <h3>Subject knowledge enhancement course (SKE)</h3>
-    <p>If your training provider thinks you need to top up your computing knowledge, you might need to do an <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">SKE course</a> before you start your teacher training.</p>
+    <%= render 'content/shared/qualifications-training/subject_knowledge' %>
   </section>
 
   <section class="col col-space-m col-720">
     <h3>Fund your teacher training</h3>
-    <p><a href="/funding-and-support/scholarships-and-bursaries">Tax-free bursaries of <%= v :bursaries_postgraduate_computing %> or scholarships of <%= v :scholarships_computing %></a> are available for eligible trainee computing teachers.</p>
-    <p>You can get a bursary or scholarship alongside a tuition fee loan and maintenance loan.</p>
-    <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
-    <ul>
-      <li>a parent or carer</li>
-      <li>disabled</li>
-    </ul>
-    <%= render Content::ExpanderComponent.new(
-      title: "funding your training",
-      text: "If you do not have <a href=\"https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk\">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for funding.",
-      link_title: "Find out more about fees and financial support for non-UK trainee teachers.",
-      link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
-    ) %>
+    <%= render 'content/shared/teaching/bursary_scholarship' %>
+    <%= render 'content/shared/teaching/funding_support' %>
   </section>
 
   <section class="col col-space-m col-720">
-    <h3>Paid internship</h3>
-    <p>If you're currently doing an undergraduate or master's degree and are interested in teaching computing, you could apply for a <a href="/train-to-be-a-teacher/teaching-internships">paid teaching internship</a>.</p>
-    <p>The 3-week programme could help you to understand what it's really like in the classroom and get a feel for school life.</p>
+     <%= render 'content/shared/qualifications-training/paid_internships' %>
+    <%= render 'content/shared/teaching/ect_support' %>
   </section>
 </div>
