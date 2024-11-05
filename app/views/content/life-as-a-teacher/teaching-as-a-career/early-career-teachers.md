@@ -5,7 +5,7 @@ description: |-
   Find out about the support early career teachers get when they start teaching, including mentor support and training based on the early career framework (ECF).
 related_content:
     Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
-    Managing behaviour in the classroom : "/blog/managing-behaviour-in-the-classroom"
+    Explore the benefits of teaching : "/life-as-a-teacher/pay-and-benefits"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-ect
 ---
