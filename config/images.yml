@@ -245,11 +245,6 @@
   variants:
     - "static/images/content/blog/thumbnails/interview.jpg"
 
-"static/images/content/blog/mel-oconnor.jpg":
-  alt: "Trainee teacher Mel O'Connor taking a PGDE teacher training course in maths."
-  variants:
-    - "static/images/content/blog/thumbnails/mel-oconnor.jpg"
-
 "static/images/content/blog/mel-stta-screen.jpg":
   alt: "Conference room with tables and a projector for a Sheffield Teacher Training Alliance PGDE course."
   variants:
