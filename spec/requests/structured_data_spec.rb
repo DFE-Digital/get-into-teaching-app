@@ -35,7 +35,7 @@ describe "Google Structured Data", type: :request do
   end
 
   context "when viewing a page" do
-    let(:path) { root_path }
+    let(:path) { "/train-to-be-a-teacher" }
 
     before { get path }
 
@@ -47,7 +47,7 @@ describe "Google Structured Data", type: :request do
 
     before { get path }
 
-    it { is_expected.to include(a_hash_including("@type": "WebSite")) }
+    it { is_expected.to include(a_hash_including("@type": "Organization")) }
   end
 
   context "when not viewing the home page" do
