@@ -1,5 +1,6 @@
 ---
 title: Engineers teach physics
+subject: physics
 title_paragraph: |-
   <p>
   If you're an engineer or material scientist, an engineers teach physics initial teacher training course could be a great start to your teaching journey.
@@ -24,7 +25,8 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/explore-subjects/engineers-teach-physics/header"
+  - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/engineers-teach-physics/article"
 ---
+
 

@@ -3,16 +3,11 @@
     <h2 class="heading--box-blue">Engineering the future</h2>
     <p>Engineers and physicists help find solutions to some of our biggest problems. From climate change to next generation prosthetics, we need their problem-solving skills and creative thinking to help us survive some of the biggest challenges humanity has ever faced.</p>
     <p>The more great physics teachers we have in the classroom today, the more children will grow up inspired to become the physicists, engineers and physics teachers of tomorrow.</p>
+    <%= render 'content/shared/teaching/benefits' %>
   </section>
 
   <section class="col col-720">
-    <%= render Content::QuoteComponent.new(
-      text: "My engineering degree provided a natural transition to teaching physics and
-        I value the way science – especially physics – teaches a clear thought process
-        and a way to make rational sense of the world.",
-      name: "Roger, physics teacher",
-      large: false
-    ) %>
+    <%= render 'content/shared/quotes/quote_engineers_teach_physics_roger' %>
   </section>
 
   <section class="col col-720">
@@ -31,12 +26,8 @@
 
     <p><a href="https://find-teacher-training-courses.service.gov.uk/results?engineers_teach_physics=true&study_type%5B%5D=full_time&study_type%5B%5D=part_time&qualification%5B%5D=qts&qualification%5B%5D=pgce_with_qts&qualification%5B%5D=pgce+pgde&degree_required=two_two&applications_open=false&applications_open=true&l=2&subjects%5B%5D=F3">Find engineers teach physics teacher training courses</a>.
      </p>
-
-    <%= render Content::QuoteComponent.new(
-      text: "I've found the skills I learnt in engineering have stood me in good stead for a teaching career. I have never regretted my decision to go into this profession. ",
-      name: "Chris, physics teacher",
-      large: false
-    ) %>
+    <p>You can also <a href="https://find-teacher-training-courses.service.gov.uk/">search for physics teacher training courses</a> that are not part of the Engineers teach physics training programme.</p>
+    <%= render 'content/shared/quotes/quote_engineers_teach_physics_chris_physics' %>
   </section>
 
   <section class="col col-720">
@@ -64,15 +55,12 @@
   </section>
 
   <section class="col col-720 col-space-m">
-    <h3>Fund your teacher training</h3>
-    <p>Scholarships of <%= v :scholarships_physics %> or bursaries of <%= v :bursaries_postgraduate_physics %> are available for eligible trainee physics teachers.</p>
-    <p><a href="/funding-and-support/scholarships-and-bursaries">Find out about your eligibility for bursaries and scholarships</a>.</p>
-    <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
-    <ul>
-      <li>a parent or carer</li>
-      <li>disabled</li>
-    </ul>
-    <p>You can also <a href="https://find-teacher-training-courses.service.gov.uk/">search for physics teacher training courses</a> that are not part of the Engineers teach physics training programme.
-    </p>
+  <h3>Fund your teacher training</h3>
+    <!-- Bursaries and Scholarships -->
+    <%= render 'content/shared/teaching/bursary_scholarship' %>
+    <!-- Funding and Support -->
+    <%= render 'content/shared/teaching/funding_support' %>
+        <p>You can also <a href="https://find-teacher-training-courses.service.gov.uk/">search for physics teacher training courses</a> that are not part of the Engineers teach physics training programme.</p>
+
   </section>
 </div>
