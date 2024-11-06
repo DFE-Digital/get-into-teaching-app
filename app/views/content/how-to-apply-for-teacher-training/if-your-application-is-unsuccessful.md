@@ -43,11 +43,6 @@ It’s worth looking at the feedback the course provider has given to understand
 
 There could be a number of reasons your application was unsuccessful:
 
-
-### The course is full
-
-Unfortunately, popular courses do fill up quickly. You can [find another course](https://find-teacher-training-courses.service.gov.uk/) with a different provider if the one you applied for is now full.
-
 ### You do not have the GCSEs at minimum grade 4 (C), or equivalent
 
 To train to teach in primary and secondary schools in England, you’ll need:
@@ -73,6 +68,10 @@ You may be able to do a subject knowledge enhancement (SKE) course to top up you
 ### Lack of teaching or safeguarding knowledge
 
 It may help to [get some school experience](/train-to-be-a-teacher/get-school-experience) so you can find out what it’s like to be a teacher and improve your knowledge and skills.
+
+### The course is full
+
+Unfortunately, popular courses do fill up quickly. You can [find another course](https://find-teacher-training-courses.service.gov.uk/) with a different provider if the one you applied for is now full.
 
 ### No visa sponsorship
 
