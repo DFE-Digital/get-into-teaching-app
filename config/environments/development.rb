@@ -65,6 +65,7 @@ Rails.application.configure do
   config.x.structured_data.blog_posting = true
   config.x.structured_data.web_site = true
   config.x.structured_data.organization = true
+  config.x.structured_data.government_organization = true
   config.x.structured_data.breadcrumb_list = true
   config.x.structured_data.event = true
 
