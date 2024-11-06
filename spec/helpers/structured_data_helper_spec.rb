@@ -6,6 +6,7 @@ describe StructuredDataHelper, type: "helper" do
   include ApplicationHelper
 
   let(:image_path) { "static/images/getintoteachinglogo.svg" }
+  let(:image_path_logo_blue) { "static/images/logo/teaching_blue_background.svg" }
 
   describe ".structured_data" do
     subject(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
@@ -120,7 +121,7 @@ describe StructuredDataHelper, type: "helper" do
     it "includes site information" do
       expect(data).to include({
         "@type": "GovernmentOrganization",
-        url: "https://getintoteaching.education.gov.uk/",
+        url: root_url,
         name: "Get Into Teaching",
       })
     end
@@ -143,7 +144,7 @@ describe StructuredDataHelper, type: "helper" do
       expect(data).to include({
         "@type": "Organization",
         url: root_url,
-        logo: asset_pack_url("static/images/logo/teaching_blue_background.svg"),
+        logo: asset_pack_url(image_path_logo_blue),
       })
     end
   end

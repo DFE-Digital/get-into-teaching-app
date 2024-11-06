@@ -42,7 +42,7 @@ module StructuredDataHelper
     data = {
       "@context": "https://schema.org",
       "@type": "GovernmentOrganization",
-      "url": "https://getintoteaching.education.gov.uk/",
+      "url": root_url,
       "name": "Get Into Teaching",
       "description": "Get Into Teaching is the official UK government service that provides comprehensive information and support for individuals considering a teaching career at primary or secondary level. It offers guidance on the qualifications needed, the routes into becoming a primary or secondary school teacher, funding options, and access to one-to-one advice. Get Into Teaching aims to help people become teachers by outlining the steps involved in training and certification, while promoting teaching as a rewarding career.",
       "alternateName": "GIT",
