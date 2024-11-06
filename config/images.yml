@@ -288,11 +288,6 @@
   alt: ""
   variants:
     - "static/images/content/blog/thumbnails/whiteboard.jpg"
-
-"static/images/content/blog/ian-wallace.jpg":
-  alt: "Science teacher and career changer, Ian Wallace"
-  variants:
-    - "static/images/content/blog/thumbnails/ian-wallace.jpg"
   
 "static/images/content/blog/thumbnails/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
