@@ -58,7 +58,6 @@ module StructuredDataHelper
         "https://x.com/getintoteaching",
         "https://www.youtube.com/user/getintoteaching",
       ],
-      "email": "getintoteaching.helpdesk@service.education.gov.uk",
     }
 
     structured_data("GovernmentOrganization", data)
