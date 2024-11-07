@@ -69,13 +69,13 @@ You may be able to do a subject knowledge enhancement (SKE) course to top up you
 
 It may help to [get some school experience](/train-to-be-a-teacher/get-school-experience) so you can find out what it’s like to be a teacher and improve your knowledge and skills.
 
-### The course is full
-
-Unfortunately, popular courses do fill up quickly. You can [find another course](https://find-teacher-training-courses.service.gov.uk/) with a different provider if the one you applied for is now full.
-
 ### No visa sponsorship
 
 Find out more about [how visa sponsorships work](/non-uk-teachers/train-to-teach-in-england-as-an-international-student) if you want to train to teach in the UK. You may also find another training provider that will sponsor a visa by searching for courses and then filtering by ‘Only show courses with visa sponsorship’.
+
+### The course is full
+
+Unfortunately, popular courses do fill up quickly. You can [find another course](https://find-teacher-training-courses.service.gov.uk/) with a different provider if the one you applied for is now full.
 
 ## Get advice on what to do next
 
