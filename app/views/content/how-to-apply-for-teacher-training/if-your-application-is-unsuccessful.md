@@ -49,7 +49,7 @@ To train to teach in primary and secondary schools in England, you’ll need:
 
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 
-You could [find another course](https://find-teacher-training-courses.service.gov.uk/) with a training provider that will accept an equivalency test. You can also take your GCSE exams at any age if you do not have them or you can retake them to improve your grades. You can do this through a [GCSE training provider](https://nationalcareers.service.gov.uk/find-a-course/search). Make sure when you visit the website, you search for GCSE courses.
+You could [find another course](https://find-teacher-training-courses.service.gov.uk/) with a training provider that will accept an equivalency test. You can also take your GCSE exams at any age if you do not have them or you can retake them to improve your grades. You can [search for GCSE courses on the National Careers Service website](https://nationalcareers.service.gov.uk/find-a-course/search).
 
 ### You do not have a bachelor’s degree or equivalent
 
