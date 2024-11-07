@@ -46,6 +46,8 @@ A bursary is paid over a minimum of 10 months by your teacher training provider 
 
 You will not need to pay tax or National Insurance on bursary payments. 
 
+You do not have to pay a bursary back.
+
 ### How to get a bursary
 
 You do not need to apply for a bursary. When you apply for teacher training, your provider will check if you're eligible for a bursary. If you are, your provider will confirm this in writing before you start your course. 
@@ -69,6 +71,8 @@ Scholarships offer more than just financial benefits. For example, they can prov
 A scholarship is paid over a minimum of 10 months by your teacher training provider across the duration of your course. They will confirm when you will get the payments. 
 
 You will not need to pay tax or National Insurance on scholarship payments. 
+
+You do not have to pay a scholarship back.
 
 ### How to apply for a scholarship
 
