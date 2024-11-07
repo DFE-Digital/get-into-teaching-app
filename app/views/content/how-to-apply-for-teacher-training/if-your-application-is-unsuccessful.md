@@ -43,7 +43,7 @@ It’s worth looking at the feedback the course provider has given to understand
 
 There could be a number of reasons your application was unsuccessful:
 
-### You do not have the GCSEs at minimum grade 4 (C), or equivalent
+### You do not have the required GCSEs at minimum grade 4 (C), or equivalent
 
 To train to teach in primary and secondary schools in England, you’ll need:
 
