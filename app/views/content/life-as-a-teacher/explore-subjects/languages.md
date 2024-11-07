@@ -1,5 +1,6 @@
 ---
 title: Become a languages teacher
+subject: languages
 title_paragraph: |-
   <p>
   Learning a language teaches pupils more than just grammar and vocabulary. As a languages teacher, you'll help pupils gain a greater appreciation and understanding of the world.</p>
@@ -22,7 +23,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/explore-subjects/languages/header"
+  - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/languages/article"
-  - "content/life-as-a-teacher/explore-subjects/languages/adviser-promo-languages"
+  - "content/shared/subject-pages/adviser-promo"
 ---
