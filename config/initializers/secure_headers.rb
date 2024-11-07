@@ -92,8 +92,9 @@ SecureHeaders::Configuration.override(:api) do |config|
 end
 
 SecureHeaders::Configuration.override(:chat) do |config|
-  config.csp[:default_src] << "*.niceincontact.com ws: wss:"
-  config.csp[:connect_src] << "*.niceincontact.com ws: wss:"
+  webchat = %w[*.niceincontact.com ws: wss: ye3ijnvr9l.execute-api.eu-west-2.amazonaws.com/Production tpdfe.satmetrix.com/npxapi/conversation/v1.0/reply tpdfe.satmetrix.com/npxapi/conversation/v1.0/initiate tpdfe.satmetrix.com/npxapi/outcast/v1.0/survey/rules]
+  config.csp[:default_src] += webchat
+  config.csp[:connect_src] += webchat
   config.csp[:connect_src] << ENV["CHAT_AVAILABILITY_API"]
 end
 
