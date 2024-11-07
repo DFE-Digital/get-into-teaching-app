@@ -25,7 +25,7 @@ class FundingWidgetComponent < ViewComponent::Base
   end
 
   def funding_results
-    subject_data&.fetch(:funding, "")
+    subject_data.fetch(:funding, "").html_safe
   end
 
   def next_steps
