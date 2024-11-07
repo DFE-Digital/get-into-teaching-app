@@ -76,13 +76,13 @@ You do not have to pay a scholarship back.
 
 ### How to apply for a scholarship
 
-You need to apply directly to the scholarship provider. Each provider sets their own application deadline and will confirm if you meet their eligibility requirements. You can out find about how to apply, deadlines and more details about each scholarship on the scholarship providers' websites:
+You need to apply directly to the scholarship provider. Each provider sets their own application deadline and will confirm if you meet their eligibility requirements. You can out find about how to apply, deadlines and more details about each scholarship on the scholarship providers'website:
 
-* [the Royal Society of Chemistry](https://www.rsc.org/prizes-funding/funding/find-funding/teacher-training-scholarships/) (chemistry)
-* [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
-* [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
-* [the Institute of Mathematics and its Applications, and partners](https://teachingmathsscholars.org/home) (maths)
-* [the Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
+* [Royal Society of Chemistry website](https://www.rsc.org/prizes-funding/funding/find-funding/teacher-training-scholarships/) (chemistry)
+* [BCS The Chartered Institute for IT website](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
+* [British Council website](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
+* [Institute of Mathematics and its Applications, and partners website](https://teachingmathsscholars.org/home) (maths)
+* [Institute of Physics website](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
 
 ## Compare bursaries and scholarships
 
