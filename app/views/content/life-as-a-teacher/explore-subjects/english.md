@@ -5,7 +5,7 @@ title_paragraph: |-
   <p>
   Teaching English is more than just reading and writing. It's opening  doors to new worlds and perspectives. You'll encourage a passion for language and a love of creativity, helping shape the voices of the future. </p>
   <p>
-  Tax-free bursaries of $bursaries_postgraduate_english$ or scholarships of $scholarships_english$ are available for eligible trainee English teachers.</p>
+  Tax-free bursaries of $bursaries_postgraduate_english$ are available for eligible trainee English teachers.</p>
 description: |-
     Find out how to become a English teacher, including what you'll teach and what funding is available to help you train.
 layout: "layouts/minimal"
