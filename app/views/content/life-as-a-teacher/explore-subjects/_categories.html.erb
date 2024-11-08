@@ -39,6 +39,12 @@
               description: "Help pupils to explore cultures around the world through learning a language. There's a wide range of languages you could teach, like French, Mandarin, Spanish or ancient Greek.",
               path: "/life-as-a-teacher/explore-subjects/languages",
             )) %>
+            <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "History",
+              description: "As a history teacher you'll bring the past back to life and inspire pupils to become critical thinkers. ",
+              path: "/life-as-a-teacher/explore-subjects/history",
+            )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
               title: "Maths",
