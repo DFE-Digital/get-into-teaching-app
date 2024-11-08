@@ -10,7 +10,7 @@ description: |-
     Explore what's involved in becoming a geography teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/hero-images/teacher2.jpg"
+image: "static/images/content/hero-images/geography.jpg"
 keywords:
   - geography
   - teaching geography
