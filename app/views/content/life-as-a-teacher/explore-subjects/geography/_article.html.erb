@@ -1,74 +1,72 @@
 <div class="row inset">
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Why teach geography</h2>
-      <p> Maths is critical to science, technology and engineering as well as being fundamental for most jobs.</p>
-      <p>A good understanding of maths can help children develop life skills such as cooking, managing a budget and problem solving.</p>
-      <!-- Why teach: benefits -->
+      <p> As a geography teacher, you'll inspire pupils to find their passion for exploring the globe. From urban development and economies to tectonics and weather, you'll develop their understanding of the world we live in and equip them with the skills to tackle the problems of tomorrow.</p>
       <%= render 'content/shared/teaching/benefits' %>
   </section>
 
   <section class="col col-720">
-    <%= render 'content/shared/quotes/quote_maths_rotna' %>
-    </section>
+   <%= render 'content/shared/quotes/quote_progression_chris' %>
+  </section>
+
 
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Shape your pupils' futures</h2>
     <div class="inset">
-      <p>Teaching maths opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from statistics and accountancy, to data science and programming.</p>
-      <p>By solving challenging problems, your pupils could make significant contributions to these impactful areas.</p>
-      <p>Your pupils will learn more from you than you might think. As their teacher, you’ll guide your pupils though the skills they need to show their understanding of maths. You'll teach them valuable life skills such as critical thinking, decision making and problem solving.</p>
+      <p>Teaching geography opens up a huge range of opportunities for pupils' careers. From urban planners and buisness analysts to cartographers and climatologists, the career options after studying geography are incredibly diverse.</p>
+      <p>Your pupils will learn more from you than you might think. As their teacher, you will guide them through the skills they need to show their understanding of both human and physical geography. You will teach them practical skills from map reading and data collection, to critical thinking  and problem solving.</p>
     </div>
    </section>
 
     <section class="col col-720">
-   <%= render 'content/shared/quotes/quote_maths_dimitra' %>
+   <%= render 'content/shared/quotes/quote_geography_jon' %>
   </section>
 
   <section class="col col-720">
     <h2 class="heading--box-blue">What you'll teach</h2>
-    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study">national curriculum for <%= @front_matter["subject"] %></a>.</p>
-    <p>Themes you'll cover when you teach 11 to 16 year olds (key stage 3 and 4) include:</p>
+    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-geography-programmes-of-study/national-curriculum-in-england-geography-programmes-of-study">national curriculum for geography</a>.</p>
+    <p>Throughout key stage 3 pupils will gain a curiosity about the world through studying a diverse range of people and places.</p>
+    <p>Skills you’ll cover when you teach 11 to 14 year olds (key stage 3) include:</p>
     <ul>
-      <li>numbers</li>
-      <li>algebra</li>
-      <li>ratio, proportion and rates of change</li>
-      <li>geometry and measures</li>
-      <li>probability and statistics</li>
+      <li>consolidating knowledge of the world's major countries</li>
+      <li>understanding geographical similarities and differences between locations</li>
+      <li>exploring physical geography such as rocks, weathering and climate</li>
+      <li>investigating human geography such as population, urban development and economy</li>
+      <li>understanding how human and physical processes can change landscapes</li>
+      <li>building on skills using maps, globes and aerial photographs</li>
     </ul>
-    <p>When you're teaching key stages 3 and 4 you can use interactive games with conkers and dice to help your pupils understand algebra and probability.</p>
-    <p>Explore what teaching a key stage 3 maths lesson would be like at the <a href="https://www.thenational.academy/teachers/programmes/maths-secondary-ks3-l/units">Oak National Academy website</a>.</p>
-    <p>Themes you'll cover when you teach 16 to 18 year olds (key stage 5) include:</p>
+      <p> In key stage 4 (14 to 16 years olds) you will help pupils demonstrate skills in:</p>
     <ul>
-      <li>analysis of data</li>
-      <li>maths for personal finance</li>
-      <li>estimation</li>
-      <li>critical analysis of given data and models</li>
+      <li>recognising links between places and environments </li>
+      <li>using maps, atlases and other materials to present geographical information</li>
+      <li>engaging in fieldwork in two contrasting environments</li>
+      <li>analysing primary and secondary data</li>
+      <li>understanding how geology, climate and human activity have shaped the UK's landcscape</li>
+      <li>planning an independent enquiry</li>
+    </ul>
+    <p>Explore what teaching key stage 3 and 4 geography would be like at the <a href="https://www.thenational.academy/teachers/curriculum/geography-secondary-aqa/units">Oak National Academy website</a>.</p>
+    <p>At A level and AS level (key stage 5), you’ll help pupils develop a deeper knowledge and understanding of:</p>
+    <ul>
+      <li>fieldwork skills</li>
+      <li>analysing data</li>
+      <li>economic and social changes</li>
+      <li>dynamic environments</li>
     </ul>
     <%= render 'content/shared/teaching/ages_abilities' %>
   </section>
 
   <section class="col col-space-m col-720">
-    <h2 class="heading--box-blue">Start your journey into teaching maths</h2>
+    <h2 class="heading--box-blue">Start your journey into teaching geography</h2>
      <%= render 'content/shared/qualifications-training/check_qualifcations' %>
-    <p><p><%= @front_matter ["subject"].titleize %> teacher training courses have had successful applications from candidates with a range of degrees, including psychology, music, architecture and law.</p>
+    <p>Geography teacher training courses have had successful applications from candidates with a range of degrees, including environmental sciences, history, psychology, and politics.</p>
     <p>Find out more about what <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">qualifications you need to train to teach</a>.</p>
      <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
   </section>
 
   <section class="col col-space-m col-720">
-    <%= render 'content/shared/qualifications-training/subject_knowledge' %>
-  </section>
-
-  <section class="col col-space-m col-720">
     <h3>Fund your teacher training</h3>
-    <!-- Bursaries and Scholarships -->
-    <%= render 'content/shared/teaching/bursary_scholarship' %>
-    <!-- Funding and Support -->
+    <%= render 'content/shared/teaching/bursary_only' %>
     <%= render 'content/shared/teaching/funding_support' %>
-  </section>
-
-  <section class="col col-space-m col-720">
-    <%= render 'content/shared/qualifications-training/paid_internships' %>
   </section>
 
   <section class="col col-720">
