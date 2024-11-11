@@ -1,31 +1,18 @@
 <div class="row">
   <section class="category col-space-m">
     <section class="container category__cards main-section">
-      <div class="inset">
-        <p>Teachers come from lots of different backgrounds and have often worked in previous careers before becoming teachers.</p>
-        <p>The skills and experiences you bring from previous careers are invaluable in the classroom. From communication and public speaking, to problem solving and people management, your students will learn more from you than you might think.</p>
-        <p>So if you're interested in changing careers to become a teacher, there's lots of support available to help you find your route into teaching.</p>
-        <p>Explore the pages in this section to find out more about changing careers to become a teacher in England.</p>
-        <%= render Content::InsetTextComponent.new(
-    header: "Non-UK citizens:",
-    text: "<p>Find information if you're a <a href=\"/non-uk-teachers\">non-UK citizen interested in teaching in England</a>.</p>",
-    color: "purple"
-  ) %>
-      </div>
-    </section>
-    <section class="container category__cards main-section">
       <nav class="category__nav-cards">
         <ul>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
-              title: "Get support with changing careers to teaching",
-              description: "Explore the support available for career changers.",
+              title: "Support with changing careers to teaching",
+              description: "Discover the support and resources available to help you transition smoothly into a rewarding teaching career.",
               path: "/life-as-a-teacher/change-careers/support-with-changing-careers"
             )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
-              title: "The benefits of changing careers to teaching",
-              description: "Benefits.",
+              title: "Benefits of changing careers to teaching",
+              description: "Learn about the benefits of changing careers to teaching. From competitive salaries and job security, to makinga  real differnce in young people's lives.",
               path: "/life-as-a-teacher/change-careers/benefits-of-changing-careers"
             )) %>          
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
