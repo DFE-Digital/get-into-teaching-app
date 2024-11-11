@@ -6,7 +6,6 @@ description: |-
   Learn about the career progression in teaching, and the support available for early career teachers.
 navigation: 40.10
 layout: "layouts/minimal"
-talk_to_us: true
 backlink: "../"
 content:
   - content/life-as-a-teacher/header

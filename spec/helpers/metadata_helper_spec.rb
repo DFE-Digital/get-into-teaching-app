@@ -28,17 +28,17 @@ describe MetadataHelper, type: "helper" do
     end
 
     it "returns image/alt meta tags when given an image_path" do
-      tags = image_meta_tags(image_path: "static/images/content/blog/fellowship.jpg")
+      tags = image_meta_tags(image_path: "static/images/content/hero-images/teacher2.jpg")
 
       expect(tags).to include(
         <<~HTML.chomp,
-          <meta name="og:image" content="/packs-test/v1/static/images/content/blog/fellowship-14188f7670a9c10bf6d3.jpg">
+          <meta name="og:image" content="/packs-test/v1/static/images/content/hero-images/teacher2-e8f0d711e6d72e7ee752.jpg">
         HTML
       )
 
       expect(tags).to include(
         <<~HTML.chomp,
-          <meta name="og:image:alt" content="Teachers Mike and Phil play on a children&#39;s climbing frame in a playground">
+          <meta name="og:image:alt" content="A teacher listening to a group of students">
         HTML
       )
     end

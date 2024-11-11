@@ -12,7 +12,7 @@ backlink: /
 fullwidth: true
 navigation: 20.30
 navigation_title: Teaching internships
-navigation_description: Earn from $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
+navigation_description: Earn $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/train-to-be-a-teacher/teaching-internship-providers/listing
 
@@ -179,7 +179,7 @@ provider_groups:
         name: "Claire Hickling"
         email: "c.hickling@niot.org.uk"
       - header: "LETTA (London East Teacher Training Alliance)"
-        link: "https://letta.org.uk/"
+        link: "https://train.letta.org.uk/teachinginternships/"
         applications: "Open November"
         subjects: "maths, physics"
         areas: "Tower Hamlets, Newham, Hackney"
@@ -200,7 +200,7 @@ provider_groups:
         name: "Lianne Tomaszewska"
         email: "lianne.tomaszewska@paddington-academy.org"
       - header: "Reach Academy Feltham"
-        link: "https://www.reachtraining.org/teaching-internships"
+        link: "https://reachteachertraining.com/internships/"
         applications: "Open November"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Hounslow"

@@ -6,7 +6,6 @@ description: |-
 related_content:
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Prepare for your teacher training interview: "/how-to-apply-for-teacher-training/teacher-training-interview"
-    My first week as a trainee teacher: "/blog/my-first-week-as-a-trainee-teacher"
 navigation: 30.10
 navigation_title: Teacher training personal statement
 navigation_description: Find out what to include in your teacher training personal statement.

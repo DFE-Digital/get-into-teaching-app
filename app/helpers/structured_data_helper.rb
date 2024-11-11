@@ -38,27 +38,35 @@ module StructuredDataHelper
     structured_data("BlogPosting", data)
   end
 
-  def home_structured_data
+  def government_organization_structured_data
     data = {
-      name: "Get Into Teaching",
-      url: root_url,
-      potentialAction: {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": CGI.unescape(search_url(search: { search: "{search_term_string}" })),
-        },
-        "query-input": "required name=search_term_string",
+      "@context": "https://schema.org",
+      "@type": "GovernmentOrganization",
+      "url": root_url,
+      "name": "Get Into Teaching",
+      "description": "Get Into Teaching is the official UK government service that provides comprehensive information and support for individuals considering a teaching career at primary or secondary level. It offers guidance on the qualifications needed, the routes into becoming a primary or secondary school teacher, funding options, and access to one-to-one advice. Get Into Teaching aims to help people become teachers by outlining the steps involved in training and certification, while promoting teaching as a rewarding career.",
+      "alternateName": "GIT",
+      "logo": "https://getintoteaching.education.gov.uk/packs/v1/static/images/logo/teaching_blue_background-b1b9e8f9c3c482b7f3d7.svg",
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "sameAs": "https://www.gov.uk/government/organisations/department-for-education",
       },
+      "sameAs": [
+        "https://www.facebook.com/getintoteaching",
+        "https://www.instagram.com/get_into_teaching/",
+        "https://www.linkedin.com/company/get-into-teaching/",
+        "https://x.com/getintoteaching",
+        "https://www.youtube.com/user/getintoteaching",
+      ],
     }
 
-    structured_data("WebSite", data)
+    structured_data("GovernmentOrganization", data)
   end
 
   def logo_structured_data
     data = {
       url: root_url,
-      logo: asset_pack_url("static/images/getintoteachinglogo.svg"),
+      logo: asset_pack_url("static/images/logo/teaching_blue_background.svg"),
     }
 
     structured_data("Organization", data)

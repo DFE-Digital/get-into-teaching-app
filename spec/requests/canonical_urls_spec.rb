@@ -10,9 +10,9 @@ RSpec.describe "Canonical URLs", type: :request do
   end
 
   context "when requesting a nested path" do
-    before { get blog_path("back-to-school-as-a-trainee-teacher") }
+    before { get welcome_my_journey_into_teaching_path }
 
-    it { is_expected.to include(canonical_tag("/blog/back-to-school-as-a-trainee-teacher")) }
+    it { is_expected.to include(canonical_tag("/welcome/my-journey-into-teaching")) }
   end
 
   context "when requesting a path with query parameters" do

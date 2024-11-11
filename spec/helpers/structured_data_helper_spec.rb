@@ -6,6 +6,7 @@ describe StructuredDataHelper, type: "helper" do
   include ApplicationHelper
 
   let(:image_path) { "static/images/getintoteachinglogo.svg" }
+  let(:image_path_logo_blue) { "static/images/logo/teaching_blue_background.svg" }
 
   describe ".structured_data" do
     subject(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
@@ -104,37 +105,24 @@ describe StructuredDataHelper, type: "helper" do
     end
   end
 
-  describe ".home_structured_data" do
+  describe ".government_organization_structured_data" do
     subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
-    let(:html) { home_structured_data }
+    let(:html) { government_organization_structured_data }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
 
-    before { enable_structured_data(:web_site) }
+    before { enable_structured_data(:government_organization) }
 
     it "returns nil when disabled by config" do
-      disable_structured_data(:web_site)
+      disable_structured_data(:government_organization)
       expect(script_tag).to be_nil
     end
 
     it "includes site information" do
       expect(data).to include({
-        "@type": "WebSite",
+        "@type": "GovernmentOrganization",
         url: root_url,
         name: "Get Into Teaching",
-      })
-    end
-
-    it "includes search information" do
-      expect(data).to include({
-        potentialAction: {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "http://test.host/search?search[search]={search_term_string}",
-          },
-          "query-input": "required name=search_term_string",
-        },
       })
     end
   end
@@ -156,7 +144,7 @@ describe StructuredDataHelper, type: "helper" do
       expect(data).to include({
         "@type": "Organization",
         url: root_url,
-        logo: asset_pack_url(image_path),
+        logo: asset_pack_url(image_path_logo_blue),
       })
     end
   end
