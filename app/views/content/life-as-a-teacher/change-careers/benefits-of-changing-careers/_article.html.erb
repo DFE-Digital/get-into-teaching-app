@@ -1,17 +1,24 @@
 <div class="row inset">
   <section class="col col-720 col-space-l-top">
     <p>Teachers come from lots of different backgrounds and have often worked in previous careers before becoming teachers.</p>
-    <p>Transfering your existing skills to teaching can be incredibly rewarding. You'll be in demand as someone who has real-world experience of working in your career. The skills and experiences you bring from previous careers are invaluable in the classroom. From communication and public speaking, to problem solving and people management, your students will learn more from you than you might think.</p>
-    <p>As a teacher, you can watch pupils progress as they learn, making an impact from your very first lesson.</p>
-  </section>
-  <section class="col col-720">
     <%= render Content::QuoteComponent.new(
-    text: "I tried many things until I realised that working with young people and helping them develop skills truly inspired me.",
-    name: "Chris, career changer",
+    text: "I was stuck in the corporate rat race in London and just wanted to do something worthwhile.",
+    name: "Jack, career changer",
     large: false
   ) %>
-  </section>
-  <section class="col col-720">
+    <p>Transfering your existing skills to teaching can be incredibly rewarding. You'll be in demand as someone who has real-world experience of working in your career.</p>
+    <%= render Content::QuoteComponent.new(
+    text: "I chose teaching to bring my banking industry experience into the classroom, demonstrating how maths is applied in real-world scenarios. I enjoy inspiring students by connecting abstract concepts to practical applications, making learning both engaging and relevant.",
+    name: "Mark, career changer",
+    large: false
+  ) %>
+    <p>The skills and experiences you bring from previous careers are invaluable in the classroom. From communication and public speaking, to problem solving and people management, your students will learn more from you than you might think.</p>
+    <p>As a teacher, you can watch pupils progress as they learn, making an impact from your very first lesson.</p>
+    <%= render Content::QuoteComponent.new(
+    text: "I feel like I've found the piece which was missing in my life for so long. As challenging as teaching can be some days, I still wouldn't go back to my previous career. The job satisfaction is second to none!",
+    name: "Jodie, career changer",
+    large: false
+  ) %>
     <p>There are practical benefits too, including:
       <ul>
         <li>a competitive salary starting at <%= value :salaries_starting_minshortened %> (or higher in London)</li>
@@ -21,7 +28,6 @@
       </ul>
     </p>
     <p><a href="/life-as-a-teacher/pay-and-benefits"> Find out more about the benefits of becoming a teacher</a>.</p>
-  </section>
 </div>
 <div class="row">
   <div class="col-space-l col-space-l-top">
