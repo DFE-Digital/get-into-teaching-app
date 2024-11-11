@@ -857,8 +857,8 @@ en:
       teacher_training_adviser_steps_overseas_country:
         country_id_html: |-
           You can apply to train or teach from any country in the world, but you may need a visa. Our guidance for
-          <a href="/non-uk-teachers/teach-in-england-if-you-trained-overseas">international teachers</a>
-          and <a href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student">international
+          <a class="new-tab" href="/non-uk-teachers/teach-in-england-if-you-trained-overseas">international teachers</a>
+          and <a class="new-tab" href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student">international
           trainees</a> explains how to apply for the correct visa or immigration status for your employment or study in the UK.
 
     legend:
