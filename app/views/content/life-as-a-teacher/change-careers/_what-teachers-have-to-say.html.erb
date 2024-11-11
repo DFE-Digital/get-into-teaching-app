@@ -1,0 +1,27 @@
+<div class="row grey">
+  <section class="container">
+    <div>
+      <h2 class="heading--box-pink">Find out what career changers have to say</h2>
+      <section class="category col-space-m">
+        <section class="category__cards">
+          <nav class="category__nav-cards">
+            <ul>
+              <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
+                OpenStruct.new(
+                  title: "Becoming a parent sparked my interest in teaching",
+                  description: "Hear how bursaries helped physics teacher and mum Claire get into teaching, and why she loves working with young people.",
+                  path: "/life-as-a-teacher/change-careers/becoming-a-parent-sparked-my-interest-in-teaching"
+                )) %>
+              <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
+                OpenStruct.new(
+                  title: "Making a career change to teaching",
+                  description: "Peter shares how he switched careers to teaching, after more than 25 years working in finance.",
+                  path: "/life-as-a-teacher/change-careers/making-a-career-change-to-teaching"
+                )) %>
+            </ul>
+          </nav>
+        </section>
+      </section>
+    </div>
+  </section>
+</div>
