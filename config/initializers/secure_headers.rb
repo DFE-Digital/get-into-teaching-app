@@ -28,7 +28,6 @@ SecureHeaders::Configuration.default do |config|
   google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net *.ad.doubleclick.net *.fls.doubleclick.net stats.g.doubleclick.net]
   google_apis        = %w[*.googleapis.com googleapis.com https://fonts.googleapis.com]
 
-  zendesk     = %w[wss://api.eu-1.smooch.io/faye api.eu-1.smooch.io *.zendesk.com static.zdassets.com https://*.zopim.com wss://*.zopim.com dfesupport-tpuk.zendesk.com ekr.zdassets.com]
   facebook    = %w[*.facebook.com *.facebook.net *.connect.facebook.net]
   govuk       = %w[*.gov.uk www.gov.uk]
   jquery      = %w[code.jquery.com]
@@ -51,7 +50,7 @@ SecureHeaders::Configuration.default do |config|
 
   # We're not sure why yet but the asset host needs to be
   # explicitly whitelisted in the media_src directive or the CSP
-  #  blocks videos from loading. We don't appear to have this issue
+  # blocks videos from loading. We don't appear to have this issue
   # with the img_src, oddly.
   assets = []
   assets << ENV["APP_ASSETS_URL"] if ENV["APP_ASSETS_URL"].present?
@@ -64,15 +63,15 @@ SecureHeaders::Configuration.default do |config|
     default_src: %w['none'],
     base_uri: self_base,
     child_src: self_base.concat(youtube, pinterest, snapchat),
-    connect_src: self_base.concat(google_apis, pinterest, google_analytics, google_supported, google_doubleclick, facebook, zendesk, snapchat, sentry, gtm_server, clarity, vwo),
+    connect_src: self_base.concat(google_apis, pinterest, google_analytics, google_supported, google_doubleclick, facebook, snapchat, sentry, gtm_server, clarity, vwo),
     font_src: self_base.concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: self_base.concat(snapchat, facebook, govuk),
     frame_src: self_base.concat(snapchat, facebook, youtube, google_doubleclick, google_analytics, data, pinterest, clarity, vwo),
     frame_ancestors: self_base,
     img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, gtm_server, reddit, clarity, vwo, %w[chart.googleapis.com wingify-assets.s3.amazonaws.com cx.atdmt.com linkbam.uk]),
     manifest_src: self_base,
-    media_src: self_base.concat(zendesk).concat(assets),
-    script_src: quoted_unsafe_inline + quoted_unsafe_eval + self_base.concat(google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, twitter, snapchat, youtube, zendesk, reddit, clarity, vwo),
+    media_src: self_base.concat(assets),
+    script_src: quoted_unsafe_inline + quoted_unsafe_eval + self_base.concat(google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, twitter, snapchat, youtube, reddit, clarity, vwo),
     style_src: quoted_unsafe_inline + self_base.concat(govuk, google_apis, google_supported, vwo),
     worker_src: self_base.concat(blob),
   }

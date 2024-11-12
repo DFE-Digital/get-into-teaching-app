@@ -1,5 +1,6 @@
 ---
 title: Become a design and technology teacher
+subject: design and technology
 title_paragraph: |-
   <p>
   As a design and technology teacher, you'll empower pupils to turn their ideas into reality. You'll help pupils to understand how things work, why they matter, and how they could be improved.</p>
@@ -16,7 +17,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/explore-subjects/design-and-technology/header"
+  - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/design-and-technology/article"
-  - "content/life-as-a-teacher/explore-subjects/design-and-technology/adviser-promo-design-and-technology"
+  - "content/shared/subject-pages/adviser-promo"
 ---

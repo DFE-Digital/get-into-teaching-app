@@ -5,7 +5,7 @@ subcategory: Extra support
 description: |-
     Find out about the support you can get while training to teach if you're disabled.
 related_content:
-    Becoming a teacher with a hearing impairment: "/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment"
+    Explore the benefits of teaching: "/life-as-a-teacher/pay-and-benefits"
     Age groups you could teach: "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
@@ -28,15 +28,24 @@ expander:
       </p>
       <p>
       You will still be entitled to adjustments to help you train. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.</p>
+quote:
+  habiba:
+    text: "Growing up as a profoundly deaf child, I had a positive upbringing in my mainstream primary school. The teachers were amazing in terms of support and treating me equally. They inspired me to become a primary school teacher."
+    name: "Habiba, primary school teacher"
+    classes: quote--indent
 ---
 
 The experience and perspective of a diverse workforce is valued in school culture.
 
 If you’re disabled, have a mental health condition or educational needs, you can get support to become a teacher.
 
+$habiba$
+
 $international-content$
 
-## Disabled Students’ Allowance and other support
+## Financial support
+
+### Disabled Students' Allowance (DSA)
 
 You can [apply for Disabled Students’ Allowance (DSA)](https://www.gov.uk/disabled-students-allowance-dsa/how-to-claim) to cover the study-related costs you have because of a mental health problem, long term illness or any other disability.
 
@@ -44,9 +53,9 @@ You’ll get confirmation of whether your application has been successful within
 
 It can take up to 14 weeks to get your DSA support, so you should take this into consideration if you need the support in place for the start of your course.
 
-[If you do paid training you may also be eligible for support](https://www.gov.uk/access-to-work).
+### Other funding and support
 
-[AbilityNet](https://abilitynet.org.uk/about-abilitynet) or [Disability Rights UK](https://www.disabilityrightsuk.org/) may also be able to help you identify technology or other adjustments to help you study.
+If you get paid for your training (for example, salaried training or a teacher degree apprenticeship), you may be [eligible for support through Access to Work](https://www.gov.uk/access-to-work).
 
 ## Adjustments to help you train
 
@@ -57,6 +66,10 @@ Teacher training providers can make adjustments so that you can attend an interv
 - make sure classrooms are wheelchair accessible
 
 Sharing that you’re disabled when you [apply for teacher training](https://www.gov.uk/apply-for-teacher-training) can help providers make adjustments. You should contact your provider to discuss any adjustments you may need.
+
+If you need help to identify technology to help you study, [visit AbilityNet for resources and guides](https://abilitynet.org.uk/about-abilitynet).
+
+You can also explore [Disability Rights UK's guide for disabled students and apprentices](https://www.disabilityrightsuk.org/).
 
 ## Your rights
 

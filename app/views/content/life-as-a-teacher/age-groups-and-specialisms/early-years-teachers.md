@@ -51,7 +51,6 @@ calls_to_action:
         Salary: "No"
         Length of training: "3 months"
         Qualification: "Early years teacher status"
-talk_to_us: false
 ---
 
 The early years are critical in children’s development. As an early years teacher you’ll work with young children up to the age of 5. You’ll use your knowledge and skills to help young children enjoy high standards of teaching and open their minds to new ideas every day.
@@ -59,6 +58,8 @@ The early years are critical in children’s development. As an early years teac
 You’ll need to do early years initial teacher training (EYITT) to achieve early years teacher status (EYTS). This will allow you to work in a nursery or early years setting.
 
 If you want to teach in a primary school, including in a reception class, or secondary school then you will need to achieve qualified teacher status (QTS). [Find out more about training to teach primary and secondary pupils](/train-to-be-a-teacher).
+
+If you're interested in exploring other opportunities to work with pre-school children, you can [find out more about a range of careers in early years education](https://earlyyearscareers.campaign.gov.uk/?utm_source=Website&utm_medium=GiT). 
 
 ## What you need to become an early years teacher
 

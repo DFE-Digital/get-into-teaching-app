@@ -1,5 +1,6 @@
 ---
 title: Become an art and design teacher
+subject: art and design
 title_paragraph: |-
   <p>
   Teaching art and design opens up a world of creativity. When pupils create, they learn to take risks, embrace mistakes, and persevere to bring their ideas to life.</p>
@@ -16,7 +17,7 @@ keywords:
   - teacher training
 
 content:
-  - "content/life-as-a-teacher/explore-subjects/art-and-design/header"
+  - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/art-and-design/article"
-  - "content/life-as-a-teacher/explore-subjects/art-and-design/adviser-promo-art-and-design"
+  - "content/shared/subject-pages/adviser-promo"
 ---

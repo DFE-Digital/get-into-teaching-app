@@ -228,11 +228,6 @@
 "static/images/content/case-studies/ben.jpg":
   alt: "Maths and science teacher Ben marking work at home."
 
-"static/images/content/blog/anna-shirley.jpg":
-  alt: "Sheffield SCITT communciations manager Anna Shirley."
-  variants:
-    - "static/images/content/blog/thumbnails/anna-shirley.jpg"
-
 "static/images/content/blog/applying-for-teacher.jpg":
   alt: ""
   variants:
@@ -244,36 +239,11 @@
   variants:
     - "static/images/content/blog/thumbnails/calculator.jpg"
 
-"static/images/content/blog/cindy-ventura.jpg":
-  alt: "Trainee teacher Cindy Ventura in her first week on a PGDE teacher training course."
-  variants:
-    - "static/images/content/blog/thumbnails/cindy-ventura.jpg"
-
-"static/images/content/blog/giorgio-rubbo.jpg":
-  alt: "Biology teacher Giorgio Rubbo wearing a suit and tie."
-  variants:
-    - "static/images/content/blog/thumbnails/giorgio-rubbo.jpg"
-
-"static/images/content/blog/habiba-cabdi-teacher-applicant.jpg":
-  alt: "Teacher training course student Habiba Cabdi with a hearing impairment."
-  variants:
-    - "static/images/content/blog/thumbnails/habiba-cabdi-teacher-applicant.jpg"
-
 "static/images/content/blog/interview.jpg":
   # A teacher training candidate being interviewed by a provider sitting at opposite sides of a desk.
   alt: ""
   variants:
     - "static/images/content/blog/thumbnails/interview.jpg"
-
-"static/images/content/blog/jacob.jpg":
-  alt: "Teacher training course student and biology graduate Jacob."
-  variants:
-    - "static/images/content/blog/thumbnails/jacob.jpg"
-
-"static/images/content/blog/mel-oconnor.jpg":
-  alt: "Trainee teacher Mel O'Connor taking a PGDE teacher training course in maths."
-  variants:
-    - "static/images/content/blog/thumbnails/mel-oconnor.jpg"
 
 "static/images/content/blog/mel-stta-screen.jpg":
   alt: "Conference room with tables and a projector for a Sheffield Teacher Training Alliance PGDE course."
@@ -284,11 +254,6 @@
   alt: ""
   variants:
     - "static/images/content/blog/thumbnails/notepad.jpg"
-
-"static/images/content/blog/olivia.jpg":
-  alt: "Teacher training course student Olivia with the Outwood Grange Academies Trust."
-  variants:
-    - "static/images/content/blog/thumbnails/olivia.jpg"
 
 "static/images/content/blog/right_provider.jpg":
   alt: ""
@@ -323,44 +288,9 @@
   alt: ""
   variants:
     - "static/images/content/blog/thumbnails/whiteboard.jpg"
-
-"static/images/content/blog/fellowship.jpg":
-  alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
-  variants:
-    - "static/images/content/blog/thumbnails/fellowship.jpg"
-
-"static/images/content/blog/ian-wallace.jpg":
-  alt: "Science teacher and career changer, Ian Wallace"
-  variants:
-    - "static/images/content/blog/thumbnails/ian-wallace.jpg"
-
-"static/images/content/blog/jessica-walmsley.jpg":
-  alt: "Jessica Walmsley, Head of Science."
-  variants:
-    - "static/images/content/blog/thumbnails/jessica-walmsley.jpg"
-
-"static/images/content/blog/thumbnails/stories-will.jpg":
-  alt: "English teacher Will Fordham"
-
+  
 "static/images/content/blog/thumbnails/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
-
-"static/images/content/blog/brooke-harvey.jpg":
-  alt: "Brooke Harvey, a Canadian national who moved to England to teach, standing in front of a bookcase."
-  variants:
-    - "static/images/content/blog/thumbnails/brooke-harvey.jpg"
-
-"static/images/content/blog/thumbnails/stories-gavin.jpg":
-  alt: "Assistant headteacher, Gavin"
-
-"static/images/content/blog/thumbnails/stories-nathan.jpg":
-  alt: "Nathan Sproule, teacher"
-
-"static/images/content/blog/thumbnails/stories-emma.jpg":
-  alt: "Trainee science teacher, Emma"
-
-"static/images/content/blog/thumbnails/stories-paul.jpg":
-  alt: "Paul Evason, assistant headteacher"
 
 "static/images/content/blog/thumbnails/stories-sarah-f.jpg":
   alt: "Sarah Fisher, head of biology"
@@ -368,26 +298,8 @@
 "static/images/content/blog/thumbnails/stories-generic.jpg":
   alt: "Students enjoying a lesson in a classroom"
 
-"static/images/content/blog/thumbnails/stories-jon.jpg":
-  alt: "Head of department, Jon Simmons"
-
-"static/images/content/blog/thumbnails/stories-danny.jpg":
-  alt: "PE teacher, Danny Holliday"
-
-"static/images/content/blog/thumbnails/stories-sandra.jpg":
-  alt: "Inspirational teacher, Sandra."
-
-"static/images/content/blog/thumbnails/stories-roger.jpg":
-  alt: "Roger Brown, physics teacher"
-
 "static/images/content/blog/thumbnails/stories-katie.jpg":
   alt: "Head of faculty, Katie Lockett"
-
-"static/images/content/blog/thumbnails/chris-wallis.jpg":
-  alt: "Product engineer turned science teacher, Chris Wallis"
-
-"static/images/content/blog/thumbnails/david-payling.jpg":
-  alt: "Veteran and trainee teacher, David Payling"
 
 # homepage
 "static/images/content/homepage/here-to-help.jpg":
@@ -439,7 +351,7 @@
 "static/images/content/landing/how-to-become-a-teacher-2.jpg":
   # A teacher looks over students sat around a table.
   alt: ""
-  
+
 # event
 "static/images/content/event-signup/event-regional-online-listing.jpg":
   # An online Get Into Teaching event on a computer screen.
@@ -468,6 +380,9 @@
   alt: ""
 "static/images/content/events/teaching-event.jpeg":
   # A man smiling wearing a blue Get Into Teaching sweatshirt talking to a lady with banner behind them.
+  alt: ""
+"static/images/content/events/event-image.jpg":
+  # A woman talking to another woman while holding a coffee cup with an event banner in the background.
   alt: ""
 
 # campus advisers landing page

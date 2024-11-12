@@ -83,17 +83,21 @@ If you're already a qualified teacher, find out how you can [teach in England if
 
 Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way.
 
-When you have successfully completed your training, you will be awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
+When you have successfully completed your training, you will be awarded [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), a professional qualification valued globally.
 
 QTS will allow you to apply for teaching jobs in all schools in England.
 
-[Read teachers' stories about the rewards of training to teach in England](/blog).
+[Read more about life as a teacher in England](/life-as-a-teacher).
 
 ## Other ways to train
 
-You can also apply to [train to teach in Wales](https://educators.wales/home), [train to teach in Scotland](https://teachinscotland.scot/) or [train to teach in Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
+To find out about teaching in other areas of the UK, visit the:
 
-If you don’t want to come to England to study you can apply to train for international qualified teacher status (iQTS). This meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and, if successfully completed, leads to the automatic award of QTS.
+* [Educator Wales website](https://educators.wales/home)
+* [Teach in Scotland website](https://teachinscotland.scot/)
+* [Northern Ireland Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland)
+
+If you don’t want to come to England to study you can apply to train for international qualified teacher status (iQTS). This meets the same high standards as [English qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) and, if successfully completed, leads to the automatic award of QTS.
 
 For teachers who qualified outside the UK, as well as those with teaching experience, [other routes to qualified teacher status (QTS)](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) are also open.
 
@@ -124,7 +128,9 @@ If you are not training to teach in these subjects, any support you get will dep
 
 ## Find and apply for teacher training courses
 
-Your teacher training course must lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/train-to-be-a-teacher/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
+Your teacher training course must lead to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). 
+
+Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/train-to-be-a-teacher/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
 
 You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Teacher training courses can also be 'fee-paying' or 'salaried'.
 
@@ -153,7 +159,7 @@ The subject you apply to teach must usually be the same as, or closely related t
 
 ### Finding the right course for you
 
-You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
+You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to qualified teacher status (QTS).
 
 To find the right training for you, you can filter courses by:
 
@@ -165,7 +171,7 @@ To find the right training for you, you can filter courses by:
 
 ### Writing your personal statement
 
-It's important that you give yourself time to write the best possible [personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
+It's important that you give yourself time to [write the best possible personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). Providers read your personal statement carefully as part of their assessment of your application.
 
 Your personal statement can be up to 1000 words. 90% of successful candidates write 500 words or more.
 
@@ -181,13 +187,16 @@ If you have a [teacher training adviser](/help-and-support), they can help you w
 
 If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
 
-For your teacher training place offer to be confirmed, you’ll have to pass criminal record and health checks, so we recommend applying to your training provider early. You can apply for teacher training from October, for courses starting the following year in September or January.
+If you get offered a place on a course, your provider will arrange a background and criminal records check. This is known as a Disclosure and Barring Service (DBS) check. You must pass these checks in order to teach students under 18. To allow enough time for these checks, we recommend applying to your training provider early. You can apply for teacher training from October, for courses starting the following year in September or January.
 
 Due to rules about immigration, not all providers can accept international applicants – we suggest you contact them before you apply to check.
 
 ### Already living in the UK?
 
-If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.
+You can apply to any English teacher training provider if you have settled or pre-settled status under either:
+
+* <a href="https://www.gov.uk/settled-status-eu-citizens-families">the EU Settlement Scheme</a>
+* <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>
 
 ### Postgraduate teaching apprenticeships
 
@@ -217,14 +226,14 @@ To train to teach in England, you will need a visa or immigration status allowin
 
 ## Plan your move to the UK
 
-Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) for advice about immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
+[Visit the UK Council for International Student Affairs](https://www.ukcisa.org.uk/) (UKCISA) for advice about immigration, finding a place to live and opening a bank account. For support over the phone, [visit the UKCISA Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us).
 
 Your teacher training provider may also be able to help you plan your move to the UK  – contact them directly to ask.
 
 
 ## Complete your teacher training and gain qualified teacher status (QTS)
 
-If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
+If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 
 ## Apply for your first teaching job
@@ -245,10 +254,10 @@ Learn more about:
 - [curriculum and qualifications](https://www.gov.uk/national-curriculum)
 - [behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
 - [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
-- [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/guidance-for-teachers) – a charity gathering international evidence on teaching 5 to 16 year olds
-- [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
+- [The Education Endowment Foundation website](https://educationendowmentfoundation.org.uk/guidance-for-teachers) – a charity gathering international evidence on teaching 5 to 16 year olds
+- [Times Educational Supplement (TES) website](https://www.tes.com/) – information and resources for teachers
 - [join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
-- [read interviews with real teachers](/blog)
+
 
 ## Non-UK citizens who trained to teach in England share their experiences
 

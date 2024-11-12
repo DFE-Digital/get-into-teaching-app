@@ -14,8 +14,8 @@ calls_to_action:
       arguments:
         icon: "icon-arrow"
         text: |-
-          Use our service to search for and organise a placement in England.
-        link_text: "Get school experience"
+          Use our service to search for and organise school experience in England.
+        link_text: "Search for school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo
@@ -90,7 +90,7 @@ You’ll get to experience a range of activities to help you get a feel for scho
 
 ### Watch pre-recorded lessons
 
-Many school and training provider websites have helpful information like “day in the life” videos and recorded lessons. You can also [observe teachers’ lessons](https://www.thenational.academy/teachers) on the Oak National Academy website to help you get to know teaching better, before or alongside your ITT.
+Many school and training provider websites have helpful information like “day in the life” videos and recorded lessons. You can also observe teachers’ lessons on the [Oak National Academy website](https://www.thenational.academy/teachers) to help you get to know teaching better, before or alongside your ITT.
 
 ### Beyond the classroom
 
@@ -99,3 +99,9 @@ There are other ways to gain valuable experience of working with young people. S
 For example, you could get paid to work in a school that offers childcare before and after school. This is known as wraparound because the childcare wraps around the school day.
 
 Working in wraparound gives you experience working with children and in a school environment. Contact your local council or school to find out about any available opportunities. 
+
+## Next steps 
+
+Once you have completed your school experience, you can decide if you want to [apply for teacher training in England](/how-to-apply-for-teacher-training/teacher-training-application) and get qualified teacher status (QTS). 
+
+[Find out more about the benefits of getting QTS](/train-to-be-a-teacher/what-is-qts).

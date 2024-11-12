@@ -12,7 +12,7 @@ backlink: /
 fullwidth: true
 navigation: 20.30
 navigation_title: Teaching internships
-navigation_description: Earn from $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
+navigation_description: Earn $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/train-to-be-a-teacher/teaching-internship-providers/listing
 
@@ -34,13 +34,6 @@ provider_groups:
         areas: "North Northamptonshire, Nottingham, West Northamptonshire"
         name: "Katie Irving"
         email: "teachertraining@creativeeducationaltrust.org.uk"
-      - header: "George Spencer Academy"
-        link: "https://georgespencer.org.uk/"
-        applications: "Open"
-        subjects: "chemistry, computing, maths, physics, languages"
-        areas: "Derbyshire, Nottingham, Nottinghamshire"
-        name: "Amy Langton"
-        email: "alangton@spencertrust.org.uk"
       - header: "Learners First Schools Partnership (Wickersley School & Sports College)"
         link: "https://www.learnersfirst.net/internships/"
         applications: "Open November"
@@ -69,6 +62,13 @@ provider_groups:
         areas: "Lincolnshire, Nottinghamshire"
         name: "Emma Sikora"
         email: "e.sikora@outwood.com"
+      - header: "Spencer Teaching School Hub"
+        link: "https://spencerteachingschoolhub.org.uk/thinking-of-teaching/"
+        applications: "Open"
+        subjects: "chemistry, computing, maths, physics, languages"
+        areas: "Derbyshire, Nottingham, Nottinghamshire"
+        name: "Amy Langton"
+        email: "alangton@spencertrust.org.uk"
       - header: "Tuxford Academy"
         link: "https://www.diverseassociation.org.uk/get-into-teaching/internships/"
         applications: "Open January"
@@ -116,7 +116,7 @@ provider_groups:
       - header: "Farlingaye High School"
         link: "https://www.eastscitt.co.uk/Undergraduate-Internships/"
         applications: "Open December"
-        subjects: "maths, physics"
+        subjects: "chemistry, computing, maths, physics, languages"
         areas: "Suffolk"
         name: "Ellie Colton"
         email: "ecolton@farlingaye.suffolk.sch.uk"
@@ -179,7 +179,7 @@ provider_groups:
         name: "Claire Hickling"
         email: "c.hickling@niot.org.uk"
       - header: "LETTA (London East Teacher Training Alliance)"
-        link: "https://letta.org.uk/"
+        link: "https://train.letta.org.uk/teachinginternships/"
         applications: "Open November"
         subjects: "maths, physics"
         areas: "Tower Hamlets, Newham, Hackney"
@@ -200,7 +200,7 @@ provider_groups:
         name: "Lianne Tomaszewska"
         email: "lianne.tomaszewska@paddington-academy.org"
       - header: "Reach Academy Feltham"
-        link: "https://www.reachtraining.org/teaching-internships"
+        link: "https://reachteachertraining.com/internships/"
         applications: "Open November"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Hounslow"
@@ -270,7 +270,7 @@ provider_groups:
         link: "https://www.bright-futures.co.uk/professional-development-institute/bright-futures-scitt/our-programmes/paid-undergraduate-internship-scheme/"
         applications: "Open January"
         subjects: "chemistry, computing, maths, physics"
-        areas: "Trafford, Warrington,  Salford, Manchester"
+        areas: "Trafford, Warrington, Salford, Manchester"
         name: "Eleanor Davidson"
         email: "admin@scitt.bright-futures.co.uk"
       - header: "Chorlton High School"

@@ -8,10 +8,14 @@ navigation: 20.15
 navigation_title: What to expect in teacher training
 navigation_description: Find out what your teacher training will be like, what you'll learn, and what classroom experience you'll get.
 related_content:
-    Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Training and support for early career teachers : "/life-as-a-teacher/teaching-as-a-career/early-career-teachers"
     How to apply : "/how-to-apply-for-teacher-training"
+quote:
+  hasina:
+    text: "Teacher training has been by far one of the most fulfilling experiences of my life. It has made me realise my potential, testing the limits of my patience, confidence, organisational skills and empathy, as well as academic ability."
+    name: "Hasina, science teacher"
+    classes: quote--indent
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-itt
     
@@ -37,7 +41,10 @@ There are full-time and part-time teacher training courses available.
 
 ## What you’ll learn in initial teacher training
 
-What you’ll learn will depend on your course and the qualifications it offers. Some teacher training courses award [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), while some award QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
+What you’ll learn will depend on your course and the qualifications it offers. You'll train towards one of the following qualifications:
+
+* [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts)
+* QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce)
 
 Initial teacher training helps you meet the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). You must meet the teachers’ standards to be awarded QTS.
 
@@ -52,6 +59,8 @@ All initial teacher training will help you:
 * manage behaviour effectively to ensure a good and safe learning
 environment
 * make a positive contribution to your school community
+
+$hasina$
 
 ## Your school placements
 

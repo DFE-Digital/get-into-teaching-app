@@ -5,7 +5,6 @@ description: |-
 related_content:
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Get school experience : "/train-to-be-a-teacher/get-school-experience"
-    My first week as a trainee teacher: "/blog/my-first-week-as-a-trainee-teacher"
 date: "2021-06-24"
 keywords:
   - adviser
@@ -49,6 +48,11 @@ expander:
       <p>
       If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>. 
       </p>
+quote:
+  giorgio:
+    text: "My best advice for a successful application is to be reflective in your personal statement and interview, think about why you want to teach, about the sort of classroom you envisage yourself in (and why) and talk about it!"
+    name: "Giorgio, biology teacher"
+    classes: quote--indent
 ---
 
 Find out what you need to include in your primary or secondary teacher training application and what happens as part of the application process. 
@@ -57,7 +61,10 @@ You can get help with your application from our [teacher training advisers](/tea
 
 ## What course should I apply for? 
 
-Make sure you check which qualification you’ll get through your training course. Some will award [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) and some QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
+Make sure you check which qualification you’ll get through your training course. You'll train towards one of the following qualifications:
+
+* [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts)
+* QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce)
 
 While you do not need a PGCE to teach in England, you do need QTS to teach in many primary and secondary schools.
 
@@ -126,6 +133,8 @@ You need to provide the details of 2 people who can give you a reference when yo
 
 [Find out more about how to choose your references for teacher training](/how-to-apply-for-teacher-training/teacher-training-references).
 
+$giorgio$
+
 ## Start your application
 
 You’ll need to [create an account](https://www.apply-for-teacher-training.service.gov.uk/candidate/account) and then complete the different sections of your application form.
@@ -147,6 +156,10 @@ If your application is successful with a provider, you’ll be invited to an int
 Interviews vary from provider to provider – you’ll be given all the information you need when you’re invited to attend. 
 
 [Find tips for your teacher training interview](/how-to-apply-for-teacher-training/teacher-training-interview). 
+
+### Essential checks
+
+If you get offered a place on a course, your provider will arrange a background and criminal records check. This is known as a Disclosure and Barring Service (DBS) check. You must pass these checks in order to teach students under 18.
 
 ### If you do not get a place 
 

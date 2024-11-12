@@ -1,97 +1,61 @@
 footer.site-footer {
-  background-color: $black;
+  background-color: $grey;
+  color: $black;
   padding: 2em;
+  padding-top: 0;
+  margin-top: 4em;
 
-  .site-footer__wrapper {
-    display: flex;
-    // gap: 4em;
-    flex-direction: column;
-  }
+  .site-footer__links-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10px;
 
-  .site-footer-top,
-  .site-footer-bottom {
-    display: flex;
-
-    @include mq($until: tablet) {
-      flex-direction: column;
-      // gap: 2em;
+    @include mq($from: tablet) {
+      grid-template-columns: repeat(3, 1fr);
     }
 
-    &__links-container {
-      flex: 70% 0 0%;
-
-      @include mq($from: 1800px) {
-        flex: 50% 0 0%;
+    .site-footer__links-column {
+      ul {
+        list-style: none;
+        padding-left: 0;
       }
+    }
+  }
 
-      display: flex;
-      flex-wrap: wrap;
+  .site-footer__social-icons {
+    display: flex;
+    width: 100%;
+    gap: 30px;
 
-      justify-content: flex-end;
+    @include mq($from: tablet) {
+      justify-content: end;
+    }
 
-      a {
-        @include font-size("xsmall");
-        @extend .link--grey;
-
-        margin-bottom: .5em;
-        padding: .5em 0;
-      }
-
-      // column-gap: 1.5em;
-      // row-gap: .6em;
-      a + a {
-        margin-left: 1.5em;
-      }
-
-      @include mq($until: tablet) {
-        flex-direction: column;
-        padding-bottom: 2em;
-
-        a + a {
-          margin-left: 0;
+    .site-footer-top__social__link {
+      &:focus {
+        .icon {
+          color: $white;
         }
       }
     }
-  }
-
-  .site-footer-top {
-    display: flex;
 
     .icon {
-      @include font-size(large);
+      @include font-size(medium);
+      color: $black;
     }
+  }
 
-    &__social {
-      flex: 33% 0 0;
-      display: flex;
-      margin-right: 1em;
-
-      a {
-        max-height: 2em;
-        padding: .5em;
-        color: $grey-mid;
-      }
-
-      // gap: 1em;
-      a + a {
-        margin-left: 1em;
-      }
-
-      a:hover {
-        text-decoration: none;
-        color: $white;
-      }
-
-      a:focus {
-        color: $white;
-      }
-    }
+  .site-footer__divider {
+    border: 1px $black;
   }
 
   .site-footer-bottom {
-    border-top: 1px solid $grey-mid;
-    margin-top: 2em;
-    padding-top: 2em;
+    display: flex;
+    margin-top: 1em;
+
+    @include mq($until: tablet) {
+      flex-direction: column;
+    }
 
     @include mq($from: tablet) {
       flex-direction: row-reverse;
@@ -108,17 +72,18 @@ footer.site-footer {
       display: flex;
       align-content: center;
 
-      * + picture,
       a {
-        margin-top: 1em;
+        &:focus {
+          picture > img {
+            filter: invert(1);
+          }
+        }
       }
 
       @include mq($from: tablet) {
-        // gap: 3em;
         * + picture,
         a {
           margin-top: 0;
-          margin-left: 3em;
         }
 
         flex-direction: row;
@@ -126,9 +91,41 @@ footer.site-footer {
     }
 
     &__links-container {
+      flex: 70% 0 0%;
+
+      @include mq($from: 1800px) {
+        flex: 50% 0 0%;
+      }
+
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: flex-end;
+
+      a {
+        @include font-size("xsmall");
+        @extend .link--black;
+
+        margin-bottom: .5em;
+        padding: .5em 0;
+      }
+
+      a + a {
+        margin-left: 1.5em;
+      }
+
+      @include mq($until: tablet) {
+        flex-direction: column;
+        padding-bottom: 2em;
+
+        a + a {
+          margin-left: 0;
+        }
+      }
+
       &__license {
         @include font-size("xsmall");
-        color: $grey-mid;
+        color: $black;
 
         @include mq($from: tablet) {
           text-align: right;
@@ -137,7 +134,42 @@ footer.site-footer {
     }
   }
 
-  a {
-    color: $white;
+  .small { @include font-size("xsmall"); }
+
+  .talk-to-us {
+    margin: 0;
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 20px;
+
+      @include mq($from: tablet) {
+        flex-direction: row;
+      }
+
+      div {
+        @include mq($from: tablet) {
+          flex-basis: 50%;
+        }
+      }
+    }
+
+    &__icon-section {
+      display: flex;
+      gap: 20px;
+
+      h1, h2, h3, h4, h5 {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+    }
+
+    .telephone {
+      font-weight: bold;
+      @include font-size("large");
+      line-height: inherit;
+    }
   }
 }
