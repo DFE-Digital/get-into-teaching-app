@@ -1,13 +1,12 @@
 ---
-title: "Career change to teaching"
+title: "Change careers to teaching"
 heading: "Change to a career in teaching"
 category: Life as a teacher
 image: "static/images/content/hero-images/physics.jpg"
 description: |-
    Find out what extra support you can get if you want a career change into teaching. Bring your skills and experience to life in the classroom.
-navigation: 40.25
 layout: "layouts/minimal"
-talk_to_us: true
+navigation: 40.25
 backlink: "../"
 content:
   - content/life-as-a-teacher/header
