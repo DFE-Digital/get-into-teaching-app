@@ -64,7 +64,7 @@ $qualified-outside-the-uk$
 If your teacher training course leads to QTS: 
 
 * your course will be regulated by the Department for Education (DfE), ensuring high quality training 
-* you could be eligible for a scholarship or bursary to help you train
+* you could be [eligible for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries) to help you train.
 
 As a teacher with QTS: 
 
@@ -100,6 +100,6 @@ You can usually do this if you’ve worked as an unqualified teacher:
 
 ## Get QTS if you qualified as a teacher in Wales, Scotland or Northern Ireland
 
-If you trained to teach in Wales, your QTS will be automatically recognised in England and awarded by the [Education Workforce Council (EWC)](https://www.ewc.wales/site/index.php/en/).
+If you trained to teach in Wales, your QTS will automatically be recognised in England. [The Education Workforce Council (EWC) website has more information on being awarded QTS in England](https://www.ewc.wales/site/index.php/en/).
 
 If you trained to teach in Scotland or Northern Ireland, you can [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). If your QTS application is successful, you will gain QTS without any further fees or training.
