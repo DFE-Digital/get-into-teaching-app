@@ -1,7 +1,7 @@
 ---
 title: How to change careers to become a teacher
 description: |-
-  How to change careers to become a teacher.
+  Find out about the different routes you could take to swap your current career for the classroom.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 keywords:
