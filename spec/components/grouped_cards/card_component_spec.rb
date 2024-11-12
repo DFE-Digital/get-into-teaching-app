@@ -8,7 +8,9 @@ describe GroupedCards::CardComponent, type: "component" do
     {
       "header" => "First organisation",
       "name" => "Joe Bloggs",
-      "telephone" => "01234 567890 (ext 123)",
+      "telephone" => "01234 567890",
+      "international_phone" => "+441234567890",
+      "extension" => "ext. 123",
       "email" => "joe.bloggs@first.org",
     }
   end
@@ -18,6 +20,8 @@ describe GroupedCards::CardComponent, type: "component" do
   it { is_expected.to have_css ".group__card__fields span", text: "Name" }
   it { is_expected.to have_css ".group__card__fields span", text: "Joe Bloggs" }
   it { is_expected.to have_link "joe.bloggs@first.org", href: "mailto:joe.bloggs@first.org" }
+  it { is_expected.to have_link "01234 567890", href: "tel:+441234567890" }
+  it { is_expected.to have_css ".group__card__fields span", text: "ext. 123" }
 
   it { is_expected.not_to have_css "a h4" }
 

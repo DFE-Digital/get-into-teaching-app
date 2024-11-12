@@ -1,5 +1,5 @@
 class AssessmentOnlyProvider
-  attr_reader :provider, :regions, :website, :contact, :email, :phone, :extension
+  attr_reader :provider, :regions, :website, :contact, :email, :phone, :international_phone, :extension
 
   def initialize(data)
     data.tap do |d|
@@ -9,6 +9,7 @@ class AssessmentOnlyProvider
       @contact = d["contact"]&.strip
       @email = d["email"]&.strip
       @phone = d["phone"]&.strip
+      @international_phone = d["international_phone"]&.strip
       @extension = d["extension"]&.strip
     end
   end
@@ -20,11 +21,12 @@ class AssessmentOnlyProvider
       "name" => contact,
       "email" => email,
       "telephone" => phone,
+      "international_phone" => international_phone,
       "extension" => extension,
     }
   end
 
   def to_str
-    [provider, regions&.join(";"), website, contact, email, phone, extension].join("|")
+    [provider, regions&.join(";"), website, contact, email, phone, international_phone, extension].join("|")
   end
 end

@@ -8,7 +8,7 @@ namespace :assessment_only_providers do
     csv = CSV.read("lib/tasks/support/assessment_only_providers.csv", headers: true)
 
     provider_groups = csv.each.with_object({}) do |row, h|
-      next if row[0].blank? || row['region'].blank?
+      next if row[0].blank? || row["region"].blank?
 
       AssessmentOnlyProvider.new(row).tap do |provider|
         provider.regions.each do |region|
