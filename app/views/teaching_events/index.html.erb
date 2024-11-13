@@ -1,51 +1,40 @@
 <section class="teaching-events">
   <header>
     <h1 class="heading-l heading--box-yellow">Events</h1>
-
     <p>Choose from 2 types of free events:</p>
-
     <ul>
       <li>Get Into Teaching events - where you can talk to expert advisers, a range of local training providers and experienced teachers</li>
-
-    <li>Training provider events - where specific teacher training providers will talk about the courses they offer</li></ul>
-
+      <li>Training provider events - where specific teacher training providers will talk about the courses they offer</li>
+    </ul>
   </header>
-
   <div class="teaching-events__container">
     <div class="teaching-events__filter">
       <%= render partial: "teaching_events/index/filter" %>
     </div>
-
     <div class="teaching-events__listing">
       <% if @featured_events.blank? && @events.blank? %>
         <%= render partial: "teaching_events/index/no_results" %>
       <% end %>
-
       <% if @featured_events.any? %>
         <div class="teaching-events__events teaching-events__events--featured">
           <h2 class="heading-m">Upcoming Get Into Teaching events</h2>
-
           <ol><%= render TeachingEvents::EventComponent.with_collection(@featured_events) %></ol>
-
           <div class="teaching-events__about-git-banner">
             <div class="teaching-events__about-git-banner--message">
               <p>
                 Get Into Teaching events can answer your questions whether you're ready to start your career in teaching or just curious.
               </p>
             </div>
-
             <div class="teaching-events__about-git-banner--link">
               <%= link_to("What happens at a Get Into Teaching event?", about_git_events_path, class: "button button--white") %>
             </div>
           </div>
         </div>
       <% end %>
-
       <% if @events.any? %>
         <div class="teaching-events__events teaching-events__events--regular">
           <h2 class="heading-m">Events coming up soon</h2>
           <ol><%= render TeachingEvents::EventComponent.with_collection(@events) %></ol>
-
           <div class="teaching-events__pagination">
             <%= paginate @events %>
           </div>
@@ -54,18 +43,14 @@
     </div>
   </div>
 </section>
-
 <section class="content-cta">
   <h3>Do you have a teaching event?</h3>
   <p>
     If you'd like to advertise your teaching event in this listing, <a href="https://form.education.gov.uk/service/Provider-event-details---Get-into-Teaching-website"
-      title="Submit your event details on GOV.UK"
-      target="_blank"
-      rel="noopener norefferer">
-    please fill in our online form</a>.
+      title="Submit your event details on GOV.UK">
+      please fill in our online form</a>.
   </p>
-
   <p>
-  If you'd like to edit or remove your event listing, please email <%= mail_to("getintoteaching.helpdesk@education.gov.uk") %>.
+    If you'd like to edit or remove your event listing, please email <%= mail_to("getintoteaching.helpdesk@education.gov.uk") %>.
   </p>
 </section>
