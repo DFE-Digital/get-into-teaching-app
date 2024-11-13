@@ -5,11 +5,12 @@ require "digest/sha1"
 LASTMOD_FILE_PATH = Rails.root.join("config/lastmod.yml")
 
 desc "Recalculates lastmod date for each of the content pages"
-task lastmod: :environment do
+task :lastmod, [:host] => :environment do |_, args|
+  args.with_defaults(host: "localhost:3000")
   yaml    = YAML.load(File.open(LASTMOD_FILE_PATH))
   logs    = []
   app     = ActionDispatch::Integration::Session.new(Rails.application)
-  headers = { "Host" => "localhost:3000" }
+  headers = { "Host" => args.host }
 
   published_pages.each do |page|
     path = page.first
