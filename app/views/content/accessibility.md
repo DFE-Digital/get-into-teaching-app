@@ -3,7 +3,6 @@ title: "Accessibility statement"
 image: false
 description: |-
   This accessibility statement applies to the Get into Teaching website, which is run by the Department for Education.
-date: "2020-11-06"
 backlink: "../"
 keywords:
   - Accessibility

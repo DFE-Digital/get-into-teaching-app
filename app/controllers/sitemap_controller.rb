@@ -1,6 +1,8 @@
 class SitemapController < ApplicationController
   DEFAULT_LASTMOD = "2021-03-01".freeze
   FUTURE_EVENTS_LIMIT = 100
+  LASTMOD_FILE_PATH = Rails.root.join("config/lastmod.yml")
+  LASTMOD_YAML = YAML.load(File.open(LASTMOD_FILE_PATH))
 
   ALIASES = {
     "/home" => "/",
@@ -30,7 +32,7 @@ private
 
           xml.url do
             xml.loc(request.base_url + page_location(path))
-            xml.lastmod(metadata.fetch(:date) { DEFAULT_LASTMOD })
+            xml.lastmod(lastmod_date(path, metadata))
             xml.priority(metadata.fetch(:priority)) if metadata.key?(:priority)
           end
         end
@@ -38,11 +40,18 @@ private
         OTHER_PATHS.each do |events_path|
           xml.url do
             xml.loc(request.base_url + events_path)
-            xml.lastmod(DEFAULT_LASTMOD)
+            xml.lastmod(lastmod_date(events_path))
           end
         end
       end
     end
+  end
+
+  def lastmod_date(path, metadata=nil)
+    lastmod_date = LASTMOD_YAML.dig(path, "date")
+    lastmod_date = Time.parse(lastmod_date).strftime("%Y-%m-%d") if lastmod_date
+
+    metadata&.dig(:date) || lastmod_date || DEFAULT_LASTMOD
   end
 
   def published_pages
