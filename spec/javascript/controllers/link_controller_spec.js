@@ -43,60 +43,6 @@ describe('LinkController', () => {
     });
   });
 
-  describe('making external links open in new windows', () => {
-    beforeEach(() => {
-      document.body.innerHTML = `
-      <div data-controller="link" data-link-target="content" data-link-assets-url-value="https://assets-url.com">
-        <div class="content">
-          <a id="content-external-link" href="https://www.sample.com/content-link">Content external link</a>
-          <a id="content-internal-link" href="/internal-link">Content internal link</a>
-          <a id="content-anchor-link" href="#subheading">Content anchor link</a>
-          <a id="asset-link" href="https://assets-url.com/doc.pdf">Content PDF link</a>
-        </div>
-        <a href="https://www.sample.com/non-content-link">Non-content link</a>
-        <a href="https://www.sample.com/another-non-content-link">Another non-content link</a>
-      </div>`;
-    });
-
-    beforeEach(() => {
-      const application = Application.start();
-      application.register('link', LinkController);
-    });
-
-    describe('when loaded', () => {
-      it("adds target='_blank' to the content external link", () => {
-        const contentExternalLink = document.getElementById(
-          'content-external-link'
-        );
-        expect(contentExternalLink.getAttribute('target')).toEqual('_blank');
-      });
-
-      it("adds rel='noopener' to the content external link", () => {
-        const contentExternalLink = document.getElementById(
-          'content-external-link'
-        );
-        expect(contentExternalLink.getAttribute('rel')).toEqual(
-          'noopener'
-        );
-      });
-
-      it("doesn't add target='_blank' to links to assets", () => {
-        const assetLink = document.getElementById('asset-link');
-        expect(assetLink.hasAttribute('target')).toBe(false);
-      });
-
-      it("doesn't add target='_blank' to links to internal paths", () => {
-        const linkNodes = [...document.getElementsByTagName('a')];
-
-        linkNodes
-          .filter((link) => !link.href.startsWith('http'))
-          .forEach((link) => {
-            expect(link.hasAttribute('target')).toBe(false);
-          });
-      });
-    });
-  });
-
   describe('wrapping the last button in a span', () => {
     beforeEach(() => {
       document.body.innerHTML = `
