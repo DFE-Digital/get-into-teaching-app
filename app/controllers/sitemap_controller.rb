@@ -47,9 +47,9 @@ private
     end
   end
 
-  def lastmod_date(path, metadata=nil)
+  def lastmod_date(path, metadata = nil)
     lastmod_date = LASTMOD_YAML.dig(path, "date")
-    lastmod_date = Time.parse(lastmod_date).strftime("%Y-%m-%d") if lastmod_date
+    lastmod_date = Time.zone.parse(lastmod_date).strftime("%Y-%m-%d") if lastmod_date
 
     metadata&.dig(:date) || lastmod_date || DEFAULT_LASTMOD
   end
