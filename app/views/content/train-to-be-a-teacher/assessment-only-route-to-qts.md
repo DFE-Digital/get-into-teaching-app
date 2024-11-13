@@ -234,64 +234,6 @@ provider_groups:
       telephone: "0203 488 2805"
       international_phone: "+442034882805"
       
-  National:
-    providers:
-    - header: "Colchester Teacher Training Consortium"
-      link: "https://colchesterttc.org.uk/courses"
-      name: "Christine Wager"
-      email: "enquiries@colchesterttc.org.uk"
-      telephone: "01206 364728"
-      international_phone: "+441206364728"
-      
-    - header: "Educate Group Initial Teacher Training"
-      link: "https://educate-group.co.uk/assessment-only-route/"
-      name: "Claire King"
-      email: "aor@educate-group.co.uk"
-      telephone: "07973 286995"
-      international_phone: "+447973286995"
-      
-    - header: "Essex and Thames SCITT"
-      link: "https://etpscitt.co.uk/our-courses-pgce-qts/assessment-only-essex-southend-thurrock/"
-      name: "Sarah Sloper"
-      email: "sarah@ete.org.uk"
-      telephone: "01268 988580"
-      international_phone: "+441268988580"
-      
-    - header: "Keele and North Staffordshire Teacher Education"
-      link: "https://www.knste.set.org/assessment-only-route"
-      name: "KNSTE"
-      email: "knste.ao@knste.set.org"
-      telephone: "01782 948280"
-      international_phone: "+441782948280"
-      
-    - header: "Nottingham Trent University"
-      link: "https://www.ntu.ac.uk/course/education/pr/assessment-only-route-to-qts-secondary"
-      name: "Jamie Tinney"
-      email: "AssessmentOnly@ntu.ac.uk"
-      telephone: "0115 848 2666"
-      international_phone: "+441158482666"
-      
-    - header: "Stockton SCITT"
-      link: "https://stocktonscitt.uk/assessment-only-route-to-qts/"
-      name: "Kirsten Webber"
-      email: "scitt@stockton.gov.uk"
-      telephone: "01642 527675"
-      international_phone: "+441642527675"
-      
-    - header: "Teaching London: LDBS SCITT"
-      link: "https://www.teachinglondon.org/ourcourses/assessment-only-route-to-qts/"
-      name: "Saskia Rossi"
-      email: "admin@teachinglondon.org"
-      telephone: "020 7932 1129"
-      international_phone: "+442079321129"
-      
-    - header: "The University of Buckingham"
-      link: "https://www.buckingham.ac.uk/courses/postgraduate/assessment-only-ao-route-to-qualified-teacher-status-primary-and-secondary"
-      name: "Shonali Mathur"
-      email: "shonali.mathur@buckingham.ac.uk"
-      telephone: "07538 473145"
-      international_phone: "+447538473145"
-      
   North East:
     providers:
     - header: "Exchange Teacher Training"
@@ -625,6 +567,64 @@ provider_groups:
       email: "admin@sheffieldscitt.org.uk"
       
       
+      
+  National:
+    providers:
+    - header: "Colchester Teacher Training Consortium"
+      link: "https://colchesterttc.org.uk/courses"
+      name: "Christine Wager"
+      email: "enquiries@colchesterttc.org.uk"
+      telephone: "01206 364728"
+      international_phone: "+441206364728"
+      
+    - header: "Educate Group Initial Teacher Training"
+      link: "https://educate-group.co.uk/assessment-only-route/"
+      name: "Claire King"
+      email: "aor@educate-group.co.uk"
+      telephone: "07973 286995"
+      international_phone: "+447973286995"
+      
+    - header: "Essex and Thames SCITT"
+      link: "https://etpscitt.co.uk/our-courses-pgce-qts/assessment-only-essex-southend-thurrock/"
+      name: "Sarah Sloper"
+      email: "sarah@ete.org.uk"
+      telephone: "01268 988580"
+      international_phone: "+441268988580"
+      
+    - header: "Keele and North Staffordshire Teacher Education"
+      link: "https://www.knste.set.org/assessment-only-route"
+      name: "KNSTE"
+      email: "knste.ao@knste.set.org"
+      telephone: "01782 948280"
+      international_phone: "+441782948280"
+      
+    - header: "Nottingham Trent University"
+      link: "https://www.ntu.ac.uk/course/education/pr/assessment-only-route-to-qts-secondary"
+      name: "Jamie Tinney"
+      email: "AssessmentOnly@ntu.ac.uk"
+      telephone: "0115 848 2666"
+      international_phone: "+441158482666"
+      
+    - header: "Stockton SCITT"
+      link: "https://stocktonscitt.uk/assessment-only-route-to-qts/"
+      name: "Kirsten Webber"
+      email: "scitt@stockton.gov.uk"
+      telephone: "01642 527675"
+      international_phone: "+441642527675"
+      
+    - header: "Teaching London: LDBS SCITT"
+      link: "https://www.teachinglondon.org/ourcourses/assessment-only-route-to-qts/"
+      name: "Saskia Rossi"
+      email: "admin@teachinglondon.org"
+      telephone: "020 7932 1129"
+      international_phone: "+442079321129"
+      
+    - header: "The University of Buckingham"
+      link: "https://www.buckingham.ac.uk/courses/postgraduate/assessment-only-ao-route-to-qualified-teacher-status-primary-and-secondary"
+      name: "Shonali Mathur"
+      email: "shonali.mathur@buckingham.ac.uk"
+      telephone: "07538 473145"
+      international_phone: "+447538473145"
       
   Non-UK:
     description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers

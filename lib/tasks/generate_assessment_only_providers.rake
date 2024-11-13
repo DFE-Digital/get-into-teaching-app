@@ -19,7 +19,7 @@ namespace :assessment_only_providers do
       end
     end
 
-    provider_groups = provider_groups.transform_values { |v| v["providers"].sort_by { |a| a["header"] } }.sort_by { |x, _y| [x == "Non-UK" ? 1 : 0, x] }
+    provider_groups = provider_groups.transform_values { |v| v["providers"].sort_by { |a| a["header"] } }.sort_by { |x, _y| [case x when "Non-UK"then 2; when "National" then 1; else 0 end, x] }
 
     File.open("app/views/content/train-to-be-a-teacher/assessment-only-route-to-qts.md", "w") do |f|
       f.write ERB.new(File.read("lib/tasks/support/assessment-only-route-to-qts.md.erb"), trim_mode: "<>").result(binding)
