@@ -1,6 +1,4 @@
 require 'yaml'
-require 'net/http'
-include Rails.application.routes.url_helpers
 require "action_dispatch/testing/integration"
 require "digest/sha1"
 
@@ -9,52 +7,55 @@ desc "Recalculates lastmod date for each of the content pages"
 task :lastmod => :environment do
   LASTMOD_FILE_PATH = Rails.root.join("config/lastmod.yml")
 
-  # 1. Get all the content pages to monitor
-
   events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
     start_after: Time.zone.now,
     quantity: 100,
     type_ids: [Crm::EventType.get_into_teaching_event_id, Crm::EventType.online_event_id],
   )    
-    
-  content_pages = ::Pages::Frontmatter.list.reject { |_path, fm| fm[:draft] }
-  event_pages = events.map { |e| event_path(e.readable_id) }.index_with({})
+  content_pages   = ::Pages::Frontmatter.list.reject { |_path, fm| fm[:draft] }
+  event_pages     = events.map { |e| Rails.application.routes.url_helpers.event_path(e.readable_id) }.index_with({})
   published_pages = content_pages.merge(event_pages)
 
-  ## 2. For each page we want to monitor, make a request
+  yaml = YAML.load(File.open(LASTMOD_FILE_PATH))
+  logs = []
 
-  # Making a request with a single page so far: "/"
-  # path = published_pages.keys.first
+  published_pages.each do |page|
+    path    = page.first
+    headers = { "Host" => "localhost:3000" }
+    app     = ActionDispatch::Integration::Session.new(Rails.application)
 
-  app = ActionDispatch::Integration::Session.new(Rails.application)
-  app.get("/", headers: { "Host" => "localhost:3000" })
+    app.get(path, headers: headers)
+    redirected_path = app.response.headers["Location"]
 
-  ## Follow the redirect if there is one
-  # redirected_path = app.response.headers["Location"]
-  # body = if redirected_path 
-  #          app.get(redirected_path, headers: { "Host" => "localhost:3000" })
-  #          app.response.body
-  #        else
-  #          app.response.body
-  #        end
+    body = if redirected_path 
+             app.get(redirected_path, headers: headers)
+             app.response.body
+           else
+             app.response.body
+           end
 
-  # Write the response to a html file for now...
-  File.write(Rails.root.join("LASTMOD.html"), app.response.body)
+    document = Nokogiri::HTML(body).css("body") # Only hash body content as head is liable to change frequently
 
-  ## 3. Extract the body and hash it
-  # document = Nokogiri::HTML(body).css("body")
-  # hash      = Digest::SHA1.hexdigest(document.to_s)
+    # Strip authenticity token as this changes per request
+    auth_token_input = document.at_css("form input[name='authenticity_token']")
+    auth_token_input['value'] = "" if auth_token_input
 
-  # yaml = {
-  #   path => { 
-  #     "id" => 1, 
-  #     "html" => body, 
-  #     "body" => document,
-  #     "date" => Time.current, 
-  #     "hash" => hash 
-  #   }
-  # }
-  #
-  ## 4. Write paths to a yml file / Compare with previous hashes / determine lastmod event
-  # File.write(LASTMOD_FILE_PATH, yaml.to_yaml)
+    # Hash content
+    hash = Digest::SHA1.hexdigest(document.to_s)
+
+    # If content hash has changed
+    if hash != yaml[path]["hash"]
+      logs << "#{path} has changed"
+
+      yaml[path] = { 
+        "date" => DateTime.current.to_s,
+        "hash" => hash 
+      }
+    end
+  end
+
+  # Update yaml file
+  File.open(LASTMOD_FILE_PATH, 'w') { |f| YAML.dump(yaml, f) }
+
+  puts logs.join("\n")
 end
