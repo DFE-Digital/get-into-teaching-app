@@ -4,6 +4,16 @@
   max-width: 1500px;
   margin: auto;
 
+  &:not(:has(> picture)) {
+    .quote-with-image__content {
+      left: 0;
+
+      @include mq($from: tablet) {
+        margin: auto;
+      }
+    }
+  }
+
   @include mq($from: tablet) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -64,12 +74,22 @@
       }
     }
 
-    @include mq($from: mobile, $until: desktop) {
+    @include mq($from: mobile) {
       margin: auto 50px;
     }
 
-    @include mq($from: desktop) {
-      margin: auto 100px;
+    @include mq($from: tablet, $until: desktop) {
+      width: 368px;
+    }
+
+    @include mq($from: desktop, $until: wide) {
+      left: 50px;
+      width: 500px;
+    }
+
+    @include mq($from: wide) {
+      left: 50px;
+      width: 700px;
     }
 
     &--with-quotes {
@@ -110,14 +130,6 @@
           bottom: -158px;
           right: -50px;
         }
-      }
-    }
-  }
-
-  &:has(> picture) {
-    .quote-with-image__content {
-      @include mq($from: tablet) {
-        width: 100%;
       }
     }
   }
