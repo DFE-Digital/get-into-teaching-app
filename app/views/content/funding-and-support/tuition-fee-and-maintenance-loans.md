@@ -87,12 +87,12 @@ Find out about student finance across the UK:
 
 * [Student Finance Wales website](https://www.studentfinancewales.co.uk/)
 * [Student Awards Agency Scotland website](https://www.saas.gov.uk/)
-* [student Finance Northern Ireland website](https://www.studentfinanceni.co.uk/)
+* [Student Finance Northern Ireland website](https://www.studentfinanceni.co.uk/)
 
 Or, you'll need to contact the education authority if you live in Jersey, Guernsey, or the Isle of Man.
 
 Find out about student finance in the Channel Islands and the Isle of Man:
 
 * [student finance guidance from the Government of Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx)
-* [student finance guidance from the Sates of Guernsey](https://www.gov.gg/article/152744/Policies)
-* [student awards guidance from the Isle of Man government website](https://www.gov.im/student-grants)
+* [student finance guidance from the States of Guernsey](https://www.gov.gg/article/152744/Policies)
+* [student awards guidance from the Isle of Man Government website](https://www.gov.im/student-grants)
