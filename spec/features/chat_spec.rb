@@ -22,7 +22,7 @@ RSpec.feature "Chat", type: :feature do
         dismiss_cookies
 
         within(".talk-to-us") do
-          click_link("Chat online")
+          click_link("Open chat in new tab")
         end
 
         popup_window_handle = (page.driver.browser.window_handles - [page.driver.current_window_handle]).first

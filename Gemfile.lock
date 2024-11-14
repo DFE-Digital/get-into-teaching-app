@@ -182,8 +182,8 @@ GEM
       racc
     builder (3.3.0)
     byebug (11.1.3)
-    canonical-rails (0.2.15)
-      actionview (>= 4.1, <= 7.2)
+    canonical-rails (0.2.16)
+      actionview (>= 4.1, < 7.3)
     capybara (3.40.0)
       addressable
       matrix
