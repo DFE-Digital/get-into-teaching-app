@@ -60,7 +60,7 @@ en:
         name: "Biology"
         group: "Secondary"
         sub_head: "Biology - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_biology} are available for trainee biology teachers if you're eligible."
+        funding: "Bursaries of %{bursaries_postgraduate_biology} are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
       business_studies:
         name: "Business studies"
         group: "Secondary"
