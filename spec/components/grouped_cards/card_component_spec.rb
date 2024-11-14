@@ -21,7 +21,7 @@ describe GroupedCards::CardComponent, type: "component" do
   it { is_expected.to have_css ".group__card__fields span", text: "Joe Bloggs" }
   it { is_expected.to have_link "joe.bloggs@first.org", href: "mailto:joe.bloggs@first.org" }
   it { is_expected.to have_link "01234 567890", href: "tel:+441234567890" }
-  it { is_expected.to have_css ".group__card__fields span", text: "ext. 123" }
+  it { is_expected.to have_css ".group__card__fields span.extension", text: "ext. 123" }
 
   it { is_expected.not_to have_css "a h4" }
 

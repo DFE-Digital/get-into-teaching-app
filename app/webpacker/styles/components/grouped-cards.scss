@@ -61,6 +61,10 @@
       &__fields span:first-child {
         font-weight: bold;
       }
+
+      &__fields span.extension {
+        margin-left: 0.5em;
+      }
     }
   }
 }
