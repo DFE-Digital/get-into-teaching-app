@@ -65,13 +65,15 @@ If you're interested in exploring other opportunities to work with pre-school ch
 
 There are 2 ways to train to become an early years teacher, either as a postgraduate if you already have a degree, or as part of an undergraduate degree.
 
-To do postgraduate training, you’ll need a bachelor’s degree or an equivalent, for example, a vocational, professional, or overseas qualification.
+To do postgraduate training, you’ll need a bachelor’s degree or an equivalent, for example, a vocational or professional qualification, or equivalent qualification you gained outside the UK.
 
-To start early years teacher training, you’ll need these GCSE qualifications (or a vocational, professional, or overseas qualification to the same standard):
+To start early years teacher training, you’ll need these GCSE qualifications:
 
 * maths grade 4 (C)
 * English grade 4 (C)
 * science grade 4 (C)
+
+If you do not have GCSEs, you'll need an equivalent qualifiaction, such as a vocational or professional qualification, or an equivalent qualification you gained outside the UK.
 
 $international-content$
 
