@@ -424,7 +424,7 @@ en:
         teacher_training_adviser/steps/uk_or_overseas:
           attributes:
             uk_or_overseas:
-              inclusion: "Select if you live in the UK or overseas"
+              inclusion: "Select if you live in the UK or outside the UK"
         teacher_training_adviser/steps/what_subject_degree:
           attributes:
             degree_subject:
