@@ -7,6 +7,7 @@ date: "2021-05-07"
 image: "static/images/content/hero-images/0032.jpg"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-send
+    
 keywords:
   - SEND
   - disabled
@@ -22,6 +23,17 @@ Special educational needs and disabilities can affect pupils’ ability to learn
 
 Teaching pupils with special educational needs and disabilities (SEND) offers you a unique opportunity to make a lasting impact in their lives. You’ll help pupils overcome challenges and guide them to discover their strengths and fulfil their potential. Through your support, they’ll build self-esteem and resilience. 
 
+<blockquote class="quote quote--background-white quote--indent">
+  <p>I'm passionate about being there for my students, helping them see their potential and overcome their own challenges.</p>
+    <footer class="footer">
+      <div class="author">
+        <div>
+            <cite class="name">Gloria, lead maths practitioner</cite>
+        </div>
+      </div>
+</footer>
+</blockquote>
+
 Working with pupils with complex needs can be incredibly fulfilling. You’ll have the opportunity to: 
 
 * develop innovative teaching methods 
@@ -31,12 +43,7 @@ Working with pupils with complex needs can be incredibly fulfilling. You’ll ha
 
 Teachers who focus on supporting pupils with SEND are often called SEND teachers, but all teachers teach children with complex needs. Whether you train to teach in mainstream or special schools, or both, you’ll learn how to teach pupils with SEND. 
 
-  <section class="col col-720">
-    <!-- Quote: Holly, science teacher -->
-    <%= render 'content/shared/quotes/quote_science_holly' %>
-  </section>
-  
-## Send focused teaching roles
+## SEND-focused teaching roles
 
 You can choose to specialise in teaching and nurturing pupils with SEND in a more SEND-focused role. This could be through:
   
@@ -44,7 +51,18 @@ You can choose to specialise in teaching and nurturing pupils with SEND in a mor
 * becoming a special educational needs co-ordinator (SENCO)
 * completing the mandatory qualification in sensory impairment (MQSI)
 
-  
+<blockquote class="quote quote--background-white quote--indent">
+  <p>My mentor was the special educational needs co-ordinator. This meant I was able to learn more about this role and improve my understanding of the strategies and support available for children with special educational needs and disabilities.</p>
+    <footer class="footer">
+      <div class="author">
+        <div>
+            <cite class="name">Abbe, trainee teacher</cite>
+        </div>
+      </div>
+</footer>
+</blockquote>
+
+
 ### Teaching in a special school
 
 Special schools provide education for pupils with special educational needs and disabilities. Special schools with pupils aged 11 and older can specialise in 1 of the 4 [areas of special educational needs](https://www.gov.uk/children-with-special-educational-needs): 
