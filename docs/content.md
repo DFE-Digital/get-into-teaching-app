@@ -553,35 +553,11 @@ Add this code to a html file:
 ```
 You can edit the colours used such as "yellow", "pink", "green", "blue" and "purple". You can also specify whether you want the quote marks to appear by using true or false in the quotes parameter. For shorter quotes its better to use an image with a height cropped to around 300 pixels.
 
-You can use the component in a markdown file by setting it up in the front matter as shown below. Note that `quote_1` is an example name and this can be anything.
-
-
-```yaml
----
-quote_with_image:
-  quote_1:
-    title: "Example title to go here",
-    text: "<h4>Heading if neededd</h4><p>Example information or quote</p><a href='#'>Link text/a>",
-    background_color: "blue",
-    heading_color: "pink",
-    image_path: "static/images/content/hero-images/0034.jpg"
----
-```
-
-You can then use this quote where you want it to appear in the markdown like so...
-
-```md
-$quote_1$
-```
-
-You may have to wrap this in a row with some height to create the desired spacing around the component...
+When using in a markdown file, copy the above code into a new html file and link to the file in the markdown code, in the same way you would when creating a subject page:
 
 ```html
-<div class="row">
-  <div class="col-space-l col-space-l-top">
-    $quote_1$
-  </div>
-</div>
+content: 
+  - "content/life-as-a-teacher/pay-and-benefits/quote" 
 ```
 
 ## Creating a Blog Post
