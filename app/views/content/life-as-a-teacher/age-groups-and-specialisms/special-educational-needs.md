@@ -19,40 +19,40 @@ keywords:
   - special school
 
 ---
-Special educational needs and disabilities (SEND) can affect pupils’ ability to learn. For example, they may struggle to read or write because they have dyslexia, or they may have difficulties concentrating. Some pupils may have physical impairments which means they need special equipment to help them learn.  
+Special educational needs and disabilities (SEND) can affect pupils’ ability to learn. For example, they may struggle to read or write because they have dyslexia, or they may have difficulty concentrating. Some pupils may have physical impairments which means they need special equipment to help them learn.  
 
 Teaching pupils with SEND offers you a unique opportunity to make a lasting impact in their lives. You’ll help pupils overcome challenges and guide them to discover their strengths and fulfil their potential. Through your support, they’ll build self-esteem and resilience. 
 
 <blockquote class="quote quote--background-white quote--indent">
-  <p>I'm passionate about being there for my students, helping them see their potential and overcome their own challenges.</p>
-  <footer class="footer">
-    <div class="author">
-      <div>
-        <cite class="name">Gloria, lead maths practitioner</cite>
+  <p>I'm passionate about being there for my students, helping them see their potential and overcome their own challenges."</p>
+    <footer class="footer">
+      <div class="author">
+        <div>
+            <cite class="name">Gloria, lead maths practitioner</cite>
+        </div>
       </div>
-    </div>
-  </footer>
+</footer>
 </blockquote>
 
 Working with pupils with complex needs can be incredibly fulfilling. You’ll have the opportunity to: 
 
-* develop innovative teaching methods 
 * gain a deep understanding of diverse learning needs 
 * nurture a supportive learning environment  
 * advocate for inclusivity  
 
-Teachers who focus on supporting pupils with SEND are often called SEND teachers, but all teachers teach children with complex needs. Whether you train to teach in mainstream or special schools, or both, you’ll learn how to teach pupils with SEND. 
+Teachers who focus on supporting pupils with SEND are often called SEND teachers, but all teachers teach children with complex needs. Whether you train to teach in mainstream schools, special schools, or both, you’ll learn how to teach, and will gain experience of teaching, pupils with SEND. 
+
 
 ## SEND-focused teaching roles
 
-You can choose to specialise in teaching and nurturing pupils with special educational needs in a more SEND-focused role. This could be through:
+All initial teacher training courses cover teaching pupils with SEND. Once you have gained QTS, you can choose to specialise in teaching and nurturing pupils with SEND in a more SEND-focused role. This could be through:
   
 * teaching in a special school
 * becoming a special educational needs co-ordinator (SENCO)
 * completing the mandatory qualification in sensory impairment (MQSI)
 
 <blockquote class="quote quote--background-white quote--indent">
-  <p>My mentor was the special educational needs co-ordinator. This meant I was able to learn more about this role and improve my understanding of the strategies and support available for children with special educational needs and disabilities.</p>
+  <p>My mentor was the special educational needs co-ordinator. This meant I was able to learn more about this role and improve my understanding of the strategies and support available for children with special educational needs and disabilities."</p>
     <footer class="footer">
       <div class="author">
         <div>
@@ -94,7 +94,5 @@ To teach pupils with hearing impairments, vision impairments or multi-sensory im
 An MQSI will give you the skills needed to recognise pupils’ barriers to learning and help them overcome these. 
 
 ## Training for teaching pupils with SEND
-
-All initial teacher training courses cover teaching pupils with SEND. Once you have gained QTS, you can look for courses that specialise in SEND to develop your training further. 
 
 You can [find a teacher training course](https://find-teacher-training-courses.service.gov.uk/) and filter by ‘courses with a SEND specialism’ if you have a particular interest in the area. 
