@@ -19,9 +19,9 @@ keywords:
   - special school
 
 ---
-Special educational needs and disabilities can affect pupils’ ability to learn. For example, they may struggle to read or write because they have dyslexia, or they may have difficulties concentrating. Some pupils may have physical impairments which means they need special equipment to help them learn.  
+Special educational needs and disabilities (SEND) can affect pupils’ ability to learn. For example, they may struggle to read or write because they have dyslexia, or they may have difficulties concentrating. Some pupils may have physical impairments which means they need special equipment to help them learn.  
 
-Teaching pupils with special educational needs and disabilities (SEND) offers you a unique opportunity to make a lasting impact in their lives. You’ll help pupils overcome challenges and guide them to discover their strengths and fulfil their potential. Through your support, they’ll build self-esteem and resilience. 
+Teaching pupils with SEND offers you a unique opportunity to make a lasting impact in their lives. You’ll help pupils overcome challenges and guide them to discover their strengths and fulfil their potential. Through your support, they’ll build self-esteem and resilience. 
 
 <blockquote class="quote quote--background-white quote--indent">
   <p>I'm passionate about being there for my students, helping them see their potential and overcome their own challenges.</p>
@@ -45,7 +45,7 @@ Teachers who focus on supporting pupils with SEND are often called SEND teachers
 
 ## SEND-focused teaching roles
 
-You can choose to specialise in teaching and nurturing pupils with SEND in a more SEND-focused role. This could be through:
+You can choose to specialise in teaching and nurturing pupils with special educational needs in a more SEND-focused role. This could be through:
   
 * teaching in a special school
 * becoming a special educational needs co-ordinator (SENCO)
@@ -65,7 +65,7 @@ You can choose to specialise in teaching and nurturing pupils with SEND in a mor
 
 ### Teaching in a special school
 
-Special schools provide education for pupils with special educational needs and disabilities. Special schools with pupils aged 11 and older can specialise in 1 of the 4 [areas of special educational needs](https://www.gov.uk/children-with-special-educational-needs): 
+Special schools provide education for pupils with special educational needs and disabilities. Special schools with pupils aged 11 and older can specialise in 1 of the 4 areas of special educational needs: 
 
 * communication and interaction 
 

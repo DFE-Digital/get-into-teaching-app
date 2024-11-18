@@ -67,7 +67,7 @@ You can also train to teach primary with a specialist subject, for example prima
 
 Or you can train to teach two subjects at secondary, for example maths with physics, so you can develop the skills to teach in an additional subject.
 
-You can choose to specialise in [teaching children with special educational needs](life-as-a-teacher/age-groups-and-specialisms/special-educational-needs), such as by training to become a special educational needs co-ordinator.
+You can choose to specialise in [teaching children with special educational needs](life-as-a-teacher/age-groups-and-specialisms/special-educational-needs), such as by training to become a special educational needs co-ordinator (SENCO).
 
 Talk to your training provider to find out what you can train to teach.
 
