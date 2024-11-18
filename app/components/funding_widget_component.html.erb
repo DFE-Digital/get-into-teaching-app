@@ -23,7 +23,6 @@
           </div>
         <% end %>
       </div>
-
       <% if form.subject.present? %>
         <% if funding_results.blank? %>
           <div class="call-to-action__text">
@@ -42,7 +41,7 @@
           <div class="call-to-action__text">
             <h3><%= sub_head %></h3>
             <div>
-              <%= helpers.safe_format(funding_results) %>
+              <%= helpers.safe_html_format(funding_results) %>
               <p>You can receive this alongside a <a href="/funding-and-support/tuition-fee-and-maintenance-loans">tuition fee and maintenance loan</a>.</p>
               <p>You could also get extra funding support <a href="/funding-and-support/if-youre-a-parent-or-carer">if you're a parent or carer</a> or <a href="/funding-and-support/if-youre-disabled">if you're disabled</a>.</p>
               <%= render Content::InsetTextComponent.new(

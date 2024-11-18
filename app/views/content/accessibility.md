@@ -31,7 +31,7 @@ For example, that means you should be able to:
 
 We’ve also made the website text as simple as possible to understand.
 
-[AbilityNet](https://mcmw.abilitynet.org.uk/) has advice on making your device easier to use if you have a disability.
+The [AbilityNet website](https://mcmw.abilitynet.org.uk/) has advice on making your device easier to use if you have a disability.
 
 ## Feedback and contact information
 
@@ -49,7 +49,7 @@ We’re always looking to improve the accessibility of this website. If you find
 
 The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’).
 
-If you’re not happy with how we respond to your complaint, [contact the Equality Advisory and Support Service](https://www.equalityadvisoryservice.com/).
+If you’re not happy with how we respond to your complaint, [contact the Equality Advisory and Support Service via their website](https://www.equalityadvisoryservice.com/).
 
 ## Technical information about this website’s accessibility
 
@@ -65,4 +65,4 @@ This statement was prepared on 29 January 2024. It was last reviewed on 29 Janua
 
 This website was last tested independently on 25 September 2023. The test was carried out by Digital Accessibility Centre (DAC) Limited.
 
-Our next external audit is scheduled for October 2024.
+Our next external audit is scheduled for November 2024.

@@ -51,6 +51,12 @@
               description: "Find out how to become a physics teacher and inspire the next generation of scientists, engineers and innovators.",
               path: "/life-as-a-teacher/explore-subjects/physics"
             )) %>
+                <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Religious education",
+              description: "As a religious education teacher, you'll guide pupils through the fascinating and diverse range of beliefs and practices across the world.",
+              path: "/life-as-a-teacher/explore-subjects/religious-education"
+            )) %>
         </ul>
       </nav>
     </section>

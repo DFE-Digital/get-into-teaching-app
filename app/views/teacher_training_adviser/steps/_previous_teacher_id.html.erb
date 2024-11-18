@@ -1,7 +1,6 @@
 <%= f.govuk_fieldset legend: { text: "What is your teacher reference number (TRN)?", tag: "h1" } do %>
   <%= f.govuk_text_field :teacher_id, width: 20 %>
 <% end %>
-
 <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
@@ -10,6 +9,6 @@
   </summary>
   <div class="govuk-details__text">
     <p>Your TRN may be shown on a payslip or teacher pension statement.</p>
-    <p>Or you can use the <%= link_to "Find a lost TRN service", "https://find-a-lost-trn.education.gov.uk/start" %> to check if you have a TRN or to find your TRN.</p>
+    <p>Or you can use the <%= link_to "Find a lost TRN service", "https://find-a-lost-trn.education.gov.uk/start", class: "new-tab" %> to check if you have a TRN or to find your TRN.</p>
   </div>
 </details>

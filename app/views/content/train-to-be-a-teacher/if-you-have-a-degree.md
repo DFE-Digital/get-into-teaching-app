@@ -57,9 +57,10 @@ $international-content$
 
 Your postgraduate teacher training course might be provided by: 
 
-* a university (sometimes referred to as university-led training) 
-* a school or group of schools (sometimes referred to as school-led training, or an apprenticeship) 
-* [Teach First](https://www.teachfirst.org.uk/) (a charitable organisation)
+* a university, sometimes referred to as university-led training 
+* a school or group of schools, sometimes referred to as school-led training 
+
+Your teacher training course may also be provided by a company or charity. For example, [Teach First is a charitable organisation that provides teacher training](https://www.teachfirst.org.uk/).
 
 Some providers are ‘accredited’ – this means they've been approved by the Department for Education (DfE) to run teacher training courses.
 
