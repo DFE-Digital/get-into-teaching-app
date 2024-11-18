@@ -2,7 +2,7 @@
 title: Become a history teacher
 subject: history
 title_paragraph: |-
-  <p>As a history teacher, you'll bring the past to life by introducing pupils to key events and characters that have shaped our present.</p>
+  <p>As a history teacher, you'll bring the past to life by introducing pupils to key events and significant people.</p>
   <p>
   By encouraging the use of critical thinking, you’ll help pupils form their own opinions and uncover new perspectives.</p>
   <p>
