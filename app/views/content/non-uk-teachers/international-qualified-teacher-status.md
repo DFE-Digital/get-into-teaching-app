@@ -107,8 +107,7 @@ The following providers are accepting applications from all over the world:
 
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
 
-* [National Institute of Teaching and Education (NITE), part of the Coventry University Group](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/)
-
+* [National Institute of Teaching and Education (NITE)](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/), part of the Coventry University Group
 * [Tes Institute](https://www.tes.com/institute/courses/iqts) – this provider cannot accept applications from Hong Kong
 
 * [University of Buckingham](https://www.buckingham.ac.uk/courses/postgraduate/international-qualified-teacher-status-iqts)
