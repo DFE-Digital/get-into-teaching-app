@@ -25,13 +25,13 @@ Teaching pupils with special educational needs and disabilities (SEND) offers yo
 
 <blockquote class="quote quote--background-white quote--indent">
   <p>I'm passionate about being there for my students, helping them see their potential and overcome their own challenges.</p>
-    <footer class="footer">
-      <div class="author">
-        <div>
-            <cite class="name">Gloria, lead maths practitioner</cite>
-        </div>
+  <footer class="footer">
+    <div class="author">
+      <div>
+        <cite class="name">Gloria, lead maths practitioner</cite>
       </div>
-</footer>
+    </div>
+  </footer>
 </blockquote>
 
 Working with pupils with complex needs can be incredibly fulfilling. You’ll have the opportunity to: 
