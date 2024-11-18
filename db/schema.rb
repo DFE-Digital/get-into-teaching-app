@@ -10,9 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_23_104621) do
+ActiveRecord::Schema[7.0].define(version: 2024_01_18_000000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "page_modifications", force: :cascade do |t|
+    t.string "path", null: false
+    t.string "content_hash", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["path"], name: "index_page_modifications_on_path", unique: true
+  end
 
   create_table "user_feedbacks", force: :cascade do |t|
     t.string "topic", null: false

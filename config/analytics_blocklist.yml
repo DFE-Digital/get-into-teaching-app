@@ -2,3 +2,9 @@
 :shared:
   :user_feedbacks:
   - explanation
+  :page_modifications:
+  - id
+  - path
+  - content_hash
+  - created_at
+  - updated_at
