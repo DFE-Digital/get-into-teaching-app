@@ -3,9 +3,8 @@ title: Become a secondary teacher
 subject: secondary
 title_paragraph: |-
   <p>
-  As a secondary teacher, you will play a pivotal role in students' lives. You'll see them grow from children to young adults, inspiring them to become passionate about your subject and shaping their futures.</p>
-  <p>
-  Depending on the subject that you teach you could be entitiled to a bursary or scholarship for training to teach.</p>
+  As a secondary teacher, you'll play a pivotal role in students' lives. You'll see them grow from children to young adults, inspiring them to become passionate about your subject and shaping their futures.</p>
+  
 description: |-
     Find out how to become a secondary teacher, including what you'll teach and what funding is available to help you train.
 layout: "layouts/minimal"
