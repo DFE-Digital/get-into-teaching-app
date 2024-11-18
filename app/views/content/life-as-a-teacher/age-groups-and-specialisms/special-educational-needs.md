@@ -24,7 +24,7 @@ Special educational needs and disabilities (SEND) can affect pupils’ ability t
 Teaching pupils with SEND offers you a unique opportunity to make a lasting impact in their lives. You’ll help pupils overcome challenges and guide them to discover their strengths and fulfil their potential. Through your support, they’ll build self-esteem and resilience. 
 
 <blockquote class="quote quote--background-white quote--indent">
-  <p>I'm passionate about being there for my students, helping them see their potential and overcome their own challenges.</p>
+  <p>"I'm passionate about being there for my students, helping them see their potential and overcome their own challenges."</p>
   <footer class="footer">
     <div class="author">
       <div>
