@@ -14,11 +14,13 @@ require "action_view/railtie"
 # require "action_cable/engine"
 # require "sprockets/railtie"
 require "rails/test_unit/railtie"
-require_relative "../lib/fixnum"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+
+# Patch to Rack::PageCaching::Utils to substitute Fixnum --> Integer
+require_relative "../lib/patch_rack_page_caching"
 
 module GetIntoTeachingWebsite
   class Application < Rails::Application
