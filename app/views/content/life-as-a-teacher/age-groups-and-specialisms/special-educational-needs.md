@@ -40,7 +40,7 @@ Working with pupils with complex needs can be incredibly fulfilling. You’ll ha
 * nurture a supportive learning environment  
 * advocate for inclusivity  
 
-Teachers who focus on supporting pupils with SEND are often called SEND teachers, but all teachers teach children with complex needs. Whether you train to teach in mainstream schools, special schools, or both, you’ll learn how to teach, and will gain experience of teaching, pupils with SEND. 
+Teachers who focus on supporting pupils with SEND are often called SEND teachers, but all teachers teach children with complex needs. Whether you train to teach in mainstream schools, special schools, or both, you’ll teach pupils with SEND, and learn how to support their needs.
 
 
 ## SEND-focused teaching roles
