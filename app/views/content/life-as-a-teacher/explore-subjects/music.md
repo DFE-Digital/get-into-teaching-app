@@ -2,7 +2,7 @@
 title: Become a music teacher
 subject: music
 title_paragraph: |-
-  <p> As a music teacher, you’ll inspire pupils to unlock their creativity and get them to express themselves. You’ll foster a lifelong appreciation of music, enriching their lives beyond the classroom.</p>
+  <p>As a music teacher, you’ll inspire pupils to unlock their creativity and express themselves through performance. You’ll foster a lifelong appreciation of music, enriching their lives beyond the classroom.</p>
 
   <p>Tax-free bursaries of $bursaries_postgraduate_music$ are available for eligible trainee music teachers.</p>
 description: |-
