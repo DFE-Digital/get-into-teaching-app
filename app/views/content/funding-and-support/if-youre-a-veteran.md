@@ -53,11 +53,11 @@ All teacher training candidates are also eligible for [tuition fee and maintenan
 
 ## Get support
 
-[The Career Transition Partnership](https://www.ctp.org.uk/) supports leavers of the armed forces as they transition from the military into civilian life.
+[The Career Transition Partnership website](https://www.ctp.org.uk/) supports leavers of the armed forces as they transition from the military into civilian life.
 
-The [MOD's Enhanced Learning Credits Scheme (ELC)](https://www.enhancedlearningcredits.com/) promotes lifelong learning amongst members of the armed forces by providing financial support to pay for approved qualifications. You can contact them to find out about eligibility.
+The [MOD's Enhanced Learning Credits Scheme (ELC) website](https://www.enhancedlearningcredits.com/) promotes lifelong learning amongst members of the armed forces by providing financial support to pay for approved qualifications. You can contact them to find out about eligibility.
 
-If you're unsure about who to contact for support, [Veteran's Gateway](https://www.veteransgateway.org.uk/about/) can help put you in touch with the organisations you may need for advice and support.
+Find [support for UK armed forces veterans and their families](https://www.gov.uk/government/collections/find-support-for-veterans-and-their-families), including help with finance and employment.
 
 ### Get an adviser
 
