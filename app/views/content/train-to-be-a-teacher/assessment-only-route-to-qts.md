@@ -517,7 +517,7 @@ Talk to your provider about whether your experience makes you eligible for this 
 
 Or, find other ways you can [train to be a teacher](/train-to-be-a-teacher).
 
-### If you're based outside the UK or are a non-UK citizen
+### If you live outside the UK or are a non-UK citizen
 
 If you’re based outside the UK, you will need to contact a [non-UK assessment only provider](/train-to-be-a-teacher/assessment-only-route-to-qts#group--non-uk). You may also be interested in [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status). With iQTS, you can train where you live and work, with no need to visit the UK.
 
