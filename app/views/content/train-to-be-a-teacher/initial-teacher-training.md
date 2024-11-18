@@ -14,11 +14,6 @@ related_content:
     How to apply : "/how-to-apply-for-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-itt
-quote_with_image:
-    hasina:
-        title: "Hasina, science teacher"
-        text: "Teacher training has been by far one of the most fulfilling experiences of my life. It has made me realise my potential, testing the limits of my patience, confidence, organisational skills and empathy, as well as academic ability."
-    
 ---
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
@@ -59,12 +54,6 @@ All initial teacher training will help you:
 * manage behaviour effectively to ensure a good and safe learning
 environment
 * make a positive contribution to your school community
-
-<div class="row">
-    <div class="col-space-l-top col-space-m">
-        $hasina$
-    </div>
-</div>
 
 ## Your school placements
 
