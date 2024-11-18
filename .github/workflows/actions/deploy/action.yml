@@ -94,11 +94,6 @@ runs:
           HTTPAUTH_PASSWORD: ${{ steps.fetch-secrets.outputs.HTTP_PASSWORD }}
           HTTPAUTH_USERNAME: ${{ steps.fetch-secrets.outputs.HTTP_USERNAME }}
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-
       - name: Track Page Modifications
         shell: bash
         run: |
