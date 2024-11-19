@@ -33,6 +33,12 @@
               description: "As a design and technology teacher, you'll help pupils to turn their ideas into reality.",
               path: "/life-as-a-teacher/explore-subjects/design-and-technology",
             )) %>
+            <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "English",
+              description: "Find out how to become an English teacher and inspire pupils to become passionate about language and think creatively.",
+              path: "/life-as-a-teacher/explore-subjects/english"
+            )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
               title: "Languages",
