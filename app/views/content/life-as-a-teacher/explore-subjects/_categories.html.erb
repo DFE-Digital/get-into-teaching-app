@@ -51,6 +51,12 @@
               description: "Find out how to become a maths teacher, so you can show pupils how important maths is in everyday life and in understanding the world.",
               path: "/life-as-a-teacher/explore-subjects/maths"
             )) %>
+            <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Music",
+              description: "Find out how to become a music teacher and inspire pupils to unlock their creativity.",
+              path: "/life-as-a-teacher/explore-subjects/music"
+            )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
               title: "Physics",
