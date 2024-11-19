@@ -38,7 +38,7 @@ expander:
 inset_text:
   fee-increase:
     text: |-
-      In autum 2025, the maximum fees that providers can charge for postgraduate teacher training courses increased. These are the fees shown on this page. 
+      In autumn 2025, the maximum fees that providers can charge for postgraduate teacher training courses increased. These are the fees shown on this page. 
 
       If you've already applied to a course, speak with your provider to check if they will be increasing their fees.
 ---
