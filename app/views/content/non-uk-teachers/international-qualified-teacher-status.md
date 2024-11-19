@@ -67,7 +67,7 @@ If you’re not sure whether your qualifications meet the entry requirements for
 
 Fees range from $fees_iQTS_low$ to $fees_iQTS_high$ for a one-year, full-time iQTS course. Check training provider websites for full details.
 
-Applicants for iQTS are not eligible for loans, bursaries or any other type of financial support from the Department for Education and Student Finance England to help cover the costs of studying iQTS.
+Applicants for iQTS are not eligible for loans, bursaries or any other type of financial support from the Department for Education and Student Finance England to help cover the costs of studying for iQTS.
 
 To find out about scholarship opportunities, contact your chosen iQTS training provider directly.
 
