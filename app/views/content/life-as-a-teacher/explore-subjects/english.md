@@ -3,7 +3,7 @@ title: Become an English teacher
 subject: English
 title_paragraph: |-
   <p>
-  Teaching English is more than just reading and writing. It's opening  doors to new worlds and perspectives. You'll encourage a passion for language and a love of creativity, helping shape the voices of the future. </p>
+  Teaching English is more than just reading and writing. It's opening doors to new worlds and perspectives. You'll encourage a passion for language and a love of creativity, helping shape the voices of the future.</p>
   <p>
   Tax-free bursaries of $bursaries_postgraduate_english$ are available for eligible trainee English teachers.</p>
 description: |-
