@@ -10,7 +10,7 @@ finance:
     withparents: £8,877
     notwithparentsoutsidelondon: £10,544
     notwithparentsinsidelondon: £13,762
-    oversixty: £4,327
+    oversixty: £4,461
     ## implemented above this line
   parentslearningallowance:
     min: £50
