@@ -55,9 +55,10 @@ If you choose a teacher training course that has a salary you're not eligible fo
 $student-finance$
 
 ## Tuition fee loan
-You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course. If you’re eligible for a tuition fee loan, the amount you borrow is paid directly to your course provider.
 
 $loan-increase$
+
+You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course. If you’re eligible for a tuition fee loan, the amount you borrow is paid directly to your course provider.
 
 The maximum tuition fee loan for postgraduate teacher training for a UK applicant is:
 
@@ -76,10 +77,10 @@ You may also be eligible for a maintenance loan to help cover your living costs.
 
 The maximum amount you may be eligible to borrow is:
 
-* $finance_maintenanceloan_withparents$, if you live at home with your parents
-* $finance_maintenanceloan_notwithparentsoutsidelondon$, if you live away from your parents, out of London
-* $finance_maintenanceloan_notwithparentsinsidelondon$, if you live away from your parents, in London
-* $finance_maintenanceloan_oversixty$, if you're 60 years or over on the first day of the academic year of your course
+* $finance_maintenanceloan_withparents$ if you live at home with your parents
+* $finance_maintenanceloan_notwithparentsoutsidelondon$ if you live away from your parents, out of London
+* $finance_maintenanceloan_notwithparentsinsidelondon$ if you live away from your parents, in London
+* $finance_maintenanceloan_oversixty$ if you're 60 years or over on the first day of the academic year of your course
 
 $student-finance-calculator$
 
