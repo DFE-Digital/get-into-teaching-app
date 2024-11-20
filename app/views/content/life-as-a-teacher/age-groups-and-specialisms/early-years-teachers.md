@@ -40,7 +40,7 @@ calls_to_action:
   EY-undergraduate:
     name: feature_table
     arguments:
-      - Cost: "Up to $earlyyears_fees_undergrad$"
+      - Cost: "Up to $earlyyears_fees_undergrad$ per year"
         Salary: "No"
         Length of training: "3 or 4 years"
         Qualification: "Early years teacher status"
