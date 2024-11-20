@@ -702,7 +702,7 @@ en:
         address_telephone: "Contact telephone number"
         time_zone: "Select your time zone"
       teacher_training_adviser_steps_overseas_telephone:
-        address_telephone: "Non-UK telephone number (optional)"
+        address_telephone: "Overseas telephone number (optional)"
       teacher_training_adviser_steps_previous_teacher_id:
         teacher_id: "Teacher reference number (optional)"
       teacher_training_adviser_steps_what_subject_degree:
