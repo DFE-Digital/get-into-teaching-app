@@ -11,22 +11,20 @@
     <h3>Age groups you could teach</h3>
     <p>Children start secondary school when they’re 11. There are up to 3 stages in secondary school:</p>
     <ul>
-     <li>key stage 3 (KS3) includes years 7 to 9, with children aged 11 to 14</li> 
-     <li>key stage 4 (KS4) includes years 10 and 11, with pupils aged 14 to 16</li>
-     <li>key stage 5 (KS5) includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms, or colleges</li>
+      <li>key stage 3 (KS3) includes years 7 to 9, with children aged 11 to 14</li>
+      <li>key stage 4 (KS4) includes years 10 and 11, with pupils aged 14 to 16</li>
+      <li>key stage 5 (KS5) includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms, or colleges</li>
     </ul>
     <%= render 'content/shared/qualifications-training/teaching_send' %>
     <h2 class="heading--box-blue">What you'll teach</h2>
      <p>As a secondary teacher, you will train as a subject specialist and follow the agreed curriculum for your chosen subject and age group.</p>
-    <p><a href="/life-as-a-teacher/explore-subjects">Explore some subjects you could teach</a>.</p> 
-        <%= render 'content/shared/teaching/ages_abilities' %>
-
-    <h2 class="heading--box-blue">What you need to teach in secondary schools</h2> 
-    <p>You need a bachelor’s degree in any subject to train to teach secondary in England. If you do not already have a degree, you can train to be a teacher as part of your bachelor’s degree and get QTS.</p>
-    <p>If you already have a degree or are training for one, you can <a href="/train-to-be-a-teacher/if-you-have-a-degree">find out what routes are available to you</a>.</p>
-    <p>If you are interested in teaching young people and adults over 16 who are not studying for a degree, then <a href="/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers">teaching in further education</a> might be for you.</p>
-  
-    <h2 class="heading--box-blue">Start your journey into teaching <%= @front_matter["subject"] %></h2>
+     <p><a href="/life-as-a-teacher/explore-subjects">Explore some subjects you could teach</a>.</p>
+     <%= render 'content/shared/teaching/ages_abilities' %>
+     <h2 class="heading--box-blue">What you need to teach in secondary schools</h2>
+     <p>You need a bachelor’s degree in any subject to train to teach secondary in England. If you do not already have a degree, you can train to be a teacher as part of your bachelor’s degree and get QTS.</p>
+     <p>If you already have a degree or are training for one, you can <a href="/train-to-be-a-teacher/if-you-have-a-degree">find out what routes are available to you</a>.</p>
+     <p>If you are interested in teaching young people and adults over 16 who are not studying for a degree, then <a href="/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers">teaching in further education</a> might be for you.</p>
+     <h2 class="heading--box-blue">Start your journey into teaching <%= @front_matter["subject"] %></h2>
     <!-- Check your qualifications-->
     <%= render 'content/shared/age-groups-and-specialisms/check_qualifcations' %>
     <%= render 'content/shared/qualifications-training/find_out_more' %>
@@ -41,22 +39,20 @@
   </section>
 
   <section class="col col-space-m col-720">
-    <%= render 'content/shared/qualifications-training/get_school_experience' %>
-    <div class="paid-internships">
-    <h3>Apply for a paid internship</h3>
-    <p>If you're currently doing an undergraduate or master's degree and are interested in chemistry, computing, langauges, maths or physics you could apply for a <a href="/train-to-be-a-teacher/teaching-internships">paid teaching internship</a>.</p>
-    <p>The 3-week programme could help you to understand what it's really like in the classroom and get a feel for school life.</p>
-   </div>  
-   </section>
-  
-    <section class="col col-720">
+   <%= render 'content/shared/qualifications-training/get_school_experience' %>
+   <div class="paid-internships">
+   <h3>Apply for a paid internship</h3>
+   <p>If you're currently doing an undergraduate or master's degree and are interested in chemistry, computing, langauges, maths or physics you could apply for a <a href="/train-to-be-a-teacher/teaching-internships">paid teaching internship</a>.</p>
+   <p>The 3-week programme could help you to understand what it's really like in the classroom and get a feel for school life.</p></div>
+  </section>
+  <section class="col col-720">
     <%= render 'content/shared/teaching/ect_support' %>
   </section>
 
   <section class="col col-720">
     <h2 class="heading--box-blue">Progression in teaching</h2>
     <p>Once you have qualified to teach, there is still plenty of opportunity for <a href="/life-as-a-teacher/teaching-as-a-career/career-progression">progression in teaching</a>. You could take on challenges such as becoming a  head of year, head of subject, special educational needs co-ordinator or even a headteacher.</p>
-    <%= render 'content/shared/quotes/quote_progression_chris' %> 
+    <%= render 'content/shared/quotes/quote_progression_chris' %>
   </section>
 
 </div>
