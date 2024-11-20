@@ -46,6 +46,8 @@ A bursary is paid over a minimum of 10 months by your teacher training provider 
 
 You will not need to pay tax or National Insurance on bursary payments. 
 
+You do not have to pay a bursary back.
+
 ### How to get a bursary
 
 You do not need to apply for a bursary. When you apply for teacher training, your provider will check if you're eligible for a bursary. If you are, your provider will confirm this in writing before you start your course. 
@@ -70,15 +72,17 @@ A scholarship is paid over a minimum of 10 months by your teacher training provi
 
 You will not need to pay tax or National Insurance on scholarship payments. 
 
+You do not have to pay a scholarship back.
+
 ### How to apply for a scholarship
 
-You need to apply directly to the scholarship provider. Each provider sets their own application deadline and will confirm if you meet their eligibility requirements. You can out find about how to apply, deadlines and more details about each scholarship on the scholarship providers' websites:
+You need to apply directly to the scholarship provider. Each provider sets their own application deadline and will confirm if you meet their eligibility requirements. You can out find about how to apply, deadlines and more details about each scholarship on the scholarship provider's website:
 
-* [the Royal Society of Chemistry](https://www.rsc.org/prizes-funding/funding/find-funding/teacher-training-scholarships/) (chemistry)
-* [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
-* [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
-* [the Institute of Mathematics and its Applications, and partners](https://teachingmathsscholars.org/home) (maths)
-* [the Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
+* [Royal Society of Chemistry website](https://www.rsc.org/prizes-funding/funding/find-funding/teacher-training-scholarships/) (chemistry)
+* [BCS The Chartered Institute for IT website](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
+* [British Council website](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
+* [Institute of Mathematics and its Applications, and partners website](https://teachingmathsscholars.org/home) (maths)
+* [Institute of Physics website](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
 
 ## Compare bursaries and scholarships
 

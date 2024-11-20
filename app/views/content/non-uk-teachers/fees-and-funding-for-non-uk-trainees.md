@@ -111,8 +111,8 @@ You will also need a [visa or immigration status](/non-uk-teachers/visas-for-non
 
 There are 2 types of financial support you can get if you’re interested in training to teach languages or physics:
 
-* bursaries worth up to $bursaries_postgraduate_nonuk$ for languages and physics
-* scholarships worth up to $scholarships_nonuk_max$ for French, German, Spanish and physics
+* bursaries worth $bursaries_postgraduate_languagesfrenchgermanspanish$ for languages, and $bursaries_postgraduate_physics$ for physics
+* scholarships worth $scholarships_languagesfrenchgermanspanish$ for French, German and Spanish, and $scholarships_physics$ for physics
 
 Bursaries and scholarships are tax-free payments from the UK government that you do not have to pay back. They are paid to you by your teacher training provider.
 
@@ -151,7 +151,7 @@ Talk to your training provider about the home fee rate, [bursaries and scholarsh
 
 [Student Finance England](https://www.gov.uk/contact-student-finance-england) has a dedicated service for EU students and for EEA citizens working in the UK.
 
-The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
+The [UK Council for International Student Affairs website](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
 
 ## Contact us
 

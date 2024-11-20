@@ -33,6 +33,12 @@
               description: "As a design and technology teacher, you'll help pupils to turn their ideas into reality.",
               path: "/life-as-a-teacher/explore-subjects/design-and-technology",
             )) %>
+            <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "English",
+              description: "Find out how to become an English teacher and inspire pupils to become passionate about language and think creatively.",
+              path: "/life-as-a-teacher/explore-subjects/english"
+            )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
               title: "Languages",
@@ -51,11 +57,23 @@
               description: "Find out how to become a maths teacher, so you can show pupils how important maths is in everyday life and in understanding the world.",
               path: "/life-as-a-teacher/explore-subjects/maths"
             )) %>
+            <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Music",
+              description: "Find out how to become a music teacher and inspire pupils to unlock their creativity.",
+              path: "/life-as-a-teacher/explore-subjects/music"
+            )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
               title: "Physics",
               description: "Find out how to become a physics teacher and inspire the next generation of scientists, engineers and innovators.",
               path: "/life-as-a-teacher/explore-subjects/physics"
+            )) %>
+                <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Religious education",
+              description: "As a religious education teacher, you'll guide pupils through the fascinating and diverse range of beliefs and practices across the world.",
+              path: "/life-as-a-teacher/explore-subjects/religious-education"
             )) %>
         </ul>
       </nav>

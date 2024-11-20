@@ -1,7 +1,5 @@
 <% @page_title = "Are you qualified to teach?" %>
-
 <%= f.govuk_collection_radio_buttons :type_id, f.object.class::OPTIONS, :last, nil, inline: true, legend: { tag: "h1" } %>
-
 <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
@@ -9,10 +7,14 @@
     </span>
   </summary>
   <div class="govuk-details__text">
-    Qualified teacher status (QTS) is the professional status teachers in England gain at the end of their teacher training.<br><br>
-    If you're already a qualified teacher looking to teach in England, you need English QTS to be eligible for an adviser.<br><br>
-    If you qualified as a teacher outside the UK, <a href="https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk">find out about the routes to getting QTS</a>.<br><br>
-    Even if you do not currently have QTS, you can still <a href="/non-uk-teachers/teach-in-england-if-you-trained-overseas">teach in England if you trained overseas</a>.<br><br>
-    Find out how to <a href="/train-to-be-a-teacher/what-is-qts">apply for QTS if you qualified in Wales, Scotland, or Northern Ireland</a>.
+    Qualified teacher status (QTS) is the professional status teachers in England gain at the end of their teacher training.<br>
+    <br>
+    If you're already a qualified teacher looking to teach in England, you need English QTS to be eligible for an adviser.<br>
+    <br>
+    If you qualified as a teacher outside the UK, <a class="new-tab" href="https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk">find out about the routes to getting QTS</a>.<br>
+    <br>
+    Even if you do not currently have QTS, you can still <a class="new-tab" href="/non-uk-teachers/teach-in-england-if-you-trained-overseas">teach in England if you trained overseas</a>.<br>
+    <br>
+    Find out how to <a class="new-tab" href="/train-to-be-a-teacher/what-is-qts">apply for QTS if you qualified in Wales, Scotland, or Northern Ireland</a>.
   </div>
 </details>

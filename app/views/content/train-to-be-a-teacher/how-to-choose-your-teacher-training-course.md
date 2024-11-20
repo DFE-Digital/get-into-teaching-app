@@ -99,7 +99,7 @@ Most primary and secondary schools in England need you to have [qualified teache
 
 Most teacher training courses will award QTS, but some will award QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
 
-If your teacher training course leads to QTS, you may be eligible for a scholarship or bursary to help you train.
+If your teacher training course leads to QTS, [you may be eligible for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries) to help you train.
 
 ## If the course is fee-funded or salaried
 
@@ -127,9 +127,10 @@ $salaried-teacher-training$
 
 Your teacher training course might be provided by: 
 
-* a university (sometimes referred to as university-led training) 
-* a school or group of schools (sometimes referred to as school-led training, or an apprenticeship) 
-* [Teach First](https://www.teachfirst.org.uk/) (a charitable organisation)  
+* a university, sometimes referred to as university-led training
+* a school or group of schools, sometimes referred to as school-led training
+
+Your teacher training course may also be provided by a company or charity. For example, [Teach First is a charitable organisation that provides teacher training](https://www.teachfirst.org.uk).
 
 Once you’ve found a course you’re interested in, you can talk to the training provider before you apply. For example, you might want to find out: 
 
