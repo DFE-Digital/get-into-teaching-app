@@ -44,7 +44,7 @@ RSpec.describe PageModificationTracker do
 
       it "does not update the page modification" do
         expect { subject }.not_to(
-          change { PageModification.find_by(path: path).updated_at },
+          change { PageModification.find_by(path: path).updated_at }
         )
       end
     end
@@ -61,13 +61,29 @@ RSpec.describe PageModificationTracker do
 
     context "when page is new" do
       it "creates a new page modification" do
-        expect { tracker.track_page_modifications }.to(
+        expect { subject }.to(
           change(PageModification, :count).by(1),
         )
 
         page_mod = PageModification.last
         expect(page_mod.path).to eq(path)
         expect(page_mod.content_hash).to eq(content_hash)
+      end
+    end
+
+    context "when authenticity token changes" do
+      let(:content) { '<html><head></head><body><h1>Test Content</h1><form><input type="hidden" name="authenticity_token" value="new-token"></form></body></html>' }
+      let(:body_with_empty_token) { '<body><h1>Test Content</h1><form><input type="hidden" name="authenticity_token" value=""></form></body>' }
+      let(:content_hash) { Digest::SHA1.hexdigest(Nokogiri::HTML(body_with_empty_token).css("body").to_s) } # Parse this as nokogiri behaves differently with forms
+
+      before do
+        PageModification.create!(path: path, content_hash: content_hash)
+      end
+
+      it "does not update the page modification when only the authenticity token changes" do
+        expect { subject }.not_to(
+          change { PageModification.find_by(path: path).updated_at }
+        )
       end
     end
 
