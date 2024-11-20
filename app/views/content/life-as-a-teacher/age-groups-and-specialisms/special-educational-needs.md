@@ -40,12 +40,12 @@ Working with pupils with complex needs can be incredibly fulfilling. You’ll ha
 * nurture a supportive learning environment  
 * advocate for inclusivity  
 
-Teachers who focus on supporting pupils with SEND are often called SEND teachers, but all teachers teach children with complex needs. Whether you train to teach in mainstream schools, special schools, or both, you’ll teach pupils with SEND, and learn how to support their needs.
+Teachers who focus on supporting pupils with SEND may be referred to as SEND teachers, but all teachers teach children with complex needs. Whether you train to teach in mainstream schools, special schools, or both, you’ll teach pupils with SEND, and learn how to support their needs.
 
 
 ## SEND-focused teaching roles
 
-All initial teacher training courses cover teaching pupils with SEND. Once you have gained QTS, you can choose to specialise in teaching and nurturing pupils with SEND in a more SEND-focused role. This could be through:
+All initial teacher training courses cover teaching pupils with SEND. Once you have gained [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you can choose to specialise in teaching and nurturing pupils with SEND in a more SEND-focused role. This could be through:
   
 * teaching in a special school
 * becoming a special educational needs co-ordinator (SENCO)
@@ -83,7 +83,7 @@ A special educational needs coordinator (SENCO) assesses, plans and monitors the
 
 As a SENCO you will get to know the specific needs of pupils who need extra support, so you can help them to feel comfortable and confident before teaching starts. 
 
-To become a SENCO, you’ll need to gain [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) through initial teacher training and then complete a mandatory [SENCO national professional qualification (SENCO NPQ)](https://www.gov.uk/guidance/special-educational-needs-co-ordinators-national-professional-qualification). You do not need to complete the NPQ before taking a SENCO role, you have 3 years to complete the qualification. 
+To become a SENCO, you’ll need to gain QTS through initial teacher training and then complete a mandatory [SENCO national professional qualification (SENCO NPQ)](https://www.gov.uk/guidance/special-educational-needs-co-ordinators-national-professional-qualification). You do not need to complete the NPQ before taking a SENCO role. Once you become a SENCO, you must complete the qualification within 3 years. 
 
 As well as focusing on supporting pupils with SEND, many SENCOs will also teach in their main subject area. 
 
@@ -91,7 +91,7 @@ As well as focusing on supporting pupils with SEND, many SENCOs will also teach 
 
 To teach pupils with hearing impairments, vision impairments or multi-sensory impairments you’ll need a [mandatory qualification in sensory impairment (MQSI)](https://www.gov.uk/guidance/mandatory-qualifications-specialist-teachers) in addition to QTS.  
 
-An MQSI will give you the skills needed to recognise pupils’ barriers to learning and help them overcome these. 
+An MQSI will give you the skills needed to recognise any barriers to learning that pupils may experience and help them overcome these. 
 
 ## Training for teaching pupils with SEND
 

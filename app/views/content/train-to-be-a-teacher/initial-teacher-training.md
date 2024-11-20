@@ -48,7 +48,7 @@ What you’ll learn will depend on your course and the qualifications it offers.
 
 Initial teacher training helps you meet the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). You must meet the teachers’ standards to be awarded QTS.
 
-All initial teacher training courses cover [teaching pupils with SEND](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs). Once you've gained QTS, you can look for courses that specialise in SEND to develop your training further. 
+All initial teacher training courses cover [teaching pupils with special educational needs and disabilities (SEND)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs). Once you've gained QTS, you can then train to specialise in working with children with SEND. 
 
 All initial teacher training will help you:
 
