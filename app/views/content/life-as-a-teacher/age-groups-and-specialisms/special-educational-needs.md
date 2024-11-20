@@ -45,7 +45,9 @@ Teachers who focus on supporting pupils with SEND may be referred to as SEND tea
 
 ## SEND-focused teaching roles
 
-All initial teacher training courses cover teaching pupils with SEND. Once you have gained [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you can choose to specialise in teaching and nurturing pupils with SEND in a more SEND-focused role. This could be through:
+All initial teacher training courses cover teaching pupils with SEND. 
+
+Once you have gained [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), you can choose to specialise in teaching and nurturing pupils with special educational needs and disabilities in a more SEND-focused role. This could be through:
   
 * teaching in a special school
 * becoming a special educational needs co-ordinator (SENCO)
