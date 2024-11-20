@@ -1,19 +1,18 @@
 ---
-title: Become a secondary teacher 
+title: Become a secondary school teacher 
 subject: secondary
 title_paragraph: |-
   <p>
-  As a secondary teacher, you'll play a pivotal role in students' lives. You'll see them grow from children to young adults, inspiring them to become passionate about your subject and shaping their futures.</p>
+  As a secondary school teacher, you'll play a pivotal role in pupils' lives. You'll see them grow from children to young adults, inspiring them to become passionate about learning and shaping their futures.</p>
   
 description: |-
-    Find out how to become a secondary teacher, including what you'll teach and what funding is available to help you train.
+    Find out how to become a secondary school teacher, including what you'll teach and what funding is available to help you train.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/chemistry.jpg"
 keywords:
-  - secondary
-  - secondary teaching
-  - secondary teacher training
+  - secondary school teacher
+  - secondary school teacher training
 
 content:
   - "content/shared/subject-pages/header"
