@@ -97,4 +97,7 @@ runs:
       - name: Track Page Modifications
         shell: bash
         run: |
-          bundle exec rails runner "TrackPageModificationsJob.perform_now(host: '${{steps.variables.outputs.healthcheck}}')"
+          docker run -t --rm \
+            -e RAILS_ENV=production \
+            ${{steps.variables.outputs.healthcheck}}:sha-${{ steps.sha.outputs.short }} \
+            bundle exec rails runner "TrackPageModificationsJob.perform_later(host: '${{steps.variables.outputs.healthcheck}}')"
