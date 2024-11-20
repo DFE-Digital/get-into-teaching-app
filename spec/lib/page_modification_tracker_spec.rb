@@ -44,7 +44,7 @@ RSpec.describe PageModificationTracker do
 
       it "does not update the page modification" do
         expect { subject }.not_to(
-          change { PageModification.find_by(path: path).updated_at }
+          change { PageModification.find_by(path: path).updated_at },
         )
       end
     end
@@ -82,7 +82,7 @@ RSpec.describe PageModificationTracker do
 
       it "does not update the page modification when only the authenticity token changes" do
         expect { subject }.not_to(
-          change { PageModification.find_by(path: path).updated_at }
+          change { PageModification.find_by(path: path).updated_at },
         )
       end
     end
