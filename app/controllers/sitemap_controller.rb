@@ -46,10 +46,7 @@ private
   end
 
   def lastmod_date(path, metadata = nil)
-    page_mod = PageModification.find_by(path: path)
-    lastmod_date = page_mod&.updated_at&.strftime("%Y-%m-%d")
-
-    metadata&.dig(:date) || lastmod_date || DEFAULT_LASTMOD
+    metadata&.dig(:date) || PageModification.find_by(path: path)&.updated_at&.strftime("%Y-%m-%d") || DEFAULT_LASTMOD
   end
 
   def published_pages
