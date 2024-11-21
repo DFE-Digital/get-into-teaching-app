@@ -18,21 +18,22 @@ keywords:
   - teacher
   - special school
 
+quote:
+  q-gloria:
+    text: "I'm passionate about being there for my students, helping them see their potential and overcome their own challenges."
+    name: "Gloria, lead maths practitioner"
+    classes: quote--indent
+  q-abbe:
+    text: "My mentor was the special educational needs co-ordinator. This meant I was able to learn more about this role and improve my understanding of the strategies and support available for children with special educational needs and disabilities."
+    name: "Abbe, trainee teacher"
+    classes: quote--indent
+
 ---
 Special educational needs and disabilities (SEND) can affect pupils’ ability to learn. For example, they may struggle to read or write because they have dyslexia, or they may have difficulty concentrating. Some pupils may have physical impairments which means they need special equipment to help them learn.  
 
 Teaching pupils with SEND offers you a unique opportunity to make a lasting impact in their lives. You’ll help pupils overcome challenges and guide them to discover their strengths and fulfil their potential. Through your support, they’ll build self-esteem and resilience. 
 
-<blockquote class="quote quote--background-white quote--indent">
-  <p>I'm passionate about being there for my students, helping them see their potential and overcome their own challenges."</p>
-    <footer class="footer">
-      <div class="author">
-        <div>
-            <cite class="name">Gloria, lead maths practitioner</cite>
-        </div>
-      </div>
-</footer>
-</blockquote>
+$q-gloria$
 
 Working with pupils with complex needs can be incredibly fulfilling. You’ll have the opportunity to: 
 
@@ -53,16 +54,7 @@ Once you have gained [qualified teacher status (QTS)](/train-to-be-a-teacher/wha
 * becoming a special educational needs co-ordinator (SENCO)
 * completing the mandatory qualification in sensory impairment (MQSI)
 
-<blockquote class="quote quote--background-white quote--indent">
-  <p>My mentor was the special educational needs co-ordinator. This meant I was able to learn more about this role and improve my understanding of the strategies and support available for children with special educational needs and disabilities."</p>
-    <footer class="footer">
-      <div class="author">
-        <div>
-            <cite class="name">Abbe, trainee teacher</cite>
-        </div>
-      </div>
-</footer>
-</blockquote>
+$q-abbe$
 
 
 ### Teaching in a special school
