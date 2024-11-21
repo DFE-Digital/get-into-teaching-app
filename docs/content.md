@@ -533,6 +533,32 @@ And copy and paste an exiting card such as:
 
 Update the title, description and image as required.
 
+## Add a quote with image component
+
+Add this code to a html file:
+
+```html
+<div class="row">
+  <div class="col-space-l col-space-l-top">
+    <%= render Content::QuoteWithImageComponent.new(
+      title: "Example title to go here",
+      text: "<h4>Heading if neededd</h4><p>Example information or quote</p><a href='#'>Link text/a>",
+      quotes: false,
+      background_color: "blue",
+      heading_color: "pink",
+      image_path: "static/images/content/hero-images/0034.jpg"
+    ) %>
+  </div>
+</div>
+```
+You can edit the colours used such as "yellow", "pink", "green", "blue" and "purple". You can also specify whether you want the quote marks to appear by using true or false in the quotes parameter. For shorter quotes its better to use an image with a height cropped to around 300 pixels.
+
+When using in a markdown file, copy the above code into a new html file and link to the file in the markdown code, in the same way you would when creating a subject page:
+
+```html
+content: 
+  - "content/life-as-a-teacher/pay-and-benefits/quote" 
+```
 
 ## Creating a Blog Post
 
