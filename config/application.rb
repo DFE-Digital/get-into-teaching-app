@@ -19,9 +19,6 @@ require "rails/test_unit/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-# Patch to Rack::PageCaching::Utils to substitute Fixnum --> Integer
-require_relative "../lib/patch_rack_page_caching"
-
 module GetIntoTeachingWebsite
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
