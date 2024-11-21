@@ -23,3 +23,9 @@ h2.govuk-error-summary__title {
 .govuk-label {
   @include font;
 }
+
+.govuk-details .govuk-details__summary {
+  &:focus {
+    @extend .link; 
+  }
+}
