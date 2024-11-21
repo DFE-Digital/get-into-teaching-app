@@ -97,7 +97,5 @@ runs:
       - name: Track Page Modifications
         shell: bash
         run: |
-          docker run -t --rm \
-            -e RAILS_ENV=production \
-            ${{steps.variables.outputs.healthcheck}}:sha-${{ steps.sha.outputs.short }} \
-            bundle exec rails runner "TrackPageModificationsJob.perform_later(host: '${{steps.variables.outputs.healthcheck}}')"
+          POD_NAME=$(kubectl get pods -n git-${{ inputs.environment }} -l app=get-into-teaching-${{ inputs.environment }} -o jsonpath='{.items[0].metadata.name}')
+          kubectl exec -n git-${{ inputs.environment }} $POD_NAME -- bundle exec rails runner "TrackPageModificationsJob.perform_later(host: '${{steps.variables.outputs.healthcheck}}')"
