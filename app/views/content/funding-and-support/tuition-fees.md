@@ -38,7 +38,7 @@ expander:
 inset_text:
   fee-increase:
     text: |-
-      From autumn 2025, the maximum fees that providers can charge for postgraduate teacher training courses have increased. The increased amounts are shown on this page. If you've already applied to a course, speak with your provider to check if they will be increasing their fees.
+      From autumn 2025, the maximum fees that providers can charge for postgraduate teacher training courses have increased. The increased amounts are shown on this page. If you've already applied for a course, speak with your provider to check if they'll be increasing their fees.
 ---
 For most postgraduate teacher training courses in England you need to pay a tuition fee. 
 

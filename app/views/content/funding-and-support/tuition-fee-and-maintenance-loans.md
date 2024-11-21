@@ -46,7 +46,7 @@ inset_text:
 
 Funding is available to help you train to teach if you choose a course that has tuition fees. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs.
 
-You can still apply for a tuition fee loan and a maintenance loan, even if:
+You can still apply for a tuition fee loan and a maintenance loan if:
 
 * you also get a teaching bursary or scholarship
 
