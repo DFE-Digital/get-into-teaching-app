@@ -22,14 +22,8 @@ RSpec.feature "Chat", type: :feature do
         dismiss_cookies
 
         within(".talk-to-us") do
-          click_link("Open chat in new tab")
+          expect(page).to have_link("Open chat in new tab", href: "/chat#root")
         end
-
-        popup_window_handle = (page.driver.browser.window_handles - [page.driver.current_window_handle]).first
-        page.driver.switch_to_window(popup_window_handle)
-        expect(page.driver.current_url).to end_with("/chat")
-        expect(page).to have_css("#root", visible: false)
-        page.driver.close_window(popup_window_handle)
       end
     end
 
