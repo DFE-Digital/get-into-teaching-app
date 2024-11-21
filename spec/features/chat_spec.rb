@@ -8,14 +8,8 @@ RSpec.feature "Chat", type: :feature do
     allow(ENV).to receive(:fetch).with("CHAT_AVAILABILITY_API", nil).and_return("http://api.example/")
     stub_request(:get, "http://api.example/")
       .to_return(status: 200, body: "{\"skillid\": 123456, \"available\": false, \"status_age\": 123 }")
-    stub_request(:get, "https://get-into-teaching-api-dev.london.cloudapps.digital/api/privacy_policies/latest").
-      with(
-        headers: {
-          'Accept'=>'application/json',
-          'Authorization'=>'Bearer test',
-          'Content-Type'=>'application/json',
-        }).
-      to_return(status: 200, body: '{"text":"Privacy Notice","createdAt":"2020-01-13T09:44:50","id":"123"}', headers: {})
+    stub_request(:get, "https://get-into-teaching-api-dev.london.cloudapps.digital/api/privacy_policies/latest")
+      .to_return(status: 200, body: '{"text":"Privacy Notice", "id":"123"}', headers: {})
   end
 
   context "when javascript is enabled", :js do
