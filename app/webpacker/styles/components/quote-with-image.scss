@@ -4,16 +4,6 @@
   max-width: 1500px;
   margin: auto;
 
-  &:not(:has(> picture)) {
-    .quote-with-image__content {
-      left: 0;
-
-      @include mq($from: tablet) {
-        margin: auto;
-      }
-    }
-  }
-
   @include mq($from: tablet) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,12 +45,7 @@
     margin: auto 30px;
     background-color: white;
     padding: 40px;
-    border-bottom: 4px solid $grey-light;
     position: relative;
-
-    &:hover {
-      border-color: $blue-dark;
-    }
 
     a, p, h1, h2, h3, h4, h5 {
       font-size: inherit;
@@ -74,22 +59,12 @@
       }
     }
 
-    @include mq($from: mobile) {
+    @include mq($from: mobile, $until: desktop) {
       margin: auto 50px;
     }
 
-    @include mq($from: tablet, $until: desktop) {
-      width: 368px;
-    }
-
-    @include mq($from: desktop, $until: wide) {
-      left: 50px;
-      width: 500px;
-    }
-
-    @include mq($from: wide) {
-      left: 50px;
-      width: 700px;
+    @include mq($from: desktop) {
+      margin: auto 100px;
     }
 
     &--with-quotes {
@@ -130,6 +105,14 @@
           bottom: -158px;
           right: -50px;
         }
+      }
+    }
+  }
+
+  &:has(> picture) {
+    .quote-with-image__content {
+      @include mq($from: tablet) {
+        width: 100%;
       }
     }
   }

@@ -21,7 +21,7 @@ keywords:
     - Qualified teacher status
 ---
 
-International qualified teacher status (iQTS) is a teaching qualification backed by the UK government. iQTS meets the same high standards as [English qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), and leads to the automatic award of QTS. You can train where you live and work, with no need to visit the UK.
+International qualified teacher status (iQTS) is a teaching qualification backed by the UK government. iQTS meets the same high standards as [English qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), and leads to the automatic award of QTS. You can train where you live and work, with no need to visit England.
 
 ## Why choose iQTS?
 
@@ -35,7 +35,7 @@ If you decide to [teach in England](/non-uk-teachers/teach-in-england-if-you-tra
 
 ## Entry requirements
 
-Both UK and non-UK citizens can apply for iQTS – however, you must be living outside England.
+Both UK and non-UK citizens can apply for iQTS – however, you must be living outside of England.
 
 You will also need to have:
 
@@ -67,13 +67,13 @@ If you’re not sure whether your qualifications meet the entry requirements for
 
 Fees range from $fees_iQTS_low$ to $fees_iQTS_high$ for a one-year, full-time iQTS course. Check training provider websites for full details.
 
-Applicants for iQTS are not eligible for loans, bursaries or any other type of financial support from Student Finance England to help cover the costs of studying iQTS.
+Applicants for iQTS are not eligible for loans, bursaries or any other type of financial support from the Department for Education and Student Finance England to help cover the costs of studying for iQTS.
 
 To find out about scholarship opportunities, contact your chosen iQTS training provider directly.
 
 ## Placement schools and working while you train
 
-iQTS is delivered by English training providers working in close partnership with schools outside England. These placement schools offer iQTS trainees practical experience and in-person mentoring.
+iQTS is delivered by English training providers working in close partnership with schools outside of England. These placement schools offer iQTS trainees practical experience and in-person mentoring.
 
 Some training providers will already have relationships with schools in your region and will be able to match you to a particular school. Others will make it an entry requirement for their course that you set up your own placement with a local school.
 
@@ -107,8 +107,7 @@ The following providers are accepting applications from all over the world:
 
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
 
-* [National Institute of Teaching and Education (NITE), part of the Coventry University Group](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/)
-
+* [National Institute of Teaching and Education (NITE)](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/), part of the Coventry University Group
 * [Tes Institute](https://www.tes.com/institute/courses/iqts) – this provider cannot accept applications from Hong Kong
 
 * [University of Buckingham](https://www.buckingham.ac.uk/courses/postgraduate/international-qualified-teacher-status-iqts)
@@ -123,9 +122,7 @@ The following providers are accepting applications from all over the world:
 
 The following providers specialise in particular regions, or should be contacted for further information:
 
-* [Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts) – this provider is accepting applications from Latin America
-
-* [Plymouth Marjon University](https://www.marjon.ac.uk/teaching/) – contact this provider for more information
+* [Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts) – this provider is accepting applications from the Middle East and North Africa
 
 * [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider offers in-person training in Dubai only, so applicants must be a commutable distance from their Dubai Campus
 
