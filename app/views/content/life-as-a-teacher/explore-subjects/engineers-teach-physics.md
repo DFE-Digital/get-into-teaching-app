@@ -3,7 +3,7 @@ title: Engineers teach physics
 subject: physics
 title_paragraph: |-
   <p>
-  If you're an engineer or material scientist, an engineers teach physics initial teacher training course could be a great start to your teaching journey. By getting into the classroom, you could use your skills and passion to inspire the next generation. 
+  If you're an engineer or material scientist, an Engineers teach physics initial teacher training course could be a great start to your teaching journey. By getting into the classroom, you could use your skills and passion to inspire the next generation. 
   </p>
   <p>Tax-free bursaries of $bursaries_postgraduate_physics$ or scholarships of $scholarships_physics$ are available for eligible trainee physics teachers.</p>
   
