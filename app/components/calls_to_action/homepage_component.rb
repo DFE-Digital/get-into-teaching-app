@@ -18,7 +18,7 @@ module CallsToAction
 
     def before_render
       @icon = icon_element(@icon_filename)
-      @link = link_to(@link_text, @link_target, class: "button")
+      @link = link_to(@link_text, @link_target, class: "button", role: "button")
     end
 
   private

@@ -6,19 +6,16 @@
           <i class="icon icon-arrow-black icon--on-yellow"></i>
           <span>Start your teaching journey today</span>
         </h2>
-
         <p>
           Everything you need to know to start a career in teaching sent straight into your inbox.
           Tailored to your own situation, you'll get all the latest information as well as advice and support.
         </p>
-
         <p>
           <small>
             Your details are protected under the terms of our <%= link_to("privacy notice (opens in new tab)", privacy_policy_path(id: privacy_policy.id), { class: "link--black", target: :blank }) %>. This explains how we use your personal data. It's important you read it before signing up to receive emails.
           </small>
         </p>
       </div>
-
       <%= form_with builder: GOVUKDesignSystemFormBuilder::FormBuilder, url: mailing_list_step_path(:name), scope: :mailing_list_steps_name, method: :put do |f| %>
         <%= f.govuk_text_field :first_name, autocomplete: "given-name" %>
         <%= f.govuk_text_field :last_name, autocomplete: "family-name" %>
@@ -26,9 +23,8 @@
         <%= f.hidden_field :channel_id, value: params[:channel] || f.object&.channel_id.presence %>
         <%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id.presence %>
         <%= f.hidden_field :accepted_policy_id, value: privacy_policy.id %>
-
         <% button_text = helpers.safe_html_format("Next step <span></span>") %>
-        <%= f.button button_text, class: "button", data: { "prevent-double-click": true, "disable-with": button_text } %>
+        <%= f.button button_text, class: "button", role: "button", data: { "prevent-double-click": true, "disable-with": button_text } %>
       <% end %>
     </div>
   </div>

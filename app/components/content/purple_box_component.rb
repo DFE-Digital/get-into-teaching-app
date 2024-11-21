@@ -14,7 +14,7 @@ module Content
     end
 
     def cta_link
-      link_to(cta[:text], cta[:path], class: :button)
+      link_to(cta[:text], cta[:path], class: :button, role: :button)
     end
   end
 end
