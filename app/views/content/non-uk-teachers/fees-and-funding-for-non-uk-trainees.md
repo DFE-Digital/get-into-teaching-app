@@ -151,7 +151,7 @@ Talk to your training provider about the home fee rate, [bursaries and scholarsh
 
 [Student Finance England](https://www.gov.uk/contact-student-finance-england) has a dedicated service for EU students and for EEA citizens working in the UK.
 
-The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
+The [UK Council for International Student Affairs website](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
 
 ## Contact us
 
