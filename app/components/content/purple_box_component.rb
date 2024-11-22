@@ -12,9 +12,5 @@ module Content
       @cta = cta
       @image = image
     end
-
-    def cta_link
-      link_to(cta[:text], cta[:path], class: :button, role: :button)
-    end
   end
 end

@@ -1,19 +1,15 @@
 <section class="purple-box">
   <div class="purple-box__background">
   </div>
-
   <h2 class="purple-box__heading">
     <%= heading %>
   </h2>
-
   <p class="purple-box__text">
     <%= text %>
   </p>
-
   <div class="purple-box__cta">
-    <%= cta_link %>
+    <%= render "content/shared/link_as_button", url: @cta[:path], link_text: @cta[:text] %>
   </div>
-
   <div class="purple-box__graphic">
     <%= image %>
   </div>
