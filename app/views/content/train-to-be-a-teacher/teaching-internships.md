@@ -462,7 +462,7 @@ provider_groups:
         name: "Robert Bloomfield"
         email: "rbloomfield@arthurterry.bham.sch.uk"
       - header: "Barr Beacon SCITT"
-        link: "www.careerinteaching.co.uk"
+        link: "https://www.careerinteaching.co.uk"
         applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "The West Midlands: Birmingham, Wolverhampton, Walsall, Nuneaton, South Staffordshire, the Black Country, Sandwell"
