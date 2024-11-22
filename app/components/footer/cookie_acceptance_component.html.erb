@@ -9,16 +9,14 @@
           We also share some of this information with our social media, advertising and analytics partners.
         </p>
       </div>
-
       <div class="dialog__buttons">
         <!--
           The id is `biscuits-agrees` instead of `cookies-agree`
           to prevent ad blockers from removing the button.
         -->
-        <a tabindex="-1" href="#" class="button call-to-action-button" data-action="click->cookie-acceptance#accept" data-cookie-acceptance-target="agree" id="biscuits-agree">
+        <a tabindex="-1" href="#" class="button call-to-action-button" role="button" data-action="click->cookie-acceptance#accept" data-cookie-acceptance-target="agree" id="biscuits-agree">
           <span>Accept all cookies</span>
         </a>
-
         <%= link_to(cookie_preference_path, tabindex: -1, id: "cookies-disagree", class: "button button--secondary", data: { "cookie-acceptance-target": "disagree" }) do %>
           <span>Set cookie preferences</span>
         <% end %>

@@ -1,1 +1,3 @@
-<%= tag.a(link_text, href: url, class: "button", role: "button") %>
+<% options ||= {} %>
+<% options[:class] = ["button", options[:class]].compact.join(" ") %>
+<%= tag.a(link_text, href: url, role: "button", **options) %> 
