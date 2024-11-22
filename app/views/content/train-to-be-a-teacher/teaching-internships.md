@@ -418,7 +418,7 @@ provider_groups:
         name: "Emma Hawes"
         email: "ehawes@stjohns.excalibur.org.uk"
       - header: "Odyssey Teaching School Hub"
-        link: "www.odysseytsh.org"
+        link: "https://www.odysseytsh.org"
         applications: "Open November"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Gloucestershire, South Gloucestershire, Wiltshire"
