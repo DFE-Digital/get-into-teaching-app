@@ -52,7 +52,7 @@ The providers offering teacher degree apprenticeships are:
 ## Who’s eligible to apply for a teacher degree apprenticeship?
 Teacher degree apprenticeships will be open to anyone who would like to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
 
-The teacher degree apprenticeship is available to candidates who meet specific eligibility requirements.
+You can apply for a place on a teacher degree apprenticeship if you meet specific eligibility requirements.
 
 To be eligiable to apply for a TDA, you must be:
 
