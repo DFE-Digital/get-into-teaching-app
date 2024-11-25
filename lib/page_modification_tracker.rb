@@ -8,6 +8,11 @@ class PageModificationTracker
     @app = ActionDispatch::Integration::Session.new(Rails.application)
     @headers = { "Host" => host }
     @selector = selector
+
+    if ENV["BASIC_AUTH"] == "1"
+      authorization = ActionController::HttpAuthentication::Basic.encode_credentials(ENV["HTTPAUTH_USERNAME"], ENV["HTTPAUTH_PASSWORD"])
+      @headers = @headers.merge({ "Authorization" => authorization })
+    end
   end
 
   def track_page_modifications
