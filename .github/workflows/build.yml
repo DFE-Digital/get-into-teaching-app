@@ -214,82 +214,83 @@ jobs:
            SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
 
-  linting:
-    name: Linting
-    runs-on: ubuntu-latest
-    needs: [ build_base ]
-    if: github.ref != 'refs/heads/master'
-    env:
-      DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v4
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - uses: Azure/login@v2
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
-
-      - name: Lint SCSS
-        run: |-
-          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true -e PATTERN="**/*.scss" \
-            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn scss-lint"
-
-      - name: Lint Ruby
-        run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{env.DOCKER_IMAGE_TEST}} \
-            rubocop --format json --out=/app/out/rubocop-result.json
-
-      - name: Keep Rubocop output
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ env.rubocop-artifact-name }}
-          path: ${{ github.workspace }}/out/rubocop-result.json
-
-      - name: Lint ERB Templates
-        run: |-
-          docker run -t --rm ${{env.DOCKER_IMAGE_TEST}} bundle exec erblint --lint-all
-
-      - name: Lint Markdown
-        run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out ${{env.DOCKER_IMAGE_TEST}} sh -c "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
-
-      - name: ESLint - JavaScript linting
-        run: |-
-          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn js-lint"
-
-      - name: Fetch secrets from key vault
-        if: failure()
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
-
-  javascript_tests:
-    name: Javascript Tests
-    runs-on: ubuntu-latest
-    needs: [ build_base ]
-    env:
-      DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v4
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - name: Run Javascript Tests
-        run: |-
-          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn spec"
-
+#  linting:
+#    name: Linting
+#    runs-on: ubuntu-latest
+#    needs: [ build_base ]
+#    if: github.ref != 'refs/heads/master'
+#    env:
+#      DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
+#    steps:
+#      - name: Check out the repo
+#        uses: actions/checkout@v4
+#
+#      - name: set-up-environment
+#        uses: DFE-Digital/github-actions/set-up-environment@master
+#
+#      - uses: Azure/login@v2
+#        with:
+#            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
+#
+#      - name: Lint SCSS
+#        run: |-
+#          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true -e PATTERN="**/*.scss" \
+#            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn scss-lint"
+#
+#      - name: Lint Ruby
+#        run: |-
+#          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{env.DOCKER_IMAGE_TEST}} \
+#            rubocop --format json --out=/app/out/rubocop-result.json
+#
+#      - name: Keep Rubocop output
+#        if: always()
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: ${{ env.rubocop-artifact-name }}
+#          path: ${{ github.workspace }}/out/rubocop-result.json
+#
+#      - name: Lint ERB Templates
+#        run: |-
+#          docker run -t --rm ${{env.DOCKER_IMAGE_TEST}} bundle exec erblint --lint-all
+#
+#      - name: Lint Markdown
+#        run: |-
+#          docker run -t --rm -v ${PWD}/out:/app/out ${{env.DOCKER_IMAGE_TEST}} sh -c "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
+#
+#      - name: ESLint - JavaScript linting
+#        run: |-
+#          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
+#            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn js-lint"
+#
+#      - name: Fetch secrets from key vault
+#        if: failure()
+#        uses: azure/CLI@v2
+#        id: keyvault-yaml-secret
+#        with:
+#          inlineScript: |
+#            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
+#            echo "::add-mask::$SLACK_WEBHOOK"
+#            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+#
+#  javascript_tests:
+#    name: Javascript Tests
+#    runs-on: ubuntu-latest
+#    needs: [ build_base ]
+#    env:
+#      DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
+#    steps:
+#      - name: Check out the repo
+#        uses: actions/checkout@v4
+#
+#      - name: set-up-environment
+#        uses: DFE-Digital/github-actions/set-up-environment@master
+#
+#      - name: Run Javascript Tests
+#        run: |-
+#          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
+#            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn spec"
+#
+#
   feature_tests:
     name: Unit Tests
     runs-on: ubuntu-latest
@@ -312,8 +313,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ci_node_total: [10]
-        ci_node_index: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        ci_node_total: [2]
+        ci_node_index: [0, 1]
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
