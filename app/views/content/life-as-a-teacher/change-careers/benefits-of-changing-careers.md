@@ -1,5 +1,5 @@
 ---
-title: Benefits of changing careers
+title: Benefits of changing careers to teaching
 description: |- 
   Explore the benefits of changing careers, including teacher salaries, job security, and making a real difference in young people's lives.
 layout: "layouts/minimal"
