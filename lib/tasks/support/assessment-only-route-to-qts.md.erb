@@ -1,0 +1,89 @@
+---
+title: "Assessment only route to QTS"
+heading: "Assessment only route to QTS for unqualified teachers"
+subcategory: Other routes into teaching
+description: |-
+  Find out about the assessment only route to qualified teacher status (QTS) for unqualified teachers who have worked in a classroom.
+date: "2021-06-08"
+image: false
+backlink: /
+promo_content:
+    - content/train-to-be-a-teacher/promos/adviser-promo-assessment-only
+navigation: 20.40
+navigation_title: If you’ve worked as an unqualified teacher
+navigation_description: If you've worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through an assessment only route.
+fullwidth: true
+content:
+  - content/train-to-be-a-teacher/assessment-only-route-to-qts/listing
+  - content/train-to-be-a-teacher/assessment-only-route-to-qts/update-details
+
+provider_groups:
+<% provider_groups.each do |group_name, providers| %>
+  <%= group_name %>:
+<% if group_name =~ /Non-UK/i %>
+    description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
+<% end %>
+    providers:
+<% providers.each do |provider| %>
+    - header: <%= provider["header"].inspect %>
+      <% if provider["link"] %>link: <%= provider["link"].inspect %><% end %>
+      <% if provider["name"] %>name: <%= provider["name"].inspect %><% end %>
+      <% if provider["email"] %>email: <%= provider["email"].inspect %><% end %>
+      <% if provider["telephone"] %>telephone: <%= provider["telephone"].inspect %><% end %>
+      <% if provider["international_phone"] %>international_phone: <%= provider["international_phone"].inspect %><% end %>
+      <% if provider["extension"] %>extension: <%= provider["extension"].inspect %><% end %>
+<% end %>
+<% end %>
+
+keywords:
+  - Assessment Only
+  - Assessment
+  - Provider
+  - SCITT
+  - experienced
+---
+
+If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) through an assessment only programme.
+
+If you already have QTS, find out how you can [return to teaching](https://teaching-vacancies.service.gov.uk/jobseeker-guides/return-to-teaching-in-england/return-to-teaching/).
+
+## What is the assessment only route to QTS?
+
+You can take the assessment only route to QTS if you already meet the standards for qualified teacher status, so do not need any further training.
+
+Instead, you will undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments. This will vary by your provider.
+
+The assessment programme takes up to 12 weeks.
+
+## How much does assessment only QTS cost?
+
+Fees range from about $fees_assessmentonly_low$ to $fees_assessmentonly_high$, but vary between provider so it’s best to check with them for more information.
+
+Fees may be paid by you or your school at the start of the programme. If you’re currently working in a school, talk to your employer about your funding options.
+
+## Eligibility for assessment only QTS
+
+To be eligible, you need (all of the following):
+
+* to be able to show you meet the [teachers' standards](https://www.gov.uk/government/publications/teachers-standards) without any more training
+* to have worked in 2 or more schools
+* a degree
+* GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
+
+Specific entry criteria may vary by teacher training provider. You should ask them about eligibility before you apply.
+
+### If you're a teaching assistant
+
+If you've worked as a teaching assistant, it's unlikely you'll have the experience required for assessment only.
+
+There may be exceptional cases where teaching assistants have worked for a significant amount of time (at least 2 years) independently teaching classes and may be eligible.
+
+Talk to your provider about whether your experience makes you eligible for this route.
+
+Or, find other ways you can [train to be a teacher](/train-to-be-a-teacher).
+
+### If you're based overseas or are a non-UK citizen
+
+If you’re based overseas, you will need to contact a [non-UK assessment only provider](/train-to-be-a-teacher/assessment-only-route-to-qts#group--non-uk). You may also be interested in [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status). With iQTS, you can train where you live and work, with no need to visit the UK.
+
+If you’re a non-UK citizen based in the UK, contact one of the regional or national providers listed on this page.

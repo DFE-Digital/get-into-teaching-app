@@ -134,12 +134,13 @@ group :development, :test do
 
   # Testing framework
   gem "knapsack"
-  gem "rspec-rails", "~> 6.0.4"
+  gem "rspec-rails", "~> 6.0.3"
 
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.40.0"
   gem "factory_bot_rails", ">= 6.2.0"
-  gem "rspec-sonarqube-formatter", "~> 1.6.1", require: false
+  # See: https://github.com/otherguy/rspec-sonarqube-formatter/pull/63
+  gem "rspec-sonarqube-formatter", github: "otherguy/rspec-sonarqube-formatter", ref: "13fe436", require: false
   gem "simplecov"
 
   # Linting

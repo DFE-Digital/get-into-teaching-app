@@ -35,10 +35,16 @@ expander:
       </p>
       <p>
       Find out more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.</p>
+inset_text:
+  fee-increase:
+    text: |-
+      From autumn 2025, the maximum fees that providers can charge for postgraduate teacher training courses have increased. The increased amounts are shown on this page. If you've already applied for a course, speak with your provider to check if they'll be increasing their fees.
 ---
 For most postgraduate teacher training courses in England you need to pay a tuition fee. 
 
 ## Postgraduate teacher training course fees
+
+$fee-increase$
 
 The maximum tuition fee for a postgraduate teacher training course for UK applicants is:
 

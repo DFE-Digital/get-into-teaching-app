@@ -6,10 +6,10 @@ fees:
     low: £7,950
     high: £9,950
   pgitt:
-    domesticfulltime: £9,250
-    domesticparttime: £6,935
+    domesticfulltime: £9,535
+    domesticparttime: £7,145
     internationalaverage: £15,000
     internationalmaxfulltime: £36,000
     internationalmaxparttime: £17,500
-  ugitt: £9,250
-  pgittandugitt: £9,250
+  ugitt: £9,535
+  pgittandugitt: £9,535
