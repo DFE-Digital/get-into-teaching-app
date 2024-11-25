@@ -698,7 +698,7 @@ DEPENDENCIES
   redis-session-store (>= 0.11.4)
   rexml (>= 3.2.5)
   rinku
-  rspec-rails (~> 6.0.3)
+  rspec-rails (~> 7.1.0)
   rspec-retry
   rspec-sonarqube-formatter (~> 1.6.1)
   rubocop-govuk (~> 5.0.2)
