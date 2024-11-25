@@ -16,6 +16,11 @@ module Content
       allowed_keys = %i[class tabindex data id]
       filtered_options = options.slice(*allowed_keys)
 
+      disallowed_keys = options.keys - allowed_keys
+      if disallowed_keys.any?
+        raise ArgumentError, "Unexpected attributes: #{disallowed_keys.join(', ')}"
+      end
+
       filtered_options.merge(
         class: ["button", options[:class]].compact.join(" "),
         role: "button",
