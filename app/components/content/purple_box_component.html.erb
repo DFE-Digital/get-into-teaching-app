@@ -8,7 +8,7 @@
     <%= text %>
   </p>
   <div class="purple-box__cta">
-    <%= render "content/shared/link_as_button", url: @cta[:path], link_text: @cta[:text] %>
+    <%= render(Content::LinkAsButtonComponent.new(link_text: @cta[:text], url: @cta[:path])) %>
   </div>
   <div class="purple-box__graphic">
     <%= image %>
