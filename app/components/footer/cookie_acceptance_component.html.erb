@@ -14,23 +14,23 @@
           The id is `biscuits-agrees` instead of `cookies-agree`
           to prevent ad blockers from removing the button.
         -->
-        <%= render "content/shared/link_as_button", 
-          url: "#", 
-          link_text: "Accept all cookies", 
-          options: { 
+        <%= render "content/shared/link_as_button",
+          url: "#",
+          link_text: "Accept all cookies",
+          options: {
             tabindex: -1,
-            id: "biscuits-agree", 
-            class: "call-to-action-button", 
-            data: { action: "click->cookie-acceptance#accept", "cookie-acceptance-target": "agree" } 
+            id: "biscuits-agree",
+            class: "call-to-action-button",
+            data: { action: "click->cookie-acceptance#accept", "cookie-acceptance-target": "agree" },
           } %>
-        <%= render "content/shared/link_as_button", 
-          url: cookie_preference_path, 
-          link_text: "Set cookie preferences", 
-          options: { 
+        <%= render "content/shared/link_as_button",
+          url: cookie_preference_path,
+          link_text: "Set cookie preferences",
+          options: {
             tabindex: -1,
-            id: "cookies-disagree", 
-            class: "button--secondary",  
-            data: { "cookie-acceptance-target": "disagree" } 
+            id: "cookies-disagree",
+            class: "button--secondary",
+            data: { "cookie-acceptance-target": "disagree" },
           } %>
       </div>
     </div>
