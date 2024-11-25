@@ -72,5 +72,5 @@ Rails.application.configure do
   config.x.dfe_analytics = true
 
   # Allow access from Codespaces
-  config.hosts << /[a-z0-9-]+\.(preview\.app\.github|githubpreview)\.dev/
+  config.hosts << /[a-z0-9-]+\.((preview\.)?app\.github|githubpreview)\.dev/
 end
