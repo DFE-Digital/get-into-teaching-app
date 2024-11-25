@@ -96,26 +96,23 @@ runs:
           HTTPAUTH_PASSWORD: ${{ steps.fetch-secrets.outputs.HTTP_PASSWORD }}
           HTTPAUTH_USERNAME: ${{ steps.fetch-secrets.outputs.HTTP_USERNAME }}
 
-      - name: Print Deployed Pods
+      - name: Track Page Modifications
+        if: ${{ inputs.environment == 'review' || inputs.environment == 'production' }}
         shell: bash
         run: |
-          case ${{ inputs.environment }} in
-            review)
-              CLUSTER_NAME="s189t01-tsc-test-aks"
-              RESOURCE_GROUP="s189t01-tsc-ts-rg"
-              APP_LABEL="get-into-teaching-app-${{inputs.environment}}-${{inputs.pr}}"
-              ;;
-            production)
-              CLUSTER_NAME="s189p01-tsc-production-aks"
-              RESOURCE_GROUP="s189p01-tsc-pd-rg"
-              ;;
-            *)
-              CLUSTER_NAME="s189t01-tsc-test-aks"
-              RESOURCE_GROUP="s189t01-tsc-ts-rg"
-              ;;
-          esac
+          if [ "${{ inputs.environment }}" = "review" ]; then
+            CLUSTER_NAME="s189t01-tsc-test-aks"
+            RESOURCE_GROUP="s189t01-tsc-ts-rg"
+            APP_LABEL="get-into-teaching-app-${{inputs.environment}}-${{inputs.pr}}"
+            HOST="${APP_LABEL}.test.teacherservices.cloud"
+          else
+            CLUSTER_NAME="s189p01-tsc-production-aks"
+            RESOURCE_GROUP="s189p01-tsc-pd-rg"
+            APP_LABEL="get-into-teaching-app-${{inputs.environment}}"
+            HOST="getintoteaching.education.gov.uk"
+          fi
           
           az aks get-credentials --resource-group $RESOURCE_GROUP --name $CLUSTER_NAME --overwrite-existing
           kubelogin convert-kubeconfig -l spn
           POD_NAME=$(kubectl get pods -n ${{ env.NAMESPACE }} -l app=${APP_LABEL} -o jsonpath="{.items[0].metadata.name}")
-          kubectl exec -n ${{ env.NAMESPACE }} $POD_NAME -- bundle exec rails runner "TrackPageModificationsJob.perform_later"
+          kubectl exec -n ${{ env.NAMESPACE }} $POD_NAME -- bundle exec rails runner "TrackPageModificationsJob.perform_later(host: '${HOST}')"
