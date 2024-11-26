@@ -31,7 +31,10 @@ class PageModificationTracker
         page_mod.update!(content_hash: content_hash)
       end
     rescue StandardError => e
-      Rails.logger.error("Error tracking page modification for #{path}: #{e.message}")
+      Sentry.configure_scope do |scope|
+        scope.set_context('page_modification', { path: path })
+      end
+      Sentry.capture_exception(exception)
       next
     end
   end
