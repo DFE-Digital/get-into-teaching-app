@@ -54,17 +54,17 @@ RSpec.feature "Chat", type: :feature do
       end
 
       scenario "viewing the chat section of the talk to us component" do
-        puts "TEST A: #{ENV["CHAT_AVAILABILITY_API"]}"
-        # puts "TEST B: #{ENV.fetch("CHAT_AVAILABILITY_API")}"
-        puts "TEST C: #{ENV.fetch("CHAT_AVAILABILITY_API", nil)}"
-        puts "TEST D: #{Chat.new.availability_api_uri}"
-        puts "TEST E: #{Chat.new.availability}"
+        # puts "TEST A: #{ENV["CHAT_AVAILABILITY_API"]}"
+        # # puts "TEST B: #{ENV.fetch("CHAT_AVAILABILITY_API")}"
+        # puts "TEST C: #{ENV.fetch("CHAT_AVAILABILITY_API", nil)}"
+        # puts "TEST D: #{Chat.new.availability_api_uri}"
+        # puts "TEST E: #{Chat.new.availability}"
 
-        puts "TEST1h3"
+        puts "TEST1g3"
         visit root_path
-        puts "TEST2h3"
+        puts "TEST2g3"
         dismiss_cookies
-        puts "TEST3h3"
+        puts "TEST3g3"
 
         within(".talk-to-us") do
           expect(page).to have_text("Chat is closed")
