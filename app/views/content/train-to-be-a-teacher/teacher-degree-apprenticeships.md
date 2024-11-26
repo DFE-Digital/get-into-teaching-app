@@ -54,7 +54,7 @@ Teacher degree apprenticeships will be open to anyone who would like to gain a d
 
 You can apply for a place on a teacher degree apprenticeship if you meet specific eligibility requirements.
 
-To be eligiable to apply for a TDA, you must be:
+To be eligible to apply for a TDA, you must be:
 
 * a resident of England for the last 3 years or more
 * at least 16 years old
