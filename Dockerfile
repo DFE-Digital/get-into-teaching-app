@@ -24,7 +24,7 @@ RUN apk add --no-cache \
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git dpkg \
         chromium chromium-chromedriver postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_DRIVER_VERSION}-1_amd64.deb \
+RUN wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_DRIVER_VERSION}-1_amd64.deb && \
     dpkg -i ./google-chrome-stable_${CHROME_DRIVER_VERSION}-1_amd64.deb
 
 # Install bundler
