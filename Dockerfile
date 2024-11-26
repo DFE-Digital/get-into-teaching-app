@@ -9,7 +9,8 @@ ENV RAILS_ENV=production \
     RAILS_LOG_TO_STDOUT=true \
     RACK_TIMEOUT_SERVICE_TIMEOUT=60 \
     BUNDLE_WITHOUT=development \
-    BUNDLE_JOBS=4
+    BUNDLE_JOBS=4 \
+    CHROME_DRIVER_VERSION=127.0.6533.119
 
 RUN mkdir /app
 WORKDIR /app
@@ -20,8 +21,11 @@ RUN apk add --no-cache \
   "procps-ng=4.0.4-r0" \
   "libproc2=4.0.4-r0"
 
-RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
+RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git dpkg \
         chromium chromium-chromedriver postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
+
+RUN wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_DRIVER_VERSION}-1_amd64.deb \
+    dpkg -i ./google-chrome-stable_${CHROME_DRIVER_VERSION}-1_amd64.deb
 
 # Install bundler
 RUN gem install bundler --version=2.3.4
