@@ -1,18 +1,13 @@
 <div class="row inset">
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Engineering the future</h2>
-    <p>Engineers and physicists help find solutions to some of our biggest problems. From climate change to next generation prosthetics, we need their problem-solving skills and creative thinking to help us survive some of the biggest challenges humanity has ever faced.</p>
+    <p>Engineers and physicists help find solutions to some of our biggest problems. From climate change to next generation prosthetics, we need their problem-solving skills and creative thinking to help us take on some of the biggest challenges humanity has ever faced.</p>
     <p>The more great physics teachers we have in the classroom today, the more children will grow up inspired to become the physicists, engineers and physics teachers of tomorrow.</p>
+    <%= render 'content/shared/teaching/benefits' %>
   </section>
 
   <section class="col col-720">
-    <%= render Content::QuoteComponent.new(
-      text: "My engineering degree provided a natural transition to teaching physics and
-        I value the way science – especially physics – teaches a clear thought process
-        and a way to make rational sense of the world.",
-      name: "Roger, physics teacher",
-      large: false
-    ) %>
+    <%= render 'content/shared/quotes/quote_engineers_teach_physics_roger' %>
   </section>
 
   <section class="col col-720">
@@ -20,35 +15,72 @@
 
     <p>This programme is based on the physics initial teacher training (ITT) course, and has been developed with support from the physics and engineering community. It has been adapted to help you make the transition from engineering or material sciences to teaching physics. The course is designed to capitalise on your experience and empower you with the skills needed to become a great physics teacher.
      </p>
-
-     <p>If you’re concerned about how well you know physics as a subject, do not worry – you’ll be able to do a <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE) course</a> that will provide you with the training and support for any gaps in your knowledge.
-     </p>
-
     <p>Your training provider may offer part-time teacher training courses.</p>
 
-     <p>You'll also be invited to an annual community day and have the opportunity to network with existing physics teachers.
+     <p>You'll also be invited to a community day and have the opportunity to network with existing physics teachers.
      </p>
 
-    <p><a href="https://find-teacher-training-courses.service.gov.uk/results?engineers_teach_physics=true&study_type%5B%5D=full_time&study_type%5B%5D=part_time&qualification%5B%5D=qts&qualification%5B%5D=pgce_with_qts&qualification%5B%5D=pgce+pgde&degree_required=two_two&applications_open=false&applications_open=true&l=2&subjects%5B%5D=F3">Find engineers teach physics teacher training courses</a>.
+    <p><a href="https://find-teacher-training-courses.service.gov.uk/results?engineers_teach_physics=true&study_type%5B%5D=full_time&study_type%5B%5D=part_time&qualification%5B%5D=qts&qualification%5B%5D=pgce_with_qts&qualification%5B%5D=pgce+pgde&degree_required=two_two&applications_open=false&applications_open=true&l=2&subjects%5B%5D=F3">Find Engineers teach physics teacher training courses</a>.
      </p>
-
-    <%= render Content::QuoteComponent.new(
-      text: "I've found the skills I learnt in engineering have stood me in good stead for a teaching career. I have never regretted my decision to go into this profession. ",
-      name: "Chris, physics teacher",
-      large: false
-    ) %>
+    <p>You can also <a href="https://find-teacher-training-courses.service.gov.uk/">search for physics teacher training courses</a> that are not part of the Engineers teach physics training programme.</p>
+    <%= render 'content/shared/quotes/quote_engineers_teach_physics_chris' %>
   </section>
 
-  <section class="col col-720">
-    <h2 class="heading--box-blue">What you'll learn</h2>
-    <h3>On this initial teacher training (ITT) course, you’ll:</h3>
+   <section class="col col-720">
+    <h2 class="heading--box-blue">What you'll teach</h2>
+    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study">national curriculum for physics</a>, with opportunities to develop your pupils' ability to think like physicists and see physics as a solution to many challenges.</p>
+    <p>Themes you'll cover when you teach 11 to 14 year olds (key stage 3) include:</p>
     <ul>
-      <li>learn more about the curriculum you’ll be teaching</li>
-      <li>develop your existing physics subject knowledge</li>
-      <li>gain valuable classroom experience</li>
+      <li>energy</li>
+      <li>motion and forces</li>
+      <li>electricity and electromagnetism</li>
+      <li>waves and matter</li>
     </ul>
+    <p>Themes you’ll cover when you teach 14 to 16 year olds (key stage 4) include:</p>
+    <ul>
+      <li>energy, forces and wave motion</li>
+      <li>electricity, magnetism and electromagnetism</li>
+      <li>the structure of matter</li>
+      <li>atomic structure and space physics</li>
+    </ul>
+    <p>Explore what teaching key stage 3 and 4 physics would be like by visiting:</p>
+    <ul>
+       <li><a href="https://www.thenational.academy/teachers/curriculum/science-secondary-aqa/units">AQA exam board lessons on the Oak National Academy website</a></li>
+       <li><a href="https://www.thenational.academy/teachers/curriculum/science-secondary-edexcel/units">Edexcel exam board lessons on the Oak National Academy website</a></li>
+       <li><a href="https://www.thenational.academy/teachers/curriculum/science-secondary-ocr/units">OCR exam board lessons on the Oak National Academy website</a></li>
+    </ul>
+    <p>Themes you’ll cover when you teach 16 to 18 year olds (key stage 5) include:</p>
+    <ul>
+      <li>fields, vectors and scalars</li>
+      <li>mechanics and mechanical properties of matter</li>
+      <li>electric circuits and waves</li>
+      <li>matter, quantum and nuclear physics</li>
+    </ul>
+    <%= render 'content/shared/teaching/ages_abilities' %>
   </section>
 
+ <section class="col col-space-m col-720">
+    <h2 class="heading--box-blue">Start your journey into teaching physics</h2>
+    <%= render 'content/shared/qualifications-training/check_qualifcations' %>
+    <%= render 'content/shared/qualifications-training/find_out_more' %>
+    <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
+  </section>
+
+  <section class="col col-space-m col-720">
+    <%= render 'content/shared/qualifications-training/subject_knowledge' %>
+  </section>
+   <section class="col col-space-m col-720">
+    <h3>Fund your teacher training</h3>
+    <%= render 'content/shared/teaching/bursary_scholarship' %>
+    <%= render 'content/shared/teaching/funding_support' %>
+  </section>
+
+  <section class="col col-space-m col-720">
+    <%= render 'content/shared/qualifications-training/paid_internships' %>
+  </section>
+  <section class="col col-space-m col-720">
+   <%= render 'content/shared/teaching/ect_support' %>
+  </section>
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">How we can help</h2>
     <p>If you would like more information about the course and application process, you can talk to a teacher training adviser for free. They can help you to:</p>
@@ -57,22 +89,8 @@
       <li>make an application</li>
       <li>prepare for your interview</li>
     </ul>
-
     <p class="call-to-action__action">
       <a href="/teacher-training-adviser/sign_up/identity?channel=222750047">Get an <span>adviser</span></a>
     </p>
   </section>
-
-  <section class="col col-720 col-space-m">
-    <h3>Fund your teacher training</h3>
-    <p>Scholarships of <%= v :scholarships_physics %> or bursaries of <%= v :bursaries_postgraduate_physics %> are available for eligible trainee physics teachers.</p>
-    <p><a href="/funding-and-support/scholarships-and-bursaries">Find out about your eligibility for bursaries and scholarships</a>.</p>
-    <p>You may also be able to get <a href="/funding-and-support">extra funding and support</a> if you're:</p>
-    <ul>
-      <li>a parent or carer</li>
-      <li>disabled</li>
-    </ul>
-    <p>You can also <a href="https://find-teacher-training-courses.service.gov.uk/">search for physics teacher training courses</a> that are not part of the Engineers teach physics training programme.
-    </p>
-  </section>
-</div>
+  </div>

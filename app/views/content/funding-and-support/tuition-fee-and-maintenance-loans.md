@@ -35,11 +35,24 @@ expander:
       </p>
       <p>
       <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">Find out about funding for non-UK citizens</a>.</p>
+inset_text:
+  loan-increase:
+    text: |-
+      From autumn 2025, the maximum fees that providers can charge for postgraduate teacher training courses have increased. This means the amount you can apply to borrow to cover tuition fees has also increased. The increased amounts are shown on this page.
+  maintenance-increase:
+    text: |-
+      From autumn 2025, the maximum maintenance loan amounts have increased. The increased amounts are shown on this page.
 ---
 
 Funding is available to help you train to teach if you choose a course that has tuition fees. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs.
 
-You can still apply for a tuition fee loan and a maintenance loan if you already have a student loan, and regardless of whether you get a teaching bursary or scholarship. And you will only have to make loan repayments once you’re earning.
+You can still apply for a tuition fee loan and a maintenance loan if:
+
+* you also get a teaching bursary or scholarship
+
+* you've previously applied for and received a student loan
+
+You'll only have to make loan repayments once you’re earning.
 
 You do not need to wait until you have a confirmed offer for a teacher training course to apply for student funding.
 
@@ -48,6 +61,9 @@ If you choose a teacher training course that has a salary you're not eligible fo
 $student-finance$
 
 ## Tuition fee loan
+
+$loan-increase$
+
 You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course. If you’re eligible for a tuition fee loan, the amount you borrow is paid directly to your course provider.
 
 The maximum tuition fee loan for postgraduate teacher training for a UK applicant is:
@@ -57,17 +73,20 @@ The maximum tuition fee loan for postgraduate teacher training for a UK applican
 
 The maximum amount you can borrow depends on how much your course costs.
 
-Tuition fees loans are not means tested. So you do not need to provide evidence of your income or anyone else’s to be eligible to receive one.
+Tuition fee loans are not means tested. So you do not need to provide evidence of your income or anyone else’s to be eligible to receive one.
 
 ## Maintenance loan
+
+$maintenance-increase$
+
 You may also be eligible for a maintenance loan to help cover your living costs.
 
 The maximum amount you may be eligible to borrow is:
 
-* $finance_maintenanceloan_withparents$, if you live at home with your parents
-* $finance_maintenanceloan_notwithparentsoutsidelondon$, if you live away from your parents, out of London
-* $finance_maintenanceloan_notwithparentsinsidelondon$, if you live away from your parents, in London
-* $finance_maintenanceloan_oversixty$, if you're 60 years or over on the first day of the academic year of your course
+* $finance_maintenanceloan_withparents$ if you live at home with your parents
+* $finance_maintenanceloan_notwithparentsoutsidelondon$ if you live away from home and are studying outside of London
+* $finance_maintenanceloan_notwithparentsinsidelondon$ if you live away from home and are studying in London
+* $finance_maintenanceloan_oversixty$ if you're 60 years or over on the first day of the first academic year of your course
 
 $student-finance-calculator$
 

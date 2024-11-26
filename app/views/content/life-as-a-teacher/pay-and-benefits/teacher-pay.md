@@ -92,7 +92,7 @@ Some schools also have a leading practitioner pay range for teachers with exempl
 What this will involve will depend on your school, but could include:
 
 * coaching and mentoring other teachers, including trainees and early career teachers
-* undertaking a national professional qualification (NPQ)
+* undertaking a [national professional qualification (NPQ)](https://www.gov.uk/guidance/national-professional-qualification-npq-courses) 
 * supporting your school with plans to reduce workload
 
 | Area                                     | Minimum | Maximum |
