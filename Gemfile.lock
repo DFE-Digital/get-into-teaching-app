@@ -69,6 +69,15 @@ GIT
       timeliness (>= 0.3.10, < 1)
 
 GIT
+  remote: https://github.com/otherguy/rspec-sonarqube-formatter.git
+  revision: 13fe436921e1442a09c23d9e46055773d1511638
+  ref: 13fe436
+  specs:
+    rspec-sonarqube-formatter (1.0.0.pre.local)
+      htmlentities (~> 4.3.3)
+      rspec (~> 3.0)
+
+GIT
   remote: https://github.com/pkorenev/rack-page_caching.git
   revision: 9ca404f7f7e4773030e75799da7ab02e27cbe9a3
   ref: 9ca404f
@@ -510,9 +519,6 @@ GEM
       rspec-support (~> 3.12)
     rspec-retry (0.6.2)
       rspec-core (> 3.3)
-    rspec-sonarqube-formatter (1.6.1)
-      htmlentities (~> 4.3)
-      rspec (~> 3.0)
     rspec-support (3.13.1)
     rubocop (1.64.1)
       json (~> 2.3)
@@ -700,9 +706,9 @@ DEPENDENCIES
   redis-session-store (>= 0.11.4)
   rexml (>= 3.2.5)
   rinku
-  rspec-rails (~> 6.0.4)
+  rspec-rails (~> 6.0.3)
   rspec-retry
-  rspec-sonarqube-formatter (~> 1.6.1)
+  rspec-sonarqube-formatter!
   rubocop-govuk (~> 5.0.2)
   secure_headers
   selenium-webdriver (~> 4.21.1)
