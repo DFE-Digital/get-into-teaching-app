@@ -50,7 +50,7 @@ RSpec.feature "Chat", type: :feature do
         visit root_path
         puts "TEST2"
         dismiss_cookies
-        puts "TEST3"
+        puts "TEST3a"
 
         within(".talk-to-us") do
           expect(page).to have_text("Chat is closed")
