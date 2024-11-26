@@ -90,7 +90,7 @@ export default class CookiePreferences {
     );
 
     this.emitEvent(newlyAllowed);
-    this.sendMetric();
+    // this.sendMetric();
   }
 
   clearNonEssentialCookies() {
