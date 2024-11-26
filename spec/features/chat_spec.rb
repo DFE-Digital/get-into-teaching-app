@@ -48,10 +48,10 @@ RSpec.feature "Chat", type: :feature do
   #   # end
   #
     context "when agents are not available" do
-      before do
-        stub_request(:get, "http://api.example/")
-          .to_return(status: 200, body: "{\"skillid\": 123456,	\"available\": false, \"status_age\": 123 }")
-      end
+      # before do
+      #   stub_request(:get, "http://api.example/")
+      #     .to_return(status: 200, body: "{\"skillid\": 123456,	\"available\": false, \"status_age\": 123 }")
+      # end
 
       scenario "viewing the chat section of the talk to us component" do
         # puts "TEST A: #{ENV["CHAT_AVAILABILITY_API"]}"
@@ -60,11 +60,11 @@ RSpec.feature "Chat", type: :feature do
         # puts "TEST D: #{Chat.new.availability_api_uri}"
         # puts "TEST E: #{Chat.new.availability}"
 
-        puts "TEST1g4"
+        puts "TEST1g5"
         visit root_path
-        puts "TEST2g4"
+        puts "TEST2g5"
         dismiss_cookies
-        puts "TEST3g4"
+        puts "TEST3g5"
 
         within(".talk-to-us") do
           expect(page).to have_text("Chat is closed")
