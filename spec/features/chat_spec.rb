@@ -40,8 +40,11 @@ RSpec.feature "Chat", type: :feature do
       end
 
       scenario "viewing the chat section of the talk to us component" do
+        puts "TEST1"
         visit root_path
+        puts "TEST2"
         dismiss_cookies
+        puts "TEST3"
 
         within(".talk-to-us") do
           expect(page).to have_text("Chat is closed")
