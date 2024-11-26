@@ -11,9 +11,9 @@ RSpec.feature "Chat", type: :feature do
   end
 
   scenario "test" do
-    puts "TEST1e"
+    puts "TEST1f"
     visit root_path
-    puts "TEST2e"
+    puts "TEST2f"
   end
 
 
