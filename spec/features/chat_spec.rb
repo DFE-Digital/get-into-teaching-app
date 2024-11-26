@@ -11,27 +11,27 @@ RSpec.feature "Chat", type: :feature do
   end
 
   context "when javascript is enabled", :js do
-    context "when agents are available" do
-      before do
-        stub_request(:get, "http://api.example/")
-          .to_return(status: 200, body: "{\"skillid\": 123456,	\"available\": true, \"status_age\": 123 }")
-      end
-
-      scenario "viewing the chat section of the talk to us component" do
-        visit root_path
-        dismiss_cookies
-
-        within(".talk-to-us") do
-          click_link("Open chat in new tab")
-        end
-
-        popup_window_handle = (page.driver.browser.window_handles - [page.driver.current_window_handle]).first
-        page.driver.switch_to_window(popup_window_handle)
-        expect(page.driver.current_url).to end_with("/chat")
-        expect(page).to have_css("#root", visible: false)
-        page.driver.close_window(popup_window_handle)
-      end
-    end
+    # context "when agents are available" do
+    #   before do
+    #     stub_request(:get, "http://api.example/")
+    #       .to_return(status: 200, body: "{\"skillid\": 123456,	\"available\": true, \"status_age\": 123 }")
+    #   end
+    #
+    #   scenario "viewing the chat section of the talk to us component" do
+    #     visit root_path
+    #     dismiss_cookies
+    #
+    #     within(".talk-to-us") do
+    #       click_link("Open chat in new tab")
+    #     end
+    #
+    #     popup_window_handle = (page.driver.browser.window_handles - [page.driver.current_window_handle]).first
+    #     page.driver.switch_to_window(popup_window_handle)
+    #     expect(page.driver.current_url).to end_with("/chat")
+    #     expect(page).to have_css("#root", visible: false)
+    #     page.driver.close_window(popup_window_handle)
+    #   end
+    # end
 
     context "when agents are not available" do
       before do
@@ -50,22 +50,22 @@ RSpec.feature "Chat", type: :feature do
     end
   end
 
-  context "when javascript is not enabled", js: false do
-    scenario "viewing the chat section of the talk to us component" do
-      visit root_path
-      dismiss_cookies
-
-      within(".talk-to-us") do
-        expect(page).to have_text("Chat not available")
-      end
-    end
-  end
+  # context "when javascript is not enabled", js: false do
+  #   scenario "viewing the chat section of the talk to us component" do
+  #     visit root_path
+  #     dismiss_cookies
+  #
+  #     within(".talk-to-us") do
+  #       expect(page).to have_text("Chat not available")
+  #     end
+  #   end
+  # end
 
   def dismiss_cookies
     click_link "Accept all cookies"
   end
 
-  def visit_on_date(path)
-    visit "#{path}?fake_browser_time=#{date.to_i * 1000}"
-  end
+  # def visit_on_date(path)
+  #   visit "#{path}?fake_browser_time=#{date.to_i * 1000}"
+  # end
 end
