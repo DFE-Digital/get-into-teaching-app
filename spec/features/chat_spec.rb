@@ -60,11 +60,11 @@ RSpec.feature "Chat", type: :feature do
         # puts "TEST D: #{Chat.new.availability_api_uri}"
         # puts "TEST E: #{Chat.new.availability}"
 
-        puts "TEST1g3"
+        puts "TEST1g4"
         visit root_path
-        puts "TEST2g3"
+        puts "TEST2g4"
         dismiss_cookies
-        puts "TEST3g3"
+        puts "TEST3g4"
 
         within(".talk-to-us") do
           expect(page).to have_text("Chat is closed")
