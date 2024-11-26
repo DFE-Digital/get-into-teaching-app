@@ -32,9 +32,9 @@ class PageModificationTracker
       end
     rescue StandardError => e
       Sentry.configure_scope do |scope|
-        scope.set_context('page_modification', { path: path })
+        scope.set_context("page_modification", { path: path })
       end
-      Sentry.capture_exception(exception)
+      Sentry.capture_exception(e)
       next
     end
   end
