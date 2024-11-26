@@ -4,9 +4,9 @@ RSpec.feature "Chat", type: :feature do
   include_context "when requesting a page with the Get Into Teaching events badge"
 
   scenario "test" do
-    puts "TEST1"
+    puts "TEST1a"
     visit root_path
-    puts "TEST2"
+    puts "TEST2a"
   end
 
 
