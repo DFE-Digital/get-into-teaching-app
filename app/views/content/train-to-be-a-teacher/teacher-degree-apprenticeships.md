@@ -47,7 +47,7 @@ The providers offering teacher degree apprenticeships are:
 * Xavier Teach Southeast, in partnership with the University of Sussex
 * University of Derby
 
-[View all courses for the TDA in secondary maths](https://www.gov.uk/find-teacher-training-courses).
+[View all courses for the TDA in secondary maths](https://find-teacher-training-courses.service.gov.uk).
 
 ## Who’s eligible to apply for a teacher degree apprenticeship?
 Teacher degree apprenticeships will be open to anyone who would like to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
