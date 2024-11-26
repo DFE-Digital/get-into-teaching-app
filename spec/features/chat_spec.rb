@@ -40,6 +40,12 @@ RSpec.feature "Chat", type: :feature do
       end
 
       scenario "viewing the chat section of the talk to us component" do
+        puts "TEST A: #{ENV["CHAT_AVAILABILITY_API"]}"
+        puts "TEST B: #{ENV.fetch("CHAT_AVAILABILITY_API")}"
+        puts "TEST C: #{ENV.fetch("CHAT_AVAILABILITY_API", nil)}"
+        puts "TEST D: #{Chat.new.availability_api_uri}"
+        puts "TEST E: #{Chat.new.availability}"
+
         puts "TEST1"
         visit root_path
         puts "TEST2"

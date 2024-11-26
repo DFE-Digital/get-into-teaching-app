@@ -17,7 +17,7 @@ class Chat
     availability ? availability["available"] : false
   end
 
-private
+# private
 
   def skillid
     availability["skillid"] if availability
@@ -34,7 +34,8 @@ private
       begin
         response = Faraday.get(availability_api_uri)
         JSON.parse(response.body) if response.success?
-      rescue Faraday::ConnectionFailed
+      rescue Faraday::ConnectionFailed => e
+        puts "Faraday::ConnectionFailed: #{e.inspect}"
         nil
       end
   end
