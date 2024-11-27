@@ -1,0 +1,17 @@
+<div class="adviser">
+  <div class="adviser__left">
+    <%= image_pack_tag(image,
+                     **helpers.image_alt_attribs_for_text(""),
+                     class: "adviser__image")
+    %>
+  </div>
+
+  <div class="adviser__right">
+    <h2 class="heading-l">
+      <%= tag.span title %>
+    </h2>
+    <%= tag.p text %>
+    <p></p>
+    <%= link_to button_text, "/teacher-training-advisers", class: "button", role: "button" %>
+  </div>
+</div>
