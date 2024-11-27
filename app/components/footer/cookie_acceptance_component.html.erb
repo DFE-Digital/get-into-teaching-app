@@ -14,22 +14,22 @@
           The id is `biscuits-agrees` instead of `cookies-agree`
           to prevent ad blockers from removing the button.
         -->
-        <%= render(Content::LinkAsButtonComponent.new(
+        <%= render Content::LinkAsButtonComponent.new(
             link_text: "Accept all cookies",
             href: "#",
             tabindex: -1,
             id: "biscuits-agree",
             css_class: "call-to-action-button",
             data: { action: "click->cookie-acceptance#accept", "cookie-acceptance-target": "agree" },
-          )) %>
-        <%= render(Content::LinkAsButtonComponent.new(
+          ) %>
+        <%= render Content::LinkAsButtonComponent.new(
             link_text: "Set cookie preferences",
             href: cookie_preference_path,
             tabindex: -1,
             id: "cookies-disagree",
             css_class: "button--secondary",
             data: { "cookie-acceptance-target": "disagree" }
-          )) %>
+          ) %>
       </div>
     </div>
   </div>

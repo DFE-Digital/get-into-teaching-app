@@ -11,7 +11,7 @@
     <%= tag.p(text) if text.present? %>
   <% end %>
   <div class="call-to-action__action">
-    <%= render(Content::LinkAsButtonComponent.new(link_text: @link_text, href: @link_target)) %>
+    <%= render Content::LinkAsButtonComponent.new(link_text: @link_text, href: @link_target) %>
   </div>
   <%= image_element(image) %>
 <% end %>

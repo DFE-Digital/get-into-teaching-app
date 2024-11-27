@@ -34,7 +34,7 @@ RSpec.describe Content::LinkAsButtonComponent, type: :component do
     it "does not render unallowed attributes" do
       expect {
         render_inline(component)
-      }.to raise_error(ArgumentError, "Unhandled attributes: panda")
+      }.to raise_error(ArgumentError, "unknown keyword: :panda")
     end
   end
 end

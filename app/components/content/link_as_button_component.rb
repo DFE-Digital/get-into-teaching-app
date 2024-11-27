@@ -4,10 +4,8 @@ module Content
 
     include ContentHelper
 
-    def initialize(link_text:, href:, tabindex: nil, data: {}, id: nil, css_class: [], **kwargs)
+    def initialize(link_text:, href:, tabindex: nil, data: {}, id: nil, css_class: [])
       super
-
-      raise ArgumentError, "Unhandled attributes: #{kwargs.keys.join(', ')}" if kwargs.any?
 
       @link_text = substitute_values(link_text)
       @href = href
