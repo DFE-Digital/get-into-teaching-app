@@ -4,7 +4,7 @@ import Redacter from '../javascript/redacter';
 
 export default class extends Controller {
   static openedClass = 'searchbox--opened';
-  static targets = ['searchbar', 'label'];
+  static targets = ['searchbar', 'label', 'toggleButton'];
   static values = { searchInputId: String };
 
   searchQuery = null;
@@ -20,9 +20,11 @@ export default class extends Controller {
     if (this.element.classList.contains('open')) {
       this.element.classList.remove('open');
       this.searchTogglerExpanded(false);
+      this.updateAriaLabel('Search');
     } else {
       this.element.classList.add('open');
       this.searchTogglerExpanded(true);
+      this.updateAriaLabel('Close search');
       this.input.focus();
     }
   }
@@ -77,6 +79,13 @@ export default class extends Controller {
     }
     if (searchInput) {
       searchInput.ariaExpanded = expanded;
+    }
+  }
+
+  updateAriaLabel(label) {
+    const toggleButton = this.toggleButtonTarget;
+    if (toggleButton) {
+      toggleButton.setAttribute('aria-label', label);
     }
   }
 
