@@ -30,7 +30,7 @@ private
 
           xml.url do
             xml.loc(request.base_url + page_location(path))
-            xml.lastmod(metadata.fetch(:date) { DEFAULT_LASTMOD })
+            xml.lastmod(lastmod_date(path, metadata))
             xml.priority(metadata.fetch(:priority)) if metadata.key?(:priority)
           end
         end
@@ -38,11 +38,15 @@ private
         OTHER_PATHS.each do |events_path|
           xml.url do
             xml.loc(request.base_url + events_path)
-            xml.lastmod(DEFAULT_LASTMOD)
+            xml.lastmod(lastmod_date(events_path))
           end
         end
       end
     end
+  end
+
+  def lastmod_date(path, metadata = nil)
+    metadata&.dig(:date) || PageModification.find_by(path: path)&.updated_at&.strftime("%Y-%m-%d") || DEFAULT_LASTMOD
   end
 
   def published_pages
