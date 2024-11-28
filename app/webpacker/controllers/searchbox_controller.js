@@ -4,7 +4,7 @@ import Redacter from '../javascript/redacter';
 
 export default class extends Controller {
   static openedClass = 'searchbox--opened';
-  static targets = ['searchbar', 'label', 'toggleButton'];
+  static targets = ['searchbar', 'label'];
   static values = { searchInputId: String };
 
   searchQuery = null;
@@ -83,9 +83,9 @@ export default class extends Controller {
   }
 
   updateAriaLabel(label) {
-    const toggleButton = this.toggleButtonTarget;
-    if (toggleButton) {
-      toggleButton.setAttribute('aria-label', label);
+    const toggle = document.getElementById('search-toggle');
+    if (toggle) {
+      toggle.setAttribute('aria-label', label);
     }
   }
 
