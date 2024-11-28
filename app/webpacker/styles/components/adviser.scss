@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: $indent-amount * .5;
   margin: 0 $indent-amount;
+  background-color: $grey;
 
   @include mq($from: tablet) {
     flex-direction: row;
@@ -35,9 +36,15 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    padding-right: $indent-amount;
+    padding-bottom: $indent-amount;
+
+    @include mq($until: tablet) {
+      padding-left: $indent-amount;
+    }
 
     @include mq($from: tablet) {
-      padding-right: $indent-amount;
+      padding-top: $indent-amount;
     }
 
     p,
