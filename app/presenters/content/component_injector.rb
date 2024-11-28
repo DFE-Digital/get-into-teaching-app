@@ -13,7 +13,7 @@ module Content
       if type_string.starts_with?(CTA_PARENT_NAMESPACE)
         "CallsToAction::#{type_string.sub(CTA_PARENT_NAMESPACE, '').camelize}Component"
       else
-        "Content::#{type_string}Component"
+        "Content::#{type_string.camelize}Component"
       end
     end
 
