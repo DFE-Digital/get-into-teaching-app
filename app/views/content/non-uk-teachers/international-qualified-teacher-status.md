@@ -11,7 +11,6 @@ promo_content:
 navigation: 20.50
 navigation_title: Gain the equivalent of English QTS, from outside the UK
 navigation_description: Train from anywhere in the world to get international qualified teacher status (iQTS), backed by England’s Department for Education.
-date: "2021-08-06"
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../"
 keywords:

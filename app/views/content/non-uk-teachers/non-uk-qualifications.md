@@ -10,7 +10,6 @@ related_content:
 navigation: 20.20
 navigation_title: Qualifications you'll need to train to teach in England
 navigation_description: Before you apply, get help checking you have the correct qualifications for English teacher training.
-date: "2021-05-27"
 image: "static/images/content/hero-images/0032.jpg"
 backlink: "../../"
 youtube_video:

@@ -15,7 +15,6 @@ keywords:
  - nursery
  - preschool
  - year one
-date: "2021-03-29"
 description: |-
   Find out how to become an early years teacher. Discover the qualifications you need, the different early years teacher training routes and the cost.
 inset_text:
