@@ -334,6 +334,45 @@ If you need to insert an expander into an erb file:
   ) %>
 ```
 
+
+### Adviser (CTA) component
+
+You can use the Adviser (Call to Action) component to create a call to action to invite users to sign up for the Get an Adviser service. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
+
+* title
+* text
+* image
+* link_text
+* link_target
+
+```yaml
+---
+cta_adviser:
+  adviser1:
+    title: "Optional title"
+    text: "Optional text"
+    image: "/optional/path/to/image"
+    link_text: "Optional link text"
+    link_target: "/optional/path"
+---
+
+# My page
+
+$adviser1$
+```
+Alternatively, if you need to insert an adviser component in an erb file, you can call it like this:
+
+```yaml
+<%= render CallsToAction::AdviserComponent.new(
+  title: "Optional title",
+  text: "Optional text",
+  image: "/optional/path/to/image",
+  link_text: "Optional link text",
+  link_target: "/optional/path"
+)%>
+```
+
+
 ### YouTube video
 
 To add a YouTube video to your content you need to know the video ID. You can find this out by visiting the video on [youtube.com](https://www.youtube.com/) and looking in the address bar of your browser (it is in the format `watch?v=<video_id>`).
