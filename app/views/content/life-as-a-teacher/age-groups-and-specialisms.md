@@ -12,4 +12,6 @@ content:
   - content/life-as-a-teacher/header
   - content/life-as-a-teacher/age-groups-and-specialisms/categories
   - content/life-as-a-teacher/how-to-become-a-teacher-cta
+  - content/life-as-a-teacher/directory-nav
+
 ---

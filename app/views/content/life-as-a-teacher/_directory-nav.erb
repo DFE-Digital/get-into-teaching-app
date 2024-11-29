@@ -1,0 +1,43 @@
+<div class="row">
+  <section class="container">
+    <section class="homepage-feature image-blocks">
+      <%= render Content::ImageBlockComponent.new(
+        title: "Life as a teacher",
+        title_color: "yellow",
+        image_path: "static/images/content/homepage/directory1.jpg"
+      ) do %>
+        <ul>
+          <li><a href="/life-as-a-teacher/pay-and-benefits">Pay and benefits</a></li>
+          <li><a href="/life-as-a-teacher/teaching-as-a-career">Teaching as a career</a></li>
+           <li><a href="/life-as-a-teacher/explore-subjects">Explore subjects you could teach</a></li>
+          <li><a href="/life-as-a-teacher/age-groups-and-specialisms">Age groups and specialisms</a></li>
+          <li><a href="/life-as-a-teacher/change-careers">Change careers to teaching</a></li>
+
+        </ul>
+      <% end %>
+      <%= render Content::ImageBlockComponent.new(
+        title: "Teacher stories",
+        title_color: "pink",
+        image_path: "static/images/content/homepage/directory2.jpg"
+      ) do %>
+        <ul>
+          <li><a href="/life-as-a-teacher/pay-and-benefits/bens-favourite-things-about-teaching">Ben's favourite thing about teaching</a></li>
+          <li><a href="/life-as-a-teacher/teaching-as-a-career/turning-a-tough-lesson-into-a-success">Turning a tough lesson into a success</a></li>
+          <li><a href="/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story">Abigail's career progression story</a></li>
+        </ul>
+     <% end %>
+      <%= render Content::ImageBlockComponent.new(
+       title: "Take the next step",
+       title_color: "green",
+       image_path: "static/images/content/homepage/directory3.jpg"
+     ) do %>
+        <ul>
+          <li><a href="/teacher-training-adviser/sign_up/identity">Get an adviser</a></li>
+          <li><a href="/steps-to-become-a-teacher">How to become a teacher</a></li>
+          <li><a href="/events">Find an event</a></li>
+          <li><a href="/mailinglist/signup/name">Sign up for personalised updates</a></li>
+        </ul>
+      <% end %>
+    </section>
+   </section>
+  </div>
