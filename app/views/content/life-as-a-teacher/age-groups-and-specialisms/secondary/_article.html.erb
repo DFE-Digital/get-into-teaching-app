@@ -2,44 +2,85 @@
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Why teach <%= @front_matter["subject"] %></h2>
     <div class="inset">
-      <p>Becoming a secondary school teacher is an excellent career choice if you want to have a positive impact on young people's lives. Through creating engaging lessons, you can inspire pupils to develop a lifelong love of learning. Beyond the classroom, you'll also play a crucial role in building pupils' confidence and supporting their personal growth.</p>
+      <p>Becoming a secondary school teacher is a great career choice if you want to make a difference in young people's lives. As students progress through school, you will directly influence their future prospects through the grades you help them achieve and the values you share with them.</p>
+      <p>As a specialist, you'll inspire students to develop a passion for your subject. You'll give them the skills and knowledge needed to tackle increasingly complex content and motivate some of them to pursue your subject beyond school.</p>
       <!-- Why teach: benefits -->
       <%= render 'content/shared/teaching/benefits' %>
     </div>
-
-    <h2 class="heading--box-blue"> Who you'll teach</h2>
-    <h3>Age groups you could teach</h3>
-    <p>Children start secondary school in England when they’re 11. There are up to 3 stages in secondary school:</p>
-    <ul>
-      <li>key stage 3 (KS3) includes years 7 to 9, with children aged 11 to 14</li>
-      <li>key stage 4 (KS4) includes years 10 and 11, with pupils aged 14 to 16</li>
-      <li>key stage 5 (KS5) includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms, or colleges</li>
+      <section class="col col-720">
+    <%= render 'content/shared/quotes/quote_art_richard' %>
+    </section>
+    <h2 class="heading--box-blue">Key stages</h2>
+    <p>Pupils start secondary school in England when they’re 11. Throughout secondary school, pupils will be taught by subject specialists and will gain increasingly greater independence over their own learning.</p>
+    <p> There are 3 stages of secondary education.</p>
+    <h3>Key stage 3 (ks3)</h3>
+    <p>Ks3 includes years 7 to 9, with children aged 11 to 14. In ks3 pupils will be exposed to a broad curriculum. At the end of the ks3, pupils will have some choice over the subjects they want to continue studying.</p> 
+    <p>In ks3, pupils will be taught a range of compulsary subjects including:</p>
+     <ul>
+       <li>English</li> 
+       <li>maths</li>
+       <li>science</li>
+       <li>history</li>
+       <li>geography</li>
+       <li>modern foreign languages</li>
+       <li>design and technology</li>
+       <li>art and design</li>
+       <li>music</li>
+       <li>physical education</li>
+       <li>religious education</li>
+       <li>citizenship</li>
+       <li>computing</li>
+     </ul>
+    <h3>Key stage 4 (ks4)</h3>  
+    <p>Key stage 4 (KS4) includes years 10 and 11, with pupils aged 14 to 16.</p>
+     <p>During ks4, most pupils work towards GCSEs or another national qualification. There are some subjects that are compulsary and some which pupils can choose to study.</p>
+     <p>Compulsary subjects in ks4 include:</p>
+     <ul>
+      <li>English</li>
+      <li>maths</li>
+      <li>science</li>
+      <li>computing</li>
+      <li>physical education</li>
+      <li>religious education</li>
+      <li>citizenship</li>
+     </ul>
+     <p>Pupils can then choose from a range of subjects offered by the school. Schools must offer at least one subject from these areas:</p>
+     <ul>
+      <li>arts</li>
+      <li>design and technology</li>
+      <li>humanties</li>
+      <li>modern foreign languages</li> 
     </ul>
-    <%= render 'content/shared/age-groups-and-specialisms/teaching_send' %>
-    <h2 class="heading--box-blue">What you'll teach</h2>
-     <p>As a secondary school teacher, you'll train as a subject specialist and follow the agreed curriculum for your chosen subject and age group.</p>
-     <p><a href="/life-as-a-teacher/explore-subjects">Explore some subjects you could teach</a>.</p>
-     <%= render 'content/shared/age-groups-and-specialisms/ages_abilities' %>
-     <%= render 'content/shared/teaching/progression_in_teaching' %>
-     <h2 class="heading--box-blue">Start your journey into teaching <%= @front_matter["subject"] %></h2>
-    <!-- Check your qualifications-->
-    <%= render 'content/shared/age-groups-and-specialisms/check_qualifcations' %>
+    <h3>Key stage 5</h3>
+    <p>Key stage 5 (KS5), includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms, or colleges.</p>
+     <p>At ks5, when taught in secondary school, pupils will mostly be working towards A level qualifications or an equivilant.</p>
+     <p>There are no compulsary subjects at ks5 but schools usually offer to teach the subjects they offer at ks4.</p> 
     <p>If you're interested in teaching young people and adults over 16 who are not studying for a degree, then <a href="/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers">teaching in further education</a> might be for you.</p>
+    <h2 class="heading--box-blue">Pupils with special educational needs and disabilities (SEND)</h2>
+    <%= render 'content/shared/teaching/teaching_send' %>
+    <h2 class="heading--box-blue">What you'll teach</h2>
+     <p>As a secondary school teacher, you'll train as a subject specialist and teach the agreed curriculum for your subject.</p>
+
+     <p>Find out more about some of the <a href="/life-as-a-teacher/explore-subjects">subjects you could teach at secondary school</a>.</p>
+     <%= render 'content/shared/teaching/ages_abilities' %>
+     <p>There is also plenty of opportunity for <a href="/life-as-a-teacher/teaching-as-a-career/career-progression">progression in teaching</a>. You could take on challenges such as becoming a head of subject, special educational needs co-ordinator (SENCO) or even a headteacher.</p>
+     <h2 class="heading--box-blue">Start your journey into teaching <%= @front_matter["subject"] %></h2>
+    <%= render 'content/shared/qualifications-training/check_qualifcations' %>
     <%= render 'content/shared/qualifications-training/find_out_more' %>
-    <!-- Non-UK qualifications expander -->
     <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
   </section>
   <section class="col col-space-m col-720">
     <h3>Fund your teacher training</h3>
     <p>Depending on the subject you choose to teach, you could be eligible for a bursary or scholarship. <a href="/funding-and-support/scholarships-and-bursaries">Check what funding is available for your subject</a>.</p>
     <%= render 'content/shared/teaching/funding_support' %>
+      <%= render 'content/shared/quotes/quote_maths_gloria' %>
   </section>
-
+ 
   <section class="col col-space-m col-720">
    <%= render 'content/shared/qualifications-training/get_school_experience' %>
    <div class="paid-internships">
    <h3>Apply for a paid internship</h3>
-   <p>If you're currently doing an undergraduate or master's degree and are interested in chemistry, computing, langauges, maths or physics you could apply for a <a href="/train-to-be-a-teacher/teaching-internships">paid teaching internship</a>.</p>
+   <p>If you're currently doing an undergraduate or master's degree and are interested in chemistry, computing, langauges, maths or physics, you could apply for a <a href="/train-to-be-a-teacher/teaching-internships">paid teaching internship</a>.</p>
    <p>The 3-week programme could help you to understand what it's really like in the classroom and get a feel for school life.</p></div>
   </section>
   <section class="col col-720">
