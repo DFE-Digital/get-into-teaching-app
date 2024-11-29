@@ -29,6 +29,10 @@ RSpec.describe PageModificationTracker do
       .to receive(:search_teaching_events)
       .and_return([])
 
+    allow_any_instance_of(described_class)
+      .to receive(:manual_pages)
+      .and_return({})
+
     allow(::Pages::Frontmatter)
       .to receive(:list)
       .and_return({ path => { draft: false } })
