@@ -49,7 +49,13 @@ private
     )
     content_pages = ::Pages::Frontmatter.list.reject { |_path, fm| fm[:draft] }
     event_pages = events.map { |e| Rails.application.routes.url_helpers.event_path(e.readable_id) }.index_with({})
-    content_pages.merge(event_pages)
+    manual_pages = {
+      "/events/about-get-into-teaching-events" => {},
+      "/events" => {},
+      "/mailinglist/signup/name" => {},
+    }
+
+    content_pages.merge(**event_pages, **manual_pages)
   end
 
   def request_path(path, app, headers)
