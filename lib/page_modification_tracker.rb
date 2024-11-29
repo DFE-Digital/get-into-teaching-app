@@ -2,6 +2,12 @@ require "action_dispatch/testing/integration"
 require "digest/sha1"
 
 class PageModificationTracker
+  MANUAL_PAGES = {
+    "/events/about-get-into-teaching-events" => {},
+    "/events" => {},
+    "/mailinglist/signup/name" => {},
+  }.freeze
+
   attr_reader :app, :headers
 
   def initialize(host: "localhost:3000", selector: "body")
@@ -41,14 +47,6 @@ class PageModificationTracker
 
 private
 
-  def manual_pages
-    {
-      "/events/about-get-into-teaching-events" => {},
-      "/events" => {},
-      "/mailinglist/signup/name" => {},
-    }
-  end
-
   def published_pages
     events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
       start_after: Time.zone.now,
@@ -57,7 +55,7 @@ private
     )
     content_pages = ::Pages::Frontmatter.list.reject { |_path, fm| fm[:draft] }
     event_pages = events.map { |e| Rails.application.routes.url_helpers.event_path(e.readable_id) }.index_with({})
-    content_pages.merge(**event_pages, **manual_pages)
+    content_pages.merge(**event_pages, **MANUAL_PAGES)
   end
 
   def request_path(path, app, headers)
