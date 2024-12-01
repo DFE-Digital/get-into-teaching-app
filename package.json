@@ -6,7 +6,7 @@
     "@babel/plugin-transform-runtime": "7",
     "@babel/preset-env": "7",
     "@babel/runtime": "7",
-    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/fontawesome-free": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@sentry/browser": "^8.33.0",
     "accessible-autocomplete": "^3.0.0",
