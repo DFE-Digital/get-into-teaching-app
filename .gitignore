@@ -42,7 +42,6 @@ yarn-debug.log*
 .vscode/
 
 # DevOps files
-bin/terrafile
 bin/konduit.sh
 
 # Terraform files

@@ -3,7 +3,6 @@ title: "Teacher pay"
 heading: "Teacher pay"
 description: |-
   All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
-date: "2021-06-24"
 backlink: "../../"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries

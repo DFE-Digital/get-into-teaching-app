@@ -4,7 +4,6 @@ heading: "What is qualified teacher status (QTS)?"
 subcategory: Qualifications
 description: |-
   Qualified teacher status (QTS) is what you need to teach in maintained primary, secondary and special schools in England. Find out how to get QTS.
-date: "2021-11-01"
 backlink: "../../"
 related_content:
     What qualifications do you need to be a teacher? : "/train-to-be-a-teacher/qualifications-you-need-to-teach"
