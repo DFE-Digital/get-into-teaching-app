@@ -1,4 +1,5 @@
-<div class="adviser">
+<%= tag.div(class: "adviser--border-top") if border %>
+<%= tag.div class: classes do %>
   <div class="adviser__left">
     <%= image_pack_tag(image,
                      **helpers.image_alt_attribs_for_text(""),
@@ -14,4 +15,4 @@
     <p></p>
     <%= link_to link_text, link_target, class: "button", role: "button" if link_text.present? && link_target.present? %>
   </div>
-</div>
+<% end %>
