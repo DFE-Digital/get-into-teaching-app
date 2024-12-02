@@ -9,7 +9,6 @@ related_content:
 navigation: 30.20
 navigation_title: Teacher training interviews
 navigation_description: Find out how to prepare for your teacher training interviews.
-date: "2023-06-09"
 keywords:
   - adviser
   - advisor

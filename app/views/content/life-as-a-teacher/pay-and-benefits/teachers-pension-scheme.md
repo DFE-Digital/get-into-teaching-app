@@ -3,7 +3,6 @@ title: "Teachers' pension scheme"
 heading: "Teachers' pension scheme"
 description: |-
   The teachers' pension scheme is one of the most generous in the country. Learn more about the benefits of the teachers' pension scheme.
-date: "2022-11-29"
 image: false
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries

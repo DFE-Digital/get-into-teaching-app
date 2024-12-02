@@ -11,7 +11,6 @@ promo_content:
 navigation: 20.30
 navigation_title: Apply for your visa to train to teach
 navigation_description: Learn more about applying for a Student or Skilled Worker visa to train to teach in England.
-date: "2021-05-27"
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 keywords:
