@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Integration tests", :integration, :js, type: :feature do
+RSpec.feature "Integration tests", :integration, type: :feature do
   before { config_capybara }
 
   around do |example|
