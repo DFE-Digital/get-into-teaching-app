@@ -5,7 +5,7 @@ description: |-
   Find out about all the opportunities for progression as a teacher, including early career support, salary progression, and professional qualifications.
 backlink: "../../"
 promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+    - "/content/shared/quotes/quote-teaching-abigail"
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
@@ -55,6 +55,7 @@ keywords:
   - Salary review
   - Pastoral care
   - ECF
+
 ---
 
 There's no set path for promotion in teaching. Instead, you can progress your career at your own pace, and tailor your journey to your interests and goals. You'll have the freedom to proactively seek out progression opportunities, and some early career teachers progress to a headteacher role within 10 years of qualifying.
