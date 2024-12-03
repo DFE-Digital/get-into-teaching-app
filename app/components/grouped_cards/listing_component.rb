@@ -15,7 +15,7 @@ module GroupedCards
     end
 
     def items(group)
-      @data.dig(group, "providers").sort_by { |provider| provider["header"].to_s.downcase }
+      @data.dig(group, "providers")
     end
 
     def description(group)

@@ -4,6 +4,7 @@ heading: "Get teaching experience with an internship"
 subcategory: Postgraduate teacher training
 description: |-
   Find paid teaching internships to gain new skills and see what classroom life is like. Explore chemistry, computing, languages, maths and physics internships.
+date: "2021-04-14"
 image: false
 promo_content:
   - content/train-to-be-a-teacher/promos/eta-promo-internships
@@ -365,6 +366,13 @@ provider_groups:
         areas: "West Berkshire"
         name: "Claire Hickling"
         email: "c.hickling@niot.org.uk"
+      - header: "i2i Teaching Partnership"
+        link: "https://www.i2ipartnership.co.uk/1243/undergraduate-teaching-internship-programme"
+        applications: "Open January"
+        subjects: "chemistry, computing, maths, physics, languages"
+        areas: "Hampshire, Surrey"
+        name: "Liz Wylie"
+        email: "lwylie@i2ipartnership.co.uk"
       - header: "Ringwood School"
         link: "https://www.ringwood.hants.sch.uk/teacher-training/paid-internships/"
         applications: "Open April"
@@ -400,13 +408,6 @@ provider_groups:
         areas: "Slough, Surrey"
         name: "Natasha Bisset"
         email: "n.bisset@xaviercet.org.uk"
-      - header: "i2i Teaching Partnership"
-        link: "https://www.i2ipartnership.co.uk/1243/undergraduate-teaching-internship-programme"
-        applications: "Open January"
-        subjects: "chemistry, computing, maths, physics, languages"
-        areas: "Hampshire, Surrey"
-        name: "Liz Wylie"
-        email: "lwylie@i2ipartnership.co.uk"
   South West:
     providers:
       - header: "Excalibur Academies Trust"
