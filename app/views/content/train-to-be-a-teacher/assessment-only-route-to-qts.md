@@ -395,6 +395,13 @@ provider_groups:
       telephone: "01227 925555"
       international_phone: "+441227925555"
       
+    - header: "i2i Teaching Partnership SCITT"
+      link: "https://www.i2ipartnership.co.uk/"
+      name: "Krissy Taylor"
+      email: "ktaylor@i2ipartnership.co.uk"
+      telephone: "01252 900550"
+      international_phone: "+441252900550"
+      
     - header: "Inspiring Futures Partnership Trust"
       link: "https://cheppingviewscitt.com/Entry-Criteria/"
       name: "Nicky Stephenson"
@@ -457,13 +464,6 @@ provider_groups:
       email: "h.grout@reading.ac.uk"
       telephone: "0118 378 7237"
       international_phone: "+441183787237"
-      
-    - header: "i2i Teaching Partnership SCITT"
-      link: "https://www.i2ipartnership.co.uk/"
-      name: "Krissy Taylor"
-      email: "ktaylor@i2ipartnership.co.uk"
-      telephone: "01252 900550"
-      international_phone: "+441252900550"
       
   South West:
     providers:

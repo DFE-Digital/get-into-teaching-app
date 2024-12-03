@@ -4,7 +4,6 @@ heading: "Assessment only route to QTS for unqualified teachers"
 subcategory: Other routes into teaching
 description: |-
   Find out about the assessment only route to qualified teacher status (QTS) for unqualified teachers who have worked in a classroom.
-date: "2021-06-08"
 image: false
 backlink: /
 promo_content:
