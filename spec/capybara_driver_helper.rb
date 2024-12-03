@@ -23,6 +23,10 @@ end
 Capybara.default_max_wait_time = 2
 RSpec.configure do |config|
   config.before do |example|
+    if example.metadata[:js]
+      raise NotImplementedError, "The Capybara driver #{JS_DRIVER} is not currently supported in Alpine 3.20. Please use the default :rack_test driver instead and test javascript behaviour in js-spec tests"
+    end
+
     Capybara.current_driver = JS_DRIVER if example.metadata[:js]
     Capybara.current_driver = :selenium if example.metadata[:selenium]
     Capybara.current_driver = :selenium_chrome if example.metadata[:selenium_chrome]
