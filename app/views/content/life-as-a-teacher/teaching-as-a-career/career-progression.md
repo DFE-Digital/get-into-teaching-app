@@ -102,6 +102,16 @@ $gloria$
 
 You can become a mentor for early career teachers (ECTs). In this role, you’ll receive training on mentorship and coach a newly qualified teacher at the start of their career.
 
+## National professional qualifications
+
+National professional qualifications (NPQs) are professional development courses for teachers and leaders to develop skills, progress careers and improve school outcomes.  
+
+There are 2 types of NPQs: specialist and leadership. Specialist NPQs can help you develop your classroom teaching or specialism. Leadership NPQs can help you develop your leadership skills or to progress to a leadership role.
+
+You may be able to get your NPQ course fees paid for by the Department for Education (DfE). This is called scholarship funding. You do not need to apply for it. When you register for an NPQ, DfE will tell you if you're eligible for funding. 
+
+[Find out more about national professional qualifications on GOV.UK](https://www.gov.uk/guidance/national-professional-qualification-npq-courses).
+
 ## Salary progression
 
 Qualified teachers get a minimum starting salary of $salaries_qualifiedteacher_englandmin$ (or more in London). Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements. 
@@ -117,11 +127,3 @@ You may also receive additional payments on top of your regular salary for takin
 This could be a one-off payment for a specific project, for example, creating a timetable. Or it might be an extra responsibility attached to your job role, for example, being the head of department. 
 
 Depending on your responsibilities, you could earn up to an extra $salaries_tlr_max$. Your school will determine how much you receive.
-
-## National professional qualifications
-
-National professional qualifications (NPQs) are professional development courses for teachers and leaders to develop skills, progress careers and improve school outcomes.  
-
-There are 2 types of NPQs: specialist and leadership. Specialist NPQs can help you develop your classroom teaching or specialism. Leadership NPQs can help you develop your leadership skills or to progress to a leadership role.
-
-[Find out more about national professional qualifications on GOV.UK](https://www.gov.uk/guidance/national-professional-qualification-npq-courses).
