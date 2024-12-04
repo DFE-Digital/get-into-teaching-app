@@ -69,26 +69,28 @@
         </section>
       <% else %>
         <section class="col col-720 col-space-m">
-          <p><strong>We do not have any Get Into Teaching events open for registration right now. We'll update this page with new Get Into Teaching events soon.</strong></p>
-        </section>
-
-        <section class="col col-720">
-          <p>In the meantime, take a look at <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }}), class: "link--black") %> in your area or online.</p>
+          <p>Our spring events are coming soon to Newcastle, Norwich, Sheffield, Manchester, Nottingham, Birmingham, London, Bristol, and Brighton.</p>
+          <p>We'll update this page with more details in January.</p>
         </section>
 
         <section class="col col-720">
           <h2 class="heading-m">Get event updates and advice in your inbox</h2>
 
-          <p>Get a better idea if teaching is right for you with regular information on:</p>
+          <p>Be the first to know about new events near you, and get a better idea if teaching is right for you with regular information on:</p>
 
           <ul>
             <li>what it's like to be a teacher</li>
             <li>different ways to train</li>
-            <li>events near you</li>
           </ul>
 
           <p><%= link_to("Get event updates and advice in your inbox", mailing_list_steps_path, class: "link--black") %>.</p>
         </section>
+        
+        <section class="col col-720">
+          <h2 class="heading-m">Find events from teacher training providers</h2>
+          <p>You may also be interested in events organised by teacher training providers. Take a look at <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }}), class: "link--black") %> in your area or online.</p>
+        </section>
+
       <% end %>
     </section>
   </div>
