@@ -15,12 +15,11 @@ keywords:
  - nursery
  - preschool
  - year one
-date: "2021-03-29"
 description: |-
   Find out how to become an early years teacher. Discover the qualifications you need, the different early years teacher training routes and the cost.
 inset_text:
   international-content:
-    text: If you're a non-UK candidate, you can apply for early years initial teacher training, if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2024-to-2025-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
+    text: If you're a non-UK candidate, you can apply for early years initial teacher training, if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2025-to-2026-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
     color: grey
 calls_to_action:
   EY-graduate:
@@ -40,7 +39,7 @@ calls_to_action:
   EY-undergraduate:
     name: feature_table
     arguments:
-      - Cost: "Up to $earlyyears_fees_undergrad$"
+      - Cost: "Up to $earlyyears_fees_undergrad$ per year"
         Salary: "No"
         Length of training: "3 or 4 years"
         Qualification: "Early years teacher status"
@@ -90,7 +89,7 @@ Bursaries are only available for this route as follows:
 
 You are not eligible for a bursary if you do not have these qualifications or if you're completing any other EYITT routes.
 
-You do not need to do anything to access this funding. You can [learn more about early years initial teacher training funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2024-to-2025-funding-guidance).
+You do not need to do anything to access this funding. You can [learn more about early years initial teacher training funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2025-to-2026-funding-guidance).
 
 ### Postgraduate employment-based training
 This route is for graduates working in an early years setting who want to achieve early years teacher status.

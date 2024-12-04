@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/DFE-Digital/dfe-analytics.git
-  revision: 706595e52fed211cee53ad99ceaeaabb47a059cc
-  tag: v1.14.2
+  revision: 7618b23697e91ab1ababee5234faaa260f6c873e
+  tag: v1.15.1
   specs:
-    dfe-analytics (1.14.2)
+    dfe-analytics (1.15.1)
       google-cloud-bigquery (~> 1.38)
       httparty (~> 0.21)
       multi_xml (~> 0.6.0)
@@ -221,10 +221,10 @@ GEM
     erubi (1.13.0)
     et-orbi (1.2.11)
       tzinfo
-    factory_bot (6.4.6)
+    factory_bot (6.5.0)
       activesupport (>= 5.0.0)
-    factory_bot_rails (6.4.3)
-      factory_bot (~> 6.4)
+    factory_bot_rails (6.4.4)
+      factory_bot (~> 6.5)
       railties (>= 5.0.0)
     faraday (1.10.3)
       faraday-em_http (~> 1.0)
@@ -380,8 +380,8 @@ GEM
       mixlib-shellout
     method_source (1.1.0)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.7)
-    minitest (5.25.1)
+    mini_portile2 (2.8.8)
+    minitest (5.25.2)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.27)
       tomlrb
@@ -575,7 +575,7 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    shoulda-matchers (6.2.0)
+    shoulda-matchers (6.4.0)
       activesupport (>= 5.2.0)
     sidekiq (6.5.5)
       connection_pool (>= 2.2.2)

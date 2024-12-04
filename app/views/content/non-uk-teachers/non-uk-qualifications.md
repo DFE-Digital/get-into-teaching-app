@@ -10,7 +10,6 @@ related_content:
 navigation: 20.20
 navigation_title: Qualifications you'll need to train to teach in England
 navigation_description: Before you apply, get help checking you have the correct qualifications for English teacher training.
-date: "2021-05-27"
 image: "static/images/content/hero-images/0032.jpg"
 backlink: "../../"
 youtube_video:
@@ -100,11 +99,11 @@ You'll also need to:
 
 ## English language, maths and science proficiency
 
-If you’ve reached a certain proficiency in an English language test, some providers will accept this as evidence you meet the standard of a grade 4 GCSE in English – for example:
+If you’ve reached a certain proficiency in an English language test, some providers will accept this as evidence you meet the standard of a grade 4 GCSE in English. You can find out more by visiting the following websites:
 
-* [International English Language Testing System (IELTS)](https://www.ielts.org/)
-* [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl)
-* [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/)
+* [International English Language Testing System (IELTS) website](https://www.ielts.org/)
+* [Test of English as a Foreign Language (TOEFL) website](https://www.ets.org/toefl)
+* [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE) website](https://www.cambridgeenglish.org/exams-and-tests/proficiency/)
 
 If you have not passed an English language test like this, or do not have qualifications in maths or science which are the same standard as grade 4 GCSE, some teacher training providers will let you sit tests in these subjects. It’s best to contact them to ask about their policy before you apply.
 

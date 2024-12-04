@@ -25,7 +25,7 @@ The teacher degree apprenticeship is a new teacher training programme where you�
  
 The teaching apprenticeship is a 4-year, full-time course that lets you train as either a primary or secondary teacher with an accredited teacher training provider. Trainee teachers will spend an average of 40% of their time (two days a week) studying for their degree with a university.
 
-The salary you’ll earn as a TDA will depend on the type of school you work in and where the school is.  
+The salary you’ll earn as a TDA trainee will depend on the type of school you work in and where the school is.  
 
 If you’re employed in a maintained school (schools funded by local authorities) as a TDA trainee, you’ll be paid on the unqualified teacher pay range.  
 
@@ -47,20 +47,23 @@ The providers offering teacher degree apprenticeships are:
 * Xavier Teach Southeast, in partnership with the University of Sussex
 * University of Derby
 
-To view all courses for the TDA in secondary maths, please visit [Find Teacher Training](https://www.gov.uk/find-teacher-training-courses).
+[View all courses for the TDA in secondary maths](https://find-teacher-training-courses.service.gov.uk).
 
 ## Who’s eligible to apply for a teacher degree apprenticeship?
 Teacher degree apprenticeships will be open to anyone who would like to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
 
-To be eligible to apply for a teacher degree apprenticeship you’ll need the following qualifications:
+
+To be eligible to apply for a TDA, you must be:
+
+* a resident of England for the last 3 years or more
+* at least 16 years old
+
+
+To meet the academic requirements for the TDA, you must have:
 
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 * A levels - the number of A levels or equivalent qualifications required will be set by individual universities
 
-You also need to be:
-
-* a resident of England for the last 3 years or more
-* age 16 years or over 
 
 ## How to apply for a teacher degree apprenticeship 
 Courses for new teaching apprenticeships will be published on [Find Teacher Training](https://find-teacher-training-courses.service.gov.uk/) between October 2024 and September 2025, with training due to start in autumn 2025.

@@ -10,7 +10,6 @@ promo_content:
 navigation: 20.20
 navigation_title: Fees and financial support for non-UK trainee teachers
 navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
-date: "2021-05-27"
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 keywords:
@@ -151,7 +150,7 @@ Talk to your training provider about the home fee rate, [bursaries and scholarsh
 
 [Student Finance England](https://www.gov.uk/contact-student-finance-england) has a dedicated service for EU students and for EEA citizens working in the UK.
 
-The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
+The [UK Council for International Student Affairs website](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
 
 ## Contact us
 

@@ -3,7 +3,6 @@ title: "How to move up the career ladder in teaching"
 heading: "How to move up the career ladder in teaching"
 description: |-
   Teacher training advisers talk about teacher development and how you can progress a career in teaching.
-date: "2024-01-09"
 backlink: "../../"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries

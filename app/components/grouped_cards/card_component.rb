@@ -25,11 +25,28 @@ module GroupedCards
     end
 
     def fields
-      @data.without("header", "link", "status")
+      @data.without("header", "link", "status", "extension", "international_phone")
     end
 
-    def linked_value(value)
-      Rinku.auto_link(h(value)).html_safe
+    def linked_value(field, value)
+      tags = []
+
+      if field == "telephone" && value.present?
+        tags << if @data["international_phone"].present?
+                  # Although we present the national telephone number, we need to use the
+                  # international_phone value in the URL to support overseas visitors
+                  tag.span { link_to(value, "tel:#{@data['international_phone']}") }
+                else
+                  tag.span { link_to(value, "tel:#{value}") }
+                end
+        # add extension here
+        if @data["extension"].present?
+          tags << tag.span(class: "extension") { @data["extension"] }
+        end
+      else
+        tags << tag.span { Rinku.auto_link(h(value)).html_safe }
+      end
+      safe_join tags
     end
 
     def link
