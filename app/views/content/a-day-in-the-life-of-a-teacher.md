@@ -1,5 +1,5 @@
 ---
-  title: "A day in the life of a teacher"
+  title: "What it's like to be a teacher"
   description: |-
     Find out about a day in the life of a teacher in a secondary school, including an example of teacher working hours and their day to day routine.
   date: "2021-03-08"
@@ -18,71 +18,111 @@
     - everyday
     - timetable
   quote:
-    q-sarah-primary:
-      text: "I like to get in early so I can get organised — in teaching, preparation is everything."
-      name: "Sarah, primary school teacher"
+    q-gavin-ict:
+      text: "The classroom changes by the hour and working with different age ranges and abilities means you have to keep a fresh outlook on your subject in order to create an engaging and positive learning environment. In the course of a normal day, most teachers would deliver lessons to over 100 students with different interests and learning needs."
+      name: "Gavin, ICT teacher"
       classes: quote--indent
-    q-sarah-geography-1:
-      text: "I have four free periods a week, which I use as my own time."
-      name: "Sarah, geography teacher"
+    q-gavin-ict-2:
+      text: "Teaching and learning does not stop with the bell at the end of the school day. Getting involved with extracurricular activities can be extremely rewarding – this is balanced with marking and planning for the next set of lessons"
+      name: "Gavin, ICT teacher"
       classes: quote--indent
-    q-gavin:
-      text: "Teaching and learning does not stop with the bell at the end of the school day."
-      name: "Gavin, assistant headteacher"
+    q-jane:
+      text: "It’s all about the relationships you build with pupils. If they know they’ll ‘get away’ with disruptive learning, they will disrupt learning!"
+      name: "Jane, teaching adviser"
       classes: quote--indent
-    q-sarah-geography-2:
+    q-sarah-geography:
       text: "I sometimes do a couple of hours at the weekend but I try to keep my weekends free to make sure I have some real downtime."
       name: "Sarah, geography teacher"
       classes: quote--indent
+    q-helen-food:
+      text: "It's not an easy career. There will be challenges along the way but persevere and the rewards are amazing. It's my 35th year and every day is still different. Do not expect too much of yourself too soon - 1 day at a time but you will make a difference and you will be remembered."
+      name: "Helen, food tech teacher"
+      classes: quote--indent
 ---
+Life as a teacher is a rewarding career. Filled with real purpose you can make a real difference to pupils' lives. However, the career brings its own challeneges too which we will explore to help you make the right choice for your career.
 
-A day in the life of a teacher is really varied, and no two days will be the same. Your day as a teacher will look different depending on whether you teach primary, secondary, or what subject you teach. Each school will have its own schedule and different responsibilities outside of teaching hours.
+## A day in the life of a teacher
 
-Aside from classroom time, teaching is quite flexible. You can choose when you do your marking, planning, and admin. Teachers also get more holidays than other professions. Full-time teachers work for 195 days per year in school.
+#### 7:30am Arrive at school
 
-----
+Teachers often start their day early, typically arriving at school somwhere between 7:00am to 8:00am. The morning is usually spent preparing resources for the day ahead so that everything is organised for when the pupils arrive.
 
-#### 7:45 - Arrive at school
+Sometimes in the morning, there will also be a staff meeting to ensure that everyone is up to date with school messages, important announcements, and any changes to the day's schedule.
 
-Many teachers like to get to school around this time or before. They prepare for the day, get any equipment they need, and make sure everything’s ready for classes to start.
+#### 8:45am pupils arrive
 
-$q-sarah-primary$
+At around 9:00am pupils will start school. Depending on your role, you may be in charge of a form group or registering children. In this time pupils usually get on with morning activities, such as spelling or maths activities. It is also a chance to catch up with pupils individually and ensure their wellbeing and create a shared sense of identity as a group.
 
-#### 8:20 - Staff meeting
 
-There may be staff meetings in the morning to catch up with all staff, year group, or faculty members.
+#### 9:15am morning lessons 
+The structure of the school day will depend on the school but often there are 2 lessons taught in the morning followed by a break. In total there are often 5 hour lessons in the day. Depending on your school you could teach around 30 pupils of mixed abilities.
 
-#### 8:30 - The day begins
+$q-gavin-ict$
 
-The day begins with form time. This might include uniform and planner checks, or even some numeracy and literacy skills activities.
+#### 11:15am morning break
+Teachers are sometimes responsible for break-time duties. This involves supervising pupils during to make sure that they are safe and that an adult is avaialable if anything happens. Teachers might patrol the playground and monitor indoor areas to adress any issues that arise. This also gives teachers an opportunity to interact with pupils outside of the classrom and building a postive rapport. 
 
-#### 9:00 - Morning lessons start
+Teachers who do not have a break-duty spend their time in the staff room talking or in their classrooms catching up with any marking to reduce the amount they have to do later on.
 
-Not every day is a full timetable of lessons. Teachers have free periods which are spread across the week. These are used to catch up on marking or planning.
+#### 11:35am lessons 
 
-$q-sarah-geography-1$
+After break pupils must settle down again and usually do two more sets of lessons before lunch.
 
-Lessons are often 50 minutes long. Mornings could be structured as two 50 minute lessons followed by a break, then another two 50 minute lessons.
+#### 1:35pm lunch
 
-#### 12:30 - 30 minute lunch break
+Lunch is an opportunity for teachers to have break. Teachers will often go to a staff room with other teachers, have their lunch and have a well earned chat about what they have done in the morning. Many teachers also use this as an opportunity to get ahead on their marking. By tackling some books during this time it can reduce the amount of marking needed to be done in the afternoon.
 
-#### 13:00 - Afternoon lessons
+#### 2:15pm afternoon lessons 
 
-Lunch is followed by two more 50 minute lessons.
+Often there is one more lesson of the day before pupils are done for the day. 
 
-#### 15:00 - End of lessons
+#### 3:15pm End of the day 
+When pupils leave school the work continues for teachers. They will generally spend this time marking any work and planning future lessons. 
 
-$q-gavin$
+Once a week after school there is often a school meeting. In this meeting teachers get to together to do training or talk about things such as data. 
 
-Teachers usually stay at school for a couple of hours to do marking, planning, admin, or contact parents about any behaviour issues. Some days, the school will have staff meetings or professional development time after the children have gone home.
+Teachers may also run an after school club. Some teachers may run an activity such as a football team, drama club or computer games. Running these clubs can be extra effort but it is also rewarding to share a passion in a more infomral setting and build stronger relations with your pupils. 
 
-#### 17:00 - Leave school for the day
 
-#### Weekend
 
-Some teachers may do some marking or planning over the weekend, but others may choose to fit everything in the working week.
+Some teachers will run an afterschool club such as a football team, drama club or computer games. 
+
+Depending on how the teacher likes to split their work they will leave school between 4.30 to 6. Some teachers will also take home books to mark or carry on planning once they are at home.
+
+$q-gavin-ict-2$
+
+
+## Planning preparation and assessment time (PPA)
+Teachers are entitled to planning preparation and assessment time (PPA), this is at least 10% of teachers timetabled time. Depending on the time table of the school this could mean that you have a couple of lessons free next to each other or they could be spread across the week. During this time teachers usually plan upcoming lessons and streams of work.Or they use it to mark and assess work.
+
+## Challeneges of being a teacher 
+Being a teacher comes with its unique set of challeneges like any job. One of the main challenges is managaing a room full of pupils who have different needs and ensuring each them get the right support. This requires teachers to be adaptable and think on their feet. Some pupils
+
+### behaviour 
+Some pupils behaviour can be difficult and this is can be daunting as a new teacher. However, every training course will provide you with a range of best practices for how to deal with challenging behaviour. The school will also have a behaviour policy which you can follow and colleagues will support you. In time you will find your own way of dealing with pupils and find your authentic teaching voice. 
+$q-jane$
+
+### Time spent planning
 
 $q-sarah-geography-2$
+
+
+
+## Positives of being a teacher 
+
+Being a teacher is not an easy career and it is full of challenges. However, it is a unique and rewarding career like nothing else. You have the opportunity of making a real difference in the lives of children. 
+### Doing something yo are passionate about 
+Being a teacher 
+
+### working as part of a team 
+As a teacher, you won't be working alone. You'll collaborate with other subject specialists who will offer help and support. Since they might share the responsibility of teaching the same year group, they can provide valuable planning tips. They may also teach the same students and assist with behaviour management. Colleagues form strong bonds and support each other, as everyone is in the same situation.
+
+
+## Advice for anyone becoming a teacher
+$q-helen-food$
+
+
+
 
 <section class="clearfix">
   <h2 id="next-steps">Next steps</h2>
