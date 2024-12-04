@@ -2,10 +2,10 @@
 title: "Career progression in teaching"
 heading: "Career progression in teaching"
 description: |-
-  Find out about all the opportunities for progression as a teacher, including early career support, salary progression, and professional qualifications.
+  Find out about the opportunities for progression as a teacher, including salary progression, professional qualifications, and mentorship.
 backlink: "../../"
 promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+    - "/content/shared/quotes/quote-teaching-abigail"
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
@@ -55,6 +55,7 @@ keywords:
   - Salary review
   - Pastoral care
   - ECF
+
 ---
 
 In teaching, there are lots of opportunities for progression and self development. You can progress your career at your own pace, and tailor your journey to your interests and goals. You'll have the freedom to proactively seek out progression opportunities. For example, you could:
@@ -75,11 +76,11 @@ If your course leads to qualified teacher status (QTS), you’ll receive 2 years
 
 ## Taking on more responsibility
 
-Whether it’s during your time as an early career teacher, or at other stages in your career, you can take on more responsibility to help progress your career.
+Whether it’s during your time as an early career teacher, or at other stages in your career, you can take on more responsibility to help you progress and develop.
 
 ### Pastoral care roles
 
-Pastoral care in schools is about looking after the emotional and physical wellbeing of pupils. Pastoral care roles such as form tutors or [special educational needs co-ordinator (SENCO)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs), are great ways to progress your career and develop new skills. 
+Pastoral care in schools is about looking after the emotional and physical wellbeing of pupils. Pastoral care roles such as form tutors or [special educational needs co-ordinators (SENCO)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs), are great ways to progress your career and develop new skills. 
 
 They give you the opportunity to be the link between all aspects of a pupil's education. You’ll help bring together classroom teachers, senior leadership, parents, carers, extended family and the wider community, to ensure pupils get the support they need.
 
@@ -97,7 +98,7 @@ These roles tend to combine elements of pastoral care, academic and curriculum m
 
 $gloria$
 
-### Become a mentor
+### Mentor roles
 
 You can become a mentor for early career teachers (ECTs). In this role, you’ll receive training on mentorship and coach a newly qualified teacher at the start of their career.
 
