@@ -57,9 +57,7 @@ keywords:
   - ECF
 ---
 
-There's no set path for promotion in teaching. Instead, you can progress your career at your own pace, and tailor your journey to your interests and goals. You'll have the freedom to proactively seek out progression opportunities, and some early career teachers progress to a headteacher role within 10 years of qualifying.
-
-There are lots of opportunities for progression and self development. For example, you could: 
+In teaching, there are lots of opportunities for progression and self development. You can progress your career at your own pace, and tailor your journey to your interests and goals. You'll have the freedom to proactively seek out progression opportunities. For example, you could:
 
 * gain professional qualifications  
 * take on additional responsibilities, like pastoral care roles 
@@ -95,7 +93,7 @@ Leadership roles in school can include:
 * deputy headteacher 
 * headteacher 
 
-These roles tend to combine elements of pastoral care, academic and curriculum management, and staff development.  
+These roles tend to combine elements of pastoral care, academic and curriculum management, and staff development. There's also no set path for how and when you can take on a leadership role. This gives teachers opportunties to progress at their own pace. Some early career teachers progress to a headteacher role within 10 years of qualifying.
 
 $gloria$
 
