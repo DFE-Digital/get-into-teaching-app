@@ -11,6 +11,5 @@ content:
   - content/life-as-a-teacher/header
   - content/life-as-a-teacher/teaching-as-a-career/categories
   - content/life-as-a-teacher/teaching-as-a-career/what-teachers-have-to-say
-  - content/life-as-a-teacher/how-to-become-a-teacher-cta
   - content/life-as-a-teacher/directory-nav
 ---
