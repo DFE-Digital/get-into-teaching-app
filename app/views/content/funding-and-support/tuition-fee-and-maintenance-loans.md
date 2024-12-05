@@ -8,8 +8,9 @@ related_content:
     Age groups you could teach: "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
     Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
     Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-promo_content:
-    - content/funding-and-support/promos/get-adviser-funding-promo
+cta_adviser:
+  adviser:
+    text: "An adviser with years of teaching experience can answer all your questions about student finance. Chat by phone, text or email, as little or as often as you need."
 calls_to_action:
     student-finance-calculator:
       name: simple
@@ -115,3 +116,5 @@ Find out about student finance in the Channel Islands and the Isle of Man:
 * [student finance guidance from the Government of Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx)
 * [student finance guidance from the States of Guernsey](https://www.gov.gg/article/152744/Policies)
 * [student awards guidance from the Isle of Man Government website](https://www.gov.im/student-grants)
+
+$adviser$
