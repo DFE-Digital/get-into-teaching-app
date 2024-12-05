@@ -8,7 +8,6 @@ related_content:
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     What will your teacher training year be like? : "/train-to-be-a-teacher/initial-teacher-training"
-date: "2021-11-01"
 backlink: "../../"
 navigation: 20.30
 navigation_title: Postgraduate certificate in education (PGCE)

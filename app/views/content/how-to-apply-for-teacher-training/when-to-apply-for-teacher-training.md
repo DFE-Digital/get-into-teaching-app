@@ -7,7 +7,6 @@ related_content:
 navigation: 30.16
 navigation_title: When to apply for teacher training
 navigation_description:  Find out when you can apply for postgraduate teacher training courses.
-date: "2023-03-30"
 keywords:
   - teacher training applications
 quote:

@@ -5,7 +5,6 @@ description: |-
 related_content:
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Get school experience : "/train-to-be-a-teacher/get-school-experience"
-date: "2021-06-24"
 keywords:
   - adviser
   - advisor

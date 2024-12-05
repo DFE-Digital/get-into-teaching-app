@@ -7,31 +7,32 @@ This documentation aims to be a reference for content editors that want to make 
 1. [Setting up Codespaces and Github](#getting-started)
 2. [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
 3. [Content Editing Tips/Info](#content-editing-tips-info)
-	* [Headings](#headings)
-	* [Frontmatter](#frontmatter)
-	* [Breadcrumbs](#breadcrumbs)
-	* [Links](#links)
-	* [SEO](#seo)
-	* [Prevent Indexing](#prevent-indexing)
-	* [Adding a Document or Image](#adding-a-document-or-image)
-	* [Calls to Action](#calls-to-action)
-		* [Main Content](#main-content)
-		* [Sidebar](#sidebar)
-	* [Accessibility](#accessibility)
-		* [iframe](#iframe)
-	* [Inset text](#inset-text)
-  * [Details expander for non-UK content](#details-expander-for-non-uk-content)
-	* [YouTube Video](#youtube-video)
-	* [Hero](#hero)
-	* [Values](#values)
+    * [Headings](#headings)
+    * [Frontmatter](#frontmatter)
+    * [Breadcrumbs](#breadcrumbs)
+    * [Links](#links)
+    * [SEO](#seo)
+    * [Prevent Indexing](#prevent-indexing)
+    * [Adding a Document or Image](#adding-a-document-or-image)
+    * [Calls to Action](#calls-to-action)
+    * [Adviser (CTA) component](#adviser-cta-component)
+    * [Main Content](#main-content)
+    * [Sidebar](#sidebar)
+    * [Accessibility](#accessibility)
+    * [iframe](#iframe)
+    * [Inset text](#inset-text)
+    * [Details expander for non-UK content](#details-expander-for-non-uk-content)
+    * [YouTube Video](#youtube-video)
+    * [Hero](#hero)
+    * [Values](#values)
 4. [Creating a subject page](#creating-a-subject-page)
 5. [Creating an inspirational page](#creating-an-inspirational-page)
 6. [Creating a Blog Post](#creating-a-blog-post)
-	* [Images](#images)
-	* [Footers](#footers)
+    * [Images](#images)
+    * [Footers](#footers)
 7. [Navigation](#navigation)
-	* [Main Navigation](#main-navigation)
-	* [Category Pages](#category-pages)
+    * [Main Navigation](#main-navigation)
+    * [Category Pages](#category-pages)
 8. [Build errors](#build-errors)
 9. [Internship providers](#internship-providers)
 10. [Creating a new page](#creating-a-new-page)
@@ -333,6 +334,51 @@ If you need to insert an expander into an erb file:
     link_url: "/non-uk-teachers/non-uk-qualifications",
   ) %>
 ```
+
+
+### Adviser (CTA) component
+
+You can use the Adviser (Call to Action) component to create a call to action to invite users to sign up for the Get an Adviser service. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
+
+* title
+* text
+* image
+* link_text
+* link_target
+* classes
+* border
+
+```yaml
+---
+cta_adviser:
+  adviser1:
+    title: "Optional title"
+    text: "Optional text"
+    image: "/optional/path/to/image"
+    link_text: "Optional link text"
+    link_target: "/optional/path"
+    classes: ["class1", "class2", "class3"]
+    border: true
+---
+
+# My page
+
+$adviser1$
+```
+Alternatively, if you need to insert an adviser component in an erb file, you can call it like this:
+
+```yaml
+<%= render CallsToAction::AdviserComponent.new(
+  title: "Optional title",
+  text: "Optional text",
+  image: "/optional/path/to/image",
+  link_text: "Optional link text",
+  link_target: "/optional/path",
+  classes: ["class1", "class2", "class3"],
+  border: true
+)%>
+```
+
 
 ### YouTube video
 

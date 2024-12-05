@@ -10,7 +10,6 @@ related_content:
 navigation: 30.30
 navigation_title: If your application is unsuccessful
 navigation_description: Find out what to do if your teacher training application is unsuccessful.
-date: "2023-03-30"
 keywords:
   - adviser
   - advisor
