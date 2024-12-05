@@ -7,8 +7,9 @@ description: |-
 related_content:
     Explore life as a teacher: "/life-as-a-teacher"
     Teach in further education without a degree: "https://www.teach-in-further-education.campaign.gov.uk/"
-promo_content:
-    - content/funding-and-support/promos/get-adviser-veterans-promo
+cta_adviser:
+  adviser:
+    text: "You can get dedicated guidance and support with your journey into teacher training from one of our veteran teacher training advisers. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.35
 navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
@@ -76,3 +77,5 @@ You’ll need different qualifications depending on [who you want to teach](/lif
 If you’re unsure about whether your qualifications achieved through military service meet the standard required, talk to your course provider, or a [teacher training adviser](/teacher-training-advisers).
 
 You may also be able to do a top up degree to boost your qualifications to meet the standard required. Talk to your teacher training adviser and course provider to find out about your options.
+
+$adviser$

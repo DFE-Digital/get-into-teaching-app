@@ -8,8 +8,9 @@ related_content:
     If you've worked as an unqualified teacher: "/train-to-be-a-teacher/assessment-only-route-to-qts"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
-promo_content:
-    - content/funding-and-support/promos/get-adviser-funding-promo
+cta_adviser:
+  adviser:
+    text: "An adviser with years of teaching experience can answer all your questions about salaried teacher training. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.20
 navigation_description: Find out about School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 keywords:
@@ -103,3 +104,5 @@ It’s usually wise to apply for non-salaried courses as well to increase your c
 Teach First delivers a 2 year employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards QTS with a PGCE. 
 
 To apply and find out more, you should [visit the Teach First website](https://www.teachfirst.org.uk/).
+
+$adviser$
