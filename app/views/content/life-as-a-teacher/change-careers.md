@@ -12,5 +12,5 @@ content:
   - content/life-as-a-teacher/header
   - content/life-as-a-teacher/change-careers/categories
   - content/life-as-a-teacher/change-careers/what-teachers-have-to-say
-  - content/life-as-a-teacher/change-careers/adviser-promo-change-careers
+  - content/life-as-a-teacher/directory-nav
 ---
