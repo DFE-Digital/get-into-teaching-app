@@ -61,4 +61,8 @@ DfE::Analytics.configure do |config|
     Rails.application.config.action_controller.perform_caching &&
       ActionDispatch::FileHandler.new(Rails.root.join("public/cached_pages").to_s).attempt(rack_env).present?
   end
+
+  config.bigquery_maintenance_window = "08-09-2024 18:00..08-09-2024 19:00"
+
+  config.azure_federated_auth = ENV.include? "GOOGLE_CLOUD_CREDENTIALS"
 end
