@@ -22,8 +22,9 @@ keywords:
   - process
   - PGCE
   - interviews
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-interviews
+cta_adviser:
+  adviser:
+    text: An adviser with years of teaching experience can help you prepare for interviews. Chat by phone, text or email, as often or as little as you need.
 ---
 
 Congratulations on being invited for an interview! This is an important stage in successfully getting a place on a primary or secondary teacher training course.
@@ -110,3 +111,5 @@ It’s good to have some questions of your own to ask. This helps you get more i
 ## Think positive
 
 The most important thing is to try to relax and be yourself. With some planning, and preparation, you'll be in a strong position to answer confidently and show you can handle a classroom.
+
+$adviser$

@@ -10,8 +10,9 @@ description: |-
   Find out more about subject knowledge enhancement (SKE) courses which will help you brush up your knowledge on the subject you want to teach.
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-ske-course
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-ske
+cta_adviser:
+  adviser:
+    text: An adviser with years of teaching experience can help you understand how subject knowledge enhancement courses work. Chat by phone, text or email, as little or as often as you need.
 youtube_video:
   ske-course-video:
     id: mWuHMtyFrFU
@@ -99,3 +100,5 @@ You’ll need (one of the following):
 You can still do your SKE course while you do your teacher training but you'll only be eligible for a SKE bursary up until your teacher training course starts. This is because you may then be eligible for other financial support, for example a subject bursary or tuition fee loan.
 
 $SKE-bursaries$
+
+$adviser$
