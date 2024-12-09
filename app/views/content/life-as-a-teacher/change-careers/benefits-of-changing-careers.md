@@ -12,5 +12,4 @@ keywords:
 content: 
   - "content/life-as-a-teacher/change-careers/benefits-of-changing-careers/header" 
   - "content/life-as-a-teacher/change-careers/benefits-of-changing-careers/article"
-  - "content/life-as-a-teacher/change-careers/adviser-promo-change-careers"
 ---

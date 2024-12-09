@@ -6,8 +6,9 @@ description: |-
 related_content:
     Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
     Explore the benefits of teaching : "/life-as-a-teacher/pay-and-benefits"
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-ect
+cta_adviser:
+  adviser:
+    text: An adviser with years of teaching experience can help you understand the support you'll get when you first start teaching. Chat by phone, text or email, as little or as often as you need.
 ---
 
 You’ll be known as an early career teacher (ECT) for your first 2 years in teaching. The term early career teacher (ECT) has replaced newly qualified teacher (NQT).
@@ -68,3 +69,5 @@ You’ll have regular progress reviews with your induction tutor so that you can
 You’ll have 2 formal assessment meetings with your induction tutor — one midway through induction and one at the end.
 
 They may ask you for evidence that you’ve met the teachers’ standards. You won’t need to create anything new for this evidence — you should use existing lesson plans or feedback from observations.
+
+$adviser$
