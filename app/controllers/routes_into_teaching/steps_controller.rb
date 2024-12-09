@@ -9,13 +9,6 @@ module RoutesIntoTeaching
 
     layout "registration"
 
-  protected
-
-    def not_available_path
-      # TODO
-      teacher_training_adviser_not_available_path
-    end
-
   private
 
     def noindex?
@@ -30,6 +23,7 @@ module RoutesIntoTeaching
     def step_path(step = params[:id], params = {})
       routes_into_teaching_step_path step, params
     end
+
     helper_method :step_path
 
     def wizard_store

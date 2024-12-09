@@ -3,8 +3,7 @@ module RoutesIntoTeaching
     self.steps = [
       Steps::UndergraduateDegree,
       Steps::UnqualifiedTeacher,
-      Steps::Location
+      Steps::Location,
     ]
-
   end
 end
