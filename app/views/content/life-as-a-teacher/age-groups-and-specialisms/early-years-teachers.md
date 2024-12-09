@@ -72,7 +72,7 @@ To start early years teacher training, you’ll need these GCSE qualifications:
 * English grade 4 (C)
 * science grade 4 (C)
 
-If you do not have GCSEs, you'll need an equivalent qualifiaction, such as a vocational or professional qualification, or an equivalent qualification you gained outside the UK.
+If you do not have GCSEs, you'll need an equivalent qualification, such as a vocational or professional qualification, or an equivalent qualification you gained outside the UK.
 
 $international-content$
 
