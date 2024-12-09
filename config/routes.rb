@@ -150,6 +150,17 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :routes_into_teaching, path: "/routes-into-teaching" do
+    resources :steps,
+              path: "/",
+              only: %i[index show update] do
+      collection do
+        get :completed
+        get :resend_verification
+      end
+    end
+  end
+
   namespace :feedback, path: "/feedback" do
     resources :steps,
               path: "/",

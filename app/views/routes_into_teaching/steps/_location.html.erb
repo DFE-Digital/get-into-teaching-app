@@ -1,0 +1,6 @@
+<% @page_title = "Do you live in England?" %>
+
+<%= f.govuk_collection_radio_buttons :location, [["Yes"], ["No"]], :first, :first,
+  legend: { tag: "h1", text: @page_title },
+  hint: { text: "You'll find routes into teaching based on your circumstances" }
+%>

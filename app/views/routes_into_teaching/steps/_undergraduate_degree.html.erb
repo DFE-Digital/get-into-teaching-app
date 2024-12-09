@@ -1,0 +1,6 @@
+<% @page_title = "Do you have an undergraduate degree?" %>
+
+<%= f.govuk_collection_radio_buttons :has_undergraduate_degree, @wizard.find_current_step.options, :answer, :text,
+  legend: { tag: "h1", text: @page_title },
+  hint: { text: "You'll find routes into teaching based on your circumstances" }
+%>
