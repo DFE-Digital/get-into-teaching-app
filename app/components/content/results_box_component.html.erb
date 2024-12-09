@@ -1,27 +1,30 @@
 <div class="results-box-component">
-  <div class="results-box__title">
-    <%= title %>
-  </div>
-  <section class="results-box">
-    <div class="results-box__background">
+  <% if show_title %>
+    <div class="results-box__title">
+      <%= title %>
     </div>
+  <% end %>
+  <section class="results-box <%= border_class %>">
     <h2 class="results-box__heading">
       <%= heading %>
     </h2>
     <div class="results-box__course-info-container results-box__text">
       <div class="results-box__info-row">
-        <div class="results-box__label">Fee</div>
+        <div class="results-box__label">Course fee</div>
         <div class="results-box__value"><%= fee %></div>
       </div>
+      <hr>
       <div class="results-box__info-row">
         <div class="results-box__label">Course length </div>
         <div class="results-box__value"><%= course_length %></div>
       </div>
+      <hr>
       <div class="results-box__info-row">
         <div class="results-box__label">Funding </div>
         <div class="results-box__value"><%= funding %></div>
       </div>
-      <p class="results-box__text"><%= text %></p>
+      <hr>
     </div>
+    <div class="results-box__text results-box__full-width-text"><%= text %></div>
   </section>
 </div>

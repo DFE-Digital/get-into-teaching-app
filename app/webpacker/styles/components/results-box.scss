@@ -1,7 +1,14 @@
 .results-box {
     background: $white;
     color: $white;
-    border: 2px solid $yellow;
+  
+    &--yellow {
+      border: 2px solid $yellow;
+    }
+
+		&--grey {
+      border: 2px solid $grey
+    }
   
     &__background {
       display: none;
@@ -30,7 +37,7 @@
     }
 
 		&__course-info-container {
-			margin-top: 1rem;
+			margin-top: 2.5rem;
 		}
 	
 		&__info-row {
@@ -49,6 +56,18 @@
     flex: 2; 
     text-align: left;
  		}
+
+		hr {
+			margin-top: 0.7em;
+			margin-bottom: 0.5em;
+		}
+
+		&__full-width-text {
+			padding: 1rem 0;
+			text-align: left;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
   
     &__heading,
     &__text,
