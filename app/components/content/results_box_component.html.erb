@@ -26,5 +26,8 @@
       <hr>
     </div>
     <div class="results-box__text results-box__full-width-text"><%= text %></div>
+    <div class="results-box__cta">
+      <%= render Content::LinkAsButtonComponent.new(link_text: @link_text, href: @link_target) %>
+    </div>
   </section>
 </div>
