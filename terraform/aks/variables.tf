@@ -45,7 +45,8 @@ variable "enable_dfe_analytics_federated_auth" {
   default     = false
 }
 variable "dataset_name" {
-  description = "dfe analytics dataset name in Google Bigquery. If not specified, a new one will be created"
+  description = "dfe analytics dataset name in Google Bigquery"
+
   default     = null
 }
 variable "external_url" {
