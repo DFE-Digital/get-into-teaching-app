@@ -24,7 +24,7 @@ keywords:
   - applying for teacher training
 cta_adviser:
   adviser:
-    text: Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience. Chat by phone, text or email, as little or as often as you need.
+    text: An adviser with years of teaching experience can help you understand why your application was unsuccessful and what you can do next. Chat by phone, text or email, as little or as often as you need.
 expander:
   check-your-qualifications:
     title: check your qualifications

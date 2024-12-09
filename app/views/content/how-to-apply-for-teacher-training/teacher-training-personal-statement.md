@@ -34,7 +34,7 @@ external_content:
     - content/train-to-be-a-teacher/promos/apply-for-your-course
 cta_adviser:
   adviser:
-    text: Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience. Chat by phone, text or email, as little or as often as you need.
+    text: An adviser with years of teaching experience can help you with your personal statement. Chat by phone, text or email, as little or as often as you need.
 quote:
   q-Felix:
     text: "Having a teacher training adviser was really beneficial when editing my personal statement and preparing for interviews. My top tips for the application process would be to get an adviser, and to think about what transferrable skills you have when writing your personal statement and answering interview questions."
