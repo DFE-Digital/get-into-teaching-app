@@ -38,17 +38,17 @@
   }
 
   &__left {
-    flex: 0 1 45%;
+    flex: 0 1 30%;
     padding-block: 2em;
     min-height: 8em;
     background-color: $grey;
-    padding: 1em;
+    padding: 1em 2em;
     align-content: center;
     text-align: center;
   }
 
   &__right {
-    flex: 0 1 55%;
+    flex: 0 1 70%;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
