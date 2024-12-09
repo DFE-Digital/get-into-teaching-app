@@ -10,7 +10,7 @@ related_content:
 promo_content:
 navigation: 20.40
 navigation_title: Teach in England as a non-UK qualified teacher
-navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from overseas.
+navigation_description: Find out how you can bring your skills and perspective to an English classroom if you qualified to teach outside the UK.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 inset_text:
@@ -102,7 +102,7 @@ In addition, if you have a subject specialism in languages, maths or science and
 * Singapore
 * South Africa
 
- Visit ['Awarding qualified teacher status to overseas teachers'](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) to check the eligibility criteria and apply for QTS in England.
+ You can [check the eligibility criteria and apply for QTS in England on the GOV.UK website](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
  
 ### Other routes to QTS in England 
 
