@@ -1,6 +1,6 @@
 module CallsToAction
   class HomepageComponent < ViewComponent::Base
-    attr_accessor :icon, :image, :title, :text, :link, :caption, :badge_text
+    attr_accessor :icon, :image, :title, :text, :caption, :badge_text
 
     def initialize(icon:, link_text:, link_target:, image:, title: nil, caption: nil, text: nil, badge_text: nil)
       super
@@ -18,7 +18,6 @@ module CallsToAction
 
     def before_render
       @icon = icon_element(@icon_filename)
-      @link = link_to(@link_text, @link_target, class: "button")
     end
 
   private

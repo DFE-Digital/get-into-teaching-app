@@ -7,8 +7,9 @@ description: |-
 related_content:
     Explore the benefits of teaching: "/life-as-a-teacher/pay-and-benefits"
     Age groups you could teach: "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
-promo_content:
-    - content/funding-and-support/promos/get-adviser-support-promo
+cta_adviser:
+  adviser:
+    text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.25
 navigation_title: Funding and support if you're disabled
 navigation_description: Find out about the support you can get while training to teach if you're disabled.
@@ -81,3 +82,5 @@ Providers must not discriminate against you. They cannot:
 Anyone who’s offered a place on a teacher training course is asked to complete a fitness questionnaire before starting training. Training providers should only ask relevant questions to make sure you’re able to teach.
 
 Find out more about [your rights under the Equality Act 2010](https://www.equalityhumanrights.com/equality/equality-act-2010/your-rights-under-equality-act-2010) and how it protects different characteristics.
+
+$adviser$

@@ -5,7 +5,6 @@ description: |-
 related_content:
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Get school experience : "/train-to-be-a-teacher/get-school-experience"
-date: "2021-06-24"
 keywords:
   - adviser
   - advisor
@@ -28,8 +27,9 @@ keywords:
   - teacher training application
 external_content:
     - content/train-to-be-a-teacher/promos/apply-for-your-course
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-apply
+cta_adviser:
+  adviser:
+    text: Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience. Chat by phone, text or email, as little or as often as you need.
 navigation: 30.05
 navigation_title: Teacher training application
 navigation_description: Find out what you need to include in your teacher training application and when to apply.
@@ -170,3 +170,5 @@ You may need to get an additional qualification, work on your interview techniqu
 You can apply to more courses if all your applications are unsuccessful. 
 
 [Find out what to do if you do not get a place on a teacher training course](/how-to-apply-for-teacher-training/if-your-application-is-unsuccessful). 
+
+$adviser$

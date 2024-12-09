@@ -1,18 +1,17 @@
 <%= tag.div(class: %w[call-to-action call-to-action--homepage]) do %>
-    <%= tag.div(icon) %>
-    <%= tag.div(class: "call-to-action__content") do %>
-      <%= render Content::HeadingComponent.new(
+  <%= tag.div(icon) %>
+  <%= tag.div(class: "call-to-action__content") do %>
+    <%= render Content::HeadingComponent.new(
         heading: title,
         tag: :h2,
         caption: caption,
         caption_size: :m,
         class: %w[call-to-action__heading]
       ) %>
-
-      <%= tag.p(text) if text.present? %>
-    <% end %>
-    <div class="call-to-action__action">
-      <%= link %>
-    </div>
-    <%= image_element(image) %>
+    <%= tag.p(text) if text.present? %>
+  <% end %>
+  <div class="call-to-action__action">
+    <%= render Content::LinkAsButtonComponent.new(link_text: @link_text, href: @link_target) %>
+  </div>
+  <%= image_element(image) %>
 <% end %>

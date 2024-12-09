@@ -88,9 +88,12 @@ Your course provider will probably not be able to confirm your exact placement l
 
 ## How much does teacher training cost?
 
-Postgraduate teacher training course fees are around $fees_pgitt_domesticfulltime$ per year (or higher for non-UK citizens). 
+The maximum tuition fee for postgraduate teacher training for a UK applicant is:
 
-You can apply for tuition fee and maintenance loans, even if you already have a student loan. 
+* $finance_tuitionfeeloan_postgraduatemaxfulltime$ per year for a full-time course
+* $finance_tuitionfeeloan_postgraduatemaxparttime$ per year for a part-time course
+
+You can apply for tuition fee and maintenance loans, even if you've previously applied for and received a student loan. 
 
 You may be eligible for extra financial support if:
 

@@ -14,7 +14,7 @@ namespace :teaching_internship_providers do
       h[ip.region.to_s]["providers"] << ip.to_h
     end
 
-    providers.transform_values! { |v| v["providers"].sort_by { |a| a["header"] } }
+    providers.transform_values! { |v| v["providers"].sort_by { |a| a["header"].to_s.downcase } }
     provider_groups = providers.sort
 
     File.open("app/views/content/train-to-be-a-teacher/teaching-internships.md", "w") do |f|

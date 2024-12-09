@@ -10,7 +10,6 @@ related_content:
 navigation: 30.30
 navigation_title: If your application is unsuccessful
 navigation_description: Find out what to do if your teacher training application is unsuccessful.
-date: "2023-03-30"
 keywords:
   - adviser
   - advisor
@@ -23,8 +22,9 @@ keywords:
   - apply
   - how to apply
   - applying for teacher training
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-apply
+cta_adviser:
+  adviser:
+    text: An adviser with years of teaching experience can help you reapply for teacher training and maximise your chances of success. Chat by phone, text or email, as little or as often as you need.
 expander:
   check-your-qualifications:
     title: check your qualifications
@@ -89,3 +89,5 @@ They can support you with:
 All our advisers have years of teaching experience and know the application process inside and out.
 
 [Learn more about teacher training advisers](/teacher-training-advisers).
+
+$adviser$

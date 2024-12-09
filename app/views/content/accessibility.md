@@ -3,7 +3,6 @@ title: "Accessibility statement"
 image: false
 description: |-
   This accessibility statement applies to the Get into Teaching website, which is run by the Department for Education.
-date: "2020-11-06"
 backlink: "../"
 keywords:
   - Accessibility
@@ -65,4 +64,4 @@ This statement was prepared on 29 January 2024. It was last reviewed on 29 Janua
 
 This website was last tested independently on 25 September 2023. The test was carried out by Digital Accessibility Centre (DAC) Limited.
 
-Our next external audit is scheduled for November 2024.
+Our next external audit is scheduled for January 2025.

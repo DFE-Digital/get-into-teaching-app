@@ -6,7 +6,7 @@ describe('SearchboxController', () => {
     <div id="search" data-controller="searchbox" data-searchbox-search-input-id-value="searchbox__input">
       <label for="searchbox__input" data-searchbox-target="label">Search</label>
       <div data-searchbox-target="searchbar"></div>
-      <a data-action="searchbox#toggle">Search</a>
+      <a id="search-toggle" aria-label="Search" data-action="searchbox#toggle">Search</a>
     </div>
   `;
 
@@ -43,6 +43,17 @@ describe('SearchboxController', () => {
     });
   });
 
+  describe('toggles the aria-label', () => {
+    it('sets the aria-label to "Search" or "Close search" depending on the search state', () => {
+      const searchToggle = document.getElementById('search-toggle');
+      expect(searchToggle.getAttribute('aria-label')).toBe('Search');
+      clickSearch();
+      expect(searchToggle.getAttribute('aria-label')).toBe('Close search');
+      clickSearch();
+      expect(searchToggle.getAttribute('aria-label')).toBe('Search');
+    });
+  });
+
   describe('typing in the search box', () => {
     let open;
 
@@ -70,7 +81,7 @@ describe('SearchboxController', () => {
         expect(open).toBeCalledWith(
           'GET',
           '/search.json?search%5Bsearch%5D=search%20term',
-          true
+          true,
         );
         expect(open.mock.calls.length).toBe(1);
         done();
@@ -90,7 +101,7 @@ describe('SearchboxController', () => {
         expect(open).toBeCalledWith(
           'GET',
           '/search.json?search%5Bsearch%5D=last%20term',
-          true
+          true,
         );
         expect(open.mock.calls.length).toBe(1);
         done();
@@ -110,12 +121,12 @@ describe('SearchboxController', () => {
         expect(open).toBeCalledWith(
           'GET',
           '/search.json?search%5Bsearch%5D=first%20term',
-          true
+          true,
         );
         expect(open).toBeCalledWith(
           'GET',
           '/search.json?search%5Bsearch%5D=last%20term',
-          true
+          true,
         );
         expect(open.mock.calls.length).toBe(2);
         done();
@@ -129,7 +140,7 @@ describe('SearchboxController', () => {
 
       setTimeout(() => {
         const noResultsItem = document.querySelector(
-          '.autocomplete__option--no-results'
+          '.autocomplete__option--no-results',
         );
         expect(noResultsItem.innerHTML).toEqual('Searching...');
         done();
