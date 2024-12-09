@@ -6,6 +6,8 @@ on:
 jobs:
   destroy:
     name: Destroy
+    permissions:
+      id-token: write
     environment:
        name: review
     runs-on: ubuntu-latest
