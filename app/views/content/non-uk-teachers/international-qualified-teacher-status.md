@@ -30,7 +30,6 @@ iQTS allows you to train to teach pupils aged 5 to 11, or pupils 11 to 18 in the
 
 When you complete the course, you’ll have the skills, experience and knowledge to become an excellent teacher. 
 
-If you decide to [teach in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas), as an early career teacher you’ll benefit from a two-year induction period alongside your work in a school. You’ll earn a salary and get mentoring and continuous professional development to help you succeed as a teacher.
 
 ## Entry requirements for iQTS
 
