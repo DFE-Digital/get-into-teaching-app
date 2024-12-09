@@ -15,6 +15,12 @@
               description: "Top tips from teacher training advisers on how you can progress a career in teaching.",
               path: "/life-as-a-teacher/teaching-as-a-career/career-progression"
             )) %>
+            <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "What it's like to be a teacher",
+              description: "Find out what a day in the life of a teacher might look like to help you decide if it is the right career for you.",
+              path: "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
+            )) %>
         </ul>
       </nav>
     </section>
