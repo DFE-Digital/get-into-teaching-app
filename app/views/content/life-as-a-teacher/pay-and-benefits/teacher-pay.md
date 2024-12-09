@@ -5,7 +5,10 @@ description: |-
   All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 backlink: "../../"
 promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+    - content/train-to-be-a-teacher/promos/routes-promo
+cta_routes:
+  routes:
+    text: Find your route into teaching
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
@@ -60,6 +63,8 @@ If you have [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts)
 Your salary will be reviewed every year, with most teachers moving up the pay range annually. This will depend on your school’s performance management arrangements.
 
 A typical teacher could earn at least $salaries_fiveyears_max$ (or more in London) after 5 years.
+
+$routes$
 
 ### Qualified teacher salary
 
