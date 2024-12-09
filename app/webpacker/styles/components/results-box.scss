@@ -1,0 +1,100 @@
+.results-box {
+    background: $white;
+    color: $white;
+  
+    &--yellow {
+      border: 2px solid $yellow;
+    }
+
+		&--grey {
+      border: 2px solid $grey
+    }
+  
+    &__background {
+      display: none;
+      padding: 1em;
+    }
+
+    &__title {
+        background: $yellow;
+        color: $black; 
+				font-weight: bolder;
+        display: inline-block; 
+        padding: 0.25em 0.5em;
+      }
+  
+    &__heading {
+      @include font-size("small");
+      color: $black;
+      background-color: $white;
+      line-height: 1.25em;
+      max-width: 80%;
+    }
+  
+    &__text {
+			@include font-size("small");
+      color: $black;
+      background-color: $white;
+    }
+
+		&__course-info-container {
+			margin-top: 2.5rem;
+		}
+	
+		&__info-row {
+			display: flex;
+			justify-content: flex-start; 
+			align-items: flex-start; 
+		}
+
+		&__label {
+    flex: 1; 
+    text-align: left;
+    font-weight: bold;
+  	}
+
+  	&__value {
+    flex: 2; 
+    text-align: left;
+ 		}
+
+		hr {
+			margin-top: 0.7em;
+			margin-bottom: 0.5em;
+		}
+
+		&__full-width-text {
+			padding: 1rem 0;
+			text-align: left;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+
+		&__cta {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+  
+    &__heading,
+    &__text,
+    &__cta {
+      margin-inline: 2rem;
+    }
+
+		@include mq($from: mobile, $until: tablet) {
+			.results-box__info-row {
+				flex-direction: column;
+				align-items: flex-start; 
+			}
+
+			.results-box__label,
+			.results-box__value {
+				flex: none; 
+				width: 100%; 
+			}
+			
+			.results-box__label {
+				margin-bottom: 0.25rem; 
+			}
+    }
+}
