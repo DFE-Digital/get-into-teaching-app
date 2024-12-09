@@ -20,8 +20,9 @@ quote:
     text: "My mentor was the special educational needs co-ordinator. This meant I was able to learn more about this role and improve my understanding of the strategies and support available for children with special educational needs and disabilities (SEND)."
     name: "Abbe, trainee teacher"
     classes: quote--indent
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-apply
+cta_adviser:
+  adviser:
+    text: An adviser with years of teaching experience can tell you more about school placements and how to submit a successful application. Chat by phone, text or email, as little or as often as you need.
 keywords:
     - placements
     - school placements
@@ -96,3 +97,5 @@ For fee-funded postgraduate training, you can get financial support through stud
 For salaried teacher training, you’ll receive a salary throughout your teacher training, including placements. Because of this, your placement school may also be referred to as your ‘employing school’.
 
 Find out more about [financial support for postgraduate teacher training](/funding-and-support).
+
+$adviser$
