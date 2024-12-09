@@ -1,9 +1,27 @@
-<section class="results-box">
-  <div class="results-box__background">
+<div class="results-box-component">
+  <div class="results-box__title">
+    <%= title %>
   </div>
-  <h2 class="results-box__heading">
-    <%= heading %>
-  </h2>
-  <p class="results-box__text">
-    <%= text %>
+  <section class="results-box">
+    <div class="results-box__background">
+    </div>
+    <h2 class="results-box__heading">
+      <%= heading %>
+    </h2>
+    <div class="results-box__course-info-container results-box__text">
+      <div class="results-box__info-row">
+        <div class="results-box__label">Fee</div>
+        <div class="results-box__value"><%= fee %></div>
+      </div>
+      <div class="results-box__info-row">
+        <div class="results-box__label">Course length </div>
+        <div class="results-box__value"><%= course_length %></div>
+      </div>
+      <div class="results-box__info-row">
+        <div class="results-box__label">Funding </div>
+        <div class="results-box__value"><%= funding %></div>
+      </div>
+      <p class="results-box__text"><%= text %></p>
+    </div>
   </section>
+</div>
