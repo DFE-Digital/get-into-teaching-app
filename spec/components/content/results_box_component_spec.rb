@@ -14,6 +14,8 @@ describe Content::ResultsBoxComponent, type: :component do
   let(:title) { nil }
   let(:show_title) { false }
   let(:border_color) { :grey }
+  let(:link_text) { "Find out more about postgraduate initial teacher training" }
+  let(:link_target) { "/train-to-be-a-teacher" }
 
   let(:component) do
     described_class.new(
@@ -25,6 +27,8 @@ describe Content::ResultsBoxComponent, type: :component do
       show_title: show_title,
       title: title,
       border_color: border_color,
+      link_text: link_text,
+      link_target: link_target,
     )
   end
 
