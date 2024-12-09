@@ -5,7 +5,7 @@ description: |-
 related_content:
     Teach in England if you trained outside the UK: " /non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
+    What it's like to be a teacher : "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
 promo_content:
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
