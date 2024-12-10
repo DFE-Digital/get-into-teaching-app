@@ -38,7 +38,7 @@ expander:
     link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees
 quote:
   olivia:
-    text: "You'll learn a lot about yourself during your teacher training year, and it 's the most rewarding journey to be on."
+    text: "You'll learn a lot about yourself during your teacher training year, and it's the most rewarding journey to be on."
     name: "Olivia, drama teacher"
     classes: quote--indent
 ---
