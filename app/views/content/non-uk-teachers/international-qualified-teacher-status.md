@@ -125,7 +125,7 @@ The following providers specialise in particular regions:
 
 * [University of Northampton](https://www.northampton.ac.uk/courses/postgraduate-certificate-in-education-international-iqts/)
 
-* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning) – contact this provider for more information
+* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning)
 
 ## Assessment for iQTS
 
