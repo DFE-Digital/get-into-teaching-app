@@ -28,7 +28,7 @@ expander:
     title: salaried teacher training
     text: |-
       <p>
-      You can apply for a salaried teacher training course</a>. However, these courses are limited in number and very competitive. On this type of course you can earn money while you train in a school. Some salaried courses also charge fees.
+      You can apply for a salaried teacher training course</a>. However, these courses are limited in number and very competitive. On this type of course you can earn money while you train in a school. Some salaried courses may also charge fees.
       </p>
       <p>
       You will also need a <a href="/non-uk-teachers/visas-for-non-uk-trainees">visa or immigration status</a> allowing you to work in the UK.</p>
