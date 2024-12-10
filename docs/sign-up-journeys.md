@@ -6,7 +6,7 @@ There are multiple different sign up journeys available on the Get into Teaching
 
 ```mermaid
 graph TD;
-  name[Free personalised teacher training guidanceer training in your inbox] -- Doesn't exist in CRM --> returning_teacher[Are you already qualified to teach?]
+  name[Free personalised teacher training guidance] -- Doesn't exist in CRM --> returning_teacher[Are you already qualified to teach?]
   name -- Exists in CRM --> authenticate[You're already registered with us]
   
   returning_teacher -- Yes --> already_qualified[We're sorry, but our emails are for people who are not already qualified to teach]

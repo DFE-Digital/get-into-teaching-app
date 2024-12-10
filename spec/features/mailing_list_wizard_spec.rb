@@ -135,7 +135,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path({ id: :name, channel: "invalid", sub_channel: sub_channel_id })
 
-    expect(page).to have_text "Free personalised teacher training guidancee"
+    expect(page).to have_text "Free personalised teacher training guidance"
     fill_in_name_step
     click_on "Next step"
 
