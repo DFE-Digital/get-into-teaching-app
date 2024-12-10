@@ -20,11 +20,11 @@ If you do not already have an undergraduate degree, you may be eligible to do a 
 
 The TDA is a teacher training programme which offers a new route to become a qualified teacher. 
 
-The teacher training providers confirmed so far offer [TDAs in secondary maths](https://www.gov.uk/government/publications/secondary-maths-teacher-degree-apprenticeship-funding-pilot-providers/providers-selected-to-deliver-the-teacher-degree-apprenticeship-tda-funding-pilot). TDAs in other subjects will be added throughout the year, up until Septemeber 2025, with training due to start in autumn 2025. 
+The [teacher training providers confirmed so far offer TDAs in secondary maths](https://www.gov.uk/government/publications/secondary-maths-teacher-degree-apprenticeship-funding-pilot-providers/providers-selected-to-deliver-the-teacher-degree-apprenticeship-tda-funding-pilot). TDAs in other subjects will be added throughout the year, up until September 2025, with training due to start in autumn 2025. 
 
-[View the latest teacher degree apprenticeship courses]( https://find-teacher-training-courses.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&university_degree_status=false&visa_status=false).
+[View the teacher degree apprenticeship courses currently available]( https://find-teacher-training-courses.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&university_degree_status=false&visa_status=false).
 
-If you cannot see the subject you want to train in, contact the initial teacher training engagement team at ITT.engagement@education.gov.uk.
+If you cannot see a course for the subject you want to train in, contact the initial teacher training engagement team at ITT.engagement@education.gov.uk.
 
 $teacher-degree-apprenticeships$
 
