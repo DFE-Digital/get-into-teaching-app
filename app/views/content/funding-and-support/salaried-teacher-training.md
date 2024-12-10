@@ -1,5 +1,5 @@
 ---
-title: "Salaried teacher training"
+title: "Postgraduate salaried teacher training"
 subcategory: Courses with a salary
 description: |-
     Explore salaried teacher training, including School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
@@ -41,9 +41,15 @@ quote:
 
 There are some teacher training courses that come with a salary. 
 
-This means you will not have to pay tuition fees and will receive a salary while you train to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). This is what you need to teach in many primary, secondary and special schools in England. 
+This means you will get paid a salary while you train to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). You'll need QTS to teach in many primary, secondary and special schools in England. 
 
-The main salaried courses include School Direct salaried, postgraduate teaching apprenticeships (PGTA) and teacher training delivered by Teach First.
+Some salaried teacher training courses may also come with fees, check with individual provders for more information. 
+
+The main salaried courses include:
+
+* School Direct salaried
+* postgraduate teaching apprenticeships (PGTA)
+* Teach First teacher training
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
@@ -51,9 +57,9 @@ These courses are in high demand and very competitive, so it’s important to ap
 
 ## Am I eligible for a salaried teacher training course? 
 
-For some salaried courses, teacher training providers may want you to have significant teaching or school experience (for example, if you’re already working as an unqualified teacher or teaching assistant).  
+For some salaried courses, teacher training providers may want you to have significant teaching or school experience, for example, if you’re already working as an unqualified teacher or teaching assistant.  
 
-Some also want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are. 
+Some providers also want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are. 
 
 You can also [find out more about the qualifications you need to train to teach](/train-to-be-a-teacher/qualifications-you-need-to-teach). 
 
@@ -63,7 +69,7 @@ $salaried-teacher-training$
 
 ## How much will I be paid on a salaried course? 
 
-You'll receive an [unqualified teacher’s salary](/life-as-a-teacher/pay-and-benefits/teacher-pay) – the exact amount will vary depending on the school you work in. 
+You'll receive an [unqualified teacher’s salary](/life-as-a-teacher/pay-and-benefits/teacher-pay), the exact amount will vary depending on the school you work in. 
 
 It’s worth checking if there is a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) available for your subject before you apply for a salaried course. 
 
@@ -73,11 +79,11 @@ If you’re eligible for a bursary or scholarship, you could receive more money 
 
 ## How does salaried teacher training work? 
 
-Salaried teacher training is usually similar to non-salaried teacher training – you'll spend most of your time in school placements, with some theoretical learning. 
+Salaried teacher training is usually similar to non-salaried teacher training. You'll spend most of your time in school placements, with some theoretical learning. 
 
 $nathan$
 
-You will not perform more than 90% of a full-time teacher’s duties (unless you’re on a postgraduate teaching apprenticeship, in which case it’s 80%). 
+You will not perform more than 90% of a full-time teacher’s duties on most salaried teacher training courses. If you are on a postgraduate teaching apprenticeship, you'll perform no more than 80% of a full-time teacher's duties. 
 
 Full-time salaried teacher training will usually last: 
 
@@ -85,7 +91,7 @@ Full-time salaried teacher training will usually last:
 
 * 2 academic years (September to July) if you’re on a course delivered by Teach First 
 
-* at least 1 full year (September to September) if you’re on a postgraduate teaching apprenticeship – apprenticeships must last a minimum of 12 months 
+* at least 1 full year (September to September) if you’re on a postgraduate teaching apprenticeship
 
 Some courses can begin at other points in the year and there may be part-time courses available. 
 
