@@ -113,19 +113,19 @@ The following providers are accepting applications from all over the world:
 
 * [University of the West of England](https://www.uwe.ac.uk/courses/applying/postgraduate-applications/iqts-information)
 
-The following providers specialise in particular regions, or should be contacted for further information:
+The following providers specialise in particular regions:
 
 * [Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts) – this provider is accepting applications from the Middle East and North Africa
 
-* [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider offers in-person training in Dubai only, so applicants must be a commutable distance from their Dubai Campus
-
-* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning) – contact this provider for more information
-
 * [St Mary’s University](https://www.stmarys.ac.uk/courses/postgraduate/iqts)
+
+* [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider offers in-person training in Dubai only, so applicants must be a commutable distance from their Dubai Campus
 
 * [University of Chichester](https://www.chi.ac.uk/teaching/course/ipgce/)
 
 * [University of Northampton](https://www.northampton.ac.uk/courses/postgraduate-certificate-in-education-international-iqts/)
+
+* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning) – contact this provider for more information
 
 ## Assessment for iQTS
 
