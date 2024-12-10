@@ -22,7 +22,7 @@ quote:
     classes: quote--indent
 cta_adviser:
   adviser:
-    text: An adviser with years of teaching experience can tell you more about school placements and how to submit a successful application. Chat by phone, text or email, as little or as often as you need.
+    text: An adviser with years of teaching experience can tell you more about school placements and help maximise your chances of submitting a successful application. Chat by phone, text or email, as little or as often as you need.
 keywords:
     - placements
     - school placements
