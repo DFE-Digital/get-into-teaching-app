@@ -43,7 +43,7 @@ There are some teacher training courses that come with a salary.
 
 This means you will get paid a salary while you train to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). You'll need QTS to teach in many primary, secondary and special schools in England. 
 
-Some salaried teacher training courses may also come with fees, check with individual provders for more information. 
+Some salaried teacher training courses may also come with fees. Check with individual providers for more information. 
 
 The main salaried courses include:
 
