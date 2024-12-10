@@ -100,7 +100,7 @@ Irish citizens or non-UK citizens who have settled status may be eligible for:
 
 ## Salaried teacher training courses
 
-Non-UK citizens can apply for a [salaried teacher training course](/funding-and-support/salaried-teacher-training). On this type of course, you will not pay a fee, and you can earn money while you train in a school. However, these courses are limited in number and very competitive.
+Non-UK citizens can apply for a [salaried teacher training course](/funding-and-support/salaried-teacher-training). On this type of course you can earn money while you train in a school. However, these courses are limited in number and very competitive.
 
 You will also need a [visa or immigration status](/non-uk-teachers/visas-for-non-uk-trainees#skilled-worker-visa) allowing you to work in the UK.
 

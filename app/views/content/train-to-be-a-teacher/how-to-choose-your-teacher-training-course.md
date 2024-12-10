@@ -115,7 +115,7 @@ $fee-funded-teacher-training$
 
 ### Salaried teacher training
 
-Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
+Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. Some salaried teacher training courses may also come with fees, check with individual provders for more information.
 
 Places on salaried courses are limited and very competitive. 
 
