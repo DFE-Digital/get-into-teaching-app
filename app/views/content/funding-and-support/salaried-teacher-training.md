@@ -45,7 +45,7 @@ This means you will get paid a salary while you train to get [qualified teacher 
 
 Some salaried teacher training courses may also come with fees. Check with individual providers for more information. 
 
-The main salaried courses include:
+The salaried courses are:
 
 * School Direct salaried
 * postgraduate teaching apprenticeships (PGTA)
@@ -69,7 +69,7 @@ $salaried-teacher-training$
 
 ## How much will I be paid on a salaried course? 
 
-You'll receive an [unqualified teacher’s salary](/life-as-a-teacher/pay-and-benefits/teacher-pay), the exact amount will vary depending on the school you work in. 
+You'll receive an [unqualified teacher’s salary](/life-as-a-teacher/pay-and-benefits/teacher-pay). The exact amount will vary depending on the school you work in. 
 
 It’s worth checking if there is a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) available for your subject before you apply for a salaried course. 
 
@@ -83,7 +83,7 @@ Salaried teacher training is usually similar to non-salaried teacher training. Y
 
 $nathan$
 
-You will not perform more than 90% of a full-time teacher’s duties on most salaried teacher training courses. If you are on a postgraduate teaching apprenticeship, you'll perform no more than 80% of a full-time teacher's duties. 
+You will not perform more than 90% of a full-time teacher’s duties on most salaried teacher training courses. If you're on a postgraduate teaching apprenticeship, you'll perform no more than 80% of a full-time teacher's duties. 
 
 Full-time salaried teacher training will usually last: 
 
