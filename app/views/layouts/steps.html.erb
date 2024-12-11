@@ -18,14 +18,8 @@
 
         <section class="row">
           <div class="col col-full-content">
-            <%= render Content::PurpleBoxComponent.new(
-              heading: "Get free one-to-one support",
-              text: "An adviser with years of teaching experience can help you with your teacher training application. Chat through phone, text or email as little or often as you need.",
-              cta: {
-                text: "Find out more about advisers",
-                path: "/teacher-training-advisers",
-              },
-              image: image_pack_tag("static/images/adviser-graphic-black.png", **image_alt_attribs_for_text("")),
+            <%= render CallsToAction::AdviserComponent.new(
+              text: "An adviser with years of teaching experience can help you with your teacher training application. Chat by phone, text or email, as little or as often as you need.",
             ) %>
           </div>
         </section>
