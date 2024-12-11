@@ -59,3 +59,14 @@ To meet the academic requirements for the TDA, you must have:
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 * A levels - the number of A levels or equivalent qualifications required will be set by individual universities
 
+<div class="right">
+    <h2 class="heading-m heading--margin-top-0">Find your teacher training course</h2>
+    <p>
+      Take a look at the different teacher training courses available.
+    </p>
+
+    <p>
+      <a class="button" href="https://find-teacher-training-courses.service.gov.uk/">Search for a course</a>
+    </p>
+  </div>
+</div>
