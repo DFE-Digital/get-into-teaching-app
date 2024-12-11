@@ -68,6 +68,7 @@ body {
 section.container {
   display: flex;
   flex-grow: 0;
+  flex-wrap: wrap;
   flex-direction: column;
   margin: 1em 0;
 
