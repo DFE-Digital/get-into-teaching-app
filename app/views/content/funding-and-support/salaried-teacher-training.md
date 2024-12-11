@@ -31,7 +31,7 @@ expander:
       You can apply for a salaried teacher training course</a>. However, these courses are limited in number and very competitive. On this type of course you can earn money while you train in a school. Some salaried courses may also charge fees.
       </p>
       <p>
-      You will also need a <a href="/non-uk-teachers/visas-for-non-uk-trainees">visa or immigration status</a> allowing you to work in the UK.</p>
+      You'll also need a <a href="/non-uk-teachers/visas-for-non-uk-trainees">visa or immigration status</a> allowing you to work in the UK.</p>
 quote:
   nathan:
     text: "From the outset I was working within the school, learning and training in the classroom whilst being supported by qualified teachers and mentors. This gave me valuable experience of school life and a real feel for school."
@@ -41,7 +41,7 @@ quote:
 
 There are some teacher training courses that come with a salary. 
 
-This means you will get paid a salary while you train to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). You'll need QTS to teach in many primary, secondary and special schools in England. 
+This means you'll be paid a salary while you train to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). You'll need QTS to teach in many primary, secondary and special schools in England. 
 
 Some salaried teacher training courses may also come with fees. Check with individual providers for more information. 
 
@@ -51,7 +51,7 @@ The salaried courses are:
 * postgraduate teaching apprenticeships (PGTA)
 * Teach First teacher training
 
-If you do not already have a degree, you may be eligible for a [teacher degree apprenticeship (TDA)](/train-to-be-a-teacher/teacher-degree-apprenticeships). A TDA is an undergraduate teacher training courses where you’ll work in a school and earn a salary while getting a bachelor’s degree and QTS.
+If you do not already have a degree, you may be eligible for a [teacher degree apprenticeship (TDA)](/train-to-be-a-teacher/teacher-degree-apprenticeships). A TDA is an undergraduate courses where you’ll work in a school and earn a salary while getting a degree and QTS.
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
