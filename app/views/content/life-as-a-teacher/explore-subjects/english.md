@@ -19,6 +19,5 @@ keywords:
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/english/article"
-  - "content/shared/subject-pages/adviser-promo"
 ---
 

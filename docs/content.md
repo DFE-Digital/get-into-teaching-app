@@ -470,17 +470,14 @@ Values should be named using only _lowercase_ characters `a` to `z`, the numbers
 
 Create a subject folder under ‘content/life as a teacher’
 
-From a previous published subject page copy the 3 files:
+From a previous published subject page copy the 2 files:
 
--	_adviser-promo-subject-html.erb (replace with subject name)
 -	_article.html/erb
 -	_header.html.erb
 
 Also copy and paste a previous subject ‘.md’ file and rename it with the subject (e.g english.md)
 
 #### File changes:
-
-_adviser-promo-subject.html.erb - change line 4 to relate to the subject 
 
 _header.html.erb – no changes needed
 
@@ -515,7 +512,6 @@ keywords:
 content:
   - "content/life-as-a-teacher/subject/header"
   - "content/life-as-a-teacher/subject/article"
-  - "content/life-as-a-teacher/subject/adviser-promo-subject"
 ---
 ```
 
