@@ -12,7 +12,6 @@ describe Content::ResultsBoxComponent, type: :component do
   let(:funding) { "Scholarships or bursaries, as well as student loans, are available if you're eligible" }
   let(:text) { "Find out which qualifications you need, what funding you can get and how to train to teach." }
   let(:title) { nil }
-  let(:show_title) { false }
   let(:border_color) { :grey }
   let(:link_text) { "Find out more about postgraduate initial teacher training" }
   let(:link_target) { "/train-to-be-a-teacher" }
@@ -24,7 +23,6 @@ describe Content::ResultsBoxComponent, type: :component do
       course_length: course_length,
       funding: funding,
       text: text,
-      show_title: show_title,
       title: title,
       border_color: border_color,
       link_text: link_text,
@@ -38,10 +36,10 @@ describe Content::ResultsBoxComponent, type: :component do
   it { is_expected.to have_css(".results-box__value", text: course_length) }
   it { is_expected.to have_css(".results-box__value", text: funding) }
   it { is_expected.to have_css(".results-box--grey") }
+  it { is_expected.to have_no_css(".results-box__title", text: title) }
 
   context "when a title is provided" do
     let(:title) { "Most popular route" }
-    let(:show_title) { true }
 
     it { is_expected.to have_css(".results-box__title", text: title) }
   end

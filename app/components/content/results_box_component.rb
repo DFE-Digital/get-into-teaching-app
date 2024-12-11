@@ -4,14 +4,10 @@ module Content
 
     include ContentHelper
 
-    def initialize(heading:, fee:, course_length:, funding:, text:, link_text:, link_target:, border_color: :grey, show_title: false, title: nil)
+    def initialize(heading:, fee:, course_length:, funding:, text:, link_text:, link_target:, title: nil, border_color: :grey)
       super
 
-      if show_title && title.nil?
-        raise ArgumentError, "Title must be provided when show_title is true"
-      end
-
-      @title = show_title ? substitute_values(title) : nil
+      @title = substitute_values(title)
       @heading = substitute_values(heading)
       @fee = substitute_values(fee)
       @course_length = substitute_values(course_length)
@@ -20,7 +16,6 @@ module Content
       @link_text = link_text
       @link_target = link_target
       @border_color = border_color
-      @show_title = show_title
     end
 
     def border_class
