@@ -51,7 +51,7 @@ The salaried courses are:
 * postgraduate teaching apprenticeships (PGTA)
 * Teach First teacher training
 
-If you do not already have a degree, you maybe eligible for a [teacher degree apprenticeship (TDA)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
+If you do not already have a degree, you may be eligible for a [teacher degree apprenticeship (TDA)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
