@@ -43,7 +43,6 @@ Non-maintained schools (for example, academies, independent schools and private 
 
 You do not have to pay tuition fees, but you will not be eligible for student finance. 
 
-
 ## Who’s eligible to apply for a teacher degree apprenticeship?
 Teacher degree apprenticeships are open to anyone who would like to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
 
@@ -52,7 +51,6 @@ To be eligible to apply for a TDA, you must be:
 
 * a resident of England for the last 3 years or more
 * at least 16 years old
-
 
 To meet the academic requirements for the TDA, you must have:
 
@@ -70,7 +68,7 @@ To meet the academic requirements for the TDA, you must have:
   <div class="right">
     <h2 class="heading-m heading--margin-top-0">Find your teacher training course</h2>
     <p>
-      Take a look at the different teacher training courses available.
+     Take a look at the different teacher training courses available.
     </p>
 
     <p>
@@ -78,5 +76,4 @@ To meet the academic requirements for the TDA, you must have:
     </p>
   </div>
 </div>
-
 </article>
