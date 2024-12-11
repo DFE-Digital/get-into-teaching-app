@@ -8,7 +8,7 @@ RSpec.describe AnswerHelper, type: :helper do
 
     it "correctly formats a date" do
       answer = Date.new(2011, 1, 24)
-      expect(helper.format_answer(answer)).to eq("<span>24 01 2011</span>")
+      expect(helper.format_answer(answer)).to eq("<span>24 January 2011</span>")
     end
 
     it "correctly formats a time" do
