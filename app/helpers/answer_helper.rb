@@ -6,9 +6,18 @@ module AnswerHelper
     when Date
       answer = answer.to_formatted_s(:govuk_zero_pad)
     when Time
-      answer = answer.in_time_zone.to_formatted_s(:govuk_time)
-    end
+      formatted_time = answer.in_time_zone.to_formatted_s(:govuk_time_with_period)
 
+      # Convert "12:00pm" to "midday" and "12:00am" to "midnight" as per GDS guidance
+      answer = case formatted_time
+               when "12:00pm"
+                 "midday"
+               when "12:00am"
+                 "midnight"
+               else
+                 formatted_time
+               end
+    end
     safe_format(answer.to_s, wrapper_tag: "span")
   end
 
