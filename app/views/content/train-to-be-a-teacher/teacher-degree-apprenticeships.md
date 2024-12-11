@@ -59,13 +59,24 @@ To meet the academic requirements for the TDA, you must have:
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 * A levels - the number of A levels or equivalent qualifications required will be set by individual universities
 
-<div class="right">
-  <h2 class="heading-m heading--margin-top-0">Find your teacher training course</h2>
-  <p>
-    Take a look at the different teacher training courses available.
-  </p>
-  <p>
-    <a class="button" href="https://find-teacher-training-courses.service.gov.uk/">Search for a course</a>
-  </p>
+                <div class="find-your-course">
+  <div class="left">
+    <div class="icon">
+       <picture><source srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" type="image/svg+xml" data-srcset="/packs/v1/static/images/icon-search-black-fef9f53ea1629955ed9b.svg"><img alt="" role="presentation" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="33" height="33" data-src="/packs/v1/static/images/icon-search-black-fef9f53ea1629955ed9b.svg" class=" lazyload"></picture>
+    <noscript><picture class="no-js"><source srcset="/packs/v1/static/images/icon-search-black-fef9f53ea1629955ed9b.svg" type="image/svg+xml"><img alt="" role="presentation" src="/packs/v1/static/images/icon-search-black-fef9f53ea1629955ed9b.svg" width="33" height="33"></picture></noscript>
 </div>
+  </div>
+
+  <div class="right">
+    <h2 class="heading-m heading--margin-top-0">Find your teacher training course</h2>
+    <p>
+      Take a look at the different teacher training courses available.
+    </p>
+
+    <p>
+      <a class="button" href="https://find-teacher-training-courses.service.gov.uk/">Search for a course</a>
+    </p>
+  </div>
+</div>
+
 </article>
