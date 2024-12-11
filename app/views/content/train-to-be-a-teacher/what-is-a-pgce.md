@@ -65,7 +65,7 @@ If you get a PGCE without QTS you will not be entitled to the same benefits duri
 
 ## Benefits of having QTS with PGCE
 
-PGCE can give you a better understanding of teaching practices, educational research and theory.
+A PGCE can give you a better understanding of teaching practices, educational research and theory.
 
 It can also be beneficial if you want to teach in other countries because it’s an internationally recognised academic qualification. However, you should always check the local requirements of the country you’re looking to teach in.
 
