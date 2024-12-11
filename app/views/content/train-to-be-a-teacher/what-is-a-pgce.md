@@ -37,7 +37,7 @@ expander:
     link_url: /non-uk-teachers/non-uk-qualifications
 ---
 
-After gaining a degree, you may want to go on to complete a postgraducate certificate (PG certificate) or diploma (PG diploma).
+After gaining a degree, you may want to go on to complete a postgraduate certificate (PG certificate) or diploma (PG diploma).
 
 You can get a postgraduate certificate in education (PGCE) through teacher training.
 
@@ -49,7 +49,7 @@ You need qualified teacher status (QTS) to teach in most primary, secondary and 
 
 [Find out more about qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
-Many teacher training courses also offer you a postgraduate certificate, such as a PGCE, but you do not need one to teach.
+Many teacher training courses also offer a postgraduate certificate, such as a PGCE, but you do not need one to teach.
 
 ## Teacher training courses
 
