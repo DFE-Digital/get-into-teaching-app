@@ -612,7 +612,7 @@ provider_groups:
     - header: "GORSE SCITT"
       link: "https://gorsescitt.org.uk/"
       name: "Nicci Cornfoot"
-      email: "info@gorsescitt.org.uk"
+      email: "assessmentonly@gorsescitt.org.uk"
       telephone: "0113 487 1777"
       international_phone: "+441134871777"
       
@@ -674,13 +674,6 @@ provider_groups:
       email: "enquiries@colchesterttc.org.uk"
       telephone: "01206 364728"
       international_phone: "+441206364728"
-      
-    - header: "GORSE SCITT"
-      link: "https://gorsescitt.org.uk/"
-      name: "Nicci Cornfoot"
-      email: "info@gorsescitt.org.uk"
-      telephone: "0113 487 1777"
-      international_phone: "+441134871777"
       
     - header: "Inspiring Futures Partnership Trust"
       link: "https://cheppingviewscitt.com/Entry-Criteria/"
