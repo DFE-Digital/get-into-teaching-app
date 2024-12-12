@@ -1,0 +1,110 @@
+<div class="row inset">
+  <section class="col col-720 col-space-l-top">
+    <h2 class="heading--box-blue">Why teach <%= @front_matter["subject"] %></h2>
+    <div class="inset">
+      <p><%= @front_matter["subject"].titleize %> underpins everything, so you'll be amazed at the questions your pupils will start asking. Leading hands-on lab experiments and creating engaging lessons will mean no two days are the same in the classroom.</p>
+      <!-- Why teach: benefits -->
+      <%= render 'content/shared/teaching/benefits' %>
+    </div>
+  </section>
+
+  <section class="col col-720">
+    <!-- Quote: Chris Farr -->
+    <%= render 'content/shared/quotes/quote_progression_chris' %>
+  </section>
+
+  <section class="col col-720 col-space-l-top">
+    <h2 class="heading--box-blue">Shape your pupils' futures</h2>
+    <div class="inset">
+      <p>Teaching <%= @front_matter["subject"] %> opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from medicine and forensic science, to palaeontology and oceanography.</p>
+      <p>By solving challenging problems, your pupils could make significant contributions to these impactful areas.</p>
+      <p>Your pupils will learn more from you than you might think.  As their teacher, you’ll guide your pupils though the skills they need to show their understanding of <%= @front_matter["subject"] %>. You'll teach them valuable life skills such as critical thinking, decision making and communication.</p>
+    </div>
+  </section>
+
+  <section class="col col-720">
+    <!-- Quote: Holly, science teacher -->
+    <%= render 'content/shared/quotes/quote_science_holly' %>
+  </section>
+
+  <section class="col col-720">
+    <h2 class="heading--box-blue">What you'll teach</h2>
+    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study">national curriculum for <%= @front_matter["subject"] %></a>.</p>
+    <p>You could have the opportunity to teach or support physics and biology lessons throughout key stages 3 and 4.</p>
+    <p>When you teach 11 to 14 year olds (key stage 3), you'll cover themes from the 3 science disciplines of chemistry, biology and physics.</p>
+    <p>The chemistry themes are:</p>
+    <ul>
+      <li>the particulate nature of matter</li>
+      <li>atoms, elements and compounds</li>
+      <li>pure and impure substances</li>
+      <li>chemical reactions</li>
+      <li>energetics</li>
+      <li>the periodic table</li>
+      <li>materials</li>
+      <li>earth and atmosphere</li>
+    </ul>
+      <p>Explore what teaching a key stage 3 science lesson would be like by visiting the <a href="https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units">Oak National Academy website</a>.</p>
+    <p>Themes you'll cover when you teach 14 to 16 year olds (key stage 4) will be more specific to <%= @front_matter["subject"] %>, and include:</p>
+    <ul>
+      <li>atomic structure and the periodic table</li>
+      <li>structure, bonding and the properties of matter</li>
+      <li>chemical changes</li>
+      <li>energy changes in chemistry</li>
+      <li>rate and extent of chemical change</li>
+      <li>chemical analysis</li>
+      <li>chemical and allied industries</li>
+      <li>earth and atmospheric science</li>
+    </ul>
+    <p>At A level and AS level (key stage 5), you’ll help pupils develop a deeper knowledge and understanding of:</p>
+    <ul>
+      <li>formulae, equations and amounts of substance</li>
+      <li>atomic structure</li>
+      <li>bonding and structure</li>
+      <li>energetics</li>
+      <li>kinetics</li>
+      <li>equilibria</li>
+      <li>redox</li>
+      <li>inorganic chemistry and the periodic table</li>
+      <li>organic chemistry</li>
+      <li>modern analytical techniques</li>
+    </ul>
+    <!-- Teaching pupils: ages and abilities -->
+    <%= render 'content/shared/teaching/ages_abilities' %>
+  </section>
+
+  <section class="col col-space-m col-720">
+    <h2 class="heading--box-blue">Start your journey into teaching <%= @front_matter["subject"] %></h2>
+    <!-- Check your qualifications-->
+    <%= render 'content/shared/qualifications-training/check_qualifcations' %>
+    <p>Chemistry teacher training courses have had successful applications from candidates with a range of degrees, including biomedical sciences, forensic science, pharmacy, and natural sciences.</p>
+    <%= render 'content/shared/qualifications-training/find_out_more' %>
+    <!-- Non-UK qualifications expander -->
+    <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
+  </section>
+
+  <section class="col col-space-m col-720">
+    <!-- Improve your subject knowledge -->
+    <%= render 'content/shared/qualifications-training/subject_knowledge' %>
+  </section>
+
+  <section class="col col-space-m col-720">
+    <h3>Fund your teacher training</h3>
+    <!-- Bursaries and Scholarships -->
+    <%= render 'content/shared/teaching/bursary_scholarship' %>
+    <!-- Funding and Support -->
+    <%= render 'content/shared/teaching/funding_support' %>
+  </section>
+
+  <section class="col col-space-m col-720">
+    <!-- Internships -->
+    <%= render 'content/shared/qualifications-training/paid_internships' %>
+  </section>
+
+  <section class="col col-720">
+    <!-- Support with teacher training -->
+    <%= render 'content/shared/teaching/ect_support' %>
+  </section>
+    <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you to become a chemistry teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
+</div>
