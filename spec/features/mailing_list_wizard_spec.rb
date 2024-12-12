@@ -36,7 +36,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "If you give us your postcode"
+    expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
@@ -77,7 +77,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "If you give us your postcode"
+    expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
@@ -116,7 +116,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "If you give us your postcode"
+    expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
@@ -155,7 +155,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "If you give us your postcode"
+    expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
@@ -345,7 +345,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "If you give us your postcode"
+    expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "Your UK postcode (optional)", with: ""
     click_on "Complete sign up"
 
