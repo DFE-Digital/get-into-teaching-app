@@ -826,10 +826,10 @@ en:
           resent: We've sent you another email
       events_steps_personalised_updates:
         address_postcode: |-
-          If you give us your postcode, we'll let you know about events happening near you.
+          We'll only use this to send you information about events happening near you.
       mailing_list_signup:
         address_postcode: |-
-          If you give us your postcode, we'll let you know about events happening near you.
+          We'll only use this to send you information about events happening near you.
       teacher_training_adviser_steps_what_subject_degree:
         degree_subject: "Type to enter your degree subject or select from the suggestions."
         degree_subject_nojs: "Type to enter your degree subject."
