@@ -12,7 +12,7 @@ colour: pastel yellow-yellow
 image:  "static/images/content/hero-images/geography.jpg"
 keywords:
   - a day in the life of a teacher 
-  - challeneges of teaching 
+  - challenges  of teaching 
   - what it's like to be a teacher 
 
 content:
