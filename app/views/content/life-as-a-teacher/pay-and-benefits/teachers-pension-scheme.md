@@ -23,7 +23,7 @@ The teachers’ pension scheme is one of the most generous in the country.
 
 ## How the teachers' pension works
 
-You’ll automatically be enrolled into the pension scheme at the start of your career. You'll remain in the scheme when moving teaching jobs, unless you opt out. 
+You’ll automatically be enrolled into the pension scheme at the start of your career. You'll remain in the scheme if you move teaching jobs, unless you opt out. 
 
 Under the scheme, you'll automatically pay from your salary into your pension each month. At the same time, your employer also contributes.
 
@@ -35,7 +35,7 @@ The teachers' pension scheme includes an employer contribution of 28.6%.
 
 It’s a defined benefit pension, which means it’s based on your salary rather than the amount you contribute.
 
-If your salary increases, you and your employer's pension contributions will increase too. You can also choose to pay extra contributions if you want to. [Learn more about paying extra contributions on the teachers' pension scheme website](https://www.teacherspensions.co.uk/members/working-life/paying-in/increasing-your-pension/additional-pension.aspx).
+If your salary increases, the pension contributions you and your employer make will increase too. You can also choose to pay extra contributions if you want to. [Learn more about paying extra contributions on the teachers' pension scheme website](https://www.teacherspensions.co.uk/members/working-life/paying-in/increasing-your-pension/additional-pension.aspx).
 
 ## Teachers' pension contributions are tax-free
 
