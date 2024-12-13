@@ -16,7 +16,7 @@ graph TD;
   authenticate -- On mailing list --> signed_up_already[You've already signed up]
   degree_status --> teacher_training[How close are you to applying?]
   
-  teacher_training --> subject[Which subject do you want to teach?]
+  teacher_training --> subject[Select the subject you're most interested in teaching]
 
   subject --> postcode["Your UK postcode (optional)"]
   
