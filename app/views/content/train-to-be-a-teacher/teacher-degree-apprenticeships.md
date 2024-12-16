@@ -46,7 +46,7 @@ Non-maintained schools (for example, academies, independent schools and private 
 You do not have to pay tuition fees, but you will not be eligible for student finance. 
 
 ## Who’s eligible to apply for a teacher degree apprenticeship?
-Teacher degree apprenticeships are open to anyone who would like to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
+Teacher degree apprenticeships are open for candidates to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
 
 
 To be eligible to apply for a TDA, you must be:
