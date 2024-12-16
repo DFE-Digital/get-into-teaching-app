@@ -205,7 +205,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Which subject do you want to teach"
     expect(page).to have_select(
-      "Select the subject you're most interested in teaching,
+      "Select the subject you're most interested in teaching",
       selected: Crm::TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
     )
     click_on "Complete sign up"
