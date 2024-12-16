@@ -32,7 +32,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "I'm not sure and finding out more"
     click_on "Next step"
 
-    expect(page).to have_text "Which subject do you want to teach"
+    expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Maths"
     click_on "Next step"
 
@@ -73,7 +73,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "I'm not sure and finding out more"
     click_on "Next step"
 
-    expect(page).to have_text "Which subject do you want to teach"
+    expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Maths"
     click_on "Next step"
 
@@ -112,7 +112,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "I'm not sure and finding out more"
     click_on "Next step"
 
-    expect(page).to have_text "Which subject do you want to teach"
+    expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Maths"
     click_on "Next step"
 
@@ -151,7 +151,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "I'm not sure and finding out more"
     click_on "Next step"
 
-    expect(page).to have_text "Which subject do you want to teach"
+    expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Maths"
     click_on "Next step"
 
@@ -203,7 +203,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     )
     click_on "Next step"
 
-    expect(page).to have_text "Which subject do you want to teach"
+    expect(page).to have_text "Select the subject you're most interested in teaching"
     expect(page).to have_select(
       "Select the subject you're most interested in teaching",
       selected: Crm::TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
@@ -341,7 +341,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     )
     click_on "Next step"
 
-    expect(page).to have_text "Which subject do you want to teach"
+    expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Maths"
     click_on "Next step"
 
