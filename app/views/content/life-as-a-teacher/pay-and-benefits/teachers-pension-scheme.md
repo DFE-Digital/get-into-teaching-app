@@ -19,7 +19,6 @@ keywords:
 ---
 One of the great benefits of a teaching career is a secure pension that will help you save for your future. 
 
-The teachers’ pension scheme is one of the most generous in the country.
 
 ## How the teachers' pension works
 
