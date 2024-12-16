@@ -308,8 +308,14 @@
 "static/images/content/homepage/teacher-training-adviser.jpg":
   # Teacher training advisers at an event.
   alt: ""
+"static/images/content/homepage/directory1.jpg":
+  # 3 teachers walking down a coridoor.
+  alt: ""
+"static/images/content/homepage/directory2.jpg":
+  # a teacher with a group of students.
+  alt: ""
 "static/images/content/homepage/directory3.jpg":
-  # An adviser talks to someone attending a event.
+  # A member of the events team at an event 
   alt: ""
 "static/images/content/homepage/directory4.jpg":
   # A language teacher talking to pupils in a classroom.

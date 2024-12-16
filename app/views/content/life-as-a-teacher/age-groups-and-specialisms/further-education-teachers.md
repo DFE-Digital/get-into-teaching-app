@@ -4,7 +4,6 @@ article_classes: ['longform']
 image: "static/images/content/hero-images/0031.jpg"
 description: |-
   Find out how to teach in further education in England. Explore which qualifications you need and how to find further education teacher training.
-date: "2023-02-23"
 keywords:
   - Further
   - Further education
@@ -37,6 +36,6 @@ You do not always need a prior teaching qualification or an academic degree to s
 
 Many further education training providers offer funded teacher training on the job, so you can start immediately. 
 
-To find out more, visit the [teach in further education website](https://www.teach-in-further-education.campaign.gov.uk/).
+To find out more, visit the [teach in further education website](https://www.teachinfurthereducation.education.gov.uk/).
 
 However, if you’re mainly interested in teaching in a school, explore [how to train to teach primary and secondary pupils](/train-to-be-a-teacher).

@@ -7,31 +7,32 @@ This documentation aims to be a reference for content editors that want to make 
 1. [Setting up Codespaces and Github](#getting-started)
 2. [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
 3. [Content Editing Tips/Info](#content-editing-tips-info)
-	* [Headings](#headings)
-	* [Frontmatter](#frontmatter)
-	* [Breadcrumbs](#breadcrumbs)
-	* [Links](#links)
-	* [SEO](#seo)
-	* [Prevent Indexing](#prevent-indexing)
-	* [Adding a Document or Image](#adding-a-document-or-image)
-	* [Calls to Action](#calls-to-action)
-		* [Main Content](#main-content)
-		* [Sidebar](#sidebar)
-	* [Accessibility](#accessibility)
-		* [iframe](#iframe)
-	* [Inset text](#inset-text)
-  * [Details expander for non-UK content](#details-expander-for-non-uk-content)
-	* [YouTube Video](#youtube-video)
-	* [Hero](#hero)
-	* [Values](#values)
+    * [Headings](#headings)
+    * [Frontmatter](#frontmatter)
+    * [Breadcrumbs](#breadcrumbs)
+    * [Links](#links)
+    * [SEO](#seo)
+    * [Prevent Indexing](#prevent-indexing)
+    * [Adding a Document or Image](#adding-a-document-or-image)
+    * [Calls to Action](#calls-to-action)
+    * [Adviser (CTA) component](#adviser-cta-component)
+    * [Main Content](#main-content)
+    * [Sidebar](#sidebar)
+    * [Accessibility](#accessibility)
+    * [iframe](#iframe)
+    * [Inset text](#inset-text)
+    * [Details expander for non-UK content](#details-expander-for-non-uk-content)
+    * [YouTube Video](#youtube-video)
+    * [Hero](#hero)
+    * [Values](#values)
 4. [Creating a subject page](#creating-a-subject-page)
 5. [Creating an inspirational page](#creating-an-inspirational-page)
 6. [Creating a Blog Post](#creating-a-blog-post)
-	* [Images](#images)
-	* [Footers](#footers)
+    * [Images](#images)
+    * [Footers](#footers)
 7. [Navigation](#navigation)
-	* [Main Navigation](#main-navigation)
-	* [Category Pages](#category-pages)
+    * [Main Navigation](#main-navigation)
+    * [Category Pages](#category-pages)
 8. [Build errors](#build-errors)
 9. [Internship providers](#internship-providers)
 10. [Creating a new page](#creating-a-new-page)
@@ -334,6 +335,51 @@ If you need to insert an expander into an erb file:
   ) %>
 ```
 
+
+### Adviser (CTA) component
+
+You can use the Adviser (Call to Action) component to create a call to action to invite users to sign up for the Get an Adviser service. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
+
+* title
+* text
+* image
+* link_text
+* link_target
+* classes
+* border
+
+```yaml
+---
+cta_adviser:
+  adviser1:
+    title: "Optional title"
+    text: "Optional text"
+    image: "/optional/path/to/image"
+    link_text: "Optional link text"
+    link_target: "/optional/path"
+    classes: ["class1", "class2", "class3"]
+    border: true
+---
+
+# My page
+
+$adviser1$
+```
+Alternatively, if you need to insert an adviser component in an erb file, you can call it like this:
+
+```yaml
+<%= render CallsToAction::AdviserComponent.new(
+  title: "Optional title",
+  text: "Optional text",
+  image: "/optional/path/to/image",
+  link_text: "Optional link text",
+  link_target: "/optional/path",
+  classes: ["class1", "class2", "class3"],
+  border: true
+)%>
+```
+
+
 ### YouTube video
 
 To add a YouTube video to your content you need to know the video ID. You can find this out by visiting the video on [youtube.com](https://www.youtube.com/) and looking in the address bar of your browser (it is in the format `watch?v=<video_id>`).
@@ -424,17 +470,14 @@ Values should be named using only _lowercase_ characters `a` to `z`, the numbers
 
 Create a subject folder under ‘content/life as a teacher’
 
-From a previous published subject page copy the 3 files:
+From a previous published subject page copy the 2 files:
 
--	_adviser-promo-subject-html.erb (replace with subject name)
 -	_article.html/erb
 -	_header.html.erb
 
 Also copy and paste a previous subject ‘.md’ file and rename it with the subject (e.g english.md)
 
 #### File changes:
-
-_adviser-promo-subject.html.erb - change line 4 to relate to the subject 
 
 _header.html.erb – no changes needed
 
@@ -469,7 +512,6 @@ keywords:
 content:
   - "content/life-as-a-teacher/subject/header"
   - "content/life-as-a-teacher/subject/article"
-  - "content/life-as-a-teacher/subject/adviser-promo-subject"
 ---
 ```
 
@@ -533,6 +575,32 @@ And copy and paste an exiting card such as:
 
 Update the title, description and image as required.
 
+## Add a quote with image component
+
+Add this code to a html file:
+
+```html
+<div class="row">
+  <div class="col-space-l col-space-l-top">
+    <%= render Content::QuoteWithImageComponent.new(
+      title: "Example title to go here",
+      text: "<h4>Heading if neededd</h4><p>Example information or quote</p><a href='#'>Link text/a>",
+      quotes: false,
+      background_color: "blue",
+      heading_color: "pink",
+      image_path: "static/images/content/hero-images/0034.jpg"
+    ) %>
+  </div>
+</div>
+```
+You can edit the colours used such as "yellow", "pink", "green", "blue" and "purple". You can also specify whether you want the quote marks to appear by using true or false in the quotes parameter. For shorter quotes its better to use an image with a height cropped to around 300 pixels.
+
+When using in a markdown file, copy the above code into a new html file and link to the file in the markdown code, in the same way you would when creating a subject page:
+
+```html
+content: 
+  - "content/life-as-a-teacher/pay-and-benefits/quote" 
+```
 
 ## Creating a Blog Post
 

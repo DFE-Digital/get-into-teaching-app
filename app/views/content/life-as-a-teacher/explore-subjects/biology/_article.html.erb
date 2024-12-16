@@ -36,7 +36,7 @@
       <li>interactions and interdependencies</li>
       <li>genetics and evolution</li>
     </ul>
-
+    <p>Explore what teaching a key stage 3 science lesson would be like by visiting the <a href="https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units">Oak National Academy website</a>.</p>
     <p>Themes you'll cover when you teach 14 to 16 year olds (key stage 4) will be more specific to biology, and include:</p>
     <ul>
       <li>cell biology</li>
@@ -47,7 +47,6 @@
       <li>ecosystems</li>
       <li>evolution, inheritance and variation</li>
     </ul>
-    <p>Explore what teaching a key stage 4 biology lesson would be like at the<a href="https://www.thenational.academy/teachers/curriculum/science-secondary/units"> Oak National Academy website</a>.</p>
     <p>At A level and AS level (key stage 5), you’ll help pupils develop a deeper knowledge and understanding of:</p>
     <ul>
       <li>biodiversity</li>
@@ -84,6 +83,8 @@
     <!-- Support with teacher training -->
     <%= render 'content/shared/teaching/ect_support' %>
   </section>
-
+  <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you to become a biology teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
 </div>
 </div>

@@ -3,7 +3,6 @@ title: "Teacher pay"
 heading: "Teacher pay"
 description: |-
   All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
-date: "2021-06-24"
 backlink: "../../"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
@@ -92,7 +91,7 @@ Some schools also have a leading practitioner pay range for teachers with exempl
 What this will involve will depend on your school, but could include:
 
 * coaching and mentoring other teachers, including trainees and early career teachers
-* undertaking a national professional qualification (NPQ)
+* undertaking a [national professional qualification (NPQ)](https://www.gov.uk/guidance/national-professional-qualification-npq-courses) 
 * supporting your school with plans to reduce workload
 
 | Area                                     | Minimum | Maximum |

@@ -5,12 +5,13 @@ subcategory: Extra support
 description: |-
   Find out what extra grants and schemes are available when completing your teacher training if you have children or other caring responsibilities.
 related_content:
-    Get support training to teach if you're changing career: "/life-as-a-teacher/teaching-as-a-career/change-careers"
+    Get support training to teach if you're changing career: "/life-as-a-teacher/change-careers"
     Tuition fee and maintenance loans: "/funding-and-support/tuition-fee-and-maintenance-loans"
     Bursaries and scholarships: "/funding-and-support/scholarships-and-bursaries"
     Explore life as a teacher: "/life-as-a-teacher"
-promo_content:
-    - content/funding-and-support/promos/get-adviser-support-promo
+cta_adviser:
+  adviser:
+    text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.30
 navigation_title: Funding and support if you're a parent or carer
 navigation_description: Find out what extra grants and schemes are available if you have children or other caring responsibilities.
@@ -105,3 +106,5 @@ To be eligible, you need to:
 * have a household income of less than $finance_adultdependantsgrant_income$
 
 [Find out more about the Adult Dependants’ Grants and how to apply](https://www.gov.uk/adult-dependants-grant).
+
+$adviser$

@@ -1,14 +1,15 @@
 module Content
   class ImageBlockComponent < ViewComponent::Base
-    attr_reader :title, :image_path
+    attr_reader :title, :image_path, :title_color
 
     include ContentHelper
 
-    def initialize(title:, image_path:)
+    def initialize(title:, image_path:, title_color: "yellow")
       super
 
       @title = substitute_values(title)
       @image_path = image_path
+      @title_color = title_color
     end
 
     def image

@@ -11,14 +11,8 @@ related_content:
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Training and support for early career teachers : "/life-as-a-teacher/teaching-as-a-career/early-career-teachers"
     How to apply : "/how-to-apply-for-teacher-training"
-quote:
-  hasina:
-    text: "Teacher training has been by far one of the most fulfilling experiences of my life. It has made me realise my potential, testing the limits of my patience, confidence, organisational skills and empathy, as well as academic ability."
-    name: "Hasina, science teacher"
-    classes: quote--indent
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-itt
-    
 ---
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
@@ -48,6 +42,8 @@ What you’ll learn will depend on your course and the qualifications it offers.
 
 Initial teacher training helps you meet the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). You must meet the teachers’ standards to be awarded QTS.
 
+All initial teacher training courses cover [teaching pupils with special educational needs and disabilities (SEND)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs). Once you've gained QTS, you can then train to specialise in working with children with SEND. 
+
 All initial teacher training will help you:
 
 * set high expectations which inspire, motivate and challenge pupils
@@ -59,8 +55,6 @@ All initial teacher training will help you:
 * manage behaviour effectively to ensure a good and safe learning
 environment
 * make a positive contribution to your school community
-
-$hasina$
 
 ## Your school placements
 

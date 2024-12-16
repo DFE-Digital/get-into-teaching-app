@@ -9,7 +9,6 @@ related_content:
 navigation: 30.15
 navigation_title: Teacher training references
 navigation_description: Find out which teacher training references you need to provide and what they should include.
-date: "2023-07-03"
 keywords:
   - teacher training references
   - adviser
@@ -33,8 +32,9 @@ keywords:
   - teacher training application
 external_content:
     - content/train-to-be-a-teacher/promos/apply-for-your-course
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-apply
+cta_adviser:
+  adviser:
+    text: Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience. Chat by phone, text or email, as little or as often as you need.
 
 ---
 
@@ -78,3 +78,5 @@ When you apply for teacher training, you’ll need to provide your reference det
 When you accept your place on a course, you can change your reference details, or even change your reference altogether. 
 
 Make sure you prepare your references when you accept a place on a course. If you apply late in the year, there can be a quick turnaround between your place being accepted and your references being contacted, so it’s good to make sure they’re ready.
+
+$adviser$

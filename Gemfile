@@ -56,7 +56,7 @@ gem "faraday_middleware"
 
 gem "fastimage"
 
-gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.14.2"
+gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.15.1"
 gem "dfe-autocomplete", require: "dfe/autocomplete", github: "DFE-Digital/dfe-autocomplete"
 gem "dfe-reference-data", require: "dfe/reference_data", github: "DFE-Digital/dfe-reference-data", tag: "v3.5.0"
 
@@ -71,7 +71,7 @@ gem "loaf", ">= 0.10.0"
 gem "prometheus-client"
 
 gem "sentry-rails", ">= 5.10.0"
-gem "sentry-ruby", "~> 5.17.3"
+gem "sentry-ruby", "~> 5.21.0"
 
 gem "skylight", "~> 6.0.4"
 
@@ -150,7 +150,7 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem "listen", "~> 3.7.1"
+  gem "listen", "~> 3.9.0"
   gem "web-console", ">= 4.2.0"
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

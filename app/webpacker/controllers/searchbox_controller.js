@@ -20,9 +20,11 @@ export default class extends Controller {
     if (this.element.classList.contains('open')) {
       this.element.classList.remove('open');
       this.searchTogglerExpanded(false);
+      this.updateAriaLabel('Search');
     } else {
       this.element.classList.add('open');
       this.searchTogglerExpanded(true);
+      this.updateAriaLabel('Close search');
       this.input.focus();
     }
   }
@@ -77,6 +79,13 @@ export default class extends Controller {
     }
     if (searchInput) {
       searchInput.ariaExpanded = expanded;
+    }
+  }
+
+  updateAriaLabel(label) {
+    const toggle = document.getElementById('search-toggle');
+    if (toggle) {
+      toggle.setAttribute('aria-label', label);
     }
   }
 

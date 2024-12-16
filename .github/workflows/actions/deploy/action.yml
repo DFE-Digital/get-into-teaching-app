@@ -32,6 +32,11 @@ runs:
         with:
            creds: ${{ inputs.AZURE_CREDENTIALS }}
 
+      - uses: google-github-actions/auth@v2
+        with:
+          project_id: get-into-teaching
+          workload_identity_provider: projects/574582782335/locations/global/workloadIdentityPools/get-into-teaching-app/providers/get-into-teaching-app
+
       - name: Get Short SHA
         id: sha
         shell: bash
@@ -44,9 +49,11 @@ runs:
              tf_vars_file=terraform/aks/config/${{ inputs.environment }}.tfvars.json
              terraform_version=$(awk '/{/{f=/^terraform/;next}f' terraform/aks/terraform.tf | grep -o [0-9\.]*)
              cluster=$(jq -r '.cluster' ${tf_vars_file})
+             namespace=$(jq -r '.namespace' ${tf_vars_file})
              appenv=$(jq -r '.environment' ${tf_vars_file})
              cluster_domain=".${cluster}"
              echo "TERRAFORM_VERSION=$terraform_version" >> $GITHUB_ENV
+             echo "NAMESPACE=$namespace" >> $GITHUB_ENV
 
              case ${{ inputs.environment }} in
                review)
@@ -93,3 +100,24 @@ runs:
         env:
           HTTPAUTH_PASSWORD: ${{ steps.fetch-secrets.outputs.HTTP_PASSWORD }}
           HTTPAUTH_USERNAME: ${{ steps.fetch-secrets.outputs.HTTP_USERNAME }}
+
+      - name: Track Page Modifications
+        if: ${{ inputs.environment == 'review' || inputs.environment == 'production' }}
+        shell: bash
+        run: |
+          if [ "${{ inputs.environment }}" = "review" ]; then
+            CLUSTER_NAME="s189t01-tsc-test-aks"
+            RESOURCE_GROUP="s189t01-tsc-ts-rg"
+            APP_LABEL="get-into-teaching-app-${{inputs.environment}}-${{inputs.pr}}"
+            HOST="${APP_LABEL}.test.teacherservices.cloud"
+          else
+            CLUSTER_NAME="s189p01-tsc-production-aks"
+            RESOURCE_GROUP="s189p01-tsc-pd-rg"
+            APP_LABEL="get-into-teaching-app-${{inputs.environment}}"
+            HOST="getintoteaching.education.gov.uk"
+          fi
+
+          az aks get-credentials --resource-group $RESOURCE_GROUP --name $CLUSTER_NAME --overwrite-existing
+          kubelogin convert-kubeconfig -l spn
+          POD_NAME=$(kubectl get pods -n ${{ env.NAMESPACE }} -l app=${APP_LABEL} -o jsonpath="{.items[0].metadata.name}")
+          kubectl exec -n ${{ env.NAMESPACE }} $POD_NAME -- bundle exec rails runner "TrackPageModificationsJob.perform_later(host: '${HOST}')"

@@ -7,7 +7,6 @@ related_content:
     Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
-date: "2021-05-27"
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 keywords:

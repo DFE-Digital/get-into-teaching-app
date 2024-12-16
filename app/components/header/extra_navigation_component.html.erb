@@ -1,15 +1,15 @@
 <%= tag.div(class: classes, data: { controller: "searchbox", "searchbox-search-input-id-value" => search_input_id }, role: "navigation") do %>
   <ul class="extra-navigation__list extra-navigation__flex">
-      <li class="extra-navigation__link extra-navigation__mail">
-        <%= link_to("/mailinglist/signup/name", class: "link--black") do %>
+    <li class="extra-navigation__link extra-navigation__mail">
+      <%= link_to("/mailinglist/signup/name", class: "link--black") do %>
         Sign up for emails<span class="icon icon-mail hide-on-narrow" aria-hidden="true"></span><span class="icon icon-mail-white hide-on-narrow" aria-hidden="true"></span>
-        <% end %>
-      </li>
-      <li class="extra-navigation__link extra-navigation__calendar">
-        <%= link_to("/events", class: "link--black") do %>
+      <% end %>
+    </li>
+    <li class="extra-navigation__link extra-navigation__calendar">
+      <%= link_to("/events", class: "link--black") do %>
         Find an event<span class="icon icon-calendar hide-on-narrow" aria-hidden="true"></span><span class="icon icon-calendar-white hide-on-narrow" aria-hidden="true"></span>
-        <% end %>
-      </li>
+      <% end %>
+    </li>
     <%= tag.li(class: %w[extra-navigation__link extra-navigation__search]) do %>
       <%= tag.label("Search", for: search_input_id, class: %w[searchbox__label visually-hidden hidden], data: { "searchbox-target": "label" }) %>
       <%= link_to(search_path, id: "search-toggle", role: "button", aria: { label: "Search", expanded: "false", controls: "search-bar" }, data: { action: "searchbox#toggle" }) do %>
