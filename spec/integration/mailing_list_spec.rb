@@ -56,7 +56,7 @@ RSpec.feature "Integration tests", :integration, :js, type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "If you give us your postcode"
-    fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
+    fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
     expect(page).to have_text("you're signed up")
@@ -89,7 +89,7 @@ RSpec.feature "Integration tests", :integration, :js, type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "If you give us your postcode"
-    fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
+    fill_in "Your UK postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
     expect(page).to have_text("you're signed up")
