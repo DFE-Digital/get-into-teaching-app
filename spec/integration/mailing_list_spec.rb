@@ -51,7 +51,7 @@ RSpec.feature "Integration tests", :integration, :js, type: :feature do
     click_label "I’m not sure and finding out more"
     click_on "Next step"
 
-    expect(page).to have_text "Which subject do you want to teach?"
+    expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Chemistry"
     click_on "Next step"
 
@@ -84,7 +84,7 @@ RSpec.feature "Integration tests", :integration, :js, type: :feature do
     click_label "I’m not sure and finding out more"
     click_on "Next step"
 
-    expect(page).to have_text("Which subject do you want to teach")
+    expect(page).to have_text("Select the subject you're most interested in teaching")
     select "Maths"
     click_on "Next step"
 
