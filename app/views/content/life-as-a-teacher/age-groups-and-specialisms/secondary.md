@@ -1,23 +1,26 @@
 ---
-title: Become a secondary teacher 
-subject: secondary
-title_paragraph: |-
-  <p>
-  As a secondary teacher, you will play a pivotal role in students' lives. You'll see them grow from children to young adults, inspiring them to become passionate about your subject and shaping their futures.</p>
-  <p>
-  Depending on the subject that you teach you could be entitiled to a bursary or scholarship for training to teach.</p>
+title: "Testing"
+heading: "Testing"
 description: |-
-    Find out how to become a secondary teacher, including what you'll teach and what funding is available to help you train.
-layout: "layouts/minimal"
-colour: pastel yellow-yellow
-image: "static/images/content/hero-images/chemistry.jpg"
+  Testing.
+date: "2021-05-07"
+image: "static/images/content/hero-images/0032.jpg"
+article_classes: ['longform']
+promo_content:
+    - content/train-to-be-a-teacher/promos/adviser-promo-send
 keywords:
-  - secondary
-  - secondary teaching
-  - secondary teacher training
-
-content:
-  - "content/shared/subject-pages/header"
-  - "content/life-as-a-teacher/age-groups-and-specialisms/secondary/article"
-  - "content/shared/subject-pages/adviser-promo"
+  - SEND
+  - disabled
+  - disability  
+  - disabilities
+  - special educational needs
+  - teaching
+  - teacher
+  - special school
+quote:
+  q-jane-wilkinson:
+    text: "I specifically wanted to work with children identified with Special Educational Needs and Disabilities (SEND). I was fortunate to find a teacher training course provider that was able to allow me to practice in a mainstream school that also hosted a hearing impairment unit. And another school that offered support for children with a variety of learning needs. They were great at teaching me and letting me practice my classroom management skills early on. I was able to research and understand ways to differentiate resources for children who were on the autistic spectrum. And I was able to create and implement a scheme of work to reflect on and evaluate for later use once qualified."
+    name: "Jane Wilkinson, former teacher and teacher training adviser"
+    classes: quote--indent
 ---
+Testing
