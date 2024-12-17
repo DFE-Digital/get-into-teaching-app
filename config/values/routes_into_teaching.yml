@@ -51,46 +51,80 @@ routes:
       - question: location
         answer: "No"
 
-# international_qualified_teacher_status:
-title: International qualified teacher status (iQTS)
-course_length: 4 months
-course_fee: Yes
-funding: No
-description: International qualified teacher status (iQTS) is a teaching qualification backed by the UK government. iQTS meets the same high standards as English qualified teacher status (QTS) and leads to the automatic award of QTS. You can train where you live and work, with no need to visit the UK.
+  - title: Undergraduate initial teacher training
+    course_length: up to 4 years
+    course_fee: Yes
+    funding: No
+    description: These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible.standards, or written assessments. This will vary by your provider.
+    matches:
+      - question: undergraduate_degree
+        answer: "No"
+      - question: unqualified_teacher
+        answer: "*"
+      - question: location
+        answer: "No"
 
+  - title: International qualified teacher status (iQTS)
+    course_length: 4 months
+    course_fee: Yes
+    funding: No
+    description: International qualified teacher status (iQTS) is a teaching qualification backed by the UK government. iQTS meets the same high standards as English qualified teacher status (QTS) and leads to the automatic award of QTS. You can train where you live and work, with no need to visit the UK.
+    matches:
+      - question: undergraduate_degree
+        answer: "Yes"
+      - question: unqualified_teacher
+        answer: "*"
+      - question: location
+        answer: "No"
 
+  - title: Teacher degree apprenticeship
+    course_length: 4 years
+    course_fee: No - you will be paid a salary
+    funding: No
+    description: These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible.
+    matches:
+      - question: undergraduate_degree
+        answer: "No"
+      - question: unqualified_teacher
+        answer: "*"
+      - question: location
+        answer: "No"
 
-# undergratuate_initial_teacher_training:
-title: Undergraduate initial teacher training
-course_length: up to 4 years
-course_fee: Yes
-funding: No
-description: These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible.standards, or written assessments. This will vary by your provider.
+  - title: Undergraduate degree (followed by postgraduate teacher training)
+    course_length: 4 years
+    course_fee: Yes
+    funding: No
+    description:
+    matches:
+      - question: undergraduate_degree
+        answer: "No"
+      - question: unqualified_teacher
+        answer: "*"
+      - question: location
+        answer: "No"
 
-# teacher_degree_apprenticeship:
-title: Teacher degree apprenticeship
-course_length: 4 years
-course_fee: No - you will be paid a salary
-funding: No
-description: These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible.
+  - title: Undergraduate degree (followed by Assessment only)
+    course_length: up to 4 years
+    course_fee: Yes
+    funding: No
+    description:
+    matches:
+      - question: undergraduate_degree
+        answer: "No"
+      - question: unqualified_teacher
+        answer: "Yes"
+      - question: location
+        answer: "No"
 
-# undergraduate_degree_followed_by_postgraduate_teacher_training:
-title: Undergraduate degree (followed by postgraduate teacher training)
-course_length: 4 years
-course_fee: Yes
-funding: No
-description:
-
-# undergraduate_degree_followed_by_assessment_only:
-title: Undergraduate degree (followed by Assessment only)
-course_length: up to 4 years
-course_fee: Yes
-funding: No
-description:
-
-# undergraduate_degree_followed_by_iqts:
-title: Undergraduate degree (followed by iQTS)
-course_length: up to 4 years
-course_fee: Yes
-funding: No
-description:
+  - title: Undergraduate degree (followed by iQTS)
+    course_length: up to 4 years
+    course_fee: Yes
+    funding: No
+    description:
+    matches:
+      - question: undergraduate_degree
+        answer: "No"
+      - question: unqualified_teacher
+        answer: "Yes"
+      - question: location
+        answer: "No"
