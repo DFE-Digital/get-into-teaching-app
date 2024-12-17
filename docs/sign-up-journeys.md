@@ -18,7 +18,7 @@ graph TD;
   
   teacher_training --> subject[Which subject do you want to teach?]
 
-  subject --> postcode["Your UK postcode (optional)"]
+  subject --> postcode["What's your UK postcode? (optional)"]
   
   postcode --> show_welcome_guide{Show welcome guide?}
   
