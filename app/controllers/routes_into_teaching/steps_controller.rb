@@ -13,6 +13,20 @@ module RoutesIntoTeaching
       @results = RoutesIntoTeaching::Routes.recommended(session[:routes_into_teaching])
     end
 
+    def completed
+      @yaml = YAML.load_file(Rails.root.join('config/values/routes_into_teaching.yml'))
+      @answers = session[:routes_into_teaching]
+
+      @results = @yaml["routes"].select do |route|
+        next false if route["matches"].nil? || route["matches"].empty?
+
+        route["matches"].all? do |match_rule|
+          match_rule["answer"] == "*" ||
+          match_rule["answer"] == @answers[match_rule["question"]]
+        end
+      end
+    end
+
   private
 
     def noindex?
