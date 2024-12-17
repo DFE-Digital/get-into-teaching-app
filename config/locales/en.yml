@@ -450,7 +450,7 @@ en:
         teacher_training_adviser/steps/subject_interested_teaching:
           attributes:
             preferred_teaching_subject_id:
-              invalid_type: "Please select a subje.ct"
+              invalid_type: "Please select a subject"
         teacher_training_adviser/steps/start_teacher_training:
           attributes:
             initial_teacher_training_year_id:
