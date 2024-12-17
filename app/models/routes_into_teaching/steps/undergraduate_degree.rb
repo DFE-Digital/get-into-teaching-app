@@ -1,8 +1,8 @@
 module RoutesIntoTeaching::Steps
   class UndergraduateDegree < GITWizard::Step
-    attribute :has_undergraduate_degree
+    attribute :undergraduate_degree
 
-    validates :has_undergraduate_degree, presence: true
+    validates :undergraduate_degree, presence: true
 
     def options
       option_struct = Struct.new(:answer, :text, keyword_init: true)
