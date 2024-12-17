@@ -22,6 +22,7 @@ COMPONENT_TYPES = TemplateHandlers::Markdown::COMPONENT_TYPES + %w[calls_to_acti
 
 IGNORE_VARIABLES = {
   "config/locales/loaf.yml" => %w[invalid valid],
+  "config/values/routes_into_teaching.yml" => %w[routes],
 }.freeze
 
 RSpec.describe "orphan variables checker" do
