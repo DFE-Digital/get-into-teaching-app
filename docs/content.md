@@ -899,4 +899,3 @@ Simple merge conflicts can be resolved in the Github text editor by preserving t
 * [Resolving a merge conflict on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
 
 Complex merge conflicts will need to be resolved via the git commandline and will require developer assistance.
-
