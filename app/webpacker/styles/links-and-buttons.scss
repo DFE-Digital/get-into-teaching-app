@@ -239,6 +239,19 @@ body a.govuk-back-link {
   }
 }
 
+.cta-circle-button {
+  @include button;
+  border-radius: 50%;
+  width: 1.8em; 
+  height: 1.8em;
+  display: inline-block;
+  box-shadow: none;
+  padding: 0;
+  @include font-size("xsmall");
+  @include arrow;
+}
+
+
 .call-to-action-icon-button {
   @include button;
   display: inline-block;

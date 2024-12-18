@@ -34,6 +34,35 @@ $chevron-direction-map: (
   down: 135deg
 );
 
+@mixin horizontal-line($color, $length, $thickness: 4px) {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: $length;
+  height: $thickness;
+  background-color: $color;
+}
+
+
+@mixin arrow($color: $white, $direction: right, $dimensions: .6em) {
+  $degrees: map-get($chevron-direction-map, $direction);
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    @include horizontal-line($color: $color, $length: 1.1em, $thickness: 0.18em);
+    position: absolute;
+    top: 47%;
+    left: 0.3em;
+  }
+  
+  &::after {
+    @include chevron-icon($color: $color, $dimensions: $dimensions, $rotate: $degrees);
+    left: 0.125em;
+    top: 5%;
+  }
+}
+
 @mixin chevron($color: $white, $after: true, $direction: right, $dimensions: .6em, $focus-color: $white) {
   $chevron-margin: .5em;
 
