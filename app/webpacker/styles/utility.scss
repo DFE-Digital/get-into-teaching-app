@@ -58,8 +58,8 @@ $chevron-direction-map: (
   
   &::after {
     @include chevron-icon($color: $color, $dimensions: $dimensions, $rotate: $degrees);
-    left: 0.125em;
-    top: 5%;
+    left: .6em;
+    top: 12%;
   }
 }
 
