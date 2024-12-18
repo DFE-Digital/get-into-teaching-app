@@ -19,9 +19,14 @@ expander:
   application-deadlines:
     title: application deadlines
     text: You should check the deadline for non-UK applications with training providers. They may close earlier than for other applicants. 
+  ukraine-inset:
+    title: Ukraine citizens moving to the UK
+    text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.
 ---
 
 You can apply for postgraduate teacher training courses starting in $recruitmentcycle_coursestart$ $recruitmentcycle_openanddeadline$. 
+
+$application-deadlines$
 
 ## Find and apply for teacher training courses
 
@@ -43,7 +48,7 @@ It’s wise to apply as soon as you’re ready because:
 
 You can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
 
-$application-deadlines$
+$ukraine-inset$
 
 <br />
 $q-jacub-pask$
