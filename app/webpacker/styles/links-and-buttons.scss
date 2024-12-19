@@ -245,21 +245,26 @@ body a.govuk-back-link {
   gap: 0.4em;
   @extend .link;
 
-
   .cta-circle-button {
     @include button;
+    font-size: inherit;
     border-radius: 50%;
-    width: 1.8em; 
-    height: 1.8em;
+    width: 34px; 
+    height: 34px;
     display: inline-block;
     box-shadow: none;
     padding: 0;
-    @include font-size("xsmall");
     @include arrow;
+
+    @include mq($until: narrow) {
+      width: 28px; 
+      height: 28px;
+      @include arrow ($length: .9em);
+    }
 }
 
   .cta-link-text {
-    @include font-size("small");
+    @extend .link;
   }
 }
 
