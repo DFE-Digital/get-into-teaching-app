@@ -15,6 +15,12 @@
               description: "Find out about the different routes you could take to swap your current career for the classroom.",
               path: "/life-as-a-teacher/change-careers/how-to-change-careers-to-become-a-teacher"
             )) %>
+              <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "How to become a teacher from teaching assistant",
+              description: "Find out more about the transition from being a teaching assistant to becoming a teacher.",
+              path: "/life-as-a-teacher/change-careers/how-to-become-a-teacher-from-teaching-assistant"
+            )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
               title: "Support with changing careers to teaching",
