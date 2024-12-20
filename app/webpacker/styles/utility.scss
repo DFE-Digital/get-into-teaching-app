@@ -54,12 +54,12 @@ $chevron-direction-map: (
   &::before {
     @include horizontal-line($color: $color, $length: $length, $thickness: $thickness);
     // position: absolute;
-    left: 0.35em;
+    left: 20%;
   }
   
   &::after {
     @include chevron-icon($color: $color, $dimensions: $dimensions, $rotate: $degrees);
-    right: 0.4em;
+    right: 20%;
   }
 }
 

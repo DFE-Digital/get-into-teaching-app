@@ -259,9 +259,24 @@ body a.govuk-back-link {
     @include mq($until: narrow) {
       width: 28px; 
       height: 28px;
-      @include arrow ($length: .9em);
+      background-color: pink;
+      @include arrow ($dimensions: .5em, $length: .9em);
     }
-}
+
+    @include mq($from: narrow, $until: mobile) {
+      background-color: blue;
+      width: 30px; 
+      height: 30px;
+      @include arrow ($dimensions: .55em, $length: 1em);
+    }
+
+    @include mq ($from: mobile, $until: tablet) {
+      background-color: black;
+      width: 32px; 
+      height: 32px;
+      @include arrow ($dimensions: .6em, $length: 1em);
+    }
+  }
 
   .cta-link-text {
     @extend .link;
