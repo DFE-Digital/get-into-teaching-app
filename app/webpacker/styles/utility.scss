@@ -44,7 +44,7 @@ $chevron-direction-map: (
 }
 
 
-@mixin arrow($color: $white, $direction: right, $dimensions: .6em, $length: 1.2em, $thickness: 3px) {
+@mixin arrow($color: $white, $direction: right, $dimensions: $dimensions, $length: $length, $thickness: 3px) {
   $degrees: map-get($chevron-direction-map, $direction);
   position: relative;
   display: flex;
@@ -53,7 +53,6 @@ $chevron-direction-map: (
 
   &::before {
     @include horizontal-line($color: $color, $length: $length, $thickness: $thickness);
-    // position: absolute;
     left: 20%;
   }
   

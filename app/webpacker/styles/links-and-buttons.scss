@@ -239,6 +239,9 @@ body a.govuk-back-link {
   }
 }
 
+// CTA link with green arrow circle button
+// Arrow created here: app/webpacker/styles/utility.scss
+// Partial for rendering here: app/views/shared/_cta_circle_link.html.erb
 .cta-circle-link-wrapper {
   display: inline-flex;
   align-items: center;
@@ -247,39 +250,47 @@ body a.govuk-back-link {
 
   .cta-circle-button {
     @include button;
-    font-size: inherit;
+    // font-size: inherit;
     border-radius: 50%;
-    width: 34px; 
-    height: 34px;
+    // width: 34px; 
+    // height: 34px;
     display: inline-block;
     box-shadow: none;
     padding: 0;
-    @include arrow;
+    line-height: 1;
+    // @include arrow;
 
     @include mq($until: narrow) {
       width: 28px; 
       height: 28px;
       background-color: pink;
-      @include arrow ($dimensions: .5em, $length: .9em);
+      @include arrow ($dimensions: 8px, $length: 16px);
     }
 
     @include mq($from: narrow, $until: mobile) {
       background-color: blue;
       width: 30px; 
       height: 30px;
-      @include arrow ($dimensions: .55em, $length: 1em);
+      @include arrow ($dimensions: 8px, $length: 18px);
     }
 
     @include mq ($from: mobile, $until: tablet) {
       background-color: black;
       width: 32px; 
       height: 32px;
-      @include arrow ($dimensions: .6em, $length: 1em);
+      @include arrow ($dimensions: 10px, $length: 20px);
+    }
+
+    @include mq ($from: tablet) {
+      background-color: purple;
+      width: 34px; 
+      height: 34px;
+      @include arrow ($dimensions: 12px, $length: 22px);
     }
   }
 
   .cta-link-text {
-    @extend .link;
+    @include font-size("small");
   }
 }
 
