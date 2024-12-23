@@ -40,7 +40,7 @@ keywords:
 
 If you’re applying for teacher training as a non-UK citizen, you'll need a [visa or immigration status allowing you to study or work in England](#check-your-status). 
 
-Most candidates who don't already have a visa or immigration status allowing them to study or work in England will need to apply for a Student or Skilled Worker visa.
+Most candidates who do not already have a visa or immigration status allowing them to study or work in England will need to apply for a Student or Skilled Worker visa.
 <section class="inset-text purple">
     <h2 role="text">
       <span class="header">Ukraine citizens:</span>
@@ -82,7 +82,7 @@ Some teacher training courses in England are salaried – this means you [work a
   <div class="expander-details__text">
     <p>
       </p>
-<p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees/non-uk-teachers/non-uk-qualifications">have refugee status you'll ususally be eligible for financial support to help you train</a>.</p>
+<p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees/non-uk-teachers/non-uk-qualifications">have refugee status you'll usually be eligible for financial support to help you train</a>.</p>
 <p>If you're in <a href="https://www.gov.uk/claim-asylum\"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
 <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
     
@@ -146,8 +146,15 @@ You will not need a visa to train to teach in the UK if you:
 * have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
 
-You will not need to be sponsored for a Student or Skilled Worker visa if you have a: 
+You will not need to be sponsored for a Student or Skilled Worker visa if are on a: 
 
+* [Afghan Citizens Resettlement or Afghan Relocations and Assistance Policy scheme](https://www.gov.uk/government/publications/afghanistan-resettlement-and-immigration-policy-statement/afghanistan-resettlement-and-immigration-policy-statement-accessible-version)
+
+* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
+
+* [Homes for Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
+
+* [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 * [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa) 
 
 * [Family visa](https://www.gov.uk/uk-family-visa) 
