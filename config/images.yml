@@ -250,10 +250,10 @@
   variants:
     - "static/images/content/blog/thumbnails/mel-stta-screen.jpg"
 
-"static/images/content/blog/notepad.jpg":
+"static/images/content/how-to-apply-for-teacher-training/notepad.jpg":
   alt: ""
   variants:
-    - "static/images/content/blog/thumbnails/notepad.jpg"
+    - "static/images/content/how-to-apply-for-teacher-training/thumbnails/notepad.jpg"
 
 "static/images/content/blog/right_provider.jpg":
   alt: ""
