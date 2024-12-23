@@ -46,8 +46,8 @@ expander:
       <p>
       Other non-UK citizens may not be eligible for student finance, but may be eligible for a bursary or scholarship to train to teach languages and physics.
       </p>
-      <p>If you're in <a href="https://www.gov.uk/claim-asylum\"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.
-      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.<p>
+      <p>If you're in <a href="https://www.gov.uk/claim-asylum\"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
+      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
       <p>
       Learn more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.
       </p>
