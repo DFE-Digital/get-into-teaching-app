@@ -221,85 +221,18 @@
     - "static/images/content/hero-images/physics_1383-mobile.jpg"
     - "static/images/content/hero-images/physics_1383-tablet.jpg"
 
-# blog
+# case studies
 "static/images/content/case-studies/abigail.jpg":
   alt: "Maths teacher Abigail in front of a maths display board."
 
 "static/images/content/case-studies/ben.jpg":
   alt: "Maths and science teacher Ben marking work at home."
 
-"static/images/content/blog/applying-for-teacher.jpg":
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/applying-for-teacher.jpg"
-
-"static/images/content/blog/calculator.jpg":
-  # A calculator on top of maths homework and a pencil case.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/calculator.jpg"
-
-"static/images/content/blog/interview.jpg":
-  # A teacher training candidate being interviewed by a provider sitting at opposite sides of a desk.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/interview.jpg"
-
-"static/images/content/blog/mel-stta-screen.jpg":
-  alt: "Conference room with tables and a projector for a Sheffield Teacher Training Alliance PGDE course."
-  variants:
-    - "static/images/content/blog/thumbnails/mel-stta-screen.jpg"
-
+# how to apply for teacher training
 "static/images/content/how-to-apply-for-teacher-training/notepad.jpg":
   alt: ""
   variants:
     - "static/images/content/how-to-apply-for-teacher-training/thumbnails/notepad.jpg"
-
-"static/images/content/blog/right_provider.jpg":
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/right_provider.jpg"
-
-"static/images/content/blog/school-aisle.jpg":
-  # The corridor of a school filled with children.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/school-aisle.jpg"
-
-"static/images/content/blog/schoolyard.jpg":
-  # A school playground with secondary school children playing outdoors.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/schoolyard.jpg"
-
-"static/images/content/blog/seminar-room.jpg":
-  # PGCE lecturer at a whiteboard in a seminar room with teacher training students sitting at a table.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/seminar-room.jpg"
-
-"static/images/content/blog/get-into-teaching.jpg":
-  # A busy Get Into Teaching event with attendees having conversations with Teacher Training Advisers.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/get-into-teaching.jpg"
-
-"static/images/content/blog/whiteboard.jpg":
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/whiteboard.jpg"
-  
-"static/images/content/blog/thumbnails/stories-zainab.jpg":
-  alt: "Zainab Kasmani, English teacher"
-
-"static/images/content/blog/thumbnails/stories-sarah-f.jpg":
-  alt: "Sarah Fisher, head of biology"
-
-"static/images/content/blog/thumbnails/stories-generic.jpg":
-  alt: "Students enjoying a lesson in a classroom"
-
-"static/images/content/blog/thumbnails/stories-katie.jpg":
-  alt: "Head of faculty, Katie Lockett"
 
 # homepage
 "static/images/content/homepage/here-to-help.jpg":
@@ -399,5 +332,3 @@
 # subjects
 "static/images/content/subjects/rotna-roy.jpeg":
   alt: "Rotna, maths teacher"
-
-
