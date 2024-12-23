@@ -70,6 +70,8 @@ Some support may be available if:
 
 * you have some type of settled status in the UK – for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
 
+* you're [from the Ukraine or Afghanistan and are on certain visas](/non-uk-teachers/visas-for-non-uk-trainees)
+
 * you're an Irish citizen
 
 ## Teacher training fees
@@ -96,7 +98,35 @@ Irish citizens or non-UK citizens who have settled status may be eligible for:
 * [bursaries and scholarships in the subjects offered to UK citizens](/funding-and-support/scholarships-and-bursaries)
 
 [How to apply for student loans, bursaries and scholarships](#how-to-apply-for-student-loans-bursaries-and-scholarships).
+<details id="details-non-uk-citizens-check-your-qualifications" class="expander-details expander-details__background-purple">
+  <summary class="expander-details__summary">
+    <div role="text">
+        <span class="expander-details__summary__header">
+          Refugees and asylum seekers:
+        </span>
+      <span class="expander-details__summary__title">
+        funding support
+      </span>
+</div>
+    <div class="expander-details__summary__show" aria-hidden="true">
+      <span class="expander-details__summary__icon expander-details__summary__icon__open" aria-hidden="true"></span>
+      <a class="link--underline" id="show-non-uk-citizens-check-your-qualifications" aria-hidden="true">Show</a>
+    </div>
+    <div class="expander-details__summary__hide" aria-hidden="true">
+      <span class="expander-details__summary__icon expander-details__summary__icon__close" aria-hidden="true"></span>
+      <a class="link--underline" id="hide-non-uk-citizens-check-your-qualifications" aria-hidden="true">Hide</a>
+    </div>
+  </summary>
 
+  <div class="expander-details__text">
+    <p>
+      </p>
+<p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees/non-uk-teachers/non-uk-qualifications">have refugee status you'll ususally be eligible for financial support to help you train</a>.</p>
+<p>If you're in <a href="https://www.gov.uk/claim-asylum\"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
+<p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+    
+  </div>
+</details>
 
 ## Salaried teacher training courses
 
