@@ -66,7 +66,7 @@ keywords:
 
 Citizens of every country in the world can apply to train to teach in England. 
 
-You'll need [qualified teacher status (QTS)](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/what-is-qts) to teach in most schools in England.
+You'll need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach in most schools in England.
 
 If you do not want to come to England to study, you can [gain international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status) where you live or work, with no need to visit the UK. If you get iQTS, you automatically get QTS.  
 
