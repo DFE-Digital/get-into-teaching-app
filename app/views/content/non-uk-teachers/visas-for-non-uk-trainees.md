@@ -13,6 +13,7 @@ navigation_title: Apply for your visa to train to teach
 navigation_description: Learn more about applying for a Student or Skilled Worker visa to train to teach in England.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
+
 keywords:
   - International
   - Teaching
@@ -40,6 +41,15 @@ keywords:
 If you’re applying for teacher training as a non-UK citizen, you'll need a [visa or immigration status allowing you to study or work in England](#check-your-status). 
 
 Most candidates who don't already have a visa or immigration status allowing them to study or work in England will need to apply for a Student or Skilled Worker visa.
+<section class="inset-text purple">
+    <h2 role="text">
+      <span class="header">Ukraine citizens:</span>
+      <span class="title">help with visas</span>
+</h2>  <p>If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:</p>
+<p><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrinian nationals in the UK</a></p>
+<p><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrinian nationals outside of the UK</a></p>
+
+</section>
 
 ### Student visa 
 
@@ -48,6 +58,37 @@ Most teacher training courses in England are fee-paying. You'll need a Student v
 ### Skilled Worker visa 
 
 Some teacher training courses in England are salaried – this means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). Currently, places on these courses are very limited. You'll need a Skilled Worker visa if you train on a salaried training course. Your Skilled Worker visa must be sponsored by the school employing you.
+
+<details id="details-non-uk-citizens-check-your-qualifications" class="expander-details expander-details__background-purple">
+  <summary class="expander-details__summary">
+    <div role="text">
+        <span class="expander-details__summary__header">
+          Refugees and asylum seekers:
+        </span>
+      <span class="expander-details__summary__title">
+        funding support
+      </span>
+</div>
+    <div class="expander-details__summary__show" aria-hidden="true">
+      <span class="expander-details__summary__icon expander-details__summary__icon__open" aria-hidden="true"></span>
+      <a class="link--underline" id="show-non-uk-citizens-check-your-qualifications" aria-hidden="true">Show</a>
+    </div>
+    <div class="expander-details__summary__hide" aria-hidden="true">
+      <span class="expander-details__summary__icon expander-details__summary__icon__close" aria-hidden="true"></span>
+      <a class="link--underline" id="hide-non-uk-citizens-check-your-qualifications" aria-hidden="true">Hide</a>
+    </div>
+  </summary>
+
+  <div class="expander-details__text">
+    <p>
+      </p>
+<p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees/non-uk-teachers/non-uk-qualifications">have refugee status you'll ususally be eligible for financial support to help you train</a>.</p>
+<p>If you're in <a href="https://www.gov.uk/claim-asylum\"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
+<p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+    
+  </div>
+</details>
+
 
 ### What you need to do to apply for your visa 
 
