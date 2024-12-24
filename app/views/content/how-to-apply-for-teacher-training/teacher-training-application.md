@@ -50,7 +50,8 @@ expander:
       </p>
 
   ukraine-inset:
-    title: Ukraine citizens moving to the UK
+    title: Ukraine citizens:
+    heading: moving to the UK
     text: |- 
       <p>
       Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
