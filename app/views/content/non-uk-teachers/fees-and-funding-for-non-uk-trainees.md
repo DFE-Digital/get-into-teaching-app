@@ -70,7 +70,7 @@ Some support may be available if:
 
 * you have some type of settled status in the UK – for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
 
-* you're [from the Ukraine or Afghanistan and are on certain visas](/non-uk-teachers/visas-for-non-uk-trainees)
+* you're [from Ukraine or Afghanistan and are on certain visas](/non-uk-teachers/visas-for-non-uk-trainees)
 
 * you're an Irish citizen
 
