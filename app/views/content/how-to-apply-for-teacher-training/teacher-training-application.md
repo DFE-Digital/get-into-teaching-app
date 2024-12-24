@@ -48,9 +48,10 @@ expander:
       <p>
       If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>. 
       </p>
-
+inset:
   ukraine-inset:
-    title: Ukraine citizens moving to the UK
+    title: "Ukraine citizens"
+    heading: "moving to the UK"
     text: |- 
       <p>
       Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
