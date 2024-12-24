@@ -1,5 +1,6 @@
 ---
 title: "Apply for your visa to teach in England"
+subcategory: If you're already a teacher
 description: |-
   Learn more about types of visa non-UK citizens will need to work in England, and how to apply.
 related_content:
@@ -7,6 +8,9 @@ related_content:
     Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
+navigation: 20.60
+navigation_title: Apply for your visa to teach
+navigation_description: Find out more about what visa you'll need to teach in England and how to apply.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 keywords:
