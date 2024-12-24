@@ -152,10 +152,12 @@ Before you apply for your visa, you must have a confirmed offer of a training pl
     <h2 role="text">
       <span class="header">Ukraine citizens:</span>
       <span class="title">help with visas</span>
-</h2>  <p>If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:</p>
-<p><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrinian nationals in the UK</a></p>
-<p><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrinian nationals outside of the UK</a></p>
-
+    </h2>  
+    <p>If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:</p>
+    <ul>
+        <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
+        <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
+    </ul>
 </section>
 
 ### Complete background checks
