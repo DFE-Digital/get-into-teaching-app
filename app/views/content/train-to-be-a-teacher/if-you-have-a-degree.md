@@ -23,7 +23,8 @@ inset_text:
     text: If you’re not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
     color: purple
   ukraine-inset:
-    header: "Ukraine citizens moving to the UK:"
+    header: "Ukraine citizens:"
+    title: "moving to the UK"
     text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.
     color: purple
 keywords:
