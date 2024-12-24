@@ -57,7 +57,19 @@ keywords:
 
 If you’re applying for teaching jobs in England as a non-UK citizen, you will need a [visa or immigration status allowing you to work in England](#check-your-status).
 
-Most non-UK citizens who don't already have the correct visa or immigration status will need to apply for a Skilled Worker visa to teach in England. 
+Most non-UK citizens who do not already have the correct visa or immigration status will need to apply for a Skilled Worker visa to teach in England. 
+
+<section class="inset-text purple">
+    <h2 role="text">
+      <span class="header">Ukraine citizens:</span>
+      <span class="title">help with visas</span>
+    </h2>  
+    <p>If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:</p>
+    <ul>
+        <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
+        <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
+    </ul>
+</section>
 
 ### To apply for your visa, follow these steps
 

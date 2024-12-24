@@ -17,6 +17,7 @@ inset_text:
   new-international-funding:
     text: |-
       If you're a non-UK teacher interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth up to $nonuk_internationalrelocationpayment_value$</a>.
+
 keywords:
   - International
   - Overseas
@@ -45,6 +46,13 @@ To find out about teaching in other areas of the UK, visit the:
 Not qualified as a teacher yet? Find out [how to train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). 
 
 If you do not want to come to England to train, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status), which leads to the automatic award of English qualified teacher status. 
+
+<section class="inset-text purple">
+    <h2 role="text">
+      <span class="header">Ukraine citizens:</span>
+      <span class="title">moving to the UK</span>
+</h2>  <p>Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
+</section>
 
 ## What you'll need to teach in England
 
@@ -163,6 +171,19 @@ You can prepare for these checks by getting a letter from the organisation which
 To teach in England, you will need a visa or immigration status allowing you to work in the UK.
 
 Learn more about [applying for the right visa for your teaching job](/non-uk-teachers/visas-for-non-uk-teachers). 
+
+<section class="inset-text purple">
+    <h2 role="text">
+      <span class="header">Ukraine citizens:</span>
+      <span class="title">help with visas</span>
+    </h2>  
+    <p>If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:</p>
+    <ul>
+        <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
+        <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
+    </ul>
+</section>
+
 
 ## Life as a teacher in England
 
