@@ -32,6 +32,8 @@ Rails.application.routes.draw do
     get "/non-uk-teachers/return-to-england-after-teaching-overseas",                         to: redirect(teaching_vacancies)
     get "/international-returners",                                                           to: redirect(teaching_vacancies)
     get "/explore-my-options/return-to-teaching/return-to-teaching-in-england-from-overseas", to: redirect(teaching_vacancies)
+    get "/blog/returning-to-teaching-with-international-experience",                          to: redirect(teaching_vacancies)
+    get "/blog/tag/non-uk-teachers",                                                          to: redirect(teaching_vacancies)
   end
 
   if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production? || Rails.env.pagespeed?
