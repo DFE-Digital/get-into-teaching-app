@@ -46,8 +46,8 @@ Most candidates who do not already have a visa or immigration status allowing th
       <span class="header">Ukraine citizens:</span>
       <span class="title">help with visas</span>
 </h2>  <p>If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:</p>
-<p><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrinian nationals in the UK</a></p>
-<p><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrinian nationals outside of the UK</a></p>
+<p><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></p>
+<p><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></p>
 
 </section>
 
@@ -83,7 +83,7 @@ Some teacher training courses in England are salaried – this means you [work a
     <p>
       </p>
 <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you'll usually be eligible for financial support to help you train</a>.</p>
-<p>If you're in <a href="https://www.gov.uk/claim-asylum\"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
+<p>If you're in <a href="https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
 <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
     
   </div>
