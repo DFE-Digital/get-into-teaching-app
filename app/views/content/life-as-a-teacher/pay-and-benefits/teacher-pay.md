@@ -128,7 +128,7 @@ You need qualified teacher status (QTS) to work in maintained primary, secondary
 
 If you do not have QTS (for example, if you just have a PGCE), you can work in some schools as an unqualified teacher.
 
-This means you will be on a lower pay range and will not be entitled to the same benefits as a teacher with QTS, for example unqualified teachers are not entitled to TLR payments.
+This means you will be on a lower pay range and will not be entitled to the same benefits as a teacher with QTS. For example unqualified teachers are not entitled to TLR payments.
 
 If you're already working as an unqualified teacher and have the right experience, you could be eligible for the [assessment only route to qualified teacher status (QTS)](/train-to-be-a-teacher/assessment-only-route-to-qts).
 
