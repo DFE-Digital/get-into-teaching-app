@@ -56,7 +56,6 @@ inset:
       <p>
       Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
 
-
 quote:
   giorgio:
     text: "My best advice for a successful application is to be reflective in your personal statement and interview, think about why you want to teach, about the sort of classroom you envisage yourself in (and why) and talk about it!"
