@@ -12,6 +12,14 @@ navigation_title: Fees and financial support for non-UK trainee teachers
 navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
+expander:
+  international-content:
+    header: Refugees and asylum seekers
+    title: funding support
+    text:
+      "If you <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees/non-uk-teachers/non-uk-qualifications\">have refugee status you'll ususally be eligible for financial support to help you train</a>.
+      <p>If you're in <a href=\"https://www.gov.uk/claim-asylum\"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
+      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>"
 keywords:
   - International
   - Overseas
@@ -61,7 +69,6 @@ The information on this page is for:
 * non-UK citizens living outside the UK
 * Irish citizens
 
-
 Most non-UK citizens will not be eligible for financial support from the UK government to help with teacher training.
 
 Some support may be available if:
@@ -98,35 +105,8 @@ Irish citizens or non-UK citizens who have settled status may be eligible for:
 * [bursaries and scholarships in the subjects offered to UK citizens](/funding-and-support/scholarships-and-bursaries)
 
 [How to apply for student loans, bursaries and scholarships](#how-to-apply-for-student-loans-bursaries-and-scholarships).
-<details id="details-non-uk-citizens-check-your-qualifications" class="expander-details expander-details__background-purple">
-  <summary class="expander-details__summary">
-    <div role="text">
-        <span class="expander-details__summary__header">
-          Refugees and asylum seekers:
-        </span>
-      <span class="expander-details__summary__title">
-        funding support
-      </span>
-</div>
-    <div class="expander-details__summary__show" aria-hidden="true">
-      <span class="expander-details__summary__icon expander-details__summary__icon__open" aria-hidden="true"></span>
-      <a class="link--underline" id="show-non-uk-citizens-check-your-qualifications" aria-hidden="true">Show</a>
-    </div>
-    <div class="expander-details__summary__hide" aria-hidden="true">
-      <span class="expander-details__summary__icon expander-details__summary__icon__close" aria-hidden="true"></span>
-      <a class="link--underline" id="hide-non-uk-citizens-check-your-qualifications" aria-hidden="true">Hide</a>
-    </div>
-  </summary>
 
-  <div class="expander-details__text">
-    <p>
-      </p>
-<p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees/non-uk-teachers/non-uk-qualifications">have refugee status you'll ususally be eligible for financial support to help you train</a>.</p>
-<p>If you're in <a href="https://www.gov.uk/claim-asylum\"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
-<p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
-    
-  </div>
-</details>
+$international-content$
 
 ## Salaried teacher training courses
 
