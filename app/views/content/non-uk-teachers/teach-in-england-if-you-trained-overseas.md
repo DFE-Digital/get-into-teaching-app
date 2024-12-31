@@ -50,8 +50,8 @@ If you do not want to come to England to train, you should consider [internation
 <section class="inset-text purple">
     <h2 role="text">
       <span class="header">Ukraine citizens:</span>
-      <span class="title">moving to the UK</span>
-</h2>  <p>Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
+      <span class="title">moving to the UK</span></h2>  
+      <p>Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
 </section>
 
 ## What you'll need to teach in England
