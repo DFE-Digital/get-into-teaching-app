@@ -74,7 +74,7 @@ A typical teacher could earn at least $salaries_fiveyears_max$ (or more in Londo
 
 You may also receive additional payments on top of your regular salary for taking on extra responsibilities.
 
-You could get a one-off payment for a specific project, for example, creating a timetable, or for taking on an extra responsibility attached to your job role, for example, being the head of department.
+You could get a one-off payment for a specific project, for example, creating a timetable, or for taking on extra responsibility attached to your job role, for example, being the head of department.
 
 These additional payments are called teaching and learning responsibility (TLR) payments.
 
