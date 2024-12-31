@@ -23,7 +23,7 @@ inset_text:
     text: If you’re not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
     color: purple
   ukraine-inset:
-    header: "Ukraine citizens:"
+    header: "Ukraine citizens"
     title: "moving to the UK"
     text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.
     color: purple
@@ -40,7 +40,7 @@ expander:
     title: fees and funding
     text: "Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance loans. If you train to teach languages or physics, you may be eligible for a bursary or scholarship.
     <p>If you have refugee status you can apply for salaried or fee-paying training courses. You will usually be eligible for financial support to help you train to teach.</p>
-    <p>You may be eligible for financial support to train to teach if <a href=\"/non-uk-teachers/visas-for-non-uk-trainees\"> you're from Ukraine or Afghanistan and on certain visas</a>.</p>
+    <p>You may be eligible for financial support to train to teach if <a href="/non-uk-teachers/visas-for-non-uk-trainees\">you're from Ukraine or Afghanistan and on certain visas</a>.</p>
     <p>If you're in <a href=\"https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
     <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>"
     link_title: Learn more about fees and financial support for non-UK trainee teachers.
