@@ -48,8 +48,8 @@ expander:
       <p>
       If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>. 
       </p>
-expander:
-  ukraine-expander:
+inset:
+  ukraine-inset:
     title: "Ukraine citizens"
     header: "moving to the UK"
     text: |- 
@@ -94,7 +94,7 @@ It’s wise to apply as soon as you’re ready as:
 
 <p> <a href="/how-to-apply-for-teacher-training/when-to-apply-for-teacher-training">Find out more about when to apply for teacher training courses</a>.</p>
 
-$ukraine-expander$
+$ukraine-inset$
 
 ## What do I need to include in my teacher training application? 
 
