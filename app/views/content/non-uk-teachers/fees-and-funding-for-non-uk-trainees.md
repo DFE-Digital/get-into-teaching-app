@@ -164,7 +164,7 @@ To start your application for student loans, you need to have chosen your teache
 
 * tuition fee loans
 * maintenance loans to help with living costs
-* extra help if you have a disability, children or an adult dependent
+* extra help if you have a disability, children or an adult dependant
 
 If you're eligible for student loans, you'll also usually be eligible:
 
