@@ -46,65 +46,6 @@ describe StructuredDataHelper, type: "helper" do
     end
   end
 
-  describe ".blog_structured_data" do
-    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
-
-    let(:frontmatter) do
-      {
-        title: "A title",
-        images: {
-          an_image: {
-            "path" => image_path,
-          },
-        },
-        date: "2021-01-25",
-        keywords: %w[one two],
-        author: "Ronald McDonald",
-      }
-    end
-    let(:page) { ::Pages::Page.new("/blog/post", frontmatter) }
-    let(:html) { blog_structured_data(page) }
-    let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
-
-    before { enable_structured_data(:blog_posting) }
-
-    it "returns nil when disabled by config" do
-      disable_structured_data(:blog_posting)
-      expect(script_tag).to be_nil
-    end
-
-    it "includes blog post information" do
-      expect(data).to include({
-        "@type": "BlogPosting",
-        headline: frontmatter[:title],
-        image: frontmatter[:images].values.map { |h| asset_pack_url(h["path"]) },
-        datePublished: frontmatter[:date],
-        keywords: frontmatter[:keywords],
-        author: [
-          {
-            "@type": "Person",
-            name: frontmatter[:author],
-          },
-        ],
-      })
-    end
-
-    context "when author is not present" do
-      before { frontmatter[:author] = nil }
-
-      it "defaults to the Get Into Teaching organization" do
-        expect(data).to include({
-          author: [
-            {
-              "@type": "Organization",
-              name: "Get Into Teaching",
-            },
-          ],
-        })
-      end
-    end
-  end
-
   describe ".government_organization_structured_data" do
     subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 

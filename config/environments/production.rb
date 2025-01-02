@@ -133,7 +133,6 @@ Rails.application.configure do
     level: Rails.application.config.log_level,
     formatter: config.rails_semantic_logger.format
 
-  config.x.structured_data.blog_posting = false
   config.x.structured_data.web_site = true
   config.x.structured_data.organization = false
   config.x.structured_data.government_organization = true
