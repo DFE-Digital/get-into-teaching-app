@@ -21,6 +21,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Accessibility](#accessibility)
     * [iframe](#iframe)
     * [Inset text](#inset-text)
+     * [creating a partial](#partial)
     * [Details expander for non-UK content](#details-expander-for-non-uk-content)
     * [YouTube Video](#youtube-video)
     * [Hero](#hero)
@@ -334,6 +335,31 @@ If you need to insert an expander into an erb file:
     link_url: "/non-uk-teachers/non-uk-qualifications",
   ) %>
 ```
+### creating a partial 
+
+If the content you are creating will be used elsewhere on the site in the exact same format, it may be a good idea to create a partial. This is a snippet of code that you will be able to call in one line. This saves you have having to write the same things again and again but can also be good for maintenance of the site because you will only have to change anything in one central place.
+
+To create a partial go to the /app/views/content/shared then either select an appropriate file or create your own category. Then create a file. In the file place the HTML code that you would like to replicate on multiple pages. 
+
+```yaml
+<div class="check-qualifcations">
+  <h3>Check your qualifications</h3>
+  <p>To train to teach <%= @front_matter["subject"] %> in England, you'll need:</p>
+  <ul>
+    <li>GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)</li>
+    <li>a bachelor's degree in any subject</li>
+  </ul>
+  <p>Having relevant A levels can show your subject knowledge, if you do not have a degree in <%= @front_matter["subject"] %>.</p>
+</div>
+
+```
+Then when you want to call your code in another file all you have to do is use the line render  <%= render 'content/shared/qualifications-training/check_qualifcations' %> or changing the path for the one you want to link to. 
+
+```yaml
+ <%= render 'content/shared/qualifications-training/check_qualifcations' %> 
+```
+
+
 
 
 ### Adviser (CTA) component
