@@ -51,8 +51,6 @@ The postgraduate salaried courses are:
 * postgraduate teaching apprenticeships (PGTA)
 * Teach First teacher training
 
-If you do not already have a degree, you may be eligible for a [teacher degree apprenticeship (TDA)](/train-to-be-a-teacher/teacher-degree-apprenticeships). A TDA is an undergraduate teacher training course where you’ll work in a school and earn a salary while getting a degree and QTS.
-
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
 These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. 
@@ -68,6 +66,10 @@ You can also [find out more about the qualifications you need to train to teach]
 Or talk to a [teacher training adviser](/teacher-training-advisers) who can help you understand which courses you could be eligible for. 
 
 $salaried-teacher-training$
+
+### If you do not have a degree
+
+If you do not already have a degree, you may be eligible for a [teacher degree apprenticeship (TDA)](/train-to-be-a-teacher/teacher-degree-apprenticeships). A TDA is an undergraduate teacher training course where you’ll work in a school and earn a salary while getting a degree and QTS.
 
 ## How much will I be paid on a salaried course? 
 
