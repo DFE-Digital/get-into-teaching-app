@@ -22,12 +22,12 @@ expander:
   ukraine-moving:
     header: Ukraine citizens
     title: moving to the UK
-    text: Check what you need to do before you travel and after you arrive if you're moving to the UK from Ukraine    
-    link_title: Find out more about how to apply for a visa to train to teach in England
-    link_url: /non-uk-teachers/visas-for-non-uk-trainees
+    text: |- 
+      <p>
+      Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
   ukraine-visas:
     header: Ukraine citizens
-    title: visa support
+    title: help with visas
     text: |-
       <p>
       If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:
