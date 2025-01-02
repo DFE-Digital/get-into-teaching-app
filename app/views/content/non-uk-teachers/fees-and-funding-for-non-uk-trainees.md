@@ -13,13 +13,14 @@ navigation_description: Learn more about teacher training fees in England and fi
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 expander:
-  international-content:
-    title: funding support
-    text: If you <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">have refugee status you'll usually be eligible for financial support to help you train</a>.
-      <p>If you're in <a href=\"https://www.gov.uk/claim-asylum\"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
-      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+  refugees-asylum-seekers:
     header: Refugees and asylum seekers
-    expanded: true
+    title: funding support
+    text: |- 
+      <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">have refugee status you'll usually be eligible for financial support to help you train</a>.
+      <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
+      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+
     
 keywords:
   - International
@@ -107,7 +108,7 @@ Irish citizens or non-UK citizens who have settled status may be eligible for:
 
 [How to apply for student loans, bursaries and scholarships](#how-to-apply-for-student-loans-bursaries-and-scholarships).
 
-$international-content$
+$refugees-asylum-seekers$
 
 ## Salaried teacher training courses
 
