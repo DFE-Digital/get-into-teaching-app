@@ -45,7 +45,7 @@ This means you'll be paid a salary while you train to get [qualified teacher sta
 
 Some salaried teacher training courses may also come with fees. Check with individual providers for more information. 
 
-The salaried courses are:
+The postgraduate salaried courses are:
 
 * School Direct salaried
 * postgraduate teaching apprenticeships (PGTA)
@@ -57,7 +57,7 @@ All salaried courses are broadly the same, but the course length and qualificati
 
 These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. 
 
-## Am I eligible for a salaried teacher training course? 
+## Am I eligible for a postgraduate salaried teacher training course? 
 
 For some salaried courses, teacher training providers may want you to have significant teaching or school experience, for example, if you’re already working as an unqualified teacher or teaching assistant.  
 
@@ -85,7 +85,7 @@ Salaried teacher training is usually similar to non-salaried teacher training. Y
 
 $nathan$
 
-You will not perform more than 90% of a full-time teacher’s duties on most salaried teacher training courses. If you're on a postgraduate teaching apprenticeship, you'll perform no more than 80% of a full-time teacher's duties. 
+You will not perform more than 90% of a full-time teacher’s duties on most salaried teacher training courses. If you're doing a postgraduate teaching apprenticeship, you'll perform no more than 80% of a full-time teacher's duties. 
 
 Full-time salaried teacher training will usually last: 
 
