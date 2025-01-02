@@ -25,7 +25,7 @@ expander:
     text: Check what you need to do before you travel and after you arrive if you're moving to the UK from Ukraine    
     link_title: Find out more about how to apply for a visa to train to teach in England
     link_url: /non-uk-teachers/visas-for-non-uk-trainees
-ukraine-visas:
+  ukraine-visas:
     header: Ukraine citizens
     title: visa support
     text: |-
