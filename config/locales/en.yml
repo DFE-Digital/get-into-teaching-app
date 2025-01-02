@@ -788,7 +788,7 @@ en:
         address_postcode: What is your UK postcode? (optional)
         degree_status_id: Do you have a degree?
         consideration_journey_stage_id: How close are you to applying for teacher training?
-        preferred_teaching_subject_id: What do you want to teach?
+        preferred_teaching_subject_id: Select the subject you're most interested in teaching
 
       callbacks_steps_personal_details:
         first_name: First name
