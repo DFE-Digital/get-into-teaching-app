@@ -9,6 +9,6 @@ keywords:
   - why become a teacher
   - why should I teach
 content: 
-  - "content/life-as-a-teacher/pay-and-benefits/why-teach/header" 
-  - "content/life-as-a-teacher/pay-and-benefits/why-teach/article"
+  - "content/life-as-a-teacher/teaching-as-a-career/why-teach/header" 
+  - "content/life-as-a-teacher/teaching-as-a-career/why-teach/article"
 ---
