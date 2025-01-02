@@ -59,7 +59,7 @@ These courses are in high demand and very competitive, so it’s important to ap
 
 For some salaried courses, teacher training providers may want you to have significant teaching or school experience, for example, if you’re already working as an unqualified teacher or teaching assistant.  
 
-Some providers also want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are. 
+Some providers will also want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are. 
 
 You can also [find out more about the qualifications you need to train to teach](/train-to-be-a-teacher/qualifications-you-need-to-teach). 
 
