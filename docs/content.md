@@ -21,7 +21,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Accessibility](#accessibility)
     * [iframe](#iframe)
     * [Inset text](#inset-text)
-     * [creating a partial](#partial)
+     * [Creating a partial](#creating-a-partial)
     * [Details expander for non-UK content](#details-expander-for-non-uk-content)
     * [YouTube Video](#youtube-video)
     * [Hero](#hero)
@@ -335,11 +335,11 @@ If you need to insert an expander into an erb file:
     link_url: "/non-uk-teachers/non-uk-qualifications",
   ) %>
 ```
-### creating a partial 
+### Creating a partial 
 
-If the content you are creating will be used elsewhere on the site in the exact same format, it may be a good idea to create a partial. This is a snippet of code that you will be able to call in one line. This saves you have having to write the same things again and again but can also be good for maintenance of the site because you will only have to change anything in one central place.
+If the content you are creating will be used elsewhere on the site in the exact same format, it may be a good idea to create a partial. This is a snippet of code that you will be able to render in one line. This saves you have having to write the same things again and again. It also means maintenance of the site is easier as any changes you make can be done in one central place rather having to keep track of what information is on what pages.
 
-To create a partial go to the /app/views/content/shared then either select an appropriate file or create your own category. Then create a file. In the file place the HTML code that you would like to replicate on multiple pages. 
+To create a partial go to the /app/views/content/shared folder then either select an appropriate file or create your own folder. Then create a file. In the file place the HTML code that you would like to replicate on multiple pages. 
 
 ```yaml
 <div class="check-qualifcations">
@@ -353,7 +353,7 @@ To create a partial go to the /app/views/content/shared then either select an ap
 </div>
 
 ```
-Then when you want to call your code in another file all you have to do is use the line render  <%= render 'content/shared/qualifications-training/check_qualifcations' %> or changing the path for the one you want to link to. 
+Then, when you are working in another HTML file and want to render your code all you have to do is reference the code you created as follows:
 
 ```yaml
  <%= render 'content/shared/qualifications-training/check_qualifcations' %> 
