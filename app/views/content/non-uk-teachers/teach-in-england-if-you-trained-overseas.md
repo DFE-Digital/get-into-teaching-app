@@ -18,6 +18,27 @@ inset_text:
     text: |-
       If you're a non-UK teacher interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth up to $nonuk_internationalrelocationpayment_value$</a>.
 
+expander:
+  ukraine-moving:
+    header: Ukraine citizens
+    title: moving to the UK
+    text: Check what you need to do before you travel and after you arrive if you're moving to the UK from Ukraine    
+    link_title: Find out more about how to apply for a visa to train to teach in England
+    link_url: /non-uk-teachers/visas-for-non-uk-trainees
+ukraine-visas:
+    header: Ukraine citizens
+    title: visa support
+    text: |-
+      <p>
+      If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:
+      </p>
+        <ul>
+          <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
+          <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
+        </ul>
+
+
+    
 keywords:
   - International
   - Overseas
@@ -47,12 +68,7 @@ Not qualified as a teacher yet? Find out [how to train to teach in England as a 
 
 If you do not want to come to England to train, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status), which leads to the automatic award of English qualified teacher status. 
 
-<section class="inset-text purple">
-    <h2 role="text">
-      <span class="header">Ukraine citizens:</span>
-      <span class="title">moving to the UK</span></h2>  
-      <p>Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
-</section>
+$ukraine-moving$
 
 ## What you'll need to teach in England
 
@@ -172,17 +188,7 @@ To teach in England, you will need a visa or immigration status allowing you to 
 
 Learn more about [applying for the right visa for your teaching job](/non-uk-teachers/visas-for-non-uk-teachers). 
 
-<section class="inset-text purple">
-    <h2 role="text">
-      <span class="header">Ukraine citizens:</span>
-      <span class="title">help with visas</span>
-    </h2>  
-    <p>If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:</p>
-    <ul>
-        <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
-        <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
-    </ul>
-</section>
+$ukraine-visas$
 
 
 ## Life as a teacher in England
