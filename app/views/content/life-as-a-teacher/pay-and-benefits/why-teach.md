@@ -1,7 +1,7 @@
 ---
 title: Why become a teacher
 description: |- 
-  Explore the many reasons why you should become a teacher in England. From making a difference, exploring your creativity, holidays, pay, and much more.
+  Explore the many reasons why you should become a teacher in England. From making a difference to exploring your creativity, holidays, pay, and much more.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/0036.jpg"
