@@ -12,8 +12,9 @@ related_content:
     Improve your subject knowledge : "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-degree
+cta_adviser:
+  adviser:
+    text: Talk to an adviser with years of teaching experience about your different training and funding options. Chat by phone, text or email, as little or as often as you need.
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one.
@@ -38,7 +39,7 @@ expander:
     link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees
 quote:
   olivia:
-    text: "You'll learn a lot about yourself during your teacher training year, and it 's the most rewarding journey to be on."
+    text: "You'll learn a lot about yourself during your teacher training year, and it's the most rewarding journey to be on."
     name: "Olivia, drama teacher"
     classes: quote--indent
 ---
@@ -112,3 +113,5 @@ $fees-and-funding$
 There are some differences in postgraduate teacher training courses. 
 
 [Find out how to decide on the best course for you](/train-to-be-a-teacher/how-to-choose-your-teacher-training-course).
+
+$adviser$
