@@ -30,7 +30,7 @@ expander:
     header: Refugees and asylum seekers
     title: funding support
     text: |- 
-      <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">have refugee status you'll usually be eligible for financial support to help you train</a>.
+      <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you'll usually be eligible for financial support to help you train</a>.
       <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
       <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
       
@@ -139,6 +139,7 @@ You will not need to be sponsored for a Student or Skilled Worker visa if you ar
 * [Homes for Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 
 * [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
+  
 * [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa) 
 
 * [Family visa](https://www.gov.uk/uk-family-visa) 
