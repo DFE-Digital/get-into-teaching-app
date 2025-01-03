@@ -16,6 +16,26 @@ navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
+expander:
+  refugees-asylum-seekers:
+    header: Refugees and asylum seekers
+    title: funding support
+    text: |- 
+      <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you'll usually be eligible for financial support to help you train</a>.
+      <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
+      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+  ukraine-visas:
+    header: Ukraine citizens
+    title: help with visas
+    text: |-
+      <p>
+      If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:
+      </p>
+        <ul>
+          <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
+          <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
+        </ul>
+
 keywords:
   - International
   - Overseas
@@ -125,6 +145,8 @@ If you're planning on training to teach languages or physics, you could be eligi
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
+$refugees-asylum-seekers$
+
 ## Find and apply for teacher training courses
 
 Your teacher training course must lead to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). 
@@ -189,6 +211,8 @@ If you need a visa to train to teach in England, you must have a confirmed offer
 If you get offered a place on a course, your provider will arrange a background and criminal records check. This is known as a Disclosure and Barring Service (DBS) check. You must pass these checks in order to teach students under 18. To allow enough time for these checks, we recommend applying to your training provider early. You can apply for teacher training from October, for courses starting the following year in September or January.
 
 Due to rules about immigration, not all providers can accept international applicants – we suggest you contact them before you apply to check.
+
+$ukraine-visas$
 
 ### Already living in the UK?
 
