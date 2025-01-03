@@ -10,7 +10,7 @@ related_content:
 promo_content:
 navigation: 20.60
 navigation_title: Apply for your visa to teach
-navigation_description: Find out more about what visa you'll need to teach in England and how to apply.
+navigation_description: Find out more about which visa you'll need to teach in England and how to apply.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 expander:
