@@ -17,16 +17,7 @@ promo_content:
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one.
-inset_text:
-  international-content:
-    header: "Non-UK citizens:"
-    text: If you’re not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
-    color: purple
-  ukraine-inset:
-    header: "Ukraine citizens"
-    title: "moving to the UK"
-    text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.
-    color: purple
+
 keywords:
   - becoming a teacher
   - teacher training
@@ -45,6 +36,17 @@ expander:
     <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>"
     link_title: Learn more about fees and financial support for non-UK trainee teachers.
     link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees
+
+
+  international-content:
+    header: Non-UK citizens
+    title: train to teach in England
+    text: If you’re not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
+   
+  ukraine-moving:
+    header: Ukraine citizens
+    title: moving to the UK
+    text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.
 quote:
   olivia:
     text: "You'll learn a lot about yourself during your teacher training year, and it 's the most rewarding journey to be on."
@@ -95,7 +97,7 @@ Because all teacher training must involve placements in at least 2 schools, your
 
 Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get an idea.
 
-$ukraine-inset$
+$ukraine-moving$
 
 ## How much does teacher training cost?
 
