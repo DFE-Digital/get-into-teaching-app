@@ -104,36 +104,6 @@ A [salaried teacher training course](/funding-and-support/salaried-teacher-train
 
 Salaried teacher training courses are limited in number and very competitive. You’ll also need a visa or immigration status allowing you to work in the UK.  
 
-<details id="details-non-uk-citizens-check-your-qualifications" class="expander-details expander-details__background-purple">
-  <summary class="expander-details__summary">
-    <div role="text">
-        <span class="expander-details__summary__header">
-          Refugees and asylum seekers:
-        </span>
-      <span class="expander-details__summary__title">
-        funding support
-      </span>
-</div>
-    <div class="expander-details__summary__show" aria-hidden="true">
-      <span class="expander-details__summary__icon expander-details__summary__icon__open" aria-hidden="true"></span>
-      <a class="link--underline" id="show-non-uk-citizens-check-your-qualifications" aria-hidden="true">Show</a>
-    </div>
-    <div class="expander-details__summary__hide" aria-hidden="true">
-      <span class="expander-details__summary__icon expander-details__summary__icon__close" aria-hidden="true"></span>
-      <a class="link--underline" id="hide-non-uk-citizens-check-your-qualifications" aria-hidden="true">Hide</a>
-    </div>
-  </summary>
-
-  <div class="expander-details__text">
-    <p>
-      </p>
-<p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you'll ususally be eligible for financial support to help you train</a>.</p>
-<p>If you're in <a href="https://www.gov.uk/claim-asylum\"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
-<p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
-
-  </div>
-</details>
-
 ## Find and apply for teacher training courses
 
 You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to qualified teacher status (QTS).  
@@ -148,17 +118,6 @@ If you do not have the right to study or work in the UK, you’ll need a visa. Y
 
 Before you apply for your visa, you must have a confirmed offer of a training place on a course offering Student or Skilled Worker visa sponsorship. Find out more about [applying for a visa to train to teach in England](/non-uk-teachers/visas-for-non-uk-trainees).  
 
-<section class="inset-text purple">
-    <h2 role="text">
-      <span class="header">Ukraine citizens:</span>
-      <span class="title">help with visas</span>
-    </h2>  
-    <p>If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:</p>
-    <ul>
-        <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
-        <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
-    </ul>
-</section>
 
 ### Complete background checks
 
