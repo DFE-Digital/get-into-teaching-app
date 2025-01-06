@@ -16,7 +16,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Adding a Document or Image](#adding-a-document-or-image)
     * [Calls to Action](#calls-to-action)
     * [Adviser (CTA) component](#adviser-cta-component)
-    * [Routes (CTA) component](#adviser-cta-component)
+    * [Routes (CTA) component](#routes-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
