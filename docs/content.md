@@ -16,6 +16,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Adding a Document or Image](#adding-a-document-or-image)
     * [Calls to Action](#calls-to-action)
     * [Adviser (CTA) component](#adviser-cta-component)
+    * [Routes (CTA) component](#routes-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
@@ -372,6 +373,49 @@ Alternatively, if you need to insert an adviser component in an erb file, you ca
   title: "Optional title",
   text: "Optional text",
   image: "/optional/path/to/image",
+  link_text: "Optional link text",
+  link_target: "/optional/path",
+  classes: ["class1", "class2", "class3"],
+  border: true
+)%>
+```
+
+### Routes (CTA) component
+
+You can use the Routes (Call to Action) component to create a call to action to invite users to find their route into teaching. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
+
+* title
+* text
+* image
+* link_text
+* link_target
+* classes
+* border
+
+```yaml
+---
+cta_routes:
+  routes:
+    title: "Optional title"
+    text: "Optional text"
+    image: "static/images/routes.png"
+    link_text: "Optional link text"
+    link_target: "/optional/path"
+    classes: ["class1", "class2", "class3"]
+    border: true
+---
+
+# My page
+
+$adviser$
+```
+Alternatively, if you need to insert an routes component in an erb file, you can call it like this:
+
+```yaml
+<%= render CallsToAction::RoutesComponent.new(
+  title: "Optional title",
+  text: "Optional text",
+  image: "static/images/routes.png",
   link_text: "Optional link text",
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
