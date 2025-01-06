@@ -344,6 +344,54 @@ To create a partial go to the /app/views/content/shared folder then either selec
 ```yaml
 <div class="check-qualifcations">
   <h3>Check your qualifications</h3>
+  <p>To train to teach in England, you'll need:</p>
+  <ul>
+    <li>GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)</li>
+    <li>a bachelor's degree in any subject</li>
+  </ul>
+  <p>Having relevant A levels can show your subject knowledge, if you do not have a degree in your chosen subject.</p>
+</div>
+
+```
+
+Then, when you are working in another HTML file and want to render your code all you have to do is reference the code you created as follows:
+
+```yaml
+ <%= render 'content/shared/qualifications-training/check_qualifcations' %> 
+```
+If you need a specific change across each version of your code such as the subject, it is possible to create a variable. All you have to do is reference something in the frontmatter. In the following frontmatter the subject is chemistry. 
+
+```yaml
+title: Become a chemistry teacher
+subject: chemistry
+title_paragraph: |-
+  <p>
+  As a chemistry teacher, you'll spark curiosity and challenge young minds to explore the fundamental principles that govern our world. You'll inspire students to question, experiment, and discover, fuelling their passion for science.</p>
+  <p>
+  Tax-free bursaries of $bursaries_postgraduate_chemistry$ or scholarships of $scholarships_chemistry$ are available for eligible trainee chemistry teachers.</p>
+description: |-
+    Find out how to become a chemistry teacher, including what you'll teach and what funding is available to help you train.
+layout: "layouts/minimal"
+colour: pastel yellow-yellow
+image: "static/images/content/hero-images/chemistry.jpg"
+keywords:
+  - chemistry
+  - teaching chemistry
+  - teacher training
+
+content:
+  - "content/shared/subject-pages/header"
+  - "content/life-as-a-teacher/explore-subjects/chemistry/article"
+```
+
+To create a variable that references the frontmatter simply copy the format below. This will look at the frontmatter, then whatever you reference in the square brackets. In this case, it will look for subject and will render chemistry. This can be changed for anything as long as it is referenced in the frontmatter. 
+```yaml
+<%= @front_matter["subject"] %> 
+```
+This means that you can use the following code over many  pages so that each page has its own unique subject rendered.  
+```yaml
+<div class="check-qualifcations">
+  <h3>Check your qualifications</h3>
   <p>To train to teach <%= @front_matter["subject"] %> in England, you'll need:</p>
   <ul>
     <li>GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)</li>
@@ -353,11 +401,7 @@ To create a partial go to the /app/views/content/shared folder then either selec
 </div>
 
 ```
-Then, when you are working in another HTML file and want to render your code all you have to do is reference the code you created as follows:
 
-```yaml
- <%= render 'content/shared/qualifications-training/check_qualifcations' %> 
-```
 
 
 
