@@ -563,7 +563,7 @@ en:
             consideration_journey_stage_id:
               inclusion: Select how close you are to applying for teacher training
             preferred_teaching_subject_id:
-              inclusion: Select the subject you want to teach
+              inclusion: Select the subject you're most interested in teaching
 
         callbacks/steps/personal_details:
           attributes:
@@ -788,7 +788,7 @@ en:
         address_postcode: What's your UK postcode? (optional)
         degree_status_id: Do you have a degree?
         consideration_journey_stage_id: How close are you to applying for teacher training?
-        preferred_teaching_subject_id: What do you want to teach?
+        preferred_teaching_subject_id: Select the subject you're most interested in teaching
 
       callbacks_steps_personal_details:
         first_name: First name
@@ -809,7 +809,7 @@ en:
       mailing_list_steps_teacher_training:
         consideration_journey_stage_id: How close are you to applying for teacher training?
       mailing_list_steps_subject:
-        preferred_teaching_subject_id: Which subject do you want to teach?
+        preferred_teaching_subject_id: Select the subject you're most interested in teaching
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
 

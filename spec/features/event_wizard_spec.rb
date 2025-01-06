@@ -307,7 +307,7 @@ RSpec.feature "Event wizard", type: :feature do
     if page.has_text?("What's your UK postcode? (optional)")
       fill_in "What's your UK postcode? (optional)", with: postcode
     end
-    select_value_or_default "What do you want to teach?", preferred_teaching_subject
+    select_value_or_default "Select the subject you're most interested in teaching", preferred_teaching_subject
   end
 
   def select_value_or_default(label, value = nil)
