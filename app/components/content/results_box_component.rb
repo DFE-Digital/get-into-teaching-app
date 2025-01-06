@@ -1,6 +1,6 @@
 module Content
   class ResultsBoxComponent < ViewComponent::Base
-    attr_reader :title, :heading, :fee, :course_length, :funding, :text, :link_text, :link_target, :border_color, :show_title
+    attr_reader :title, :heading, :fee, :course_length, :funding, :text, :link_text, :link_target, :border_color
 
     include ContentHelper
 
@@ -16,10 +16,6 @@ module Content
       @link_text = link_text
       @link_target = link_target
       @border_color = border_color
-    end
-
-    def border_class
-      @border_color == :yellow ? "results-box--yellow" : "results-box--grey"
     end
   end
 end
