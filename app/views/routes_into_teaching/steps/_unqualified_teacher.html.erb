@@ -1,0 +1,6 @@
+<% @page_title = "Have you worked as an unqualified teacher?" %>
+
+<%= f.govuk_collection_radio_buttons :has_worked_as_unqualified_teacher, [["Yes"], ["No"]], :first, :first,
+  legend: { tag: "h1", text: @page_title },
+  hint: { text: "You'll find routes into teaching based on your circumstances" }
+%>
