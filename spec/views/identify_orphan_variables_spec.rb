@@ -21,8 +21,7 @@ VARIABLE_REGEX = /<%=\s*(?:v|value)\s*:(?<content>[a-zA-Z_0-9-]+?)\s*%> |
 COMPONENT_TYPES = TemplateHandlers::Markdown::COMPONENT_TYPES + %w[calls_to_action images]
 
 IGNORE_VARIABLES = {
-  "config/locales/loaf.yml" => %w[invalid valid],
-  "config/values/routes_into_teaching.yml" => %w[routes],
+  "config/locales/loaf.yml" => %w[invalid valid]
 }.freeze
 
 RSpec.describe "orphan variables checker" do

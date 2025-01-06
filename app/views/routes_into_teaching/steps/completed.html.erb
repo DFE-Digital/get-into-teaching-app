@@ -7,8 +7,12 @@
   <div class="row">
     <h2>You told us that you:</h2>
 
+<<<<<<< HEAD
     <p>You can <%= link_to "change your answers", routes_into_teaching_steps_path %> if you need to.</p>
   </div>
+=======
+<%= @user_answers.inspect %>
+>>>>>>> 6f91d387b (Ammend logic to support multiple answers to a question)
 
   <div class="row">
     <% @results.each do |result| %>
