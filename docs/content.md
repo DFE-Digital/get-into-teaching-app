@@ -11,7 +11,6 @@ This documentation aims to be a reference for content editors that want to make 
     * [Frontmatter](#frontmatter)
     * [Breadcrumbs](#breadcrumbs)
     * [Links](#links)
-    * [SEO](#seo)
     * [Prevent Indexing](#prevent-indexing)
     * [Adding a Document or Image](#adding-a-document-or-image)
     * [Calls to Action](#calls-to-action)
@@ -25,23 +24,24 @@ This documentation aims to be a reference for content editors that want to make 
     * [YouTube Video](#youtube-video)
     * [Hero](#hero)
     * [Values](#values)
-4. [Creating a subject page](#creating-a-subject-page)
-5. [Creating an inspirational page](#creating-an-inspirational-page)
-6. [Creating a Blog Post](#creating-a-blog-post)
+4. [Search engine optimisation](#search-engine-optimisation)
+5. [Creating a subject page](#creating-a-subject-page)
+6. [Creating an inspirational page](#creating-an-inspirational-page)
+7. [Creating a Blog Post](#creating-a-blog-post)
     * [Images](#images)
     * [Footers](#footers)
-7. [Navigation](#navigation)
+8. [Navigation](#navigation)
     * [Main Navigation](#main-navigation)
     * [Category Pages](#category-pages)
-8. [Build errors](#build-errors)
-9. [Internship providers](#internship-providers)
-10. [Creating a new page](#creating-a-new-page)
-11. [Preview a change](#preview-a-change)
-12. [Saving a change](saving-a-change)
-13. [If you add something to the wrong branch](wrong-branch)
-14. [Redirect URLs](redirect-urls)
-15. [Finding links on the site](links-site)
-16. [Resolving merge conflicts](merge-conflicts)
+9. [Build errors](#build-errors)
+10. [Internship providers](#internship-providers)
+11. [Creating a new page](#creating-a-new-page)
+12. [Preview a change](#preview-a-change)
+13. [Saving a change](saving-a-change)
+14. [If you add something to the wrong branch](wrong-branch)
+15. [Redirect URLs](redirect-urls)
+16. [Finding links on the site](links-site)
+17. [Resolving merge conflicts](merge-conflicts)
 
 
 ## Setting up Codespaces and Github
@@ -136,18 +136,6 @@ breadcrumbs: false
 
 Whilst links are just standard Markdown its worth noting that if you are linking internally to another web page on the GiT website you should only include the path, for example `[find an event](/events)` instead of `[find an event](https://getintoteaching.education.gov.uk/events)`. We do this so that the links work on all our test environments as well as production.
 
-### SEO
-
-In our frontmatter we can populate several values that are used for SEO:
-
-```yaml
-title: "A title for the page"
-description: "A description of the page"
-image: "path/to/image.png"
-date: "2021-11-01"
-```
-
-Ideally all titles should be unique, descriptions should be < 160 characters and the image will most likely be visible when sharing web page links via social media platforms. If a date is specified it will be used as the last modified date for the sitemap entry.
 
 ### Prevent Indexing
 
@@ -465,6 +453,115 @@ en:
 A list of the current values available on the site can be viewed at the `/values` endpoint.
 
 Values should be named using only _lowercase_ characters `a` to `z`, the numbers `0` to `9`, and the underscore `_` character. Unsupported characters such as the hyphen `-` are converted into underscores.
+
+## Search engine optimisation
+
+Whenever we add a new page to the GIT website, we need to make sure it’s optimised for search engines, this is known as search engine optimisation (SEO). This means that the page has the best chance possible of ranking in a high position in the search results when people type a related query in.
+
+In Autumn 2024, an SEO consultant provided us with guidelines for how to improve the SEO on the website.
+
+When uploading a new webpage, or reviewing an existing one, these are the main things you’ll need to do to make sure the page is optimised.
+
+### Find out what people are searching for
+
+If you’re adding new content to the GIT website or reviewing existing content, any changes should be based on user needs. You can make sure the content is optimised for the search engines by looking at what users are searching for in Search Console. If you're new to the team, speak to the Delivery Manager about getting set up on Search Console.
+
+For example, if you were to create a page around being a primary school teacher some terms you might want to include could be:
+- ‘skills to be a primary teacher’
+- ‘primary education courses’
+- ‘primary teaching with QTS’
+
+### Consider the context
+
+It’s important to consider the context of search terms. For example, users might be searching for ‘teachers pension increase’ but that’s not something we would cover on the GIT website. A term like this is more likely to be from users who are already teachers and their query would be better answered by the teacher pensions website.
+
+Some terms may:
+- not be teaching specific (‘uk qualifications’)
+- be too broad (‘high school teacher’)
+- be addressed by other services, such as Teaching Vacancies (‘english teacher jobs’)
+
+You can find out more about optimising content for what users are searching for by viewing the following documents from the Autumn 2024 SEO review:
+- keyword map
+- content optimisation guidance
+These are stored in the Get Into Teaching Ebsite Project folder in Teacher Services SharePoint.
+
+### Internal links
+
+Internal linking is when a page on a website links through to another page on the same website. This is important for SEO as it helps the search engines understand which pages relate to each other. It also helps users navigate the site.
+
+When creating or updating a page, make sure:
+- all pages have more than one internal link
+- use the keyword that you want the page to rank for as the anchor text, e.g. use ‘qualified teacher status (QTS)’ as the link rather than ‘you’ll be qualified as a teacher’
+- internal links link to the canonical version of pages (these are the pages we want to rank) so they do not have to go through redirects
+- you link to any new pages from existing, relevant pages
+
+### URL structure
+
+The URL on a page helps the search engines understand what a page is about.
+
+When creating a page or updating a URL, make sure:
+- the URL includes a target keyword, where it is sensible to do so e.g. `/train-to-be-a-teacher/teacher-degree-apprenticeships`, rather than `/train-to-be-a-teacher/tda`
+- URLs are short and make sense when read by humans
+
+### Headers
+
+Where possible, include keywords in the content headers. Headers should follow a clear structure e.g. H1, H2, and H3. This is important for accessibility, as well as SEO.
+
+### Acronyms
+
+Users may not know certain acronyms well enough to include them in their search terms. Always spell out words in full first, and more than once, if they are the keywords for a particular page.
+
+In some cases, users may be more familiar with the acronym than the full word. For example:
+- ‘QTS’ gets more searches than ‘qualified teacher status’
+- ‘teacher degree apprenticeship’ gets more searches than ‘TDA’
+
+You can find out more about how we use acronyms in the:
+- [DfE content style guide](https://design.education.gov.uk/design-system/style-guide)
+- [Government Digital Services (GDS) style guide](https://www.gov.uk/guidance/style-guide/a-to-z)
+
+### Front matter
+
+In our frontmatter we can populate several values that are used for SEO:
+
+```yaml
+title: "A title for the page"
+description: "A description of the page"
+image: "path/to/image.png"
+date: "2021-11-01"
+```
+
+Ideally all titles should be unique, descriptions should be no more than 160 characters and the image will most likely be visible when sharing web page links via social media platforms. If a date is specified it will be used as the last modified date for the sitemap entry.
+
+### Monitoring SEO impact
+
+You can use Search Console to get an idea of how a search term or page is performing. 
+
+1. Click on the date filter in the 'Search Results' section.
+2. Select 'Compare'.
+3. Compare a date range before your changes with a similar period after the changes.
+4. Check for improvements in clicks, impressions, and rankings.
+
+
+You can also check how specific pages are performing:
+
+1. Go to 'Search Results' and add filter, then select ‘Page’.
+2. Enter the URL for the page you want to check.
+3. Review metrics such as impressions, clicks, and position for those pages.
+4. You can change the dates for individual pages too, so you can compare stats before and after any changes.
+
+To see how keyword targeting is performing: 
+
+1. Click 'Search Results'.
+2. Click 'Add filter' and select 'Query'.
+3. Enter the query or part of the query e.g. ‘SEND’ will bring any query up with ‘SEND’ in it such as ‘SEND training’.
+4. Check if optimised keywords:
+   - have higher impressions and clicks
+   - have improved their average position in search results
+5. You can also see how individual pages are doing for specific keywords by filtering by query and page.
+
+It can take weeks or even months for changes to have an impact, so check the above regularly.
+
+
 
 ## Creating a subject page
 
