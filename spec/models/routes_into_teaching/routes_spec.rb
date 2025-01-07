@@ -7,20 +7,20 @@ RSpec.describe RoutesIntoTeaching::Routes, type: :model do
         {
           "title" => "Route 1",
           "matches" => [
-            { "question" => "undergraduate_degree", "answers" => ["Yes"] },
+            { "question" => "undergraduate_degree", "answers" => %w[Yes] },
             { "question" => "unqualified_teacher", "answers" => ["*"] },
-            { "question" => "location", "answers" => ["Yes"] }
-          ]
+            { "question" => "location", "answers" => %w[Yes] },
+          ],
         },
         {
           "title" => "Route 2",
           "matches" => [
-            { "question" => "undergraduate_degree", "answers" => ["Yes"] },
-            { "question" => "unqualified_teacher", "answers" => ["No"] },
-            { "question" => "location", "answers" => ["No"] },
-          ]
-        }
-      ]
+            { "question" => "undergraduate_degree", "answers" => %w[Yes] },
+            { "question" => "unqualified_teacher", "answers" => %w[No] },
+            { "question" => "location", "answers" => %w[No] },
+          ],
+        },
+      ],
     }
   end
 
@@ -28,7 +28,7 @@ RSpec.describe RoutesIntoTeaching::Routes, type: :model do
     {
       "undergraduate_degree" => "Yes",
       "unqualified_teacher" => "Yes",
-      "location" => "Yes"
+      "location" => "Yes",
     }
   end
 
@@ -50,7 +50,7 @@ RSpec.describe RoutesIntoTeaching::Routes, type: :model do
       it "returns routes that match all criteria" do
         expect(subject.size).to eq(1)
         expect(subject.map { |r| r["title"] }).to contain_exactly(
-          "Route 1"
+          "Route 1",
         )
       end
     end
@@ -63,13 +63,13 @@ RSpec.describe RoutesIntoTeaching::Routes, type: :model do
     end
 
     context "with a wildcard matching rule" do
-      it "it matches Yes answers" do
+      it "matches Yes answers" do
         answers["unqualified_teacher"] = "Yes"
         expect(subject.size).to eq(1)
         expect(subject.first["title"]).to eq("Route 1")
       end
 
-      it "it matches No answers" do
+      it "matches No answers" do
         answers["unqualified_teacher"] = "No"
         expect(subject.size).to eq(1)
         expect(subject.first["title"]).to eq("Route 1")
@@ -78,6 +78,7 @@ RSpec.describe RoutesIntoTeaching::Routes, type: :model do
 
     context "with missing answers" do
       let(:answers) { { "location" => "Yes" } }
+
       it "does not recommend routes with missing required answers" do
         expect(subject).to be_empty
       end
