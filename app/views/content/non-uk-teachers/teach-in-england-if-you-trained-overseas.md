@@ -20,13 +20,13 @@ inset_text:
 
 expander:
   ukraine-moving:
-    header: Ukraine citizens
+    header: "Ukraine citizens:"
     title: moving to the UK
     text: |- 
       <p>
       Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
   ukraine-visas:
-    header: Ukraine citizens
+    header: "Ukraine citizens:"
     title: help with visas
     text: |-
       <p>
@@ -189,7 +189,6 @@ To teach in England, you will need a visa or immigration status allowing you to 
 Learn more about [applying for the right visa for your teaching job](/non-uk-teachers/visas-for-non-uk-teachers). 
 
 $ukraine-visas$
-
 
 ## Life as a teacher in England
 
