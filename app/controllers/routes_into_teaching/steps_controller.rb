@@ -17,7 +17,7 @@ module RoutesIntoTeaching
       @results = RoutesIntoTeaching::Routes.recommended(session[:routes_into_teaching])
     end
 
-    private
+  private
 
     def noindex?
       # Only index the first step.
