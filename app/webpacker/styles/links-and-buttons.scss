@@ -240,7 +240,6 @@ body a.govuk-back-link {
 }
 
 // CTA link with green arrow circle button
-// Arrow created here: app/webpacker/styles/utility.scss
 // Partial for rendering here: app/views/shared/_cta_circle_link.html.erb
 .cta-circle-link-wrapper {
   display: inline-flex;
@@ -249,51 +248,22 @@ body a.govuk-back-link {
   @extend .link;
 
   .cta-circle-button {
-    @include button;
-    // font-size: inherit;
     border-radius: 50%;
-    // width: 34px; 
-    // height: 34px;
-    display: inline-block;
-    box-shadow: none;
-    padding: 0;
-    line-height: 1;
-    // @include arrow;
+    background-color: $white;
 
-    @include mq($until: narrow) {
-      width: 28px; 
-      height: 28px;
-      background-color: pink;
-      @include arrow ($dimensions: 8px, $length: 16px);
+    i {
+      color: $cta-green;
     }
 
-    @include mq($from: narrow, $until: mobile) {
-      background-color: blue;
-      width: 30px; 
-      height: 30px;
-      @include arrow ($dimensions: 8px, $length: 18px);
-    }
-
-    @include mq ($from: mobile, $until: tablet) {
-      background-color: black;
-      width: 32px; 
-      height: 32px;
-      @include arrow ($dimensions: 10px, $length: 20px);
-    }
-
-    @include mq ($from: tablet) {
-      background-color: purple;
-      width: 34px; 
-      height: 34px;
-      @include arrow ($dimensions: 12px, $length: 22px);
+    &:hover i {
+      color: darken($cta-green, 5%);
     }
   }
 
   .cta-link-text {
-    @include font-size("small");
+    @include font-size("xsmall");
   }
 }
-
 
 .call-to-action-icon-button {
   @include button;
