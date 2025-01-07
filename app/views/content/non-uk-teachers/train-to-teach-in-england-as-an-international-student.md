@@ -18,7 +18,7 @@ image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 expander:
   refugees-asylum-seekers:
-    header: Refugees and asylum seekers
+    header: "Refugees and asylum seekers:"
     title: funding support
     text: |- 
       <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you'll usually be eligible for financial support to help you train</a>.
