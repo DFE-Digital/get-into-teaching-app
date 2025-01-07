@@ -133,26 +133,17 @@ You will not need a visa to train to teach in the UK if you:
 You will not need to be sponsored for a Student or Skilled Worker visa if you are on a: 
 
 * [Afghan Citizens Resettlement or Afghan Relocations and Assistance Policy scheme](https://www.gov.uk/government/publications/afghanistan-resettlement-and-immigration-policy-statement/afghanistan-resettlement-and-immigration-policy-statement-accessible-version)
+* [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)  
+* [Family visa](https://www.gov.uk/uk-family-visa)  
+* [Graduate visa](https://www.gov.uk/graduate-visa)  
+* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)  
+* [Homes for Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)  
+* [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa)  
+* [UK Ancestry visa](https://www.gov.uk/ancestry-visa)  
+* [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)  
+* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)  
+* [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility)  
 
-* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
-
-* [Homes for Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
-
-* [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
-  
-* [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa) 
-
-* [Family visa](https://www.gov.uk/uk-family-visa) 
-
-* [Graduate visa](https://www.gov.uk/graduate-visa) 
-
-* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)
-
-* [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa) 
-
-* [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
-
-* [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility) 
 
 
 ### Dependants
