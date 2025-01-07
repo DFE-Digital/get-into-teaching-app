@@ -388,7 +388,7 @@ To create a variable that references the frontmatter simply copy the format belo
 ```yaml
 <%= @front_matter["subject"] %> 
 ```
-This means that you can use the following code over many  pages so that each page has its own unique subject rendered.  
+This means that you can use the following code over many pages so that each page has its own unique subject rendered.  
 ```yaml
 <div class="check-qualifcations">
   <h3>Check your qualifications</h3>
