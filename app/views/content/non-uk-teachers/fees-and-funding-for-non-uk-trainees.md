@@ -17,7 +17,7 @@ expander:
     header: Refugees and asylum seekers
     title: funding support
     text: |- 
-      <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you'll usually be eligible for financial support to help you train</a>.
+      <p>If you have refugee status you'll usually be eligible for financial support to help you train.
       <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
       <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
 
