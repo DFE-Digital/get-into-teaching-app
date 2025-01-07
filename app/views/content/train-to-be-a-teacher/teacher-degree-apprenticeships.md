@@ -26,7 +26,6 @@ The [teacher training providers confirmed so far offer TDAs in secondary maths](
 
 [View the teacher degree apprenticeship courses currently available]( https://find-teacher-training-courses.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&university_degree_status=false&visa_status=false).
 
-If you cannot see a course for the subject you want to train in, contact the initial teacher training engagement team at ITT.engagement@education.gov.uk.
 
 $teacher-degree-apprenticeships$
 
@@ -46,7 +45,7 @@ Non-maintained schools (for example, academies, independent schools and private 
 You do not have to pay tuition fees, but you will not be eligible for student finance. 
 
 ## Who’s eligible to apply for a teacher degree apprenticeship?
-Teacher degree apprenticeships are open for candidates to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
+Teacher degree apprenticeships are open for individuals to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
 
 
 To be eligible to apply for a TDA, you must be:
