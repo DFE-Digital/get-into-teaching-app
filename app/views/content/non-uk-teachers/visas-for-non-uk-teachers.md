@@ -15,7 +15,7 @@ image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 expander:
   ukraine-visas:
-    header: Ukraine citizens
+    header: "Ukraine citizens:"
     title: help with visas
     text: |-
       <p>
