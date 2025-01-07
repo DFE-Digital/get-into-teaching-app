@@ -10,21 +10,10 @@ module RoutesIntoTeaching
     layout "registration"
 
     def completed
-      @yaml = YAML.load_file(Rails.root.join("config/routes_into_teaching.yml"))
-      @user_answers = session[:routes_into_teaching]
-
-      @results = @yaml["routes"].select do |teaching_route|
-        next false if teaching_route["matches"].blank?
-
-        teaching_route["matches"].all? do |matching_rule|
-          question_id, matching_answers = matching_rule["question"], matching_rule["answers"]
-
-          matching_answers.include?("*") || matching_answers.include?(@user_answers[question_id])
-        end
-      end
+      @results = RoutesIntoTeaching::Routes.recommended(session[:routes_into_teaching])
     end
 
-  private
+    private
 
     def noindex?
       # Only index the first step.

@@ -2,9 +2,11 @@
 
 <p>You can <%= link_to "change your answers", routes_into_teaching_steps_path %> if you need to.</p>
 
-<%= @user_answers.inspect %>
+<%= session[:routes_into_teaching].inspect %>
 
 <hr>
+
+<%= @results.inspect %>
 
 <ul>
   <% @results.each do |result| %>
