@@ -141,13 +141,6 @@ Or find out how you can earn an unqualified teacher salary while training to get
 | Outer London                             | $salaries_unqualifiedteacher_outerlondonmin$ | $salaries_unqualifiedteacher_outerlondonmax$ |
 | Inner London                             | $salaries_unqualifiedteacher_innerlondonmin$ | $salaries_unqualifiedteacher_innerlondonmax$ |
 
-## Teacher holidays
-
-You'll get more days holiday than people in many other professions. In school, full-time teachers work 195 days per year.
-
-For comparison, you'd work 227 days per year (on average) if you worked full time in an office.
-
-
 ## Teachers' pension scheme
 
  One of the great benefits of a teaching career is a secure pension with employer contributions of 28.6%.
@@ -159,3 +152,9 @@ It is a 'defined benefit' pension and is:
 * flexible and allows you to take some of it as a tax-free lump sum
 
 You also get other insurance benefits too. Find out more about the [teachers' pension scheme](/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme).
+
+## Other benefits of teaching
+
+In additional to the practical rewards of teaching, there's personal benefits too. Teaching is a career that allows you to make a difference, explore your creativity, and apply skills from your degree or previous career.
+
+[Explore why people choose to become a teacher](/life-as-a-teacher/teaching-as-a-career/why-teach).

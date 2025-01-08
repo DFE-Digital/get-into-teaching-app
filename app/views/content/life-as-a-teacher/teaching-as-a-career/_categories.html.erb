@@ -5,6 +5,12 @@
         <ul>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
+              title: "Why become a teacher",
+              description: "Explore the many reasons why you should become a teacher in England. From making a difference from day one, to exploring your creativity and benefitting from a competitive salary and generous holidays.",
+              path: "/life-as-a-teacher/teaching-as-a-career/why-teach",
+            )) %>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
               title: "Early career teachers (ECTs)",
               description: "Find out about the support early career teachers get when they start teaching, including mentor support and training based on the early career framework (ECF).",
               path: "/life-as-a-teacher/teaching-as-a-career/early-career-teachers"
