@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 7.0.2.3"
+gem "rails", "~> 7.0.8.7"
 
 # Use Puma as the app server
 gem "puma", "~> 6.4"
@@ -92,7 +92,7 @@ gem "google-api-client", ">= 0.53.0", require: false
 gem "net-smtp", ">= 0.3.3", require: false
 gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
 
-gem "sidekiq", "~> 6.5.0"
+gem "sidekiq", "~> 7.3.7"
 gem "sidekiq-cron"
 
 # Fix CVE errors
@@ -123,7 +123,7 @@ group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
 
   # GOV.UK interpretation of rubocop for linting Ruby
-  gem "rubocop-govuk", "~> 5.0.2"
+  gem "rubocop-govuk", "~> 5.0.7"
 
   # Static security scanner
   gem "brakeman", "~> 6.2.2", require: false
