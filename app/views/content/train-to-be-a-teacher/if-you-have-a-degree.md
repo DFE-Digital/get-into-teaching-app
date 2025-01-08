@@ -38,12 +38,12 @@ expander:
 
 
   international-content:
-    header: Non-UK citizens
+    header: "Non-UK citizens:"
     title: train to teach in England
     text: If you’re not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
    
   ukraine-moving:
-    header: Ukraine citizens
+    header: "Ukraine citizens:"
     title: moving to the UK
     text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.
 quote:
