@@ -56,11 +56,11 @@ The Department for Education is committed to making its websites accessible, in 
 
 ## Compliance status
 
-This website is fully compliant with the WCAG version 2.2 AA standard.
+This website is fully compliant with the WCAG version 2.1 AA standard.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 29 January 2024. It was last reviewed on 12 December 2024.
+This statement was prepared on 29 January 2024. It was last reviewed on 29 January 2024.
 
 This website was last tested independently on 25 September 2023. The test was carried out by Digital Accessibility Centre (DAC) Limited.
 

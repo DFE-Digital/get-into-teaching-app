@@ -17,4 +17,5 @@ keywords:
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/drama/article"
+  - "content/shared/subject-pages/adviser-promo"
 ---

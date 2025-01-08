@@ -290,7 +290,7 @@ $mobile-cutoff: 800px;
 	@include mq($from: tablet) {
 		max-height: 420px;
 		flex-direction: row-reverse;
-
+		
 		// Deeper headings if there's a paragraph
 		&.deeper {
 			max-height: fit-content;
@@ -327,11 +327,11 @@ $mobile-cutoff: 800px;
 		// If no image use this
 		&.wide {
 			width: 100%;
-
+			
 			@include mq($from: tablet) {
-				width: 80%;
+				width: 80%;	
 			}
-
+	
 			h1.title {
 				margin-top: 0;
 			}
@@ -342,7 +342,7 @@ $mobile-cutoff: 800px;
 			line-height: 1.14;
 			margin-top: -2.5rem;
 			margin-bottom: 0;
-
+			
 			@include mq($from: tablet) {
 				margin: 0;
 				font-size: 3.3rem;
@@ -379,21 +379,14 @@ $mobile-cutoff: 800px;
 		}
 	}
 
-	img {
-		aspect-ratio: 16/9;
-		width: 100%;
-		height: auto;
-		display: block;
-	}
-
 	// Colour themes
 	@mixin colours($background-color, $highlight-color) {
 		background-color: $background-color;
-
+		
 		h1 span {
 			background: $highlight-color;
 		}
-
+	  
 		&.pastel {
 			background-color: rgba($background-color, 0.4);
 		}
@@ -406,6 +399,6 @@ $mobile-cutoff: 800px;
 	&.green-pink { @include colours($green, $pink); }
 	&.green-yellow { @include colours($green, $yellow); }
 	&.yellow-green { @include colours($yellow, $green); }
-  &.yellow-yellow { @include colours($yellow, $yellow); }
+	&.yellow-yellow { @include colours($yellow, $yellow); }
   &.grey-pink { @include colours($grey, $pink); }
 }

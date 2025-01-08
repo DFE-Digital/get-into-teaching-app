@@ -32,8 +32,6 @@ You need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to
 
 You do not need QTS to [teach in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers) or to [teach in early years](/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers).
 
-You do not need a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce) to be a qualified teacher in England, but it can help you develop your teaching skills and knowledge.
-
 ## What qualifications do you need to train?
 
 To train to teach in primary and secondary schools in England, you’ll need:

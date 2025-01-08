@@ -32,11 +32,6 @@ runs:
         with:
            creds: ${{ inputs.AZURE_CREDENTIALS }}
 
-      - uses: google-github-actions/auth@v2
-        with:
-          project_id: get-into-teaching
-          workload_identity_provider: projects/574582782335/locations/global/workloadIdentityPools/get-into-teaching-app/providers/get-into-teaching-app
-
       - name: Get Short SHA
         id: sha
         shell: bash
@@ -116,7 +111,7 @@ runs:
             APP_LABEL="get-into-teaching-app-${{inputs.environment}}"
             HOST="getintoteaching.education.gov.uk"
           fi
-
+          
           az aks get-credentials --resource-group $RESOURCE_GROUP --name $CLUSTER_NAME --overwrite-existing
           kubelogin convert-kubeconfig -l spn
           POD_NAME=$(kubectl get pods -n ${{ env.NAMESPACE }} -l app=${APP_LABEL} -o jsonpath="{.items[0].metadata.name}")

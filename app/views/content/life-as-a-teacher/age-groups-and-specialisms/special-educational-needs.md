@@ -4,9 +4,9 @@ heading: "Teach pupils with special educational needs and disabilities (SEND)"
 description: |-
   Find out how you can teach pupils with special educational needs and disabilities (SEND) and how to become a special educational needs coordinator (SENCO).
 image: "static/images/content/hero-images/0032.jpg"
-cta_adviser:
-  adviser:
-    text: Talk to an adviser with years of teaching experience about opportunities to teach pupils with SEND. Chat by phone, text or email, as little or as often as you need.  
+promo_content:
+    - content/train-to-be-a-teacher/promos/adviser-promo-send
+    
 keywords:
   - SEND
   - disabled
@@ -89,5 +89,3 @@ An MQSI will give you the skills needed to recognise any barriers to learning th
 ## Training for teaching pupils with SEND
 
 You can [find a teacher training course](https://find-teacher-training-courses.service.gov.uk/) and filter by ‘courses with a SEND specialism’ if you have a particular interest in the area. 
-
-$adviser$

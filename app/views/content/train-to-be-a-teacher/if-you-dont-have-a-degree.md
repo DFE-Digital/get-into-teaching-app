@@ -7,7 +7,7 @@ description: |-
 related_content:
     Explore life as a teacher : "/life-as-a-teacher"
     Funding your training : "/funding-and-support"
-    Teach in further education without a degree : "https://www.teachinfurthereducation.education.gov.uk/"
+    Teach in further education without a degree : "https://www.teach-in-further-education.campaign.gov.uk"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
 promo_content:

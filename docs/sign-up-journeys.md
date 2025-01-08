@@ -6,7 +6,7 @@ There are multiple different sign up journeys available on the Get into Teaching
 
 ```mermaid
 graph TD;
-  name[Free personalised teacher training guidance] -- Doesn't exist in CRM --> returning_teacher[Are you already qualified to teach?]
+  name[Get personalised guidance on teacher training in your inbox] -- Doesn't exist in CRM --> returning_teacher[Are you already qualified to teach?]
   name -- Exists in CRM --> authenticate[You're already registered with us]
   
   returning_teacher -- Yes --> already_qualified[We're sorry, but our emails are for people who are not already qualified to teach]
@@ -16,9 +16,9 @@ graph TD;
   authenticate -- On mailing list --> signed_up_already[You've already signed up]
   degree_status --> teacher_training[How close are you to applying?]
   
-  teacher_training --> subject[Select the subject you're most interested in teaching]
+  teacher_training --> subject[Which subject do you want to teach?]
 
-  subject --> postcode["What's your UK postcode? (optional)"]
+  subject --> postcode["Your UK postcode (optional)"]
   
   postcode --> show_welcome_guide{Show welcome guide?}
   

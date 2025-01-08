@@ -1,8 +1,19 @@
-<h1>Free personalised teacher training guidance</h1>
+<h1>Get personalised guidance on teacher training in your inbox</h1>
 
 <p>
-Discover everything you need to know to start a teaching career in England, sent straight to your inbox. Personalised to you, we'll send you the latest information as well as advice and support.
+If you're interested in training to teach in primary, secondary and special schools in England, get everything you need to know to start a career in teaching.
 </p>
+
+<p>
+Find out how to get:
+</p>
+
+<ul>
+  <li> a taste of life in the classroom</li>
+  <li> funding to train</li>
+  <li> one-to-one support</li>
+  <li> advice from trainees or recently qualified teachers</li>
+</ul>
 
 <%= f.govuk_text_field :first_name, width: 'two-thirds', autocomplete: "given-name" %>
 <%= f.govuk_text_field :last_name, width: 'two-thirds', autocomplete: "family-name" %>
@@ -11,4 +22,6 @@ Discover everything you need to know to start a teaching career in England, sent
 <%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object.sub_channel_id %>
 <%= f.hidden_field :accepted_policy_id, value: f.object.latest_privacy_policy.id %>
 
-<p>Your details are protected under the terms of our <%= link_to("privacy notice (opens in new tab)", privacy_policy_path(id: f.object.latest_privacy_policy.id), { target: :blank }) %>. This explains how we use your personal data. It's important you read this before signing up to receive emails.</p>
+<p>Your details are protected under the terms of our <%= link_to("privacy notice (opens in new tab)", privacy_policy_path(id: f.object.latest_privacy_policy.id), { target: :blank }) %>.</p>
+
+<p>Our privacy notice explains how we use your personal data. It's important you read this before signing up to receive emails.</p>

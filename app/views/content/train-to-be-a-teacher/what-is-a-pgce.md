@@ -37,11 +37,9 @@ expander:
     link_url: /non-uk-teachers/non-uk-qualifications
 ---
 
-If you have a degree and are interested in gaining a qualification in education, you may want to do a postgraduate certificate in education (PGCE).
+A postgraduate certificate in education (PGCE) is an academic qualification. You can get this through teacher training.
 
-You can get a postgraduate certificate in education through teacher training.
-
-You do not need a PGCE to be a qualified teacher in England, but it can help you develop your teaching skills and knowledge.
+You do not need one to be a qualified teacher in England, but it can help you develop your teaching skills and knowledge.
 
 ## The qualifications you need to teach in England
 
@@ -49,7 +47,7 @@ You need qualified teacher status (QTS) to teach in most primary, secondary and 
 
 [Find out more about qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
-Many teacher training courses also offer a postgraduate qualification, such as a PGCE, but you do not need one to teach.
+Many teacher training courses also offer you a postgraduate qualification such as a PGCE, but you do not need one to teach.
 
 ## Teacher training courses
 
@@ -61,7 +59,7 @@ You can do a teacher training course that leads to:
 
 Getting a PGCE without QTS means you will not be qualified to teach in most primary, secondary and special schools in England, although some schools will employ teachers without QTS.
 
-If you get a PGCE without QTS you will not be entitled to the same benefits during your training and career as QTS with PGCE. For example, better pay and support when you start teaching.
+If you get a PGCE without QTS you will also not be entitled to the same benefits during your training and career as QTS with PGCE. For example, better pay and support when you start teaching.
 
 ## Benefits of having QTS with PGCE
 
@@ -75,13 +73,13 @@ You may want to do a master’s in education, for example, for your professional
 
 ## Types of PGCE courses
 
-You can get QTS with a PGCE in primary education or secondary education. Your course will involve both school placements and academic theory.
+You can get QTS with a PGCE in primary or secondary education. Your course will involve both school placements and academic theory.
 
 You can do this through a school-led, university-led, or an apprenticeship teacher training programme.
 
 You can do a full or part-time PGCE course.
 
-As part of selecting your course, you'll need to decide if you want to train to teach at a primary or secondary level. [Learn about the different age groups you could teach](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach).
+As part of selecting your course, you will need to decide if you want to train to teach at a primary or secondary level. [Learn about the different age groups you could teach](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach).
 
 You can also do a PGCE without QTS in [further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers).
 
@@ -102,7 +100,5 @@ $check-your-qualifications$
 A PGDE in England is very similar to a PGCE, the difference being the number of academic credits you are awarded at the end of your course.
 
 PGCE courses can contain up to 60 credits at master’s degree level, and PGDE courses can contain up to 120. This usually means that doing a PGDE will include more assignments.
-
-As with PGCEs, you can do a PGDE in primary education or secondary education.
 
 More teacher training providers offer a PGCE than a PGDE.

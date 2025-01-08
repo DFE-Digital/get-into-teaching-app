@@ -173,7 +173,7 @@ RSpec.feature "Event wizard", type: :feature do
     end
     click_on "Complete sign up"
 
-    expect(page).not_to have_text("What's your UK postcode? (optional)")
+    expect(page).not_to have_text("What is your UK postcode? (optional)")
     fill_in_personalised_updates
 
     expect_sign_up_with_attributes(
@@ -304,10 +304,10 @@ RSpec.feature "Event wizard", type: :feature do
   )
     select_value_or_default "Do you have a degree?", degree_status
     select_value_or_default "How close are you to applying for teacher training?", consideration_journey_stage
-    if page.has_text?("What's your UK postcode? (optional)")
-      fill_in "What's your UK postcode? (optional)", with: postcode
+    if page.has_text?("What is your UK postcode? (optional)")
+      fill_in "What is your UK postcode? (optional)", with: postcode
     end
-    select_value_or_default "Select the subject you're most interested in teaching", preferred_teaching_subject
+    select_value_or_default "What do you want to teach?", preferred_teaching_subject
   end
 
   def select_value_or_default(label, value = nil)

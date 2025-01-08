@@ -19,4 +19,5 @@ keywords:
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/design-and-technology/article"
+  - "content/shared/subject-pages/adviser-promo"
 ---

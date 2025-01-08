@@ -17,10 +17,10 @@ keywords:
  - year one
 description: |-
   Find out how to become an early years teacher. Discover the qualifications you need, the different early years teacher training routes and the cost.
-expander:
+inset_text:
   international-content:
-    title: applying for early years training
-    text: If you're a non-UK citizen, you can apply for early years initial teacher training if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2025-to-2026-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
+    text: If you're a non-UK candidate, you can apply for early years initial teacher training, if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2025-to-2026-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
+    color: grey
 calls_to_action:
   EY-graduate:
     name: feature_table
@@ -64,15 +64,13 @@ If you're interested in exploring other opportunities to work with pre-school ch
 
 There are 2 ways to train to become an early years teacher, either as a postgraduate if you already have a degree, or as part of an undergraduate degree.
 
-To do postgraduate training, you’ll need a bachelor’s degree or an equivalent, for example, a vocational or professional qualification, or equivalent qualification you gained outside the UK.
+To do postgraduate training, you’ll need a bachelor’s degree or an equivalent, for example, a vocational, professional, or overseas qualification.
 
-To start early years teacher training, you’ll need these GCSE qualifications:
+To start early years teacher training, you’ll need these GCSE qualifications (or a vocational, professional, or overseas qualification to the same standard):
 
 * maths grade 4 (C)
 * English grade 4 (C)
 * science grade 4 (C)
-
-If you do not have GCSEs, you'll need an equivalent qualification, such as a vocational or professional qualification, or an equivalent qualification you gained outside the UK.
 
 $international-content$
 

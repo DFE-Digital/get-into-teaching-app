@@ -9,9 +9,8 @@ related_content:
     Your teacher training application : "/how-to-apply-for-teacher-training/teacher-training-application"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
-cta_adviser:
-  adviser:
-    text: Talk to an adviser with years of teaching experience about how to choose the right course for you. Chat by phone, text or email, as little or as often as you need.
+promo_content:
+    - content/train-to-be-a-teacher/promos/adviser-promo-degree
 navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.
@@ -53,7 +52,7 @@ expander:
     title: salaried teacher training
     text: |-
       <p>
-      You can apply for a salaried teacher training course. However, places on these courses are limited and very competitive. Some salaried courses may also charge fees.
+      You can apply for a salaried teacher training course. However, places on these courses are limited and very competitive.
       </p>
       <p>
       Before you apply, contact the salaried teacher training provider to check you meet the entry requirements.
@@ -116,7 +115,7 @@ $fee-funded-teacher-training$
 
 ### Salaried teacher training
 
-Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. Some salaried teacher training courses may also come with fees. Check with individual providers for more information.
+Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
 
 Places on salaried courses are limited and very competitive. 
 
@@ -152,5 +151,3 @@ There are usually more full-time courses available than part-time.
 Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
 
 [Find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
-
-$adviser$

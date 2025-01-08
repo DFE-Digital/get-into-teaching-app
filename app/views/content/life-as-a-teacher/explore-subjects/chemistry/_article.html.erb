@@ -69,7 +69,7 @@
       <li>modern analytical techniques</li>
     </ul>
     <!-- Teaching pupils: ages and abilities -->
-     <p><%= render 'content/shared/teaching/ages_abilities' %> <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary"> Explore more about teaching secondary</a>.</p>
+    <%= render 'content/shared/teaching/ages_abilities' %>
   </section>
 
   <section class="col col-space-m col-720">
@@ -104,7 +104,5 @@
     <!-- Support with teacher training -->
     <%= render 'content/shared/teaching/ect_support' %>
   </section>
-    <%= render CallsToAction::AdviserComponent.new(
-    text: "An adviser with years of teaching experience can help you to become a chemistry teacher. Chat by phone, text, or email as little or often as you need.",
-  ) %>
+
 </div>

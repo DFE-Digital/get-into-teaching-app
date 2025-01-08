@@ -6,7 +6,7 @@ description: |-
     Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 related_content:
     Explore life as a teacher: "/life-as-a-teacher"
-    Teach in further education without a degree: "https://www.teachinfurthereducation.education.gov.uk/"
+    Teach in further education without a degree: "https://www.teach-in-further-education.campaign.gov.uk/"
 cta_adviser:
   adviser:
     text: "You can get dedicated guidance and support with your journey into teacher training from one of our veteran teacher training advisers. Chat by phone, text or email, as little or as often as you need."

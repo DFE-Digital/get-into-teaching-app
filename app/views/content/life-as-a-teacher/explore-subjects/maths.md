@@ -21,4 +21,5 @@ keywords:
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/maths/article"
+  - "content/shared/subject-pages/adviser-promo"
 ---

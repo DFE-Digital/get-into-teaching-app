@@ -19,4 +19,4 @@ Teachers outside the UK with a teaching qualification may be eligible to [apply 
 
 [Learn more about the qualifications and experience you’ll need to get QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#:~:text=What%20you%27ll%20need%20to,every%20country%20in%20the%20world) using this service.
 
-#### Training providers offering assessment only outside of the UK
+#### Assessment only training providers for non-UK citizens

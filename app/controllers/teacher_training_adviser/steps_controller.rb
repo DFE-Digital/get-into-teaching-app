@@ -88,7 +88,7 @@ module TeacherTrainingAdviser
     end
 
     def set_step_page_title
-      @page_title = "Get a free adviser"
+      @page_title = "Get an adviser"
 
       if @current_step&.title
         @page_title += ", #{@current_step.title.downcase} step"

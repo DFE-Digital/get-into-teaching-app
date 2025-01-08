@@ -16,10 +16,7 @@ module "application_configuration" {
   is_rails_application = true
 
   config_variables = {
-    PGSSLMODE           = local.postgres_ssl_mode
-    BIGQUERY_DATASET    = var.dataset_name
-    BIGQUERY_PROJECT_ID = "get-into-teaching"
-    BIGQUERY_TABLE_NAME = "events"
+    PGSSLMODE        = local.postgres_ssl_mode
   }
   secret_variables = {
     DATABASE_URL = module.postgres.url
@@ -31,7 +28,6 @@ module "application_configuration" {
     APP_URL           = length(var.internet_hostnames) == 0 ? "" : "https://${var.internet_hostnames[0]}.education.gov.uk",
 #   keeping here as a reminder, but went be set in aks and need to confirm impact
     APP_ASSETS_URL    = length(var.asset_hostnames) == 0 ? "" : "https://${var.asset_hostnames[0]}.education.gov.uk"
-    GOOGLE_CLOUD_CREDENTIALS = var.enable_dfe_analytics_federated_auth ? module.dfe_analytics[0].google_cloud_credentials : null
   }
 }
 
@@ -156,6 +152,4 @@ module "worker_application" {
   enable_logit               = var.enable_logit
 
   enable_prometheus_monitoring  = var.enable_prometheus_monitoring
-
-  enable_gcp_wif = true
 }
