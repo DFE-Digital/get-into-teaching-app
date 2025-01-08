@@ -17,5 +17,4 @@ keywords:
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/age-groups-and-specialisms/secondary/article"
-  - "content/shared/subject-pages/adviser_promo"
 ---
