@@ -6,8 +6,6 @@ description: |-
   Find out about the assessment only route to qualified teacher status (QTS) for unqualified teachers who have worked in a classroom.
 image: false
 backlink: /
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-assessment-only
 navigation: 20.40
 navigation_title: If you’ve worked as an unqualified teacher
 navigation_description: If you've worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through an assessment only route.
@@ -105,7 +103,7 @@ provider_groups:
       telephone: "0116 254 3187"
       international_phone: "+441162543187"
       
-    - header: "Lincolnshire SCITT"
+    - header: "Lincolnshire ITT"
       link: "https://www.lincolnshirescitt.co.uk/aor"
       name: "Ellie Hextall"
       email: "scittenquiries@prioryacademies.co.uk"
@@ -149,7 +147,14 @@ provider_groups:
       telephone: "03451 450075"
       international_phone: "+443451450075"
       
-    - header: "Lincolnshire SCITT"
+    - header: "Future Teacher Training"
+      link: "https://www.futureteachertraining.org/"
+      name: "Ciara Sutton"
+      email: "enquiries@scitt.futureacademies.org"
+      telephone: "07442 243525"
+      international_phone: "+447442243525"
+      
+    - header: "Lincolnshire ITT"
       link: "https://www.lincolnshirescitt.co.uk/aor"
       name: "Ellie Hextall"
       email: "scittenquiries@prioryacademies.co.uk"
@@ -215,11 +220,11 @@ provider_groups:
       international_phone: "+442083006566"
       
     - header: "Future Teacher Training"
-      link: "https://www.futureteachertraining.org/Routes/"
-      name: "Fran Wood"
-      email: "f.wood@futureacademies.org"
-      telephone: "020 7802 3455"
-      international_phone: "+442078023455"
+      link: "https://www.futureteachertraining.org/"
+      name: "Ciara Sutton"
+      email: "enquiries@scitt.futureacademies.org"
+      telephone: "07442 243525"
+      international_phone: "+447442243525"
       
     - header: "Kent & Medway Training (MT)"
       link: "https://www.kmtraining.org.uk/assessment-only-route-to-qualified-teacher-status/"
@@ -423,6 +428,13 @@ provider_groups:
       
       
       
+    - header: "OTT SCITT"
+      link: "http://www.ott-scitt.org.uk/aor"
+      name: "Marion Rawlings"
+      email: "AOR@ott-scitt.org.uk"
+      telephone: "01865 518209"
+      international_phone: "+441865518209"
+      
     - header: "South Farnham SCITT"
       link: "https://www.ssfscitt.org.uk/page/?title=Assessment+Only+Route&pid=42"
       name: "Ann-Marie Bahaire"
@@ -494,6 +506,13 @@ provider_groups:
       email: "office@mscitt.org.uk"
       telephone: "01458 449418"
       international_phone: "+441458449418"
+      
+    - header: "OTT SCITT"
+      link: "http://www.ott-scitt.org.uk/aor"
+      name: "Marion Rawlings"
+      email: "AOR@ott-scitt.org.uk"
+      telephone: "01865 518209"
+      international_phone: "+441865518209"
       
     - header: "Somerset SCITT"
       link: "https://www.sciltraining.co.uk/assessment-only-route-to-qualified-teacher-status-qts/"
@@ -593,7 +612,7 @@ provider_groups:
     - header: "GORSE SCITT"
       link: "https://gorsescitt.org.uk/"
       name: "Nicci Cornfoot"
-      email: "info@gorsescitt.org.uk"
+      email: "assessmentonly@gorsescitt.org.uk"
       telephone: "0113 487 1777"
       international_phone: "+441134871777"
       
@@ -656,13 +675,6 @@ provider_groups:
       telephone: "01206 364728"
       international_phone: "+441206364728"
       
-    - header: "GORSE SCITT"
-      link: "https://gorsescitt.org.uk/"
-      name: "Nicci Cornfoot"
-      email: "info@gorsescitt.org.uk"
-      telephone: "0113 487 1777"
-      international_phone: "+441134871777"
-      
     - header: "Inspiring Futures Partnership Trust"
       link: "https://cheppingviewscitt.com/Entry-Criteria/"
       name: "Nicky Stephenson"
@@ -670,13 +682,6 @@ provider_groups:
       telephone: "01494 535564"
       international_phone: "+441494535564"
       extension: "(option 3)"
-    - header: "Lincolnshire SCITT"
-      link: "https://www.lincolnshirescitt.co.uk/aor"
-      name: "Ellie Hextall"
-      email: "scittenquiries@prioryacademies.co.uk"
-      telephone: "01522 889297"
-      international_phone: "+441522889297"
-      
     - header: "Mersey Boroughs ITT Partnership"
       link: "https://merseyitt.org.uk/courses/assessment-only/"
       
@@ -816,8 +821,8 @@ Talk to your provider about whether your experience makes you eligible for this 
 
 Or, find other ways you can [train to be a teacher](/train-to-be-a-teacher).
 
-### If you're based overseas or are a non-UK citizen
+### If you live outside the UK or are a non-UK citizen
 
-If you’re based overseas, you will need to contact a [non-UK assessment only provider](/train-to-be-a-teacher/assessment-only-route-to-qts#group--non-uk). You may also be interested in [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status). With iQTS, you can train where you live and work, with no need to visit the UK.
+If you’re based outside the UK, you will need to contact a [non-UK assessment only provider](/train-to-be-a-teacher/assessment-only-route-to-qts#group--non-uk). You may also be interested in [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status). With iQTS, you can train where you live and work, with no need to visit the UK.
 
 If you’re a non-UK citizen based in the UK, contact one of the regional or national providers listed on this page.

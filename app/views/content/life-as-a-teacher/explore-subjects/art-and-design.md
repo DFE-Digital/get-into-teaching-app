@@ -19,5 +19,4 @@ keywords:
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/art-and-design/article"
-  - "content/shared/subject-pages/adviser-promo"
 ---

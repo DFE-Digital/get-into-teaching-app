@@ -5,7 +5,7 @@ description: |-
   All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 backlink: "../../"
 promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+  - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
@@ -74,11 +74,13 @@ A typical teacher could earn at least $salaries_fiveyears_max$ (or more in Londo
 
 You may also receive additional payments on top of your regular salary for taking on extra responsibilities.
 
-This could be a one-off payment for a specific project, for example, creating a timetable.
+You could get a one-off payment for a specific project, for example, creating a timetable, or for taking on extra responsibility attached to your job role, for example, being the head of department.
 
-Or it might be an extra responsibility attached to your job role, for example, being the head of department.
+These additional payments are called teaching and learning responsibility (TLR) payments.
 
 Depending on your responsibilities, you could earn up to an extra $salaries_tlr_max$. Your school will determine how much you receive.
+
+Teachers who [take on a special educational needs and disabilities (SEND) role](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs) may also receive additional payments. These are known as SEN allowances.
 
 <a name="career-progression"></a>
 
@@ -103,11 +105,11 @@ What this will involve will depend on your school, but could include:
 
 ### Headteacher salary
 
-You could also go into a leadership position, such as a headteacher.
+You could also go into a leadership position, such as a headteacher or assistant headteacher.
 
 A headteacher is the most senior person in a school. They are ultimately responsible for all teachers and pupils.
 
-Their role is wide ranging, but includes leading and motivating teachers, and ensuring all pupils get a good education.
+Their role is wide-ranging, but includes leading and motivating teachers, and ensuring all pupils get a good education. The salary of a headteacher reflects this responsibility and can vary depending on the size and location of the school. 
 
 | Area                                     | Minimum | Maximum  |
 | -------                                  | -----   | -----    |
@@ -124,7 +126,7 @@ You need qualified teacher status (QTS) to work in maintained primary, secondary
 
 If you do not have QTS (for example, if you just have a PGCE), you can work in some schools as an unqualified teacher.
 
-This means you will be on a lower pay range and will not be entitled to the same benefits as a teacher with QTS.
+This means you will be on a lower pay range and will not be entitled to the same benefits as a teacher with QTS. 
 
 If you're already working as an unqualified teacher and have the right experience, you could be eligible for the [assessment only route to qualified teacher status (QTS)](/train-to-be-a-teacher/assessment-only-route-to-qts).
 
@@ -139,15 +141,16 @@ Or find out how you can earn an unqualified teacher salary while training to get
 | Outer London                             | $salaries_unqualifiedteacher_outerlondonmin$ | $salaries_unqualifiedteacher_outerlondonmax$ |
 | Inner London                             | $salaries_unqualifiedteacher_innerlondonmin$ | $salaries_unqualifiedteacher_innerlondonmax$ |
 
-## Holidays
+## Teacher holidays
 
 You'll get more days holiday than people in many other professions. In school, full-time teachers work 195 days per year.
 
 For comparison, you'd work 227 days per year (on average) if you worked full time in an office.
 
+
 ## Teachers' pension scheme
 
-The teachers’ pension scheme is one of the most generous in the country and includes an employer contribution of 28.6%.
+ One of the great benefits of a teaching career is a secure pension with employer contributions of 28.6%.
 
 It is a 'defined benefit' pension and is:
 

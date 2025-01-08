@@ -49,7 +49,7 @@
       <li>making links and drawing comparisons within and/or across different periods and aspects of the past</li>
       <li>organising and communicating historical knowledge and understanding in different ways and reaching conclusions based on evidence</li>
     </ul>
-    <%= render 'content/shared/teaching/ages_abilities' %>
+     <p><%= render 'content/shared/teaching/ages_abilities' %> <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary"> Explore more about teaching secondary</a>.</p>
   </section>
 
   <section class="col col-space-m col-720">
@@ -69,5 +69,7 @@
   <section class="col col-720">
     <%= render 'content/shared/teaching/ect_support' %>
   </section>
-
+  <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you to become a history teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
 </div>

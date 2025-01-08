@@ -3,12 +3,17 @@
     <h2 class="heading--box-blue">What you'll need to become a teacher</h2>
     <p>You’ll need a degree and <a href="/train-to-be-a-teacher/what-is-qts">qualified teacher status (QTS)</a> to work in the majority of schools in England. This includes state maintained primary, secondary and special schools.</p>
     <p>There are different ways to get QTS.</p>
+    <%= render Content::InsetTextComponent.new(
+      header: "Non-UK citizens:",
+      text: "<p>If you're not from the UK, find out about <a href=\"/non-uk-teachers/train-to-teach-in-england-as-an-international-student\">training to teach in England as a non-UK citizen</a>.</p>",
+      color: "purple"
+    ) %>
     <h3>If you have a degree</h3>
     <p>If you already have a degree, you can do a postgraduate teacher training course to gain QTS.</p>
     <p>It does not matter when you graduated, and your degree subject does not necessarily need to be in the subject you want to teach. Once you have QTS, you can also teach any other subject, as long as you can show you have enough expertise.</p>
     <h4>Funding postgraduate teacher training</h4>
     <p>Most postgraduate teacher training courses charge fees. There are ways to fund your training, for example, through tuition fee and maintenance loans. If you train to teach certain subjects, you may also be eligible for a bursary or scholarship of up to <%= v :scholarships_generic_maxshortened %>.</p>
-    <p>Other postgraduate teacher training courses come with a salary. This means you will not pay tuition fees and will receive a salary while you train. These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible.</p>
+    <p>Other postgraduate teacher training courses come with a salary, which means you get paid while you train. Some salaried courses may also charge fees. These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible.</p>
     <p>If you’re eligible for a bursary or scholarship, you could receive more money on a non-salaried course than on a salaried one.</p>
     <p><a href="/train-to-be-a-teacher/if-you-have-a-degree">Find out more about postgraduate teacher training</a>.</p>
     <h3>If you do not have a degree</h3>
@@ -40,4 +45,7 @@
       heading_color: "pink",
     ) %>
     </div>
+  <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you change careers to become a teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
 </div>

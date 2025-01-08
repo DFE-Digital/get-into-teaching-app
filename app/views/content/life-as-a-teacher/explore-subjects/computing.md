@@ -22,5 +22,4 @@ keywords:
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/computing/article"
-  - "content/shared/subject-pages/adviser-promo"
 ---
