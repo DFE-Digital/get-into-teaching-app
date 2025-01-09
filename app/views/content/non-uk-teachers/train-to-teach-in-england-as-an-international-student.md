@@ -25,7 +25,7 @@ expander:
       <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
       <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
   ukraine-visas:
-    header: Ukraine citizens
+    header: "Ukraine citizens:"
     title: help with visas
     text: |-
       <p>
