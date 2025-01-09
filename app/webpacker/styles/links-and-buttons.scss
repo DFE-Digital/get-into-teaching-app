@@ -249,11 +249,17 @@ body a.govuk-back-link {
   @extend .link;
 
   .cta-circle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    background-color: $white;
+    background-color: $cta-green;
+    height: 28px;
+    width: 28px;
 
     i {
-      color: $cta-green;
+      color: $white;
+      text-decoration: none;
     }
   }
 
