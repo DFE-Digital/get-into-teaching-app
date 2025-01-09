@@ -3,23 +3,3 @@
 <p>You can <%= link_to "change your answers", routes_into_teaching_steps_path %> if you need to.</p>
 
 <%= session[:routes_into_teaching].inspect %>
-<%= render Content::ResultsBoxComponent.new(
-  title: "Most popular route",
-  heading: "Postgraduate Initial Teacher Training with fees",
-  fee: "Yes",
-  course_length: "9 months (full-time) or up to 2 years (part-time)",
-  funding: "Scholarships or bursaries, as well as student loans, are available if you're eligible",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-  link_text: "Find out more",
-  link_target: "/steps-to-become-a-teacher",
-  border_color: :yellow,
-) %>
-<%= render Content::ResultsBoxComponent.new(
-  heading: "Postgraduate Initial Teacher Training with fees",
-  fee: "Yes",
-  course_length: "9 months (full-time) or up to 2 years (part-time)",
-  funding: "Scholarships or bursaries, as well as student loans, are available if you're eligible",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-  link_text: "Find out more",
-  link_target: "/steps-to-become-a-teacher",
-) %>
