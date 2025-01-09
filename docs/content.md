@@ -29,21 +29,18 @@ This documentation aims to be a reference for content editors that want to make 
 4. [Search engine optimisation](#search-engine-optimisation)
 5. [Creating a subject page](#creating-a-subject-page)
 6. [Creating an inspirational page](#creating-an-inspirational-page)
-7. [Creating a Blog Post](#creating-a-blog-post)
-    * [Images](#images)
-    * [Footers](#footers)
-8. [Navigation](#navigation)
+7. [Navigation](#navigation)
     * [Main Navigation](#main-navigation)
     * [Category Pages](#category-pages)
-9. [Build errors](#build-errors)
-10. [Internship providers](#internship-providers)
-11. [Creating a new page](#creating-a-new-page)
-12. [Preview a change](#preview-a-change)
-13. [Saving a change](saving-a-change)
-14. [If you add something to the wrong branch](wrong-branch)
-15. [Redirect URLs](redirect-urls)
-16. [Finding links on the site](links-site)
-17. [Resolving merge conflicts](merge-conflicts)
+8. [Build errors](#build-errors)
+9. [Internship providers](#internship-providers)
+10. [Creating a new page](#creating-a-new-page)
+11. [Preview a change](#preview-a-change)
+12. [Saving a change](saving-a-change)
+13. [If you add something to the wrong branch](wrong-branch)
+14. [Redirect URLs](redirect-urls)
+15. [Finding links on the site](links-site)
+16. [Resolving merge conflicts](merge-conflicts)
 
 
 ## Setting up Codespaces and Github
@@ -70,13 +67,13 @@ You will need to download and set up an account on Github and Visual Studio Code
 
 When you want to edit content on the website the first step is to find out where that content resides in the [repository](https://github.com/DFE-Digital/get-into-teaching-app).
 
-The majority of web pages on the site are within the [/app/views/content](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content) directory; this reflects the top-level pages of the website (including the home page). If, for example, you wanted to edit [the 'how to apply for teacher training' blog post](https://getintoteaching.education.gov.uk/blog) content you would edit the file [/app/views/content/blog/how-to-apply-for-teacher-training.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/blog/how-to-apply-for-teacher-training.md). The structure here mimics the URL of the pages (the home page is a special case):
+The majority of web pages on the site are within the [/app/views/content](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content) directory; this reflects the top-level pages of the website (including the home page). If, for example, you wanted to edit [the 'Teacher pay' page](https://getintoteaching.education.gov.uk/life-as-a-teacher/pay-and-benefits/teacher-pay) content you would edit the file [/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md). The structure here mimics the URL of the pages (the home page is a special case):
 
 | URL                                     | Content File                                                 |
 | ---------------------------------       | ---------------------------------------------------------    |
 | /                                       | /app/views/content/home.md                                   |
 | /funding-and-support                    | /app/views/content/funding-and-support.md                  |
-| /blog/how-to-apply-for-teacher-training | /app/views/content/blog/how-to-apply-for-teacher-training.md |
+| /life-as-a-teacher/pay-and-benefits/teacher-pay | /app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md |
 
 Some web pages are more structurally complex than others and are made up of multiple Markdown files that get pulled into a single page. The home page is a good example of this; in addition to the main content page in [/app/views/content/home.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/home.md) there are multiple other content files that reside under [/app/views/content/home/*.md](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content/home). If you can't find the content you wish to edit in the main file for that page, it's worth checking to see if it has a corresponding subdirectory with additional content files in.
 
@@ -157,7 +154,7 @@ Images should be appropriately scaled and compressed prior to adding them to the
 
 #### Alt text
 
-The images used in the hero and on blog posts now pull their alt text from a central store. This allows us to set it once and include it wherever the image is used. The data is stored in `config/images.yml` and the format is as follows:
+The images used in the hero now pull their alt text from a central store. This allows us to set it once and include it wherever the image is used. The data is stored in `config/images.yml` and the format is as follows:
 
 ```yaml
 "static/images/content/hero-images/0032.jpg":
@@ -813,73 +810,6 @@ content:
   - "content/life-as-a-teacher/pay-and-benefits/quote" 
 ```
 
-## Creating a Blog Post
-
-Blog posts should be written in Markdown format using the following template as a guide:
-
-#### article-title.md
-
-```yaml
----
-title: Article title
-date: "2021-08-26"
-images:
-an_image:
-  path: "static/images/content/blog/image.jpg"
-  thumbnail_path: "static/images/content/blog/thumbnails/image.jpg"
-  alt: "A description of the image"
-another_image:
-  path: "static/images/content/blog/another_image.jpg"
-  alt: "A description of the image"
-description: |-
-  A brief description of the blog article.
-keywords:
-  - keyword 1
-  - keyword 2
-tags:
-  - tag 1
-  - tag 2
----
-
-## Heading
-
-The blog content goes here. You can use [links](http://link.com) and other Markdown formatting, in addition to some custom Markdown syntax, such as including another image:
-
-$another_image$
-```
-
-### Images
-
-The first image (`an_image` in the above example) will be displayed at the top of the blog post and in the thumbnail image on the pages that list blog posts. The main blog image should ideally be `1464px x 1100px` to fit the available space in the template at a reasonable resolution.
-
-Ideally you should also provide a `thumbnail_path` for the first image; this should be as close to `340px x 260px` as possible. If a `thumbnail_path` is not provided the `path` image will be used and scaled-down to display at a width of `170px` (maintaining the image aspect ratio - thumbnail images should be `340px` wide to look clear on retina devices).
-
-### Content
-
-Introduction paragraphs (where used) should go underneath the first image rather than above it. Use normal text rather than italics for the introduction paragraph as this is better for accessibility. If it is necessary to separate this introduction paragraph from subsequent paragraphs, you can use a heading.
-
-Biographical information about the author should go at the end of the article above the footer, with a heading of 'About the author'.
-
-### Footers
-
-The final paragraph in each blog post will be formatted so it stands out from the rest. It's intended to be used as a closing or summary paragrah that directs users on which step to take next if the post has inspired them. To reduce duplication there is a collection of generic ones listed in `app/views/blog/closing-paragraphs`.
-
-To use a generic one without copying the content add the following key to the front matter, replacing the chosen variant as needed:
-
-```yaml
-closing_paragraph: enriching-the-lives-of-young-people
-```
-
-To add a new generic variant, copy and paste an existing one, give it an appropriate name `my-new-closing-paragraph.html.erb` and then reference it from your post:
-
-```yaml
-closing_paragraph: my-new-closing-paragraph
-```
-
-### Tags
-
-We have a whitelist of available blog tags in `/config/tags.yml` - if you try to add a tag not contained within this list you will receive an error message on the blog post page and our test suite will fail (preventing you from deploying your blog post). If you need a tag not already in the whitelist, add it to the `tags.yml` before referencing it in your blog post.
-
 ## Navigation
 
 There are two types of navigation components on the website; the main navigation (at the top of every page) and category pages (a page where the navigation component is in the content as a group of cards). They are both configured in a similar way.
@@ -1086,9 +1016,6 @@ Example: "/train-to-be-a-teacher/teacher-training-personal-statement": "/how-to-
 Press enter to create an indention - 
 Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
 The easiest way to make sure you don't miss any pages to redirect is to do a search which will show you all the pages you need to include.
-
-## Redirect blog tags
-If you're deleting any blog posts as well as setting up redirects you'll also need to check the blog tags to see if there are any that need to be deleted too. **Blog tags live in the config file**.
 
 ## Finding links on the site
 You can find everywhere a page is linked to by:
