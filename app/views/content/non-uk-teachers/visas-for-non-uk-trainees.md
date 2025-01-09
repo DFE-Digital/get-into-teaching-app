@@ -6,7 +6,7 @@ description: |-
 related_content:
     Train to teach in England as an international student: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
+    What it's like to be a tacher : "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
 promo_content:
 navigation: 20.30
 navigation_title: Apply for your visa to train to teach
