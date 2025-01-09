@@ -21,7 +21,7 @@ expander:
     text: You should check the deadline for non-UK applications with training providers. They may close earlier than for other applicants. 
   ukraine-inset:
     title: moving to the UK
-    header: Ukraine citizens
+    header: "Ukraine citizens:"
     text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.
 ---
 
