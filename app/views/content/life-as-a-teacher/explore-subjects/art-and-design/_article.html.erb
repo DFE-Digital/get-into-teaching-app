@@ -4,6 +4,7 @@
      <div class="inset">
     <p>Teaching art and design gives pupils the technical skills needed to express their ideas through a range of materials and forms of media. You'll help pupils develop their own skills by encouraging them to critically review their work. Your pupils will develop an appreciation of art and design, and of the diverse ideas and perspectives of others.</p>
      <%= render 'content/shared/teaching/benefits' %>
+     <%= render 'content/shared/teaching/why_teach' %>
     </div>
   </section>
 
@@ -46,7 +47,7 @@
       <li>using knowledge and understanding of the work of others to develop and extend thinking and inform their own work</li>
       <li>generate and explore potential lines of enquiry using appropriate media and techniques</li>
     </ul>
-<%= render 'content/shared/teaching/ages_abilities' %>
+    <p><%= render 'content/shared/teaching/ages_abilities' %><a href="/life-as-a-teacher/age-groups-and-specialisms/secondary">Explore more about teaching secondary</a>.</p>
 </section>
 
    <section class="col col-space-m col-720">
@@ -65,4 +66,7 @@
    <section class="col col-720">
     <%= render 'content/shared/teaching/ect_support' %>
   </section>
+  <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you to become an art and design teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
 </div>

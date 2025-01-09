@@ -1,6 +1,11 @@
 <div class="row inset">
   <section class="col col-720 col-space-l-top">
     <p>If you're thinking about changing careers to become a teacher, knowing where to start and understanding what your options are can seem overwhelming. There's lots of dedicated support available to help you navigate the change.</p>
+    <%= render Content::InsetTextComponent.new(
+      header: "Non-UK citizens:",
+      text: "<p>If you're not from the UK, find out about <a href=\"/non-uk-teachers/train-to-teach-in-england-as-an-international-student\">training to teach in England as a non-UK citizen</a>.</p>",
+      color: "purple"
+    ) %>
     <h2 class="heading--box-blue">Get advice and guidance from an expert</h2>
     <h3>Teacher training advisers</h3>
     <p>Our experienced teacher training advisers offer free one-to-one support to thousands of people each year to support them through a career change into teaching. All of our advisers have years of teaching experience, so can also give practical advice and insights on what life in the classroom is like.</p>
