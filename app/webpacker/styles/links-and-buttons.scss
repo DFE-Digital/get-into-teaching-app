@@ -245,8 +245,9 @@ body a.govuk-back-link {
   display: inline-flex;
   align-items: center;
   gap: 0.4em;
-  padding: 0.1em 0;
+  padding: 0.1em 0.1em;
   @extend .link;
+  text-decoration: none;
 
   .cta-circle-button {
     display: flex;
@@ -256,20 +257,28 @@ body a.govuk-back-link {
     background-color: $cta-green;
     height: 28px;
     width: 28px;
-
+    
     i {
       color: $white;
-      text-decoration: none;
+    }
+  }
+  
+  .cta-link-text {
+    @include font-size("small");
+    @extend .link;
+    text-decoration: underline;
+  }
+  
+  &:hover {
+    .cta-circle-button {
+      background-color: darken($cta-green, 5%);
     }
   }
 
-  .cta-link-text {
-    @include font-size("small");
-  }
-
-  &:hover {
-    .cta-circle-button i {
-      color: darken($cta-green, 5%);
+  @include mq ($until: tablet) {
+    .cta-circle-button {
+      height: 24px;
+      width: 24px;
     }
   }
 }
