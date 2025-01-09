@@ -10,6 +10,7 @@ on:
 permissions:
   contents: write
   deployments: write
+  id-token: write
   issues: write
   packages: write
   pull-requests: write
@@ -436,9 +437,6 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     concurrency: Review_${{github.event.number}}
-    permissions:
-      id-token: write
-      pull-requests: write
     environment:
        name: review
     steps:
@@ -498,8 +496,6 @@ jobs:
     if: github.ref == 'refs/heads/master'
     concurrency: Development
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
     environment:
       name: development
     outputs:
@@ -618,8 +614,6 @@ jobs:
     if: github.ref == 'refs/heads/master'
     concurrency: test
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
     environment:
        name: test
     steps:
@@ -666,8 +660,6 @@ jobs:
     needs: [ build_base, test ]
     environment:
        name: test
-    permissions:
-      id-token: write
     services:
       postgres:
         image: postgres:13.10
@@ -738,8 +730,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ integration, development ]
     concurrency: production
-    permissions:
-      id-token: write
     environment:
        name: production
     steps:
