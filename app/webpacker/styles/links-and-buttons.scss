@@ -255,14 +255,16 @@ body a.govuk-back-link {
     i {
       color: $cta-green;
     }
-
-    &:hover i {
-      color: darken($cta-green, 5%);
-    }
   }
 
   .cta-link-text {
     @include font-size("small");
+  }
+
+  &:hover {
+    .cta-circle-button i {
+      color: darken($cta-green, 5%);
+    }
   }
 }
 
