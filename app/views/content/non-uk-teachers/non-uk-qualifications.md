@@ -69,11 +69,7 @@ To train to teach in England, you’ll need to have:
 * for teaching pupils aged 3 to 11, a science qualification of the same standard as GCSE grade 4 (C) 
 * an English language qualification which meets the standard of a GCSE (General Certificate of Secondary Education) grade 4 (C) 
 
-A GCSE is an academic qualification awarded for exams in England, usually taken at the age of 16. 
-
-When you get offered a place on a course, your provider will arrange a background and criminal records check. This is known as a Disclosure and Barring Service (DBS) check. You must pass these checks to teach students under 18. Safeguarding checks may take longer if you are living or have lived abroad. 
-
-You’ll also need to complete a fitness questionnaire before starting training. 
+A GCSE is an academic qualification awarded for exams in England, usually taken at the age of 16.
 
 ## How to check your qualifications
 
@@ -83,17 +79,7 @@ This certificate proves your school and university qualifications are the same s
 
 When you apply for teacher training, you’ll be asked to submit details of your statement of comparability. Applications which include this are 28% more likely to be successful. 
 
-A statement of comparability costs $nonuk_statementofcomparabilitycost$. It takes 15 working days to complete your order from the date ENIC receives your qualification documents and payment. 
-
-
-## Get help checking your qualifications
-
-To get help with your qualifications, you can use the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country's standard rate.
-
-We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
-
-When you speak to us, we can tell you if you're eligible for a [teacher training adviser](/teacher-training-advisers).
-
+A statement of comparability costs $nonuk_statementofcomparabilitycost$. It takes 15 working days to complete your order from the date ENIC receives your qualification documents and payment.
 
 ## English language, maths and science proficiency
 
@@ -111,22 +97,24 @@ If you do not have a degree, you can apply for an [undergraduate course in Engla
 
 The [UK Council for International Student Affairs website](https://www.ukcisa.org.uk/) has lots of helpful information about studying at an English university.
 
-## How to apply
+## How to apply for teacher training
 
-Have you spoken to one of our advisers to check you have the required qualifications for teacher training in England? They can also help you submit your application.
+You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to qualified teacher status (QTS).  
 
-Learn more about [how to find and apply for teacher training courses](/non-uk-teachers/train-to-teach-in-england-as-an-international-student#find-and-apply-for-teacher-training-courses).
+[Find guidance on applying for teacher training courses](/how-to-apply-for-teacher-training/teacher-training-application). 
 
-## Already a qualified teacher?
+When you get offered a place on a course, your provider will arrange a background and criminal records check. This is known as a Disclosure and Barring Service (DBS) check. You must pass these checks to teach students under 18. Safeguarding checks may take longer if you are living or have lived abroad. 
+
+You’ll also need to complete a fitness questionnaire before starting training. 
 
 If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
-## Contact
+## Get help
+
+To get help with your qualifications, you can use the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country's standard rate.
+
+We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
+
+When you speak to us, we can tell you if you're eligible for a [teacher training adviser](/teacher-training-advisers).
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
-
-You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your application to a training provider or school.
-
-To check if you're eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
-
-We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
