@@ -1,5 +1,5 @@
 ---
-title: "Apply for your visa to train to teach in England"
+title: "Teacher training visas for non-UK citizens"
 subcategory: If you want to train to teach
 description: |-
   Learn more about types of visa non-UK citizens will need to study or work in England, and how to apply.
@@ -9,7 +9,7 @@ related_content:
     What it's like to be a tacher : "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
 promo_content:
 navigation: 20.30
-navigation_title: Apply for your visa to train to teach
+navigation_title: Teacher training visas for non-UK citizens
 navigation_description: Learn more about applying for a Student or Skilled Worker visa to train to teach in England.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
@@ -56,47 +56,45 @@ keywords:
   
 ---
 
-## How to apply for your visa
 
-If you’re applying for teacher training as a non-UK citizen, you'll need a [visa or immigration status allowing you to study or work in England](#check-your-status). 
+If you’re applying for teacher training as a non-UK citizen, you will need a [visa or immigration status allowing you to study or work in England](#check-your-status). 
 
-Most candidates who do not already have a visa or immigration status allowing them to study or work in England will need to apply for a Student or Skilled Worker visa.
+If you do not have a visa or immigration status allowing you to study or work in England, you’ll need to apply for a Student or Skilled Worker visa. 
 
 $ukraine-visas$
 
-### Student visa 
+## Student visa for fee-paying training courses
 
-Most teacher training courses in England are fee-paying. You'll need a Student visa if you train on a fee-paying course. Your Student visa must be sponsored by your teacher training provider. 
+Most teacher training courses in England are fee-paying. This means you will need to pay tuition fees to train.
 
-### Skilled Worker visa 
+You will need a Student visa if you’re on a fee-paying course. Your Student visa must be sponsored by your teacher training provider. 
 
-Some teacher training courses in England are salaried – this means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). Currently, places on these courses are very limited. You'll need a Skilled Worker visa if you train on a salaried training course. Your Skilled Worker visa must be sponsored by the school employing you.
+[Find out more about studying in the UK on a Student visa](https://www.gov.uk/student-visa).
 
 $refugees-asylum-seekers$
 
-### What you need to do to apply for your visa 
+### Bursaries and scholarships if you’re on a Student visa 
 
-[Search for postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and filter your results by visa sponsorship. 
+If you’re training to teach physics or languages, you may be [eligible for a bursary or scholarship](https://getintoteaching.education.gov.uk/non-uk-teachers/fees-and-funding-for-non-uk-trainees).  
 
-Email your chosen provider to check they can sponsor you, then [apply for your teacher training course](/how-to-apply-for-teacher-training). 
+If you successfully apply for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
 
-When you have a confirmed offer of a training place, you’ll be able to apply for your visa.  
+However, bursaries are not paid until late October, so you’ll need to have enough money to support yourself until then. 
 
-To [apply for a Student visa](https://www.gov.uk/student-visa), you'll also need to: 
 
-* have a reference number, called a confirmation of acceptance for studies (CAS), which your training provider will give you
-* [have enough money to support yourself and pay for your course](https://www.gov.uk/student-visa/money)
-* [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/student-visa/knowledge-of-english)
+## Skilled Worker visa for salaried training courses
 
-For a [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa), you'll also need to: 
+Some teacher training courses in England are salaried. This means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). 
 
-* have a ‘certificate of sponsorship’ from the school which is paying you, confirming they will sponsor you 
-* [meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
-* check your salary meets the requirement for a Skilled Worker visa 
+You will need a Skilled Worker visa if you are on a salaried training course. Your Skilled Worker visa must be sponsored by the school employing you. 
+
+Places on these courses are limited and some salaried courses also charge fees. 
+
+[Find out more about working in the UK on a Skilled Worker visa](https://www.gov.uk/student-visa).
 
 ### Salary requirement for a Skilled Worker visa 
 
-Non-UK salaried trainee teachers must earn a minimum salary to be eligible for a Skilled Worker visa – this varies by region, as follows: 
+You must earn a minimum salary to be eligible for a Skilled Worker visa. This varies by region: 
 
 * inner London: $nonuk_skilledworkervisatraineeminfulltime_innerlondon$ 
 
@@ -110,19 +108,20 @@ Check the region you'll be working in with your teacher training provider.
 
 You may be able to train part-time, but your part-time salary must be at least $nonuk_skilledworkervisatraineeminparttime$.
 
-### Your partner and children 
 
-If your course starts after 1 January 2024, you will not be able to bring your partner and children with you on a Student visa. 
 
-You may be able to bring your partner and children with you on a Skilled Worker visa. 
+## What you need to do to apply for your visa 
 
-### How a bursary or scholarship can help with your Student visa application 
+[Search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that offer visa sponsorship. 
 
-If you're training to teach physics or languages, you may be [eligible for a bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees?#bursaries-and-scholarships-for-non-uk-trainee-languages-and-physics-teachers). You can use them in your Student visa application as proof that you have enough money to support yourself. 
+Email your chosen provider to check if they can sponsor you, then [apply for your teacher training course](/how-to-apply-for-teacher-training). 
 
-## Check your status
+You can apply for your visa once you have a confirmed offer of a training place. 
 
-If you're not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
+
+### Check your status
+
+If you are not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
 
 You will not need a visa to train to teach in the UK if you:
 
@@ -132,7 +131,7 @@ You will not need a visa to train to teach in the UK if you:
 
 You will not need to be sponsored for a Student or Skilled Worker visa if you are on a: 
 
-* [Afghan Citizens Resettlement or Afghan Relocations and Assistance Policy scheme](https://www.gov.uk/government/publications/afghanistan-resettlement-and-immigration-policy-statement/afghanistan-resettlement-and-immigration-policy-statement-accessible-version)
+* [Afghan Citizens Resettlement or Afghan Relocations and Assistance Policy scheme](https://www.gov.uk/government/publications/afghanistan-resettlement-and-immigration-policy-statement/afghanistan-resettlement-and-immigration-policy-statement-accessible-version)  
 * [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)  
 * [Family visa](https://www.gov.uk/uk-family-visa)  
 * [Graduate visa](https://www.gov.uk/graduate-visa)  
@@ -150,43 +149,30 @@ You will not need to be sponsored for a Student or Skilled Worker visa if you ar
 
 You will not need to be sponsored for a Student or Skilled Worker visa if you have permission to live in the UK as a dependant (usually partner) of someone on a visa. You can work or study without a sponsor for the duration of your partner’s visa. 
 
+You may be able to bring your partner and children with you if you’re on a Skilled Worker visa. 
 
-
-## Visa fees and other charges
-
-You'll usually need to show you have enough money to support yourself in England by providing proof of savings or income. You’ll be guided through this process when you apply for your visa.
 
 ### Visa fees
 
-You’ll also have to pay [visa fees](https://www.gov.uk/visa-fees).
+You will need to pay [visa fees](https://www.gov.uk/visa-fees). Use this tool to work out the cost of your UK visa application.  
+
+When you apply for a visa, you will usually need to show you have enough money to support yourself in England by providing proof of savings or income.  
 
 ### Immigration Health Surcharge
 
-You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application – this is called the Immigration Health Surcharge (IHS).
+You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application. This is called the Immigration Health Surcharge (IHS).
 
-However, some students can claim a refund of the IHS if they:
+However, [some students can claim a refund of the IHS](https://www.gov.uk/guidance/immigration-health-surcharge-for-eu-students-in-the-uk) depending on their circumstances.
 
-* are a full-time student in UK higher education
-* have a visa starting on or after 1 January 2021
-* have a European Health Insurance Card (EHIC) issued in an EU country
-* do not work in the UK
 
-Learn more about [getting an IHS refund](https://www.gov.uk/guidance/immigration-health-surcharge-for-eu-students-in-the-uk).
+## Get help
 
-## Contact
+[Contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
-If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
-
-You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
-
-You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your application to a training provider or school.
+You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your teacher training application.
 
 To check if you're eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
 
 We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
 
-
-
-
-
- 
+If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
