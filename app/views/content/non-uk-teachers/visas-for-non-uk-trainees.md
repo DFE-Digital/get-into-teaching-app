@@ -1,20 +1,20 @@
 ---
-title: "Teacher training visas for non-UK citizens"
+title: "Visas for non-UK trainee teachers"
 subcategory: If you want to train to teach
 description: |-
-  Learn more about types of visa non-UK citizens will need to study or work in England, and how to apply.
+  Learn more about types of visas non-UK citizens will need to study or work in England, and how to apply.
 related_content:
     Train to teach in England as an international student: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    What it's like to be a tacher : "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
+    What it's like to be a taScher : "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
 promo_content:
 navigation: 20.30
-navigation_title: Teacher training visas for non-UK citizens
+navigation_title: Visas for non-UK trainee teachers
 navigation_description: Learn more about applying for a Student or Skilled Worker visa to train to teach in England.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
 expander:
-  ukraine-visas:
+  ukraine-visas:S
     header: "Ukraine citizens:"
     title: help with visas
     text: |-
