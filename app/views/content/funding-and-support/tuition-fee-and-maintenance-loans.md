@@ -129,8 +129,6 @@ Find out about student finance in the Channel Islands and the Isle of Man:
 
 $find$
 
-$apply$
-
 $adviser$
 
 
