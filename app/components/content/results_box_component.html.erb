@@ -1,0 +1,33 @@
+<div class="results-box-component">
+  <% if title %>
+    <div class="results-box__title">
+      <%= title %>
+    </div>
+  <% end %>
+  <section class="results-box results-box--<%= border_color %>">
+    <h2 class="results-box__heading">
+      <%= heading %>
+    </h2>
+    <div class="results-box__course-info-container results-box__text">
+      <div class="results-box__info-row">
+        <div class="results-box__label">Course fee</div>
+        <div class="results-box__value"><%= fee %></div>
+      </div>
+      <hr>
+      <div class="results-box__info-row">
+        <div class="results-box__label">Course length </div>
+        <div class="results-box__value"><%= course_length %></div>
+      </div>
+      <hr>
+      <div class="results-box__info-row">
+        <div class="results-box__label">Funding </div>
+        <div class="results-box__value"><%= funding %></div>
+      </div>
+      <hr>
+    </div>
+    <div class="results-box__text results-box__full-width-text"><%= text %></div>
+    <div class="results-box__cta">
+      <%= render Content::LinkAsButtonComponent.new(link_text: @link_text, href: @link_target) %>
+    </div>
+  </section>
+</div>
