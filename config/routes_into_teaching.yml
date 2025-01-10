@@ -102,3 +102,29 @@ routes:
         answers: ["*"]
       - question: location
         answers: ["*"]
+
+  - title: Undergraduate degree (followed by Assessment only)
+    course_length: up to 4 years
+    course_fee: "Yes"
+    funding: "No"
+    description:
+    matches:
+      - question: undergraduate_degree
+        answers: ["No"]
+      - question: unqualified_teacher
+        answers: ["Yes"]
+      - question: location
+        answers: ["No"]
+
+  - title: Undergraduate degree (followed by iQTS)
+    course_length: up to 4 years
+    course_fee: "Yes"
+    funding: "No"
+    description:
+    matches:
+      - question: undergraduate_degree
+        answers: ["No"]
+      - question: unqualified_teacher
+        answers: ["Yes"]
+      - question: location
+        answers: ["No"]
