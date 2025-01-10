@@ -328,7 +328,7 @@ If the content you are creating will be used elsewhere on the site in the exact 
 To create a partial go to the /app/views/content/shared folder then either select an appropriate file or create your own folder. Then create a file. In the file place the HTML code that you would like to replicate on multiple pages. 
 
 ```yaml
-<div class="check-qualifcations">
+<div class="check-qualifications">
   <h3>Check your qualifications</h3>
   <p>To train to teach in England, you'll need:</p>
   <ul>
@@ -343,7 +343,7 @@ To create a partial go to the /app/views/content/shared folder then either selec
 Then, when you are working in another HTML file and want to render your code all you have to do is reference the code you created as follows:
 
 ```yaml
- <%= render 'content/shared/qualifications-training/check_qualifcations' %> 
+ <%= render 'content/shared/qualifications-training/check_qualifications' %> 
 ```
 If you need a specific change across each version of your code such as the subject, it is possible to create a variable. All you have to do is reference something in the frontmatter. In the following frontmatter the subject is chemistry. 
 
@@ -376,7 +376,7 @@ To create a variable that references the frontmatter simply copy the format belo
 ```
 This means that you can use the following code over many pages so that each page has its own unique subject rendered.  
 ```yaml
-<div class="check-qualifcations">
+<div class="check-qualifications">
   <h3>Check your qualifications</h3>
   <p>To train to teach <%= @front_matter["subject"] %> in England, you'll need:</p>
   <ul>
