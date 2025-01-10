@@ -57,7 +57,7 @@ keywords:
 ---
 
 
-If you’re applying for teacher training as a non-UK citizen, you will need a [visa or immigration status allowing you to study or work in England](#check-your-status). 
+If you’re applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study or work in England. 
 
 If you do not have a visa or immigration status allowing you to study or work in England, you’ll need to apply for a Student or Skilled Worker visa. 
 
@@ -77,7 +77,7 @@ $refugees-asylum-seekers$
 
 If you’re training to teach physics or languages, you may be [eligible for a bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).  
 
-If you successfully apply for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
+If you successfully applied for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
 
 However, bursaries are not paid until late October, so you’ll need to have enough money to support yourself until then. 
 
