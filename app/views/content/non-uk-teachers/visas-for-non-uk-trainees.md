@@ -75,7 +75,7 @@ $refugees-asylum-seekers$
 
 ### Bursaries and scholarships if you’re on a Student visa 
 
-If you’re training to teach physics or languages, you may be [eligible for a bursary or scholarship](https://getintoteaching.education.gov.uk/non-uk-teachers/fees-and-funding-for-non-uk-trainees).  
+If you’re training to teach physics or languages, you may be [eligible for a bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).  
 
 If you successfully apply for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
 
