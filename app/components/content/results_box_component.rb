@@ -9,7 +9,7 @@ module Content
 
       @title = substitute_values(title)
       @heading = substitute_values(heading)
-      @fee = substitute_values(fee)
+      @fee = fee
       @course_length = substitute_values(course_length)
       @funding = substitute_values(funding)
       @text = substitute_values(text)
