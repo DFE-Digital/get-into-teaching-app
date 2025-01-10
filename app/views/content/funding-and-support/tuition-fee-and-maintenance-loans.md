@@ -19,6 +19,14 @@ calls_to_action:
         text: "Use the student finance calculator on GOV.UK to get an estimate of how much funding you might get."
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
+    find:
+      name: simple
+      arguments:
+        icon: "icon-search-black"
+        title: "Find your teacher training course"
+        text: "Take a look at the different teacher training courses available."
+        link_text: "Search for a course"
+        link_target: "https://find-teacher-training-courses.service.gov.uk/"
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 keywords:
@@ -119,4 +127,10 @@ Find out about student finance in the Channel Islands and the Isle of Man:
 * [student finance guidance from the States of Guernsey](https://www.gov.gg/article/152744/Policies)
 * [student awards guidance from the Isle of Man Government website](https://www.gov.im/student-grants)
 
+$find$
+
+$apply$
+
 $adviser$
+
+
