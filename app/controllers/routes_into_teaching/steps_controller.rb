@@ -13,10 +13,6 @@ module RoutesIntoTeaching
       @results = RoutesIntoTeaching::Routes.recommended(session[:routes_into_teaching])
     end
 
-    def completed
-      @results = RoutesIntoTeaching::Routes.recommended(session[:routes_into_teaching])
-    end
-
   private
 
     def noindex?
