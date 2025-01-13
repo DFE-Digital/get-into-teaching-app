@@ -20,7 +20,7 @@ calls_to_action:
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
     find:
-      name: simple
+      name: find
       arguments:
         icon: "icon-search-black"
         title: "Find your teacher training course"

@@ -3,6 +3,7 @@ module Content
     CALLS_TO_ACTION = {
       "attachment" => CallsToAction::AttachmentComponent,
       "simple" => CallsToAction::SimpleComponent,
+      "find" => CallsToAction::FindComponent,
       "chat" => ChatComponent,
       "feature_table" => Content::FeatureTableComponent,
     }.freeze
