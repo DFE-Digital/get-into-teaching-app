@@ -273,6 +273,21 @@ body a.govuk-back-link {
     .cta-circle-button {
       background-color: darken($cta-green, 5%);
     }
+
+    .cta-link-text {
+      text-decoration-thickness: max(3px, 0.1875rem);
+    }
+  }
+
+  &:focus {
+    .cta-link-text {
+      color: $white;
+      text-decoration: none;
+    }
+    
+    .cta-circle-button {
+      background-color: $cta-green;
+    }
   }
 
   @include mq ($until: tablet) {
