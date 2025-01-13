@@ -16,6 +16,26 @@ navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
+expander:
+  refugees-asylum-seekers:
+    header: "Refugees and asylum seekers:"
+    title: funding support
+    text: |- 
+      <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you'll usually be eligible for financial support to help you train</a>.
+      <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
+      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+  ukraine-visas:
+    header: "Ukraine citizens:"
+    title: help with visas
+    text: |-
+      <p>
+      If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:
+      </p>
+        <ul>
+          <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
+          <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
+        </ul>
+
 keywords:
   - International
   - Overseas
@@ -86,7 +106,6 @@ If you’re unsure about your qualifications or eligibility, you can [get help a
 
 ## Find out about fees and financial support
 
-
 ### Fee-paying teacher training courses 
 
 A [fee-paying teacher training course](/non-uk-teachers/fees-and-funding-for-non-uk-trainees) means you pay tuition fees for your training. Tuition fees are set by providers and cost $fees_pgitt_internationalaverage$ on average per year. 
@@ -102,8 +121,6 @@ If you are not training to teach these subjects, any financial support you get w
 A [salaried teacher training course](/funding-and-support/salaried-teacher-training) means you’re paid to work in a school while you train to teach. Some salaried courses also have tuition fees.  
 
 Salaried teacher training courses are limited in number and very competitive. You’ll also need a visa or immigration status allowing you to work in the UK.  
-
-## Find and apply for teacher training courses
 
 You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to qualified teacher status (QTS).  
 

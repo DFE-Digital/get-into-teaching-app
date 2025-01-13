@@ -5,13 +5,23 @@ description: |-
   Learn more about bursaries and scholarships for non-UK teacher trainees.
 related_content:
     Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
+    What it's like to be a teacher : "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
 promo_content:
 navigation: 20.20
 navigation_title: Fees and financial support for non-UK trainee teachers
 navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
+expander:
+  refugees-asylum-seekers:
+    header: "Refugees and asylum seekers:"
+    title: funding support
+    text: |- 
+      <p>If you have refugee status you'll usually be eligible for financial support to help you train.
+      <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
+      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+
+    
 keywords:
   - International
   - Overseas
@@ -61,7 +71,6 @@ The information on this page is for:
 * non-UK citizens living outside the UK
 * Irish citizens
 
-
 Most non-UK citizens will not be eligible for financial support from the UK government to help with teacher training.
 
 Some support may be available if:
@@ -69,6 +78,8 @@ Some support may be available if:
 * you train to teach languages or physics
 
 * you have some type of settled status in the UK – for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
+
+* you're [from Ukraine or Afghanistan and are on certain visas](/non-uk-teachers/visas-for-non-uk-trainees)
 
 * you're an Irish citizen
 
@@ -97,6 +108,7 @@ Irish citizens or non-UK citizens who have settled status may be eligible for:
 
 [How to apply for student loans, bursaries and scholarships](#how-to-apply-for-student-loans-bursaries-and-scholarships).
 
+$refugees-asylum-seekers$
 
 ## Salaried teacher training courses
 

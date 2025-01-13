@@ -7,7 +7,7 @@ describe "Google Structured Data", type: :request do
   let(:json_contents) { parsed_response.css("script[type='application/ld+json']").map(&:content) }
 
   before do
-    %i[event blog_posting organization breadcrumb_list web_site].each do |type|
+    %i[event organization breadcrumb_list web_site].each do |type|
       allow(Rails.application.config.x.structured_data).to \
         receive(type).and_return(true)
     end

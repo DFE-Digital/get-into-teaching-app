@@ -6,13 +6,34 @@ description: |-
 related_content:
     Train to teach in England as an international student: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
+    What it's like to be a teacher : "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
 promo_content:
 navigation: 20.30
 navigation_title: Apply for your visa to train to teach
 navigation_description: Learn more about applying for a Student or Skilled Worker visa to train to teach in England.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
+expander:
+  ukraine-visas:
+    header: "Ukraine citizens:"
+    title: help with visas
+    text: |-
+      <p>
+      If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:
+      </p>
+        <ul>
+          <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
+          <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
+        </ul>
+        
+  refugees-asylum-seekers:
+    header: "Refugees and asylum seekers:"
+    title: funding support
+    text: |- 
+      <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you'll usually be eligible for financial support to help you train</a>.
+      <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
+      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+      
 keywords:
   - International
   - Teaching
@@ -39,7 +60,9 @@ keywords:
 
 If you’re applying for teacher training as a non-UK citizen, you'll need a [visa or immigration status allowing you to study or work in England](#check-your-status). 
 
-Most candidates who don't already have a visa or immigration status allowing them to study or work in England will need to apply for a Student or Skilled Worker visa.
+Most candidates who do not already have a visa or immigration status allowing them to study or work in England will need to apply for a Student or Skilled Worker visa.
+
+$ukraine-visas$
 
 ### Student visa 
 
@@ -48,6 +71,8 @@ Most teacher training courses in England are fee-paying. You'll need a Student v
 ### Skilled Worker visa 
 
 Some teacher training courses in England are salaried – this means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). Currently, places on these courses are very limited. You'll need a Skilled Worker visa if you train on a salaried training course. Your Skilled Worker visa must be sponsored by the school employing you.
+
+$refugees-asylum-seekers$
 
 ### What you need to do to apply for your visa 
 
@@ -105,37 +130,27 @@ You will not need a visa to train to teach in the UK if you:
 * have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 * have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
 
-You will not need to be sponsored for a Student or Skilled Worker visa if you have a: 
+You will not need to be sponsored for a Student or Skilled Worker visa if you are on a: 
 
-* [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa) 
-
-* [Family visa](https://www.gov.uk/uk-family-visa) 
-
-* [Graduate visa](https://www.gov.uk/graduate-visa) 
-
-* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)
-
-* [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa) 
-
-* [UK Ancestry visa](https://www.gov.uk/ancestry-visa) 
-
-* [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility) 
+* [Afghan Citizens Resettlement or Afghan Relocations and Assistance Policy scheme](https://www.gov.uk/government/publications/afghanistan-resettlement-and-immigration-policy-statement/afghanistan-resettlement-and-immigration-policy-statement-accessible-version)
+* [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)  
+* [Family visa](https://www.gov.uk/uk-family-visa)  
+* [Graduate visa](https://www.gov.uk/graduate-visa)  
+* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)  
+* [Homes for Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)  
+* [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa)  
+* [UK Ancestry visa](https://www.gov.uk/ancestry-visa)  
+* [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)  
+* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)  
+* [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility)  
 
 
-### Dependents
 
-You will not need to be sponsored for a Student or Skilled Worker visa if you have permission to live in the UK as a dependent (usually partner) of someone on a visa. You can work or study without a sponsor for the duration of your partner’s visa. 
+### Dependants
 
-### Refugees and asylum seekers 
+You will not need to be sponsored for a Student or Skilled Worker visa if you have permission to live in the UK as a dependant (usually partner) of someone on a visa. You can work or study without a sponsor for the duration of your partner’s visa. 
 
-If you have been granted refugee status, you can apply for teacher training – either salaried or fee-paying – and will usually be eligible for [financial support to train to teach on a fee-paying course](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 
-If you're in [the process of seeking asylum](https://www.gov.uk/claim-asylum), you should refer to your immigration bail conditions to see if you have permission to study on a teacher training course. 
-
-Learn more about:
-
-* [support for British and non-British nationals in Afghanistan](https://www.gov.uk/guidance/support-for-british-and-non-british-nationals-in-afghanistan)
-* [support for Ukrainian nationals](/non-uk-teachers/ukraine)
 
 ## Visa fees and other charges
 
