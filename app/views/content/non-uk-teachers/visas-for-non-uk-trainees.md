@@ -90,7 +90,7 @@ You will need a Skilled Worker visa if you are on a salaried training course. Yo
 
 Places on these courses are limited and some salaried courses also charge fees. 
 
-[Find out more about working in the UK on a Skilled Worker visa](https://www.gov.uk/student-visa).
+[Find out more about working in the UK on a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa).
 
 ### Salary requirement for a Skilled Worker visa 
 
