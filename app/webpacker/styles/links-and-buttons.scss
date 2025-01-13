@@ -290,7 +290,7 @@ body a.govuk-back-link {
     }
   }
 
-  @include mq ($until: tablet) {
+  @include mq ($until: narrow) {
     .cta-circle-button {
       height: 24px;
       width: 24px;
