@@ -124,12 +124,12 @@ However, bursaries are not paid until late October, so you’ll need to have eno
 
 You should be able to use eligibility for a bursary in your [visa application](/non-uk-teachers/visas-for-non-uk-trainees) as proof that you have enough money to support yourself. 
 
-You do not need to pay an agent or any other third party to access a bursary or scholarship. Any agency or person offering to help you access a bursary may be fraudulent. Avoid and report internet scams and phishing. 
+You do not need to pay an agent or any other third party to access a bursary or scholarship. Any agency or person offering to help you access a bursary may be fraudulent.
 
 Learn more about [bursaries and scholarships for physics and languages](/funding-and-support/scholarships-and-bursaries). 
 
 
-### Salaried teach training courses
+### Salaried teacher training courses
 
 Some teacher training courses in England are salaried. This means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). 
 
@@ -143,7 +143,7 @@ Places on these courses are limited and some salaried courses also charge fees.
 
 If you are resident in the UK, you may be eligible to apply for a postgraduate teaching apprenticeship or a teacher degree apprenticeship if you do not have a bachelor’s degree. Teaching apprenticeships allow you to earn a salary while you train. 
 
-To apply, you’ll need to meet both the following conditions: 
+To apply, you will need to meet both the following conditions: 
 
 * you must have settled or pre-settled status under the EU Settlement Scheme 
 * you must have been living in the UK or the EEA for 3 or more years before the start of your apprenticeship 
@@ -155,7 +155,7 @@ If you do not have settled or pre-settled status under the EU Settlement Scheme,
 
 If you are resident in the UK, you may already have a visa or immigration status allowing you to work, for example, a Graduate visa. 
 
-If you need to apply for another visa, for example, a Skilled Worker visa, you’ll need to do this after you’ve been given a place on a teaching apprenticeship. 
+If you need to apply for another visa, for example, a Skilled Worker visa, you will need to do this after you have been given a place on a teaching apprenticeship. 
 
 ## Get help
 
