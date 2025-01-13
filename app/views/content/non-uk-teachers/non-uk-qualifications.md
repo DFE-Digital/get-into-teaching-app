@@ -107,6 +107,8 @@ When you get offered a place on a course, your provider will arrange a backgroun
 
 You’ll also need to complete a fitness questionnaire before starting training. 
 
+Due to rules about immigration, not all providers can accept international applicants. Check with providers before you apply.
+
 If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ## Get help
