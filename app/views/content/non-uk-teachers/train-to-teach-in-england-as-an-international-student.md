@@ -68,7 +68,7 @@ Citizens of every country in the world can apply to train to teach in England.
 
 You'll need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach in most schools in England.
 
-If you do not want to come to England to study, you can [gain international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status) where you live or work, with no need to visit the UK. If you get iQTS, you automatically get QTS.  
+If you do not want to come to England to study, you can [gain international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status) where you live or work, with no need to visit the UK. If you get iQTS, you automatically get QTS as well.  
 
 If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
@@ -117,14 +117,7 @@ If you do not have the right to study or work in the UK, you’ll need a visa. Y
 
 Before you apply for your visa, you must have a confirmed offer of a training place on a course offering Student or Skilled Worker visa sponsorship. Find out more about [applying for a visa to train to teach in England](/non-uk-teachers/visas-for-non-uk-trainees).  
 
-
-### Complete background checks
-
-If you get offered a place on a course, your provider will arrange a background and criminal records check. This is known as a Disclosure and Barring Service (DBS) check.  
-
-Due to rules about immigration, not all providers can accept international applicants – contact the providers before you apply to check. 
-
-### Train to teach in Wales, Scotland or Northern Ireland 
+## Train to teach in Wales, Scotland or Northern Ireland 
 
 To find out about teaching in other areas of the UK, visit the: 
 
