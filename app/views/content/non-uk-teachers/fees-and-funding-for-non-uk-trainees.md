@@ -122,7 +122,7 @@ If you successfully applied for a bursary or scholarship, you can use this in yo
 
 However, bursaries are not paid until late October, so you’ll need to have enough money to support yourself until then. 
 
-You should be able to use eligibility for a bursary in your [visa application](https://visa application) as proof that you have enough money to support yourself. 
+You should be able to use eligibility for a bursary in your [visa application](/non-uk-teachers/visas-for-non-uk-trainees) as proof that you have enough money to support yourself. 
 
 You do not need to pay an agent or any other third party to access a bursary or scholarship. Any agency or person offering to help you access a bursary may be fraudulent. Avoid and report internet scams and phishing. 
 
