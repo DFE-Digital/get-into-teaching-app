@@ -120,9 +120,7 @@ Bursaries are tax-free payments from the UK government that are paid by your tra
 
 If you successfully applied for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
 
-However, bursaries are not paid until late October, so you’ll need to have enough money to support yourself until then. 
-
-You should be able to use eligibility for a bursary in your [visa application](/non-uk-teachers/visas-for-non-uk-trainees) as proof that you have enough money to support yourself. 
+Bursaries and scholarship payments are usually made by late October but you should confirm payment dates with your chosen provider.
 
 You do not need to pay an agent or any other third party to access a bursary or scholarship. Any agency or person offering to help you access a bursary may be fraudulent.
 
