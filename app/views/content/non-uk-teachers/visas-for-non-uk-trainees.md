@@ -75,7 +75,7 @@ $refugees-asylum-seekers$
 
 ### Bursaries and scholarships if you are on a Student visa 
 
-If you’re training to teach physics or languages, you may be [eligible for a bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).  
+If you are training to teach physics or languages, you may be [eligible for a bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).  
 
 If you successfully applied for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
 
@@ -111,12 +111,11 @@ You may be able to train part-time, but your part-time salary must be at least $
 
 
 ## What you need to do to apply for your visa 
-
+You can apply for your visa once you have a confirmed offer of a training place. 
 [Search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that offer visa sponsorship. 
 
 Email your chosen provider to check if they can sponsor you, then [apply for your teacher training course](/how-to-apply-for-teacher-training). 
 
-You can apply for your visa once you have a confirmed offer of a training place. 
 
 
 ### Check your status
