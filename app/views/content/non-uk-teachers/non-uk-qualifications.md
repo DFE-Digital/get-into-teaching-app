@@ -58,7 +58,7 @@ keywords:
   - Comparability
 ---
 
-To train to teach in England, you’ll need to have: 
+To train to teach in England, you will need to have: 
 
 * a bachelor’s degree from a UK or non-UK university (or other institution) 
 * a maths qualification of the same standard as GCSE (General Certificate of Secondary Education) grade 4 (C) 
@@ -73,13 +73,13 @@ To check your qualifications meet the required standard in England you will need
 
 This certificate proves your school and university qualifications are the same standard as UK GCSEs and a UK bachelor’s degree. 
 
-When you apply for teacher training, you’ll be asked to submit details of your statement of comparability. Applications which include this are 28% more likely to be successful. 
+When you apply for teacher training, you will be asked to submit details of your statement of comparability. Applications which include this are 28% more likely to be successful. 
 
 A statement of comparability costs $nonuk_statementofcomparabilitycost$. It takes 15 working days to complete your order from the date ENIC receives your qualification documents and payment.
 
 ## English language, maths and science proficiency
 
-If you’ve reached a certain proficiency in an English language test, some providers will accept this as evidence you meet the standard of a GCSE grade 4 (C) in English.  You can find out more by visiting the following websites:
+If you have reached a certain proficiency in an English language test, some providers will accept this as evidence you meet the standard of a GCSE grade 4 (C) in English.  You can find out more by visiting the following websites:
 
 * [International English Language Testing System (IELTS) website](https://www.ielts.org/)
 * [Test of English as a Foreign Language (TOEFL) website](https://www.ets.org/toefl)
@@ -89,7 +89,7 @@ If you have not passed an English language test, or do not have a GCSE grade 4 (
 
 ## If you do not have a bachelor's degree
 
-If you do not have a degree, you can apply for an [undergraduate course in England on the UCAS website](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes). These undergraduate courses are 3 to 4 years and you can search for courses that combine a teaching degree with [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
+If you do not have a degree, you can apply for an [undergraduate course in England on the UCAS website](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes). These undergraduate courses are 3 to 4 years and you can search for courses that combine a teaching degree with [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). When you complete your studies, you will be able to apply for jobs as a teacher in England.
 
 The [UK Council for International Student Affairs website](https://www.ukcisa.org.uk/) has lots of helpful information about studying at an English university.
 
@@ -101,11 +101,11 @@ You can [search for postgraduate teacher training courses](https://find-teacher-
 
 When you get offered a place on a course, your provider will arrange a background and criminal records check. This is known as a Disclosure and Barring Service (DBS) check. You must pass these checks to teach students under 18. Safeguarding checks may take longer if you are living or have lived abroad. 
 
-You’ll also need to complete a fitness questionnaire before starting training. 
+You will also need to complete a fitness questionnaire before starting training. 
 
 Due to rules about immigration, not all providers can accept international applicants. Check with providers before you apply.
 
-If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+If you are already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ## Get help
 
@@ -113,6 +113,6 @@ To get help with checking your qualifications, you can use the live chat service
 
 We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
 
-When you speak to us, we can tell you if you're eligible for a [teacher training adviser](/teacher-training-advisers).
+When you speak to us, we can tell you if you are eligible for a [teacher training adviser](/teacher-training-advisers).
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
