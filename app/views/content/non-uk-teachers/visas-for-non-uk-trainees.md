@@ -59,7 +59,7 @@ keywords:
 
 If you are applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study or work in England. 
 
-If you do not have a visa or immigration status allowing you to study or work in England, you’ll need to apply for a Student or Skilled Worker visa. 
+If you do not have a visa or immigration status allowing you to study or work in England, you will need to apply for a Student or Skilled Worker visa. 
 
 $ukraine-visas$
 
@@ -73,7 +73,7 @@ You will need a Student visa if you’re on a fee-paying course. Your Student vi
 
 $refugees-asylum-seekers$
 
-### Bursaries and scholarships if you’re on a Student visa 
+### Bursaries and scholarships if you are on a Student visa 
 
 If you’re training to teach physics or languages, you may be [eligible for a bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).  
 
