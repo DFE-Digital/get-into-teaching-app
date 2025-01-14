@@ -4,6 +4,7 @@ module Content
       "attachment" => CallsToAction::AttachmentComponent,
       "simple" => CallsToAction::SimpleComponent,
       "find" => CallsToAction::FindComponent,
+      "apply" => CallsToAction::ApplyComponent,
       "chat" => ChatComponent,
       "feature_table" => Content::FeatureTableComponent,
     }.freeze

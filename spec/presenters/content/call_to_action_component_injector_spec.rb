@@ -20,6 +20,15 @@ RSpec.describe Content::CallToActionComponentInjector, type: :component do
         "icon" => "icon-person",
       },
     },
+    "apply component" => {
+      "name" => "find",
+      "arguments" => {
+        "title" => "find component",
+        "link_target" => "#find-component",
+        "link_text" => "find component link",
+        "icon" => "icon-person",
+      },
+    },
     "attachment component" => {
       "name" => "attachment",
       "arguments" => {
