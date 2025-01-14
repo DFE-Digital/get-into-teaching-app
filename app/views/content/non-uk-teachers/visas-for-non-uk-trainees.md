@@ -79,7 +79,7 @@ If you’re training to teach physics or languages, you may be [eligible for a b
 
 If you successfully applied for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
 
-However, bursaries are not paid until late October, so you’ll need to have enough money to support yourself until then. 
+Bursaries and scholarship payments are usually made by late October but you should confirm payment dates with your chosen provider.
 
 
 ## Skilled Worker visa for salaried training courses
