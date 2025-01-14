@@ -18,12 +18,12 @@ RSpec.describe AnswerHelper, type: :helper do
 
     it "correctly formats a time of midday" do
       answer = Time.utc(2011, 1, 24, 12, 0)
-      expect(helper.format_answer(answer)).to eq("<span>midday</span>")
+      expect(helper.format_answer(answer)).to eq("<span>Midday</span>")
     end
 
     it "correctly formats a time of midnight" do
       answer = Time.utc(2011, 1, 24, 0, 0)
-      expect(helper.format_answer(answer)).to eq("<span>midnight</span>")
+      expect(helper.format_answer(answer)).to eq("<span>Midnight</span>")
     end
 
     it "calls safe_format" do

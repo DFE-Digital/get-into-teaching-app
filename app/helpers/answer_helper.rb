@@ -7,9 +7,9 @@ module AnswerHelper
       answer = answer.to_formatted_s(:govuk_date)
     when Time
       answer = if answer.hour.zero? && answer.min.zero?
-                 "midnight"
+                 "Midnight"
                elsif answer.hour == 12 && answer.min.zero?
-                 "midday"
+                 "Midday"
                else
                  answer.in_time_zone.to_formatted_s(:govuk_time_with_period)
                end
