@@ -154,7 +154,7 @@ You may be able to bring your partner and children with you if you’re on a Ski
 
 ### Visa fees
 
-You will need to pay [visa fees](https://www.gov.uk/visa-fees). Use this tool to work out the cost of your UK visa application.  
+You will need to pay visa fees. You can work out the cost of your UK visa application by [using the visa fees tool](https://www.gov.uk/visa-fees).  
 
 When you apply for a visa, you will usually need to show you have enough money to support yourself in England by providing proof of savings or income.  
 
