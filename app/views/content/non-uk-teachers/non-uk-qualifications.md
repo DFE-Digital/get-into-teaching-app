@@ -109,7 +109,7 @@ If you're already a qualified teacher, find out how you can [teach in England if
 
 ## Get help
 
-To get help with your qualifications, you can use the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country's standard rate.
+To get help with checking your qualifications, you can use the live chat service at the bottom of this page. Or you can call us on +44 800 389 2500. Calls will be charged at your country's standard rate.
 
 We're available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
 
