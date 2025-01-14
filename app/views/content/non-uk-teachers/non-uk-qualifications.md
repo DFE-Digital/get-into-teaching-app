@@ -12,10 +12,6 @@ navigation_title: Qualifications you'll need to train to teach in England
 navigation_description: Before you apply, get help checking you have the correct qualifications for English teacher training.
 image: "static/images/content/hero-images/0032.jpg"
 backlink: "../../"
-youtube_video:
-  why-train-to-teach:
-    id: u0W7UTnGcc0
-    title: A video about why you should Train to Teach in England
 keywords:
   - International
   - Overseas
