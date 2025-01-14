@@ -8,7 +8,7 @@ related_content:
     Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
     Learn more about international qualified teacher status : "/non-uk-teachers/international-qualified-teacher-status"
 navigation: 20.20
-navigation_title: Qualifications you'll need to train to teach in England
+navigation_title: Qualifications you will need to train to teach in England
 navigation_description: Before you apply, get help checking you have the correct qualifications for English teacher training.
 image: "static/images/content/hero-images/0032.jpg"
 backlink: "../../"
