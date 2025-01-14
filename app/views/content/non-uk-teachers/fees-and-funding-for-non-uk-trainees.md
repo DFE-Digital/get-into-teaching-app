@@ -96,13 +96,12 @@ Fees cost:
 
 Most non-UK candidates will not be eligible for financial support to help with fees.
 
-You’ll also have to cover your living costs.
-
 $refugees-asylum-seekers$
 
 ## Funding your techer training
 
 ### Student loans
+
 You may be eligible to apply for a student loan to cover your tuition fees.  
 
 To start your application for student loans, you need to have chosen your teacher training course, but you do not need a confirmed place. 
@@ -139,7 +138,12 @@ Places on these courses are limited and some salaried courses also charge fees.
 
 ### Teaching apprenticeships 
 
-If you are resident in the UK, you may be eligible to apply for a postgraduate teaching apprenticeship or a teacher degree apprenticeship if you do not have a bachelor’s degree. Teaching apprenticeships allow you to earn a salary while you train. 
+If you are resident in the UK, you may be eligible to apply for:
+
+* a postgraduate teaching apprenticeship if you have a bachelor's degree
+* a [teacher degree apprenticeship](/train-to-be-a-teacher/teacher-degree-apprenticeships) if you do not have a bachelor’s degree 
+
+Teaching apprenticeships allow you to earn a salary while you train. 
 
 To apply, you will need to meet both the following conditions: 
 
@@ -162,7 +166,7 @@ Contact the [UK Council for International Student Affairs website](https://www.u
 
 You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your teacher training application.
 
-To check if you're eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
+To check if you are eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
 
 We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
 

@@ -71,8 +71,6 @@ You will need a Student visa if you’re on a fee-paying course. Your Student vi
 
 [Find out more about studying in the UK on a Student visa](https://www.gov.uk/student-visa).
 
-$refugees-asylum-seekers$
-
 ### Bursaries and scholarships if you are on a Student visa 
 
 If you are training to teach physics or languages, you may be [eligible for a bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).  
@@ -81,6 +79,7 @@ If you successfully applied for a bursary or scholarship, you can use this in yo
 
 Bursaries and scholarship payments are usually made by late October but you should confirm payment dates with your chosen provider.
 
+$refugees-asylum-seekers$
 
 ## Skilled Worker visa for salaried training courses
 
@@ -104,7 +103,7 @@ You must earn a minimum salary to be eligible for a Skilled Worker visa. This va
 
 * rest of England: $nonuk_skilledworkervisatraineeminfulltime_restofengland$ 
 
-Check the region you'll be working in with your teacher training provider. 
+Check the region you will be working in with your teacher training provider. 
 
 You may be able to train part-time, but your part-time salary must be at least $nonuk_skilledworkervisatraineeminparttime$.
 
@@ -146,9 +145,9 @@ You will not need to be sponsored for a Student or Skilled Worker visa if you ar
 
 ### Dependants
 
-You will not need to be sponsored for a Student or Skilled Worker visa if you have permission to live in the UK as a dependant (usually partner) of someone on a visa. You can work or study without a sponsor for the duration of your partner’s visa. 
+You will not need to be sponsored for a Student or Skilled Worker visa if you have permission to live in the UK as a dependant of someone on a visa, usually a partner. You can work or study without a sponsor for the duration of your partner’s visa. 
 
-You may be able to bring your partner and children with you if you’re on a Skilled Worker visa. 
+You may be able to bring your partner and children with you if you are on a Skilled Worker visa. 
 
 
 ### Visa fees
