@@ -6,7 +6,7 @@ routes:
     description: Postgraduate teacher training combines theoretical learning with at least 2 classroom placements in schools. Over your course, you’ll get the experience and knowledge you need to get qualified teacher status (QTS). On some courses, you can also combine QTS with a postgraduate certificate in education (PGCE).
     matches:
       - question: undergraduate_degree
-        answers: ["Yes"]
+        answers: ["Yes", "Not yet"]
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
@@ -19,7 +19,7 @@ routes:
     description: Salaried teacher training allows you to earn an unqualified teacher’s salary while you train towards qualified teacher status (QTS). You’ll still do some theoretical learning, but most of your time will be spent in school placements. These courses are in high demand and very competitive, and training providers may want you to have significant teaching or school experience. The main salaried courses include School Direct salaried and postgraduate teaching apprenticeships (PGTA
     matches:
       - question: undergraduate_degree
-        answers: ["Yes"]
+        answers: ["Yes", "Not yet"]
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
@@ -32,7 +32,7 @@ routes:
     description: Teach First is a charitable organisation that delivers an employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards qualified teacher status (QTS) with a postgraduate certificate in education (PGCE).
     matches:
       - question: undergraduate_degree
-        answers: ["Yes"]
+        answers: ["Yes", "Not yet"]
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
@@ -45,7 +45,7 @@ routes:
     description: If you’ve worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through an assessment only programme. With this route, you do not need to do any further training. Instead, you’ll undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments. This will vary by your provider
     matches:
       - question: undergraduate_degree
-        answers: ["Yes"]
+        answers: ["Yes", "Not yet"]
       - question: unqualified_teacher
         answers: ["Yes"]
       - question: location
@@ -71,7 +71,7 @@ routes:
     description: International qualified teacher status (iQTS) is a teaching qualification backed by the UK government. iQTS meets the same high standards as English qualified teacher status (QTS) and leads to the automatic award of QTS. You can train where you live and work, with no need to visit the UK.
     matches:
       - question: undergraduate_degree
-        answers: ["Yes"]
+        answers: ["Yes", "Not yet"]
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
