@@ -20,7 +20,7 @@ module CallsToAction
       fail(ArgumentError, "a title or text\/content must be present") if [title, text, content].all?(&:nil?)
 
       @icon = icon_element(@icon_filename)
-      @link = link_to(@link_text, @link_target, class: "button") if @link_text.present?
+      @link = link_to(@link_text, @link_target, class: "button", role: "button", "data-promo-type": "find") if @link_text.present?
     end
 
   private
