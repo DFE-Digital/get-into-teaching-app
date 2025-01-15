@@ -63,18 +63,19 @@
           <%= f.govuk_text_field :first_name, autocomplete: "given-name" %>
           <%= f.govuk_text_field :last_name, autocomplete: "family-name" %>
           <%= f.govuk_email_field :email, autocomplete: "email" %>
-          <%#= f.hidden_field :channel_id, value: params[:channel] || f.object&.channel_id.presence %>
-          <%#= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id.presence %>
-          <%#= f.hidden_field :accepted_policy_id, value: privacy_policy.id %>
+          <%= f.hidden_field :channel_id, value: params[:channel] || f.object&.channel_id.presence %>
+          <%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id.presence %>
+          <%= f.hidden_field :accepted_policy_id, value: @privacy_policy.id %>
 
-          <div class="row">
-            <small class="col-space-l col-space-l-top">
-              Your details are protected under the terms of our <%= link_to("privacy notice (opens in new tab)", "/privacy-policy", { class: "link--black", target: :blank }) %>. This explains how we use your personal data. It's important you read it before signing up to receive emails.
-            </small>
-          </div>
 
           <%= f.button "Next step", class: "button", data: { "prevent-double-click": true, "disable-with": "Next step" } %>
         <% end %>
+
+        <div class="row col-space-s col-space-s-top">
+          <small>
+            Your details are protected under the terms of our <%= link_to("privacy notice (opens in new tab)", "/privacy-policy", { class: "link--black", target: :blank }) %>. This explains how we use your personal data. It's important you read it before signing up to receive emails.
+          </small>
+        </div>
       <% end %>
     </div>
   </div>
