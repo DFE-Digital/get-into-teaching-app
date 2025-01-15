@@ -10,7 +10,7 @@ routes:
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
-        answers: ["No"]
+        answers: ["*"]
 
   - title: Postgraduate initial teacher training with a salary
     course_length: 9 months
@@ -23,7 +23,7 @@ routes:
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
-        answers: ["No"]
+        answers: ["*"]
 
   - title: Teach First Training Programme
     course_length: 24 months
@@ -36,7 +36,7 @@ routes:
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
-        answers: ["No"]
+        answers: ["*"]
 
   - title: Assessment only route
     course_length: 12 weeks
@@ -49,7 +49,7 @@ routes:
       - question: unqualified_teacher
         answers: ["Yes"]
       - question: location
-        answers: ["No"]
+        answers: ["*"]
 
   - title: Undergraduate initial teacher training
     course_length: up to 4 years
@@ -62,7 +62,7 @@ routes:
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
-        answers: ["No"]
+        answers: ["*"]
 
   - title: International qualified teacher status (iQTS)
     course_length: 4 months
@@ -88,7 +88,7 @@ routes:
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
-        answers: ["No"]
+        answers: ["*"]
 
   - title: Undergraduate degree (followed by postgraduate teacher training)
     course_length: 4 years
@@ -101,7 +101,7 @@ routes:
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
-        answers: ["No"]
+        answers: ["*"]
 
   - title: Undergraduate degree (followed by Assessment only)
     course_length: up to 4 years
@@ -114,7 +114,7 @@ routes:
       - question: unqualified_teacher
         answers: ["Yes"]
       - question: location
-        answers: ["No"]
+        answers: ["*"]
 
   - title: Undergraduate degree (followed by iQTS)
     course_length: up to 4 years
