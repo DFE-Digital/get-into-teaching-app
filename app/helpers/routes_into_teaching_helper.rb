@@ -4,28 +4,28 @@ module RoutesIntoTeachingHelper
   end
 
   def undergraduate_degree_summary
-    case answers["undergraduate_degree"]
-    when "Yes" then "have a degree"
-    when "No" then "do not have a degree"
-    when "Not yet" then "are studying for a degree"
-    end
+    {
+      "Yes" => "have a degree",
+      "No" => "do not have a degree",
+      "Not yet" => "are studying for a degree",
+    }[answers["undergraduate_degree"]]
   end
 
   def unqualified_teacher_summary
-    case answers["unqualified_teacher"]
-    when "Yes" then "have previously worked in a school"
-    when "No" then "haven't previously worked in a school"
-    end
+    {
+      "Yes" => "have previously worked in a school",
+      "No" => "haven't previously worked in a school",
+    }[answers["unqualified_teacher"]]
   end
 
   def location_summary
-    case answers["location"]
-    when "Yes" then "live in England"
-    when "No" then "do not live in England"
-    end
+    {
+      "Yes" => "live in England",
+      "No" => "do not live in England",
+    }[answers["location"]]
   end
 
   def non_uk?
-    session.dig("routes_into_teaching", "location") == "No"
+    answers["location"] == "No"
   end
 end

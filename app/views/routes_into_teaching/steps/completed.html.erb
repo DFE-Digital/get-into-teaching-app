@@ -35,9 +35,9 @@
 
   <div class="row inset">
     <div class="col col-845">
-    <% @results.each do |result| %>
-      <div class="col-space-s">
-        <%= render Content::ResultsBoxComponent.new(
+      <% @results.each do |result| %>
+        <div class="col-space-s">
+          <%= render Content::ResultsBoxComponent.new(
           heading: result["title"],
           fee: result["course_fee"],
           course_length: result["course_length"],
@@ -46,8 +46,8 @@
           link_text: "Find out more",
           link_target: "/steps-to-become-a-teacher",
         ) %>
-      </div>
-    <% end %>
+        </div>
+      <% end %>
     </div>
   </div>
 
@@ -66,8 +66,6 @@
           <%= f.hidden_field :channel_id, value: params[:channel] || f.object&.channel_id.presence %>
           <%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id.presence %>
           <%= f.hidden_field :accepted_policy_id, value: @privacy_policy.id %>
-
-
           <%= f.button "Next step", class: "button", data: { "prevent-double-click": true, "disable-with": "Next step" } %>
         <% end %>
 
