@@ -114,7 +114,7 @@ routes:
       - question: unqualified_teacher
         answers: ["Yes"]
       - question: location
-        answers: ["No"]
+        answers: ["*"]
 
   - title: Undergraduate degree (followed by iQTS)
     course_length: up to 4 years
