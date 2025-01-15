@@ -4,13 +4,24 @@ module RoutesIntoTeaching
     include GITWizard::Controller
     self.wizard_class = RoutesIntoTeaching::Wizard
 
+    before_action :set_page_title
     before_action :set_step_page_title, only: %i[show update]
     before_action :noindex, if: :noindex?
 
     layout :resolve_layout
 
     def completed
+      policy_id = params[:id]
+
+      @privacy_policy = if policy_id
+                          GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_privacy_policy(policy_id)
+                        else
+                          GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
+                        end
+
       @results = RoutesIntoTeaching::Routes.recommended(session[:routes_into_teaching])
+
+      breadcrumb @page_title, request.path
     end
 
     def completed
@@ -46,9 +57,11 @@ module RoutesIntoTeaching
       session[:routes_into_teaching] ||= {}
     end
 
-    def set_step_page_title
-      @page_title = "Routes into Teaching"
+    def set_page_title
+      @page_title = "Find your route into teaching"
+    end
 
+    def set_step_page_title
       if @current_step&.title
         @page_title += ", #{@current_step.title.downcase} step"
       end
