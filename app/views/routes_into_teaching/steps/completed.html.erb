@@ -1,5 +1,28 @@
-<h2>You told us that you:</h2>
+<%= render Content::LandingHeroComponent.new(
+  title: "Routes into teaching",
+  colour: "pastel yellow-yellow",
+) %>
 
-<p>You can <%= link_to "change your answers", routes_into_teaching_steps_path %> if you need to.</p>
+<section class="container">
+  <div class="row">
+    <h2>You told us that you:</h2>
 
-<%= session[:routes_into_teaching].inspect %>
+    <p>You can <%= link_to "change your answers", routes_into_teaching_steps_path %> if you need to.</p>
+  </div>
+
+  <div class="row">
+    <% @results.each do |result| %>
+      <div class="col-space-s">
+        <%= render Content::ResultsBoxComponent.new(
+          heading: result["title"],
+          fee: result["course_fee"],
+          course_length: result["course_length"],
+          funding: result["funding"],
+          text: result["description"],
+          link_text: "Find out more",
+          link_target: "/steps-to-become-a-teacher",
+        ) %>
+      </div>
+    <% end %>
+  </div>
+</section>

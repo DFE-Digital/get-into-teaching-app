@@ -1,0 +1,104 @@
+routes:
+  - title: Postgraduate initial teacher training with fees
+    course_length: 9 months (full time) or up to 2 years (part time)
+    course_fee: "Yes"
+    funding: Scholarships or bursaries, as well as student loans, are available if you’re eligible
+    description: Postgraduate teacher training combines theoretical learning with at least 2 classroom placements in schools. Over your course, you’ll get the experience and knowledge you need to get qualified teacher status (QTS). On some courses, you can also combine QTS with a postgraduate certificate in education (PGCE).
+    matches:
+      - question: undergraduate_degree
+        answers: ["Yes", "Not yet"]
+      - question: unqualified_teacher
+        answers: ["*"]
+      - question: location
+        answers: ["*"]
+
+  - title: Postgraduate initial teacher training with a salary
+    course_length: 9 months
+    course_fee: Varies
+    funding: Not available
+    description: Salaried teacher training allows you to earn an unqualified teacher’s salary while you train towards qualified teacher status (QTS). You’ll still do some theoretical learning, but most of your time will be spent in school placements. These courses are in high demand and very competitive, and training providers may want you to have significant teaching or school experience. The main salaried courses include School Direct salaried and postgraduate teaching apprenticeships (PGTA
+    matches:
+      - question: undergraduate_degree
+        answers: ["Yes", "Not yet"]
+      - question: unqualified_teacher
+        answers: ["*"]
+      - question: location
+        answers: ["*"]
+
+  - title: Teach First Training Programme
+    course_length: 24 months
+    course_fee: "No"
+    funding: Not available
+    description: Teach First is a charitable organisation that delivers an employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards qualified teacher status (QTS) with a postgraduate certificate in education (PGCE).
+    matches:
+      - question: undergraduate_degree
+        answers: ["Yes", "Not yet"]
+      - question: unqualified_teacher
+        answers: ["*"]
+      - question: location
+        answers: ["*"]
+
+  - title: Assessment only route
+    course_length: 12 weeks
+    course_fee: "Yes"
+    funding: Not available
+    description: If you’ve worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through an assessment only programme. With this route, you do not need to do any further training. Instead, you’ll undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments. This will vary by your provider
+    matches:
+      - question: undergraduate_degree
+        answers: ["Yes", "Not yet"]
+      - question: unqualified_teacher
+        answers: ["Yes"]
+      - question: location
+        answers: ["*"]
+
+  - title: Undergraduate initial teacher training
+    course_length: up to 4 years
+    course_fee: "Yes"
+    funding: "No"
+    description: These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible.standards, or written assessments. This will vary by your provider.
+    matches:
+      - question: undergraduate_degree
+        answers: ["No"]
+      - question: unqualified_teacher
+        answers: ["*"]
+      - question: location
+        answers: ["*"]
+
+  - title: International qualified teacher status (iQTS)
+    course_length: 4 months
+    course_fee: "Yes"
+    funding: "No"
+    description: International qualified teacher status (iQTS) is a teaching qualification backed by the UK government. iQTS meets the same high standards as English qualified teacher status (QTS) and leads to the automatic award of QTS. You can train where you live and work, with no need to visit the UK.
+    matches:
+      - question: undergraduate_degree
+        answers: ["Yes", "Not yet"]
+      - question: unqualified_teacher
+        answers: ["*"]
+      - question: location
+        answers: ["No"]
+
+  - title: Teacher degree apprenticeship
+    course_length: 4 years
+    course_fee: No - you will be paid a salary
+    funding: "No"
+    description: These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible.
+    matches:
+      - question: undergraduate_degree
+        answers: ["No"]
+      - question: unqualified_teacher
+        answers: ["*"]
+      - question: location
+        answers: ["*"]
+
+  - title: Undergraduate degree (followed by postgraduate teacher training)
+    course_length: 4 years
+    course_fee: "Yes"
+    funding: "No"
+    description:
+    matches:
+      - question: undergraduate_degree
+        answers: ["No"]
+      - question: unqualified_teacher
+        answers: ["*"]
+      - question: location
+        answers: ["*"]

@@ -7,7 +7,11 @@ module RoutesIntoTeaching
     before_action :set_step_page_title, only: %i[show update]
     before_action :noindex, if: :noindex?
 
-    layout "registration"
+    layout :resolve_layout
+
+    def completed
+      @results = RoutesIntoTeaching::Routes.recommended(session[:routes_into_teaching])
+    end
 
   private
 
@@ -44,6 +48,10 @@ module RoutesIntoTeaching
       if @current_step&.title
         @page_title += ", #{@current_step.title.downcase} step"
       end
+    end
+
+    def resolve_layout
+      action_name == "completed" ? "minimal" : "registration"
     end
   end
 end
