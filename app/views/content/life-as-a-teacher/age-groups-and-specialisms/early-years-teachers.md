@@ -53,10 +53,10 @@ calls_to_action:
   EY-apprenticeship:
     name: feature_table
     arguments:
-      - Cost: "Your course fees of up to $earlyyears_fees_apprenticeship$ are covered through the employer’s apprenticeship levy payments or co-funded with the government contributing 95% of the cost and employers contributing 5% of the cost. You do not need to do anything to access this funding."
+      - Cost: "Your course fees of up to $earlyyears_fees_apprenticeship$ are covered by the Department for Education. You do not need to do anything to access this funding."
         Salary: "Provided by employer"
         Length of training: "3 years"
-        Qualification: "Early years teacher status, bachelor’s degree, and level 6 early years teacher apprenticeship"
+        Qualification: "Early years teacher status, a bachelor’s degree, and level 6 early years teacher apprenticeship"
 ---
 
 The early years are critical in children’s development. As an early years teacher you’ll work with young children up to the age of 5. You’ll use your knowledge and skills to help young children enjoy high standards of teaching and open their minds to new ideas every day.
