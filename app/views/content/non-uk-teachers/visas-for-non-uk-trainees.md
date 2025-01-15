@@ -55,13 +55,9 @@ keywords:
   - Settlement Scheme
   
 ---
-
-
 If you are applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study or work in England. 
 
 If you do not already have a visa or immigration status allowing you to study or work in England, you will need to apply for a Student or Skilled Worker visa. 
-
-$ukraine-visas$
 
 ## Check your visa status
 
@@ -85,7 +81,9 @@ You will not need to be sponsored for a Student or Skilled Worker visa if you ar
 * [UK Ancestry visa](https://www.gov.uk/ancestry-visa)  
 * [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)  
 * [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)  
-* [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility)  
+* [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility)
+
+$ukraine-visas$
 
 ## Student visa for fee-paying training courses
 
