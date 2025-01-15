@@ -59,9 +59,33 @@ keywords:
 
 If you are applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study or work in England. 
 
-If you do not have a visa or immigration status allowing you to study or work in England, you will need to apply for a Student or Skilled Worker visa. 
+If you do not already have a visa or immigration status allowing you to study or work in England, you will need to apply for a Student or Skilled Worker visa. 
 
 $ukraine-visas$
+
+## Check your visa status
+
+If you are not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
+
+You will not need a visa to train to teach in the UK if you:
+
+* are an Irish citizen
+* have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
+* have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
+
+You will not need to be sponsored for a Student or Skilled Worker visa if you are on a: 
+
+* [Afghan Citizens Resettlement or Afghan Relocations and Assistance Policy scheme](https://www.gov.uk/government/publications/afghanistan-resettlement-and-immigration-policy-statement/afghanistan-resettlement-and-immigration-policy-statement-accessible-version)  
+* [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)  
+* [Family visa](https://www.gov.uk/uk-family-visa)  
+* [Graduate visa](https://www.gov.uk/graduate-visa)  
+* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)  
+* [Homes for Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)  
+* [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa)  
+* [UK Ancestry visa](https://www.gov.uk/ancestry-visa)  
+* [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)  
+* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)  
+* [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility)  
 
 ## Student visa for fee-paying training courses
 
@@ -108,40 +132,11 @@ Check the region you will be working in with your teacher training provider.
 You may be able to train part-time, but your part-time salary must be at least $nonuk_skilledworkervisatraineeminparttime$.
 
 
-
 ## What you need to do to apply for your visa 
 You can apply for your visa once you have a confirmed offer of a training place. 
 [Search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that offer visa sponsorship. 
 
 Email your chosen provider to check if they can sponsor you, then [apply for your teacher training course](/how-to-apply-for-teacher-training). 
-
-
-
-### Check your status
-
-If you are not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
-
-You will not need a visa to train to teach in the UK if you:
-
-* are an Irish citizen
-* have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
-* have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
-
-You will not need to be sponsored for a Student or Skilled Worker visa if you are on a: 
-
-* [Afghan Citizens Resettlement or Afghan Relocations and Assistance Policy scheme](https://www.gov.uk/government/publications/afghanistan-resettlement-and-immigration-policy-statement/afghanistan-resettlement-and-immigration-policy-statement-accessible-version)  
-* [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)  
-* [Family visa](https://www.gov.uk/uk-family-visa)  
-* [Graduate visa](https://www.gov.uk/graduate-visa)  
-* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)  
-* [Homes for Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)  
-* [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa)  
-* [UK Ancestry visa](https://www.gov.uk/ancestry-visa)  
-* [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)  
-* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)  
-* [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility)  
-
-
 
 ### Dependants
 
