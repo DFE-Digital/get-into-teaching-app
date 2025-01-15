@@ -661,13 +661,6 @@ provider_groups:
       telephone: "020 3846 5828"
       international_phone: "+442038465828"
       
-    - header: "Bournemouth Bay Teacher Training Partnership"
-      link: "https://bournemouthbay-partnership.com/about-us/"
-      name: "James Mosley"
-      email: "J.Mosley@poolehigh.poole.sch.uk"
-      telephone: "01202 662038"
-      international_phone: "+441202662038"
-      
     - header: "Colchester Teacher Training Consortium"
       link: "https://colchesterttc.org.uk/courses"
       name: "Christine Wager"
