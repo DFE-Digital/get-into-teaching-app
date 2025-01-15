@@ -466,7 +466,7 @@ provider_groups:
     - header: "Tommy Flowers SCITT"
       link: "https://tommyflowersscitt.co.uk/courses/assessment-only/"
       name: "Tom Molloy"
-      email: "tom.molloy@st-pauls.org.uk"
+      email: "TFSCITT@st-pauls.org.uk"
       telephone: "01908 669735"
       international_phone: "+441908669735"
       
@@ -675,13 +675,6 @@ provider_groups:
       telephone: "01206 364728"
       international_phone: "+441206364728"
       
-    - header: "Inspiring Futures Partnership Trust"
-      link: "https://cheppingviewscitt.com/Entry-Criteria/"
-      name: "Nicky Stephenson"
-      email: "nstephenson@cvpa.school"
-      telephone: "01494 535564"
-      international_phone: "+441494535564"
-      extension: "(option 3)"
     - header: "Mersey Boroughs ITT Partnership"
       link: "https://merseyitt.org.uk/courses/assessment-only/"
       
@@ -744,13 +737,6 @@ provider_groups:
       email: "shonali.mathur@buckingham.ac.uk"
       telephone: "07538 473145"
       international_phone: "+447538473145"
-      
-    - header: "Tommy Flowers SCITT"
-      link: "https://tommyflowersscitt.co.uk/courses/assessment-only/"
-      name: "Tom Molloy"
-      email: "tom.molloy@st-pauls.org.uk"
-      telephone: "01908 669735"
-      international_phone: "+441908669735"
       
     - header: "University of Derby"
       link: "https://www.derby.ac.uk/"
