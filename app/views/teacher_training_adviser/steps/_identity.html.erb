@@ -30,11 +30,11 @@
 <%= f.govuk_text_field :first_name, width: 'two-thirds', autocomplete: "given-name" %>
 <%= f.govuk_text_field :last_name, width: 'two-thirds', autocomplete: "family-name" %>
 <%= f.govuk_email_field :email, width: 'two-thirds', autocomplete: "email" %>
-<%= f.hidden_field :channel_id, value: f.object.channel_id.presence || params[:channel] %>
-<%= f.hidden_field :creation_channel_source_id, value: f.object.creation_channel_source_id.presence || params[:creation_channel_source] %>
-<%= f.hidden_field :creation_channel_service_id, value: f.object.creation_channel_service_id.presence || params[:creation_channel_service] %>
-<%= f.hidden_field :creation_channel_activity_id, value: f.object.creation_channel_activity_id.presence || params[:creation_channel_activity] %>
-<%= f.hidden_field :sub_channel_id, value: f.object.sub_channel_id.presence || params[:sub_channel] %>
+<%= f.hidden_field :channel_id, value: params[:channel].presence || f.object&.channel_id.presence %>
+<%= f.hidden_field :creation_channel_source_id, value: params[:channel_source].presence || f.object&.creation_channel_source_id.presence %>
+<%= f.hidden_field :creation_channel_service_id, value: params[:channel_service].presence || f.object&.creation_channel_service_id.presence %>
+<%= f.hidden_field :creation_channel_activity_id, value: params[:channel_activity].presence || f.object&.creation_channel_activity_id.presence %>
+<%= f.hidden_field :sub_channel_id, value: params[:sub_channel].presence || f.object&.sub_channel_id.presence %>
 <%= f.hidden_field :accepted_policy_id, value: f.object.latest_privacy_policy.id %>
 
 <p>Your details are protected under the terms of our <%= link_to "privacy notice (opens in new tab)", privacy_policy_path(id: session[:privacy_policy_id].presence || GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy.id), target: :blank %>.</p>
