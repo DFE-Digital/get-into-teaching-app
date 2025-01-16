@@ -31,6 +31,9 @@
 <%= f.govuk_text_field :last_name, width: 'two-thirds', autocomplete: "family-name" %>
 <%= f.govuk_email_field :email, width: 'two-thirds', autocomplete: "email" %>
 <%= f.hidden_field :channel_id, value: f.object.channel_id.presence || params[:channel] %>
+<%= f.hidden_field :creation_channel_source_id, value: f.object.creation_channel_source_id.presence || params[:creation_channel_source] %>
+<%= f.hidden_field :creation_channel_service_id, value: f.object.creation_channel_service_id.presence || params[:creation_channel_service] %>
+<%= f.hidden_field :creation_channel_activity_id, value: f.object.creation_channel_activity_id.presence || params[:creation_channel_activity] %>
 <%= f.hidden_field :sub_channel_id, value: f.object.sub_channel_id.presence || params[:sub_channel] %>
 <%= f.hidden_field :accepted_policy_id, value: f.object.latest_privacy_policy.id %>
 

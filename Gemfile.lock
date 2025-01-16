@@ -31,11 +31,13 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: 9b2ba219f9def41b1547e4cb4f766f30f80364ee
+  revision: f7b8dfc3113a911de616cea63f84770214bcb76b
+  ref: f7b8dfc3113a911de616cea63f84770214bcb76b
+  branch: add-creation-channel-to-tta
   specs:
-    get_into_teaching_api_client (3.3.0)
+    get_into_teaching_api_client (3.5.0)
       faraday (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (3.3.0)
+    get_into_teaching_api_client_faraday (3.5.0)
       activesupport
       faraday
       faraday-encoding
@@ -255,8 +257,8 @@ GEM
     faraday-retry (1.0.3)
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
-    faraday_middleware-circuit_breaker (0.5.0)
-      faraday (>= 0.9, < 2.0)
+    faraday_middleware-circuit_breaker (0.6.0)
+      faraday (>= 0.9, < 3.0)
       stoplight (>= 2.1, < 4.0)
     fastimage (2.3.1)
     ffi (1.17.0)
