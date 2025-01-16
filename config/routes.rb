@@ -96,12 +96,6 @@ Rails.application.routes.draw do
   resource :csp_reports, only: %i[create]
   resource :client_metrics, only: %i[create]
 
-  resources :blog, controller: "blog", only: %i[index show] do
-    collection do
-      resources :tag, only: %i[show], as: :blog_tag, controller: "blog/tag"
-    end
-  end
-
   resources "teaching_events", as: "events", path: "/events", controller: "teaching_events" do
     collection do
       get :about_git_events, path: "about-get-into-teaching-events", as: "about_git"

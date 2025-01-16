@@ -4,6 +4,7 @@
     <div class="inset">
       <p>Design and technology is a broad subject. Your teaching will cover a diverse range of areas including maths, science, engineering, art, and cookery. You'll encourage pupils to solve problems creatively and consider how the technology they use can impact their designs.</p>
       <%= render 'content/shared/teaching/benefits' %>
+      <%= render 'content/shared/teaching/why_teach' %>
     </div>
   </section>
   <section class="col col-720">
@@ -56,12 +57,12 @@
       <li>project management</li>
       <li>sustainability</li>
     </ul>
-    <%= render 'content/shared/teaching/ages_abilities' %>
+     <p><%= render 'content/shared/teaching/ages_abilities' %> <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary"> Explore more about teaching secondary</a>.</p>
   </section>
 
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching design and technology</h2>
-    <%= render 'content/shared/qualifications-training/check_qualifcations' %>
+    <%= render 'content/shared/qualifications-training/check_qualifications' %>
     <p>Design and technology teacher training courses have had successful applications from candidates with a range of degrees, including fine art, product design, fashion design, architecture, and nutrition.</p>
     <%= render 'content/shared/qualifications-training/find_out_more' %>
     <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
@@ -76,4 +77,7 @@
  <section class="col col-720">
     <%= render 'content/shared/teaching/ect_support' %>
  </section>
+  <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you to become a design and technology teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
 </div>

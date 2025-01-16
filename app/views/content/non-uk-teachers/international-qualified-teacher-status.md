@@ -1,15 +1,16 @@
 ---
 title: Get international qualified teacher status (iQTS)
-subcategory: Get international qualified teacher status (iQTS)
+subcategory: If you're outside the UK
 description: |-
  Get international qualified teacher status (iQTS) from anywhere in the world, a teaching qualification backed by England’s Department for Education (DfE).
 related_content:
-    A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
+    What it's like to be a teacher: "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
     Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-promo_content:
-    - content/non-uk-teachers/promos/events-promo-iqts
+cta_adviser:
+  adviser:
+    text: Talk to an adviser with years of teaching experience about iQTS and teaching in England. Chat by phone, text or email, as little or as often as you need.
 navigation: 20.50
-navigation_title: Gain the equivalent of English QTS, from outside the UK
+navigation_title: Get international qualified teacher status (iQTS)
 navigation_description: Train from anywhere in the world to get international qualified teacher status (iQTS), backed by England’s Department for Education.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../"
@@ -20,49 +21,44 @@ keywords:
     - Qualified teacher status
 ---
 
-International qualified teacher status (iQTS) is a teaching qualification backed by the UK government. iQTS meets the same high standards as [English qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), and leads to the automatic award of QTS. You can train where you live and work, with no need to visit England.
+International qualified teacher status (iQTS) is a teaching qualification that's the equivalent of [English qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). iQTS enables you to train to teach in the country where you live and work, with no need to visit England.
 
 ## Why choose iQTS?
 
-iQTS is offered by world-class English teacher training providers working with schools in countries around the world. Alongside online tutorials and lectures, you’ll spend a minimum of 120 days gaining practical experience in a school in your region, and get in-person support from a trained mentor.
+iQTS is offered by teacher training providers in England that work with schools around the world. Alongside online tutorials and lectures, you’ll spend a minimum of 120 days gaining practical experience in a school in your country. You'll also get in-person support from a trained mentor.
 
-iQTS allows you to train to teach children aged 5 to 11, or children aged 11 to 18 in the full range of [secondary school subjects taught in English schools](https://www.gov.uk/national-curriculum).
+iQTS allows you to train to teach pupils aged 5 to 11, or pupils 11 to 18 in the full range of [secondary school subjects taught in English schools](https://www.gov.uk/national-curriculum).
 
-When you complete the course, you’ll have the skills, experience and knowledge to become an excellent teacher. You will also automatically be awarded English qualified teacher status (QTS) with no further fees or training. QTS is recognised all over the world as a teaching gold standard and will also qualify you to teach in England.
+When you complete the course, you’ll have the skills, experience and knowledge to become an excellent teacher. 
 
-If you decide to [teach in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas), as an early career teacher you’ll benefit from a two-year induction period alongside your work in a school. You’ll earn a salary and get mentoring and continuous professional development to help you succeed as a teacher.
 
-## Entry requirements
+## Entry requirements for iQTS
 
-Both UK and non-UK citizens can apply for iQTS – however, you must be living outside of England.
-
-You will also need to have:
-
-* a bachelor’s degree from a UK or non-UK university (or other institution)
-
-* a maths qualification of the same standard as GCSE (General Certificate of Secondary Education) grade 4
-
-* for teaching children aged 3 to 11, a science qualification of the same standard as GCSE grade 4
-
-* excellent written and verbal English language skills
+Both UK and non-UK citizens can apply for iQTS, but you must be living outside of England.
 
 You do not need any teaching experience or to be working in a school to apply for iQTS.
 
-To show you meet the required standard in the English language, you’ll need one of the following:
+You'll need to have:
 
-* an [International English Language Testing System (IELTS)](https://www.ielts.org/) score of 6.5 or higher
+* a bachelor’s degree from a UK or non-UK university (or other institution)
 
-* the equivalent score in another English language testing system
+* a maths qualification of the same standard as GCSE (General Certificate of Secondary Education) grade 4 (C)
+
+* for teaching pupils aged 3 to 11, a science qualification of the same standard as GCSE grade 4 (C)
+
+A GCSE is an academic qualification awarded for exams in England, usually taken at the age of 16.
+
+You’ll need to have excellent written and verbal English language skills. To show this, you'll need one of the following:
+
+* an [International English Language Testing System (IELTS)](https://www.ielts.org/) score of 6.5 or higher, or the equivalent score in another English language testing system
 
 * to have completed some of your education in the English language, for example, a degree studied in English
 
 ### Help with qualifications
 
-A GCSE (General Certificate of Secondary Education) is an academic qualification awarded for exams in England, usually taken at age 16.
+To find out whether your qualifications meet the entry requirements for iQTS, you can [apply for a statement of comparability on the UK ENIC website](https://enic.org.uk/Qualifications/SOC/Default.aspx), the UK National Information Centre for global qualifications and skills. A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK bachelor's degree.
 
-If you’re not sure whether your qualifications meet the entry requirements for iQTS, you can apply for a statement of comparability from [UK ENIC](https://enic.org.uk/Qualifications/SOC/Default.aspx), the UK National Information Centre for global qualifications and skills. A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK bachelor's degree.
-
-## Fees
+## Tuition fees for iQTS
 
 Fees range from $fees_iQTS_low$ to $fees_iQTS_high$ for a one-year, full-time iQTS course. Check training provider websites for full details.
 
@@ -74,15 +70,13 @@ To find out about scholarship opportunities, contact your chosen iQTS training p
 
 iQTS is delivered by English training providers working in close partnership with schools outside of England. These placement schools offer iQTS trainees practical experience and in-person mentoring.
 
-Some training providers will already have relationships with schools in your region and will be able to match you to a particular school. Others will make it an entry requirement for their course that you set up your own placement with a local school.
+Some training providers will already have relationships with schools in your region and can match you to a school. Others will make it an entry requirement for their course that you set up your own placement with a local school.
 
-If you are already employed in a school, you can discuss with your training provider whether you can continue working in that school while you complete your iQTS qualification.
+If you're already employed in a school, you can talk to your training provider about whether you can continue working in that school while you complete your iQTS.
 
 To learn more, contact your chosen iQTS provider directly.
 
-## How to apply
-
-For more details and to apply, visit the provider websites listed on this page. 
+## How to apply for iQTS
 
 All iQTS training providers are approved by the UK government and must meet the same strict standards. However, they may vary in their approach to:
 
@@ -107,6 +101,7 @@ The following providers are accepting applications from all over the world:
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
 
 * [National Institute of Teaching and Education (NITE)](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/), part of the Coventry University Group
+
 * [Tes Institute](https://www.tes.com/institute/courses/iqts) – this provider cannot accept applications from Hong Kong
 
 * [University of Buckingham](https://www.buckingham.ac.uk/courses/postgraduate/international-qualified-teacher-status-iqts)
@@ -119,31 +114,27 @@ The following providers are accepting applications from all over the world:
 
 * [University of the West of England](https://www.uwe.ac.uk/courses/applying/postgraduate-applications/iqts-information)
 
-The following providers specialise in particular regions, or should be contacted for further information:
+The following providers specialise in particular regions:
 
 * [Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts) – this provider is accepting applications from the Middle East and North Africa
 
-* [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider offers in-person training in Dubai only, so applicants must be a commutable distance from their Dubai Campus
-
-* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning) – contact this provider for more information
-
-We have recently approved the following providers to offer iQTS for the 2024/25 academic year. Their iQTS courses are still being designed – check back to provider websites for more information.
-
 * [St Mary’s University](https://www.stmarys.ac.uk/courses/postgraduate/iqts)
 
-* [University of Chichester](https://www.chi.ac.uk/)
+* [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider offers in-person training in Dubai only, so applicants must be a commutable distance from their Dubai Campus
+
+* [University of Chichester](https://www.chi.ac.uk/teaching/course/ipgce/)
 
 * [University of Northampton](https://www.northampton.ac.uk/courses/postgraduate-certificate-in-education-international-iqts/)
 
-## Assessment
+* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning)
+
+## Assessment for iQTS
 
 At the end of your training, your iQTS provider and school will assess you to check you meet the [iQTS Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards).
 
-Your training provider will award you international qualified teacher status (iQTS) when you have successfully passed this assessment process. You will then be automatically awarded [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) by England’s Department for Education.
+Your training provider will award you iQTS when you have successfully passed this assessment process. You will then be automatically awarded QTS by England’s Department for Education.
 
 ## Other routes to QTS
-
-iQTS is an international teaching qualification designed for UK and non-UK citizens living outside England.
 
 If you’re living in England and want a teaching qualification leading to QTS, you must [apply for teacher training in England](/steps-to-become-a-teacher).
 
@@ -155,13 +146,13 @@ If you have no teaching qualification but lots of experience, you should check y
 
 ## Teaching in England
 
-If you successfully complete your iQTS course, you will be qualified to teach in England. It’s important to note that you will also have to apply for a teaching job and a visa, unless you already have an immigration status allowing you to work in the UK.
+Once you have iQTS, you will be qualified to teach in England. It’s important to note that you'll also have to apply for a teaching job and a visa, unless you already have an immigration status allowing you to work in the UK.
 
-[Teach in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas) gives more information.
+[Find out more about teaching in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ## Early career teacher induction
 
-If you choose to teach in England, as an early career teacher you’ll benefit from a two-year induction period alongside your work in school. You’ll earn a salary and get mentoring and continuous professional development to help you succeed as a teacher.
+If you choose to teach in England, as an early career teacher you’ll benefit from a 2 year induction period alongside your work in school. You’ll earn a salary and get mentoring and continuous professional development to help you succeed as a teacher.
 
 While induction is a requirement to teach in most schools in England, you do not need to complete an induction period to teach outside the UK. However, if you wish, you can choose to complete your early career teacher induction at a [Department for Education-accredited British School Overseas](https://www.gov.uk/government/publications/british-schools-overseas-inspection-reports/british-schools-overseas-accredited-schools-inspection-reports).
 
@@ -173,15 +164,4 @@ For general advice about iQTS, email us on iqts.policy@education.gov.uk.
 
 You can also call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
 
-We’re available Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England.
-
-
-
-
-
-
-
-
-
-
-
+$adviser$

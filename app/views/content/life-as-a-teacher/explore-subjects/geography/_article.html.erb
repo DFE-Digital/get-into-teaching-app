@@ -3,6 +3,7 @@
     <h2 class="heading--box-blue">Why teach geography</h2>
       <p> As a geography teacher, you'll inspire pupils to find their passion for exploring the globe. From urban development and economies to tectonics and weather, you'll develop their understanding of the world we live in and equip them with the skills to tackle the problems of tomorrow.</p>
       <%= render 'content/shared/teaching/benefits' %>
+      <%= render 'content/shared/teaching/why_teach' %>
   </section>
 
   <section class="col col-720">
@@ -48,12 +49,12 @@
       <li>selecting and using a range of quantitative and qualitative skills and approaches</li>
       <li>becoming critical and reflective learners</li>
     </ul>
-    <%= render 'content/shared/teaching/ages_abilities' %>
+     <p><%= render 'content/shared/teaching/ages_abilities' %> <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary"> Explore more about teaching secondary</a>.</p>
   </section>
 
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching geography</h2>
-     <%= render 'content/shared/qualifications-training/check_qualifcations' %>
+     <%= render 'content/shared/qualifications-training/check_qualifications' %>
     <p>Geography teacher training courses have had successful applications from candidates with a range of degrees, including environmental sciences, history, psychology, and politics.</p>
     <p>Find out more about what <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">qualifications you need to train to teach</a>.</p>
      <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
@@ -69,4 +70,7 @@
     <!-- Support with teacher training -->
     <%= render 'content/shared/teaching/ect_support' %>
   </section>
+  <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you to become a geography teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
 </div>

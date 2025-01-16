@@ -22,7 +22,6 @@
 @import "blocks";
 @import "search-page";
 @import "steps";
-@import "blog";
 @import "welcome-guide";
 @import "category";
 @import "statement";
@@ -35,6 +34,7 @@
 @import "./sections/action-container";
 
 @import "./components/adviser";
+@import "./components/routes";
 @import "./components/arrow";
 @import "./components/aspect-ratio";
 @import "./components/badge";

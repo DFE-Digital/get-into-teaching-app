@@ -6,6 +6,8 @@ on:
 jobs:
   destroy:
     name: Destroy
+    permissions:
+      id-token: write
     environment:
        name: review
     runs-on: ubuntu-latest
@@ -25,6 +27,11 @@ jobs:
       - uses: Azure/login@v2
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: google-github-actions/auth@v2
+        with:
+          project_id: get-into-teaching
+          workload_identity_provider: projects/574582782335/locations/global/workloadIdentityPools/get-into-teaching-app/providers/get-into-teaching-app
 
       - name: Setup Environment Variables
         id: variables

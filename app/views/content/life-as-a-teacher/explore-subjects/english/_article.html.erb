@@ -4,6 +4,7 @@
     <div class="inset">
 <p>As an English teacher, you’ll teach pupils essential skills. From reading and writing to engaging in debates, you’ll nurture their ability to think critically and communicate effectively, preparing them for life beyond the classroom.</p>      <!-- Why teach: benefits -->
       <%= render 'content/shared/teaching/benefits' %>
+      <%= render 'content/shared/teaching/why_teach' %>
     </div>
   </section>
 
@@ -61,13 +62,13 @@
       <li>analysing genre and mode</li>
     </ul>
     <!-- Teaching pupils: ages and abilities -->
-    <%= render 'content/shared/teaching/ages_abilities' %>
+     <p><%= render 'content/shared/teaching/ages_abilities' %> <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary"> Explore more about teaching secondary</a>.</p>
   </section>
 
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching English</h2>
     <!-- Check your qualifications-->
-    <%= render 'content/shared/qualifications-training/check_qualifcations' %>
+    <%= render 'content/shared/qualifications-training/check_qualifications' %>
     <p>English teacher training courses have had successful applications from candidates with a range of degrees, including psychology, creative writing, history and  journalism.</p>
     <%= render 'content/shared/qualifications-training/find_out_more' %>
     <!-- Non-UK qualifications expander -->
@@ -85,5 +86,7 @@
   <section class="col col-720">
     <%= render 'content/shared/teaching/ect_support' %>
   </section>
-
+  <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you to become an English teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
 </div>
