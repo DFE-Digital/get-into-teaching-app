@@ -75,6 +75,12 @@
               description: "Find out how to become a music teacher and inspire pupils to unlock their creativity.",
               path: "/life-as-a-teacher/explore-subjects/music"
             )) %>
+               <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Physical education",
+              description: "Find out how to become a physical education teacher and give pupils the opportunity to find the a lifelong love of sport and getting active.",
+              path: "/life-as-a-teacher/explore-subjects/physical-education"
+            )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
               title: "Physics",

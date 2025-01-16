@@ -1,0 +1,74 @@
+<div class="row inset">
+  <section class="col col-720 col-space-l-top">
+    <h2 class="heading--box-blue">Why teach PE</h2>
+      <p>Becoming a PE teacher means more than teaching sports. It’s about inspiring pupils to embrace a healthy, active lifestyle and helping them unlock their potential.</p> 
+      <p>Your teaching will encourage them to discover the benefits of movement, both for their physical fitness and overall well-being.</p>
+   <%= render 'content/shared/teaching/benefits' %>
+   <%= render 'content/shared/teaching/why_teach' %>
+  </section>
+
+<section class="col col-720">
+    <%= render 'content/shared/quotes/quote_art_richard' %>
+  </section>
+
+   <section class="col col-720 col-space-l-top">
+    <h2 class="heading--box-blue">Shape your pupils' futures</h2>
+    <div class="inset">
+      <p>Teaching PE opens the door for your pupils to pursue exciting careers. They could work in a range of fields, from sports coach and personal trainer, to sports therapist and nurtitionist.</p>
+      <p>Your pupils will learn more from you than you may realize. As their teacher, you’ll guide them through developing the skills to persevere and face challenges with determination and teamwork.</p>
+    </div>
+  </section>
+
+    <section class="col col-720">
+    <%= render 'content/shared/quotes/quote_progression_chris' %>
+  </section>
+
+  <section class="col col-720">
+    <h2 class="heading--box-blue">What you'll teach</h2>
+    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study">national curriculum for PE</a>.</p>
+    <p>Skills and activities you'll cover when you teach 11 to 14 year olds (key stage 3) include:</p>
+    <ul>
+      <li>using tactics and stratergies to overcome opponents in competition</li>
+      <li>developing technique to improve performance</li>
+      <li>take part in activities which encourage teamworking and problem solving</li>
+      <li>demonstrate improvement to reach a personal best</li>
+      <li>Understand the long-term benefits of physical activity</li>
+    </ul>
+    <p>Explore what teaching a key stage 3 PE lesson would be like by visiting the <a href="https://www.thenational.academy/teachers/programmes/physical-education-secondary-ks3-l/units">Oak National Academy website</a>.</p>
+    <p>Skills you’ll cover when you teach 14 to 16 year olds (key stage 4) include:</p>
+    <ul>
+      <li>Refine skills for both team and individual competition</li>
+      <li>Conduct detailed evaluations of performance to enhance future outcomes and achieve peak performance levels</li>
+      <li>Master complex techniques and employ advanced tactics in sports and physical activities</li>
+      <li>Promote active lifestyles by fostering personal fitness and encouraging regular participation in community sports or clubs.</li>
+    </ul>
+    <p>Skills you might cover when you teach 16 to 18 year olds (key stage 5) include:</p>
+    <ul>
+      <li>understand how physiological and psychological states affect performance</li>
+      <li>understand the role of technology in physical activity and sport</li>
+      <li>apply skills,techniques and tactics and in an individual sport</li>
+      <li> understand the contribution which physical activity makes to health and fitness</li>
+    </ul>
+     <p><%= render 'content/shared/teaching/ages_abilities' %> <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary"> Explore more about teaching secondary</a>.</p>
+  </section>
+
+  <section class="col col-space-m col-720">
+    <h2 class="heading--box-blue">Start your journey into teaching PE</h2>
+    <%= render 'content/shared/qualifications-training/check_qualifications' %>
+    <%= render 'content/shared/qualifications-training/find_out_more' %>
+    <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
+  </section>
+
+<section class="col col-space-m col-720">
+   <h3>Fund your teacher training</h3>
+   <%= render 'content/shared/teaching/bursary_no' %>
+   <%= render 'content/shared/teaching/funding_support' %>
+  </section>
+
+  <section class="col col-720">
+    <%= render 'content/shared/teaching/ect_support' %>
+  </section>
+  <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you to become a physics teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
+</div>
