@@ -1,6 +1,7 @@
 .results-box {
   background: $white;
   color: $white;
+  padding: 1em 0em;
 
   &--yellow {
     border: 2px solid $yellow;
@@ -17,9 +18,9 @@
 
   &__title {
       background: $yellow;
-      color: $black; 
+      color: $black;
       font-weight: bolder;
-      display: inline-block; 
+      display: inline-block;
       padding: 0.25em 0.5em;
     }
 
@@ -43,18 +44,18 @@
 
   &__info-row {
     display: flex;
-    justify-content: flex-start; 
-    align-items: flex-start; 
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   &__label {
-  flex: 1; 
+  flex: 1;
   text-align: left;
   font-weight: bold;
   }
 
   &__value {
-  flex: 2; 
+  flex: 2;
   text-align: left;
   }
 
@@ -84,17 +85,17 @@
   @include mq($until: tablet) {
     .results-box__info-row {
       flex-direction: column;
-      align-items: flex-start; 
+      align-items: flex-start;
     }
 
     .results-box__label,
     .results-box__value {
-      flex: none; 
-      width: 100%; 
+      flex: none;
+      width: 100%;
     }
-    
+
     .results-box__label {
-      margin-bottom: 0.25rem; 
+      margin-bottom: 0.25rem;
     }
   }
 }
