@@ -53,7 +53,7 @@ calls_to_action:
   EY-apprenticeship:
     name: feature_table
     arguments:
-      - Cost: "Your course fees of up to $earlyyears_fees_apprenticeship$ are covered by the Department for Education. You do not need to do anything to access this funding."
+      - Cost: "Your course fees of up to $earlyyears_fees_apprenticeship$ per year are covered by the Department for Education. You do not need to do anything to access this funding."
         Salary: "Provided by employer"
         Length of training: "3 years"
         Qualification: "Early years teacher status, a bachelor’s degree, and level 6 early years teacher apprenticeship"
@@ -118,9 +118,11 @@ $EY-undergraduate$
 
 Undergraduate tuition fee loans are available from [Student Finance England (SFE)](https://www.gov.uk/student-finance).
 
-### Early years teacher degree apprenticeship
+### Early years teacher degree apprenticeship (EYTDA)
 
-This route is for people who want to combine studying for a bachelor’s degree with being employed in an early years setting.
+This is a new route, designed for people who want to combine studying for a bachelor’s degree with being employed in an early years setting.
+
+The first early years teacher degree apprenticeships are expected to start in 2026. More information will be available later this year, including how to apply and course details. 
 
 $EY-apprenticeship$
 
