@@ -17,8 +17,6 @@ module CallsToAction
     end
 
     def before_render
-      fail(ArgumentError, "a title or text\/content must be present") if [title, text, content].all?(&:nil?)
-
       @icon = icon_element(@icon_filename)
       @link = link_to(@link_text, @link_target, class: "button", role: "button", "data-promo-type": "find") if @link_text.present?
     end
