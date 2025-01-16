@@ -21,8 +21,8 @@
           course_length: result["course_length"],
           funding: result["funding"],
           text: result["description"],
-          link_text: "Find out more",
-          link_target: "/steps-to-become-a-teacher",
+          link_text: result["cta_text"],
+          link_target: result["cta_link"],
         ) %>
       </div>
     <% end %>

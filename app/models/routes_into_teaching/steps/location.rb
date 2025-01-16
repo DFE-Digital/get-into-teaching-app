@@ -2,7 +2,7 @@ module RoutesIntoTeaching::Steps
   class Location < GITWizard::Step
     attribute :location
 
-    validates :location, presence: true
+    validates :location, presence: { message: RoutesIntoTeaching::Wizard::DEFAULT_ERROR_MESSAGE }
 
     def seen?
       false
