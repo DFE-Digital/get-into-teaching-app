@@ -2,7 +2,7 @@ module CallsToAction
   class ApplyComponent < ViewComponent::Base
     attr_accessor :icon, :title, :text, :link
 
-    def initialize(icon:, link_text: nil, link_target: nil, title: nil, text: nil, hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false)
+    def initialize(icon: "icon-school-black", link_text: "Apply for a course", link_target: "https://www.gov.uk/apply-for-teacher-training", title: "Start your application", text: "Create an account and start your application for a teacher training course.", hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false)
       super
 
       @icon_filename = icon

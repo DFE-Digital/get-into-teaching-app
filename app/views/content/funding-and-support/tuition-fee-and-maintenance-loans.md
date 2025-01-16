@@ -19,22 +19,6 @@ calls_to_action:
         text: "Use the student finance calculator on GOV.UK to get an estimate of how much funding you might get."
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
-    find:
-      name: find
-      arguments:
-        icon: "icon-search-black"
-        title: "Find your teacher training course"
-        text: "Take a look at the different teacher training courses available."
-        link_text: "Search for a course"
-        link_target: "https://find-teacher-training-courses.service.gov.uk/"
-    apply:
-      name: apply
-      arguments:
-        icon: "icon-school-black"
-        title: "Start your application"
-        text: "Create an account and start your application for a teacher training course."
-        link_text: "Apply for a course"
-        link_target: "https://www.gov.uk/apply-for-teacher-training"
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 keywords:

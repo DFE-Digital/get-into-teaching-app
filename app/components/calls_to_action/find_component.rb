@@ -2,7 +2,7 @@ module CallsToAction
   class FindComponent < ViewComponent::Base
     attr_accessor :icon, :title, :text, :link
 
-    def initialize(icon:, link_text: nil, link_target: nil, title: nil, text: nil, hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false)
+    def initialize(icon: "icon-search-black", link_text: "Find your teacher training course", link_target: "https://find-teacher-training-courses.service.gov.uk/", title: "Find your teacher training course", text: "Take a look at the different teacher training courses available.", hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false)
       super
 
       @icon_filename = icon
