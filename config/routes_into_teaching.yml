@@ -4,6 +4,8 @@ routes:
     course_fee: "Yes"
     funding: Scholarships or bursaries, as well as student loans, are available if you’re eligible
     description: Postgraduate teacher training combines theoretical learning with at least 2 classroom placements in schools. Over your course, you’ll get the experience and knowledge you need to get qualified teacher status (QTS). On some courses, you can also combine QTS with a postgraduate certificate in education (PGCE).
+    cta_text: Find out more about postgraduate teacher training with fees
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["Yes", "Not yet"]
@@ -17,6 +19,8 @@ routes:
     course_fee: Varies
     funding: Not available
     description: Salaried teacher training allows you to earn an unqualified teacher’s salary while you train towards qualified teacher status (QTS). You’ll still do some theoretical learning, but most of your time will be spent in school placements. These courses are in high demand and very competitive, and training providers may want you to have significant teaching or school experience. The main salaried courses include School Direct salaried and postgraduate teaching apprenticeships (PGTA
+    cta_text: Find out more about postgraduate teacher training with a salary
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["Yes", "Not yet"]
@@ -30,6 +34,8 @@ routes:
     course_fee: "No"
     funding: Not available
     description: Teach First is a charitable organisation that delivers an employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards qualified teacher status (QTS) with a postgraduate certificate in education (PGCE).
+    cta_text: Find out more about Teach First Training Programme
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["Yes", "Not yet"]
@@ -43,6 +49,8 @@ routes:
     course_fee: "Yes"
     funding: Not available
     description: If you’ve worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through an assessment only programme. With this route, you do not need to do any further training. Instead, you’ll undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments. This will vary by your provider
+    cta_text: Find out more about Assessment only routes
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["Yes", "Not yet"]
@@ -56,6 +64,8 @@ routes:
     course_fee: "Yes"
     funding: "No"
     description: These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible.standards, or written assessments. This will vary by your provider.
+    cta_text: Find out more about Undergraduate initial teacher training
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["No"]
@@ -69,6 +79,8 @@ routes:
     course_fee: "Yes"
     funding: "No"
     description: International qualified teacher status (iQTS) is a teaching qualification backed by the UK government. iQTS meets the same high standards as English qualified teacher status (QTS) and leads to the automatic award of QTS. You can train where you live and work, with no need to visit the UK.
+    cta_text: Find out more about iQTS
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["Yes", "Not yet"]
@@ -82,6 +94,8 @@ routes:
     course_fee: No - you will be paid a salary
     funding: "No"
     description: These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible.
+    cta_text: Find out more about Teacher degree apprenticeship
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["No"]
@@ -95,6 +109,8 @@ routes:
     course_fee: "Yes"
     funding: "No"
     description:
+    cta_text: Find out more about Undergraduate degree followed by postgraduate teacher training
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["No"]
