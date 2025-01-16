@@ -95,11 +95,11 @@ You will need a Student visa if you’re on a fee-paying course. Your Student vi
 
 ### Bursaries and scholarships if you are on a Student visa 
 
-If you are training to teach physics or languages, you may be [eligible for a bursary or scholarship](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).  
+If you are training to teach physics or languages, you may be [eligible for a bursary or scholarship](/funding-and-support/scholarships-and-bursaries).  
 
-If you successfully applied for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
+If you are going to get a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
 
-Bursaries and scholarship payments are usually made by late October but you should confirm payment dates with your chosen provider.
+The first instalment of a bursary or scholarship is usually made by late October but you should confirm payment dates with your chosen provider.
 
 $refugees-asylum-seekers$
 
@@ -160,7 +160,7 @@ However, [some students can claim a refund of the IHS](https://www.gov.uk/guidan
 
 [Contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
-You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your teacher training application.
+You may be eligible for personalised support from a teacher training adviser. They can help with your teacher training application.
 
 To check if you're eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
 

@@ -67,15 +67,15 @@ keywords:
 
 Most non-UK citizens will not be eligible for financial support from the UK government to help with teacher training.
 
-Some support may be available if you:
+If one of the following applies to you, you may be able to get some support:
 
-* train to teach languages or physics
+* you are training to teach languages or physics
 
-* have some type of settled status in the UK, for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
+* you have some type of settled status in the UK, for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
 
-* are [from Ukraine or Afghanistan and are on certain visas](/non-uk-teachers/visas-for-non-uk-trainees)
+* you are [from Ukraine or Afghanistan and are on certain visas](/non-uk-teachers/visas-for-non-uk-trainees)
 
-* are an Irish citizen
+* you are an Irish citizen
 
 Support may include: 
 
@@ -85,7 +85,7 @@ Support may include:
 
 * bursaries and scholarships in the subjects offered to UK citizens 
 
-## Teacher training fees
+## Teacher training fees
 
 Teacher training fees for non-UK citizens vary between training providers.
 
@@ -98,7 +98,7 @@ Most non-UK candidates will not be eligible for financial support to help with f
 
 $refugees-asylum-seekers$
 
-## Funding your techer training
+## Funding your teacher training
 
 ### Student loans
 
@@ -164,7 +164,7 @@ If you need to apply for another visa, for example, a Skilled Worker visa, you w
 
 Contact the [UK Council for International Student Affairs website](https://www.ukcisa.org.uk/About-UKCISA) for advice on what financial support may be available.
 
-You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your teacher training application.
+You may be eligible for personalised support from a teacher training adviser. They can help with your teacher training application.
 
 To check if you are eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
 
