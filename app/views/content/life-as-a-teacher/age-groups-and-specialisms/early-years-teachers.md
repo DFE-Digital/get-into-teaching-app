@@ -118,7 +118,7 @@ $EY-undergraduate$
 
 Undergraduate tuition fee loans are available from [Student Finance England (SFE)](https://www.gov.uk/student-finance).
 
-### Early years teacher degree apprenticeship (EYTDA)
+### Early years teacher degree apprenticeship
 
 This is a new route, designed for people who want to combine studying for a bachelor’s degree with being employed in an early years setting.
 
