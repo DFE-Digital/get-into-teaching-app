@@ -101,7 +101,12 @@ module EventsHelper
       OpenStruct.new(
         title: Crm::EventRegion.lookup_by_id(event.region_id),
         description: description,
-        path: event_path(event.readable_id, channel: params[:channel], sub_channel: params[:sub_channel]),
+        path: event_path(event.readable_id,
+                         channel: params[:channel].presence,
+                         channel_source: params[:channel_source].presence,
+                         channel_service: params[:channel_service].presence,
+                         channel_activity: params[:channel_activity].presence,
+                         sub_channel: params[:sub_channel]),
       )
     end
   end

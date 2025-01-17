@@ -5,6 +5,9 @@
 <%= f.hidden_field :accepted_policy_id, value: f.object.latest_privacy_policy.id %>
 <%= f.hidden_field :event_id, value: @event.id %>
 <%= f.hidden_field :channel_id, value: params[:channel] || f.object&.channel_id %>
+<%= f.hidden_field :creation_channel_source_id, value: params[:channel_source].presence || f.object&.creation_channel_source_id.presence %>
+<%= f.hidden_field :creation_channel_service_id, value: params[:channel_service].presence || f.object&.creation_channel_service_id.presence %>
+<%= f.hidden_field :creation_channel_activity_id, value: params[:channel_activity].presence || f.object&.creation_channel_activity_id.presence %>
 <%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id %>
 
 <p>Your details are protected under the terms of our <%= link_to("privacy notice (opens in new tab)", privacy_policy_path(id: f.object.latest_privacy_policy.id), { target: :blank }) %>.</p>

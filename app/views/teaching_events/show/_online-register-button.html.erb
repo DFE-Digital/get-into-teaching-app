@@ -1,5 +1,10 @@
 <div class="register">
-  <%= link_to event_steps_path(@event.readable_id, channel: params[:channel], sub_channel: params[:sub_channel]), class: %w[button] do %>
+  <%= link_to event_steps_path(@event.readable_id,
+                               channel: params[:channel].presence,
+                               channel_source: params[:channel_source].presence,
+                               channel_service: params[:channel_service].presence,
+                               channel_activity: params[:channel_activity].presence,
+                               sub_channel: params[:sub_channel]), class: %w[button] do %>
     Register for this event
   <% end %>
 </div>
