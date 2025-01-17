@@ -70,7 +70,7 @@ module RoutesIntoTeaching
     end
 
     def resolve_layout
-      %w(completed index).include?(action_name) ? "minimal" : "registration"
+      %w[completed index].include?(action_name) ? "minimal" : "registration"
     end
   end
 end
