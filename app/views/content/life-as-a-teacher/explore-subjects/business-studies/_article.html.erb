@@ -1,0 +1,91 @@
+<div class="row inset">
+  <section class="col col-720 col-space-l-top">
+    <h2 class="heading--box-blue">Why teach biology</h2>
+    <div class="inset">
+      <p>Biology is the study of living things, the intricate systems that sustain them, and the delicate balance of our ecosystems. As a biology teacher, you'll have the opportunity to inspire the next generation to explore the wonders of life itself.</p>
+      <%= render 'content/shared/teaching/benefits' %>
+      <%= render 'content/shared/teaching/why_teach' %>
+    </div>
+  </section>
+
+    <section class="col col-720">
+    <!-- Quote: Chris Farr -->
+    <%= render 'content/shared/quotes/quote_progression_chris' %>
+  </section>
+
+  <section class="col col-720 col-space-l-top">
+    <h2 class="heading--box-blue">Shape your pupils' futures</h2>
+      <p>Teaching biology opens the door for your pupils to pursue exciting careers. They could work in a diverse range of fields, from zoology and wildlife conservation, to medicine and dentistry.</p>
+      <p>By solving challenging problems, your pupils could make significant contributions to these impactful areas.</p>
+      <p>Your pupils will learn more from you than you might think.  As their teacher, you'll guide them though the skills they need to show their understanding of biology. You'll teach them valuable life skills such as critical thinking, decision making and communication.</p>
+  </section>
+
+  <section class="col col-720">
+    <!-- Quote: Holly, science teacher -->
+    <%= render 'content/shared/quotes/quote_science_holly' %>
+  </section>
+
+  <section class="col col-720">
+    <h2 class="heading--box-blue">What you'll teach</h2>
+    <p>You'll teach the <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study">national curriculum for biology</a>.</p>
+    <p>You could have the opportunity to teach or support physics and chemistry lessons throughout key stages 3 and 4.</p>
+    <p>When you teach 11 to 14 year olds (key stage 3), you'll cover themes from the 3 science disciplines of biology, chemistry and physics.</p>
+    <p>The biology themes are:</p>
+    <ul>
+      <li>structure and function of living organisms</li>
+      <li>material cycles and energy</li>
+      <li>interactions and interdependencies</li>
+      <li>genetics and evolution</li>
+    </ul>
+    <p>Explore what teaching a key stage 3 science lesson would be like by visiting the <a href="https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units">Oak National Academy website</a>.</p>
+    <p>Themes you'll cover when you teach 14 to 16 year olds (key stage 4) will be more specific to biology, and include:</p>
+    <ul>
+      <li>cell biology</li>
+      <li>transport systems</li>
+      <li>health, disease and the development of medicines</li>
+      <li>coordination and control</li>
+      <li>photosynthesis</li>
+      <li>ecosystems</li>
+      <li>evolution, inheritance and variation</li>
+    </ul>
+    <p>At A level and AS level (key stage 5), you’ll help pupils develop a deeper knowledge and understanding of:</p>
+    <ul>
+      <li>biodiversity</li>
+      <li>exchange and transport</li>
+      <li>cells</li>
+      <li>biological molecules</li>
+      <li>ecosystems</li>
+      <li>control systems</li>
+      <li>genetics and evolution</li>
+      <li>energy for biological processes</li>
+    </ul>
+    <!-- Teaching pupils: ages and abilities -->
+    <p><%= render 'content/shared/teaching/ages_abilities' %> <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary"> Explore more about teaching secondary</a>.</p>
+</section>
+
+  <section class="col col-space-m col-720">
+    <h2 class="heading--box-blue">Start your journey into teaching biology</h2>
+    <!-- Check your qualifications-->
+    <%= render 'content/shared/qualifications-training/check_qualifications' %>
+    <p>Biology teacher training courses have had successful applications from candidates with a range of degrees, including biomedical sciences, forensic science, pharmacy, and natural sciences.</p>
+    <%= render 'content/shared/qualifications-training/find_out_more' %>
+    <!-- Non-UK qualifications expander -->
+    <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
+  </section>
+  <section class="col col-space-m col-720">
+    <h3>Fund your teacher training</h3>
+    <!-- Bursaries and Scholarships -->
+    <%= render 'content/shared/teaching/bursary_only' %>
+    <!-- Funding and Support -->
+    <%= render 'content/shared/teaching/funding_support' %>
+  </section>
+
+  <section class="col col-720">
+    <!-- Support with teacher training -->
+    <%= render 'content/shared/teaching/ect_support' %>
+  </section>
+  <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you to become a biology teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
+</div>
+</div>
