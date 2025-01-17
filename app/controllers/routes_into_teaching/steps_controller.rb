@@ -7,8 +7,12 @@ module RoutesIntoTeaching
     before_action :set_page_title
     before_action :set_step_page_title, only: %i[show update]
     before_action :noindex, if: :noindex?
+    before_action :set_breadcrumb
 
     layout :resolve_layout
+
+    def index
+    end
 
     def completed
       policy_id = params[:id]
@@ -20,8 +24,6 @@ module RoutesIntoTeaching
                         end
 
       @results = RoutesIntoTeaching::Routes.recommended(session[:routes_into_teaching])
-
-      breadcrumb @page_title, request.path
     end
 
   private
@@ -57,6 +59,10 @@ module RoutesIntoTeaching
       @page_title = "Find your route into teaching"
     end
 
+    def set_breadcrumb
+      breadcrumb @page_title, request.path
+    end
+
     def set_step_page_title
       if @current_step&.title
         @page_title += ", #{@current_step.title.downcase} step"
@@ -64,7 +70,7 @@ module RoutesIntoTeaching
     end
 
     def resolve_layout
-      action_name == "completed" ? "minimal" : "registration"
+      %w(completed index).include?(action_name) ? "minimal" : "registration"
     end
   end
 end

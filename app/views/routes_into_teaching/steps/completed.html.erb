@@ -59,7 +59,7 @@
         <h2 class="call-to-action__heading">Get personalised guidance</h2>
         <p>Everything you need to know to start a career in teaching sent straight into your inbox. Tailored to your own situation, you'll get all the latest information as well as advice and support.</p>
 
-        <div class="row col-space-s">
+        <div class="row col-space-m">
           <%= form_with builder: GOVUKDesignSystemFormBuilder::FormBuilder, url: mailing_list_step_path(:name), scope: :mailing_list_steps_name, method: :put do |f| %>
             <%= f.govuk_text_field :first_name, autocomplete: "given-name" %>
             <%= f.govuk_text_field :last_name, autocomplete: "family-name" %>
