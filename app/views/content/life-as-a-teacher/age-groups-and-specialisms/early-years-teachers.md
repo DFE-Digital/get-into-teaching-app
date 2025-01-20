@@ -131,7 +131,7 @@ $EY-apprenticeship$
 
 ## How to apply for early years teacher training
 
-To apply for an early years initial teacher training route, contact accredited early years training providers directly to apply for a place.
+To apply for an early years initial teacher training route, contact accredited early years training providers directly.
 
 <a href="https://www.gov.uk/government/publications/early-years-initial-teacher-training-itt-providers-and-school-direct-early-years-lead-organisations/early-years-initial-teacher-training-itt-providers-and-school-direct-lead-organisations" class="button">Find early years training providers</a>
 
