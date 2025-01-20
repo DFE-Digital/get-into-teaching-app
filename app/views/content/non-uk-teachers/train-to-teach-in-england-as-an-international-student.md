@@ -6,7 +6,7 @@ description: |-
 related_content:
     Fees and funding for non-UK trainees: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
-    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
+    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms"
 youtube_video:
   why-train-video:
     id: WhBBL_DpHFo
@@ -86,21 +86,15 @@ keywords:
 
 Citizens of every country in the world can apply to train to teach in England. 
 
-You'll need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach in most schools in England.
+You will need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach in most schools in England.
 
 If you do not want to come to England to study, you can [gain international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status) where you live or work, with no need to visit the UK. If you get iQTS, you automatically get QTS as well.  
 
-If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+If you are already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ## Check your eligibility and get support with qualifications
 
 Before you apply, you must [check your eligibility to train to teach in England](/non-uk-teachers/non-uk-qualifications).  
-
-To train to teach in England, you'll need qualifications equivalent to: 
-
-* GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary) 
-
-* a bachelor's degree in any subject 
 
 If you’re unsure about your qualifications or eligibility, you can [get help and support online or over the phone](/help-and-support). 
 
@@ -118,9 +112,11 @@ If you are not training to teach these subjects, any financial support you get w
 
 ### Salaried teacher training courses 
 
-A [salaried teacher training course](/funding-and-support/salaried-teacher-training) means you’re paid to work in a school while you train to teach. Some salaried courses also have tuition fees.  
+A [salaried teacher training course](/funding-and-support/salaried-teacher-training) means you are paid to work in a school while you train to teach. Some salaried courses also have tuition fees.  
 
-Salaried teacher training courses are limited in number and very competitive. You’ll also need a visa or immigration status allowing you to work in the UK.  
+Salaried teacher training courses are limited in number and very competitive. You will also need a visa or immigration status allowing you to work in the UK.  
+
+## Apply for a postgraduate teacher training course
 
 You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to qualified teacher status (QTS).  
 
@@ -130,7 +126,7 @@ Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 mont
 
 ## Apply for your visa
 
-If you do not have the right to study or work in the UK, you’ll need a visa. Your visa will need to be sponsored by a course provider.  
+If you do not have the right to study or work in the UK, you will need a visa. Your visa will need to be sponsored by a course provider.  
 
 Before you apply for your visa, you must have a confirmed offer of a training place on a course offering Student or Skilled Worker visa sponsorship. Find out more about [applying for a visa to train to teach in England](/non-uk-teachers/visas-for-non-uk-trainees).  
 
@@ -152,10 +148,10 @@ To find out about teaching in other areas of the UK, visit the:
 
 <p><a href="/non-uk-teachers/why-train-to-teach-in-england-video-transcript">Read the transcript for the ‘Why train to teach in England?’ video</a>.</p>
 
-## Contact
+## Get help
 
-If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
-
-You may be eligible for personalised support from a [teacher training adviser](/teacher-training-advisers). They can help with your application to a training provider or school.
+You may be eligible for personalised support from a teacher training adviser. They can help with your application to a training provider or school.
 
 To check if you're eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
+
+If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
