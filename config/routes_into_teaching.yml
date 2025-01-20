@@ -17,8 +17,7 @@ routes:
     course_fee: Varies
     funding: "No"
     description: These courses allow you to earn a salary while you train towards qualified teacher status (QTS). You’ll still do some theoretical learning, but most of your time will be spent in school placements. Salaried courses are in high demand and very competitive, and training providers may want you to have significant teaching or school experience. The main salaried courses include School Direct salaried, postgraduate teaching apprenticeships (PGTA), and the Teach First Training Programme. Some salaried courses may also come with fees.
-    
-   matches:
+    matches:
       - question: undergraduate_degree
         answers: ["Yes", "Not yet"]
       - question: unqualified_teacher
@@ -26,18 +25,18 @@ routes:
       - question: location
         answers: ["*"] 
         
-          - title: Teach First Training Programme
-    course_length: 24 months
-    course_fee: "No"
-    funding: Not available
-    description: Teach First is a charitable organisation that delivers an employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards qualified teacher status (QTS) with a postgraduate certificate in education (PGCE).
-    matches:
-      - question: undergraduate_degree
-        answers: ["Yes", "Not yet"]
-      - question: unqualified_teacher
-        answers: ["*"]
-      - question: location
-        answers: ["*"]
+    - title: Teach First Training Programme
+      course_length: 24 months
+      course_fee: "No"
+      funding: "No"
+      description: Teach First is a charitable organisation that delivers an employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards qualified teacher status (QTS) with a postgraduate certificate in education (PGCE).
+      matches:
+        - question: undergraduate_degree
+          answers: ["Yes", "Not yet"]
+        - question: unqualified_teacher
+          answers: ["*"]
+        - question: location
+          answers: ["*"]
 
   - title: Assessment only
     course_length: 12 weeks
