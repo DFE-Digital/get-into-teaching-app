@@ -1,28 +1,105 @@
 <%= render Content::LandingHeroComponent.new(
-  title: "Routes into teaching",
+  title: "Find your route into teaching",
   colour: "pastel yellow-yellow",
 ) %>
 
 <section class="container">
-  <div class="row">
-    <h2>You told us that you:</h2>
+  <div class="row inset">
+    <div class="col col-845">
+      <h2>You told us that you:</h2>
 
-    <p>You can <%= link_to "change your answers", routes_into_teaching_steps_path %> if you need to.</p>
+      <ul>
+        <li><%= undergraduate_degree_summary %></li>
+        <li><%= unqualified_teacher_summary %></li>
+        <li><%= location_summary %></li>
+      </ul>
+
+      <% if non_uk? %>
+        <%= render Content::ExpanderComponent.new(
+          title: "visa sponsorship",
+          text: "<p>If you do not have the right to study or work in the UK, you will need a visa. Your visa will need to be sponsored by a course provider.</p>
+          <p><a href=\"/non-uk-teachers/visas-for-non-uk-trainees\">Learn more about applying for your visa to train to teach in England</a>.</p>",
+        ) %>
+      <% end %>
+
+      <p>You can <%= link_to "change your answers", routes_into_teaching_steps_path %> if you need to.</p>
+    </div>
   </div>
 
-  <div class="row">
-    <% @results.each do |result| %>
-      <div class="col-space-s">
-        <%= render Content::ResultsBoxComponent.new(
+  <div class="row inset">
+    <div class="col col-845">
+      <h2 class="heading--box-blue">Your options</h2>
+      <p>Based on your answers, you may be eligible for the following teacher training options:</p>
+    </div>
+  </div>
+
+  <div class="row inset">
+    <div class="col col-845">
+      <% @results.each do |result| %>
+        <div class="col-space-s">
+          <%= render Content::ResultsBoxComponent.new(
           heading: result["title"],
           fee: result["course_fee"],
           course_length: result["course_length"],
           funding: result["funding"],
           text: result["description"],
-          link_text: "Find out more",
-          link_target: "/steps-to-become-a-teacher",
+          link_text: result["cta_text"],
+          link_target: result["cta_link"],
         ) %>
-      </div>
-    <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row inset">
+    <div class="col col-845">
+      <h2 class="heading--box-blue">Next steps</h2>
+
+      <%= render CallsToAction::SimpleComponent.new(icon: "icon-arrow-black") do %>
+        <h3 class="call-to-action__heading">Get personalised guidance</h3>
+        <p>Everything you need to know to start a career in teaching sent straight into your inbox. Tailored to your own situation, you'll get all the latest information as well as advice and support.</p>
+
+        <div class="row col-space-m">
+          <%= form_with builder: GOVUKDesignSystemFormBuilder::FormBuilder, url: mailing_list_step_path(:name), scope: :mailing_list_steps_name, method: :put do |f| %>
+            <%= f.govuk_text_field :first_name, autocomplete: "given-name" %>
+            <%= f.govuk_text_field :last_name, autocomplete: "family-name" %>
+            <%= f.govuk_email_field :email, autocomplete: "email" %>
+            <%= f.hidden_field :channel_id, value: params[:channel] || f.object&.channel_id.presence %>
+            <%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id.presence %>
+            <%= f.hidden_field :accepted_policy_id, value: @privacy_policy.id %>
+            <div class="row col-space-s col-space-s-top">
+              <small>
+                Your details are protected under the terms of our <%= link_to("privacy notice (opens in new tab)", "/privacy-policy", { class: "link--black", target: :blank }) %>. This explains how we use your personal data. It's important you read it before signing up to receive emails.
+              </small>
+            </div>
+            <%= f.button "Next step", class: "button", data: { "prevent-double-click": true, "disable-with": "Next step" } %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </section>
+
+<div class="row">
+  <div class="col-space-l-top">
+    <% if non_uk? %>
+      <%= render Content::QuoteWithImageComponent.new(
+        title: "Teaching as a non-uk...",
+        text: "<p>Visit the non-uk section...</p><p><a href=\"/non-uk-teachers\">Read about becoming a teacher as a non-uk citizen</a></p>",
+        quotes: false,
+        background_color: "pink",
+        heading_color: "green",
+        image_path: "static/images/content/hero-images/0034.jpg"
+      ) %>
+    <% else %>
+      <%= render Content::QuoteWithImageComponent.new(
+        title: "Teacher training stories",
+        text: "<p>\"My influence and decisions are ultimately impacting on our pupils' lives and the experience that they have at school.\"</p><p><a href=\"/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story\">Read Abigail's career progression story</a>.</p>",
+        quotes: true,
+        background_color: "blue",
+        heading_color: "pink",
+        image_path: "static/images/content/case-studies/abigail.jpg"
+      ) %>
+    <% end %>
+  </div>
+</div>

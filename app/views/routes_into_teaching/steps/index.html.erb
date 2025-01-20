@@ -1,0 +1,10 @@
+<%= render Content::LandingHeroComponent.new(
+  title: "Find your route into teaching",
+  colour: "pastel yellow-yellow",
+) %>
+
+<section class="container">
+  <div class="row">
+    <%= link_to "Find your route into teaching", routes_into_teaching_step_path(RoutesIntoTeaching::Wizard.steps.first.key) %>
+  </div>
+</section>
