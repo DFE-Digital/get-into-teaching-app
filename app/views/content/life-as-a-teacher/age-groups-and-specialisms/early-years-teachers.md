@@ -69,9 +69,7 @@ If you're interested in exploring other opportunities to work with pre-school ch
 
 ## What you need to become an early years teacher
 
-There are several ways to train to become an early years teacher. These routes include undergraduate degree training, an early years teacher degree apprenticeship, or postgraduate options if you already have a degree. All of these routes lead to early years teacher status (EYTS).
-
-To do postgraduate training, you’ll need a bachelor’s degree or an equivalent, for example, a vocational or professional qualification, or equivalent qualification you gained outside the UK.
+There are several ways to train to become an early years teacher. You can do  undergraduate degree training, an early years teacher degree apprenticeship, or there are postgraduate options if you already have a degree. All of these routes lead to early years teacher status (EYTS).
 
 To start early years teacher training, you’ll need these GCSE qualifications:
 
@@ -81,9 +79,11 @@ To start early years teacher training, you’ll need these GCSE qualifications:
 
 If you do not have GCSEs, you'll need an equivalent qualification, such as a vocational or professional qualification, or an equivalent qualification you gained outside the UK.
 
+To do postgraduate training, you’ll need a bachelor’s degree or an equivalent, for example, a vocational or professional qualification, or equivalent qualification you gained outside the UK.
+
 $international-content$
 
-## Eary years initial teacher training routes
+## Early years initial teacher training routes
 
 ### Postgraduate training 
 
@@ -125,7 +125,7 @@ To apply for an early years initial teacher training route, contact accredited e
 
 <a href="https://www.gov.uk/government/publications/early-years-initial-teacher-training-itt-providers-and-school-direct-early-years-lead-organisations/early-years-initial-teacher-training-itt-providers-and-school-direct-lead-organisations" class="button">Find early years training providers</a>
 
-## Early years teacher degree apprenticeship (EYTDA)
+### Early years teacher degree apprenticeship (EYTDA) route
 
 This is a new route, designed for people who want to combine studying for a bachelor’s degree with being employed in an early years setting.
 
