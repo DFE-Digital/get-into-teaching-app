@@ -83,11 +83,9 @@ If you do not have GCSEs, you'll need an equivalent qualification, such as a voc
 
 $international-content$
 
-## Routes to early years teacher status
+## Eary years initial teacher training routes
 
-### Early years initial teacher training
-
-#### Postgraduate training 
+### Postgraduate training 
 
 This route is designed for people who have an undergraduate degree and want to continue full-time study to achieve early years teacher status.
 
@@ -103,35 +101,34 @@ You are not eligible for a bursary if you do not have these qualifications or if
 
 You do not need to do anything to access this funding. You can [learn more about early years initial teacher training funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2025-to-2026-funding-guidance).
 
-#### Postgraduate employment-based training
+### Postgraduate employment-based training
 This route is for graduates working in an early years setting who want to achieve early years teacher status.
 
 $EY-graduate-employment$
 
-#### Postgraduate assessment only training
+### Postgraduate assessment only training
 
 This self-funded route is ideal for graduates with early years experience. If you already meet the [early years teachers’ standards](https://www.gov.uk/government/publications/early-years-teachers-standards) you may be able to gain EYTS without the need for further training.
 
 $EY-self-funded$
 
-#### Undergraduate training
+### Undergraduate training
 This route is for people who want to study for a full-time bachelor’s degree in an early-childhood related subject leading to EYTS.
 
 $EY-undergraduate$
 
 Undergraduate tuition fee loans are available from [Student Finance England (SFE)](https://www.gov.uk/student-finance).
 
-### Early years teacher degree apprenticeship (EYTDA)
+### How to apply for early years initial teacher training
+
+To apply for an early years initial teacher training route, contact accredited early years training providers directly.
+
+<a href="https://www.gov.uk/government/publications/early-years-initial-teacher-training-itt-providers-and-school-direct-early-years-lead-organisations/early-years-initial-teacher-training-itt-providers-and-school-direct-lead-organisations" class="button">Find early years training providers</a>
+
+## Early years teacher degree apprenticeship (EYTDA)
 
 This is a new route, designed for people who want to combine studying for a bachelor’s degree with being employed in an early years setting.
 
 The first early years teacher degree apprenticeships are expected to start in 2026. More information will be available later this year, including how to apply and course details. 
 
 $EY-apprenticeship$
-
-## How to apply for early years teacher training
-
-To apply for an early years initial teacher training route, contact accredited early years training providers directly.
-
-<a href="https://www.gov.uk/government/publications/early-years-initial-teacher-training-itt-providers-and-school-direct-early-years-lead-organisations/early-years-initial-teacher-training-itt-providers-and-school-direct-lead-organisations" class="button">Find early years training providers</a>
-
