@@ -61,15 +61,15 @@ calls_to_action:
 
 The early years are critical in children’s development. As an early years teacher you’ll work with young children up to the age of 5. You’ll use your knowledge and skills to help young children enjoy high standards of teaching and open their minds to new ideas every day.
 
-You’ll need to do early years initial teacher training (EYITT) or an early years teacher degree apprenticeship (EYTDA) to achieve early years teacher status (EYTS). This will allow you to work in a nursery or early years setting, as well as academies, free schools and independent schools.
+To teach in a nursery or early years setting, you'll need early years teacher status (EYTS). EYTS is also recognised in academies, free schools and independent schools. You can achieve EYTS through either early years initial teacher training (EYITT) or an early years teacher degree apprenticeship (EYTDA).
 
-If you want to teach in a primary school, including in a reception class then you'll need to achieve qualified teacher status (QTS). [Find out more about training to teach primary pupils](/life-as-a-teacher/age-groups-and-specialisms/primary).
+If you want to teach in a primary school, including in a reception class, then you'll need to achieve qualified teacher status (QTS). [Find out more about training to teach primary pupils](/life-as-a-teacher/age-groups-and-specialisms/primary).
 
 If you're interested in exploring other opportunities to work with pre-school children, you can [find out more about a range of careers in early years education](https://earlyyearscareers.campaign.gov.uk/?utm_source=Website&utm_medium=GiT). 
 
 ## What you need to become an early years teacher
 
-There are several ways to train to become an early years teacher. These routes include postgraduate options if you already have a degree, an undergraduate degree, or an early years teacher degree apprenticeship. 
+There are several ways to train to become an early years teacher. These routes include undergraduate degree training, an early years teacher degree apprenticeship, or postgraduate options if you already have a degree. All of these routes lead to early years teacher status (EYTS).
 
 To do postgraduate training, you’ll need a bachelor’s degree or an equivalent, for example, a vocational or professional qualification, or equivalent qualification you gained outside the UK.
 
@@ -129,6 +129,6 @@ To apply for an early years initial teacher training route, contact accredited e
 
 This is a new route, designed for people who want to combine studying for a bachelor’s degree with being employed in an early years setting.
 
-The first early years teacher degree apprenticeships are expected to start in 2026. More information will be available later this year, including how to apply and course details. 
+The first early years teacher degree apprenticeships are expected to start in 2026. More information will be available on this page later this year, including how to apply and course details. 
 
 $EY-apprenticeship$
