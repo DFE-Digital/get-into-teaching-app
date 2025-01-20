@@ -6,12 +6,13 @@ module AnswerHelper
     when Date
       answer = answer.to_formatted_s(:govuk_date)
     when Time
-      answer = if answer.hour.zero? && answer.min.zero?
+      local_time = answer.in_time_zone
+      answer = if local_time.hour.zero? && local_time.min.zero?
                  "Midnight"
-               elsif answer.hour == 12 && answer.min.zero?
+               elsif local_time.hour == 12 && local_time.min.zero?
                  "Midday"
                else
-                 answer.in_time_zone.to_formatted_s(:govuk_time_with_period)
+                 local_time.to_formatted_s(:govuk_time_with_period)
                end
     end
 
