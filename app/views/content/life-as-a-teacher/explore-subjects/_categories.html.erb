@@ -15,6 +15,12 @@
               description: "Find out how to become a biology teacher including what you'll be teaching and what funding is available to help you train.",
               path: "/life-as-a-teacher/explore-subjects/biology",
             )) %>
+             <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Business",
+              description: "As a business teacher, you'll teach pupils an entrepreneurial spirit, empowering them to become bold innovators.",
+              path: "/life-as-a-teacher/explore-subjects/business",
+            )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
               title: "Chemistry",
