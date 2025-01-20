@@ -5,9 +5,9 @@ module Callbacks
       attribute :creation_channel_service_id, :integer
       attribute :creation_channel_activity_id, :integer
 
-      DEFAULT_CREATION_CHANNEL_SOURCE_ID = 222750003   # GIT Website
-      DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222750005  # Explore Teaching Adviser Service TODO: check this value
-      DEFAULT_CREATION_CHANNEL_ACTIVITY_ID = nil       # default to blank
+      DEFAULT_CREATION_CHANNEL_SOURCE_ID = 222_750_003   # GIT Website
+      DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_005  # Explore Teaching Adviser Service TODO: check this value
+      DEFAULT_CREATION_CHANNEL_ACTIVITY_ID = nil # default to blank
 
       def save
         self.creation_channel_source_id = DEFAULT_CREATION_CHANNEL_SOURCE_ID unless creation_channel_source_id.in?(creation_channel_source_ids)
@@ -16,7 +16,7 @@ module Callbacks
         super
       end
 
-      private
+    private
 
       def creation_channel_source_ids
         @creation_channel_source_ids ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_contact_creation_channel_sources.map { |obj| obj.id.to_i }

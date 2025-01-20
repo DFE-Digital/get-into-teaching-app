@@ -8,9 +8,9 @@ module MailingList
       attribute :sub_channel_id
 
       DEFAULT_CHANNEL_ID = nil
-      DEFAULT_CREATION_CHANNEL_SOURCE_ID = 222750003   # GIT Website
-      DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222750007  # Mailing List
-      DEFAULT_CREATION_CHANNEL_ACTIVITY_ID = nil       # default to blank
+      DEFAULT_CREATION_CHANNEL_SOURCE_ID = 222_750_003   # GIT Website
+      DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_007  # Mailing List
+      DEFAULT_CREATION_CHANNEL_ACTIVITY_ID = nil # default to blank
 
       def export
         super.without("sub_channel_id")

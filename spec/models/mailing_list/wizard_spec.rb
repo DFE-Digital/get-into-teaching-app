@@ -14,6 +14,11 @@ describe MailingList::Wizard do
       "degree_status_id" => degree_status_id,
       "preferred_teaching_subject_id" => preferred_teaching_subject_id.to_s,
       "accepted_policy_id" => "789",
+      "channel_id" => nil,
+      "creation_channel_source_id" => 222_750_003,
+      "creation_channel_service_id" => 222_750_007,
+      "creation_channel_activity_id" => nil,
+      "sub_channel_id" => "some-3rd-party-id",
     } }
   end
   let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
@@ -53,6 +58,10 @@ describe MailingList::Wizard do
         preferred_teaching_subject_id: wizardstore[:preferred_teaching_subject_id],
         welcome_guide_variant: variant,
         accepted_policy_id: wizardstore[:accepted_policy_id],
+        channel_id: nil,
+        creation_channel_source_id: wizardstore[:creation_channel_source_id],
+        creation_channel_service_id: wizardstore[:creation_channel_service_id],
+        creation_channel_activity_id: wizardstore[:creation_channel_activity_id],
       })
     end
 
@@ -76,6 +85,7 @@ describe MailingList::Wizard do
         "last_name" => wizardstore[:last_name],
         "degree_status_id" => wizardstore[:degree_status_id],
         "preferred_teaching_subject_id" => wizardstore[:preferred_teaching_subject_id],
+        "sub_channel_id" => wizardstore[:sub_channel_id],
       })
 
       expect(wizardstore).to have_received(:prune!).with({ leave: MailingList::Wizard::ATTRIBUTES_TO_LEAVE }).once
@@ -91,6 +101,9 @@ describe MailingList::Wizard do
         "acceptedPolicyId" => request.accepted_policy_id,
         "degreeStatusId" => request.degree_status_id,
         "channelId" => nil,
+        "creationChannelSourceId" => 222_750_003,
+        "creationChannelServiceId" => 222_750_007,
+        "creationChannelActivityId" => nil,
         "email" => "[FILTERED]",
         "firstName" => "[FILTERED]",
         "lastName" => "[FILTERED]",
