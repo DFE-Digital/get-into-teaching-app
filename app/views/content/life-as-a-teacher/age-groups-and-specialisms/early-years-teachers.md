@@ -125,7 +125,7 @@ To apply for an early years initial teacher training route, contact accredited e
 
 <a href="https://www.gov.uk/government/publications/early-years-initial-teacher-training-itt-providers-and-school-direct-early-years-lead-organisations/early-years-initial-teacher-training-itt-providers-and-school-direct-lead-organisations" class="button">Find early years training providers</a>
 
-### Early years teacher degree apprenticeship (EYTDA) route
+## Early years teacher degree apprenticeship (EYTDA) route
 
 This is a new route, designed for people who want to combine studying for a bachelor’s degree with being employed in an early years setting.
 
