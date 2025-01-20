@@ -651,7 +651,7 @@ provider_groups:
       
       
       
-  Non-UK:
+  Outside of the UK:
     description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
     - header: "Ambition Teacher Training"
@@ -660,13 +660,6 @@ provider_groups:
       email: "TeacherTraining@Ambition.org.uk"
       telephone: "020 3846 5828"
       international_phone: "+442038465828"
-      
-    - header: "Bournemouth Bay Teacher Training Partnership"
-      link: "https://bournemouthbay-partnership.com/about-us/"
-      name: "James Mosley"
-      email: "J.Mosley@poolehigh.poole.sch.uk"
-      telephone: "01202 662038"
-      international_phone: "+441202662038"
       
     - header: "Colchester Teacher Training Consortium"
       link: "https://colchesterttc.org.uk/courses"
@@ -809,6 +802,6 @@ Or, find other ways you can [train to be a teacher](/train-to-be-a-teacher).
 
 ### If you live outside the UK or are a non-UK citizen
 
-If you’re based outside the UK, you will need to contact a [non-UK assessment only provider](/train-to-be-a-teacher/assessment-only-route-to-qts#group--non-uk). You may also be interested in [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status). With iQTS, you can train where you live and work, with no need to visit the UK.
+If you’re based outside the UK, you will need to contact a [non-UK assessment only provider](/train-to-be-a-teacher/assessment-only-route-to-qts#group--outside-of-the-uk). You may also be interested in [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status). With iQTS, you can train where you live and work, with no need to visit the UK.
 
 If you’re a non-UK citizen based in the UK, contact one of the regional or national providers listed on this page.
