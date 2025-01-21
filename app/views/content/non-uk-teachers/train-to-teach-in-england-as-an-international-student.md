@@ -84,7 +84,16 @@ keywords:
 
 
 
-Citizens of every country in the world can apply to train to teach in England. 
+You can apply to train to teach in England if you:
+
+* live outside the UK
+* live in the UK but are a non-UK citizen
+
+Before you apply, you must [check your eligibility to train to teach in England](/non-uk-teachers/non-uk-qualifications).  
+
+If you are unsure about your qualifications or eligibility, you can [get help and support online or over the phone](/help-and-support). 
+
+## Becoming a qualified teacher
 
 You will need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach in most schools in England.
 
@@ -92,13 +101,7 @@ If you do not want to come to England to study, you can [gain international qual
 
 If you are already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
-## Check your eligibility and get support with qualifications
-
-Before you apply, you must [check your eligibility to train to teach in England](/non-uk-teachers/non-uk-qualifications).  
-
-If you’re unsure about your qualifications or eligibility, you can [get help and support online or over the phone](/help-and-support). 
-
-## Find out about fees and financial support
+## Fees and financial support
 
 ### Fee-paying teacher training courses 
 
@@ -116,6 +119,8 @@ A [salaried teacher training course](/funding-and-support/salaried-teacher-train
 
 Salaried teacher training courses are limited in number and very competitive. You will also need a visa or immigration status allowing you to work in the UK.  
 
+$refugees-asylum-seekers$
+
 ## Apply for a postgraduate teacher training course
 
 You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to qualified teacher status (QTS).  
@@ -128,7 +133,11 @@ Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 mont
 
 If you do not have the right to study or work in the UK, you will need a visa. Your visa will need to be sponsored by a course provider.  
 
-Before you apply for your visa, you must have a confirmed offer of a training place on a course offering Student or Skilled Worker visa sponsorship. Find out more about [applying for a visa to train to teach in England](/non-uk-teachers/visas-for-non-uk-trainees).  
+Before you apply for your visa, you must have a confirmed offer of a training place on a course offering Student or Skilled Worker visa sponsorship. 
+
+Find out more about [applying for a visa to train to teach in England](/non-uk-teachers/visas-for-non-uk-trainees).  
+
+$ukraine-visas$
 
 ## Train to teach in Wales, Scotland or Northern Ireland 
 
