@@ -12,6 +12,10 @@ describe Events::Wizard do
       "last_name" => "Joseph",
       "accepted_policy_id" => "789",
       "is_walk_in" => true,
+      "channel_id" => nil,
+      "creation_channel_source_id" => 222_750_003,
+      "creation_channel_service_id" => 222_750_006,
+      "creation_channel_activity_id" => nil,
     } }
   end
   let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
@@ -39,7 +43,18 @@ describe Events::Wizard do
   describe "#complete!" do
     let(:request) do
       GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-        { event_id: "abc123", email: "email@address.com", first_name: "Joe", last_name: "Joseph", accepted_policy_id: "789", is_walk_in: true },
+        {
+          event_id: "abc123",
+          email: "email@address.com",
+          first_name: "Joe",
+          last_name: "Joseph",
+          accepted_policy_id: "789",
+          is_walk_in: true,
+          channel_id: nil,
+          creation_channel_source_id: 222_750_003,
+          creation_channel_service_id: 222_750_006,
+          creation_channel_activity_id: nil,
+        },
       )
     end
 
@@ -67,6 +82,9 @@ describe Events::Wizard do
         "qualificationId" => nil,
         "eventId" => "abc123",
         "channelId" => nil,
+        "creationChannelSourceId" => 222_750_003,
+        "creationChannelServiceId" => 222_750_006,
+        "creationChannelActivityId" => nil,
         "acceptedPolicyId" => "789",
         "preferredTeachingSubjectId" => nil,
         "considerationJourneyStageId" => nil,
