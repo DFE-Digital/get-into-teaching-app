@@ -1,7 +1,7 @@
 ---
 title: Skills needed to be a teacher
 description: |- 
-  Find out about the the skills needed for teaching, including subject knowledge, pedagogy, and soft skills. 
+  Find out about the the skills needed for teaching, including subject knowledge, pedagogy, and soft skills.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 keywords:
