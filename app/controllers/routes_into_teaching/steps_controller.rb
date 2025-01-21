@@ -24,7 +24,6 @@ module RoutesIntoTeaching
                         end
 
       @results = RoutesIntoTeaching::Routes.recommended(session[:routes_into_teaching])
-      @results = [] # TODO - remove before deploy
     end
 
   private
