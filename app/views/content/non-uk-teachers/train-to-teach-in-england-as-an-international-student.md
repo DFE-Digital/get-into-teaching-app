@@ -93,7 +93,7 @@ Before you apply, you must [check your eligibility to train to teach in England]
 
 If you are unsure about your qualifications or eligibility, you can [get help and support online or over the phone](/help-and-support). 
 
-## Becoming a qualified teacher
+## Qualifying to teach in England
 
 You will need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach in most schools in England.
 
