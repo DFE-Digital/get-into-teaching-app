@@ -29,18 +29,18 @@ routes:
       - question: location
         answers: ["*"] 
         
-    - title: Teach First Training Programme
-      course_length: 24 months
-      course_fee: "No"
-      funding: "No"
-      description: Teach First is a charitable organisation that delivers an employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards qualified teacher status (QTS) with a postgraduate certificate in education (PGCE).
-      matches:
-        - question: undergraduate_degree
-          answers: ["Yes", "Not yet"]
-        - question: unqualified_teacher
-          answers: ["*"]
-        - question: location
-          answers: ["*"]
+  - title: Teach First Training Programme
+    course_length: 24 months
+    course_fee: "No"
+    funding: "No"
+    description: Teach First is a charitable organisation that delivers an employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards qualified teacher status (QTS) with a postgraduate certificate in education (PGCE).
+    matches:
+      - question: undergraduate_degree
+        answers: ["Yes", "Not yet"]
+      - question: unqualified_teacher
+        answers: ["*"]
+      - question: location
+        answers: ["*"]
 
   - title: Assessment only route
     course_length: up to 12 weeks
