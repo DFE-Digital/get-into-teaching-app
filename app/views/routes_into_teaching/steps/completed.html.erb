@@ -29,15 +29,13 @@
   <div class="row inset">
     <div class="col col-845">
       <h2 class="heading--box-blue">Your options</h2>
-      <p>Based on your answers, you may be eligible for the following teacher training options:</p>
-    </div>
-  </div>
 
-  <div class="row inset">
-    <div class="col col-845">
-      <% @results.each do |result| %>
-        <div class="col-space-s">
-          <%= render Content::ResultsBoxComponent.new(
+      <% if @results.any? %>
+        <p>Based on your answers, you may be eligible for the following teacher training options:</p>
+
+        <% @results.each do |result| %>
+          <div class="col-space-s">
+            <%= render Content::ResultsBoxComponent.new(
           heading: result["title"],
           fee: result["course_fee"],
           course_length: result["course_length"],
@@ -46,7 +44,10 @@
           link_text: result["cta_text"],
           link_target: result["cta_link"],
         ) %>
-        </div>
+          </div>
+        <% end %>
+      <% else %>
+        <p>There are no teacher training routes that match your current circumstances. <%= link_to "Get advice on getting into teaching", "/help-and-support" %>.</p>
       <% end %>
     </div>
   </div>
