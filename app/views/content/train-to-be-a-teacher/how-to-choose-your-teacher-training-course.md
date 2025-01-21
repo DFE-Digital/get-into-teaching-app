@@ -9,8 +9,9 @@ related_content:
     Your teacher training application : "/how-to-apply-for-teacher-training/teacher-training-application"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-degree
+cta_adviser:
+  adviser:
+    text: Talk to an adviser with years of teaching experience about how to choose the right course for you. Chat by phone, text or email, as little or as often as you need.
 navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.
@@ -40,11 +41,14 @@ expander:
     title: fee-funded teacher training
     text: |-
       <p>
-      If you have settled status or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you may be eligible for a tuition fee loan, maintenance loan, bursary or scholarship.
+      If you have settled status, refugee status, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you may be eligible for a tuition fee loan, maintenance loan, bursary or scholarship.
       </p>
+      <p>You may be eligible for financial support to train to teach if <a href="/non-uk-teachers/visas-for-non-uk-trainees"> you're from Ukraine or Afghanistan and on certain visas</a>.</p>
       <p>
       Other non-UK citizens may not be eligible for student finance, but may be eligible for a bursary or scholarship to train to teach languages and physics.
       </p>
+      <p>If you're in <a href="https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
+      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
       <p>
       Learn more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.
       </p>
@@ -52,7 +56,7 @@ expander:
     title: salaried teacher training
     text: |-
       <p>
-      You can apply for a salaried teacher training course. However, places on these courses are limited and very competitive.
+      You can apply for a salaried teacher training course. However, places on these courses are limited and very competitive. Some salaried courses may also charge fees.
       </p>
       <p>
       Before you apply, contact the salaried teacher training provider to check you meet the entry requirements.
@@ -115,7 +119,7 @@ $fee-funded-teacher-training$
 
 ### Salaried teacher training
 
-Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. 
+Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. Some salaried teacher training courses may also come with fees. Check with individual providers for more information.
 
 Places on salaried courses are limited and very competitive. 
 
@@ -151,3 +155,5 @@ There are usually more full-time courses available than part-time.
 Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
 
 [Find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
+
+$adviser$

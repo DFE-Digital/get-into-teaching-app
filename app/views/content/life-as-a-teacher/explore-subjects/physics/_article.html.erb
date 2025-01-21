@@ -3,6 +3,7 @@
     <h2 class="heading--box-blue">Why teach physics</h2>
       <p>As a physics teacher, you’ll be engaging students in a wide range of experiments that can spark their interest. You could inspire your pupils to consider rewarding professions, from tackling climate change to artificial intelligence (AI).</p>
    <%= render 'content/shared/teaching/benefits' %>
+   <%= render 'content/shared/teaching/why_teach' %>
   </section>
 
 <section class="col col-720">
@@ -47,12 +48,12 @@
       <li>electric circuits and waves</li>
       <li>matter, quantum and nuclear physics</li>
     </ul>
-    <%= render 'content/shared/teaching/ages_abilities' %>
+     <p><%= render 'content/shared/teaching/ages_abilities' %> <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary"> Explore more about teaching secondary</a>.</p>
   </section>
 
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching physics</h2>
-    <%= render 'content/shared/qualifications-training/check_qualifcations' %>
+    <%= render 'content/shared/qualifications-training/check_qualifications' %>
     <p>Physics teacher training courses have had successful applications from candidates with a range of degrees, including maths, geology, business studies and finance.</p>
     <%= render 'content/shared/qualifications-training/find_out_more' %>
     <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
@@ -80,4 +81,7 @@
   <section class="col col-720">
     <%= render 'content/shared/teaching/ect_support' %>
   </section>
+  <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you to become a physics teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
 </div>

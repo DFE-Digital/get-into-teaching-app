@@ -2,8 +2,9 @@
 title: When to apply for teacher training
 description: |-
   Find out when you can apply for postgraduate teacher training courses and the deadline for submitting an application.
-related_content:
-    
+cta_adviser:
+  adviser:
+    text: Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience. Chat by phone, text or email, as little or as often as you need.
 navigation: 30.16
 navigation_title: When to apply for teacher training
 navigation_description:  Find out when you can apply for postgraduate teacher training courses.
@@ -18,9 +19,15 @@ expander:
   application-deadlines:
     title: application deadlines
     text: You should check the deadline for non-UK applications with training providers. They may close earlier than for other applicants. 
+  ukraine-inset:
+    title: moving to the UK
+    header: "Ukraine citizens:"
+    text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.
 ---
 
 You can apply for postgraduate teacher training courses starting in $recruitmentcycle_coursestart$ $recruitmentcycle_openanddeadline$. 
+
+$application-deadlines$
 
 ## Find and apply for teacher training courses
 
@@ -42,7 +49,7 @@ It’s wise to apply as soon as you’re ready because:
 
 You can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
 
-$application-deadlines$
+$ukraine-inset$
 
 <br />
 $q-jacub-pask$
@@ -74,3 +81,4 @@ During your application process you will be asked for:
 
 You can find <a href="/how-to-apply-for-teacher-training/teacher-training-interview">help to prepare for your interview</a>. 
 
+$adviser$

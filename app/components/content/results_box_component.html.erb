@@ -5,9 +5,9 @@
     </div>
   <% end %>
   <section class="results-box results-box--<%= border_color %>">
-    <h2 class="results-box__heading">
+    <h3 class="results-box__heading">
       <%= heading %>
-    </h2>
+    </h3>
     <div class="results-box__course-info-container results-box__text">
       <div class="results-box__info-row">
         <div class="results-box__label">Course fee</div>
@@ -27,7 +27,7 @@
     </div>
     <div class="results-box__text results-box__full-width-text"><%= text %></div>
     <div class="results-box__cta">
-      <%= render Content::LinkAsButtonComponent.new(link_text: @link_text, href: @link_target) %>
+      <%= render "content/shared/links_and_buttons/cta_circle_button_link", href: @link_target, cta_link_text: @link_text %>
     </div>
   </section>
 </div>

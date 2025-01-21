@@ -256,7 +256,7 @@ Any term time employment gaps will make you ineligible for the second instalment
 #### Example 1
 You start your first eligible teaching job in England in September 2024 and successfully apply for the first instalment of the IRP.  You work a full academic year of 3 terms, leaving the school in July 2025. 
 
-You successfully apply for a new IRP eligible teaching job on a one-year contract starting in September 2025. You visit family overseas for the summer holidays and return to England to take up your teaching job and apply for the second instalment of the IRP. 
+You successfully apply for a new IRP eligible teaching job on a one-year contract starting in September 2025. You visit family outside the UK for the summer holidays and return to England to take up your teaching job and apply for the second instalment of the IRP. 
 
 You are eligible for the second instalment of the IRP because you have been continuously employed as a teacher in eligible schools. 
 
@@ -288,7 +288,7 @@ You apply for the second instalment of the IRP in September 2025. You remain eli
 #### Example 2
 You arrive in the UK in September 2024 on a Youth Mobility Scheme visa. You are employed as a teacher on a contract lasting 2 academic years and successfully apply for the first instalment of the IRP. 
 
-Early in 2025, your partner moves to the UK on a Skilled Worker visa lasting 3 years. You visit family overseas during the summer holidays. As your Youth Mobility Scheme visa is limited to 2 years, you decide to apply to join your partner as a dependant on their visa instead. You return to the UK to continue your employment in September 2025 on a dependant visa.
+Early in 2025, your partner moves to the UK on a Skilled Worker visa lasting 3 years. You visit family outside the UK during the summer holidays. As your Youth Mobility Scheme visa is limited to 2 years, you decide to apply to join your partner as a dependant on their visa instead. You return to the UK to continue your employment in September 2025 on a dependant visa.
 
 You are not eligible for the second instalment of the IRP as the dependant visa does not appear on the list of eligible visas on this page.
 

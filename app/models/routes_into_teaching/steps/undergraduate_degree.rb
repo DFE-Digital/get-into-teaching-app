@@ -2,7 +2,7 @@ module RoutesIntoTeaching::Steps
   class UndergraduateDegree < GITWizard::Step
     attribute :undergraduate_degree
 
-    validates :undergraduate_degree, presence: true
+    validates :undergraduate_degree, presence: { message: RoutesIntoTeaching::Wizard::DEFAULT_ERROR_MESSAGE }
 
     def options
       option_struct = Struct.new(:answer, :text, keyword_init: true)

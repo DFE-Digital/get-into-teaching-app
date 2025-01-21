@@ -4,6 +4,8 @@ routes:
     course_fee: "Yes"
     funding: Bursaries or scholarships, as well as student loans, are available if you’re eligible.
     description: These courses combine theoretical learning with at least 2 classroom placements in schools. During your course, you’ll get the experience and knowledge you need to get qualified teacher status (QTS). On some courses, you can also combine QTS with a postgraduate certificate in education (PGCE).
+    cta_text: Find out more about postgraduate teacher training with fees
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["Yes", "Not yet"]
@@ -17,6 +19,8 @@ routes:
     course_fee: Varies
     funding: "No"
     description: These courses allow you to earn a salary while you train towards qualified teacher status (QTS). You’ll still do some theoretical learning, but most of your time will be spent in school placements. Salaried courses are in high demand and very competitive, and training providers may want you to have significant teaching or school experience. The main salaried courses include School Direct salaried, postgraduate teaching apprenticeships (PGTA), and the Teach First Training Programme. Some salaried courses may also come with fees.
+    cta_text: Find out more about postgraduate teacher training with a salary
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["Yes", "Not yet"]
@@ -43,6 +47,8 @@ routes:
     course_fee: "Yes"
     funding: "No"
     description: If you’ve worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through the assessment only route. With this route, you do not need to do any further training. Instead, you’ll undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments.
+    cta_text: Find out more about Assessment only routes
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["Yes", "Not yet"]
@@ -56,6 +62,8 @@ routes:
     course_fee: "Yes"
     funding: Student loans and bursaries are available, if you're eligible.
     description: With these courses, you'll train to be a teacher as part of your bachelor's degree and get qualified teacher status (QTS). Qualifications vary depending on the course. For example, you could get QTS with a Bachelor of Arts (BA), Bachelor of Education (BEd), or Bachelor of Science (BSc).
+    cta_text: Find out more about Undergraduate initial teacher training
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["No"]
@@ -69,6 +77,8 @@ routes:
     course_fee: "Yes"
     funding: "No"
     description: iQTS is a teaching qualification backed by the UK government. You can train where you live and work, with no need to visit the UK. iQTS meets the same high standards as English qualified teacher status (QTS) and leads to the automatic award of QTS.
+    cta_text: Find out more about iQTS
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["Yes", "Not yet"]
@@ -82,6 +92,8 @@ routes:
     course_fee: "No"
     funding: These courses pay a salary. Bursaries, scholarships and student loans are not available. 
     description: The teacher degree apprenticeship (TDA) is a teacher training programme where you’ll work in a school and earn a salary while getting a bachelor’s degree and qualified teacher status (QTS). The teacher training providers confirmed so far offer TDAs in secondary maths. TDAs in other subjects will be added throughout the year, up until September 2025, with training due to start in autumn 2025.
+    cta_text: Find out more about Teacher degree apprenticeship
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["No"]
@@ -95,6 +107,8 @@ routes:
     course_fee: Varies
     funding: Varies
     description: Complete an undergraduate degree in a subject you’re passionate about. Then, complete postgraduate initial teacher training to gain QTS, so you can share your expertise with pupils and inspire them to learn. This option gives you the flexibility to explore a subject you love, and time to decide whether you want to teach primary or secondary.
+    cta_text: Find out more about Undergraduate degree followed by postgraduate teacher training
+    cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
         answers: ["No"]

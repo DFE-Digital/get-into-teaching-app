@@ -9,8 +9,9 @@ related_content:
     Teacher pay: "/life-as-a-teacher/pay-and-benefits/teacher-pay"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
-promo_content:
-    - content/funding-and-support/promos/get-adviser-funding-promo
+cta_adviser:
+  adviser:
+    text: "An adviser with years of teaching experience can answer all your questions about scholarships and bursaries. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.15
 navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
@@ -110,4 +111,8 @@ Find out more about the [subjects you could teach](/life-as-a-teacher/explore-su
 
 If you're not eligible for a bursary or scholarship, there may be other funding options available, such as [tuition fees and maintenance loans](/funding-and-support/tuition-fees).
 
+You may be eligible for [a salaried teacher training course](/funding-and-support/salaried-teacher-training) which means you'll get paid while you train to teach. Some salaried teacher training courses may also come with fees. Check with individual providers for more information. 
+
 For advice on funding, you can speak to a [teacher training adviser](/teacher-training-advisers). They can help you work out what support you could be eligible for.
+
+$adviser$

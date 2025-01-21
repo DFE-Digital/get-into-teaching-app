@@ -185,8 +185,16 @@ section.container {
     margin-bottom: 1 * $indent-amount;
   }
 
+  .col-space-s-top {
+    margin-top: 1 * $indent-amount;
+  }
+
   .col-space-m {
     margin-bottom: 2 * $indent-amount;
+  }
+
+  .col-space-m-top {
+    margin-top: 2 * $indent-amount;
   }
 
   .col-space-l {

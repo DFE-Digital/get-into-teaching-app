@@ -40,6 +40,14 @@ variable "enable_postgres_backup_storage" {
 variable "docker_image" {
   description = "Docker image full name to identify it in the registry. Includes docker registry, repository and tag e.g.: ghcr.io/dfe-digital/teacher-pay-calculator:673f6309fd0c907014f44d6732496ecd92a2bcd0"
 }
+variable "enable_dfe_analytics_federated_auth" {
+  description = "Create the resources in Google cloud for federated authentication and enable in application"
+  default     = false
+}
+variable "dataset_name" {
+  description = "dfe analytics dataset name in Google Bigquery"
+  default     = "not in use"
+}
 variable "external_url" {
   default     = null
   description = "Healthcheck URL for StatusCake monitoring"

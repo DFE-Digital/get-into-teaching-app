@@ -35,6 +35,7 @@ Children start secondary school when they’re 11. There are up to 3 stages in s
 * key stage 5 (KS5) includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms, or colleges
 
 Pupils work towards national qualifications, which are usually GCSEs during KS4. Pupils take A levels or other similar qualifications during KS5. 
+[Explore more about becoming a secondary school teacher](/life-as-a-teacher/age-groups-and-specialisms/secondary). 
 
 Subjects at this level include core subjects such as English, maths and science, as well as many others. The full range of subjects available to teach at secondary level will depend on the school.
 
