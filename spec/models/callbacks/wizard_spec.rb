@@ -11,6 +11,9 @@ describe Callbacks::Wizard do
         "first_name" => "John",
         "last_name" => "Doe",
         "talking_points" => "Something",
+        "creation_channel_source_id" => 222_750_003,
+        "creation_channel_service_id" => 222_750_005,
+        "creation_channel_activity_id" => nil,
       },
     }
   end
@@ -44,6 +47,9 @@ describe Callbacks::Wizard do
         last_name: "Doe",
         talking_points: "Something",
         accepted_policy_id: "123",
+        creation_channel_source_id: 222_750_003,
+        creation_channel_service_id: 222_750_005,
+        creation_channel_activity_id: nil,
       )
     end
 
@@ -66,6 +72,9 @@ describe Callbacks::Wizard do
         "firstName" => "[FILTERED]",
         "lastName" => "[FILTERED]",
         "talkingPoints" => "Something",
+        "creationChannelSourceId" => 222_750_003,
+        "creationChannelServiceId" => 222_750_005,
+        "creationChannelActivityId" => nil,
       }.to_json
 
       expect(Rails.logger).to have_received(:info).with("Callbacks::Wizard#book_get_into_teaching_callback: #{filtered_json}")
