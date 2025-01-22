@@ -41,7 +41,7 @@ If you have a degree and are interested in gaining a qualification in education,
 
 You can get a postgraduate certificate in education through teacher training.
 
-You do not need a PGCE to be a qualified teacher in England, but it can help you develop your teaching skills and knowledge.
+You do not need a PGCE to be a qualified teacher in England, but it can help you develop your [teaching skills and knowledge](/life-as-a-teacher/teaching-as-a-career/skills-to-teach).
 
 ## The qualifications you need to teach in England
 
