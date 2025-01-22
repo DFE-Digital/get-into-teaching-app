@@ -16,7 +16,7 @@ describe Events::Steps::PersonalDetails do
   let(:creation_channel_activities) do
     [
       GetIntoTeachingApiClient::PickListItem.new({ id: 222_750_000, value: "BrandAmbassadorActivity" }),
-      GetIntoTeachingApiClient::PickListItem.new({ id: 222_750_010, value: "222750010" }),
+      GetIntoTeachingApiClient::PickListItem.new({ id: 222_750_010, value: "GradFairs" }),
       GetIntoTeachingApiClient::PickListItem.new({ id: 222_750_021, value: "StudentUnionMedia" }),
     ]
   end

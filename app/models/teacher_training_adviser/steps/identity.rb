@@ -2,6 +2,7 @@ module TeacherTrainingAdviser::Steps
   class Identity < GITWizard::Steps::Identity
     attribute :channel_id, :integer
     attribute :creation_channel_source_id, :integer
+    attribute :creation_channel_service_id, :integer
     attribute :creation_channel_activity_id, :integer
     attribute :sub_channel_id
 
