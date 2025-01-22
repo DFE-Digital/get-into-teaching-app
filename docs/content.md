@@ -676,6 +676,8 @@ It can take weeks or even months for changes to have an impact, so check the abo
 
 ## Creating a subject page
 
+To create a new subject page go to the folder content/life-as-a-teacher/explore-subjects
+
 Create a subject folder under ‘content/life as a teacher’
 
 From a previous published subject page copy the 2 files:
