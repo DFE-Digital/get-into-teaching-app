@@ -687,17 +687,18 @@ Inside the new folder you have created you will have 1 file:
 
 This is where the content for the page will sit 
 
-
-
-Also copy and paste a previous subject ‘.md’ file and rename it with the subject (e.g english.md)
+Also copy and paste a previous subject ‘.md’ file and rename it with the subject (e.g business.md)
 
 #### File changes:
 
-_header.html.erb – no changes needed
+The main content of subject pages should be written in HTML format. The structure of the page follows the same structure so you should be able to use it as a guide.
 
-The main content of subject pages should be written in HTML format using the following template as a guide:
+Change the title of why teach to the subject you want to talk about.
+Change the inspirational text in this section to be relevant to your subject.
+Then reuse the partials for 'why teach' and 'benefits' as they do not change.
 
-_article.html/erb 
+
+
 
 Update the markdown file to edit the hero banner image, hero banner text (title and title_paragraph) and the page’s card component. You will also need to ensure the links to the html erb files are updated
 
