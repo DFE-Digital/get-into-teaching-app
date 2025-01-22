@@ -38,7 +38,7 @@ routes:
     cta_link: "https://www.teachfirst.org.uk"
     matches:
       - question: undergraduate_degree
-         answers: ["Yes", "Not yet"]
+        answers: ["Yes", "Not yet"]
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
