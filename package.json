@@ -18,7 +18,7 @@
     "dfe-autocomplete": "github:DFE-Digital/dfe-autocomplete",
     "file-loader": "^6.2.0",
     "flatpickr": "^4.6.13",
-    "govuk-frontend": "^5.7.1",
+    "govuk-frontend": "^5.8.0",
     "is-touch-device": "^1.0.1",
     "js-cookie": "^3.0.5",
     "lazysizes": "^5.3.2",
