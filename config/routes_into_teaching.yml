@@ -15,7 +15,7 @@ routes:
         answers: ["*"]
 
   - title: Postgraduate initial teacher training with a salary
-    course_length: 9 months
+    course_length: 9 to 12 months
     course_fee: Varies
     funding: "No"
     description: These courses allow you to earn a salary while you train towards qualified teacher status (QTS). You’ll still do some theoretical learning, but most of your time will be spent in school placements. Salaried courses are in high demand and very competitive, and training providers may want you to have significant teaching or school experience. The main salaried courses include School Direct salaried, postgraduate teaching apprenticeships (PGTA). Some salaried courses may also come with fees.
