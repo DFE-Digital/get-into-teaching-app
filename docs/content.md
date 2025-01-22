@@ -678,12 +678,16 @@ It can take weeks or even months for changes to have an impact, so check the abo
 
 To create a new subject page go to the folder content/life-as-a-teacher/explore-subjects
 
-Create a subject folder under ‘content/life as a teacher’
+Then copy one of the current folders, e.g. english.
 
-From a previous published subject page copy the 2 files:
+Right click the folder and rename the folder to the subject you want to create. 
 
+Inside the new folder you have created you will have 1 file:
 -	_article.html/erb
--	_header.html.erb
+
+This is where the content for the page will sit 
+
+
 
 Also copy and paste a previous subject ‘.md’ file and rename it with the subject (e.g english.md)
 
