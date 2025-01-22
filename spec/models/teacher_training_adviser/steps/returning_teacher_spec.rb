@@ -64,7 +64,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::ReturningTeacher do
   describe "#save" do
     before do
       allow(instance).to receive(:other_step).with(:identity) {
-        double(channel_id: channel_id, creation_channel_source_id: creation_channel_source_id)
+        instance_double(TeacherTrainingAdviser::Steps::Identity, channel_id: channel_id, creation_channel_source_id: creation_channel_source_id)
       }
     end
 

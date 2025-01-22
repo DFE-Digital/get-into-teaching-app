@@ -43,7 +43,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     let(:creation_channel_service_rtta) { 222_750_009 }
     let(:creation_channel_service_tta) { 222_750_010 }
     let(:creation_channel_activity_student_union) { 222_750_021 }
-    let(:sub_channel_id) { "abcdef"}
+    let(:sub_channel_id) { "abcdef" }
 
     let(:legacy_channels) do
       [
