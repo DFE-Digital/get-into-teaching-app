@@ -51,6 +51,15 @@
     </div>
   </div>
 
+  <% if no_degree? %>
+    <div class="row inset">
+      <div class="col col-845">
+        <h2 class="heading--box-blue">Other routes into teaching</h2>
+        <p>You do not need a degree and QTS to <%= link_to "teach in further education", "/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers" %> or to <%= link_to "teach in early years", "/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers" %>. So if you want to become a teacher but are not able to get a degree, you can explore these options.
+      </div>
+    </div>
+  <% end %>
+
   <div class="row inset">
     <div class="col col-845">
       <h2 class="heading--box-blue">Next steps</h2>
