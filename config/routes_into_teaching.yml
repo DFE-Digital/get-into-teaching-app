@@ -48,7 +48,7 @@ routes:
     course_length: up to 12 weeks
     course_fee: "Yes"
     funding: "No"
-    description: If you’ve worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through the assessment only route. With this route, you do not need to do any further training. Instead, you’ll undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments.
+    description: If you’ve worked as an unqualified teacher or have experience working as a teacher outside the UK, you may be able to get qualified teacher status (QTS) through the assessment only route. With this route, you do not need to do any further training. Instead, you’ll undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments.
     cta_text: Find out more about the assessment only route
     cta_link: /train-to-be-a-teacher/assessment-only-route-to-qts
     matches:
