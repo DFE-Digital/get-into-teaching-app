@@ -28,4 +28,8 @@ module RoutesIntoTeachingHelper
   def non_uk?
     answers["location"] == "No"
   end
+
+  def no_degree?
+    answers["undergraduate_degree"] == "No"
+  end
 end
