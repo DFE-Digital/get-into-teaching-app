@@ -111,7 +111,7 @@ You may be able to get financial support for fee-paying courses, depending on yo
 
 If you want to train to teach languages or physics, you could be [eligible for a bursary or scholarship](/funding-and-support/scholarships-and-bursaries) worth up to $scholarships_nonuk_max$. 
 
-If you are not training to teach these subjects, any financial support you get will depend on your [immigration status or the visa you are on](/non-uk-teachers/visas-for-non-uk-trainees).  
+If you are not training to teach these subjects, any financial support you get will depend on [your immigration status or the visa you are on](/non-uk-teachers/visas-for-non-uk-trainees).  
 
 ### Salaried teacher training courses 
 
