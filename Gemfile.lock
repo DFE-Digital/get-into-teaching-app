@@ -31,8 +31,8 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: f6b52e75af55e039629b00f14996935347fb12b5
-  ref: f6b52e75af55e039629b00f14996935347fb12b5
+  revision: 1d58d92136a6f855ff708ca1397155e63d68e79d
+  ref: 1d58d92136a6f855ff708ca1397155e63d68e79d
   branch: add-creation-channel-to-tta
   specs:
     get_into_teaching_api_client (3.5.0)
