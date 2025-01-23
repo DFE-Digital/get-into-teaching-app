@@ -143,11 +143,11 @@ $ukraine-visas$
 
 To find out about teaching in other areas of the UK, visit the: 
 
-[Educator Wales website](https://educators.wales/home) 
+* [Educator Wales website](https://educators.wales/home) 
 
-[Teach in Scotland website](https://teachinscotland.scot/) 
+* [Teach in Scotland website](https://teachinscotland.scot/) 
 
-[Northern Ireland Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland) 
+* [Northern Ireland Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland) 
 
 ## Non-UK citizens who trained to teach in England share their experiences
 
