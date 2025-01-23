@@ -46,8 +46,10 @@ export default class Clarity {
   listenForConsentChanges() {
     document.addEventListener('cookies:accepted', () => {
       if (this.consentValue('non-functional') === 'granted') {
+        console.log('User consent granted');
         this.initContainer();
         window.clarity('consent');
+        console.log('Clarity consent granted');
       }
     });
   }
