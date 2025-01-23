@@ -17,9 +17,9 @@ module MailingList
       Steps::AlreadySubscribed,
       Steps::ReturningTeacher,
       Steps::AlreadyQualified,
+      Steps::Subject,
       Steps::DegreeStatus,
       Steps::TeacherTraining,
-      Steps::Subject,
       Steps::Postcode,
     ].freeze
 

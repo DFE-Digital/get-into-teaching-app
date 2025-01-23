@@ -24,16 +24,16 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "No"
     click_on "Next step"
 
+    expect(page).to have_text "Select the subject you're most interested in teaching"
+    select "Maths"
+    click_on "Next step"
+
     expect(page).to have_text "Do you have a degree?"
     choose "Not yet, I'm a first year student"
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
     choose "I'm not sure and finding out more"
-    click_on "Next step"
-
-    expect(page).to have_text "Select the subject you're most interested in teaching"
-    select "Maths"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
@@ -65,16 +65,16 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "No"
     click_on "Next step"
 
+    expect(page).to have_text "Select the subject you're most interested in teaching"
+    select "Maths"
+    click_on "Next step"
+
     expect(page).to have_text "Do you have a degree?"
     choose "Not yet, I'm a first year student"
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
     choose "I'm not sure and finding out more"
-    click_on "Next step"
-
-    expect(page).to have_text "Select the subject you're most interested in teaching"
-    select "Maths"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
@@ -104,16 +104,16 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "No"
     click_on "Next step"
 
+    expect(page).to have_text "Select the subject you're most interested in teaching"
+    select "Maths"
+    click_on "Next step"
+
     expect(page).to have_text "Do you have a degree?"
     choose "Almost, I'm a final year student"
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
     choose "I'm not sure and finding out more"
-    click_on "Next step"
-
-    expect(page).to have_text "Select the subject you're most interested in teaching"
-    select "Maths"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
@@ -143,16 +143,16 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "No"
     click_on "Next step"
 
+    expect(page).to have_text "Select the subject you're most interested in teaching"
+    select "Maths"
+    click_on "Next step"
+
     expect(page).to have_text "Do you have a degree?"
     choose "Not yet, I'm a first year student"
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
     choose "I'm not sure and finding out more"
-    click_on "Next step"
-
-    expect(page).to have_text "Select the subject you're most interested in teaching"
-    select "Maths"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
@@ -191,6 +191,13 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "No"
     click_on "Next step"
 
+    expect(page).to have_text "Select the subject you're most interested in teaching"
+    expect(page).to have_select(
+      "Select the subject you're most interested in teaching",
+      selected: Crm::TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
+    )
+    click_on "Next step"
+
     expect(page).to have_text "Do you have a degree?"
     expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
       response.degree_status_id.to_s,
@@ -200,13 +207,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "How close are you to applying"
     expect(find("[name=\"mailing_list_steps_teacher_training[consideration_journey_stage_id]\"][checked]").value).to eq(
       response.consideration_journey_stage_id.to_s,
-    )
-    click_on "Next step"
-
-    expect(page).to have_text "Select the subject you're most interested in teaching"
-    expect(page).to have_select(
-      "Select the subject you're most interested in teaching",
-      selected: Crm::TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
     )
     click_on "Complete sign up"
 
@@ -327,22 +327,23 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "No"
     click_on "Next step"
 
-    expect(page).to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
+    expect(page).to have_text "Select the subject you're most interested in teaching"
+    select "Maths"
+    click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
     expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
       response.degree_status_id.to_s,
     )
+
+    expect(page).to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
+
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
     expect(find("[name=\"mailing_list_steps_teacher_training[consideration_journey_stage_id]\"][checked]").value).to eq(
       response.consideration_journey_stage_id.to_s,
     )
-    click_on "Next step"
-
-    expect(page).to have_text "Select the subject you're most interested in teaching"
-    select "Maths"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
