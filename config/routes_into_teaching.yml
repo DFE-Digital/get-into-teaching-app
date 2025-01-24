@@ -44,7 +44,7 @@ routes:
       - question: location
         answers: ["*"]
 
-  - title: Assessment only route
+  - title: Assessment only
     course_length: up to 12 weeks
     course_fee: "Yes"
     funding: "No"
