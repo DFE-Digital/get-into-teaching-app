@@ -1,4 +1,19 @@
 routes:
+  - title: Assessment only
+    course_length: up to 12 weeks
+    course_fee: "Yes"
+    funding: "No"
+    description: If you’ve worked as an unqualified teacher or have experience working as a teacher outside the UK, you may be able to get qualified teacher status (QTS) through the assessment only route. With this route, you do not need to do any further training. Instead, you’ll undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments.
+    cta_text: Find out more about the assessment only route
+    cta_link: /train-to-be-a-teacher/assessment-only-route-to-qts
+    matches:
+      - question: undergraduate_degree
+        answers: ["Yes", "Not yet"]
+      - question: unqualified_teacher
+        answers: ["Yes"]
+      - question: location
+        answers: ["*"]
+
   - title: Postgraduate initial teacher training with fees
     course_length: 9 months full-time or up to 2 years part-time
     course_fee: "Yes"
@@ -41,21 +56,6 @@ routes:
         answers: ["Yes", "Not yet"]
       - question: unqualified_teacher
         answers: ["*"]
-      - question: location
-        answers: ["*"]
-
-  - title: Assessment only
-    course_length: up to 12 weeks
-    course_fee: "Yes"
-    funding: "No"
-    description: If you’ve worked as an unqualified teacher or have experience working as a teacher outside the UK, you may be able to get qualified teacher status (QTS) through the assessment only route. With this route, you do not need to do any further training. Instead, you’ll undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments.
-    cta_text: Find out more about the assessment only route
-    cta_link: /train-to-be-a-teacher/assessment-only-route-to-qts
-    matches:
-      - question: undergraduate_degree
-        answers: ["Yes", "Not yet"]
-      - question: unqualified_teacher
-        answers: ["Yes"]
       - question: location
         answers: ["*"]
 
