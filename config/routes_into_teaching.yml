@@ -17,8 +17,8 @@ routes:
   - title: Postgraduate initial teacher training with fees
     course_length: 9 months full-time or up to 2 years part-time
     course_fee: "Yes"
-    funding: Bursaries or scholarships, as well as student loans, are available if you’re eligible.
-    description: These courses combine theoretical learning with at least 2 classroom placements in schools. During your course, you’ll get the experience and knowledge you need to get qualified teacher status (QTS). On some courses, you can also combine QTS with a postgraduate certificate in education (PGCE).
+    funding: Bursaries or scholarships, as well as student loans, are available if you’re eligible
+    description: These courses combine theoretical learning with at least 2 classroom placements in schools. During your course, you’ll get the experience and knowledge you need to get qualified teacher status (QTS). On some courses, you can combine QTS with a postgraduate certificate in education (PGCE).
     cta_text: Find out more about postgraduate teacher training with fees
     cta_link: /train-to-be-a-teacher/if-you-have-a-degree
     matches:
@@ -33,7 +33,7 @@ routes:
     course_length: 9 to 12 months
     course_fee: Varies
     funding: "No"
-    description: These courses allow you to earn a salary while you train towards qualified teacher status (QTS). You’ll still do some theoretical learning, but most of your time will be spent in school placements. Salaried courses are in high demand and very competitive, and training providers may want you to have significant teaching or school experience. The main salaried courses include School Direct salaried, postgraduate teaching apprenticeships (PGTA). Some salaried courses may also come with fees.
+    description: These courses allow you to earn a salary while you train towards qualified teacher status (QTS). You’ll still do some theoretical learning, but most of your time will be spent in school placements. Salaried courses are in high demand and very competitive, and training providers may want you to have significant teaching or school experience. Courses include School Direct salaried and postgraduate teaching apprenticeships (PGTA). Some salaried courses may also come with fees.
     cta_text: Find out more about postgraduate teacher training with a salary
     cta_link: /funding-and-support/salaried-teacher-training
     matches:
@@ -62,9 +62,9 @@ routes:
   - title: Undergraduate initial teacher training
     course_length: 3 to 4 years
     course_fee: "Yes"
-    funding: Student loans and bursaries are available, if you're eligible.
+    funding: Student loans and bursaries are available, if you're eligible
     description: With these courses, you'll train to be a teacher as part of your bachelor's degree and get qualified teacher status (QTS). Qualifications vary depending on the course. For example, you could get QTS with a Bachelor of Arts (BA), Bachelor of Education (BEd), or Bachelor of Science (BSc).
-    cta_text: Find out more about Undergraduate initial teacher training
+    cta_text: Find out more about undergraduate initial teacher training
     cta_link: /train-to-be-a-teacher/if-you-dont-have-a-degree
     matches:
       - question: undergraduate_degree
@@ -94,7 +94,7 @@ routes:
     course_fee: "No"
     funding: These courses pay a salary. Bursaries, scholarships and student loans are not available. 
     description: The teacher degree apprenticeship (TDA) is a teacher training programme where you’ll work in a school and earn a salary while getting a bachelor’s degree and qualified teacher status (QTS). The teacher training providers confirmed so far offer TDAs in secondary maths. TDAs in other subjects will be added throughout the year, up until September 2025, with training due to start in autumn 2025.
-    cta_text: Find out more about Teacher degree apprenticeship
+    cta_text: Find out more about teacher degree apprenticeships
     cta_link: /train-to-be-a-teacher/teacher-degree-apprenticeships
     matches:
       - question: undergraduate_degree
@@ -109,7 +109,7 @@ routes:
     course_fee: Varies
     funding: Varies
     description: Complete an undergraduate degree in a subject you’re passionate about. Then, complete postgraduate initial teacher training to gain QTS, so you can share your expertise with pupils and inspire them to learn. This option gives you the flexibility to explore a subject you love, and time to decide whether you want to teach primary or secondary.
-    cta_text: Find out more about Undergraduate degree followed by postgraduate teacher training
+    cta_text: Find out more about undergraduate degree followed by postgraduate teacher training
     cta_link: /steps-to-become-a-teacher
     matches:
       - question: undergraduate_degree
