@@ -28,9 +28,9 @@ describe MailingList::Wizard do
         MailingList::Steps::AlreadySubscribed,
         MailingList::Steps::ReturningTeacher,
         MailingList::Steps::AlreadyQualified,
-        MailingList::Steps::Subject,
         MailingList::Steps::DegreeStatus,
         MailingList::Steps::TeacherTraining,
+        MailingList::Steps::Subject,
         MailingList::Steps::Postcode,
       ]
     end
