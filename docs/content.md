@@ -676,31 +676,24 @@ It can take weeks or even months for changes to have an impact, so check the abo
 
 ## Creating a subject page
 
-To create a new subject page go to the folder content/life-as-a-teacher/explore-subjects
-
-Then copy one of the current folders, e.g. english.
-
-Right click the folder and rename the folder to the subject you want to create. 
+To create a new subject page, go to the folder content/life-as-a-teacher/explore-subjects. Then copy one of the current folders inside, e.g. english.
+Right click the folder and rename it to the subject you want to create. 
 
 Inside the new folder you have created you will have 1 file:
 -	_article.html/erb
 
-This is where the content for the page will sit 
+This is where the content for the page will sit. 
 
-Also copy and paste a previous subject ‘.md’ file and rename it with the subject (e.g business.md)
+Next, copy and paste a previous subject markdown (.md) file and rename it with the subject (e.g., business.md)
 
 #### File changes:
 
-The main content of subject pages should be written in HTML format. The structure of the page follows the same structure so you should be able to use it as a guide.
+The main content of subject pages should be written in HTML format in the article file. The structure of the subject pages are very similar so you should be able to use the subject you have copied as a guide.
 
-Change the title of why teach to the subject you want to talk about.
-Change the inspirational text in this section to be relevant to your subject.
-Then reuse the partials for 'why teach' and 'benefits' as they do not change.
+Change all of the information in the article file that is not in a partial to be relevant to your subject. 
+Then, you can optionally change the quote partials to be more relevant to your subject. Finally, look up the bursary and scholarship entitlement to the subject you are teaching. Then, change the information to the correct partial. All of the other information on the page should use the same partials so do not need to be edited. 
 
-
-
-
-Update the markdown file to edit the hero banner image, hero banner text (title and title_paragraph) and the page’s card component. You will also need to ensure the links to the html erb files are updated
+Then update the markdown file to edit the hero banner image, hero banner text (title and title_paragraph) and the page’s card component. You will also need to ensure the links to the html erb files are updated
 
 Subject.md
 
@@ -947,11 +940,17 @@ To do this you will need to
 
   **Make sure you're in the new branch when you create the doc and not master as you can't make changes to the master doc**
 
-3. Navigate to the right hand side bar, where you want the new page to sit
+3. Navigate to the left hand side bar, where you want the new page to sit
 4. Right hand click and select 'New file'
-5. Give name to file ie. when-to-apply.md **make sure you put md on the end of the name if it is a markdown file**
 
-Now you have created a page - you will need to fill in the top details:
+When you name the file you will have to name it depending on whether the file in going to be written in html or markdown. If the file is markdown then put .md at the end of the file, e.g. when-to-apply.md
+
+If the file is html then put .html.erb at the end of the file, e.g. when-to-apply.erb.html
+
+There are different reasons why you might want a file to be a specific type which you can discuss with a developer. Generally it is more straight forward to write something in markdown so this is used for most content files. However, html can be styled more easily so it is possible the file has been written in this way to feature a specific component such as a styled quote. 
+
+
+If you have created a markdown page - you will need to fill in the top details:
 
 **If you have created a page that will appear in one of the category pages ie. How to apply**
 
