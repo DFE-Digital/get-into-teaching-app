@@ -231,7 +231,7 @@ The above example would render out as follows:
 
 #### Link text
 
-All links should be descriptive and make sense in isolation
+All links should be descriptive and make sense in isolation.
  
 
 Avoid:
