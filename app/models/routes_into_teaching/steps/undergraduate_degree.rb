@@ -9,8 +9,8 @@ module RoutesIntoTeaching::Steps
 
       [
         option_struct.new(answer: "Yes", text: "Yes"),
-        option_struct.new(answer: "No", text: "No"),
         option_struct.new(answer: "Not yet", text: "Not yet, I'm studying for one"),
+        option_struct.new(answer: "No", text: "No"),
       ]
     end
 

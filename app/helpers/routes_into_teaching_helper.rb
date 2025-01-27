@@ -6,8 +6,8 @@ module RoutesIntoTeachingHelper
   def undergraduate_degree_summary
     {
       "Yes" => "have a bachelor's degree",
-      "No" => "do not have a bachelor's degree",
       "Not yet" => "are studying for a bachelor's degree",
+      "No" => "do not have a bachelor's degree",
     }[answers["undergraduate_degree"]]
   end
 
