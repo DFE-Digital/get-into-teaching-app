@@ -674,7 +674,8 @@ It can take weeks or even months for changes to have an impact, so check the abo
 
 ## Creating a new page
 
- **Make sure you start by creating a new branch on master**
+**Make sure you start by creating a new branch on master**
+
 To do this you will need to:
 
 - always open Visual Studio Code from https://github.com/DFE-Digital/get-into-teaching-app and open from the green code button
@@ -682,7 +683,7 @@ To do this you will need to:
 - type in the name of your new branch and press enter
 - if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
 
-  **Make sure you're in the new branch when you create the doc and not master as you can't make changes to the master doc**
+**Make sure you're in the new branch when you create the doc and not master as you can't make changes to the master doc**
 
  Navigate to the left hand side bar, where you want the new page to sit
  Right hand click and select 'New file'
@@ -693,42 +694,30 @@ If the file is html, start the file name with an underscore and then put .html.e
 
 There are different reasons why you might want a file to be a specific type which you can discuss with a developer or interaction designer. Generally it is more straight forward to write something in markdown so this is used for most content files. However, html can be styled more easily so it is possible the file has been written in this way to feature a specific component such as a styled quote. 
 
+If you have created a markdown page - you will need to fill in the following details at the top of the markdown file. You will not need to fill in the navigation details if the page sits in a sub category, e.g. Life as a teacher.
 
-If you have created a markdown page - you will need to fill in the top details.
-You will not need to fill in the navigation details if the page sits in a sub category, e.g. Life as a teacher.
-
-**If you have created a page that will appear in one of the category pages ie. How to apply**
-
-title: 	title will appear in the browser tab
-
+title: title will appear in the browser tab
 heading: this is the h1 for the page - only needed if you want the h1 and the title to be different. If not, just add the title
-
 description: must start with |- and then you can write the text here
-
 related_content: list your related content links here, formatted as internal links
-
-
 navigation:  this is to decide where the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the category page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an in between number.  
-
 navigation_title: This is the title that will appear in the tiles
-
 navigation_description: This is the description that will appear in the tiles
-
 keywords: use Semrush to put keywords here, do a bulletpointed list using dashes like below:
   - adviser
   - advisor
   - ITT
 
 Here is a blank version to take and fill in:
-title:
-heading:
-description: 
-related_content: 
-navigation:  
-navigation_title: 
-navigation_description: 
-keywords: 
 
+- title:
+- heading:
+- description: 
+- related_content: 
+- navigation:  
+- navigation_title: 
+- navigation_description: 
+- keywords: 
 
 ## Creating a subject page
 
