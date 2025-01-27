@@ -157,4 +157,4 @@ You also get other insurance benefits too. Find out more about the [teachers' pe
 
 In additional to the practical rewards of teaching, there's personal benefits too. Teaching is a career that allows you to make a difference, explore your creativity, and apply skills from your degree or previous career.
 
-[Explore why people choose to become a teacher](/life-as-a-teacher/teaching-as-a-career/why-teach).
+[Explore why people choose to become a teacher](/life-as-a-teacher/why-teach/why-become-a-teacher).
