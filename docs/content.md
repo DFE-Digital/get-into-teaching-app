@@ -238,15 +238,14 @@ Avoid:
 * including punctuation in link text 
 * anchor links
 * using the same link text to link to different places
-* linking to the same place more than one
+* linking to the same place more than once, particularly if using different link text
 * having two or more hyperlinks close together on the page
-* descriptive
 
 By default, all links will open in the same tab. You should only open a link in a new tab if the user will risk losing key information on the page. For example, a link to more information in a form. 
 
 Links that direct to external sites (e.g. non-GOV.UK) should explicitly say their destination. 
 
-[Find more guidance about writing accessible link text on GOV.UK]/(https://www.gov.uk/guidance/content-design/links).
+[Find more guidance about writing accessible link text on GOV.UK](https://www.gov.uk/guidance/content-design/links).
 
 #### Headings
 
@@ -1048,7 +1047,7 @@ To set up a redirect for a Get Into Teaching page, go to the 'redirects.yml' fil
 
 To make add a new redirect:
 
-1. Check if the redirect you want to add fits into an existing redirect category. If not, create a new one.
+1. Redirects are grouped under headings, based on the content they relate to. Check if the redirect you want to add fits under an existing heading. If not, create a new one.
 2. Add a new line following the same pattern to set up the redirect. The first link should be the page you want to redirect from (your old URL), and the second link should be the page you want to link to (your new URL). Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
 3. Search the redirect file for any other redirects that link to the page you want to redirect from. You should update these as well to prevent creating a chain of redirects.
 
