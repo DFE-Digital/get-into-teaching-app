@@ -10,7 +10,7 @@ related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
-    Ben's favourite things about teaching : "/life-as-a-teacher/pay-and-benefits/bens-favourite-things-about-teaching"
+    Ben's favourite things about teaching : "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching"
 keywords:
   - Salary
   - Salaries
