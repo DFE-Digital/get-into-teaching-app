@@ -69,7 +69,7 @@ If you're interested in exploring other opportunities to work with pre-school ch
 
 ## What you need to become an early years teacher
 
-There are several ways to train to become an early years teacher. You can do  undergraduate degree training, an early years teacher degree apprenticeship, or there are postgraduate options if you already have a degree. All of these routes lead to early years teacher status (EYTS).
+There are several ways to train to become an early years teacher. You can do undergraduate degree training, an early years teacher degree apprenticeship, or there are postgraduate options if you already have a degree. All of these routes lead to early years teacher status (EYTS).
 
 To start early years teacher training, you’ll need these GCSE qualifications:
 
