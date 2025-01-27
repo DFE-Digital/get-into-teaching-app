@@ -1,0 +1,17 @@
+<div class="row">
+  <section class="category col-space-m">
+    <section class="container category__cards main-section">
+      <nav class="category__nav-cards">
+        <ul>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Why become a teacher",
+              description: "Explore the many reasons why you should become a teacher in England. From making a difference from day one, to exploring your creativity and benefiting from a competitive salary and generous holidays.",
+              path: "/life-as-a-teacher/why-teach/why-become-a-teacher",
+              image: "static/images/content/hero-images/0036.jpg",
+            )) %>
+        </ul>
+      </nav>
+    </section>
+  </section>
+</div>
