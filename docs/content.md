@@ -675,11 +675,12 @@ It can take weeks or even months for changes to have an impact, so check the abo
 ## Creating a new page
 
  **Make sure you start by creating a new branch on master**
-To do this you will need to
-	- always open Visual Studio Code from https://github.com/DFE-Digital/get-into-teaching-app and open from the green code button
-	- once Visual Studio Code is open, click the search bar and select 'Create new branch'
-	- type in the name of your new branch and press enter
-	- if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
+To do this you will need to:
+
+- always open Visual Studio Code from https://github.com/DFE-Digital/get-into-teaching-app and open from the green code button
+- once Visual Studio Code is open, click the search bar and select 'Create new branch'
+- type in the name of your new branch and press enter
+- if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
 
   **Make sure you're in the new branch when you create the doc and not master as you can't make changes to the master doc**
 
