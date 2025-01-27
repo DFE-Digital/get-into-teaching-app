@@ -6,7 +6,7 @@
       f.object.degree_status_options,
       :id,
       ->(option) { degree_status_text(option) },
-      options: { prompt: "Select an option" } %>
+      options: { prompt: "Select a degree option" } %>
 
 <%= f.govuk_collection_select :consideration_journey_stage_id,
       f.object.journey_stage_options,
