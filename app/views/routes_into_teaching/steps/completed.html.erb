@@ -3,6 +3,30 @@
   colour: "pastel yellow-yellow",
 ) %>
 
+<%= tag.div id: "routes_into_teaching_undergraduate_degree",
+  class: "hidden",
+  data: {
+    id: "undergraduate_degree",
+    key: session[:routes_into_teaching]["undergraduate_degree"],
+  }
+%>
+
+<%= tag.div id: "routes_into_teaching_unqualified_teacher",
+  class: "hidden",
+  data: {
+    id: "unqualified_teacher",
+    key: session[:routes_into_teaching]["unqualified_teacher"],
+  }
+%>
+
+<%= tag.div id: "routes_into_teaching_location",
+  class: "hidden",
+  data: {
+    id: "location",
+    key: session[:routes_into_teaching]["location"],
+  }
+%>
+
 <section class="container">
   <div class="row inset">
     <div class="col col-845">
