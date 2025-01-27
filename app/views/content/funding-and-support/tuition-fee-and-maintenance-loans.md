@@ -120,5 +120,3 @@ Find out about student finance in the Channel Islands and the Isle of Man:
 * [student awards guidance from the Isle of Man Government website](https://www.gov.im/student-grants)
 
 $adviser$
-$find$
-$apply$
