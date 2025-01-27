@@ -6,7 +6,7 @@ module RoutesIntoTeaching
 
     before_action :set_page_title
     before_action :set_step_page_title, only: %i[show update]
-    before_action :noindex, if: :noindex?
+    before_action :noindex, except: %i[index]
     before_action :set_breadcrumb
 
     layout :resolve_layout
@@ -27,11 +27,6 @@ module RoutesIntoTeaching
     end
 
   private
-
-    def noindex?
-      # Only index the first step.
-      !request.path.include?("/#{first_step_class.key}")
-    end
 
     def first_step_class
       wizard_class.steps.first
