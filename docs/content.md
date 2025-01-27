@@ -27,14 +27,14 @@ This documentation aims to be a reference for content editors that want to make 
     * [Hero](#hero)
     * [Values](#values)
 4. [Search engine optimisation](#search-engine-optimisation)
-5. [Creating a subject page](#creating-a-subject-page)
-6. [Creating an inspirational page](#creating-an-inspirational-page)
-7. [Navigation](#navigation)
+5. [Creating a new page](#creating-a-new-page)
+6. [Creating a subject page](#creating-a-subject-page)
+7. [Creating an inspirational page](#creating-an-inspirational-page)
+8. [Navigation](#navigation)
     * [Main Navigation](#main-navigation)
     * [Category Pages](#category-pages)
-8. [Build errors](#build-errors)
-9. [Internship providers](#internship-providers)
-10. [Creating a new page](#creating-a-new-page)
+9. [Build errors](#build-errors)
+10. [Internship providers](#internship-providers)
 11. [Preview a change](#preview-a-change)
 12. [Saving a change](saving-a-change)
 13. [If you add something to the wrong branch](wrong-branch)
@@ -672,54 +672,105 @@ To see how keyword targeting is performing:
 
 It can take weeks or even months for changes to have an impact, so check the above regularly.
 
+## Creating a new page
 
+**Make sure you start by creating a new branch on master**
+
+To do this you will need to:
+
+- always open Visual Studio Code from https://github.com/DFE-Digital/get-into-teaching-app and open from the green code button
+- once Visual Studio Code is open, click the search bar and select 'Create new branch'
+- type in the name of your new branch and press enter
+- if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
+
+**Make sure you're in the new branch when you create the doc and not master as you can't make changes to the master doc**
+
+ Navigate to the left hand side bar, where you want the new page to sit
+ Right hand click and select 'New file'
+
+When you name the file you will have to name it depending on whether the file in going to be written in html or markdown. If the file is markdown then put .md at the end of the file, e.g. when-to-apply.md
+
+If the file is html, start the file name with an underscore and then put .html.erb at the end of the file, e.g. _categories.html.erb
+
+There are different reasons why you might want a file to be a specific type which you can discuss with a developer or interaction designer. Generally it is more straight forward to write something in markdown so this is used for most content files. However, html can be styled more easily so it is possible the file has been written in this way to feature a specific component such as a styled quote. 
+
+If you have created a markdown page - you will need to fill in the following details at the top of the markdown file. You will not need to fill in the navigation details if the page sits in a sub category, e.g. Life as a teacher.
+
+title: title will appear in the browser tab
+
+heading: this is the h1 for the page - only needed if you want the h1 and the title to be different. If not, just add the title
+
+description: must start with |- and then you can write the text here
+
+related_content: list your related content links here, formatted as internal links
+
+navigation:  this is to decide where the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the category page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an in between number.  
+
+navigation_title: This is the title that will appear in the tiles
+
+navigation_description: This is the description that will appear in the tiles
+
+keywords: use Semrush to put keywords here, do a bulletpointed list using dashes like below:
+  - adviser
+  - advisor
+  - ITT
+
+Here is a blank version to take and fill in:
+
+- title:
+- heading:
+- description: 
+- related_content: 
+- navigation:  
+- navigation_title: 
+- navigation_description: 
+- keywords: 
 
 ## Creating a subject page
 
-Create a subject folder under ‘content/life as a teacher’
+To create a new subject page, go to the folder content/life-as-a-teacher/explore-subjects. Then copy one of the current folders inside, e.g. English.
+Right click the folder and rename it to the subject you want to create. 
 
-From a previous published subject page copy the 2 files:
-
+Inside the new folder you have created you will have 1 file:
 -	_article.html/erb
--	_header.html.erb
 
-Also copy and paste a previous subject ‘.md’ file and rename it with the subject (e.g english.md)
+This is where the content for the page will sit. 
+
+Next, copy and paste a previous subject markdown (.md) file and rename it with the subject (e.g., business.md)
 
 #### File changes:
 
-_header.html.erb – no changes needed
+The main content of subject pages should be written in HTML format in the article file. The structure of the subject pages are very similar so you should be able to use the subject you have copied as a guide.
 
-The main content of subject pages should be written in HTML format using the following template as a guide:
+Change all of the information in the article file that is not in a partial to be relevant to your subject. 
+Then, you can optionally change the quote partials to be more relevant to your subject. Finally, look up the bursary and scholarship entitlement to the subject you are teaching. Then, change the information to the correct partial. All of the other information on the page should use the same partials so do not need to be edited. 
 
-_article.html/erb 
-
-Update the markdown file to edit the hero banner image, hero banner text (title and title_paragraph) and the page’s card component. You will also need to ensure the links to the html erb files are updated
+Then update the markdown file to edit the hero banner image, hero banner text (title and title_paragraph) and the page’s card component. You will also need to ensure the links to the html erb files are updated.
 
 Subject.md
 
 ```yaml
 ---
-title: Become a subject teacher
+title: Become an English teacher
+subject: English
 title_paragraph: |-
-  <p>Tax-free bursaries of $bursaries_postgraduate_subject$ or scholarships of $scholarships_subject $ are available for eligible trainee subject teachers.</p>
+  <p>
+  Teaching English is more than just reading and writing. It's opening doors to new worlds and perspectives. You'll encourage a passion for language and a love of creativity, helping shape the voices of the future.</p>
+  <p>
+  Tax-free bursaries of $bursaries_postgraduate_english$ are available for eligible trainee English teachers.</p>
 description: |-
-   Find out how to become a subject teacher including what you'll be teaching and what funding is available to help you train.
-backlink: "../../"
-subcategory: What to teach
-navigation: 5.43
-navigation_title: Subject name
-navigation_description: Subject content
+    Find out how to become a English teacher, including what you'll teach and what funding is available to help you train.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/homepage/directory4.jpg"
+image: "static/images/content/hero-images/0032.jpg"
 keywords:
-  - keyword 1
-  - keyword 2
-  - keyword 3
- 
+  - english
+  - teaching english
+  - teacher training
+
 content:
-  - "content/life-as-a-teacher/subject/header"
-  - "content/life-as-a-teacher/subject/article"
+  - "content/shared/subject-pages/header"
+  - "content/life-as-a-teacher/explore-subjects/english/article"
 ---
 ```
 
@@ -928,54 +979,6 @@ When updating not just the text content within the file, but the actual list of 
 - Place it in the `lib/tasks/support` directory.
 - Run `bundle exec rake teaching_internship_providers:generate`.
 
-
-## Creating a new page
-
-1. **Make sure you start by creating a new branch on master**
-To do this you will need to
-	- always open Visual Studio Code from https://github.com/DFE-Digital/get-into-teaching-app and open from the green code button
-	- once Visual Studio Code is open, click the search bar and select 'Create new branch'
-	- type in the name of your new branch and press enter
-	- if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
-
-  **Make sure you're in the new branch when you create the doc and not master as you can't make changes to the master doc**
-
-3. Navigate to the right hand side bar, where you want the new page to sit
-4. Right hand click and select 'New file'
-5. Give name to file ie. when-to-apply.md **make sure you put md on the end of the name if it is a markdown file**
-
-Now you have created a page - you will need to fill in the top details:
-
-**If you have created a page that will appear in one of the category pages ie. How to apply**
-
-title: 	title will appear in the browser tab
-
-heading: this is the h1 for the page - only needed if you want the h1 and the title to be different. If not, just add the title
-
-description: must start with |- and then you can write the text here
-
-related_content: list your related content links here, formatted as internal links
-
-navigation:  this is to decide where the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the category page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an in between number.  
-
-navigation_title: This is the title that will appear in the tiles
-
-navigation_description: This is the description that will appear in the tiles
-
-keywords: use Semrush to put keywords here, do a bulletpointed list using dashes like below:
-  - adviser
-  - advisor
-  - ITT
-
-Here is a blank version to take and fill in:
-title:
-heading:
-description: 
-related_content: 
-navigation:  
-navigation_title: 
-navigation_description: 
-keywords: 
 
 ## Saving a change
 When you have made a change in Visual Studio Code and want to save your work.
