@@ -2,6 +2,12 @@
 
 <p>These questions help us provide tailored guidance depending on your circumstances.</p>
 
+<%= f.govuk_collection_select :preferred_teaching_subject_id,
+    f.object.teaching_subject_options,
+    :id,
+    :value,
+    options: { prompt: "Select a subject" } %>
+
 <%= f.govuk_collection_select :degree_status_id,
       f.object.degree_status_options,
       :id,
@@ -13,12 +19,6 @@
       :id,
       :value,
       options: { prompt: "Select an option" } %>
-
-<%= f.govuk_collection_select :preferred_teaching_subject_id,
-    f.object.teaching_subject_options,
-    :id,
-    :value,
-    options: { prompt: "Select a subject" } %>
 
 <%= f.govuk_text_field :address_postcode, autocomplete: "postal-code" unless f.object.hide_postcode_field? %>
 
