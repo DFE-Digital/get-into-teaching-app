@@ -697,12 +697,19 @@ There are different reasons why you might want a file to be a specific type whic
 If you have created a markdown page - you will need to fill in the following details at the top of the markdown file. You will not need to fill in the navigation details if the page sits in a sub category, e.g. Life as a teacher.
 
 title: title will appear in the browser tab
+
 heading: this is the h1 for the page - only needed if you want the h1 and the title to be different. If not, just add the title
+
 description: must start with |- and then you can write the text here
+
 related_content: list your related content links here, formatted as internal links
+
 navigation:  this is to decide where the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the category page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an in between number.  
+
 navigation_title: This is the title that will appear in the tiles
+
 navigation_description: This is the description that will appear in the tiles
+
 keywords: use Semrush to put keywords here, do a bulletpointed list using dashes like below:
   - adviser
   - advisor
