@@ -6,6 +6,7 @@ class PageModificationTracker
     "/events/about-get-into-teaching-events" => {},
     "/events" => {},
     "/mailinglist/signup/name" => {},
+    "/routes-into-teaching" => {},
   }.freeze
 
   attr_reader :app, :headers
