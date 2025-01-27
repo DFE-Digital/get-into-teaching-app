@@ -1,5 +1,5 @@
 routes:
-  - title: Assessment only
+  - title: Assessment only route
     course_length: up to 12 weeks
     course_fee: "Yes"
     funding: "No"
