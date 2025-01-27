@@ -1,7 +1,7 @@
 .results-box {
   background: $white;
   color: $white;
-  padding: 1em 0;
+  padding: 0.5em 0;
 
   &--yellow {
     border: 2px solid $yellow;
@@ -25,7 +25,6 @@
     }
 
   &__heading {
-    @include font-size("small");
     color: $black;
     background-color: $white;
     line-height: 1.25em;
