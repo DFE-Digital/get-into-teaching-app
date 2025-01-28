@@ -710,20 +710,6 @@ provider_groups:
       telephone: "01280 827316"
       international_phone: "+441280827316"
       
-    - header: "The Grand Union Training Partnership"
-      link: "https://www.gutp.co.uk/index.php/assessment-only"
-      name: "Ann Pugh"
-      email: "apugh@sponne.org.uk"
-      telephone: "01327 350284"
-      international_phone: "+441327350284"
-      extension: "ext 7257"
-    - header: "The Kemnal Academies Trust (TKAT)"
-      link: "https://scitt.tkat.org/820/assessment-only-route"
-      name: "Steve Excell"
-      email: "steve.excell@scitt.tkat.org"
-      telephone: "020 3740 1808"
-      international_phone: "+442037401808"
-      extension: "(option 1)"
     - header: "The University of Buckingham"
       link: "https://www.buckingham.ac.uk/courses/postgraduate/assessment-only-ao-route-to-qualified-teacher-status-primary-and-secondary"
       name: "Shonali Mathur"
@@ -737,13 +723,6 @@ provider_groups:
       email: "askadmissions@derby.ac.uk"
       
       
-      
-    - header: "University of Reading"
-      link: "https://www.reading.ac.uk/education/pgce-qts-and-eyts/assessment-only"
-      name: "Harvey Grout"
-      email: "h.grout@reading.ac.uk"
-      telephone: "0118 378 7237"
-      international_phone: "+441183787237"
       
     - header: "University of Sunderland"
       link: "https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/"
