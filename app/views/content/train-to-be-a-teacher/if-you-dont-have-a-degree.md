@@ -8,10 +8,13 @@ related_content:
     Explore life as a teacher : "/life-as-a-teacher"
     Funding your training : "/funding-and-support"
     Teach in further education without a degree : "https://www.teachinfurthereducation.education.gov.uk/"
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-no-degree
+calls_to_action:
+    find:
+      name: find
+      arguments:
+        title: "<p><a href="https://digital.ucas.com/search">Find your undergraduate degree course</a>.</p>"
 navigation: 20.35
 navigation_title: If you do not have a degree
 navigation_description: You need a degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about undergraduate degree courses.
