@@ -197,6 +197,10 @@ section.container {
     margin-top: 3 * $indent-amount;
   }
 
+  .col-space-m-top {
+    margin-top: 2 * $indent-amount;
+  }
+
   .col-space-0 {
     margin-bottom: 0;
   }
