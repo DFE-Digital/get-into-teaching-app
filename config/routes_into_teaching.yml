@@ -3,7 +3,7 @@ routes:
     course_length: Up to 12 weeks
     course_fee: "Yes"
     funding: "No"
-    description: If you’ve worked as an unqualified teacher or have experience working as a teacher outside the UK, you may be able to get qualified teacher status (QTS) through the assessment only route. With this route, you do not need to do any further training. Instead, you’ll undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments.
+    description: If you do not have qualified teacher status (QTS), but have worked as a teacher in 2 or more schools in England or overseas, you may be able to get QTS through the assessment only route. With this route, you do not need to do any further training. Instead, you’ll undertake a series of assessments. This may include lesson observations, providing a portfolio of evidence to show you meet the teachers’ standards, or written assessments.
     cta_text: Find out more about the assessment only route
     cta_link: /train-to-be-a-teacher/assessment-only-route-to-qts
     matches:
@@ -92,7 +92,7 @@ routes:
   - title: Teacher degree apprenticeship
     course_length: 4 years
     course_fee: "No"
-    funding: These courses pay a salary but bursaries, scholarships and student loans are not available 
+    funding: These courses pay a salary but bursaries, scholarships and student loans are not available
     description: The teacher degree apprenticeship (TDA) is a teacher training programme where you’ll work in a school and earn a salary while getting a bachelor’s degree and qualified teacher status (QTS). The teacher training providers confirmed so far offer TDAs in secondary maths. TDAs in other subjects will be added throughout the year, up until September 2025, with training due to start in autumn 2025.
     cta_text: Find out more about teacher degree apprenticeships
     cta_link: /train-to-be-a-teacher/teacher-degree-apprenticeships
@@ -108,7 +108,7 @@ routes:
     course_length: Varies
     course_fee: Varies
     funding: Varies
-    description: Complete an undergraduate degree in a subject you’re passionate about. Then complete postgraduate initial teacher training to gain qualified teacher status (QTS), so you can share your expertise with pupils and inspire them to learn. This option gives you the flexibility to explore a subject you love, and time to decide whether you want to teach primary or secondary.
+    description: Complete an undergraduate degree in a subject you’re passionate about. Then complete postgraduate initial teacher training to gain qualified teacher status (QTS) so you can share your expertise with pupils and inspire them to learn. This option gives you the flexibility to explore a subject you love, and time to decide whether you want to teach primary or secondary.
     cta_text: Find out more about undergraduate degree followed by postgraduate teacher training
     cta_link: /train-to-be-a-teacher/if-you-have-a-degree
     matches:
