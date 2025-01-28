@@ -7,11 +7,14 @@ related_content:
     Train to teach if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree" 
     What to expect in teacher training: "/train-to-be-a-teacher/initial-teacher-training"
     Your teacher training application : "/how-to-apply-for-teacher-training/teacher-training-application"
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
 cta_adviser:
   adviser:
     text: Talk to an adviser with years of teaching experience about how to choose the right course for you. Chat by phone, text or email, as little or as often as you need.
+calls_to_action:
+    find:
+      name: find
+      arguments:
+        title: "Find your teacher training course"
 navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.
@@ -156,4 +159,5 @@ Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 mont
 
 [Find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
 
+$find$
 $adviser$

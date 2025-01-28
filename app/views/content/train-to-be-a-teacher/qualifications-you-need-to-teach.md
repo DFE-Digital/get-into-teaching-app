@@ -11,10 +11,13 @@ related_content:
     Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     Train to be a teacher if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Teacher training : "/train-to-be-a-teacher/initial-teacher-training"
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
+calls_to_action:
+    find:
+      name: find
+      arguments:
+        title: "Find your teacher training course"
 expander:
   check-your-qualifications:
     title: check your qualifications
@@ -85,3 +88,5 @@ You can do a subject knowledge enhancement course before or sometimes during you
 * you completed your degree more than 5 years ago
 
 [Find out more about subject knowledge enhancement courses](/how-to-apply-for-teacher-training/subject-knowledge-enhancement).
+
+$find$

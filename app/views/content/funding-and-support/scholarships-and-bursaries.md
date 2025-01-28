@@ -7,11 +7,14 @@ description: |-
 related_content:
     Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
     Teacher pay: "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about scholarships and bursaries. Chat by phone, text or email, as little or as often as you need."
+calls_to_action:
+    find:
+      name: find
+      arguments:
+        title: "Find your teacher training course"
 navigation: 20.15
 navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
@@ -115,4 +118,5 @@ You may be eligible for [a salaried teacher training course](/funding-and-suppor
 
 For advice on funding, you can speak to a [teacher training adviser](/teacher-training-advisers). They can help you work out what support you could be eligible for.
 
+$find$
 $adviser$
