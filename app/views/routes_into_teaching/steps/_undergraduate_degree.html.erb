@@ -1,5 +1,9 @@
 <% @page_title = "Do you have an undergraduate degree?" %>
 
+<% content_for(:back_link) do %>
+  <%= render BackComponent.new(path: routes_into_teaching_steps_path) %>
+<% end %>
+
 <%= f.govuk_collection_radio_buttons :undergraduate_degree, @wizard.find_current_step.options, :answer, :text,
   legend: { tag: "h1", text: @page_title },
   hint: { text: "You'll find routes into teaching based on your circumstances." }

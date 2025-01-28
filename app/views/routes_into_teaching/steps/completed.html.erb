@@ -38,14 +38,6 @@
         <li><%= location_summary %></li>
       </ul>
 
-      <% if non_uk? %>
-        <%= render Content::ExpanderComponent.new(
-          title: "visa sponsorship",
-          text: "<p>If you do not have the right to study or work in the UK, you will need a visa. Your visa will need to be sponsored by a course provider.</p>
-          <p><a href=\"/non-uk-teachers/visas-for-non-uk-trainees\">Learn more about applying for your visa to train to teach in England</a>.</p>",
-        ) %>
-      <% end %>
-
       <p>You can <%= link_to "change your answers", routes_into_teaching_steps_path %> if you need to.</p>
     </div>
   </div>
