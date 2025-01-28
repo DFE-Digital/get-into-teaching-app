@@ -45,11 +45,21 @@ export default class Clarity {
 
   listenForConsentChanges() {
     document.addEventListener('cookies:accepted', () => {
+      console.log('cookies:accepted event fired');
+
       if (this.consentValue('non-functional') === 'granted') {
         console.log('User consent granted');
         this.initContainer();
         window.clarity('consent');
         console.log('Clarity consent granted');
+      } else if (this.consentValue('non-functional') === 'denied') {
+        console.log('User consent denied');
+        window.clarity('consent', false); // Inform Clarity that consent is revoked
+        console.log('Clarity consent revoked');
+
+        // Clear non-essential cookies when consent is denied (cookies do not appear to be cleared autmatically when consent is revoked using /cookie_preference page)
+        this.cookiePreferences.clearNonEssentialCookies();
+        console.log('Non-essential cookies cleared');
       }
     });
   }
