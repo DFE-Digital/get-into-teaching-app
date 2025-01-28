@@ -221,6 +221,90 @@
     - "static/images/content/hero-images/physics_1383-mobile.jpg"
     - "static/images/content/hero-images/physics_1383-tablet.jpg"
 
+"static/images/content/hero-images/art-digital-painting.jpg":
+  alt: "An art teacher showing a pupil how to use digital art software on a computer"
+  variants:
+    - "static/images/content/hero-images/art-digital-painting--mobile.jpg"
+    - "static/images/content/hero-images/art-digital-painting--tablet.jpg"    
+
+"static/images/content/hero-images/art-easels.jpg":
+  alt: "An art teacher showing pupils how to paint a bowl of fruit"
+  variants:
+    - "static/images/content/hero-images/art-easels--mobile.jpg"
+    - "static/images/content/hero-images/art-easels-painting--tablet.jpg"
+
+"static/images/content/hero-images/maths-1-1.jpg":
+  alt: "A maths teacher working alongside a pupil"
+  variants:
+    - "static/images/content/hero-images/maths-1-1--mobile.jpg"
+    - "static/images/content/hero-images/maths-1-1--tablet.jpg"
+
+"static/images/content/hero-images/maths-1-1-2.jpg":
+  alt: "A maths teacher working alongside a pupil"
+  variants:
+    - "static/images/content/hero-images/maths-1-1-2--mobile.jpg"
+    - "static/images/content/hero-images/maths-1-1-2--tablet.jpg"    
+
+"static/images/content/hero-images/maths-pythagoras.jpg":
+  alt: "A maths teacher demonstrating maths theory to pupils"
+  variants:
+    - "static/images/content/hero-images/maths-pythagoras--mobile.jpg"
+    - "static/images/content/hero-images/maths-pythagoras--tablet.jpg"
+
+"static/images/content/hero-images/maths-pythagoras2.jpg":
+  alt: "A maths teacher demonstrating maths theory to pupils"
+  variants:
+    - "static/images/content/hero-images/maths-pythagoras2--mobile.jpg"
+    - "static/images/content/hero-images/maths-pythagoras2--tablet.jpg"
+
+"static/images/content/hero-images/maths-volumes.jpg":
+  alt: "A maths teacher demonstrating volumes to pupils"
+  variants:
+    - "static/images/content/hero-images/maths-volumes--mobile.jpg"
+    - "static/images/content/hero-images/maths-volumes--tablet.jpg"
+
+"static/images/content/hero-images/maths-volumes2.jpg":
+  alt: "A maths teacher demonstrating volumes to pupils"
+  variants:
+    - "static/images/content/hero-images/maths-volumes2--mobile.jpg"
+    - "static/images/content/hero-images/maths-volumes2--tablet.jpg"
+
+"static/images/content/hero-images/music-ukeleles.jpg":
+  alt: "A music teacher with pupils showing them how to use ukeleles"
+  variants:
+    - "static/images/content/hero-images/music-ukeleles--mobile.jpg"
+    - "static/images/content/hero-images/music-ukeleles--tablet.jpg"
+
+"static/images/content/hero-images/peer-to-peer-collaboration.jpg":
+  alt: "Two teachers having a conversation"
+  variants:
+    - "static/images/content/hero-images/peer-to-peer-collaboration--mobile.jpg"
+    - "static/images/content/hero-images/peer-to-peer-collaboration--tablet.jpg"
+
+"static/images/content/hero-images/peer-to-peer-guidance.jpg":
+  alt: "Two teachers having a conversation"
+  variants:
+    - "static/images/content/hero-images/peer-to-peer-guidance--mobile.jpg"
+    - "static/images/content/hero-images/peer-to-peer-guidance--tablet.jpg"
+
+"static/images/content/hero-images/physics-oscilloscope.jpg":
+  alt: "A teacher using an oscilloscope to teach a physics lesson"
+  variants:
+    - "static/images/content/hero-images/physics-oscilloscope--mobile.jpg"
+    - "static/images/content/hero-images/physics-oscilloscope--tablet.jpg"
+
+"static/images/content/hero-images/physics-oscilloscope2.jpg":
+  alt: "A teacher using an oscilloscope to teach a physics lesson"
+  variants:
+    - "static/images/content/hero-images/physics-oscilloscope2--mobile.jpg"
+    - "static/images/content/hero-images/physics-oscilloscope2--tablet.jpg"
+
+"static/images/content/hero-images/physics-van-de-graaff.jpg":
+  alt: "A teacher using an van de graaff machine to teach a physics lesson"
+  variants:
+    - "static/images/content/hero-images/physics-van-de-graaff--mobile.jpg"
+    - "static/images/content/hero-images/physics-van-de-graaff--tablet.jpg"
+
 # case studies
 "static/images/content/case-studies/abigail.jpg":
   alt: "Maths teacher Abigail in front of a maths display board."
