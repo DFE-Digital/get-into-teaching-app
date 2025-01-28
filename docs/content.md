@@ -255,7 +255,7 @@ Heading text should also be unique and easy to distinguish from other headings o
 
 Contractions can make content easier to read, but should be used consistently. 
 
-Postive contractions like you'll, it's and we've can be used on Get Into Teaching. 
+Positive contractions like you'll, it's and we've can be used on Get Into Teaching. 
 
 Do not use negative contractions.
 
