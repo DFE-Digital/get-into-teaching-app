@@ -55,7 +55,7 @@
       <h2 class="heading--box-blue">Your options</h2>
 
       <% if @results.any? %>
-        <p>Based on your answers, you may be eligible for the following teacher training options:</p>
+        <p>Based on your answers, you may be eligible for the following options:</p>
 
         <% @results.each do |result| %>
           <div class="col-space-s">
@@ -118,8 +118,8 @@
   <div class="col-space-l-top">
     <% if non_uk? %>
       <%= render Content::QuoteWithImageComponent.new(
-        title: "Teaching as a non-uk...",
-        text: "<p>Visit the non-uk section...</p><p><a href=\"/non-uk-teachers\">Read about becoming a teacher as a non-uk citizen</a></p>",
+        title: "Teaching in England as a non-uk citizen",
+        text: "<p>If you’re interested in training to teach or teaching in England, we can help you understand your next steps.</p><p><a href=\"/non-uk-teachers\">Find out more about becoming a teacher as a non-uk citizen</a>.</p>",
         quotes: false,
         background_color: "pink",
         heading_color: "green",
@@ -127,7 +127,7 @@
       ) %>
     <% else %>
       <%= render Content::QuoteWithImageComponent.new(
-        title: "Teacher training stories",
+        title: "Teacher stories",
         text: "<p>\"My influence and decisions are ultimately impacting on our pupils' lives and the experience that they have at school.\"</p><p><a href=\"/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story\">Read Abigail's career progression story</a>.</p>",
         quotes: true,
         background_color: "blue",
