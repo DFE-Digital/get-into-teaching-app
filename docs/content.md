@@ -4,9 +4,9 @@ This documentation aims to be a reference for content editors that want to make 
 
 ## Table of Contents
 
-1. [Setting up Codespaces and Github](#getting-started)
-2. [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
-3. [Content Editing Tips/Info](#content-editing-tips-info)
+* [Setting up Codespaces and Github](#getting-started)
+* [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
+* [Content Editing Tips/Info](#content-editing-tips-info)
     * [Headings](#headings)
     * [Frontmatter](#frontmatter)
     * [Breadcrumbs](#breadcrumbs)
@@ -19,29 +19,27 @@ This documentation aims to be a reference for content editors that want to make 
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
-    * [iframe](#iframe)
     * [Inset text](#inset-text)
-     * [Creating a partial](#creating-a-partial)
+    * [Creating a partial](#creating-a-partial)
     * [Details expander for non-UK content](#details-expander-for-non-uk-content)
     * [YouTube Video](#youtube-video)
     * [Hero](#hero)
     * [Values](#values)
-4. [Search engine optimisation](#search-engine-optimisation)
-5. [Creating a new page](#creating-a-new-page)
-6. [Creating a subject page](#creating-a-subject-page)
-7. [Creating an inspirational page](#creating-an-inspirational-page)
-8. [Navigation](#navigation)
+* [Search engine optimisation](#search-engine-optimisation)
+* [Creating a new page](#creating-a-new-page)
+* [Creating a subject page](#creating-a-subject-page)
+* [Creating an inspirational page](#creating-an-inspirational-page)
+* [Navigation](#navigation)
     * [Main Navigation](#main-navigation)
     * [Category Pages](#category-pages)
-9. [Build errors](#build-errors)
-10. [Internship providers](#internship-providers)
-11. [Preview a change](#preview-a-change)
-12. [Saving a change](saving-a-change)
-13. [If you add something to the wrong branch](wrong-branch)
-14. [Redirect URLs](redirect-urls)
-15. [Finding links on the site](links-site)
-16. [Resolving merge conflicts](merge-conflicts)
-
+* [Build errors](#build-errors)
+* [Internship providers](#internship-providers)
+* [Preview a change](#preview-a-change)
+* [Saving a change](#saving-a-change)
+* [If you add something to the wrong branch](#wrong-branch)
+* [Redirect URLs](#redirect-urls)
+* [Finding links on the site](#links-site)
+* [Resolving merge conflicts](#merge-conflicts)
 
 ## Setting up Codespaces and Github
 
@@ -228,6 +226,38 @@ The above example would render out as follows:
 <img src="images/content_cta_examples.png" alt="Example Content CTAs" style="width: 500px;">
 
 ### Accessibility
+
+#### Link text
+
+All links should be descriptive and make sense in isolation.
+ 
+
+Avoid:
+* including punctuation in link text 
+* anchor links
+* using the same link text to link to different places
+* linking to the same place more than once, particularly if using different link text
+* having two or more hyperlinks close together on the page
+
+By default, all links will open in the same tab. You should only open a link in a new tab if the user will risk losing key information on the page. For example, a link to more information in a form. 
+
+Links that direct to external sites (e.g. non-GOV.UK) should explicitly say their destination. 
+
+[Find more guidance about writing accessible link text on GOV.UK](https://www.gov.uk/guidance/content-design/links).
+
+#### Headings
+
+The correct H1, H2, H3, H4 heading tags must be used to structure content. They should also be used in sequential order. For example, you must not skip from a H1 to using a H3. 
+
+Heading text should also be unique and easy to distinguish from other headings on the page.
+
+#### Contractions
+
+Contractions can make content easier to read, but should be used consistently. 
+
+Positive contractions like you'll, it's and we've can be used on Get Into Teaching. 
+
+Do not use negative contractions.
 
 #### iframe
 
@@ -810,8 +840,8 @@ keywords:
   - maths
   - science
 content: 
-  - "content/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching/header" 
-  - "content/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching/article"
+  - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/header" 
+  - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/article"
   - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
 ---
 ```
@@ -826,7 +856,7 @@ And copy and paste an exiting card such as:
     OpenStruct.new(
       title: "Abigail's favourite things about teaching",
       description: "Hear what Abigail enjoys most about teaching, and the impact she has through her job.   ",
-      path: "/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching",
+      path: "/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching",
       image: "static/images/content/case-studies/abigail.jpg"
     )) %>
 </ul>
@@ -1011,14 +1041,23 @@ If you want to move where this branch sits, click on the first title 'page title
 Select the correct place from the drop down.
 
 ## Redirect URLs
-If you search in Visual Studio Code 'redirects' it will take you to a page 'redirects.yml'
-**Currently you can only redirect internal links in this file. External redirects are handled in the routes file; you may need developer support to create or amend these.**
-You will need to follow the pattern that the list of redirects uses in this file.
-It will need to be in quotation marks. Then, you need to put the old url a colon and then the new url like this "/oldurl": "/newurl"
-Example: "/train-to-be-a-teacher/teacher-training-personal-statement": "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
-Press enter to create an indention - 
-Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
-The easiest way to make sure you don't miss any pages to redirect is to do a search which will show you all the pages you need to include.
+
+A redirect is a way to send users to a different page to the URL they requested. We set up redirects where we do things like change the URL of a page, or remove a page. **If you need to set up a redirect from an external URL, these are handled in the routes file; you'll need developer support to create or amend these.**
+
+To set up a redirect for a Get Into Teaching page, go to the 'redirects.yml' file. This file contains a list of all existing redirects. 
+
+To make add a new redirect:
+
+1. Redirects are grouped under headings, based on the content they relate to. Check if the redirect you want to add fits under an existing heading. If not, create a new one.
+2. Add a new line following the same pattern to set up the redirect. The first link should be the page you want to redirect from (your old URL), and the second link should be the page you want to link to (your new URL). Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
+3. Search the redirect file for any other redirects that link to the page you want to redirect from. You should update these as well to prevent creating a chain of redirects.
+
+```yaml
+---
+# Life as a teacher new section
+  "/is-teaching-right-for-me": "/life-as-a-teacher"
+---
+```
 
 ## Finding links on the site
 You can find everywhere a page is linked to by:

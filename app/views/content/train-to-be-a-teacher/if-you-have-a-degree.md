@@ -16,8 +16,6 @@ cta_adviser:
 calls_to_action:
     find:
       name: find
-      arguments:
-        title: "Find your teacher training course"
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one.

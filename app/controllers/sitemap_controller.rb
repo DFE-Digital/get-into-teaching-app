@@ -13,6 +13,7 @@ class SitemapController < ApplicationController
     /events
     /events/about-get-into-teaching-events
     /mailinglist/signup/name
+    /routes-into-teaching
   ].freeze
 
   def show
