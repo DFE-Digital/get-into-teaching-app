@@ -269,11 +269,11 @@
     - "static/images/content/hero-images/maths-volumes2--mobile.jpg"
     - "static/images/content/hero-images/maths-volumes2--tablet.jpg"
 
-"static/images/content/hero-images/music-ukeleles.jpg":
+"static/images/content/hero-images/music-ukuleles.jpg":
   alt: "A music teacher with pupils showing them how to use ukeleles"
   variants:
-    - "static/images/content/hero-images/music-ukeleles--mobile.jpg"
-    - "static/images/content/hero-images/music-ukeleles--tablet.jpg"
+    - "static/images/content/hero-images/music-ukuleles--mobile.jpg"
+    - "static/images/content/hero-images/music-ukuleles--tablet.jpg"
 
 "static/images/content/hero-images/peer-to-peer-collaboration.jpg":
   alt: "Two teachers having a conversation"
