@@ -1,0 +1,131 @@
+<%= render Content::LandingHeroComponent.new(
+  title: "Find your route into teaching",
+  colour: "pastel yellow-yellow",
+) %>
+
+<%= tag.div id: "routes_into_teaching_undergraduate_degree",
+  class: "hidden",
+  data: {
+    id: "undergraduate_degree",
+    key: session[:routes_into_teaching]["undergraduate_degree"],
+  }
+%>
+
+<%= tag.div id: "routes_into_teaching_unqualified_teacher",
+  class: "hidden",
+  data: {
+    id: "unqualified_teacher",
+    key: session[:routes_into_teaching]["unqualified_teacher"],
+  }
+%>
+
+<%= tag.div id: "routes_into_teaching_location",
+  class: "hidden",
+  data: {
+    id: "location",
+    key: session[:routes_into_teaching]["location"],
+  }
+%>
+
+<section class="container">
+  <div class="row inset">
+    <div class="col col-845">
+      <h2>You told us that you:</h2>
+
+      <ul>
+        <li><%= undergraduate_degree_summary %></li>
+        <li><%= unqualified_teacher_summary %></li>
+        <li><%= location_summary %></li>
+      </ul>
+
+      <p>You can <%= link_to "change your answers", routes_into_teaching_steps_path %> if you need to.</p>
+    </div>
+  </div>
+
+  <div class="row inset">
+    <div class="col col-845">
+      <h2 class="heading--box-blue">Your options</h2>
+
+      <% if @results.any? %>
+        <p>Based on your answers, you may be eligible for the following options:</p>
+
+        <% @results.each do |result| %>
+          <div class="col-space-s">
+            <%= render Content::ResultsBoxComponent.new(
+          heading: result["title"],
+          fee: result["course_fee"],
+          course_length: result["course_length"],
+          funding: result["funding"],
+          text: result["description"],
+          link_text: result["cta_text"],
+          link_target: result["cta_link"],
+        ) %>
+          </div>
+        <% end %>
+      <% else %>
+        <p>There are no teacher training routes that match your current circumstances. <%= link_to "Get advice on getting into teaching", "/help-and-support" %>.</p>
+      <% end %>
+    </div>
+  </div>
+
+  <% if no_degree? %>
+    <div class="row inset">
+      <div class="col col-845">
+        <h2 class="heading--box-blue">Other routes into teaching</h2>
+        <p>You do not need a degree and QTS to <%= link_to "teach in further education", "/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers" %> or to <%= link_to "teach in early years", "/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers" %>. So if you want to become a teacher but are not able to get a degree, you can explore these options.
+      </div>
+    </div>
+  <% end %>
+
+  <div class="row inset">
+    <div class="col col-845">
+      <h2 class="heading--box-blue">Next steps</h2>
+
+      <%= render CallsToAction::SimpleComponent.new(icon: "icon-arrow-black") do %>
+        <h3 class="call-to-action__heading">Get personalised guidance</h3>
+        <p>Everything you need to know to start a career in teaching sent straight into your inbox. Tailored to your own situation, you'll get all the latest information as well as advice and support.</p>
+
+        <div class="row col-space-m">
+          <%= form_with builder: GOVUKDesignSystemFormBuilder::FormBuilder, url: mailing_list_step_path(:name), scope: :mailing_list_steps_name, method: :put do |f| %>
+            <%= f.govuk_text_field :first_name, autocomplete: "given-name" %>
+            <%= f.govuk_text_field :last_name, autocomplete: "family-name" %>
+            <%= f.govuk_email_field :email, autocomplete: "email" %>
+            <%= f.hidden_field :channel_id, value: params[:channel] || f.object&.channel_id.presence %>
+            <%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id.presence %>
+            <%= f.hidden_field :accepted_policy_id, value: @privacy_policy.id %>
+            <div class="row col-space-s col-space-s-top">
+              <small>
+                Your details are protected under the terms of our <%= link_to("privacy notice (opens in new tab)", "/privacy-policy", { class: "link--black", target: :blank }) %>. This explains how we use your personal data. It's important you read it before signing up to receive emails.
+              </small>
+            </div>
+            <%= f.button "Next step", class: "button", data: { "prevent-double-click": true, "disable-with": "Next step" } %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<div class="row">
+  <div class="col-space-l-top">
+    <% if non_uk? %>
+      <%= render Content::QuoteWithImageComponent.new(
+        title: "Teaching in England as a non-uk citizen",
+        text: "<p>If you’re interested in training to teach or teaching in England, we can help you understand your next steps.</p><p><a href=\"/non-uk-teachers\">Find out more about becoming a teacher as a non-uk citizen</a>.</p>",
+        quotes: false,
+        background_color: "pink",
+        heading_color: "green",
+        image_path: "static/images/content/hero-images/0034.jpg"
+      ) %>
+    <% else %>
+      <%= render Content::QuoteWithImageComponent.new(
+        title: "Teacher stories",
+        text: "<p>\"My influence and decisions are ultimately impacting on our pupils' lives and the experience that they have at school.\"</p><p><a href=\"/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story\">Read Abigail's career progression story</a>.</p>",
+        quotes: true,
+        background_color: "blue",
+        heading_color: "pink",
+        image_path: "static/images/content/case-studies/abigail.jpg"
+      ) %>
+    <% end %>
+  </div>
+</div>

@@ -305,6 +305,9 @@
     - "static/images/content/hero-images/physics-van-de-graaff--mobile.jpg"
     - "static/images/content/hero-images/physics-van-de-graaff--tablet.jpg"
 
+"static/images/route-hero.png":
+  alt: ""
+
 # case studies
 "static/images/content/case-studies/abigail.jpg":
   alt: "Maths teacher Abigail in front of a maths display board."
@@ -332,7 +335,7 @@
   # a teacher with a group of students.
   alt: ""
 "static/images/content/homepage/directory3.jpg":
-  # A member of the events team at an event 
+  # A member of the events team at an event
   alt: ""
 "static/images/content/homepage/directory4.jpg":
   # A language teacher talking to pupils in a classroom.
