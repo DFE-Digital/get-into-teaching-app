@@ -840,8 +840,8 @@ keywords:
   - maths
   - science
 content: 
-  - "content/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching/header" 
-  - "content/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching/article"
+  - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/header" 
+  - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/article"
   - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
 ---
 ```
@@ -856,7 +856,7 @@ And copy and paste an exiting card such as:
     OpenStruct.new(
       title: "Abigail's favourite things about teaching",
       description: "Hear what Abigail enjoys most about teaching, and the impact she has through her job.   ",
-      path: "/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching",
+      path: "/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching",
       image: "static/images/content/case-studies/abigail.jpg"
     )) %>
 </ul>
