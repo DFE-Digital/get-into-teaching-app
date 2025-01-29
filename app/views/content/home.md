@@ -12,7 +12,7 @@
   mailing_list: true
   breadcrumbs: false
   content:
-    - content/home/purple-box
+    - content/home/routes-promo
     - content/home/calls-to-action
     - content/home/salaries-banner
     - content/home/directory

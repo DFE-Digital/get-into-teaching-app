@@ -13,7 +13,7 @@ end
 RSpec.feature "content pages check", :content, type: :feature do
   include Values
 
-  let(:other_paths) { %w[/ /feedback /search /teacher-training-adviser/sign_up/identity /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference /chat] }
+  let(:other_paths) { %w[/ /feedback /search /teacher-training-adviser/sign_up/identity /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference /chat /routes-into-teaching] }
   let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}, %r{/test}] }
 
   before do
