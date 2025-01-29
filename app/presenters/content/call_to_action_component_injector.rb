@@ -3,7 +3,7 @@ module Content
     CALLS_TO_ACTION = {
       "attachment" => CallsToAction::AttachmentComponent,
       "simple" => CallsToAction::SimpleComponent,
-      "find" => CallsToAction::FindComponent,
+      "find" => { klass: CallsToAction::FindComponent, default_arguments: {} },
       "apply" => CallsToAction::ApplyComponent,
       "chat" => ChatComponent,
       "feature_table" => Content::FeatureTableComponent,
@@ -42,19 +42,24 @@ module Content
     #     colour: purple
     #     size: massive
     def advanced_call_to_action_component
-      args, kwargs = *advanced_arguments
-
-      CALLS_TO_ACTION
-        .fetch(@params.fetch("name"))
-        .new(*args, **kwargs)
+      cta = CALLS_TO_ACTION.fetch(@params.fetch("name"))
+      if cta.is_a?(Hash)
+        cta_klass = cta[:klass]
+        default_arguments = cta[:default_arguments]
+      else
+        cta_klass = cta
+        default_arguments = nil
+      end
+      args, kwargs = *advanced_arguments(default_arguments)
+      cta_klass.new(*args, **kwargs)
     rescue KeyError
       fail(ArgumentError, "call to action not properly configured: #{@params}")
     end
 
     # component params can be passed as either an array or hash but not
     # a combination
-    def advanced_arguments
-      args = @params.fetch("arguments")
+    def advanced_arguments(default_arguments = nil)
+      args = @params.fetch("arguments", default_arguments)
 
       case args
       when Array
