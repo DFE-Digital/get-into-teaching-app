@@ -1,6 +1,6 @@
 module RoutesIntoTeachingHelper
   def answers
-    session[:routes_into_teaching]
+    session[:routes_into_teaching] || {}
   end
 
   def undergraduate_degree_summary
