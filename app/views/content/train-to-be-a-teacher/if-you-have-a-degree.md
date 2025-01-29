@@ -10,11 +10,12 @@ related_content:
     What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Improve your subject knowledge : "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
 cta_adviser:
   adviser:
     text: Talk to an adviser with years of teaching experience about your different training and funding options. Chat by phone, text or email, as little or as often as you need.
+calls_to_action:
+    find:
+      name: find
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one.
@@ -127,3 +128,4 @@ There are some differences in postgraduate teacher training courses.
 [Find out how to decide on the best course for you](/train-to-be-a-teacher/how-to-choose-your-teacher-training-course).
 
 $adviser$
+$find$

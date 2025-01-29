@@ -10,7 +10,7 @@ related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
-    Ben's favourite things about teaching : "/life-as-a-teacher/pay-and-benefits/bens-favourite-things-about-teaching"
+    Ben's favourite things about teaching : "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching"
 keywords:
   - Salary
   - Salaries
@@ -157,4 +157,4 @@ You also get other insurance benefits too. Find out more about the [teachers' pe
 
 In additional to the practical rewards of teaching, there's personal benefits too. Teaching is a career that allows you to make a difference, explore your creativity, and apply skills from your degree or previous career.
 
-[Explore why people choose to become a teacher](/life-as-a-teacher/teaching-as-a-career/why-teach).
+[Explore why people choose to become a teacher](/life-as-a-teacher/why-teach/why-become-a-teacher).
