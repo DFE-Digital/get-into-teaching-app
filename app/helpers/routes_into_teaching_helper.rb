@@ -8,21 +8,21 @@ module RoutesIntoTeachingHelper
       "Yes" => "have a bachelor's degree",
       "Not yet" => "are studying for a bachelor's degree",
       "No" => "do not have a bachelor's degree",
-    }[answers["undergraduate_degree"]]
+    }[answers["undergraduate_degree"]] || "No answer given for degree"
   end
 
   def unqualified_teacher_summary
     {
       "Yes" => "have previously worked in a school",
       "No" => "have not previously worked in a school",
-    }[answers["unqualified_teacher"]]
+    }[answers["unqualified_teacher"]] || "No answer given for unqualified teacher"
   end
 
   def location_summary
     {
       "Yes" => "live in England",
       "No" => "do not live in England",
-    }[answers["location"]]
+    }[answers["location"]] || "No answer given for location"
   end
 
   def non_uk?
