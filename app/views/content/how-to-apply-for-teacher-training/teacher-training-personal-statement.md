@@ -32,6 +32,9 @@ keywords:
   - teacher training application
 external_content:
     - content/train-to-be-a-teacher/promos/apply-for-your-course
+calls_to_action:
+    apply:
+      name: apply
 cta_adviser:
   adviser:
     text: An adviser with years of teaching experience can help you with your personal statement. Chat by phone, text or email, as little or as often as you need.
