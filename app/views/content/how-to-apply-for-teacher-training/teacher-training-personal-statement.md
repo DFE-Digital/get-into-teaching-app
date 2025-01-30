@@ -79,7 +79,7 @@ As well as showing your passion for teaching, your statement should include:
 
 ### Using AI to help write a personal statement
 
-You should not rely on ChatGPT or other artificial intelligence (AI) tools to write your personal statement. AI tools use bland language and produce generic results which will not make your statement personal to you.
+You should not rely on ChatGPT or other artificial intelligence (AI) tools to write your personal statement for you. AI tools use bland language and produce generic results which will not make your statement personal to you.
 
 AI tools are useful for structuring a personal statement or for giving you ideas for what to include. But being overly reliant on AI tools to write your personal statement may result in your application being unsuccessful.
 
