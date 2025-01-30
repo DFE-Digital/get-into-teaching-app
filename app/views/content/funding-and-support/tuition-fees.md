@@ -14,8 +14,6 @@ cta_adviser:
 calls_to_action:
     find:
       name: find
-      arguments:
-        title: "Find your teacher training course"
 navigation: 20.10
 navigation_description: Find out the cost of postgraduate teacher training courses with tuition fees.
 keywords:
