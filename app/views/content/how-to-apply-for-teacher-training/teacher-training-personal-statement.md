@@ -30,8 +30,6 @@ keywords:
   - interviews
   - offers
   - teacher training application
-external_content:
-    - content/train-to-be-a-teacher/promos/apply-for-your-course
 calls_to_action:
     apply:
       name: apply
