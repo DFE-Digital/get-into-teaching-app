@@ -132,3 +132,18 @@ form {
 #cookie-preferences-form {
   word-break: normal;
 }
+
+.govuk-radios__hint:has(> .field__hidden_subfield) {
+  padding-left: 1em;
+}
+
+.govuk-radios__input:checked ~ .govuk-hint .field__hidden_subfield {
+  display: block
+}
+
+.field__hidden_subfield {
+  display: none;
+  margin: 1em 0em;
+  border-left: 6px solid $grey-mid;
+  padding-left: 1.75em;
+}
