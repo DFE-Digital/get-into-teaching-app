@@ -111,5 +111,5 @@ You can get help with your personal statement from our [teacher training adviser
 Advisers can also help you understand more about what teaching is really like, which can help improve your application. 
 
 $q-Felix$
-
+$apply$
 $adviser$
