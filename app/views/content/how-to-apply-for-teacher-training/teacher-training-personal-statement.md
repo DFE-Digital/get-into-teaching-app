@@ -61,7 +61,7 @@ You can use it to show:
 
 Teacher training personal statements can be up to 1000 words. 90% of successful candidates write 500 words or more. It can take time to write a good personal statement, but you do not have to write it in one go.
 
-Your personal statement is your chance to make a good first impression with providers, checking your spelling and grammar will show your attention to detail and that you care about your application.
+Your personal statement is your chance to make a good first impression with providers. Checking your spelling and grammar will show your attention to detail and that you care about your application.
 
 ### What to include in your personal statement
 
@@ -89,7 +89,7 @@ Your account to apply for teacher training may be blocked if you consistently su
 
 ### Tailoring your personal statement
 
-You can use the same personal statement for every course you apply for. There may be some instances where you’d like to tailor it to different courses
+You can use the same personal statement for every course you apply for. There may be some instances where you’d like to tailor it to different courses.
 
 You can use your personal statement to explain why you feel passionate about teaching a specific age range or subject. You might also want to include why you want to do your teaching training with a particular provider.
 
@@ -114,7 +114,7 @@ $q-Josie$
 You can get help with your personal statement from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support by phone, text, or email.
 
 Advisers can also help you understand more about what teaching is really like, which can help improve your application.
-
+$q-Felix$
 ## Get school experience
 
 You do not need school experience to apply for teacher training, but it can help strengthen your personal statement.
@@ -123,6 +123,5 @@ Getting some school experience can also be a good way to make sure teaching is r
 
  [Find out how you could get school experience](/train-to-be-a-teacher/get-school-experience).
  
-$q-Felix$ 
 
 $adviser$ 
