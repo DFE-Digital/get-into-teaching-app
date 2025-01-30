@@ -114,7 +114,9 @@ $q-Josie$
 You can get help with your personal statement from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support by phone, text, or email.
 
 Advisers can also help you understand more about what teaching is really like, which can help improve your application.
+
 $q-Felix$
+
 ## Get school experience
 
 You do not need school experience to apply for teacher training, but it can help strengthen your personal statement.
