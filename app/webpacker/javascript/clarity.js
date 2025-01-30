@@ -48,14 +48,10 @@ export default class Clarity {
       console.log('cookies:accepted event fired');
 
       if (this.consentValue('non-functional') === 'granted') {
-        console.log('User consent granted');
         this.initContainer();
         window.clarity('consent');
-        console.log('Clarity consent granted');
       } else if (this.consentValue('non-functional') === 'denied') {
-        console.log('User consent denied');
-        window.clarity('consent', false); // Inform Clarity that consent is revoked
-        console.log('Clarity consent revoked');
+        window.clarity('consent', false);
       }
     });
   }
