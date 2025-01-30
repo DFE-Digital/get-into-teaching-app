@@ -13,8 +13,6 @@ cta_adviser:
 calls_to_action:
     find:
       name: find
-      arguments:
-        title: "Find your teacher training course"
 navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.
