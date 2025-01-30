@@ -16,8 +16,6 @@ promo_content:
 calls_to_action:
     find:
       name: find
-      arguments:
-        title: "Find your teacher training course"
 expander:
   check-your-qualifications:
     title: check your qualifications
