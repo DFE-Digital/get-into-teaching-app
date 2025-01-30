@@ -45,8 +45,6 @@ export default class Clarity {
 
   listenForConsentChanges() {
     document.addEventListener('cookies:accepted', () => {
-      console.log('cookies:accepted event fired');
-
       if (this.consentValue('non-functional') === 'granted') {
         this.initContainer();
         window.clarity('consent');
