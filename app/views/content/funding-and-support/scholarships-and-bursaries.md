@@ -13,8 +13,6 @@ cta_adviser:
 calls_to_action:
     find:
       name: find
-      arguments:
-        title: "Find your teacher training course"
 navigation: 20.15
 navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
