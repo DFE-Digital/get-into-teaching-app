@@ -16,7 +16,7 @@ calls_to_action:
     find:
       name: find
       arguments:
-        title: "Find a PGCE course"
+        title: "Find a QTS with PGCE course"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-pgce
 keywords:
