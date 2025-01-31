@@ -10,8 +10,9 @@ related_content:
     Salaried teacher training: "/funding-and-support/salaried-teacher-training"
 external_content:
     - content/train-to-be-a-teacher/promos/find-your-course
-promo_content:
-    - content/funding-and-support/promos/get-adviser-funding-promo
+cta_adviser:
+  adviser:
+    text: "An adviser with years of teaching experience can answer all your questions about tuition fees. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.10
 navigation_description: Find out the cost of postgraduate teacher training courses with tuition fees.
 keywords:
@@ -55,3 +56,5 @@ $postgraduate-fees$
 
 ## Additional costs
 You’ll also need to be able to cover your living costs and any travel expenses if you need to travel to school placements. Find out about [student finance for teacher training](/funding-and-support/tuition-fee-and-maintenance-loans).
+
+$adviser$

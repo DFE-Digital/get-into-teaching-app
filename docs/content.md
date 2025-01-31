@@ -4,45 +4,42 @@ This documentation aims to be a reference for content editors that want to make 
 
 ## Table of Contents
 
-1. [Setting up Codespaces and Github](#getting-started)
-2. [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
-3. [Content Editing Tips/Info](#content-editing-tips-info)
+* [Setting up Codespaces and Github](#getting-started)
+* [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
+* [Content Editing Tips/Info](#content-editing-tips-info)
     * [Headings](#headings)
     * [Frontmatter](#frontmatter)
     * [Breadcrumbs](#breadcrumbs)
     * [Links](#links)
-    * [SEO](#seo)
     * [Prevent Indexing](#prevent-indexing)
     * [Adding a Document or Image](#adding-a-document-or-image)
     * [Calls to Action](#calls-to-action)
     * [Adviser (CTA) component](#adviser-cta-component)
+    * [Routes (CTA) component](#routes-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
-    * [iframe](#iframe)
     * [Inset text](#inset-text)
+    * [Creating a partial](#creating-a-partial)
     * [Details expander for non-UK content](#details-expander-for-non-uk-content)
     * [YouTube Video](#youtube-video)
     * [Hero](#hero)
     * [Values](#values)
-4. [Creating a subject page](#creating-a-subject-page)
-5. [Creating an inspirational page](#creating-an-inspirational-page)
-6. [Creating a Blog Post](#creating-a-blog-post)
-    * [Images](#images)
-    * [Footers](#footers)
-7. [Navigation](#navigation)
+* [Search engine optimisation](#search-engine-optimisation)
+* [Creating a new page](#creating-a-new-page)
+* [Creating a subject page](#creating-a-subject-page)
+* [Creating an inspirational page](#creating-an-inspirational-page)
+* [Navigation](#navigation)
     * [Main Navigation](#main-navigation)
     * [Category Pages](#category-pages)
-8. [Build errors](#build-errors)
-9. [Internship providers](#internship-providers)
-10. [Creating a new page](#creating-a-new-page)
-11. [Preview a change](#preview-a-change)
-12. [Saving a change](saving-a-change)
-13. [If you add something to the wrong branch](wrong-branch)
-14. [Redirect URLs](redirect-urls)
-15. [Finding links on the site](links-site)
-16. [Resolving merge conflicts](merge-conflicts)
-
+* [Build errors](#build-errors)
+* [Internship providers](#internship-providers)
+* [Preview a change](#preview-a-change)
+* [Saving a change](#saving-a-change)
+* [If you add something to the wrong branch](#wrong-branch)
+* [Redirect URLs](#redirect-urls)
+* [Finding links on the site](#links-site)
+* [Resolving merge conflicts](#merge-conflicts)
 
 ## Setting up Codespaces and Github
 
@@ -68,13 +65,13 @@ You will need to download and set up an account on Github and Visual Studio Code
 
 When you want to edit content on the website the first step is to find out where that content resides in the [repository](https://github.com/DFE-Digital/get-into-teaching-app).
 
-The majority of web pages on the site are within the [/app/views/content](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content) directory; this reflects the top-level pages of the website (including the home page). If, for example, you wanted to edit [the 'how to apply for teacher training' blog post](https://getintoteaching.education.gov.uk/blog) content you would edit the file [/app/views/content/blog/how-to-apply-for-teacher-training.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/blog/how-to-apply-for-teacher-training.md). The structure here mimics the URL of the pages (the home page is a special case):
+The majority of web pages on the site are within the [/app/views/content](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content) directory; this reflects the top-level pages of the website (including the home page). If, for example, you wanted to edit [the 'Teacher pay' page](https://getintoteaching.education.gov.uk/life-as-a-teacher/pay-and-benefits/teacher-pay) content you would edit the file [/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md). The structure here mimics the URL of the pages (the home page is a special case):
 
 | URL                                     | Content File                                                 |
 | ---------------------------------       | ---------------------------------------------------------    |
 | /                                       | /app/views/content/home.md                                   |
 | /funding-and-support                    | /app/views/content/funding-and-support.md                  |
-| /blog/how-to-apply-for-teacher-training | /app/views/content/blog/how-to-apply-for-teacher-training.md |
+| /life-as-a-teacher/pay-and-benefits/teacher-pay | /app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md |
 
 Some web pages are more structurally complex than others and are made up of multiple Markdown files that get pulled into a single page. The home page is a good example of this; in addition to the main content page in [/app/views/content/home.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/home.md) there are multiple other content files that reside under [/app/views/content/home/*.md](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content/home). If you can't find the content you wish to edit in the main file for that page, it's worth checking to see if it has a corresponding subdirectory with additional content files in.
 
@@ -136,18 +133,6 @@ breadcrumbs: false
 
 Whilst links are just standard Markdown its worth noting that if you are linking internally to another web page on the GiT website you should only include the path, for example `[find an event](/events)` instead of `[find an event](https://getintoteaching.education.gov.uk/events)`. We do this so that the links work on all our test environments as well as production.
 
-### SEO
-
-In our frontmatter we can populate several values that are used for SEO:
-
-```yaml
-title: "A title for the page"
-description: "A description of the page"
-image: "path/to/image.png"
-date: "2021-11-01"
-```
-
-Ideally all titles should be unique, descriptions should be < 160 characters and the image will most likely be visible when sharing web page links via social media platforms. If a date is specified it will be used as the last modified date for the sitemap entry.
 
 ### Prevent Indexing
 
@@ -167,7 +152,7 @@ Images should be appropriately scaled and compressed prior to adding them to the
 
 #### Alt text
 
-The images used in the hero and on blog posts now pull their alt text from a central store. This allows us to set it once and include it wherever the image is used. The data is stored in `config/images.yml` and the format is as follows:
+The images used in the hero now pull their alt text from a central store. This allows us to set it once and include it wherever the image is used. The data is stored in `config/images.yml` and the format is as follows:
 
 ```yaml
 "static/images/content/hero-images/0032.jpg":
@@ -241,6 +226,38 @@ The above example would render out as follows:
 <img src="images/content_cta_examples.png" alt="Example Content CTAs" style="width: 500px;">
 
 ### Accessibility
+
+#### Link text
+
+All links should be descriptive and make sense in isolation.
+ 
+
+Avoid:
+* including punctuation in link text 
+* anchor links
+* using the same link text to link to different places
+* linking to the same place more than once, particularly if using different link text
+* having two or more hyperlinks close together on the page
+
+By default, all links will open in the same tab. You should only open a link in a new tab if the user will risk losing key information on the page. For example, a link to more information in a form. 
+
+Links that direct to external sites (e.g. non-GOV.UK) should explicitly say their destination. 
+
+[Find more guidance about writing accessible link text on GOV.UK](https://www.gov.uk/guidance/content-design/links).
+
+#### Headings
+
+The correct H1, H2, H3, H4 heading tags must be used to structure content. They should also be used in sequential order. For example, you must not skip from a H1 to using a H3. 
+
+Heading text should also be unique and easy to distinguish from other headings on the page.
+
+#### Contractions
+
+Contractions can make content easier to read, but should be used consistently. 
+
+Positive contractions like you'll, it's and we've can be used on Get Into Teaching. 
+
+Do not use negative contractions.
 
 #### iframe
 
@@ -334,6 +351,75 @@ If you need to insert an expander into an erb file:
     link_url: "/non-uk-teachers/non-uk-qualifications",
   ) %>
 ```
+### Creating a partial 
+
+If the content you are creating will be used elsewhere on the site in the exact same format, it may be a good idea to create a partial. This is a snippet of code that you will be able to render in one line. This saves you have having to write the same things again and again. It also means maintenance of the site is easier as any changes you make can be done in one central place rather having to keep track of what information is on what pages.
+
+To create a partial go to the /app/views/content/shared folder then either select an appropriate file or create your own folder. Then create a file. In the file place the HTML code that you would like to replicate on multiple pages. 
+
+```yaml
+<div class="check-qualifications">
+  <h3>Check your qualifications</h3>
+  <p>To train to teach in England, you'll need:</p>
+  <ul>
+    <li>GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)</li>
+    <li>a bachelor's degree in any subject</li>
+  </ul>
+  <p>Having relevant A levels can show your subject knowledge, if you do not have a degree in your chosen subject.</p>
+</div>
+
+```
+
+Then, when you are working in another HTML file and want to render your code all you have to do is reference the code you created as follows:
+
+```yaml
+ <%= render 'content/shared/qualifications-training/check_qualifications' %> 
+```
+If you need a specific change across each version of your code such as the subject, it is possible to create a variable. All you have to do is reference something in the frontmatter. In the following frontmatter the subject is chemistry. 
+
+```yaml
+title: Become a chemistry teacher
+subject: chemistry
+title_paragraph: |-
+  <p>
+  As a chemistry teacher, you'll spark curiosity and challenge young minds to explore the fundamental principles that govern our world. You'll inspire students to question, experiment, and discover, fuelling their passion for science.</p>
+  <p>
+  Tax-free bursaries of $bursaries_postgraduate_chemistry$ or scholarships of $scholarships_chemistry$ are available for eligible trainee chemistry teachers.</p>
+description: |-
+    Find out how to become a chemistry teacher, including what you'll teach and what funding is available to help you train.
+layout: "layouts/minimal"
+colour: pastel yellow-yellow
+image: "static/images/content/hero-images/chemistry.jpg"
+keywords:
+  - chemistry
+  - teaching chemistry
+  - teacher training
+
+content:
+  - "content/shared/subject-pages/header"
+  - "content/life-as-a-teacher/explore-subjects/chemistry/article"
+```
+
+To create a variable that references the frontmatter simply copy the format below. This will look at the frontmatter, then whatever you reference in the square brackets. In this case, it will look for subject and will render chemistry. This can be changed for anything as long as it is referenced in the frontmatter. 
+```yaml
+<%= @front_matter["subject"] %> 
+```
+This means that you can use the following code over many pages so that each page has its own unique subject rendered.  
+```yaml
+<div class="check-qualifications">
+  <h3>Check your qualifications</h3>
+  <p>To train to teach <%= @front_matter["subject"] %> in England, you'll need:</p>
+  <ul>
+    <li>GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)</li>
+    <li>a bachelor's degree in any subject</li>
+  </ul>
+  <p>Having relevant A levels can show your subject knowledge, if you do not have a degree in <%= @front_matter["subject"] %>.</p>
+</div>
+
+```
+
+
+
 
 
 ### Adviser (CTA) component
@@ -372,6 +458,49 @@ Alternatively, if you need to insert an adviser component in an erb file, you ca
   title: "Optional title",
   text: "Optional text",
   image: "/optional/path/to/image",
+  link_text: "Optional link text",
+  link_target: "/optional/path",
+  classes: ["class1", "class2", "class3"],
+  border: true
+)%>
+```
+
+### Routes (CTA) component
+
+You can use the Routes (Call to Action) component to create a call to action to invite users to find their route into teaching. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
+
+* title
+* text
+* image
+* link_text
+* link_target
+* classes
+* border
+
+```yaml
+---
+cta_routes:
+  routes:
+    title: "Optional title"
+    text: "Optional text"
+    image: "static/images/routes.png"
+    link_text: "Optional link text"
+    link_target: "/optional/path"
+    classes: ["class1", "class2", "class3"]
+    border: true
+---
+
+# My page
+
+$adviser$
+```
+Alternatively, if you need to insert an routes component in an erb file, you can call it like this:
+
+```yaml
+<%= render CallsToAction::RoutesComponent.new(
+  title: "Optional title",
+  text: "Optional text",
+  image: "static/images/routes.png",
   link_text: "Optional link text",
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
@@ -466,56 +595,212 @@ A list of the current values available on the site can be viewed at the `/values
 
 Values should be named using only _lowercase_ characters `a` to `z`, the numbers `0` to `9`, and the underscore `_` character. Unsupported characters such as the hyphen `-` are converted into underscores.
 
+## Search engine optimisation
+
+Whenever we add a new page to the GIT website, we need to make sure it’s optimised for search engines, this is known as search engine optimisation (SEO). This means that the page has the best chance possible of ranking in a high position in the search results when people type a related query in.
+
+In Autumn 2024, an SEO consultant provided us with guidelines for how to improve the SEO on the website.
+
+When uploading a new webpage, or reviewing an existing one, these are the main things you’ll need to do to make sure the page is optimised.
+
+### Find out what people are searching for
+
+If you’re adding new content to the GIT website or reviewing existing content, any changes should be based on user needs. You can make sure the content is optimised for the search engines by looking at what users are searching for in Search Console. If you're new to the team, speak to the Delivery Manager about getting set up on Search Console.
+
+For example, if you were to create a page around being a primary school teacher some terms you might want to include could be:
+- ‘skills to be a primary teacher’
+- ‘primary education courses’
+- ‘primary teaching with QTS’
+
+### Consider the context
+
+It’s important to consider the context of search terms. For example, users might be searching for ‘teachers pension increase’ but that’s not something we would cover on the GIT website. A term like this is more likely to be from users who are already teachers and their query would be better answered by the teacher pensions website.
+
+Some terms may:
+- not be teaching specific (‘uk qualifications’)
+- be too broad (‘high school teacher’)
+- be addressed by other services, such as Teaching Vacancies (‘english teacher jobs’)
+
+You can find out more about optimising content for what users are searching for by viewing the following documents from the Autumn 2024 SEO review:
+- keyword map
+- content optimisation guidance
+These are stored in the Get Into Teaching Ebsite Project folder in Teacher Services SharePoint.
+
+### Internal links
+
+Internal linking is when a page on a website links through to another page on the same website. This is important for SEO as it helps the search engines understand which pages relate to each other. It also helps users navigate the site.
+
+When creating or updating a page, make sure:
+- all pages have more than one internal link
+- use the keyword that you want the page to rank for as the anchor text, e.g. use ‘qualified teacher status (QTS)’ as the link rather than ‘you’ll be qualified as a teacher’
+- internal links link to the canonical version of pages (these are the pages we want to rank) so they do not have to go through redirects
+- you link to any new pages from existing, relevant pages
+
+### URL structure
+
+The URL on a page helps the search engines understand what a page is about.
+
+When creating a page or updating a URL, make sure:
+- the URL includes a target keyword, where it is sensible to do so e.g. `/train-to-be-a-teacher/teacher-degree-apprenticeships`, rather than `/train-to-be-a-teacher/tda`
+- URLs are short and make sense when read by humans
+
+### Headers
+
+Where possible, include keywords in the content headers. Headers should follow a clear structure e.g. H1, H2, and H3. This is important for accessibility, as well as SEO.
+
+### Acronyms
+
+Users may not know certain acronyms well enough to include them in their search terms. Always spell out words in full first, and more than once, if they are the keywords for a particular page.
+
+In some cases, users may be more familiar with the acronym than the full word. For example:
+- ‘QTS’ gets more searches than ‘qualified teacher status’
+- ‘teacher degree apprenticeship’ gets more searches than ‘TDA’
+
+You can find out more about how we use acronyms in the:
+- [DfE content style guide](https://design.education.gov.uk/design-system/style-guide)
+- [Government Digital Services (GDS) style guide](https://www.gov.uk/guidance/style-guide/a-to-z)
+
+### Front matter
+
+In our frontmatter we can populate several values that are used for SEO:
+
+```yaml
+title: "A title for the page"
+description: "A description of the page"
+image: "path/to/image.png"
+date: "2021-11-01"
+```
+
+Ideally all titles should be unique, descriptions should be no more than 160 characters and the image will most likely be visible when sharing web page links via social media platforms. If a date is specified it will be used as the last modified date for the sitemap entry.
+
+### Monitoring SEO impact
+
+You can use Search Console to get an idea of how a search term or page is performing. 
+
+1. Click on the date filter in the 'Search Results' section.
+2. Select 'Compare'.
+3. Compare a date range before your changes with a similar period after the changes.
+4. Check for improvements in clicks, impressions, and rankings.
+
+
+You can also check how specific pages are performing:
+
+1. Go to 'Search Results' and add filter, then select ‘Page’.
+2. Enter the URL for the page you want to check.
+3. Review metrics such as impressions, clicks, and position for those pages.
+4. You can change the dates for individual pages too, so you can compare stats before and after any changes.
+
+To see how keyword targeting is performing: 
+
+1. Click 'Search Results'.
+2. Click 'Add filter' and select 'Query'.
+3. Enter the query or part of the query e.g. ‘SEND’ will bring any query up with ‘SEND’ in it such as ‘SEND training’.
+4. Check if optimised keywords:
+   - have higher impressions and clicks
+   - have improved their average position in search results
+5. You can also see how individual pages are doing for specific keywords by filtering by query and page.
+
+It can take weeks or even months for changes to have an impact, so check the above regularly.
+
+## Creating a new page
+
+**Make sure you start by creating a new branch on master**
+
+To do this you will need to:
+
+- always open Visual Studio Code from https://github.com/DFE-Digital/get-into-teaching-app and open from the green code button
+- once Visual Studio Code is open, click the search bar and select 'Create new branch'
+- type in the name of your new branch and press enter
+- if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
+
+**Make sure you're in the new branch when you create the doc and not master as you can't make changes to the master doc**
+
+ Navigate to the left hand side bar, where you want the new page to sit
+ Right hand click and select 'New file'
+
+When you name the file you will have to name it depending on whether the file in going to be written in html or markdown. If the file is markdown then put .md at the end of the file, e.g. when-to-apply.md
+
+If the file is html, start the file name with an underscore and then put .html.erb at the end of the file, e.g. _categories.html.erb
+
+There are different reasons why you might want a file to be a specific type which you can discuss with a developer or interaction designer. Generally it is more straight forward to write something in markdown so this is used for most content files. However, html can be styled more easily so it is possible the file has been written in this way to feature a specific component such as a styled quote. 
+
+If you have created a markdown page - you will need to fill in the following details at the top of the markdown file. You will not need to fill in the navigation details if the page sits in a sub category, e.g. Life as a teacher.
+
+title: title will appear in the browser tab
+
+heading: this is the h1 for the page - only needed if you want the h1 and the title to be different. If not, just add the title
+
+description: must start with |- and then you can write the text here
+
+related_content: list your related content links here, formatted as internal links
+
+navigation:  this is to decide where the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the category page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an in between number.  
+
+navigation_title: This is the title that will appear in the tiles
+
+navigation_description: This is the description that will appear in the tiles
+
+keywords: use Semrush to put keywords here, do a bulletpointed list using dashes like below:
+  - adviser
+  - advisor
+  - ITT
+
+Here is a blank version to take and fill in:
+
+- title:
+- heading:
+- description: 
+- related_content: 
+- navigation:  
+- navigation_title: 
+- navigation_description: 
+- keywords: 
+
 ## Creating a subject page
 
-Create a subject folder under ‘content/life as a teacher’
+To create a new subject page, go to the folder content/life-as-a-teacher/explore-subjects. Then copy one of the current folders inside, e.g. English.
+Right click the folder and rename it to the subject you want to create. 
 
-From a previous published subject page copy the 3 files:
-
--	_adviser-promo-subject-html.erb (replace with subject name)
+Inside the new folder you have created you will have 1 file:
 -	_article.html/erb
--	_header.html.erb
 
-Also copy and paste a previous subject ‘.md’ file and rename it with the subject (e.g english.md)
+This is where the content for the page will sit. 
+
+Next, copy and paste a previous subject markdown (.md) file and rename it with the subject (e.g., business.md)
 
 #### File changes:
 
-_adviser-promo-subject.html.erb - change line 4 to relate to the subject 
+The main content of subject pages should be written in HTML format in the article file. The structure of the subject pages are very similar so you should be able to use the subject you have copied as a guide.
 
-_header.html.erb – no changes needed
+Change all of the information in the article file that is not in a partial to be relevant to your subject. 
+Then, you can optionally change the quote partials to be more relevant to your subject. Finally, look up the bursary and scholarship entitlement to the subject you are teaching. Then, change the information to the correct partial. All of the other information on the page should use the same partials so do not need to be edited. 
 
-The main content of subject pages should be written in HTML format using the following template as a guide:
-
-_article.html/erb 
-
-Update the markdown file to edit the hero banner image, hero banner text (title and title_paragraph) and the page’s card component. You will also need to ensure the links to the html erb files are updated
+Then update the markdown file to edit the hero banner image, hero banner text (title and title_paragraph) and the page’s card component. You will also need to ensure the links to the html erb files are updated.
 
 Subject.md
 
 ```yaml
 ---
-title: Become a subject teacher
+title: Become an English teacher
+subject: English
 title_paragraph: |-
-  <p>Tax-free bursaries of $bursaries_postgraduate_subject$ or scholarships of $scholarships_subject $ are available for eligible trainee subject teachers.</p>
+  <p>
+  Teaching English is more than just reading and writing. It's opening doors to new worlds and perspectives. You'll encourage a passion for language and a love of creativity, helping shape the voices of the future.</p>
+  <p>
+  Tax-free bursaries of $bursaries_postgraduate_english$ are available for eligible trainee English teachers.</p>
 description: |-
-   Find out how to become a subject teacher including what you'll be teaching and what funding is available to help you train.
-backlink: "../../"
-subcategory: What to teach
-navigation: 5.43
-navigation_title: Subject name
-navigation_description: Subject content
+    Find out how to become a English teacher, including what you'll teach and what funding is available to help you train.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/homepage/directory4.jpg"
+image: "static/images/content/hero-images/0032.jpg"
 keywords:
-  - keyword 1
-  - keyword 2
-  - keyword 3
- 
+  - english
+  - teaching english
+  - teacher training
+
 content:
-  - "content/life-as-a-teacher/subject/header"
-  - "content/life-as-a-teacher/subject/article"
-  - "content/life-as-a-teacher/subject/adviser-promo-subject"
+  - "content/shared/subject-pages/header"
+  - "content/life-as-a-teacher/explore-subjects/english/article"
 ---
 ```
 
@@ -555,8 +840,8 @@ keywords:
   - maths
   - science
 content: 
-  - "content/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching/header" 
-  - "content/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching/article"
+  - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/header" 
+  - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/article"
   - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
 ---
 ```
@@ -571,7 +856,7 @@ And copy and paste an exiting card such as:
     OpenStruct.new(
       title: "Abigail's favourite things about teaching",
       description: "Hear what Abigail enjoys most about teaching, and the impact she has through her job.   ",
-      path: "/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching",
+      path: "/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching",
       image: "static/images/content/case-studies/abigail.jpg"
     )) %>
 </ul>
@@ -605,73 +890,6 @@ When using in a markdown file, copy the above code into a new html file and link
 content: 
   - "content/life-as-a-teacher/pay-and-benefits/quote" 
 ```
-
-## Creating a Blog Post
-
-Blog posts should be written in Markdown format using the following template as a guide:
-
-#### article-title.md
-
-```yaml
----
-title: Article title
-date: "2021-08-26"
-images:
-an_image:
-  path: "static/images/content/blog/image.jpg"
-  thumbnail_path: "static/images/content/blog/thumbnails/image.jpg"
-  alt: "A description of the image"
-another_image:
-  path: "static/images/content/blog/another_image.jpg"
-  alt: "A description of the image"
-description: |-
-  A brief description of the blog article.
-keywords:
-  - keyword 1
-  - keyword 2
-tags:
-  - tag 1
-  - tag 2
----
-
-## Heading
-
-The blog content goes here. You can use [links](http://link.com) and other Markdown formatting, in addition to some custom Markdown syntax, such as including another image:
-
-$another_image$
-```
-
-### Images
-
-The first image (`an_image` in the above example) will be displayed at the top of the blog post and in the thumbnail image on the pages that list blog posts. The main blog image should ideally be `1464px x 1100px` to fit the available space in the template at a reasonable resolution.
-
-Ideally you should also provide a `thumbnail_path` for the first image; this should be as close to `340px x 260px` as possible. If a `thumbnail_path` is not provided the `path` image will be used and scaled-down to display at a width of `170px` (maintaining the image aspect ratio - thumbnail images should be `340px` wide to look clear on retina devices).
-
-### Content
-
-Introduction paragraphs (where used) should go underneath the first image rather than above it. Use normal text rather than italics for the introduction paragraph as this is better for accessibility. If it is necessary to separate this introduction paragraph from subsequent paragraphs, you can use a heading.
-
-Biographical information about the author should go at the end of the article above the footer, with a heading of 'About the author'.
-
-### Footers
-
-The final paragraph in each blog post will be formatted so it stands out from the rest. It's intended to be used as a closing or summary paragrah that directs users on which step to take next if the post has inspired them. To reduce duplication there is a collection of generic ones listed in `app/views/blog/closing-paragraphs`.
-
-To use a generic one without copying the content add the following key to the front matter, replacing the chosen variant as needed:
-
-```yaml
-closing_paragraph: enriching-the-lives-of-young-people
-```
-
-To add a new generic variant, copy and paste an existing one, give it an appropriate name `my-new-closing-paragraph.html.erb` and then reference it from your post:
-
-```yaml
-closing_paragraph: my-new-closing-paragraph
-```
-
-### Tags
-
-We have a whitelist of available blog tags in `/config/tags.yml` - if you try to add a tag not contained within this list you will receive an error message on the blog post page and our test suite will fail (preventing you from deploying your blog post). If you need a tag not already in the whitelist, add it to the `tags.yml` before referencing it in your blog post.
 
 ## Navigation
 
@@ -792,54 +1010,6 @@ When updating not just the text content within the file, but the actual list of 
 - Run `bundle exec rake teaching_internship_providers:generate`.
 
 
-## Creating a new page
-
-1. **Make sure you start by creating a new branch on master**
-To do this you will need to
-	- always open Visual Studio Code from https://github.com/DFE-Digital/get-into-teaching-app and open from the green code button
-	- once Visual Studio Code is open, click the search bar and select 'Create new branch'
-	- type in the name of your new branch and press enter
-	- if your branch has been created, it will appear as a name in the bottom left hand corner, next to the blue tab of the codespace name 
-
-  **Make sure you're in the new branch when you create the doc and not master as you can't make changes to the master doc**
-
-3. Navigate to the right hand side bar, where you want the new page to sit
-4. Right hand click and select 'New file'
-5. Give name to file ie. when-to-apply.md **make sure you put md on the end of the name if it is a markdown file**
-
-Now you have created a page - you will need to fill in the top details:
-
-**If you have created a page that will appear in one of the category pages ie. How to apply**
-
-title: 	title will appear in the browser tab
-
-heading: this is the h1 for the page - only needed if you want the h1 and the title to be different. If not, just add the title
-
-description: must start with |- and then you can write the text here
-
-related_content: list your related content links here, formatted as internal links
-
-navigation:  this is to decide where the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the category page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an in between number.  
-
-navigation_title: This is the title that will appear in the tiles
-
-navigation_description: This is the description that will appear in the tiles
-
-keywords: use Semrush to put keywords here, do a bulletpointed list using dashes like below:
-  - adviser
-  - advisor
-  - ITT
-
-Here is a blank version to take and fill in:
-title:
-heading:
-description: 
-related_content: 
-navigation:  
-navigation_title: 
-navigation_description: 
-keywords: 
-
 ## Saving a change
 When you have made a change in Visual Studio Code and want to save your work.
 1. Save the change by CTRL-S
@@ -871,17 +1041,23 @@ If you want to move where this branch sits, click on the first title 'page title
 Select the correct place from the drop down.
 
 ## Redirect URLs
-If you search in Visual Studio Code 'redirects' it will take you to a page 'redirects.yml'
-**Currently you can only redirect internal links in this file. External redirects are handled in the routes file; you may need developer support to create or amend these.**
-You will need to follow the pattern that the list of redirects uses in this file.
-It will need to be in quotation marks. Then, you need to put the old url a colon and then the new url like this "/oldurl": "/newurl"
-Example: "/train-to-be-a-teacher/teacher-training-personal-statement": "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
-Press enter to create an indention - 
-Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
-The easiest way to make sure you don't miss any pages to redirect is to do a search which will show you all the pages you need to include.
 
-## Redirect blog tags
-If you're deleting any blog posts as well as setting up redirects you'll also need to check the blog tags to see if there are any that need to be deleted too. **Blog tags live in the config file**.
+A redirect is a way to send users to a different page to the URL they requested. We set up redirects where we do things like change the URL of a page, or remove a page. **If you need to set up a redirect from an external URL, these are handled in the routes file; you'll need developer support to create or amend these.**
+
+To set up a redirect for a Get Into Teaching page, go to the 'redirects.yml' file. This file contains a list of all existing redirects. 
+
+To make add a new redirect:
+
+1. Redirects are grouped under headings, based on the content they relate to. Check if the redirect you want to add fits under an existing heading. If not, create a new one.
+2. Add a new line following the same pattern to set up the redirect. The first link should be the page you want to redirect from (your old URL), and the second link should be the page you want to link to (your new URL). Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
+3. Search the redirect file for any other redirects that link to the page you want to redirect from. You should update these as well to prevent creating a chain of redirects.
+
+```yaml
+---
+# Life as a teacher new section
+  "/is-teaching-right-for-me": "/life-as-a-teacher"
+---
+```
 
 ## Finding links on the site
 You can find everywhere a page is linked to by:

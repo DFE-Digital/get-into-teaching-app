@@ -8,12 +8,22 @@ RSpec.describe AnswerHelper, type: :helper do
 
     it "correctly formats a date" do
       answer = Date.new(2011, 1, 24)
-      expect(helper.format_answer(answer)).to eq("<span>24 01 2011</span>")
+      expect(helper.format_answer(answer)).to eq("<span>24 January 2011</span>")
     end
 
     it "correctly formats a time" do
       answer = Time.utc(2011, 1, 24, 10, 30)
-      expect(helper.format_answer(answer)).to eq("<span>10:30</span>")
+      expect(helper.format_answer(answer)).to eq("<span>10:30am</span>")
+    end
+
+    it "correctly formats a time of midday" do
+      answer = Time.utc(2011, 1, 24, 12, 0)
+      expect(helper.format_answer(answer)).to eq("<span>Midday</span>")
+    end
+
+    it "correctly formats a time of midnight" do
+      answer = Time.utc(2011, 1, 24, 0, 0)
+      expect(helper.format_answer(answer)).to eq("<span>Midnight</span>")
     end
 
     it "calls safe_format" do
@@ -26,7 +36,7 @@ RSpec.describe AnswerHelper, type: :helper do
 
       it "correctly formats a time" do
         answer = Time.utc(2011, 1, 24, 10, 30)
-        expect(helper.format_answer(answer)).to eq("<span>00:30</span>")
+        expect(helper.format_answer(answer)).to eq("<span>12:30am</span>")
       end
     end
   end

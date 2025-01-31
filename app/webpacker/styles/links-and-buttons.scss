@@ -239,6 +239,66 @@ body a.govuk-back-link {
   }
 }
 
+// CTA link with green arrow circle button
+// Partial for rendering here: app/views/shared/_cta_circle_link.html.erb
+.cta-circle-link-wrapper {
+  display: flex;
+  align-items: top;
+  gap: 0.5em;
+  padding: 0.1em;
+  @extend .link;
+  text-decoration: none;
+
+  .cta-circle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $cta-green;
+    height: 28px;
+    width: 28px;
+    flex-shrink: 0;
+
+    i {
+      color: $white;
+    }
+  }
+
+  .cta-link-text {
+    @include font-size("small");
+    @extend .link;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    .cta-circle-button {
+      background-color: darken($cta-green, 5%);
+    }
+
+    .cta-link-text {
+      text-decoration-thickness: max(3px, 0.1875rem);
+    }
+  }
+
+  &:focus {
+    .cta-link-text {
+      color: $white;
+      text-decoration: none;
+    }
+
+    .cta-circle-button {
+      background-color: $cta-green;
+    }
+  }
+
+  @include mq ($until: narrow) {
+    .cta-circle-button {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
 .call-to-action-icon-button {
   @include button;
   display: inline-block;

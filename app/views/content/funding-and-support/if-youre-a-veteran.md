@@ -6,9 +6,10 @@ description: |-
     Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 related_content:
     Explore life as a teacher: "/life-as-a-teacher"
-    Teach in further education without a degree: "https://www.teach-in-further-education.campaign.gov.uk/"
-promo_content:
-    - content/funding-and-support/promos/get-adviser-veterans-promo
+    Teach in further education without a degree: "https://www.teachinfurthereducation.education.gov.uk/"
+cta_adviser:
+  adviser:
+    text: "You can get dedicated guidance and support with your journey into teacher training from one of our veteran teacher training advisers. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.35
 navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
@@ -53,7 +54,7 @@ All teacher training candidates are also eligible for [tuition fee and maintenan
 
 ## Get support
 
-[The Career Transition Partnership website](https://www.ctp.org.uk/) supports leavers of the armed forces as they transition from the military into civilian life.
+[The Career Transition Partnership website](https://www.modctp.co.uk/) supports leavers of the armed forces as they transition from the military into civilian life.
 
 The [MOD's Enhanced Learning Credits Scheme (ELC) website](https://www.enhancedlearningcredits.com/) promotes lifelong learning amongst members of the armed forces by providing financial support to pay for approved qualifications. You can contact them to find out about eligibility.
 
@@ -76,3 +77,5 @@ You’ll need different qualifications depending on [who you want to teach](/lif
 If you’re unsure about whether your qualifications achieved through military service meet the standard required, talk to your course provider, or a [teacher training adviser](/teacher-training-advisers).
 
 You may also be able to do a top up degree to boost your qualifications to meet the standard required. Talk to your teacher training adviser and course provider to find out about your options.
+
+$adviser$

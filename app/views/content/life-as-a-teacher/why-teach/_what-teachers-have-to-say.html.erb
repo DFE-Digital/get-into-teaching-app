@@ -1,0 +1,31 @@
+<div class="row grey">
+  <section class="container">
+    <div>
+      <h2 class="heading--box-pink">Find out what teachers have to say</h2>
+      <section class="category col-space-m">
+        <section class="category__cards">
+          <nav class="category__nav-cards">
+            <ul>
+              <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
+                OpenStruct.new(
+                  title: "Ben's favourite things about teaching",
+                  description: "Maths and science teacher Ben shares his favourite things about teaching.",
+                  path: "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching",
+                  image: "static/images/content/case-studies/ben.jpg"
+                )) %>
+            </ul>
+            <ul>
+              <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
+                OpenStruct.new(
+                  title: "Abigail's favourite things about teaching",
+                  description: "Hear what Abigail enjoys most about teaching, and the impact she has through her job.   ",
+                  path: "/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching",
+                  image: "static/images/content/case-studies/abigail.jpg"
+                )) %>
+            </ul>
+          </nav>
+        </section>
+      </section>
+    </div>
+  </section>
+</div>

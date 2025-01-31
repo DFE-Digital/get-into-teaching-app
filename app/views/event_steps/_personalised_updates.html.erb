@@ -2,23 +2,23 @@
 
 <p>These questions help us provide tailored guidance depending on your circumstances.</p>
 
+<%= f.govuk_collection_select :preferred_teaching_subject_id,
+    f.object.teaching_subject_options,
+    :id,
+    :value,
+    options: { prompt: "Select a subject" } %>
+
 <%= f.govuk_collection_select :degree_status_id,
       f.object.degree_status_options,
       :id,
       ->(option) { degree_status_text(option) },
-      options: { prompt: true } %>
+      options: { prompt: "Select a degree option" } %>
 
 <%= f.govuk_collection_select :consideration_journey_stage_id,
       f.object.journey_stage_options,
       :id,
       :value,
-      options: { prompt: true } %>
-
-<%= f.govuk_collection_select :preferred_teaching_subject_id,
-    f.object.teaching_subject_options,
-    :id,
-    :value,
-    options: { prompt: true } %>
+      options: { prompt: "Select an option" } %>
 
 <%= f.govuk_text_field :address_postcode, autocomplete: "postal-code" unless f.object.hide_postcode_field? %>
 
@@ -29,8 +29,7 @@
     </span>
   </summary>
   <div class="govuk-details__text">
-    <p>We run in-person events in the UK that we can tell you about if you give us your UK postcode.</p>
-    <p>If you do not live in the UK, you do not need to give us your postcode.</p>
-    <p>Instead, you can just select 'Complete sign up' to finish signing up for your event.</p>
+    <p>We run in-person events in the UK. We can tell you about these if you give us your UK postcode.</p>
+    <p>If you do not live in the UK, you do not need to give us your postcode. Instead, you can just select 'Complete sign up' to finish signing up for your event.</p>
   </div>
 </details>

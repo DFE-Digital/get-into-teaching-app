@@ -10,6 +10,7 @@ on:
 permissions:
   contents: write
   deployments: write
+  id-token: write
   issues: write
   packages: write
   pull-requests: write
