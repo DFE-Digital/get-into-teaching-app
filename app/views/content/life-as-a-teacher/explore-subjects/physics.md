@@ -10,7 +10,7 @@ description: |-
     Find out how to become a physics teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/hero-images/physics_1383.jpg"
+image: "static/images/content/hero-images/physics-van-de-graaff.jpg"
 keywords:
   - physics
   - teaching physics
