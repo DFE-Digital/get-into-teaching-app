@@ -32,7 +32,7 @@
     "sass": "^1.69.7",
     "sass-loader": "^16.0.4",
     "sass-mq": "^5.0.1",
-    "semver": "7.6.3",
+    "semver": "7.7.0",
     "shakapacker": "8.0.2",
     "sinon": "^19.0.2",
     "stimulus": "^3.1",
@@ -59,7 +59,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "postcss": "8",
     "prettier": "^3.2.5",
-    "semver": "7.6.3",
+    "semver": "7.7.0",
     "stylelint": "^16.9.0",
     "stylelint-config-gds": "^2.0.0"
   },
