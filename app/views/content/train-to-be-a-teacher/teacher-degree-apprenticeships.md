@@ -8,8 +8,11 @@ related_content:
     Explore life as a teacher : "/life-as-a-teacher"
     Train to teach if you do not have a degree : "/train-to-be-a-teacher/if-you-dont-have-a-degree"
     Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
+calls_to_action:
+  find:
+    name: find
+    arguments:
+      title: "Find a teacher degree apprenticeship"
 navigation: 20.45
 navigation_title: If you want to do a teaching apprenticeship
 navigation_description: A teacher degree apprenticeship (TDA) lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).
@@ -57,3 +60,5 @@ To meet the academic requirements for the TDA, you must have:
 
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 * A levels - the number of A levels or equivalent qualifications required will be set by individual universities
+
+$find$
