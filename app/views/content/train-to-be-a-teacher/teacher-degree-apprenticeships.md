@@ -9,10 +9,10 @@ related_content:
     Train to teach if you do not have a degree : "/train-to-be-a-teacher/if-you-dont-have-a-degree"
     Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
 calls_to_action:
-    find:
-      name: find
-      arguments:
-        title: "Find a teacher degree apprenticeship"
+  find:
+    name: find
+    arguments:
+      title: "Find a teacher degree apprenticeship"
 navigation: 20.45
 navigation_title: If you want to do a teaching apprenticeship
 navigation_description: A teacher degree apprenticeship (TDA) lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).

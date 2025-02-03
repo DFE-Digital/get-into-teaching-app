@@ -10,10 +10,10 @@ cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about salaried teacher training. Chat by phone, text or email, as little or as often as you need."
 calls_to_action:
-    find:
-      name: find
-      arguments:
-        title: "Find a salaried teacher training course"
+  find:
+    name: find
+    arguments:
+      title: "Find a salaried teacher training course"
 navigation: 20.20
 navigation_description: Find out about School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 keywords:

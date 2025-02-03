@@ -12,8 +12,8 @@ cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about tuition fees. Chat by phone, text or email, as little or as often as you need."
 calls_to_action:
-    find:
-      name: find
+  find:
+    name: find
 navigation: 20.10
 navigation_description: Find out the cost of postgraduate teacher training courses with tuition fees.
 keywords:

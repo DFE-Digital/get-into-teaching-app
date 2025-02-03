@@ -12,13 +12,13 @@ cta_adviser:
   adviser:
     text: An adviser with years of teaching experience can help you understand how subject knowledge enhancement courses work. Chat by phone, text or email, as little or as often as you need.
 calls_to_action:
-    find:
-      name: find
-      arguments:
-        title: "Find your SKE course"
-        text: "Take a look at the different SKE courses available."
-        link_text: "Find your SKE course"
-        link_target: "https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory"
+  find:
+    name: find
+    arguments:
+      title: "Find your SKE course"
+      text: "Take a look at the different SKE courses available."
+      link_text: "Find your SKE course"
+      link_target: "https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory"
 youtube_video:
   ske-course-video:
     id: mWuHMtyFrFU

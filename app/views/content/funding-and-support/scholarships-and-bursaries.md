@@ -11,8 +11,8 @@ cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about scholarships and bursaries. Chat by phone, text or email, as little or as often as you need."
 calls_to_action:
-    find:
-      name: find
+  find:
+    name: find
 navigation: 20.15
 navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.

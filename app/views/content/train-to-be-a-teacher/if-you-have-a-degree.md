@@ -14,8 +14,8 @@ cta_adviser:
   adviser:
     text: Talk to an adviser with years of teaching experience about your different training and funding options. Chat by phone, text or email, as little or as often as you need.
 calls_to_action:
-    find:
-      name: find
+  find:
+    name: find
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one.

@@ -14,8 +14,8 @@ related_content:
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 calls_to_action:
-    find:
-      name: find
+  find:
+    name: find
 expander:
   check-your-qualifications:
     title: check your qualifications

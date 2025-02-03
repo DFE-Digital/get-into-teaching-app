@@ -11,8 +11,8 @@ cta_adviser:
   adviser:
     text: Talk to an adviser with years of teaching experience about how to choose the right course for you. Chat by phone, text or email, as little or as often as you need.
 calls_to_action:
-    find:
-      name: find
+  find:
+    name: find
 navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.
