@@ -414,7 +414,7 @@ GEM
     parser (3.3.6.0)
       ast (~> 2.4.1)
       racc
-    pg (1.5.4)
+    pg (1.5.9)
     prometheus-client (4.2.3)
       base64
     pry (0.14.2)
