@@ -91,6 +91,7 @@ Some useful resources include:
 * [GOV.UK style guide](https://www.gov.uk/guidance/style-guide/a-to-z)
 * [Department for Education style guide](https://design.education.gov.uk/design-system/style-guide)
 
+In some cases, policy teams may also ask us to word things in a certain way or include specific information. 
 ## Content Editing Info/Tips
 
 The majority of pages on the website are formatted in Markdown, which is a lightweight markup language designed for creating and formatting text.
