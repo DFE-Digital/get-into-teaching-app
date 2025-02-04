@@ -82,7 +82,7 @@ If you are looking to edit content associated with a form element in particular 
 
 It’s important that the content on Get Into Teaching uses a consistent tone of voice.
 
-When writing new content, you can look at the language we use on other pages to be able to keep it consistent. For example, we always refer to children in schools as pupils, rather than students.
+When writing new content, you can look at the language we use on other pages to help keep it consistent. For example, we always refer to children in schools as pupils, rather than students.
 
 Some useful resources include:
 
