@@ -92,7 +92,7 @@ Your school leadership team and colleagues will be there to support you. Your pl
 
 ## Are placements paid?
 
-For fee-funded postgraduate training, you can get financial support through student finance, or you may be eligible for bursaries or scholarships. This support is available for your whole training course, including school placements. 
+For fee-paying postgraduate training, you can get financial support through student finance, or you may be eligible for bursaries or scholarships. This support is available for your whole training course, including school placements. 
 
 For salaried teacher training, you’ll receive a salary throughout your teacher training, including placements. Because of this, your placement school may also be referred to as your ‘employing school’.
 
