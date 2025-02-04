@@ -57,7 +57,7 @@ routes:
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
-        answers: ["yes"]
+        answers: ["Yes"]
 
   - title: Undergraduate initial teacher training
     course_length: 3 to 4 years
