@@ -18,7 +18,8 @@ RUN apk update
 
 RUN apk add --no-cache \
   "procps-ng=4.0.4-r2" \
-  "libproc2=4.0.4-r2"
+  "libproc2=4.0.4-r2" \
+  "libwebp"
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
         postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
@@ -91,7 +92,8 @@ RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev &&
 
 RUN apk add --no-cache \
   "procps-ng=4.0.4-r2" \
-  "libproc2=4.0.4-r2"
+  "libproc2=4.0.4-r2" \
+  "libwebp"
 
 COPY --from=release-build /app /app
 COPY --from=release-build /usr/local/bundle/ /usr/local/bundle/
