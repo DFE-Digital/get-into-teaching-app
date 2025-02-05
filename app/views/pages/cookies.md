@@ -2,7 +2,7 @@
 title: Cookies Policy
 ---
 
-Last updated: 15 October 2024
+Last updated: 05 February 2025
 
 This Cookies Policy explains what Cookies are and how we use them. You should read this policy so you can understand what type of Cookies we use, or the information we collect using Cookies and how that information is used.
 
@@ -99,6 +99,7 @@ The information gathered via these Cookies may directly or indirectly identify y
 | `FPLC`                            | Registers a unique ID that is used to generate statistical data on how the visitor uses the website                                                         | 1 day                |
 | `FPID`                            | This cookie is used to recognise visitors                                                                                                                   | 13 months            |
 | `dax_listenerid`                  | This cookie name is associated with Global Dax and is used for campaign monitoring, reporting and optimisation when running digital audio activity          | 540 days             |
+| `receive-cookie-deprecation `     | Used by Google to track user activity across sites for advertising, analytics    | 6 months            |
 
 Table caption: Tracking and performance cookies we use
 
@@ -116,7 +117,7 @@ We place marketing tags on our pages to track the success of our content on each
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | `_pin_unauth`        | Used by Pinterest to collect information about how their visitors interact with the pages on the website to track the efficiency                                | 1 year        |
 | `sc_at`              | Used by Snapchat to deliver more relevant and meaningful adverts. Also used to track the efficiency                                                             | 12 months     |
-| `_scid`              | Used by Snapchat for tracking your actions, such as selecting recommended adverts. This information is used to make adverts more meaningful and relevant to you | 13 months     |
+| `_ar_bug`              |This cookie is used by Pintrest and DoubleClick to debug ads    | 1 month     |
 | `_gac_gb_76JLPNZBCP` | Used by Google Analytics and Google Ads to help us understand how you've interacted with advertising campaigns                                                  | 90 days       |
 | `_gcl_au`            | Used by Google Analytics and Google Ads to help us understand how you've interacted with advertising campaigns                                                  | 90 days       |
 | `_fbp`               | Used by Facebook to store and track your visits across websites                                                                                                 | 90 days       |
@@ -127,7 +128,7 @@ We place marketing tags on our pages to track the success of our content on each
 | `_rdt_uuid`          | This cookie is set by Reddit and is used for remarketing on reddit.com                                                                                          | 3 months      |
 | `_scid`              | Used by Snapchat for tracking your actions, such as selecting recommended adverts. This information is used to make adverts more meaningful and relevant to you | 1 month       |
 | `_scid_r`            | This cookie is used by Snapchat to assign a unique ID to a user                                                                                                 | 1 year        |
-| `X-AB`               | This cookie is associated with embedding content from Snapchat                                                                                                  | 1 day         |
+| `_ScCbts`              | This cookie is used by Snapchat for targeted advertising purposes                                                                                 | 6 days        |
 
 Table caption: Marketing cookies we use
 
