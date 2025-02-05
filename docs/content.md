@@ -167,6 +167,10 @@ The key (`"static/images/content/hero-images/0032.jpg"`) is the **primary** vari
 * `alt:` - the alt text for the image, wrapped in quotes
 * `variants` - a list of **other versions of the same image**. The alternate versions can be thumbnails or crops and are considered alternates if the same `alt` text can be applied to them as the primary variant
 
+#### Hero images
+
+Hero images are sized at 1000 pixels wide by 667 high and the mobile and tablet versions are 600 x 400 pixels. You can use a photo editiing site online such as Photopea to resize images.
+
 ### Calls to Action
 
 On some pages we want to include one or more calls to action; instead of copy/pasting the HTML for these sections we can specify and configure them in the frontmatter and then reference them in our content.
