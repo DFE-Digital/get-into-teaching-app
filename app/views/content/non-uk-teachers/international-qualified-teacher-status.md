@@ -12,7 +12,7 @@ cta_adviser:
 navigation: 20.50
 navigation_title: Get international qualified teacher status (iQTS)
 navigation_description: Train from anywhere in the world to get international qualified teacher status (iQTS), backed by England’s Department for Education.
-image: "static/images/content/hero-images/0034.jpg"
+image: "static/images/content/hero-images/peer-to-peer-collaboration.jpg"
 backlink: "../"
 keywords:
     - international
