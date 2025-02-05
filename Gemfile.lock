@@ -675,7 +675,7 @@ DEPENDENCIES
   brakeman (~> 6.2.2)
   byebug
   canonical-rails (>= 0.2.14)
-  capybara
+  capybara (~> 3.40.0)
   connection_pool
   delegate (>= 0.2.0)
   dfe-analytics!
