@@ -573,10 +573,11 @@ GEM
       rubocop (~> 1.61)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
-    rubyzip (2.3.2)
+    rubyzip (2.4.1)
     secure_headers (6.5.0)
-    selenium-webdriver (4.21.1)
+    selenium-webdriver (4.28.0)
       base64 (~> 0.2)
+      logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
@@ -652,7 +653,7 @@ GEM
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    websocket (1.2.10)
+    websocket (1.2.11)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -674,7 +675,7 @@ DEPENDENCIES
   brakeman (~> 6.2.2)
   byebug
   canonical-rails (>= 0.2.14)
-  capybara (~> 3.40.0)
+  capybara
   connection_pool
   delegate (>= 0.2.0)
   dfe-analytics!
@@ -737,7 +738,7 @@ DEPENDENCIES
   rspec-sonarqube-formatter!
   rubocop-govuk (~> 5.0.2)
   secure_headers
-  selenium-webdriver (~> 4.21.1)
+  selenium-webdriver
   sentry-rails (>= 5.10.0)
   sentry-ruby (~> 5.21.0)
   shakapacker (= 8.0.2)

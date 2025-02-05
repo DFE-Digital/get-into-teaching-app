@@ -143,8 +143,8 @@ group :development, :test do
   gem "knapsack"
   gem "rspec-rails", "~> 6.0.3"
 
-  # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 3.40.0"
+  # Adds support for Capybara system testing
+  gem "capybara"
   gem "factory_bot_rails", ">= 6.2.0"
   # See: https://github.com/otherguy/rspec-sonarqube-formatter/pull/63
   gem "rspec-sonarqube-formatter", github: "otherguy/rspec-sonarqube-formatter", ref: "13fe436", require: false
@@ -167,7 +167,7 @@ end
 
 group :test do
   gem "rspec-retry"
-  gem "selenium-webdriver", "~> 4.21.1"
+  gem "selenium-webdriver"
   gem "shoulda-matchers"
   gem "vcr"
   gem "webmock", ">= 3.14.0"
