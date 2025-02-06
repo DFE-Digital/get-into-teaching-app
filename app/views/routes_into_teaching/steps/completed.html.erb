@@ -59,7 +59,7 @@
               link_text: result.cta_text,
               link_target: result.cta_link,
               border_color: result.highlighted? ? "yellow" : "grey",
-              title: result.highlight_text
+              title: result.highlighted? ? result.highlight_text : nil
             ) %>
           </div>
         <% end %>
