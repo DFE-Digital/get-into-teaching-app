@@ -7,11 +7,12 @@ related_content:
     Train to teach if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree" 
     What to expect in teacher training: "/train-to-be-a-teacher/initial-teacher-training"
     Your teacher training application : "/how-to-apply-for-teacher-training/teacher-training-application"
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
 cta_adviser:
   adviser:
     text: Talk to an adviser with years of teaching experience about how to choose the right course for you. Chat by phone, text or email, as little or as often as you need.
+calls_to_action:
+  find:
+    name: find
 navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.
@@ -38,7 +39,7 @@ expander:
       If your application is successful, the training provider may be able to help you with applying for your visa. <a href="/non-uk-teachers/visas-for-non-uk-trainees">Find out how to apply for your visa to train to teach in England</a>.
       </p>
   fee-funded-teacher-training:
-    title: fee-funded teacher training
+    title: fee-paying teacher training
     text: |-
       <p>
       If you have settled status, refugee status, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you may be eligible for a tuition fee loan, maintenance loan, bursary or scholarship.
@@ -81,7 +82,7 @@ The main differences between courses are:
 
 * what you need to get onto the course
 * the qualifications awarded by the course
-* if the course is fee-funded or salaried 
+* if the course is fee-paying or salaried 
 * the type of course provider 
 * if the course is full-time or part-time 
 
@@ -105,11 +106,11 @@ Most teacher training courses will award QTS, but some will award QTS with a [po
 
 If your teacher training course leads to QTS, [you may be eligible for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries) to help you train.
 
-## If the course is fee-funded or salaried
+## If the course is fee-paying or salaried
 
-### Fee-funded teacher training
+### Fee-paying teacher training
 
-Most teacher training courses are fee-funded. This means you have to pay tuition fees and will not earn a salary while you train. 
+Most teacher training courses are fee-paying. This means you have to pay tuition fees and will not earn a salary while you train. 
 
 There are ways to fund your training, for example, through tuition fee and maintenance loans. You may also be eligible for a bursary or scholarship.
 
@@ -156,4 +157,5 @@ Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 mont
 
 [Find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
 
+$find$
 $adviser$

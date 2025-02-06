@@ -16,6 +16,12 @@
     }
   }
 
+  &.margin {
+    margin-top: 2em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   &__icon {
     background-color: $yellow;
     padding: 1em;
@@ -43,7 +49,7 @@
   }
 
   &__content {
-    padding: .5em 1em 1em;
+    padding: 1em;
 
     .call-to-action__heading,
     .call-to-action__text:first-child {
@@ -201,6 +207,8 @@
       }
     }
   }
+  
+  
 
   &--next-steps {
     position: relative;

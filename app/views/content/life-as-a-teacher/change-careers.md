@@ -6,7 +6,7 @@ image: "static/images/content/hero-images/physics.jpg"
 description: |-
    Find out what extra support you can get if you want a career change into teaching. Bring your skills and experience to life in the classroom.
 layout: "layouts/minimal"
-navigation: 40.25
+navigation: 40.30
 backlink: "../"
 content:
   - content/life-as-a-teacher/header
