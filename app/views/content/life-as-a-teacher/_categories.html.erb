@@ -14,6 +14,15 @@
         <ul>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
+              title: "Why teach",
+              description: "Find out about the many reasons why people choose to become a teacher in England.",
+              path: "/life-as-a-teacher/why-teach",
+              image: "static/images/content/hero-images/0036.jpg"
+            )) %>
+        </ul>
+        <ul>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
               title: "Teaching as a career",
               description: "Learn about the career progression in teaching, and the support available for early career teachers.",
               path: "/life-as-a-teacher/teaching-as-a-career",

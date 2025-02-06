@@ -30,8 +30,9 @@ keywords:
   - interviews
   - offers
   - teacher training application
-external_content:
-    - content/train-to-be-a-teacher/promos/apply-for-your-course
+calls_to_action:
+    apply:
+      name: apply
 cta_adviser:
   adviser:
     text: An adviser with years of teaching experience can help you with your personal statement. Chat by phone, text or email, as little or as often as you need.
@@ -121,7 +122,8 @@ You do not need school experience to apply for teacher training, but it can help
 
 Getting some school experience can also be a good way to make sure teaching is right for you before you apply for a course.
 
- [Find out how you could get school experience](/train-to-be-a-teacher/get-school-experience).
- 
+[Find out how you could get school experience](/train-to-be-a-teacher/get-school-experience).
 
-$adviser$ 
+$apply$
+$adviser$
+

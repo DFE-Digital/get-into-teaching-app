@@ -5,6 +5,8 @@ module RoutesIntoTeaching
     end
 
     def self.recommended(answers_hash = {})
+      return all if answers_hash.nil?
+
       all.select do |teaching_route|
         next false if teaching_route["matches"].blank?
 
