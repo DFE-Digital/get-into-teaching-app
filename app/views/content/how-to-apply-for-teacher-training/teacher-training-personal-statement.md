@@ -73,7 +73,7 @@ $q-Josie$
 
 ## How to write your teacher training personal statement
 
-Teacher training personal statements can be up to 1000 words. 90% of successful candidates write 500 words or more.
+Teacher training personal statements can be up to 1000 words. Writing 800 words or more will allow you to go into more detail about why you want to become a teacher.
 
 It can take time to write a good personal statement, but you do not have to write it in one go. A teacher training adviser can help you structure your personal statement so you can write it in manageable sections. 
 
