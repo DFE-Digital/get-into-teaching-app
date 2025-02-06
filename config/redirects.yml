@@ -503,4 +503,7 @@ redirects:
   "/life-as-a-teacher/teaching-as-a-career/becoming-a-parent-sparked-my-interest-in-teaching":  "/life-as-a-teacher/change-careers/becoming-a-parent-sparked-my-interest-in-teaching"
   "/life-as-a-teacher/teaching-as-a-career/making-a-career-change-to-teaching": "/life-as-a-teacher/change-careers/making-a-career-change-to-teaching"
   "/life-as-a-teacher/teaching-as-a-career/a-day-in-the-life-of-a-teacher": "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
+
+  # Incorrect inbound links
+  "/train-to-be-a-teacher/teacher-degree-apprenticeships.": "/train-to-be-a-teacher/teacher-degree-apprenticeships"
   
