@@ -97,6 +97,15 @@ routes:
         answers: ["*"]
       - question: location
         answers: ["No"]
+    highlight:
+      text: "Outside England"
+      matches:
+        - question: undergraduate_degree
+          answers: ["Yes"]
+        - question: unqualified_teacher
+          answers: ["*"]
+        - question: location
+          answers: ["*"]
 
   - title: Teacher degree apprenticeship
     course_length: 4 years
