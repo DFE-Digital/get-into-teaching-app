@@ -82,8 +82,6 @@ Depending on your responsibilities, you could earn up to an extra $salaries_tlr_
 
 Teachers who [take on a special educational needs and disabilities (SEND) role](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs) may also receive additional payments. These are known as SEN allowances.
 
-<a name="career-progression"></a>
-
 ## Career progression
 
 ### Leading practitioner salary
