@@ -325,7 +325,7 @@ If using this component for non-UK content:
 * always use the purple colour (or purple-white on a grey background) 
 * the header must be ‘Non-UK citizens:’ 
 
-If the content is for a specific group of non-UK citizens, for example, 'Refugees and asylum seekers' you can change the header. If you change the header to anything other that 'Non-UK citizens', you may need to manually add a colon after the header text, to do this, add quotation marks around the content and colon.
+If the content is for a specific group of non-UK citizens, for example, 'Refugees and asylum seekers' you can change the header. If you change the header to anything other than 'Non-UK citizens', you may need to manually add a colon after the header text, to do this, add quotation marks around the content and colon.
 
 If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the details expander.  
 
