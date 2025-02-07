@@ -47,7 +47,7 @@ RSpec.feature "Integration tests", :integration, :js, type: :feature do
     click_label "Yes, I already have a degree"
     click_on "Next step"
 
-    expect(page).to have_text("How close are you to applying for teacher training?")
+    expect(page).to have_text("How interested are you in applying for teacher training?")
     click_label "I’m not sure and finding out more"
     click_on "Next step"
 
