@@ -11,11 +11,14 @@ related_content:
     Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     Train to be a teacher if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Teacher training : "/train-to-be-a-teacher/initial-teacher-training"
-promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 calls_to_action:
   find:
     name: find
+cta_mailinglist:
+  mailinglist:
+    text: Get helpful guidance and support on getting into teaching, including how to get the qualifications you need.
+promo_content:
+    - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 expander:
   check-your-qualifications:
     title: check your qualifications
@@ -88,3 +91,4 @@ You can do a subject knowledge enhancement course before or sometimes during you
 [Find out more about subject knowledge enhancement courses](/how-to-apply-for-teacher-training/subject-knowledge-enhancement).
 
 $find$
+$mailinglist$
