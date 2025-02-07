@@ -16,6 +16,7 @@ calls_to_action:
     name: find
 cta_mailinglist:
   mailinglist:
+    text: Get helpful guidance and support on getting into teaching, including how to get the qualifications you need.
 expander:
   check-your-qualifications:
     title: check your qualifications
