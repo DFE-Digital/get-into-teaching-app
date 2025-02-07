@@ -510,7 +510,7 @@ en:
             date_of_birth:
               blank: "You need to enter your date of birth"
               on_or_before: "You must be 18 years or older to use this service"
-              on_or_after: "You must be less than 70 years old"
+              on_or_after: "You must be less than 99 years old"
               invalid: "You did not enter a valid date of birth"
 
         funding_widget:
