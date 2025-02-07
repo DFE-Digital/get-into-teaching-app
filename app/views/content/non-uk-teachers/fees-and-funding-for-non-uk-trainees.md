@@ -10,7 +10,7 @@ promo_content:
 navigation: 20.20
 navigation_title: Fees and financial support for non-UK trainee teachers
 navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
-image: "static/images/content/hero-images/0034.jpg"
+image: "static/images/content/hero-images/peer-to-peer-guidance.jpg"
 backlink: "../../"
 expander:
   refugees-asylum-seekers:
