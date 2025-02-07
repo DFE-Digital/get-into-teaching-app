@@ -7,7 +7,7 @@ module RoutesIntoTeaching
     def self.all(route_finder: nil)
       routes = YAML.load_file(ROUTES_CONFIG_PATH)["routes"]
 
-      routes.map { |route| self.new(route, route_finder) }
+      routes.map { |route| new(route, route_finder) }
     end
 
     def initialize(route, route_finder = nil)
@@ -27,7 +27,7 @@ module RoutesIntoTeaching
     def highlighted?
       return false unless @route_finder && @highlight
 
-      self.highlight["matches"].all? do |rule|
+      highlight["matches"].all? do |rule|
         question_id = rule["question"]
         matching_answers = rule["answers"]
 
