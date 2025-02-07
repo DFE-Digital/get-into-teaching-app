@@ -1,4 +1,10 @@
-<%= render CallsToAction::MailinglistComponent.new(
-  text: "Talk to an adviser with years of teaching experience about your different training and funding options. Chat through phone, text or email, as little or as often as you need.",
-  border: "adviser--border-top"
-) %>
+<%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
+  <% promo.with_left_section(classes: %w[ml-background]) %>
+  <% promo.with_right_section(
+    heading: "Find out more about getting into teaching"
+  ) do %>
+      <p>Get helpful guidance and support on getting into teaching, including how to get the qualifications you need.</p>
+
+      <%= link_to("Get tailored guidance in your inbox", "/mailinglist/signup/name", class: "button") %>
+  <% end %>
+<% end %>
