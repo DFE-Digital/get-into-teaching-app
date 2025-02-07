@@ -40,7 +40,7 @@ expander:
     link_url: /non-uk-teachers/non-uk-qualifications
 ---
 
-If you have a degree and are interested in gaining a qualification in education, you may want to do a postgraduate certificate in education (PGCE).
+If you have a bachelor's degree and are interested in gaining a qualification in education, you may want to do a postgraduate certificate in education (PGCE).
 
 You can get a postgraduate certificate in education through teacher training. A PGCE can help you develop your [teaching skills and knowledge](/life-as-a-teacher/teaching-as-a-career/skills-to-teach).
 
@@ -90,7 +90,7 @@ You can also do a PGCE without QTS in [further education](/life-as-a-teacher/age
 
 ### Entry requirements
 
-Entry requirements for a postgraduate teacher training course usually include an undergraduate degree or equivalent qualification.
+Entry requirements for a postgraduate teacher training course usually include an bachelor's degree or equivalent qualification.
 
 You also need the following GCSEs at grade 4 (C) or above, or equivalent qualifications:
 
