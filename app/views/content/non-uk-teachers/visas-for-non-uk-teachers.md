@@ -69,7 +69,7 @@ keywords:
   - Settlement Scheme
 ---
 
-## Visas for non-UK teachers
+## How to apply for your visa
 
 If you’re applying for teaching jobs in England as a non-UK citizen, you will need a [visa or immigration status allowing you to work in England](#check-your-status).
 
