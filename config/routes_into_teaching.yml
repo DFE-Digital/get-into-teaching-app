@@ -32,7 +32,7 @@ routes:
       text: "Most popular route"
       matches:
         - question: undergraduate_degree
-          answers: ["Yes"]
+          answers: ["Yes", "Not yet"]
         - question: unqualified_teacher
           answers: ["No"]
         - question: location
