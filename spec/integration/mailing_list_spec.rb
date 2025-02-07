@@ -80,7 +80,7 @@ RSpec.feature "Integration tests", :integration, :js, type: :feature do
     click_label "Not yet, I'm a first year student"
     click_on "Next step"
 
-    expect(page).to have_text("How close are you to applying")
+    expect(page).to have_text("How interested are you in applying")
     click_label "I’m not sure and finding out more"
     click_on "Next step"
 
