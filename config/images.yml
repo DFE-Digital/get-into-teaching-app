@@ -236,7 +236,7 @@
     - "static/images/content/hero-images/maths-volumes2--tablet.jpg"
 
 "static/images/content/hero-images/music-ukuleles.jpg":
-  alt: "A music teacher with pupils showing them how to use ukeleles"
+  alt: "A music teacher with pupils showing them how to play a ukelele"
   variants:
     - "static/images/content/hero-images/music-ukuleles--mobile.jpg"
     - "static/images/content/hero-images/music-ukuleles--tablet.jpg"
