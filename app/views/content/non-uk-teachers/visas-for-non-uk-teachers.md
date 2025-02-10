@@ -1,15 +1,15 @@
 ---
-title: "Apply for your visa to teach in England"
+title: "Visas for non-UK teachers"
 subcategory: If you're already a teacher
 description: |-
-  Learn more about types of visa non-UK citizens will need to work in England, and how to apply.
+  Learn more about types of visas non-UK citizens will need to work in England, and how to apply.
 related_content:
     Teach in England if you trained outside the UK: " /non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     What it's like to be a teacher : "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
 promo_content:
 navigation: 20.60
-navigation_title: Apply for your visa to teach
+navigation_title: Visas for non-UK teachers
 navigation_description: Find out more about which visa you'll need to teach in England and how to apply.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
