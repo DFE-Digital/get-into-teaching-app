@@ -104,7 +104,7 @@ Advisers can support you with:
 
 * what to include in your statement
 
-* how to structure your statement so you can write it in managable sections
+* how to structure your statement so you can write it in manageable sections
 
 * developing your own voice in your statement  
 
