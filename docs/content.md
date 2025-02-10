@@ -17,7 +17,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Calls to Action](#calls-to-action)
     * [Adviser (CTA) component](#adviser-cta-component)
     * [Routes (CTA) component](#routes-cta-component)
-    * [Mailing list (CTA) component](#mailinglist-cta-component)
+    * [Mailing list (CTA) component](#mailing-list-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
