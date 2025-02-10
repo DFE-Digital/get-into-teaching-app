@@ -10,7 +10,7 @@ module RoutesIntoTeaching
     def recommended
       return @routes if @answers.nil?
 
-      routes = @routes.select do |route|
+      recommended_routes = @routes.select do |route|
         next false if route.matches.blank?
 
         route.matches.all? do |matching_rule|
@@ -21,7 +21,7 @@ module RoutesIntoTeaching
         end
       end
 
-      routes.partition(&:highlighted?).flatten
+      recommended_routes.partition(&:highlighted?).flatten
     end
   end
 end
