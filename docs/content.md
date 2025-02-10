@@ -287,6 +287,8 @@ When adding an iFrame elemet as part of Markdown content or a HTML page we shoul
 
 If you need to call out something important in a page and differentiate it from the surrounding text, you can use the inset or expander components. Specify the component in the frontmatter and then include it anywhere in the page. We use the purple colour for non-UK content and the purple-white colour for non-UK content on a grey background.
 
+#### Inset text for non-UK content
+
 You do not need to include both a heading and title in the inset text.
 
 ```yaml
@@ -313,7 +315,6 @@ If you need to insert an inset text component in an erb file:
   ) %>
 ```
 
-
 Use this component for non-UK content when:  
 
 * it will be the only non-UK component on the page  
@@ -327,12 +328,12 @@ If using this component for non-UK content:
 
 If the content is for a specific group of non-UK citizens, for example, 'Refugees and asylum seekers' you can change the header. If you change the header to anything other than 'Non-UK citizens', you may need to manually add a colon after the header text, to do this, add quotation marks around the content and colon.
 
-If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the details expander.  
+If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the expander.  
 
 
-### Details expander for non-UK content
+#### Expander for non-UK content
 
-You can use the details expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
+You can use the expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
 
 ```yaml
 ---
