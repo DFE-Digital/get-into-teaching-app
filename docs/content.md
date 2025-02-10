@@ -169,7 +169,7 @@ The key (`"static/images/content/hero-images/0032.jpg"`) is the **primary** vari
 
 #### Hero images
 
-Hero images are sized at 1000 pixels wide by 667 high and the mobile and tablet versions are 600 x 400 pixels. You can use a photo editiing site online such as Photopea to resize images.
+Hero images are sized at 1000 pixels wide by 667 high and the mobile and tablet versions are 600 x 400 pixels. You can use a photo editing site online such as Photopea to resize images.
 
 ### Calls to Action
 
