@@ -17,6 +17,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Calls to Action](#calls-to-action)
     * [Adviser (CTA) component](#adviser-cta-component)
     * [Routes (CTA) component](#routes-cta-component)
+    * [Mailing list (CTA) component](#mailinglist-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
@@ -502,18 +503,44 @@ cta_routes:
     classes: ["class1", "class2", "class3"]
     border: true
 ---
+```
+
+### Mailing list (CTA) component
+
+You can use the Mailing list (Call to Action) component to create a call to action to invite users to sign up to the mailing list. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
+
+* title
+* text
+* image
+* link_text
+* link_target
+* classes
+* border
+
+```yaml
+---
+cta_mailinglist:
+  mailinglist:
+    title: "Optional title"
+    text: "Optional text"
+    image: "static/images/routes.png"
+    link_text: "Optional link text"
+    link_target: "/optional/path"
+    classes: ["class1", "class2", "class3"]
+    border: true
+---
 
 # My page
 
-$adviser$
+$mailinglist$
 ```
-Alternatively, if you need to insert an routes component in an erb file, you can call it like this:
+Alternatively, if you need to insert a mailing lists component in an erb file, you can call it like this:
 
 ```yaml
-<%= render CallsToAction::RoutesComponent.new(
+<%= render CallsToAction::MailinglistComponent.new(
   title: "Optional title",
   text: "Optional text",
-  image: "static/images/routes.png",
+  image: "static/images/image.jpg",
   link_text: "Optional link text",
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
