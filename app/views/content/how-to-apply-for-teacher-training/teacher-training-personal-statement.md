@@ -41,73 +41,91 @@ quote:
     text: "Having a teacher training adviser was really beneficial when editing my personal statement and preparing for interviews. My top tips for the application process would be to get an adviser, and to think about what transferrable skills you have when writing your personal statement and answering interview questions."
     name: "Felix, former teacher trainee"
     classes: quote--indent
-
+  q-Josie: 
+    text: "Provided they have a good overall application and the right qualifications, most candidates who come to us for help with their personal statement will go on to get an interview." 
+    name: "Josie, teacher training adviser" 
+    classes: quote--indent 
 ---
 
 
-Your personal statement is your chance to make yourself memorable with teacher training providers and show them why you'll make a great teacher.
+A teacher training personal statement is a professional document that you’ll submit as part of your postgraduate teacher training application.
 
-You do not have to write it all at once – you can start it and come back to it. Successful candidates often take a few weeks to write their personal statements.
+Your personal statement is your chance to make yourself memorable with teacher training providers.
 
-## How long should my teacher training personal statement be? 
+You can use it to show:
 
-Your personal statement can be up to 1000 words. 90% of successful candidates write 500 words or more.
+* why you want to teach  
 
-## What should I write about in my personal statement?
+* why you’ll make a great teacher  
 
-Your personal statement should include:
+## How to write your teacher training personal statement
 
-* why you want to be a teacher
+Teacher training personal statements can be up to 1000 words. Writing 800 words or more will allow you to go into more detail about why you want to become a teacher.
 
-* why you want to teach the subject or specialism you're applying for - if you're applying for primary, describe why you want to teach this age group
+Your personal statement is your chance to make a good first impression with providers. Checking your spelling and grammar will show your attention to detail and that you care about your application.
 
-* the experience and personal characteristics you have, and why they would make you a great teacher 
+### What to include in your personal statement
 
-You can include any information you think is relevant to demonstrate your knowledge, qualifications, and experience. Teacher training providers want to see your passion and that you understand what a career in teaching involves.
+You can include any information you think is relevant to demonstrate your knowledge and experience.
 
-### How to write your personal statement
+As well as showing your passion for teaching, your statement should include:
 
-When writing your personal statement you should make sure you check your spelling and grammar in your application. You want to make the best possible impression.
+* evidence of research and understanding of the role of a teacher and the national curriculum
 
-You can use ChatGPT or other artificial intelligence (AI) tools to help you write your personal statement. You should not rely on it to write your entire statement because:
+* relevant experience, especially if you've worked with young people before
 
-* AI tools use bland language and will not be able to give details about you as a person. Using them may result in your application being unsuccessful
+* transferable skills and how you can bring these skills into the classroom
 
-* your account to apply for teacher training may be blocked if you consistently submit personal statements that look like they have been written with AI tools
+* why you want to teach your chosen subject and examples of how you’ll do this
 
+### Using AI to help write a personal statement
 
-## Do I use the same personal statement for each application?
+You should not rely on ChatGPT or other artificial intelligence (AI) tools to write your personal statement for you. AI tools use bland language and produce generic results which will not make your statement personal to you.
 
-You can use the same personal statement for every course you apply to.
+AI tools are useful for structuring a personal statement or for giving you ideas for what to include. But being overly reliant on AI tools to write your personal statement may result in your application being unsuccessful.
 
-However, there may be some instances where you'd like to tailor it to different courses.
+Your account to apply for teacher training may be blocked if you consistently submit personal statements that look like they have been written solely by AI tools.
 
-For example, if you want to apply to train to teach maths and also to train to teach physics. In this case, you might want to change your personal statement to talk more specifically about the subject you're applying to train to teach.
+### Tailoring your personal statement
 
-## Should my personal statement be different if I’m training to teach primary or secondary? 
+You can use the same personal statement for every course you apply for. There may be some instances where you’d like to tailor it to different courses.
 
-You should use your personal statement to explain why you feel passionate about teaching a specific age range or subject. 
+You can use your personal statement to explain why you feel passionate about teaching a specific age range or subject. You might also want to include why you want to do your teaching training with a particular provider.
 
-If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can talk about that, too. 
+If you’re applying for a primary course with a subject specialism, or you’re particularly interested in certain primary subjects, you can include that in your statement.
 
-If you’re not sure if you want to teach primary or secondary, you can [find out more about teaching different age groups](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach). 
+If you’re not sure if you want to teach primary or secondary, you can [find out more about teaching different age groups](/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach).
 
-## Do I need school experience? 
+## Get help with your personal statement
 
-You do not need school experience to apply for teacher training, but it can help strengthen your personal statement. 
+Writing a personal statement can feel daunting, but our teacher training advisers can help. 
 
-Teacher training providers like to see that you have a good understanding of teaching, how the school system works and what your transferable skills are. You need more than just good subject knowledge and school experience can be a great way to get this. 
+Advisers can support you with:
 
-Getting some school experience can also be a good way to make sure teaching is right for you before you apply for a course. 
+* what to include in your statement
 
-[Find out how you could get school experience](/train-to-be-a-teacher/get-school-experience). 
+* how to structure your statement so you can write it in manageable sections
 
-## Get help with your personal statement 
+* developing your own voice in your statement  
 
-You can get help with your personal statement from our [teacher training advisers](/teacher-training-advisers). They have years of teaching experience and can give you free, one-to-one support by phone, text, or email. 
+$q-Josie$ 
 
-Advisers can also help you understand more about what teaching is really like, which can help improve your application. 
+You can get help with your personal statement from our teacher training advisers. They have years of teaching experience and can give you free, one-to-one support by phone, text, or email.
+
+Advisers can also help you understand more about what teaching is really like, which can help improve your application.
+
+Find out more about how [teacher training advisers](/teacher-training-advisers) can help you with your personal statement. 
 
 $q-Felix$
+
+## Get school experience
+
+You do not need school experience to apply for teacher training, but it can help strengthen your personal statement.
+
+Getting some school experience can also be a good way to make sure teaching is right for you before you apply for a course.
+
+[Find out how you could get school experience](/train-to-be-a-teacher/get-school-experience).
+
 $apply$
 $adviser$
+
