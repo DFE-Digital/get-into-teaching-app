@@ -17,8 +17,9 @@ calls_to_action:
           Use our service to search for and organise school experience in England.
         link_text: "Search for school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
-promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo
+cta_mailinglist:
+  mailinglist:
+    text: Find out about nearby events, what teaching is really like, and how to get one-to-one support.
 navigation: 20.25
 navigation_title: Get school experience
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
@@ -105,3 +106,5 @@ Working in wraparound gives you experience working with children and in a school
 Once you have completed your school experience, you can decide if you want to [apply for teacher training in England](/how-to-apply-for-teacher-training/teacher-training-application) and get qualified teacher status (QTS). 
 
 [Find out more about the benefits of getting QTS](/train-to-be-a-teacher/what-is-qts).
+
+$mailinglist$
