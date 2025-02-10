@@ -57,7 +57,7 @@ routes:
       - question: unqualified_teacher
         answers: ["*"]
       - question: location
-        answers: ["*"]
+        answers: ["Yes"]
 
   - title: Undergraduate initial teacher training
     course_length: 3 to 4 years
@@ -92,7 +92,7 @@ routes:
   - title: Teacher degree apprenticeship
     course_length: 4 years
     course_fee: "No"
-    funding: These courses pay a salary but bursaries, scholarships and student loans are not available
+    funding: "No"
     description: The teacher degree apprenticeship (TDA) is a teacher training programme where you’ll work in a school and earn a salary while getting a bachelor’s degree and qualified teacher status (QTS). The teacher training providers confirmed so far offer TDAs in secondary maths. TDAs in other subjects will be added throughout the year, up until September 2025, with training due to start in autumn 2025.
     cta_text: Find out more about teacher degree apprenticeships
     cta_link: /train-to-be-a-teacher/teacher-degree-apprenticeships

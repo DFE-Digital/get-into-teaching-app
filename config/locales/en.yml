@@ -787,7 +787,7 @@ en:
       events_steps_personalised_updates:
         address_postcode: What's your UK postcode? (optional)
         degree_status_id: Do you have a degree?
-        consideration_journey_stage_id: How close are you to applying for teacher training?
+        consideration_journey_stage_id: How interested are you in applying for teacher training?
         preferred_teaching_subject_id: Select the subject you're most interested in teaching
 
       callbacks_steps_personal_details:
@@ -807,7 +807,7 @@ en:
       mailing_list_steps_degree_status:
         degree_status_id: Do you have a degree?
       mailing_list_steps_teacher_training:
-        consideration_journey_stage_id: How close are you to applying for teacher training?
+        consideration_journey_stage_id: How interested are you in applying for teacher training?
       mailing_list_steps_subject:
         preferred_teaching_subject_id: Select the subject you're most interested in teaching
       mailing_list_steps_postcode:

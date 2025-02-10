@@ -1,0 +1,18 @@
+<%= tag.div(class: "mailinglist--border-top") if border %>
+<%= tag.div class: classes do %>
+  <div class="mailinglist__left">
+    <%= image_pack_tag(image,
+                     **helpers.image_alt_attribs_for_text(""),
+                     class: "mailinglist__image")
+    %>
+  </div>
+
+  <div class="mailinglist__right">
+    <h2 class="heading-l">
+      <%= tag.span title if title.present? %>
+    </h2>
+    <%= tag.p text, class: 'mailinglist__text' if text.present? %>
+    <p></p>
+    <%= link_to link_text, link_target, class: "button", role: "button", data: { "promo-type": "mailinglist" } if link_text.present? && link_target.present? %>
+  </div>
+<% end %>

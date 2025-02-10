@@ -6,11 +6,14 @@ description: |-
 related_content:
     Explore the benefits of teaching: "/life-as-a-teacher/pay-and-benefits"
     If you've worked as an unqualified teacher: "/train-to-be-a-teacher/assessment-only-route-to-qts"
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about salaried teacher training. Chat by phone, text or email, as little or as often as you need."
+calls_to_action:
+  find:
+    name: find
+    arguments:
+      title: "Find a salaried teacher training course"
 navigation: 20.20
 navigation_description: Find out about School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 keywords:
@@ -115,4 +118,5 @@ Teach First delivers a 2 year employment-based route to teaching for high perfor
 
 To apply and find out more, you should [visit the Teach First website](https://www.teachfirst.org.uk/).
 
+$find$
 $adviser$

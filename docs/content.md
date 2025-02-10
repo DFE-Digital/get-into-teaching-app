@@ -4,8 +4,9 @@ This documentation aims to be a reference for content editors that want to make 
 
 ## Table of Contents
 
-* [Setting up Codespaces and Github](#getting-started)
+* [Setting up Codespaces and Github](#setting-up-codespaces-and-github)
 * [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
+* [Tone of voice](#tone-of-voice)
 * [Content Editing Tips/Info](#content-editing-tips-info)
     * [Headings](#headings)
     * [Frontmatter](#frontmatter)
@@ -16,6 +17,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Calls to Action](#calls-to-action)
     * [Adviser (CTA) component](#adviser-cta-component)
     * [Routes (CTA) component](#routes-cta-component)
+    * [Mailing list (CTA) component](#mailing-list-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
@@ -59,8 +61,6 @@ You will need to download and set up an account on Github and Visual Studio Code
 - In the folders, blue arrow icons are the pages and the content, the red <> icons are components
 - Markdown tutorial is useful when learning to write content in Github https://www.markdowntutorial.com/
 
-
-
 ## Finding a Page/Content to Edit
 
 When you want to edit content on the website the first step is to find out where that content resides in the [repository](https://github.com/DFE-Digital/get-into-teaching-app).
@@ -79,6 +79,20 @@ If you can't find a corresponding file in the [/app/views/content](https://githu
 
 If you are looking to edit content associated with a form element in particular (for example, a label for a text input) then  you should look in the [translations file](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/config/locales/en.yml). It's important to only change the text content in this file and not the Yaml keys that identify the content.
 
+## Tone of voice
+
+It’s important that the content on Get Into Teaching uses a consistent tone of voice.
+
+When writing new content, you can look at the language we use on other pages to help keep it consistent. For example, we always refer to children in schools as pupils, rather than students.
+
+Some useful resources include:
+
+* GIT brand book and messaging matrix (available on Sharepoint)
+* [accessibility content guidance](#accessibility)
+* [GOV.UK style guide](https://www.gov.uk/guidance/style-guide/a-to-z)
+* [Department for Education style guide](https://design.education.gov.uk/design-system/style-guide)
+
+In some cases, policy teams may also ask us to word things in a certain way or include specific information. Unless there are commercial reasons why we need to use certain language, we can amend requested wording as needed to be consistent with the Get Into Teaching tone of voice.
 ## Content Editing Info/Tips
 
 The majority of pages on the website are formatted in Markdown, which is a lightweight markup language designed for creating and formatting text.
@@ -493,18 +507,44 @@ cta_routes:
     classes: ["class1", "class2", "class3"]
     border: true
 ---
+```
+
+### Mailing list (CTA) component
+
+You can use the Mailing list (Call to Action) component to create a call to action to invite users to sign up to the mailing list. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
+
+* title
+* text
+* image
+* link_text
+* link_target
+* classes
+* border
+
+```yaml
+---
+cta_mailinglist:
+  mailinglist:
+    title: "Optional title"
+    text: "Optional text"
+    image: "static/images/routes.png"
+    link_text: "Optional link text"
+    link_target: "/optional/path"
+    classes: ["class1", "class2", "class3"]
+    border: true
+---
 
 # My page
 
-$adviser$
+$mailinglist$
 ```
-Alternatively, if you need to insert an routes component in an erb file, you can call it like this:
+Alternatively, if you need to insert a mailing lists component in an erb file, you can call it like this:
 
 ```yaml
-<%= render CallsToAction::RoutesComponent.new(
+<%= render CallsToAction::MailinglistComponent.new(
   title: "Optional title",
   text: "Optional text",
-  image: "static/images/routes.png",
+  image: "static/images/image.jpg",
   link_text: "Optional link text",
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
@@ -844,8 +884,8 @@ keywords:
   - maths
   - science
 content: 
-  - "content/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching/header" 
-  - "content/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching/article"
+  - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/header" 
+  - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/article"
   - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
 ---
 ```
@@ -860,7 +900,7 @@ And copy and paste an exiting card such as:
     OpenStruct.new(
       title: "Abigail's favourite things about teaching",
       description: "Hear what Abigail enjoys most about teaching, and the impact she has through her job.   ",
-      path: "/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching",
+      path: "/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching",
       image: "static/images/content/case-studies/abigail.jpg"
     )) %>
 </ul>

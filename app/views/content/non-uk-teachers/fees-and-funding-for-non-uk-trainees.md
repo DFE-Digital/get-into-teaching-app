@@ -115,7 +115,7 @@ There are 2 types of financial support you can get if you want to train to teach
 * bursaries worth $bursaries_postgraduate_languagesfrenchgermanspanish$ for languages, and $bursaries_postgraduate_physics$ for physics
 * scholarships worth $scholarships_languagesfrenchgermanspanish$ for French, German and Spanish, and $scholarships_physics$ for physics
 
-Bursaries are tax-free payments from the UK government that are paid by your training provider. Scholarships are tax-free payments from independent organisations. You do not have to pay back a bursary or scholarship. 
+Bursaries and scholarships are tax-free payments from the UK government that are paid by your initial teacher training provider. You do not have to pay back a bursary or scholarship. 
 
 If you are going to get a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
 
