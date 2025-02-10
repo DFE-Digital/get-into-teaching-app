@@ -14,7 +14,7 @@ youtube_video:
 navigation: 20.10
 navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
-image: "static/images/content/hero-images/0034.jpg"
+image: "static/images/content/hero-images/peer-to-peer-collaboration.jpg"
 backlink: "../../"
 expander:
   refugees-asylum-seekers:

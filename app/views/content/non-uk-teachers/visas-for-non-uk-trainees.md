@@ -11,7 +11,7 @@ promo_content:
 navigation: 20.30
 navigation_title: Visas for non-UK trainee teachers
 navigation_description: Learn more about applying for a Student or Skilled Worker visa to train to teach in England.
-image: "static/images/content/hero-images/0034.jpg"
+image: "static/images/content/hero-images/0031.jpg"
 backlink: "../../"
 expander:
   ukraine-visas:

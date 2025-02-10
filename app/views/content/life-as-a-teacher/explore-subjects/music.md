@@ -9,7 +9,7 @@ description: |-
     Find out how to become a music teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/hero-images/0031.jpg"
+image: "static/images/content/hero-images/music-ukuleles.jpg"
 keywords:
   - music
   - teaching music

@@ -82,7 +82,7 @@ private
 
   def image
     {
-      image: "static/images/homepage/science-teacher.jpg",
+      image: "static/images/homepage/science-teacher2.jpg",
     }
   end
 
