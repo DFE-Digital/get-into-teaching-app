@@ -25,8 +25,6 @@ module Events
 
         add_attendee_to_event
 
-        # byebug
-
         @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
       end
     end
