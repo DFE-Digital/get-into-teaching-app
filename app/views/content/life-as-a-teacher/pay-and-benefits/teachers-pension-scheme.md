@@ -6,7 +6,7 @@ description: |-
 image: false
 cta_mailinglist:
   mailinglist:
-    text: Explore more benefits of teaching, and learn what it's really like to be in the classroom.
+    text: Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.
 related_content:
     Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     Steps to become a teacher : "/steps-to-become-a-teacher"

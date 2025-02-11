@@ -5,7 +5,7 @@ description: |-
   Explore the key stages and ages you could teach, whether that's primary, secondary, early years, college, or pupils with special educational needs.
 cta_mailinglist:
   mailinglist:
-    text: Explore how you can get into teaching primary or secondary, including top tips on making a successful application.
+    text: Get free guidance and support on getting into teaching, including learning more about the age groups you could teach.
 ---
 
 It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. You might need specific training or qualifications in some areas. This page explains more about the different options.

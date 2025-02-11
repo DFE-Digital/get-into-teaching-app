@@ -9,7 +9,7 @@ navigation_title: What to expect in teacher training
 navigation_description: Find out what your teacher training will be like, what you'll learn, and what classroom experience you'll get.
 cta_mailinglist:
   mailinglist:
-    text: Discover how you can apply for teacher training, including top tips on writing a successful application.
+    text: Get free guidance and support on getting into teaching, including top tips on writing a successful application.
 related_content:
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Training and support for early career teachers : "/life-as-a-teacher/teaching-as-a-career/early-career-teachers"

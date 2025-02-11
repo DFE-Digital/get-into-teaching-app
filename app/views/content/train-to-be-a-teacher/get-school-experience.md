@@ -19,7 +19,7 @@ calls_to_action:
         link_target: "https://schoolexperience.education.gov.uk/"
 cta_mailinglist:
   mailinglist:
-    text: Find out about nearby events, what teaching is really like, and how to get one-to-one support.
+    text: Get free guidance and support on getting into teaching, including learning more about what teaching is like.
 navigation: 20.25
 navigation_title: Get school experience
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.

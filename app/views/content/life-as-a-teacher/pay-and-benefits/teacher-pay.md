@@ -6,7 +6,7 @@ description: |-
 backlink: "../../"
 cta_mailinglist:
   mailinglist:
-    text: Explore more benefits of teaching, and learn what it's really like to be in the classroom.
+    text: Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
