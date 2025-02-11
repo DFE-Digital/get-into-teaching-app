@@ -20,7 +20,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
-    * [Insets and expander components for non-UK content](#inset-expander-components)
+    * [Insets and expander components for non-UK content](#insets-and-expander-components-for-non-uk-content)
     * [Creating a partial](#creating-a-partial)
     * [YouTube Video](#youtube-video)
     * [Hero](#hero)
