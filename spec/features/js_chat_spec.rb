@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Javascript Chat" do #, :js, type: :feature do
+RSpec.feature "Javascript Chat", type: :feature do
   include_context "when requesting a page with the Get Into Teaching events badge"
 
   before do
@@ -16,7 +16,7 @@ RSpec.feature "Javascript Chat" do #, :js, type: :feature do
         .to_return(status: 200, body: "{\"skillid\": 123456,	\"available\": true, \"status_age\": 123 }")
     end
 
-    pending "viewing the chat section of the talk to us component" do
+    scenario "viewing the chat section of the talk to us component", pending: "rewrite as a frontend JS test" do
       visit root_path
       dismiss_cookies
 
@@ -38,7 +38,7 @@ RSpec.feature "Javascript Chat" do #, :js, type: :feature do
         .to_return(status: 200, body: "{\"skillid\": 123456,	\"available\": false, \"status_age\": 123 }")
     end
 
-    pending "viewing the chat section of the talk to us component" do
+    scenario "viewing the chat section of the talk to us component", pending: "rewrite as a frontend JS test" do
       visit root_path
       dismiss_cookies
 
