@@ -29,7 +29,7 @@ routes:
       - question: location
         answers: ["*"]
     highlight:
-      text: "Most popular route"
+      text: "Popular choice"
       matches:
         - question: undergraduate_degree
           answers: ["Yes", "Not yet"]
