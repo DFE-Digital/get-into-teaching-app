@@ -764,7 +764,7 @@ To be eligible, you need all of the following:
 
 * to be able to show you meet the [teachers' standards](https://www.gov.uk/government/publications/teachers-standards) without any more training
 * to have worked in 2 or more schools
-* a bachelor's degree
+* a degree
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 
 Specific entry criteria may vary by teacher training provider. You should ask them about eligibility before you apply.

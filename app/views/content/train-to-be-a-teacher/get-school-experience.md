@@ -76,7 +76,7 @@ $q-Zainab$
 
 ### Paid teaching internships
 
-A paid teaching internship could help you to understand what it’s really like in the classroom if you’re currently studying for a bachelor's or master's degree and are interested in teaching:
+A paid teaching internship could help you to understand what it’s really like in the classroom if you’re currently studying for an undergraduate or master's degree and are interested in teaching:
 
 - chemistry
 - computing

@@ -69,7 +69,7 @@ If you're interested in exploring other opportunities to work with pre-school ch
 
 ## What you need to become an early years teacher
 
-There are several ways to train to become an early years teacher. You can do undergraduate degree training, an early years teacher degree apprenticeship, or there are postgraduate options if you already have a bachelor's degree. All of these routes lead to early years teacher status (EYTS).
+There are several ways to train to become an early years teacher. You can do undergraduate degree training, an early years teacher degree apprenticeship, or there are postgraduate options if you already have a degree. All of these routes lead to early years teacher status (EYTS).
 
 To start early years teacher training, you’ll need these GCSE qualifications:
 
@@ -87,15 +87,15 @@ $international-content$
 
 ### Postgraduate training 
 
-This route is designed for people who have a bachelor's degree and want to continue full-time study to achieve early years teacher status.
+This route is designed for people who have an undergraduate degree and want to continue full-time study to achieve early years teacher status.
 
 $EY-graduate$
 
 Bursaries are only available for this route as follows:
 
-* $earlyyears_bursaries_withfirstclass$ if you have a first class bachelor's degree
-* $earlyyears_bursaries_withtwoone$ if you have a 2:1 bachelor's degree
-* $earlyyears_bursaries_withtwotwo$ if you have a 2:2 bachelor's degree
+* $earlyyears_bursaries_withfirstclass$ if you have a first class degree
+* $earlyyears_bursaries_withtwoone$ if you have a 2:1 degree
+* $earlyyears_bursaries_withtwotwo$ if you have a 2:2 degree
 
 You are not eligible for a bursary if you do not have these qualifications or if you're completing any other EYITT routes.
 

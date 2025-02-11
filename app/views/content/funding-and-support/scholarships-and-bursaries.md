@@ -62,7 +62,7 @@ You must be eligible for student finance to receive a scholarship (unless you’
 * a master’s degree
 * a PhD
 
-If you achieved a 2:2 in your bachelor's degree, you may still be eligible. You would need to show you have enough relevant experience and subject knowledge. 
+If you achieved a 2:2 in your degree, you may still be eligible. You would need to show you have enough relevant experience and subject knowledge. 
 
 Scholarships are awarded by independent organisations which set their own assessment requirements.
 

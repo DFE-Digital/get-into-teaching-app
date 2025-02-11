@@ -36,9 +36,9 @@ You may be eligible for a tax-free undergraduate bursary of $bursaries_veteran_t
 
 * a veteran who has left full-time employment with the British Army, Royal Air Force or Royal Navy no more than 5 years before the start of the course
 * training to teach secondary biology, chemistry, computing, languages, maths or physics
-* doing a bachelor's degree leading to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) in England
+* doing an undergraduate degree leading to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) in England
 
-Doing a bachelor's degree leading to QTS means that you would be qualified to teach in England.
+Doing an undergraduate degree leading to QTS means that you would be qualified to teach in England.
 
 You do not need to apply for a bursary to get one. Your teacher training provider will determine if you're eligible.
 
@@ -64,7 +64,7 @@ Find [support for UK armed forces veterans and their families](https://www.gov.u
 
 You can get free dedicated support from a teacher training adviser and talk to someone just like you who has left the armed forces and gone into teaching.
 
-As a veteran, you can get an adviser with or without a bachelor's degree.
+As a veteran, you can get an adviser with or without a degree.
 
 [Call us on 0800 389 2500](tel:08003892500) to get an adviser.
 

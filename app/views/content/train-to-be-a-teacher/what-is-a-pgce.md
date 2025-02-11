@@ -90,7 +90,7 @@ You can also do a PGCE without QTS in [further education](/life-as-a-teacher/age
 
 ### Entry requirements
 
-Entry requirements for a postgraduate teacher training course usually include an bachelor's degree or equivalent qualification.
+Entry requirements for a postgraduate teacher training course usually include a bachelor's degree or equivalent qualification.
 
 You also need the following GCSEs at grade 4 (C) or above, or equivalent qualifications:
 
