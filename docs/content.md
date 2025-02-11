@@ -20,9 +20,8 @@ This documentation aims to be a reference for content editors that want to make 
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
-    * [Inset text](#inset-text)
+    * [Insets and expander components for non-UK content](#inset-expander-components)
     * [Creating a partial](#creating-a-partial)
-    * [Details expander for non-UK content](#details-expander-for-non-uk-content)
     * [YouTube Video](#youtube-video)
     * [Hero](#hero)
     * [Values](#values)
@@ -283,11 +282,11 @@ When adding an iFrame elemet as part of Markdown content or a HTML page we shoul
 ></iframe>
 ```
 
-### Insets and expanders for non-UK content
+### Insets and expander components for non-UK content
 
 If you need to call out something important in a page and differentiate it from the surrounding text, you can use the inset or expander components. Specify the component in the frontmatter and then include it anywhere in the page. We use the purple colour for non-UK content and the purple-white colour for non-UK content on a grey background.
 
-#### Inset text for non-UK content
+#### Inset component for non-UK content
 
 You do not need to include both a heading and title in the inset text.
 
@@ -331,7 +330,7 @@ If the content is for a specific group of non-UK citizens, for example, 'Refugee
 If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the expander.  
 
 
-#### Expander for non-UK content
+#### Expander component for non-UK content
 
 You can use the expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
 
