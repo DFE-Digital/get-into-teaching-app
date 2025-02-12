@@ -8,8 +8,9 @@ ENV RAILS_ENV=production \
     RAILS_SERVE_STATIC_FILES=true \
     RAILS_LOG_TO_STDOUT=true \
     RACK_TIMEOUT_SERVICE_TIMEOUT=60 \
-    BUNDLE_WITHOUT=development \
     BUNDLE_JOBS=4
+
+    # BUNDLE_WITHOUT=development \
 
 RUN mkdir /app
 WORKDIR /app
@@ -25,7 +26,7 @@ RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
         postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
 
 # Install bundler
-RUN gem install bundler --version=2.3.4
+RUN gem install bundler --version=2.6.3
 
 # Install NPM packages removing artifacts
 COPY package.json yarn.lock ./
