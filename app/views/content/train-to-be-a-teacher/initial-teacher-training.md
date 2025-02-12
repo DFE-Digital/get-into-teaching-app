@@ -7,12 +7,13 @@ description: |-
 navigation: 20.15
 navigation_title: What to expect in teacher training
 navigation_description: Find out what your teacher training will be like, what you'll learn, and what classroom experience you'll get.
+cta_mailinglist:
+  mailinglist:
+    text: Get free guidance and support on getting into teaching, including top tips on writing a successful application.
 related_content:
     How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     Training and support for early career teachers : "/life-as-a-teacher/teaching-as-a-career/early-career-teachers"
     How to apply : "/how-to-apply-for-teacher-training"
-promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-itt
 ---
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
@@ -73,3 +74,5 @@ Some courses begin with time spent in a university or school where you start you
 There are two types of assessments you’ll have as part of your training - formative and summative. Formative assessments are less formal and happen throughout your course. Summative assessments are formal assessments, usually at the end of your course.
 
 You might be assessed through written assignments, lesson observations, or by a portfolio of evidence showing how you’re meeting the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). Assessments vary by provider and the qualifications you’re working towards.
+
+$mailinglist$
