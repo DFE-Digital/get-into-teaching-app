@@ -8,7 +8,6 @@ ENV RAILS_ENV=production \
     RAILS_SERVE_STATIC_FILES=true \
     RAILS_LOG_TO_STDOUT=true \
     RACK_TIMEOUT_SERVICE_TIMEOUT=60 \
-    BUNDLE_WITHOUT=development \
     BUNDLE_JOBS=4
 
 RUN mkdir /app
