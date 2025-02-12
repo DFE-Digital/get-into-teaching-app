@@ -6,7 +6,6 @@ content:
     - content/landing/how-to-fund-your-teacher-training/collage
     - content/landing/how-to-fund-your-teacher-training/mailing_list
     - content/landing/how-to-fund-your-teacher-training/content
-    - content/landing/how-to-fund-your-teacher-training/promo
 image: "static/images/content/hero-images/chemistry.jpg"
 layout: "layouts/minimal"
 colour: pink-blue
