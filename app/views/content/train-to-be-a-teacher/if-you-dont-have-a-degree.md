@@ -33,7 +33,7 @@ expander:
 ---
 
 ## Bachelor's degree courses
-You need a bachelor’s degree in any subject to train to teach in primary, secondary and special schools in England. If you do not already have a bachelor's degree, you can train to be a teacher as part of your bachelor’s degree and get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
+You need a bachelor’s degree in any subject to train to teach in primary, secondary and special schools in England. If you do not already have one, you can train to be a teacher as part of a bachelor’s degree and get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 You need QTS to teach in maintained primary, secondary and special schools in England (schools funded by local authorities).
 
