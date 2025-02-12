@@ -4,8 +4,9 @@ heading: "Teachers' pension scheme"
 description: |-
   The teachers' pension scheme is one of the most generous in the country. Learn more about the benefits of the teachers' pension scheme.
 image: false
-promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+cta_mailinglist:
+  mailinglist:
+    text: Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.
 related_content:
     Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     Steps to become a teacher : "/steps-to-become-a-teacher"
@@ -51,3 +52,5 @@ If you became ill during your career, you could apply for early ill-health retir
 If you were to die while actively paying into your pension, a nominated beneficiary would receive a death grant. After 2 years of paying into your pension, a nominated beneficiary would also receive a pension after you die. 
 
 To find out more about the teachers’ pension scheme, visit the [teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
+
+$mailinglist$

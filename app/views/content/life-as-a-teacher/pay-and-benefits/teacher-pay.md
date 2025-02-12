@@ -4,8 +4,9 @@ heading: "Teacher pay"
 description: |-
   All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 backlink: "../../"
-promo_content:
-  - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+cta_mailinglist:
+  mailinglist:
+    text: Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
@@ -82,8 +83,6 @@ Depending on your responsibilities, you could earn up to an extra $salaries_tlr_
 
 Teachers who [take on a special educational needs and disabilities (SEND) role](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs) may also receive additional payments. These are known as SEN allowances.
 
-<a name="career-progression"></a>
-
 ## Career progression
 
 ### Leading practitioner salary
@@ -158,3 +157,5 @@ You also get other insurance benefits too. Find out more about the [teachers' pe
 In additional to the practical rewards of teaching, there's personal benefits too. Teaching is a career that allows you to make a difference, explore your creativity, and apply skills from your degree or previous career.
 
 [Explore why people choose to become a teacher](/life-as-a-teacher/why-teach/why-become-a-teacher).
+
+$mailinglist$

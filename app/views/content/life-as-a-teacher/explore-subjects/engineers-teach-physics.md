@@ -11,7 +11,7 @@ description: |-
     Find out more about the Engineers teach physics teacher training programme for engineers and material scientists who want to teach physics.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/hero-images/physics_1383.jpg"
+image: "static/images/content/hero-images/physics.jpg"
 keywords:
   - engineers
   - material scientists

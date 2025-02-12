@@ -1,0 +1,84 @@
+.mailinglist {
+  max-width: $content-max-width;
+  display: flex;
+  flex-direction: column;
+  gap: $indent-amount * .5;
+  margin: 0 auto;
+  background-color: $grey;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 2 * $indent-amount;
+  }
+
+  @include mq($until: tablet) {
+    &--border-top {
+      display: none;
+    }
+  }
+
+  @include mq($from: tablet) {
+    &--border-top {
+      display: block;
+      border-top: 1px solid $grey-mid;
+      padding-top: 3em;
+      margin: 0 auto;
+      max-width: $content-max-width;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 3em;
+  }
+
+  &__image {
+    width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+  }
+
+  &__left {
+    flex: 0 1 45%;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+	
+	@include mq($until: tablet) {
+		max-height: 15em; 
+	}
+  }
+
+  &__right {
+    flex: 0 1 55%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-right: $indent-amount;
+    padding-bottom: $indent-amount;
+
+    @include mq($until: tablet) {
+      padding-left: $indent-amount;
+    }
+
+    @include mq($from: tablet) {
+      padding-top: $indent-amount;
+    }
+
+    p,
+    h2 {
+      margin-top: 0;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+    }
+
+    label,
+    input {
+      margin-bottom: .4em;
+    }
+  }
+}

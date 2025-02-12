@@ -11,7 +11,7 @@ promo_content:
 navigation: 20.30
 navigation_title: Visas for non-UK trainee teachers
 navigation_description: Learn more about applying for a Student or Skilled Worker visa to train to teach in England.
-image: "static/images/content/hero-images/0034.jpg"
+image: "static/images/content/hero-images/0031.jpg"
 backlink: "../../"
 expander:
   ukraine-visas:
@@ -134,7 +134,7 @@ You may be able to train part-time, but your part-time salary must be at least $
 You can apply for your visa once you have a confirmed offer of a training place. 
 [Search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that offer visa sponsorship. 
 
-Email your chosen provider to check if they can sponsor you, then [apply for your teacher training course](/how-to-apply-for-teacher-training). 
+Email your chosen provider to check if they can sponsor you. Once you have confirmation, you can then [apply for your teacher training course](/how-to-apply-for-teacher-training). 
 
 ### Dependants
 

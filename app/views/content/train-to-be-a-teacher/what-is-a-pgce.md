@@ -17,8 +17,9 @@ calls_to_action:
     name: find
     arguments:
       title: "Find a QTS with PGCE course"
-promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-pgce
+cta_mailinglist:
+  mailinglist:
+    text: Find out what being in a classroom is really like and get helpful guidance and support on getting into teaching.
 keywords:
   - PGCE
   - Post-graduate
@@ -111,3 +112,4 @@ As with PGCEs, you can do a PGDE in primary education or secondary education.
 More teacher training providers offer a PGCE than a PGDE.
 
 $find$
+$mailinglist$
