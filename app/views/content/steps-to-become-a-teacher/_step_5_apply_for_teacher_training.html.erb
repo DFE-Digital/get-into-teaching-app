@@ -12,4 +12,6 @@
     <p><a href=\"/non-uk-teachers/visas-for-non-uk-trainees\">Learn more about applying for your visa to train to teach in England</a>.</p>",
   ) %>
 
-<p><a href="https://www.gov.uk/apply-for-teacher-training">Apply for postgraduate teacher training</a>.</p>
+<div class="results-box__cta">
+    <%= render "content/shared/links_and_buttons/cta_circle_button_link", href: @link_target = "https://www.gov.uk/apply-for-teacher-training", cta_link_text: @link_text = "Apply for postgraduate teacher training" %>
+  </div>

@@ -11,4 +11,6 @@
     <p>Learn more about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">fees and financial support for non-UK trainee teachers</a>.</p>",
   ) %>
 
-<p><a href="/funding-and-support"> Find out how to fund your training</a>.</p>
+<div class="results-box__cta">
+    <%= render "content/shared/links_and_buttons/cta_circle_button_link", href: @link_target = "/funding-and-support", cta_link_text: @link_text = "Find out how to fund your training" %>
+  </div>
