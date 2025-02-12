@@ -72,7 +72,7 @@ $salaried-teacher-training$
 
 ### If you do not have a degree
 
-If you do not already have a bacherlor's degree, you may be eligible for a [teacher degree apprenticeship (TDA)](/train-to-be-a-teacher/teacher-degree-apprenticeships). A TDA is an undergraduate teacher training course where you’ll work in a school and earn a salary while getting a degree and QTS.
+If you do not already have a degree, you may be eligible for a [teacher degree apprenticeship (TDA)](/train-to-be-a-teacher/teacher-degree-apprenticeships). A TDA is an undergraduate teacher training course where you’ll work in a school and earn a salary while getting a degree and QTS.
 
 ## How much will I be paid on a salaried course? 
 
