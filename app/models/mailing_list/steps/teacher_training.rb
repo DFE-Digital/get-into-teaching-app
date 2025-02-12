@@ -1,7 +1,7 @@
 module MailingList
   module Steps
     class TeacherTraining < ::GITWizard::Step
-      PICKLIST_ALLOW_IDS = [222750000, 222750003]
+      PICKLIST_ALLOW_IDS = [222_750_000, 222_750_003].freeze
 
       attribute :consideration_journey_stage_id, :integer
       validates :consideration_journey_stage_id,
