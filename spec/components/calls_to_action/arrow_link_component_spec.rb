@@ -20,10 +20,6 @@ RSpec.describe CallsToAction::ArrowLinkComponent, type: :component do
       expect(page).to have_css(".cta-link-text", text: link_text)
     end
 
-    specify "the link text is present" do
-      expect(page).to have_css(".cta-link-text", text: link_text)
-    end
-
     specify "the link is present" do
       expect(page).to have_link(link_text, href: link_target)
     end
