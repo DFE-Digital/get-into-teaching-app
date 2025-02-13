@@ -65,8 +65,6 @@ Teacher training courses usually take 9 months full-time, or 18 to 24 months par
 
 $international-content$
 
-$arrowtime$
-
 ## Teacher training course providers
 
 Your postgraduate teacher training course might be provided by: 
