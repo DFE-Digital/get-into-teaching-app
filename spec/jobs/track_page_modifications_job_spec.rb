@@ -7,7 +7,7 @@ RSpec.describe TrackPageModificationsJob, type: :job do
     let(:tracker) { instance_double(PageModificationTracker) }
 
     before do
-      allow(PageModificationTracker).to receive(:new).with(host: host).and_return(tracker)
+      allow(PageModificationTracker).to receive(:new).with({ host: host }).and_return(tracker)
       allow(tracker).to receive(:track_page_modifications)
     end
 
