@@ -48,11 +48,17 @@ expander:
     header: "Ukraine citizens:"
     title: moving to the UK
     text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.
+
 quote:
   olivia:
     text: "You'll learn a lot about yourself during your teacher training year, and it's the most rewarding journey to be on."
     name: "Olivia, drama teacher"
     classes: quote--indent
+
+cta_arrow_link:
+  arrowtime:
+    link_target: "https://google.com"
+    link_text: "Hello world"
 ---
 
 You need a bachelor's degree in any subject to teach in primary, secondary and special schools in England.
@@ -64,6 +70,8 @@ If you have a bachelor's degree, you can do postgraduate teacher training to get
 Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time.
 
 $international-content$
+
+$arrowtime$
 
 ## Teacher training course providers
 

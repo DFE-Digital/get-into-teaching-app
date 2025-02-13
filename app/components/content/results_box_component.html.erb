@@ -27,7 +27,7 @@
     </div>
     <div class="results-box__text results-box__full-width-text"><%= text %></div>
     <div class="results-box__cta">
-      <%= render "content/shared/links_and_buttons/cta_circle_button_link", href: @link_target, cta_link_text: @link_text %>
+      <%= render CallsToAction::ArrowLinkComponent.new(link_target: @link_target, link_text: @link_text) %>
     </div>
   </section>
 </div>
