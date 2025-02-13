@@ -60,7 +60,7 @@
     "postcss": "8",
     "prettier": "^3.2.5",
     "semver": "7.7.1",
-    "stylelint": "^16.9.0",
+    "stylelint": "^16.14.1",
     "stylelint-config-gds": "^2.0.0"
   },
   "jest": {
