@@ -591,7 +591,7 @@ GEM
     sentry-ruby (5.21.0)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
-    shakapacker (8.0.2)
+    shakapacker (8.1.0)
       activesupport (>= 5.2)
       package_json
       rack-proxy (>= 0.6.1)
@@ -661,7 +661,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.18)
+    zeitwerk (2.7.1)
 
 PLATFORMS
   ruby
@@ -744,7 +744,7 @@ DEPENDENCIES
   selenium-webdriver
   sentry-rails (>= 5.10.0)
   sentry-ruby (~> 5.21.0)
-  shakapacker (= 8.0.2)
+  shakapacker (= 8.1.0)
   shoulda-matchers
   sidekiq (~> 6.5.0)
   sidekiq-cron
