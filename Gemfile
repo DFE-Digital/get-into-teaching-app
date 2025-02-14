@@ -169,8 +169,10 @@ end
 group :test do
   gem "rspec-retry"
   gem "selenium-webdriver"
+  gem "capybara-mechanize"
   gem "shoulda-matchers"
   gem "vcr"
+  gem "nkf"
   gem "webmock", ">= 3.14.0"
 end
 

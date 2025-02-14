@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Mailing List Integration tests", :integration, type: :feature do
+RSpec.feature "Mailing List Integration tests", :mechanize, :integration, type: :feature do
   before { config_capybara }
 
   around do |example|
@@ -9,21 +9,21 @@ RSpec.feature "Mailing List Integration tests", :integration, type: :feature do
     WebMock.disable_net_connect!(allow_localhost: true)
   end
 
-  it "Sign up journey as a new candidate", pending: "rewrite as a non-JS test or as frontend JS test" do
+  it "Sign up journey as a new candidate" do
     visit mailing_list_steps_path
     click_link "Accept all cookies"
     sign_up(rand_first_name, rand_last_name, rand_email)
     expect(page).to have_text("you're signed up")
   end
 
-  it "Sign up journey as a new candidate if not qualified", pending: "rewrite as a non-JS test or as frontend JS test" do
+  it "Sign up journey as a new candidate if not qualified" do
     visit mailing_list_steps_path
     click_link "Accept all cookies"
     sign_up_if_not_qualified(rand_first_name, rand_last_name, rand_another_email)
     expect(page).to have_text("you're signed up")
   end
 
-  it "Sign up journey as an existing candidate", pending: "rewrite as a non-JS test or as frontend JS test" do
+  it "Sign up journey as an existing candidate" do
     visit mailing_list_steps_path
     click_link "Accept all cookies"
 
