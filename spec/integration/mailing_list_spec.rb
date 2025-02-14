@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Mailing List Integration tests", :mechanize, :integration, type: :feature do
+RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: :feature do
   before { config_capybara }
 
   around do |example|
