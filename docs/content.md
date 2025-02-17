@@ -18,6 +18,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Adviser (CTA) component](#adviser-cta-component)
     * [Routes (CTA) component](#routes-cta-component)
     * [Mailing list (CTA) component](#mailing-list-cta-component)
+    * [Green arrow link (CTA) component](#green-arrow-link-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
@@ -439,10 +440,6 @@ This means that you can use the following code over many pages so that each page
 
 ```
 
-
-
-
-
 ### Adviser (CTA) component
 
 You can use the Adviser (Call to Action) component to create a call to action to invite users to sign up for the Get an Adviser service. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
@@ -555,6 +552,44 @@ Alternatively, if you need to insert a mailing lists component in an erb file, y
 )%>
 ```
 
+### Green arrow link (CTA) component
+
+You can use the green arrow link (call to action) component to create a more prominent hyperlink call to action. You can use the component:
+
+* when it's the next logical step on users' journeys
+* more than once on a page
+
+The component should not be used:
+
+* on every page, if there is not a suitable use for it
+* to direct to pages that are not useful for most people e.g. veterans, SKITT
+* to direct to external sites like UCAS or Teach First
+
+It takes the following parameters and both should be specified:
+
+* link_text
+* link_target
+
+```yaml
+---
+cta_arrow_link:
+  events:
+    link_target: "/events/about-get-into-teaching-events"
+    link_text: "Find a Get Into Teaching event"
+---
+
+# My page
+
+$events$
+
+```
+Alternatively, if you need to insert a green arrow component in an erb file, you can call it like this:
+
+```yaml
+
+<%= render CallsToAction::ArrowLinkComponent.new(link_target: "/events/about-get-into-teaching-event", link_text: "Find a Get Into Teaching event") %>
+
+```
 
 ### YouTube video
 
