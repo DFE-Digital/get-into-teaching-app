@@ -577,9 +577,9 @@ It takes the following parameters and both should be specified:
 ```yaml
 ---
 cta_arrow_link:
-  arrowtime:
-    link_target: "https://google.com"
-    link_text: "Hello world"cta_mailinglist:
+  events:
+    link_target: "/events/about-get-into-teaching-events"
+    link_text: "Find a Get Into Teaching event"
 ---
 
 # My page
@@ -591,7 +591,7 @@ Alternatively, if you need to insert a mailing lists component in an erb file, y
 
 ```yaml
 
-<%= render "content/shared/links_and_buttons/cta_circle_button_link", href: @link_target = "/events/about-get-into-teaching-events", cta_link_text: @link_text = "Get Into Teaching event" %>
+<%= render CallsToAction::ArrowLinkComponent.new(link_target: "/events/about-get-into-teaching-event", link_text: "Find a Get Into Teaching event") %>
 
 ```
 
