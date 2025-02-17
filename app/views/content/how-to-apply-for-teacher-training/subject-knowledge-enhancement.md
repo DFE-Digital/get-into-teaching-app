@@ -33,7 +33,7 @@ expander:
 
 You might need to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
 
-This could be because you have (one or more of the following):
+This could be because you have one or more of the following:
 
 * finished your degree more than 5 years ago
 * a different but related degree to the subject you want to teach
@@ -58,6 +58,8 @@ SKE courses are currently available in 5 secondary subjects:
 * languages
 * mathematics
 * physics
+
+[Find out more about what it's like to teach in secondary](/life-as-a-teacher/age-groups-and-specialisms/secondary).
 
 ### The benefits of an SKE course
 
@@ -97,7 +99,7 @@ You’ll need (one of the following):
 * a master’s degree
 * a PhD
 
-You can still do your SKE course while you do your teacher training but you'll only be eligible for a SKE bursary up until your teacher training course starts. This is because you may then be eligible for other financial support, for example a subject bursary or tuition fee loan.
+You can still do your SKE course while you do your teacher training but you'll only be eligible for a SKE bursary up until your teacher training course starts. This is because you may then be [eligible for other financial support](/funding-and-support), for example a subject bursary or tuition fee loan.
 
 $SKE-bursaries$
 
