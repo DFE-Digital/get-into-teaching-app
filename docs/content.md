@@ -559,9 +559,9 @@ You can use the green arrow link (call to action) component to create a more pro
 * when it's the next logical step on users' journeys
 * more than once on a page
 
-The component should not:
+The component should not be used:
 
-* be used on every page, if there isn't a suitable use for it
+* on every page, if there is not a suitable use for it
 * to direct to pages that are not useful for most people e.g. veterans, SKITT
 * to direct to external sites like UCAS or Teach First
 
@@ -580,10 +580,10 @@ cta_arrow_link:
 
 # My page
 
-$arrowtime$
+$events$
 
 ```
-Alternatively, if you need to insert a mailing lists component in an erb file, you can call it like this:
+Alternatively, if you need to insert a green arrow component in an erb file, you can call it like this:
 
 ```yaml
 
