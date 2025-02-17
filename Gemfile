@@ -4,8 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "concurrent-ruby", "1.3.4" # Required to fix a dependency issue with Rails upgrade to version 7.0.8.7
-gem "rails", "~> 7.0.8.7"
+gem "rails", "7.1.0"
 
 # Use Puma as the app server
 gem "puma", "~> 6.4"
@@ -13,7 +12,7 @@ gem "puma", "~> 6.4"
 gem "pg"
 
 # Fork needed for Ruby 3.1/Rails 7
-gem "validates_timeliness", github: "mitsuru/validates_timeliness", branch: "rails7"
+gem "validates_timeliness", "~> 7.0.0"
 
 gem "invisible_captcha"
 
