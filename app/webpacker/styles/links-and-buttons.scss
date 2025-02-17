@@ -239,8 +239,8 @@ body a.govuk-back-link {
   }
 }
 
-// CTA link with green arrow circle button
-// Partial for rendering here: app/views/shared/_cta_circle_link.html.erb
+// CTA link with green arrow circle button CallsToAction::ArrowLinkComponent
+
 .cta-circle-link-wrapper {
   display: flex;
   align-items: top;
