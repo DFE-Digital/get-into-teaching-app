@@ -29,7 +29,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
-    choose "I'm not sure and finding out more"
+    choose "It's just an idea"
     click_on "Next step"
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
@@ -70,7 +70,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
-    choose "I'm not sure and finding out more"
+    choose "It's just an idea"
     click_on "Next step"
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
@@ -109,7 +109,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
-    choose "I'm not sure and finding out more"
+    choose "It's just an idea"
     click_on "Next step"
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
@@ -148,7 +148,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
-    choose "I'm not sure and finding out more"
+    choose "It's just an idea"
     click_on "Next step"
 
     expect(page).to have_text "Select the subject you're most interested in teaching"

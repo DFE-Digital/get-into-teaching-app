@@ -21,10 +21,9 @@ GIT_API_ENDPOINT=https://localhost:5001/api  \
 
 ## Running the test suites
 
-You need to have the correct version of `chromedriver` installed for the version of Chrome you are running.
-
 * To run the Ruby tests: `rspec`
 * To run the Javascript tests `yarn spec`
+* To run the integration tests (hosted on a remote test server), retrieve the values for the following env vars (from Azure key storage): `MAILSAC_API_KEY`, `HTTP_PASSWORD`, `HTTP_USERNAME`. Then run the tests with: `NODE_ENV=test RAILS_ENV=test MAILSAC_API_KEY=XXX HTTP_PASSWORD=XXX HTTP_USERNAME=XXX bundle exec rspec spec --tag integration`
 
 ### Integration tests
 

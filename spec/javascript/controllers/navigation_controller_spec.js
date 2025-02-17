@@ -836,7 +836,12 @@ describe('NavigationController', () => {
 `;
 
     const application = Application.start();
+    const mockGtag = () => { window.gtag = jest.fn(); };
     application.register('navigation', NavigationController);
+
+    beforeEach(() => {
+      mockGtag();
+    });
 
     it('toggles the visibility of the navigation area when menu button clicked', () => {
       const nav = document.querySelector('nav');

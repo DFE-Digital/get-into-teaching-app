@@ -18,7 +18,7 @@ calls_to_action:
     name: find
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
-navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one.
+navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a bachelor's degree or you’re studying for one.
 keywords:
   - becoming a teacher
   - teacher training
@@ -55,11 +55,11 @@ quote:
     classes: quote--indent
 ---
 
-You need a bachelor's degree (in any subject) to teach in primary, secondary and special schools in England.
+You need a bachelor's degree in any subject to teach in primary, secondary and special schools in England.
 
 For secondary teacher training, your provider will want to make sure you have a good knowledge of the subject you’re applying to teach.
 
-If you have a degree, you can do postgraduate teacher training to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
+If you have a bachelor's degree, you can do postgraduate teacher training to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
 Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time.
 

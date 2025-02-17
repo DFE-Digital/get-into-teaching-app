@@ -679,6 +679,10 @@ en:
 
   helpers:
     answer:
+      mailing_list_steps:
+        teacher_training:
+          consideration_journey_stage:
+            222750003: "I think I'll apply"
       mailing_list_steps_degree_status:
         degree_status:
           graduate_or_postgraduate: "Yes, I already have a degree"

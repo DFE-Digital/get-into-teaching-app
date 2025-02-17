@@ -19,7 +19,7 @@ gem "invisible_captcha"
 
 gem "iso_country_codes"
 
-gem "shakapacker", "8.0.2"
+gem "shakapacker", "8.1.0"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -61,7 +61,12 @@ gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.15.1"
 gem "dfe-autocomplete", require: "dfe/autocomplete", github: "DFE-Digital/dfe-autocomplete"
 gem "dfe-reference-data", require: "dfe/reference_data", github: "DFE-Digital/dfe-reference-data", tag: "v3.5.0"
 
+gem "benchmark"
 gem "hashids"
+gem "irb"
+gem "mutex_m"
+gem "ostruct"
+gem "reline"
 
 gem "dotenv-rails", ">= 2.7.6"
 
@@ -129,6 +134,8 @@ group :development, :test do
   # Static security scanner
   gem "brakeman", "~> 6.2.2", require: false
 
+  gem "drb"
+
   # Debugging
   gem "pry-byebug"
   gem "pry-rails"
@@ -137,7 +144,7 @@ group :development, :test do
   gem "knapsack"
   gem "rspec-rails", "~> 6.0.3"
 
-  # Adds support for Capybara system testing and selenium driver
+  # Adds support for Capybara system testing
   gem "capybara", "~> 3.40.0"
   gem "factory_bot_rails", ">= 6.2.0"
   # See: https://github.com/otherguy/rspec-sonarqube-formatter/pull/63
@@ -160,8 +167,10 @@ group :development do
 end
 
 group :test do
+  gem "capybara-mechanize"
+  gem "nkf"
   gem "rspec-retry"
-  gem "selenium-webdriver", "~> 4.21.1"
+  gem "selenium-webdriver"
   gem "shoulda-matchers"
   gem "vcr"
   gem "webmock", ">= 3.14.0"
