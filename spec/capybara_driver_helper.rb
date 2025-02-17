@@ -1,6 +1,8 @@
 require "capybara/rspec"
+require "capybara/mechanize"
 
 JS_DRIVER = :selenium_chrome_headless
+MECHANIZE_DRIVER = :mechanize
 
 Capybara.register_driver JS_DRIVER do |app|
   options = ::Selenium::WebDriver::Chrome::Options.new
@@ -11,6 +13,15 @@ Capybara.register_driver JS_DRIVER do |app|
   options.add_argument("--window-size=1400,1400")
 
   Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
+end
+
+Capybara.register_driver MECHANIZE_DRIVER do |app|
+  driver = Capybara::Mechanize::Driver.new(app)
+  driver.configure do |agent|
+    # Configure other Mechanize options here.
+    # agent.log = Logger.new "mechanize.log"
+  end
+  driver
 end
 
 Capybara.configure do |config|
@@ -26,6 +37,7 @@ RSpec.configure do |config|
     Capybara.current_driver = JS_DRIVER if example.metadata[:js]
     Capybara.current_driver = :selenium if example.metadata[:selenium]
     Capybara.current_driver = :selenium_chrome if example.metadata[:selenium_chrome]
+    Capybara.current_driver = MECHANIZE_DRIVER if example.metadata[:mechanize]
   end
 
   config.after do

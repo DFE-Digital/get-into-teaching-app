@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Teacher Training Adviser integration tests", :integration, type: :feature do
+RSpec.describe "Teacher Training Adviser integration tests", :integration, :mechanize, type: :feature do
   before do
     config_capybara
 
@@ -14,13 +14,13 @@ RSpec.describe "Teacher Training Adviser integration tests", :integration, type:
     WebMock.disable_net_connect!(allow_localhost: true)
   end
 
-  it "Full journey as a new candidate", pending: "rewrite as a non-JS test or as frontend JS test" do
+  it "Full journey as a new candidate" do
     submit_personal_details(rand_first_name, rand_last_name, rand_email)
     complete_sign_up
     expect(page).to have_text("we'll give you a call")
   end
 
-  it "Full journey as an existing candidate", pending: "rewrite as a non-JS test or as frontend JS test" do
+  it "Full journey as an existing candidate" do
     email = "ttauser@mailsac.com"
     submit_personal_details(rand_first_name, rand_last_name, email)
 
