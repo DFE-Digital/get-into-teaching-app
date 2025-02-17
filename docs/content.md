@@ -18,7 +18,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Adviser (CTA) component](#adviser-cta-component)
     * [Routes (CTA) component](#routes-cta-component)
     * [Mailing list (CTA) component](#mailing-list-cta-component)
-    * [Green arrow link (CTA) component](#ADD)
+    * [Green arrow link (CTA) component](#green-arrow-link-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
@@ -439,10 +439,6 @@ This means that you can use the following code over many pages so that each page
 </div>
 
 ```
-
-
-
-
 
 ### Adviser (CTA) component
 
