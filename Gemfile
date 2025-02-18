@@ -167,6 +167,8 @@ group :development do
 end
 
 group :test do
+  gem "capybara-mechanize"
+  gem "nkf"
   gem "rspec-retry"
   gem "selenium-webdriver"
   gem "shoulda-matchers"

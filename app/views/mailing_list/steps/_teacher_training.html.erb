@@ -1,7 +1,7 @@
 <%= f.govuk_collection_radio_buttons :consideration_journey_stage_id,
   f.object.consideration_journey_stages,
   :id,
-  :value,
+  ->(option) { format_option_value(option, "mailing_list_steps.teacher_training.consideration_journey_stage") },
   legend: { tag: "h1", text: t('helpers.label.mailing_list_steps_teacher_training.consideration_journey_stage_id', **Value.data) } do
 %>
 <p>
