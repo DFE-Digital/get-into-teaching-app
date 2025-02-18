@@ -7,7 +7,7 @@ module MailingList
                 inclusion: { in: :consideration_journey_stage_ids }
 
       def consideration_journey_stages
-        @consideration_journey_stages ||= ::PicklistItemsApiPresenter.new.get_candidate_journey_stages
+        @consideration_journey_stages ||= ::PickListItemsApiPresenter.new.get_candidate_journey_stages
       end
 
       def consideration_journey_stage_ids

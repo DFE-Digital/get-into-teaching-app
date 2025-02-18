@@ -39,7 +39,7 @@ module Events
       end
 
       def journey_stage_options
-        @journey_stage_options ||= PicklistItemsApiPresenter.new.get_candidate_journey_stages
+        @journey_stage_options ||= PickListItemsApiPresenter.new.get_candidate_journey_stages
       end
 
       def journey_stage_option_ids

@@ -1,4 +1,4 @@
-class PicklistItemsApiPresenter
+class PickListItemsApiPresenter
   # A presenter to filter picklists down to just the options we want to display
   # .delegate_and_filter takes the method from the PickListItemsApi and a list of ids to filter down to
 
