@@ -50,7 +50,9 @@ You'll need experience of teaching in 2 schools to be awarded [qualified teacher
 
 ## Where will my placements take place?
 
-Your training provider will usually select placement schools for you. They'll contact you and discuss your situation to help them select the most appropriate locations. They'll often take into consideration your course, subject, commute and other personal circumstances.
+Your training provider will usually select placement schools for you. In some cases, salaried teacher training providers may require you to find your own school for placements. Check with the provider before you apply.
+
+If your provider is selecting a placement school for you, they'll contact you and discuss your situation to help them select the most appropriate locations. They'll often take into consideration your course, subject, commute and other personal circumstances.
 
 ## What will I do on my placements?
 

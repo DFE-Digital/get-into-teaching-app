@@ -86,7 +86,7 @@ If you’re eligible for a bursary or scholarship, you could receive more money 
 
 ## How does salaried teacher training work? 
 
-Salaried teacher training is usually similar to non-salaried teacher training. You'll spend most of your time in school placements, with some theoretical learning. 
+Salaried teacher training is usually similar to non-salaried teacher training. You'll spend most of your time in [school placements](/train-to-be-a-teacher/school-placements), with some theoretical learning.
 
 $nathan$
 
@@ -110,7 +110,9 @@ Some salaried courses award QTS only. You may have the option to do a salaried c
 
 You can [find postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and filter by salaried courses. 
 
-It’s usually wise to apply for non-salaried courses as well to increase your chances of getting a place on a course. 
+It’s usually wise to apply for non-salaried courses as well to increase your chances of getting a place on a course.
+
+Some providers may require you to find your own school for placements. Check with the provider before you apply. 
 
 ### Teach First 
 
