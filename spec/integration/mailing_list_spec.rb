@@ -48,7 +48,7 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
     click_on "Next step"
 
     expect(page).to have_text("How interested are you in applying for teacher training?")
-    click_label "I’m not sure and finding out more"
+    click_label "It's just an idea"
     click_on "Next step"
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
@@ -81,7 +81,7 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
     click_on "Next step"
 
     expect(page).to have_text("How interested are you in applying")
-    click_label "I’m not sure and finding out more"
+    click_label "It's just an idea"
     click_on "Next step"
 
     expect(page).to have_text("Select the subject you're most interested in teaching")
