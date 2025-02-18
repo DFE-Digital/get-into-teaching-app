@@ -1,8 +1,6 @@
 module Events
   module Steps
     class PersonalisedUpdates < ::GITWizard::Step
-      CANDIDATE_JOURNEY_PICKLIST_ALLOW_IDS = [222_750_000, 222_750_003].freeze
-
       attribute :degree_status_id, :integer
       attribute :consideration_journey_stage_id, :integer
       attribute :address_postcode
@@ -41,10 +39,7 @@ module Events
       end
 
       def journey_stage_options
-        @journey_stage_options ||=
-          GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_journey_stages.select do |option|
-            CANDIDATE_JOURNEY_PICKLIST_ALLOW_IDS.include?(option.id)
-          end
+        @journey_stage_options ||= PicklistItemsApiPresenter.new.get_candidate_journey_stages
       end
 
       def journey_stage_option_ids
