@@ -26,6 +26,7 @@ module RoutesIntoTeaching
 
     def highlighted?
       return false unless @route_finder && @highlight
+      return false if @route_finder.answers.nil?
 
       highlight["matches"].all? do |rule|
         question_id = rule["question"]
