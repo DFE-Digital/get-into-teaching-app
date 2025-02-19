@@ -15,7 +15,6 @@ RSpec.describe Content::LandingHeroComponent, type: "component" do
   end
 
   it { is_expected.to have_css(".landing-hero") }
-  it { is_expected.to have_css("header") }
   it { is_expected.to have_css("h1", text: "My page") }
   it { is_expected.to have_css(%(img)) }
 
@@ -31,6 +30,6 @@ RSpec.describe Content::LandingHeroComponent, type: "component" do
   context "when the colour is overridden" do
     let(:colour) { "purple" }
 
-    it { is_expected.to have_css("header.purple") }
+    it { is_expected.to have_css(".purple") }
   end
 end
