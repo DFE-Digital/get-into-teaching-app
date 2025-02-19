@@ -17,7 +17,7 @@
 <%= f.govuk_collection_select :consideration_journey_stage_id,
       f.object.journey_stage_options,
       :id,
-      :value,
+      ->(option) { format_option_value(option, "mailing_list_steps.teacher_training.consideration_journey_stage") },
       options: { prompt: "Select an option" } %>
 
 <%= f.govuk_text_field :address_postcode, autocomplete: "postal-code" unless f.object.hide_postcode_field? %>
