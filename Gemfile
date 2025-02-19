@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "7.1.0"
+gem "rails", "7.1.3.2"
 
 # Use Puma as the app server
 gem "puma", "~> 6.4"
@@ -141,7 +141,7 @@ group :development, :test do
 
   # Testing framework
   gem "knapsack"
-  gem "rspec-rails", "~> 6.0.3"
+  gem "rspec-rails", "~> 6.1.0"
 
   # Adds support for Capybara system testing
   gem "capybara", "~> 3.40.0"
