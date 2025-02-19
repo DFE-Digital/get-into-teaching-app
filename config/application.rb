@@ -41,9 +41,6 @@ module GetIntoTeachingWebsite
     config.exceptions_app = routes
     config.active_job.queue_adapter = :sidekiq
 
-    # Logger for Sidekiq
-    config.logger = ActiveSupport::Logger.new($stdout)
-
     # View component previews
     config.view_component.preview_controller = "PreviewController"
     config.view_component.preview_paths << Rails.root.join("spec/components/previews")
