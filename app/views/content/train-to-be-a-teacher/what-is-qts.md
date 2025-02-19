@@ -11,8 +11,6 @@ related_content:
     How to apply for teacher training : "/how-to-apply-for-teacher-training"
     How to choose a teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
     What will your teacher training be like?: "/train-to-be-a-teacher/initial-teacher-training"
-promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 navigation: 20.25
 navigation_title: Qualified teacher status (QTS)
 navigation_description: You need English qualified teacher status (QTS) to teach in maintained schools in England. Find out how to get QTS through teacher training.
@@ -35,6 +33,9 @@ expander:
       <p>
       With iQTS, you train to teach where you live or work, with no need to visit the UK. If you get iQTS, you automatically get QTS.
       </p>
+cta_mailinglist:
+  mailinglist:
+    text: Get helpful guidance and support on getting into teaching, including how to get the qualifications you need.
 keywords:
   - PGCE
   - Postgraduate
@@ -102,3 +103,5 @@ You can usually do this if you’ve worked as an unqualified teacher:
 If you trained to teach in Wales, your QTS will automatically be recognised in England. [The Education Workforce Council (EWC) website has more information on being awarded QTS in England](https://www.ewc.wales/site/index.php/en/).
 
 If you trained to teach in Scotland or Northern Ireland, you can [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). If your QTS application is successful, you will gain QTS without any further fees or training.
+
+$mailinglist$

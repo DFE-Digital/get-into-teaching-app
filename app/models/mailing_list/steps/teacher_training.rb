@@ -1,6 +1,8 @@
 module MailingList
   module Steps
     class TeacherTraining < ::GITWizard::Step
+      PICKLIST_ALLOW_IDS = [222_750_000, 222_750_003].freeze
+
       attribute :consideration_journey_stage_id, :integer
       validates :consideration_journey_stage_id,
                 presence: true,
@@ -17,7 +19,9 @@ module MailingList
     private
 
       def query_consideration_journey_stages
-        GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_journey_stages
+        GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_journey_stages.select do |option|
+          PICKLIST_ALLOW_IDS.include?(option.id)
+        end
       end
     end
   end

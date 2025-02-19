@@ -510,7 +510,7 @@ en:
             date_of_birth:
               blank: "You need to enter your date of birth"
               on_or_before: "You must be 18 years or older to use this service"
-              on_or_after: "You must be less than 70 years old"
+              on_or_after: "You must be less than 99 years old"
               invalid: "You did not enter a valid date of birth"
 
         funding_widget:
@@ -679,6 +679,10 @@ en:
 
   helpers:
     answer:
+      mailing_list_steps:
+        teacher_training:
+          consideration_journey_stage:
+            222750003: "I think I'll apply"
       mailing_list_steps_degree_status:
         degree_status:
           graduate_or_postgraduate: "Yes, I already have a degree"

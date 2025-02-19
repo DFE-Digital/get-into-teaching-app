@@ -6,7 +6,6 @@ content:
     - content/landing/what-teaching-taught-me/collage
     - content/landing/what-teaching-taught-me/mailing-list
     - content/landing/what-teaching-taught-me/content
-    - content/landing/what-teaching-taught-me/promo
 image: "static/images/content/hero-images/english.jpg"
 layout: "layouts/minimal"
 colour: pink-blue

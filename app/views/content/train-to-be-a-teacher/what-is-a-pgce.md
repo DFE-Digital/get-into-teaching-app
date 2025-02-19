@@ -17,8 +17,9 @@ calls_to_action:
     name: find
     arguments:
       title: "Find a QTS with PGCE course"
-promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-pgce
+cta_mailinglist:
+  mailinglist:
+    text: Find out what being in a classroom is really like and get helpful guidance and support on getting into teaching.
 keywords:
   - PGCE
   - Post-graduate
@@ -40,7 +41,7 @@ expander:
     link_url: /non-uk-teachers/non-uk-qualifications
 ---
 
-If you have a degree and are interested in gaining a qualification in education, you may want to do a postgraduate certificate in education (PGCE).
+If you have a bachelor's degree and are interested in gaining a qualification in education, you may want to do a postgraduate certificate in education (PGCE).
 
 You can get a postgraduate certificate in education through teacher training. A PGCE can help you develop your [teaching skills and knowledge](/life-as-a-teacher/teaching-as-a-career/skills-to-teach).
 
@@ -90,7 +91,7 @@ You can also do a PGCE without QTS in [further education](/life-as-a-teacher/age
 
 ### Entry requirements
 
-Entry requirements for a postgraduate teacher training course usually include an undergraduate degree or equivalent qualification.
+Entry requirements for a postgraduate teacher training course usually include a bachelor's degree or equivalent qualification.
 
 You also need the following GCSEs at grade 4 (C) or above, or equivalent qualifications:
 
@@ -111,3 +112,4 @@ As with PGCEs, you can do a PGDE in primary education or secondary education.
 More teacher training providers offer a PGCE than a PGDE.
 
 $find$
+$mailinglist$

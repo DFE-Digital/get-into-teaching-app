@@ -60,7 +60,7 @@ To find out whether your qualifications meet the entry requirements for iQTS, yo
 
 ## Tuition fees for iQTS
 
-Fees range from $fees_iQTS_low$ to $fees_iQTS_high$ for a one-year, full-time iQTS course. Check training provider websites for full details.
+Fees range from $fees_iQTS_low$ to $fees_iQTS_high$ for a 9-month, full-time iQTS course. Part-time courses take up to 2 years and fees vary. Check training provider websites for full details.
 
 Applicants for iQTS are not eligible for loans, bursaries or any other type of financial support from the Department for Education and Student Finance England to help cover the costs of studying for iQTS.
 
@@ -130,7 +130,7 @@ The following providers specialise in particular regions:
 
 ## Assessment for iQTS
 
-At the end of your training, your iQTS provider and school will assess you to check you meet the [iQTS Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards).
+At the end of your training, your iQTS provider and school will assess you to check you meet the [iQTS teachers’ standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards).
 
 Your training provider will award you iQTS when you have successfully passed this assessment process. You will then be automatically awarded QTS by England’s Department for Education.
 

@@ -23,7 +23,9 @@ module RoutesIntoTeaching
                           GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
                         end
 
-      @results = RoutesIntoTeaching::Routes.recommended(session[:routes_into_teaching])
+      routes_finder = RoutesIntoTeaching::RoutesFinder.new(answers: session[:routes_into_teaching])
+
+      @results = routes_finder.recommended
     end
 
   private

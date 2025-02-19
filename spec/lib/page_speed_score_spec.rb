@@ -43,7 +43,7 @@ end
 def expect_metric_set(page, strategy, scores)
   scores.each do |category, score|
     metric = prometheus.get("app_page_speed_score_#{category}".to_sym)
-    expect(metric).to receive(:set).with(score, labels: { strategy: strategy, path: "/#{page}" })
+    expect(metric).to receive(:set).with(score, { labels: { strategy: strategy, path: "/#{page}" } })
   end
 end
 

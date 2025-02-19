@@ -18,12 +18,12 @@ This documentation aims to be a reference for content editors that want to make 
     * [Adviser (CTA) component](#adviser-cta-component)
     * [Routes (CTA) component](#routes-cta-component)
     * [Mailing list (CTA) component](#mailing-list-cta-component)
+    * [Green arrow link (CTA) component](#green-arrow-link-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
-    * [Inset text](#inset-text)
+    * [Insets and expander components for non-UK content](#insets-and-expander-components-for-non-uk-content)
     * [Creating a partial](#creating-a-partial)
-    * [Details expander for non-UK content](#details-expander-for-non-uk-content)
     * [YouTube Video](#youtube-video)
     * [Hero](#hero)
     * [Values](#values)
@@ -288,9 +288,13 @@ When adding an iFrame elemet as part of Markdown content or a HTML page we shoul
 ></iframe>
 ```
 
-### Inset text
+### Insets and expander components for non-UK content
 
-If you need to call out something important in a page and differentiate it from the surrounding text, you can use the inset text component. Specify the component in the frontmatter and then include it anywhere in the page. We use the purple colour for non-UK content and the purple-white colour for non-UK content on a grey background.
+If you need to call out something important in a page and differentiate it from the surrounding text, you can use the inset or expander components. Specify the component in the frontmatter and then include it anywhere in the page. We use the purple colour for non-UK content and the purple-white colour for non-UK content on a grey background.
+
+#### Inset component for non-UK content
+
+You do not need to include both a heading and title in the inset text.
 
 ```yaml
 ---
@@ -302,7 +306,7 @@ inset_text:
     color: yellow|grey|purple|purple-white
 ---
 
-# My page
+# My page content
 
 $important-content$
 ```
@@ -316,7 +320,6 @@ If you need to insert an inset text component in an erb file:
   ) %>
 ```
 
-
 Use this component for non-UK content when:  
 
 * it will be the only non-UK component on the page  
@@ -328,12 +331,14 @@ If using this component for non-UK content:
 * always use the purple colour (or purple-white on a grey background) 
 * the header must be ‘Non-UK citizens:’ 
 
-If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the details expander.  
+If the content is for a specific group of non-UK citizens, for example, 'Refugees and asylum seekers' you can change the header. If you change the header to anything other than 'Non-UK citizens', you may need to manually add a colon after the header text, to do this, add quotation marks around the content and colon.
+
+If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the expander.  
 
 
-### Details expander for non-UK content
+#### Expander component for non-UK content
 
-You can use the details expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
+You can use the expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
 
 ```yaml
 ---
@@ -348,11 +353,10 @@ expander:
     title: Another example
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, purus eget lobortis maximus, diam leo consequat tellus, in interdum odio nisl sed nibh.
     header: Non-UK citizens
-    expanded: true
 ---
 
 
-# My page
+# My page content
 
 $check-your-qualifications$
 
@@ -435,10 +439,6 @@ This means that you can use the following code over many pages so that each page
 </div>
 
 ```
-
-
-
-
 
 ### Adviser (CTA) component
 
@@ -552,6 +552,44 @@ Alternatively, if you need to insert a mailing lists component in an erb file, y
 )%>
 ```
 
+### Green arrow link (CTA) component
+
+You can use the green arrow link (call to action) component to create a more prominent hyperlink call to action. You can use the component:
+
+* when it's the next logical step on users' journeys
+* more than once on a page
+
+The component should not be used:
+
+* on every page, if there is not a suitable use for it
+* to direct to pages that are not useful for most people e.g. veterans, SKITT
+* to direct to external sites like UCAS or Teach First
+
+It takes the following parameters and both should be specified:
+
+* link_text
+* link_target
+
+```yaml
+---
+cta_arrow_link:
+  events:
+    link_target: "/events/about-get-into-teaching-events"
+    link_text: "Find a Get Into Teaching event"
+---
+
+# My page
+
+$events$
+
+```
+Alternatively, if you need to insert a green arrow component in an erb file, you can call it like this:
+
+```yaml
+
+<%= render CallsToAction::ArrowLinkComponent.new(link_target: "/events/about-get-into-teaching-event", link_text: "Find a Get Into Teaching event") %>
+
+```
 
 ### YouTube video
 

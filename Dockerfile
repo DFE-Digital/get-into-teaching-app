@@ -1,5 +1,5 @@
 # To use or update to a ruby version, change BASE_RUBY_IMAGE
-ARG BASE_RUBY_IMAGE=ruby:3.1.4-alpine3.18
+ARG BASE_RUBY_IMAGE=ruby:3.4.1-alpine3.21
 
 FROM ${BASE_RUBY_IMAGE} AS base
 
@@ -8,7 +8,6 @@ ENV RAILS_ENV=production \
     RAILS_SERVE_STATIC_FILES=true \
     RAILS_LOG_TO_STDOUT=true \
     RACK_TIMEOUT_SERVICE_TIMEOUT=60 \
-    BUNDLE_WITHOUT=development \
     BUNDLE_JOBS=4
 
 RUN mkdir /app
@@ -17,14 +16,15 @@ WORKDIR /app
 RUN apk update
 
 RUN apk add --no-cache \
-  "procps-ng=4.0.4-r0" \
-  "libproc2=4.0.4-r0"
+  "procps-ng=4.0.4-r2" \
+  "libproc2=4.0.4-r2" \
+  "libwebp"
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
-        chromium chromium-chromedriver postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
+        postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
 
 # Install bundler
-RUN gem install bundler --version=2.3.4
+RUN gem install bundler --version=2.6.3
 
 # Install NPM packages removing artifacts
 COPY package.json yarn.lock ./
@@ -90,8 +90,9 @@ RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev &&
     rm -rf /var/lib/apt/lists/*
 
 RUN apk add --no-cache \
-  "procps-ng=4.0.4-r0" \
-  "libproc2=4.0.4-r0"
+  "procps-ng=4.0.4-r2" \
+  "libproc2=4.0.4-r2" \
+  "libwebp"
 
 COPY --from=release-build /app /app
 COPY --from=release-build /usr/local/bundle/ /usr/local/bundle/
