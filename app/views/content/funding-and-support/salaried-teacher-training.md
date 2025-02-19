@@ -56,7 +56,7 @@ The postgraduate salaried courses are:
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
-These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. 
+These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These tend to be less competitive, and you may be eligible for [bursaries or scholarships to help fund fee-paying courses](/funding-and-support/scholarships-and-bursaries).
 
 ## Am I eligible for a postgraduate salaried teacher training course? 
 
@@ -108,11 +108,11 @@ Some salaried courses award QTS only. You may have the option to do a salaried c
 
 ## How do I find a salaried teacher training course? 
 
-You can [find postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and filter by salaried courses. 
+To apply for salaried teacher training, you can [find postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and filter by salaried courses. 
 
-It’s usually wise to apply for non-salaried courses as well to increase your chances of getting a place on a course.
+It’s usually wise to apply for fee-paying courses as well to increase your chances of getting a place on a course.
 
-Some providers may require you to find your own school for placements. Check with the provider before you apply. 
+Some salaried teacher training providers will want you to have already arranged a school to work in while you train. Check with providers before you apply.
 
 ### Teach First 
 
