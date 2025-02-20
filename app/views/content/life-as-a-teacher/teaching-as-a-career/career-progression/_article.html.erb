@@ -2,7 +2,7 @@
   <section class="col col-720 col-space-l-top">
     <p>In teaching, there are lots of opportunities for progression and self development. You can progress your career at your own pace, and tailor your journey to your interests and goals.</p>
 
-    <p><%= render 'content/shared/quotes/quote_progression_aaron' %></p>
+    <%= render 'content/shared/quotes/quote_progression_aaron' %>
 
     <h2 class="heading--box-blue">Early career progression</h2>
     <p>The thought of teaching your own class after you’ve completed your teacher training may feel a bit daunting. But teaching offers the opportunity for continuous professional development so you’re always learning new skills.</p>
@@ -46,7 +46,7 @@
 
     <p>You may be able to get your NPQ course fees paid for through scholarship funding. You do not need to apply for it. When you register for an NPQ, you'll be told if you're eligible or not.</p>
 
-    <p><a href="https://www.gov.uk/guidance/national-professional-qualification-npq-courses">Find out more about national professional qualifications on GOV.UK</a>.</p>
+    <%= render CallsToAction::ArrowLinkComponent.new(link_target: "https://www.gov.uk/guidance/national-professional-qualification-npq-courses", link_text: "Find out more about national professional qualifications on GOV.UK") %>
 
     <h2 class="heading--box-blue">Salary progression</h2>
 
@@ -54,8 +54,8 @@
 
     <p>A typical teacher could earn at least <%= v :salaries_fiveyears_max %> (or more in London) after 5 years.</p>
 
-    <p><a href="/life-as-a-teacher/pay-and-benefits/teacher-pay">Find out more about teacher pay</a>.</p>
-
+    <%= render CallsToAction::ArrowLinkComponent.new(link_target: "/life-as-a-teacher/pay-and-benefits/teacher-pay", link_text: "Find out more about teacher pay") %>
+    
     <h3>Additional payments</h3>
 
     <p>You may also receive additional payments on top of your regular salary for taking on extra responsibilities. These are known as teaching and learning responsibility (TLR) payments.</p>
