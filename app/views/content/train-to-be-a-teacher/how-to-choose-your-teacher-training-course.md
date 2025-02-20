@@ -122,7 +122,7 @@ $fee-funded-teacher-training$
 
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. Some salaried teacher training courses may also come with fees. Check with individual providers for more information.
 
-Places on salaried courses are limited and very competitive. 
+Places on salaried courses are limited and very competitive. It’s usually wise to apply for fee-paying courses as well to increase your chances of getting a place on a course.
 
 You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
 
