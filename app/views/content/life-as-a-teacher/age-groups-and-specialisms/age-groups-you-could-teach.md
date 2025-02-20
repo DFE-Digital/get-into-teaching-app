@@ -10,11 +10,9 @@ cta_arrow_link:
   subjects:
     link_target: "/life-as-a-teacher/explore-subjects"
     link_text: "Explore the subjects you could teach at secondary school level"
-cta_arrow_link:
   schoolexperience:
     link_target: "/train-to-be-a-teacher/get-school-experience"
     link_text: "Find out more about opportunities to get school experience in England"
-cta_arrow_link:
   send:
     link_target: "/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs"
     link_text: "Learn more about the routes to teach pupils with special educational needs and disabilities (SEND)"

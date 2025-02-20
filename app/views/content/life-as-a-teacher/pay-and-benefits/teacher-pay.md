@@ -13,10 +13,9 @@ related_content:
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
     Ben's favourite things about teaching : "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching"
 cta_arrow_link:
-  career:
+  careers:
     link_target: "/life-as-a-teacher/teaching-as-a-career/career-progression"
     link_text: "Find out more about how to move up the career ladder in teaching"
-cta_arrow_link:
   benefits:
     link_target: "/life-as-a-teacher/why-teach/why-become-a-teacher"
     link_text: "Explore why people choose to become a teacher"
@@ -125,7 +124,7 @@ Their role is wide-ranging, but includes leading and motivating teachers, and en
 | Outer London                             | $salaries_headteacher_outerlondonmin$ | $salaries_headteacher_outerlondonmax$ |
 | Inner London                             | $salaries_headteacher_innerlondonmin$ | $salaries_headteacher_innerlondonmax$ |
 
-$career$
+$careers$
 
 ## If you do not have qualified teacher status (QTS)
 
