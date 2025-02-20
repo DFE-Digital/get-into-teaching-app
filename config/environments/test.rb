@@ -8,11 +8,13 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # While tests run files are not watched, reloading is not necessary.
   config.cache_classes = false
 
-  # Do not eager load code on boot. This avoids loading your whole application
-  # just for the purpose of running a single test. If you are using a tool that
-  # preloads Rails for running tests, you may have to set it to true.
+  # Eager loading loads your entire application. When running a single test locally,
+  # this is usually not necessary, and can slow down your test suite. However, it's
+  # recommended that you enable it in continuous integration systems to ensure eager
+  # loading is working properly before deploying your code.
   config.eager_load = false
 
   # Configure public file server for tests with Cache-Control for performance.
@@ -22,7 +24,7 @@ Rails.application.configure do
   }
 
   # Show full error reports and disable caching.
-  config.consider_all_requests_local       = true
+  config.consider_all_requests_local = true
   config.action_controller.perform_caching = false
   config.cache_store = :null_store
 
@@ -65,4 +67,7 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
+
+  # Raise error when a before_action's only/except options reference missing actions
+  # config.action_controller.raise_on_missing_callback_actions = true
 end
