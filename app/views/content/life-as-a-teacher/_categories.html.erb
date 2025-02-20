@@ -61,7 +61,7 @@
   </section>
 </div>
 
-<%= main_tag(class: "category") do %>
+<%= tag.div(class: "category") do %>
   <% grouped_categories(@page.path).each do |title, pages| %>
     <section class="container category__cards main-section">
       <%= tag.h2(title, id: title.parameterize, class: "heading--box-blue") %>
