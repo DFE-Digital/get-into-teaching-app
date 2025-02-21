@@ -25,6 +25,11 @@ expander:
           <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
           <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
         </ul>
+cta_arrow_link:
+  teachvisa:
+    link_target: "https://www.gov.uk/check-uk-visa"
+    link_text: "If you are not sure about your immigration status check if you need a UK visa"
+
 keywords:
   - International
   - Overseas
@@ -135,7 +140,7 @@ You may be able to [bring your partner and children with you on a Skilled Worker
 
 ## Check your status
 
-If you’re not sure about your immigration status, you can [check if you need a UK visa to teach in the UK](https://www.gov.uk/check-uk-visa).
+$teachvisa$
 
 You will not need a visa to teach in the UK if you:
 
