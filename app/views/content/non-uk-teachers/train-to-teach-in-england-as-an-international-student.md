@@ -35,6 +35,14 @@ expander:
           <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
           <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
         </ul>
+cta_arrow_link:
+   applying:
+     link_target: "/how-to-apply-for-teacher-training/teacher-training-application"
+     link_text: "Find guidance on applying for teacher training courses"
+   visas:
+     link_target: "/non-uk-teachers/visas-for-non-uk-trainees"
+     link_text: "Find out more about applying for a visa to train to teach in England"
+   
 
 keywords:
   - International
@@ -127,7 +135,7 @@ You can [search for postgraduate teacher training courses](https://find-teacher-
 
 Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time. 
 
-[Find guidance on applying for teacher training courses](/how-to-apply-for-teacher-training/teacher-training-application). 
+$applying$
 
 ## Apply for your visa
 
@@ -135,7 +143,7 @@ If you do not have the right to study or work in the UK, you will need a visa. Y
 
 Before you apply for your visa, you must have a confirmed offer of a training place on a course offering Student or Skilled Worker visa sponsorship. 
 
-Find out more about [applying for a visa to train to teach in England](/non-uk-teachers/visas-for-non-uk-trainees).  
+$visas$ 
 
 $ukraine-visas$
 
