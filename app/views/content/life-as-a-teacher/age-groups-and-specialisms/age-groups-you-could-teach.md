@@ -12,10 +12,10 @@ cta_arrow_link:
     link_text: "Explore the subjects you could teach at secondary school level"
   schoolexperience:
     link_target: "/train-to-be-a-teacher/get-school-experience"
-    link_text: "Find out more about opportunities to get school experience in England"
+    link_text: "Find out about opportunities to get school experience in England"
   send:
     link_target: "/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs"
-    link_text: "Learn more about the routes to teach pupils with special educational needs and disabilities (SEND)"
+    link_text: "Learn more about teaching pupils with special educational needs and disabilities (SEND)"
 ---
 
 It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. You might need specific training or qualifications in some areas. This page explains more about the different options.

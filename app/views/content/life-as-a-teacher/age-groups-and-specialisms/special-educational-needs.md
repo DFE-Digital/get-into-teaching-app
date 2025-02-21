@@ -93,6 +93,6 @@ An MQSI will give you the skills needed to recognise any barriers to learning th
 
 $find$
 
-Filter by ‘courses with a SEND specialism’ if you have a particular interest in the area. 
+Filter by ‘courses with a SEND specialism’ if you have a particular interest in this area. 
 
 $adviser$
