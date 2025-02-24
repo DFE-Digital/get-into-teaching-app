@@ -27,9 +27,9 @@ cta_arrow_link:
   bursaries:
     link_target: "/funding-and-support/scholarships-and-bursaries"
     link_text: "Learn more about bursaries and scholarships for physics and languages"
-  find:
-    link_target: "https://find-teacher-training-courses.service.gov.uk"
-    link_text: "Find postgraduate teacher training and filter by salaried courses"
+  salaried:
+    link_target: "/funding-and-support/salaried-teacher-training"
+    link_text: "Find out more about salaried teacher training"
 
 keywords:
   - International
@@ -136,13 +136,13 @@ $bursaries$
 
 ### Salaried teacher training courses
 
-Some teacher training courses in England are salaried. This means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). 
+Some teacher training courses in England are salaried. This means you work and earn a salary while you train. 
 
 You will need a [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa) if you are on a salaried training course. Your Skilled Worker visa must be sponsored by the school employing you. 
 
 Places on these courses are limited and some salaried courses also charge fees. 
 
-$find$
+$salaried$
 
 ### Teaching apprenticeships 
 
