@@ -7,6 +7,13 @@ description: |-
 navigation: 20.15
 navigation_title: What to expect in teacher training
 navigation_description: Find out what your teacher training will be like, what you'll learn, and what classroom experience you'll get.
+cta_arrow_link:
+  find:
+    link_target: "https://find-teacher-training-courses.service.gov.uk/"
+    link_text: "Find postgraduate teacher training courses"
+  placements:
+    link_target: "/train-to-be-a-teacher/school-placements"
+    link_text: "Find out more about school placements"
 cta_mailinglist:
   mailinglist:
     text: Get free guidance and support on getting into teaching, including top tips on writing a successful application.
@@ -32,7 +39,7 @@ You’ll also have a mentor to support you in your school placements and learnin
 
 There are full-time and part-time teacher training courses available.
 
-[Find postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/).
+$find$
 
 ## What you’ll learn in initial teacher training
 
@@ -61,7 +68,7 @@ environment
 
 School placements enable you to get experience in the classroom. They're an essential and exciting part of your training, and help you learn the skills you need to be a teacher.
 
-[Find out more about school placements](/train-to-be-a-teacher/school-placements).  
+$placements$  
 
 ## Your teacher training timetable
 
