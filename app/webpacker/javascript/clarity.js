@@ -47,6 +47,9 @@ export default class Clarity {
     document.addEventListener('cookies:accepted', () => {
       if (this.consentValue('non-functional') === 'granted') {
         this.initContainer();
+        window.clarity('consent');
+      } else if (this.consentValue('non-functional') === 'denied') {
+        window.clarity('consent', false);
       }
     });
   }

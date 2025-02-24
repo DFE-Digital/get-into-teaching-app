@@ -103,4 +103,7 @@
       <p><%= link_to("Find out more about how you could fund your training", page_path("funding-and-support")) %>.</p>
     </div>
   </section>
+  <%= render CallsToAction::MailinglistComponent.new(
+    text: "Get free guidance and support on getting into teaching, including top tips on writing a successful teacher training application.",
+  ) %>
 </div>

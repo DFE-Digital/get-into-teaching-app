@@ -22,7 +22,6 @@
 @import "blocks";
 @import "search-page";
 @import "steps";
-@import "blog";
 @import "welcome-guide";
 @import "category";
 @import "statement";
@@ -36,6 +35,7 @@
 
 @import "./components/adviser";
 @import "./components/routes";
+@import "./components/mailinglist";
 @import "./components/arrow";
 @import "./components/aspect-ratio";
 @import "./components/badge";
@@ -67,6 +67,7 @@
 @import "./components/mailing-list";
 @import "./components/purple-box";
 @import "./components/feedback";
+@import "./components/results-box";
 
 @import "./campaigns/numbered-headings";
 

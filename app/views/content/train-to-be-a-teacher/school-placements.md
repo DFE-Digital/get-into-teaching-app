@@ -72,7 +72,7 @@ School placements can seem daunting, but there's lots of support available.
 
 ### Your skills from training
 
-You’ll start your placements well equipped with a toolkit of theory and techniques that you'll learn in training. Placements are a chance to put your new skills into practice.
+You’ll start your placements well equipped with a toolkit of theory and techniques that you'll learn in training. Placements are a chance to put your new skills into practice. [Find out more about the skills needed for teaching](/life-as-a-teacher/teaching-as-a-career/skills-to-teach).
 
 ### Mentors
 
@@ -92,7 +92,7 @@ Your school leadership team and colleagues will be there to support you. Your pl
 
 ## Are placements paid?
 
-For fee-funded postgraduate training, you can get financial support through student finance, or you may be eligible for bursaries or scholarships. This support is available for your whole training course, including school placements. 
+For fee-paying postgraduate training, you can get financial support through student finance, or you may be eligible for bursaries or scholarships. This support is available for your whole training course, including school placements. 
 
 For salaried teacher training, you’ll receive a salary throughout your teacher training, including placements. Because of this, your placement school may also be referred to as your ‘employing school’.
 

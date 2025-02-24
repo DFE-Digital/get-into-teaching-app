@@ -28,8 +28,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "Not yet, I'm a first year student"
     click_on "Next step"
 
-    expect(page).to have_text "How close are you to applying"
-    choose "I'm not sure and finding out more"
+    expect(page).to have_text "How interested are you in applying"
+    choose "It's just an idea"
     click_on "Next step"
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
@@ -69,8 +69,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "Not yet, I'm a first year student"
     click_on "Next step"
 
-    expect(page).to have_text "How close are you to applying"
-    choose "I'm not sure and finding out more"
+    expect(page).to have_text "How interested are you in applying"
+    choose "It's just an idea"
     click_on "Next step"
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
@@ -108,8 +108,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "Almost, I'm a final year student"
     click_on "Next step"
 
-    expect(page).to have_text "How close are you to applying"
-    choose "I'm not sure and finding out more"
+    expect(page).to have_text "How interested are you in applying"
+    choose "It's just an idea"
     click_on "Next step"
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
@@ -147,8 +147,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "Not yet, I'm a first year student"
     click_on "Next step"
 
-    expect(page).to have_text "How close are you to applying"
-    choose "I'm not sure and finding out more"
+    expect(page).to have_text "How interested are you in applying"
+    choose "It's just an idea"
     click_on "Next step"
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
@@ -197,7 +197,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     )
     click_on "Next step"
 
-    expect(page).to have_text "How close are you to applying"
+    expect(page).to have_text "How interested are you in applying"
     expect(find("[name=\"mailing_list_steps_teacher_training[consideration_journey_stage_id]\"][checked]").value).to eq(
       response.consideration_journey_stage_id.to_s,
     )
@@ -335,7 +335,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     )
     click_on "Next step"
 
-    expect(page).to have_text "How close are you to applying"
+    expect(page).to have_text "How interested are you in applying"
     expect(find("[name=\"mailing_list_steps_teacher_training[consideration_journey_stage_id]\"][checked]").value).to eq(
       response.consideration_journey_stage_id.to_s,
     )

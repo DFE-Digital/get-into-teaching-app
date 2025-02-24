@@ -8,11 +8,17 @@ related_content:
     Teach physics : "/life-as-a-teacher/explore-subjects/physics"
 description: |-
   Find out more about subject knowledge enhancement (SKE) courses which will help you brush up your knowledge on the subject you want to teach.
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-ske-course
 cta_adviser:
   adviser:
     text: An adviser with years of teaching experience can help you understand how subject knowledge enhancement courses work. Chat by phone, text or email, as little or as often as you need.
+calls_to_action:
+  find:
+    name: find
+    arguments:
+      title: "Find your SKE course"
+      text: "Take a look at the different SKE courses available."
+      link_text: "Find your SKE course"
+      link_target: "https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory"
 youtube_video:
   ske-course-video:
     id: mWuHMtyFrFU
@@ -33,7 +39,7 @@ expander:
 
 You might need to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
 
-This could be because you have (one or more of the following):
+This could be because you have one or more of the following:
 
 * finished your degree more than 5 years ago
 * a different but related degree to the subject you want to teach
@@ -58,6 +64,8 @@ SKE courses are currently available in 5 secondary subjects:
 * languages
 * mathematics
 * physics
+
+[Find out more about what it's like to teach in secondary](/life-as-a-teacher/age-groups-and-specialisms/secondary).
 
 ### The benefits of an SKE course
 
@@ -97,8 +105,8 @@ You’ll need (one of the following):
 * a master’s degree
 * a PhD
 
-You can still do your SKE course while you do your teacher training but you'll only be eligible for a SKE bursary up until your teacher training course starts. This is because you may then be eligible for other financial support, for example a subject bursary or tuition fee loan.
+You can still do your SKE course while you do your teacher training but you'll only be eligible for a SKE bursary up until your teacher training course starts. This is because you may then be [eligible for other financial support](/funding-and-support), for example a subject bursary or tuition fee loan.
 
 $SKE-bursaries$
-
+$find$
 $adviser$

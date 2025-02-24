@@ -95,7 +95,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       visit teacher_training_adviser_step_path(:identity, channel_activity: creation_channel_activity_student_union, sub_channel: sub_channel_id)
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       # Simulate en error to ensure channel id is not lost
       click_on "Next step"
       expect(page).to have_text("You need to enter your first name")
@@ -171,7 +171,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       visit "/teacher-training-advisers?channel_source=#{creation_channel_source_paid_advertising}&channel_service=#{creation_channel_service_mailing_list}&channel_activity=#{creation_channel_activity_student_union}&sub_channel=#{sub_channel_id}"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       # Simulate en error to ensure channel id is not lost
       click_on "Next step"
       expect(page).to have_text("You need to enter your first name")
@@ -247,7 +247,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       visit teacher_training_adviser_step_path(:identity, channel_activity: 999_999_999)
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -316,7 +316,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "that is a returning teacher" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -394,7 +394,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "with an equivalent degree (overseas)" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -467,7 +467,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "with an equivalent degree (UK)" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -538,7 +538,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       scenario "with an equivalent degree" do
         visit teacher_training_adviser_steps_path
 
-        expect(page).to have_css "h1", text: "Get an adviser"
+        expect(page).to have_css "h1", text: "Get a free adviser"
         fill_in_identity_step
         click_on "Next step"
 
@@ -604,7 +604,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       scenario "with an equivalent degree (UK)" do
         visit teacher_training_adviser_steps_path
 
-        expect(page).to have_css "h1", text: "Get an adviser"
+        expect(page).to have_css "h1", text: "Get a free adviser"
         fill_in_identity_step
         click_on "Next step"
 
@@ -671,7 +671,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "studying for a degree (not final year)" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -735,7 +735,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "studying for a degree (final year)" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -815,7 +815,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "candidate changes an answer" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -892,7 +892,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "candidate is a returning primary teacher" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -956,7 +956,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "without a degree" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -975,7 +975,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "without science GCSEs, primary" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -1022,7 +1022,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "without english/maths GCSEs, primary" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -1061,7 +1061,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "without GCSEs, secondary" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -1127,7 +1127,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "matchback" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 
@@ -1210,7 +1210,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
     scenario "skipping pre-filled optional steps" do
       visit teacher_training_adviser_steps_path
 
-      expect(page).to have_css "h1", text: "Get an adviser"
+      expect(page).to have_css "h1", text: "Get a free adviser"
       fill_in_identity_step
       click_on "Next step"
 

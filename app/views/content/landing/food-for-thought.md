@@ -4,7 +4,6 @@ description: Explore our best tips for university from some recently qualified t
 content:
     - content/landing/food-for-thought/header
     - content/landing/food-for-thought/quotes
-    - content/landing/food-for-thought/promo
 image: "static/images/content/hero-images/cake.png"
 layout: "layouts/minimal"
 colour: pink-yellow

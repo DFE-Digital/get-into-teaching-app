@@ -303,7 +303,7 @@ RSpec.feature "Event wizard", type: :feature do
     preferred_teaching_subject: nil
   )
     select_value_or_default "Do you have a degree?", degree_status
-    select_value_or_default "How close are you to applying for teacher training?", consideration_journey_stage
+    select_value_or_default "How interested are you in applying for teacher training?", consideration_journey_stage
     if page.has_text?("What's your UK postcode? (optional)")
       fill_in "What's your UK postcode? (optional)", with: postcode
     end

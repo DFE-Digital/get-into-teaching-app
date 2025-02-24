@@ -2,23 +2,23 @@
 
 <p>These questions help us provide tailored guidance depending on your circumstances.</p>
 
-<%= f.govuk_collection_select :degree_status_id,
-      f.object.degree_status_options,
-      :id,
-      ->(option) { degree_status_text(option) },
-      options: { prompt: true } %>
-
-<%= f.govuk_collection_select :consideration_journey_stage_id,
-      f.object.journey_stage_options,
-      :id,
-      :value,
-      options: { prompt: true } %>
-
 <%= f.govuk_collection_select :preferred_teaching_subject_id,
     f.object.teaching_subject_options,
     :id,
     :value,
-    options: { prompt: true } %>
+    options: { prompt: "Select a subject" } %>
+
+<%= f.govuk_collection_select :degree_status_id,
+      f.object.degree_status_options,
+      :id,
+      ->(option) { degree_status_text(option) },
+      options: { prompt: "Select a degree option" } %>
+
+<%= f.govuk_collection_select :consideration_journey_stage_id,
+      f.object.journey_stage_options,
+      :id,
+      ->(option) { format_option_value(option, "mailing_list_steps.teacher_training.consideration_journey_stage") },
+      options: { prompt: "Select an option" } %>
 
 <%= f.govuk_text_field :address_postcode, autocomplete: "postal-code" unless f.object.hide_postcode_field? %>
 

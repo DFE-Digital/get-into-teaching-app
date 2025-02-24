@@ -1,0 +1,18 @@
+<%= render Content::LandingHeroComponent.new(
+  title: "Find your route into teaching",
+  colour: "pastel yellow-yellow",
+  image: "static/images/route-hero.png"
+) %>
+
+<section class="container">
+  <div class="row inset">
+    <div class="col col-845 col-space-m-top">
+        <p>There are lots of ways you can train to become a teacher. We can help you find your path into teaching based on your circumstances. Answer 3 questions and we'll show you your options and next steps to start your teaching journey.</p>
+
+        <%= render Content::LinkAsButtonComponent.new(
+          link_text: "Start now",
+          href: routes_into_teaching_step_path(RoutesIntoTeaching::Wizard.steps.first.key)
+        ) %>
+    </div>
+  </div>
+</section>

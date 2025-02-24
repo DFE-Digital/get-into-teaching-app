@@ -1,3 +1,5 @@
+require "active_support/core_ext/integer/time"
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -37,11 +39,8 @@ Rails.application.configure do
   end
 
   # Specifies the header that your server uses for sending files.
-  # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
-  # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
-
-  # Store uploaded files on the local file system (see config/storage.yml for options).
-  # config.active_storage.service = :local
+  # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for Apache
+  # config.action_dispatch.x_sendfile_header = "X-Accel-Redirect" # for NGINX
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
@@ -49,9 +48,8 @@ Rails.application.configure do
     config.force_ssl = true
     config.ssl_options = { redirect: { exclude: ->(request) { request.path.include?("/check") } } }
   end
-
-  # Use the lowest log level to ensure availability of diagnostic information
-  # when problems arise.
+  # Include generic and useful information about system operation, but avoid logging too much
+  # information to avoid inadvertent exposure of personally identifiable information (PII).
   config.log_level = :info
 
   # Prepend all log lines with the following tags.
@@ -60,10 +58,9 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
   config.cache_store = :redis_cache_store, { namespace: "GIT" }
-
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "govuk_rails_boilerplate_production"
+  # config.active_job.queue_name_prefix = "get_into_teaching_website_production"
 
   config.action_mailer.perform_caching = false
 
@@ -133,7 +130,6 @@ Rails.application.configure do
     level: Rails.application.config.log_level,
     formatter: config.rails_semantic_logger.format
 
-  config.x.structured_data.blog_posting = false
   config.x.structured_data.web_site = true
   config.x.structured_data.organization = false
   config.x.structured_data.government_organization = true

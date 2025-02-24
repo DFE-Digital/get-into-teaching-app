@@ -4,13 +4,21 @@ heading: "Teacher pay"
 description: |-
   All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 backlink: "../../"
-promo_content:
-  - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+cta_mailinglist:
+  mailinglist:
+    text: Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.
 related_content:
     How to become a teacher : "/steps-to-become-a-teacher"
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
-    Ben's favourite things about teaching : "/life-as-a-teacher/pay-and-benefits/bens-favourite-things-about-teaching"
+    Ben's favourite things about teaching : "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching"
+cta_arrow_link:
+  careers:
+    link_target: "/life-as-a-teacher/teaching-as-a-career/career-progression"
+    link_text: "Find out more about how to move up the career ladder in teaching"
+  benefits:
+    link_target: "/life-as-a-teacher/why-teach/why-become-a-teacher"
+    link_text: "Explore why people choose to become a teacher"
 keywords:
   - Salary
   - Salaries
@@ -82,8 +90,6 @@ Depending on your responsibilities, you could earn up to an extra $salaries_tlr_
 
 Teachers who [take on a special educational needs and disabilities (SEND) role](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs) may also receive additional payments. These are known as SEN allowances.
 
-<a name="career-progression"></a>
-
 ## Career progression
 
 ### Leading practitioner salary
@@ -118,7 +124,7 @@ Their role is wide-ranging, but includes leading and motivating teachers, and en
 | Outer London                             | $salaries_headteacher_outerlondonmin$ | $salaries_headteacher_outerlondonmax$ |
 | Inner London                             | $salaries_headteacher_innerlondonmin$ | $salaries_headteacher_innerlondonmax$ |
 
-Find out more about [how to move up the career ladder in teaching](/life-as-a-teacher/teaching-as-a-career/career-progression).
+$careers$
 
 ## If you do not have qualified teacher status (QTS)
 
@@ -141,13 +147,6 @@ Or find out how you can earn an unqualified teacher salary while training to get
 | Outer London                             | $salaries_unqualifiedteacher_outerlondonmin$ | $salaries_unqualifiedteacher_outerlondonmax$ |
 | Inner London                             | $salaries_unqualifiedteacher_innerlondonmin$ | $salaries_unqualifiedteacher_innerlondonmax$ |
 
-## Teacher holidays
-
-You'll get more days holiday than people in many other professions. In school, full-time teachers work 195 days per year.
-
-For comparison, you'd work 227 days per year (on average) if you worked full time in an office.
-
-
 ## Teachers' pension scheme
 
  One of the great benefits of a teaching career is a secure pension with employer contributions of 28.6%.
@@ -159,3 +158,11 @@ It is a 'defined benefit' pension and is:
 * flexible and allows you to take some of it as a tax-free lump sum
 
 You also get other insurance benefits too. Find out more about the [teachers' pension scheme](/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme).
+
+## Other benefits of teaching
+
+In additional to the practical rewards of teaching, there's personal benefits too. Teaching is a career that allows you to make a difference, explore your creativity, and apply skills from your degree or previous career.
+
+$benefits$
+
+$mailinglist$

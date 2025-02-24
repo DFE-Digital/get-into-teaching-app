@@ -1,0 +1,93 @@
+<div class="row inset">
+  <section class="col col-720 col-space-l-top">
+    <h2 class="heading--box-blue">Why teach secondary</h2>
+    <div class="inset">
+      <p>Becoming a secondary school teacher is a great career choice if you want to make a difference in young people's lives. As students progress through school, you'll directly influence their future prospects through the grades you help them achieve and the values you share with them.</p>
+       <p>As a specialist, you'll inspire students to develop a passion for your subject. You'll give them the skills and knowledge needed to tackle increasingly complex content and maybe even motivate them to pursue your subject beyond school.</p>
+      <!-- Why teach: benefits -->
+      <%= render 'content/shared/teaching/benefits' %>
+    </div>
+      <section class="col col-720">
+    <%= render 'content/shared/quotes/quote_art_richard' %>
+    </section>
+    <h2 class="heading--box-blue">What you'll teach</h2>
+        <p>Pupils start secondary school in England when they’re 11. Throughout secondary school, pupils will be taught by subject specialists and will gain increasingly greater independence over their own learning.</p>
+      <p>As a secondary school teacher, you'll train as a subject specialist and teach the agreed curriculum for your subject.</p>
+     <p>Find out more about some of the <a href="/life-as-a-teacher/explore-subjects">subjects you could teach at secondary school</a>.</p>
+    <h3>Key stages</h3>
+    <p> In England, groups of years at school are broken in blocks called key stages. There are 3 key stages in secondary education, starting at key stage 3.</p>
+    <h4>Key stage 3 (KS3)</h4>
+    <p>KS3 includes years 7 to 9, with children aged 11 to 14. In KS3 pupils will be exposed to a broad curriculum. At the end of KS3, pupils will have some choice over the subjects they want to continue studying.</p>
+    <p>Based on the national curriculum, in KS3, pupils will be taught a range of compulsory subjects including:</p>
+     <ul>
+       <li>English</li>
+       <li>maths</li>
+       <li>science</li>
+       <li>history</li>
+       <li>geography</li>
+       <li>modern foreign languages (French, German, Spanish)</li>
+       <li>design and technology</li>
+       <li>art and design</li>
+       <li>music</li>
+       <li>physical education</li>
+       <li>citizenship</li>
+       <li>computing</li>
+     </ul>
+     <p>Religious education and relationships, sex and health education are also compulsory for all state-funded schools.</p>
+    <h4>Key stage 4 (KS4)</h4>
+    <p>KS4 includes years 10 and 11, with pupils aged 14 to 16. During KS4, most pupils work towards GCSEs or another national qualification. Some subjects are still compulsory at this age but pupils have some choice over other subjects. In KS4 pupils will learn subjects in greater depth and become more specialised.</p>
+     <p>Based on the national curriculum, compulsory subjects in KS4 include:</p>
+     <ul>
+      <li>English</li>
+      <li>maths</li>
+      <li>science</li>
+      <li>computing</li>
+      <li>physical education</li>
+      <li>citizenship</li>
+     </ul>
+     <p>Pupils can then choose from a range of subjects offered by the school. Maintained schools must offer at least 1 subject from each of these areas:</p>
+     <ul>
+      <li>arts (art and design, music, dance, drama)</li>
+      <li>design and technology</li>
+      <li>humanities (history and geography)</li>
+      <li>modern foreign languages</li>
+      </ul>
+    <p>Religious education and relationships, sex and health education are also compulsory for all state-funded schools.</p>
+    <h4>Key stage 5 (KS5)</h4>
+    <p>KS5 includes years 12 and 13, with students aged 16 to 18 studying at secondary schools with sixth forms, or at colleges.</p>
+    <p>Most students in KS5 will be working towards A levels, T Levels or other equivalent qualifications. At this age, students are given the opportunity to follow their own interests. The subjects and qualifications they choose will impact what they can apply for at university, and whether they would be well placed to pursue apprenticeships or start skilled employment.</p>
+    <%= render CallsToAction::ArrowLinkComponent.new(link_target: "/steps-to-become-a-teacher", link_text: "Find out how to become a teacher") %>
+    <p>If you're interested in teaching young people and adults over 16 who are not studying for a degree, then <a href="/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers">teaching in further education</a> might be for you.</p>
+
+    <h2 class="heading--box-blue">Pupils with special educational needs and disabilities (SEND)</h2>
+    <%= render 'content/shared/teaching/teaching_send' %>
+     <h2 class="heading--box-blue">Start your journey into teaching <%= @front_matter["subject"] %></h2>
+    <h3>Check your qualifications</h3>
+  <p>To train to teach <%= @front_matter["subject"] %> in England, you'll need:</p>
+  <ul>
+    <li>GCSEs at grade 4 (C) or above in English and maths</li>
+    <li>a bachelor's degree in any subject</li>
+  </ul>
+    <%= render 'content/shared/qualifications-training/find_out_more' %>
+    <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
+  </section>
+  <section class="col col-space-m col-720">
+    <h3>Fund your teacher training</h3>
+    <p>Depending on the subject you choose to teach, you could be eligible for a bursary or scholarship. <a href="/funding-and-support/scholarships-and-bursaries">Check what funding is available for your subject</a>.</p>
+    <%= render 'content/shared/teaching/funding_support' %>
+      <%= render 'content/shared/quotes/quote_maths_gloria' %>
+  </section>
+  <section class="col col-space-m col-720">
+   <%= render 'content/shared/qualifications-training/get_school_experience' %>
+   <div class="paid-internships">
+   <h3>Apply for a paid internship</h3>
+   <p>If you're currently doing an undergraduate or master's degree and are interested in chemistry, computing, languages, maths or physics, you could apply for a <a href="/train-to-be-a-teacher/teaching-internships">paid teaching internship</a>.</p>
+   <p>The 3-week programme could help you to understand what it's really like in the classroom and get a feel for school life.</p></div>
+  </section>
+  <section class="col col-720">
+    <%= render 'content/shared/teaching/ect_support' %>
+  </section>
+    <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can help you to become a teacher. Chat by phone, text, or email as little or often as you need.",
+  ) %>
+</div>

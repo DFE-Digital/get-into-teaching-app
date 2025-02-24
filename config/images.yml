@@ -7,13 +7,6 @@
     - "static/images/content/hero-images/chemistry-crop--mobile.jpg"
     - "static/images/content/hero-images/chemistry-crop--tablet.jpg"
 
-"static/images/content/hero-images/teacher.jpg":
-  # A teacher talking to students
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/teacher--mobile.jpg"
-    - "static/images/content/hero-images/teacher--tablet.jpg"
-
 "static/images/content/hero-images/teacher2.jpg":
   # A teacher listening to a group of students
   alt: "A teacher listening to a group of students"
@@ -34,27 +27,6 @@
   variants:
     - "static/images/content/hero-images/english--mobile.jpg"
     - "static/images/content/hero-images/english--tablet.jpg"
-
-"static/images/content/hero-images/classroom.jpg":
-  # A teacher helping a student
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/classroom--mobile.jpg"
-    - "static/images/content/hero-images/classroom--tablet.jpg"
-
-"static/images/content/hero-images/classroom-2.jpg":
-  # A teacher standing at the back of the classroom helping a student
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/classroom-2--mobile.jpg"
-    - "static/images/content/hero-images/classroom-2--tablet.jpg"
-
-"static/images/content/hero-images/maths.jpg":
-  # A teacher standing at the front of a classroom teaching maths
-  alt: ""
-  variants:
-    - "static/images/content/hero-images/maths--mobile.jpg"
-    - "static/images/content/hero-images/maths--tablet.jpg"
 
 "static/images/content/hero-images/chemistry.jpg":
   # A teacher with two students doing a science experiment
@@ -215,91 +187,105 @@
     - "static/images/content/hero-images/0037--mobile.jpg"
     - "static/images/content/hero-images/0037--tablet.jpg"
 
-"static/images/content/hero-images/physics_1383.jpg":
-  alt: "A physics teacher demonstrating how gravity works by juggling balls at the front of the classroom."
+"static/images/content/hero-images/art-digital-painting.jpg":
+  alt: "An art teacher showing a pupil how to use digital art software on a computer"
   variants:
-    - "static/images/content/hero-images/physics_1383-mobile.jpg"
-    - "static/images/content/hero-images/physics_1383-tablet.jpg"
+    - "static/images/content/hero-images/art-digital-painting--mobile.jpg"
+    - "static/images/content/hero-images/art-digital-painting--tablet.jpg"    
 
-# blog
+"static/images/content/hero-images/art-easels.jpg":
+  alt: "An art teacher showing pupils how to paint a bowl of fruit"
+  variants:
+    - "static/images/content/hero-images/art-easels--mobile.jpg"
+    - "static/images/content/hero-images/art-easels-painting--tablet.jpg"
+
+"static/images/content/hero-images/maths-1-1.jpg":
+  alt: "A maths teacher working alongside a pupil"
+  variants:
+    - "static/images/content/hero-images/maths-1-1--mobile.jpg"
+    - "static/images/content/hero-images/maths-1-1--tablet.jpg"
+
+"static/images/content/hero-images/maths-1-1-2.jpg":
+  alt: "A maths teacher working alongside a pupil"
+  variants:
+    - "static/images/content/hero-images/maths-1-1-2--mobile.jpg"
+    - "static/images/content/hero-images/maths-1-1-2--tablet.jpg"    
+
+"static/images/content/hero-images/maths-pythagoras.jpg":
+  alt: "A maths teacher demonstrating maths theory to pupils"
+  variants:
+    - "static/images/content/hero-images/maths-pythagoras--mobile.jpg"
+    - "static/images/content/hero-images/maths-pythagoras--tablet.jpg"
+
+"static/images/content/hero-images/maths-pythagoras2.jpg":
+  alt: "A maths teacher demonstrating maths theory to pupils"
+  variants:
+    - "static/images/content/hero-images/maths-pythagoras2--mobile.jpg"
+    - "static/images/content/hero-images/maths-pythagoras2--tablet.jpg"
+
+"static/images/content/hero-images/maths-volumes.jpg":
+  alt: "A maths teacher demonstrating volumes to pupils"
+  variants:
+    - "static/images/content/hero-images/maths-volumes--mobile.jpg"
+    - "static/images/content/hero-images/maths-volumes--tablet.jpg"
+
+"static/images/content/hero-images/maths-volumes2.jpg":
+  alt: "A maths teacher demonstrating volumes to pupils"
+  variants:
+    - "static/images/content/hero-images/maths-volumes2--mobile.jpg"
+    - "static/images/content/hero-images/maths-volumes2--tablet.jpg"
+
+"static/images/content/hero-images/music-ukuleles.jpg":
+  alt: "A music teacher with pupils showing them how to play a ukelele"
+  variants:
+    - "static/images/content/hero-images/music-ukuleles--mobile.jpg"
+    - "static/images/content/hero-images/music-ukuleles--tablet.jpg"
+
+"static/images/content/hero-images/peer-to-peer-collaboration.jpg":
+  alt: "Two teachers having a conversation"
+  variants:
+    - "static/images/content/hero-images/peer-to-peer-collaboration--mobile.jpg"
+    - "static/images/content/hero-images/peer-to-peer-collaboration--tablet.jpg"
+
+"static/images/content/hero-images/peer-to-peer-guidance.jpg":
+  alt: "Two teachers having a conversation"
+  variants:
+    - "static/images/content/hero-images/peer-to-peer-guidance--mobile.jpg"
+    - "static/images/content/hero-images/peer-to-peer-guidance--tablet.jpg"
+
+"static/images/content/hero-images/physics-oscilloscope.jpg":
+  alt: "A teacher using an oscilloscope to teach a physics lesson"
+  variants:
+    - "static/images/content/hero-images/physics-oscilloscope--mobile.jpg"
+    - "static/images/content/hero-images/physics-oscilloscope--tablet.jpg"
+
+"static/images/content/hero-images/physics-oscilloscope2.jpg":
+  alt: "A teacher using an oscilloscope to teach a physics lesson"
+  variants:
+    - "static/images/content/hero-images/physics-oscilloscope2--mobile.jpg"
+    - "static/images/content/hero-images/physics-oscilloscope2--tablet.jpg"
+
+"static/images/content/hero-images/physics-van-de-graaff.jpg":
+  alt: "A teacher using an van de graaff machine to teach a physics lesson"
+  variants:
+    - "static/images/content/hero-images/physics-van-de-graaff--mobile.jpg"
+    - "static/images/content/hero-images/physics-van-de-graaff--tablet.jpg"
+
+"static/images/route-hero.png":
+  alt: ""
+
+# case studies
 "static/images/content/case-studies/abigail.jpg":
   alt: "Maths teacher Abigail in front of a maths display board."
 
 "static/images/content/case-studies/ben.jpg":
   alt: "Maths and science teacher Ben marking work at home."
 
-"static/images/content/blog/applying-for-teacher.jpg":
+# how to apply for teacher training
+"static/images/content/application/notepad.jpg":
   alt: ""
   variants:
-    - "static/images/content/blog/thumbnails/applying-for-teacher.jpg"
-
-"static/images/content/blog/calculator.jpg":
-  # A calculator on top of maths homework and a pencil case.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/calculator.jpg"
-
-"static/images/content/blog/interview.jpg":
-  # A teacher training candidate being interviewed by a provider sitting at opposite sides of a desk.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/interview.jpg"
-
-"static/images/content/blog/mel-stta-screen.jpg":
-  alt: "Conference room with tables and a projector for a Sheffield Teacher Training Alliance PGDE course."
-  variants:
-    - "static/images/content/blog/thumbnails/mel-stta-screen.jpg"
-
-"static/images/content/blog/notepad.jpg":
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/notepad.jpg"
-
-"static/images/content/blog/right_provider.jpg":
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/right_provider.jpg"
-
-"static/images/content/blog/school-aisle.jpg":
-  # The corridor of a school filled with children.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/school-aisle.jpg"
-
-"static/images/content/blog/schoolyard.jpg":
-  # A school playground with secondary school children playing outdoors.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/schoolyard.jpg"
-
-"static/images/content/blog/seminar-room.jpg":
-  # PGCE lecturer at a whiteboard in a seminar room with teacher training students sitting at a table.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/seminar-room.jpg"
-
-"static/images/content/blog/get-into-teaching.jpg":
-  # A busy Get Into Teaching event with attendees having conversations with Teacher Training Advisers.
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/get-into-teaching.jpg"
-
-"static/images/content/blog/whiteboard.jpg":
-  alt: ""
-  variants:
-    - "static/images/content/blog/thumbnails/whiteboard.jpg"
-  
-"static/images/content/blog/thumbnails/stories-zainab.jpg":
-  alt: "Zainab Kasmani, English teacher"
-
-"static/images/content/blog/thumbnails/stories-sarah-f.jpg":
-  alt: "Sarah Fisher, head of biology"
-
-"static/images/content/blog/thumbnails/stories-generic.jpg":
-  alt: "Students enjoying a lesson in a classroom"
-
-"static/images/content/blog/thumbnails/stories-katie.jpg":
-  alt: "Head of faculty, Katie Lockett"
+    - "static/images/content/application/thumbnails/notepad.jpg"
 
 # homepage
 "static/images/content/homepage/here-to-help.jpg":
@@ -315,7 +301,7 @@
   # a teacher with a group of students.
   alt: ""
 "static/images/content/homepage/directory3.jpg":
-  # A member of the events team at an event 
+  # A member of the events team at an event
   alt: ""
 "static/images/content/homepage/directory4.jpg":
   # A language teacher talking to pupils in a classroom.
@@ -347,9 +333,6 @@
 # landing
 "static/images/content/landing/train-to-teach.jpg":
   # A geography teacher laughing with students in a classroom.
-  alt: ""
-"static/images/content/landing/train-to-teach-if-you-have-a-degree-2.jpg":
-  # A biology teacher examining leaves with students.
   alt: ""
 "static/images/content/landing/how-to-fund-your-teacher-training-2.jpg":
   # Students learn about chemical reactions with a chemistry teacher.
@@ -399,5 +382,3 @@
 # subjects
 "static/images/content/subjects/rotna-roy.jpeg":
   alt: "Rotna, maths teacher"
-
-

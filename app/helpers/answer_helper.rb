@@ -6,7 +6,14 @@ module AnswerHelper
     when Date
       answer = answer.to_formatted_s(:govuk_zero_pad)
     when Time
-      answer = answer.in_time_zone.to_formatted_s(:govuk_time)
+      local_time = answer.in_time_zone
+      answer = if local_time.hour.zero? && local_time.min.zero?
+                 "Midnight"
+               elsif local_time.hour == 12 && local_time.min.zero?
+                 "Midday"
+               else
+                 local_time.to_formatted_s(:govuk_time_with_period)
+               end
     end
 
     safe_format(answer.to_s, wrapper_tag: "span")

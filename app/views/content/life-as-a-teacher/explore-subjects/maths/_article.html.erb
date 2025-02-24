@@ -5,6 +5,7 @@
       <p>A good understanding of maths can help children develop life skills such as cooking, managing a budget and problem solving.</p>
       <!-- Why teach: benefits -->
       <%= render 'content/shared/teaching/benefits' %>
+      <%= render 'content/shared/teaching/why_teach' %>
   </section>
 
   <section class="col col-720">
@@ -44,15 +45,15 @@
       <li>estimation</li>
       <li>critical analysis of given data and models</li>
     </ul>
-    <%= render 'content/shared/teaching/ages_abilities' %>
+     <p><%= render 'content/shared/teaching/ages_abilities' %> <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary"> Explore more about teaching secondary</a>.</p>
   </section>
 
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching maths</h2>
-     <%= render 'content/shared/qualifications-training/check_qualifcations' %>
-    <p><p><%= @front_matter ["subject"].titleize %> teacher training courses have had successful applications from candidates with a range of degrees, including psychology, music, architecture and law.</p>
-    <p>Find out more about what <a href="/train-to-be-a-teacher/qualifications-you-need-to-teach">qualifications you need to train to teach</a>.</p>
-     <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
+    <%= render 'content/shared/qualifications-training/check_qualifications' %>
+    <p><%= @front_matter ["subject"].titleize %> teacher training courses have had successful applications from candidates with a range of degrees, including psychology, music, architecture and law.</p>
+    <%= render 'content/shared/qualifications-training/find_out_more' %>
+    <%= render 'content/shared/qualifications-training/non_uk_qualifications' %>
   </section>
 
   <section class="col col-space-m col-720">
