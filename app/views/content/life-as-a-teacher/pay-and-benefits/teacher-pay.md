@@ -12,6 +12,13 @@ related_content:
     Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
     Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
     Ben's favourite things about teaching : "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching"
+cta_arrow_link:
+  careers:
+    link_target: "/life-as-a-teacher/teaching-as-a-career/career-progression"
+    link_text: "Find out more about how to move up the career ladder in teaching"
+  benefits:
+    link_target: "/life-as-a-teacher/why-teach/why-become-a-teacher"
+    link_text: "Explore why people choose to become a teacher"
 keywords:
   - Salary
   - Salaries
@@ -117,7 +124,7 @@ Their role is wide-ranging, but includes leading and motivating teachers, and en
 | Outer London                             | $salaries_headteacher_outerlondonmin$ | $salaries_headteacher_outerlondonmax$ |
 | Inner London                             | $salaries_headteacher_innerlondonmin$ | $salaries_headteacher_innerlondonmax$ |
 
-Find out more about [how to move up the career ladder in teaching](/life-as-a-teacher/teaching-as-a-career/career-progression).
+$careers$
 
 ## If you do not have qualified teacher status (QTS)
 
@@ -156,6 +163,6 @@ You also get other insurance benefits too. Find out more about the [teachers' pe
 
 In additional to the practical rewards of teaching, there's personal benefits too. Teaching is a career that allows you to make a difference, explore your creativity, and apply skills from your degree or previous career.
 
-[Explore why people choose to become a teacher](/life-as-a-teacher/why-teach/why-become-a-teacher).
+$benefits$
 
 $mailinglist$

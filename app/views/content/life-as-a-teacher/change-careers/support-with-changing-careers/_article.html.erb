@@ -12,12 +12,13 @@
     <p>If you're not sure if teaching is right for you, they may know of support available that you're not aware of, and can give practical advice on how other career changers have successfully trained to be a teacher.</p>
     <p>To sign up you'll need to have, or be studying for, a bachelor's degree with honours.</p>
     <p>You can chat to your dedicated adviser by phone, text or email.</p>
-    <p>Find out more about <a href="/teacher-training-advisers">getting a teacher training adviser</a>.</p>
+    <%= render CallsToAction::ArrowLinkComponent.new(link_target: "/teacher-training-advisers", link_text: "Find out more about getting a teacher training adviser") %>
     <h3>Support from Now Teach</h3>
     <p>Now Teach is a charity that provides support to career changers. Their service helps experienced professionals get into teaching and offers 2 years of one-to-one career change support as you train and beyond.</p>
     <p>Find out more about <a href="https://nowteach.org.uk/">support from Now Teach</a>.</p>
     <h3>Get Into Teaching events</h3>
-    <p>Anyone interested in teaching can attend a <a href="/events/about-get-into-teaching-events">Get Into Teaching event</a>. These relaxed and informative events provide all the information and support you need to help decide if changing your career to teaching is right for you. They'll give you the opportunity to get expert advice and talk to teachers and local training providers.</p>
+    <p>Anyone interested in teaching can attend a free Get Into Teaching event. These relaxed and informative events provide all the information and support you need to help decide if changing your career to teaching is right for you. They'll give you the opportunity to get expert advice and talk to teachers and local training providers.</p>
+    <%= render CallsToAction::ArrowLinkComponent.new(link_target: "/events/about-get-into-teaching-events", link_text: "Find a Get Into Teaching event near you") %>
   </section>
   <section class="col col-720">
     <p><%= render 'content/shared/quotes/quote_career_change_phil' %></p>

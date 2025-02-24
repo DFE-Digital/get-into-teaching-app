@@ -6,6 +6,16 @@ description: |-
 cta_mailinglist:
   mailinglist:
     text: Get free guidance and support on getting into teaching, including learning more about the age groups you could teach.
+cta_arrow_link:
+  subjects:
+    link_target: "/life-as-a-teacher/explore-subjects"
+    link_text: "Explore the subjects you could teach at secondary school level"
+  schoolexperience:
+    link_target: "/train-to-be-a-teacher/get-school-experience"
+    link_text: "Find out about opportunities to get school experience in England"
+  send:
+    link_target: "/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs"
+    link_text: "Learn more about teaching pupils with special educational needs and disabilities (SEND)"
 ---
 
 It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. You might need specific training or qualifications in some areas. This page explains more about the different options.
@@ -40,7 +50,7 @@ Pupils work towards national qualifications, which are usually GCSEs during KS4.
 
 Subjects at this level include core subjects such as English, maths and science, as well as many others. The full range of subjects available to teach at secondary level will depend on the school.
 
-[Explore the subjects you could teach at secondary school level](/life-as-a-teacher/explore-subjects). 
+$subjects$
 
 ### What you need to teach in primary and secondary schools
 
@@ -54,7 +64,7 @@ The best way to work out which age group you would like to teach is to get real 
 
 If you’re studying for an undergraduate or master's degree and interested in teaching chemistry, computing, languages, maths or physics, then you could do a [paid teaching internship](/train-to-be-a-teacher/teaching-internships) to find out if teaching is right for you.
 
-Find out more about opportunities to [get school experience in England](/train-to-be-a-teacher/get-school-experience).
+$schoolexperience$
 
 ### Teach pupils with special educational needs and disabilities (SEND)
 
@@ -62,7 +72,7 @@ Most disabled pupils and pupils with special educational needs learn in mainstre
 
 You can choose to apply for a teacher training course that specialises in SEND or you can gain the skills and experience as you train to teach.
 
-Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs).
+$send$
 
 ## Teaching other stages
 
