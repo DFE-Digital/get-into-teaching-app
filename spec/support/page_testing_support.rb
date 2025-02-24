@@ -59,7 +59,7 @@ class LinkChecker
   end
 
   def links
-    document.css("a").pluck("href")
+    document.css("a").pluck("href").map { |link| link.gsub("\\", "") }
   end
 
   def faraday(link)
