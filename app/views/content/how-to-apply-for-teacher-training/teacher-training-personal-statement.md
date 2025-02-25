@@ -45,6 +45,10 @@ quote:
     text: "Provided they have a good overall application and the right qualifications, most candidates who come to us for help with their personal statement will go on to get an interview." 
     name: "Josie, teacher training adviser" 
     classes: quote--indent 
+cta_arrow_link:
+  experience:
+    link_target: "/train-to-be-a-teacher/get-school-experience"
+    link_text: "Find out how you could get school experience"
 ---
 
 
@@ -124,7 +128,7 @@ You do not need school experience to apply for teacher training, but it can help
 
 Getting some school experience can also be a good way to make sure teaching is right for you before you apply for a course.
 
-[Find out how you could get school experience](/train-to-be-a-teacher/get-school-experience).
+$experience$
 
 $apply$
 $adviser$
