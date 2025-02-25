@@ -56,7 +56,7 @@ The postgraduate salaried courses are:
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
-These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These tend to be less competitive, and you may be eligible for [bursaries or scholarships to help fund fee-paying courses](/funding-and-support/scholarships-and-bursaries).
+These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries or scholarships to help fund fee-paying courses](/funding-and-support/scholarships-and-bursaries).
 
 ## Am I eligible for a postgraduate salaried teacher training course? 
 
