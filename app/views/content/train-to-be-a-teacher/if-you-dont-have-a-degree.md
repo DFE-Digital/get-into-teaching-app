@@ -18,6 +18,13 @@ calls_to_action:
 cta_mailinglist:
   mailinglist:
     text: Get free guidance and support on getting into teaching, including learning more about what teaching is like.
+cta_arrow_link:
+  qualifications:
+    link_target: "/train-to-be-a-teacher/qualifications-you-need-to-teach"
+    link_text: "Find out more about the qualifications you need to be a teacher in England"
+  tda:
+    link_target: "/train-to-be-a-teacher/teacher-degree-apprenticeships"
+    link_text: "Find out more about teacher degree apprenticeships (TDAs)"
 navigation: 20.35
 navigation_title: If you do not have a degree
 navigation_description: You need a bachelor's degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about bachelor's degree courses.
@@ -51,8 +58,7 @@ Qualifications vary depending on the course. For example, you could get QTS with
 - Bachelor of Education (BEd)
 - Bachelor of Science (BSc)
 
-[Find out more about the qualifications you need to be a teacher in England](/train-to-be-a-teacher/qualifications-you-need-to-teach).
-
+$qualifications$
 $international$
 
 ## Bursaries for undergraduate degrees
@@ -77,7 +83,6 @@ $find$
 ## Teacher degree apprenticeships (TDAs)
 If you do not have a degree you may be eligible to apply for a TDA. This new course will allow you work in a school and earn a salary while getting a bachelor's degree and QTS. So you will not have to pay tuition fees. 
 
-Find out more about [teacher degree apprenticeships (TDAs)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
-
+$tda$
 $teacher-degree-apprenticeships$
 $mailinglist$
