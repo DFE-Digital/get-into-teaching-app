@@ -12,6 +12,10 @@ related_content:
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
+cta_arrow_link:
+  parents-learning-allowance:
+    link_target: "https://www.gov.uk/parents-learning-allowance"
+    link_text: "Find out more about the Parents’ Learning Allowance"
 navigation: 20.30
 navigation_title: Funding and support if you're a parent or carer
 navigation_description: Find out what extra grants and schemes are available if you have children or other caring responsibilities.
@@ -86,7 +90,7 @@ To be eligible, you need to:
 * have dependent children
 * have a household income of less than $finance_parentslearningallowance_income$ a year
 
-[Find out more about the Parents’ Learning Allowance and how to apply](https://www.gov.uk/parents-learning-allowance).
+$parents-learning-allowance$
 
 ## If you’re a carer
 
