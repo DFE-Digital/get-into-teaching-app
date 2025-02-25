@@ -28,7 +28,7 @@ expander:
 cta_arrow_link:
   teachvisa:
     link_target: "https://www.gov.uk/check-uk-visa"
-    link_text: "If you are not sure about your immigration status check if you need a UK visa"
+    link_text: "Check if you need a UK visa"
 
 keywords:
   - International
