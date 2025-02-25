@@ -25,7 +25,6 @@ expander:
           <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
           <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
         </ul>
-        
   refugees-asylum-seekers:
     header: "Refugees and asylum seekers:"
     title: funding support
@@ -33,6 +32,11 @@ expander:
       <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you'll usually be eligible for financial support to help you train</a>.
       <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
       <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+
+cta_arrow_link:
+   immigration:
+     link_target: "https://www.gov.uk/check-uk-visa"
+     link_text: "If you are not sure about your immigration status, check if you need a UK visa"
       
 keywords:
   - International
@@ -59,9 +63,9 @@ If you are applying for teacher training as a non-UK citizen, you will need a vi
 
 If you do not already have a visa or immigration status allowing you to study or work in England, you will need to apply for a Student visa or Skilled Worker visa. 
 
-## Check your visa status
+$immigration$
 
-If you are not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
+## Check your visa status
 
 You will not need a visa to train to teach in the UK if you:
 

@@ -12,6 +12,11 @@ navigation_title: Qualifications you will need to train to teach in England
 navigation_description: Before you apply, get help checking you have the correct qualifications for English teacher training.
 image: "static/images/content/hero-images/0032.jpg"
 backlink: "../../"
+cta_arrow_link:
+   applying:
+     link_target: "/how-to-apply-for-teacher-training/teacher-training-application"
+     link_text: "Find guidance on applying for teacher training courses"
+
 keywords:
   - International
   - Overseas
@@ -97,7 +102,7 @@ The [UK Council for International Student Affairs website](https://www.ukcisa.or
 
 You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to qualified teacher status (QTS).  
 
-[Find guidance on applying for teacher training courses](/how-to-apply-for-teacher-training/teacher-training-application). 
+$applying$
 
 When you get offered a place on a course, your provider will arrange a background and criminal records check. This is known as a Disclosure and Barring Service (DBS) check. You must pass these checks to teach students under 18. Safeguarding checks may take longer if you are living or have lived abroad. 
 
