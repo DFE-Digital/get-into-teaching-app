@@ -36,7 +36,13 @@ expander:
           <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
           <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
         </ul>
-
+cta_arrow_link:
+  irp:
+    link_target: "/non-uk-teachers/get-an-international-relocation-payment"
+    link_text: "Find out more about the international relocation payment"
+  nonukqts:
+    link_target: "https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers"
+    link_text: "Check the eligibility criteria and apply for QTS in England"
 
     
 keywords:
@@ -58,13 +64,14 @@ Teach in England and you’ll benefit from working in a world-class education sy
 
 You’ll earn a [competitive salary](/life-as-a-teacher/pay-and-benefits/teacher-pay), get supported in your professional development and have varied job opportunities.
 
+If you are not a qualified teacher [find out how to train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
+
 To find out about teaching in other areas of the UK, visit the:
 
 * [Educator Wales website](https://www.ewc.wales/site/index.php/en/registration/index.php?option=com_content&view=article&id=12&Itemid=170&lang=en)
 * [Teach in Scotland website](https://teachinscotland.scot/)
 * [Northern Ireland Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland)
 
-Not qualified as a teacher yet? Find out [how to train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). 
 
 If you do not want to come to England to train, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status), which leads to the automatic award of English qualified teacher status. 
 
@@ -81,7 +88,9 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 
 ## Get an international relocation payment (IRP) worth up to $nonuk_internationalrelocationpayment_value$
 
-If you're interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for up to $nonuk_internationalrelocationpayment_value$ from the UK government. [Learn more about the international relocation payment](/non-uk-teachers/get-an-international-relocation-payment).
+If you're interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for up to $nonuk_internationalrelocationpayment_value$ from the UK government. 
+
+$irp$
 
 ## English qualified teacher status (QTS)
 
@@ -126,8 +135,8 @@ In addition, if you have a subject specialism in languages, maths or science and
 * Singapore
 * South Africa
 
- You can [check the eligibility criteria and apply for QTS in England on the GOV.UK website](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
- 
+$nonukqts$
+
 ### Other routes to QTS in England 
 
 Many teachers will not meet the requirements for QTS. If you’re not eligible, you may be able to [find an alternative route to QTS which better suits your circumstances](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk).
