@@ -37,9 +37,6 @@ expander:
           <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
         </ul>
 cta_arrow_link:
-  trainee:
-    link_target: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
-    link_text: "If you are not a qualified teacher find out how to train to teach in England as a non-UK citizen"
   irp:
     link_target: "/non-uk-teachers/get-an-international-relocation-payment"
     link_text: "Find out more about the international relocation payment"
@@ -67,7 +64,7 @@ Teach in England and you’ll benefit from working in a world-class education sy
 
 You’ll earn a [competitive salary](/life-as-a-teacher/pay-and-benefits/teacher-pay), get supported in your professional development and have varied job opportunities.
 
-$trainee$
+If you are not a qualified teacher [find out how to train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
 
 To find out about teaching in other areas of the UK, visit the:
 
