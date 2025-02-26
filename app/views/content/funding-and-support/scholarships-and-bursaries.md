@@ -13,6 +13,10 @@ cta_adviser:
 calls_to_action:
   find:
     name: find
+cta_arrow_link:
+  subjects:
+    link_target: "/life-as-a-teacher/explore-subjects"
+    link_text: "Find out more about the subjects you could teach"
 navigation: 20.15
 navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
@@ -106,7 +110,7 @@ You need to apply directly to the scholarship provider. Each provider sets their
 
 Table caption: Available postgraduate bursaries and scholarships
 
-Find out more about the [subjects you could teach](/life-as-a-teacher/explore-subjects).
+$subjects$
 
 ## Other funding options
 
