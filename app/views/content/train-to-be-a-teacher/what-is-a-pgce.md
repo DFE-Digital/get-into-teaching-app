@@ -20,6 +20,10 @@ calls_to_action:
 cta_mailinglist:
   mailinglist:
     text: Find out what being in a classroom is really like and get helpful guidance and support on getting into teaching.
+cta_arrow_link:
+  qts:
+    link_target: "/train-to-be-a-teacher/what-is-qts"
+    link_text: "Find out more about QTS"
 keywords:
   - PGCE
   - Post-graduate
@@ -51,7 +55,7 @@ You do not need a PGCE to be a qualified teacher in England.
 
 You need qualified teacher status (QTS) to teach in most primary, secondary and special schools in England. You can get QTS through undergraduate or postgraduate teacher training.
 
-[Find out more about qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
+$qts$
 
 Many teacher training courses also offer a postgraduate qualification, such as a PGCE, but you do not need one to teach.
 

@@ -13,6 +13,10 @@ calls_to_action:
     name: find
     arguments:
       title: "Find a teacher degree apprenticeship"
+cta_arrow_link:
+  tda:
+    link_target: "https://find-teacher-training-courses.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&university_degree_status=false&visa_status=false"
+    link_text: "View the teacher degree apprenticeship courses currently available"
 navigation: 20.45
 navigation_title: If you want to do a teaching apprenticeship
 navigation_description: A teacher degree apprenticeship (TDA) lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).
@@ -27,9 +31,7 @@ The TDA is a teacher training programme which offers a new route to become a qua
 
 The [teacher training providers confirmed so far offer TDAs in secondary maths](https://www.gov.uk/government/publications/secondary-maths-teacher-degree-apprenticeship-funding-pilot-providers/providers-selected-to-deliver-the-teacher-degree-apprenticeship-tda-funding-pilot). TDAs in other subjects will be added throughout the year, up until September 2025, with training due to start in autumn 2025. 
 
-[View the teacher degree apprenticeship courses currently available]( https://find-teacher-training-courses.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&university_degree_status=false&visa_status=false).
-
-
+$tda$
 $teacher-degree-apprenticeships$
 
 
