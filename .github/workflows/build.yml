@@ -23,6 +23,7 @@ env:
 jobs:
   build_base:
     name: Build base image
+    environment: review
     runs-on: ubuntu-latest
     outputs:
       DOCKER_IMAGE_TEST: ${{ steps.docker.outputs.DOCKER_IMAGE_TEST }}
@@ -84,7 +85,9 @@ jobs:
       - uses: Azure/login@v2
         if: failure() && github.ref == 'refs/heads/master'
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Fetch secrets from key vault
         if: failure() && github.ref == 'refs/heads/master'
@@ -107,6 +110,7 @@ jobs:
 
   build_release:
     name: Build release image
+    environment: review
     needs: [build_base]
     runs-on: ubuntu-latest
     outputs:
@@ -194,7 +198,9 @@ jobs:
       - uses: Azure/login@v2
         if: failure() && github.ref == 'refs/heads/master'
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Fetch secrets from key vault
         if: failure() && github.ref == 'refs/heads/master'
@@ -217,6 +223,7 @@ jobs:
 
   linting:
     name: Linting
+    environment: review
     runs-on: ubuntu-latest
     needs: [ build_base ]
     if: github.ref != 'refs/heads/master'
@@ -231,7 +238,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Lint SCSS
         run: |-
@@ -275,6 +284,7 @@ jobs:
 
   javascript_tests:
     name: Javascript Tests
+    environment: review
     runs-on: ubuntu-latest
     needs: [ build_base ]
     env:
@@ -293,6 +303,7 @@ jobs:
 
   feature_tests:
     name: Unit Tests
+    environment: review
     runs-on: ubuntu-latest
     needs: [ build_base ]
     services:
@@ -324,7 +335,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v2
@@ -367,6 +380,7 @@ jobs:
 
   sonarscanner:
     name: Sonar Scanner
+    environment: review
     runs-on: ubuntu-latest
     needs: [ build_base, feature_tests ]
     if: github.ref != 'refs/heads/master'
@@ -381,7 +395,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v2
@@ -456,7 +472,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            creds: ${{ secrets[format('AZURE_CREDENTIALS{0}', env.SECRET_SUFFIX)] }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v2
@@ -474,7 +492,9 @@ jobs:
           environment: review
           sha:  ${{ github.sha }}
           pr:   ${{github.event.number}}
-          AZURE_CREDENTIALS: ${{ secrets[format('AZURE_CREDENTIALS{0}', env.SECRET_SUFFIX)] }}
+          azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           KEY_VAULT:         ${{ secrets[format('KEY_VAULT{0}', env.SECRET_SUFFIX)] }}
 
       - name: Post sticky pull request comment
@@ -510,7 +530,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v2
@@ -527,7 +549,10 @@ jobs:
         with:
           environment: development
           sha:  ${{ github.sha }}
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
 
       - name: Generate Tag from PR Number
@@ -579,7 +604,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v2
@@ -595,7 +622,9 @@ jobs:
         id: deploy
         with:
           environment: development
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           GITHUB_TOKEN:      ${{secrets.GITHUB_TOKEN}}
 
@@ -625,7 +654,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v2
@@ -642,7 +673,9 @@ jobs:
         with:
           environment: test
           sha:  ${{ github.sha }}
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
 
       - name: Slack Notification
@@ -684,7 +717,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v2
@@ -741,7 +776,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v2
@@ -776,7 +813,9 @@ jobs:
         with:
           environment: production
           sha:  ${{ github.sha }}
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
 
       - name: Slack Release Notification

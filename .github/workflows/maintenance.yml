@@ -17,6 +17,12 @@ on:
         - enable
         - disable
 
+
+permissions:
+  contents: write
+  id-token: write
+  packages: write
+
 jobs:
   set-maintenance-mode:
     name: Set maintenance mode
@@ -30,7 +36,9 @@ jobs:
     - name: Enable or disable maintenance mode
       uses: DFE-Digital/github-actions/maintenance@master
       with:
-        azure-credentials: ${{ secrets.AZURE_CREDENTIALS }}
+        azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
         environment: ${{ inputs.environment }}
         mode: ${{ inputs.mode }}
         docker-repository: ghcr.io/dfe-digital/get-into-teaching-app-maintenance

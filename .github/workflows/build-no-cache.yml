@@ -5,9 +5,15 @@ on:
   schedule:
     - cron: '0 12 * * 0'
 
+permissions:
+  contents: write
+  packages: write
+  id-token: write
+
 jobs:
   build:
     name: Build
+    environment: review
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +25,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS_REVIEW }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v2
