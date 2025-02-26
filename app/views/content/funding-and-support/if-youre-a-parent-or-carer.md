@@ -16,6 +16,12 @@ cta_arrow_link:
   parents-learning-allowance:
     link_target: "https://www.gov.uk/parents-learning-allowance"
     link_text: "Find out more about the Parents’ Learning Allowance"
+  childcare-allowance:
+    link_target: "https://www.gov.uk/childcare-grant"
+    link_text: "Find out more about the Childcare Grant"
+  adult-grant:
+    link_target: "https://www.gov.uk/adult-dependants-grant"
+    link_text: "Find out more about the Adult Dependants’ Grants"
 navigation: 20.30
 navigation_title: Funding and support if you're a parent or carer
 navigation_description: Find out what extra grants and schemes are available if you have children or other caring responsibilities.
@@ -74,7 +80,7 @@ To be eligible, you need to:
 * have children under 15 (or 17 if they have special educational needs)
 * be eligible for student finance
 
-[Find out more about the Childcare Grant and how to apply](https://www.gov.uk/childcare-grant).
+$childcare-grant$
 
 ### Parents’ Learning Allowance
 
@@ -109,6 +115,5 @@ To be eligible, you need to:
 * have an adult depend on you financially
 * have a household income of less than $finance_adultdependantsgrant_income$
 
-[Find out more about the Adult Dependants’ Grants and how to apply](https://www.gov.uk/adult-dependants-grant).
-
+$adult-grant$
 $adviser$
