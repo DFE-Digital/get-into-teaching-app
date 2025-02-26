@@ -16,7 +16,7 @@ calls_to_action:
 cta_arrow_link:
   qualifications:
     link_target: "/train-to-be-a-teacher/qualifications-you-need-to-teach"
-    link text: "Find out about the qualifications you need to train to teach
+    link text: "Find out about the qualifications you need to train to teach"
   funding:
     link_target: "/funding-and-support"
     link_text: "Find out how to fund your training"
