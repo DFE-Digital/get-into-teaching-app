@@ -14,6 +14,9 @@ calls_to_action:
   find:
     name: find
 cta_arrow_link:
+  qualifications:
+    link_target: "/train-to-be-a-teacher/qualifications-you-need-to-teach"
+    link text: "Find out about the qualifications you need to train to teach
   funding:
     link_target: "/funding-and-support"
     link_text: "Find out how to fund your training"
@@ -104,7 +107,8 @@ It's important to check the requirements for each course you apply to on the tra
 
 ### Your qualifications 
 
-You need to have a degree in any subject to be able to train to teach. But the degree grade that course providers will accept may vary. For example, most providers will accept a minimum degree grade of 2:2, but some may require you to have a 2:1. So you’ll need to check each course provider’s requirements on their course page. [Find out about the qualifications you need to teach](/train-to-be-a-teacher/qualifications-you-need-to-teach).
+You need to have a degree in any subject to be able to train to teach. But the degree grade that course providers will accept may vary. For example, most providers will accept a minimum degree grade of 2:2, but some may require you to have a 2:1. So you’ll need to check each course provider’s requirements on their course page. 
+$qualifications$
 
 $what-you-need-to-get-onto-the-course$
 
