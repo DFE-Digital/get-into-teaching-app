@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-api-dev.london.cloudapps.digital/api/pick_list_items/contact_creation_channel/sources
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/3.5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer test
+      Request-Id:
+      - 99c7ade5-7ae5-4fb9-89f9-8e83b03e56a9
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '[{"id":222750000,"value":"Apply"},{"id":222750001,"value":"ChecKin
+        App"},{"id":222750002,"value":"Contact centre"},{"id":222750003,"value":"GIT
+        Website"},{"id":222750004,"value":"Highfliers"},{"id":222750005,"value":"HPITT
+        (Teach First)"},{"id":222750006,"value":"Internships"},{"id":222750007,"value":"Legacy"},{"id":222750008,"value":"On-campus"},{"id":222750009,"value":"Paid
+        Advertising"},{"id":222750010,"value":"Paid Search"},{"id":222750011,"value":"Paid
+        Social"},{"id":222750012,"value":"Pipeline"},{"id":222750013,"value":"School
+        experience"},{"id":222750014,"value":"Scholarships"}]'
+  recorded_at: Mon, 20 Jan 2025 16:07:57 GMT
+recorded_with: VCR 6.3.1

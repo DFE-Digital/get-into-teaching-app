@@ -21,6 +21,9 @@
         <%= f.govuk_text_field :last_name, autocomplete: "family-name" %>
         <%= f.govuk_email_field :email, autocomplete: "email" %>
         <%= f.hidden_field :channel_id, value: params[:channel] || f.object&.channel_id.presence %>
+        <%= f.hidden_field :creation_channel_source_id, value: params[:channel_source].presence || f.object&.creation_channel_source_id.presence %>
+        <%= f.hidden_field :creation_channel_service_id, value: params[:channel_service].presence || f.object&.creation_channel_service_id.presence %>
+        <%= f.hidden_field :creation_channel_activity_id, value: params[:channel_activity].presence || f.object&.creation_channel_activity_id.presence %>
         <%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object&.sub_channel_id.presence %>
         <%= f.hidden_field :accepted_policy_id, value: privacy_policy.id %>
         <% button_text = helpers.safe_html_format("Next step <span></span>") %>
