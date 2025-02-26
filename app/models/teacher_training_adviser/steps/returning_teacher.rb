@@ -9,6 +9,7 @@ module TeacherTrainingAdviser::Steps
 
     RTTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_009 # Return to Teacher Training Adviser Service
     TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_010 # Teacher Training Adviser Service
+    ETA_DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_005 # Explore Teaching Adviser Service (not in final year of degree)
 
     def returning_to_teaching
       type_id == OPTIONS[:returning_to_teaching]
@@ -32,6 +33,10 @@ module TeacherTrainingAdviser::Steps
       super
     end
 
+    def creation_channel_service_ids
+      @creation_channel_service_ids ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_contact_creation_channel_services.map { |obj| obj.id.to_i }
+    end
+
   private
 
     def channel_id
@@ -40,10 +45,6 @@ module TeacherTrainingAdviser::Steps
 
     def creation_channel_source_id
       other_step(:identity).creation_channel_source_id
-    end
-
-    def creation_channel_service_ids
-      @creation_channel_service_ids ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_contact_creation_channel_services.map { |obj| obj.id.to_i }
     end
   end
 end
