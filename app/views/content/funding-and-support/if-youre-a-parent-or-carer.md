@@ -16,7 +16,7 @@ cta_arrow_link:
   parents-learning-allowance:
     link_target: "https://www.gov.uk/parents-learning-allowance"
     link_text: "Find out more about the Parents’ Learning Allowance"
-  childcare-allowance:
+  childcare-grant:
     link_target: "https://www.gov.uk/childcare-grant"
     link_text: "Find out more about the Childcare Grant"
   adult-grant:
