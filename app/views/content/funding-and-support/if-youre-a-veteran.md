@@ -10,7 +10,10 @@ related_content:
 cta_adviser:
   adviser:
     text: "You can get dedicated guidance and support with your journey into teacher training from one of our veteran teacher training advisers. Chat by phone, text or email, as little or as often as you need."
-navigation: 20.35
+cta_arrow_link:
+  bursaries:
+    link_target: "/funding-and-support/scholarships-and-bursaries"
+    link_text: "Find out more about postgraduate scholarships and bursaries"
 navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 calls_to_action:
@@ -48,7 +51,7 @@ You’ll receive $bursaries_veteran_annual$ in each of the last 2 years of your 
 
 You may also be eligible for a postgraduate scholarship or bursary if you’re training to teach certain subjects.
 
-[Find out more about scholarships and bursaries](/funding-and-support/scholarships-and-bursaries).
+$bursaries$
 
 All teacher training candidates are also eligible for [tuition fee and maintenance loans](/funding-and-support/tuition-fee-and-maintenance-loans).
 
