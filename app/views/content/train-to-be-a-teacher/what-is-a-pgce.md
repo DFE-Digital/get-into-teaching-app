@@ -23,7 +23,7 @@ cta_mailinglist:
 cta_arrow_link:
   qts:
     link_target: "/train-to-be-a-teacher/what-is-qts"
-    link_text: "Find out more about qualified teacher status (QTS)"
+    link_text: "Find out more about QTS"
 keywords:
   - PGCE
   - Post-graduate

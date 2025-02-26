@@ -38,7 +38,7 @@ cta_mailinglist:
     text: Get helpful guidance and support on getting into teaching, including how to get the qualifications you need.
 cta_arrow_link:
   qts-teacher-training:
-    link_target: "/train-to-be-a-teacher"
+    link_target: "/routes-into-teaching"
     link_text: "Find out how to get QTS through teacher training"
   qts-ao:
     link_target: "/train-to-be-a-teacher/assessment-only-route-to-qts"

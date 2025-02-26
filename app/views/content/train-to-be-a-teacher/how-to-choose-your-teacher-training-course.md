@@ -19,10 +19,10 @@ cta_arrow_link:
     link_text: "Find out how to fund your training"
   salaried:
     link_target: "/funding-and-support/salaried-teacher-training"
-    link_text: "Find out what you’ll need to get on a salaried teacher training course"
+    link_text: "Find out more about salaried teacher training"
   expect:
     link_target: "/train-to-be-a-teacher/initial-teacher-training"
-    link_text: "Find out what to expect on your teacher training" 
+    link_text: "Find out what to expect during your teacher training" 
 navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.

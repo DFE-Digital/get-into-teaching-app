@@ -19,13 +19,13 @@ calls_to_action:
 cta_arrow_link:
   expect:
     link_target: "/train-to-be-a-teacher/initial-teacher-training"
-    link_text: "Find out what to expect on your teacher training" 
+    link_text: "Find out what to expect during your teacher training" 
   funding:
     link_target: "/funding-and-support"
     link_text: "Find out how to fund your training"
   choosecourse:
     link_target: "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    link_text: "Find out how to decide on the best course for you"
+    link_text: "Find out how to choose the best course for you"
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a bachelor's degree or you’re studying for one.
