@@ -10,6 +10,7 @@ related_content:
 cta_adviser:
   adviser:
     text: "You can get dedicated guidance and support with your journey into teacher training from one of our veteran teacher training advisers. Chat by phone, text or email, as little or as often as you need."
+navigation: 20.35
 cta_arrow_link:
   bursaries:
     link_target: "/funding-and-support/scholarships-and-bursaries"
