@@ -39,7 +39,7 @@ cta_mailinglist:
 cta_arrow_link:
   qts-teacher-training:
     link_target: "/routes-into-teaching"
-    link_text: "Find out how to get QTS through teacher training"
+    link_text: "Find your route to become a qualified teacher"
   qts-ao:
     link_target: "/train-to-be-a-teacher/assessment-only-route-to-qts"
     link_text: "Find out how to get QTS through assessment only"
