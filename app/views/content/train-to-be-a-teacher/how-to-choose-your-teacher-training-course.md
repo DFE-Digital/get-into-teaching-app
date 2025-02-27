@@ -107,9 +107,9 @@ It's important to check the requirements for each course you apply to on the tra
 
 ### Your qualifications 
 
-You need to have a degree in any subject to be able to train to teach. But the degree grade that course providers will accept may vary. For example, most providers will accept a minimum degree grade of 2:2, but some may require you to have a 2:1. So you’ll need to check each course provider’s requirements on their course page. 
-$qualifications$
+You need to have a degree in any subject to be able to train to teach. But the degree grade that course providers will accept may vary. For example, most providers will accept a minimum degree grade of 2:2, but some may require you to have a 2:1. So you’ll need to check each course provider’s requirements on their course page.
 
+$qualifications$
 $what-you-need-to-get-onto-the-course$
 
 ## The qualifications awarded by the course
