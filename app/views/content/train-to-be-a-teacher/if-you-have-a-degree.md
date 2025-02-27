@@ -16,6 +16,16 @@ cta_adviser:
 calls_to_action:
   find:
     name: find
+cta_arrow_link:
+  expect:
+    link_target: "/train-to-be-a-teacher/initial-teacher-training"
+    link_text: "Find out what to expect during your teacher training" 
+  funding:
+    link_target: "/funding-and-support"
+    link_text: "Find out how to fund your training"
+  choosecourse:
+    link_target: "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
+    link_text: "Find out how to choose the best course for you"
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a bachelor's degree or you’re studying for one.
@@ -88,8 +98,7 @@ This means that even if your course provider is a university, you'll still do pl
 
 The important thing to remember is that regardless of your course provider, all teacher training involves around 120 days of school placements in at least 2 schools.
 
-You can [find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
-
+$expect$
 $olivia$
 
 ## Where will my training take place?
@@ -117,15 +126,13 @@ You may be eligible for extra financial support if:
 * you're a veteran
 * you're eligible for a salaried teacher training course
 
-[Find out how to fund your training](/funding-and-support).
-
+$funding$
 $fees-and-funding$
 
 ## How to choose your teacher training course
 
 There are some differences in postgraduate teacher training courses. 
 
-[Find out how to decide on the best course for you](/train-to-be-a-teacher/how-to-choose-your-teacher-training-course).
-
+$choosecourse$
 $find$
 $adviser$

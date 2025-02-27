@@ -36,6 +36,13 @@ expander:
 cta_mailinglist:
   mailinglist:
     text: Get helpful guidance and support on getting into teaching, including how to get the qualifications you need.
+cta_arrow_link:
+  qts-teacher-training:
+    link_target: "/routes-into-teaching"
+    link_text: "Find your route to become a qualified teacher"
+  qts-ao:
+    link_target: "/train-to-be-a-teacher/assessment-only-route-to-qts"
+    link_text: "Find out how to get QTS through assessment only"
 keywords:
   - PGCE
   - Postgraduate
@@ -83,8 +90,7 @@ You can apply for courses that offer either primary teaching with QTS or seconda
 
 You can also get a postgraduate qualification through teacher training such as QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
 
-[Find out how to get QTS through teacher training](/train-to-be-a-teacher).
-
+$qts-teacher-training$
 $get-qts-through-teacher-training$
 
 ## Get QTS through an assessment only programme
@@ -96,7 +102,7 @@ You can usually do this if you’ve worked as an unqualified teacher:
 * for a significant amount of time (for example, 2 years)
 * in more than one school
 
-[Find out how to get QTS through assessment only](/train-to-be-a-teacher/assessment-only-route-to-qts ).
+$qts-ao$
 
 ## Get QTS if you qualified as a teacher in Wales, Scotland or Northern Ireland
 

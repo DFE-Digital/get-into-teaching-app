@@ -23,6 +23,10 @@ quote:
 cta_adviser:
   adviser:
     text: An adviser with years of teaching experience can tell you more about school placements and help maximise your chances of submitting a successful application. Chat by phone, text or email, as little or as often as you need.
+cta_arrow_link:
+  financial-support:
+    link_target: "/funding-and-support"
+    link_text: "Find out more about financial support for postgraduate teacher training"
 keywords:
     - placements
     - school placements
@@ -74,7 +78,7 @@ School placements can seem daunting, but there's lots of support available.
 
 ### Your skills from training
 
-You’ll start your placements well equipped with a toolkit of theory and techniques that you'll learn in training. Placements are a chance to put your new skills into practice. [Find out more about the skills needed for teaching](/life-as-a-teacher/teaching-as-a-career/skills-to-teach).
+You’ll start your placements well equipped with a toolkit of theory and techniques that you'll learn in training. Placements are a chance to put your new skills into practice. Find out more about the [skills needed for teaching](/life-as-a-teacher/teaching-as-a-career/skills-to-teach).
 
 ### Mentors
 
@@ -98,6 +102,5 @@ For fee-paying postgraduate training, you can get financial support through stud
 
 For salaried teacher training, you’ll receive a salary throughout your teacher training, including placements. Because of this, your placement school may also be referred to as your ‘employing school’.
 
-Find out more about [financial support for postgraduate teacher training](/funding-and-support).
-
+$financial-support$
 $adviser$

@@ -13,6 +13,19 @@ cta_adviser:
 calls_to_action:
   find:
     name: find
+cta_arrow_link:
+  qualifications:
+    link_target: "/train-to-be-a-teacher/qualifications-you-need-to-teach"
+    link_text: "Find out about the qualifications you need to train to teach"
+  funding:
+    link_target: "/funding-and-support"
+    link_text: "Find out how to fund your training"
+  salaried:
+    link_target: "/funding-and-support/salaried-teacher-training"
+    link_text: "Find out more about salaried teacher training"
+  expect:
+    link_target: "/train-to-be-a-teacher/initial-teacher-training"
+    link_text: "Find out what to expect during your teacher training" 
 navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.
@@ -94,8 +107,9 @@ It's important to check the requirements for each course you apply to on the tra
 
 ### Your qualifications 
 
-You need to have a degree in any subject to be able to train to teach. But the degree grade that course providers will accept may vary. For example, most providers will accept a minimum degree grade of 2:2, but some may require you to have a 2:1. So you’ll need to check each course provider’s requirements on their course page. [Find out about the qualifications you need to teach](/train-to-be-a-teacher/qualifications-you-need-to-teach).
+You need to have a degree in any subject to be able to train to teach. But the degree grade that course providers will accept may vary. For example, most providers will accept a minimum degree grade of 2:2, but some may require you to have a 2:1. So you’ll need to check each course provider’s requirements on their course page.
 
+$qualifications$
 $what-you-need-to-get-onto-the-course$
 
 ## The qualifications awarded by the course
@@ -114,8 +128,7 @@ Most teacher training courses are fee-paying. This means you have to pay tuition
 
 There are ways to fund your training, for example, through tuition fee and maintenance loans. You may also be eligible for a bursary or scholarship.
 
-You can [find out about the different ways to fund your training](/funding-and-support).
-
+$funding$
 $fee-funded-teacher-training$
 
 ### Salaried teacher training
@@ -124,8 +137,7 @@ Some courses are salaried, which means you’ll receive an unqualified teacher�
 
 Places on salaried courses are limited and very competitive. It’s usually wise to apply for fee-paying courses as well to increase your chances of getting a place on a course.
 
-You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
-
+$salaried$
 $salaried-teacher-training$
 
 ## The type of course provider 
@@ -155,7 +167,6 @@ There are usually more full-time courses available than part-time.
 
 Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
 
-[Find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
-
+$expect$
 $find$
 $adviser$
