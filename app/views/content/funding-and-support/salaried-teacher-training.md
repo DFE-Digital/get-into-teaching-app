@@ -86,7 +86,7 @@ If you’re eligible for a bursary or scholarship, you could receive more money 
 
 ## How does salaried teacher training work? 
 
-Salaried teacher training is usually similar to non-salaried teacher training. You'll spend most of your time in [school placements](/train-to-be-a-teacher/school-placements), with some theoretical learning.
+Salaried teacher training is usually similar to non-salaried teacher training. You'll spend most of your time [working in a school while you train](/train-to-be-a-teacher/school-placements), with some theoretical learning.
 
 $nathan$
 
