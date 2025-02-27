@@ -60,6 +60,10 @@ quote:
     text: "My best advice for a successful application is to be reflective in your personal statement and interview, think about why you want to teach, about the sort of classroom you envisage yourself in (and why) and talk about it!"
     name: "Giorgio, biology teacher"
     classes: quote--indent
+cta_arrow_link:
+  find:
+    link_target: "https://find-teacher-training-courses.service.gov.uk/"
+    link_text: "Find postgraduate teacher training"
 ---
 
 Find out what you need to include in your primary or secondary teacher training application and what happens as part of the application process. 
@@ -75,7 +79,7 @@ Make sure you check which qualification you’ll get through your training cours
 
 While you do not need a PGCE to teach in England, you do need QTS to teach in many primary and secondary schools.
 
-[Find a postgraduate teacher training course](https://find-teacher-training-courses.service.gov.uk/). 
+$find$
 
 $visas$
 
