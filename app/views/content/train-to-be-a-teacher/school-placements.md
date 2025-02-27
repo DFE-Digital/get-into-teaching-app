@@ -76,7 +76,7 @@ School placements can seem daunting, but there's lots of support available.
 
 ### Your skills from training
 
-You’ll start your placements well equipped with a toolkit of theory and techniques that you'll learn in training. Placements are a chance to put your new skills into practice. [Find out more about the skills needed for teaching](/life-as-a-teacher/teaching-as-a-career/skills-to-teach).
+You’ll start your placements well equipped with a toolkit of theory and techniques that you'll learn in training. Placements are a chance to put your new skills into practice. Find out more about the [skills needed for teaching](/life-as-a-teacher/teaching-as-a-career/skills-to-teach).
 
 ### Mentors
 
