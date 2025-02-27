@@ -76,7 +76,7 @@ You may be eligible for a $bursaries_veteran_total$ tax-free undergraduate bursa
 * training to teach secondary biology, chemistry, computing, languages, maths, or physics
 * doing an undergraduate degree leading to QTS in England
 
-[Find out more about how to get support training to teach if you're a veteran](/funding-and-support/if-youre-a-veteran).
+Find out more about [how to get support training to teach if you're a veteran](/funding-and-support/if-youre-a-veteran).
 
 $find$
 
