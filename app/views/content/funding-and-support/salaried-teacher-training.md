@@ -108,7 +108,7 @@ Some salaried courses award QTS only. You may have the option to do a salaried c
 
 ## How do I find a salaried teacher training course? 
 
-To apply for salaried teacher training, you can [find postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and filter by salaried courses. 
+To apply for salaried teacher training, you can [find postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and use the filter to only show courses that come with a salary. 
 
 It’s usually wise to apply for fee-paying courses as well to increase your chances of getting a place on a course.
 
