@@ -7,11 +7,6 @@ backlink: "../../"
 cta_mailinglist:
   mailinglist:
     text: Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.
-related_content:
-    How to become a teacher : "/steps-to-become-a-teacher"
-    Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
-    Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
-    Ben's favourite things about teaching : "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching"
 cta_arrow_link:
   careers:
     link_target: "/life-as-a-teacher/teaching-as-a-career/career-progression"
@@ -19,6 +14,9 @@ cta_arrow_link:
   benefits:
     link_target: "/life-as-a-teacher/why-teach/why-become-a-teacher"
     link_text: "Explore why people choose to become a teacher"
+  steps:
+    link_target: "/steps-to-become-a-teacher"
+    link_text: "Find out how to become a teacher"
 keywords:
   - Salary
   - Salaries
@@ -89,6 +87,8 @@ These additional payments are called teaching and learning responsibility (TLR) 
 Depending on your responsibilities, you could earn up to an extra $salaries_tlr_max$. Your school will determine how much you receive.
 
 Teachers who [take on a special educational needs and disabilities (SEND) role](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs) may also receive additional payments. These are known as SEN allowances.
+
+$steps$
 
 ## Career progression
 
