@@ -7,10 +7,6 @@ description: |-
 navigation: 20.20
 navigation_title: Qualifications you need to be a teacher
 navigation_description: Check what qualifications you need to teach in primary, secondary and special schools in England.
-related_content:
-    Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    Train to be a teacher if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
-    Teacher training : "/train-to-be-a-teacher/initial-teacher-training"
 calls_to_action:
   find:
     name: find
