@@ -3,7 +3,6 @@ title: "Check your eligibility to train to teach in England"
 subcategory: If you want to train to teach
 description: |-
   Find out what qualifications you need to train to teach in England.
-
 navigation: 20.20
 navigation_title: Qualifications you will need to train to teach in England
 navigation_description: Before you apply, get help checking you have the correct qualifications for English teacher training.
@@ -16,7 +15,6 @@ cta_arrow_link:
    applying:
      link_target: "/how-to-apply-for-teacher-training/teacher-training-application"
      link_text: "Find guidance on applying for teacher training courses"
-
 
 keywords:
   - International

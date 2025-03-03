@@ -2,7 +2,7 @@
 title: "Visas for non-UK teachers"
 subcategory: If you're already a teacher
 description: |-
-  Learn more about types of visas non-UK citizens will need to work in England, and how to apply.s
+  Learn more about types of visas non-UK citizens will need to work in England, and how to apply.
 promo_content:
 navigation: 20.60
 navigation_title: Visas for non-UK teachers

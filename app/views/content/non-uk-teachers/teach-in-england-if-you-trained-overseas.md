@@ -3,7 +3,6 @@ title: "Teach in England if you trained outside the UK"
 subcategory: If you're already a teacher
 description: |-
   Teach in England if you're a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
-
 promo_content:
 navigation: 20.40
 navigation_title: Teach in England as a non-UK qualified teacher
