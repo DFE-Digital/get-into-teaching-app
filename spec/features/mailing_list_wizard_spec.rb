@@ -4,7 +4,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
   include_context "with wizard data"
   include_context "with stubbed callback quotas api"
 
-  let(:mailing_list_page_title) { "Get tailored guidance in your inbox | Get Into Teaching GOV.UK" }
+  let(:mailing_list_page_title) { "Free personalised teacher training guidance | Get Into Teaching GOV.UK" }
 
   scenario "Full journey as a new candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
@@ -40,7 +40,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
-    expect(page).to have_title("You've signed up | Get Into Teaching")
+    expect(page).to have_title("Free personalised teacher training guidance, sign up completed | Get Into Teaching")
     expect(page).to have_text "Test, you're signed up"
     expect(page).to have_link("choose a time for us to give you a call")
   end
