@@ -3,12 +3,15 @@ title: "Get an international relocation payment"
 subcategory: If you're already a teacher
 description: |-
   Non-UK teachers in physics and languages could be eligible for financial help in the form of an international relocation payment from the UK government.
-related_content:
-    Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
-    Teach in England if you trained outside the UK: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
-    Apply for your visa to teach in England: "/non-uk-teachers/visas-for-non-uk-teachers"
-    Apply for your visa to train to teach in England: "/non-uk-teachers/visas-for-non-uk-trainees"
+
 promo_content:
+
+cta_arrow_link:
+  teachinuk:
+    link_target: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
+    link_text: "Find out more about teaching in England if you trained outside the UK"
+
+
 navigation: 20.60
 navigation_title: Get an international relocation payment
 navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth $nonuk_internationalrelocationpayment_value$.
@@ -87,7 +90,7 @@ If you are eligible, you will receive a maximum IRP of $nonuk_internationalreloc
 
 The IRP is a 2 year trial to support non-UK citizens who want to teach in England. 2024 to 2025 is the second year of the trial.
 
-[Learn more about teaching in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+ $teachinuk$
 
 ## Check your eligibility
 
@@ -383,5 +386,3 @@ Teachers who meet the eligibility requirements can also [apply for other targete
 For help with the IRP, email international.relocationpayment@education.gov.uk.
 
 Do not send us a CV or enquiries about teaching jobs. DfE does not employ teachers.
-
-[Find out more about working as a teacher in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).

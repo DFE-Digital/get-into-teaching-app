@@ -2,11 +2,7 @@
 title: "Visas for non-UK teachers"
 subcategory: If you're already a teacher
 description: |-
-  Learn more about types of visas non-UK citizens will need to work in England, and how to apply.
-related_content:
-    Teach in England if you trained outside the UK: " /non-uk-teachers/teach-in-england-if-you-trained-overseas"
-    Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    What it's like to be a teacher : "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
+  Learn more about types of visas non-UK citizens will need to work in England, and how to apply.s
 promo_content:
 navigation: 20.60
 navigation_title: Visas for non-UK teachers
@@ -29,6 +25,9 @@ cta_arrow_link:
   teachvisa:
     link_target: "https://www.gov.uk/check-uk-visa"
     link_text: "Check if you need a UK visa"
+  teachinuk: 
+    link_target: "/non-uk-teachers/teach-in-england-if-you-trained-overseas" 
+    link_text: "Find out more about teaching in England if you trained outside the UK"
 
 keywords:
   - International
@@ -76,7 +75,7 @@ keywords:
 
 ## How to apply for your visa
 
-If you’re applying for teaching jobs in England as a non-UK citizen, you will need a [visa or immigration status allowing you to work in England](#check-your-status).
+If you’re applying for teaching jobs in England as a non-UK citizen, you will need a visa or immigration status allowing you to work in England.
 
 Most non-UK citizens who do not already have the correct visa or immigration status will need to apply for a Skilled Worker visa to teach in England. 
 
@@ -90,7 +89,7 @@ Visit the UK government’s official [Teaching Vacancies](https://teaching-vacan
 #### Step 2
 Apply for a teaching job with a school which can sponsor your visa. Your salary must meet the requirements for a Skilled Worker visa. 
 
-[Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+Learn more about [applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 #### Step 3
 When you have a confirmed offer of a job, you’ll be able to apply for your [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa).  
@@ -177,6 +176,8 @@ You’ll also have to [pay visa fees](https://www.gov.uk/visa-fees).
 ### Immigration Health Surcharge 
 
 You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application – this is called the Immigration Health Surcharge (IHS).
+
+$teachinuk$
 
 ## Contact
 
