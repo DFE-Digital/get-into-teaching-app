@@ -12,8 +12,13 @@
   ->(option) { degree_status_text(option) },
   ->(option) {
     content_tag(:div, class: "field__hidden_subfield") do
-      f.govuk_text_field(:id, label: { text: "Which year will you graduate?" }, hint: { text: "For example; #{Date.current.year + 2}"})
-    end if option.id == 222750003
+      f.govuk_text_field(
+        :graduation_year,
+        maxlength: 4,
+        label: { text: "Which year will you graduate?" },
+        hint: { text: "For example; #{Date.current.year + 2}"}
+      )
+    end if option.id == MailingList::Steps::DegreeStatus::GRADUATION_YEAR_DEPENDENT_OPTION_ID
   },
   legend: { tag: 'h1', text: t("helpers.label.mailing_list_steps_degree_status.degree_status_id", **Value.data) } do
 %>
