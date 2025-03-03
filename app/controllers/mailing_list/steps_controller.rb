@@ -65,7 +65,8 @@ module MailingList
     end
 
     def set_completed_page_title
-      @page_title = "Free personalised teacher training guidance, sign up completed"
+      @page_title = "Free personalised teacher training guidance"
+      @page_title += ", sign up completed"
     end
   end
 end
