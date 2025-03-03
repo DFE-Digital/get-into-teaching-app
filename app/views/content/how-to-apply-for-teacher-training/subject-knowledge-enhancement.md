@@ -29,10 +29,6 @@ expander:
   SKE-bursaries:
     title: SKE bursaries
     text: Most bursaries are only for UK citizens. However, you may be eligible for an SKE bursary if you're training to teach physics or languages.
-cta_arrow_link:
-  maths:
-    link_target: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-    link_text: "Find out more about becoming a maths teacher"
 ---
 
 You might need to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
@@ -65,7 +61,7 @@ SKE courses are currently available in 5 secondary subjects:
 * mathematics
 * physics
 
-$maths$
+Find out more about [what it’s like to teach in secondary](/life-as-a-teacher/age-groups-and-specialisms/secondary).
 
 ### The benefits of an SKE course
 
