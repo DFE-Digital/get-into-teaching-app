@@ -29,7 +29,7 @@ You'll spend most of your time in school placements with some time dedicated to 
 * tasks and assignments
 * engagement with academic or professional research
 
-The theoretical part of your training might be delivered by a university or in a school. Some training courses will be all school-based, but this does not mean that you’ll spend all your time teaching. Find out [how to choose your teacher training course](/train-to-be-a-teacher/how-to-choose-your-teacher-training-course).
+The theoretical part of your training might be delivered by a university or in a school. Some training courses will be all school-based, but this does not mean that you’ll spend all your time teaching. Get advice on [how to choose your teacher training course](/train-to-be-a-teacher/how-to-choose-your-teacher-training-course).
 
 You’ll also have a mentor to support you in your school placements and learning. They can provide feedback and guidance.
 
