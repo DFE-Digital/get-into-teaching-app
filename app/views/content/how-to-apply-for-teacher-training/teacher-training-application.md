@@ -2,9 +2,6 @@
 title: Your teacher training application
 description: |-
   Find out what to include in your teacher training application, how the process works and when to apply.
-related_content:
-    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    Get school experience : "/train-to-be-a-teacher/get-school-experience"
 keywords:
   - adviser
   - advisor
@@ -95,7 +92,7 @@ It’s wise to apply as soon as you’re ready as:
 
 * this will give you more time to plan how to fund your training 
 
-<p> <a href="/how-to-apply-for-teacher-training/when-to-apply-for-teacher-training">Find out more about when to apply for teacher training courses</a>.</p>
+<p> Find ut more about <a href="/how-to-apply-for-teacher-training/when-to-apply-for-teacher-training">when to apply for teacher training courses</a>.</p>
 
 $ukraine-moving$
 
@@ -113,7 +110,7 @@ You’ll need to provide details about your:
 
 Training providers will also accept some equivalent qualifications, for example, if you’re a non-UK citizen. 
 
-[Find out more about the qualifications you need to teach](/train-to-be-a-teacher/qualifications-you-need-to-teach).
+Find out more about the [qualifications you need to teach](/train-to-be-a-teacher/qualifications-you-need-to-teach).
 
 $check-your-qualifications$
 
@@ -129,7 +126,7 @@ You can also talk about any unpaid experience you have and how this supports you
 
 Your personal statement explains why you want to be a teacher. It’s a crucial part of your application so it’s worth taking your time on it. 
 
-[Find out more about writing your teacher training personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). 
+Find out more about [writing your teacher training personal statement](/how-to-apply-for-teacher-training/teacher-training-personal-statement). 
 
 ### Your adjustments 
 
@@ -137,13 +134,13 @@ You can ask for extra support if you’re disabled, have a mental health conditi
 
 Your training provider can then make adjustments so you can attend an interview and do the training. 
 
-[Find out what support you’re entitled to if you’re disabled](/funding-and-support/if-youre-disabled). 
+Find out [what support you’re entitled to if you’re disabled](/funding-and-support/if-youre-disabled). 
 
 ### Your references 
 
 You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course. 
 
-[Find out more about how to choose your references for teacher training](/how-to-apply-for-teacher-training/teacher-training-references).
+Find out more about [how to choose your references for teacher training](/how-to-apply-for-teacher-training/teacher-training-references).
 
 $giorgio$
 
@@ -167,7 +164,7 @@ If your application is successful with a provider, you’ll be invited to an int
 
 Interviews vary from provider to provider – you’ll be given all the information you need when you’re invited to attend. 
 
-[Find tips for your teacher training interview](/how-to-apply-for-teacher-training/teacher-training-interview). 
+Find out how you can [prepare for your teacher training interview](/how-to-apply-for-teacher-training/teacher-training-interview). 
 
 ### Essential checks
 
@@ -181,7 +178,7 @@ You may need to get an additional qualification, work on your interview techniqu
 
 You can apply to more courses if all your applications are unsuccessful. 
 
-[Find out what to do if you do not get a place on a teacher training course](/how-to-apply-for-teacher-training/if-your-application-is-unsuccessful). 
+Find out what to do [if you do not get a place on a teacher training course](/how-to-apply-for-teacher-training/if-your-application-is-unsuccessful). 
 
 $apply$
 

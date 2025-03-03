@@ -1,11 +1,5 @@
 ---
 title: Subject knowledge enhancement (SKE)
-related_content:
-    Get school experience : "/train-to-be-a-teacher/get-school-experience"
-    How to choose a teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    Teach computing : "/life-as-a-teacher/explore-subjects/computing"
-    Teach maths : "/life-as-a-teacher/explore-subjects/maths"
-    Teach physics : "/life-as-a-teacher/explore-subjects/physics"
 description: |-
   Find out more about subject knowledge enhancement (SKE) courses which will help you brush up your knowledge on the subject you want to teach.
 cta_adviser:
@@ -35,6 +29,10 @@ expander:
   SKE-bursaries:
     title: SKE bursaries
     text: Most bursaries are only for UK citizens. However, you may be eligible for an SKE bursary if you're training to teach physics or languages.
+cta_arrow_link:
+  maths:
+    link_target: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
+    link_text: "Find out more about becoming a maths teacher"
 ---
 
 You might need to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
@@ -46,6 +44,8 @@ This could be because you have one or more of the following:
 * an A level but not a degree in the subject you want to teach
 * an unrelated degree but relevant professional experience
 * studied for a languages degree, but need to improve knowledge either in a main language, second language or both to an acceptable level for teaching in schools
+
+SKE courses are available in certain secondary subjects. Discover [what it's like to teach in secondary](/life-as-a-teacher/age-groups-and-specialisms/secondary).
 
 ## How to do an SKE course
 
@@ -65,7 +65,7 @@ SKE courses are currently available in 5 secondary subjects:
 * mathematics
 * physics
 
-[Find out more about what it's like to teach in secondary](/life-as-a-teacher/age-groups-and-specialisms/secondary).
+$maths$
 
 ### The benefits of an SKE course
 

@@ -3,9 +3,6 @@ title: Teacher training personal statement
 heading: Your teacher training personal statement
 description: |-
   Find out what to include in your teacher training personal statement when you apply for a course leading to qualified teacher status (QTS) or a PGCE.
-related_content:
-    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    Prepare for your teacher training interview: "/how-to-apply-for-teacher-training/teacher-training-interview"
 navigation: 30.10
 navigation_title: Teacher training personal statement
 navigation_description: Find out what to include in your teacher training personal statement.
@@ -132,4 +129,3 @@ $experience$
 
 $apply$
 $adviser$
-
