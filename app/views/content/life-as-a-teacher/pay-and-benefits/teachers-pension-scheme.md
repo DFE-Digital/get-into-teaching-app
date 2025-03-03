@@ -27,7 +27,7 @@ Once you join the scheme, it's quick and easy to manage your pension online.
 
 The teachers' pension scheme includes an employer contribution of 28.6%.
 
-It’s a defined benefit pension, which means it’s based on your salary rather than the amount you contribute. Find out more about [teacher pay](/life-as-a-teacher/pay-and-benefits/teacher-pay).
+It’s a defined benefit pension, which means it’s based on your salary rather than the amount you contribute. [Find out more about teacher pay](/life-as-a-teacher/pay-and-benefits/teacher-pay).
 
 If your salary increases, the pension contributions you and your employer make will increase too. You can also choose to pay extra contributions if you want to. [Learn more about paying extra contributions on the teachers' pension scheme website](https://www.teacherspensions.co.uk/members/working-life/paying-in/increasing-your-pension/additional-pension.aspx).
 
