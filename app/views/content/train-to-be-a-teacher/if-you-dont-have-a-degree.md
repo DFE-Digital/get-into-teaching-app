@@ -81,4 +81,8 @@ If you do not have a degree you may be eligible to apply for a TDA. This new cou
 
 $tda$
 $teacher-degree-apprenticeships$
+
+## Other routes into teaching
+You do not need a degree and QTS to [teach in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers) or to [teach in early years](/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers). So if you want to become a teacher but are not able to get a degree, you can explore these options.
+
 $mailinglist$
