@@ -4,10 +4,6 @@ heading: "What is a PGCE course?"
 subcategory: Qualifications
 description: |-
   A postgraduate certificate in education (PGCE) is an academic qualification. Find out how to do a PGCE course through teacher training.
-related_content:
-    Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
-    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    What will your teacher training year be like? : "/train-to-be-a-teacher/initial-teacher-training"
 backlink: "../../"
 navigation: 20.30
 navigation_title: Postgraduate certificate in education (PGCE)
@@ -24,6 +20,9 @@ cta_arrow_link:
   qts:
     link_target: "/train-to-be-a-teacher/what-is-qts"
     link_text: "Find out more about QTS"
+  train-with-degree:
+    link_target: "/train-to-be-a-teacher/if-you-have-a-degree"
+    link_text: "Find out more about teacher training if you have or are studying for a degree"
 keywords:
   - PGCE
   - Post-graduate
@@ -70,6 +69,8 @@ You can do a teacher training course that leads to:
 Getting a PGCE without QTS means you will not be qualified to teach in most primary, secondary and special schools in England, although some schools will employ teachers without QTS.
 
 If you get a PGCE without QTS you will not be entitled to the same benefits during your training and career as QTS with PGCE. For example, better pay and support when you start teaching.
+
+$train-with-degree$
 
 ## Benefits of having QTS with PGCE
 

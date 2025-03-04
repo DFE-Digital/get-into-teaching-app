@@ -4,10 +4,6 @@ heading: "Teacher degree apprenticeships (TDAs)"
 subcategory: Other routes into teaching
 description: |-
  A new route to become a teacher without a degree, a teacher degree apprenticeship (TDA) lets you work at a school while you qualify as a teacher.
-related_content:
-    Explore life as a teacher : "/life-as-a-teacher"
-    Train to teach if you do not have a degree : "/train-to-be-a-teacher/if-you-dont-have-a-degree"
-    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
 calls_to_action:
   find:
     name: find
