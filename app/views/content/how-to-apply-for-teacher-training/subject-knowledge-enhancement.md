@@ -41,7 +41,6 @@ This could be because you have one or more of the following:
 * an unrelated degree but relevant professional experience
 * studied for a languages degree, but need to improve knowledge either in a main language, second language or both to an acceptable level for teaching in schools
 
-SKE courses are available in certain secondary subjects. Discover [what it's like to teach in secondary](/life-as-a-teacher/age-groups-and-specialisms/secondary).
 
 ## How to do an SKE course
 

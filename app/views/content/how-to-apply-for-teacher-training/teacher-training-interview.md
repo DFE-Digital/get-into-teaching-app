@@ -21,10 +21,6 @@ keywords:
 cta_adviser:
   adviser:
     text: An adviser with years of teaching experience can help you prepare for interviews. Chat by phone, text or email, as often or as little as you need.
-cta_arrow_link:
-  ske:
-    link_target: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-    link_text: "Find out more about subject knowledge (SKE) courses"
 ---
 
 Congratulations on being invited for an interview! This is an important stage in successfully getting a place on a primary or secondary teacher training course.
@@ -94,7 +90,6 @@ Providers will also be expecting you to demonstrate you've got relevant skills, 
 
 Many providers will ask you to do some form of presentation as they want to see you have the energy and passion to capture pupils' attention. Remember this is a chance to sell yourself and prove your commitment.
 
-$ske$
 
 ## Prepare your own questions
 

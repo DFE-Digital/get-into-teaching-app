@@ -92,7 +92,7 @@ It’s wise to apply as soon as you’re ready as:
 
 * this will give you more time to plan how to fund your training 
 
-<p> Find ut more about <a href="/how-to-apply-for-teacher-training/when-to-apply-for-teacher-training">when to apply for teacher training courses</a>.</p>
+<p> Find out more about <a href="/how-to-apply-for-teacher-training/when-to-apply-for-teacher-training">when to apply for teacher training courses</a>.</p>
 
 $ukraine-moving$
 
