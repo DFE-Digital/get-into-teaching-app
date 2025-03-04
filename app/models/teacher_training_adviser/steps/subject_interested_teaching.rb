@@ -21,5 +21,9 @@ module TeacherTrainingAdviser::Steps
 
       have_a_degree_skipped || phase_is_not_secondary
     end
+
+    def title
+      "subject interested in teaching"
+    end
   end
 end

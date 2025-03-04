@@ -15,5 +15,9 @@ module TeacherTrainingAdviser::Steps
         "uk_or_overseas" => uk_or_overseas,
       }
     end
+
+    def title
+      "location"
+    end
   end
 end

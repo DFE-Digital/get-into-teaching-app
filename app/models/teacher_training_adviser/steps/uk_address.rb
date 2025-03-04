@@ -14,6 +14,10 @@ module TeacherTrainingAdviser::Steps
       other_step(:uk_or_overseas).uk_or_overseas != UkOrOverseas::OPTIONS[:uk]
     end
 
+    def title
+      "postcode"
+    end
+
   private
 
     def sanitize_input

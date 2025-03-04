@@ -44,5 +44,9 @@ module TeacherTrainingAdviser::Steps
 
       overseas_country_skipped || !equivalent_degree
     end
+
+    def title
+      "contact details and timezone"
+    end
   end
 end

@@ -1,3 +1,1 @@
-<% @page_title = "Which stage are you interested in teaching?" %>
-
 <%= f.govuk_collection_radio_buttons :preferred_education_phase_id, f.object.class::OPTIONS, :last, nil, inline: true, hint: { hidden: f.object.returning_teacher? }, legend: { tag: "h1" } %>

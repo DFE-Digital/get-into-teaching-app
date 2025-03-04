@@ -25,5 +25,9 @@ module TeacherTrainingAdviser::Steps
         answers["subject_taught_id"] = Crm::TeachingSubject.lookup_by_uuid(subject_taught_id)
       end
     end
+
+    def title
+      "subject trained to teach"
+    end
   end
 end

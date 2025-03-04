@@ -15,5 +15,9 @@ module TeacherTrainingAdviser::Steps
     def skipped?
       other_step(:what_degree_class).skipped?
     end
+
+    def title
+      "english and maths gcses"
+    end
   end
 end
