@@ -15,7 +15,7 @@ cta_arrow_link:
     link_target: "/life-as-a-teacher/explore-subjects"
     link_text: "Find out more about the subjects you could teach"
   teacherpay:
-    link_target: "/life-as-a-teacher/teacher-pay"
+    link_target: "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     link_text: "Find out more about teacher pay"
 navigation: 20.15
 navigation_title: Bursaries and scholarships
