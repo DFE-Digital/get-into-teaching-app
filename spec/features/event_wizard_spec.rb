@@ -6,7 +6,7 @@ RSpec.feature "Event wizard", type: :feature do
   let(:event_name) { "Event Name" }
   let(:event) { build(:event_api, readable_id: event_readable_id, name: event_name) }
   let(:individual_event_page_title) { "Sign up for #{event.name}, personal details step | Get Into Teaching" }
-  let(:sign_up_complete_page_title) { "Sign up complete | Get Into Teaching" }
+  let(:sign_up_complete_page_title) { "#{event.name}, sign up completed | Get Into Teaching" }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
