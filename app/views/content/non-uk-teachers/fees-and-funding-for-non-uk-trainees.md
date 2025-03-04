@@ -3,9 +3,6 @@ title: "Fees and financial support for non-UK trainee teachers"
 subcategory: If you want to train to teach
 description: |-
   Learn more about bursaries and scholarships for non-UK teacher trainees.
-related_content:
-    Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    What it's like to be a teacher : "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
 promo_content:
 navigation: 20.20
 navigation_title: Fees and financial support for non-UK trainee teachers

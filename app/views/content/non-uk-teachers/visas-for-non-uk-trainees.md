@@ -3,10 +3,6 @@ title: "Visas for non-UK trainee teachers"
 subcategory: If you want to train to teach
 description: |-
   Learn more about types of visas non-UK citizens will need to study or work in England, and how to apply.
-related_content:
-    Train to teach in England as an international student: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
-    Teacher pay in England: "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    What it's like to be a teacher: "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
 promo_content:
 navigation: 20.30
 navigation_title: Visas for non-UK trainee teachers
@@ -37,6 +33,9 @@ cta_arrow_link:
    immigration:
      link_target: "https://www.gov.uk/check-uk-visa"
      link_text: "If you are not sure about your immigration status, check if you need a UK visa"
+   train-in-uk:
+      link_target: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
+      link_text: "Find out more about training to teach in England as a non-UK citizen"
       
 keywords:
   - International
@@ -95,7 +94,7 @@ Most teacher training courses in England are fee-paying. This means you will nee
 
 You will need a Student visa if you’re on a fee-paying course. Your Student visa must be sponsored by your teacher training provider. 
 
-[Find out more about studying in the UK on a Student visa](https://www.gov.uk/student-visa).
+Find out more about [studying in the UK on a Student visa](https://www.gov.uk/student-visa).
 
 ### Bursaries and scholarships if you are on a Student visa 
 
@@ -115,7 +114,7 @@ You will need a Skilled Worker visa if you are on a salaried training course. Yo
 
 Places on these courses are limited and some salaried courses also charge fees. 
 
-[Find out more about working in the UK on a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa).
+Find out more about [working in the UK on a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa).
 
 ### Salary requirement for a Skilled Worker visa 
 
@@ -159,6 +158,7 @@ You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigratio
 
 However, [some students can claim a refund of the IHS](https://www.gov.uk/guidance/immigration-health-surcharge-for-eu-students-in-the-uk) depending on their circumstances.
 
+$train-in-uk$
 
 ## Get help
 
