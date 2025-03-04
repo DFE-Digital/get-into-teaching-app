@@ -4,10 +4,6 @@ heading: "Student finance for teacher training"
 subcategory: Courses with fees
 description: |-
     Find out about the available student finance for teacher training, including tuition fee loans and maintenance loans to support you while you train.
-related_content:
-    Age groups you could teach: "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
-    Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-    Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about student finance. Chat by phone, text or email, as little or as often as you need."
@@ -23,6 +19,9 @@ cta_arrow_link:
   bursaries:
     link_target: "/funding-and-support/scholarships-and-bursaries"
     link_text: "Find out if you're eligible for a bursary or scholarship"
+  teacherpay: 
+    link_target: "/life-as-a-teacher/pay-and-benefits/teacher-pay"
+    link_text: "Find out more about teacher pay"
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 keywords:
@@ -64,6 +63,8 @@ You'll only have to make loan repayments once you’re earning.
 You do not need to wait until you have a confirmed offer for a teacher training course to apply for student funding.
 
 If you choose a teacher training course that has a salary you're not eligible for any student finance.
+
+$teacherpay$
 
 $student-finance$
 

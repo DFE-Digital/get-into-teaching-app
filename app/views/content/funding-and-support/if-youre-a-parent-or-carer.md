@@ -4,15 +4,13 @@ heading: "Funding and support if you're a parent or carer"
 subcategory: Extra support
 description: |-
   Find out what extra grants and schemes are available when completing your teacher training if you have children or other caring responsibilities.
-related_content:
-    Get support training to teach if you're changing career: "/life-as-a-teacher/change-careers"
-    Tuition fee and maintenance loans: "/funding-and-support/tuition-fee-and-maintenance-loans"
-    Bursaries and scholarships: "/funding-and-support/scholarships-and-bursaries"
-    Explore life as a teacher: "/life-as-a-teacher"
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
 cta_arrow_link:
+  careerchanger:
+    link_target: /life-as-a-teacher/change-careers
+    link_text: "Get support training to teach if you're changing career"
   parents-learning-allowance:
     link_target: "https://www.gov.uk/parents-learning-allowance"
     link_text: "Find out more about the Parents’ Learning Allowance"
@@ -50,9 +48,13 @@ You do not have to pay this money back, and you’ll get it on top of your other
 
 Figures are for the 2024/25 academic year.
 
-There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the following funding. If you’re doing a part-time course, you may be eligible for [Universal Credit](https://www.gov.uk/guidance/universal-credit-and-students).
+There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the funding options on this page. If you’re doing a part-time course, you may be eligible for [Universal Credit](https://www.gov.uk/guidance/universal-credit-and-students).
+
+$careerchanger$
 
 $international-content$
+
+
 
 ## If you're a parent
 

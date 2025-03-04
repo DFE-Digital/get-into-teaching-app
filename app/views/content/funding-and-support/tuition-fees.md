@@ -4,10 +4,6 @@ heading: "Tuition fees"
 subcategory: Courses with fees
 description: |-
     Find out about postgraduate teacher training costs in England, including the amount you'll pay for courses with tuition fees.
-related_content:
-    Bursaries and scholarships: "/funding-and-support/scholarships-and-bursaries"
-    Student finance for teacher training: "/funding-and-support/tuition-fee-and-maintenance-loans"
-    Salaried teacher training: "/funding-and-support/salaried-teacher-training"
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about tuition fees. Chat by phone, text or email, as little or as often as you need."
@@ -57,6 +53,8 @@ $postgraduate-fees$
 
 ## Additional costs
 You’ll also need to be able to cover your living costs and any travel expenses if you need to travel to school placements. Find out about [student finance for teacher training](/funding-and-support/tuition-fee-and-maintenance-loans).
+
+If you're interested in teaching certain subjects, you might be able to [get a tax-free bursary or scholarship](/funding-and-support/scholarships-and-bursaries) of up to $scholarships_generic_maxshortened$ to support you while you're training.
 
 $find$
 $adviser$
