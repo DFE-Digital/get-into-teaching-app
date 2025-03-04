@@ -319,7 +319,8 @@ body a.govuk-back-link {
 }
 
 .survey-button {
-  @include button($bg: $blue-dark);
+  @include button($bg: $grey, $fg: $black);
+  box-shadow: 0 2px 0 $grey-mid;
   margin-bottom: .5rem;
 
   @include mq($from: tablet) {
