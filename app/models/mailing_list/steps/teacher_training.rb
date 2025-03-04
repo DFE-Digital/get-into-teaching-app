@@ -13,6 +13,10 @@ module MailingList
       def consideration_journey_stage_ids
         consideration_journey_stages.map { |option| option.id.to_i }
       end
+
+      def title
+        "interest"
+      end
     end
   end
 end
