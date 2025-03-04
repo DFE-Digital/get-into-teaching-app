@@ -1,11 +1,5 @@
 ---
 title: Subject knowledge enhancement (SKE)
-related_content:
-    Get school experience : "/train-to-be-a-teacher/get-school-experience"
-    How to choose a teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    Teach computing : "/life-as-a-teacher/explore-subjects/computing"
-    Teach maths : "/life-as-a-teacher/explore-subjects/maths"
-    Teach physics : "/life-as-a-teacher/explore-subjects/physics"
 description: |-
   Find out more about subject knowledge enhancement (SKE) courses which will help you brush up your knowledge on the subject you want to teach.
 cta_adviser:
@@ -65,7 +59,7 @@ SKE courses are currently available in 5 secondary subjects:
 * mathematics
 * physics
 
-[Find out more about what it's like to teach in secondary](/life-as-a-teacher/age-groups-and-specialisms/secondary).
+Find out more about [what it’s like to teach in secondary](/life-as-a-teacher/age-groups-and-specialisms/secondary).
 
 ### The benefits of an SKE course
 

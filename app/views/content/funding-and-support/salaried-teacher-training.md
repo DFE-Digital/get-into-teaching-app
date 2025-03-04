@@ -3,9 +3,6 @@ title: "Postgraduate salaried teacher training"
 subcategory: Courses with a salary
 description: |-
     Explore salaried teacher training, including School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
-related_content:
-    Explore the benefits of teaching: "/life-as-a-teacher/pay-and-benefits"
-    If you've worked as an unqualified teacher: "/train-to-be-a-teacher/assessment-only-route-to-qts"
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about salaried teacher training. Chat by phone, text or email, as little or as often as you need."
@@ -104,7 +101,7 @@ Some courses can begin at other points in the year and there may be part-time co
 
 Some salaried courses award QTS only. You may have the option to do a salaried course where you can work towards QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce) but you may have to pay an extra fee. 
 
-[Find out more about what to expect during your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
+Find out more about [what to expect during your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
 
 ## How do I find a salaried teacher training course? 
 
