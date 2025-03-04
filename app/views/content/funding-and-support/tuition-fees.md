@@ -55,6 +55,5 @@ $postgraduate-fees$
 You’ll also need to be able to cover your living costs and any travel expenses if you need to travel to school placements. Find out about [student finance for teacher training](/funding-and-support/tuition-fee-and-maintenance-loans).
 
 If you're interested in teaching certain subjects, you might be able to [get a tax-free bursary or scholarship](/funding-and-support/scholarships-and-bursaries) of up to $scholarships_generic_maxshortened$ to support you while you're training.
-
 $find$
 $adviser$

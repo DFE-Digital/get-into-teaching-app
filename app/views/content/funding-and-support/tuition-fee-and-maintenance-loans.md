@@ -65,7 +65,6 @@ You do not need to wait until you have a confirmed offer for a teacher training 
 If you choose a teacher training course that has a salary you're not eligible for any student finance.
 
 $teacherpay$
-
 $student-finance$
 
 ## Tuition fee loan

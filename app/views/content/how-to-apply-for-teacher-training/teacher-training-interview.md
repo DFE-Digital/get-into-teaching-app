@@ -90,7 +90,6 @@ Providers will also be expecting you to demonstrate you've got relevant skills, 
 
 Many providers will ask you to do some form of presentation as they want to see you have the energy and passion to capture pupils' attention. Remember this is a chance to sell yourself and prove your commitment.
 
-
 ## Prepare your own questions
 
 It’s good to have some questions of your own to ask. This helps you get more information and shows your interest. You could ask:

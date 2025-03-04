@@ -121,6 +121,5 @@ You may be eligible for [a salaried teacher training course](/funding-and-suppor
 For advice on funding, you can speak to a [teacher training adviser](/teacher-training-advisers). They can help you work out what support you could be eligible for.
 
 $teacherpay$
-
 $find$
 $adviser$

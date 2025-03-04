@@ -41,7 +41,6 @@ This could be because you have one or more of the following:
 * an unrelated degree but relevant professional experience
 * studied for a languages degree, but need to improve knowledge either in a main language, second language or both to an acceptable level for teaching in schools
 
-
 ## How to do an SKE course
 
 If your training provider thinks you need to improve your subject knowledge then they might decide that you'll benefit from an SKE course.
