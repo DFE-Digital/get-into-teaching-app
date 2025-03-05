@@ -6,6 +6,7 @@ module RoutesIntoTeaching
 
     before_action :set_page_title
     before_action :set_step_page_title, only: %i[show update]
+    before_action :set_completed_page_title, only: [:completed]
     before_action :noindex, except: %i[index]
     before_action :set_breadcrumb
 
@@ -64,6 +65,10 @@ module RoutesIntoTeaching
       if @current_step&.title
         @page_title += ", #{@current_step.title.downcase} step"
       end
+    end
+
+    def set_completed_page_title
+      @page_title = "Find your route into teaching, route options"
     end
 
     def resolve_layout
