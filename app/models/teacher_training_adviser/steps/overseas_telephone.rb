@@ -29,5 +29,9 @@ module TeacherTrainingAdviser::Steps
 
       overseas_country_skippped || equivalent_degree
     end
+
+    def title
+      "international telephone"
+    end
   end
 end

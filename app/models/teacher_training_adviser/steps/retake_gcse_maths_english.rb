@@ -21,5 +21,9 @@ module TeacherTrainingAdviser::Steps
 
       gcse_maths_english_skipped || has_gcse_maths_english
     end
+
+    def title
+      "retake english and maths gcses"
+    end
   end
 end

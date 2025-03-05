@@ -1,5 +1,3 @@
-<% @page_title = "What is your telephone number?" %>
-
 <%= f.govuk_fieldset legend: { text: "What is your telephone number?", tag: "h1" } do %>
   <%= f.govuk_phone_field :address_telephone, width: 20, prefix_text: "+", value: f.object.address_telephone_value, autocomplete: "tel-national" %>
 <% end %>

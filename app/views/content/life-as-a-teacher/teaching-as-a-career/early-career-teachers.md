@@ -3,9 +3,6 @@ title: "Early career teachers (ECTs)"
 heading: "Early career teachers (ECTs)"
 description: |-
   Find out about the support early career teachers get when they start teaching, including mentor support and training based on the early career framework (ECF).
-related_content:
-    Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
-    Explore the benefits of teaching : "/life-as-a-teacher/pay-and-benefits"
 cta_adviser:
   adviser:
     text: An adviser with years of teaching experience can help you understand the support you'll get when you first start teaching. Chat by phone, text or email, as little or as often as you need.

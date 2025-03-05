@@ -96,7 +96,7 @@ module TeacherTrainingAdviser
     end
 
     def set_completed_page_title
-      @page_title = "You've signed up"
+      @page_title = "Get a free adviser, sign up completed"
     end
   end
 end

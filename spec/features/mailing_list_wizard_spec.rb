@@ -4,9 +4,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
   include_context "with wizard data"
   include_context "with stubbed callback quotas api"
 
-  let(:mailing_list_page_title) { "Get tailored guidance in your inbox | Get Into Teaching GOV.UK" }
+  let(:mailing_list_page_title) { "Free personalised teacher training guidance | Get Into Teaching GOV.UK" }
 
-  scenario "Full journey as a new candidate" do
+  scenario "Full journey as a new candidate with one non completed step" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
@@ -28,7 +28,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "Not yet, I'm a first year student"
     click_on "Next step"
 
+    # check page title remains correct for non completed step
     expect(page).to have_text "How interested are you in applying"
+    click_on "Next step"
+    expect(page).to have_title("Free personalised teacher training guidance, interest step | Get Into Teaching")
     choose "It's just an idea"
     click_on "Next step"
 
@@ -40,7 +43,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
-    expect(page).to have_title("You've signed up | Get Into Teaching")
+    expect(page).to have_title("Free personalised teacher training guidance, sign up completed | Get Into Teaching")
     expect(page).to have_text "Test, you're signed up"
     expect(page).to have_link("choose a time for us to give you a call")
   end
