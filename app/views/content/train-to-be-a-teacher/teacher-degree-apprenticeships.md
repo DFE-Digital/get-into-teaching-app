@@ -39,7 +39,7 @@ The teaching apprenticeship is a 4-year, full-time course that lets you train as
 
 Some TDA providers will want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are.
 
-## What is the salary for a teacher degree apprenticeship?
+## What's the salary for a teacher degree apprenticeship?
 
 The salary you’ll earn as a TDA trainee will depend on the type of school you work in and where the school is.  
 
