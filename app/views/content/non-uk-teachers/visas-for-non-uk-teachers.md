@@ -89,7 +89,6 @@ Visit the UK government’s official [Teaching Vacancies](https://teaching-vacan
 #### Step 2
 Apply for a teaching job with a school which can sponsor your visa. Your salary must meet the requirements for a Skilled Worker visa. 
 
-Learn more about [applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 #### Step 3
 When you have a confirmed offer of a job, you’ll be able to apply for your [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa).  
