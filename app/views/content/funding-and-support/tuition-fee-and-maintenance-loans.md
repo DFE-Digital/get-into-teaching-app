@@ -19,9 +19,6 @@ cta_arrow_link:
   bursaries:
     link_target: "/funding-and-support/scholarships-and-bursaries"
     link_text: "Find out if you're eligible for a bursary or scholarship"
-  teacherpay: 
-    link_target: "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    link_text: "Find out more about teacher pay"
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 keywords:
@@ -64,7 +61,6 @@ You do not need to wait until you have a confirmed offer for a teacher training 
 
 If you choose a teacher training course that has a salary you're not eligible for any student finance.
 
-$teacherpay$
 $student-finance$
 
 ## Tuition fee loan
