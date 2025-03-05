@@ -3,10 +3,6 @@ title: "Train to teach in England as a non-UK citizen"
 subcategory: If you want to train to teach
 description: |-
   Find out how to train to teach in England as a student from outside the UK. Get help and guidance on your qualifications, funding and visa.
-related_content:
-    Fees and funding for non-UK trainees: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
-    Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
-    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms"
 youtube_video:
   why-train-video:
     id: WhBBL_DpHFo
