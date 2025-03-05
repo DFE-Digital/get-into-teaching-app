@@ -178,6 +178,7 @@ You’ll also have to [pay visa fees](https://www.gov.uk/visa-fees).
 You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application – this is called the Immigration Health Surcharge (IHS).
 
 $teachinuk$
+
 ## Contact
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
