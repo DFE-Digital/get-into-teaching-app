@@ -7,5 +7,9 @@ module RoutesIntoTeaching::Steps
     def seen?
       false
     end
+
+    def title
+      "location"
+    end
   end
 end

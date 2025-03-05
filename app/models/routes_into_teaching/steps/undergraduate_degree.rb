@@ -17,5 +17,9 @@ module RoutesIntoTeaching::Steps
     def seen?
       false
     end
+
+    def title
+      "degree"
+    end
   end
 end
