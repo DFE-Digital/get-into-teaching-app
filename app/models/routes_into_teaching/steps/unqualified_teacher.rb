@@ -7,9 +7,5 @@ module RoutesIntoTeaching::Steps
     def seen?
       false
     end
-
-    def title
-      "unqualified teacher"
-    end
   end
 end
