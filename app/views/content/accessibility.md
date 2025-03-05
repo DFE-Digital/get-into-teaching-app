@@ -56,12 +56,45 @@ The Department for Education is committed to making its websites accessible, in 
 
 ## Compliance status
 
-This website is fully compliant with the WCAG version 2.2 AA standard.
+This website is partially compliant with the WCAG (Web Content Accessibility Guidelines) version 2.2 AA standard, due to the following non-compliances.
+
+### Non-accessible content
+
+The content is non-accessible for the following reasons:
+
+* in the questions section in our [welcome guide](/welcome), the ‘A’ before the answers does not have a text alternative to give the same information or meaning to users who cannot see the content. This fails to meet [WCAG 2.2 A - 1.1.1 Non-text content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content)
+* some of the non-verbal information presented in videos on the site is not included in audio descriptions. This fails to meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded)
+* the visual styling of the results displayed in our search function, the Non-UK information in the Talk to us section on our [help and support page](/help-and-support), our Find promotional component and our Apply promotional component, the section numbers in our welcome guide and the error message on the degree subject step in our adviser sign-up form does not match the programmatic information which could cause problems for screen reader users. This fails to meet [WCAG 2.2 A - 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships)
+* in our main navigational menu, there is an issue with the programmatic reading order, with some sub-menu items appearing last which may be confusing for users. This fails to meet [WCAG 2.2 A - 1.3.2 Meaningful sequence](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence)
+* on the [events page](/events), the [bursaries and scholarship page](/funding-and-support/scholarships-and-bursaries) and in the welcome guide, some content is cut off the screen at 400% zoom. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow)
+* in the personalised email and adviser sign-up forms, the back link is skipped when tabbing through the pages. This fails to meet [WCAG 2.2 A - 2.4.3 Focus order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order)
+* in the personalised email sign-up form, the main programmatic label of the input field on the authentication step is not fully meaningful for users. This fails to meet [WCAG 2.2 AA - 2.4.6 Headings and labels](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels)
+
+#### Webchat
+
+The webchat content is non-accessible for the following reasons:
+
+* the logo in the header is announced incorrectly for Talkback users. This fails to meet [WCAG 2.2 A - 1.1.1 Non-text content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content)
+* on the Tell us about yourself page, the error message is not programmatically associated with the field and is not announced by screen readers when tabbing onto the field itself. This fails to meet [WCAG 2.2 A - 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships)
+* the name of the person who wrote the message and the time it was sent are not programmatically associated with the message itself and therefore the relationship is not conveyed. This fails to meet [WCAG 2.2 A - 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships)
+* when using the webchat on a mobile device in landscape orientation, the header and text box take up the majority of the screen and the messages within the main content cannot be read. This fails to meet [WCAG 2.2 AA - 1.3.4 Orientation](https://www.w3.org/WAI/WCAG22/Understanding/orientation)
+* on the Tell us about yourself page, the name field does not have a corresponding autocomplete attribute. This fails to meet [WCAG 2.2 AA - 1.3.5 Identify input purpose](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose)
+* the grey placeholder text of “Type your message…” does not have sufficient contrast against the white background. This fails to meet [WCAG 2.2 AA - 1.4.3 Contrast (minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum)
+* the webchat is not usable when viewed at 400% zoom as the header and text input take up the majority of the screen and the messages cannot be read within the small gap. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow) and [WCAG 2.2 AA 2.4.11 - Focus Not Obscured (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum)
+* the pink colour used as the focus indicator does not quite have sufficient colour contrast against the white background. This fails to meet [WCAG 2.2 AA - 1.4.11 Non-text contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast)
+* there is no opportunity to turn off, adjust, or extend the timeout limit encountered when a page is left open. This fails to meet [WCAG 2.2 A - 2.2.1 Timing adjustable](https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable)
+* the page titles are not fully descriptive and are missing context. This fails to meet [WCAG 2.2 A - 2.4.2 Page titled](https://www.w3.org/WAI/WCAG22/Understanding/page-titled)
+* the accessible name of the text input field for writing messages does not match the visual placeholder label. This fails to meet [WCAG 2.2 A - 2.5.3 Label in name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name)
+* the loading message displayed when moving from the Tell us about yourself page to the Chat page is not announced to screen reader users. This fails to meet [WCAG 2.2 AA 4.1.3 Status messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages)
+
+## What we're doing to improve accessibility
+
+We are currently working to address the known accessibility issues.
+
+We’ll continue to test the accessibility of this service as it develops.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 29 January 2024. It was last reviewed on 27 January 2025.
+This statement was prepared on 5 March 2025. It was last reviewed on 5 March 2025.
 
-This website was last tested independently on 25 September 2023. The test was carried out by Digital Accessibility Centre (DAC) Limited.
-
-Our next external audit is currently in progress and we expect to have a report by March 2025.
+This website was last tested independently on 25 February 2025. The test was carried out by the Government Digital Service.
