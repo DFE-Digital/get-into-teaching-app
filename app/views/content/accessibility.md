@@ -84,7 +84,7 @@ The webchat content is non-accessible for the following reasons:
 * the pink colour used as the focus indicator does not quite have sufficient colour contrast against the white background. This fails to meet [WCAG 2.2 AA - 1.4.11 Non-text contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast)
 * there is no opportunity to turn off, adjust, or extend the timeout limit encountered when a page is left open. This fails to meet [WCAG 2.2 A - 2.2.1 Timing adjustable](https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable)
 * the page titles are not fully descriptive and are missing context. This fails to meet [WCAG 2.2 A - 2.4.2 Page titled](https://www.w3.org/WAI/WCAG22/Understanding/page-titled)
-* the accessible name of the text input field for writing messages does not match the visual placeholder label. This fails to meet [WCAG 2.2 AA - 2.4.6 Headings and labels](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels)
+* the accessible name of the text input field for writing messages does not match the visual placeholder label. This fails to meet [WCAG 2.2 A - 2.5.3 Label in name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name)
 * the loading message displayed when moving from the Tell us about yourself page to the Chat page is not announced to screen reader users. This fails to meet [WCAG 2.2 AA 4.1.3 Status messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages)
 
 ## What we're doing to improve accessibility
