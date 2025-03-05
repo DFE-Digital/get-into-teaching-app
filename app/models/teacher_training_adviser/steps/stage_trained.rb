@@ -31,5 +31,9 @@ module TeacherTrainingAdviser::Steps
     def stage_taught_primary?
       stage_taught_id == OPTIONS[:primary]
     end
+
+    def title
+      "stage trained to teach"
+    end
   end
 end
