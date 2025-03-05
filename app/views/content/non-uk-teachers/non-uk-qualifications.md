@@ -72,7 +72,6 @@ To train to teach in England, you will need to have:
 A GCSE is an academic qualification awarded for exams in England, usually taken at the age of 16.
 
 $traininuk$
-
 ## How to check your qualifications
 
 To check your qualifications meet the required standard in England you will need a [statement of comparability from the UK European Network of Information Centres (UK ENIC)](https://enic.org.uk/Qualifications/SOC/Default.aspx). 
