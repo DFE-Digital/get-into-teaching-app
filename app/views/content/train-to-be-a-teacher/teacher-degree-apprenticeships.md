@@ -37,6 +37,10 @@ During a teacher degree apprenticeship you’ll work in a school and earn a sala
  
 The teaching apprenticeship is a 4-year, full-time course that lets you train as a teacher with an accredited teacher training provider. Trainee teachers will spend an average of 40% of their time (2 days a week) studying for their degree with a university.
 
+Some TDA providers will want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are.
+
+## What's the salary for a teacher degree apprenticeship?
+
 The salary you’ll earn as a TDA trainee will depend on the type of school you work in and where the school is.  
 
 If you’re employed in a maintained school (schools funded by local authorities) as a TDA trainee, you’ll be paid on the unqualified teacher pay range.  
