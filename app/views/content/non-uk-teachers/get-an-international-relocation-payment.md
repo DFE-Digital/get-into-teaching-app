@@ -3,11 +3,13 @@ title: "Get an international relocation payment"
 subcategory: If you're already a teacher
 description: |-
   Non-UK teachers in physics and languages could be eligible for financial help in the form of an international relocation payment from the UK government.
-related_content:
-    Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
-    Teach in England if you trained outside the UK: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
-    Apply for your visa to teach in England: "/non-uk-teachers/visas-for-non-uk-teachers"
-    Apply for your visa to train to teach in England: "/non-uk-teachers/visas-for-non-uk-trainees"
+cta_arrow_link:
+  teachuk:
+    link_target: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
+    link_text: "Learn more about teaching in England if you trained outside the UK"
+  applyirp:
+    link_target: "https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page"
+    link_text: "Apply for the international relocation payment"
 promo_content:
 navigation: 20.60
 navigation_title: Get an international relocation payment
@@ -87,7 +89,7 @@ If you are eligible, you will receive a maximum IRP of $nonuk_internationalreloc
 
 The IRP is a 2 year trial to support non-UK citizens who want to teach in England. 2024 to 2025 is the second year of the trial.
 
-[Learn more about teaching in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+$teachuk$
 
 ## Check your eligibility
 
@@ -298,7 +300,7 @@ You are not eligible for the second instalment of the IRP as the dependant visa 
 
 Applications for the IRP are open until 31 March 2025.
 
-<a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.
+$applyirp$
 
 Before you apply for the first and second instalments of the IRP, you’ll need to check you meet the eligibility requirements.
 
