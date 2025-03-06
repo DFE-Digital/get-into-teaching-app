@@ -93,7 +93,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in_date_of_birth_step
       click_on "Next step"
 
+      # check page title remains correct for non completed steps
       expect(page).to have_css "h1", text: "Where do you live?"
+      click_on "Next step"
+      expect(page).to have_title("Get a free adviser, location step | Get Into Teaching GOV.UK")
       choose "UK"
       click_on "Next step"
 

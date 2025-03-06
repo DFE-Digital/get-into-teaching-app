@@ -22,5 +22,9 @@ module TeacherTrainingAdviser::Steps
 
       callback_not_offered || overseas_country_skipped || have_a_degree_skipped || !equivalent_degree
     end
+
+    def title
+      "callback time"
+    end
   end
 end

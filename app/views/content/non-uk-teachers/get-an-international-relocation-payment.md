@@ -10,7 +10,6 @@ cta_arrow_link:
   applyirp:
     link_target: "https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page"
     link_text: "Apply for the international relocation payment"
-promo_content:
 navigation: 20.60
 navigation_title: Get an international relocation payment
 navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth $nonuk_internationalrelocationpayment_value$.
@@ -385,5 +384,3 @@ Teachers who meet the eligibility requirements can also [apply for other targete
 For help with the IRP, email international.relocationpayment@education.gov.uk.
 
 Do not send us a CV or enquiries about teaching jobs. DfE does not employ teachers.
-
-[Find out more about working as a teacher in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).

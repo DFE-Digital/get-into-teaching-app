@@ -28,8 +28,8 @@ provider_groups:
       link: "https://educate-group.co.uk/assessment-only-route/"
       name: "Claire King"
       email: "aor@educate-group.co.uk"
-      telephone: "07973 286995"
-      international_phone: "+447973286995"
+      telephone: "01978 281881"
+      international_phone: "+441978281881"
       
     - header: "Essex and Thames SCITT"
       link: "https://etpscitt.co.uk/our-courses-pgce-qts/assessment-only-essex-southend-thurrock/"
@@ -89,13 +89,6 @@ provider_groups:
       telephone: "07961 078589"
       international_phone: "+447961078589"
       
-    - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
-      name: "Rebecca Turner-Loisel"
-      email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
-      international_phone: "+443451450075"
-      
     - header: "Leicester and Leicestershire SCITT"
       link: "https://www.leicestershiresecondaryscitt.org/"
       name: "Clare Hearn-Palmer"
@@ -139,13 +132,6 @@ provider_groups:
       email: "kbateman@challneyboys.luton.sch.uk"
       telephone: "01582 599921"
       international_phone: "+441582599921"
-      
-    - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
-      name: "Rebecca Turner-Loisel"
-      email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
-      international_phone: "+443451450075"
       
     - header: "Future Teacher Training"
       link: "https://www.futureteachertraining.org/"
@@ -298,13 +284,6 @@ provider_groups:
       
   North East:
     providers:
-    - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
-      name: "Rebecca Turner-Loisel"
-      email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
-      international_phone: "+443451450075"
-      
     - header: "University of Sunderland"
       link: "https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/"
       name: "Jill Wilkinson"
@@ -609,13 +588,6 @@ provider_groups:
       telephone: "020 3846 5828"
       international_phone: "+442038465828"
       
-    - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
-      name: "Rebecca Turner-Loisel"
-      email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
-      international_phone: "+443451450075"
-      
     - header: "GORSE SCITT"
       link: "https://gorsescitt.org.uk/"
       name: "Nicci Cornfoot"
@@ -674,13 +646,6 @@ provider_groups:
       email: "enquiries@colchesterttc.org.uk"
       telephone: "01206 364728"
       international_phone: "+441206364728"
-      
-    - header: "Nottingham Trent University"
-      link: "https://www.ntu.ac.uk/course/education/pr/assessment-only-route-to-qts-secondary"
-      name: "Jamie Tinney"
-      email: "AssessmentOnly@ntu.ac.uk"
-      telephone: "0115 848 2666"
-      international_phone: "+441158482666"
       
     - header: "Sutton SCITT"
       link: "https://www.suttonscitt.org.uk/teacher-training-programmes-surrey/assessment-only"
@@ -753,7 +718,7 @@ Fees may be paid by you or your school at the start of the programme. If you’r
 
 ## Eligibility for assessment only QTS
 
-To be eligible, you need all of the following:
+To be eligible, you need (all of the following):
 
 * to be able to show you meet the [teachers' standards](https://www.gov.uk/government/publications/teachers-standards) without any more training
 * to have worked in 2 or more schools

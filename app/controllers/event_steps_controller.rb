@@ -72,7 +72,7 @@ private
   end
 
   def set_completed_page_title
-    @page_title = "Sign up complete"
+    @page_title = "#{@event.name}, sign up completed"
   end
 
   def set_is_walk_in

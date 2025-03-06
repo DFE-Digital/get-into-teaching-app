@@ -4,10 +4,6 @@ heading: "Teacher degree apprenticeships (TDAs)"
 subcategory: Other routes into teaching
 description: |-
  A new route to become a teacher without a degree, a teacher degree apprenticeship (TDA) lets you work at a school while you qualify as a teacher.
-related_content:
-    Explore life as a teacher : "/life-as-a-teacher"
-    Train to teach if you do not have a degree : "/train-to-be-a-teacher/if-you-dont-have-a-degree"
-    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
 calls_to_action:
   find:
     name: find
@@ -40,6 +36,10 @@ $teacher-degree-apprenticeships$
 During a teacher degree apprenticeship you’ll work in a school and earn a salary while getting a bachelor’s degree and [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
  
 The teaching apprenticeship is a 4-year, full-time course that lets you train as a teacher with an accredited teacher training provider. Trainee teachers will spend an average of 40% of their time (2 days a week) studying for their degree with a university.
+
+Some TDA providers will want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are.
+
+## What's the salary for a teacher degree apprenticeship?
 
 The salary you’ll earn as a TDA trainee will depend on the type of school you work in and where the school is.  
 

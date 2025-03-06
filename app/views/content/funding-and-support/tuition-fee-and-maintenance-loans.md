@@ -4,10 +4,6 @@ heading: "Student finance for teacher training"
 subcategory: Courses with fees
 description: |-
     Find out about the available student finance for teacher training, including tuition fee loans and maintenance loans to support you while you train.
-related_content:
-    Age groups you could teach: "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
-    Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-    Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about student finance. Chat by phone, text or email, as little or as often as you need."

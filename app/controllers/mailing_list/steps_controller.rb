@@ -57,7 +57,7 @@ module MailingList
     end
 
     def set_step_page_title
-      @page_title = "Get tailored guidance in your inbox"
+      @page_title = "Free personalised teacher training guidance"
 
       if @current_step&.title
         @page_title += ", #{@current_step.title.downcase} step"
@@ -65,7 +65,7 @@ module MailingList
     end
 
     def set_completed_page_title
-      @page_title = "You've signed up"
+      @page_title = "Free personalised teacher training guidance, sign up completed"
     end
   end
 end

@@ -10,7 +10,7 @@ RSpec.feature "Book a callback", type: :feature do
     )
   end
 
-  let(:callback_page_title) { "Callback confirmed | Get Into Teaching" }
+  let(:callback_page_title) { "Book a callback, callback confirmed | Get Into Teaching" }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::CallbackBookingQuotasApi).to \
