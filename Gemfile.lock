@@ -180,7 +180,7 @@ GEM
       smart_properties
     bigdecimal (3.1.9)
     bindex (0.8.1)
-    bootsnap (1.16.0)
+    bootsnap (1.18.4)
       msgpack (~> 1.2)
     brakeman (6.2.2)
       racc
@@ -420,7 +420,7 @@ GEM
       tomlrb
     mixlib-shellout (3.2.8)
       chef-utils
-    msgpack (1.7.1)
+    msgpack (1.8.0)
     multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.4.1)
