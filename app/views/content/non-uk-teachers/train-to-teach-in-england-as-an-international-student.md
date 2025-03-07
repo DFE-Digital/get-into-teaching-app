@@ -129,7 +129,7 @@ $refugees-asylum-seekers$
 
 You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to qualified teacher status (QTS).  
 
-Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time. 
+Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time. Most teacher training courses start in September, with a small number of courses starting on other dates throughout the year.
 
 $applying$
 

@@ -33,7 +33,7 @@ The theoretical part of your training might be delivered by a university or in a
 
 You’ll also have a mentor to support you in your school placements and learning. They can provide feedback and guidance.
 
-There are full-time and part-time teacher training courses available.
+There are full-time and part-time teacher training courses available. Most postgraduate courses start in September, with a small number of courses starting on other dates throughout the year.
 
 $find$
 

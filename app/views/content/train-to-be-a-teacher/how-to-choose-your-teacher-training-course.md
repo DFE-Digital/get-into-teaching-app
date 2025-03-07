@@ -93,7 +93,8 @@ The main differences between courses are:
 * the qualifications awarded by the course
 * if the course is fee-paying or salaried 
 * the type of course provider 
-* if the course is full-time or part-time 
+* if the course is full-time or part-time
+* the course start date 
 
 ## What you need to get onto the course
 
@@ -162,6 +163,11 @@ $what-to-check-with-training-providers$
 There are usually more full-time courses available than part-time.
 
 Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
+
+## Course start date
+
+Most teacher training courses start in September, with a small number of courses starting on other dates throughout the year.
+
 
 $expect$
 $find$
