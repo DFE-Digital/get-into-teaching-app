@@ -65,7 +65,7 @@ For secondary teacher training, your provider will want to make sure you have a 
 
 If you have a bachelor's degree, you can do postgraduate teacher training to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
-Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time.
+Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time. Most teacher training courses start in September, with a small number of courses starting on other dates throughout the year.
 
 $international-content$
 
@@ -83,8 +83,6 @@ Some providers are ‘accredited’ – this means they've been approved by the 
 Providers who have not been accredited can also run courses if they're in a partnership with an organisation that has. For example, you might see a school running a course that has a university as their ‘accredited provider’.
 
 ## What does teacher training involve?
-
-Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time. 
 
 All teacher training involves mostly classroom placements with some theoretical learning.  
 
