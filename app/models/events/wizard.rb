@@ -1,10 +1,12 @@
 require "attribute_filter"
+require "digest"
 
 module Events
   class Wizard < ::GITWizard::Base
     ATTRIBUTES_TO_LEAVE = %w[
       is_walk_in
       sub_channel_id
+      hashed_email
     ].freeze
 
     self.steps = [
@@ -24,6 +26,7 @@ module Events
         break unless result
 
         add_attendee_to_event
+        @store[:hashed_email] = Digest::SHA256.hexdigest(@store[:email]) if @store[:email].present?
 
         @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
       end

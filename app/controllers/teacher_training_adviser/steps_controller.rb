@@ -17,6 +17,7 @@ module TeacherTrainingAdviser
       @equivalent = wizard_store[:degree_options] == Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
       @callback_booked = wizard_store[:callback_offered] && @equivalent
       @first_name = wizard_store[:first_name]
+      @hashed_email = wizard_store[:hashed_email]
     end
 
     def step_params
