@@ -14,6 +14,12 @@ class EventStepsController < ApplicationController
 
   layout :resolve_layout
 
+  def completed
+    super
+
+    @hashed_email = wizard_store[:hashed_email]
+  end
+
 protected
 
   def not_available_path

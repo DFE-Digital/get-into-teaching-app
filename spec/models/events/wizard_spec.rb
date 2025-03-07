@@ -65,7 +65,11 @@ describe Events::Wizard do
       it { is_expected.to have_received(:valid?) }
 
       it do
-        expect(store[uuid]).to eql({ "is_walk_in" => wizardstore[:is_walk_in] })
+        hashed_email = Digest::SHA256.hexdigest("email@address.com")
+        expect(store[uuid]).to eql({
+          "hashed_email" => hashed_email,
+          "is_walk_in" => wizardstore[:is_walk_in],
+        })
       end
 
       it "logs the request model (filtering sensitive attributes)" do
