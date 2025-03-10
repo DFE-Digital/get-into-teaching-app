@@ -3,13 +3,13 @@ title: "Get support if you're disabled"
 heading: "Funding and support if you're disabled"
 subcategory: Extra support
 description: |-
-    Find out about the support you can get while training to teach if you're disabled.
+    Find out about the support you can get while training to teach if you're neurodivergent, have a long-term physical or mental health condition, or have any other accessibility need.
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.25
 navigation_title: Funding and support if you're disabled
-navigation_description: Find out about the support you can get while training to teach if you're disabled.
+navigation_description: Find out about the support you can get while training to teach if you're neurodivergent, have a long-term physical or mental health condition, or have any other accessibility need.
 keywords:
     - Disability
     - Disabilities
@@ -31,11 +31,21 @@ quote:
     text: "Growing up as a profoundly deaf child, I had a positive upbringing in my mainstream primary school. The teachers were amazing in terms of support and treating me equally. They inspired me to become a primary school teacher."
     name: "Habiba, primary school teacher"
     classes: quote--indent
+cta_arrow_link:
+  dsa:
+    link_target: "https://www.gov.uk/disabled-students-allowance-dsa"
+    link_text: "Find out if you're eligible for a bursary or scholarship"
+  access-to-work:
+    link_target: "https://www.gov.uk/access-to-work"
+    link_text: "Find out more about Access to Work"
+  adjustments:
+    link_target: "https://www.gov.uk/access-to-work"
+    link_text: "Find out more about adjustments"
 ---
 
-The experience and perspective of a diverse workforce is valued in school culture.
+If you’re neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs, you can get support to become a teacher. This support can sometimes be referred to as training with disabilities and other needs. The support may be helpful to you, even if you do not identify as disabled.
 
-If you’re disabled, have a mental health condition or educational needs, you can get support to become a teacher.
+The experience and perspective of a diverse workforce is invaluable in schools, so there’s lots of support available to make sure trainee teachers feel comfortable and confident in the classroom.
 
 $habiba$
 
@@ -45,29 +55,36 @@ $international-content$
 
 ### Disabled Students' Allowance (DSA)
 
-You can [apply for Disabled Students’ Allowance (DSA)](https://www.gov.uk/disabled-students-allowance-dsa/how-to-claim) to cover the study-related costs you have because of a mental health problem, long term illness or any other disability.
+If you’re on a fee-paying teacher training course, you may be eligible for Disabled Students’ Allowance (DSA). You cannot get DSA if your course pays a salary. 
 
-You’ll get confirmation of whether your application has been successful within 6 weeks.
+DSA can help towards covering any study-related costs you have because of a mental health problem, long term illness or any other disability. You can get DSA on its own or in addition to other student finance. 
 
-It can take up to 14 weeks to get your DSA support, so you should take this into consideration if you need the support in place for the start of your course.
+It can take up to 14 weeks to get your DSA, so you should take this into consideration if you need the support in place for the start of your course.
 
-### Other funding and support
+$dsa$
 
-If you get paid for your training (for example, salaried training or a teacher degree apprenticeship), you may be [eligible for support through Access to Work](https://www.gov.uk/access-to-work).
+### Access to Work
+
+If you get paid for your training, for example, salaried training or a teacher degree apprenticeship, you may be eligible for support through Access to Work. 
+
+Through Access to Work, you can apply for: 
+
+* a grant to help pay for practical support with your work 
+* support with managing your mental health at work
+
+Examples could include paying towards accessible transport to get you to school or help with funding specialist equipment.  
+
+Access to Work can also pay for a workplace assessment to see what you need at work. 
+
+You can apply for Access to Work up to 12 weeks before you start paid work. You should apply as soon as possible if you need the support in place before you start your training.
+
+$access-to-work$
 
 ## Adjustments to help you train
 
-Teacher training providers can make adjustments so that you can attend an interview or do the training. For example, they could:
+Teacher training providers can make lots of adjustments so you can attend an interview and complete your teacher training.
 
-- organise equipment like a hearing loop or an adapted keyboard
-- put you in touch with support staff if you have a mental health condition
-- make sure classrooms are wheelchair accessible
-
-Sharing that you’re disabled when you [apply for teacher training](https://www.gov.uk/apply-for-teacher-training) can help providers make adjustments. You should contact your provider to discuss any adjustments you may need.
-
-If you need help to identify technology to help you study, [visit AbilityNet for resources and guides](https://abilitynet.org.uk/about-abilitynet).
-
-You can also explore [Disability Rights UK's guide for disabled students and apprentices](https://www.disabilityrightsuk.org/).
+$adjustments$
 
 ## Your rights
 
