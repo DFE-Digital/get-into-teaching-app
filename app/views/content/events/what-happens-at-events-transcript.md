@@ -1,6 +1,6 @@
 ---
-title: What happens at a Get Into Teaching event audio description
-description: Full audio description for the video 'What happens at a Get Into Teaching event' video.
+title: Audio description for the 'What happens at a Get Into Teaching event' video
+description: Full audio description for the 'What happens at a Get Into Teaching event' video.
 ---
 
 **Describer:** Upbeat music plays throughout the video. Clips are shown of the exterior of the Manchester Central Convention Centre, people queueing inside on arrival at the event and the event staff dressed in blue T-shirts welcoming people at the registration desk.
