@@ -168,7 +168,6 @@ Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 mont
 
 Most teacher training courses start in September, with a small number of courses starting on other dates throughout the year.
 
-
 $expect$
 $find$
 $adviser$
