@@ -17,7 +17,7 @@
           partial: content/steps-to-become-a-teacher/step_2_understand_funding
         Consider getting experience:
           partial: content/steps-to-become-a-teacher/step_3_consider_getting_experience
-        Find a teacher training course:
+        Find a postgraduate teacher training course:
           partial: content/steps-to-become-a-teacher/step_4_find_a_teacher_training_course
         Apply for teacher training:
           partial: content/steps-to-become-a-teacher/step_5_apply_for_teacher_training
