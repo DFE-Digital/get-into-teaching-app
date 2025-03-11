@@ -841,7 +841,7 @@ jobs:
     name: Deploy Domains Infrastructure
     needs: [production]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     concurrency: production
     environment:
       name: production
@@ -867,7 +867,7 @@ jobs:
   deploy_domains_env:
     name: Deploy Domains to ${{ matrix.domain_environment }} environment
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     concurrency: deploy_${{ matrix.domain_environment }}
     needs: [deploy_domains_infra]
     strategy:
