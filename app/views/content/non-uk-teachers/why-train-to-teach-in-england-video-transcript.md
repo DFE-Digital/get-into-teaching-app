@@ -26,7 +26,7 @@ description: Full audio description for the 'Why train to teach in England' vide
 
 ### How about sorting your visa and documents?
 
-**Christobel** "Sorting out my visa was a lot easier than expected. The information on the UK Border Agency’s website was very comprehensive, and my school and training provider were very knowledgeable, so I had people holding my hand from start to finish. It was very easy to do."
+**Christobel:** "Sorting out my visa was a lot easier than expected. The information on the UK Border Agency’s website was very comprehensive, and my school and training provider were very knowledgeable, so I had people holding my hand from start to finish. It was very easy to do."
 
 ### What support did you get?
 
