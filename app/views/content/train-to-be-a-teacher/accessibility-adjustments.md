@@ -16,12 +16,12 @@ navigation_description: Find out about adjustments teacher training providers ca
 cta_arrow_link:
   financial-support:
     link_target: "/funding-and-support/if-youre-disabled"
-    link_text: "Find out more about Disabled Students' Allowance"
+    link_text: "Find out more about financial support if you're disabled"
 ---
 
 Teacher training providers can make adjustments if you need supoprt to become a teacher because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs. 
 
-The experience and perspective of a diverse workforce is invaluable in schools. These adjustments help make sure that anyone interested in becoming a teacher feels confident and comfotable to be the best teacher they can be.
+The experience and perspective of a diverse workforce is invaluable in schools. These adjustments help make sure that anyone interested in becoming a teacher feels confident and comfortable to be the best teacher they can be.
 
 ## Adjustments when you apply 
 
@@ -55,7 +55,7 @@ You can also explore [Disability Rights UK’s students guide for telling people
 
 You may also be eligible for financial support to help cover the costs of any specialist equipment or study-related costs due to a health condition or disability.
 
-$funding$
+$financial-support$
 
 $find$
 $adviser$

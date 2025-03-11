@@ -40,7 +40,7 @@ cta_arrow_link:
     link_text: "Find out more about Access to Work"
   adjustments:
     link_target: "/train-to-be-a-teacher/accessibility-adjustments"
-    link_text: "Find out more about adjustments"
+    link_text: "Find out more about adjustments to help you apply and train"
 ---
 
 If you’re neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs, you can get support to become a teacher. This support can sometimes be referred to as training with disabilities and other needs. The support may be helpful to you, even if you do not identify as disabled.
