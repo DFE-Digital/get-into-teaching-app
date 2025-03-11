@@ -10,8 +10,8 @@
     </p>
   </div>
 
-  <div class="stages">
-    <div class="stage">
+  <ol class="stages">
+    <li class="stage">
       <div class="card">
         <div class="number">1</div>
         <%= image_pack_tag("static/images/content/welcome-guide/school.svg", **image_alt_attribs_for_text("")) %>
@@ -26,11 +26,11 @@
           </a>
         </div>
       </div>
-    </div>
+    </li>
 
-    <div class="stage">
+    <li class="stage">
       <div class="card">
-        <div class="number">2</div>
+        <div class="number" aria-hidden="true">2</div>
         <%= image_pack_tag("static/images/content/welcome-guide/person-paper.svg", **image_alt_attribs_for_text("")) %>
         <div class="stage-info">
           <h3 class="stage-name">Check your qualifications.</h3>
@@ -43,9 +43,9 @@
           </a>
         </div>
       </div>
-    </div>
+    </li>
 
-    <div class="stage">
+    <li class="stage">
       <div class="card">
         <div class="number">3</div>
         <%= image_pack_tag("static/images/content/welcome-guide/money-icon.svg", **image_alt_attribs_for_text("")) %>
@@ -60,9 +60,9 @@
           </a>
         </div>
       </div>
-    </div>
+    </li>
 
-    <div class="stage">
+    <li class="stage">
       <div class="card">
         <div class="number">4</div>
         <%= image_pack_tag("static/images/content/welcome-guide/click-person.svg", **image_alt_attribs_for_text("")) %>
@@ -77,9 +77,9 @@
           </a>
         </div>
       </div>
-    </div>
+    </li>
 
-    <div class="stage">
+    <li class="stage">
       <div class="card">
         <div class="number">5</div>
         <%= image_pack_tag("static/images/content/welcome-guide/paper-and-pencil.svg", **image_alt_attribs_for_text("")) %>
@@ -94,8 +94,8 @@
           </a>
         </div>
       </div>
-    </div>
-  </div>
+    </li>
+  </ol>
 
   <div class="good-luck">
     <p>
