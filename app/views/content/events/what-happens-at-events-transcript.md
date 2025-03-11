@@ -7,17 +7,13 @@ description: Full audio description for the 'What happens at a Get Into Teaching
 
 **Presenter, Georgie Butler:** "Here we are in Manchester for the first Get Into Teaching event of the series. If you’ve ever wondered what happens at a Get Into Teaching event, let’s go take a look."
 
-**Describer:** Georgie is standing outside the venue. She turns to walk inside. People at the event hold brochures and a teacher talks to 2 event attendees near a Subject Library sign with a large QR code. 2 event staff in blue t-shirts talk to an attendee at a pedestal next to an Advice Zone sign while an "Advice Zone" title is displayed on screen. People at the event chat to advisers and teacher training providers. An attendee talks to a teacher while a "Teacher Hub" title is displayed on screen.
-
-**Describer:** Georgie talks to camera from inside the event.
+**Describer:** Georgie is standing outside the venue. She turns to walk inside. People at the event hold brochures and a teacher talks to 2 event attendees near a Subject Library sign with a large QR code. 2 event staff in blue t-shirts talk to an attendee at a pedestal next to an Advice Zone sign while an "Advice Zone" title is displayed on screen. People at the event chat to advisers and teacher training providers. An attendee talks to a teacher while a "Teacher Hub" title is displayed on screen. Georgie then talks to camera from inside the event.
 
 **Georgie:** "These Get Into Teaching events will provide information, advice and support to anyone looking into a career in teaching."
 
 **Amanda Bartley, On-campus Marketing Manager at the Department for Education:** "The purpose of this event is to get people like you into teaching, to inspire the next generation. Teachers are fundamental to our society, so we want to help you on your journey to becoming a teacher."
 
-**Describer:** Amanda is wearing a blue Teaching t-shirt and is standing near event display banners. A presenter talks in front of an audience of event attendees while a title of "Teaching Presentations" is displayed on screen. Event attendees holding brochures walk between many teacher training provider stalls and talk to providers. A title of "Training Provider Zone" is displayed on screen. A large Teaching logo on a yellow banner is shown.
-
-**Describer:** Georgie stands in the event venue interviewing different attendees.
+**Describer:** Amanda is wearing a blue Teaching t-shirt and is standing near event display banners. A presenter talks in front of an audience of event attendees while a title of "Teaching Presentations" is displayed on screen. Event attendees holding brochures walk between many teacher training provider stalls and talk to providers. A title of "Training Provider Zone" is displayed on screen. A large Teaching logo on a yellow banner is shown. Georgie stands in the event venue interviewing different attendees.
 
 **Georgie:** "It’d be really interesting to hear how you found today’s event."
 
@@ -65,9 +61,7 @@ description: Full audio description for the 'What happens at a Get Into Teaching
 
 **Georgie:** "No, we’ll take two, perfect!"
 
-**Describer:** Attendees talk to teacher training providers. Some advisers sit at tables having one-to-one conversations with event attendees.
-
-**Describer:** Georgie talks to camera from inside the event.
+**Describer:** Attendees talk to teacher training providers. Some advisers sit at tables having one-to-one conversations with event attendees. Georgie then talks to camera from inside the event.
 
 **Georgie:** "So, that's a Get Into Teaching event. We may be in Manchester today but we could be near you tomorrow. You can [find an event near you](/events/about-get-into-teaching-events)."
 
