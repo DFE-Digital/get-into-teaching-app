@@ -3,7 +3,7 @@ title: "Get support if you're disabled"
 heading: "Funding and support if you're disabled"
 subcategory: Extra support
 description: |-
-    Find out about the support you can get while training to teach if you're neurodivergent, have a long-term physical or mental health condition, or have any other accessibility need.
+    Find out about the support you can get while training to teach if you're neurodivergent, have a long-term health condition, or other accessibility need.
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
@@ -34,12 +34,12 @@ quote:
 cta_arrow_link:
   dsa:
     link_target: "https://www.gov.uk/disabled-students-allowance-dsa"
-    link_text: "Find out if you're eligible for a bursary or scholarship"
+    link_text: "Find out more about Disabled Students' Allowance"
   access-to-work:
     link_target: "https://www.gov.uk/access-to-work"
     link_text: "Find out more about Access to Work"
   adjustments:
-    link_target: "https://www.gov.uk/access-to-work"
+    link_target: "/train-to-be-a-teacher/accessibility-adjustments"
     link_text: "Find out more about adjustments"
 ---
 
