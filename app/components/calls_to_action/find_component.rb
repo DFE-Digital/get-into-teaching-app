@@ -1,8 +1,8 @@
 module CallsToAction
   class FindComponent < ViewComponent::Base
-    attr_accessor :icon, :title, :text, :link
+    attr_accessor :icon, :title, :text, :link, :heading_tag
 
-    def initialize(icon: "icon-search-black", link_text: "Find your teacher training course", link_target: "https://find-teacher-training-courses.service.gov.uk/", title: "Find your teacher training course", text: "Take a look at the different teacher training courses available.", hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false)
+    def initialize(icon: "icon-search-black", link_text: "Find your teacher training course", link_target: "https://find-teacher-training-courses.service.gov.uk/", title: "Find your teacher training course", text: "Take a look at the different teacher training courses available.", hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false, heading_tag: "h2")
       super
 
       @icon_filename = icon
@@ -10,6 +10,7 @@ module CallsToAction
       @text          = text
       @link_text     = link_text
       @link_target   = link_target
+      @heading_tag   = heading_tag
 
       @hide_on_mobile  = hide_on_mobile
       @hide_on_tablet  = hide_on_tablet

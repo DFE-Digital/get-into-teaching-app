@@ -7,9 +7,10 @@ RSpec.describe CallsToAction::FindComponent, type: :component do
   let(:link_text) { "Click here" }
   let(:link_target) { "/some-dir/some-page" }
   let(:content) { "some content" }
+  let(:heading_tag) { "h2" }
 
   describe "rendering the component" do
-    let(:kwargs) { { icon: icon, title: title, text: text, link_text: link_text, link_target: link_target } }
+    let(:kwargs) { { icon: icon, title: title, text: text, link_text: link_text, link_target: link_target, heading_tag: "h2" } }
 
     let(:component) { described_class.new(**kwargs) }
 
@@ -63,6 +64,17 @@ RSpec.describe CallsToAction::FindComponent, type: :component do
 
       specify "no paragraph tag should be rendered" do
         expect(page).not_to have_css("p", class: "call-to-action__text")
+      end
+    end
+
+    context "when the heading_tag is overridden" do
+      let(:custom_heading_tag) { "h4" }
+      let(:component) { described_class.new(
+        icon: icon, title: title, text: text, link_text: link_text, link_target: link_target, heading_tag: custom_heading_tag
+      )}
+
+      specify "the custom heading tag is used" do
+        expect(page).to have_css("#{custom_heading_tag}.call-to-action__heading", text: title)
       end
     end
   end
