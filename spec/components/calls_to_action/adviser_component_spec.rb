@@ -58,5 +58,16 @@ RSpec.describe CallsToAction::AdviserComponent, type: :component do
         expect(page).not_to have_css("p.adviser__text")
       end
     end
+
+    context "when the heading_tag is overridden" do
+      let(:custom_heading_tag) { "h4" }
+      let(:component) { described_class.new(
+        title: title, text: text, image: image, link_text: link_text, link_target: link_target, heading_tag: custom_heading_tag
+      )}
+
+      specify "the custom heading tag is used" do
+        expect(page).to have_css("#{custom_heading_tag}.heading-l", text: title)
+      end
+    end
   end
 end
