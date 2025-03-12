@@ -105,4 +105,4 @@
 
   <% end %>
 </section>
-<%= tag.div id: "hashed-email", class: "hidden", data: { id: "hashed-email", value: @hashed_email } %>
+<%= tag.div id: "hashed-email", class: "hidden", data: { id: "hashed-email", value: @hashed_email } if @hashed_email %>

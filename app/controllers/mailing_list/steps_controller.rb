@@ -1,8 +1,9 @@
 module MailingList
   class StepsController < ApplicationController
     include CircuitBreaker
-
+    include HashedEmails
     include GITWizard::Controller
+
     self.wizard_class = MailingList::Wizard
 
     before_action :noindex, unless: -> { request.path.include?("/name") }
@@ -21,7 +22,7 @@ module MailingList
       @first_name = wizard_store[:first_name]
       @degree_status_id = wizard_store[:degree_status_id]
       @degree_status_key = Crm::OptionSet.lookup_by_value(:degree_status, @degree_status_id) if @degree_status_id
-      @hashed_email = wizard_store[:hashed_email]
+      @hashed_email = wizard_store[:hashed_email] if hash_email_address?
     end
 
   protected

@@ -2,6 +2,8 @@ module TeacherTrainingAdviser
   class StepsController < ApplicationController
     include CircuitBreaker
     include GITWizard::Controller
+    include HashedEmails
+
     self.wizard_class = TeacherTrainingAdviser::Wizard
 
     around_action :set_time_zone, only: %i[show update]
@@ -17,7 +19,7 @@ module TeacherTrainingAdviser
       @equivalent = wizard_store[:degree_options] == Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
       @callback_booked = wizard_store[:callback_offered] && @equivalent
       @first_name = wizard_store[:first_name]
-      @hashed_email = wizard_store[:hashed_email]
+      @hashed_email = wizard_store[:hashed_email] if hash_email_address?
     end
 
     def step_params

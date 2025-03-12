@@ -1,5 +1,6 @@
 class EventStepsController < ApplicationController
   include CircuitBreaker
+  include HashedEmails
 
   before_action :set_is_walk_in, only: %i[show update]
   before_action :load_event
@@ -17,7 +18,7 @@ class EventStepsController < ApplicationController
   def completed
     super
 
-    @hashed_email = wizard_store[:hashed_email]
+    @hashed_email = wizard_store[:hashed_email] if hash_email_address?
   end
 
 protected
