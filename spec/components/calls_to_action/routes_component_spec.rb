@@ -61,9 +61,11 @@ RSpec.describe CallsToAction::RoutesComponent, type: :component do
 
     context "when the heading_tag is overridden" do
       let(:custom_heading_tag) { "h4" }
-      let(:component) { described_class.new(
-        title: title, text: text, image: image, link_text: link_text, link_target: link_target, heading_tag: custom_heading_tag
-      )}
+      let(:component) do
+        described_class.new(
+          title: title, text: text, image: image, link_text: link_text, link_target: link_target, heading_tag: custom_heading_tag,
+        )
+      end
 
       specify "the custom heading tag is used" do
         expect(page).to have_css("#{custom_heading_tag}.heading-l", text: title)
