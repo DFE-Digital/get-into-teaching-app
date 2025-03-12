@@ -74,9 +74,9 @@ Through Access to Work, you can apply for:
 
 Examples could include paying towards accessible transport to get you to school or help with funding specialist equipment.  
 
-Access to Work can also pay for a workplace assessment to see what you need at work. 
+Access to Work can also pay for a workplace assessment to see what you need in order to do your job. 
 
-You can apply for Access to Work up to 12 weeks before you start paid work. You should apply as soon as possible if you need the support in place before you start your training.
+You can apply for Access to Work up to 12 weeks before you start your salaried training or apprenticeship. You should apply as soon as possible if you need the support in place before you start.
 
 $access-to-work$
 
