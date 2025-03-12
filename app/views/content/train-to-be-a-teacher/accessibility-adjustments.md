@@ -6,7 +6,7 @@ description: |-
   Find out about adjustments teacher training providers can make to help you train.
 cta_adviser:
   adviser:
-    text: Talk to an adviser with years of teaching experience about your different training and funding options. Chat by phone, text or email, as little or as often as you need.
+    text: Talk to an adviser with years of teaching experience about getting adjustments to help you become a teacher. Chat by phone, text or email, as little or as often as you need.
 calls_to_action:
   find:
     name: find
