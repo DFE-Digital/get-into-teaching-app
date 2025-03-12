@@ -1,7 +1,7 @@
 <h2>Event information</h2>
 
 <% if @event.message %>
-  <%= render Content::InsetTextComponent.new(text: @event.message) %>
+  <%= render Content::InsetTextComponent.new(text: @event.message, heading_tag: "h3") %>
 <% end %>
 
 <%= tag.div(formatted_event_description(@event.description)) %>

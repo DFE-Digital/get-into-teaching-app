@@ -295,6 +295,7 @@ If you need to call out something important in a page and differentiate it from 
 #### Inset component for non-UK content
 
 You do not need to include both a heading and title in the inset text.
+The heading tag will default to a h2, but you can override this by optionally specifying the `heading_tag` parameter.
 
 ```yaml
 ---
@@ -304,6 +305,7 @@ inset_text:
     title: Optional title
     text: Text that can contain <a href="#">links</a>
     color: yellow|grey|purple|purple-white
+    heading_tag: "h3"
 ---
 
 # My page content
@@ -316,7 +318,8 @@ If you need to insert an inset text component in an erb file:
 <%= render Content::InsetTextComponent.new(
   header: "Non-UK citizens:",
   text: "You can call us on <a href=\"tel:+448003892500\">+44 800 389 2500</a>, or use the free live chat service. Calls will be charged at your country's standard rate.",
-  color: "purple-white"
+  color: "purple-white",
+  heading_tag: "h3"
   ) %>
 ```
 

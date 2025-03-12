@@ -58,7 +58,7 @@ gem "fastimage"
 
 gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.15.1"
 gem "dfe-autocomplete", require: "dfe/autocomplete", github: "DFE-Digital/dfe-autocomplete"
-gem "dfe-reference-data", require: "dfe/reference_data", github: "DFE-Digital/dfe-reference-data", tag: "v3.5.0"
+gem "dfe-reference-data", require: "dfe/reference_data", github: "DFE-Digital/dfe-reference-data", tag: "v3.6.9"
 
 gem "benchmark"
 gem "hashids"
@@ -90,7 +90,7 @@ gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 3.10.0"
+gem "view_component", "~> 3.21.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
