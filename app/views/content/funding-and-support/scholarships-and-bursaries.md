@@ -10,8 +10,6 @@ cta_adviser:
 calls_to_action:
   find:
     name: find
-    arguments:
-      heading_tag: "h3"
 cta_arrow_link:
   subjects:
     link_target: "/life-as-a-teacher/explore-subjects"
