@@ -1,9 +1,10 @@
 <section class="landing teaching-is-so-rewarding numbered">
-    <div class="section-number">
-      <span>01</span>
-    </div>
+  <div class="section-number">
+    <span aria-hidden="true">01</span>
+    <span class="visually-hidden">Section 1</span>
+  </div>
 
-    <div class="arrow-container mobile">
+    <div class="arrow-container mobile" aria-hidden="true">
       <%=
         render ArrowComponent.new(
           width: 250,
@@ -19,7 +20,7 @@
       %>
     </div>
 
-    <div class="arrow-container desktop">
+    <div class="arrow-container desktop" aria-hidden="true">
       <%=
         render ArrowComponent.new(
           width: 320,

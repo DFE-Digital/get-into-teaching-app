@@ -1,10 +1,11 @@
 
 <section class="landing bringing-your-lessons-to-life numbered">
   <div class="section-number">
-    <span>03</span>
+    <span aria-hidden="true">03</span>
+    <span class="visually-hidden">Section 3</span>
   </div>
 
-  <div class="arrow-container mobile">
+  <div class="arrow-container mobile" aria-hidden="true">
     <%=
       render ArrowComponent.new(
         width: 200,
@@ -20,7 +21,7 @@
     %>
   </div>
 
-  <div class="arrow-container desktop">
+  <div class="arrow-container desktop" aria-hidden="true">
     <%=
       render ArrowComponent.new(
         width: 320,
