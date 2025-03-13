@@ -608,6 +608,8 @@ youtube_video:
     title: A video about what Return to Teaching Advisers do
 ---
 
+Videos must not be added to the site without an audio description.
+
 # My page
 
 $return-to-teaching-advisers-video$

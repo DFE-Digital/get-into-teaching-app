@@ -159,7 +159,7 @@ To find out about teaching in other areas of the UK, visit the:
   <iframe title="Why train to teach in England" loading="lazy" src="https://www.youtube-nocookie.com/embed/WhBBL_DpHFo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" enablejsapi="true"></iframe>
 </div>
 
-<p><a href="/non-uk-teachers/why-train-to-teach-in-england-video-transcript">Read the transcript for the ‘Why train to teach in England?’ video</a>.</p>
+<p><a href="/non-uk-teachers/why-train-to-teach-in-england-video-transcript">Read the audio description for the ‘Why train to teach in England?’ video</a>.</p>
 
 ## Get help
 
