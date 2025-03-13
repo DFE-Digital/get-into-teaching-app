@@ -454,6 +454,7 @@ You can use the Adviser (Call to Action) component to create a call to action to
 * link_target
 * classes
 * border
+* heading_tag
 
 ```yaml
 ---
@@ -466,6 +467,7 @@ cta_adviser:
     link_target: "/optional/path"
     classes: ["class1", "class2", "class3"]
     border: true
+    heading_tag: "h4"
 ---
 
 # My page
@@ -482,7 +484,8 @@ Alternatively, if you need to insert an adviser component in an erb file, you ca
   link_text: "Optional link text",
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
-  border: true
+  border: true,
+  heading_tag: "h3"
 )%>
 ```
 
@@ -497,6 +500,7 @@ You can use the Routes (Call to Action) component to create a call to action to 
 * link_target
 * classes
 * border
+* heading_tag
 
 ```yaml
 ---
@@ -508,7 +512,8 @@ cta_routes:
     link_text: "Optional link text"
     link_target: "/optional/path"
     classes: ["class1", "class2", "class3"]
-    border: true
+    border: true,
+    heading_tag: "h3"
 ---
 ```
 
@@ -523,6 +528,7 @@ You can use the Mailing list (Call to Action) component to create a call to acti
 * link_target
 * classes
 * border
+* heading_tag
 
 ```yaml
 ---
@@ -534,7 +540,8 @@ cta_mailinglist:
     link_text: "Optional link text"
     link_target: "/optional/path"
     classes: ["class1", "class2", "class3"]
-    border: true
+    border: true,
+    heading_tag: "h1"
 ---
 
 # My page
@@ -551,7 +558,8 @@ Alternatively, if you need to insert a mailing lists component in an erb file, y
   link_text: "Optional link text",
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
-  border: true
+  border: true,
+  heading_tag: "h1"
 )%>
 ```
 
