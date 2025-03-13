@@ -3,7 +3,9 @@
 
   <div class="call-to-action__content">
     <% if title.present? %>
-      <%= tag.span(title, class: "call-to-action__heading") %>
+      <%= content_tag heading_tag, class: "call-to-action__heading" do %>
+        <%= title %>
+      <% end %>
     <% end %>
 
     <% if text.present? || content.present? %>

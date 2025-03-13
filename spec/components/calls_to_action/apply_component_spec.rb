@@ -65,5 +65,18 @@ RSpec.describe CallsToAction::ApplyComponent, type: :component do
         expect(page).not_to have_css("p", class: "call-to-action__text")
       end
     end
+
+    context "when the heading_tag is overridden" do
+      let(:custom_heading_tag) { "h4" }
+      let(:component) do
+        described_class.new(
+          icon: icon, title: title, text: text, link_text: link_text, link_target: link_target, heading_tag: custom_heading_tag,
+        )
+      end
+
+      specify "the custom heading tag is used" do
+        expect(page).to have_css("#{custom_heading_tag}.call-to-action__heading", text: title)
+      end
+    end
   end
 end
