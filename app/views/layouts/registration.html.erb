@@ -11,9 +11,9 @@
 
     <section class="main-section">
       <section class="feature registration container">
-        <%= yield(:back_link) %>
         <%= main_tag(class: "within-section") do %>
-          <%= yield %>
+        <%= yield(:back_link) %>
+        <%= yield %>
         <% end %>
       </section>
     </section>
