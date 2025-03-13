@@ -6,11 +6,10 @@ description: |-
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about salaried teacher training. Chat by phone, text or email, as little or as often as you need."
-calls_to_action:
-  find:
-    name: find
-    arguments:
-      title: "Find a salaried teacher training course"
+cta_arrow_link:
+  find-courses:
+    link_target: "https://find-teacher-training-courses.service.gov.uk/results?funding%5B%5D=salary&funding%5B%5D=apprenticeship&applications_open=true&subject_name=&subject_code=&location=&radius=10&provider_name=&provider_code=&order=course_name_ascending"
+    link_text: "Find a salaried teacher training course"
 navigation: 20.20
 navigation_description: Find out about School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 keywords:
@@ -105,11 +104,11 @@ Find out more about [what to expect during your teacher training](/train-to-be-a
 
 ## How do I find a salaried teacher training course? 
 
-To apply for salaried teacher training, you can [find postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and use the filter to only show courses that come with a salary. 
-
 It’s usually wise to apply for fee-paying courses as well to increase your chances of getting a place on a course.
 
 Some salaried teacher training providers will want you to have already arranged a school to work in while you train. Check with providers before you apply.
+
+$find-courses$
 
 ### Teach First 
 
@@ -117,5 +116,4 @@ Teach First delivers a 2 year employment-based route to teaching for high perfor
 
 To apply and find out more, you should [visit the Teach First website](https://www.teachfirst.org.uk/).
 
-$find$
 $adviser$
