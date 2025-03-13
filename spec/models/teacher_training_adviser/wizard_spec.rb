@@ -1,4 +1,5 @@
 require "rails_helper"
+require "digest"
 
 RSpec.describe TeacherTrainingAdviser::Wizard do
   describe ".steps" do
@@ -122,7 +123,12 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
       it { is_expected.to have_received(:can_proceed?) }
 
       it "prunes the store leaving data required to render the completion page" do
-        expect(store).to eql({ "type_id" => 123, "degree_options" => "equivalent", "callback_offered" => true, "first_name" => "Joe" })
+        hashed_email = Digest::SHA256.hexdigest("email@address.com")
+        expect(store).to eql({ "type_id" => 123,
+                               "degree_options" => "equivalent",
+                               "callback_offered" => true,
+                               "first_name" => "Joe",
+                               "hashed_email" => hashed_email })
       end
     end
 
