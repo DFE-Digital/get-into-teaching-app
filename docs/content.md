@@ -817,8 +817,6 @@ heading: this is the h1 for the page - only needed if you want the h1 and the ti
 
 description: must start with |- and then you can write the text here
 
-related_content: list your related content links here, formatted as internal links
-
 navigation:  this is to decide where the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the category page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an in between number.  
 
 navigation_title: This is the title that will appear in the tiles
@@ -834,8 +832,7 @@ Here is a blank version to take and fill in:
 
 - title:
 - heading:
-- description: 
-- related_content: 
+- description:
 - navigation:  
 - navigation_title: 
 - navigation_description: 
