@@ -1,6 +1,6 @@
 ---
-title: "Get support if you're disabled"
-heading: "Funding and support if you're disabled"
+title: "Funding and support if you have a learning difficulty, long-term health condition, or neurodivesity"
+heading: "Funding and support if you have a learning difficulty, long-term health condition, or neurodivesity"
 subcategory: Extra support
 description: |-
     Find out about the support you can get while training to teach if you're neurodivergent, have a long-term health condition, or other accessibility need.
@@ -8,7 +8,7 @@ cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.25
-navigation_title: Funding and support if you're disabled
+navigation_title: Funding and support if you have a learning difficulty, health condition or disability
 navigation_description: Find out about the support you can get while training to teach if you're neurodivergent, have a long-term physical or mental health condition, or have any other accessibility need.
 keywords:
     - Disability
@@ -43,7 +43,7 @@ cta_arrow_link:
     link_text: "Find out more about adjustments to help you apply and train"
 ---
 
-If you’re neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs, you can get support to become a teacher. This support can sometimes be referred to as training with disabilities and other needs. The support may be helpful to you, even if you do not identify as disabled.
+If you’re neurodivergent, have a long-term physical or mental health condition, or have any other accessibility needs, you can get support to become a teacher. This support can sometimes be referred to as training with disabilities and other needs. The support may be helpful to you, even if you do not identify as disabled.
 
 The experience and perspective of a diverse workforce is invaluable in schools, so there’s lots of support available to make sure trainee teachers feel comfortable and confident in the classroom.
 
@@ -62,6 +62,8 @@ DSA can help towards covering any study-related costs you have because of a ment
 It can take up to 14 weeks to get your DSA, so you should take this into consideration if you need the support in place for the start of your course.
 
 $dsa$
+
+You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
 ### Access to Work
 
