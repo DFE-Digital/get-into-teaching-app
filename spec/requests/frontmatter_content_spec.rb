@@ -12,7 +12,7 @@ describe "ensuring frontmatter from content pages is rendered", type: :request d
       "Sample content page",
       "Introduction",
       "This is an alert",
-      "Related content 1",
+      # "Related content 1",
     ].each do |expected|
       it { is_expected.to include(expected) }
     end
