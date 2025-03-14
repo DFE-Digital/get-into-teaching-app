@@ -81,9 +81,24 @@ export default class extends Controller {
     if (!item) return false;
 
     const nextItem = this.getNext(item);
+
     if (!nextItem) {
-      // When there is no next item set the focus to below the dropdown menu
-      document.querySelector('.tab-after-nav-menu').focus();
+      // Check if there is a back link before main; this ensures it is tabbable when the user reaches the end of the nav menu
+      // Applies to back-links within registration layout (used by pages containing a form / wizard setup)
+      const backLink = document.querySelector(
+        '.feature.registration .govuk-back-link',
+      );
+
+      if (backLink) {
+        setTimeout(() => backLink.focus(), 0);
+        return false;
+      }
+
+      // Default behavior: move focus to below the dropdown menu
+      const tabAfterNav = document.querySelector('.tab-after-nav-menu');
+      if (tabAfterNav) {
+        setTimeout(() => tabAfterNav.focus(), 0);
+      }
       return false;
     }
 
