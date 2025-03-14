@@ -58,6 +58,7 @@ $qts$
 
 Many teacher training courses also offer a postgraduate qualification, such as a PGCE, but you do not need one to teach.
 
+
 ## Teacher training courses
 
 You can do a teacher training course that leads to:
@@ -103,6 +104,8 @@ You also need the following GCSEs at grade 4 (C) or above, or equivalent qualifi
 * English
 * maths
 * science (if you want to teach primary)
+
+If you're not sure which route into teaching is right for you, you can [explore the courses available based on your circumstances](/routes-into-teaching). 
 
 $check-your-qualifications$
 
