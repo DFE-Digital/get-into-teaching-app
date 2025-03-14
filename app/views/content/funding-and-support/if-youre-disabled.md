@@ -1,6 +1,6 @@
 ---
-title: "Funding and support if you have a learning difficulty, long-term health condition, or neurodivesity"
-heading: "Funding and support if you have a learning difficulty, long-term health condition, or neurodivesity"
+title: "Support if you have a long-term health condition, learning difficulty, or neurodiversity"
+heading: "Funding and support if you have a long-term health condition, learning difficulty, or neurodiversity"
 subcategory: Extra support
 description: |-
     Find out about the support you can get while training to teach if you're neurodivergent, have a long-term health condition, or other accessibility need.
