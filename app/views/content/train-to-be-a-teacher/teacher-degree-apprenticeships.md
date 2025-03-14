@@ -11,7 +11,7 @@ calls_to_action:
       title: "Find a teacher degree apprenticeship"
 cta_arrow_link:
   tda:
-    link_target: "https://find-teacher-training-courses.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&university_degree_status=false&visa_status=false"
+    link_target: "https://find-teacher-training-courses.service.gov.uk/results?applications_open=true&minimum_degree_required=no_degree_required"
     link_text: "View the teacher degree apprenticeship courses currently available"
 navigation: 20.45
 navigation_title: If you want to do a teaching apprenticeship

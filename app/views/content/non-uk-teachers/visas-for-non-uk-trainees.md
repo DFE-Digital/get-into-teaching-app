@@ -28,7 +28,6 @@ expander:
       <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you'll usually be eligible for financial support to help you train</a>.
       <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
       <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
-
 cta_arrow_link:
    immigration:
      link_target: "https://www.gov.uk/check-uk-visa"
@@ -36,7 +35,9 @@ cta_arrow_link:
    train-in-uk:
       link_target: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
       link_text: "Find out more about training to teach in England as a non-UK citizen"
-      
+   find:
+      link_target: "https://find-teacher-training-courses.service.gov.uk/results?can_sponsor_visa=true&applications_open=true&subject_name=&subject_code=&location=&radius=10&provider_name=&provider_code=&order=course_name_ascending"
+      link_text: "Search for postgraduate teacher training courses that offer visa sponsorship"    
 keywords:
   - International
   - Teaching
@@ -134,8 +135,9 @@ You may be able to train part-time, but your part-time salary must be at least $
 
 
 ## What you need to do to apply for your visa 
-You can apply for your visa once you have a confirmed offer of a training place. 
-[Search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that offer visa sponsorship. 
+You can apply for your visa once you have a confirmed offer of a training place.
+
+$find$
 
 Email your chosen provider to check if they can sponsor you. Once you have confirmation, you can then [apply for your teacher training course](/how-to-apply-for-teacher-training). 
 

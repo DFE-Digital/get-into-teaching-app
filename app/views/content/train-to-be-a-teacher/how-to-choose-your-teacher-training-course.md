@@ -42,7 +42,7 @@ expander:
       <p>
       You’ll need the right to work or study in the UK to do your teacher training in England.</p>
       <p>
-      If you do not have the right to work in the UK, you should only apply to courses that have visa sponsorship available. You can filter by ‘visa sponsorship’ to <a href="https://find-teacher-training-courses.service.gov.uk/">find courses where visas can be sponsored</a>.
+      If you do not have the right to work in the UK, you should only apply to courses that have visa sponsorship available. You can <a href="https://find-teacher-training-courses.service.gov.uk/results?can_sponsor_visa=true&applications_open=true&subject_name=&subject_code=&location=&radius=10&provider_name=&provider_code=&order=course_name_ascending">find courses where visas can be sponsored</a>.
       </p>
       <p>
       If your application is successful, the training provider may be able to help you with applying for your visa. <a href="/non-uk-teachers/visas-for-non-uk-trainees">Find out how to apply for your visa to train to teach in England</a>.
