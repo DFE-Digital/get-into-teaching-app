@@ -11,10 +11,10 @@
 
     <section class="main-section">
       <section class="feature registration container">
-        <%= main_tag(class: "within-section") do %>
-        <%= yield(:back_link) %>
+      <%= yield(:back_link) %>
+      <%= main_tag(class: "within-section") do %>
         <%= yield %>
-        <% end %>
+      <% end %>
       </section>
     </section>
 
