@@ -96,6 +96,7 @@ describe MailingList::Wizard do
         "lastName" => "[FILTERED]",
         "addressPostcode" => nil,
         "welcomeGuideVariant" => request.welcome_guide_variant,
+        "graduationYear" => nil
       }.to_json
 
       expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#add_mailing_list_member: #{filtered_json}")
