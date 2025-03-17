@@ -19,7 +19,7 @@ cta_arrow_link:
     link_text: "Find out more about financial support if you're disabled"
 ---
 
-Teacher training providers can make adjustments if you need support to become a teacher because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs. 
+Teacher training providers can make adjustments if you need support to become a teacher. This includes support for neurodiversity, long-term physical or mental health conditions, or other accessibility needs.
 
 The experience and perspective of a diverse workforce is invaluable in schools. These adjustments help make sure that anyone interested in becoming a teacher feels confident and comfortable during their application and training.
 
@@ -31,7 +31,7 @@ During the application process, providers can make adjustments such as:
 * using an alternative communication method 
 * giving extra details about the interview format and venue
 
-You can tell providers about what adjustments you need when you apply. 
+You can tell providers about the adjustments you need when you apply. 
 
 ## Adjustments during your teacher training 
 
@@ -40,12 +40,12 @@ During your teacher training, providers could make adjustments such as:
 * adjusting your timetable to suit your needs 
 * providing copies of presentation materials before training sessions 
 * printing or photocopying materials on coloured paper 
-* put you in touch with support staff if you have a mental health condition 
+* putting you in touch with support staff 
 * making sure training and teaching areas are wheelchair accessible 
 
 ## Speaking to teacher training providers about adjustments 
 
-If you think you’ll need adjustments, you can either contact your training provider directly, or you can also ask for support when you apply for teacher training. 
+If you think you’ll need adjustments, you can either contact your training provider directly, or you can ask for support when you apply for teacher training. 
 
 If you’re not sure what adjustments you may need, speaking to providers can be an opportunity to get more details on the course structure and expectations. This can help you to identify any situations where you may need adjustments. Providers may also have had experience supporting other trainees and have their own suggestions of what you may find helpful.  
 

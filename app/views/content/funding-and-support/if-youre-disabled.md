@@ -1,6 +1,6 @@
 ---
-title: "Support if you have a long-term health condition, learning difficulty, or neurodiversity"
-heading: "Funding and support if you have a long-term health condition, learning difficulty, or neurodiversity"
+title: "Support if you have a health condition, learning difficulty, or neurodiversity"
+heading: "Funding and support if you have a health condition, learning difficulty, or neurodiversity"
 subcategory: Extra support
 description: |-
     Find out about the support you can get while training to teach if you're neurodivergent, have a long-term health condition, or other accessibility need.
@@ -57,13 +57,13 @@ $international-content$
 
 If you’re on a fee-paying teacher training course, you may be eligible for Disabled Students’ Allowance (DSA). You cannot get DSA if your course pays a salary. 
 
-DSA can help towards covering any study-related costs you have because of a mental health problem, long term illness or any other disability. You can get DSA on its own or in addition to other student finance. 
+DSA can help cover any study-related costs you have because of a mental health problem, long-term illness or any other disability. You can get DSA on its own or in addition to other student finance. 
 
 It can take up to 14 weeks to get your DSA, so you should take this into consideration if you need the support in place for the start of your course.
 
 $dsa$
 
-You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
+You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. Find out more about [your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
 ### Access to Work
 
