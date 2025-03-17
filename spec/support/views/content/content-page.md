@@ -3,8 +3,6 @@
   content:
     - content/samples/intro
   alert: This is an alert
-  related_content:
-     Related content 1: "#related-content-one"
 ---
 
 An image without explicit width/height attributes:
