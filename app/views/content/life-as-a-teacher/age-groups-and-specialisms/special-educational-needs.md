@@ -9,7 +9,7 @@ cta_adviser:
     text: Talk to an adviser with years of teaching experience about opportunities to teach pupils with SEND. Chat by phone, text or email, as little or as often as you need.
 cta_arrow_link:
   find:
-    link_target: "https://find-teacher-training-courses.service.gov.uk/results?send_courses=true&applications_open=true&subject_name=&subject_code=&location=&radius=10&provider_name=&provider_code=&order=course_name_ascending"
+    link_target: "https://find-teacher-training-courses.service.gov.uk/results?send_courses=true&applications_open=true&order=course_name_ascending"
     link_text: "Find a teacher training course with a SEND specialism"
 keywords:
   - SEND

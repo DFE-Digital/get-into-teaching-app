@@ -36,7 +36,7 @@ cta_arrow_link:
       link_target: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
       link_text: "Find out more about training to teach in England as a non-UK citizen"
    find:
-      link_target: "https://find-teacher-training-courses.service.gov.uk/results?can_sponsor_visa=true&applications_open=true&subject_name=&subject_code=&location=&radius=10&provider_name=&provider_code=&order=course_name_ascending"
+      link_target: "https://find-teacher-training-courses.service.gov.uk/results?can_sponsor_visa=true&applications_open=true&order=course_name_ascending"
       link_text: "Search for postgraduate teacher training courses that offer visa sponsorship"    
 keywords:
   - International
