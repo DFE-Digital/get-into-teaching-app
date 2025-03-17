@@ -67,7 +67,6 @@ The content is non-accessible for the following reasons:
 * the visual styling of the results displayed in our search function, the section numbers in our welcome guide and the error message on the degree subject step in our adviser sign-up form does not match the programmatic information which could cause problems for screen reader users. This fails to meet [WCAG 2.2 A - 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships)
 * in our main navigational menu, there is an issue with the programmatic reading order, with some sub-menu items appearing last which may be confusing for users. This fails to meet [WCAG 2.2 A - 1.3.2 Meaningful sequence](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence)
 * on the [events page](/events), the [bursaries and scholarship page](/funding-and-support/scholarships-and-bursaries) and in the welcome guide, some content is cut off the screen at 400% zoom. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow)
-* in the personalised email and adviser sign-up forms, the back link is skipped when tabbing through the pages. This fails to meet [WCAG 2.2 A - 2.4.3 Focus order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order)
 * in the personalised email sign-up form, the main programmatic label of the input field on the authentication step is not fully meaningful for users. This fails to meet [WCAG 2.2 AA - 2.4.6 Headings and labels](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels)
 
 #### Webchat
