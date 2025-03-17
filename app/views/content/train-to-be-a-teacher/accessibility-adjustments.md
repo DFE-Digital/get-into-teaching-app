@@ -51,6 +51,17 @@ If you’re not sure what adjustments you may need, speaking to providers can be
 
 You can also explore [Disability Rights UK’s guide to telling people you’re a disabled student](https://www.disabilityrightsuk.org/resources/telling-people-you%E2%80%99re-disabled-clear-and-easy-guide-students).  
 
+## Your rights
+
+Providers must not discriminate against you. They cannot:
+
+- ask disability or health questions if they’re not relevant to your ability to become a teacher
+- reject your application because you’re disabled
+
+Anyone who’s offered a place on a teacher training course is asked to complete a fitness questionnaire before starting training. Training providers should only ask relevant questions to make sure you’re able to teach.
+
+Find out more about [your rights under the Equality Act 2010](https://www.equalityhumanrights.com/equality/equality-act-2010/your-rights-under-equality-act-2010) and how it protects different characteristics.
+
 ## Get financial support if you're disabled
 
 You may also be eligible for financial support to help cover the costs of any specialist equipment or study-related costs due to a health condition or disability.
