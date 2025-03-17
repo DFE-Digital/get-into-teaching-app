@@ -81,8 +81,7 @@ Table caption: Essential cookies we use
 
 The information gathered via these Cookies may directly or indirectly identify you as an individual visitor. This is because the information collected is typically linked to a pseudonymous identifier associated with the device you use to access the website. We may also use these Cookies to test new pages, features or new functionality of the website to see how people react to them.
 
-We may also share anonymised and hashed data with third party platforms so that we can gain a better understanding of how people use our site. This helps us improve the accuracy of our marketing, and targeting and finding people like you, who may also be interested in our service. We do not allow these providers to share this data with others. 
-
+We may also share anonymised and hashed data with third party platforms so that we can gain a better understanding of how people use our site. This helps us improve the accuracy of our marketing, and targeting and finding people like you, who may also be interested in our service. We do not allow these providers to share this data with others.
 
 | Name                              | Purpose                                                                                                                                                     | Expires after        |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
