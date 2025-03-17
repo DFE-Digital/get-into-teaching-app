@@ -104,6 +104,8 @@ You also need the following GCSEs at grade 4 (C) or above, or equivalent qualifi
 * maths
 * science (if you want to teach primary)
 
+If you're not sure which route into teaching is right for you, [find routes into teaching based on your circumstances.](/routes-into-teaching). 
+
 $check-your-qualifications$
 
 ## What is a postgraduate diploma in education (PGDE)?
