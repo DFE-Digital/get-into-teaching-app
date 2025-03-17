@@ -58,7 +58,6 @@ $qts$
 
 Many teacher training courses also offer a postgraduate qualification, such as a PGCE, but you do not need one to teach.
 
-
 ## Teacher training courses
 
 You can do a teacher training course that leads to:
