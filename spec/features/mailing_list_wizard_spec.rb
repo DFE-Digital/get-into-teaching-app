@@ -26,6 +26,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Do you have a degree?"
     choose "Not yet, I'm a first year student"
+    fill_in "Which year will you graduate?", with: Date.current.year + 1
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
@@ -66,7 +67,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
-    choose "Not yet, I'm a first year student"
+    choose "Not yet, I'm a second year student"
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
@@ -144,7 +145,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
-    choose "Not yet, I'm a first year student"
+    choose "Not yet, I'm a second year student"
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
