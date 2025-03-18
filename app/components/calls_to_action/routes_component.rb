@@ -6,7 +6,7 @@ class CallsToAction::RoutesComponent < ViewComponent::Base
     text: "An adviser with years of teaching experience can help you to become a teacher. Chat by phone, text, or email as little or often as you need.",
     image: "static/images/routes.png",
     link_text: "Find your route into teaching",
-    link_target: "/find-your-route-into-teaching",
+    link_target: "/routes-into-teaching",
     classes: [],
     border: true
   )
