@@ -5,6 +5,7 @@
 
 <%= f.govuk_text_field :timed_one_time_password,
 autocomplete: "off",
+aria: { labelledby: "git-wizard-steps-authenticate-timed-one-time-password-hint" },
 label: { text: t('helpers.label.wizard_steps_authenticate.timed_one_time_password', **Value.data), class: "govuk-hint" },
 hint: { text: safe_html_format(hint_text) } %>
 
