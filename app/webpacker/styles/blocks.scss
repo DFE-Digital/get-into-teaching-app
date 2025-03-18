@@ -88,7 +88,12 @@ $space-between-sections: 3.7em;
         @extend .link--black;
       }
     }
+  
+.text-and-button {
+        margin-left: 1.75em;
+    }
   }
+
 
   @include mq($from: tablet) {
     display: flex;

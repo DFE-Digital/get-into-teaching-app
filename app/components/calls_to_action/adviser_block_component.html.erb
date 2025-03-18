@@ -5,7 +5,9 @@
     <%= tag.span(@title) %> 
   <% end %>
 
-  <%= @text %> 
-  <p></p>
-  <%= link_to @link_text, @link_target, class: "button", role: "button", data: { "promo-type": "adviser" } if @link_text.present? && @link_target.present? %>
+  <div class = "text-and-button">
+    <%= @text %> 
+    <p></p>
+    <%= link_to @link_text, @link_target, class: "button", role: "button", data: { "promo-type": "adviser" } if @link_text.present? && @link_target.present? %>
+  </div>
 <% end %>
