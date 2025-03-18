@@ -45,3 +45,14 @@
     text: "An adviser with years of teaching experience can help you change careers to become a teacher. Chat by phone, text, or email as little or often as you need.",
   ) %>
 </div>
+   <section class="col-space-m-top">
+<%= render CallsToAction::RoutesComponent.new(
+  title: "Find your route into teaching",
+  text: "Answer 3 questions and find routes into teaching based on your circumstances.",
+  image: "static/images/routes.png",
+  link_text: "Find a route",
+  link_target: "/routes-into-teaching",
+  classes: ["class1", "class2", "class3"],
+  border: false
+) %>
+</section>

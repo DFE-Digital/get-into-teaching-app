@@ -7,6 +7,9 @@ image: false
 cta_mailinglist:
   mailinglist:
     text: Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.
+cta_routes:
+  routes:
+    text: Answer 3 questions and find routes into teaching based on your circumstances.
 keywords:
   - Teachers pension
   - Pension
@@ -48,3 +51,4 @@ If you were to die while actively paying into your pension, a nominated benefici
 To find out more about the teachers’ pension scheme, visit the [teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
 
 $mailinglist$
+$routes$

@@ -14,3 +14,14 @@
     <p>Of course, there are highs and lows in teaching, but the highs are immeasurable. You might have a child who starts the lesson not particularly focused because they’re struggling with the subject. As you guide them and encourage them, their understanding increases and all of a sudden they’ve got their hand up to answer a question. That lightbulb moment really gives you a buzz.</p>
   </section>
 </div>
+   <section class="col-space-m-top">
+<%= render CallsToAction::RoutesComponent.new(
+  title: "Find your route into teaching",
+  text: "Answer 3 questions and find routes into teaching based on your circumstances.",
+  image: "static/images/routes.png",
+  link_text: "Find a route",
+  link_target: "/routes-into-teaching",
+  classes: ["class1", "class2", "class3"],
+  border: false
+) %>
+</section>

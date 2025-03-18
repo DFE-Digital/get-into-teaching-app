@@ -15,6 +15,10 @@ keywords:
   - NVQ
   - BTEC
   - HND
+calls_to_action:
+cta_routes:
+   routes:
+     text: Answer 3 questions and find routes into teaching based on your circumstances.
 ---
 
 
@@ -39,3 +43,5 @@ Many further education training providers offer funded teacher training on the j
 To find out more, visit the [teach in further education website](https://www.teachinfurthereducation.education.gov.uk/).
 
 However, if you’re mainly interested in teaching in a school, explore [how to train to teach primary and secondary pupils](/train-to-be-a-teacher).
+
+$routes$

@@ -57,6 +57,9 @@ calls_to_action:
         Salary: "Provided by employer"
         Length of training: "3 years"
         Qualification: "Early years teacher status, a bachelor’s degree, and level 6 early years teacher apprenticeship"
+cta_routes:
+   routes:
+     text: Answer 3 questions and find routes into teaching based on your circumstances.
 ---
 
 The early years are critical in children’s development. As an early years teacher you’ll work with young children up to the age of 5. You’ll use your knowledge and skills to help young children enjoy high standards of teaching and open their minds to new ideas every day.
@@ -132,3 +135,4 @@ This is a new route, designed for people who want to combine studying for a bach
 The first early years teacher degree apprenticeships are expected to start in 2026. More information will be available on this page later this year, including how to apply and course details. 
 
 $EY-apprenticeship$
+$routes$

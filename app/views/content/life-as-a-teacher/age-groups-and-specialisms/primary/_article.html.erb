@@ -95,7 +95,6 @@
       <p>As a primary school teacher, there's plenty of opportunity for progression and opportunities to lead beyond the classroom. That could mean becoming a lead in a subject, leading a key stage or even becoming a part of the senior management team.</p>
      <%= render 'content/shared/quotes/quote_primary_phil' %>
     </section>
-
   <section class="col col-720">
     <!-- Support with teacher training -->
     <%= render 'content/shared/teaching/ect_support' %>
@@ -104,3 +103,14 @@
     text: "An adviser with years of teaching experience can help you to become a teacher. Chat by phone, text, or email as little or often as you need.",
   ) %>
 </div>
+   <section class="col-space-m-top">
+<%= render CallsToAction::RoutesComponent.new(
+  title: "Find your route into teaching",
+  text: "Answer 3 questions and find routes into teaching based on your circumstances.",
+  image: "static/images/routes.png",
+  link_text: "Find a route",
+  link_target: "/routes-into-teaching",
+  classes: ["class1", "class2", "class3"],
+  border: false
+) %>
+</section>

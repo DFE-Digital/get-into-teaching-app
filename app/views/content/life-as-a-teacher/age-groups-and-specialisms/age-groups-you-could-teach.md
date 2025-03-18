@@ -6,6 +6,9 @@ description: |-
 cta_mailinglist:
   mailinglist:
     text: Get free guidance and support on getting into teaching, including learning more about the age groups you could teach.
+cta_routes:
+  routes:
+    text: Answer 3 questions and find routes into teaching based on your circumstances.
 cta_arrow_link:
   subjects:
     link_target: "/life-as-a-teacher/explore-subjects"
@@ -97,3 +100,4 @@ There are three key areas:
 Learn more about [teaching in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers).
 
 $mailinglist$
+$routes$

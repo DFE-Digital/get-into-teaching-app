@@ -17,6 +17,9 @@ cta_arrow_link:
   steps:
     link_target: "/steps-to-become-a-teacher"
     link_text: "Find out how to become a teacher"
+cta_routes:
+  routes:
+    text: Answer 3 questions and find routes into teaching based on your circumstances.
 keywords:
   - Salary
   - Salaries
@@ -166,3 +169,5 @@ In additional to the practical rewards of teaching, there's personal benefits to
 $benefits$
 
 $mailinglist$
+
+$routes$

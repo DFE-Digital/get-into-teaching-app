@@ -11,6 +11,9 @@ cta_arrow_link:
   find:
     link_target: "https://find-teacher-training-courses.service.gov.uk/"
     link_text: "Find a teacher training course"
+cta_routes:
+  routes:
+    text: Answer 3 questions and find routes into teaching based on your circumstances.
 keywords:
   - SEND
   - disabled
@@ -96,3 +99,4 @@ $find$
 Filter by ‘courses with a SEND specialism’ if you have a particular interest in this area. 
 
 $adviser$
+$routes$
