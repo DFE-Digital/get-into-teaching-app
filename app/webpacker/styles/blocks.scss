@@ -24,6 +24,7 @@ $space-between-sections: 3.7em;
 
   > * {
     flex: 1 0;
+    max-width: 100%;
 
     // this can be deleted once gap is supported by
     // Safari, it's currently only in the TP (tech preview)
@@ -38,9 +39,9 @@ $space-between-sections: 3.7em;
   }
 
   @include mq($until: tablet) {
-    flex-direction: column;
+    flex-direction: column; 
     margin: 1em;
-  }
+    }
 
   &__directory {
     border: 3px solid $purple;
@@ -75,6 +76,8 @@ $space-between-sections: 3.7em;
   width: 100%;
 
   .image-block {
+    flex: 1;
+
     img {
       width: 100%;
       height: auto;
@@ -88,16 +91,12 @@ $space-between-sections: 3.7em;
         @extend .link--black;
       }
     }
-  
-.text-and-button {
-        margin-left: 1.75em;
-    }
   }
 
 
   @include mq($from: tablet) {
     display: flex;
-    gap: $indent-amount * .5;
+    gap: $indent-amount * 1;
 
     .image-block {
       h2 {
@@ -118,4 +117,8 @@ $space-between-sections: 3.7em;
       margin: 1em $px-either-side-of-content 0;
     }
   }
+}
+
+.promos {
+  padding: 0 1.5em 1.5em 1.5em;
 }
