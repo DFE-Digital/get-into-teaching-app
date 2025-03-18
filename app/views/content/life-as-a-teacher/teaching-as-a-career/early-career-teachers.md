@@ -6,9 +6,6 @@ description: |-
 cta_adviser:
   adviser:
     text: An adviser with years of teaching experience can help you understand the support you'll get when you first start teaching. Chat by phone, text or email, as little or as often as you need.
-cta_routes:
-  routes:
-    text: Answer 3 questions and find routes into teaching based on your circumstances.
 ---
 
 You’ll be known as an early career teacher (ECT) for your first 2 years in teaching. The term early career teacher (ECT) has replaced newly qualified teacher (NQT).
