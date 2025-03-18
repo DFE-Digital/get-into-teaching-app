@@ -467,7 +467,7 @@ cta_adviser:
     link_target: "/optional/path"
     classes: ["class1", "class2", "class3"]
     border: true
-    heading_tag: "h4"
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 ---
 
 # My page
@@ -485,7 +485,7 @@ Alternatively, if you need to insert an adviser component in an erb file, you ca
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
   border: true,
-  heading_tag: "h3"
+  heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 )%>
 ```
 
@@ -513,7 +513,7 @@ cta_routes:
     link_target: "/optional/path"
     classes: ["class1", "class2", "class3"]
     border: true,
-    heading_tag: "h3"
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 ---
 ```
 
@@ -541,7 +541,7 @@ cta_mailinglist:
     link_target: "/optional/path"
     classes: ["class1", "class2", "class3"]
     border: true,
-    heading_tag: "h1"
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 ---
 
 # My page
@@ -559,7 +559,7 @@ Alternatively, if you need to insert a mailing lists component in an erb file, y
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
   border: true,
-  heading_tag: "h1"
+  heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 )%>
 ```
 
