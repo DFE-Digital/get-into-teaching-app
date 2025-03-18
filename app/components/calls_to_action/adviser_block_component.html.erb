@@ -1,15 +1,11 @@
 <%= tag.div(class: "image-block") do %>
-  <%= image_pack_tag(image, **helpers.image_alt_attribs_for_text("")) %>
+  <%= image_pack_tag("images/#{@image}", alt: "Adviser image") %> 
+  
+  <%= tag.h2(class: "heading--overlap heading--highlight-#{@title_color} heading--margin-top-0 heading-xl") do %>
+    <%= tag.span(@title) %> 
+  <% end %>
 
-  <%= tag.h2(class: "heading--overlap heading--highlight-#{title_color} heading--margin-top-0 heading-xl") do %>
-    <%= tag.span(title) %>
-  <% end %> 
-<% end %> 
-
-<% if text.present? %>
-  <%= tag.p do %>
-    <%= content %>
-  <% end %> 
+  <%= @text %> 
+  <p></p>
+  <%= link_to @link_text, @link_target, class: "button", role: "button", data: { "promo-type": "adviser" } if @link_text.present? && @link_target.present? %>
 <% end %>
-
-<%= link_to link_text, link_target, class: "button", role: "button", data: { "promo-type": "adviser" } if link_text.present? && link_target.present? %>
