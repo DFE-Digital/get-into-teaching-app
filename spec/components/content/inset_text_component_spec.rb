@@ -16,8 +16,6 @@ describe Content::InsetTextComponent, type: :component do
   it { is_expected.to have_css(".inset-text h2 span.header", text: "#{header}:") }
 
   context "when there is a header" do
-    let(:title) { nil }
-
     it { is_expected.to have_css(".inset-text h2 span.header", text: header) }
   end
 
