@@ -1,8 +1,7 @@
 <%= tag.section(class: classes) do %>
-  <% if header.present? || title.present? %>
+  <% if header.present? %>
     <%= content_tag(heading_tag, role: "text") do %>
-      <%= tag.span(header, class: "header") if header.present? %>
-      <%= tag.span(title, class: "title") if title.present? %>
+      <%= tag.span(header, class: "header") %>
     <% end %>
   <% end %>
   <%= tag.p(helpers.safe_html_format(text)) %>
