@@ -2,9 +2,9 @@
   <%= image_pack_tag("images/#{@image}", alt: "Adviser image") %>
 
   <%= tag.h2(class: "heading--overlap heading--highlight-#{@title_color} heading--margin-top-0 heading-xl") do %>
-    <%= tag.span(@title) %> 
+    <%= tag.span(@title) %>
   <% end %>
-  
+
   <%= tag.ul do %>
     <% @links.each do |link| %>
       <%= tag.li do %>

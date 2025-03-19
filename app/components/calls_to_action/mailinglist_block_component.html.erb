@@ -1,12 +1,12 @@
 <%= tag.div(class: "image-block") do %>
-  <%= image_pack_tag("images/#{@image}", alt: "Find image") %> 
-  
+  <%= image_pack_tag("images/#{@image}", alt: "Find image") %>
+
   <%= tag.h2(class: "heading--overlap heading--highlight-#{@title_color} heading--margin-top-0 heading-xl") do %>
-    <%= tag.span(@title) %> 
+    <%= tag.span(@title) %>
   <% end %>
 
-  <div class = "promos">
-    <%= @text %> 
+  <div class="promos">
+    <%= @text %>
     <p></p>
     <%= link_to @link_text, @link_target, class: "button", role: "button", data: { "promo-type": "mailinglist" } if @link_text.present? && @link_target.present? %>
   </div>
