@@ -92,7 +92,7 @@ provider_groups:
     - header: "Leicester and Leicestershire SCITT"
       link: "https://www.leicestershiresecondaryscitt.org/"
       name: "Clare Hearn-Palmer"
-      email: "chearn-palmer@leicesterscitt.co.uk"
+      email: "admin@leicesterscitt.co.uk"
       telephone: "0116 254 3187"
       international_phone: "+441162543187"
       
@@ -421,6 +421,13 @@ provider_groups:
       telephone: "01252 717408"
       international_phone: "+441252717408"
       
+    - header: "St Mary’s University"
+      link: "https://www.stmarys.ac.uk/"
+      name: "Lizzy Jackson"
+      email: "elizabeth.jackson@stmarys.ac.uk"
+      telephone: "020 8240 4326"
+      international_phone: "+442082404326"
+      
     - header: "Sutton SCITT"
       link: "https://www.suttonscitt.org.uk/teacher-training-programmes-surrey/assessment-only"
       name: "Rachel Fagan"
@@ -465,6 +472,13 @@ provider_groups:
       
   South West:
     providers:
+    - header: "Bath Spa University"
+      link: "https://www.bathspa.ac.uk/courses/qts-assessment-only/"
+      name: "Fiona Hunt"
+      email: "assessmentonly@bathspa.ac.uk"
+      
+      
+      
     - header: "Bournemouth Bay Teacher Training Partnership"
       link: "https://bournemouthbay-partnership.com/about-us/"
       name: "James Mosley"
@@ -646,13 +660,6 @@ provider_groups:
       email: "enquiries@colchesterttc.org.uk"
       telephone: "01206 364728"
       international_phone: "+441206364728"
-      
-    - header: "Sutton SCITT"
-      link: "https://www.suttonscitt.org.uk/teacher-training-programmes-surrey/assessment-only"
-      name: "Rachel Fagan"
-      email: "rfa@glenthorne.sutton.sch.uk"
-      telephone: "020 8410 0006"
-      international_phone: "+442084100006"
       
     - header: "Teaching London: LDBS SCITT"
       link: "https://www.teachinglondon.org/ourcourses/assessment-only-route-to-qts/"
