@@ -24,7 +24,7 @@ module Header
       mode == :mobile ? :desktop : :mobile
     end
 
-    def nav_link(resource, mode, underline_on_hover: true, role: 'menuitem')
+    def nav_link(resource, mode, underline_on_hover: true, role: "menuitem")
       title = resource.title
       path = resource.path
       li_id = "#{path.parameterize}-#{mode}"
@@ -54,7 +54,7 @@ module Header
       end
     end
 
-    def category_list(resource, mode, css_class:, role: 'menu')
+    def category_list(resource, mode, css_class:, role: "menu")
       tag.ol(class: css_class, id: category_list_id(resource, mode), role: role) do
         safe_join(
           [
@@ -74,7 +74,7 @@ module Header
       "#{resource.path.parameterize}-categories-#{mode}"
     end
 
-    def category_link(subcategory, resource, mode, role: 'menuitem')
+    def category_link(subcategory, resource, mode, role: "menuitem")
       title = subcategory
       li_id = "#{resource.path.parameterize}-#{title.parameterize}-#{mode}"
       corresponding_li_id = "#{resource.path.parameterize}-#{title.parameterize}-#{corresponding_mode(mode)}"
@@ -120,7 +120,7 @@ module Header
       end
     end
 
-    def view_all_link(resource, mode, role: 'menuitem')
+    def view_all_link(resource, mode, role: "menuitem")
       title = "View all in #{resource.title}"
       path = resource.path
       li_id = "menu-view-all-#{path.parameterize}-#{mode}"
