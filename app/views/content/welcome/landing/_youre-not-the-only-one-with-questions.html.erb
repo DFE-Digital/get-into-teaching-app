@@ -1,5 +1,6 @@
 <section class="landing youre-not-the-only-one-with-questions numbered">
-  <div class="arrow-container top mobile">
+
+  <div class="arrow-container top mobile" aria-hidden="true">
     <%=
       render ArrowComponent.new(
         width: 150,
@@ -15,7 +16,7 @@
     %>
   </div>
 
-  <div class="arrow-container top desktop">
+  <div class="arrow-container top desktop" aria-hidden="true">
     <%=
       render ArrowComponent.new(
         width: 300,
@@ -32,10 +33,6 @@
   </div>
 
   <%= image_pack_tag("static/images/content/hero-images/english.jpg", **image_alt_attribs("static/images/content/hero-images/english.jpg")) %>
-
-  <div class="section-number">
-    <span>04</span>
-  </div>
 
   <div class="text">
     <h2>
@@ -99,7 +96,7 @@
     </div>
   </div>
 
-  <div class="arrow-container bottom mobile">
+  <div class="arrow-container bottom mobile" aria-hidden="true">
     <%=
       render ArrowComponent.new(
         width: 200,
@@ -115,7 +112,7 @@
     %>
   </div>
 
-  <div class="arrow-container bottom desktop">
+  <div class="arrow-container bottom desktop" aria-hidden="true">
     <%=
       render ArrowComponent.new(
         width: 500,
