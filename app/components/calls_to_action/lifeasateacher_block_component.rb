@@ -7,7 +7,7 @@ module CallsToAction
     def initialize(
       title: "Life as a teacher",
       image: "life-as-a-teacher-block-promo.jpg",
-      title_color: "yellow",
+      title_color: "blue",
       links: [
         { text: "Pay and benefits", url: "/life-as-a-teacher/pay-and-benefits" },
         { text: "Why teach", url: "/life-as-a-teacher/why-teach" },

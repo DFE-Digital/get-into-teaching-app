@@ -7,7 +7,7 @@ module CallsToAction
     def initialize(
       title: "Take the next step",
       image: "next-steps-block-promo.jpg",
-      title_color: "blue",
+      title_color: "yellow",
       links: [
         { text: "Get an adviser", url: "/teacher-training-adviser/sign_up/identity" },
         { text: "Attend a Get Into Teaching event", url: "/events/about-get-into-teaching-events" },
