@@ -3,7 +3,7 @@ module CallsToAction
     attr_reader :title, :image, :title_color, :text, :link_text, :link_target
 
     def initialize(
-      title: "Get School Experience",
+      title: "Get school experience",
       image: "get-school-experience-block-promo.jpg",
       title_color: "green",
       text: "Use our service to search for and organise school experience in England.",
