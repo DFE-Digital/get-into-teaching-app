@@ -9,8 +9,8 @@ cta_adviser:
     text: Talk to an adviser with years of teaching experience about opportunities to teach pupils with SEND. Chat by phone, text or email, as little or as often as you need.
 cta_arrow_link:
   find:
-    link_target: "https://find-teacher-training-courses.service.gov.uk/"
-    link_text: "Find a teacher training course"
+    link_target: "https://find-teacher-training-courses.service.gov.uk/results?send_courses=true&applications_open=true&order=course_name_ascending"
+    link_text: "Find a teacher training course with a SEND specialism"
 keywords:
   - SEND
   - disabled
@@ -91,8 +91,7 @@ An MQSI will give you the skills needed to recognise any barriers to learning th
 
 ## Training for teaching pupils with SEND
 
+You'll learn about teaching pupils with SEND in any initial teacher training course. However, if you're particularly interested in this area, some training providers offer courses with a SEND specialism.
+
 $find$
-
-Filter by ‘courses with a SEND specialism’ if you have a particular interest in this area. 
-
 $adviser$
