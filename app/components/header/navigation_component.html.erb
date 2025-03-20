@@ -8,7 +8,7 @@
 <% end %>
 
 <!-- desktop dropdown navigation -->
-<%= tag.div id: "secondary-navigation", class: "desktop-menu-container hidden-mobile", data: { "navigation-target": "desktop", action: "click->navigation#handleNavMenuClick" }, "aria-label": "Secondary navigation", role: "navigation" do %>
+<%= tag.div id: "secondary-navigation", class: "desktop-menu-container hidden-mobile", data: { "navigation-target": "desktop", action: "click->navigation#handleNavMenuClick" }, "aria-label": "Secondary navigation", role: "menu" do %>
   <div class="category-links">
     <% all_resources.each do |resource| %>
       <% if resource.children? %>
