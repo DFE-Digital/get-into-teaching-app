@@ -1,3 +1,5 @@
+<p>To verify your details, we've sent a code to your email address.</p>
+
 <%
   hint_text = t("helpers.hint.wizard_steps_authenticate.timed_one_time_password.text", **Value.data)
   hint_text += "<br><b>#{t('helpers.hint.wizard_steps_authenticate.timed_one_time_password.resent')}</b>" if params[:verification_resent]
