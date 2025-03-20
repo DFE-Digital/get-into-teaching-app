@@ -1,4 +1,5 @@
 require "rails_helper"
+require "digest"
 
 describe MailingList::Wizard do
   subject { described_class.new wizardstore, "postcode" }
@@ -78,10 +79,12 @@ describe MailingList::Wizard do
     end
 
     it "prunes the store, retaining certain attributes" do
+      hashed_email = Digest::SHA256.hexdigest("email@address.com")
       subject.complete!
       expect(store[uuid]).to eql({
         "first_name" => wizardstore[:first_name],
         "last_name" => wizardstore[:last_name],
+        "hashed_email" => hashed_email,
         "degree_status_id" => wizardstore[:degree_status_id],
         "preferred_teaching_subject_id" => wizardstore[:preferred_teaching_subject_id],
       })

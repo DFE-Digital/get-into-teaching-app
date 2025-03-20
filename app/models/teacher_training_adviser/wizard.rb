@@ -1,3 +1,5 @@
+require "digest"
+
 module TeacherTrainingAdviser
   class Wizard < ::GITWizard::Base
     UK_COUNTRY_ID = "72f5c2e6-74f9-e811-a97a-000d3a2760f2".freeze
@@ -7,6 +9,7 @@ module TeacherTrainingAdviser
       degree_options
       sub_channel_id
       callback_offered
+      hashed_email
     ].freeze
 
     self.steps = [
@@ -61,6 +64,7 @@ module TeacherTrainingAdviser
       return false unless super
 
       sign_up_candidate
+      @store[:hashed_email] = Digest::SHA256.hexdigest(@store[:email]) if @store[:email].present?
 
       @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
     end

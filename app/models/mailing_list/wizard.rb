@@ -1,4 +1,5 @@
 require "attribute_filter"
+require "digest"
 
 module MailingList
   class Wizard < ::GITWizard::Base
@@ -9,6 +10,7 @@ module MailingList
       consideration_journey_stage_id
       degree_status_id
       sub_channel_id
+      hashed_email
     ].freeze
 
     self.steps = [
@@ -32,6 +34,7 @@ module MailingList
         break unless result
 
         add_member_to_mailing_list
+        @store[:hashed_email] = Digest::SHA256.hexdigest(@store[:email]) if @store[:email].present?
 
         # we're taking the last name too so if people restart the wizard
         # both are filled rather than just their first name, which looks
