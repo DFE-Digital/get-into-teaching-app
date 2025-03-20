@@ -108,8 +108,8 @@ module Header
       "#{resource.path.parameterize}-#{subcategory.parameterize}-pages-#{mode}"
     end
 
-    def page_list(resource, subcategory, mode, css_class:)
-      tag.ol(class: css_class, id: page_list_id(resource, subcategory, mode)) do
+    def page_list(resource, subcategory, mode, css_class:, role: "menu")
+      tag.ol(class: css_class, role: role, id: page_list_id(resource, subcategory, mode)) do
         safe_join(
           [
             resource.children_in_subcategory(subcategory).map do |child_resource|
