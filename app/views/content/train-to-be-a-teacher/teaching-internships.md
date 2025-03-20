@@ -7,7 +7,7 @@ description: |-
 image: false
 backlink: /
 fullwidth: true
-navigation: 20.30
+navigation: 20.35
 navigation_title: Teaching internships
 navigation_description: Earn $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
 content:
