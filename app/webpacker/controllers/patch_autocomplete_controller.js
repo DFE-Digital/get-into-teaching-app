@@ -7,16 +7,25 @@ export default class extends Controller {
   };
 
   connect() {
-    const autocomplete = document.getElementById(this.fieldIdValue);
+    if(document.getElementById(this.errorIdValue)) {
+      this.waitForAutocomplete()
+    }
+  }
+
+  waitForAutocomplete() {
+    const autocomplete = document.querySelector(`input[id="${this.fieldIdValue}"]`)
 
     if (autocomplete) {
-      const currentDescribedBy =
-        autocomplete.getAttribute('aria-describedby') || '';
+      const currentDescribedBy = autocomplete.getAttribute('aria-describedby') || '';
 
       autocomplete.setAttribute(
         'aria-describedby',
         `${this.errorIdValue} ${currentDescribedBy}`.trim(),
       );
+
+      return
     }
+
+    requestAnimationFrame(() => this.waitForAutocomplete())
   }
 }
