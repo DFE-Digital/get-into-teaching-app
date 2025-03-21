@@ -683,6 +683,10 @@ en:
         teacher_training:
           consideration_journey_stage:
             222750003: "I think I'll apply"
+          degree_status:
+            222750000: "Yes"
+            222750003: "Not yet, I'm studying for one"
+            222750004: "No"
       mailing_list_steps_degree_status:
         degree_status:
           graduate_or_postgraduate: "Yes, I already have a degree"
