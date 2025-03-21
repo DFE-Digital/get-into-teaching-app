@@ -125,6 +125,8 @@
     position: relative;
     left: 30px;
 
+    h1, h2, h3, h4, h5, h6 { margin: 0; }
+
     @include mq($from: mobile, $until: desktop) {
       left: 50px;
     }
