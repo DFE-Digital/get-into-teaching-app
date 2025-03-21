@@ -18,6 +18,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Adviser (CTA) component](#adviser-cta-component)
     * [Routes (CTA) component](#routes-cta-component)
     * [Mailing list (CTA) component](#mailing-list-cta-component)
+    * [Block promos](#block-promos)
     * [Green arrow link (CTA) component](#green-arrow-link-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
@@ -562,6 +563,42 @@ Alternatively, if you need to insert a mailing lists component in an erb file, y
   heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 )%>
 ```
+
+### Block promos
+
+You can use either 2 or 3 block promos at once and pick from the 9 available options:
+
+<%= render CallsToAction::MailinglistBlockComponent.new %>
+<%= render CallsToAction::RoutesBlockComponent.new %>
+<%= render CallsToAction::AdviserBlockComponent.new %>
+<%= render CallsToAction::GetSchoolExperienceBlockComponent.new %>
+<%= render CallsToAction::FindBlockComponent.new %>
+<%= render CallsToAction::ApplyBlockComponent.new %>
+<%= render CallsToAction::LifeasateacherBlockComponent.new %>
+<%= render CallsToAction::TeacherStoriesBlockComponent.new %>
+<%= render CallsToAction::GetSupportBlockComponent.new %>
+
+to add them to a html file, use the above code inside the following container. Here you can also specify if you want different text to the default text:
+
+```html
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::MailinglistBlockComponent.new %>
+      <%= render CallsToAction::RoutesBlockComponent.new %>
+      <%= render CallsToAction::AdviserBlockComponent.new(
+          title: "Example title",
+          image: "image.jpg",
+          title_color: "green",
+          text: "Example text",
+          link_text: "Example link",
+          link_target: "link/example"
+      ) %>
+    </section>
+  </section>
+</div>
+```
+
 
 ### Green arrow link (CTA) component
 

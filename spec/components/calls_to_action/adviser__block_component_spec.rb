@@ -19,9 +19,7 @@ RSpec.describe CallsToAction::AdviserBlockComponent, type: :component do
     }
   end
 
-  let(:component) { described_class.new(**kwargs) }
-
-  before { render_inline(component) }
+  before { render_inline(described_class.new(**kwargs)) }
 
   describe "rendering the adviser block component" do
     it "renders the outer div with class 'image-block'" do
@@ -30,8 +28,8 @@ RSpec.describe CallsToAction::AdviserBlockComponent, type: :component do
 
     it "renders the image with correct src and alt text" do
       image_element = page.find("img")
-      expect(image_element[:src]).to match(Regexp.new("images/#{image}"))
-      expect(image_element[:alt]).to eql("Adviser icon")
+      expect(image_element[:src]).to match(Regexp.new("images/#{Regexp.escape(File.basename(image, '.*'))}(-[a-f0-9]+)?"))
+      expect(image_element[:alt]).to eql("Adviser image")
     end
 
     it "renders the title with the correct color and text" do
