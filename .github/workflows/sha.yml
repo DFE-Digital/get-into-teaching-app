@@ -11,6 +11,10 @@ on:
         description: SHA (docker tag)
         required: true
 
+permissions:
+  contents: write
+  id-token: write
+
 jobs:
   manual:
     name: Deploy to ${{github.event.inputs.environment}}
@@ -30,7 +34,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Deploy to ${{github.event.inputs.environment}}
         uses: ./.github/workflows/actions/deploy
@@ -38,5 +44,7 @@ jobs:
         with:
           environment: ${{ github.event.inputs.environment }}
           sha:  ${{ github.event.inputs.sha }}
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}

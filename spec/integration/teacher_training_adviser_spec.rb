@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Sign up", :integration, :js, type: :feature do
+RSpec.describe "Teacher Training Adviser integration tests", :integration, :mechanize, type: :feature do
   before do
     config_capybara
 

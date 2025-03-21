@@ -21,12 +21,12 @@ RSpec.describe Content::CallToActionComponentInjector, type: :component do
       },
     },
     "apply component" => {
-      "name" => "find",
+      "name" => "apply",
       "arguments" => {
-        "title" => "find component",
-        "link_target" => "#find-component",
-        "link_text" => "find component link",
-        "icon" => "icon-person",
+        "title" => "apply component",
+        "link_target" => "#apply-component",
+        "link_text" => "apply component link",
+        "icon" => "icon-school-black",
       },
     },
     "attachment component" => {

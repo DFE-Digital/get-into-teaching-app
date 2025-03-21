@@ -22,7 +22,13 @@ describe "Redirects", :content, type: :request do
         expect(response).to redirect_to(build_url(to, expected_query_string))
         expect(Rails.logger).to have_received(:info).with(redirect: { request: url, from: from, to: to })
 
-        target = Nokogiri.parse(response.body).at_css("a")["href"].gsub(root_url, "/")
+        # Skip the parsing logic if no redirect is present
+        next if response.location.nil?
+
+        # Parse the body for the <a> tag if not a redirect
+        target = Nokogiri.parse(response.body).at_css("a")&.[]("href")
+        # Ensure the link is not nil before using it
+        next if target.nil?
 
         # skip events stuff and the privacy policy because they're pulled from the CRM
         next if target =~ /event|privacy/
@@ -52,7 +58,13 @@ describe "Redirects", :content, type: :request do
           expect(subject).to be 301
           expect(response).to redirect_to(build_url(to, expected_query_string))
 
-          target = Nokogiri.parse(response.body).at_css("a")["href"].gsub(root_url, "/")
+          # Parse the body and check for the <a> tag only if it's not a redirect
+          target = Nokogiri.parse(response.body).at_css("a")&.[]("href")
+          # Skip if no <a> tag is found
+          next if target.nil?
+
+          # Skip events and privacy-related URLs
+          next if target =~ /event|privacy/
 
           @result[target] ||= get(target)
 

@@ -3,15 +3,19 @@ title: "Check your eligibility to train to teach in England"
 subcategory: If you want to train to teach
 description: |-
   Find out what qualifications you need to train to teach in England.
-related_content:
-    Learn more about fees and funding for non-UK trainees : "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
-    Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
-    Learn more about international qualified teacher status : "/non-uk-teachers/international-qualified-teacher-status"
 navigation: 20.20
 navigation_title: Qualifications you will need to train to teach in England
 navigation_description: Before you apply, get help checking you have the correct qualifications for English teacher training.
 image: "static/images/content/hero-images/0032.jpg"
 backlink: "../../"
+cta_arrow_link:
+   traininuk:
+     link_target: "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
+     link_text: "Find out more about training to teach in England as a non-UK citizen"
+   applying:
+     link_target: "/how-to-apply-for-teacher-training/teacher-training-application"
+     link_text: "Find guidance on applying for teacher training courses"
+
 keywords:
   - International
   - Overseas
@@ -67,6 +71,8 @@ To train to teach in England, you will need to have:
 
 A GCSE is an academic qualification awarded for exams in England, usually taken at the age of 16.
 
+$traininuk$
+
 ## How to check your qualifications
 
 To check your qualifications meet the required standard in England you will need a [statement of comparability from the UK European Network of Information Centres (UK ENIC)](https://enic.org.uk/Qualifications/SOC/Default.aspx). 
@@ -97,7 +103,7 @@ The [UK Council for International Student Affairs website](https://www.ukcisa.or
 
 You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to qualified teacher status (QTS).  
 
-[Find guidance on applying for teacher training courses](/how-to-apply-for-teacher-training/teacher-training-application). 
+$applying$
 
 When you get offered a place on a course, your provider will arrange a background and criminal records check. This is known as a Disclosure and Barring Service (DBS) check. You must pass these checks to teach students under 18. Safeguarding checks may take longer if you are living or have lived abroad. 
 

@@ -9,11 +9,15 @@ RSpec.describe Content::ComponentInjector, type: :component do
     describe "rendering a #{type} component" do
       subject { described_class.new(type, params).component }
 
-      it "generates a view component of the correct type from the arguments" do
-        component_class = "Content::#{type.camelize}Component".constantize
-        expect(component_class).to receive(:new)
-          .with(params.deep_symbolize_keys).and_call_original
+      let(:component_class) { "Content::#{type.camelize}Component".constantize }
+
+      it "generates a view component of the correct type" do
         is_expected.to be_a(component_class)
+      end
+
+      it "component receives the correct arguments" do
+        expect(component_class).to receive(:new).with(params.deep_symbolize_keys)
+        subject
       end
     end
   end

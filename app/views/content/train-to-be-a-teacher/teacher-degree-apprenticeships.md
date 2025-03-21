@@ -4,12 +4,15 @@ heading: "Teacher degree apprenticeships (TDAs)"
 subcategory: Other routes into teaching
 description: |-
  A new route to become a teacher without a degree, a teacher degree apprenticeship (TDA) lets you work at a school while you qualify as a teacher.
-related_content:
-    Explore life as a teacher : "/life-as-a-teacher"
-    Train to teach if you do not have a degree : "/train-to-be-a-teacher/if-you-dont-have-a-degree"
-    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
+calls_to_action:
+  find:
+    name: find
+    arguments:
+      title: "Find a teacher degree apprenticeship"
+cta_arrow_link:
+  tda:
+    link_target: "https://find-teacher-training-courses.service.gov.uk/results?applications_open=true&minimum_degree_required=no_degree_required"
+    link_text: "View the teacher degree apprenticeship courses currently available"
 navigation: 20.45
 navigation_title: If you want to do a teaching apprenticeship
 navigation_description: A teacher degree apprenticeship (TDA) lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).
@@ -24,9 +27,7 @@ The TDA is a teacher training programme which offers a new route to become a qua
 
 The [teacher training providers confirmed so far offer TDAs in secondary maths](https://www.gov.uk/government/publications/secondary-maths-teacher-degree-apprenticeship-funding-pilot-providers/providers-selected-to-deliver-the-teacher-degree-apprenticeship-tda-funding-pilot). TDAs in other subjects will be added throughout the year, up until September 2025, with training due to start in autumn 2025. 
 
-[View the teacher degree apprenticeship courses currently available]( https://find-teacher-training-courses.service.gov.uk/results?age_group=secondary&applications_open=true&can_sponsor_visa=false&has_vacancies=true&l=2&university_degree_status=false&visa_status=false).
-
-
+$tda$
 $teacher-degree-apprenticeships$
 
 
@@ -35,6 +36,10 @@ $teacher-degree-apprenticeships$
 During a teacher degree apprenticeship you’ll work in a school and earn a salary while getting a bachelor’s degree and [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
  
 The teaching apprenticeship is a 4-year, full-time course that lets you train as a teacher with an accredited teacher training provider. Trainee teachers will spend an average of 40% of their time (2 days a week) studying for their degree with a university.
+
+Some TDA providers will want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are.
+
+## What's the salary for a teacher degree apprenticeship?
 
 The salary you’ll earn as a TDA trainee will depend on the type of school you work in and where the school is.  
 
@@ -57,3 +62,5 @@ To meet the academic requirements for the TDA, you must have:
 
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 * A levels - the number of A levels or equivalent qualifications required will be set by individual universities
+
+$find$

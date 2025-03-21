@@ -3,16 +3,10 @@ title: Get international qualified teacher status (iQTS)
 subcategory: If you're outside the UK
 description: |-
  Get international qualified teacher status (iQTS) from anywhere in the world, a teaching qualification backed by England’s Department for Education (DfE).
-related_content:
-    What it's like to be a teacher: "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
-    Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-cta_adviser:
-  adviser:
-    text: Talk to an adviser with years of teaching experience about iQTS and teaching in England. Chat by phone, text or email, as little or as often as you need.
 navigation: 20.50
 navigation_title: Get international qualified teacher status (iQTS)
 navigation_description: Train from anywhere in the world to get international qualified teacher status (iQTS), backed by England’s Department for Education.
-image: "static/images/content/hero-images/0034.jpg"
+image: "static/images/content/hero-images/peer-to-peer-collaboration.jpg"
 backlink: "../"
 keywords:
     - international
@@ -60,7 +54,7 @@ To find out whether your qualifications meet the entry requirements for iQTS, yo
 
 ## Tuition fees for iQTS
 
-Fees range from $fees_iQTS_low$ to $fees_iQTS_high$ for a one-year, full-time iQTS course. Check training provider websites for full details.
+Fees range from $fees_iQTS_low$ to $fees_iQTS_high$ for a 9-month, full-time iQTS course. Part-time courses take up to 2 years and fees vary. Check training provider websites for full details.
 
 Applicants for iQTS are not eligible for loans, bursaries or any other type of financial support from the Department for Education and Student Finance England to help cover the costs of studying for iQTS.
 
@@ -130,7 +124,7 @@ The following providers specialise in particular regions:
 
 ## Assessment for iQTS
 
-At the end of your training, your iQTS provider and school will assess you to check you meet the [iQTS Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards).
+At the end of your training, your iQTS provider and school will assess you to check you meet the [iQTS teachers’ standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards).
 
 Your training provider will award you iQTS when you have successfully passed this assessment process. You will then be automatically awarded QTS by England’s Department for Education.
 
@@ -163,5 +157,3 @@ To learn more about applying for iQTS, contact your chosen training provider for
 For general advice about iQTS, email us on iqts.policy@education.gov.uk.
 
 You can also call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
-
-$adviser$

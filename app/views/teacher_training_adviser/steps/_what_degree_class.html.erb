@@ -6,8 +6,6 @@ text = if f.object.studying?
        end
 %>
 
-<% @page_title = text %>
-
 <%= f.govuk_collection_select :uk_degree_grade_id,
   f.object.class.options,
   :last,

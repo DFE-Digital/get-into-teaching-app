@@ -51,14 +51,16 @@
         <% @results.each do |result| %>
           <div class="col-space-s">
             <%= render Content::ResultsBoxComponent.new(
-          heading: result["title"],
-          fee: result["course_fee"],
-          course_length: result["course_length"],
-          funding: result["funding"],
-          text: result["description"],
-          link_text: result["cta_text"],
-          link_target: result["cta_link"],
-        ) %>
+              heading: result.title,
+              fee: result.course_fee,
+              course_length: result.course_length,
+              funding: result.funding,
+              text: result.description,
+              link_text: result.cta_text,
+              link_target: result.cta_link,
+              border_color: result.highlighted? ? "yellow" : "grey",
+              title: result.highlighted? ? result.highlight_text : nil
+            ) %>
           </div>
         <% end %>
       <% else %>

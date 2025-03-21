@@ -28,8 +28,8 @@ provider_groups:
       link: "https://educate-group.co.uk/assessment-only-route/"
       name: "Claire King"
       email: "aor@educate-group.co.uk"
-      telephone: "07973 286995"
-      international_phone: "+447973286995"
+      telephone: "01978 281881"
+      international_phone: "+441978281881"
       
     - header: "Essex and Thames SCITT"
       link: "https://etpscitt.co.uk/our-courses-pgce-qts/assessment-only-essex-southend-thurrock/"
@@ -89,17 +89,10 @@ provider_groups:
       telephone: "07961 078589"
       international_phone: "+447961078589"
       
-    - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
-      name: "Rebecca Turner-Loisel"
-      email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
-      international_phone: "+443451450075"
-      
     - header: "Leicester and Leicestershire SCITT"
       link: "https://www.leicestershiresecondaryscitt.org/"
       name: "Clare Hearn-Palmer"
-      email: "chearn-palmer@leicesterscitt.co.uk"
+      email: "admin@leicesterscitt.co.uk"
       telephone: "0116 254 3187"
       international_phone: "+441162543187"
       
@@ -112,11 +105,11 @@ provider_groups:
       
     - header: "The Grand Union Training Partnership"
       link: "https://www.gutp.co.uk/index.php/assessment-only"
-      name: "Ann Pugh"
-      email: "apugh@sponne.org.uk"
+      name: "Kate Martin"
+      email: "gutprecruitment@sponne.org.uk"
       telephone: "01327 350284"
       international_phone: "+441327350284"
-      extension: "ext 7257"
+      extension: "ext 7253"
     - header: "University of Derby"
       link: "https://www.derby.ac.uk/"
       name: "Jayne Leggott"
@@ -139,13 +132,6 @@ provider_groups:
       email: "kbateman@challneyboys.luton.sch.uk"
       telephone: "01582 599921"
       international_phone: "+441582599921"
-      
-    - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
-      name: "Rebecca Turner-Loisel"
-      email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
-      international_phone: "+443451450075"
       
     - header: "Future Teacher Training"
       link: "https://www.futureteachertraining.org/"
@@ -298,13 +284,6 @@ provider_groups:
       
   North East:
     providers:
-    - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
-      name: "Rebecca Turner-Loisel"
-      email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
-      international_phone: "+443451450075"
-      
     - header: "University of Sunderland"
       link: "https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/"
       name: "Jill Wilkinson"
@@ -442,6 +421,13 @@ provider_groups:
       telephone: "01252 717408"
       international_phone: "+441252717408"
       
+    - header: "St Mary’s University"
+      link: "https://www.stmarys.ac.uk/"
+      name: "Lizzy Jackson"
+      email: "elizabeth.jackson@stmarys.ac.uk"
+      telephone: "020 8240 4326"
+      international_phone: "+442082404326"
+      
     - header: "Sutton SCITT"
       link: "https://www.suttonscitt.org.uk/teacher-training-programmes-surrey/assessment-only"
       name: "Rachel Fagan"
@@ -456,6 +442,13 @@ provider_groups:
       telephone: "01280 827316"
       international_phone: "+441280827316"
       
+    - header: "The Grand Union Training Partnership"
+      link: "https://www.gutp.co.uk/index.php/assessment-only"
+      name: "Kate Martin"
+      email: "gutprecruitment@sponne.org.uk"
+      telephone: "01327 350284"
+      international_phone: "+441327350284"
+      extension: "ext 7253"
     - header: "The Kemnal Academies Trust (TKAT)"
       link: "https://scitt.tkat.org/820/assessment-only-route"
       name: "Steve Excell"
@@ -479,6 +472,13 @@ provider_groups:
       
   South West:
     providers:
+    - header: "Bath Spa University"
+      link: "https://www.bathspa.ac.uk/courses/qts-assessment-only/"
+      name: "Fiona Hunt"
+      email: "assessmentonly@bathspa.ac.uk"
+      
+      
+      
     - header: "Bournemouth Bay Teacher Training Partnership"
       link: "https://bournemouthbay-partnership.com/about-us/"
       name: "James Mosley"
@@ -602,13 +602,6 @@ provider_groups:
       telephone: "020 3846 5828"
       international_phone: "+442038465828"
       
-    - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
-      name: "Rebecca Turner-Loisel"
-      email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
-      international_phone: "+443451450075"
-      
     - header: "GORSE SCITT"
       link: "https://gorsescitt.org.uk/"
       name: "Nicci Cornfoot"
@@ -667,34 +660,6 @@ provider_groups:
       email: "enquiries@colchesterttc.org.uk"
       telephone: "01206 364728"
       international_phone: "+441206364728"
-      
-    - header: "Mersey Boroughs ITT Partnership"
-      link: "https://merseyitt.org.uk/courses/assessment-only/"
-      
-      email: "merseyboroughsitt@knowsley.gov.uk"
-      telephone: "0151 443 2663"
-      international_phone: "+441514432663"
-      
-    - header: "Norfolk Essex and Suffolk Teacher Training (NESTT)"
-      link: "https://nestt.org.uk/our-programmes/"
-      name: "Colin Turner"
-      email: "colin.turner@nestt.org.uk"
-      telephone: "01473 265080"
-      international_phone: "+441473265080"
-      
-    - header: "Nottingham Trent University"
-      link: "https://www.ntu.ac.uk/course/education/pr/assessment-only-route-to-qts-secondary"
-      name: "Jamie Tinney"
-      email: "AssessmentOnly@ntu.ac.uk"
-      telephone: "0115 848 2666"
-      international_phone: "+441158482666"
-      
-    - header: "Sutton SCITT"
-      link: "https://www.suttonscitt.org.uk/teacher-training-programmes-surrey/assessment-only"
-      name: "Rachel Fagan"
-      email: "rfa@glenthorne.sutton.sch.uk"
-      telephone: "020 8410 0006"
-      international_phone: "+442084100006"
       
     - header: "Teaching London: LDBS SCITT"
       link: "https://www.teachinglondon.org/ourcourses/assessment-only-route-to-qts/"

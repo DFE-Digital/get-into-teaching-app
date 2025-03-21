@@ -506,3 +506,6 @@ redirects:
   "/life-as-a-teacher/teaching-as-a-career/why-teach": "/life-as-a-teacher/why-teach/why-become-a-teacher"
   "/life-as-a-teacher/pay-and-benefits/bens-favourite-things-about-teaching": "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching"
   "/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching": "/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching"
+  
+ # Incorrect inbound links
+  "/train-to-be-a-teacher/teacher-degree-apprenticeships.": "/train-to-be-a-teacher/teacher-degree-apprenticeships"

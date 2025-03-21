@@ -48,38 +48,46 @@ describe Events::Wizard do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:add_teaching_event_attendee).with(request)
       allow(Rails.logger).to receive(:info)
-      allow(wizardstore).to receive(:prune!).and_call_original
-      subject.complete!
     end
 
-    it { is_expected.to have_received(:valid?) }
+    context "with prune! spy" do
+      before { allow(wizardstore).to receive(:prune!) }
 
-    it "prunes the store, retaining certain attributes" do
-      expect(store[uuid]).to eql({
-        "is_walk_in" => wizardstore[:is_walk_in],
-      })
-      expect(wizardstore).to have_received(:prune!).with({ leave: described_class::ATTRIBUTES_TO_LEAVE }).once
+      it "prunes the store, retaining certain attributes" do
+        subject.complete!
+        expect(wizardstore).to have_received(:prune!).with({ leave: described_class::ATTRIBUTES_TO_LEAVE }).once
+      end
     end
 
-    it "logs the request model (filtering sensitive attributes)" do
-      filtered_json = {
-        "candidateId" => nil,
-        "qualificationId" => nil,
-        "eventId" => "abc123",
-        "channelId" => nil,
-        "acceptedPolicyId" => "789",
-        "preferredTeachingSubjectId" => nil,
-        "considerationJourneyStageId" => nil,
-        "degreeStatusId" => nil,
-        "email" => "[FILTERED]",
-        "firstName" => "[FILTERED]",
-        "lastName" => "[FILTERED]",
-        "addressPostcode" => nil,
-        "addressTelephone" => "[FILTERED]",
-        "isWalkIn" => true,
-      }.to_json
+    context "with subject.complete!" do
+      before { subject.complete! }
 
-      expect(Rails.logger).to have_received(:info).with("Events::Wizard#add_attendee_to_event: #{filtered_json}")
+      it { is_expected.to have_received(:valid?) }
+
+      it do
+        expect(store[uuid]).to eql({ "is_walk_in" => wizardstore[:is_walk_in] })
+      end
+
+      it "logs the request model (filtering sensitive attributes)" do
+        filtered_json = {
+          "candidateId" => nil,
+          "qualificationId" => nil,
+          "eventId" => "abc123",
+          "channelId" => nil,
+          "acceptedPolicyId" => "789",
+          "preferredTeachingSubjectId" => nil,
+          "considerationJourneyStageId" => nil,
+          "degreeStatusId" => nil,
+          "email" => "[FILTERED]",
+          "firstName" => "[FILTERED]",
+          "lastName" => "[FILTERED]",
+          "addressPostcode" => nil,
+          "addressTelephone" => "[FILTERED]",
+          "isWalkIn" => true,
+        }.to_json
+
+        expect(Rails.logger).to have_received(:info).with("Events::Wizard#add_attendee_to_event: #{filtered_json}")
+      end
     end
   end
 

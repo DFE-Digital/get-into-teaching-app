@@ -6,7 +6,7 @@ module TeacherTrainingAdviser::Steps
     include ::ActiveRecord::AttributeAssignment
 
     MIN_AGE = 18
-    MAX_AGE = 70
+    MAX_AGE = 99
 
     attribute :date_of_birth, :date
 

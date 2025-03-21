@@ -6,7 +6,7 @@ RSpec.feature "Event wizard", type: :feature do
   let(:event_name) { "Event Name" }
   let(:event) { build(:event_api, readable_id: event_readable_id, name: event_name) }
   let(:individual_event_page_title) { "Sign up for #{event.name}, personal details step | Get Into Teaching" }
-  let(:sign_up_complete_page_title) { "Sign up complete | Get Into Teaching" }
+  let(:sign_up_complete_page_title) { "#{event.name}, sign up completed | Get Into Teaching" }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -165,7 +165,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "To verify your details, we've sent a code to your email address."
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     within_fieldset "Would you like to receive email updates" do
@@ -211,7 +211,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "To verify your details, we've sent a code to your email address."
-    fill_in "To verify your details, we've sent a code to your email address.", with: "654321"
+    fill_in "Enter your verification code:", with: "654321"
     click_on "Next step"
 
     expect(page).to have_text "Please enter the latest verification code"
@@ -219,7 +219,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_link "Send another code to verify my details"
     expect(page).to have_text "We've sent you another email"
 
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text("What is your telephone number? (optional)")
@@ -244,7 +244,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "To verify your details, we've sent a code to your email address."
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text("What is your telephone number? (optional)")
@@ -276,7 +276,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "To verify your details, we've sent a code to your email address."
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
 
     expect_sign_up_with_attributes(base_attributes.merge({ address_telephone: response.address_telephone }))
 
@@ -303,7 +303,7 @@ RSpec.feature "Event wizard", type: :feature do
     preferred_teaching_subject: nil
   )
     select_value_or_default "Do you have a degree?", degree_status
-    select_value_or_default "How close are you to applying for teacher training?", consideration_journey_stage
+    select_value_or_default "How interested are you in applying for teacher training?", consideration_journey_stage
     if page.has_text?("What's your UK postcode? (optional)")
       fill_in "What's your UK postcode? (optional)", with: postcode
     end

@@ -4,10 +4,6 @@ heading: "Student finance for teacher training"
 subcategory: Courses with fees
 description: |-
     Find out about the available student finance for teacher training, including tuition fee loans and maintenance loans to support you while you train.
-related_content:
-    Age groups you could teach: "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
-    Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-    Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about student finance. Chat by phone, text or email, as little or as often as you need."
@@ -19,6 +15,10 @@ calls_to_action:
         text: "Use the student finance calculator on GOV.UK to get an estimate of how much funding you might get."
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
+cta_arrow_link:
+  bursaries:
+    link_target: "/funding-and-support/scholarships-and-bursaries"
+    link_text: "Find out if you're eligible for a bursary or scholarship"
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 keywords:
@@ -99,7 +99,7 @@ You may also be eligible for a tax-free bursary or scholarship, depending on the
 
 You do not have to pay a bursary or scholarship back. You can get a bursary or scholarship as well as any tuition fee loan and maintenance loan.
 
-[Find out if you're eligible for a bursary or scholarship](/funding-and-support/scholarships-and-bursaries).
+$bursaries$
 
 ## If you're from Wales, Scotland, Northern Ireland or the Crown Dependencies
 

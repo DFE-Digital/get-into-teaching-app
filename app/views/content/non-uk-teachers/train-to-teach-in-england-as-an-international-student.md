@@ -3,10 +3,6 @@ title: "Train to teach in England as a non-UK citizen"
 subcategory: If you want to train to teach
 description: |-
   Find out how to train to teach in England as a student from outside the UK. Get help and guidance on your qualifications, funding and visa.
-related_content:
-    Fees and funding for non-UK trainees: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees"
-    Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
-    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms"
 youtube_video:
   why-train-video:
     id: WhBBL_DpHFo
@@ -14,7 +10,7 @@ youtube_video:
 navigation: 20.10
 navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
-image: "static/images/content/hero-images/0034.jpg"
+image: "static/images/content/hero-images/peer-to-peer-collaboration.jpg"
 backlink: "../../"
 expander:
   refugees-asylum-seekers:
@@ -35,6 +31,14 @@ expander:
           <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
           <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
         </ul>
+cta_arrow_link:
+   applying:
+     link_target: "/how-to-apply-for-teacher-training/teacher-training-application"
+     link_text: "Find guidance on applying for teacher training courses"
+   visas:
+     link_target: "/non-uk-teachers/visas-for-non-uk-trainees"
+     link_text: "Find out more about applying for a visa to train to teach in England"
+   
 
 keywords:
   - International
@@ -125,9 +129,9 @@ $refugees-asylum-seekers$
 
 You can [search for postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/) that lead to qualified teacher status (QTS).  
 
-Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time. 
+Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time. Most teacher training courses start in September, with a small number of courses starting on other dates throughout the year.
 
-[Find guidance on applying for teacher training courses](/how-to-apply-for-teacher-training/teacher-training-application). 
+$applying$
 
 ## Apply for your visa
 
@@ -135,7 +139,7 @@ If you do not have the right to study or work in the UK, you will need a visa. Y
 
 Before you apply for your visa, you must have a confirmed offer of a training place on a course offering Student or Skilled Worker visa sponsorship. 
 
-Find out more about [applying for a visa to train to teach in England](/non-uk-teachers/visas-for-non-uk-trainees).  
+$visas$ 
 
 $ukraine-visas$
 

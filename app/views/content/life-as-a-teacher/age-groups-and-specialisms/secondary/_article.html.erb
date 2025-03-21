@@ -56,7 +56,9 @@
     <h4>Key stage 5 (KS5)</h4>
     <p>KS5 includes years 12 and 13, with students aged 16 to 18 studying at secondary schools with sixth forms, or at colleges.</p>
     <p>Most students in KS5 will be working towards A levels, T Levels or other equivalent qualifications. At this age, students are given the opportunity to follow their own interests. The subjects and qualifications they choose will impact what they can apply for at university, and whether they would be well placed to pursue apprenticeships or start skilled employment.</p>
+    <%= render CallsToAction::ArrowLinkComponent.new(link_target: "/steps-to-become-a-teacher", link_text: "Find out how to become a teacher") %>
     <p>If you're interested in teaching young people and adults over 16 who are not studying for a degree, then <a href="/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers">teaching in further education</a> might be for you.</p>
+
     <h2 class="heading--box-blue">Pupils with special educational needs and disabilities (SEND)</h2>
     <%= render 'content/shared/teaching/teaching_send' %>
      <h2 class="heading--box-blue">Start your journey into teaching <%= @front_matter["subject"] %></h2>
@@ -81,6 +83,9 @@
    <h3>Apply for a paid internship</h3>
    <p>If you're currently doing an undergraduate or master's degree and are interested in chemistry, computing, languages, maths or physics, you could apply for a <a href="/train-to-be-a-teacher/teaching-internships">paid teaching internship</a>.</p>
    <p>The 3-week programme could help you to understand what it's really like in the classroom and get a feel for school life.</p></div>
+   <h3>Find secondary teacher training courses</h3>
+    <p>Explore the different secondary courses available.</p>
+    <%= render CallsToAction::ArrowLinkComponent.new(link_target: "https://find-teacher-training-courses.service.gov.uk/secondary", link_text: "Find your secondary teacher training course") %>
   </section>
   <section class="col col-720">
     <%= render 'content/shared/teaching/ect_support' %>

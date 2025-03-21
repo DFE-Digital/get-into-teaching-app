@@ -5,6 +5,9 @@ description: |-
 cta_adviser:
   adviser:
     text: Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience. Chat by phone, text or email, as little or as often as you need.
+calls_to_action:
+    apply:
+      name: apply
 navigation: 30.16
 navigation_title: When to apply for teacher training
 navigation_description:  Find out when you can apply for postgraduate teacher training courses.
@@ -81,4 +84,5 @@ During your application process you will be asked for:
 
 You can find <a href="/how-to-apply-for-teacher-training/teacher-training-interview">help to prepare for your interview</a>. 
 
+$apply$
 $adviser$

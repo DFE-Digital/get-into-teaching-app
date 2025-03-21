@@ -4,8 +4,9 @@ This documentation aims to be a reference for content editors that want to make 
 
 ## Table of Contents
 
-* [Setting up Codespaces and Github](#getting-started)
+* [Setting up Codespaces and Github](#setting-up-codespaces-and-github)
 * [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
+* [Tone of voice](#tone-of-voice)
 * [Content Editing Tips/Info](#content-editing-tips-info)
     * [Headings](#headings)
     * [Frontmatter](#frontmatter)
@@ -16,12 +17,13 @@ This documentation aims to be a reference for content editors that want to make 
     * [Calls to Action](#calls-to-action)
     * [Adviser (CTA) component](#adviser-cta-component)
     * [Routes (CTA) component](#routes-cta-component)
+    * [Mailing list (CTA) component](#mailing-list-cta-component)
+    * [Green arrow link (CTA) component](#green-arrow-link-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
-    * [Inset text](#inset-text)
+    * [Insets and expander components for non-UK content](#insets-and-expander-components-for-non-uk-content)
     * [Creating a partial](#creating-a-partial)
-    * [Details expander for non-UK content](#details-expander-for-non-uk-content)
     * [YouTube Video](#youtube-video)
     * [Hero](#hero)
     * [Values](#values)
@@ -59,8 +61,6 @@ You will need to download and set up an account on Github and Visual Studio Code
 - In the folders, blue arrow icons are the pages and the content, the red <> icons are components
 - Markdown tutorial is useful when learning to write content in Github https://www.markdowntutorial.com/
 
-
-
 ## Finding a Page/Content to Edit
 
 When you want to edit content on the website the first step is to find out where that content resides in the [repository](https://github.com/DFE-Digital/get-into-teaching-app).
@@ -79,6 +79,20 @@ If you can't find a corresponding file in the [/app/views/content](https://githu
 
 If you are looking to edit content associated with a form element in particular (for example, a label for a text input) then  you should look in the [translations file](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/config/locales/en.yml). It's important to only change the text content in this file and not the Yaml keys that identify the content.
 
+## Tone of voice
+
+It’s important that the content on Get Into Teaching uses a consistent tone of voice.
+
+When writing new content, you can look at the language we use on other pages to help keep it consistent. For example, we always refer to children in schools as pupils, rather than students.
+
+Some useful resources include:
+
+* GIT brand book and messaging matrix (available on Sharepoint)
+* [accessibility content guidance](#accessibility)
+* [GOV.UK style guide](https://www.gov.uk/guidance/style-guide/a-to-z)
+* [Department for Education style guide](https://design.education.gov.uk/design-system/style-guide)
+
+In some cases, policy teams may also ask us to word things in a certain way or include specific information. Unless there are commercial reasons why we need to use certain language, we can amend requested wording as needed to be consistent with the Get Into Teaching tone of voice.
 ## Content Editing Info/Tips
 
 The majority of pages on the website are formatted in Markdown, which is a lightweight markup language designed for creating and formatting text.
@@ -166,6 +180,10 @@ The key (`"static/images/content/hero-images/0032.jpg"`) is the **primary** vari
 
 * `alt:` - the alt text for the image, wrapped in quotes
 * `variants` - a list of **other versions of the same image**. The alternate versions can be thumbnails or crops and are considered alternates if the same `alt` text can be applied to them as the primary variant
+
+#### Hero images
+
+Hero images are sized at 1000 pixels wide by 667 high and the mobile and tablet versions are 600 x 400 pixels. You can use a photo editing site online such as Photopea to resize images.
 
 ### Calls to Action
 
@@ -270,9 +288,14 @@ When adding an iFrame elemet as part of Markdown content or a HTML page we shoul
 ></iframe>
 ```
 
-### Inset text
+### Insets and expander components for non-UK content
 
-If you need to call out something important in a page and differentiate it from the surrounding text, you can use the inset text component. Specify the component in the frontmatter and then include it anywhere in the page. We use the purple colour for non-UK content and the purple-white colour for non-UK content on a grey background.
+If you need to call out something important in a page and differentiate it from the surrounding text, you can use the inset or expander components. Specify the component in the frontmatter and then include it anywhere in the page. We use the purple colour for non-UK content and the purple-white colour for non-UK content on a grey background.
+
+#### Inset component for non-UK content
+
+You do not need to include both a heading and title in the inset text.
+The heading tag will default to a h2, but you can override this by optionally specifying the `heading_tag` parameter.
 
 ```yaml
 ---
@@ -282,9 +305,10 @@ inset_text:
     title: Optional title
     text: Text that can contain <a href="#">links</a>
     color: yellow|grey|purple|purple-white
+    heading_tag: "h3"
 ---
 
-# My page
+# My page content
 
 $important-content$
 ```
@@ -294,10 +318,10 @@ If you need to insert an inset text component in an erb file:
 <%= render Content::InsetTextComponent.new(
   header: "Non-UK citizens:",
   text: "You can call us on <a href=\"tel:+448003892500\">+44 800 389 2500</a>, or use the free live chat service. Calls will be charged at your country's standard rate.",
-  color: "purple-white"
+  color: "purple-white",
+  heading_tag: "h3"
   ) %>
 ```
-
 
 Use this component for non-UK content when:  
 
@@ -310,12 +334,14 @@ If using this component for non-UK content:
 * always use the purple colour (or purple-white on a grey background) 
 * the header must be ‘Non-UK citizens:’ 
 
-If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the details expander.  
+If the content is for a specific group of non-UK citizens, for example, 'Refugees and asylum seekers' you can change the header. If you change the header to anything other than 'Non-UK citizens', you may need to manually add a colon after the header text, to do this, add quotation marks around the content and colon.
+
+If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the expander.  
 
 
-### Details expander for non-UK content
+#### Expander component for non-UK content
 
-You can use the details expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
+You can use the expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
 
 ```yaml
 ---
@@ -330,11 +356,10 @@ expander:
     title: Another example
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, purus eget lobortis maximus, diam leo consequat tellus, in interdum odio nisl sed nibh.
     header: Non-UK citizens
-    expanded: true
 ---
 
 
-# My page
+# My page content
 
 $check-your-qualifications$
 
@@ -418,10 +443,6 @@ This means that you can use the following code over many pages so that each page
 
 ```
 
-
-
-
-
 ### Adviser (CTA) component
 
 You can use the Adviser (Call to Action) component to create a call to action to invite users to sign up for the Get an Adviser service. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
@@ -433,6 +454,7 @@ You can use the Adviser (Call to Action) component to create a call to action to
 * link_target
 * classes
 * border
+* heading_tag
 
 ```yaml
 ---
@@ -445,6 +467,7 @@ cta_adviser:
     link_target: "/optional/path"
     classes: ["class1", "class2", "class3"]
     border: true
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 ---
 
 # My page
@@ -461,7 +484,8 @@ Alternatively, if you need to insert an adviser component in an erb file, you ca
   link_text: "Optional link text",
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
-  border: true
+  border: true,
+  heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 )%>
 ```
 
@@ -476,6 +500,7 @@ You can use the Routes (Call to Action) component to create a call to action to 
 * link_target
 * classes
 * border
+* heading_tag
 
 ```yaml
 ---
@@ -487,27 +512,95 @@ cta_routes:
     link_text: "Optional link text"
     link_target: "/optional/path"
     classes: ["class1", "class2", "class3"]
-    border: true
+    border: true,
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
+---
+```
+
+### Mailing list (CTA) component
+
+You can use the Mailing list (Call to Action) component to create a call to action to invite users to sign up to the mailing list. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
+
+* title
+* text
+* image
+* link_text
+* link_target
+* classes
+* border
+* heading_tag
+
+```yaml
+---
+cta_mailinglist:
+  mailinglist:
+    title: "Optional title"
+    text: "Optional text"
+    image: "static/images/routes.png"
+    link_text: "Optional link text"
+    link_target: "/optional/path"
+    classes: ["class1", "class2", "class3"]
+    border: true,
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 ---
 
 # My page
 
-$adviser$
+$mailinglist$
 ```
-Alternatively, if you need to insert an routes component in an erb file, you can call it like this:
+Alternatively, if you need to insert a mailing lists component in an erb file, you can call it like this:
 
 ```yaml
-<%= render CallsToAction::RoutesComponent.new(
+<%= render CallsToAction::MailinglistComponent.new(
   title: "Optional title",
   text: "Optional text",
-  image: "static/images/routes.png",
+  image: "static/images/image.jpg",
   link_text: "Optional link text",
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
-  border: true
+  border: true,
+  heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 )%>
 ```
 
+### Green arrow link (CTA) component
+
+You can use the green arrow link (call to action) component to create a more prominent hyperlink call to action. You can use the component:
+
+* when it's the next logical step on users' journeys
+* more than once on a page
+
+The component should not be used:
+
+* on every page, if there is not a suitable use for it
+* to direct to pages that are not useful for most people e.g. veterans, SKITT
+* to direct to external sites like UCAS or Teach First
+
+It takes the following parameters and both should be specified:
+
+* link_text
+* link_target
+
+```yaml
+---
+cta_arrow_link:
+  events:
+    link_target: "/events/about-get-into-teaching-events"
+    link_text: "Find a Get Into Teaching event"
+---
+
+# My page
+
+$events$
+
+```
+Alternatively, if you need to insert a green arrow component in an erb file, you can call it like this:
+
+```yaml
+
+<%= render CallsToAction::ArrowLinkComponent.new(link_target: "/events/about-get-into-teaching-event", link_text: "Find a Get Into Teaching event") %>
+
+```
 
 ### YouTube video
 
@@ -732,8 +825,6 @@ heading: this is the h1 for the page - only needed if you want the h1 and the ti
 
 description: must start with |- and then you can write the text here
 
-related_content: list your related content links here, formatted as internal links
-
 navigation:  this is to decide where the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the category page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an in between number.  
 
 navigation_title: This is the title that will appear in the tiles
@@ -749,8 +840,7 @@ Here is a blank version to take and fill in:
 
 - title:
 - heading:
-- description: 
-- related_content: 
+- description:
 - navigation:  
 - navigation_title: 
 - navigation_description: 

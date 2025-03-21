@@ -4,18 +4,25 @@ heading: "What is a PGCE course?"
 subcategory: Qualifications
 description: |-
   A postgraduate certificate in education (PGCE) is an academic qualification. Find out how to do a PGCE course through teacher training.
-related_content:
-    Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
-    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    What will your teacher training year be like? : "/train-to-be-a-teacher/initial-teacher-training"
 backlink: "../../"
 navigation: 20.30
 navigation_title: Postgraduate certificate in education (PGCE)
 navigation_description: Having a PGCE as well as qualified teacher status (QTS) can help you develop your teaching skills and knowledge.
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course-pgce
-promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-pgce
+calls_to_action:
+  find:
+    name: find
+    arguments:
+      title: "Find a QTS with PGCE course"
+cta_mailinglist:
+  mailinglist:
+    text: Find out what being in a classroom is really like and get helpful guidance and support on getting into teaching.
+cta_arrow_link:
+  qts:
+    link_target: "/train-to-be-a-teacher/what-is-qts"
+    link_text: "Find out more about QTS"
+  train-with-degree:
+    link_target: "/train-to-be-a-teacher/if-you-have-a-degree"
+    link_text: "Find out more about teacher training if you have or are studying for a degree"
 keywords:
   - PGCE
   - Post-graduate
@@ -37,7 +44,7 @@ expander:
     link_url: /non-uk-teachers/non-uk-qualifications
 ---
 
-If you have a degree and are interested in gaining a qualification in education, you may want to do a postgraduate certificate in education (PGCE).
+If you have a bachelor's degree and are interested in gaining a qualification in education, you may want to do a postgraduate certificate in education (PGCE).
 
 You can get a postgraduate certificate in education through teacher training. A PGCE can help you develop your [teaching skills and knowledge](/life-as-a-teacher/teaching-as-a-career/skills-to-teach).
 
@@ -47,7 +54,7 @@ You do not need a PGCE to be a qualified teacher in England.
 
 You need qualified teacher status (QTS) to teach in most primary, secondary and special schools in England. You can get QTS through undergraduate or postgraduate teacher training.
 
-[Find out more about qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
+$qts$
 
 Many teacher training courses also offer a postgraduate qualification, such as a PGCE, but you do not need one to teach.
 
@@ -62,6 +69,8 @@ You can do a teacher training course that leads to:
 Getting a PGCE without QTS means you will not be qualified to teach in most primary, secondary and special schools in England, although some schools will employ teachers without QTS.
 
 If you get a PGCE without QTS you will not be entitled to the same benefits during your training and career as QTS with PGCE. For example, better pay and support when you start teaching.
+
+$train-with-degree$
 
 ## Benefits of having QTS with PGCE
 
@@ -87,13 +96,15 @@ You can also do a PGCE without QTS in [further education](/life-as-a-teacher/age
 
 ### Entry requirements
 
-Entry requirements for a postgraduate teacher training course usually include an undergraduate degree or equivalent qualification.
+Entry requirements for a postgraduate teacher training course usually include a bachelor's degree or equivalent qualification.
 
 You also need the following GCSEs at grade 4 (C) or above, or equivalent qualifications:
 
 * English
 * maths
 * science (if you want to teach primary)
+
+If you're not sure which route into teaching is right for you, [find routes into teaching based on your circumstances](/routes-into-teaching). 
 
 $check-your-qualifications$
 
@@ -106,3 +117,6 @@ PGCE courses can contain up to 60 credits at master’s degree level, and PGDE c
 As with PGCEs, you can do a PGDE in primary education or secondary education.
 
 More teacher training providers offer a PGCE than a PGDE.
+
+$find$
+$mailinglist$

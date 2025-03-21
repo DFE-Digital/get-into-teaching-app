@@ -4,21 +4,25 @@ heading: "Train to teach if you have a degree or are studying for one"
 subcategory: Postgraduate teacher training
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
-related_content:
-    Explore life as a teacher : "/life-as-a-teacher"
-    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
-    What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
-    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
-    Improve your subject knowledge : "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
 cta_adviser:
   adviser:
     text: Talk to an adviser with years of teaching experience about your different training and funding options. Chat by phone, text or email, as little or as often as you need.
 calls_to_action:
-    find:
-      name: find
+  find:
+    name: find
+cta_arrow_link:
+  expect:
+    link_target: "/train-to-be-a-teacher/initial-teacher-training"
+    link_text: "Find out what to expect during your teacher training" 
+  funding:
+    link_target: "/funding-and-support"
+    link_text: "Find out how to fund your training"
+  choosecourse:
+    link_target: "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
+    link_text: "Find out how to choose the best course for you"
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
-navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one.
+navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a bachelor's degree or you’re studying for one.
 keywords:
   - becoming a teacher
   - teacher training
@@ -55,13 +59,13 @@ quote:
     classes: quote--indent
 ---
 
-You need a bachelor's degree (in any subject) to teach in primary, secondary and special schools in England.
+You need a bachelor's degree in any subject to teach in primary, secondary and special schools in England.
 
 For secondary teacher training, your provider will want to make sure you have a good knowledge of the subject you’re applying to teach.
 
-If you have a degree, you can do postgraduate teacher training to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
+If you have a bachelor's degree, you can do postgraduate teacher training to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
-Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time.
+Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time. Most teacher training courses start in September, with a small number of courses starting on other dates throughout the year.
 
 $international-content$
 
@@ -80,16 +84,13 @@ Providers who have not been accredited can also run courses if they're in a part
 
 ## What does teacher training involve?
 
-Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time. 
-
 All teacher training involves mostly classroom placements with some theoretical learning.  
 
 This means that even if your course provider is a university, you'll still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a university. 
 
 The important thing to remember is that regardless of your course provider, all teacher training involves around 120 days of school placements in at least 2 schools.
 
-You can [find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
-
+$expect$
 $olivia$
 
 ## Where will my training take place?
@@ -117,15 +118,13 @@ You may be eligible for extra financial support if:
 * you're a veteran
 * you're eligible for a salaried teacher training course
 
-[Find out how to fund your training](/funding-and-support).
-
+$funding$
 $fees-and-funding$
 
 ## How to choose your teacher training course
 
 There are some differences in postgraduate teacher training courses. 
 
-[Find out how to decide on the best course for you](/train-to-be-a-teacher/how-to-choose-your-teacher-training-course).
-
-$adviser$
+$choosecourse$
 $find$
+$adviser$

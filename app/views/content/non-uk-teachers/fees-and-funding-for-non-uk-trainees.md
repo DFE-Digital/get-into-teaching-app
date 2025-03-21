@@ -3,14 +3,11 @@ title: "Fees and financial support for non-UK trainee teachers"
 subcategory: If you want to train to teach
 description: |-
   Learn more about bursaries and scholarships for non-UK teacher trainees.
-related_content:
-    Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    What it's like to be a teacher : "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
 promo_content:
 navigation: 20.20
 navigation_title: Fees and financial support for non-UK trainee teachers
 navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
-image: "static/images/content/hero-images/0034.jpg"
+image: "static/images/content/hero-images/peer-to-peer-guidance.jpg"
 backlink: "../../"
 expander:
   refugees-asylum-seekers:
@@ -20,8 +17,17 @@ expander:
       <p>If you have refugee status you'll usually be eligible for financial support to help you train.</p>
       <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
       <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+cta_arrow_link:
+  loans:
+    link_target: "https://www.gov.uk/student-finance"
+    link_text: "Check your eligibility and apply for student loans"
+  bursaries:
+    link_target: "/funding-and-support/scholarships-and-bursaries"
+    link_text: "Learn more about bursaries and scholarships for physics and languages"
+  salaried:
+    link_target: "/funding-and-support/salaried-teacher-training"
+    link_text: "Find out more about salaried teacher training"
 
-    
 keywords:
   - International
   - Overseas
@@ -106,7 +112,7 @@ You may be eligible to apply for a student loan to cover your tuition fees.
 
 To start your application for student loans, you need to have chosen your teacher training course, but you do not need a confirmed place. 
 
-[Check your eligibility and apply for student loans](https://www.gov.uk/student-finance).
+$loans$
 
 ### Bursaries and scholarships for trainee languages and physics teachers
 
@@ -115,7 +121,7 @@ There are 2 types of financial support you can get if you want to train to teach
 * bursaries worth $bursaries_postgraduate_languagesfrenchgermanspanish$ for languages, and $bursaries_postgraduate_physics$ for physics
 * scholarships worth $scholarships_languagesfrenchgermanspanish$ for French, German and Spanish, and $scholarships_physics$ for physics
 
-Bursaries are tax-free payments from the UK government that are paid by your training provider. Scholarships are tax-free payments from independent organisations. You do not have to pay back a bursary or scholarship. 
+Bursaries and scholarships are tax-free payments from the UK government that are paid by your initial teacher training provider. You do not have to pay back a bursary or scholarship. 
 
 If you are going to get a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
 
@@ -123,18 +129,17 @@ The first instalment of a bursary or scholarship is usually made by late October
 
 You do not need to pay an agent or any other third party to access a bursary or scholarship. Any agency or person offering to help you access a bursary may be fraudulent.
 
-Learn more about [bursaries and scholarships for physics and languages](/funding-and-support/scholarships-and-bursaries). 
-
+$bursaries$ 
 
 ### Salaried teacher training courses
 
-Some teacher training courses in England are salaried. This means you [work and earn a salary while you train](/funding-and-support/salaried-teacher-training). 
+Some teacher training courses in England are salaried. This means you work and earn a salary while you train. 
 
 You will need a [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa) if you are on a salaried training course. Your Skilled Worker visa must be sponsored by the school employing you. 
 
 Places on these courses are limited and some salaried courses also charge fees. 
 
-[Find teacher training courses](https://find-teacher-training-courses.service.gov.uk/).
+$salaried$
 
 ### Teaching apprenticeships 
 

@@ -3,14 +3,13 @@ title: "Postgraduate salaried teacher training"
 subcategory: Courses with a salary
 description: |-
     Explore salaried teacher training, including School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
-related_content:
-    Explore the benefits of teaching: "/life-as-a-teacher/pay-and-benefits"
-    If you've worked as an unqualified teacher: "/train-to-be-a-teacher/assessment-only-route-to-qts"
-external_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can answer all your questions about salaried teacher training. Chat by phone, text or email, as little or as often as you need."
+cta_arrow_link:
+  find-courses:
+    link_target: "https://find-teacher-training-courses.service.gov.uk/results?funding%5B%5D=salary&funding%5B%5D=apprenticeship&applications_open=true&order=course_name_ascending"
+    link_text: "Find a salaried teacher training course"
 navigation: 20.20
 navigation_description: Find out about School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 keywords:
@@ -53,7 +52,7 @@ The postgraduate salaried courses are:
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
-These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. 
+These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries or scholarships to help fund fee-paying courses](/funding-and-support/scholarships-and-bursaries).
 
 ## Am I eligible for a postgraduate salaried teacher training course? 
 
@@ -83,7 +82,7 @@ If you’re eligible for a bursary or scholarship, you could receive more money 
 
 ## How does salaried teacher training work? 
 
-Salaried teacher training is usually similar to non-salaried teacher training. You'll spend most of your time in school placements, with some theoretical learning. 
+Salaried teacher training is usually similar to non-salaried teacher training. You'll spend most of your time [working in a school while you train](/train-to-be-a-teacher/school-placements), with some theoretical learning.
 
 $nathan$
 
@@ -101,13 +100,15 @@ Some courses can begin at other points in the year and there may be part-time co
 
 Some salaried courses award QTS only. You may have the option to do a salaried course where you can work towards QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce) but you may have to pay an extra fee. 
 
-[Find out more about what to expect during your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
+Find out more about [what to expect during your teacher training](/train-to-be-a-teacher/initial-teacher-training). 
 
 ## How do I find a salaried teacher training course? 
 
-You can [find postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and filter by salaried courses. 
+It’s usually wise to apply for fee-paying courses as well to increase your chances of getting a place on a course.
 
-It’s usually wise to apply for non-salaried courses as well to increase your chances of getting a place on a course. 
+Some salaried teacher training providers will want you to have already arranged a school to work in while you train. Check with providers before you apply.
+
+$find-courses$
 
 ### Teach First 
 

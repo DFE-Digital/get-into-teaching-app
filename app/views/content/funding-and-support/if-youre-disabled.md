@@ -4,9 +4,6 @@ heading: "Funding and support if you're disabled"
 subcategory: Extra support
 description: |-
     Find out about the support you can get while training to teach if you're disabled.
-related_content:
-    Explore the benefits of teaching: "/life-as-a-teacher/pay-and-benefits"
-    Age groups you could teach: "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
