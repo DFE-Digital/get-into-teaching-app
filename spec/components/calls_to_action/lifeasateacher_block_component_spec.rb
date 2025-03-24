@@ -4,15 +4,16 @@ RSpec.describe CallsToAction::LifeasateacherBlockComponent, type: :component do
   let(:title) { "Life as a teacher" }
   let(:image) { "life-as-a-teacher-block-promo.jpg" }
   let(:title_color) { "blue" }
-  let(:links) { [
-    { text: "Pay and benefits", url: "/life-as-a-teacher/pay-and-benefits" },
-    { text: "Why teach", url: "/life-as-a-teacher/why-teach" },
-    { text: "Teaching as a career", url: "/life-as-a-teacher/teaching-as-a-career" },
-    { text: "Explore subjects you could teach", url: "/life-as-a-teacher/explore-subjects" },
-    { text: "Age groups and specialisms", url: "/life-as-a-teacher/age-groups-and-specialisms" },
-    { text: "Change to a career in teaching", url: "/life-as-a-teacher/change-careers" },
-  ] }
-
+  let(:links) do
+    [
+      { text: "Pay and benefits", url: "/life-as-a-teacher/pay-and-benefits" },
+      { text: "Why teach", url: "/life-as-a-teacher/why-teach" },
+      { text: "Teaching as a career", url: "/life-as-a-teacher/teaching-as-a-career" },
+      { text: "Explore subjects you could teach", url: "/life-as-a-teacher/explore-subjects" },
+      { text: "Age groups and specialisms", url: "/life-as-a-teacher/age-groups-and-specialisms" },
+      { text: "Change to a career in teaching", url: "/life-as-a-teacher/change-careers" },
+    ]
+  end
 
   let(:kwargs) do
     {
@@ -45,3 +46,5 @@ RSpec.describe CallsToAction::LifeasateacherBlockComponent, type: :component do
         expect(page).to have_link(link[:text], href: link[:url])
       end
     end
+  end
+end

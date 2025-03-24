@@ -4,12 +4,13 @@ RSpec.describe CallsToAction::TeacherStoriesBlockComponent, type: :component do
   let(:title) { "Teacher stories" }
   let(:image) { "teacher-stories-block-promo.jpg" }
   let(:title_color) { "pink" }
-  let(:links) { [
-        { text: "Ben's favourite thing about teaching", url: "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching" },
-        { text: "Turning a tough lesson into a success", url: "/life-as-a-teacher/teaching-as-a-career/turning-a-tough-lesson-into-a-success" },
-        { text: "Abigail's career progression story", url: "/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story" },
-      ] }
-
+  let(:links) do
+    [
+      { text: "Ben's favourite thing about teaching", url: "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching" },
+      { text: "Turning a tough lesson into a success", url: "/life-as-a-teacher/teaching-as-a-career/turning-a-tough-lesson-into-a-success" },
+      { text: "Abigail's career progression story", url: "/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story" },
+    ]
+  end
 
   let(:kwargs) do
     {
@@ -42,3 +43,5 @@ RSpec.describe CallsToAction::TeacherStoriesBlockComponent, type: :component do
         expect(page).to have_link(link[:text], href: link[:url])
       end
     end
+  end
+end

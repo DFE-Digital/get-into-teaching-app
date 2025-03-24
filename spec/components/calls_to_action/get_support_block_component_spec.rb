@@ -4,13 +4,14 @@ RSpec.describe CallsToAction::GetSupportBlockComponent, type: :component do
   let(:title) { "Get free support" }
   let(:image) { "get-support-block-promo.jpg" }
   let(:title_color) { "yellow" }
-  let(:links) { [
-    { text: "Get an adviser", url: "/teacher-training-adviser/sign_up/identity" },
-    { text: "Attend a Get Into Teaching event", url: "/events/about-get-into-teaching-events" },
-    { text: "Get tailored email advice", url: "/mailinglist/signup/name" },
-    { text: "Get school experience", url: "/train-to-be-a-teacher/get-school-experience" },
-  ] }
-
+  let(:links) do
+    [
+      { text: "Get an adviser", url: "/teacher-training-adviser/sign_up/identity" },
+      { text: "Attend a Get Into Teaching event", url: "/events/about-get-into-teaching-events" },
+      { text: "Get tailored email advice", url: "/mailinglist/signup/name" },
+      { text: "Get school experience", url: "/train-to-be-a-teacher/get-school-experience" },
+    ]
+  end
 
   let(:kwargs) do
     {
@@ -43,3 +44,5 @@ RSpec.describe CallsToAction::GetSupportBlockComponent, type: :component do
         expect(page).to have_link(link[:text], href: link[:url])
       end
     end
+  end
+end
