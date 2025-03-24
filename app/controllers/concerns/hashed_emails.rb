@@ -5,7 +5,7 @@ module HashedEmails
     return unless cookies[GIT_COOKIE_PREFERENCES]
 
     JSON.parse(cookies[GIT_COOKIE_PREFERENCES]).then do |prefs|
-      prefs["functional"] && prefs["marketing"]
+      prefs["non-functional"] && prefs["marketing"]
     end
   rescue JSON::ParserError
     false
