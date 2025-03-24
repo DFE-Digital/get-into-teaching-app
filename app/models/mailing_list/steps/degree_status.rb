@@ -1,7 +1,7 @@
 module MailingList
   module Steps
     class DegreeStatus < ::GITWizard::Step
-      GRADUATION_YEAR_DEPENDENT_OPTION_ID = 222_750_003
+      GRADUATION_YEAR_DEPENDENT_OPTION_ID = 222_750_006
 
       attribute :degree_status_id, :integer
       attribute :graduation_year, :integer
