@@ -9,7 +9,7 @@ module CallsToAction
       image: "get-support-block-promo.jpg",
       title_color: "yellow",
       links: [
-        { text: "Get an adviser", url: "/teacher-training-adviser/sign_up/identity" },
+        { text: "Get an adviser", url: "/teacher-training-advisers" },
         { text: "Attend a Get Into Teaching event", url: "/events/about-get-into-teaching-events" },
         { text: "Get tailored email advice", url: "/mailinglist/signup/name" },
         { text: "Get school experience", url: "/train-to-be-a-teacher/get-school-experience" },

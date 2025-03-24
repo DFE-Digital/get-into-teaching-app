@@ -6,7 +6,7 @@ module CallsToAction
       title: "Get school experience",
       image: "get-school-experience-block-promo.jpg",
       title_color: "green",
-      text: "Use our service to search for and organise school experience in England.",
+      text: "Experience life as a teacher in a school in England.",
       link_text: "Search for school experience",
       link_target: "https://schoolexperience.education.gov.uk/"
     )

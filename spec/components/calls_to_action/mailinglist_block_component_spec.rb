@@ -4,8 +4,8 @@ RSpec.describe CallsToAction::MailinglistBlockComponent, type: :component do
   let(:title) { "Get personalised updates" }
   let(:image) { "mailing-list-block-promo.jpg" }
   let(:title_color) { "yellow" }
-  let(:text) { "Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching." }
-  let(:link_text) { "Get tailored advice in your inbox" }
+  let(:text) { "Get free guidance and support on getting into teaching." }
+  let(:link_text) { "Get advice in your inbox" }
   let(:link_target) { "/mailinglist/signup/name" }
 
   let(:kwargs) do
@@ -29,7 +29,7 @@ RSpec.describe CallsToAction::MailinglistBlockComponent, type: :component do
     it "renders the image with correct src and alt text" do
       image_element = page.find("img")
       expect(image_element[:src]).to match(Regexp.new("images/#{Regexp.escape(File.basename(image, '.*'))}(-[a-f0-9]+)?"))
-      expect(image_element[:alt]).to eql("Mailing list icon")
+      expect(image_element[:alt]).to eql("")
     end
 
     it "renders the title with the correct color and text" do

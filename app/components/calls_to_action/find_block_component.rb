@@ -6,7 +6,7 @@ module CallsToAction
       title: "Find your teacher training course",
       image: "find-block-promo.jpg",
       title_color: "green",
-      text: "Take a look at the different teacher training courses available.",
+      text: "Explore the different teacher training courses available.",
       link_text: "Find teacher training courses",
       link_target: "https://find-teacher-training-courses.service.gov.uk"
     )

@@ -31,7 +31,7 @@ RSpec.describe CallsToAction::TeacherStoriesBlockComponent, type: :component do
     it "renders the image with correct src and alt text" do
       image_element = page.find("img")
       expect(image_element[:src]).to match(Regexp.new("images/#{Regexp.escape(File.basename(image, '.*'))}(-[a-f0-9]+)?"))
-      expect(image_element[:alt]).to eql("Teacher stories icon")
+      expect(image_element[:alt]).to eql("")
     end
 
     it "renders the title with the correct color and text" do

@@ -6,8 +6,8 @@ module CallsToAction
       title: "Get personalised updates",
       image: "mailing-list-block-promo.jpg",
       title_color: "yellow",
-      text: "Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.",
-      link_text: "Get tailored advice in your inbox",
+      text: "Get free guidance and support on getting into teaching.",
+      link_text: "Get advice in your inbox",
       link_target: "/mailinglist/signup/name"
     )
       super

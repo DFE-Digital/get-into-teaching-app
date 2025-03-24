@@ -5,7 +5,7 @@ RSpec.describe CallsToAction::ApplyBlockComponent, type: :component do
   let(:image) { "apply-block-promo.jpg" }
   let(:title_color) { "green" }
   let(:text) { "Create an account and start your application for a teacher training course." }
-  let(:link_text) { "Apply for a course" }
+  let(:link_text) { "Apply for teacher training" }
   let(:link_target) { "https://www.gov.uk/apply-for-teacher-training" }
 
   let(:kwargs) do
@@ -29,7 +29,7 @@ RSpec.describe CallsToAction::ApplyBlockComponent, type: :component do
     it "renders the image with correct src and alt text" do
       image_element = page.find("img")
       expect(image_element[:src]).to match(Regexp.new("images/#{Regexp.escape(File.basename(image, '.*'))}(-[a-f0-9]+)?"))
-      expect(image_element[:alt]).to eql("Apply icon")
+      expect(image_element[:alt]).to eql("")
     end
 
     it "renders the title with the correct color and text" do

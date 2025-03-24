@@ -4,7 +4,7 @@ RSpec.describe CallsToAction::FindBlockComponent, type: :component do
   let(:title) { "Find your teacher training course" }
   let(:image) { "find-block-promo.jpg" }
   let(:title_color) { "green" }
-  let(:text) { "Take a look at the different teacher training courses available." }
+  let(:text) { "Explore the different teacher training courses available." }
   let(:link_text) { "Find teacher training courses" }
   let(:link_target) { "https://find-teacher-training-courses.service.gov.uk" }
 
@@ -29,7 +29,7 @@ RSpec.describe CallsToAction::FindBlockComponent, type: :component do
     it "renders the image with correct src and alt text" do
       image_element = page.find("img")
       expect(image_element[:src]).to match(Regexp.new("images/#{Regexp.escape(File.basename(image, '.*'))}(-[a-f0-9]+)?"))
-      expect(image_element[:alt]).to eql("Find icon")
+      expect(image_element[:alt]).to eql("")
     end
 
     it "renders the title with the correct color and text" do

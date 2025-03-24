@@ -4,7 +4,7 @@ RSpec.describe CallsToAction::GetSchoolExperienceBlockComponent, type: :componen
   let(:title) { "Get school experience" }
   let(:image) { "get-school-experience-block-promo.jpg" }
   let(:title_color) { "green" }
-  let(:text) { "Use our service to search for and organise school experience in England." }
+  let(:text) { "Experience life as a teacher in a school in England." }
   let(:link_text) { "Search for school experience" }
   let(:link_target) { "https://schoolexperience.education.gov.uk/" }
 
@@ -29,7 +29,7 @@ RSpec.describe CallsToAction::GetSchoolExperienceBlockComponent, type: :componen
     it "renders the image with correct src and alt text" do
       image_element = page.find("img")
       expect(image_element[:src]).to match(Regexp.new("images/#{Regexp.escape(File.basename(image, '.*'))}(-[a-f0-9]+)?"))
-      expect(image_element[:alt]).to eql("Get school experience icon")
+      expect(image_element[:alt]).to eql("")
     end
 
     it "renders the title with the correct color and text" do
