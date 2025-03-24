@@ -43,4 +43,3 @@ RSpec.describe CallsToAction::GetSupportBlockComponent, type: :component do
         expect(page).to have_link(link[:text], href: link[:url])
       end
     end
-end
