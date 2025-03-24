@@ -3,7 +3,7 @@ title: "Support if you have a health condition, learning difficulty, or neurodiv
 heading: "Funding and support if you have a health condition, learning difficulty, or neurodiversity"
 subcategory: Extra support
 description: |-
-    Find out about the support you can get while training to teach if you're neurodivergent, have a long-term health condition, or other accessibility need.
+    Find out about the support you can get while training to teach if you're neurodivergent, have a long-term health condition, or other accessibility needs.
 cta_adviser:
   adviser:
     text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
