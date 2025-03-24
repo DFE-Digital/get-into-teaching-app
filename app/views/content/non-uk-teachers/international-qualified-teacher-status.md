@@ -3,9 +3,6 @@ title: Get international qualified teacher status (iQTS)
 subcategory: If you're outside the UK
 description: |-
  Get international qualified teacher status (iQTS) from anywhere in the world, a teaching qualification backed by England’s Department for Education (DfE).
-cta_adviser:
-  adviser:
-    text: Talk to an adviser with years of teaching experience about iQTS and teaching in England. Chat by phone, text or email, as little or as often as you need.
 navigation: 20.50
 navigation_title: Get international qualified teacher status (iQTS)
 navigation_description: Train from anywhere in the world to get international qualified teacher status (iQTS), backed by England’s Department for Education.
@@ -160,5 +157,3 @@ To learn more about applying for iQTS, contact your chosen training provider for
 For general advice about iQTS, email us on iqts.policy@education.gov.uk.
 
 You can also call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
-
-$adviser$

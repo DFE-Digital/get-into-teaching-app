@@ -2,7 +2,7 @@
 title: Cookies Policy
 ---
 
-Last updated: 6 February 2025
+Last updated: 17 March 2025
 
 This Cookies Policy explains what Cookies are and how we use them. You should read this policy so you can understand what type of Cookies we use, or the information we collect using Cookies and how that information is used.
 
@@ -81,6 +81,8 @@ Table caption: Essential cookies we use
 
 The information gathered via these Cookies may directly or indirectly identify you as an individual visitor. This is because the information collected is typically linked to a pseudonymous identifier associated with the device you use to access the website. We may also use these Cookies to test new pages, features or new functionality of the website to see how people react to them.
 
+We may also share anonymised and hashed data with third party platforms so that we can gain a better understanding of how people use our site. This helps us improve the accuracy of our marketing, and targeting and finding people like you, who may also be interested in our service. We do not allow these providers to share this data with others.
+
 | Name                              | Purpose                                                                                                                                                     | Expires after        |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | `bam-session`                     | BAM use this Cookie to attribute mailing list sign ups at teaching events                                                                                   | 30 days              |
@@ -112,6 +114,8 @@ Table caption: Tracking and performance cookies we use
 **Purpose:** These Cookies track your browsing habits to enable us to show advertising which is more likely to be of interest to you. These Cookies use information about your browsing history to group You with other users who have similar interests. Based on that information, and with our permission, third party advertisers can place Cookies to enable them to show adverts which we think will be relevant to your interests while You are on third party websites.
 
 We place marketing tags on our pages to track the success of our content on each channel. Some of our pages may contain content from other sites, like YouTube, which may set their own Cookies. These sites are sometimes called ‘third party’ services. This tells us how many people are seeing the content and whether it’s useful. In addition, if you share a link to one of our pages, the service you share it on (for example, Facebook) may set a Cookie. We have no control over Cookies set on other websites - you can turn them off, but not through us.
+
+We may also share anonymised and hashed data with third party platforms. This helps us improve the accuracy of our marketing, and targeting and finding people like you, who may also be interested in our service. We do not allow these providers to share this data with others.
 
 | Name                 | Purpose                                                                                                                                                         | Expires after |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|

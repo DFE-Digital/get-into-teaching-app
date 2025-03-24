@@ -454,6 +454,7 @@ You can use the Adviser (Call to Action) component to create a call to action to
 * link_target
 * classes
 * border
+* heading_tag
 
 ```yaml
 ---
@@ -466,6 +467,7 @@ cta_adviser:
     link_target: "/optional/path"
     classes: ["class1", "class2", "class3"]
     border: true
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 ---
 
 # My page
@@ -482,7 +484,8 @@ Alternatively, if you need to insert an adviser component in an erb file, you ca
   link_text: "Optional link text",
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
-  border: true
+  border: true,
+  heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 )%>
 ```
 
@@ -497,6 +500,7 @@ You can use the Routes (Call to Action) component to create a call to action to 
 * link_target
 * classes
 * border
+* heading_tag
 
 ```yaml
 ---
@@ -508,7 +512,8 @@ cta_routes:
     link_text: "Optional link text"
     link_target: "/optional/path"
     classes: ["class1", "class2", "class3"]
-    border: true
+    border: true,
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 ---
 ```
 
@@ -523,6 +528,7 @@ You can use the Mailing list (Call to Action) component to create a call to acti
 * link_target
 * classes
 * border
+* heading_tag
 
 ```yaml
 ---
@@ -534,7 +540,8 @@ cta_mailinglist:
     link_text: "Optional link text"
     link_target: "/optional/path"
     classes: ["class1", "class2", "class3"]
-    border: true
+    border: true,
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 ---
 
 # My page
@@ -551,7 +558,8 @@ Alternatively, if you need to insert a mailing lists component in an erb file, y
   link_text: "Optional link text",
   link_target: "/optional/path",
   classes: ["class1", "class2", "class3"],
-  border: true
+  border: true,
+  heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
 )%>
 ```
 
@@ -817,8 +825,6 @@ heading: this is the h1 for the page - only needed if you want the h1 and the ti
 
 description: must start with |- and then you can write the text here
 
-related_content: list your related content links here, formatted as internal links
-
 navigation:  this is to decide where the tile for this page will sit on the page - you will need to check what the other pages are listed as. They will be formatted like '30.20' - '30' will stand for the category page (in this case, how to apply) and the '20' will be the order it sits in on the tiles. These usually are assigned in increments of 5, just in case you later want to move on further up it can be easily moved by assigning an in between number.  
 
 navigation_title: This is the title that will appear in the tiles
@@ -834,8 +840,7 @@ Here is a blank version to take and fill in:
 
 - title:
 - heading:
-- description: 
-- related_content: 
+- description:
 - navigation:  
 - navigation_title: 
 - navigation_description: 
