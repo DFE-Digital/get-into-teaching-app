@@ -598,6 +598,12 @@ to add them to a html file, use the above code inside the following container. H
   </section>
 </div>
 ```
+If you want to use these inside a markdown file, create a seperate html file and use the above code inside it. Then on your markdown file you can link to it like this example:
+
+```yaml
+content:
+  - "content/shared/subject-pages/block-promo"
+```
 
 
 ### Green arrow link (CTA) component
