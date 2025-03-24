@@ -3,8 +3,19 @@ title: Age groups you could teach
 heading: Age groups you could teach
 description: |-
   Explore the key stages and ages you could teach, whether that's primary, secondary, early years, college, or pupils with special educational needs.
-promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-who-do-you-want-to-teach
+cta_mailinglist:
+  mailinglist:
+    text: Get free guidance and support on getting into teaching, including learning more about the age groups you could teach.
+cta_arrow_link:
+  subjects:
+    link_target: "/life-as-a-teacher/explore-subjects"
+    link_text: "Explore the subjects you could teach at secondary school level"
+  schoolexperience:
+    link_target: "/train-to-be-a-teacher/get-school-experience"
+    link_text: "Find out about opportunities to get school experience in England"
+  send:
+    link_target: "/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs"
+    link_text: "Learn more about teaching pupils with special educational needs and disabilities (SEND)"
 ---
 
 It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. You might need specific training or qualifications in some areas. This page explains more about the different options.
@@ -35,10 +46,11 @@ Children start secondary school when they’re 11. There are up to 3 stages in s
 * key stage 5 (KS5) includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms, or colleges
 
 Pupils work towards national qualifications, which are usually GCSEs during KS4. Pupils take A levels or other similar qualifications during KS5. 
+[Explore more about becoming a secondary school teacher](/life-as-a-teacher/age-groups-and-specialisms/secondary). 
 
 Subjects at this level include core subjects such as English, maths and science, as well as many others. The full range of subjects available to teach at secondary level will depend on the school.
 
-[Explore the subjects you could teach at secondary school level](/life-as-a-teacher/explore-subjects). 
+$subjects$
 
 ### What you need to teach in primary and secondary schools
 
@@ -52,7 +64,7 @@ The best way to work out which age group you would like to teach is to get real 
 
 If you’re studying for an undergraduate or master's degree and interested in teaching chemistry, computing, languages, maths or physics, then you could do a [paid teaching internship](/train-to-be-a-teacher/teaching-internships) to find out if teaching is right for you.
 
-Find out more about opportunities to [get school experience in England](/train-to-be-a-teacher/get-school-experience).
+$schoolexperience$
 
 ### Teach pupils with special educational needs and disabilities (SEND)
 
@@ -60,7 +72,7 @@ Most disabled pupils and pupils with special educational needs learn in mainstre
 
 You can choose to apply for a teacher training course that specialises in SEND or you can gain the skills and experience as you train to teach.
 
-Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs).
+$send$
 
 ## Teaching other stages
 
@@ -83,3 +95,5 @@ There are three key areas:
 * basic skills courses covering literacy and numeracy. 
 
 Learn more about [teaching in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers).
+
+$mailinglist$

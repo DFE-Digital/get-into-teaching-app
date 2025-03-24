@@ -65,7 +65,7 @@ module Callbacks
     end
 
     def set_completed_page_title
-      @page_title = "Callback confirmed"
+      @page_title = "Book a callback, callback confirmed"
     end
   end
 end

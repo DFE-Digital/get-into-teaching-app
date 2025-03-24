@@ -4,13 +4,22 @@ heading: "Funding and support if you're a parent or carer"
 subcategory: Extra support
 description: |-
   Find out what extra grants and schemes are available when completing your teacher training if you have children or other caring responsibilities.
-related_content:
-    Get support training to teach if you're changing career: "/life-as-a-teacher/change-careers"
-    Tuition fee and maintenance loans: "/funding-and-support/tuition-fee-and-maintenance-loans"
-    Bursaries and scholarships: "/funding-and-support/scholarships-and-bursaries"
-    Explore life as a teacher: "/life-as-a-teacher"
-promo_content:
-    - content/funding-and-support/promos/get-adviser-support-promo
+cta_adviser:
+  adviser:
+    text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
+cta_arrow_link:
+  careerchanger:
+    link_target: /life-as-a-teacher/change-careers
+    link_text: "Get support training to teach if you're changing career"
+  parents-learning-allowance:
+    link_target: "https://www.gov.uk/parents-learning-allowance"
+    link_text: "Find out more about the Parents’ Learning Allowance"
+  childcare-grant:
+    link_target: "https://www.gov.uk/childcare-grant"
+    link_text: "Find out more about the Childcare Grant"
+  adult-grant:
+    link_target: "https://www.gov.uk/adult-dependants-grant"
+    link_text: "Find out more about the Adult Dependants’ Grants"
 navigation: 20.30
 navigation_title: Funding and support if you're a parent or carer
 navigation_description: Find out what extra grants and schemes are available if you have children or other caring responsibilities.
@@ -39,7 +48,11 @@ You do not have to pay this money back, and you’ll get it on top of your other
 
 Figures are for the 2024/25 academic year.
 
-There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the following funding. If you’re doing a part-time course, you may be eligible for [Universal Credit](https://www.gov.uk/guidance/universal-credit-and-students).
+There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the funding options on this page. If you’re doing a part-time course, you may be eligible for [Universal Credit](https://www.gov.uk/guidance/universal-credit-and-students).
+
+You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
+
+$careerchanger$
 
 $international-content$
 
@@ -69,7 +82,7 @@ To be eligible, you need to:
 * have children under 15 (or 17 if they have special educational needs)
 * be eligible for student finance
 
-[Find out more about the Childcare Grant and how to apply](https://www.gov.uk/childcare-grant).
+$childcare-grant$
 
 ### Parents’ Learning Allowance
 
@@ -85,7 +98,7 @@ To be eligible, you need to:
 * have dependent children
 * have a household income of less than $finance_parentslearningallowance_income$ a year
 
-[Find out more about the Parents’ Learning Allowance and how to apply](https://www.gov.uk/parents-learning-allowance).
+$parents-learning-allowance$
 
 ## If you’re a carer
 
@@ -104,4 +117,5 @@ To be eligible, you need to:
 * have an adult depend on you financially
 * have a household income of less than $finance_adultdependantsgrant_income$
 
-[Find out more about the Adult Dependants’ Grants and how to apply](https://www.gov.uk/adult-dependants-grant).
+$adult-grant$
+$adviser$

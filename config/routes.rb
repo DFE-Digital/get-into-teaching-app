@@ -96,12 +96,6 @@ Rails.application.routes.draw do
   resource :csp_reports, only: %i[create]
   resource :client_metrics, only: %i[create]
 
-  resources :blog, controller: "blog", only: %i[index show] do
-    collection do
-      resources :tag, only: %i[show], as: :blog_tag, controller: "blog/tag"
-    end
-  end
-
   resources "teaching_events", as: "events", path: "/events", controller: "teaching_events" do
     collection do
       get :about_git_events, path: "about-get-into-teaching-events", as: "about_git"
@@ -142,6 +136,17 @@ Rails.application.routes.draw do
   namespace :teacher_training_adviser, path: "/teacher-training-adviser" do
     resources :steps,
               path: "/sign_up",
+              only: %i[index show update] do
+      collection do
+        get :completed
+        get :resend_verification
+      end
+    end
+  end
+
+  namespace :routes_into_teaching, path: "/routes-into-teaching" do
+    resources :steps,
+              path: "/",
               only: %i[index show update] do
       collection do
         get :completed

@@ -101,7 +101,7 @@ describe "teaching events", type: :request do
       context "when there are no GiT events" do
         let(:events) { [] }
 
-        it { is_expected.to include("We do not have any Get Into Teaching events open for registration right now.") }
+        it { is_expected.to include("From January to March 2025, we'll be holding events in Newcastle, Sheffield, Manchester, Nottingham, Birmingham, London, Norwich, Bristol and Brighton, and also online.") }
       end
     end
 

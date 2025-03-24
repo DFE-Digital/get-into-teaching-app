@@ -13,7 +13,7 @@ describe "_benefits.html.erb" do
 
   it { is_expected.to have_css("ul li") }
   it { is_expected.to have_link("competitive salary starting at", href: "/life-as-a-teacher/pay-and-benefits/teacher-pay") }
-  it { is_expected.to have_link("generous and secure pension", href: "/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme") }
+  it { is_expected.to have_link("secure pension", href: "/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme") }
   it { is_expected.to have_text(subject_name) }
   it { is_expected.to have_text(salary_value) }
 end

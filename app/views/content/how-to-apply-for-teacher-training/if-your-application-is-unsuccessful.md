@@ -2,11 +2,6 @@
 title: If your teacher training application is unsuccessful
 description: |-
   Read about what to do if your teacher training application is unsuccessful. Find advice on why an application can be unsuccessful and how to get support.
-related_content:
-    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    Tips for teacher training interview success : "/how-to-apply-for-teacher-training/teacher-training-interview"
-    Your teacher training personal statement : "/how-to-apply-for-teacher-training/teacher-training-personal-statement"
-    Your teacher training references : "/how-to-apply-for-teacher-training/teacher-training-references"
 navigation: 30.30
 navigation_title: If your application is unsuccessful
 navigation_description: Find out what to do if your teacher training application is unsuccessful.
@@ -22,8 +17,9 @@ keywords:
   - apply
   - how to apply
   - applying for teacher training
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-apply
+cta_adviser:
+  adviser:
+    text: An adviser with years of teaching experience can help you reapply for teacher training and maximise your chances of success. Chat by phone, text or email, as little or as often as you need.
 expander:
   check-your-qualifications:
     title: check your qualifications
@@ -87,4 +83,4 @@ They can support you with:
 
 All our advisers have years of teaching experience and know the application process inside and out.
 
-[Learn more about teacher training advisers](/teacher-training-advisers).
+$adviser$

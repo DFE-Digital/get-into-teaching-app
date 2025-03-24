@@ -20,5 +20,4 @@ keywords:
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/religious-education/article"
-  - "content/shared/subject-pages/adviser-promo"
 ---

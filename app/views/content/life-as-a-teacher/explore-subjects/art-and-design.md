@@ -10,7 +10,7 @@ description: |-
     Explore what's involved in becoming an art and design teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/hero-images/0031.jpg"
+image: "static/images/content/hero-images/art-easels.jpg"
 keywords:
   - art and design
   - teaching art and design
@@ -19,5 +19,4 @@ keywords:
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/art-and-design/article"
-  - "content/shared/subject-pages/adviser-promo"
 ---

@@ -1,0 +1,24 @@
+<%= tag.div(class: %w[call-to-action margin] << responsive_classes) do %>
+  <%= icon %>
+
+  <div class="call-to-action__content">
+    <% if title.present? %>
+      <%= content_tag heading_tag, class: "call-to-action__heading" do %>
+        <%= title %>
+      <% end %>
+    <% end %>
+
+    <% if text.present? || content.present? %>
+      <p class="call-to-action__text">
+        <%= helpers.safe_html_format(text) %>
+        <%= content %>
+      </p>
+    <% end %>
+
+    <% if link.present? %>
+      <div class="call-to-action__action">
+      <%= link %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

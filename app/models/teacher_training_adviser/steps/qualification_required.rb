@@ -17,5 +17,9 @@ module TeacherTrainingAdviser::Steps
       (retake_gcse_maths_english_skipped || retaking_gcse_maths_english) &&
         (retake_gcse_science_skipped || retaking_gcse_science)
     end
+
+    def title
+      "gcses required"
+    end
   end
 end

@@ -5,7 +5,11 @@ module SpecHelpers
       creds = Rails.application.config.x.integration_credentials
       Capybara.run_server = false
       Capybara.default_max_wait_time = 5
-      Capybara.app_host = "https://#{creds[:username]}:#{creds[:password]}@#{host}"
+      Capybara.app_host = "https://#{host}"
+      Capybara.current_session.driver.configure do |agent|
+        # configure mechanize authentication
+        agent.add_auth("https://#{host}", creds[:username], creds[:password])
+      end
     end
 
     def submit_personal_details(first_name, last_name, email)
@@ -19,7 +23,7 @@ module SpecHelpers
       wait_for_jobs
       expect(page).to have_text("You're already registered with us")
       code = retrieve_verification_code(email)
-      fill_in "To verify your details, we've sent a code to your email address.", with: code
+      fill_in "Enter your verification code:", with: code
       click_on "Next step"
     end
 

@@ -61,4 +61,6 @@ DfE::Analytics.configure do |config|
     Rails.application.config.action_controller.perform_caching &&
       ActionDispatch::FileHandler.new(Rails.root.join("public/cached_pages").to_s).attempt(rack_env).present?
   end
+
+  config.azure_federated_auth = ENV.include? "GOOGLE_CLOUD_CREDENTIALS"
 end

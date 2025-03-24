@@ -203,7 +203,7 @@ production-cluster:
 
 get-cluster-credentials: set-azure-account
 	az aks get-credentials --overwrite-existing -g ${CLUSTER_RESOURCE_GROUP_NAME} -n ${CLUSTER_NAME}
-	kubelogin convert-kubeconfig -l $(if ${GITHUB_ACTIONS},spn,azurecli)
+	kubelogin convert-kubeconfig -l $(if ${AAD_LOGIN_METHOD},${AAD_LOGIN_METHOD},azurecli)
 
 edit-local-secrets-aks: install-fetch-config set-azure-account
 	./fetch_config.rb -s azure-key-vault-secret:s189t01-git-local-app-kv/${APPLICATION_SECRETS} -e -d azure-key-vault-secret:s189t01-git-local-app-kv/${APPLICATION_SECRETS} -f yaml -c
@@ -216,3 +216,20 @@ action-group-resources: set-azure-account # make env action-group-resources ACTI
 	echo ${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-mn-rg
 	az group create -l uksouth -g ${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-mn-rg --tags "Product=Get into teaching website" "Environment=Test" "Service Offering=Teacher services cloud"
 	az monitor action-group create -n ${AZURE_RESOURCE_PREFIX}-get-into-teaching-app -g ${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-mn-rg --short-name ${AZURE_RESOURCE_PREFIX}-git --action email ${AZURE_RESOURCE_PREFIX}-${SERVICE_SHORT}-email ${ACTION_GROUP_EMAIL}
+
+maintenance-image-push:
+	$(if ${GITHUB_TOKEN},, $(error Provide a valid Github token with write:packages permissions as GITHUB_TOKEN variable))
+	$(if ${MAINTENANCE_IMAGE_TAG},, $(eval export MAINTENANCE_IMAGE_TAG=$(shell date +%s)))
+	docker build -t ghcr.io/dfe-digital/get-into-teaching-app-maintenance:${MAINTENANCE_IMAGE_TAG} maintenance_page
+	echo ${GITHUB_TOKEN} | docker login ghcr.io -u USERNAME --password-stdin
+	docker push ghcr.io/dfe-digital/get-into-teaching-app-maintenance:${MAINTENANCE_IMAGE_TAG}
+
+maintenance-fail-over: get-cluster-credentials
+	$(eval export CONFIG)
+	./maintenance_page/scripts/failover.sh
+
+enable-maintenance: maintenance-image-push maintenance-fail-over
+
+disable-maintenance: get-cluster-credentials
+	$(eval export CONFIG)
+	./maintenance_page/scripts/failback.sh

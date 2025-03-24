@@ -11,9 +11,9 @@ class SitemapController < ApplicationController
   # This will keep it consistent with how canonical-rails behaves and ensure search engines are happy.
   OTHER_PATHS = %w[
     /events
-    /blog
     /events/about-get-into-teaching-events
     /mailinglist/signup/name
+    /routes-into-teaching
   ].freeze
 
   def show

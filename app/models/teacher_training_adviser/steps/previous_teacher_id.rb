@@ -15,5 +15,9 @@ module TeacherTrainingAdviser::Steps
 
       has_teacher_id_skipped || !has_id
     end
+
+    def title
+      "teacher reference number"
+    end
   end
 end

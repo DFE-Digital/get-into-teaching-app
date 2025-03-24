@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Integration tests", :integration, :js, type: :feature do
+RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: :feature do
   before { config_capybara }
 
   around do |example|
@@ -47,16 +47,16 @@ RSpec.feature "Integration tests", :integration, :js, type: :feature do
     click_label "Yes, I already have a degree"
     click_on "Next step"
 
-    expect(page).to have_text("How close are you to applying for teacher training?")
-    click_label "I’m not sure and finding out more"
+    expect(page).to have_text("How interested are you in applying for teacher training?")
+    click_label "It’s just an idea"
     click_on "Next step"
 
-    expect(page).to have_text "Which subject do you want to teach?"
+    expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Chemistry"
     click_on "Next step"
 
-    expect(page).to have_text "If you give us your postcode"
-    fill_in "Your UK postcode (optional)", with: "TE57 1NG"
+    expect(page).to have_text "We'll only use this to send you information about events happening near you"
+    fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
     expect(page).to have_text("you're signed up")
@@ -80,16 +80,16 @@ RSpec.feature "Integration tests", :integration, :js, type: :feature do
     click_label "Not yet, I'm a first year student"
     click_on "Next step"
 
-    expect(page).to have_text("How close are you to applying")
-    click_label "I’m not sure and finding out more"
+    expect(page).to have_text("How interested are you in applying")
+    click_label "It’s just an idea"
     click_on "Next step"
 
-    expect(page).to have_text("Which subject do you want to teach")
+    expect(page).to have_text("Select the subject you're most interested in teaching")
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "If you give us your postcode"
-    fill_in "Your UK postcode (optional)", with: "TE57 1NG"
+    expect(page).to have_text "We'll only use this to send you information about events happening near you"
+    fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
     expect(page).to have_text("you're signed up")

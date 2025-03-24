@@ -1,6 +1,10 @@
 <div class="quote-with-image">
   <div class="quote-with-image__content-container <%= background_color %>">
-    <div class="quote-with-image__title <%= heading_color %>"><%= title %></div>
+    <div class="quote-with-image__title <%= heading_color %>">
+      <%= content_tag heading_tag do %>
+        <%= title %>
+      <% end %>
+    </div>
     <div class="quote-with-image__content <%= "quote-with-image__content--with-quotes" if quotes %> <%= heading_color %>">
       <%== text %>
     </div>

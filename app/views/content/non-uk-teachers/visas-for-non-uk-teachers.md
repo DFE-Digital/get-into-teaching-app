@@ -1,14 +1,34 @@
 ---
-title: "Apply for your visa to teach in England"
+title: "Visas for non-UK teachers"
+subcategory: If you're already a teacher
 description: |-
-  Learn more about types of visa non-UK citizens will need to work in England, and how to apply.
-related_content:
-    Teach in England if you trained outside the UK: " /non-uk-teachers/teach-in-england-if-you-trained-overseas"
-    Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
+  Learn more about types of visas non-UK citizens will need to work in England, and how to apply.
 promo_content:
-image: "static/images/content/hero-images/0034.jpg"
+navigation: 20.60
+navigation_title: Visas for non-UK teachers
+navigation_description: Find out more about which visa you'll need to teach in England and how to apply.
+image: "static/images/content/hero-images/teacher2.jpg"
 backlink: "../../"
+expander:
+  ukraine-visas:
+    header: "Ukraine citizens:"
+    title: help with visas
+    text: |-
+      <p>
+      If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:
+      </p>
+        <ul>
+          <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
+          <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
+        </ul>
+cta_arrow_link:
+  teachvisa:
+    link_target: "https://www.gov.uk/check-uk-visa"
+    link_text: "Check if you need a UK visa"
+  teachinuk: 
+    link_target: "/non-uk-teachers/teach-in-england-if-you-trained-overseas" 
+    link_text: "Find out more about teaching in England if you trained outside the UK"
+
 keywords:
   - International
   - Overseas
@@ -55,9 +75,11 @@ keywords:
 
 ## How to apply for your visa
 
-If you’re applying for teaching jobs in England as a non-UK citizen, you will need a [visa or immigration status allowing you to work in England](#check-your-status).
+If you’re applying for teaching jobs in England as a non-UK citizen, you will need a visa or immigration status allowing you to work in England.
 
-Most non-UK citizens who don't already have the correct visa or immigration status will need to apply for a Skilled Worker visa to teach in England. 
+Most non-UK citizens who do not already have the correct visa or immigration status will need to apply for a Skilled Worker visa to teach in England. 
+
+$ukraine-visas$
 
 ### To apply for your visa, follow these steps
 
@@ -67,7 +89,6 @@ Visit the UK government’s official [Teaching Vacancies](https://teaching-vacan
 #### Step 2
 Apply for a teaching job with a school which can sponsor your visa. Your salary must meet the requirements for a Skilled Worker visa. 
 
-[Learn more about applying for a teaching job in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 #### Step 3
 When you have a confirmed offer of a job, you’ll be able to apply for your [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa).  
@@ -117,7 +138,7 @@ You may be able to [bring your partner and children with you on a Skilled Worker
 
 ## Check your status
 
-If you’re not sure about your immigration status, you can [check if you need a UK visa to teach in the UK](https://www.gov.uk/check-uk-visa).
+$teachvisa$
 
 You will not need a visa to teach in the UK if you:
 
@@ -154,6 +175,8 @@ You’ll also have to [pay visa fees](https://www.gov.uk/visa-fees).
 ### Immigration Health Surcharge 
 
 You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application – this is called the Immigration Health Surcharge (IHS).
+
+$teachinuk$
 
 ## Contact
 

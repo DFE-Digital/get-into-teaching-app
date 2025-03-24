@@ -5,8 +5,6 @@ subcategory: Postgraduate teacher training
 description: |-
   Find paid teaching internships to gain new skills and see what classroom life is like. Explore chemistry, computing, languages, maths and physics internships.
 image: false
-promo_content:
-  - content/train-to-be-a-teacher/promos/eta-promo-internships
 backlink: /
 fullwidth: true
 navigation: 20.30

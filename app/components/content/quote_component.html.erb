@@ -1,7 +1,7 @@
 <%= tag.blockquote(class: quote_class) do %>
   <p><%= text_sans_last_word %> <span><%= text_last_word %></span></p>
   <% if show_footer? %>
-    <%= tag.footer(class: "footer") do %>
+    <%= tag.div(class: "footer") do %>
       <div class="author">
         <div>
           <% if name.present? %>

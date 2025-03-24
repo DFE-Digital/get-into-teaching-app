@@ -120,7 +120,7 @@ describe ApplicationHelper do
     after { subject }
 
     it "returns a span with class 'fab'" do
-      expect(helper).to receive(:fa_icon).once.with(icon_name, style: "fab")
+      expect(helper).to receive(:fa_icon).once.with(icon_name, { style: "fab" })
     end
   end
 
@@ -132,7 +132,7 @@ describe ApplicationHelper do
     after { subject }
 
     it "returns a span with class 'fas'" do
-      expect(helper).to receive(:fa_icon).once.with(icon_name, style: "fas")
+      expect(helper).to receive(:fa_icon).once.with(icon_name, { style: "fas" })
     end
   end
 

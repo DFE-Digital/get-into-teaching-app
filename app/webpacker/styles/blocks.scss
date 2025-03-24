@@ -72,6 +72,8 @@ $space-between-sections: 3.7em;
 }
 
 .image-blocks {
+  width: 100%;
+
   .image-block {
     img {
       width: 100%;
@@ -91,7 +93,6 @@ $space-between-sections: 3.7em;
   @include mq($from: tablet) {
     display: flex;
     gap: $indent-amount * .5;
-    padding: 0 15px;
 
     .image-block {
       h2 {
@@ -104,6 +105,12 @@ $space-between-sections: 3.7em;
         padding-bottom: 0;
         margin-bottom: 0;
       }
+    }
+  }
+
+  &.homepage-feature {
+    @supports (display: grid) {
+      margin: 1em $px-either-side-of-content 0;
     }
   }
 }

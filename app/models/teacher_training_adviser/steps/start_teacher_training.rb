@@ -45,6 +45,10 @@ module TeacherTrainingAdviser::Steps
       itt_years.find { |item| item.value == inferred_year.to_s }&.id
     end
 
+    def title
+      "teacher training year"
+    end
+
   private
 
     def itt_years

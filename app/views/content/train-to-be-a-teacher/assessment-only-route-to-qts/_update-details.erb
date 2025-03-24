@@ -1,5 +1,10 @@
-<section class="content-cta">
+<section>
   <p>
     If you're a provider and need to update the details on your record, please contact us at: <%= mail_to("getintoteaching.helpdesk@education.gov.uk") %>.
   </p>
+</section>
+<section>
+  <%= render CallsToAction::AdviserComponent.new(
+    text: "An adviser with years of teaching experience can talk you through the assessment only programme. Chat by phone, text or email, as little or as often as you need.",
+) %>
 </section>

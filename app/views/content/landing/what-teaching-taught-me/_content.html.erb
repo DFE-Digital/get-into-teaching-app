@@ -57,4 +57,7 @@
       <p><%= link_to("Find out more about teacher pay", page_path("life-as-a-teacher/pay-and-benefits/teacher-pay")) %>.</p>
     </div>
   </section>
+  <%= render CallsToAction::MailinglistComponent.new(
+    text: "Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.",
+  ) %>
 </div>

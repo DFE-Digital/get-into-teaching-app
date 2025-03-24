@@ -61,4 +61,13 @@ describe Content::InsetTextComponent, type: :component do
 
     it { is_expected.to have_css("section.inset-text.purple") }
   end
+
+  context "when the heading_tag is overridden" do
+    let(:custom_heading_tag) { "h4" }
+    let(:component) { described_class.new(text: text, header: header, title: title, color: color, heading_tag: custom_heading_tag) }
+
+    specify "the custom heading tag is used" do
+      expect(subject).to have_css(".inset-text #{custom_heading_tag}[role=\"text\"]", text: title)
+    end
+  end
 end

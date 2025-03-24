@@ -12,7 +12,7 @@ description: |-
     Find out how to become a maths teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/hero-images/maths.jpg"
+image: "static/images/content/hero-images/maths-pythagoras.jpg"
 keywords:
   - maths
   - teaching maths
@@ -21,5 +21,4 @@ keywords:
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/maths/article"
-  - "content/shared/subject-pages/adviser-promo"
 ---

@@ -9,13 +9,25 @@
               description: "Explore the different ages and stages of teaching and decide which is right for you.",
               path: "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach",
             )) %>
+              <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Teach in primary",
+              description: "Find out about teaching pupils in primary schools (ages 4 to 11).",
+              path: "/life-as-a-teacher/age-groups-and-specialisms/primary",
+            )) %>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Teach in secondary",
+              description: "Find out about teaching pupils in secondary schools (ages 11 to 18).",
+              path: "/life-as-a-teacher/age-groups-and-specialisms/secondary"
+            )) %>
           <%= render Categories::CardComponent.new(heading_tag: "h2", card:
             OpenStruct.new(
               title: "Special educational needs and disabilities",
               description: "Find out about teaching pupils with special educational needs and disabilities (SEND).",
               path: "/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs"
             )) %>
-        </ul>
+            </ul>
       </nav>
     </section>
   </section>

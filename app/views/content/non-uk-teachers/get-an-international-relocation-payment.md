@@ -3,12 +3,11 @@ title: "Get an international relocation payment"
 subcategory: If you're already a teacher
 description: |-
   Non-UK teachers in physics and languages could be eligible for financial help in the form of an international relocation payment from the UK government.
-related_content:
-    Train to teach in England as a non-UK citizen : "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
-    Teach in England if you trained outside the UK: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
-    Apply for your visa to teach in England: "/non-uk-teachers/visas-for-non-uk-teachers"
-    Apply for your visa to train to teach in England: "/non-uk-teachers/visas-for-non-uk-trainees"
 promo_content:
+cta_arrow_link:
+  teachinuk:
+    link_target: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
+    link_text: "Find out more about teaching in England if you trained outside the UK"
 navigation: 20.60
 navigation_title: Get an international relocation payment
 navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth $nonuk_internationalrelocationpayment_value$.
@@ -87,7 +86,7 @@ If you are eligible, you will receive a maximum IRP of $nonuk_internationalreloc
 
 The IRP is a 2 year trial to support non-UK citizens who want to teach in England. 2024 to 2025 is the second year of the trial.
 
-[Learn more about teaching in England if you trained outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+ $teachinuk$
 
 ## Check your eligibility
 
@@ -256,7 +255,7 @@ Any term time employment gaps will make you ineligible for the second instalment
 #### Example 1
 You start your first eligible teaching job in England in September 2024 and successfully apply for the first instalment of the IRP.  You work a full academic year of 3 terms, leaving the school in July 2025. 
 
-You successfully apply for a new IRP eligible teaching job on a one-year contract starting in September 2025. You visit family overseas for the summer holidays and return to England to take up your teaching job and apply for the second instalment of the IRP. 
+You successfully apply for a new IRP eligible teaching job on a one-year contract starting in September 2025. You visit family outside the UK for the summer holidays and return to England to take up your teaching job and apply for the second instalment of the IRP. 
 
 You are eligible for the second instalment of the IRP because you have been continuously employed as a teacher in eligible schools. 
 
@@ -288,7 +287,7 @@ You apply for the second instalment of the IRP in September 2025. You remain eli
 #### Example 2
 You arrive in the UK in September 2024 on a Youth Mobility Scheme visa. You are employed as a teacher on a contract lasting 2 academic years and successfully apply for the first instalment of the IRP. 
 
-Early in 2025, your partner moves to the UK on a Skilled Worker visa lasting 3 years. You visit family overseas during the summer holidays. As your Youth Mobility Scheme visa is limited to 2 years, you decide to apply to join your partner as a dependant on their visa instead. You return to the UK to continue your employment in September 2025 on a dependant visa.
+Early in 2025, your partner moves to the UK on a Skilled Worker visa lasting 3 years. You visit family outside the UK during the summer holidays. As your Youth Mobility Scheme visa is limited to 2 years, you decide to apply to join your partner as a dependant on their visa instead. You return to the UK to continue your employment in September 2025 on a dependant visa.
 
 You are not eligible for the second instalment of the IRP as the dependant visa does not appear on the list of eligible visas on this page.
 
@@ -383,5 +382,3 @@ Teachers who meet the eligibility requirements can also [apply for other targete
 For help with the IRP, email international.relocationpayment@education.gov.uk.
 
 Do not send us a CV or enquiries about teaching jobs. DfE does not employ teachers.
-
-[Find out more about working as a teacher in England](/non-uk-teachers/teach-in-england-if-you-trained-overseas).

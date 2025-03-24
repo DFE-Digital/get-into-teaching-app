@@ -18,26 +18,6 @@ module StructuredDataHelper
     end
   end
 
-  def blog_structured_data(page)
-    frontmatter = page.frontmatter
-    author_name = frontmatter[:author]
-
-    data = {
-      headline: frontmatter[:title],
-      image: frontmatter[:images]&.values&.map { |h| asset_pack_url(h["path"]) },
-      datePublished: frontmatter[:date],
-      keywords: frontmatter[:keywords],
-      author: [
-        {
-          "@type": author_name.present? ? "Person" : "Organization",
-          name: author_name || "Get Into Teaching",
-        },
-      ],
-    }.compact
-
-    structured_data("BlogPosting", data)
-  end
-
   def government_organization_structured_data
     data = {
       "@context": "https://schema.org",

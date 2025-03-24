@@ -4,12 +4,14 @@ heading: "Funding and support if you're a veteran"
 subcategory: Extra support
 description: |-
     Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
-related_content:
-    Explore life as a teacher: "/life-as-a-teacher"
-    Teach in further education without a degree: "https://www.teach-in-further-education.campaign.gov.uk/"
-promo_content:
-    - content/funding-and-support/promos/get-adviser-veterans-promo
+cta_adviser:
+  adviser:
+    text: "You can get dedicated guidance and support with your journey into teacher training from one of our veteran teacher training advisers. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.35
+cta_arrow_link:
+  bursaries:
+    link_target: "/funding-and-support/scholarships-and-bursaries"
+    link_text: "Find out more about postgraduate scholarships and bursaries"
 navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 calls_to_action:
@@ -47,13 +49,13 @@ You’ll receive $bursaries_veteran_annual$ in each of the last 2 years of your 
 
 You may also be eligible for a postgraduate scholarship or bursary if you’re training to teach certain subjects.
 
-[Find out more about scholarships and bursaries](/funding-and-support/scholarships-and-bursaries).
+$bursaries$
 
 All teacher training candidates are also eligible for [tuition fee and maintenance loans](/funding-and-support/tuition-fee-and-maintenance-loans).
 
 ## Get support
 
-[The Career Transition Partnership website](https://www.ctp.org.uk/) supports leavers of the armed forces as they transition from the military into civilian life.
+[The Career Transition Partnership website](https://www.modctp.co.uk/) supports leavers of the armed forces as they transition from the military into civilian life.
 
 The [MOD's Enhanced Learning Credits Scheme (ELC) website](https://www.enhancedlearningcredits.com/) promotes lifelong learning amongst members of the armed forces by providing financial support to pay for approved qualifications. You can contact them to find out about eligibility.
 
@@ -76,3 +78,9 @@ You’ll need different qualifications depending on [who you want to teach](/lif
 If you’re unsure about whether your qualifications achieved through military service meet the standard required, talk to your course provider, or a [teacher training adviser](/teacher-training-advisers).
 
 You may also be able to do a top up degree to boost your qualifications to meet the standard required. Talk to your teacher training adviser and course provider to find out about your options.
+
+## Other routes into teaching
+
+You do not need a degree and QTS to [teach in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers) or to [teach in early years](/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers). So if you want to become a teacher but are not able to get a degree, you can explore these options.
+
+$adviser$

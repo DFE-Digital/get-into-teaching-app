@@ -8,17 +8,17 @@ describe "Instrumentation", type: :request do
 
     it "increments the :app_requests_total metric" do
       metric = registry.get(:app_requests_total)
-      expect(metric).to receive(:increment).with(labels: { path: "/cookies", method: "GET", status: 200 }).once
+      expect(metric).to receive(:increment).with({ labels: { path: "/cookies", method: "GET", status: 200 } }).once
     end
 
     it "observes the :app_request_duration_ms metric" do
       metric = registry.get(:app_request_duration_ms)
-      expect(metric).to receive(:observe).with(instance_of(Float), labels: { path: "/cookies", method: "GET", status: 200 }).once
+      expect(metric).to receive(:observe).with(instance_of(Float), { labels: { path: "/cookies", method: "GET", status: 200 } }).once
     end
 
     it "observes the :app_request_view_runtime_ms metric" do
       metric = registry.get(:app_request_view_runtime_ms)
-      expect(metric).to receive(:observe).with(instance_of(Float), labels: { path: "/cookies", method: "GET", status: 200 }).once
+      expect(metric).to receive(:observe).with(instance_of(Float), { labels: { path: "/cookies", method: "GET", status: 200 } }).once
     end
   end
 
@@ -27,9 +27,9 @@ describe "Instrumentation", type: :request do
 
     it "observes the :app_render_view_ms metric" do
       metric = registry.get(:app_render_view_ms)
-      expect(metric).to receive(:observe).with(instance_of(Float), labels: {
+      expect(metric).to receive(:observe).with(instance_of(Float), { labels: {
         identifier: "cookie_preferences/show.html.erb",
-      }).once
+      } }).once
     end
   end
 
@@ -39,9 +39,9 @@ describe "Instrumentation", type: :request do
     it "observes the :app_render_view_ms metric" do
       metric = registry.get(:app_render_partial_ms)
       allow(metric).to receive(:observe)
-      expect(metric).to receive(:observe).with(instance_of(Float), labels: {
+      expect(metric).to receive(:observe).with(instance_of(Float), { labels: {
         identifier: "sections/_head.html.erb",
-      }).once
+      } }).once
     end
   end
 
@@ -50,12 +50,12 @@ describe "Instrumentation", type: :request do
 
     it "increments the :app_tta_feedback_visit_total metric" do
       metric = registry.get(:app_tta_feedback_visit_total)
-      expect(metric).to receive(:increment).with(labels: { topic: "website" }).once
+      expect(metric).to receive(:increment).with({ labels: { topic: "website" } }).once
     end
 
     it "increments the :app_tta_feedback_rating_total metric" do
       metric = registry.get(:app_tta_feedback_rating_total)
-      expect(metric).to receive(:increment).with(labels: { rating: "very_satisfied" }).once
+      expect(metric).to receive(:increment).with({ labels: { rating: "very_satisfied" } }).once
     end
   end
 
@@ -75,12 +75,12 @@ describe "Instrumentation", type: :request do
 
     it "increments the :app_csp_violations_total metric" do
       metric = registry.get(:app_csp_violations_total)
-      expect(metric).to receive(:increment).with(labels:
+      expect(metric).to receive(:increment).with({ labels:
         {
           blocked_uri: "http://document-uri.com/script.js",
           document_uri: "/path",
           violated_directive: "violated-directive",
-        }).once
+        } }).once
     end
   end
 
@@ -97,11 +97,11 @@ describe "Instrumentation", type: :request do
 
     it "increments the client metric" do
       metric = registry.get(:app_client_cookie_consent_total)
-      expect(metric).to receive(:increment).with(labels:
+      expect(metric).to receive(:increment).with({ labels:
         {
           non_functional: true,
           marketing: false,
-        }).once
+        } }).once
       post client_metrics_path, params: params.to_json
     end
 

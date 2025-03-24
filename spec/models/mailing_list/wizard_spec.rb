@@ -1,4 +1,5 @@
 require "rails_helper"
+require "digest"
 
 describe MailingList::Wizard do
   subject { described_class.new wizardstore, "postcode" }
@@ -61,7 +62,15 @@ describe MailingList::Wizard do
       allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
         receive(:add_mailing_list_member).with(request)
       allow(Rails.logger).to receive(:info)
-      allow(wizardstore).to receive(:prune!).and_call_original
+    end
+
+    context "with prune! spy" do
+      before { allow(wizardstore).to receive(:prune!) }
+
+      it "prunes the store, retaining certain attributes" do
+        subject.complete!
+        expect(wizardstore).to have_received(:prune!).with({ leave: MailingList::Wizard::ATTRIBUTES_TO_LEAVE }).once
+      end
     end
 
     it "checks the wizard is valid" do
@@ -70,15 +79,15 @@ describe MailingList::Wizard do
     end
 
     it "prunes the store, retaining certain attributes" do
+      hashed_email = Digest::SHA256.hexdigest("email@address.com")
       subject.complete!
       expect(store[uuid]).to eql({
         "first_name" => wizardstore[:first_name],
         "last_name" => wizardstore[:last_name],
+        "hashed_email" => hashed_email,
         "degree_status_id" => wizardstore[:degree_status_id],
         "preferred_teaching_subject_id" => wizardstore[:preferred_teaching_subject_id],
       })
-
-      expect(wizardstore).to have_received(:prune!).with({ leave: MailingList::Wizard::ATTRIBUTES_TO_LEAVE }).once
     end
 
     it "logs the request model (filtering sensitive attributes)" do
