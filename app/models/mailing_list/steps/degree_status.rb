@@ -7,17 +7,21 @@ module MailingList
       attribute :graduation_year, :integer
 
       validates :degree_status_id,
-                presence: true,
+                presence: { message: "Choose a degree option from the list" },
                 inclusion: { in: :degree_status_option_ids }
 
       validates :graduation_year,
+                format: {
+                  with: /\A\d{4}\z/,
+                  message: "Tell us which year you will graduate"
+                },
                 numericality: {
                   only_integer: true,
                   greater_than_or_equal_to: Time.current.year,
                   less_than_or_equal_to: Time.current.year + 10,
+                  message: "Enter the current year or a year in the future"
                 },
-                format: { with: /\A\d{4}\z/, message: "must be a four-digit year" },
-                presence: true,
+                presence: { message: "Tell us which year you will graduate" },
                 if: :requires_graduation_year?
 
       delegate :magic_link_token_used?, to: :@wizard

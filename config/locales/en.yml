@@ -601,8 +601,8 @@ en:
         mailing_list/steps/degree_status:
           attributes:
             degree_status_id:
-              blank: Select your degree stage
-              inclusion: Select your degree stage from the list
+              blank: Choose a degree option from the list
+              inclusion: Choose a degree option from the list
         mailing_list/steps/teacher_training:
           attributes:
             consideration_journey_stage_id:
