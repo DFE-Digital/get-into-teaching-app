@@ -13,6 +13,7 @@ class Crm::OptionSet
       "First year" => 222_750_003,
       "I don't have a degree and am not studying for one" => 222_750_004,
       "Other" => 222_750_005,
+      "Not yet, I'm studying for one" => 222_750_006,
     }.freeze
 
   CONSIDERATION_JOURNEY_STAGES =
