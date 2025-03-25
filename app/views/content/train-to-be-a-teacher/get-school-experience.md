@@ -16,7 +16,7 @@ calls_to_action:
 cta_mailinglist:
   mailinglist:
     text: Get free guidance and support on getting into teaching, including learning more about what teaching is like.
-navigation: 20.25
+navigation: 20.30
 navigation_title: Get school experience
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
 quote:
