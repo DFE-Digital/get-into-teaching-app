@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe CallsToAction::LifeasateacherBlockComponent, type: :component do
+RSpec.describe CallsToAction::LifeAsATeacherBlockComponent, type: :component do
   let(:title) { "Life as a teacher" }
   let(:image) { "life-as-a-teacher-block-promo.jpg" }
   let(:title_color) { "blue" }
@@ -26,7 +26,7 @@ RSpec.describe CallsToAction::LifeasateacherBlockComponent, type: :component do
 
   before { render_inline(described_class.new(**kwargs)) }
 
-  describe "rendering the lifeasateacher block component" do
+  describe "rendering the life as a teacher block component" do
     it "renders the outer div with class 'image-block'" do
       expect(page).to have_css("div.image-block")
     end

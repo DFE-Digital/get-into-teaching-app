@@ -1,5 +1,5 @@
 module CallsToAction
-  class LifeasateacherBlockComponent < ViewComponent::Base
+  class LifeAsATeacherBlockComponent < ViewComponent::Base
     attr_reader :title, :image, :title_color, :links
 
     include ContentHelper
