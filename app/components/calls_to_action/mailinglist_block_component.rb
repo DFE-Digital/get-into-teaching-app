@@ -3,10 +3,10 @@ module CallsToAction
     attr_reader :title, :image, :title_color, :text, :link_text, :link_target
 
     def initialize(
-      title: "Get personalised updates",
+      title: "Get personalised guidance",
       image: "mailing-list-block-promo.jpg",
       title_color: "yellow",
-      text: "Get free guidance and support on getting into teaching.",
+      text: "Sign up for free guidance and support on getting into teaching.",
       link_text: "Get advice in your inbox",
       link_target: "/mailinglist/signup/name"
     )

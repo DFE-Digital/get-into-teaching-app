@@ -1,10 +1,10 @@
 require "rails_helper"
 
 RSpec.describe CallsToAction::MailinglistBlockComponent, type: :component do
-  let(:title) { "Get personalised updates" }
+  let(:title) { "Get personalised guidance" }
   let(:image) { "mailing-list-block-promo.jpg" }
   let(:title_color) { "yellow" }
-  let(:text) { "Get free guidance and support on getting into teaching." }
+  let(:text) { "Sign up for free guidance and support on getting into teaching." }
   let(:link_text) { "Get advice in your inbox" }
   let(:link_target) { "/mailinglist/signup/name" }
 
