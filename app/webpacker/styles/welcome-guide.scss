@@ -619,14 +619,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           margin-top: 4em;
         }
 
-        @mixin question-decoration($content) {
-          content: $content;
-          position: absolute;
-          margin-left: -2rem;
-          font-weight: bold;
-          font-size: 1.2rem;
-        }
-
         .intro {
           padding: 2em 4em;
           font-weight: bold;
@@ -652,10 +644,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
           .q {
             font-weight: bold;
-
-            &::before {
-              @include question-decoration("Q");
-            }
           }
 
           .a {
@@ -679,10 +667,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
                 content: "\2014 "; // emdash
                 margin-right: .3em;
               }
-            }
-
-            &::before {
-              @include question-decoration("A");
             }
           }
         }

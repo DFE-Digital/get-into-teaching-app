@@ -23,7 +23,6 @@ env:
 jobs:
   build_base:
     name: Build base image
-    environment: review
     runs-on: ubuntu-latest
     outputs:
       DOCKER_IMAGE_TEST: ${{ steps.docker.outputs.DOCKER_IMAGE_TEST }}
@@ -82,23 +81,6 @@ jobs:
         env:
           DOCKER_BUILD_RECORD_UPLOAD: false
 
-      - uses: Azure/login@v2
-        if: failure() && github.ref == 'refs/heads/master'
-        with:
-            client-id: ${{ secrets.AZURE_CLIENT_ID }}
-            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Fetch secrets from key vault
-        if: failure() && github.ref == 'refs/heads/master'
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
-
       - name: Slack Notification
         if: failure() && github.ref == 'refs/heads/master'
         uses: rtCamp/action-slack-notify@master
@@ -106,11 +88,10 @@ jobs:
            SLACK_COLOR: ${{env.SLACK_ERROR}}
            SLACK_MESSAGE: 'There has been a failure building the application'
            SLACK_TITLE: 'Failure Building Application'
-           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
   build_release:
     name: Build release image
-    environment: review
     needs: [build_base]
     runs-on: ubuntu-latest
     outputs:
@@ -195,23 +176,6 @@ jobs:
         env:
           DOCKER_BUILD_RECORD_UPLOAD: false
 
-      - uses: Azure/login@v2
-        if: failure() && github.ref == 'refs/heads/master'
-        with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Fetch secrets from key vault
-        if: failure() && github.ref == 'refs/heads/master'
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
-
       - name: Slack Notification
         if: failure() && github.ref == 'refs/heads/master'
         uses: rtCamp/action-slack-notify@master
@@ -219,11 +183,10 @@ jobs:
            SLACK_COLOR: ${{env.SLACK_ERROR}}
            SLACK_MESSAGE: 'There has been a failure building the application'
            SLACK_TITLE: 'Failure Building Application'
-           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
   linting:
     name: Linting
-    environment: review
     runs-on: ubuntu-latest
     needs: [ build_base ]
     if: github.ref != 'refs/heads/master'
@@ -235,12 +198,6 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - uses: Azure/login@v2
-        with:
-            client-id: ${{ secrets.AZURE_CLIENT_ID }}
-            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Lint SCSS
         run: |-
@@ -272,19 +229,8 @@ jobs:
           docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
             ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn js-lint"
 
-      - name: Fetch secrets from key vault
-        if: failure()
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
-
   javascript_tests:
     name: Javascript Tests
-    environment: review
     runs-on: ubuntu-latest
     needs: [ build_base ]
     env:
@@ -303,7 +249,6 @@ jobs:
 
   feature_tests:
     name: Unit Tests
-    environment: review
     runs-on: ubuntu-latest
     needs: [ build_base ]
     services:
@@ -332,21 +277,6 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - uses: Azure/login@v2
-        with:
-            client-id: ${{ secrets.AZURE_CLIENT_ID }}
-            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Fetch secrets from key vault
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
       - name: Prepare DB
         run: |-
@@ -380,7 +310,6 @@ jobs:
 
   sonarscanner:
     name: Sonar Scanner
-    environment: review
     runs-on: ubuntu-latest
     needs: [ build_base, feature_tests ]
     if: github.ref != 'refs/heads/master'
@@ -392,21 +321,6 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - uses: Azure/login@v2
-        with:
-            client-id: ${{ secrets.AZURE_CLIENT_ID }}
-            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Fetch secrets from key vault
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SONAR_TOKEN=$(az keyvault secret show --name "SONAR-TOKEN" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
-            echo "::add-mask::$SONAR_TOKEN"
-            echo "SONAR_TOKEN=$SONAR_TOKEN" >> $GITHUB_OUTPUT
 
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@v8
@@ -433,7 +347,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: sonar-scanner
-           -Dsonar.login=${{ steps.keyvault-yaml-secret.outputs.SONAR_TOKEN }}
+           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
            -Dsonar.organization=dfe-digital
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
@@ -475,15 +389,6 @@ jobs:
             client-id: ${{ secrets.AZURE_CLIENT_ID }}
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
             subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Fetch secrets from key vault
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets[format('KEY_VAULT{0}', env.SECRET_SUFFIX)] }}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
       - name: Deploy to Review
         uses: ./.github/workflows/actions/deploy
@@ -534,15 +439,6 @@ jobs:
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
             subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Fetch secrets from key vault
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
-
       - name: Deploy to Development
         uses: ./.github/workflows/actions/deploy
         id: deploy
@@ -589,7 +485,7 @@ jobs:
           SLACK_COLOR: ${{env.SLACK_ERROR}}
           SLACK_TITLE: Failure in Deploy to Development
           SLACK_MESSAGE: Error deploying to development for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
   owasp:
     name: OWASP Checks
@@ -601,21 +497,6 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
-
-      - uses: Azure/login@v2
-        with:
-            client-id: ${{ secrets.AZURE_CLIENT_ID }}
-            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Fetch secrets from key vault
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
       - name: Vunerability Test
         uses: ./.github/workflows/actions/owasp
@@ -635,7 +516,7 @@ jobs:
           SLACK_COLOR: ${{env.SLACK_ERROR}}
           SLACK_TITLE: Failure in OWASP Checks
           SLACK_MESSAGE: Error running OWASP test for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
   test:
     name: Test Deployment
@@ -654,18 +535,9 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            client-id: ${{ secrets.AZURE_CLIENT_ID }}
-            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Fetch secrets from key vault
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Deploy to Test
         uses: ./.github/workflows/actions/deploy
@@ -685,7 +557,7 @@ jobs:
           SLACK_COLOR: ${{env.SLACK_ERROR}}
           SLACK_TITLE: Failure in Post-Development Deploy
           SLACK_MESSAGE: Failure with initialising Test deployment for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
   integration:
     name: Run Integration Tests on test
@@ -720,16 +592,6 @@ jobs:
             client-id: ${{ secrets.AZURE_CLIENT_ID }}
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
             subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Fetch secrets from key vault
-        uses: azure/CLI@v2
-        id: slack-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
-
 
       - name: Fetch secrets from key vault
         uses: azure/CLI@v2
@@ -836,7 +698,7 @@ jobs:
           SLACK_TITLE: Production Release ${{github.event.title}}
           SLACK_MESSAGE: Failure deploying Production release
           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
-  
+
   deploy_domains_infra:
     name: Deploy Domains Infrastructure
     needs: [production]

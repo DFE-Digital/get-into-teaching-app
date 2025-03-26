@@ -13,7 +13,6 @@ permissions:
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
-    environment: review
     steps:
       - uses: actions/checkout@v4
 
@@ -26,21 +25,6 @@ jobs:
         with:
           args: --exclude-mail --max-retries 20 app/views/content
           fail: true
-
-      - uses: Azure/login@v2
-        with:
-            client-id: ${{ secrets.AZURE_CLIENT_ID }}
-            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Fetch secrets from key vault
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
 
       - name: Read Lychee output into var
         id: lychee-output
@@ -67,4 +51,4 @@ jobs:
            SLACK_MESSAGE: |
                          ${{ steps.convert.outputs.text }}
            SLACK_TITLE: 'External link check results:'
-           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}

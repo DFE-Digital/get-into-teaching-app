@@ -187,7 +187,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You're already registered with us"
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Are you already qualified to teach?"
@@ -251,7 +251,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You're already registered with us"
-    fill_in "To verify your details, we've sent a code to your email address.", with: "654321"
+    fill_in "Enter your verification code:", with: "654321"
     click_on "Next step"
 
     expect(page).to have_text "Please enter the latest verification code"
@@ -259,7 +259,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_link "Send another code to verify my details"
     expect(page).to have_text "We've sent you another email"
 
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Are you already qualified to teach?"
@@ -282,7 +282,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You're already registered with us"
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "You've already signed up"
@@ -306,7 +306,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You're already registered with us"
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Are you already qualified to teach?"
@@ -386,7 +386,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You're already registered with us"
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "You've already signed up"

@@ -1,5 +1,6 @@
 <section class="landing youre-not-the-only-one-with-questions numbered">
-  <div class="arrow-container top mobile">
+
+  <div class="arrow-container top mobile" aria-hidden="true">
     <%=
       render ArrowComponent.new(
         width: 150,
@@ -15,7 +16,7 @@
     %>
   </div>
 
-  <div class="arrow-container top desktop">
+  <div class="arrow-container top desktop" aria-hidden="true">
     <%=
       render ArrowComponent.new(
         width: 300,
@@ -32,10 +33,6 @@
   </div>
 
   <%= image_pack_tag("static/images/content/hero-images/english.jpg", **image_alt_attribs("static/images/content/hero-images/english.jpg")) %>
-
-  <div class="section-number">
-    <span>04</span>
-  </div>
 
   <div class="text">
     <h2>
@@ -62,9 +59,9 @@
     </div>
     <div class="questions-and-answers">
       <div class="question-and-answer">
-        <p class="q">
+        <h3 class="q">
           What's the salary like?
-        </p>
+        </h3>
 
         <figure class="a">
           <blockquote>I know some people worry about the pay, especially when they start out. But my career progression has been really fast. Becoming a teacher is worth it.</blockquote>
@@ -74,9 +71,9 @@
       </div>
 
       <div class="question-and-answer">
-        <p class="q">
+        <h3 class="q">
           What’s the work balance like?
-        </p>
+        </h3>
 
         <figure class="a">
           <blockquote>I sometimes do a couple of hours at the weekend so I'm ready for the week ahead. But I try to keep my weekends free to make sure I have some real downtime.</blockquote>
@@ -86,9 +83,9 @@
       </div>
 
       <div class="question-and-answer">
-        <p class="q">
+        <h3 class="q">
           Will I have the confidence?
-        </p>
+        </h3>
 
         <figure class="a">
           <blockquote>At the start of my training I felt like I didn’t have the authority to be standing up here and asking them to behave a certain way for me&hellip; but it is a confidence thing and now going into my last placement, I feel completely confident with it&hellip; it just comes with time. There’s so much support along the way.</blockquote>
@@ -99,7 +96,7 @@
     </div>
   </div>
 
-  <div class="arrow-container bottom mobile">
+  <div class="arrow-container bottom mobile" aria-hidden="true">
     <%=
       render ArrowComponent.new(
         width: 200,
@@ -115,7 +112,7 @@
     %>
   </div>
 
-  <div class="arrow-container bottom desktop">
+  <div class="arrow-container bottom desktop" aria-hidden="true">
     <%=
       render ArrowComponent.new(
         width: 500,

@@ -36,9 +36,6 @@ runs:
         id: keyvault-yaml-secret
         with:
           inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ inputs.KEY_VAULT}}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
             HTTP_PASSWORD=$(az keyvault secret show --name "HTTP-PASSWORD" --vault-name "${{ inputs.KEY_VAULT}}" --query "value" -o tsv)
             echo "::add-mask::$HTTP_PASSWORD"
             echo "HTTP_PASSWORD=$HTTP_PASSWORD" >> $GITHUB_OUTPUT
@@ -70,12 +67,3 @@ runs:
           target: 'https://${{ steps.keyvault-yaml-secret.outputs.HTTP-USERNAME }}:${{ steps.keyvault-yaml-secret.outputs.HTTP-PASSWORD }}@${{steps.app_name.outputs.SCAN}}/'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
-
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{env.SLACK_FAILURE}}
-           SLACK_MESSAGE: 'Pipeline Failure carrying out AKS OWASP Testing on https://${{steps.app_name.outputs.SCAN}}/'
-           SLACK_TITLE: 'Failure: OWSAP Testing has failed on ${{ inputs.environment }}'
-           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}

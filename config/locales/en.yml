@@ -694,7 +694,7 @@ en:
 
     label:
       wizard_steps_authenticate:
-        timed_one_time_password: "To verify your details, we've sent a code to your email address."
+        timed_one_time_password: "Enter your verification code:"
 
       teacher_training_adviser_steps_identity:
         first_name: "First name"
@@ -826,7 +826,7 @@ en:
            We'll use this to send you a reminder and let you know about any last-minute cancellations.
       wizard_steps_authenticate:
         timed_one_time_password:
-          text: "Enter your code here:"
+          text: ""
           resent: We've sent you another email
       events_steps_personalised_updates:
         address_postcode: |-
