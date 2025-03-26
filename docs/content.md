@@ -574,7 +574,7 @@ You can use either 2 or 3 block promos at once and pick from the 9 available opt
 <%= render CallsToAction::GetSchoolExperienceBlockComponent.new %>
 <%= render CallsToAction::FindBlockComponent.new %>
 <%= render CallsToAction::ApplyBlockComponent.new %>
-<%= render CallsToAction::LifeasateacherBlockComponent.new %>
+<%= render CallsToAction::LifeAsAteacherBlockComponent.new %>
 <%= render CallsToAction::TeacherStoriesBlockComponent.new %>
 <%= render CallsToAction::GetSupportBlockComponent.new %>
 
