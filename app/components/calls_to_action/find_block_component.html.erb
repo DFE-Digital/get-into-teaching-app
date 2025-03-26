@@ -1,4 +1,4 @@
-<%= tag.div(class: "image-block") do %>
+<%= tag.div(class: "image-block promos") do %>
   <%= image_pack_tag("images/#{image}", alt: "") %>
 
   <%= tag.h2(class: "heading--overlap heading--highlight-#{title_color} heading--margin-top-0 heading-xl") do %>
@@ -6,7 +6,7 @@
   <% end %>
 
   <div class="promos">
-    <%= text %>
+    <p><%= text %></p>
     <%= link_to @link_text, @link_target, class: "button", role: "button", data: { "promo-type": "find" } if @link_text.present? && @link_target.present? %>
   </div>
 <% end %>

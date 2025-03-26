@@ -24,7 +24,6 @@ $space-between-sections: 3.7em;
 
   > * {
     flex: 1 0;
-    max-width: 100%;
 
     // this can be deleted once gap is supported by
     // Safari, it's currently only in the TP (tech preview)
@@ -76,7 +75,6 @@ $space-between-sections: 3.7em;
   width: 100%;
 
   .image-block {
-    flex: 1;
 
     img {
       width: 100%;
@@ -120,6 +118,22 @@ $space-between-sections: 3.7em;
 }
 
 .promos {
-  padding: 0 1.5em 1.5em;
-  margin-bottom: 2 * $indent-amount;
+  width:100%; 
+  box-sizing: border-box;
+
+  h2 {
+    transform: none;
+    margin-top: -20px;
+  }
+  
+  div {
+    padding: 0 1.5em 1.5em;
+    margin-bottom: 2 * $indent-amount;
+    display: flex;
+    flex-direction: column;
+
+    .button {
+      align-self: flex-start;
+    }
+  }
 }
