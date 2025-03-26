@@ -92,7 +92,7 @@ $space-between-sections: 3.7em;
 
   @include mq($from: tablet) {
     display: flex;
-    gap: $indent-amount * 1;
+    gap: $indent-amount * 0.75;
 
     .image-block {
       h2 {
