@@ -5,7 +5,7 @@
     <%= tag.span(title) %>
   <% end %>
 
-  <div class="promos">
+  <div>
     <p><%= text %></p>
     <%= link_to link_text, link_target, class: "button", role: "button", data: { "promo-type": "find" } if link_text.present? && link_target.present? %>
   </div>
