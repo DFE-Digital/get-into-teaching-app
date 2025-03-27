@@ -15,14 +15,12 @@ module MailingList
                   with: /\A\d{4}\z/,
                   message: "Tell us which year you will graduate",
                 },
-                numericality: {
-                  only_integer: true,
-                  greater_than_or_equal_to: Time.current.year,
-                  less_than_or_equal_to: Time.current.year + 10,
-                  message: "Enter the current year or a year in the future",
-                },
+                numericality: { only_integer: true },
                 presence: { message: "Tell us which year you will graduate" },
                 if: :requires_graduation_year?
+
+      validate :graduation_year_not_in_the_past, if: :requires_graduation_year?
+      validate :graduation_year_not_too_far_in_the_future, if: :requires_graduation_year?
 
       delegate :magic_link_token_used?, to: :@wizard
 
@@ -42,6 +40,18 @@ module MailingList
 
       def requires_graduation_year?
         degree_status_id == GRADUATION_YEAR_DEPENDENT_OPTION_ID
+      end
+
+      def graduation_year_not_in_the_past
+        if graduation_year.present? && graduation_year < Time.current.year
+          errors.add(:graduation_year, "Enter the current year or a year in the future")
+        end
+      end
+
+      def graduation_year_not_too_far_in_the_future
+        if graduation_year.present? && graduation_year >= Time.current.year + 10
+          errors.add(:graduation_year, "Enter a valid graduation year")
+        end
       end
     end
   end
