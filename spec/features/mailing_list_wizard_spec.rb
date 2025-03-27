@@ -109,7 +109,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
-    choose "No"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
