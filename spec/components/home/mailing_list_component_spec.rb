@@ -8,6 +8,10 @@ describe Home::MailingListComponent, type: :component do
 
   let(:component) { described_class.new }
 
+  before do
+    allow_any_instance_of(GOVUKDesignSystemFormBuilder::FormBuilder).to receive(:object).and_return(nil)
+  end
+
   it { is_expected.to have_css(".home-mailing-list") }
   it { is_expected.to have_css("h2") }
   it { is_expected.to have_css("form") }
