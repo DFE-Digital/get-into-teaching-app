@@ -6,7 +6,7 @@ RSpec.describe CallsToAction::EventsBlockComponent, type: :component do
   let(:title_color) { "yellow" }
   let(:text) { "Speak to teachers, expert advisers and teacher training providers at an in-person or online event." }
   let(:link_text) { "Find an event" }
-  let(:link_target) { "/events" }
+  let(:link_target) { "/events/about-get-into-teaching-events" }
 
   let(:kwargs) do
     {

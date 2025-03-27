@@ -8,7 +8,7 @@ module CallsToAction
       title_color: "yellow",
       text: "Speak to teachers, expert advisers and teacher training providers at an in-person or online event.",
       link_text: "Find an event",
-      link_target: "/events"
+      link_target: "/events/about-get-into-teaching-events"
     )
       super
       @title = title
