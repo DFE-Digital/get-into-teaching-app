@@ -25,7 +25,7 @@
       <%= render "mailing_list/steps/completed/shared/get_an_adviser_low_commitment" %>
     <% end %>
 
-    <% if graduate? || (studying? && low_commitment?) %>
+    <% if graduate? || (studying? && high_commitment?) %>
       <%= render "mailing_list/steps/completed/shared/find_a_teacher_training_course" %>
     <% end %>
 
