@@ -8,8 +8,8 @@ describe PickListItemsApiPresenter do
     let(:allowed_ids) { [222_750_000, 222_750_003] }
     let(:api_response) do
       [
-        instance_double(GetIntoTeachingApiClient::PickListItem, id: 222_750_000, value: "Allowed Stage 1"),
         instance_double(GetIntoTeachingApiClient::PickListItem, id: 222_750_003, value: "Allowed Stage 2"),
+        instance_double(GetIntoTeachingApiClient::PickListItem, id: 222_750_000, value: "Allowed Stage 1"),
         instance_double(GetIntoTeachingApiClient::PickListItem, id: 222_750_999, value: "Not Allowed Stage"),
       ]
     end
@@ -18,11 +18,11 @@ describe PickListItemsApiPresenter do
       allow(mock_api).to receive(:get_candidate_journey_stages).and_return(api_response)
     end
 
-    it "returns only items with allowed IDs" do
+    it "returns only items with allowed IDs in the correct order" do
       result = presenter.get_candidate_journey_stages
 
       expect(result.size).to eq(2)
-      expect(result.map(&:id)).to match_array(allowed_ids)
+      expect(result.map(&:id)).to eq(allowed_ids)
     end
   end
 end
