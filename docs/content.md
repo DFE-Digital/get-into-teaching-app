@@ -5,47 +5,52 @@ This documentation aims to be a reference for content editors that want to make 
 ## Table of Contents
 
 * [Setting up Codespaces and Github](#setting-up-codespaces-and-github)
-* [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
+* [Finding a page/content to edit](#finding-a-pagecontent-to-edit)
 * [Tone of voice](#tone-of-voice)
-* [Content Editing Tips/Info](#content-editing-tips-info)
+* [Content editing info/tips](#content-editing-tips-info)
+    * [Using Markdown](#using-markdown)
     * [Headings](#headings)
     * [Frontmatter](#frontmatter)
     * [Breadcrumbs](#breadcrumbs)
     * [Links](#links)
-    * [Prevent Indexing](#prevent-indexing)
-    * [Adding a Document or Image](#adding-a-document-or-image)
-    * [Calls to Action](#calls-to-action)
-    * [Adviser (CTA) component](#adviser-cta-component)
-    * [Routes (CTA) component](#routes-cta-component)
-    * [Mailing list (CTA) component](#mailing-list-cta-component)
-    * [Green arrow link (CTA) component](#green-arrow-link-cta-component)
+    * [Prevent indexing](#prevent-indexing)
+    * [Adding a document, image or video](#adding-a-document-or-image)
+    * [Hero images and text](#hero-images-and-text)
+    * [Alt text](#alt-text)
+    * [Adding YouTube videos](#adding-youtube-videoes)
+    * [iframe](#iframe)
+    * [Calls to action](#calls-to-action)
+    * [Adviser CTA component](#adviser-cta-component)
+    * [Routes CTA component](#routes-cta-component)
+    * [Mailing list CTA component](#mailing-list-cta-component)
+    * [Green arrow link CTA component](#green-arrow-link-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
     * [Insets and expander components for non-UK content](#insets-and-expander-components-for-non-uk-content)
-    * [Creating a partial](#creating-a-partial)
-    * [YouTube Video](#youtube-video)
-    * [Hero](#hero)
+    * [Using the same content across multiple pages - partial](#using-the-same-content-across-multiple-pages-partials)
     * [Values](#values)
 * [Search engine optimisation](#search-engine-optimisation)
 * [Creating a new page](#creating-a-new-page)
-* [Creating a subject page](#creating-a-subject-page)
-* [Creating an inspirational page](#creating-an-inspirational-page)
+  * [Creating a subject page](#creating-a-subject-page)
+  * [Creating an inspirational page](#creating-an-inspirational-page)
 * [Navigation](#navigation)
-    * [Main Navigation](#main-navigation)
-    * [Category Pages](#category-pages)
-* [Build errors](#build-errors)
 * [Internship providers](#internship-providers)
 * [Preview a change](#preview-a-change)
 * [Saving a change](#saving-a-change)
-* [If you add something to the wrong branch](#wrong-branch)
 * [Redirect URLs](#redirect-urls)
 * [Finding links on the site](#links-site)
-* [Resolving merge conflicts](#merge-conflicts)
+* [When things go wrong]
+  * [Build errors](#build-errors)
+  * [If you add something to the wrong branch](#wrong-branch)
+  * [Resolving merge conflicts](#merge-conflicts)
+
 
 ## Setting up Codespaces and Github
 
-You will need to download and set up an account on Github and Visual Studio Code with help from the team. Once you're ready:
+You will need to download and set up an account on Github and Visual Studio Code with help from the team. 
+
+Once you're ready:
 
 1. Go to the master branch link: https://github.com/DFE-Digital/get-into-teaching-app
 2. Select the green button '<> Code' and create a branch
@@ -55,17 +60,15 @@ You will need to download and set up an account on Github and Visual Studio Code
 6. This will open the file on Visual Studio Code
 7. When you run a codespace it will make up a branch name: **when you next go on to github and want to run a codespace, you should use the same branch every time. You do not need to make a new one every time.**
 
-### Tips
-- Most of the content sits under 'app > views > content'
-- When starting a new branch, make sure to always start with the latest version of 'master' by starting from this link: https://github.com/DFE-Digital/get-into-teaching-app
-- In the folders, blue arrow icons are the pages and the content, the red <> icons are components
-- Markdown tutorial is useful when learning to write content in Github https://www.markdowntutorial.com/
-
 ## Finding a Page/Content to Edit
 
 When you want to edit content on the website the first step is to find out where that content resides in the [repository](https://github.com/DFE-Digital/get-into-teaching-app).
 
-The majority of web pages on the site are within the [/app/views/content](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content) directory; this reflects the top-level pages of the website (including the home page). If, for example, you wanted to edit [the 'Teacher pay' page](https://getintoteaching.education.gov.uk/life-as-a-teacher/pay-and-benefits/teacher-pay) content you would edit the file [/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md). The structure here mimics the URL of the pages (the home page is a special case):
+The majority of web pages on the site are within the [/app/views/content](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content) folders; this reflects the top-level pages of the website (including the home page). In the folders, blue arrow icons are the pages and the content, the red <> icons are components. 
+
+If, for example, you wanted to edit [the 'Teacher pay' page](https://getintoteaching.education.gov.uk/life-as-a-teacher/pay-and-benefits/teacher-pay) content you would edit the file [/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md). 
+
+The structure here mimics the URL of the pages (the home page is a special case):
 
 | URL                                     | Content File                                                 |
 | ---------------------------------       | ---------------------------------------------------------    |
@@ -92,14 +95,19 @@ Some useful resources include:
 * [GOV.UK style guide](https://www.gov.uk/guidance/style-guide/a-to-z)
 * [Department for Education style guide](https://design.education.gov.uk/design-system/style-guide)
 
-In some cases, policy teams may also ask us to word things in a certain way or include specific information. Unless there are commercial reasons why we need to use certain language, we can amend requested wording as needed to be consistent with the Get Into Teaching tone of voice.
-## Content Editing Info/Tips
+In some cases, policy teams may ask us to word things in a certain way or include specific information. Unless there are commercial reasons why we need to use certain language, we can amend requested wording as needed to be consistent with the Get Into Teaching tone of voice.
+
+## Content editing info/tips
+
+### Using Markdown
 
 The majority of pages on the website are formatted in Markdown, which is a lightweight markup language designed for creating and formatting text.
 
+Markdown tutorial is useful when learning to write content in Github https://www.markdowntutorial.com/
+
 There is a [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) that serves as a good reference on how to standard formatting, such as making something **bold** or *italic*. In conjunction with page frontmatter (see below) we can do some extra GiT-specific things in our Markdown, which this section aims to explain.
 
-**You'll need to check if the page is in markdown or html** as some pages have been coded in html. Depending on which it is you need to make sure you're consistent, so for e.g. if you have a section in markdown you can't add a link using html code it needs to also be in markdown.
+**You'll need to check if the page is in markdown or html** as some pages have been coded in html. Depending on which it is you need to make sure you're consistent, so for e.g. if you have a section in markdown you cannot add a link using html code it needs to also be in markdown.
 
 ### Headings
 
@@ -117,7 +125,7 @@ render HeadingComponent.new(
 
 ### Frontmatter
 
-Whilst the content of a page can often be expressed in Markdown there are some additional aspects/metadata that need to be defined separately (such as the title of the page, SEO content, etc). We use frontmatter for this purpose, which is a section of Yaml at the top of each Markdown content file:
+Whilst the content of a page can often be expressed in Markdown there are some additional aspects/metadata that need to be defined separately (such as the title of the page, content for search engine optimisation, etc). We use frontmatter for this purpose, which is a section of Yaml at the top of each Markdown content file:
 
 ```yaml
 ---
@@ -145,14 +153,14 @@ breadcrumbs: false
 
 ### Links
 
-Whilst links are just standard Markdown its worth noting that if you are linking internally to another web page on the GiT website you should only include the path, for example `[find an event](/events)` instead of `[find an event](https://getintoteaching.education.gov.uk/events)`. We do this so that the links work on all our test environments as well as production.
+Whilst links are just standard Markdown, it's worth noting that if you are linking internally to another web page on the GIT website you should only include the path, for example `[find an event](/events)` instead of `[find an event](https://getintoteaching.education.gov.uk/events)`. We do this so that the links work on all our test environments as well as production.
 
 
-### Prevent Indexing
+### Prevent indexing
 
 Sometimes we don't want our content pages to be indexed by Google and other search engines (often when we're A/B testing the variant should not be indexed). You can achieve this by adding a `noindex: true` entry to the page frontmatter.
 
-### Adding a Document or Image
+### Adding a document, image or video
 
 If you need to include a link to a document or embed an image in your page content you'll need to first add the file to the repository. Any documents should be placed in `/app/webpacker/documents` and images in `/app/webpacker/images/content` (under a subdirectory if suitable). You can then reference the files in your Markdown content (note the paths used to reference here will differ to the location of the file - use `/media` instead of `/app/webpacker`):
 
@@ -163,6 +171,24 @@ If you need to include a link to a document or embed an image in your page conte
 ```
 
 Images should be appropriately scaled and compressed prior to adding them to the website.
+
+#### Hero images and text
+
+Most of the web pages on the site have a hero section that can be customised in frontmatter; the hero section is at the top of the page and usually consists of a large image, heading and some text - these are the available options, though not all are required:
+
+```yaml
+heading: Hero heading
+subtitle: Hero subtitle
+subtitle_link: /subtitle/link
+subtitle_button: Button text
+image: /path/to/image.jpg
+title_paragraph: Paragraph of text
+title_bg_color: yellow
+hero_bg_color: white
+hero_blend_content: true
+```
+
+Hero images are sized at 1000 pixels wide by 667 high and the mobile and tablet versions are 600 x 400 pixels. You can use a photo editing site online such as Photopea to resize images.
 
 #### Alt text
 
@@ -181,15 +207,41 @@ The key (`"static/images/content/hero-images/0032.jpg"`) is the **primary** vari
 * `alt:` - the alt text for the image, wrapped in quotes
 * `variants` - a list of **other versions of the same image**. The alternate versions can be thumbnails or crops and are considered alternates if the same `alt` text can be applied to them as the primary variant
 
-#### Hero images
+#### Adding YouTube videos
 
-Hero images are sized at 1000 pixels wide by 667 high and the mobile and tablet versions are 600 x 400 pixels. You can use a photo editing site online such as Photopea to resize images.
+To add a YouTube video to your content you need to know the video ID. You can find this out by visiting the video on [youtube.com](https://www.youtube.com/) and looking in the address bar of your browser (it is in the format `watch?v=<video_id>`).
 
-### Calls to Action
+Once you have the video ID you can declare the video in the frontmatter of your page and reference it in the content:
+
+```yaml
+---
+youtube_video:
+  return-to-teaching-advisers-video:
+    id: 2NrLm_XId4k
+    title: A video about what Return to Teaching Advisers do
+---
+
+# My page
+
+$return-to-teaching-advisers-video$
+```
+
+#### iframe
+
+When adding an iFrame elemet as part of Markdown content or a HTML page we should ensure it has an appropriate `title` attribute that explains the contents of the iFrame (in most of our cases we are showing a video). For example:
+
+```
+<iframe
+  title="A video about returning to teaching"
+  ...
+></iframe>
+```
+
+## Calls to action
+
+We use several calls to action (CTAs) across the website. These highlight important information and links to users.
 
 On some pages we want to include one or more calls to action; instead of copy/pasting the HTML for these sections we can specify and configure them in the frontmatter and then reference them in our content.
-
-#### Main Content
 
 You can configure and reference calls to action as part of your main content:
 
@@ -243,56 +295,216 @@ The above example would render out as follows:
 
 <img src="images/content_cta_examples.png" alt="Example Content CTAs" style="width: 500px;">
 
-### Accessibility
 
-#### Link text
+### Adviser CTA component
+
+You can use the adviser CTA component to create a call to action to invite users to sign up for the Get an adviser service. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
+
+* title
+* text
+* image
+* link_text
+* link_target
+* classes
+* border
+* heading_tag
+
+```yaml
+---
+cta_adviser:
+  adviser1:
+    title: "Optional title"
+    text: "Optional text"
+    image: "/optional/path/to/image"
+    link_text: "Optional link text"
+    link_target: "/optional/path"
+    classes: ["class1", "class2", "class3"]
+    border: true
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
+---
+
+# My page
+
+$adviser1$
+```
+Alternatively, if you need to insert an adviser component in an erb file, you can call it like this:
+
+```yaml
+<%= render CallsToAction::AdviserComponent.new(
+  title: "Optional title",
+  text: "Optional text",
+  image: "/optional/path/to/image",
+  link_text: "Optional link text",
+  link_target: "/optional/path",
+  classes: ["class1", "class2", "class3"],
+  border: true,
+  heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
+)%>
+```
+
+### Routes CTA component
+
+You can use the routes CTA component to create a call to action to invite users to find their route into teaching. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
+
+* title
+* text
+* image
+* link_text
+* link_target
+* classes
+* border
+* heading_tag
+
+```yaml
+---
+cta_routes:
+  routes:
+    title: "Optional title"
+    text: "Optional text"
+    image: "static/images/routes.png"
+    link_text: "Optional link text"
+    link_target: "/optional/path"
+    classes: ["class1", "class2", "class3"]
+    border: true,
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
+---
+```
+
+### Mailing list CTA component
+
+You can use the Mailing list CTA component to create a call to action to invite users to sign up to the mailing list. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
+
+* title
+* text
+* image
+* link_text
+* link_target
+* classes
+* border
+* heading_tag
+
+```yaml
+---
+cta_mailinglist:
+  mailinglist:
+    title: "Optional title"
+    text: "Optional text"
+    image: "static/images/routes.png"
+    link_text: "Optional link text"
+    link_target: "/optional/path"
+    classes: ["class1", "class2", "class3"]
+    border: true,
+    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
+---
+
+# My page
+
+$mailinglist$
+```
+Alternatively, if you need to insert a mailing lists component in an erb file, you can call it like this:
+
+```yaml
+<%= render CallsToAction::MailinglistComponent.new(
+  title: "Optional title",
+  text: "Optional text",
+  image: "static/images/image.jpg",
+  link_text: "Optional link text",
+  link_target: "/optional/path",
+  classes: ["class1", "class2", "class3"],
+  border: true,
+  heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
+)%>
+```
+
+### Green arrow link CTA component
+
+You can use the green arrow link CTA component to create a more prominent hyperlink call to action. 
+
+You should use the component:
+
+* when it's the next logical step on users' journeys
+* more than once on a page
+
+You should not use the component:
+
+* on every page, if there is not a suitable use for it
+* to direct to pages that are not useful for most people e.g. veterans, SKITT
+* to direct to external sites like UCAS or Teach First
+
+#### How to use the green arrow component
+
+The green arrow links should not have a full-stop after the text. 
+
+If you are using a green arrow link on a page, then do not link full sentences on a separate line as well.
+
+It takes the following parameters and both should be specified:
+
+* link_text
+* link_target
+
+```yaml
+---
+cta_arrow_link:
+  events:
+    link_target: "/events/about-get-into-teaching-events"
+    link_text: "Find a Get Into Teaching event"
+---
+
+# My page
+
+$events$
+
+```
+Alternatively, if you need to insert a green arrow component in an erb file, you can call it like this:
+
+```yaml
+
+<%= render CallsToAction::ArrowLinkComponent.new(link_target: "/events/about-get-into-teaching-event", link_text: "Find a Get Into Teaching event") %>
+
+```
+
+
+## Accessibility
+
+### Link text
 
 All links should be descriptive and make sense in isolation.
  
-
 Avoid:
 * including punctuation in link text 
-* anchor links
+* anchor links to content on the same page, or another page
 * using the same link text to link to different places
 * linking to the same place more than once, particularly if using different link text
-* having two or more hyperlinks close together on the page
+* having 2 or more hyperlinks close together on the page
 
 By default, all links will open in the same tab. You should only open a link in a new tab if the user will risk losing key information on the page. For example, a link to more information in a form. 
 
-Links that direct to external sites (e.g. non-GOV.UK) should explicitly say their destination. 
+Links that direct to external sites (e.g. non-GOV.UK) should explicitly say their destination and should open in a new tab. 
 
 [Find more guidance about writing accessible link text on GOV.UK](https://www.gov.uk/guidance/content-design/links).
 
-#### Headings
+### Headings
 
 The correct H1, H2, H3, H4 heading tags must be used to structure content. They should also be used in sequential order. For example, you must not skip from a H1 to using a H3. 
 
 Heading text should also be unique and easy to distinguish from other headings on the page.
 
-#### Contractions
+### Contractions
 
 Contractions can make content easier to read, but should be used consistently. 
 
 Positive contractions like you'll, it's and we've can be used on Get Into Teaching. 
 
-Do not use negative contractions.
+When writing content for non-UK teachers and trainees do not use contractions. 
 
-#### iframe
+Do not use negative contractions anywhere on the site (see the GOV.UK style guide for more information).
 
-When adding an iFrame elemet as part of Markdown content or a HTML page we should ensure it has an appropriate `title` attribute that explains the contents of the iFrame (in most of our cases we are showing a video). For example:
 
-```
-<iframe
-  title="A video about returning to teaching"
-  ...
-></iframe>
-```
-
-### Insets and expander components for non-UK content
+## Insets and expander components for non-UK content
 
 If you need to call out something important in a page and differentiate it from the surrounding text, you can use the inset or expander components. Specify the component in the frontmatter and then include it anywhere in the page. We use the purple colour for non-UK content and the purple-white colour for non-UK content on a grey background.
 
-#### Inset component for non-UK content
+### Inset component for non-UK content
 
 You do not need to include both a heading and title in the inset text.
 The heading tag will default to a h2, but you can override this by optionally specifying the `heading_tag` parameter.
@@ -339,7 +551,7 @@ If the content is for a specific group of non-UK citizens, for example, 'Refugee
 If you need to call out non-UK content several times on a page, or you need to call out a singular large amount of non-UK content, you can use the expander.  
 
 
-#### Expander component for non-UK content
+### Expander component for non-UK content
 
 You can use the expander component to highlight content for a non-UK audience, which is rendered as an expandable inset box. Specify the component in the frontmatter and then include it anywhere in the page. Only the title and text parameters are required:
 
@@ -376,9 +588,9 @@ If you need to insert an expander into an erb file:
     link_url: "/non-uk-teachers/non-uk-qualifications",
   ) %>
 ```
-### Creating a partial 
+## Using the same content across multiple pages (partials)
 
-If the content you are creating will be used elsewhere on the site in the exact same format, it may be a good idea to create a partial. This is a snippet of code that you will be able to render in one line. This saves you have having to write the same things again and again. It also means maintenance of the site is easier as any changes you make can be done in one central place rather having to keep track of what information is on what pages.
+If the content you're creating will be used elsewhere on the site in the exact same format, you may want to create a partial. This is a snippet of code that you can render in one line. This saves you have having to write the same things in more than one place on the website. It also means maintenance of the site is easier as any changes you make can be done in one central place rather having to keep track of what information is on what pages.
 
 To create a partial go to the /app/views/content/shared folder then either select an appropriate file or create your own folder. Then create a file. In the file place the HTML code that you would like to replicate on multiple pages. 
 
@@ -443,203 +655,9 @@ This means that you can use the following code over many pages so that each page
 
 ```
 
-### Adviser (CTA) component
-
-You can use the Adviser (Call to Action) component to create a call to action to invite users to sign up for the Get an Adviser service. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
-
-* title
-* text
-* image
-* link_text
-* link_target
-* classes
-* border
-* heading_tag
-
-```yaml
----
-cta_adviser:
-  adviser1:
-    title: "Optional title"
-    text: "Optional text"
-    image: "/optional/path/to/image"
-    link_text: "Optional link text"
-    link_target: "/optional/path"
-    classes: ["class1", "class2", "class3"]
-    border: true
-    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
----
-
-# My page
-
-$adviser1$
-```
-Alternatively, if you need to insert an adviser component in an erb file, you can call it like this:
-
-```yaml
-<%= render CallsToAction::AdviserComponent.new(
-  title: "Optional title",
-  text: "Optional text",
-  image: "/optional/path/to/image",
-  link_text: "Optional link text",
-  link_target: "/optional/path",
-  classes: ["class1", "class2", "class3"],
-  border: true,
-  heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
-)%>
-```
-
-### Routes (CTA) component
-
-You can use the Routes (Call to Action) component to create a call to action to invite users to find their route into teaching. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
-
-* title
-* text
-* image
-* link_text
-* link_target
-* classes
-* border
-* heading_tag
-
-```yaml
----
-cta_routes:
-  routes:
-    title: "Optional title"
-    text: "Optional text"
-    image: "static/images/routes.png"
-    link_text: "Optional link text"
-    link_target: "/optional/path"
-    classes: ["class1", "class2", "class3"]
-    border: true,
-    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
----
-```
-
-### Mailing list (CTA) component
-
-You can use the Mailing list (Call to Action) component to create a call to action to invite users to sign up to the mailing list. You can use the component directly in markdown files, or in ERB-HTMl partials. It takes the following parameters and all are optional - if not specified a default value will be used:
-
-* title
-* text
-* image
-* link_text
-* link_target
-* classes
-* border
-* heading_tag
-
-```yaml
----
-cta_mailinglist:
-  mailinglist:
-    title: "Optional title"
-    text: "Optional text"
-    image: "static/images/routes.png"
-    link_text: "Optional link text"
-    link_target: "/optional/path"
-    classes: ["class1", "class2", "class3"]
-    border: true,
-    heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
----
-
-# My page
-
-$mailinglist$
-```
-Alternatively, if you need to insert a mailing lists component in an erb file, you can call it like this:
-
-```yaml
-<%= render CallsToAction::MailinglistComponent.new(
-  title: "Optional title",
-  text: "Optional text",
-  image: "static/images/image.jpg",
-  link_text: "Optional link text",
-  link_target: "/optional/path",
-  classes: ["class1", "class2", "class3"],
-  border: true,
-  heading_tag: (optional as the default is h2, or specify an option: "h1", "h2", "h3, "h4")
-)%>
-```
-
-### Green arrow link (CTA) component
-
-You can use the green arrow link (call to action) component to create a more prominent hyperlink call to action. You can use the component:
-
-* when it's the next logical step on users' journeys
-* more than once on a page
-
-The component should not be used:
-
-* on every page, if there is not a suitable use for it
-* to direct to pages that are not useful for most people e.g. veterans, SKITT
-* to direct to external sites like UCAS or Teach First
-
-It takes the following parameters and both should be specified:
-
-* link_text
-* link_target
-
-```yaml
----
-cta_arrow_link:
-  events:
-    link_target: "/events/about-get-into-teaching-events"
-    link_text: "Find a Get Into Teaching event"
----
-
-# My page
-
-$events$
-
-```
-Alternatively, if you need to insert a green arrow component in an erb file, you can call it like this:
-
-```yaml
-
-<%= render CallsToAction::ArrowLinkComponent.new(link_target: "/events/about-get-into-teaching-event", link_text: "Find a Get Into Teaching event") %>
-
-```
-
-### YouTube video
-
-To add a YouTube video to your content you need to know the video ID. You can find this out by visiting the video on [youtube.com](https://www.youtube.com/) and looking in the address bar of your browser (it is in the format `watch?v=<video_id>`).
-
-Once you have the video ID you can declare the video in the frontmatter of your page and reference it in the content:
-
-```yaml
----
-youtube_video:
-  return-to-teaching-advisers-video:
-    id: 2NrLm_XId4k
-    title: A video about what Return to Teaching Advisers do
----
-
-# My page
-
-$return-to-teaching-advisers-video$
-```
-
-### Hero
-
-Most of the web pages on the site have a hero section that can be customised in frontmatter; the hero section is at the top of the page and usually consists of a large image, heading and some text - these are the available options, though not all are required:
-
-```yaml
-heading: Hero heading
-subtitle: Hero subtitle
-subtitle_link: /subtitle/link
-subtitle_button: Button text
-image: /path/to/image.jpg
-title_paragraph: Paragraph of text
-title_bg_color: yellow
-hero_bg_color: white
-hero_blend_content: true
-```
-
 ### Values
 
-You can use the Values system to maintain key values (e.g. salaries, bursaries, fees etc) in a single file, and then use these values throughout the site's content. Set up a list of values in one or more YML files stored in the `config/values/` folder (or sub-folder), for example `config/values/salaries.yml`:
+You can use the values system to maintain key values (e.g. salaries, bursaries, fees etc) in a single file, and then use these values throughout the site's content. Set up a list of values in one or more YML files stored in the `config/values/` folder (or sub-folder), for example `config/values/salaries.yml`:
 
 ```yaml
 salaries:
@@ -688,9 +706,9 @@ A list of the current values available on the site can be viewed at the `/values
 
 Values should be named using only _lowercase_ characters `a` to `z`, the numbers `0` to `9`, and the underscore `_` character. Unsupported characters such as the hyphen `-` are converted into underscores.
 
-## Search engine optimisation
+## Search engine optimisation (SEO)
 
-Whenever we add a new page to the GIT website, we need to make sure it’s optimised for search engines, this is known as search engine optimisation (SEO). This means that the page has the best chance possible of ranking in a high position in the search results when people type a related query in.
+Whenever we add a new page to the GIT website, we need to make sure it’s optimised for search engines, this is known as search engine optimisation or SEO. This means that the page has the best chance possible of ranking in a high position in the search results when people type a related query in.
 
 In Autumn 2024, an SEO consultant provided us with guidelines for how to improve the SEO on the website.
 
@@ -795,6 +813,7 @@ To see how keyword targeting is performing:
 
 It can take weeks or even months for changes to have an impact, so check the above regularly.
 
+
 ## Creating a new page
 
 **Make sure you start by creating a new branch on master**
@@ -811,13 +830,13 @@ To do this you will need to:
  Navigate to the left hand side bar, where you want the new page to sit
  Right hand click and select 'New file'
 
-When you name the file you will have to name it depending on whether the file in going to be written in html or markdown. If the file is markdown then put .md at the end of the file, e.g. when-to-apply.md
+When you name the file you'll have to name it depending on whether the file in going to be written in html or markdown. If the file is markdown then put .md at the end of the file, e.g. when-to-apply.md
 
 If the file is html, start the file name with an underscore and then put .html.erb at the end of the file, e.g. _categories.html.erb
 
-There are different reasons why you might want a file to be a specific type which you can discuss with a developer or interaction designer. Generally it is more straight forward to write something in markdown so this is used for most content files. However, html can be styled more easily so it is possible the file has been written in this way to feature a specific component such as a styled quote. 
+There are different reasons why you might want a file to be a specific type which you can discuss with a developer or interaction designer. Generally it's more straight forward to write something in Markdown so this is used for most content files. However, html can be styled more easily so it is possible the file has been written in this way to feature a specific component such as a styled quote. 
 
-If you have created a markdown page - you will need to fill in the following details at the top of the markdown file. You will not need to fill in the navigation details if the page sits in a sub category, e.g. Life as a teacher.
+If you have created a Markdown page - you will need to fill in the following details at the top of the Markdown file. You will not need to fill in the navigation details if the page sits in a sub category, e.g. Life as a teacher.
 
 title: title will appear in the browser tab
 
@@ -831,10 +850,7 @@ navigation_title: This is the title that will appear in the tiles
 
 navigation_description: This is the description that will appear in the tiles
 
-keywords: use Semrush to put keywords here, do a bulletpointed list using dashes like below:
-  - adviser
-  - advisor
-  - ITT
+keywords: we used to use SemRush to generate keywords to put here. We are in the process of deciding whether to remove the search box from the website.
 
 Here is a blank version to take and fill in:
 
@@ -846,9 +862,10 @@ Here is a blank version to take and fill in:
 - navigation_description: 
 - keywords: 
 
-## Creating a subject page
+### Creating a subject page
 
 To create a new subject page, go to the folder content/life-as-a-teacher/explore-subjects. Then copy one of the current folders inside, e.g. English.
+
 Right click the folder and rename it to the subject you want to create. 
 
 Inside the new folder you have created you will have 1 file:
@@ -858,14 +875,14 @@ This is where the content for the page will sit.
 
 Next, copy and paste a previous subject markdown (.md) file and rename it with the subject (e.g., business.md)
 
-#### File changes:
+### File changes:
 
 The main content of subject pages should be written in HTML format in the article file. The structure of the subject pages are very similar so you should be able to use the subject you have copied as a guide.
 
 Change all of the information in the article file that is not in a partial to be relevant to your subject. 
 Then, you can optionally change the quote partials to be more relevant to your subject. Finally, look up the bursary and scholarship entitlement to the subject you are teaching. Then, change the information to the correct partial. All of the other information on the page should use the same partials so do not need to be edited. 
 
-Then update the markdown file to edit the hero banner image, hero banner text (title and title_paragraph) and the page’s card component. You will also need to ensure the links to the html erb files are updated.
+Then update the Markdown file to edit the hero banner image, hero banner text (title and title_paragraph) and the page’s card component. You will also need to ensure the links to the html erb files are updated.
 
 Subject.md
 
@@ -894,7 +911,7 @@ content:
 ---
 ```
 
-## Creating an inspiration page
+### Creating an inspiration page
 
 Create a folder under ‘content/life-as-a-teacher/sub-category’
 
@@ -905,7 +922,7 @@ _header.html.erb
 
 Also copy and paste a previous ‘.md’ file and rename it with the title (e.g abigails-career-progression-story.md). This should live inside the subcategory folder, but not within the same folder as the article and header files.
 
-#### File changes:
+### File changes:
 
 _header.html.erb – no changes needed
 
@@ -954,7 +971,7 @@ And copy and paste an exiting card such as:
 
 Update the title, description and image as required.
 
-## Add a quote with image component
+### Add a quote with image component
 
 Add this code to a html file:
 
@@ -974,7 +991,7 @@ Add this code to a html file:
 ```
 You can edit the colours used such as "yellow", "pink", "green", "blue" and "purple". You can also specify whether you want the quote marks to appear by using true or false in the quotes parameter. For shorter quotes its better to use an image with a height cropped to around 300 pixels.
 
-When using in a markdown file, copy the above code into a new html file and link to the file in the markdown code, in the same way you would when creating a subject page:
+When using in a Markdown file, copy the above code into a new html file and link to the file in the Markdown code, in the same way you would when creating a subject page:
 
 ```html
 content: 
@@ -983,9 +1000,9 @@ content:
 
 ## Navigation
 
-There are two types of navigation components on the website; the main navigation (at the top of every page) and category pages (a page where the navigation component is in the content as a group of cards). They are both configured in a similar way.
+There are 2 types of navigation components on the website; the main navigation (at the top of every page) and category pages (a page where the navigation component is in the content as a group of cards). They are both configured in a similar way.
 
-#### Main Navigation
+### Main Navigation
 
 The main navigation appears at the top of every page and contains links to key pages of the website. For a page to appear in the main navigation it must be declared as a "root" page, which means it is in the `content` directory and not one of its subdirectories. For example `/content/my-important-page.md` can appear in the main navigation, however `/content/subdirectory/my-important-page.md` cannot.
 
@@ -1001,7 +1018,7 @@ The `navigation_title` is the text of the link that will appear in the main navi
 
 As an example, if there is a navigation page with `navigation: 13` and you want your new page to appear immediately after it, then you could use `navigation: 14` (if another page is already using `14` you can use decimals for greater flexibility, so `13.1`).
 
-#### Category Pages
+## Category Pages
 
 A category page displays a number of cards that the user can click on in order to navigate to related content. The category page itself must specify a specific layout in the frontmatter:
 
@@ -1040,7 +1057,79 @@ content:
   - content/main-category-page/partial
 ```
 
-In this example the partial file would be declared in `content/main-category-page/_partial.html.erb` (note the underscore prefix and the file type). Its likely that a developer will create the partial, but using the frontmatter you can easily pull in and re-arrange existing content partials.
+In this example the partial file would be declared in `content/main-category-page/_partial.html.erb` (note the underscore prefix and the file type). It's likely that a developer will create the partial, but using the frontmatter you can easily pull in and re-arrange existing content partials.
+
+## Internship providers
+
+#### Warning! Do not edit the `teaching-internship-providers.md` page directly.
+
+Unlike the other content pages the internship providers page is a fully generated page. 
+This is because occasionally we are sent a new spreadsheet to update the list of internship providers on the `teaching-internship-providers.md` page and the numbers can be large, and need to be grouped by provider region and sorted, which would be a large and time consuming manual task. We have a rake task to make this easy to do, but this means it should not be edited directly. Instead any changes to content for the page should be made to the `lib/tasks/support/teaching-internship-providers.md.erb` file and then the page should be regenerated:
+
+- Run `bundle exec rake teaching_internship_providers:generate` in your terminal.
+
+When updating not just the text content within the file, but the actual list of providers (which will be provided as an XLSX file), you will need to update the CSV file that the rake task uses to generate the page. To do this:
+- Export the XLSX to CSV with filename `internship_providers.csv`
+- Place it in the `lib/tasks/support` directory.
+- Run `bundle exec rake teaching_internship_providers:generate`.
+
+
+## Saving a change
+When you have made a change in Visual Studio Code and want to save your work.
+1. Save the change by CTRL-S
+2. This will cause a notification on the source control
+3. You will need to type a name for this change in the 'message' box
+4. Click the plus button that appears on the change - this will stage the change
+5. Click 'sync changes'
+6. Commit the changes - make sure you name each commit in the box above the blue box where it says commit. You should name each commit to the specific change being made. This makes it easier to review any changes in the pull request and is useful for auditing.
+7. This will then open a pull request, you will need to fill in the details for this and click 'Create pull request' if you want to create one. But you may not want to create a pull request until you've made all of your changes so you don't have to publish the branch or create a pull request until you're ready
+8. You can monitor pull requests and assign reviewers here https://github.com/DFE-Digital/get-into-teaching-app/pulls
+
+## Preview a change
+1. Go to the terminal tab on Visual Studio Code **or** go the top bar of your laptop - click terminal - click 'new terminal'
+2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
+3. When it has finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000. This will open the browser
+4. If you're not able to preview, try typing **bundle install** in the terminal followed by **yarn install** as this will update the libraries
+5. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
+6. Go to the url: http://127.0.0.1:3000 and insert a / on the end
+7. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
+8. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
+The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
+9. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it. But you don't need to commit the change to be able to view it.
+
+## Redirect URLs
+
+A redirect is a way to send users to a different page to the URL they requested. We set up redirects where we do things like change the URL of a page, or remove a page. **If you need to set up a redirect from an external URL, these are handled in the routes file; you'll need developer support to create or amend these.**
+
+To set up a redirect for a Get Into Teaching page, go to the 'redirects.yml' file. This file contains a list of all existing redirects. 
+
+To make add a new redirect:
+
+1. Redirects are grouped under headings, based on the content they relate to. Check if the redirect you want to add fits under an existing heading. If not, create a new one.
+2. Add a new line following the same pattern to set up the redirect. The first link should be the page you want to redirect from (your old URL), and the second link should be the page you want to link to (your new URL). Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
+3. Search the redirect file for any other redirects that link to the page you want to redirect from. You should update these as well to prevent creating a chain of redirects.
+
+```yaml
+---
+# Life as a teacher new section
+  "/is-teaching-right-for-me": "/life-as-a-teacher"
+---
+```
+
+## Finding links on the site
+You can find everywhere a page is linked to by:
+1. Go to [Github](https://github.com/DFE-Digital/get-into-teaching-app)
+2. There is a search bar in the top right hand side
+3. You should search a pages path here ie. /subjects/maths
+4. The system will search for whereever this link is in the code across the website
+
+## Resolving comments
+People can add comments to pull requests in Github which makes it easier to see feedback and keep track of changes. You can also tag people and reply to their comments.
+
+Once you've addressed a comment click on resolve. This hides it from the conversation making it easier to keep track of what's been updated.
+
+## When things go wrong
+If you cannot fix an issue yourself, we have a Slack channel where we flag problems with the devs git-dev-help.
 
 ## Build errors
 
@@ -1049,7 +1138,7 @@ When editing content you may find that the pull request build fails, meaning you
 The first step is finding out what the build error is:
 
 * Scroll down to the 'checks' section of your pull request.
-* Find the check that has failed (it will have a red cross next to it and there may be multiple) .
+* Find the check that has failed (it will have a red cross next to it and there may be multiple)
 * Open the 'details' link next to the check(s) that have failed and you should be automatically taken to the failure details, often highlighted in red.
 * Cross-reference this error with the errors below to discover the issue and resolution.
 
@@ -1083,85 +1172,17 @@ This error means the filename contains one or more invalid characters.
 
 #### Resolution
 
-Check your filename only contains lower case characters, numbers and underscores.
-
-## Internship providers
-
-#### Warning! Do not edit the `teaching-internship-providers.md` page directly.
-
-Unlike the other content pages the internship providers page is a fully generated page. 
-This is because occasionally we are sent a new spreadsheet to update the list of internship providers on the `teaching-internship-providers.md` page and the numbers can be large, and need to be grouped by provider region and sorted, which would be a large and time consuming manual task. We have a rake task to make this easy to do, but this means it should not be edited directly. Instead any changes to content for the page should be made to the `lib/tasks/support/teaching-internship-providers.md.erb` file and then the page should be regenerated:
-
-- Run `bundle exec rake teaching_internship_providers:generate` in your terminal.
-
-When updating not just the text content within the file, but the actual list of providers (which will be provided as an XLSX file), you will need to update the CSV file that the rake task uses to generate the page. To do this:
-- Export the XLSX to CSV with filename `internship_providers.csv`
-- Place it in the `lib/tasks/support` directory.
-- Run `bundle exec rake teaching_internship_providers:generate`.
-
-
-## Saving a change
-When you have made a change in Visual Studio Code and want to save your work.
-1. Save the change by CTRL-S
-2. This will cause a notification on the source control
-3. You will need to type a name for this change in the 'message' box
-4. Click the plus button that appears on the change - this will stage the change
-5. Click 'sync changes'
-6. Commit the changes - make sure you name each commit in the box above the blue box where it says commit. You should name each commit to the specific change being made. This makes it easier to review any changes in the pull request and is useful for auditing.
-7. This will then open a pull request, you will need to fill in the details for this and click 'Create pull request' if you want to create one. But you may not want to create a pull request until you've made all of your changes so you don't have to publish the branch or create a pull request until you're ready
-8. You can monitor pull requests and assign reviewers here https://github.com/DFE-Digital/get-into-teaching-app/pulls
-
-## Preview a change
-1. Go to the terminal tab on Visual Studio Code **or** Go the top bar of your laptop - click terminal - click 'new terminal'
-2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
-3. When it has finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000. This will open the browser
-4. If you're not able to preview, try typing **bundle install** in the terminal followed by **yarn install** as this will update the libraries
-5. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
-6. Go to the url: http://127.0.0.1:3000 and insert a / on the end
-7. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
-8. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
-The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
-9. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it. But you don't need to commit the change to be able to view it.
+Check your filename only contains lowercase characters, numbers and underscores.
 
 ## If you add something to the wrong branch
 
 You can change the branch you've put changes under by going onto the pull request from the branch.
 At the top there will be a line saying something like: 'you merged 1 commit into page-titles from Cookies-policy-update 3 hours ago'
+
 If you want to move where this branch sits, click on the first title 'page titles' and it will produce a drop down
 Select the correct place from the drop down.
 
-## Redirect URLs
-
-A redirect is a way to send users to a different page to the URL they requested. We set up redirects where we do things like change the URL of a page, or remove a page. **If you need to set up a redirect from an external URL, these are handled in the routes file; you'll need developer support to create or amend these.**
-
-To set up a redirect for a Get Into Teaching page, go to the 'redirects.yml' file. This file contains a list of all existing redirects. 
-
-To make add a new redirect:
-
-1. Redirects are grouped under headings, based on the content they relate to. Check if the redirect you want to add fits under an existing heading. If not, create a new one.
-2. Add a new line following the same pattern to set up the redirect. The first link should be the page you want to redirect from (your old URL), and the second link should be the page you want to link to (your new URL). Make sure the line is indented (the fine, white line that is currently running on the left hand side of all urls).
-3. Search the redirect file for any other redirects that link to the page you want to redirect from. You should update these as well to prevent creating a chain of redirects.
-
-```yaml
----
-# Life as a teacher new section
-  "/is-teaching-right-for-me": "/life-as-a-teacher"
----
-```
-
-## Finding links on the site
-You can find everywhere a page is linked to by:
-1. Go to [Github](https://github.com/DFE-Digital/get-into-teaching-app)
-2. There is a search bar in the top right hand side
-3. You should search a pages path here ie. /subjects/maths
-4. The system will search for whereever this link is in the code across the website
-
-## Resolving comments
-People can add comments to pull requests in Github which makes it easier to see feedback and keep track of changes. You can also tag people and reply to their comments.
-
-Once you've addressed a comment click on resolve. This hides it from the conversation making it easier to keep track of what's been updated.
-
-## Merge Conflicts
+## Merge conflicts
 Merge conflicts arise when two different branches alter the same content and both compete to have their changes merged into a common branch (usually `master`). Merge conflicts can be reduced by regularly keeping your branch synchronised with the `master` branch. Also try to co-ordinate with colleagues to ensure that you are not working on the same files/content as they are.
 
 Simple merge conflicts can be resolved in the Github text editor by preserving the content which should persist and manually deleting the content which should lapse. For full steps please see:
