@@ -576,6 +576,12 @@ The component should not be used:
 * to direct to pages that are not useful for most people e.g. veterans, SKITT
 * to direct to external sites like UCAS or Teach First
 
+#### How to use the green arrow component
+
+The green arrow links should not have a full-stop after the text. 
+
+If you are using a green arrow link on a page then do not link full sentences on a separate line as well.
+
 It takes the following parameters and both should be specified:
 
 * link_text
