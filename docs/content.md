@@ -566,19 +566,22 @@ Alternatively, if you need to insert a mailing lists component in an erb file, y
 
 ### Block promos
 
-You can use either 2 or 3 block promos at once and pick from the 9 available options:
+You can use either 2 or 3 block promos at once and pick from the 10 available options:
 
-<%= render CallsToAction::MailinglistBlockComponent.new %>
-<%= render CallsToAction::RoutesBlockComponent.new %>
-<%= render CallsToAction::AdviserBlockComponent.new %>
-<%= render CallsToAction::GetSchoolExperienceBlockComponent.new %>
-<%= render CallsToAction::FindBlockComponent.new %>
-<%= render CallsToAction::ApplyBlockComponent.new %>
-<%= render CallsToAction::LifeAsAteacherBlockComponent.new %>
-<%= render CallsToAction::TeacherStoriesBlockComponent.new %>
-<%= render CallsToAction::GetSupportBlockComponent.new %>
+| Promo | Code |
+| -------- | ------- |
+| Mailing list | <%= render CallsToAction::MailinglistBlockComponent.new %> |
+| Routes | <%= render CallsToAction::RoutesBlockComponent.new %> |
+| Advisers | <%= render CallsToAction::AdviserBlockComponent.new %> |
+| School experience | <%= render CallsToAction::GetSchoolExperienceBlockComponent.new %> |
+| Find | <%= render CallsToAction::FindBlockComponent.new %> |
+| Apply | <%= render CallsToAction::ApplyBlockComponent.new %> |
+| Events | <%= render CallsToAction::EventsBlockComponent.new %> |
+| Life as a teacher links | <%= render CallsToAction::LifeAsAteacherBlockComponent.new %> |
+| Teacher stories links | <%= render CallsToAction::TeacherStoriesBlockComponent.new %> |
+| Get support links | <%= render CallsToAction::GetSupportBlockComponent.new %> |
 
-to add them to a html file, use the above code inside the following container. Here you can also specify if you want different text to the default text:
+To add them to a html file, use the above code inside the following container. Here you can also specify if you want different text to the default text:
 
 ```html
 <div class="row">
