@@ -85,6 +85,8 @@ It’s important that the content on Get Into Teaching uses a consistent tone of
 
 When writing new content, you can look at the language we use on other pages to help keep it consistent. For example, we always refer to children in schools as pupils, rather than students.
 
+When writing content for non-UK teachers and trainees do not use contractions, for example, use 'you will', instead of 'you'll'. Do not use negative contractions anywhere on the site (see the GOV.UK style guide for more information).
+
 Some useful resources include:
 
 * GIT brand book and messaging matrix (available on Sharepoint)
@@ -93,13 +95,14 @@ Some useful resources include:
 * [Department for Education style guide](https://design.education.gov.uk/design-system/style-guide)
 
 In some cases, policy teams may also ask us to word things in a certain way or include specific information. Unless there are commercial reasons why we need to use certain language, we can amend requested wording as needed to be consistent with the Get Into Teaching tone of voice.
+
 ## Content Editing Info/Tips
 
 The majority of pages on the website are formatted in Markdown, which is a lightweight markup language designed for creating and formatting text.
 
 There is a [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) that serves as a good reference on how to standard formatting, such as making something **bold** or *italic*. In conjunction with page frontmatter (see below) we can do some extra GiT-specific things in our Markdown, which this section aims to explain.
 
-**You'll need to check if the page is in markdown or html** as some pages have been coded in html. Depending on which it is you need to make sure you're consistent, so for e.g. if you have a section in markdown you can't add a link using html code it needs to also be in markdown.
+**You'll need to check if the page is in markdown or html** as some pages have been coded in html. Depending on which it is you need to make sure you're consistent, so for e.g. if you have a section in markdown you cannot add a link using html code it needs to also be in markdown.
 
 ### Headings
 
@@ -580,7 +583,7 @@ The component should not be used:
 
 The green arrow links should not have a full-stop after the text. 
 
-If you are using a green arrow link on a page then do not link full sentences on a separate line as well.
+If you are using a green arrow link on a page, then do not link full sentences on a separate line as well.
 
 It takes the following parameters and both should be specified:
 
