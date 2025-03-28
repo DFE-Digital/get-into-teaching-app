@@ -22,19 +22,19 @@ RSpec.describe WelcomeHelper, type: :helper do
     degree_statuses = [
       Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate),
       Crm::OptionSet.lookup_by_key(:degree_status, :not_yet_i_m_studying_for_one),
-      Crm::OptionSet.lookup_by_key(:degree_status, :i_don_t_have_a_degree_and_am_not_studying_for_one)
+      Crm::OptionSet.lookup_by_key(:degree_status, :i_don_t_have_a_degree_and_am_not_studying_for_one),
     ]
 
     consideration_journey_stages = [
       Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :it_s_just_an_idea),
-      Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :i_m_very_sure_and_think_i_ll_apply)
+      Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :i_m_very_sure_and_think_i_ll_apply),
     ]
 
     truthy_combinations = [
       [
         Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate),
-        Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :it_s_just_an_idea)
-      ]
+        Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :it_s_just_an_idea),
+      ],
     ]
 
     all_combinations = degree_statuses.product(consideration_journey_stages)
@@ -49,62 +49,62 @@ RSpec.describe WelcomeHelper, type: :helper do
 
     context "with a non-matching combination" do
       all_combinations.each do |degree_status, consideration_stage|
-        unless truthy_combinations.include?([degree_status, consideration_stage])
-          it "returns false for degree_status: #{degree_status} and consideration_stage: #{consideration_stage}" do
-            expect(show_welcome_guide?(degree_status: degree_status, consideration_journey_stage: consideration_stage)).to be false
-          end
+        next if truthy_combinations.include?([degree_status, consideration_stage])
+
+        it "returns false for degree_status: #{degree_status} and consideration_stage: #{consideration_stage}" do
+          expect(show_welcome_guide?(degree_status: degree_status, consideration_journey_stage: consideration_stage)).to be false
         end
       end
     end
   end
 
-    describe '#high_commitment?' do
-    it 'returns true for consideration_journey_stage 222750003' do
-      expect(high_commitment?(consideration_journey_stage: 222750003)).to be true
+  describe "#high_commitment?" do
+    it "returns true for consideration_journey_stage 222750003" do
+      expect(high_commitment?(consideration_journey_stage: 222_750_003)).to be true
     end
 
-    it 'returns false for other consideration_journey_stage values' do
-      expect(high_commitment?(consideration_journey_stage: 123456789)).to be false
-    end
-  end
-
-  describe '#low_commitment?' do
-    it 'returns true for consideration_journey_stage 222750000' do
-      expect(low_commitment?(consideration_journey_stage: 222750000)).to be true
-    end
-
-    it 'returns false for other consideration_journey_stage values' do
-      expect(low_commitment?(consideration_journey_stage: 123456789)).to be false
+    it "returns false for other consideration_journey_stage values" do
+      expect(high_commitment?(consideration_journey_stage: 123_456_789)).to be false
     end
   end
 
-  describe '#graduate?' do
-    it 'returns true for degree_status 222750000' do
-      expect(graduate?(degree_status: 222750000)).to be true
+  describe "#low_commitment?" do
+    it "returns true for consideration_journey_stage 222750000" do
+      expect(low_commitment?(consideration_journey_stage: 222_750_000)).to be true
     end
 
-    it 'returns false for other degree_status values' do
-      expect(graduate?(degree_status: 123456789)).to be false
-    end
-  end
-
-  describe '#studying?' do
-    it 'returns true for degree_status 222750006' do
-      expect(studying?(degree_status: 222750006)).to be true
-    end
-
-    it 'returns false for other degree_status values' do
-      expect(studying?(degree_status: 123456789)).to be false
+    it "returns false for other consideration_journey_stage values" do
+      expect(low_commitment?(consideration_journey_stage: 123_456_789)).to be false
     end
   end
 
-  describe '#no_degree?' do
-    it 'returns true for degree_status 222750004' do
-      expect(no_degree?(degree_status: 222750004)).to be true
+  describe "#graduate?" do
+    it "returns true for degree_status 222750000" do
+      expect(graduate?(degree_status: 222_750_000)).to be true
     end
 
-    it 'returns false for other degree_status values' do
-      expect(no_degree?(degree_status: 123456789)).to be false
+    it "returns false for other degree_status values" do
+      expect(graduate?(degree_status: 123_456_789)).to be false
+    end
+  end
+
+  describe "#studying?" do
+    it "returns true for degree_status 222750006" do
+      expect(studying?(degree_status: 222_750_006)).to be true
+    end
+
+    it "returns false for other degree_status values" do
+      expect(studying?(degree_status: 123_456_789)).to be false
+    end
+  end
+
+  describe "#no_degree?" do
+    it "returns true for degree_status 222750004" do
+      expect(no_degree?(degree_status: 222_750_004)).to be true
+    end
+
+    it "returns false for other degree_status values" do
+      expect(no_degree?(degree_status: 123_456_789)).to be false
     end
   end
 
