@@ -11,6 +11,7 @@ module MailingList
       degree_status_id
       sub_channel_id
       hashed_email
+      graduation_year
     ].freeze
 
     self.steps = [
