@@ -1,0 +1,22 @@
+module CallsToAction
+  class MailinglistBlockComponent < ViewComponent::Base
+    attr_reader :title, :image, :title_color, :text, :link_text, :link_target
+
+    def initialize(
+      title: "Get personalised guidance",
+      image: "mailing-list-block-promo.jpg",
+      title_color: "yellow",
+      text: "Sign up for free guidance and support on getting into teaching.",
+      link_text: "Get advice in your inbox",
+      link_target: "/mailinglist/signup/name"
+    )
+      super
+      @title = title
+      @image = image
+      @title_color = title_color
+      @text = text
+      @link_text = link_text
+      @link_target = link_target
+    end
+  end
+end
