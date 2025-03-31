@@ -54,9 +54,13 @@
 
     <h2 class="heading--box-blue">Take the next step</h2>
     <p>If teaching sounds like the career for you, you can find out more about <a href="/steps-to-become-a-teacher">how to become a teacher</a>.</p>
-
+</div>
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::MailinglistBlockComponent.new %>
+      <%= render CallsToAction::RoutesBlockComponent.new %>
+      <%= render CallsToAction::AdviserBlockComponent.new %>
+    </section>
   </section>
-<%= render CallsToAction::MailinglistComponent.new(
-    text: "Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.",
-  ) %>
 </div>

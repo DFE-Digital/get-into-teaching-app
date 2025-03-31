@@ -13,5 +13,4 @@ keywords:
 content: 
   - "content/life-as-a-teacher/teaching-as-a-career/turning-a-tough-lesson-into-a-success/header" 
   - "content/life-as-a-teacher/teaching-as-a-career/turning-a-tough-lesson-into-a-success/article"
-  - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
 ---

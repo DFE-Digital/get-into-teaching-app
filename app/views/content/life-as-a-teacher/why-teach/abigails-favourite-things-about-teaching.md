@@ -14,6 +14,5 @@ keywords:
 content: 
   - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/header" 
   - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/article"
-  - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
 ---
 

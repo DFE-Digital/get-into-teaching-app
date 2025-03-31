@@ -22,3 +22,16 @@
       <p>I also completed the National Professional Qualification for Senior Leadership (NPQSL), which has involved running a project across the whole school. This has given me the opportunity to work more closely with the senior leadership team and has helped strengthen my relationships with colleagues in other departments in the school.</p>
   </section>
 </div>
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::MailinglistBlockComponent.new(
+      text: "Sign up for free guidance and support on getting into teaching, including learning more about career progression as a teacher."
+      ) %>
+      <%= render CallsToAction::RoutesBlockComponent.new %>
+      <%= render CallsToAction::AdviserBlockComponent.new(
+      text: "An adviser with years of teaching experience can tell you more about a career in teaching."
+      ) %>
+    </section>
+  </section>
+</div>

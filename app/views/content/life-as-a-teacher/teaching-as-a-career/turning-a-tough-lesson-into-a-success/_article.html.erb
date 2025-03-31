@@ -16,3 +16,16 @@
     <p>That lesson had been quite a challenge for me to turn around, but when I saw them start to turn up to play rugby in their own time, I really felt like I’d achieved something.</p>
   </section>
 </div>
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::MailinglistBlockComponent.new(
+      text: "Sign up for free guidance and support on getting into teaching, including learning more about career progression as a teacher."
+      ) %>
+      <%= render CallsToAction::RoutesBlockComponent.new %>
+      <%= render CallsToAction::AdviserBlockComponent.new(
+      text: "An adviser with years of teaching experience can tell you more about a career in teaching."
+      ) %>
+    </section>
+  </section>
+</div>

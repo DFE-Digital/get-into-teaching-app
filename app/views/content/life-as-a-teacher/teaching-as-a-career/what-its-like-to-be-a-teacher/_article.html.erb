@@ -42,8 +42,18 @@
  <%= render 'content/shared/quotes/quote_food_helen' %>
  <h2 class="heading--box-blue">Find out more about becoming a teacher</h2>
 <p>If teaching sounds like the career for you, find out more about <a href="/steps-to-become-a-teacher">how to become a teacher</a>.</p>
-</section>
-<section>
-<%= render CallsToAction::AdviserComponent.new(
-    text: "An adviser with years of teaching experience can answer any questions you have about teaching and help you decide if it is the career for you. Chat by phone, text or email, as little or as often as you need.") %>
-</section>
+  </section>
+</div>
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::MailinglistBlockComponent.new(
+      text: "Sign up for free guidance and support on getting into teaching, including learning more about career progression as a teacher."
+      ) %>
+      <%= render CallsToAction::RoutesBlockComponent.new %>
+      <%= render CallsToAction::AdviserBlockComponent.new(
+      text: "An adviser with years of teaching experience can tell you more about a career in teaching."
+      ) %>
+    </section>
+  </section>
+</div>

@@ -4,11 +4,8 @@ heading: "Teachers' pension scheme"
 description: |-
   The teachers' pension scheme is one of the most generous in the country. Learn more about the benefits of the teachers' pension scheme.
 image: false
-content:
+promo_content:
   - "content/life-as-a-teacher/pay-and-benefits/block-promos"
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.
 keywords:
   - Teachers pension
   - Pension

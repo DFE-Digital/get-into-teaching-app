@@ -13,5 +13,4 @@ keywords:
 content: 
   - "content/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story/header" 
   - "content/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story/article"
-  - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
 ---

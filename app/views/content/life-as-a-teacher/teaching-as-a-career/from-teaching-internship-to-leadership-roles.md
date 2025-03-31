@@ -14,5 +14,4 @@ keywords:
 content: 
   - "content/life-as-a-teacher/teaching-as-a-career/from-teaching-internship-to-leadership-roles/header" 
   - "content/life-as-a-teacher/teaching-as-a-career/from-teaching-internship-to-leadership-roles/article"
-  - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
 ---
