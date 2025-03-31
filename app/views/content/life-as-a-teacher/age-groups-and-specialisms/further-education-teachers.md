@@ -2,8 +2,8 @@
 title: Teach in further education
 article_classes: ['longform']
 image: "static/images/content/hero-images/0031.jpg"
-content:
-  - "content/life-as-a-teacher/age-groups-and-specialisms/block-promos"
+promo_content:
+  - "content/life-as-a-teacher/age-groups-and-specialisms/block-promos-simple"
 description: |-
   Find out how to teach in further education in England. Explore which qualifications you need and how to find further education teacher training.
 keywords:

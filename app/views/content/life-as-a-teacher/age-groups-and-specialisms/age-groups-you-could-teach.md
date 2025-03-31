@@ -3,9 +3,6 @@ title: Age groups you could teach
 heading: Age groups you could teach
 description: |-
   Explore the key stages and ages you could teach, whether that's primary, secondary, early years, college, or pupils with special educational needs.
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including learning more about the age groups you could teach.
 cta_arrow_link:
   subjects:
     link_target: "/life-as-a-teacher/explore-subjects"
@@ -16,8 +13,8 @@ cta_arrow_link:
   send:
     link_target: "/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs"
     link_text: "Learn more about teaching pupils with special educational needs and disabilities (SEND)"
-content:
-  - "content/life-as-a-teacher/age-groups-and-specialisms/block-promos"
+promo_content:
+  - "content/life-as-a-teacher/age-groups-and-specialisms/block-promos-age-groups"
 ---
 
 It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. You might need specific training or qualifications in some areas. This page explains more about the different options.

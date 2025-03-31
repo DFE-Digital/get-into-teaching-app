@@ -1,0 +1,12 @@
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::MailinglistBlockComponent.new %>
+      <%= render CallsToAction::FindBlockComponent.new(
+        text: "Explore teacher training courses with a SEND specialism",
+        link_target: "https://find-teacher-training-courses.service.gov.uk/results?send_courses=true&applications_open=true&order=course_name_ascending"
+      ) %>
+      <%= render CallsToAction::AdviserBlockComponent.new %>
+    </section>
+  </section>
+</div>

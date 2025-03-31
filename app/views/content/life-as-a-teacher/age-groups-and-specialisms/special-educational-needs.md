@@ -1,14 +1,11 @@
 ---
 title: "Teach pupils with special educational needs and disabilities (SEND)"
 heading: "Teach pupils with special educational needs and disabilities (SEND)"
-content:
-  - "content/life-as-a-teacher/age-groups-and-specialisms/block-promos"
+promo_content:
+  - "content/life-as-a-teacher/age-groups-and-specialisms/block-promos-send"
 description: |-
   Find out how you can teach pupils with special educational needs and disabilities (SEND) and how to become a special educational needs coordinator (SENCO).
 image: "static/images/content/hero-images/0032.jpg"
-cta_adviser:
-  adviser:
-    text: Talk to an adviser with years of teaching experience about opportunities to teach pupils with SEND. Chat by phone, text or email, as little or as often as you need.
 cta_arrow_link:
   find:
     link_target: "https://find-teacher-training-courses.service.gov.uk/results?send_courses=true&applications_open=true&order=course_name_ascending"
@@ -96,4 +93,3 @@ An MQSI will give you the skills needed to recognise any barriers to learning th
 You'll learn about teaching pupils with SEND in any initial teacher training course. However, if you're particularly interested in this area, some training providers offer courses with a SEND specialism.
 
 $find$
-$adviser$
