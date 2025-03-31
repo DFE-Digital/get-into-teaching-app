@@ -17,7 +17,7 @@ describe MailingList::Wizard do
       "consideration_journey_stage_id" => consideration_journey_stage_id,
       "preferred_teaching_subject_id" => preferred_teaching_subject_id.to_s,
       "accepted_policy_id" => "789",
-      "graduation_year" => "2025"
+      "graduation_year" => "2025",
     } }
   end
   let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
@@ -59,7 +59,7 @@ describe MailingList::Wizard do
         preferred_teaching_subject_id: wizardstore[:preferred_teaching_subject_id],
         welcome_guide_variant: variant,
         accepted_policy_id: wizardstore[:accepted_policy_id],
-        graduation_year: wizardstore[:graduation_year]
+        graduation_year: wizardstore[:graduation_year],
       })
     end
 
@@ -94,7 +94,7 @@ describe MailingList::Wizard do
         "degree_status_id" => wizardstore[:degree_status_id],
         "consideration_journey_stage_id" => wizardstore[:consideration_journey_stage_id],
         "preferred_teaching_subject_id" => wizardstore[:preferred_teaching_subject_id],
-        "graduation_year" => wizardstore[:graduation_year]
+        "graduation_year" => wizardstore[:graduation_year],
       })
     end
 
