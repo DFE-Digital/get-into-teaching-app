@@ -2,6 +2,8 @@
 title: "Become an early years teacher"
 image: false
 backlink: "../"
+content:
+  - "content/life-as-a-teacher/age-groups-and-specialisms/block-promos"
 keywords:
  - EYITT
  - Early

@@ -1,6 +1,8 @@
 ---
 title: "Teach pupils with special educational needs and disabilities (SEND)"
 heading: "Teach pupils with special educational needs and disabilities (SEND)"
+content:
+  - "content/life-as-a-teacher/age-groups-and-specialisms/block-promos"
 description: |-
   Find out how you can teach pupils with special educational needs and disabilities (SEND) and how to become a special educational needs coordinator (SENCO).
 image: "static/images/content/hero-images/0032.jpg"

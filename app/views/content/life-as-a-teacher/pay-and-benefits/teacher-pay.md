@@ -4,6 +4,8 @@ heading: "Teacher pay"
 description: |-
   All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 backlink: "../../"
+content:
+  - "content/life-as-a-teacher/pay-and-benefits/block-promos"
 cta_mailinglist:
   mailinglist:
     text: Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.

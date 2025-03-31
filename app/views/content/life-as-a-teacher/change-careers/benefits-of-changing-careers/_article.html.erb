@@ -26,7 +26,15 @@
       heading_color: "pink",
     ) %>
   </div>
-  <%= render CallsToAction::AdviserComponent.new(
-    text: "An adviser with years of teaching experience can help you change careers to become a teacher. Chat by phone, text, or email as little or often as you need.",
-  ) %>
+</div>
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::MailinglistBlockComponent.new %>
+      <%= render CallsToAction::RoutesBlockComponent.new %>
+      <%= render CallsToAction::AdviserBlockComponent.new(
+      text: "An adviser with years of teaching experience can help you change careers to become a teacher."
+      ) %>
+    </section>
+  </section>
 </div>

@@ -15,3 +15,14 @@
     <p>I now have job security, opportunities for progression, new skills and a postgraduate qualification. Not to mention the new car that isn’t falling apart, a well-deserved holiday booked, paid-off credit cards and a little put away for a rainy day.</p>
   </section>
 </div>
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::MailinglistBlockComponent.new %>
+      <%= render CallsToAction::RoutesBlockComponent.new %>
+      <%= render CallsToAction::AdviserBlockComponent.new(
+      text: "An adviser with years of teaching experience can help you change careers to become a teacher."
+      ) %>
+    </section>
+  </section>
+</div>

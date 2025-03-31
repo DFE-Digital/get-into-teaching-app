@@ -14,5 +14,4 @@ keywords:
 content: 
   - "content/life-as-a-teacher/change-careers/making-a-career-change-to-teaching/header" 
   - "content/life-as-a-teacher/change-careers/making-a-career-change-to-teaching/article"
-  - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
 ---
