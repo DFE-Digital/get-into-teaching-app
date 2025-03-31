@@ -38,9 +38,9 @@ $space-between-sections: 3.7em;
   }
 
   @include mq($until: tablet) {
-    flex-direction: column;
+    flex-direction: column; 
     margin: 1em;
-  }
+    }
 
   &__directory {
     border: 3px solid $purple;
@@ -92,7 +92,7 @@ $space-between-sections: 3.7em;
 
   @include mq($from: tablet) {
     display: flex;
-    gap: $indent-amount * .5;
+    gap: $indent-amount * 0.75;
 
     .image-block {
       h2 {
@@ -111,6 +111,27 @@ $space-between-sections: 3.7em;
   &.homepage-feature {
     @supports (display: grid) {
       margin: 1em $px-either-side-of-content 0;
+    }
+  }
+}
+
+.promos {
+  width:100%; 
+  box-sizing: border-box;
+
+  h2 {
+    transform: none;
+    margin-top: -0.75em;
+  }
+  
+  div {
+    padding: 0 1.5em 1.5em;
+    margin-bottom: 2 * $indent-amount;
+    display: flex;
+    flex-direction: column;
+
+    .button {
+      align-self: flex-start;
     }
   }
 }

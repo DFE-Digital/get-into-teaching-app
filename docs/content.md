@@ -24,6 +24,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Routes CTA component](#routes-cta-component)
     * [Mailing list CTA component](#mailing-list-cta-component)
     * [Green arrow link CTA component](#green-arrow-link-cta-component)
+    * [Block promos](#block-promos)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
     * [Accessibility](#accessibility)
@@ -87,6 +88,8 @@ If you are looking to edit content associated with a form element in particular 
 It’s important that the content on Get Into Teaching uses a consistent tone of voice.
 
 When writing new content, you can look at the language we use on other pages to help keep it consistent. For example, we always refer to children in schools as pupils, rather than students.
+
+When writing content for non-UK teachers and trainees do not use contractions, for example, use 'you will', instead of 'you'll'. Do not use negative contractions anywhere on the site (see the GOV.UK style guide for more information).
 
 Some useful resources include:
 
@@ -462,7 +465,49 @@ Alternatively, if you need to insert a green arrow component in an erb file, you
 <%= render CallsToAction::ArrowLinkComponent.new(link_target: "/events/about-get-into-teaching-event", link_text: "Find a Get Into Teaching event") %>
 
 ```
+### Block promos
 
+You can use either 2 or 3 block promos at once and pick from the 10 available options:
+
+| Promo | Code |
+| -------- | ------- |
+| Mailing list | <%= render CallsToAction::MailinglistBlockComponent.new %> |
+| Routes | <%= render CallsToAction::RoutesBlockComponent.new %> |
+| Advisers | <%= render CallsToAction::AdviserBlockComponent.new %> |
+| School experience | <%= render CallsToAction::GetSchoolExperienceBlockComponent.new %> |
+| Find | <%= render CallsToAction::FindBlockComponent.new %> |
+| Apply | <%= render CallsToAction::ApplyBlockComponent.new %> |
+| Events | <%= render CallsToAction::EventsBlockComponent.new %> |
+| Life as a teacher links | <%= render CallsToAction::LifeAsAteacherBlockComponent.new %> |
+| Teacher stories links | <%= render CallsToAction::TeacherStoriesBlockComponent.new %> |
+| Get support links | <%= render CallsToAction::GetSupportBlockComponent.new %> |
+
+To add them to a html file, use the above code inside the following container. Here you can also specify if you want different text to the default text:
+
+```html
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::MailinglistBlockComponent.new %>
+      <%= render CallsToAction::RoutesBlockComponent.new %>
+      <%= render CallsToAction::AdviserBlockComponent.new(
+          title: "Example title",
+          image: "image.jpg",
+          title_color: "green",
+          text: "Example text",
+          link_text: "Example link",
+          link_target: "link/example"
+      ) %>
+    </section>
+  </section>
+</div>
+```
+If you want to use these inside a markdown file, create a seperate html file and use the above code inside it. Then on your markdown file you can link to it like this example:
+
+```yaml
+content:
+  - "content/shared/subject-pages/block-promo"
+```
 
 ## Accessibility
 
@@ -653,6 +698,42 @@ This means that you can use the following code over many pages so that each page
   <p>Having relevant A levels can show your subject knowledge, if you do not have a degree in <%= @front_matter["subject"] %>.</p>
 </div>
 
+```
+
+
+### YouTube video
+
+To add a YouTube video to your content you need to know the video ID. You can find this out by visiting the video on [youtube.com](https://www.youtube.com/) and looking in the address bar of your browser (it is in the format `watch?v=<video_id>`).
+
+Once you have the video ID you can declare the video in the frontmatter of your page and reference it in the content:
+
+```yaml
+---
+youtube_video:
+  return-to-teaching-advisers-video:
+    id: 2NrLm_XId4k
+    title: A video about what Return to Teaching Advisers do
+---
+
+# My page
+
+$return-to-teaching-advisers-video$
+```
+
+### Hero
+
+Most of the web pages on the site have a hero section that can be customised in frontmatter; the hero section is at the top of the page and usually consists of a large image, heading and some text - these are the available options, though not all are required:
+
+```yaml
+heading: Hero heading
+subtitle: Hero subtitle
+subtitle_link: /subtitle/link
+subtitle_button: Button text
+image: /path/to/image.jpg
+title_paragraph: Paragraph of text
+title_bg_color: yellow
+hero_bg_color: white
+hero_blend_content: true
 ```
 
 ### Values
