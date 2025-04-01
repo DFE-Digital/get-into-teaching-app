@@ -1212,7 +1212,7 @@ Once you've addressed a comment click on resolve. This hides it from the convers
 ## When things go wrong
 If you cannot fix an issue yourself, we have a Slack channel where we flag problems with the devs git-dev-help.
 
-## Build errors
+### Build errors
 
 When editing content you may find that the pull request build fails, meaning you can't merge your changes. In an effort to make the debugging process easier and more self-servable we are detailing common failures below and how to resolve them.
 
@@ -1223,23 +1223,23 @@ The first step is finding out what the build error is:
 * Open the 'details' link next to the check(s) that have failed and you should be automatically taken to the failure details, often highlighted in red.
 * Cross-reference this error with the errors below to discover the issue and resolution.
 
-### A link to a heading on the same page is broken
+#### A link to a heading on the same page is broken
 
-#### Example error:
+##### Example error:
 
 ```
 expected to find xpath "//*[@id='other-types-of-visa-you-can-use-to-work-as-a-teacher-in-england']" but there were no matches
 ```
 
-#### Description
+##### Description
 
 This error means there is a hyperlink in your content that is linking to a heading on the same page that cannot be found. The heading may have been renamed or removed.
 
-#### Resolution
+##### Resolution
 
 The hyperlink must match the heading title exactly and be suffixed with a hash, for example a heading of `This is a heading` should be linked to using the markdown `[my link](#this-is-a-heading)`. If you are linking to a heading on another page, ensure the filename matches the path exactly and has a leading slash `/`.
 
-### The filename contains invalid characters
+#### The filename contains invalid characters
 
 #### Example error:
 
@@ -1247,15 +1247,26 @@ The hyperlink must match the heading title exactly and be suffixed with a hash, 
 expected "/non-uk-teachers/fees-and-funding-for-non-UK-trainees" to match /^[a-z0-9\-\/]+$/
 ```
 
-#### Description
+##### Description
 
 This error means the filename contains one or more invalid characters.
 
-#### Resolution
+##### Resolution
 
 Check your filename only contains lowercase characters, numbers and underscores.
 
-## If you add something to the wrong branch
+#### Linting errors
+Linting is the process of automatically checking code for style issues or inconsistencies. 
+
+Linting errors can happen because of:
+
+* missing semicolons
+* incorrect indentation (spaces vs. tabs)
+* unused variables
+* typos or mistakes in the code
+* extra spaces or missing spaces
+
+### If you add something to the wrong branch
 
 You can change the branch you've put changes under by going onto the pull request from the branch.
 At the top there will be a line saying something like: 'you merged 1 commit into page-titles from Cookies-policy-update 3 hours ago'
@@ -1263,7 +1274,7 @@ At the top there will be a line saying something like: 'you merged 1 commit into
 If you want to move where this branch sits, click on the first title 'page titles' and it will produce a drop down
 Select the correct place from the drop down.
 
-## Merge conflicts
+### Merge conflicts
 Merge conflicts arise when two different branches alter the same content and both compete to have their changes merged into a common branch (usually `master`). Merge conflicts can be reduced by regularly keeping your branch synchronised with the `master` branch. Also try to co-ordinate with colleagues to ensure that you are not working on the same files/content as they are.
 
 Simple merge conflicts can be resolved in the Github text editor by preserving the content which should persist and manually deleting the content which should lapse. For full steps please see:
