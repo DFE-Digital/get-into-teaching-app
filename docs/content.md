@@ -43,6 +43,7 @@ This documentation aims to be a reference for content editors that want to make 
 * [Finding links on the site](#links-site)
 * [When things go wrong]
   * [Build errors](#build-errors)
+  * [Linting](#linting-errors)
   * [If you add something to the wrong branch](#wrong-branch)
   * [Resolving merge conflicts](#merge-conflicts)
 
