@@ -30,7 +30,7 @@
     "postcss-preset-env": "^9.1.2",
     "rails-ujs": "^5.2.8",
     "sass": "^1.69.7",
-    "sass-loader": "^16.0.4",
+    "sass-loader": "^16.0.5",
     "sass-mq": "^5.0.1",
     "semver": "7.7.1",
     "shakapacker": "8.0.2",
