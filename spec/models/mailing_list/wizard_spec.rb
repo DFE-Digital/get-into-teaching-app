@@ -47,7 +47,6 @@ describe MailingList::Wizard do
   end
 
   describe "#complete!" do
-    # let(:variant) { "/email/subject/physics/degree-status/final_year" }
     let(:variant) { "/email/subject/physics/degree-status/graduate_or_postgraduate" }
     let(:request) do
       GetIntoTeachingApiClient::MailingListAddMember.new({
