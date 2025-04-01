@@ -3,9 +3,8 @@ title: Age groups you could teach
 heading: Age groups you could teach
 description: |-
   Explore the key stages and ages you could teach, whether that's primary, secondary, early years, college, or pupils with special educational needs.
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including learning more about the age groups you could teach.
+promo_content:
+  - "content/shared/block-promos/adviser_mailing"
 cta_arrow_link:
   subjects:
     link_target: "/life-as-a-teacher/explore-subjects"
@@ -95,5 +94,3 @@ There are three key areas:
 * basic skills courses covering literacy and numeracy. 
 
 Learn more about [teaching in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers).
-
-$mailinglist$
