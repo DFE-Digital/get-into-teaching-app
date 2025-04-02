@@ -11,10 +11,6 @@ describe Content::AdviserComponent, type: :component do
   let(:heading) { :m }
   let(:component) { described_class.new(title: "title", intro: "intro", color: color, heading: heading, margin: margin) }
 
-  before do
-    allow_any_instance_of(GOVUKDesignSystemFormBuilder::FormBuilder).to receive(:object).and_return(nil)
-  end
-
   it { is_expected.to have_css("h2.heading-m.heading--box-#{color}", text: "title") }
   it { is_expected.to have_css("p", text: "intro") }
   it { is_expected.to have_css(".action-container--#{color}") }
