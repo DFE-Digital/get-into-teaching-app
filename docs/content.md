@@ -1,8 +1,8 @@
-# Content Documentation/Guide
+# Guide to creating content on the Get Into Teaching website
 
 This page aims to be a reference for content editors that want to make changes to the Get Into Teaching website. It includes how the content is structured, tips on editing content and specific guides on creating certain types of content.
 
-If you notice some guidance is missing, you can add to this page. [Create a pull request](#creating-a-pull-request) to add the guidance so it can be approved by another member of the team. We usually add new guidance when intoducing a new element to the website, such as a promo, or new type of page. Make sure that you add the new section to the table of contents.
+If you notice some guidance is missing, you can add to this page. [Create a pull request](#creating-a-pull-request) to add the guidance so it can be approved by another member of the team. We usually add new guidance when intoducing a new element to the website, such as a promo, or new type of page. Make sure that you add the new section to the table of contents. You can view your changes before making them live in GitHub. Go to the pull request, click on the Files changed tab and click View file.
 
 ## Table of Contents
 
@@ -35,11 +35,11 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
 * [Creating a new page](#creating-a-new-page)
   * [Creating a subject page](#creating-a-subject-page)
   * [Creating an inspirational page](#creating-an-inspirational-page)
+  * [Saving a change](#saving-a-change)
+  * [Previewing a change](#preview-a-change)
 * [Search engine optimisation](#search-engine-optimisation)
 * [Navigation](#navigation)
 * [Internship providers](#internship-providers)
-* [Saving a change](#saving-a-change)
-* [Preview a change](#preview-a-change)
 * [Redirect URLs](#redirect-urls)
 * [Finding links on the site](#links-site)
 * [When things go wrong](#when-things-go-wrong)
@@ -68,7 +68,7 @@ When you want to edit content on the website the first step is to find out where
 
 The majority of web pages on the site are within the [/app/views/content](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content) folders; this reflects the top-level pages of the website (including the home page). In the folders, blue arrow icons are the pages and the content, the red <> icons are components. 
 
-If, for example, you wanted to edit [the 'Teacher pay' page](https://getintoteaching.education.gov.uk/life-as-a-teacher/pay-and-benefits/teacher-pay) content you would edit the file [/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md). 
+If, for example, you wanted to [edit the 'Teacher pay' page](https://getintoteaching.education.gov.uk/life-as-a-teacher/pay-and-benefits/teacher-pay) content you would edit the file [/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/life-as-a-teacher/pay-and-benefits/teacher-pay.md). 
 
 The structure here mimics the URL of the pages (the home page is a special case):
 
@@ -86,7 +86,7 @@ If you are looking to edit content associated with a form element in particular 
 
 ## Creating a pull request
 
-Pull requests are used in GitHub to allow you to propose changes to a project by submitting code you've worked on for review before it's merged into the main branch.
+Pull requests are used in GitHub to allow you to propose changes to content by submitting code you've worked on for review before it's merged into the main branch.
 
 Once you've made your changes in your branch in VS Code, click on the Source Control button in the left side bar to create a pull request. Once the PR is created it will appear in the Pull requests tab in GitHub, there other team members can review your code. 
 
@@ -945,6 +945,29 @@ content:
   - "content/life-as-a-teacher/pay-and-benefits/quote" 
 ```
 
+## Saving a change
+When you have made a change in Visual Studio Code and want to save your work.
+1. Save the change by CTRL-S
+2. This will cause a notification on the source control
+3. You will need to type a name for this change in the 'message' box
+4. Click the plus button that appears on the change - this will stage the change
+5. Click 'sync changes'
+6. Commit the changes - make sure you name each commit in the box above the blue box where it says commit. You should name each commit to the specific change being made. This makes it easier to review any changes in the pull request and is useful for auditing.
+7. This will then open a pull request, you will need to fill in the details for this and click 'Create pull request' if you want to create one. But you may not want to create a pull request until you've made all of your changes so you don't have to publish the branch or create a pull request until you're ready
+8. You can monitor pull requests and assign reviewers here https://github.com/DFE-Digital/get-into-teaching-app/pulls
+
+## Previewing a change
+1. Go to the terminal tab on Visual Studio Code **or** go the top bar of your laptop - click terminal - click 'new terminal'
+2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
+3. When it has finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000. This will open the browser
+4. If you're not able to preview, try typing **bundle install** in the terminal followed by **yarn install** as this will update the libraries
+5. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
+6. Go to the url: http://127.0.0.1:3000 and insert a / on the end
+7. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
+8. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
+The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
+9. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it. But you don't need to commit the change to be able to view it.
+
 ## Search engine optimisation (SEO)
 
 Whenever we add a new page to the GIT website, we need to make sure it’s optimised for search engines, this is known as search engine optimisation or SEO. This means that the page has the best chance possible of ranking in a high position in the search results when people type a related query in.
@@ -1127,30 +1150,6 @@ When updating not just the text content within the file, but the actual list of 
 - Export the XLSX to CSV with filename `internship_providers.csv`
 - Place it in the `lib/tasks/support` directory.
 - Run `bundle exec rake teaching_internship_providers:generate`.
-
-
-## Saving a change
-When you have made a change in Visual Studio Code and want to save your work.
-1. Save the change by CTRL-S
-2. This will cause a notification on the source control
-3. You will need to type a name for this change in the 'message' box
-4. Click the plus button that appears on the change - this will stage the change
-5. Click 'sync changes'
-6. Commit the changes - make sure you name each commit in the box above the blue box where it says commit. You should name each commit to the specific change being made. This makes it easier to review any changes in the pull request and is useful for auditing.
-7. This will then open a pull request, you will need to fill in the details for this and click 'Create pull request' if you want to create one. But you may not want to create a pull request until you've made all of your changes so you don't have to publish the branch or create a pull request until you're ready
-8. You can monitor pull requests and assign reviewers here https://github.com/DFE-Digital/get-into-teaching-app/pulls
-
-## Preview a change
-1. Go to the terminal tab on Visual Studio Code **or** go the top bar of your laptop - click terminal - click 'new terminal'
-2. A line of code will come up and you should type in **bin/dev**, this will start a series of code
-3. When it has finished running, go into the ports tab and click the globe icon by 127.0.0.1:3000. This will open the browser
-4. If you're not able to preview, try typing **bundle install** in the terminal followed by **yarn install** as this will update the libraries
-5. When putting in a page to preview it, right click the page title on the left hand side bar in Visual Studio Code and copy path
-6. Go to the url: http://127.0.0.1:3000 and insert a / on the end
-7. The copied path will be something like this: /workspaces/get-into-teaching-app/app/views/content/a-day-in-the-life-of-a-teacher.md
-8. Edit this path to only be the necessary page path: /a-day-in-the-life-of-a-teacher
-The url is http://127.0.0.1:3000/a-day-in-the-life-of-a-teacher
-9. You will need to CTL-Save a change in Visual Studio Code before viewing it in preview. You can just refresh the preview URL after you save a change to view it. But you don't need to commit the change to be able to view it.
 
 ## Redirect URLs
 
