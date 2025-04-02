@@ -1,6 +1,8 @@
 # Content Documentation/Guide
 
-This documentation aims to be a reference for content editors that want to make changes to the Get into Teaching website. It contains details of how the content is structured, tips on editing content and specific guides on creating certain types of content.
+This page aims to be a reference for content editors that want to make changes to the Get Into Teaching website. It includes how the content is structured, tips on editing content and specific guides on creating certain types of content.
+
+If you notice some guidance is missing, you can add to this page. [Create a pull request](#creating-a-pull-request) to add the guidance so it can be approved by another member of the team. We usually add new guidance when intoducing a new element to the website, such as a promo, or new type of page. Make sure that you add the new section to the table of contents.
 
 ## Table of Contents
 
