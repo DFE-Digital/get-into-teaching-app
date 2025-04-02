@@ -41,7 +41,7 @@ This documentation aims to be a reference for content editors that want to make 
 * [Saving a change](#saving-a-change)
 * [Redirect URLs](#redirect-urls)
 * [Finding links on the site](#links-site)
-* [When things go wrong]
+* [When things go wrong](#when-things-go-wrong)
   * [Build errors](#build-errors)
   * [Linting](#linting-errors)
   * [If you add something to the wrong branch](#wrong-branch)
