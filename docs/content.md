@@ -6,33 +6,34 @@ This documentation aims to be a reference for content editors that want to make 
 
 * [Setting up Codespaces and Github](#setting-up-codespaces-and-github)
 * [Finding a page/content to edit](#finding-a-pagecontent-to-edit)
-* [Tone of voice](#tone-of-voice)
+* [Creating a pull request](#creating-a-pull-request)
 * [Content editing info/tips](#content-editing-tips-info)
-    * [Using Markdown](#using-markdown)
-    * [Headings](#headings)
-    * [Frontmatter](#frontmatter)
-    * [Breadcrumbs](#breadcrumbs)
-    * [Links](#links)
-    * [Prevent indexing](#prevent-indexing)
-    * [Adding a document, image or video](#adding-a-document-or-image)
-      * [Hero images and text](#hero-images-and-text)
-      * [Alt text](#alt-text)
-      * [Adding YouTube videos](#adding-youtube-videoes)
-      * [iframe](#iframe)
-    * [Calls to action](#calls-to-action)
-      * [Adviser CTA component](#adviser-cta-component)
-      * [Routes CTA component](#routes-cta-component)
-      * [Mailing list CTA component](#mailing-list-cta-component)
-      * [Green arrow link CTA component](#green-arrow-link-cta-component)
-      * [Block promos](#block-promos)
-    * [Accessibility](#accessibility)
-    * [Insets and expander components for non-UK content](#insets-and-expander-components-for-non-uk-content)
-    * [Using the same content across multiple pages - partial](#using-the-same-content-across-multiple-pages-partials)
-    * [Values](#values)
-* [Search engine optimisation](#search-engine-optimisation)
+  * [Tone of voice](#tone-of-voice)
+  * [Using Markdown](#using-markdown)
+  * [Headings](#headings)
+  * [Frontmatter](#frontmatter)
+  * [Breadcrumbs](#breadcrumbs)
+  * [Links](#links)
+  * [Prevent indexing](#prevent-indexing)
+  * [Adding a document, image or video](#adding-a-document-or-image)
+    * [Hero images and text](#hero-images-and-text)
+    * [Alt text](#alt-text)
+    * [Adding YouTube videos](#adding-youtube-videoes)
+    * [iframe](#iframe)
+  * [Calls to action](#calls-to-action)
+    * [Adviser CTA component](#adviser-cta-component)
+    * [Routes CTA component](#routes-cta-component)
+    * [Mailing list CTA component](#mailing-list-cta-component)
+    * [Green arrow link CTA component](#green-arrow-link-cta-component)
+    * [Block promos](#block-promos)
+  * [Accessibility](#accessibility)
+  * [Insets and expander components for non-UK content](#insets-and-expander-components-for-non-uk-content)
+  * [Using the same content across multiple pages - partial](#using-the-same-content-across-multiple-pages-partials)
+  * [Values](#values)
 * [Creating a new page](#creating-a-new-page)
   * [Creating a subject page](#creating-a-subject-page)
   * [Creating an inspirational page](#creating-an-inspirational-page)
+* [Search engine optimisation](#search-engine-optimisation)
 * [Navigation](#navigation)
 * [Internship providers](#internship-providers)
 * [Saving a change](#saving-a-change)
@@ -47,7 +48,7 @@ This documentation aims to be a reference for content editors that want to make 
 
 ## Setting up Codespaces and Github
 
-You will need to download and set up an account on Github and Visual Studio Code with help from the team. 
+You will need to download and set up an account on Github and Visual Studio Code with help from the delivery manager on the team.
 
 Once you're ready:
 
@@ -81,7 +82,18 @@ If you can't find a corresponding file in the [/app/views/content](https://githu
 
 If you are looking to edit content associated with a form element in particular (for example, a label for a text input) then  you should look in the [translations file](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/config/locales/en.yml). It's important to only change the text content in this file and not the Yaml keys that identify the content.
 
-## Tone of voice
+## Creating a pull request
+
+Pull requests are used in GitHub to allow you to propose changes to a project by submitting code you've worked on for review before it's merged into the main branch.
+
+Once you've made your changes in your branch in VS Code, click on the Source Control button in the left side bar to create a pull request. Once the PR is created it will appear in the Pull requests tab in GitHub, there other team members can review your code. 
+
+Your PR will need to be reviewed by at least one other member of the team before it can be merged. If you have made changes to anything other can content, for example a spec file, you will need to get a developer to review the code. You can do this by requesting a review on the Slack channel #git-dev-review.
+
+
+## Content editing info/tips
+
+### Tone of voice
 
 It’s important that the content on Get Into Teaching uses a consistent tone of voice.
 
@@ -97,8 +109,6 @@ Some useful resources include:
 * [Department for Education style guide](https://design.education.gov.uk/design-system/style-guide)
 
 In some cases, policy teams may ask us to word things in a certain way or include specific information. Unless there are commercial reasons why we need to use certain language, we can amend requested wording as needed to be consistent with the Get Into Teaching tone of voice.
-
-## Content editing info/tips
 
 ### Using Markdown
 
@@ -749,114 +759,6 @@ A list of the current values available on the site can be viewed at the `/values
 
 Values should be named using only _lowercase_ characters `a` to `z`, the numbers `0` to `9`, and the underscore `_` character. Unsupported characters such as the hyphen `-` are converted into underscores.
 
-## Search engine optimisation (SEO)
-
-Whenever we add a new page to the GIT website, we need to make sure it’s optimised for search engines, this is known as search engine optimisation or SEO. This means that the page has the best chance possible of ranking in a high position in the search results when people type a related query in.
-
-In Autumn 2024, an SEO consultant provided us with guidelines for how to improve the SEO on the website.
-
-When uploading a new webpage, or reviewing an existing one, these are the main things you’ll need to do to make sure the page is optimised.
-
-### Find out what people are searching for
-
-If you’re adding new content to the GIT website or reviewing existing content, any changes should be based on user needs. You can make sure the content is optimised for the search engines by looking at what users are searching for in Search Console. If you're new to the team, speak to the Delivery Manager about getting set up on Search Console.
-
-For example, if you were to create a page around being a primary school teacher some terms you might want to include could be:
-- ‘skills to be a primary teacher’
-- ‘primary education courses’
-- ‘primary teaching with QTS’
-
-### Consider the context
-
-It’s important to consider the context of search terms. For example, users might be searching for ‘teachers pension increase’ but that’s not something we would cover on the GIT website. A term like this is more likely to be from users who are already teachers and their query would be better answered by the teacher pensions website.
-
-Some terms may:
-- not be teaching specific (‘uk qualifications’)
-- be too broad (‘high school teacher’)
-- be addressed by other services, such as Teaching Vacancies (‘english teacher jobs’)
-
-You can find out more about optimising content for what users are searching for by viewing the following documents from the Autumn 2024 SEO review:
-- keyword map
-- content optimisation guidance
-These are stored in the Get Into Teaching Ebsite Project folder in Teacher Services SharePoint.
-
-### Internal links
-
-Internal linking is when a page on a website links through to another page on the same website. This is important for SEO as it helps the search engines understand which pages relate to each other. It also helps users navigate the site.
-
-When creating or updating a page, make sure:
-- all pages have more than one internal link
-- use the keyword that you want the page to rank for as the anchor text, e.g. use ‘qualified teacher status (QTS)’ as the link rather than ‘you’ll be qualified as a teacher’
-- internal links link to the canonical version of pages (these are the pages we want to rank) so they do not have to go through redirects
-- you link to any new pages from existing, relevant pages
-
-### URL structure
-
-The URL on a page helps the search engines understand what a page is about.
-
-When creating a page or updating a URL, make sure:
-- the URL includes a target keyword, where it is sensible to do so e.g. `/train-to-be-a-teacher/teacher-degree-apprenticeships`, rather than `/train-to-be-a-teacher/tda`
-- URLs are short and make sense when read by humans
-
-### Headers
-
-Where possible, include keywords in the content headers. Headers should follow a clear structure e.g. H1, H2, and H3. This is important for accessibility, as well as SEO.
-
-### Acronyms
-
-Users may not know certain acronyms well enough to include them in their search terms. Always spell out words in full first, and more than once, if they are the keywords for a particular page.
-
-In some cases, users may be more familiar with the acronym than the full word. For example:
-- ‘QTS’ gets more searches than ‘qualified teacher status’
-- ‘teacher degree apprenticeship’ gets more searches than ‘TDA’
-
-You can find out more about how we use acronyms in the:
-- [DfE content style guide](https://design.education.gov.uk/design-system/style-guide)
-- [Government Digital Services (GDS) style guide](https://www.gov.uk/guidance/style-guide/a-to-z)
-
-### Front matter
-
-In our frontmatter we can populate several values that are used for SEO:
-
-```yaml
-title: "A title for the page"
-description: "A description of the page"
-image: "path/to/image.png"
-date: "2021-11-01"
-```
-
-Ideally all titles should be unique, descriptions should be no more than 160 characters and the image will most likely be visible when sharing web page links via social media platforms. If a date is specified it will be used as the last modified date for the sitemap entry.
-
-### Monitoring SEO impact
-
-You can use Search Console to get an idea of how a search term or page is performing. 
-
-1. Click on the date filter in the 'Search Results' section.
-2. Select 'Compare'.
-3. Compare a date range before your changes with a similar period after the changes.
-4. Check for improvements in clicks, impressions, and rankings.
-
-
-You can also check how specific pages are performing:
-
-1. Go to 'Search Results' and add filter, then select ‘Page’.
-2. Enter the URL for the page you want to check.
-3. Review metrics such as impressions, clicks, and position for those pages.
-4. You can change the dates for individual pages too, so you can compare stats before and after any changes.
-
-To see how keyword targeting is performing: 
-
-1. Click 'Search Results'.
-2. Click 'Add filter' and select 'Query'.
-3. Enter the query or part of the query e.g. ‘SEND’ will bring any query up with ‘SEND’ in it such as ‘SEND training’.
-4. Check if optimised keywords:
-   - have higher impressions and clicks
-   - have improved their average position in search results
-5. You can also see how individual pages are doing for specific keywords by filtering by query and page.
-
-It can take weeks or even months for changes to have an impact, so check the above regularly.
-
-
 ## Creating a new page
 
 **Make sure you start by creating a new branch on master**
@@ -1040,6 +942,114 @@ When using in a Markdown file, copy the above code into a new html file and link
 content: 
   - "content/life-as-a-teacher/pay-and-benefits/quote" 
 ```
+
+## Search engine optimisation (SEO)
+
+Whenever we add a new page to the GIT website, we need to make sure it’s optimised for search engines, this is known as search engine optimisation or SEO. This means that the page has the best chance possible of ranking in a high position in the search results when people type a related query in.
+
+In Autumn 2024, an SEO consultant provided us with guidelines for how to improve the SEO on the website.
+
+When uploading a new webpage, or reviewing an existing one, these are the main things you’ll need to do to make sure the page is optimised.
+
+### Find out what people are searching for
+
+If you’re adding new content to the GIT website or reviewing existing content, any changes should be based on user needs. You can make sure the content is optimised for the search engines by looking at what users are searching for in Search Console. If you're new to the team, speak to the Delivery Manager about getting set up on Search Console.
+
+For example, if you were to create a page around being a primary school teacher some terms you might want to include could be:
+- ‘skills to be a primary teacher’
+- ‘primary education courses’
+- ‘primary teaching with QTS’
+
+### Consider the context
+
+It’s important to consider the context of search terms. For example, users might be searching for ‘teachers pension increase’ but that’s not something we would cover on the GIT website. A term like this is more likely to be from users who are already teachers and their query would be better answered by the teacher pensions website.
+
+Some terms may:
+- not be teaching specific (‘uk qualifications’)
+- be too broad (‘high school teacher’)
+- be addressed by other services, such as Teaching Vacancies (‘english teacher jobs’)
+
+You can find out more about optimising content for what users are searching for by viewing the following documents from the Autumn 2024 SEO review:
+- keyword map
+- content optimisation guidance
+These are stored in the Get Into Teaching Ebsite Project folder in Teacher Services SharePoint.
+
+### Internal links
+
+Internal linking is when a page on a website links through to another page on the same website. This is important for SEO as it helps the search engines understand which pages relate to each other. It also helps users navigate the site.
+
+When creating or updating a page, make sure:
+- all pages have more than one internal link
+- use the keyword that you want the page to rank for as the anchor text, e.g. use ‘qualified teacher status (QTS)’ as the link rather than ‘you’ll be qualified as a teacher’
+- internal links link to the canonical version of pages (these are the pages we want to rank) so they do not have to go through redirects
+- you link to any new pages from existing, relevant pages
+
+### URL structure
+
+The URL on a page helps the search engines understand what a page is about.
+
+When creating a page or updating a URL, make sure:
+- the URL includes a target keyword, where it is sensible to do so e.g. `/train-to-be-a-teacher/teacher-degree-apprenticeships`, rather than `/train-to-be-a-teacher/tda`
+- URLs are short and make sense when read by humans
+
+### Headers
+
+Where possible, include keywords in the content headers. Headers should follow a clear structure e.g. H1, H2, and H3. This is important for accessibility, as well as SEO.
+
+### Acronyms
+
+Users may not know certain acronyms well enough to include them in their search terms. Always spell out words in full first, and more than once, if they are the keywords for a particular page.
+
+In some cases, users may be more familiar with the acronym than the full word. For example:
+- ‘QTS’ gets more searches than ‘qualified teacher status’
+- ‘teacher degree apprenticeship’ gets more searches than ‘TDA’
+
+You can find out more about how we use acronyms in the:
+- [DfE content style guide](https://design.education.gov.uk/design-system/style-guide)
+- [Government Digital Services (GDS) style guide](https://www.gov.uk/guidance/style-guide/a-to-z)
+
+### Front matter
+
+In our frontmatter we can populate several values that are used for SEO:
+
+```yaml
+title: "A title for the page"
+description: "A description of the page"
+image: "path/to/image.png"
+date: "2021-11-01"
+```
+
+Ideally all titles should be unique, descriptions should be no more than 160 characters and the image will most likely be visible when sharing web page links via social media platforms. If a date is specified it will be used as the last modified date for the sitemap entry.
+
+### Monitoring SEO impact
+
+You can use Search Console to get an idea of how a search term or page is performing. 
+
+1. Click on the date filter in the 'Search Results' section.
+2. Select 'Compare'.
+3. Compare a date range before your changes with a similar period after the changes.
+4. Check for improvements in clicks, impressions, and rankings.
+
+
+You can also check how specific pages are performing:
+
+1. Go to 'Search Results' and add filter, then select ‘Page’.
+2. Enter the URL for the page you want to check.
+3. Review metrics such as impressions, clicks, and position for those pages.
+4. You can change the dates for individual pages too, so you can compare stats before and after any changes.
+
+To see how keyword targeting is performing: 
+
+1. Click 'Search Results'.
+2. Click 'Add filter' and select 'Query'.
+3. Enter the query or part of the query e.g. ‘SEND’ will bring any query up with ‘SEND’ in it such as ‘SEND training’.
+4. Check if optimised keywords:
+   - have higher impressions and clicks
+   - have improved their average position in search results
+5. You can also see how individual pages are doing for specific keywords by filtering by query and page.
+
+It can take weeks or even months for changes to have an impact, so check the above regularly.
+
 
 ## Navigation
 
