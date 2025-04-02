@@ -1,0 +1,14 @@
+<%= render Content::LandingHeroComponent.new(
+  title: "Sitemap",
+  colour: "pastel yellow-yellow",
+) %>
+
+<section class="container">
+  <div class="row inset">
+    <ul>
+      <% @sitemap_data.each do |page, metadata| %>
+        <li><%= link_to metadata[:title], page %></li>
+      <% end %>
+    </ul>
+  </div>
+</section>

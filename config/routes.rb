@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get "/403", to: "errors#forbidden"
   get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
   get "/sitemap.xml", to: "sitemap#show", via: :all
+  get "/sitemap", to: "sitemap#show", via: :all
   get "/check", to: proc { [200, {}, %w[OK]] }
 
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
