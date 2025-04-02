@@ -11,9 +11,9 @@ class SitemapController < ApplicationController
   # This will keep it consistent with how canonical-rails behaves and ensure search engines are happy.
   OTHER_PATHS = {
     "/events" => { title: "Events" },
-    "/events/about-get-into-teaching-events" => { title: "About Get Into Teaching Events"},
+    "/events/about-get-into-teaching-events" => { title: "About Get Into Teaching Events" },
     "/mailinglist/signup/name" => { title: "Mailing List" },
-    "/routes-into-teaching" => { title: "Routes Into Teaching" }
+    "/routes-into-teaching" => { title: "Routes Into Teaching" },
   }.freeze
 
   before_action :set_page_title
@@ -22,7 +22,7 @@ class SitemapController < ApplicationController
   layout "minimal"
 
   def show
-    @sitemap_data ||= all_sitemap_pages.sort_by { |path, metadata| metadata[:title] }
+    @sitemap_data ||= all_sitemap_pages.sort_by { |_path, metadata| metadata[:title] }
 
     respond_to do |format|
       format.xml { render xml: build.to_xml }
@@ -31,6 +31,7 @@ class SitemapController < ApplicationController
   end
 
 private
+
   def build
     Nokogiri::XML::Builder.new(encoding: "UTF-8") do |xml|
       xml.urlset(xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9") do
