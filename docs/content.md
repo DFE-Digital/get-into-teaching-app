@@ -15,18 +15,16 @@ This documentation aims to be a reference for content editors that want to make 
     * [Links](#links)
     * [Prevent indexing](#prevent-indexing)
     * [Adding a document, image or video](#adding-a-document-or-image)
-    * [Hero images and text](#hero-images-and-text)
-    * [Alt text](#alt-text)
-    * [Adding YouTube videos](#adding-youtube-videoes)
-    * [iframe](#iframe)
+      * [Hero images and text](#hero-images-and-text)
+      * [Alt text](#alt-text)
+      * [Adding YouTube videos](#adding-youtube-videoes)
+      * [iframe](#iframe)
     * [Calls to action](#calls-to-action)
-    * [Adviser CTA component](#adviser-cta-component)
-    * [Routes CTA component](#routes-cta-component)
-    * [Mailing list CTA component](#mailing-list-cta-component)
-    * [Green arrow link CTA component](#green-arrow-link-cta-component)
-    * [Block promos](#block-promos)
-    * [Main Content](#main-content)
-    * [Sidebar](#sidebar)
+      * [Adviser CTA component](#adviser-cta-component)
+      * [Routes CTA component](#routes-cta-component)
+      * [Mailing list CTA component](#mailing-list-cta-component)
+      * [Green arrow link CTA component](#green-arrow-link-cta-component)
+      * [Block promos](#block-promos)
     * [Accessibility](#accessibility)
     * [Insets and expander components for non-UK content](#insets-and-expander-components-for-non-uk-content)
     * [Using the same content across multiple pages - partial](#using-the-same-content-across-multiple-pages-partials)
@@ -37,13 +35,12 @@ This documentation aims to be a reference for content editors that want to make 
   * [Creating an inspirational page](#creating-an-inspirational-page)
 * [Navigation](#navigation)
 * [Internship providers](#internship-providers)
-* [Preview a change](#preview-a-change)
 * [Saving a change](#saving-a-change)
+* [Preview a change](#preview-a-change)
 * [Redirect URLs](#redirect-urls)
 * [Finding links on the site](#links-site)
 * [When things go wrong](#when-things-go-wrong)
   * [Build errors](#build-errors)
-  * [Linting](#linting-errors)
   * [If you add something to the wrong branch](#wrong-branch)
   * [Resolving merge conflicts](#merge-conflicts)
 
@@ -62,7 +59,7 @@ Once you're ready:
 6. This will open the file on Visual Studio Code
 7. When you run a codespace it will make up a branch name: **when you next go on to github and want to run a codespace, you should use the same branch every time. You do not need to make a new one every time.**
 
-## Finding a Page/Content to Edit
+## Finding a page/content to edit
 
 When you want to edit content on the website the first step is to find out where that content resides in the [repository](https://github.com/DFE-Digital/get-into-teaching-app).
 
@@ -701,42 +698,6 @@ This means that you can use the following code over many pages so that each page
 
 ```
 
-
-### YouTube video
-
-To add a YouTube video to your content you need to know the video ID. You can find this out by visiting the video on [youtube.com](https://www.youtube.com/) and looking in the address bar of your browser (it is in the format `watch?v=<video_id>`).
-
-Once you have the video ID you can declare the video in the frontmatter of your page and reference it in the content:
-
-```yaml
----
-youtube_video:
-  return-to-teaching-advisers-video:
-    id: 2NrLm_XId4k
-    title: A video about what Return to Teaching Advisers do
----
-
-# My page
-
-$return-to-teaching-advisers-video$
-```
-
-### Hero
-
-Most of the web pages on the site have a hero section that can be customised in frontmatter; the hero section is at the top of the page and usually consists of a large image, heading and some text - these are the available options, though not all are required:
-
-```yaml
-heading: Hero heading
-subtitle: Hero subtitle
-subtitle_link: /subtitle/link
-subtitle_button: Button text
-image: /path/to/image.jpg
-title_paragraph: Paragraph of text
-title_bg_color: yellow
-hero_bg_color: white
-hero_blend_content: true
-```
-
 ### Values
 
 You can use the values system to maintain key values (e.g. salaries, bursaries, fees etc) in a single file, and then use these values throughout the site's content. Set up a list of values in one or more YML files stored in the `config/values/` folder (or sub-folder), for example `config/values/salaries.yml`:
@@ -1211,7 +1172,7 @@ People can add comments to pull requests in Github which makes it easier to see 
 Once you've addressed a comment click on resolve. This hides it from the conversation making it easier to keep track of what's been updated.
 
 ## When things go wrong
-If you cannot fix an issue yourself, we have a Slack channel where we flag problems with the devs git-dev-help.
+If you cannot fix an issue yourself, we have a Slack channel where we flag problems with the devs #git-dev-help.
 
 ### Build errors
 
