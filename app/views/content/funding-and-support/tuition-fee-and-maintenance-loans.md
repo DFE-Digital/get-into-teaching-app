@@ -4,9 +4,8 @@ heading: "Student finance for teacher training"
 subcategory: Courses with fees
 description: |-
     Find out about the available student finance for teacher training, including tuition fee loans and maintenance loans to support you while you train.
-cta_adviser:
-  adviser:
-    text: "An adviser with years of teaching experience can answer all your questions about student finance. Chat by phone, text or email, as little or as often as you need."
+promo_content:
+  - "content/shared/block-promos/adviser_findfees"
 calls_to_action:
     student-finance-calculator:
       name: simple

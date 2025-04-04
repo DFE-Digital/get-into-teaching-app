@@ -4,12 +4,8 @@ heading: "Bursaries and scholarships for postgraduate teacher training"
 subcategory: Courses with fees
 description: |-
    Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.
-cta_adviser:
-  adviser:
-    text: "An adviser with years of teaching experience can answer all your questions about scholarships and bursaries. Chat by phone, text or email, as little or as often as you need."
-calls_to_action:
-  find:
-    name: find
+promo_content:
+  - "content/shared/block-promos/adviser_findfees"
 cta_arrow_link:
   subjects:
     link_target: "/life-as-a-teacher/explore-subjects"
@@ -121,5 +117,3 @@ You may be eligible for [a salaried teacher training course](/funding-and-suppor
 For advice on funding, you can speak to a [teacher training adviser](/teacher-training-advisers). They can help you work out what support you could be eligible for.
 
 $teacherpay$
-$find$
-$adviser$
