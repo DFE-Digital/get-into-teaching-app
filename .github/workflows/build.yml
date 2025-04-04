@@ -386,9 +386,7 @@ jobs:
 
       - uses: Azure/login@v2
         with:
-            client-id: ${{ secrets.AZURE_CLIENT_ID }}
-            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Deploy to Review
         uses: ./.github/workflows/actions/deploy
@@ -397,9 +395,7 @@ jobs:
           environment: review
           sha:  ${{ github.sha }}
           pr:   ${{github.event.number}}
-          azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          azure-credentials: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets[format('KEY_VAULT{0}', env.SECRET_SUFFIX)] }}
 
       - name: Post sticky pull request comment
