@@ -27,12 +27,8 @@ keywords:
   - interviews
   - offers
   - teacher training application
-calls_to_action:
-    apply:
-      name: apply
-cta_adviser:
-  adviser:
-    text: An adviser with years of teaching experience can help you with your personal statement. Chat by phone, text or email, as little or as often as you need.
+promo_content:
+  - "content/shared/block-promos/adviser_apply"
 quote:
   q-Felix:
     text: "Having a teacher training adviser was really beneficial when editing my personal statement and preparing for interviews. My top tips for the application process would be to get an adviser, and to think about what transferrable skills you have when writing your personal statement and answering interview questions."
@@ -126,6 +122,3 @@ You do not need school experience to apply for teacher training, but it can help
 Getting some school experience can also be a good way to make sure teaching is right for you before you apply for a course.
 
 $experience$
-
-$apply$
-$adviser$

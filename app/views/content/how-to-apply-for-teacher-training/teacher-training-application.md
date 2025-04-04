@@ -22,12 +22,8 @@ keywords:
   - interviews
   - offers
   - teacher training application
-cta_adviser:
-  adviser:
-    text: Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience. Chat by phone, text or email, as little or as often as you need.
-calls_to_action:
-    apply:
-      name: apply
+promo_content:
+  - "content/shared/block-promos/adviser_apply"
 navigation: 30.05
 navigation_title: Teacher training application
 navigation_description: Find out what you need to include in your teacher training application and when to apply.
@@ -180,6 +176,3 @@ You can apply to more courses if all your applications are unsuccessful.
 
 Find out what to do [if you do not get a place on a teacher training course](/how-to-apply-for-teacher-training/if-your-application-is-unsuccessful). 
 
-$apply$
-
-$adviser$

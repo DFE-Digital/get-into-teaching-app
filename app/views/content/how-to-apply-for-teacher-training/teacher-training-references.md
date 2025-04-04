@@ -27,13 +27,8 @@ keywords:
   - interviews
   - offers
   - teacher training application
-calls_to_action:
-    apply:
-      name: apply
-cta_adviser:
-  adviser:
-    text: Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience. Chat by phone, text or email, as little or as often as you need.
-
+promo_content:
+  - "content/shared/block-promos/adviser_apply"
 ---
 
 Teacher training providers need to check that you’re a suitable candidate for teacher training. One way that they do this is by asking you to provide references when you apply. 
@@ -76,6 +71,3 @@ When you apply for teacher training, you’ll need to provide your reference det
 When you accept your place on a course, you can change your reference details, or even change your reference altogether. 
 
 Make sure you prepare your references when you accept a place on a course. If you apply late in the year, there can be a quick turnaround between your place being accepted and your references being contacted, so it’s good to make sure they’re ready.
-
-$apply$
-$adviser$
