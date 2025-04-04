@@ -13,9 +13,8 @@ calls_to_action:
           Use our service to search for and organise school experience in England.
         link_text: "Search for school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including learning more about what teaching is like.
+promo_content:
+  - "content/shared/block-promos/adviser_mailing_find"
 navigation: 20.30
 navigation_title: Get school experience
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.

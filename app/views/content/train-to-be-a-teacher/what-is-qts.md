@@ -27,9 +27,8 @@ expander:
       <p>
       With iQTS, you train to teach where you live or work, with no need to visit the UK. If you get iQTS, you automatically get QTS.
       </p>
-cta_mailinglist:
-  mailinglist:
-    text: Get helpful guidance and support on getting into teaching, including how to get the qualifications you need.
+promo_content:
+  - "content/shared/block-promos/mailing_adviser_routes"
 cta_arrow_link:
   qts-teacher-training:
     link_target: "/routes-into-teaching"

@@ -3,12 +3,8 @@ title: "How to choose your teacher training course"
 subcategory: Postgraduate teacher training
 description: |-
   Find out how to choose your postgraduate teacher training course based on your eligibility, the qualifications you could get, and the course provider.
-cta_adviser:
-  adviser:
-    text: Talk to an adviser with years of teaching experience about how to choose the right course for you. Chat by phone, text or email, as little or as often as you need.
-calls_to_action:
-  find:
-    name: find
+promo_content:
+  - "content/shared/block-promos/adviser_find_school"
 cta_arrow_link:
   qualifications:
     link_target: "/train-to-be-a-teacher/qualifications-you-need-to-teach"
@@ -169,5 +165,3 @@ Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 mont
 Most teacher training courses start in September, with a small number of courses starting on other dates throughout the year.
 
 $expect$
-$find$
-$adviser$
