@@ -10,14 +10,8 @@ inputs:
       pr:
         description: Pull Request Reference
         required: false
-      azure-client-id:
+      azure-credentials:
         description: Managed identity client ID
-        required: true
-      azure-subscription-id:
-        description: Azure subscription ID
-        required: true
-      azure-tenant-id:
-        description: Azure tenant ID
         required: true
       KEY_VAULT:
         required: true
@@ -33,15 +27,11 @@ runs:
 
       - uses: DFE-Digital/github-actions/set-kubelogin-environment@master
         with:
-          azure-client-id: ${{ inputs.azure-client-id }}
-          azure-tenant-id: ${{ inputs.azure-tenant-id }}
-          azure-subscription-id: ${{ inputs.azure-subscription-id }}
+          azure-credentials: ${{ inputs.azure-credentials }}
 
       - uses: azure/login@v2
         with:
-           client-id: ${{ inputs.azure-client-id }}
-           tenant-id: ${{ inputs.azure-tenant-id }}
-           subscription-id: ${{ inputs.azure-subscription-id }}
+           creds: ${{ inputs.azure-credentials }}
 
       - uses: google-github-actions/auth@v2
         with:
