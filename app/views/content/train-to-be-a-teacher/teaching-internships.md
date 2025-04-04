@@ -12,8 +12,8 @@ navigation_title: Teaching internships
 navigation_description: Earn $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/train-to-be-a-teacher/teaching-internship-providers/listing
-
-
+promo_content:
+  - "content/shared/block-promos/adviser_find_school"
 provider_groups:
   East Midlands:
     providers:
