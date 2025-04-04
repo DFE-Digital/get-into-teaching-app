@@ -12,4 +12,5 @@ keywords:
 content: 
   - "content/life-as-a-teacher/change-careers/support-with-changing-careers/header" 
   - "content/life-as-a-teacher/change-careers/support-with-changing-careers/article"
+  - "content/shared/block-promos/adviser_mailing_events"
 ---

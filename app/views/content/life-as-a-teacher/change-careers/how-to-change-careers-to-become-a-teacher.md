@@ -12,4 +12,5 @@ keywords:
 content: 
   - "content/life-as-a-teacher/change-careers/how-to-change-careers-to-become-a-teacher/header" 
   - "content/life-as-a-teacher/change-careers/how-to-change-careers-to-become-a-teacher/article"
+  - "content/shared/block-promos/adviser_mailing_events"
 ---

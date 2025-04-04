@@ -4,9 +4,8 @@ heading: "Teacher pay"
 description: |-
   All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 backlink: "../../"
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.
+promo_content:
+  - "content/shared/block-promos/mailing_adviser_routes"
 cta_arrow_link:
   careers:
     link_target: "/life-as-a-teacher/teaching-as-a-career/career-progression"
@@ -164,5 +163,3 @@ You also get other insurance benefits too. Find out more about the [teachers' pe
 In additional to the practical rewards of teaching, there's personal benefits too. Teaching is a career that allows you to make a difference, explore your creativity, and apply skills from your degree or previous career.
 
 $benefits$
-
-$mailinglist$

@@ -14,6 +14,6 @@ keywords:
 content: 
   - "content/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching/header" 
   - "content/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching/article"
-  - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
+  - "content/shared/block-promos/mailing_adviser_routes"
 ---
 

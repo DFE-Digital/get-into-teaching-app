@@ -16,5 +16,5 @@ keywords:
 content: 
   - "content/life-as-a-teacher/change-careers/becoming-a-parent-sparked-my-interest-in-teaching/header" 
   - "content/life-as-a-teacher/change-careers/becoming-a-parent-sparked-my-interest-in-teaching/article"
-  - "content/life-as-a-teacher/how-to-become-a-teacher-cta"
+  - "content/shared/block-promos/adviser_mailing_events"
 ---
