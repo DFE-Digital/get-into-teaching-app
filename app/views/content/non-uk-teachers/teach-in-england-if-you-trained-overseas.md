@@ -209,7 +209,7 @@ You'll also be able to develop your career through the [national professional qu
 
 You may be eligible for:
 
-* a [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) if you teach chemistry, computing, mathematics or physics 
+* a [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) if you teach chemistry, computing, maths or physics 
 
 * the [international relocation payment (IRP)](#get-an-international-relocation-payment-irp-worth-up-to-10000) if you teach languages or physics
 
