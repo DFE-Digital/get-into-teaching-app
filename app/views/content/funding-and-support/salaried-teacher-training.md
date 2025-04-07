@@ -3,15 +3,14 @@ title: "Postgraduate salaried teacher training"
 subcategory: Courses with a salary
 description: |-
     Explore salaried teacher training, including School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
-cta_adviser:
-  adviser:
-    text: "An adviser with years of teaching experience can answer all your questions about salaried teacher training. Chat by phone, text or email, as little or as often as you need."
+navigation: 20.20
+navigation_description: Find out about School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
+promo_content:
+  - "content/shared/block-promos/adviser_findsalary"
 cta_arrow_link:
   find-courses:
     link_target: "https://find-teacher-training-courses.service.gov.uk/results?funding%5B%5D=salary&funding%5B%5D=apprenticeship&applications_open=true&order=course_name_ascending"
     link_text: "Find a salaried teacher training course"
-navigation: 20.20
-navigation_description: Find out about School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 keywords:
     - Teach First
     - School Direct
@@ -115,5 +114,3 @@ $find-courses$
 Teach First delivers a 2 year employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards QTS with a PGCE. 
 
 To apply and find out more, you should [visit the Teach First website](https://www.teachfirst.org.uk/).
-
-$adviser$
