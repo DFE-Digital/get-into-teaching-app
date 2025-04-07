@@ -36,7 +36,7 @@ expander:
     title: funding and support if you're a parent or carer
     text: |-
       <p>
-      If you do not have <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for this financial support.
+      If you do not have <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you are unlikely to be eligible for this financial support.
       </p>
       <p>
       You will still be entitled to adjustments to help you train. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.</p>
