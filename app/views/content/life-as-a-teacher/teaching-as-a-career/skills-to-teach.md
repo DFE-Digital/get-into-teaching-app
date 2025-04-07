@@ -10,4 +10,5 @@ keywords:
 content: 
   - "content/life-as-a-teacher/teaching-as-a-career/skills-to-teach/header"
   - "content/life-as-a-teacher/teaching-as-a-career/skills-to-teach/article"
+  - "content/shared/block-promos/mailing_adviser_routes"
 ---
