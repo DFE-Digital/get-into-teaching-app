@@ -33,10 +33,10 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
   * [Using the same content across multiple pages - partial](#using-the-same-content-across-multiple-pages-partials)
   * [Values](#values)
 * [Creating a new page](#creating-a-new-page)
-  * [Creating a subject page](#creating-a-subject-page)
-  * [Creating an inspirational page](#creating-an-inspirational-page)
-  * [Saving a change](#saving-a-change)
-  * [Previewing a change](#preview-a-change)
+* [Creating a subject page](#creating-a-subject-page)
+* [Creating an inspirational page](#creating-an-inspirational-page)
+* [Saving a change](#saving-a-change)
+* [Previewing a change](#preview-a-change)
 * [Search engine optimisation](#search-engine-optimisation)
 * [Navigation](#navigation)
 * [Internship providers](#internship-providers)
@@ -809,7 +809,7 @@ Here is a blank version to take and fill in:
 - navigation_description: 
 - keywords: 
 
-### Creating a subject page
+## Creating a subject page
 
 To create a new subject page, go to the folder content/life-as-a-teacher/explore-subjects. Then copy one of the current folders inside, e.g. English.
 
@@ -858,7 +858,7 @@ content:
 ---
 ```
 
-### Creating an inspiration page
+## Creating an inspiration page
 
 Create a folder under ‘content/life-as-a-teacher/sub-category’
 
@@ -918,7 +918,7 @@ And copy and paste an exiting card such as:
 
 Update the title, description and image as required.
 
-### Add a quote with image component
+## Add a quote with image component
 
 Add this code to a html file:
 
