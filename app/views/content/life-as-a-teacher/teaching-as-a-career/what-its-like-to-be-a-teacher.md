@@ -18,5 +18,5 @@ keywords:
 content:
   - "content/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher/header" 
   - "content/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher/article"
-  
+  - "content/shared/block-promos/mailing_adviser_routes"
 ---
