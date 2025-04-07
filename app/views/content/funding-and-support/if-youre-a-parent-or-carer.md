@@ -5,7 +5,7 @@ subcategory: Extra support
 description: |-
   Find out what extra grants and schemes are available when completing your teacher training if you have children or other caring responsibilities.
 promo_content:
-  - "content/shared/block-promos/mailing_adviser_routes"
+  - "content/shared/block-promos/adviser_mailing_routes"
 cta_arrow_link:
   careerchanger:
     link_target: /life-as-a-teacher/change-careers

@@ -6,7 +6,7 @@ description: |-
     Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 navigation: 20.35
 promo_content:
-  - "content/shared/block-promos/mailing_adviser_routes"
+  - "content/shared/block-promos/adviser_mailing_routes"
 cta_arrow_link:
   bursaries:
     link_target: "/funding-and-support/scholarships-and-bursaries"
