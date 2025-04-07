@@ -512,6 +512,9 @@ To add them to a html file, use the above code inside the following container. H
   </section>
 </div>
 ```
+
+Where you're using the same combination of promos across multiple pages, you can store the block promo code in file and render it on the pages that need it.
+
 If you want to use these inside a markdown file, create a separate html file and use the above code inside it. Then on your markdown file you can link to it like this example:
 
 ```yaml
