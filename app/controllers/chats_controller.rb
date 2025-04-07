@@ -35,6 +35,7 @@ private
 
   def window_envs
     @window_envs ||= {
+      CHAT_ENVIRONMENT: ENV["CHAT_ENVIRONMENT"] || "etc",
       TENANT_TARGET: ENV["CHAT_TENANT_TARGET"],
       CHANNEL_ID_TARGET: ENV["CHAT_CHANNEL_ID_TARGET"],
     }
