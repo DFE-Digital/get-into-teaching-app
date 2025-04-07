@@ -1,7 +1,9 @@
 <div class="row">
   <section class="container">
     <section class="image-blocks">
-      <%= render CallsToAction::AdviserBlockComponent.new %>
+      <%= render CallsToAction::AdviserBlockComponent.new(
+        text: "Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience."
+      ) %>
       <%= render CallsToAction::ApplyBlockComponent.new %>
     </section>
   </section>
