@@ -18,6 +18,7 @@ This documentation aims to be a reference for content editors that want to make 
     * [Adviser (CTA) component](#adviser-cta-component)
     * [Routes (CTA) component](#routes-cta-component)
     * [Mailing list (CTA) component](#mailing-list-cta-component)
+    * [Block promos](#block-promos)
     * [Green arrow link (CTA) component](#green-arrow-link-cta-component)
     * [Main Content](#main-content)
     * [Sidebar](#sidebar)
@@ -85,6 +86,8 @@ It’s important that the content on Get Into Teaching uses a consistent tone of
 
 When writing new content, you can look at the language we use on other pages to help keep it consistent. For example, we always refer to children in schools as pupils, rather than students.
 
+When writing content for non-UK teachers and trainees do not use contractions, for example, use 'you will', instead of 'you'll'. Do not use negative contractions anywhere on the site (see the GOV.UK style guide for more information).
+
 Some useful resources include:
 
 * GIT brand book and messaging matrix (available on Sharepoint)
@@ -93,13 +96,14 @@ Some useful resources include:
 * [Department for Education style guide](https://design.education.gov.uk/design-system/style-guide)
 
 In some cases, policy teams may also ask us to word things in a certain way or include specific information. Unless there are commercial reasons why we need to use certain language, we can amend requested wording as needed to be consistent with the Get Into Teaching tone of voice.
+
 ## Content Editing Info/Tips
 
 The majority of pages on the website are formatted in Markdown, which is a lightweight markup language designed for creating and formatting text.
 
 There is a [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) that serves as a good reference on how to standard formatting, such as making something **bold** or *italic*. In conjunction with page frontmatter (see below) we can do some extra GiT-specific things in our Markdown, which this section aims to explain.
 
-**You'll need to check if the page is in markdown or html** as some pages have been coded in html. Depending on which it is you need to make sure you're consistent, so for e.g. if you have a section in markdown you can't add a link using html code it needs to also be in markdown.
+**You'll need to check if the page is in markdown or html** as some pages have been coded in html. Depending on which it is you need to make sure you're consistent, so for e.g. if you have a section in markdown you cannot add a link using html code it needs to also be in markdown.
 
 ### Headings
 
@@ -563,6 +567,53 @@ Alternatively, if you need to insert a mailing lists component in an erb file, y
 )%>
 ```
 
+### Block promos
+
+You can use either 2 or 3 block promos at once and pick from the 10 available options:
+
+| Promo | Code |
+| -------- | ------- |
+| Mailing list | <%= render CallsToAction::MailinglistBlockComponent.new %> |
+| Routes | <%= render CallsToAction::RoutesBlockComponent.new %> |
+| Advisers | <%= render CallsToAction::AdviserBlockComponent.new %> |
+| School experience | <%= render CallsToAction::GetSchoolExperienceBlockComponent.new %> |
+| Find | <%= render CallsToAction::FindBlockComponent.new %> |
+| Apply | <%= render CallsToAction::ApplyBlockComponent.new %> |
+| Events | <%= render CallsToAction::EventsBlockComponent.new %> |
+| Life as a teacher links | <%= render CallsToAction::LifeAsAteacherBlockComponent.new %> |
+| Teacher stories links | <%= render CallsToAction::TeacherStoriesBlockComponent.new %> |
+| Get support links | <%= render CallsToAction::GetSupportBlockComponent.new %> |
+
+To add them to a html file, use the above code inside the following container. Here you can also specify if you want different text to the default text:
+
+```html
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::MailinglistBlockComponent.new %>
+      <%= render CallsToAction::RoutesBlockComponent.new %>
+      <%= render CallsToAction::AdviserBlockComponent.new(
+          title: "Example title",
+          image: "image.jpg",
+          title_color: "green",
+          text: "Example text",
+          link_text: "Example link",
+          link_target: "link/example"
+      ) %>
+    </section>
+  </section>
+</div>
+```
+Where you're using the same combination of promos across multiple pages, you can store the block promo code in file and render it on the pages that need it.
+
+If you want to use these inside a markdown file, create a separate html file and use the above code inside it. Then on your markdown file you can link to it like this example:
+
+```yaml
+content:
+  - "content/shared/subject-pages/block-promo"
+```
+
+
 ### Green arrow link (CTA) component
 
 You can use the green arrow link (call to action) component to create a more prominent hyperlink call to action. You can use the component:
@@ -575,6 +626,12 @@ The component should not be used:
 * on every page, if there is not a suitable use for it
 * to direct to pages that are not useful for most people e.g. veterans, SKITT
 * to direct to external sites like UCAS or Teach First
+
+#### How to use the green arrow component
+
+The green arrow links should not have a full-stop after the text. 
+
+If you are using a green arrow link on a page, then do not link full sentences on a separate line as well.
 
 It takes the following parameters and both should be specified:
 

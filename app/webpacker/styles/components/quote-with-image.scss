@@ -14,7 +14,7 @@
     flex-direction: column;
     flex-grow: 1;
     background-color: $blue;
-    padding-bottom: 40px; // this compensates for the space taken up by the title
+    padding-bottom: 55px; // this compensates for the space taken up by the title
 
     @include mq($from: tablet) {
       width: 50%;
@@ -124,6 +124,8 @@
     width: fit-content;
     position: relative;
     left: 30px;
+
+    h1, h2, h3, h4, h5, h6 { margin: 0; }
 
     @include mq($from: mobile, $until: desktop) {
       left: 50px;
