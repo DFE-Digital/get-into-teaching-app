@@ -7,6 +7,10 @@ navigation: 20.20
 navigation_description: Find out about School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
 promo_content:
   - "content/shared/block-promos/adviser_findsalary"
+cta_arrow_link:
+  find-courses:
+    link_target: "https://find-teacher-training-courses.service.gov.uk/results?funding%5B%5D=salary&funding%5B%5D=apprenticeship&applications_open=true&order=course_name_ascending"
+    link_text: "Find a salaried teacher training course"
 keywords:
     - Teach First
     - School Direct
