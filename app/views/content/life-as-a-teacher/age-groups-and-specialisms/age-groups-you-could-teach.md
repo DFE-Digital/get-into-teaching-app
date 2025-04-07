@@ -35,7 +35,7 @@ The teaching content is broad, covering the whole range of national curriculum s
 
 If you like the energy and curiosity of young children, and would be comfortable covering a wide range of subjects, you might prefer teaching in primary schools. 
 
-If you are interested in [training to be a primary teacher](/life-as-a-teacher/age-groups-and-specialisms/primary), you could consider options for primary teaching with a subject specialism like maths or English. This will cover all of the subjects but with a focus on your subject specialisation. 
+If you are interested in [training to be a primary teacher](/life-as-a-teacher/age-groups-and-specialisms/primary), you could consider options for primary teaching with a subject specialism like maths or English. This will cover all of the subjects but with a focus on your subject specialisation.
 
 ### Secondary (ages 11 to 18)
 Children start secondary school when they’re 11. There are up to 3 stages in secondary school: 
