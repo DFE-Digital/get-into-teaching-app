@@ -7,11 +7,24 @@
       <%= render 'content/shared/teaching/benefits' %>
       <%= render 'content/shared/teaching/why_teach' %>
   </section>
+</div>
 
+<div class="row inset">
+  <div class="video">
+    <section class="col col-720">
+      <%= render Content::YoutubeVideoComponent.new(
+        id: "oJjoodXrvlU",
+        title: "A video about what a career in teaching taught maths teacher Juvayriyah"
+      ) %>
+      <p><a href="/shared/transcripts/what-teaching-taught-me-juvayriyah">Read the transcript for the 'What teaching taught me - Juvayriyah' video</a>.</p>
+    </section>
+  </div>
+</div>
+
+<div class="row inset">
   <section class="col col-720">
     <%= render 'content/shared/quotes/quote_maths_rotna' %>
     </section>
-
   <section class="col col-720 col-space-l-top">
     <h2 class="heading--box-blue">Shape your pupils' futures</h2>
     <div class="inset">

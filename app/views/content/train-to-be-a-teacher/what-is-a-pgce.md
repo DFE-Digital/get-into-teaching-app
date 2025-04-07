@@ -8,6 +8,10 @@ backlink: "../../"
 navigation: 20.30
 navigation_title: Postgraduate certificate in education (PGCE)
 navigation_description: Having a PGCE as well as qualified teacher status (QTS) can help you develop your teaching skills and knowledge.
+youtube_video:
+  what-teaching-taught-me:
+    id: oJjoodXrvlU
+    title: A video about what a career in teaching taught maths teacher Juvayriyah
 calls_to_action:
   find:
     name: find
@@ -107,6 +111,10 @@ You also need the following GCSEs at grade 4 (C) or above, or equivalent qualifi
 If you're not sure which route into teaching is right for you, [find routes into teaching based on your circumstances](/routes-into-teaching). 
 
 $check-your-qualifications$
+
+$what-teaching-taught-me$
+
+Read the [transcript for the 'What teaching taught me - Juvayriyah' video](/shared/transcripts/what-teaching-taught-me-juvayriyah).
 
 ## What is a postgraduate diploma in education (PGDE)?
 
