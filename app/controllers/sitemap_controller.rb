@@ -36,8 +36,6 @@ private
     Nokogiri::XML::Builder.new(encoding: "UTF-8") do |xml|
       xml.urlset(xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9") do
         all_sitemap_pages.each do |path, metadata|
-          next if metadata[:noindex]
-
           xml.url do
             xml.loc(request.base_url + page_location(path))
             xml.lastmod(lastmod_date(path, metadata))
@@ -49,7 +47,7 @@ private
   end
 
   def all_sitemap_pages
-    published_pages.merge(OTHER_PATHS)
+    published_pages.merge(OTHER_PATHS).reject { |_path, metadata| metadata[:noindex] }
   end
 
   def lastmod_date(path, metadata = nil)
