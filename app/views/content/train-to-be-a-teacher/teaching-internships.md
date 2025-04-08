@@ -13,7 +13,7 @@ navigation_description: Earn $teachinginternship_weekly$ per week and find out w
 content:
   - content/train-to-be-a-teacher/teaching-internship-providers/listing
 promo_content:
-  - "content/shared/block-promos/adviser_find_school"
+  - "content/shared/block-promos/adviser_mailing_school"
 provider_groups:
   East Midlands:
     providers:

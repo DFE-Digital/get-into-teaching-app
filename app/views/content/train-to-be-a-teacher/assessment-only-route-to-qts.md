@@ -13,7 +13,7 @@ fullwidth: true
 content:
   - content/train-to-be-a-teacher/assessment-only-route-to-qts/listing
   - content/train-to-be-a-teacher/assessment-only-route-to-qts/update-details
-  - content/shared/block-promos/mailing_adviser_routes
+  - content/shared/block-promos/adviser_routes
 provider_groups:
   National:
     providers:
