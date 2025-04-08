@@ -167,7 +167,7 @@ If you need to apply for another visa, for example, a Skilled Worker visa, you w
 ## Get help
 
 
-Contact the [UK Council for International Student Affairs website](https://www.ukcisa.org.uk/About-UKCISA) for advice on what financial support may be available.
+Contact the [UK Council for International Student Affairs website](https://www.ukcisa.org.uk) for advice on what financial support may be available.
 
 You may be eligible for personalised support from a teacher training adviser. They can help with your teacher training application.
 
