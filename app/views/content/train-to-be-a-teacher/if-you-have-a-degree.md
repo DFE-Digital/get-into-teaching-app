@@ -81,7 +81,7 @@ All teacher training involves mostly classroom placements with some theoretical 
 
 This means that even if your course provider is a university, you'll still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a university. 
 
-The important thing to remember is that regardless of your course provider, all teacher training involves around 120 days of school placements in at least 2 schools.
+Regardless of your course provider, all teacher training involves at least 2 school placements over a minimum of 24 weeks.
 
 $expect$
 $olivia$

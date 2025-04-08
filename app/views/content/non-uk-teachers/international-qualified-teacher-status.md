@@ -19,7 +19,7 @@ International qualified teacher status (iQTS) is a teaching qualification that's
 
 ## Why choose iQTS?
 
-iQTS is offered by teacher training providers in England that work with schools around the world. Alongside online tutorials and lectures, you’ll spend a minimum of 120 days gaining practical experience in a school in your country. You'll also get in-person support from a trained mentor.
+iQTS is offered by teacher training providers in England that work with schools around the world. Alongside online tutorials and lectures, you’ll spend a minimum of 24 weeks gaining practical experience in a school in your country. You'll also get in-person support from a trained mentor.
 
 iQTS allows you to train to teach pupils aged 5 to 11, or pupils 11 to 18 in the full range of [secondary school subjects taught in English schools](https://www.gov.uk/national-curriculum).
 
@@ -119,8 +119,6 @@ The following providers specialise in particular regions:
 * [University of Chichester](https://www.chi.ac.uk/teaching/course/ipgce/)
 
 * [University of Northampton](https://www.northampton.ac.uk/courses/postgraduate-certificate-in-education-international-iqts/)
-
-* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning)
 
 ## Assessment for iQTS
 

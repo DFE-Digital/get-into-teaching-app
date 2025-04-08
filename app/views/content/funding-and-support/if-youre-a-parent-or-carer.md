@@ -4,9 +4,8 @@ heading: "Funding and support if you're a parent or carer"
 subcategory: Extra support
 description: |-
   Find out what extra grants and schemes are available when completing your teacher training if you have children or other caring responsibilities.
-cta_adviser:
-  adviser:
-    text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
+promo_content:
+  - "content/shared/block-promos/adviser_mailing_routes"
 cta_arrow_link:
   careerchanger:
     link_target: /life-as-a-teacher/change-careers
@@ -118,4 +117,3 @@ To be eligible, you need to:
 * have a household income of less than $finance_adultdependantsgrant_income$
 
 $adult-grant$
-$adviser$

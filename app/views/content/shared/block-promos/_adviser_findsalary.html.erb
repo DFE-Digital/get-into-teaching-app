@@ -1,0 +1,12 @@
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::AdviserBlockComponent.new %>
+      <%= render CallsToAction::FindBlockComponent.new(
+        title: "Find salaried courses",
+        link_target: "https://find-teacher-training-courses.service.gov.uk/results?funding%5B%5D=salary&funding%5B%5D=apprenticeship&applications_open=true&subject_name=&subject_code=&location=&radius=10&provider_name=&provider_code=&order=course_name_ascending",
+        text: "Explore the different salaried teacher training courses available."
+      ) %>
+    </section>
+  </section>
+</div>
