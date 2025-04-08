@@ -9,7 +9,7 @@ navigation: 20.30
 navigation_title: Postgraduate certificate in education (PGCE)
 navigation_description: Having a PGCE as well as qualified teacher status (QTS) can help you develop your teaching skills and knowledge.
 promo_content:
-  - "content/shared/block-promos/adviser_mailing_find"
+  - "content/shared/block-promos/mailing_adviser_routes"
 cta_arrow_link:
   qts:
     link_target: "/train-to-be-a-teacher/what-is-qts"
