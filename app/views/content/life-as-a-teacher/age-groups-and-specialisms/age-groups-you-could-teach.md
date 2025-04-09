@@ -3,9 +3,8 @@ title: Age groups you could teach
 heading: Age groups you could teach
 description: |-
   Explore the key stages and ages you could teach, whether that's primary, secondary, early years, college, or pupils with special educational needs.
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including learning more about the age groups you could teach.
+promo_content:
+  - "content/shared/block-promos/adviser_mailing"
 cta_arrow_link:
   subjects:
     link_target: "/life-as-a-teacher/explore-subjects"
@@ -36,7 +35,7 @@ The teaching content is broad, covering the whole range of national curriculum s
 
 If you like the energy and curiosity of young children, and would be comfortable covering a wide range of subjects, you might prefer teaching in primary schools. 
 
-If you are interested in training to be a primary teacher, you could consider options for primary teaching with a subject specialism like maths or English. This will cover all of the subjects but with a focus on your subject specialisation.
+If you are interested in [training to be a primary teacher](/life-as-a-teacher/age-groups-and-specialisms/primary), you could consider options for primary teaching with a subject specialism like maths or English. This will cover all of the subjects but with a focus on your subject specialisation.
 
 ### Secondary (ages 11 to 18)
 Children start secondary school when they’re 11. There are up to 3 stages in secondary school: 
@@ -46,7 +45,7 @@ Children start secondary school when they’re 11. There are up to 3 stages in s
 * key stage 5 (KS5) includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms, or colleges
 
 Pupils work towards national qualifications, which are usually GCSEs during KS4. Pupils take A levels or other similar qualifications during KS5. 
-[Explore more about becoming a secondary school teacher](/life-as-a-teacher/age-groups-and-specialisms/secondary). 
+Learn more about [training to be a secondary school teacher](/life-as-a-teacher/age-groups-and-specialisms/secondary).
 
 Subjects at this level include core subjects such as English, maths and science, as well as many others. The full range of subjects available to teach at secondary level will depend on the school.
 
@@ -95,5 +94,3 @@ There are three key areas:
 * basic skills courses covering literacy and numeracy. 
 
 Learn more about [teaching in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers).
-
-$mailinglist$

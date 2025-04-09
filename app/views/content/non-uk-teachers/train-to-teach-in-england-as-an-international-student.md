@@ -17,15 +17,15 @@ expander:
     header: "Refugees and asylum seekers:"
     title: funding support
     text: |- 
-      <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you'll usually be eligible for financial support to help you train</a>.
-      <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
-      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+      <p>If you <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">have refugee status you will usually be eligible for financial support to help you train</a>.
+      <p>If you are in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you are unlikely to be eligible for financial support.</p>
+      <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
   ukraine-visas:
     header: "Ukraine citizens:"
     title: help with visas
     text: |-
       <p>
-      If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:
+      If you are from Ukraine and want to teach or train to teach in England, you can check visa support for:
       </p>
         <ul>
           <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
@@ -165,6 +165,6 @@ To find out about teaching in other areas of the UK, visit the:
 
 You may be eligible for personalised support from a teacher training adviser. They can help with your application to a training provider or school.
 
-To check if you're eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
+To check if you are eligible for an adviser, you can call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.

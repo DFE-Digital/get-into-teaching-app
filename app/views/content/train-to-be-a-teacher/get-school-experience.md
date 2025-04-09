@@ -13,9 +13,8 @@ calls_to_action:
           Use our service to search for and organise school experience in England.
         link_text: "Search for school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including learning more about what teaching is like.
+promo_content:
+  - "content/shared/block-promos/adviser_mailing_school"
 navigation: 20.30
 navigation_title: Get school experience
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
@@ -27,7 +26,7 @@ quote:
 expander:
   non-uk-get-school-experience:
     title: get school experience
-    text: To use the Get school experience service, you'll need the right to work in the UK. This may be difficult if you have not started your training yet. However, you do not need classroom experience to train to teach in England.  
+    text: To use the Get school experience service, you will need the right to work in the UK. This may be difficult if you have not started your training yet. However, you do not need classroom experience to train to teach in England.  
 ---
 
 You can visit schools to get unpaid experience in the classroom before you start your initial teacher training (ITT).

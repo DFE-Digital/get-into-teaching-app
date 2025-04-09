@@ -15,7 +15,7 @@ expander:
       <p>
       If you qualified as a teacher outside the UK, you can teach in England for up to 4 years without QTS. However, having QTS may improve your chances of getting a teaching job in England.</p>
       <p>
-      After 4 years, you'll need QTS to teach in many schools in England.</p>
+      After 4 years, you will need QTS to teach in many schools in England.</p>
       <p>
       <a href="/non-uk-teachers/teach-in-england-if-you-trained-overseas">Find out how to teach in England if you trained outside the UK</a>.
       </p>    
@@ -27,9 +27,8 @@ expander:
       <p>
       With iQTS, you train to teach where you live or work, with no need to visit the UK. If you get iQTS, you automatically get QTS.
       </p>
-cta_mailinglist:
-  mailinglist:
-    text: Get helpful guidance and support on getting into teaching, including how to get the qualifications you need.
+promo_content:
+  - "content/shared/block-promos/mailing_adviser_routes"
 cta_arrow_link:
   qts-teacher-training:
     link_target: "/routes-into-teaching"

@@ -12,8 +12,8 @@ navigation_title: Teaching internships
 navigation_description: Earn $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/train-to-be-a-teacher/teaching-internship-providers/listing
-
-
+promo_content:
+  - "content/shared/block-promos/adviser_mailing_school"
 provider_groups:
   East Midlands:
     providers:
@@ -285,12 +285,12 @@ provider_groups:
         name: "Andy Gibson"
         email: "teachertraining@coopacademies.co.uk"
       - header: "Cumbria Education Trust"
-        link: "https://www.williamhoward.cumbria.sch.uk/about-us/teaching-internships/"
+        link: "https://www.cumbriaeducationtrust.org/traintoteach/"
         applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Cumbria"
-        name: "Andy Guest"
-        email: "aguest@williamhoward.cumbria.sch.uk"
+        name: "Joanna Daulby"
+        email: "jdaulby@workingtonacademy.org"
       - header: "Great Schools Trust"
         link: "https://www.greatschoolstrust.org/train-with-us/internships"
         applications: "Open"
@@ -365,7 +365,7 @@ provider_groups:
         email: "lwylie@i2ipartnership.co.uk"
       - header: "Ringwood School"
         link: "https://www.ringwood.hants.sch.uk/page/?title=Paid+Internships&pid=52"
-        applications: "Open April"
+        applications: "Opening 28 April"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Hampshire, Dorset, Bournemouth, Poole, Ringwood, Christchurch"
         name: "Clare Adams"
@@ -416,7 +416,7 @@ provider_groups:
         email: "admin@odysseytsh.org"
       - header: "Ringwood School"
         link: "https://www.ringwood.hants.sch.uk/page/?title=Paid+Internships&pid=52"
-        applications: "Open April"
+        applications: "Opening 28 April"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Bournemouth, Christchurch and Poole, Dorset"
         name: "Clare Adams"
@@ -481,7 +481,7 @@ provider_groups:
         email: "ad@princehenrys.worcs.sch.uk"
       - header: "St Joseph's College"
         link: "https://www.sjcscitt.co.uk/page/?title=DfE+Teaching+Internships&pid=26"
-        applications: "Open March"
+        applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Cheshire East, Cheshire West and Chester, Staffordshire, Stoke-on-Trent"
         name: "Sam Chater"
@@ -532,7 +532,7 @@ provider_groups:
         email: "m.lairini@northerneducationtrust.org"
       - header: "Northern Star Academies Trust"
         link: "https://www.nsitt.org.uk/our-programmes/teaching-internships1/"
-        applications: "Open April"
+        applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Bradford, Harrogate, North Yorkshire"
         name: "Helen Smith"

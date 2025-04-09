@@ -4,12 +4,11 @@ heading: "Funding and support if you have a health condition, learning difficult
 subcategory: Extra support
 description: |-
     Find out about the support you can get while training to teach if you're neurodivergent, have a long-term health condition, or other accessibility needs.
-cta_adviser:
-  adviser:
-    text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.25
 navigation_title: Funding and support if you have a learning difficulty, health condition or disability
 navigation_description: Find out about the support you can get while training to teach if you're neurodivergent, have a long-term physical or mental health condition, or have any other accessibility need.
+promo_content:
+  - "content/shared/block-promos/adviser_mailing_routes"
 keywords:
     - Disability
     - Disabilities
@@ -19,10 +18,10 @@ keywords:
     - Disabled Students’ Allowances
 expander:
   international-content:
-    title: funding and support if you're disabled
+    title: funding and support if you have a health condition or disability
     text: |-
       <p>
-      If you do not have <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for this financial support (unless you’ve applied to the Afghan or Ukraine resettlement schemes). Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.
+      If you do not have <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you are unlikely to be eligible for this financial support (unless you have applied to the Afghan or Ukraine resettlement schemes). Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.
       </p>
       <p>
       You will still be entitled to adjustments to help you train.</p>
@@ -87,4 +86,3 @@ $access-to-work$
 Teacher training providers can make lots of adjustments so you can attend an interview and complete your teacher training.
 
 $adjustments$
-$adviser$
