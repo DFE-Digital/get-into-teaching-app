@@ -482,7 +482,13 @@ body > header {
         padding-bottom: 20px;
         width: calc(100% - 100px);
       }
-    } //desktop, secondary nav
+    } // from desktop, secondary nav
+
+    @include mq($until: desktop) {
+      div.desktop-level2-wrapper, div.desktop-level3-wrapper {
+        width: 100%;
+      }
+    }
   } // primary navigation
 
   //@include mq($from: desktop) {
