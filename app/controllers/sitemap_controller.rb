@@ -23,6 +23,7 @@ class SitemapController < ApplicationController
 
   def show
     @sitemap_data ||= all_sitemap_pages.sort_by { |_path, metadata| metadata[:title] }
+    @a_z_sitemap_data ||= @sitemap_data.group_by { |_path, metadata| metadata[:title][0] }
 
     respond_to do |format|
       format.xml { render xml: build.to_xml }
@@ -81,7 +82,7 @@ private
   end
 
   def set_page_title
-    @page_title = "Sitemap"
+    @page_title = "A to Z index"
   end
 
   def set_breadcrumb

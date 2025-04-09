@@ -1,14 +1,29 @@
 <%= render Content::LandingHeroComponent.new(
-  title: "Sitemap",
+  title: "A to Z index",
   colour: "pastel yellow-yellow",
 ) %>
 
+<%= meta_tag(key: 'description', value: "Explore our comprehensive A to Z index of all the pages on Get Into Teaching") %>
+
 <section class="container">
   <div class="row inset">
-    <ul>
-      <% @sitemap_data.each do |page, metadata| %>
-        <li><%= link_to metadata[:title], page %></li>
+    <% ('A'..'Z').each do |letter| %>
+      <% if @a_z_sitemap_data.key?(letter) %>
+        <%= link_to letter, "##{letter}", class: "link" %>
+      <% else %>
+        <span><%= letter %></span>
       <% end %>
-    </ul>
+    <% end %>
+  </div>
+
+  <div class="row inset">
+    <% @a_z_sitemap_data.each do |letter, pages| %>
+      <h2 id="<%= letter %>"><%= letter.upcase %></h2>
+      <ul>
+        <% pages.each do |page, metadata| %>
+          <li><%= link_to metadata[:title], page %></li>
+        <% end %>
+      </ul>
+    <% end %>
   </div>
 </section>
