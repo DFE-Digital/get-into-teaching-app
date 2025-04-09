@@ -102,5 +102,3 @@ $qts-ao$
 If you trained to teach in Wales, your QTS will automatically be recognised in England. [The Education Workforce Council (EWC) website has more information on being awarded QTS in England](https://www.ewc.wales/site/index.php/en/).
 
 If you trained to teach in Scotland or Northern Ireland, you can [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). If your QTS application is successful, you will gain QTS without any further fees or training.
-
-$mailinglist$
