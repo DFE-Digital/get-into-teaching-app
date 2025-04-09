@@ -152,7 +152,7 @@ Submit your application to a school that can sponsor visas, and if you are offer
 
 ### Your professional qualifications 
 
-If you have not got QTS, schools you apply to will want to see alternative evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) (UK ENIC) showing how your qualifications compare to English ones.  
+If you do not have QTS, schools you apply to will want to see alternative evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) (UK ENIC) showing how your qualifications compare to English ones.  
 
 ### Tips on applying
 
