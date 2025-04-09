@@ -9,4 +9,4 @@ When I first started teaching, I would probably say that I was really nervous. I
 
 Recently, I got the opportunity to take a group of girls to a maths competition. It was all about encouraging girls in STEM. It was amazing to see how much they loved the competition and how rewarding it was for them.
 
-Being a female teacher, but teaching maths is really, really important. You can flourish. You watch others improve. It’s so, so fulfilling. Maths is great. Maths is so cool. The world revolves around maths, and we need more people to show how important it is. 
+Being a female teacher teaching maths is really, really important. You can flourish. You watch others improve. It’s so, so fulfilling. Maths is great. Maths is so cool. The world revolves around maths, and we need more people to show how important it is. 
