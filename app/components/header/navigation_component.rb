@@ -41,7 +41,7 @@ module Header
           if mode == :mobile && resource.children?
             [
               row_break,
-              category_list(resource, mode, css_class: "category-links-list hidden-menu hidden-desktopXXX"),
+              category_list(resource, mode, css_class: "category-links-list hidden-menu"),
             ]
           end,
         ])
@@ -91,7 +91,7 @@ module Header
             end,
             row_break,
             if mode == :mobile
-              page_list(resource, subcategory, mode, css_class: "page-links-list hidden-menu hidden-desktopXXX")
+              page_list(resource, subcategory, mode, css_class: "page-links-list hidden-menu")
             end,
           ],
         )

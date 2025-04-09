@@ -304,12 +304,6 @@ body > header {
 
     // desktop and wide screen
     @include mq($from: desktop) {
-      .hidden-desktop {
-        display: none;
-      }
-    }
-
-    @include mq($from: desktop) {
       &.expanded {
         padding-top: 20px;
         padding-bottom: 20px;
