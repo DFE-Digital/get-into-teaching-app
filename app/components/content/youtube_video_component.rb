@@ -1,14 +1,15 @@
 module Content
   class YoutubeVideoComponent < ViewComponent::Base
-    attr_reader :id, :title
+    attr_reader :id, :title, :orientation
 
     include ContentHelper
 
-    def initialize(id:, title:)
+    def initialize(id:, title:, orientation: :landscape)
       super
 
       @id = id
       @title = substitute_values(title)
+      @orientation = orientation
     end
 
     def src

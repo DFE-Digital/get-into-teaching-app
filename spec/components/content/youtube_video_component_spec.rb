@@ -32,4 +32,16 @@ describe Content::YoutubeVideoComponent, type: :component do
       it { expect { render }.to raise_error(ArgumentError, "title must be present") }
     end
   end
+
+  describe "orientation" do
+    context "when not present" do
+      it { is_expected.to have_css(".youtube-video.youtube-video--landscape iframe") }
+    end
+
+    context "when portrait" do
+      let(:component) { described_class.new(id: id, title: title, orientation: :portrait) }
+
+      it { is_expected.to have_css(".youtube-video.youtube-video--portrait iframe") }
+    end
+  end
 end

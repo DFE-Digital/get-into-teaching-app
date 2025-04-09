@@ -239,9 +239,21 @@ youtube_video:
 $return-to-teaching-advisers-video$
 ```
 
+To render vertical videos (9:16 aspect ratio), you can pass in the optional `orientation: :portrait` parameter.
+
+```yaml
+---
+youtube_video:
+  return-to-teaching-advisers-video:
+    id: 2NrLm_XId4k
+    title: A video about what Return to Teaching Advisers do
+    orientation: :portrait
+---
+```
+
 #### iframe
 
-When adding an iFrame elemet as part of Markdown content or a HTML page we should ensure it has an appropriate `title` attribute that explains the contents of the iFrame (in most of our cases we are showing a video). For example:
+When adding an iFrame element as part of Markdown content or a HTML page we should ensure it has an appropriate `title` attribute that explains the contents of the iFrame (in most of our cases we are showing a video). For example:
 
 ```
 <iframe
