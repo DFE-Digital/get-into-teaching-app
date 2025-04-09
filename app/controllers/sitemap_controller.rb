@@ -18,6 +18,7 @@ class SitemapController < ApplicationController
 
   before_action :set_page_title
   before_action :set_breadcrumb
+  before_action :set_metadata
 
   layout "minimal"
 
@@ -87,5 +88,9 @@ private
 
   def set_breadcrumb
     breadcrumb @page_title, request.path
+  end
+
+  def set_metadata
+    @front_matter["description"] = "Explore our comprehensive A to Z index of all the pages on Get Into Teaching"
   end
 end
