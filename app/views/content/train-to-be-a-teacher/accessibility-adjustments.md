@@ -4,12 +4,8 @@ heading: "Adjustments to help you train to teach"
 subcategory: Postgraduate teacher training
 description: |-
   Find out about adjustments teacher training providers can make to help you train.
-cta_adviser:
-  adviser:
-    text: Talk to an adviser with years of teaching experience about getting adjustments to help you become a teacher. Chat by phone, text or email, as little or as often as you need.
-calls_to_action:
-  find:
-    name: find
+promo_content:
+  - "content/shared/block-promos/adviser_find_school"
 navigation: 20.25
 navigation_title: Adjustments to help you train
 navigation_description: Find out about adjustments teacher training providers can make to help you train.
@@ -67,6 +63,3 @@ Find out more about [your rights under the Equality Act 2010](https://www.equali
 You may also be eligible for financial support to help cover the costs of any specialist equipment or study-related costs due to a health condition or disability.
 
 $financial-support$
-
-$find$
-$adviser$

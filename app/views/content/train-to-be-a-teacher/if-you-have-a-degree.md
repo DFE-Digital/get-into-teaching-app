@@ -4,12 +4,8 @@ heading: "Train to teach if you have a degree or are studying for one"
 subcategory: Postgraduate teacher training
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
-cta_adviser:
-  adviser:
-    text: Talk to an adviser with years of teaching experience about your different training and funding options. Chat by phone, text or email, as little or as often as you need.
-calls_to_action:
-  find:
-    name: find
+promo_content:
+  - "content/shared/block-promos/adviser_find_school"
 cta_arrow_link:
   expect:
     link_target: "/train-to-be-a-teacher/initial-teacher-training"
@@ -41,13 +37,10 @@ expander:
     <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>"
     link_title: Learn more about fees and financial support for non-UK trainee teachers.
     link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees
-
-
   international-content:
     header: "Non-UK citizens:"
     title: train to teach in England
     text: If you are not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
-   
   ukraine-moving:
     header: "Ukraine citizens:"
     title: moving to the UK
@@ -126,5 +119,3 @@ $fees-and-funding$
 There are some differences in postgraduate teacher training courses. 
 
 $choosecourse$
-$find$
-$adviser$
