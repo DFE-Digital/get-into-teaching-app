@@ -14,7 +14,7 @@ calls_to_action:
         link_text: "Search for school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
 promo_content:
-  - "content/shared/block-promos/adviser_mailing_find"
+  - "content/shared/block-promos/adviser_mailing_school"
 navigation: 20.30
 navigation_title: Get school experience
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
