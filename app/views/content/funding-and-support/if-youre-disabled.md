@@ -18,10 +18,10 @@ keywords:
     - Disabled Students’ Allowances
 expander:
   international-content:
-    title: funding and support if you're disabled
+    title: funding and support if you have a health condition or disability
     text: |-
       <p>
-      If you do not have <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for this financial support (unless you’ve applied to the Afghan or Ukraine resettlement schemes). Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.
+      If you do not have <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you are unlikely to be eligible for this financial support (unless you have applied to the Afghan or Ukraine resettlement schemes). Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.
       </p>
       <p>
       You will still be entitled to adjustments to help you train.</p>

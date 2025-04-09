@@ -19,7 +19,7 @@ keywords:
 expander:
   SKE-bursaries:
     title: SKE bursaries
-    text: Most bursaries are only for UK citizens. However, you may be eligible for an SKE bursary if you're training to teach physics or languages.
+    text: Most bursaries are only for UK citizens. However, you may be eligible for an SKE bursary if you are training to teach physics or languages.
 ---
 
 You might need to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.

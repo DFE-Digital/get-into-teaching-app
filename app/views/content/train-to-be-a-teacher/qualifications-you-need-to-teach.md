@@ -16,7 +16,7 @@ cta_mailinglist:
 expander:
   check-your-qualifications:
     title: check your qualifications
-    text: If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England.
+    text: If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England.
     link_title: You can get help comparing English and international qualifications.
     link_url: /non-uk-teachers/non-uk-qualifications
   bursaries:
