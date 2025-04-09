@@ -67,28 +67,3 @@ body > header {
     }
   }
 }
-
-//.desktop-menu-container {
-//  grid-column-start: 1;
-//  grid-column-end: -1;
-//  display: grid;
-//  grid-template-columns: [left] 100px [category-links-start] 1fr [page-links-start] 1fr [hot-links-start] 1fr [content-end] 100px [right];
-//  grid-template-rows: [main-start] 1fr [main-end];
-//  background: #F0F0F0;
-//}
-//
-//.category-links {
-//  grid-column-start: category-links-start;
-//  grid-column-end: page-links-start;
-//}
-//
-//.page-links {
-//  grid-column-start: page-links-start;
-//  grid-column-end: hot-links-start;
-//  border-left: dotted lightgrey 1px;
-//}
-//
-//.key-links {
-//  grid-column-start: hot-links-start;
-//  grid-column-end: content-end;
-//}
