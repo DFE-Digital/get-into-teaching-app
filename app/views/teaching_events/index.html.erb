@@ -3,8 +3,8 @@
     <h1 class="heading-l heading--box-yellow">Events</h1>
     <p>Choose from 2 types of free events:</p>
     <ul>
-      <li>Get Into Teaching events - where you can talk to expert advisers, a range of local training providers and experienced teachers</li>
-      <li>Training provider events - where specific teacher training providers will talk about the courses they offer</li>
+      <li><strong>Get Into Teaching events - </strong> where you can talk to expert advisers, a range of local training providers and experienced teachers. <a href="/events/about-get-into-teaching-events"> Find out what happens at a Get Into Teaching event</a></li> 
+      <li><strong>Training provider events -</strong> where specific teacher training providers will talk about the courses they offer</li>
     </ul>
   </header>
   <div class="teaching-events__container">
@@ -18,16 +18,7 @@
       <% if @featured_events.any? %>
         <div class="teaching-events__events teaching-events__events--featured">
           <h2 class="heading-m">Upcoming Get Into Teaching events</h2>
-          <ol><%= render TeachingEvents::EventComponent.with_collection(@featured_events) %></ol>
-          <div class="teaching-events__about-git-banner">
-            <div class="teaching-events__about-git-banner--message">
-              <p>
-                Get Into Teaching events can answer your questions whether you're ready to start your career in teaching or just curious.
-              </p>
-            </div>
-            <div class="teaching-events__about-git-banner--link">
-              <%= link_to("What happens at a Get Into Teaching event?", about_git_events_path, class: "button button--white") %>
-            </div>
+          <ol><%= render TeachingEvents::EventComponent.with_collection(@featured_events) %></ol>         
           </div>
         </div>
       <% end %>
