@@ -32,7 +32,7 @@ expander:
     title: visas
     text: |-
       <p>
-      If you're a non-UK citizen and need a visa to come to England to train to teach, you need to make sure the course you’re applying for sponsors visas.  
+      If you are a non-UK citizen and need a visa to come to England to train to teach, you need to make sure the course you are applying for sponsors visas.  
       </p>
       <p>
       Find out <a href="/non-uk-teachers/visas-for-non-uk-trainees">how to apply for a visa to train to teach in England</a>.</p>
@@ -40,14 +40,14 @@ expander:
     title: check your qualifications
     text: |-
       <p>
-      If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>. 
+      If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>. 
       </p>
   ukraine-moving:
     header: "Ukraine citizens:"
     title: moving to the UK
     text: |- 
       <p>
-      Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
+      Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you are moving to the UK from Ukraine</a>.</p>
 quote:
   giorgio:
     text: "My best advice for a successful application is to be reflective in your personal statement and interview, think about why you want to teach, about the sort of classroom you envisage yourself in (and why) and talk about it!"
