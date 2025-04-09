@@ -114,7 +114,7 @@ $check-your-qualifications$
 
 $what-teaching-taught-me$
 
-Read the [transcript for the 'What teaching taught me - Juvayriyah' video](/shared/transcripts/what-teaching-taught-me-juvayriyah).
+Read the [transcript for the video 'What teaching taught me - Juvayriyah'](/shared/transcripts/what-teaching-taught-me-juvayriyah).
 
 ## What is a postgraduate diploma in education (PGDE)?
 

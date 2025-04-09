@@ -1,5 +1,5 @@
 ---
-title: Transcript for the 'What happens at a Get Into Teaching event' video
+title: Transcript for the video 'What happens at a Get Into Teaching event'
 description: Full transcript for the video 'What happens at a Get Into Teaching event' video.
 ---
 
