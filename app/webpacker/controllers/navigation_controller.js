@@ -137,9 +137,18 @@ export default class extends Controller {
 
   resizeContainer() {
     const dropdownBackground = document.getElementById('dropdown-background');
-    const categoryLinksList = document.querySelector('.category-links-list:not(.hidden-menu)')?.parentElement;
-    const pageLinksList = document.querySelector('.page-links-list:not(.hidden-menu)')?.parentElement;
-    const maxHeight = Math.max(pageLinksList?.getBoundingClientRect().height || 0, categoryLinksList?.getBoundingClientRect().height || 0);
+
+    const categoriesHeight =
+      document
+        .querySelector('.category-links-list:not(.hidden-menu)')
+        ?.parentElement.getBoundingClientRect().height || 0;
+
+    const pagesHeight =
+      document
+        .querySelector('.page-links-list:not(.hidden-menu)')
+        ?.parentElement.getBoundingClientRect().height || 0;
+
+    const maxHeight = Math.max(categoriesHeight, pagesHeight);
 
     if (maxHeight) {
       // Update the dropdown-background's height based on the height of the largest menu

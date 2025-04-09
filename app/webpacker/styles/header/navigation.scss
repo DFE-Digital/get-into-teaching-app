@@ -191,17 +191,12 @@ body > header {
         padding: 0 1em;
 
         > li {
-          //position: relative; //FIX ME
-
           flex-direction: row;
           flex-wrap: nowrap;
           justify-content: flex-start;
 
           > .menu-link {
             border-bottom: solid 4px transparent;
-          }
-
-          > .menu-link {
             display: inline-grid;
             grid-template-columns: minmax(min-content, max-content) min-content;
             grid-template-rows: 1fr;
@@ -249,7 +244,7 @@ body > header {
           .break {
             display: none;
           }
-        } //li
+        } // li
       } // desktop
     } // ol.primary
 
@@ -314,7 +309,6 @@ body > header {
       }
     }
 
-    //copied from Secondary nav
     @include mq($from: desktop) {
       &.expanded {
         padding-top: 20px;
@@ -414,7 +408,6 @@ body > header {
             }
           }
         }
-
 
         .nav-icon {
           padding-right: 0;
