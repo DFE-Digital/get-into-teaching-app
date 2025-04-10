@@ -27,6 +27,8 @@ module Content
         error_message = "#{required_attr} must be present"
         fail(ArgumentError, error_message) if send(required_attr).blank?
       end
+
+      fail(ArgumentError, "orientation is not valid") unless [:landscape, :portrait].include?(orientation)
     end
   end
 end

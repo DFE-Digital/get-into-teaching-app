@@ -43,5 +43,11 @@ describe Content::YoutubeVideoComponent, type: :component do
 
       it { is_expected.to have_css(".youtube-video.youtube-video--portrait iframe") }
     end
+
+    context "when invalid" do
+      let(:component) { described_class.new(id: id, title: title, orientation: :wonky) }
+
+      it { expect { render }.to raise_error(ArgumentError, "orientation is not valid") }
+    end
   end
 end
