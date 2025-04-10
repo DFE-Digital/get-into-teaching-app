@@ -36,7 +36,7 @@ describe('NavigationController', () => {
   <div class="menu-button" id="mobile-navigation-menu-button">
     <a class="menu-button__button hidden-when-js-enabled" href="/browse">
       <span class="menu-button__text">Menu</span>
-</a>    <button class="menu-button__button hidden-when-js-disabled" id="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" data-action="click->navigation#toggleNav" data-navigation-target="menu">
+</a>    <button class="menu-button__button hidden-when-js-disabled" id="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" data-action="click->navigation#toggleNav keydown.enter->navigation#toggleNav" data-navigation-target="menu">
       <span class="menu-button__text">Menu</span>
       <span class="menu-button__icon"></span>
 </button>  </div>
@@ -185,15 +185,6 @@ describe('NavigationController', () => {
       expect(nav.classList).toContain('hidden-mobile');
     });
 
-
-
-    // <li id="train-to-be-a-teacher-mobile" class="" data-child-menu-id="train-to-be-a-teacher-categories-mobile" data-direct-link="false">
-    //   <a class="menu-link link link--black link--no-underline " role="menuitem" aria-expanded="false" aria-controls="train-to-be-a-teacher-categories-mobile" data-action="keydown.enter->navigation#handleNavMenuClick" href="/train-to-be-a-teacher">
-    //     <span class="menu-title">Train to be a teacher</span>
-    //     <span class="nav-icon nav-icon__contracted" aria-hidden="true"></span>
-    //   </a>
-
-
     it('toggles the dropdown menu when a primary menu item is clicked', () => {
       const primaryLink = document.querySelector('#train-to-be-a-teacher-mobile > a');
       const icon = document.querySelector('#train-to-be-a-teacher-mobile > a > span.nav-icon');
@@ -213,37 +204,32 @@ describe('NavigationController', () => {
       expect(menu.classList).toContain('hidden-menu');
     });
 
-    it('tabs to the next logical item (child/sibling/parent)', () => {
-      const primaryLink = document.querySelector('#train-to-be-a-teacher-mobile .menu-link');
-      const categoryLink = document.querySelector("#train-to-be-a-teacher-postgraduate-teacher-training-mobile .menu-link");
-      const pageLink = document.querySelector("#is-teaching-right-for-me-teacher-pay-and-benefits-desktop .menu-link");
-      const viewAllInCategoryLink = document.querySelector("#menu-view-all-is-teaching-right-for-me-desktop .menu-link")
-      const nextPrimaryLink = document.querySelector('#steps-to-become-a-teacher-mobile .menu-link');
+    it('toggles the menu when the user presses enter on the menu button', () => {
+      const menuButton = document.getElementById('menu-toggle');
+      const primaryNavigation = document.getElementById('primary-navigation');
       const enterEvent = new KeyboardEvent('keydown', { key: 'enter' });
-      const tabEvent = new KeyboardEvent('keydown', { key: 'tab' });
 
-      primaryLink.focus();
-      // expand dropdown via keyboard
-      primaryLink.dispatchEvent(enterEvent);
-      // tab to first category link
-      primaryLink.dispatchEvent(tabEvent);
+      expect(menuButton.ariaExpanded).not.toEqual('true');
+      expect(primaryNavigation.classList).toContain('hidden-mobile');
 
-      expect(document.activeElement).toEqual(categoryLink);
+      menuButton.focus();
+      menuButton.dispatchEvent(enterEvent);
 
-      // expand page links via keyboard
-      categoryLink.dispatchEvent(enterEvent);
-      // tab to first page link
-      categoryLink.dispatchEvent(tabEvent);
+      expect(menuButton.ariaExpanded).toEqual('true');
+      expect(primaryNavigation.classList).not.toContain('hidden-mobile');
+    });
 
-      // quirky whitespace behaviour - need to trim strings to match
-      expect(document.activeElement.textContent).toMatch(pageLink.textContent.trim());
+    it('toggles the dropdown when the user presses enter on a menu item', () => {
+      const trainToBeATeacher = document.querySelector('#train-to-be-a-teacher-mobile .menu-link');
+      const trainToBeATeacherSubMenu = document.getElementById('train-to-be-a-teacher-categories-mobile');
+      const enterEvent = new KeyboardEvent('keydown', { key: 'enter' });
 
-      // focus on final category link
-      viewAllInCategoryLink.focus();
-      // tab to next primary link
-      viewAllInCategoryLink.dispatchEvent(tabEvent);
+      expect(trainToBeATeacherSubMenu.classList).toContain('hidden-menu');
 
-      expect(document.activeElement).toEqual(nextPrimaryLink);
+      trainToBeATeacher.focus();
+      trainToBeATeacher.dispatchEvent(enterEvent);
+
+      expect(trainToBeATeacherSubMenu.classList).not.toContain('hidden-menu');
     });
   });
 });

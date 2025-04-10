@@ -13,7 +13,7 @@
     <%= link_to(browse_path, class: "menu-button__button hidden-when-js-enabled") do %>
       <span class="menu-button__text">Menu</span>
     <% end %>
-    <%= tag.button(class: "menu-button__button hidden-when-js-disabled", id: 'menu-toggle', aria: { expanded: false, controls: 'primary-navigation'}, data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
+    <%= tag.button(class: "menu-button__button hidden-when-js-disabled", id: 'menu-toggle', aria: { expanded: false, controls: 'primary-navigation'}, data: { action: "click->navigation#toggleNav keydown.enter->navigation#toggleNav", "navigation-target" => "menu" }) do %>
       <span class="menu-button__text">Menu</span>
       <span class="menu-button__icon"></span>
     <% end %>
