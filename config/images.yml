@@ -281,7 +281,7 @@
     - "static/images/content/hero-images/teacher-primary--tablet.jpg"
 
 "static/images/content/hero-images/celebration.png":
-  alt: "An image showing a celebration banner with the hash tag Got Into Teaching"
+  alt: "An image showing a celebration banner with the hashtag Got Into Teaching"
   variants:
     - "static/images/content/hero-images/celebration--mobile.jpg"
     - "static/images/content/hero-images/celeration--tablet.jpg"
