@@ -1,16 +1,31 @@
 module WelcomeHelper
   def show_welcome_guide?(degree_status: degree_status_id, consideration_journey_stage: consideration_journey_stage_id)
-    gradudate_or_postgraduate = Crm::OptionSet.lookup_by_keys(:degree_status, :graduate_or_postgraduate)
-    allowed_graduate_consideration_stages = Crm::OptionSet.lookup_by_keys(
-      :consideration_journey_stage,
-      :it_s_just_an_idea,
-      :i_m_not_sure_and_finding_out_more,
-    )
-    final_year_student = Crm::OptionSet.lookup_by_keys(:degree_status, :final_year)
+    low_commitment?(consideration_journey_stage: consideration_journey_stage) && graduate?(degree_status: degree_status)
+  end
 
-    degree_status.in?(final_year_student) || (
-      degree_status.in?(gradudate_or_postgraduate) && consideration_journey_stage.in?(allowed_graduate_consideration_stages)
-    )
+  def high_commitment?(consideration_journey_stage: consideration_journey_stage_id)
+    # I think I'll apply
+    consideration_journey_stage == 222_750_003
+  end
+
+  def low_commitment?(consideration_journey_stage: consideration_journey_stage_id)
+    # It's just an idea
+    consideration_journey_stage == 222_750_000
+  end
+
+  def graduate?(degree_status: degree_status_id)
+    # Yes
+    degree_status == 222_750_000
+  end
+
+  def studying?(degree_status: degree_status_id)
+    # Not yet, I'm studying for one
+    degree_status == 222_750_006
+  end
+
+  def no_degree?(degree_status: degree_status_id)
+    # No
+    degree_status == 222_750_004
   end
 
   def greeting

@@ -30,7 +30,9 @@ module Events
       end
 
       def degree_status_options
-        @degree_status_options ||= PickListItemsApiPresenter.new.get_qualification_degree_status
+        @degree_status_options ||= GetIntoTeachingApiClient::PickListItemsApi.new
+          .get_qualification_degree_status
+          .reject { |item| item.id == 222_750_006 }
       end
 
       def degree_status_option_ids
