@@ -4,11 +4,8 @@ heading: "Teacher degree apprenticeships (TDAs)"
 subcategory: Other routes into teaching
 description: |-
  A new route to become a teacher without a degree, a teacher degree apprenticeship (TDA) lets you work at a school while you qualify as a teacher.
-calls_to_action:
-  find:
-    name: find
-    arguments:
-      title: "Find a teacher degree apprenticeship"
+promo_content:
+  - "content/shared/block-promos/findtda_mailing_routes"
 cta_arrow_link:
   tda:
     link_target: "https://find-teacher-training-courses.service.gov.uk/results?applications_open=true&minimum_degree_required=no_degree_required"
@@ -62,5 +59,3 @@ To meet the academic requirements for the TDA, you must have:
 
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 * A levels - the number of A levels or equivalent qualifications required will be set by individual universities
-
-$find$
