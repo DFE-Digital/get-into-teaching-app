@@ -18,8 +18,8 @@ keywords:
   - computing
   - teaching computing
   - teacher training
-
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/computing/article"
+  - "content/shared/block-promos/adviser_mailing_find"
 ---
