@@ -40,10 +40,10 @@ expander:
 inset_text:
   loan-increase:
     text: |-
-      From autumn 2025, the maximum fees that providers can charge for postgraduate teacher training courses have increased. This means the amount you can apply to borrow to cover tuition fees has also increased. The increased amounts are shown on this page.
+      For the <%= v :finance_academicyear %>, the maximum fees that providers can charge for postgraduate teacher training courses have increased. This means the amount you can apply to borrow to cover tuition fees has also increased. The increased amounts are shown on this page.
   maintenance-increase:
     text: |-
-      From autumn 2025, the maximum maintenance loan amounts have increased. The increased amounts are shown on this page.
+      For the <%= v :finance_academicyear %>, the maximum maintenance loan amounts have increased. The increased amounts are shown on this page.
 ---
 
 Funding is available to help you train to teach if you choose a course that has tuition fees. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs.
