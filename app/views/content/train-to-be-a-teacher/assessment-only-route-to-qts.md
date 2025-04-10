@@ -408,7 +408,7 @@ provider_groups:
       
       
     - header: "OTT SCITT"
-      link: "http://www.ott-scitt.org.uk/aor"
+      link: "https://www.ott-scitt.org.uk/aor"
       name: "Marion Rawlings"
       email: "AOR@ott-scitt.org.uk"
       telephone: "01865 518209"
@@ -421,7 +421,7 @@ provider_groups:
       telephone: "01252 717408"
       international_phone: "+441252717408"
       
-    - header: "St Mary’s University"
+    - header: "St Mary's University"
       link: "https://www.stmarys.ac.uk/"
       name: "Lizzy Jackson"
       email: "elizabeth.jackson@stmarys.ac.uk"
@@ -508,7 +508,7 @@ provider_groups:
       international_phone: "+441458449418"
       
     - header: "OTT SCITT"
-      link: "http://www.ott-scitt.org.uk/aor"
+      link: "https://www.ott-scitt.org.uk/aor"
       name: "Marion Rawlings"
       email: "AOR@ott-scitt.org.uk"
       telephone: "01865 518209"
@@ -660,6 +660,13 @@ provider_groups:
       email: "enquiries@colchesterttc.org.uk"
       telephone: "01206 364728"
       international_phone: "+441206364728"
+      
+    - header: "London School of Jewish Studies"
+      link: "https://www.lsjs.ac.uk/assessment-only.php"
+      name: "Galia Segal"
+      email: "galia.segal@lsjs.ac.uk"
+      
+      
       
     - header: "Teaching London: LDBS SCITT"
       link: "https://www.teachinglondon.org/ourcourses/assessment-only-route-to-qts/"
