@@ -91,6 +91,6 @@ private
   end
 
   def set_metadata
-    @front_matter["description"] = "Explore our comprehensive A to Z index of all the pages on Get Into Teaching"
+    @front_matter["description"] = "Explore our comprehensive A to Z index of all the pages on Get Into Teaching."
   end
 end
