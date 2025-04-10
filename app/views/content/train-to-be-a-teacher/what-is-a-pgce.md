@@ -20,6 +20,8 @@ calls_to_action:
 cta_mailinglist:
   mailinglist:
     text: Find out what being in a classroom is really like and get helpful guidance and support on getting into teaching.
+promo_content:
+  - "content/shared/block-promos/mailing_adviser_routes"
 cta_arrow_link:
   qts:
     link_target: "/train-to-be-a-teacher/what-is-qts"
@@ -43,7 +45,7 @@ keywords:
 expander:
   check-your-qualifications:
     title: check your qualifications
-    text: If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. 
+    text: If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England. 
     link_title: You can get help comparing English and international qualifications.
     link_url: /non-uk-teachers/non-uk-qualifications
 ---
@@ -125,6 +127,3 @@ PGCE courses can contain up to 60 credits at master’s degree level, and PGDE c
 As with PGCEs, you can do a PGDE in primary education or secondary education.
 
 More teacher training providers offer a PGCE than a PGDE.
-
-$find$
-$mailinglist$

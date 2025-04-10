@@ -15,7 +15,7 @@ expander:
     title: help with visas
     text: |-
       <p>
-      If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:
+      If you are from Ukraine and want to teach or train to teach in England, you can check visa support for:
       </p>
         <ul>
           <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>

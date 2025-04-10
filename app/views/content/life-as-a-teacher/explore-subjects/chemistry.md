@@ -15,8 +15,8 @@ keywords:
   - chemistry
   - teaching chemistry
   - teacher training
-
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/chemistry/article"
+  - "content/shared/block-promos/adviser_mailing_find"
 ---

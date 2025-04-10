@@ -120,8 +120,6 @@ The following providers specialise in particular regions:
 
 * [University of Northampton](https://www.northampton.ac.uk/courses/postgraduate-certificate-in-education-international-iqts/)
 
-* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning)
-
 ## Assessment for iQTS
 
 At the end of your training, your iQTS provider and school will assess you to check you meet the [iQTS teachers’ standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards).
