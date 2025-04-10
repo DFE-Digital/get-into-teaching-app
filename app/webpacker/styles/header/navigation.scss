@@ -300,6 +300,14 @@ body > header {
     // mobile and tablet
     @include mq($until: desktop) {
       flex-direction: column-reverse;
+
+      div.desktop-level2-wrapper, div.desktop-level3-wrapper {
+        width: 100%;
+      }
+
+      &.hidden-mobile {
+        display: none;
+      }
     }
 
     // desktop and wide screen
@@ -438,23 +446,8 @@ body > header {
       }
     } // from desktop, secondary nav
 
-    @include mq($until: desktop) {
-      div.desktop-level2-wrapper, div.desktop-level3-wrapper {
-        width: 100%;
-      }
-    }
-  } // primary navigation
-
-  // NB: this section must appear below main menu definitions and applies to both mobile and desktop menus
-  #primary-navigation {
     ol.hidden-menu {
       display: none;
-    }
-
-    @include mq($until: desktop) {
-      &.hidden-mobile {
-        display: none;
-      }
     }
 
     ol.primary, ol.category-links-list {
@@ -469,7 +462,7 @@ body > header {
         margin-right: 0.25em;
       }
     }
-  }
+  } // primary navigation
 }
 
 
