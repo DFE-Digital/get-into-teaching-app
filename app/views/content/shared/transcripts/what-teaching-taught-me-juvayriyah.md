@@ -1,5 +1,5 @@
 ---
-title: Transcript for the 'What teaching taught me - Juvayriyah' video
+title: Transcript for the video 'What teaching taught me - Juvayriyah'
 description: Full transcript for the video 'What teaching taught me - Juvayriyah'
 ---
 
