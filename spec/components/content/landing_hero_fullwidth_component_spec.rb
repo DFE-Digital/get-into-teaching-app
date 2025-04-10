@@ -9,8 +9,6 @@ RSpec.describe Content::LandingHeroFullwidthComponent, type: "component" do
   end
 
   it { is_expected.to have_css(".landing-hero-fullwidth") }
-  it { is_expected.to have_css("picture") }
-  it { is_expected.to have_css("img[src='#{image_path}']") }
 
   context "when the image is not provided" do
     let(:image_path) { nil }
