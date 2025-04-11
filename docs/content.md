@@ -239,7 +239,7 @@ youtube_video:
 $return-to-teaching-advisers-video$
 ```
 
-To render vertical videos (9:16 aspect ratio), you can pass in the optional `orientation: :portrait` parameter.
+To render vertical videos (9:16 aspect ratio), you can pass in the optional `orientation: "portrait"` parameter.
 
 ```yaml
 ---
@@ -247,7 +247,7 @@ youtube_video:
   return-to-teaching-advisers-video:
     id: 2NrLm_XId4k
     title: A video about what Return to Teaching Advisers do
-    orientation: :portrait
+    orientation: portrait
 ---
 ```
 

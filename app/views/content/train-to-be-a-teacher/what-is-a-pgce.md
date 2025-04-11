@@ -12,7 +12,7 @@ youtube_video:
   what-teaching-taught-me:
     id: oJjoodXrvlU
     title: A video about what a career in teaching taught maths teacher Juvayriyah
-    orientation: :portrait
+    orientation: portrait
 promo_content:
   - "content/shared/block-promos/mailing_adviser_routes"
 cta_arrow_link:
