@@ -5,7 +5,8 @@ finance:
   childcaregrantweeklypayment:
     one: £193.62
     twoplus: £331.95
-  disabilityadditionalfunding: £26,948
+  disabilityadditionalfunding: £27,783
+  dsaacademicyear: 2025 to 2026 academic year
   maintenanceloan:
     withparents: £8,877
     notwithparentsoutsidelondon: £10,544
