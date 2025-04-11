@@ -3,6 +3,7 @@
     "@babel/core": "7",
     "@babel/plugin-proposal-class-properties": "7",
     "@babel/plugin-proposal-object-rest-spread": "7",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/plugin-transform-runtime": "7",
     "@babel/preset-env": "^7.26.9",
     "@babel/runtime": "7",
@@ -47,7 +48,6 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.1",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@stimulus/test": "^2.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^9.1.0",
