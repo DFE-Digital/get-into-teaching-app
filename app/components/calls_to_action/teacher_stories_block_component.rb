@@ -14,7 +14,6 @@ module CallsToAction
         { text: "Abigail's career progression story", url: "/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story" },
       ]
     )
-
       super
       @title = title
       @image = image
