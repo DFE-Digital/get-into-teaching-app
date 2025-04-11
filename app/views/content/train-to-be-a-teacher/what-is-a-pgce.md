@@ -107,10 +107,6 @@ If you're not sure which route into teaching is right for you, [find routes into
 
 $check-your-qualifications$
 
-$what-teaching-taught-me$
-
-Read the [transcript for the video 'What teaching taught me - Juvayriyah'](/shared/transcripts/what-teaching-taught-me-juvayriyah).
-
 ## What is a postgraduate diploma in education (PGDE)?
 
 A PGDE in England is very similar to a PGCE, the difference being the number of academic credits you are awarded at the end of your course.
@@ -120,3 +116,11 @@ PGCE courses can contain up to 60 credits at master’s degree level, and PGDE c
 As with PGCEs, you can do a PGDE in primary education or secondary education.
 
 More teacher training providers offer a PGCE than a PGDE.
+
+## Find out what teachers have to say
+
+Hear from maths teacher Juvayriyah abuut her jouney to becoming a teacher.
+
+$what-teaching-taught-me$
+
+Read the [transcript for the video 'What teaching taught me - Juvayriyah'](/shared/transcripts/what-teaching-taught-me-juvayriyah).
