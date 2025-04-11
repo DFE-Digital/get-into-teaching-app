@@ -4,7 +4,7 @@ module Content
 
     include ContentHelper
 
-    def initialize(id:, title:, orientation: :landscape)
+    def initialize(id:, title:, orientation: "landscape")
       super
 
       @id = id
@@ -28,7 +28,7 @@ module Content
         fail(ArgumentError, error_message) if send(required_attr).blank?
       end
 
-      fail(ArgumentError, "orientation is not valid") unless %i[landscape portrait].include?(orientation)
+      fail(ArgumentError, "orientation is not valid") unless %w[landscape portrait].include?(orientation)
     end
   end
 end
