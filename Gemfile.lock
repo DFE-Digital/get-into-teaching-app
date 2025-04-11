@@ -532,7 +532,10 @@ GEM
       ffi (~> 1.0)
     rdoc (6.12.0)
       psych (>= 4.0.0)
-    redis (4.8.1)
+    redis (5.4.0)
+      redis-client (>= 0.22.0)
+    redis-client (0.23.2)
+      connection_pool
     redis-session-store (0.11.5)
       actionpack (>= 6, < 8)
       redis (>= 3, < 6)
@@ -637,10 +640,10 @@ GEM
       semantic_range (>= 2.3.0)
     shoulda-matchers (6.4.0)
       activesupport (>= 5.2.0)
-    sidekiq (6.5.12)
-      connection_pool (>= 2.2.5, < 3)
+    sidekiq (6.5.5)
+      connection_pool (>= 2.2.2)
       rack (~> 2.0)
-      redis (>= 4.5.0, < 5)
+      redis (>= 4.5.0)
     sidekiq-cron (1.12.0)
       fugit (~> 1.8)
       globalid (>= 1.0.1)
@@ -792,7 +795,7 @@ DEPENDENCIES
   sentry-ruby (~> 5.21.0)
   shakapacker (= 8.1.0)
   shoulda-matchers
-  sidekiq (= 6.5.12)
+  sidekiq (>= 6.5.5, < 6.5.6)
   sidekiq-cron
   simplecov
   skylight (~> 6.0.4)

@@ -97,9 +97,9 @@ gem "google-api-client", ">= 0.53.0", require: false
 gem "net-smtp", ">= 0.3.3", require: false
 gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
 
-# NB: Do not update Sidekiq beyond version 6.5, as newer versions are incompatible
+# NB: Do not update Sidekiq beyond version 6.5.5, as newer versions are incompatible
 # with the Redis instance we are using on AKS
-gem "sidekiq", "=6.5.12"
+gem "sidekiq", ">= 6.5.5", "< 6.5.6"
 gem "sidekiq-cron"
 
 # Fix CVE errors
