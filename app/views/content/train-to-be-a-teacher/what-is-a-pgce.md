@@ -13,14 +13,6 @@ youtube_video:
     id: oJjoodXrvlU
     title: A video about what a career in teaching taught maths teacher Juvayriyah
     orientation: :portrait
-calls_to_action:
-  find:
-    name: find
-    arguments:
-      title: "Find a QTS with PGCE course"
-cta_mailinglist:
-  mailinglist:
-    text: Find out what being in a classroom is really like and get helpful guidance and support on getting into teaching.
 promo_content:
   - "content/shared/block-promos/mailing_adviser_routes"
 cta_arrow_link:
