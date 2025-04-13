@@ -119,7 +119,7 @@ More teacher training providers offer a PGCE than a PGDE.
 
 ## Find out what teachers have to say
 
-Hear from maths teacher Juvayriyah abuut her jouney to becoming a teacher.
+Hear from maths teacher Juvayriyah abuut her journey to becoming a teacher.
 
 $what-teaching-taught-me$
 
