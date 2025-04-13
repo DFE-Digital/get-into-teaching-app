@@ -6,6 +6,7 @@ content:
     - content/landing/how-to-become-a-teacher/mailing-list
     - content/landing/how-to-become-a-teacher/steps
     - content/landing/how-to-become-a-teacher/content
+    - content/shared/block-promos/mailing_adviser_routes
 image: "static/images/content/hero-images/0031.jpg"
 layout: "layouts/minimal"
 colour: pink-blue  
