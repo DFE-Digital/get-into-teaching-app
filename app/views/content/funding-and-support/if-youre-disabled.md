@@ -30,6 +30,11 @@ quote:
     text: "Growing up as a profoundly deaf child, I had a positive upbringing in my mainstream primary school. The teachers were amazing in terms of support and treating me equally. They inspired me to become a primary school teacher."
     name: "Habiba, primary school teacher"
     classes: quote--indent
+youtube_video:
+  what-teaching-taught-me:
+    id: mclRhi4CHZY
+    title: A video about what a career in teaching taught science teacher Josh
+    orientation: portrait
 cta_arrow_link:
   dsa:
     link_target: "https://www.gov.uk/disabled-students-allowance-dsa"
@@ -46,6 +51,10 @@ If you’re neurodivergent, have a long-term physical or mental health condition
 
 The experience and perspective of a diverse workforce is invaluable in schools, so there’s lots of support available to make sure trainee teachers feel comfortable and confident in the classroom.
 
+$what-teaching-taught-me$
+
+Read the [transcript for the video 'What teaching taught me - Josh'](/shared/transcripts/what-teaching-taught-me-josh).
+
 $habiba$
 
 $international-content$
@@ -54,7 +63,7 @@ $international-content$
 
 ### Disabled Students' Allowance (DSA)
 
-If you’re on a fee-paying teacher training course, you may be eligible for Disabled Students’ Allowance (DSA). You cannot get DSA if your course pays a salary. 
+If you’re on a fee-paying teacher training course, you may be eligible for Disabled Students’ Allowance (DSA). For the $finance_dsaacademicyear$, eligible students can get up to $finance_disabilityadditionalfunding$ a year for support. You cannot get DSA if your course pays a salary.
 
 DSA can help cover any study-related costs you have because of a mental health problem, long-term illness or any other disability. You can get DSA on its own or in addition to other student finance. 
 

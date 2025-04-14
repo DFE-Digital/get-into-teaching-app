@@ -13,11 +13,20 @@ cta_arrow_link:
   financial-support:
     link_target: "/funding-and-support/if-youre-disabled"
     link_text: "Find out more about financial support if you're disabled"
+youtube_video:
+  what-teaching-taught-me:
+    id: mclRhi4CHZY
+    title: A video about what a career in teaching taught science teacher Josh
+    orientation: portrait
 ---
 
 Teacher training providers can make adjustments if you need support to become a teacher. This includes support for neurodiversity, long-term physical or mental health conditions, or other accessibility needs.
 
 The experience and perspective of a diverse workforce is invaluable in schools. These adjustments help make sure that anyone interested in becoming a teacher feels confident and comfortable during their application and training.
+
+$what-teaching-taught-me$
+
+Read the [transcript for the video 'What teaching taught me - Josh'](/shared/transcripts/what-teaching-taught-me-josh).
 
 ## Adjustments when you apply 
 
