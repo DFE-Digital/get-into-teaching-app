@@ -13,7 +13,7 @@ module MailingList
       validates :graduation_year,
                 format: {
                   with: /\A\d{4}\z/,
-                  message: "Tell us which year you will graduate",
+                  message: "Enter your expected graduation year",
                 },
                 numericality: { only_integer: true },
                 presence: { message: "Tell us which year you will graduate" },
