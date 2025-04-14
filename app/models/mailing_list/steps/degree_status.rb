@@ -50,7 +50,7 @@ module MailingList
 
       def graduation_year_not_too_far_in_the_future
         if graduation_year.present? && graduation_year >= Time.current.year + 10
-          errors.add(:graduation_year, "Enter a valid graduation year")
+          errors.add(:graduation_year, "Your expected graduation year cannot be more than 10 years from now")
         end
       end
     end
