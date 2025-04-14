@@ -16,7 +16,7 @@ module MailingList
                   message: "Enter your expected graduation year",
                 },
                 numericality: { only_integer: true },
-                presence: { message: "Tell us which year you will graduate" },
+                presence: { message: "Enter your expected graduation year" },
                 if: :requires_graduation_year?
 
       validate :graduation_year_not_in_the_past, if: :requires_graduation_year?
