@@ -1,0 +1,14 @@
+<div class="row">
+  <section class="container">
+    <section class="image-blocks">
+      <%= render CallsToAction::FindBlockComponent.new(
+        title: "Find a teacher degree apprenticeship",
+        text: "Explore the different teacher degree apprenticeships available.",
+        link_target: "https://find-teacher-training-courses.service.gov.uk/results?applications_open=true&minimum_degree_required=no_degree_required",
+        link_text: "Find apprenticeship courses"
+      ) %>
+      <%= render CallsToAction::MailinglistBlockComponent.new %>
+      <%= render CallsToAction::RoutesBlockComponent.new %>
+    </section>
+  </section>
+</div>

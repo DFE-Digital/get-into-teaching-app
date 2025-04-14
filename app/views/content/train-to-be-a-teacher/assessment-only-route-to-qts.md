@@ -13,7 +13,7 @@ fullwidth: true
 content:
   - content/train-to-be-a-teacher/assessment-only-route-to-qts/listing
   - content/train-to-be-a-teacher/assessment-only-route-to-qts/update-details
-
+  - content/shared/block-promos/adviser_routes
 provider_groups:
   National:
     providers:
@@ -23,6 +23,13 @@ provider_groups:
       email: "enquiries@colchesterttc.org.uk"
       telephone: "01206 364728"
       international_phone: "+441206364728"
+      
+    - header: "Coventry University, National Institute of Teaching and Education"
+      link: "https://www.coventry.ac.uk/nite/teacher-training/assessment-only-qts/"
+      name: "Louise Jakes"
+      email: "louise.jakes@coventry.ac.uk"
+      telephone: "02477 650660"
+      international_phone: "+442477650660"
       
     - header: "Educate Group Initial Teacher Training"
       link: "https://educate-group.co.uk/assessment-only-route/"
@@ -66,6 +73,13 @@ provider_groups:
       telephone: "020 7932 1129"
       international_phone: "+442079321129"
       
+    - header: "Tes Institute"
+      link: "https://www.tes.com/institute"
+      name: "Andrew Locke"
+      email: "andrew.locke@tes.com"
+      telephone: "02031943200"
+      international_phone: "+442031943200"
+      
     - header: "The University of Buckingham"
       link: "https://www.buckingham.ac.uk/courses/postgraduate/assessment-only-ao-route-to-qualified-teacher-status-primary-and-secondary"
       name: "Shonali Mathur"
@@ -88,6 +102,13 @@ provider_groups:
       email: "christopher.davison@bishopg.ac.uk"
       telephone: "07961 078589"
       international_phone: "+447961078589"
+      
+    - header: "Inspiring Leaders"
+      link: "https://inspiringleadersscitt.com/aor/"
+      name: "Dirk Smith"
+      email: "info@iltoday.co.uk"
+      telephone: "0115 9891915"
+      international_phone: "+441159891915"
       
     - header: "Leicester and Leicestershire SCITT"
       link: "https://www.leicestershiresecondaryscitt.org/"
@@ -408,7 +429,7 @@ provider_groups:
       
       
     - header: "OTT SCITT"
-      link: "http://www.ott-scitt.org.uk/aor"
+      link: "https://www.ott-scitt.org.uk/aor"
       name: "Marion Rawlings"
       email: "AOR@ott-scitt.org.uk"
       telephone: "01865 518209"
@@ -421,7 +442,7 @@ provider_groups:
       telephone: "01252 717408"
       international_phone: "+441252717408"
       
-    - header: "St Mary’s University"
+    - header: "St Mary's University"
       link: "https://www.stmarys.ac.uk/"
       name: "Lizzy Jackson"
       email: "elizabeth.jackson@stmarys.ac.uk"
@@ -474,10 +495,10 @@ provider_groups:
     providers:
     - header: "Bath Spa University"
       link: "https://www.bathspa.ac.uk/courses/qts-assessment-only/"
-      name: "Fiona Hunt"
+      name: "Kerry-Anne Barber"
       email: "assessmentonly@bathspa.ac.uk"
-      
-      
+      telephone: "01225 875696"
+      international_phone: "+441225875696"
       
     - header: "Bournemouth Bay Teacher Training Partnership"
       link: "https://bournemouthbay-partnership.com/about-us/"
@@ -508,7 +529,7 @@ provider_groups:
       international_phone: "+441458449418"
       
     - header: "OTT SCITT"
-      link: "http://www.ott-scitt.org.uk/aor"
+      link: "https://www.ott-scitt.org.uk/aor"
       name: "Marion Rawlings"
       email: "AOR@ott-scitt.org.uk"
       telephone: "01865 518209"
@@ -644,6 +665,13 @@ provider_groups:
       
       
       
+    - header: "Vantage North Humber Teacher Training"
+      link: "https://www.vnhtt.org/"
+      name: "Jonathan Boden"
+      email: "jboden@smchull.org"
+      telephone: "01482 851136"
+      international_phone: "+441482851136"
+      
   Outside of the UK:
     description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
@@ -661,12 +689,33 @@ provider_groups:
       telephone: "01206 364728"
       international_phone: "+441206364728"
       
+    - header: "Coventry University, National Institute of Teaching and Education"
+      link: "https://www.coventry.ac.uk/nite/teacher-training/assessment-only-qts/"
+      name: "Louise Jakes"
+      email: "louise.jakes@coventry.ac.uk"
+      telephone: "02477 650660"
+      international_phone: "+442477650660"
+      
+    - header: "London School of Jewish Studies"
+      link: "https://www.lsjs.ac.uk/assessment-only.php"
+      name: "Galia Segal"
+      email: "galia.segal@lsjs.ac.uk"
+      
+      
+      
     - header: "Teaching London: LDBS SCITT"
       link: "https://www.teachinglondon.org/ourcourses/assessment-only-route-to-qts/"
       name: "Saskia Rossi"
       email: "admin@teachinglondon.org"
       telephone: "020 7932 1129"
       international_phone: "+442079321129"
+      
+    - header: "Tes Institute"
+      link: "https://www.tes.com/institute"
+      name: "Andrew Locke"
+      email: "andrew.locke@tes.com"
+      telephone: "02031943200"
+      international_phone: "+442031943200"
       
     - header: "The Buckingham Partnership SCITT"
       link: "https://www.bpscitt.uk/page/?title=Assessment+Only+Route&pid=16"
@@ -695,6 +744,13 @@ provider_groups:
       email: "ian.elliott@sunderland.ac.uk"
       telephone: "0191 515 2159"
       international_phone: "+441915152159"
+      
+    - header: "Vantage North Humber Teacher Training"
+      link: "https://www.vnhtt.org/"
+      name: "Jonathan Boden"
+      email: "jboden@smchull.org"
+      telephone: "01482 851136"
+      international_phone: "+441482851136"
       
 
 keywords:

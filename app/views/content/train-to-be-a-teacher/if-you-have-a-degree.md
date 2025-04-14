@@ -4,12 +4,8 @@ heading: "Train to teach if you have a degree or are studying for one"
 subcategory: Postgraduate teacher training
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
-cta_adviser:
-  adviser:
-    text: Talk to an adviser with years of teaching experience about your different training and funding options. Chat by phone, text or email, as little or as often as you need.
-calls_to_action:
-  find:
-    name: find
+promo_content:
+  - "content/shared/block-promos/adviser_find_school"
 cta_arrow_link:
   expect:
     link_target: "/train-to-be-a-teacher/initial-teacher-training"
@@ -35,23 +31,20 @@ expander:
   fees-and-funding:
     title: fees and funding
     text: "Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance loans. If you train to teach languages or physics, you may be eligible for a bursary or scholarship.
-    <p>If you have refugee status you can apply for salaried or fee-paying training courses. You'll usually be eligible for financial support to help you train to teach.</p>
-    <p>You may be eligible for financial support to train to teach if <a href=\"/non-uk-teachers/visas-for-non-uk-trainees\">you're from Ukraine or Afghanistan and on certain visas</a>.</p>
-    <p>If you're in <a href=\"https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
-    <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>"
+    <p>If you have refugee status you can apply for salaried or fee-paying training courses. You will usually be eligible for financial support to help you train to teach.</p>
+    <p>You may be eligible for financial support to train to teach if <a href=\"/non-uk-teachers/visas-for-non-uk-trainees\">you are from Ukraine or Afghanistan and on certain visas</a>.</p>
+    <p>If you are in <a href=\"https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you are unlikely to be eligible for financial support.</p>
+    <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>"
     link_title: Learn more about fees and financial support for non-UK trainee teachers.
     link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees
-
-
   international-content:
     header: "Non-UK citizens:"
     title: train to teach in England
-    text: If you’re not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
-   
+    text: If you are not from the UK, find out about <a href="/non-uk-teachers">training to teach in England as a non-UK citizen</a>.
   ukraine-moving:
     header: "Ukraine citizens:"
     title: moving to the UK
-    text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.
+    text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you are moving to the UK from Ukraine</a>.
 quote:
   olivia:
     text: "You'll learn a lot about yourself during your teacher training year, and it's the most rewarding journey to be on."
@@ -88,7 +81,7 @@ All teacher training involves mostly classroom placements with some theoretical 
 
 This means that even if your course provider is a university, you'll still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a university. 
 
-The important thing to remember is that regardless of your course provider, all teacher training involves around 120 days of school placements in at least 2 schools.
+Regardless of your course provider, all teacher training involves at least 2 school placements over a minimum of 24 weeks.
 
 $expect$
 $olivia$
@@ -126,5 +119,3 @@ $fees-and-funding$
 There are some differences in postgraduate teacher training courses. 
 
 $choosecourse$
-$find$
-$adviser$
