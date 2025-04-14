@@ -30,6 +30,11 @@ quote:
     text: "Growing up as a profoundly deaf child, I had a positive upbringing in my mainstream primary school. The teachers were amazing in terms of support and treating me equally. They inspired me to become a primary school teacher."
     name: "Habiba, primary school teacher"
     classes: quote--indent
+youtube_video:
+  what-teaching-taught-me:
+    id: mclRhi4CHZY
+    title: A video about what a career in teaching taught science teacher Josh
+    orientation: portrait
 cta_arrow_link:
   dsa:
     link_target: "https://www.gov.uk/disabled-students-allowance-dsa"
@@ -45,6 +50,10 @@ cta_arrow_link:
 If you’re neurodivergent, have a long-term physical or mental health condition, or have any other accessibility needs, you can get support to become a teacher. This support can sometimes be referred to as training with disabilities and other needs. The support may be helpful to you, even if you do not identify as disabled.
 
 The experience and perspective of a diverse workforce is invaluable in schools, so there’s lots of support available to make sure trainee teachers feel comfortable and confident in the classroom.
+
+$what-teaching-taught-me$
+
+Read the [transcript for the video 'What teaching taught me - Josh'](/shared/transcripts/what-teaching-taught-me-josh).
 
 $habiba$
 
