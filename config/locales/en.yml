@@ -686,6 +686,15 @@ en:
           degree_status:
             222750000: "Yes"
             222750004: "No"
+      events_steps:
+        personalised_updates:
+          degree_status:
+            222750000: "Yes, I already have a degree"
+            222750001: "Almost, I'm a final year student"
+            222750002: "Not yet, I'm a second year student"
+            222750003: "Not yet, I'm a first year student"
+            222750004: "No, and I'm not studying for one"
+            222750005: "Other"
       mailing_list_steps_degree_status:
         degree_status:
           graduate_or_postgraduate: "Yes, I already have a degree"
