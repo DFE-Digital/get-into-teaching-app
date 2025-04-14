@@ -8,6 +8,11 @@ backlink: "../../"
 navigation: 20.30
 navigation_title: Postgraduate certificate in education (PGCE)
 navigation_description: Having a PGCE as well as qualified teacher status (QTS) can help you develop your teaching skills and knowledge.
+youtube_video:
+  what-teaching-taught-me:
+    id: oJjoodXrvlU
+    title: A video about what a career in teaching taught maths teacher Juvayriyah
+    orientation: portrait
 promo_content:
   - "content/shared/block-promos/mailing_adviser_routes"
 cta_arrow_link:
@@ -111,3 +116,11 @@ PGCE courses can contain up to 60 credits at master’s degree level, and PGDE c
 As with PGCEs, you can do a PGDE in primary education or secondary education.
 
 More teacher training providers offer a PGCE than a PGDE.
+
+## Find out what teachers have to say
+
+Hear from maths teacher Juvayriyah abuut her journey to becoming a teacher.
+
+$what-teaching-taught-me$
+
+Read the [transcript for the video 'What teaching taught me - Juvayriyah'](/shared/transcripts/what-teaching-taught-me-juvayriyah).

@@ -15,7 +15,6 @@ module CallsToAction
         { text: "Get school experience", url: "/train-to-be-a-teacher/get-school-experience" },
       ]
     )
-
       super
       @title = title
       @image = image

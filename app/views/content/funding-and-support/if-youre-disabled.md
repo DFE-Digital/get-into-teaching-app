@@ -63,7 +63,7 @@ $international-content$
 
 ### Disabled Students' Allowance (DSA)
 
-If you’re on a fee-paying teacher training course, you may be eligible for Disabled Students’ Allowance (DSA). You cannot get DSA if your course pays a salary. 
+If you’re on a fee-paying teacher training course, you may be eligible for Disabled Students’ Allowance (DSA). For the $finance_dsaacademicyear$, eligible students can get up to $finance_disabilityadditionalfunding$ a year for support. You cannot get DSA if your course pays a salary.
 
 DSA can help cover any study-related costs you have because of a mental health problem, long-term illness or any other disability. You can get DSA on its own or in addition to other student finance. 
 
