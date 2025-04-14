@@ -1,8 +1,9 @@
 <%= render Content::InsetTextComponent.new(
-  title: "Find more events",
+  header: "Find more events",
   color: "grey",
+  heading_tag: "h2",
   text: <<~HTML
     <p>There are lots more online and in-person events where you can get your questions answered about teaching.</p>
-    <p>#{link_to("Explore all events", events_path)}.</p>
-    HTML
+    <p>#{link_to('Explore all events', events_path)}.</p>
+  HTML
 ) %>

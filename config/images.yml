@@ -274,6 +274,12 @@
 "static/images/route-hero.png":
   alt: ""
 
+"static/images/content/hero-images/teacher-primary.jpg":
+  alt: "A teacher helping a student with their work"
+  variants:
+    - "static/images/content/hero-images/teacher-primary--mobile.jpg"
+    - "static/images/content/hero-images/teacher-primary--tablet.jpg"
+
 # case studies
 "static/images/content/case-studies/abigail.jpg":
   alt: "Maths teacher Abigail in front of a maths display board."

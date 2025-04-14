@@ -1,5 +1,5 @@
 class CallsToAction::MailinglistComponent < ViewComponent::Base
-  attr_reader :title, :text, :image, :link_text, :link_target, :classes, :border
+  attr_reader :title, :text, :image, :link_text, :link_target, :classes, :border, :heading_tag
 
   def initialize(
     title: "Find out more about getting into teaching",
@@ -8,7 +8,8 @@ class CallsToAction::MailinglistComponent < ViewComponent::Base
     link_text: "Get tailored advice in your inbox",
     link_target: "/mailinglist/signup/name",
     classes: [],
-    border: true
+    border: true,
+    heading_tag: "h2"
   )
     super
 
@@ -19,5 +20,6 @@ class CallsToAction::MailinglistComponent < ViewComponent::Base
     @link_target = link_target
     @classes = ["mailinglist", *classes].compact.join(" ")
     @border = border
+    @heading_tag = heading_tag
   end
 end

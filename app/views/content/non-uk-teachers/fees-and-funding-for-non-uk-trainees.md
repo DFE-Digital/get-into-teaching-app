@@ -14,9 +14,9 @@ expander:
     header: "Refugees and asylum seekers:"
     title: funding support
     text: |- 
-      <p>If you have refugee status you'll usually be eligible for financial support to help you train.</p>
-      <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
-      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+      <p>If you have refugee status you will usually be eligible for financial support to help you train.</p>
+      <p>If you are in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you are unlikely to be eligible for financial support.</p>
+      <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
 cta_arrow_link:
   loans:
     link_target: "https://www.gov.uk/student-finance"
@@ -167,7 +167,7 @@ If you need to apply for another visa, for example, a Skilled Worker visa, you w
 ## Get help
 
 
-Contact the [UK Council for International Student Affairs website](https://www.ukcisa.org.uk/About-UKCISA) for advice on what financial support may be available.
+Contact the [UK Council for International Student Affairs website](https://www.ukcisa.org.uk) for advice on what financial support may be available.
 
 You may be eligible for personalised support from a teacher training adviser. They can help with your teacher training application.
 

@@ -8,9 +8,12 @@
   </div>
 
   <div class="mailinglist__right">
-    <h2 class="heading-l">
-      <%= tag.span title if title.present? %>
-    </h2>
+    <% if title.present? %>
+      <%= content_tag heading_tag, class: "heading-l" do %>
+        <%= title %>
+      <% end %>
+    <% end %>
+
     <%= tag.p text, class: 'mailinglist__text' if text.present? %>
     <p></p>
     <%= link_to link_text, link_target, class: "button", role: "button", data: { "promo-type": "mailinglist" } if link_text.present? && link_target.present? %>

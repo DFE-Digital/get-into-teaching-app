@@ -16,8 +16,8 @@ keywords:
   - teaching physics
   - subjects
   - teacher training
-
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/physics/article"
+  - "content/shared/block-promos/adviser_mailing_find"
 ---

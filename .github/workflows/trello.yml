@@ -11,32 +11,13 @@ permissions:
 jobs:
   attach-to-trello:
     name: Link Trello card to this PR
-    environment: review
     runs-on: ubuntu-latest
     if: "!contains( 'dependabot[bot] snyk-bot' , github.actor )"
     steps:
-      - uses: Azure/login@v2
-        with:
-            client-id: ${{ secrets.AZURE_CLIENT_ID }}
-            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Fetch secrets from key vault
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            TRELLO_KEY=$(az keyvault secret show --name "TRELLO-KEY" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
-            echo "::add-mask::$TRELLO_KEY"
-            echo "TRELLO_KEY=$TRELLO_KEY" >> $GITHUB_OUTPUT
-            TRELLO_TOKEN=$(az keyvault secret show --name "TRELLO-TOKEN" --vault-name "${{ secrets.KEY_VAULT_REVIEW }}" --query "value" -o tsv)
-            echo "::add-mask::$TRELLO_TOKEN"
-            echo "TRELLO_TOKEN=$TRELLO_TOKEN" >> $GITHUB_OUTPUT
-
       - name: Add Trello Comment
         uses: DFE-Digital/github-actions/AddTrelloComment@master
         with:
           MESSAGE:      ${{ github.event.pull_request.html_url }}
           CARD:         "${{ github.event.pull_request.body }}"
-          TRELLO-KEY:   ${{ steps.keyvault-yaml-secret.outputs.TRELLO_KEY }}
-          TRELLO-TOKEN: ${{ steps.keyvault-yaml-secret.outputs.TRELLO_TOKEN }}
+          TRELLO-KEY:   ${{ secrets.TRELLO_KEY }}
+          TRELLO-TOKEN: ${{ secrets.TRELLO_TOKEN }}

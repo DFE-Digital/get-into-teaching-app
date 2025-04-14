@@ -1,5 +1,5 @@
 class CallsToAction::RoutesComponent < ViewComponent::Base
-  attr_reader :title, :text, :image, :link_text, :link_target, :classes, :border
+  attr_reader :title, :text, :image, :link_text, :link_target, :classes, :border, :heading_tag
 
   def initialize(
     title: "Find your route into teaching",
@@ -8,7 +8,8 @@ class CallsToAction::RoutesComponent < ViewComponent::Base
     link_text: "Find your route into teaching",
     link_target: "/find-your-route-into-teaching",
     classes: [],
-    border: true
+    border: true,
+    heading_tag: "h2"
   )
     super
 
@@ -19,5 +20,6 @@ class CallsToAction::RoutesComponent < ViewComponent::Base
     @link_target = link_target
     @classes = ["routes", *classes].compact.join(" ")
     @border = border
+    @heading_tag = heading_tag
   end
 end

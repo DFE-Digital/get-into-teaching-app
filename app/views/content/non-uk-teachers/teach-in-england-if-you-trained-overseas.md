@@ -2,7 +2,7 @@
 title: "Teach in England if you trained outside the UK"
 subcategory: If you're already a teacher
 description: |-
-  Teach in England if you're a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
+  Teach in England if you are a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
 promo_content:
 navigation: 20.40
 navigation_title: Teach in England as a non-UK qualified teacher
@@ -12,7 +12,7 @@ backlink: "../../"
 inset_text:
   new-international-funding:
     text: |-
-      If you're a non-UK teacher interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth up to $nonuk_internationalrelocationpayment_value$</a>.
+      If you are a non-UK teacher interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth up to $nonuk_internationalrelocationpayment_value$</a>.
 
 expander:
   ukraine-moving:
@@ -20,13 +20,13 @@ expander:
     title: moving to the UK
     text: |- 
       <p>
-      Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
+      Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you are moving to the UK from Ukraine</a>.</p>
   ukraine-visas:
     header: "Ukraine citizens:"
     title: help with visas
     text: |-
       <p>
-      If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:
+      If you are from Ukraine and want to teach or train to teach in England, you can check visa support for:
       </p>
         <ul>
           <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
@@ -73,7 +73,7 @@ If you do not want to come to England to train, you should consider [internation
 
 $ukraine-moving$
 
-## What you'll need to teach in England
+## What you will need to teach in England
 
 If you are already a qualified teacher, you do not need to retrain to teach in England. However, you will need:
 
@@ -84,7 +84,7 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 
 ## Get an international relocation payment (IRP) worth up to $nonuk_internationalrelocationpayment_value$
 
-If you're interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for up to $nonuk_internationalrelocationpayment_value$ from the UK government. 
+If you are interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for up to $nonuk_internationalrelocationpayment_value$ from the UK government. 
 
 $irp$
 
@@ -103,7 +103,7 @@ Depending on where you qualified, the subject you teach and your qualifications,
 
 You will not have to pay a fee or undergo further training when you apply for QTS. However, you will have to meet strict requirements. These requirements are mandatory and must be met in full exactly as set out on [the GOV.UK website](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).  
 
-It's important to note that getting QTS does not lead to a teaching job or visa – you'll need to apply for these separately. 
+It is important to note that getting QTS does not lead to a teaching job or visa – you will need to apply for these separately. 
 
 If you have a teaching qualification from the following countries and regions, you can use the new professional recognition service to apply for QTS, if you meet the requirements:
 
@@ -152,7 +152,7 @@ Submit your application to a school that can sponsor visas, and if you are offer
 
 ### Your professional qualifications 
 
-If you haven't got QTS, schools you apply to will want to see alternative evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) (UK ENIC) showing how your qualifications compare to English ones.  
+If you do not have QTS, schools you apply to will want to see alternative evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) (UK ENIC) showing how your qualifications compare to English ones.  
 
 ### Tips on applying
 
@@ -201,15 +201,17 @@ Many teachers who qualified outside the UK settle in England long-term and devel
 
 ### Career progression
 
-If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/life-as-a-teacher/teaching-as-a-career/early-career-teachers).
+If you have successfully [applied for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/life-as-a-teacher/teaching-as-a-career/early-career-teachers).
 
-You'll also be able to develop your career through the [national professional qualifications framework](https://www.gov.uk/guidance/national-professional-qualifications-framework).
+You will also be able to develop your career through the [national professional qualifications framework](https://www.gov.uk/guidance/national-professional-qualifications-framework).
 
 ### Financial help
 
-You may be eligible for the [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) or the [early career payment](https://www.gov.uk/guidance/early-career-payments-guidance-for-teachers-and-schools). 
+You may be eligible for:
 
-You can only receive the [international relocation payment (IRP)](#get-an-international-relocation-payment-irp-worth-up-to-10000) once, and you cannot receive both the levelling up premium payment and the early career payment in the same year.
+* a [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) if you teach chemistry, computing, maths or physics 
+
+* the [international relocation payment (IRP)](/non-uk-teachers/get-an-international-relocation-payment) if you teach languages or physics
 
 ## Plan your move to England
 
@@ -229,6 +231,6 @@ The following suggestions and resources may be useful:
 
 The Department for Education (DfE) does not employ teachers directly. Do not send us your CV, as we will not be able to help you find a teaching job. 
 
-Do not email to ask when a country or subject will be added to [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). We'll publish [updates about eligibility for the service on the GOV.UK website](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
+Do not email to ask when a country or subject will be added to [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). We will publish [updates about eligibility for the service on the GOV.UK website](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.

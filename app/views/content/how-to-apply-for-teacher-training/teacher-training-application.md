@@ -22,12 +22,8 @@ keywords:
   - interviews
   - offers
   - teacher training application
-cta_adviser:
-  adviser:
-    text: Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience. Chat by phone, text or email, as little or as often as you need.
-calls_to_action:
-    apply:
-      name: apply
+promo_content:
+  - "content/shared/block-promos/adviser_apply"
 navigation: 30.05
 navigation_title: Teacher training application
 navigation_description: Find out what you need to include in your teacher training application and when to apply.
@@ -36,7 +32,7 @@ expander:
     title: visas
     text: |-
       <p>
-      If you're a non-UK citizen and need a visa to come to England to train to teach, you need to make sure the course you’re applying for sponsors visas.  
+      If you are a non-UK citizen and need a visa to come to England to train to teach, you need to make sure the course you are applying for sponsors visas.  
       </p>
       <p>
       Find out <a href="/non-uk-teachers/visas-for-non-uk-trainees">how to apply for a visa to train to teach in England</a>.</p>
@@ -44,14 +40,14 @@ expander:
     title: check your qualifications
     text: |-
       <p>
-      If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>. 
+      If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>. 
       </p>
   ukraine-moving:
     header: "Ukraine citizens:"
     title: moving to the UK
     text: |- 
       <p>
-      Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.</p>
+      Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you are moving to the UK from Ukraine</a>.</p>
 quote:
   giorgio:
     text: "My best advice for a successful application is to be reflective in your personal statement and interview, think about why you want to teach, about the sort of classroom you envisage yourself in (and why) and talk about it!"
@@ -180,6 +176,3 @@ You can apply to more courses if all your applications are unsuccessful.
 
 Find out what to do [if you do not get a place on a teacher training course](/how-to-apply-for-teacher-training/if-your-application-is-unsuccessful). 
 
-$apply$
-
-$adviser$

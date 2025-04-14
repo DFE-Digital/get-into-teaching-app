@@ -3,16 +3,14 @@ title: "Postgraduate salaried teacher training"
 subcategory: Courses with a salary
 description: |-
     Explore salaried teacher training, including School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
-cta_adviser:
-  adviser:
-    text: "An adviser with years of teaching experience can answer all your questions about salaried teacher training. Chat by phone, text or email, as little or as often as you need."
-calls_to_action:
-  find:
-    name: find
-    arguments:
-      title: "Find a salaried teacher training course"
 navigation: 20.20
 navigation_description: Find out about School Direct salaried courses, postgraduate teaching apprenticeships and training delivered by Teach First.
+promo_content:
+  - "content/shared/block-promos/adviser_findsalary"
+cta_arrow_link:
+  find-courses:
+    link_target: "https://find-teacher-training-courses.service.gov.uk/results?funding%5B%5D=salary&funding%5B%5D=apprenticeship&applications_open=true&order=course_name_ascending"
+    link_text: "Find a salaried teacher training course"
 keywords:
     - Teach First
     - School Direct
@@ -31,7 +29,7 @@ expander:
       You can apply for a salaried teacher training course</a>. However, these courses are limited in number and very competitive. On this type of course you can earn money while you train in a school. Some salaried courses may also charge fees.
       </p>
       <p>
-      You'll also need a <a href="/non-uk-teachers/visas-for-non-uk-trainees">visa or immigration status</a> allowing you to work in the UK.</p>
+      You will also need a <a href="/non-uk-teachers/visas-for-non-uk-trainees">visa or immigration status</a> allowing you to work in the UK.</p>
 quote:
   nathan:
     text: "From the outset I was working within the school, learning and training in the classroom whilst being supported by qualified teachers and mentors. This gave me valuable experience of school life and a real feel for school."
@@ -105,17 +103,14 @@ Find out more about [what to expect during your teacher training](/train-to-be-a
 
 ## How do I find a salaried teacher training course? 
 
-To apply for salaried teacher training, you can [find postgraduate teacher training](https://find-teacher-training-courses.service.gov.uk/) and use the filter to only show courses that come with a salary. 
-
 It’s usually wise to apply for fee-paying courses as well to increase your chances of getting a place on a course.
 
 Some salaried teacher training providers will want you to have already arranged a school to work in while you train. Check with providers before you apply.
+
+$find-courses$
 
 ### Teach First 
 
 Teach First delivers a 2 year employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards QTS with a PGCE. 
 
 To apply and find out more, you should [visit the Teach First website](https://www.teachfirst.org.uk/).
-
-$find$
-$adviser$
