@@ -6,7 +6,7 @@ content:
     - content/landing/careers/collage
     - content/landing/careers/mailing_list
     - content/landing/careers/content
-    - content/shared/block-promos/mailing_adviser_routes
+    - content/shared/block-promos/mailing_routes_under18version
 image: "static/images/content/hero-images/0029.jpg"
 layout: "layouts/minimal"
 colour: pink-blue
