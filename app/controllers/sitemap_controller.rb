@@ -11,9 +11,9 @@ class SitemapController < ApplicationController
   # This will keep it consistent with how canonical-rails behaves and ensure search engines are happy.
   OTHER_PATHS = {
     "/events" => { title: "Events from Get Into Teaching and training providers" },
-    "/events/about-get-into-teaching-events" => { title: "About Get Into Teaching events" },
+    "/events/about-get-into-teaching-events" => { title: "Get Into Teaching events" },
     "/mailinglist/signup/name" => { title: "Free personalised teacher training guidance" },
-    "/routes-into-teaching" => { title: "Find your routes into teaching" },
+    "/routes-into-teaching" => { title: "Find your route into teaching" },
   }.freeze
 
   before_action :set_page_title
