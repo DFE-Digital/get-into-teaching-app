@@ -44,7 +44,7 @@ module MailingList
 
       def graduation_year_not_in_the_past
         if graduation_year.present? && graduation_year < Time.current.year
-          errors.add(:graduation_year, "Enter the current year or a year in the future")
+          errors.add(:graduation_year, "Your expected graduation year cannot be in the past")
         end
       end
 
