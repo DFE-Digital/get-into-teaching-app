@@ -1,6 +1,6 @@
 ---
 title: "Got Into Teaching"
-description: Celebrate accepting your position onto teacher training and starting your journey to become a teacher
+description: Celebrate accepting your teacher training place and starting your journey to becoming a teacher.
 content:
     - content/trainees/got-into-teaching/header
     - content/trainees/got-into-teaching/content
