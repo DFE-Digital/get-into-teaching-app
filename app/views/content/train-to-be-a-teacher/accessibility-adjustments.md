@@ -16,7 +16,7 @@ cta_arrow_link:
 youtube_video:
   what-teaching-taught-me:
     id: mclRhi4CHZY
-    title: A video about what a career in teaching taught biology ths teacher Josh
+    title: A video about what a career in teaching taught science teacher Josh
     orientation: portrait
 ---
 

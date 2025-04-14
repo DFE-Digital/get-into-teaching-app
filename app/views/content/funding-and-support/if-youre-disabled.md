@@ -33,7 +33,7 @@ quote:
 youtube_video:
   what-teaching-taught-me:
     id: mclRhi4CHZY
-    title: A video about what a career in teaching taught biology teacher Josh
+    title: A video about what a career in teaching taught science teacher Josh
     orientation: portrait
 cta_arrow_link:
   dsa:
