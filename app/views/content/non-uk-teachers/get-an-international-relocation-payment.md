@@ -1,5 +1,5 @@
 ---
-title: "Get an international relocation payment"
+title: "Get an international relocation payment (IRP)"
 subcategory: If you're already a teacher
 description: |-
   Non-UK teachers in physics and languages could be eligible for financial help in the form of an international relocation payment from the UK government.

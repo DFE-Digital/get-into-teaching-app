@@ -1,5 +1,5 @@
 ---
-title: "Get support as a parent or carer"
+title: "Get support if you're a parent or carer"
 heading: "Funding and support if you're a parent or carer"
 subcategory: Extra support
 description: |-

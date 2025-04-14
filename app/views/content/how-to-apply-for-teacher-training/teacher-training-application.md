@@ -1,5 +1,5 @@
 ---
-title: Your teacher training application
+title: Teacher training application
 description: |-
   Find out what to include in your teacher training application, how the process works and when to apply.
 keywords:
