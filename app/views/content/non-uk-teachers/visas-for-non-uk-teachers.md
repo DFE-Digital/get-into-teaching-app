@@ -31,6 +31,9 @@ cta_arrow_link:
   teachvacancies:
      link_target: "https://teaching-vacancies.service.gov.uk" 
      link_text: "Find teaching jobs with visa sponsorship"
+  visacosts:
+    link_target: "https://www.gov.uk/skilled-worker-visa/how-much-it-costs"
+    link_text: "Find out how much it costs to apply for a Skilled Worker visa"
   salaryrequirements: 
      link_target: "https://www.gov.uk/skilled-worker-visa/if-you-work-in-healthcare-or-education"
      link_text: "Find out more about the salary requirements for a Skilled Worker visa"
@@ -103,15 +106,11 @@ You do not need a Skilled Worker visa to teach in England if you are an Irish ci
 
 * [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility) 
 
+If you need to apply for a Skilled Worker visa, you will need to pay visa fees. You can find out [how much applying for a Skilled Worker visa will cost](https://www.gov.uk/skilled-worker-visa/how-much-it-costs).
+
 $teachvisa$
 
 $ukraine-visas$
-
-## Skilled Worker visa sponsorship
-
-If you need a Skilled Worker visa to work in the UK, then you will need to apply for teaching jobs that offer visa sponsorship. This means you will be sponsored by an employer, such as the school where you will work, which has given you an official job offer.  
-
-When you have a confirmed job offer, you will be able to [apply for a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa). 
 
 ## Applying for teaching jobs in England 
 
@@ -123,7 +122,14 @@ When searching for a teaching job, you will need to make sure:
 
 $teachvacancies$
 
-## Salary requirements for a Skilled Worker visa
+## Skilled Worker visa sponsorship
+
+If you need a Skilled Worker visa to work in the UK, then you will need to apply for teaching jobs that offer visa sponsorship. This means you will be sponsored by an employer, such as the school where you will work and which has given you an official job offer.  
+
+When you have a confirmed job offer, you will be able to [apply for a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa). 
+
+
+### Salary requirements for a Skilled Worker visa
 
 When you apply for a job, you must make sure the salary offered meets the requirement for a Skilled Worker visa.  
 
@@ -150,13 +156,7 @@ Schools have some flexibility in how they set salaries. You may be able to negot
 
 ## Dependants
 
-You may be able to [bring your partner and children with you on a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
-
-## Visa fees
-
-You can work out the cost of your UK visa application by [using the visa fees tool](https://www.gov.uk/visa-fees). 
-
-When you apply for a visa, you will usually need to show you have enough money to support yourself in England by providing proof of savings or income. 
+Your partner and children can also apply to join you or stay in the UK as your dependants if they are eligible. Find out more about [how to apply to bring your partner and children with you on a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
 
 ## Get help
 
