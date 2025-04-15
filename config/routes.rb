@@ -87,8 +87,6 @@ Rails.application.routes.draw do
   get "/welcome/email/degree-status/:degree_status", to: "pages#welcome"
   get "/welcome/email/subject/:subject/degree-status/:degree_status", to: "pages#welcome"
 
-  resource :search, only: %i[show]
-
   resource :chat, only: %i[show]
 
   resource "cookie_preference", only: %i[show]

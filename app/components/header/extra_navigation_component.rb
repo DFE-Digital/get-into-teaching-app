@@ -1,12 +1,11 @@
 module Header
   class ExtraNavigationComponent < ViewComponent::Base
-    attr_reader :classes, :search_input_id
+    attr_reader :classes
 
-    def initialize(search_input_id:, classes: [])
+    def initialize(classes: [])
       super
 
-      @classes         = %w[extra-navigation] + classes
-      @search_input_id = search_input_id
+      @classes = %w[extra-navigation] + classes
     end
   end
 end
