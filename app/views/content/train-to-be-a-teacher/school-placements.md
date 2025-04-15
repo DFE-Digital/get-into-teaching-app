@@ -95,6 +95,10 @@ While your mentor is specific to each placement school, your tutor provides cons
 
 Your school leadership team and colleagues will be there to support you. Your placement schools may also have documents and policies in place to support their teachers. For example, all schools will have a behaviour policy that explains what's expected of pupils and what will happen if they misbehave.
 
+### Adjustments and accessibility
+
+Providers and schools can make adjustments during your placements if you need support during your placement. This includes support for neurodiversity, long-term physical or mental health conditions, or other accessibility needs. Find out more about [adjustments to help you train](/train-to-be-a-teacher/accessibility-adjustments).
+
 ## Are placements paid?
 
 For fee-paying postgraduate training, you can get financial support through student finance, or you may be eligible for bursaries or scholarships. This support is available for your whole training course, including school placements. 

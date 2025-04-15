@@ -160,6 +160,10 @@ There are usually more full-time courses available than part-time.
 
 Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
 
+## Adjustments and accessibility
+
+Course providers can make adjustments if you need supoprt because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs. Find out more about [adjustments to help you train](/train-to-be-a-teacher/accessibility-adjustments).
+
 ## Course start date
 
 Most teacher training courses start in September, with a small number of courses starting on other dates throughout the year.

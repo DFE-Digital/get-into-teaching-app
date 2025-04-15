@@ -126,11 +126,11 @@ Find out more about [writing your teacher training personal statement](/how-to-a
 
 ### Your adjustments 
 
-You can ask for extra support if you’re disabled, have a mental health condition or educational needs. 
+Training providers can make adjustments if you need support to become a teacher. This includes support for neurodiversity, long-term physical or mental health conditions, or other accessibility needs.
 
-Your training provider can then make adjustments so you can attend an interview and do the training. 
+If you think you’ll need adjustments, you can either contact your training provider directly, or you can ask for support when you apply for teacher training.
 
-Find out [what support you’re entitled to if you’re disabled](/funding-and-support/if-youre-disabled). 
+Find out more about [adjustments to help you train](/train-to-be-a-teacher/accessibility-adjustments). 
 
 ### Your references 
 

@@ -18,6 +18,15 @@ cta_arrow_link:
   bursaries:
     link_target: "/funding-and-support/scholarships-and-bursaries"
     link_text: "Find out if you're eligible for a bursary or scholarship"
+  disability-support:
+    link_target: "/funding-and-support/if-youre-disabled"
+    link_text: "Find out more about financial support if you have a disability"
+  parents-carers-support:
+    link_target: "/if-youre-a-parent-or-carers"
+    link_text: "Find out more about financial support if you’re a parent or carer"
+  veterans-support:
+    link_target: "/if-youre-a-veteran"
+    link_text: "Find out more about financial support if you’re a veteran"
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 keywords:
@@ -101,6 +110,28 @@ You may also be eligible for a tax-free bursary or scholarship, depending on the
 You do not have to pay a bursary or scholarship back. You can get a bursary or scholarship as well as any tuition fee loan and maintenance loan.
 
 $bursaries$
+
+## Other financial support
+
+### Financial support if you have a disability or other health condition
+
+If you’re neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs, you may be eligible for extra financial support to become a teacher.
+
+This support can help to cover the costs of any specialist equipment or study-related costs due to a health condition or disability.
+
+$disability-support$
+
+### Financial support if you're a parent or carer
+
+If you have children or other caring responsibilities, you may be able to get extra financial support while training to teach.
+
+$parents-carers-support$
+
+### Financial support if you're a veteran 
+
+If you’re transitioning from the armed forces or your service has already ended, you could be eligible for support to train to teach.
+
+$veterans-support$
 
 ## If you're from Wales, Scotland, Northern Ireland or the Crown Dependencies
 
