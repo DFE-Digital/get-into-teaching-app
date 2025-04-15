@@ -4,16 +4,6 @@ heading: "Train to teach if you do not have a degree"
 subcategory: Other routes into teaching
 description: |-
   Explore how you can get into teaching without a degree by taking an undergraduate course to gain qualified teacher status (QTS) alongside a bachelor's degree.
-calls_to_action:
-  find:
-    name: find
-    arguments:
-      title: "Find your undergraduate degree course"
-      link_target: "https://digital.ucas.com/search"
-      link_text: "Find undergraduate courses on the UCAS website"
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including learning more about what teaching is like.
 cta_arrow_link:
   qualifications:
     link_target: "/train-to-be-a-teacher/qualifications-you-need-to-teach"
@@ -21,6 +11,11 @@ cta_arrow_link:
   tda:
     link_target: "/train-to-be-a-teacher/teacher-degree-apprenticeships"
     link_text: "Find out more about teacher degree apprenticeships (TDAs)"
+  find:
+    link_target: "https://digital.ucas.com/search"
+    link_text: "Find undergraduate courses on the UCAS website"
+promo_content:
+  - "content/shared/block-promos/findundergrad_mailing_routes"
 navigation: 20.35
 navigation_title: If you do not have a degree
 navigation_description: You need a bachelor's degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about bachelor's degree courses.
@@ -84,5 +79,3 @@ $teacher-degree-apprenticeships$
 
 ## Other routes into teaching
 You do not need a degree and QTS to [teach in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers) or to [teach in early years](/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers). So if you want to become a teacher but are not able to get a degree, you can explore these options.
-
-$mailinglist$

@@ -101,5 +101,3 @@ Working in wraparound gives you experience working with children and in a school
 Once you have completed your school experience, you can decide if you want to [apply for teacher training in England](/how-to-apply-for-teacher-training/teacher-training-application) and get qualified teacher status (QTS). 
 
 [Find out more about the benefits of getting QTS](/train-to-be-a-teacher/what-is-qts).
-
-$mailinglist$

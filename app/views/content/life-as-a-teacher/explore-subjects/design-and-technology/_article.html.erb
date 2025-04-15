@@ -57,9 +57,9 @@
       <li>project management</li>
       <li>sustainability</li>
     </ul>
-     <p><%= render 'content/shared/teaching/ages_abilities' %> <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary"> Explore more about teaching secondary</a>.</p>
-  </section>
-
+    <%= render 'content/shared/teaching/ages_abilities' %>
+    <p>Explore more about <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary">what teaching secondary is like</a>.</p>
+</section>
   <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching design and technology</h2>
     <%= render 'content/shared/qualifications-training/check_qualifications' %>
@@ -77,7 +77,4 @@
  <section class="col col-720">
     <%= render 'content/shared/teaching/ect_support' %>
  </section>
-  <%= render CallsToAction::AdviserComponent.new(
-    text: "An adviser with years of teaching experience can help you to become a design and technology teacher. Chat by phone, text, or email as little or often as you need.",
-  ) %>
 </div>

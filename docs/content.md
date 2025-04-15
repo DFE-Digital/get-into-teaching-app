@@ -9,7 +9,7 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
 * [Setting up Codespaces and Github](#setting-up-codespaces-and-github)
 * [Finding a page/content to edit](#finding-a-pagecontent-to-edit)
 * [Creating a pull request](#creating-a-pull-request)
-* [Content editing info/tips](#content-editing-tips-info)
+* [Content editing info/tips](#content-editing-infotips)
   * [Tone of voice](#tone-of-voice)
   * [Using Markdown](#using-markdown)
   * [Headings](#headings)
@@ -17,10 +17,10 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
   * [Breadcrumbs](#breadcrumbs)
   * [Links](#links)
   * [Prevent indexing](#prevent-indexing)
-  * [Adding a document, image or video](#adding-a-document-or-image)
+  * [Adding a document, image or video](#adding-a-document-image-or-video)
     * [Hero images and text](#hero-images-and-text)
     * [Alt text](#alt-text)
-    * [Adding YouTube videos](#adding-youtube-videoes)
+    * [Adding YouTube videos](#adding-youtube-videos)
     * [iframe](#iframe)
   * [Calls to action](#calls-to-action)
     * [Adviser CTA component](#adviser-cta-component)
@@ -34,7 +34,7 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
   * [Values](#values)
 * [Creating a new page](#creating-a-new-page)
 * [Creating a subject page](#creating-a-subject-page)
-* [Creating an inspirational page](#creating-an-inspirational-page)
+* [Creating an inspirational page](#creating-an-inspiration-page)
 * [Saving a change](#saving-a-change)
 * [Previewing a change](#preview-a-change)
 * [Search engine optimisation](#search-engine-optimisation)
@@ -239,9 +239,21 @@ youtube_video:
 $return-to-teaching-advisers-video$
 ```
 
+To render vertical videos (9:16 aspect ratio), you can pass in the optional `orientation: "portrait"` parameter.
+
+```yaml
+---
+youtube_video:
+  return-to-teaching-advisers-video:
+    id: 2NrLm_XId4k
+    title: A video about what Return to Teaching Advisers do
+    orientation: portrait
+---
+```
+
 #### iframe
 
-When adding an iFrame elemet as part of Markdown content or a HTML page we should ensure it has an appropriate `title` attribute that explains the contents of the iFrame (in most of our cases we are showing a video). For example:
+When adding an iFrame element as part of Markdown content or a HTML page we should ensure it has an appropriate `title` attribute that explains the contents of the iFrame (in most of our cases we are showing a video). For example:
 
 ```
 <iframe

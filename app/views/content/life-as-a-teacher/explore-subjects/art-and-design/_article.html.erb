@@ -47,9 +47,9 @@
       <li>using knowledge and understanding of the work of others to develop and extend thinking and inform their own work</li>
       <li>generate and explore potential lines of enquiry using appropriate media and techniques</li>
     </ul>
-    <p><%= render 'content/shared/teaching/ages_abilities' %><a href="/life-as-a-teacher/age-groups-and-specialisms/secondary">Explore more about teaching secondary</a>.</p>
+    <%= render 'content/shared/teaching/ages_abilities' %>
+    <p>Explore more about <a href="/life-as-a-teacher/age-groups-and-specialisms/secondary">what teaching secondary is like</a>.</p>
 </section>
-
    <section class="col col-space-m col-720">
     <h2 class="heading--box-blue">Start your journey into teaching art and design</h2>
    <%= render 'content/shared/qualifications-training/check_qualifications' %>
@@ -66,7 +66,4 @@
    <section class="col col-720">
     <%= render 'content/shared/teaching/ect_support' %>
   </section>
-  <%= render CallsToAction::AdviserComponent.new(
-    text: "An adviser with years of teaching experience can help you to become an art and design teacher. Chat by phone, text, or email as little or often as you need.",
-  ) %>
 </div>
