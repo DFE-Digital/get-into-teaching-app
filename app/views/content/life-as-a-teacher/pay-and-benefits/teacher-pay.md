@@ -56,7 +56,7 @@ The pay ranges below apply to maintained schools (schools funded by local author
 
 Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges.
 
-Figures apply from $salaries_date_appliesfrom$.
+The amounts on this page apply from $salaries_date_appliesfrom$.
 
 ## Primary and secondary teacher salary
 

@@ -1,23 +1,26 @@
 finance:
+# loans
   loanacademicyear: 2025 to 2026 academic year
-  adultdependantsgrant:
-    value: £3,438
-    income: £15,621.98
-  childcaregrantweeklypayment:
-    one: £193.62
-    twoplus: £331.95
-  disabilityadditionalfunding: £27,783
-  dsaacademicyear: 2025 to 2026 academic year
   maintenanceloan:
     withparents: £8,877
     notwithparentsoutsidelondon: £10,544
     notwithparentsinsidelondon: £13,762
     oversixty: £4,461
-    ## implemented above this line
-  parentslearningallowance:
-    min: £50
-    max: £1,963
-    income: £18,835.98
   tuitionfeeloan:
     postgraduatemaxfulltime: £9,535
     postgraduatemaxparttime: £7,145
+# parents and carers
+  parentssacademicyear: 2025 to 2026 academic year
+  parentslearningallowance:
+    min: £50
+    max: £2,024
+    income: £18,957.98
+  adultdependantsgrant:
+    value: £3,545
+    income: £15,835.98
+  childcaregrantweeklypayment:
+    one: £199.62
+    twoplus: £342.24
+# disability 
+  dsaacademicyear: 2025 to 2026 academic year
+  disabilityadditionalfunding: £27,783
