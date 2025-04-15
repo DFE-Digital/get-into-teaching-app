@@ -10,10 +10,10 @@ class SitemapController < ApplicationController
   # Ensure any index route (collection) has a trailing slash (representing the semantics of a directory).
   # This will keep it consistent with how canonical-rails behaves and ensure search engines are happy.
   OTHER_PATHS = {
-    "/events" => { title: "Events" },
-    "/events/about-get-into-teaching-events" => { title: "About Get Into Teaching Events" },
-    "/mailinglist/signup/name" => { title: "Mailing List" },
-    "/routes-into-teaching" => { title: "Routes Into Teaching" },
+    "/events" => { title: "Events from Get Into Teaching and training providers" },
+    "/events/about-get-into-teaching-events" => { title: "Get Into Teaching events" },
+    "/mailinglist/signup/name" => { title: "Free personalised teacher training guidance" },
+    "/routes-into-teaching" => { title: "Find your route into teaching" },
   }.freeze
 
   before_action :set_page_title

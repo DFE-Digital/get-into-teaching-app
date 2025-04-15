@@ -1,5 +1,5 @@
 ---
-title: Your teacher training application
+title: Teacher training application
 description: |-
   Find out what to include in your teacher training application, how the process works and when to apply.
 keywords:
@@ -175,4 +175,3 @@ You may need to get an additional qualification, work on your interview techniqu
 You can apply to more courses if all your applications are unsuccessful. 
 
 Find out what to do [if you do not get a place on a teacher training course](/how-to-apply-for-teacher-training/if-your-application-is-unsuccessful). 
-
