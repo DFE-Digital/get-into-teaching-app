@@ -1,5 +1,5 @@
 ---
-title: "Get an international relocation payment"
+title: "Get an international relocation payment (IRP)"
 subcategory: If you're already a teacher
 description: |-
   Non-UK teachers in physics and languages could be eligible for financial help in the form of an international relocation payment from the UK government.
@@ -9,7 +9,7 @@ cta_arrow_link:
     link_target: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     link_text: "Find out more about teaching in England if you trained outside the UK"
 navigation: 20.60
-navigation_title: Get an international relocation payment
+navigation_title: Get an international relocation payment (IRP)
 navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth $nonuk_internationalrelocationpayment_value$.
 image: "static/images/content/hero-images/geography.jpg"
 backlink: "../../"

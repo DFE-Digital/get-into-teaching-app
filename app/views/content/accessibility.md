@@ -71,18 +71,7 @@ The content is non-accessible for the following reasons:
 
 The webchat content is non-accessible for the following reasons:
 
-* the logo in the header is announced incorrectly for Talkback users. This fails to meet [WCAG 2.2 A - 1.1.1 Non-text content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content)
 * on the Tell us about yourself page, the error message is not programmatically associated with the field and is not announced by screen readers when tabbing onto the field itself. This fails to meet [WCAG 2.2 A - 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships)
-* the name of the person who wrote the message and the time it was sent are not programmatically associated with the message itself and therefore the relationship is not conveyed. This fails to meet [WCAG 2.2 A - 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships)
-* when using the webchat on a mobile device in landscape orientation, the header and text box take up the majority of the screen and the messages within the main content cannot be read. This fails to meet [WCAG 2.2 AA - 1.3.4 Orientation](https://www.w3.org/WAI/WCAG22/Understanding/orientation)
-* on the Tell us about yourself page, the name field does not have a corresponding autocomplete attribute. This fails to meet [WCAG 2.2 AA - 1.3.5 Identify input purpose](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose)
-* the grey placeholder text of “Type your message…” does not have sufficient contrast against the white background. This fails to meet [WCAG 2.2 AA - 1.4.3 Contrast (minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum)
-* the webchat is not usable when viewed at 400% zoom as the header and text input take up the majority of the screen and the messages cannot be read within the small gap. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow) and [WCAG 2.2 AA 2.4.11 - Focus Not Obscured (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum)
-* the pink colour used as the focus indicator does not quite have sufficient colour contrast against the white background. This fails to meet [WCAG 2.2 AA - 1.4.11 Non-text contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast)
-* there is no opportunity to turn off, adjust, or extend the timeout limit encountered when a page is left open. This fails to meet [WCAG 2.2 A - 2.2.1 Timing adjustable](https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable)
-* the page titles are not fully descriptive and are missing context. This fails to meet [WCAG 2.2 A - 2.4.2 Page titled](https://www.w3.org/WAI/WCAG22/Understanding/page-titled)
-* the accessible name of the text input field for writing messages does not match the visual placeholder label. This fails to meet [WCAG 2.2 A - 2.5.3 Label in name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name)
-* the loading message displayed when moving from the Tell us about yourself page to the Chat page is not announced to screen reader users. This fails to meet [WCAG 2.2 AA 4.1.3 Status messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages)
 
 ## What we're doing to improve accessibility
 
@@ -92,6 +81,6 @@ We’ll continue to test the accessibility of this service as it develops.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 5 March 2025. It was last reviewed on 5 March 2025.
+This statement was prepared on 5 March 2025. It was last reviewed on 15 April 2025.
 
 This website was last tested independently on 25 February 2025. The test was carried out by the Government Digital Service.

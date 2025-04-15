@@ -409,3 +409,18 @@ $mobile-cutoff: 800px;
   &.yellow-yellow { @include colours($yellow, $yellow); }
   &.grey-pink { @include colours($grey, $pink); }
 }
+
+// New styles for LandingHeroFullwidthComponent
+
+.landing-hero-fullwidth {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 2000px;
+
+  picture, img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+}
