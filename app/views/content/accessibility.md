@@ -63,8 +63,6 @@ This website is partially compliant with the WCAG (Web Content Accessibility Gui
 The content is non-accessible for the following reasons:
 
 * some of the non-verbal information presented in videos on the site is not included in audio descriptions. This fails to meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded)
-* the visual styling of the results displayed in our search function does not match the programmatic information which could cause problems for screen reader users. This fails to meet [WCAG 2.2 A - 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships)
-* in our main navigational menu, there is an issue with the programmatic reading order, with some sub-menu items appearing last which may be confusing for users. This fails to meet [WCAG 2.2 A - 1.3.2 Meaningful sequence](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence)
 * on the [events page](/events), the [bursaries and scholarship page](/funding-and-support/scholarships-and-bursaries) and in the welcome guide, some content is cut off the screen at 400% zoom. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow)
 
 #### Webchat
