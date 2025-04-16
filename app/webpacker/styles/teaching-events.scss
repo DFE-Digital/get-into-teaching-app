@@ -403,10 +403,6 @@ $icon-size: 3rem;
       .image {
         grid-area: 2 / 3 / 4 / 5;
       }
-
-      .triangle {
-        grid-area: 4 / 1 / 5 / 6;
-      }
     }
   }
 
@@ -477,21 +473,6 @@ $icon-size: 3rem;
           object-fit: cover;
         }
         padding-bottom: 0;
-      }
-    }
-
-    .triangle {
-      // slight hack, but helps ensure there's no gap between
-      // the triangle and the block above
-      margin-top: -2px;
-      background-color: white;
-
-      &.yellow {
-        svg {
-          fill: $yellow;
-          stroke: $yellow;
-          stroke-width: 1;
-        }
       }
     }
   }
