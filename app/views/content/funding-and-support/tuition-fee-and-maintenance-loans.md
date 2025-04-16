@@ -22,10 +22,10 @@ cta_arrow_link:
     link_target: "/funding-and-support/if-youre-disabled"
     link_text: "Find out more about financial support if you have a disability"
   parents-carers-support:
-    link_target: "/if-youre-a-parent-or-carers"
+    link_target: "/funding-and-support/if-youre-a-parent-or-carer"
     link_text: "Find out more about financial support if you’re a parent or carer"
   veterans-support:
-    link_target: "/if-youre-a-veteran"
+    link_target: "/funding-and-support/if-youre-a-veteran"
     link_text: "Find out more about financial support if you’re a veteran"
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.

@@ -82,6 +82,6 @@ You might be assessed through written assignments, lesson observations, or by a 
 
 ## Adjustments and accessibility
 
-Providers can make adjustments if you need supoprt because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs.
+Providers can make adjustments if you need support because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs.
 
 $adjustments$

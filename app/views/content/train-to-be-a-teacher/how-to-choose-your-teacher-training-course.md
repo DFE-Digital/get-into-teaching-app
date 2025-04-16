@@ -162,7 +162,7 @@ Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 mont
 
 ## Adjustments and accessibility
 
-Course providers can make adjustments if you need supoprt because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs. Find out more about [adjustments to help you train](/train-to-be-a-teacher/accessibility-adjustments).
+Course providers can make adjustments if you need support because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs. Find out more about [adjustments to help you train](/train-to-be-a-teacher/accessibility-adjustments).
 
 ## Course start date
 

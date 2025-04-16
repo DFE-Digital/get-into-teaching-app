@@ -126,7 +126,7 @@ Find out more about [writing your teacher training personal statement](/how-to-a
 
 ### Your adjustments 
 
-Training providers can make adjustments if you need support to become a teacher. This includes support for neurodiversity, long-term physical or mental health conditions, or other accessibility needs.
+Training providers can make adjustments if you need support to become a teacher. This includes support if you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs.
 
 If you think you’ll need adjustments, you can either contact your training provider directly, or you can ask for support when you apply for teacher training.
 

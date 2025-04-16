@@ -97,7 +97,7 @@ Your school leadership team and colleagues will be there to support you. Your pl
 
 ### Adjustments and accessibility
 
-Providers and schools can make adjustments during your placements if you need support during your placement. This includes support for neurodiversity, long-term physical or mental health conditions, or other accessibility needs. Find out more about [adjustments to help you train](/train-to-be-a-teacher/accessibility-adjustments).
+Providers and schools can make adjustments if you need support during your placements. This includes support if you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs. Find out more about [adjustments to help you train](/train-to-be-a-teacher/accessibility-adjustments).
 
 ## Are placements paid?
 
