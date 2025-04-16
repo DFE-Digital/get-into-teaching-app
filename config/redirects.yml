@@ -40,7 +40,7 @@ redirects:
   "/non-uk-teachers/international-qualified-teacher-status/next-steps-for-candidates": "/non-uk-teachers/international-qualified-teacher-status"
   "/non-uk-teachers/why-train-to-teach-transcript": "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
   "/non-uk-teachers/ukraine": "/non-uk-teachers"
-  
+
 
   # Events
   "/events/about-train-to-teach-events": "/events/about-get-into-teaching-events"
@@ -489,7 +489,7 @@ redirects:
   "/life-as-a-teacher/maths": "/life-as-a-teacher/explore-subjects/maths"
   "/life-as-a-teacher/physics": "/life-as-a-teacher/explore-subjects/physics"
   "/life-as-a-teacher/computing": "/life-as-a-teacher/explore-subjects/computing"
-  "/life-as-a-teacher/engineers-teach-physics": "/life-as-a-teacher/explore-subjects/engineers-teach-physics" 
+  "/life-as-a-teacher/engineers-teach-physics": "/life-as-a-teacher/explore-subjects/engineers-teach-physics"
   "/subjects/physics": "/life-as-a-teacher/explore-subjects/physics"
   "/subjects/maths": "/life-as-a-teacher/explore-subjects/maths"
   "/subjects/engineers-teach-physics": "/life-as-a-teacher/explore-subjects/engineers-teach-physics"
@@ -507,6 +507,9 @@ redirects:
   "/life-as-a-teacher/teaching-as-a-career/why-teach": "/life-as-a-teacher/why-teach/why-become-a-teacher"
   "/life-as-a-teacher/pay-and-benefits/bens-favourite-things-about-teaching": "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching"
   "/life-as-a-teacher/pay-and-benefits/abigails-favourite-things-about-teaching": "/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching"
-  
+
  # Incorrect inbound links
   "/train-to-be-a-teacher/teacher-degree-apprenticeships.": "/train-to-be-a-teacher/teacher-degree-apprenticeships"
+
+  # Old search --> A to Z sitemap
+  "/search": "/sitemap"
