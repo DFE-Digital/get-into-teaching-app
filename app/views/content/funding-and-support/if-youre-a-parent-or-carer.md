@@ -45,7 +45,7 @@ If you have children or other caring responsibilities, you may be able to get ex
 
 You do not have to pay this money back, and you’ll get it on top of your other student finance.
 
-Figures are for the 2024/25 academic year.
+The amounts on this page are for the $finance_parentsacademicyear$.
 
 There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the funding options on this page. If you’re doing a part-time course, you may be eligible for [Universal Credit](https://www.gov.uk/guidance/universal-credit-and-students).
 
