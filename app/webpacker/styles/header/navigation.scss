@@ -14,6 +14,8 @@
 }
 
 body > header {
+  position: relative;
+
   button.btn-as-link {
     border-style: none;
     font: inherit;
@@ -23,6 +25,7 @@ body > header {
     -moz-appearance: none;
     -webkit-appearance: none;
     background-color: rgba(0,0,0,0);
+    position: relative;
   }
 
   .menu-link {
@@ -30,7 +33,7 @@ body > header {
   }
 
   #primary-navigation {
-    // general
+    // general (mobile and desktop)
     display: flex;
     flex-grow: 1;
 
@@ -190,13 +193,29 @@ body > header {
         padding: 0 1em;
 
         > li {
-          position: relative;
           flex-direction: row;
           flex-wrap: nowrap;
           justify-content: flex-start;
 
           > .menu-link {
             border-bottom: solid 4px transparent;
+            display: inline-grid;
+            grid-template-columns: minmax(min-content, max-content) min-content;
+            grid-template-rows: 1fr;
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+            padding: 0.755em 0.75em;
+            margin: 0.75em 0;
+
+            .menu-title {
+              grid-area: 1 / 1 / 2 / 2;
+              display: block;
+            }
+
+            .nav-icon {
+              grid-area: 1 / 2 / 2 / 3;
+              display: block;
+            }
           }
 
           > .menu-link:hover {
@@ -218,9 +237,8 @@ body > header {
             border-bottom: 5px solid $grey;
           }
 
-
           a,
-          button.btn-as-link,
+          > button.btn-as-link,
           div {
             line-height: 1.5;
           }
@@ -228,28 +246,7 @@ body > header {
           .break {
             display: none;
           }
-        }
-
-
-        .menu-link {
-          display: inline-grid;
-          grid-template-columns: minmax(min-content, max-content) min-content;
-          grid-template-rows: 1fr;
-          grid-column-gap: 0;
-          grid-row-gap: 0;
-          padding: 0.755em 0.75em;
-          margin: 0.75em 0;
-
-          .menu-title {
-            grid-area: 1 / 1 / 2 / 2;
-            display: block;
-          }
-
-          .nav-icon {
-            grid-area: 1 / 2 / 2 / 3;
-            display: block;
-          }
-        }
+        } // li
       } // desktop
     } // ol.primary
 
@@ -305,18 +302,17 @@ body > header {
     // mobile and tablet
     @include mq($until: desktop) {
       flex-direction: column-reverse;
-    }
 
-    // desktop and wide screen
-    @include mq($from: desktop) {
-      .hidden-desktop {
+      div.desktop-level2-wrapper, div.desktop-level3-wrapper {
+        width: 100%;
+      }
+
+      &.hidden-mobile {
         display: none;
       }
     }
-  }
 
-  // NB: desktop only - no mobile version of secondary menu
-  #secondary-navigation {
+    // desktop and wide screen
     @include mq($from: desktop) {
       &.expanded {
         padding-top: 20px;
@@ -416,50 +412,59 @@ body > header {
             }
           }
         }
-      }
 
-      ol.page-links-list {
-        > li {
-          border-left: none;
+        .nav-icon {
+          padding-right: 0;
+          width: 12px;
+          height: 21px;
+          margin-top: 0;
+
+          &__contracted, &__expanded {
+            background-image: url("../images/navigation/arrow-right-black.svg");
+          }
         }
+      } // ol.category-links-list, ol.page-links-list
+
+      ol.category-links-list {
+        border-right: dotted #d3d3d3 1px;
       }
 
-      .nav-icon {
-        padding-right: 0;
-        width: 12px;
-        height: 21px;
-        margin-top: 0;
-
-        &__contracted, &__expanded {
-          background-image: url("../images/navigation/arrow-right-black.svg");
-        }
+      div.desktop-level2-wrapper {
+        position: absolute;
+        left: 0;
+        padding-left: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: calc(33% - 62px);
       }
-    }
-  }
 
-  // NB: this section must appear below main menu definitions and applies to both mobile and desktop menus
-  #primary-navigation, #secondary-navigation {
+      div.desktop-level3-wrapper {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: calc(100% - 100px);
+      }
+    } // from desktop, secondary nav
+
     ol.hidden-menu {
       display: none;
     }
 
-    @include mq($until: desktop) {
-      &.hidden-mobile {
-        display: none;
+    ol.primary, ol.category-links-list {
+      .nav-icon {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        display: block;
+        width: 21px;
+        height: 21px;
+        margin-left: 0.25em;
+        margin-right: 0.25em;
       }
     }
-
-    .nav-icon {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: auto;
-      display: block;
-      width: 21px;
-      height: 21px;
-      margin-left: 0.25em;
-      margin-right: 0.25em;
-    }
-  }
+  } // primary navigation
 }
 
 
