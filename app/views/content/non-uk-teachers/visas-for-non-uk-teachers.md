@@ -37,49 +37,7 @@ cta_arrow_link:
   salaryrequirements: 
      link_target: "https://www.gov.uk/skilled-worker-visa/if-you-work-in-healthcare-or-education"
      link_text: "Find out more about the salary requirements for a Skilled Worker visa"
-
-keywords:
-  - International
-  - Overseas
-  - Foreign
-  - "Non-UK"
-  - Nationality
-  - Residency
-  - EEA
-  - Canada
-  - New Zealand
-  - Switzerland
-  - USA
-  - Visa
-  - Skilled Worker visa
-  - EU
-  - EU Settlement Scheme
-  - NARIC
-  - UK NARIC
-  - ENIC
-  - UK ENIC
-  - European Network of Information Centre
-  - National Recognition Information Centre for the United Kingdom
-  - PhD
-  - Immigration
-  - Ireland
-  - Irish
-  - Common Travel Area
-  - Student Visa
-  - Home Office
-  - Graduate Visa
-  - Youth Mobility Scheme
-  - Japan
-  - Monaco
-  - Hong Kong
-  - Republic of Korea
-  - Taiwan
-  - Family Visa
-  - UK Ancestry Visa
-  - Abroad
-  - Europe
-  - European
-  - Settlement Scheme
+     
 ---
 
 If you are applying for teaching jobs as a non-UK citizen, you will need a visa or immigration status allowing you to work in England.
