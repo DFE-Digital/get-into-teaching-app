@@ -280,11 +280,11 @@
     - "static/images/content/hero-images/teacher-primary--mobile.jpg"
     - "static/images/content/hero-images/teacher-primary--tablet.jpg"
 
-"static/images/content/hero-images/celebration.jpg":
+"static/images/content/hero-images/celebration.png":
   alt: "An image showing a celebration banner with the hashtag Got Into Teaching"
   variants:
-    - "static/images/content/hero-images/celebration--mobile.jpg"
-    - "static/images/content/hero-images/celeration--tablet.jpg"
+    - "static/images/content/hero-images/celebration--mobile.png"
+    - "static/images/content/hero-images/celeration--tablet.png"
 
 # case studies
 "static/images/content/case-studies/abigail.jpg":

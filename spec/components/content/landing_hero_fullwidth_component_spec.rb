@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe Content::LandingHeroFullwidthComponent, type: "component" do
   subject! { Capybara.string(component) }
 
-  let(:image_path) { "static/images/content/hero-images/celebration.jpg" }
+  let(:image_path) { "static/images/content/hero-images/celebration.png" }
   let(:component) do
     render_inline(described_class.new(image: image_path))
   end
