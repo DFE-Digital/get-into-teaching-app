@@ -280,7 +280,7 @@
     - "static/images/content/hero-images/teacher-primary--mobile.jpg"
     - "static/images/content/hero-images/teacher-primary--tablet.jpg"
 
-"static/images/content/hero-images/celebration.png":
+"static/images/content/hero-images/celebration.jpg":
   alt: "An image showing a celebration banner with the hashtag Got Into Teaching"
   variants:
     - "static/images/content/hero-images/celebration--mobile.jpg"
