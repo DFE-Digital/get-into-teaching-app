@@ -26,11 +26,6 @@ cta_arrow_link:
   financial-support:
     link_target: "/funding-and-support"
     link_text: "Find out more about financial support for postgraduate teacher training"
-keywords:
-    - placements
-    - school placements
-    - classroom placements
-    
 ---
 
 School placements are an essential and exciting part of school-led or university-led postgraduate teacher training. They're a chance to:

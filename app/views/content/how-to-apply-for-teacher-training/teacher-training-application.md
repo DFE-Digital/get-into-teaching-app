@@ -2,26 +2,6 @@
 title: Teacher training application
 description: |-
   Find out what to include in your teacher training application, how the process works and when to apply.
-keywords:
-  - adviser
-  - advisor
-  - ITT
-  - Initial Teacher Training
-  - QTS
-  - Qualified Teacher Status
-  - Teacher Training Adviser
-  - application
-  - apply
-  - how to apply
-  - applying for teacher training
-  - referees
-  - references
-  - process
-  - personal statement
-  - when to apply
-  - interviews
-  - offers
-  - teacher training application
 promo_content:
   - "content/shared/block-promos/adviser_apply"
 navigation: 30.05

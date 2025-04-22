@@ -5,19 +5,6 @@ description: |-
 navigation: 30.20
 navigation_title: Teacher training interviews
 navigation_description: Find out how to prepare for your teacher training interviews.
-keywords:
-  - adviser
-  - advisor
-  - ITT
-  - Initial Teacher Training
-  - QTS
-  - Qualified Teacher Status
-  - Teacher Training Adviser
-  - application
-  - applying for teacher training
-  - process
-  - PGCE
-  - interviews
 promo_content:
   - "content/shared/block-promos/adviser_events"
 ---
