@@ -99,7 +99,7 @@ gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
 
 # NB: Do not update Sidekiq beyond version 6.5.5, as newer versions are incompatible
 # with the Redis instance we are using on AKS
-gem "sidekiq", ">= 6.5.5", "< 6.5.6"
+gem "sidekiq", ">= 6.5.5", "< 8.0.3"
 gem "sidekiq-cron"
 
 # Fix CVE errors
@@ -130,7 +130,7 @@ group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
 
   # GOV.UK interpretation of rubocop for linting Ruby
-  gem "rubocop-govuk", "~> 5.1.1"
+  gem "rubocop-govuk", "~> 5.1.4"
 
   # Static security scanner
   gem "brakeman", "~> 7.0.0", require: false
