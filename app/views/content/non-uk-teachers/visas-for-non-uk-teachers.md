@@ -29,7 +29,7 @@ cta_arrow_link:
     link_target: "/non-uk-teachers/teach-in-england-if-you-trained-overseas" 
     link_text: "Find out more about teaching in England if you trained outside the UK"
   teachvacancies:
-     link_target: "https://teaching-vacancies.service.gov.uk" 
+     link_target: "https://teaching-vacancies.service.gov.uk/jobs?visa_sponsorship_availability%5B%5D=&visa_sponsorship_availability%5B%5D=true&teaching_job_roles%5B%5D=&support_job_roles%5B%5D=&phases%5B%5D=&subjects%5B%5D=&ect_statuses%5B%5D=&organisation_types%5B%5D=&school_types%5B%5D=&working_patterns%5B%5D=&quick_apply%5B%5D=&previous_keyword=&organisation_slug=&keyword=&location=&radius=0&sort_by=publish_on&sort_by=publish_on" 
      link_text: "Find teaching jobs with visa sponsorship"
   visacosts:
     link_target: "https://www.gov.uk/skilled-worker-visa/how-much-it-costs"
