@@ -103,12 +103,12 @@ $salaryrequirements$
 
 ### Working part time as a teacher
 
-You can work part-time, but your salary must meet the threshold for a Skilled Worker visa. 
+You can work part-time, but [your salary must meet the threshold for a Skilled Worker visa](https://www.gov.uk/government/publications/national-pay-scales-for-eligible-teaching-and-education-jobs/national-pay-scales-for-eligible-teaching-and-education-leadership-occupation-codes). 
 
 There are 2 requirements:
 
 * your part-time salary must be at least $nonuk_skilledworkervisateacherminparttime$
-* the full-time equivalent of your salary must meet the minimum set for your region and status for qualified and unqualified teachers
+* the full-time equivalent salary for the role must meet the minimum threshold set for your region and status for qualified and unqualified teachers
 
 Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary on offer does not meet the Skilled Worker visa requirements.
 
