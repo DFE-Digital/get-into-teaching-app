@@ -29,12 +29,6 @@ cta_arrow_link:
     link_text: "Find out more about financial support if you’re a veteran"
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
-keywords:
-    - Tuition Fee Loan
-    - Maintenance Loan
-    - Student Loan
-    - Student Finance
-    - Financial Support
 expander:
   student-finance:
     title: student finance

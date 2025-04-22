@@ -21,7 +21,6 @@ keywords:
 promo_content:
   - "content/shared/block-promos/adviser_events"
 ---
-s
 Congratulations on being invited for an interview! This is an important stage in successfully getting a place on a primary or secondary teacher training course.
 
 These tips can help you prepare for a successful interview. 

@@ -17,7 +17,7 @@ cta_arrow_link:
     link_target: "/train-to-be-a-teacher/school-placements"
     link_text: "Find out more about school placements"
   adjustments:
-    link_target: "/train-to-be-a-teacher/accessibility-adjustments)"
+    link_target: "/train-to-be-a-teacher/accessibility-adjustments"
     link_text: "Find out more about adjustments to help you train"
 ---
 
