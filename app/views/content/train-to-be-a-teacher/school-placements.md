@@ -26,6 +26,12 @@ cta_arrow_link:
   financial-support:
     link_target: "/funding-and-support"
     link_text: "Find out more about financial support for postgraduate teacher training"
+  skills:
+    link_target: "/life-as-a-teacher/teaching-as-a-career/skills-to-teach"
+    link_text: "Find out more about the skills needed for teaching"
+  adjustments:
+    link_target: "/train-to-be-a-teacher/accessibility-adjustments"
+    link_text: "Find out more about adjustments to help you train"
 ---
 
 School placements are an essential and exciting part of school-led or university-led postgraduate teacher training. They're a chance to:
@@ -72,7 +78,9 @@ School placements can seem daunting, but there's lots of support available.
 
 ### Your skills from training
 
-You’ll start your placements well equipped with a toolkit of theory and techniques that you'll learn in training. Placements are a chance to put your new skills into practice. Find out more about the [skills needed for teaching](/life-as-a-teacher/teaching-as-a-career/skills-to-teach).
+You’ll start your placements well equipped with a toolkit of theory and techniques that you'll learn in training. Placements are a chance to put your new skills into practice. 
+
+$skills$
 
 ### Mentors
 
@@ -92,7 +100,9 @@ Your school leadership team and colleagues will be there to support you. Your pl
 
 ### Adjustments and accessibility
 
-Providers and schools can make adjustments if you need support during your placements. This includes support if you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs. Find out more about [adjustments to help you train](/train-to-be-a-teacher/accessibility-adjustments).
+Providers and schools can make adjustments if you need support during your placements. This includes support if you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs.
+
+$adjustments$
 
 ## Are placements paid?
 
