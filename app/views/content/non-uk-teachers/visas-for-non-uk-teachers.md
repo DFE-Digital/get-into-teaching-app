@@ -64,7 +64,7 @@ You do not need a Skilled Worker visa to teach in England if you are an Irish ci
 
 * [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility) 
 
-If you need to apply for a Skilled Worker visa, you will need to pay visa fees. You can find out [how much it costs to apply for a Skilled Worker visa will cost](https://www.gov.uk/skilled-worker-visa/how-much-it-costs).
+If you need to apply for a Skilled Worker visa, you will need to pay visa fees. You can find out [how much it costs to apply for a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa/how-much-it-costs).
 
 $teachvisa$
 
@@ -110,7 +110,6 @@ There are 2 requirements:
 * your part-time salary must be at least $nonuk_skilledworkervisateacherminparttime$
 * the full-time equivalent salary for the role must meet the minimum threshold set for your region and status for qualified and unqualified teachers
 
-Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary on offer does not meet the Skilled Worker visa requirements.
 
 ## Dependants
 
