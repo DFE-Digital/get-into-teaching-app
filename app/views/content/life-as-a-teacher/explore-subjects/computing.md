@@ -14,10 +14,6 @@ backlink: "../../"
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/0036.jpg"
-keywords:
-  - computing
-  - teaching computing
-  - teacher training
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/computing/article"

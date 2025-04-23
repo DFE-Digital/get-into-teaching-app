@@ -11,10 +11,6 @@ description: |-
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/0030.jpg"
-keywords:
-  - biology
-  - teaching biology
-  - teacher training
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/biology/article"

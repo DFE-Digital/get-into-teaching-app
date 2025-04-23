@@ -13,10 +13,6 @@ description: |-
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/maths-pythagoras.jpg"
-keywords:
-  - maths
-  - teaching maths
-  - teacher training
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/maths/article"

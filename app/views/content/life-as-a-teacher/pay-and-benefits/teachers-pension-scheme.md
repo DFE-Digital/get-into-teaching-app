@@ -6,11 +6,6 @@ description: |-
 image: false
 promo_content:
   - "content/shared/block-promos/mailing_adviser_routes"
-keywords:
-  - Teachers pension
-  - Pension
-  - Benefits
-  - Earnings
 ---
 One of the great benefits of a teaching career is a secure pension that will help you save for your future. 
 

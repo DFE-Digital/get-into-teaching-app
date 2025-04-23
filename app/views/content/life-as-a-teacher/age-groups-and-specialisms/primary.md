@@ -10,10 +10,6 @@ description: |-
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/teacher-primary.jpg"
-keywords:
-- primary school
-- primary school teacher
-- primary school teacher training
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/age-groups-and-specialisms/primary/article"
