@@ -29,7 +29,7 @@ cta_arrow_link:
     link_target: "/non-uk-teachers/teach-in-england-if-you-trained-overseas" 
     link_text: "Find out more about teaching in England if you trained outside the UK"
   teachvacancies:
-     link_target: "https://teaching-vacancies.service.gov.uk/jobs?visa_sponsorship_availability%5B%5D=&visa_sponsorship_availability%5B%5D=true&teaching_job_roles%5B%5D=&support_job_roles%5B%5D=&phases%5B%5D=&subjects%5B%5D=&ect_statuses%5B%5D=&organisation_types%5B%5D=&school_types%5B%5D=&working_patterns%5B%5D=&quick_apply%5B%5D=&previous_keyword=&organisation_slug=&keyword=&location=&radius=0&sort_by=publish_on&sort_by=publish_on](https://teaching-vacancies.service.gov.uk/jobs?visa_sponsorship_availability%5B%5D=true)" 
+     link_target: "https://teaching-vacancies.service.gov.uk/jobs?visa_sponsorship_availability%5B%5D=true" 
      link_text: "Find teaching jobs with visa sponsorship"
   visacosts:
     link_target: "https://www.gov.uk/skilled-worker-visa/how-much-it-costs"
@@ -64,7 +64,7 @@ You do not need a Skilled Worker visa to teach in England if you are an Irish ci
 
 * [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility) 
 
-If you need to apply for a Skilled Worker visa, you will need to pay visa fees. You can find out [how much applying for a Skilled Worker visa will cost](https://www.gov.uk/skilled-worker-visa/how-much-it-costs).
+If you need to apply for a Skilled Worker visa, you will need to pay visa fees. You can find out [how much it costs to apply for a Skilled Worker visa will cost](https://www.gov.uk/skilled-worker-visa/how-much-it-costs).
 
 $teachvisa$
 
