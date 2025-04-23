@@ -43,7 +43,7 @@ cta_arrow_link:
     link_target: "/non-uk-teachers/visas-for-non-uk-teachers"
     link_text: "Learn more about visas for non-UK teachers"
   sponsjobs:
-    link_target: "https://teaching-vacancies.service.gov.uk"
+    link_target: "https://teaching-vacancies.service.gov.uk/jobs?visa_sponsorship_availability%5B%5D=true"
     link_text: "Search for teaching jobs with visa sponsorship"
 ---
 
