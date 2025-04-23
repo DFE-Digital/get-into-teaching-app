@@ -65,7 +65,7 @@ $ukraine-moving$
 
 If you do not have QTS, schools will want to see alternative evidence of your teaching and academic qualifications. 
 
-You can get a [statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx). This will show how your qualifications compare to English ones. 
+To check your qualifications meet the required standard in England you will need [a statement of comparability from the UK European Network of Information Centres (UK ENIC)](https://enic.org.uk/Qualifications/SOC/Default.aspx).
 
 If you are a qualified teacher from outside the UK, you can work as a teacher in England for up to 4 years without QTS.  After that, you will need QTS to teach in many schools in England. 
 
