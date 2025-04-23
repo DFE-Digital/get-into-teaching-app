@@ -19,14 +19,6 @@ cta_arrow_link:
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a bachelor's degree or you’re studying for one.
-keywords:
-  - becoming a teacher
-  - teacher training
-  - school direct (salaried)
-  - pgce
-  - qts
-  - Teach First
-  - Postgraduate teaching apprenticeship
 expander:
   fees-and-funding:
     title: fees and funding

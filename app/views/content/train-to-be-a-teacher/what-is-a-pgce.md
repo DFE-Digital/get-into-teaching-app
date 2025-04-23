@@ -22,19 +22,6 @@ cta_arrow_link:
   train-with-degree:
     link_target: "/train-to-be-a-teacher/if-you-have-a-degree"
     link_text: "Find out more about teacher training if you have or are studying for a degree"
-keywords:
-  - PGCE
-  - Post-graduate
-  - Post-grad
-  - Postgraduate
-  - Postgrad
-  - Certificate
-  - Education
-  - QTS
-  - Qualified-teacher
-  - Teaching
-  - Qualification
-  - State-school
 expander:
   check-your-qualifications:
     title: check your qualifications

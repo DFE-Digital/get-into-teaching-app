@@ -751,14 +751,6 @@ provider_groups:
       email: "jboden@smchull.org"
       telephone: "01482 851136"
       international_phone: "+441482851136"
-      
-
-keywords:
-  - Assessment Only
-  - Assessment
-  - Provider
-  - SCITT
-  - experienced
 ---
 
 If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) through an assessment only programme.

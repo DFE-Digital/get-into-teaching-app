@@ -697,11 +697,6 @@ description: |-
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/chemistry.jpg"
-keywords:
-  - chemistry
-  - teaching chemistry
-  - teacher training
-
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/chemistry/article"
@@ -812,8 +807,6 @@ navigation_title: This is the title that will appear in the tiles
 
 navigation_description: This is the description that will appear in the tiles
 
-keywords: we used to use SemRush to generate keywords to put here. We are in the process of deciding whether to remove the search box from the website.
-
 Here is a blank version to take and fill in:
 
 - title:
@@ -822,7 +815,6 @@ Here is a blank version to take and fill in:
 - navigation:  
 - navigation_title: 
 - navigation_description: 
-- keywords: 
 
 ## Creating a subject page
 
@@ -862,10 +854,6 @@ description: |-
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/0032.jpg"
-keywords:
-  - english
-  - teaching english
-  - teacher training
 
 content:
   - "content/shared/subject-pages/header"
@@ -904,10 +892,6 @@ description: |-
 layout: "layouts/minimal" 
 colour: grey-pink 
 image: "static/images/content/case-studies/abigail.jpg" 
-keywords:
-  - teaching
-  - maths
-  - science
 content: 
   - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/header" 
   - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/article"
