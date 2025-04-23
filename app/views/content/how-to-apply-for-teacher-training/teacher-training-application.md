@@ -2,26 +2,6 @@
 title: Teacher training application
 description: |-
   Find out what to include in your teacher training application, how the process works and when to apply.
-keywords:
-  - adviser
-  - advisor
-  - ITT
-  - Initial Teacher Training
-  - QTS
-  - Qualified Teacher Status
-  - Teacher Training Adviser
-  - application
-  - apply
-  - how to apply
-  - applying for teacher training
-  - referees
-  - references
-  - process
-  - personal statement
-  - when to apply
-  - interviews
-  - offers
-  - teacher training application
 promo_content:
   - "content/shared/block-promos/adviser_apply"
 navigation: 30.05
@@ -126,11 +106,13 @@ Find out more about [writing your teacher training personal statement](/how-to-a
 
 ### Your adjustments 
 
-You can ask for extra support if you’re disabled, have a mental health condition or educational needs. 
+Training providers can make adjustments if you need support to become a teacher. This includes support if you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs.
 
-Your training provider can then make adjustments so you can attend an interview and do the training. 
+You can ask for adjustment to the application process and interviews, and for adjustments you might need during your training.
 
-Find out [what support you’re entitled to if you’re disabled](/funding-and-support/if-youre-disabled). 
+If you think you’ll need adjustments, you can either contact your training provider directly, or you can ask for support when you apply for teacher training.
+
+Find out more about [adjustments to help you train](/train-to-be-a-teacher/accessibility-adjustments). 
 
 ### Your references 
 

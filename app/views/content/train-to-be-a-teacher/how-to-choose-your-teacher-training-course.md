@@ -21,13 +21,6 @@ cta_arrow_link:
 navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.
-keywords:
-  - becoming a teacher
-  - teacher training
-  - pgce
-  - qts
-  - Teach First
-  - Postgraduate teaching apprenticeship
 expander:
   what-you-need-to-get-onto-the-course:
     title: what you need to get onto the course
@@ -79,6 +72,10 @@ expander:
       <li>the deadline for non-UK applications, as they may close earlier</li>
       </ul>
       </p>
+cta_arrow_link:
+  adjustments:
+    link_target: "/train-to-be-a-teacher/accessibility-adjustments"
+    link_text: "Find out more about adjustments to help you train"
 ---
 
 All primary and secondary postgraduate teacher training courses include time spent in school placements with some theoretical learning. 
@@ -159,6 +156,12 @@ $what-to-check-with-training-providers$
 There are usually more full-time courses available than part-time.
 
 Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
+
+## Adjustments and accessibility
+
+Course providers can make adjustments if you need support because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs.
+
+$adjustments$
 
 ## Course start date
 
