@@ -9,13 +9,6 @@ navigation_title: Funding and support if you have a learning difficulty, health 
 navigation_description: Find out about the support you can get while training to teach if you're neurodivergent, have a long-term physical or mental health condition, or have any other accessibility need.
 promo_content:
   - "content/shared/block-promos/adviser_mailing_routes"
-keywords:
-    - Disability
-    - Disabilities
-    - DSA
-    - Financial Support
-    - Disabled students
-    - Disabled Students’ Allowances
 expander:
   international-content:
     title: funding and support if you have a health condition or disability

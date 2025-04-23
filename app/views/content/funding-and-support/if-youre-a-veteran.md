@@ -13,11 +13,6 @@ cta_arrow_link:
     link_text: "Find out more about postgraduate scholarships and bursaries"
 navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
-keywords:
-    - veterans
-    - service leavers
-    - army
-    - military
 ---
 
 If you’re transitioning from the armed forces or your service has already ended, you could be eligible for support to train to teach.

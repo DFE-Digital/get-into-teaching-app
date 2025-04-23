@@ -11,16 +11,6 @@ cta_arrow_link:
   find-courses:
     link_target: "https://find-teacher-training-courses.service.gov.uk/results?funding%5B%5D=salary&funding%5B%5D=apprenticeship&applications_open=true&order=course_name_ascending"
     link_text: "Find a salaried teacher training course"
-keywords:
-    - Teach First
-    - School Direct
-    - School Direct (salaried)
-    - Postgraduate teaching apprenticeship
-    - PGTA
-    - Salaried courses
-    - Salaried teacher training
-    - Salaried teacher training course
-    - Paid teacher training
 expander:
   salaried-teacher-training:
     title: salaried teacher training

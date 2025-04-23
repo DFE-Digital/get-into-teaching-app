@@ -11,11 +11,6 @@ youtube_video:
 navigation: 30.25
 navigation_title: Subject knowledge enhancement (SKE)
 navigation_description: Find out how to improve your subject knowledge with a subject knowledge enhancement course.
-keywords:
-  - Subject knowledge
-  - Subject knowledge enhancement
-  - SKE
-  - enhance
 expander:
   SKE-bursaries:
     title: SKE bursaries

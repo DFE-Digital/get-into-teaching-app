@@ -22,14 +22,6 @@ cta_arrow_link:
 navigation: 20.30
 navigation_title: Funding and support if you're a parent or carer
 navigation_description: Find out what extra grants and schemes are available if you have children or other caring responsibilities.
-keywords:
-    - Bursaries
-    - Bursary
-    - Scholarship
-    - Scholarships
-    - Grant
-    - Parents
-    - Carers
 expander:
   international-content:
     title: funding and support if you're a parent or carer

@@ -5,8 +5,6 @@ description: |-
 navigation: 30.16
 navigation_title: When to apply for teacher training
 navigation_description:  Find out when you can apply for postgraduate teacher training courses.
-keywords:
-  - teacher training applications
 promo_content:
   - "content/shared/block-promos/adviser_apply"
 quote:
