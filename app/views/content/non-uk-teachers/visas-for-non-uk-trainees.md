@@ -38,26 +38,6 @@ cta_arrow_link:
    find:
       link_target: "https://find-teacher-training-courses.service.gov.uk/results?can_sponsor_visa=true&applications_open=true&order=course_name_ascending"
       link_text: "Search for postgraduate teacher training courses that offer visa sponsorship"    
-keywords:
-  - International
-  - Teaching
-  - Education
-  - Schools
-  - Teacher
-  - Overseas
-  - Foreign
-  - Non-UK
-  - Visa
-  - Skilled Worker visa
-  - Immigration
-  - Student Visa
-  - Graduate Visa
-  - Youth Mobility Scheme
-  - Family Visa
-  - UK Ancestry Visa
-  - Refugees
-  - Settlement Scheme
-  
 ---
 If you are applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study or work in England. 
 
