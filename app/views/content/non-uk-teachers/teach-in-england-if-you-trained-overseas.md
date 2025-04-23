@@ -33,9 +33,6 @@ expander:
           <li><a href="https://www.gov.uk/guidance/support-for-family-members-of-british-nationals-in-ukraine-and-ukrainian-nationals-in-ukraine-and-the-uk">Ukrainian nationals outside of the UK</a></li>
         </ul>
 cta_arrow_link:
-  nonukqts:
-    link_target: "https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers"
-    link_text: "Check the eligibility criteria and apply for QTS in England"
   qtsroutes:
     link_target: "https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk"
     link_text: Find out about the different routes to QTS for non-UK citizens
@@ -70,7 +67,7 @@ To check your qualifications meet the required standard in England you will need
 If you are a qualified teacher from outside the UK, you can work as a teacher in England for up to 4 years without QTS.  After that, you will need QTS to teach in many schools in England. 
 
 $qtsroutes$
-$nonukqts$
+
 
 ## Visas for non-UK teachers
 
