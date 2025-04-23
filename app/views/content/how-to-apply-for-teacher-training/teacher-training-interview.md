@@ -93,7 +93,7 @@ It’s good to have some questions of your own to ask. This helps you get more i
 
 Providers can make adjustments to your interview if you need support because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs.
 
-If you think you need adjustments, speak to the provider as soon as possible to give enough time to put any adjustments in place before your interview. 
+If you think you need adjustments, speak to the provider as soon as possible so they have enough time to put any adjustments in place before your interview. 
 
 Find out more about [adjustments to help you train](/train-to-be-a-teacher/accessibility-adjustments).
 
