@@ -18,11 +18,11 @@ inset_text:
     text: |-
       <p><h2>Changes have been made to when you can apply for the international relocation payment (IRP) </h2></p>
       <br>
-      <p>Applications for the first $internationalrelocationpayment_instalment$ instalment of the IRP are now open until 30 June 2025.<p/>
+      <p>Applications for the first $nonuk_internationalrelocationpayment_instalment$ instalment of the IRP are now open until 30 June 2025.<p/>
       <br>
       <p>Before you apply, you must read the guidance on this page to check you are eligible for the IRP. If you start your qualifying teaching role between 1 March 2024 and 31 May 2025, you must apply before the window closes on 30 June 2025. Previously, teachers who started between 1 April 2025 and 31 May 2025 would have been able to apply from September 2025.</p>
       <br>
-      <p>The IRP application window available on GOV.UK between September 2025 to the end of June 2026 will only be open to teachers applying for their second $internationalrelocationpayment_instalment$ payment and who have already applied for and received their initial first year $internationalrelocationpayment_instalment$ payment.</p> 
+      <p>The IRP application window available on GOV.UK between September 2025 to the end of June 2026 will only be open to teachers applying for their second $nonuk_internationalrelocationpayment_instalment$ payment and who have already applied for and received their initial first year $nonuk_internationalrelocationpayment_instalment$ payment.</p> 
       <br>
       <p><a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.</p>
 ---
@@ -255,7 +255,7 @@ You are not eligible for the second instalment of the IRP as the dependant visa 
 
 ## How to apply for the IRP
 
-Applications for the first $internationalrelocationpayment_instalment$ instalment of the IRP are open until 30 June 2025.
+Applications for the first $nonuk_internationalrelocationpayment_instalment$ instalment of the IRP are open until 30 June 2025.
 
 <a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.
 
