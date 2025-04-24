@@ -26,47 +26,10 @@ inset_text:
       <br>
       <p><a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.</p>
    
-keywords:
-  - International
-  - Overseas
-  - Foreign
-  - Nationality
-  - Residency
-  - EEA
-  - Canada
-  - New Zealand
-  - Switzerland
-  - USA
-  - Visa
-  - Skilled Worker visa
-  - EU
-  - EU Settlement Scheme
-  - NARIC
-  - UK NARIC
-  - ENIC
-  - UK ENIC
-  - European Network of Information Centre
-  - National Recognition Information Centre for the United Kingdom
-  - PhD
-  - Immigration
-  - Ireland
-  - Irish
-  - Common Travel Area
-  - Student Visa
-  - Home Office
-  - Graduate Visa
-  - Youth Mobility Scheme
-  - Japan
-  - Monaco
-  - Hong Kong
-  - Republic of Korea
-  - Taiwan
-  - Family Visa
-  - UK Ancestry Visa
-  - Abroad
-  - Europe
-  - European
-  - Settlement Scheme
+      <h2>Changes to eligibility and payment</h2>
+
+      <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a></a> worth up to $scholarships_nonuk_max$.</p>
+
 ---
 $applications-open$
 

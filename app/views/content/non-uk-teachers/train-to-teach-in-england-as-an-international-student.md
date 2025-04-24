@@ -38,56 +38,7 @@ cta_arrow_link:
    visas:
      link_target: "/non-uk-teachers/visas-for-non-uk-trainees"
      link_text: "Find out more about applying for a visa to train to teach in England"
-   
-
-keywords:
-  - International
-  - Overseas
-  - Foreign
-  - Non-UK
-  - Nationality
-  - Residency
-  - EEA
-  - Canada
-  - New Zealand
-  - Switzerland
-  - USA
-  - Visa
-  - Skilled worker visa
-  - EU
-  - EU Settlement Scheme
-  - NARIC
-  - UK NARIC
-  - ENIC
-  - UK ENIC
-  - European Network of Information Centre
-  - National Recognition Information Centre for the United Kingdom
-  - PhD
-  - Immigration
-  - Ireland
-  - Irish
-  - Common Travel Area
-  - Student Visa
-  - Home Office
-  - Graduate Visa
-  - Youth Mobility Scheme
-  - Japan
-  - Monaco
-  - Hong Kong
-  - Republic of Korea
-  - Taiwan
-  - Family Visa
-  - UK Ancestry Visa
-  - Abroad
-  - Europe
-  - European
-  - Settlement Scheme
-  - Statement
-  - Comparability
 ---
-
-
-
 You can apply to train to teach in England if you:
 
 * live outside the UK
