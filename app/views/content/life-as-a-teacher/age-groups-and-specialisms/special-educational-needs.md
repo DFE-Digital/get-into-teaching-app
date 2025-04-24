@@ -10,15 +10,6 @@ cta_arrow_link:
   find:
     link_target: "https://find-teacher-training-courses.service.gov.uk/results?send_courses=true&applications_open=true&order=course_name_ascending"
     link_text: "Find a teacher training course with a SEND specialism"
-keywords:
-  - SEND
-  - disabled
-  - disability  
-  - disabilities
-  - special educational needs
-  - teaching
-  - teacher
-  - special school
 quote:
   q-gloria:
     text: "I'm passionate about being there for my students, helping them see their potential and overcome their own challenges."

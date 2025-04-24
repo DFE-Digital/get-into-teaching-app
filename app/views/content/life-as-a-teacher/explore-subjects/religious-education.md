@@ -11,11 +11,6 @@ description: |-
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/0011.jpg"
-keywords:
-  - physics
-  - teaching physics
-  - subjects
-  - teacher training
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/religious-education/article"

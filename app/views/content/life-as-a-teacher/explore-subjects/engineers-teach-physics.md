@@ -11,13 +11,6 @@ description: |-
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/physics.jpg"
-keywords:
-  - engineers
-  - material scientists
-  - physics
-  - teaching physics
-  - career change
-  - teacher training
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/engineers-teach-physics/article"

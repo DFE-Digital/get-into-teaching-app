@@ -10,10 +10,6 @@ description: |-
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/chemistry.jpg"
-keywords:
-  - secondary school teacher
-  - secondary school teacher training
-
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/age-groups-and-specialisms/secondary/article"

@@ -2,19 +2,6 @@
 title: "Become an early years teacher"
 image: false
 backlink: "../"
-keywords:
- - EYITT
- - Early
- - Years
- - Early Years
- - EYTS
- - Early Years Teacher Status
- - Under 5
- - EY
- - E.Y.
- - nursery
- - preschool
- - year one
 description: |-
   Find out how to become an early years teacher. Discover the qualifications you need, the different early years teacher training routes and the cost.
 expander:

@@ -6,11 +6,6 @@ description: |-
   Peter shares how he switched careers to teaching, after more than 25 years working in finance.
 layout: "layouts/minimal" 
 colour: grey-pink
-keywords:
-  - teaching
-  - career changer
-  - changing careers
-  - career
 content: 
   - "content/life-as-a-teacher/change-careers/making-a-career-change-to-teaching/header" 
   - "content/life-as-a-teacher/change-careers/making-a-career-change-to-teaching/article"
