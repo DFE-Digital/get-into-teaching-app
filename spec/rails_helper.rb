@@ -98,6 +98,8 @@ RSpec.configure do |config|
   end
 
   config.before do
+    ActiveJob::Base.queue_adapter = :test
+
     # If we don't mock this out for some pages it can result
     # in FastImage trying to make an external web request (even
     # though its actually just to our test host). Returning nil
