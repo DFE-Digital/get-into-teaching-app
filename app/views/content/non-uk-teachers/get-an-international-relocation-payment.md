@@ -25,11 +25,6 @@ inset_text:
       <p>The IRP application window available on GOV.UK between September 2025 to the end of June 2026 will only be open to teachers applying for their second $internationalrelocationpayment_instalment$ payment and who have already applied for and received their initial first year $internationalrelocationpayment_instalment$ payment.</p> 
       <br>
       <p><a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.</p>
-   
-      <h2>Changes to eligibility and payment</h2>
-
-      <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a></a> worth up to $scholarships_nonuk_max$.</p>
-
 ---
 $applications-open$
 
@@ -75,8 +70,6 @@ Your contract of employment must begin between 1 March 2024 and 1 May 2025.
 State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 years old or 11 to 18 years old. Schools for pupils aged 16 to 18 years old only are not eligible. Schools for pupils aged 5 to 18 years old are eligible, but you must teach the secondary age range (11 to 16 years old or 11 to 18 years old).
 
 [Check the type and age range of the school](https://www.get-information-schools.service.gov.uk) where you’ll be teaching to see if it meets our eligibility criteria. You can also [find out about the different types of state school in England](https://www.gov.uk/types-of-school).
-
-
 
 In your role in a school in England, you must be working as one of the following:
 
