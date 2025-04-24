@@ -8,13 +8,6 @@ promo_content:
   - "content/shared/block-promos/adviser_findfees"
 navigation: 20.10
 navigation_description: Find out the cost of postgraduate teacher training courses with tuition fees.
-keywords:
-    - Tuition Fees
-    - Teacher Training Course Fees
-    - How Much Cost Train As Teacher
-    - Teacher Training Tuition Fees
-    - Student Finance
-    - Financial Support
 expander:
   postgraduate-fees:
     title: postgraduate fees

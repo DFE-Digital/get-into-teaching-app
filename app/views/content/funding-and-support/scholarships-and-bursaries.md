@@ -18,16 +18,6 @@ navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
 before-content:
     - content/funding-and-support/scholarships-and-bursaries/funding-widget
-keywords:
-    - Bursaries
-    - Bursary
-    - Scholarship
-    - Scholarships
-    - Grant
-    - Grants
-    - Financial Support
-    - Undergraduate
-    - Postgraduate
 ---
 
 ## Eligibility for bursaries

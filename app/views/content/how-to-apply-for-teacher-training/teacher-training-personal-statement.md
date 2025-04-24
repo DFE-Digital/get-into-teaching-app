@@ -6,27 +6,6 @@ description: |-
 navigation: 30.10
 navigation_title: Teacher training personal statement
 navigation_description: Find out what to include in your teacher training personal statement.
-keywords:
-  - teacher training personal statement
-  - adviser
-  - advisor
-  - ITT
-  - Initial Teacher Training
-  - QTS
-  - Qualified Teacher Status
-  - Teacher Training Adviser
-  - application
-  - apply
-  - how to apply
-  - applying for teacher training
-  - referees
-  - references
-  - process
-  - personal statement
-  - when to apply
-  - interviews
-  - offers
-  - teacher training application
 promo_content:
   - "content/shared/block-promos/adviser_apply"
 quote:
