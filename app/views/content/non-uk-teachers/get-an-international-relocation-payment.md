@@ -28,10 +28,6 @@ inset_text:
 ---
 $applications-open$
 
-## Changes to eligibility and payment
-
-Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.
-
 ## What the IRP is for
 
 If you are a teacher considering moving to England to teach languages or physics, you could be eligible for the IRP from the UK government worth up to $nonuk_internationalrelocationpayment_value$.
@@ -55,6 +51,8 @@ The IRP is a 2 year trial to support non-UK citizens who want to teach in Englan
 To be eligible for the maximum IRP of $nonuk_internationalrelocationpayment_value$, you must meet all the eligibility requirements when you apply for both the first and second instalments.
 
 You will not be able to use eligibility for the IRP in your visa application as proof that you have enough money to support yourself.
+
+Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.
 
 ### Eligibility requirements for IRP instalment 1 ($nonuk_internationalrelocationpayment_instalment$)
 
