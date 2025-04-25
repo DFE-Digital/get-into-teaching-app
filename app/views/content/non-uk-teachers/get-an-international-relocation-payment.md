@@ -16,21 +16,21 @@ backlink: "../../"
 inset_text:
   applications-open:
     text: |-
-      <p><h2>Applications for the international relocation payment (IRP) are open</h2></p>
-      
-      <p>Before you apply, you must read the guidance on this page to check you are eligible for the IRP. Applications are open until 31 March 2025.</p>
-      <p><a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.</p>
-        
+      <p><h2>Changes have been made to when you can apply for the international relocation payment (IRP) </h2></p>
       <br>
-      <h2>Changes to eligibility and payment</h2>
-
-      <p>Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a></a> worth up to $scholarships_nonuk_max$.</p>
+      <p>Applications for the first $nonuk_internationalrelocationpayment_instalment$ instalment of the IRP are now open until 30 June 2025.<p/>
+      <br>
+      <p>Before you apply, you must read the guidance on this page to check you are eligible for the IRP.</p> 
+      <br>
+      <p>If you start your qualifying teaching role between 1 March 2024 and 31 May 2025, you must apply before the window closes on 30 June 2025. Previously, teachers who started between 1 April 2025 and 31 May 2025 would have been able to apply from September 2025.</p>
+      <br>
+      <p><a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.</p>
 ---
 $applications-open$
 
 ## What the IRP is for
 
-If you are a teacher considering moving to England to teach languages or physics, you could be eligible for an international relocation payment (IRP) from the UK government worth up to $nonuk_internationalrelocationpayment_value$.
+If you are a teacher considering moving to England to teach languages or physics, you could be eligible for the IRP from the UK government worth up to $nonuk_internationalrelocationpayment_value$.
 
 The IRP is designed to cover some of the costs of moving to England, including:
 
@@ -52,6 +52,8 @@ To be eligible for the maximum IRP of $nonuk_internationalrelocationpayment_valu
 
 You will not be able to use eligibility for the IRP in your visa application as proof that you have enough money to support yourself.
 
+Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.
+
 ### Eligibility requirements for IRP instalment 1 ($nonuk_internationalrelocationpayment_instalment$)
 
 #### Teaching subject and school
@@ -66,8 +68,6 @@ Your contract of employment must begin between 1 March 2024 and 1 May 2025.
 State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 years old or 11 to 18 years old. Schools for pupils aged 16 to 18 years old only are not eligible. Schools for pupils aged 5 to 18 years old are eligible, but you must teach the secondary age range (11 to 16 years old or 11 to 18 years old).
 
 [Check the type and age range of the school](https://www.get-information-schools.service.gov.uk) where you’ll be teaching to see if it meets our eligibility criteria. You can also [find out about the different types of state school in England](https://www.gov.uk/types-of-school).
-
-
 
 In your role in a school in England, you must be working as one of the following:
 
@@ -166,19 +166,19 @@ You will be eligible for the first instalment of the IRP if:
 
 * you have spent more than 90 days in the UK at any time before the 12 months preceding the start of your teaching job (see example 3)
 
-#### Example 1
+##### Example 1
 
 You arrive in the UK in September 2023 on a Student visa for a course of study at a UK university. You complete your course and return home in July 2024. You return to the UK to take up an eligible teaching job in September 2024.
 
 You will not be eligible for the IRP, because you have spent more than 90 days in the UK in the 12 months preceding the start of your teaching job.
 
-#### Example 2
+##### Example 2
 
 You travel to attend an interview for an eligible teaching job in the UK under a Standard Visitor visa in May 2024. The visit lasts 2 days and you return home, and learn you have been successful in your application. The role begins in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before your job begins. You move to the UK in July 2024.
 
 You will be eligible for the first instalment of IRP, because you have spent less than 90 days in the UK in the previous 12 months and have moved to the UK less than 3 months before the start of your teaching job.
 
-#### Example 3
+##### Example 3
 
 You study in the UK on a Student visa for 3 years from September 2019 to July 2022, before returning home. You apply for an eligible teaching job in England starting in September 2024. You apply for a Skilled Worker visa in June 2024, 3 months before the start of your job. You move to the UK in July 2024.
 
@@ -210,21 +210,21 @@ You can start midway through the academic year and as long as you complete 3 ful
 
 Any term time employment gaps will make you ineligible for the second instalment (see example 3).
 
-#### Example 1
+##### Example 1
 You start your first eligible teaching job in England in September 2024 and successfully apply for the first instalment of the IRP.  You work a full academic year of 3 terms, leaving the school in July 2025. 
 
 You successfully apply for a new IRP eligible teaching job on a one-year contract starting in September 2025. You visit family outside the UK for the summer holidays and return to England to take up your teaching job and apply for the second instalment of the IRP. 
 
 You are eligible for the second instalment of the IRP because you have been continuously employed as a teacher in eligible schools. 
 
-#### Example 2
+##### Example 2
 You start your first teaching job in England in January 2025 and successfully apply for the first instalment of the IRP, working for the rest of that academic year of 2 terms. 
 
 You decide to stay on at the school and return after the summer holidays in September 2025. Your contract is extended for a further year, and you apply for the second instalment of the IRP after the end of your third term of employment in January 2025. 
 
 You are eligible for the second instalment of the IRP because you have been continuously employed as a teacher and have a contract for further 12 months.
 
-#### Example 3
+##### Example 3
 You start a teaching job in England in January 2025 and successfully apply for the first instalment of the IRP in your first term. 
 
 You continue to work at the school for a total of 3 terms, leaving in December 2025. However, you do not find a new teaching job until March 2026. Because there is a gap (December 2025 to March 2026) between your 2 jobs that is not covered by any statutory leave, you will not be eligible for the second instalment of the IRP because you have not been in continuous employment as a teacher. 
@@ -235,14 +235,14 @@ To be eligible for the second instalment of the IRP, you must remain on an eligi
 You can change your visa, as long as any new visa appears on the list of eligible visas on this page (example 1). You will not need to apply for any new visa from outside the UK.
 If your new visa is not listed on this page, you will not be eligible for the second instalment (see example 2).
 
-#### Example 1
+##### Example 1
 You arrive in the UK in September 2024 on a Youth Mobility Scheme visa. You are employed as a teacher on a contract lasting 1 academic year, and successfully apply for the first instalment of the IRP. 
 
 At the end of the academic year, your school offers to make your contract permanent and sponsor you for a Skilled Worker visa for 3 years. As your Youth Mobility Scheme visa is only valid for 2 years, and you are planning to work as a teacher in England for longer than this, you agree to switch your visa. 
 
 You apply for the second instalment of the IRP in September 2025. You remain eligible because the Youth Mobility Scheme visa and the Skilled Worker visa are on the list of eligible visas on this page. 
 
-#### Example 2
+##### Example 2
 You arrive in the UK in September 2024 on a Youth Mobility Scheme visa. You are employed as a teacher on a contract lasting 2 academic years and successfully apply for the first instalment of the IRP. 
 
 Early in 2025, your partner moves to the UK on a Skilled Worker visa lasting 3 years. You visit family outside the UK during the summer holidays. As your Youth Mobility Scheme visa is limited to 2 years, you decide to apply to join your partner as a dependant on their visa instead. You return to the UK to continue your employment in September 2025 on a dependant visa.
@@ -253,31 +253,29 @@ You are not eligible for the second instalment of the IRP as the dependant visa 
 
 ## How to apply for the IRP
 
-Applications for the IRP are open until 31 March 2025.
+Applications for the first $nonuk_internationalrelocationpayment_instalment$ instalment of the IRP are open until 30 June 2025.
 
 <a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.
 
 Before you apply for the first and second instalments of the IRP, you’ll need to check you meet the eligibility requirements.
 
-If you start your teaching job between 1 March 2024 and 28 February 2025 you must apply between 30 September 2024 and 31 March 2025 to remain eligible. 
+If you start your teaching job between 1 March 2024 and 31 May 2025 you must apply for the first instalment of IRP between 30 September 2024 and 30 June 2025 to remain eligible. 
 
 If you are eligible, you should receive the money following successful completion of our eligibility checks.
 
-### Future application windows for IRPs
+### Future application windows for IRP (instalment 2 only)
 
-Applications will open again from 30 September 2025 to end of March 2026.
+Applications for instalment 2 of IRP will open again from 30 September 2025 to end of June 2026. 
 
-If you start your teaching job between 1 April 2025 and 31 May 2025, you can apply when applications re-open in September 2025.
-
-If you start your teaching job in March 2025, you can either apply before applications close at the end of March 2025 or when they open again in September 2025.  
+If you start your qualifying teaching role between 1 March 2024 and 31 May 2025, you must apply for instalment 1 before 30 June 2025. No applications for the instalment 1 of IRP will be accepted during this application period from 30 September 2025 and end of June 2026. 
 
 You can apply for IRP instalment 2 once you have completed 3 full terms teaching.
 
-DfE cannot process late applications for the IRP. If you do not apply during the correct time period, DfE will not process your application.
+DfE may not be able to process late applications if you do not apply during the correct application window. If you miss the correct application window, then contact international.relocationpayment@education.gov.uk explaining your circumstances and we will review your eligibility.
 
 ## DfE eligibility requirements for IRP instalments
 
-### First instalment of the IRP
+### Instalment 1 of the IRP
 
 DfE will check you meet the eligibility requirements for the first instalment of IRP by validating your application with:
 
@@ -287,17 +285,17 @@ DfE will check you meet the eligibility requirements for the first instalment of
 
 If your eligibility checks are successful, you will get the first instalment of $nonuk_internationalrelocationpayment_instalment$. 
 
-### Second instalment of the IRP
+### Instalment 2 of the IRP
 
 At the start of your second year of employment as a teacher, you will need to apply for the second instalment of the IRP. 
 
-To get the second instalment of the IRP, you will need to have:
+To get the instalment 2 of the IRP, you will need to have:
 
 * made a successful claim for the first instalment
 
 * completed 3 consecutive terms of employment as a teacher
 
-Applications for the second instalment are open from September 2025 to March 2026.
+Applications for the second instalment are open from September 2025 to June 2026.
 
 The Department for Education will validate your application with [UK Visas and Immigration](https://www.gov.uk/government/organisations/uk-visas-and-immigration) and the school or schools where you have worked since applying for the first instalment of the IRP. If you meet the eligibility requirements for the second instalment set out on this page, you should receive the second instalment of $nonuk_internationalrelocationpayment_instalment$ following successful completion of our eligibility checks. 
 
