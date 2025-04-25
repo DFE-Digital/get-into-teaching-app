@@ -53,13 +53,7 @@ module EventsHelper
     return nil unless building
     return building.address_city if event.is_online
 
-    [
-      building.address_line1,
-      building.address_line2,
-      building.address_line3,
-      building.address_city,
-      building.address_postcode,
-    ].compact.join(",\n")
+    event.venue_address.compact.join(",\n")
   end
 
   def event_location_map(event)
