@@ -30,10 +30,6 @@ describe "Fake browser time", type: :request do
     context "when the path has fake_browser_time in the query string" do
       let(:path) { root_path(fake_browser_time: Time.zone.now.to_i) }
 
-      it "does" do
-        puts response.body
-      end
-
       it { is_expected.not_to include("js/fake_browser_time") }
     end
   end
