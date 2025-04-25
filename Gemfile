@@ -86,7 +86,8 @@ gem "indefinite_article"
 
 gem "connection_pool"
 # gem "get_into_teaching_api_client_faraday", ">= 3.1.3", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
-gem "get_into_teaching_api_client_faraday", ">= 3.5.1", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client", branch: "add-graduation-year-mailing-list"
+# gem "get_into_teaching_api_client_faraday", ">= 3.5.1", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client", branch: "add-graduation-year-mailing-list"
+gem "get_into_teaching_api_client_faraday", ">= 3.5.1", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client", branch: "feature/add_graduation_year_and_inference_response"
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 

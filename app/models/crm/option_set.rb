@@ -24,6 +24,18 @@ class Crm::OptionSet
       "I'm very sure and think I'll apply" => 222_750_003,
     }.freeze
 
+  # Converts degree status id to legacy naming for omnigov continuity
+  # We use this to ensure names passed to omnigov are decoupled from any renaming/translating elsewhere
+  LEGACY_DEGREE_STATUS_FOR_ADVERTISING =
+    {
+      "Graduate or postgraduate" => 222_750_000,
+      "Final year" => 222_750_001,
+      "Second year" => 222_750_002,
+      "First year" => 222_750_003,
+      "I don't have a degree and am not studying for one" => 222_750_004,
+      "Other" => 222_750_005,
+    }.freeze
+
   class << self
     def lookup_by_key(category, key)
       lookup_const(category).fetch(key)
@@ -42,7 +54,12 @@ class Crm::OptionSet
     end
 
     def lookup_const(category)
-      const = const_get(category.to_s.pluralize.upcase)
+      const = begin
+                const_get(category.to_s.upcase)
+              rescue NameError
+                const_get(category.to_s.pluralize.upcase)
+              end
+
       const.transform_keys { |k| k.parameterize(separator: "_").to_sym }
     end
   end
