@@ -1,41 +1,49 @@
 <% @hide_page_helpful_question = true %>
-
 <div data-sub-channel-id="<%= session.dig("mailinglist", "sub_channel_id") %>"></div>
 
-<section class="registration__mailing-list">
-  <div class="registration__mailing-list--container">
+<%= render Content::LandingHeroComponent.new(
+  title: "Mailing list",
+  colour: "pastel yellow-yellow",
+  image: "static/images/content/hero-images/physics4.jpg"
+) %>
 
-    <h1 class="heading-l heading--box-blue"><%= @first_name %>, you're signed up.</h1>
-    <p>
-      You'll get your first email shortly. If you change your mind,
-      you can unsubscribe at any time.
-    </p>
+<div class="row inset">
+  <section class="col col-720 col-space-l-top">
+    <section class="registration__mailing-list">
+      <div class="registration__mailing-list--container">
+        <h1 class="heading-l heading--box-blue"><%= @first_name %>, you're signed up.</h1>
+        <p>
+        You'll get your first email shortly. If you change your mind,
+        you can unsubscribe at any time.
+        </p>
 
-    <h2 class="heading-m">What's next?</h2>
+        <h2 class="heading-m">What's next?</h2>
 
-    <% if have_degree_low_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/have_degree_low_commitment") %>
-    <% elsif have_degree_high_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/have_degree_high_commitment") %>
-    <% elsif final_year_low_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/final_year_low_commitment") %>
-    <% elsif final_year_high_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/final_year_high_commitment") %>
-    <% elsif first_or_second_year_low_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/first_or_second_year_low_commitment") %>
-    <% elsif first_or_second_year_high_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/first_or_second_year_high_commitment") %>
-    <% elsif no_degree_low_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/no_degree_low_commitment") %>
-    <% elsif no_degree_high_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/no_degree_high_commitment") %>
-    <% else %>
-      <%= render(partial: "mailing_list/steps/completed/other_high_low_commitment") %>
-    <% end %>
+        <% if have_degree_low_commitment? %>
+          <%= render(partial: "mailing_list/steps/completed/have_degree_low_commitment") %>
+        <% elsif have_degree_high_commitment? %>
+          <%= render(partial: "mailing_list/steps/completed/have_degree_high_commitment") %>
+        <% elsif final_year_low_commitment? %>
+          <%= render(partial: "mailing_list/steps/completed/final_year_low_commitment") %>
+        <% elsif final_year_high_commitment? %>
+          <%= render(partial: "mailing_list/steps/completed/final_year_high_commitment") %>
+        <% elsif first_or_second_year_low_commitment? %>
+          <%= render(partial: "mailing_list/steps/completed/first_or_second_year_low_commitment") %>
+        <% elsif first_or_second_year_high_commitment? %>
+          <%= render(partial: "mailing_list/steps/completed/first_or_second_year_high_commitment") %>
+        <% elsif no_degree_low_commitment? %>
+          <%= render(partial: "mailing_list/steps/completed/no_degree_low_commitment") %>
+        <% elsif no_degree_high_commitment? %>
+          <%= render(partial: "mailing_list/steps/completed/no_degree_high_commitment") %>
+        <% else %>
+          <%= render(partial: "mailing_list/steps/completed/other_high_low_commitment") %>
+        <% end %>
 
-    <%= render(partial: "mailing_list/steps/completed/shared/book_a_callback") %>
-  </div>
-</section>
+        <%= render(partial: "mailing_list/steps/completed/shared/book_a_callback") %>
+      </div>
+    </section>
+  </section>
+</div>
 
 <%= tag.div id: "mailing-list-degree-status", class: "hidden", data: { id: @degree_status_id, key: @degree_status_key } %>
 <%= tag.div id: "hashed-email", class: "hidden", data: { id: "hashed-email", value: @hashed_email } if @hashed_email %>
