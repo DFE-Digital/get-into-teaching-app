@@ -36,19 +36,6 @@ cta_arrow_link:
   qts-ao:
     link_target: "/train-to-be-a-teacher/assessment-only-route-to-qts"
     link_text: "Find out how to get QTS through assessment only"
-keywords:
-  - PGCE
-  - Postgraduate
-  - Postgrad
-  - Post-graduate
-  - Certificate
-  - Diploma
-  - Education
-  - QTS
-  - Qualified-teacher
-  - Teaching
-  - Qualification
-  - State-school
 ---
 
 You need English qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England. These are schools funded by local authorities.

@@ -27,39 +27,6 @@
           partial: content/steps-to-become-a-teacher/step_7_apply_for_a_teaching_role
         Start your career:
           partial: content/steps-to-become-a-teacher/step_8_start_your_career
-  keywords:
-    - QTS
-    - Qualified Teacher Status
-    - ITT
-    - Initial Teacher Training
-    - International
-    - Qualifications
-    - Eligibility
-    - Eligible
-    - Degree
-    - GCSE
-    - Event
-    - Updates
-    - Stories
-    - Teacher Training Adviser
-    - School Experience
-    - Schools Experience
-    - Get School Experience
-    - Ways to train
-    - Personal Statement
-    - Reference
-    - References
-    - Referee
-    - Referees
-    - Interview
-    - How to apply
-    - How to
-    - Adviser
-    - Advisers
-    - TTA
-    - Advisor
-    - Teacher Training Advisor
-    - get an adviser
   inset_text:
     international-content:
       header: Non-UK citizens

@@ -7,11 +7,6 @@ description: |-
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/campus-advisers/adviser.jpeg"
-keywords:
-  - explore teaching advisers
-  - adviser
-  - ETA
-
 content:
   - "content/explore-teaching-advisers/header"
   - "content/explore-teaching-advisers/article"

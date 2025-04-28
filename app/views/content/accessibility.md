@@ -4,16 +4,6 @@ image: false
 description: |-
   This accessibility statement applies to the Get into Teaching website, which is run by the Department for Education.
 backlink: "../"
-keywords:
-  - Accessibility
-  - Accessibility information
-  - Accessibility statement
-  - PDF
-  - Braille
-  - Audio Recording
-  - screen reader
-  - digital accessibility centre
-  - DAC
 ---
 
 This accessibility statement applies to the Get into Teaching website.
