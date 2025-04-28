@@ -52,9 +52,9 @@ module EventsHelper
     building = event.building
     return nil unless building
     return building.address_city if event.is_online
-    return event.venue_address.compact.join(",\n") if event.respond_to?(:venue_address)
 
     [
+      building.venue,
       building.address_line1,
       building.address_line2,
       building.address_line3,
