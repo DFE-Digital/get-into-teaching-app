@@ -9,7 +9,7 @@ promo_content:
 
 You’ll be known as an early career teacher (ECT) for your first 2 years in teaching. The term early career teacher (ECT) has replaced newly qualified teacher (NQT).
 
-During your 2-year induction, you’ll receive a package of training and support based on the [initial teacher training and early career framework (ITTECF)](https://www.gov.uk/government/publications/initial-teacher-training-and-early-career-framework?). Your package of training and support is referred to as the early career teacher entitlement (ECTE).
+During your 2-year induction, you’ll receive a package of training and support based on the initial teacher training and early career framework (ITTECF). Your package of training and support is referred to as the [early career teacher entitlement (ECTE)](https://www.gov.uk/government/publications/early-career-teacher-entitlement/early-career-teacher-entitlement).
 
 The ECTE is designed to help you build the skills and knowledge you need to feel confident and empowered in your classroom. It won’t impact your pay or progression opportunities. You’ll still be able to progress on the pay scale during your induction period.
 
@@ -17,7 +17,9 @@ If your teacher training course does not lead to English qualified teacher statu
 
 ### Your early career teacher training programme
 
-You’ll receive training based on the initial teacher training and early career framework (ITTECF) as part of your early career teacher entitlement (ECTE). This training provides a bridge between your initial teacher training (ITT) and your teaching career. Your ITT helps you qualify as a teacher, and your ECTE helps you further develop your teaching practice and working habits.
+You’ll receive training based on the initial teacher training and early career framework (ITTECF) as part of your early career teacher entitlement (ECTE). This training provides a bridge between your teacher training and your teaching career. 
+
+Your teacher training helps you qualify as a teacher, and your ECTE helps you further develop your teaching practice and working habits.
 
 Your school will choose how to deliver your training based on the ITTECF. They may:
 
