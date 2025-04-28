@@ -5,21 +5,8 @@ description: |-
 navigation: 30.30
 navigation_title: If your application is unsuccessful
 navigation_description: Find out what to do if your teacher training application is unsuccessful.
-keywords:
-  - adviser
-  - advisor
-  - ITT
-  - Initial Teacher Training
-  - QTS
-  - Qualified Teacher Status
-  - Teacher Training Adviser
-  - application
-  - apply
-  - how to apply
-  - applying for teacher training
-cta_adviser:
-  adviser:
-    text: An adviser with years of teaching experience can help you reapply for teacher training and maximise your chances of success. Chat by phone, text or email, as little or as often as you need.
+promo_content:
+  - "content/shared/block-promos/adviser_events"
 expander:
   check-your-qualifications:
     title: check your qualifications
@@ -82,5 +69,3 @@ They can support you with:
 * making your application stronger
 
 All our advisers have years of teaching experience and know the application process inside and out.
-
-$adviser$

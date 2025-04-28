@@ -9,11 +9,7 @@ description: |-
    Find out how to become a primary school teacher, including what you'll teach and if it's the right career for you.
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
-image: "static/images/content/hero-images/0011.jpg"
-keywords:
-- primary school
-- primary school teacher
-- primary school teacher training
+image: "static/images/content/hero-images/teacher-primary.jpg"
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/age-groups-and-specialisms/primary/article"

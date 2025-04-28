@@ -8,14 +8,13 @@ backlink: "../../"
 navigation: 20.30
 navigation_title: Postgraduate certificate in education (PGCE)
 navigation_description: Having a PGCE as well as qualified teacher status (QTS) can help you develop your teaching skills and knowledge.
-calls_to_action:
-  find:
-    name: find
-    arguments:
-      title: "Find a QTS with PGCE course"
-cta_mailinglist:
-  mailinglist:
-    text: Find out what being in a classroom is really like and get helpful guidance and support on getting into teaching.
+youtube_video:
+  what-teaching-taught-me:
+    id: oJjoodXrvlU
+    title: A video about what a career in teaching taught maths teacher Juvayriyah
+    orientation: portrait
+promo_content:
+  - "content/shared/block-promos/mailing_adviser_routes"
 cta_arrow_link:
   qts:
     link_target: "/train-to-be-a-teacher/what-is-qts"
@@ -23,23 +22,10 @@ cta_arrow_link:
   train-with-degree:
     link_target: "/train-to-be-a-teacher/if-you-have-a-degree"
     link_text: "Find out more about teacher training if you have or are studying for a degree"
-keywords:
-  - PGCE
-  - Post-graduate
-  - Post-grad
-  - Postgraduate
-  - Postgrad
-  - Certificate
-  - Education
-  - QTS
-  - Qualified-teacher
-  - Teaching
-  - Qualification
-  - State-school
 expander:
   check-your-qualifications:
     title: check your qualifications
-    text: If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. 
+    text: If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England. 
     link_title: You can get help comparing English and international qualifications.
     link_url: /non-uk-teachers/non-uk-qualifications
 ---
@@ -118,5 +104,10 @@ As with PGCEs, you can do a PGDE in primary education or secondary education.
 
 More teacher training providers offer a PGCE than a PGDE.
 
-$find$
-$mailinglist$
+## Find out what teachers have to say
+
+Hear from maths teacher Juvayriyah abuut her journey to becoming a teacher.
+
+$what-teaching-taught-me$
+
+Read the [transcript for the video 'What teaching taught me - Juvayriyah'](/shared/transcripts/what-teaching-taught-me-juvayriyah).

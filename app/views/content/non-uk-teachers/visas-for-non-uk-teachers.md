@@ -15,7 +15,7 @@ expander:
     title: help with visas
     text: |-
       <p>
-      If you're from Ukraine and want to teach or train to teach in England, you can check visa support for:
+      If you are from Ukraine and want to teach or train to teach in England, you can check visa support for:
       </p>
         <ul>
           <li><a href="https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support">Ukrainian nationals in the UK</a></li>
@@ -24,131 +24,31 @@ expander:
 cta_arrow_link:
   teachvisa:
     link_target: "https://www.gov.uk/check-uk-visa"
-    link_text: "Check if you need a UK visa"
+    link_text: "Check if you need a visa to work as a qualified teacher in England"
   teachinuk: 
     link_target: "/non-uk-teachers/teach-in-england-if-you-trained-overseas" 
     link_text: "Find out more about teaching in England if you trained outside the UK"
-
-keywords:
-  - International
-  - Overseas
-  - Foreign
-  - "Non-UK"
-  - Nationality
-  - Residency
-  - EEA
-  - Canada
-  - New Zealand
-  - Switzerland
-  - USA
-  - Visa
-  - Skilled Worker visa
-  - EU
-  - EU Settlement Scheme
-  - NARIC
-  - UK NARIC
-  - ENIC
-  - UK ENIC
-  - European Network of Information Centre
-  - National Recognition Information Centre for the United Kingdom
-  - PhD
-  - Immigration
-  - Ireland
-  - Irish
-  - Common Travel Area
-  - Student Visa
-  - Home Office
-  - Graduate Visa
-  - Youth Mobility Scheme
-  - Japan
-  - Monaco
-  - Hong Kong
-  - Republic of Korea
-  - Taiwan
-  - Family Visa
-  - UK Ancestry Visa
-  - Abroad
-  - Europe
-  - European
-  - Settlement Scheme
+  teachvacancies:
+     link_target: "https://teaching-vacancies.service.gov.uk/jobs?visa_sponsorship_availability%5B%5D=true" 
+     link_text: "Find teaching jobs with visa sponsorship"
+  visacosts:
+    link_target: "https://www.gov.uk/skilled-worker-visa/how-much-it-costs"
+    link_text: "Find out how much it costs to apply for a Skilled Worker visa"
+  salaryrequirements: 
+     link_target: "https://www.gov.uk/skilled-worker-visa/if-you-work-in-healthcare-or-education"
+     link_text: "Find out more about the salary requirements for a Skilled Worker visa"
+     
 ---
 
-## How to apply for your visa
+If you are applying for teaching jobs as a non-UK citizen, you will need a visa or immigration status allowing you to work in England.
 
-If you’re applying for teaching jobs in England as a non-UK citizen, you will need a visa or immigration status allowing you to work in England.
+Most people will need a Skilled Worker visa to teach in England. 
 
-Most non-UK citizens who do not already have the correct visa or immigration status will need to apply for a Skilled Worker visa to teach in England. 
+You do not need a Skilled Worker visa to teach in England if you are an Irish citizen, or if you have one of the following: 
 
-$ukraine-visas$
+* settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
 
-### To apply for your visa, follow these steps
-
-#### Step 1 
-Visit the UK government’s official [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service to search for teaching jobs in the UK. Filter your search by ‘visa sponsorship’ to find jobs that can sponsor visas. 
-
-#### Step 2
-Apply for a teaching job with a school which can sponsor your visa. Your salary must meet the requirements for a Skilled Worker visa. 
-
-
-#### Step 3
-When you have a confirmed offer of a job, you’ll be able to apply for your [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa).  
-
-You will need to show: 
-
-* you have a certificate of sponsorship from the school, confirming they have offered you a job and will sponsor you  
-* [you meet certain standards in speaking, reading, writing and understanding English](https://www.gov.uk/skilled-worker-visa/knowledge-of-english)
-* your salary meets the requirement for a Skilled Worker visa
-
-
-### Salary requirement for a Skilled Worker visa
- 
-The salary you need to get a visa depends on if you're employed as a qualified or unqualified teacher.
-
-The school you're applying to work in can explain if the role you're applying for is qualified or unqualified. Qualified roles require more experience or qualifications.
-
-The salary requirement also varies depending on the region you're applying to work in. You can check which region you'll be working in with the school employing you.
-
-If you're employed as a qualified teacher and work in:
-
-* inner London, you must earn at least $nonuk_skilledworkervisateacherminfulltime_innerlondon$
-* outer London, you must earn at least $nonuk_skilledworkervisateacherminfulltime_outerlondon$
-* London fringe, you must earn at least $nonuk_skilledworkervisateacherminfulltime_londonfringe$
-* the rest of England, you must earn at least $nonuk_skilledworkervisateacherminfulltime_restofengland$
-
-If you're employed as an unqualified teacher and work in:
-
-* inner London, you must earn at least $nonuk_skilledworkervisatraineeminfulltime_innerlondon$
-* outer London, you must earn at least $nonuk_skilledworkervisatraineeminfulltime_outerlondon$
-* London fringe, you must earn at least $nonuk_skilledworkervisatraineeminfulltime_londonfringe$
-* the rest of England, you must earn at least $nonuk_skilledworkervisatraineeminfulltime_restofengland$
-
-### Working part time as a teacher
-
-You can work part-time, but your salary must meet the threshold for a Skilled Worker visa. There are 2 requirements:
-
-* your part-time salary must be at least $nonuk_skilledworkervisateacherminparttime$
-* the full-time equivalent of your salary must meet the minimum set for your region and status (for qualified and unqualified teachers)
-
-Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary on offer does not meet the Skilled Worker visa requirements.
-
-### Your partner and children
-
-You may be able to [bring your partner and children with you on a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
-
-
-## Check your status
-
-$teachvisa$
-
-You will not need a visa to teach in the UK if you:
-
-* are an Irish citizen
-
-* have settled or pre-settled status under the [EU Settlement Scheme (EUSS)](https://www.gov.uk/settled-status-eu-citizens-families)
-
-* have [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
-
-You will not need to be sponsored for a Skilled Worker visa if you have a: 
+* [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk) 
 
 * [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa) 
 
@@ -164,25 +64,57 @@ You will not need to be sponsored for a Skilled Worker visa if you have a:
 
 * [Youth Mobility Scheme visa](https://www.gov.uk/youth-mobility) 
 
-## Visa fees and other charges
+If you need to apply for a Skilled Worker visa, you will need to pay visa fees. You can find out [how much it costs to apply for a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa/how-much-it-costs).
 
-You will usually need to show proof of a certain level of savings or income. You’ll be guided through this process when you apply for your visa.
+$teachvisa$
 
-### Visa fees
+$ukraine-visas$
 
-You’ll also have to [pay visa fees](https://www.gov.uk/visa-fees).
+## Applying for teaching jobs in England 
 
-### Immigration Health Surcharge 
+When searching for a teaching job, you will need to make sure: 
 
-You may need to [pay for UK healthcare](https://www.gov.uk/healthcare-immigration-application) as part of your immigration application – this is called the Immigration Health Surcharge (IHS).
+* the job offers visa sponsorship 
 
-$teachinuk$
+* the salary offered meets the requirement for a Skilled Worker visa 
 
-## Contact
+$teachvacancies$
+
+## Skilled Worker visa sponsorship
+
+If you need a Skilled Worker visa to work in the UK, then you will need to apply for teaching jobs that offer visa sponsorship. This means you will be sponsored by an employer, such as the school where you will work and which has given you an official job offer.  
+
+When you have a confirmed job offer, you will be able to [apply for a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa). 
+
+
+### Salary requirements for a Skilled Worker visa
+
+When you apply for a job, you must make sure the salary offered meets the requirement for a Skilled Worker visa.  
+
+The salary you need for a Skilled Worker visa will depend on whether you are employed as a qualified or unqualified teacher.  
+
+To work as a qualified teacher in England, you need English qualified teacher status (QTS). If you do not have QTS, you will not be qualified to teach in some schools in England. The details of the job you are applying for will include whether the role is for teachers with QTS.  
+
+The salary requirement varies depending on the area of England you are applying to work in.  
+
+Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary offered does not meet the Skilled Worker visa requirements. 
+
+$salaryrequirements$
+
+### Working part time as a teacher
+
+You can work part-time, but [your salary must meet the threshold for a Skilled Worker visa](https://www.gov.uk/government/publications/national-pay-scales-for-eligible-teaching-and-education-jobs/national-pay-scales-for-eligible-teaching-and-education-leadership-occupation-codes). 
+
+There are 2 requirements:
+
+* your part-time salary must be at least $nonuk_skilledworkervisateacherminparttime$
+* the full-time equivalent salary for the role must meet the minimum threshold set for your region and status for qualified and unqualified teachers
+
+
+## Dependants
+
+Your partner and children can also apply to join you or stay in the UK as your dependants if they are eligible. Find out more about [how to apply to bring your partner and children with you on a Skilled Worker visa](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
+
+## Get help
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
-
-You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
-
-
-

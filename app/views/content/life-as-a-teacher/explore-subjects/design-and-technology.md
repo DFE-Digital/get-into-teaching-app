@@ -11,12 +11,8 @@ description: |-
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/0037.jpg"
-keywords:
-  - design and technology
-  - teaching design and techology
-  - teacher training
-
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/design-and-technology/article"
+  - "content/shared/block-promos/adviser_mailing_find"
 ---

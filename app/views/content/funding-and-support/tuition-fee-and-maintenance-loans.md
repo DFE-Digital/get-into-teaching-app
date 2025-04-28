@@ -4,9 +4,8 @@ heading: "Student finance for teacher training"
 subcategory: Courses with fees
 description: |-
     Find out about the available student finance for teacher training, including tuition fee loans and maintenance loans to support you while you train.
-cta_adviser:
-  adviser:
-    text: "An adviser with years of teaching experience can answer all your questions about student finance. Chat by phone, text or email, as little or as often as you need."
+promo_content:
+  - "content/shared/block-promos/adviser_findfees"
 calls_to_action:
     student-finance-calculator:
       name: simple
@@ -19,23 +18,26 @@ cta_arrow_link:
   bursaries:
     link_target: "/funding-and-support/scholarships-and-bursaries"
     link_text: "Find out if you're eligible for a bursary or scholarship"
+  disability-support:
+    link_target: "/funding-and-support/if-youre-disabled"
+    link_text: "Find out more about financial support if you have a disability"
+  parents-carers-support:
+    link_target: "/funding-and-support/if-youre-a-parent-or-carer"
+    link_text: "Find out more about financial support if you’re a parent or carer"
+  veterans-support:
+    link_target: "/funding-and-support/if-youre-a-veteran"
+    link_text: "Find out more about financial support if you’re a veteran"
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
-keywords:
-    - Tuition Fee Loan
-    - Maintenance Loan
-    - Student Loan
-    - Student Finance
-    - Financial Support
 expander:
   student-finance:
     title: student finance
     text: |-
       <p>
-      You’re unlikely to get help funding your training unless you have permission to <a href="https://www.gov.uk/browse/visas-immigration/settle-in-the-uk">live permanently in the UK</a>, have refugee status, or are training to teach languages or physics. You’ll also need to meet some other eligibility requirements.
-      <p>You may be eligible for financial support to train to teach if <a href="/non-uk-teachers/visas-for-non-uk-trainees">you're from Ukraine or Afghanistan and on certain visas</a>.</p>
-      <p>If you're in <a href="https://www.gov.uk/claim-asylum">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.
-      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+      You are unlikely to get help funding your training unless you have permission to <a href="https://www.gov.uk/browse/visas-immigration/settle-in-the-uk">live permanently in the UK</a>, have refugee status, or are training to teach languages or physics. You will also need to meet some other eligibility requirements.
+      <p>You may be eligible for financial support to train to teach if <a href="/non-uk-teachers/visas-for-non-uk-trainees">you are from Ukraine or Afghanistan and on certain visas</a>.</p>
+      <p>If you are in <a href="https://www.gov.uk/claim-asylum">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you are unlikely to be eligible for financial support.
+      <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
       <p>
       <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">Find out about funding for non-UK citizens</a>.</p>
 inset_text:
@@ -48,6 +50,8 @@ inset_text:
 ---
 
 Funding is available to help you train to teach if you choose a course that has tuition fees. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs.
+
+The amounts on this page are for the $finance_loanacademicyear$.
 
 You can still apply for a tuition fee loan and a maintenance loan if:
 
@@ -101,6 +105,28 @@ You do not have to pay a bursary or scholarship back. You can get a bursary or s
 
 $bursaries$
 
+## Other financial support
+
+### Financial support if you have a disability or other health condition
+
+If you’re neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs, you may be eligible for extra financial support to become a teacher.
+
+This support can help to cover the costs of any specialist equipment or study-related costs due to a health condition or disability.
+
+$disability-support$
+
+### Financial support if you're a parent or carer
+
+If you have children or other caring responsibilities, you may be able to get extra financial support while training to teach.
+
+$parents-carers-support$
+
+### Financial support if you're a veteran 
+
+If you’re transitioning from the armed forces or your service has already ended, you could be eligible for support to train to teach.
+
+$veterans-support$
+
 ## If you're from Wales, Scotland, Northern Ireland or the Crown Dependencies
 
 You’ll need to contact your country’s student finance body to find out about your eligibility for funding if you live in Wales, Scotland, or Northern Ireland.
@@ -118,5 +144,3 @@ Find out about student finance in the Channel Islands and the Isle of Man:
 * [student finance guidance from the Government of Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx)
 * [student finance guidance from the States of Guernsey](https://www.gov.gg/article/152744/Policies)
 * [student awards guidance from the Isle of Man Government website](https://www.gov.im/student-grants)
-
-$adviser$

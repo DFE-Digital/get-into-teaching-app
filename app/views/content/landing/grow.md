@@ -6,6 +6,7 @@ content:
     - content/landing/grow/collage
     - content/landing/grow/mailing_list
     - content/landing/grow/content
+    - content/shared/block-promos/mailing_adviser_routes
 image: "static/images/content/hero-images/english.jpg"
 layout: "layouts/minimal"
 colour: pink-blue

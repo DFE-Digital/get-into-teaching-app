@@ -16,39 +16,6 @@ cta_arrow_link:
   steps:
     link_target: "/steps-to-become-a-teacher"
     link_text: "Find out how to become a teacher"
-keywords:
-  - Salary
-  - Salaries
-  - Band
-  - Pay
-  - Pay scale
-  - Scale
-  - Teacher Salary
-  - Teacher Salaries
-  - Leading Practitioner
-  - Headteacher
-  - Progression
-  - Unqualified Teacher
-  - Teaching and learning responsibility
-  - TLR
-  - Holiday
-  - Annual Leave
-  - Pension
-  - Additional
-  - Responsibility
-  - Responsibilities
-  - Career
-  - Benefits
-  - Earnings
-  - Leadership
-  - Early Career Framework
-  - Support
-  - Training
-  - ECF
-  - Teaching
-  - Teacher training
-  - How to become a teacher
-  - Teacher training courses
 ---
 If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on.
 
@@ -56,7 +23,7 @@ The pay ranges below apply to maintained schools (schools funded by local author
 
 Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges.
 
-Figures apply from $salaries_date_appliesfrom$.
+The amounts on this page apply from $salaries_date_appliesfrom$.
 
 ## Primary and secondary teacher salary
 

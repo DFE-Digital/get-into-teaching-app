@@ -7,6 +7,8 @@ description: |-
 navigation: 20.15
 navigation_title: What to expect in teacher training
 navigation_description: Find out what your teacher training will be like, what you'll learn, and what classroom experience you'll get.
+promo_content:
+  - "content/shared/block-promos/adviser_find_school"
 cta_arrow_link:
   find:
     link_target: "https://find-teacher-training-courses.service.gov.uk/"
@@ -14,9 +16,9 @@ cta_arrow_link:
   placements:
     link_target: "/train-to-be-a-teacher/school-placements"
     link_text: "Find out more about school placements"
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including top tips on writing a successful application.
+  adjustments:
+    link_target: "/train-to-be-a-teacher/accessibility-adjustments"
+    link_text: "Find out more about adjustments to help you train"
 ---
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
@@ -78,4 +80,8 @@ There are two types of assessments you’ll have as part of your training - form
 
 You might be assessed through written assignments, lesson observations, or by a portfolio of evidence showing how you’re meeting the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). Assessments vary by provider and the qualifications you’re working towards.
 
-$mailinglist$
+## Adjustments and accessibility
+
+Providers can make adjustments if you need support because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs.
+
+$adjustments$

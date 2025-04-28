@@ -13,7 +13,7 @@ end
 RSpec.feature "content pages check", :content, type: :feature do
   include Values
 
-  let(:other_paths) { %w[/ /feedback /search /teacher-training-adviser/sign_up/identity /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference /chat /routes-into-teaching] }
+  let(:other_paths) { %w[/ /feedback /teacher-training-adviser/sign_up/identity /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference /chat /routes-into-teaching /sitemap] }
   let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}, %r{/test}] }
 
   before do
@@ -31,7 +31,7 @@ RSpec.feature "content pages check", :content, type: :feature do
     @stored_pages = PageLister.content_urls.map do |path|
       visit(path)
 
-      fail unless page.status_code.in?(statuses_deemed_successful)
+      fail "Expected status code to be in: #{statuses_deemed_successful} but was #{page.status_code} for #{path}" unless page.status_code.in?(statuses_deemed_successful)
 
       StoredPage.new(path, page.status_code, Nokogiri.parse(page.body))
     end

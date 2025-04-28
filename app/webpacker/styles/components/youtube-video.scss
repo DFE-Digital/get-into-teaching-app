@@ -7,6 +7,19 @@
     aspect-ratio: 16 / 9;
   }
 
+  &--portrait {
+    iframe {
+      display: block;
+      margin: auto;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+
+      @include mq($from: tablet) {
+        width: 50%;
+      }
+    }
+  }
+
   // Simulates 16 / 9 aspect ratio.
   @supports not (aspect-ratio: 1) {
     position: relative;

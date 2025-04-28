@@ -12,8 +12,8 @@ navigation_title: Teaching internships
 navigation_description: Earn $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/train-to-be-a-teacher/teaching-internship-providers/listing
-
-
+promo_content:
+  - "content/shared/block-promos/adviser_mailing_school"
 provider_groups:
   East Midlands:
     providers:
@@ -579,26 +579,5 @@ provider_groups:
         areas: "East Riding of Yorkshire"
         name: "Sarah Barley"
         email: "sarah.barley@theeducationalliance.org.uk"
-
-
-keywords:
-  - teaching internship
-  - internship
-  - providers
-  - maths
-  - physics
-  - STEM
-  - paid internship
-  - TI
-  - T.I.
-  - summer internship
-  - T.I
-  - internships
-  - teaching intern
-  - intern
-  - interns
-  - teaching internship programme
-  - T.I. programme
-  - TI programme
 ---
 $applications-open$

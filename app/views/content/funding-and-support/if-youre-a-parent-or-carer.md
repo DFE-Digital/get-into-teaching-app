@@ -1,12 +1,11 @@
 ---
-title: "Get support as a parent or carer"
+title: "Get support if you're a parent or carer"
 heading: "Funding and support if you're a parent or carer"
 subcategory: Extra support
 description: |-
   Find out what extra grants and schemes are available when completing your teacher training if you have children or other caring responsibilities.
-cta_adviser:
-  adviser:
-    text: "An adviser with years of teaching experience can help you understand what support you could get during your training. Chat by phone, text or email, as little or as often as you need."
+promo_content:
+  - "content/shared/block-promos/adviser_mailing_routes"
 cta_arrow_link:
   careerchanger:
     link_target: /life-as-a-teacher/change-careers
@@ -23,20 +22,12 @@ cta_arrow_link:
 navigation: 20.30
 navigation_title: Funding and support if you're a parent or carer
 navigation_description: Find out what extra grants and schemes are available if you have children or other caring responsibilities.
-keywords:
-    - Bursaries
-    - Bursary
-    - Scholarship
-    - Scholarships
-    - Grant
-    - Parents
-    - Carers
 expander:
   international-content:
     title: funding and support if you're a parent or carer
     text: |-
       <p>
-      If you do not have <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you're unlikely to be eligible for this financial support.
+      If you do not have <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you are unlikely to be eligible for this financial support.
       </p>
       <p>
       You will still be entitled to adjustments to help you train. Find out about the <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">financial support available for non-UK citizens</a>.</p>
@@ -46,7 +37,7 @@ If you have children or other caring responsibilities, you may be able to get ex
 
 You do not have to pay this money back, and you’ll get it on top of your other student finance.
 
-Figures are for the 2024/25 academic year.
+The amounts on this page are for the $finance_parentsacademicyear$.
 
 There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the funding options on this page. If you’re doing a part-time course, you may be eligible for [Universal Credit](https://www.gov.uk/guidance/universal-credit-and-students).
 
@@ -118,4 +109,3 @@ To be eligible, you need to:
 * have a household income of less than $finance_adultdependantsgrant_income$
 
 $adult-grant$
-$adviser$

@@ -15,7 +15,7 @@ expander:
       <p>
       If you qualified as a teacher outside the UK, you can teach in England for up to 4 years without QTS. However, having QTS may improve your chances of getting a teaching job in England.</p>
       <p>
-      After 4 years, you'll need QTS to teach in many schools in England.</p>
+      After 4 years, you will need QTS to teach in many schools in England.</p>
       <p>
       <a href="/non-uk-teachers/teach-in-england-if-you-trained-overseas">Find out how to teach in England if you trained outside the UK</a>.
       </p>    
@@ -27,9 +27,8 @@ expander:
       <p>
       With iQTS, you train to teach where you live or work, with no need to visit the UK. If you get iQTS, you automatically get QTS.
       </p>
-cta_mailinglist:
-  mailinglist:
-    text: Get helpful guidance and support on getting into teaching, including how to get the qualifications you need.
+promo_content:
+  - "content/shared/block-promos/mailing_adviser_routes"
 cta_arrow_link:
   qts-teacher-training:
     link_target: "/routes-into-teaching"
@@ -37,19 +36,6 @@ cta_arrow_link:
   qts-ao:
     link_target: "/train-to-be-a-teacher/assessment-only-route-to-qts"
     link_text: "Find out how to get QTS through assessment only"
-keywords:
-  - PGCE
-  - Postgraduate
-  - Postgrad
-  - Post-graduate
-  - Certificate
-  - Diploma
-  - Education
-  - QTS
-  - Qualified-teacher
-  - Teaching
-  - Qualification
-  - State-school
 ---
 
 You need English qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England. These are schools funded by local authorities.
@@ -103,5 +89,3 @@ $qts-ao$
 If you trained to teach in Wales, your QTS will automatically be recognised in England. [The Education Workforce Council (EWC) website has more information on being awarded QTS in England](https://www.ewc.wales/site/index.php/en/).
 
 If you trained to teach in Scotland or Northern Ireland, you can [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). If your QTS application is successful, you will gain QTS without any further fees or training.
-
-$mailinglist$

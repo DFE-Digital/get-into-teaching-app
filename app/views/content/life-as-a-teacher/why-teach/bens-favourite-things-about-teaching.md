@@ -6,11 +6,7 @@ description: |-
   Hear from Ben about his favourite things about teaching.
 layout: "layouts/minimal" 
 colour: grey-pink 
-image: "static/images/content/case-studies/ben.jpg" 
-keywords:
-  - teaching
-  - maths
-  - science
+image: "static/images/content/case-studies/ben.jpg"
 content: 
   - "content/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching/header" 
   - "content/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching/article"

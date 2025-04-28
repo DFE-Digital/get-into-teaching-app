@@ -830,9 +830,6 @@ en:
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
 
-      search:
-        search: Search for ...
-
     hint:
       events_steps_contact_details:
         address_telephone: |-

@@ -92,13 +92,6 @@
   height: 30px;
 }
 
-.icon-search {
-  @include icon;
-  background-image: url("../images/icon-search.svg");
-  width: 30px;
-  height: 30px;
-}
-
 .icon-mail {
   @include icon;
   background-image: url("../images/icon-mail.svg");

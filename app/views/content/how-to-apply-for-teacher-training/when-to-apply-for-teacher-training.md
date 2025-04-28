@@ -1,18 +1,12 @@
 ---
 title: When to apply for teacher training
 description: |-
-  Find out when you can apply for postgraduate teacher training courses and the deadline for submitting an application.
-cta_adviser:
-  adviser:
-    text: Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience. Chat by phone, text or email, as little or as often as you need.
-calls_to_action:
-    apply:
-      name: apply
+  Find out when you can apply for postgraduate teacher training courses and the deadline for submitting an application.  
 navigation: 30.16
 navigation_title: When to apply for teacher training
 navigation_description:  Find out when you can apply for postgraduate teacher training courses.
-keywords:
-  - teacher training applications
+promo_content:
+  - "content/shared/block-promos/adviser_apply"
 quote:
   q-jacub-pask:
     text: "Applying late was stressful. I was limited in my choice of teacher training course provider, and I'd lost my GCSE certificates. I had to go back to my school and get new copies so I could confirm my place on the course and my student finance."
@@ -25,7 +19,7 @@ expander:
   ukraine-inset:
     title: moving to the UK
     header: "Ukraine citizens:"
-    text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you're moving to the UK from Ukraine</a>.
+    text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you are moving to the UK from Ukraine</a>.
 ---
 
 You can apply for postgraduate teacher training courses starting in $recruitmentcycle_coursestart$ $recruitmentcycle_openanddeadline$. 
@@ -83,6 +77,3 @@ During your application process you will be asked for:
 </ul>
 
 You can find <a href="/how-to-apply-for-teacher-training/teacher-training-interview">help to prepare for your interview</a>. 
-
-$apply$
-$adviser$

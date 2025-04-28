@@ -14,9 +14,9 @@ expander:
     header: "Refugees and asylum seekers:"
     title: funding support
     text: |- 
-      <p>If you have refugee status you'll usually be eligible for financial support to help you train.</p>
-      <p>If you're in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
-      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+      <p>If you have refugee status you will usually be eligible for financial support to help you train.</p>
+      <p>If you are in <a href="https://www.gov.uk/claim-asylum"> the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you are unlikely to be eligible for financial support.</p>
+      <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
 cta_arrow_link:
   loans:
     link_target: "https://www.gov.uk/student-finance"
@@ -28,47 +28,6 @@ cta_arrow_link:
     link_target: "/funding-and-support/salaried-teacher-training"
     link_text: "Find out more about salaried teacher training"
 
-keywords:
-  - International
-  - Overseas
-  - Foreign
-  - Nationality
-  - Residency
-  - EEA
-  - Canada
-  - New Zealand
-  - Switzerland
-  - USA
-  - Visa
-  - Skilled worker visa
-  - EU
-  - EU Settlement Scheme
-  - NARIC
-  - UK NARIC
-  - ENIC
-  - UK ENIC
-  - European Network of Information Centre
-  - National Recognition Information Centre for the United Kingdom
-  - PhD
-  - Immigration
-  - Ireland
-  - Irish
-  - Common Travel Area
-  - Student Visa
-  - Home Office
-  - Graduate Visa
-  - Youth Mobility Scheme
-  - Japan
-  - Monaco
-  - Hong Kong
-  - Republic of Korea
-  - Taiwan
-  - Family Visa
-  - UK Ancestry Visa
-  - Abroad
-  - Europe
-  - European
-  - Settlement Scheme
 ---
 
 Most non-UK citizens will not be eligible for financial support from the UK government to help with teacher training.
@@ -167,7 +126,7 @@ If you need to apply for another visa, for example, a Skilled Worker visa, you w
 ## Get help
 
 
-Contact the [UK Council for International Student Affairs website](https://www.ukcisa.org.uk/About-UKCISA) for advice on what financial support may be available.
+Contact the [UK Council for International Student Affairs website](https://www.ukcisa.org.uk) for advice on what financial support may be available.
 
 You may be eligible for personalised support from a teacher training adviser. They can help with your teacher training application.
 

@@ -10,7 +10,8 @@ describe "Page Speed Task", type: :request do
     let(:pagespeed_env) { false }
 
     it "returns 404" do
-      expect { post run_pagespeed_path }.to raise_error(ActionController::RoutingError)
+      post run_pagespeed_path
+      expect(response).to have_http_status(:not_found)
     end
   end
 
