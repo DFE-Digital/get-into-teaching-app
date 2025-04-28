@@ -6,6 +6,7 @@
 
   > * {
     @include indent-left-and-right;
+    box-sizing: border-box;
   }
 
   // allow level two headings (blue boxes) and CTAs to 'overhang' on the left
