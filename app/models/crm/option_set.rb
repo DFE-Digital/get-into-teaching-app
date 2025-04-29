@@ -54,10 +54,12 @@ class Crm::OptionSet
     end
 
     def lookup_const(category)
+      constant_name = category.to_s.upcase
+
       const = begin
-                const_get(category.to_s.upcase)
+                const_get(constant_name)
               rescue NameError
-                const_get(category.to_s.pluralize.upcase)
+                const_get(constant_name.pluralize)
               end
 
       const.transform_keys { |k| k.parameterize(separator: "_").to_sym }

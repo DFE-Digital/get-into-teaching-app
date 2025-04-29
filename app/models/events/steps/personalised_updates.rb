@@ -32,7 +32,7 @@ module Events
       def degree_status_options
         @degree_status_options ||= GetIntoTeachingApiClient::PickListItemsApi.new
           .get_qualification_degree_status
-          .reject { |item| item.id == 222_750_006 }
+          .reject { |item| item.id == Crm::OptionSet.lookup_by_key(:degree_status, :not_yet_i_m_studying_for_one) }
       end
 
       def degree_status_option_ids

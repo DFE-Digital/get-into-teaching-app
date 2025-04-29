@@ -4,28 +4,23 @@ module WelcomeHelper
   end
 
   def high_commitment?(consideration_journey_stage: consideration_journey_stage_id)
-    # I think I'll apply
-    consideration_journey_stage == 222_750_003
+    consideration_journey_stage == Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_i_think_i_ll_apply)
   end
 
   def low_commitment?(consideration_journey_stage: consideration_journey_stage_id)
-    # It's just an idea
-    consideration_journey_stage == 222_750_000
+    consideration_journey_stage == Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :it_s_just_an_idea)
   end
 
   def graduate?(degree_status: degree_status_id)
-    # Yes
-    degree_status == 222_750_000
+    degree_status == Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate)
   end
 
   def studying?(degree_status: degree_status_id)
-    # Not yet, I'm studying for one
-    degree_status == 222_750_006
+    degree_status == Crm::OptionSet.lookup_by_key(:degree_status, :not_yet_i_m_studying_for_one)
   end
 
   def no_degree?(degree_status: degree_status_id)
-    # No
-    degree_status == 222_750_004
+    degree_status == Crm::OptionSet.lookup_by_key(:degree_status, :i_don_t_have_a_degree_and_am_not_studying_for_one)
   end
 
   def greeting
