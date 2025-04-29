@@ -67,7 +67,7 @@ module MailingList
       request = GetIntoTeachingApiClient::MailingListAddMember.new(construct_export)
       api = GetIntoTeachingApiClient::MailingListApi.new
       Rails.logger.info("MailingList::Wizard#add_mailing_list_member: #{AttributeFilter.filtered_json(request)}")
-      response = api.add_mailing_list_member(request, {return_type: "json"})
+      response = api.add_mailing_list_member(request, { return_type: "json" })
 
       Crm::OptionSet.lookup_by_value(:legacy_degree_status_for_advertising, response.degree_status_id)
     end

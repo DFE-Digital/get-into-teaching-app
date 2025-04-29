@@ -57,10 +57,10 @@ class Crm::OptionSet
       constant_name = category.to_s.upcase
 
       const = begin
-                const_get(constant_name)
-              rescue NameError
-                const_get(constant_name.pluralize)
-              end
+        const_get(constant_name)
+      rescue NameError
+        const_get(constant_name.pluralize)
+      end
 
       const.transform_keys { |k| k.parameterize(separator: "_").to_sym }
     end
