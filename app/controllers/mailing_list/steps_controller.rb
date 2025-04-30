@@ -9,6 +9,7 @@ module MailingList
     before_action :noindex, unless: -> { request.path.include?("/name") }
     before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
+    before_action :set_breadcrumb
 
     layout :resolve_layout
 
@@ -54,6 +55,7 @@ module MailingList
       is_first_page = @current_step.instance_of? MailingList::Steps::Name
 
       return "registration_with_side_images" if is_first_page
+      return "minimal" if action_name == "completed"
 
       "registration"
     end
@@ -68,6 +70,10 @@ module MailingList
 
     def set_completed_page_title
       @page_title = "Free personalised teacher training guidance, sign up completed"
+    end
+
+    def set_breadcrumb
+      breadcrumb @page_title, request.path
     end
   end
 end
