@@ -54,6 +54,7 @@ module EventsHelper
     return building.address_city if event.is_online
 
     [
+      building.venue,
       building.address_line1,
       building.address_line2,
       building.address_line3,
