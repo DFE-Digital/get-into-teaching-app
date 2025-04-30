@@ -1,5 +1,9 @@
+<%= render Content::LandingHeroComponent.new(
+  title: "#{@first_name}, you're signed up!",
+  colour: "pastel yellow-yellow",
+  image: "static/images/content/hero-images/physics4.jpg"
+) %>
 <% @hide_page_helpful_question = true %>
-
 <div data-sub-channel-id="<%= session.dig("mailinglist", "sub_channel_id") %>"></div>
 
 <section class="registration__mailing-list">
