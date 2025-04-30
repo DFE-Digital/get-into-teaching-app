@@ -12,8 +12,11 @@ shared_context "with stubbed event add attendee api" do
 end
 
 shared_context "with stubbed mailing list add member api" do
+  let(:inferred_degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :second_year) }
+  let(:mailing_list_response) { GetIntoTeachingApiClient::DegreeStatusResponse.new({ degree_status_id: inferred_degree_status_id }) }
+
   before do
-    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to receive(:add_mailing_list_member)
+    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to receive(:add_mailing_list_member).and_return(mailing_list_response)
   end
 end
 

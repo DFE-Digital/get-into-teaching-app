@@ -6,6 +6,8 @@ describe MailingList::Wizard do
 
   let(:uuid) { SecureRandom.uuid }
   let(:degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate) }
+  let(:inferred_degree_status) { :second_year }
+  let(:inferred_degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, inferred_degree_status) }
   let(:consideration_journey_stage_id) { Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :it_s_just_an_idea) }
   let(:preferred_teaching_subject_id) { Crm::TeachingSubject.lookup_by_key(:physics) }
   let(:store) do
@@ -62,10 +64,18 @@ describe MailingList::Wizard do
       })
     end
 
+    let(:return_type) { { return_type: "json" } }
+
+    let(:mailing_list_response) do
+      GetIntoTeachingApiClient::DegreeStatusResponse.new({
+        degree_status_id: inferred_degree_status_id,
+      })
+    end
+
     before do
       allow(subject).to receive(:valid?).and_return(true)
       allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-        receive(:add_mailing_list_member).with(request)
+        receive(:add_mailing_list_member).with(request, return_type).and_return(mailing_list_response)
       allow(Rails.logger).to receive(:info)
     end
 
@@ -89,6 +99,7 @@ describe MailingList::Wizard do
       expect(store[uuid]).to eql({
         "first_name" => wizardstore[:first_name],
         "last_name" => wizardstore[:last_name],
+        "inferred_degree_status" => inferred_degree_status,
         "hashed_email" => hashed_email,
         "degree_status_id" => wizardstore[:degree_status_id],
         "consideration_journey_stage_id" => wizardstore[:consideration_journey_stage_id],
@@ -125,7 +136,7 @@ describe MailingList::Wizard do
 
       it "does not populate the welcome_guide_variant field" do
         allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-          receive(:add_mailing_list_member).with(request)
+          receive(:add_mailing_list_member).with(request, return_type).and_return(mailing_list_response)
         subject.complete!
 
         expect(request.welcome_guide_variant).to be_nil
