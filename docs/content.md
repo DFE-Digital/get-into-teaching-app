@@ -173,6 +173,57 @@ Whilst links are just standard Markdown, it's worth noting that if you are linki
 
 Sometimes we don't want our content pages to be indexed by Google and other search engines (often when we're A/B testing the variant should not be indexed). You can achieve this by adding a `noindex: true` entry to the page frontmatter.
 
+
+## Adding a quote
+
+To add a standard quote, render the quote in the frontmatter of your markdown file:
+
+---
+quote:
+  jennifer:
+    text: "My mentor was highly knowledgeable and experienced, and had high expectations which helped me to flourish."
+    name: "Jennifer, trainee teacher"
+    classes: quote--indent
+---
+
+To add a quote in an erb file, use the following code:
+
+```html
+<%= render Content::QuoteComponent.new(
+  text: "For me, science is all about being inquisitive. I was always the kid in class who was thinking, 'I wonder how that works, or I wonder why that does that'. I recognise that so much in the kids I teach and being able to give them the tools to develop that curiosity and knowledge is genuinely exhilarating.",
+  name: "Holly, science teacher",
+  large: false
+) %>
+```
+
+### Adding a quote with image component
+
+Add this code to a html file:
+
+```html
+<div class="row">
+  <div class="col-space-l col-space-l-top">
+    <%= render Content::QuoteWithImageComponent.new(
+      title: "Example title to go here",
+      text: "<h4>Heading if neededd</h4><p>Example information or quote</p><a href='#'>Link text/a>",
+      quotes: false,
+      background_color: "blue",
+      heading_color: "pink",
+      image_path: "static/images/content/hero-images/0034.jpg"
+    ) %>
+  </div>
+</div>
+```
+You can edit the colours used such as "yellow", "pink", "green", "blue" and "purple". You can also specify whether you want the quote marks to appear by using true or false in the quotes parameter. For shorter quotes its better to use an image with a height cropped to around 300 pixels.
+
+When using in a Markdown file, copy the above code into a new html file and link to the file in the Markdown code, in the same way you would when creating a subject page:
+
+```html
+content: 
+  - "content/life-as-a-teacher/pay-and-benefits/quote" 
+```
+
+
 ### Adding a document, image or video
 
 If you need to include a link to a document or embed an image in your page content you'll need to first add the file to the repository. Any documents should be placed in `/app/webpacker/documents` and images in `/app/webpacker/images/content` (under a subdirectory if suitable). You can then reference the files in your Markdown content (note the paths used to reference here will differ to the location of the file - use `/media` instead of `/app/webpacker`):
@@ -915,33 +966,6 @@ And copy and paste an exiting card such as:
 ```
 
 Update the title, description and image as required.
-
-## Add a quote with image component
-
-Add this code to a html file:
-
-```html
-<div class="row">
-  <div class="col-space-l col-space-l-top">
-    <%= render Content::QuoteWithImageComponent.new(
-      title: "Example title to go here",
-      text: "<h4>Heading if neededd</h4><p>Example information or quote</p><a href='#'>Link text/a>",
-      quotes: false,
-      background_color: "blue",
-      heading_color: "pink",
-      image_path: "static/images/content/hero-images/0034.jpg"
-    ) %>
-  </div>
-</div>
-```
-You can edit the colours used such as "yellow", "pink", "green", "blue" and "purple". You can also specify whether you want the quote marks to appear by using true or false in the quotes parameter. For shorter quotes its better to use an image with a height cropped to around 300 pixels.
-
-When using in a Markdown file, copy the above code into a new html file and link to the file in the Markdown code, in the same way you would when creating a subject page:
-
-```html
-content: 
-  - "content/life-as-a-teacher/pay-and-benefits/quote" 
-```
 
 ## Saving a change
 When you have made a change in Visual Studio Code and want to save your work.
