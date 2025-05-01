@@ -23,6 +23,7 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
     * [Adding YouTube videos](#adding-youtube-videos)
     * [iframe](#iframe)
   * [Calls to action](#calls-to-action)
+    * [Chat and generic CTA components](#chat-and-generic-ctas)
     * [Adviser CTA component](#adviser-cta-component)
     * [Routes CTA component](#routes-cta-component)
     * [Mailing list CTA component](#mailing-list-cta-component)
@@ -323,7 +324,7 @@ $table$
 
 Alternatively, if you need to insert the components in an erb file, you can call them like this:
 
----
+```html
 <%= render ChatComponent.new %>
 
 <%= render CallsToAction::SimpleComponent.new(
@@ -333,7 +334,7 @@ Alternatively, if you need to insert the components in an erb file, you can call
   link_text: "Link text",
   link_target: "https://www.somewhere.test/")
 %>
----
+```
 
 The above CTAs render out as follows:
 
