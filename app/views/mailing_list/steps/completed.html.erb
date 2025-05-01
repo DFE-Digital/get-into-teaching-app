@@ -1,15 +1,12 @@
-<%= render Content::LandingHeroComponent.new(
-  title: "#{@first_name}, you're signed up!",
-  colour: "pastel yellow-yellow",
-  image: "static/images/content/hero-images/physics4.jpg"
-) %>
-<% @hide_page_helpful_question = true %>
-<div data-sub-channel-id="<%= session.dig("mailinglist", "sub_channel_id") %>"></div>
+<%= render Content::LandingHeroComponent.new( 
+title: "#{first_name}, you're signed up!", 
+colour: "pastel yellow-yellow", 
+image: "static/images/content/hero-images/physics4.jpg" ) %>
 
 <section class="registration__mailing-list">
   <div class="registration__mailing-list--container">
 
-    <h1 class="heading-l heading--box-blue"><%= @first_name %>, you're signed up.</h1>
+    <h1 class="heading-l heading--box-blue"><%= %>You're signed up.</h1>
     <p>
       You'll get your first email shortly. If you change your mind,
       you can unsubscribe at any time.
