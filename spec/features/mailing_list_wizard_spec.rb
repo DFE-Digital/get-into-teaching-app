@@ -25,7 +25,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
-    choose "Not yet, I'm a first year student"
+    choose "Not yet, I'm studying for one"
+    fill_in "Which year will you graduate?", with: Date.current.year + 1
     click_on "Next step"
 
     # check page title remains correct for non completed step
@@ -69,7 +70,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
-    choose "Not yet, I'm a first year student"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -108,7 +109,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
-    choose "Almost, I'm a final year student"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -147,7 +148,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
-    choose "Not yet, I'm a first year student"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -174,7 +175,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
       preferred_teaching_subject_id: Crm::TeachingSubject.lookup_by_key(:maths),
       consideration_journey_stage_id: Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :final_year),
+      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate),
       address_postcode: "TE57 1NG",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
@@ -319,7 +320,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       last_name: "User",
       email: "test@user.com",
       consideration_journey_stage_id: Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :final_year),
+      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate),
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { response }

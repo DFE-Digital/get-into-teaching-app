@@ -13,29 +13,37 @@
 
     <h2 class="heading-m">What's next?</h2>
 
-    <% if have_degree_low_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/have_degree_low_commitment") %>
-    <% elsif have_degree_high_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/have_degree_high_commitment") %>
-    <% elsif final_year_low_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/final_year_low_commitment") %>
-    <% elsif final_year_high_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/final_year_high_commitment") %>
-    <% elsif first_or_second_year_low_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/first_or_second_year_low_commitment") %>
-    <% elsif first_or_second_year_high_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/first_or_second_year_high_commitment") %>
-    <% elsif no_degree_low_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/no_degree_low_commitment") %>
-    <% elsif no_degree_high_commitment? %>
-      <%= render(partial: "mailing_list/steps/completed/no_degree_high_commitment") %>
-    <% else %>
-      <%= render(partial: "mailing_list/steps/completed/other_high_low_commitment") %>
+    <% if show_welcome_guide? %>
+      <%= render "mailing_list/steps/completed/shared/welcome_guide" %>
+    <% end %>
+
+    <% if graduate? && high_commitment? %>
+      <%= render "mailing_list/steps/completed/shared/get_an_adviser_high_commitment" %>
+    <% end %>
+
+    <% if (graduate? && low_commitment?) || studying? %>
+      <%= render "mailing_list/steps/completed/shared/get_an_adviser_low_commitment" %>
+    <% end %>
+
+    <% if graduate? || (studying? && high_commitment?) %>
+      <%= render "mailing_list/steps/completed/shared/find_a_teacher_training_course" %>
+    <% end %>
+
+    <% if low_commitment? && (studying? || no_degree?) %>
+      <%= render "mailing_list/steps/completed/shared/is_teaching_right_for_me" %>
+    <% end %>
+
+    <% if no_degree? %>
+      <%= render(partial: "mailing_list/steps/completed/shared/train_to_teach_no_degree") %>
+    <% end %>
+
+    <% if studying? %>
+      <%= render "mailing_list/steps/completed/shared/steps_to_become_a_teacher" %>
     <% end %>
 
     <%= render(partial: "mailing_list/steps/completed/shared/book_a_callback") %>
   </div>
 </section>
 
-<%= tag.div id: "mailing-list-degree-status", class: "hidden", data: { id: @degree_status_id, key: @degree_status_key } %>
+<%= tag.div id: "mailing-list-degree-status", class: "hidden", data: { id: @degree_status_id, key: @inferred_degree_status || @degree_status_key } %>
 <%= tag.div id: "hashed-email", class: "hidden", data: { id: "hashed-email", value: @hashed_email } if @hashed_email %>
