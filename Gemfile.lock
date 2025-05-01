@@ -31,8 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: 5c83aecf6688bf5973f721ffdd1ab82921443b41
-  branch: feature/add_graduation_year_and_inference_response
+  revision: 16d84f778f7b14a23ba52968ae1ed7d0b480806d
   specs:
     get_into_teaching_api_client (3.5.1)
       faraday (~> 1.0, >= 1.0.1)
