@@ -17,6 +17,8 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
   * [Breadcrumbs](#breadcrumbs)
   * [Links](#links)
   * [Prevent indexing](#prevent-indexing)
+  * [Adding a quote](#adding-a-quote)
+    * [Adding a quote with image component](#adding-a-quote-with-image-component)
   * [Adding a document, image or video](#adding-a-document-image-or-video)
     * [Hero images and text](#hero-images-and-text)
     * [Alt text](#alt-text)
