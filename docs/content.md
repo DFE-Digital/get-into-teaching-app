@@ -333,6 +333,24 @@ Alternatively, if you need to insert the components in an erb file, you can call
   link_text: "Link text",
   link_target: "https://www.somewhere.test/")
 %>
+
+<%= render CallsToAction::AttachmentComponent.new(
+  text: "Open attachment",
+  file_path: "static/images/dfelogo.png",
+  file_type: "PNG",
+  file_size: "100kb",
+  published_at: "2 May 2025",
+) %>
+
+<%= render Content::FeatureTableComponent.new(
+  {
+    "Feature 1" => "Value 1",
+    "Feature 2" => "Value 2",
+    "Feature 3" => "Value 3",
+  },
+  title = "Exciting features",
+  heading_tag: "h3",
+) %>
 ---
 
 The above CTAs render out as follows:
