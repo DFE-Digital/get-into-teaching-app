@@ -17,8 +17,12 @@ quote:
     name: "Trainee physics teacher"
     classes: quote--indent
   quote-maths:
-    text: "I did my A Level but it was nearly 9 years ago now – I’m getting on a bit! I knew that I’d need to polish up on my maths course and knowledge from A Level, just so I’ve got a bit of certainty when I teach it."
+    text: "I did my A Level but it was nearly 9 years ago now! I knew that I’d need to polish up on my maths course and knowledge from A Level, just so I’ve got a bit of certainty when I teach it."
     name: "Trainee maths teacher"
+    classes: quote--indent
+  quote-provider:
+    text: "The candidate might have a degree in maths but want to teach physics, so we would look at the whole person’s profile and then recommend whether they needed subject knowledge enhancement."
+    name: "Teacher training provider"
     classes: quote--indent 
 ---
 
@@ -36,6 +40,8 @@ This could be because you have one or more of the following:
 
 If your training provider thinks you need to improve your subject knowledge then they might decide that you'll benefit from an SKE course.
 
+$quote-provider$
+
 You can only complete a funded SKE course if your training provider makes it a condition of the offer to train with them.
 
 You'll choose your SKE course provider, but your teacher training provider can help to decide on the right one for you.
@@ -52,13 +58,13 @@ SKE courses are currently available in 5 secondary subjects:
 
 Find out more about [what it’s like to teach in secondary](/life-as-a-teacher/age-groups-and-specialisms/secondary).
 
+$quote-maths$
+
 ### The benefits of an SKE course
 
 An SKE allows you to build up your subject knowledge that you'd be expected to have as a teacher. For example, if you want to teach a subject that you're passionate about, but you only have an A Level in the subject and your degree isn't directly related. Your training provider might suggest an SKE to help you improve your subject knowledge and feel more confident starting your teacher training.
 
 $quote-confidence$
-
-$quote-maths$
 
 ## How SKE courses work
 
