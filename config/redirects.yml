@@ -100,7 +100,7 @@ redirects:
   "/node/2339": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
   "/node/2469": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
   "/node/272": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-  "/how-to-apply-for-teacher-training/ske-explained-transcript": "/"
+  "/how-to-apply-for-teacher-training/ske-explained-transcript": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
 
   # Legacy site path redirects
   "/get-help-and-support/teacher-training-advisers": "/teacher-training-advisers"
