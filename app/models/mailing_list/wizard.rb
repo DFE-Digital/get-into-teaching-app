@@ -11,6 +11,8 @@ module MailingList
       degree_status_id
       sub_channel_id
       hashed_email
+      graduation_year
+      inferred_degree_status
     ].freeze
 
     self.steps = [
@@ -33,7 +35,7 @@ module MailingList
       super.tap do |result|
         break unless result
 
-        add_member_to_mailing_list
+        @store[:inferred_degree_status] = add_member_to_mailing_list
         @store[:hashed_email] = Digest::SHA256.hexdigest(@store[:email]) if @store[:email].present?
 
         # we're taking the last name too so if people restart the wizard
@@ -65,7 +67,9 @@ module MailingList
       request = GetIntoTeachingApiClient::MailingListAddMember.new(construct_export)
       api = GetIntoTeachingApiClient::MailingListApi.new
       Rails.logger.info("MailingList::Wizard#add_mailing_list_member: #{AttributeFilter.filtered_json(request)}")
-      api.add_mailing_list_member(request)
+      response = api.add_mailing_list_member(request, { return_type: "json" })
+
+      Crm::OptionSet.lookup_by_value(:legacy_degree_status_for_advertising, response.degree_status_id)
     end
 
     def construct_export

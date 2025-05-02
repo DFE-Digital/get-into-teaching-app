@@ -19,38 +19,92 @@ RSpec.describe WelcomeHelper, type: :helper do
   end
 
   describe "#show_welcome_guide?" do
-    context "when degree_status is second year" do
-      let(:second_year) { Crm::OptionSet.lookup_by_key(:degree_status, :second_year) }
+    degree_statuses = [
+      Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate),
+      Crm::OptionSet.lookup_by_key(:degree_status, :not_yet_i_m_studying_for_one),
+      Crm::OptionSet.lookup_by_key(:degree_status, :i_don_t_have_a_degree_and_am_not_studying_for_one),
+    ]
 
-      it { expect(show_welcome_guide?(degree_status: second_year)).to be false }
+    consideration_journey_stages = [
+      Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :it_s_just_an_idea),
+      Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :i_m_very_sure_and_think_i_ll_apply),
+    ]
+
+    truthy_combinations = [
+      [
+        Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate),
+        Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :it_s_just_an_idea),
+      ],
+    ]
+
+    all_combinations = degree_statuses.product(consideration_journey_stages)
+
+    context "with a matching combination" do
+      truthy_combinations.each do |degree_status, consideration_stage|
+        it "returns true for degree_status: #{degree_status} and consideration_stage: #{consideration_stage}" do
+          expect(show_welcome_guide?(degree_status: degree_status, consideration_journey_stage: consideration_stage)).to be true
+        end
+      end
     end
 
-    context "when degree_status is final year" do
-      let(:final_year) { Crm::OptionSet.lookup_by_key(:degree_status, :final_year) }
+    context "with a non-matching combination" do
+      all_combinations.each do |degree_status, consideration_stage|
+        next if truthy_combinations.include?([degree_status, consideration_stage])
 
-      it { expect(show_welcome_guide?(degree_status: final_year)).to be true }
+        it "returns false for degree_status: #{degree_status} and consideration_stage: #{consideration_stage}" do
+          expect(show_welcome_guide?(degree_status: degree_status, consideration_journey_stage: consideration_stage)).to be false
+        end
+      end
+    end
+  end
+
+  describe "#high_commitment?" do
+    it "returns true for consideration_journey_stage 222750003" do
+      expect(high_commitment?(consideration_journey_stage: 222_750_003)).to be true
     end
 
-    context "when degree_status is 'graduate or postgraduate'" do
-      let(:graduate) { Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate) }
+    it "returns false for other consideration_journey_stage values" do
+      expect(high_commitment?(consideration_journey_stage: 123_456_789)).to be false
+    end
+  end
 
-      context "when consideration journey stage is 'it's just an idea'" do
-        let(:just_an_idea) { Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :it_s_just_an_idea) }
+  describe "#low_commitment?" do
+    it "returns true for consideration_journey_stage 222750000" do
+      expect(low_commitment?(consideration_journey_stage: 222_750_000)).to be true
+    end
 
-        it { expect(show_welcome_guide?(degree_status: graduate, consideration_journey_stage: just_an_idea)).to be true }
-      end
+    it "returns false for other consideration_journey_stage values" do
+      expect(low_commitment?(consideration_journey_stage: 123_456_789)).to be false
+    end
+  end
 
-      context "when consideration journey stage is 'I’m not sure and finding out more'" do
-        let(:finding_out_more) { Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_not_sure_and_finding_out_more) }
+  describe "#graduate?" do
+    it "returns true for degree_status 222750000" do
+      expect(graduate?(degree_status: 222_750_000)).to be true
+    end
 
-        it { expect(show_welcome_guide?(degree_status: graduate, consideration_journey_stage: finding_out_more)).to be true }
-      end
+    it "returns false for other degree_status values" do
+      expect(graduate?(degree_status: 123_456_789)).to be false
+    end
+  end
 
-      context "when consideration journey stage is 'I’m fairly sure and exploring my options'" do
-        let(:fairly_sure) { Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_fairly_sure_and_exploring_my_options) }
+  describe "#studying?" do
+    it "returns true for degree_status 222750006" do
+      expect(studying?(degree_status: 222_750_006)).to be true
+    end
 
-        it { expect(show_welcome_guide?(degree_status: graduate, consideration_journey_stage: fairly_sure)).to be false }
-      end
+    it "returns false for other degree_status values" do
+      expect(studying?(degree_status: 123_456_789)).to be false
+    end
+  end
+
+  describe "#no_degree?" do
+    it "returns true for degree_status 222750004" do
+      expect(no_degree?(degree_status: 222_750_004)).to be true
+    end
+
+    it "returns false for other degree_status values" do
+      expect(no_degree?(degree_status: 123_456_789)).to be false
     end
   end
 
