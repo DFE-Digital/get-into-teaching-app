@@ -248,18 +248,46 @@
 
   &__funding-widget {
     flex-wrap: wrap;
-  }
 
-  &__flex-heading {
-    flex-basis: min-content;
-    flex-grow: 1;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-bottom: 0;
-  }
+    display: block;
 
-  &__flex-break {
-    flex-basis: 100%;
-    height: 0;
+    .grid {
+      display: grid;
+    }
+
+    .grid-item {
+      background: var(--blue-2);
+      border: 2px solid var(--blue-5);
+      color: var(--blue-8);
+    }
+
+    .grid-item-1 {
+      grid-area: 1 / 1 / 3 / 1;
+    }
+
+    .grid-item-2 {
+      grid-area: 1 / 2 / 1 / 3;
+    }
+
+
+    @include mq($until: tablet) {
+      .grid {
+        grid-template-columns: 67px;
+      }
+
+      .grid-item-3 {
+        grid-area: 2 / 1 / 2 / 3;
+      }
+    }
+
+    @include mq($from: tablet) {
+      .grid {
+        grid-template-columns: 88px;
+      }
+
+      .grid-item-3 {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+    }
   }
 }
