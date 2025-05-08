@@ -23,6 +23,7 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
     * [Adding YouTube videos](#adding-youtube-videos)
     * [iframe](#iframe)
   * [Calls to action](#calls-to-action)
+    * [Chat and generic CTA components](#chat-and-generic-ctas)
     * [Adviser CTA component](#adviser-cta-component)
     * [Routes CTA component](#routes-cta-component)
     * [Mailing list CTA component](#mailing-list-cta-component)
@@ -266,9 +267,14 @@ When adding an iFrame element as part of Markdown content or a HTML page we shou
 
 We use several calls to action (CTAs) across the website. These highlight important information and links to users.
 
-On some pages we want to include one or more calls to action; instead of copy/pasting the HTML for these sections we can specify and configure them in the frontmatter and then reference them in our content.
+### Chat and generic CTAs
 
-You can configure and reference calls to action as part of your main content:
+We use these CTAs for:
+
+* a green chat online button
+* a generic call to action component with customisable icons
+* an attachment button
+* a table
 
 ```yaml
 ---
@@ -276,6 +282,14 @@ calls_to_action:
   chat:
     name: chat
     arguments: {}
+  generic:
+    name: simple
+    arguments:
+      title: A title
+      text: Some text
+      icon: "icon-arrow"
+      link_text: Link text
+      link_target: "https://website.com/"
   attachment:
     name: attachment
     arguments:
@@ -289,14 +303,6 @@ calls_to_action:
       - "Row 1": "Value 1"
       "Row 2": "Value 2"
       - "A description of the table"
-  generic:
-    name: simple
-    arguments:
-      title: A title
-      text: Some text
-      icon: "icon-arrow"
-      link_text: Link text
-      link_target: "https://website.com/"
 ---
 
 ### Chat
@@ -316,7 +322,39 @@ $attachment$
 $table$
 ```
 
-The above example would render out as follows:
+Alternatively, if you need to insert the components in an erb file, you can call them like this:
+
+```html
+<%= render ChatComponent.new %>
+
+<%= render CallsToAction::SimpleComponent.new(
+  title: "A title",
+  text: "Some text",
+  icon: "icon-arrow",
+  link_text: "Link text",
+  link_target: "https://www.somewhere.test/")
+%>
+
+<%= render CallsToAction::AttachmentComponent.new(
+  text: "Open attachment",
+  file_path: "static/images/dfelogo.png",
+  file_type: "PNG",
+  file_size: "100kb",
+  published_at: "2 May 2025",
+) %>
+
+<%= render Content::FeatureTableComponent.new(
+  {
+    "Feature 1" => "Value 1",
+    "Feature 2" => "Value 2",
+    "Feature 3" => "Value 3",
+  },
+  title = "Exciting features",
+  heading_tag: "h3",
+) %>
+```
+
+The above CTAs render out as follows:
 
 <img src="images/content_cta_examples.png" alt="Example Content CTAs" style="width: 500px;">
 
