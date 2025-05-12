@@ -83,7 +83,7 @@ Full-time salaried teacher training will usually last:
 
 * 2 academic years (September to July) if you’re on a course delivered by Teach First 
 
-* at least 1 full year (September to September) if you’re on a postgraduate teaching apprenticeship
+* 9 months if you’re on a postgraduate teaching apprenticeship
 
 Some courses can begin at other points in the year and there may be part-time courses available. 
 
