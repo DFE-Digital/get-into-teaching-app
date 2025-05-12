@@ -53,7 +53,7 @@ This website is partially compliant with the WCAG (Web Content Accessibility Gui
 The content is non-accessible for the following reasons:
 
 * some of the non-verbal information presented in videos on the site is not included in audio descriptions. This fails to meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded)
-* on the [events page](/events), the [bursaries and scholarship page](/funding-and-support/scholarships-and-bursaries) and in the welcome guide, some content is cut off the screen at 400% zoom. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow)
+* on the [bursaries and scholarship page](/funding-and-support/scholarships-and-bursaries) and in the welcome guide, some content is cut off the screen at 400% zoom. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow)
 
 #### Webchat
 
@@ -69,6 +69,6 @@ We’ll continue to test the accessibility of this service as it develops.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 5 March 2025. It was last reviewed on 16 April 2025.
+This statement was prepared on 5 March 2025. It was last reviewed on 29 April 2025.
 
 This website was last tested independently on 25 February 2025. The test was carried out by the Government Digital Service.

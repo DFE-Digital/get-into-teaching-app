@@ -14,9 +14,10 @@ describe MetadataHelper, type: "helper" do
 
       specify "renders a meta tag for the #{key}" do
         rendered = Nokogiri.parse(meta_tag(**item[:provided])).at_css("meta")
+        attribute = item.dig(:provided, :opengraph) ? "property" : "name" # Open graph tags should use property
 
         expect(rendered.name).to eql "meta"
-        expect(rendered.attributes["name"].value).to eql(key)
+        expect(rendered.attributes[attribute].value).to eql(key)
         expect(rendered.attributes["content"].value).to eql(value)
       end
     end
@@ -32,13 +33,13 @@ describe MetadataHelper, type: "helper" do
 
       expect(tags).to include(
         <<~HTML.chomp,
-          <meta name="og:image" content="http://test.host/packs-test/v1/static/images/content/hero-images/teacher2-e8f0d711e6d72e7ee752.jpg">
+          <meta property="og:image" content="http://test.host/packs-test/v1/static/images/content/hero-images/teacher2-e8f0d711e6d72e7ee752.jpg">
         HTML
       )
 
       expect(tags).to include(
         <<~HTML.chomp,
-          <meta name="og:image:alt" content="A teacher listening to a group of students">
+          <meta property="og:image:alt" content="A teacher listening to a group of students">
         HTML
       )
     end
