@@ -21,6 +21,7 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
     * [Hero images and text](#hero-images-and-text)
     * [Alt text](#alt-text)
     * [Adding YouTube videos](#adding-youtube-videos)
+    * [Transcripts](#transcripts)
     * [iframe](#iframe)
   * [Calls to action](#calls-to-action)
     * [Chat and generic CTA components](#chat-and-generic-ctas)
@@ -265,16 +266,16 @@ Transcripts must:
 If you auto-generate a transcript, you must check it for accuracy.
 
 Example of a link to a video transcript:
----
+```yaml
 Read the [transcript for the video 'What teaching taught me - Josh'](/shared/transcripts/what-teaching-taught-me-josh).
----
+```
 
 ```yaml
 <p>Read the <a href="/shared/transcripts/what-teaching-taught-me-josh">transcript for the 'What teaching taught me - Josh' video</a>.</p>
 ```
 
 Example of a video transcript:
----
+```
 ---
 title: Transcript for the video 'What teaching taught me - Josh'
 description: Full transcript for the video 'What teaching taught me - Josh'
@@ -287,6 +288,7 @@ Working with students with special educational needs, of which I am and was one 
 
 After a couple of years, I became a deputy head of year, which is a pastoral responsibility. After a year of that, I then became a head of year. My school has over 1,400 students in it. To be a leader in the leadership team of that school, the impact you can have is huge. That’s the next step that I’m taking.
 ---
+```
 
 #### iframe
 
