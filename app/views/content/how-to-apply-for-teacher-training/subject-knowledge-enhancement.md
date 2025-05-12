@@ -62,7 +62,7 @@ $quote-maths$
 
 ### The benefits of an SKE course
 
-An SKE allows you to build up your subject knowledge that you'd be expected to have as a teacher. For example, if you want to teach a subject that you're passionate about, but you only have an A Level in the subject and your degree isn't directly related. Your training provider might suggest an SKE to help you improve your subject knowledge and feel more confident starting your teacher training.
+An SKE course allows you to build up your subject knowledge that you'd be expected to have as a teacher. For example, if you want to teach a subject that you're passionate about, but you only have an A Level in the subject and your degree isn't directly related. Your training provider might suggest an SKE to help you improve your subject knowledge and feel more confident starting your teacher training.
 
 $quote-confidence$
 
@@ -70,9 +70,9 @@ $quote-confidence$
 
 They're usually online, but some courses can be classroom based and some can be a mixture of both.
 
-Course lengths range from 8 to 28 weeks and are 25 hours per week. Your provider will decide which course length you need based on your gap in knowledge. Different providers may offer different course lengths.
+Course lengths range from 8 to 28 weeks with one week equalling 25 hours of study. Your provider will decide which course length you need based on your gap in knowledge. Different providers may offer different course lengths.
 
-You can do a part-time course and complete it over a longer period or complete it in a shorter time with compressed hours. Your SKE provider will be able to discuss your options with you.
+You can do a part-time course and complete it over a longer period or a shorter period with compressed hours. Your SKE provider will be able to discuss your options with you.
 
 ## When to complete your course
 
