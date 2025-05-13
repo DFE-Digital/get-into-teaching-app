@@ -1,0 +1,25 @@
+<%= image_pack_tag("static/images/content/welcome-guide/#{thumbnail}", **image_alt_attribs_for_text(alt)) %>
+
+<div class="text">
+  <h2>
+    <span class="yellow no-wrap">
+      My journey into
+    </span>
+
+    <br>
+
+    <span class="yellow no-wrap blend">
+      <% if featured_subject?(welcome_guide_subject_id) %>
+        teaching <%= subject_category(welcome_guide_subject_id, downcase: false) %>.
+      <% else %>
+        teaching.
+      <% end %>
+    </span>
+  </h2>
+
+  <p>
+    <%= text %>
+  </p>
+
+  <a href="/welcome/my-journey-into-teaching" class="button">Read <%= name %>'s story</a>
+</div>
