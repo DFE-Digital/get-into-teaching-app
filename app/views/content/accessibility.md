@@ -55,12 +55,6 @@ The content is non-accessible for the following reasons:
 * some of the non-verbal information presented in videos on the site is not included in audio descriptions. This fails to meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded)
 * in the welcome guide, some content is cut off the screen at 400% zoom. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow)
 
-#### Webchat
-
-The webchat content is non-accessible for the following reasons:
-
-* on the Tell us about yourself page, the error message is not programmatically associated with the field and is not announced by screen readers when tabbing onto the field itself. This fails to meet [WCAG 2.2 A - 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships)
-
 ## What we're doing to improve accessibility
 
 We are currently working to address the known accessibility issues.
