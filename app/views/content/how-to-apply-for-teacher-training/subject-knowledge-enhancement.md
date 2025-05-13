@@ -4,10 +4,6 @@ description: |-
   Find out more about subject knowledge enhancement (SKE) courses which will help you brush up your knowledge on the subject you want to teach.
 promo_content:
   - "content/shared/block-promos/adviser_findske"
-youtube_video:
-  ske-course-video:
-    id: mWuHMtyFrFU
-    title: Subject knowledge enhancement explained
 navigation: 30.25
 navigation_title: Subject knowledge enhancement (SKE)
 navigation_description: Find out how to improve your subject knowledge with a subject knowledge enhancement course.
@@ -15,6 +11,19 @@ expander:
   SKE-bursaries:
     title: SKE bursaries
     text: Most bursaries are only for UK citizens. However, you may be eligible for an SKE bursary if you are training to teach physics or languages.
+quote:
+  quote-confidence:
+    text: "It’s allowed me to start my PGCE in physics with confidence that I know that I have the ability to teach that subject."
+    name: "Trainee physics teacher"
+    classes: quote--indent
+  quote-maths:
+    text: "I did my A Level but it was nearly 9 years ago now! I knew that I’d need to polish up on my maths course and knowledge from A Level, just so I’ve got a bit of certainty when I teach it."
+    name: "Trainee maths teacher"
+    classes: quote--indent
+  quote-provider:
+    text: "The candidate might have a degree in maths but want to teach physics, so we would look at the whole person’s profile and then recommend whether they needed subject knowledge enhancement."
+    name: "Teacher training provider"
+    classes: quote--indent 
 ---
 
 You might need to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
@@ -30,6 +39,8 @@ This could be because you have one or more of the following:
 ## How to do an SKE course
 
 If your training provider thinks you need to improve your subject knowledge then they might decide that you'll benefit from an SKE course.
+
+$quote-provider$
 
 You can only complete a funded SKE course if your training provider makes it a condition of the offer to train with them.
 
@@ -47,21 +58,21 @@ SKE courses are currently available in 5 secondary subjects:
 
 Find out more about [what it’s like to teach in secondary](/life-as-a-teacher/age-groups-and-specialisms/secondary).
 
+$quote-maths$
+
 ### The benefits of an SKE course
 
-Learn more about how a subject knowledge enhancement course can help prepare you for the classroom in our video:
+An SKE course allows you to build up your subject knowledge that you'd be expected to have as a teacher. For example, if you want to teach a subject that you're passionate about, but you only have an A Level in the subject and your degree isn't directly related. Your training provider might suggest an SKE to help you improve your subject knowledge and feel more confident starting your teacher training.
 
-$ske-course-video$
-
- [Read the transcript for the 'Subject knowledge enhancement explained' video](/how-to-apply-for-teacher-training/ske-explained-transcript).
+$quote-confidence$
 
 ## How SKE courses work
 
 They're usually online, but some courses can be classroom based and some can be a mixture of both.
 
-Course lengths range from 8 to 28 weeks and are 25 hours per week. Your provider will decide which course length you need based on your gap in knowledge. Different providers may offer different course lengths.
+Course lengths range from 8 to 28 weeks with one week equalling 25 hours of study. Your provider will decide which course length you need based on your gap in knowledge. Different providers may offer different course lengths.
 
-You can do a part-time course and complete it over a longer period or complete it in a shorter time with compressed hours. Your SKE provider will be able to discuss your options with you.
+You can do a part-time course and complete it over a longer period or a shorter period with compressed hours. Your SKE provider will be able to discuss your options with you.
 
 ## When to complete your course
 
