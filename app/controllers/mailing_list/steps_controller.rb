@@ -9,7 +9,7 @@ module MailingList
     before_action :noindex, unless: -> { request.path.include?("/name") }
     before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
-    before_action :set_breadcrumb
+    before_action :set_breadcrumb, only: [:completed]
 
     layout :resolve_layout
 
