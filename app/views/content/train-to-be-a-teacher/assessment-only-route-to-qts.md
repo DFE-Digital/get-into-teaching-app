@@ -356,6 +356,13 @@ provider_groups:
       telephone: "0151 443 2663"
       international_phone: "+441514432663"
       
+    - header: "One Cumbria SCITT"
+      link: "https://onecumbria.education/initial-teacher-training/"
+      name: "Tina Beddoe"
+      email: "beddoet@onecumbria.education"
+      telephone: "07739901777"
+      international_phone: "+447739901777"
+      
     - header: "Prestolee SCITT"
       link: "https://www.prestoleescitt.org.uk/assessment-only-qts"
       name: "Lynsey Smith"
@@ -751,6 +758,7 @@ provider_groups:
       email: "jboden@smchull.org"
       telephone: "01482 851136"
       international_phone: "+441482851136"
+      
 ---
 
 If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) through an assessment only programme.
