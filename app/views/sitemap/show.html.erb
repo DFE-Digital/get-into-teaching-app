@@ -7,9 +7,9 @@
   <div class="row inset">
     <% ('A'..'Z').each do |letter| %>
       <% if @a_z_sitemap_data.key?(letter) %>
-        <%= link_to letter, "##{letter}", class: "link" %>
+        <%= link_to letter, "##{letter}", class: "link link--padding" %>
       <% else %>
-        <span><%= letter %></span>
+        <span class="link--padding"><%= letter %></span>
       <% end %>
     <% end %>
   </div>
