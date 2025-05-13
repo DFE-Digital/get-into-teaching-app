@@ -4,15 +4,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 7.2.2"
+gem "rails"
 
 # Use Puma as the app server
 gem "puma", "~> 6.4"
 
 gem "pg"
 
-# Fork needed for Ruby 3.1/Rails 7
-gem "validates_timeliness", "~> 7.0.0"
+gem "validates_timeliness"
 
 gem "invisible_captcha"
 
