@@ -265,6 +265,8 @@ Transcripts must:
 
 If you auto-generate a transcript, you must check it for accuracy.
 
+Transcript page files should be created in the 'content/shared/transcripts' folder.
+
 Example of a link to a video transcript:
 ```yaml
 Read the [transcript for the video 'What teaching taught me - Josh'](/shared/transcripts/what-teaching-taught-me-josh).
