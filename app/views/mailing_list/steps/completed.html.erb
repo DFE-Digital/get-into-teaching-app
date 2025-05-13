@@ -13,10 +13,6 @@
 
     <h2 class="heading-m">What's next?</h2>
 
-    <% if show_welcome_guide? %>
-      <%= render "mailing_list/steps/completed/shared/welcome_guide" %>
-    <% end %>
-
     <% if graduate? && high_commitment? %>
       <%= render "mailing_list/steps/completed/shared/get_an_adviser_high_commitment" %>
     <% end %>
