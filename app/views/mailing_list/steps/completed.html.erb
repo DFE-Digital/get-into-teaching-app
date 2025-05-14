@@ -1,45 +1,52 @@
 <% @hide_page_helpful_question = true %>
-
 <div data-sub-channel-id="<%= session.dig("mailinglist", "sub_channel_id") %>"></div>
 
-<section class="registration__mailing-list">
-  <div class="registration__mailing-list--container">
+<%= render Content::LandingHeroComponent.new(
+  title: "#{@first_name}, you're signed up!",
+  colour: "pastel yellow-yellow",
+  image: "static/images/content/hero-images/physics4.jpg"
+) %>
 
-    <h1 class="heading-l heading--box-blue"><%= @first_name %>, you're signed up.</h1>
-    <p>
-      You'll get your first email shortly. If you change your mind,
-      you can unsubscribe at any time.
-    </p>
+<div class="row inset">
+  <section class="col col-720 col-space-l-top">
+    <section class="registration__mailing-list">
+      <div class="registration__mailing-list--container">
+        <p>
+        You'll get your first email shortly. If you change your mind,
+        you can unsubscribe at any time.
+        </p>
 
-    <h2 class="heading-m">What's next?</h2>
+        <h2 class="heading-m">Your next steps</h2>
 
-    <% if graduate? && high_commitment? %>
-      <%= render "mailing_list/steps/completed/shared/get_an_adviser_high_commitment" %>
-    <% end %>
+        <% if graduate? && high_commitment? %>
+          <%= render "mailing_list/steps/completed/shared/get_an_adviser_high_commitment" %>
+        <% end %>
 
-    <% if (graduate? && low_commitment?) || studying? %>
-      <%= render "mailing_list/steps/completed/shared/get_an_adviser_low_commitment" %>
-    <% end %>
+        <% if (graduate? && low_commitment?) || studying? %>
+          <%= render "mailing_list/steps/completed/shared/get_an_adviser_low_commitment" %>
+        <% end %>
 
-    <% if graduate? || (studying? && high_commitment?) %>
-      <%= render "mailing_list/steps/completed/shared/find_a_teacher_training_course" %>
-    <% end %>
+        <% if graduate? || (studying? && high_commitment?) %>
+          <%= render "mailing_list/steps/completed/shared/find_a_teacher_training_course" %>
+        <% end %>
 
-    <% if low_commitment? && (studying? || no_degree?) %>
-      <%= render "mailing_list/steps/completed/shared/is_teaching_right_for_me" %>
-    <% end %>
+        <% if low_commitment? && (studying? || no_degree?) %>
+          <%= render "mailing_list/steps/completed/shared/is_teaching_right_for_me" %>
+        <% end %>
 
-    <% if no_degree? %>
-      <%= render(partial: "mailing_list/steps/completed/shared/train_to_teach_no_degree") %>
-    <% end %>
+        <% if no_degree? %>
+          <%= render(partial: "mailing_list/steps/completed/shared/train_to_teach_no_degree") %>
+        <% end %>
 
-    <% if studying? %>
-      <%= render "mailing_list/steps/completed/shared/steps_to_become_a_teacher" %>
-    <% end %>
+        <% if studying? %>
+          <%= render "mailing_list/steps/completed/shared/steps_to_become_a_teacher" %>
+        <% end %>
 
-    <%= render(partial: "mailing_list/steps/completed/shared/book_a_callback") %>
-  </div>
-</section>
+        <%= render(partial: "mailing_list/steps/completed/shared/book_a_callback") %>
+      </div>
+    </section>
+  </section>
+</div>
 
 <%= tag.div id: "mailing-list-degree-status", class: "hidden", data: { id: @degree_status_id, key: @inferred_degree_status || @degree_status_key } %>
 <%= tag.div id: "hashed-email", class: "hidden", data: { id: "hashed-email", value: @hashed_email } if @hashed_email %>
