@@ -514,3 +514,11 @@ redirects:
 
   # Old search --> A to Z sitemap
   "/search": "/sitemap"
+
+  # Removing the welcome guide
+  "/welcome": "/life-as-a-teacher"
+  "/welcome/my-journey-into-teaching": "/life-as-a-teacher"
+  "/welcome/andrews-story": "/life-as-a-teacher"
+  "/welcome/jacks-story": "/life-as-a-teacher"
+  "/welcome/yvonnes-story": "/life-as-a-teacher"
+  
