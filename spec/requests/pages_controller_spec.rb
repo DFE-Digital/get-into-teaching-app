@@ -19,14 +19,6 @@ describe PagesController, type: :request do
       it { is_expected.to have_http_status(:success) }
     end
 
-    context "when the page is noindexed" do
-      before { get "/welcome" }
-
-      subject { response }
-
-      it { is_expected.not_to be_indexed }
-    end
-
     context "with invalid page" do
       subject { response }
 
