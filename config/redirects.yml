@@ -523,4 +523,3 @@ redirects:
   "/welcome/yvonnes-story": "/life-as-a-teacher"
   "/welcome/email/subject/(*subject)": "/life-as-a-teacher"
   "/welcome/email/degree-status/(*degree_status)": "/life-as-a-teacher"
-  "/welcome/email/subject/(*subject)/degree-status/(*degree_status)": "/life-as-a-teacher"
