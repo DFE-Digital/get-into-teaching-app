@@ -336,12 +336,12 @@ provider_groups:
       international_phone: "+447549025620"
       
     - header: "Kingsbridge EIP SCITT"
+      link: "https://www.kingsbridgeteachertraining.co.uk/contact"
+      name: "Alaina Shawcross"
+      email: "kingsbridge@cfat.org.uk"
+      telephone: "01254 686178"
+      international_phone: "+441254686178"
       
-      name: "Gail Thomson"
-      email: "g.thomson@kingsbridgeeip.co.uk"
-      telephone: "01942 510712"
-      international_phone: "+441942510712"
-      extension: "ext 500"
     - header: "London School of Jewish Studies"
       link: "https://www.lsjs.ac.uk/assessment-only.php"
       name: "Galia Segal"
@@ -436,7 +436,7 @@ provider_groups:
       
       
     - header: "OTT SCITT"
-      link: "https://www.ott-scitt.org.uk/aor"
+      link: "https://ott-scitt.org.uk/aor/"
       name: "Marion Rawlings"
       email: "AOR@ott-scitt.org.uk"
       telephone: "01865 518209"
@@ -536,7 +536,7 @@ provider_groups:
       international_phone: "+441458449418"
       
     - header: "OTT SCITT"
-      link: "https://www.ott-scitt.org.uk/aor"
+      link: "https://ott-scitt.org.uk/aor/"
       name: "Marion Rawlings"
       email: "AOR@ott-scitt.org.uk"
       telephone: "01865 518209"
@@ -548,6 +548,13 @@ provider_groups:
       email: "SCIL@somerset.gov.uk"
       telephone: "0300 123 1967"
       international_phone: "+443001231967"
+      
+    - header: "Ted Wragg Teacher Training Partnership"
+      link: "https://www.tedwraggtrust.co.uk/page/?title=Train+to+Teach&pid=25"
+      name: "Carrie McMillan"
+      email: "carrie.mcmillan@tedwraggtrust.co.uk"
+      telephone: "01392 686165"
+      international_phone: "+441392686165"
       
     - header: "University of Reading"
       link: "https://www.reading.ac.uk/education/pgce-qts-and-eyts/assessment-only"
@@ -716,6 +723,13 @@ provider_groups:
       email: "admin@teachinglondon.org"
       telephone: "020 7932 1129"
       international_phone: "+442079321129"
+      
+    - header: "Ted Wragg Teacher Training Partnership"
+      link: "https://www.tedwraggtrust.co.uk/page/?title=Train+to+Teach&pid=25"
+      name: "Carrie McMillan"
+      email: "carrie.mcmillan@tedwraggtrust.co.uk"
+      telephone: "01392 686165"
+      international_phone: "+441392686165"
       
     - header: "Tes Institute"
       link: "https://www.tes.com/institute"
