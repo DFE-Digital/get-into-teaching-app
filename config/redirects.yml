@@ -521,4 +521,6 @@ redirects:
   "/welcome/andrews-story": "/life-as-a-teacher"
   "/welcome/jacks-story": "/life-as-a-teacher"
   "/welcome/yvonnes-story": "/life-as-a-teacher"
-  
+  "/welcome/email/subject/(*subject)": "/life-as-a-teacher"
+  "/welcome/email/degree-status/(*degree_status)": "/life-as-a-teacher"
+  "/welcome/email/subject/(*subject)/degree-status/(*degree_status)": "/life-as-a-teacher"

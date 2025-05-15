@@ -79,11 +79,6 @@ Rails.application.routes.draw do
   get "/browse", to: "pages#browse", as: :browse
   get "/values", to: "pages#values", as: :values
 
-  # param paths for welcome guide customisation
-  get "/welcome/email/subject/:subject", to: "pages#welcome"
-  get "/welcome/email/degree-status/:degree_status", to: "pages#welcome"
-  get "/welcome/email/subject/:subject/degree-status/:degree_status", to: "pages#welcome"
-
   resource :chat, only: %i[show]
 
   resource "cookie_preference", only: %i[show]
