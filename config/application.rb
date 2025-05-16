@@ -38,5 +38,18 @@ module GetIntoTeachingWebsite
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.exceptions_app = routes
+    config.active_job.queue_adapter = :sidekiq
+
+    # View component previews
+    config.view_component.preview_controller = "PreviewController"
+    config.view_component.preview_paths << Rails.root.join("spec/components/previews")
+    config.view_component.default_preview_layout = "component_preview"
+
+    config.skylight.environments.append("preprod", "dev", "test", "staging", "rolling")
   end
 end
+
+# Prevent Rails from attempting to auto-load JS/assets.
+Rails.autoloaders.main.ignore(Rails.root.join("app/webpacker"))
