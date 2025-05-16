@@ -8,7 +8,7 @@ class UserFeedback < ApplicationRecord
   before_validation :sanitize_input
   after_create :publish_metrics
 
-  enum rating: {
+  enum :rating, {
     very_satisfied: 0,
     satisfied: 1,
     neither_satisfied_or_dissatisfied: 2,
