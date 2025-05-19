@@ -143,7 +143,7 @@ group :development, :test do
 
   # Testing framework
   gem "knapsack"
-  gem "rspec-rails", "~> 6.1.0"
+  gem "rspec-rails", "~> 8.0"
 
   # Adds support for Capybara system testing
   gem "capybara", "~> 3.40.0"

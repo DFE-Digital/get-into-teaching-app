@@ -16,7 +16,10 @@ Rails.application.configure do
   config.eager_load = ENV["CI"].present?
 
   # Configure public file server for tests with cache-control for performance.
-  config.public_file_server.headers = { "cache-control" => "public, max-age=3600" }
+  config.public_file_server.enabled = true
+  config.public_file_server.headers = {
+    "Cache-Control" => "public, max-age=#{1.hour.to_i}",
+  }
 
   # Show full error reports.
   config.consider_all_requests_local = true
@@ -39,8 +42,23 @@ Rails.application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
+  # Raise exceptions for disallowed deprecations.
+  config.active_support.disallowed_deprecation = :raise
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
+
+  # Ensure beta redirect happens before static page cache.
+  config.middleware.insert_before ActionDispatch::Static, Rack::HostRedirect, {
+    "beta-getintoteaching.education.gov.uk" => "getintoteaching.education.gov.uk",
+  }
+
+  config.x.integration_host = "get-into-teaching-app-test.test.teacherservices.cloud"
+  config.x.integration_credentials = { username: ENV["HTTP_USERNAME"], password: ENV["HTTP_PASSWORD"] }
+  config.x.mailsac_api_key = ENV["MAILSAC_API_KEY"]
+
+  # Turn off dfe analytics during tests to speed them up a smidgen
+  config.x.dfe_analytics = false
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
