@@ -50,10 +50,9 @@ This website is partially compliant with the WCAG (Web Content Accessibility Gui
 
 ### Non-accessible content
 
-The content is non-accessible for the following reasons:
+We have two videos that do not meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded). These videos are titled "What happens at a Get Into Teaching event" and "Why train to teach in England".
 
-* some of the non-verbal information presented in videos on the site is not included in audio descriptions. This fails to meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded)
-* in the welcome guide, some content is cut off the screen at 400% zoom. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow)
+We plan to add audio descriptions to these videos by September 2025. When we publish new content, we will ensure that our use of videos meets accessibility standards.
 
 ## What we're doing to improve accessibility
 
