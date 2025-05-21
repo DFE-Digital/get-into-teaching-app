@@ -8,7 +8,10 @@
       <%= link_to("See venue in Google Maps", "https://maps.google.com/?q=#{event_address(@event)}", target: "blank") %>
     </li>
   </ul>
+<% if @event.building.image_url %>
 
+
+<%= image_tag(@event.building.image_url, alt: @event.building.venue) %>
   <h2 class="heading-s">Venue accessibility features</h2>
 
 </section>
