@@ -679,13 +679,6 @@ provider_groups:
       
       
       
-    - header: "Vantage North Humber Teacher Training"
-      link: "https://www.vnhtt.org/"
-      name: "Jonathan Boden"
-      email: "jboden@smchull.org"
-      telephone: "01482 851136"
-      international_phone: "+441482851136"
-      
   Outside of the UK:
     description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
@@ -765,13 +758,6 @@ provider_groups:
       email: "ian.elliott@sunderland.ac.uk"
       telephone: "0191 515 2159"
       international_phone: "+441915152159"
-      
-    - header: "Vantage North Humber Teacher Training"
-      link: "https://www.vnhtt.org/"
-      name: "Jonathan Boden"
-      email: "jboden@smchull.org"
-      telephone: "01482 851136"
-      international_phone: "+441482851136"
       
 ---
 
