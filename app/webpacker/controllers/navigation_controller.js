@@ -55,10 +55,12 @@ export default class extends Controller {
 
       this.resizeContainer();
 
-      window.gtag('event', 'expand_menu', {
-        menuItemId: item.id,
-        menuLevel: menuLevel,
-      });
+      if (window.gtag) {
+        window.gtag('event', 'expand_menu', {
+          menuItemId: item.id,
+          menuLevel: menuLevel,
+        });
+      }
     } else if (this.toggleIconContracted(item)) {
       this.contractAndHideChildMenu(childMenu);
       if (toggleSecondaryNavigation) {
@@ -67,10 +69,12 @@ export default class extends Controller {
 
       this.resizeContainer();
 
-      window.gtag('event', 'contract_menu', {
-        menuItemId: item.id,
-        menuLevel: menuLevel,
-      });
+      if (window.gtag) {
+        window.gtag('event', 'contract_menu', {
+          menuItemId: item.id,
+          menuLevel: menuLevel,
+        });
+      }
     }
   }
 
