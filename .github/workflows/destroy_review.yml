@@ -1,4 +1,4 @@
-name: Delete Review App
+name: Destroy Review Instance
 
 on:
   pull_request:
