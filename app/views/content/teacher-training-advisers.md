@@ -8,5 +8,4 @@ content:
   - "content/explore-teaching-advisers/header"
   - "content/teacher-training-advisers/article"
   - "content/teacher-training-advisers/sign-up"
-  - "content/shared/quotes/quote_advisers_habiba"
 ---
