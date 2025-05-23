@@ -19,7 +19,7 @@ jobs:
     concurrency: deploy_review_${{ github.event.pull_request.number || github.event.inputs.pr_number }}
     runs-on: ubuntu-latest
     if: >
-      github.event.action == 'closed' && contains(github.event.pull_request.labels.*.name, 'deploy') ||
+      github.event.action == 'closed' ||
       (github.event.action == 'unlabeled' && github.event.label.name == 'deploy') || (github.event_name ==
       'workflow_dispatch')
 
