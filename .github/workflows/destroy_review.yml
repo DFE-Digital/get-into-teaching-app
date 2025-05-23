@@ -40,5 +40,5 @@ jobs:
           pr-number: ${{ github.event.pull_request.number || github.event.inputs.pr_number }}
           resource-group-name: s189t01-git-rv-rg
           storage-account-name: s189t01gitrvtfsa
-          container-name: terraform-tfstate
+          container-name: terraform-state
           tf-state-file: ${{ github.event.pull_request.number || github.event.inputs.pr_number }}.tfstate
