@@ -1,4 +1,4 @@
-module WelcomeHelper
+module MailingListHelper
   def high_commitment?(consideration_journey_stage: consideration_journey_stage_id)
     consideration_journey_stage == Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply)
   end

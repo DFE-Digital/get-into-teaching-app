@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe WelcomeHelper, type: :helper do
+RSpec.describe MailingListHelper, type: :helper do
   let(:physics_uuid) { Crm::TeachingSubject.lookup_by_key(:physics) }
 
   shared_context "with first name" do
