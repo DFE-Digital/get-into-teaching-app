@@ -27,6 +27,18 @@
               description: "Find out about teaching pupils with special educational needs and disabilities (SEND).",
               path: "/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs"
             )) %>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Teach in early years",
+              description: "Find out about teaching pupils under 5 years old in a nursery or an early years settings.",
+              path: "/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers"
+            )) %>
+          <%= render Categories::CardComponent.new(heading_tag: "h2", card:
+            OpenStruct.new(
+              title: "Teach in further education",
+              description: "Find out about teaching pupils aged 16 and over in colleges or other further years settings.",
+              path: "/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers"
+            )) %>
             </ul>
       </nav>
     </section>
