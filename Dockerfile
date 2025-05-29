@@ -1,5 +1,5 @@
 # To use or update to a ruby version, change BASE_RUBY_IMAGE
-ARG BASE_RUBY_IMAGE=ruby:3.4.1-alpine3.21
+ARG BASE_RUBY_IMAGE=ruby:3.4.3-alpine3.21
 
 FROM ${BASE_RUBY_IMAGE} AS base
 
@@ -21,10 +21,11 @@ RUN apk add --no-cache \
   "libwebp"
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
+        libffi-dev yaml-dev \
         postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
 
 # Install bundler
-RUN gem install bundler --version=2.6.3
+RUN gem install bundler --version='~> 2.6.9'
 
 # Install NPM packages removing artifacts
 COPY package.json yarn.lock ./
