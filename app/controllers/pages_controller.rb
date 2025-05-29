@@ -15,7 +15,6 @@ class PagesController < ApplicationController
   caches_page :cookies
   caches_page :show
 
-  before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && (params[:subject] || params[:degree_status]) }
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
   rescue_from InvalidPrivacyPolicy, with: :rescue_invalid_privacy_policy
 
@@ -78,14 +77,6 @@ class PagesController < ApplicationController
     render_page("funding-and-support/scholarships-and-bursaries-search")
   end
 
-  def welcome
-    render_page("welcome")
-  end
-
-  def welcome_my_journey_into_teaching
-    render_page("welcome/my-journey-into-teaching")
-  end
-
   def authenticate?
     # restrict the /values page to any user who has a login
     %w[values].include?(action_name) || super
@@ -127,15 +118,6 @@ private
 
   def funding_widget_params
     params.require(:funding_widget).permit(:subject)
-  end
-
-  def set_welcome_guide_info
-    wg_params = params.permit(:subject, :degree_status)
-
-    session["welcome_guide"] = {
-      "preferred_teaching_subject_id" => Crm::TeachingSubject.keyed_subjects[wg_params[:subject]&.to_sym],
-      "degree_status_id" => Crm::OptionSet.lookup_const(:degree_status)[wg_params[:degree_status]&.to_sym],
-    }
   end
 
   def page_layout

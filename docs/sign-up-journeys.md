@@ -20,27 +20,13 @@ graph TD;
 
   subject --> postcode["What's your UK postcode? (optional)"]
   
-  postcode --> show_welcome_guide{Show welcome guide?}
-  
-  show_welcome_guide -- Yes --> completed_with_welcome_guide[You've signed up with Welcome Guide link]
-  show_welcome_guide -- No --> offer_callback{Offer callback?}
+  postcode --> offer_callback{Offer callback?}
   
   offer_callback -- Slots Available --> completed_with_callback["You've signed up with Book a Callback link"]
   offer_callback -- No Slots Available --> completed[You've signed up] 
 
-  completed_with_welcome_guide --> welcome_guide[Welcome guide]
-
   completed_with_callback --> book_a_callback[Book a Callback]
 ```
-
-### Show welcome guide logic
-
-In order to display the welcome guide to a candidate they must:
-
-* be a final year student
-* be a graduate who in the 'how close are you to applying' question answered:
-  * It’s just an idea
-  * I’m not sure and finding out more
 
 ## Event sign up flow
 
