@@ -133,7 +133,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 5.1.1"
 
   # Static security scanner
-  gem "brakeman", "~> 7.0.0", require: false
+  gem "brakeman", "~> 7.0.2", require: false
 
   gem "drb"
 
