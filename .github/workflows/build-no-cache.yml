@@ -32,6 +32,7 @@ jobs:
           reuse-cache: false
           snyk-token: ${{ secrets.SNYK_TOKEN }}
           max-cache: true
+          docker-repository: ${{ env.DOCKER_REPOSITORY }}
 
       - name: Notify slack on failure
         uses: rtCamp/action-slack-notify@master
