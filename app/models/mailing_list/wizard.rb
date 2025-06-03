@@ -74,32 +74,7 @@ module MailingList
 
     def construct_export
       attributes = GetIntoTeachingApiClient::MailingListAddMember.attribute_map.keys
-      export = export_data.slice(*attributes.map(&:to_s))
-
-      show_welcome_guide = ApplicationController.helpers.show_welcome_guide?(
-        degree_status: export["degree_status_id"],
-        consideration_journey_stage: export["consideration_journey_stage_id"],
-      )
-
-      return export unless show_welcome_guide
-
-      wg_params = export_data
-        .slice("degree_status_id", "preferred_teaching_subject_id")
-        .symbolize_keys
-
-      export.tap { |h| h[:welcome_guide_variant] = welcome_guide_variant(**wg_params) }
-    end
-
-    def welcome_guide_variant(degree_status_id: nil, preferred_teaching_subject_id: nil)
-      %w[/email].tap { |path|
-        if preferred_teaching_subject_id
-          path << ["subject", Crm::TeachingSubject.lookup_by_uuid(preferred_teaching_subject_id).parameterize(separator: "_")]
-        end
-
-        if degree_status_id
-          path << ["degree-status", Crm::OptionSet.lookup_by_value(:degree_status, degree_status_id).downcase]
-        end
-      }.join("/")
+      export_data.slice(*attributes.map(&:to_s))
     end
   end
 end
