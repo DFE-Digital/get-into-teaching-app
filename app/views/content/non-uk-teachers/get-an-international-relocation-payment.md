@@ -16,13 +16,17 @@ backlink: "../../"
 inset_text:
   applications-open:
     text: |-
-      <p><h2>Changes have been made to when you can apply for the international relocation payment (IRP) </h2></p>
+      <p><h2>End of the international relocation payment (IRP) pilot</h2></p>
       <br>
-      <p>Applications for the first $nonuk_internationalrelocationpayment_instalment$ instalment of the IRP are now open until 30 June 2025.<p/>
+      <p>The 2-year IRP pilot which ran from 1 September 2023 to 31 May 2025 has ended and is not being extended.<p/>
       <br>
-      <p>Before you apply, you must read the guidance on this page to check you are eligible for the IRP.</p> 
+      <p>No new applications will be accepted for those starting a qualifying teaching role in England from 1 June 2025.</p> 
       <br>
-      <p>If you start your qualifying teaching role between 1 March 2024 and 31 May 2025, you must apply before the window closes on 30 June 2025. Previously, teachers who started between 1 April 2025 and 31 May 2025 would have been able to apply from September 2025.</p>
+      <p>If you have started a qualifying teaching role between 1 March 2024 and 31 May 2025, you must apply for your first instalment of IRP before the window closes on 30 June 2025.</p>
+      <br>
+      <p>Teachers who have already received their first instalment will still be able to apply for their second instalment from September 2025.</p>
+      <br>
+      <p>Before you apply, you must read the guidance on this page to check you are eligible for the IRP.</p>
       <br>
       <p><a href="https://www.claim-additional-teaching-payment.service.gov.uk/get-a-teacher-relocation-payment/landing-page">Apply for the international relocation payment</a>.</p>
 ---
@@ -64,7 +68,7 @@ You must be:
  * on a contract of employment lasting at least 1 year
 
 
-Your contract of employment must begin between 1 March 2024 and 1 May 2025.
+Your contract of employment must begin between 1 March 2024 and 31 May 2025.
 State schools are schools funded by the UK government. Secondary schools teach children aged 11 to 16 years old or 11 to 18 years old. Schools for pupils aged 16 to 18 years old only are not eligible. Schools for pupils aged 5 to 18 years old are eligible, but you must teach the secondary age range (11 to 16 years old or 11 to 18 years old).
 
 [Check the type and age range of the school](https://www.get-information-schools.service.gov.uk) where you’ll be teaching to see if it meets our eligibility criteria. You can also [find out about the different types of state school in England](https://www.gov.uk/types-of-school).
