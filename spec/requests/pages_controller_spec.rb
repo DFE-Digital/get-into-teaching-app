@@ -19,10 +19,10 @@ describe PagesController, type: :request do
       it { is_expected.to have_http_status(:success) }
     end
 
-    context "when the page is noindexed" do
-      before { get "/welcome" }
-
+    context "with a noindexed page" do
       subject { response }
+
+      before { get "/landing/advisers" }
 
       it { is_expected.not_to be_indexed }
     end
@@ -39,28 +39,6 @@ describe PagesController, type: :request do
 
       it { is_expected.to have_http_status :not_found }
       it { is_expected.to have_attributes body: "" }
-    end
-  end
-
-  describe "persisting welcome guide data in the session" do
-    subject { response }
-
-    let(:params) do
-      {
-        "preferred_teaching_subject_id" => Crm::TeachingSubject.lookup_by_key(:biology),
-        "degree_status_id" => 222_750_003,
-        "a_key_that_shouldnt_be_accepted" => "abc123",
-      }
-    end
-
-    let(:joined_params) do
-      params.map { |k, v| "#{k}=#{v}" }.join("&")
-    end
-
-    before { get %(/welcome/email/subject/biology/degree-status/first_year) }
-
-    specify "the params are saved to the session" do
-      expect(session["welcome_guide"]).to eql(params.except("a_key_that_shouldnt_be_accepted"))
     end
   end
 
