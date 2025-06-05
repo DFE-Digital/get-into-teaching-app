@@ -85,7 +85,7 @@ gem "indefinite_article"
 
 gem "connection_pool"
 
-gem "get_into_teaching_api_client_faraday", ">= 3.5.0", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client", branch: "add-creation-channel-to-tta"
+gem "get_into_teaching_api_client_faraday", ">= 3.5.2", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client", branch: "add-creation-channel-to-tta"
 # gem "get_into_teaching_api_client_faraday", ">= 3.5.1", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 
 gem "redis"
