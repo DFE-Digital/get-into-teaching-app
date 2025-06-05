@@ -40,10 +40,13 @@
  <p> When you're training, you'll work with a teacher who will help you plan and may share some of their own planning with you. Over time, with the help of other colleagues, you'll get a better feel for what makes a good lesson and build a bank of resources you can reuse to cut down on your workload.</p>
    <p>Teachers are entitled to 10% of their timetable to do planning, preparation, and assessment (PPA). Depending on the school, this could mean that you have a couple of free periods next to each other, or they could be spread across the week.</p>
  <%= render 'content/shared/quotes/quote_food_helen' %>
- <h2 class="heading--box-blue">Find out more about becoming a teacher</h2>
-<p>If teaching sounds like the career for you, find out more about <a href="/steps-to-become-a-teacher">how to become a teacher</a>.</p>
+
+ <h3>Adjustments and accessibility</h3>
+ <p>During your training, providers and schools can make adjustments if you need support because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs. This can help you to understand what you find helpful and feel more confident going into your first teaching job.</p>
+ <%= render CallsToAction::ArrowLinkComponent.new(link_target: "/train-to-be-a-teacher/accessibility-adjustments", link_text: "Find out more about adjustments to help you train to teach") %>
+
+<h2 class="heading--box-blue">Start your teaching journey</h2>
+<p>If teaching sounds like the career for you, start your teaching journey today.</p>
+<%= render CallsToAction::ArrowLinkComponent.new(link_target: "/steps-to-become-a-teacher", link_text: "Find out how to become a teacher") %>
 </section>
-<section>
-<%= render CallsToAction::AdviserComponent.new(
-    text: "An adviser with years of teaching experience can answer any questions you have about teaching and help you decide if it is the career for you. Chat by phone, text or email, as little or as often as you need.") %>
-</section>
+</div>

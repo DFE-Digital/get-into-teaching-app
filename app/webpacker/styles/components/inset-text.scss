@@ -19,7 +19,7 @@ section.inset-text {
     border-left-color: $grey-mid;
   }
 
-  h2 {
+  h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
 
     span.header {
@@ -39,8 +39,7 @@ section.inset-text {
     margin-bottom: 0;
   }
 
-  h2,
-  p {
+  h1, h2, h3, h4, h5, h6, p {
     @include font-size("small");
     margin: 0;
   }

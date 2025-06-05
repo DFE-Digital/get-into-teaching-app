@@ -3,29 +3,18 @@ title: Get international qualified teacher status (iQTS)
 subcategory: If you're outside the UK
 description: |-
  Get international qualified teacher status (iQTS) from anywhere in the world, a teaching qualification backed by England’s Department for Education (DfE).
-related_content:
-    What it's like to be a teacher: "/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher"
-    Teacher pay in England : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-cta_adviser:
-  adviser:
-    text: Talk to an adviser with years of teaching experience about iQTS and teaching in England. Chat by phone, text or email, as little or as often as you need.
 navigation: 20.50
 navigation_title: Get international qualified teacher status (iQTS)
 navigation_description: Train from anywhere in the world to get international qualified teacher status (iQTS), backed by England’s Department for Education.
 image: "static/images/content/hero-images/peer-to-peer-collaboration.jpg"
 backlink: "../"
-keywords:
-    - international
-    - QTS
-    - iQTS
-    - Qualified teacher status
 ---
 
 International qualified teacher status (iQTS) is a teaching qualification that's the equivalent of [English qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). iQTS enables you to train to teach in the country where you live and work, with no need to visit England.
 
 ## Why choose iQTS?
 
-iQTS is offered by teacher training providers in England that work with schools around the world. Alongside online tutorials and lectures, you’ll spend a minimum of 120 days gaining practical experience in a school in your country. You'll also get in-person support from a trained mentor.
+iQTS is offered by teacher training providers in England that work with schools around the world. Alongside online tutorials and lectures, you’ll spend a minimum of 24 weeks gaining practical experience in a school in your country. You'll also get in-person support from a trained mentor.
 
 iQTS allows you to train to teach pupils aged 5 to 11, or pupils 11 to 18 in the full range of [secondary school subjects taught in English schools](https://www.gov.uk/national-curriculum).
 
@@ -126,8 +115,6 @@ The following providers specialise in particular regions:
 
 * [University of Northampton](https://www.northampton.ac.uk/courses/postgraduate-certificate-in-education-international-iqts/)
 
-* [University of Portsmouth](https://www.port.ac.uk/study/short-courses-and-cpd/international-qualified-teacher-status-iqts-distance-learning)
-
 ## Assessment for iQTS
 
 At the end of your training, your iQTS provider and school will assess you to check you meet the [iQTS teachers’ standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards).
@@ -163,5 +150,3 @@ To learn more about applying for iQTS, contact your chosen training provider for
 For general advice about iQTS, email us on iqts.policy@education.gov.uk.
 
 You can also call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.
-
-$adviser$

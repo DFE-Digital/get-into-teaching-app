@@ -1,5 +1,6 @@
 class EventStepsController < ApplicationController
   include CircuitBreaker
+  include HashedEmails
 
   before_action :set_is_walk_in, only: %i[show update]
   before_action :load_event
@@ -13,6 +14,12 @@ class EventStepsController < ApplicationController
   before_action :set_completed_page_title, only: %i[completed]
 
   layout :resolve_layout
+
+  def completed
+    super
+
+    @hashed_email = wizard_store[:hashed_email] if hash_email_address?
+  end
 
 protected
 
@@ -72,7 +79,7 @@ private
   end
 
   def set_completed_page_title
-    @page_title = "Sign up complete"
+    @page_title = "#{@event.name}, sign up completed"
   end
 
   def set_is_walk_in

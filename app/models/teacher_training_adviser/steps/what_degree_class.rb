@@ -33,5 +33,9 @@ module TeacherTrainingAdviser::Steps
         answers["uk_degree_grade_id"] = self.class.options.key(uk_degree_grade_id)
       end
     end
+
+    def title
+      "degree class"
+    end
   end
 end

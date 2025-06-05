@@ -7,13 +7,13 @@ description: |-
 image: false
 backlink: /
 fullwidth: true
-navigation: 20.30
+navigation: 20.35
 navigation_title: Teaching internships
 navigation_description: Earn $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/train-to-be-a-teacher/teaching-internship-providers/listing
-
-
+promo_content:
+  - "content/shared/block-promos/adviser_mailing_school"
 provider_groups:
 <% provider_groups.each do |group_name, providers| %>
   <%= group_name %>:
@@ -28,26 +28,5 @@ provider_groups:
         email: <%= provider["email"].inspect %>
 <% end %>
 <% end %>
-
-
-keywords:
-  - teaching internship
-  - internship
-  - providers
-  - maths
-  - physics
-  - STEM
-  - paid internship
-  - TI
-  - T.I.
-  - summer internship
-  - T.I
-  - internships
-  - teaching intern
-  - intern
-  - interns
-  - teaching internship programme
-  - T.I. programme
-  - TI programme
 ---
 $applications-open$

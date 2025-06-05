@@ -109,8 +109,9 @@ describe "Instrumentation", type: :request do
       before { params[:key] = "app_metric" }
 
       it "raises an error" do
-        expect { post client_metrics_path, params: params.to_json }.to \
-          raise_error(ArgumentError, "attempted to increment non-client metric")
+        expect {
+          post client_metrics_path, params: params.to_json
+        }.to raise_exception(ArgumentError, "attempted to increment non-client metric")
       end
     end
   end

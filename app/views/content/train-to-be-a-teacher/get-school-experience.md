@@ -4,10 +4,6 @@ heading: "Get school experience"
 subcategory: Postgraduate teacher training
 description: |-
   Get school experience to explore what life is like in a primary or secondary classroom and find out if teaching is right for you.
-related_content:
-    Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    Age groups you could teach : "/life-as-a-teacher/age-groups-and-specialisms/age-groups-you-could-teach"
-    What is a Get Into Teaching event? : "/events/about-get-into-teaching-events"
 calls_to_action:
     get-school-experience:
       name: simple
@@ -17,10 +13,9 @@ calls_to_action:
           Use our service to search for and organise school experience in England.
         link_text: "Search for school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including learning more about what teaching is like.
-navigation: 20.25
+promo_content:
+  - "content/shared/block-promos/adviser_mailing_school"
+navigation: 20.30
 navigation_title: Get school experience
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
 quote:
@@ -31,7 +26,7 @@ quote:
 expander:
   non-uk-get-school-experience:
     title: get school experience
-    text: To use the Get school experience service, you'll need the right to work in the UK. This may be difficult if you have not started your training yet. However, you do not need classroom experience to train to teach in England.  
+    text: To use the Get school experience service, you will need the right to work in the UK. This may be difficult if you have not started your training yet. However, you do not need classroom experience to train to teach in England.  
 ---
 
 You can visit schools to get unpaid experience in the classroom before you start your initial teacher training (ITT).
@@ -106,5 +101,3 @@ Working in wraparound gives you experience working with children and in a school
 Once you have completed your school experience, you can decide if you want to [apply for teacher training in England](/how-to-apply-for-teacher-training/teacher-training-application) and get qualified teacher status (QTS). 
 
 [Find out more about the benefits of getting QTS](/train-to-be-a-teacher/what-is-qts).
-
-$mailinglist$

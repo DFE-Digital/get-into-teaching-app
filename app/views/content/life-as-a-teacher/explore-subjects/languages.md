@@ -11,18 +11,8 @@ description: |-
 layout: "layouts/minimal"
 colour: pastel yellow-yellow
 image: "static/images/content/hero-images/languages.jpg"
-keywords:
-  - French
-  - German
-  - Spanish
-  - languages
-  - ancient languages
-  - modern languages
-  - teaching languages
-  - teaching modern languages
-  - teacher training
-
 content:
   - "content/shared/subject-pages/header"
   - "content/life-as-a-teacher/explore-subjects/languages/article"
+  - "content/shared/block-promos/adviser_mailing_find"
 ---

@@ -1,0 +1,27 @@
+<%= render Content::LandingHeroComponent.new(
+  title: "A to Z index",
+  colour: "pastel yellow-yellow",
+) %>
+
+<section class="container">
+  <div class="row inset">
+    <% ('A'..'Z').each do |letter| %>
+      <% if @a_z_sitemap_data.key?(letter) %>
+        <%= link_to letter, "##{letter}", class: "link link--padding" %>
+      <% else %>
+        <span class="link--padding"><%= letter %></span>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="row inset">
+    <% @a_z_sitemap_data.each do |letter, pages| %>
+      <h2 id="<%= letter %>"><%= letter.upcase %></h2>
+      <ul>
+        <% pages.each do |page, metadata| %>
+          <li><%= link_to metadata[:title], page %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+</section>

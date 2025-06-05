@@ -12,7 +12,7 @@
         <div>
           <h3 class="heading-l">Call our support team</h3>
           <p>Our phone line gives you a quick and easy way to get one-off support.</p>
-          <p><a href="tel:08003892500" class="telephone link--black">0800 389 2500</a></p>
+          <p><a href="tel:08003892500" class="telephone link">0800 389 2500</a></p>
         </div>
       </div>
       <div>
@@ -28,7 +28,8 @@
           <%= render Content::InsetTextComponent.new(
             header: "Non-UK citizens:",
             text: "You can call us on <a href=\"tel:+448003892500\">+44 800 389 2500</a>, or use the free live chat service. Calls will be charged at your country's standard rate.",
-            color: "purple-white"
+            color: "purple-white",
+            heading_tag: "h3"
           ) %>
       </div>
     </div>

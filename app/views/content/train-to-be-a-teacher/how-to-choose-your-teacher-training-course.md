@@ -3,37 +3,35 @@ title: "How to choose your teacher training course"
 subcategory: Postgraduate teacher training
 description: |-
   Find out how to choose your postgraduate teacher training course based on your eligibility, the qualifications you could get, and the course provider.
-related_content: 
-    Train to teach if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree" 
-    What to expect in teacher training: "/train-to-be-a-teacher/initial-teacher-training"
-    Your teacher training application : "/how-to-apply-for-teacher-training/teacher-training-application"
-cta_adviser:
-  adviser:
-    text: Talk to an adviser with years of teaching experience about how to choose the right course for you. Chat by phone, text or email, as little or as often as you need.
-calls_to_action:
-  find:
-    name: find
+promo_content:
+  - "content/shared/block-promos/adviser_find_school"
+cta_arrow_link:
+  qualifications:
+    link_target: "/train-to-be-a-teacher/qualifications-you-need-to-teach"
+    link_text: "Find out about the qualifications you need to train to teach"
+  funding:
+    link_target: "/funding-and-support"
+    link_text: "Find out how to fund your training"
+  salaried:
+    link_target: "/funding-and-support/salaried-teacher-training"
+    link_text: "Find out more about salaried teacher training"
+  expect:
+    link_target: "/train-to-be-a-teacher/initial-teacher-training"
+    link_text: "Find out what to expect during your teacher training" 
 navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.
-keywords:
-  - becoming a teacher
-  - teacher training
-  - pgce
-  - qts
-  - Teach First
-  - Postgraduate teaching apprenticeship
 expander:
   what-you-need-to-get-onto-the-course:
     title: what you need to get onto the course
     text: |-
       <p>
-      If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>.
+      If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>.
       </p>
       <p>
-      You’ll need the right to work or study in the UK to do your teacher training in England.</p>
+      You will need the right to work or study in the UK to do your teacher training in England.</p>
       <p>
-      If you do not have the right to work in the UK, you should only apply to courses that have visa sponsorship available. You can filter by ‘visa sponsorship’ to <a href="https://find-teacher-training-courses.service.gov.uk/">find courses where visas can be sponsored</a>.
+      If you do not have the right to work in the UK, you should only apply to courses that have visa sponsorship available. You can <a href="https://find-teacher-training-courses.service.gov.uk/results?can_sponsor_visa=true&applications_open=true&order=course_name_ascending">find courses where visas can be sponsored</a>.
       </p>
       <p>
       If your application is successful, the training provider may be able to help you with applying for your visa. <a href="/non-uk-teachers/visas-for-non-uk-trainees">Find out how to apply for your visa to train to teach in England</a>.
@@ -44,12 +42,12 @@ expander:
       <p>
       If you have settled status, refugee status, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you may be eligible for a tuition fee loan, maintenance loan, bursary or scholarship.
       </p>
-      <p>You may be eligible for financial support to train to teach if <a href="/non-uk-teachers/visas-for-non-uk-trainees"> you're from Ukraine or Afghanistan and on certain visas</a>.</p>
+      <p>You may be eligible for financial support to train to teach if <a href="/non-uk-teachers/visas-for-non-uk-trainees"> you are from Ukraine or Afghanistan and on certain visas</a>.</p>
       <p>
       Other non-UK citizens may not be eligible for student finance, but may be eligible for a bursary or scholarship to train to teach languages and physics.
       </p>
-      <p>If you're in <a href="https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you're unlikely to be eligible for financial support.</p>
-      <p>If you're granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
+      <p>If you are in <a href="https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you are unlikely to be eligible for financial support.</p>
+      <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
       <p>
       Learn more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.
       </p>
@@ -74,6 +72,10 @@ expander:
       <li>the deadline for non-UK applications, as they may close earlier</li>
       </ul>
       </p>
+cta_arrow_link:
+  adjustments:
+    link_target: "/train-to-be-a-teacher/accessibility-adjustments"
+    link_text: "Find out more about adjustments to help you train"
 ---
 
 All primary and secondary postgraduate teacher training courses include time spent in school placements with some theoretical learning. 
@@ -84,7 +86,8 @@ The main differences between courses are:
 * the qualifications awarded by the course
 * if the course is fee-paying or salaried 
 * the type of course provider 
-* if the course is full-time or part-time 
+* if the course is full-time or part-time
+* the course start date 
 
 ## What you need to get onto the course
 
@@ -94,8 +97,9 @@ It's important to check the requirements for each course you apply to on the tra
 
 ### Your qualifications 
 
-You need to have a degree in any subject to be able to train to teach. But the degree grade that course providers will accept may vary. For example, most providers will accept a minimum degree grade of 2:2, but some may require you to have a 2:1. So you’ll need to check each course provider’s requirements on their course page. [Find out about the qualifications you need to teach](/train-to-be-a-teacher/qualifications-you-need-to-teach).
+You need to have a degree in any subject to be able to train to teach. But the degree grade that course providers will accept may vary. For example, most providers will accept a minimum degree grade of 2:2, but some may require you to have a 2:1. So you’ll need to check each course provider’s requirements on their course page.
 
+$qualifications$
 $what-you-need-to-get-onto-the-course$
 
 ## The qualifications awarded by the course
@@ -114,18 +118,16 @@ Most teacher training courses are fee-paying. This means you have to pay tuition
 
 There are ways to fund your training, for example, through tuition fee and maintenance loans. You may also be eligible for a bursary or scholarship.
 
-You can [find out about the different ways to fund your training](/funding-and-support).
-
+$funding$
 $fee-funded-teacher-training$
 
 ### Salaried teacher training
 
 Some courses are salaried, which means you’ll receive an unqualified teacher’s salary while you train. Some salaried teacher training courses may also come with fees. Check with individual providers for more information.
 
-Places on salaried courses are limited and very competitive. 
+Places on salaried courses are limited and very competitive. It’s usually wise to apply for fee-paying courses as well to increase your chances of getting a place on a course.
 
-You can [find out what you’ll need to get on a salaried teacher training course](/funding-and-support/salaried-teacher-training). 
-
+$salaried$
 $salaried-teacher-training$
 
 ## The type of course provider 
@@ -155,7 +157,14 @@ There are usually more full-time courses available than part-time.
 
 Postgraduate teacher training usually takes 9 months full-time, or 18 to 24 months part-time.
 
-[Find out what to expect on your teacher training](/train-to-be-a-teacher/initial-teacher-training).
+## Adjustments and accessibility
 
-$find$
-$adviser$
+Course providers can make adjustments if you need support because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs.
+
+$adjustments$
+
+## Course start date
+
+Most teacher training courses start in September, with a small number of courses starting on other dates throughout the year.
+
+$expect$

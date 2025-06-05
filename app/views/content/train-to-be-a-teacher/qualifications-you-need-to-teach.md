@@ -7,20 +7,12 @@ description: |-
 navigation: 20.20
 navigation_title: Qualifications you need to be a teacher
 navigation_description: Check what qualifications you need to teach in primary, secondary and special schools in England.
-related_content:
-    Teacher pay : "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-    Train to be a teacher if you have a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
-    Teacher training : "/train-to-be-a-teacher/initial-teacher-training"
-calls_to_action:
-  find:
-    name: find
-cta_mailinglist:
-  mailinglist:
-    text: Get helpful guidance and support on getting into teaching, including how to get the qualifications you need.
+promo_content:
+  - "content/shared/block-promos/mailing_adviser_routes"
 expander:
   check-your-qualifications:
     title: check your qualifications
-    text: If you have qualifications from outside the UK, you’ll need to show that they meet the standards set for teacher training in England.
+    text: If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England.
     link_title: You can get help comparing English and international qualifications.
     link_url: /non-uk-teachers/non-uk-qualifications
   bursaries:
@@ -87,6 +79,3 @@ You can do a subject knowledge enhancement course before or sometimes during you
 * you completed your bachelor's degree more than 5 years ago
 
 [Find out more about subject knowledge enhancement courses](/how-to-apply-for-teacher-training/subject-knowledge-enhancement).
-
-$find$
-$mailinglist$

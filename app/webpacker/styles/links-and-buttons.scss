@@ -22,7 +22,7 @@
     color: $white;
     background-color: $black;
     z-index: 100;
-    box-shadow: 0 2px $pink;
+    box-shadow: 0 5px $pink;
     outline: 4px solid transparent;
   }
 }
@@ -68,6 +68,16 @@
     &::after {
       border-color: $white;
     }
+  }
+}
+
+.link--padding {
+  @include mq($from: mobile) {
+    padding: 0.3rem;
+  }
+  @include mq($until: mobile) {
+    margin: 0.6rem;
+    line-height: 2;
   }
 }
 
@@ -319,7 +329,8 @@ body a.govuk-back-link {
 }
 
 .survey-button {
-  @include button($bg: $blue-dark);
+  @include button($bg: $grey, $fg: $black);
+  box-shadow: 0 2px 0 $grey-mid;
   margin-bottom: .5rem;
 
   @include mq($from: tablet) {

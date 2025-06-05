@@ -20,25 +20,19 @@ module Header
 
   private
 
-    def corresponding_mode(mode)
-      mode == :mobile ? :desktop : :mobile
-    end
-
-    def nav_link(resource, mode, underline_on_hover: true)
+    def nav_link(resource, mode, underline_on_hover: true, role: "menuitem")
       title = resource.title
       path = resource.path
       li_id = "#{path.parameterize}-#{mode}"
-      corresponding_li_id = "#{path.parameterize}-#{corresponding_mode(mode)}"
       child_menu_id = category_list_id(resource, mode)
-      corresponding_child_menu_id = category_list_id(resource, corresponding_mode(mode))
-      child_menu_ids = [child_menu_id, corresponding_child_menu_id].join(" ")
+
       li_css = ("active" if uri_is_root?(path) || first_uri_segment_matches_link?(path)).to_s
       show_dropdown = resource.children?
       link_css = "menu-link link link--black link--no-underline #{underline_on_hover ? 'link--underline-on-hover' : ''}"
-      aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_ids } : {}
-      tag.li id: li_id, class: li_css, data: { "corresponding-id": corresponding_li_id, "child-menu-id": child_menu_id, "corresponding-child-menu-id": corresponding_child_menu_id, "direct-link": !show_dropdown, "toggle-secondary-navigation": show_dropdown } do
+      aria_attributes = show_dropdown ? { expanded: false, controls: child_menu_id } : {}
+      tag.li id: li_id, class: li_css, data: { "child-menu-id": child_menu_id, "direct-link": !show_dropdown } do
         safe_join([
-          link_to(path, class: link_css, aria: aria_attributes, data: { action: "keydown.enter->navigation#handleNavMenuClick keydown.tab->navigation#handleMenuTab" }) do
+          link_to(path, class: link_css, role: role, aria: aria_attributes, data: { action: "keydown.enter->navigation#handleNavMenuClick" }) do
             safe_join([
               tag.span(title, class: "menu-title"),
               contracted_icon(visible: show_dropdown),
@@ -47,26 +41,28 @@ module Header
           if mode == :mobile && resource.children?
             [
               row_break,
-              category_list(resource, mode, css_class: "category-links-list hidden-menu hidden-desktop"),
+              category_list(resource, mode, css_class: "category-links-list hidden-menu"),
             ]
           end,
         ])
       end
     end
 
-    def category_list(resource, mode, css_class:)
-      tag.ol(class: css_class, id: category_list_id(resource, mode)) do
-        safe_join(
-          [
-            resource.children_without_subcategory.map do |child_resource|
-              nav_link(child_resource, mode)
-            end,
-            resource.subcategories.map do |category|
-              category_link(category, resource, mode)
-            end,
-            view_all_link(resource, mode),
-          ],
-        )
+    def category_list(resource, mode, css_class:, role: "menu")
+      tag.div(class: "desktop-level2-wrapper") do
+        tag.ol(class: css_class, id: category_list_id(resource, mode), role: role) do
+          safe_join(
+            [
+              resource.children_without_subcategory.map do |child_resource|
+                nav_link(child_resource, mode)
+              end,
+              resource.subcategories.map do |category|
+                category_link(category, resource, mode)
+              end,
+              view_all_link(resource, mode),
+            ],
+          )
+        end
       end
     end
 
@@ -74,20 +70,18 @@ module Header
       "#{resource.path.parameterize}-categories-#{mode}"
     end
 
-    def category_link(subcategory, resource, mode)
+    def category_link(subcategory, resource, mode, role: "menuitem")
       title = subcategory
       li_id = "#{resource.path.parameterize}-#{title.parameterize}-#{mode}"
-      corresponding_li_id = "#{resource.path.parameterize}-#{title.parameterize}-#{corresponding_mode(mode)}"
       child_menu_id = page_list_id(resource, subcategory, mode)
-      corresponding_child_menu_id = page_list_id(resource, subcategory, corresponding_mode(mode))
-      child_menu_ids = [child_menu_id, corresponding_child_menu_id].join(" ")
+
       li_css = ("active" if subcategory == front_matter["subcategory"]).to_s
       link_css = "menu-link link link--black link--no-underline link--underline-on-hover btn-as-link"
-      aria_attributes = { expanded: false, controls: child_menu_ids }
-      tag.li id: li_id, class: li_css, data: { "corresponding-id": corresponding_li_id, "child-menu-id": child_menu_id, "corresponding-child-menu-id": corresponding_child_menu_id, "direct-link": false } do
+      aria_attributes = { expanded: false, controls: child_menu_id }
+      tag.li id: li_id, class: li_css, data: { "child-menu-id": child_menu_id, "direct-link": false } do
         safe_join(
           [
-            tag.button(type: "button", class: link_css, aria: aria_attributes, data: { action: "keydown.enter->navigation#handleNavMenuClick keydown.tab->navigation#handleMenuTab" }) do
+            tag.button(type: "button", class: link_css, role: role, aria: aria_attributes, data: { action: "keydown.enter->navigation#handleNavMenuClick" }) do
               safe_join(
                 [
                   tag.span(title, class: "menu-title"),
@@ -97,7 +91,7 @@ module Header
             end,
             row_break,
             if mode == :mobile
-              page_list(resource, subcategory, mode, css_class: "page-links-list hidden-menu hidden-desktop")
+              page_list(resource, subcategory, mode, css_class: "page-links-list hidden-menu")
             end,
           ],
         )
@@ -108,29 +102,30 @@ module Header
       "#{resource.path.parameterize}-#{subcategory.parameterize}-pages-#{mode}"
     end
 
-    def page_list(resource, subcategory, mode, css_class:)
-      tag.ol(class: css_class, id: page_list_id(resource, subcategory, mode)) do
-        safe_join(
-          [
-            resource.children_in_subcategory(subcategory).map do |child_resource|
-              nav_link(child_resource, mode)
-            end,
-          ],
-        )
+    def page_list(resource, subcategory, mode, css_class:, role: "menu")
+      tag.div(class: "desktop-level3-wrapper") do
+        tag.ol(class: css_class, role: role, id: page_list_id(resource, subcategory, mode)) do
+          safe_join(
+            [
+              resource.children_in_subcategory(subcategory).map do |child_resource|
+                nav_link(child_resource, mode)
+              end,
+            ],
+          )
+        end
       end
     end
 
-    def view_all_link(resource, mode)
+    def view_all_link(resource, mode, role: "menuitem")
       title = "View all in #{resource.title}"
       path = resource.path
       li_id = "menu-view-all-#{path.parameterize}-#{mode}"
-      corresponding_li_id = "menu-view-all-#{path.parameterize}-#{corresponding_mode(mode)}"
       li_css = "view-all #{'active' if uri_is_root?(path)}"
       link_css = "menu-link link link--black"
 
-      tag.li class: li_css, id: li_id, data: { "corresponding-id": corresponding_li_id, "direct-link": true } do
+      tag.li class: li_css, id: li_id, data: { "direct-link": true } do
         safe_join([
-          link_to(path, class: link_css, data: { action: "keydown.enter->navigation#handleNavMenuClick keydown.tab->navigation#handleMenuTab" }) do
+          link_to(path, class: link_css, role: role, data: { action: "keydown.enter->navigation#handleNavMenuClick" }) do
             tag.span(title, class: "menu-title")
           end,
         ])

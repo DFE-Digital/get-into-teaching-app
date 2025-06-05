@@ -1,5 +1,3 @@
-<% @page_title = "Sign up complete" %>
-
 <section class="registration__teacher-training-adviser" data-sub-channel-id="<%= session.dig("sign_up", "sub_channel_id") %>">
 
   <% if @returner %>
@@ -24,7 +22,7 @@
 
   <ul>
     <li>catching up on changes in teaching</li>
-    <li>using the early career framework resources</li>
+    <li>using the initial teacher training early career framework resources</li>
     <li>finding a teaching role at the right school</li>
     <li>applying for a teaching job</li>
   </ul>
@@ -107,3 +105,4 @@
 
   <% end %>
 </section>
+<%= tag.div id: "hashed-email", class: "hidden", data: { id: "hashed-email", value: @hashed_email } if @hashed_email %>

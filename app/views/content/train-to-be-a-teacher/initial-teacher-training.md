@@ -7,13 +7,18 @@ description: |-
 navigation: 20.15
 navigation_title: What to expect in teacher training
 navigation_description: Find out what your teacher training will be like, what you'll learn, and what classroom experience you'll get.
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including top tips on writing a successful application.
-related_content:
-    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    Training and support for early career teachers : "/life-as-a-teacher/teaching-as-a-career/early-career-teachers"
-    How to apply : "/how-to-apply-for-teacher-training"
+promo_content:
+  - "content/shared/block-promos/adviser_find_school"
+cta_arrow_link:
+  find:
+    link_target: "https://find-teacher-training-courses.service.gov.uk/"
+    link_text: "Find postgraduate teacher training courses"
+  placements:
+    link_target: "/train-to-be-a-teacher/school-placements"
+    link_text: "Find out more about school placements"
+  adjustments:
+    link_target: "/train-to-be-a-teacher/accessibility-adjustments"
+    link_text: "Find out more about adjustments to help you train"
 ---
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
@@ -26,13 +31,13 @@ You'll spend most of your time in school placements with some time dedicated to 
 * tasks and assignments
 * engagement with academic or professional research
 
-The theoretical part of your training might be delivered by a university or in a school. Some training courses will be all school-based, but this does not mean that you’ll spend all your time teaching.
+The theoretical part of your training might be delivered by a university or in a school. Some training courses will be all school-based, but this does not mean that you’ll spend all your time teaching. Get advice on [how to choose your teacher training course](/train-to-be-a-teacher/how-to-choose-your-teacher-training-course).
 
 You’ll also have a mentor to support you in your school placements and learning. They can provide feedback and guidance.
 
-There are full-time and part-time teacher training courses available.
+There are full-time and part-time teacher training courses available. Most postgraduate courses start in September, with a small number of courses starting on other dates throughout the year.
 
-[Find postgraduate teacher training courses](https://find-teacher-training-courses.service.gov.uk/).
+$find$
 
 ## What you’ll learn in initial teacher training
 
@@ -61,7 +66,7 @@ environment
 
 School placements enable you to get experience in the classroom. They're an essential and exciting part of your training, and help you learn the skills you need to be a teacher.
 
-[Find out more about school placements](/train-to-be-a-teacher/school-placements).  
+$placements$  
 
 ## Your teacher training timetable
 
@@ -75,4 +80,8 @@ There are two types of assessments you’ll have as part of your training - form
 
 You might be assessed through written assignments, lesson observations, or by a portfolio of evidence showing how you’re meeting the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). Assessments vary by provider and the qualifications you’re working towards.
 
-$mailinglist$
+## Adjustments and accessibility
+
+Providers can make adjustments if you need support because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs.
+
+$adjustments$

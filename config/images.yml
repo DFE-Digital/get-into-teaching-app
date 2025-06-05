@@ -274,6 +274,18 @@
 "static/images/route-hero.png":
   alt: ""
 
+"static/images/content/hero-images/teacher-primary.jpg":
+  alt: "A teacher helping a student with their work"
+  variants:
+    - "static/images/content/hero-images/teacher-primary--mobile.jpg"
+    - "static/images/content/hero-images/teacher-primary--tablet.jpg"
+
+"static/images/content/hero-images/celebration.jpg":
+  alt: "An image showing a celebration banner with the hashtag Got Into Teaching"
+  variants:
+    - "static/images/content/hero-images/celebration--mobile.jpg"
+    - "static/images/content/hero-images/celeration--tablet.jpg"
+
 # case studies
 "static/images/content/case-studies/abigail.jpg":
   alt: "Maths teacher Abigail in front of a maths display board."
@@ -331,9 +343,6 @@
   alt: ""
 
 # landing
-"static/images/content/landing/train-to-teach.jpg":
-  # A geography teacher laughing with students in a classroom.
-  alt: ""
 "static/images/content/landing/how-to-fund-your-teacher-training-2.jpg":
   # Students learn about chemical reactions with a chemistry teacher.
   alt: ""

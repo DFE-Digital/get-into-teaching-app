@@ -1,12 +1,10 @@
-<% @page_title = "You told us you have an equivalent degree and live in the United Kingdom" %>
-
 <%= f.govuk_fieldset legend: { text: "You told us you have an equivalent degree and live in the United Kingdom", tag: "h1" } do %>
 
 <% if f.object.class.callback_booking_quotas.any? %>
   <p>You need to book a callback with us to check your degree. We will contact you once your call is booked.</p>
   <p>You must have the details of the qualifications you gained outside the UK when we contact you.</p>
 
-  <%= f.govuk_phone_field :address_telephone, width: 20 %>
+  <%= f.govuk_phone_field :address_telephone, autocomplete: "tel", width: 20 %>
 
   <%= f.govuk_select :phone_call_scheduled_at, callback_options(f.object.class.callback_booking_quotas) %>
 

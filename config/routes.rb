@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get "/403", to: "errors#forbidden"
   get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
   get "/sitemap.xml", to: "sitemap#show", via: :all
+  get "/sitemap", to: "sitemap#show", via: :all
   get "/check", to: proc { [200, {}, %w[OK]] }
 
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
@@ -77,16 +78,6 @@ Rails.application.routes.draw do
   get "/session-expired", to: "pages#session_expired", as: :session_expired
   get "/browse", to: "pages#browse", as: :browse
   get "/values", to: "pages#values", as: :values
-
-  get "/welcome", to: "pages#welcome", as: :welcome_guide
-  get "/welcome/my-journey-into-teaching", to: "pages#welcome_my_journey_into_teaching", as: :welcome_my_journey_into_teaching
-
-  # param paths for welcome guide customisation
-  get "/welcome/email/subject/:subject", to: "pages#welcome"
-  get "/welcome/email/degree-status/:degree_status", to: "pages#welcome"
-  get "/welcome/email/subject/:subject/degree-status/:degree_status", to: "pages#welcome"
-
-  resource :search, only: %i[show]
 
   resource :chat, only: %i[show]
 

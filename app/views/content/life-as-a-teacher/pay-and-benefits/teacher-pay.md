@@ -4,14 +4,8 @@ heading: "Teacher pay"
 description: |-
   All qualified teachers will have a starting salary of at least $salaries_starting_min$ (or higher in London). Find out about teacher pay ranges and more benefits of teaching.
 backlink: "../../"
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including learning more about the benefits of a career in teaching.
-related_content:
-    How to become a teacher : "/steps-to-become-a-teacher"
-    Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
-    Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
-    Ben's favourite things about teaching : "/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching"
+promo_content:
+  - "content/shared/block-promos/mailing_adviser_routes"
 cta_arrow_link:
   careers:
     link_target: "/life-as-a-teacher/teaching-as-a-career/career-progression"
@@ -19,39 +13,9 @@ cta_arrow_link:
   benefits:
     link_target: "/life-as-a-teacher/why-teach/why-become-a-teacher"
     link_text: "Explore why people choose to become a teacher"
-keywords:
-  - Salary
-  - Salaries
-  - Band
-  - Pay
-  - Pay scale
-  - Scale
-  - Teacher Salary
-  - Teacher Salaries
-  - Leading Practitioner
-  - Headteacher
-  - Progression
-  - Unqualified Teacher
-  - Teaching and learning responsibility
-  - TLR
-  - Holiday
-  - Annual Leave
-  - Pension
-  - Additional
-  - Responsibility
-  - Responsibilities
-  - Career
-  - Benefits
-  - Earnings
-  - Leadership
-  - Early Career Framework
-  - Support
-  - Training
-  - ECF
-  - Teaching
-  - Teacher training
-  - How to become a teacher
-  - Teacher training courses
+  steps:
+    link_target: "/steps-to-become-a-teacher"
+    link_text: "Find out how to become a teacher"
 ---
 If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on.
 
@@ -59,7 +23,7 @@ The pay ranges below apply to maintained schools (schools funded by local author
 
 Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges.
 
-Figures apply from $salaries_date_appliesfrom$.
+The amounts on this page apply from $salaries_date_appliesfrom$.
 
 ## Primary and secondary teacher salary
 
@@ -89,6 +53,8 @@ These additional payments are called teaching and learning responsibility (TLR) 
 Depending on your responsibilities, you could earn up to an extra $salaries_tlr_max$. Your school will determine how much you receive.
 
 Teachers who [take on a special educational needs and disabilities (SEND) role](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs) may also receive additional payments. These are known as SEN allowances.
+
+$steps$
 
 ## Career progression
 
@@ -164,5 +130,3 @@ You also get other insurance benefits too. Find out more about the [teachers' pe
 In additional to the practical rewards of teaching, there's personal benefits too. Teaching is a career that allows you to make a difference, explore your creativity, and apply skills from your degree or previous career.
 
 $benefits$
-
-$mailinglist$

@@ -34,6 +34,10 @@ module TeacherTrainingAdviser::Steps
       end
     end
 
+    def title
+      "country"
+    end
+
   private
 
     def country_name

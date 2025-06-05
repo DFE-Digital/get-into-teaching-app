@@ -4,20 +4,18 @@ heading: "Train to teach if you do not have a degree"
 subcategory: Other routes into teaching
 description: |-
   Explore how you can get into teaching without a degree by taking an undergraduate course to gain qualified teacher status (QTS) alongside a bachelor's degree.
-related_content:
-    Explore life as a teacher : "/life-as-a-teacher"
-    Funding your training : "/funding-and-support"
-    Teach in further education without a degree : "https://www.teachinfurthereducation.education.gov.uk/"
-calls_to_action:
+cta_arrow_link:
+  qualifications:
+    link_target: "/train-to-be-a-teacher/qualifications-you-need-to-teach"
+    link_text: "Find out more about the qualifications you need to be a teacher in England"
+  tda:
+    link_target: "/train-to-be-a-teacher/teacher-degree-apprenticeships"
+    link_text: "Find out more about teacher degree apprenticeships (TDAs)"
   find:
-    name: find
-    arguments:
-      title: "Find your undergraduate degree course"
-      link_target: "https://digital.ucas.com/search"
-      link_text: "Find undergraduate courses on the UCAS website"
-cta_mailinglist:
-  mailinglist:
-    text: Get free guidance and support on getting into teaching, including learning more about what teaching is like.
+    link_target: "https://digital.ucas.com/search"
+    link_text: "Find undergraduate courses on the UCAS website"
+promo_content:
+  - "content/shared/block-promos/findundergrad_mailing_routes"
 navigation: 20.35
 navigation_title: If you do not have a degree
 navigation_description: You need a bachelor's degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about bachelor's degree courses.
@@ -30,7 +28,7 @@ expander:
       </p>  
   teacher-degree-apprenticeships:
     title: teacher degree apprenticeships
-    text: "You can normally only do a teacher degree apprenticeship (TDA) if you've been a resident in the UK for the last 3 years or more. There are some exceptions to this. For example, if you've applied to the Afghan or Ukraine resettlement schemes. Speak to providers for more information."    
+    text: "You can normally only do a teacher degree apprenticeship (TDA) if you have been a resident in the UK for the last 3 years or more. There are some exceptions to this. For example, if you have applied to the Afghan or Ukraine resettlement schemes. Speak to providers for more information."    
 ---
 
 ## Bachelor's degree courses
@@ -51,8 +49,7 @@ Qualifications vary depending on the course. For example, you could get QTS with
 - Bachelor of Education (BEd)
 - Bachelor of Science (BSc)
 
-[Find out more about the qualifications you need to be a teacher in England](/train-to-be-a-teacher/qualifications-you-need-to-teach).
-
+$qualifications$
 $international$
 
 ## Bursaries for undergraduate degrees
@@ -70,14 +67,15 @@ You may be eligible for a $bursaries_veteran_total$ tax-free undergraduate bursa
 * training to teach secondary biology, chemistry, computing, languages, maths, or physics
 * doing an undergraduate degree leading to QTS in England
 
-[Find out more about how to get support training to teach if you're a veteran](/funding-and-support/if-youre-a-veteran).
+Find out more about [how to get support training to teach if you're a veteran](/funding-and-support/if-youre-a-veteran).
 
 $find$
 
 ## Teacher degree apprenticeships (TDAs)
 If you do not have a degree you may be eligible to apply for a TDA. This new course will allow you work in a school and earn a salary while getting a bachelor's degree and QTS. So you will not have to pay tuition fees. 
 
-Find out more about [teacher degree apprenticeships (TDAs)](/train-to-be-a-teacher/teacher-degree-apprenticeships).
-
+$tda$
 $teacher-degree-apprenticeships$
-$mailinglist$
+
+## Other routes into teaching
+You do not need a degree and QTS to [teach in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers) or to [teach in early years](/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers). So if you want to become a teacher but are not able to get a degree, you can explore these options.

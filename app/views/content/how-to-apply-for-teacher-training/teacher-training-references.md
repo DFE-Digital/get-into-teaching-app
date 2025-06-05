@@ -3,40 +3,11 @@ title: Teacher training references
 heading: Your teacher training references
 description: |-
   Find out which teacher training references you need to provide when you apply to train to be a teacher and what they'll need to include.
-related_content:
-    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    Prepare for your teacher training interview: "/how-to-apply-for-teacher-training/teacher-training-interview"
 navigation: 30.15
 navigation_title: Teacher training references
 navigation_description: Find out which teacher training references you need to provide and what they should include.
-keywords:
-  - teacher training references
-  - adviser
-  - advisor
-  - ITT
-  - Initial Teacher Training
-  - QTS
-  - Qualified Teacher Status
-  - Teacher Training Adviser
-  - application
-  - apply
-  - how to apply
-  - applying for teacher training
-  - referees
-  - references
-  - process
-  - personal statement
-  - when to apply
-  - interviews
-  - offers
-  - teacher training application
-calls_to_action:
-    apply:
-      name: apply
-cta_adviser:
-  adviser:
-    text: Maximise your chances of submitting a successful application with the support of a dedicated adviser with years of teaching experience. Chat by phone, text or email, as little or as often as you need.
-
+promo_content:
+  - "content/shared/block-promos/adviser_apply"
 ---
 
 Teacher training providers need to check that you’re a suitable candidate for teacher training. One way that they do this is by asking you to provide references when you apply. 
@@ -79,6 +50,3 @@ When you apply for teacher training, you’ll need to provide your reference det
 When you accept your place on a course, you can change your reference details, or even change your reference altogether. 
 
 Make sure you prepare your references when you accept a place on a course. If you apply late in the year, there can be a quick turnaround between your place being accepted and your references being contacted, so it’s good to make sure they’re ready.
-
-$apply$
-$adviser$

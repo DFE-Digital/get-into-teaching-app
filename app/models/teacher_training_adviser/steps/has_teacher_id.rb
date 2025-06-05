@@ -16,5 +16,9 @@ module TeacherTrainingAdviser::Steps
 
       !returning_teacher || teacher_id_prefilled
     end
+
+    def title
+      "have teacher reference number"
+    end
   end
 end

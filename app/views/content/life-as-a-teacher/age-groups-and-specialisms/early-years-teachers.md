@@ -2,25 +2,12 @@
 title: "Become an early years teacher"
 image: false
 backlink: "../"
-keywords:
- - EYITT
- - Early
- - Years
- - Early Years
- - EYTS
- - Early Years Teacher Status
- - Under 5
- - EY
- - E.Y.
- - nursery
- - preschool
- - year one
 description: |-
   Find out how to become an early years teacher. Discover the qualifications you need, the different early years teacher training routes and the cost.
 expander:
   international-content:
     title: applying for early years training
-    text: If you're a non-UK citizen, you can apply for early years initial teacher training if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2025-to-2026-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
+    text: If you are a non-UK citizen, you can apply for early years initial teacher training if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2025-to-2026-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
 calls_to_action:
   EY-graduate:
     name: feature_table

@@ -30,11 +30,7 @@ export default class extends Controller {
     const directLink = item.dataset.directLink === 'true';
     if (directLink) return;
 
-    const correspondingItem = this.getTargetItem(item.dataset.correspondingId);
     const childMenu = this.getTargetItem(item.dataset.childMenuId);
-    const correspondingChildMenu = this.getTargetItem(
-      item.dataset.correspondingChildMenuId,
-    );
     const toggleSecondaryNavigation = item.dataset.toggleSecondaryNavigation;
 
     const containerClassList = item.closest('ol').classList;
@@ -51,89 +47,41 @@ export default class extends Controller {
     event.stopPropagation();
 
     if (this.toggleIconExpanded(item)) {
-      this.toggleIconExpanded(correspondingItem);
       this.showMenu(childMenu);
-      this.showMenu(correspondingChildMenu);
-      this.contractAndHideSiblingMenus(item, correspondingItem);
+      this.contractAndHideSiblingMenus(item);
       if (toggleSecondaryNavigation) {
         this.expandSecondaryNavigation();
       }
-      window.gtag('event', 'expand_menu', {
-        menuItemId: item.id,
-        menuLevel: menuLevel,
-      });
+
+      this.resizeContainer();
+
+      if (window.gtag) {
+        window.gtag('event', 'expand_menu', {
+          menuItemId: item.id,
+          menuLevel: menuLevel,
+        });
+      }
     } else if (this.toggleIconContracted(item)) {
-      this.toggleIconContracted(correspondingItem);
       this.contractAndHideChildMenu(childMenu);
-      this.contractAndHideChildMenu(correspondingChildMenu);
       if (toggleSecondaryNavigation) {
         this.contractSecondaryNavigation();
       }
-      window.gtag('event', 'contract_menu', {
-        menuItemId: item.id,
-        menuLevel: menuLevel,
-      });
+
+      this.resizeContainer();
+
+      if (window.gtag) {
+        window.gtag('event', 'contract_menu', {
+          menuItemId: item.id,
+          menuLevel: menuLevel,
+        });
+      }
     }
-  }
-
-  handleMenuTab(event) {
-    const item = event.target.closest('li');
-    if (!item) return false;
-
-    const nextItem = this.getNext(item);
-    if (!nextItem) {
-      // When there is no next item set the focus to below the dropdown menu
-      document.querySelector('.tab-after-nav-menu').focus();
-      return false;
-    }
-
-    event.preventDefault();
-    nextItem.querySelector('.menu-link').focus();
-
-    const correspondingNextItem = this.getTargetItem(
-      nextItem.dataset.correspondingId,
-    );
-    if (!correspondingNextItem) return false;
-    correspondingNextItem.querySelector('.menu-link').focus();
-  }
-
-  getNext(item) {
-    if (!item) return;
-
-    if (item.classList.contains('selected') && item.dataset.childMenuId) {
-      const nextChild = this.getTargetItem(
-        item.dataset.childMenuId,
-      ).querySelector('li');
-      if (nextChild) return nextChild;
-    }
-
-    const nextSibling = item.nextElementSibling;
-    if (nextSibling) return nextSibling;
-
-    // If the current item is from the primary nav list and there is no sibling
-    // return null and let the handler move the focus to below the nav menu
-    const parentList = item.closest('ol');
-    if (parentList.classList.contains('primary')) return;
-
-    const nextCategoryItem = this.desktopTarget.querySelector(
-      'div.category-links > ol > li.selected',
-    )?.nextElementSibling;
-    const nextPrimaryItem =
-      this.primaryTarget.querySelector('li.selected')?.nextElementSibling;
-
-    if (parentList.classList.contains('page-links-list'))
-      return nextCategoryItem || nextPrimaryItem;
-
-    if (parentList.classList.contains('category-links-list'))
-      return nextPrimaryItem;
   }
 
   getTarget(id) {
     if (!id) return;
 
-    if (id.endsWith('-desktop')) {
-      return this.desktopTarget;
-    } else if (id.endsWith('-mobile')) {
+    if (id.endsWith('-mobile')) {
       return this.navTarget;
     }
   }
@@ -191,6 +139,29 @@ export default class extends Controller {
     return this.toggleMenuVisibility(menu, true);
   }
 
+  resizeContainer() {
+    const dropdownBackground = document.getElementById('dropdown-background');
+
+    const categoriesHeight =
+      document
+        .querySelector('.category-links-list:not(.hidden-menu)')
+        ?.parentElement.getBoundingClientRect().height || 0;
+
+    const pagesHeight =
+      document
+        .querySelector('.page-links-list:not(.hidden-menu)')
+        ?.parentElement.getBoundingClientRect().height || 0;
+
+    const maxHeight = Math.max(categoriesHeight, pagesHeight);
+
+    if (maxHeight) {
+      // Update the dropdown-background's height based on the height of the largest menu
+      dropdownBackground.style.height = maxHeight + 'px';
+    } else {
+      dropdownBackground.style.height = '0px';
+    }
+  }
+
   expandSecondaryNavigation() {
     this.desktopTarget.classList.add('expanded');
   }
@@ -204,13 +175,7 @@ export default class extends Controller {
     [].forEach.call(item.closest('ol').children, function (sibling) {
       if (sibling !== item) {
         if (self.toggleIconContracted(sibling)) {
-          const correspondingItem = self.getTargetItem(
-            sibling.dataset.correspondingId,
-          );
-
-          self.toggleIconContracted(correspondingItem);
           self.contractAndHideChildItem(sibling);
-          self.contractAndHideChildItem(correspondingItem);
         }
       }
     });
@@ -220,11 +185,7 @@ export default class extends Controller {
     if (!item) return;
 
     const childMenu = this.getTargetItem(item.dataset.childMenuId);
-    const correspondingChildMenu = this.getTargetItem(
-      item.dataset.correspondingChildMenuId,
-    );
     this.contractAndHideChildMenu(childMenu);
-    this.contractAndHideChildMenu(correspondingChildMenu);
   }
 
   contractAndHideChildMenu(menu) {

@@ -7,13 +7,13 @@ description: |-
 image: false
 backlink: /
 fullwidth: true
-navigation: 20.30
+navigation: 20.35
 navigation_title: Teaching internships
 navigation_description: Earn $teachinginternship_weekly$ per week and find out what it is really like in the classroom with a teaching internship.
 content:
   - content/train-to-be-a-teacher/teaching-internship-providers/listing
-
-
+promo_content:
+  - "content/shared/block-promos/adviser_mailing_school"
 provider_groups:
   East Midlands:
     providers:
@@ -26,11 +26,18 @@ provider_groups:
         email: "itt@bluecoat.uk.com"
       - header: "Creative Education Trust"
         link: "https://www.creativeeducationtrust.org.uk/internship"
-        applications: "Open"
+        applications: "Closed"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "North Northamptonshire, Nottingham, West Northamptonshire"
         name: "Katie Irving"
         email: "teachertraining@creativeeducationaltrust.org.uk"
+      - header: "Diverse Academies Trust"
+        link: "https://www.diverseassociation.org.uk/get-into-teaching/paid-teaching-internships/"
+        applications: "Open"
+        subjects: "chemistry, computing, maths, physics, languages"
+        areas: "Bassetlaw, Lincolnshire, Nottingham, Nottinghamshire"
+        name: "Richard Macpherson"
+        email: "interns@diverse-ac.org.uk"
       - header: "Learners First Schools Partnership (Wickersley School & Sports College)"
         link: "https://www.learnersfirst.net/internships/"
         applications: "Open"
@@ -66,13 +73,6 @@ provider_groups:
         areas: "Derbyshire, Nottingham, Nottinghamshire"
         name: "Amy Langton"
         email: "alangton@spencertrust.org.uk"
-      - header: "Tuxford Academy"
-        link: "https://www.diverseassociation.org.uk/get-into-teaching/paid-teaching-internships/"
-        applications: "Open"
-        subjects: "chemistry, computing, maths, physics, languages"
-        areas: "Bassetlaw, Lincolnshire, Nottingham, Nottinghamshire"
-        name: "Richard Macpherson"
-        email: "interns@diverse-ac.org.uk"
   East of England:
     providers:
       - header: "Advanced Learning Partnership"
@@ -98,14 +98,14 @@ provider_groups:
         email: "mhoward@theappletonschool.org"
       - header: "Creative Education Trust"
         link: "https://www.creativeeducationtrust.org.uk/internship"
-        applications: "Open"
+        applications: "Closed"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Norfolk"
         name: "Katie Irving"
         email: "teachertraining@creativeeducationaltrust.org.uk"
       - header: "Debden Park High School (TKAT Teacher Training)"
         link: "https://scitt.tkat.org/842/internships"
-        applications: "Open"
+        applications: "Closed"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Essex"
         name: "Sarah Drury"
@@ -140,7 +140,7 @@ provider_groups:
         email: "vicki.walsh@redborne.com"
       - header: "South East Essex Academy Trust (SEEAT Trust)"
         link: "https://www.seeat.org/Teaching-Internships/"
-        applications: "Open February"
+        applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Essex, Southend-on-Sea"
         name: "Sarah White"
@@ -163,7 +163,7 @@ provider_groups:
     providers:
       - header: "Debden Park High School (TKAT Teacher Training)"
         link: "https://scitt.tkat.org/842/internships"
-        applications: "Open"
+        applications: "Closed"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Bromley"
         name: "Sarah Drury"
@@ -184,14 +184,14 @@ provider_groups:
         email: "bsperring@letta.org.uk"
       - header: "New River Teaching Alliance"
         link: "https://nrta.co.uk/train-to-teach/internships/"
-        applications: "Open"
+        applications: "Closed"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Barnet, Enfield, Haringey"
         name: "Kate Dowling"
         email: "kdowling@alexandrapark.school"
       - header: "Paddington Academy"
-        link: "https://www.paddington-academy.org/recruitment/summer-teaching-internship"
-        applications: "Open"
+        link: "https://unitedlearning.org.uk/what-we-do/professional-development-programmes/future-teachers"
+        applications: "Closed"
         subjects: "chemistry, maths, physics, languages"
         areas: "Fulham, Hammersmith and Fulham, Lambeth, Westminster"
         name: "Lianne Tomaszewska"
@@ -285,12 +285,12 @@ provider_groups:
         name: "Andy Gibson"
         email: "teachertraining@coopacademies.co.uk"
       - header: "Cumbria Education Trust"
-        link: "https://www.williamhoward.cumbria.sch.uk/about-us/teaching-internships/"
+        link: "https://www.cumbriaeducationtrust.org/traintoteach/"
         applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Cumbria"
-        name: "Andy Guest"
-        email: "aguest@williamhoward.cumbria.sch.uk"
+        name: "Joanna Daulby"
+        email: "jdaulby@workingtonacademy.org"
       - header: "Great Schools Trust"
         link: "https://www.greatschoolstrust.org/train-with-us/internships"
         applications: "Open"
@@ -314,7 +314,7 @@ provider_groups:
         email: "e.sikora@outwood.com"
       - header: "Teach Manchester"
         link: "https://www.stpetershigh.com/"
-        applications: "Open"
+        applications: "Closed"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "North West"
         name: "Stephanie Pitcher"
@@ -337,14 +337,14 @@ provider_groups:
     providers:
       - header: "Creative Education Trust"
         link: "https://www.creativeeducationtrust.org.uk/internship"
-        applications: "Open"
+        applications: "Closed"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Milton Keynes"
         name: "Katie Irving"
         email: "teachertraining@creativeeducationaltrust.org.uk"
       - header: "Debden Park High School (TKAT Teacher Training)"
         link: "https://scitt.tkat.org/842/internships"
-        applications: "Open"
+        applications: "Closed"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Essex, Kent, Bromley, Bexley, Swanley, Hampshire, W. Sussex (Chichester, Portsmouth, Tonbridge, Hythe, Rainham)"
         name: "Sarah Drury"
@@ -365,7 +365,7 @@ provider_groups:
         email: "lwylie@i2ipartnership.co.uk"
       - header: "Ringwood School"
         link: "https://www.ringwood.hants.sch.uk/page/?title=Paid+Internships&pid=52"
-        applications: "Open April"
+        applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Hampshire, Dorset, Bournemouth, Poole, Ringwood, Christchurch"
         name: "Clare Adams"
@@ -375,8 +375,8 @@ provider_groups:
         applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Windsor and Maidenhead"
-        name: "Maria Avellano"
-        email: "maria.avellano@furzeplatt.net"
+        name: "Claire Eadie"
+        email: "claire.eadie@furzeplatt.net"
       - header: "The Cherwell School"
         link: "https://www.cherwell.oxon.sch.uk/"
         applications: "Open"
@@ -395,7 +395,7 @@ provider_groups:
         link: "https://www.xaviercet.org.uk/"
         applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
-        areas: "Slough, Surrey"
+        areas: "Surrey, West Sussex, East Berkshire and West Greater London"
         name: "Natasha Bisset"
         email: "n.bisset@xaviercet.org.uk"
   South West:
@@ -416,7 +416,7 @@ provider_groups:
         email: "admin@odysseytsh.org"
       - header: "Ringwood School"
         link: "https://www.ringwood.hants.sch.uk/page/?title=Paid+Internships&pid=52"
-        applications: "Open April"
+        applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Bournemouth, Christchurch and Poole, Dorset"
         name: "Clare Adams"
@@ -437,7 +437,7 @@ provider_groups:
         email: "Ashley.Wicken@tsatrust.org.uk"
       - header: "West Country Internships"
         link: "https://exetermathematicsschool.ac.uk/internships/"
-        applications: "Open February"
+        applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Devon, Plymouth, Somerset, Torbay"
         name: "Kerry Burnham"
@@ -467,7 +467,7 @@ provider_groups:
         email: "e.giubertoni@bctsa.org"
       - header: "Creative Education Trust"
         link: "https://www.creativeeducationtrust.org.uk/internship"
-        applications: "Open"
+        applications: "Closed"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Staffordshire, Warwickshire"
         name: "Katie Irving"
@@ -481,7 +481,7 @@ provider_groups:
         email: "ad@princehenrys.worcs.sch.uk"
       - header: "St Joseph's College"
         link: "https://www.sjcscitt.co.uk/page/?title=DfE+Teaching+Internships&pid=26"
-        applications: "Open March"
+        applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Cheshire East, Cheshire West and Chester, Staffordshire, Stoke-on-Trent"
         name: "Sam Chater"
@@ -532,7 +532,7 @@ provider_groups:
         email: "m.lairini@northerneducationtrust.org"
       - header: "Northern Star Academies Trust"
         link: "https://www.nsitt.org.uk/our-programmes/teaching-internships1/"
-        applications: "Open April"
+        applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Bradford, Harrogate, North Yorkshire"
         name: "Helen Smith"
@@ -579,26 +579,5 @@ provider_groups:
         areas: "East Riding of Yorkshire"
         name: "Sarah Barley"
         email: "sarah.barley@theeducationalliance.org.uk"
-
-
-keywords:
-  - teaching internship
-  - internship
-  - providers
-  - maths
-  - physics
-  - STEM
-  - paid internship
-  - TI
-  - T.I.
-  - summer internship
-  - T.I
-  - internships
-  - teaching intern
-  - intern
-  - interns
-  - teaching internship programme
-  - T.I. programme
-  - TI programme
 ---
 $applications-open$

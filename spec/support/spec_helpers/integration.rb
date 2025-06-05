@@ -23,7 +23,7 @@ module SpecHelpers
       wait_for_jobs
       expect(page).to have_text("You're already registered with us")
       code = retrieve_verification_code(email)
-      fill_in "To verify your details, we've sent a code to your email address.", with: code
+      fill_in "Enter your verification code:", with: code
       click_on "Next step"
     end
 

@@ -18,9 +18,17 @@
               <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
                 OpenStruct.new(
                   title: "Abigail's favourite things about teaching",
-                  description: "Hear what Abigail enjoys most about teaching, and the impact she has through her job.   ",
+                  description: "Hear what Abigail enjoys most about teaching, and the impact she has through her job.",
                   path: "/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching",
                   image: "static/images/content/case-studies/abigail.jpg"
+                )) %>
+            </ul>
+            <ul>
+              <%= render Content::InspirationCardComponent.new(heading_tag: "h3", card:
+                OpenStruct.new(
+                  title: "Bringing lessons to life with rap music",
+                  description: "Yvonne is an English teacher in London. She uses her love of rap music to engage and inspire her students.",
+                  path: "/life-as-a-teacher/why-teach/bringing-lessons-to-life-with-rap-music"
                 )) %>
             </ul>
           </nav>

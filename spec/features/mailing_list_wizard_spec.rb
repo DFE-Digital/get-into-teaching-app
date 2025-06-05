@@ -4,9 +4,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
   include_context "with wizard data"
   include_context "with stubbed callback quotas api"
 
-  let(:mailing_list_page_title) { "Get tailored guidance in your inbox | Get Into Teaching GOV.UK" }
+  let(:mailing_list_page_title) { "Free personalised teacher training guidance | Get Into Teaching GOV.UK" }
 
-  scenario "Full journey as a new candidate" do
+  scenario "Full journey as a new candidate with one non completed step" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
@@ -25,10 +25,14 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
-    choose "Not yet, I'm a first year student"
+    choose "Not yet, I'm studying for one"
+    fill_in "Which year will you graduate?", with: Date.current.year + 1
     click_on "Next step"
 
+    # check page title remains correct for non completed step
     expect(page).to have_text "How interested are you in applying"
+    click_on "Next step"
+    expect(page).to have_title("Free personalised teacher training guidance, interest step | Get Into Teaching")
     choose "It's just an idea"
     click_on "Next step"
 
@@ -40,7 +44,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
-    expect(page).to have_title("You've signed up | Get Into Teaching")
+    expect(page).to have_title("Free personalised teacher training guidance, sign up completed | Get Into Teaching")
     expect(page).to have_text "Test, you're signed up"
     expect(page).to have_link("choose a time for us to give you a call")
   end
@@ -66,7 +70,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
-    choose "Not yet, I'm a first year student"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -105,7 +109,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
-    choose "Almost, I'm a final year student"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -121,7 +125,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "Test, you're signed up"
-    expect(page).to have_link("helpful guide")
 
     # We pass this to the BAM tracking pixel in GTM.
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
@@ -144,7 +147,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
-    choose "Not yet, I'm a first year student"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -171,7 +174,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
       preferred_teaching_subject_id: Crm::TeachingSubject.lookup_by_key(:maths),
       consideration_journey_stage_id: Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :final_year),
+      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate),
       address_postcode: "TE57 1NG",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
@@ -184,7 +187,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You're already registered with us"
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Are you already qualified to teach?"
@@ -248,7 +251,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You're already registered with us"
-    fill_in "To verify your details, we've sent a code to your email address.", with: "654321"
+    fill_in "Enter your verification code:", with: "654321"
     click_on "Next step"
 
     expect(page).to have_text "Please enter the latest verification code"
@@ -256,7 +259,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_link "Send another code to verify my details"
     expect(page).to have_text "We've sent you another email"
 
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Are you already qualified to teach?"
@@ -279,7 +282,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You're already registered with us"
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "You've already signed up"
@@ -303,7 +306,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You're already registered with us"
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Are you already qualified to teach?"
@@ -316,7 +319,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       last_name: "User",
       email: "test@user.com",
       consideration_journey_stage_id: Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :final_year),
+      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate),
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { response }
@@ -383,7 +386,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You're already registered with us"
-    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+    fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "You've already signed up"

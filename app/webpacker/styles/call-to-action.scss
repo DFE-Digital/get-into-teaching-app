@@ -9,7 +9,7 @@
   }
 
   @include mq($until: tablet) {
-  &--simple {
+    &--simple {
       picture {
         display: none;
       }
@@ -207,8 +207,6 @@
       }
     }
   }
-  
-  
 
   &--next-steps {
     position: relative;
@@ -248,58 +246,32 @@
     }
   }
 
-  &--funding-widget {
-    margin-top: 0;
-    margin-left: 0;
-    position: relative;
-    background: transparent;
+  &__funding-widget {
+    display: grid;
+
+    .grid-item-icon {
+      grid-area: 1 / 1 / 3 / 1;
+    }
+
+    .grid-item-heading {
+      grid-area: 1 / 2 / 1 / 3;
+      padding: 0.5rem 1rem 0;
+    }
+
     @include mq($until: tablet) {
-      max-width: calc(100% - 1.25em);
-    }
+      grid-template-columns: 67px;
 
-    .govuk-form-group,
-    .form__errors {
-      margin-bottom: 1em;
-    }
-
-    .call-to-action__heading {
-      color: $black;
-      background: $yellow;
-      display: inline-block;
-      padding: .5em 1.25em;
-      margin-left: -22px;
-      margin-bottom: 1.5em;
-      max-width: none;
-    }
-
-    .call-to-action__content {
-      background-color: $grey;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .call-to-action__text {
-      margin-bottom: 1.4em;
-    }
-
-    .call-to-action__form {
-      .field,
-      .actions {
-        margin-bottom: 1em;
-      }
-
-      select,
-      input {
-        margin-left: 0;
-        margin-right: 0;
-        box-sizing: border-box;
-      }
-
-      label {
-        display: block;
-        margin-bottom: .5em;
+      .grid-item-content {
+        grid-area: 2 / 1 / 2 / 3;
       }
     }
 
+    @include mq($from: tablet) {
+      grid-template-columns: 88px;
+
+      .grid-item-content {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+    }
   }
 }

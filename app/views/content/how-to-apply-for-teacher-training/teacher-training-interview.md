@@ -2,31 +2,12 @@
 title: Prepare for your teacher training interview
 description: |-
   Prepare for a teacher training interview. Learn more about what the interview involves, what you might be asked, and how to get help to prepare.
-related_content:
-    Improve your subject knowledge : "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-    What teacher training is like : "/train-to-be-a-teacher/initial-teacher-training"
-    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course" 
 navigation: 30.20
 navigation_title: Teacher training interviews
 navigation_description: Find out how to prepare for your teacher training interviews.
-keywords:
-  - adviser
-  - advisor
-  - ITT
-  - Initial Teacher Training
-  - QTS
-  - Qualified Teacher Status
-  - Teacher Training Adviser
-  - application
-  - applying for teacher training
-  - process
-  - PGCE
-  - interviews
-cta_adviser:
-  adviser:
-    text: An adviser with years of teaching experience can help you prepare for interviews. Chat by phone, text or email, as often or as little as you need.
+promo_content:
+  - "content/shared/block-promos/adviser_events"
 ---
-
 Congratulations on being invited for an interview! This is an important stage in successfully getting a place on a primary or secondary teacher training course.
 
 These tips can help you prepare for a successful interview. 
@@ -108,8 +89,14 @@ It’s good to have some questions of your own to ask. This helps you get more i
 
 * how will this course help me to get a teaching job?
 
+## Consider if you need any adjustments
+
+Providers can make adjustments to your interview if you need support because you're neurodiverse, have a long-term physical or mental health condition, or have any other accessibility needs.
+
+If you think you need adjustments, speak to the provider as soon as possible so they have enough time to put any adjustments in place before your interview. 
+
+Find out more about [adjustments to help you train](/train-to-be-a-teacher/accessibility-adjustments).
+
 ## Think positive
 
 The most important thing is to try to relax and be yourself. With some planning, and preparation, you'll be in a strong position to answer confidently and show you can handle a classroom.
-
-$adviser$

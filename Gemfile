@@ -4,16 +4,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "concurrent-ruby", "1.3.4" # Required to fix a dependency issue with Rails upgrade to version 7.0.8.7
-gem "rails", "~> 7.0.8.7"
+gem "rails", "~> 8.0"
 
 # Use Puma as the app server
 gem "puma", "~> 6.4"
 
 gem "pg"
 
-# Fork needed for Ruby 3.1/Rails 7
-gem "validates_timeliness", github: "mitsuru/validates_timeliness", branch: "rails7"
+gem "validates_timeliness"
 
 gem "invisible_captcha"
 
@@ -59,7 +57,7 @@ gem "fastimage"
 
 gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.15.1"
 gem "dfe-autocomplete", require: "dfe/autocomplete", github: "DFE-Digital/dfe-autocomplete"
-gem "dfe-reference-data", require: "dfe/reference_data", github: "DFE-Digital/dfe-reference-data", tag: "v3.5.0"
+gem "dfe-reference-data", require: "dfe/reference_data", github: "DFE-Digital/dfe-reference-data", tag: "v3.6.9"
 
 gem "benchmark"
 gem "hashids"
@@ -86,19 +84,24 @@ gem "text"
 gem "indefinite_article"
 
 gem "connection_pool"
+
 gem "get_into_teaching_api_client_faraday", ">= 3.5.0", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client", branch: "add-creation-channel-to-tta"
+# gem "get_into_teaching_api_client_faraday", ">= 3.5.1", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
+
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 3.10.0"
+gem "view_component", "~> 3.21.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
 gem "net-smtp", ">= 0.3.3", require: false
 gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
 
-gem "sidekiq", "~> 6.5.0"
+# NB: Do not update Sidekiq beyond version 6.5.5, as newer versions are incompatible
+# with the Redis instance we are using on AKS
+gem "sidekiq", ">= 6.5.5", "< 6.5.6"
 gem "sidekiq-cron"
 
 # Fix CVE errors
@@ -129,10 +132,10 @@ group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
 
   # GOV.UK interpretation of rubocop for linting Ruby
-  gem "rubocop-govuk", "~> 5.0.2"
+  gem "rubocop-govuk", "~> 5.1.1"
 
   # Static security scanner
-  gem "brakeman", "~> 6.2.2", require: false
+  gem "brakeman", "~> 7.0.0", require: false
 
   gem "drb"
 
@@ -142,7 +145,7 @@ group :development, :test do
 
   # Testing framework
   gem "knapsack"
-  gem "rspec-rails", "~> 6.0.3"
+  gem "rspec-rails", "~> 8.0"
 
   # Adds support for Capybara system testing
   gem "capybara", "~> 3.40.0"

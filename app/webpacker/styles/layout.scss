@@ -71,6 +71,7 @@ section.container {
   flex-wrap: wrap;
   flex-direction: column;
   margin: 1em 0;
+  overflow-wrap: anywhere;
 
   > main.within-section,
   > .back-link {

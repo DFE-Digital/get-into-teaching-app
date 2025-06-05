@@ -1,7 +1,0 @@
-<%= link_to result[:path], class: "search-result" do %>
-  <%= display_search_path(result[:path]) %>
-
-  <h3 class="heading--margin-0"><%= result.dig(:frontmatter, :title) %></h3>
-
-  <p><%= result.dig(:frontmatter, :description) %></p>
-<% end %>

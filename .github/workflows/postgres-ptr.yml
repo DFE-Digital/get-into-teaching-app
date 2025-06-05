@@ -28,6 +28,10 @@ on:
         description: Name of the new database server. Default is <original-server-name>-ptr.
         type: string
 
+permissions:
+  contents: write
+  id-token: write
+
 env:
   SERVICE_SHORT: git
   TF_VARS_PATH: terraform/aks/config
@@ -67,4 +71,6 @@ jobs:
         new-server: ${{ env.NEW_DB_SERVER }}
         restore-time: ${{ inputs.restore-time }}
         cluster: ${{ env.CLUSTER }}
-        azure-credentials: ${{ secrets.AZURE_CREDENTIALS }}
+        azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}

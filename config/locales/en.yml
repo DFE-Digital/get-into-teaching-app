@@ -601,8 +601,8 @@ en:
         mailing_list/steps/degree_status:
           attributes:
             degree_status_id:
-              blank: Select your degree stage
-              inclusion: Select your degree stage from the list
+              blank: Choose a degree option from the list
+              inclusion: Choose a degree option from the list
         mailing_list/steps/teacher_training:
           attributes:
             consideration_journey_stage_id:
@@ -683,6 +683,18 @@ en:
         teacher_training:
           consideration_journey_stage:
             222750003: "I think I'll apply"
+          degree_status:
+            222750000: "Yes"
+            222750004: "No"
+      events_steps:
+        personalised_updates:
+          degree_status:
+            222750000: "Yes, I already have a degree"
+            222750001: "Almost, I'm a final year student"
+            222750002: "Not yet, I'm a second year student"
+            222750003: "Not yet, I'm a first year student"
+            222750004: "No, and I'm not studying for one"
+            222750005: "Other"
       mailing_list_steps_degree_status:
         degree_status:
           graduate_or_postgraduate: "Yes, I already have a degree"
@@ -690,11 +702,12 @@ en:
           second_year: "Not yet, I'm a second year student"
           first_year: "Not yet, I'm a first year student"
           i_don_t_have_a_degree_and_am_not_studying_for_one: "No, and I'm not studying for one"
+          not_yet_i_m_studing_for_one: "Not yet, I'm studying for one"
           other: "Other"
 
     label:
       wizard_steps_authenticate:
-        timed_one_time_password: "To verify your details, we've sent a code to your email address."
+        timed_one_time_password: "Enter your verification code:"
 
       teacher_training_adviser_steps_identity:
         first_name: "First name"
@@ -817,16 +830,13 @@ en:
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
 
-      search:
-        search: Search for ...
-
     hint:
       events_steps_contact_details:
         address_telephone: |-
            We'll use this to send you a reminder and let you know about any last-minute cancellations.
       wizard_steps_authenticate:
         timed_one_time_password:
-          text: "Enter your code here:"
+          text: ""
           resent: We've sent you another email
       events_steps_personalised_updates:
         address_postcode: |-

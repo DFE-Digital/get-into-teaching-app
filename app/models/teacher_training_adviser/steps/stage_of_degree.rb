@@ -50,6 +50,10 @@ module TeacherTrainingAdviser::Steps
       generate_api_options(GetIntoTeachingApiClient::PickListItemsApi, :get_qualification_degree_status, nil, DEGREE_STATUS.values)
     end
 
+    def title
+      "degree stage"
+    end
+
   private
 
     def channel_id

@@ -2,38 +2,31 @@
 title: "Early career teachers (ECTs)"
 heading: "Early career teachers (ECTs)"
 description: |-
-  Find out about the support early career teachers get when they start teaching, including mentor support and training based on the early career framework (ECF).
-related_content:
-    Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
-    Explore the benefits of teaching : "/life-as-a-teacher/pay-and-benefits"
-cta_adviser:
-  adviser:
-    text: An adviser with years of teaching experience can help you understand the support you'll get when you first start teaching. Chat by phone, text or email, as little or as often as you need.
+  Find out about the support early career teachers get when they start teaching, including mentor support and training based on the initial teacher training early career framework (ITTECF).
+promo_content:
+  - "content/shared/block-promos/mailing_adviser_routes"
 ---
 
 You’ll be known as an early career teacher (ECT) for your first 2 years in teaching. The term early career teacher (ECT) has replaced newly qualified teacher (NQT).
 
-During your 2 year induction, you’ll receive a package of training and support based on the [early career framework (ECF)](https://www.gov.uk/guidance/how-the-early-career-framework-ecf-supports-induction). This is designed to help you build the skills and knowledge you need to feel confident and empowered in your classroom.
+During your 2-year induction, you’ll receive a package of training and support based on the initial teacher training and early career framework (ITTECF). Your package of training and support is referred to as the [early career teacher entitlement (ECTE)](https://www.gov.uk/government/publications/early-career-teacher-entitlement/early-career-teacher-entitlement).
 
-This won’t impact your pay or progression opportunities. You’ll still be able to progress on the pay scale during your induction period.
+The ECTE is designed to help you build the skills and knowledge you need to feel confident and empowered in your classroom. It won’t impact your pay or progression opportunities. You’ll still be able to progress on the pay scale during your induction period.
 
 If your teacher training course does not lead to English qualified teacher status (QTS) (for example, if your course only leads to a PGCE or other academic award) you will not receive the following support.
 
-## ECF-based training
+### Your early career teacher training programme
 
-You’ll receive training based on the early career framework (ECF) as part of your induction period. This is called ECF-based training.
+You’ll receive training based on the initial teacher training and early career framework (ITTECF) as part of your early career teacher entitlement (ECTE). This training provides a bridge between your teacher training and your teaching career. 
 
-ECF-based training provides a bridge between your initial teacher training (ITT) and your teaching career. Your ITT helps you qualify as a teacher, and the ECF-based training helps you further develop your teaching practice and working habits.
+Your teacher training helps you qualify as a teacher, and your ECTE helps you further develop your teaching practice and working habits.
 
-### Your training programme
-
-Your school will choose how to deliver your training based on the early career framework (ECF). They may:
+Your school will choose how to deliver your training based on the ITTECF. They may:
 
 * use a Department for Education (DfE) funded training provider
-* use DfE accredited materials
 * design and deliver their own training
 
-This could be through face to face learning or using online materials.
+This could be through face-to-face learning or using online materials.
 
 You’ll also observe experienced teachers to help you develop your own good practice.
 
@@ -69,5 +62,3 @@ You’ll have regular progress reviews with your induction tutor so that you can
 You’ll have 2 formal assessment meetings with your induction tutor — one midway through induction and one at the end.
 
 They may ask you for evidence that you’ve met the teachers’ standards. You won’t need to create anything new for this evidence — you should use existing lesson plans or feedback from observations.
-
-$adviser$

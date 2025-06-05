@@ -4,30 +4,20 @@ heading: "Bursaries and scholarships for postgraduate teacher training"
 subcategory: Courses with fees
 description: |-
    Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.
-related_content:
-    Improve your subject knowledge: "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-    Teacher pay: "/life-as-a-teacher/pay-and-benefits/teacher-pay"
-cta_adviser:
-  adviser:
-    text: "An adviser with years of teaching experience can answer all your questions about scholarships and bursaries. Chat by phone, text or email, as little or as often as you need."
-calls_to_action:
-  find:
-    name: find
+promo_content:
+  - "content/shared/block-promos/adviser_findfees"
+cta_arrow_link:
+  subjects:
+    link_target: "/life-as-a-teacher/explore-subjects"
+    link_text: "Find out more about the subjects you could teach"
+  teacherpay:
+    link_target: "/life-as-a-teacher/pay-and-benefits/teacher-pay"
+    link_text: "Find out more about teacher pay"
 navigation: 20.15
 navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
 before-content:
     - content/funding-and-support/scholarships-and-bursaries/funding-widget
-keywords:
-    - Bursaries
-    - Bursary
-    - Scholarship
-    - Scholarships
-    - Grant
-    - Grants
-    - Financial Support
-    - Undergraduate
-    - Postgraduate
 ---
 
 ## Eligibility for bursaries
@@ -106,7 +96,7 @@ You need to apply directly to the scholarship provider. Each provider sets their
 
 Table caption: Available postgraduate bursaries and scholarships
 
-Find out more about the [subjects you could teach](/life-as-a-teacher/explore-subjects).
+$subjects$
 
 ## Other funding options
 
@@ -116,5 +106,4 @@ You may be eligible for [a salaried teacher training course](/funding-and-suppor
 
 For advice on funding, you can speak to a [teacher training adviser](/teacher-training-advisers). They can help you work out what support you could be eligible for.
 
-$find$
-$adviser$
+$teacherpay$

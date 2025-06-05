@@ -1,4 +1,5 @@
 require "attribute_filter"
+require "digest"
 
 module MailingList
   class Wizard < ::GITWizard::Base
@@ -9,6 +10,9 @@ module MailingList
       consideration_journey_stage_id
       degree_status_id
       sub_channel_id
+      hashed_email
+      graduation_year
+      inferred_degree_status
     ].freeze
 
     self.steps = [
@@ -31,7 +35,8 @@ module MailingList
       super.tap do |result|
         break unless result
 
-        add_member_to_mailing_list
+        @store[:inferred_degree_status] = add_member_to_mailing_list
+        @store[:hashed_email] = Digest::SHA256.hexdigest(@store[:email]) if @store[:email].present?
 
         # we're taking the last name too so if people restart the wizard
         # both are filled rather than just their first name, which looks
@@ -62,37 +67,14 @@ module MailingList
       request = GetIntoTeachingApiClient::MailingListAddMember.new(construct_export)
       api = GetIntoTeachingApiClient::MailingListApi.new
       Rails.logger.info("MailingList::Wizard#add_mailing_list_member: #{AttributeFilter.filtered_json(request)}")
-      api.add_mailing_list_member(request)
+      response = api.add_mailing_list_member(request, { return_type: "json" })
+
+      Crm::OptionSet.lookup_by_value(:legacy_degree_status_for_advertising, response.degree_status_id)
     end
 
     def construct_export
       attributes = GetIntoTeachingApiClient::MailingListAddMember.attribute_map.keys
-      export = export_data.slice(*attributes.map(&:to_s))
-
-      show_welcome_guide = ApplicationController.helpers.show_welcome_guide?(
-        degree_status: export["degree_status_id"],
-        consideration_journey_stage: export["consideration_journey_stage_id"],
-      )
-
-      return export unless show_welcome_guide
-
-      wg_params = export_data
-        .slice("degree_status_id", "preferred_teaching_subject_id")
-        .symbolize_keys
-
-      export.tap { |h| h[:welcome_guide_variant] = welcome_guide_variant(**wg_params) }
-    end
-
-    def welcome_guide_variant(degree_status_id: nil, preferred_teaching_subject_id: nil)
-      %w[/email].tap { |path|
-        if preferred_teaching_subject_id
-          path << ["subject", Crm::TeachingSubject.lookup_by_uuid(preferred_teaching_subject_id).parameterize(separator: "_")]
-        end
-
-        if degree_status_id
-          path << ["degree-status", Crm::OptionSet.lookup_by_value(:degree_status, degree_status_id).downcase]
-        end
-      }.join("/")
+      export_data.slice(*attributes.map(&:to_s))
     end
   end
 end

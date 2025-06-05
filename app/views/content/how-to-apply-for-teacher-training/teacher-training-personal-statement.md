@@ -3,39 +3,11 @@ title: Teacher training personal statement
 heading: Your teacher training personal statement
 description: |-
   Find out what to include in your teacher training personal statement when you apply for a course leading to qualified teacher status (QTS) or a PGCE.
-related_content:
-    How to choose your teacher training course : "/train-to-be-a-teacher/how-to-choose-your-teacher-training-course"
-    Prepare for your teacher training interview: "/how-to-apply-for-teacher-training/teacher-training-interview"
 navigation: 30.10
 navigation_title: Teacher training personal statement
 navigation_description: Find out what to include in your teacher training personal statement.
-keywords:
-  - teacher training personal statement
-  - adviser
-  - advisor
-  - ITT
-  - Initial Teacher Training
-  - QTS
-  - Qualified Teacher Status
-  - Teacher Training Adviser
-  - application
-  - apply
-  - how to apply
-  - applying for teacher training
-  - referees
-  - references
-  - process
-  - personal statement
-  - when to apply
-  - interviews
-  - offers
-  - teacher training application
-calls_to_action:
-    apply:
-      name: apply
-cta_adviser:
-  adviser:
-    text: An adviser with years of teaching experience can help you with your personal statement. Chat by phone, text or email, as little or as often as you need.
+promo_content:
+  - "content/shared/block-promos/adviser_apply"
 quote:
   q-Felix:
     text: "Having a teacher training adviser was really beneficial when editing my personal statement and preparing for interviews. My top tips for the application process would be to get an adviser, and to think about what transferrable skills you have when writing your personal statement and answering interview questions."
@@ -45,6 +17,10 @@ quote:
     text: "Provided they have a good overall application and the right qualifications, most candidates who come to us for help with their personal statement will go on to get an interview." 
     name: "Josie, teacher training adviser" 
     classes: quote--indent 
+cta_arrow_link:
+  experience:
+    link_target: "/train-to-be-a-teacher/get-school-experience"
+    link_text: "Find out how you could get school experience"
 ---
 
 
@@ -124,8 +100,4 @@ You do not need school experience to apply for teacher training, but it can help
 
 Getting some school experience can also be a good way to make sure teaching is right for you before you apply for a course.
 
-[Find out how you could get school experience](/train-to-be-a-teacher/get-school-experience).
-
-$apply$
-$adviser$
-
+$experience$

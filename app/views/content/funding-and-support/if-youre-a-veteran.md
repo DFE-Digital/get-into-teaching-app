@@ -4,24 +4,15 @@ heading: "Funding and support if you're a veteran"
 subcategory: Extra support
 description: |-
     Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
-related_content:
-    Explore life as a teacher: "/life-as-a-teacher"
-    Teach in further education without a degree: "https://www.teachinfurthereducation.education.gov.uk/"
-cta_adviser:
-  adviser:
-    text: "You can get dedicated guidance and support with your journey into teacher training from one of our veteran teacher training advisers. Chat by phone, text or email, as little or as often as you need."
 navigation: 20.35
+promo_content:
+  - "content/shared/block-promos/adviser_mailing_routes"
+cta_arrow_link:
+  bursaries:
+    link_target: "/funding-and-support/scholarships-and-bursaries"
+    link_text: "Find out more about postgraduate scholarships and bursaries"
 navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
-calls_to_action:
-  chat:
-    name: chat
-    arguments: {}
-keywords:
-    - veterans
-    - service leavers
-    - army
-    - military
 ---
 
 If you’re transitioning from the armed forces or your service has already ended, you could be eligible for support to train to teach.
@@ -48,7 +39,7 @@ You’ll receive $bursaries_veteran_annual$ in each of the last 2 years of your 
 
 You may also be eligible for a postgraduate scholarship or bursary if you’re training to teach certain subjects.
 
-[Find out more about scholarships and bursaries](/funding-and-support/scholarships-and-bursaries).
+$bursaries$
 
 All teacher training candidates are also eligible for [tuition fee and maintenance loans](/funding-and-support/tuition-fee-and-maintenance-loans).
 
@@ -78,4 +69,6 @@ If you’re unsure about whether your qualifications achieved through military s
 
 You may also be able to do a top up degree to boost your qualifications to meet the standard required. Talk to your teacher training adviser and course provider to find out about your options.
 
-$adviser$
+## Other routes into teaching
+
+You do not need a degree and QTS to [teach in further education](/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers) or to [teach in early years](/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers). So if you want to become a teacher but are not able to get a degree, you can explore these options.

@@ -11,7 +11,7 @@
             <%= f.hidden_field :online, multiple: true, value: false %>
             <%= f.label :postcode, "Enter postcode" %>
             <%= f.text_field :postcode, class: "govuk-input", autocomplete: "postal-code" %>
-            <%= tag.button("Search", class: "button", type: :submit, id: "event-search") %>
+            <%= tag.button("Search for an event", class: "button", type: :submit, id: "event-search") %>
           <% end %>
           <p class="govuk-!-padding-top-5">
             Or <%= link_to("find an online event", events_path(add_online_events(params))) %>.

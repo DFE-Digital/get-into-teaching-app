@@ -73,7 +73,7 @@ describe EventsHelper, type: "helper" do
       allow(Rails.application.config.x).to receive(:google_maps_key).and_return("12345")
     end
 
-    it { is_expected.to match(/data-map-description="Line 1,\nLine 2,\nManchester,\nMA1 1AM" /) }
+    it { is_expected.to match(/data-map-description="Albert Hall,\nLine 1,\nLine 2,\nManchester,\nMA1 1AM" /) }
     it { is_expected.to match(/zoom=10/) }
     it { is_expected.to match(/alt="Map showing #{event.name}"/) }
   end
@@ -136,12 +136,12 @@ describe EventsHelper, type: "helper" do
 
     it "returns the address, comma separated with line breaks between parts" do
       expect(event.building).not_to be_nil
-      expect(event_address(event)).to eq("Line 1,\nLine 2,\nManchester,\nMA1 1AM")
+      expect(event_address(event)).to eq("Albert Hall,\nLine 1,\nLine 2,\nManchester,\nMA1 1AM")
     end
 
     it "returns the address, when all fields have values" do
       event.building = building_fully_populated
-      expect(event_address(event)).to eq("Line 1,\nLine 2,\nLine 3,\nManchester,\nMA1 1AM")
+      expect(event_address(event)).to eq("Albert Hall,\nLine 1,\nLine 2,\nLine 3,\nManchester,\nMA1 1AM")
     end
   end
 

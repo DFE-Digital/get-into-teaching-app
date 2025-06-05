@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_18_000000) do
+ActiveRecord::Schema[8.0].define(version: 2024_01_18_000000) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension "pg_catalog.plpgsql"
 
   create_table "page_modifications", force: :cascade do |t|
     t.string "path", null: false
@@ -29,5 +29,4 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_18_000000) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
 end

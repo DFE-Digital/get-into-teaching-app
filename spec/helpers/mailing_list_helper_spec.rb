@@ -1,150 +1,81 @@
 require "rails_helper"
 
-describe MailingListHelper, type: :helper do
-  describe ".have_degree_low_commitment?" do
-    it "returns true for low commitment candidates with a degree" do
-      expect(call_method(:have_degree_low_commitment?, :graduate_or_postgraduate, :i_m_not_sure_and_finding_out_more)).to be(true)
-    end
+RSpec.describe MailingListHelper, type: :helper do
+  let(:physics_uuid) { Crm::TeachingSubject.lookup_by_key(:physics) }
 
-    it "returns false for high commitment candidates with a degree" do
-      expect(call_method(:have_degree_low_commitment?, :graduate_or_postgraduate, :i_m_very_sure_and_think_i_ll_apply)).to be(false)
-    end
+  shared_context "with first name" do
+    before { allow(session).to receive(:dig).with("mailinglist", "first_name") { name } }
+  end
 
-    it "returns false for low commitment candidates without a degree" do
-      expect(call_method(:have_degree_low_commitment?, :final_year, :it_s_just_an_idea)).to be(false)
+  shared_context "with preferred teaching subject set in welcome_guide" do
+    before { allow(session).to receive(:dig).with("welcome_guide", "preferred_teaching_subject_id") { subject_id } }
+  end
+
+  shared_context "with preferred teaching subject set in welcome_guide and mailinglist" do
+    before do
+      allow(session).to receive(:dig).with("welcome_guide", "preferred_teaching_subject_id").and_return(nil)
+      allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id") { subject_id }
     end
   end
 
-  describe ".have_degree_high_commitment" do
-    it "returns true for high commitment candidates with a degree" do
-      expect(call_method(:have_degree_high_commitment?, :graduate_or_postgraduate, :i_m_very_sure_and_think_i_ll_apply)).to be(true)
+  describe "#high_commitment?" do
+    it "returns true for consideration_journey_stage 222750003" do
+      expect(high_commitment?(consideration_journey_stage: 222_750_003)).to be true
     end
 
-    it "returns false for low commitment candidates with a degree" do
-      expect(call_method(:have_degree_high_commitment?, :graduate_or_postgraduate, :i_m_not_sure_and_finding_out_more)).to be(false)
-    end
-
-    it "returns false for high commitment candidates without a degree" do
-      expect(call_method(:have_degree_high_commitment?, :final_year, :i_m_very_sure_and_think_i_ll_apply)).to be(false)
+    it "returns false for other consideration_journey_stage values" do
+      expect(high_commitment?(consideration_journey_stage: 123_456_789)).to be false
     end
   end
 
-  describe ".final_year_low_commitment" do
-    it "returns true for low commitment candidates in their final year of study" do
-      expect(call_method(:final_year_low_commitment?, :final_year, :i_m_not_sure_and_finding_out_more)).to be(true)
+  describe "#low_commitment?" do
+    it "returns true for consideration_journey_stage 222750000" do
+      expect(low_commitment?(consideration_journey_stage: 222_750_000)).to be true
     end
 
-    it "returns true for high commitment candidates in their final year of study" do
-      expect(call_method(:final_year_low_commitment?, :final_year, :i_m_very_sure_and_think_i_ll_apply)).to be(false)
-    end
-
-    it "returns true for low commitment candidates not in their final year of study" do
-      expect(call_method(:final_year_low_commitment?, :second_year, :i_m_not_sure_and_finding_out_more)).to be(false)
+    it "returns false for other consideration_journey_stage values" do
+      expect(low_commitment?(consideration_journey_stage: 123_456_789)).to be false
     end
   end
 
-  describe ".final_year_high_commitment" do
-    it "returns true for high commitment candidates in their final year of study" do
-      expect(call_method(:final_year_high_commitment?, :final_year, :i_m_very_sure_and_think_i_ll_apply)).to be(true)
+  describe "#graduate?" do
+    it "returns true for degree_status 222750000" do
+      expect(graduate?(degree_status: 222_750_000)).to be true
     end
 
-    it "returns true for low commitment candidates in their final year of study" do
-      expect(call_method(:final_year_high_commitment?, :final_year, :i_m_not_sure_and_finding_out_more)).to be(false)
-    end
-
-    it "returns true for high commitment candidates not in their final year of study" do
-      expect(call_method(:final_year_high_commitment?, :second_year, :i_m_very_sure_and_think_i_ll_apply)).to be(false)
+    it "returns false for other degree_status values" do
+      expect(graduate?(degree_status: 123_456_789)).to be false
     end
   end
 
-  describe ".first_or_second_year_low_commitment" do
-    it "returns true for low commitment candidates in their first or second year of study" do
-      expect(call_method(:first_or_second_year_low_commitment?, :first_year, :i_m_not_sure_and_finding_out_more)).to be(true)
+  describe "#studying?" do
+    it "returns true for degree_status 222750006" do
+      expect(studying?(degree_status: 222_750_006)).to be true
     end
 
-    it "returns true for high commitment candidates in their first or second year of study" do
-      expect(call_method(:first_or_second_year_low_commitment?, :first_year, :i_m_very_sure_and_think_i_ll_apply)).to be(false)
-    end
-
-    it "returns true for low commitment candidates not in their first or second year of study" do
-      expect(call_method(:first_or_second_year_low_commitment?, :other, :i_m_not_sure_and_finding_out_more)).to be(false)
+    it "returns false for other degree_status values" do
+      expect(studying?(degree_status: 123_456_789)).to be false
     end
   end
 
-  describe ".first_or_second_year_high_commitment" do
-    it "returns true for high commitment candidates in their first or second year of study" do
-      expect(call_method(:first_or_second_year_high_commitment?, :first_year, :i_m_very_sure_and_think_i_ll_apply)).to be(true)
+  describe "#no_degree?" do
+    it "returns true for degree_status 222750004" do
+      expect(no_degree?(degree_status: 222_750_004)).to be true
     end
 
-    it "returns true for low commitment candidates in their first or second year of study" do
-      expect(call_method(:first_or_second_year_high_commitment?, :first_year, :i_m_not_sure_and_finding_out_more)).to be(false)
-    end
-
-    it "returns true for high commitment candidates not in their first or second year of study" do
-      expect(call_method(:first_or_second_year_high_commitment?, :other, :i_m_very_sure_and_think_i_ll_apply)).to be(false)
+    it "returns false for other degree_status values" do
+      expect(no_degree?(degree_status: 123_456_789)).to be false
     end
   end
 
-  describe ".no_degree_low_commitment" do
-    it "returns true for low commitment candidates with no degree (and are not studying)" do
-      expect(call_method(:no_degree_low_commitment?, :i_don_t_have_a_degree_and_am_not_studying_for_one, :i_m_not_sure_and_finding_out_more)).to be(true)
+  describe "#consideration_journey_stage_id" do
+    before do
+      allow(session).to receive(:dig).with("mailinglist", "consideration_journey_stage_id").and_return(nil)
+      consideration_journey_stage_id
     end
 
-    it "returns true for high commitment candidates with no degree (and are not studying)" do
-      expect(call_method(:no_degree_low_commitment?, :i_don_t_have_a_degree_and_am_not_studying_for_one, :i_m_very_sure_and_think_i_ll_apply)).to be(false)
+    specify "checks the welcome guide and mailing list session values" do
+      expect(session).to have_received(:dig).with("mailinglist", "consideration_journey_stage_id")
     end
-
-    it "returns true for low commitment candidates with a degree (or studying)" do
-      expect(call_method(:no_degree_low_commitment?, :graduate_or_postgraduate, :i_m_not_sure_and_finding_out_more)).to be(false)
-    end
-  end
-
-  describe ".no_degree_high_commitment" do
-    it "returns true for high commitment candidates with no degree (and are not studying)" do
-      expect(call_method(:no_degree_high_commitment?, :i_don_t_have_a_degree_and_am_not_studying_for_one, :i_m_very_sure_and_think_i_ll_apply)).to be(true)
-    end
-
-    it "returns true for low commitment candidates with no degree (and are not studying)" do
-      expect(call_method(:no_degree_high_commitment?, :i_don_t_have_a_degree_and_am_not_studying_for_one, :i_m_not_sure_and_finding_out_more)).to be(false)
-    end
-
-    it "returns true for high commitment candidates with a degree (or studying)" do
-      expect(call_method(:no_degree_high_commitment?, :graduate_or_postgraduate, :i_m_very_sure_and_think_i_ll_apply)).to be(false)
-    end
-  end
-
-  describe ".other_low_commitment" do
-    it "returns true for low commitment candidates who specify a degree status of 'other'" do
-      expect(call_method(:other_low_commitment?, :other, :i_m_not_sure_and_finding_out_more)).to be(true)
-    end
-
-    it "returns true for high commitment candidates who specify a degree status of 'other'" do
-      expect(call_method(:other_low_commitment?, :other, :i_m_very_sure_and_think_i_ll_apply)).to be(false)
-    end
-
-    it "returns true for low commitment candidates who do not specify a degree status of 'other'" do
-      expect(call_method(:other_low_commitment?, :graduate_or_postgraduate, :i_m_not_sure_and_finding_out_more)).to be(false)
-    end
-  end
-
-  describe ".other_high_commitment" do
-    it "returns true for high commitment candidates who specify a degree status of 'other'" do
-      expect(call_method(:other_high_commitment?, :other, :i_m_very_sure_and_think_i_ll_apply)).to be(true)
-    end
-
-    it "returns true for low commitment candidates who specify a degree status of 'other'" do
-      expect(call_method(:other_high_commitment?, :other, :i_m_not_sure_and_finding_out_more)).to be(false)
-    end
-
-    it "returns true for high commitment candidates who do not specify a degree status of 'other'" do
-      expect(call_method(:other_high_commitment?, :graduate_or_postgraduate, :i_m_very_sure_and_think_i_ll_apply)).to be(false)
-    end
-  end
-
-  def call_method(method, degree_status_key, consideration_journey_stage_key)
-    degree_status = Crm::OptionSet.lookup_by_key(:degree_status, degree_status_key)
-    consideration_journey_stage = Crm::OptionSet.lookup_by_key(:consideration_journey_stage, consideration_journey_stage_key)
-
-    helper.public_send(method, degree_status: degree_status, consideration_journey_stage: consideration_journey_stage)
   end
 end

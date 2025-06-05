@@ -12,8 +12,8 @@
   mailing_list: true
   breadcrumbs: false
   content:
-    - content/home/routes-promo
     - content/home/calls-to-action
+    - content/home/routes-promo
     - content/home/salaries-banner
     - content/home/directory
 ---
