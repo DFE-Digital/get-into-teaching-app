@@ -10,5 +10,4 @@ content:
   - "content/explore-teaching-advisers/article"
   - "content/explore-teaching-advisers/sign-up"
   - "content/explore-teaching-advisers/eligibility"
-  - "content/
 ---
