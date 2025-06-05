@@ -38,7 +38,7 @@
 <%= f.hidden_field :creation_channel_service_id, value: params[:channel_service].presence || (f.object && f.object.creation_channel_service_id.presence) %>
 <%= f.hidden_field :creation_channel_activity_id, value: params[:channel_activity].presence || (f.object && f.object.creation_channel_activity_id.presence) %>
 <%= f.hidden_field :sub_channel_id, value: params[:sub_channel].presence || (f.object && f.object.sub_channel_id.presence) %>
-<%= f.hidden_field :accepted_policy_id, value: (f.object && f.object.latest_privacy_policy.id) %>
+<%= f.hidden_field :accepted_policy_id, value: f.object && f.object.latest_privacy_policy.id %>
 
 <p>Your details are protected under the terms of our <%= link_to "privacy notice (opens in new tab)", privacy_policy_path(id: session[:privacy_policy_id].presence || GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy.id), target: :blank %>.</p>
 
