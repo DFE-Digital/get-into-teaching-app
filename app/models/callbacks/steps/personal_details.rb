@@ -6,7 +6,7 @@ module Callbacks
       attribute :creation_channel_activity_id, :integer
 
       DEFAULT_CREATION_CHANNEL_SOURCE_ID = 222_750_003   # GIT Website
-      DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_005  # Explore Teaching Adviser Service TODO: check this value
+      DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_007  # Mailing List
       DEFAULT_CREATION_CHANNEL_ACTIVITY_ID = nil # default to blank
 
       def save
