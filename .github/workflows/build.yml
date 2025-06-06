@@ -218,7 +218,7 @@ jobs:
 
       - name: Lint ERB Templates
         run: |-
-          docker run -t --rm ${{env.DOCKER_IMAGE_TEST}} bundle exec erblint --lint-all
+          docker run -t --rm ${{env.DOCKER_IMAGE_TEST}} bundle exec erb_lint --lint-all
 
       - name: Lint Markdown
         run: |-
