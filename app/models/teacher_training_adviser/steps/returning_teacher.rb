@@ -22,8 +22,8 @@ module TeacherTrainingAdviser::Steps
     end
 
     def save
-      if creation_channel_source_id.nil? && channel_id.present?
-        # if the new creation_channel_source_id is missing and a valid legacy channel_id is provided, use the legacy channel only
+      if creation_channel_source_id.blank? && creation_channel_service_id.blank? && creation_channel_activity_id.blank? && channel_id.present?
+        # if all the new creation_channel attributes are missing and a valid legacy channel_id is provided, use the legacy channel only
         self.creation_channel_service_id = nil
       elsif !creation_channel_service_id.in?(creation_channel_service_ids)
         # otherwise set the new creation_channel fields and set the legacy channel_id to be nil
@@ -45,6 +45,10 @@ module TeacherTrainingAdviser::Steps
 
     def creation_channel_source_id
       other_step(:identity).creation_channel_source_id
+    end
+
+    def creation_channel_activity_id
+      other_step(:identity).creation_channel_activity_id
     end
   end
 end

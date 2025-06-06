@@ -64,13 +64,14 @@ RSpec.describe TeacherTrainingAdviser::Steps::ReturningTeacher do
   describe "#save" do
     before do
       allow(instance).to receive(:other_step).with(:identity) {
-        instance_double(TeacherTrainingAdviser::Steps::Identity, channel_id: channel_id, creation_channel_source_id: creation_channel_source_id)
+        instance_double(TeacherTrainingAdviser::Steps::Identity, channel_id: channel_id, creation_channel_source_id: creation_channel_source_id, creation_channel_activity_id: creation_channel_activity_id)
       }
     end
 
     context "with legacy channel id" do
       let(:channel_id) { 222_750_027 }
       let(:creation_channel_source_id) { nil }
+      let(:creation_channel_activity_id) { nil }
 
       it "does not set the creation_channel_service_id" do
         subject.save
@@ -81,6 +82,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::ReturningTeacher do
     context "with new creation channel ids" do
       let(:channel_id) { nil }
       let(:creation_channel_source_id) { 222_750_003 }
+      let(:creation_channel_activity_id) { 222_750_004 }
 
       it "sets the default creation_channel_service_id to TTA if they are new" do
         subject.type_id = 222_750_000

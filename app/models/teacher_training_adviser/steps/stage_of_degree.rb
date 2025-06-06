@@ -18,7 +18,7 @@ module TeacherTrainingAdviser::Steps
     NOT_FINAL_YEAR = DEGREE_STATUS.except(:final_year)
 
     def save
-      if (creation_channel_source_id.present? || channel_id.nil?) && (tta? || !creation_channel_service_id.in?(creation_channel_service_ids))
+      if (creation_channel_source_id.present? || creation_channel_activity_id.present? || channel_id.nil?) && (tta? || !creation_channel_service_id.in?(creation_channel_service_ids))
         self.creation_channel_service_id = final_year? ? ReturningTeacher::TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID : ReturningTeacher::ETA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
       end
       super
@@ -66,6 +66,10 @@ module TeacherTrainingAdviser::Steps
 
     def creation_channel_service_ids
       other_step(:returning_teacher).creation_channel_service_ids
+    end
+
+    def creation_channel_activity_id
+      other_step(:identity).creation_channel_activity_id
     end
   end
 end

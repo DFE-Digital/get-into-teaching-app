@@ -25,8 +25,8 @@ module Events
       end
 
       def save
-        if creation_channel_source_id.nil? && channel_id.present? && channel_id.in?(legacy_channel_ids)
-          # if the new creation_channel_source_id is missing and a valid legacy channel_id is provided, use the legacy channel only
+        if creation_channel_source_id.blank? && creation_channel_service_id.blank? && creation_channel_activity_id.blank? && channel_id.present? && channel_id.in?(legacy_channel_ids)
+          # if all the new creation_channel attributes are missing and a valid legacy channel_id is provided, use the legacy channel only
           self.creation_channel_source_id = nil
           self.creation_channel_service_id = nil
           self.creation_channel_activity_id = nil
