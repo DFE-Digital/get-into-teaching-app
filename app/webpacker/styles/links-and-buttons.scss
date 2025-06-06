@@ -71,6 +71,16 @@
   }
 }
 
+.link--padding {
+  @include mq($from: mobile) {
+    padding: 0.3rem;
+  }
+  @include mq($until: mobile) {
+    margin: 0.6rem;
+    line-height: 2;
+  }
+}
+
 ol.primary > li {
   &:focus {
     border: dotted red 1px;

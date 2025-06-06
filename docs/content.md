@@ -17,10 +17,13 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
   * [Breadcrumbs](#breadcrumbs)
   * [Links](#links)
   * [Prevent indexing](#prevent-indexing)
+  * [Adding a quote](#adding-a-quote)
+    * [Adding a quote with image component](#adding-a-quote-with-image-component)
   * [Adding a document, image or video](#adding-a-document-image-or-video)
     * [Hero images and text](#hero-images-and-text)
     * [Alt text](#alt-text)
     * [Adding YouTube videos](#adding-youtube-videos)
+    * [Transcripts](#transcripts)
     * [iframe](#iframe)
   * [Calls to action](#calls-to-action)
     * [Chat and generic CTA components](#chat-and-generic-ctas)
@@ -174,6 +177,57 @@ Whilst links are just standard Markdown, it's worth noting that if you are linki
 
 Sometimes we don't want our content pages to be indexed by Google and other search engines (often when we're A/B testing the variant should not be indexed). You can achieve this by adding a `noindex: true` entry to the page frontmatter.
 
+
+## Adding a quote
+
+To add a standard quote, render the quote in the frontmatter of your markdown file:
+
+---
+quote:
+  jennifer:
+    text: "My mentor was highly knowledgeable and experienced, and had high expectations which helped me to flourish."
+    name: "Jennifer, trainee teacher"
+    classes: quote--indent
+---
+
+To add a quote in an erb file, use the following code:
+
+```html
+<%= render Content::QuoteComponent.new(
+  text: "For me, science is all about being inquisitive. I was always the kid in class who was thinking, 'I wonder how that works, or I wonder why that does that'. I recognise that so much in the kids I teach and being able to give them the tools to develop that curiosity and knowledge is genuinely exhilarating.",
+  name: "Holly, science teacher",
+  large: false
+) %>
+```
+
+### Adding a quote with image component
+
+Add this code to a html file:
+
+```html
+<div class="row">
+  <div class="col-space-l col-space-l-top">
+    <%= render Content::QuoteWithImageComponent.new(
+      title: "Example title to go here",
+      text: "<h4>Heading if neededd</h4><p>Example information or quote</p><a href='#'>Link text/a>",
+      quotes: false,
+      background_color: "blue",
+      heading_color: "pink",
+      image_path: "static/images/content/hero-images/0034.jpg"
+    ) %>
+  </div>
+</div>
+```
+You can edit the colours used such as "yellow", "pink", "green", "blue" and "purple". You can also specify whether you want the quote marks to appear by using true or false in the quotes parameter. For shorter quotes its better to use an image with a height cropped to around 300 pixels.
+
+When using in a Markdown file, copy the above code into a new html file and link to the file in the Markdown code, in the same way you would when creating a subject page:
+
+```html
+content: 
+  - "content/life-as-a-teacher/pay-and-benefits/quote" 
+```
+
+
 ### Adding a document, image or video
 
 If you need to include a link to a document or embed an image in your page content you'll need to first add the file to the repository. Any documents should be placed in `/app/webpacker/documents` and images in `/app/webpacker/images/content` (under a subdirectory if suitable). You can then reference the files in your Markdown content (note the paths used to reference here will differ to the location of the file - use `/media` instead of `/app/webpacker`):
@@ -249,6 +303,45 @@ youtube_video:
     id: 2NrLm_XId4k
     title: A video about what Return to Teaching Advisers do
     orientation: portrait
+---
+```
+#### Transcripts
+
+Every video added to the website must have a transcript. A transcript is the text of all the content in a video, presented separately from it.
+
+Transcripts offer an alternative way to engage with content for users with access needs. They are also often found useful for other users. For example, some people may prefer to read content rather than watch a video.
+
+Transcripts must:
+
+* be linked underneath the video
+* include all audio and visual information in the video, for example speaker names
+
+If you auto-generate a transcript, you must check it for accuracy.
+
+Transcript page files should be created in the 'content/shared/transcripts' folder.
+
+Example of a link to a video transcript:
+```yaml
+Read the [transcript for the video 'What teaching taught me - Josh'](/shared/transcripts/what-teaching-taught-me-josh).
+```
+
+```yaml
+<p>Read the <a href="/shared/transcripts/what-teaching-taught-me-josh">transcript for the 'What teaching taught me - Josh' video</a>.</p>
+```
+
+Example of a video transcript:
+```
+---
+title: Transcript for the video 'What teaching taught me - Josh'
+description: Full transcript for the video 'What teaching taught me - Josh'
+---
+My name’s Josh. I teach science, specifically biology. I did want to be a physiotherapist, went through university, soon realised that it wasn’t for me. I went into a school and then it just clicked straight away.
+
+My confidence has grown outside of school, partially because of teaching, because you understand who you are more.
+
+Working with students with special educational needs, of which I am and was one of those students. Helping me understand my deafness, teaching my students sign and what it’s like to be someone that’s deaf. I ask a whole class to answer in a sign letter or a sign word. It really helps and informs your practice.
+
+After a couple of years, I became a deputy head of year, which is a pastoral responsibility. After a year of that, I then became a head of year. My school has over 1,400 students in it. To be a leader in the leadership team of that school, the impact you can have is huge. That’s the next step that I’m taking.
 ---
 ```
 
@@ -953,33 +1046,6 @@ And copy and paste an exiting card such as:
 ```
 
 Update the title, description and image as required.
-
-## Add a quote with image component
-
-Add this code to a html file:
-
-```html
-<div class="row">
-  <div class="col-space-l col-space-l-top">
-    <%= render Content::QuoteWithImageComponent.new(
-      title: "Example title to go here",
-      text: "<h4>Heading if neededd</h4><p>Example information or quote</p><a href='#'>Link text/a>",
-      quotes: false,
-      background_color: "blue",
-      heading_color: "pink",
-      image_path: "static/images/content/hero-images/0034.jpg"
-    ) %>
-  </div>
-</div>
-```
-You can edit the colours used such as "yellow", "pink", "green", "blue" and "purple". You can also specify whether you want the quote marks to appear by using true or false in the quotes parameter. For shorter quotes its better to use an image with a height cropped to around 300 pixels.
-
-When using in a Markdown file, copy the above code into a new html file and link to the file in the Markdown code, in the same way you would when creating a subject page:
-
-```html
-content: 
-  - "content/life-as-a-teacher/pay-and-benefits/quote" 
-```
 
 ## Saving a change
 When you have made a change in Visual Studio Code and want to save your work.

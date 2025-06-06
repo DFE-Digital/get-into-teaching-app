@@ -336,12 +336,12 @@ provider_groups:
       international_phone: "+447549025620"
       
     - header: "Kingsbridge EIP SCITT"
+      link: "https://www.kingsbridgeteachertraining.co.uk/contact"
+      name: "Alaina Shawcross"
+      email: "kingsbridge@cfat.org.uk"
+      telephone: "01254 686178"
+      international_phone: "+441254686178"
       
-      name: "Gail Thomson"
-      email: "g.thomson@kingsbridgeeip.co.uk"
-      telephone: "01942 510712"
-      international_phone: "+441942510712"
-      extension: "ext 500"
     - header: "London School of Jewish Studies"
       link: "https://www.lsjs.ac.uk/assessment-only.php"
       name: "Galia Segal"
@@ -355,6 +355,13 @@ provider_groups:
       email: "merseyboroughsitt@knowsley.gov.uk"
       telephone: "0151 443 2663"
       international_phone: "+441514432663"
+      
+    - header: "One Cumbria SCITT"
+      link: "https://onecumbria.education/initial-teacher-training/"
+      name: "Tina Beddoe"
+      email: "beddoet@onecumbria.education"
+      telephone: "07739901777"
+      international_phone: "+447739901777"
       
     - header: "Prestolee SCITT"
       link: "https://www.prestoleescitt.org.uk/assessment-only-qts"
@@ -429,7 +436,7 @@ provider_groups:
       
       
     - header: "OTT SCITT"
-      link: "https://www.ott-scitt.org.uk/aor"
+      link: "https://ott-scitt.org.uk/aor/"
       name: "Marion Rawlings"
       email: "AOR@ott-scitt.org.uk"
       telephone: "01865 518209"
@@ -529,7 +536,7 @@ provider_groups:
       international_phone: "+441458449418"
       
     - header: "OTT SCITT"
-      link: "https://www.ott-scitt.org.uk/aor"
+      link: "https://ott-scitt.org.uk/aor/"
       name: "Marion Rawlings"
       email: "AOR@ott-scitt.org.uk"
       telephone: "01865 518209"
@@ -541,6 +548,13 @@ provider_groups:
       email: "SCIL@somerset.gov.uk"
       telephone: "0300 123 1967"
       international_phone: "+443001231967"
+      
+    - header: "Ted Wragg Teacher Training Partnership"
+      link: "https://www.tedwraggtrust.co.uk/page/?title=Train+to+Teach&pid=25"
+      name: "Carrie McMillan"
+      email: "carrie.mcmillan@tedwraggtrust.co.uk"
+      telephone: "01392 686165"
+      international_phone: "+441392686165"
       
     - header: "University of Reading"
       link: "https://www.reading.ac.uk/education/pgce-qts-and-eyts/assessment-only"
@@ -665,13 +679,6 @@ provider_groups:
       
       
       
-    - header: "Vantage North Humber Teacher Training"
-      link: "https://www.vnhtt.org/"
-      name: "Jonathan Boden"
-      email: "jboden@smchull.org"
-      telephone: "01482 851136"
-      international_phone: "+441482851136"
-      
   Outside of the UK:
     description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
@@ -710,6 +717,13 @@ provider_groups:
       telephone: "020 7932 1129"
       international_phone: "+442079321129"
       
+    - header: "Ted Wragg Teacher Training Partnership"
+      link: "https://www.tedwraggtrust.co.uk/page/?title=Train+to+Teach&pid=25"
+      name: "Carrie McMillan"
+      email: "carrie.mcmillan@tedwraggtrust.co.uk"
+      telephone: "01392 686165"
+      international_phone: "+441392686165"
+      
     - header: "Tes Institute"
       link: "https://www.tes.com/institute"
       name: "Andrew Locke"
@@ -745,12 +759,6 @@ provider_groups:
       telephone: "0191 515 2159"
       international_phone: "+441915152159"
       
-    - header: "Vantage North Humber Teacher Training"
-      link: "https://www.vnhtt.org/"
-      name: "Jonathan Boden"
-      email: "jboden@smchull.org"
-      telephone: "01482 851136"
-      international_phone: "+441482851136"
 ---
 
 If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) through an assessment only programme.

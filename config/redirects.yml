@@ -100,6 +100,7 @@ redirects:
   "/node/2339": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
   "/node/2469": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
   "/node/272": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
+  "/how-to-apply-for-teacher-training/ske-explained-transcript": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
 
   # Legacy site path redirects
   "/get-help-and-support/teacher-training-advisers": "/teacher-training-advisers"
@@ -513,3 +514,12 @@ redirects:
 
   # Old search --> A to Z sitemap
   "/search": "/sitemap"
+
+  # Removing the welcome guide
+  "/welcome": "/life-as-a-teacher"
+  "/welcome/my-journey-into-teaching": "/life-as-a-teacher"
+  "/welcome/andrews-story": "/life-as-a-teacher"
+  "/welcome/jacks-story": "/life-as-a-teacher"
+  "/welcome/yvonnes-story": "/life-as-a-teacher"
+  "/welcome/email/subject/(*subject)": "/life-as-a-teacher"
+  "/welcome/email/degree-status/(*degree_status)": "/life-as-a-teacher"

@@ -49,7 +49,6 @@ describe MailingList::Wizard do
   end
 
   describe "#complete!" do
-    let(:variant) { "/email/subject/physics/degree-status/graduate_or_postgraduate" }
     let(:request) do
       GetIntoTeachingApiClient::MailingListAddMember.new({
         email: wizardstore[:email],
@@ -58,7 +57,6 @@ describe MailingList::Wizard do
         degree_status_id: degree_status_id,
         consideration_journey_stage_id: consideration_journey_stage_id,
         preferred_teaching_subject_id: wizardstore[:preferred_teaching_subject_id],
-        welcome_guide_variant: variant,
         accepted_policy_id: wizardstore[:accepted_policy_id],
         graduation_year: wizardstore[:graduation_year],
       })
@@ -123,7 +121,6 @@ describe MailingList::Wizard do
         "firstName" => "[FILTERED]",
         "lastName" => "[FILTERED]",
         "addressPostcode" => nil,
-        "welcomeGuideVariant" => variant,
         "graduationYear" => "2025",
       }.to_json
 

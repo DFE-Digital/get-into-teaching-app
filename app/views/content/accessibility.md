@@ -50,16 +50,11 @@ This website is partially compliant with the WCAG (Web Content Accessibility Gui
 
 ### Non-accessible content
 
-The content is non-accessible for the following reasons:
+We have two videos that do not meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded). These videos are titled "What happens at a Get Into Teaching event" and "Why train to teach in England". We plan to add audio descriptions to these videos by September 2025. When we publish new content, we will ensure that our use of videos meets accessibility standards.
 
-* some of the non-verbal information presented in videos on the site is not included in audio descriptions. This fails to meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded)
-* on the [bursaries and scholarship page](/funding-and-support/scholarships-and-bursaries) and in the welcome guide, some content is cut off the screen at 400% zoom. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow)
+On the subject question of our teacher training adviser sign up journey (/teacher-training-adviser/sign_up/what_subject_degree), the error message 'You need to choose a degree subject' is not programmatically linked to the field and is not announced by screen reader. This fails to meet [WCAG 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships). We plan to fix this by August 2025.
 
-#### Webchat
-
-The webchat content is non-accessible for the following reasons:
-
-* on the Tell us about yourself page, the error message is not programmatically associated with the field and is not announced by screen readers when tabbing onto the field itself. This fails to meet [WCAG 2.2 A - 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships)
+Throughout the personalised email sign up journey (/mailinglist/signup) and adviser sign up journey (/teacher-training-adviser/sign_up), the page titles do not indicate to users which journey they are on; they only convey the current step. This includes the final completion pages. This fails to meet [WCAG 2.4.2 Page titled](https://www.w3.org/WAI/WCAG22/Understanding/page-titled). We plan to fix this by August 2025.
 
 ## What we're doing to improve accessibility
 
@@ -69,6 +64,6 @@ We’ll continue to test the accessibility of this service as it develops.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 5 March 2025. It was last reviewed on 29 April 2025.
+This statement was prepared on 5 March 2025. It was last reviewed on 3 June 2025.
 
 This website was last tested independently on 25 February 2025. The test was carried out by the Government Digital Service.
