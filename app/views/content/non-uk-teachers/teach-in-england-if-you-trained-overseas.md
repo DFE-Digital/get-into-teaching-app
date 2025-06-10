@@ -9,11 +9,6 @@ navigation_title: Teach in England as a non-UK qualified teacher
 navigation_description: Find out how you can bring your skills and perspective to an English classroom if you qualified to teach outside the UK.
 image: "static/images/content/hero-images/0034.jpg"
 backlink: "../../"
-inset_text:
-  new-international-funding:
-    text: |-
-      If you are a non-UK teacher interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/get-an-international-relocation-payment">international relocation payment worth up to $nonuk_internationalrelocationpayment_value$</a>.
-
 expander:
   ukraine-moving:
     header: "Ukraine citizens:"
@@ -43,8 +38,6 @@ cta_arrow_link:
     link_target: "https://teaching-vacancies.service.gov.uk/jobs?visa_sponsorship_availability%5B%5D=true"
     link_text: "Search for teaching jobs with visa sponsorship"
 ---
-
-$new-international-funding$
 
 Teaching in England offers exciting opportunities, including:
 
@@ -89,11 +82,7 @@ You can prepare for these checks by getting a letter from the organisation which
 
 ## Financial support
 
-You may be eligible for:
-
-* a [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) if you teach chemistry, computing, maths or physics 
-
-* the [international relocation payment (IRP)](/non-uk-teachers/get-an-international-relocation-payment) if you teach languages or physics
+You may be eligible for a [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) if you teach chemistry, computing, maths or physics 
 
 ## Teach in Wales, Scotland or Northern Ireland
 
