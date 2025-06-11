@@ -30,7 +30,7 @@ describe MailingList::Wizard do
     it do
       is_expected.to eql [
         MailingList::Steps::Name,
-        ::GITWizard::Steps::Authenticate,
+        MailingList::Steps::Authenticate,
         MailingList::Steps::AlreadySubscribed,
         MailingList::Steps::ReturningTeacher,
         MailingList::Steps::AlreadyQualified,
