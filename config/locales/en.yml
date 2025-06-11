@@ -840,6 +840,14 @@ en:
         first_name: First name
         last_name: Last name
         email: Email address
+      mailing_list_steps_authenticate:
+        title: "You're already registered with us"
+      mailing_list_steps_already_qualified:
+        title: "We're sorry, but our emails are for people who are not already qualified to teach"
+      mailing_list_steps_already_subscribed:
+        title: "You've already signed up"
+
+
       mailing_list_steps_degree_status:
         degree_status_id: Do you have a degree?
       mailing_list_steps_teacher_training:
@@ -947,6 +955,8 @@ en:
       teacher_training_adviser_steps_uk_callback:
         fieldset: "You told us you have an equivalent degree and live in the United Kingdom"
 
+      mailing_list_steps_returning_teacher:
+        qualified_to_teach: "Are you already qualified to teach?"
 
 
   internal:
