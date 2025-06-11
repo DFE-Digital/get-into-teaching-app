@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-api-dev.london.cloudapps.digital/api/pick_list_items/contact_creation_channel/activities
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/3.5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer test
+      Request-Id:
+      - 99c7ade5-7ae5-4fb9-89f9-8e83b03e56a9
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '[{"id":222750000,"value":"Brand ambassador activity"},{"id":222750001,"value":"British
+        Council"},{"id":222750002,"value":"BRFS"},{"id":222750003,"value":"BCS"},{"id":222750004,"value":"Careers
+        event"},{"id":222750005,"value":"CTP"},{"id":222750006,"value":"Debate Mate"},{"id":222750007,"value":"Engineers
+        Teach Physics"},{"id":222750008,"value":"Freshers fairs"},{"id":222750009,"value":"F2F"},{"id":222750010,"value":"Grad
+        fairs"},{"id":222750011,"value":"Institute of Physics"},{"id":222750012,"value":"IMECHE"},{"id":222750013,"value":"IMA"},{"id":222750014,"value":"NTP"},{"id":222750015,"value":"Onsite
+        activation days"},{"id":222750016,"value":"Over 18 Careers event"},{"id":222750017,"value":"Quickfire
+        sign-up on Apply"},{"id":222750018,"value":"Refreshers fairs"},{"id":222750019,"value":"Russell
+        Group 6"},{"id":222750020,"value":"RCS"},{"id":222750021,"value":"Student
+        union media"},{"id":222750022,"value":"Student Rooms"},{"id":222750023,"value":"Service
+        Leaver"},{"id":222750024,"value":"Webinar"}]'
+  recorded_at: Mon, 20 Jan 2025 16:07:57 GMT
+recorded_with: VCR 6.3.1
