@@ -1,6 +1,5 @@
+require "i18n"
 module FunnelTitle
-  include I18n
-
   def title
     return unless title_attribute
 
