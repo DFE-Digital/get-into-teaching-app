@@ -1,6 +1,5 @@
 module TeacherTrainingAdviser::Steps
   class ReviewAnswers < GITWizard::Step
-
     include FunnelTitle
 
     def personal_detail_answers_by_step

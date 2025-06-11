@@ -38,9 +38,9 @@ module TeacherTrainingAdviser::Steps
 
     def title_attribute
       if studying?
-        'uk_degree_grade_id.studying'
+        "uk_degree_grade_id.studying"
       else
-        'uk_degree_grade_id.graduated'
+        "uk_degree_grade_id.graduated"
       end
     end
   end

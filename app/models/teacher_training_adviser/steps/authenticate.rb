@@ -1,5 +1,5 @@
 module TeacherTrainingAdviser::Steps
-  class Authenticate <  GITWizard::Steps::Authenticate
+  class Authenticate < GITWizard::Steps::Authenticate
     include FunnelTitle
 
     def title_attribute

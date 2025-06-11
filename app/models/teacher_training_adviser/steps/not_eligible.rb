@@ -1,6 +1,5 @@
 module TeacherTrainingAdviser::Steps
   class NotEligible < GITWizard::Step
-
     include FunnelTitle
 
     def can_proceed?

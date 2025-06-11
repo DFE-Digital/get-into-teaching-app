@@ -5,8 +5,8 @@ module FunnelTitle
     return unless title_attribute
 
     title_scope = title_base_scopes
-                    .map{ |scope| scope << title_class_name_scope }
-                    .find{ |scope| I18n.exists?(title_attribute, scope: scope) }
+                    .map { |scope| scope << title_class_name_scope }
+                    .find { |scope| I18n.exists?(title_attribute, scope: scope) }
     if title_scope
       I18n.t title_attribute, scope: title_scope
     end
@@ -22,8 +22,8 @@ module FunnelTitle
 
   def title_base_scopes
     [
-      [:helpers, :legend],
-      [:helpers, :label]
+      %i[helpers legend],
+      %i[helpers label],
     ]
   end
 

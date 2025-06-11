@@ -1,6 +1,5 @@
 module TeacherTrainingAdviser::Steps
   class NoDegree < GITWizard::Step
-
     include FunnelTitle
 
     def can_proceed?

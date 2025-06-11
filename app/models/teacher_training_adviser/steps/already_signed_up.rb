@@ -1,6 +1,5 @@
 module TeacherTrainingAdviser::Steps
   class AlreadySignedUp < GITWizard::Step
-
     include FunnelTitle
 
     def skipped?
