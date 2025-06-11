@@ -6,6 +6,8 @@ module TeacherTrainingAdviser::Steps
 
     validates :country_id, lookup_items: { method: :get_countries }
 
+    include FunnelTitle
+
     OMIT_COUNTRY_IDS = [
       "76f5c2e6-74f9-e811-a97a-000d3a2760f2", # Unknown
       "72f5c2e6-74f9-e811-a97a-000d3a2760f2", # United Kingdom
@@ -32,10 +34,6 @@ module TeacherTrainingAdviser::Steps
       super.tap do |answers|
         answers["country_id"] = country_name
       end
-    end
-
-    def title
-      "country"
     end
 
   private

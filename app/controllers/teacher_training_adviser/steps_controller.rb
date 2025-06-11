@@ -91,15 +91,19 @@ module TeacherTrainingAdviser
     end
 
     def set_step_page_title
-      @page_title = "Get a free adviser"
+      if @current_step.present? && @current_step.title
+        @page_title = @current_step.title
 
-      if @current_step&.title
-        @page_title += ", #{@current_step.title.downcase} step"
+        unless @current_step.respond_to?(:skip_title_suffix?) && @current_step.skip_title_suffix?
+          @page_title << " - Adviser sign up"
+        end
+      else
+        @page_title = "Adviser sign up"
       end
     end
 
     def set_completed_page_title
-      @page_title = "Get a free adviser, sign up completed"
+      @page_title = "You're signed up"
     end
   end
 end

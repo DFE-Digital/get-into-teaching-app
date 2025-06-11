@@ -10,6 +10,8 @@ module TeacherTrainingAdviser::Steps
 
     OPTIONS = { primary: 222_750_000, secondary: 222_750_001 }.freeze
 
+    include FunnelTitle
+
     def reviewable_answers
       super.tap do |answers|
         answers["stage_taught_id"] = OPTIONS.key(stage_taught_id).to_s.capitalize
@@ -30,10 +32,6 @@ module TeacherTrainingAdviser::Steps
 
     def stage_taught_primary?
       stage_taught_id == OPTIONS[:primary]
-    end
-
-    def title
-      "stage trained to teach"
     end
   end
 end

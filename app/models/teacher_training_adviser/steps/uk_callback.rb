@@ -13,6 +13,8 @@ module TeacherTrainingAdviser::Steps
       self.address_telephone = address_telephone.to_s.strip.presence
     end
 
+    include FunnelTitle
+
     def self.contains_personal_details?
       true
     end
@@ -38,6 +40,10 @@ module TeacherTrainingAdviser::Steps
       equivalent_degree = have_a_degree_step.degree_options == HaveADegree::DEGREE_OPTIONS[:equivalent]
 
       uk_address_skipped || have_a_degree_skipped || !equivalent_degree
+    end
+
+    def title_attribute
+      :fieldset
     end
   end
 end

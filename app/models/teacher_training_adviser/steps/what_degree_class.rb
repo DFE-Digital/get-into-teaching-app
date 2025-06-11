@@ -9,6 +9,8 @@ module TeacherTrainingAdviser::Steps
 
     attribute :uk_degree_grade_id, :integer
 
+    include FunnelTitle
+
     def self.options
       generate_api_options(GetIntoTeachingApiClient::PickListItemsApi, :get_qualification_uk_degree_grades, OMIT_GRADE_IDS)
     end
@@ -34,8 +36,12 @@ module TeacherTrainingAdviser::Steps
       end
     end
 
-    def title
-      "degree class"
+    def title_attribute
+      if studying?
+        'uk_degree_grade_id.studying'
+      else
+        'uk_degree_grade_id.graduated'
+      end
     end
   end
 end
