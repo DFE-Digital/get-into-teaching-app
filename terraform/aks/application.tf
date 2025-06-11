@@ -1,5 +1,5 @@
 locals {
-  environment  = "${var.environment}${var.pr_number}"
+  environment = "${var.environment}${var.pr_number}"
 }
 
 module "application_configuration" {
@@ -24,13 +24,13 @@ module "application_configuration" {
   secret_variables = {
     DATABASE_URL = module.postgres.url
     REDIS_URL    = module.redis-cache.url
-# below added from paas config
+    # below added from paas config
     HTTPAUTH_PASSWORD = module.infrastructure_secrets.map.HTTP-PASSWORD,
     HTTPAUTH_USERNAME = module.infrastructure_secrets.map.HTTP-USERNAME,
     BASIC_AUTH        = var.basic_auth,
     APP_URL           = length(var.internet_hostnames) == 0 ? "" : "https://${var.internet_hostnames[0]}.education.gov.uk",
-#   keeping here as a reminder, but went be set in aks and need to confirm impact
-    APP_ASSETS_URL    = length(var.asset_hostnames) == 0 ? "" : "https://${var.asset_hostnames[0]}.education.gov.uk"
+    #   keeping here as a reminder, but went be set in aks and need to confirm impact
+    APP_ASSETS_URL           = length(var.asset_hostnames) == 0 ? "" : "https://${var.asset_hostnames[0]}.education.gov.uk"
     GOOGLE_CLOUD_CREDENTIALS = var.enable_dfe_analytics_federated_auth ? module.dfe_analytics[0].google_cloud_credentials : null
   }
 }
@@ -38,84 +38,27 @@ module "application_configuration" {
 # Run database migrations
 # https://guides.rubyonrails.org/active_record_migrations.html#preparing-the-database
 # Terraform waits for this to complete before starting web_application and worker_application
-resource "kubernetes_job" "migrations" {
-  metadata {
-    name      = "${var.service_name}-${local.environment}-migrations"
-    namespace = var.namespace
-  }
+module "migrations" {
+  source = "./vendor/modules/aks//aks/job_configuration"
+  depends_on = [module.postgres,module.redis-cache]
 
-  spec {
-    template {
-      metadata {
-        labels = { app = "${var.service_name}-${local.environment}-migrations" }
-        annotations = {
-          "logit.io/send"        = "true"
-          "fluentbit.io/exclude" = "true"
-        }
-      }
+  namespace    = var.namespace
+  environment  = local.environment
+  service_name = var.service_name
+  docker_image = var.docker_image
+  commands     = ["bundle"]
+  arguments    = ["exec", "rails", "db:prepare"]
+  job_name     = "migrations"
+  enable_logit = var.enable_logit
 
-      spec {
-        container {
-          name    = "migrate"
-          image   = var.docker_image
-          command = ["bundle"]
-          args    = ["exec", "rails", "db:prepare"]
-
-          env_from {
-            config_map_ref {
-              name = module.application_configuration.kubernetes_config_map_name
-            }
-          }
-
-          env_from {
-            secret_ref {
-              name = module.application_configuration.kubernetes_secret_name
-            }
-          }
-
-          resources {
-            requests = {
-              cpu    = module.cluster_data.configuration_map.cpu_min
-              memory = "1Gi"
-            }
-            limits = {
-              cpu    = 1
-              memory = "1Gi"
-            }
-          }
-
-          security_context {
-            allow_privilege_escalation = false
-
-            seccomp_profile {
-              type = "RuntimeDefault"
-            }
-
-            capabilities {
-              drop = ["ALL"]
-              add  = ["NET_BIND_SERVICE"]
-            }
-          }
-        }
-
-        restart_policy = "Never"
-      }
-    }
-
-    backoff_limit = 1
-  }
-
-  wait_for_completion = true
-
-  timeouts {
-    create = "11m"
-    update = "11m"
-  }
+  config_map_ref = module.application_configuration.kubernetes_config_map_name
+  secret_ref     = module.application_configuration.kubernetes_secret_name
+  cpu            = module.cluster_data.configuration_map.cpu_min
 }
 
 module "web_application" {
-  source = "./vendor/modules/aks//aks/application"
-  depends_on = [kubernetes_job.migrations]
+  source     = "./vendor/modules/aks//aks/application"
+  depends_on = [module.migrations]
 
   is_web = true
 
@@ -134,12 +77,12 @@ module "web_application" {
   docker_image = var.docker_image
   enable_logit = var.enable_logit
 
-  enable_prometheus_monitoring  = var.enable_prometheus_monitoring
+  enable_prometheus_monitoring = var.enable_prometheus_monitoring
 }
 
 module "worker_application" {
-  source                     = "./vendor/modules/aks//aks/application"
-  depends_on = [kubernetes_job.migrations]
+  source     = "./vendor/modules/aks//aks/application"
+  depends_on = [module.migrations]
 
   name                       = "worker"
   is_web                     = false
@@ -155,7 +98,7 @@ module "worker_application" {
   replicas                   = var.sidekiq_replicas
   enable_logit               = var.enable_logit
 
-  enable_prometheus_monitoring  = var.enable_prometheus_monitoring
+  enable_prometheus_monitoring = var.enable_prometheus_monitoring
 
   enable_gcp_wif = true
 }
