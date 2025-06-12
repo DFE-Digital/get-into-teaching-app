@@ -45,7 +45,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_title("Free personalised teacher training guidance, sign up completed | Get Into Teaching")
-    expect(page).to have_text "Test, you're signed up")
+    expect(page).to have_text "Test, you're signed up"
   end
 
   scenario "Full journey as an on-campus candidate" do
