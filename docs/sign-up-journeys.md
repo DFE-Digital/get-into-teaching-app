@@ -20,12 +20,7 @@ graph TD;
 
   subject --> postcode["What's your UK postcode? (optional)"]
   
-  postcode --> offer_callback{Offer callback?}
-  
-  offer_callback -- Slots Available --> completed_with_callback["You've signed up with Book a Callback link"]
-  offer_callback -- No Slots Available --> completed[You've signed up] 
-
-  completed_with_callback --> book_a_callback[Book a Callback]
+  postcode --> completed[You've signed up] 
 ```
 
 ## Event sign up flow
