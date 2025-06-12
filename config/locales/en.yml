@@ -710,6 +710,7 @@ en:
         timed_one_time_password: "Enter your verification code:"
 
       teacher_training_adviser_steps_identity:
+        title: "Get a free adviser"
         first_name: "First name"
         last_name: "Last name"
         email: "Email address"
