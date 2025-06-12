@@ -8,6 +8,8 @@ module TeacherTrainingAdviser::Steps
       self.address_telephone = address_telephone.to_s.strip.presence
     end
 
+    include FunnelTitle
+
     def self.contains_personal_details?
       true
     end
@@ -30,8 +32,8 @@ module TeacherTrainingAdviser::Steps
       overseas_country_skippped || equivalent_degree
     end
 
-    def title
-      "international telephone"
+    def title_attribute
+      :fieldset
     end
   end
 end

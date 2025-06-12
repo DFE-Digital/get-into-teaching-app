@@ -16,6 +16,8 @@ module TeacherTrainingAdviser::Steps
 
     NOT_FINAL_YEAR = DEGREE_STATUS.except(:final_year)
 
+    include FunnelTitle
+
     def skipped?
       have_a_degree_step = other_step(:have_a_degree)
       studying = have_a_degree_step.degree_options == HaveADegree::DEGREE_OPTIONS[:studying]
@@ -36,10 +38,6 @@ module TeacherTrainingAdviser::Steps
 
     def self.options
       generate_api_options(GetIntoTeachingApiClient::PickListItemsApi, :get_qualification_degree_status, nil, DEGREE_STATUS.values)
-    end
-
-    def title
-      "degree stage"
     end
   end
 end

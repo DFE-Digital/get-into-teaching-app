@@ -6,6 +6,8 @@ module TeacherTrainingAdviser::Steps
 
     NOT_SURE_ID = 12_917
 
+    include FunnelTitle
+
     def reviewable_answers
       super.tap do |answers|
         answers["initial_teacher_training_year_id"] = years.find { |y| y.id == initial_teacher_training_year_id }&.value
@@ -43,10 +45,6 @@ module TeacherTrainingAdviser::Steps
                       end
 
       itt_years.find { |item| item.value == inferred_year.to_s }&.id
-    end
-
-    def title
-      "teacher training year"
     end
 
   private

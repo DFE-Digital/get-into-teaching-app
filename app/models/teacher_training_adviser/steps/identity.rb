@@ -3,6 +3,8 @@ module TeacherTrainingAdviser::Steps
     attribute :channel_id, :integer
     attribute :sub_channel_id
 
+    include FunnelTitle
+
     def export
       super.without("sub_channel_id")
     end
@@ -21,8 +23,12 @@ module TeacherTrainingAdviser::Steps
       super
     end
 
-    def title
-      nil
+    def title_attribute
+      :title
+    end
+
+    def skip_title_suffix?
+      true
     end
 
   private

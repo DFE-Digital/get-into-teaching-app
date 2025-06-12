@@ -4,6 +4,8 @@ module TeacherTrainingAdviser::Steps
 
     validates :preferred_teaching_subject_id, lookup_items: { method: :get_teaching_subjects }
 
+    include FunnelTitle
+
     def self.options
       Crm::TeachingSubject.all_without_primary
     end
@@ -17,10 +19,6 @@ module TeacherTrainingAdviser::Steps
       super.tap do |answers|
         answers["preferred_teaching_subject_id"] = Crm::TeachingSubject.lookup_by_uuid(preferred_teaching_subject_id)
       end
-    end
-
-    def title
-      "subject you want to teach"
     end
   end
 end

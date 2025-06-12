@@ -6,6 +6,8 @@ module TeacherTrainingAdviser::Steps
 
     OPTIONS = Crm::BooleanType::ALL
 
+    include FunnelTitle
+
     def reviewable_answers
       super.tap do |answers|
         answers["planning_to_retake_gcse_maths_and_english_id"] =
@@ -20,10 +22,6 @@ module TeacherTrainingAdviser::Steps
       has_gcse_maths_english = has_gcse_maths_and_english_id != GcseMathsEnglish::OPTIONS["No"]
 
       gcse_maths_english_skipped || has_gcse_maths_english
-    end
-
-    def title
-      "retake english and maths gcses"
     end
   end
 end

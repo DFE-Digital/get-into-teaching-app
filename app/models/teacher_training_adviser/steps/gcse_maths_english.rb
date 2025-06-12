@@ -6,6 +6,8 @@ module TeacherTrainingAdviser::Steps
 
     OPTIONS = Crm::BooleanType::ALL
 
+    include FunnelTitle
+
     def reviewable_answers
       super.tap do |answers|
         answers["has_gcse_maths_and_english_id"] = OPTIONS.key(has_gcse_maths_and_english_id).to_s.capitalize
@@ -14,10 +16,6 @@ module TeacherTrainingAdviser::Steps
 
     def skipped?
       other_step(:what_degree_class).skipped?
-    end
-
-    def title
-      "english and maths gcses"
     end
   end
 end

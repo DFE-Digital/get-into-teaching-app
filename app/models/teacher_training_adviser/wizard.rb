@@ -14,7 +14,7 @@ module TeacherTrainingAdviser
 
     self.steps = [
       Steps::Identity,
-      GITWizard::Steps::Authenticate,
+      Steps::Authenticate,
       Steps::AlreadySignedUp,
       Steps::ReturningTeacher,
       Steps::HasTeacherId,

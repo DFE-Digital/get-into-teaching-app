@@ -6,6 +6,8 @@ module TeacherTrainingAdviser::Steps
 
     validates :type_id, pick_list_items: { method: :get_candidate_types }
 
+    include FunnelTitle
+
     def returning_to_teaching
       type_id == OPTIONS[:returning_to_teaching]
     end

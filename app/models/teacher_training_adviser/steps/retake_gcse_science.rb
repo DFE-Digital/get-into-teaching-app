@@ -6,6 +6,8 @@ module TeacherTrainingAdviser::Steps
 
     OPTIONS = Crm::BooleanType::ALL
 
+    include FunnelTitle
+
     def reviewable_answers
       super.tap do |answers|
         answers["planning_to_retake_gcse_science_id"] =

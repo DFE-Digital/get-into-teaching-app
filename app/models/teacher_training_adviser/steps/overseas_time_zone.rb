@@ -13,6 +13,8 @@ module TeacherTrainingAdviser::Steps
       self.address_telephone = address_telephone.to_s.strip.presence
     end
 
+    include FunnelTitle
+
     def self.contains_personal_details?
       true
     end
@@ -45,8 +47,8 @@ module TeacherTrainingAdviser::Steps
       overseas_country_skipped || !equivalent_degree
     end
 
-    def title
-      "contact details and timezone"
+    def title_attribute
+      :fieldset
     end
   end
 end

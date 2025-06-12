@@ -6,16 +6,14 @@ module TeacherTrainingAdviser::Steps
 
     before_validation :sanitize_input
 
+    include FunnelTitle
+
     def self.contains_personal_details?
       true
     end
 
     def skipped?
       other_step(:uk_or_overseas).uk_or_overseas != UkOrOverseas::OPTIONS[:uk]
-    end
-
-    def title
-      "postcode"
     end
 
   private

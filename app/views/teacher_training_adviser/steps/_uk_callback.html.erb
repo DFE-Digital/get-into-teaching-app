@@ -1,4 +1,4 @@
-<%= f.govuk_fieldset legend: { text: "You told us you have an equivalent degree and live in the United Kingdom", tag: "h1" } do %>
+<%= f.govuk_fieldset legend: { text: t("helpers.legend.teacher_training_adviser_steps_uk_callback.fieldset"), tag: "h1" } do %>
 
 <% if f.object.class.callback_booking_quotas.any? %>
   <p>You need to book a callback with us to check your degree. We will contact you once your call is booked.</p>

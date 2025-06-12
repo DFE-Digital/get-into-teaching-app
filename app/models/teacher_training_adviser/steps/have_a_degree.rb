@@ -24,6 +24,8 @@ module TeacherTrainingAdviser::Steps
 
     validates :degree_options, inclusion: { in: DEGREE_OPTIONS.values }
 
+    include FunnelTitle
+
     def degree_options=(value)
       super
       set_degree_status

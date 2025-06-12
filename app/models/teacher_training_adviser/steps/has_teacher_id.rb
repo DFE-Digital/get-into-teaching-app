@@ -4,6 +4,8 @@ module TeacherTrainingAdviser::Steps
 
     validates :has_id, inclusion: { in: [true, false] }
 
+    include FunnelTitle
+
     def reviewable_answers
       super.tap do |answers|
         answers["has_id"] = has_id ? "Yes" : "No"
@@ -15,10 +17,6 @@ module TeacherTrainingAdviser::Steps
       returning_teacher = other_step(:returning_teacher).returning_to_teaching
 
       !returning_teacher || teacher_id_prefilled
-    end
-
-    def title
-      "have teacher reference number"
     end
   end
 end

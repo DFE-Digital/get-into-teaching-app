@@ -6,6 +6,8 @@ module TeacherTrainingAdviser::Steps
 
     validates :degree_subject, presence: true
 
+    include FunnelTitle
+
     def initialize(wizard, store, attributes = {}, *args)
       super
       assign_attributes({ degree_subject_nojs: degree_subject })
@@ -25,10 +27,6 @@ module TeacherTrainingAdviser::Steps
       ].none?(degree_options)
 
       have_a_degree_skipped || not_studying_or_have_a_degree
-    end
-
-    def title
-      "degree subject"
     end
   end
 end

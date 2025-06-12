@@ -6,6 +6,8 @@ module TeacherTrainingAdviser::Steps
 
     validates :uk_or_overseas, inclusion: { in: OPTIONS.values }
 
+    include FunnelTitle
+
     def uk?
       uk_or_overseas == OPTIONS[:uk]
     end
@@ -14,10 +16,6 @@ module TeacherTrainingAdviser::Steps
       {
         "uk_or_overseas" => uk_or_overseas,
       }
-    end
-
-    def title
-      "location"
     end
   end
 end

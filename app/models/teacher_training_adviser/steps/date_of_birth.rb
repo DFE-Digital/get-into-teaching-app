@@ -17,6 +17,8 @@ module TeacherTrainingAdviser::Steps
     }
     before_validation :date_of_birth, :add_invalid_error
 
+    include FunnelTitle
+
     # Rescue argument error thrown by
     # validates_timeliness/extensions/multiparameter_handler.rb
     # when the user enters a DOB like `-1, -1, -2`.
