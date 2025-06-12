@@ -6,6 +6,8 @@ module MailingList
                 presence: true,
                 inclusion: { in: :teaching_subject_ids }
 
+      include FunnelTitle
+
       def teaching_subjects
         @teaching_subjects ||= query_teaching_subjects
       end

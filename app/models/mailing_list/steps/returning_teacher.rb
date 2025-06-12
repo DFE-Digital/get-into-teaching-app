@@ -4,6 +4,8 @@ module MailingList
       attribute :qualified_to_teach, :boolean
 
       validates :qualified_to_teach, inclusion: { in: [true, false], allow_blank: false }
+
+      include FunnelTitle
     end
   end
 end

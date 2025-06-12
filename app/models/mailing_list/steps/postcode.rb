@@ -9,6 +9,8 @@ module MailingList
         self.address_postcode = address_postcode.to_s.strip.upcase.presence
       end
 
+      include FunnelTitle
+
       def optional?
         true
       end

@@ -24,6 +24,8 @@ module MailingList
 
       delegate :magic_link_token_used?, to: :@wizard
 
+      include FunnelTitle
+
       def degree_status_options
         @degree_status_options ||= query_degree_status
       end

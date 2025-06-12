@@ -17,7 +17,7 @@ module MailingList
 
     self.steps = [
       Steps::Name,
-      ::GITWizard::Steps::Authenticate,
+      Steps::Authenticate,
       Steps::AlreadySubscribed,
       Steps::ReturningTeacher,
       Steps::AlreadyQualified,

@@ -62,15 +62,19 @@ module MailingList
     end
 
     def set_step_page_title
-      @page_title = "Free personalised teacher training guidance"
+      if @current_step.present? && @current_step.title
+        @page_title = @current_step.title
 
-      if @current_step&.title
-        @page_title += ", #{@current_step.title.downcase} step"
+        unless @current_step.respond_to?(:skip_title_suffix?) && @current_step.skip_title_suffix?
+          @page_title << " - Personalised guidance sign up"
+        end
+      else
+        @page_title = "Personalised guidance sign up"
       end
     end
 
     def set_completed_page_title
-      @page_title = "Free personalised teacher training guidance, sign up completed"
+      @page_title = "You're signed up for personalised guidance"
     end
 
     def set_breadcrumb
