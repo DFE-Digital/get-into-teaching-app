@@ -18,60 +18,60 @@ RSpec.describe MailingListHelper, type: :helper do
     end
   end
 
-  describe "#high_commitment?" do
+  describe "#ml_high_commitment?" do
     it "returns true for consideration_journey_stage 222750003" do
-      expect(high_commitment?(consideration_journey_stage: 222_750_003)).to be true
+      expect(ml_high_commitment?(consideration_journey_stage: 222_750_003)).to be true
     end
 
     it "returns false for other consideration_journey_stage values" do
-      expect(high_commitment?(consideration_journey_stage: 123_456_789)).to be false
+      expect(ml_high_commitment?(consideration_journey_stage: 123_456_789)).to be false
     end
   end
 
-  describe "#low_commitment?" do
+  describe "#ml_low_commitment?" do
     it "returns true for consideration_journey_stage 222750000" do
-      expect(low_commitment?(consideration_journey_stage: 222_750_000)).to be true
+      expect(ml_low_commitment?(consideration_journey_stage: 222_750_000)).to be true
     end
 
     it "returns false for other consideration_journey_stage values" do
-      expect(low_commitment?(consideration_journey_stage: 123_456_789)).to be false
+      expect(ml_low_commitment?(consideration_journey_stage: 123_456_789)).to be false
     end
   end
 
-  describe "#graduate?" do
+  describe "#ml_graduate?" do
     it "returns true for degree_status 222750000" do
-      expect(graduate?(degree_status: 222_750_000)).to be true
+      expect(ml_graduate?(degree_status: 222_750_000)).to be true
     end
 
     it "returns false for other degree_status values" do
-      expect(graduate?(degree_status: 123_456_789)).to be false
+      expect(ml_graduate?(degree_status: 123_456_789)).to be false
     end
   end
 
-  describe "#studying?" do
+  describe "#ml_studying?" do
     it "returns true for degree_status 222750006" do
-      expect(studying?(degree_status: 222_750_006)).to be true
+      expect(ml_studying?(degree_status: 222_750_006)).to be true
     end
 
     it "returns false for other degree_status values" do
-      expect(studying?(degree_status: 123_456_789)).to be false
+      expect(ml_studying?(degree_status: 123_456_789)).to be false
     end
   end
 
-  describe "#no_degree?" do
+  describe "#ml_no_degree?" do
     it "returns true for degree_status 222750004" do
-      expect(no_degree?(degree_status: 222_750_004)).to be true
+      expect(ml_no_degree?(degree_status: 222_750_004)).to be true
     end
 
     it "returns false for other degree_status values" do
-      expect(no_degree?(degree_status: 123_456_789)).to be false
+      expect(ml_no_degree?(degree_status: 123_456_789)).to be false
     end
   end
 
-  describe "#consideration_journey_stage_id" do
+  describe "#ml_consideration_journey_stage_id" do
     before do
       allow(session).to receive(:dig).with("mailinglist", "consideration_journey_stage_id").and_return(nil)
-      consideration_journey_stage_id
+      ml_consideration_journey_stage_id
     end
 
     specify "checks the welcome guide and mailing list session values" do
