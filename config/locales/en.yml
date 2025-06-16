@@ -959,7 +959,6 @@ en:
       mailing_list_steps_returning_teacher:
         qualified_to_teach: "Are you already qualified to teach?"
 
-
   internal:
     status:
       pending:

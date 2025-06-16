@@ -19,7 +19,6 @@ module TeachingEvents
       :provider_organiser,
       :provider_target_audience,
       :provider_website_url,
-      :provider_website_url,
       :providers_list,
       :readable_id,
       :start_at,
