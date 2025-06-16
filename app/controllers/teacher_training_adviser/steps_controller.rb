@@ -94,9 +94,7 @@ module TeacherTrainingAdviser
       if @current_step.present? && @current_step.title
         @page_title = @current_step.title
 
-        unless @current_step.respond_to?(:skip_title_suffix?) && @current_step.skip_title_suffix?
-          @page_title << " - Adviser sign up"
-        end
+        @page_title << " - Adviser sign up" unless @current_step.try(:skip_title_suffix?)
       else
         @page_title = "Adviser sign up"
       end
