@@ -4,6 +4,8 @@ module TeacherTrainingAdviser::Steps
 
     validates :preferred_teaching_subject_id, lookup_items: { method: :get_teaching_subjects }
 
+    include FunnelTitle
+
     def self.options
       Crm::TeachingSubject.all_without_primary
     end
@@ -20,10 +22,6 @@ module TeacherTrainingAdviser::Steps
       phase_is_not_secondary = preferred_education_phase_id != StageInterestedTeaching::OPTIONS[:secondary]
 
       have_a_degree_skipped || phase_is_not_secondary
-    end
-
-    def title
-      "subject interested in teaching"
     end
   end
 end

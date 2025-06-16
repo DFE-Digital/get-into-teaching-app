@@ -6,6 +6,8 @@ module TeacherTrainingAdviser::Steps
 
     validates :phone_call_scheduled_at, presence: true
 
+    include FunnelTitle
+
     def reviewable_answers
       {
         "callback_date" => phone_call_scheduled_at&.to_date,
@@ -23,8 +25,8 @@ module TeacherTrainingAdviser::Steps
       callback_not_offered || overseas_country_skipped || have_a_degree_skipped || !equivalent_degree
     end
 
-    def title
-      "callback time"
+    def title_attribute
+      :fieldset
     end
   end
 end

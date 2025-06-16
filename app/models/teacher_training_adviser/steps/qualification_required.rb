@@ -1,5 +1,7 @@
 module TeacherTrainingAdviser::Steps
   class QualificationRequired < GITWizard::Step
+    include FunnelTitle
+
     def can_proceed?
       false
     end
@@ -18,8 +20,12 @@ module TeacherTrainingAdviser::Steps
         (retake_gcse_science_skipped || retaking_gcse_science)
     end
 
-    def title
-      "gcses required"
+    def title_attribute
+      :title
+    end
+
+    def skip_title_suffix?
+      true
     end
   end
 end

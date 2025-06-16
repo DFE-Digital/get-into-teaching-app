@@ -2,6 +2,8 @@ module TeacherTrainingAdviser::Steps
   class PreviousTeacherId < GITWizard::Step
     attribute :teacher_id, :string
 
+    include FunnelTitle
+
     def optional?
       true
     end
@@ -16,8 +18,8 @@ module TeacherTrainingAdviser::Steps
       has_teacher_id_skipped || !has_id
     end
 
-    def title
-      "teacher reference number"
+    def title_attribute
+      :fieldset
     end
   end
 end

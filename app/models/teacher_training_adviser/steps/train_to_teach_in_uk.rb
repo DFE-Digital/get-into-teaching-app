@@ -3,6 +3,8 @@ module TeacherTrainingAdviser::Steps
     attribute :train_to_teach_in_uk, :boolean
     validates :train_to_teach_in_uk, inclusion: { in: [true, false] }
 
+    include FunnelTitle
+
     def reviewable_answers
       super.tap do |answers|
         answers["train_to_teach_in_uk"] = train_to_teach_in_uk ? "Yes" : "No"

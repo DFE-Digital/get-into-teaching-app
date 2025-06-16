@@ -254,7 +254,7 @@ module SpecHelpers
     end
 
     def submit_verification_code(candidate_identity)
-      fill_in "git-wizard-steps-authenticate-timed-one-time-password-field", with: "123456"
+      fill_in "teacher-training-adviser-steps-authenticate-timed-one-time-password-field", with: "123456"
       mock_exchange_code_for_candidate(candidate_identity)
       click_on_continue
     end
