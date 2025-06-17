@@ -91,8 +91,8 @@
         <div class="site-footer-bottom__links-container__license">All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0,</a> except where otherwise stated.</div>
       </div>
       <div class="site-footer-bottom__logo-container">
-        <%= link_to "https://www.gov.uk/government/organisations/department-for-education" do %>
-          <%= image_pack_tag 'static/images/dfelogo-black.svg', alt: "Go to the Department for Education homepage, Department for Education logo", size: "124x73" %>
+        <%= link_to "https://www.gov.uk/government/organisations/department-for-education", aria: { label: "Department for Education homepage" } do %>
+          <%= image_pack_tag 'static/images/dfelogo-black.svg', alt: "Department for Education logo", size: "124x73" %>
         <% end %>
       </div>
     </div>
