@@ -370,6 +370,13 @@ provider_groups:
       telephone: "0161 843 6362"
       international_phone: "+441618436362"
       
+    - header: "University of Chester"
+      link: "https://www.chester.ac.uk/about/faculties/arts-humanities-and-social-sciences/chester-school-of-education/qualified-teacher-status-qts-assessment-only-route/"
+      name: "Michael Bird"
+      email: "m.bird@chester.ac.uk"
+      telephone: "01244 512142"
+      international_phone: "+441244512142"
+      
   South East:
     providers:
     - header: "Ambition Teacher Training"
