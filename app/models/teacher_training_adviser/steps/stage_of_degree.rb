@@ -17,6 +17,8 @@ module TeacherTrainingAdviser::Steps
 
     NOT_FINAL_YEAR = DEGREE_STATUS.except(:final_year)
 
+    include FunnelTitle
+
     def save
       if (creation_channel_source_id.present? || creation_channel_activity_id.present? || channel_id.nil?) && (tta? || !creation_channel_service_id.in?(creation_channel_service_ids))
         self.creation_channel_service_id = final_year? ? ReturningTeacher::TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID : ReturningTeacher::ETA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
@@ -48,10 +50,6 @@ module TeacherTrainingAdviser::Steps
 
     def self.options
       generate_api_options(GetIntoTeachingApiClient::PickListItemsApi, :get_qualification_degree_status, nil, DEGREE_STATUS.values)
-    end
-
-    def title
-      "degree stage"
     end
 
   private

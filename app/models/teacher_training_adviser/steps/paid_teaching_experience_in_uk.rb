@@ -3,6 +3,8 @@ module TeacherTrainingAdviser::Steps
     attribute :has_paid_experience_in_uk, :boolean
     validates :has_paid_experience_in_uk, inclusion: { in: [true, false] }
 
+    include FunnelTitle
+
     def reviewable_answers
       super.tap do |answers|
         answers["has_paid_experience_in_uk"] = has_paid_experience_in_uk ? "Yes" : "No"

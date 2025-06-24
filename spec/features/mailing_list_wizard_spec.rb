@@ -4,7 +4,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
   include_context "with wizard data"
   include_context "with stubbed callback quotas api"
 
-  let(:mailing_list_page_title) { "Free personalised teacher training guidance | Get Into Teaching GOV.UK" }
+  let(:mailing_list_page_title) { "Personalised guidance sign up | Get Into Teaching GOV.UK" }
 
   scenario "Full journey as a new candidate with one non completed step" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
@@ -32,7 +32,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     # check page title remains correct for non completed step
     expect(page).to have_text "How interested are you in applying"
     click_on "Next step"
-    expect(page).to have_title("Free personalised teacher training guidance, interest step | Get Into Teaching")
+    expect(page).to have_title("Error: How interested are you in applying for teacher training? - Personalised guidance sign up | Get Into Teaching GOV.UK")
     choose "It's just an idea"
     click_on "Next step"
 
@@ -44,9 +44,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
-    expect(page).to have_title("Free personalised teacher training guidance, sign up completed | Get Into Teaching")
+    expect(page).to have_title("You're signed up for personalised guidance | Get Into Teaching GOV.UK")
     expect(page).to have_text "Test, you're signed up"
-    expect(page).to have_link("choose a time for us to give you a call")
   end
 
   scenario "Full journey as an on-campus candidate" do
@@ -163,6 +162,45 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "Test, you're signed up"
+  end
+
+  scenario "Full journey as a new candidate without a degree and not studying for one shows next steps" do
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+
+    visit mailing_list_steps_path
+
+    expect(page).to have_title(mailing_list_page_title)
+
+    expect(page).to have_text "Free personalised teacher training guidance"
+    fill_in_name_step
+    click_on "Next step"
+
+    expect(page).not_to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
+
+    expect(page).to have_text "Are you already qualified to teach?"
+    choose "No"
+    click_on "Next step"
+
+    expect(page).to have_text "Do you have a degree?"
+    choose "No"
+    click_on "Next step"
+
+    expect(page).to have_text "How interested are you in applying"
+    choose "I think I'll apply"
+    click_on "Next step"
+
+    expect(page).to have_text "Select the subject you're most interested in teaching"
+    select "French"
+    click_on "Next step"
+
+    expect(page).to have_text "We'll only use this to send you information about events happening near you"
+    click_on "Complete sign up"
+
+    expect(page).to have_text "Test, you're signed up"
+    expect(page).to have_text "Your next steps"
+    expect(page).to have_link("train to be a teacher if you don't have a degree")
+    expect(page).to have_link("teaching in further education")
   end
 
   scenario "Full journey as an existing candidate" do

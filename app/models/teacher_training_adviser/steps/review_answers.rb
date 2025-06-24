@@ -1,5 +1,7 @@
 module TeacherTrainingAdviser::Steps
   class ReviewAnswers < GITWizard::Step
+    include FunnelTitle
+
     def personal_detail_answers_by_step
       answers_by_step.select { |k| k.contains_personal_details? } # rubocop:disable Style/SymbolProc
     end
@@ -11,6 +13,10 @@ module TeacherTrainingAdviser::Steps
     def seen?
       # ensure this step is always shown to the candidate
       false
+    end
+
+    def title_attribute
+      :title
     end
 
   private

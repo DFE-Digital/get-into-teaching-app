@@ -137,7 +137,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       # check page title remains correct for non completed steps
       expect(page).to have_css "h1", text: "Where do you live?"
       click_on "Next step"
-      expect(page).to have_title("Get a free adviser, location step | Get Into Teaching GOV.UK")
+      expect(page).to have_title("Error: Where do you live? - Adviser sign up | Get Into Teaching GOV.UK")
       choose "UK"
       click_on "Next step"
 
@@ -1139,11 +1139,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Send another code to verify my details"
 
       expect(page).to have_text "We've sent you another email"
-      fill_in "git-wizard-steps-authenticate-timed-one-time-password-field", with: invalid_code
+      fill_in "teacher-training-adviser-steps-authenticate-timed-one-time-password-field", with: invalid_code
       click_on "Next step"
 
       expect(page).to have_text "Please enter the latest verification code sent to your email address"
-      fill_in "git-wizard-steps-authenticate-timed-one-time-password-field-error", with: valid_code
+      fill_in "teacher-training-adviser-steps-authenticate-timed-one-time-password-field-error", with: valid_code
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Are you qualified to teach?"
@@ -1218,7 +1218,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "You're already registered with us"
-      fill_in "git-wizard-steps-authenticate-timed-one-time-password-field", with: valid_code
+      fill_in "teacher-training-adviser-steps-authenticate-timed-one-time-password-field", with: valid_code
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Are you qualified to teach?"

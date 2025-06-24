@@ -11,6 +11,8 @@ module TeacherTrainingAdviser::Steps
     TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_010 # Teacher Training Adviser Service
     ETA_DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_005 # Explore Teaching Adviser Service (not in final year of degree)
 
+    include FunnelTitle
+
     def returning_to_teaching
       type_id == OPTIONS[:returning_to_teaching]
     end

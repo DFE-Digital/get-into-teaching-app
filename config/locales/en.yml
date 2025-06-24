@@ -710,6 +710,7 @@ en:
         timed_one_time_password: "Enter your verification code:"
 
       teacher_training_adviser_steps_identity:
+        title: "Get a free adviser"
         first_name: "First name"
         last_name: "Last name"
         email: "Email address"
@@ -725,6 +726,11 @@ en:
       teacher_training_adviser_steps_what_subject_degree:
         degree_subject: "What subject is your degree?"
         degree_subject_nojs: "What subject is your degree?"
+      teacher_training_adviser_steps_what_degree_class:
+        uk_degree_grade_id:
+          graduated: "Which class is your degree?"
+          studying: "What degree class are you predicted to get?"
+
       teacher_training_adviser_steps_subject_like_to_teach:
         preferred_teaching_subject_id: "Which subject would you like to teach if you return to teaching?"
       teacher_training_adviser_steps_subject_taught:
@@ -740,6 +746,8 @@ en:
       teacher_training_adviser_steps_uk_callback:
         address_telephone: "Contact telephone number"
         phone_call_scheduled_at: "Select your preferred day and time for a callback"
+      teacher_training_adviser_steps_uk_address:
+        address_postcode: "What is your postcode?"
       teacher_training_adviser_steps_overseas_country:
         country_id: "Which country do you live in?"
       teacher_training_adviser_steps_uk_or_overseas:
@@ -784,6 +792,18 @@ en:
           equivalent: "I am not a UK citizen and have, or am studying for, an equivalent qualification"
           "no": "No"
           studying: "I'm studying for a degree"
+      teacher_training_adviser_steps_qualification_required:
+        title: "We're sorry, but you need the right GCSEs to sign up for an adviser"
+      teacher_training_adviser_steps_review_answers:
+        title: "Check your answers before you continue"
+      teacher_training_adviser_steps_authenticate:
+        title: "You're already registered with us"
+      teacher_training_adviser_steps_already_signed_up:
+        title: "You've already signed up"
+      teacher_training_adviser_steps_no_degree:
+        title: "We're sorry, but you need a degree to sign up for an adviser"
+      teacher_training_adviser_steps_not_eligible:
+        title: "Sorry, you are not eligible for this service"
 
       teacher_training_adviser_feedback:
         unsuccessful_visit_explanation: "Give details"
@@ -821,6 +841,14 @@ en:
         first_name: First name
         last_name: Last name
         email: Email address
+      mailing_list_steps_authenticate:
+        title: "You're already registered with us"
+      mailing_list_steps_already_qualified:
+        title: "We're sorry, but our emails are for people who are not already qualified to teach"
+      mailing_list_steps_already_subscribed:
+        title: "You've already signed up"
+
+
       mailing_list_steps_degree_status:
         degree_status_id: Do you have a degree?
       mailing_list_steps_teacher_training:
@@ -908,9 +936,28 @@ en:
       teacher_training_adviser_steps_returning_teacher:
         type_id: "Are you qualified to teach?"
       teacher_training_adviser_steps_has_teacher_id:
-        has_id: "Do you have your previous teacher reference number?"
+        has_id: "Do you have a teacher reference number (TRN)?"
+      teacher_training_adviser_steps_paid_teaching_experience_in_uk:
+        has_paid_experience_in_uk: "Do you have paid teaching experience in the UK of at least one term?"
       teacher_training_adviser_steps_have_a_degree:
         degree_options: "Do you have a degree?"
+      teacher_training_adviser_steps_train_to_teach_in_uk:
+        train_to_teach_in_uk: "Did you train to teach in the UK?"
+      teacher_training_adviser_steps_uk_telephone:
+        fieldset: "What is your telephone number?"
+      teacher_training_adviser_steps_overseas_telephone:
+        fieldset: "What is your telephone number?"
+      teacher_training_adviser_steps_overseas_callback:
+        fieldset: "Choose a time"
+      teacher_training_adviser_steps_overseas_time_zone:
+        fieldset: "You told us you have an equivalent degree and live overseas"
+      teacher_training_adviser_steps_previous_teacher_id:
+        fieldset: "What is your teacher reference number (TRN)?"
+      teacher_training_adviser_steps_uk_callback:
+        fieldset: "You told us you have an equivalent degree and live in the United Kingdom"
+
+      mailing_list_steps_returning_teacher:
+        qualified_to_teach: "Are you already qualified to teach?"
 
   internal:
     status:

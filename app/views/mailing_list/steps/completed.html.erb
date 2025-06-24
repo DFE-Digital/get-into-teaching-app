@@ -18,31 +18,29 @@
 
         <h2 class="heading-m">Your next steps</h2>
 
-        <% if graduate? && high_commitment? %>
+        <% if ml_graduate? && ml_high_commitment? %>
           <%= render "mailing_list/steps/completed/shared/get_an_adviser_high_commitment" %>
         <% end %>
 
-        <% if (graduate? && low_commitment?) || studying? %>
+        <% if (ml_graduate? && ml_low_commitment?) || ml_studying? %>
           <%= render "mailing_list/steps/completed/shared/get_an_adviser_low_commitment" %>
         <% end %>
 
-        <% if graduate? || (studying? && high_commitment?) %>
+        <% if ml_graduate? || (ml_studying? && ml_high_commitment?) %>
           <%= render "mailing_list/steps/completed/shared/find_a_teacher_training_course" %>
         <% end %>
 
-        <% if low_commitment? && (studying? || no_degree?) %>
+        <% if ml_low_commitment? && (ml_studying? || ml_no_degree?) %>
           <%= render "mailing_list/steps/completed/shared/is_teaching_right_for_me" %>
         <% end %>
 
-        <% if no_degree? %>
+        <% if ml_no_degree? %>
           <%= render(partial: "mailing_list/steps/completed/shared/train_to_teach_no_degree") %>
         <% end %>
 
-        <% if studying? %>
+        <% if ml_studying? %>
           <%= render "mailing_list/steps/completed/shared/steps_to_become_a_teacher" %>
         <% end %>
-
-        <%= render(partial: "mailing_list/steps/completed/shared/book_a_callback") %>
       </div>
     </section>
   </section>

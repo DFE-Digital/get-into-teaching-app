@@ -8,7 +8,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
     it do
       expect(subject).to eql [
         TeacherTrainingAdviser::Steps::Identity,
-        GITWizard::Steps::Authenticate,
+        TeacherTrainingAdviser::Steps::Authenticate,
         TeacherTrainingAdviser::Steps::AlreadySignedUp,
         TeacherTrainingAdviser::Steps::ReturningTeacher,
         TeacherTrainingAdviser::Steps::HasTeacherId,

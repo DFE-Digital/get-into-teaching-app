@@ -13,6 +13,10 @@ describe RobotsController, type: :request do
         Disallow: /packs$
         Disallow: /packs/*
         Sitemap: https://getintoteaching.education.gov.uk/sitemap.xml
+
+        # this allows shares on Facebook to include an image
+        User-agent: facebookexternalhit
+        Allow: /
       ROBOTS
     )
   end
