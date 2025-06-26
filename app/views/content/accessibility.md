@@ -52,7 +52,15 @@ This website is partially compliant with the WCAG (Web Content Accessibility Gui
 
 We have two videos that do not meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded). These videos are titled "What happens at a Get Into Teaching event" and "Why train to teach in England". We plan to add audio descriptions to these videos by September 2025. When we publish new content, we will ensure that our use of videos meets accessibility standards.
 
-Throughout the personalised email sign up journey (/mailinglist/signup) and adviser sign up journey (/teacher-training-adviser/sign_up), the page titles do not indicate to users which journey they are on; they only convey the current step. This includes the final completion pages. This fails to meet [WCAG 2.4.2 Page titled](https://www.w3.org/WAI/WCAG22/Understanding/page-titled). We plan to fix this by August 2025.
+On the subject question of our teacher training adviser sign up journey (/teacher-training-adviser/sign_up/what_subject_degree), the error message 'You need to choose a degree subject' is not programmatically linked to the field and is not announced by screen reader. This fails to meet [WCAG 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships). We plan to fix this by August 2025.
+
+#### Webchat
+
+The webchat content is non-accessible for the following reasons:
+
+* the logo in the header is announced incorrectly for Talkback users. This fails to meet [WCAG 2.2 A - 1.1.1 Non-text content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content). We plan to fix this by the end of September 2025.
+
+* the webchat is not usable when viewed at 400% zoom as the header and text input take up the majority of the screen and the messages cannot be read within the small gap. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow) and [WCAG 2.2 AA 2.4.11 - Focus Not Obscured (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum). We plan to fix this by the end of September 2025.
 
 ## What we're doing to improve accessibility
 
