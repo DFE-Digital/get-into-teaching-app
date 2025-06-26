@@ -1,31 +1,52 @@
 import { Controller } from '@hotwired/stimulus';
 
 export default class extends Controller {
-  static values = {
-    fieldId: String,
-    errorId: String,
-  };
+  static values = { inputBaseId: String };
+
+  get hint() {
+    return document.getElementById(`${this.inputBaseIdValue}-hint`);
+  }
+
+  get autocomplete() {
+    return document.querySelector(
+      `input#${this.inputBaseIdValue}-field, input#${this.inputBaseIdValue}-field-error`,
+    );
+  }
+
+  get errorMsg() {
+    return document.getElementById(`${this.inputBaseIdValue}-error`);
+  }
+
+  get popup() {
+    return document.querySelector(
+      `ul#${this.inputBaseIdValue}-field__listbox, ul#${this.inputBaseIdValue}-field-error__listbox`,
+    );
+  }
 
   connect() {
-    if (document.getElementById(this.errorIdValue)) {
+    if (this.hint) {
       this.waitForAutocomplete();
     }
   }
 
   waitForAutocomplete() {
-    const autocomplete = document.querySelector(
-      `input[id="${this.fieldIdValue}"]`,
-    );
+    if (this.autocomplete) {
+      // if there is an error message, connect it to the autocomplete input
+      if (this.errorMsg) {
+        const currentDescribedBy =
+          this.autocomplete.getAttribute('aria-describedby') || '';
 
-    if (autocomplete) {
-      const currentDescribedBy =
-        autocomplete.getAttribute('aria-describedby') || '';
+        this.autocomplete.setAttribute(
+          'aria-describedby',
+          `${this.errorMsg.id} ${currentDescribedBy}`.trim(),
+        );
+      }
 
-      autocomplete.setAttribute(
-        'aria-describedby',
-        `${this.errorIdValue} ${currentDescribedBy}`.trim(),
-      );
-
+      // if there is a pop-up, connect it to the autocomplete with aria-controls and remove the aria-owns attribute
+      if (this.popup) {
+        this.autocomplete.setAttribute('aria-controls', `${this.popup.id}`);
+        this.autocomplete.removeAttribute('aria-owns');
+      }
       return;
     }
 
