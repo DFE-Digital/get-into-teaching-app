@@ -428,7 +428,7 @@ en:
         teacher_training_adviser/steps/what_subject_degree:
           attributes:
             degree_subject:
-              blank: "You need to choose a degree subject"
+              blank: "Select a degree subject from the list, or enter your degree subject"
         teacher_training_adviser/steps/uk_callback:
           attributes:
             address_telephone:

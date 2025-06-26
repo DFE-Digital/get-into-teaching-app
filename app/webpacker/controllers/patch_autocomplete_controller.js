@@ -42,9 +42,10 @@ export default class extends Controller {
         );
       }
 
-      // if there is a pop-up, connect it to the autocomplete
+      // if there is a pop-up, connect it to the autocomplete with aria-controls and remove the aria-owns attribute
       if (this.popup) {
         this.autocomplete.setAttribute('aria-controls', `${this.popup.id}`);
+        this.autocomplete.removeAttribute('aria-owns');
       }
       return;
     }
