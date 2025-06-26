@@ -1,9 +1,9 @@
 <section class="teaching-event__venue-information">
-  <h2 class="heading-s">Venue information</h2>
+  <h2 class="heading-s">Venue address</h2>
 
-  <%= tag.p(safe_join(@event.venue_address, tag.br)) %>
-
-  <section><%= event_location_map(@event) %></section>
+  <p>
+    <%= safe_join(@event.venue_address, tag.br) %>
+  </p>
 
   <ul>
     <li>
@@ -16,4 +16,12 @@
       <%= image_tag(@event.building.image_url, alt: @event.building.venue) %>
     </div>
   <% end %>
+
+  <% if @event.has_accessibility_options? %>
+    <h2 class="heading-s">Accessibility features</h2>
+    <ul>
+      <%= safe_join(@event.accessibility_options_with_labels.map{|i| tag.li(i)}) %>
+    </ul>
+  <% end %>
+
 </section>
