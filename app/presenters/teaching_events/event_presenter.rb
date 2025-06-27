@@ -60,7 +60,7 @@ module TeachingEvents
     end
 
     def has_accessibility_options?
-      accessibility_options.any?
+      accessibility_options.present?
     end
 
     def has_location?
