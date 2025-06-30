@@ -317,7 +317,7 @@ describe Internal::EventsController, type: :request do
                 message: nil,
                 region_id: nil,
                 web_feed_id: nil,
-                accessibility_options: [1,2])
+                accessibility_options: nil)
         end
 
         context "when \"select a venue\" is selected" do
@@ -334,13 +334,9 @@ describe Internal::EventsController, type: :request do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
               .to receive(:upsert_teaching_event).with(expected_request_body)
 
-            # TODO: fixme - maybe add accessibility_options to the internal event model?
-
             post internal_events_path,
                  headers: basic_auth_headers("author", "password2"),
                  params: { internal_event: params }
-
-
 
             expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
             expect(Rails.logger).to have_received(:info).with(%r{author - create/update - .*#{expected_request_body.id}.*})
@@ -429,7 +425,8 @@ describe Internal::EventsController, type: :request do
                 video_url: nil,
                 message: nil,
                 region_id: nil,
-                web_feed_id: nil)
+                web_feed_id: nil,
+                accessibility_options: nil)
         end
 
         it "posts event" do
