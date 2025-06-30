@@ -428,7 +428,7 @@ en:
         teacher_training_adviser/steps/what_subject_degree:
           attributes:
             degree_subject:
-              blank: "You need to choose a degree subject"
+              blank: "Select a degree subject from the list, or enter your degree subject"
         teacher_training_adviser/steps/uk_callback:
           attributes:
             address_telephone:
@@ -873,7 +873,7 @@ en:
         address_postcode: |-
           We'll only use this to send you information about events happening near you.
       teacher_training_adviser_steps_what_subject_degree:
-        degree_subject: "Type to enter your degree subject or select from the suggestions."
+        degree_subject: "Enter your degree subject. When you start entering your subject, you can select a suggested option from the list, or continue to enter your subject in full."
         degree_subject_nojs: "Type to enter your degree subject."
       teacher_training_adviser_steps_subject_interested_teaching:
         preferred_teaching_subject_id: "Choose a subject, even if you're not sure yet. We try and match you with an adviser based on your subject."
