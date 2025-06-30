@@ -20,7 +20,7 @@
   <% if @event.has_accessibility_options? %>
     <h2 class="heading-s">Accessibility features</h2>
     <ul>
-      <%= safe_join(@event.accessibility_options_with_labels.map{|i| tag.li(i)}) %>
+      <%= safe_join(@event.accessibility_options_with_labels.map { |i| tag.li(i) }) %>
     </ul>
   <% end %>
 
