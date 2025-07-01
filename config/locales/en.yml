@@ -728,8 +728,8 @@ en:
         degree_subject_nojs: "What subject is your degree?"
       teacher_training_adviser_steps_what_degree_class:
         uk_degree_grade_id:
-          graduated: "Which class is your degree?"
-          studying: "What degree class are you predicted to get?"
+          graduated: "Which grade is your degree?"
+          studying: "What degree grade are you predicted to get?"
 
       teacher_training_adviser_steps_subject_like_to_teach:
         preferred_teaching_subject_id: "Which subject would you like to teach if you return to teaching?"
