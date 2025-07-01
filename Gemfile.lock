@@ -263,7 +263,7 @@ GEM
     faraday_middleware-circuit_breaker (0.6.0)
       faraday (>= 0.9, < 3.0)
       stoplight (>= 2.1, < 4.0)
-    fastimage (2.3.1)
+    fastimage (2.4.0)
     ffi (1.17.0)
     ffi (1.17.0-x86_64-linux-gnu)
     foreman (0.88.1)
