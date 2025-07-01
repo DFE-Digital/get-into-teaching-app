@@ -28,7 +28,7 @@ graph TD;
 ```mermaid
 graph TD;
   chooses_event[/Chooses a Train to Teach event/] --> personal_details
-  personal_details[Sign up for this event] -- Doesn't exist in CRM --> contact_details["What is your telephone number? (optional)"] --> accept_privacy_policy[Accept privacy policy]
+  personal_details[Sign up for this event] -- Doesn't exist in CRM --> contact_details["What's your telephone number? (optional)"] --> accept_privacy_policy[Accept privacy policy]
 
   personal_details -- Exists in CRM --> already_registered[You've already registered with us]
   already_registered --> contact_details

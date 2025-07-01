@@ -100,11 +100,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number?"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -179,11 +179,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -252,11 +252,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number?"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -322,11 +322,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number?"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -453,7 +453,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
@@ -582,7 +582,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         choose "UK"
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "What is your postcode?"
+        expect(page).to have_css "h1", text: "What's your postcode?"
         fill_in_address_step
         click_on "Next step"
 
@@ -653,7 +653,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Argentina"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number"
       expect(find_field("Overseas telephone number (optional)").value).to eq "54"
       fill_in "Overseas telephone number (optional)", with: "123456789"
       click_on "Next step"
@@ -729,7 +729,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Argentina"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number"
       expect(find_field("Overseas telephone number (optional)").value).to eq "54"
       fill_in "Overseas telephone number (optional)", with: "123456789"
       click_on "Next step"
@@ -801,11 +801,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number?"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -870,11 +870,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number?"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -1115,8 +1115,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
-      expect(find_field("What is your postcode?").value).to eq("TE7 1NG")
+      expect(page).to have_css "h1", text: "What's your postcode?"
+      expect(find_field("What's your postcode?").value).to eq("TE7 1NG")
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "You told us you have an equivalent degree and live in the United Kingdom"
@@ -1197,11 +1197,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
-      expect(find_field("What is your postcode?").value).to eq("TE7 1NG")
+      expect(page).to have_css "h1", text: "What's your postcode?"
+      expect(find_field("What's your postcode?").value).to eq("TE7 1NG")
       click_on "Next step"
 
-      expect(page).not_to have_css "h1", text: "What is your telephone number?"
+      expect(page).not_to have_css "h1", text: "What's your telephone number?"
 
       expect(page).to have_css "h1", text: "Check your answers before you continue"
 
@@ -1233,7 +1233,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
   end
 
   def fill_in_address_step
-    fill_in "What is your postcode?", with: "EH12 8JF"
+    fill_in "What's your postcode?", with: "EH12 8JF"
   end
 
   def expect_sign_up_with_attributes(request_attributes)

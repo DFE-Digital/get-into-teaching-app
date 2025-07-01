@@ -212,7 +212,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       submit_choice_step("UK", :uk_or_overseas)
 
       expect_current_step(:uk_address)
-      expect(find_field("What is your postcode?").value).to eq("KY9 6NJ")
+      expect(find_field("What's your postcode?").value).to eq("KY9 6NJ")
 
       submit_uk_address_step(
         postcode: "TE7 5TR",
