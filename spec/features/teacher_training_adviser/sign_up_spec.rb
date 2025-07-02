@@ -933,7 +933,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which grade is your degree?"
+      expect(page).to have_css "h1", text: "What grade is your degree?"
       select "2:2"
       click_on "Next step"
 
@@ -980,7 +980,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which grade is your degree?"
+      expect(page).to have_css "h1", text: "What grade is your degree?"
       select "2:2"
       click_on "Next step"
 
@@ -1019,7 +1019,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which grade is your degree?"
+      expect(page).to have_css "h1", text: "What grade is your degree?"
       select "2:2"
       click_on "Next step"
 

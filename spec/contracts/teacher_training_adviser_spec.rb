@@ -234,7 +234,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         click_on_continue
 
         expect_current_step(:what_degree_class)
-        expect(page).to have_select("Which grade is your degree?", selected: "First class")
+        expect(page).to have_select("What grade is your degree?", selected: "First class")
         click_on_continue
 
         expect_current_step(:stage_interested_teaching)

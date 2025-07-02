@@ -728,7 +728,7 @@ en:
         degree_subject_nojs: "What subject is your degree?"
       teacher_training_adviser_steps_what_degree_class:
         uk_degree_grade_id:
-          graduated: "Which grade is your degree?"
+          graduated: "What grade is your degree?"
           studying: "What degree grade are you predicted to get?"
 
       teacher_training_adviser_steps_subject_like_to_teach:
