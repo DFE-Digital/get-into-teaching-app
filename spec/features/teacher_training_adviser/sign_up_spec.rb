@@ -368,7 +368,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Secondary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What would you like to teach?"
+      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
       select "Physics"
       click_on "Next step"
 
@@ -437,7 +437,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Secondary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What would you like to teach?"
+      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
       select "Physics"
       click_on "Next step"
 
@@ -504,7 +504,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         choose "Secondary"
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "What would you like to teach?"
+        expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
         select "Physics"
         click_on "Next step"
 
@@ -566,7 +566,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         choose "Secondary"
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "What would you like to teach?"
+        expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
         select "Physics"
         click_on "Next step"
 
@@ -637,7 +637,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Secondary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What would you like to teach?"
+      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
       select "Physics"
       click_on "Next step"
 
@@ -1097,7 +1097,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       expect(find_field("Secondary")).to be_checked
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What would you like to teach?"
+      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
       select "Physics"
       click_on "Next step"
 
