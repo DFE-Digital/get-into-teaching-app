@@ -926,13 +926,13 @@ en:
       teacher_training_adviser_steps_stage_taught:
         stage_taught_id: "Which stage did you previously teach?"
       teacher_training_adviser_steps_gcse_science:
-        has_gcse_science_id: "Do you have grade 4 (C) or above in GCSE science, or equivalent?"
+        has_gcse_science_id: "Do you have grade 4 (C) or above in GCSE science, or an equivalent qualification?"
       teacher_training_adviser_steps_retake_gcse_maths_english:
-        planning_to_retake_gcse_maths_and_english_id: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent?"
+        planning_to_retake_gcse_maths_and_english_id: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent qualifications?"
       teacher_training_adviser_steps_retake_gcse_science:
         planning_to_retake_gcse_science_id: "Are you planning to retake your science GCSE?"
       teacher_training_adviser_steps_gcse_maths_english:
-        has_gcse_maths_and_english_id: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent?"
+        has_gcse_maths_and_english_id: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
       teacher_training_adviser_steps_returning_teacher:
         type_id: "Are you qualified to teach?"
       teacher_training_adviser_steps_has_teacher_id:

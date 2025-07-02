@@ -705,11 +705,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Primary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
       choose "Yes"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in GCSE science, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in GCSE science, or an equivalent qualification?"
       choose "Yes"
       click_on "Next step"
 
@@ -941,15 +941,15 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Primary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent qualifications?"
       choose "Yes"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in GCSE science, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in GCSE science, or an equivalent qualification?"
       choose "No"
       click_on "Next step"
 
@@ -988,11 +988,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Primary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent qualifications?"
       choose "No"
       click_on "Next step"
 
@@ -1027,11 +1027,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Secondary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent qualifications?"
       choose "No"
       click_on "Next step"
 
