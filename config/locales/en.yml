@@ -801,7 +801,7 @@ en:
       teacher_training_adviser_steps_already_signed_up:
         title: "You've already signed up"
       teacher_training_adviser_steps_no_degree:
-        title: "We're sorry, but you need a degree to sign up for an adviser"
+        title: "You need to have or be studying towards a degree to sign up for an adviser"
       teacher_training_adviser_steps_not_eligible:
         title: "Sorry, you are not eligible for this service"
 
