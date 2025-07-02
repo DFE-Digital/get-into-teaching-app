@@ -206,7 +206,7 @@ module SpecHelpers
     def submit_uk_address_step(postcode:)
       expect_current_step(:uk_address)
 
-      fill_in "What is your postcode?", with: postcode
+      fill_in "What's your postcode?", with: postcode
 
       click_on_continue
     end
