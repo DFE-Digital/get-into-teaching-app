@@ -235,7 +235,7 @@ module SpecHelpers
     def submit_uk_callback_step(telephone, slot = nil)
       expect_current_step(:uk_callback)
 
-      fill_in "Contact telephone number", with: telephone
+      fill_in "Your telephone number", with: telephone
       select slot if slot.present?
       click_on_continue
     end
@@ -243,7 +243,7 @@ module SpecHelpers
     def submit_overseas_time_zone_step(telephone, timezone)
       expect_current_step(:overseas_time_zone)
 
-      fill_in "Contact telephone number", with: telephone
+      fill_in "Your telephone number", with: telephone
       select timezone
       click_on_continue
     end
