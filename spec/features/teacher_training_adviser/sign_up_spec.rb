@@ -388,15 +388,15 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Argentina"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "You told us you have an equivalent degree and live overseas"
-      expect(find_field("Contact telephone number").value).to eq "54"
-      fill_in "Contact telephone number", with: "123456789"
+      expect(page).to have_css "h1", text: "You need to book a call with our team"
+      expect(find_field("Your telephone number").value).to eq "54"
+      fill_in "Your telephone number", with: "123456789"
       select "(GMT-10:00) Hawaii"
       click_on "Next step"
 
       expect(page).to have_text "Choose a time"
       # Select time in local time zone (Hawaii)
-      select "12:00am to 1:00am", from: "Select your preferred day and time for a callback"
+      select "12:00am to 1:00am", from: "Your preferred day and time for a callback"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Check your answers before you continue"
@@ -457,10 +457,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "You told us you have an equivalent degree and live in the United Kingdom"
-      fill_in "Contact telephone number", with: "123456789"
+      expect(page).to have_css "h1", text: "You need to book a call with our team"
+      fill_in "Your telephone number", with: "123456789"
       # Select time in local time zone (London)
-      select "11:00am to 12:00pm", from: "Select your preferred day and time for a callback"
+      select "11:00am to 12:00pm", from: "Your preferred day and time for a callback"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Check your answers before you continue"
@@ -524,7 +524,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         select "Argentina"
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "You told us you have an equivalent degree and live overseas"
+        expect(page).to have_css "h1", text: "You need to book a call with our team"
         expect(page).to have_text "When you call, our adviser will ask for more details about the qualification you have."
         click_on "Next step"
 
@@ -586,7 +586,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         fill_in_address_step
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "You told us you have an equivalent degree and live in the United Kingdom"
+        expect(page).to have_css "h1", text: "You need to book a call with our team"
         expect(page).to have_text "Please have the details of your overseas qualifications to hand when you call."
         click_on "Next step"
 
@@ -1119,15 +1119,15 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       expect(find_field("What is your postcode?").value).to eq("TE7 1NG")
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "You told us you have an equivalent degree and live in the United Kingdom"
-      expect(find_field("Contact telephone number").value).to eq("123456789")
+      expect(page).to have_css "h1", text: "You need to book a call with our team"
+      expect(find_field("Your telephone number").value).to eq("123456789")
       # Cause an error to check the time zone is correct on an update action
-      fill_in "Contact telephone number", with: ""
+      fill_in "Your telephone number", with: ""
       click_on "Next step"
       expect(page).to have_text("Enter your telephone number")
-      fill_in "Contact telephone number", with: "123456789"
+      fill_in "Your telephone number", with: "123456789"
       # Select time in local time zone (London)
-      select "11:00am to 12:00pm", from: "Select your preferred day and time for a callback"
+      select "11:00am to 12:00pm", from: "Your preferred day and time for a callback"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Check your answers before you continue"
