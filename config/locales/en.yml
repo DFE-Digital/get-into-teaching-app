@@ -902,7 +902,8 @@ en:
           <a class="new-tab" href="/non-uk-teachers/teach-in-england-if-you-trained-overseas">international teachers</a>
           and <a class="new-tab" href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student">international
           trainees</a> explains how to apply for the correct visa or immigration status for your employment or study in the UK.
-
+      teacher_training_adviser_steps_what_degree_class:
+        uk_degree_grade_id: "To get an adviser, your predicted or achieved degree grade must be a 2:2 or above."
     legend:
       events_steps_further_details:
         subscribe_to_mailing_list: |-
