@@ -728,8 +728,8 @@ en:
         degree_subject_nojs: "What subject is your degree?"
       teacher_training_adviser_steps_what_degree_class:
         uk_degree_grade_id:
-          graduated: "Which class is your degree?"
-          studying: "What degree class are you predicted to get?"
+          graduated: "What grade is your degree?"
+          studying: "What degree grade are you predicted to get?"
 
       teacher_training_adviser_steps_subject_like_to_teach:
         preferred_teaching_subject_id: "Which subject would you like to teach if you return to teaching?"
@@ -902,7 +902,10 @@ en:
           <a class="new-tab" href="/non-uk-teachers/teach-in-england-if-you-trained-overseas">international teachers</a>
           and <a class="new-tab" href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student">international
           trainees</a> explains how to apply for the correct visa or immigration status for your employment or study in the UK.
-
+      teacher_training_adviser_steps_what_degree_class:
+        uk_degree_grade_id:
+          studying: "To get an adviser, your predicted degree grade must be a 2:2 or higher."
+          graduated: "To get an adviser, your degree grade must be a 2:2 or higher."
     legend:
       events_steps_further_details:
         subscribe_to_mailing_list: |-
