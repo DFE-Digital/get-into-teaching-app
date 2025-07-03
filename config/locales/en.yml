@@ -950,11 +950,11 @@ en:
       teacher_training_adviser_steps_overseas_callback:
         fieldset: "Choose a time"
       teacher_training_adviser_steps_overseas_time_zone:
-        fieldset: "You need to book a call with our team"
+        fieldset: "You need to speak to our team"
       teacher_training_adviser_steps_previous_teacher_id:
         fieldset: "What is your teacher reference number (TRN)?"
       teacher_training_adviser_steps_uk_callback:
-        fieldset: "You need to book a call with our team"
+        fieldset: "You need to speak to our team"
 
       mailing_list_steps_returning_teacher:
         qualified_to_teach: "Are you already qualified to teach?"

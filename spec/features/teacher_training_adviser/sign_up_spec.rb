@@ -388,7 +388,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Argentina"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "You need to book a call with our team"
+      expect(page).to have_css "h1", text: "You need to speak to our team"
       expect(find_field("Your telephone number").value).to eq "54"
       fill_in "Your telephone number", with: "123456789"
       select "(GMT-10:00) Hawaii"
@@ -457,7 +457,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "You need to book a call with our team"
+      expect(page).to have_css "h1", text: "You need to speak to our team"
       fill_in "Your telephone number", with: "123456789"
       # Select time in local time zone (London)
       select "11:00am to 12:00pm", from: "Your preferred day and time for a callback"
@@ -524,7 +524,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         select "Argentina"
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "You need to book a call with our team"
+        expect(page).to have_css "h1", text: "You need to speak to our team"
         expect(page).to have_text "When you call, our adviser will ask for more details about the qualification you have."
         click_on "Next step"
 
@@ -586,8 +586,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         fill_in_address_step
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "You need to book a call with our team"
-        expect(page).to have_text "You must have the details of your qualifications from outside the UK when we call you."
+        expect(page).to have_css "h1", text: "You need to speak to our team"
+        expect(page).to have_text "Please have the details of your qualifications to hand when you call."
         click_on "Next step"
 
         expect(page).to have_css "h1", text: "Check your answers before you continue"
@@ -1119,7 +1119,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       expect(find_field("What is your postcode?").value).to eq("TE7 1NG")
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "You need to book a call with our team"
+      expect(page).to have_css "h1", text: "You need to speak to our team"
       expect(find_field("Your telephone number").value).to eq("123456789")
       # Cause an error to check the time zone is correct on an update action
       fill_in "Your telephone number", with: ""
