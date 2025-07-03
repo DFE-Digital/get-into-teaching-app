@@ -16,6 +16,7 @@ FactoryBot.define do
     is_virtual { false }
     building { build :event_building_api }
     region_id { Crm::EventRegion.all_ids.sample }
+    accessibility_options { [1, 2] }
 
     trait :closed do
       status_id { Crm::EventStatus.closed_id }
@@ -62,6 +63,10 @@ FactoryBot.define do
 
     trait :no_location do
       building { nil }
+    end
+
+    trait :no_accessibility_options do
+      accessibility_options { [] }
     end
 
     trait :pending do

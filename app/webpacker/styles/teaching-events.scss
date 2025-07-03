@@ -518,9 +518,13 @@ $icon-size: 3rem;
       margin: unset;
     }
 
-    ul {
+    ul.map-link {
       list-style: none;
       padding-left: 0;
+    }
+
+    ul.accessibility_options {
+      list-style: disc;
     }
   }
 

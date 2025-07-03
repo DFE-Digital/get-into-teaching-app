@@ -66,18 +66,6 @@ describe EventsHelper, type: "helper" do
     end
   end
 
-  describe "#event_location_map" do
-    subject { event_location_map(event) }
-
-    before do
-      allow(Rails.application.config.x).to receive(:google_maps_key).and_return("12345")
-    end
-
-    it { is_expected.to match(/data-map-description="Albert Hall,\nLine 1,\nLine 2,\nManchester,\nMA1 1AM" /) }
-    it { is_expected.to match(/zoom=10/) }
-    it { is_expected.to match(/alt="Map showing #{event.name}"/) }
-  end
-
   describe "#can_sign_up_online?" do
     subject { can_sign_up_online?(event) }
 

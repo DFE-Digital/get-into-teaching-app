@@ -63,18 +63,6 @@ module EventsHelper
     ].compact.join(",\n")
   end
 
-  def event_location_map(event)
-    address = event_address(event)
-
-    ajax_map(
-      address,
-      zoom: 10,
-      mapsize: [732, 490],
-      title: event.name,
-      description: address,
-    )
-  end
-
   def event_type_color(type_id)
     case type_id
     when git_event_type_id

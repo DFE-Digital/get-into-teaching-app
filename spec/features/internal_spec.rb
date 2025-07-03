@@ -2,6 +2,8 @@ require "rails_helper"
 require "action_text/system_test_helper"
 
 RSpec.feature "Internal section", type: :feature do
+  include_context "with stubbed accessibility options api"
+
   let(:types) { Crm::EventType::ALL.values }
   let(:pending_provider_event) do
     build(:event_api,
