@@ -587,7 +587,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         click_on "Next step"
 
         expect(page).to have_css "h1", text: "You need to book a call with our team"
-        expect(page).to have_text "Please have the details of your overseas qualifications to hand when you call."
+        expect(page).to have_text "You must have the details of your qualifications from outside the UK when we call you."
         click_on "Next step"
 
         expect(page).to have_css "h1", text: "Check your answers before you continue"
