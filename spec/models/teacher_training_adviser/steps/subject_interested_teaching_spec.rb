@@ -35,7 +35,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::SubjectInterestedTeaching do
     it "returns false if HaveADegree step was shown and preferred_education_phase_id is secondary and have a degree" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
       wizardstore["preferred_education_phase_id"] = TeacherTrainingAdviser::Steps::StageInterestedTeaching::OPTIONS[:secondary]
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:yes]
+      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_YES
       expect(subject).not_to be_skipped
     end
 

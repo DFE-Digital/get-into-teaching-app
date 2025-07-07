@@ -57,7 +57,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         "first_name" => "Joe",
         "last_name" => "Joseph",
         "type_id" => 123,
-        "degree_options" => "equivalent",
+        "degree_option" => "studying",
         "callback_offered" => true,
       }
     end
@@ -125,7 +125,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
       it "prunes the store leaving data required to render the completion page" do
         hashed_email = Digest::SHA256.hexdigest("email@address.com")
         expect(store).to eql({ "type_id" => 123,
-                               "degree_options" => "equivalent",
+                               "degree_option" => "yes",
                                "callback_offered" => true,
                                "first_name" => "Joe",
                                "hashed_email" => hashed_email })

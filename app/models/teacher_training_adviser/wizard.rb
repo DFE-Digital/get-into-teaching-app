@@ -6,7 +6,8 @@ module TeacherTrainingAdviser
     ATTRIBUTES_TO_LEAVE = %w[
       first_name
       type_id
-      degree_options
+      degree_option
+      graduation_year
       sub_channel_id
       callback_offered
       hashed_email
@@ -28,7 +29,6 @@ module TeacherTrainingAdviser
       Steps::SubjectTaught,
       Steps::HaveADegree,
       Steps::NoDegree,
-      Steps::StageOfDegree,
       Steps::WhatSubjectDegree,
       Steps::WhatDegreeClass,
       Steps::StageInterestedTeaching,

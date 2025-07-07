@@ -27,18 +27,16 @@ module TeacherTrainingAdviser::Steps
 
     def skipped?
       have_a_degree_step = other_step(:have_a_degree)
-      have_a_degree_skipped = have_a_degree_step.skipped?
-      studying_not_final_year = have_a_degree_step.studying? && !other_step(:stage_of_degree).final_year?
 
-      have_a_degree_skipped || studying_not_final_year
+      have_a_degree_step.skipped? || have_a_degree_step.studying_not_final_year?
     end
 
     def inferred_year_id
-      degree_status = other_step(:stage_of_degree).degree_status_id
+      have_a_degree_step = other_step(:have_a_degree)
 
-      return unless other_step(:have_a_degree).studying? && degree_status.in?(StageOfDegree::NOT_FINAL_YEAR.values)
+      return unless have_a_degree_step.studying_not_final_year?
 
-      inferred_year = if degree_status == StageOfDegree::NOT_FINAL_YEAR[:first_year]
+      inferred_year = if have_a_degree_step.studying_first_year?
                         current_year + (before_current_year_threshold? ? 2 : 3)
                       else
                         current_year + (before_current_year_threshold? ? 1 : 2)

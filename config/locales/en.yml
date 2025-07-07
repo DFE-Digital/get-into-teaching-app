@@ -203,12 +203,6 @@ en:
         singular: "School or University event"
         plural: "School and University events"
 
-  have_a_degree:
-    degree_options:
-      "yes": "Yes"
-      equivalent: "I have, or I'm studying for, an equivalent qualification from another country"
-      "no": "No"
-      studying: "I'm studying for a degree"
 
   answers:
     identity:
@@ -238,6 +232,9 @@ en:
       degree_options:
         title: "Do you have a degree?"
         change: "if you have a degree"
+      graduation_year:
+        title: "Which year will you graduate?"
+        change: "which year will you graduate"
     overseas_callback:
       callback_date:
         title: "Callback date"
@@ -704,6 +701,12 @@ en:
           i_don_t_have_a_degree_and_am_not_studying_for_one: "No, and I'm not studying for one"
           not_yet_i_m_studing_for_one: "Not yet, I'm studying for one"
           other: "Other"
+      teacher_training_adviser_steps:
+        have_a_degree:
+          degree_options:
+            "yes": "Yes"
+            "studying": "Not yet, I'm studying for one"
+            "no": "No"
 
     label:
       wizard_steps_authenticate:
@@ -786,12 +789,7 @@ en:
         type_id_options:
           222750001: "Yes"
           222750000: "No"
-      teacher_training_adviser_steps_have_a_degree:
-        degree_options_options:
-          "yes": "Yes"
-          equivalent: "I am not a UK citizen and have, or am studying for, an equivalent qualification"
-          "no": "No"
-          studying: "I'm studying for a degree"
+
       teacher_training_adviser_steps_qualification_required:
         title: "We're sorry, but you need the right GCSEs to sign up for an adviser"
       teacher_training_adviser_steps_review_answers:
@@ -891,7 +889,7 @@ en:
       teacher_training_adviser_steps_returning_teacher:
         type_id: "Only select 'yes' if you have English qualified teacher status (QTS)."
       teacher_training_adviser_steps_have_a_degree:
-        degree_options: "To use this service your bachelor's degree or predicted grade needs to be a 2:2 class honours or above."
+        degree_option: "To use this service your bachelor's degree or predicted grade needs to be a 2:2 class honours or above."
       teacher_training_adviser_steps_overseas_telephone:
         address_telephone_html: "We recommend you provide us with your phone number as this is the most effective way to talk to your adviser.<br /><br />For international numbers include the country code."
       teacher_training_adviser_steps_date_of_birth:
@@ -940,7 +938,7 @@ en:
       teacher_training_adviser_steps_paid_teaching_experience_in_uk:
         has_paid_experience_in_uk: "Do you have paid teaching experience in the UK of at least one term?"
       teacher_training_adviser_steps_have_a_degree:
-        degree_options: "Do you have a degree?"
+        degree_status: "Do you have a degree?"
       teacher_training_adviser_steps_train_to_teach_in_uk:
         train_to_teach_in_uk: "Did you train to teach in the UK?"
       teacher_training_adviser_steps_uk_telephone:
