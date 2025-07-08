@@ -23,7 +23,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expect(page).to have_css("h2", text: "Event information")
       expect(page).to have_css("h2", text: "Venue address")
-      expect(page).to have_css("h2", text: "Accessibility features")
+      expect(page).to have_css("h2", text: "Venue accessibility features")
 
       expect(page).not_to have_css("h2", text: "Provider information")
     end
