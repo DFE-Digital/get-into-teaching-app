@@ -46,7 +46,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       if expect_venue
         expect(page).to have_css("h2", text: "Venue address")
-        expect(page).to have_css("h2", text: "Accessibility features")
+        expect(page).to have_css("h2", text: "Venue accessibility features")
       else
         # NB: online events do not have an address or accessibility information
         expect(page).not_to have_css("h2", text: "Venue address")
