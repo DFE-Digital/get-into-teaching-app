@@ -16,5 +16,5 @@ Rails.start();
 Turbolinks.start();
 
 document.addEventListener('turbolinks:load', function () {
-  dfeAutocomplete( { rawAttribute: true } );
+  dfeAutocomplete( { rawAttribute: true, autoselect: false } );
 }, false);

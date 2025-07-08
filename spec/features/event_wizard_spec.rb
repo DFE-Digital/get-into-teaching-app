@@ -31,7 +31,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personal_details_step
     click_on "Next step"
 
-    fill_in "What is your telephone number? (optional)", with: "01234567890"
+    fill_in "What's your telephone number? (optional)", with: "01234567890"
     click_on "Next step"
 
     within_fieldset "Would you like to receive email updates" do
@@ -64,7 +64,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "To verify your details, we've sent a code to your email address."
     click_on "continue without verifying your identity"
 
-    fill_in "What is your telephone number? (optional)", with: "01234567890"
+    fill_in "What's your telephone number? (optional)", with: "01234567890"
     click_on "Next step"
 
     within_fieldset "Would you like to receive email updates" do
@@ -92,7 +92,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personal_details_step
     click_on "Next step"
 
-    fill_in "What is your telephone number? (optional)", with: "01234567890"
+    fill_in "What's your telephone number? (optional)", with: "01234567890"
     click_on "Next step"
 
     click_on "Complete sign up"
@@ -129,7 +129,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personal_details_step
     click_on "Next step"
 
-    fill_in "What is your telephone number? (optional)", with: "01234567890"
+    fill_in "What's your telephone number? (optional)", with: "01234567890"
     click_on "Next step"
 
     within_fieldset "Would you like to receive email updates" do
@@ -222,7 +222,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text("What is your telephone number? (optional)")
+    expect(page).to have_text("What's your telephone number? (optional)")
   end
 
   scenario "Full journey as an existing candidate that has already subscribed to the mailing list" do
@@ -247,7 +247,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text("What is your telephone number? (optional)")
+    expect(page).to have_text("What's your telephone number? (optional)")
 
     expect_sign_up_with_attributes(base_attributes.merge({ address_telephone: nil }))
 

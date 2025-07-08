@@ -122,7 +122,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Psychology"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Secondary"
       click_on "Next step"
 
@@ -141,11 +141,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number?"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -201,7 +201,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Psychology"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Secondary"
       click_on "Next step"
 
@@ -217,11 +217,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -274,7 +274,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Psychology"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Secondary"
       click_on "Next step"
 
@@ -290,11 +290,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number?"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -347,7 +347,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Psychology"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Secondary"
       click_on "Next step"
 
@@ -363,11 +363,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number?"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -409,11 +409,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "I am not a UK citizen and have, or am studying for, an equivalent qualification"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Secondary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What would you like to teach?"
+      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
       select "Physics"
       click_on "Next step"
 
@@ -482,11 +482,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "I am not a UK citizen and have, or am studying for, an equivalent qualification"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Secondary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What would you like to teach?"
+      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
       select "Physics"
       click_on "Next step"
 
@@ -502,7 +502,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
@@ -553,11 +553,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         choose "I am not a UK citizen and have, or am studying for, an equivalent qualification"
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+        expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
         choose "Secondary"
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "What would you like to teach?"
+        expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
         select "Physics"
         click_on "Next step"
 
@@ -619,11 +619,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         choose "I am not a UK citizen and have, or am studying for, an equivalent qualification"
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+        expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
         choose "Secondary"
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "What would you like to teach?"
+        expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
         select "Physics"
         click_on "Next step"
 
@@ -639,7 +639,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         choose "UK"
         click_on "Next step"
 
-        expect(page).to have_css "h1", text: "What is your postcode?"
+        expect(page).to have_css "h1", text: "What's your postcode?"
         fill_in_address_step
         click_on "Next step"
 
@@ -694,11 +694,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Secondary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What would you like to teach?"
+      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
       select "Physics"
       click_on "Next step"
 
@@ -714,7 +714,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Argentina"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number"
       expect(find_field("Overseas telephone number (optional)").value).to eq "54"
       fill_in "Overseas telephone number (optional)", with: "123456789"
       click_on "Next step"
@@ -758,19 +758,19 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What degree class are you predicted to get?"
+      expect(page).to have_css "h1", text: "What degree grade are you predicted to get?"
       select "2:2"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Primary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
       choose "Yes"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in GCSE science, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in GCSE science, or an equivalent qualification?"
       choose "Yes"
       click_on "Next step"
 
@@ -790,7 +790,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Argentina"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number"
       expect(find_field("Overseas telephone number (optional)").value).to eq "54"
       fill_in "Overseas telephone number (optional)", with: "123456789"
       click_on "Next step"
@@ -846,7 +846,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Psychology"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Secondary"
       click_on "Next step"
 
@@ -862,11 +862,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number?"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -919,7 +919,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Primary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Primary"
       click_on "Next step"
 
@@ -931,11 +931,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
+      expect(page).to have_css "h1", text: "What's your postcode?"
       fill_in_address_step
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your telephone number?"
+      expect(page).to have_css "h1", text: "What's your telephone number?"
       fill_in "UK telephone number (optional)", with: "123456789"
       click_on "Next step"
 
@@ -971,7 +971,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "We're sorry, but you need a degree to sign up for an adviser"
+      expect(page).to have_css "h1", text: "You need to have or be studying towards a degree to sign up for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
 
@@ -994,23 +994,23 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which class is your degree?"
+      expect(page).to have_css "h1", text: "What grade is your degree?"
       select "2:2"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Primary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent qualifications?"
       choose "Yes"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in GCSE science, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in GCSE science, or an equivalent qualification?"
       choose "No"
       click_on "Next step"
 
@@ -1041,19 +1041,19 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which class is your degree?"
+      expect(page).to have_css "h1", text: "What grade is your degree?"
       select "2:2"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Primary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent qualifications?"
       choose "No"
       click_on "Next step"
 
@@ -1080,19 +1080,19 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which class is your degree?"
+      expect(page).to have_css "h1", text: "What grade is your degree?"
       select "2:2"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Secondary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent?"
+      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent qualifications?"
       choose "No"
       click_on "Next step"
 
@@ -1154,11 +1154,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "I am not a UK citizen and have, or am studying for, an equivalent qualification"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       expect(find_field("Secondary")).to be_checked
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What would you like to teach?"
+      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
       select "Physics"
       click_on "Next step"
 
@@ -1176,8 +1176,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
-      expect(find_field("What is your postcode?").value).to eq("TE7 1NG")
+      expect(page).to have_css "h1", text: "What's your postcode?"
+      expect(find_field("What's your postcode?").value).to eq("TE7 1NG")
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "You told us you have an equivalent degree and live in the United Kingdom"
@@ -1240,7 +1240,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       select "Psychology"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you interested in teaching?"
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Secondary"
       click_on "Next step"
 
@@ -1258,11 +1258,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What is your postcode?"
-      expect(find_field("What is your postcode?").value).to eq("TE7 1NG")
+      expect(page).to have_css "h1", text: "What's your postcode?"
+      expect(find_field("What's your postcode?").value).to eq("TE7 1NG")
       click_on "Next step"
 
-      expect(page).not_to have_css "h1", text: "What is your telephone number?"
+      expect(page).not_to have_css "h1", text: "What's your telephone number?"
 
       expect(page).to have_css "h1", text: "Check your answers before you continue"
 
@@ -1294,7 +1294,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
   end
 
   def fill_in_address_step
-    fill_in "What is your postcode?", with: "EH12 8JF"
+    fill_in "What's your postcode?", with: "EH12 8JF"
   end
 
   def expect_sign_up_with_attributes(request_attributes)
