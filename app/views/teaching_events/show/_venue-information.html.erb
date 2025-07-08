@@ -18,7 +18,7 @@
   <% end %>
 
   <% if @event.has_accessibility_options? %>
-    <h2 class="heading-s">Accessibility features</h2>
+    <h2 class="heading-s">Venue accessibility features</h2>
     <ul class="accessibility_options">
       <%= safe_join(@event.accessibility_options_with_labels.map { |i| tag.li(i) }) %>
     </ul>
