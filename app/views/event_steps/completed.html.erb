@@ -79,7 +79,7 @@
 <%= tag.div id: "hashed-email", class: "hidden", data: { id: "hashed-email", value: @hashed_email } if @hashed_email %>
 
 <!-- Temporary BAM pixel for testing - TODO: delete this code before merging in -->
-<hr />
-<h3>Temporary BAM pixel for testing <br/>
+<hr>
+<h3>Temporary BAM pixel for testing <br>
   delete this code before deployment</h3>
-<%=tag.img src: "https://linkbam.uk/m/3g6cKlN4VmA4FAL/1SlB2.png?r=#{rand(999999)}&bstc=#{session.dig('events', params['event_id'], 'sub_channel_id')}", width: "1", height: "1", border: "®", alt: "" %>
+<%= tag.img src: "https://linkbam.uk/m/3g6cKlN4VmA4FAL/1SlB2.png?r=#{rand(999_999)}&bstc=#{session.dig('events', params['event_id'], 'sub_channel_id')}", width: "1", height: "1", border: "®", alt: "" %>
