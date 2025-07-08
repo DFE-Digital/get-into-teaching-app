@@ -22,7 +22,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(page).to have_link("Register for this event", href: event_steps_path(event.readable_id), count: 2)
 
       expect(page).to have_css("h2", text: "Event information")
-      expect(page).to have_css("h2", text: "Venue address")
+      expect(page).to have_css("h2", text: "Venue information")
       expect(page).to have_css("h2", text: "Venue accessibility features")
 
       expect(page).not_to have_css("h2", text: "Provider information")
@@ -45,11 +45,11 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(page).to have_css("h2", text: "Provider information")
 
       if expect_venue
-        expect(page).to have_css("h2", text: "Venue address")
+        expect(page).to have_css("h2", text: "Venue information")
         expect(page).to have_css("h2", text: "Venue accessibility features")
       else
         # NB: online events do not have an address or accessibility information
-        expect(page).not_to have_css("h2", text: "Venue address")
+        expect(page).not_to have_css("h2", text: "Venue information")
         expect(page).not_to have_css("h2", text: "Venue accessibility features")
       end
     end
