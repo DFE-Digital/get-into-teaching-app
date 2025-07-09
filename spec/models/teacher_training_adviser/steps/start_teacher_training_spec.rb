@@ -114,28 +114,28 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
   end
 
   describe "#skipped?" do
-    it "returns false if HaveADegree step was shown and degree_options is not studying" do
+    it "returns false if HaveADegree step was shown and degree_option is not studying" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:yes]
+      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_YES
       expect(subject).not_to be_skipped
     end
 
-    it "returns false if HaveADegree step was shown and degree_options is studying (final year)" do
+    it "returns false if HaveADegree step was shown and degree_option is studying (final year)" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:studying]
+      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_STUDYING
       expect_any_instance_of(TeacherTrainingAdviser::Steps::StageOfDegree).to receive(:final_year?).and_return(true)
       expect(subject).not_to be_skipped
     end
 
     it "returns true if HaveADegree was skipped" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(true)
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:yes]
+      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_YES
       expect(subject).to be_skipped
     end
 
-    it "returns true if degree_options is studying (not final year)" do
+    it "returns true if degree_option is studying (not final year)" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:studying]
+      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_STUDYING
       expect_any_instance_of(TeacherTrainingAdviser::Steps::StageOfDegree).to receive(:final_year?).and_return(false)
       expect(subject).to be_skipped
     end
@@ -154,7 +154,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
       allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
         receive(:get_candidate_initial_teacher_training_years) { years }
 
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:studying]
+      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_STUDYING
     end
 
     it "returns current calendar year + 2 years if degree stage is 'first year', and date is before 17th September" do
@@ -207,7 +207,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
     end
 
     it "returns nil if not studying" do
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:yes]
+      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_YES
       wizardstore["degree_status_id"] = TeacherTrainingAdviser::Steps::StageOfDegree::NOT_FINAL_YEAR[:first_year]
       travel_to(Date.new(2022, 9, 17)) do
         expect(instance.inferred_year_id).to be_nil

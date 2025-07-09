@@ -8,7 +8,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::ReviewAnswers do
       TeacherTrainingAdviser::Steps::DateOfBirth => { "date_of_birth": 20.years.ago },
       TeacherTrainingAdviser::Steps::UkAddress => { "address_postcode": "TE5 1NG" },
       TeacherTrainingAdviser::Steps::UkTelephone => { "address_telephone": "123456789" },
-      TeacherTrainingAdviser::Steps::HaveADegree => { "degree_options": "studying" },
+      TeacherTrainingAdviser::Steps::HaveADegree => { "degree_option": "studying" },
       TeacherTrainingAdviser::Steps::ReturningTeacher => {
         "type_id": TeacherTrainingAdviser::Steps::ReturningTeacher::OPTIONS[:returning_to_teaching],
       },

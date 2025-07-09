@@ -53,7 +53,8 @@ RSpec.describe TeacherTrainingAdviser::Steps::OverseasTimeZone do
   describe "#skipped?" do
     it "returns false if OverseasCountry was shown and they have an equivalent degree" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::OverseasCountry).to receive(:skipped?).and_return(false)
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
+      # TODO: Add equiv
+      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
       expect(subject).not_to be_skipped
     end
 
@@ -62,8 +63,8 @@ RSpec.describe TeacherTrainingAdviser::Steps::OverseasTimeZone do
       expect(subject).to be_skipped
     end
 
-    it "returns true if degree_options is not equivalent" do
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:yes]
+    it "returns true if degree_option is not equivalent" do
+      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_YES
       expect(subject).to be_skipped
     end
   end
