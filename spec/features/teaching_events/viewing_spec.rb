@@ -1,6 +1,8 @@
 require "rails_helper"
 
 RSpec.feature "Searching for teaching events", type: :feature do
+  include_context "with stubbed accessibility options api"
+
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).and_return(event)
   end
@@ -21,6 +23,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expect(page).to have_css("h2", text: "Event information")
       expect(page).to have_css("h2", text: "Venue information")
+      expect(page).to have_css("h2", text: "Venue accessibility features")
 
       expect(page).not_to have_css("h2", text: "Provider information")
     end
@@ -43,8 +46,11 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       if expect_venue
         expect(page).to have_css("h2", text: "Venue information")
+        expect(page).to have_css("h2", text: "Venue accessibility features")
       else
+        # NB: online events do not have an address or accessibility information
         expect(page).not_to have_css("h2", text: "Venue information")
+        expect(page).not_to have_css("h2", text: "Venue accessibility features")
       end
     end
   end
@@ -56,7 +62,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
   end
 
   describe "viewing a online event" do
-    let(:event) { build(:event_api, :online_event, :with_provider_info) }
+    let(:event) { build(:event_api, :online_event, :with_provider_info, :no_accessibility_options) }
 
     include_examples "regular teaching event", false
   end

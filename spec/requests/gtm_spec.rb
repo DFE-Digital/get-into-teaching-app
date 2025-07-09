@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe "Google Tag Manager", type: :request do
   include_context "with wizard data"
+  include_context "with stubbed accessibility options api"
 
   let(:event) { build(:event_api) }
   let(:layout_paths) do

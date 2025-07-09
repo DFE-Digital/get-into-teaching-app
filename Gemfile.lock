@@ -31,11 +31,11 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: 16d84f778f7b14a23ba52968ae1ed7d0b480806d
+  revision: d32fa2e663b6f496ab21c75ce019c67b90f64515
   specs:
-    get_into_teaching_api_client (3.5.1)
+    get_into_teaching_api_client (3.5.3)
       faraday (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (3.5.1)
+    get_into_teaching_api_client_faraday (3.5.3)
       activesupport
       faraday
       faraday-encoding
@@ -164,7 +164,7 @@ GEM
     amazing_print (1.8.1)
     ast (2.4.3)
     base64 (0.3.0)
-    benchmark (0.4.0)
+    benchmark (0.4.1)
     better_html (2.1.1)
       actionview (>= 6.0)
       activesupport (>= 6.0)
@@ -214,7 +214,7 @@ GEM
     dotenv-rails (3.1.8)
       dotenv (= 3.1.8)
       railties (>= 6.1)
-    drb (2.2.1)
+    drb (2.2.3)
     erb (5.0.1)
     erb_lint (0.9.0)
       activesupport
@@ -244,14 +244,14 @@ GEM
       faraday-retry (~> 1.0)
       ruby2_keywords (>= 0.0.4)
     faraday-em_http (1.0.0)
-    faraday-em_synchrony (1.0.0)
+    faraday-em_synchrony (1.0.1)
     faraday-encoding (0.0.6)
       faraday
     faraday-excon (1.1.0)
     faraday-http-cache (2.5.1)
       faraday (>= 0.8)
     faraday-httpclient (1.0.1)
-    faraday-multipart (1.1.0)
+    faraday-multipart (1.1.1)
       multipart-post (~> 2.0)
     faraday-net_http (1.0.2)
     faraday-net_http_persistent (1.2.0)
@@ -531,7 +531,7 @@ GEM
       psych (>= 4.0.0)
     redis (5.4.0)
       redis-client (>= 0.22.0)
-    redis-client (0.24.0)
+    redis-client (0.25.0)
       connection_pool
     redis-session-store (0.11.6)
       actionpack (>= 5.2.4.1, < 9)
@@ -745,7 +745,7 @@ DEPENDENCIES
   foreman
   front_matter_parser!
   geometry!
-  get_into_teaching_api_client_faraday (>= 3.5.1)!
+  get_into_teaching_api_client_faraday (>= 3.5.3)!
   git_wizard!
   google-api-client (>= 0.53.0)
   govuk_design_system_formbuilder (>= 2.8.0)

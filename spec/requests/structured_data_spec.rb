@@ -14,6 +14,8 @@ describe "Google Structured Data", type: :request do
   end
 
   context "when viewing an event page" do
+    include_context "with stubbed accessibility options api"
+
     let(:event) { build(:event_api) }
     let(:path) { event_path(id: event.readable_id) }
 
