@@ -686,6 +686,14 @@ en:
           degree_status:
             222750000: "Yes"
             222750004: "No"
+        life_stage:
+          situation:
+            222750003: "Graduated and exploring my career options"
+            222750004: "Considering changing my existing career"
+            222750005: "Teaching assistant or unqualified teacher in a school"
+            222750006: "Not currently working"
+            222750007: "Qualified teacher"
+
       events_steps:
         personalised_updates:
           degree_status:
@@ -855,6 +863,8 @@ en:
         consideration_journey_stage_id: How interested are you in applying for teacher training?
       mailing_list_steps_subject:
         preferred_teaching_subject_id: Select the subject you're most interested in teaching
+      mailing_list_steps_life_stage:
+        situation: "How would you describe your current situation?"
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
 
@@ -869,9 +879,17 @@ en:
       events_steps_personalised_updates:
         address_postcode: |-
           We'll only use this to send you information about events happening near you.
+
+      mailing_list_steps:
+        life_stage:
+          situation:
+            222750006: "For example, parental leave or in between jobs"
+
       mailing_list_signup:
         address_postcode: |-
           We'll only use this to send you information about events happening near you.
+      mailing_list_steps_life_stage:
+        situation: "Select the option that best describes your situation."
       teacher_training_adviser_steps_what_subject_degree:
         degree_subject: "Enter your degree subject. When you start entering your subject, you can select a suggested option from the list, or continue to enter your subject in full."
         degree_subject_nojs: "Type to enter your degree subject."

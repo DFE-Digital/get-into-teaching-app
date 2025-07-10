@@ -47,6 +47,10 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
     click_label "Yes"
     click_on "Next step"
 
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Graduated and exploring my career options"
+    click_on "Next step"
+
     expect(page).to have_text("How interested are you in applying for teacher training?")
     click_label "It’s just an idea"
     click_on "Next step"
@@ -79,6 +83,10 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
     expect(page).to have_text "Do you have a degree?"
     click_label "Not yet, I'm studying for one"
     fill_in "Which year will you graduate?", with: Time.current.year + 1
+    click_on "Next step"
+
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Graduated and exploring my career options"
     click_on "Next step"
 
     expect(page).to have_text("How interested are you in applying")
