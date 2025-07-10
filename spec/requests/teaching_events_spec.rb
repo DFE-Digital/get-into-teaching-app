@@ -28,6 +28,8 @@ describe "teaching events", type: :request do
   end
 
   describe "#show" do
+    include_context "with stubbed accessibility options api"
+
     let(:event) { build(:event_api) }
     let(:readable_id) { event.readable_id }
 

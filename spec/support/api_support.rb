@@ -42,3 +42,14 @@ shared_context "with stubbed callback quotas api" do
       .to receive(:get_callback_booking_quotas) { quotas }
   end
 end
+
+shared_context "with stubbed accessibility options api" do
+  let(:accessibilty_options) do
+    build_list(:accessibility_option_api, 3)
+  end
+
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
+      receive(:get_teaching_event_accessibilty).and_return(accessibilty_options)
+  end
+end
