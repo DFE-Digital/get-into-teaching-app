@@ -7,6 +7,7 @@ module MailingList
       first_name
       last_name
       preferred_teaching_subject_id
+      situation
       consideration_journey_stage_id
       degree_status_id
       sub_channel_id
@@ -22,6 +23,7 @@ module MailingList
       Steps::ReturningTeacher,
       Steps::AlreadyQualified,
       Steps::DegreeStatus,
+      Steps::LifeStage,
       Steps::TeacherTraining,
       Steps::Subject,
       Steps::Postcode,
