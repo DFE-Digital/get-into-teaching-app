@@ -74,11 +74,14 @@ describe MailingList::Wizard do
       })
     end
 
+    let(:filtered_attributes) { "attribute: [FILTERED]" }
+
     before do
       allow(subject).to receive(:valid?).and_return(true)
       allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
         receive(:add_mailing_list_member).with(request, return_type).and_return(mailing_list_response)
       allow(Rails.logger).to receive(:info)
+      allow(AttributeFilter).to receive(:filtered_json).and_return(filtered_attributes)
     end
 
     context "with prune! spy" do
@@ -112,25 +115,13 @@ describe MailingList::Wizard do
     end
 
     it "logs the request model (filtering sensitive attributes)" do
+      # NB: The order of the json fields cast as a string can vary in different
+      # environments leading to test flakiness if we test the exact attributes
+      # filtered. (These can be tested by the AttributeFilter specs.)
       subject.complete!
 
-      filtered_json = {
-        "candidateId" => nil,
-        "qualificationId" => nil,
-        "preferredTeachingSubjectId" => request.preferred_teaching_subject_id,
-        "acceptedPolicyId" => request.accepted_policy_id,
-        "considerationJourneyStageId" => request.consideration_journey_stage_id,
-        "degreeStatusId" => request.degree_status_id,
-        "channelId" => nil,
-        "email" => "[FILTERED]",
-        "firstName" => "[FILTERED]",
-        "lastName" => "[FILTERED]",
-        "addressPostcode" => nil,
-        "graduationYear" => "2025",
-        "situation" => graduated.id,
-      }.to_json
-
-      expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#add_mailing_list_member: #{filtered_json}")
+      expect(AttributeFilter).to have_received(:filtered_json).with(request)
+      expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#add_mailing_list_member: #{filtered_attributes}")
     end
 
     context "when not qualified for the welcome guide" do
