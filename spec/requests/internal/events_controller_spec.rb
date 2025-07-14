@@ -139,6 +139,8 @@ describe Internal::EventsController, type: :request do
   end
 
   describe "#show" do
+    include_context "with stubbed accessibility options api"
+
     let(:event_to_get_readable_id) { "1" }
 
     context "when any user type" do
@@ -314,7 +316,8 @@ describe Internal::EventsController, type: :request do
                 video_url: nil,
                 message: nil,
                 region_id: nil,
-                web_feed_id: nil)
+                web_feed_id: nil,
+                accessibility_options: nil)
         end
 
         context "when \"select a venue\" is selected" do
@@ -422,7 +425,8 @@ describe Internal::EventsController, type: :request do
                 video_url: nil,
                 message: nil,
                 region_id: nil,
-                web_feed_id: nil)
+                web_feed_id: nil,
+                accessibility_options: nil)
         end
 
         it "posts event" do

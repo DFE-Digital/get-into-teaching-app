@@ -120,12 +120,12 @@ describe MailingList::Wizard do
       subject.complete!
 
       filtered_json = {
+        "degreeStatusId" => request.degree_status_id,
         "candidateId" => nil,
         "qualificationId" => nil,
         "preferredTeachingSubjectId" => request.preferred_teaching_subject_id,
         "acceptedPolicyId" => request.accepted_policy_id,
         "considerationJourneyStageId" => request.consideration_journey_stage_id,
-        "degreeStatusId" => request.degree_status_id,
         "channelId" => nil,
         "creationChannelSourceId" => 222_750_003,
         "creationChannelServiceId" => 222_750_007,
