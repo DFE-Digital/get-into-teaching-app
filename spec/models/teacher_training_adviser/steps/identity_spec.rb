@@ -109,17 +109,6 @@ RSpec.describe TeacherTrainingAdviser::Steps::Identity do
       end
     end
 
-    # it "clears the channel_id on save when invalid" do
-    #   subject.channel_id = "invalid"
-    #   subject.save
-    #   expect(subject.channel_id).to be_nil
-    # end
-    #
-    # it "retains the channel_id on save when valid" do
-    #   subject.channel_id = channels.first.id
-    #   subject.save
-    #   expect(subject.channel_id).to eq(channels.first.id)
-    # end
   end
 
   describe "#reviewable_answers" do
