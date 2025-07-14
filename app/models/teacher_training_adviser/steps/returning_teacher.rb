@@ -24,8 +24,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def save
-      if creation_channel_source_id.blank? && creation_channel_service_id.blank? && creation_channel_activity_id.blank? && channel_id.present?
-        # if all the new creation_channel attributes are missing and a valid legacy channel_id is provided, use the legacy channel only
+      if legacy_channel?
         self.creation_channel_service_id = nil
       elsif !creation_channel_service_id.in?(creation_channel_service_ids)
         # otherwise set the new creation_channel fields and set the legacy channel_id to be nil
@@ -33,6 +32,11 @@ module TeacherTrainingAdviser::Steps
         self.creation_channel_service_id = returning_to_teaching ? RTTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID : TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
       end
       super
+    end
+
+    def legacy_channel?
+      # if all the new creation_channel attributes are missing and a valid legacy channel_id is provided, use the legacy channel only
+      creation_channel_source_id.blank? && creation_channel_service_id.blank? && creation_channel_activity_id.blank? && channel_id.present?
     end
 
     def creation_channel_service_ids

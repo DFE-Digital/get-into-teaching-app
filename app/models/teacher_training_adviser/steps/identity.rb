@@ -21,7 +21,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def save
-      if creation_channel_source_id.blank? && creation_channel_service_id.blank? && creation_channel_activity_id.blank? && channel_id.present? && channel_id.in?(legacy_channel_ids)
+      if legacy_channel?
         # if all the new creation_channel attributes are missing and a valid legacy channel_id is provided, use the legacy channel only
         self.creation_channel_source_id = nil
         self.creation_channel_activity_id = nil
@@ -32,6 +32,10 @@ module TeacherTrainingAdviser::Steps
         self.creation_channel_activity_id = DEFAULT_CREATION_CHANNEL_ACTIVITY_ID unless creation_channel_activity_id.in?(creation_channel_activity_ids)
       end
       super
+    end
+
+    def legacy_channel?
+      creation_channel_source_id.blank? && creation_channel_service_id.blank? && creation_channel_activity_id.blank? && channel_id.present? && channel_id.in?(legacy_channel_ids)
     end
 
     def title_attribute

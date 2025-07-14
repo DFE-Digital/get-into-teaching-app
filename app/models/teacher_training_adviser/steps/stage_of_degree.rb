@@ -20,10 +20,16 @@ module TeacherTrainingAdviser::Steps
     include FunnelTitle
 
     def save
-      if (creation_channel_source_id.present? || creation_channel_activity_id.present? || channel_id.nil?) && (tta? || !creation_channel_service_id.in?(creation_channel_service_ids))
+      if set_creation_channel_service_id?
+        # set the creation_channel_service_id based on degree status: final years follow the TTA whereas earlier years follow ETA
         self.creation_channel_service_id = final_year? ? ReturningTeacher::TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID : ReturningTeacher::ETA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
       end
       super
+    end
+
+    def set_creation_channel_service_id?
+      # we should set the creation_channel_service_id if the user is in the default TTA funnel and a valid creation_channel_service_id hasn't already be provided
+      (creation_channel_source_id.present? || creation_channel_activity_id.present? || channel_id.nil?) && (tta? || !creation_channel_service_id.in?(creation_channel_service_ids))
     end
 
     def skipped?
