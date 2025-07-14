@@ -20,9 +20,9 @@ module TeacherTrainingAdviser::Steps
       overseas_country_skipped = other_step(:overseas_country).skipped?
       have_a_degree_step = other_step(:have_a_degree)
       have_a_degree_skipped = have_a_degree_step.skipped?
-      equivalent_degree = have_a_degree_step.degree_options == HaveADegree::DEGREE_OPTIONS[:equivalent]
 
-      callback_not_offered || overseas_country_skipped || have_a_degree_skipped || !equivalent_degree
+      # TODO: Add additional logic to display/skip this step
+      callback_not_offered || overseas_country_skipped || have_a_degree_skipped
     end
 
     def title_attribute
