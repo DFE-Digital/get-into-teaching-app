@@ -108,7 +108,6 @@ RSpec.describe TeacherTrainingAdviser::Steps::Identity do
         expect(subject.creation_channel_activity_id).to be_nil
       end
     end
-
   end
 
   describe "#reviewable_answers" do
