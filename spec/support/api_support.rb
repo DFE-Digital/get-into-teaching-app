@@ -72,4 +72,3 @@ shared_context "with stubbed accessibility options api" do
       receive(:get_teaching_event_accessibilty).and_return(accessibilty_options)
   end
 end
-
