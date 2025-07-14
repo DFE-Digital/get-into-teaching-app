@@ -15,4 +15,22 @@ describe OptionSetHelper, type: "helper" do
       it { is_expected.to eq("Postgrad") }
     end
   end
+
+  describe "#format_option_hint" do
+    let(:translation) { "mailing_list_steps.life_stage.situation" }
+
+    subject { format_option_hint(option, translation) }
+
+    context "when an option with a hint" do
+      let(:option) { build(:situation, :not_working) }
+
+      it { is_expected.to eq("For example, parental leave or in between jobs") }
+    end
+
+    context "when an option without a hint" do
+      let(:option) { build(:situation, :graduated) }
+
+      it { is_expected.to be_nil }
+    end
+  end
 end

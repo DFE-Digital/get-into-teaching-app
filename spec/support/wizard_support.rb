@@ -60,6 +60,10 @@ shared_context "with wizard data" do
     end
   end
 
+  let(:situations) do
+    %i[in_education graduated change_career qualified_teacher].map { |trait| build(:situation, trait) }
+  end
+
   let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
   let(:inferred_degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :second_year) }
   let(:mailing_list_response) { GetIntoTeachingApiClient::DegreeStatusResponse.new({ degree_status_id: inferred_degree_status_id }) }
@@ -73,6 +77,8 @@ shared_context "with wizard data" do
       receive(:get_teaching_subjects).and_return(teaching_subject_types)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_mailing_list_subscription_channels).and_return(channels)
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
+      receive(:get_candidate_situations).and_return(situations)
     allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
       receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
