@@ -85,7 +85,7 @@ gem "indefinite_article"
 
 gem "connection_pool"
 
-# gem "get_into_teaching_api_client_faraday", ">= 3.6.0", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
+# TODO: remove the branch attribute once the client is merged in
 gem "get_into_teaching_api_client_faraday", ">= 3.6.0", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client", branch: "api-client-3.6.0"
 
 gem "redis"
