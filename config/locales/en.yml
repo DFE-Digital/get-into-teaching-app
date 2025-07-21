@@ -715,10 +715,10 @@ en:
         last_name: "Last name"
         email: "Email address"
       teacher_training_adviser_steps_overseas_callback:
-        phone_call_scheduled_at: "Select your preferred day and time for a callback"
+        phone_call_scheduled_at: "Your preferred day and time for a callback"
       teacher_training_adviser_steps_overseas_time_zone:
-        address_telephone: "Contact telephone number"
-        time_zone: "Select your time zone"
+        address_telephone: "Your telephone number"
+        time_zone: "Your time zone"
       teacher_training_adviser_steps_overseas_telephone:
         address_telephone: "Overseas telephone number (optional)"
       teacher_training_adviser_steps_previous_teacher_id:
@@ -744,8 +744,8 @@ en:
       teacher_training_adviser_steps_uk_telephone:
         address_telephone: "UK telephone number (optional)"
       teacher_training_adviser_steps_uk_callback:
-        address_telephone: "Contact telephone number"
-        phone_call_scheduled_at: "Select your preferred day and time for a callback"
+        address_telephone: "Your telephone number"
+        phone_call_scheduled_at: "Your preferred day and time for a callback"
       teacher_training_adviser_steps_uk_address:
         address_postcode: "What's your postcode?"
       teacher_training_adviser_steps_overseas_country:
@@ -833,7 +833,7 @@ en:
         email: Email address
       callbacks_steps_callback:
         address_telephone: Phone number
-        phone_call_scheduled_at: Select your preferred day and time for a callback
+        phone_call_scheduled_at: Your preferred day and time for a callback
       callbacks_steps_talking_points:
         talking_points: Choose an option
 
@@ -953,11 +953,11 @@ en:
       teacher_training_adviser_steps_overseas_callback:
         fieldset: "Choose a time"
       teacher_training_adviser_steps_overseas_time_zone:
-        fieldset: "You told us you have an equivalent degree and live overseas"
+        fieldset: "You need to speak to our team"
       teacher_training_adviser_steps_previous_teacher_id:
         fieldset: "What is your teacher reference number (TRN)?"
       teacher_training_adviser_steps_uk_callback:
-        fieldset: "You told us you have an equivalent degree and live in the United Kingdom"
+        fieldset: "You need to speak to our team"
 
       mailing_list_steps_returning_teacher:
         qualified_to_teach: "Are you already qualified to teach?"
