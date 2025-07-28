@@ -61,14 +61,14 @@ To get the second instalment of the IRP, you must meet all the eligibility requi
 
 To be eligible for the second instalment of the IRP, you must:
 
+* have successfully applied for and received the first instalment of the IRP
+
 * have worked as a teacher for the previous year (3 consecutive terms)
 
 * be contracted to work as a teacher for at least another year
 
 * be teaching in a subject and school which meets the requirements for the first instalment, as detailed on this page
-
-* have successfully applied for and received the first instalment of the IRP
-
+ 
 Your term time employment must be continuous, unless [you take time off work for statutory leave](https://www.gov.uk/browse/employing-people/time-off), such as parental leave or sick leave.
 
 The Department for Education (DfE) will review time taken off for any other reason on a case-by-case basis.
@@ -100,9 +100,37 @@ You continue to work at the school for a total of 3 terms, leaving in December 2
 
 #### Type of visa
 
-To be eligible for the second instalment of the IRP, you must remain on an eligible visa throughout your employment in England. 
+To be eligible for the second instalment of the IRP, you must remain on an eligible visa throughout your employment in England.  Most teachers will need a Skilled Worker visa. Eligible visas are:
+
+* [Skilled Worker visa](https://www.gov.uk/skilled-worker-visa)
+
+* [Youth Mobility Scheme](https://www.gov.uk/youth-mobility)
+
+* [India Young Professionals Scheme visa](https://www.gov.uk/india-young-professionals-scheme-visa)
+
+* [Family visa](https://www.gov.uk/uk-family-visa)
+
+* [UK Ancestry visa](https://www.gov.uk/ancestry-visa)
+
+* [British National (Overseas) visa](https://www.gov.uk/british-national-overseas-bno-visa)
+
+* [High Potential Individual visa](https://www.gov.uk/high-potential-individual-visa)
+
+For the following Ukrainian and Afghan visas, you can apply for your visa from within or from outside the UK:
+
+* [Afghan citizens resettlement scheme](https://www.gov.uk/guidance/afghan-citizens-resettlement-scheme)
+
+* [Afghan Relocations and Assistance Policy](https://www.gov.uk/government/publications/afghan-relocations-and-assistance-policy/afghan-relocations-and-assistance-policy-information-and-guidance)
+
+* [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
+
+* [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
+
 You can change your visa, as long as any new visa appears on the list of eligible visas on this page (example 1). You will not need to apply for any new visa from outside the UK.
+
 If your new visa is not listed on this page, you will not be eligible for the second instalment (see example 2).
+
+The Department for Education will validate your application with [UK Visas and Immigration](https://www.gov.uk/government/organisations/uk-visas-and-immigration) and the school or schools where you have worked since applying for the first instalment of the IRP. If you meet the eligibility requirements for the second instalment set out on this page, you should receive the second instalment of $nonuk_internationalrelocationpayment_instalment$ following successful completion of our eligibility checks.
 
 ##### Example 1
 You arrive in the UK in September 2024 on a Youth Mobility Scheme visa. You are employed as a teacher on a contract lasting 1 academic year, and successfully apply for the first instalment of the IRP. 
@@ -118,36 +146,19 @@ Early in 2025, your partner moves to the UK on a Skilled Worker visa lasting 3 y
 
 You are not eligible for the second instalment of the IRP as the dependant visa does not appear on the list of eligible visas on this page.
 
-
-
 ## How to apply for the IRP
 
 Applications for the first $nonuk_internationalrelocationpayment_instalment$ instalment of the IRP closed on 30 June 2025.
 
 Teachers who have already received their first instalment will still be able to apply for their second instalment from September 2025 to end of June 2026. Before you apply, you’ll need to check you meet the eligibility requirements. If you are eligible, you should receive the money following successful completion of our eligibility checks.
 
-You can apply for IRP instalment 2 once you have completed 3 full terms teaching.
+You can apply for the second IRP instalment once you have completed 3 consecutive terms of employment as a teacher which will be from September 2025 at the earliest.
 
 DfE may not be able to process late applications if you do not apply during the correct application window. If you miss the correct application window, then contact international.relocationpayment@education.gov.uk explaining your circumstances and we will review your eligibility.
 
-## DfE eligibility requirements for IRP instalment 2
-
-At the start of your second year of employment as a teacher, you will need to apply for the second instalment of the IRP. 
-
-To get the instalment 2 of the IRP, you will need to have:
-
-* made a successful claim for the first instalment
-
-* completed 3 consecutive terms of employment as a teacher
-
-Applications for the second instalment are open from September 2025 to June 2026.
-
-The Department for Education will validate your application with [UK Visas and Immigration](https://www.gov.uk/government/organisations/uk-visas-and-immigration) and the school or schools where you have worked since applying for the first instalment of the IRP. If you meet the eligibility requirements for the second instalment set out on this page, you should receive the second instalment of $nonuk_internationalrelocationpayment_instalment$ following successful completion of our eligibility checks. 
-
 ## Receiving the IRP payments
 
-You can apply for the second IRP instalment once you have completed 3 consecutive terms of employment as a teacher which will be from September 2025 at the earliest.
-You’ll be paid the first and second instalments of the IRP after your eligibility checks are completed. We cannot guarantee an exact payment date.
+You’ll be paid the second instalment of the IRP after your eligibility checks are completed. We cannot guarantee an exact payment date.
 
 To be paid the IRP, you must have a UK bank account (this can be digital). The IRP cannot be paid into a building society account.
 
@@ -157,7 +168,7 @@ You will not have to provide any evidence of the relocation costs you have incur
 
 If your details, such as your address, change after you have applied, let us know as soon as possible to avoid any delay to your payment.
 
-DfE can withhold the first and or second instalments of the IRP if you no longer meet eligibility requirements or we discover an error. 
+DfE can withhold instalments of the IRP if you no longer meet eligibility requirements or we discover an error. 
 
 DfE can take back any IRP payments that have been made to an ineligible applicant.
 
