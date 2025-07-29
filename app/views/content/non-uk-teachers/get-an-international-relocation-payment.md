@@ -55,29 +55,74 @@ If you have already received your first instalment, you may still be eligible to
 
 ### Eligibility requirements for IRP instalment 2 ($nonuk_internationalrelocationpayment_instalment$)
 
-To get the second instalment of the IRP, you must meet all the eligibility requirements set out in this section.
+To be eligible for the second instalment of the IRP, you must:
+
+* meet all the eligibility requirements set out in this section
+
+* have successfully applied for and received the first instalment of the IRP
 
 #### Teaching subject and school
 
-To be eligible for the second instalment of the IRP, you must:
-
-* have successfully applied for and received the first instalment of the IRP
+To be eligible for the second instalment of the IRP, your teaching subject and school must continue to meet the eligibility criteria. You must:
 
 * have worked as a teacher for the previous year (3 consecutive terms)
 
 * be contracted to work as a teacher for at least another year
 
-* be teaching in a subject and school which meets the requirements for the first instalment, as detailed on this page
+* be teaching in a subject and school which meets the requirements detailed on this page
  
-Your term time employment must be continuous, unless [you take time off work for statutory leave](https://www.gov.uk/browse/employing-people/time-off), such as parental leave or sick leave.
-
-The Department for Education (DfE) will review time taken off for any other reason on a case-by-case basis.
+Your term time employment must be continuous, unless [you take time off work for statutory leave](https://www.gov.uk/browse/employing-people/time-off), such as parental leave or sick leave. The Department for Education (DfE) will review time taken off for any other reason on a case-by-case basis.
 
 You can move between eligible schools and remain eligible for the second instalment (see example 1).
 
 You can start midway through the academic year and as long as you complete 3 full terms, you will remain eligible for the second instalment (see example 2).
 
 Any term time employment gaps will make you ineligible for the second instalment (see example 3).
+
+In your role in a state secondary school in England, you must be working as one of the following:
+
+* a physics teacher
+
+* a general or combined science teacher – you must teach the physics element of these subjects
+
+* a language teacher – any language taught in an English state school is eligible, except English
+
+If you are employed to teach more than one subject, then physics, general or combined science or a language or languages must make up at least 50% of your time in the classroom. Your school can tell you how much of your time is allocated to teaching eligible subjects. 
+
+You will not be eligible if you are teaching English, unless it is combined with an eligible subject.
+
+Examples of eligible teaching jobs include:
+
+* 50% modern foreign languages (for example, French, Spanish or German) and 50% another subject (for example, history)
+
+* 50% modern foreign languages (for example, French, Spanish or German) and 50% English language
+
+* 50% physics and 50% maths
+
+* 50% general or combined science (must include the physics element) and 50% maths
+
+Examples of eligible languages commonly taught in English state secondary schools include:
+
+* Ancient languages (such as Latin)
+* French
+* German
+* Italian
+* Japanese
+* Mandarin
+* Russian
+* Spanish
+
+Teaching English is not classed as an eligible subject for the IRP.
+
+You will not be eligible if you are:
+
+* employed by a recruitment agency – an agency can find you a job in a school, but your contract must be with the school and your salary must be paid directly to you by the school, not by the recruitment agency
+
+* teaching in Wales, Scotland or Northern Ireland
+
+* a UK citizen, including citizens of Wales, Scotland and Northern Ireland
+
+* an Irish citizen
 
 ##### Example 1
 You start your first eligible teaching job in England in September 2024 and successfully apply for the first instalment of the IRP.  You work a full academic year of 3 terms, leaving the school in July 2025. 
