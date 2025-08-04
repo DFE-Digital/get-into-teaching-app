@@ -1,4 +1,6 @@
 <%= f.govuk_collection_radio_buttons :type_id, f.object.class::OPTIONS, :last, nil, inline: true, legend: { tag: "h1" } %>
+<%= f.hidden_field :creation_channel_service_id, value: params[:channel_service].presence || (f.object && f.object.creation_channel_service_id.presence) %>
+
 <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">

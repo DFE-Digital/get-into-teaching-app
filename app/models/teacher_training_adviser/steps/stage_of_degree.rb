@@ -4,6 +4,7 @@ module TeacherTrainingAdviser::Steps
 
     # overwrites session[:sign_up]["degree_status_id"]
     attribute :degree_status_id, :integer
+    attribute :creation_channel_service_id, :integer
 
     validates :degree_status_id, pick_list_items: { method: :get_qualification_degree_status }
 
@@ -18,6 +19,19 @@ module TeacherTrainingAdviser::Steps
 
     include FunnelTitle
 
+    def save
+      if set_creation_channel_service_id?
+        # set the creation_channel_service_id based on degree status: final years follow the TTA whereas earlier years follow ETA
+        self.creation_channel_service_id = final_year? ? ReturningTeacher::TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID : ReturningTeacher::ETA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
+      end
+      super
+    end
+
+    def set_creation_channel_service_id?
+      # we should set the creation_channel_service_id if the user is in the default TTA funnel and a valid creation_channel_service_id hasn't already be provided
+      (creation_channel_source_id.present? || creation_channel_activity_id.present? || channel_id.nil?) && (tta? || !creation_channel_service_id.in?(creation_channel_service_ids))
+    end
+
     def skipped?
       have_a_degree_step = other_step(:have_a_degree)
       studying = have_a_degree_step.degree_options == HaveADegree::DEGREE_OPTIONS[:studying]
@@ -27,17 +41,39 @@ module TeacherTrainingAdviser::Steps
     end
 
     def reviewable_answers
-      super.tap do |answers|
-        answers["degree_status_id"] = self.class.options.key(degree_status_id)
-      end
+      {
+        "degree_status_id" => self.class.options.key(degree_status_id),
+      }
     end
 
     def final_year?
       degree_status_id == DEGREE_STATUS[:final_year]
     end
 
+    def tta?
+      creation_channel_service_id == ReturningTeacher::TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
+    end
+
     def self.options
       generate_api_options(GetIntoTeachingApiClient::PickListItemsApi, :get_qualification_degree_status, nil, DEGREE_STATUS.values)
+    end
+
+  private
+
+    def channel_id
+      other_step(:identity).channel_id
+    end
+
+    def creation_channel_source_id
+      other_step(:identity).creation_channel_source_id
+    end
+
+    def creation_channel_service_ids
+      other_step(:returning_teacher).creation_channel_service_ids
+    end
+
+    def creation_channel_activity_id
+      other_step(:identity).creation_channel_activity_id
     end
   end
 end

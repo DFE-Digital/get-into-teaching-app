@@ -20,6 +20,11 @@ describe MailingList::Wizard do
       "consideration_journey_stage_id" => consideration_journey_stage_id,
       "preferred_teaching_subject_id" => preferred_teaching_subject_id.to_s,
       "accepted_policy_id" => "789",
+      "channel_id" => nil,
+      "creation_channel_source_id" => 222_750_003,
+      "creation_channel_service_id" => 222_750_007,
+      "creation_channel_activity_id" => nil,
+      "sub_channel_id" => "some-3rd-party-id",
       "graduation_year" => "2025",
       "situation" => graduated.id,
     } }
@@ -61,6 +66,10 @@ describe MailingList::Wizard do
         consideration_journey_stage_id: consideration_journey_stage_id,
         preferred_teaching_subject_id: wizardstore[:preferred_teaching_subject_id],
         accepted_policy_id: wizardstore[:accepted_policy_id],
+        channel_id: nil,
+        creation_channel_source_id: wizardstore[:creation_channel_source_id],
+        creation_channel_service_id: wizardstore[:creation_channel_service_id],
+        creation_channel_activity_id: wizardstore[:creation_channel_activity_id],
         graduation_year: wizardstore[:graduation_year],
         situation: wizardstore[:situation],
       })
@@ -109,6 +118,7 @@ describe MailingList::Wizard do
         "degree_status_id" => wizardstore[:degree_status_id],
         "consideration_journey_stage_id" => wizardstore[:consideration_journey_stage_id],
         "preferred_teaching_subject_id" => wizardstore[:preferred_teaching_subject_id],
+        "sub_channel_id" => wizardstore[:sub_channel_id],
         "graduation_year" => wizardstore[:graduation_year],
         "situation" => wizardstore[:situation],
       })
@@ -122,6 +132,26 @@ describe MailingList::Wizard do
 
       expect(AttributeFilter).to have_received(:filtered_json).with(request)
       expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#add_mailing_list_member: #{filtered_attributes}")
+
+      # filtered_json = {
+      #   "degreeStatusId" => request.degree_status_id,
+      #   "candidateId" => nil,
+      #   "qualificationId" => nil,
+      #   "preferredTeachingSubjectId" => request.preferred_teaching_subject_id,
+      #   "acceptedPolicyId" => request.accepted_policy_id,
+      #   "considerationJourneyStageId" => request.consideration_journey_stage_id,
+      #   "channelId" => nil,
+      #   "creationChannelSourceId" => 222_750_003,
+      #   "creationChannelServiceId" => 222_750_007,
+      #   "creationChannelActivityId" => nil,
+      #   "email" => "[FILTERED]",
+      #   "firstName" => "[FILTERED]",
+      #   "lastName" => "[FILTERED]",
+      #   "addressPostcode" => nil,
+      #   "graduationYear" => "2025",
+      # }.to_json
+      #
+      # expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#add_mailing_list_member: #{filtered_json}")
     end
 
     context "when not qualified for the welcome guide" do
