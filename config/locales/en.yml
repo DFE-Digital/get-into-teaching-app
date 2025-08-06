@@ -852,7 +852,7 @@ en:
       mailing_list_steps_authenticate:
         title: "You're already registered with us"
       mailing_list_steps_already_qualified:
-        title: "We're sorry, but our emails are for people who are not already qualified to teach"
+        title: "Our emails are for people who do not have qualified teacher status (QTS)"
       mailing_list_steps_already_subscribed:
         title: "You've already signed up"
 

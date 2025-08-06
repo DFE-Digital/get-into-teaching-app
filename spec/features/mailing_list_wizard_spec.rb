@@ -292,7 +292,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "Yes"
     click_on "Next step"
 
-    expect(page).to have_text "We're sorry, but our emails are for people who are not already qualified to teach"
+    expect(page).to have_text "Our emails are for people who do not have qualified teacher status (QTS)"
     expect(page).not_to have_button("Next step")
   end
 
