@@ -24,22 +24,22 @@ describe MailingList::Steps::LifeStage do
   end
 
   shared_examples "validate situation values" do
+    it { is_expected.to respond_to :situation }
     it { is_expected.not_to allow_value(nil).for :situation }
     it { is_expected.not_to allow_value("").for :situation }
     it { is_expected.not_to allow_value(12_345).for :situation }
     it { is_expected.not_to allow_values(0).for(:situation) }
+    it { is_expected.to validate_inclusion_of(:situation).in_array(valid_situation_ids) }
+    it { is_expected.not_to validate_inclusion_of(:situation).in_array(invalid_situation_ids) }
   end
 
   it_behaves_like "a with wizard step"
-  it { is_expected.to respond_to :situation }
 
   context "when has a degree" do
     let(:degree_status_step_conditions) { { has_degree?: true, degree_in_progress?: false, no_degree?: false } }
     let(:valid_situations) { [graduated, change_career, teaching_assistant, not_working, qualified_teacher] }
 
     it_behaves_like "validate situation values"
-    it { is_expected.to validate_inclusion_of(:situation).in_array(valid_situation_ids) }
-    it { is_expected.not_to validate_inclusion_of(:situation).in_array(invalid_situation_ids) }
   end
 
   context "when degree in progress" do
@@ -47,8 +47,6 @@ describe MailingList::Steps::LifeStage do
     let(:valid_situations) { [first_career, change_career, teaching_assistant] }
 
     it_behaves_like "validate situation values"
-    it { is_expected.to validate_inclusion_of(:situation).in_array(valid_situation_ids) }
-    it { is_expected.not_to validate_inclusion_of(:situation).in_array(invalid_situation_ids) }
   end
 
   context "when does not have a degree" do
@@ -56,7 +54,12 @@ describe MailingList::Steps::LifeStage do
     let(:valid_situations) { [in_education, on_break, change_career, teaching_assistant, not_working] }
 
     it_behaves_like "validate situation values"
-    it { is_expected.to validate_inclusion_of(:situation).in_array(valid_situation_ids) }
-    it { is_expected.not_to validate_inclusion_of(:situation).in_array(invalid_situation_ids) }
+  end
+
+  context "when has not selected a degree stage" do
+    let(:degree_status_step_conditions) { { has_degree?: false, degree_in_progress?: false, no_degree?: false } }
+    let(:valid_situations) { [in_education, on_break, change_career, teaching_assistant, not_working] }
+
+    it_behaves_like "validate situation values"
   end
 end
