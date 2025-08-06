@@ -102,5 +102,6 @@ EXPOSE 3000
 ENTRYPOINT ["bundle", "exec"]
 CMD ["rails server"]
 
-ARG SHA
+ARG COMMIT_SHA
+ENV SHA=${COMMIT_SHA}
 RUN echo "sha-${SHA}" > /etc/get-into-teaching-app-sha
