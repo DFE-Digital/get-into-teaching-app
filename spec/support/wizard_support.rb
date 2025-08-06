@@ -61,7 +61,8 @@ shared_context "with wizard data" do
   end
 
   let(:situations) do
-    %i[in_education graduated change_career qualified_teacher].map { |trait| build(:situation, trait) }
+    %i[in_education on_break first_career graduated change_career teaching_assistant not_working qualified_teacher]
+      .map { |trait| build(:situation, trait) }
   end
 
   let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
