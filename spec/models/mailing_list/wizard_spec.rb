@@ -39,10 +39,9 @@ describe MailingList::Wizard do
         MailingList::Steps::Name,
         MailingList::Steps::Authenticate,
         MailingList::Steps::AlreadySubscribed,
-        MailingList::Steps::ReturningTeacher,
-        MailingList::Steps::AlreadyQualified,
         MailingList::Steps::DegreeStatus,
         MailingList::Steps::LifeStage,
+        MailingList::Steps::AlreadyQualified,
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,
         MailingList::Steps::Postcode,
@@ -83,7 +82,7 @@ describe MailingList::Wizard do
       })
     end
 
-    let(:filtered_attributes) { "attribute: [FILTERED]" }
+    let(:filtered_attributes) { "attribute1: [FILTERED], attribute2: 1234" }
 
     before do
       allow(subject).to receive(:valid?).and_return(true)
@@ -132,26 +131,6 @@ describe MailingList::Wizard do
 
       expect(AttributeFilter).to have_received(:filtered_json).with(request)
       expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#add_mailing_list_member: #{filtered_attributes}")
-
-      # filtered_json = {
-      #   "degreeStatusId" => request.degree_status_id,
-      #   "candidateId" => nil,
-      #   "qualificationId" => nil,
-      #   "preferredTeachingSubjectId" => request.preferred_teaching_subject_id,
-      #   "acceptedPolicyId" => request.accepted_policy_id,
-      #   "considerationJourneyStageId" => request.consideration_journey_stage_id,
-      #   "channelId" => nil,
-      #   "creationChannelSourceId" => 222_750_003,
-      #   "creationChannelServiceId" => 222_750_007,
-      #   "creationChannelActivityId" => nil,
-      #   "email" => "[FILTERED]",
-      #   "firstName" => "[FILTERED]",
-      #   "lastName" => "[FILTERED]",
-      #   "addressPostcode" => nil,
-      #   "graduationYear" => "2025",
-      # }.to_json
-      #
-      # expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#add_mailing_list_member: #{filtered_json}")
     end
 
     context "when not qualified for the welcome guide" do
