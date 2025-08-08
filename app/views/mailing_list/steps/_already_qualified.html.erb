@@ -4,13 +4,8 @@
   If you already have QTS, and <%= link_to("trained outside the UK", "/non-uk-teachers/train-to-teach-in-england-as-an-international-student") %> or in England, there's lots of support available to become a teacher.
 </p>
 <p>
-  If you have previously taught or trained to teach in the UK, you may be eligible for a <%= link_to("return to teaching adviser", "/landing/return-to-teaching-advisers") %>.
+  If you have previously taught or trained to teach in the UK, you may be eligible for a <%= link_to("return to teaching adviser", "/landing/return-to-teaching-advisers") %>. Our expert advisers have years of teaching experience and provide one-to-one support to help you return to the classroom.
 </p>
-<p>
-  Our expert advisers have years of teaching experience and provide one-to-one support to help you return to the classroom.
-</p>
-<p>
-  <%= link_to("Find out more about returning to teaching", "https://teaching-vacancies.service.gov.uk/jobseeker-guides/return-to-teaching-in-england/return-to-teaching/") %>.
-</p>
+<%= render CallsToAction::ArrowLinkComponent.new(link_target: "https://teaching-vacancies.service.gov.uk/jobseeker-guides/return-to-teaching-in-england/return-to-teaching/", link_text: "Find out more about returning to teaching") %>
 
 <%= render 'content/shared/qualifications-training/qts_for_teachers' %>
