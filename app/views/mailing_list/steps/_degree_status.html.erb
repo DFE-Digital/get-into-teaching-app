@@ -11,7 +11,7 @@
   :id,
   ->(option) { format_option_value(option, "mailing_list_steps.teacher_training.degree_status") },
   lambda { |option|
-    if option.id == MailingList::Steps::DegreeStatus::GRADUATION_YEAR_DEPENDENT_OPTION_ID
+    if option.id == MailingList::Steps::DegreeStatus::DEGREE_IN_PROGRESS
       content_tag(:div, class: "field__hidden_subfield") do
         f.govuk_text_field(
           :graduation_year,

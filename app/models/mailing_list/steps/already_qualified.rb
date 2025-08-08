@@ -4,7 +4,7 @@ module MailingList
       include FunnelTitle
 
       def skipped?
-        !other_step("returning_teacher").qualified_to_teach
+        !other_step(:life_stage).qualified_teacher?
       end
 
       def can_proceed?

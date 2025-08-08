@@ -67,7 +67,7 @@ describe MailingList::StepsController, type: :request do
         follow_redirect!
       end
 
-      it { is_expected.to redirect_to(mailing_list_step_path(:returning_teacher)) }
+      it { is_expected.to redirect_to(mailing_list_step_path(:degree_status)) }
 
       it "logs the response model (filtering sensitive attributes)" do
         filtered_json = { "candidateId" => "abc123", "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]" }.to_json
