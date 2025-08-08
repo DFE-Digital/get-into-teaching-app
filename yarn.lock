@@ -4252,6 +4252,11 @@ flat-cache@^6.1.9:
     flatted "^3.3.3"
     hookified "^1.8.2"
 
+flat@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/flat/-/flat-5.0.2.tgz#8ca6fe332069ffa9d324c327198c598259ceb241"
+  integrity sha512-b6suED+5/3rTpUBdG1gupIl8MPFCAMA0QXwmljLhvCUKcUvdE4gWky9zpuGCcXHOsz4J9wPGNWq6OKpmIzz3hQ==
+
 flatpickr@^4.6.13:
   version "4.6.13"
   resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.6.13.tgz#8a029548187fd6e0d670908471e43abe9ad18d94"
@@ -8348,7 +8353,16 @@ webpack-dev-server@^5.2.0:
     webpack-dev-middleware "^7.4.2"
     ws "^8.18.0"
 
-webpack-merge@5, webpack-merge@^5.7.3:
+webpack-merge@6:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-6.0.1.tgz#50c776868e080574725abc5869bd6e4ef0a16c6a"
+  integrity sha512-hXXvrjtx2PLYx4qruKl+kyRSLc52V+cCvMxRjmKwoA+CBbbF5GfIBtR6kCvl0fYGqTUPKB+1ktVmTHqMOzgCBg==
+  dependencies:
+    clone-deep "^4.0.1"
+    flat "^5.0.2"
+    wildcard "^2.0.1"
+
+webpack-merge@^5.7.3:
   version "5.9.0"
   resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-5.9.0.tgz#dc160a1c4cf512ceca515cc231669e9ddb133826"
   integrity sha512-6NbRQw4+Sy50vYNTw7EyOn41OZItPiXB8GNv3INSoe3PSFaHJEz3SHTrYVaRm2LilNGnFUzh0FAwqPEmU/CwDg==
@@ -8512,10 +8526,10 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-wildcard@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/wildcard/-/wildcard-2.0.0.tgz#a77d20e5200c6faaac979e4b3aadc7b3dd7f8fec"
-  integrity sha512-JcKqAHLPxcdb9KM49dufGXn2x3ssnfjbcaQdLlfZsL9rH9wgDQjUtDxbo8NE0F6SFvydeu1VhZe7hZuHsB2/pw==
+wildcard@^2.0.0, wildcard@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/wildcard/-/wildcard-2.0.1.tgz#5ab10d02487198954836b6349f74fff961e10f67"
+  integrity sha512-CC1bOL87PIWSBhDcTrdeLo6eGT7mCFtrg0uIJtqJUFyK+eJnzl8A1niH56uu7KMa5XFrtiV+AQuHO3n7DsHnLQ==
 
 word-wrap@^1.2.3, word-wrap@~1.2.3:
   version "1.2.4"
