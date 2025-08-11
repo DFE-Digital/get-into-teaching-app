@@ -20,9 +20,9 @@ inset_text:
       <br>
       <p>The 2-year IRP pilot which ran from 1 September 2023 to 31 May 2025 has ended and is not being extended.</p> 
       <br>
-      <p>No new applications will be accepted for teachers:
-      <p><ul><li>starting a qualifying teaching role in England from 1 June 2025</li></p>
-      <p><li>who started a qualifying teaching role between 1 March 2024 and 31 May 2025</li></p></ul>
+      <p>No new applications will be accepted for teachers:</p>
+      <p><ul><li>starting a qualifying teaching role in England from 1 June 2025</li></ul></p>
+      <p><ul><li>who started a qualifying teaching role between 1 March 2024 and 31 May 2025</li></ul></p>
       <p>If you started a qualifying teaching role between 1 March 2024 and 31 May 2025 and have already applied for and received the first instalment of IRP, you will still be able to apply for your second instalment from September 2025. Before you apply, you must read the guidance on this page to check you are eligible for the IRP. </p>
 ---
 $applications-open$
