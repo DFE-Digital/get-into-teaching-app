@@ -3,14 +3,14 @@ require "rails_helper"
 describe MailingList::Steps::LifeStage do
   include_context "with wizard step"
 
-  let(:in_education) { build(:situation, :in_education) }   # 222_750_000
-  let(:on_break) { build(:situation, :on_break) }           # 222_750_001
-  let(:first_career) { build(:situation, :first_career) }   # 222_750_002
-  let(:graduated) { build(:situation, :graduated) }         # 222_750_003
-  let(:change_career) { build(:situation, :change_career) } # 222_750_004
+  let(:in_education) { build(:situation, :in_education) }             # 222_750_000
+  let(:on_break) { build(:situation, :on_break) }                     # 222_750_001
+  let(:first_career) { build(:situation, :first_career) }             # 222_750_002
+  let(:graduated) { build(:situation, :graduated) }                   # 222_750_003
+  let(:change_career) { build(:situation, :change_career) }           # 222_750_004
   let(:teaching_assistant) { build(:situation, :teaching_assistant) } # 222_750_005
-  let(:not_working) { build(:situation, :not_working) } # 222_750_006
-  let(:qualified_teacher) { build(:situation, :qualified_teacher) } # 222_750_007
+  let(:not_working) { build(:situation, :not_working) }               # 222_750_006
+  let(:qualified_teacher) { build(:situation, :qualified_teacher) }   # 222_750_007
 
   let(:all_situations) do
     [in_education, on_break, first_career, graduated, change_career, teaching_assistant, not_working, qualified_teacher]
