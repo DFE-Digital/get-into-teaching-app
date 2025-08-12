@@ -1,13 +1,13 @@
 <section class="teaching-event__venue-information">
   <h2 class="heading-s">Venue information</h2>
 
-  <%= tag.p(safe_join(@event.venue_address, tag.br)) %>
+  <p>
+    <%= safe_join(@event.venue_address, tag.br) %>
+  </p>
 
-  <section><%= event_location_map(@event) %></section>
-
-  <ul>
+  <ul class="map-link">
     <li>
-      <%= link_to("Open venue map in Google Maps", "https://maps.google.com/?q=#{event_address(@event)}", target: "blank") %>
+      <%= link_to("See venue in Google Maps", "https://maps.google.com/?q=#{event_address(@event)}", target: "_blank", rel: "noopener") %>
     </li>
   </ul>
 
@@ -16,4 +16,16 @@
       <%= image_tag(@event.building.image_url, alt: @event.building.venue) %>
     </div>
   <% end %>
+
+  <% if @event.has_accessibility_options? %>
+    <h2 class="heading-s">Venue accessibility features</h2>
+    <ul class="accessibility_options">
+      <%= safe_join(@event.accessibility_options_with_labels.map { |i| tag.li(i) }) %>
+    </ul>
+  <% end %>
+
+  <p class="govuk-!-margin-top-6">
+    For more information about accessibility at the venue,
+    <%= link_to "contact our support team", "/help-and-support" %>.
+  </p>
 </section>

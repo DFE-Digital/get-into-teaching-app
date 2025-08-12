@@ -63,18 +63,6 @@ module EventsHelper
     ].compact.join(",\n")
   end
 
-  def event_location_map(event)
-    address = event_address(event)
-
-    ajax_map(
-      address,
-      zoom: 10,
-      mapsize: [732, 490],
-      title: event.name,
-      description: address,
-    )
-  end
-
   def event_type_color(type_id)
     case type_id
     when git_event_type_id
@@ -102,7 +90,12 @@ module EventsHelper
       OpenStruct.new(
         title: Crm::EventRegion.lookup_by_id(event.region_id),
         description: description,
-        path: event_path(event.readable_id, channel: params[:channel], sub_channel: params[:sub_channel]),
+        path: event_path(event.readable_id,
+                         channel: params[:channel].presence,
+                         channel_source: params[:channel_source].presence,
+                         channel_service: params[:channel_service].presence,
+                         channel_activity: params[:channel_activity].presence,
+                         sub_channel: params[:sub_channel]),
       )
     end
   end

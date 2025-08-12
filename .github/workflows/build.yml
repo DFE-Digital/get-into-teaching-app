@@ -34,10 +34,6 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - name: Set up Docker Buildx
-        id: buildx
-        uses: docker/setup-buildx-action@master
-
       - name: Get Short SHA
         id: sha
         run: |
@@ -57,29 +53,32 @@ jobs:
              echo "BRANCH_TAG=$GIT_BRANCH" >> $GITHUB_ENV
              echo "DOCKER_IMAGE_TEST=${{ env.DOCKER_REPOSITORY }}:base-sha-${{steps.sha.outputs.short }}" >> $GITHUB_OUTPUT
 
-      - name: Login to Docker registry
-        uses: docker/login-action@v3.4.0
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set DOCKER_IMAGE environment variable
+        id: build-vars-base
+        run: |
+          {
+            echo 'TAGS_VAR<<EOF'
+            echo ${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
+            echo ${{ env.DOCKER_REPOSITORY }}:base-sha-${{ steps.sha.outputs.short }}
+            echo EOF
+          } >> "$GITHUB_ENV"
+          {
+            echo 'MIN_CACHE_FROM_VAR<<EOF'
+            echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
+            echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-master
+            echo EOF
+          } >> "$GITHUB_ENV"
 
-      - name: Build and push base image
-        uses: docker/build-push-action@v6
+      - name: Build and push docker image
+        id: build-image-base
+        uses: DFE-Digital/github-actions/build-docker-image@master
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           target: base
           context: .
-          cache-from: |
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:base-master
-          tags: |
-            ${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
-            ${{ env.DOCKER_REPOSITORY }}:base-sha-${{ steps.sha.outputs.short }}
-          push: true
-          build-args: |
-            BUILDKIT_INLINE_CACHE=1
-        env:
-          DOCKER_BUILD_RECORD_UPLOAD: false
+          max-cache: false
+          main-branch: "master"
+          docker-repository: ${{ env.DOCKER_REPOSITORY }}
 
       - name: Slack Notification
         if: failure() && github.ref == 'refs/heads/master'
@@ -104,16 +103,12 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - name: Set up Docker Buildx
-        id: buildx
-        uses: docker/setup-buildx-action@master
-
       - name: Get Short SHA
         id: sha
         run: |
              echo "short=$(echo $GITHUB_SHA | cut -c -7)" >> $GITHUB_OUTPUT
 
-      - name: Set docker images variables
+      - name: Set docker images variables release
         id:   docker
         run: |
              if [ "${{github.ref}}" == "refs/heads/master" ]
@@ -127,54 +122,71 @@ jobs:
              echo "BRANCH_TAG=$GIT_BRANCH" >> $GITHUB_ENV
              echo "DOCKER_IMAGE=${{ env.DOCKER_REPOSITORY }}:sha-${{steps.sha.outputs.short }}" >> $GITHUB_OUTPUT
 
-      - name: Login to Docker registry
-        uses: docker/login-action@v3.4.0
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set build action environment variable release
+        id: build-vars-release
+        run: |
+            {
+              echo 'TAGS_VAR<<EOF'
+              echo ${{ env.DOCKER_REPOSITORY }}:${{ env.BRANCH_TAG }}
+              echo ${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
+              echo ${{ env.DOCKER_REPOSITORY }}:${{ steps.sha.outputs.short }}
+              echo EOF
+            } >> "$GITHUB_ENV"
+            {
+              echo 'MIN_CACHE_FROM_VAR<<EOF'
+              echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
+              echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-master
+              echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
+              echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:release-build-master
+              echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:${{ env.BRANCH_TAG }}
+              echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:master
+              echo EOF
+            } >> "$GITHUB_ENV"
 
-      - name: Build and push release image
-        uses: docker/build-push-action@v6
+      - name: Build and push docker image release
+        id: build-image-release
+        uses: DFE-Digital/github-actions/build-docker-image@master
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           target: release
           context: .
-          cache-from: |
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:base-master
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:release-build-master
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:master
-          tags: |
-            ${{ env.DOCKER_REPOSITORY }}:${{ env.BRANCH_TAG }}
-            ${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
-          push: true
-          build-args: |
-            BUILDKIT_INLINE_CACHE=1
-            SHA=${{ steps.sha.outputs.short }}
-        env:
-          DOCKER_BUILD_RECORD_UPLOAD: false
+          max-cache: false
+          main-branch: "master"
+          docker-sha: ${{ steps.sha.outputs.short }}
+          docker-repository: ${{ env.DOCKER_REPOSITORY }}
+          snyk-token: ${{ secrets.SNYK_TOKEN }}
 
-      - name: Push release-build image
-        uses: docker/build-push-action@v6
+      - name: Set build image environment variable release-build
+        id: build-vars-release-build
+        run: |
+            {
+              echo 'TAGS_VAR<<EOF'
+              echo ${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
+              echo ${{ env.DOCKER_REPOSITORY }}:release-build-sha-${{ steps.sha.outputs.short }}
+              echo EOF
+            } >> "$GITHUB_ENV"
+            {
+              echo 'MIN_CACHE_FROM_VAR<<EOF'
+              echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
+              echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:release-build-master
+              echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
+              echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-master
+              #echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:${{ env.BRANCH_TAG }}
+              #echo type=registry,ref=${{ env.DOCKER_REPOSITORY }}:master
+              echo EOF
+            } >> "$GITHUB_ENV"
+
+      - name: Build and push docker image release-build
+        id: build-image-release-build
+        uses: DFE-Digital/github-actions/build-docker-image@master
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           target: release-build
           context: .
-          cache-from: |
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:release-build-master
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:base-master
-          tags: |
-            ${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
-            ${{ env.DOCKER_REPOSITORY }}:release-build-sha-${{ steps.sha.outputs.short }}
-          push: true
-          build-args: |
-            BUILDKIT_INLINE_CACHE=1
-            SHA=${{ steps.sha.outputs.short }}
-        env:
-          DOCKER_BUILD_RECORD_UPLOAD: false
+          max-cache: false
+          main-branch: "master"
+          docker-sha: ${{ steps.sha.outputs.short }}
+          docker-repository: ${{ env.DOCKER_REPOSITORY }}
 
       - name: Slack Notification
         if: failure() && github.ref == 'refs/heads/master'
@@ -218,7 +230,7 @@ jobs:
 
       - name: Lint ERB Templates
         run: |-
-          docker run -t --rm ${{env.DOCKER_IMAGE_TEST}} bundle exec erblint --lint-all
+          docker run -t --rm ${{env.DOCKER_IMAGE_TEST}} bundle exec erb_lint --lint-all
 
       - name: Lint Markdown
         run: |-

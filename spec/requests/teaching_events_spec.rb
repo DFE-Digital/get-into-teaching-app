@@ -28,6 +28,8 @@ describe "teaching events", type: :request do
   end
 
   describe "#show" do
+    include_context "with stubbed accessibility options api"
+
     let(:event) { build(:event_api) }
     let(:readable_id) { event.readable_id }
 
@@ -101,7 +103,7 @@ describe "teaching events", type: :request do
       context "when there are no GiT events" do
         let(:events) { [] }
 
-        it { is_expected.to include("This autumn we'll be running events in Birmingham, London, Manchester, and also online.") }
+        it { is_expected.to include("This autumn we'll be running events in Birmingham, London, and Manchester.") }
       end
     end
 
