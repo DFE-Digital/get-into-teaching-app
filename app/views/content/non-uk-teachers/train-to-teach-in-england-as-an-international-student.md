@@ -3,15 +3,28 @@ title: "Train to teach in England as a non-UK citizen"
 subcategory: If you want to train to teach
 description: |-
   Find out how to train to teach in England as a student from outside the UK. Get help and guidance on your qualifications, funding and visa.
-youtube_video:
-  why-train-video:
-    id: WhBBL_DpHFo
-    title: Why train to teach in England 
 navigation: 20.10
 navigation_title: Train to teach in England as a non-UK citizen
 navigation_description: Find out how to train to teach in England as a non-UK citizen or foreign student and get English qualified teacher status (QTS).
 image: "static/images/content/hero-images/peer-to-peer-collaboration.jpg"
 backlink: "../../"
+quote:
+  christobel-whyteach:
+    text: "If you want a job that you will love and you will feel wanted, and you will be looked after in essence, and you want a job where you can develop and progress, I’d definitely say to consider teaching in the UK."
+    name: "Christobel, maths teacher"
+    classes: quote--indent
+  christobel-visa:
+    text: "Sorting out my visa was a lot easier than expected. The information on the UK Border Agency’s website was very comprehensive, and my school and training provider were very knowledgeable, so I had people holding my hand from start to finish."
+    name: "Christobel, maths teacher"
+    classes: quote--indent
+  nellie-qualification:
+    text: "The value of gaining a transferable qualification through training to teach in England is that you can go anywhere in the world and you can teach, and you can go in that part of the world and you can make a difference."
+    name: "Nellie, trainee science teacher"
+    classes: quote--indent
+  nellie-application:
+    text: "The support that I received when I applied for my training course was tremendous. I was supported at every step, right from the very beginning."
+    name: "Nellie, trainee science teacher"
+    classes: quote--indent
 expander:
   refugees-asylum-seekers:
     header: "Refugees and asylum seekers:"
@@ -48,6 +61,8 @@ Before you apply, you must [check your eligibility to train to teach in England]
 
 If you are unsure about your qualifications or eligibility, you can [get help and support online or over the phone](/help-and-support). 
 
+$christobel-whyteach$
+
 ## Qualifying to teach in England
 
 You will need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach in most schools in England.
@@ -55,6 +70,8 @@ You will need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qt
 If you do not want to come to England to study, you can [gain international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status) where you live or work, with no need to visit the UK. If you get iQTS, you automatically get QTS as well.  
 
 If you are already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+
+$nellie-qualification$
 
 ## Fees and financial support
 
@@ -67,6 +84,8 @@ You may be able to get financial support for fee-paying courses, depending on yo
 If you want to train to teach languages or physics, you could be [eligible for a bursary or scholarship](/funding-and-support/scholarships-and-bursaries) worth up to $scholarships_nonuk_max$. 
 
 If you are not training to teach these subjects, any financial support you get will depend on [your immigration status or the visa you are on](/non-uk-teachers/visas-for-non-uk-trainees).  
+
+$nellie-application$
 
 ### Salaried teacher training courses 
 
@@ -94,6 +113,8 @@ $visas$
 
 $ukraine-visas$
 
+$christobel-visa$
+
 ## Train to teach in Wales, Scotland or Northern Ireland 
 
 To find out about teaching in other areas of the UK, visit the: 
@@ -102,15 +123,7 @@ To find out about teaching in other areas of the UK, visit the:
 
 * [Teach in Scotland website](https://teachinscotland.scot/) 
 
-* [Northern Ireland Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland) 
-
-## Non-UK citizens who trained to teach in England share their experiences
-
-<div class="youtube-video">
-  <iframe title="Why train to teach in England" loading="lazy" src="https://www.youtube-nocookie.com/embed/WhBBL_DpHFo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" enablejsapi="true"></iframe>
-</div>
-
-<p><a href="/non-uk-teachers/why-train-to-teach-in-england-video-transcript">Read the transcript for the ‘Why train to teach in England?’ video</a>.</p>
+* [Northern Ireland Department for Education website](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland)
 
 ## Get help
 
