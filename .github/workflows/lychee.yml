@@ -23,7 +23,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         with:
-          args: --exclude-mail --max-retries 20 app/views/content
+          args: --max-retries 20 app/views/content
           fail: true
 
       - name: Read Lychee output into var

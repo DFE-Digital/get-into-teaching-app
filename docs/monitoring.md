@@ -31,7 +31,7 @@ Install it using your package manager of choice or download the binary
 executable.
 
 ```bash
-lychee --insecure --exclude-mail app/views/content
+lychee --insecure app/views/content
 ```
 
 We run this on a nightly schedule in a GitHub Action and broken links are reported via Slack.
