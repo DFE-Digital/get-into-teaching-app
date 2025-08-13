@@ -653,8 +653,8 @@ provider_groups:
       
     - header: "Leeds Trinity University"
       link: "https://www.leedstrinity.ac.uk/courses/cpd-and-short-courses/assessment-only/"
-      name: "Helen Bromley"
-      email: "h.bromley@leedstrinity.ac.uk"
+      name: "The LTU Admissions Team"
+      email: "ittadmissions@leedstrinity.ac.uk"
       telephone: "0113 283 7100"
       international_phone: "+441132837100"
       
@@ -716,20 +716,6 @@ provider_groups:
       email: "galia.segal@lsjs.ac.uk"
       
       
-      
-    - header: "Teaching London: LDBS SCITT"
-      link: "https://www.teachinglondon.org/ourcourses/assessment-only-route-to-qts/"
-      name: "Saskia Rossi"
-      email: "admin@teachinglondon.org"
-      telephone: "020 7932 1129"
-      international_phone: "+442079321129"
-      
-    - header: "Ted Wragg Teacher Training Partnership"
-      link: "https://www.tedwraggtrust.co.uk/page/?title=Train+to+Teach&pid=25"
-      name: "Carrie McMillan"
-      email: "carrie.mcmillan@tedwraggtrust.co.uk"
-      telephone: "01392 686165"
-      international_phone: "+441392686165"
       
     - header: "Tes Institute"
       link: "https://www.tes.com/institute"
