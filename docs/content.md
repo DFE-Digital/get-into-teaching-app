@@ -188,6 +188,7 @@ quote:
     text: "My mentor was highly knowledgeable and experienced, and had high expectations which helped me to flourish."
     name: "Jennifer, trainee teacher"
     classes: quote--indent
+    
 ---
 
 To add a quote in an erb file, use the following code:
