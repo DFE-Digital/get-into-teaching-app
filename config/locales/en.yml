@@ -977,9 +977,6 @@ en:
       teacher_training_adviser_steps_uk_callback:
         fieldset: "You need to speak to our team"
 
-      mailing_list_steps_returning_teacher:
-        qualified_to_teach: "Are you already qualified to teach?"
-
   internal:
     status:
       pending:
