@@ -10,6 +10,7 @@ describe MailingList::Wizard do
   let(:inferred_degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, inferred_degree_status) }
   let(:consideration_journey_stage_id) { Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :it_s_just_an_idea) }
   let(:preferred_teaching_subject_id) { Crm::TeachingSubject.lookup_by_key(:physics) }
+  let(:graduated) { build(:situation, :graduated) }
   let(:store) do
     { uuid => {
       "email" => "email@address.com",
@@ -25,6 +26,7 @@ describe MailingList::Wizard do
       "creation_channel_activity_id" => nil,
       "sub_channel_id" => "some-3rd-party-id",
       "graduation_year" => "2025",
+      "situation" => graduated.id,
     } }
   end
   let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
@@ -37,9 +39,9 @@ describe MailingList::Wizard do
         MailingList::Steps::Name,
         MailingList::Steps::Authenticate,
         MailingList::Steps::AlreadySubscribed,
-        MailingList::Steps::ReturningTeacher,
-        MailingList::Steps::AlreadyQualified,
         MailingList::Steps::DegreeStatus,
+        MailingList::Steps::LifeStage,
+        MailingList::Steps::AlreadyQualified,
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,
         MailingList::Steps::Postcode,
@@ -68,6 +70,7 @@ describe MailingList::Wizard do
         creation_channel_service_id: wizardstore[:creation_channel_service_id],
         creation_channel_activity_id: wizardstore[:creation_channel_activity_id],
         graduation_year: wizardstore[:graduation_year],
+        situation: wizardstore[:situation],
       })
     end
 
@@ -79,11 +82,14 @@ describe MailingList::Wizard do
       })
     end
 
+    let(:filtered_attributes) { "attribute1: [FILTERED], attribute2: 1234" }
+
     before do
       allow(subject).to receive(:valid?).and_return(true)
       allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
         receive(:add_mailing_list_member).with(request, return_type).and_return(mailing_list_response)
       allow(Rails.logger).to receive(:info)
+      allow(AttributeFilter).to receive(:filtered_json).and_return(filtered_attributes)
     end
 
     context "with prune! spy" do
@@ -113,31 +119,18 @@ describe MailingList::Wizard do
         "preferred_teaching_subject_id" => wizardstore[:preferred_teaching_subject_id],
         "sub_channel_id" => wizardstore[:sub_channel_id],
         "graduation_year" => wizardstore[:graduation_year],
+        "situation" => wizardstore[:situation],
       })
     end
 
     it "logs the request model (filtering sensitive attributes)" do
+      # NB: The order of the json fields cast as a string can vary in different
+      # environments leading to test flakiness if we test the exact attributes
+      # filtered. (These can be tested by the AttributeFilter specs.)
       subject.complete!
 
-      filtered_json = {
-        "degreeStatusId" => request.degree_status_id,
-        "candidateId" => nil,
-        "qualificationId" => nil,
-        "preferredTeachingSubjectId" => request.preferred_teaching_subject_id,
-        "acceptedPolicyId" => request.accepted_policy_id,
-        "considerationJourneyStageId" => request.consideration_journey_stage_id,
-        "channelId" => nil,
-        "creationChannelSourceId" => 222_750_003,
-        "creationChannelServiceId" => 222_750_007,
-        "creationChannelActivityId" => nil,
-        "email" => "[FILTERED]",
-        "firstName" => "[FILTERED]",
-        "lastName" => "[FILTERED]",
-        "addressPostcode" => nil,
-        "graduationYear" => "2025",
-      }.to_json
-
-      expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#add_mailing_list_member: #{filtered_json}")
+      expect(AttributeFilter).to have_received(:filtered_json).with(request)
+      expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#add_mailing_list_member: #{filtered_attributes}")
     end
 
     context "when not qualified for the welcome guide" do

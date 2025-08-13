@@ -20,13 +20,13 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).not_to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
 
-    expect(page).to have_text "Are you already qualified to teach?"
-    choose "No"
-    click_on "Next step"
-
     expect(page).to have_text "Do you have a degree?"
     choose "Not yet, I'm studying for one"
     fill_in "Which year will you graduate?", with: Date.current.year + 1
+    click_on "Next step"
+
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Exploring options for my first career"
     click_on "Next step"
 
     # check page title remains correct for non completed step
@@ -64,12 +64,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
     choose "No"
     click_on "Next step"
 
-    expect(page).to have_text "Do you have a degree?"
-    choose "No"
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Considering changing my existing career"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -103,12 +103,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
-    choose "No"
-    click_on "Next step"
-
     expect(page).to have_text "Do you have a degree?"
     choose "Yes"
+    click_on "Next step"
+
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Graduated and exploring my career options"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -141,12 +141,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
     choose "No"
     click_on "Next step"
 
-    expect(page).to have_text "Do you have a degree?"
-    choose "No"
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "On a break before starting university"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -178,12 +178,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).not_to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
     choose "No"
     click_on "Next step"
 
-    expect(page).to have_text "Do you have a degree?"
-    choose "No"
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Not currently working"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -228,14 +228,14 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
-    choose "No"
-    click_on "Next step"
-
     expect(page).to have_text "Do you have a degree?"
     expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
       response.degree_status_id.to_s,
     )
+    click_on "Next step"
+
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Graduated and exploring my career options"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -264,11 +264,17 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).not_to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
+
+    expect(page).to have_text "Do you have a degree?"
     choose "Yes"
     click_on "Next step"
 
-    expect(page).to have_text "We're sorry, but our emails are for people who are not already qualified to teach"
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Qualified teacher"
+    click_on "Next step"
+
+    expect(page).to have_text "Our emails are for people who do not have qualified teacher status (QTS)"
     expect(page).not_to have_button("Next step")
   end
 
@@ -300,7 +306,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
   end
 
   scenario "Full journey as an existing candidate that has already subscribed to the mailing list" do
@@ -347,7 +353,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
   end
 
   scenario "Full journey as an existing candidate using a magic link" do
@@ -364,16 +370,16 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path(magic_link_token: token)
 
-    expect(page).to have_text "Are you already qualified to teach?"
-    choose "No"
-    click_on "Next step"
-
     expect(page).to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
 
     expect(page).to have_text "Do you have a degree?"
     expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
       response.degree_status_id.to_s,
     )
+    click_on "Next step"
+
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Graduated and exploring my career options"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -440,7 +446,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step(email: "test2@user.com")
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
   end
 
   scenario "Partial journey with candidate encountering an error" do

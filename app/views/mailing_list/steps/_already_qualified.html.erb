@@ -1,9 +1,11 @@
 <%= tag.h1 t("helpers.label.mailing_list_steps_already_qualified.title") %>
 
 <p>
-  If you qualified as a teacher outside the UK, <%= link_to("find out more about teaching in England if you trained outside the UK", "/non-uk-teachers/teach-in-england-if-you-trained-overseas") %>.
+  If you already have QTS, and <%= link_to("trained outside the UK", "/non-uk-teachers/train-to-teach-in-england-as-an-international-student") %> or in England, there's lots of support available to become a teacher.
 </p>
-
 <p>
-  If you completed your teacher training in England, <%= link_to("find out how you can return to teaching", "https://teaching-vacancies.service.gov.uk/jobseeker-guides/return-to-teaching-in-england/return-to-teaching/") %>.
+  If you have previously taught or trained to teach in the UK, you may be eligible for a <%= link_to("return to teaching adviser", "/landing/return-to-teaching-advisers") %>. Our expert advisers have years of teaching experience and provide one-to-one support to help you return to the classroom.
 </p>
+<%= render CallsToAction::ArrowLinkComponent.new(link_target: "https://teaching-vacancies.service.gov.uk/jobseeker-guides/return-to-teaching-in-england/return-to-teaching/", link_text: "Find out more about returning to teaching") %>
+<br>
+<%= render 'content/shared/qualifications-training/qts_for_teachers' %>

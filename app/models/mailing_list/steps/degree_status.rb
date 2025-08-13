@@ -1,7 +1,9 @@
 module MailingList
   module Steps
     class DegreeStatus < ::GITWizard::Step
-      GRADUATION_YEAR_DEPENDENT_OPTION_ID = 222_750_006
+      HAS_DEGREE = 222_750_000
+      DEGREE_IN_PROGRESS = 222_750_006
+      NO_DEGREE = 222_750_004
 
       attribute :degree_status_id, :integer
       attribute :graduation_year, :integer
@@ -17,10 +19,10 @@ module MailingList
                 },
                 numericality: { only_integer: true },
                 presence: { message: "Enter your expected graduation year" },
-                if: :requires_graduation_year?
+                if: :degree_in_progress?
 
-      validate :graduation_year_not_in_the_past, if: :requires_graduation_year?
-      validate :graduation_year_not_too_far_in_the_future, if: :requires_graduation_year?
+      validate :graduation_year_not_in_the_past, if: :degree_in_progress?
+      validate :graduation_year_not_too_far_in_the_future, if: :degree_in_progress?
 
       delegate :magic_link_token_used?, to: :@wizard
 
@@ -34,14 +36,22 @@ module MailingList
         degree_status_options.map { |option| option.id.to_i }
       end
 
+      def has_degree?
+        degree_status_id == HAS_DEGREE
+      end
+
+      def degree_in_progress?
+        degree_status_id == DEGREE_IN_PROGRESS
+      end
+
+      def no_degree?
+        degree_status_id == NO_DEGREE
+      end
+
     private
 
       def query_degree_status
         PickListItemsApiPresenter.new.get_qualification_degree_status
-      end
-
-      def requires_graduation_year?
-        degree_status_id == GRADUATION_YEAR_DEPENDENT_OPTION_ID
       end
 
       def graduation_year_not_in_the_past
