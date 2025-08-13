@@ -10,15 +10,15 @@ image: "static/images/content/hero-images/peer-to-peer-collaboration.jpg"
 backlink: "../../"
 quote:
   christobel-whyteach:
-    text: "If you want a job that you will love and you will feel wanted, and you will be looked after in essence, and you want a job where you can develop and progress, I’d definitely say to consider teaching in the UK."
+    text: "If you want a job that you will love and you will feel wanted, where you can develop and progress, I’d definitely say to consider teaching in the UK."
     name: "Christobel, maths teacher"
     classes: quote--indent
   christobel-visa:
-    text: "Sorting out my visa was a lot easier than expected. The information on the UK Border Agency’s website was very comprehensive, and my school and training provider were very knowledgeable, so I had people holding my hand from start to finish."
+    text: "Sorting out my visa was a lot easier than expected. The information on the UK Border Agency’s website was comprehensive, and my school and training provider were very knowledgeable, so I had people holding my hand from start to finish."
     name: "Christobel, maths teacher"
     classes: quote--indent
   nellie-qualification:
-    text: "The value of gaining a transferable qualification through training to teach in England is that you can go anywhere in the world and you can teach, and you can go in that part of the world and you can make a difference."
+    text: "The value of gaining a transferable qualification through training to teach in England is that you can go anywhere in the world and you can teach."
     name: "Nellie, trainee science teacher"
     classes: quote--indent
   nellie-application:
