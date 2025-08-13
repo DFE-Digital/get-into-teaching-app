@@ -78,6 +78,8 @@ module "web_application" {
   enable_logit = var.enable_logit
 
   enable_prometheus_monitoring = var.enable_prometheus_monitoring
+
+  run_as_non_root = true
 }
 
 module "worker_application" {
@@ -101,4 +103,5 @@ module "worker_application" {
   enable_prometheus_monitoring = var.enable_prometheus_monitoring
 
   enable_gcp_wif = true
+  run_as_non_root = true
 }
