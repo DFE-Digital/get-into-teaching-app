@@ -54,6 +54,10 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
     select "Chemistry"
     click_on "Next step"
 
+    expect(page).to have_text "Are you a UK citizen?"
+    select "Yes"
+    click_on "Next step"
+
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
@@ -86,6 +90,10 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
 
     expect(page).to have_text("Select the subject you're most interested in teaching")
     select "Maths"
+    click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    select "Yes"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
