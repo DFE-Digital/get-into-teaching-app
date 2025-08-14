@@ -85,7 +85,7 @@ gem "indefinite_article"
 
 gem "connection_pool"
 
-gem "get_into_teaching_api_client_faraday", ">= 3.6.0", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
+gem "get_into_teaching_api_client_faraday", ">= 3.7.0", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"
