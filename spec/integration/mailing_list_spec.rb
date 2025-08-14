@@ -55,7 +55,7 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
     click_on "Next step"
 
     expect(page).to have_text "Are you a UK citizen?"
-    select "Yes"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
@@ -93,7 +93,7 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
     click_on "Next step"
 
     expect(page).to have_text "Are you a UK citizen?"
-    select "Yes"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"

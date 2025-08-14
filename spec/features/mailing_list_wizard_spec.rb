@@ -40,6 +40,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "Yes"
+    click_on "Next step"
+
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
@@ -78,6 +82,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Maths"
+    click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
@@ -119,6 +127,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "Yes"
+    click_on "Next step"
+
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
@@ -157,6 +169,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "No"
+    click_on "Next step"
+
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
@@ -192,6 +208,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
     select "French"
+    click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
@@ -249,6 +269,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
       "Select the subject you're most interested in teaching",
       selected: Crm::TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
     )
+    click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text "Joey, you're signed up"
@@ -390,6 +414,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Maths"
+    click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
