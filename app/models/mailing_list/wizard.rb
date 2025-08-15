@@ -27,6 +27,7 @@ module MailingList
       Steps::Subject,
 
       Steps::Citizenship,
+      Steps::VisaStatus,
 
       Steps::Postcode,
     ].freeze

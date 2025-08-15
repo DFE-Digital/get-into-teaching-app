@@ -701,6 +701,11 @@ en:
           citizenship:
             222750000: "Yes"
             222750001: "No"
+        visa_status:
+          visa_status:
+            222750000: "No, I have settled status (pre-settled status or leave to remain)"
+            222750001: "Yes, I need a visa"
+            222750002: "Not sure"
 
       events_steps:
         personalised_updates:
@@ -875,8 +880,9 @@ en:
         situation: "How would you describe your current situation?"
       mailing_list_steps_citizenship:
         citizenship: "Are you a UK citizen?"
-#          222750000: "Yes"
-#          222750001: "No"
+      mailing_list_steps_visa_status:
+        visa_status: "Do you need a visa to train to teach in England?"
+
 
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
@@ -903,7 +909,9 @@ en:
       mailing_list_steps_life_stage:
         situation: "Select the option that best describes your situation."
       mailing_list_steps_citizenship:
-        citizenship: "You'll find out how to become a teacher based on your circumstances"
+        citizenship: "You'll find out how to become a teacher based on your circumstances."
+      mailing_list_steps_visa_status:
+        visa_status: "You'll find out how to become a teacher based on your circumstances."
 
       teacher_training_adviser_steps_what_subject_degree:
         degree_subject: "Enter your degree subject. When you start entering your subject, you can select a suggested option from the list, or continue to enter your subject in full."

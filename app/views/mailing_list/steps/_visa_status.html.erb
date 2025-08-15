@@ -1,0 +1,8 @@
+<%= f.govuk_collection_radio_buttons :visa_status,
+                                     f.object.visa_statuses,
+                                     :id,
+                                     ->(option) { format_option_value(option, "mailing_list_steps.visa_status.visa_status") },
+                                     ->(option) { format_option_hint(option, "mailing_list_steps.visa_status.visa_status") },
+                                     legend: { tag: "h1", text: t('helpers.label.mailing_list_steps_visa_status.visa_status', **Value.data) },
+                                     hint: { text: t('helpers.hint.mailing_list_steps_visa_status.visa_status', **Value.data) }
+%>
