@@ -14,6 +14,7 @@ describe MailingList::Wizard do
   let(:graduated) { build(:situation, :graduated) }
   let(:non_uk_citizen) { build(:citizenship, :non_uk_citizen) }
   let(:visa_status) { build(:visa_status, :no_i_will_need_to_apply_for_a_visa) }
+  let(:location) { build(:location, :united_kingdom) }
   let(:store) do
     { uuid => {
       "email" => "email@address.com",
@@ -32,6 +33,7 @@ describe MailingList::Wizard do
       "situation" => graduated.id,
       "citizenship" => non_uk_citizen.id,
       "visa_status" => visa_status.id,
+      "location" => location.id,
     } }
   end
   let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
@@ -51,6 +53,7 @@ describe MailingList::Wizard do
         MailingList::Steps::Subject,
         MailingList::Steps::Citizenship,
         MailingList::Steps::VisaStatus,
+        MailingList::Steps::Location,
         MailingList::Steps::Postcode,
       ]
     end
@@ -80,6 +83,7 @@ describe MailingList::Wizard do
         situation: wizardstore[:situation],
         citizenship: wizardstore[:citizenship],
         visa_status: wizardstore[:visa_status],
+        location: wizardstore[:location],
       })
     end
 

@@ -52,7 +52,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Test, you're signed up"
   end
 
-  scenario "Full journey as an on-campus candidate, non-UK citizen" do
+  scenario "Full journey as an on-campus candidate, non-UK citizen, living inside the UK" do
     sub_channel_id = "abc123"
 
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
@@ -90,6 +90,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Do you need a visa to train to teach in England?"
     choose "Yes, I need a visa"
+    click_on "Next step"
+
+    expect(page).to have_text "Where do you live?"
+    choose "Inside the UK"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
@@ -181,8 +185,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "No, I have settled status (pre-settled status or leave to remain)"
     click_on "Next step"
 
-    expect(page).to have_text "We'll only use this to send you information about events happening near you"
-    fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
+    expect(page).to have_text "Where do you live?"
+    choose "Outside the UK"
     click_on "Complete sign up"
 
     expect(page).to have_text "Test, you're signed up"
@@ -282,6 +286,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Are you a UK citizen?"
     choose "Yes"
     click_on "Next step"
+
+    expect(page).to have_text "We'll only use this to send you information about events happening near you"
+    click_on "Complete sign up"
 
     expect(page).to have_text "Joey, you're signed up"
   end
@@ -388,7 +395,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Do you have a degree?"
   end
 
-  scenario "Full journey as an existing candidate using a magic link, non-UK citizen" do
+  scenario "Full journey as an existing candidate using a magic link, non-UK citizen, inside the UK" do
     token = "magic-link-token"
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
       first_name: "Test",
@@ -430,6 +437,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Do you need a visa to train to teach in England?"
     choose "Not sure"
+    click_on "Next step"
+
+    expect(page).to have_text "Where do you live?"
+    choose "Inside the UK"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
