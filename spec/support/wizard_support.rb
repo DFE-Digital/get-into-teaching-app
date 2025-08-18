@@ -69,6 +69,10 @@ shared_context "with wizard data" do
     %i[uk_citizen non_uk_citizen].map { |trait| build(:citizenship, trait) }
   end
 
+  let(:visa_statuses) do
+    %i[yes_i_have_a_visa no_i_will_need_to_apply_for_a_visa not_sure].map { |trait| build(:visa_status, trait) }
+  end
+
   let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
   let(:inferred_degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :second_year) }
   let(:mailing_list_response) { GetIntoTeachingApiClient::DegreeStatusResponse.new({ degree_status_id: inferred_degree_status_id }) }
@@ -86,6 +90,8 @@ shared_context "with wizard data" do
       receive(:get_candidate_situations).and_return(situations)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_citizenship).and_return(citizenships)
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
+      receive(:get_candidate_visa_status).and_return(visa_statuses)
     allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
       receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
