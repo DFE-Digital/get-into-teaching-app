@@ -25,10 +25,9 @@ module MailingList
       Steps::AlreadyQualified,
       Steps::TeacherTraining,
       Steps::Subject,
-
       Steps::Citizenship,
       Steps::VisaStatus,
-
+      Steps::Location,
       Steps::Postcode,
     ].freeze
 

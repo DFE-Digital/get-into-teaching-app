@@ -1,0 +1,8 @@
+<%= f.govuk_collection_radio_buttons :location,
+                                     f.object.locations,
+                                     :id,
+                                     ->(option) { format_option_value(option, "mailing_list_steps.location.location") },
+                                     ->(option) { format_option_hint(option, "mailing_list_steps.location.location") },
+                                     legend: { tag: "h1", text: t('helpers.label.mailing_list_steps_location.location', **Value.data) },
+                                     hint: { text: t('helpers.hint.mailing_list_steps_location.location', **Value.data) }
+%>
