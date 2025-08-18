@@ -375,7 +375,12 @@ jobs:
   review:
     name: Review Deployment Process
     needs: [ build_release ]
-    if: github.ref != 'refs/heads/master'
+    if: |
+      github.ref != 'refs/heads/master' && 
+      (
+        github.actor != 'dependabot[bot]' || 
+        contains(github.event.pull_request.labels.*.name, 'deploy')
+      )
     runs-on: ubuntu-latest
     continue-on-error: true
     concurrency: Review_${{github.event.number}}
