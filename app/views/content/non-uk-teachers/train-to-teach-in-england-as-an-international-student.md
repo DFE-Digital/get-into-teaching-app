@@ -14,7 +14,7 @@ quote:
     name: "Christobel, maths teacher"
     classes: quote--indent
   christobel-visa:
-    text: "Sorting out my visa was a lot easier than expected. The information on the UK Border Agency’s website was comprehensive, and my school and training provider were very knowledgeable, so I had people holding my hand from start to finish."
+    text: "The information on the UK Border Agency’s website was comprehensive and my school and training provider were knowledgeable, so I had people holding my hand from start to finish."
     name: "Christobel, maths teacher"
     classes: quote--indent
   nellie-qualification:
