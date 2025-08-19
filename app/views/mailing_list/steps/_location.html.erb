@@ -6,7 +6,7 @@
                                        inline: false do %>
       <% f.object.locations.each do |location| %>
         <% inside_uk = location.id == MailingList::Steps::Location::INSIDE_THE_UK %>
-        <%= tag.div class: "govuk-!-margin-bottom-2",  data: {"last-step-target": inside_uk ? "next-step" : "complete" } do %>
+        <%= tag.div class: "govuk-!-margin-bottom-2", data: {"last-step-target": inside_uk ? "next-step" : "complete" } do %>
           <%= f.govuk_radio_button :location,
                                    location.id,
                                    label: { text: format_option_value(location, "mailing_list_steps.location.location") },

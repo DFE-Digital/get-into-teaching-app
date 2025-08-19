@@ -94,7 +94,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Where do you live?"
     choose "Inside the UK"
-    click_on "Next step"
+    # NB: the last_step_controller javascript will update the CTA button text on the fly to "Next step" depending on the radio button selected
+    click_on "Complete sign up"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
@@ -441,7 +442,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Where do you live?"
     choose "Inside the UK"
-    click_on "Next step"
+    # NB: the last_step_controller javascript will update the CTA button text on the fly to "Next step" depending on the radio button selected
+    click_on "Complete sign up"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "What's your UK postcode? (optional)", with: ""
