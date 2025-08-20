@@ -50,7 +50,7 @@ This website is partially compliant with the WCAG (Web Content Accessibility Gui
 
 ### Non-accessible content
 
-We have two videos that do not meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded). These videos are titled "What happens at a Get Into Teaching event" and "Why train to teach in England". We plan to add audio descriptions to these videos by September 2025. When we publish new content, we will ensure that our use of videos meets accessibility standards.
+We have one video that does not meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded). This videos is titled "What happens at a Get Into Teaching event". We plan to add audio descriptions to this video by September 2025. When we publish new content, we will ensure that our use of videos meets accessibility standards.
 
 #### Webchat
 
