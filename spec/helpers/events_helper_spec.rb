@@ -1,7 +1,6 @@
 require "rails_helper"
 
 describe EventsHelper, type: "helper" do
-
   let(:startdate) { Time.zone.local(2020, 6, 1, 10) }
   let(:enddate) { Time.zone.local(2020, 6, 1, 12) }
   let(:event) { build(:event_api, start_at: startdate, end_at: enddate) }
