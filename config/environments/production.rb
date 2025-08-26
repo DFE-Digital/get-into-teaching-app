@@ -100,7 +100,6 @@ Rails.application.configure do
 
   config.x.git_api_endpoint = \
     "https://getintoteachingapi-production.teacherservices.cloud/api"
-  config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence
 
   config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence
 

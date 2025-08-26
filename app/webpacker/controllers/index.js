@@ -7,16 +7,3 @@ import { definitionsFromContext } from '@hotwired/stimulus-webpack-helpers';
 const application = Application.start();
 const context = require.context('controllers', true, /_controller\.js$/);
 application.load(definitionsFromContext(context));
-
-global.mapsLoadedCallback = function () {
-  global.mapsLoaded = true;
-
-  const maps = document.querySelectorAll('[data-controller="map"]');
-  for (const map of maps) {
-    const instance = application.getControllerForElementAndIdentifier(
-      map,
-      'map',
-    );
-    instance.initMap();
-  }
-};
