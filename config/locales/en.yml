@@ -686,13 +686,31 @@ en:
           degree_status:
             222750000: "Yes"
             222750004: "No"
+            222750006: "Not yet, I'm studying for one"
         life_stage:
           situation:
+            222750000: "16-18 years old and still in education"
+            222750001: "On a break before starting university"
+            222750002: "Exploring options for my first career"
             222750003: "Graduated and exploring my career options"
             222750004: "Considering changing my existing career"
             222750005: "Teaching assistant or unqualified teacher in a school"
             222750006: "Not currently working"
             222750007: "Qualified teacher"
+        citizenship:
+          citizenship:
+            222750000: "Yes"
+            222750001: "No"
+        visa_status:
+          visa_status:
+            222750000: "No, I have settled status (pre-settled status or leave to remain)"
+            222750001: "Yes, I need a visa"
+            222750002: "Not sure"
+        location:
+          location:
+            222750000: "Inside the UK"
+            222750001: "Outside the UK"
+
 
       events_steps:
         personalised_updates:
@@ -865,6 +883,14 @@ en:
         preferred_teaching_subject_id: Select the subject you're most interested in teaching
       mailing_list_steps_life_stage:
         situation: "How would you describe your current situation?"
+      mailing_list_steps_citizenship:
+        citizenship: "Are you a UK citizen?"
+      mailing_list_steps_visa_status:
+        visa_status: "Do you need a visa to train to teach in England?"
+      mailing_list_steps_location:
+        location: "Where do you live?"
+
+
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
 
@@ -884,12 +910,18 @@ en:
         life_stage:
           situation:
             222750006: "For example, parental leave or in between jobs"
-
       mailing_list_signup:
         address_postcode: |-
           We'll only use this to send you information about events happening near you.
       mailing_list_steps_life_stage:
         situation: "Select the option that best describes your situation."
+      mailing_list_steps_citizenship:
+        citizenship: "You'll find out how to become a teacher based on your circumstances."
+      mailing_list_steps_visa_status:
+        visa_status: "You'll find out how to become a teacher based on your circumstances."
+      mailing_list_steps_location:
+        location: "You'll find out how to become a teacher based on your circumstances."
+
       teacher_training_adviser_steps_what_subject_degree:
         degree_subject: "Enter your degree subject. When you start entering your subject, you can select a suggested option from the list, or continue to enter your subject in full."
         degree_subject_nojs: "Type to enter your degree subject."

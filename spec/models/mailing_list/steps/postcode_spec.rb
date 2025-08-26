@@ -28,4 +28,39 @@ describe MailingList::Steps::Postcode do
       expect(subject.address_postcode).to be_nil
     end
   end
+
+  describe "skipped?" do
+    before do
+      allow(instance).to receive(:other_step).with(:citizenship) { instance_double(MailingList::Steps::Citizenship, uk_citizen?: uk_citizen) }
+      allow(instance).to receive(:other_step).with(:location) { instance_double(MailingList::Steps::Location, inside_the_uk?: inside_the_uk) }
+    end
+
+    context "when a UK citizen" do
+      let(:uk_citizen) { true }
+
+      it "is not skipped when a UK citizen" do
+        is_expected.not_to be_skipped
+      end
+    end
+
+    context "when a non-UK citizen" do
+      let(:uk_citizen) { false }
+
+      context "when inside the UK" do
+        let(:inside_the_uk) { true }
+
+        it "is not skipped when inside the UK" do
+          is_expected.not_to be_skipped
+        end
+      end
+
+      context "when outside the UK" do
+        let(:inside_the_uk) { false }
+
+        it "is skipped when outside the UK" do
+          is_expected.to be_skipped
+        end
+      end
+    end
+  end
 end
