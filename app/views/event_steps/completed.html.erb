@@ -1,22 +1,28 @@
 <% @hide_page_helpful_question = true %>
 
 <%= tag.section data: { "sub-channel-id": session.dig('events', params['event_id'], 'sub_channel_id') } do %>
-  <h1 class="heading-l heading--box-green">Sign up complete</h1>
 
-  <%= tag.h2("You are signed up for #{@event.name}.", class: "heading-m") %>
+  <%= tag.h2("You are signed up for #{@event.name}.", class: "heading-l heading--box-blue") %>
 
-  <p><%= format_event_date @event, stacked: false %></p>
+  <%= tag.h3(format_event_date(@event, stacked: false), class: "heading-s") %>
 
-  <%- if params[:subscribed].to_s == "1" -%>
-    <h3>You've also signed up for email updates</h3>
-
-    <p>You're ready to receive email updates to help you get into teaching.</p>
-  <%- end -%>
-
-  <h2 class="heading-m">What happens next</h2>
   <p>
     You will receive a confirmation email with details of the event. If there
     is an issue with the event we will contact you via phone.
+  </p>
+
+  <%= tag.h2("Get free tailored email guidance", class: "heading-l heading--box-blue") %>
+
+  <%= tag.h3("Would you like to receive email updates to help you get into teaching?", class: "heading-m") %>
+
+  <p>
+    Your details are protected under the terms of our <%= link_to "privacy notice (opens in new tab)", privacy_policy_path(id: session[:privacy_policy_id].presence || GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy.id), target: :blank %>.
+    This explains how we use your personal data. It's important you read it before signing up to receive emails.
+
+  </p>
+
+  <p class="govuk-!-margin-bottom-9">
+    <%= link_to "Next step", mailing_list_steps_path, class: "button", role: "button", data: { "promo-type": "mailinglist" } %>
   </p>
 
   <%= render SingleQuestionSurveyComponent.new(
