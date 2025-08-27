@@ -32,11 +32,6 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next step"
 
     fill_in "What's your telephone number? (optional)", with: "01234567890"
-    click_on "Next step"
-
-    within_fieldset "Would you like to receive email updates" do
-      choose "No"
-    end
 
     expect_sign_up_with_attributes(base_attributes.merge({ is_walk_in: true }))
 
@@ -65,11 +60,6 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "continue without verifying your identity"
 
     fill_in "What's your telephone number? (optional)", with: "01234567890"
-    click_on "Next step"
-
-    within_fieldset "Would you like to receive email updates" do
-      choose "No"
-    end
 
     expect_sign_up_with_attributes(base_attributes.merge({ is_walk_in: true, is_verified: false }))
 
@@ -93,27 +83,11 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next step"
 
     fill_in "What's your telephone number? (optional)", with: "01234567890"
-    click_on "Next step"
-
-    click_on "Complete sign up"
-
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Choose yes or no"
-
-    within_fieldset "Would you like to receive email updates" do
-      choose "Yes"
-    end
-    click_on "Complete sign up"
-
-    fill_in_personalised_updates
-
-    expect_sign_up_with_attributes(base_attributes.merge(personalised_attributes))
-
+    expect_sign_up_with_attributes(base_attributes)
     click_on "Complete sign up"
 
     expect(page).to have_title(sign_up_complete_page_title)
     expect(page).to have_text "What happens next"
-    expect(page).to have_text "signed up for email updates"
   end
 
   scenario "Full journey as a new candidate declining the mailing list option" do
@@ -130,18 +104,12 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next step"
 
     fill_in "What's your telephone number? (optional)", with: "01234567890"
-    click_on "Next step"
-
-    within_fieldset "Would you like to receive email updates" do
-      choose "No"
-    end
 
     expect_sign_up_with_attributes(base_attributes)
 
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
-    expect(page).not_to have_text "signed up for email updates"
   end
 
   scenario "Full journey as an existing candidate" do
@@ -151,7 +119,7 @@ RSpec.feature "Event wizard", type: :feature do
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
       event_id: event.id,
       address_postcode: "TE57 1NG",
-      address_telephone: "1234567890",
+      address_telephone: "9876543210",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:exchange_access_token_for_teaching_event_add_attendee).with("123456", anything).and_return(response)
@@ -166,29 +134,13 @@ RSpec.feature "Event wizard", type: :feature do
 
     expect(page).to have_text "To verify your details, we've sent a code to your email address."
     fill_in "Enter your verification code:", with: "123456"
+    expect_sign_up_with_attributes(base_attributes.merge(address_telephone: response.address_telephone))
     click_on "Next step"
 
-    within_fieldset "Would you like to receive email updates" do
-      choose "Yes"
-    end
-    click_on "Complete sign up"
-
-    expect(page).not_to have_text("What's your UK postcode? (optional)")
-    fill_in_personalised_updates
-
-    expect_sign_up_with_attributes(
-      base_attributes
-        .merge(personalised_attributes,
-               {
-                 address_telephone: response.address_telephone,
-                 address_postcode: response.address_postcode,
-               }),
-    )
-
-    click_on "Complete sign up"
+    expect(page).to have_title(sign_up_complete_page_title)
 
     expect(page).to have_text "What happens next"
-    expect(page).to have_text "signed up for email updates"
+    expect(page).not_to have_text "signed up for email updates"
   end
 
   scenario "Full journey as a returning candidate that resends the verification code" do
@@ -296,29 +248,6 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Email address", with: email if email
   end
 
-  def fill_in_personalised_updates(
-    degree_status: nil,
-    consideration_journey_stage: nil,
-    postcode: "TE57 1NG",
-    preferred_teaching_subject: nil
-  )
-    select_value_or_default "Do you have a degree?", degree_status
-    select_value_or_default "How interested are you in applying for teacher training?", consideration_journey_stage
-    if page.has_text?("What's your UK postcode? (optional)")
-      fill_in "What's your UK postcode? (optional)", with: postcode
-    end
-    select_value_or_default "Select the subject you're most interested in teaching", preferred_teaching_subject
-  end
-
-  def select_value_or_default(label, value = nil)
-    if value
-      select(value, from: label)
-    else
-      # choosing second option because first is 'Please select'
-      find_field(label).find("option:nth-of-type(2)").select_option
-    end
-  end
-
   def base_attributes
     {
       event_id: event.id,
@@ -327,15 +256,6 @@ RSpec.feature "Event wizard", type: :feature do
       email: "test@user.com",
       is_walk_in: false,
       address_telephone: "01234567890",
-    }
-  end
-
-  def personalised_attributes
-    {
-      degree_status_id: 222_750_000,
-      consideration_journey_stage_id: 222_750_000,
-      preferred_teaching_subject_id: Crm::TeachingSubject.lookup_by_key(:art_and_design),
-      address_postcode: "TE57 1NG",
     }
   end
 

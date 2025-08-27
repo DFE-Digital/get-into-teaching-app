@@ -13,8 +13,6 @@ module Events
       Steps::PersonalDetails,
       ::GITWizard::Steps::Authenticate,
       Steps::ContactDetails,
-      Steps::FurtherDetails,
-      Steps::PersonalisedUpdates,
     ].freeze
 
     def matchback_attributes

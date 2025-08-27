@@ -27,6 +27,7 @@ describe EventStepsController, type: :request do
     before { get event_steps_path("123", query: "param") }
 
     it { is_expected.to redirect_to(event_step_path("123", { id: :personal_details, query: "param" })) }
+    it { is_expected.to be_indexed }
   end
 
   describe "#show" do
@@ -140,38 +141,30 @@ describe EventStepsController, type: :request do
     end
 
     context "with last step" do
+      let(:steps) { Events::Wizard.steps }
+      let(:model) { steps.last }
+      let(:details_params) { attributes_for(:"events_#{model.key}") }
+
       context "when all valid" do
         before do
-          allow_any_instance_of(Events::Steps::PersonalDetails).to \
-            receive(:valid?).and_return true
+          steps.each do |step|
+            allow_any_instance_of(Events::Wizard).to \
+              receive(:add_attendee_to_event).and_return true
 
-          allow_any_instance_of(::GITWizard::Steps::Authenticate).to \
-            receive(:valid?).and_return true
-
-          allow_any_instance_of(Events::Steps::ContactDetails).to \
-            receive(:valid?).and_return true
-
-          allow_any_instance_of(Events::Steps::FurtherDetails).to \
-            receive(:valid?).and_return true
-
-          allow_any_instance_of(Events::Wizard).to \
-            receive(:add_attendee_to_event).and_return true
+            allow_any_instance_of(step).to receive(:valid?).and_return true
+          end
         end
-
-        let(:model) { Events::Steps::PersonalisedUpdates }
-        let(:details_params) { attributes_for(:events_personalised_updates) }
 
         it { is_expected.to redirect_to completed_event_steps_path(readable_event_id) }
       end
 
       context "when invalid steps" do
-        let(:model) { Events::Steps::PersonalisedUpdates }
-        let(:details_params) { attributes_for(:events_personalised_updates) }
-
-        it do
-          is_expected.to redirect_to \
-            event_step_path(readable_event_id, "personal_details")
+        before do
+          allow_any_instance_of(model).to receive(:valid?).and_return true
         end
+
+        it { is_expected.to redirect_to event_step_path(readable_event_id, steps.first.key) }
+        it { is_expected.to be_indexed }
       end
     end
   end
