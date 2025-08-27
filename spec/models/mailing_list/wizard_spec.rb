@@ -1,6 +1,7 @@
 require "rails_helper"
 require "digest"
 
+# rubocop:disable RSpec/MultipleMemoizedHelpers
 describe MailingList::Wizard do
   subject { described_class.new wizardstore, "postcode" }
 
@@ -11,6 +12,9 @@ describe MailingList::Wizard do
   let(:consideration_journey_stage_id) { Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :it_s_just_an_idea) }
   let(:preferred_teaching_subject_id) { Crm::TeachingSubject.lookup_by_key(:physics) }
   let(:graduated) { build(:situation, :graduated) }
+  let(:non_uk_citizen) { build(:citizenship, :non_uk_citizen) }
+  let(:visa_status) { build(:visa_status, :no_i_will_need_to_apply_for_a_visa) }
+  let(:location) { build(:location, :united_kingdom) }
   let(:store) do
     { uuid => {
       "email" => "email@address.com",
@@ -27,6 +31,9 @@ describe MailingList::Wizard do
       "sub_channel_id" => "some-3rd-party-id",
       "graduation_year" => "2025",
       "situation" => graduated.id,
+      "citizenship" => non_uk_citizen.id,
+      "visa_status" => visa_status.id,
+      "location" => location.id,
     } }
   end
   let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
@@ -44,6 +51,9 @@ describe MailingList::Wizard do
         MailingList::Steps::AlreadyQualified,
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,
+        MailingList::Steps::Citizenship,
+        MailingList::Steps::VisaStatus,
+        MailingList::Steps::Location,
         MailingList::Steps::Postcode,
       ]
     end
@@ -71,6 +81,9 @@ describe MailingList::Wizard do
         creation_channel_activity_id: wizardstore[:creation_channel_activity_id],
         graduation_year: wizardstore[:graduation_year],
         situation: wizardstore[:situation],
+        citizenship: wizardstore[:citizenship],
+        visa_status: wizardstore[:visa_status],
+        location: wizardstore[:location],
       })
     end
 
@@ -169,3 +182,4 @@ describe MailingList::Wizard do
     end
   end
 end
+# rubocop:enable RSpec/MultipleMemoizedHelpers
