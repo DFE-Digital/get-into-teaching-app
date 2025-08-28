@@ -36,7 +36,7 @@ Some salaried teacher training courses may also come with fees. Check with indiv
 The postgraduate salaried courses are:
 
 * School Direct salaried
-* postgraduate teaching apprenticeships (PGTA)
+* [postgraduate teaching apprenticeships (PGTA)](/train-to-be-a-teacher/postgraduate-teaching-apprenticeships)
 * Teach First teacher training
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
