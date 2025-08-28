@@ -7,6 +7,8 @@ module Events
       is_walk_in
       sub_channel_id
       hashed_email
+      first_name
+      authenticate
     ].freeze
 
     self.steps = [

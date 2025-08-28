@@ -17,8 +17,9 @@ class EventStepsController < ApplicationController
 
   def completed
     super
-
+    @first_name = wizard_store[:first_name]
     @hashed_email = wizard_store[:hashed_email] if hash_email_address?
+    @authenticate = wizard_store[:authenticate]
   end
 
 protected
@@ -88,7 +89,12 @@ private
 
   def resolve_layout
     return "registration_with_image_above" if @current_step.instance_of?(Events::Steps::PersonalDetails)
+    return "minimal" if action_name == "completed"
 
     "registration"
+  end
+
+  def set_breadcrumb
+    breadcrumb @page_title, request.path
   end
 end
