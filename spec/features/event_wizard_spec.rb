@@ -87,7 +87,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_title(sign_up_complete_page_title)
-    expect(page).to have_text "What happens next"
+    expect(page).to have_text "Get free tailored email guidance"
   end
 
   scenario "Full journey as a new candidate declining the mailing list option" do
@@ -109,7 +109,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     click_on "Complete sign up"
 
-    expect(page).to have_text "What happens next"
+    expect(page).to have_text "Get free tailored email guidance"
   end
 
   scenario "Full journey as an existing candidate" do
@@ -139,7 +139,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     expect(page).to have_title(sign_up_complete_page_title)
 
-    expect(page).to have_text "What happens next"
+    expect(page).to have_text "Get free tailored email guidance"
     expect(page).not_to have_text "signed up for email updates"
   end
 
@@ -205,7 +205,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     click_on "Complete sign up"
 
-    expect(page).to have_text "What happens next"
+    expect(page).to have_text "Get free tailored email guidance"
     expect(page).not_to have_text "signed up for email updates"
   end
 
@@ -234,7 +234,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     click_on "Next step"
 
-    expect(page).to have_text "What happens next"
+    expect(page).to have_text "Get free tailored email guidance"
     expect(page).not_to have_text "signed up for email updates"
   end
 
