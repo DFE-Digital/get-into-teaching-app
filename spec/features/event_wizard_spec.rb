@@ -87,32 +87,10 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_title(sign_up_complete_page_title)
-    expect(page).to have_text "Get free tailored email guidance"
+    expect(page).to have_text "Get free personalised teacher training guidance"
   end
 
-  scenario "Full journey as a new candidate declining the mailing list option" do
-    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
-
-    visit event_steps_path(event_id: event_readable_id)
-
-    expect(page).to have_css("h1", text: "Sign up for this event")
-    expect(page).to have_text event_name
-    expect(page).to have_css(".registration-with-image-above")
-
-    fill_in_personal_details_step
-    click_on "Next step"
-
-    fill_in "What's your telephone number? (optional)", with: "01234567890"
-
-    expect_sign_up_with_attributes(base_attributes)
-
-    click_on "Complete sign up"
-
-    expect(page).to have_text "Get free tailored email guidance"
-  end
-
-  scenario "Full journey as an existing candidate" do
+  scenario "Full journey as an existing candidate does not show link to the mailing list" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)
 
@@ -139,8 +117,9 @@ RSpec.feature "Event wizard", type: :feature do
 
     expect(page).to have_title(sign_up_complete_page_title)
 
-    expect(page).to have_text "Get free tailored email guidance"
-    expect(page).not_to have_text "signed up for email updates"
+    # existing candidates in the CRM do not get a link to the mailing list
+    expect(page).not_to have_text "Get free personalised teacher training guidance"
+    expect(page).to have_text "Education is the most powerful tool you can use to change the world"
   end
 
   scenario "Full journey as a returning candidate that resends the verification code" do
@@ -204,9 +183,8 @@ RSpec.feature "Event wizard", type: :feature do
     expect_sign_up_with_attributes(base_attributes.merge({ address_telephone: nil }))
 
     click_on "Complete sign up"
-
-    expect(page).to have_text "Get free tailored email guidance"
-    expect(page).not_to have_text "signed up for email updates"
+    expect(page).not_to have_text "Get free personalised teacher training guidance"
+    expect(page).to have_text "Education is the most powerful tool you can use to change the world"
   end
 
   scenario "Full journey as an existing candidate that has already subscribed to the teacher training adviser service" do
@@ -234,8 +212,8 @@ RSpec.feature "Event wizard", type: :feature do
 
     click_on "Next step"
 
-    expect(page).to have_text "Get free tailored email guidance"
-    expect(page).not_to have_text "signed up for email updates"
+    expect(page).not_to have_text "Get free personalised teacher training guidance"
+    expect(page).to have_text "Education is the most powerful tool you can use to change the world"
   end
 
   def fill_in_personal_details_step(

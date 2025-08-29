@@ -80,9 +80,10 @@ describe Events::Wizard do
 
       it { is_expected.to have_received(:valid?) }
 
-      it do
+      it "preserves some store attributes" do
         hashed_email = Digest::SHA256.hexdigest("email@address.com")
         expect(store[uuid]).to eql({
+          "first_name" => "Joe",
           "hashed_email" => hashed_email,
           "is_walk_in" => wizardstore[:is_walk_in],
         })
