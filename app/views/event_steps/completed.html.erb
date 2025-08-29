@@ -55,47 +55,6 @@
         ]
       ) %>
     <% end %>
-
-    <div class="blocks">
-      <%= render Content::GenericBlockComponent.new(
-        title: "Life as a teacher",
-        icon_image: "static/images/icon-school-black.svg",
-        icon_size: "40x30",
-        classes: "blocks__directory"
-      ) do %>
-        <ul>
-          <li><a href="/life-as-a-teacher/explore-subjects">Explore subjects</a></li>
-          <li><a href="https://schoolexperience.education.gov.uk/">Experience a real school</a></li>
-          <li><a href="/life-as-a-teacher/pay-and-benefits/teacher-pay">Teachers' salaries</a></li>
-        </ul>
-      <% end %>
-
-      <%= render Content::GenericBlockComponent.new(
-        title: "Your next steps",
-        icon_image: "static/images/icon-doc-black.svg",
-        icon_size: "40x35",
-        classes: "blocks__directory"
-      ) do %>
-        <ul>
-          <li><a href="/steps-to-become-a-teacher">How to become a teacher</a></li>
-          <li><a href="/train-to-be-a-teacher">Explore ways to train</a></li>
-          <li><a href="/funding-and-support">Find your funding options</a></li>
-        </ul>
-      <% end %>
-
-      <%= render Content::GenericBlockComponent.new(
-        title: "Sign up to get a teacher training adviser",
-        icon_image: "static/images/icon-git-black.svg",
-        icon_size: "33x33",
-        classes: "blocks__directory"
-      ) do %>
-        <p class="block__text">
-          If you're ready to get into teaching, you can get free, one-to-one, support from a dedicated, experienced teaching professional to guide you through the process.
-        </p>
-
-        <%= link_to "Get an adviser", "/teacher-training-adviser/sign_up/identity", class: "button button--white button--unpadded" %>
-      <% end %>
-    </div>
   </section>
 </div>
 
