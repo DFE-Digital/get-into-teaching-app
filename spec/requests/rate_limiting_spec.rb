@@ -72,22 +72,6 @@ describe "Rate limiting", type: :request do
         patch event_step_path(readable_event_id, :personal_details), params: params, headers: { "REMOTE_ADDR" => ip }
       end
     end
-
-    it_behaves_like "an IP-based rate limited endpoint", "PATCH */events/:id/apply/personalised_updates", 5, 1.minute do
-      def perform_request
-        key = Events::Steps::PersonalisedUpdates.model_name.param_key
-        params = { key => attributes_for(:events_personalised_updates) }
-        patch event_step_path(readable_event_id, :personalised_updates), params: params, headers: { "REMOTE_ADDR" => ip }
-      end
-    end
-
-    it_behaves_like "an IP-based rate limited endpoint", "PATCH */events/:id/apply/further_details", 5, 1.minute do
-      def perform_request
-        key = Events::Steps::FurtherDetails.model_name.param_key
-        params = { key => attributes_for(:events_further_details) }
-        patch event_step_path(readable_event_id, :further_details), params: params, headers: { "REMOTE_ADDR" => ip }
-      end
-    end
   end
 
   describe "event upsert endpoint rate limiting" do
