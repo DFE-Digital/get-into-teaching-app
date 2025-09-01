@@ -34,6 +34,8 @@ $residency-requirements$
 
 Like other types of initial teacher training (ITT), PGTAs combine on-the-job training with theoretical learning. On a PGTA, you’ll usually be teaching in school for 4 days a week, with one day off to attend training with your ITT provider.
 
+PGTAs can start at any point in the academic year, but the apprenticeship must last for at least 9 months.
+
 Postgraduate teaching apprentices must do an end point assessment. This is usually done after you’ve completed your training and been awarded QTS. To complete the apprenticeship, you’ll need to pass your end point assessment and show you’ve met the apprenticeship standards.
 
 You do not have to pay any training fees for a PGTA, as these are covered as part of the apprenticeship. You’ll also receive a salary throughout your apprenticeship.
