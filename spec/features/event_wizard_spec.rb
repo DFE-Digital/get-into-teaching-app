@@ -87,7 +87,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_title(sign_up_complete_page_title)
-    expect(page).to have_text "Get free personalised teacher training guidance"
+    expect(page).to have_text "Get tailored email guidance"
   end
 
   scenario "Full journey as an existing candidate does not show link to the mailing list" do
@@ -118,7 +118,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_title(sign_up_complete_page_title)
 
     # existing candidates in the CRM do not get a link to the mailing list
-    expect(page).not_to have_text "Get free personalised teacher training guidance"
+    expect(page).not_to have_text "Get tailored email guidance"
     expect(page).to have_text "Education is the most powerful tool you can use to change the world"
   end
 
@@ -183,7 +183,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect_sign_up_with_attributes(base_attributes.merge({ address_telephone: nil }))
 
     click_on "Complete sign up"
-    expect(page).not_to have_text "Get free personalised teacher training guidance"
+    expect(page).not_to have_text "Get tailored email guidance"
     expect(page).to have_text "Education is the most powerful tool you can use to change the world"
   end
 
@@ -212,7 +212,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     click_on "Next step"
 
-    expect(page).not_to have_text "Get free personalised teacher training guidance"
+    expect(page).not_to have_text "Get tailored email guidance"
     expect(page).to have_text "Education is the most powerful tool you can use to change the world"
   end
 
