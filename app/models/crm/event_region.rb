@@ -12,6 +12,9 @@ class Crm::EventRegion
       "West Midlands" => 222_750_008,
       "Yorkshire and the Humber" => 222_750_009,
       "Any" => 222_750_010,
+      "North" => 222_750_011,
+      "South" => 222_750_012,
+      "Midlands" => 222_750_013,
     }.freeze
 
   class << self
