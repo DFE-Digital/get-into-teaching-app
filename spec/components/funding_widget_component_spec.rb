@@ -69,7 +69,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
       end
 
       it "substitutes the variable for a value in sub heading" do
-        expect(page).to have_text("Maths - starting salary: £31,650")
+        expect(page).to have_text("Maths - starting salary: £32,916")
       end
 
       it "substitutes the variable for a value in funding content" do
