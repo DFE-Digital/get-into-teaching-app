@@ -16,8 +16,7 @@
       <%= tag.h3(format_event_date(@event, stacked: false), class: "heading-m") %>
 
       <p>
-        You will receive a confirmation email with details of the event. If there
-        is an issue with the event we will contact you via phone.
+        You'll receive a confirmation email with details of the event.
       </p>
 
       <% if @authenticate %>
@@ -29,7 +28,7 @@
     <% else %>
         <%# new candidates not in the CRM will see a link to sign up for the mailing list %>
         <%= render CallsToAction::SimpleComponent.new(
-          title: "Get free personalised teacher training guidance",
+          title: "Get tailored email guidance",
           text: "Everything you need to know to start a career in teaching sent straight into your inbox. Tailored to your own situation, you'll get all the latest information as well as advice and support.",
           icon: "icon-mail",
           link_text: "Next step",
