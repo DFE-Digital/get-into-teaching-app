@@ -14,6 +14,7 @@ module Events
     self.steps = [
       Steps::PersonalDetails,
       ::GITWizard::Steps::Authenticate,
+      Steps::AccessibilitySupport,
       Steps::ContactDetails,
     ].freeze
 
