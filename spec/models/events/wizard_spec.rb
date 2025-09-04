@@ -27,6 +27,8 @@ describe Events::Wizard do
       is_expected.to eql [
         Events::Steps::PersonalDetails,
         ::GITWizard::Steps::Authenticate,
+        Events::Steps::AccessibilitySupport,
+        Events::Steps::AccessibilityNeeds,
         Events::Steps::ContactDetails,
       ]
     end

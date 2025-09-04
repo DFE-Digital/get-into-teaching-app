@@ -7,15 +7,18 @@ RSpec.feature "Event wizard", type: :feature do
   let(:event) { build(:event_api, readable_id: event_readable_id, name: event_name) }
   let(:individual_event_page_title) { "Sign up for #{event.name}, personal details step | Get Into Teaching" }
   let(:sign_up_complete_page_title) { "#{event.name}, sign up completed | Get Into Teaching" }
+  let(:event_accessibility_options) { build_list(:accessibility_option_api, 3) }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event).with(event_readable_id).and_return(event)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_teaching_event_types).and_return([])
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
+      receive(:get_teaching_event_accessibilty).and_return(event_accessibility_options)
   end
 
-  scenario "Full journey as a walk-in candidate (closed event)" do
+  scenario "Full journey as a walk-in candidate (closed event), no accessibility needs" do
     event.status_id = Crm::EventStatus.closed_id
 
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
@@ -31,6 +34,10 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personal_details_step
     click_on "Next step"
 
+    expect(page).to have_text "Do you need any extra support to attend this event?"
+    choose "No"
+    click_on "Next step"
+
     fill_in "What's your telephone number? (optional)", with: "01234567890"
 
     expect_sign_up_with_attributes(base_attributes.merge({ is_walk_in: true }))
@@ -40,7 +47,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_title(sign_up_complete_page_title)
   end
 
-  scenario "Full journey as a walk-in candidate, skipping verification" do
+  scenario "Full journey as a walk-in candidate, skipping verification, with accessibility needs" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)
 
@@ -59,6 +66,13 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "To verify your details, we've sent a code to your email address."
     click_on "continue without verifying your identity"
 
+    expect(page).to have_text "Do you need any extra support to attend this event?"
+    choose "Yes"
+    click_on "Next step"
+
+    fill_in "Tell us about the extra support you need", with: "This is some test accessibility needs text"
+    click_on "Next step"
+
     fill_in "What's your telephone number? (optional)", with: "01234567890"
 
     expect_sign_up_with_attributes(base_attributes.merge({ is_walk_in: true, is_verified: false }))
@@ -68,7 +82,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_title(sign_up_complete_page_title)
   end
 
-  scenario "Full journey as a new candidate" do
+  scenario "Full journey as a new candidate, no accessibility needs" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
@@ -82,6 +96,10 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personal_details_step
     click_on "Next step"
 
+    expect(page).to have_text "Do you need any extra support to attend this event?"
+    choose "No"
+    click_on "Next step"
+
     fill_in "What's your telephone number? (optional)", with: "01234567890"
     expect_sign_up_with_attributes(base_attributes)
     click_on "Complete sign up"
@@ -90,7 +108,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Get tailored email guidance"
   end
 
-  scenario "Full journey as an existing candidate does not show link to the mailing list" do
+  scenario "Full journey as an existing candidate does not show link to the mailing list, with accessibility needs" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)
 
@@ -115,6 +133,13 @@ RSpec.feature "Event wizard", type: :feature do
     expect_sign_up_with_attributes(base_attributes.merge(address_telephone: response.address_telephone))
     click_on "Next step"
 
+    expect(page).to have_text "Do you need any extra support to attend this event?"
+    choose "Yes"
+    click_on "Next step"
+
+    fill_in "Tell us about the extra support you need", with: "This is some test accessibility needs text"
+    click_on "Complete sign up"
+
     expect(page).to have_title(sign_up_complete_page_title)
 
     # existing candidates in the CRM do not get a link to the mailing list
@@ -122,7 +147,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Education is the most powerful tool you can use to change the world"
   end
 
-  scenario "Full journey as a returning candidate that resends the verification code" do
+  scenario "Full journey as a returning candidate that resends the verification code, no accessibility needs" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)
 
@@ -153,10 +178,14 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
+    expect(page).to have_text "Do you need any extra support to attend this event?"
+    choose "No"
+    click_on "Next step"
+
     expect(page).to have_text("What's your telephone number? (optional)")
   end
 
-  scenario "Full journey as an existing candidate that has already subscribed to the mailing list" do
+  scenario "Full journey as an existing candidate that has already subscribed to the mailing list, with accessibility needs" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)
 
@@ -178,6 +207,13 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
+    expect(page).to have_text "Do you need any extra support to attend this event?"
+    choose "Yes"
+    click_on "Next step"
+
+    fill_in "Tell us about the extra support you need", with: "This is some test accessibility needs text"
+    click_on "Next step"
+
     expect(page).to have_text("What's your telephone number? (optional)")
 
     expect_sign_up_with_attributes(base_attributes.merge({ address_telephone: nil }))
@@ -187,7 +223,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Education is the most powerful tool you can use to change the world"
   end
 
-  scenario "Full journey as an existing candidate that has already subscribed to the teacher training adviser service" do
+  scenario "Full journey as an existing candidate that has already subscribed to the teacher training adviser service, no accessibility needs" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)
 
@@ -207,11 +243,17 @@ RSpec.feature "Event wizard", type: :feature do
 
     expect(page).to have_text "To verify your details, we've sent a code to your email address."
     fill_in "Enter your verification code:", with: "123456"
-
-    expect_sign_up_with_attributes(base_attributes.merge({ address_telephone: response.address_telephone }))
-
+    expect_sign_up_with_attributes(base_attributes.merge(address_telephone: response.address_telephone))
     click_on "Next step"
 
+    expect(page).to have_text "Do you need any extra support to attend this event?"
+    choose "Yes"
+    click_on "Next step"
+
+    fill_in "Tell us about the extra support you need", with: "This is some test accessibility needs text"
+    click_on "Complete sign up"
+
+    expect(page).to have_title(sign_up_complete_page_title)
     expect(page).not_to have_text "Get tailored email guidance"
     expect(page).to have_text "Education is the most powerful tool you can use to change the world"
   end

@@ -98,7 +98,7 @@ describe EventStepsController, type: :request do
         follow_redirect!
       end
 
-      it { is_expected.to redirect_to(event_step_path(readable_event_id, :contact_details)) }
+      it { is_expected.to redirect_to(event_step_path(readable_event_id, :accessibility_support)) }
     end
 
     context "when the candidate was not previously matched" do
