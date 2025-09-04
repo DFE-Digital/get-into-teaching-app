@@ -10,14 +10,17 @@ cta_arrow_link:
     link_target: "/train-to-be-a-teacher/qualifications-you-need-to-teach"
     link_text: "Find out about the qualifications you need to train to teach"
   funding:
-    link_target: "/funding-and-support"
-    link_text: "Find out how to fund your training"
+    link_target: "/funding-and-support/tuition-fee-and-maintenance-loans"
+    link_text: "Find out more about student finance for fee-paying teacher training"
   salaried:
     link_target: "/funding-and-support/salaried-teacher-training"
     link_text: "Find out more about salaried teacher training"
   expect:
     link_target: "/train-to-be-a-teacher/initial-teacher-training"
-    link_text: "Find out what to expect during your teacher training" 
+    link_text: "Find out what to expect during your teacher training"
+  adjustments:
+    link_target: "/train-to-be-a-teacher/accessibility-adjustments"
+    link_text: "Find out more about adjustments to help you train"
 navigation: 20.10
 navigation_title: How to choose your course
 navigation_description: Find out how to choose your postgraduate teacher training course.
@@ -72,10 +75,7 @@ expander:
       <li>the deadline for non-UK applications, as they may close earlier</li>
       </ul>
       </p>
-cta_arrow_link:
-  adjustments:
-    link_target: "/train-to-be-a-teacher/accessibility-adjustments"
-    link_text: "Find out more about adjustments to help you train"
+
 ---
 
 All primary and secondary postgraduate teacher training courses include time spent in school placements with some theoretical learning. 
@@ -100,6 +100,7 @@ It's important to check the requirements for each course you apply to on the tra
 You need to have a degree in any subject to be able to train to teach. But the degree grade that course providers will accept may vary. For example, most providers will accept a minimum degree grade of 2:2, but some may require you to have a 2:1. So you’ll need to check each course provider’s requirements on their course page.
 
 $qualifications$
+
 $what-you-need-to-get-onto-the-course$
 
 ## The qualifications awarded by the course
@@ -119,6 +120,7 @@ Most teacher training courses are fee-paying. This means you have to pay tuition
 There are ways to fund your training, for example, through tuition fee and maintenance loans. You may also be eligible for a bursary or scholarship.
 
 $funding$
+
 $fee-funded-teacher-training$
 
 ### Salaried teacher training
@@ -128,6 +130,7 @@ Some courses are salaried, which means you’ll receive an unqualified teacher�
 Places on salaried courses are limited and very competitive. It’s usually wise to apply for fee-paying courses as well to increase your chances of getting a place on a course.
 
 $salaried$
+
 $salaried-teacher-training$
 
 ## The type of course provider 

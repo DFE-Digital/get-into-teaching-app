@@ -11,7 +11,7 @@ cta_arrow_link:
     link_target: "https://find-teacher-training-courses.service.gov.uk/results?applications_open=true&minimum_degree_required=no_degree_required"
     link_text: "View the teacher degree apprenticeship courses currently available"
 navigation: 20.45
-navigation_title: If you want to do a teaching apprenticeship
+navigation_title: If you want to do a teacher degree apprenticeship
 navigation_description: A teacher degree apprenticeship (TDA) lets you work at a school and earn a salary while getting a degree and qualified teacher status (QTS).
 expander:
   teacher-degree-apprenticeships:
@@ -32,7 +32,7 @@ $teacher-degree-apprenticeships$
 ## How do teacher degree apprenticeships work?
 During a teacher degree apprenticeship you’ll work in a school and earn a salary while getting a bachelor’s degree and [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
  
-The teaching apprenticeship is a 4-year, full-time course that lets you train as a teacher with an accredited teacher training provider. Trainee teachers will spend an average of 40% of their time (2 days a week) studying for their degree with a university.
+The teacher degree apprenticeship is a 4-year, full-time course that lets you train as a teacher with an accredited teacher training provider. Trainee teachers will spend an average of 40% of their time (2 days a week) studying for their degree with a university.
 
 Some TDA providers will want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are.
 
@@ -47,7 +47,7 @@ Non-maintained schools (for example, academies, independent schools and private 
 You do not have to pay tuition fees, but you will not be eligible for student finance. 
 
 ## Who’s eligible to apply for a teacher degree apprenticeship?
-Teacher degree apprenticeships are open for individuals to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers.
+Teacher degree apprenticeships are open for individuals to gain a degree and become a qualified teacher. This includes, but is not limited to, teaching assistants, school leavers or people looking to change careers. If you already have a degree, explore [postgraduate teaching apprenticeships](/train-to-be-a-teacher/postgraduate-teaching-apprenticeships).
 
 
 To be eligible to apply for a TDA, you must be:
