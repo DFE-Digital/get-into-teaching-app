@@ -4,9 +4,7 @@
   <%= tag.p t('helpers.hint.events_steps_accessibility_support.accessibility_support', **Value.data) %>
 
   <%= tag.ul do %>
-    <% @event.accessibility_options.each do |accessibility_option| %>
-      <%= tag.li(accessibility_option) %>
-    <% end %>
+    <%= safe_join(@event.accessibility_options_with_labels.map { |i| tag.li(i) }) %>
   <% end %>
 <% end %>
 

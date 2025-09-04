@@ -47,11 +47,7 @@ private
   helper_method :step_path
 
   def completed_step_path
-    if wizard_store["subscribe_to_mailing_list"]
-      step_path :completed, subscribed: 1
-    else
-      step_path :completed
-    end
+    step_path :completed
   end
 
   def wizard_store
@@ -69,7 +65,11 @@ private
   end
 
   def load_event
-    @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:event_id])
+    @event = TeachingEvents::EventPresenter.new(retrieve_event)
+  end
+
+  def retrieve_event
+    GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:event_id])
   end
 
   def set_step_page_title

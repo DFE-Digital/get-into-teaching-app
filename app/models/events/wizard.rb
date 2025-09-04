@@ -15,6 +15,7 @@ module Events
       Steps::PersonalDetails,
       ::GITWizard::Steps::Authenticate,
       Steps::AccessibilitySupport,
+      Steps::AccessibilityNeeds,
       Steps::ContactDetails,
     ].freeze
 
