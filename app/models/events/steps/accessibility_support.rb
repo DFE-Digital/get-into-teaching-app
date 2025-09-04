@@ -12,7 +12,7 @@ module Events
                 presence: { message: "Choose an option from the list" },
                 inclusion: { in: OPTIONS.values }
 
-      def support_not_required?
+      def no_support_required?
         support_required == NO
       end
     end
