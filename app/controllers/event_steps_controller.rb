@@ -17,8 +17,9 @@ class EventStepsController < ApplicationController
 
   def completed
     super
-
+    @first_name = wizard_store[:first_name]
     @hashed_email = wizard_store[:hashed_email] if hash_email_address?
+    @authenticate = wizard_store[:authenticate]
   end
 
 protected
@@ -46,11 +47,7 @@ private
   helper_method :step_path
 
   def completed_step_path
-    if wizard_store["subscribe_to_mailing_list"]
-      step_path :completed, subscribed: 1
-    else
-      step_path :completed
-    end
+    step_path :completed
   end
 
   def wizard_store
@@ -68,7 +65,11 @@ private
   end
 
   def load_event
-    @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:event_id])
+    @event = TeachingEvents::EventPresenter.new(retrieve_event)
+  end
+
+  def retrieve_event
+    GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:event_id])
   end
 
   def set_step_page_title
@@ -88,7 +89,12 @@ private
 
   def resolve_layout
     return "registration_with_image_above" if @current_step.instance_of?(Events::Steps::PersonalDetails)
+    return "minimal" if action_name == "completed"
 
     "registration"
+  end
+
+  def set_breadcrumb
+    breadcrumb @page_title, request.path
   end
 end

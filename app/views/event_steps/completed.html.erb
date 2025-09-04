@@ -1,79 +1,60 @@
 <% @hide_page_helpful_question = true %>
 
 <%= tag.section data: { "sub-channel-id": session.dig('events', params['event_id'], 'sub_channel_id') } do %>
-  <h1 class="heading-l heading--box-green">Sign up complete</h1>
 
-  <%= tag.h2("You are signed up for #{@event.name}.", class: "heading-m") %>
-
-  <p><%= format_event_date @event, stacked: false %></p>
-
-  <%- if params[:subscribed].to_s == "1" -%>
-    <h3>You've also signed up for email updates</h3>
-
-    <p>You're ready to receive email updates to help you get into teaching.</p>
-  <%- end -%>
-
-  <h2 class="heading-m">What happens next</h2>
-  <p>
-    You will receive a confirmation email with details of the event. If there
-    is an issue with the event we will contact you via phone.
-  </p>
-
-  <%= render SingleQuestionSurveyComponent.new(
-    question: 'How did you hear about this event?',
-    hint: 'Select one of the following options',
-    answers: [
-      'Get Into Teaching website',
-      'Get Into Teaching email',
-      'Get Into Teaching online event',
-      'SMS',
-      'Social media',
-      'Local teaching provider',
-      'University',
-      'Search engine',
-      'Other'
-    ]
+  <%= render Content::LandingHeroComponent.new(
+    title: "#{@first_name}, you're signed up!",
+    colour: "pastel yellow-yellow",
+    image: "static/images/content/hero-images/physics4.jpg"
   ) %>
-<% end %>
 
-<div class="blocks">
-  <%= render Content::GenericBlockComponent.new(
-    title: "Life as a teacher",
-    icon_image: "static/images/icon-school-black.svg",
-    icon_size: "40x30",
-    classes: "blocks__directory"
-  ) do %>
-    <ul>
-      <li><a href="/life-as-a-teacher/explore-subjects">Explore subjects</a></li>
-      <li><a href="https://schoolexperience.education.gov.uk/">Experience a real school</a></li>
-      <li><a href="/life-as-a-teacher/pay-and-benefits/teacher-pay">Teachers' salaries</a></li>
-    </ul>
-  <% end %>
+  <div class="row inset">
+    <section class="col col-full-content col-space-l-top">
 
-  <%= render Content::GenericBlockComponent.new(
-    title: "Your next steps",
-    icon_image: "static/images/icon-doc-black.svg",
-    icon_size: "40x35",
-    classes: "blocks__directory"
-  ) do %>
-    <ul>
-      <li><a href="/steps-to-become-a-teacher">How to become a teacher</a></li>
-      <li><a href="/train-to-be-a-teacher">Explore ways to train</a></li>
-      <li><a href="/funding-and-support">Find your funding options</a></li>
-    </ul>
-  <% end %>
+      <%= tag.h2("You've signed up for #{@event.name}.", class: "heading-l") %>
 
-  <%= render Content::GenericBlockComponent.new(
-    title: "Sign up to get a teacher training adviser",
-    icon_image: "static/images/icon-git-black.svg",
-    icon_size: "33x33",
-    classes: "blocks__directory"
-  ) do %>
-    <p class="block__text">
-      If you're ready to get into teaching, you can get free, one-to-one, support from a dedicated, experienced teaching professional to guide you through the process.
-    </p>
+      <%= tag.h3(format_event_date(@event, stacked: false), class: "heading-m") %>
 
-    <%= link_to "Get an adviser", "/teacher-training-adviser/sign_up/identity", class: "button button--white button--unpadded" %>
-  <% end %>
+      <p>
+        You'll receive a confirmation email with details of the event.
+      </p>
+
+      <% if @authenticate %>
+        <%# existing candidates already in the CRM will see a quote %>
+        <%= render Content::QuoteComponent.new(
+          text: "Education is the most powerful tool you can use to change the world, and we get to provide that to the next generation and others to come.",
+          name: "Chelsea, primary school teacher",
+        ) %>
+    <% else %>
+        <%# new candidates not in the CRM will see a link to sign up for the mailing list %>
+        <%= render CallsToAction::SimpleComponent.new(
+          title: "Get tailored email guidance",
+          text: "Everything you need to know to start a career in teaching sent straight into your inbox. Tailored to your own situation, you'll get all the latest information as well as advice and support.",
+          icon: "icon-mail",
+          link_text: "Next step",
+          link_target: mailing_list_steps_path,
+        ) %>
+      <% end %>
+
+      <div class="govuk-!-margin-bottom-9"></div>
+
+      <%= render SingleQuestionSurveyComponent.new(
+        question: 'How did you hear about this event?',
+        hint: 'Select one of the following options',
+        answers: [
+          'Get Into Teaching website',
+          'Get Into Teaching email',
+          'Get Into Teaching online event',
+          'SMS',
+          'Social media',
+          'Local teaching provider',
+          'University',
+          'Search engine',
+          'Other'
+        ]
+      ) %>
+    <% end %>
+  </section>
 </div>
+
 <%= tag.div id: "hashed-email", class: "hidden", data: { id: "hashed-email", value: @hashed_email } if @hashed_email %>

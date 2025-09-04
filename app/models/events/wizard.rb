@@ -7,14 +7,16 @@ module Events
       is_walk_in
       sub_channel_id
       hashed_email
+      first_name
+      authenticate
     ].freeze
 
     self.steps = [
       Steps::PersonalDetails,
       ::GITWizard::Steps::Authenticate,
+      Steps::AccessibilitySupport,
+      Steps::AccessibilityNeeds,
       Steps::ContactDetails,
-      Steps::FurtherDetails,
-      Steps::PersonalisedUpdates,
     ].freeze
 
     def matchback_attributes

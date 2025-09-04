@@ -1,0 +1,15 @@
+<%= tag.h1 t('helpers.label.events_steps_accessibility_support.accessibility_support', **Value.data), class: "heading--margin-bottom-0 heading-l" %>
+
+<% if @event.accessibility_options.any? %>
+  <%= tag.p t('helpers.hint.events_steps_accessibility_support.accessibility_support', **Value.data) %>
+
+  <%= tag.ul do %>
+    <%= safe_join(@event.accessibility_options_with_labels.map { |i| tag.li(i) }) %>
+  <% end %>
+<% end %>
+
+<div class="govuk-!-margin-top-6">
+  <%= f.govuk_collection_radio_buttons :support_required, f.object.class::OPTIONS, :last, :first,
+                                       legend: { tag: "h3", text: t('helpers.label.events_steps_accessibility_support.support_required', **Value.data)}
+  %>
+</div>
