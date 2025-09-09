@@ -312,6 +312,13 @@ provider_groups:
       telephone: "0191 515 3099"
       international_phone: "+441915153099"
       
+    - header: "University of York"
+      link: "https://www.york.ac.uk/education/pgce/"
+      name: "Georgia Ramsay"
+      email: "georgia.ramsay@york.ac.uk"
+      telephone: "01904 326401"
+      international_phone: "+441904326401"
+      
   North West:
     providers:
     - header: "Ambition Teacher Training"
@@ -686,6 +693,13 @@ provider_groups:
       
       
       
+    - header: "University of York"
+      link: "https://www.york.ac.uk/education/pgce/"
+      name: "Georgia Ramsay"
+      email: "georgia.ramsay@york.ac.uk"
+      telephone: "01904 326401"
+      international_phone: "+441904326401"
+      
   Outside of the UK:
     description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
@@ -751,6 +765,13 @@ provider_groups:
       email: "ian.elliott@sunderland.ac.uk"
       telephone: "0191 515 2159"
       international_phone: "+441915152159"
+      
+    - header: "University of York"
+      link: "https://www.york.ac.uk/education/pgce/"
+      name: "Georgia Ramsay"
+      email: "georgia.ramsay@york.ac.uk"
+      telephone: "01904 326401"
+      international_phone: "+441904326401"
       
 ---
 
