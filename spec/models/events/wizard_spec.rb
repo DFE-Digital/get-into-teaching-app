@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Events::Wizard do
-  subject { described_class.new wizardstore, "personalised_updates" }
+  subject { described_class.new(wizardstore, described_class.steps.last.key) }
 
   let(:uuid) { SecureRandom.uuid }
   let(:store) do
@@ -27,9 +27,9 @@ describe Events::Wizard do
       is_expected.to eql [
         Events::Steps::PersonalDetails,
         ::GITWizard::Steps::Authenticate,
+        Events::Steps::AccessibilitySupport,
+        Events::Steps::AccessibilityNeeds,
         Events::Steps::ContactDetails,
-        Events::Steps::FurtherDetails,
-        Events::Steps::PersonalisedUpdates,
       ]
     end
   end
@@ -58,11 +58,14 @@ describe Events::Wizard do
       )
     end
 
+    let(:filtered_attributes) { "attribute1: [FILTERED], attribute2: 1234" }
+
     before do
       allow(subject).to receive(:valid?).and_return(true)
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:add_teaching_event_attendee).with(request)
       allow(Rails.logger).to receive(:info)
+      allow(AttributeFilter).to receive(:filtered_json).and_return(filtered_attributes)
     end
 
     context "with prune! spy" do
@@ -79,36 +82,22 @@ describe Events::Wizard do
 
       it { is_expected.to have_received(:valid?) }
 
-      it do
+      it "preserves some store attributes" do
         hashed_email = Digest::SHA256.hexdigest("email@address.com")
         expect(store[uuid]).to eql({
+          "first_name" => "Joe",
           "hashed_email" => hashed_email,
           "is_walk_in" => wizardstore[:is_walk_in],
         })
       end
 
       it "logs the request model (filtering sensitive attributes)" do
-        filtered_json = {
-          "candidateId" => nil,
-          "qualificationId" => nil,
-          "eventId" => "abc123",
-          "channelId" => nil,
-          "creationChannelSourceId" => 222_750_003,
-          "creationChannelServiceId" => 222_750_006,
-          "creationChannelActivityId" => nil,
-          "acceptedPolicyId" => "789",
-          "preferredTeachingSubjectId" => nil,
-          "considerationJourneyStageId" => nil,
-          "degreeStatusId" => nil,
-          "email" => "[FILTERED]",
-          "firstName" => "[FILTERED]",
-          "lastName" => "[FILTERED]",
-          "addressPostcode" => nil,
-          "addressTelephone" => "[FILTERED]",
-          "isWalkIn" => true,
-        }.to_json
+        # NB: The order of the json fields cast as a string can vary in different
+        # environments leading to test flakiness if we test the exact attributes
+        # filtered. (These can be tested by the AttributeFilter specs.)
 
-        expect(Rails.logger).to have_received(:info).with("Events::Wizard#add_attendee_to_event: #{filtered_json}")
+        expect(AttributeFilter).to have_received(:filtered_json).with(request)
+        expect(Rails.logger).to have_received(:info).with("Events::Wizard#add_attendee_to_event: #{filtered_attributes}")
       end
     end
   end
