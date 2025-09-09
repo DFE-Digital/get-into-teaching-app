@@ -1,5 +1,5 @@
 # To use or update to a ruby version, change BASE_RUBY_IMAGE
-ARG BASE_RUBY_IMAGE=ruby:3.4.3-alpine3.21
+ARG BASE_RUBY_IMAGE=ruby:3.4.5-alpine3.21
 
 FROM ${BASE_RUBY_IMAGE} AS base
 
@@ -81,6 +81,9 @@ ENV RAILS_ENV=production \
     RAILS_LOG_TO_STDOUT=true \
     RACK_TIMEOUT_SERVICE_TIMEOUT=60
 
+# Create app user and group with UID/GID 10001
+RUN addgroup -g 10001 -S appgroup && adduser -u 10001 -S appuser -G appgroup
+
 RUN mkdir /app
 WORKDIR /app
 
@@ -95,12 +98,16 @@ RUN apk add --no-cache \
   "libproc2=4.0.4-r2" \
   "libwebp"
 
-COPY --from=release-build /app /app
-COPY --from=release-build /usr/local/bundle/ /usr/local/bundle/
+COPY --from=release-build --chown=appuser:appgroup /app /app
+COPY --from=release-build --chown=appuser:appgroup /usr/local/bundle/ /usr/local/bundle/
+
+ARG COMMIT_SHA
+ENV SHA=${COMMIT_SHA}
+RUN echo "sha-${SHA}" > /etc/get-into-teaching-app-sha
+
+# Switch to non-root user
+USER 10001
 
 EXPOSE 3000
 ENTRYPOINT ["bundle", "exec"]
 CMD ["rails server"]
-
-ARG SHA
-RUN echo "sha-${SHA}" > /etc/get-into-teaching-app-sha

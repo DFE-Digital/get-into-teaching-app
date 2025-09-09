@@ -212,7 +212,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       submit_choice_step("UK", :uk_or_overseas)
 
       expect_current_step(:uk_address)
-      expect(find_field("What is your postcode?").value).to eq("KY9 6NJ")
+      expect(find_field("What's your postcode?").value).to eq("KY9 6NJ")
 
       submit_uk_address_step(
         postcode: "TE7 5TR",
@@ -234,7 +234,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         click_on_continue
 
         expect_current_step(:what_degree_class)
-        expect(page).to have_select("Which class is your degree?", selected: "First class")
+        expect(page).to have_select("What grade is your degree?", selected: "First class")
         click_on_continue
 
         expect_current_step(:stage_interested_teaching)
@@ -246,7 +246,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         click_on_continue
 
         expect_current_step(:subject_interested_teaching)
-        expect(page).to have_select("What would you like to teach?", selected: "Physics")
+        expect(page).to have_select("Select the subject you're most interested in teaching", selected: "Physics")
         click_on_continue
 
         expect_current_step(:start_teacher_training)

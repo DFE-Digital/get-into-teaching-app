@@ -1,14 +1,20 @@
 <%
-text = if f.object.studying?
-         t('helpers.label.teacher_training_adviser_steps_what_degree_class.uk_degree_grade_id.studying')
-       else
-         t('helpers.label.teacher_training_adviser_steps_what_degree_class.uk_degree_grade_id.graduated')
-       end
+  label_text = if f.object.studying?
+                 t('helpers.label.teacher_training_adviser_steps_what_degree_class.uk_degree_grade_id.studying')
+               else
+                 t('helpers.label.teacher_training_adviser_steps_what_degree_class.uk_degree_grade_id.graduated')
+               end
+  hint_text = if f.object.studying?
+                t('helpers.hint.teacher_training_adviser_steps_what_degree_class.uk_degree_grade_id.studying')
+              else
+                t('helpers.hint.teacher_training_adviser_steps_what_degree_class.uk_degree_grade_id.graduated')
+              end
 %>
 
 <%= f.govuk_collection_select :uk_degree_grade_id,
   f.object.class.options,
   :last,
   :first,
-  label: { text: text, tag: "h1", size: "m" }
+  label: { text: label_text, tag: "h1", size: "m" },
+  hint: { text: hint_text }
 %>

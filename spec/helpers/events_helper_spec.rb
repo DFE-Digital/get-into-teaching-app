@@ -1,8 +1,6 @@
 require "rails_helper"
 
 describe EventsHelper, type: "helper" do
-  include MapsHelper
-
   let(:startdate) { Time.zone.local(2020, 6, 1, 10) }
   let(:enddate) { Time.zone.local(2020, 6, 1, 12) }
   let(:event) { build(:event_api, start_at: startdate, end_at: enddate) }
@@ -64,18 +62,6 @@ describe EventsHelper, type: "helper" do
 
       it { is_expected.to eq("<p>Some <b>text</b></p>") }
     end
-  end
-
-  describe "#event_location_map" do
-    subject { event_location_map(event) }
-
-    before do
-      allow(Rails.application.config.x).to receive(:google_maps_key).and_return("12345")
-    end
-
-    it { is_expected.to match(/data-map-description="Albert Hall,\nLine 1,\nLine 2,\nManchester,\nMA1 1AM" /) }
-    it { is_expected.to match(/zoom=10/) }
-    it { is_expected.to match(/alt="Map showing #{event.name}"/) }
   end
 
   describe "#can_sign_up_online?" do

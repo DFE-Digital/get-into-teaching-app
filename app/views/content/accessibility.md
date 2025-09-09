@@ -50,9 +50,7 @@ This website is partially compliant with the WCAG (Web Content Accessibility Gui
 
 ### Non-accessible content
 
-We have two videos that do not meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded). These videos are titled "What happens at a Get Into Teaching event" and "Why train to teach in England". We plan to add audio descriptions to these videos by September 2025. When we publish new content, we will ensure that our use of videos meets accessibility standards.
-
-On the subject question of our teacher training adviser sign up journey (/teacher-training-adviser/sign_up/what_subject_degree), the error message 'You need to choose a degree subject' is not programmatically linked to the field and is not announced by screen reader. This fails to meet [WCAG 1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships). We plan to fix this by August 2025.
+We have one video that does not meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded). This videos is titled "What happens at a Get Into Teaching event". We plan to add audio descriptions to this video by December 2025. When we publish new content, we will ensure that our use of videos meets accessibility standards.
 
 #### Webchat
 

@@ -2,11 +2,14 @@ module TeachingEvents
   class EventPresenter
     attr_reader :event
 
+    include ApiOptions
+
     def initialize(event)
       @event = event
     end
 
     delegate(
+      :id,
       :building,
       :description,
       :end_at,
@@ -26,6 +29,7 @@ module TeachingEvents
       :type_id,
       :status_id,
       :web_feed_id,
+      :accessibility_options,
       to: :event,
     )
 
@@ -46,6 +50,18 @@ module TeachingEvents
         event_building.address_city,
         event_building.address_postcode,
       ].compact
+    end
+
+    def accessibility_options_with_labels
+      return unless has_accessibility_options?
+
+      generate_api_options(
+        GetIntoTeachingApiClient::PickListItemsApi, :get_teaching_event_accessibilty, [], accessibility_options
+      ).keys
+    end
+
+    def has_accessibility_options?
+      accessibility_options.present?
     end
 
     def has_location?

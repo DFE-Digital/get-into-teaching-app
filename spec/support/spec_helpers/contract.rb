@@ -206,7 +206,7 @@ module SpecHelpers
     def submit_uk_address_step(postcode:)
       expect_current_step(:uk_address)
 
-      fill_in "What is your postcode?", with: postcode
+      fill_in "What's your postcode?", with: postcode
 
       click_on_continue
     end
@@ -234,16 +234,24 @@ module SpecHelpers
 
     def submit_uk_callback_step(telephone, slot = nil)
       expect_current_step(:uk_callback)
+      expect(page).to have_content "We need to check that your degree from outside the UK meets the standards for teacher training in England."
 
-      fill_in "Contact telephone number", with: telephone
-      select slot if slot.present?
+      # NB: Sometimes the staging CRM does not have any call-back quotas available
+      if page.has_field? "teacher_training_adviser_steps_uk_callback[callback_offered]", type: :hidden, with: "true"
+        fill_in "Your telephone number", with: telephone
+        select slot if slot.present?
+      else
+        # If there are no call-back quotas available, the user should be prompted
+        # to telephone the service
+        expect(page).to have_link "0800 389 2500", href: "tel://08003892500"
+      end
       click_on_continue
     end
 
     def submit_overseas_time_zone_step(telephone, timezone)
       expect_current_step(:overseas_time_zone)
 
-      fill_in "Contact telephone number", with: telephone
+      fill_in "Your telephone number", with: telephone
       select timezone
       click_on_continue
     end

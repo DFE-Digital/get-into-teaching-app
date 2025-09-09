@@ -6,7 +6,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
   let(:mailing_list_page_title) { "Personalised guidance sign up | Get Into Teaching GOV.UK" }
 
-  scenario "Full journey as a new candidate with one non completed step" do
+  scenario "Full journey as a new candidate with one non completed step, UK citizen" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
@@ -20,13 +20,13 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).not_to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
 
-    expect(page).to have_text "Are you already qualified to teach?"
-    choose "No"
-    click_on "Next step"
-
     expect(page).to have_text "Do you have a degree?"
     choose "Not yet, I'm studying for one"
     fill_in "Which year will you graduate?", with: Date.current.year + 1
+    click_on "Next step"
+
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Exploring options for my first career"
     click_on "Next step"
 
     # check page title remains correct for non completed step
@@ -40,6 +40,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "Yes"
+    click_on "Next step"
+
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
@@ -48,7 +52,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Test, you're signed up"
   end
 
-  scenario "Full journey as an on-campus candidate" do
+  scenario "Full journey as an on-campus candidate, non-UK citizen, living inside the UK" do
     sub_channel_id = "abc123"
 
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
@@ -64,12 +68,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
     choose "No"
     click_on "Next step"
 
-    expect(page).to have_text "Do you have a degree?"
-    choose "No"
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Considering changing my existing career"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -79,6 +83,19 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Maths"
     click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "No"
+    click_on "Next step"
+
+    expect(page).to have_text "Do you need a visa to train to teach in England?"
+    choose "Yes, I need a visa"
+    click_on "Next step"
+
+    expect(page).to have_text "Where do you live?"
+    choose "Inside the UK"
+    # NB: the last_step_controller javascript will update the CTA button text on the fly to "Next step" depending on the radio button selected
+    click_on "Complete sign up"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
@@ -90,7 +107,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
   end
 
-  scenario "Full journey as an on-campus candidate that qualifies for the welcome guide" do
+  scenario "Full journey as an on-campus candidate that qualifies for the welcome guide, UK citizen" do
     sub_channel_id = "abc123"
 
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
@@ -103,12 +120,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
-    choose "No"
-    click_on "Next step"
-
     expect(page).to have_text "Do you have a degree?"
     choose "Yes"
+    click_on "Next step"
+
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Graduated and exploring my career options"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -117,6 +134,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Maths"
+    click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
@@ -129,7 +150,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
   end
 
-  scenario "Full journey as an on-campus candidate (invalid channel_id)" do
+  scenario "Full journey as an on-campus candidate (invalid channel_id), non-UK citizen" do
     sub_channel_id = "abc123"
 
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
@@ -141,12 +162,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
     choose "No"
     click_on "Next step"
 
-    expect(page).to have_text "Do you have a degree?"
-    choose "No"
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "On a break before starting university"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -157,14 +178,22 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "We'll only use this to send you information about events happening near you"
-    fill_in "What's your UK postcode? (optional)", with: "TE57 1NG"
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "No"
+    click_on "Next step"
+
+    expect(page).to have_text "Do you need a visa to train to teach in England?"
+    choose "No, I have settled status (pre-settled status or leave to remain)"
+    click_on "Next step"
+
+    expect(page).to have_text "Where do you live?"
+    choose "Outside the UK"
     click_on "Complete sign up"
 
     expect(page).to have_text "Test, you're signed up"
   end
 
-  scenario "Full journey as a new candidate without a degree and not studying for one shows next steps" do
+  scenario "Full journey as a new candidate without a degree and not studying for one shows next steps, UK citizen" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
@@ -178,12 +207,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).not_to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
     choose "No"
     click_on "Next step"
 
-    expect(page).to have_text "Do you have a degree?"
-    choose "No"
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Not currently working"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -192,6 +221,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
     select "French"
+    click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
@@ -203,7 +236,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_link("teaching in further education")
   end
 
-  scenario "Full journey as an existing candidate" do
+  scenario "Full journey as an existing candidate, UK citizen" do
     first_name = "Joey"
 
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
@@ -228,14 +261,14 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
-    choose "No"
-    click_on "Next step"
-
     expect(page).to have_text "Do you have a degree?"
     expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
       response.degree_status_id.to_s,
     )
+    click_on "Next step"
+
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Graduated and exploring my career options"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -249,6 +282,13 @@ RSpec.feature "Mailing list wizard", type: :feature do
       "Select the subject you're most interested in teaching",
       selected: Crm::TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
     )
+    click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "Yes"
+    click_on "Next step"
+
+    expect(page).to have_text "We'll only use this to send you information about events happening near you"
     click_on "Complete sign up"
 
     expect(page).to have_text "Joey, you're signed up"
@@ -264,11 +304,17 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).not_to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
+
+    expect(page).to have_text "Do you have a degree?"
     choose "Yes"
     click_on "Next step"
 
-    expect(page).to have_text "We're sorry, but our emails are for people who are not already qualified to teach"
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Qualified teacher"
+    click_on "Next step"
+
+    expect(page).to have_text "Our emails are for people who do not have qualified teacher status (QTS)"
     expect(page).not_to have_button("Next step")
   end
 
@@ -300,7 +346,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
   end
 
   scenario "Full journey as an existing candidate that has already subscribed to the mailing list" do
@@ -347,10 +393,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
   end
 
-  scenario "Full journey as an existing candidate using a magic link" do
+  scenario "Full journey as an existing candidate using a magic link, non-UK citizen, inside the UK" do
     token = "magic-link-token"
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
       first_name: "Test",
@@ -364,16 +410,16 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path(magic_link_token: token)
 
-    expect(page).to have_text "Are you already qualified to teach?"
-    choose "No"
-    click_on "Next step"
-
     expect(page).to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
 
     expect(page).to have_text "Do you have a degree?"
     expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
       response.degree_status_id.to_s,
     )
+    click_on "Next step"
+
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Graduated and exploring my career options"
     click_on "Next step"
 
     expect(page).to have_text "How interested are you in applying"
@@ -385,6 +431,19 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Maths"
     click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "No"
+    click_on "Next step"
+
+    expect(page).to have_text "Do you need a visa to train to teach in England?"
+    choose "Not sure"
+    click_on "Next step"
+
+    expect(page).to have_text "Where do you live?"
+    choose "Inside the UK"
+    # NB: the last_step_controller javascript will update the CTA button text on the fly to "Next step" depending on the radio button selected
+    click_on "Complete sign up"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
     fill_in "What's your UK postcode? (optional)", with: ""
@@ -440,7 +499,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step(email: "test2@user.com")
     click_on "Next step"
 
-    expect(page).to have_text "Are you already qualified to teach?"
+    expect(page).to have_text "Do you have a degree?"
   end
 
   scenario "Partial journey with candidate encountering an error" do

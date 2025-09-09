@@ -27,7 +27,7 @@ jobs:
         shell: bash
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master

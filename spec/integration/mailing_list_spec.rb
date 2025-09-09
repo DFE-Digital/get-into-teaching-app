@@ -38,13 +38,12 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
   def sign_up(first_name, last_name, email)
     submit_personal_details(first_name, last_name, email)
 
-    expect(page).to have_text "Are you already qualified to teach?"
-    # I'm not sure why 'choose "No"' doesn't work here.
-    find("label", text: "No").click
-    click_on "Next step"
-
     expect(page).to have_text("Do you have a degree?")
     click_label "Yes"
+    click_on "Next step"
+
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Graduated and exploring my career options"
     click_on "Next step"
 
     expect(page).to have_text("How interested are you in applying for teacher training?")
@@ -53,6 +52,10 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
 
     expect(page).to have_text "Select the subject you're most interested in teaching"
     select "Chemistry"
+    click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
@@ -72,13 +75,13 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
       click_on "Next step"
     end
 
-    expect(page).to have_text "Are you already qualified to teach?"
-    find("label", text: "No").click
-    click_on "Next step"
-
     expect(page).to have_text "Do you have a degree?"
     click_label "Not yet, I'm studying for one"
     fill_in "Which year will you graduate?", with: Time.current.year + 1
+    click_on "Next step"
+
+    expect(page).to have_text "How would you describe your current situation?"
+    choose "Exploring options for my first career"
     click_on "Next step"
 
     expect(page).to have_text("How interested are you in applying")
@@ -87,6 +90,10 @@ RSpec.feature "Mailing List Integration tests", :integration, :mechanize, type: 
 
     expect(page).to have_text("Select the subject you're most interested in teaching")
     select "Maths"
+    click_on "Next step"
+
+    expect(page).to have_text "Are you a UK citizen?"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "We'll only use this to send you information about events happening near you"
