@@ -1,1 +1,1 @@
-require('../javascript/index-6ccddfcc.js');
+require('../javascript/index-6ff56262.js');
