@@ -42,13 +42,7 @@ quote:
     text: "You'll learn a lot about yourself during your teacher training year, and it's the most rewarding journey to be on."
     name: "Olivia, drama teacher"
     classes: quote--indent
-inset_text:
-  still-time-to-apply:
-    text: There's still time for you to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn how you can find the right course for you and get help with your application</a>.
-    color: yellow
 ---
-
-$still-time-to-apply$
 
 You need a bachelor's degree in any subject to teach in primary, secondary and special schools in England.
 
