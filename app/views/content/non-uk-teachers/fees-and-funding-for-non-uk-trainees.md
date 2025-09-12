@@ -30,7 +30,7 @@ cta_arrow_link:
 inset_text:
   funding-holding-message:
     text: |-
-      The figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following year will be announced in October.
+      The figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following academic year (2026 to 2027) will be announced in October.
 ---
 
 Most non-UK citizens will not be eligible for financial support from the UK government to help with teacher training.
