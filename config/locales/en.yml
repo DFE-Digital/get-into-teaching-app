@@ -228,8 +228,8 @@ en:
       has_id:
         title: "Do you have your previous teacher reference number?"
         change: "if you have a previous teacher reference number"
-    have_a_degree:
-      degree_options:
+    degree_status:
+      degree_status_id:
         title: "Do you have a degree?"
         change: "if you have a degree"
       graduation_year:
@@ -698,7 +698,6 @@ en:
             222750000: "Inside the UK"
             222750001: "Outside the UK"
 
-
       events_steps:
         personalised_updates:
           degree_status:
@@ -718,11 +717,11 @@ en:
           not_yet_i_m_studing_for_one: "Not yet, I'm studying for one"
           other: "Other"
       teacher_training_adviser_steps:
-        have_a_degree:
-          degree_options:
-            "yes": "Yes"
-            "studying": "Not yet, I'm studying for one"
-            "no": "No"
+        degree_status:
+          degree_status_id:
+            222750000: "Yes"
+            222750006: "Not yet, I'm studying for one"
+            222750004: "No"
 
     label:
       wizard_steps_authenticate:

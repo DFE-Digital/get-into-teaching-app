@@ -35,10 +35,10 @@ module TeacherTrainingAdviser::Steps
 
     def skipped?
       uk_address_skipped = other_step(:uk_address).skipped?
-      have_a_degree_skipped = other_step(:have_a_degree).skipped?
+      degree_status_skipped = other_step(:degree_status).skipped?
 
       # TODO: Add additional logic to display/skip this step
-      uk_address_skipped || have_a_degree_skipped
+      uk_address_skipped || degree_status_skipped
       true # TODO: update this for the correct logic
     end
 

@@ -53,23 +53,29 @@ RSpec.describe TeacherTrainingAdviser::Steps::HaveADegree do
     end
   end
 
-  describe "#studying?" do
+  describe "#degree_in_progress?" do
     context "when degree_option is not yet set" do
       before { wizardstore["degree_option"] = nil }
 
-      it { is_expected.not_to be_studying }
+      it { is_expected.not_to be_degree_in_progress }
     end
 
-    context "when degree_option is studying" do
-      before { wizardstore["degree_option"] = described_class::DEGREE_OPTION_STUDYING }
+    context "when degree_option is degree_in_progress" do
+      before { wizardstore["degree_option"] = described_class::DEGREE_IN_PROGRESS }
 
-      it { is_expected.to be_studying }
+      it { is_expected.to be_degree_in_progress }
     end
 
-    context "when degree_option is not studying" do
-      before { wizardstore["degree_option"] = described_class::DEGREE_OPTION_YES }
+    context "when degree_option is has_degree" do
+      before { wizardstore["degree_option"] = described_class::HAS_DEGREE }
 
-      it { is_expected.not_to be_studying }
+      it { is_expected.not_to be_degree_in_progress }
+    end
+
+    context "when degree_option is no_degree" do
+      before { wizardstore["degree_option"] = described_class::NO_DEGREE }
+
+      it { is_expected.not_to be_degree_in_progress }
     end
   end
 

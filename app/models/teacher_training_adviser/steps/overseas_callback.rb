@@ -18,11 +18,10 @@ module TeacherTrainingAdviser::Steps
     def skipped?
       callback_not_offered = !other_step(:overseas_time_zone).callback_offered
       overseas_country_skipped = other_step(:overseas_country).skipped?
-      have_a_degree_step = other_step(:have_a_degree)
-      have_a_degree_skipped = have_a_degree_step.skipped?
+      degree_status_skipped = other_step(:degree_status).skipped?
 
       # TODO: Add additional logic to display/skip this step
-      callback_not_offered || overseas_country_skipped || have_a_degree_skipped
+      callback_not_offered || overseas_country_skipped || degree_status_skipped
     end
 
     def title_attribute

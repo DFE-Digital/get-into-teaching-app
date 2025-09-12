@@ -18,10 +18,10 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
-      have_a_degree_step = other_step(:have_a_degree)
-      not_studying_or_have_a_degree = !(have_a_degree_step.has_degree? || have_a_degree_step.studying?)
+      degree_status_step = other_step(:degree_status)
+      not_studying_or_have_a_degree = !(degree_status_step.has_degree? || degree_status_step.degree_in_progress?)
 
-      have_a_degree_step.skipped? || not_studying_or_have_a_degree
+      degree_status_step.skipped? || not_studying_or_have_a_degree
     end
   end
 end

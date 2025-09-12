@@ -18,13 +18,14 @@ module TeacherTrainingAdviser::Steps
     validates :uk_degree_grade_id, pick_list_items: { method: :get_qualification_uk_degree_grades }
 
     def skipped?
-      have_a_degree_step = other_step(:have_a_degree)
+      degree_status_step = other_step(:degree_status)
 
-      have_a_degree_step.skipped? || (!have_a_degree_step.has_degree? && have_a_degree_step.studying_not_final_year?)
+      degree_status_step.skipped? || (!degree_status_step.has_degree? && degree_status_step.studying_not_final_year?)
     end
 
-    def studying?
-      other_step(:have_a_degree).studying?
+
+    def degree_in_progress?
+      other_step(:degree_status).degree_in_progress?
     end
 
     def reviewable_answers
@@ -34,7 +35,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def title_attribute
-      if studying?
+      if other_step(:degree_status).degree_in_progress?
         "uk_degree_grade_id.studying"
       else
         "uk_degree_grade_id.graduated"

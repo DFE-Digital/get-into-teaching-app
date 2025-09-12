@@ -27,7 +27,7 @@ module TeacherTrainingAdviser
       Steps::SubjectTrained,
       Steps::StageTaught,
       Steps::SubjectTaught,
-      Steps::HaveADegree,
+      Steps::DegreeStatus,
       Steps::NoDegree,
       Steps::WhatSubjectDegree,
       Steps::WhatDegreeClass,

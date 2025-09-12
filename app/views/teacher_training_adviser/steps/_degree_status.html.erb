@@ -1,9 +1,10 @@
-<%= f.govuk_collection_radio_buttons :degree_option,
-                                     TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS,
-                                     :to_s,
-                                     ->(option) { t("helpers.answer.teacher_training_adviser_steps.have_a_degree.degree_options.#{option}") },
+<%= f.govuk_collection_radio_buttons :degree_status_id,
+                                     f.object.degree_status_options,
+                                     :id,
+                                     ->(option) { format_option_value(option, "teacher_training_adviser_steps.degree_status.degree_status_id") },
+                                     # ->(option) { t("helpers.answer.teacher_training_adviser_steps.degree_status.degree_status_id.#{option}") },
                                      lambda { |option|
-                                       if option == TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_STUDYING
+                                       if option.id == TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_IN_PROGRESS
                                          content_tag(:div, class: "field__hidden_subfield") do
                                            f.govuk_text_field(
                                              :graduation_year,

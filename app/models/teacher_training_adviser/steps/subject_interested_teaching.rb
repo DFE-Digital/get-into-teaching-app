@@ -17,11 +17,11 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
-      have_a_degree_skipped = other_step(:have_a_degree).skipped?
+      degree_status_skipped = other_step(:degree_status).skipped?
       preferred_education_phase_id = other_step(:stage_interested_teaching).preferred_education_phase_id
       phase_is_not_secondary = preferred_education_phase_id != StageInterestedTeaching::OPTIONS[:secondary]
 
-      have_a_degree_skipped || phase_is_not_secondary
+      degree_status_skipped || phase_is_not_secondary
     end
   end
 end
