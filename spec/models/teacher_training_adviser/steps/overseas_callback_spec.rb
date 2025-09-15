@@ -10,40 +10,40 @@ RSpec.describe TeacherTrainingAdviser::Steps::OverseasCallback do
   end
 
   describe "#skipped?" do
-    it "returns false if callback_offered was true, OverseasCountry/HaveADegree steps were shown and degree_option is equivalent" do
+    it "returns false if callback_offered was true, OverseasCountry/DegreeStatus steps were shown and degree_option is equivalent" do
       allow(Rails).to receive(:env) { "preprod".inquiry }
       expect_any_instance_of(TeacherTrainingAdviser::Steps::OverseasTimeZone).to receive(:callback_offered).and_return(true)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
       expect_any_instance_of(TeacherTrainingAdviser::Steps::OverseasCountry).to receive(:skipped?).and_return(false)
       # TODO: add test
-      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
+      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTIONS[:equivalent]
       expect(subject).not_to be_skipped
     end
 
     it "returns true if OverseasCountry was skipped" do
       allow(Rails).to receive(:env) { "preprod".inquiry }
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
       expect_any_instance_of(TeacherTrainingAdviser::Steps::OverseasCountry).to receive(:skipped?).and_return(true)
       # TODO: add equivalent test
-      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
+      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTIONS[:equivalent]
       expect(subject).to be_skipped
     end
 
     it "returns true if degree_option is not equivalent" do
       allow(Rails).to receive(:env) { "preprod".inquiry }
       expect_any_instance_of(TeacherTrainingAdviser::Steps::OverseasCountry).to receive(:skipped?).and_return(false)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
-      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_YES
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
+      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTION_YES
       expect(subject).to be_skipped
     end
 
     it "returns true if callback_offered is false" do
       allow(Rails).to receive(:env) { "preprod".inquiry }
       expect_any_instance_of(TeacherTrainingAdviser::Steps::OverseasTimeZone).to receive(:callback_offered).and_return(false)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
       expect_any_instance_of(TeacherTrainingAdviser::Steps::OverseasCountry).to receive(:skipped?).and_return(false)
       # TODO: add equivalent test
-      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
+      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTIONS[:equivalent]
       expect(subject).to be_skipped
     end
   end

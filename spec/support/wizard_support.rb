@@ -36,10 +36,9 @@ shared_context "with a TTA wizard step" do
 end
 
 shared_context "with wizard data" do
-  let(:degree_status_option_types) do
-    Crm::OptionSet::DEGREE_STATUSES.map do |k, v|
-      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
-    end
+  let(:degree_statuses) do
+    %i[graduate_or_postgraduate no_degree not_yet_im_studying]
+      .map { |trait| build(:degree_status, trait) }
   end
 
   let(:consideration_journey_stage_types) do
@@ -78,12 +77,12 @@ shared_context "with wizard data" do
   end
 
   let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
-  let(:inferred_degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :second_year) }
+  let(:inferred_degree_status_id) { build(:degree_status, :second_year) }
   let(:mailing_list_response) { GetIntoTeachingApiClient::DegreeStatusResponse.new({ degree_status_id: inferred_degree_status_id }) }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_qualification_degree_status).and_return(degree_status_option_types)
+      receive(:get_qualification_degree_status).and_return(degree_statuses)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
     allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \

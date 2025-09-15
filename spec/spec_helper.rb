@@ -22,6 +22,7 @@ require "simplecov_json_formatter"
 require "active_support"
 require "webmock/rspec"
 require "nokogiri"
+require "timecop"
 
 SimpleCov.start "rails" do
   add_filter "/app/services/get_into_teaching_api/fake_endpoints.rb"
@@ -34,6 +35,8 @@ SimpleCov.start "rails" do
     SimpleCov::Formatter::JSONFormatter,
   ]
 end
+
+Timecop.safe_mode = true
 
 RSpec.configure do |config|
   config.example_status_persistence_file_path = "tmp/examples.txt"

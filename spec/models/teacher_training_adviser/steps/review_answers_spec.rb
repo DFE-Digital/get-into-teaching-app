@@ -8,7 +8,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::ReviewAnswers do
       TeacherTrainingAdviser::Steps::DateOfBirth => { "date_of_birth": 20.years.ago },
       TeacherTrainingAdviser::Steps::UkAddress => { "address_postcode": "TE5 1NG" },
       TeacherTrainingAdviser::Steps::UkTelephone => { "address_telephone": "123456789" },
-      TeacherTrainingAdviser::Steps::HaveADegree => { "degree_option": "studying" },
+      TeacherTrainingAdviser::Steps::DegreeStatus => { "degree_option": "studying" },
       TeacherTrainingAdviser::Steps::ReturningTeacher => {
         "type_id": TeacherTrainingAdviser::Steps::ReturningTeacher::OPTIONS[:returning_to_teaching],
       },
@@ -31,7 +31,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::ReviewAnswers do
 
     it {
       expect(subject).to eq(answers_by_step.except(
-                              TeacherTrainingAdviser::Steps::HaveADegree,
+                              TeacherTrainingAdviser::Steps::DegreeStatus,
                               TeacherTrainingAdviser::Steps::ReturningTeacher,
                             ))
     }
@@ -47,7 +47,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::ReviewAnswers do
 
     it {
       expect(subject).to eq(answers_by_step.slice(
-                              TeacherTrainingAdviser::Steps::HaveADegree,
+                              TeacherTrainingAdviser::Steps::DegreeStatus,
                               TeacherTrainingAdviser::Steps::ReturningTeacher,
                             ))
     }
