@@ -34,6 +34,8 @@ env:
 
 permissions:
   id-token: write
+  contents: read
+
 
 jobs:
   recover-deleted-postgres:
