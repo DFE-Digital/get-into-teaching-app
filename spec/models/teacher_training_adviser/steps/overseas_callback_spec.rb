@@ -33,7 +33,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::OverseasCallback do
       allow(Rails).to receive(:env) { "preprod".inquiry }
       expect_any_instance_of(TeacherTrainingAdviser::Steps::OverseasCountry).to receive(:skipped?).and_return(false)
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
-      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTION_YES
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(true)
       expect(subject).to be_skipped
     end
 

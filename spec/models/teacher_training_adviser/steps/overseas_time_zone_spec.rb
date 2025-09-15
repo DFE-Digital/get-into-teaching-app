@@ -64,7 +64,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::OverseasTimeZone do
     end
 
     it "returns true if degree_option is not equivalent" do
-      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTION_YES
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(true)
       expect(subject).to be_skipped
     end
   end
