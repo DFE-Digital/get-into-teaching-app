@@ -52,14 +52,6 @@ This website is partially compliant with the WCAG (Web Content Accessibility Gui
 
 We have one video that does not meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded). This videos is titled "What happens at a Get Into Teaching event". We plan to add audio descriptions to this video by December 2025. When we publish new content, we will ensure that our use of videos meets accessibility standards.
 
-#### Webchat
-
-The webchat content is non-accessible for the following reasons:
-
-* the logo in the header is announced incorrectly for Talkback users. This fails to meet [WCAG 2.2 A - 1.1.1 Non-text content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content). We plan to fix this by the end of September 2025.
-
-* the webchat is not usable when viewed at 400% zoom as the header and text input take up the majority of the screen and the messages cannot be read within the small gap. This fails to meet [WCAG 2.2 AA - 1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow) and [WCAG 2.2 AA 2.4.11 - Focus Not Obscured (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum). We plan to fix this by the end of September 2025.
-
 ## What we're doing to improve accessibility
 
 We are currently working to address the known accessibility issues.
@@ -68,6 +60,6 @@ We’ll continue to test the accessibility of this service as it develops.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 5 March 2025. It was last reviewed on 3 June 2025.
+This statement was prepared on 5 March 2025. It was last reviewed on 16 September 2025.
 
 This website was last tested independently on 25 February 2025. The test was carried out by the Government Digital Service.
