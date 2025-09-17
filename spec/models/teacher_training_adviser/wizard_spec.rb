@@ -22,7 +22,6 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         TeacherTrainingAdviser::Steps::SubjectTaught,
         TeacherTrainingAdviser::Steps::DegreeStatus,
         TeacherTrainingAdviser::Steps::NoDegree,
-        TeacherTrainingAdviser::Steps::StageOfDegree,
         TeacherTrainingAdviser::Steps::WhatSubjectDegree,
         TeacherTrainingAdviser::Steps::WhatDegreeClass,
         TeacherTrainingAdviser::Steps::StageInterestedTeaching,

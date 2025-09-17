@@ -245,7 +245,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
       preferred_teaching_subject_id: Crm::TeachingSubject.lookup_by_key(:maths),
       consideration_journey_stage_id: Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate),
+      degree_status_id: build(:degree_status, :graduate_or_postgraduate).id,
       address_postcode: "TE57 1NG",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
@@ -403,7 +403,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       last_name: "User",
       email: "test@user.com",
       consideration_journey_stage_id: Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degree_status_id: Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate),
+      degree_status_id: build(:degree_status, :graduate_or_postgraduate).id,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { response }
