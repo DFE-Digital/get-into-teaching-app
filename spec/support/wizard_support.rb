@@ -77,7 +77,7 @@ shared_context "with wizard data" do
   end
 
   let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
-  let(:inferred_degree_status_id) { build(:degree_status, :second_year) }
+  let(:inferred_degree_status_id) { build(:degree_status, :second_year).id }
   let(:mailing_list_response) { GetIntoTeachingApiClient::DegreeStatusResponse.new({ degree_status_id: inferred_degree_status_id }) }
 
   before do
