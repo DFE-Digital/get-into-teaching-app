@@ -20,7 +20,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkTelephone do
   describe "#skipped?" do
     it "returns false if UkAddress step was shown and degree_option is not equivalent" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
-      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTION_YES
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(true)
       expect(subject).not_to be_skipped
     end
 
@@ -36,7 +36,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkTelephone do
     end
 
     it "returns true when pre-filled with crm data" do
-      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTION_YES
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(true)
       wizardstore.persist_preexisting({ "address_telephone" => "123456789" })
       expect(subject).to be_skipped
     end

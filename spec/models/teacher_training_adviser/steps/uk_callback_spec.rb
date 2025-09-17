@@ -45,7 +45,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkCallback do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
       expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
       # TODO: add test for equivalent degree
-      #wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTIONS[:equivalent]
+      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTIONS[:equivalent]
       expect(subject).not_to be_skipped
     end
 
@@ -60,7 +60,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkCallback do
     it "returns true if degree_option is YES" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
-      wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTION_YES
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(true)
       expect(subject).to be_skipped
     end
   end

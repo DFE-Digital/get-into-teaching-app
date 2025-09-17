@@ -174,7 +174,6 @@ group :test do
   gem "rspec-retry"
   gem "selenium-webdriver"
   gem "shoulda-matchers"
-  gem "timecop"
   gem "vcr"
   gem "webmock", ">= 3.14.0"
 end

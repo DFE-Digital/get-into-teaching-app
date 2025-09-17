@@ -498,9 +498,9 @@ en:
           attributes:
             has_gcse_maths_and_english_id:
               invalid_type: "Select yes if you have grade 4(C) or above in English and Maths GCSE or equivalent"
-        teacher_training_adviser/steps/have_a_degree:
+        teacher_training_adviser/steps/degree_status:
           attributes:
-            degree_options:
+            degree_status_id:
               inclusion: "Select an option from the list"
         teacher_training_adviser/steps/date_of_birth:
           attributes:
@@ -929,8 +929,8 @@ en:
         stage_taught_id:
       teacher_training_adviser_steps_returning_teacher:
         type_id: "Only select 'yes' if you have English qualified teacher status (QTS)."
-      teacher_training_adviser_steps_have_a_degree:
-        degree_option: "To use this service your bachelor's degree or predicted grade needs to be a 2:2 class honours or above."
+      teacher_training_adviser_steps_degree_status:
+        degree_status_id: "To use this service your bachelor's degree or predicted grade needs to be a 2:2 class honours or above."
       teacher_training_adviser_steps_overseas_telephone:
         address_telephone_html: "We recommend you provide us with your phone number as this is the most effective way to talk to your adviser.<br /><br />For international numbers include the country code."
       teacher_training_adviser_steps_date_of_birth:
@@ -978,8 +978,8 @@ en:
         has_id: "Do you have a teacher reference number (TRN)?"
       teacher_training_adviser_steps_paid_teaching_experience_in_uk:
         has_paid_experience_in_uk: "Do you have paid teaching experience in the UK of at least one term?"
-      teacher_training_adviser_steps_have_a_degree:
-        degree_status: "Do you have a degree?"
+      teacher_training_adviser_steps_degree_status:
+        degree_status_id: "Do you have a degree?"
       teacher_training_adviser_steps_train_to_teach_in_uk:
         train_to_teach_in_uk: "Did you train to teach in the UK?"
       teacher_training_adviser_steps_uk_telephone:

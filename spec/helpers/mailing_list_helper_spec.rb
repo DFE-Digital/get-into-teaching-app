@@ -40,31 +40,31 @@ RSpec.describe MailingListHelper, type: :helper do
 
   describe "#ml_graduate?" do
     it "returns true for degree_status 222750000" do
-      expect(ml_graduate?(degree_status: 222_750_000)).to be true
+      expect(ml_graduate?(degree_status_id: 222_750_000)).to be true
     end
 
     it "returns false for other degree_status values" do
-      expect(ml_graduate?(degree_status: 123_456_789)).to be false
+      expect(ml_graduate?(degree_status_id: 123_456_789)).to be false
     end
   end
 
   describe "#ml_studying?" do
     it "returns true for degree_status 222750006" do
-      expect(ml_studying?(degree_status: 222_750_006)).to be true
+      expect(ml_studying?(degree_status_id: 222_750_006)).to be true
     end
 
     it "returns false for other degree_status values" do
-      expect(ml_studying?(degree_status: 123_456_789)).to be false
+      expect(ml_studying?(degree_status_id: 123_456_789)).to be false
     end
   end
 
   describe "#ml_no_degree?" do
     it "returns true for degree_status 222750004" do
-      expect(ml_no_degree?(degree_status: 222_750_004)).to be true
+      expect(ml_no_degree?(degree_status_id: 222_750_004)).to be true
     end
 
     it "returns false for other degree_status values" do
-      expect(ml_no_degree?(degree_status: 123_456_789)).to be false
+      expect(ml_no_degree?(degree_status_id: 123_456_789)).to be false
     end
   end
 

@@ -78,7 +78,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::DegreeStatus do
 
   describe "studying helpers" do
     around do |example|
-      Timecop.freeze(2025, 01, 01) { example.run }
+      travel_to(Date.new(2025, 1, 1)) { example.run }
     end
 
     before do
