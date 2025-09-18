@@ -99,20 +99,13 @@ Find out more about [working in the UK on a Skilled Worker visa](https://www.gov
 
 ### Salary requirement for a Skilled Worker visa 
 
-You must earn a minimum salary to be eligible for a Skilled Worker visa. This varies by region: 
+You must earn a minimum salary to be eligible for a Skilled Worker visa.
 
-* inner London: $nonuk_skilledworkervisatraineeminfulltime_innerlondon$ 
+If your role is full-time, it must pay at least $nonuk_skilledworkervisaminsalary$, or the [relevant minimum rate for teachers in England](https://www.gov.uk/government/publications/national-pay-scales-for-eligible-teaching-and-education-jobs/national-pay-scales-for-eligible-teaching-and-education-leadership-occupation-codes), whichever is higher.
 
-* outer London: $nonuk_skilledworkervisatraineeminfulltime_outerlondon$ 
+If your role is part-time, it must pay at least $nonuk_skilledworkervisaminsalary$ when the [relevant minimum rate for teachers in England](https://www.gov.uk/government/publications/national-pay-scales-for-eligible-teaching-and-education-jobs/national-pay-scales-for-eligible-teaching-and-education-leadership-occupation-codes) is pro-rated.
 
-* London fringe: $nonuk_skilledworkervisatraineeminfulltime_londonfringe$ 
-
-* rest of England: $nonuk_skilledworkervisatraineeminfulltime_restofengland$ 
-
-Check the region you will be working in with your teacher training provider. 
-
-You may be able to train part-time, but your part-time salary must be at least $nonuk_skilledworkervisatraineeminparttime$.
-
+The minimum rate of pay in England varies depending on the region, so check the region you will be working in with your teacher training provider.
 
 ## What you need to do to apply for your visa 
 You can apply for your visa once you have a confirmed offer of a training place.

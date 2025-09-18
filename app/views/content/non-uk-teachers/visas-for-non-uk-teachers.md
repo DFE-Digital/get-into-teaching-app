@@ -91,25 +91,13 @@ When you have a confirmed job offer, you will be able to [apply for a Skilled Wo
 
 When you apply for a job, you must make sure the salary offered meets the requirement for a Skilled Worker visa.  
 
-The salary you need for a Skilled Worker visa will depend on whether you are employed as a qualified or unqualified teacher.  
+If your role is full-time, it must pay at least $nonuk_skilledworkervisaminsalary$, or the [relevant minimum rate for teachers in England](https://www.gov.uk/government/publications/national-pay-scales-for-eligible-teaching-and-education-jobs/national-pay-scales-for-eligible-teaching-and-education-leadership-occupation-codes), whichever is higher.
 
-To work as a qualified teacher in England, you need English qualified teacher status (QTS). If you do not have QTS, you will not be qualified to teach in some schools in England. The details of the job you are applying for will include whether the role is for teachers with QTS.  
+If your role is part-time, it must pay at least $nonuk_skilledworkervisaminsalary$ when the [relevant minimum rate for teachers in England](https://www.gov.uk/government/publications/national-pay-scales-for-eligible-teaching-and-education-jobs/national-pay-scales-for-eligible-teaching-and-education-leadership-occupation-codes) is pro-rated.
 
-The salary requirement varies depending on the area of England you are applying to work in.  
-
-Schools have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary offered does not meet the Skilled Worker visa requirements. 
+The minimum rate of pay in England varies depending on the area you are applying to work in and your teaching role. Schools also have some flexibility in how they set salaries. You may be able to negotiate a different rate of pay if the salary offered does not meet the Skilled Worker visa requirements.
 
 $salaryrequirements$
-
-### Working part time as a teacher
-
-You can work part-time, but [your salary must meet the threshold for a Skilled Worker visa](https://www.gov.uk/government/publications/national-pay-scales-for-eligible-teaching-and-education-jobs/national-pay-scales-for-eligible-teaching-and-education-leadership-occupation-codes). 
-
-There are 2 requirements:
-
-* your part-time salary must be at least $nonuk_skilledworkervisateacherminparttime$
-* the full-time equivalent salary for the role must meet the minimum threshold set for your region and status for qualified and unqualified teachers
-
 
 ## Dependants
 
