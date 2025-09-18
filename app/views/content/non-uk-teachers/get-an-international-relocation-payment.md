@@ -200,7 +200,7 @@ Teachers who have already received their first instalment are able to apply for 
 
 You can apply for the second IRP instalment once you have completed 3 consecutive terms of employment as a teacher which will be from September 2025 at the earliest.
 
-Teachers who have received their first payment of $nonuk_internationalrelocationpayment_instalment$ will be contacted by email when they become eligible after they have reached the anniversary of their original start date. This will provide details on how to apply for the second £5,000 payment.
+Teachers who have received their first payment of $nonuk_internationalrelocationpayment_instalment$ will be contacted by email when they become eligible after they have reached the anniversary of their original start date. This will provide details on how to apply for the second $nonuk_internationalrelocationpayment_instalment$ payment.
 
 If you have questions about this or believe you are eligible and have not been contacted or you miss the application window, email international.relocationpayment@education.gov.uk.
 
