@@ -235,6 +235,10 @@ en:
       graduation_year:
         title: "Which year will you graduate?"
         change: "which year will you graduate"
+    degree_country:
+      degree_country_id:
+          title: "Which country is your degree from?"
+          change: "which country your degree is from"
     overseas_callback:
       callback_date:
         title: "Callback date"
@@ -406,6 +410,10 @@ en:
               too_long: "Your email address is too long - you need to enter a valid email address"
             channel_id:
               inclusion: The link you used to sign up is no longer valid.
+        teacher_training_adviser/steps/degree_country:
+          attributes:
+            degree_country_id:
+              invalid_type: "The country you have entered is not valid - you need to choose one from the list"
         teacher_training_adviser/steps/subject_taught:
           attributes:
             subject_taught_id:
@@ -722,6 +730,10 @@ en:
             222750000: "Yes"
             222750006: "Not yet, I'm studying for one"
             222750004: "No"
+        degree_country:
+          degree_country_id:
+            72f5c2e6-74f9-e811-a97a-000d3a2760f2: "The UK"
+            6f9e7b81-e44d-f011-877a-00224886d23e: "Another country"
 
     label:
       wizard_steps_authenticate:
@@ -980,6 +992,8 @@ en:
         has_paid_experience_in_uk: "Do you have paid teaching experience in the UK of at least one term?"
       teacher_training_adviser_steps_degree_status:
         degree_status_id: "Do you have a degree?"
+      teacher_training_adviser_steps_degree_country:
+        degree_country_id: "Which country is your degree from?"
       teacher_training_adviser_steps_train_to_teach_in_uk:
         train_to_teach_in_uk: "Did you train to teach in the UK?"
       teacher_training_adviser_steps_uk_telephone:
