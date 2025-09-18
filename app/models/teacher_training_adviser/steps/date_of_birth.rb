@@ -41,6 +41,11 @@ module TeacherTrainingAdviser::Steps
       }
     end
 
+    def skipped?
+      degree_country_step = other_step(:degree_country)
+      degree_country_step.another_country?
+    end
+
   private
 
     def add_invalid_error

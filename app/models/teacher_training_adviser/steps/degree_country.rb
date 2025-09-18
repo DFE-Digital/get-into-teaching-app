@@ -23,5 +23,9 @@ module TeacherTrainingAdviser::Steps
     def skipped?
       other_step(:returning_teacher).returning_to_teaching
     end
+
+    def another_country?
+      degree_country_id == ANOTHER_COUNTRY
+    end
   end
 end

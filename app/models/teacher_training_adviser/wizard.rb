@@ -30,6 +30,7 @@ module TeacherTrainingAdviser
       Steps::DegreeStatus,
       Steps::NoDegree,
       Steps::DegreeCountry,
+
       Steps::WhatSubjectDegree,
       Steps::WhatDegreeClass,
       Steps::StageInterestedTeaching,
@@ -42,6 +43,7 @@ module TeacherTrainingAdviser
       Steps::StartTeacherTraining,
       Steps::SubjectLikeToTeach,
       Steps::DateOfBirth,
+      
       Steps::UkOrOverseas,
       Steps::UkAddress,
       Steps::UkTelephone,
