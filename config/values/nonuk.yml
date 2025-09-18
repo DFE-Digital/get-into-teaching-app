@@ -7,4 +7,4 @@ nonuk:
 # Statement of comparability  
   statementofcomparabilitycost: £69.60
 # Visa salary thresholds
-  nonuk_skilledworkervisaminsalary: £25,000
+  skilledworkervisaminsalary: £25,000
