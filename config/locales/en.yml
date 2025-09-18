@@ -546,24 +546,14 @@ en:
             email:
               blank: Enter your full email address
               invalid: Enter a valid email address
+        events/steps/accessibility_support:
+          attributes:
+            support_required:
+              inclusion: Select an option from the list
         events/steps/contact_details:
           attributes:
             address_telephone:
               <<: *telephone_errors
-        events/steps/further_details:
-          attributes:
-            subscribe_to_mailing_list:
-              inclusion: Choose yes or no
-        events/steps/personalised_updates:
-          attributes:
-            address_postcode:
-              invalid: Enter a valid UK postcode, or leave blank
-            degree_status_id:
-              inclusion: Select your degree stage
-            consideration_journey_stage_id:
-              inclusion: Select how close you are to applying for teacher training
-            preferred_teaching_subject_id:
-              inclusion: Select the subject you're most interested in teaching
 
         callbacks/steps/personal_details:
           attributes:
@@ -845,13 +835,13 @@ en:
         first_name: First name
         last_name: Last name
         email: Email address
+      events_steps_accessibility_support:
+        accessibility_support: "Accessibility at this event"
+        support_required: "Do you need any extra support to attend this event?"
+      events_steps_accessibility_needs:
+        accessibility_needs_for_event: "Tell us about the extra support you need"
       events_steps_contact_details:
         address_telephone: What's your telephone number? (optional)
-      events_steps_personalised_updates:
-        address_postcode: What's your UK postcode? (optional)
-        degree_status_id: Do you have a degree?
-        consideration_journey_stage_id: How interested are you in applying for teacher training?
-        preferred_teaching_subject_id: Select the subject you're most interested in teaching
 
       callbacks_steps_personal_details:
         first_name: First name
@@ -895,16 +885,18 @@ en:
         address_postcode: What's your UK postcode? (optional)
 
     hint:
+      events_steps_accessibility_support:
+        accessibility_support: |-
+          The venue for this event has the following accessibility features:
+      events_steps_accessibility_needs:
+        accessibility_needs_for_event: "Our team may contact you to discuss your support."
       events_steps_contact_details:
         address_telephone: |-
-           We'll use this to send you a reminder and let you know about any last-minute cancellations.
+          We'll use this to send you a reminder and let you know about any last-minute cancellations.
       wizard_steps_authenticate:
         timed_one_time_password:
           text: ""
           resent: We've sent you another email
-      events_steps_personalised_updates:
-        address_postcode: |-
-          We'll only use this to send you information about events happening near you.
 
       mailing_list_steps:
         life_stage:
@@ -957,9 +949,6 @@ en:
           studying: "To get an adviser, your predicted degree grade must be a 2:2 or higher."
           graduated: "To get an adviser, your degree grade must be a 2:2 or higher."
     legend:
-      events_steps_further_details:
-        subscribe_to_mailing_list: |-
-          Would you like to receive email updates to help you get into teaching? If you say no, you will still receive confirmation emails about any events you sign up to attend.
       teacher_training_adviser_feedback:
         successful_visit: "Did you achieve what you wanted from your visit?"
         rating: "Overall, how did you feel about the service you received?"

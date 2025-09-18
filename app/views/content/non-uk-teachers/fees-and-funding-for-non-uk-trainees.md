@@ -27,7 +27,10 @@ cta_arrow_link:
   salaried:
     link_target: "/funding-and-support/salaried-teacher-training"
     link_text: "Find out more about salaried teacher training"
-
+inset_text:
+  funding-holding-message:
+    text: |-
+      The figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following academic year (2026 to 2027) will be announced in October.
 ---
 
 Most non-UK citizens will not be eligible for financial support from the UK government to help with teacher training.
@@ -74,6 +77,8 @@ To start your application for student loans, you need to have chosen your teache
 $loans$
 
 ### Bursaries and scholarships for trainee languages and physics teachers
+
+$funding-holding-message$
 
 There are 2 types of financial support you can get if you want to train to teach languages or physics:
 

@@ -9,6 +9,7 @@ module TeachingEvents
     end
 
     delegate(
+      :id,
       :building,
       :description,
       :end_at,
