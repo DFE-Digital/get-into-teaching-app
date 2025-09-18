@@ -66,7 +66,7 @@ To be eligible for the second instalment of the IRP, you must:
 
 To be eligible for the second instalment of the IRP, your teaching subject and school must continue to meet the eligibility criteria. You must:
 
-* have worked as a teacher for the previous year (3 consecutive terms)
+* have worked as a teacher in a qualifying school and role for the previous year (3 consecutive terms)
 
 * be contracted to work as a teacher for at least another year
 
@@ -198,7 +198,7 @@ Applications for the first $nonuk_internationalrelocationpayment_instalment$ ins
 
 Teachers who have already received their first instalment are able to apply for their second instalment from September 2025 to end of June 2026. Before you apply, you’ll need to check you meet the eligibility requirements. If you are eligible, you should receive the money following successful completion of our eligibility checks.
 
-You can apply for the second IRP instalment once you have completed 3 consecutive terms of employment as a teacher which will be from September 2025 at the earliest.
+You can apply for the second IRP instalment once you have completed 3 consecutive terms of employment as a teacher in a qualifying role which will be from September 2025 at the earliest.
 
 Teachers who have received their first payment of $nonuk_internationalrelocationpayment_instalment$ will be contacted by email when they become eligible after they have reached the anniversary of their original start date. This will provide details on how to apply for the second $nonuk_internationalrelocationpayment_instalment$ payment.
 
