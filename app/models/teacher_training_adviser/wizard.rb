@@ -43,7 +43,10 @@ module TeacherTrainingAdviser
       Steps::StartTeacherTraining,
       Steps::SubjectLikeToTeach,
       Steps::DateOfBirth,
-      
+
+      Steps::Citizenship,
+      Steps::VisaStatus,
+
       Steps::UkOrOverseas,
       Steps::UkAddress,
       Steps::UkTelephone,

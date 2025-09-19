@@ -324,6 +324,14 @@ en:
       subject_taught_id:
         title: "Which subject did you train to teach?"
         change: "the subject you trained to teach"
+    citizenship:
+      citizenship:
+        title: "Are you a UK citizen?"
+        change: "are you a UK citizen"
+    visa_status:
+      visa_status:
+        title: "Do you have a visa or immigration status allowing you to train to teach in England?"
+        change: "your visa or immigration status allowing you to train to teach in England"
     uk_address:
       address_postcode:
         title: "Postcode"
@@ -732,8 +740,18 @@ en:
             222750004: "No"
         degree_country:
           degree_country_id:
-            72f5c2e6-74f9-e811-a97a-000d3a2760f2: "The UK"
+            72f5c2e6-74f9-e811-a97a-000d3a2760f2: "United Kingdom"
             6f9e7b81-e44d-f011-877a-00224886d23e: "Another country"
+
+        citizenship:
+          citizenship:
+            222750000: "Yes"
+            222750001: "No"
+        visa_status:
+          visa_status:
+            222750000: "Yes, I have a visa, pre-settled status or leave to remain"
+            222750001: "No, I will need to apply for a visa"
+            222750002: "Not sure"
 
     label:
       wizard_steps_authenticate:
@@ -771,6 +789,11 @@ en:
         preferred_teaching_subject_id: "Select the subject you're most interested in teaching"
       teacher_training_adviser_steps_start_teacher_training:
         initial_teacher_training_year_id: "When do you want to start your teacher training?"
+      teacher_training_adviser_steps_citizenship:
+        citizenship: "Are you a UK citizen?"
+      teacher_training_adviser_steps_visa_status:
+        visa_status: "Do you have a visa or immigration status allowing you to train to teach in England?"
+
       teacher_training_adviser_steps_uk_telephone:
         address_telephone: "UK telephone number (optional)"
       teacher_training_adviser_steps_uk_callback:
@@ -872,8 +895,6 @@ en:
         title: "Our emails are for people who do not have qualified teacher status (QTS)"
       mailing_list_steps_already_subscribed:
         title: "You've already signed up"
-
-
       mailing_list_steps_degree_status:
         degree_status_id: Do you have a degree?
       mailing_list_steps_teacher_training:
@@ -888,8 +909,6 @@ en:
         visa_status: "Do you need a visa to train to teach in England?"
       mailing_list_steps_location:
         location: "Where do you live?"
-
-
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
 
@@ -947,6 +966,12 @@ en:
         address_telephone_html: "We recommend you provide us with your phone number as this is the most effective way to talk to your adviser.<br /><br />For international numbers include the country code."
       teacher_training_adviser_steps_date_of_birth:
         date_of_birth: "For example, 31 3 1980"
+
+      teacher_training_adviser_steps_citizenship:
+        citizenship: "We use this information to give you tailored advice."
+      teacher_training_adviser_steps_visa_status:
+        visa_status: "We use this information to give you tailored advice."
+
       teacher_training_adviser_steps_overseas_country:
         country_id_html: |-
           You can apply to train or teach from any country in the world, but you may need a visa. Our guidance for
