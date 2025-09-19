@@ -88,8 +88,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "No"
     click_on "Next step"
 
-    expect(page).to have_text "Do you need a visa to train to teach in England?"
-    choose "Yes, I need a visa"
+    expect(page).to have_text "Do you have a visa or immigration status allowing you to train to teach in England?"
+    choose "No, I will need to apply for a visa"
     click_on "Next step"
 
     expect(page).to have_text "Where do you live?"
@@ -182,8 +182,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "No"
     click_on "Next step"
 
-    expect(page).to have_text "Do you need a visa to train to teach in England?"
-    choose "No, I have settled status (pre-settled status or leave to remain)"
+    expect(page).to have_text "Do you have a visa or immigration status allowing you to train to teach in England?"
+    choose "Yes, I have a visa, pre-settled status or leave to remain"
     click_on "Next step"
 
     expect(page).to have_text "Where do you live?"
@@ -436,7 +436,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "No"
     click_on "Next step"
 
-    expect(page).to have_text "Do you need a visa to train to teach in England?"
+    expect(page).to have_text "Do you have a visa or immigration status allowing you to train to teach in England?"
     choose "Not sure"
     click_on "Next step"
 
