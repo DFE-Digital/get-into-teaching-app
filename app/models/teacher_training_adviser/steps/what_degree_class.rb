@@ -21,7 +21,7 @@ module TeacherTrainingAdviser::Steps
       degree_status_step = other_step(:degree_status)
       degree_country_step = other_step(:degree_country)
 
-      degree_status_step.skipped? || (!degree_status_step.has_degree? && degree_status_step.studying_not_final_year?) || degree_country_step.another_country?
+      degree_status_step.skipped? || (!degree_status_step.has_degree? && !degree_status_step.studying_final_year?) || degree_country_step.another_country?
     end
 
 

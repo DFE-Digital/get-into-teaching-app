@@ -21,8 +21,10 @@ module TeacherTrainingAdviser::Steps
     def skipped?
       return true if super
 
-      # TODO: Add additional logic to display/skip this step
-      other_step(:uk_address).skipped?
+      uk_address_skipped = other_step(:uk_address).skipped?
+      equivalent_degree = other_step(:degree_country).another_country?
+
+      uk_address_skipped || equivalent_degree
     end
 
     def title_attribute

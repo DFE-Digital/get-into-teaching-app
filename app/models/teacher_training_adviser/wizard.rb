@@ -6,7 +6,7 @@ module TeacherTrainingAdviser
     ATTRIBUTES_TO_LEAVE = %w[
       first_name
       type_id
-      degree_option
+      degree_status_id
       graduation_year
       sub_channel_id
       callback_offered

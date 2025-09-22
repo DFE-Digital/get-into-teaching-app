@@ -18,9 +18,9 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkTelephone do
   end
 
   describe "#skipped?" do
-    it "returns false if UkAddress step was shown and degree_option is not equivalent" do
+    it "returns false if UkAddress step was shown and degree country is UK" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(true)
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:another_country?).and_return(false)
       expect(subject).not_to be_skipped
     end
 
@@ -30,13 +30,14 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkTelephone do
     end
 
     it "returns true if degree_option is equivalent" do
-      # TODO: add test for equivalent degree
-      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTIONS[:equivalent]
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:another_country?).and_return(true)
       expect(subject).to be_skipped
     end
 
     it "returns true when pre-filled with crm data" do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(true)
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:another_country?).and_return(false)
       wizardstore.persist_preexisting({ "address_telephone" => "123456789" })
       expect(subject).to be_skipped
     end

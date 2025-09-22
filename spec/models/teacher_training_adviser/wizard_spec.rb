@@ -22,6 +22,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         TeacherTrainingAdviser::Steps::SubjectTaught,
         TeacherTrainingAdviser::Steps::DegreeStatus,
         TeacherTrainingAdviser::Steps::NoDegree,
+        TeacherTrainingAdviser::Steps::DegreeCountry,
         TeacherTrainingAdviser::Steps::WhatSubjectDegree,
         TeacherTrainingAdviser::Steps::WhatDegreeClass,
         TeacherTrainingAdviser::Steps::StageInterestedTeaching,
@@ -34,6 +35,8 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         TeacherTrainingAdviser::Steps::StartTeacherTraining,
         TeacherTrainingAdviser::Steps::SubjectLikeToTeach,
         TeacherTrainingAdviser::Steps::DateOfBirth,
+        TeacherTrainingAdviser::Steps::Citizenship,
+        TeacherTrainingAdviser::Steps::VisaStatus,
         TeacherTrainingAdviser::Steps::UkOrOverseas,
         TeacherTrainingAdviser::Steps::UkAddress,
         TeacherTrainingAdviser::Steps::UkTelephone,
@@ -56,7 +59,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         "first_name" => "Joe",
         "last_name" => "Joseph",
         "type_id" => 123,
-        "degree_option" => "studying",
+        "degree_status_id" => 456,
         "callback_offered" => true,
       }
     end
@@ -104,6 +107,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
           email: "email@address.com",
           first_name: "Joe",
           last_name: "Joseph",
+          degree_status_id: 456,
           type_id: 123,
           accepted_policy_id: "123",
         })
@@ -124,7 +128,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
       it "prunes the store leaving data required to render the completion page" do
         hashed_email = Digest::SHA256.hexdigest("email@address.com")
         expect(store).to eql({ "type_id" => 123,
-                               "degree_option" => "yes",
+                               "degree_status_id" => 456,
                                "callback_offered" => true,
                                "first_name" => "Joe",
                                "hashed_email" => hashed_email })

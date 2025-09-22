@@ -22,36 +22,33 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatDegreeClass do
   end
 
   describe "#skipped?" do
-    it "returns false if DegreeStatus step was shown and degree_option is yes" do
+    it "not skipped if DegreeStatus step was shown and they have a degree" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(true)
       expect(subject).not_to be_skipped
     end
 
-    it "returns false if DegreeStatus step was shown and degree_option is studying (final year)" do
+    it "not skipped if DegreeStatus step was shown and they are studying (final year)" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:degree_in_progress?).and_return(true)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::StageOfDegree).to receive(:final_year?).and_return(true)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(false)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:studying_final_year?).and_return(true)
       expect(subject).not_to be_skipped
     end
 
-    it "returns true if DegreeStatus was skipped" do
+    it "skipped if DegreeStatus was skipped" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(true)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(true)
       expect(subject).to be_skipped
     end
 
-    it "returns true if degree_option is not yes" do
+    it "skipped if has a degree from another country" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
-      # TODO: add test for equivalent degree
-      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTIONS[:equivalent]
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:another_country?).and_return(true)
       expect(subject).to be_skipped
     end
 
     it "returns true if degree_option is studying (not final year)" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:degree_in_progress?).and_return(true)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::StageOfDegree).to receive(:final_year?).and_return(false)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:studying_final_year?).and_return(false)
       expect(subject).to be_skipped
     end
   end

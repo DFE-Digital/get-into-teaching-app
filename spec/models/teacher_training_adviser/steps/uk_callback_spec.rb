@@ -41,23 +41,21 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkCallback do
   end
 
   describe "#skipped?" do
-    it "returns false if UkAddress/DegreeStatus steps were shown and degree_option is equivalent" do
+    it "not skipped if UkAddress/DegreeStatus steps were shown and has an equivalent degree" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
       expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
-      # TODO: add test for equivalent degree
-      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTIONS[:equivalent]
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:another_country?).and_return(true)
       expect(subject).not_to be_skipped
     end
 
-    it "returns true if UkAddress was skipped" do
+    it "skipped if UkAddress was skipped" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
       expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(true)
-      # TODO: add test for equivalent degree
-      # wizardstore["degree_option"] = TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_OPTIONS[:equivalent]
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:another_country?).and_return(true)
       expect(subject).to be_skipped
     end
 
-    it "returns true if degree_option is YES" do
+    it "skipped if degree status was skipped" do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
       expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
       expect(subject).to be_skipped
