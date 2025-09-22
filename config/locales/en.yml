@@ -693,8 +693,8 @@ en:
             222750001: "No"
         visa_status:
           visa_status:
-            222750000: "No, I have settled status (pre-settled status or leave to remain)"
-            222750001: "Yes, I need a visa"
+            222750000: "Yes, I have a visa, pre-settled status or leave to remain"
+            222750001: "No, I will need to apply for a visa"
             222750002: "Not sure"
         location:
           location:
@@ -876,7 +876,7 @@ en:
       mailing_list_steps_citizenship:
         citizenship: "Are you a UK citizen?"
       mailing_list_steps_visa_status:
-        visa_status: "Do you need a visa to train to teach in England?"
+        visa_status: "Do you have a visa or immigration status allowing you to train to teach in England?"
       mailing_list_steps_location:
         location: "Where do you live?"
 
