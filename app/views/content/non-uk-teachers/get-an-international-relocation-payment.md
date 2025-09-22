@@ -20,10 +20,11 @@ inset_text:
       <br>
       <p>The 2-year IRP pilot which ran from 1 September 2023 to 31 May 2025 has ended and is not being extended.</p> 
       <br>
-      <p>No new applications will be accepted for teachers:</p>
-      <p><ul><li>starting a qualifying teaching role in England from 1 June 2025</li></ul></p>
-      <p><ul><li>who started a qualifying teaching role between 1 March 2024 and 31 May 2025</li></ul></p>
-      <p>If you started a qualifying teaching role between 1 March 2024 and 31 May 2025 and have already applied for and received the first instalment of IRP, you will still be able to apply for your second instalment from September 2025. Before you apply, you must read the guidance on this page to check you are eligible for the IRP. </p>
+      <p>Teachers who have received their first $nonuk_internationalrelocationpayment_instalment$ IRP instalment for a qualifying role started between 1 March 2024 and 31 May 2025 are still able to apply for their second instalment from September 2025.</p>
+      <br>
+      <p>Before you apply, you must read the guidance on this page to check you are eligible for the IRP.</p>
+      <br>
+      <p>Teachers who have received their first payment will be contacted by email when they become eligible after they have reached the anniversary of their original start date. This will provide details on how to apply for the second $nonuk_internationalrelocationpayment_instalment$ payment.</p>
 ---
 $applications-open$
 
@@ -33,7 +34,7 @@ The IRP is a 2-year trial to support non-UK citizens who want to teach in Englan
 
 2024 to 2025 is the second and final year of the trial. 
 
-The IRP is paid in 2 instalments of $nonuk_internationalrelocationpayment_instalment$, spread over 2 years. The application window for applying for the first instalment has now closed. However, teachers who have already received their first instalment will still be able to apply for their second instalment from September 2025. 
+The IRP is paid in 2 instalments of $nonuk_internationalrelocationpayment_instalment$, spread over 2 years. The application window for applying for the first instalment has now closed. However, teachers who have already received their first instalment are able to apply for their second instalment from September 2025. 
 
 If you received the IRP payment for the 2023 to 2024 academic year you cannot receive the IRP again. The IRP is available whether you teach full-time or part-time.
 
@@ -65,7 +66,7 @@ To be eligible for the second instalment of the IRP, you must:
 
 To be eligible for the second instalment of the IRP, your teaching subject and school must continue to meet the eligibility criteria. You must:
 
-* have worked as a teacher for the previous year (3 consecutive terms)
+* have worked as a teacher in a qualifying school and role for the previous year (3 consecutive terms)
 
 * be contracted to work as a teacher for at least another year
 
@@ -195,9 +196,13 @@ You are not eligible for the second instalment of the IRP as the dependant visa 
 
 Applications for the first $nonuk_internationalrelocationpayment_instalment$ instalment of the IRP closed on 30 June 2025.
 
-Teachers who have already received their first instalment will still be able to apply for their second instalment from September 2025 to end of June 2026. Before you apply, you’ll need to check you meet the eligibility requirements. If you are eligible, you should receive the money following successful completion of our eligibility checks.
+Teachers who have already received their first instalment are able to apply for their second instalment from September 2025 to end of June 2026. Before you apply, you’ll need to check you meet the eligibility requirements. If you are eligible, you should receive the money following successful completion of our eligibility checks.
 
-You can apply for the second IRP instalment once you have completed 3 consecutive terms of employment as a teacher which will be from September 2025 at the earliest.
+You can apply for the second IRP instalment once you have completed 3 consecutive terms of employment as a teacher in a qualifying role which will be from September 2025 at the earliest.
+
+Teachers who have received their first payment of $nonuk_internationalrelocationpayment_instalment$ will be contacted by email when they become eligible after they have reached the anniversary of their original start date. This will provide details on how to apply for the second $nonuk_internationalrelocationpayment_instalment$ payment.
+
+If you have questions about this or believe you are eligible and have not been contacted or you miss the application window, email international.relocationpayment@education.gov.uk.
 
 DfE may not be able to process late applications if you do not apply during the correct application window. If you miss the correct application window, then contact international.relocationpayment@education.gov.uk explaining your circumstances and we will review your eligibility.
 
