@@ -28,7 +28,7 @@ describe OptionSetHelper, type: "helper" do
     end
 
     context "when an option without a hint" do
-      let(:option) { build(:situation, :graduated) }
+      let(:option) { build(:situation, :teaching_assistant) }
 
       it { is_expected.to be_nil }
     end
