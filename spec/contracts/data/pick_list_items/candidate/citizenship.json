@@ -1,0 +1,14 @@
+[
+  {
+    "id": 222750000,
+    "entityName": "contact",
+    "attributeName": "dfe_citizenship",
+    "Value": "UK citizen"
+  },
+  {
+    "id": 222750001,
+    "entityName": "contact",
+    "attributeName": "dfe_citizenship",
+    "Value": "Non-UK citizen"
+  }
+]
