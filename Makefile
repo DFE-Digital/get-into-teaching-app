@@ -16,6 +16,8 @@ help:
 	echo "Commands:"
 	echo "  edit-app-secrets  - Edit Application specific Secrets."
 	echo "  print-app-secrets - Display Application specific Secrets."
+	echo "  update-review-env - Update environment variables for a review app."
+	echo "                      Usage: make review update-review-env GIT_API_PR=1552 PR_NUMBER=4826"
 	echo ""
 	echo "Parameters:"
 	echo "All commands take the parameter development|review|test|production"
@@ -233,3 +235,15 @@ enable-maintenance: maintenance-image-push maintenance-fail-over
 disable-maintenance: get-cluster-credentials
 	$(eval export CONFIG)
 	./maintenance_page/scripts/failback.sh
+
+update-review-env: review get-cluster-credentials
+	$(if $(GIT_API_PR), , $(error Missing GIT_API_PR variable))
+	$(if $(PR_NUMBER), , $(error Missing PR_NUMBER variable))
+	kubectl set env deployment/get-into-teaching-app-review-$(PR_NUMBER) \
+		GIT_API_PR=$(GIT_API_PR) \
+		-n get-into-teaching-review
+	@echo "Updated review app $(PR_NUMBER) with GIT_API_PR=$(GIT_API_PR)"
+	kubectl rollout restart deployment/get-into-teaching-app-review-$(PR_NUMBER) \
+		-n get-into-teaching-review
+	kubectl rollout status deployment/get-into-teaching-app-review-$(PR_NUMBER) \
+		-n get-into-teaching-review --timeout=60s
