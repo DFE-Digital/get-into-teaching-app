@@ -7,10 +7,4 @@ nonuk:
 # Statement of comparability  
   statementofcomparabilitycost: £69.60
 # Visa salary thresholds
-  skilledworkervisatraineeminfulltime:
-    innerlondon: £25,831
-    outerlondon: £24,415
-    londonfringe: £23,200
-    restofengland: £23,200
-  skilledworkervisatraineeminparttime: £23,200
-  skilledworkervisateacherminparttime: £23,200
+  skilledworkervisaminsalary: £25,000
