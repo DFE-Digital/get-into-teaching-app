@@ -72,6 +72,10 @@ shared_context "with wizard data" do
     %i[yes_i_have_a_visa no_i_will_need_to_apply_for_a_visa not_sure].map { |trait| build(:visa_status, trait) }
   end
 
+  let(:degree_countries) do
+    %i[uk another_country].map {|trait| build(:degree_country, trait) }
+  end
+
   let(:locations) do
     %i[united_kingdom outside_united_kingdom].map { |trait| build(:location, trait) }
   end
@@ -97,6 +101,8 @@ shared_context "with wizard data" do
       receive(:get_candidate_visa_status).and_return(visa_statuses)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_location).and_return(locations)
+    allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
+      receive(:get_degree_countries).and_return(degree_countries)
     allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
       receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \

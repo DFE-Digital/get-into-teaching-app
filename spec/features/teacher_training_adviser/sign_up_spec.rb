@@ -15,8 +15,14 @@ HAS_GCSE = 222_750_000
 SUBJECT_PHYSICS = "ac2655a1-2afa-e811-a981-000d3a276620".freeze
 SUBJECT_PSYCHOLOGY = "b22655a1-2afa-e811-a981-000d3a276620".freeze
 SUBJECT_PRIMARY = "b02655a1-2afa-e811-a981-000d3a276620".freeze
+CITIZENSHIP_UK = 222_750_000
+CITIZENSHIP_NOT_UK = 222_750_001
+VISA_STATUS_WILL_NEED_VISA = 222_750_001
 
 RSpec.feature "Sign up for a teacher training adviser", type: :feature do
+
+  include_context "with wizard data"
+
   let(:quota) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(
       start_at: Time.find_zone("UTC").local(2099, 6, 1, 10),
@@ -134,6 +140,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in_date_of_birth_step
       click_on "Next step"
 
+      expect(page).to have_css "h1", text: "Are you a UK citizen?"
+      choose "Yes"
+      click_on "Next step"
+
       # check page title remains correct for non completed steps
       expect(page).to have_css "h1", text: "Where do you live?"
       click_on "Next step"
@@ -213,6 +223,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in_date_of_birth_step
       click_on "Next step"
 
+      expect(page).to have_css "h1", text: "Are you a UK citizen?"
+      choose "Yes"
+      click_on "Next step"
+
       expect(page).to have_css "h1", text: "Where do you live?"
       choose "UK"
       click_on "Next step"
@@ -284,6 +298,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       expect(page).to have_css "h1", text: "Enter your date of birth"
       fill_in_date_of_birth_step
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Are you a UK citizen?"
+      choose "Yes"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
@@ -359,6 +377,14 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       fill_in_date_of_birth_step
       click_on "Next step"
 
+      expect(page).to have_css "h1", text: "Are you a UK citizen?"
+      choose "No"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Do you have a visa or immigration status allowing you to train to teach in England?"
+      choose "Yes, I have a visa, pre-settled status or leave to remain"
+      click_on "Next step"
+
       expect(page).to have_css "h1", text: "Where do you live?"
       choose "UK"
       click_on "Next step"
@@ -406,28 +432,28 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Do you have a degree?"
-      choose "I am not a UK citizen and have, or am studying for, an equivalent qualification"
+      choose "Yes"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Secondary"
+      expect(page).to have_css "h1", text: "Which country is your degree from?"
+      choose "Another country"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
-      select "Physics"
+      expect(page).to have_css "h1", text: "Are you a UK citizen?"
+      choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "When do you want to start your teacher training?"
-      select "2022"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Enter your date of birth"
-      fill_in_date_of_birth_step
+      expect(page).to have_css "h1", text: "Do you have a visa or immigration status allowing you to train to teach in England?"
+      choose "No, I will need to apply for a visa"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
       choose "Overseas"
       click_on "Next step"
+
+      # expect(page).to have_css "h1", text: "Enter your date of birth"
+      # fill_in_date_of_birth_step
+      # click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country do you live in?"
       select "Argentina"
@@ -448,17 +474,18 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       request_attributes = overseas_candidate_request_attributes({
         type_id: INTERESTED_IN_TEACHING,
-        preferred_teaching_subject_id: SUBJECT_PHYSICS,
         degree_status_id: DEGREE_STATUS_HAS_DEGREE,
         degree_type_id: DEGREE_TYPE_EQUIVALENT,
-        initial_teacher_training_year_id: TEACHER_TRAINING_YEAR_2022,
-        preferred_education_phase_id: EDUCATION_PHASE_SECONDARY,
         phone_call_scheduled_at: "#{quota.start_at.strftime('%Y-%m-%dT%H:%M:%S')}.000Z",
         channel_id: nil,
         creation_channel_source_id: creation_channel_source_git_website,
         creation_channel_service_id: creation_channel_service_tta,
         creation_channel_activity_id: nil,
+        citizenship: CITIZENSHIP_NOT_UK,
+        visa_status: VISA_STATUS_WILL_NEED_VISA,
+        date_of_birth: nil
       })
+
       expect_sign_up_with_attributes(request_attributes)
 
       click_on "Complete sign up"
@@ -479,24 +506,20 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Do you have a degree?"
-      choose "I am not a UK citizen and have, or am studying for, an equivalent qualification"
+      choose "Yes"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Secondary"
+      expect(page).to have_css "h1", text: "Which country is your degree from?"
+      choose "Another country"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
-      select "Physics"
+      expect(page).to have_css "h1", text: "Are you a UK citizen?"
+      choose "Yes"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "When do you want to start your teacher training?"
-      select "2022"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Enter your date of birth"
-      fill_in_date_of_birth_step
-      click_on "Next step"
+      # expect(page).to have_css "h1", text: "Enter your date of birth"
+      # fill_in_date_of_birth_step
+      # click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
       choose "UK"
@@ -516,16 +539,15 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       request_attributes = uk_candidate_request_attributes({
         type_id: INTERESTED_IN_TEACHING,
-        preferred_teaching_subject_id: SUBJECT_PHYSICS,
         degree_status_id: DEGREE_STATUS_HAS_DEGREE,
         degree_type_id: DEGREE_TYPE_EQUIVALENT,
-        initial_teacher_training_year_id: TEACHER_TRAINING_YEAR_2022,
-        preferred_education_phase_id: EDUCATION_PHASE_SECONDARY,
         phone_call_scheduled_at: "#{quota.start_at.strftime('%Y-%m-%dT%H:%M:%S')}.000Z",
         channel_id: nil,
         creation_channel_source_id: creation_channel_source_git_website,
         creation_channel_service_id: creation_channel_service_tta,
         creation_channel_activity_id: nil,
+        citizenship: CITIZENSHIP_UK,
+        date_of_birth: nil
       })
       expect_sign_up_with_attributes(request_attributes)
 
@@ -1322,6 +1344,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
   def overseas_candidate_request_attributes(attributes = {})
     {
       country_id: "09f4c2e6-74f9-e811-a97a-000d3a2760f2",
+      accepted_policy_id: "123",
     }
     .merge(shared_request_attributes)
     .merge(attributes)
