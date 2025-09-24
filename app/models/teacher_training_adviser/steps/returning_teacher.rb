@@ -43,7 +43,12 @@ module TeacherTrainingAdviser::Steps
       @creation_channel_service_ids ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_contact_creation_channel_services.map { |obj| obj.id.to_i }
     end
 
-  private
+    def tta?
+      creation_channel_service_id == ReturningTeacher::TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
+    end
+
+
+    private
 
     def channel_id
       other_step(:identity).channel_id

@@ -9,6 +9,7 @@ module TeacherTrainingAdviser::Steps
 
     attribute :degree_status_id, :integer
     attribute :graduation_year, :integer
+    attribute :creation_channel_service_id, :integer
 
     validates :degree_status_id,
               presence: { message: "Choose a degree option from the list" },
@@ -27,6 +28,16 @@ module TeacherTrainingAdviser::Steps
     validate :graduation_year_not_too_far_in_the_future, if: :degree_in_progress?
 
     include FunnelTitle
+
+    def save
+      super
+
+      if reset_creation_channel_service_id?
+        # set the creation_channel_service_id based on degree status: final years follow the TTA whereas earlier years follow ETA
+        self.creation_channel_service_id = studying_final_year? ? ReturningTeacher::TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID : ReturningTeacher::ETA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
+      end
+      super
+    end
 
     def degree_status_options
       @degree_status_options ||= PickListItemsApiPresenter.new.get_qualification_degree_status
@@ -88,6 +99,32 @@ module TeacherTrainingAdviser::Steps
     end
 
   private
+    def reset_creation_channel_service_id?
+      # for users with a degree in progress, we should re-set the creation_channel_service_id if the user is in the default TTA funnel and a valid creation_channel_service_id hasn't already be provided
+      degree_in_progress? &&
+        (creation_channel_source_id.present? || creation_channel_activity_id.present? || channel_id.nil?) &&
+        (tta? || !creation_channel_service_id.in?(creation_channel_service_ids))
+    end
+
+    def channel_id
+      other_step(:identity).channel_id
+    end
+
+    def creation_channel_source_id
+      other_step(:identity).creation_channel_source_id
+    end
+
+    def creation_channel_activity_id
+      other_step(:identity).creation_channel_activity_id
+    end
+
+    def creation_channel_service_ids
+      @creation_channel_service_ids ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_contact_creation_channel_services.map { |obj| obj.id.to_i }
+    end
+
+    def tta?
+      other_step(:returning_teacher).tta?
+    end
 
     def graduation_year_not_in_the_past
       if graduation_year.present? && graduation_year < Time.current.year
