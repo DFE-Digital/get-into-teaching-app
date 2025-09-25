@@ -7,6 +7,7 @@ module TeacherTrainingAdviser
       first_name
       type_id
       degree_status_id
+      degree_type_id
       graduation_year
       sub_channel_id
       callback_offered
