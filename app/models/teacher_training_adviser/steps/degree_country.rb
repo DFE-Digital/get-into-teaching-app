@@ -7,15 +7,16 @@ module TeacherTrainingAdviser::Steps
     DEGREE_EQUIVALENT = 222_750_005
 
     attribute :degree_country_id, :string
-    attribute :degree_type_id
+    attribute :degree_type_id, :integer
 
     validates :degree_country_id, lookup_items: { method: :get_degree_countries }
+    validates :degree_type_id, inclusion: { in: [DEGREE, DEGREE_EQUIVALENT] }
 
     include FunnelTitle
 
     def degree_country_id=(value)
       super
-      set_degree_type
+      set_degree_type if value
     end
 
     def options
@@ -35,6 +36,8 @@ module TeacherTrainingAdviser::Steps
     def another_country?
       degree_country_id == ANOTHER_COUNTRY
     end
+
+    private
 
     def set_degree_type
       self.degree_type_id = another_country? ? DEGREE_EQUIVALENT : DEGREE

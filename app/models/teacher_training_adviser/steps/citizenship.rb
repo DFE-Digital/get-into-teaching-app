@@ -1,6 +1,7 @@
 module TeacherTrainingAdviser::Steps
   class Citizenship < ::GITWizard::Step
     UK_CITIZEN = 222_750_000
+    NON_UK_CITIZEN = 222_750_001
 
     attribute :citizenship, :integer
     validates :citizenship,
