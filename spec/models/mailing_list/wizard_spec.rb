@@ -6,9 +6,9 @@ describe MailingList::Wizard do
   subject { described_class.new wizardstore, "postcode" }
 
   let(:uuid) { SecureRandom.uuid }
-  let(:degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate) }
+  let(:degree_status_id) { build(:degree_status, :graduate_or_postgraduate).id }
   let(:inferred_degree_status) { :second_year }
-  let(:inferred_degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, inferred_degree_status) }
+  let(:inferred_degree_status_id) { build(:degree_status, inferred_degree_status).id }
   let(:consideration_journey_stage_id) { Crm::OptionSet.lookup_by_key(:consideration_journey_stages, :it_s_just_an_idea) }
   let(:preferred_teaching_subject_id) { Crm::TeachingSubject.lookup_by_key(:physics) }
   let(:graduated) { build(:situation, :graduated) }
@@ -147,7 +147,7 @@ describe MailingList::Wizard do
     end
 
     context "when not qualified for the welcome guide" do
-      let(:degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :not_yet_i_m_studying_for_one) }
+      let(:degree_status_id) { build(:degree_status, :not_yet_im_studying) }
       let(:variant) { nil }
 
       it "does not populate the welcome_guide_variant field" do

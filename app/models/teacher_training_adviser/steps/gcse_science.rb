@@ -16,6 +16,8 @@ module TeacherTrainingAdviser::Steps
 
     def skipped?
       gcse_maths_english_step = other_step(:gcse_maths_english)
+      degree_country_step = other_step(:degree_country)
+
       gcse_maths_english_skipped = gcse_maths_english_step.skipped?
       preferred_education_phase_id = other_step(:stage_interested_teaching).preferred_education_phase_id
       phase_is_secondary = preferred_education_phase_id == StageInterestedTeaching::OPTIONS[:secondary]
@@ -24,7 +26,7 @@ module TeacherTrainingAdviser::Steps
       no_gcse_maths_english = has_gcse_maths_and_english_id == GcseMathsEnglish::OPTIONS["No"] &&
         planning_to_retake_gcse_maths_and_english_id == RetakeGcseMathsEnglish::OPTIONS["No"]
 
-      gcse_maths_english_skipped || no_gcse_maths_english || phase_is_secondary
+      gcse_maths_english_skipped || no_gcse_maths_english || phase_is_secondary || degree_country_step.another_country?
     end
   end
 end

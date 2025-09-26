@@ -41,25 +41,23 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkCallback do
   end
 
   describe "#skipped?" do
-    it "returns false if UkAddress/HaveADegree steps were shown and degree_options is equivalent" do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
+    it "skipped if lives overseas" do
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::UkOrOverseas).to receive(:overseas?).and_return(true)
+      expect(subject).to be_skipped
+    end
+
+    it "skipped if degree status was skipped" do
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(true)
+      expect(subject).to be_skipped
+    end
+
+    it "skipped if has a UK degree" do
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:uk?).and_return(true)
+      expect(subject).to be_skipped
+    end
+
+    it "otherwise not skipped" do
       expect(subject).not_to be_skipped
-    end
-
-    it "returns true if UkAddress was skipped" do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(true)
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
-      expect(subject).to be_skipped
-    end
-
-    it "returns true if degree_options is not equivalent" do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:yes]
-      expect(subject).to be_skipped
     end
   end
 

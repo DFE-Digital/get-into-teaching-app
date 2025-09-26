@@ -1,0 +1,18 @@
+<%= f.govuk_collection_radio_buttons :citizenship,
+                                     f.object.citizenships,
+                                     :id,
+                                     ->(option) { format_option_value(option, "teacher_training_adviser_steps.citizenship.citizenship") },
+                                     ->(option) { format_option_hint(option, "teacher_training_adviser_steps.citizenship.citizenship") },
+                                     legend: { tag: "h1", text: t('helpers.label.teacher_training_adviser_steps_citizenship.citizenship', **Value.data) },
+                                     hint: { text: t('helpers.hint.teacher_training_adviser_steps_citizenship.citizenship', **Value.data) }
+%>
+
+<div class="non-uk-qualifications">
+  <%= render Content::ExpanderComponent.new(
+    title: "Check if you're a UK citizen",
+    text: "A UK citizen is someone who has the right to live and work in the UK without immigration restrictions and can apply for a UK passport. If you or your parents were born in the UK, you might automatically be a UK citizen.",
+    link_title: "Check your citizenship",
+    link_url: "https://www.gov.uk/check-british-citizenship",
+    expanded: false
+  ) %>
+</div>
