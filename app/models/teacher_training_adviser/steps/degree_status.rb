@@ -99,6 +99,7 @@ module TeacherTrainingAdviser::Steps
     end
 
   private
+
     def reset_creation_channel_service_id?
       # for users with a degree in progress, we should re-set the creation_channel_service_id if the user is in the default TTA funnel and a valid creation_channel_service_id hasn't already be provided
       degree_in_progress? &&

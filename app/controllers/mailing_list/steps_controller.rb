@@ -86,7 +86,7 @@ module MailingList
     end
 
     def degree_status_key(id)
-      degree_statuses.find{|item| item.id == id}.value if id
+      degree_statuses.find { |item| item.id == id }.value if id
     end
   end
 end

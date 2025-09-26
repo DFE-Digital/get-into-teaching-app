@@ -11,9 +11,9 @@ RSpec.describe TeacherTrainingAdviser::Steps::DegreeStatus do
   end
 
   describe "#skipped?" do
-    before {
+    before do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::ReturningTeacher).to receive(:returning_to_teaching).and_return(returning_to_teaching)
-    }
+    end
 
     context "when not a returning teacher" do
       let(:returning_to_teaching) { false }
@@ -31,8 +31,8 @@ RSpec.describe TeacherTrainingAdviser::Steps::DegreeStatus do
   describe "graduation_year" do
     before { instance.degree_status_id = described_class::DEGREE_IN_PROGRESS }
 
-    it { is_expected.not_to allow_values(nil, "abcd", 1234, Time.current.year - 1, Time.current.year + 11 ).for :graduation_year }
-    it { is_expected.to allow_values(Time.current.year + 1, Time.current.year + 9 ).for :graduation_year }
+    it { is_expected.not_to allow_values(nil, "abcd", 1234, Time.current.year - 1, Time.current.year + 11).for :graduation_year }
+    it { is_expected.to allow_values(Time.current.year + 1, Time.current.year + 9).for :graduation_year }
   end
 
   describe "degree_status_id" do
@@ -128,10 +128,12 @@ RSpec.describe TeacherTrainingAdviser::Steps::DegreeStatus do
         instance.graduation_year = 2025
       end
 
-      it { is_expected.to eq({
-        "degree_status_id" => "Not yet, I'm studying for one",
-        "graduation_year" => 2025
-        }) }
+      it {
+        is_expected.to eq({
+          "degree_status_id" => "Not yet, I'm studying for one",
+          "graduation_year" => 2025,
+        })
+      }
     end
 
     context "when degree_status_id is unset" do

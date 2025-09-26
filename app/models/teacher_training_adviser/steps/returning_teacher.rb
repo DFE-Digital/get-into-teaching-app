@@ -47,8 +47,7 @@ module TeacherTrainingAdviser::Steps
       creation_channel_service_id == ReturningTeacher::TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
     end
 
-
-    private
+  private
 
     def channel_id
       other_step(:identity).channel_id

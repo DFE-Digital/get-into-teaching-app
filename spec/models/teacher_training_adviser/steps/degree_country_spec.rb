@@ -35,9 +35,9 @@ RSpec.describe TeacherTrainingAdviser::Steps::DegreeCountry do
   end
 
   describe "#skipped?" do
-    before {
+    before do
       expect_any_instance_of(TeacherTrainingAdviser::Steps::ReturningTeacher).to receive(:returning_to_teaching).and_return(returning_to_teaching)
-    }
+    end
 
     context "when not a returning teacher" do
       let(:returning_to_teaching) { false }

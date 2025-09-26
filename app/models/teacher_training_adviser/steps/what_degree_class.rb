@@ -26,7 +26,6 @@ module TeacherTrainingAdviser::Steps
         (!degree_status_step.has_degree? && !degree_status_step.studying_final_year?)
     end
 
-
     def degree_in_progress?
       other_step(:degree_status).degree_in_progress?
     end

@@ -27,4 +27,3 @@ module TeacherTrainingAdviser::Steps
     end
   end
 end
-

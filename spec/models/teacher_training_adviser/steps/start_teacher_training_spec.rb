@@ -159,21 +159,21 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
       let(:degree_status_id) { TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_IN_PROGRESS }
 
       context "when the date is after graduation_cutoff (31 August) and before date_to_drop_current_year (17 September) (start of academic year)" do
-        let(:test_date) { Date.new(2025,9,16) }
+        let(:test_date) { Date.new(2025, 9, 16) }
         let(:graduation_year) { 2028 }
 
         it { expect(instance.inferred_year_id).to eql(graduation_year) }
       end
 
       context "when the date is after graduation_cutoff (31 August) and after date_to_drop_current_year (17 September) (start of academic year)" do
-        let(:test_date) { Date.new(2025,9,18) }
+        let(:test_date) { Date.new(2025, 9, 18) }
         let(:graduation_year) { 2028 }
 
         it { expect(instance.inferred_year_id).to eql(graduation_year) }
       end
 
       context "when the date is on or before graduation_cutoff (31 August) and before date_to_drop_current_year (17 September) (end of academic year)" do
-        let(:test_date) { Date.new(2026,8,31) }
+        let(:test_date) { Date.new(2026, 8, 31) }
         let(:graduation_year) { 2028 }
 
         it { expect(instance.inferred_year_id).to eql(graduation_year) }
@@ -184,21 +184,21 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
       let(:degree_status_id) { TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_IN_PROGRESS }
 
       context "when the date is after graduation_cutoff (31 August) and before date_to_drop_current_year (17 September) (start of academic year)" do
-        let(:test_date) { Date.new(2026,9,16) }
+        let(:test_date) { Date.new(2026, 9, 16) }
         let(:graduation_year) { 2028 }
 
         it { expect(instance.inferred_year_id).to eql(graduation_year) }
       end
 
       context "when the date is after graduation_cutoff (31 August) and after date_to_drop_current_year (17 September) (start of academic year)" do
-        let(:test_date) { Date.new(2026,9,18) }
+        let(:test_date) { Date.new(2026, 9, 18) }
         let(:graduation_year) { 2028 }
 
         it { expect(instance.inferred_year_id).to eql(graduation_year) }
       end
 
       context "when the date is on or before graduation_cutoff (31 August) and before date_to_drop_current_year (17 September) (end of academic year)" do
-        let(:test_date) { Date.new(2027,8,31) }
+        let(:test_date) { Date.new(2027, 8, 31) }
         let(:graduation_year) { 2028 }
 
         it { expect(instance.inferred_year_id).to eql(graduation_year) }
@@ -209,21 +209,21 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
       let(:degree_status_id) { TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_IN_PROGRESS }
 
       context "when the date is after graduation_cutoff (31 August) and before date_to_drop_current_year (17 September) (start of academic year)" do
-        let(:test_date) { Date.new(2027,9,16) }
+        let(:test_date) { Date.new(2027, 9, 16) }
         let(:graduation_year) { 2028 }
 
         it { expect(instance.inferred_year_id).to be_nil }
       end
 
       context "when the date is after graduation_cutoff (31 August) and after date_to_drop_current_year (17 September) (start of academic year)" do
-        let(:test_date) { Date.new(2027,9,18) }
+        let(:test_date) { Date.new(2027, 9, 18) }
         let(:graduation_year) { 2028 }
 
         it { expect(instance.inferred_year_id).to be_nil }
       end
 
       context "when the date is on or before graduation_cutoff (31 August) and before date_to_drop_current_year (17 September) (end of academic year)" do
-        let(:test_date) { Date.new(2028,8,31) }
+        let(:test_date) { Date.new(2028, 8, 31) }
         let(:graduation_year) { 2028 }
 
         it { expect(instance.inferred_year_id).to be_nil }
@@ -233,7 +233,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
     context "when not studying (HAS_DEGREE)" do
       let(:degree_status_id) { TeacherTrainingAdviser::Steps::DegreeStatus::HAS_DEGREE }
       let(:graduation_year) { nil }
-      let(:test_date) { Time.zone.today}
+      let(:test_date) { Time.zone.today }
 
       it { expect(instance.inferred_year_id).to be_nil }
     end
@@ -241,7 +241,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
     context "when not studying (NO_DEGREE)" do
       let(:degree_status_id) { TeacherTrainingAdviser::Steps::DegreeStatus::NO_DEGREE }
       let(:graduation_year) { nil }
-      let(:test_date) { Time.zone.today}
+      let(:test_date) { Time.zone.today }
 
       it { expect(instance.inferred_year_id).to be_nil }
     end

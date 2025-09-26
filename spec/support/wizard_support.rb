@@ -73,7 +73,7 @@ shared_context "with wizard data" do
   end
 
   let(:degree_countries) do
-    %i[uk another_country].map {|trait| build(:degree_country, trait) }
+    %i[uk another_country].map { |trait| build(:degree_country, trait) }
   end
 
   let(:locations) do

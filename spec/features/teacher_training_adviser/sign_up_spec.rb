@@ -21,7 +21,6 @@ VISA_STATUS_WILL_NEED_VISA = 222_750_001
 VISA_STATUS_NOT_SURE = 222_750_002
 
 RSpec.feature "Sign up for a teacher training adviser", type: :feature do
-
   include_context "with wizard data"
 
   let(:quota) do
@@ -170,7 +169,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         creation_channel_source_id: creation_channel_source_git_website,
         creation_channel_service_id: creation_channel_service_rtta,
         creation_channel_activity_id: creation_channel_activity_student_union,
-        citizenship: CITIZENSHIP_UK
+        citizenship: CITIZENSHIP_UK,
       })
       expect_sign_up_with_attributes(request_attributes)
 
@@ -413,7 +412,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         creation_channel_service_id: creation_channel_service_rtta,
         creation_channel_activity_id: nil,
         citizenship: CITIZENSHIP_NOT_UK,
-        visa_status: VISA_STATUS_HAVE_VISA
+        visa_status: VISA_STATUS_HAVE_VISA,
       })
       expect_sign_up_with_attributes(request_attributes)
 
@@ -479,7 +478,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         creation_channel_source_id: creation_channel_source_git_website,
         creation_channel_service_id: creation_channel_service_tta,
         creation_channel_activity_id: nil,
-        date_of_birth: '1966-03-24'
+        date_of_birth: "1966-03-24",
       })
 
       expect_sign_up_with_attributes(request_attributes)
@@ -534,7 +533,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         creation_channel_source_id: creation_channel_source_git_website,
         creation_channel_service_id: creation_channel_service_tta,
         creation_channel_activity_id: nil,
-        date_of_birth: '1966-03-24',
+        date_of_birth: "1966-03-24",
         preferred_education_phase_id: nil,
         address_postcode: nil,
       })
@@ -595,7 +594,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
           creation_channel_source_id: creation_channel_source_git_website,
           creation_channel_service_id: creation_channel_service_tta,
           creation_channel_activity_id: nil,
-          date_of_birth: '1966-03-24',
+          date_of_birth: "1966-03-24",
         })
         expect_sign_up_with_attributes(request_attributes)
 
@@ -647,9 +646,9 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
           creation_channel_source_id: creation_channel_source_git_website,
           creation_channel_service_id: creation_channel_service_tta,
           creation_channel_activity_id: nil,
-          date_of_birth: '1966-03-24',
+          date_of_birth: "1966-03-24",
           preferred_education_phase_id: nil,
-          address_postcode: nil
+          address_postcode: nil,
         })
         expect_sign_up_with_attributes(request_attributes)
 
@@ -901,7 +900,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         subject_taught_id: SUBJECT_PSYCHOLOGY,
         preferred_teaching_subject_id: SUBJECT_PHYSICS,
         teacher_id: "5678",
-        citizenship: CITIZENSHIP_UK
+        citizenship: CITIZENSHIP_UK,
       })
       expect_sign_up_with_attributes(request_attributes)
 
@@ -969,7 +968,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
           stage_taught_id: EDUCATION_PHASE_PRIMARY,
           preferred_education_phase_id: EDUCATION_PHASE_PRIMARY,
           teacher_id: "1234",
-          citizenship: CITIZENSHIP_UK
+          citizenship: CITIZENSHIP_UK,
         },
       )
       expect_sign_up_with_attributes(request_attributes)
