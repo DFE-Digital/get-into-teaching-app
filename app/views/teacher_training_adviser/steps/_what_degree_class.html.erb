@@ -11,10 +11,11 @@
               end
 %>
 
-<%= f.govuk_collection_select :uk_degree_grade_id,
+<%= f.govuk_collection_radio_buttons :uk_degree_grade_id,
   f.object.class.options,
-  :last,
-  :first,
-  label: { text: label_text, tag: "h1", size: "m" },
+  :id,
+   ->(option) { format_option_value(option, "teacher_training_adviser_steps.what_degree_class.uk_degree_grade_id") },
+   ->(option) { format_option_hint(option, "teacher_training_adviser_steps.what_degree_class.uk_degree_grade_id") },
+  legend: { text: label_text, tag: "h1", size: "m" },
   hint: { text: hint_text }
 %>
