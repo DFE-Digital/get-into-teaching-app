@@ -34,11 +34,11 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
-      uk_address_skipped = other_step(:uk_address).skipped?
+      live_overseas = other_step(:uk_or_overseas).overseas?
       degree_status_skipped = other_step(:degree_status).skipped?
-      equivalent_degree = other_step(:degree_country).another_country?
+      uk_degree = other_step(:degree_country).uk?
 
-      uk_address_skipped || degree_status_skipped || !equivalent_degree
+      live_overseas || degree_status_skipped || uk_degree
     end
 
     def title_attribute

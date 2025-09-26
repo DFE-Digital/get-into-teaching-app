@@ -37,6 +37,10 @@ module TeacherTrainingAdviser::Steps
       degree_country_id == ANOTHER_COUNTRY
     end
 
+    def uk?
+      degree_country_id == UK
+    end
+
     private
 
     def set_degree_type

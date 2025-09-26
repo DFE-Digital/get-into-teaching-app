@@ -27,7 +27,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
-      other_step(:uk_or_overseas).uk_or_overseas == UkOrOverseas::OPTIONS[:uk]
+      other_step(:uk_or_overseas).uk?
     end
 
     def reviewable_answers

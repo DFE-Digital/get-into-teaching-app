@@ -41,24 +41,23 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkCallback do
   end
 
   describe "#skipped?" do
-    it "not skipped if UkAddress/DegreeStatus steps were shown and has an equivalent degree" do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
-      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:another_country?).and_return(true)
+    it 'skipped if lives overseas' do
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::UkOrOverseas).to receive(:overseas?).and_return(true)
+      expect(subject).to be_skipped
+    end
+
+    it 'skipped if degree status was skipped' do
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(true)
+      expect(subject).to be_skipped
+    end
+
+    it 'skipped if has a UK degree' do
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:uk?).and_return(true)
+      expect(subject).to be_skipped
+    end
+
+    it 'otherwise not skipped' do
       expect(subject).not_to be_skipped
-    end
-
-    it "skipped if UkAddress was skipped" do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(true)
-      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:another_country?).and_return(true)
-      expect(subject).to be_skipped
-    end
-
-    it "skipped if degree status was skipped" do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::UkAddress).to receive(:skipped?).and_return(false)
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
-      expect(subject).to be_skipped
     end
   end
 

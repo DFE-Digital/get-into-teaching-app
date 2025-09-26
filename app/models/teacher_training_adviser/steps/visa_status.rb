@@ -16,7 +16,8 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
-      other_step(:citizenship).uk_citizen?
+      citizenship_step = other_step(:citizenship)
+      citizenship_step.skipped? || citizenship_step.uk_citizen?
     end
 
     def reviewable_answers

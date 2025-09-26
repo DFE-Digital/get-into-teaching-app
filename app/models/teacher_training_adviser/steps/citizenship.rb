@@ -27,5 +27,10 @@ module TeacherTrainingAdviser::Steps
         "citizenship" => citizenship ? I18n.t("helpers.answer.teacher_training_adviser_steps.citizenship.citizenship.#{citizenship}", **Value.data) : nil,
       }
     end
+
+    def skipped?
+      degree_country_step = other_step(:degree_country)
+      degree_country_step.another_country?
+    end
   end
 end

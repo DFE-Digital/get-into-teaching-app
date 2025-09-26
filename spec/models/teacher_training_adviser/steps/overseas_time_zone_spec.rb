@@ -63,7 +63,12 @@ RSpec.describe TeacherTrainingAdviser::Steps::OverseasTimeZone do
     end
 
     it "skipped if degree country is a UK degree" do
-      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:another_country?).and_return(false)
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:uk?).and_return(true)
+      expect(subject).to be_skipped
+    end
+
+    it 'skipped if degree status skipped' do
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(true)
       expect(subject).to be_skipped
     end
   end

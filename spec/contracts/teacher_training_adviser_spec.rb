@@ -162,28 +162,22 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         expect(page).to have_text("you're signed up")
       end
 
-      it "equivalent degree, not uk citizen, needs a visa, lives in uk, book callback" do
+      it "equivalent degree, lives in uk, book callback" do
         submit_choice_step("No", :returning_teacher)
         submit_choice_step("Yes", :degree_status)
         submit_choice_step("Another country", :degree_country)
-        submit_choice_step("No", :citizenship)
-        submit_choice_step("No, I will need to apply for a visa", :visa_status)
+        submit_date_of_birth_step(Date.new(1974, 3, 16))
         submit_choice_step("UK", :uk_or_overseas)
-        submit_uk_address_step(
-          postcode: "TE7 5TR",
-        )
         submit_uk_callback_step("123456789", "1:00pm to 1:30pm")
         submit_review_answers_step
         expect(page).to have_text("We'll give you a call")
       end
 
-      it "equivalent degree, not a uk citizen, has visa, lives overseas, book callback" do
+      it "equivalent degree, lives overseas, book callback" do
         submit_choice_step("No", :returning_teacher)
         submit_choice_step("Yes", :degree_status)
         submit_choice_step("Another country", :degree_country)
-        submit_choice_step("No", :citizenship)
-        submit_choice_step("Yes, I have a visa, pre-settled status or leave to remain", :visa_status)
-        # submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_date_of_birth_step(Date.new(1974, 3, 16))
         submit_choice_step("Overseas", :uk_or_overseas)
         submit_select_step("China", :overseas_country)
         submit_overseas_time_zone_step("447584736574", "(GMT-04:00) Caracas")

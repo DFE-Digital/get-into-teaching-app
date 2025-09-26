@@ -43,19 +43,23 @@ module TeacherTrainingAdviser
       Steps::SubjectInterestedTeaching,
       Steps::StartTeacherTraining,
       Steps::SubjectLikeToTeach,
+
       Steps::DateOfBirth,
 
       Steps::Citizenship,
       Steps::VisaStatus,
 
       Steps::UkOrOverseas,
+
       Steps::UkAddress,
       Steps::UkTelephone,
       Steps::OverseasCountry,
       Steps::OverseasTelephone,
+
       Steps::UkCallback,
       Steps::OverseasTimeZone,
       Steps::OverseasCallback,
+
       Steps::ReviewAnswers,
     ].freeze
 

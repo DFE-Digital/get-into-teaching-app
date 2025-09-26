@@ -12,6 +12,10 @@ module TeacherTrainingAdviser::Steps
       uk_or_overseas == OPTIONS[:uk]
     end
 
+    def overseas?
+      uk_or_overseas == OPTIONS[:overseas]
+    end
+
     def reviewable_answers
       {
         "uk_or_overseas" => uk_or_overseas,
