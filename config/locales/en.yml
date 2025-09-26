@@ -929,6 +929,7 @@ en:
       mailing_list_steps:
         life_stage:
           situation:
+            222750003: "For example, not yet established in a career or found the right career path"
             222750006: "For example, parental leave or in between jobs"
       mailing_list_signup:
         address_postcode: |-
