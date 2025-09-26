@@ -25,11 +25,8 @@ module TeacherTrainingAdviser::Steps
     def skipped?
       return true if super
 
-      overseas_country_skippped = other_step(:overseas_country).skipped?
-      degree_options = other_step(:have_a_degree).degree_options
-      equivalent_degree = degree_options == HaveADegree::DEGREE_OPTIONS[:equivalent]
-
-      overseas_country_skippped || equivalent_degree
+      other_step(:overseas_country).skipped?
+      # TODO: Add additional logic to display/skip this step
     end
 
     def title_attribute

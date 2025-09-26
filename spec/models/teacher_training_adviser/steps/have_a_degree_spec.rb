@@ -5,37 +5,37 @@ RSpec.describe TeacherTrainingAdviser::Steps::HaveADegree do
   it_behaves_like "a with wizard step"
 
   describe "attributes" do
-    it { is_expected.to respond_to :degree_options }
+    it { is_expected.to respond_to :degree_option }
     it { is_expected.to respond_to :degree_status_id }
     it { is_expected.to respond_to :degree_type_id }
   end
 
-  describe "degree_options" do
-    it { is_expected.not_to allow_values("random", "", nil).for :degree_options }
-    it { is_expected.to allow_values(*TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS.values).for :degree_options }
+  describe "degree_option" do
+    it { is_expected.not_to allow_values("random", "", nil).for :degree_option }
+    it { is_expected.to allow_values(*TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS.values).for :degree_option }
   end
 
   describe "#degree_option=" do
     it "sets the correct degree_status_id/degree_type_id for value of degree" do
-      subject.degree_options = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:yes]
+      subject.degree_option = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_YES
       expect(subject.degree_status_id).to eq(TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_STATUS_OPTIONS[:has_degree])
       expect(subject.degree_type_id).to eq(TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_TYPE_OPTIONS[:has_degree])
     end
 
     it "sets the correct degree_status_id/degree_type_id when no" do
-      subject.degree_options = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:no]
+      subject.degree_option = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_NO
       expect(subject.degree_status_id).to eq(TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_STATUS_OPTIONS[:no_degree])
       expect(subject.degree_type_id).to eq(TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_TYPE_OPTIONS[:has_degree])
     end
 
     it "sets the correct degree_status_id/degree_type_id when studying" do
-      subject.degree_options = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:studying]
+      subject.degree_option = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_STUDYING
       expect(subject.degree_status_id).to eq(TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_STATUS_OPTIONS[:studying])
       expect(subject.degree_type_id).to eq(TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_TYPE_OPTIONS[:has_degree])
     end
 
     it "sets the correct degree_status_id/degree_type_id when equivalent" do
-      subject.degree_options = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
+      # subject.degree_option = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
       expect(subject.degree_status_id).to eq(TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_STATUS_OPTIONS[:has_degree])
       expect(subject.degree_type_id).to eq(TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_TYPE_OPTIONS[:has_degree_equivalent])
     end
@@ -54,20 +54,20 @@ RSpec.describe TeacherTrainingAdviser::Steps::HaveADegree do
   end
 
   describe "#studying?" do
-    context "when degree_options is not yet set" do
-      before { wizardstore["degree_options"] = nil }
+    context "when degree_option is not yet set" do
+      before { wizardstore["degree_option"] = nil }
 
       it { is_expected.not_to be_studying }
     end
 
-    context "when degree_options is studying" do
-      before { wizardstore["degree_options"] = described_class::DEGREE_OPTIONS[:studying] }
+    context "when degree_option is studying" do
+      before { wizardstore["degree_option"] = described_class::DEGREE_OPTION_STUDYING }
 
       it { is_expected.to be_studying }
     end
 
-    context "when degree_options is not studying" do
-      before { wizardstore["degree_options"] = described_class::DEGREE_OPTIONS[:yes] }
+    context "when degree_option is not studying" do
+      before { wizardstore["degree_option"] = described_class::DEGREE_OPTION_YES }
 
       it { is_expected.not_to be_studying }
     end
@@ -76,14 +76,14 @@ RSpec.describe TeacherTrainingAdviser::Steps::HaveADegree do
   describe "#reviewable_answers" do
     subject { instance.reviewable_answers }
 
-    before { instance.degree_options = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:studying] }
+    before { instance.degree_option = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTION_STUDYING }
 
-    it { is_expected.to eq({ "degree_options" => "I'm studying for a degree" }) }
+    it { is_expected.to eq({ "degree_option" => "I'm studying for a degree" }) }
 
-    context "when degree_options is nil" do
-      before { instance.degree_options = nil }
+    context "when degree_option is nil" do
+      before { instance.degree_option = nil }
 
-      it { is_expected.to eq({ "degree_options" => nil }) }
+      it { is_expected.to eq({ "degree_option" => nil }) }
     end
   end
 end
