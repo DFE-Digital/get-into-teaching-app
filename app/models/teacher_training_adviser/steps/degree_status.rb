@@ -147,27 +147,3 @@ module TeacherTrainingAdviser::Steps
     end
   end
 end
-
-# attribute :degree_type_id, :integer
-# QUALIFICATION_TYPE_HAS_DEGREE = 222_750_000
-# QUALIFICATION_TYPE_HAS_DEGREE_EQUIVALENT = 222_750_005
-
-# def degree_status_id=(value)
-#   super
-  # NB the old code to set degree_type_id was:
-  # * if the user chose "I am not a UK citizen and have, or am studying for, an equivalent qualification", we
-  #   would set degree_type_id to be HAS_DEGREE_EQUIVALENT=222_750_005
-  # * otherwise, we would set degree_type_id to be HAS_DEGREE=222_750_000
-  # this does not seem to be correct!
-#
-#   self.degree_type_id = case value
-#                         when DEGREE_STATUS_HAS_DEGREE
-#                           QUALIFICATION_TYPE_HAS_DEGREE
-#
-#                         when DEGREE_STATUS_IN_PROGRESS
-#
-#
-#                         when DEGREE_STATUS_NO_DEGREE
-#
-#                         end
-# end

@@ -86,7 +86,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def before_academic_year_end?
-      # There is a small window between 1st September and the threshold when
+      # NB: academic year end (31st August) occurs before the cycle threshold (17th September)
       Time.zone.today <= academic_year_cutoff
     end
 
