@@ -12,7 +12,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::DegreeStatus do
 
   describe "#skipped?" do
     before do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::ReturningTeacher).to receive(:returning_to_teaching).and_return(returning_to_teaching)
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::ReturningTeacher).to receive(:returning_to_teaching).and_return(returning_to_teaching)
     end
 
     context "when not a returning teacher" do

@@ -1,8 +1,8 @@
 module TeacherTrainingAdviser::Steps
   class DegreeCountry < GITWizard::Step
     include ApiOptions
-    UK = "72f5c2e6-74f9-e811-a97a-000d3a2760f2"
-    ANOTHER_COUNTRY = "6f9e7b81-e44d-f011-877a-00224886d23e"
+    UK = "72f5c2e6-74f9-e811-a97a-000d3a2760f2".freeze
+    ANOTHER_COUNTRY = "6f9e7b81-e44d-f011-877a-00224886d23e".freeze
     DEGREE = 222_750_000
     DEGREE_EQUIVALENT = 222_750_005
 

@@ -8,7 +8,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::NoDegree do
 
   describe "#skipped?" do
     before do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(degree_status_skipped)
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(degree_status_skipped)
       allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:degree_status_id).and_return(degree_status_id)
     end
 

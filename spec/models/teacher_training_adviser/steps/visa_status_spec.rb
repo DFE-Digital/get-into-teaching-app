@@ -18,7 +18,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::VisaStatus do
 
   describe "#skipped?" do
     before do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::Citizenship).to receive(:uk_citizen?).and_return(uk_citizen)
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::Citizenship).to receive(:uk_citizen?).and_return(uk_citizen)
     end
 
     context "when not a uk citizen" do
