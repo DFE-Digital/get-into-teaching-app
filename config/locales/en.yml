@@ -860,6 +860,9 @@ en:
         title: "You need to have or be studying towards a degree to sign up for an adviser"
       teacher_training_adviser_steps_not_eligible:
         title: "Sorry, you are not eligible for this service"
+      teacher_training_adviser_steps_required_degree_class:
+        title_predicted: "Your predicted degree grade must be a 2:2 or higher to get an adviser"
+        title_achieved: "Your achieved degree grade must be a 2:2 or higher to get an adviser"
 
       teacher_training_adviser_feedback:
         unsuccessful_visit_explanation: "Give details"

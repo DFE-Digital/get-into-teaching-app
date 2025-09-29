@@ -2,6 +2,7 @@ module TeacherTrainingAdviser::Steps
   class WhatDegreeClass < GITWizard::Step
     extend ApiOptions
     attribute :uk_degree_grade_id, :integer
+    DEGREE_GRADE_2_2_OR_ABOVE = [222_750_000, 222_750_001, 222_750_002, 222_750_003].freeze # TODO: should we include / exclude "Not applicable" ?
 
     include FunnelTitle
 
@@ -36,6 +37,10 @@ module TeacherTrainingAdviser::Steps
       else
         "uk_degree_grade_id.graduated"
       end
+    end
+
+    def degree_grade_2_2_or_above?
+      DEGREE_GRADE_2_2_OR_ABOVE.include?(uk_degree_grade_id)
     end
   end
 end
