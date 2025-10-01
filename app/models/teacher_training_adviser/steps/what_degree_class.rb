@@ -26,9 +26,9 @@ module TeacherTrainingAdviser::Steps
     end
 
     def reviewable_answers
-      super.tap do |answers|
-        answers["uk_degree_grade_id"] = self.class.options.key(uk_degree_grade_id)
-      end
+      {
+        "uk_degree_grade_id" => uk_degree_grade_id ? I18n.t("helpers.answer.teacher_training_adviser_steps.what_degree_class.uk_degree_grade_id.#{uk_degree_grade_id}", **Value.data) : nil,
+      }
     end
 
     def title_attribute

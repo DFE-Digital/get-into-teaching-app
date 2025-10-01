@@ -3,19 +3,17 @@ require "rails_helper"
 RSpec.describe TeacherTrainingAdviser::Steps::WhatDegreeClass do
   include_context "with a TTA wizard step"
   it_behaves_like "a with wizard step"
-  it_behaves_like "a wizard step that exposes API pick list items as options",
-                  :get_qualification_uk_degree_grades, described_class::OMIT_GRADE_IDS
 
   describe "attributes" do
     it { is_expected.to respond_to :uk_degree_grade_id }
   end
 
   describe "#uk_degree_grade_id" do
+    let(:upper_second) { build(:degree_class, :upper_second) }
     it "allows a valid uk_degree_grade_id" do
-      grade = GetIntoTeachingApiClient::PickListItem.new(id: described_class.options["Not applicable"])
-      allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-        receive(:get_qualification_uk_degree_grades) { [grade] }
-      expect(subject).to allow_value(grade.id).for :uk_degree_grade_id
+      allow_any_instance_of(PickListItemsApiPresenter).to \
+        receive(:get_qualification_uk_degree_grades) { [upper_second] }
+      expect(subject).to allow_value(upper_second.id).for :uk_degree_grade_id
     end
 
     it { is_expected.not_to allow_values("", nil, 456).for :uk_degree_grade_id }
@@ -56,14 +54,14 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatDegreeClass do
   describe "#reviewable_answers" do
     subject { instance.reviewable_answers }
 
-    let(:pick_list_item) { GetIntoTeachingApiClient::PickListItem.new(id: 123, value: "Value") }
+    let(:upper_second) { build(:degree_class, :upper_second) }
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-        receive(:get_qualification_uk_degree_grades) { [pick_list_item] }
-      instance.uk_degree_grade_id = pick_list_item.id
+        receive(:get_qualification_uk_degree_grades) { [upper_second] }
+      instance.uk_degree_grade_id = upper_second.id
     end
 
-    it { is_expected.to eq({ "uk_degree_grade_id" => "Value" }) }
+    it { is_expected.to eq({ "uk_degree_grade_id" => "Upper second-class honours (2:1)" }) }
   end
 end
