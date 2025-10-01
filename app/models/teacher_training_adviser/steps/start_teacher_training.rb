@@ -70,10 +70,10 @@ module TeacherTrainingAdviser::Steps
     end
 
     def filter_items(items)
-      items.select do |item|
+      items.select { |item|
         item.id == NOT_SURE_ID ||
           item.value.to_i.between?(first_year, first_year + number_of_years)
-      end
+      }.sort_by(&:value)
     end
 
     def first_year
