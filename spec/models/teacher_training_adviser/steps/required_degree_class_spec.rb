@@ -10,11 +10,13 @@ RSpec.describe TeacherTrainingAdviser::Steps::RequiredDegreeClass do
     before do
       allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(degree_status_skipped)
       allow_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:no_degree?).and_return(no_degree)
+      allow_any_instance_of(TeacherTrainingAdviser::Steps::WhatDegreeClass).to receive(:skipped?).and_return(what_degree_class_skipped)
       allow_any_instance_of(TeacherTrainingAdviser::Steps::WhatDegreeClass).to receive(:degree_grade_2_2_or_above?).and_return(degree_grade_2_2_or_above)
     end
 
     let(:degree_status_skipped) { false }
     let(:no_degree) { false }
+    let(:what_degree_class_skipped) { false }
     let(:degree_grade_2_2_or_above) { false }
 
     context "when DegreeStatus is skipped" do
@@ -25,6 +27,12 @@ RSpec.describe TeacherTrainingAdviser::Steps::RequiredDegreeClass do
 
     context "when no_degree?" do
       let(:no_degree) { true }
+
+      it { is_expected.to be_skipped }
+    end
+
+    context "when WhatDegreeClass is skipped" do
+      let(:what_degree_class_skipped) { true }
 
       it { is_expected.to be_skipped }
     end

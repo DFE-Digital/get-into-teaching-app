@@ -760,7 +760,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What degree grade are you predicted to get?"
-      select "2:2"
+      choose "Lower second-class honours (2:2)"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
@@ -1021,7 +1021,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What grade is your degree?"
-      select "2:2"
+      choose "Lower second-class honours (2:2)"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
@@ -1072,7 +1072,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What grade is your degree?"
-      select "2:2"
+      choose "Lower second-class honours (2:2)"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
@@ -1115,7 +1115,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What grade is your degree?"
-      select "2:2"
+      choose "Lower second-class honours (2:2)"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"

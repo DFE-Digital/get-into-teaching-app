@@ -9,7 +9,7 @@ module TeacherTrainingAdviser::Steps
     def skipped?
       degree_status_step = other_step(:degree_status)
       what_degree_class_step = other_step(:what_degree_class)
-      degree_status_step.skipped? || degree_status_step.no_degree? || what_degree_class_step.degree_grade_2_2_or_above?
+      degree_status_step.skipped? || degree_status_step.no_degree? || what_degree_class_step.skipped? || what_degree_class_step.degree_grade_2_2_or_above?
     end
 
     def title_attribute

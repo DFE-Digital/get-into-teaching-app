@@ -87,7 +87,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_choice_step("Yes", :degree_status)
         submit_choice_step("United Kingdom", :degree_country)
         submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
-        submit_select_step("2:1", :what_degree_class)
+        submit_choice_step("Upper second-class honours (2:1)", :what_degree_class)
         submit_choice_step("Primary", :stage_interested_teaching)
         submit_choice_step("Yes", :gcse_maths_english)
         submit_choice_step("Yes", :gcse_science)
@@ -108,7 +108,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_choice_step("Yes", :degree_status)
         submit_choice_step("United Kingdom", :degree_country)
         submit_fill_in_step("What subject is your degree?", "Mathematics", :what_subject_degree)
-        submit_select_step("Not applicable", :what_degree_class)
+        submit_choice_step("Not applicable [or other?]", :what_degree_class)
         submit_choice_step("Secondary", :stage_interested_teaching)
         submit_choice_step("No", :gcse_maths_english)
         submit_choice_step("Yes", :retake_gcse_maths_english)
@@ -146,7 +146,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_graduation_year_step(2021)
         submit_choice_step("United Kingdom", :degree_country)
         submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
-        submit_select_step("First class", :what_degree_class)
+        submit_choice_step("First-class honours", :what_degree_class)
         submit_choice_step("Primary", :stage_interested_teaching)
         submit_choice_step("No", :gcse_maths_english)
         submit_choice_step("Yes", :retake_gcse_maths_english)
@@ -243,7 +243,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         click_on_continue
 
         expect_current_step(:what_degree_class)
-        expect(page).to have_select("What grade is your degree?", selected: "First class")
+        expect(page).to have_checked_field("First-class honours")
         click_on_continue
 
         expect_current_step(:stage_interested_teaching)
