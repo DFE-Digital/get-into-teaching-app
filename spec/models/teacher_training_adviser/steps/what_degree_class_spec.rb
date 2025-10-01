@@ -10,6 +10,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatDegreeClass do
 
   describe "#uk_degree_grade_id" do
     let(:upper_second) { build(:degree_class, :upper_second) }
+
     it "allows a valid uk_degree_grade_id" do
       allow_any_instance_of(PickListItemsApiPresenter).to \
         receive(:get_qualification_uk_degree_grades) { [upper_second] }

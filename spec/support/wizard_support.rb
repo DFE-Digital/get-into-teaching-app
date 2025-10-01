@@ -158,4 +158,3 @@ shared_examples "with a wizard step that exposes API lookup items as options" do
     end
   end
 end
-
