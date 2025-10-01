@@ -754,12 +754,12 @@ en:
             222750002: "Not sure"
         what_degree_class:
           uk_degree_grade_id:
-            222750000: "Not applicable [or other?]"
+            222750000: "Other"
             222750001: "First-class honours"
             222750002: "Upper second-class honours (2:1)"
             222750003: "Lower second-class honours (2:2)"
-            222750004: "Third class honours [or below?]"
-            222750005: "Pass [grade unknown?]"
+            222750004: "Third-class honours"
+            222750005: "Pass"
 
     label:
       wizard_steps_authenticate:
@@ -795,8 +795,6 @@ en:
         subject_taught_id: "Which subject did you train to teach?"
       teacher_training_adviser_steps_subject_interested_teaching:
         preferred_teaching_subject_id: "Select the subject you're most interested in teaching"
-      teacher_training_adviser_steps_start_teacher_training:
-        initial_teacher_training_year_id: "When do you want to start your teacher training?"
       teacher_training_adviser_steps_citizenship:
         citizenship: "Are you a UK citizen?"
       teacher_training_adviser_steps_visa_status:
@@ -1029,6 +1027,8 @@ en:
         has_paid_experience_in_uk: "Do you have paid teaching experience in the UK of at least one term?"
       teacher_training_adviser_steps_degree_status:
         degree_status_id: "Do you have a degree?"
+      teacher_training_adviser_steps_start_teacher_training:
+        initial_teacher_training_year_id: "When do you want to start your teacher training?"
       teacher_training_adviser_steps_degree_country:
         degree_country_id: "Which country is your degree from?"
       teacher_training_adviser_steps_train_to_teach_in_uk:

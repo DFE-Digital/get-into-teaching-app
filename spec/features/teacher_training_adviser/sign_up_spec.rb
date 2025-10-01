@@ -776,7 +776,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "When do you want to start your teacher training?"
-      select "2022"
+      choose "2022"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Enter your date of birth"
