@@ -35,6 +35,7 @@ module TeacherTrainingAdviser
       Steps::WhatSubjectDegree,
       Steps::WhatDegreeClass,
       Steps::RequiredDegreeClass,
+      Steps::LifeStage,
       Steps::StageInterestedTeaching,
       Steps::GcseMathsEnglish,
       Steps::RetakeGcseMathsEnglish,

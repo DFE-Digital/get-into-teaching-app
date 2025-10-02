@@ -362,6 +362,10 @@ en:
       degree_subject:
         title: "Which subject is your degree?"
         change: "the subject of your degree"
+    life_stage:
+      situation:
+        title: "How would you describe your current situation?"
+        change: "your current situation"
 
   activerecord:
     errors:
@@ -760,6 +764,13 @@ en:
             222750003: "Lower second-class honours (2:2)"
             222750004: "Third-class honours"
             222750005: "Pass"
+        life_stage:
+          situation:
+            222750002: "Exploring options for my first career"
+            222750003: "Graduated and exploring my career options"
+            222750004: "Considering changing my existing career"
+            222750005: "Teaching assistant or unqualified teacher in a school"
+            222750006: "Not currently working"
 
     label:
       wizard_steps_authenticate:
@@ -813,6 +824,8 @@ en:
         uk_or_overseas_options:
           UK: "UK"
           Overseas: "Overseas"
+      teacher_training_adviser_steps_life_stage:
+        situation: "How would you describe your current situation?"
       teacher_training_adviser_steps_stage_interested_teaching:
         preferred_education_phase_id_options:
           222750000: "Primary"
@@ -951,6 +964,11 @@ en:
         visa_status: "You'll find out how to become a teacher based on your circumstances."
       mailing_list_steps_location:
         location: "You'll find out how to become a teacher based on your circumstances."
+      teacher_training_adviser_steps:
+        life_stage:
+          situation:
+            222750003: "For example, not yet established in a career or found the right career path"
+            222750006: "For example, parental leave or in between jobs"
 
       teacher_training_adviser_steps_what_subject_degree:
         degree_subject: "Enter your degree subject. When you start entering your subject, you can select a suggested option from the list, or continue to enter your subject in full."
@@ -962,6 +980,8 @@ en:
           Your adviser can talk to you by text and WhatsApp, as well as by
           phone. Giving your phone number is the easiest way to talk to an
           adviser.
+      teacher_training_adviser_steps_life_stage:
+        situation: "Select the option that best describes your situation."
       teacher_training_adviser_steps_start_teacher_training:
         initial_teacher_training_year_id: "Choose the year you would like to start your teacher training."
       teacher_training_adviser_steps_stage_interested_teaching:

@@ -26,6 +26,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         TeacherTrainingAdviser::Steps::WhatSubjectDegree,
         TeacherTrainingAdviser::Steps::WhatDegreeClass,
         TeacherTrainingAdviser::Steps::RequiredDegreeClass,
+        TeacherTrainingAdviser::Steps::LifeStage,
         TeacherTrainingAdviser::Steps::StageInterestedTeaching,
         TeacherTrainingAdviser::Steps::GcseMathsEnglish,
         TeacherTrainingAdviser::Steps::RetakeGcseMathsEnglish,
