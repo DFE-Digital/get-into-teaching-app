@@ -30,7 +30,7 @@ cta_arrow_link:
 inset_text:
   funding-holding-message:
     text: |-
-      Financial support for courses starting between September 2025 and July 2026 will be announced soon.
+      Bursaries and scholarships for courses starting between September 2026 and July 2027 will be announced soon.
 ---
 
 Most non-UK citizens will not be eligible for financial support from the UK government to help with teacher training.
