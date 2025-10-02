@@ -67,7 +67,7 @@ You can choose to specialise in [teaching children with special educational need
 
 Talk to your training provider to find out what you can train to teach.
 
-You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
+You could also receive a tax-free bursary or scholarship to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
 $bursaries$
 

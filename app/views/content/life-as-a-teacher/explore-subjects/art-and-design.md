@@ -4,8 +4,6 @@ subject: art and design
 title_paragraph: |-
   <p>
   Teaching art and design opens up a world of creativity. When pupils create, they learn to take risks, embrace mistakes, and persevere to bring their ideas to life.</p>
-  <p>
-  Tax-free bursaries are available for eligible trainee art and design teachers.</p>
 description: |-
     Explore what's involved in becoming an art and design teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"
