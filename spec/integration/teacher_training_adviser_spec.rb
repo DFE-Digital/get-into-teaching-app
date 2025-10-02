@@ -31,14 +31,10 @@ RSpec.describe "Teacher Training Adviser integration tests", :integration, :mech
 
   def complete_sign_up
     submit_label_step("No", :returning_teacher)
-    submit_label_step("I am not a UK citizen and have, or am studying for, an equivalent qualification", :have_a_degree)
-    submit_label_step("Primary", :stage_interested_teaching)
-    submit_select_step("Not sure", :start_teacher_training)
+    submit_label_step("Yes", :degree_status)
+    submit_label_step("Another country", :degree_country)
     submit_date_of_birth_step(Date.new(1974, 3, 16))
     submit_label_step("UK", :uk_or_overseas)
-    submit_uk_address_step(
-      postcode: "TE7 5TR",
-    )
     submit_uk_callback_step("123456789")
     submit_review_answers_step
   end

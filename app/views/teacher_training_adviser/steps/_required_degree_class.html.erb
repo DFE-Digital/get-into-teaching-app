@@ -1,0 +1,7 @@
+<div class="govuk-form-group">
+  <%= tag.h1 t("helpers.label.teacher_training_adviser_steps_required_degree_class.#{f.object.title_attribute}") %>
+  <p>You can still apply for teaching training.</p>
+  <h2 class="heading-m">Other free support and guidance</h2>
+  <p>Our personalised email guidance can help you discover everything you need to know to start a teaching career in England.</p>
+  <%= render CallsToAction::ArrowLinkComponent.new(link_target: "/mailinglist/signup/name", link_text: "Sign up for emails") %>
+</div>

@@ -87,15 +87,14 @@ module TeacherTrainingAdviser::Steps
       # we are in the final year if there is less than 1 year to go to graduation
       degree_in_progress? &&
         graduation_year.present? &&
-        (today <= graduation_date) &&
-        (today > (graduation_date - 1.year))
+        ((today + 1.year) > graduation_date)
     end
 
     def studying_not_final_year?
       # we are not in the final year if there is at least 1 year to go to graduation
       degree_in_progress? &&
         graduation_year.present? &&
-        (today <= (graduation_date - 1.year))
+        ((today + 1.year) <= graduation_date)
     end
 
   private
