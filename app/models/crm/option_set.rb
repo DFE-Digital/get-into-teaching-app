@@ -5,17 +5,6 @@ class Crm::OptionSet
       "Students Union Media" => 222_750_038,
     }.freeze
 
-  DEGREE_STATUSES =
-    {
-      "Graduate or postgraduate" => 222_750_000,
-      "Final year" => 222_750_001,
-      "Second year" => 222_750_002,
-      "First year" => 222_750_003,
-      "I don't have a degree and am not studying for one" => 222_750_004,
-      "Other" => 222_750_005,
-      "Not yet, I'm studying for one" => 222_750_006,
-    }.freeze
-
   CONSIDERATION_JOURNEY_STAGES =
     {
       "It's just an idea" => 222_750_000,

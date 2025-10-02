@@ -11,8 +11,11 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
+      degree_country_step = other_step(:degree_country)
+
       !other_step(:returning_teacher).returning_to_teaching ||
-        other_step(:stage_interested_teaching).interested_in_primary?
+        other_step(:stage_interested_teaching).interested_in_primary? ||
+        degree_country_step.another_country?
     end
 
     def reviewable_answers

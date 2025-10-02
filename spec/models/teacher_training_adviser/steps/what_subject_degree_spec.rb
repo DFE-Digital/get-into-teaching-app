@@ -20,26 +20,33 @@ RSpec.describe TeacherTrainingAdviser::Steps::WhatSubjectDegree do
   end
 
   describe "#skipped?" do
-    it "returns false if HaveADegree step was shown and degree_options is studying" do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:studying]
-      expect(subject).not_to be_skipped
-    end
-
-    it "returns false if HaveADegree step was shown and degree_options is yes" do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(false)
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:yes]
-      expect(subject).not_to be_skipped
-    end
-
-    it "returns true if HaveADegree was skipped" do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::HaveADegree).to receive(:skipped?).and_return(true)
+    it "skipped if degree status was skipped" do
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(true)
       expect(subject).to be_skipped
     end
 
-    it "returns true if degree_options is not studying/yes" do
-      wizardstore["degree_options"] = TeacherTrainingAdviser::Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
+    it "skipped if not studying or does not have a degree" do
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(false)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:degree_in_progress?).and_return(false)
       expect(subject).to be_skipped
+    end
+
+    it "skipped if has an equivalent degree" do
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(true)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeCountry).to receive(:another_country?).and_return(true)
+      expect(subject).to be_skipped
+    end
+
+    it "not skipped if degree status step was shown and is studying" do
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:degree_in_progress?).and_return(true)
+      expect(subject).not_to be_skipped
+    end
+
+    it "not skipped if degree status step was shown and has a degree" do
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:skipped?).and_return(false)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::DegreeStatus).to receive(:has_degree?).and_return(true)
+      expect(subject).not_to be_skipped
     end
   end
 end

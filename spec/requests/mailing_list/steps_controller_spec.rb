@@ -5,6 +5,7 @@ describe MailingList::StepsController, type: :request do
   include_context "with stubbed mailing list add member api"
   include_context "with stubbed callback quotas api"
   include_context "with stubbed creation channel sources, services and activities"
+  include_context "with wizard data"
 
   it_behaves_like "a controller with a #resend_verification action" do
     def perform_request
