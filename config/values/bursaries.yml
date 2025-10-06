@@ -4,4 +4,15 @@ bursaries:
     total: £40,000
     annual: £20,000
   undergraduate: £9,000
-  fundingdates: between September 2025 and July 2026
+  fundingdates: between September 2026 and July 2027
+  postgraduate:
+    biology: £5,000
+    chemistry: £29,000
+    computing: £29,000
+    designandtechnology: £20,000
+    geography: £5,000
+    languagesfrenchgermanspanish: £20,000
+    languagesother: £20,000
+    maths: £29,000
+    physics: £29,000
+    
