@@ -41,7 +41,7 @@ The amounts on this page are for the $finance_parentsacademicyear$.
 
 There are full and part-time teacher training courses available, but you must be doing a full-time course to be eligible for the funding options on this page. If you’re doing a part-time course, you may be eligible for [Universal Credit](https://www.gov.uk/guidance/universal-credit-and-students).
 
-You could also receive a tax-free bursary or scholarship to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
+You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
 $careerchanger$
 
