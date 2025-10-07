@@ -46,7 +46,7 @@ To be eligible for the maximum IRP of $nonuk_internationalrelocationpayment_valu
 
 You will not be able to use eligibility for the IRP in your visa application as proof that you have enough money to support yourself.
 
-Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$..
+Trainees who train to teach in the 2024 to 2025 academic year are no longer eligible for the IRP. This applies to all trainees who started courses from 1 July 2024 onwards. Trainees in languages or physics may still be eligible to <a href="/funding-and-support/scholarships-and-bursaries">get a bursary or apply for a scholarship</a> worth up to $scholarships_nonuk_max$.
 
 ### Eligibility requirements for IRP instalment 1 ($nonuk_internationalrelocationpayment_instalment$)
 
