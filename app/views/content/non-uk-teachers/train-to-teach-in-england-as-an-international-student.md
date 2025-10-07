@@ -79,9 +79,9 @@ $nellie-qualification$
 
 A [fee-paying teacher training course](/non-uk-teachers/fees-and-funding-for-non-uk-trainees) means you pay tuition fees for your training. Tuition fees are set by providers and cost $fees_pgitt_internationalaverage$ on average per year. 
 
-You may be able to get financial support for fee-paying courses, depending on your immigration status and the subject you train to teach.  
+You may be able to get financial support forß fee-paying courses, depending on your immigration status and the subject you train to teach.  
 
-If you want to train to teach languages or physics, you could be [eligible for a bursary or scholarship](/funding-and-support/scholarships-and-bursaries). 
+If you want to train to teach languages or physics, you could be [eligible for a bursary or scholarship](/funding-and-support/scholarships-and-bursaries) worth up to $scholarships_nonuk_max$.
 
 If you are not training to teach these subjects, any financial support you get will depend on [your immigration status or the visa you are on](/non-uk-teachers/visas-for-non-uk-trainees).  
 

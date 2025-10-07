@@ -64,7 +64,7 @@ It can take up to 14 weeks to get your DSA, so you should take this into conside
 
 $dsa$
 
-You could also receive a tax-free bursary or scholarship to train to teach certain subjects. Find out more about [your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
+You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. Find out more about [your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
 ### Access to Work
 
