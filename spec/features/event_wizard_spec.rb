@@ -34,7 +34,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personal_details_step
     click_on "Next step"
 
-    expect(page).to have_text "Do you need any extra support to attend this event?"
+    expect(page).to have_text "To attend this event, do you need any extra accessibility support that’s not listed on this page?"
     choose "No"
     click_on "Next step"
 
@@ -66,11 +66,11 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "To verify your details, we've sent a code to your email address."
     click_on "continue without verifying your identity"
 
-    expect(page).to have_text "Do you need any extra support to attend this event?"
+    expect(page).to have_text "To attend this event, do you need any extra accessibility support that’s not listed on this page?"
     choose "Yes"
     click_on "Next step"
 
-    fill_in "Tell us about the extra support you need", with: "This is some test accessibility needs text"
+    fill_in "Tell us about the extra accessibility support you need", with: "This is some test accessibility needs text"
     click_on "Next step"
 
     fill_in "What's your telephone number? (optional)", with: "01234567890"
@@ -96,7 +96,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personal_details_step
     click_on "Next step"
 
-    expect(page).to have_text "Do you need any extra support to attend this event?"
+    expect(page).to have_text "To attend this event, do you need any extra accessibility support that’s not listed on this page?"
     choose "No"
     click_on "Next step"
 
@@ -133,11 +133,11 @@ RSpec.feature "Event wizard", type: :feature do
     expect_sign_up_with_attributes(base_attributes.merge(address_telephone: response.address_telephone))
     click_on "Next step"
 
-    expect(page).to have_text "Do you need any extra support to attend this event?"
+    expect(page).to have_text "To attend this event, do you need any extra accessibility support that’s not listed on this page?"
     choose "Yes"
     click_on "Next step"
 
-    fill_in "Tell us about the extra support you need", with: "This is some test accessibility needs text"
+    fill_in "Tell us about the extra accessibility support you need", with: "This is some test accessibility needs text"
     click_on "Complete sign up"
 
     expect(page).to have_title(sign_up_complete_page_title)
@@ -178,7 +178,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "Do you need any extra support to attend this event?"
+    expect(page).to have_text "To attend this event, do you need any extra accessibility support that’s not listed on this page?"
     choose "No"
     click_on "Next step"
 
@@ -207,11 +207,11 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Enter your verification code:", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "Do you need any extra support to attend this event?"
+    expect(page).to have_text "To attend this event, do you need any extra accessibility support that’s not listed on this page?"
     choose "Yes"
     click_on "Next step"
 
-    fill_in "Tell us about the extra support you need", with: "This is some test accessibility needs text"
+    fill_in "Tell us about the extra accessibility support you need", with: "This is some test accessibility needs text"
     click_on "Next step"
 
     expect(page).to have_text("What's your telephone number? (optional)")
@@ -250,7 +250,7 @@ RSpec.feature "Event wizard", type: :feature do
     choose "Yes"
     click_on "Next step"
 
-    fill_in "Tell us about the extra support you need", with: "This is some test accessibility needs text"
+    fill_in "Tell us about the extra accessibility support you need", with: "This is some test accessibility needs text"
     click_on "Complete sign up"
 
     expect(page).to have_title(sign_up_complete_page_title)
