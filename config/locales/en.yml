@@ -837,9 +837,9 @@ en:
         email: Email address
       events_steps_accessibility_support:
         accessibility_support: "Accessibility at this event"
-        support_required: "Do you need any extra support to attend this event?"
+        support_required: "To attend this event, do you need any extra accessibility support that’s not listed on this page?"
       events_steps_accessibility_needs:
-        accessibility_needs_for_event: "Tell us about the extra support you need"
+        accessibility_needs_for_event: "Tell us about the extra accessibility support you need"
       events_steps_contact_details:
         address_telephone: What's your telephone number? (optional)
 
@@ -889,7 +889,7 @@ en:
         accessibility_support: |-
           The venue for this event has the following accessibility features:
       events_steps_accessibility_needs:
-        accessibility_needs_for_event: "Our team may contact you to discuss your support."
+        accessibility_needs_for_event: "Our team may contact you to discuss your support request."
       events_steps_contact_details:
         address_telephone: |-
           We'll use this to send you a reminder and let you know about any last-minute cancellations.
