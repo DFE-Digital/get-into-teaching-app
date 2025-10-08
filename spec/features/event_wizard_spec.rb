@@ -246,7 +246,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect_sign_up_with_attributes(base_attributes.merge(address_telephone: response.address_telephone))
     click_on "Next step"
 
-    expect(page).to have_text "Do you need any extra support to attend this event?"
+    expect(page).to have_text "To attend this event, do you need any extra accessibility support that’s not listed on this page?"
     choose "Yes"
     click_on "Next step"
 
