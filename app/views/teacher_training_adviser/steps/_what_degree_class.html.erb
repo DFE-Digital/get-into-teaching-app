@@ -1,10 +1,10 @@
 <%
-  label_text = if f.object.studying?
+  label_text = if f.object.degree_in_progress?
                  t('helpers.label.teacher_training_adviser_steps_what_degree_class.uk_degree_grade_id.studying')
                else
                  t('helpers.label.teacher_training_adviser_steps_what_degree_class.uk_degree_grade_id.graduated')
                end
-  hint_text = if f.object.studying?
+  hint_text = if f.object.degree_in_progress?
                 t('helpers.hint.teacher_training_adviser_steps_what_degree_class.uk_degree_grade_id.studying')
               else
                 t('helpers.hint.teacher_training_adviser_steps_what_degree_class.uk_degree_grade_id.graduated')

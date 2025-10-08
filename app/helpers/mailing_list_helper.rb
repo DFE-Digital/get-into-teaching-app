@@ -7,16 +7,16 @@ module MailingListHelper
     consideration_journey_stage == Crm::OptionSet.lookup_by_key(:consideration_journey_stage, :it_s_just_an_idea)
   end
 
-  def ml_graduate?(degree_status: ml_degree_status_id)
-    degree_status == Crm::OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate)
+  def ml_graduate?(degree_status_id: ml_degree_status_id)
+    degree_status_id == MailingList::Steps::DegreeStatus::HAS_DEGREE
   end
 
-  def ml_studying?(degree_status: ml_degree_status_id)
-    degree_status == Crm::OptionSet.lookup_by_key(:degree_status, :not_yet_i_m_studying_for_one)
+  def ml_studying?(degree_status_id: ml_degree_status_id)
+    degree_status_id == MailingList::Steps::DegreeStatus::DEGREE_IN_PROGRESS
   end
 
-  def ml_no_degree?(degree_status: ml_degree_status_id)
-    degree_status == Crm::OptionSet.lookup_by_key(:degree_status, :i_don_t_have_a_degree_and_am_not_studying_for_one)
+  def ml_no_degree?(degree_status_id: ml_degree_status_id)
+    degree_status_id == MailingList::Steps::DegreeStatus::NO_DEGREE
   end
 
   def ml_degree_status_id

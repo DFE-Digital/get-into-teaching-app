@@ -1,0 +1,8 @@
+<%= f.govuk_collection_radio_buttons :visa_status,
+                                     f.object.visa_statuses,
+                                     :id,
+                                     ->(option) { format_option_value(option, "teacher_training_adviser_steps.visa_status.visa_status") },
+                                     ->(option) { format_option_hint(option, "teacher_training_adviser_steps.visa_status.visa_status") },
+                                     legend: { tag: "h1", text: t('helpers.label.teacher_training_adviser_steps_visa_status.visa_status', **Value.data) },
+                                     hint: { text: t('helpers.hint.teacher_training_adviser_steps_visa_status.visa_status', **Value.data) }
+%>

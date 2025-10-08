@@ -34,5 +34,11 @@
     "value": "Other",
     "entityName": "dfe_candidatequalification",
     "attributeName": "dfe_degreestatus"
+  },
+  {
+    "id": 222750006,
+    "value": "Not yet, I'm studying for one",
+    "entityName": "dfe_candidatequalification",
+    "attributeName": "dfe_degreestatus"
   }
 ]
