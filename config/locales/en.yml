@@ -55,7 +55,7 @@ en:
         name: "Art and design"
         group: "Secondary"
         sub_head: "Art and design - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_artanddesign} are available for trainee art and design teachers if you're eligible."
+        funding: "Scholarships or bursaries are not available for this subject."
       biology:
         name: "Biology"
         group: "Secondary"
@@ -70,7 +70,7 @@ en:
         name: "Chemistry"
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
-        funding: "Scholarships of %{scholarships_chemistry} and bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you're eligible."
+        funding: "Scholarships of %{scholarships_chemistry} or bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you're eligible."
       citizenship:
         name: "Citizenship"
         group: "Secondary"
@@ -94,7 +94,7 @@ en:
         name: "Computing"
         group: "Secondary"
         sub_head: "Computing - Secondary"
-        funding: "Scholarships of %{scholarships_computing} and bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you're eligible."
+        funding: "Scholarships of %{scholarships_computing} or bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you're eligible."
       dance:
         name: "Dance"
         group: "Secondary"
@@ -119,7 +119,7 @@ en:
         name: "English"
         group: "Secondary"
         sub_head: "English - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_english} are available for trainee English teachers if you're eligible."
+        funding: "Scholarships or bursaries are not available for this subject."
       english_as_a_second_or_other_language:
         name: "English as a second or other language"
         group: "Secondary"
@@ -145,19 +145,19 @@ en:
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
         funding: |-
-          Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers (including non-UK citizens), if you're eligible.
+          Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers (including non-UK citizens), if you're eligible.<br><br>
 
           Bursaries of %{bursaries_postgraduate_languagesother} are available for all trainee language teachers (including non-UK citizens), if you're eligible. These bursaries include ancient languages.
       maths:
         name: "Maths"
         group: "Secondary"
         sub_head: "Maths - Secondary"
-        funding: "Scholarships of %{scholarships_maths} and bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you're eligible."
+        funding: "Bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you're eligible."
       music:
         name: "Music"
         group: "Secondary"
         sub_head: "Music - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_music} are available for trainee music teachers if you're eligible."
+        funding: "Scholarships or bursaries are not available for this subject."
       physical_group:
         name: "Physical education"
         group: "Secondary"
@@ -167,7 +167,7 @@ en:
         name: "Physics"
         group: "Secondary"
         sub_head: "Physics - Secondary"
-        funding: "Scholarships of %{scholarships_physics} and bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers if you're eligible (including non-UK citizens)."
+        funding: "Scholarships of %{scholarships_physics} or bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers if you're eligible (including non-UK citizens)."
       psychology:
         name: "Psychology"
         group: "Secondary"
@@ -177,7 +177,7 @@ en:
         name: "Religious education"
         group: "Secondary"
         sub_head: "Religious education - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_religiouseducation} are available for trainee religious education teachers if you're eligible."
+        funding: "Scholarships or bursaries are not available for this subject."
       science:
         name: "Science"
         group: "Secondary"
@@ -891,9 +891,9 @@ en:
         email: Email address
       events_steps_accessibility_support:
         accessibility_support: "Accessibility at this event"
-        support_required: "Do you need any extra support to attend this event?"
+        support_required: "To attend this event, do you need any extra accessibility support that’s not listed on this page?"
       events_steps_accessibility_needs:
-        accessibility_needs_for_event: "Tell us about the extra support you need"
+        accessibility_needs_for_event: "Tell us about the extra accessibility support you need"
       events_steps_contact_details:
         address_telephone: What's your telephone number? (optional)
 
@@ -939,7 +939,7 @@ en:
         accessibility_support: |-
           The venue for this event has the following accessibility features:
       events_steps_accessibility_needs:
-        accessibility_needs_for_event: "Our team may contact you to discuss your support."
+        accessibility_needs_for_event: "Our team may contact you to discuss your support request."
       events_steps_contact_details:
         address_telephone: |-
           We'll use this to send you a reminder and let you know about any last-minute cancellations.

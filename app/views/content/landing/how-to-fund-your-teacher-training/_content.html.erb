@@ -1,9 +1,6 @@
 <div class="row">
   <section class="col col-720">
     <h2 class="heading--box-blue">How can I fund my teacher training?</h2>
-    <section>
-    <%= render Content::InsetTextComponent.new(text: "The figures on this page apply if you're starting your training $bursaries_fundingdates$. Financial support for courses starting the following academic year (2026 to 2027) will be announced in October.") %>
-    </section>
     <div class="inset">
       <table class="first-column-headings right-aligned-values">
       <caption class="govuk-table__caption govuk-table__caption--m">Available postgraduate bursaries and scholarships</caption>
@@ -15,11 +12,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Art and design</td>
-            <td><%= v :bursaries_postgraduate_artanddesign %></td>
-            <td></td>
-          </tr>
           <tr>
             <td>Biology</td>
             <td><%= v :bursaries_postgraduate_biology %></td>
@@ -41,11 +33,6 @@
             <td></td>
           </tr>
           <tr>
-            <td>English</td>
-            <td><%= v :bursaries_postgraduate_english %></td>
-            <td></td>
-          </tr>
-          <tr>
             <td>Geography</td>
             <td><%= v :bursaries_postgraduate_geography %></td>
             <td></td>
@@ -63,22 +50,11 @@
           <tr>
             <td>Maths</td>
             <td><%= v :bursaries_postgraduate_maths %></td>
-            <td><%= v :scholarships_maths %></td>
-          </tr>
-          <tr>
-            <td>Music</td>
-            <td><%= v :bursaries_postgraduate_music %></td>
-            <td></td>
           </tr>
           <tr>
             <td>Physics</td>
             <td><%= v :bursaries_postgraduate_physics %></td>
             <td><%= v :scholarships_physics %></td>
-          </tr>
-          <tr>
-            <td>Religious education</td>
-            <td><%= v :bursaries_postgraduate_religiouseducation %></td>
-            <td></td>
           </tr>
         </tbody>
       </table>

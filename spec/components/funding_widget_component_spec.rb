@@ -57,7 +57,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
       before { render_inline(component) }
 
       it "contains subject-specific funding content" do
-        expect(page).to have_text("Scholarships of £31,000 and bursaries of £29,000 are available for trainee maths teachers if you're eligible.")
+        expect(page).to have_text("Bursaries of £29,000 are available for trainee maths teachers if you're eligible.")
       end
     end
 

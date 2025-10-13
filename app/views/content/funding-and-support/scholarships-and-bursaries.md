@@ -7,12 +7,12 @@ description: |-
 promo_content:
   - "content/shared/block-promos/adviser_findfees"
 cta_arrow_link:
-  subjects:
-    link_target: "/life-as-a-teacher/explore-subjects"
-    link_text: "Find out more about the subjects you could teach"
   teacherpay:
     link_target: "/life-as-a-teacher/pay-and-benefits/teacher-pay"
     link_text: "Find out more about teacher pay"
+  subjects:
+    link_target: "/life-as-a-teacher/explore-subjects"
+    link_text: "Find out more about the subjects you could teach"
 navigation: 20.15
 navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
@@ -73,26 +73,21 @@ You need to apply directly to the scholarship provider. Each provider sets their
 * [Royal Society of Chemistry website](https://www.rsc.org/prizes-funding/funding/find-funding/teacher-training-scholarships/) (chemistry)
 * [BCS The Chartered Institute for IT website](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
 * [British Council website](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
-* [Institute of Mathematics and its Applications, and partners website](https://teachingmathsscholars.org/home) (maths)
 * [Institute of Physics website](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
 
 ## Compare bursaries and scholarships
 
 | Subject                                                               | Bursary  | Scholarship      |
 |-----------------------------------------------------------------------| -------: | ---------------: |
-| **Art and design**                                                    | $bursaries_postgraduate_artanddesign$  |                  |
 | **Biology**                                                           | $bursaries_postgraduate_biology$  |                  |
 | **Chemistry**                                                         | $bursaries_postgraduate_chemistry$  | $scholarships_chemistry$          |
 | **Computing**                                                         | $bursaries_postgraduate_computing$  | $scholarships_computing$          |
-| **Design and technology**                                             | $bursaries_postgraduate_designandtechnology$  |                  |
-| **English**                                                           | $bursaries_postgraduate_english$  |                  |
+| **Design and technology**                                             | $bursaries_postgraduate_designandtechnology$ | |
 | **Geography**                                                         | $bursaries_postgraduate_geography$  |                  |
 | **Languages**<br/> (French, German and Spanish only)                  | $bursaries_postgraduate_languagesfrenchgermanspanish$  | $scholarships_languagesfrenchgermanspanish$      |
 | **Languages**<br/> (all other languages, including ancient languages) | $bursaries_postgraduate_languagesother$  |                  |
-| **Maths**                                                             | $bursaries_postgraduate_maths$  | $scholarships_maths$         |
-| **Music**                                                             | $bursaries_postgraduate_music$  |                  |
+| **Maths**                                                             | $bursaries_postgraduate_maths$  |          |                |
 | **Physics**                                                           | $bursaries_postgraduate_physics$  | $scholarships_physics$        |
-| **Religious education**                                               | $bursaries_postgraduate_religiouseducation$  |                  |
 
 Table caption: Available postgraduate bursaries and scholarships
 
