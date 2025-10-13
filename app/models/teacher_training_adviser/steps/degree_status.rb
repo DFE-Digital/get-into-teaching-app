@@ -33,7 +33,6 @@ module TeacherTrainingAdviser::Steps
       super
 
       if reset_creation_channel_service_id?
-        # set the creation_channel_service_id based on degree status: final years follow the TTA whereas earlier years follow ETA
         self.creation_channel_service_id = studying_final_year? ? ReturningTeacher::TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID : ReturningTeacher::ETA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
       end
       super
