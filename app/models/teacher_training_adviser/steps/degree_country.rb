@@ -6,15 +6,15 @@ module TeacherTrainingAdviser::Steps
     DEGREE = 222_750_000
     DEGREE_EQUIVALENT = 222_750_005
 
-    attribute :degree_country_id, :string
+    attribute :degree_country, :string
     attribute :degree_type_id, :integer
 
-    validates :degree_country_id, lookup_items: { method: :get_degree_countries }
+    validates :degree_country, lookup_items: { method: :get_degree_countries }
     validates :degree_type_id, inclusion: { in: [DEGREE, DEGREE_EQUIVALENT] }
 
     include FunnelTitle
 
-    def degree_country_id=(value)
+    def degree_country=(value)
       super
       set_degree_type if value
     end
@@ -25,7 +25,7 @@ module TeacherTrainingAdviser::Steps
 
     def reviewable_answers
       {
-        "degree_country_id" => degree_country_id ? I18n.t("helpers.answer.teacher_training_adviser_steps.degree_country.degree_country_id.#{degree_country_id}", **Value.data) : nil,
+        "degree_country" => degree_country ? I18n.t("helpers.answer.teacher_training_adviser_steps.degree_country.degree_country.#{degree_country}", **Value.data) : nil,
       }
     end
 
@@ -34,11 +34,11 @@ module TeacherTrainingAdviser::Steps
     end
 
     def another_country?
-      degree_country_id == ANOTHER_COUNTRY
+      degree_country == ANOTHER_COUNTRY
     end
 
     def uk?
-      degree_country_id == UK
+      degree_country == UK
     end
 
   private

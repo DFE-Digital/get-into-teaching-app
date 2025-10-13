@@ -1,5 +1,5 @@
-<%= f.govuk_collection_radio_buttons :degree_country_id,
+<%= f.govuk_collection_radio_buttons :degree_country,
                                      f.object.options,
                                      :last,
-                                     ->(option) { t("helpers.answer.teacher_training_adviser_steps.degree_country.degree_country_id.#{option.last}") },
+                                     ->(option) { t("helpers.answer.teacher_training_adviser_steps.degree_country.degree_country.#{option.last}") },
                                      legend: { tag: "h1" } %>

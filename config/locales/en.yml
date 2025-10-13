@@ -236,7 +236,7 @@ en:
         title: "Which year will you graduate?"
         change: "which year will you graduate"
     degree_country:
-      degree_country_id:
+      degree_country:
           title: "Which country is your degree from?"
           change: "which country your degree is from"
     overseas_callback:
@@ -424,7 +424,7 @@ en:
               inclusion: The link you used to sign up is no longer valid.
         teacher_training_adviser/steps/degree_country:
           attributes:
-            degree_country_id:
+            degree_country:
               invalid_type: "The country you have entered is not valid - you need to choose one from the list"
         teacher_training_adviser/steps/subject_taught:
           attributes:
@@ -743,7 +743,7 @@ en:
             222750006: "Not yet, I'm studying for one"
             222750004: "No"
         degree_country:
-          degree_country_id:
+          degree_country:
             72f5c2e6-74f9-e811-a97a-000d3a2760f2: "United Kingdom"
             6f9e7b81-e44d-f011-877a-00224886d23e: "Another country"
 
@@ -1050,7 +1050,7 @@ en:
       teacher_training_adviser_steps_start_teacher_training:
         initial_teacher_training_year_id: "When do you want to start your teacher training?"
       teacher_training_adviser_steps_degree_country:
-        degree_country_id: "Which country is your degree from?"
+        degree_country: "Which country is your degree from?"
       teacher_training_adviser_steps_train_to_teach_in_uk:
         train_to_teach_in_uk: "Did you train to teach in the UK?"
       teacher_training_adviser_steps_uk_telephone:
