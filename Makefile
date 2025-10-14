@@ -16,6 +16,7 @@ help:
 	echo "Commands:"
 	echo "  edit-app-secrets  - Edit Application specific Secrets."
 	echo "  print-app-secrets - Display Application specific Secrets."
+	echo "  review-update-env - Update GIT_API_PR environment variable for a review app."
 	echo ""
 	echo "Parameters:"
 	echo "All commands take the parameter development|review|test|production"
@@ -24,6 +25,9 @@ help:
 	echo ""
 	echo "To edit the Application secrets for Development"
 	echo "        make  development edit-app-secrets"
+	echo ""
+	echo "To update GIT_API_PR environment variable for a review app"
+	echo "        make review-update-env PR_NUMBER=4826 GIT_API_PR=1552"
 	echo ""
 
 APPLICATION_SECRETS=CONTENT-KEYS
@@ -233,3 +237,28 @@ enable-maintenance: maintenance-image-push maintenance-fail-over
 disable-maintenance: get-cluster-credentials
 	$(eval export CONFIG)
 	./maintenance_page/scripts/failback.sh
+
+# Update or clear GIT_API_PR environment variable for a review app
+# Usage: make review-update-env PR_NUMBER=4826 GIT_API_PR=1552
+# Usage: make review-update-env PR_NUMBER=4826 CLEAR=true
+.PHONY: review-update-env
+review-update-env: test-cluster get-cluster-credentials
+	$(if $(PR_NUMBER), , $(error Missing environment variable "PR_NUMBER", Please specify a PR number for your review app))
+ifdef CLEAR
+	@echo "Clearing GIT_API_PR for review app PR ${PR_NUMBER}..."
+	kubectl set env deployment/get-into-teaching-app-review-${PR_NUMBER} GIT_API_PR- -n git-development
+	kubectl set env deployment/get-into-teaching-app-review-${PR_NUMBER}-worker GIT_API_PR- -n git-development
+else
+	$(if $(GIT_API_PR), , $(error Missing environment variable "GIT_API_PR", Please specify the API PR number))
+	@echo "Updating GIT_API_PR=${GIT_API_PR} for review app PR ${PR_NUMBER}..."
+	kubectl set env deployment/get-into-teaching-app-review-${PR_NUMBER} GIT_API_PR=${GIT_API_PR} -n git-development
+	kubectl set env deployment/get-into-teaching-app-review-${PR_NUMBER}-worker GIT_API_PR=${GIT_API_PR} -n git-development
+endif
+	@echo "Waiting for rollout to complete..."
+	kubectl rollout status deployment/get-into-teaching-app-review-${PR_NUMBER} -n git-development
+	kubectl rollout status deployment/get-into-teaching-app-review-${PR_NUMBER}-worker -n git-development
+ifdef CLEAR
+	@echo "Environment variable GIT_API_PR cleared successfully for PR ${PR_NUMBER}"
+else
+	@echo "Environment variable GIT_API_PR updated successfully for PR ${PR_NUMBER}"
+endif
