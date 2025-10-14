@@ -6,7 +6,9 @@ module TeacherTrainingAdviser
     ATTRIBUTES_TO_LEAVE = %w[
       first_name
       type_id
-      degree_options
+      degree_status_id
+      degree_type_id
+      graduation_year
       sub_channel_id
       callback_offered
       hashed_email
@@ -26,11 +28,14 @@ module TeacherTrainingAdviser
       Steps::SubjectTrained,
       Steps::StageTaught,
       Steps::SubjectTaught,
-      Steps::HaveADegree,
+      Steps::DegreeStatus,
       Steps::NoDegree,
-      Steps::StageOfDegree,
+      Steps::DegreeCountry,
+
       Steps::WhatSubjectDegree,
       Steps::WhatDegreeClass,
+      Steps::RequiredDegreeClass,
+      Steps::LifeStage,
       Steps::StageInterestedTeaching,
       Steps::GcseMathsEnglish,
       Steps::RetakeGcseMathsEnglish,
@@ -40,15 +45,23 @@ module TeacherTrainingAdviser
       Steps::SubjectInterestedTeaching,
       Steps::StartTeacherTraining,
       Steps::SubjectLikeToTeach,
+
       Steps::DateOfBirth,
+
+      Steps::Citizenship,
+      Steps::VisaStatus,
+
       Steps::UkOrOverseas,
+
       Steps::UkAddress,
       Steps::UkTelephone,
       Steps::OverseasCountry,
       Steps::OverseasTelephone,
+
       Steps::UkCallback,
       Steps::OverseasTimeZone,
       Steps::OverseasCallback,
+
       Steps::ReviewAnswers,
     ].freeze
 

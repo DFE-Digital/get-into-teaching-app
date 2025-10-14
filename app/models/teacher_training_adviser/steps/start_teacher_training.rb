@@ -26,22 +26,24 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
-      have_a_degree_step = other_step(:have_a_degree)
-      have_a_degree_skipped = have_a_degree_step.skipped?
-      studying_not_final_year = have_a_degree_step.studying? && !other_step(:stage_of_degree).final_year?
+      degree_status_step = other_step(:degree_status)
+      degree_country_step = other_step(:degree_country)
 
-      have_a_degree_skipped || studying_not_final_year
+      degree_status_step_skipped = degree_status_step.skipped?
+      studying_not_final_year = degree_status_step.studying_not_final_year?
+
+      degree_status_step_skipped || studying_not_final_year || degree_country_step.another_country?
     end
 
     def inferred_year_id
-      degree_status = other_step(:stage_of_degree).degree_status_id
+      degree_status_step = other_step(:degree_status)
 
-      return unless other_step(:have_a_degree).studying? && degree_status.in?(StageOfDegree::NOT_FINAL_YEAR.values)
+      return unless degree_status_step.studying_not_final_year?
 
-      inferred_year = if degree_status == StageOfDegree::NOT_FINAL_YEAR[:first_year]
-                        current_year + (before_current_year_threshold? ? 2 : 3)
+      inferred_year = if degree_status_step.studying_first_year?
+                        current_year + (before_academic_year_end? ? 2 : 3)
                       else
-                        current_year + (before_current_year_threshold? ? 1 : 2)
+                        current_year + (before_academic_year_end? ? 1 : 2)
                       end
 
       itt_years.find { |item| item.value == inferred_year.to_s }&.id
@@ -68,10 +70,10 @@ module TeacherTrainingAdviser::Steps
     end
 
     def filter_items(items)
-      items.select do |item|
+      items.select { |item|
         item.id == NOT_SURE_ID ||
           item.value.to_i.between?(first_year, first_year + number_of_years)
-      end
+      }.sort_by(&:value)
     end
 
     def first_year
@@ -79,8 +81,13 @@ module TeacherTrainingAdviser::Steps
     end
 
     def before_current_year_threshold?
-      # After 6th September you can no longer start teacher training for that year.
+      # After 16th September you can no longer start teacher training for that year.
       Time.zone.today < date_to_drop_current_year
+    end
+
+    def before_academic_year_end?
+      # NB: academic year end (31st August) occurs before the cycle threshold (17th September)
+      Time.zone.today <= academic_year_cutoff
     end
 
     def number_of_years
@@ -93,6 +100,10 @@ module TeacherTrainingAdviser::Steps
 
     def date_to_drop_current_year
       Date.new(current_year, 9, 17)
+    end
+
+    def academic_year_cutoff
+      Date.new(current_year, TeacherTrainingAdviser::Steps::DegreeStatus::GRADUATION_MONTH, TeacherTrainingAdviser::Steps::DegreeStatus::GRADUATION_DAY)
     end
 
     def current_year

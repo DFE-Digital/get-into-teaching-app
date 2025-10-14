@@ -1,0 +1,18 @@
+<%= f.govuk_collection_radio_buttons :degree_status_id,
+                                     f.object.degree_status_options,
+                                     :id,
+                                     ->(option) { format_option_value(option, "teacher_training_adviser_steps.degree_status.degree_status_id") },
+                                     # ->(option) { t("helpers.answer.teacher_training_adviser_steps.degree_status.degree_status_id.#{option}") },
+                                     lambda { |option|
+                                       if option.id == TeacherTrainingAdviser::Steps::DegreeStatus::DEGREE_IN_PROGRESS
+                                         content_tag(:div, class: "field__hidden_subfield") do
+                                           f.govuk_text_field(
+                                             :graduation_year,
+                                             maxlength: 4,
+                                             label: { text: "Which year will you graduate?" },
+                                             hint: { text: "For example, #{Date.current.year + 2}"}
+                                           )
+                                         end
+                                       end
+                                     },
+                                     legend: { tag: 'h1', text: t("helpers.legend.teacher_training_adviser_steps_degree_status.degree_status_id", **Value.data) } %>

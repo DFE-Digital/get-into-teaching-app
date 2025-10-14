@@ -15,7 +15,8 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
-      other_step(:what_degree_class).skipped?
+      degree_country_step = other_step(:degree_country)
+      other_step(:what_degree_class).skipped? || degree_country_step.another_country?
     end
   end
 end

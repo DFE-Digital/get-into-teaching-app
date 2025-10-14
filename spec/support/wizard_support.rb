@@ -36,10 +36,9 @@ shared_context "with a TTA wizard step" do
 end
 
 shared_context "with wizard data" do
-  let(:degree_status_option_types) do
-    Crm::OptionSet::DEGREE_STATUSES.map do |k, v|
-      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
-    end
+  let(:degree_statuses) do
+    %i[graduate_or_postgraduate no_degree not_yet_im_studying]
+      .map { |trait| build(:degree_status, trait) }
   end
 
   let(:consideration_journey_stage_types) do
@@ -73,17 +72,21 @@ shared_context "with wizard data" do
     %i[yes_i_have_a_visa no_i_will_need_to_apply_for_a_visa not_sure].map { |trait| build(:visa_status, trait) }
   end
 
+  let(:degree_countries) do
+    %i[uk another_country].map { |trait| build(:degree_country, trait) }
+  end
+
   let(:locations) do
     %i[united_kingdom outside_united_kingdom].map { |trait| build(:location, trait) }
   end
 
   let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
-  let(:inferred_degree_status_id) { Crm::OptionSet.lookup_by_key(:degree_status, :second_year) }
+  let(:inferred_degree_status_id) { build(:degree_status, :second_year).id }
   let(:mailing_list_response) { GetIntoTeachingApiClient::DegreeStatusResponse.new({ degree_status_id: inferred_degree_status_id }) }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_qualification_degree_status).and_return(degree_status_option_types)
+      receive(:get_qualification_degree_status).and_return(degree_statuses)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
     allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
@@ -98,6 +101,8 @@ shared_context "with wizard data" do
       receive(:get_candidate_visa_status).and_return(visa_statuses)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_location).and_return(locations)
+    allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
+      receive(:get_degree_countries).and_return(degree_countries)
     allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
       receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
@@ -150,50 +155,6 @@ shared_examples "with a wizard step that exposes API lookup items as options" do
         receive(api_method) { included_lookup_items + lookup_items }
 
       expect(described_class.options.values).to eq(included_lookup_item_ids)
-    end
-  end
-end
-
-shared_examples "a wizard step that exposes API pick list items as options" do |api_method, omit_ids, include_ids|
-  let(:pick_list_items) do
-    [
-      GetIntoTeachingApiClient::PickListItem.new(id: 1, value: "one"),
-      GetIntoTeachingApiClient::PickListItem.new(id: 2, value: "two"),
-    ]
-  end
-  let(:pick_list_item_ids) { pick_list_items.map(&:id) }
-
-  it { expect(subject.class).to respond_to :options }
-
-  unless include_ids
-    it "exposes API pick list items as options" do
-      allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-        receive(api_method) { pick_list_items }
-
-      expect(described_class.options.values).to eq(pick_list_item_ids)
-    end
-  end
-
-  if omit_ids
-    it "omits options with the ids #{omit_ids}" do
-      omitted_pick_list_items = omit_ids.map { |id| GetIntoTeachingApiClient::PickListItem.new(id: id, value: "omit-#{id}") }
-
-      allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-        receive(api_method) { omitted_pick_list_items + pick_list_items }
-
-      expect(described_class.options.values).to eq(pick_list_item_ids)
-    end
-  end
-
-  if include_ids
-    it "includes only options with the ids #{include_ids}" do
-      included_pick_list_items = include_ids.map { |id| GetIntoTeachingApiClient::PickListItem.new(id: id, value: "include-#{id}") }
-      included_pick_list_item_ids = included_pick_list_items.map(&:id)
-
-      allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-        receive(api_method) { included_pick_list_items + pick_list_items }
-
-      expect(described_class.options.values).to eq(included_pick_list_item_ids)
     end
   end
 end

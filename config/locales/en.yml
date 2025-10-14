@@ -203,12 +203,6 @@ en:
         singular: "School or University event"
         plural: "School and University events"
 
-  have_a_degree:
-    degree_options:
-      "yes": "Yes"
-      equivalent: "I have, or I'm studying for, an equivalent qualification from another country"
-      "no": "No"
-      studying: "I'm studying for a degree"
 
   answers:
     identity:
@@ -234,10 +228,17 @@ en:
       has_id:
         title: "Do you have your previous teacher reference number?"
         change: "if you have a previous teacher reference number"
-    have_a_degree:
-      degree_options:
+    degree_status:
+      degree_status_id:
         title: "Do you have a degree?"
         change: "if you have a degree"
+      graduation_year:
+        title: "Which year will you graduate?"
+        change: "which year will you graduate"
+    degree_country:
+      degree_country:
+          title: "Which country is your degree from?"
+          change: "which country your degree is from"
     overseas_callback:
       callback_date:
         title: "Callback date"
@@ -323,6 +324,14 @@ en:
       subject_taught_id:
         title: "Which subject did you train to teach?"
         change: "the subject you trained to teach"
+    citizenship:
+      citizenship:
+        title: "Are you a UK citizen?"
+        change: "are you a UK citizen"
+    visa_status:
+      visa_status:
+        title: "Do you have a visa or immigration status allowing you to train to teach in England?"
+        change: "your visa or immigration status allowing you to train to teach in England"
     uk_address:
       address_postcode:
         title: "Postcode"
@@ -353,6 +362,10 @@ en:
       degree_subject:
         title: "Which subject is your degree?"
         change: "the subject of your degree"
+    life_stage:
+      situation:
+        title: "How would you describe your current situation?"
+        change: "your current situation"
 
   activerecord:
     errors:
@@ -409,6 +422,10 @@ en:
               too_long: "Your email address is too long - you need to enter a valid email address"
             channel_id:
               inclusion: The link you used to sign up is no longer valid.
+        teacher_training_adviser/steps/degree_country:
+          attributes:
+            degree_country:
+              invalid_type: "The country you have entered is not valid - you need to choose one from the list"
         teacher_training_adviser/steps/subject_taught:
           attributes:
             subject_taught_id:
@@ -501,9 +518,9 @@ en:
           attributes:
             has_gcse_maths_and_english_id:
               invalid_type: "Select yes if you have grade 4(C) or above in English and Maths GCSE or equivalent"
-        teacher_training_adviser/steps/have_a_degree:
+        teacher_training_adviser/steps/degree_status:
           attributes:
-            degree_options:
+            degree_status_id:
               inclusion: "Select an option from the list"
         teacher_training_adviser/steps/date_of_birth:
           attributes:
@@ -701,7 +718,6 @@ en:
             222750000: "Inside the UK"
             222750001: "Outside the UK"
 
-
       events_steps:
         personalised_updates:
           degree_status:
@@ -720,6 +736,41 @@ en:
           i_don_t_have_a_degree_and_am_not_studying_for_one: "No, and I'm not studying for one"
           not_yet_i_m_studing_for_one: "Not yet, I'm studying for one"
           other: "Other"
+      teacher_training_adviser_steps:
+        degree_status:
+          degree_status_id:
+            222750000: "Yes"
+            222750006: "Not yet, I'm studying for one"
+            222750004: "No"
+        degree_country:
+          degree_country:
+            72f5c2e6-74f9-e811-a97a-000d3a2760f2: "United Kingdom"
+            6f9e7b81-e44d-f011-877a-00224886d23e: "Another country"
+
+        citizenship:
+          citizenship:
+            222750000: "Yes"
+            222750001: "No"
+        visa_status:
+          visa_status:
+            222750000: "Yes, I have a visa, pre-settled status or leave to remain"
+            222750001: "No, I will need to apply for a visa"
+            222750002: "Not sure"
+        what_degree_class:
+          uk_degree_grade_id:
+            222750000: "Other"
+            222750001: "First-class honours"
+            222750002: "Upper second-class honours (2:1)"
+            222750003: "Lower second-class honours (2:2)"
+            222750004: "Third-class honours"
+            222750005: "Pass"
+        life_stage:
+          situation:
+            222750002: "Exploring options for my first career"
+            222750003: "Graduated and exploring my career options"
+            222750004: "Considering changing my existing career"
+            222750005: "Teaching assistant or unqualified teacher in a school"
+            222750006: "Not currently working"
 
     label:
       wizard_steps_authenticate:
@@ -755,8 +806,11 @@ en:
         subject_taught_id: "Which subject did you train to teach?"
       teacher_training_adviser_steps_subject_interested_teaching:
         preferred_teaching_subject_id: "Select the subject you're most interested in teaching"
-      teacher_training_adviser_steps_start_teacher_training:
-        initial_teacher_training_year_id: "When do you want to start your teacher training?"
+      teacher_training_adviser_steps_citizenship:
+        citizenship: "Are you a UK citizen?"
+      teacher_training_adviser_steps_visa_status:
+        visa_status: "Do you have a visa or immigration status allowing you to train to teach in England?"
+
       teacher_training_adviser_steps_uk_telephone:
         address_telephone: "UK telephone number (optional)"
       teacher_training_adviser_steps_uk_callback:
@@ -770,6 +824,8 @@ en:
         uk_or_overseas_options:
           UK: "UK"
           Overseas: "Overseas"
+      teacher_training_adviser_steps_life_stage:
+        situation: "How would you describe your current situation?"
       teacher_training_adviser_steps_stage_interested_teaching:
         preferred_education_phase_id_options:
           222750000: "Primary"
@@ -802,12 +858,7 @@ en:
         type_id_options:
           222750001: "Yes"
           222750000: "No"
-      teacher_training_adviser_steps_have_a_degree:
-        degree_options_options:
-          "yes": "Yes"
-          equivalent: "I am not a UK citizen and have, or am studying for, an equivalent qualification"
-          "no": "No"
-          studying: "I'm studying for a degree"
+
       teacher_training_adviser_steps_qualification_required:
         title: "We're sorry, but you need the right GCSEs to sign up for an adviser"
       teacher_training_adviser_steps_review_answers:
@@ -820,6 +871,9 @@ en:
         title: "You need to have or be studying towards a degree to sign up for an adviser"
       teacher_training_adviser_steps_not_eligible:
         title: "Sorry, you are not eligible for this service"
+      teacher_training_adviser_steps_required_degree_class:
+        title_predicted: "Your predicted degree grade must be a 2:2 or higher to get an adviser"
+        title_achieved: "Your achieved degree grade must be a 2:2 or higher to get an adviser"
 
       teacher_training_adviser_feedback:
         unsuccessful_visit_explanation: "Give details"
@@ -863,8 +917,6 @@ en:
         title: "Our emails are for people who do not have qualified teacher status (QTS)"
       mailing_list_steps_already_subscribed:
         title: "You've already signed up"
-
-
       mailing_list_steps_degree_status:
         degree_status_id: Do you have a degree?
       mailing_list_steps_teacher_training:
@@ -879,8 +931,6 @@ en:
         visa_status: "Do you have a visa or immigration status allowing you to train to teach in England?"
       mailing_list_steps_location:
         location: "Where do you live?"
-
-
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
 
@@ -914,6 +964,11 @@ en:
         visa_status: "You'll find out how to become a teacher based on your circumstances."
       mailing_list_steps_location:
         location: "You'll find out how to become a teacher based on your circumstances."
+      teacher_training_adviser_steps:
+        life_stage:
+          situation:
+            222750003: "For example, not yet established in a career or found the right career path"
+            222750006: "For example, parental leave or in between jobs"
 
       teacher_training_adviser_steps_what_subject_degree:
         degree_subject: "Enter your degree subject. When you start entering your subject, you can select a suggested option from the list, or continue to enter your subject in full."
@@ -925,6 +980,8 @@ en:
           Your adviser can talk to you by text and WhatsApp, as well as by
           phone. Giving your phone number is the easiest way to talk to an
           adviser.
+      teacher_training_adviser_steps_life_stage:
+        situation: "Select the option that best describes your situation."
       teacher_training_adviser_steps_start_teacher_training:
         initial_teacher_training_year_id: "Choose the year you would like to start your teacher training."
       teacher_training_adviser_steps_stage_interested_teaching:
@@ -933,12 +990,18 @@ en:
         stage_taught_id:
       teacher_training_adviser_steps_returning_teacher:
         type_id: "Only select 'yes' if you have English qualified teacher status (QTS)."
-      teacher_training_adviser_steps_have_a_degree:
-        degree_options: "To use this service your bachelor's degree or predicted grade needs to be a 2:2 class honours or above."
+      teacher_training_adviser_steps_degree_status:
+        degree_status_id: "To use this service your bachelor's degree or predicted grade needs to be a 2:2 class honours or above."
       teacher_training_adviser_steps_overseas_telephone:
         address_telephone_html: "We recommend you provide us with your phone number as this is the most effective way to talk to your adviser.<br /><br />For international numbers include the country code."
       teacher_training_adviser_steps_date_of_birth:
         date_of_birth: "For example, 31 3 1980"
+
+      teacher_training_adviser_steps_citizenship:
+        citizenship: "We use this information to give you tailored advice."
+      teacher_training_adviser_steps_visa_status:
+        visa_status: "We use this information to give you tailored advice."
+
       teacher_training_adviser_steps_overseas_country:
         country_id_html: |-
           You can apply to train or teach from any country in the world, but you may need a visa. Our guidance for
@@ -948,7 +1011,7 @@ en:
       teacher_training_adviser_steps_what_degree_class:
         uk_degree_grade_id:
           studying: "To get an adviser, your predicted degree grade must be a 2:2 or higher."
-          graduated: "To get an adviser, your degree grade must be a 2:2 or higher."
+          graduated: "To get an adviser, your batchelor's degree grade must be a 2:2 or higher."
     legend:
       teacher_training_adviser_feedback:
         successful_visit: "Did you achieve what you wanted from your visit?"
@@ -982,8 +1045,12 @@ en:
         has_id: "Do you have a teacher reference number (TRN)?"
       teacher_training_adviser_steps_paid_teaching_experience_in_uk:
         has_paid_experience_in_uk: "Do you have paid teaching experience in the UK of at least one term?"
-      teacher_training_adviser_steps_have_a_degree:
-        degree_options: "Do you have a degree?"
+      teacher_training_adviser_steps_degree_status:
+        degree_status_id: "Do you have a degree?"
+      teacher_training_adviser_steps_start_teacher_training:
+        initial_teacher_training_year_id: "When do you want to start your teacher training?"
+      teacher_training_adviser_steps_degree_country:
+        degree_country: "Which country is your degree from?"
       teacher_training_adviser_steps_train_to_teach_in_uk:
         train_to_teach_in_uk: "Did you train to teach in the UK?"
       teacher_training_adviser_steps_uk_telephone:

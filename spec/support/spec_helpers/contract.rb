@@ -256,6 +256,14 @@ module SpecHelpers
       click_on_continue
     end
 
+    def submit_graduation_year_step(graduation_year, step: :degree_status)
+      expect_current_step(step)
+      choose "Not yet, I'm studying for one"
+      fill_in "Which year will you graduate?", with: graduation_year
+
+      click_on_continue
+    end
+
     def submit_review_answers_step
       expect_current_step(:review_answers)
       click_on "Complete sign up"

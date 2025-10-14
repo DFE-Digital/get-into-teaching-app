@@ -16,9 +16,10 @@ module TeacherTrainingAdviser
       super
 
       @returner = wizard_store[:type_id].to_i == Steps::ReturningTeacher::OPTIONS[:returning_to_teaching]
-      @equivalent = wizard_store[:degree_options] == Steps::HaveADegree::DEGREE_OPTIONS[:equivalent]
+      @equivalent = wizard_store[:degree_type_id] == Steps::DegreeCountry::DEGREE_EQUIVALENT
       @callback_booked = wizard_store[:callback_offered] && @equivalent
       @first_name = wizard_store[:first_name]
+      @inferred_degree_status = wizard_store[:inferred_degree_status]
       @hashed_email = wizard_store[:hashed_email] if hash_email_address?
     end
 

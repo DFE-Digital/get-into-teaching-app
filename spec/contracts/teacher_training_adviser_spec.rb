@@ -30,6 +30,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_choice_step("Secondary", :stage_interested_teaching)
         submit_select_step("Physics", :subject_like_to_teach)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("Yes", :citizenship)
         submit_choice_step("UK", :uk_or_overseas)
         submit_uk_address_step(
           postcode: "TE7 5TR",
@@ -49,6 +50,8 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_choice_step("Secondary", :stage_interested_teaching)
         submit_select_step("Physics", :subject_like_to_teach)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("No", :citizenship)
+        submit_choice_step("Yes, I have a visa, pre-settled status or leave to remain", :visa_status)
         submit_choice_step("Overseas", :uk_or_overseas)
         submit_select_step("Brazil", :overseas_country)
         submit_overseas_telephone_step
@@ -67,6 +70,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_choice_step("Secondary", :stage_interested_teaching)
         submit_select_step("Physics", :subject_like_to_teach)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("Yes", :citizenship)
         submit_choice_step("UK", :uk_or_overseas)
         submit_uk_address_step(
           postcode: "TE7 5TR",
@@ -80,14 +84,17 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
     context "when not returning" do
       it "has degree, primary, has gcses, in the UK and telephone" do
         submit_choice_step("No", :returning_teacher)
-        submit_choice_step("Yes", :have_a_degree)
+        submit_choice_step("Yes", :degree_status)
+        submit_choice_step("United Kingdom", :degree_country)
         submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
-        submit_select_step("2:1", :what_degree_class)
+        submit_choice_step("Upper second-class honours (2:1)", :what_degree_class)
+        submit_choice_step("Graduated and exploring my career options", :life_stage)
         submit_choice_step("Primary", :stage_interested_teaching)
         submit_choice_step("Yes", :gcse_maths_english)
         submit_choice_step("Yes", :gcse_science)
-        submit_select_step("2022", :start_teacher_training)
+        submit_choice_step("2022", :start_teacher_training)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("Yes", :citizenship)
         submit_choice_step("UK", :uk_or_overseas)
         submit_uk_address_step(
           postcode: "TE7 5TR",
@@ -99,15 +106,19 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
 
       it "has degree, secondary, retaking gcses, overseas and no telephone" do
         submit_choice_step("No", :returning_teacher)
-        submit_choice_step("Yes", :have_a_degree)
+        submit_choice_step("Yes", :degree_status)
+        submit_choice_step("United Kingdom", :degree_country)
         submit_fill_in_step("What subject is your degree?", "Mathematics", :what_subject_degree)
-        submit_select_step("Not applicable", :what_degree_class)
+        submit_choice_step("Other", :what_degree_class)
+        submit_choice_step("Considering changing my existing career", :life_stage)
         submit_choice_step("Secondary", :stage_interested_teaching)
         submit_choice_step("No", :gcse_maths_english)
         submit_choice_step("Yes", :retake_gcse_maths_english)
         submit_select_step("Chemistry", :subject_interested_teaching)
-        submit_select_step("Not sure", :start_teacher_training)
+        submit_choice_step("Not sure", :start_teacher_training)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("No", :citizenship)
+        submit_choice_step("No, I will need to apply for a visa", :visa_status)
         submit_choice_step("Overseas", :uk_or_overseas)
         submit_select_step("Canada", :overseas_country)
         submit_overseas_telephone_step
@@ -117,12 +128,15 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
 
       it "studying for degree (not final year), overseas and telephone" do
         submit_choice_step("No", :returning_teacher)
-        submit_choice_step("I'm studying for a degree", :have_a_degree)
-        submit_choice_step("First year", :stage_of_degree)
+        submit_graduation_year_step(2023)
+        submit_choice_step("United Kingdom", :degree_country)
         submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
+        submit_choice_step("Teaching assistant or unqualified teacher in a school", :life_stage)
         submit_choice_step("Secondary", :stage_interested_teaching)
         submit_select_step("Maths", :subject_interested_teaching)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("No", :citizenship)
+        submit_choice_step("Not sure", :visa_status)
         submit_choice_step("Overseas", :uk_or_overseas)
         submit_select_step("Barbados", :overseas_country)
         submit_overseas_telephone_step("123456789")
@@ -132,16 +146,19 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
 
       it "studying for degree (final year), overseas and telephone" do
         submit_choice_step("No", :returning_teacher)
-        submit_choice_step("I'm studying for a degree", :have_a_degree)
-        submit_choice_step("Final year", :stage_of_degree)
+        submit_graduation_year_step(2021)
+        submit_choice_step("United Kingdom", :degree_country)
         submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
-        submit_select_step("First class", :what_degree_class)
+        submit_choice_step("First-class honours", :what_degree_class)
+        submit_choice_step("Exploring options for my first career", :life_stage)
         submit_choice_step("Primary", :stage_interested_teaching)
         submit_choice_step("No", :gcse_maths_english)
         submit_choice_step("Yes", :retake_gcse_maths_english)
         submit_choice_step("Yes", :gcse_science)
-        submit_select_step("2021", :start_teacher_training)
+        submit_choice_step("2021", :start_teacher_training)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
+        submit_choice_step("No", :citizenship)
+        submit_choice_step("Not sure", :visa_status)
         submit_choice_step("Overseas", :uk_or_overseas)
         submit_select_step("Barbados", :overseas_country)
         submit_overseas_telephone_step("123456789")
@@ -149,27 +166,21 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         expect(page).to have_text("you're signed up")
       end
 
-      it "equivalent degree, primary, has/retaking gcses, overseas" do
+      it "equivalent degree, lives in uk, book callback" do
         submit_choice_step("No", :returning_teacher)
-        submit_choice_step("I am not a UK citizen and have, or am studying for, an equivalent qualification", :have_a_degree)
-        submit_choice_step("Primary", :stage_interested_teaching)
-        submit_select_step("2022", :start_teacher_training)
+        submit_choice_step("Yes", :degree_status)
+        submit_choice_step("Another country", :degree_country)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
         submit_choice_step("UK", :uk_or_overseas)
-        submit_uk_address_step(
-          postcode: "TE7 5TR",
-        )
         submit_uk_callback_step("123456789", "1:00pm to 1:30pm")
         submit_review_answers_step
         expect(page).to have_text("We'll give you a call")
       end
 
-      it "equivalent degree, secondary, has gcses, is in uk" do
+      it "equivalent degree, lives overseas, book callback" do
         submit_choice_step("No", :returning_teacher)
-        submit_choice_step("I am not a UK citizen and have, or am studying for, an equivalent qualification", :have_a_degree)
-        submit_choice_step("Secondary", :stage_interested_teaching)
-        submit_select_step("Maths", :subject_interested_teaching)
-        submit_select_step("2021", :start_teacher_training)
+        submit_choice_step("Yes", :degree_status)
+        submit_choice_step("Another country", :degree_country)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
         submit_choice_step("Overseas", :uk_or_overseas)
         submit_select_step("China", :overseas_country)
@@ -209,6 +220,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       expect(find_field("Year").value).to eq("1987")
       click_on_continue
 
+      submit_choice_step("Yes", :citizenship)
       submit_choice_step("UK", :uk_or_overseas)
 
       expect_current_step(:uk_address)
@@ -227,15 +239,19 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       it "not returning, existing data, change country" do
         submit_verification_code(candidate_identity)
         submit_choice_step("No", :returning_teacher)
-        submit_choice_step("Yes", :have_a_degree)
+        submit_choice_step("Yes", :degree_status)
+        submit_choice_step("United Kingdom", :degree_country)
 
         expect_current_step(:what_subject_degree)
         expect(page.find_field("What subject is your degree?").value).to eql("Mathematics")
         click_on_continue
 
         expect_current_step(:what_degree_class)
-        expect(page).to have_select("What grade is your degree?", selected: "First class")
+        expect(page).to have_checked_field("First-class honours")
         click_on_continue
+
+        expect_current_step(:life_stage)
+        submit_choice_step("Graduated and exploring my career options", :life_stage)
 
         expect_current_step(:stage_interested_teaching)
         expect(page.find_field("Secondary")).to be_checked
@@ -250,7 +266,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         click_on_continue
 
         expect_current_step(:start_teacher_training)
-        expect(page).to have_select("When do you want to start your teacher training?", selected: "Not sure")
+        expect(page.find_field("Not sure")).to be_checked
         click_on_continue
 
         expect_current_step(:date_of_birth)
@@ -259,6 +275,8 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         expect(find_field("Year").value).to eq("1987")
         click_on_continue
 
+        submit_choice_step("No", :citizenship)
+        submit_choice_step("Not sure", :visa_status)
         submit_choice_step("Overseas", :uk_or_overseas)
 
         expect_current_step(:overseas_country)

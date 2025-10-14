@@ -22,9 +22,13 @@ class PickListItemsApiPresenter
 
   delegate_and_filter(:get_candidate_journey_stages, [222_750_000, 222_750_003])
   delegate_and_filter(:get_qualification_degree_status, [222_750_000, 222_750_006, 222_750_004])
+  delegate_and_filter(:get_qualification_degree_type, [222_750_000, 222_750_005])
+  delegate_and_filter(:get_qualification_uk_degree_grades, [222_750_001, 222_750_002, 222_750_003, 222_750_004, 222_750_005, 222_750_000])
   delegate_and_filter(:get_candidate_situations_for_mailing_list_has_degree, [222_750_003, 222_750_004, 222_750_005, 222_750_006, 222_750_007], :get_candidate_situations)
   delegate_and_filter(:get_candidate_situations_for_mailing_list_degree_in_progress, [222_750_002, 222_750_004, 222_750_005], :get_candidate_situations)
   delegate_and_filter(:get_candidate_situations_for_mailing_list_no_degree, [222_750_000, 222_750_001, 222_750_004, 222_750_005, 222_750_006], :get_candidate_situations)
+  delegate_and_filter(:get_candidate_situations_for_tta_graduate, [222_750_003, 222_750_004, 222_750_005, 222_750_006], :get_candidate_situations)
+  delegate_and_filter(:get_candidate_situations_for_tta_undergraduate, [222_750_002, 222_750_004, 222_750_005], :get_candidate_situations)
   delegate_and_filter(:get_candidate_citizenship, [222_750_000, 222_750_001])
   delegate_and_filter(:get_candidate_visa_status, [222_750_000, 222_750_001, 222_750_002])
   delegate_and_filter(:get_candidate_location, [222_750_000, 222_750_001])

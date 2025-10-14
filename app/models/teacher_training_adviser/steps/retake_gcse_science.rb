@@ -17,11 +17,13 @@ module TeacherTrainingAdviser::Steps
 
     def skipped?
       gcse_science_step = other_step(:gcse_science)
+      degree_country_step = other_step(:degree_country)
+
       gcse_science_skipped = gcse_science_step.skipped?
       has_gcse_science_id = gcse_science_step.has_gcse_science_id
       has_gcse_science = has_gcse_science_id != GcseMathsEnglish::OPTIONS["No"]
 
-      gcse_science_skipped || has_gcse_science
+      gcse_science_skipped || has_gcse_science || degree_country_step.another_country?
     end
   end
 end

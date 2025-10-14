@@ -2,16 +2,7 @@ require "rails_helper"
 
 describe MailingList::Steps::DegreeStatus do
   include_context "with wizard step"
-  before do
-    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_qualification_degree_status).and_return(degree_status_option_types)
-  end
-
-  let(:degree_status_option_types) do
-    Crm::OptionSet::DEGREE_STATUSES.map do |k, v|
-      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
-    end
-  end
+  include_context "with wizard data"
 
   it_behaves_like "a with wizard step"
 
@@ -24,10 +15,7 @@ describe MailingList::Steps::DegreeStatus do
   end
 
   describe "#degree_status_id" do
-    let(:options) { degree_status_option_types.map(&:id) }
-
-    it { is_expected.to allow_value(options.first).for :degree_status_id }
-    it { is_expected.to allow_value(options.last).for :degree_status_id }
+    it { is_expected.to allow_values(222_750_000, 222_750_006, 222_750_004).for :degree_status_id }
     it { is_expected.not_to allow_value(nil).for :degree_status_id }
     it { is_expected.not_to allow_value("").for :degree_status_id }
     it { is_expected.not_to allow_value(12_345).for :degree_status_id }

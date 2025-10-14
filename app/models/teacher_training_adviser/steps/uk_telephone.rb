@@ -22,8 +22,7 @@ module TeacherTrainingAdviser::Steps
       return true if super
 
       uk_address_skipped = other_step(:uk_address).skipped?
-      degree_options = other_step(:have_a_degree).degree_options
-      equivalent_degree = degree_options == HaveADegree::DEGREE_OPTIONS[:equivalent]
+      equivalent_degree = other_step(:degree_country).another_country?
 
       uk_address_skipped || equivalent_degree
     end

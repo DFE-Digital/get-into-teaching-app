@@ -20,11 +20,13 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         TeacherTrainingAdviser::Steps::SubjectTrained,
         TeacherTrainingAdviser::Steps::StageTaught,
         TeacherTrainingAdviser::Steps::SubjectTaught,
-        TeacherTrainingAdviser::Steps::HaveADegree,
+        TeacherTrainingAdviser::Steps::DegreeStatus,
         TeacherTrainingAdviser::Steps::NoDegree,
-        TeacherTrainingAdviser::Steps::StageOfDegree,
+        TeacherTrainingAdviser::Steps::DegreeCountry,
         TeacherTrainingAdviser::Steps::WhatSubjectDegree,
         TeacherTrainingAdviser::Steps::WhatDegreeClass,
+        TeacherTrainingAdviser::Steps::RequiredDegreeClass,
+        TeacherTrainingAdviser::Steps::LifeStage,
         TeacherTrainingAdviser::Steps::StageInterestedTeaching,
         TeacherTrainingAdviser::Steps::GcseMathsEnglish,
         TeacherTrainingAdviser::Steps::RetakeGcseMathsEnglish,
@@ -35,6 +37,8 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         TeacherTrainingAdviser::Steps::StartTeacherTraining,
         TeacherTrainingAdviser::Steps::SubjectLikeToTeach,
         TeacherTrainingAdviser::Steps::DateOfBirth,
+        TeacherTrainingAdviser::Steps::Citizenship,
+        TeacherTrainingAdviser::Steps::VisaStatus,
         TeacherTrainingAdviser::Steps::UkOrOverseas,
         TeacherTrainingAdviser::Steps::UkAddress,
         TeacherTrainingAdviser::Steps::UkTelephone,
@@ -57,7 +61,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         "first_name" => "Joe",
         "last_name" => "Joseph",
         "type_id" => 123,
-        "degree_options" => "equivalent",
+        "degree_status_id" => 456,
         "callback_offered" => true,
       }
     end
@@ -105,6 +109,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
           email: "email@address.com",
           first_name: "Joe",
           last_name: "Joseph",
+          degree_status_id: 456,
           type_id: 123,
           accepted_policy_id: "123",
         })
@@ -125,7 +130,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
       it "prunes the store leaving data required to render the completion page" do
         hashed_email = Digest::SHA256.hexdigest("email@address.com")
         expect(store).to eql({ "type_id" => 123,
-                               "degree_options" => "equivalent",
+                               "degree_status_id" => 456,
                                "callback_offered" => true,
                                "first_name" => "Joe",
                                "hashed_email" => hashed_email })

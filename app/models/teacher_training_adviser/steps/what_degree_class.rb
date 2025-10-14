@@ -1,47 +1,46 @@
 module TeacherTrainingAdviser::Steps
   class WhatDegreeClass < GITWizard::Step
     extend ApiOptions
-
-    OMIT_GRADE_IDS = [
-      222_750_004, # Third class or below
-      222_750_005, # Unknown
-    ].freeze
-
     attribute :uk_degree_grade_id, :integer
+    DEGREE_GRADE_2_2_OR_ABOVE = [222_750_000, 222_750_001, 222_750_002, 222_750_003].freeze # TODO: should we include / exclude "Not applicable" ?
 
     include FunnelTitle
 
     def self.options
-      generate_api_options(GetIntoTeachingApiClient::PickListItemsApi, :get_qualification_uk_degree_grades, OMIT_GRADE_IDS)
+      PickListItemsApiPresenter.new.get_qualification_uk_degree_grades
     end
 
     validates :uk_degree_grade_id, pick_list_items: { method: :get_qualification_uk_degree_grades }
 
     def skipped?
-      have_a_degree_step = other_step(:have_a_degree)
-      have_a_degree_skipped = have_a_degree_step.skipped?
-      have_a_degree = have_a_degree_step.degree_options == HaveADegree::DEGREE_OPTIONS[:yes]
-      studying_final_year = have_a_degree_step.degree_options == HaveADegree::DEGREE_OPTIONS[:studying] && other_step(:stage_of_degree).final_year?
+      degree_status_step = other_step(:degree_status)
+      degree_country_step = other_step(:degree_country)
 
-      have_a_degree_skipped || (!have_a_degree && !studying_final_year)
+      degree_status_step.skipped? ||
+        degree_country_step.another_country? ||
+        (!degree_status_step.has_degree? && !degree_status_step.studying_final_year?)
     end
 
-    def studying?
-      other_step(:have_a_degree).studying?
+    def degree_in_progress?
+      other_step(:degree_status).degree_in_progress?
     end
 
     def reviewable_answers
-      super.tap do |answers|
-        answers["uk_degree_grade_id"] = self.class.options.key(uk_degree_grade_id)
-      end
+      {
+        "uk_degree_grade_id" => uk_degree_grade_id ? I18n.t("helpers.answer.teacher_training_adviser_steps.what_degree_class.uk_degree_grade_id.#{uk_degree_grade_id}", **Value.data) : nil,
+      }
     end
 
     def title_attribute
-      if studying?
+      if other_step(:degree_status).degree_in_progress?
         "uk_degree_grade_id.studying"
       else
         "uk_degree_grade_id.graduated"
       end
+    end
+
+    def degree_grade_2_2_or_above?
+      DEGREE_GRADE_2_2_OR_ABOVE.include?(uk_degree_grade_id)
     end
   end
 end
