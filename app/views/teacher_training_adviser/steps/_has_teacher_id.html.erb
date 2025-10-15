@@ -1,4 +1,4 @@
-<%= f.govuk_radio_buttons_fieldset(:has_id, inline: true, legend: { tag: "h1" }) do %>
+<%= f.govuk_radio_buttons_fieldset(:has_id, legend: { tag: "h1" }) do %>
   <%= f.govuk_radio_button :has_id, true, label: { text: 'Yes' }, link_errors: true %>
   <%= f.govuk_radio_button :has_id, false, label: { text: 'No' }, link_errors: true %>
 <% end %>
