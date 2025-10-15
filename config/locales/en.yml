@@ -744,8 +744,12 @@ en:
             222750004: "No"
         degree_country:
           degree_country:
-            72f5c2e6-74f9-e811-a97a-000d3a2760f2: "United Kingdom"
-            6f9e7b81-e44d-f011-877a-00224886d23e: "Another country"
+            72f5c2e6-74f9-e811-a97a-000d3a2760f2: "The UK"
+            6f9e7b81-e44d-f011-877a-00224886d23e: "Another Country"
+        uk_or_overseas:
+          uk_or_overseas:
+            uk: "In the UK"
+            overseas: "Outside of the UK"
 
         citizenship:
           citizenship:
@@ -991,16 +995,22 @@ en:
       teacher_training_adviser_steps_returning_teacher:
         type_id: "Only select 'yes' if you have English qualified teacher status (QTS)."
       teacher_training_adviser_steps_degree_status:
-        degree_status_id: "To use this service your bachelor's degree or predicted grade needs to be a 2:2 class honours or above."
+        degree_status_id: "To get an adviser, your predicted or achieved bachelor's degree grade must be a 2:2 or higher."
+      teacher_training_adviser_steps_degree_country:
+        degree_country: "If your degree is from outside the UK, you'll need to show that it meets the standards set for teacher training in England."
       teacher_training_adviser_steps_overseas_telephone:
         address_telephone_html: "We recommend you provide us with your phone number as this is the most effective way to talk to your adviser.<br /><br />For international numbers include the country code."
+      teacher_training_adviser_steps_uk_or_overseas:
+        uk_or_overseas: "We use this information to give you tailored advice."
       teacher_training_adviser_steps_date_of_birth:
         date_of_birth: "For example, 31 3 1980"
+      teacher_training_adviser_steps_uk_address:
+        address_postcode: "We try and match you with an adviser providing support in your region."
 
       teacher_training_adviser_steps_citizenship:
         citizenship: "We use this information to give you tailored advice."
       teacher_training_adviser_steps_visa_status:
-        visa_status: "We use this information to give you tailored advice."
+        visa_status: "Our advisers cannot give specific advice about visas, but can direct you to resources and support."
 
       teacher_training_adviser_steps_overseas_country:
         country_id_html: |-

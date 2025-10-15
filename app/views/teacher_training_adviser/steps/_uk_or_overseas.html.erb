@@ -1,1 +1,5 @@
-<%= f.govuk_collection_radio_buttons :uk_or_overseas, [["UK"], ["Overseas"]], :first, legend: { tag: "h1" } %>
+<%= f.govuk_collection_radio_buttons :uk_or_overseas,
+                                     TeacherTrainingAdviser::Steps::UkOrOverseas::OPTIONS,
+                                     :last,
+                                     ->(option) { t("helpers.answer.teacher_training_adviser_steps.uk_or_overseas.uk_or_overseas.#{option.first}") },
+                                     legend: { tag: "h1" } %>

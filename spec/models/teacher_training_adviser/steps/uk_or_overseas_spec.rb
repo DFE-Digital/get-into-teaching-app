@@ -25,11 +25,47 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkOrOverseas do
     end
   end
 
+  describe "#overseas?" do
+    it { is_expected.not_to be_overseas }
+
+    context "when Overseas has been selected" do
+      before { instance.uk_or_overseas = described_class::OPTIONS[:overseas] }
+
+      it { is_expected.to be_overseas }
+    end
+  end
+
+  describe "#uk_or_overseas_key" do
+    subject { instance.uk_or_overseas_key }
+
+    it { is_expected.to be_nil }
+
+    context "when UK has been selected" do
+      before { instance.uk_or_overseas = described_class::OPTIONS[:uk] }
+
+      it { is_expected.to be :uk }
+    end
+
+    context "when Overseas has been selected" do
+      before { instance.uk_or_overseas = described_class::OPTIONS[:overseas] }
+
+      it { is_expected.to be :overseas }
+    end
+  end
+
   describe "#reviewable_answers" do
     subject { instance.reviewable_answers }
 
-    before { instance.uk_or_overseas = described_class::OPTIONS[:overseas] }
+    context "when UK has been selected" do
+      before { instance.uk_or_overseas = described_class::OPTIONS[:uk] }
 
-    it { is_expected.to eq({ "uk_or_overseas" => "Overseas" }) }
+      it { is_expected.to eq({ "uk_or_overseas" => "In the UK" }) }
+    end
+
+    context "when Overseas has been selected" do
+      before { instance.uk_or_overseas = described_class::OPTIONS[:overseas] }
+
+      it { is_expected.to eq({ "uk_or_overseas" => "Outside of the UK" }) }
+    end
   end
 end

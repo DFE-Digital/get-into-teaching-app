@@ -73,6 +73,6 @@ RSpec.describe TeacherTrainingAdviser::Steps::DegreeCountry do
 
     before { instance.degree_country = described_class::ANOTHER_COUNTRY }
 
-    it { is_expected.to eq({ "degree_country" => "Another country" }) }
+    it { is_expected.to eq({ "degree_country" => "Another Country" }) }
   end
 end
