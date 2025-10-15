@@ -16,9 +16,17 @@ module TeacherTrainingAdviser::Steps
       uk_or_overseas == OPTIONS[:overseas]
     end
 
+    def uk_or_overseas_key
+      if uk?
+        :uk
+      elsif overseas?
+        :overseas
+      end
+    end
+
     def reviewable_answers
       {
-        "uk_or_overseas" => uk_or_overseas,
+        "uk_or_overseas" => uk_or_overseas ? I18n.t("helpers.answer.teacher_training_adviser_steps.uk_or_overseas.uk_or_overseas.#{uk_or_overseas_key}", **Value.data) : nil,
       }
     end
   end

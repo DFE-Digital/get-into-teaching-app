@@ -148,7 +148,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       expect(page).to have_css "h1", text: "Where do you live?"
       click_on "Next step"
       expect(page).to have_title("Error: Where do you live? - Adviser sign up | Get Into Teaching GOV.UK")
-      choose "UK"
+      choose "In the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What's your postcode?"
@@ -229,7 +229,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
-      choose "UK"
+      choose "In the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What's your postcode?"
@@ -307,7 +307,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
-      choose "UK"
+      choose "In the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What's your postcode?"
@@ -389,7 +389,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
-      choose "UK"
+      choose "In the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What's your postcode"
@@ -441,7 +441,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country is your degree from?"
-      choose "Another country"
+      choose "Another Country"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Enter your date of birth"
@@ -449,7 +449,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
-      choose "Overseas"
+      choose "Outside of the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country do you live in?"
@@ -505,7 +505,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country is your degree from?"
-      choose "Another country"
+      choose "Another Country"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Enter your date of birth"
@@ -513,7 +513,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
-      choose "UK"
+      choose "In the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "You need to speak to our team"
@@ -564,7 +564,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         click_on "Next step"
 
         expect(page).to have_css "h1", text: "Which country is your degree from?"
-        choose "Another country"
+        choose "Another Country"
         click_on "Next step"
 
         expect(page).to have_css "h1", text: "Enter your date of birth"
@@ -572,7 +572,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         click_on "Next step"
 
         expect(page).to have_css "h1", text: "Where do you live?"
-        choose "Overseas"
+        choose "Outside of the UK"
         click_on "Next step"
 
         expect(page).to have_css "h1", text: "Which country do you live in?"
@@ -620,7 +620,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         click_on "Next step"
 
         expect(page).to have_css "h1", text: "Which country is your degree from?"
-        choose "Another country"
+        choose "Another Country"
         click_on "Next step"
 
         expect(page).to have_css "h1", text: "Enter your date of birth"
@@ -628,7 +628,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         click_on "Next step"
 
         expect(page).to have_css "h1", text: "Where do you live?"
-        choose "UK"
+        choose "In the UK"
         click_on "Next step"
 
         expect(page).to have_css "h1", text: "You need to speak to our team"
@@ -676,7 +676,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country is your degree from?"
-      choose "United Kingdom"
+      choose "The UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What subject is your degree?"
@@ -708,7 +708,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
-      choose "Overseas"
+      choose "Outside of the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country do you live in?"
@@ -756,7 +756,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country is your degree from?"
-      choose "United Kingdom"
+      choose "The UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What subject is your degree?"
@@ -800,7 +800,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
-      choose "Overseas"
+      choose "Outside of the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country do you live in?"
@@ -883,7 +883,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
-      choose "UK"
+      choose "In the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What's your postcode?"
@@ -957,7 +957,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
-      choose "UK"
+      choose "In the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What's your postcode?"
@@ -1021,7 +1021,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country is your degree from?"
-      choose "United Kingdom"
+      choose "The UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What subject is your degree?"
@@ -1076,7 +1076,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country is your degree from?"
-      choose "United Kingdom"
+      choose "The UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What subject is your degree?"
@@ -1123,7 +1123,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country is your degree from?"
-      choose "United Kingdom"
+      choose "The UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What subject is your degree?"
@@ -1209,7 +1209,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which country is your degree from?"
-      choose "Another country"
+      choose "Another Country"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Enter your date of birth"
@@ -1219,7 +1219,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
-      choose "UK"
+      choose "In the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "You need to speak to our team"
@@ -1302,7 +1302,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Where do you live?"
-      choose "UK"
+      choose "In the UK"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "What's your postcode?"

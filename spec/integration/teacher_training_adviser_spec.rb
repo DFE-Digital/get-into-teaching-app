@@ -32,9 +32,9 @@ RSpec.describe "Teacher Training Adviser integration tests", :integration, :mech
   def complete_sign_up
     submit_label_step("No", :returning_teacher)
     submit_label_step("Yes", :degree_status)
-    submit_label_step("Another country", :degree_country)
+    submit_label_step("Another Country", :degree_country)
     submit_date_of_birth_step(Date.new(1974, 3, 16))
-    submit_label_step("UK", :uk_or_overseas)
+    submit_label_step("In the UK", :uk_or_overseas)
     submit_uk_callback_step("123456789")
     submit_review_answers_step
   end
