@@ -87,6 +87,13 @@ provider_groups:
       telephone: "07538 473145"
       international_phone: "+447538473145"
       
+    - header: "University of Warwick"
+      link: "https://warwick.ac.uk/fac/soc/cte/professionaldevelopment/ao/"
+      name: "Vikki Armeson"
+      email: "mailto:assessmentonlyQTS@warwick.ac.uk"
+      telephone: "02476 150269"
+      international_phone: "+442476150269"
+      
   East Midlands:
     providers:
     - header: "Ambition Teacher Training"
@@ -766,12 +773,12 @@ provider_groups:
       telephone: "0191 515 2159"
       international_phone: "+441915152159"
       
-    - header: "University of York"
-      link: "https://www.york.ac.uk/education/pgce/"
-      name: "Georgia Ramsay"
-      email: "georgia.ramsay@york.ac.uk"
-      telephone: "01904 326401"
-      international_phone: "+441904326401"
+    - header: "University of Warwick"
+      link: "https://warwick.ac.uk/fac/soc/cte/professionaldevelopment/ao/"
+      name: "Vikki Armeson"
+      email: "mailto:assessmentonlyQTS@warwick.ac.uk"
+      telephone: "02476 150269"
+      international_phone: "+442476150269"
       
 ---
 
