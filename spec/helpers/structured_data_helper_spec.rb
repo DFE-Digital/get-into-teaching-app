@@ -188,10 +188,13 @@ describe StructuredDataHelper, type: "helper" do
           price: 0,
           priceCurrency: "GBP",
           availability: described_class::IN_STOCK,
+          url: event_url(event.readable_id),
+          validFrom: Date.yesterday.iso8601,
         },
       })
 
-      expect(data).not_to have_key(:organizer)
+      expect(data).to have_key(:organizer)
+      expect(data).to have_key(:performer)
       expect(data).not_to have_key(:location)
     end
 
@@ -234,12 +237,41 @@ describe StructuredDataHelper, type: "helper" do
     context "when there is provider information" do
       let(:event) { build(:event_api, :with_provider_info) }
 
-      it "includes organizer" do
+      it "includes an organization in the organizer" do
         expect(data[:organizer]).to include({
           "@type": "Organization",
           name: event.provider_organiser,
           email: event.provider_contact_email,
           url: event.provider_website_url,
+        })
+      end
+
+      it "includes an organization in the performer" do
+        expect(data[:performer]).to include({
+          "@type": "Organization",
+          name: event.provider_organiser,
+          email: event.provider_contact_email,
+          url: event.provider_website_url,
+        })
+      end
+    end
+
+    context "when there is default provider information" do
+      let(:event) { build(:event_api) }
+
+      it "includes the default government organization in the organizer" do
+        expect(data[:organizer]).to include({
+          "@type": "GovernmentOrganization",
+          name: "Get Into Teaching",
+          url: root_url,
+        })
+      end
+
+      it "includes the default government organization in the performer" do
+        expect(data[:performer]).to include({
+          "@type": "GovernmentOrganization",
+          name: "Get Into Teaching",
+          url: root_url,
         })
       end
     end

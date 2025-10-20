@@ -71,7 +71,8 @@ module StructuredDataHelper
     return unless event.type_id.in?([git_event_type_id])
 
     building_data = event_building_data(event)
-    provider_data = event_provider_data(event)
+    organizer_data = event_provider_data(:organizer, event)
+    performer_data = event_provider_data(:performer, event)
     image_data = event_image_data(event)
 
     data = {
@@ -86,8 +87,10 @@ module StructuredDataHelper
         price: 0,
         priceCurrency: "GBP",
         availability: Crm::EventStatus.new(event).open? ? IN_STOCK : SOLD_OUT,
+        url: event_url(event.readable_id),
+        validFrom: Date.yesterday, # the validator suggests that we must include a ValidFrom date
       },
-    }.merge(building_data, provider_data, image_data)
+    }.merge(building_data, organizer_data, performer_data, image_data)
 
     structured_data("Event", data)
   end
@@ -110,17 +113,25 @@ module StructuredDataHelper
     { image: images }
   end
 
-  def event_provider_data(event)
-    return {} unless event_has_provider_info?(event)
-
-    {
-      organizer: {
-        "@type": "Organization",
-        name: event.provider_organiser,
-        email: event.provider_contact_email,
-        url: event.provider_website_url,
-      },
-    }
+  def event_provider_data(tag, event)
+    if event_has_provider_info?(event)
+      {
+        "#{tag}": {
+          "@type": "Organization",
+          name: event.provider_organiser,
+          email: event.provider_contact_email,
+          url: event.provider_website_url,
+        },
+      }
+    else # no provider info, use default values
+      {
+        "#{tag}": {
+          "@type": "GovernmentOrganization",
+          "url": root_url,
+          "name": "Get Into Teaching",
+        },
+      }
+    end
   end
 
   def event_building_data(event)
