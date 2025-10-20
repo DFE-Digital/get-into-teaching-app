@@ -616,7 +616,7 @@ GEM
     rubyntlm (0.6.5)
       base64
     rubyzip (2.4.1)
-    secure_headers (6.5.0)
+    secure_headers (7.1.0)
     securerandom (0.4.1)
     selenium-webdriver (4.33.0)
       base64 (~> 0.2)
