@@ -80,6 +80,13 @@ provider_groups:
       telephone: "02031943200"
       international_phone: "+442031943200"
       
+    - header: "The Buckingham Partnership SCITT"
+      link: "https://www.bpscitt.uk/page/?title=Assessment+Only+Route&pid=16"
+      name: "Olivia Lewis"
+      email: "olewis@royallatin.org"
+      telephone: "01280 827316"
+      international_phone: "+441280827316"
+      
     - header: "The University of Buckingham"
       link: "https://www.buckingham.ac.uk/courses/postgraduate/assessment-only-ao-route-to-qualified-teacher-status-primary-and-secondary"
       name: "Shonali Mathur"
@@ -110,6 +117,13 @@ provider_groups:
       telephone: "07961 078589"
       international_phone: "+447961078589"
       
+    - header: "Exchange Teacher Training"
+      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
+      name: "Samantha Rhodes"
+      email: "info@exchangeteachertraining.com"
+      telephone: "03451 450075"
+      international_phone: "+443451450075"
+      extension: "(option 1)"
     - header: "Inspiring Leaders"
       link: "https://inspiringleadersscitt.com/aor/"
       name: "Dirk Smith"
@@ -161,6 +175,13 @@ provider_groups:
       telephone: "01582 599921"
       international_phone: "+441582599921"
       
+    - header: "Exchange Teacher Training"
+      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
+      name: "Samantha Rhodes"
+      email: "info@exchangeteachertraining.com"
+      telephone: "03451 450075"
+      international_phone: "+443451450075"
+      extension: "(option 1)"
     - header: "Future Teacher Training"
       link: "https://www.futureteachertraining.org/"
       name: "Ciara Sutton"
@@ -282,13 +303,6 @@ provider_groups:
       telephone: "020 8410 0006"
       international_phone: "+442084100006"
       
-    - header: "The Buckingham Partnership SCITT"
-      link: "https://www.bpscitt.uk/page/?title=Assessment+Only+Route&pid=16"
-      name: "Olivia Lewis"
-      email: "olewis@royallatin.org"
-      telephone: "01280 827316"
-      international_phone: "+441280827316"
-      
     - header: "The Kemnal Academies Trust (TKAT)"
       link: "https://scitt.tkat.org/820/assessment-only-route"
       name: "Steve Excell"
@@ -312,6 +326,13 @@ provider_groups:
       
   North East:
     providers:
+    - header: "Exchange Teacher Training"
+      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
+      name: "Samantha Rhodes"
+      email: "info@exchangeteachertraining.com"
+      telephone: "03451 450075"
+      international_phone: "+443451450075"
+      extension: "(option 1)"
     - header: "University of Sunderland"
       link: "https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/"
       name: "Jill Wilkinson"
@@ -484,13 +505,6 @@ provider_groups:
       telephone: "020 8410 0006"
       international_phone: "+442084100006"
       
-    - header: "The Buckingham Partnership SCITT"
-      link: "https://www.bpscitt.uk/page/?title=Assessment+Only+Route&pid=16"
-      name: "Olivia Lewis"
-      email: "olewis@royallatin.org"
-      telephone: "01280 827316"
-      international_phone: "+441280827316"
-      
     - header: "The Grand Union Training Partnership"
       link: "https://www.gutp.co.uk/index.php/assessment-only"
       name: "Kate Martin"
@@ -658,6 +672,13 @@ provider_groups:
       telephone: "020 3846 5828"
       international_phone: "+442038465828"
       
+    - header: "Exchange Teacher Training"
+      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
+      name: "Samantha Rhodes"
+      email: "info@exchangeteachertraining.com"
+      telephone: "03451 450075"
+      international_phone: "+443451450075"
+      extension: "(option 1)"
     - header: "GORSE SCITT"
       link: "https://gorsescitt.org.uk/"
       name: "Nicci Cornfoot"
