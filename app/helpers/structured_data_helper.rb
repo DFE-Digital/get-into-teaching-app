@@ -88,7 +88,7 @@ module StructuredDataHelper
         priceCurrency: "GBP",
         availability: Crm::EventStatus.new(event).open? ? IN_STOCK : SOLD_OUT,
         url: event_url(event.readable_id),
-        validFrom: Date.yesterday # the validator suggests that we must include a ValidFrom date
+        validFrom: Date.yesterday, # the validator suggests that we must include a ValidFrom date
       },
     }.merge(building_data, organizer_data, performer_data, image_data)
 
@@ -129,7 +129,7 @@ module StructuredDataHelper
           "@type": "GovernmentOrganization",
           "url": root_url,
           "name": "Get Into Teaching",
-        }
+        },
       }
     end
   end
