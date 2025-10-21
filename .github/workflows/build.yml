@@ -335,7 +335,7 @@ jobs:
         uses: DFE-Digital/github-actions/set-up-environment@master
 
       - name: Setup sonarqube
-        uses: warchant/setup-sonar-scanner@v8
+        uses: warchant/setup-sonar-scanner@v9
 
       - name: Download Artifacts
         uses: actions/download-artifact@v5
