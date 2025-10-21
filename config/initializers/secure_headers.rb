@@ -56,7 +56,6 @@ SecureHeaders::Configuration.default do |config|
   assets << ENV["APP_ASSETS_URL"] if ENV["APP_ASSETS_URL"].present?
 
   config.csp = {
-    block_all_mixed_content: true,
     upgrade_insecure_requests: !Rails.env.development?, # see https://www.w3.org/TR/upgrade-insecure-requests/
     report_uri: %w[/csp_reports],
 
