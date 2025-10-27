@@ -49,7 +49,7 @@ module GetIntoTeachingWebsite
     config.skylight.environments.append("preprod", "dev", "test", "staging", "rolling")
 
     # Log Skylight to STDOUT
-    config.skylight.logger = Logger.new(STDOUT)
+    config.skylight.logger = Logger.new($stdout)
   end
 end
 
