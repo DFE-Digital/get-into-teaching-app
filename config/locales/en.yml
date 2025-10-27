@@ -894,10 +894,10 @@ en:
         last_name: Last name
         email: Email address
       events_steps_accessibility_support:
-        accessibility_support: "Accessibility at this event"
-        support_required: "To attend this event, do you need any extra accessibility support that’s not listed on this page?"
+        accessibility_support: "If you have a disability, health condition or impairment"
+        support_required: "When you're at the event, will you need any extra support that's not listed on this page?"
       events_steps_accessibility_needs:
-        accessibility_needs_for_event: "Tell us about the extra accessibility support you need"
+        accessibility_needs_for_event: "Tell us about the extra accessibility support you need at the event"
       events_steps_contact_details:
         address_telephone: What's your telephone number? (optional)
 
@@ -941,7 +941,7 @@ en:
     hint:
       events_steps_accessibility_support:
         accessibility_support: |-
-          The venue for this event has the following accessibility features:
+          This is an in-person event, you cannot attend virtually. We cannot provide travel funding. The venue for this event has the following accessibility features:
       events_steps_accessibility_needs:
         accessibility_needs_for_event: "Our team may contact you to discuss your support request."
       events_steps_contact_details:
