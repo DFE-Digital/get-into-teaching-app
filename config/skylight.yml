@@ -10,3 +10,6 @@ preprod:
   env: <%= ENV['SKYLIGHT_ENV'] %>
 rolling:
   env: <%= ENV['SKYLIGHT_ENV'] %>
+
+ignored_endpoints:
+  - HealthchecksController#show
