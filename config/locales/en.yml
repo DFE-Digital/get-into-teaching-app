@@ -1070,11 +1070,11 @@ en:
       teacher_training_adviser_steps_overseas_callback:
         fieldset: "Choose a time"
       teacher_training_adviser_steps_overseas_time_zone:
-        fieldset: "You need to speak to our team"
+        fieldset: "You need to speak to our team (temp version to ignore quotas)"
       teacher_training_adviser_steps_previous_teacher_id:
         fieldset: "What is your teacher reference number (TRN)?"
       teacher_training_adviser_steps_uk_callback:
-        fieldset: "You need to speak to our team"
+        fieldset: "You need to speak to our team (temp version to ignore quotas)"
 
   internal:
     status:
