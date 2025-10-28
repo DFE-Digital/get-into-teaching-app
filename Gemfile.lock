@@ -31,8 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: da90464152fa53d9603343727390585c264d0b97
-  branch: v4.3.7.2
+  revision: cf34bef1945381469e1098164c685dc1e6266eab
   specs:
     get_into_teaching_api_client (4.3.7.2)
       faraday (>= 1.0.1, < 3.0)
@@ -166,7 +165,7 @@ GEM
     amazing_print (1.8.1)
     ast (2.4.3)
     base64 (0.3.0)
-    benchmark (0.4.1)
+    benchmark (0.5.0)
     better_html (2.1.1)
       actionview (>= 6.0)
       activesupport (>= 6.0)
@@ -534,7 +533,7 @@ GEM
       tsort
     redis (5.4.1)
       redis-client (>= 0.22.0)
-    redis-client (0.25.2)
+    redis-client (0.26.1)
       connection_pool
     redis-session-store (0.11.6)
       actionpack (>= 5.2.4.1, < 9)
