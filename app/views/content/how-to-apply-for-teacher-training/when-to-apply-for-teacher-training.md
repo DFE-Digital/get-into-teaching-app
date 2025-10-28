@@ -64,7 +64,7 @@ This is the last day you’ll be able to apply for a postgraduate teacher traini
 
 This is the last day for training providers to make a decision on all applications for courses starting in $recruitmentcycle_coursestart$. 
 
-If a decision has not been made by $recruitmentcycle_providerdeadline$, your applications will automatically be rejected so that you can start applying for next year’s courses in $recruitmentcycle_openingmonth$. 
+If a decision has not been made before $recruitmentcycle_providerdeadline$, your applications will automatically be rejected so that you can start applying for next year’s courses in $recruitmentcycle_openingmonth$. 
 
 ## Interview timeline 
 
