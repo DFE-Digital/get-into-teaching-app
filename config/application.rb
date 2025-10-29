@@ -47,6 +47,9 @@ module GetIntoTeachingWebsite
     config.view_component.default_preview_layout = "component_preview"
 
     config.skylight.environments.append("preprod", "dev", "test", "staging", "rolling")
+
+    # Log Skylight to STDOUT
+    config.skylight.logger = Logger.new($stdout)
   end
 end
 
