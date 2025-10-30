@@ -336,6 +336,8 @@ jobs:
 
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@v9
+        with:
+          version: 5.0.2.4997
 
       - name: Download Artifacts
         uses: actions/download-artifact@v5
@@ -376,9 +378,9 @@ jobs:
     name: Review Deployment Process
     needs: [ build_release ]
     if: |
-      github.ref != 'refs/heads/master' && 
+      github.ref != 'refs/heads/master' &&
       (
-        github.actor != 'dependabot[bot]' || 
+        github.actor != 'dependabot[bot]' ||
         contains(github.event.pull_request.labels.*.name, 'deploy')
       )
     runs-on: ubuntu-latest
