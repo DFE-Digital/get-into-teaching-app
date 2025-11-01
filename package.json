@@ -15,7 +15,7 @@
     "babel-plugin-macros": "^3.1.0",
     "compression-webpack-plugin": "11",
     "css-loader": "^7.1.2",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.19",
     "dfe-autocomplete": "github:DFE-Digital/dfe-autocomplete",
     "file-loader": "^6.2.0",
     "flatpickr": "^4.6.13",
