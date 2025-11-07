@@ -46,9 +46,9 @@
   </section>
 </div>
 
-<%= tag.div id: "mailing-list-degree-status", class: "hidden", data: { id: @degree_status_id, key: @inferred_degree_status || @degree_status_key } %>
-<%= tag.div id: "mailing-list-citizenship", class: "hidden", data: { id: @citizenship, key: @citizenship_key } if @citizenship %>
-<%= tag.div id: "mailing-list-situation", class: "hidden", data: { id: @situation, key: @situation_key } if @situation %>
-<%= tag.div id: "mailing-list-visa-status", class: "hidden", data: { id: @visa_status, key: @visa_status_key } if @visa_status %>
-<%= tag.div id: "mailing-list-location", class: "hidden", data: { id: @location, key: @location_key } if @location %>
+<%= tag.div id: "mailing-list-degree-status", class: "hidden", data: { id: @degree_status.id, key: @inferred_degree_status || @degree_status.value } if @degree_status %>
+<%= tag.div id: "mailing-list-citizenship", class: "hidden", data: { id: @citizenship.id, value: @citizenship.value } if @citizenship %>
+<%= tag.div id: "mailing-list-situation", class: "hidden", data: { id: @situation.id, value: @situation.value } if @situation %>
+<%= tag.div id: "mailing-list-visa-status", class: "hidden", data: { id: @visa_status.id, value: @visa_status.value } if @visa_status %>
+<%= tag.div id: "mailing-list-location", class: "hidden", data: { id: @location.id, value: @location.value } if @location %>
 <%= tag.div id: "hashed-email", class: "hidden", data: { id: "hashed-email", value: @hashed_email } if @hashed_email %>
