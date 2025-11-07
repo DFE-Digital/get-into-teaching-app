@@ -50,6 +50,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_title("You're signed up for personalised guidance | Get Into Teaching GOV.UK")
     expect(page).to have_text "Test, you're signed up"
+
+    expect(page).to have_css "#mailing-list-degree-status", visible: false
+    expect(page).to have_css "#mailing-list-citizenship", visible: false
+    expect(page).to have_css "#mailing-list-situation", visible: false
+    expect(page).not_to have_css "#mailing-list-visa-status", visible: false
+    expect(page).not_to have_css "#mailing-list-location", visible: false
   end
 
   scenario "Full journey as an on-campus candidate, non-UK citizen, living inside the UK" do
@@ -105,6 +111,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     # We pass this to the BAM tracking pixel in GTM.
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
+
+    expect(page).to have_css "#mailing-list-degree-status", visible: false
+    expect(page).to have_css "#mailing-list-citizenship", visible: false
+    expect(page).to have_css "#mailing-list-situation", visible: false
+    expect(page).to have_css "#mailing-list-visa-status", visible: false
+    expect(page).to have_css "#mailing-list-location", visible: false
   end
 
   scenario "Full journey as an on-campus candidate that qualifies for the welcome guide, UK citizen" do
@@ -148,6 +160,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     # We pass this to the BAM tracking pixel in GTM.
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
+
+    expect(page).to have_css "#mailing-list-degree-status", visible: false
+    expect(page).to have_css "#mailing-list-citizenship", visible: false
+    expect(page).to have_css "#mailing-list-situation", visible: false
+    expect(page).not_to have_css "#mailing-list-visa-status", visible: false
+    expect(page).not_to have_css "#mailing-list-location", visible: false
   end
 
   scenario "Full journey as an on-campus candidate (invalid channel_id), non-UK citizen" do
@@ -191,6 +209,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "Test, you're signed up"
+
+    expect(page).to have_css "#mailing-list-degree-status", visible: false
+    expect(page).to have_css "#mailing-list-citizenship", visible: false
+    expect(page).to have_css "#mailing-list-situation", visible: false
+    expect(page).to have_css "#mailing-list-visa-status", visible: false
+    expect(page).to have_css "#mailing-list-location", visible: false
   end
 
   scenario "Full journey as a new candidate without a degree and not studying for one shows next steps, UK citizen" do
