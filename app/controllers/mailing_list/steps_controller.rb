@@ -21,10 +21,14 @@ module MailingList
       super
 
       @first_name = wizard_store[:first_name]
-      @degree_status_id = wizard_store[:degree_status_id]
-      @inferred_degree_status = wizard_store[:inferred_degree_status]
-      @degree_status_key = degree_status_key(@degree_status_id) if @degree_status_id
       @hashed_email = wizard_store[:hashed_email] if hash_email_address?
+      @inferred_degree_status = wizard_store[:inferred_degree_status]
+
+      @degree_status = degree_status(wizard_store[:degree_status_id])
+      @citizenship = citizenship(wizard_store[:citizenship])
+      @situation = situation(wizard_store[:situation])
+      @visa_status = visa_status(wizard_store[:visa_status])
+      @location = location(wizard_store[:location])
     end
 
   protected
@@ -81,12 +85,24 @@ module MailingList
       breadcrumb @page_title, request.path
     end
 
-    def degree_statuses
-      @degree_statuses ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_qualification_degree_status
+    def degree_status(id)
+      GetIntoTeachingApiClient::PickListItemsApi.new.get_qualification_degree_status.find { |x| x.id == id }
     end
 
-    def degree_status_key(id)
-      degree_statuses.find { |item| item.id == id }.value if id
+    def citizenship(id)
+      GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_citizenship.find { |x| x.id == id }
+    end
+
+    def situation(id)
+      GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_situations.find { |x| x.id == id }
+    end
+
+    def visa_status(id)
+      GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_visa_status.find { |x| x.id == id }
+    end
+
+    def location(id)
+      GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_location.find { |x| x.id == id }
     end
   end
 end

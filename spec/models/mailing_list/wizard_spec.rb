@@ -133,6 +133,9 @@ describe MailingList::Wizard do
         "sub_channel_id" => wizardstore[:sub_channel_id],
         "graduation_year" => wizardstore[:graduation_year],
         "situation" => wizardstore[:situation],
+        "location" => wizardstore[:location],
+        "visa_status" => wizardstore[:visa_status],
+        "citizenship" => wizardstore[:citizenship],
       })
     end
 
