@@ -22,7 +22,7 @@ If you do not already have an undergraduate degree, you may be eligible to do a 
 
 The TDA is a teacher training programme which offers a new route to become a qualified teacher. 
 
-The [teacher training providers confirmed so far offer TDAs in secondary maths](https://www.gov.uk/government/publications/secondary-maths-teacher-degree-apprenticeship-funding-pilot-providers/providers-selected-to-deliver-the-teacher-degree-apprenticeship-tda-funding-pilot). TDAs in other subjects will be added throughout the year, up until September 2025, with training due to start in autumn 2025. 
+The [teacher training providers confirmed so far offer TDAs in secondary maths](https://www.gov.uk/government/publications/secondary-maths-teacher-degree-apprenticeship-funding-pilot-providers/providers-selected-to-deliver-the-teacher-degree-apprenticeship-tda-funding-pilot). TDAs in other subjects will be added throughout the year, up until September 2026, with training due to start in autumn 2026. 
 
 $tda$
 $teacher-degree-apprenticeships$
