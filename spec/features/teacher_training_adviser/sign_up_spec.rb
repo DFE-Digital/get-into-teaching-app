@@ -419,7 +419,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Complete sign up"
 
       expect(page).to have_css "h1", text: "John, you're signed up."
-      expect(page).to have_text "A return to teaching adviser will email you within 3 working days to outline your next steps"
+      expect(page).to have_text "A return to teaching adviser will email you within 10 working days to outline your next steps"
       expect(page).to have_text "Get support returning to teaching"
       expect(page).not_to have_text "Discover the different ways to train"
       expect(page).not_to have_text "Find out about funding"
