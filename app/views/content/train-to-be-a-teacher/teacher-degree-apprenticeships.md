@@ -32,7 +32,7 @@ $teacher-degree-apprenticeships$
 ## How do teacher degree apprenticeships work?
 During a teacher degree apprenticeship you’ll work in a school and earn a salary while getting a bachelor’s degree and [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
  
-The teacher degree apprenticeship is a 4-year, full-time course that lets you train as a teacher with an accredited teacher training provider. Trainee teachers will spend an average of 40% of their time (2 days a week) studying for their degree with a university.
+The teacher degree apprenticeship is a multi-year, full-time course that lets you train as a teacher with an accredited teacher training provider. Trainee teachers will spend an average of 40% of their time (2 days a week) studying for their degree with a university.
 
 Some TDA providers will want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are.
 
