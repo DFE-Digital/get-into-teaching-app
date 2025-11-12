@@ -25,7 +25,7 @@ provider_groups:
       international_phone: "+442038465828"
       
     - header: "Chiltern Training Group"
-      link: "www.ctg.ac.uk"
+      link: "https://www.ctg.ac.uk"
       name: "Claire Justin"
       email: "admin@ctg.ac.uk"
       telephone: "01582493680"
@@ -506,7 +506,7 @@ provider_groups:
       international_phone: "+441865518209"
       
     - header: "OTT SCITT"
-      link: "www.ott-scitt.org.uk"
+      link: "https://www.ott-scitt.org.uk"
       name: "Marion Rawlings"
       email: "info@ott-scitt.org.uk"
       telephone: "01865 518209"
@@ -562,7 +562,7 @@ provider_groups:
       international_phone: "+441183787237"
       
     - header: "Xavier Teach SouthEast"
-      link: "www.teachsoutheast.co.uk"
+      link: "https://www.teachsoutheast.co.uk"
       name: "Alison Maingard"
       email: "a.maingard@xaviercet.org.uk"
       telephone: "01932 578 682"
@@ -585,7 +585,7 @@ provider_groups:
       international_phone: "+441202662038"
       
     - header: "Cornwall SCITT"
-      link: "www.cornwallscitt.org"
+      link: "https://www.cornwallscitt.org"
       name: "Lianne Knibb"
       email: "liannek@truro-penwith.ac.uk"
       telephone: "01872 305728"
@@ -606,7 +606,7 @@ provider_groups:
       international_phone: "+441458449418"
       
     - header: "OTT SCITT"
-      link: "www.ott-scitt.org.uk"
+      link: "https://www.ott-scitt.org.uk"
       name: "Marion Rawlings"
       email: "info@ott-scitt.org.uk"
       telephone: "01865 518209"
@@ -731,7 +731,7 @@ provider_groups:
       international_phone: "+441132837123"
       
     - header: "North Lincolnshire SCITT Partnership"
-      link: "www.northlincs.gov.uk/traintoteach"
+      link: "https://www.northlincs.gov.uk/traintoteach"
       name: "Vicky Crossley"
       email: "vicky.crossley@northlincs.gov.uk"
       telephone: "01724 297119"
