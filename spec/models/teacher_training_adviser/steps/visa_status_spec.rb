@@ -9,7 +9,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::VisaStatus do
     it { is_expected.to respond_to :visa_status }
   end
 
-  describe "#citizenship" do
+  describe "#visa_status" do
     it { is_expected.not_to allow_value("").for :visa_status }
     it { is_expected.not_to allow_value(nil).for :visa_status }
     it { is_expected.not_to allow_value("Denmark").for :visa_status }

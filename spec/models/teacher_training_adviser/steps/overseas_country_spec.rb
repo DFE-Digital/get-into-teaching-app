@@ -22,13 +22,13 @@ RSpec.describe TeacherTrainingAdviser::Steps::OverseasCountry do
   end
 
   describe "#skipped?" do
-    it "returns false if uk_or_overseas is Overseas" do
-      wizardstore["uk_or_overseas"] = TeacherTrainingAdviser::Steps::UkOrOverseas::OPTIONS[:overseas]
+    it "returns false if location is Overseas" do
+      wizardstore["location"] = TeacherTrainingAdviser::Steps::Location::OUTSIDE_THE_UK
       expect(subject).not_to be_skipped
     end
 
-    it "returns true if uk_or_overseas is UK" do
-      wizardstore["uk_or_overseas"] = TeacherTrainingAdviser::Steps::UkOrOverseas::OPTIONS[:uk]
+    it "returns true if location is UK" do
+      wizardstore["location"] = TeacherTrainingAdviser::Steps::Location::INSIDE_THE_UK
       expect(subject).to be_skipped
     end
   end

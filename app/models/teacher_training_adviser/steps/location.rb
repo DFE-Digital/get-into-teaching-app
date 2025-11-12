@@ -4,7 +4,7 @@ module TeacherTrainingAdviser::Steps
     OUTSIDE_THE_UK = 222_750_001
 
     attribute :location, :integer
-    validates :location, inclusion: { in: :locations_ids }
+    validates :location, inclusion: { in: :location_ids }
 
     include FunnelTitle
 
@@ -12,7 +12,7 @@ module TeacherTrainingAdviser::Steps
       @locations ||= PickListItemsApiPresenter.new.get_candidate_location
     end
 
-    def locations_ids
+    def location_ids
       locations.map { |option| option.id.to_i }
     end
 
