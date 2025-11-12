@@ -5,15 +5,6 @@ RSpec.describe TeacherTrainingAdviser::Steps::Location do
   include_context "with wizard data"
   it_behaves_like "a with wizard step"
 
-  # let(:locations) do
-  #   %i[united_kingdom outside_united_kingdom].map { |trait| build(:location, trait) }
-  # end
-  # let(:location_ids) { locations.map(&:id) }
-
-  # before do
-  #   allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to receive(:get_candidate_location) { locations }
-  # end
-
   describe "attributes" do
     it { is_expected.to respond_to :location }
   end
