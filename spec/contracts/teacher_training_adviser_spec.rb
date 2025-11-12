@@ -38,6 +38,9 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_uk_telephone_step("123456789")
         submit_review_answers_step
         expect(page).to have_text("you're signed up")
+
+        expect(page).to have_css "#teacher-training-citizenship[data-id=222750000]", visible: false
+        expect(page).to have_css "#teacher-training-location[data-id=222750000]", visible: false
       end
 
       it "no teacher reference number, paid UK experience, overseas and no telephone" do
@@ -57,6 +60,10 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_overseas_telephone_step
         submit_review_answers_step
         expect(page).to have_text("you're signed up")
+
+        expect(page).to have_css "#teacher-training-citizenship[data-id=222750001]", visible: false
+        expect(page).to have_css "#teacher-training-visa-status[data-id=222750000]", visible: false
+        expect(page).to have_css "#teacher-training-location[data-id=222750001]", visible: false
       end
 
       it "teacher reference number, no paid UK experience, trained in the uk, in the UK and telephone" do
@@ -78,6 +85,9 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_uk_telephone_step("123456789")
         submit_review_answers_step
         expect(page).to have_text("you're signed up")
+
+        expect(page).to have_css "#teacher-training-citizenship[data-id=222750000]", visible: false
+        expect(page).to have_css "#teacher-training-location[data-id=222750000]", visible: false
       end
     end
 
@@ -102,6 +112,12 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_uk_telephone_step("123456789")
         submit_review_answers_step
         expect(page).to have_text("you're signed up")
+
+        expect(page).to have_css "#teacher-training-degree-status[data-id=222750000]", visible: false
+        expect(page).to have_css "#teacher-training-degree-country[data-id='72f5c2e6-74f9-e811-a97a-000d3a2760f2']", visible: false
+        expect(page).to have_css "#teacher-training-citizenship[data-id=222750000]", visible: false
+        expect(page).to have_css "#teacher-training-situation[data-id=222750003]", visible: false
+        expect(page).to have_css "#teacher-training-location[data-id=222750000]", visible: false
       end
 
       it "has degree, secondary, retaking gcses, overseas and no telephone" do
@@ -124,6 +140,13 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_overseas_telephone_step
         submit_review_answers_step
         expect(page).to have_text("you're signed up")
+
+        expect(page).to have_css "#teacher-training-degree-status[data-id=222750000]", visible: false
+        expect(page).to have_css "#teacher-training-degree-country[data-id='72f5c2e6-74f9-e811-a97a-000d3a2760f2']", visible: false
+        expect(page).to have_css "#teacher-training-citizenship[data-id=222750001]", visible: false
+        expect(page).to have_css "#teacher-training-situation[data-id=222750004]", visible: false
+        expect(page).to have_css "#teacher-training-visa-status[data-id=222750001]", visible: false
+        expect(page).to have_css "#teacher-training-location[data-id=222750001]", visible: false
       end
 
       it "studying for degree (not final year), overseas and telephone" do
@@ -142,6 +165,13 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_overseas_telephone_step("123456789")
         submit_review_answers_step
         expect(page).to have_text("you're signed up")
+
+        expect(page).to have_css "#teacher-training-degree-status[data-id=222750006]", visible: false
+        expect(page).to have_css "#teacher-training-degree-country[data-id='72f5c2e6-74f9-e811-a97a-000d3a2760f2']", visible: false
+        expect(page).to have_css "#teacher-training-citizenship[data-id=222750001]", visible: false
+        expect(page).to have_css "#teacher-training-situation[data-id=222750005]", visible: false
+        expect(page).to have_css "#teacher-training-visa-status[data-id=222750002]", visible: false
+        expect(page).to have_css "#teacher-training-location[data-id=222750001]", visible: false
       end
 
       it "studying for degree (final year), overseas and telephone" do
@@ -164,6 +194,13 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_overseas_telephone_step("123456789")
         submit_review_answers_step
         expect(page).to have_text("you're signed up")
+
+        expect(page).to have_css "#teacher-training-degree-status[data-id=222750006]", visible: false
+        expect(page).to have_css "#teacher-training-degree-country[data-id='72f5c2e6-74f9-e811-a97a-000d3a2760f2']", visible: false
+        expect(page).to have_css "#teacher-training-citizenship[data-id=222750001]", visible: false
+        expect(page).to have_css "#teacher-training-situation[data-id=222750002]", visible: false
+        expect(page).to have_css "#teacher-training-visa-status[data-id=222750002]", visible: false
+        expect(page).to have_css "#teacher-training-location[data-id=222750001]", visible: false
       end
 
       it "equivalent degree, lives in uk, book callback" do
@@ -175,6 +212,10 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_uk_callback_step("123456789", "1:00pm to 1:30pm")
         submit_review_answers_step
         expect(page).to have_text("We'll give you a call")
+
+        expect(page).to have_css "#teacher-training-degree-status[data-id=222750000]", visible: false
+        expect(page).to have_css "#teacher-training-degree-country[data-id='6f9e7b81-e44d-f011-877a-00224886d23e']", visible: false
+        expect(page).to have_css "#teacher-training-location[data-id=222750000]", visible: false
       end
 
       it "equivalent degree, lives overseas, book callback" do
@@ -188,6 +229,10 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_select_step("9:00am to 9:30am", :overseas_callback)
         submit_review_answers_step
         expect(page).to have_text("We'll give you a call")
+
+        expect(page).to have_css "#teacher-training-degree-status[data-id=222750000]", visible: false
+        expect(page).to have_css "#teacher-training-degree-country[data-id='6f9e7b81-e44d-f011-877a-00224886d23e']", visible: false
+        expect(page).to have_css "#teacher-training-location[data-id=222750001]", visible: false
       end
     end
   end

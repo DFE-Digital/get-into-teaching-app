@@ -63,6 +63,12 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         "type_id" => 123,
         "degree_status_id" => 456,
         "callback_offered" => true,
+        "degree_country" => 1,
+        "situation" => 2,
+        "location" => 3,
+        "visa_status" => 4,
+        "citizenship" => 5,
+        "foo" => "value to be pruned",
       }
     end
     let(:wizardstore) { GITWizard::Store.new store, {} }
@@ -112,6 +118,11 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
           degree_status_id: 456,
           type_id: 123,
           accepted_policy_id: "123",
+          degree_country: 1,
+          situation: 2,
+          location: 3,
+          visa_status: 4,
+          citizenship: 5,
         })
       end
 
@@ -133,7 +144,12 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
                                "degree_status_id" => 456,
                                "callback_offered" => true,
                                "first_name" => "Joe",
-                               "hashed_email" => hashed_email })
+                               "hashed_email" => hashed_email,
+                               "degree_country" => 1,
+                               "situation" => 2,
+                               "location" => 3,
+                               "visa_status" => 4,
+                               "citizenship" => 5 })
       end
     end
 
