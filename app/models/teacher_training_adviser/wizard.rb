@@ -12,6 +12,11 @@ module TeacherTrainingAdviser
       sub_channel_id
       callback_offered
       hashed_email
+      degree_country
+      situation
+      citizenship
+      location
+      visa_status
     ].freeze
 
     self.steps = [
@@ -51,7 +56,7 @@ module TeacherTrainingAdviser
       Steps::Citizenship,
       Steps::VisaStatus,
 
-      Steps::UkOrOverseas,
+      Steps::Location,
 
       Steps::UkAddress,
       Steps::UkTelephone,
@@ -106,7 +111,7 @@ module TeacherTrainingAdviser
 
     def default_country(export)
       # Default country_id to be UK if applicable
-      export["country_id"] = UK_COUNTRY_ID if find("uk_or_overseas").uk?
+      export["country_id"] = UK_COUNTRY_ID if find("location").uk?
     end
 
     def default_itt_year(export)

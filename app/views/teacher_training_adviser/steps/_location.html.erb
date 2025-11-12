@@ -1,0 +1,6 @@
+<%= f.govuk_collection_radio_buttons :location,
+                                     f.object.locations,
+                                     :id,
+                                     ->(option) { format_option_value(option, "teacher_training_adviser_steps.location.location") },
+                                     ->(option) { format_option_hint(option, "teacher_training_adviser_steps.location.location") },
+                                     legend: { tag: "h1" } %>

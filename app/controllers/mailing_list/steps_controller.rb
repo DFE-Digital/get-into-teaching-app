@@ -3,6 +3,7 @@ module MailingList
     include CircuitBreaker
     include HashedEmails
     include GITWizard::Controller
+    include PickListLookups
 
     self.wizard_class = MailingList::Wizard
 
@@ -83,26 +84,6 @@ module MailingList
 
     def set_breadcrumb
       breadcrumb @page_title, request.path
-    end
-
-    def degree_status(id)
-      GetIntoTeachingApiClient::PickListItemsApi.new.get_qualification_degree_status.find { |x| x.id == id }
-    end
-
-    def citizenship(id)
-      GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_citizenship.find { |x| x.id == id }
-    end
-
-    def situation(id)
-      GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_situations.find { |x| x.id == id }
-    end
-
-    def visa_status(id)
-      GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_visa_status.find { |x| x.id == id }
-    end
-
-    def location(id)
-      GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_location.find { |x| x.id == id }
     end
   end
 end
