@@ -34,7 +34,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
-      live_overseas = other_step(:uk_or_overseas).overseas?
+      live_overseas = other_step(:location).overseas?
       degree_status_skipped = other_step(:degree_status).skipped?
       uk_degree = other_step(:degree_country).uk?
 

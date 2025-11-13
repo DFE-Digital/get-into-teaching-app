@@ -13,7 +13,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def skipped?
-      other_step(:uk_or_overseas).overseas? || other_step(:degree_country).another_country?
+      other_step(:location).overseas? || other_step(:degree_country).another_country?
     end
 
   private

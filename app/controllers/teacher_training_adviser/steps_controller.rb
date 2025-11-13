@@ -3,6 +3,7 @@ module TeacherTrainingAdviser
     include CircuitBreaker
     include GITWizard::Controller
     include HashedEmails
+    include PickListLookups
 
     self.wizard_class = TeacherTrainingAdviser::Wizard
 
@@ -21,6 +22,13 @@ module TeacherTrainingAdviser
       @first_name = wizard_store[:first_name]
       @inferred_degree_status = wizard_store[:inferred_degree_status]
       @hashed_email = wizard_store[:hashed_email] if hash_email_address?
+
+      @degree_status = degree_status(wizard_store[:degree_status_id])
+      @degree_country = degree_country(wizard_store[:degree_country])
+      @citizenship = citizenship(wizard_store[:citizenship])
+      @situation = situation(wizard_store[:situation])
+      @visa_status = visa_status(wizard_store[:visa_status])
+      @location = location(wizard_store[:location])
     end
 
     def step_params

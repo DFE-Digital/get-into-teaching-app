@@ -106,3 +106,9 @@
   <% end %>
 </section>
 <%= tag.div id: "hashed-email", class: "hidden", data: { id: "hashed-email", value: @hashed_email } if @hashed_email %>
+<%= tag.div id: "teacher-training-degree-status", class: "hidden", data: { id: @degree_status.id, key: @inferred_degree_status || @degree_status.value } if @degree_status %>
+<%= tag.div id: "teacher-training-degree-country", class: "hidden", data: { id: @degree_country.id, value: @degree_country.value } if @degree_country %>
+<%= tag.div id: "teacher-training-citizenship", class: "hidden", data: { id: @citizenship.id, value: @citizenship.value } if @citizenship %>
+<%= tag.div id: "teacher-training-situation", class: "hidden", data: { id: @situation.id, value: @situation.value } if @situation %>
+<%= tag.div id: "teacher-training-visa-status", class: "hidden", data: { id: @visa_status.id, value: @visa_status.value } if @visa_status %>
+<%= tag.div id: "teacher-training-location", class: "hidden", data: { id: @location.id, value: @location.value } if @location %>

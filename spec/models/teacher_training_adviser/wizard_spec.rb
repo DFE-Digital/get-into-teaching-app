@@ -39,7 +39,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         TeacherTrainingAdviser::Steps::DateOfBirth,
         TeacherTrainingAdviser::Steps::Citizenship,
         TeacherTrainingAdviser::Steps::VisaStatus,
-        TeacherTrainingAdviser::Steps::UkOrOverseas,
+        TeacherTrainingAdviser::Steps::Location,
         TeacherTrainingAdviser::Steps::UkAddress,
         TeacherTrainingAdviser::Steps::UkTelephone,
         TeacherTrainingAdviser::Steps::OverseasCountry,
@@ -63,6 +63,12 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         "type_id" => 123,
         "degree_status_id" => 456,
         "callback_offered" => true,
+        "degree_country" => 1,
+        "situation" => 2,
+        "location" => 3,
+        "visa_status" => 4,
+        "citizenship" => 5,
+        "foo" => "value to be pruned",
       }
     end
     let(:wizardstore) { GITWizard::Store.new store, {} }
@@ -79,14 +85,14 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
     end
 
     describe "#export_data" do
-      it "sets country_id when uk_or_overseas is UK" do
-        wizardstore["uk_or_overseas"] = TeacherTrainingAdviser::Steps::UkOrOverseas::OPTIONS[:uk]
+      it "sets country_id when location is UK" do
+        wizardstore["location"] = TeacherTrainingAdviser::Steps::Location::INSIDE_THE_UK
         wizardstore["country_id"] = "abc-123"
         expect(subject.export_data).to include({ "country_id" => described_class::UK_COUNTRY_ID })
       end
 
-      it "does nothing when uk_or_overseas is not UK" do
-        wizardstore["uk_or_overseas"] = TeacherTrainingAdviser::Steps::UkOrOverseas::OPTIONS[:overseas]
+      it "does nothing when location is not UK" do
+        wizardstore["location"] = TeacherTrainingAdviser::Steps::Location::OUTSIDE_THE_UK
         wizardstore["country_id"] = "abc-123"
         expect(subject.export_data).to include({ "country_id" => wizardstore["country_id"] })
       end
@@ -112,6 +118,11 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
           degree_status_id: 456,
           type_id: 123,
           accepted_policy_id: "123",
+          degree_country: 1,
+          situation: 2,
+          location: 3,
+          visa_status: 4,
+          citizenship: 5,
         })
       end
 
@@ -133,7 +144,12 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
                                "degree_status_id" => 456,
                                "callback_offered" => true,
                                "first_name" => "Joe",
-                               "hashed_email" => hashed_email })
+                               "hashed_email" => hashed_email,
+                               "degree_country" => 1,
+                               "situation" => 2,
+                               "location" => 3,
+                               "visa_status" => 4,
+                               "citizenship" => 5 })
       end
     end
 

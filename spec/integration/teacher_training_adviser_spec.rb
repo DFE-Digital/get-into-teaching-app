@@ -34,7 +34,7 @@ RSpec.describe "Teacher Training Adviser integration tests", :integration, :mech
     submit_label_step("Yes", :degree_status)
     submit_label_step("Another Country", :degree_country)
     submit_date_of_birth_step(Date.new(1974, 3, 16))
-    submit_label_step("In the UK", :uk_or_overseas)
+    submit_label_step("In the UK", :location)
     submit_uk_callback_step("123456789")
     submit_review_answers_step
   end

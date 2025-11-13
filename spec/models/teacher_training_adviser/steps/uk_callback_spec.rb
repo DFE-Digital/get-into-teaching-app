@@ -42,7 +42,7 @@ RSpec.describe TeacherTrainingAdviser::Steps::UkCallback do
 
   describe "#skipped?" do
     it "skipped if lives overseas" do
-      expect_any_instance_of(TeacherTrainingAdviser::Steps::UkOrOverseas).to receive(:overseas?).and_return(true)
+      expect_any_instance_of(TeacherTrainingAdviser::Steps::Location).to receive(:overseas?).and_return(true)
       expect(subject).to be_skipped
     end
 

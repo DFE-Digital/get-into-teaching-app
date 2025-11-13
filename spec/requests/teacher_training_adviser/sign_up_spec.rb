@@ -1,6 +1,8 @@
 require "rails_helper"
 
 RSpec.describe "Sign up" do
+  include_context "with wizard data"
+
   let(:get_an_adviser_flag) { "1" }
   let(:model) { TeacherTrainingAdviser::Steps::ReturningTeacher }
   let(:step_path) { teacher_training_adviser_step_path model.key }
