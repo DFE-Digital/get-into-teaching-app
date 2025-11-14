@@ -4,11 +4,11 @@ GetIntoTeachingApiClient.configure do |config|
   config.api_key["apiKey"] = ENV["GIT_API_TOKEN"].presence
 
   endpoint =
-    if ENV["GIT_API_PR"].present? && !Rails.env.production?
+    if ENV.key?("GIT_API_PR") && !Rails.env.production?
       # For testing purposes, we can point the website to a GIT API Review instance
-      "https://getintoteachingapi-review-#{ENV['GIT_API_PR'].to_i}.test.teacherservices.cloud"
-    elsif ENV["GIT_API_ENDPOINT"].present?
-      ENV["GIT_API_ENDPOINT"]
+      "https://getintoteachingapi-review-#{ENV.fetch('GIT_API_PR').to_i}.test.teacherservices.cloud"
+    elsif ENV.key?("GIT_API_ENDPOINT").present?
+      ENV.fetch("GIT_API_ENDPOINT")
     else
       Rails.application.config.x.git_api_endpoint.presence
     end
