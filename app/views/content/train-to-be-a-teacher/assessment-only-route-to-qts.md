@@ -90,7 +90,7 @@ provider_groups:
     - header: "University of Warwick"
       link: "https://warwick.ac.uk/fac/soc/cte/professionaldevelopment/ao/"
       name: "Vikki Armeson"
-      email: "mailto:assessmentonlyQTS@warwick.ac.uk"
+      email: "assessmentonlyQTS@warwick.ac.uk"
       telephone: "02476 150269"
       international_phone: "+442476150269"
       
@@ -104,7 +104,7 @@ provider_groups:
   East Midlands:
     providers:
     - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
+      link: "https://www.exchangeteachertraining.com"
       name: "Samantha Rhodes"
       email: "info@exchangeteachertraining.com"
       telephone: "03451 450075"
@@ -156,8 +156,8 @@ provider_groups:
       link: "https://www.derby.ac.uk/"
       name: "Jayne Leggott"
       email: "askadmissions@derby.ac.uk"
-      telephone: " "
-      international_phone: "+44"
+      
+      
       
   East of England:
     providers:
@@ -169,7 +169,7 @@ provider_groups:
       international_phone: "+441268988580"
       
     - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
+      link: "https://www.exchangeteachertraining.com"
       name: "Samantha Rhodes"
       email: "info@exchangeteachertraining.com"
       telephone: "03451 450075"
@@ -327,7 +327,7 @@ provider_groups:
   North East:
     providers:
     - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
+      link: "https://www.exchangeteachertraining.com"
       name: "Samantha Rhodes"
       email: "info@exchangeteachertraining.com"
       telephone: "03451 450075"
@@ -378,7 +378,7 @@ provider_groups:
       international_phone: "+447549025620"
       
     - header: "Kingsbridge EIP SCITT"
-      link: "https://www.kingsbridgeteachertraining.co.uk/contact"
+      link: "https://kingsbridge.atctrust.org.uk/"
       name: "Alaina Shawcross"
       email: "kingsbridge@cfat.org.uk"
       telephone: "01254 686178"
@@ -505,13 +505,6 @@ provider_groups:
       telephone: "01865 518209"
       international_phone: "+441865518209"
       
-    - header: "OTT SCITT"
-      link: "https://www.ott-scitt.org.uk"
-      name: "Marion Rawlings"
-      email: "info@ott-scitt.org.uk"
-      telephone: "01865 518209"
-      international_phone: "+441865518209"
-      
     - header: "South Farnham SCITT"
       link: "https://www.ssfscitt.org.uk/page/?title=Assessment+Only+Route&pid=42"
       name: "Rebecca Vaughan-Barrett"
@@ -606,13 +599,6 @@ provider_groups:
       international_phone: "+441458449418"
       
     - header: "OTT SCITT"
-      link: "https://www.ott-scitt.org.uk"
-      name: "Marion Rawlings"
-      email: "info@ott-scitt.org.uk"
-      telephone: "01865 518209"
-      international_phone: "+441865518209"
-      
-    - header: "OTT SCITT"
       link: "https://ott-scitt.org.uk/aor/"
       name: "Marion Rawlings"
       email: "AOR@ott-scitt.org.uk"
@@ -694,7 +680,7 @@ provider_groups:
       international_phone: "+441283247850"
       
     - header: "University of Wolverhampton"
-      link: "https://www.wlv.ac.uk/schools-and-institutes/faculty-of-education-health-and-wellbeing/school-of-education/teacher-training/employment-based-routes/assessment-only-qts-programme/"
+      link: "https://www.wlv.ac.uk/schools-and-institutes/faculty-of-education-health-and-wellbeing/department-of-education/teacher-training/employment-based-routes/assessment-only-qts-programme/"
       name: "Susan Giacoletto"
       email: "s.giacoletto@wlv.ac.uk"
       telephone: "07813 976274"
@@ -710,7 +696,7 @@ provider_groups:
   Yorkshire and the Humber:
     providers:
     - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com/wider-offer/assessment-only"
+      link: "https://www.exchangeteachertraining.com"
       name: "Samantha Rhodes"
       email: "info@exchangeteachertraining.com"
       telephone: "03451 450075"
@@ -828,8 +814,8 @@ provider_groups:
       link: "https://www.derby.ac.uk/"
       name: "Jayne Leggott"
       email: "askadmissions@derby.ac.uk"
-      telephone: " "
-      international_phone: "+44"
+      
+      
       
     - header: "University of Sunderland"
       link: "https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/"
@@ -841,7 +827,7 @@ provider_groups:
     - header: "University of Warwick"
       link: "https://warwick.ac.uk/fac/soc/cte/professionaldevelopment/ao/"
       name: "Vikki Armeson"
-      email: "mailto:assessmentonlyQTS@warwick.ac.uk"
+      email: "assessmentonlyQTS@warwick.ac.uk"
       telephone: "02476 150269"
       international_phone: "+442476150269"
       
