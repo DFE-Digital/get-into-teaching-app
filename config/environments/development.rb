@@ -77,7 +77,7 @@ Rails.application.configure do
   config.x.dfe_analytics = true
 
   # Allow access from Codespaces
-  config.hosts << /[a-z0-9-]+\.(preview\.app\.github|githubpreview)\.dev/
+  config.hosts << /[a-z0-9-]+\.(preview\.)?(app\.github|githubpreview)\.dev/
 
   # Annotate rendered view with file names.
   config.action_view.annotate_rendered_view_with_filenames = true
