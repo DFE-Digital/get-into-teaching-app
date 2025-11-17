@@ -22,11 +22,13 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/dfe-reference-data.git
-  revision: 1d540ea005a865c00393ce23bf7ac52318c59d52
-  tag: v3.6.9
+  revision: 8e5da693513fcd1b92756d2334bfba11a4b881e1
+  tag: v3.8.4
   specs:
-    dfe-reference-data (3.6.9)
+    dfe-reference-data (3.8.4)
       activesupport
+      bigdecimal
+      openssl
       tzinfo
 
 GIT
@@ -442,6 +444,7 @@ GEM
     nokogiri (1.18.9-x86_64-linux-gnu)
       racc (~> 1.4)
     observer (0.1.1)
+    openssl (3.3.2)
     os (1.1.4)
     ostruct (0.6.1)
     package_json (0.1.0)
@@ -683,7 +686,7 @@ GEM
     unicode-display_width (3.1.4)
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
-    uri (1.0.4)
+    uri (1.1.0)
     useragent (0.16.11)
     validates_timeliness (8.0.0)
       activemodel (>= 8.0.0, < 9)
