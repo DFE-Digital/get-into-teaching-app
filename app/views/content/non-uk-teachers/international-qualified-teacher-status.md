@@ -89,6 +89,10 @@ The following providers are accepting applications from all over the world:
 
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
 
+* Edge Hill University
+
+* Equalitas
+
 * [National Institute of Teaching and Education (NITE)](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/), part of the Coventry University Group
 
 * [Tes Institute](https://www.tes.com/institute/courses/iqts) – this provider cannot accept applications from Hong Kong
@@ -96,6 +100,8 @@ The following providers are accepting applications from all over the world:
 * [University of Buckingham](https://www.buckingham.ac.uk/courses/postgraduate/international-qualified-teacher-status-iqts)
 
 * [University of Derby](https://www.derby.ac.uk/online/education-courses/international-qualified-teacher-status-iqts-online/)
+
+* University of East London
 
 * [University of Sunderland](https://www.sunderland.ac.uk/study/education/pgce-iqts/)
 
@@ -119,7 +125,7 @@ The following providers specialise in particular regions:
 
 At the end of your training, your iQTS provider and school will assess you to check you meet the [iQTS teachers’ standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards).
 
-Your training provider will award you iQTS when you have successfully passed this assessment process. You will then be automatically awarded QTS by England’s Department for Education.
+Your training provider will award you iQTS when you have successfully passed this assessment process. You will then automatically gain English QTS.
 
 ## Other routes to QTS
 
@@ -141,7 +147,7 @@ Once you have iQTS, you will be qualified to teach in England. It’s important 
 
 If you choose to teach in England, as an early career teacher you’ll benefit from a 2 year induction period alongside your work in school. You’ll earn a salary and get mentoring and continuous professional development to help you succeed as a teacher.
 
-While induction is a requirement to teach in most schools in England, you do not need to complete an induction period to teach outside the UK. However, if you wish, you can choose to complete your early career teacher induction at a [Department for Education-accredited British School Overseas](https://www.gov.uk/government/publications/british-schools-overseas-inspection-reports/british-schools-overseas-accredited-schools-inspection-reports).
+You need to do an induction to teach in most schools in England. If you teach outside the UK, you may not need to complete an induction period. You can however choose to complete your early career teacher induction at a [Department for Education-accredited British School Overseas](https://www.gov.uk/government/publications/british-schools-overseas-inspection-reports/british-schools-overseas-accredited-schools-inspection-reports).
 
 ## Contact
 
