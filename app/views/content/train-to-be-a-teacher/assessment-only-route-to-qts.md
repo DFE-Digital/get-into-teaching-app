@@ -66,6 +66,13 @@ provider_groups:
       telephone: "0115 848 2666"
       international_phone: "+441158482666"
       
+    - header: "St Mary's University"
+      link: "https://www.stmarys.ac.uk/teacher-training/assessment-only-qts/overview.aspx"
+      name: "Lizzy Jackson"
+      email: "elizabeth.jackson@stmarys.ac.uk"
+      telephone: "020 8240 4326"
+      international_phone: "+442082404326"
+      
     - header: "Tes Institute"
       link: "https://www.tes.com/institute"
       name: "Andrew Locke"
@@ -103,13 +110,6 @@ provider_groups:
       
   East Midlands:
     providers:
-    - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com"
-      name: "Samantha Rhodes"
-      email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
-      international_phone: "+443451450075"
-      extension: "(option 1)"
     - header: "Inspiring Leaders"
       link: "https://inspiringleadersscitt.com/aor/"
       name: "Dirk Smith"
@@ -167,20 +167,6 @@ provider_groups:
       email: "assessmentonly@ete.org.uk"
       telephone: "01268 988580"
       international_phone: "+441268988580"
-      
-    - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com"
-      name: "Samantha Rhodes"
-      email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
-      international_phone: "+443451450075"
-      extension: "(option 1)"
-    - header: "Future Teacher Training"
-      link: "https://www.futureteachertraining.org/"
-      name: "Ciara Sutton"
-      email: "enquiries@scitt.futureacademies.org"
-      telephone: "07442 243525"
-      international_phone: "+447442243525"
       
     - header: "London School of Jewish Studies"
       link: "https://www.lsjs.ac.uk/assessment-only"
@@ -255,10 +241,10 @@ provider_groups:
       international_phone: "+442083006566"
       
     - header: "Future Teacher Training"
-      link: "https://www.futureteachertraining.org/"
-      name: "Ciara Sutton"
+      link: "https://www.futureteachertraining.org"
+      name: "Fran Wood"
       email: "enquiries@scitt.futureacademies.org"
-      telephone: "07442 243525"
+      telephone: "07442 243 525"
       international_phone: "+447442243525"
       
     - header: "Kingston University"
@@ -327,12 +313,12 @@ provider_groups:
   North East:
     providers:
     - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com"
+      link: "https://www.exchangeteachertraining.com/"
       name: "Samantha Rhodes"
       email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
+      telephone: "0345 145 0075"
       international_phone: "+443451450075"
-      extension: "(option 1)"
+      extension: "option 1"
     - header: "Stockton SCITT"
       link: "https://stocktonscitt.uk/assessment-only-route-to-qts/"
       name: "Kirsten Webber"
@@ -498,26 +484,12 @@ provider_groups:
       
       
       
-    - header: "OTT SCITT"
-      link: "https://ott-scitt.org.uk/aor/"
-      name: "Marion Rawlings"
-      email: "AOR@ott-scitt.org.uk"
-      telephone: "01865 518209"
-      international_phone: "+441865518209"
-      
     - header: "South Farnham SCITT"
       link: "https://www.ssfscitt.org.uk/page/?title=Assessment+Only+Route&pid=42"
       name: "Rebecca Vaughan-Barrett"
       email: "scitt@sfet.org.uk"
       telephone: "01252717408"
       international_phone: "+441252717408"
-      
-    - header: "St Mary's University"
-      link: "https://www.stmarys.ac.uk/"
-      name: "Lizzy Jackson"
-      email: "elizabeth.jackson@stmarys.ac.uk"
-      telephone: "020 8240 4326"
-      international_phone: "+442082404326"
       
     - header: "Sutton SCITT"
       link: "https://www.suttonscitt.org.uk/teacher-training-programmes-surrey/assessment-only"
@@ -547,6 +519,13 @@ provider_groups:
       telephone: "01908 669735"
       international_phone: "+441908669735"
       extension: "ext 353"
+    - header: "University of Portsmouth"
+      link: "https://www.port.ac.uk"
+      name: "Amdrew Porter"
+      email: "andrew.porter@port.ac.uk"
+      telephone: "02392 845384"
+      international_phone: "+442392845384"
+      
     - header: "University of Reading"
       link: "https://www.reading.ac.uk/education/pgce-qts-and-eyts/assessment-only"
       name: "Harvey Grout"
@@ -585,8 +564,8 @@ provider_groups:
       international_phone: "+441872305728"
       
     - header: "Gloucestershire Initial Teacher Education Partnership"
-      
-      name: "Becky Rose"
+      link: "https://2schools.org/assessment-only-route/"
+      name: "Rebecca Rose"
       email: "admin@gitep.org.uk"
       telephone: "01242 505945"
       international_phone: "+441242505945"
@@ -598,18 +577,11 @@ provider_groups:
       telephone: "01458449418"
       international_phone: "+441458449418"
       
-    - header: "OTT SCITT"
-      link: "https://ott-scitt.org.uk/aor/"
-      name: "Marion Rawlings"
-      email: "AOR@ott-scitt.org.uk"
-      telephone: "01865 518209"
-      international_phone: "+441865518209"
-      
     - header: "Somerset SCITT"
       link: "https://www.sciltraining.co.uk/assessment-only-route-to-qualified-teacher-status-qts/"
-      name: "Nikki Blake"
+      name: "Nikki Blake; Claudine Leoni"
       email: "SCIL@somerset.gov.uk"
-      telephone: "0300 123 1967"
+      telephone: "0300 1231967"
       international_phone: "+443001231967"
       
     - header: "Ted Wragg Teacher Training Partnership"
@@ -655,8 +627,8 @@ provider_groups:
       link: "https://www.bcu.ac.uk/subject-areas/education-and-teacher-training/assessment-only"
       name: "Emma Barnes"
       email: "emma.barnes@bcu.ac.uk"
-      telephone: "07749242272"
-      international_phone: "+447749242272"
+      telephone: "0121 331 5000"
+      international_phone: "+441213315000"
       
     - header: "Bishop Challoner Training School"
       link: "https://www.bctsa.org/1299/assessment-only-qts"
@@ -696,12 +668,12 @@ provider_groups:
   Yorkshire and the Humber:
     providers:
     - header: "Exchange Teacher Training"
-      link: "https://www.exchangeteachertraining.com"
+      link: "https://www.exchangeteachertraining.com/"
       name: "Samantha Rhodes"
       email: "info@exchangeteachertraining.com"
-      telephone: "03451 450075"
+      telephone: "0345 145 0075"
       international_phone: "+443451450075"
-      extension: "(option 1)"
+      extension: "option 1"
     - header: "GORSE SCITT"
       link: "https://gorsescitt.org.uk/assessment-only-qts/"
       name: "Nicci Cornfoot"
@@ -788,6 +760,13 @@ provider_groups:
       email: "galia.segal@lsjs.ac.uk"
       
       
+      
+    - header: "St Mary's University"
+      link: "https://www.stmarys.ac.uk/teacher-training/assessment-only-qts/overview.aspx"
+      name: "Lizzy Jackson"
+      email: "elizabeth.jackson@stmarys.ac.uk"
+      telephone: "020 8240 4326"
+      international_phone: "+442082404326"
       
     - header: "Tes Institute"
       link: "https://www.tes.com/institute"
