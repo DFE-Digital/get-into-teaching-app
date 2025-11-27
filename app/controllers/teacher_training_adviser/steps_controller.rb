@@ -29,6 +29,20 @@ module TeacherTrainingAdviser
       @situation = situation(wizard_store[:situation])
       @visa_status = visa_status(wizard_store[:visa_status])
       @location = location(wizard_store[:location])
+
+      @phone_call_scheduled_at = wizard_store[:phone_call_scheduled_at]
+      @time_zone = wizard_store[:time_zone]
+      @address_telephone = wizard_store[:address_telephone]
+
+      if @callback_booked && @phone_call_scheduled_at
+        @callback_date = @phone_call_scheduled_at
+                           .in_time_zone(@time_zone)
+                           .to_date
+                           .to_formatted_s(:govuk_date_long)
+        @callback_time = @phone_call_scheduled_at
+                           .in_time_zone(@time_zone)
+                           .to_formatted_s(:govuk_time_with_period)
+      end
     end
 
     def step_params
