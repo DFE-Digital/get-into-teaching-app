@@ -32,7 +32,7 @@
   <p>Or <%= link_to("find out more about teaching in England if you trained outside the UK", "/non-uk-teachers/teach-in-england-if-you-trained-overseas") %>.</p>
 
 <% elsif @callback_booked %>
-  <h1 class="heading-l heading--box-green"><%= @first_name %>, we'll call you to check your degree</h1>
+    <h1 class="heading-l heading--box-green"><%= @first_name %>, we'll call you to check your degree</h1>
 
     <% if @callback_date %>
       <h2 class="govuk-heading-s">Date</h2>
@@ -49,34 +49,34 @@
       <p><%= @address_telephone %></p>
     <% end %>
 
-  <h2 class="govuk-heading-m">Be ready</h2>
-  <p>
-    Have the details of the qualifications you gained outside the UK when we call you.
-  </p>
+    <h2 class="govuk-heading-m">Be ready</h2>
+    <p>
+      Have the details of the qualifications you gained outside the UK when we call you.
+    </p>
 
-  <p>
-    We'll give you a call at the time you selected. We need to check you have the right qualifications before we can sign you up for an adviser.
-  </p>
-  <p>
-    If we're unable to contact you at this time, we'll try again twice. If we're still unable to contact you, you will have to sign up again.
-  </p>
+    <p>
+      We'll give you a call at the time you selected. We need to check you have the right qualifications before we can sign you up for an adviser.
+    </p>
+    <p>
+      If we're unable to contact you at this time, we'll try again twice. If we're still unable to contact you, you will have to sign up again.
+    </p>
 
-  <h2 class="govuk-heading-m">Have any questions?</h2>
-  <p>
-    Call us on <a href="tel:08003892500">0800 389 2500</a> Monday to Friday between 8:30am and 5:30pm, except on <%= link_to("bank holidays", "https://www.gov.uk/bank-holidays") %>.
-  </p>
+    <h2 class="govuk-heading-m">Have any questions?</h2>
+    <p>
+      Call us on <a href="tel:08003892500">0800 389 2500</a> Monday to Friday between 8:30am and 5:30pm, except on <%= link_to("bank holidays", "https://www.gov.uk/bank-holidays") %>.
+    </p>
 
-  <h2 class="govuk-heading-m">Find out more about teaching in England</h2>
+    <h2 class="govuk-heading-m">Find out more about teaching in England</h2>
 
-  <p>If you're not a UK citizen, you can read guidance on:</p>
+    <p>If you're not a UK citizen, you can read guidance on:</p>
 
-  <ul>
-    <li>your qualifications</li>
-    <li>funding your training</li>
-    <li>getting a visa</li>
-  </ul>
+    <ul>
+      <li>your qualifications</li>
+      <li>funding your training</li>
+      <li>getting a visa</li>
+    </ul>
 
-  <p>Find out more about <%= link_to "training to teach in England as a non-UK citizen", "/train-to-teach-in-england-as-an-international-student" %>.</p>
+    <p>Find out more about <%= link_to "training to teach in England as a non-UK citizen", "/train-to-teach-in-england-as-an-international-student" %>.</p>
 
 <% elsif @equivalent %>
   <h1 class="heading-l heading--box-green"><%= @first_name %>, give us a call</h1>
