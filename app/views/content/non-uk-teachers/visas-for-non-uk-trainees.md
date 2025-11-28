@@ -99,11 +99,7 @@ Find out more about [working in the UK on a Skilled Worker visa](https://www.gov
 
 ### Salary requirement for a Skilled Worker visa 
 
-You must earn a minimum salary to be eligible for a Skilled Worker visa.
-
-If your role is full-time, it must pay at least $nonuk_skilledworkervisaminsalary$, or the [relevant minimum rate for teachers in England](https://www.gov.uk/government/publications/national-pay-scales-for-eligible-teaching-and-education-jobs/national-pay-scales-for-eligible-teaching-and-education-leadership-occupation-codes), whichever is higher.
-
-If your role is part-time, it must pay at least $nonuk_skilledworkervisaminsalary$ when the [relevant minimum rate for teachers in England](https://www.gov.uk/government/publications/national-pay-scales-for-eligible-teaching-and-education-jobs/national-pay-scales-for-eligible-teaching-and-education-leadership-occupation-codes) is pro-rated.
+To be eligible for a Skilled Worker visa you must earn at least £25,000 or the  [relevant minimum rate for teachers in England](https://www.gov.uk/government/publications/national-pay-scales-for-eligible-teaching-and-education-jobs/national-pay-scales-for-eligible-teaching-and-education-leadership-occupation-codes), whichever is higher. You must earn at least £25,000 whether you are full or part-time.
 
 The minimum rate of pay in England varies depending on the region, so check the region you will be working in with your teacher training provider.
 
