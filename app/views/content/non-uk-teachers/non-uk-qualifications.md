@@ -21,7 +21,7 @@ To train to teach in England, you will need to have:
 
 * a bachelor’s degree from a UK or non-UK university (or other institution) 
 * a maths qualification of the same standard as GCSE (General Certificate of Secondary Education) grade 4 (C) 
-*  a science qualification of the same standard as GCSE grade 4 (C) if you teach pupils aged 3 to 11
+* a science qualification of the same standard as GCSE grade 4 (C) if you teach pupils aged 3 to 11
 
 A GCSE is an academic qualification awarded for exams in England, usually taken at the age of 16. 
 
