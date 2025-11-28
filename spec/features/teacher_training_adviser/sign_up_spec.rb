@@ -485,8 +485,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "John, we'll give you a call"
-      expect(page).to have_text "We'll give you a call at the time you selected."
+      expect(page).to have_css "h1", text: "John, we'll call you to check your degree"
+      expect(page).to have_css "p", text: "Monday 1 June"
+      expect(page).to have_css "p", text: "12:00am"
+      expect(page).to have_css "p", text: "123456789"
+      expect(page).to have_text "Have the details of the qualifications you gained outside the UK when we call you."
     end
 
     scenario "with an equivalent degree (UK)" do
@@ -541,8 +544,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "John, we'll give you a call"
-      expect(page).to have_text "We'll give you a call at the time you selected"
+      expect(page).to have_css "h1", text: "John, we'll call you to check your degree"
+      expect(page).to have_css "p", text: "Monday 1 June"
+      expect(page).to have_css "p", text: "11:00am"
+      expect(page).to have_css "p", text: "123456789"
+      expect(page).to have_text "Have the details of the qualifications you gained outside the UK when we call you."
     end
 
     context "when there are no callback slots available" do
@@ -1250,7 +1256,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       click_on "Complete sign up"
 
-      expect(page).to have_css "h1", text: "John, we'll give you a call"
+      expect(page).to have_css "h1", text: "John, we'll call you to check your degree"
+      expect(page).to have_css "p", text: "Monday 1 June"
+      expect(page).to have_css "p", text: "11:00am"
+      expect(page).to have_css "p", text: "123456789"
+      expect(page).to have_text "Have the details of the qualifications you gained outside the UK when we call you."
     end
 
     scenario "skipping pre-filled optional steps" do

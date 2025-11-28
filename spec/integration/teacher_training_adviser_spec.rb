@@ -17,7 +17,7 @@ RSpec.describe "Teacher Training Adviser integration tests", :integration, :mech
   it "Full journey as a new candidate" do
     submit_personal_details(rand_first_name, rand_last_name, rand_email)
     complete_sign_up
-    expect(page).to have_text(/(we'll give you a call)|(Please give us a call)/i)
+    expect(page).to have_text(/(we'll call you)|(Please give us a call)/i)
   end
 
   it "Full journey as an existing candidate" do

@@ -211,7 +211,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_choice_step("In the UK", :location)
         submit_uk_callback_step("123456789", "1:00pm to 1:30pm")
         submit_review_answers_step
-        expect(page).to have_text("We'll give you a call")
+        expect(page).to have_text("we'll call you")
 
         expect(page).to have_css "#teacher-training-degree-status[data-id=222750000]", visible: false
         expect(page).to have_css "#teacher-training-degree-country[data-id='6f9e7b81-e44d-f011-877a-00224886d23e']", visible: false
@@ -228,7 +228,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_overseas_time_zone_step("447584736574", "(GMT-04:00) Caracas")
         submit_select_step("9:00am to 9:30am", :overseas_callback)
         submit_review_answers_step
-        expect(page).to have_text("We'll give you a call")
+        expect(page).to have_text("we'll call you")
 
         expect(page).to have_css "#teacher-training-degree-status[data-id=222750000]", visible: false
         expect(page).to have_css "#teacher-training-degree-country[data-id='6f9e7b81-e44d-f011-877a-00224886d23e']", visible: false

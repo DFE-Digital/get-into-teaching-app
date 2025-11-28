@@ -19,6 +19,7 @@ module TeacherTrainingAdviser
       @returner = wizard_store[:type_id].to_i == Steps::ReturningTeacher::OPTIONS[:returning_to_teaching]
       @equivalent = wizard_store[:degree_type_id] == Steps::DegreeCountry::DEGREE_EQUIVALENT
       @callback_booked = wizard_store[:callback_offered] && @equivalent
+      @address_telephone = wizard_store[:address_telephone]
       @first_name = wizard_store[:first_name]
       @inferred_degree_status = wizard_store[:inferred_degree_status]
       @hashed_email = wizard_store[:hashed_email] if hash_email_address?
@@ -29,6 +30,18 @@ module TeacherTrainingAdviser
       @situation = situation(wizard_store[:situation])
       @visa_status = visa_status(wizard_store[:visa_status])
       @location = location(wizard_store[:location])
+
+      phone_call_scheduled_at = wizard_store[:phone_call_scheduled_at]
+      time_zone = wizard_store[:time_zone] || "London"
+      if @callback_booked && phone_call_scheduled_at
+        @callback_date = phone_call_scheduled_at
+                           .in_time_zone(time_zone)
+                           .to_date
+                           .to_formatted_s(:govuk_date_long)
+        @callback_time = phone_call_scheduled_at
+                           .in_time_zone(time_zone)
+                           .to_time.to_formatted_s(:govuk_time_with_period)
+      end
     end
 
     def step_params
