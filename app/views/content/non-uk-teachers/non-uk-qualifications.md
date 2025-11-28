@@ -21,10 +21,12 @@ To train to teach in England, you will need to have:
 
 * a bachelor’s degree from a UK or non-UK university (or other institution) 
 * a maths qualification of the same standard as GCSE (General Certificate of Secondary Education) grade 4 (C) 
-*  a science qualification of the same standard as GCSE grade 4 (C) if you teach pupils aged 3 to 11
-* an English language qualification which meets the standard of a GCSE (General Certificate of Secondary Education) grade 4 (C) 
+* a science qualification of the same standard as GCSE grade 4 (C) if you teach pupils aged 3 to 11
 
-A GCSE is an academic qualification awarded for exams in England, usually taken at the age of 16.
+A GCSE is an academic qualification awarded for exams in England, usually taken at the age of 16. 
+
+You’ll also need an English language qualification at level B2 for your visa requirements. Find out [how to understand your English level](https://learnenglish.britishcouncil.org/english-levels/understand-your-english-level) 
+
 
 $traininuk$
 
@@ -40,7 +42,11 @@ A statement of comparability costs $nonuk_statementofcomparabilitycost$. It take
 
 ## English language, maths and science proficiency
 
-If you have reached a certain proficiency in an English language test, some providers will accept this as evidence you meet the standard of a GCSE grade 4 (C) in English.  You can find out more by visiting the following websites:
+You need an English language qualification at level B2 for your visa requirements. ​You can [check your qualification level](https://learnenglish.britishcouncil.org/english-levels/understand-your-english-level) to see if it is equivalent to Common European Framework of Reference for Languages (CEFR) level B2.
+
+Some providers may accept other English language test results if they meet the same standard as CEFR level B2.​
+
+If you do not have English language qualifications​, these websites offer the qualifications that you need:
 
 * [International English Language Testing System (IELTS) website](https://www.ielts.org/)
 * [Test of English as a Foreign Language (TOEFL) website](https://www.ets.org/toefl)
