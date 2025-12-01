@@ -11,6 +11,9 @@ module TeacherTrainingAdviser
       graduation_year
       sub_channel_id
       callback_offered
+      address_telephone
+      phone_call_scheduled_at
+      time_zone
       hashed_email
       degree_country
       situation

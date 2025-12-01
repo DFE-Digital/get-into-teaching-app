@@ -1,6 +1,6 @@
 <section class="registration__teacher-training-adviser" data-sub-channel-id="<%= session.dig("sign_up", "sub_channel_id") %>">
 
-  <% if @returner %>
+<% if @returner %>
   <h1 class="heading-l heading--box-green"><%= @first_name %>, you're signed up.</h1>
 
   <h2 class="govuk-heading-m">What happens next?</h2>
@@ -30,34 +30,43 @@
   <p>You can also <%= link_to("find teaching jobs in England", "https://teaching-vacancies.service.gov.uk/") %>.</p>
 
   <p>Or <%= link_to("find out more about teaching in England if you trained outside the UK", "/non-uk-teachers/teach-in-england-if-you-trained-overseas") %>.</p>
-  <% elsif @callback_booked %>
-  <h1 class="heading-l heading--box-green"><%= @first_name %>, we'll give you a call</h1>
 
-  <h2 class="govuk-heading-m">What happens next?</h2>
-  <p>
-    We'll give you a call at the time you selected. We need to check you have the right qualifications before we can sign you up for an adviser.
-  </p>
-  <p>
-    If we're unable to contact you at this time, we'll try again twice. If we're still unable to contact you, you will have to sign up again.
-  </p>
+<% elsif @callback_booked %>
+    <h1 class="heading-l heading--box-green"><%= @first_name %>, we'll call you to check your degree</h1>
 
-  <h2 class="govuk-heading-m">Have any questions?</h2>
-  <p>
-    Call us on <a href="tel:08003892500">0800 389 2500</a> Monday to Friday between 8:30am and 5:30pm, except on <%= link_to("bank holidays", "https://www.gov.uk/bank-holidays") %>.
-  </p>
+    <% if @callback_date %>
+      <h2 class="govuk-heading-s">Date</h2>
+      <p><%= @callback_date %></p>
+    <% end %>
 
-  <h2 class="govuk-heading-m">Find out more about teaching in England</h2>
+    <% if @callback_time %>
+      <h2 class="govuk-heading-s">Time</h2>
+      <p><%= @callback_time %></p>
+    <% end %>
 
-  <p>If you're not a UK citizen, you can read guidance on:</p>
+    <% if @address_telephone %>
+      <h2 class="govuk-heading-s">Phone number</h2>
+      <p><%= @address_telephone %></p>
+    <% end %>
 
-  <ul>
-    <li>your qualifications</li>
-    <li>funding your training</li>
-    <li>getting a visa</li>
-  </ul>
+    <h2 class="govuk-heading-m">Be ready</h2>
+    <p>
+      Have the details of the qualifications you gained outside the UK when we call you.
+    </p>
 
-<p>Find out more about <%= link_to "training to teach in England as a non-UK citizen", "/train-to-teach-in-england-as-an-international-student" %>.</p>
-  <% elsif @equivalent %>
+    <h2 class="govuk-heading-m">Find out more about teaching in England</h2>
+
+    <p>If you're not a UK citizen, you can read guidance on:</p>
+
+    <ul>
+      <li>your qualifications</li>
+      <li>funding your training</li>
+      <li>getting a visa</li>
+    </ul>
+
+    <p>Find out more about <%= link_to "training to teach in England as a non-UK citizen", "/train-to-teach-in-england-as-an-international-student" %>.</p>
+
+<% elsif @equivalent %>
   <h1 class="heading-l heading--box-green"><%= @first_name %>, give us a call</h1>
 
   <h2 class="govuk-heading-m">What happens next?</h2>
@@ -75,8 +84,9 @@
     <li>getting a visa</li>
   </ul>
 
-<p>Find out more about <%= link_to "training to teach in England as a non-UK citizen", "/train-to-teach-in-england-as-an-international-student" %>.</p>
-  <% else %>
+  <p>Find out more about <%= link_to "training to teach in England as a non-UK citizen", "/train-to-teach-in-england-as-an-international-student" %>.</p>
+
+<% else %>
   <h1 class="heading-l heading--box-green"><%= @first_name %>, you're signed up.</h1>
 
   <h2 class="govuk-heading-m">What happens next?</h2>
@@ -103,7 +113,7 @@
 
   <p>You can also find out <%= link_to "how to become a teacher", "/steps-to-become-a-teacher" %> with these handy steps, including understanding the qualifications you need and how you can find school experience.</p>
 
-  <% end %>
+<% end %>
 </section>
 <%= tag.div id: "hashed-email", class: "hidden", data: { id: "hashed-email", value: @hashed_email } if @hashed_email %>
 <%= tag.div id: "teacher-training-degree-status", class: "hidden", data: { id: @degree_status.id, key: @inferred_degree_status || @degree_status.value } if @degree_status %>
