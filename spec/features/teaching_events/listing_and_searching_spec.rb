@@ -32,7 +32,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expect(page).to have_current_path("/events")
 
-      expected_featured = 2
+      expected_featured = 3
       expected_regular = event_count - expected_featured
 
       # two are featured, rest are just listed
