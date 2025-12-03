@@ -7,7 +7,7 @@ class TeachingEventsController < ApplicationController
 
   rescue_from EventNotViewableError, with: :render_gone
 
-  FEATURED_EVENT_COUNT = 2 # 2 featured events max on the first page
+  FEATURED_EVENT_COUNT = 3 # 3 featured events max on the first page
   EVENT_COUNT = 15 # 15 regular ones per page
 
   FEATURED_EVENT_TYPES = Crm::EventType.lookup_by_names(
