@@ -1,6 +1,6 @@
 finance:
 # loans
-  loanacademicyear: 2025 to 2026 academic year
+  loanacademicyear: 2026 to 2027 academic year
   maintenanceloan:
     withparents: £8,877
     notwithparentsoutsidelondon: £10,544
@@ -21,6 +21,6 @@ finance:
   childcaregrantweeklypayment:
     one: £199.62
     twoplus: £342.24
-# disability 
+# disability
   dsaacademicyear: 2025 to 2026 academic year
   disabilityadditionalfunding: £27,783
