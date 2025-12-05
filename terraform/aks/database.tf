@@ -12,7 +12,7 @@ module "postgres" {
   azure_enable_monitoring     = var.enable_monitoring
   azure_enable_backup_storage = var.enable_postgres_backup_storage
   azure_extensions            = ["uuid-ossp", "citext"]
-  server_version              = "14"
+  server_version              = var.postgres_version
   azure_sku_name              = var.postgres_flexible_server_sku
 
   azure_enable_high_availability = var.postgres_enable_high_availability

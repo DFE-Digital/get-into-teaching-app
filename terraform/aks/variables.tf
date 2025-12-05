@@ -107,6 +107,8 @@ variable "sidekiq_replicas" {
   default = 1
 }
 
+variable "postgres_version" { default = 14 }
+
 locals {
   postgres_ssl_mode = var.enable_postgres_ssl ? "require" : "disable"
 }
