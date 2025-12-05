@@ -17,6 +17,6 @@ module CallbackHelper
   end
 
   def callback_available?
-    Callbacks::Steps::Callback.callback_booking_quotas.any?
+    true # Callbacks::Steps::Callback.callback_booking_quotas.any?
   end
 end
