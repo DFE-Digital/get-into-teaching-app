@@ -42,7 +42,7 @@ A statement of comparability costs $nonuk_statementofcomparabilitycost$. It take
 
 ## English language, maths and science proficiency
 
-You need an English language qualification at level B2 for your visa requirements. ​You can [check your qualification level](https://learnenglish.britishcouncil.org/english-levels/understand-your-english-level) to see if it is equivalent to Common European Framework of Reference for Languages (CEFR) level B2.
+You need an English language qualification at level B2 for your visa requirements. If you already have English language qualifications, [check your qualification level](https://learnenglish.britishcouncil.org/english-levels/understand-your-english-level) to see if it is equivalent to Common European Framework of Reference for Languages (CEFR) level B2.
 
 Some providers may accept other English language test results if they meet the same standard as CEFR level B2.​
 
