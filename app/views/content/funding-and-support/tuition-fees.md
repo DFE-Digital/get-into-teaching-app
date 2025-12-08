@@ -22,23 +22,18 @@ expander:
       </p>
       <p>
       Find out more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.</p>
-inset_text:
-  fee-increase:
-    text: |-
-      The fees on this page apply to courses starting in the 2025 to 2026 academic year. The maximum tuition fees for courses starting in the following academic year (2026 to 2027) will be confirmed soon. Teacher training providers may advertise course fees from the 2025 to 2026 academic year until the fees for 2026 to 2027 are confirmed. They will update this information when it's available.
+
 ---
 For most postgraduate teacher training courses in England you need to pay a tuition fee. 
 
 ## Postgraduate teacher training course fees
 
-$fee-increase$
-
-The maximum tuition fee for a postgraduate teacher training course for UK applicants starting a course in the 2025 to 2026 academic year was:
+The maximum tuition fee for a postgraduate teacher training course for UK applicants starting a course in the 2026 to 2027 academic year is:
 
 * $fees_pgitt_domesticfulltime$ per year for a full-time course
 * $fees_pgitt_domesticparttime$ per year for a part-time course 
 
-Maximum fees are set by the UK government and will be confirmed for courses starting in the 2026 to 2027 academic year soon. Teacher training providers may advertise course fees from the 2025 to 2026 academic year until the fees for 2026 to 2027 are confirmed. They will update this information when it's available.
+Maximum fees are set by the UK government.
 
 $postgraduate-fees$
 

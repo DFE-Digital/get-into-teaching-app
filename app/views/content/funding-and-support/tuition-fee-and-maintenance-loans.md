@@ -40,10 +40,6 @@ expander:
       <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
       <p>
       <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">Find out about funding for non-UK citizens</a>.</p>
-inset_text:
-  loan-increase:
-    text: |-
-      The loan amounts shown on this page are based on the maximum tuition fees for courses in the 2025 to 2026 academic year. The maximum tuition fees for courses starting in the following academic year (2026 to 2027) will be confirmed soon.
 ---
 
 Funding is available to help you train to teach if you choose a course that has tuition fees. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs.
@@ -66,16 +62,14 @@ $student-finance$
 
 ## Tuition fee loan
 
-$loan-increase$
-
 You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course. If you’re eligible for a tuition fee loan, the amount you borrow is paid directly to your course provider.
 
-The maximum tuition fee loan for postgraduate teacher training for a UK applicant starting a course in the 2025 to 2026 academic year was:
+The maximum tuition fee loan for postgraduate teacher training for a UK applicant starting a course in the 2026 to 2027 academic year was:
 
 * $finance_tuitionfeeloan_postgraduatemaxfulltime$ per year for a full-time course
 * $finance_tuitionfeeloan_postgraduatemaxparttime$ per year for a part-time course
 
-Maximum tuition fee loan amounts are linked to the maximum tuition fees training providers can charge. Maximum tuition fees are set by the UK government and will be confirmed for courses starting in the 2026 to 2027 academic year soon. 
+Maximum tuition fee loan amounts are linked to the maximum tuition fees training providers can charge. Maximum tuition fees are set by the UK government.
 
 The maximum amount you can borrow depends on how much your course costs.
 
