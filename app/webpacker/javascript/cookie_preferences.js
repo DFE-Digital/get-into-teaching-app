@@ -61,6 +61,8 @@ export default class CookiePreferences {
     Cookies.set(CookiePreferences.cookieName, serialized, {
       expires: CookiePreferences.cookieLifetimeInDays,
       sameSite: 'Lax',
+      secure: true,
+      httpOnly: false,
     });
 
     this.cookieSet = true;
