@@ -28,8 +28,6 @@ For most postgraduate teacher training courses in England you need to pay a tuit
 
 ## Postgraduate teacher training course fees
 
-$fee-increase$
-
 The maximum tuition fee for a postgraduate teacher training course for UK applicants starting a course in the 2026 to 2027 academic year is:
 
 * $fees_pgitt_domesticfulltime$ per year for a full-time course
