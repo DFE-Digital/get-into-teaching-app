@@ -2,10 +2,10 @@ finance:
 # loans
   loanacademicyear: 2026 to 2027 academic year
   maintenanceloan:
-    withparents: £8,877
-    notwithparentsoutsidelondon: £10,544
-    notwithparentsinsidelondon: £13,762
-    oversixty: £4,461
+    withparents: £9,118
+    notwithparentsoutsidelondon: £10,830
+    notwithparentsinsidelondon: £14,135
+    oversixty: £4,582
   tuitionfeeloan:
     postgraduatemaxfulltime: £9,790
     postgraduatemaxparttime: £7,335
