@@ -1,5 +1,5 @@
 # To use or update to a ruby version, change BASE_RUBY_IMAGE
-ARG BASE_RUBY_IMAGE=ruby:3.4.5-alpine3.21
+ARG BASE_RUBY_IMAGE=ruby:3.4.7-alpine3.23
 
 FROM ${BASE_RUBY_IMAGE} AS base
 
@@ -16,8 +16,8 @@ WORKDIR /app
 RUN apk update
 
 RUN apk add --no-cache \
-  "procps-ng=4.0.4-r2" \
-  "libproc2=4.0.4-r2" \
+  "procps-ng=4.0.5-r0" \
+  "libproc2=4.0.5-r0" \
   "libwebp"
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
@@ -94,8 +94,8 @@ RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev &&
     rm -rf /var/lib/apt/lists/*
 
 RUN apk add --no-cache \
-  "procps-ng=4.0.4-r2" \
-  "libproc2=4.0.4-r2" \
+  "procps-ng=4.0.5-r0" \
+  "libproc2=4.0.5-r0" \
   "libwebp"
 
 COPY --from=release-build --chown=appuser:appgroup /app /app
