@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -98,7 +98,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -206,7 +206,7 @@ jobs:
       DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -249,7 +249,7 @@ jobs:
       DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -285,7 +285,7 @@ jobs:
         ci_node_index: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -329,7 +329,7 @@ jobs:
       DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -390,7 +390,7 @@ jobs:
        name: review
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -447,7 +447,7 @@ jobs:
       release_sha: ${{github.sha }}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -515,7 +515,7 @@ jobs:
     continue-on-error: true
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Vunerability Test
         uses: ./.github/workflows/actions/owasp
@@ -547,7 +547,7 @@ jobs:
        name: test
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -601,7 +601,7 @@ jobs:
       DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -650,7 +650,7 @@ jobs:
        name: production
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
