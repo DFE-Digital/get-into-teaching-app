@@ -78,9 +78,18 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
         expect(subject.time_zone).to eq("London")
       end
 
-      it "returns the time_zone from the store" do
+      it "returns the time_zone from the store if location is overseas" do
+        wizardstore["location"] = TeacherTrainingAdviser::Steps::Location::OUTSIDE_THE_UK
         wizardstore["time_zone"] = "Hawaii"
+
         expect(subject.time_zone).to eq("Hawaii")
+      end
+
+      it "defaults the time_zone back to London if location is not overseas" do
+        wizardstore["location"] = TeacherTrainingAdviser::Steps::Location::INSIDE_THE_UK
+        wizardstore["time_zone"] = "Hawaii"
+
+        expect(subject.time_zone).to eq("London")
       end
     end
 

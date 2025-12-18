@@ -78,7 +78,11 @@ module TeacherTrainingAdviser
     end
 
     def time_zone
-      find(Steps::OverseasTimeZone.key).time_zone || "London"
+      if find(Steps::Location.key).overseas?
+        find(Steps::OverseasTimeZone.key).time_zone || "London"
+      else
+        "London"
+      end
     end
 
     def complete!
