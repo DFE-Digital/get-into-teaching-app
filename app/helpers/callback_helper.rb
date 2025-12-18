@@ -5,18 +5,20 @@ module CallbackHelper
         start_at_in_time_zone = quota.start_at.in_time_zone.to_formatted_s(:govuk_time_with_period)
         end_at_in_time_zone = quota.end_at.in_time_zone.to_formatted_s(:govuk_time_with_period)
 
-        ["#{start_at_in_time_zone} to #{end_at_in_time_zone}", quota.start_at]
+        ["#{to_time_zoned_day(quota)} - #{start_at_in_time_zone} to #{end_at_in_time_zone}", quota.start_at]
       end
     end
   end
 
   def quotas_by_day(quotas)
-    quotas.group_by do |quota|
-      quota.start_at.in_time_zone.to_date.to_formatted_s(:govuk_date_long)
-    end
+    quotas.group_by { |quota| to_time_zoned_day(quota) }
   end
 
   def callback_available?
     Callbacks::Steps::Callback.callback_booking_quotas.any?
+  end
+
+  def to_time_zoned_day(quota)
+    quota.start_at.in_time_zone.to_date.to_formatted_s(:govuk_date_long)
   end
 end
