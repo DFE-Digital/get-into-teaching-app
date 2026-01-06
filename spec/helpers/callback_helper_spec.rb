@@ -29,18 +29,18 @@ RSpec.describe CallbackHelper, type: :helper do
 
     it {
       is_expected.to eq({
-        "Monday 6 April" => [["Monday 6 April - 10:30am to 11:00am", utc_today]],
-        "Tuesday 7 April" => [["Tuesday 7 April - 10:00am to 10:30am", utc_tomorrow]],
+        "Monday 6 April" => [["10:30am to 11:00am", utc_today]],
+        "Tuesday 7 April" => [["10:00am to 10:30am", utc_tomorrow]],
       })
     }
 
-    context "when given a time zone of UTC-11" do
-      let(:time_zone) { "American Samoa" }
+    context "when given a time zone of UTC-10" do
+      let(:time_zone) { "Hawaii" }
 
       it {
         is_expected.to eq({
-          "Sunday 5 April" => [["Sunday 5 April - 11:30pm to 12:00am", utc_today]],
-          "Monday 6 April" => [["Monday 6 April - 11:00pm to 11:30pm", utc_tomorrow]],
+          "Monday 6 April" => [["12:30am to 1:00am", utc_today]],
+          "Tuesday 7 April" => [["12:00am to 12:30am", utc_tomorrow]],
         })
       }
     end

@@ -5,7 +5,7 @@ module CallbackHelper
         start_at_in_time_zone = quota.start_at.in_time_zone.to_formatted_s(:govuk_time_with_period)
         end_at_in_time_zone = quota.end_at.in_time_zone.to_formatted_s(:govuk_time_with_period)
 
-        ["#{to_time_zoned_day(quota)} - #{start_at_in_time_zone} to #{end_at_in_time_zone}", quota.start_at]
+        ["#{start_at_in_time_zone} to #{end_at_in_time_zone}", quota.start_at]
       end
     end
   end

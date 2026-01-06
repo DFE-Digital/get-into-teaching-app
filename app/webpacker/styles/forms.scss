@@ -22,6 +22,22 @@ input.govuk-input {
   }
 }
 
+select.with-legend, select.with-legend::picker(select) {
+  appearance: base-select;
+  border-radius: unset;
+}
+
+select.with-legend {
+  optgroup > legend {
+    font-weight: bold;
+  }
+  optgroup > option {
+    span.day {
+      display: none;
+    }
+  }
+}
+
 input.govuk-radios__input:focus + .govuk-radios__label::before,
 input.govuk-checkboxes__input:focus + .govuk-checkboxes__label::before {
   @include input-focus;

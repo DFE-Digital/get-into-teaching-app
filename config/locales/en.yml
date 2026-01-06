@@ -786,7 +786,7 @@ en:
         last_name: "Last name"
         email: "Email address"
       teacher_training_adviser_steps_overseas_callback:
-        phone_call_scheduled_at: "Your preferred day and time for a callback"
+        phone_call_scheduled_at: "Select your preferred day and time for a callback"
       teacher_training_adviser_steps_overseas_time_zone:
         address_telephone: "Your telephone number"
         time_zone: "Your time zone"
@@ -819,7 +819,7 @@ en:
         address_telephone: "UK telephone number (optional)"
       teacher_training_adviser_steps_uk_callback:
         address_telephone: "Your telephone number"
-        phone_call_scheduled_at: "Your preferred day and time for a callback"
+        phone_call_scheduled_at: "Select your preferred day and time for a callback"
       teacher_training_adviser_steps_uk_address:
         address_postcode: "What's your postcode?"
       teacher_training_adviser_steps_overseas_country:
@@ -903,7 +903,7 @@ en:
         email: Email address
       callbacks_steps_callback:
         address_telephone: Phone number
-        phone_call_scheduled_at: Your preferred day and time for a callback
+        phone_call_scheduled_at: "Select your preferred day and time for a callback"
       callbacks_steps_talking_points:
         talking_points: Choose an option
 
