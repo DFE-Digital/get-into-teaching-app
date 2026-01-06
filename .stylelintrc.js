@@ -6,6 +6,7 @@ module.exports = {
     'selector-max-id': 1,
     'declaration-block-single-line-max-declarations': 1,
     'color-named': null,
-    'scss/at-extend-no-missing-placeholder': null
+    'scss/at-extend-no-missing-placeholder': null,
+    "selector-pseudo-element-no-unknown": [true, { "ignorePseudoElements": ["picker"] }]
   },
 };
