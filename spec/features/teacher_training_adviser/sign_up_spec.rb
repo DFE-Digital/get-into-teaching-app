@@ -464,7 +464,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       expect(page).to have_text "Choose a time"
       # Select time in local time zone (Hawaii)
-      select "12:00am to 1:00am", from: "Your preferred day and time for a callback"
+      select "12:00am to 1:00am", from: "Select your preferred day and time for a callback"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Check your answers before you continue"
@@ -522,7 +522,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       expect(page).to have_css "h1", text: "You need to speak to our team"
       fill_in "Your telephone number", with: "123456789"
       # Select time in local time zone (London)
-      select "11:00am to 12:00pm", from: "Your preferred day and time for a callback"
+      select "11:00am to 12:00pm", from: "Select your preferred day and time for a callback"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Check your answers before you continue"
@@ -1236,7 +1236,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       expect(page).to have_text("Enter your telephone number")
       fill_in "Your telephone number", with: "123456789"
       # Select time in local time zone (London)
-      select "11:00am to 12:00pm", from: "Your preferred day and time for a callback"
+      select "11:00am to 12:00pm", from: "Select your preferred day and time for a callback"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Check your answers before you continue"

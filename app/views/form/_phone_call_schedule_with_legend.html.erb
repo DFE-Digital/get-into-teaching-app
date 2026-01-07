@@ -1,0 +1,13 @@
+<%= f.govuk_select :phone_call_scheduled_at, class: "with-legend" do %>
+  <% optgroups.each do |day, times| %>
+    <%= tag.optgroup label: day do %>
+      <%= tag.legend day %>
+      <% times.each do |time| %>
+        <%= tag.option value: time.last do %>
+          <span class="day"><%= day %> - </span>
+          <span class="time"><%= time.first %></span>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>

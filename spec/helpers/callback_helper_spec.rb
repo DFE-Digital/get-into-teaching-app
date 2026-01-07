@@ -34,13 +34,13 @@ RSpec.describe CallbackHelper, type: :helper do
       })
     }
 
-    context "when given a time zone of GMT+2" do
-      let(:time_zone) { "Madrid" }
+    context "when given a time zone of UTC-10" do
+      let(:time_zone) { "Hawaii" }
 
       it {
         is_expected.to eq({
-          "Monday 6 April" => [["12:30pm to 1:00pm", utc_today]],
-          "Tuesday 7 April" => [["12:00pm to 12:30pm", utc_tomorrow]],
+          "Monday 6 April" => [["12:30am to 1:00am", utc_today]],
+          "Tuesday 7 April" => [["12:00am to 12:30am", utc_tomorrow]],
         })
       }
     end
@@ -82,6 +82,18 @@ RSpec.describe CallbackHelper, type: :helper do
       let(:quotas) { [] }
 
       it { is_expected.not_to be_callback_available }
+    end
+  end
+
+  describe "#to_time_zoned_day" do
+    subject { to_time_zoned_day(quota_today) }
+
+    it { is_expected.to eq("Monday 6 April") }
+
+    context "when given a time zone of GMT-11 (resulting in 'today' being the 5th)" do
+      let(:time_zone) { "American Samoa" }
+
+      it { is_expected.to eq("Sunday 5 April") }
     end
   end
 end
