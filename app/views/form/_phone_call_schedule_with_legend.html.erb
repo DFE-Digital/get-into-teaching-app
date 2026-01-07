@@ -4,7 +4,7 @@
       <%= tag.legend day %>
       <% times.each do |time| %>
         <%= tag.option value: time.last do %>
-          <span class="day"><%= day %></span>
+          <span class="day"><%= day %> - </span>
           <span class="time"><%= time.first %></span>
         <% end %>
       <% end %>
