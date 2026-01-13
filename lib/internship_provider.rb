@@ -28,8 +28,8 @@ class InternshipProvider
       else
         h["areas"] = @areas.strip if @areas
         h["applications"] = @applications.strip if @applications
-        h["name"] = @contact_name.strip
-        h["email"] = @contact_email.strip
+        h["name"] = @contact_name.strip if @contact_name
+        h["email"] = @contact_email.strip if @contact_email
       end
     end
   end

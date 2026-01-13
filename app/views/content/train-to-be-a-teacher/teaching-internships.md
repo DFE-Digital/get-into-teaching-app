@@ -510,8 +510,8 @@ provider_groups:
         applications: "Open"
         subjects: "chemistry, computing, design and technology, maths, physics"
         areas: "Gloucestershire"
-        name: "CONTACT NAME"
-        email: "CONTACT-EMAIL@TEST.TEST"
+        
+        
       - header: "Cherwell School"
         link: "https://www.cherwell.oxon.sch.uk/"
         applications: "Open"
@@ -745,8 +745,8 @@ provider_groups:
         applications: "Open"
         subjects: "chemistry, maths, physics, languages"
         areas: "Sheffield, Rotherham, Barnsley, Doncaster"
-        name: "CONTACT NAME"
-        email: "CONTACT-EMAIL@TEST.TEST"
+        
+        
       - header: "The Exchange Partnership"
         link: "https://www.exchangepartnership.org.uk/"
         applications: "Open"
