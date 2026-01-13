@@ -1,40 +1,44 @@
+require "active_model/type"
+
 class InternshipProvider
-  attr_reader :region
+  attr_reader :school_name, :region, :school_website,
+              :contact_name, :contact_email,
+              :subjects, :areas, :applications, :full
 
   def initialize(data)
     @data = data
 
     data.tap do |d|
-      @school_name = d[0] # TODO: Currently errors if this is string key. Investigate and fix.
-      @region = d["region"]
-      @school_website = d["school_website"]
-      @contact_name = d["contact_name"]
-      @contact_email = d["contact_email"]
-      @subjects = d["subjects"]
-      @areas = d["areas"]
-      @applications = d["applications"]
-      @full = ActiveModel::Type::Boolean.new.cast(d["full"])
+      @school_name = d[0]&.strip
+      @region = d["region"]&.strip
+      @school_website = d["school_website"]&.strip
+      @contact_name = d["contact_name"]&.strip
+      @contact_email = d["contact_email"]&.strip
+      @subjects = d["subjects"]&.strip
+      @areas = d["areas"]&.strip
+      @applications = d["applications"]&.strip
+      @full = ActiveModel::Type::Boolean.new.cast(d["full"]&.strip)
     end
   end
 
   def to_h
     {
-      "header" => @school_name.strip,
-      "link" => @school_website.strip,
-      "subjects" => @subjects.strip,
+      "header" => @school_name,
+      "link" => @school_website,
+      "subjects" => @subjects,
     }.tap do |h|
       if @full
         h["status"] = "Course full"
       else
-        h["areas"] = @areas.strip if @areas
-        h["applications"] = @applications.strip if @applications
-        h["name"] = @contact_name.strip if @contact_name
-        h["email"] = @contact_email.strip if @contact_email
+        h["areas"] = @areas
+        h["applications"] = @applications
+        h["name"] = @contact_name
+        h["email"] = @contact_email
       end
     end
   end
 
   def to_str
-    [@name, @email, @city, @postcode, @region].join("|")
+    [@school_name, @areas, @region, @school_website, @contact_email].join("|")
   end
 end
