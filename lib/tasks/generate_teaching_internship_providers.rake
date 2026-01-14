@@ -8,7 +8,7 @@ namespace :teaching_internship_providers do
     csv = CSV.read("lib/tasks/support/internship_providers.csv", headers: true)
 
     providers = csv.each.with_object({}) do |r, h|
-      ip = InternshipProvider.new(r)
+      ip = InternshipProvider.from_csv_row(r)
       h[ip.region.to_s] ||= {}
       h[ip.region.to_s]["providers"] ||= []
       h[ip.region.to_s]["providers"] << ip.to_h
