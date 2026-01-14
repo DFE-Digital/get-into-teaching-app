@@ -165,7 +165,7 @@ provider_groups:
         subjects: "chemistry, computing, design and technology, maths, physics, languages"
         areas: "East Hertfordshire, West Essex"
         name: "Claire Ruthven"
-        email: "claire.ruthven@hertsandessex.herts.sch.uk"
+        email: "TeacherInternships@hertsandessex.herts.sch.uk"
   London:
     providers:
       - header: "Debden Park High School (TKAT SCITT)"
@@ -692,7 +692,7 @@ provider_groups:
         name: "Louise Harrison"
         email: "lharrison@themfg.ghat.org.uk"
       - header: "Brigshaw Learning Partnership"
-        link: "https://www.brigshawlearningpartnership.com/"
+        link: "https://www.brigshaw.com/community/teacher-training"
         applications: "Open"
         subjects: "chemistry, computing, maths, physics, languages"
         areas: "Leeds"
