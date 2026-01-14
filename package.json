@@ -38,7 +38,7 @@
     "sinon": "^21.0.0",
     "stimulus": "^3.1",
     "terser-webpack-plugin": "5",
-    "trix": "^2.1.15",
+    "trix": "^2.1.16",
     "turbolinks": "^5.2.0",
     "webpack": "5",
     "webpack-assets-manifest": "5",
