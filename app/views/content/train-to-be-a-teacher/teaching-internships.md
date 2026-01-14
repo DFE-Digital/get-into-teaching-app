@@ -505,13 +505,6 @@ provider_groups:
         email: "n.bisset@xaviercet.org.uk"
   South West:
     providers:
-      - header: "Alderman Knight School"
-        link: "https://www.aldermanknight.gloucs.sch.uk/our-school"
-        applications: "Open"
-        subjects: "chemistry, computing, design and technology, maths, physics"
-        areas: "Gloucestershire"
-        
-        
       - header: "Cherwell School"
         link: "https://www.cherwell.oxon.sch.uk/"
         applications: "Open"
@@ -745,8 +738,8 @@ provider_groups:
         applications: "Open"
         subjects: "chemistry, maths, physics, languages"
         areas: "Sheffield, Rotherham, Barnsley, Doncaster"
-        
-        
+        name: "Louise Swallow"
+        email: "Louise.Swallow@unitedteaching.org.uk"
       - header: "The Exchange Partnership"
         link: "https://www.exchangepartnership.org.uk/"
         applications: "Open"
