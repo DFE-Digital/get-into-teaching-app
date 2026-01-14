@@ -11,12 +11,14 @@ module CallbackHelper
   end
 
   def quotas_by_day(quotas)
-    quotas.group_by do |quota|
-      quota.start_at.in_time_zone.to_date.to_formatted_s(:govuk_date_long)
-    end
+    quotas.group_by { |quota| to_time_zoned_day(quota) }
   end
 
   def callback_available?
     Callbacks::Steps::Callback.callback_booking_quotas.any?
+  end
+
+  def to_time_zoned_day(quota)
+    quota.start_at.in_time_zone.to_date.to_formatted_s(:govuk_date_long)
   end
 end

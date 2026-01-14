@@ -217,6 +217,13 @@ provider_groups:
       telephone: "01327 350284"
       international_phone: "+441327350284"
       extension: "ext 253"
+    - header: "University of Hertfordshire"
+      link: "https://www.herts.ac.uk/study/how-to-apply/assessment-only-route"
+      name: "Fran Copeman"
+      email: "aoenquiries@herts.ac.uk"
+      
+      
+      
   Greater London:
     providers:
     - header: "2Schools Consortium (Oakthorpe Primary School)"
@@ -342,10 +349,10 @@ provider_groups:
       
     - header: "University of Sunderland"
       link: "https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/"
-      name: "Jill Wilkinson"
-      email: "jill.wilkinson@sunderland.ac.uk"
-      telephone: "0191 515 3099"
-      international_phone: "+441915153099"
+      name: "Ian Elliott"
+      email: "ian.elliott@sunderland.ac.uk"
+      telephone: "0191 515 2159"
+      international_phone: "+441915152159"
       
     - header: "University of York"
       link: "https://www.york.ac.uk/education/pgce/"
@@ -376,13 +383,6 @@ provider_groups:
       email: "admin@scitt.bright-futures.co.uk"
       telephone: "07549 025620"
       international_phone: "+447549025620"
-      
-    - header: "Kingsbridge EIP SCITT"
-      link: "https://kingsbridge.atctrust.org.uk/"
-      name: "Alaina Shawcross"
-      email: "kingsbridge@cfat.org.uk"
-      telephone: "01254 686178"
-      international_phone: "+441254686178"
       
     - header: "London School of Jewish Studies"
       link: "https://www.lsjs.ac.uk/assessment-only"
@@ -526,6 +526,13 @@ provider_groups:
       telephone: "020 3740 1808"
       international_phone: "+442037401808"
       extension: "(option 1)"
+    - header: "University of Chichester"
+      link: "https://www.chi.ac.uk/teaching/course/assessment-only-route/"
+      name: "Dr Tim Brinded (Programme Lead), Daniel Newton (Administrator)"
+      email: "AO@chi.ac.uk"
+      telephone: "01243 812077"
+      international_phone: "+441243812077"
+      
     - header: "University of Portsmouth"
       link: "https://www.port.ac.uk"
       name: "Andrew Porter"
@@ -539,6 +546,13 @@ provider_groups:
       email: "h.grout@reading.ac.uk"
       telephone: "0118 378 7237"
       international_phone: "+441183787237"
+      
+    - header: "University of Winchester"
+      link: "https://www.winchester.ac.uk/study/Short-courses/Courses/Assessment-Only-Route-to-Qualified-Teacher-Status/"
+      name: "Keith Smith"
+      email: "AO@winchester.ac.uk"
+      telephone: "01962827376"
+      international_phone: "+441962827376"
       
     - header: "Xavier Teach SouthEast"
       link: "https://www.teachsoutheast.co.uk"
@@ -604,6 +618,13 @@ provider_groups:
       email: "h.grout@reading.ac.uk"
       telephone: "0118 378 7237"
       international_phone: "+441183787237"
+      
+    - header: "University of Winchester"
+      link: "https://www.winchester.ac.uk/study/Short-courses/Courses/Assessment-Only-Route-to-Qualified-Teacher-Status/"
+      name: "Keith Smith"
+      email: "AO@winchester.ac.uk"
+      telephone: "01962827376"
+      international_phone: "+441962827376"
       
   West Midland:
     providers:
@@ -736,6 +757,13 @@ provider_groups:
       email: "georgia.ramsay@york.ac.uk"
       telephone: "01904 326401"
       international_phone: "+441904326401"
+      
+    - header: "Yorkshire Wolds Teacher Training"
+      link: "https://ywtt.org.uk/"
+      name: "Alison Fletcher"
+      email: "alison.fletcher@theeducationalliance.org.uk"
+      telephone: "01482 636727"
+      international_phone: "+441482636727"
       
   Outside of the UK:
     description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
