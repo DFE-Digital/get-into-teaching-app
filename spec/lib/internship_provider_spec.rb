@@ -1,0 +1,343 @@
+require "spec_helper"
+require "internship_provider"
+require "csv"
+
+describe InternshipProvider do
+  let(:csv) do
+    CSV.parse("school_name,region,school_website,contact_name,contact_email,subjects,areas,applications,full\n" \
+                "School Name,Yorkshire and the Humber,https://example.test/,Test User,test.user@test.test,\"computing, design and technology, maths, physics\",\"Kirklees, Leeds and Bradford\",Open\n" \
+                "School With No Contact Info,London,https://example2.test2/,,,\"art, biology, chemistry\",\"Westminster\",Open\n" \
+                "Full School,London,https://example3.test3/,Test User3,test3.user3@test.test,\"dance\",\"Upminster\",Closed,TRUE\n" \
+                "Another Full School,London,https://example4.test4/,,,\"english,mathematics\",\"Acton\",Closed,TRUE\n", headers: true)
+  end
+
+  context "when the provider is not full and has contact details" do
+    let(:data) do
+      described_class.from_csv_row(csv[0])
+    end
+
+    describe "#school_name" do
+      subject { data.school_name }
+
+      it { is_expected.to eql("School Name") }
+    end
+
+    describe "#region" do
+      subject { data.region }
+
+      it { is_expected.to eql("Yorkshire and the Humber") }
+    end
+
+    describe "#website" do
+      subject { data.school_website }
+
+      it { is_expected.to eql("https://example.test/") }
+    end
+
+    describe "#contact_name" do
+      subject { data.contact_name }
+
+      it { is_expected.to eql("Test User") }
+    end
+
+    describe "#contact_email" do
+      subject { data.contact_email }
+
+      it { is_expected.to eql("test.user@test.test") }
+    end
+
+    describe "#subjects" do
+      subject { data.subjects }
+
+      it { is_expected.to eql("computing, design and technology, maths, physics") }
+    end
+
+    describe "#areas" do
+      subject { data.areas }
+
+      it { is_expected.to eql("Kirklees, Leeds and Bradford") }
+    end
+
+    describe "#applications" do
+      subject { data.applications }
+
+      it { is_expected.to eql("Open") }
+    end
+
+    describe "#full" do
+      subject { data.full }
+
+      it { is_expected.to be_nil }
+    end
+
+    describe "#to_h" do
+      subject { data.to_h }
+
+      it {
+        is_expected.to eql(
+          {
+            "header" => "School Name",
+            "link" => "https://example.test/",
+            "subjects" => "computing, design and technology, maths, physics",
+            "areas" => "Kirklees, Leeds and Bradford",
+            "applications" => "Open",
+            "name" => "Test User",
+            "email" => "test.user@test.test",
+          },
+        )
+      }
+    end
+
+    describe "#to_str" do
+      subject { data.to_str }
+
+      it { is_expected.to eql("School Name|Kirklees, Leeds and Bradford|Yorkshire and the Humber|https://example.test/|test.user@test.test") }
+    end
+  end
+
+  context "when the provider is not full and does not have contact details" do
+    let(:data) do
+      described_class.from_csv_row(csv[1])
+    end
+
+    describe "#school_name" do
+      subject { data.school_name }
+
+      it { is_expected.to eql("School With No Contact Info") }
+    end
+
+    describe "#region" do
+      subject { data.region }
+
+      it { is_expected.to eql("London") }
+    end
+
+    describe "#website" do
+      subject { data.school_website }
+
+      it { is_expected.to eql("https://example2.test2/") }
+    end
+
+    describe "#contact_name" do
+      subject { data.contact_name }
+
+      it { is_expected.to be_nil }
+    end
+
+    describe "#contact_email" do
+      subject { data.contact_email }
+
+      it { is_expected.to be_nil }
+    end
+
+    describe "#subjects" do
+      subject { data.subjects }
+
+      it { is_expected.to eql("art, biology, chemistry") }
+    end
+
+    describe "#areas" do
+      subject { data.areas }
+
+      it { is_expected.to eql("Westminster") }
+    end
+
+    describe "#applications" do
+      subject { data.applications }
+
+      it { is_expected.to eql("Open") }
+    end
+
+    describe "#full" do
+      subject { data.full }
+
+      it { is_expected.to be_nil }
+    end
+
+    describe "#to_h" do
+      subject { data.to_h }
+
+      it {
+        is_expected.to eql(
+          {
+            "header" => "School With No Contact Info",
+            "link" => "https://example2.test2/",
+            "subjects" => "art, biology, chemistry",
+            "applications" => "Open",
+            "areas" => "Westminster",
+            "email" => nil,
+            "name" => nil,
+          },
+        )
+      }
+    end
+
+    describe "#to_str" do
+      subject { data.to_str }
+
+      it { is_expected.to eql("School With No Contact Info|Westminster|London|https://example2.test2/|") }
+    end
+  end
+
+  context "when the provider is full and has contact details" do
+    let(:data) do
+      described_class.from_csv_row(csv[2])
+    end
+
+    describe "#school_name" do
+      subject { data.school_name }
+
+      it { is_expected.to eql("Full School") }
+    end
+
+    describe "#region" do
+      subject { data.region }
+
+      it { is_expected.to eql("London") }
+    end
+
+    describe "#website" do
+      subject { data.school_website }
+
+      it { is_expected.to eql("https://example3.test3/") }
+    end
+
+    describe "#contact_name" do
+      subject { data.contact_name }
+
+      it { is_expected.to eql("Test User3") }
+    end
+
+    describe "#contact_email" do
+      subject { data.contact_email }
+
+      it { is_expected.to eql("test3.user3@test.test") }
+    end
+
+    describe "#subjects" do
+      subject { data.subjects }
+
+      it { is_expected.to eql("dance") }
+    end
+
+    describe "#areas" do
+      subject { data.areas }
+
+      it { is_expected.to eql("Upminster") }
+    end
+
+    describe "#applications" do
+      subject { data.applications }
+
+      it { is_expected.to eql("Closed") }
+    end
+
+    describe "#full" do
+      subject { data.full }
+
+      it { is_expected.to be true }
+    end
+
+    describe "#to_h" do
+      subject { data.to_h }
+
+      it {
+        is_expected.to eql(
+          {
+            "header" => "Full School",
+            "link" => "https://example3.test3/",
+            "status" => "Course full",
+            "subjects" => "dance",
+          },
+        )
+      }
+    end
+
+    describe "#to_str" do
+      subject { data.to_str }
+
+      it { is_expected.to eql("Full School|Upminster|London|https://example3.test3/|test3.user3@test.test") }
+    end
+  end
+
+  context "when the provider is full and does not have contact details" do
+    let(:data) do
+      described_class.from_csv_row(csv[3])
+    end
+
+    describe "#school_name" do
+      subject { data.school_name }
+
+      it { is_expected.to eql("Another Full School") }
+    end
+
+    describe "#region" do
+      subject { data.region }
+
+      it { is_expected.to eql("London") }
+    end
+
+    describe "#website" do
+      subject { data.school_website }
+
+      it { is_expected.to eql("https://example4.test4/") }
+    end
+
+    describe "#contact_name" do
+      subject { data.contact_name }
+
+      it { is_expected.to be_nil }
+    end
+
+    describe "#contact_email" do
+      subject { data.contact_email }
+
+      it { is_expected.to be_nil }
+    end
+
+    describe "#subjects" do
+      subject { data.subjects }
+
+      it { is_expected.to eql("english,mathematics") }
+    end
+
+    describe "#areas" do
+      subject { data.areas }
+
+      it { is_expected.to eql("Acton") }
+    end
+
+    describe "#applications" do
+      subject { data.applications }
+
+      it { is_expected.to eql("Closed") }
+    end
+
+    describe "#full" do
+      subject { data.full }
+
+      it { is_expected.to be true }
+    end
+
+    describe "#to_h" do
+      subject { data.to_h }
+
+      it {
+        is_expected.to eql(
+          {
+            "header" => "Another Full School",
+            "link" => "https://example4.test4/",
+            "status" => "Course full",
+            "subjects" => "english,mathematics",
+          },
+        )
+      }
+    end
+
+    describe "#to_str" do
+      subject { data.to_str }
+
+      it { is_expected.to eql("Another Full School|Acton|London|https://example4.test4/|") }
+    end
+  end
+end
