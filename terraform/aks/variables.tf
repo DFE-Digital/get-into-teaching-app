@@ -109,6 +109,11 @@ variable "sidekiq_replicas" {
 
 variable "postgres_version" { default = 16 }
 
+variable "deploy_redis_cache" {
+  default     = false
+  description = "Deploy a separate Redis instance for caching (production only)"
+}
+
 locals {
   postgres_ssl_mode = var.enable_postgres_ssl ? "require" : "disable"
 }
