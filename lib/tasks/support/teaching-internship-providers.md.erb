@@ -24,8 +24,8 @@ provider_groups:
         applications: <%= provider["applications"].inspect %>
         subjects: <%= provider["subjects"].inspect %>
         areas: <%= provider["areas"].inspect %>
-        name: <%= provider["name"].inspect %>
-        email: <%= provider["email"].inspect %>
+        <% if provider["name"] %>name: <%= provider["name"].inspect %><% end %>
+        <% if provider["email"] %>email: <%= provider["email"].inspect %><% end %>
 <% end %>
 <% end %>
 ---
