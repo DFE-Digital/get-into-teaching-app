@@ -1,6 +1,8 @@
 module MailingList
   module Steps
     class TeacherTraining < ::GITWizard::Step
+      HIGH_COMMITMENT = 222_750_003 # I’m very sure and think I’ll apply
+
       attribute :consideration_journey_stage_id, :integer
       validates :consideration_journey_stage_id,
                 presence: true,

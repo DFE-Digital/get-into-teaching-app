@@ -3,7 +3,31 @@ class Crm::TeachingSubject
     "Media studies" => "Communication and media studies",
     "General science" => "Science",
   }.freeze
-  PRIMARY = "b02655a1-2afa-e811-a981-000d3a276620".freeze
+  ART_AND_DESIGN =  "7e2655a1-2afa-e811-a981-000d3a276620".freeze
+  BIOLOGY =         "802655a1-2afa-e811-a981-000d3a276620".freeze
+  BUSINESS =        "822655a1-2afa-e811-a981-000d3a276620".freeze
+  CHEMISTRY =       "842655a1-2afa-e811-a981-000d3a276620"
+  COMPUTING =       "8a2655a1-2afa-e811-a981-000d3a276620"
+  DESIGN_AND_TECHNOLOGY = "8e2655a1-2afa-e811-a981-000d3a276620"
+  DRAMA = "902655a1-2afa-e811-a981-000d3a276620"
+  ENGLISH = "942655a1-2afa-e811-a981-000d3a276620"
+  GEOGRAPHY = "9a2655a1-2afa-e811-a981-000d3a276620"
+  HISTORY = "a02655a1-2afa-e811-a981-000d3a276620"
+  MATHS = "a42655a1-2afa-e811-a981-000d3a276620"
+  MUSIC = "a82655a1-2afa-e811-a981-000d3a276620"
+  PHYSICAL_EDUCATION = "aa2655a1-2afa-e811-a981-000d3a276620"
+  PHYSICS = "ac2655a1-2afa-e811-a981-000d3a276620"
+  RELIGIOUS_EDUCATION = "b42655a1-2afa-e811-a981-000d3a276620"
+
+  # Languages
+  FRENCH = "962655a1-2afa-e811-a981-000d3a276620"
+  GERMAN = "9c2655a1-2afa-e811-a981-000d3a276620"
+  LANGUAGES_OTHER = "a22655a1-2afa-e811-a981-000d3a276620"
+  SPANISH = "b82655a1-2afa-e811-a981-000d3a276620"
+
+  # Primary
+  PRIMARY =         "b02655a1-2afa-e811-a981-000d3a276620".freeze
+
   IGNORED =
     {
       "Art" => "6b793433-cd1f-e911-a979-000d3a20838a",

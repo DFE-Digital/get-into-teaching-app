@@ -4,9 +4,6 @@ module TeacherTrainingAdviser::Steps
     DEGREE_IN_PROGRESS = 222_750_006
     NO_DEGREE = 222_750_004
 
-    GRADUATION_MONTH = 8
-    GRADUATION_DAY = 31
-
     attribute :degree_status_id, :integer
     attribute :graduation_year, :integer
     attribute :creation_channel_service_id, :integer
@@ -24,10 +21,11 @@ module TeacherTrainingAdviser::Steps
               presence: { message: "Enter your expected graduation year" },
               if: :degree_in_progress?
 
-    validate :graduation_year_not_in_the_past, if: :degree_in_progress?
-    validate :graduation_year_not_too_far_in_the_future, if: :degree_in_progress?
+    validate :validate_graduation_year_in_the_past, if: :degree_in_progress?
+    validate :validate_graduation_year_too_far_in_the_future, if: :degree_in_progress?
 
     include FunnelTitle
+    include GraduationYearMethods
 
     def save
       super
@@ -76,24 +74,17 @@ module TeacherTrainingAdviser::Steps
     end
 
     def studying_first_year?
-      # we are in the first year if there are more than than 2 years to go to graduation
-      degree_in_progress? &&
-        graduation_year.present? &&
-        (today <= (graduation_date - 2.years))
+      degree_in_progress? && graduating_first_year?
     end
 
     def studying_final_year?
       # we are in the final year if there is less than 1 year to go to graduation
-      degree_in_progress? &&
-        graduation_year.present? &&
-        ((today + 1.year) > graduation_date)
+      degree_in_progress? && graduating_final_year?
     end
 
     def studying_not_final_year?
       # we are not in the final year if there is at least 1 year to go to graduation
-      degree_in_progress? &&
-        graduation_year.present? &&
-        ((today + 1.year) <= graduation_date)
+      degree_in_progress? && graduating_not_final_year?
     end
 
   private
@@ -123,26 +114,6 @@ module TeacherTrainingAdviser::Steps
 
     def tta?
       other_step(:returning_teacher).tta?
-    end
-
-    def graduation_year_not_in_the_past
-      if graduation_year.present? && graduation_year < Time.current.year
-        errors.add(:graduation_year, "Your expected graduation year cannot be in the past")
-      end
-    end
-
-    def graduation_year_not_too_far_in_the_future
-      if graduation_year.present? && graduation_year >= Time.current.year + 10
-        errors.add(:graduation_year, "Your expected graduation year cannot be more than 10 years from now")
-      end
-    end
-
-    def today
-      Time.zone.today
-    end
-
-    def graduation_date
-      Date.new(graduation_year, GRADUATION_MONTH, GRADUATION_DAY)
     end
   end
 end

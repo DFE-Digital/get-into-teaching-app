@@ -21,12 +21,13 @@ module MailingList
                 presence: { message: "Enter your expected graduation year" },
                 if: :degree_in_progress?
 
-      validate :graduation_year_not_in_the_past, if: :degree_in_progress?
-      validate :graduation_year_not_too_far_in_the_future, if: :degree_in_progress?
+      validate :validate_graduation_year_in_the_past, if: :degree_in_progress?
+      validate :validate_graduation_year_too_far_in_the_future, if: :degree_in_progress?
 
       delegate :magic_link_token_used?, to: :@wizard
 
       include FunnelTitle
+      include GraduationYearMethods
 
       def degree_status_options
         @degree_status_options ||= query_degree_status
@@ -52,18 +53,6 @@ module MailingList
 
       def query_degree_status
         PickListItemsApiPresenter.new.get_qualification_degree_status
-      end
-
-      def graduation_year_not_in_the_past
-        if graduation_year.present? && graduation_year < Time.current.year
-          errors.add(:graduation_year, "Your expected graduation year cannot be in the past")
-        end
-      end
-
-      def graduation_year_not_too_far_in_the_future
-        if graduation_year.present? && graduation_year >= Time.current.year + 10
-          errors.add(:graduation_year, "Your expected graduation year cannot be more than 10 years from now")
-        end
       end
     end
   end

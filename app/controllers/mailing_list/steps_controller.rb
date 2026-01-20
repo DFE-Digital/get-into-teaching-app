@@ -26,10 +26,13 @@ module MailingList
       @inferred_degree_status = wizard_store[:inferred_degree_status]
 
       @degree_status = degree_status(wizard_store[:degree_status_id])
+      @graduation_year = wizard_store[:graduation_year]
       @citizenship = citizenship(wizard_store[:citizenship])
       @situation = situation(wizard_store[:situation])
       @visa_status = visa_status(wizard_store[:visa_status])
       @location = location(wizard_store[:location])
+      @consideration_journey_stage = consideration_journey_stage(wizard_store[:consideration_journey_stage_id])
+      @teaching_subject = teaching_subject(wizard_store[:preferred_teaching_subject_id])
     end
 
   protected
