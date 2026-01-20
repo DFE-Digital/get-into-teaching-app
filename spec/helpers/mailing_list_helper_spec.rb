@@ -21,9 +21,10 @@ RSpec.describe MailingListHelper, type: :helper do
   describe "attributes" do
     it "responds to key mailing list attributes" do
       expect(helper).to respond_to(
-                          :degree_status, :graduation_year,
-                          :citizenship, :visa_status, :location,
-                          :situation, :consideration_journey_stage, :teaching_subject)
+        :degree_status, :graduation_year,
+        :citizenship, :visa_status, :location,
+        :situation, :consideration_journey_stage, :teaching_subject
+      )
     end
   end
 
@@ -142,36 +143,36 @@ RSpec.describe MailingListHelper, type: :helper do
   describe "#ml_explore_subject" do
     subject { ml_explore_subject }
 
-    before { @teaching_subject = build(:teaching_subject, subject_key: subject_key)}
+    before { @teaching_subject = build(:teaching_subject, subject_key: subject_key) }
 
     context "when the teaching subject is Biology" do
       let(:subject_key) { :biology }
 
-      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/biology")}
+      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/biology") }
     end
 
     context "when the teaching subject is Drama" do
       let(:subject_key) { :drama }
 
-      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/drama")}
+      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/drama") }
     end
 
     context "when the teaching subject is German" do
       let(:subject_key) { :german }
 
-      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/languages")}
+      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/languages") }
     end
 
     context "when the teaching subject is Maths" do
       let(:subject_key) { :maths }
 
-      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/maths")}
+      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/maths") }
     end
 
     context "when the teaching subject is Primary" do
       let(:subject_key) { :primary }
 
-      it { is_expected.to have_link(href: "/life-as-a-teacher/age-groups-and-specialisms/primary")}
+      it { is_expected.to have_link(href: "/life-as-a-teacher/age-groups-and-specialisms/primary") }
     end
 
     context "when the teaching subject is Classics" do
@@ -184,7 +185,7 @@ RSpec.describe MailingListHelper, type: :helper do
   describe "#ml_explore_subject?" do
     subject { ml_explore_subject? }
 
-    before { @teaching_subject = build(:teaching_subject, subject_key: subject_key)}
+    before { @teaching_subject = build(:teaching_subject, subject_key: subject_key) }
 
     context "when the teaching subject is Biology" do
       let(:subject_key) { :biology }

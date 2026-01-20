@@ -43,6 +43,7 @@ module MailingListHelper
 
   def ml_explore_subject
     return unless teaching_subject
+
     case teaching_subject.id
     when Crm::TeachingSubject::ART_AND_DESIGN
       link_to "teaching art and design", "/life-as-a-teacher/explore-subjects/art-and-design"
