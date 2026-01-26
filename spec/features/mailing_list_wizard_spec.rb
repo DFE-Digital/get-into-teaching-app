@@ -255,10 +255,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "Test, you're signed up"
+    expect(page).to have_link("Find a route")
     expect(page).to have_text "Explore more"
-    # TODO: clarify what other links should be displayed here
-    # expect(page).to have_link("train to be a teacher if you don't have a degree")
-    # expect(page).to have_link("teaching in further education")
+    expect(page).to have_link("teaching languages")
   end
 
   scenario "Full journey as an existing candidate, UK citizen" do

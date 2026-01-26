@@ -36,27 +36,9 @@
                 <%= render "mailing_list/steps/completed/shared/changing_careers_to_teaching" %>
               <% end %>
 
-            <% elsif ml_no_degree? %>
-              <!-- they do not have a degree and are not studying for one -->
+            <% else %>
+              <!-- they are a career changer and have not (yet) graduated -->
               <%= render "content/home/routes-promo" %>
-
-              <b> TODO: REVIEW THIS CONTENT </b>
-              <p>
-                Learn about how to <a href="/train-to-be-a-teacher/if-you-dont-have-a-degree">train to be a teacher if you don't have a degree</a>.
-              </p>
-
-              <p>
-                Consider <a href="/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers">teaching in further education</a> without a degree.
-              </p>
-
-            <% elsif ml_degree_in_progress? %>
-              <!-- degree in progress -->
-              <b> TODO: REVIEW THIS CONTENT </b>
-              <p>
-                Learn about <a href="/steps-to-become-a-teacher">how to become a teacher</a>
-                including the qualifications you need and your funding options.
-              </p>
-
             <% end %>
 
           <% elsif graduating_final_year? || (ml_has_degree? &&  ml_graduated_and_exploring_career_options?) %>
@@ -103,11 +85,12 @@
         <% end %>
 
         <% if ml_explore_subject? %>
-          <p>Find out about <%= ml_explore_subject %>.</p>
+          <p>
+            Find out about <%= ml_explore_subject %>.
+          </p>
         <% else %>
           <p>
-            Find out about <%= link_to "life as a teacher", "/life-as-a-teacher" %>,
-            where teaching can lead and how you could inspire future generations.
+            Find out about <%= link_to "life as a teacher", "/life-as-a-teacher" %>.
           </p>
         <% end %>
       </div>
