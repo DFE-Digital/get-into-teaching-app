@@ -35,3 +35,22 @@ module "redis-cache" {
   azure_patch_schedule      = [{ "day_of_week" : "Sunday", "start_hour_utc" : 01 }]
   server_version            = "6"
 }
+
+module "redis-cache-store" {
+  source = "./vendor/modules/aks//aks/redis"
+  count  = var.deploy_redis_cache ? 1 : 0
+
+  name                      = "cache"
+  namespace                 = var.namespace
+  environment               = local.environment
+  azure_resource_prefix     = var.azure_resource_prefix
+  service_short             = var.service_short
+  config_short              = var.config_short
+  service_name              = var.service_name
+  cluster_configuration_map = module.cluster_data.configuration_map
+  use_azure                 = var.deploy_azure_backing_services
+  azure_enable_monitoring   = false
+  azure_maxmemory_policy    = "allkeys-lfu"
+  azure_patch_schedule      = [{ "day_of_week" : "Sunday", "start_hour_utc" : 01 }]
+  server_version            = "6"
+}
