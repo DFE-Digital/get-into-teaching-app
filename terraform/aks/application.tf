@@ -24,6 +24,7 @@ module "application_configuration" {
   secret_variables = {
     DATABASE_URL = module.postgres.url
     REDIS_URL    = module.redis-cache.url
+    REDIS_CACHE_URL = var.deploy_redis_cache ? module.redis-cache-store[0].url : module.redis-cache.url
     # below added from paas config
     HTTPAUTH_PASSWORD = module.infrastructure_secrets.map.HTTP-PASSWORD,
     HTTPAUTH_USERNAME = module.infrastructure_secrets.map.HTTP-USERNAME,
@@ -39,8 +40,8 @@ module "application_configuration" {
 # https://guides.rubyonrails.org/active_record_migrations.html#preparing-the-database
 # Terraform waits for this to complete before starting web_application and worker_application
 module "migrations" {
-  source = "./vendor/modules/aks//aks/job_configuration"
-  depends_on = [module.postgres,module.redis-cache]
+  source     = "./vendor/modules/aks//aks/job_configuration"
+  depends_on = [module.postgres, module.redis-cache]
 
   namespace    = var.namespace
   environment  = local.environment
@@ -102,6 +103,6 @@ module "worker_application" {
 
   enable_prometheus_monitoring = var.enable_prometheus_monitoring
 
-  enable_gcp_wif = true
+  enable_gcp_wif  = true
   run_as_non_root = true
 }
