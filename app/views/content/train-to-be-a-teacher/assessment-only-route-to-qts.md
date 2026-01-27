@@ -45,13 +45,6 @@ provider_groups:
       telephone: "02477 650660"
       international_phone: "+442477650660"
       
-    - header: "Educate Group Initial Teacher Training"
-      link: "https://educate-group.co.uk/assessment-only-route/"
-      name: "Claire King"
-      email: "aor@educate-group.co.uk"
-      telephone: "01978 281881"
-      international_phone: "+441978281881"
-      
     - header: "Keele and North Staffordshire Teacher Education"
       link: "https://www.knste.set.org/assessment-only-route/about-the-programme-entry-criteria"
       name: "KNSTE"
@@ -117,6 +110,13 @@ provider_groups:
       
   East Midlands:
     providers:
+    - header: "Educate Group Initial Teacher Training"
+      link: "https://educate-group.co.uk/assessment-only-route/"
+      name: "Claire King"
+      email: "claire.king@edcuate-group.co.uk"
+      telephone: "01978 281881"
+      international_phone: "+441978281881"
+      
     - header: "Inspiring Leaders"
       link: "https://inspiringleadersscitt.com/aor/"
       name: "Dirk Smith"
@@ -168,6 +168,13 @@ provider_groups:
       
   East of England:
     providers:
+    - header: "Educate Group Initial Teacher Training"
+      link: "https://educate-group.co.uk/assessment-only-route/"
+      name: "Claire King"
+      email: "claire.king@edcuate-group.co.uk"
+      telephone: "01978 281881"
+      international_phone: "+441978281881"
+      
     - header: "Essex and Thames SCITT"
       link: "https://etpscitt.co.uk/assessment-only-essex-southend-thurrock/"
       name: "Sarah Sloper; Emma Day"
@@ -333,6 +340,13 @@ provider_groups:
       
   North East:
     providers:
+    - header: "Educate Group Initial Teacher Training"
+      link: "https://educate-group.co.uk/assessment-only-route/"
+      name: "Claire King"
+      email: "claire.king@edcuate-group.co.uk"
+      telephone: "01978 281881"
+      international_phone: "+441978281881"
+      
     - header: "Exchange Teacher Training"
       link: "https://www.exchangeteachertraining.com/"
       name: "Samantha Rhodes"
@@ -383,6 +397,13 @@ provider_groups:
       email: "admin@scitt.bright-futures.co.uk"
       telephone: "07549 025620"
       international_phone: "+447549025620"
+      
+    - header: "Educate Group Initial Teacher Training"
+      link: "https://educate-group.co.uk/assessment-only-route/"
+      name: "Claire King"
+      email: "claire.king@edcuate-group.co.uk"
+      telephone: "01978 281881"
+      international_phone: "+441978281881"
       
     - header: "London School of Jewish Studies"
       link: "https://www.lsjs.ac.uk/assessment-only"
@@ -626,15 +647,6 @@ provider_groups:
       telephone: "01962827376"
       international_phone: "+441962827376"
       
-  West Midland:
-    providers:
-    - header: "Haybridge SCITT"
-      link: "https://www.teachwithhaybridge.co.uk/our-programmes/assessment-only/assessment-only-route/"
-      name: "Tracey Forward"
-      email: "tforward@haybridge.worcs.sch.uk"
-      telephone: "01562 886213"
-      international_phone: "+441562886213"
-      
   West Midlands:
     providers:
     - header: "Arthur Terry SCITT"
@@ -664,6 +676,20 @@ provider_groups:
       email: "a.marsh@bishopchalloner.bham.sch.uk"
       telephone: "0121 441 6175"
       international_phone: "+441214416175"
+      
+    - header: "Educate Group Initial Teacher Training"
+      link: "https://educate-group.co.uk/assessment-only-route/"
+      name: "Claire King"
+      email: "claire.king@edcuate-group.co.uk"
+      telephone: "01978 281881"
+      international_phone: "+441978281881"
+      
+    - header: "Haybridge SCITT"
+      link: "https://www.teachwithhaybridge.co.uk/our-programmes/assessment-only/assessment-only-route/"
+      name: "Tracey Forward"
+      email: "tforward@haybridge.worcs.sch.uk"
+      telephone: "01562 886213"
+      international_phone: "+441562886213"
       
     - header: "Staffordshire University"
       link: "https://www.staffs.ac.uk/course/assessment-only-leading-to-qts"
@@ -695,6 +721,13 @@ provider_groups:
       
   Yorkshire and the Humber:
     providers:
+    - header: "Educate Group Initial Teacher Training"
+      link: "https://educate-group.co.uk/assessment-only-route/"
+      name: "Claire King"
+      email: "claire.king@edcuate-group.co.uk"
+      telephone: "01978 281881"
+      international_phone: "+441978281881"
+      
     - header: "Exchange Teacher Training"
       link: "https://www.exchangeteachertraining.com/"
       name: "Samantha Rhodes"
@@ -781,13 +814,6 @@ provider_groups:
       email: "louise.jakes@coventry.ac.uk"
       telephone: "02477 650660"
       international_phone: "+442477650660"
-      
-    - header: "Educate Group Initial Teacher Training"
-      link: "https://educate-group.co.uk/assessment-only-route/"
-      name: "Claire King"
-      email: "aor@educate-group.co.uk"
-      telephone: "01978 281881"
-      international_phone: "+441978281881"
       
     - header: "London School of Jewish Studies"
       link: "https://www.lsjs.ac.uk/assessment-only"
