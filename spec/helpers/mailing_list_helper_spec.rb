@@ -18,64 +18,185 @@ RSpec.describe MailingListHelper, type: :helper do
     end
   end
 
-  describe "#ml_high_commitment?" do
-    it "returns true for consideration_journey_stage 222750003" do
-      expect(ml_high_commitment?(consideration_journey_stage: 222_750_003)).to be true
-    end
-
-    it "returns false for other consideration_journey_stage values" do
-      expect(ml_high_commitment?(consideration_journey_stage: 123_456_789)).to be false
-    end
-  end
-
-  describe "#ml_low_commitment?" do
-    it "returns true for consideration_journey_stage 222750000" do
-      expect(ml_low_commitment?(consideration_journey_stage: 222_750_000)).to be true
-    end
-
-    it "returns false for other consideration_journey_stage values" do
-      expect(ml_low_commitment?(consideration_journey_stage: 123_456_789)).to be false
+  describe "attributes" do
+    it "responds to key mailing list attributes" do
+      expect(helper).to respond_to(
+        :degree_status, :graduation_year,
+        :citizenship, :visa_status, :location,
+        :situation, :consideration_journey_stage, :teaching_subject
+      )
     end
   end
 
-  describe "#ml_graduate?" do
-    it "returns true for degree_status 222750000" do
-      expect(ml_graduate?(degree_status_id: 222_750_000)).to be true
+  describe "#ml_uk_citizen?" do
+    subject { ml_uk_citizen? }
+
+    context "when a UK citizen" do
+      before { @citizenship = build(:citizenship, :uk_citizen) }
+
+      it { is_expected.to be true }
     end
 
-    it "returns false for other degree_status values" do
-      expect(ml_graduate?(degree_status_id: 123_456_789)).to be false
+    context "when a non-UK citizen" do
+      before { @citizenship = build(:citizenship, :non_uk_citizen) }
+
+      it { is_expected.to be false }
     end
   end
 
-  describe "#ml_studying?" do
-    it "returns true for degree_status 222750006" do
-      expect(ml_studying?(degree_status_id: 222_750_006)).to be true
+  describe "#ml_career_changer?" do
+    subject { ml_career_changer? }
+
+    context "when a career changer" do
+      before { @situation = build(:situation, :change_career) }
+
+      it { is_expected.to be true }
     end
 
-    it "returns false for other degree_status values" do
-      expect(ml_studying?(degree_status_id: 123_456_789)).to be false
+    context "when a teaching assistant" do
+      before { @situation = build(:situation, :teaching_assistant) }
+
+      it { is_expected.to be false }
+    end
+  end
+
+  describe "#ml_has_degree?" do
+    subject { ml_has_degree? }
+
+    context "when a graduate" do
+      before { @degree_status = build(:degree_status, :graduate_or_postgraduate) }
+
+      it { is_expected.to be true }
+    end
+
+    context "when studying for a degree" do
+      before { @degree_status = build(:degree_status, :not_yet_im_studying) }
+
+      it { is_expected.to be false }
+    end
+  end
+
+  describe "#ml_degree_in_progress?" do
+    subject { ml_degree_in_progress? }
+
+    context "when a graduate" do
+      before { @degree_status = build(:degree_status, :graduate_or_postgraduate) }
+
+      it { is_expected.to be false }
+    end
+
+    context "when studying for a degree" do
+      before { @degree_status = build(:degree_status, :not_yet_im_studying) }
+
+      it { is_expected.to be true }
     end
   end
 
   describe "#ml_no_degree?" do
-    it "returns true for degree_status 222750004" do
-      expect(ml_no_degree?(degree_status_id: 222_750_004)).to be true
+    subject { ml_no_degree? }
+
+    context "when a graduate" do
+      before { @degree_status = build(:degree_status, :graduate_or_postgraduate) }
+
+      it { is_expected.to be false }
     end
 
-    it "returns false for other degree_status values" do
-      expect(ml_no_degree?(degree_status_id: 123_456_789)).to be false
+    context "when does not have a degree" do
+      before { @degree_status = build(:degree_status, :no_degree) }
+
+      it { is_expected.to be true }
     end
   end
 
-  describe "#ml_consideration_journey_stage_id" do
-    before do
-      allow(session).to receive(:dig).with("mailinglist", "consideration_journey_stage_id").and_return(nil)
-      ml_consideration_journey_stage_id
+  describe "#ml_high_commitment?" do
+    subject { ml_high_commitment? }
+
+    context "when high committment" do
+      before { @consideration_journey_stage = build(:consideration_journey_stage, :very_sure_and_will_apply) }
+
+      it { is_expected.to be true }
     end
 
-    specify "checks the welcome guide and mailing list session values" do
-      expect(session).to have_received(:dig).with("mailinglist", "consideration_journey_stage_id")
+    context "when low committment" do
+      before { @consideration_journey_stage = build(:consideration_journey_stage, :just_an_idea) }
+
+      it { is_expected.to be false }
+    end
+  end
+
+  describe "#ml_graduated_and_exploring_career_options?" do
+    subject { ml_graduated_and_exploring_career_options? }
+
+    context "when graduated and exploring my career options" do
+      before { @situation = build(:situation, :graduated) }
+
+      it { is_expected.to be true }
+    end
+
+    context "when a teaching assistant" do
+      before { @situation = build(:situation, :teaching_assistant) }
+
+      it { is_expected.to be false }
+    end
+  end
+
+  describe "#ml_explore_subject" do
+    subject { ml_explore_subject }
+
+    before { @teaching_subject = build(:teaching_subject, subject_key: subject_key) }
+
+    context "when the teaching subject is Biology" do
+      let(:subject_key) { :biology }
+
+      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/biology") }
+    end
+
+    context "when the teaching subject is Drama" do
+      let(:subject_key) { :drama }
+
+      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/drama") }
+    end
+
+    context "when the teaching subject is German" do
+      let(:subject_key) { :german }
+
+      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/languages") }
+    end
+
+    context "when the teaching subject is Maths" do
+      let(:subject_key) { :maths }
+
+      it { is_expected.to have_link(href: "/life-as-a-teacher/explore-subjects/maths") }
+    end
+
+    context "when the teaching subject is Primary" do
+      let(:subject_key) { :primary }
+
+      it { is_expected.to have_link(href: "/life-as-a-teacher/age-groups-and-specialisms/primary") }
+    end
+
+    context "when the teaching subject is Classics" do
+      let(:subject_key) { :classics }
+
+      it { is_expected.to be_nil }
+    end
+  end
+
+  describe "#ml_explore_subject?" do
+    subject { ml_explore_subject? }
+
+    before { @teaching_subject = build(:teaching_subject, subject_key: subject_key) }
+
+    context "when the teaching subject is Biology" do
+      let(:subject_key) { :biology }
+
+      it { is_expected.to be true }
+    end
+
+    context "when the teaching subject is Classics" do
+      let(:subject_key) { :classics }
+
+      it { is_expected.to be false }
     end
   end
 end

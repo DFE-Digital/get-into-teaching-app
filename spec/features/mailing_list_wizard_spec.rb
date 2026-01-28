@@ -217,7 +217,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_css "#mailing-list-location[data-id=222750001]", visible: false
   end
 
-  scenario "Full journey as a new candidate without a degree and not studying for one shows next steps, UK citizen" do
+  scenario "Full journey as a new candidate without a degree and not studying for one shows explore more, UK citizen" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
@@ -255,9 +255,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "Test, you're signed up"
-    expect(page).to have_text "Your next steps"
-    expect(page).to have_link("train to be a teacher if you don't have a degree")
-    expect(page).to have_link("teaching in further education")
+    expect(page).to have_link("Find a route")
+    expect(page).to have_text "Explore more"
+    expect(page).to have_link("teaching languages")
   end
 
   scenario "Full journey as an existing candidate, UK citizen" do

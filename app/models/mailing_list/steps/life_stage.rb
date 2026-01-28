@@ -1,6 +1,8 @@
 module MailingList
   module Steps
     class LifeStage < ::GITWizard::Step
+      GRADUATED_AND_EXPLORING_CAREER_OPTS = 222_750_003 # Graduated and exploring my career options
+      CAREER_CHANGER = 222_750_004 # Considering changing my existing career
       QUALIFIED_TEACHER = 222_750_007
 
       attribute :situation, :integer
@@ -23,6 +25,10 @@ module MailingList
 
       def situation_ids
         situations.map { |option| option.id.to_i }
+      end
+
+      def career_changer?
+        situation == CAREER_CHANGER
       end
 
       def qualified_teacher?

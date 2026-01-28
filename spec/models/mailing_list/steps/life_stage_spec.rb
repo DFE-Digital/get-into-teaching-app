@@ -62,4 +62,44 @@ describe MailingList::Steps::LifeStage do
 
     it_behaves_like "validate situation values"
   end
+
+  describe "career_changer?" do
+    before do
+      instance.situation = situation.id
+    end
+
+    subject { instance.career_changer? }
+
+    context "when a career changer" do
+      let(:situation) { change_career }
+
+      it { is_expected.to be true }
+    end
+
+    context "when some other situation" do
+      let(:situation) { teaching_assistant }
+
+      it { is_expected.to be false }
+    end
+  end
+
+  describe "qualified_teacher?" do
+    before do
+      instance.situation = situation.id
+    end
+
+    subject { instance.qualified_teacher? }
+
+    context "when a qualified teacher" do
+      let(:situation) { qualified_teacher }
+
+      it { is_expected.to be true }
+    end
+
+    context "when some other situation" do
+      let(:situation) { teaching_assistant }
+
+      it { is_expected.to be false }
+    end
+  end
 end

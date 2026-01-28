@@ -12,34 +12,86 @@
     <section class="registration__mailing-list">
       <div class="registration__mailing-list--container">
         <p>
-        You'll get your first email shortly. If you change your mind,
-        you can unsubscribe at any time.
+          Your first email will arrive shortly. If you change your mind, you can unsubscribe at any time.
         </p>
 
-        <h2 class="heading-m">Your next steps</h2>
+        <p>
+          Before you go, check out other support we offer. Based on what you've told us, you might find it useful.
+        </p>
 
-        <% if ml_graduate? && ml_high_commitment? %>
-          <%= render "mailing_list/steps/completed/shared/get_an_adviser_high_commitment" %>
+        <% if ml_uk_citizen? %>
+          <!-- UK citizen -->
+
+          <% if ml_career_changer? %>
+            <!-- changing career -->
+
+            <% if ml_has_degree? %>
+              <!-- they have graduated with a degree -->
+
+              <% if ml_high_commitment? %>
+                <!-- think they will apply -->
+                <%= render "mailing_list/steps/completed/shared/one_to_one_support_from_an_adviser" %>
+              <% else %>
+                <!-- its just an idea -->
+                <%= render "mailing_list/steps/completed/shared/changing_careers_to_teaching" %>
+              <% end %>
+
+            <% else %>
+              <!-- they are a career changer and have not (yet) graduated -->
+              <%= render "content/home/routes-promo" %>
+            <% end %>
+
+          <% elsif graduating_final_year? || (ml_has_degree? &&  ml_graduated_and_exploring_career_options?) %>
+            <!-- in their final year or graduated and exploring career options -->
+
+            <% if ml_high_commitment? %>
+              <!-- think they will apply -->
+              <%= render "mailing_list/steps/completed/shared/one_to_one_support_from_an_adviser" %>
+            <% else %>
+              <!-- its just an idea -->
+              <%= render "content/home/routes-promo" %>
+            <% end %>
+          <% else %>
+            <%= render "content/home/routes-promo" %>
+          <% end %>
+
+        <% elsif ml_non_uk_citizen? %>
+          <!-- non-UK citizen -->
+          <%= render "mailing_list/steps/completed/shared/teaching_in_england_as_a_non_uk_citizen" %>
         <% end %>
 
-        <% if (ml_graduate? && ml_low_commitment?) || ml_studying? %>
-          <%= render "mailing_list/steps/completed/shared/get_an_adviser_low_commitment" %>
+        <h2 class="heading-m">Explore more</h2>
+
+        <% if ml_uk_citizen? %>
+
+          <% if graduating_final_year? || (ml_has_degree? &&  ml_graduated_and_exploring_career_options?) %>
+            <% if ml_high_commitment? %>
+              <p>
+                <%= link_to "Search for postgraduate teacher training courses", "https://find-teacher-training-courses.service.gov.uk/" %>
+                in England to study for qualified teacher status (QTS).
+              </p>
+            <% else %>
+              <p>
+                <%= link_to "Get free one-to-one support", "/teacher-training-adviser/sign_up/" %>
+                from our advisers. They have years of teaching experience and can help with everything from deciding if teaching is right for you to how to apply. Chat by phone, text or email, as little or as often as you need.
+              </p>
+            <% end %>
+          <% elsif graduating_not_final_year? %>
+            <p>
+              <%= link_to "Get school experience", "https://schoolexperience.education.gov.uk/" %>
+              and find out what it's like to be in a classroom.
+            </p>
+          <% end %>
         <% end %>
 
-        <% if ml_graduate? || (ml_studying? && ml_high_commitment?) %>
-          <%= render "mailing_list/steps/completed/shared/find_a_teacher_training_course" %>
-        <% end %>
-
-        <% if ml_low_commitment? && (ml_studying? || ml_no_degree?) %>
-          <%= render "mailing_list/steps/completed/shared/is_teaching_right_for_me" %>
-        <% end %>
-
-        <% if ml_no_degree? %>
-          <%= render(partial: "mailing_list/steps/completed/shared/train_to_teach_no_degree") %>
-        <% end %>
-
-        <% if ml_studying? %>
-          <%= render "mailing_list/steps/completed/shared/steps_to_become_a_teacher" %>
+        <% if ml_explore_subject? %>
+          <p>
+            Find out about <%= ml_explore_subject %>.
+          </p>
+        <% else %>
+          <p>
+            Find out about <%= link_to "life as a teacher", "/life-as-a-teacher" %>.
+          </p>
         <% end %>
       </div>
     </section>

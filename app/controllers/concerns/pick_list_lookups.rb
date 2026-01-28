@@ -29,6 +29,16 @@ module PickListLookups
     find_by_id(@locations, id)
   end
 
+  def consideration_journey_stage(id)
+    @consideration_journey_stages ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_journey_stages
+    find_by_id(@consideration_journey_stages, id)
+  end
+
+  def teaching_subject(id)
+    @teaching_subjects ||= Crm::TeachingSubject.all
+    find_by_id(@teaching_subjects, id)
+  end
+
   def find_by_id(list, id)
     list.find { |x| x.id == id } if list.present? && id.present?
   end
