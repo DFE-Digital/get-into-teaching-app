@@ -21,7 +21,7 @@ module MailingList
                 presence: { message: "Enter your expected graduation year" },
                 if: :degree_in_progress?
 
-      validate :validate_graduation_year_in_the_past, if: :degree_in_progress?
+      validate :validate_graduation_year_not_in_the_past, if: :degree_in_progress?
       validate :validate_graduation_year_too_far_in_the_future, if: :degree_in_progress?
 
       delegate :magic_link_token_used?, to: :@wizard

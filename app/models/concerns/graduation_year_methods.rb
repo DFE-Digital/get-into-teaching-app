@@ -33,7 +33,7 @@ module GraduationYearMethods
     ((today + 1.year) <= graduation_date) if graduation_year?
   end
 
-  def validate_graduation_year_in_the_past
+  def validate_graduation_year_not_in_the_past
     if graduation_year? && graduation_year < current_year
       errors.add(:graduation_year, "Your expected graduation year cannot be in the past")
     end
