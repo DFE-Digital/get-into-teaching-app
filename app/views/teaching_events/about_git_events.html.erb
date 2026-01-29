@@ -38,14 +38,22 @@
     </ul>
     <p>You can tell us about any accessibility features you need when you register for an event.</p>
 
-<p>Watch our video to find out how what happens at a Get Into Teaching event.</p>
+    <p>Watch our video to find out how what happens at a Get Into Teaching event.</p>
 
     <div class="video">
       <%= render Content::YoutubeVideoComponent.new(
-        id: "w3AVk-ByUaA",
+        id: "5d6gJgh98c8",
         title: "A video about what happens at a Get Into Teaching event"
       ) %>
       <p><a href="/events/what-happens-at-events-transcript">Read the transcript for the 'What happens at a Get Into Teaching event' video</a>.</p>
+    </div>
+
+    <p>Get Into Teaching Events video (Audio Described version)</p>
+    <div class="video">
+      <%= render Content::YoutubeVideoComponent.new(
+        id: "GWVQKOwmOsI",
+        title: "A video about what happens at a Get Into Teaching event (Audio Description)"
+      ) %>
     </div>
   </section>
 
