@@ -58,3 +58,11 @@ terraform.tfstate.backup
 yarn-debug.log*
 .yarn-integrity
 fetch_config.rb
+
+yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
