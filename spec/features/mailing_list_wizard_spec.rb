@@ -52,6 +52,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Test, you're signed up"
 
     expect(page).to have_css "#mailing-list-degree-status[data-id=222750006]", visible: false
+    expect(page).to have_css "#mailing-list-consideration-journey-stage[data-id=222750000]", visible: false
+    expect(page).to have_css "#mailing-list-teaching-subject[data-id='a42655a1-2afa-e811-a981-000d3a276620']", visible: false
     expect(page).to have_css "#mailing-list-citizenship[data-id=222750000]", visible: false
     expect(page).to have_css "#mailing-list-situation[data-id=222750002]", visible: false
     expect(page).not_to have_css "#mailing-list-visa-status", visible: false
@@ -113,6 +115,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
 
     expect(page).to have_css "#mailing-list-degree-status[data-id=222750004]", visible: false
+    expect(page).to have_css "#mailing-list-consideration-journey-stage[data-id=222750000]", visible: false
+    expect(page).to have_css "#mailing-list-teaching-subject[data-id='a42655a1-2afa-e811-a981-000d3a276620']", visible: false
     expect(page).to have_css "#mailing-list-citizenship[data-id=222750001]", visible: false
     expect(page).to have_css "#mailing-list-situation[data-id=222750004]", visible: false
     expect(page).to have_css "#mailing-list-visa-status[data-id=222750001]", visible: false
@@ -162,6 +166,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
 
     expect(page).to have_css "#mailing-list-degree-status[data-id=222750000]", visible: false
+    expect(page).to have_css "#mailing-list-consideration-journey-stage[data-id=222750000]", visible: false
+    expect(page).to have_css "#mailing-list-teaching-subject[data-id='a42655a1-2afa-e811-a981-000d3a276620']", visible: false
     expect(page).to have_css "#mailing-list-citizenship[data-id=222750000]", visible: false
     expect(page).to have_css "#mailing-list-situation[data-id=222750003]", visible: false
     expect(page).not_to have_css "#mailing-list-visa-status", visible: false
@@ -211,6 +217,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Test, you're signed up"
 
     expect(page).to have_css "#mailing-list-degree-status[data-id=222750004]", visible: false
+    expect(page).to have_css "#mailing-list-consideration-journey-stage[data-id=222750000]", visible: false
+    expect(page).to have_css "#mailing-list-teaching-subject[data-id='a42655a1-2afa-e811-a981-000d3a276620']", visible: false
     expect(page).to have_css "#mailing-list-citizenship[data-id=222750001]", visible: false
     expect(page).to have_css "#mailing-list-situation[data-id=222750001]", visible: false
     expect(page).to have_css "#mailing-list-visa-status[data-id=222750000]", visible: false
