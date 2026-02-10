@@ -16,6 +16,7 @@ module Pages
       @nodes = pages
         .select { |_p, fm| fm.key?(:navigation) }
         .map { |p, fm| Node.new(self, p, fm) }
+        .select { |node| node.visible } # exclude invisible pages from the navigation
     end
 
     def all_pages
@@ -31,7 +32,7 @@ module Pages
     end
 
     class Node
-      attr_reader :navigation, :path, :title, :rank, :description, :image, :subcategory
+      attr_reader :navigation, :path, :title, :rank, :description, :image, :subcategory, :visible
 
       def initialize(navigation, path, front_matter)
         @navigation = navigation
@@ -44,6 +45,7 @@ module Pages
           @description = fm.fetch(:navigation_description, nil)
           @image       = fm.fetch(:navigation_image, nil)
           @subcategory = fm.fetch(:subcategory, nil)
+          @visible     = fm.fetch(:navigation_visible, true) # pages are visible by default
         end
       end
 

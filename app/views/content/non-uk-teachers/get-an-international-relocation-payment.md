@@ -11,6 +11,8 @@ cta_arrow_link:
 navigation: 20.60
 navigation_title: Get an international relocation payment (IRP)
 navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth $nonuk_internationalrelocationpayment_value$.
+navigation_visible: false
+noindex: true
 image: "static/images/content/hero-images/geography.jpg"
 backlink: "../../"
 inset_text:

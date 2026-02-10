@@ -26,10 +26,13 @@ RSpec.describe Pages::Navigation do
       "/page-six/part-1" => { title: "Page six: part 1", navigation: 6.1 },
       "/page-six/part-2" => { title: "Page six: part 2", navigation: 6.2 },
       "/page-six/part-3" => { title: "Page six: part 3", navigation: 6.3 },
+      "/page-six/part-4" => { title: "Page six: part 4", navigation: 6.4, navigation_visible: false },
     }
   end
 
   let(:nav) { primary_nav.merge(page_five_subpages, page_six_subpages) }
+  let(:visible_nav) {  nav.reject { |k,v| v[:navigation_visible]==false } }
+
   let(:actual_pages) { subject.map(&:path) }
 
   describe "delegation" do
@@ -42,14 +45,18 @@ RSpec.describe Pages::Navigation do
   describe "#all_pages" do
     subject { described_class.new(nav).all_pages }
 
-    specify "contains all of the pages, both primary and secondary" do
-      expected_pages = nav.keys
+    specify "contains all of the pages, both primary and secondary, but does not include hidden pages" do
+      expect(actual_pages).to match_array(visible_nav.keys)
+    end
 
-      expect(actual_pages).to match_array(expected_pages)
+    specify "does not include the hidden page" do
+      expect(actual_pages).not_to include("/page-six/part-4")
     end
 
     specify "pages are in the right order" do
-      expected_order = nav.sort_by { |_p, fm| fm[:navigation] }.map { |path, _fm| path }
+      expected_order = visible_nav
+                         .sort_by { |_p, fm| fm[:navigation] }
+                         .map { |path, _fm| path }
 
       expect(actual_pages).to eql(expected_order)
     end
