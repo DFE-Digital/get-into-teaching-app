@@ -31,7 +31,7 @@ RSpec.describe Pages::Navigation do
   end
 
   let(:nav) { primary_nav.merge(page_five_subpages, page_six_subpages) }
-  let(:visible_nav) {  nav.reject { |k,v| v[:navigation_visible]==false } }
+  let(:visible_nav) {  nav.reject { |_k, v| v[:navigation_visible] == false } }
 
   let(:actual_pages) { subject.map(&:path) }
 

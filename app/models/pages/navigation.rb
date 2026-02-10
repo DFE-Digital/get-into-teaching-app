@@ -16,7 +16,7 @@ module Pages
       @nodes = pages
         .select { |_p, fm| fm.key?(:navigation) }
         .map { |p, fm| Node.new(self, p, fm) }
-        .select { |node| node.visible } # exclude invisible pages from the navigation
+        .select(&:visible) # exclude invisible pages from the navigation
     end
 
     def all_pages
