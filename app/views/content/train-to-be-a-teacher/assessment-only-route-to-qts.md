@@ -627,9 +627,9 @@ provider_groups:
       international_phone: "+443001231967"
       
     - header: "Ted Wragg Teacher Training Partnership"
-      link: "https://www.tedwraggtrust.co.uk/page/?title=Train+to+Teach&pid=25"
-      name: "Carrie McMillan"
-      email: "carrie.mcmillan@tedwraggtrust.co.uk"
+      link: "https://www.swtt.net"
+      name: "Chloe Fox"
+      email: "info@swtt.net"
       telephone: "01392 686165"
       international_phone: "+441392686165"
       
