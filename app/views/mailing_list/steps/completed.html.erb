@@ -99,6 +99,8 @@
 </div>
 
 <%= tag.div id: "mailing-list-degree-status", class: "hidden", data: { id: @degree_status.id, key: @inferred_degree_status || @degree_status.value } if @degree_status %>
+<%= tag.div id: "mailing-list-consideration-journey-stage", class: "hidden", data: { id: @consideration_journey_stage.id, value: @consideration_journey_stage.value } if @consideration_journey_stage %>
+<%= tag.div id: "mailing-list-teaching-subject", class: "hidden", data: { id: @teaching_subject.id, value: @teaching_subject.value } if @teaching_subject %>
 <%= tag.div id: "mailing-list-citizenship", class: "hidden", data: { id: @citizenship.id, value: @citizenship.value } if @citizenship %>
 <%= tag.div id: "mailing-list-situation", class: "hidden", data: { id: @situation.id, value: @situation.value } if @situation %>
 <%= tag.div id: "mailing-list-visa-status", class: "hidden", data: { id: @visa_status.id, value: @visa_status.value } if @visa_status %>
