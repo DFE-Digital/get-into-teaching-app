@@ -85,7 +85,7 @@ Contact the provider directly to:
 
 ### iQTS training providers
 
-The following providers are accepting applications from all over the world:
+The following providers are accepting applications:
 
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
 
