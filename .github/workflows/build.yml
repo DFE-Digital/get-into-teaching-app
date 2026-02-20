@@ -71,7 +71,7 @@ jobs:
 
       - name: Build and push docker image
         id: build-image-base
-        uses: DFE-Digital/github-actions/build-docker-image@master
+        uses: DFE-Digital/github-actions/build-docker-image@2632-github-workflow-alerting-to-teams-2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           target: base
@@ -88,6 +88,16 @@ jobs:
            SLACK_MESSAGE: 'There has been a failure building the application'
            SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Notify teams channel on job failure
+        if: failure() && github.ref == 'refs/heads/master'
+        uses: DFE-Digital/github-actions/send-to-teams-channel@master
+        with:
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL_TESTING }}
+          title: Build and Deploy
+          service: ${{ vars.SERVICE_NAME }}
+          message: |
+            There has been a failure building the application
 
   build_release:
     name: Build release image
@@ -145,7 +155,7 @@ jobs:
 
       - name: Build and push docker image release
         id: build-image-release
-        uses: DFE-Digital/github-actions/build-docker-image@master
+        uses: DFE-Digital/github-actions/build-docker-image@2632-github-workflow-alerting-to-teams-2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           target: release
@@ -178,7 +188,7 @@ jobs:
 
       - name: Build and push docker image release-build
         id: build-image-release-build
-        uses: DFE-Digital/github-actions/build-docker-image@master
+        uses: DFE-Digital/github-actions/build-docker-image@2632-github-workflow-alerting-to-teams-2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           target: release-build
@@ -187,15 +197,26 @@ jobs:
           main-branch: "master"
           docker-sha: ${{ steps.sha.outputs.short }}
           docker-repository: ${{ env.DOCKER_REPOSITORY }}
+          snyk-token: ${{ secrets.SNYK_TOKEN }}
 
-      - name: Slack Notification
+      # - name: Slack Notification
+      #   if: failure() && github.ref == 'refs/heads/master'
+      #   uses: rtCamp/action-slack-notify@master
+      #   env:
+      #      SLACK_COLOR: ${{env.SLACK_ERROR}}
+      #      SLACK_MESSAGE: 'There has been a failure building the application'
+      #      SLACK_TITLE: 'Failure Building Application'
+      #      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Notify teams channel on job failure
         if: failure() && github.ref == 'refs/heads/master'
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_MESSAGE: 'There has been a failure building the application'
-           SLACK_TITLE: 'Failure Building Application'
-           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        uses: DFE-Digital/github-actions/send-to-teams-channel@master
+        with:
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL_TESTING }}
+          title: Build and Deploy
+          service: ${{ vars.SERVICE_NAME }}
+          message: |
+            There has been a failure building the application
 
   linting:
     name: Linting
@@ -506,6 +527,16 @@ jobs:
           SLACK_MESSAGE: Error deploying to development for ${{env.APPLICATION}}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
+      - name: Notify teams channel on job failure
+        if: failure()
+        uses: DFE-Digital/github-actions/send-to-teams-channel@master
+        with:
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL_TESTING }}
+          title: Build and Deploy
+          service: ${{ vars.SERVICE_NAME }}
+          message: |
+            Failure in Deploy to Development
+
   owasp:
     name: OWASP Checks
     needs: [ development ]
@@ -536,6 +567,16 @@ jobs:
           SLACK_TITLE: Failure in OWASP Checks
           SLACK_MESSAGE: Error running OWASP test for ${{env.APPLICATION}}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Notify teams channel on job failure
+        if: failure()
+        uses: DFE-Digital/github-actions/send-to-teams-channel@master
+        with:
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL_TESTING }}
+          title: Build and Deploy
+          service: ${{ vars.SERVICE_NAME }}
+          message: |
+            Failure in OWASP Checks
 
   test:
     name: Test Deployment
@@ -577,6 +618,16 @@ jobs:
           SLACK_TITLE: Failure in Post-Development Deploy
           SLACK_MESSAGE: Failure with initialising Test deployment for ${{env.APPLICATION}}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Notify teams channel on job failure
+        if: failure()
+        uses: DFE-Digital/github-actions/send-to-teams-channel@master
+        with:
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL_TESTING }}
+          title: Build and Deploy
+          service: ${{ vars.SERVICE_NAME }}
+          message: |
+            Failure in Deploy to Test
 
   integration:
     name: Run Integration Tests on test
@@ -709,6 +760,17 @@ jobs:
           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_RELEASE_NOTE_WEBHOOK }}
           MSG_MINIMAL: true
 
+      - name: Teams Release Notification
+        if: steps.tag_id.outputs.release_id
+        uses: DFE-Digital/github-actions/send-to-teams-channel@master
+        with:
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL_TESTING }}
+          title: "Release Published: ${{steps.tag_id.outputs.release_name}}"
+          service: ${{ vars.SERVICE_NAME }}
+          minimal: true
+          message: |
+            ${{ fromJson( steps.tag_id.outputs.release_body) }}
+
       - name: Slack Notification
         if: failure()
         uses: rtCamp/action-slack-notify@master
@@ -717,6 +779,16 @@ jobs:
           SLACK_TITLE: Production Release ${{github.event.title}}
           SLACK_MESSAGE: Failure deploying Production release
           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+
+      - name: Notify teams channel on job failure
+        if: failure()
+        uses: DFE-Digital/github-actions/send-to-teams-channel@master
+        with:
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL_TESTING }}
+          title: Build and Deploy
+          service: ${{ vars.SERVICE_NAME }}
+          message: |
+            Failure in Deploy to Production
 
   deploy_domains_infra:
     name: Deploy Domains Infrastructure
@@ -738,12 +810,13 @@ jobs:
 
       - name: Deploy Domains Infrastructure
         id: deploy_domains_infra
-        uses: DFE-Digital/github-actions/deploy-domains-infra@master
+        uses: DFE-Digital/github-actions/deploy-domains-infra@2632-github-workflow-alerting-to-teams-2
         with:
           azure-client-id:  ${{ secrets.AZURE_CLIENT_ID  }}
           azure-tenant-id:  ${{ secrets.AZURE_TENANT_ID   }}
           azure-subscription-id:  ${{ secrets.AZURE_SUBSCRIPTION_ID   }}
           slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL_TESTING }}
 
   deploy_domains_env:
     name: Deploy Domains to ${{ matrix.domain_environment }} environment
@@ -769,7 +842,7 @@ jobs:
 
       - name: Deploy Domains Environment
         id: deploy_domains_env
-        uses: DFE-Digital/github-actions/deploy-domains-env@master
+        uses: DFE-Digital/github-actions/deploy-domains-env@2632-github-workflow-alerting-to-teams-2
         with:
           azure-client-id:  ${{ secrets.AZURE_CLIENT_ID  }}
           azure-tenant-id:  ${{ secrets.AZURE_TENANT_ID   }}
@@ -777,3 +850,4 @@ jobs:
           environment: ${{ matrix.domain_environment }}
           healthcheck: healthcheck.json
           slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL_TESTING }}
