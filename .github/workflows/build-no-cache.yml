@@ -46,7 +46,7 @@ jobs:
 
       - name: Build and push docker image
         id: build-image-base
-        uses: DFE-Digital/github-actions/build-docker-image@master
+        uses: DFE-Digital/github-actions/build-docker-image@2632-github-workflow-alerting-to-teams-2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           target: base
@@ -67,7 +67,7 @@ jobs:
 
       - name: Build and push docker image release
         id: build-image-release
-        uses: DFE-Digital/github-actions/build-docker-image@master
+        uses: DFE-Digital/github-actions/build-docker-image@2632-github-workflow-alerting-to-teams-2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           target: release
@@ -90,7 +90,7 @@ jobs:
 
       - name: Build and push docker image release-build
         id: build-image-release-build
-        uses: DFE-Digital/github-actions/build-docker-image@master
+        uses: DFE-Digital/github-actions/build-docker-image@2632-github-workflow-alerting-to-teams-2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           target: release-build
@@ -100,12 +100,23 @@ jobs:
           main-branch: "master"
           docker-sha: ${{ env.BRANCH_TAG }}
           docker-repository: ${{ env.DOCKER_REPOSITORY }}
+          snyk-token: ${{ secrets.SNYK_TOKEN }}
 
-      - name: Slack Notification
+      # - name: Slack Notification
+      #   if: failure() && github.ref == 'refs/heads/master'
+      #   uses: rtCamp/action-slack-notify@master
+      #   env:
+      #      SLACK_COLOR: ${{ env.SLACK_ERROR }}
+      #      SLACK_MESSAGE: 'There has been a failure building the application'
+      #      SLACK_TITLE: 'Failure Building Without Cache'
+      #      SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+
+      - name: Notify teams channel on job failure
         if: failure() && github.ref == 'refs/heads/master'
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{ env.SLACK_ERROR }}
-           SLACK_MESSAGE: 'There has been a failure building the application'
-           SLACK_TITLE: 'Failure Building Without Cache'
-           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
+        uses: DFE-Digital/github-actions/send-to-teams-channel@master
+        with:
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL_TESTING }}
+          title: Build No Cache
+          service: ${{ vars.SERVICE_NAME }}
+          message: |
+            Failure Building Without Cache
