@@ -83,3 +83,5 @@ jobs:
         backup-file: ${{ env.BACKUP_FILE }}.sql
         db-server-name: ${{ inputs.db-server }}
         slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
+        teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
+        service: ${{ vars.TEAMS_MSG_SERVICE_NAME }}
