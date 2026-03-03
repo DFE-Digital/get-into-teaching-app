@@ -1,3 +1,6 @@
+@use 'sass-mq' as *;
+
+
 ol.steps {
   &::before {
     border-left: 6px dotted $black;

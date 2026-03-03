@@ -7,6 +7,16 @@ $govuk-font-family: $git-font-family;
 // https://design-system.service.gov.uk/get-started/new-type-scale/
 $govuk-new-typography-scale: false;
 
+@use 'sass-mq' as * with (
+  $breakpoints: (
+    narrow: 380px,
+    mobile: 500px,
+    tablet: 768px,
+    desktop: 1114px,
+    wide: 1500px,
+  ),
+);
+
 @import "./git";
 
 // Only import the used parts of the GOV.UK frontend.

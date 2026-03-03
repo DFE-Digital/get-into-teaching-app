@@ -1,3 +1,6 @@
+@use 'sass-mq' as *;
+
+
 .campaign-hero {
   // the two ratios don't overlap exactly because we'd get a jagged
   // edge - instead adjust the second slightly so it blurs smoothly

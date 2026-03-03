@@ -1,3 +1,6 @@
+@use 'sass-mq' as *;
+
+
 .text-block-with-one-image,
 .text-block-with-two-images {
   display: grid;

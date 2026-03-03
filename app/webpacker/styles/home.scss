@@ -1,3 +1,6 @@
+@use 'sass-mq' as *;
+
+
 .main-section.home {
   // the homepage is a few px wider than the regular max width so we can
   // make things overhang if neccessary

@@ -1,3 +1,6 @@
+@use 'sass-mq' as *;
+
+
 @mixin content-cta {
   background: $grey;
   text-align: left;

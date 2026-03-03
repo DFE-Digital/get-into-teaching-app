@@ -1,3 +1,6 @@
+@use 'sass-mq' as *;
+
+
 html {
   @include mq($until: mobile) { font-size: 100%; }
   @include mq($from: mobile, $until: tablet) { font-size: 100%; }

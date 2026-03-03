@@ -1,3 +1,6 @@
+@use 'sass-mq' as *;
+
+
 .feature-table {
   &:not(:first-of-type) {
     margin-top: 2em;
