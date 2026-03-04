@@ -1,3 +1,5 @@
+@use 'sass-mq' as *;
+
 $px-either-side-of-content: 15px;
 $space-between-sections: 3.7em;
 
@@ -38,7 +40,7 @@ $space-between-sections: 3.7em;
   }
 
   @include mq($until: tablet) {
-    flex-direction: column; 
+    flex-direction: column;
     margin: 1em;
     }
 
@@ -116,14 +118,14 @@ $space-between-sections: 3.7em;
 }
 
 .promos {
-  width:100%; 
+  width:100%;
   box-sizing: border-box;
 
   h2 {
     transform: none;
     margin-top: -0.75em;
   }
-  
+
   div {
     padding: 0 1.5em 1.5em;
     margin-bottom: 2 * $indent-amount;

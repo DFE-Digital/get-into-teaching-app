@@ -1,3 +1,5 @@
+@use 'sass-mq' as *;
+
 .mailinglist {
   max-width: $content-max-width;
   display: flex;
@@ -43,9 +45,9 @@
     align-content: center;
     text-align: center;
     overflow: hidden;
-	
+
 	@include mq($until: tablet) {
-		max-height: 15em; 
+		max-height: 15em;
 	}
   }
 

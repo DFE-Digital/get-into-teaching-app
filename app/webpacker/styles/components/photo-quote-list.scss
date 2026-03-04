@@ -1,3 +1,5 @@
+@use 'sass-mq' as *;
+
 // grid layout
 ol.photo-quote-list .wrapper {
   display: grid;

@@ -1,3 +1,5 @@
+@use 'sass-mq' as *;
+
 .statement {
   $colours: ("pink": $pink, "blue": $blue, "yellow": $yellow, "purple": $purple);
 
