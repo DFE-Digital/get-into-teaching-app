@@ -1,6 +1,6 @@
 ---
   layout: "layouts/home"
-  title: "Get Into Teaching"
+  title: "Get Into Teaching 2"
   description: |-
     Explore how to get into teaching with official Department for Education guidance on training courses, finding funding, and what teaching is really like.
   fullwidth: true
