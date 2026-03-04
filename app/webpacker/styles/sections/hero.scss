@@ -1,7 +1,6 @@
-@use 'sass-mq' as *;
-
-
 // stylelint-disable no-duplicate-selectors
+
+@use 'sass-mq' as *;
 
 // layout, mobile-first
 $mobile-cutoff: 800px;
