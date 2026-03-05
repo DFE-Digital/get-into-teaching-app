@@ -20,6 +20,7 @@ module TeacherTrainingAdviser
       citizenship
       location
       visa_status
+      inferred_degree_status
     ].freeze
 
     self.steps = [
@@ -88,7 +89,7 @@ module TeacherTrainingAdviser
     def complete!
       return false unless super
 
-      sign_up_candidate
+      @store[:inferred_degree_status] = sign_up_candidate
       @store[:hashed_email] = Digest::SHA256.hexdigest(@store[:email]) if @store[:email].present?
 
       @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
@@ -113,7 +114,8 @@ module TeacherTrainingAdviser
       data = export_data.slice(*attributes.map(&:to_s))
       request = GetIntoTeachingApiClient::TeacherTrainingAdviserSignUp.new(data)
       api = GetIntoTeachingApiClient::TeacherTrainingAdviserApi.new
-      api.sign_up_teacher_training_adviser_candidate(request)
+      response = api.sign_up_teacher_training_adviser_candidate(request,{ return_type: "json" })
+      Crm::OptionSet.lookup_by_value(:legacy_degree_status_for_advertising, response.degree_status_id)
     end
 
     def default_country(export)
