@@ -114,7 +114,7 @@ module TeacherTrainingAdviser
       data = export_data.slice(*attributes.map(&:to_s))
       request = GetIntoTeachingApiClient::TeacherTrainingAdviserSignUp.new(data)
       api = GetIntoTeachingApiClient::TeacherTrainingAdviserApi.new
-      response = api.sign_up_teacher_training_adviser_candidate(request,{ return_type: "json" })
+      response = api.sign_up_teacher_training_adviser_candidate(request, { return_type: "json" })
       Crm::OptionSet.lookup_by_value(:legacy_degree_status_for_advertising, response.degree_status_id)
     end
 
