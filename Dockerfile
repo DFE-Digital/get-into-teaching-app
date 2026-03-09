@@ -96,7 +96,8 @@ RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev &&
 RUN apk add --no-cache \
   "procps-ng=4.0.5-r0" \
   "libproc2=4.0.5-r0" \
-  "libwebp"
+  "libwebp" \
+  "zlib=1.3.2-r0"
 
 COPY --from=release-build --chown=appuser:appgroup /app /app
 COPY --from=release-build --chown=appuser:appgroup /usr/local/bundle/ /usr/local/bundle/
