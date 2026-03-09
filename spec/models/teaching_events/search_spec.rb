@@ -6,7 +6,6 @@ describe TeachingEvents::Search do
 
     it { is_expected.to respond_to(:postcode) }
     it { is_expected.to respond_to(:online) }
-    it { is_expected.to respond_to(:type) }
     it { is_expected.to respond_to(:distance) }
   end
 
@@ -61,26 +60,6 @@ describe TeachingEvents::Search do
     end
   end
 
-  describe "#get_into_teaching_event?" do
-    let(:type) { %w[onlineqa git] }
-
-    subject { described_class.new(type: type) }
-
-    it { is_expected.to be_get_into_teaching_event }
-
-    context "when type does not contain get into teaching" do
-      let(:type) { %w[onlineqa] }
-
-      it { is_expected.not_to be_get_into_teaching_event }
-    end
-
-    context "when the type has not been set" do
-      let(:type) { nil }
-
-      it { is_expected.not_to be_get_into_teaching_event }
-    end
-  end
-
   describe "online/in-person toggling" do
     let(:online) { nil }
 
@@ -112,10 +91,6 @@ describe TeachingEvents::Search do
   end
 
   describe "#results" do
-    git           = "git"
-    online        = "onlineqa"
-    school_or_uni = "provider"
-
     let(:fake_api) do
       instance_double(
         GetIntoTeachingApiClient::TeachingEventsApi,
@@ -175,32 +150,6 @@ describe TeachingEvents::Search do
         description: "postcode of 'M1 2WD'",
         input: { postcode: "M1 2WD" },
         expected_conditions: { postcode: "M1 2WD" },
-      ),
-
-      # types
-
-      OpenStruct.new(
-        description: "No types",
-        input: { type: [] },
-        expected_conditions: { type_ids: nil },
-      ),
-
-      OpenStruct.new(
-        description: "Get Into Teaching and Online",
-        input: { type: [git, online].map(&:to_s) },
-        expected_conditions: { type_ids: Crm::EventType.lookup_by_query_params(git, online) },
-      ),
-
-      OpenStruct.new(
-        description: "School or University or Get Into Teaching",
-        input: { type: [git, school_or_uni].map(&:to_s) },
-        expected_conditions: { type_ids: Crm::EventType.lookup_by_query_params(git, school_or_uni) },
-      ),
-
-      OpenStruct.new(
-        description: "All types",
-        input: { type: [school_or_uni, git, online].map(&:to_s) },
-        expected_conditions: { type_ids: Crm::EventType.lookup_by_query_params(school_or_uni, git, online) },
       ),
     ].each do |query|
       context "with #{query.description} (#{query.input})" do
