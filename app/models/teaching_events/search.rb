@@ -56,7 +56,7 @@ module TeachingEvents
         radius: distance_condition,
         start_after: start_after,
         start_before: start_before,
-        type_ids: event_types_excluding_git
+        type_ids: event_types_excluding_git,
       }
 
       GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(**conditions)

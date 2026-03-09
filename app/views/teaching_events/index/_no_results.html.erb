@@ -3,7 +3,7 @@
     No events found
   </h2>
 
-  <% if @event_search.in_person_only? || (@event_search.distance.present? && @event_search.distance > 0)  %>
+  <% if @event_search.in_person_only? || (@event_search.distance.present? && @event_search.distance > 0) %>
     <p><strong>Why not try:</strong></p>
     <ul>
       <% if @event_search.distance.present? && @event_search.distance > 0 %>
