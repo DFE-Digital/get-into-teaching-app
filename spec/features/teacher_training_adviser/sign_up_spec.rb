@@ -1361,7 +1361,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       .with(having_attributes(request_attributes), { return_type: "json" })
       .and_return(
         GetIntoTeachingApiClient::DegreeStatusResponse.new(
-          degree_status_id: build(:degree_status, :second_year).id)
+          degree_status_id: build(:degree_status, :second_year).id,
+        ),
       )
   end
 

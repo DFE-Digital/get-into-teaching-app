@@ -108,7 +108,7 @@ module SpecHelpers
 
     def setup_contract
       expect_any_instance_of(GetIntoTeachingApiClient::TeacherTrainingAdviserApi).to \
-        receive(:sign_up_teacher_training_adviser_candidate) do |_, request|
+        receive(:sign_up_teacher_training_adviser_candidate) { |_, request|
           request_json = request.to_json
 
           unless File.exist?(contract_output_file)
@@ -116,9 +116,9 @@ module SpecHelpers
           end
 
           expect(JSON.parse(request_json)).to eq(JSON.parse(File.open(contract_output_file).read))
-      end.and_return(
-        GetIntoTeachingApiClient::DegreeStatusResponse.new({degree_status_id: build(:degree_status, :final_year).id })
-      )
+        }.and_return(
+          GetIntoTeachingApiClient::DegreeStatusResponse.new({ degree_status_id: build(:degree_status, :final_year).id }),
+        )
     end
 
     def contract_output_file
