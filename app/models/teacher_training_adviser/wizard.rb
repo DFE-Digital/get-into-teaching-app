@@ -115,7 +115,9 @@ module TeacherTrainingAdviser
       request = GetIntoTeachingApiClient::TeacherTrainingAdviserSignUp.new(data)
       api = GetIntoTeachingApiClient::TeacherTrainingAdviserApi.new
       response = api.sign_up_teacher_training_adviser_candidate(request, { return_type: "json" })
-      Crm::OptionSet.lookup_by_value(:legacy_degree_status_for_advertising, response.degree_status_id)
+
+      # NB: an inferred degree status is not always returned, for example RTTA will not infer a degree status
+      Crm::OptionSet.lookup_by_value(:legacy_degree_status_for_advertising, response.degree_status_id) if response.degree_status_id
     end
 
     def default_country(export)
