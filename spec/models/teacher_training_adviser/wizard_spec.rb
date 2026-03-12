@@ -134,10 +134,18 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
           citizenship: 5,
         })
       end
+      let(:return_type) { { return_type: "json" } }
+      let(:response) do
+        GetIntoTeachingApiClient::DegreeStatusResponse.new({
+          degree_status_id: inferred_degree_status_id,
+        })
+      end
+      let(:inferred_degree_status) { :second_year }
+      let(:inferred_degree_status_id) { build(:degree_status, inferred_degree_status).id }
 
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeacherTrainingAdviserApi).to \
-          receive(:sign_up_teacher_training_adviser_candidate).with(request)
+          receive(:sign_up_teacher_training_adviser_candidate).with(request, return_type).and_return(response)
 
         allow(subject).to receive_messages(valid?: true, can_proceed?: true)
 
@@ -154,6 +162,7 @@ RSpec.describe TeacherTrainingAdviser::Wizard do
                                "callback_offered" => true,
                                "first_name" => "Joe",
                                "hashed_email" => hashed_email,
+                               "inferred_degree_status" => :second_year,
                                "degree_country" => 1,
                                "situation" => 2,
                                "location" => 3,

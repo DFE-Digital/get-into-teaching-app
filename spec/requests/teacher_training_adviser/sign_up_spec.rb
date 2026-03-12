@@ -87,6 +87,13 @@ RSpec.describe "Sign up" do
       let(:model) { steps.last }
       let(:params) { {} }
 
+      let(:response) do
+        GetIntoTeachingApiClient::DegreeStatusResponse.new({
+          degree_status_id: inferred_degree_status_id,
+        })
+      end
+      let(:inferred_degree_status_id) { build(:degree_status, :second_year).id }
+
       context "when all valid and proceedable" do
         before do
           steps.each do |step|
@@ -94,7 +101,7 @@ RSpec.describe "Sign up" do
           end
 
           allow_any_instance_of(GetIntoTeachingApiClient::TeacherTrainingAdviserApi).to \
-            receive(:sign_up_teacher_training_adviser_candidate).once
+            receive(:sign_up_teacher_training_adviser_candidate).and_return(response)
         end
 
         it { is_expected.to redirect_to completed_teacher_training_adviser_steps_path }
