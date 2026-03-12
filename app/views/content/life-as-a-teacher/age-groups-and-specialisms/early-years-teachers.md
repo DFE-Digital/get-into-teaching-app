@@ -7,7 +7,7 @@ description: |-
 expander:
   international-content:
     title: applying for early years training
-    text: If you are a non-UK citizen, you can apply for early years initial teacher training if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2025-to-2026-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
+    text: If you are a non-UK citizen, you can apply for early years initial teacher training if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2026-to-2027-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
 calls_to_action:
   EY-graduate:
     name: feature_table
@@ -86,7 +86,7 @@ Bursaries are only available for this route as follows:
 
 You are not eligible for a bursary if you do not have these qualifications or if you're completing any other EYITT routes.
 
-You do not need to do anything to access this funding. You can [learn more about early years initial teacher training funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2025-to-2026-funding-guidance).
+You do not need to do anything to access this funding. You can [learn more about early years initial teacher training funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2026-to-2027-funding-guidance).
 
 ### Postgraduate employment-based training
 This route is for graduates working in an early years setting who want to achieve early years teacher status.
