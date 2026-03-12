@@ -1358,8 +1358,12 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
   def expect_sign_up_with_attributes(request_attributes)
     expect_any_instance_of(GetIntoTeachingApiClient::TeacherTrainingAdviserApi).to \
       receive(:sign_up_teacher_training_adviser_candidate)
-      .with(having_attributes(request_attributes))
-      .once
+      .with(having_attributes(request_attributes), { return_type: "json" })
+      .and_return(
+        GetIntoTeachingApiClient::DegreeStatusResponse.new(
+          degree_status_id: build(:degree_status, :second_year).id,
+        ),
+      )
   end
 
   def uk_candidate_request_attributes(attributes = {})
