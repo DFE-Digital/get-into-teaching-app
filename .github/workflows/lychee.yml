@@ -35,20 +35,20 @@ jobs:
           echo "$DATA" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
-      - name: Slack Markdown Converter
-        id: convert
-        if: ${{steps.lychee.outcome}} == "failure"
-        uses: LoveToKnow/slackify-markdown-action@v1
-        with:
-          text: |
-                ${{ env.LYCHEE_OUTPUT }}
+      # - name: Slack Markdown Converter
+      #   id: convert
+      #   if: ${{steps.lychee.outcome}} == "failure"
+      #   uses: LoveToKnow/slackify-markdown-action@v1
+      #   with:
+      #     text: |
+      #           ${{ env.LYCHEE_OUTPUT }}
 
-      - name: Slack Notification
+      - name: Notify teams channel on job failure
         if: ${{steps.lychee.outcome}} == "failure"
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_MESSAGE: |
-                         ${{ steps.convert.outputs.text }}
-           SLACK_TITLE: 'External link check results:'
-           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        uses: DFE-Digital/github-actions/send-to-teams-channel@master
+        with:
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          title: 'External link check results:'
+          service: ${{ vars.TEAMS_MSG_SERVICE_NAME }}
+          message: |
+            ${{ env.LYCHEE_OUTPUT  }}

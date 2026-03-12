@@ -80,15 +80,6 @@ jobs:
           main-branch: "master"
           docker-repository: ${{ env.DOCKER_REPOSITORY }}
 
-      - name: Slack Notification
-        if: failure() && github.ref == 'refs/heads/master'
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_MESSAGE: 'There has been a failure building the application'
-           SLACK_TITLE: 'Failure Building Application'
-           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-
       - name: Notify teams channel on job failure
         if: failure() && github.ref == 'refs/heads/master'
         uses: DFE-Digital/github-actions/send-to-teams-channel@master
@@ -198,15 +189,6 @@ jobs:
           docker-sha: ${{ steps.sha.outputs.short }}
           docker-repository: ${{ env.DOCKER_REPOSITORY }}
           snyk-token: ${{ secrets.SNYK_TOKEN }}
-
-      - name: Slack Notification
-        if: failure() && github.ref == 'refs/heads/master'
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_MESSAGE: 'There has been a failure building the application'
-           SLACK_TITLE: 'Failure Building Application'
-           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
       - name: Notify teams channel on job failure
         if: failure() && github.ref == 'refs/heads/master'
@@ -518,15 +500,6 @@ jobs:
           RELEASE_ID: ${{ steps.release.outputs.id }}
           TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{env.SLACK_ERROR}}
-          SLACK_TITLE: Failure in Deploy to Development
-          SLACK_MESSAGE: Error deploying to development for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-
       - name: Notify teams channel on job failure
         if: failure()
         uses: DFE-Digital/github-actions/send-to-teams-channel@master
@@ -558,15 +531,6 @@ jobs:
           azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           GITHUB_TOKEN:      ${{secrets.GITHUB_TOKEN}}
-
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{env.SLACK_ERROR}}
-          SLACK_TITLE: Failure in OWASP Checks
-          SLACK_MESSAGE: Error running OWASP test for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
       - name: Notify teams channel on job failure
         if: failure()
@@ -609,15 +573,6 @@ jobs:
           azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
-
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{env.SLACK_ERROR}}
-          SLACK_TITLE: Failure in Post-Development Deploy
-          SLACK_MESSAGE: Failure with initialising Test deployment for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
       - name: Notify teams channel on job failure
         if: failure()
@@ -712,18 +667,6 @@ jobs:
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
             subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Fetch secrets from key vault
-        uses: azure/CLI@v2
-        id: keyvault-yaml-secret
-        with:
-          inlineScript: |
-            SLACK_WEBHOOK=$(az keyvault secret show --name "SLACK-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_WEBHOOK"
-            echo "SLACK_WEBHOOK=$SLACK_WEBHOOK" >> $GITHUB_OUTPUT
-            SLACK_RELEASE_NOTE_WEBHOOK=$(az keyvault secret show --name "SLACK-RELEASE-NOTE-WEBHOOK" --vault-name "${{ secrets.KEY_VAULT}}" --query "value" -o tsv)
-            echo "::add-mask::$SLACK_RELEASE_NOTE_WEBHOOK"
-            echo "SLACK_RELEASE_NOTE_WEBHOOK=$SLACK_RELEASE_NOTE_WEBHOOK" >> $GITHUB_OUTPUT
-
       - name: Get Release Id from Tag
         id: tag_id
         uses: DFE-Digital/github-actions/DraftReleaseByTag@master
@@ -750,16 +693,6 @@ jobs:
           azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
 
-      - name: Slack Release Notification
-        if: steps.tag_id.outputs.release_id
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{env.SLACK_SUCCESS}}
-          SLACK_TITLE: "Release Published: ${{steps.tag_id.outputs.release_name}}"
-          SLACK_MESSAGE: ${{ fromJson( steps.tag_id.outputs.release_body) }}
-          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_RELEASE_NOTE_WEBHOOK }}
-          MSG_MINIMAL: true
-
       - name: Teams Release Notification
         if: steps.tag_id.outputs.release_id
         uses: DFE-Digital/github-actions/send-to-teams-channel@master
@@ -771,15 +704,6 @@ jobs:
           status: good
           message: |
             ${{ fromJson( steps.tag_id.outputs.release_body) }}
-
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{env.SLACK_FAILURE}}
-          SLACK_TITLE: Production Release ${{github.event.title}}
-          SLACK_MESSAGE: Failure deploying Production release
-          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
 
       - name: Notify teams channel on job failure
         if: failure()
@@ -816,7 +740,6 @@ jobs:
           azure-client-id:  ${{ secrets.AZURE_CLIENT_ID  }}
           azure-tenant-id:  ${{ secrets.AZURE_TENANT_ID   }}
           azure-subscription-id:  ${{ secrets.AZURE_SUBSCRIPTION_ID   }}
-          slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
           teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
           service: ${{ vars.TEAMS_MSG_SERVICE_NAME }}
 
@@ -851,6 +774,5 @@ jobs:
           azure-subscription-id:  ${{ secrets.AZURE_SUBSCRIPTION_ID   }}
           environment: ${{ matrix.domain_environment }}
           healthcheck: healthcheck.json
-          slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
           teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
           service: ${{ vars.TEAMS_MSG_SERVICE_NAME }}

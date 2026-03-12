@@ -102,15 +102,6 @@ jobs:
           docker-repository: ${{ env.DOCKER_REPOSITORY }}
           snyk-token: ${{ secrets.SNYK_TOKEN }}
 
-      - name: Slack Notification
-        if: failure() && github.ref == 'refs/heads/master'
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{ env.SLACK_ERROR }}
-           SLACK_MESSAGE: 'There has been a failure building the application'
-           SLACK_TITLE: 'Failure Building Without Cache'
-           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK_WEBHOOK }}
-
       - name: Notify teams channel on job failure
         if: failure() && github.ref == 'refs/heads/master'
         uses: DFE-Digital/github-actions/send-to-teams-channel@master

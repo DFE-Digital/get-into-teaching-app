@@ -31,11 +31,12 @@ jobs:
         run: |-
           docker run -t --rm -e RAILS_ENV=test ${{ env.DOCKER_REPOSITORY }}:master brakeman --no-pager
 
-      - name: Slack Notification
+      - name: Notify teams channel on job failure
         if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{env.SLACK_ERROR}}
-          SLACK_TITLE: Failure with Nightly Anchore Security Scan
-          SLACK_MESSAGE: Failure Nightly Anchore Security Scan for ${{env.APPLICATION}}
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        uses: DFE-Digital/github-actions/send-to-teams-channel@master
+        with:
+          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          title: Nightly security scan
+          service: ${{ vars.TEAMS_MSG_SERVICE_NAME }}
+          message: |
+            Failure with security scan
