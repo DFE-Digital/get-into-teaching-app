@@ -43,13 +43,13 @@ redirects:
 
 
   # Events
-  "/events/about-train-to-teach-events": "/events/about-get-into-teaching-events"
-  "/event-categories/train-to-teach-events": "/events/about-get-into-teaching-events"
+  "/events/about-train-to-teach-events": "/events"
+  "/event-categories/train-to-teach-events": "/events"
   "/event-categories/online-q-as/archive": "/events"
   "/event-categories/online-q-as": "/events"
   "/event-categories/school-and-university-events": "/events"
   "/event-categories/(*category)": "/events"
-  "/teaching-events/train-to-teach(*event)": "/events/about-get-into-teaching-events"
+  "/teaching-events/train-to-teach(*event)": "/events"
   "/teaching-events/application-workshop-events(*event)": "/events"
   "/teaching-events/online-events(*event)": "/events"
   "/teaching-events/training-provider-events(*event)": "/events"
@@ -59,7 +59,7 @@ redirects:
   "/events/search": "/events"
   "/explore-my-options/return-to-teaching/events": "/events"
   "/node/478": "/events"
-  "/presentations": "/events/about-get-into-teaching-events"
+  "/presentations": "/events"
   "/events/about-get-into-teaching-events": "/events"
 
   # School Experience
@@ -343,8 +343,8 @@ redirects:
   "/urgent-call-for-qualified-teachers": "/returning-to-teaching"
 
   # Blog pages
-  "/blog/5-reasons-to-attend-a-train-to-teach-event": "/events/about-get-into-teaching-events"
-  "/blog/5-reasons-to-attend-a-get-into-teaching-event": "/events/about-get-into-teaching-events"
+  "/blog/5-reasons-to-attend-a-train-to-teach-event": "/events"
+  "/blog/5-reasons-to-attend-a-get-into-teaching-event": "/events"
   "/blog/teachers-pension-scheme": "/life-as-a-teacher/pay-and-benefits/teachers-pension-scheme"
   "/blog/how-to-fund-your-teacher-training": "/funding-and-support"
   "/blog/11-top-tips-for-interview-success": "/how-to-apply-for-teacher-training/teacher-training-interview"
@@ -401,7 +401,7 @@ redirects:
   "/blog/tag/career-progression": "/life-as-a-teacher/career-progression"
   "/blog/tag/classroom-concerns": "/life-as-a-teacher"
   "/blog/tag/deafness": "/funding-and-support/if-youre-disabled"
-  "/blog/tag/get-into-teaching-events": "/events/about-get-into-teaching-events"
+  "/blog/tag/get-into-teaching-events": "/events"
   "/blog/tag/help-and-support": "/help-and-support"
   "/blog/tag/interviews": "/how-to-apply-for-teacher-training/teacher-training-interview"
   "/blog/tag/international": "/non-uk-teachers"

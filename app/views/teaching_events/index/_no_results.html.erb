@@ -3,14 +3,16 @@
     No events found
   </h2>
 
-  <% if @event_search.in_person_only? || (@event_search.distance.present? && @event_search.distance > 0) %>
+  <% if @event_search.in_person_only? || @event_search.online_only?  || (@event_search.distance.present? && @event_search.distance > 0) %>
     <p><strong>Why not try:</strong></p>
     <ul>
       <% if @event_search.distance.present? && @event_search.distance > 0 %>
         <li>expanding your search area</li>
       <% end %>
       <% if @event_search.in_person_only? %>
-        <li>changing event type - <%= link_to("online events", events_path(add_online_events(params))) %> may be available</li>
+        <li>changing event type - <%= link_to("online events", events_path(add_online_events(params, online: true))) %> may be available</li>
+      <% elsif @event_search.online_only? %>
+        <li>changing event type - <%= link_to("in person events", events_path(add_online_events(params, online: false))) %> may be available</li>
       <% end %>
       <li><%= link_to("clearing your filters", events_path) %> to start again</li>
     </ul>
