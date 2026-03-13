@@ -73,6 +73,31 @@ If you are already a qualified teacher, find out how you can [teach in England i
 
 $nellie-qualification$
 
+## Get experience in an English school
+
+Having experience in an English school can help you:​
+
+* decide if you want to train to be a teacher​
+* discover if you’d like to teach in a primary or secondary school​
+* build a relationship with a school you might want to work for
+later​
+
+You will need to have the right to work in the UK to get either paid
+or unpaid school experience.​
+
+If you have the right to work in the UK, you can:​
+
+* ask for unpaid classroom experience using the [Get school experience](https://schoolexperience.education.gov.uk/) service​
+* apply for a paid [teaching internship](/train-to-be-a-teacher/teaching-internships) if you are in your second,
+third or final year of an undergraduate degree, or studying
+towards a master’s degree in chemistry, computing, design
+and technology, languages, maths or physics​
+
+[Find more ideas for getting
+experience](/train-to-be-a-teacher/get-school-experience)​
+
+You do not need classroom experience to train to teach in England.
+
 ## Fees and financial support
 
 ### Fee-paying teacher training courses 

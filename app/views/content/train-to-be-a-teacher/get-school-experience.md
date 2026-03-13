@@ -51,7 +51,7 @@ During your experience, you’ll get to do things like:
 
 ## Find school experience
 
-Use our Get school experience service to search for and request experience in England. If you enter your postcode you can find schools in your area that offer experience. You can filter these by the subject and age group you're looking to teach. It also tells you whether the type of experience available is in-school, virtual or both.
+Use our [Get school experience](https://schoolexperience.education.gov.uk/) service to search for and request experience in England. If you enter your postcode you can find schools in your area that offer experience. You can filter these by the subject and age group you're looking to teach. It also tells you whether the type of experience available is in-school, virtual or both.
 
 Once you've chosen a school, you can get more information about their availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a DBS check. 
 
@@ -72,10 +72,11 @@ $q-Zainab$
 
 ### Paid teaching internships
 
-A paid teaching internship could help you to understand what it’s really like in the classroom if you’re currently studying for an undergraduate or master's degree and are interested in teaching:
+A paid teaching internship could help you to understand what it’s really like in the classroom. You need to be in your second, third or final year of an undergraduate degree, or studying towards a master’s degree, and are interested in teaching:
 
 - chemistry
 - computing
+- design and technology
 - languages
 - maths
 - physics
