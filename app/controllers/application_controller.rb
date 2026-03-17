@@ -1,4 +1,5 @@
 require "basic_auth"
+require 'securerandom'
 
 class ApplicationController < ActionController::Base
   class ForbiddenError < StandardError; end
@@ -17,6 +18,9 @@ class ApplicationController < ActionController::Base
   before_action :declare_frontmatter
 
 protected
+  def field_test_participant
+    session[:field_test_participant] ||= SecureRandom.hex
+  end
 
   def noindex
     @noindex = true
