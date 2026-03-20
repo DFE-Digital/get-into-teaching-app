@@ -18,7 +18,7 @@ module TeachingEventsHelper
     event.type_id == Crm::EventType.lookup_by_name(type_name)
   end
 
-  def add_online_events(params)
+  def add_online_events(params, online: true)
     params_with_online = params
       .fetch(:teaching_events_search, {})
       .permit!
@@ -26,7 +26,7 @@ module TeachingEventsHelper
       .deep_symbolize_keys
       .tap do |h|
         h[:online] ||= []
-        h[:online] << true
+        h[:online] << online
       end
 
     { teaching_events_search: params_with_online }

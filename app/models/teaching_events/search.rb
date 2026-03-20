@@ -9,15 +9,15 @@ module TeachingEvents
     FUTURE_MONTHS = 24
 
     DISTANCES = {
-      "Nationwide" => nil,
+      "Select area" => "select",
       "5 miles" => 5,
       "10 miles" => 10,
       "30 miles" => 30,
       "50 miles" => 50,
+      "Nationwide" => -1,
     }.freeze
 
     attribute :online
-    attribute :type
     attribute :postcode, :string
     attribute :distance, :integer
 
@@ -40,10 +40,6 @@ module TeachingEvents
       online.present? && online.all?
     end
 
-    def get_into_teaching_event?
-      Crm::EventType.lookup_by_name("Get Into Teaching event").in?(type_condition || [])
-    end
-
     def online
       # online is a pair of checkboxes for 'online' (true) and 'in_person' (false), so the
       # param will be something like: ["", "true", "false"]
@@ -54,13 +50,13 @@ module TeachingEvents
 
     def query(limit: 1_000)
       conditions = {
-        type_ids: type_condition,
         postcode: postcode_condition,
         online: online_condition,
         quantity: limit,
         radius: distance_condition,
         start_after: start_after,
         start_before: start_before,
+        type_ids: event_types_excluding_git,
       }
 
       GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(**conditions)
@@ -86,17 +82,13 @@ module TeachingEvents
     end
 
     def distance_condition
-      return nil if distance.blank?
+      return nil if distance.blank? || distance.to_i <= 0
 
       distance.to_i
     end
 
-    def type_condition
-      return nil if type.blank?
-
-      event_type_params = type.reject(&:blank?).flat_map { |t| t.split(",") }
-
-      Crm::EventType.lookup_by_query_params(*event_type_params).presence
+    def event_types_excluding_git
+      [Crm::EventType.school_or_university_event_id, Crm::EventType.online_event_id]
     end
   end
 end

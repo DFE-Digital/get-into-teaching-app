@@ -603,8 +603,8 @@ It takes the following parameters and both should be specified:
 ---
 cta_arrow_link:
   events:
-    link_target: "/events/about-get-into-teaching-events"
-    link_text: "Find a Get Into Teaching event"
+    link_target: "/events"
+    link_text: "Find a training provider event"
 ---
 
 # My page

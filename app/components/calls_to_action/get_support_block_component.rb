@@ -10,7 +10,7 @@ module CallsToAction
       title_color: "yellow",
       links: [
         { text: "Get an adviser", url: "/teacher-training-advisers" },
-        { text: "Attend a Get Into Teaching event", url: "/events/about-get-into-teaching-events" },
+        { text: "Attend a training provider event", url: "/events" },
         { text: "Get tailored email advice", url: "/mailinglist/signup/name" },
         { text: "Get school experience", url: "/train-to-be-a-teacher/get-school-experience" },
       ]
