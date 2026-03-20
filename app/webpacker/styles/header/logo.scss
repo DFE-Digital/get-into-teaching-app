@@ -31,6 +31,13 @@
   }
 }
 
+body.new_brand {
+  .logo-wrapper {
+    left: 5px;
+    padding-left: 10px;
+  }
+}
+
 .logo {
   display: block;
   overflow-x: clip;

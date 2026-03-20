@@ -1,4 +1,8 @@
 module ApplicationHelper
+  def rebrand?
+    field_test(:branding) == "new_brand"
+  end
+
   def body_tag(attributes = {}, &block)
     attributes[:data] ||= {}
 
