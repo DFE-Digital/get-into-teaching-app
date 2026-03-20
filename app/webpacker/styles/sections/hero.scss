@@ -179,6 +179,10 @@ $mobile-cutoff: 800px;
     background-color: $yellow-dark;
   }
 
+  &.gitpurple {
+    background-color: $gitpurple;
+  }
+
   &__title {
     z-index: 20;
   }
@@ -424,5 +428,15 @@ $mobile-cutoff: 800px;
     height: auto;
     display: block;
     object-fit: cover;
+  }
+}
+
+.hero.rebrand-2026 {
+  .hero__paragraph {
+    color: white;
+  }
+
+  picture img {
+    object-fit: contain;
   }
 }

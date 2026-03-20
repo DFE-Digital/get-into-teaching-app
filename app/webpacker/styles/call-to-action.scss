@@ -277,3 +277,11 @@
     }
   }
 }
+
+body.new_brand {
+  .call-to-action {
+    &__icon {
+      background-color: $gitlilac;
+    }
+  }
+}
