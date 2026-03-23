@@ -3,7 +3,11 @@
     <div class="col col-full-content">
       <div>
         <h2 class="mailing-list-title">
-          <i class="icon icon-arrow-black icon--on-yellow"></i>
+          <% if helpers.rebrand? %>
+            <i class="icon icon-arrow-black icon--on-gitlilac"></i>
+          <% else %>
+            <i class="icon icon-arrow-black icon--on-yellow"></i>
+          <% end %>
           <span>Start your teaching journey today</span>
         </h2>
         <p>

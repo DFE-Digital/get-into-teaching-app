@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= body_tag do %>
+  <%= body_tag class: field_test(:branding).clone do %>
     <%= render "sections/govuk_javascript" %>
     <%= render HeaderComponent.new(@front_matter) %>
 
@@ -19,5 +19,14 @@
     <% end %>
 
     <%= render FooterComponent.new %>
+
+
+    <div style="border: solid red 5px; background-color: lightgrey;">
+      <pre>
+        BRANDING:   <%= field_test(:branding) %>
+        FIELD TEST: <%= session[:field_test_participant] %>
+      </pre>
+    </div>
+
   <% end %>
 </html>

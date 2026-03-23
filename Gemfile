@@ -126,6 +126,9 @@ gem "rack-host-redirect"
 
 gem "rack-cors"
 
+# Split A/B testing
+gem "field_test"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: %i[mri mingw x64_mingw]

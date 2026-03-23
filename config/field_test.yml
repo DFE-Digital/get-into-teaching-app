@@ -1,0 +1,9 @@
+experiments:
+  branding:
+    variants:
+      - old_brand
+      - new_brand
+    # winner: green
+
+exclude:
+  bots: true

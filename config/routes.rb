@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root to: "pages#show", page: "home"
 
+  mount FieldTest::Engine, at: "field_test"
+
   get "/robots.txt", to: "robots#show"
   get "/events/not-available", to: "events#not_available"
   get "/mailinglist/not-available", to: "mailing_list/steps#not_available"
