@@ -1,6 +1,5 @@
 class SitemapController < ApplicationController
   DEFAULT_LASTMOD = "2021-03-01".freeze
-  FUTURE_EVENTS_LIMIT = 100
 
   ALIASES = {
     "/home" => "/",
@@ -10,8 +9,7 @@ class SitemapController < ApplicationController
   # Ensure any index route (collection) has a trailing slash (representing the semantics of a directory).
   # This will keep it consistent with how canonical-rails behaves and ensure search engines are happy.
   OTHER_PATHS = {
-    "/events" => { title: "Events from Get Into Teaching and training providers" },
-    "/events/about-get-into-teaching-events" => { title: "Get Into Teaching events" },
+    "/events" => { title: "Events from training providers" },
     "/mailinglist/signup/name" => { title: "Free personalised teacher training guidance" },
     "/routes-into-teaching" => { title: "Find your route into teaching" },
   }.freeze
@@ -49,29 +47,11 @@ private
   end
 
   def all_sitemap_pages
-    published_pages.merge(OTHER_PATHS).reject { |_path, metadata| metadata[:noindex] }
+    content_pages.merge(OTHER_PATHS).reject { |_path, metadata| metadata[:noindex] }
   end
 
   def lastmod_date(path, metadata = nil)
     metadata&.dig(:date) || PageModification.find_by(path: path)&.updated_at&.strftime("%Y-%m-%d") || DEFAULT_LASTMOD
-  end
-
-  def published_pages
-    content_pages.merge(event_pages)
-  end
-
-  def event_pages
-    events.to_h do |event|
-      [event_path(event.readable_id), { title: event.name }]
-    end
-  end
-
-  def events
-    GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
-      start_after: Time.zone.now,
-      quantity: FUTURE_EVENTS_LIMIT,
-      type_ids: [Crm::EventType.get_into_teaching_event_id, Crm::EventType.online_event_id],
-    )
   end
 
   def content_pages

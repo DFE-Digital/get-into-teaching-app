@@ -2,20 +2,9 @@
   <section class="col col-full-content">
     <%= render(CallsToAction::Promo::PromoComponent.new(border: :top)) do |promo| %>
       <% promo.with_left_section(classes: %w[events-background]) %>
-      <% promo.with_right_section(
-            heading: "Events near you") do %>
-          <p>Speak to teachers, local teacher training providers and expert advisers at an in-person event.</p>
-
-          <%= form_for TeachingEvents::Search.new, method: :post, url: events_path do |f| %>
-            <%= f.hidden_field :distance, value: 10 %>
-            <%= f.hidden_field :online, multiple: true, value: false %>
-            <%= f.label :postcode, "Enter postcode" %>
-            <%= f.text_field :postcode, class: "govuk-input", autocomplete: "postal-code" %>
-            <%= tag.button("Search for an event", class: "button", type: :submit, id: "event-search") %>
-          <% end %>
-          <p class="govuk-!-padding-top-5">
-            Or <%= link_to("find an online event", events_path(add_online_events(params))) %>.
-          </p>
+      <% promo.with_right_section(heading: "Training provider events") do %>
+          <p>Meet teacher training providers and discover courses on offer.</p>
+          <p class="govuk-!-padding-top-3"><%= link_to("Find events", events_path, class: "button", role: "button") %></p>
       <% end %>
     <% end %>
   </section>

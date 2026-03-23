@@ -1,12 +1,12 @@
 require "rails_helper"
 
 RSpec.describe CallsToAction::EventsBlockComponent, type: :component do
-  let(:title) { "Attend a Get Into Teaching event" }
+  let(:title) { "Attend a training provider event" }
   let(:image) { "events-block-promo.jpg" }
   let(:title_color) { "yellow" }
-  let(:text) { "Speak to teachers, expert advisers and teacher training providers at an in-person or online event." }
+  let(:text) { "Speak to teacher training providers at an event." }
   let(:link_text) { "Find an event" }
-  let(:link_target) { "/events/about-get-into-teaching-events" }
+  let(:link_target) { "/events" }
 
   let(:kwargs) do
     {
