@@ -46,20 +46,12 @@ The Department for Education is committed to making its websites accessible, in 
 
 ## Compliance status
 
-This website is partially compliant with the WCAG (Web Content Accessibility Guidelines) version 2.2 AA standard, due to the following non-compliances.
+This website is fully compliant with the WCAG (Web Content Accessibility Guidelines) version 2.2 AA standard.
 
-### Non-accessible content
-
-We have one video that does not meet [WCAG 2.2 AA - 1.2.5 Audio Description (prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded). This videos is titled "What happens at a Get Into Teaching event". We plan to add audio descriptions to this video by December 2025. When we publish new content, we will ensure that our use of videos meets accessibility standards.
-
-## What we're doing to improve accessibility
-
-We are currently working to address the known accessibility issues.
-
-We’ll continue to test the accessibility of this service as it develops.
+We’ll continue to monitor the accessibility of this service over time.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 5 March 2025. It was last reviewed on 16 September 2025.
+This statement was prepared on 5 March 2025. It was last updated on 25 March 2026.
 
 This website was last tested independently on 25 February 2025. The test was carried out by the Government Digital Service.
