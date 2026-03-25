@@ -21,7 +21,7 @@ RUN apk add --no-cache \
   "libwebp"
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
-        libffi-dev yaml-dev \
+        libffi-dev yaml-dev gcompat \
         postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
 
 # Install bundler
