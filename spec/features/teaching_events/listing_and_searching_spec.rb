@@ -10,49 +10,21 @@ RSpec.feature "Searching for teaching events", type: :feature do
       visit events_path
     end
 
-    specify "the events filter contains valid event query params" do
+    specify "the events filter contains valid event format query params" do
       html = Nokogiri.parse(page.html)
 
       params = html
-        .css(%(input[type='checkbox'][name='teaching_events_search[type][]']))
+        .css(%(input[type='checkbox'][name='teaching_events_search[online][]']))
         .map { |e| e.attr("value") }
         .flat_map { |qp| qp.split(",") }
 
-      expect(params).to match_array(Crm::EventType::QUERY_PARAM_NAMES.keys.reject { |a| a == "onlineqa" })
+      expect(params).to match_array(%w[true false])
     end
   end
 
   describe "event lists" do
     before do
       allow_any_instance_of(TeachingEvents::Search).to receive(:results).and_return(events)
-    end
-
-    scenario "The first two get into teaching events are 'featured'" do
-      visit events_path
-
-      expect(page).to have_current_path("/events")
-
-      expected_featured = 3
-      expected_regular = event_count - expected_featured
-
-      # two are featured, rest are just listed
-      expect(page).to have_css(".teaching-events__events--featured > ol > li", count: expected_featured)
-      expect(page).to have_css(".teaching-events__events--regular > ol > li", count: expected_regular)
-    end
-
-    context "when one event is get into teaching" do
-      let(:git_event_count) { 1 }
-      let(:events) { build_list(:event_api, event_count - git_event_count, :online_event).append(build(:event_api)) }
-
-      scenario "Non-get-into-teaching events are never featured" do
-        visit events_path
-
-        expected_featured = git_event_count
-        expected_regular = event_count - expected_featured
-
-        expect(page).to have_css(".teaching-events__events--featured > ol > li", count: expected_featured)
-        expect(page).to have_css(".teaching-events__events--regular > ol > li", count: expected_regular)
-      end
     end
 
     context "when no events are get into teaching" do
@@ -137,6 +109,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       visit events_path
 
       check "Online"
+      select "Nationwide", from: "Search area"
       click_on "Update results"
 
       expect(fake_api).to have_received(:search_teaching_events).with(hash_including(online: true)).once
@@ -146,43 +119,10 @@ RSpec.feature "Searching for teaching events", type: :feature do
       visit events_path
 
       check "In person"
+      select "Nationwide", from: "Search area"
       click_on "Update results"
 
       expect(fake_api).to have_received(:search_teaching_events).with(hash_including(online: false)).once
-    end
-
-    scenario "searching for get into teaching events" do
-      visit events_path
-
-      expected_type_ids = Crm::EventType.lookup_by_names("Get Into Teaching event")
-
-      check "DfE Get Into Teaching"
-      click_on "Update results"
-
-      expect(fake_api).to have_received(:search_teaching_events).with(hash_including(type_ids: expected_type_ids)).once
-    end
-
-    scenario "searching for school or university events" do
-      visit events_path
-
-      expected_type_ids = [Crm::EventType.school_or_university_event_id]
-
-      check "Training provider"
-      click_on "Update results"
-
-      expect(fake_api).to have_received(:search_teaching_events).with(hash_including(type_ids: expected_type_ids)).once
-    end
-
-    scenario "searching for online and get into teaching events" do
-      visit events_path
-
-      expected_type_ids = Crm::EventType.lookup_by_names("Get Into Teaching event", "School or University event")
-
-      check "DfE Get Into Teaching"
-      check "Training provider"
-      click_on "Update results"
-
-      expect(fake_api).to have_received(:search_teaching_events).with(hash_including(type_ids: expected_type_ids)).once
     end
 
     context "when no events are found" do
@@ -200,22 +140,12 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       scenario "a useful message and options are shown" do
         within(".teaching-events__events--none") do
-          expect(page).to have_css("h2", text: "0 events found")
-          expect(page).to have_css("p", text: "Why not try:")
-          expect(page).to have_link(text: "clearing your filters", href: events_path)
+          expect(page).to have_css("h2", text: "No events found")
+          expect(page).to have_css("p", text: "There are no events planned.")
+          expect(page).to have_css("p", text: "Try checking again in a few weeks to see new provider events on offer.")
         end
 
         expect(page).not_to have_css("teaching-events__events--regular")
-      end
-
-      context "when there are upcoming national Get Into Teaching events" do
-        let(:national_git_events) { build_list(:event_api, 1, :online) }
-
-        scenario "they are displayed as events of interest" do
-          within(".teaching-events__events--regular") do
-            expect(page).to have_css("h2", text: "Other events you may be interested in")
-          end
-        end
       end
 
       context "when the candidate has filtered by distance" do
