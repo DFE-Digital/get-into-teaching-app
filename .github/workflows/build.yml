@@ -338,7 +338,7 @@ jobs:
         uses: DFE-Digital/github-actions/set-up-environment@master
 
       - name: Setup sonarqube
-        uses: warchant/setup-sonar-scanner@v9
+        uses: warchant/setup-sonar-scanner@v10
         with:
           version: 5.0.2.4997
 
