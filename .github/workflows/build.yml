@@ -406,7 +406,7 @@ jobs:
              secret_suffix="_REVIEW"
              echo "SECRET_SUFFIX=$secret_suffix" >> $GITHUB_ENV
 
-      - uses: Azure/login@v2
+      - uses: Azure/login@v3
         with:
             client-id: ${{ secrets.AZURE_CLIENT_ID }}
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -455,7 +455,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v2
+      - uses: Azure/login@v3
         with:
             client-id: ${{ secrets.AZURE_CLIENT_ID }}
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -557,7 +557,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v2
+      - uses: Azure/login@v3
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -612,7 +612,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v2
+      - uses: Azure/login@v3
         with:
             client-id: ${{ secrets.AZURE_CLIENT_ID }}
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -661,7 +661,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v2
+      - uses: Azure/login@v3
         with:
             client-id: ${{ secrets.AZURE_CLIENT_ID }}
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -727,7 +727,7 @@ jobs:
       id-token: write
 
     steps:
-      - uses: azure/login@v2
+      - uses: azure/login@v3
         with:
           client-id:  ${{ secrets.AZURE_CLIENT_ID  }}
           tenant-id:  ${{ secrets.AZURE_TENANT_ID   }}
@@ -759,7 +759,7 @@ jobs:
       id-token: write
 
     steps:
-      - uses: azure/login@v2
+      - uses: azure/login@v3
         with:
           client-id:  ${{ secrets.AZURE_CLIENT_ID  }}
           tenant-id:  ${{ secrets.AZURE_TENANT_ID   }}
