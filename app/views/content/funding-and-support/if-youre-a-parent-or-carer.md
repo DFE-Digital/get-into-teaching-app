@@ -85,7 +85,7 @@ This is usually paid to you in 3 instalments, one at the start of each term.
 
 To be eligible, you need to:
 
-* be doing a full-time undergraduate course or a teacher training course in England
+* be doing a full-time bachelor's (undergraduate) course or a teacher training course in England
 * have dependent children
 * have a household income of less than $finance_parentslearningallowance_income$ a year
 
