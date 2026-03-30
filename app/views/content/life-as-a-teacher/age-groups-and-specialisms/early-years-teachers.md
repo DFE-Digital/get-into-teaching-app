@@ -116,6 +116,21 @@ To apply for an early years initial teacher training route, contact accredited e
 
 This is a new route, designed for people who want to combine studying for a bachelor’s degree with being employed in an early years setting.
 
+This is a level 6 degree apprenticeship, where you’ll train, earn, and qualify as an Early Years teacher. You don’t need any previous experience to get going. 
+
+You can apply if you have:
+* GCSEs in English, maths, and science (grade C/4 or above)  
+* any level 3 qualification (equivalent to an A Level)
+* lived in England for the last 3 years or more  
+
+If you do not have a GCSE in English or Maths, you might be able to do a free course to improve your skills to gain them. 
+
+If you do not have a level 3 qualification, you may be able to demonstrate your ability through an assessment. Your training providers will make the decision whether to accept an assessment instead of a level 3 qualification. 
+
+This route suits both complete beginners and current early years staff or childminders who want to gain a degree and EYTS while working. Once qualified, you can teach in private, voluntary and independent nurseries, academy and free school nursery classes, and independent school infant classes. It’s also a great option for childminders wanting to progress. 
+
+You’ll learn to plan lessons, lead teams, work with families and agencies, and help run an early years setting. 
+
 The first early years teacher degree apprenticeships are expected to start in 2026. More information will be available on this page later this year, including how to apply and course details. 
 
 $EY-apprenticeship$
