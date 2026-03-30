@@ -74,7 +74,7 @@ $international-content$
 
 ### Postgraduate training 
 
-This route is designed for people who have an undergraduate degree and want to continue full-time study to achieve early years teacher status.
+This route is designed for people who have a bachelor's (undergraduate) degree and want to continue full-time study to achieve early years teacher status.
 
 $EY-graduate$
 
