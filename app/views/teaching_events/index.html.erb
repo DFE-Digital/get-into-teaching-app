@@ -1,27 +1,22 @@
 <section class="teaching-events">
   <header>
-    <h1 class="heading-l heading--box-yellow">Events</h1>
-    <p>We have 2 types of free events.</p>
-    <p>At Get Into Teaching events, you can talk to expert advisers, a range of local training providers and experienced teachers. Find out <a href="/events/about-get-into-teaching-events">what happens at a Get Into Teaching event</a>.</p>
-    <p>At training provider events, specific teacher training providers will talk about the courses they offer.</p>
+    <h1 class="heading-l heading--box-yellow">Training provider events</h1>
+    <p>
+      At these events, teacher training providers will talk about the courses
+      they offer. You can also meet other people interested in a career in
+      teaching.
+    </p>
   </header>
   <div class="teaching-events__container">
     <div class="teaching-events__filter">
       <%= render partial: "teaching_events/index/filter" %>
     </div>
     <div class="teaching-events__listing">
-      <% if @featured_events.blank? && @events.blank? %>
+      <% if @events.blank? %>
         <%= render partial: "teaching_events/index/no_results" %>
-      <% end %>
-      <% if @featured_events.any? %>
-        <div class="teaching-events__events teaching-events__events--featured">
-          <h2 class="heading-m">Upcoming Get Into Teaching events</h2>
-          <ol><%= render TeachingEvents::EventComponent.with_collection(@featured_events) %></ol>
-        </div>
-      <% end %>
-      <% if @events.any? %>
+      <% else %>
         <div class="teaching-events__events teaching-events__events--regular">
-          <h2 class="heading-m">Events coming up soon</h2>
+          <h2 class="heading-m">Upcoming events</h2>
           <ol><%= render TeachingEvents::EventComponent.with_collection(@events) %></ol>
           <div class="teaching-events__pagination">
             <%= paginate @events %>

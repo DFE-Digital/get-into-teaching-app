@@ -78,42 +78,13 @@ describe "teaching events", type: :request do
     end
   end
 
-  describe "get into teaching event actions" do
-    let(:now) { Time.zone.now }
-    let(:closed_events) { build_list(:event_api, 2, :closed) }
-    let(:open_events) { build_list(:event_api, 2) }
-    let(:events) { closed_events + open_events }
+  describe "#git_statistics" do
+    # git statistics are deprecated as there are no more git events; this will always return zero
+    before { get git_statistics_events_path(format: :json) }
 
-    before do
-      freeze_time
-      expected_type_ids = [Crm::EventType.get_into_teaching_event_id]
-      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events)
-          .with(a_hash_including(type_ids: expected_type_ids, start_after: now, quantity: 1_000))
-          .and_return(events)
-    end
+    subject { response.body }
 
-    describe "#about_git_events" do
-      before { get about_git_events_path }
-
-      subject { response.body }
-
-      it { expect(response).to have_http_status(:success) }
-
-      context "when there are no GiT events" do
-        let(:events) { [] }
-
-        it { is_expected.to include("This autumn we'll be running events in Birmingham, London, and Manchester.") }
-      end
-    end
-
-    describe "#git_statistics" do
-      before { get git_statistics_events_path(format: :json) }
-
-      subject { response.body }
-
-      it { expect(response).to have_http_status(:success) }
-      it { expect(JSON.parse(response.body, symbolize_names: true)).to include({ open_events_count: open_events.count }) }
-    end
+    it { expect(response).to have_http_status(:success) }
+    it { expect(JSON.parse(response.body, symbolize_names: true)).to include({ open_events_count: 0 }) }
   end
 end

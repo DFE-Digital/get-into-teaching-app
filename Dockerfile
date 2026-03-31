@@ -22,6 +22,7 @@ RUN apk add --no-cache \
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
         libffi-dev yaml-dev \
+        libc6-compat gcompat \
         postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
 
 # Install bundler
@@ -90,7 +91,7 @@ WORKDIR /app
 # Install production image dependencies
 RUN apk update
 
-RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev && \
+RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev libc6-compat gcompat && \
     rm -rf /var/lib/apt/lists/*
 
 RUN apk add --no-cache \

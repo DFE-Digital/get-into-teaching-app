@@ -3,7 +3,6 @@ require "digest/sha1"
 
 class PageModificationTracker
   MANUAL_PAGES = {
-    "/events/about-get-into-teaching-events" => {},
     "/events" => {},
     "/mailinglist/signup/name" => {},
     "/routes-into-teaching" => {},
