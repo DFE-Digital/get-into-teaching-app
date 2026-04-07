@@ -469,4 +469,90 @@ body > header {
   } // primary navigation
 }
 
+body.new_brand > header {
+  #primary-navigation {
+    ol.primary {
+
+      // general (mobile and desktop)
+      .nav-icon {
+        &__contracted {
+          background-image: url("../images/navigation/arrow-down-gitpurple.svg");
+        }
+
+        &__expanded {
+          background-image: url("../images/navigation/arrow-up-gitpurple.svg");
+        }
+      }
+
+      // mobile only
+      @include mq($until: desktop) {
+        // root level item only
+        > li {
+          > .menu-link {
+
+            .nav-icon {
+              &__contracted {
+                background-image: url("../images/navigation/arrow-down-gitpurple.svg");
+              }
+
+              &__expanded {
+                background-image: url("../images/navigation/arrow-up-gitpurple.svg");
+              }
+            }
+
+            &:focus {
+              .nav-icon {
+                &__contracted {
+                  background-image: url("../images/navigation/arrow-down-gitpurple.svg");
+                }
+
+                &__expanded {
+                  background-image: url("../images/navigation/arrow-up-gitpurple.svg");
+                }
+              }
+            }
+          }
+        }
+      } // mobile
+
+      // desktop only
+      @include mq($from: desktop) {
+        > li {
+          > .menu-link:focus {
+            border-bottom: solid 4px $gitpurple;
+          }
+
+          &.selected > .menu-link {
+            border-bottom: solid 4px $gitpurple;
+          }
+        } // li
+      } // desktop
+    } //ol.primary
+
+    ol.category-links-list {
+      // mobile and tablet
+      @include mq($until: desktop) {
+        > li.selected {
+          background: $gitpurple;
+        }
+
+        > li {
+          border-left: solid $gitpurple 4px;
+        }
+      }
+    }
+
+    // desktop and wide screen
+    @include mq($from: desktop) {
+      ol.category-links-list, ol.page-links-list {
+
+        > li.selected > .menu-link {
+          border-left: solid $gitpurple 4px;
+        }
+      } // ol.category-links-list, ol.page-links-list
+
+    } // from desktop, secondary nav
+  }
+}
+
 

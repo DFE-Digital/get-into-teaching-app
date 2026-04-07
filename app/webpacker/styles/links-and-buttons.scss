@@ -339,3 +339,11 @@ body a.govuk-back-link {
     display: inline-block;
   }
 }
+
+body.new_brand {
+  .link {
+    &:focus {
+      box-shadow: 0 4px $gitpurple;
+    }
+  }
+}
