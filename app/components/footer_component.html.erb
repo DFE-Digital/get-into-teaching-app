@@ -7,7 +7,7 @@
     <section class="talk-to-us">
       <div class="talk-to-us__content">
         <div class="talk-to-us__icon-section">
-          <%=tag.i class: "icon-call #{helpers.rebrand? ? "icon--on-gitlilac" : "icon--on-yellow"}" %>
+          <%=tag.i class: helpers.rebrand? ? "icon-call-white icon--on-gitpurple" : "icon-call icon--on-yellow" %>
           <div>
             <h3 class="heading-s">Call our support team</h3>
             <a href="tel:08003892500" class="telephone link">0800 389 2500</a>
@@ -15,7 +15,7 @@
         </div>
         <% unless helpers.privacy_page?(request.path) %>
           <div class="talk-to-us__icon-section">
-            <%=tag.i class: "icon-chat #{helpers.rebrand? ? "icon--on-gitlilac" : "icon--on-yellow"}" %>
+            <%=tag.i class: helpers.rebrand? ? "icon-chat-white icon--on-gitpurple" : "icon-chat icon--on-yellow" %>
             <div>
               <h3 class="heading-s">Chat to our support team</h3>
               <%= render ChatComponent.new %>

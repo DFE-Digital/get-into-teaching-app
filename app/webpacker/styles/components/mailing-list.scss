@@ -103,7 +103,7 @@
 body.new_brand {
   .home-mailing-list {
     &::before {
-      border-color: $gitpurple transparent transparent transparent;
+      border: none;
     }
   }
 }
