@@ -37,7 +37,7 @@ module Content
         return true
       end
 
-      active_key = [fm_keys].flatten.find{|key| front_matter[key].present? }
+      active_key = [fm_keys].flatten.find{|key| front_matter.key?(key) }
 
       return false unless active_key.present? || default.present?
 
@@ -49,40 +49,6 @@ module Content
 
       true
     end
-
-
-    #
-    # def initialize_with_front_matter(front_matter, defaults: {})
-    #   return if front_matter.blank?
-    #   front_matter.with_indifferent_access.tap do |fm|
-    #     @title = substitute_values(fm["heading"] || fm["title"]) if fm["heading"] || fm["title"]
-    #     @subtitle = substitute_values(fm["subtitle"]) if fm["subtitle"]
-    #     @subtitle_link = fm["subtitle_link"] if fm["subtitle_link"]
-    #     @subtitle_button = substitute_values(fm["subtitle_button"]) if fm["subtitle_button"]
-    #     @image = fm["image"] if fm["image"]
-    #     @paragraph = substitute_values(fm["title_paragraph"]) if fm["title_paragraph"]
-    #     @title_bg_color = fm["title_bg_color"] if fm["title_bg_color"]
-    #     @hero_bg_color = fm["hero_bg_color"] if fm["hero_bg_color"]
-    #     @hero_blend_content = fm["hero_blend_content"] if fm["hero_blend_content"]
-    #     @hero_content_width = fm["hero_content_width"] if fm["hero_content_width"]
-    #   end
-    #
-    # def reinitialize_with_front_matter(front_matter, defaults: {})
-    #   return if front_matter.blank?
-    #   front_matter.with_indifferent_access.tap do |fm|
-    #     @title = substitute_values(fm["heading"] || fm["title"]) if fm["heading"] || fm["title"]
-    #     @subtitle = substitute_values(fm["subtitle"]) if fm["subtitle"]
-    #     @subtitle_link = fm["subtitle_link"] if fm["subtitle_link"]
-    #     @subtitle_button = substitute_values(fm["subtitle_button"]) if fm["subtitle_button"]
-    #     @image = fm["image"] if fm["image"]
-    #     @paragraph = substitute_values(fm["title_paragraph"]) if fm["title_paragraph"]
-    #     @title_bg_color = fm["title_bg_color"] if fm["title_bg_color"]
-    #     @hero_bg_color = fm["hero_bg_color"] if fm["hero_bg_color"]
-    #     @hero_blend_content = fm["hero_blend_content"] if fm["hero_blend_content"]
-    #     @hero_content_width = fm["hero_content_width"] if fm["hero_content_width"]
-    #   end
-
-
 
     def classes
       ["hero", hero_bg_color].tap do |c|
