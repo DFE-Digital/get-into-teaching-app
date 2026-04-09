@@ -1,6 +1,7 @@
 module ApplicationHelper
   def rebrand?
-    field_test(:branding) == "new_brand"
+    # Only the homepage should be rebranded
+    current_page?(root_path) && field_test(:branding) == "new_brand"
   end
 
   def body_tag(attributes = {}, &block)
