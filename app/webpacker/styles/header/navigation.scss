@@ -518,6 +518,11 @@ body.new_brand > header {
       // desktop only
       @include mq($from: desktop) {
         > li {
+          > .menu-link {
+            padding-bottom: 20px;
+            margin: 0.75em 0 0;
+          }
+
           > .menu-link:focus {
             border-bottom: solid 4px $gitpurple;
           }
@@ -546,12 +551,38 @@ body.new_brand > header {
     @include mq($from: desktop) {
       ol.category-links-list, ol.page-links-list {
 
+        > li {
+          .menu-link {
+            &:focus {
+              .nav-icon {
+                &__contracted, &__expanded {
+                  background-image: url("../images/navigation/arrow-right-black.svg");
+                }
+              }
+            }
+          }
+        }
+
         > li.selected > .menu-link {
           border-left: solid $gitpurple 4px;
+
+          &:focus {
+            color: $black;
+            background: $white;
+
+            .nav-icon {
+              &__contracted, &__expanded {
+                background-image: url("../images/navigation/arrow-right-black.svg");
+              }
+            }
+          }
         }
       } // ol.category-links-list, ol.page-links-list
 
     } // from desktop, secondary nav
+
+
+
   }
 }
 

@@ -343,7 +343,9 @@ body a.govuk-back-link {
 body.new_brand {
   .link {
     &:focus {
+      background-color: $grey;
       box-shadow: 0 4px $gitpurple;
+      color: $black;
     }
   }
 }

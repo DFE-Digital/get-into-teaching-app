@@ -105,5 +105,9 @@ body.new_brand {
     &::before {
       border: none;
     }
+
+    form {
+      margin-top: 0;
+    }
   }
 }
