@@ -491,11 +491,16 @@ $mobile-cutoff: 800px;
 
 .hero.rebrand-2026 {
   &.content-wide {
-    font-family: "Montserrat", Sans-Serif;
-
     .hero__title {
+      font-family: "Montserrat", Sans-Serif;
       font-weight: 700;
-      h1 {
+
+      @include mq($until: tablet) {
+        grid-column-end: -1;
+        text-align: center;
+      }
+
+        h1 {
         @include mq($until: tablet) {
           font-size: 2.5rem;
         }
@@ -518,12 +523,34 @@ $mobile-cutoff: 800px;
       color: $white;
       font-weight: 500;
       margin-bottom: 2.5em;
+
+      @include mq($until: tablet) {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      @include mq($from: tablet) {
+        margin-left: 1em;
+      }
+
+      @include mq($from: desktop) {
+        margin-left: 1.5em;
+      }
+
+      @include mq($from: wide) {
+        margin-left: 2em;
+      }
     }
 
-    picture img {
-      object-fit: contain;
-      margin-right: auto;
-      object-position: 50% 30%;
+    picture {
+      @include mq($until: tablet) {
+        grid-column-start: -5;
+      }
+      img {
+        object-fit: contain;
+        margin-right: auto;
+        object-position: 50% 30%;
+      }
     }
   }
 }

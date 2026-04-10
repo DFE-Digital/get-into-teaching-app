@@ -341,6 +341,7 @@ body a.govuk-back-link {
 }
 
 body.new_brand {
+
   .link {
     &:focus {
       background-color: $grey;
@@ -348,4 +349,22 @@ body.new_brand {
       color: $black;
     }
   }
+
+  .link--black {
+    &:focus {
+      background-color: $grey;
+      box-shadow: 0 4px $gitpurple;
+      color: $black;
+    }
+  }
+
+  // passes accessibility contrast check on grey/yellow background
+  .link--dark {
+    color: $black;
+
+    &:focus {
+      color: $black;
+    }
+  }
+
 }
