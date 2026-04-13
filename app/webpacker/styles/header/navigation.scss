@@ -489,7 +489,6 @@ body.rebrand > header {
         // root level item only
         > li {
           > .menu-link {
-
             .nav-icon {
               &__contracted {
                 background-image: url("../images/navigation/arrow-down-gitpurple.svg");
@@ -532,7 +531,7 @@ body.rebrand > header {
           }
         } // li
       } // desktop
-    } //ol.primary
+    } // ol.primary
 
     ol.category-links-list {
       // mobile and tablet
@@ -550,7 +549,6 @@ body.rebrand > header {
     // desktop and wide screen
     @include mq($from: desktop) {
       ol.category-links-list, ol.page-links-list {
-
         > li {
           .menu-link {
             &:focus {
@@ -580,10 +578,5 @@ body.rebrand > header {
       } // ol.category-links-list, ol.page-links-list
 
     } // from desktop, secondary nav
-
-
-
   }
 }
-
-

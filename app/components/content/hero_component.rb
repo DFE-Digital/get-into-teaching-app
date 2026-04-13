@@ -51,7 +51,7 @@ module Content
       ["hero", hero_bg_color].tap do |c|
         c << "blend-content" if hero_blend_content
         c << "content-#{hero_content_width}"
-        c << "rebrand-2026" if helpers.rebrand?
+        c << "rebrand" if helpers.rebrand?
       end
     end
 

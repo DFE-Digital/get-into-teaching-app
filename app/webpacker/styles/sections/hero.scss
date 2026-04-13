@@ -431,68 +431,10 @@ $mobile-cutoff: 800px;
   }
 }
 
-
-//
-//.hero.rebrand-2026 {
-//  .hero__paragraph {
-//    color: white;
-//  }
-//
-//  picture img {
-//    object-fit: contain;
-//  }
-//
-//  @supports (display: grid) {
-//    @include mq($from: tablet) {
-//      grid-template-columns: repeat(9, 1fr);
-//      grid-template-rows: 1em repeat(2, fit-content(0) ) 1em;
-//
-//      //grid-template-rows: repeat(5, fit-content(0)) 3em;
-//      //grid-template-rows: repeat(5, fit-content(0)) 3em;
-//      //grid-template-columns: minmax(100px, 1fr) 4em repeat(2, minmax(100px, 1fr)) 200px;
-//
-//      //grid-template-columns: repeat(3, minmax(100px, 1fr)) 4em repeat(2, minmax(100px, 1fr)) 200px;
-//
-//      &.content-wide {
-//
-//
-//
-//        .hero__title {
-//          grid-area: 2 / 2 / 3 / 7;
-//
-//          font-family: "Montserrat", Sans-Serif;
-//          font-weight: 700;
-//        }
-//
-//        .hero__paragraph {
-//          grid-area: 3 / 2 / 4 / 6;
-//          margin-top: 1em;
-//          margin-bottom: 1em;
-//
-//          font-family: "Montserrat", Sans-Serif;
-//          font-weight: 500;
-//        }
-//
-//
-//          //grid-area: 4 / 1 / 5 / 5;
-//
-//        picture {
-//          // grid-area: -6 / -4 / -1 / -1;
-//          //grid-area: -6 / -4 / -1 / -2;
-//
-//          grid-area: 1 / -4 / -1 / -2;
-//        }
-//      }
-//
-//    }
-//  }
-//}
-
-
-.hero.rebrand-2026 {
+.hero.rebrand {
   &.content-wide {
     .hero__title {
-      font-family: "Montserrat", Sans-Serif;
+      font-family: Montserrat, sans-serif;
       font-weight: 700;
 
       @include mq($until: tablet) {
@@ -546,6 +488,7 @@ $mobile-cutoff: 800px;
       @include mq($until: tablet) {
         grid-column-start: -5;
       }
+
       img {
         object-fit: contain;
         margin-right: auto;
