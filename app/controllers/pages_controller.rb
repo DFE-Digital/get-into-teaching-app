@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}
   PRIVACY_POLICY_ID_FILTER = %r{^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$}
 
-  BRANDING = %w[rebrand current]
+  BRANDING = %w[rebrand current].freeze
 
   caches_page :cookies
   caches_page :show

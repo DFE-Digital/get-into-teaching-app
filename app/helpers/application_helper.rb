@@ -5,7 +5,7 @@ module ApplicationHelper
   end
 
   def request_branding
-    request.params.dig("branding")
+    request.params["branding"]
   end
 
   def split_test_enabled?

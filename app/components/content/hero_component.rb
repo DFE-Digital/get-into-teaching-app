@@ -28,7 +28,7 @@ module Content
     end
 
     def set_value(name, front_matter, fm_keys, default: nil, rebrand: false)
-      return unless front_matter.present?
+      return if front_matter.blank?
 
       if rebrand && front_matter["rebrand"].present? && set_value(name, front_matter["rebrand"], fm_keys)
         return true
