@@ -1,10 +1,7 @@
 module Content
-
-
   class HeroComponent < ViewComponent::Base
     include ContentHelper
     include FieldTest::Helpers
-
 
     attr_accessor :title, :subtitle, :image, :show_mailing_list, :paragraph, :title_bg_color, :hero_bg_color, :hero_blend_content, :hero_content_width
 

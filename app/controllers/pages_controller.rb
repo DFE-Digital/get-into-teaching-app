@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   class InvalidPrivacyPolicy < RuntimeError; end
 
   before_action :init_funding_widget, only: %i[scholarships_and_bursaries scholarships_and_bursaries_search]
+  # before_action :redirect_branding, only: :home
 
   MISSING_TEMPLATE_EXCEPTIONS = [
     ActionView::MissingTemplate,
@@ -104,6 +105,10 @@ private
       @funding_widget = FundingWidget.new
     end
   end
+
+  # def redirect_branding
+  #   puts "REDIRECT_BRANDING"
+  # end
 
   def render_page(path)
     @page = ::Pages::Page.find content_template(path)
