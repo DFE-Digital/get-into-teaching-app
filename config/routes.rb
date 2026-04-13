@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: "pages#show", page: "home"
+  root to: "pages#home", page: "home"
 
   mount FieldTest::Engine, at: "field_test"
 

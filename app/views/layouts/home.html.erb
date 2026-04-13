@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= body_tag class: rebrand? ? "new_brand" : "old-brand" do %>
+  <%= body_tag class: rebrand? ? "new_brand" : "old_brand" do %>
     <%= render "sections/govuk_javascript" %>
     <%= render HeaderComponent.new(@front_matter) %>
 

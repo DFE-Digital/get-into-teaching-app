@@ -4,6 +4,10 @@ module ApplicationHelper
     current_page?(root_path) && field_test(:branding) == "new_brand"
   end
 
+  def split_test_enabled?
+    ENV.fetch("SPLIT_TEST", nil) =~ /TRUE/i
+  end
+
   def body_tag(attributes = {}, &block)
     attributes[:data] ||= {}
 
