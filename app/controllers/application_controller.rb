@@ -1,5 +1,4 @@
 require "basic_auth"
-require "securerandom"
 
 class ApplicationController < ActionController::Base
   class ForbiddenError < StandardError; end
