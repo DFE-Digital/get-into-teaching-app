@@ -19,10 +19,6 @@ class ApplicationController < ActionController::Base
 
 protected
 
-  def field_test_participant
-    session[:field_test_participant] ||= SecureRandom.hex
-  end
-
   def noindex
     @noindex = true
   end

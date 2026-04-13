@@ -1,7 +1,11 @@
 module ApplicationHelper
   def rebrand?
     # Only the homepage should be rebranded
-    current_page?(root_path) && field_test(:branding) == "new_brand"
+    current_page?(root_path) && request_branding == "rebrand"
+  end
+
+  def request_branding
+    request.params.dig("branding")
   end
 
   def split_test_enabled?

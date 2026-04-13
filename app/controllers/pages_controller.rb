@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}
   PRIVACY_POLICY_ID_FILTER = %r{^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$}
 
-  BRANDING = %w[new_brand old_brand]
+  BRANDING = %w[rebrand current]
 
   caches_page :cookies
   caches_page :show
@@ -114,9 +114,9 @@ private
   def split_test_branding
     return unless helpers.split_test_enabled?
 
-    unless BRANDING.include?(request.params.dig("field_test", "branding"))
+    unless BRANDING.include?(helpers.request_branding)
       redirect_to(action: action_name,
-                  params: request.params.merge(field_test: { branding: branding }).except("page", "action", "controller", "path"))
+                  params: request.params.merge(branding: branding).except("page", "action", "controller", "path"))
     end
   end
 
