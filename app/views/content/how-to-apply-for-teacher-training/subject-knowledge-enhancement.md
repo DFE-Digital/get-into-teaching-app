@@ -48,9 +48,8 @@ You'll choose your SKE course provider, but your teacher training provider can h
 
 ### SKE subjects
 
-SKE courses are currently available in 5 secondary subjects:
+SKE courses are currently available in 4 secondary subjects:
 
-* chemistry
 * computing
 * languages
 * mathematics
