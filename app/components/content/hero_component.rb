@@ -7,6 +7,7 @@ module Content
 
     def initialize(front_matter)
       return if front_matter.blank?
+
       @front_matter = front_matter
 
       super
@@ -14,7 +15,7 @@ module Content
 
     def before_render
       helpers.rebrand?.tap do |rebrand|
-        set_value(:@title, @front_matter, ["heading", "title"], rebrand: rebrand)
+        set_value(:@title, @front_matter, %w[heading title], rebrand: rebrand)
         set_value(:@subtitle, @front_matter, "subtitle", rebrand: rebrand)
         set_value(:@subtitle_link, @front_matter, "subtitle_link", rebrand: rebrand)
         set_value(:@subtitle_button, @front_matter, "subtitle_button", rebrand: rebrand)
@@ -34,7 +35,7 @@ module Content
         return true
       end
 
-      active_key = [fm_keys].flatten.find{|key| front_matter.key?(key) }
+      active_key = [fm_keys].flatten.find { |key| front_matter.key?(key) }
 
       return false unless active_key.present? || default.present?
 
