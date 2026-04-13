@@ -465,6 +465,7 @@ $mobile-cutoff: 800px;
       color: $white;
       font-weight: 500;
       margin-bottom: 2.5em;
+      margin-top: 0;
 
       @include mq($until: tablet) {
         margin-left: 0;

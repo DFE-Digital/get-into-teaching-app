@@ -18,7 +18,7 @@
     - content/home/directory
   rebrand:
     heading: "Get Into Teaching"
-    subtitle: "Free advice and support to decide if teaching in a primary or secondary school in England is right for you"
+    subtitle: "Free advice and support to decide if teaching in a primary or secondary school in England is right for you."
     title_paragraph: null
     image: "static/images/content/hero-images/rebrand-2026/hero-image-margin.png"
     hero_content_width: wide
