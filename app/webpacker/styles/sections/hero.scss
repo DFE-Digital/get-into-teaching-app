@@ -451,11 +451,11 @@ $mobile-cutoff: 800px;
         }
 
         @include mq($from: tablet) {
-          font-size: 4rem;
+          font-size: 4.5rem;
         }
 
         @include mq($from: desktop) {
-          font-size: 5.5rem;
+          font-size: 5.25rem;
         }
 
         @include mq($from: wide) {
