@@ -48,11 +48,13 @@ module Content
     end
 
     def classes
-      ["hero", hero_bg_color].tap do |c|
-        c << "blend-content" if hero_blend_content
-        c << "content-#{hero_content_width}"
-        c << "rebrand" if helpers.rebrand?
-      end
+      token_list({
+        "hero" => true,
+        hero_bg_color => true,
+        "blend-content" => hero_blend_content,
+        "content-#{hero_content_width}" => true,
+        "rebrand" => helpers.rebrand?,
+      })
     end
 
     def render?

@@ -512,7 +512,8 @@ body.rebrand > header {
             }
           }
         }
-      } // mobile
+      }
+      // mobile
 
       // desktop only
       @include mq($from: desktop) {
@@ -529,22 +530,56 @@ body.rebrand > header {
           &.selected > .menu-link {
             border-bottom: solid 4px $gitpurple;
           }
-        } // li
-      } // desktop
-    } // ol.primary
-
-    ol.category-links-list {
-      // mobile and tablet
-      @include mq($until: desktop) {
-        > li.selected {
-          background: $gitpurple;
         }
-
-        > li {
-          border-left: solid $gitpurple 4px;
-        }
+        // li
       }
-    }
+      // desktop
+
+      ol.category-links-list {
+        // mobile and tablet
+        @include mq($until: desktop) {
+          > li.selected {
+            background: $gitpurple;
+
+            > .menu-link {
+              color: $white;
+
+              &:focus {
+                color: $white;
+              }
+            }
+          }
+
+          > li {
+            border-left: solid $gitpurple 4px;
+
+            > .menu-link {
+              > .nav-icon {
+                &__contracted {
+                  background-image: url("../images/navigation/arrow-down-black.svg");
+                }
+
+                &__expanded {
+                  background-image: url("../images/navigation/arrow-up-white.svg");
+                }
+              }
+
+              &:focus {
+                .nav-icon {
+                  &__contracted {
+                    background-image: url("../images/navigation/arrow-down-black.svg");
+                  }
+
+                  &__expanded {
+                    background-image: url("../images/navigation/arrow-up-white.svg");
+                  }
+                }
+              }
+            }
+          }
+        } // mobile and tablet
+      } // ol.category-links-list
+    } // ol.primary
 
     // desktop and wide screen
     @include mq($from: desktop) {
@@ -576,7 +611,6 @@ body.rebrand > header {
           }
         }
       } // ol.category-links-list, ol.page-links-list
-
     } // from desktop, secondary nav
   }
 }

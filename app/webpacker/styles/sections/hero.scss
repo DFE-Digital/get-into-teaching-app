@@ -442,21 +442,24 @@ $mobile-cutoff: 800px;
         text-align: center;
       }
 
-        h1 {
+      h1 {
+        padding-bottom: 0.25rem;
+        margin-bottom: 0.35rem;
+
         @include mq($until: tablet) {
-          font-size: 2.5rem;
+          font-size: 2rem;
         }
 
         @include mq($from: tablet) {
-          font-size: 4rem;
+          font-size: 3.5rem;
         }
 
         @include mq($from: desktop) {
-          font-size: 5rem;
+          font-size: 4.5rem;
         }
 
         @include mq($from: wide) {
-          font-size: 6rem;
+          font-size: 5.5rem;
         }
       }
     }
@@ -464,7 +467,7 @@ $mobile-cutoff: 800px;
     .hero__subtitle {
       color: $white;
       font-weight: 500;
-      margin-bottom: 2.5em;
+      margin-bottom: 4em;
       margin-top: 0;
 
       @include mq($until: tablet) {
