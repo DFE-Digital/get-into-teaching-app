@@ -121,8 +121,8 @@ provider_groups:
       link: "https://inspiringleadersscitt.com/aor/"
       name: "Dirk Smith"
       email: "info@iltoday.co.uk"
-      telephone: "0115 9891915"
-      international_phone: "+441159891915"
+      telephone: "0115 667 2150"
+      international_phone: "+441156672150"
       
     - header: "Leicester and Leicestershire SCITT"
       link: "https://www.leicestershiresecondaryscitt.org/"
@@ -130,13 +130,6 @@ provider_groups:
       email: "admin@leicesterscitt.co.uk"
       telephone: "0116 254 3187"
       international_phone: "+441162543187"
-      
-    - header: "Lincoln Bishop University"
-      link: "https://www.lincolnbishop.ac.uk/courses/assessment-only-route-to-qts-primary-and-secondary"
-      name: "Chris Davison"
-      email: "christopher.davison@bishopg.ac.uk"
-      telephone: "07961 078589"
-      international_phone: "+447961078589"
       
     - header: "Lincolnshire SCITT"
       link: "https://www.lincolnshirescitt.co.uk/aor"
@@ -181,6 +174,13 @@ provider_groups:
       email: "assessmentonly@ete.org.uk"
       telephone: "01268 988580"
       international_phone: "+441268988580"
+      
+    - header: "Inspiring Leaders"
+      link: "https://inspiringleadersscitt.com/aor/"
+      name: "Dirk Smith"
+      email: "info@iltoday.co.uk"
+      telephone: "0115 667 2150"
+      international_phone: "+441156672150"
       
     - header: "London School of Jewish Studies"
       link: "https://www.lsjs.ac.uk/assessment-only"
@@ -712,6 +712,13 @@ provider_groups:
       telephone: "01562 886213"
       international_phone: "+441562886213"
       
+    - header: "Inspiring Leaders"
+      link: "https://inspiringleadersscitt.com/aor/"
+      name: "Dirk Smith"
+      email: "info@iltoday.co.uk"
+      telephone: "0115 667 2150"
+      international_phone: "+441156672150"
+      
     - header: "Staffordshire University"
       link: "https://www.staffs.ac.uk/course/assessment-only-leading-to-qts"
       name: "Mark Barlow"
@@ -762,6 +769,13 @@ provider_groups:
       email: "assessmentonly@gorsescitt.org.uk"
       telephone: "0113 487 1777"
       international_phone: "+441134871777"
+      
+    - header: "Inspiring Leaders"
+      link: "https://inspiringleadersscitt.com/aor/"
+      name: "Dirk Smith"
+      email: "info@iltoday.co.uk"
+      telephone: "0115 667 2150"
+      international_phone: "+441156672150"
       
     - header: "Leeds Trinity University"
       link: "https://www.leedstrinity.ac.uk/courses/cpd-and-short-courses/assessment-only/"
