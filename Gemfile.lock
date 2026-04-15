@@ -693,8 +693,7 @@ GEM
     validates_timeliness (8.0.0)
       activemodel (>= 8.0.0, < 9)
       timeliness (>= 0.3.10, < 1)
-    vcr (6.3.1)
-      base64
+    vcr (6.4.0)
     victor (0.3.4)
     view_component (3.21.0)
       activesupport (>= 5.2.0, < 8.1)
