@@ -1,6 +1,6 @@
 <%= render Content::LandingHeroComponent.new(
   title: "Find your route into teaching",
-  colour: "pastel yellow-yellow",
+  colour: "pastel gitlilac-gitlilac",
 ) %>
 
 <%= tag.div id: "routes_into_teaching_undergraduate_degree",
@@ -43,7 +43,7 @@
 
   <div class="row inset">
     <div class="col col-845">
-      <h2 class="heading--box-blue">Your options</h2>
+      <h2 class="heading--box-gitlilac">Your options</h2>
 
       <% if @results.any? %>
         <p>Based on your answers, you may be eligible for the following options:</p>
@@ -72,7 +72,7 @@
   <% if no_degree? %>
     <div class="row inset">
       <div class="col col-845">
-        <h2 class="heading--box-blue">Other routes into teaching</h2>
+        <h2 class="heading--box-gitlilac">Other routes into teaching</h2>
         <p>You do not need a degree and QTS to <%= link_to "teach in further education", "/life-as-a-teacher/age-groups-and-specialisms/further-education-teachers" %> or to <%= link_to "teach in early years", "/life-as-a-teacher/age-groups-and-specialisms/early-years-teachers" %>. So if you want to become a teacher but are not able to get a degree, you can explore these options.
       </div>
     </div>
@@ -80,7 +80,7 @@
 
   <div class="row inset">
     <div class="col col-845">
-      <h2 class="heading--box-blue">Next steps</h2>
+      <h2 class="heading--box-gitlilac">Next steps</h2>
 
       <%= render CallsToAction::SimpleComponent.new(icon: "icon-arrow-black") do %>
         <h3 class="call-to-action__heading">Get personalised guidance</h3>

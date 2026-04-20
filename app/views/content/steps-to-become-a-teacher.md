@@ -1,5 +1,6 @@
 ---
   title: "How to become a teacher"
+  title_bg_color: gitpurple
   heading: "How to become a teacher"
   layout: "layouts/steps"
   description: |-

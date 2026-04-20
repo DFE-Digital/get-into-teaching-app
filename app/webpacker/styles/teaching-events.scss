@@ -431,6 +431,14 @@ $icon-size: 3rem;
       }
     }
 
+    &.gitpurple {
+      background: $gitpurple;
+
+      .button:focus {
+        outline: 1px solid black;
+      }
+    }
+
     .heading {
       z-index: 5;
 
@@ -445,6 +453,7 @@ $icon-size: 3rem;
     }
 
     .event-details {
+      color: $white;
       padding-block: 1.5em;
       display: flex;
       gap: 1em;

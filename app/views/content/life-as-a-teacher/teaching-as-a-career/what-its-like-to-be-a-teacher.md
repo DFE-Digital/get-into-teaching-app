@@ -6,7 +6,7 @@ title_paragraph: |-
 description: |-
     Find out what it's like to be a teacher including the kind of things you'll do each day.
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 image:  "static/images/content/hero-images/geography.jpg"
 content:
   - "content/life-as-a-teacher/teaching-as-a-career/what-its-like-to-be-a-teacher/header" 

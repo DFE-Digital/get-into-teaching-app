@@ -125,6 +125,14 @@
   @include box-heading($yellow-dark, $black);
 }
 
+.heading--box-gitlilac {
+  @include box-heading($gitlilac, $black);
+}
+
+.heading--box-gitpurple {
+  @include box-heading($gitpurple, $white);
+}
+
 .heading--box-white {
   @include box-heading($white, $black);
 }
