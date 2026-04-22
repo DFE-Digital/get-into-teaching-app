@@ -338,7 +338,7 @@ jobs:
         uses: DFE-Digital/github-actions/set-up-environment@master
 
       - name: Setup sonarqube
-        uses: warchant/setup-sonar-scanner@v10
+        uses: warchant/setup-sonar-scanner@911ef81b14b267a261d70ac94e43d3c822a709d5 # Pinned at v10
         with:
           version: 5.0.2.4997
 
@@ -425,7 +425,7 @@ jobs:
           KEY_VAULT:         ${{ secrets[format('KEY_VAULT{0}', env.SECRET_SUFFIX)] }}
 
       - name: Post sticky pull request comment
-        uses: marocchino/sticky-pull-request-comment@v3
+        uses: marocchino/sticky-pull-request-comment@0ea0beb66eb9baf113663a64ec522f60e49231c0 # Pinned at v3.0.4
         with:
           recreate: true
           header: AKS
@@ -433,7 +433,7 @@ jobs:
 
       - name: Add Review Label
         if: contains(github.event.pull_request.user.login, 'dependabot') == false
-        uses: actions-ecosystem/action-add-labels@v1
+        uses: actions-ecosystem/action-add-labels@bd52874380e3909a1ac983768df6976535ece7f8 # Pinned at v1.1.3
         with:
           labels: Review
 
@@ -676,7 +676,7 @@ jobs:
 
       - name: Publish Release
         if: steps.tag_id.outputs.release_id
-        uses: eregon/publish-release@v1
+        uses: eregon/publish-release@01df127f5e9a3c26935118e22e738d95b59d10ce # Pinned at v1.0.6 NOTE:This repo has been archived May 29 2025!
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
