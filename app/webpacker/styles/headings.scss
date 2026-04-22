@@ -177,6 +177,10 @@
   @include highlight-text($green, $black);
 }
 
+.heading--highlight-gitlilac {
+  @include highlight-text($gitlilac, $black);
+}
+
 h1 {
   @extend .heading-xxl;
 }
