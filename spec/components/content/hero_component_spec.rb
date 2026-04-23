@@ -122,12 +122,12 @@ describe Content::HeroComponent, type: "component" do
 
     describe "rendering a title paragraph" do
       subject! do
-        render_inline(component) { sample }
+        render_inline(component)
       end
 
       let(:sample) { "Some paragraph text" }
       let(:component) do
-        described_class.new(front_matter.merge(title_paragraph: sample))
+        described_class.new(front_matter.merge("title_paragraph" => sample))
       end
 
       specify "the paragraph should be rendered by the component" do

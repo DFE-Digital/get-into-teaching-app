@@ -1,11 +1,13 @@
 <%= render Footer::CookieAcceptanceComponent.new %>
 <footer class="site-footer">
   <div class="limit-content-width">
-    <h2 class="heading-m heading--box-blue heading--overlap">Talk to us</h2>
+    <%= tag.h2 class: "heading-m heading--box-#{helpers.rebrand? ? 'gitlilac' : 'blue'} heading--overlap" do %>
+      Talk to us
+    <% end %>
     <section class="talk-to-us">
       <div class="talk-to-us__content">
         <div class="talk-to-us__icon-section">
-          <i class="icon-call icon--on-yellow"></i>
+          <%= tag.i class: helpers.rebrand? ? "icon-call-white icon--on-gitpurple" : "icon-call icon--on-yellow" %>
           <div>
             <h3 class="heading-s">Call our support team</h3>
             <a href="tel:08003892500" class="telephone link">0800 389 2500</a>
@@ -13,7 +15,7 @@
         </div>
         <% unless helpers.privacy_page?(request.path) %>
           <div class="talk-to-us__icon-section">
-            <i class="icon-chat icon--on-yellow"></i>
+            <%= tag.i class: helpers.rebrand? ? "icon-chat-white icon--on-gitpurple" : "icon-chat icon--on-yellow" %>
             <div>
               <h3 class="heading-s">Chat to our support team</h3>
               <%= render ChatComponent.new %>
