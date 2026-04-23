@@ -1,11 +1,11 @@
 <%= render Footer::CookieAcceptanceComponent.new %>
 <footer class="site-footer">
   <div class="limit-content-width">
-    <h2 class="heading-m heading--box-blue heading--overlap">Talk to us</h2>
+    <h2 class="heading-m heading--box-gitlilac heading--overlap">Talk to us</h2>
     <section class="talk-to-us">
       <div class="talk-to-us__content">
         <div class="talk-to-us__icon-section">
-          <i class="icon-call icon--on-yellow"></i>
+          <i class="icon-call-white icon--on-gitpurple"></i>
           <div>
             <h3 class="heading-s">Call our support team</h3>
             <a href="tel:08003892500" class="telephone link">0800 389 2500</a>
@@ -13,7 +13,7 @@
         </div>
         <% unless helpers.privacy_page?(request.path) %>
           <div class="talk-to-us__icon-section">
-            <i class="icon-chat icon--on-yellow"></i>
+            <i class="icon-chat-white icon--on-gitpurple"></i>
             <div>
               <h3 class="heading-s">Chat to our support team</h3>
               <%= render ChatComponent.new %>

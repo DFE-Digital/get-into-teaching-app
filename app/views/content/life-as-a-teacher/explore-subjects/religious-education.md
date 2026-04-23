@@ -7,7 +7,7 @@ title_paragraph: |-
 description: |-
     Find out how to become a religious education teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 image: "static/images/content/hero-images/0011.jpg"
 content:
   - "content/shared/subject-pages/header"

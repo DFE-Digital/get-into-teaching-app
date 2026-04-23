@@ -101,6 +101,10 @@
   @include box-heading(transparent, $black);
 }
 
+.heading--box-transparent-white {
+  @include box-heading(transparent, $white);
+}
+
 .heading--box-green {
   @include box-heading($green, $black);
 }
@@ -123,6 +127,14 @@
 
 .heading--box-yellow {
   @include box-heading($yellow-dark, $black);
+}
+
+.heading--box-gitlilac {
+  @include box-heading($gitlilac, $black);
+}
+
+.heading--box-gitpurple {
+  @include box-heading($gitpurple, $white);
 }
 
 .heading--box-white {
@@ -167,6 +179,10 @@
 
 .heading--highlight-green {
   @include highlight-text($green, $black);
+}
+
+.heading--highlight-gitlilac {
+  @include highlight-text($gitlilac, $black);
 }
 
 h1 {

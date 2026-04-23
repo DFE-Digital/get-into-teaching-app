@@ -6,7 +6,7 @@ title_paragraph: |-
 description: |-
     Find out how to become a history teacher, including what you'll teach and what funding is available to help you train.
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 image: "static/images/content/hero-images/teacher2.jpg"
 content:
   - "content/shared/subject-pages/header"

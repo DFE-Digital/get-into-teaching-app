@@ -827,7 +827,7 @@ title_paragraph: |-
 description: |-
     Find out how to become a chemistry teacher, including what you'll teach and what funding is available to help you train.
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 image: "static/images/content/hero-images/chemistry.jpg"
 content:
   - "content/shared/subject-pages/header"
@@ -984,7 +984,7 @@ title_paragraph: |-
 description: |-
     Find out how to become a English teacher, including what you'll teach and what funding is available to help you train.
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 image: "static/images/content/hero-images/0032.jpg"
 
 content:

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: "pages#show", page: "home"
+  root to: "pages#home", page: "home"
 
   get "/robots.txt", to: "robots#show"
   get "/events/not-available", to: "events#not_available"
