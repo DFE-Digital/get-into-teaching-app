@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   class InvalidPrivacyPolicy < RuntimeError; end
 
   before_action :init_funding_widget, only: %i[scholarships_and_bursaries scholarships_and_bursaries_search]
+  before_action :split_test_branding, only: :home
 
   MISSING_TEMPLATE_EXCEPTIONS = [
     ActionView::MissingTemplate,
@@ -11,6 +12,8 @@ class PagesController < ApplicationController
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}
   PRIVACY_POLICY_ID_FILTER = %r{^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$}
+
+  BRANDING = %w[rebrand current].freeze
 
   caches_page :cookies
   caches_page :show
@@ -56,6 +59,9 @@ class PagesController < ApplicationController
   end
 
   # Avoid caching by rendering these pages manually:
+  def home
+    render_page("home")
+  end
 
   def campus_mailing_list
     render_page("landing/campus-mailing-list")
@@ -103,6 +109,19 @@ private
     else
       @funding_widget = FundingWidget.new
     end
+  end
+
+  def split_test_branding
+    return unless helpers.split_test_enabled?
+
+    unless BRANDING.include?(helpers.request_branding)
+      redirect_to(action: action_name,
+                  params: request.params.merge(branding: branding).except("page", "action", "controller", "path"))
+    end
+  end
+
+  def branding
+    BRANDING.sample
   end
 
   def render_page(path)
