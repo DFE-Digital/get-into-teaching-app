@@ -153,10 +153,6 @@
   @include box-heading($green, $black);
 }
 
-.heading--box-gitlilac {
-  @include box-heading($gitlilac, $black);
-}
-
 .heading--box-padding-l {
   padding: .5em .7em;
 }
