@@ -12,16 +12,16 @@ module Content
     end
 
     def before_render
-        set_value(:@title, @front_matter, %w[heading title])
-        set_value(:@subtitle, @front_matter, "subtitle")
-        set_value(:@subtitle_link, @front_matter, "subtitle_link")
-        set_value(:@subtitle_button, @front_matter, "subtitle_button")
-        set_value(:@image, @front_matter, "image")
-        set_value(:@paragraph, @front_matter, "title_paragraph")
-        set_value(:@title_bg_color, @front_matter, "title_bg_color", default: "gitlilac")
-        set_value(:@hero_bg_color, @front_matter, "hero_bg_color", default: "grey")
-        set_value(:@hero_blend_content, @front_matter, "hero_blend_content", default: false)
-        set_value(:@hero_content_width, @front_matter, "hero_content_width", default: "even")
+      set_value(:@title, @front_matter, %w[heading title])
+      set_value(:@subtitle, @front_matter, "subtitle")
+      set_value(:@subtitle_link, @front_matter, "subtitle_link")
+      set_value(:@subtitle_button, @front_matter, "subtitle_button")
+      set_value(:@image, @front_matter, "image")
+      set_value(:@paragraph, @front_matter, "title_paragraph")
+      set_value(:@title_bg_color, @front_matter, "title_bg_color", default: "gitlilac")
+      set_value(:@hero_bg_color, @front_matter, "hero_bg_color", default: "grey")
+      set_value(:@hero_blend_content, @front_matter, "hero_blend_content", default: false)
+      set_value(:@hero_content_width, @front_matter, "hero_content_width", default: "even")
     end
 
     def set_value(name, front_matter, fm_keys, default: nil, rebrand: true)
