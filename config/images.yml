@@ -191,7 +191,7 @@
   alt: "An art teacher showing a pupil how to use digital art software on a computer"
   variants:
     - "static/images/content/hero-images/art-digital-painting--mobile.jpg"
-    - "static/images/content/hero-images/art-digital-painting--tablet.jpg"    
+    - "static/images/content/hero-images/art-digital-painting--tablet.jpg"
 
 "static/images/content/hero-images/art-easels.jpg":
   alt: "An art teacher showing pupils how to paint a bowl of fruit"
@@ -209,7 +209,7 @@
   alt: "A maths teacher working alongside a pupil"
   variants:
     - "static/images/content/hero-images/maths-1-1-2--mobile.jpg"
-    - "static/images/content/hero-images/maths-1-1-2--tablet.jpg"    
+    - "static/images/content/hero-images/maths-1-1-2--tablet.jpg"
 
 "static/images/content/hero-images/maths-pythagoras.jpg":
   alt: "A maths teacher demonstrating maths theory to pupils"
@@ -270,6 +270,12 @@
   variants:
     - "static/images/content/hero-images/physics-van-de-graaff--mobile.jpg"
     - "static/images/content/hero-images/physics-van-de-graaff--tablet.jpg"
+
+"static/images/content/hero-images/rebrand-2026/hero-image.png":
+  alt: ""
+
+"static/images/content/hero-images/rebrand-2026/hero-image-margin.png":
+  alt: ""
 
 "static/images/route-hero.png":
   alt: ""

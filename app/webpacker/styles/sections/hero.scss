@@ -431,3 +431,75 @@ $mobile-cutoff: 800px;
     object-fit: cover;
   }
 }
+
+.hero.rebrand {
+  &.content-wide {
+    .hero__title {
+      font-family: Montserrat, sans-serif;
+      font-weight: 700;
+
+      @include mq($until: tablet) {
+        grid-column-end: -1;
+        text-align: center;
+      }
+
+      h1 {
+        padding-bottom: 0.75rem;
+        margin-bottom: 0.35rem;
+
+        @include mq($until: tablet) {
+          font-size: 2.5rem;
+        }
+
+        @include mq($from: tablet) {
+          font-size: 4.5rem;
+        }
+
+        @include mq($from: desktop) {
+          font-size: 5.25rem;
+        }
+
+        @include mq($from: wide) {
+          font-size: 6rem;
+        }
+      }
+    }
+
+    .hero__subtitle {
+      color: $white;
+      font-weight: 500;
+      margin-bottom: 4em;
+      margin-top: 0;
+
+      @include mq($until: tablet) {
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      @include mq($from: tablet) {
+        margin-left: 1em;
+      }
+
+      @include mq($from: desktop) {
+        margin-left: 1.5em;
+      }
+
+      @include mq($from: wide) {
+        margin-left: 2em;
+      }
+    }
+
+    picture {
+      @include mq($until: tablet) {
+        grid-column-start: -5;
+      }
+
+      img {
+        object-fit: contain;
+        margin-right: auto;
+        object-position: 50% 30%;
+      }
+    }
+  }
+}

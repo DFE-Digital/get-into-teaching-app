@@ -354,3 +354,31 @@ body a.govuk-back-link {
     display: inline-block;
   }
 }
+
+body.rebrand {
+  .link {
+    &:focus {
+      background-color: $grey;
+      box-shadow: 0 4px $gitpurple;
+      color: $black;
+    }
+  }
+
+  .link--black {
+    &:focus {
+      background-color: $grey;
+      box-shadow: 0 4px $gitpurple;
+      color: $black;
+    }
+  }
+
+  // passes accessibility contrast check on grey/yellow background
+  .link--dark {
+    color: $black;
+
+    &:focus {
+      color: $black;
+    }
+  }
+
+}

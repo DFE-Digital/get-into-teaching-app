@@ -296,6 +296,13 @@ provider_groups:
       
       
       
+    - header: "Middlesex University"
+      link: "https://www.mdx.ac.uk/courses/postgraduate/qualified-teacher-status-qts-primary-and-secondary/"
+      name: "Dr Victoria Brook"
+      email: "AO@mdx.ac.uk"
+      telephone: "020 8411 5000"
+      international_phone: "+442084115000"
+      
     - header: "Sutton SCITT"
       link: "https://www.suttonscitt.org.uk/teacher-training-programmes-surrey/assessment-only"
       name: "Rachel Fagan"

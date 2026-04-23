@@ -101,6 +101,10 @@
   @include box-heading(transparent, $black);
 }
 
+.heading--box-transparent-white {
+  @include box-heading(transparent, $white);
+}
+
 .heading--box-green {
   @include box-heading($green, $black);
 }
@@ -147,6 +151,10 @@
 
 .heading--box-black-on-green {
   @include box-heading($green, $black);
+}
+
+.heading--box-gitlilac {
+  @include box-heading($gitlilac, $black);
 }
 
 .heading--box-padding-l {
