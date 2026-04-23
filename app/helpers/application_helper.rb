@@ -1,17 +1,4 @@
 module ApplicationHelper
-  def rebrand?
-    # Only the homepage should be rebranded
-    current_page?(root_path) && request_branding == "rebrand"
-  end
-
-  def request_branding
-    request.params["branding"]
-  end
-
-  def split_test_enabled?
-    ENV.fetch("SPLIT_TEST", nil) =~ /TRUE/i
-  end
-
   def body_tag(attributes = {}, &block)
     attributes[:data] ||= {}
 

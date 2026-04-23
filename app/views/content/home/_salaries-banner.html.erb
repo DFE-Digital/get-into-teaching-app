@@ -7,12 +7,10 @@
   <% end %>
 </div>
 
-<% if rebrand? %>
-  <section class="banner">
-    <%= render CallsToAction::SimpleComponent.new(icon: "icon-calendar") do %>
-      <h2 class="call-to-action__heading">Training provider events</h2>
-      <p>Get advice on training to teach, talk to teachers, meet training course providers and connect with others considering a career in teaching.</p>
-      <p><%= link_to("Find out more about training provider events", page_path("events")) %>.</p>
-    <% end %>
-  </section>
-<% end %>
+<section class="banner">
+  <%= render CallsToAction::SimpleComponent.new(icon: "icon-calendar") do %>
+    <h2 class="call-to-action__heading">Training provider events</h2>
+    <p>Get advice on training to teach, talk to teachers, meet training course providers and connect with others considering a career in teaching.</p>
+    <p><%= link_to("Find out more about training provider events", page_path("events")) %>.</p>
+  <% end %>
+</section>

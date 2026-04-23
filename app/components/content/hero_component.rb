@@ -12,21 +12,19 @@ module Content
     end
 
     def before_render
-      helpers.rebrand?.tap do |rebrand|
-        set_value(:@title, @front_matter, %w[heading title], rebrand: rebrand)
-        set_value(:@subtitle, @front_matter, "subtitle", rebrand: rebrand)
-        set_value(:@subtitle_link, @front_matter, "subtitle_link", rebrand: rebrand)
-        set_value(:@subtitle_button, @front_matter, "subtitle_button", rebrand: rebrand)
-        set_value(:@image, @front_matter, "image", rebrand: rebrand)
-        set_value(:@paragraph, @front_matter, "title_paragraph", rebrand: rebrand)
-        set_value(:@title_bg_color, @front_matter, "title_bg_color", default: "gitlilac", rebrand: rebrand)
-        set_value(:@hero_bg_color, @front_matter, "hero_bg_color", default: "grey", rebrand: rebrand)
-        set_value(:@hero_blend_content, @front_matter, "hero_blend_content", default: false, rebrand: rebrand)
-        set_value(:@hero_content_width, @front_matter, "hero_content_width", default: "even", rebrand: rebrand)
-      end
+        set_value(:@title, @front_matter, %w[heading title])
+        set_value(:@subtitle, @front_matter, "subtitle")
+        set_value(:@subtitle_link, @front_matter, "subtitle_link")
+        set_value(:@subtitle_button, @front_matter, "subtitle_button")
+        set_value(:@image, @front_matter, "image")
+        set_value(:@paragraph, @front_matter, "title_paragraph")
+        set_value(:@title_bg_color, @front_matter, "title_bg_color", default: "gitlilac")
+        set_value(:@hero_bg_color, @front_matter, "hero_bg_color", default: "grey")
+        set_value(:@hero_blend_content, @front_matter, "hero_blend_content", default: false)
+        set_value(:@hero_content_width, @front_matter, "hero_content_width", default: "even")
     end
 
-    def set_value(name, front_matter, fm_keys, default: nil, rebrand: false)
+    def set_value(name, front_matter, fm_keys, default: nil, rebrand: true)
       return if front_matter.blank?
 
       if rebrand && front_matter["rebrand"].present? && set_value(name, front_matter["rebrand"], fm_keys)
@@ -52,7 +50,7 @@ module Content
         hero_bg_color => true,
         "blend-content" => hero_blend_content,
         "content-#{hero_content_width}" => true,
-        "rebrand" => helpers.rebrand?,
+        "rebrand" => true,
       })
     end
 
