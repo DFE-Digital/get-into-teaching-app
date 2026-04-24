@@ -187,10 +187,12 @@
 
 h1 {
   @extend .heading-xxl;
+  font-family: Montserrat, sans-serif;
 }
 
 h2 {
   @extend .heading-xl;
+  font-family: Montserrat, sans-serif;
 
   > i.icon {
     margin-right: .3em;
