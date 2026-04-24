@@ -51,7 +51,7 @@
 
 .link {
   @include font;
-  color: $blue-dark;
+  color: $gitpurple;
   line-height: 1.5;
   text-underline-offset: .08em;
   box-shadow: none;
@@ -62,8 +62,8 @@
 
   &:focus {
     color: $white;
-    background-color: $black;
-    box-shadow: 0 4px $pink;
+    background-color: $gitpurple;
+    box-shadow: 0 4px $gitlilac;
     outline: 4px solid transparent;
     text-decoration: none;
 
@@ -150,6 +150,21 @@ ol.primary > li {
 
   &:focus {
     @include highlight-text($black, $white);
+  }
+}
+
+.link--gitlilac {
+  @include highlight-text($gitlilac, $black);
+
+  &::after {
+    border-color: $gitlilac;
+  }
+
+  &:hover {
+    text-decoration-thickness: max(3px, .1875rem, .12em)};
+
+  &:focus {
+    @include highlight-text($gitpurple, $white);
   }
 }
 
