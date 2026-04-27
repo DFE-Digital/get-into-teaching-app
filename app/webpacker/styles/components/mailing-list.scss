@@ -99,3 +99,15 @@
     }
   }
 }
+
+body.rebrand {
+  .home-mailing-list {
+    &::before {
+      border: none;
+    }
+
+    form {
+      margin-top: 0;
+    }
+  }
+}

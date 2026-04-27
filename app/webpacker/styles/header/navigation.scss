@@ -469,4 +469,148 @@ body > header {
   } // primary navigation
 }
 
+body.rebrand > header {
+  #primary-navigation {
+    ol.primary {
 
+      // general (mobile and desktop)
+      .nav-icon {
+        &__contracted {
+          background-image: url("../images/navigation/arrow-down-gitpurple.svg");
+        }
+
+        &__expanded {
+          background-image: url("../images/navigation/arrow-up-gitpurple.svg");
+        }
+      }
+
+      // mobile only
+      @include mq($until: desktop) {
+        // root level item only
+        > li {
+          > .menu-link {
+            .nav-icon {
+              &__contracted {
+                background-image: url("../images/navigation/arrow-down-gitpurple.svg");
+              }
+
+              &__expanded {
+                background-image: url("../images/navigation/arrow-up-gitpurple.svg");
+              }
+            }
+
+            &:focus {
+              .nav-icon {
+                &__contracted {
+                  background-image: url("../images/navigation/arrow-down-gitpurple.svg");
+                }
+
+                &__expanded {
+                  background-image: url("../images/navigation/arrow-up-gitpurple.svg");
+                }
+              }
+            }
+          }
+        }
+      }
+      // mobile
+
+      // desktop only
+      @include mq($from: desktop) {
+        > li {
+          > .menu-link {
+            padding-bottom: 20px;
+            margin: 0.75em 0 0;
+          }
+
+          > .menu-link:focus {
+            border-bottom: solid 4px $gitpurple;
+          }
+
+          &.selected > .menu-link {
+            border-bottom: solid 4px $gitpurple;
+          }
+        }
+        // li
+      }
+      // desktop
+
+      ol.category-links-list {
+        // mobile and tablet
+        @include mq($until: desktop) {
+          > li.selected {
+            background: $gitpurple;
+
+            > .menu-link {
+              color: $white;
+
+              &:focus {
+                color: $white;
+              }
+            }
+          }
+
+          > li {
+            border-left: solid $gitpurple 4px;
+
+            > .menu-link {
+              > .nav-icon {
+                &__contracted {
+                  background-image: url("../images/navigation/arrow-down-black.svg");
+                }
+
+                &__expanded {
+                  background-image: url("../images/navigation/arrow-up-white.svg");
+                }
+              }
+
+              &:focus {
+                .nav-icon {
+                  &__contracted {
+                    background-image: url("../images/navigation/arrow-down-black.svg");
+                  }
+
+                  &__expanded {
+                    background-image: url("../images/navigation/arrow-up-white.svg");
+                  }
+                }
+              }
+            }
+          }
+        } // mobile and tablet
+      } // ol.category-links-list
+    } // ol.primary
+
+    // desktop and wide screen
+    @include mq($from: desktop) {
+      ol.category-links-list, ol.page-links-list {
+        > li {
+          .menu-link {
+            &:focus {
+              .nav-icon {
+                &__contracted, &__expanded {
+                  background-image: url("../images/navigation/arrow-right-black.svg");
+                }
+              }
+            }
+          }
+        }
+
+        > li.selected > .menu-link {
+          border-left: solid $gitpurple 4px;
+
+          &:focus {
+            color: $black;
+            background: $white;
+
+            .nav-icon {
+              &__contracted, &__expanded {
+                background-image: url("../images/navigation/arrow-right-black.svg");
+              }
+            }
+          }
+        }
+      } // ol.category-links-list, ol.page-links-list
+    } // from desktop, secondary nav
+  }
+}

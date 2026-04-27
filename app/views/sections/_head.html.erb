@@ -5,7 +5,16 @@
   <%= content_for?(:canonical) ? yield(:canonical) : canonical_tag %>
   <%= tag.meta(name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no') %>
   <%= tag.meta(name: "google-site-verification", content: "uoqqF4yGEjHx9klftx3ch2fCBpmgI6hHYBS69w17_-g") %>
-  <%= tag.link(rel: 'icon', type: 'image/x-icon', href: '/favicon.ico') %>
+  <% if rebrand? %>
+    <%= tag.link(rel: 'icon', type: 'image/x-icon', href: '/rebrand-2026/favicon.ico') %>
+    <link rel="apple-touch-icon" sizes="180x180" href="/rebrand-2026/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/rebrand-2026/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/rebrand-2026/favicon-16x16.png">
+    <link rel="manifest" href="/rebrand-2026/site.webmanifest">
+  <% else %>
+    <%= tag.link(rel: 'icon', type: 'image/x-icon', href: '/favicon.ico') %>
+  <% end %>
+
   <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
   <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
   <% js_packs = %w[clarity sentry gtm js_enabled lazy_images govuk_frontend application] %>
