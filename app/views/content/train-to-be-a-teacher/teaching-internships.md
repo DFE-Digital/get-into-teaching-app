@@ -18,7 +18,7 @@ provider_groups:
   East Midlands:
     providers:
       - header: "Academy Transformation Trust Institute"
-        link: "https://www.academytransformationtrust.co.uk/our-academies/"
+        link: "https://www.academytransformationtrust.co.uk/institute/initial-teacher-training/paid-teaching-internships/"
         applications: "Open"
         subjects: "chemistry, computing, design and technology, maths, physics, languages"
         areas: "Nottinghamshire"
@@ -90,7 +90,7 @@ provider_groups:
   East of England:
     providers:
       - header: "Academy Transformation Trust Institute"
-        link: "https://www.academytransformationtrust.co.uk/our-academies/"
+        link: "https://www.academytransformationtrust.co.uk/institute/initial-teacher-training/paid-teaching-internships/"
         applications: "Open"
         subjects: "chemistry, computing, design and technology, maths, physics, languages"
         areas: "Norfolk, Suffolk"
@@ -385,7 +385,7 @@ provider_groups:
   South East:
     providers:
       - header: "Academy Transformation Trust Institute"
-        link: "https://www.academytransformationtrust.co.uk/our-academies/"
+        link: "https://www.academytransformationtrust.co.uk/institute/initial-teacher-training/paid-teaching-internships/"
         applications: "Open"
         subjects: "chemistry, computing, design and technology, maths, physics, languages"
         areas: "Thurrock"
@@ -564,7 +564,7 @@ provider_groups:
   West Midlands:
     providers:
       - header: "Academy Transformation Trust Institute"
-        link: "https://www.academytransformationtrust.co.uk/our-academies/"
+        link: "https://www.academytransformationtrust.co.uk/institute/initial-teacher-training/paid-teaching-internships/"
         applications: "Open"
         subjects: "chemistry, computing, design and technology, maths, physics, languages"
         areas: "Sandwell, Warwickshire, Walsall."
