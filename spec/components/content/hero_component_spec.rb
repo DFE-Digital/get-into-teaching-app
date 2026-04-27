@@ -44,7 +44,7 @@ describe Content::HeroComponent, type: "component" do
 
     describe "title and subtitle" do
       specify "renders the title in a h1 element with a yellow background" do
-        expect(page).to have_css(".hero__title > h1.heading--box-yellow", text: front_matter["title"])
+        expect(page).to have_css(".hero__title > h1.heading--box-gitlilac", text: front_matter["title"])
       end
 
       context "when the heading overrides the title" do
@@ -122,12 +122,12 @@ describe Content::HeroComponent, type: "component" do
 
     describe "rendering a title paragraph" do
       subject! do
-        render_inline(component) { sample }
+        render_inline(component)
       end
 
       let(:sample) { "Some paragraph text" }
       let(:component) do
-        described_class.new(front_matter.merge(title_paragraph: sample))
+        described_class.new(front_matter.merge("title_paragraph" => sample))
       end
 
       specify "the paragraph should be rendered by the component" do
