@@ -77,6 +77,15 @@ $space-between-sections: 3.7em;
   width: 100%;
 
   .image-block {
+
+    .image-background {
+      background-color: $gitbluetint;
+      //padding-left: 30%;
+      //padding-right: 30%;
+      horiz-align: center;
+      margin: 0;
+
+    }
     img {
       width: 100%;
       height: auto;
@@ -90,6 +99,7 @@ $space-between-sections: 3.7em;
         @extend .link--black;
       }
     }
+
   }
 
   @include mq($from: tablet) {
