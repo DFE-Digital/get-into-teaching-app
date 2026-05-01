@@ -2,11 +2,11 @@
 title: "Fees and financial support for non-UK trainee teachers"
 subcategory: If you want to train to teach
 description: |-
-  Learn more about bursaries and scholarships for non-UK teacher trainees.
+  Learn more about fees and financial support for non-UK teacher trainees.
 promo_content:
 navigation: 20.20
 navigation_title: Fees and financial support for non-UK trainee teachers
-navigation_description: Learn more about teacher training fees in England and financial help for physics and languages trainees.
+navigation_description: Learn more about teacher training fees in England and financial help.
 image: "static/images/content/hero-images/peer-to-peer-guidance.jpg"
 backlink: "../../"
 expander:
@@ -23,7 +23,7 @@ cta_arrow_link:
     link_text: "Check your eligibility and apply for student loans"
   bursaries:
     link_target: "/funding-and-support/scholarships-and-bursaries"
-    link_text: "Learn more about bursaries and scholarships for physics and languages"
+    link_text: "Learn more about bursaries and scholarships"
   salaried:
     link_target: "/funding-and-support/salaried-teacher-training"
     link_text: "Find out more about salaried teacher training"
@@ -32,8 +32,6 @@ cta_arrow_link:
 Most non-UK citizens will not be eligible for financial support from the UK government to help with teacher training.
 
 If one of the following applies to you, you may be able to get some support:
-
-* you are training to teach languages or physics
 
 * you have some type of settled status in the UK, for example, through the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
 
@@ -45,9 +43,7 @@ Support may include:
 
 * a reduction in fees to the home fee rate paid by UK applicants (set at a maximum of $fees_pgitt_domesticfulltime$) – if you’re eligible, this fee will be the same for all courses offered by training providers 
 
-* student loans to help with tuition fees and living costs 
-
-* bursaries and scholarships in the subjects offered to UK citizens 
+* student loans to help with tuition fees and living costs
 
 ## Teacher training fees
 
@@ -66,22 +62,19 @@ $refugees-asylum-seekers$
 
 ### Student loans
 
+Funding like tuition fee loans and maintenance loans are normally only available for UK citizens or non-UK citizens with permission to [live permanently in the UK](https://www.gov.uk/browse/visas-immigration/settle-in-the-uk).
+
 You may be eligible to apply for a student loan to cover your tuition fees.  
 
 To start your application for student loans, you need to have chosen your teacher training course, but you do not need a confirmed place. 
 
 $loans$
 
-### Bursaries and scholarships for trainee languages and physics teachers
+### Bursaries and scholarships
 
-There are 2 types of financial support you can get if you want to train to teach languages or physics:
+Bursaries and scholarships are tax-free payments from the UK government that are paid by your initial teacher training provider. If you are a non-UK citizen who has permission to [live permanently in the UK](https://www.gov.uk/browse/visas-immigration/settle-in-the-uk) and are eligible for student finance, you may be able to get a bursary or scholarship. You do not have to pay back a bursary or scholarship. 
 
-* bursaries worth $bursaries_postgraduate_languagesfrenchgermanspanish$ for languages, and $bursaries_postgraduate_physics$ for physics
-* scholarships worth $scholarships_languagesfrenchgermanspanish$ for French, German and Spanish, and $scholarships_physics$ for physics
-
-Bursaries and scholarships are tax-free payments from the UK government that are paid by your initial teacher training provider. You do not have to pay back a bursary or scholarship. 
-
-If you are going to get a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
+If you are eligible for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
 
 The first instalment of a bursary or scholarship is usually made by late October but you should confirm payment dates with your chosen provider.
 
