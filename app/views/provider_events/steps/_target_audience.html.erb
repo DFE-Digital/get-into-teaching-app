@@ -1,0 +1,9 @@
+<%= f.govuk_collection_radio_buttons(
+      :target_audience,
+      f.object.target_audiences,
+      :id,
+      ->(option) { format_option_value(option, "provider_events_steps.target_audience.target_audience") },
+      ->(option) { format_option_hint(option, "provider_events_steps.target_audience.target_audience") },
+      label: { tag: "h1" },
+      )
+%>
