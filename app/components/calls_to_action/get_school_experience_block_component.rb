@@ -4,8 +4,8 @@ module CallsToAction
 
     def initialize(
       title: "Get school experience",
-      image: "get-school-experience-block-promo.jpg",
-      title_color: "green",
+      image: "icon-building.svg",
+      title_color: "gitgreenpastel",
       text: "Experience life as a teacher in a school in England.",
       link_text: "Search for school experience",
       link_target: "https://schoolexperience.education.gov.uk/"

@@ -78,18 +78,39 @@ $space-between-sections: 3.7em;
 
   .image-block {
 
-    .image-background {
-      background-color: $gitbluetint;
-      //padding-left: 30%;
-      //padding-right: 30%;
-      horiz-align: center;
+    .image-background{
       margin: 0;
 
+      &.gitbluetint {
+        background-color: $gitbluetint;
+      }
+
+      &.gitgreentint {
+        background-color: $gitgreentint;
+      }
+
+      picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 9.2%;
+        margin-bottom: 9.2%;
+
+        img {
+          width: auto;
+          max-width: 50%;
+          height: 200px;
+        }
+      }
     }
-    img {
+
+    img.DELETE-THIS-STYLE {
       width: 100%;
       height: auto;
+      border: solid red 1px;
     }
+
 
     ul {
       list-style: none;
@@ -99,7 +120,18 @@ $space-between-sections: 3.7em;
         @extend .link--black;
       }
     }
+  }
 
+  &:has(> :nth-child(3)) {
+    .image-block {
+      .image-background {
+        picture {
+          img {
+            max-height: 130px;
+          }
+        }
+      }
+    }
   }
 
   @include mq($from: tablet) {

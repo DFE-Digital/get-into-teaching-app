@@ -4,8 +4,8 @@ module CallsToAction
 
     def initialize(
       title: "Find your teacher training course",
-      image: "find-block-promo.jpg",
-      title_color: "green",
+      image: "icon-search-black.svg",
+      title_color: "gitgreenpastel",
       text: "Explore the different teacher training courses available.",
       link_text: "Find teacher training courses",
       link_target: "https://find-teacher-training-courses.service.gov.uk"

@@ -5,7 +5,7 @@ module CallsToAction
     def initialize(
       title: "Get personalised guidance",
       image: "mailing-list-block-promo.jpg",
-      title_color: "yellow",
+      title_color: "gitbluepastel",
       text: "Sign up for free guidance and support on getting into teaching.",
       link_text: "Get advice in your inbox",
       link_target: "/mailinglist/signup/name"
