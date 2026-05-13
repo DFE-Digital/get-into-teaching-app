@@ -1,7 +1,7 @@
 <%= tag.div(class: "image-block promos") do %>
-  <div class="image-background gitgreentint">
+  <%= tag.div class: image_classes do %>
     <%= image_pack_tag("images/#{image}", alt: "") %>
-  </div>
+  <% end %>
 
   <%= tag.h2(class: "heading--overlap heading--highlight-#{title_color} heading--margin-top-0 heading-xl") do %>
     <%= tag.span(title) %>

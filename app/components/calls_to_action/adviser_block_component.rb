@@ -1,12 +1,12 @@
 module CallsToAction
   class AdviserBlockComponent < ViewComponent::Base
-    attr_reader :title, :image, :image_background, :title_color, :text, :link_text, :link_target
+    attr_reader :title, :image, :image_classes, :title_color, :text, :link_text, :link_target
 
     def initialize(
-      title: "Get a free adviser",
+      title: "Get a free adviser3",
       image: "adviser-black.png",
       title_color: "gitbluepastel",
-      image_background: "gitbluetint",
+      image_classes: "image-background gitbluetint padding-small",
       text: "An adviser with years of teaching experience can help you become a teacher.",
       link_text: "Find out about advisers",
       link_target: "/teacher-training-advisers"
@@ -14,7 +14,7 @@ module CallsToAction
       super
       @title = title
       @image = image
-      @image_background = image_background
+      @image_classes = image_classes
       @title_color = title_color
       @text = text
       @link_text = link_text

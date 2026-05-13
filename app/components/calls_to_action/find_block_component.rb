@@ -1,10 +1,11 @@
 module CallsToAction
   class FindBlockComponent < ViewComponent::Base
-    attr_reader :title, :image, :title_color, :text, :link_text, :link_target
+    attr_reader :title, :image, :image_classes, :title_color, :text, :link_text, :link_target
 
     def initialize(
       title: "Find your teacher training course",
       image: "icon-search-black.svg",
+      image_classes: "image-background gitgreentint padding-small",
       title_color: "gitgreenpastel",
       text: "Explore the different teacher training courses available.",
       link_text: "Find teacher training courses",
@@ -13,6 +14,7 @@ module CallsToAction
       super
       @title = title
       @image = image
+      @image_classes = image_classes
       @title_color = title_color
       @text = text
       @link_text = link_text

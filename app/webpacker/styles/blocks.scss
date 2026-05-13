@@ -78,7 +78,7 @@ $space-between-sections: 3.7em;
 
   .image-block {
 
-    .image-background{
+    .image-background {
       margin: 0;
 
       &.gitbluetint {
@@ -99,18 +99,18 @@ $space-between-sections: 3.7em;
 
         img {
           width: auto;
-          max-width: 50%;
-          height: 200px;
+          height: 180px;
+        }
+      }
+
+      &.padding-small {
+        picture > img {
+          height: 170px;
+          padding-top: 5px;
+          padding-bottom: 5px;
         }
       }
     }
-
-    img.DELETE-THIS-STYLE {
-      width: 100%;
-      height: auto;
-      border: solid red 1px;
-    }
-
 
     ul {
       list-style: none;
@@ -125,9 +125,31 @@ $space-between-sections: 3.7em;
   &:has(> :nth-child(3)) {
     .image-block {
       .image-background {
-        picture {
-          img {
-            max-height: 130px;
+        picture > img {
+          height: 130px;
+        }
+
+        &.padding-small {
+          picture > img {
+            height: 110px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+        }
+
+        &.padding-medium {
+          picture > img {
+            height: 94px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+          }
+        }
+
+        &.padding-large {
+          picture > img {
+            height: 80px;
+            padding-top: 25px;
+            padding-bottom: 25px;
           }
         }
       }
