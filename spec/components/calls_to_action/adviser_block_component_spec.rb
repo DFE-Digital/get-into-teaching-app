@@ -3,7 +3,8 @@ require "rails_helper"
 RSpec.describe CallsToAction::AdviserBlockComponent, type: :component do
   let(:title) { "Get a free adviser" }
   let(:image) { "adviser-block-promo.jpg" }
-  let(:title_color) { "yellow" }
+  let(:image_classes) { "image-background some-class" }
+  let(:title_color) { "gitbluepastel" }
   let(:text) { "An adviser with years of teaching experience can help you become a teacher." }
   let(:link_text) { "Find out about advisers" }
   let(:link_target) { "/teacher-training-advisers" }
@@ -12,6 +13,7 @@ RSpec.describe CallsToAction::AdviserBlockComponent, type: :component do
     {
       title: title,
       image: image,
+      image_classes: image_classes,
       title_color: title_color,
       text: text,
       link_text: link_text,
@@ -42,6 +44,10 @@ RSpec.describe CallsToAction::AdviserBlockComponent, type: :component do
 
     it "renders the link with correct text and href" do
       expect(page).to have_link(link_text, href: link_target)
+    end
+
+    it "renders a div for the image with the correct classes" do
+      expect(page).to have_css("div.image-background.some-class")
     end
   end
 end

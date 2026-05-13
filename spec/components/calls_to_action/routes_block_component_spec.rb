@@ -3,7 +3,8 @@ require "rails_helper"
 RSpec.describe CallsToAction::RoutesBlockComponent, type: :component do
   let(:title) { "Find your route into teaching" }
   let(:image) { "routes-block-promo.jpg" }
-  let(:title_color) { "yellow" }
+  let(:image_classes) { "image-background some-class" }
+  let(:title_color) { "gitbluepastel" }
   let(:text) { "Answer 3 questions and find routes into teaching based on your circumstances." }
   let(:link_text) { "Find a route" }
   let(:link_target) { "/routes-into-teaching" }
@@ -12,6 +13,7 @@ RSpec.describe CallsToAction::RoutesBlockComponent, type: :component do
     {
       title: title,
       image: image,
+      image_classes: image_classes,
       title_color: title_color,
       text: text,
       link_text: link_text,
@@ -42,6 +44,10 @@ RSpec.describe CallsToAction::RoutesBlockComponent, type: :component do
 
     it "renders the link with correct text and href" do
       expect(page).to have_link(link_text, href: link_target)
+    end
+
+    it "renders a div for the image with the correct classes" do
+      expect(page).to have_css("div.image-background.some-class")
     end
   end
 end
