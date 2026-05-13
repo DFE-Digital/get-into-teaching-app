@@ -3,7 +3,7 @@ module CallsToAction
     attr_reader :title, :image, :image_classes, :title_color, :text, :link_text, :link_target
 
     def initialize(
-      title: "Attend a training provider event2",
+      title: "Attend a training provider event",
       image: "icon-calendar.svg",
       image_classes: "image-background gitbluetint padding-large",
       title_color: "gitbluepastel",

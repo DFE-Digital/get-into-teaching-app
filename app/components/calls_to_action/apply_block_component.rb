@@ -3,7 +3,7 @@ module CallsToAction
     attr_reader :title, :image, :image_classes, :title_color, :text, :link_text, :link_target
 
     def initialize(
-      title: "Start your application3",
+      title: "Start your application",
       image: "person-paper.svg",
       image_classes: "image-background gitbluetint padding-small",
       title_color: "gitgreenpastel",

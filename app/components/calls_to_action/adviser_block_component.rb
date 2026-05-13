@@ -3,8 +3,8 @@ module CallsToAction
     attr_reader :title, :image, :image_classes, :title_color, :text, :link_text, :link_target
 
     def initialize(
-      title: "Get a free adviser3",
-      image: "adviser-black.png",
+      title: "Get a free adviser",
+      image: "communication-icon.svg",
       title_color: "gitbluepastel",
       image_classes: "image-background gitbluetint padding-small",
       text: "An adviser with years of teaching experience can help you become a teacher.",

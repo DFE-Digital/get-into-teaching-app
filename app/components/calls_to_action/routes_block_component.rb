@@ -4,8 +4,8 @@ module CallsToAction
 
     def initialize(
       title: "Find your route into teaching",
-      image: "routes-block-promo.jpg",
-      image_classes: "image-background gitbluetint",
+      image: "searching-icon.svg",
+      image_classes: "image-background gitbluetint padding-small",
       title_color: "gitbluepastel",
       text: "Answer 3 questions and find routes into teaching based on your circumstances.",
       link_text: "Find a route",
