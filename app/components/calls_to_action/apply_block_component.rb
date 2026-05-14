@@ -5,7 +5,7 @@ module CallsToAction
     def initialize(
       title: "Start your application",
       image: "person-paper.svg",
-      image_classes: "image-background gitbluetint padding-small",
+      image_classes: "image-background gitgreentint padding-small",
       title_color: "gitgreenpastel",
       text: "Create an account and start your application for a teacher training course.",
       link_text: "Apply for teacher training",
