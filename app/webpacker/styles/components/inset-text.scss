@@ -54,4 +54,15 @@ section.inset-text {
     border-left-color: $purple;
     margin-bottom:0;
   }
+
+  &.gitpink {
+    background: rgba($gitpink, .1);
+    border-left-color: $gitpink;
+  }
+
+  &.gitpink-white {
+    background: $white;
+    border-left-color: $gitpink;
+    margin-bottom: 0;
+  }
 }

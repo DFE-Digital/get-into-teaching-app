@@ -10,7 +10,7 @@ module Content
       title:, text:, header: "Non-UK citizens:",
       link_title: nil,
       link_url: nil,
-      background: "purple",
+      background: "gitpink",
       expanded: false,
       classes: nil
     )
@@ -27,7 +27,7 @@ module Content
 
       fail(ArgumentError, "title must be present") if title.blank?
       fail(ArgumentError, "text must be present") if text.blank?
-      fail(ArgumentError, "background must be purple") unless %w[purple].any?(background)
+      fail(ArgumentError, "background must be a valid value") unless %w[purple gitpink].any?(background)
     end
 
     def show_link?
