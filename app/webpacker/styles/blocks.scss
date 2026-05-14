@@ -165,6 +165,10 @@ $space-between-sections: 3.7em;
         margin-left: 2 * $indent-amount;
       }
 
+      h2.reduced-left-margin {
+        margin-left: 1.3333 * $indent-amount;
+      }
+
       ul {
         padding-left: 2 * $indent-amount;
         padding-bottom: 0;
