@@ -3,9 +3,9 @@ module CallsToAction
     attr_reader :title, :image, :image_classes, :title_color, :text, :link_text, :link_target
 
     def initialize(
-      title: "Get personalised guidance2",
+      title: "Get personalised guidance",
       image: "paper-plane.svg",
-      image_classes: "image-background gitbluetint",
+      image_classes: "image-background gitbluetint padding-small",
       title_color: "gitbluepastel",
       text: "Sign up for free guidance and support on getting into teaching.",
       link_text: "Get advice in your inbox",
