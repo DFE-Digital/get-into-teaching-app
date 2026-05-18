@@ -435,7 +435,6 @@ $mobile-cutoff: 800px;
 .hero.rebrand {
   &.content-wide {
     .hero__title {
-      font-family: Montserrat, sans-serif;
       font-weight: 700;
 
       @include mq($until: tablet) {
