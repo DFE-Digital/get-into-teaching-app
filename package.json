@@ -50,7 +50,7 @@
     "@babel/eslint-parser": "^7.25.1",
     "@stimulus/test": "^2.0.0",
     "eslint": "^7.32.0",
-    "eslint-config-prettier": "^10.1.2",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-node": "^11.1.0",
