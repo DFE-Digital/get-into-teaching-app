@@ -185,6 +185,14 @@
   @include highlight-text($gitlilac, $black);
 }
 
+.heading--highlight-gitbluepastel {
+  @include highlight-text($gitbluepastel, $black);
+}
+
+.heading--highlight-gitgreenpastel {
+  @include highlight-text($gitgreenpastel, $black);
+}
+
 h1 {
   @extend .heading-xxl;
   font-family: Montserrat, sans-serif;
