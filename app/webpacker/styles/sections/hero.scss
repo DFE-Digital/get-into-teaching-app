@@ -403,6 +403,10 @@ $mobile-cutoff: 800px;
 		&.pastel {
 			background-color: rgba($background-color, 0.4);
 		}
+
+    &.white-text {
+      color: white;
+    }
 	}
 
 	&.pink-blue { @include colours($pink, $blue); }
@@ -415,6 +419,7 @@ $mobile-cutoff: 800px;
   &.yellow-yellow { @include colours($yellow, $yellow); }
   &.grey-pink { @include colours($grey, $pink); }
   &.gitlilac-gitlilac { @include colours($gitlilac, $gitlilac); }
+  &.gitpurple-gitpurple { @include colours($gitpurple, $gitpurple); }
 }
 
 // New styles for LandingHeroFullwidthComponent

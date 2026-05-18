@@ -137,6 +137,14 @@
   @include box-heading($gitpurple, $white);
 }
 
+.heading--box-gitbluetint {
+  @include box-heading($gitbluetint, $black);
+}
+
+.heading--box-gitbluepastel {
+  @include box-heading($gitbluepastel, $black);
+}
+
 .heading--box-white {
   @include box-heading($white, $black);
 }
