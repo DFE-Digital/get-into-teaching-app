@@ -17,7 +17,7 @@ gem "invisible_captcha"
 
 gem "iso_country_codes"
 
-gem "shakapacker", "8.1.0"
+gem "shakapacker", "9.5.0"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -48,7 +48,7 @@ gem "addressable", "~> 2.8.7"
 
 gem "rack-attack"
 
-gem "faraday", "~> 1.10.0"
+gem "faraday", "~> 1.10.5"
 gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
