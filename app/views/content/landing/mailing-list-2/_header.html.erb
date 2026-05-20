@@ -1,5 +1,5 @@
 <%= render Content::LandingHeroComponent.new(
-  title: "Get personalised guidance",
+  title: @front_matter["title"],
   colour: @front_matter["colour"],
   image: @front_matter["image"],
 ) %>
