@@ -77,11 +77,9 @@ You will need a Student visa if you’re on a fee-paying course. Your Student vi
 
 Find out more about [studying in the UK on a Student visa](https://www.gov.uk/student-visa).
 
-### Bursaries and scholarships if you are on a Student visa 
+### Bursaries and scholarships if you are on a Student visa
 
-If you are training to teach physics or languages, you may be [eligible for a bursary or scholarship](/funding-and-support/scholarships-and-bursaries).  
-
-If you are going to get a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
+If you are eligible for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
 
 The first instalment of a bursary or scholarship is usually made before late October but you should confirm payment dates with your chosen provider.
 
