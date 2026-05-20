@@ -5,7 +5,7 @@ content:
     - content/landing/campus-mailing-list/header
     - content/landing/campus-mailing-list/mailing-list
 image: "static/images/content/hero-images/chemistry.jpg"
-colour: pink-yellow
+colour: "white-text gitpurple-gitpurple"
 layout: "layouts/minimal"
 noindex: true
 breadcrumbs: false
