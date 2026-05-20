@@ -20,7 +20,7 @@ jobs:
         uses: DFE-Digital/github-actions/set-up-environment@master
 
       - name: Run Snyk to check Docker image for vulnerabilities
-        uses: snyk/actions/docker@master
+        uses: snyk/actions/docker@9adf32b1121593767fc3c057af55b55db032dc04 # Pinned at v1.0.0
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
