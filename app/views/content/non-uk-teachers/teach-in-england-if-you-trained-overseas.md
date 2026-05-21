@@ -82,7 +82,7 @@ You can prepare for these checks by getting a letter from the organisation which
 
 ## Financial support
 
-You may be eligible for a [levelling up premium payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) if you teach chemistry, computing, maths or physics 
+You may be eligible for a [targeted retention incentive payment](https://www.gov.uk/guidance/levelling-up-premium-payments-for-teachers) if you teach chemistry, computing, maths or physics. 
 
 ## Teach in Wales, Scotland or Northern Ireland
 
