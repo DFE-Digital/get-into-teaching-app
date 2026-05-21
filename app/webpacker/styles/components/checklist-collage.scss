@@ -29,16 +29,17 @@
 
       &::before {
         content: "";
-        background-image: url("../images/icon-tick.svg");
+        background-image: url("../images/icon-arrow.svg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 40px 40px;
+        background-size: 20px 20px;
+        background-color: $gitlilac;
         display: block;
         width: 30px;
         height: 30px;
         position: absolute;
         margin-left: -3.5rem;
-        border: solid 4px $black;
+        border: none;
         top: -5px;
       }
     }

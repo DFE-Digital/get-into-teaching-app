@@ -28,6 +28,20 @@
     - "static/images/content/hero-images/english--mobile.jpg"
     - "static/images/content/hero-images/english--tablet.jpg"
 
+"static/images/content/hero-images/d0fe03v3.jpg":
+  # A teacher in a maths lesson
+  alt: "a teacher in a geography lesson"
+  variants:
+    - "static/images/content/hero-images/d0fe03v3--mobile.jpg"
+    - "static/images/content/hero-images/d0fe03v3--tablet.jpg"
+
+"static/images/content/hero-images/d0fe06v3.jpg":
+  # A teacher in a maths lesson
+  alt: "a teacher in a maths lesson"
+  variants:
+    - "static/images/content/hero-images/d0fe06v3--mobile.jpg"
+    - "static/images/content/hero-images/d0fe06v3--tablet.jpg"
+
 "static/images/content/hero-images/chemistry.jpg":
   # A teacher with two students doing a science experiment
   alt: ""

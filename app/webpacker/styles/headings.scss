@@ -137,6 +137,14 @@
   @include box-heading($gitpurple, $white);
 }
 
+.heading--box-gitbluetint {
+  @include box-heading($gitbluetint, $black);
+}
+
+.heading--box-gitbluepastel {
+  @include box-heading($gitbluepastel, $black);
+}
+
 .heading--box-white {
   @include box-heading($white, $black);
 }
@@ -185,12 +193,22 @@
   @include highlight-text($gitlilac, $black);
 }
 
+.heading--highlight-gitbluepastel {
+  @include highlight-text($gitbluepastel, $black);
+}
+
+.heading--highlight-gitgreenpastel {
+  @include highlight-text($gitgreenpastel, $black);
+}
+
 h1 {
   @extend .heading-xxl;
+  font-family: Montserrat, sans-serif;
 }
 
 h2 {
   @extend .heading-xl;
+  font-family: Montserrat, sans-serif;
 
   > i.icon {
     margin-right: .3em;
