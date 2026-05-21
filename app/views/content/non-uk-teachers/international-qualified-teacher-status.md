@@ -89,8 +89,6 @@ The following providers are accepting applications:
 
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
 
-* Edge Hill University
-
 * Equalitas
 
 * [National Institute of Teaching and Education (NITE)](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/), part of the Coventry University Group
