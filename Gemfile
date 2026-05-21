@@ -17,7 +17,7 @@ gem "invisible_captcha"
 
 gem "iso_country_codes"
 
-gem "shakapacker", "8.1.0"
+gem "shakapacker", "8.4.0"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -48,7 +48,7 @@ gem "addressable", "~> 2.8.7"
 
 gem "rack-attack"
 
-gem "faraday", "~> 1.10.0"
+gem "faraday", "~> 1.10.5"
 gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
@@ -83,7 +83,8 @@ gem "text"
 
 gem "indefinite_article"
 
-gem "connection_pool"
+# NB: connection_pool 3 is not compatible with ActiveSupport 8.1
+gem "connection_pool", "< 3"
 
 gem "get_into_teaching_api_client_faraday", ">= 4.3.7.3", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 

@@ -18,7 +18,7 @@ jobs:
 
       - name: Link Checker
         id: lychee
-        uses: lycheeverse/lychee-action@v2.8.0
+        uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # Pinned at v2.8.0
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -38,7 +38,7 @@ jobs:
       # - name: Slack Markdown Converter
       #   id: convert
       #   if: ${{steps.lychee.outcome}} == "failure"
-      #   uses: LoveToKnow/slackify-markdown-action@v1
+      #   uses: LoveToKnow/slackify-markdown-action@698a1d4d0ff1794152a93c03ee8ca5e03a310d4e # Pinned at v1.1.1
       #   with:
       #     text: |
       #           ${{ env.LYCHEE_OUTPUT }}

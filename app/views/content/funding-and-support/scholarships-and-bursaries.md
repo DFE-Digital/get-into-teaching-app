@@ -24,7 +24,7 @@ before-content:
 
 You do not need to apply for a bursary. If you’re eligible, you’ll automatically receive it.
 
-You must be eligible for student finance to receive a bursary (unless you’re training to teach physics or languages). You'll also need at least one of the following:
+You must be eligible for student finance to receive a bursary. You'll also need at least one of the following:
 
 * a bachelor’s degree class 2:2 (honours) or higher
 * a master’s degree
@@ -46,7 +46,7 @@ You do not need to apply for a bursary. When you apply for teacher training, you
 
 ## Eligibility for scholarships
 
-You must be eligible for student finance to receive a scholarship (unless you’re training to teach physics or languages). You’ll also need at least one of the following:
+You must be eligible for student finance to receive a scholarship. You’ll also need at least one of the following:
 
 * a bachelor’s degree class 2:1 (honours) or higher
 * a master’s degree

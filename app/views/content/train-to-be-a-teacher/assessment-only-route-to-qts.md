@@ -31,13 +31,6 @@ provider_groups:
       telephone: "01582493680"
       international_phone: "+441582493680"
       
-    - header: "Colchester Teacher Training Consortium"
-      link: "https://colchesterttc.org.uk/training-routes/assessment-only-route"
-      name: "Christine Wager"
-      email: "cwager@colchesterttc.org.uk"
-      telephone: "01206364728"
-      international_phone: "+441206364728"
-      
     - header: "Coventry University, National Institute of Teaching and Education"
       link: "https://www.coventry.ac.uk/nite/teacher-training/assessment-only-qts/"
       name: "Louise Jakes"
@@ -161,6 +154,13 @@ provider_groups:
       
   East of England:
     providers:
+    - header: "Colchester Teacher Training Consortium"
+      link: "https://colchesterttc.org.uk/training-routes/assessment-only-route"
+      name: "Christine Wager"
+      email: "cwager@colchesterttc.org.uk"
+      telephone: "01206364728"
+      international_phone: "+441206364728"
+      
     - header: "Educate Group Initial Teacher Training"
       link: "https://educate-group.co.uk/assessment-only-route/"
       name: "Claire King"
@@ -324,13 +324,6 @@ provider_groups:
       telephone: "020 3740 1808"
       international_phone: "+442037401808"
       extension: "(option 1)"
-    - header: "United Teaching National SCITT"
-      link: "https://www.unitedteaching.org.uk/"
-      name: "Vicki Cleaves"
-      email: "vicki.cleaves@paddington-academy.org"
-      telephone: "020 7479 3900"
-      international_phone: "+442074793900"
-      
     - header: "University of East London"
       link: "https://www.uel.ac.uk/"
       name: "Bryce Wilby"
@@ -843,13 +836,6 @@ provider_groups:
   Outside of the UK:
     description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
-    - header: "Colchester Teacher Training Consortium"
-      link: "https://colchesterttc.org.uk/training-routes/assessment-only-route"
-      name: "Christine Wager"
-      email: "cwager@colchesterttc.org.uk"
-      telephone: "01206364728"
-      international_phone: "+441206364728"
-      
     - header: "Coventry University, National Institute of Teaching and Education"
       link: "https://www.coventry.ac.uk/nite/teacher-training/assessment-only-qts/"
       name: "Louise Jakes"
