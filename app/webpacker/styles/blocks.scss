@@ -111,6 +111,11 @@ $space-between-sections: 3.7em;
       }
     }
 
+    img {
+      width: 100%;
+      height: auto;
+    }
+
     ul {
       list-style: none;
       padding: 0 $indent-amount $indent-amount 1rem;
