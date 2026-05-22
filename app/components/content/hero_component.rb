@@ -24,12 +24,8 @@ module Content
       set_value(:@hero_content_width, @front_matter, "hero_content_width", default: "even")
     end
 
-    def set_value(name, front_matter, fm_keys, default: nil, rebrand: true)
+    def set_value(name, front_matter, fm_keys, default: nil)
       return if front_matter.blank?
-
-      if rebrand && front_matter["rebrand"].present? && set_value(name, front_matter["rebrand"], fm_keys)
-        return true
-      end
 
       active_key = [fm_keys].flatten.find { |key| front_matter.key?(key) }
 
@@ -50,7 +46,6 @@ module Content
         hero_bg_color => true,
         "blend-content" => hero_blend_content,
         "content-#{hero_content_width}" => true,
-        "rebrand" => true,
       })
     end
 

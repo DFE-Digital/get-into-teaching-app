@@ -53,11 +53,11 @@ body > header {
       // general (mobile and desktop)
       .nav-icon {
         &__contracted {
-          background-image: url("../images/navigation/arrow-down-pink.svg");
+          background-image: url("../images/navigation/arrow-down-gitpurple.svg");
         }
 
         &__expanded {
-          background-image: url("../images/navigation/arrow-up-pink.svg");
+          background-image: url("../images/navigation/arrow-up-gitpurple.svg");
         }
       }
 
@@ -105,22 +105,22 @@ body > header {
 
             .nav-icon {
               &__contracted {
-                background-image: url("../images/navigation/arrow-down-pink.svg");
+                background-image: url("../images/navigation/arrow-down-gitpurple.svg");
               }
 
               &__expanded {
-                background-image: url("../images/navigation/arrow-up-pink.svg");
+                background-image: url("../images/navigation/arrow-up-gitpurple.svg");
               }
             }
 
             &:focus {
               .nav-icon {
                 &__contracted {
-                  background-image: url("../images/navigation/arrow-down-pink.svg");
+                  background-image: url("../images/navigation/arrow-down-gitpurple.svg");
                 }
 
                 &__expanded {
-                  background-image: url("../images/navigation/arrow-up-pink.svg");
+                  background-image: url("../images/navigation/arrow-up-gitpurple.svg");
                 }
               }
             }
@@ -154,8 +154,6 @@ body > header {
 
         ol.category-links-list > li.selected > .menu-link {
           &:focus {
-            color: $black;
-
             .nav-icon {
               &__contracted {
                 background-image: url("../images/navigation/arrow-down-white.svg");
@@ -206,8 +204,8 @@ body > header {
             grid-template-rows: 1fr;
             grid-column-gap: 0;
             grid-row-gap: 0;
-            padding: 0.755em 0.75em;
-            margin: 0.75em 0;
+            padding: 0.755em 0.75em 20px;
+            margin: 0.75em 0 0;
 
             .menu-title {
               grid-area: 1 / 1 / 2 / 2;
@@ -227,11 +225,11 @@ body > header {
           > .menu-link:focus {
             box-shadow: none;
             outline: none;
-            border-bottom: solid 4px $pink;
+            border-bottom: solid 4px $gitpurple;
           }
 
           &.selected > .menu-link {
-            border-bottom: solid 4px $pink;
+            border-bottom: solid 4px $gitpurple;
           }
 
           &.down {
@@ -260,11 +258,19 @@ body > header {
         flex-basis: 100%;
 
         > li.selected {
-          background: $pink;
+          background: $gitpurple;
 
           > a, button.btn-as-link {
             font-weight: bold;
             background: transparent;
+          }
+
+          > .menu-link {
+            color: $white;
+
+            &:focus {
+              color: $white;
+            }
           }
         }
 
@@ -277,7 +283,7 @@ body > header {
           background: #F0F0F0;
           font-size: 1em;
           font-weight: normal;
-          border-left: solid $pink 4px;
+          border-left: solid $gitpurple 4px;
           margin-bottom: 4px;
         }
       }
@@ -347,7 +353,7 @@ body > header {
             &:focus {
               .nav-icon {
                 &__contracted, &__expanded {
-                  background-image: url("../images/navigation/arrow-right-white.svg");
+                  background-image: url("../images/navigation/arrow-right-black.svg");
                 }
               }
             }
@@ -389,7 +395,7 @@ body > header {
         }
 
         > li.selected > .menu-link {
-          border-left: solid $pink 4px;
+          border-left: solid $gitpurple 4px;
           background: $white;
 
           &:hover {
@@ -404,12 +410,12 @@ body > header {
           }
 
           &:focus {
-            color: $white;
-            background: $black;
+            color: $black;
+            background: $white;
 
             .nav-icon {
               &__contracted, &__expanded {
-                background-image: url("../images/navigation/arrow-right-white.svg");
+                background-image: url("../images/navigation/arrow-right-black.svg");
               }
             }
           }
@@ -467,150 +473,4 @@ body > header {
       }
     }
   } // primary navigation
-}
-
-body.rebrand > header {
-  #primary-navigation {
-    ol.primary {
-
-      // general (mobile and desktop)
-      .nav-icon {
-        &__contracted {
-          background-image: url("../images/navigation/arrow-down-gitpurple.svg");
-        }
-
-        &__expanded {
-          background-image: url("../images/navigation/arrow-up-gitpurple.svg");
-        }
-      }
-
-      // mobile only
-      @include mq($until: desktop) {
-        // root level item only
-        > li {
-          > .menu-link {
-            .nav-icon {
-              &__contracted {
-                background-image: url("../images/navigation/arrow-down-gitpurple.svg");
-              }
-
-              &__expanded {
-                background-image: url("../images/navigation/arrow-up-gitpurple.svg");
-              }
-            }
-
-            &:focus {
-              .nav-icon {
-                &__contracted {
-                  background-image: url("../images/navigation/arrow-down-gitpurple.svg");
-                }
-
-                &__expanded {
-                  background-image: url("../images/navigation/arrow-up-gitpurple.svg");
-                }
-              }
-            }
-          }
-        }
-      }
-      // mobile
-
-      // desktop only
-      @include mq($from: desktop) {
-        > li {
-          > .menu-link {
-            padding-bottom: 20px;
-            margin: 0.75em 0 0;
-          }
-
-          > .menu-link:focus {
-            border-bottom: solid 4px $gitpurple;
-          }
-
-          &.selected > .menu-link {
-            border-bottom: solid 4px $gitpurple;
-          }
-        }
-        // li
-      }
-      // desktop
-
-      ol.category-links-list {
-        // mobile and tablet
-        @include mq($until: desktop) {
-          > li.selected {
-            background: $gitpurple;
-
-            > .menu-link {
-              color: $white;
-
-              &:focus {
-                color: $white;
-              }
-            }
-          }
-
-          > li {
-            border-left: solid $gitpurple 4px;
-
-            > .menu-link {
-              > .nav-icon {
-                &__contracted {
-                  background-image: url("../images/navigation/arrow-down-black.svg");
-                }
-
-                &__expanded {
-                  background-image: url("../images/navigation/arrow-up-white.svg");
-                }
-              }
-
-              &:focus {
-                .nav-icon {
-                  &__contracted {
-                    background-image: url("../images/navigation/arrow-down-black.svg");
-                  }
-
-                  &__expanded {
-                    background-image: url("../images/navigation/arrow-up-white.svg");
-                  }
-                }
-              }
-            }
-          }
-        } // mobile and tablet
-      } // ol.category-links-list
-    } // ol.primary
-
-    // desktop and wide screen
-    @include mq($from: desktop) {
-      ol.category-links-list, ol.page-links-list {
-        > li {
-          .menu-link {
-            &:focus {
-              .nav-icon {
-                &__contracted, &__expanded {
-                  background-image: url("../images/navigation/arrow-right-black.svg");
-                }
-              }
-            }
-          }
-        }
-
-        > li.selected > .menu-link {
-          border-left: solid $gitpurple 4px;
-
-          &:focus {
-            color: $black;
-            background: $white;
-
-            .nav-icon {
-              &__contracted, &__expanded {
-                background-image: url("../images/navigation/arrow-right-black.svg");
-              }
-            }
-          }
-        }
-      } // ol.category-links-list, ol.page-links-list
-    } // from desktop, secondary nav
-  }
 }

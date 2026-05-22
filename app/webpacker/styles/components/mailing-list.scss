@@ -3,18 +3,6 @@
 .home-mailing-list {
   overflow: hidden;
 
-  &::before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 30px 0;
-    border-color: $yellow-dark transparent transparent transparent;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-45px);
-  }
-
   .col {
     margin-bottom: 0;
     padding: 3 * $indent-amount $indent-amount 2 * $indent-amount $indent-amount;
@@ -67,7 +55,7 @@
   }
 
   form {
-    margin-top: 2 * $indent-amount;
+    margin-top: 0;
   }
 
   @include mq($from: tablet) {
@@ -96,18 +84,6 @@
         padding-right: $indent-amount;
         flex-basis: 60%;
       }
-    }
-  }
-}
-
-body.rebrand {
-  .home-mailing-list {
-    &::before {
-      border: none;
-    }
-
-    form {
-      margin-top: 0;
     }
   }
 }
