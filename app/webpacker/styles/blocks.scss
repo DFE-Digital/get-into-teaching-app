@@ -124,6 +124,10 @@ $space-between-sections: 3.7em;
         @extend .link--black;
       }
     }
+
+    h2.increased-line-height {
+      line-height: 1.4em;
+    }
   }
 
   &:has(> :nth-child(3)) {
