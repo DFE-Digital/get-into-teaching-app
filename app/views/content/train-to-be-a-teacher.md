@@ -12,7 +12,7 @@ navigation_title: Train to be a teacher
 navigation_path: "/train-to-be-a-teacher"
 layout: "layouts/category"
 image: "static/images/content/hero-images/0031.jpg"
-hero_bg_color: yellow
+hero_bg_color: gitpurple
 title_bg_color: white
 hero_blend_content: true
 ---

@@ -6,7 +6,7 @@ description: |-
 title_paragraph: |-
     If you’re interested in training to teach or teaching in England as an international citizen, we can help you understand your next steps.
 title_bg_color: white
-hero_bg_color: yellow
+hero_bg_color: gitpurple
 hero_blend_content: true
 navigation: 35
 navigation_title: Non-UK citizens

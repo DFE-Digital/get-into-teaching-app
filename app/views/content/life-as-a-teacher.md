@@ -1,5 +1,6 @@
 ---
 title: "Life as a teacher"
+colour: "white-text gitpurple-gitpurple"
 description: Explore the rewards of teaching, including pay, career growth, support, and the range of subjects and pupils you could teach.
 layout: "layouts/minimal"
 navigation: 5
