@@ -252,6 +252,10 @@ $mobile-cutoff: 800px;
 
   &.gitpurple {
     background-color: $gitpurple;
+
+    .hero__paragraph {
+      color: $white;
+    }
   }
 
   &__title {
