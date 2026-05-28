@@ -5,7 +5,7 @@ title_paragraph: |-
 description: |-
   Sarah shares her story of how she became a department head in a subject she loves. 
 layout: "layouts/minimal"
-colour: grey-pink
+colour: "gitpurple-gitpurple white-text"
 content: 
   - "content/life-as-a-teacher/teaching-as-a-career/from-qualified-teacher-to-head-of-biology/header" 
   - "content/life-as-a-teacher/teaching-as-a-career/from-qualified-teacher-to-head-of-biology/article"

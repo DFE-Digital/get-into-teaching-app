@@ -5,7 +5,7 @@ title_paragraph: |-
 description: |-
   Yvonne is an English teacher in London. She uses her love of rap music to engage and inspire her students.
 layout: "layouts/minimal" 
-colour: grey-pink
+colour: "gitpurple-gitpurple white-text"
 content: 
   - "content/life-as-a-teacher/why-teach/bringing-lessons-to-life-with-rap-music/header" 
   - "content/life-as-a-teacher/why-teach/bringing-lessons-to-life-with-rap-music/article"

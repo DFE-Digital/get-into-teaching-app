@@ -14,28 +14,28 @@ describe Content::InsetTextComponent, type: :component do
 
   it { is_expected.to have_css("section.inset-text.yellow") }
   it { is_expected.to have_css(".inset-text p", text: text) }
-  it { is_expected.to have_css(".inset-text h2 span.header", text: "#{header}:") }
-  it { is_expected.to have_css(".inset-text h2 span.title", text: title) }
+  it { is_expected.to have_css(".inset-text div span.header", text: "#{header}:") }
+  it { is_expected.to have_css(".inset-text div span.title", text: title) }
 
   context "when there is no title nor header" do
     let(:title) { nil }
     let(:header) { nil }
 
-    it { is_expected.not_to have_css(".inset-text h2") }
+    it { is_expected.not_to have_css(".inset-text div") }
   end
 
   context "when there is only a title but no header" do
     let(:header) { nil }
 
-    it { is_expected.not_to have_css(".inset-text h2 span.header") }
-    it { is_expected.to have_css(".inset-text h2 span.title", text: title) }
+    it { is_expected.not_to have_css(".inset-text div span.header") }
+    it { is_expected.to have_css(".inset-text div span.title", text: title) }
   end
 
   context "when there is only a header but no title" do
     let(:title) { nil }
 
-    it { is_expected.to have_css(".inset-text h2 span.header", text: header) }
-    it { is_expected.not_to have_css(".inset-text h2 span.title") }
+    it { is_expected.to have_css(".inset-text div span.header", text: header) }
+    it { is_expected.not_to have_css(".inset-text div span.title") }
   end
 
   context "when the text contains HTML" do

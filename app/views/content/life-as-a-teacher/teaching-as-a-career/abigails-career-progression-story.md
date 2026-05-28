@@ -5,7 +5,7 @@ title_paragraph: |-
 description: |-
   Hear from Abigail about her journey to becoming head of maths, only 6 years into her teaching career.
 layout: "layouts/minimal"
-colour: grey-pink
+colour: "gitpurple-gitpurple white-text"
 content: 
   - "content/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story/header" 
   - "content/life-as-a-teacher/teaching-as-a-career/abigails-career-progression-story/article"

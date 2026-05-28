@@ -5,7 +5,7 @@ title_paragraph: |-
 description: |-
   Physical education (PE) teacher Danny shares how he tackles challenging behaviour in lessons.
 layout: "layouts/minimal"
-colour: grey-pink
+colour: "gitpurple-gitpurple white-text"
 content: 
   - "content/life-as-a-teacher/teaching-as-a-career/turning-a-tough-lesson-into-a-success/header" 
   - "content/life-as-a-teacher/teaching-as-a-career/turning-a-tough-lesson-into-a-success/article"

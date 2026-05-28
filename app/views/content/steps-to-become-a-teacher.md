@@ -33,7 +33,6 @@
       header: Non-UK citizens
       title: additional steps
       text: There are more steps to consider if you're <a href="/non-uk-teachers">a non-UK citizen</a>.
-      color: purple
 ---
 
 These steps can help you to achieve [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts), which you need to teach in many primary and secondary schools in England.
