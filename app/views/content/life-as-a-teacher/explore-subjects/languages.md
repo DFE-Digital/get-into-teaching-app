@@ -9,7 +9,7 @@ title_paragraph: |-
 description: |-
   Teaching languages helps pupils develop their cultural awareness and communication skills. Explore what you'll teach and what funding is available for training.
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 image: "static/images/content/hero-images/languages.jpg"
 content:
   - "content/shared/subject-pages/header"

@@ -6,7 +6,7 @@ content:
    - content/landing/return-to-teaching-advisers/adviser
 image: "static/images/content/campus-advisers/adviser.jpeg"
 layout: "layouts/minimal"
-colour: green-yellow
+colour: "white-text gitpurple-gitpurple"
 noindex: true
 breadcrumbs: false
 ---

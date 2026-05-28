@@ -7,6 +7,6 @@ content:
     - content/events/get-the-most-from-events/content
 image: "static/images/content/events/teaching-event.jpeg"
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 noindex: true
 ---

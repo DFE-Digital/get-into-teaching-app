@@ -4,7 +4,7 @@ module Content
 
     include ContentHelper
 
-    def initialize(text:, title: nil, header: nil, color: "yellow", heading_tag: "h2")
+    def initialize(text:, title: nil, header: nil, color: "gitpink", heading_tag: "div")
       super
 
       @text = substitute_values(text)

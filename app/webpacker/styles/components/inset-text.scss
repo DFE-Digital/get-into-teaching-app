@@ -19,7 +19,7 @@ section.inset-text {
     border-left-color: $grey-mid;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, div {
     margin-top: 0;
 
     span.header {
@@ -53,5 +53,16 @@ section.inset-text {
     background: $white;
     border-left-color: $purple;
     margin-bottom:0;
+  }
+
+  &.gitpink {
+    background: rgba($gitpink, .1);
+    border-left-color: $gitpink;
+  }
+
+  &.gitpink-white {
+    background: $white;
+    border-left-color: $gitpink;
+    margin-bottom: 0;
   }
 }

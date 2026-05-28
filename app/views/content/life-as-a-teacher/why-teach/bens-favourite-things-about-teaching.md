@@ -5,7 +5,7 @@ title_paragraph: |-
 description: |-
   Hear from Ben about his favourite things about teaching.
 layout: "layouts/minimal" 
-colour: grey-pink 
+colour: "gitpurple-gitpurple white-text" 
 image: "static/images/content/case-studies/ben.jpg"
 content: 
   - "content/life-as-a-teacher/why-teach/bens-favourite-things-about-teaching/header" 

@@ -127,9 +127,23 @@
   height: 30px;
 }
 
+.icon-chat-white {
+  @include icon;
+  background-image: url("../images/icon-chat-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
 .icon-call {
   @include icon;
   background-image: url("../images/icon-phone.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-call-white {
+  @include icon;
+  background-image: url("../images/icon-phone-white.svg");
   width: 30px;
   height: 30px;
 }
@@ -150,6 +164,18 @@
 
 .icon--on-yellow {
   background-color: $yellow;
+  padding: $indent-amount;
+  background-size: 60%;
+}
+
+.icon--on-gitlilac {
+  background-color: $gitlilac;
+  padding: $indent-amount;
+  background-size: 60%;
+}
+
+.icon--on-gitpurple {
+  background-color: $gitpurple;
   padding: $indent-amount;
   background-size: 60%;
 }

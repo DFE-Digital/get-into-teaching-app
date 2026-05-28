@@ -9,7 +9,7 @@ title_paragraph: |-
 description: |-
     Find out more about the Engineers teach physics teacher training programme for engineers and material scientists who want to teach physics.
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 image: "static/images/content/hero-images/physics.jpg"
 content:
   - "content/shared/subject-pages/header"

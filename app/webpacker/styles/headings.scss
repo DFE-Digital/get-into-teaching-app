@@ -101,6 +101,10 @@
   @include box-heading(transparent, $black);
 }
 
+.heading--box-transparent-white {
+  @include box-heading(transparent, $white);
+}
+
 .heading--box-green {
   @include box-heading($green, $black);
 }
@@ -123,6 +127,22 @@
 
 .heading--box-yellow {
   @include box-heading($yellow-dark, $black);
+}
+
+.heading--box-gitlilac {
+  @include box-heading($gitlilac, $black);
+}
+
+.heading--box-gitpurple {
+  @include box-heading($gitpurple, $white);
+}
+
+.heading--box-gitbluetint {
+  @include box-heading($gitbluetint, $black);
+}
+
+.heading--box-gitbluepastel {
+  @include box-heading($gitbluepastel, $black);
 }
 
 .heading--box-white {
@@ -169,12 +189,26 @@
   @include highlight-text($green, $black);
 }
 
+.heading--highlight-gitlilac {
+  @include highlight-text($gitlilac, $black);
+}
+
+.heading--highlight-gitbluepastel {
+  @include highlight-text($gitbluepastel, $black);
+}
+
+.heading--highlight-gitgreenpastel {
+  @include highlight-text($gitgreenpastel, $black);
+}
+
 h1 {
   @extend .heading-xxl;
+  font-family: Montserrat, sans-serif;
 }
 
 h2 {
   @extend .heading-xl;
+  font-family: Montserrat, sans-serif;
 
   > i.icon {
     margin-right: .3em;

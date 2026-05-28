@@ -827,7 +827,7 @@ title_paragraph: |-
 description: |-
     Find out how to become a chemistry teacher, including what you'll teach and what funding is available to help you train.
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 image: "static/images/content/hero-images/chemistry.jpg"
 content:
   - "content/shared/subject-pages/header"
@@ -984,7 +984,7 @@ title_paragraph: |-
 description: |-
     Find out how to become a English teacher, including what you'll teach and what funding is available to help you train.
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 image: "static/images/content/hero-images/0032.jpg"
 
 content:
@@ -1022,7 +1022,7 @@ title_paragraph: |-
 description: |-
   Hear what Abigail enjoys most about teaching, and the impact she has through her job.
 layout: "layouts/minimal" 
-colour: grey-pink 
+colour: "gitpurple-gitpurple white-text" 
 image: "static/images/content/case-studies/abigail.jpg" 
 content: 
   - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/header" 

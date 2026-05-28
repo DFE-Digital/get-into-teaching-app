@@ -13,13 +13,15 @@
     </div>
   <% end %>
 
-  <% if content.present? %>
+  <% if content.present? && content? %>
     <div class="hero__content">
       <%= content %>
     </div>
   <% end %>
 
-  <div class="hero__paragraph">
-    <%= paragraph&.html_safe %>
-  </div>
+  <% if paragraph.present? %>
+    <div class="hero__paragraph">
+      <%= paragraph&.html_safe %>
+    </div>
+  <% end %>
 <% end %>

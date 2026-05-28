@@ -8,7 +8,7 @@ title_paragraph: |-
 description: |-
    Find out how to become a primary school teacher, including what you'll teach and if it's the right career for you.
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 image: "static/images/content/hero-images/teacher-primary.jpg"
 content:
   - "content/shared/subject-pages/header"

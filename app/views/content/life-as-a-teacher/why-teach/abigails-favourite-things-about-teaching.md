@@ -5,7 +5,7 @@ title_paragraph: |-
 description: |-
   Hear what Abigail enjoys most about teaching, and the impact she has through her job.
 layout: "layouts/minimal" 
-colour: grey-pink 
+colour: "gitpurple-gitpurple white-text" 
 image: "static/images/content/case-studies/abigail.jpg"
 content: 
   - "content/life-as-a-teacher/why-teach/abigails-favourite-things-about-teaching/header" 

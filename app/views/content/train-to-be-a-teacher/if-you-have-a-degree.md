@@ -76,6 +76,7 @@ This means that even if your course provider is a university, you'll still do pl
 Regardless of your course provider, all teacher training involves at least 2 school placements over a minimum of 24 weeks.
 
 $expect$
+
 $olivia$
 
 ## Where will my training take place?

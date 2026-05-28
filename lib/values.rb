@@ -10,6 +10,8 @@ module Values
 
   # rubocop:disable Style/PerlBackrefs
   def substitute_values(content)
+    return content unless content.is_a? String
+
     content.gsub(PLACEHOLDER_REGEX) { safe_join([value($1)].compact).strip } if content
   end
   # rubocop:enable Style/PerlBackrefs

@@ -3,7 +3,7 @@ title: Career progression in teaching
 description: |- 
   Find out about the opportunities for progression as a teacher, including salary progression, professional qualifications, and mentorship.
 layout: "layouts/minimal"
-colour: pastel yellow-yellow
+colour: pastel gitlilac-gitlilac
 content: 
   - "content/life-as-a-teacher/teaching-as-a-career/career-progression/header" 
   - "content/life-as-a-teacher/teaching-as-a-career/career-progression/article"
