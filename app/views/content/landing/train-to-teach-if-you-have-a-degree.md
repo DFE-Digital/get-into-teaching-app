@@ -9,7 +9,7 @@ content:
     - content/shared/block-promos/mailing_adviser_routes
 image: "static/images/content/hero-images/0030.jpg"
 layout: "layouts/minimal"
-colour: "white-text gitpurple-gitpurple"
+colour: "gitpurple-gitpurple white-text"
 noindex: true
 breadcrumbs: false
 ---
