@@ -8,7 +8,7 @@ title_paragraph: |-
 description: |-
     Find out how to become a secondary school teacher, including what you'll teach and what funding is available to help you train.
 layout: "layouts/minimal"
-colour: pastel gitlilac-gitlilac
+colour: "gitpurple-gitpurple white-text"
 image: "static/images/content/hero-images/chemistry.jpg"
 content:
   - "content/shared/subject-pages/header"

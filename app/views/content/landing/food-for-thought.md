@@ -7,7 +7,7 @@ content:
     - content/shared/block-promos/adviser_routes
 image: "static/images/content/hero-images/cake.png"
 layout: "layouts/minimal"
-colour: "white-text gitpurple-gitpurple"
+colour: "gitpurple-gitpurple white-text"
 noindex: true
 breadcrumbs: false
 ---
