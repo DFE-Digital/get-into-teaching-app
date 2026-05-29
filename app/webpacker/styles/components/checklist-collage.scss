@@ -32,14 +32,14 @@
         background-image: url("../images/icon-arrow.svg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 20px 20px;
+        background-size: 25px 25px;
         background-color: $gitlilac;
         display: block;
         width: 30px;
         height: 30px;
         position: absolute;
         margin-left: -3.5rem;
-        border: none;
+        border: solid 4px $gitlilac;
         top: -5px;
       }
     }
