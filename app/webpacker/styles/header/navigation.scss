@@ -358,6 +358,7 @@ body > header {
               box-shadow: none;
               color: $black;
               background: $grey-lighter;
+
               .nav-icon {
                 &__contracted, &__expanded {
                   background-image: url("../images/navigation/arrow-right-black.svg");
