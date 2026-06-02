@@ -4,7 +4,7 @@
       <div class="checklist-content">
         <i class="icon-arrow icon-arrow--gitlilac"></i>
       </div>
-      <%= tag.div(safe_join([tag.strong(item)]), class:"checklist-content") %>
+      <%= tag.div(safe_join([tag.strong(item)]), class: "checklist-content") %>
     <% end %>
     <div class="checklist-footer">
       <%= link_to(cta[:text], cta[:link], class: "button") if cta.present? %>
