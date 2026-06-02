@@ -116,13 +116,14 @@ body > header {
             &:focus {
               .nav-icon {
                 &__contracted {
-                  background-image: url("../images/navigation/arrow-down-gitpurple.svg");
+                  background-image: url("../images/navigation/arrow-down-white.svg");
                 }
 
                 &__expanded {
-                  background-image: url("../images/navigation/arrow-up-gitpurple.svg");
+                  background-image: url("../images/navigation/arrow-up-white.svg");
                 }
               }
+              box-shadow: none;
             }
           }
         }
@@ -131,11 +132,11 @@ body > header {
         ol.category-links-list > li > .menu-link {
           > .nav-icon {
             &__contracted {
-              background-image: url("../images/navigation/arrow-down-black.svg");
+              background-image: url("../images/navigation/arrow-down-gitpurple.svg");
             }
 
             &__expanded {
-              background-image: url("../images/navigation/arrow-up-black.svg");
+              background-image: url("../images/navigation/arrow-up-white.svg");
             }
           }
 
@@ -149,6 +150,7 @@ body > header {
                 background-image: url("../images/navigation/arrow-up-white.svg");
               }
             }
+            box-shadow: none;
           }
         }
 
@@ -160,7 +162,7 @@ body > header {
               }
 
               &__expanded {
-                background-image: url("../images/navigation/arrow-up-black.svg");
+                background-image: url("../images/navigation/arrow-up-white.svg");
               }
             }
           }

@@ -22,9 +22,9 @@
 
   &:focus {
     color: $white;
-    background-color: $black;
+    background-color: $gitpurple;
     z-index: 100;
-    box-shadow: 0 5px $pink;
+    box-shadow: none;
     outline: 4px solid transparent;
   }
 }
