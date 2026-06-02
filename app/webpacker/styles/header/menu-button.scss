@@ -19,23 +19,17 @@
     padding: .8em 1em;
 
     &:active {
-      background-color: $gitpurple;
+      background-color: $black;
       box-shadow: none;
+      color: $white;
     }
 
     &:hover {
       cursor: pointer;
-      background: darken($gitpurple, 5%);
-      color: $white;
-      border: 4px solid $gitpurple;
-
-      .menu-button__icon {
-        background-image: url("../images/icon-close.svg");
-      }
     }
 
     &:focus {
-      border-color: $gitpurple;
+      border-color: $black;
     }
 
     &.open {
@@ -43,8 +37,7 @@
       color: $white;
 
       &:focus {
-        background-color: $cta-green;
-        border-color: $cta-green;
+        background-color: $black;
       }
 
       &:focus .menu-button__icon {
