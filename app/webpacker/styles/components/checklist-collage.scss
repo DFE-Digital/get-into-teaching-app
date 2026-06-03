@@ -16,32 +16,19 @@
     min-width: 0;
   }
 
-  ul {
-    position: relative;
-    list-style: none;
-    padding-left: 3.5rem;
-    margin-top: 0;
-    margin-bottom: 2 * $indent-amount;
+  .checklist-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    align-self: center;
 
-    li {
-      position: relative;
-      margin: 0 0 2em;
+    .checklist-content {
+      align-self: center;
+    }
 
-      &::before {
-        content: "";
-        background-image: url("../images/icon-arrow.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 20px 20px;
-        background-color: $gitlilac;
-        display: block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        margin-left: -3.5rem;
-        border: none;
-        top: -5px;
-      }
+    .checklist-footer {
+      grid-column: 1 / -1;
     }
   }
 
