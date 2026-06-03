@@ -103,6 +103,13 @@ provider_groups:
       
   East Midlands:
     providers:
+    - header: "Bluecoat SCITT Alliance Nottingham"
+      link: "https://www.bluecoatscittalliance.uk.com/vacancies/assessment-only-route/"
+      name: "Rebecca Underhill"
+      email: "runderhill@archwaytrust.co.uk"
+      telephone: "0115 9007230"
+      international_phone: "+441159007230"
+      
     - header: "Educate Group Initial Teacher Training"
       link: "https://educate-group.co.uk/assessment-only-route/"
       name: "Claire King"
@@ -160,6 +167,13 @@ provider_groups:
       email: "cwager@colchesterttc.org.uk"
       telephone: "01206364728"
       international_phone: "+441206364728"
+      
+    - header: "EAST SCITT"
+      link: "https://www.eastscitt.co.uk"
+      name: "Kerensa Carrick"
+      email: "kerensacarrick@eastscitt.co.uk"
+      telephone: "01473 624855"
+      international_phone: "+441473624855"
       
     - header: "Educate Group Initial Teacher Training"
       link: "https://educate-group.co.uk/assessment-only-route/"
@@ -581,6 +595,13 @@ provider_groups:
       email: "h.grout@reading.ac.uk"
       telephone: "0118 378 7237"
       international_phone: "+441183787237"
+      
+    - header: "University of Southampton"
+      link: "https://www.southampton.ac.uk/education/postgraduate/itt_courses/courses.page"
+      name: "Emily Henry"
+      email: "partnership@soton.ac.uk"
+      telephone: "023 8059 8958"
+      international_phone: "+442380598958"
       
     - header: "University of Winchester"
       link: "https://www.winchester.ac.uk/study/Short-courses/Courses/Assessment-Only-Route-to-Qualified-Teacher-Status/"
