@@ -116,13 +116,14 @@ body > header {
             &:focus {
               .nav-icon {
                 &__contracted {
-                  background-image: url("../images/navigation/arrow-down-gitpurple.svg");
+                  background-image: url("../images/navigation/arrow-down-white.svg");
                 }
 
                 &__expanded {
-                  background-image: url("../images/navigation/arrow-up-gitpurple.svg");
+                  background-image: url("../images/navigation/arrow-up-white.svg");
                 }
               }
+              box-shadow: none;
             }
           }
         }
@@ -131,11 +132,11 @@ body > header {
         ol.category-links-list > li > .menu-link {
           > .nav-icon {
             &__contracted {
-              background-image: url("../images/navigation/arrow-down-black.svg");
+              background-image: url("../images/navigation/arrow-down-gitpurple.svg");
             }
 
             &__expanded {
-              background-image: url("../images/navigation/arrow-up-black.svg");
+              background-image: url("../images/navigation/arrow-up-white.svg");
             }
           }
 
@@ -149,6 +150,7 @@ body > header {
                 background-image: url("../images/navigation/arrow-up-white.svg");
               }
             }
+            box-shadow: none;
           }
         }
 
@@ -160,7 +162,7 @@ body > header {
               }
 
               &__expanded {
-                background-image: url("../images/navigation/arrow-up-black.svg");
+                background-image: url("../images/navigation/arrow-up-white.svg");
               }
             }
           }
@@ -219,13 +221,15 @@ body > header {
           }
 
           > .menu-link:hover {
-            border-bottom: solid 4px $black;
+            border-bottom: solid 4px $gitpurple;
           }
 
           > .menu-link:focus {
             box-shadow: none;
             outline: none;
             border-bottom: solid 4px $gitpurple;
+            background-color: $grey;
+            color: $black;
           }
 
           &.selected > .menu-link {
@@ -351,6 +355,10 @@ body > header {
             border-left: solid transparent 4px;
 
             &:focus {
+              box-shadow: none;
+              color: $black;
+              background: $grey-lighter;
+
               .nav-icon {
                 &__contracted, &__expanded {
                   background-image: url("../images/navigation/arrow-right-black.svg");
@@ -360,7 +368,7 @@ body > header {
 
             &:hover {
               color: $black;
-              background: #DEDEDE;
+              background: $grey-lighter;
 
               .menu-title {
                 text-decoration-thickness: max(3px, .1875rem, .12em); // fix required for Safari
@@ -379,7 +387,7 @@ body > header {
 
             &.active {
               color: $black;
-              background: #DEDEDE;
+              background: $grey-lighter;
             }
 
             .menu-title {
@@ -400,7 +408,7 @@ body > header {
 
           &:hover {
             color: $black;
-            background: #DEDEDE;
+            background: $grey-lighter;
 
             .nav-icon {
               &__contracted, &__expanded {

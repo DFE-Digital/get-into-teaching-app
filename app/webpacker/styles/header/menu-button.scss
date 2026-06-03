@@ -19,8 +19,9 @@
     padding: .8em 1em;
 
     &:active {
-      background-color: $white;
+      background-color: $black;
       box-shadow: none;
+      color: $white;
     }
 
     &:hover {
