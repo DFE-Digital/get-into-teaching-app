@@ -37,7 +37,7 @@ describe Content::ChecklistCollageComponent, type: :component do
 
   it "renders the checklist items" do
     checklist.each do |item|
-      is_expected.to have_css("ul li", text: item)
+      is_expected.to have_css("div.checklist-grid div.checklist-content", text: item)
     end
   end
 
