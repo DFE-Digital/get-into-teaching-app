@@ -155,6 +155,20 @@
   height: 30px;
 }
 
+.icon-arrow {
+  @include icon;
+  background-image: url("../images/icon-arrow.svg");
+  width: 30px;
+  height: 30px;
+
+  &--gitlilac {
+    width: 25px;
+    height: 25px;
+    background-color: $gitlilac;
+    border: solid 4px $gitlilac;
+  }
+}
+
 .icon-arrow-black {
   @include icon;
   background-image: url("../images/icon-arrow-black.svg");

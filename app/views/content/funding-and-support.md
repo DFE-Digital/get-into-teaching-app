@@ -13,7 +13,7 @@ content:
     - content/funding-and-support/questions
     - content/funding-and-support/why-teach
 image: "static/images/content/hero-images/0032.jpg"
-hero_bg_color: yellow
+hero_bg_color: gitpurple
 title_bg_color: white
 hero_blend_content: true
 ---
