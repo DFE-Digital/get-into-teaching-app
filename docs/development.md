@@ -19,6 +19,13 @@ GIT_API_ENDPOINT=https://localhost:5001/api  \
  bundle exec rails server
 ```
 
+### Running a review app with a review api
+
+Use the following make command to allow a GIT website review app to connect to an API review app, where `AAAA` is the PR number of the GIT website review app and `BBBB` is the PR of the GIT API review app:
+```bash
+make review-update-env PR_NUMBER=AAAA GIT_API_PR=BBBB
+```
+
 ## Running the test suites
 
 * To run the Ruby tests: `rspec`
