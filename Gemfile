@@ -17,7 +17,7 @@ gem "invisible_captcha"
 
 gem "iso_country_codes"
 
-gem "shakapacker", "8.4.0"
+gem "shakapacker", "9.5.0"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -44,7 +44,7 @@ gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.4.0"
 gem "rinku"
 
-gem "addressable", "~> 2.8.7"
+gem "addressable", "~> 2.9.0"
 
 gem "rack-attack"
 
@@ -92,7 +92,7 @@ gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 3.21.0"
+gem "view_component", "~> 4.9.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
