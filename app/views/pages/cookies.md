@@ -4,7 +4,7 @@ title: Cookies Policy
 
 Last updated: 10 June 2026
 
-This Cookies Policy explains what cookies are and how we use them. You should read this policy so you can understand what type of Cookies we use, or the information we collect using Cookies and how that information is used.
+This Cookies Policy explains what Cookies are and how we use them. You should read this policy so you can understand what type of Cookies we use, or the information we collect using Cookies and how that information is used.
 
 Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from Cookies. For further information on how we use, store and keep your personal data secure, see our [privacy policy](/privacy-policy).
 
