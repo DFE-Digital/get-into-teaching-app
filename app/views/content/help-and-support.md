@@ -1,5 +1,6 @@
 ---
 title: "Help and support getting into teaching"
+title_bg_color: gitpurple
 heading: "Get help and support"
 image: "static/images/content/hero-images/0025.jpg"
 title_paragraph: We're here to answer your questions and provide advice about getting into teaching, whether you're just thinking about teaching or you're ready to apply.

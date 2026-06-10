@@ -1,11 +1,15 @@
 .expander-details {
   padding: 0.75em 1em;
-  border-left:6px solid $purple;
+  border-left:6px solid $gitpink;
   margin-top: 2em;
   margin-bottom: 2em;
 
   &__background-purple {
     background: rgba($purple, .1);
+  }
+
+  &__background-gitpink {
+    background: rgba($gitpink, .1);
   }
 
   &__summary::-webkit-details-marker{
@@ -37,11 +41,11 @@
       background-repeat: no-repeat;
 
       &__open {
-        background-image: url("../images/navigation/arrow-down-purple.svg");
+        background-image: url("../images/navigation/arrow-down-pink.svg");
       }
 
       &__close {
-        background-image: url("../images/navigation/arrow-up-purple.svg");
+        background-image: url("../images/navigation/arrow-up-pink.svg");
       }
     }
   }

@@ -5,7 +5,7 @@ title_paragraph: |-
 description: |-
   In Ben’s second year of teaching, he took on the role of head of physics. He then moved departments and became assistant head of maths.
 layout: "layouts/minimal"
-colour: grey-pink
+colour: "gitpurple-gitpurple white-text"
 content: 
   - "content/life-as-a-teacher/teaching-as-a-career/from-teaching-internship-to-leadership-roles/header" 
   - "content/life-as-a-teacher/teaching-as-a-career/from-teaching-internship-to-leadership-roles/article"

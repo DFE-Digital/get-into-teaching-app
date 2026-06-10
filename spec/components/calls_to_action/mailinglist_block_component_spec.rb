@@ -3,7 +3,8 @@ require "rails_helper"
 RSpec.describe CallsToAction::MailinglistBlockComponent, type: :component do
   let(:title) { "Get personalised guidance" }
   let(:image) { "mailing-list-block-promo.jpg" }
-  let(:title_color) { "yellow" }
+  let(:image_classes) { "image-background some-class" }
+  let(:title_color) { "gitbluepastel" }
   let(:text) { "Sign up for free guidance and support on getting into teaching." }
   let(:link_text) { "Get advice in your inbox" }
   let(:link_target) { "/mailinglist/signup/name" }
@@ -12,6 +13,7 @@ RSpec.describe CallsToAction::MailinglistBlockComponent, type: :component do
     {
       title: title,
       image: image,
+      image_classes: image_classes,
       title_color: title_color,
       text: text,
       link_text: link_text,
@@ -42,6 +44,10 @@ RSpec.describe CallsToAction::MailinglistBlockComponent, type: :component do
 
     it "renders the link with correct text and href" do
       expect(page).to have_link(link_text, href: link_target)
+    end
+
+    it "renders a div for the image with the correct classes" do
+      expect(page).to have_css("div.image-background.some-class")
     end
   end
 end

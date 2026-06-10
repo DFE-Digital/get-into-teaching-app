@@ -24,7 +24,7 @@
     color: $white;
     background-color: $black;
     z-index: 100;
-    box-shadow: 0 5px $pink;
+    box-shadow: none;
     outline: 4px solid transparent;
   }
 }
@@ -62,8 +62,8 @@
 
   &:focus {
     color: $white;
-    background-color: $black;
-    box-shadow: 0 4px $pink;
+    background-color: $gitpurple;
+    box-shadow: 0 4px $gitlilac;
     outline: 4px solid transparent;
     text-decoration: none;
 
@@ -71,6 +71,12 @@
       border-color: $white;
     }
   }
+
+  // &:focus {
+  //  background-color: $grey;
+  //  box-shadow: 0 4px $gitpurple;
+  //  color: $black;
+  // }
 }
 
 .link--padding {
@@ -136,6 +142,12 @@ ol.primary > li {
   &:focus {
     color: $white;
   }
+  //  &:focus {
+  //    background-color: $grey;
+  //    box-shadow: 0 4px $gitpurple;
+  //    color: $black;
+  //  }
+
 }
 
 .link--pink {
@@ -150,6 +162,21 @@ ol.primary > li {
 
   &:focus {
     @include highlight-text($black, $white);
+  }
+}
+
+.link--gitlilac {
+  @include highlight-text($gitlilac, $black);
+
+  &::after {
+    border-color: $gitlilac;
+  }
+
+  &:hover {
+    text-decoration-thickness: max(3px, .1875rem, .12em)};
+
+  &:focus {
+    @include highlight-text($gitpurple, $white);
   }
 }
 
@@ -181,6 +208,14 @@ ol.primary > li {
     color: $white;
   }
 }
+
+// .link--dark {
+//  color: $black;
+//
+//  &:focus {
+//    color: $black;
+//  }
+// }
 
 .link--underline {
   text-decoration: underline;

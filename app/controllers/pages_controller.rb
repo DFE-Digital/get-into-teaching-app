@@ -56,6 +56,9 @@ class PagesController < ApplicationController
   end
 
   # Avoid caching by rendering these pages manually:
+  def home
+    render_page("home")
+  end
 
   def campus_mailing_list
     render_page("landing/campus-mailing-list")
