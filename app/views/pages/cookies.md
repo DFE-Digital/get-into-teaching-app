@@ -2,11 +2,11 @@
 title: Cookies Policy
 ---
 
-Last updated: 17 March 2025
+Last updated: 10 June 2026
 
 This Cookies Policy explains what Cookies are and how we use them. You should read this policy so you can understand what type of Cookies we use, or the information we collect using Cookies and how that information is used.
 
-Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from Cookies. For further information on how we use, store and keep your personal data secure, see our [Privacy Policy](/privacy-policy).
+Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from Cookies. For further information on how we use, store and keep your personal data secure, see our [privacy policy](/privacy-policy).
 
 We want to make our services easy, useful and reliable. When services are delivered on the internet, this sometimes involves placing small amounts of information on your computer, tablet, or mobile phone – whichever device you use to access our site. These include small files known as Cookies.
 
@@ -119,6 +119,7 @@ We may also share anonymised and hashed data with third party platforms. This he
 
 | Name                 | Purpose                                                                                                                                                         | Expires after |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| `_ttp`| Used by TikTok to measure and improve the performance of advertising campaigns and to personalise the customer experience (including ads)| 13 months |
 | `_pin_unauth`        | Used by Pinterest to collect information about how their visitors interact with the pages on the website to track the efficiency                                | 1 year        |
 | `sc_at`              | Used by Snapchat to deliver more relevant and meaningful adverts. Also used to track the efficiency                                                             | 12 months     |
 | `_ar_debug`              |This cookie is used by Pinterest and DoubleClick to debug ads    | 1 month     |
