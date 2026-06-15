@@ -40,7 +40,7 @@ SecureHeaders::Configuration.default do |config|
   reddit      = %w[www.redditstatic.com alb.reddit.com conversions-config.reddit.com]
   clarity     = %w[www.clarity.ms *.clarity.ms *.bing.com]
   vwo         = %w[app.vwo.com *.visualwebsiteoptimizer.com]
-  tiktok      = %w[*.analytics.tiktok.com]
+  tiktok      = %w[analytics.tiktok.com *.analytics.tiktok.com]
 
   quoted_unsafe_inline = ["'unsafe-inline'"]
   quoted_unsafe_eval   = ["'unsafe-eval'"]
