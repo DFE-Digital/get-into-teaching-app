@@ -1,6 +1,6 @@
 module PickListLookups
   def degree_status(id)
-    @degree_statuses ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_qualification_degree_status
+    @degree_statuses ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_qualification_degree_statuses
     find_by_id(@degree_statuses, id)
   end
 
@@ -10,7 +10,7 @@ module PickListLookups
   end
 
   def citizenship(id)
-    @citizenships ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_citizenship
+    @citizenships ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_citizenships
     find_by_id(@citizenships, id)
   end
 
@@ -20,12 +20,12 @@ module PickListLookups
   end
 
   def visa_status(id)
-    @visa_statuses ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_visa_status
+    @visa_statuses ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_visa_statuses
     find_by_id(@visa_statuses, id)
   end
 
   def location(id)
-    @locations ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_location
+    @locations ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_locations
     find_by_id(@locations, id)
   end
 

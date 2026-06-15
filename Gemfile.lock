@@ -31,12 +31,13 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: 0e6f57f43497eca98ef15498055a6a10d22d487e
+  revision: c9628938ee16633a34ea01a510fdf96b1f29a526
+  branch: new-ruby-gem-client
   specs:
     get_into_teaching_api_client (4.3.7.3)
       faraday (>= 1.0.1, < 3.0)
       faraday-multipart
-    get_into_teaching_api_client_faraday (4.3.7.3)
+    get_into_teaching_api_client_faraday (5.0)
       activesupport
       faraday
       faraday-encoding
@@ -761,7 +762,7 @@ DEPENDENCIES
   foreman
   front_matter_parser!
   geometry!
-  get_into_teaching_api_client_faraday (>= 4.3.7.3)!
+  get_into_teaching_api_client_faraday (~> 5.0)!
   git_wizard!
   google-api-client (>= 0.53.0)
   govuk_design_system_formbuilder (>= 2.8.0)

@@ -2,7 +2,7 @@ module TeacherTrainingAdviser::Steps
   class GcseMathsEnglish < GITWizard::Step
     attribute :has_gcse_maths_and_english_id, :integer
 
-    validates :has_gcse_maths_and_english_id, pick_list_items: { method: :get_candidate_retake_gcse_status }
+    validates :has_gcse_maths_and_english_id, pick_list_items: { method: :get_candidate_retake_gcse_statuses }
 
     OPTIONS = Crm::BooleanType::ALL
 
