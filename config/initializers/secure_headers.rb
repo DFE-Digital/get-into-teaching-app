@@ -40,6 +40,7 @@ SecureHeaders::Configuration.default do |config|
   reddit      = %w[www.redditstatic.com alb.reddit.com conversions-config.reddit.com]
   clarity     = %w[www.clarity.ms *.clarity.ms *.bing.com]
   vwo         = %w[app.vwo.com *.visualwebsiteoptimizer.com]
+  tiktok      = %w[*.analytics.tiktok.com]
 
   quoted_unsafe_inline = ["'unsafe-inline'"]
   quoted_unsafe_eval   = ["'unsafe-eval'"]
@@ -62,15 +63,15 @@ SecureHeaders::Configuration.default do |config|
     default_src: %w['none'],
     base_uri: self_base,
     child_src: self_base.concat(youtube, pinterest, snapchat),
-    connect_src: self_base.concat(google_apis, pinterest, google_analytics, google_supported, google_doubleclick, facebook, snapchat, sentry, gtm_server, clarity, vwo),
+    connect_src: self_base.concat(google_apis, pinterest, google_analytics, google_supported, google_doubleclick, facebook, snapchat, sentry, gtm_server, clarity, vwo, tiktok),
     font_src: self_base.concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: self_base.concat(snapchat, facebook, govuk),
     frame_src: self_base.concat(snapchat, facebook, youtube, google_doubleclick, google_analytics, data, pinterest, clarity, vwo),
     frame_ancestors: self_base,
-    img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, gtm_server, reddit, clarity, vwo, %w[chart.googleapis.com wingify-assets.s3.amazonaws.com cx.atdmt.com linkbam.uk]),
+    img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, gtm_server, reddit, clarity, vwo, tiktok, %w[chart.googleapis.com wingify-assets.s3.amazonaws.com cx.atdmt.com linkbam.uk]),
     manifest_src: self_base,
     media_src: self_base.concat(assets),
-    script_src: quoted_unsafe_inline + quoted_unsafe_eval + self_base.concat(google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, twitter, snapchat, youtube, reddit, clarity, vwo),
+    script_src: quoted_unsafe_inline + quoted_unsafe_eval + self_base.concat(google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, twitter, snapchat, youtube, reddit, clarity, vwo, tiktok),
     style_src: quoted_unsafe_inline + self_base.concat(govuk, google_apis, google_supported, vwo),
     worker_src: self_base.concat(blob),
   }
