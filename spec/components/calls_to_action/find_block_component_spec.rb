@@ -3,7 +3,8 @@ require "rails_helper"
 RSpec.describe CallsToAction::FindBlockComponent, type: :component do
   let(:title) { "Find your teacher training course" }
   let(:image) { "find-block-promo.jpg" }
-  let(:title_color) { "green" }
+  let(:image_classes) { "image-background some-class" }
+  let(:title_color) { "gitgreenpastel" }
   let(:text) { "Explore the different teacher training courses available." }
   let(:link_text) { "Find teacher training courses" }
   let(:link_target) { "https://find-teacher-training-courses.service.gov.uk" }
@@ -12,6 +13,7 @@ RSpec.describe CallsToAction::FindBlockComponent, type: :component do
     {
       title: title,
       image: image,
+      image_classes: image_classes,
       title_color: title_color,
       text: text,
       link_text: link_text,
@@ -42,6 +44,10 @@ RSpec.describe CallsToAction::FindBlockComponent, type: :component do
 
     it "renders the link with correct text and href" do
       expect(page).to have_link(link_text, href: link_target)
+    end
+
+    it "renders a div for the image with the correct classes" do
+      expect(page).to have_css("div.image-background.some-class")
     end
   end
 end

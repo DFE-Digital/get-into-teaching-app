@@ -9,7 +9,7 @@ content:
     - content/shared/block-promos/mailing_routes_under18version
 image: "static/images/content/hero-images/0029.jpg"
 layout: "layouts/minimal"
-colour: pink-blue
+colour: "gitpurple-gitpurple white-text"
 noindex: true
 breadcrumbs: false
 ---

@@ -90,6 +90,13 @@ $mobile-cutoff: 800px;
     }
 
     @include mq($until: tablet) {
+      &.content-wide {
+        .hero__title {
+          grid-column-end: -1;
+          text-align: center;
+        }
+      }
+
       &__paragraph {
         padding: 0 1.5em;
       }
@@ -163,6 +170,70 @@ $mobile-cutoff: 800px;
         grid-area: 5 / 2 / 7 / 4;
       }
     }
+
+    &.content-wide {
+      .hero__title {
+        font-weight: 700;
+
+        h1 {
+          padding-bottom: 0.75rem;
+          margin-bottom: 0.35rem;
+
+          @include mq($until: tablet) {
+            font-size: 2.5rem;
+          }
+
+          @include mq($from: tablet) {
+            font-size: 4.5rem;
+          }
+
+          @include mq($from: desktop) {
+            font-size: 5.25rem;
+          }
+
+          @include mq($from: wide) {
+            font-size: 6rem;
+          }
+        }
+      }
+
+      .hero__subtitle {
+        color: $white;
+        font-weight: 500;
+        margin-bottom: 4em;
+        margin-top: 0;
+
+        @include mq($until: tablet) {
+          margin-left: 0;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        @include mq($from: tablet) {
+          margin-left: 1em;
+        }
+
+        @include mq($from: desktop) {
+          margin-left: 1.5em;
+        }
+
+        @include mq($from: wide) {
+          margin-left: 2em;
+        }
+      }
+
+      picture {
+        @include mq($until: tablet) {
+          grid-column-start: -5;
+        }
+
+        img {
+          object-fit: contain;
+          margin-right: auto;
+          object-position: 50% 30%;
+        }
+      }
+    }
   }
 }
 
@@ -177,6 +248,14 @@ $mobile-cutoff: 800px;
 
   &.yellow {
     background-color: $yellow-dark;
+  }
+
+  &.gitpurple {
+    background-color: $gitpurple;
+
+    .hero__paragraph {
+      color: $white;
+    }
   }
 
   &__title {
@@ -399,6 +478,10 @@ $mobile-cutoff: 800px;
 		&.pastel {
 			background-color: rgba($background-color, 0.4);
 		}
+
+    &.white-text {
+      color: white;
+    }
 	}
 
 	&.pink-blue { @include colours($pink, $blue); }
@@ -410,6 +493,8 @@ $mobile-cutoff: 800px;
 	&.yellow-green { @include colours($yellow, $green); }
   &.yellow-yellow { @include colours($yellow, $yellow); }
   &.grey-pink { @include colours($grey, $pink); }
+  &.gitlilac-gitlilac { @include colours($gitlilac, $gitlilac); }
+  &.gitpurple-gitpurple { @include colours($gitpurple, $gitpurple); }
 }
 
 // New styles for LandingHeroFullwidthComponent

@@ -14,7 +14,7 @@
   // allow level two headings (blue boxes) and CTAs to 'overhang' on the left
   > h2 {
     @include overhang;
-    @extend .heading-l, .heading--box-blue;
+    @extend .heading-l, .heading--box-gitlilac;
   }
 
   p,

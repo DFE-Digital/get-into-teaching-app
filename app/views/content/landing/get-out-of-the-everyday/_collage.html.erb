@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="grey col">
+    <section class="col col-full-content">
+      <div class="inset">
+        <p class="col-720">
+          Teaching puts you in the lead. You set the tone, shape your lessons, and make your mark every day. As a teacher, you can:
+        </p>
+        <%= render Content::ChecklistCollageComponent.new(
+          checklist: [
+            "teach your way and shape your own career",
+            "use your creativity to tackle different challenges every day",
+            "be someone who matters in your school and community",
+            "earn a competitive salary starting from $salaries_starting_min$ (or higher in London)",
+          ],
+          image_paths: [
+            "static/images/content/hero-images/d0fe03v3.jpg",
+          ]
+        ) %>
+      </div>
+    </section>
+  </div>
+</div>

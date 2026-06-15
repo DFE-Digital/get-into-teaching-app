@@ -4,11 +4,12 @@
   z-index: 0;
   overflow: hidden;
   top: 0;
-  left: -20px;
   position: relative;
   padding-bottom: 5px;
   display: flex;
   align-items: center;
+  left: 5px;
+  padding-left: 10px;
 
   @include mq($until: narrow) {
     // for very small screens, don't offset the logo
@@ -24,10 +25,6 @@
     top: -26px;
     margin-bottom: -16px;
     padding-bottom: 0;
-  }
-
-  @include mq($from: desktop) {
-    left: -10px;
   }
 }
 

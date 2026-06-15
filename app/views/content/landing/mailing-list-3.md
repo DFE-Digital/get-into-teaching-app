@@ -5,6 +5,7 @@ content:
     - content/landing/mailing-list-3/header
     - content/landing/mailing-list-3/mailing-list
 image: "static/images/content/hero-images/english.jpg"
+colour: "gitpurple-gitpurple white-text"
 layout: "layouts/minimal"
 noindex: true
 breadcrumbs: false

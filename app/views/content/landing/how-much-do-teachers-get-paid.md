@@ -8,7 +8,7 @@ content:
     - content/landing/how-much-do-teachers-get-paid/content
     - content/shared/block-promos/mailing_adviser_routes
 image: "static/images/content/hero-images/science.jpg"
-colour: "pink-blue"
+colour: "gitpurple-gitpurple white-text"
 layout: "layouts/minimal"
 noindex: true
 breadcrumbs: false

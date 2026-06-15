@@ -77,6 +77,40 @@ $space-between-sections: 3.7em;
   width: 100%;
 
   .image-block {
+    .image-background {
+      margin: 0;
+
+      &.gitbluetint {
+        background-color: $gitbluetint;
+      }
+
+      &.gitgreentint {
+        background-color: $gitgreentint;
+      }
+
+      picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 9.2%;
+        margin-bottom: 9.2%;
+
+        img {
+          width: auto;
+          height: 180px;
+        }
+      }
+
+      &.padding-small {
+        picture > img {
+          height: 170px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+
     img {
       width: 100%;
       height: auto;
@@ -90,6 +124,44 @@ $space-between-sections: 3.7em;
         @extend .link--black;
       }
     }
+
+    h2.increased-line-height {
+      line-height: 1.4em;
+    }
+  }
+
+  &:has(> :nth-child(3)) {
+    .image-block {
+      .image-background {
+        picture > img {
+          height: 130px;
+        }
+
+        &.padding-small {
+          picture > img {
+            height: 110px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+        }
+
+        &.padding-medium {
+          picture > img {
+            height: 94px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+          }
+        }
+
+        &.padding-large {
+          picture > img {
+            height: 80px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+          }
+        }
+      }
+    }
   }
 
   @include mq($from: tablet) {
@@ -100,6 +172,10 @@ $space-between-sections: 3.7em;
       h2 {
         @include font-size("medium");
         margin-left: 2 * $indent-amount;
+      }
+
+      h2.reduced-left-margin {
+        margin-left: 1.3333 * $indent-amount;
       }
 
       ul {
