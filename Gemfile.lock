@@ -160,8 +160,8 @@ GEM
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
-    addressable (2.8.7)
-      public_suffix (>= 2.0.2, < 7.0)
+    addressable (2.9.0)
+      public_suffix (>= 2.0.2, < 8.0)
     amazing_print (2.0.0)
     ast (2.4.3)
     base64 (0.3.0)
@@ -320,10 +320,10 @@ GEM
       multi_json (~> 1.11)
       os (>= 0.9, < 2.0)
       signet (>= 0.16, < 2.a)
-    govuk-components (5.11.1)
+    govuk-components (6.3.1)
       html-attributes-utils (~> 1.0.0, >= 1.0.0)
       pagy (>= 6, < 10)
-      view_component (>= 3.18, < 3.24)
+      view_component (>= 4.9, < 4.13)
     govuk_design_system_formbuilder (5.13.0)
       actionview (>= 6.1)
       activemodel (>= 6.1)
@@ -355,7 +355,8 @@ GEM
       reline (>= 0.4.2)
     iso_country_codes (0.7.8)
     json (2.19.5)
-    jwt (2.7.1)
+    jwt (2.10.3)
+      base64
     kaminari (1.2.2)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.2.2)
@@ -475,10 +476,10 @@ GEM
       pry (>= 0.13, < 0.16)
     pry-rails (0.3.11)
       pry (>= 0.13.0)
-    psych (5.3.1)
+    psych (5.4.0)
       date
       stringio
-    public_suffix (6.0.2)
+    public_suffix (7.0.5)
     puma (6.4.3)
       nio4r (~> 2.0)
     raabro (1.4.0)
@@ -644,7 +645,7 @@ GEM
     sentry-ruby (6.2.0)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
-    shakapacker (8.4.0)
+    shakapacker (9.5.0)
       activesupport (>= 5.2)
       package_json
       rack-proxy (>= 0.6.1)
@@ -703,10 +704,10 @@ GEM
       timeliness (>= 0.3.10, < 1)
     vcr (6.4.0)
     victor (0.3.4)
-    view_component (3.21.0)
-      activesupport (>= 5.2.0, < 8.1)
-      concurrent-ruby (~> 1.0)
-      method_source (~> 1.0)
+    view_component (4.9.0)
+      actionview (>= 7.1.0)
+      activesupport (>= 7.1.0)
+      concurrent-ruby (~> 1)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -725,7 +726,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.8.1)
+    zeitwerk (2.8.2)
 
 PLATFORMS
   arm64-darwin
@@ -734,7 +735,7 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack-cloudfront (>= 1.2.0)
-  addressable (~> 2.8.7)
+  addressable (~> 2.9.0)
   amazing_print
   benchmark
   better_html (>= 1.0.16)
@@ -810,7 +811,7 @@ DEPENDENCIES
   selenium-webdriver
   sentry-rails (>= 5.10.0)
   sentry-ruby (~> 6.2.0)
-  shakapacker (= 8.4.0)
+  shakapacker (= 9.5.0)
   shoulda-matchers
   sidekiq (>= 6.5.5, < 6.5.6)
   sidekiq-cron
@@ -823,7 +824,7 @@ DEPENDENCIES
   validates_timeliness
   vcr
   victor
-  view_component (~> 3.21.0)
+  view_component (~> 4.9.0)
   web-console (>= 4.2.0)
   webmock (>= 3.14.0)
 
