@@ -23,17 +23,12 @@ inset_text:
       <p>The IRP pilot was a 2 year trial to support non-UK citizens who want to teach in England. It offered up to £10,000 to eligible non-UK teachers of languages or physics, to help cover some of the costs of moving to England. It started on 1 September 2023 and ended on 31 May 2025.</p> 
       <br>
       <p>Applications for the first $nonuk_internationalrelocationpayment_instalment$ of the IRP closed on 30 June 2025. Applications for the second instalment of the IRP closed on 30 June 2026.</p>
+      <p> If you have questions about the IRP, missed the application window, or believe you were eligible and have not been contacted, you can email international.relocationpayment@education.gov.uk explaining your circumstances and we will review your eligibility.</p>
       <br>
-      <p> If you:
-      <p> * have questions about the IRP
-      <p> * believe you were eligible and have not been contacted
-      <p> * missed the application window
-      <br>
-      <p> You can email international.relocationpayment@education.gov.uk explaining your circumstances and we will review your eligibility.</p> 
-      <br>
-      <p> [Find out more about teaching in England if you trained outside the UK](https://getintoteaching.education.gov.uk/non-uk-teachers/teach-in-england-if-you-trained-overseas).</p> 
 ---
 $applications-open$
+
+$teachinuk$
 
 ## Receiving the IRP
 
