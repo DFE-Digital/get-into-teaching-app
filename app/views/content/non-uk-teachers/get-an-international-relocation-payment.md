@@ -1,16 +1,16 @@
 ---
-title: "Get an international relocation payment (IRP)"
+title: "International relocation payment (IRP)"
 subcategory: If you're already a teacher
 description: |-
-  Non-UK teachers in physics and languages could be eligible for financial help in the form of an international relocation payment from the UK government.
+  The international relocation payment (IRP) was a 2 year pilot offering up to $nonuk_internationalrelocationpayment_value$ for eligible non-UK teachers of languages or physics.
 promo_content:
 cta_arrow_link:
   teachinuk:
     link_target: "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     link_text: "Find out more about teaching in England if you trained outside the UK"
 navigation: 20.60
-navigation_title: Get an international relocation payment (IRP)
-navigation_description: Teachers of languages or physics could be eligible for financial help from the UK government worth $nonuk_internationalrelocationpayment_value$.
+navigation_title: The international relocation payment (IRP)
+navigation_description: The international relocation payment (IRP) offered eligible teachers of languages or physics financial help from the UK government worth $nonuk_internationalrelocationpayment_value$.
 navigation_visible: false
 noindex: true
 image: "static/images/content/hero-images/geography.jpg"
@@ -20,15 +20,16 @@ inset_text:
     text: |-
       <p><h2>What the international relocation payment (IRP) pilot was</h2></p>
       <br>
-      <p>The IRP pilot was a 2 year trial to support non-UK citizens who want to teach in England. It offered up to £10,000 to eligible non-UK teachers of languages or physics, to help cover some of the costs of moving to England. It started on 1 September 2023 and ended on 31 May 2025.</p> 
+      <p> The IRP pilot was a 2 year trial to support non-UK citizens who want to teach in England. It offered up to $nonuk_internationalrelocationpayment_value$ to eligible non-UK teachers of languages or physics, to help cover some of the costs of moving to England.<p> 
       <br>
-      <p>Applications for the first $nonuk_internationalrelocationpayment_instalment$ of the IRP closed on 30 June 2025. Applications for the second instalment of the IRP closed on 30 June 2026.</p>
+      <p> It started on 1 September 2023 and ended on 31 May 2025.</p> 
+      <br>
+      <p> Applications for the first $nonuk_internationalrelocationpayment_instalment$ of the IRP closed on 30 June 2025. Applications for the second instalment of the IRP closed on 30 June 2026.</p>
+      <br>
       <p> If you have questions about the IRP, missed the application window, or believe you were eligible and have not been contacted, you can email international.relocationpayment@education.gov.uk explaining your circumstances and we will review your eligibility.</p>
       <br>
 ---
 $applications-open$
-
-$teachinuk$
 
 ## Receiving the IRP
 
