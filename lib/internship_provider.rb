@@ -3,7 +3,6 @@ require "active_model/type"
 class InternshipProvider < Data.define(:school_name, :region, :school_website,
                                        :contact_name, :contact_email,
                                        :subjects, :areas, :applications, :full)
-
   def self.from_csv_row(row)
     new(
       school_name: row[0]&.strip, # NB: this is a positional argument (0) as the column name (school_name) doesn't seem to work for the first column in a csv file

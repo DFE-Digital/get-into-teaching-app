@@ -132,7 +132,7 @@ group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
 
   # GOV.UK interpretation of rubocop for linting Ruby
-  gem "rubocop-govuk", "~> 5.1.14"
+  gem "rubocop-govuk", "~> 5.1"
 
   # Static security scanner
   gem "brakeman", "~> 7.1.2", require: false

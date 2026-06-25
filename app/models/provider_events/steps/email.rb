@@ -1,6 +1,6 @@
 module ProviderEvents
   module Steps
-    class Email  < ::GITWizard::Step
+    class Email < ::GITWizard::Step
       include FunnelTitle
 
       attribute :email
