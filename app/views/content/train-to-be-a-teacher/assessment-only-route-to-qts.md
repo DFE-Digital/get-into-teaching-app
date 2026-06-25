@@ -189,13 +189,6 @@ provider_groups:
       telephone: "01268 988580"
       international_phone: "+441268988580"
       
-    - header: "Inspiring Leaders"
-      link: "https://inspiringleadersscitt.com/aor/"
-      name: "Dirk Smith"
-      email: "info@iltoday.co.uk"
-      telephone: "0115 667 2150"
-      international_phone: "+441156672150"
-      
     - header: "London School of Jewish Studies"
       link: "https://www.lsjs.ac.uk/assessment-only"
       name: "Galia Segal"
@@ -499,11 +492,11 @@ provider_groups:
       international_phone: "+442083006566"
       
     - header: "Canterbury Christ Church University"
-      
-      name: "Keith Saunders"
+      link: "https://www.canterbury.ac.uk/study-here/courses/postgraduate/assessment-only-for-qualified-teacher-status"
+      name: "Charlotte Cooper"
       email: "pgadmissions@canterbury.ac.uk"
-      telephone: "01227 925555"
-      international_phone: "+441227925555"
+      telephone: "01227 926699"
+      international_phone: "+441227926699"
       
     - header: "Chepping View Primary Academy SCITT (Inspiring Futures Partnership Trust)"
       link: "https://www.cheppingviewscitt.com/Assessment-Only-Route-to-QTS/"
@@ -714,8 +707,8 @@ provider_groups:
       
     - header: "Bishop Challoner Training School"
       link: "https://www.bctsa.org/1299/assessment-only-qts"
-      name: "Ali Marsh"
-      email: "a.marsh@bishopchalloner.bham.sch.uk"
+      name: "Emily Giubertoni"
+      email: "bctsa-admissions@bctsa.org"
       telephone: "0121 441 6175"
       international_phone: "+441214416175"
       
@@ -732,13 +725,6 @@ provider_groups:
       email: "tforward@haybridge.worcs.sch.uk"
       telephone: "01562 886213"
       international_phone: "+441562886213"
-      
-    - header: "Inspiring Leaders"
-      link: "https://inspiringleadersscitt.com/aor/"
-      name: "Dirk Smith"
-      email: "info@iltoday.co.uk"
-      telephone: "0115 667 2150"
-      international_phone: "+441156672150"
       
     - header: "Staffordshire University"
       link: "https://www.staffs.ac.uk/course/assessment-only-leading-to-qts"
@@ -790,13 +776,6 @@ provider_groups:
       email: "assessmentonly@gorsescitt.org.uk"
       telephone: "0113 487 1777"
       international_phone: "+441134871777"
-      
-    - header: "Inspiring Leaders"
-      link: "https://inspiringleadersscitt.com/aor/"
-      name: "Dirk Smith"
-      email: "info@iltoday.co.uk"
-      telephone: "0115 667 2150"
-      international_phone: "+441156672150"
       
     - header: "Leeds Trinity University"
       link: "https://www.leedstrinity.ac.uk/courses/cpd-and-short-courses/assessment-only/"
