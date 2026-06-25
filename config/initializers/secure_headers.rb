@@ -40,7 +40,8 @@ SecureHeaders::Configuration.default do |config|
   reddit      = %w[www.redditstatic.com alb.reddit.com conversions-config.reddit.com]
   clarity     = %w[www.clarity.ms *.clarity.ms *.bing.com]
   vwo         = %w[app.vwo.com *.visualwebsiteoptimizer.com]
-  tiktok      = %w[analytics.tiktok.com *.analytics.tiktok.com]
+  tiktok      = %w[analytics.tiktok.com *.analytics.tiktok.com analytics-ipv6.tiktokw.us ads.tiktok.com]
+  bytedance   = %w[bytedance: sslocal:]
 
   quoted_unsafe_inline = ["'unsafe-inline'"]
   quoted_unsafe_eval   = ["'unsafe-eval'"]
@@ -66,7 +67,7 @@ SecureHeaders::Configuration.default do |config|
     connect_src: self_base.concat(google_apis, pinterest, google_analytics, google_supported, google_doubleclick, facebook, snapchat, sentry, gtm_server, clarity, vwo, tiktok),
     font_src: self_base.concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: self_base.concat(snapchat, facebook, govuk),
-    frame_src: self_base.concat(snapchat, facebook, youtube, google_doubleclick, google_analytics, data, pinterest, clarity, vwo),
+    frame_src: self_base.concat(snapchat, facebook, youtube, google_doubleclick, google_analytics, data, pinterest, clarity, vwo, bytedance),
     frame_ancestors: self_base,
     img_src: self_base.concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, gtm_server, reddit, clarity, vwo, tiktok, %w[chart.googleapis.com wingify-assets.s3.amazonaws.com cx.atdmt.com linkbam.uk]),
     manifest_src: self_base,
