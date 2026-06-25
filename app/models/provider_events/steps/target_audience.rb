@@ -8,8 +8,8 @@ module ProviderEvents
 
       def target_audiences
         [
-          OpenStruct.new(id: 222750000, value: "Option 1"),
-          OpenStruct.new(id: 222750001, value: "Option 2")
+          OpenStruct.new(id: 222_750_000, value: "Option 1"),
+          OpenStruct.new(id: 222_750_001, value: "Option 2"),
         ]
       end
     end
