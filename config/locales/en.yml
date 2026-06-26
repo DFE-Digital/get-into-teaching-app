@@ -684,6 +684,12 @@ en:
             address_postcode:
               blank: Enter a postcode
 
+        provider_events/steps/email:
+          attributes:
+            email:
+              blank: Enter your full email address
+              invalid: Enter a valid email address
+
   helpers:
     answer:
       mailing_list_steps:
@@ -939,6 +945,9 @@ en:
         location: "Where do you live?"
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
+
+      provider_events_steps_email:
+        email: "Enter email address"
 
       provider_events_steps_event_name:
         event_name: "What is the name of your event?"
