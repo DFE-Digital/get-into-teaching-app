@@ -12,6 +12,10 @@ module ProviderEvents
 
     layout :resolve_layout
 
+    def index
+      # override inherited index method
+    end
+
   private
 
     def first_step_class
