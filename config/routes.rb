@@ -149,10 +149,6 @@ Rails.application.routes.draw do
     resources :steps,
               path: "/",
               only: %i[index show update] do
-      collection do
-        get :completed
-        get :resend_verification
-      end
     end
   end
 
