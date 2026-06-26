@@ -13,21 +13,8 @@ module ProviderEvents
     layout :resolve_layout
 
     def index
+      # override inherited index method
     end
-
-    # def completed
-    #   policy_id = params[:id]
-    #
-    #   @privacy_policy = if policy_id
-    #                       GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_privacy_policy(policy_id)
-    #                     else
-    #                       GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
-    #                     end
-    #
-    #   routes_finder = RoutesIntoTeaching::RoutesFinder.new(answers: session[:routes_into_teaching])
-    #
-    #   @results = routes_finder.recommended
-    # end
 
   private
 
