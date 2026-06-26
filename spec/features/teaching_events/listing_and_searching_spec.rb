@@ -11,7 +11,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     it "links to provider events form" do
-      expect(page).to have_link(href: provider_events_steps_path)
+      expect(page).to have_link(href: provider_events_step_path(:form))
     end
   end
 
@@ -94,7 +94,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
     scenario "there is a link for event organisers to add their own events" do
       expect(page).to have_content("Do you have a training provider event?")
-      expect(page).to have_link("complete this form", href: provider_events_steps_path)
+      expect(page).to have_link("complete this form", href: provider_events_step_path(:form))
     end
   end
 
