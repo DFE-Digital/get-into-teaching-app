@@ -12,6 +12,23 @@ module ProviderEvents
 
     layout :resolve_layout
 
+    def index
+    end
+
+    # def completed
+    #   policy_id = params[:id]
+    #
+    #   @privacy_policy = if policy_id
+    #                       GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_privacy_policy(policy_id)
+    #                     else
+    #                       GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
+    #                     end
+    #
+    #   routes_finder = RoutesIntoTeaching::RoutesFinder.new(answers: session[:routes_into_teaching])
+    #
+    #   @results = routes_finder.recommended
+    # end
+
   private
 
     def first_step_class
