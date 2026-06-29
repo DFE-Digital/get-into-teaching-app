@@ -947,8 +947,7 @@ en:
         address_postcode: What's your UK postcode? (optional)
 
       provider_events_steps_email:
-        email: "Enter email address"
-
+        email: "What is your email address?"
       provider_events_steps_event_name:
         event_name: "What is the name of your event?"
       provider_events_steps_event_description:
@@ -1045,6 +1044,8 @@ en:
           studying: "To get an adviser, your predicted degree grade must be a 2:2 or higher."
           graduated: "To get an adviser, your batchelor's degree grade must be a 2:2 or higher."
 
+      provider_events_steps_email:
+        email: "We will use this email address to contact you about your event, and it will show on the event page."
       provider_events_steps_event_name:
         event_name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       provider_events_steps_event_description:

@@ -1,7 +1,7 @@
-<h1>What is your email address?</h1>
-
-<p>
-  We will use this email address to contact you about your event, and it will show on the event page.
-</p>
-
-<%= f.govuk_email_field :email, width: 'two-thirds', autocomplete: "email" %>
+<%= f.govuk_email_field(
+      :email,
+      width: 'two-thirds',
+      autocomplete: "email",
+      label: { tag: "h1" },
+    )
+%>
