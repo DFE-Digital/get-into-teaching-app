@@ -10,8 +10,8 @@ RSpec.feature "Register a provider event", type: :feature do
       expect(page).to have_link(href: provider_events_step_path(ProviderEvents::Steps::Email.key))
       click_on "Start now"
 
-      expect(page).to have_field("Enter email address")
-      fill_in "Enter email address", with: "test@test.test"
+      expect(page).to have_field("What is your email address?")
+      fill_in "What is your email address?", with: "test@test.test"
       click_on "Next step"
     end
   end
