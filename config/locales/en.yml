@@ -684,6 +684,17 @@ en:
             address_postcode:
               blank: Enter a postcode
 
+        provider_events/steps/email:
+          attributes:
+            email:
+              blank: Enter your full email address
+              invalid: Enter a valid email address
+        provider_events/steps/event_name:
+          attributes:
+            event_name:
+              blank: Enter event name
+              too_long: "Event name is too long"
+
   helpers:
     answer:
       mailing_list_steps:
@@ -940,6 +951,8 @@ en:
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
 
+      provider_events_steps_email:
+        email: "What is your email address?"
       provider_events_steps_event_name:
         event_name: "What is the name of your event?"
       provider_events_steps_event_description:
@@ -1036,8 +1049,10 @@ en:
           studying: "To get an adviser, your predicted degree grade must be a 2:2 or higher."
           graduated: "To get an adviser, your batchelor's degree grade must be a 2:2 or higher."
 
+      provider_events_steps_email:
+        email: "We will use this email address to contact you about your event, and it will show on the event page."
       provider_events_steps_event_name:
-        event_name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        event_name: "Your chosen event name will show on the event page."
       provider_events_steps_event_description:
         event_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       provider_events_steps_organisation_name:
