@@ -7,5 +7,7 @@ RSpec.describe ProviderEvents::Steps::Email do
 
   it { is_expected.to respond_to :email }
 
+  it { is_expected.to validate_presence_of :email }
+
   it { is_expected.not_to be_skipped }
 end
