@@ -9,7 +9,7 @@ describe MailingList::Steps::Citizenship do
   let(:citizenship_ids) { citizenships.map(&:id) }
 
   before do
-    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to receive(:get_candidate_citizenship) { citizenships }
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to receive(:get_candidate_citizenships) { citizenships }
   end
 
   it_behaves_like "a with wizard step"

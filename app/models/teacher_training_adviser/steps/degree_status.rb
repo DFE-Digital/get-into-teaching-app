@@ -37,7 +37,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def degree_status_options
-      @degree_status_options ||= PickListItemsApiPresenter.new.get_qualification_degree_status
+      @degree_status_options ||= PickListItemsApiPresenter.new.get_qualification_degree_statuses
     end
 
     def degree_status_option_ids

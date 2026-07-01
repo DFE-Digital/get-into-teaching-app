@@ -9,7 +9,7 @@ module MailingList
       include FunnelTitle
 
       def visa_statuses
-        @visa_statuses ||= PickListItemsApiPresenter.new.get_candidate_visa_status
+        @visa_statuses ||= PickListItemsApiPresenter.new.get_candidate_visa_statuses
       end
 
       def visa_status_ids
