@@ -3,15 +3,15 @@ require "uri_checker"
 GetIntoTeachingApiClient.configure do |config|
   config.access_token = ENV["NEW_GIT_API_TOKEN"].presence
 
-  endpoint =
-    if ENV.key?("GIT_API_PR") && !Rails.env.production?
-      # For testing purposes, we can point the website to a GIT API Review instance
-      "https://getintoteachingapi-review-#{ENV.fetch('GIT_API_PR').to_i}.test.teacherservices.cloud"
-    elsif ENV.key?("NEW_GIT_API_ENDPOINT").present?
-      ENV.fetch("NEW_GIT_API_ENDPOINT")
-    else
-      Rails.application.config.x.git_api_endpoint.presence
-    end
+  endpoint = ENV.fetch("NEW_GIT_API_ENDPOINT")
+    # if ENV.key?("GIT_API_PR") && !Rails.env.production?
+    #   # For testing purposes, we can point the website to a GIT API Review instance
+    #   "https://getintoteachingapi-review-#{ENV.fetch('GIT_API_PR').to_i}.test.teacherservices.cloud"
+    # elsif ENV.key?("NEW_GIT_API_ENDPOINT").present?
+    #   ENV.fetch("NEW_GIT_API_ENDPOINT")
+    # else
+    #   Rails.application.config.x.git_api_endpoint.presence
+    # end
 
   if endpoint
     parsed = URI.parse(endpoint)
