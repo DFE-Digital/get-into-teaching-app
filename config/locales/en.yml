@@ -776,6 +776,12 @@ en:
             222750005: "Teaching assistant or unqualified teacher in a school"
             222750006: "Not currently working"
 
+      provider_events_steps:
+        target_audience:
+          target_audience:
+            222750000: "Target audience 1"
+            222750001: "Target audience 2"
+
     label:
       wizard_steps_authenticate:
         timed_one_time_password: "Enter your verification code:"
@@ -934,6 +940,17 @@ en:
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
 
+      provider_events_steps_event_name:
+        event_name: "What is the name of your event?"
+      provider_events_steps_event_description:
+        event_description: "What would you like people to know about your event?"
+      provider_events_steps_organisation_name:
+        organisation_name: "What is the name of your organisation?"
+      provider_events_steps_event_website:
+        event_website: "Provide your website URL"
+      provider_events_steps_target_audience:
+        target_audience: "Target audience"
+
     hint:
       events_steps_accessibility_support:
         accessibility_support: |-
@@ -1018,6 +1035,18 @@ en:
         uk_degree_grade_id:
           studying: "To get an adviser, your predicted degree grade must be a 2:2 or higher."
           graduated: "To get an adviser, your batchelor's degree grade must be a 2:2 or higher."
+
+      provider_events_steps_event_name:
+        event_name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      provider_events_steps_event_description:
+        event_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      provider_events_steps_organisation_name:
+        organisation_name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      provider_events_steps_event_website:
+        event_website: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      provider_events_steps_target_audience:
+        event_website: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
     legend:
       teacher_training_adviser_feedback:
         successful_visit: "Did you achieve what you wanted from your visit?"

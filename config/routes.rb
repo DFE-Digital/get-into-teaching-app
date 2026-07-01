@@ -145,6 +145,13 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :provider_events, path: "/provider-events" do
+    resources :steps,
+              path: "/",
+              only: %i[index show update] do
+    end
+  end
+
   namespace :feedback, path: "/feedback" do
     resources :steps,
               path: "/",

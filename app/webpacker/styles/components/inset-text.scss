@@ -15,7 +15,7 @@ section.inset-text {
     }
   }
 
-  &.grey {
+  &.grey, &.grey-white {
     border-left-color: $grey-mid;
   }
 
