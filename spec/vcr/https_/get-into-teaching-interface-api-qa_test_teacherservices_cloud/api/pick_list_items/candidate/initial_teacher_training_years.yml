@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-interface-api-qa.test.teacherservices.cloud/api/pick_list_items/candidate/initial_teacher_training_years
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 6kvDMYpsvUxqey5s8Wje
+      Request-Id:
+      - 1600789b-1e57-4cb1-bd91-846cc23d7516
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 03 Jul 2026 09:23:30 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '2433'
+      connection:
+      - keep-alive
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - '0'
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      etag:
+      - W/"bc84408ff015a03ea869943699eb5fd1"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 44ff435038378b09f1da3abe99e8644a
+      x-runtime:
+      - '0.085005'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '[{"id":12907,"value":"2009"},{"id":12908,"value":"2010"},{"id":12909,"value":"2011"},{"id":12910,"value":"2012"},{"id":12911,"value":"2013"},{"id":12912,"value":"2014"},{"id":12913,"value":"2015"},{"id":12914,"value":"2016"},{"id":12917,"value":"Not
+        sure"},{"id":12918,"value":"2017"},{"id":22300,"value":"2018"},{"id":22301,"value":"2019"},{"id":22302,"value":"2020"},{"id":22303,"value":"2021"},{"id":22304,"value":"2022"},{"id":22305,"value":"2023"},{"id":22306,"value":"2024"},{"id":222750000,"value":"2025"},{"id":222750001,"value":"2026"},{"id":222750002,"value":"2027"},{"id":222750003,"value":"2028"},{"id":222750004,"value":"2029"},{"id":222750005,"value":"2030"},{"id":222750006,"value":"2031"},{"id":222750007,"value":"2032"},{"id":222750008,"value":"2033"},{"id":222750009,"value":"2034"},{"id":222750010,"value":"2035"},{"id":222750011,"value":"2036"},{"id":222750012,"value":"1960"},{"id":222750013,"value":"1961"},{"id":222750014,"value":"1962"},{"id":222750015,"value":"1963"},{"id":222750016,"value":"1964"},{"id":222750017,"value":"1965"},{"id":222750018,"value":"1966"},{"id":222750019,"value":"1967"},{"id":222750020,"value":"1968"},{"id":222750021,"value":"1969"},{"id":222750022,"value":"1970"},{"id":222750023,"value":"1971"},{"id":222750024,"value":"1972"},{"id":222750025,"value":"1973"},{"id":222750026,"value":"1974"},{"id":222750027,"value":"1975"},{"id":222750028,"value":"1976"},{"id":222750029,"value":"1977"},{"id":222750030,"value":"1978"},{"id":222750031,"value":"1979"},{"id":222750032,"value":"1980"},{"id":222750033,"value":"1981"},{"id":222750034,"value":"1982"},{"id":222750035,"value":"1983"},{"id":222750036,"value":"1984"},{"id":222750037,"value":"1985"},{"id":222750038,"value":"1986"},{"id":222750039,"value":"1987"},{"id":222750040,"value":"1988"},{"id":222750041,"value":"1989"},{"id":222750042,"value":"1990"},{"id":222750043,"value":"1991"},{"id":222750044,"value":"1992"},{"id":222750045,"value":"1993"},{"id":222750046,"value":"1994"},{"id":222750047,"value":"1995"},{"id":222750048,"value":"1996"},{"id":222750049,"value":"1997"},{"id":222750050,"value":"1998"},{"id":222750051,"value":"1999"},{"id":222750052,"value":"2000"},{"id":222750053,"value":"2001"},{"id":222750054,"value":"2002"},{"id":222750055,"value":"2003"},{"id":222750056,"value":"2004"},{"id":222750057,"value":"2005"},{"id":222750058,"value":"2006"},{"id":222750059,"value":"2007"},{"id":222750060,"value":"2008"}]'
+  recorded_at: Wed, 01 Jun 2022 00:00:00 GMT
+recorded_with: VCR 6.4.0

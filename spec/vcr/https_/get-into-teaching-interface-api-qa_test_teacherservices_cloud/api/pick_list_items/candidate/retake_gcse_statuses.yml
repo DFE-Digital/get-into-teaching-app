@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-interface-api-qa.test.teacherservices.cloud/api/pick_list_items/candidate/retake_gcse_statuses
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 6kvDMYpsvUxqey5s8Wje
+      Request-Id:
+      - 23b3bbcf-12d9-42e7-9d2d-412f461a3ec0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 03 Jul 2026 09:23:27 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '94'
+      connection:
+      - keep-alive
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - '0'
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      etag:
+      - W/"40e0b303bd6d11a390b87094ea34dfec"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 34e9bbe2231f16ac2c653b4faacae231
+      x-runtime:
+      - '0.053824'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '[{"id":222750000,"value":"Planning on Retaking GCSE"},{"id":222750001,"value":"Not
+        Answered"}]'
+  recorded_at: Wed, 01 Jun 2022 00:00:00 GMT
+recorded_with: VCR 6.4.0

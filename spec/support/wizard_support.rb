@@ -80,7 +80,7 @@ shared_context "with wizard data" do
     %i[united_kingdom outside_united_kingdom].map { |trait| build(:location, trait) }
   end
 
-  let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
+  let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: "4872c8ed-0229-f111-8342-7c1e5285e3ab" }) }
   let(:inferred_degree_status_id) { build(:degree_status, :second_year).id }
   let(:mailing_list_response) { GetIntoTeachingApiClient::DegreeStatusResponse.new({ degree_status_id: inferred_degree_status_id }) }
 

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-interface-api-qa.test.teacherservices.cloud/api/pick_list_items/contact_creation_channel/sources
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 6kvDMYpsvUxqey5s8Wje
+      Request-Id:
+      - e5c8f3b2-2f3b-4cfc-bf25-40b5e69559db
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 03 Jul 2026 10:27:56 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '592'
+      connection:
+      - keep-alive
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - '0'
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      etag:
+      - W/"b00647736aa251834aa44d60dd1c6633"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 9338582e0e902b8350a481ab75217d41
+      x-runtime:
+      - '0.775753'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '[{"id":222750000,"value":"Apply"},{"id":222750001,"value":"ChecKin
+        App"},{"id":222750002,"value":"Contact centre"},{"id":222750003,"value":"GIT
+        Website"},{"id":222750004,"value":"Highfliers"},{"id":222750005,"value":"HPITT
+        (Teach First)"},{"id":222750006,"value":"Internships"},{"id":222750007,"value":"Legacy"},{"id":222750008,"value":"On-campus"},{"id":222750009,"value":"Paid
+        Advertising"},{"id":222750010,"value":"Paid Search"},{"id":222750011,"value":"Paid
+        Social"},{"id":222750012,"value":"Pipeline"},{"id":222750013,"value":"School
+        experience"},{"id":222750014,"value":"Scholarships"}]'
+  recorded_at: Wed, 01 Jun 2022 00:00:00 GMT
+recorded_with: VCR 6.4.0

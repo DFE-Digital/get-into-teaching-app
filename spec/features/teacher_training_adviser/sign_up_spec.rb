@@ -1248,7 +1248,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         phone_call_scheduled_at: "#{quota.start_at.strftime('%Y-%m-%dT%H:%M:%S')}.000Z",
         address_postcode: "TE7 1NG",
         address_telephone: "123456789",
-        accepted_policy_id: "123",
+        accepted_policy_id: "4872c8ed-0229-f111-8342-7c1e5285e3ab",
         date_of_birth: "1999-04-27",
       })
 
@@ -1374,7 +1374,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       date_of_birth: "1966-03-24",
       address_postcode: "EH12 8JF",
       country_id: "72f5c2e6-74f9-e811-a97a-000d3a2760f2",
-      accepted_policy_id: "123",
+      accepted_policy_id: "4872c8ed-0229-f111-8342-7c1e5285e3ab",
       preferred_education_phase_id: EDUCATION_PHASE_SECONDARY,
     }
     .merge(shared_request_attributes)
@@ -1384,7 +1384,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
   def overseas_candidate_request_attributes(attributes = {})
     {
       country_id: "09f4c2e6-74f9-e811-a97a-000d3a2760f2",
-      accepted_policy_id: "123",
+      accepted_policy_id: "4872c8ed-0229-f111-8342-7c1e5285e3ab",
     }
     .merge(shared_request_attributes)
     .merge(attributes)

@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-interface-api-qa.test.teacherservices.cloud/api/pick_list_items/contact_creation_channel/activities
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 6kvDMYpsvUxqey5s8Wje
+      Request-Id:
+      - e5c8f3b2-2f3b-4cfc-bf25-40b5e69559db
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 03 Jul 2026 10:27:56 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '1013'
+      connection:
+      - keep-alive
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - '0'
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      etag:
+      - W/"a2269b47782f579fd0c0906ed04d9e2d"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - f28c715642478e5baee8f25aa6f7e79f
+      x-runtime:
+      - '0.209210'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '[{"id":222750000,"value":"Brand ambassador activity"},{"id":222750001,"value":"British
+        Council"},{"id":222750002,"value":"BRFS"},{"id":222750003,"value":"BCS"},{"id":222750004,"value":"Careers
+        event"},{"id":222750005,"value":"CTP"},{"id":222750006,"value":"Debate Mate"},{"id":222750007,"value":"Engineers
+        Teach Physics"},{"id":222750008,"value":"Freshers fairs"},{"id":222750009,"value":"F2F"},{"id":222750010,"value":"Grad
+        fairs"},{"id":222750011,"value":"Institute of Physics"},{"id":222750012,"value":"IMECHE"},{"id":222750013,"value":"IMA"},{"id":222750014,"value":"NTP"},{"id":222750015,"value":"Onsite
+        activation days"},{"id":222750016,"value":"Over 18 Careers event"},{"id":222750017,"value":"Quickfire
+        sign-up on Apply"},{"id":222750018,"value":"Refreshers fairs"},{"id":222750019,"value":"Russell
+        Group 6"},{"id":222750020,"value":"RCS"},{"id":222750021,"value":"Student
+        union media"},{"id":222750022,"value":"Student Rooms"},{"id":222750023,"value":"Service
+        Leaver"},{"id":222750024,"value":"Webinar"}]'
+  recorded_at: Wed, 01 Jun 2022 00:00:00 GMT
+recorded_with: VCR 6.4.0
