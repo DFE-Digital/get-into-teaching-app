@@ -31,10 +31,10 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: c9628938ee16633a34ea01a510fdf96b1f29a526
+  revision: 9f2b324742ce839b7214d934dcb8991a10cbae64
   branch: new-ruby-gem-client
   specs:
-    get_into_teaching_api_client (4.3.7.3)
+    get_into_teaching_api_client (5.0)
       faraday (>= 1.0.1, < 3.0)
       faraday-multipart
     get_into_teaching_api_client_faraday (5.0)
