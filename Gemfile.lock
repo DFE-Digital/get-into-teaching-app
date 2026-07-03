@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: cd932f2049141df1fd7b29ca0f5fb8f85641a372
+  revision: 07aadc5e0550a54b51491e965beba7e06684a371
   branch: new-ruby-gem-client
   specs:
     get_into_teaching_api_client (5.0)
