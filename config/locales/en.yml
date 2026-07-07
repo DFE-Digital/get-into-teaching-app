@@ -699,6 +699,7 @@ en:
             event_description:
               blank: Enter event description
               too_long: "Event description is too long"
+              use_fewer_words: "Event description has too many words"
 
   helpers:
     answer:
