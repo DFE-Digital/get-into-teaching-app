@@ -694,6 +694,11 @@ en:
             event_name:
               blank: Enter event name
               too_long: "Event name is too long"
+        provider_events/steps/event_description:
+          attributes:
+            event_description:
+              blank: Enter event description
+              too_long: "Event description is too long"
 
   helpers:
     answer:
@@ -1054,7 +1059,7 @@ en:
       provider_events_steps_event_name:
         event_name: "Your chosen event name will show on the event page."
       provider_events_steps_event_description:
-        event_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        event_description: "This description will show on the event page."
       provider_events_steps_organisation_name:
         organisation_name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       provider_events_steps_event_website:
