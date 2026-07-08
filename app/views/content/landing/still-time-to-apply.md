@@ -1,5 +1,6 @@
 ---
-title: "Start your teacher training in September"
+title: "Still time to apply"
+heading: Start your teacher training in September
 description: Find out how you can still apply to train to teach and get support with your teacher training application.
 content:
     - content/landing/still-time-to-apply/header
