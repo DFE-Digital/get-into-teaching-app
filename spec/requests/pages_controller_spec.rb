@@ -27,6 +27,15 @@ describe PagesController, type: :request do
       it { is_expected.not_to be_indexed }
     end
 
+    context "with still time to apply landing page" do
+      subject { response }
+
+      before { get "/landing/still-time-to-apply" }
+
+      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_attributes body: /Still time to apply/ }
+    end
+
     context "with invalid page" do
       subject { response }
 
