@@ -687,12 +687,13 @@ en:
         provider_events/steps/email:
           attributes:
             email:
-              blank: Enter your full email address
-              invalid: Enter a valid email address
+              blank: "Enter your email address"
+              invalid: "Enter an email address in the correct format, like name@example.com"
+              too_long: "Email must be 254 characters or less"
         provider_events/steps/event_name:
           attributes:
             event_name:
-              blank: Enter event name
+              blank: "Enter event name"
               too_long: "Event name is too long"
 
   helpers:
