@@ -687,19 +687,20 @@ en:
         provider_events/steps/email:
           attributes:
             email:
-              blank: Enter your full email address
-              invalid: Enter a valid email address
+              blank: "Enter your email address"
+              invalid: "Enter an email address in the correct format, like name@example.com"
+              too_long: "Email must be 254 characters or less"
         provider_events/steps/event_name:
           attributes:
             event_name:
-              blank: Enter event name
-              too_long: "Event name is too long"
+              blank: "Enter event name"
+              too_long: "Event name must be 200 characters or less"
         provider_events/steps/event_description:
           attributes:
             event_description:
-              blank: Enter event description
-              too_long: "Event description is too long"
-              use_fewer_words: "Event description has too many words"
+              blank: "Enter event description"
+              too_long: "Event description must be 6,000 characters or less"
+              use_fewer_words: "Event description must be 300 words or less"
 
   helpers:
     answer:
@@ -962,7 +963,7 @@ en:
       provider_events_steps_event_name:
         event_name: "What is the name of your event?"
       provider_events_steps_event_description:
-        event_description: "What would you like people to know about your event?"
+        event_description: "Describe your event"
       provider_events_steps_organisation_name:
         organisation_name: "What is the name of your organisation?"
       provider_events_steps_event_website:

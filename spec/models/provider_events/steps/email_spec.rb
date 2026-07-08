@@ -9,5 +9,7 @@ RSpec.describe ProviderEvents::Steps::Email do
 
   it { is_expected.to validate_presence_of :email }
 
+  it { is_expected.to validate_length_of(:email).is_at_most(254) }
+
   it { is_expected.not_to be_skipped }
 end
