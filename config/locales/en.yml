@@ -694,7 +694,7 @@ en:
           attributes:
             event_name:
               blank: "Enter event name"
-              too_long: "Event name is too long"
+              too_long: "Event name must be 200 characters or less"
 
   helpers:
     answer:
