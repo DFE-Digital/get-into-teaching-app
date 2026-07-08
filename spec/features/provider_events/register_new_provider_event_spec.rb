@@ -18,8 +18,8 @@ RSpec.feature "Register a provider event", type: :feature do
       fill_in "What is the name of your event?", with: "Super-duper Event"
       click_on "Next step"
 
-      expect(page).to have_field("What would you like people to know about your event?")
-      fill_in "What would you like people to know about your event?", with: "Lorem ipsum dolor sit amet"
+      expect(page).to have_field("Describe your event")
+      fill_in "Describe your event", with: "Lorem ipsum dolor sit amet"
       click_on "Next step"
     end
   end
