@@ -20,7 +20,7 @@ expander:
     title: check your qualifications
     text: |-
       <p>
-      If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualification-equivalency">find out how to check whether your overseas qualifications are acceptable for teacher training</a>.
+      If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>.
       </p>
   ukraine-moving:
     header: "Ukraine citizens:"
