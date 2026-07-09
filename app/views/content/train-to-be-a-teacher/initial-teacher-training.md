@@ -31,7 +31,7 @@ You'll spend most of your time in school placements with some time dedicated to 
 * tasks and assignments
 * engagement with academic or professional research
 
-The theoretical part of your training might be delivered by a university or in a school. Some training courses will be all school-based, but this does not mean that you’ll spend all your time te[...]
+The theoretical part of your training might be delivered by a university or in a school. Some training courses will be all school-based, but this does not mean that you’ll spend all your time teaching. Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get a better idea.
 
 You’ll also have a mentor to support you in your school placements and learning. They can provide feedback and guidance.
 
@@ -48,7 +48,19 @@ What you’ll learn will depend on your course and the qualifications it offers.
 
 Initial teacher training helps you meet the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). You must meet the teachers’ standards to be awarded QTS.
 
-All initial teacher training courses cover [teaching pupils with special educational needs and disabilities (SEND)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs). Once y[...]
+All initial teacher training courses cover [teaching pupils with special educational needs and disabilities (SEND)](/life-as-a-teacher/age-groups-and-specialisms/special-educational-needs). Once you've gained QTS, you can then train to specialise in working with children with SEND. 
+
+All initial teacher training will help you:
+
+* set high expectations which inspire, motivate and challenge pupils
+* promote good progress and outcomes by pupils
+* develop good subject and curriculum knowledge
+* plan and teach well structured lessons
+* adapt teaching to respond to the strengths and needs of all pupils
+* make accurate and productive use of assessment
+* manage behaviour effectively to ensure a good and safe learning
+environment
+* make a positive contribution to your school community
 
 ## Your school placements
 
@@ -64,7 +76,7 @@ Some courses begin with time spent in a university or school where you start you
 
 ## How you’ll be assessed 
 
-There are two types of assessments you’ll have as part of your training - formative and summative. Formative assessments are less formal and happen throughout your course. Summative assessments [...]
+There are two types of assessments you’ll have as part of your training - formative and summative. Formative assessments are less formal and happen throughout your course. Summative assessments are formal assessments, usually at the end of your course.
 
 You might be assessed through written assignments, lesson observations, or by a portfolio of evidence showing how you’re meeting the [teachers’ standards](https://www.gov.uk/government/publica...)
 

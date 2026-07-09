@@ -24,6 +24,11 @@ expander:
     title: fees and funding
     text: "Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance lo[...]
     <p>If you have refugee status you can apply for salaried or fee-paying training courses. You will usually be eligible for financial support to help you train to teach.</p>
+    <p>You may be eligible for financial support to train to teach if <a href=\"/non-uk-teachers/visas-for-non-uk-trainees\">you are from Ukraine or Afghanistan and on certain visas</a>.</p>
+    <p>If you are in <a href=\"https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher train[...]
+    <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>"
+    link_title: Learn more about fees and financial support for non-UK trainee teachers.
+    link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees
   international-content:
     header: "Non-UK citizens:"
     title: train to teach in England
@@ -45,7 +50,7 @@ For secondary teacher training, your provider will want to make sure you have a 
 
 If you have a bachelor's degree, you can do postgraduate teacher training to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
-Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time. Most teacher training courses start in September, with a small number of courses starting on other dates throughout the year.
+Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time. Most teacher training courses start in September, with a small number of courses starting on other dates thr[...]
 
 $international-content$
 
