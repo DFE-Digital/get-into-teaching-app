@@ -33,7 +33,7 @@ describe PagesController, type: :request do
       before { get "/landing/still-time-to-apply" }
 
       it { is_expected.to have_http_status :success }
-      it { is_expected.to have_attributes body: /Still time to apply/ }
+      it { is_expected.to have_attributes body: /Still time to apply/i }
     end
 
     context "with invalid page" do
