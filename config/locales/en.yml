@@ -689,7 +689,7 @@ en:
             email:
               blank: "Enter your email address"
               invalid: "Enter an email address in the correct format, like name@example.com"
-              too_long: "Email must be 254 characters or less"
+              too_long: "Email must be 100 characters or less"
         provider_events/steps/event_name:
           attributes:
             event_name:
