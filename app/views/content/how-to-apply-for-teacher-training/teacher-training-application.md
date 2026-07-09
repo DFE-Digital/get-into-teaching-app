@@ -43,7 +43,7 @@ cta_arrow_link:
     color: pink
 ---
 
-$still-time-to-apply-2026$
+$still-time-to-apply-$
 
 Find out what you need to include in your primary or secondary teacher training application and what happens as part of the application process. 
 
