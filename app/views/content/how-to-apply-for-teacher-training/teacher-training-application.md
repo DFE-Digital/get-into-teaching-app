@@ -41,7 +41,7 @@ cta_arrow_link:
 inset_text:
   still-time-to-apply:
     text: There's still time for you to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn how you can find the right course for you and get help with your application</a>.
-    color: pink
+    color: gitpink
     
 ---
 
