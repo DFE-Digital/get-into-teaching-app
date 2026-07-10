@@ -22,10 +22,10 @@ navigation_description: Find out how to get qualified teacher status (QTS) throu
 expander:
   fees-and-funding:
     title: fees and funding
-    text: "Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance lo[...]
+    text: "<p>Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance loans. If you train to teach languages or physics, you may be eligible for a bursary or scholarship.</p>
     <p>If you have refugee status you can apply for salaried or fee-paying training courses. You will usually be eligible for financial support to help you train to teach.</p>
     <p>You may be eligible for financial support to train to teach if <a href=\"/non-uk-teachers/visas-for-non-uk-trainees\">you are from Ukraine or Afghanistan and on certain visas</a>.</p>
-    <p>If you are in <a href=\"https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher train[...]
+    <p>If you are in <a href=\"https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you are unlikely to be eligible for financial support.</p>
     <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>"
     link_title: Learn more about fees and financial support for non-UK trainee teachers.
     link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees
@@ -54,7 +54,7 @@ For secondary teacher training, your provider will want to make sure you have a 
 
 If you have a bachelor's degree, you can do postgraduate teacher training to get [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts).
 
-Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time. Most teacher training courses start in September, with a small number of courses starting on other dates thr[...]
+Teacher training courses usually take 9 months full-time, or 18 to 24 months part-time. Most teacher training courses start in September, with a small number of courses starting on other dates throughout the year.
 
 $international-content$
 
@@ -69,13 +69,13 @@ Your teacher training course may also be provided by a company or charity. For e
 
 Some providers are ‘accredited’ – this means they've been approved by the Department for Education (DfE) to run teacher training courses.
 
-Providers who have not been accredited can also run courses if they're in a partnership with an organisation that has. For example, you might see a school running a course that has a university as[...]
+Providers who have not been accredited can also run courses if they're in a partnership with an organisation that has. For example, you might see a school running a course that has a university as their ‘accredited provider’.
 
 ## What does teacher training involve?
 
 All teacher training involves mostly classroom placements with some theoretical learning.  
 
-This means that even if your course provider is a university, you'll still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a univ[...]
+This means that even if your course provider is a university, you'll still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a university.
 
 Regardless of your course provider, all teacher training involves at least 2 school placements over a minimum of 24 weeks.
 
@@ -85,9 +85,9 @@ $olivia$
 
 ## Where will my training take place?
 
-Because all teacher training must involve placements in at least 2 schools, your training will not all happen in the same place. Some courses may also have a separate location for your theoretical[...]
+Because all teacher training must involve placements in at least 2 schools, your training will not all happen in the same place. Some courses may also have a separate location for your theoretical learning.
 
-Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get a[...]
+Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get an idea.
 
 $ukraine-moving$
 
