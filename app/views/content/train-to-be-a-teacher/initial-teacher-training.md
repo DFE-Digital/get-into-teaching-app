@@ -19,6 +19,10 @@ cta_arrow_link:
   adjustments:
     link_target: "/train-to-be-a-teacher/accessibility-adjustments"
     link_text: "Find out more about adjustments to help you train"
+inset_text:
+  still-time-to-apply:
+    text: There's still time for you to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn how you can find the right course for you and get help with your application</a>.
+    color: pink
 ---
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
