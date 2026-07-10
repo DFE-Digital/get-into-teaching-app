@@ -690,6 +690,11 @@ en:
               blank: "Enter your email address"
               invalid: "Enter an email address in the correct format, like name@example.com"
               too_long: "Email must be 100 characters or less"
+        provider_events/steps/event_name:
+          attributes:
+            event_name:
+              blank: "Enter event name"
+              too_long: "Event name must be 200 characters or less"
 
   helpers:
     answer:
@@ -1048,7 +1053,7 @@ en:
       provider_events_steps_email:
         email: "We will use this email address to contact you about your event, and it will show on the event page."
       provider_events_steps_event_name:
-        event_name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        event_name: "Your chosen event name will show on the event page."
       provider_events_steps_event_description:
         event_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       provider_events_steps_organisation_name:
