@@ -4,11 +4,7 @@ module ProviderEvents
       include FunnelTitle
 
       attribute :email
-      validates :email, presence: true, email_format: true
-
-      def latest_privacy_policy
-        @latest_privacy_policy ||= GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
-      end
+      validates :email, presence: true, email_format: true, length: { maximum: 100 } # NB: the CRm imposes a limit of 100 chars on this field
     end
   end
 end
