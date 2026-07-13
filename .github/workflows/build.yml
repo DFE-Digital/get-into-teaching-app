@@ -340,7 +340,7 @@ jobs:
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@911ef81b14b267a261d70ac94e43d3c822a709d5 # Pinned at v10
         with:
-          version: 5.0.2.4997
+          version: 8.1.0.6389
 
       - name: Download Artifacts
         uses: actions/download-artifact@v8
