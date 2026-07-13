@@ -22,7 +22,7 @@ RSpec.feature "Book a callback", type: :feature do
       email: "email@address.com",
       address_telephone: "123456789",
       phone_call_scheduled_at: "#{quota.start_at.strftime('%Y-%m-%dT%H:%M:%S')}.000Z",
-      accepted_policy_id: "123",
+      accepted_policy_id: "4872c8ed-0229-f111-8342-7c1e5285e3ab",
       talking_points: "Routes into teaching",
     }
     allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \

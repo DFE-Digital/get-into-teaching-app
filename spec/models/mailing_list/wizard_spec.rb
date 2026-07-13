@@ -179,7 +179,7 @@ describe MailingList::Wizard do
     end
 
     it "logs the response model (filtering sensitive attributes)" do
-      filtered_json = { "candidateId" => "123", "email" => "[FILTERED]" }.to_json
+      filtered_json = { "candidate_id" => "123", "email" => "[FILTERED]" }.to_json
       expect(Rails.logger).to receive(:info).with("MailingList::Wizard#exchange_access_token: #{filtered_json}")
       subject.exchange_access_token(totp, request)
     end
