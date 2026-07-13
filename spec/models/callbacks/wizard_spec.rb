@@ -46,7 +46,7 @@ describe Callbacks::Wizard do
         first_name: "John",
         last_name: "Doe",
         talking_points: "Something",
-        accepted_policy_id: "123",
+        accepted_policy_id: "4872c8ed-0229-f111-8342-7c1e5285e3ab",
         creation_channel_source_id: 222_750_003,
         creation_channel_service_id: 222_750_005,
         creation_channel_activity_id: nil,
@@ -66,15 +66,13 @@ describe Callbacks::Wizard do
 
     it "logs the request model (filtering sensitive attributes)" do
       filtered_json = {
-        "candidateId" => nil,
-        "acceptedPolicyId" => "123",
+        "accepted_policy_id" => "4872c8ed-0229-f111-8342-7c1e5285e3ab",
         "email" => "[FILTERED]",
-        "firstName" => "[FILTERED]",
-        "lastName" => "[FILTERED]",
-        "talkingPoints" => "Something",
-        "creationChannelSourceId" => 222_750_003,
-        "creationChannelServiceId" => 222_750_005,
-        "creationChannelActivityId" => nil,
+        "first_name" => "[FILTERED]",
+        "last_name" => "[FILTERED]",
+        "talking_points" => "Something",
+        "creation_channel_source_id" => 222_750_003,
+        "creation_channel_service_id" => 222_750_005,
       }.to_json
 
       expect(Rails.logger).to have_received(:info).with("Callbacks::Wizard#book_get_into_teaching_callback: #{filtered_json}")
@@ -97,7 +95,7 @@ describe Callbacks::Wizard do
     end
 
     it "logs the response model (filtering sensitive attributes)" do
-      filtered_json = { "candidateId" => "123", "email" => "[FILTERED]" }.to_json
+      filtered_json = { "candidate_id" => "123", "email" => "[FILTERED]" }.to_json
       expect(Rails.logger).to receive(:info).with("Callbacks::Wizard#exchange_access_token: #{filtered_json}")
       subject.exchange_access_token(totp, request)
     end
