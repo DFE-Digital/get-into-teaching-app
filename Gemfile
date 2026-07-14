@@ -12,6 +12,7 @@ gem "puma", "~> 6.4"
 gem "pg"
 
 gem "validates_timeliness"
+gem "validate_url"
 
 gem "invisible_captcha"
 

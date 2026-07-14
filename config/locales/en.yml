@@ -706,6 +706,12 @@ en:
             organisation_name:
               blank: "Enter organisation name"
               too_long: "Organisation name must be 200 characters or less"
+        provider_events/steps/event_website:
+          attributes:
+            event_website:
+              blank: "Enter website URL"
+              too_long: "Website URL must be 300 characters or less"
+              url: "Website URL must be valid and start with https:// or http://"
 
   helpers:
     answer:
@@ -1070,7 +1076,7 @@ en:
       provider_events_steps_organisation_name:
         organisation_name: "Your organisation name will show on the event page."
       provider_events_steps_event_website:
-        event_website: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        event_website: "For example, your website's home page. This URL will show on your event listing."
       provider_events_steps_target_audience:
         event_website: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
