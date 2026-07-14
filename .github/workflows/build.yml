@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -99,7 +99,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -209,7 +209,7 @@ jobs:
       DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -252,7 +252,7 @@ jobs:
       DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -288,7 +288,7 @@ jobs:
         ci_node_index: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -332,7 +332,7 @@ jobs:
       DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -340,7 +340,7 @@ jobs:
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@911ef81b14b267a261d70ac94e43d3c822a709d5 # Pinned at v10
         with:
-          version: 5.0.2.4997
+          version: 8.1.0.6389
 
       - name: Download Artifacts
         uses: actions/download-artifact@v8
@@ -393,7 +393,7 @@ jobs:
        name: review
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -425,7 +425,7 @@ jobs:
           KEY_VAULT:         ${{ secrets[format('KEY_VAULT{0}', env.SECRET_SUFFIX)] }}
 
       - name: Post sticky pull request comment
-        uses: marocchino/sticky-pull-request-comment@0ea0beb66eb9baf113663a64ec522f60e49231c0 # Pinned at v3.0.4
+        uses: marocchino/sticky-pull-request-comment@5770ad5eb8f42dd2c4f34da00c94c5381e49af88 # Pinned at v3.0.5
         with:
           recreate: true
           header: AKS
@@ -450,7 +450,7 @@ jobs:
       release_sha: ${{github.sha }}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -519,7 +519,7 @@ jobs:
     continue-on-error: true
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Vunerability Test
         uses: ./.github/workflows/actions/owasp
@@ -552,7 +552,7 @@ jobs:
        name: test
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -607,7 +607,7 @@ jobs:
       DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -656,7 +656,7 @@ jobs:
        name: production
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
