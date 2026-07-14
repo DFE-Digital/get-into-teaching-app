@@ -1,4 +1,6 @@
-import { ErrorSummary, Radios } from 'govuk-frontend';
+import { ErrorSummary, Radios, CharacterCount, createAll } from 'govuk-frontend';
+
+createAll(CharacterCount);
 
 // Find first error summary module to enhance.
 var $errorSummary = document.querySelector(
