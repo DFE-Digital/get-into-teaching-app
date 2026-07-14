@@ -14,7 +14,7 @@
     "babel-loader": "9",
     "babel-plugin-macros": "^3.1.0",
     "compression-webpack-plugin": "11",
-    "css-loader": "^7.1.2",
+    "css-loader": "^7.1.4",
     "dayjs": "^1.11.20",
     "dfe-autocomplete": "github:DFE-Digital/dfe-autocomplete",
     "file-loader": "^6.2.0",
@@ -41,7 +41,7 @@
     "trix": "^2.1.18",
     "turbolinks": "^5.2.0",
     "webpack": "5",
-    "webpack-assets-manifest": "5",
+    "webpack-assets-manifest": "6",
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "^5.2.4",
     "webpack-merge": "6"
