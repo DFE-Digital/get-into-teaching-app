@@ -103,7 +103,7 @@ provider_groups:
       
   East Midlands:
     providers:
-    - header: "Bluecoat SCITT Alliance Nottingham"
+    - header: "Bluecoat SCITT Alliance"
       link: "https://www.bluecoatscittalliance.uk.com/vacancies/assessment-only-route/"
       name: "Rebecca Underhill"
       email: "runderhill@archwaytrust.co.uk"
@@ -209,13 +209,6 @@ provider_groups:
       email: "lin.goram@ccn.ac.uk"
       telephone: "01603 773708"
       international_phone: "+441603773708"
-      
-    - header: "Norfolk, Essex and Suffolk Teacher Training (NESTT)"
-      link: "https://nestt.org.uk/assessment-only/"
-      name: "Colin Turner"
-      email: "colin.turner@nestt.org.uk"
-      telephone: "07568 069095"
-      international_phone: "+447568069095"
       
     - header: "The Cambridge Partnership - Meridian Trust ITT"
       link: "https://campartnership.org/assessment-only/"
@@ -614,10 +607,10 @@ provider_groups:
     providers:
     - header: "Bath Spa University"
       link: "https://www.bathspa.ac.uk/courses/qts-assessment-only/"
-      name: "Kerry-Anne Barber"
-      email: "assessmentonly@bathspa.ac.uk"
-      telephone: "01225 875696"
-      international_phone: "+441225875696"
+      name: "Michael Mann"
+      email: "AssessmentOnly@bathspa.ac.uk"
+      telephone: "01225 875448"
+      international_phone: "+441225875448"
       
     - header: "Bournemouth Bay Teacher Training Partnership"
       link: "https://bournemouthbay-partnership.com/about-us/"

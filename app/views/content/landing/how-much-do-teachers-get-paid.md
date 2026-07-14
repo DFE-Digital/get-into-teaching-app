@@ -7,7 +7,7 @@ content:
     - content/landing/how-much-do-teachers-get-paid/mailing_list
     - content/landing/how-much-do-teachers-get-paid/content
     - content/shared/block-promos/mailing_adviser_routes
-image: "static/images/content/hero-images/science.jpg"
+image: "static/images/content/hero-images/maths-1-1-2.jpg"
 colour: "gitpurple-gitpurple white-text"
 layout: "layouts/minimal"
 noindex: true
