@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-interface-api-qa.test.teacherservices.cloud/api/privacy_policies/123
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 6kvDMYpsvUxqey5s8Wje
+      Request-Id:
+      - 7741ba98-62b0-45dc-b9bb-453836cee868
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      date:
+      - Mon, 13 Jul 2026 13:51:25 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '94'
+      connection:
+      - keep-alive
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - '0'
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      cache-control:
+      - no-cache
+      x-request-id:
+      - c5d354aafe80d38d79a8e4f27a1685d5
+      x-runtime:
+      - '0.055288'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"error":"BadRequest","message":"The value ''123'' is not
+        valid.","attribute":"id"}]}'
+  recorded_at: Mon, 13 Jul 2026 13:51:25 GMT
+recorded_with: VCR 6.4.0

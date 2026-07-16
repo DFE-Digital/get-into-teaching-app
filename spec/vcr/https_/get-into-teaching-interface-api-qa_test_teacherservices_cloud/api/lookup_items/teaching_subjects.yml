@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-interface-api-qa.test.teacherservices.cloud/api/lookup_items/teaching_subjects
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 6kvDMYpsvUxqey5s8Wje
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 03 Jul 2026 09:17:19 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '2564'
+      connection:
+      - keep-alive
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - '0'
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      etag:
+      - W/"3660783f71064a02e47a7508ae09dcc7"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - a099cd148df5b3b8b85e0b0fdb72a0c9
+      x-runtime:
+      - '0.017594'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '[{"id":"6b793433-cd1f-e911-a979-000d3a20838a","value":"Art"},{"id":"7e2655a1-2afa-e811-a981-000d3a276620","value":"Art
+        and design"},{"id":"802655a1-2afa-e811-a981-000d3a276620","value":"Biology"},{"id":"822655a1-2afa-e811-a981-000d3a276620","value":"Business
+        studies"},{"id":"842655a1-2afa-e811-a981-000d3a276620","value":"Chemistry"},{"id":"862655a1-2afa-e811-a981-000d3a276620","value":"Citizenship"},{"id":"882655a1-2afa-e811-a981-000d3a276620","value":"Classics"},{"id":"a62655a1-2afa-e811-a981-000d3a276620","value":"Communication
+        and media studies"},{"id":"8a2655a1-2afa-e811-a981-000d3a276620","value":"Computing"},{"id":"8c2655a1-2afa-e811-a981-000d3a276620","value":"Dance"},{"id":"8e2655a1-2afa-e811-a981-000d3a276620","value":"Design
+        and technology"},{"id":"902655a1-2afa-e811-a981-000d3a276620","value":"Drama"},{"id":"922655a1-2afa-e811-a981-000d3a276620","value":"Economics"},{"id":"942655a1-2afa-e811-a981-000d3a276620","value":"English"},{"id":"962655a1-2afa-e811-a981-000d3a276620","value":"French"},{"id":"9a2655a1-2afa-e811-a981-000d3a276620","value":"Geography"},{"id":"9c2655a1-2afa-e811-a981-000d3a276620","value":"German"},{"id":"9e2655a1-2afa-e811-a981-000d3a276620","value":"Health
+        and social care"},{"id":"a02655a1-2afa-e811-a981-000d3a276620","value":"History"},{"id":"a22655a1-2afa-e811-a981-000d3a276620","value":"Languages
+        (other)"},{"id":"a42655a1-2afa-e811-a981-000d3a276620","value":"Maths"},{"id":"a82655a1-2afa-e811-a981-000d3a276620","value":"Music"},{"id":"bc68e0c1-7212-e911-a974-000d3a206976","value":"No
+        preference"},{"id":"bc2655a1-2afa-e811-a981-000d3a276620","value":"Other"},{"id":"aa2655a1-2afa-e811-a981-000d3a276620","value":"Physical
+        education"},{"id":"ac2655a1-2afa-e811-a981-000d3a276620","value":"Physics"},{"id":"ae2655a1-2afa-e811-a981-000d3a276620","value":"Physics
+        with maths"},{"id":"b02655a1-2afa-e811-a981-000d3a276620","value":"Primary"},{"id":"b22655a1-2afa-e811-a981-000d3a276620","value":"Psychology"},{"id":"b42655a1-2afa-e811-a981-000d3a276620","value":"Religious
+        education"},{"id":"982655a1-2afa-e811-a981-000d3a276620","value":"Science"},{"id":"b62655a1-2afa-e811-a981-000d3a276620","value":"Social
+        sciences"},{"id":"b82655a1-2afa-e811-a981-000d3a276620","value":"Spanish"},{"id":"2998019d-4e59-ee11-be6e-6045bd8c543c","value":"Sub"},{"id":"f57f7f4e-5559-ee11-be6e-6045bd88d9db","value":"Test"},{"id":"ba2655a1-2afa-e811-a981-000d3a276620","value":"Vocational
+        health"},{"id":"0f35575b-3e32-ef11-8409-6045bd9c15d0","value":"sri1test"},{"id":"83ffcd4e-3e32-ef11-8409-6045bd9c15d0","value":"sritest"}]'
+  recorded_at: Wed, 01 Jun 2022 00:00:00 GMT
+recorded_with: VCR 6.4.0

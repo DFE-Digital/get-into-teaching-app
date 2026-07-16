@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-interface-api-qa.test.teacherservices.cloud/api/pick_list_items/candidate/types
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 6kvDMYpsvUxqey5s8Wje
+      Request-Id:
+      - 0a016050-96c6-4f38-b8e0-a37f5ff2e718
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 03 Jul 2026 09:21:37 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '63'
+      connection:
+      - keep-alive
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - '0'
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      etag:
+      - W/"83d71d18b15def703328ba1cf51ca77d"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 2b845e2552c7abf5fa37e294753ffa0d
+      x-runtime:
+      - '0.061244'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '[{"id":222750000,"value":"ITT"},{"id":222750001,"value":"RTT"}]'
+  recorded_at: Wed, 01 Jun 2022 00:00:00 GMT
+recorded_with: VCR 6.4.0
