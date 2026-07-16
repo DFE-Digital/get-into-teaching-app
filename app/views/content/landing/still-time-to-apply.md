@@ -5,7 +5,7 @@ content:
     - content/landing/still-time-to-apply/header
     - content/landing/still-time-to-apply/content
     - content/shared/block-promos/mailing_adviser_routes
-image: "static/images/content/landing/D0FE01v3_campaign_refined_1175x785.jpg"
+image: "static/images/content/landing/D0FE01v3_contextual_hero_1175x785.jpg"
 layout: "layouts/minimal"
 colour: "gitpurple-gitpurple white-text"
 noindex: true
