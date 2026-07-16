@@ -29,6 +29,10 @@ RSpec.feature "Register a provider event", type: :feature do
       expect(page).to have_field("Provide your website URL")
       fill_in "Provide your website URL", with: "https://www.example.com"
       click_on "Next step"
+
+      expect(page).to have_field("Who is this event for?")
+      fill_in "Who is this event for?", with: "Lorem ipsum dolor sit amet"
+      click_on "Next step"
     end
   end
 end
