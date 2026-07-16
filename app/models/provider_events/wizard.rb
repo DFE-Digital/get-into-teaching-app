@@ -9,7 +9,7 @@ module ProviderEvents
       Steps::OrganisationName,
       Steps::EventWebsite,
       Steps::TargetAudience,
-      # Steps::EventDates,
+      Steps::EventDateTimes,
       # Steps::EventFormat,
       # Steps::EventRegion,
       # Steps::EventRegistration,
