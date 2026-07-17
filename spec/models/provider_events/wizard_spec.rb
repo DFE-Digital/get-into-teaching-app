@@ -12,6 +12,7 @@ RSpec.describe ProviderEvents::Wizard do
         ProviderEvents::Steps::OrganisationName,
         ProviderEvents::Steps::EventWebsite,
         ProviderEvents::Steps::TargetAudience,
+        ProviderEvents::Steps::EventDateTimes,
       ]
     }
   end
