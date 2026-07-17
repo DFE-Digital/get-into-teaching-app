@@ -33,6 +33,12 @@ RSpec.feature "Register a provider event", type: :feature do
       expect(page).to have_field("Who is this event for?")
       fill_in "Who is this event for?", with: "Lorem ipsum dolor sit amet"
       click_on "Next step"
+
+      expect(page).to have_field("Start at")
+      fill_in "Start at", with: Time.zone.now + 5.minutes
+      expect(page).to have_field("End at")
+      fill_in "End at", with: Time.zone.now + 10.minutes
+      click_on "Next step"
     end
   end
 end

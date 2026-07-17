@@ -717,7 +717,15 @@ en:
             target_audience:
               blank: "Enter your target audience"
               too_long: "Target audience must be 500 characters or less."
-
+        provider_events/steps/event_date_times:
+          attributes:
+            start_date_time:
+              blank: "Enter the start date and time"
+              greater_than: "The start date and time must be in the future"
+            end_date_time:
+              blank: "Enter the end date and time"
+              greater_than: "The end time must be after the start time"
+              less_than: "The end date must be on the same day as the start date"
   helpers:
     answer:
       mailing_list_steps:
@@ -987,6 +995,7 @@ en:
       provider_events_steps_target_audience:
         target_audience: "Who is this event for?"
       provider_events_steps_event_date_times:
+        title: "When does your event start and end?"
         start_date_time: "Start at"
         end_date_time: "End at"
 
@@ -1088,8 +1097,8 @@ en:
       provider_events_steps_target_audience:
         target_audience: "Describe the target audience for your event. This information will show on the event page."
       provider_events_steps_event_date_times:
-        start_date_time: "For example, 01/07/2026. You can also use the calendar in the box below to select your event date and start time."
-        end_date_time: "For example, 01/07/2026. You can also use the calendar in the box below to select your event date and start time."
+        start_date_time: "For example, 01/07/2026 12:00. You can also use the calendar in the box below to select your event date and start time."
+        end_date_time: "For example, 01/07/2026 14:30. You can also use the calendar in the box below to select your event date and start time."
 
     legend:
       teacher_training_adviser_feedback:

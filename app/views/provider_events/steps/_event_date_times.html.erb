@@ -1,8 +1,10 @@
+<%= tag.h1 t("helpers.label.provider_events_steps_event_date_times.title") %>
+
 <%= f.govuk_text_field(
       :start_date_time,
       width: 'two-thirds',
       class: "flatpickr-enhanced-field",
-      label: { tag: "h1" },
+      label: { tag: "h3" },
     )
 %>
 
@@ -10,6 +12,6 @@
       :end_date_time,
       width: 'two-thirds',
       class: "flatpickr-enhanced-field",
-      label: { tag: "h1" },
-      )
+      label: { tag: "h3" },
+    )
 %>
