@@ -712,6 +712,11 @@ en:
               blank: "Enter website URL"
               too_long: "Website URL must be 300 characters or less"
               url: "Website URL must be valid and start with https:// or http://"
+        provider_events/steps/target_audience:
+          attributes:
+            target_audience:
+              blank: "Enter your target audience"
+              too_long: "Target audience must be 500 characters or less."
 
   helpers:
     answer:
@@ -980,7 +985,7 @@ en:
       provider_events_steps_event_website:
         event_website: "Provide your website URL"
       provider_events_steps_target_audience:
-        target_audience: "Target audience"
+        target_audience: "Who is this event for?"
 
     hint:
       events_steps_accessibility_support:
@@ -1078,7 +1083,7 @@ en:
       provider_events_steps_event_website:
         event_website: "For example, your website's home page. This URL will show on your event listing."
       provider_events_steps_target_audience:
-        event_website: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        target_audience: "Describe the target audience for your event. This information will show on the event page."
 
     legend:
       teacher_training_adviser_feedback:
