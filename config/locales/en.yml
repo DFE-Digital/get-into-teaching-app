@@ -684,6 +684,40 @@ en:
             address_postcode:
               blank: Enter a postcode
 
+        provider_events/steps/email:
+          attributes:
+            email:
+              blank: "Enter your email address"
+              invalid: "Enter an email address in the correct format, like name@example.com"
+              too_long: "Email must be 100 characters or less"
+        provider_events/steps/event_name:
+          attributes:
+            event_name:
+              blank: "Enter event name"
+              too_long: "Event name must be 200 characters or less"
+        provider_events/steps/event_description:
+          attributes:
+            event_description:
+              blank: "Enter event description"
+              too_long: "Event description must be 6,000 characters or less"
+              use_fewer_words: "Event description must be 300 words or less"
+        provider_events/steps/organisation_name:
+          attributes:
+            organisation_name:
+              blank: "Enter organisation name"
+              too_long: "Organisation name must be 200 characters or less"
+        provider_events/steps/event_website:
+          attributes:
+            event_website:
+              blank: "Enter website URL"
+              too_long: "Website URL must be 300 characters or less"
+              url: "Website URL must be valid and start with https:// or http://"
+        provider_events/steps/target_audience:
+          attributes:
+            target_audience:
+              blank: "Enter your target audience"
+              too_long: "Target audience must be 500 characters or less."
+
   helpers:
     answer:
       mailing_list_steps:
@@ -775,6 +809,12 @@ en:
             222750004: "Considering changing my existing career"
             222750005: "Teaching assistant or unqualified teacher in a school"
             222750006: "Not currently working"
+
+      provider_events_steps:
+        target_audience:
+          target_audience:
+            222750000: "Target audience 1"
+            222750001: "Target audience 2"
 
     label:
       wizard_steps_authenticate:
@@ -934,6 +974,19 @@ en:
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
 
+      provider_events_steps_email:
+        email: "What is your email address?"
+      provider_events_steps_event_name:
+        event_name: "What is the name of your event?"
+      provider_events_steps_event_description:
+        event_description: "Describe your event"
+      provider_events_steps_organisation_name:
+        organisation_name: "What is the name of your organisation?"
+      provider_events_steps_event_website:
+        event_website: "Provide your website URL"
+      provider_events_steps_target_audience:
+        target_audience: "Who is this event for?"
+
     hint:
       events_steps_accessibility_support:
         accessibility_support: |-
@@ -1018,6 +1071,20 @@ en:
         uk_degree_grade_id:
           studying: "To get an adviser, your predicted degree grade must be a 2:2 or higher."
           graduated: "To get an adviser, your batchelor's degree grade must be a 2:2 or higher."
+
+      provider_events_steps_email:
+        email: "We will use this email address to contact you about your event, and it will show on the event page."
+      provider_events_steps_event_name:
+        event_name: "Your chosen event name will show on the event page."
+      provider_events_steps_event_description:
+        event_description: "This description will show on the event page."
+      provider_events_steps_organisation_name:
+        organisation_name: "Your organisation name will show on the event page."
+      provider_events_steps_event_website:
+        event_website: "For example, your website's home page. This URL will show on your event listing."
+      provider_events_steps_target_audience:
+        target_audience: "Describe the target audience for your event. This information will show on the event page."
+
     legend:
       teacher_training_adviser_feedback:
         successful_visit: "Did you achieve what you wanted from your visit?"
