@@ -17,7 +17,7 @@ module ProviderEvents
 
       def event_date_and_start_time_cannot_be_in_the_past
         if event_date.present? && start_time.present?
-          dt = DateTime.new(event_date.year, event_date.month, event_date.day, start_time.hour, start_time.min, start_time.sec)
+          dt = Time.zone.local(event_date.year, event_date.month, event_date.day, start_time.hour, start_time.min, start_time.sec)
           errors.add(:start_time, "Can't be in the past") if dt < Time.zone.now
         end
       end

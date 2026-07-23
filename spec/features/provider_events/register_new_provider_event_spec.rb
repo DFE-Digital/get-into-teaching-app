@@ -39,11 +39,11 @@ RSpec.feature "Register a provider event", type: :feature do
       click_on "Next step"
 
       expect(page).to have_content("What time does your event start and end?")
-      within_fieldset('Start at') do
+      within_fieldset("Start at") do
         fill_in "Hour", with: 13
-        fill_in "Minute", with: 00
+        fill_in "Minute", with: 0o0
       end
-      within_fieldset('End at') do
+      within_fieldset("End at") do
         fill_in "Hour", with: 17
         fill_in "Minute", with: 30
       end

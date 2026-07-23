@@ -13,8 +13,8 @@ RSpec.describe ProviderEvents::Steps::EventTimes do
 
   let(:event_date) { nil }
   let(:millennium) { Time.zone.parse("2000-01-01") } # Time components do not have a date and are based on 01/01/2000
-  let(:past_time) { millennium + (Time.zone.now-2.minutes).seconds_since_midnight }
-  let(:future_time) { millennium + (Time.zone.now+2.minutes).seconds_since_midnight}
+  let(:past_time) { millennium + (Time.zone.now - 2.minutes).seconds_since_midnight }
+  let(:future_time) { millennium + (Time.zone.now + 2.minutes).seconds_since_midnight }
 
   it_behaves_like "a with wizard step"
 
@@ -54,6 +54,7 @@ RSpec.describe ProviderEvents::Steps::EventTimes do
 
       context "when not set" do
         let(:start_time) { nil }
+
         it { is_expected.to allow_value(past_time).for(:end_time) }
         it { is_expected.not_to validate_comparison_of(:end_time) }
       end
