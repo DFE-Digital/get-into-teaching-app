@@ -1,15 +1,21 @@
-# multi parameter date fields aren't yet support by ActiveModel so we
-# need to include the support for them from ActiveRecord
-require "active_record/attribute_assignment"
-
 module ProviderEvents
   module Steps
     class EventTimes < ::GITWizard::Step
-      include ::ActiveRecord::AttributeAssignment
       include FunnelTitle
 
+      # NB: multi parameter date fields aren't yet supported by ActiveModel so
+      # we are doing things a bit manually here
       attribute :start_time, :time
+      attribute "start_time(4i)", :integer
+      attribute "start_time(5i)", :integer
+      attribute "start_time(6i)", :integer
+
       attribute :end_time, :time
+      attribute "end_time(4i)", :integer
+      attribute "end_time(5i)", :integer
+      attribute "end_time(6i)", :integer
+
+      before_validation :parse_times
 
       validates :start_time, presence: true
       validates :end_time, presence: true
@@ -18,13 +24,39 @@ module ProviderEvents
 
       def event_date_and_start_time_cannot_be_in_the_past
         if event_date.present? && start_time.present?
-          dt = Time.zone.local(event_date.year, event_date.month, event_date.day, start_time.hour, start_time.min, start_time.sec)
-          errors.add(:start_time, "Can't be in the past") if dt < Time.zone.now
+          errors.add(:start_time, "Can't be in the past") if start_time < Time.zone.now
         end
       end
 
+      private
+
       def event_date
         other_step(:event_date).event_date
+      end
+
+      def parse_times
+        start_hour = self.send("start_time(4i)")
+        start_minute = self.send("start_time(5i)")
+        end_hour = self.send("end_time(4i)")
+        end_minute = self.send("end_time(5i)")
+
+        self.start_time = cast_to_time(start_hour, start_minute)
+        self.end_time = cast_to_time(end_hour, end_minute)
+      end
+
+      def cast_to_time(hour, minute)
+        return if hour.nil? || minute.nil?
+
+        begin # catch invalid times, e.g. 25:62
+          if event_date.present?
+            # NB: Time.zone.local casts to the wrong timezone
+            Time.local(event_date.year, event_date.month, event_date.day, hour, minute)
+          else
+            Time.local(2000, 1, 1, hour, minute)
+          end
+        rescue ArgumentError
+          return
+        end
       end
     end
   end
