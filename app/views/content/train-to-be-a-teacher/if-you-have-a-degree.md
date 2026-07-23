@@ -22,7 +22,7 @@ navigation_description: Find out how to get qualified teacher status (QTS) throu
 expander:
   fees-and-funding:
     title: fees and funding
-    text: "Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance loans. If you train to teach languages or physics, you may be eligible for a bursary or scholarship.
+    text: "<p>Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance loans. If you train to teach languages or physics, you may be eligible for a bursary or scholarship.</p>
     <p>If you have refugee status you can apply for salaried or fee-paying training courses. You will usually be eligible for financial support to help you train to teach.</p>
     <p>You may be eligible for financial support to train to teach if <a href=\"/non-uk-teachers/visas-for-non-uk-trainees\">you are from Ukraine or Afghanistan and on certain visas</a>.</p>
     <p>If you are in <a href=\"https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you are unlikely to be eligible for financial support.</p>
@@ -42,7 +42,13 @@ quote:
     text: "You'll learn a lot about yourself during your teacher training year, and it's the most rewarding journey to be on."
     name: "Olivia, drama teacher"
     classes: quote--indent
+inset_text:
+  still-time-to-apply:
+    text: There's still time for you to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn how you can find the right course for you and get help with your application</a>.
+    color: gitpink
 ---
+
+$still-time-to-apply$
 
 You need a bachelor's degree in any subject to teach in primary, secondary and special schools in England.
 
@@ -71,7 +77,7 @@ Providers who have not been accredited can also run courses if they're in a part
 
 All teacher training involves mostly classroom placements with some theoretical learning.  
 
-This means that even if your course provider is a university, you'll still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a university. 
+This means that even if your course provider is a university, you'll still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a university.
 
 Regardless of your course provider, all teacher training involves at least 2 school placements over a minimum of 24 weeks.
 
@@ -81,7 +87,7 @@ $olivia$
 
 ## Where will my training take place?
 
-Because all teacher training must involve placements in at least 2 schools, your training will not all happen in the same place. Some courses may also have a separate location for your theoretical learning. 
+Because all teacher training must involve placements in at least 2 schools, your training will not all happen in the same place. Some courses may also have a separate location for your theoretical learning.
 
 Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get an idea.
 

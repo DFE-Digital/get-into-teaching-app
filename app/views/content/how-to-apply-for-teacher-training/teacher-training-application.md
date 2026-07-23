@@ -20,7 +20,7 @@ expander:
     title: check your qualifications
     text: |-
       <p>
-      If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>. 
+      If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>.
       </p>
   ukraine-moving:
     header: "Ukraine citizens:"
@@ -37,7 +37,15 @@ cta_arrow_link:
   find:
     link_target: "https://find-teacher-training-courses.service.gov.uk/"
     link_text: "Find postgraduate teacher training"
+    
+inset_text:
+  still-time-to-apply:
+    text: There's still time for you to apply and start teacher training this September. <a href="/landing/still-time-to-apply">Learn how you can find the right course for you and get help with your application</a>.
+    color: gitpink
+    
 ---
+
+$still-time-to-apply$
 
 Find out what you need to include in your primary or secondary teacher training application and what happens as part of the application process. 
 
@@ -132,7 +140,7 @@ You do not have to complete the sections all at once – you can save and come b
 
 Each training provider should review your application within 30 working days and decide whether to offer you a place on their course.
 
-If a training provider does not respond within 30 working days, you can apply to another course while you wait for their response. You can also contact the training provider for more information about your application.
+If a training provider does not respond within 30 working days, you can apply to another course while you wait for their response. You can also contact the training provider for more information about your application. 
 
 Holiday periods in England (such as Christmas and Easter) are not included in the 30 working days.
 
