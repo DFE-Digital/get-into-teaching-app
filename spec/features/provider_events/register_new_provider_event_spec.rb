@@ -25,6 +25,10 @@ RSpec.feature "Register a provider event", type: :feature do
       expect(page).to have_field("What is the name of your organisation?")
       fill_in "What is the name of your organisation?", with: "Training Organisation"
       click_on "Next step"
+
+      expect(page).to have_field("Provide your website URL")
+      fill_in "Provide your website URL", with: "https://www.example.com"
+      click_on "Next step"
     end
   end
 end
