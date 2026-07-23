@@ -712,6 +712,7 @@ en:
               blank: "Enter website URL"
               too_long: "Website URL must be 300 characters or less"
               url: "Website URL must be valid and start with https:// or http://"
+
         provider_events/steps/target_audience:
           attributes:
             target_audience:
@@ -726,10 +727,10 @@ en:
           attributes:
             start_time:
               blank: "Enter the start time"
-#              greater_than: "The start time must be in the future"
             end_time:
               blank: "Enter the end time"
               greater_than: "The end time must be after the start time"
+
   helpers:
     answer:
       mailing_list_steps:
