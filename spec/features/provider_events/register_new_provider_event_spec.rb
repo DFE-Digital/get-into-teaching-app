@@ -34,10 +34,20 @@ RSpec.feature "Register a provider event", type: :feature do
       fill_in "Who is this event for?", with: "Lorem ipsum dolor sit amet"
       click_on "Next step"
 
-      expect(page).to have_field("Start at")
-      fill_in "Start at", with: Time.zone.now + 5.minutes
-      expect(page).to have_field("End at")
-      fill_in "End at", with: Time.zone.now + 10.minutes
+      expect(page).to have_field("What day is your event?")
+      fill_in "What day is your event", with: "30/12/3000"
+      click_on "Next step"
+
+      expect(page).to have_content("What time does your event start and end?")
+      within_fieldset('Start at') do
+        fill_in "Hour", with: 13
+        fill_in "Minute", with: 00
+      end
+      within_fieldset('End at') do
+        fill_in "Hour", with: 17
+        fill_in "Minute", with: 30
+      end
+
       click_on "Next step"
     end
   end
