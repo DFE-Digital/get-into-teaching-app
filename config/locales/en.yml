@@ -712,6 +712,11 @@ en:
               blank: "Enter website URL"
               too_long: "Website URL must be 300 characters or less"
               url: "Website URL must be valid and start with https:// or http://"
+        provider_events/steps/target_audience:
+          attributes:
+            target_audience:
+              blank: "Enter your target audience"
+              too_long: "Target audience must be 500 characters or less."
 
         provider_events/steps/target_audience:
           attributes:
