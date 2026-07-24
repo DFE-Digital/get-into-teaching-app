@@ -23,22 +23,22 @@ module ProviderEvents
       validate :event_date_and_start_time_cannot_be_in_the_past
 
       def event_date_and_start_time_cannot_be_in_the_past
-        if event_date.present? && start_time.present?
-          errors.add(:start_time, "Can't be in the past") if start_time < Time.zone.now
+        if event_date.present? && start_time.present? && (start_time < timezone.now)
+          errors.add(:start_time, "Can't be in the past")
         end
       end
 
-      private
+    private
 
       def event_date
         other_step(:event_date).event_date
       end
 
       def parse_times
-        start_hour = self.send("start_time(4i)")
-        start_minute = self.send("start_time(5i)")
-        end_hour = self.send("end_time(4i)")
-        end_minute = self.send("end_time(5i)")
+        start_hour = send("start_time(4i)")
+        start_minute = send("start_time(5i)")
+        end_hour = send("end_time(4i)")
+        end_minute = send("end_time(5i)")
 
         self.start_time = cast_to_time(start_hour, start_minute)
         self.end_time = cast_to_time(end_hour, end_minute)
@@ -47,16 +47,22 @@ module ProviderEvents
       def cast_to_time(hour, minute)
         return if hour.nil? || minute.nil?
 
-        begin # catch invalid times, e.g. 25:62
+        begin
           if event_date.present?
             # NB: Time.zone.local casts to the wrong timezone
-            Time.local(event_date.year, event_date.month, event_date.day, hour, minute)
+            timezone.local(event_date.year, event_date.month, event_date.day, hour, minute)
           else
-            Time.local(2000, 1, 1, hour, minute)
+            timezone.local(2000, 1, 1, hour, minute)
           end
         rescue ArgumentError
-          return
+          # catch invalid times, e.g. 25:62
+          nil
         end
+      end
+
+      def timezone
+        # Ensure all dates and times are centred on a UK timezone
+        @timezone ||= ActiveSupport::TimeZone["Europe/London"]
       end
     end
   end
