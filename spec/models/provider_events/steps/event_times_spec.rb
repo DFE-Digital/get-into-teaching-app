@@ -73,6 +73,7 @@ RSpec.describe ProviderEvents::Steps::EventTimes do
 
     context "when start_time is set" do
       let(:start_time) { before_time }
+
       it { is_expected.not_to allow_value(before_time).for(:end_time) }
       it { is_expected.to allow_value(after_time).for(:end_time) }
     end
