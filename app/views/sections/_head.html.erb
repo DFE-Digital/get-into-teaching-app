@@ -14,7 +14,7 @@
 
   <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
   <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
-  <% js_packs = %w[clarity sentry gtm js_enabled lazy_images govuk_frontend application] %>
+  <% js_packs = %w[clarity sentry gtm js_enabled lazy_images govuk_frontend flatpickr application] %>
   <%= yield :head %>
   <% if Rails.env.test? && params.key?(:fake_browser_time) %>
     <% js_packs.unshift('fake_browser_time') %>
