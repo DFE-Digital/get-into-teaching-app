@@ -14,6 +14,7 @@ RSpec.describe ProviderEvents::Wizard do
         ProviderEvents::Steps::TargetAudience,
         ProviderEvents::Steps::EventDate,
         ProviderEvents::Steps::EventTimes,
+        ProviderEvents::Steps::EventType,
       ]
     }
   end
