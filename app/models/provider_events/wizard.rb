@@ -12,6 +12,7 @@ module ProviderEvents
       Steps::EventDate,
       Steps::EventTimes,
       Steps::EventType,
+      Steps::OnlinePostcode,
 
       # Steps::EventFormat,
       # Steps::EventRegion,

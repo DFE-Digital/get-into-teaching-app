@@ -733,7 +733,11 @@ en:
           attributes:
             event_type:
               blank: "Select if your event is in-person or online"
-
+        provider_events/steps/online_postcode:
+          attributes:
+            online_postcode:
+              blank: "Enter postcode"
+              invalid: "Enter a full UK postcode"
   helpers:
     answer:
       mailing_list_steps:
@@ -1010,6 +1014,8 @@ en:
         end_time: "End at"
       provider_events_steps_event_type:
         event_type: "What type of event is this?"
+      provider_events_steps_online_postcode:
+        online_postcode: "Provide a postcode for your event"
 
     hint:
       events_steps_accessibility_support:
@@ -1113,7 +1119,9 @@ en:
       provider_events_steps_event_times:
         start_time: "For example, 09:30 or 14:20."
         end_time: "For example, 09:30 or 14:20."
-
+      provider_events_steps_online_postcode:
+        online_postcode: "This should be your organisation's postcode."
+        online_postcode_extra: "This helps people in your target area find your event, even when it's online."
     legend:
       teacher_training_adviser_feedback:
         successful_visit: "Did you achieve what you wanted from your visit?"

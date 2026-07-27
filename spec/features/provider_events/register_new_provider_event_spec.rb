@@ -54,6 +54,10 @@ RSpec.feature "Register a provider event", type: :feature do
         choose "In-person"
       end
       click_on "Next step"
+
+      expect(page).to have_field("Provide a postcode for your event")
+      fill_in "Provide a postcode for your event", with: "Te57 1nG"
+      click_on "Next step"
     end
   end
 end
