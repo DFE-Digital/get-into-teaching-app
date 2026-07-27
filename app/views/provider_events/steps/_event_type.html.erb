@@ -1,0 +1,9 @@
+<%= f.govuk_collection_radio_buttons(
+      :event_type,
+      f.object.event_types,
+      :id,
+      ->(option) { format_option_value(option, "provider_events_steps.event_type.event_type") },
+      ->(option) { format_option_hint(option, "provider_events_steps.event_type.event_type") },
+      legend: { tag: "h1", text: t("helpers.label.provider_events_steps_event_type.event_type") },
+      )
+%>
