@@ -13,11 +13,11 @@ module ProviderEvents
         @event_types ||= EVENT_TYPES.map { |id| OpenStruct.new(id: id) }
       end
 
-      def is_in_person?
+      def in_person?
         event_type == IN_PERSON
       end
 
-      def is_online?
+      def online?
         event_type == ONLINE
       end
     end
