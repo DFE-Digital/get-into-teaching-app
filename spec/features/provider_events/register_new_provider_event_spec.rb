@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Register a provider event", type: :feature do
   include_context "with wizard data"
 
-  describe "Registration steps" do
+  describe "Registering an online event" do
     before { visit provider_events_steps_path }
 
     it "navigates the steps" do
@@ -51,7 +51,7 @@ RSpec.feature "Register a provider event", type: :feature do
 
       expect(page).to have_content("What type of event is this?")
       within_fieldset("What type of event is this?") do
-        choose "In-person"
+        choose "Online"
       end
       click_on "Next step"
 
