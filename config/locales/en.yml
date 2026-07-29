@@ -738,6 +738,13 @@ en:
             online_postcode:
               blank: "Enter postcode"
               invalid: "Enter a full UK postcode"
+        provider_events/steps/in_person_location:
+          attributes:
+            location_option:
+              blank: "Search for an existing venue or add a new venue"
+            building:
+              blank: "Search for an existing building"
+
   helpers:
     answer:
       mailing_list_steps:
@@ -835,6 +842,10 @@ en:
           event_type:
             in_person: "In-person"
             online: "Online"
+        in_person_location:
+          location_option:
+            existing: "Search existing venues"
+            new: "Add a new venue"
 
     label:
       wizard_steps_authenticate:
@@ -1016,6 +1027,9 @@ en:
         event_type: "What type of event is this?"
       provider_events_steps_online_postcode:
         online_postcode: "Provide a postcode for your event"
+      provider_events_steps_in_person_location:
+        location_option: "Where will your event be?"
+        building: "Search for existing buildings"
 
     hint:
       events_steps_accessibility_support:
@@ -1122,6 +1136,9 @@ en:
       provider_events_steps_online_postcode:
         online_postcode: "This should be your organisation's postcode."
         online_postcode_extra: "This helps people in your target area find your event, even when it's online."
+      provider_events_steps_in_person_location:
+        location_option: "This information will help people find your event."
+
     legend:
       teacher_training_adviser_feedback:
         successful_visit: "Did you achieve what you wanted from your visit?"
