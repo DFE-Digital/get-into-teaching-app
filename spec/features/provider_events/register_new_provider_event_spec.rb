@@ -63,9 +63,8 @@ RSpec.feature "Register a provider event", type: :feature do
     describe "Registering an in-person event" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi).to receive(:get_teaching_event_buildings).and_return(buildings)
+        visit provider_events_steps_path
       end
-
-      before { visit provider_events_steps_path }
 
       let(:buildings) { build_list(:event_building, 1) }
 
