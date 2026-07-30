@@ -158,3 +158,53 @@ shared_examples "with a wizard step that exposes API lookup items as options" do
     end
   end
 end
+
+shared_examples "a normalised and validated postcode" do |postcode_field, invalid_message|
+  describe "validations for #{postcode_field}" do
+    it { is_expected.to respond_to postcode_field }
+    it { is_expected.to allow_value("TE57 1NG").for postcode_field }
+    it { is_expected.to allow_value("  TE571NG  ").for postcode_field }
+    it { is_expected.to allow_value("  Te571nG  ").for postcode_field }
+    it { is_expected.not_to allow_value("random").for(postcode_field).with_message(invalid_message) }
+    it { is_expected.not_to allow_value("TE57 ING").for(postcode_field).with_message(invalid_message) }
+  end
+
+  describe "normalised postcode" do
+    before do
+      instance.send("#{postcode_field}=".to_sym, test_value)
+      instance.valid?
+    end
+
+    subject { instance.send(postcode_field) }
+
+    context "when the postcode is in lowercase" do
+      let(:test_value) { "wc1n 1ab" }
+
+      it { is_expected.to eq("WC1N 1AB") }
+    end
+
+    context "when the postcode is a mixture of lowercase and uppercase" do
+      let(:test_value) { "wc1n 1AB" }
+
+      it { is_expected.to eq("WC1N 1AB") }
+    end
+
+    context "when the postcode has whitespace" do
+      let(:test_value) { "  wc1n 1ab  " }
+
+      it { is_expected.to eq("WC1N 1AB") }
+    end
+
+    context "when the postcode is blank" do
+      let(:test_value) { "  " }
+
+      it { is_expected.to be nil }
+    end
+
+    context "when the postcode is nil" do
+      let(:test_value) { nil }
+
+      it { is_expected.to be nil }
+    end
+  end
+end

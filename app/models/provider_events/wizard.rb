@@ -14,10 +14,7 @@ module ProviderEvents
       Steps::EventType,
       Steps::OnlinePostcode,
       Steps::InPersonLocation,
-
-      # Steps::EventFormat,
-      # Steps::EventRegion,
-      # Steps::EventRegistration,
+      Steps::NewVenue,
     ]
   end
 end

@@ -744,6 +744,13 @@ en:
               blank: "Search for an existing venue or add a new venue"
             building:
               blank: "Search for an existing building"
+        provider_events/steps/new_venue:
+          attributes:
+            venue_name:
+              blank: "Enter venue name"
+            address_postcode:
+              blank: "Enter postcode"
+              invalid: "Enter a full UK postcode"
 
   helpers:
     answer:
@@ -1030,6 +1037,14 @@ en:
       provider_events_steps_in_person_location:
         location_option: "Where will your event be?"
         building: "Search for existing buildings"
+      provider_events_steps_new_venue:
+        title: "Venue details"
+        venue_name: "Venue name"
+        address_line_1: "Address line 1"
+        address_line_2: "Address line 2"
+        address_line_3: "Address line 3"
+        address_city: "Town or city"
+        address_postcode: "Postcode"
 
     hint:
       events_steps_accessibility_support:

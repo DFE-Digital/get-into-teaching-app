@@ -17,6 +17,7 @@ RSpec.describe ProviderEvents::Wizard do
         ProviderEvents::Steps::EventType,
         ProviderEvents::Steps::OnlinePostcode,
         ProviderEvents::Steps::InPersonLocation,
+        ProviderEvents::Steps::NewVenue,
       ]
     }
   end
