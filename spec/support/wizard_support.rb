@@ -198,13 +198,13 @@ shared_examples "a normalised and validated postcode" do |postcode_field, invali
     context "when the postcode is blank" do
       let(:test_value) { "  " }
 
-      it { is_expected.to be nil }
+      it { is_expected.to be_nil }
     end
 
     context "when the postcode is nil" do
       let(:test_value) { nil }
 
-      it { is_expected.to be nil }
+      it { is_expected.to be_nil }
     end
   end
 end
