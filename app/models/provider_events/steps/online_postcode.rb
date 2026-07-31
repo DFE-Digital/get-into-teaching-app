@@ -14,7 +14,7 @@ module ProviderEvents
       end
 
       def reviewable_answers
-        super if  other_step(:event_type).online?
+        super if other_step(:event_type).online?
       end
     end
   end

@@ -15,7 +15,7 @@ module ProviderEvents
       validates :venue_name, presence: true
       validates :address_postcode, presence: true, postcode: true, length: { maximum: 10 }
 
-      before_validation -> {
+      before_validation lambda {
         sanitise_field :venue_name
         sanitise_field :address_line_1
         sanitise_field :address_line_2
@@ -30,11 +30,11 @@ module ProviderEvents
 
       def reviewable_answers
         if other_step(:in_person_location).new?
-          { "venue" => address.present? ? address : nil }
+          { "venue" => address.presence }
         end
       end
 
-      private
+    private
 
       def address
         [venue_name, address_line_1, address_line_2, address_line_3, address_city, address_postcode].compact.join(", ")

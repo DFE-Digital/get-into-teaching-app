@@ -26,10 +26,7 @@ module ProviderEvents
                                     registration_website
                                   elsif email_registration?
                                     registration_email
-                                  else
-                                    nil
-                                  end
-        }
+                                  end }
       end
     end
   end

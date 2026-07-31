@@ -3,26 +3,26 @@ module ProviderEvents
     class ReviewAnswers < ::GITWizard::Step
       include FunnelTitle
 
-      EVENT_DETAILS = [ Steps::Email,
-                        Steps::EventName,
-                        Steps::EventDescription,
-                        Steps::OrganisationName,
-                        Steps::EventWebsite,
-                        Steps::TargetAudience,
-                        Steps::EventDate,
-                        Steps::EventTimes]
+      EVENT_DETAILS = [Steps::Email,
+                       Steps::EventName,
+                       Steps::EventDescription,
+                       Steps::OrganisationName,
+                       Steps::EventWebsite,
+                       Steps::TargetAudience,
+                       Steps::EventDate,
+                       Steps::EventTimes].freeze
 
-      VENUE_DETAILS = [ Steps::EventType,
-                        Steps::OnlinePostcode,
-                        Steps::InPersonLocation,
-                        Steps::NewVenue]
+      VENUE_DETAILS = [Steps::EventType,
+                       Steps::OnlinePostcode,
+                       Steps::InPersonLocation,
+                       Steps::NewVenue].freeze
 
-      REGISTRATION_DETAILS = [ Steps::RegistrationDetails]
-
+      REGISTRATION_DETAILS = [Steps::RegistrationDetails].freeze
 
       def event_details_answers_by_step
         filtered_answers_by_step(EVENT_DETAILS)
       end
+
       def venue_details_answers_by_step
         filtered_answers_by_step(VENUE_DETAILS)
       end
@@ -35,10 +35,10 @@ module ProviderEvents
         false # ensure this step is always shown
       end
 
-      private
+    private
 
       def filtered_answers_by_step(filter)
-        answers_by_step.select{ |k| filter.include?(k) }
+        answers_by_step.select { |k| filter.include?(k) }
       end
 
       def answers_by_step

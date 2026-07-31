@@ -29,7 +29,7 @@ module ProviderEvents
       end
 
       def reviewable_answers
-        { "event_times" => start_time.present? && end_time.present? ? "#{start_time.strftime("%H:%M")} - #{end_time.strftime("%H:%M")}" : nil }
+        { "event_times" => start_time.present? && end_time.present? ? "#{start_time.strftime('%H:%M')} - #{end_time.strftime('%H:%M')}" : nil }
       end
 
     private

@@ -37,10 +37,10 @@ module ProviderEvents
         end
       end
 
-      private
+    private
 
       def building_record
-        @building_record ||= buildings.find{|b| b.id == building } if building.present?
+        @building_record ||= buildings.find { |b| b.id == building } if building.present?
       end
     end
   end
