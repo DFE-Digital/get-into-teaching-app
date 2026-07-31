@@ -20,6 +20,10 @@ module ProviderEvents
       def online?
         event_type == ONLINE
       end
+
+      def reviewable_answers
+        { "event_type" => event_type ? I18n.t("helpers.answer.provider_events_steps.event_type.event_type.#{event_type}") : nil }
+      end
     end
   end
 end

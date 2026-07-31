@@ -16,6 +16,7 @@ module ProviderEvents
       Steps::InPersonLocation,
       Steps::NewVenue,
       Steps::RegistrationDetails,
+      Steps::ReviewAnswers,
     ]
   end
 end

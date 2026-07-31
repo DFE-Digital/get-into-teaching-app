@@ -1,0 +1,24 @@
+<%= tag.h1 t('helpers.label.provider_events_steps_review_answers.title') %>
+
+<%= tag.h3 t('helpers.label.provider_events_steps_review_answers.event_details') %>
+
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <% f.object.event_details_answers_by_step.each do |step, answers| %>
+    <%= render partial: "provider_events/steps/review_answers/answer", collection: answers, locals: { step: step } %>
+  <% end %>
+</dl>
+
+
+<%= tag.h3 t('helpers.label.provider_events_steps_review_answers.venue_details') %>
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <% f.object.venue_details_answers_by_step.each do |step, answers| %>
+    <%= render partial: "provider_events/steps/review_answers/answer", collection: answers, locals: { step: step } %>
+  <% end %>
+</dl>
+
+<%= tag.h3 t('helpers.label.provider_events_steps_review_answers.registration_process') %>
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <% f.object.registration_details_answers_by_step.each do |step, answers| %>
+    <%= render partial: "provider_events/steps/review_answers/answer", collection: answers, locals: { step: step } %>
+  <% end %>
+</dl>

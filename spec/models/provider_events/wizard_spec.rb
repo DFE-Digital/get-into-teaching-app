@@ -19,6 +19,7 @@ RSpec.describe ProviderEvents::Wizard do
         ProviderEvents::Steps::InPersonLocation,
         ProviderEvents::Steps::NewVenue,
         ProviderEvents::Steps::RegistrationDetails,
+        ProviderEvents::Steps::ReviewAnswers,
       ]
     }
   end

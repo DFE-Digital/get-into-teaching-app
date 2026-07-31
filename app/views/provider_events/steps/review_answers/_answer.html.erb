@@ -1,0 +1,13 @@
+<div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+    <%= t("answers.provider_events.#{step.key}.#{answer.first}.title", **Value.data) %>
+  </dt>
+  <dd class="govuk-summary-list__value">
+    <%= format_answer(answer.last) %>
+  </dd>
+  <dd class="govuk-summary-list__actions">
+    <%=link_to(provider_events_step_path(step.key)) do %>
+      <%= safe_html_format("Change <span class='visually-hidden'> #{t("answers.#{step.key}.#{answer.first}.change")}</span>") %>
+    <% end %>
+  </dd>
+</div>

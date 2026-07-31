@@ -12,6 +12,10 @@ module ProviderEvents
       def skipped?
         other_step(:event_type).in_person?
       end
+
+      def reviewable_answers
+        super if  other_step(:event_type).online?
+      end
     end
   end
 end

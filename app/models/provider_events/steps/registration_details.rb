@@ -20,6 +20,17 @@ module ProviderEvents
       def email_registration?
         registration_option == EMAIL
       end
+
+      def reviewable_answers
+        { "registration_details": if website_registration?
+                                    registration_website
+                                  elsif email_registration?
+                                    registration_email
+                                  else
+                                    nil
+                                  end
+        }
+      end
     end
   end
 end
