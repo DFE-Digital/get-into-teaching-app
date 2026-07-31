@@ -12,10 +12,6 @@ module ProviderEvents
       Steps::EventDate,
       Steps::EventTimes,
       Steps::EventType,
-
-      # Steps::EventFormat,
-      # Steps::EventRegion,
-      # Steps::EventRegistration,
     ]
   end
 end

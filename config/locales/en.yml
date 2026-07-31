@@ -734,6 +734,24 @@ en:
             event_type:
               blank: "Select if your event is in-person or online"
 
+        provider_events/steps/target_audience:
+          attributes:
+            target_audience:
+              blank: "Enter your target audience"
+              too_long: "Target audience must be 500 characters or less."
+        provider_events/steps/event_date:
+          attributes:
+            event_date:
+              blank: "Enter the event date"
+              greater_than_or_equal_to: "The event date must not be in the past"
+        provider_events/steps/event_times:
+          attributes:
+            start_time:
+              blank: "Enter the start time"
+            end_time:
+              blank: "Enter the end time"
+              greater_than: "The end time must be after the start time"
+
   helpers:
     answer:
       mailing_list_steps:
