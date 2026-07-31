@@ -58,6 +58,13 @@ RSpec.feature "Register a provider event", type: :feature do
       expect(page).to have_field("Provide a postcode for your event")
       fill_in "Provide a postcode for your event", with: "Te57 1nG"
       click_on "Next step"
+
+      expect(page).to have_content("How will people register for your event?")
+      within_fieldset("How will people register for your event?") do
+        choose "Through a website"
+        fill_in "Website URL", with: "https://www.example.com/"
+      end
+      click_on "Next step"
     end
 
     describe "Registering an in-person event" do
@@ -121,6 +128,13 @@ RSpec.feature "Register a provider event", type: :feature do
         within_fieldset("Where will your event be?") do
           choose "Search existing venues"
           select "test, M1 7AX", from: "Search for existing buildings"
+        end
+        click_on "Next step"
+
+        expect(page).to have_content("How will people register for your event?")
+        within_fieldset("How will people register for your event?") do
+          choose "Through a website"
+          fill_in "Website URL", with: "https://www.example.com/"
         end
         click_on "Next step"
       end
@@ -194,7 +208,14 @@ RSpec.feature "Register a provider event", type: :feature do
           fill_in "Address line 2", with: "Wimbledon"
           fill_in "Address line 3", with: "Merton"
           fill_in "Town or city", with: "London"
-          fill_in "Postcode", with: "TE57 ING"
+          fill_in "Postcode", with: "TE57 1NG"
+          click_on "Next step"
+
+          expect(page).to have_content("How will people register for your event?")
+          within_fieldset("How will people register for your event?") do
+            choose "Through a website"
+            fill_in "Website URL", with: "https://www.example.com/"
+          end
           click_on "Next step"
         end
       end

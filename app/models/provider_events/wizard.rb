@@ -15,6 +15,7 @@ module ProviderEvents
       Steps::OnlinePostcode,
       Steps::InPersonLocation,
       Steps::NewVenue,
+      Steps::RegistrationDetails,
     ]
   end
 end

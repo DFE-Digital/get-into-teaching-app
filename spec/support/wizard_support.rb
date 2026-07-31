@@ -208,3 +208,16 @@ shared_examples "a normalised and validated postcode" do |postcode_field, invali
     end
   end
 end
+
+shared_examples "a validated url" do |url_field|
+  context "when it is invalid" do
+    it { is_expected.not_to allow_value("http://localhost/foo/bar").for url_field }
+    it { is_expected.not_to allow_value("ftp://foo.bar/").for url_field }
+    it { is_expected.not_to allow_value("https://foo/bar").for url_field }
+  end
+
+  context "when it is valid" do
+    it { is_expected.to allow_value("http://foo.bar/foo/bar").for url_field }
+    it { is_expected.to allow_value("https://foo.bar/foo/bar").for url_field }
+  end
+end
