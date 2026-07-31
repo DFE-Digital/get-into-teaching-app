@@ -19,19 +19,29 @@ RSpec.describe ProviderEvents::Steps::NewVenue do
 
   describe "skipped?" do
     before do
-      allow(instance).to receive(:other_step).with(:in_person_location) { instance_double(ProviderEvents::Steps::InPersonLocation, existing?: existing) }
+      allow(instance).to receive(:other_step).with(:in_person_location) { instance_double(ProviderEvents::Steps::InPersonLocation, existing?: existing, skipped?: skipped) }
     end
 
-    context "when existing location" do
-      let(:existing) { true }
+    context "when in_person_location is skipped" do
+      let(:skipped) { true }
 
       it { is_expected.to be_skipped }
     end
 
-    context "when a new location" do
-      let(:existing) { false }
+    context "when in_person_location is not skipped" do
+      let(:skipped) { false }
 
-      it { is_expected.not_to be_skipped }
+      context "when existing location" do
+        let(:existing) { true }
+
+        it { is_expected.to be_skipped }
+      end
+
+      context "when a new location" do
+        let(:existing) { false }
+
+        it { is_expected.not_to be_skipped }
+      end
     end
   end
 end

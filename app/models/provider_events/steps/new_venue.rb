@@ -17,7 +17,7 @@ module ProviderEvents
       before_validation -> { normalise_postcode :address_postcode }
 
       def skipped?
-        other_step(:in_person_location).existing?
+        other_step(:in_person_location).skipped? || other_step(:in_person_location).existing?
       end
     end
   end
