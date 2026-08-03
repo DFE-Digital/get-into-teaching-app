@@ -738,6 +738,7 @@ en:
             online_postcode:
               blank: "Enter postcode"
               invalid: "Enter a full UK postcode"
+
   helpers:
     answer:
       mailing_list_steps:
@@ -1122,6 +1123,7 @@ en:
       provider_events_steps_online_postcode:
         online_postcode: "This should be your organisation's postcode."
         online_postcode_extra: "This helps people in your target area find your event, even when it's online."
+
     legend:
       teacher_training_adviser_feedback:
         successful_visit: "Did you achieve what you wanted from your visit?"
@@ -1175,10 +1177,6 @@ en:
         fieldset: "What is your teacher reference number (TRN)?"
       teacher_training_adviser_steps_uk_callback:
         fieldset: "You need to speak to our team"
-
-      provider_event_steps_event_type:
-        fieldset:
-          event_type: "Foo"
 
   internal:
     status:
