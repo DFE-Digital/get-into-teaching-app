@@ -47,7 +47,12 @@ RSpec.feature "Register a provider event", type: :feature do
         fill_in "Hour", with: 17
         fill_in "Minute", with: 30
       end
+      click_on "Next step"
 
+      expect(page).to have_content("What type of event is this?")
+      within_fieldset("What type of event is this?") do
+        choose "In-person"
+      end
       click_on "Next step"
     end
   end

@@ -11,9 +11,7 @@ module ProviderEvents
       Steps::TargetAudience,
       Steps::EventDate,
       Steps::EventTimes,
-      # Steps::EventFormat,
-      # Steps::EventRegion,
-      # Steps::EventRegistration,
+      Steps::EventType,
     ]
   end
 end
