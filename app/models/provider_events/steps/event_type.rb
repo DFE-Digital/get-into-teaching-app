@@ -9,17 +9,17 @@ module ProviderEvents
 
       validates :event_type, presence: true, inclusion: EVENT_TYPES
 
+      delegate :in_person?, :online?, to: :event_type_inquiry
+
+      EventTypeData = Data.define(:id, :value)
+
       def event_types
-        @event_types ||= EVENT_TYPES.map { |id| OpenStruct.new(id: id) }
+        @event_types ||= EVENT_TYPES.map { |id| EventTypeData.new(id: id, value: id) }
       end
 
-      def in_person?
-        event_type == IN_PERSON
-      end
+    private
 
-      def online?
-        event_type == ONLINE
-      end
+      def event_type_inquiry = event_type.to_s.inquiry
     end
   end
 end
