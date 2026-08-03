@@ -1,4 +1,4 @@
-<div class="govuk-summary-list__row">
+<dl class="govuk-summary-list__row">
   <dt class="govuk-summary-list__key">
     <%= t("answers.provider_events.#{step.key}.#{answer.first}.title", **Value.data) %>
   </dt>
@@ -10,4 +10,4 @@
       <%= safe_html_format("Change <span class='visually-hidden'> #{t("answers.#{step.key}.#{answer.first}.change")}</span>") %>
     <% end %>
   </dd>
-</div>
+</dl>
