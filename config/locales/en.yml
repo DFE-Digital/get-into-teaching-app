@@ -717,6 +717,22 @@ en:
             target_audience:
               blank: "Enter your target audience"
               too_long: "Target audience must be 500 characters or less."
+        provider_events/steps/event_date:
+          attributes:
+            event_date:
+              blank: "Enter the event date"
+              greater_than_or_equal_to: "The event date must not be in the past"
+        provider_events/steps/event_times:
+          attributes:
+            start_time:
+              blank: "Enter the start time"
+            end_time:
+              blank: "Enter the end time"
+              greater_than: "The end time must be after the start time"
+        provider_events/steps/event_type:
+          attributes:
+            event_type:
+              blank: "Select if your event is in-person or online"
 
         provider_events/steps/target_audience:
           attributes:
@@ -829,10 +845,10 @@ en:
             222750006: "Not currently working"
 
       provider_events_steps:
-        target_audience:
-          target_audience:
-            222750000: "Target audience 1"
-            222750001: "Target audience 2"
+        event_type:
+          event_type:
+            in_person: "In-person"
+            online: "Online"
 
     label:
       wizard_steps_authenticate:
@@ -1010,6 +1026,8 @@ en:
         title: "What time does your event start and end?"
         start_time: "Start at"
         end_time: "End at"
+      provider_events_steps_event_type:
+        event_type: "What type of event is this?"
 
     hint:
       events_steps_accessibility_support:
