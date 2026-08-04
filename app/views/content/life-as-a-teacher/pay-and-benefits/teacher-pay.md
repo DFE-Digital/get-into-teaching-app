@@ -16,11 +16,13 @@ cta_arrow_link:
   steps:
     link_target: "/steps-to-become-a-teacher"
     link_text: "Find out how to become a teacher"
-  inset_text:
+inset_text:
     new-salaries:
     text: |-
       The pay award for 2026/27 is subject to a statutory consultation period. Schools can choose how to implement the award.
 ---
+$new-salaries$
+
 If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on.
 
 The pay ranges below apply to maintained schools (schools funded by local authorities).
