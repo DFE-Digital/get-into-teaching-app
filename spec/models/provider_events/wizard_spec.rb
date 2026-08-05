@@ -15,6 +15,7 @@ RSpec.describe ProviderEvents::Wizard do
         ProviderEvents::Steps::EventDate,
         ProviderEvents::Steps::EventTimes,
         ProviderEvents::Steps::EventType,
+        ProviderEvents::Steps::OnlinePostcode,
       ]
     }
   end
