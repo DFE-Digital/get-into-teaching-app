@@ -733,24 +733,11 @@ en:
           attributes:
             event_type:
               blank: "Select if your event is in-person or online"
-
-        provider_events/steps/target_audience:
+        provider_events/steps/online_postcode:
           attributes:
-            target_audience:
-              blank: "Enter your target audience"
-              too_long: "Target audience must be 500 characters or less."
-        provider_events/steps/event_date:
-          attributes:
-            event_date:
-              blank: "Enter the event date"
-              greater_than_or_equal_to: "The event date must not be in the past"
-        provider_events/steps/event_times:
-          attributes:
-            start_time:
-              blank: "Enter the start time"
-            end_time:
-              blank: "Enter the end time"
-              greater_than: "The end time must be after the start time"
+            online_postcode:
+              blank: "Enter postcode"
+              invalid: "Enter a full UK postcode"
 
   helpers:
     answer:
@@ -1028,6 +1015,8 @@ en:
         end_time: "End at"
       provider_events_steps_event_type:
         event_type: "What type of event is this?"
+      provider_events_steps_online_postcode:
+        online_postcode: "Provide a postcode for your event"
 
     hint:
       events_steps_accessibility_support:
@@ -1131,6 +1120,9 @@ en:
       provider_events_steps_event_times:
         start_time: "For example, 09:30 or 14:20."
         end_time: "For example, 09:30 or 14:20."
+      provider_events_steps_online_postcode:
+        online_postcode: "This should be your organisation's postcode."
+        online_postcode_extra: "This helps people in your target area find your event, even when it's online."
 
     legend:
       teacher_training_adviser_feedback:
