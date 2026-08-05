@@ -18,8 +18,8 @@ module ProviderEvents
 
     def completed
       super
-      @email_address = wizard_store[:email]
-      @reference_number = "XXXXXXXXX" # TODO: coming soon
+      @email_address = wizard_store["email"]
+      @reference_number = wizard_store[:reference_number] # TODO: coming soon
     end
 
   private
@@ -43,7 +43,7 @@ module ProviderEvents
     end
 
     def crm_store
-      session[:provider_events] ||= {}
+      session[:provider_events_crm] ||= {}
     end
 
     def set_page_title

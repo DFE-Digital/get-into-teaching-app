@@ -2,7 +2,7 @@ module ProviderEvents
   class Wizard < ::GITWizard::Base
     DEFAULT_ERROR_MESSAGE = "Choose an option from the list".freeze
 
-    ATTRIBUTES_TO_LEAVE = %w[email]
+    ATTRIBUTES_TO_LEAVE = %w[email reference_number].freeze
 
     self.steps = [
       Steps::Email,
@@ -22,9 +22,16 @@ module ProviderEvents
     ]
 
     def complete!
-      return false unless super
+      super.tap do |result|
+        break unless result
 
-      @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
+        Rails.logger.debug "@STORE.before: #{@store.inspect}"
+
+        @store[:reference_number] = "COMING-SOON" # TODO: coming soon
+        @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
+
+        Rails.logger.debug "@STORE.after: #{@store.inspect}"
+      end
     end
   end
 end

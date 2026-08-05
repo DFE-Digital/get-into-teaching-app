@@ -5,18 +5,18 @@
         <h1 class="govuk-panel__title">
           Application submitted
         </h1>
-        <h3>Your reference number<br/>
-          <b><%=@reference_number %></b>
+        <h3>Your reference number<br>
+          <b><%= @reference_number %></b>
         </h3>
       </div>
 
       <p>
-        We have sent a confirmation email to <b><%=@email_address %></b>. We will also send
+        We have sent a confirmation email to <b><%= @email_address %></b>. We will also send
         you an email to let you know when your event has been published.
       </p>
 
       <p>
-        <%=link_to "Submit another event", provider_events_steps_path %>
+        <%= link_to "Submit another event", provider_events_steps_path %>
       </p>
 
       <h2 class="govuk-heading-m">What happens next</h2>
@@ -25,7 +25,7 @@
       </p>
       <p>
         We may contact you to ask for more information. If you need to contact us about your event,
-        email <a href="mailto:ITT-provider.EVENTS@education.gov.uk">ITT-provider.EVENTS@education.gov.uk</a>
+        email <a href="mailto:ITT-provider.EVENTS@education.gov.uk?subject=Teaching%20Provider%20Event">ITT-provider.EVENTS@education.gov.uk</a>
       </p>
     </div>
   </div>
