@@ -1,9 +1,31 @@
-<section class="container">
-  <div class="row">
-    <div class="col">
-      <h1>Thanks for your provider event</h1>
+<section class="container main-section">
+  <div class="row inset">
+    <div class="col col-720">
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          Application submitted
+        </h1>
+        <h3>Your reference number<br/>
+          <b><%=@reference_number %></b>
+        </h3>
+      </div>
+
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        We have sent a confirmation email to <b><%=@email_address %></b>. We will also send
+        you an email to let you know when your event has been published.
+      </p>
+
+      <p>
+        <%=link_to "Submit another event", provider_events_steps_path %>
+      </p>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p>
+        We aim to add your event within 10 working days. This may take longer during busier periods.
+      </p>
+      <p>
+        We may contact you to ask for more information. If you need to contact us about your event,
+        email <a href="mailto:ITT-provider.EVENTS@education.gov.uk">ITT-provider.EVENTS@education.gov.uk</a>
       </p>
     </div>
   </div>

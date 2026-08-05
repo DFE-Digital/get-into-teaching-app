@@ -2,6 +2,8 @@ module ProviderEvents
   class Wizard < ::GITWizard::Base
     DEFAULT_ERROR_MESSAGE = "Choose an option from the list".freeze
 
+    ATTRIBUTES_TO_LEAVE = %w[email]
+
     self.steps = [
       Steps::Email,
       Steps::EventName,
@@ -18,5 +20,11 @@ module ProviderEvents
       Steps::RegistrationDetails,
       Steps::ReviewAnswers,
     ]
+
+    def complete!
+      return false unless super
+
+      @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
+    end
   end
 end

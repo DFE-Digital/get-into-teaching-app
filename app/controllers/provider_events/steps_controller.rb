@@ -16,6 +16,12 @@ module ProviderEvents
       # override inherited index method
     end
 
+    def completed
+      super
+      @email_address = wizard_store[:email]
+      @reference_number = "XXXXXXXXX" # TODO: coming soon
+    end
+
   private
 
     def first_step_class
