@@ -25,6 +25,10 @@ $new-salaries$
 
 If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on.
 
+Starting salaries will be over £34,000 outside London and over £41,000 in inner London from September 2026. From September 2027, they will be over £35,000 outside London and almost £43,000 in inner London.
+
+The average classroom teacher salary will be over £52,800 from September 2026 and over £54,400 from September 2027.
+
 The pay ranges below apply to maintained schools (schools funded by local authorities).
 
 Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges.
