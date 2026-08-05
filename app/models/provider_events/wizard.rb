@@ -25,12 +25,8 @@ module ProviderEvents
       super.tap do |result|
         break unless result
 
-        Rails.logger.debug "@STORE.before: #{@store.inspect}"
-
-        @store[:reference_number] = "COMING-SOON" # TODO: coming soon
+        @store[:reference_number] = "COMING-SOON"
         @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
-
-        Rails.logger.debug "@STORE.after: #{@store.inspect}"
       end
     end
   end

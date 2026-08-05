@@ -150,7 +150,7 @@ Rails.application.routes.draw do
               path: "/",
               only: %i[index show update] do
       collection do
-        get :completed
+        get :completed, to: "steps#completed"
       end
     end
   end

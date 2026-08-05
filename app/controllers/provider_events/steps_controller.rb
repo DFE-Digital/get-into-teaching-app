@@ -61,7 +61,7 @@ module ProviderEvents
     end
 
     def set_completed_page_title
-      @page_title = "All done"
+      @page_title = "Application submitted"
     end
 
     def resolve_layout
