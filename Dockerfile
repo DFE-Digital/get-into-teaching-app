@@ -29,9 +29,10 @@ RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
 RUN gem install bundler --version='~> 2.6.9'
 
 # Install NPM packages removing artifacts
-COPY package.json yarn.lock ./
+COPY package.json yarn.lock .yarnrc.yml ./
 # hadolint ignore=DL3060
-RUN yarn install
+RUN npm install -g corepack && corepack enable
+RUN yarn install --immutable
 
 # Install Gems removing artifacts
 COPY .ruby-version Gemfile Gemfile.lock ./
