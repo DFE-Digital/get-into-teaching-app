@@ -101,6 +101,6 @@ $find-courses$
 
 ### Teach First 
 
-Teach First delivers a 2 year employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards QTS with a PGCE. 
+The [Teach Lead Change programme](link here) from Teach First is a 2 year employment-based route to teaching for high performing graduates and career changers, combining classroom experience and professional development. You’ll earn a salary while working towards QTS with a PGCE. 
 
 To apply and find out more, you should [visit the Teach First website](https://www.teachfirst.org.uk/).
