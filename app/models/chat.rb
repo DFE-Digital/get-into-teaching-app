@@ -32,8 +32,11 @@ private
 
     @availability ||=
       begin
-        response = Faraday.get(availability_api_uri)
-        JSON.parse(response.body) if response.success?
+        # Cache the response for a few seconds to reduce upstream server traffic
+        Rails.cache.fetch("chat_availability_api", expires_in: 10.seconds) do
+          response = Faraday.get(availability_api_uri)
+          JSON.parse(response.body) if response.success?
+        end
       rescue Faraday::ConnectionFailed
         nil
       end
