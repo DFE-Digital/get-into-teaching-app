@@ -90,7 +90,7 @@ RSpec.feature "Register a provider event", type: :feature do
       expect(page).to have_content("TE57 1NG")
       expect(page).to have_content("How will people register for your event?")
       expect(page).to have_content("https://www.example.com/register")
-      click_on "Next step"
+      click_on "Complete sign up"
 
       expect(page).to have_content("Application submitted")
       expect(page).to have_content("test@test.test")
@@ -172,7 +172,7 @@ RSpec.feature "Register a provider event", type: :feature do
         expect(page).to have_content("In-person")
         expect(page).to have_content("Where will your event be?")
         expect(page).to have_content("test (M1 7AX)")
-        click_on "Next step"
+        click_on "Complete sign up"
 
         expect(page).to have_content("Application submitted")
         expect(page).to have_content("test@test.test")
@@ -262,7 +262,7 @@ RSpec.feature "Register a provider event", type: :feature do
           expect(page).to have_content("In-person")
           expect(page).to have_content("Where will your event be?")
           expect(page).to have_content("Womble HQ, Wimbledon Common, Wimbledon, Merton, London, TE57 1NG")
-          click_on "Next step"
+          click_on "Complete sign up"
 
           expect(page).to have_content("Application submitted")
           expect(page).to have_content("test@test.test")
