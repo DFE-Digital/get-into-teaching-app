@@ -66,10 +66,14 @@ export default class extends Controller {
     }
   }
 
+  // add a couple of seconds of random jitter to the refresh cycle to smooth out traffic
   startRefreshing() {
-    this.refreshTimer = setInterval(() => {
-      this.setChatState();
-    }, this.refreshIntervalValue);
+    this.refreshTimer = setInterval(
+      () => {
+        this.setChatState();
+      },
+      this.refreshIntervalValue + Math.floor(Math.random() * 3000),
+    );
   }
 
   stopRefreshing() {
