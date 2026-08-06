@@ -27,7 +27,7 @@ module ProviderEvents
         @buildings ||= GetIntoTeachingApiClient::TeachingEventBuildingsApi.new.get_teaching_event_buildings
       end
 
-      private
+    private
 
       def location_option_inquiry = location_option.to_s.inquiry
     end
