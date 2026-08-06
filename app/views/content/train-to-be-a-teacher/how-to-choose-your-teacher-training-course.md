@@ -140,7 +140,7 @@ Your teacher training course might be provided by:
 * a university, sometimes referred to as university-led training
 * a school or group of schools, sometimes referred to as school-led training
 
-Your teacher training course may also be provided by a company or charity. For example, [Teach First is a charitable organisation that provides teacher training](https://www.teachfirst.org.uk).
+Your teacher training course may also be provided by a company or charity. For example, [Teach First is a charitable organisation that provides teacher training](https://www.teachfirst.org.uk). This includes the salaried [Teach Lead Change](link here) programme that provides teacher training with leadership development.
 
 Once you’ve found a course you’re interested in, you can talk to the training provider before you apply. For example, you might want to find out: 
 
