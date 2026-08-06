@@ -19,13 +19,13 @@ cta_arrow_link:
 inset_text:
   new-salaries:
     text: |-
-      The pay award for 2026/27 is subject to a statutory consultation period. Schools can choose how to implement the award.
+      The pay award is subject to a statutory consultation period. Schools can choose how to implement the award.
 ---
 $new-salaries$
 
 If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on.
 
-Starting salaries will be over £34,000 outside London and over £41,000 in inner London from September 2026. From September 2027, they will be over £35,000 outside London and almost £43,000 in inner London.
+From September 2026, new teachers will start on salaries above £34,000 outside London and above £41,000 in inner London. By September 2027, starting salaries for teachers will increase to more than £35,000 outside London and almost £43,000 in inner London.
 
 The average classroom teacher salary will be over £52,800 from September 2026 and over £54,400 from September 2027.
 
