@@ -11,7 +11,7 @@ module "postgres" {
   use_azure                   = var.deploy_azure_backing_services
   azure_enable_monitoring     = var.enable_monitoring
   azure_enable_backup_storage = var.enable_postgres_backup_storage
-  azure_extensions            = ["uuid-ossp", "citext"]
+  azure_extensions            = ["uuid-ossp", "citext", "plpgsql"]
   server_version              = var.postgres_version
   azure_sku_name              = var.postgres_flexible_server_sku
 
