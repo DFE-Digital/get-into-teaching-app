@@ -59,7 +59,7 @@ yarn-debug.log*
 .yarn-integrity
 fetch_config.rb
 
-yarn/*
+.yarn/*
 !.yarn/cache
 !.yarn/patches
 !.yarn/plugins
