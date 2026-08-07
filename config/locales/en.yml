@@ -1279,10 +1279,6 @@ en:
       teacher_training_adviser_steps_uk_callback:
         fieldset: "You need to speak to our team"
 
-      provider_event_steps_event_type:
-        fieldset:
-          event_type: "Foo"
-
   internal:
     status:
       pending:

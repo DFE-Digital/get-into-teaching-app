@@ -9,8 +9,8 @@ RSpec.describe ProviderEvents::Steps::RegistrationDetails do
   it { is_expected.to respond_to :registration_email }
   it { is_expected.to respond_to :registration_website }
 
-  it { is_expected.to respond_to :website_registration? }
-  it { is_expected.to respond_to :email_registration? }
+  it { is_expected.to respond_to :website? }
+  it { is_expected.to respond_to :email? }
 
   it { is_expected.to validate_presence_of :registration_option }
   it { is_expected.to validate_inclusion_of(:registration_option).in_array(%w[website email]) }
@@ -20,8 +20,8 @@ RSpec.describe ProviderEvents::Steps::RegistrationDetails do
   context "when email registration" do
     before { subject.registration_option = "email" }
 
-    it { expect(subject.email_registration?).to be true }
-    it { expect(subject.website_registration?).to be false }
+    it { expect(subject.email?).to be true }
+    it { expect(subject.website?).to be false }
 
     it { is_expected.to validate_presence_of(:registration_email) }
     it { is_expected.to validate_length_of(:registration_email).is_at_most(100) }
@@ -32,8 +32,8 @@ RSpec.describe ProviderEvents::Steps::RegistrationDetails do
   context "when website registration" do
     before { subject.registration_option = "website" }
 
-    it { expect(subject.email_registration?).to be false }
-    it { expect(subject.website_registration?).to be true }
+    it { expect(subject.email?).to be false }
+    it { expect(subject.website?).to be true }
 
     it { is_expected.to validate_presence_of(:registration_website) }
     it { is_expected.to validate_length_of(:registration_website).is_at_most(300) }

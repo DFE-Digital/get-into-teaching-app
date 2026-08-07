@@ -67,7 +67,6 @@ RSpec.feature "Register a provider event", type: :feature do
       click_on "Next step"
 
       expect(page).to have_content("Check your answers before you submit your event details")
-
       expect(page).to have_content("What is your email address?")
       expect(page).to have_content("test@test.test")
       expect(page).to have_content("What is the name of your event?")
