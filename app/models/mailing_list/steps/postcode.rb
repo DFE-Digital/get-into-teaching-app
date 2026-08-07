@@ -1,15 +1,15 @@
 module MailingList
   module Steps
     class Postcode < ::GITWizard::Step
+      include FunnelTitle
       include ActiveRecord::Normalization
       include ActiveModel::Dirty
 
       attribute :address_postcode
 
       validates :address_postcode, postcode: true
-      normalizes :postcode, with: ->(field) { field.to_s.squish.upcase.presence }
 
-      include FunnelTitle
+      normalizes :address_postcode, with: ->(field) { field.to_s.squish.upcase.presence }
 
       def optional?
         true

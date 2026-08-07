@@ -7,7 +7,7 @@ module ProviderEvents
 
       attribute :online_postcode
       validates :online_postcode, presence: true, postcode: true, length: { maximum: 10 }
-      normalizes :postcode, with: ->(field) { field.to_s.squish.upcase.presence }
+      normalizes :online_postcode, with: ->(field) { field.to_s.squish.upcase.presence }
 
       def skipped?
         other_step(:event_type).in_person?
