@@ -4,6 +4,11 @@ RSpec.describe ProviderEvents::Steps::NewVenue do
   include_context "with wizard step"
 
   it_behaves_like "a with wizard step"
+  it_behaves_like "a sanitised field", :venue_name
+  it_behaves_like "a sanitised field", :address_line_1
+  it_behaves_like "a sanitised field", :address_line_2
+  it_behaves_like "a sanitised field", :address_line_3
+  it_behaves_like "a sanitised field", :address_city
   it_behaves_like "a normalised and validated postcode", :address_postcode, "Enter a full UK postcode"
 
   it { is_expected.to respond_to :venue_name }

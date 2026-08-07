@@ -5,12 +5,12 @@ module ProviderEvents
       MAX_CHARS = MAX_WORDS * 20
 
       include FunnelTitle
-      include SanitiseField
+      include ActiveRecord::Normalization
+      include ActiveModel::Dirty
 
       attribute :event_description
       validates :event_description, presence: true, length: { maximum: MAX_CHARS }, number_of_words: { less_than: MAX_WORDS }
-
-      before_validation -> { sanitise_field :event_description }
+      normalizes :event_description, with: ->(field) { field.to_s.squish.presence }
     end
   end
 end

@@ -2,8 +2,8 @@ module ProviderEvents
   module Steps
     class NewVenue < ::GITWizard::Step
       include FunnelTitle
-      include NormalisePostcode
-      include SanitiseField
+      include ActiveRecord::Normalization
+      include ActiveModel::Dirty
 
       attribute :venue_name
       attribute :address_line_1
@@ -15,14 +15,8 @@ module ProviderEvents
       validates :venue_name, presence: true
       validates :address_postcode, presence: true, postcode: true, length: { maximum: 10 }
 
-      before_validation lambda {
-        sanitise_field :venue_name
-        sanitise_field :address_line_1
-        sanitise_field :address_line_2
-        sanitise_field :address_line_3
-        sanitise_field :address_city
-        normalise_postcode :address_postcode
-      }
+      normalizes :venue_name, :address_line_1, :address_line_2, :address_line_3, :address_city, with: ->(field) { field.to_s.squish.presence }
+      normalizes :address_postcode, with: ->(field) { field.to_s.squish.upcase.presence }
 
       def skipped?
         other_step(:in_person_location).skipped? || other_step(:in_person_location).existing?
