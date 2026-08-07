@@ -21,7 +21,7 @@ module ProviderEvents
         { "event_type" => event_type ? I18n.t("helpers.answer.provider_events_steps.event_type.event_type.#{event_type}") : nil }
       end
 
-      private
+    private
 
       def event_type_inquiry = event_type.to_s.inquiry
     end
