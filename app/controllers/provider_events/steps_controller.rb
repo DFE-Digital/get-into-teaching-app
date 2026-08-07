@@ -19,7 +19,7 @@ module ProviderEvents
     def completed
       super
       @email_address = wizard_store["email"]
-      @reference_number = wizard_store[:reference_number] # TODO: coming soon
+      @reference_number = wizard_store[:reference_number]
     end
 
   private
