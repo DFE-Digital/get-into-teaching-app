@@ -268,7 +268,7 @@ jobs:
     needs: [ build_base ]
     services:
       postgres:
-        image: postgres:13.10
+        image: postgres:17.10
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
@@ -592,7 +592,7 @@ jobs:
        name: test
     services:
       postgres:
-        image: postgres:13.10
+        image: postgres:17.10
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
