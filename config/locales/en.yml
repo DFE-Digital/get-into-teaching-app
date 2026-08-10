@@ -367,6 +367,49 @@ en:
         title: "How would you describe your current situation?"
         change: "your current situation"
 
+    provider_events:
+      email:
+        email:
+          title: "What is your email address?"
+          change: "your email"
+      event_name:
+        event_name:
+          title: "What is the name of your event?"
+      event_description:
+        event_description:
+          title: "Describe your event"
+      organisation_name:
+        organisation_name:
+          title: "What is the name of your organisation?"
+      event_website:
+        event_website:
+          title: "Provide your website URL"
+      target_audience:
+        target_audience:
+          title: "Who is this event for?"
+      event_date:
+        event_date:
+          title: "What day is your event?"
+      event_times:
+        event_times:
+          title: "What time does your event start and end?"
+      event_type:
+        event_type:
+          title: "What type of event is this?"
+      online_postcode:
+        online_postcode:
+          title: "Provide a postcode for your event"
+      in_person_location:
+        venue:
+          title: "Where will your event be?"
+      new_venue:
+        venue:
+          title: "Where will your event be?"
+      registration_details:
+        registration_details:
+          title: "How will people register for your event?"
+
+
   activerecord:
     errors:
       models:
@@ -1065,6 +1108,11 @@ en:
         registration_option: "How will people register for your event?"
         registration_email: "Email address"
         registration_website: "Website URL"
+      provider_events_steps_review_answers:
+        title: "Check your answers before you submit your event details"
+        event_details: "Event details"
+        venue_details: "Venue details"
+        registration_process: "Registration process"
 
     hint:
       events_steps_accessibility_support:

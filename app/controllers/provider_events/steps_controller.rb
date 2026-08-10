@@ -16,6 +16,12 @@ module ProviderEvents
       # override inherited index method
     end
 
+    def completed
+      super
+      @email_address = wizard_store["email"]
+      @reference_number = wizard_store[:reference_number]
+    end
+
   private
 
     def first_step_class
@@ -37,7 +43,7 @@ module ProviderEvents
     end
 
     def crm_store
-      session[:provider_events] ||= {}
+      session[:provider_events_crm] ||= {}
     end
 
     def set_page_title
@@ -55,7 +61,7 @@ module ProviderEvents
     end
 
     def set_completed_page_title
-      @page_title = "All done"
+      @page_title = "Application submitted"
     end
 
     def resolve_layout

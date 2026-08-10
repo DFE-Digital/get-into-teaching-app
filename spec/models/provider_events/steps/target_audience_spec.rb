@@ -4,6 +4,7 @@ RSpec.describe ProviderEvents::Steps::TargetAudience do
   include_context "with wizard step"
 
   it_behaves_like "a with wizard step"
+  it_behaves_like "a sanitised field", :target_audience
 
   it { is_expected.to respond_to :target_audience }
 

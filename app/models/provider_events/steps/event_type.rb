@@ -17,6 +17,10 @@ module ProviderEvents
         @event_types ||= EVENT_TYPES.map { |id| EventTypeData.new(id: id, value: id) }
       end
 
+      def reviewable_answers
+        { "event_type" => event_type ? I18n.t("helpers.answer.provider_events_steps.event_type.event_type.#{event_type}") : nil }
+      end
+
     private
 
       def event_type_inquiry = event_type.to_s.inquiry

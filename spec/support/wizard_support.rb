@@ -209,6 +209,45 @@ shared_examples "a normalised and validated postcode" do |postcode_field, invali
   end
 end
 
+shared_examples "a sanitised field" do |sanitised_field|
+  before do
+    instance.send("#{sanitised_field}=".to_sym, test_value)
+    instance.valid?
+  end
+
+  subject { instance.send(sanitised_field) }
+
+  context "when the field has whitespace" do
+    let(:test_value) { "     Hello        World     " }
+
+    it { is_expected.to eq("Hello World") }
+  end
+
+  context "when the field is whitespace" do
+    let(:test_value) { "    " }
+
+    it { is_expected.to be_nil }
+  end
+
+  context "when the field is blank" do
+    let(:test_value) { "" }
+
+    it { is_expected.to be_nil }
+  end
+
+  context "when the field is nil" do
+    let(:test_value) { nil }
+
+    it { is_expected.to be_nil }
+  end
+
+  context "when the field is OK" do
+    let(:test_value) { "Hello World" }
+
+    it { is_expected.to eql("Hello World") }
+  end
+end
+
 shared_examples "a validated url" do |url_field|
   context "when it is invalid" do
     it { is_expected.not_to allow_value("http://localhost/foo/bar").for url_field }
