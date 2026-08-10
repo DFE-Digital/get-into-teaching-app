@@ -14,16 +14,5 @@ RSpec.describe ProviderEvents::Steps::EventWebsite do
 
   it { is_expected.not_to be_skipped }
 
-  describe "event_website" do
-    context "when it is invalid" do
-      it { is_expected.not_to allow_value("http://localhost/foo/bar").for :event_website }
-      it { is_expected.not_to allow_value("ftp://foo.bar/").for :event_website }
-      it { is_expected.not_to allow_value("https://foo/bar").for :event_website }
-    end
-
-    context "when it is valid" do
-      it { is_expected.to allow_value("http://foo.bar/foo/bar").for :event_website }
-      it { is_expected.to allow_value("https://foo.bar/foo/bar").for :event_website }
-    end
-  end
+  it_behaves_like "a validated url", :event_website
 end

@@ -76,7 +76,8 @@
                                           :id,
                                           ->(building) { "#{building.venue}, #{building.address_postcode}" },
                                           label: { text: 'Search for existing buildings' },
-                                          options: { include_blank: "" } %>
+                                          options: { include_blank: "" },
+                                          class: "select-accessible-autocomplete" %>
           <% end %>
           <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:add], label: { text: 'Add a new venue' } do %>
             <%= b.govuk_text_field :venue, label: { text: 'Venue' } %>

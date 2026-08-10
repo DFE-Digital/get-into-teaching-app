@@ -1,0 +1,8 @@
+<%= f.govuk_radio_buttons_fieldset(:registration_option, legend: { tag: 'h1', text: t("helpers.label.provider_events_steps_registration_details.registration_option") }) do %>
+  <%= f.govuk_radio_button :registration_option, ProviderEvents::Steps::RegistrationDetails::EMAIL, label: { text: t("helpers.answer.provider_events_steps.registration_details.registration_option.email")} do %>
+    <%= f.govuk_email_field :registration_email %>
+  <% end %>
+  <%= f.govuk_radio_button :registration_option, ProviderEvents::Steps::RegistrationDetails::WEBSITE, label: { text: t("helpers.answer.provider_events_steps.registration_details.registration_option.website")} do %>
+    <%= f.govuk_url_field :registration_website %>
+  <% end %>
+<% end %>

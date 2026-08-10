@@ -1,9 +1,8 @@
 module ProviderEvents
   class Wizard < ::GITWizard::Base
     DEFAULT_ERROR_MESSAGE = "Choose an option from the list".freeze
-
-
     PENDING_REVIEW_STATUS_ID = 222750003
+    ATTRIBUTES_TO_LEAVE = %w[email reference_number].freeze
 
     self.steps = [
       Steps::Email,
@@ -16,12 +15,20 @@ module ProviderEvents
       Steps::EventTimes,
       Steps::EventType,
       Steps::OnlinePostcode,
+      Steps::InPersonLocation,
+      Steps::NewVenue,
+      Steps::RegistrationDetails,
+      Steps::ReviewAnswers,
     ]
-
 
     def complete!
       super.tap do |result|
         break unless result
+
+
+      #     @store[:reference_number] = "COMING-SOON"
+      #   @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
+      # end
 
 
         puts "EXPORT_DATA:"
@@ -177,6 +184,8 @@ module ProviderEvents
     #   api_event.building = building.to_api_building if building.present?
     #   api_event
     # end
+
+
 
 
   end

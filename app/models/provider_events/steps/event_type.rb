@@ -25,6 +25,9 @@ module ProviderEvents
         elsif event_type.in_person?
           API_SCHOOL_UNI_EVENT_TYPE_ID
         end
+
+      def reviewable_answers
+        { "event_type" => event_type ? I18n.t("helpers.answer.provider_events_steps.event_type.event_type.#{event_type}") : nil }
       end
 
     private
