@@ -4,6 +4,7 @@ RSpec.describe ProviderEvents::Steps::EventName do
   include_context "with wizard step"
 
   it_behaves_like "a with wizard step"
+  it_behaves_like "a sanitised field", :event_name
 
   it { is_expected.to respond_to :event_name }
 

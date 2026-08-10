@@ -27,7 +27,17 @@ module ProviderEvents
         @buildings ||= GetIntoTeachingApiClient::TeachingEventBuildingsApi.new.get_teaching_event_buildings
       end
 
+      def reviewable_answers
+        if existing?
+          { "venue" => building_record.present? ? "#{building_record.venue} (#{building_record&.address_postcode})" : nil }
+        end
+      end
+
     private
+
+      def building_record
+        @building_record ||= buildings.find { |b| b.id == building } if building.present?
+      end
 
       def location_option_inquiry = location_option.to_s.inquiry
     end

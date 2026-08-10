@@ -149,6 +149,9 @@ Rails.application.routes.draw do
     resources :steps,
               path: "/",
               only: %i[index show update] do
+      collection do
+        get :completed, to: "steps#completed"
+      end
     end
   end
 
