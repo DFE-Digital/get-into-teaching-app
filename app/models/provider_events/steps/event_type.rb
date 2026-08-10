@@ -2,6 +2,8 @@ module ProviderEvents
   module Steps
     class EventType < ::GITWizard::Step
       EVENT_TYPES = [IN_PERSON = "in_person".freeze, ONLINE = "online".freeze].freeze
+      API_ONLINE_EVENT_TYPE_ID = 222750008
+      API_SCHOOL_UNI_EVENT_TYPE_ID = 222750009
 
       include FunnelTitle
 
@@ -15,6 +17,14 @@ module ProviderEvents
 
       def event_types
         @event_types ||= EVENT_TYPES.map { |id| EventTypeData.new(id: id, value: id) }
+      end
+
+      def api_id
+        if online?
+          API_ONLINE_EVENT_TYPE_ID
+        elsif event_type.in_person?
+          API_SCHOOL_UNI_EVENT_TYPE_ID
+        end
       end
 
     private
