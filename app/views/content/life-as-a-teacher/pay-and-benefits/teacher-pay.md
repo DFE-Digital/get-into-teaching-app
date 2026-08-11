@@ -27,7 +27,7 @@ If you’re a primary or secondary teacher in England, your salary will depend o
 
 The amounts on this page apply from $salaries_date_appliesfrom$.
 
-The pay ranges below apply to maintained schools (schools funded by local authorities).
+The pay ranges on this page apply to maintained schools (schools funded by local authorities).
 
 Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges.
 
