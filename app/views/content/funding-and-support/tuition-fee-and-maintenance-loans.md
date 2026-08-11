@@ -27,6 +27,9 @@ cta_arrow_link:
   veterans-support:
     link_target: "/funding-and-support/if-youre-a-veteran"
     link_text: "Find out more about financial support if you’re a veteran"
+  lifelong-learning-entitlement:
+    link_target: "https://www.gov.uk/government/publications/lifelong-learning-entitlement-lle-overview"
+    link_text: "Find out more about the LLE"  
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 expander:
@@ -94,7 +97,7 @@ If you already have a degree, or have used all of your tuition fee loan entitlem
 
 This funding is called priority additional entitlement. It's available for certain priority courses, including initial teacher training (ITT).
 
-[Find out more about the LLE](https://www.gov.uk/government/publications/lifelong-learning-entitlement-lle-overview).
+$lifelong-learning-entitlement$
 
 ## Check your eligibility for a bursary or scholarship
 
