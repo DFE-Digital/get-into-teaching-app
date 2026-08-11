@@ -88,6 +88,14 @@ The maximum amount you may be eligible to borrow is:
 
 $student-finance-calculator$
 
+## Lifelong learning entitlement (LLE)
+
+If you already have a degree, or have used all of your tuition fee loan entitlement, you may still be able to get a tuition fee loan to train to teach through the lifelong learning entitlement (LLE).
+
+This funding is called priority additional entitlement. It's available for certain priority courses, including initial teacher training (ITT).
+
+[Find out more about the LLE](https://www.gov.uk/government/publications/lifelong-learning-entitlement-lle-overview).
+
 ## Check your eligibility for a bursary or scholarship
 
 You may also be eligible for a tax-free bursary or scholarship, depending on the subject you're training to teach.
