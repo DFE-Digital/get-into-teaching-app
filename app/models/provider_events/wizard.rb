@@ -31,11 +31,32 @@ module ProviderEvents
       # end
 
 
-        puts "EXPORT_DATA:"
-        puts export_data.inspect
+        # puts "EXPORT_DATA:"
+        # puts export_data.inspect
+
+        data = construct_export
+        event = to_api_event(data)
+
 
         puts "CONSTRUCT_EXPORT:"
-        puts construct_export.inspect
+        puts data.inspect
+
+
+
+        Rails.logger.info("upsert_teaching_event.data")
+        Rails.logger.info(data)
+
+
+        response = GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(event)
+
+        Rails.logger.info("upsert_teaching_event.response")
+        Rails.logger.info(response)
+
+
+
+
+
+
 
 
 
@@ -93,40 +114,8 @@ module ProviderEvents
       puts "EXPORT_DATA"
       puts export_data.inspect
       puts "\n"
-    end
 
-    def export_data_to_api_params
-      export_data.tap do |data|
-        {
-          id: nil,
-          type_id: data["event_type"].inquiry.online? ? ONLINE_EVENT_TYPE_ID : SCHOOL_UNI_EVENT_TYPE_ID,
-          status_id: PENDING_REVIEW_STATUS_ID,
-          region_id: nil,
-          readable_id: "#{data["event_date"]}",
-          web_feed_id: nil,
-
-          is_online: nil,
-          is_in_person: nil,
-          is_virtual: nil,
-
-          name: data["event_name"],
-          # summary: data["event_description"],
-          # message: nil,
-          description: data["event_description"],
-
-          provider_website_url: data["event_website"],
-          provider_target_audience: data["target_audience"],
-          provider_organiser: data["organisation_name"],
-          provider_contact_email: data["email"],
-
-          start_at: data["start_time"],
-          end_at: data["end_time"],
-
-          building: nil,
-
-          accessibility_options: nil,
-        }
-      end
+      export_data.slice(*attributes.map(&:to_s))
     end
 
 
@@ -137,56 +126,55 @@ module ProviderEvents
           data["is_online"] = event_type.online?
           data["is_in_person"] = event_type.in_person?
           data["is_virtual"] = event_type.online?
+
+          data["building"] ||= {}
+          if event_type.online?
+            data["building"]["venue"] = data["organisation_name"]
+            data["building"]["address_postcode"] = data["online_postcode"]
+          elsif event_type.in_person?
+            find("in_person_location").tap do |in_person_location|
+              if in_person_location.existing?
+                data["building"]["id"] = data["building_id"]
+              elsif in_person_location.new?
+                find("new_venue").tap do |new_venue|
+                  data["building"]["venue"] = data["venue_name"]
+                  data["building"]["address_line_1"] = data["address_line_1"]
+                  data["building"]["address_line_2"] = data["address_line_2"]
+                  data["building"]["address_line_3"] = data["address_line_3"]
+                  data["building"]["address_city"] = data["address_city"]
+                  data["building"]["address_postcode"] = data["address_postcode"]
+                end
+              end
+            end
+          end
+
+          data["status_id"] ||= PENDING_REVIEW_STATUS_ID
+          find("event_date").tap do |event_date|
+            data["readable_id"] ||= "#{event_date.event_date.strftime("%y%m%d")}-#{data["event_name"].parameterize}"
+          end
+
+          data["name"] = data["event_name"]
+          # summary: data["XXXX"],
+          # message: nil,
+          # data["description"] = data["event_description"]
+
+          data["provider_website_url"] = data["event_website"]
+          data["provider_target_audience"] = data["target_audience"]
+          data["provider_organiser"] = data["organisation_name"]
+          data["provider_contact_email"] = data["email"]
+
+          data["start_at"] = data["start_time"]
+          data["end_at"] = data["end_time"]
         end
-        data["status_id"] ||= PENDING_REVIEW_STATUS_ID
-        find("event_date").tap do |event_date|
-          data["readable_id"] ||= "#{event_date.event_date.strftime("%y%m%d")}-#{data["event_name"].parameterize}"
-        end
-
-        data["name"] = data["event_name"]
-        # summary: data["XXXX"],
-        # message: nil,
-        data["description"] = data["event_description"]
-
-        data["provider_website_url"] = data["event_website"]
-        data["provider_target_audience"] = data["target_audience"]
-        data["provider_organiser"] = data["organisation_name"]
-        data["provider_contact_email"] = data["email"]
-
-        data["start_at"] = data["start_time"]
-        data["end_at"] = data["end_time"]
-
-        data["building"] ||= {}
 
         # accessibility
       end
     end
 
-    # def add_event_to_crm
-    #   GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(to_api_event)
-    # end
-
-    # def to_api_event
-    #   attributes = *GetIntoTeachingApiClient::TeachingEvent.attribute_map.keys
-    #
-    #   puts "ATTRIBUTES - KEYS: #{attributes.inspect}"
-    #
-    #   hash = convert_attributes_for_api_model.slice(*attributes.map(&:to_s))
-    #
-    #   puts "HASH: #{hash.inspect}"
-    #
-    #   api_event = GetIntoTeachingApiClient::TeachingEvent.new(hash)
-    #
-    #   puts "API_EVENT: #{api_event.inspect}"
-    #
-    #   puts "BUILDING: #{building.inspect}"
-    #
-    #   api_event.building = building.to_api_building if building.present?
-    #   api_event
-    # end
-
-
-
-
+    def to_api_event(data)
+      api_event = GetIntoTeachingApiClient::TeachingEvent.new(data)
+      # api_event.building = building.to_api_building if building.present?
+      api_event
+    end
   end
 end
