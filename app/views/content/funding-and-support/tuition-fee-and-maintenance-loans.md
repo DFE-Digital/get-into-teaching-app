@@ -93,9 +93,9 @@ $student-finance-calculator$
 
 ## Lifelong learning entitlement (LLE)
 
-If you already have a degree, or have used all of your tuition fee loan entitlement, you may still be able to get a tuition fee loan to train to teach through the lifelong learning entitlement (LLE).
+If you already have a degree, or have used all of your tuition fee loan entitlement, you may still be able to get a tuition fee loan to train to teach through the lifelong learning entitlement (LLE). 
 
-This funding is called priority additional entitlement. It's available for certain priority courses, including initial teacher training (ITT).
+This funding is called priority additional entitlement. It is available to eligible students in England studying priority courses, including initial teacher training (ITT).
 
 $lifelong-learning-entitlement$
 
