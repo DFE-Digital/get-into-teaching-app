@@ -6,10 +6,10 @@ module ProviderEvents
       include FunnelTitle
 
       attribute :location_option
-      attribute :building
+      attribute :building_id
 
       validates :location_option, presence: true, inclusion: LOCATION_OPTIONS
-      validates :building, presence: true, if: -> { existing? }
+      validates :building_id, presence: true, if: -> { existing? }
 
       delegate :existing?, :new?, to: :location_option_inquiry
 
@@ -36,7 +36,7 @@ module ProviderEvents
     private
 
       def building_record
-        @building_record ||= buildings.find { |b| b.id == building } if building.present?
+        @building_record ||= buildings.find { |b| b.id == building_id } if building_id.present?
       end
 
       def location_option_inquiry = location_option.to_s.inquiry

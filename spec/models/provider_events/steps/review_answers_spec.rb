@@ -7,7 +7,7 @@ RSpec.describe ProviderEvents::Steps::ReviewAnswers do
     {
       ProviderEvents::Steps::Email => { email: "test@test.test" },
       ProviderEvents::Steps::EventName => { event_name: "Event Name" },
-      ProviderEvents::Steps::EventDescription => { event_description: "Event Description" },
+      ProviderEvents::Steps::EventDescription => { description: "Event Description" },
       ProviderEvents::Steps::OrganisationName => { organisation_name: "Organisation Name" },
       ProviderEvents::Steps::EventWebsite => { event_website: "https://www.example.com" },
       ProviderEvents::Steps::TargetAudience => { target_audience: "Target Audience" },

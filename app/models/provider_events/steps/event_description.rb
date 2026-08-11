@@ -8,9 +8,9 @@ module ProviderEvents
       include ActiveRecord::Normalization
       include ActiveModel::Dirty
 
-      attribute :event_description
-      validates :event_description, presence: true, length: { maximum: MAX_CHARS }, number_of_words: { less_than: MAX_WORDS }
-      normalizes :event_description, with: ->(field) { field.to_s.squish.presence }
+      attribute :description
+      validates :description, presence: true, length: { maximum: MAX_CHARS }, number_of_words: { less_than: MAX_WORDS }
+      normalizes :description, with: ->(field) { field.to_s.squish.presence }
     end
   end
 end

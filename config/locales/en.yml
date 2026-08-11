@@ -376,7 +376,7 @@ en:
         event_name:
           title: "What is the name of your event?"
       event_description:
-        event_description:
+        description:
           title: "Describe your event"
       organisation_name:
         organisation_name:
@@ -740,7 +740,7 @@ en:
               too_long: "Event name must be 200 characters or less"
         provider_events/steps/event_description:
           attributes:
-            event_description:
+            description:
               blank: "Enter event description"
               too_long: "Event description must be 6,000 characters or less"
               use_fewer_words: "Event description must be 300 words or less"
@@ -785,7 +785,7 @@ en:
           attributes:
             location_option:
               blank: "Search for an existing venue or add a new venue"
-            building:
+            building_id:
               blank: "Search for an existing building"
         provider_events/steps/new_venue:
           attributes:
@@ -1076,7 +1076,7 @@ en:
       provider_events_steps_event_name:
         event_name: "What is the name of your event?"
       provider_events_steps_event_description:
-        event_description: "Describe your event"
+        description: "Describe your event"
       provider_events_steps_organisation_name:
         organisation_name: "What is the name of your organisation?"
       provider_events_steps_event_website:
@@ -1095,7 +1095,7 @@ en:
         online_postcode: "Provide a postcode for your event"
       provider_events_steps_in_person_location:
         location_option: "Where will your event be?"
-        building: "Search for existing buildings"
+        building_id: "Search for existing buildings"
       provider_events_steps_new_venue:
         title: "Venue details"
         venue_name: "Venue name"
@@ -1204,7 +1204,7 @@ en:
       provider_events_steps_event_name:
         event_name: "Your chosen event name will show on the event page."
       provider_events_steps_event_description:
-        event_description: "This description will show on the event page."
+        description: "This description will show on the event page."
       provider_events_steps_organisation_name:
         organisation_name: "Your organisation name will show on the event page."
       provider_events_steps_event_website:

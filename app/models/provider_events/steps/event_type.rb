@@ -22,9 +22,10 @@ module ProviderEvents
       def api_id
         if online?
           API_ONLINE_EVENT_TYPE_ID
-        elsif event_type.in_person?
+        elsif in_person?
           API_SCHOOL_UNI_EVENT_TYPE_ID
         end
+      end
 
       def reviewable_answers
         { "event_type" => event_type ? I18n.t("helpers.answer.provider_events_steps.event_type.event_type.#{event_type}") : nil }

@@ -32,7 +32,7 @@ RSpec.describe ProviderEvents::Wizard do
     let(:store) do
       { uuid => {
         "email" => "email@address.com",
-        "event_description" => "Event Description",
+        "description" => "Event Description",
         "organisation_name" => "Organisation Name",
       } }
     end
