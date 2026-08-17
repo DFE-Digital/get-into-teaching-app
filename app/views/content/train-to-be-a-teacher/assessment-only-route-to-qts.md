@@ -87,6 +87,13 @@ provider_groups:
       telephone: "01908 669735"
       international_phone: "+441908669735"
       
+    - header: "University of Cumbria"
+      link: "https://www.cumbria.ac.uk/study/academic-departments/institute-of-education-arts-and-society/teaching-and-education/qts-direct-assessment-only-route/"
+      name: "Fiona Tidbury"
+      email: "qtsdirect@cumbria.ac.uk"
+      
+      
+      
     - header: "University of Warwick"
       link: "https://warwick.ac.uk/fac/soc/cte/professionaldevelopment/ao/"
       name: "Vikki Armeson"
@@ -189,6 +196,13 @@ provider_groups:
       telephone: "01268 988580"
       international_phone: "+441268988580"
       
+    - header: "Forest Independent Primary Collegiate"
+      link: "https://fipc.ac.uk"
+      name: "Dr Helen Tyler"
+      email: "h.tyler@fipc.ac.uk"
+      telephone: "07948373053"
+      international_phone: "+447948373053"
+      
     - header: "London School of Jewish Studies"
       link: "https://www.lsjs.ac.uk/assessment-only"
       name: "Galia Segal"
@@ -268,6 +282,13 @@ provider_groups:
       telephone: "01978 281881"
       international_phone: "+441978281881"
       extension: "Option 2"
+    - header: "Forest Independent Primary Collegiate"
+      link: "https://fipc.ac.uk"
+      name: "Dr Helen Tyler"
+      email: "h.tyler@fipc.ac.uk"
+      telephone: "07948373053"
+      international_phone: "+447948373053"
+      
     - header: "Future Teacher Training"
       link: "https://www.futureteachertraining.org"
       name: "Fran Wood"
@@ -281,13 +302,6 @@ provider_groups:
       email: "aoenquiries@kingston.ac.uk"
       telephone: "020 8417 4766"
       international_phone: "+442084174766"
-      
-    - header: "London Metropolitan University"
-      link: "https://www.londonmet.ac.uk/courses/postgraduate/assessment-only-ao-route-to-qualified-teacher-status---qts---qts/"
-      name: "Robert Fonseca"
-      email: "AssessmentQTS@londonmet.ac.uk"
-      telephone: "0207 133 2647"
-      international_phone: "+442071332647"
       
     - header: "London School of Jewish Studies"
       link: "https://www.lsjs.ac.uk/assessment-only"
@@ -324,6 +338,13 @@ provider_groups:
       telephone: "020 3740 1808"
       international_phone: "+442037401808"
       extension: "(option 1)"
+    - header: "University of Cumbria"
+      link: "https://www.cumbria.ac.uk/study/academic-departments/institute-of-education-arts-and-society/teaching-and-education/qts-direct-assessment-only-route/"
+      name: "Fiona Tidbury"
+      email: "qtsdirect@cumbria.ac.uk"
+      
+      
+      
     - header: "University of East London"
       link: "https://www.uel.ac.uk/"
       name: "Bryce Wilby"
@@ -460,6 +481,13 @@ provider_groups:
       email: "m.bird@chester.ac.uk"
       telephone: "01244 512142"
       international_phone: "+441244512142"
+      
+    - header: "University of Cumbria"
+      link: "https://www.cumbria.ac.uk/study/academic-departments/institute-of-education-arts-and-society/teaching-and-education/qts-direct-assessment-only-route/"
+      name: "Fiona Tidbury"
+      email: "qtsdirect@cumbria.ac.uk"
+      
+      
       
   South East:
     providers:
