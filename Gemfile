@@ -87,7 +87,7 @@ gem "indefinite_article"
 # NB: connection_pool 3 is not compatible with ActiveSupport 8.1
 gem "connection_pool", "< 3"
 
-gem "get_into_teaching_api_client_faraday", ">= 4.3.7.3", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
+gem "get_into_teaching_api_client_faraday", ">= 4.3.8", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client", branch: "v4.3.8"
 
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"

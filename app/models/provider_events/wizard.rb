@@ -1,7 +1,7 @@
 module ProviderEvents
   class Wizard < ::GITWizard::Base
     DEFAULT_ERROR_MESSAGE = "Choose an option from the list".freeze
-    PENDING_REVIEW_STATUS_ID = 222750003
+    PENDING_REVIEW_STATUS_ID = 222_750_003
     ATTRIBUTES_TO_LEAVE = %w[email reference_number].freeze
 
     self.steps = [
@@ -25,81 +25,12 @@ module ProviderEvents
       super.tap do |result|
         break unless result
 
-
-      #     @store[:reference_number] = "COMING-SOON"
-      #   @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
-      # end
-
-
-        # puts "EXPORT_DATA:"
-        # puts export_data.inspect
-
-        data = construct_export
-        event = to_api_event(data)
-
-
-        puts "CONSTRUCT_EXPORT:"
-        puts data.inspect
-
-
-
-        Rails.logger.info("upsert_teaching_event.data")
-        Rails.logger.info(data)
-
+        event = to_api_event(construct_export)
 
         response = GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(event)
+        @store[:reference_number] = response.reference_number
 
-        Rails.logger.info("upsert_teaching_event.response")
-        Rails.logger.info(response)
-
-
-
-
-
-
-
-
-
-
-        # attributes = GetIntoTeachingApiClient::TeacherTrainingAdviserSignUp.attribute_map.keys
-        # attributes = GetIntoTeachingApiClient::TeachingEvent.attribute_map.keys
-        #
-        #
-        # puts "@attributes:"
-        # puts attributes.inspect
-        #
-        # hash = convert_attributes_for_api_model.slice(*attributes.map(&:to_s))
-        # puts "HASH: #{hash.inspect}"
-
-        # @event = Event.new(event_params)
-
-        # puts to_api_event.inspect
-
-
-
-        # request = GetIntoTeachingApiClient::TeachingEventsApi.new()
-        #
-        # request = GetIntoTeachingApiClient::MailingListAddMember.new(construct_export)
-        #
-        #
-        #
-        # @event = Event.new(event_params)
-        # @event.assign_building(building_params) unless @event.online_event?
-        #
-        # if @event.save
-        #   Rails.logger.info("#{@user.username} - create/update - #{@event.to_api_event.to_json}")
-        #   redirect_to internal_events_path(
-        #                 status: :pending,
-        #                 readable_id: @event.readable_id,
-        #                 event_type: determine_event_type_from_id(@event.type_id),
-        #                 )
-        # # else
-        # #   render action: :new
-        # end
-
-
-        # @store[:reference_number] = "COMING-SOON"
-        # @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
+        @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
       end
     end
 
@@ -108,16 +39,8 @@ module ProviderEvents
     def construct_export
       attributes = GetIntoTeachingApiClient::TeachingEvent.attribute_map.keys
 
-      puts "ATTRIBUTES"
-      puts attributes.inspect
-
-      puts "EXPORT_DATA"
-      puts export_data.inspect
-      puts "\n"
-
       export_data.slice(*attributes.map(&:to_s))
     end
-
 
     def export_data
       super.tap do |data|
@@ -136,7 +59,7 @@ module ProviderEvents
               if in_person_location.existing?
                 data["building"]["id"] = data["building_id"]
               elsif in_person_location.new?
-                find("new_venue").tap do |new_venue|
+                find("new_venue").tap do |_new_venue|
                   data["building"]["venue"] = data["venue_name"]
                   data["building"]["address_line_1"] = data["address_line_1"]
                   data["building"]["address_line_2"] = data["address_line_2"]
@@ -150,18 +73,23 @@ module ProviderEvents
 
           data["status_id"] ||= PENDING_REVIEW_STATUS_ID
           find("event_date").tap do |event_date|
-            data["readable_id"] ||= "#{event_date.event_date.strftime("%y%m%d")}-#{data["event_name"].parameterize}"
+            data["readable_id"] ||= "#{event_date.event_date.strftime('%y%m%d')}-#{data['event_name'].parameterize}"
           end
 
           data["name"] = data["event_name"]
-          # summary: data["XXXX"],
-          # message: nil,
-          # data["description"] = data["event_description"]
 
           data["provider_website_url"] = data["event_website"]
           data["provider_target_audience"] = data["target_audience"]
           data["provider_organiser"] = data["organisation_name"]
           data["provider_contact_email"] = data["email"]
+
+          find("registration_details").tap do |registration_details|
+            if registration_details.website?
+              data["registration_email_link"] = data["registration_website"]
+            elsif registration - details.email?
+              data["registration_email_link"] = data["registration_email"]
+            end
+          end
 
           data["start_at"] = data["start_time"]
           data["end_at"] = data["end_time"]
@@ -172,9 +100,8 @@ module ProviderEvents
     end
 
     def to_api_event(data)
-      api_event = GetIntoTeachingApiClient::TeachingEvent.new(data)
+      GetIntoTeachingApiClient::TeachingEvent.new(data)
       # api_event.building = building.to_api_building if building.present?
-      api_event
     end
   end
 end
