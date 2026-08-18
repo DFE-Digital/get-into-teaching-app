@@ -86,5 +86,5 @@
     "js-lint": "yarn eslint app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js",
     "js-lint-fix": "yarn prettier --write app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js && yarn eslint --fix app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js"
   },
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "yarn@4.18.0"
 }
