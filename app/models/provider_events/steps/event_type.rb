@@ -2,8 +2,8 @@ module ProviderEvents
   module Steps
     class EventType < ::GITWizard::Step
       EVENT_TYPES = [IN_PERSON = "in_person".freeze, ONLINE = "online".freeze].freeze
-      API_ONLINE_EVENT_TYPE_ID = 222750008
-      API_SCHOOL_UNI_EVENT_TYPE_ID = 222750009
+      API_ONLINE_EVENT_TYPE_ID = 222_750_008
+      API_SCHOOL_UNI_EVENT_TYPE_ID = 222_750_009
 
       include FunnelTitle
 
