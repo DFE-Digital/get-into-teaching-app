@@ -32,9 +32,9 @@ salaries:
     innerlondonmax: £92,043
   headteacher:
     minshortened: £60k
-    maxshortened: £158k
+    maxshortened: £148k
     englandmin: £60,619
-    englandmax: £153,301
+    englandmax: £148,829
     londonfringemin: £62,102
     londonfringemax: £150,301
     outerlondonmin: £64,871
