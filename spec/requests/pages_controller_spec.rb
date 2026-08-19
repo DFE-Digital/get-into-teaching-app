@@ -27,13 +27,13 @@ describe PagesController, type: :request do
       it { is_expected.not_to be_indexed }
     end
 
-    context "with still time to apply landing page" do
+    context "with mailing list landing page" do
       subject { response }
 
-      before { get "/landing/still-time-to-apply" }
+      before { get "/landing/mailing-list" }
 
       it { is_expected.to have_http_status :success }
-      it { is_expected.to have_attributes body: /Still time to apply/i }
+      it { is_expected.to have_attributes body: /Get the latest information sent straight to your inbox/i }
     end
 
     context "with invalid page" do
