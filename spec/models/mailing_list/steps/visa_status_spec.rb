@@ -9,7 +9,7 @@ describe MailingList::Steps::VisaStatus do
   let(:visa_status_ids) { visa_statuses.map(&:id) }
 
   before do
-    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to receive(:get_candidate_visa_status) { visa_statuses }
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to receive(:get_candidate_visa_statuses) { visa_statuses }
   end
 
   it_behaves_like "a with wizard step"

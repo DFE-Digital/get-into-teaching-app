@@ -2,7 +2,7 @@ module TeacherTrainingAdviser::Steps
   class RetakeGcseScience < GITWizard::Step
     attribute :planning_to_retake_gcse_science_id, :integer
 
-    validates :planning_to_retake_gcse_science_id, pick_list_items: { method: :get_candidate_retake_gcse_status }
+    validates :planning_to_retake_gcse_science_id, pick_list_items: { method: :get_candidate_retake_gcse_statuses }
 
     OPTIONS = Crm::BooleanType::ALL
 

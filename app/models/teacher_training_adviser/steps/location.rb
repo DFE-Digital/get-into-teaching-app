@@ -9,7 +9,7 @@ module TeacherTrainingAdviser::Steps
     include FunnelTitle
 
     def locations
-      @locations ||= PickListItemsApiPresenter.new.get_candidate_location
+      @locations ||= PickListItemsApiPresenter.new.get_candidate_locations
     end
 
     def location_ids

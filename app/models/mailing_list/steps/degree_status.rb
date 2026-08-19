@@ -52,7 +52,7 @@ module MailingList
     private
 
       def query_degree_status
-        PickListItemsApiPresenter.new.get_qualification_degree_status
+        PickListItemsApiPresenter.new.get_qualification_degree_statuses
       end
     end
   end

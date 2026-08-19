@@ -1,1 +1,27 @@
-{"degreeStatusId":222750006,"candidateId":null,"qualificationId":null,"subjectTaughtId":null,"preferredTeachingSubjectId":null,"countryId":"19f4c2e6-74f9-e811-a97a-000d3a2760f2","acceptedPolicyId":"8da7ae80-82f2-ea11-a815-000d3a44afcc","typeId":222750000,"ukDegreeGradeId":222750001,"degreeTypeId":222750000,"initialTeacherTrainingYearId":22303,"stageTaughtId":null,"preferredEducationPhaseId":222750000,"hasGcseMathsAndEnglishId":222750001,"hasGcseScienceId":222750000,"planningToRetakeGcseMathsAndEnglishId":222750000,"planningToRetakeGcseScienceId":null,"adviserStatusId":null,"channelId":null,"degreeCountry":"72f5c2e6-74f9-e811-a97a-000d3a2760f2","creationChannelSourceId":222750003,"creationChannelServiceId":222750010,"creationChannelActivityId":null,"email":"john@doe.com","firstName":"John","lastName":"Doe","dateOfBirth":"1974-03-16","teacherId":null,"degreeSubject":"Physics","addressTelephone":"123456789","addressPostcode":null,"phoneCallScheduledAt":null,"graduationYear":2021,"situation":222750002,"citizenship":222750001,"visaStatus":222750002,"location":222750001}
+{
+  "degree_status_id": 222750006,
+  "country_id": "19f4c2e6-74f9-e811-a97a-000d3a2760f2",
+  "accepted_policy_id": "8da7ae80-82f2-ea11-a815-000d3a44afcc",
+  "type_id": 222750000,
+  "uk_degree_grade_id": 222750001,
+  "degree_type_id": 222750000,
+  "initial_teacher_training_year_id": 22303,
+  "preferred_education_phase_id": 222750000,
+  "has_gcse_maths_and_english_id": 222750001,
+  "has_gcse_science_id": 222750000,
+  "planning_to_retake_gcse_maths_and_english_id": 222750000,
+  "degree_country": "72f5c2e6-74f9-e811-a97a-000d3a2760f2",
+  "creation_channel_source_id": 222750003,
+  "creation_channel_service_id": 222750010,
+  "email": "john@doe.com",
+  "first_name": "John",
+  "last_name": "Doe",
+  "date_of_birth": "1974-03-16",
+  "degree_subject": "Physics",
+  "address_telephone": "123456789",
+  "graduation_year": 2021,
+  "situation": 222750002,
+  "citizenship": 222750001,
+  "visa_status": 222750002,
+  "location": 222750001
+}

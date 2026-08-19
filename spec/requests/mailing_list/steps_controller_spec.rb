@@ -71,7 +71,7 @@ describe MailingList::StepsController, type: :request do
       it { is_expected.to redirect_to(mailing_list_step_path(:degree_status)) }
 
       it "logs the response model (filtering sensitive attributes)" do
-        filtered_json = { "candidateId" => "abc123", "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]" }.to_json
+        filtered_json = { "candidate_id" => "abc123", "email" => "[FILTERED]", "first_name" => "[FILTERED]", "last_name" => "[FILTERED]" }.to_json
         expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#exchange_magic_link_token: #{filtered_json}")
       end
     end
