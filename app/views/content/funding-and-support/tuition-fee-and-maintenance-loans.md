@@ -27,6 +27,9 @@ cta_arrow_link:
   veterans-support:
     link_target: "/funding-and-support/if-youre-a-veteran"
     link_text: "Find out more about financial support if you’re a veteran"
+  lifelong-learning-entitlement:
+    link_target: "https://www.gov.uk/government/publications/lifelong-learning-entitlement-lle-overview"
+    link_text: "Find out more about the LLE"  
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 expander:
@@ -87,6 +90,14 @@ The maximum amount you may be eligible to borrow is:
 * $finance_maintenanceloan_oversixty$ if you're 60 years or over on the first day of the first academic year of your course
 
 $student-finance-calculator$
+
+## Lifelong learning entitlement (LLE)
+
+If you already have a degree, or have used all of your tuition fee loan entitlement, you may still be able to get a tuition fee loan to train to teach through the lifelong learning entitlement (LLE). 
+
+This funding is called priority additional entitlement. It is available to eligible students in England studying priority courses, including initial teacher training (ITT).
+
+$lifelong-learning-entitlement$
 
 ## Check your eligibility for a bursary or scholarship
 
