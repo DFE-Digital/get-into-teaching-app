@@ -34,7 +34,7 @@ salaries:
     minshortened: £60k
     maxshortened: £158k
     englandmin: £60,619
-    englandmax: £158,863
+    englandmax: £153,301
     londonfringemin: £62,102
     londonfringemax: £150,301
     outerlondonmin: £64,871
@@ -42,7 +42,7 @@ salaries:
     innerlondonmin: £70,754
     innerlondonmax: £158,863
   unqualifiedteacher:
-    englandmin: £23,393
+    englandmin: £23,732
     englandmax: £36,494
     londonfringemin: £24,909
     londonfringemax: £38,004
