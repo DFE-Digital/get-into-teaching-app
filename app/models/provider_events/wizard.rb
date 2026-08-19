@@ -86,7 +86,7 @@ module ProviderEvents
           find("registration_details").tap do |registration_details|
             if registration_details.website?
               data["registration_email_link"] = data["registration_website"]
-            elsif registration - details.email?
+            elsif registration_details.email?
               data["registration_email_link"] = data["registration_email"]
             end
           end
