@@ -2,6 +2,7 @@ FactoryBot.define do
   factory :internal_event, class: "Internal::Event" do
     id { SecureRandom.uuid }
     readable_id { "Test" }
+    reference_number { "A1234" }
     name { "Test" }
     summary { "Test" }
     description { "Test" }

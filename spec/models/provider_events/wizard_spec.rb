@@ -28,18 +28,24 @@ RSpec.describe ProviderEvents::Wizard do
     subject { described_class.new(wizardstore, current_step) }
 
     let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
+    let(:provider_event) { build(:internal_event, :provider_event) }
     let(:uuid) { SecureRandom.uuid }
     let(:store) do
       { uuid => {
-        "email" => "email@address.com",
+        "email" => "test@test.test",
+        "event_date" => Date.new(2999, 0o1, 0o1),
         "description" => "Event Description",
+        "event_name" => "Event Name",
         "organisation_name" => "Organisation Name",
+        "registration_option" => "website",
+        "registration_website" => "https://test.test/test",
       } }
     end
     let(:current_step) { "review_answers" }
 
     before do
       allow(subject).to receive(:valid?).and_return(true)
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:upsert_teaching_event).and_return(provider_event)
     end
 
     context "with prune! spy" do
@@ -59,8 +65,8 @@ RSpec.describe ProviderEvents::Wizard do
     it "prunes the store, retaining certain attributes" do
       subject.complete!
       expect(store[uuid]).to eql({
-        "email" => "email@address.com",
-        "reference_number" => "COMING-SOON",
+        "email" => "test@test.test",
+        "reference_number" => "A1234",
       })
     end
   end

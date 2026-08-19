@@ -3,9 +3,16 @@ require "rails_helper"
 RSpec.feature "Register a provider event", type: :feature do
   include_context "with wizard data"
 
-  describe "Registering an online event" do
-    before { visit provider_events_steps_path }
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:upsert_teaching_event).and_return(provider_event)
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi).to receive(:get_teaching_event_buildings).and_return(buildings)
+    visit provider_events_steps_path
+  end
 
+  let(:provider_event) { build(:internal_event, :provider_event) }
+  let(:buildings) { build_list(:event_building, 1) }
+
+  describe "Registering an online event" do
     it "navigates the steps" do
       expect(page).to have_link(href: provider_events_step_path(ProviderEvents::Steps::Email.key))
       click_on "Start now"
@@ -93,16 +100,10 @@ RSpec.feature "Register a provider event", type: :feature do
 
       expect(page).to have_content("Application submitted")
       expect(page).to have_content("test@test.test")
+      expect(page).to have_content("Your reference number A1234")
     end
 
     describe "Registering an in-person event" do
-      before do
-        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi).to receive(:get_teaching_event_buildings).and_return(buildings)
-        visit provider_events_steps_path
-      end
-
-      let(:buildings) { build_list(:event_building, 1) }
-
       it "navigates the steps" do
         expect(page).to have_link(href: provider_events_step_path(ProviderEvents::Steps::Email.key))
         click_on "Start now"
@@ -178,13 +179,6 @@ RSpec.feature "Register a provider event", type: :feature do
       end
 
       describe "Registering an in-person event at a new venue" do
-        before do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi).to receive(:get_teaching_event_buildings).and_return(buildings)
-          visit provider_events_steps_path
-        end
-
-        let(:buildings) { build_list(:event_building, 1) }
-
         it "navigates the steps" do
           expect(page).to have_link(href: provider_events_step_path(ProviderEvents::Steps::Email.key))
           click_on "Start now"

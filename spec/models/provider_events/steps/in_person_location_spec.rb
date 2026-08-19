@@ -6,7 +6,7 @@ RSpec.describe ProviderEvents::Steps::InPersonLocation do
   it_behaves_like "a with wizard step"
 
   it { is_expected.to respond_to :location_option }
-  it { is_expected.to respond_to :building }
+  it { is_expected.to respond_to :building_id }
   it { is_expected.to respond_to :existing? }
   it { is_expected.to respond_to :new? }
 

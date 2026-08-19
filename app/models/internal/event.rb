@@ -16,6 +16,8 @@ module Internal
               default: Crm::EventType.school_or_university_event_id
     attribute :name, :string
     attribute :summary, :string
+    attribute :reference_number, :string
+    attribute :email_registration_link, :string
     attribute :description, :string
     attribute :is_online, :boolean, default: nil
     attribute :start_at, :datetime
