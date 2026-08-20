@@ -2,6 +2,7 @@ module ProviderEvents
   class Wizard < ::GITWizard::Base
     DEFAULT_ERROR_MESSAGE = "Choose an option from the list".freeze
     PENDING_REVIEW_STATUS_ID = 222_750_003
+    PROVIDER_EVENT_TYPE_ID = 222_750_009
     ATTRIBUTES_TO_LEAVE = %w[email reference_number].freeze
 
     self.steps = [
@@ -25,7 +26,7 @@ module ProviderEvents
       super.tap do |result|
         break unless result
 
-        event = to_api_event(construct_export)
+        event = GetIntoTeachingApiClient::TeachingEvent.new(construct_export)
 
         response = GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(event)
         @store[:reference_number] = response.reference_number
@@ -45,7 +46,7 @@ module ProviderEvents
     def export_data
       super.tap do |data|
         find("event_type").tap do |event_type|
-          data["type_id"] = event_type.api_id
+          data["type_id"] = PROVIDER_EVENT_TYPE_ID
           data["is_online"] = event_type.online?
           data["is_in_person"] = event_type.in_person?
           data["is_virtual"] = event_type.online?
@@ -54,6 +55,7 @@ module ProviderEvents
           if event_type.online?
             data["building"]["venue"] = data["organisation_name"]
             data["building"]["address_postcode"] = data["online_postcode"]
+
           elsif event_type.in_person?
             find("in_person_location").tap do |in_person_location|
               if in_person_location.existing?
@@ -97,11 +99,6 @@ module ProviderEvents
 
         # accessibility
       end
-    end
-
-    def to_api_event(data)
-      GetIntoTeachingApiClient::TeachingEvent.new(data)
-      # api_event.building = building.to_api_building if building.present?
     end
   end
 end
