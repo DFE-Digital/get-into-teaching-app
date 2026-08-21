@@ -1,12 +1,14 @@
 module TeacherTrainingAdviser::Steps
   class UkAddress < GITWizard::Step
-    attribute :address_postcode, :string
+    include FunnelTitle
+    include ActiveRecord::Normalization
+    include ActiveModel::Dirty
+
+    attribute :address_postcode
 
     validates :address_postcode, format: { with: /^([A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})$/i, multiline: true }
 
-    before_validation :sanitize_input
-
-    include FunnelTitle
+    normalizes :address_postcode, with: ->(field) { field.to_s.squish.upcase.presence }
 
     def self.contains_personal_details?
       true
@@ -14,12 +16,6 @@ module TeacherTrainingAdviser::Steps
 
     def skipped?
       other_step(:location).overseas? || other_step(:degree_country).another_country?
-    end
-
-  private
-
-    def sanitize_input
-      self.address_postcode = address_postcode.to_s.strip.presence if address_postcode
     end
   end
 end

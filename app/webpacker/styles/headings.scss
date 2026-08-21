@@ -201,9 +201,13 @@
   @include highlight-text($gitgreenpastel, $black);
 }
 
-h1 {
+h1, h1.govuk-label-wrapper > label.govuk-label {
   @extend .heading-xxl;
   font-family: Montserrat, sans-serif;
+}
+
+h1.govuk-label-wrapper > label.govuk-label {
+  margin-bottom: 1rem;
 }
 
 h2 {
