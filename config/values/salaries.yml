@@ -5,11 +5,15 @@ salaries:
   starting:
     min: £34,000
     minshortened: £34k
+    min_england_2027: £35,000
+    min_innerlondon_2027: £43,000
   fiveyears:
     max: £46,960
     maxshortened: £46k
   average:
     classroomshortened: £52k
+    classroom_2026: £52,800
+    classroom_2027: £54,400
 # Detailed salaries
   qualifiedteacher:
     englandmin: £34,069
