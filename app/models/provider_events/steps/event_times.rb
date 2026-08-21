@@ -77,7 +77,7 @@ module ProviderEvents
             # NB: Time.zone.local casts to the wrong timezone
             timezone.local(event_date.year, event_date.month, event_date.day, hour, minute)
           else
-            timezone.local(Date.today.year, Date.today.month, Date.today.day, hour, minute)
+            timezone.local(timezone.today.year, timezone.today.month, timezone.today.day, hour, minute)
           end
         rescue ArgumentError
           # catch invalid times, e.g. 25:62
