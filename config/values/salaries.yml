@@ -1,55 +1,58 @@
-salaries_date_appliesfrom: 1 September 2025
+salaries_date_appliesfrom: 1 September 2026
 
 salaries:
 # Summary salaries
   starting:
-    min: £32,916
-    minshortened: £32.9k
+    min: £34,000
+    minshortened: £34k
+    min_england_2027: £35,000
   fiveyears:
-    max: £45,352
-    maxshortened: £45k
+    max: £46,960
+    maxshortened: £46k
   average:
-    classroomshortened: £48k
+    classroomshortened: £52k
+    classroom_2026: £52,800
+    classroom_2027: £54,400
 # Detailed salaries
   qualifiedteacher:
-    englandmin: £32,916
-    englandmax: £51,048
-    englandmaxshortened: £51k
-    londonfringemin: £34,398
-    londonfringemax: £52,490
-    outerlondonmin: £37,870
-    outerlondonmax: £56,154
-    innerlondonmin: £40,317
-    innerlondonmax: £62,496
+    englandmin: £34,069
+    englandmax: £52,835
+    englandmaxshortened: £52k
+    londonfringemin: £35,602
+    londonfringemax: £54,328
+    outerlondonmin: £39,196
+    outerlondonmax: £58,120
+    innerlondonmin: £41,729
+    innerlondonmax: £64,684
   leadingpractitioner:
-    englandmin: £52,026
-    englandmax: £79,092
-    londonfringemin: £53,460
-    londonfringemax: £80,528
-    outerlondonmin: £56,154
-    outerlondonmax: £83,223
-    innerlondonmin: £61,858
-    innerlondonmax: £88,930
+    englandmin: £53,847
+    englandmax: £81,861
+    londonfringemin: £55,332
+    londonfringemax: £83,347
+    outerlondonmin: £58,120
+    outerlondonmax: £86,136
+    innerlondonmin: £64,024
+    innerlondonmax: £92,043
   headteacher:
-    minshortened: £58k
-    maxshortened: £153k
-    englandmin: £58,569
-    englandmax: £143,796
-    londonfringemin: £60,001
-    londonfringemax: £145,218
-    outerlondonmin: £62,677
-    outerlondonmax: £147,866
-    innerlondonmin: £68,361
-    innerlondonmax: £153,490
+    minshortened: £60k
+    maxshortened: £148k
+    englandmin: £60,619
+    englandmax: £148,829
+    londonfringemin: £62,102
+    londonfringemax: £150,301
+    outerlondonmin: £64,871
+    outerlondonmax: £153,042
+    innerlondonmin: £70,754
+    innerlondonmax: £158,863
   unqualifiedteacher:
-    englandmin: £22,601
-    englandmax: £35,259
-    londonfringemin: £24,066
-    londonfringemax: £36,718
-    outerlondonmin: £26,789
-    outerlondonmax: £39,450
-    innerlondonmin: £28,343
-    innerlondonmax: £40,994
+    englandmin: £23,732
+    englandmax: £36,494
+    londonfringemin: £24,909
+    londonfringemax: £38,004
+    outerlondonmin: £27,727
+    outerlondonmax: £40,831
+    innerlondonmin: £29,336
+    innerlondonmax: £42,429
 # Additional payments
   tlr:
-    max: £17,216
+    max: £17,819

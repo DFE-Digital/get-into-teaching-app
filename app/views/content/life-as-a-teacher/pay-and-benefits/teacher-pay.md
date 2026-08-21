@@ -16,14 +16,30 @@ cta_arrow_link:
   steps:
     link_target: "/steps-to-become-a-teacher"
     link_text: "Find out how to become a teacher"
+inset_text:
+  new-salaries:
+    text: |-
+      The pay award is subject to a statutory consultation period. Schools can choose how to implement the award.
 ---
-If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on.
+$new-salaries$
 
-The pay ranges below apply to maintained schools (schools funded by local authorities).
+If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on. 
+
+The amounts on this page apply from $salaries_date_appliesfrom$.
+
+The pay ranges on this page apply to maintained schools (schools funded by local authorities).
 
 Non-maintained schools (for example, academies, independent schools and private schools) can set their own pay, but often follow these pay ranges.
 
-The amounts on this page apply from $salaries_date_appliesfrom$.
+## September 2026 and September 2027 pay awards
+
+From September 2026, new teachers will earn a minimum of $salaries_starting_min$ (or more in London).
+
+From September 2027, minimum starting salaries for teachers will be $salaries_starting_min_england_2027$ (or more in London).
+
+The average teacher salary will be $salaries_average_classroom_2026$ and above from September 2026, and $salaries_average_classroom_2027$ and above from September 2027.
+
+The pay awards for September 2026 and September 2027 are subject to a consultation period.
 
 ## Primary and secondary teacher salary
 
