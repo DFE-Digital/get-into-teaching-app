@@ -3,7 +3,7 @@ module ProviderEvents
     DEFAULT_ERROR_MESSAGE = "Choose an option from the list".freeze
     PENDING_REVIEW_STATUS_ID = 222_750_003
     PROVIDER_EVENT_TYPE_ID = 222_750_009
-    ATTRIBUTES_TO_LEAVE = %w[email reference_number].freeze
+    ATTRIBUTES_TO_LEAVE = %w[provider_contact_email reference_number].freeze
 
     self.steps = [
       Steps::Email,
@@ -54,7 +54,7 @@ module ProviderEvents
           data["building"] ||= {}
           if event_type.online?
             data["building"]["venue"] = data["organisation_name"]
-            data["building"]["address_postcode"] = data["online_postcode"]
+            data["building"]["addressPostcode"] = data["online_postcode"]
 
           elsif event_type.in_person?
             find("in_person_location").tap do |in_person_location|
@@ -63,11 +63,11 @@ module ProviderEvents
               elsif in_person_location.new?
                 find("new_venue").tap do |_new_venue|
                   data["building"]["venue"] = data["venue_name"]
-                  data["building"]["address_line_1"] = data["address_line_1"]
-                  data["building"]["address_line_2"] = data["address_line_2"]
-                  data["building"]["address_line_3"] = data["address_line_3"]
-                  data["building"]["address_city"] = data["address_city"]
-                  data["building"]["address_postcode"] = data["address_postcode"]
+                  data["building"]["addressLine1"] = data["address_line_1"]
+                  data["building"]["addressLine2"] = data["address_line_2"]
+                  data["building"]["addressLine3"] = data["address_line_3"]
+                  data["building"]["addressCity"] = data["address_city"]
+                  data["building"]["addressPostcode"] = data["address_postcode"]
                 end
               end
             end
@@ -83,7 +83,6 @@ module ProviderEvents
           data["provider_website_url"] = data["event_website"]
           data["provider_target_audience"] = data["target_audience"]
           data["provider_organiser"] = data["organisation_name"]
-          data["provider_contact_email"] = data["email"]
 
           find("registration_details").tap do |registration_details|
             if registration_details.website?
@@ -96,8 +95,6 @@ module ProviderEvents
           data["start_at"] = data["start_time"]
           data["end_at"] = data["end_time"]
         end
-
-        # accessibility
       end
     end
   end

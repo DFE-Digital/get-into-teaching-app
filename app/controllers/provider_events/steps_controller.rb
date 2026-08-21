@@ -18,7 +18,7 @@ module ProviderEvents
 
     def completed
       super
-      @email_address = wizard_store["email"]
+      @email_address = wizard_store["provider_contact_email"]
       @reference_number = wizard_store[:reference_number]
     end
 

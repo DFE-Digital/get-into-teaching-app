@@ -369,7 +369,7 @@ en:
 
     provider_events:
       email:
-        email:
+        provider_contact_email:
           title: "What is your email address?"
           change: "your email"
       event_name:
@@ -729,7 +729,7 @@ en:
 
         provider_events/steps/email:
           attributes:
-            email:
+            provider_contact_email:
               blank: "Enter your email address"
               invalid: "Enter an email address in the correct format, like name@example.com"
               too_long: "Email must be 100 characters or less"
@@ -1072,7 +1072,7 @@ en:
         address_postcode: What's your UK postcode? (optional)
 
       provider_events_steps_email:
-        email: "What is your email address?"
+        provider_contact_email: "What is your email address?"
       provider_events_steps_event_name:
         event_name: "What is the name of your event?"
       provider_events_steps_event_description:
@@ -1200,7 +1200,7 @@ en:
           graduated: "To get an adviser, your batchelor's degree grade must be a 2:2 or higher."
 
       provider_events_steps_email:
-        email: "We will use this email address to contact you about your event, and it will show on the event page."
+        provider_contact_email: "We will use this email address to contact you about your event, and it will show on the event page."
       provider_events_steps_event_name:
         event_name: "Your chosen event name will show on the event page."
       provider_events_steps_event_description:

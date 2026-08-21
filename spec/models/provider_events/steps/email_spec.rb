@@ -5,11 +5,11 @@ RSpec.describe ProviderEvents::Steps::Email do
 
   it_behaves_like "a with wizard step"
 
-  it { is_expected.to respond_to :email }
+  it { is_expected.to respond_to :provider_contact_email }
 
-  it { is_expected.to validate_presence_of :email }
+  it { is_expected.to validate_presence_of :provider_contact_email }
 
-  it { is_expected.to validate_length_of(:email).is_at_most(100) }
+  it { is_expected.to validate_length_of(:provider_contact_email).is_at_most(100) }
 
   it { is_expected.not_to be_skipped }
 end
