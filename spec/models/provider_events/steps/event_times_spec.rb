@@ -92,23 +92,23 @@ RSpec.describe ProviderEvents::Steps::EventTimes do
     context "when BST (summer time)" do
       let(:event_date) { Date.parse("2026-07-08") }
 
-      it "casts the start time from BST to UTC" do
-        expect(instance.start_at).to eql(Time.utc(2026, 0o7, 8, 8, 18))
+      it "re-presents the start time as UTC" do
+        expect(instance.start_at).to eql(Time.utc(2026, 7, 8, 9, 18))
       end
 
-      it "casts the end time from BST to UTC" do
-        expect(instance.end_at).to eql(Time.utc(2026, 0o7, 8, 15, 32))
+      it "re-presents the end time as UTC" do
+        expect(instance.end_at).to eql(Time.utc(2026, 7, 8, 16, 32))
       end
     end
 
     context "when GMT" do
       let(:event_date) { Date.parse("2026-02-03") }
 
-      it "casts the start time from BST to UTC" do
+      it "re-presents the start time as UTC" do
         expect(instance.start_at).to eql(Time.utc(2026, 2, 3, 9, 18))
       end
 
-      it "casts the end time from BST to UTC" do
+      it "re-presents the end time as UTC" do
         expect(instance.end_at).to eql(Time.utc(2026, 2, 3, 16, 32))
       end
     end

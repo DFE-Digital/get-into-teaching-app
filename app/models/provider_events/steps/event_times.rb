@@ -23,7 +23,7 @@ module ProviderEvents
       validate :event_date_and_start_time_cannot_be_in_the_past
 
       def event_date_and_start_time_cannot_be_in_the_past
-        if event_date.present? && start_time.present? && (start_time < timezone.now)
+        if event_date.present? && start_time.present? && (start_time < london.now)
           errors.add(:start_time, "Can't be in the past")
         end
       end
@@ -33,13 +33,13 @@ module ProviderEvents
       end
 
       def start_at
-        # NB: do not cast start_time to UTC as this does not contain the date component
-        cast_to_time(start_hour, start_minute).utc
+        # Present local times to the CRM as if they are utc; do not cast local -> utc
+        cast_to_time(start_hour, start_minute, utc)
       end
 
       def end_at
-        # NB: do not cast end_time to UTC as this does not contain the date component
-        cast_to_time(end_hour, end_minute).utc
+        # Present local times to the CRM as if they are utc; do not cast local -> utc
+        cast_to_time(end_hour, end_minute, utc)
       end
 
     private
@@ -65,11 +65,12 @@ module ProviderEvents
       end
 
       def parse_times
-        self.start_time = cast_to_time(start_hour, start_minute)
-        self.end_time = cast_to_time(end_hour, end_minute)
+        # parse times as if they are local
+        self.start_time = cast_to_time(start_hour, start_minute, london)
+        self.end_time = cast_to_time(end_hour, end_minute, london)
       end
 
-      def cast_to_time(hour, minute)
+      def cast_to_time(hour, minute, timezone)
         return if hour.nil? || minute.nil?
 
         begin
@@ -85,9 +86,12 @@ module ProviderEvents
         end
       end
 
-      def timezone
-        # Ensure all local dates and times are centred on the UK timezone
-        @timezone ||= ActiveSupport::TimeZone["Europe/London"]
+      def london
+        @london ||= ActiveSupport::TimeZone["Europe/London"]
+      end
+
+      def utc
+        @utc ||= ActiveSupport::TimeZone["UTC"]
       end
     end
   end
