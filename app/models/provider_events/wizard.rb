@@ -92,8 +92,10 @@ module ProviderEvents
             end
           end
 
-          data["start_at"] = data["start_time"]
-          data["end_at"] = data["end_time"]
+          find("event_times").tap do |event_times|
+            data["start_at"] = event_times.start_at
+            data["end_at"] = event_times.end_at
+          end
         end
       end
     end

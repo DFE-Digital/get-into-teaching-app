@@ -32,18 +32,39 @@ module ProviderEvents
         { "event_times" => start_time.present? && end_time.present? ? "#{start_time.strftime('%H:%M')} - #{end_time.strftime('%H:%M')}" : nil }
       end
 
+      def start_at
+        # NB: do not cast start_time to UTC as this does not contain the date component
+        cast_to_time(start_hour, start_minute).utc
+      end
+
+      def end_at
+        # NB: do not cast end_time to UTC as this does not contain the date component
+        cast_to_time(end_hour, end_minute).utc
+      end
+
     private
 
       def event_date
         other_step(:event_date).event_date
       end
 
-      def parse_times
-        start_hour = send("start_time(4i)")
-        start_minute = send("start_time(5i)")
-        end_hour = send("end_time(4i)")
-        end_minute = send("end_time(5i)")
+      def start_hour
+        send("start_time(4i)")
+      end
 
+      def start_minute
+        send("start_time(5i)")
+      end
+
+      def end_hour
+        send("end_time(4i)")
+      end
+
+      def end_minute
+        send("end_time(5i)")
+      end
+
+      def parse_times
         self.start_time = cast_to_time(start_hour, start_minute)
         self.end_time = cast_to_time(end_hour, end_minute)
       end
@@ -56,7 +77,7 @@ module ProviderEvents
             # NB: Time.zone.local casts to the wrong timezone
             timezone.local(event_date.year, event_date.month, event_date.day, hour, minute)
           else
-            timezone.local(2000, 1, 1, hour, minute)
+            timezone.local(Date.today.year, Date.today.month, Date.today.day, hour, minute)
           end
         rescue ArgumentError
           # catch invalid times, e.g. 25:62
@@ -65,7 +86,7 @@ module ProviderEvents
       end
 
       def timezone
-        # Ensure all dates and times are centred on a UK timezone
+        # Ensure all local dates and times are centred on the UK timezone
         @timezone ||= ActiveSupport::TimeZone["Europe/London"]
       end
     end

@@ -33,11 +33,13 @@ RSpec.describe ProviderEvents::Wizard do
     let(:store) do
       { uuid => {
         "provider_contact_email" => "test@test.test",
-        "event_date" => Date.new(2999, 1, 1),
+        "event_date" => Date.new(2999, 7, 8),
         "description" => "Event Description",
         "event_name" => "Event Name",
-        "start_time" => Time.utc(2999, 1, 1, 9, 0),
-        "end_time" => Time.utc(2999, 1, 1, 17, 30),
+        "start_time(4i)" => 9,
+        "start_time(5i)" => 0,
+        "end_time(4i)" => 17,
+        "end_time(5i)" => 30,
         "event_type" => "in_person",
         "event_website" => "https://event.test/event",
         "location_option" => "new",
@@ -59,8 +61,8 @@ RSpec.describe ProviderEvents::Wizard do
         "provider_contact_email" => "test@test.test",
         "name" => "Event Name",
         "description" => "Event Description",
-        "start_at" => Time.utc(2999, 1, 1, 9, 0),
-        "end_at" => Time.utc(2999, 1, 1, 17, 30),
+        "start_at" => Time.utc(2999, 7, 8, 9, 0),
+        "end_at" => Time.utc(2999, 7, 8, 17, 30),
         "is_in_person" => true,
         "is_online" => false,
         "is_virtual" => false,
@@ -68,7 +70,7 @@ RSpec.describe ProviderEvents::Wizard do
         "provider_organiser" => "Organisation Name",
         "provider_target_audience" => "Graduates and undergraduates",
         "provider_website_url" => "https://event.test/event",
-        "readable_id" => "990101-event-name",
+        "readable_id" => "990708-event-name",
         "registration_email_link" => "https://register.test/register",
 
         "building" => {

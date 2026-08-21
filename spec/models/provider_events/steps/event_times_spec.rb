@@ -10,14 +10,18 @@ RSpec.describe ProviderEvents::Steps::EventTimes do
   before do
     allow(instance).to receive(:other_step).with(:event_date) { instance_double(ProviderEvents::Steps::EventDate, event_date: event_date) }
 
-    allow(instance).to receive(:"start_time(4i)") { instance.start_time&.hour }
-    allow(instance).to receive(:"start_time(5i)") { instance.start_time&.min }
-    allow(instance).to receive(:"end_time(4i)") { instance.end_time&.hour }
-    allow(instance).to receive(:"end_time(5i)") { instance.end_time&.min }
+    allow(instance).to receive(:"start_time(4i)") { start_time_hour }
+    allow(instance).to receive(:"start_time(5i)") { start_time_min }
+    allow(instance).to receive(:"end_time(4i)") { end_time_hour }
+    allow(instance).to receive(:"end_time(5i)") { end_time_min }
   end
 
   let(:timezone) { ActiveSupport::TimeZone["Europe/London"] }
   let(:event_date) { nil }
+  let(:start_time_hour) { instance.start_time&.hour }
+  let(:start_time_min) { instance.start_time&.min }
+  let(:end_time_hour) { instance.end_time&.hour }
+  let(:end_time_min) { instance.end_time&.min }
 
   it_behaves_like "a with wizard step"
 
@@ -76,6 +80,37 @@ RSpec.describe ProviderEvents::Steps::EventTimes do
 
       it { is_expected.not_to allow_value(before_time).for(:end_time) }
       it { is_expected.to allow_value(after_time).for(:end_time) }
+    end
+  end
+
+  describe "start_at and end_at" do
+    let(:start_time_hour) { 9 }
+    let(:start_time_min) { 18 }
+    let(:end_time_hour) { 16 }
+    let(:end_time_min) { 32 }
+
+    context "when BST (summer time)" do
+      let(:event_date) { Date.parse("2026-07-08") }
+
+      it "casts the start time from BST to UTC" do
+        expect(instance.start_at).to eql(Time.utc(2026, 0o7, 8, 8, 18))
+      end
+
+      it "casts the end time from BST to UTC" do
+        expect(instance.end_at).to eql(Time.utc(2026, 0o7, 8, 15, 32))
+      end
+    end
+
+    context "when GMT" do
+      let(:event_date) { Date.parse("2026-02-03") }
+
+      it "casts the start time from BST to UTC" do
+        expect(instance.start_at).to eql(Time.utc(2026, 2, 3, 9, 18))
+      end
+
+      it "casts the end time from BST to UTC" do
+        expect(instance.end_at).to eql(Time.utc(2026, 2, 3, 16, 32))
+      end
     end
   end
 end
