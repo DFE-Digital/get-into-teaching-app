@@ -81,8 +81,8 @@ module TeacherTrainingAdviser::Steps
     end
 
     def before_current_year_threshold?
-      # After 15th September you can no longer start teacher training for that year.
-      Time.zone.today < date_to_drop_current_year
+      # After 6pm on 15th September you can no longer start teacher training for that year.
+      Time.zone.now < datetime_to_drop_current_year
     end
 
     def before_academic_year_end?
@@ -91,15 +91,15 @@ module TeacherTrainingAdviser::Steps
     end
 
     def number_of_years
-      Time.zone.today.between?(date_to_add_additional_year, date_to_drop_current_year - 1.day) ? 3 : 2
+      Time.zone.today.between?(date_to_add_additional_year, datetime_to_drop_current_year.to_date - 1.day) ? 3 : 2
     end
 
     def date_to_add_additional_year
       Date.new(current_year, 6, 24)
     end
 
-    def date_to_drop_current_year
-      Date.new(current_year, 9, 16)
+    def datetime_to_drop_current_year
+      Time.zone.local(current_year, 9, 15, 18, 0) # 6pm on 15th September
     end
 
     def academic_year_cutoff
