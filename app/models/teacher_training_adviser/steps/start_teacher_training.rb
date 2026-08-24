@@ -81,7 +81,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def before_current_year_threshold?
-      # After 16th September you can no longer start teacher training for that year.
+      # After 15th September you can no longer start teacher training for that year.
       Time.zone.today < date_to_drop_current_year
     end
 
@@ -99,7 +99,7 @@ module TeacherTrainingAdviser::Steps
     end
 
     def date_to_drop_current_year
-      Date.new(current_year, 9, 17)
+      Date.new(current_year, 9, 16)
     end
 
     def academic_year_cutoff
