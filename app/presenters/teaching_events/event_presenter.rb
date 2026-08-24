@@ -24,11 +24,13 @@ module TeachingEvents
       :provider_website_url,
       :providers_list,
       :readable_id,
+      :reference_number,
       :start_at,
       :summary,
       :type_id,
       :status_id,
       :web_feed_id,
+      :registration_email_link,
       :accessibility_options,
       to: :event,
     )

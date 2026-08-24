@@ -43,7 +43,7 @@
     }
   }
 
-  &__datetime {
+  &__datetime, &__references {
     margin-bottom: 4px;
     @include font-size("xsmall");
 

@@ -16,6 +16,7 @@ FactoryBot.define do
     provider_organiser { "Test" }
     provider_target_audience { "Test" }
     provider_website_url { "Test" }
+    registration_email_link { "https://test.test/register" }
     venue_type { "" }
     building { build :event_building }
   end

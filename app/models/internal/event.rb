@@ -17,7 +17,7 @@ module Internal
     attribute :name, :string
     attribute :summary, :string
     attribute :reference_number, :string
-    attribute :email_registration_link, :string
+    attribute :registration_email_link, :string
     attribute :description, :string
     attribute :is_online, :boolean, default: nil
     attribute :start_at, :datetime
@@ -31,7 +31,7 @@ module Internal
 
     validates :name, presence: true, allow_blank: false, length: { maximum: 300 }
     validates :readable_id, presence: true, allow_blank: false, length: { maximum: 300 }, format: { with: /\A[^_\W][\w-]+[^_\W]\Z/ }
-    validates :summary, presence: true, allow_blank: false, length: { maximum: 1000 }
+    validates :summary, presence: false, allow_blank: true, length: { maximum: 1000 }
     validates :description, presence: true, allow_blank: false, length: { maximum: 2000 }
     validates :is_online, inclusion: { in: [true, false] }, if: -> { provider_event? }
     validates :start_at, presence: true, allow_blank: false
@@ -45,6 +45,9 @@ module Internal
     validates :provider_target_audience, presence: true, allow_blank: false, length: { maximum: 500 }, if: -> { provider_event? }
     validates :provider_website_url, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
     validates :venue_type, inclusion: { in: VENUE_TYPES.values }
+    validates :registration_email_link, presence: true, length: { maximum: 100 }, email_format: true, if: -> { provider_event? && registration_email_link_email? }
+    validates :registration_email_link, presence: true, length: { maximum: 300 }, url: { no_local: true }, if: -> { provider_event? && registration_email_link_website? }
+    validates :registration_email_link, presence: true, format: { with: /(https?:\/\/)|@/i, message: "Must be an email address or website" }, if: -> { provider_event? }
     validate :dates_in_future
     validate :end_after_start
     validate :starts_and_ends_on_same_day
@@ -162,6 +165,14 @@ module Internal
       if venue_type == VENUE_TYPES[:existing] && building&.id.nil?
         errors.add(:venue_type, "You must select an existing building")
       end
+    end
+
+    def registration_email_link_email?
+      registration_email_link&.include?("@")
+    end
+
+    def registration_email_link_website?
+      registration_email_link =~ /https?:\/\//i
     end
   end
 end

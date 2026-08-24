@@ -37,6 +37,19 @@ module EventsHelper
     end
   end
 
+  def registration_link(registration_email_link)
+    tag.p do
+      safe_join([
+        "To attend this event, ",
+        if registration_email_link =~ /^https?:\/\//i
+          link_to("please register on our website", registration_email_link)
+        else
+          link_to("please email us", "mailto:#{registration_email_link}")
+        end,
+      ])
+    end
+  end
+
   def display_event_provider_info?(event)
     !event.type_id.in?([git_event_type_id])
   end
