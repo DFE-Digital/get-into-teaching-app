@@ -39,7 +39,7 @@ School visits can help you:
 
 ## What to expect
 
-You will either attend a school in person or join classes and meet teachers online. Your schools visit will usually last one or 2 days, but some can last up to 3 weeks.
+You will either attend a school in person or join classes and meet teachers online. Your school visit will usually last one or 2 days, but some can last up to 3 weeks.
 
 You’ll get to do things like:
 
