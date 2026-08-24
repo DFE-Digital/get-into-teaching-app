@@ -149,6 +149,7 @@ module Internal
         :id,
         :name,
         :readable_id,
+        :reference_number,
         :summary,
         :description,
         :is_online,

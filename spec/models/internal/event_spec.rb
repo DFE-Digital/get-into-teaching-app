@@ -15,6 +15,8 @@ describe Internal::Event do
     it { is_expected.to respond_to :provider_organiser }
     it { is_expected.to respond_to :provider_target_audience }
     it { is_expected.to respond_to :provider_website_url }
+    it { is_expected.to respond_to :reference_number }
+    it { is_expected.to respond_to :registration_email_link }
   end
 
   describe "validations" do
@@ -39,7 +41,7 @@ describe Internal::Event do
 
     describe "#summary" do
       it { is_expected.to allow_value("test").for :summary }
-      it { is_expected.not_to allow_values("", nil).for :summary }
+      it { is_expected.to allow_values("", nil).for :summary }
       it { is_expected.to validate_length_of(:summary).is_at_most(1000) }
     end
 
@@ -117,6 +119,14 @@ describe Internal::Event do
         it { is_expected.to allow_value("test").for :provider_website_url }
         it { is_expected.not_to allow_value("", nil).for :provider_website_url }
         it { is_expected.to validate_length_of(:provider_website_url).is_at_most(300) }
+      end
+
+      describe "#registration email link" do
+        it { is_expected.to allow_value("test@test.com").for :registration_email_link }
+        it { is_expected.to allow_value("http://test.test/register").for :registration_email_link }
+        it { is_expected.to allow_value("https://test.test/register").for :registration_email_link }
+        it { is_expected.not_to allow_values("http://localhost/register").for :registration_email_link }
+        it { is_expected.not_to allow_values("test@test@test", "test@", "test", "", nil).for :registration_email_link }
       end
     end
 
