@@ -22,7 +22,7 @@ expander:
     text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you are moving to the UK from Ukraine</a>.
 ---
 
-You can apply for postgraduate teacher training courses starting in $recruitmentcycle_academicyear$ $recruitmentcycle_openanddeadline$. 
+For postgraduate teacher training courses starting in the $recruitmentcycle_academicyear$, you can apply $recruitmentcycle_openanddeadline$. 
 
 $application-deadlines$
 
