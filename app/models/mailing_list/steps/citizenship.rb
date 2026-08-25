@@ -12,7 +12,7 @@ module MailingList
       include FunnelTitle
 
       def citizenships
-        @citizenships ||= PickListItemsApiPresenter.new.get_candidate_citizenship
+        @citizenships ||= PickListItemsApiPresenter.new.get_candidate_citizenships
       end
 
       def citizenship_ids

@@ -1,0 +1,331 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-interface-api-qa.test.teacherservices.cloud/api/privacy_policies/latest
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 6kvDMYpsvUxqey5s8Wje
+      Request-Id:
+      - e1014dd0-a561-41f1-8c43-7f3520847503
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 03 Jul 2026 10:56:41 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '22637'
+      connection:
+      - keep-alive
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - '0'
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      etag:
+      - W/"c711e90a1f3a9ea5915b50038861ea35"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 0de238b86fe63b3bfa5cbf286f60dc01
+      x-runtime:
+      - '0.378048'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"id":"4872c8ed-0229-f111-8342-7c1e5285e3ab","text":"<p><h2>Privacy
+        notice for Get Into Teaching</h2></p>\n    <p>Last updated: 26 March 2026</p>\n    <p>Date
+        of next review: April 2026</p>\n    <p>We might make changes before the review
+        date. Check regularly for updates.</p>\n    <p>This privacy notice explains
+        how the Department for Education (DfE) uses personal information in the Get
+        Into Teaching service. This includes information you give to us, or information
+        that we may collect about you.</p>\n    <p>Get Into Teaching is a project
+        aimed at helping individuals get Into teaching giving support and guidance
+        via the help portals mentioned below.</p>\n    <p>To access our adviser service,
+        you need to be 18 years old or older. To access our personalised emails and
+        events services, you need to be 16 years old or older.</p>\n    <p><h3>We''ve
+        created a service that lets you:</h3></p>\n    <ul>\n        <li><p><a href=\"#getanadviser\">Get
+        an adviser</a></p></li>\n        <li><p><a href=\"#schoolexperience\">Get
+        school experience</a></p></li>\n        <li><p><a href=\"#manageschoolexperience\">Manage
+        school experience</a></p></li>\n        <li><p><a href=\"#signupforemails\">Sign
+        up for personalised emails</a></p></li>\n        <li><p><a href=\"#talktoanagentviawebchat\">Talk
+        to an agent via webchat </a></p></li>\n    </ul>\n    <p>When you provide
+        us with your personal data, we process it and provide you with tailored advice
+        and information about teacher training, teaching as a career and events and
+        school experience. These services will help you to make an informed decision
+        about becoming a teacher or returning to teaching.</p>\n    <p>We may also
+        contact you to gauge your interest in taking part in market research. In each
+        message, you will be given the opportunity to unsubscribe from further communications.</p>\n\n<p>We
+        will use anonymised and hashed data about you to deliver tailored messages
+        on third party platforms, including social media - like Pinterest, Facebook,
+        Instagram, X (formerly known as Twitter), Snapchat, YouTube and Google. Such
+        data will be used for measurement to help us improve the accuracy of our marketing,
+        and targeting and finding people like you, who may also be interested in our
+        service. We do not allow these providers to share this data with others.</p>\n\n    <p><h3>Purpose
+        and lawful basis for processing</h3></p>\n    <p>The DfE is the data controller
+        for your personal data. We must have a reason to collect your personal data.
+        This is called a ''lawful basis''.</p>\n    <p>We use the following lawful
+        basis to process your personal data:</p>\n    <ul>\n        <li><p>Article
+        6 (1) (e) - public task – this is when we need your personal data to provide
+        or fund education.</p></li>\n        <li><p>Article 6 (1) (f) - legitimate
+        interest – where processing your personal data is necessary for a legitimate
+        interest of DfE or a third party.</p></li> \n        <li><p>Article 6(1)(a)
+        - Consent – this is when we process your personal data with your consent to
+        provide targeted advertisements via the use of website tracking tools.</p></li>\n    </ul>\n    <p><h3>What
+        we need</h3></p>\n    <p>We will collect the following types of personal information,
+        some of which may be special category data, directly from you:</p>\n    <ul>\n        <li><p>first
+        name</p></li>\n        <li><p>last name</p></li>\n        <li><p>date of birth</p></li>\n        <li><p>postcode</p></li>\n        <li><p>telephone
+        number</p></li>\n        <li><p>email address</p></li>\n        <li><p>teacher
+        reference number</p></li>\n        <li><p>subjects you are interested in teaching
+        (maximum 2 choices)</p></li>\n        <li><p>the year you intend to start
+        teacher training</p></li>\n        <li><p>stage you are at with degree study</p></li>\n        <li><p>the
+        region you intend to do your Initial Teacher Training</p></li>\n        <li><p>IP
+        Address</p></li>\n        <li><p>communications between the adviser/call agents
+        and you (free text)</p></li>\n        <li><p>your qualifications</p></li>\n        <li><p>school
+        experience you have undertaken</p></li>\n        <li><p>languages you can
+        speak and/or teach</p></li>\n        <li><p>ITT providers you’ve applied to</p></li>\n        <li><p>barriers
+        or concerns you have that may prevent you from starting an ITT course</p></li>\n        <li><p>your
+        previous work experience/career history</p></li>\n    </ul>\n    <p>The types
+        of data we collect for each service can be found in the corresponding privacy
+        notices linked below:</p>\n    <ul>\n        <li><p><a href=\"#getanadviser\">Get
+        an adviser</a></p></li>\n        <li><p><a href=\"#events\">Sign up to an
+        event</a></p></li>\n        <li><p><a href=\"#schoolexperience\">Get school
+        experience</a></p></li>\n        <li><p><a href=\"#manageschoolexperience\">Manage
+        school experience</a></p></li>\n        <li><p><a href=\"#signupforemails\">Sign
+        up for personalised emails</a></p></li>\n        <li><p><a href=\"#talktoanagentviawebchat\">Talk
+        to an agent via webchat </a></p></li>\n    </ul>\n    <p><h3>Why we need it
+        and what we do with it</h3></p>\n    <p>We collect and process your personal
+        information to:</p>\n    <ul>\n        <li><p>enable us to provide the service
+        to which you have chosen to access</p></li>\n        <li><p>analyse usage
+        to enable us to make improvements to our service(s)</p></li>\n    </ul>\n    <p>If
+        you use other digital services for which the Data Controller is also the Department
+        for Education (for example, Apply for Postgraduate Teacher Training, or other
+        Get Into Teaching services), we may use your data to understand how you are
+        using these services. This allows us to ensure that public funds are being
+        spent effectively.</p>\n    <p><h3>How long we keep it</h3></p>\n    <p>The
+        Get Into Teaching Team will only keep your personal data for as long as we
+        need it. We base this on the needs of the department and the law. Any information
+        shared as part of a webchat will be kept for 6 months. Information shared
+        as part of other Get Into Teaching services may be kept for up to 7 years
+        but we will delete it, if you request us to do so.If it takes you more than
+        7 years to become a teacher, we may keep your personal data for up to 3 years
+        after you stop using Get Into Teaching services. We do this to help support
+        your career. </p>\n   <p>Any information shared during a webchat will be retained
+        for 6 months. All calls to the adviser service are recorded for training and
+        quality assurance purposes and stored for up to 12 months.  </p>\n <p>We will
+        take necessary steps to keep your information safe. It will then be securely
+        destroyed when it is no longer needed.</p>\n    <p><h3>Do we use any data
+        processors?</h3></p>\n    <p>A data processor is an organisation that processes
+        your information on DfE''s behalf.</p>\n    <p>If we share your data, the
+        DfE and the processor are independently accountable under the UK GDPR and
+        Data Protection Act 2018 for your data. Each is responsible for complying
+        with data protection legislation, including retention in accordance with their
+        own statement.</p>\n    <p>We only use data processors for these activities:</p>\n    <ul>\n        <li><p>We
+        have appointed TPUK to process personal data in the role of Advisers and Call
+        Agents. They will process the following data when providing the Get Into Teaching
+        Service</p></li>\n        <li><p>communications between the TPUK adviser/call
+        agents and you (free text)</p></li>\n        <li><p>your qualifications</p></li>\n        <li><p>the
+        type of ITT course you''re interested in</p></li>\n        <li><p>school experience
+        you''ve undertaken</p></li>\n        <li><p>languages you can speak and/or
+        teach</p></li>\n        <li><p>barriers or concerns you have that may prevent
+        you from starting an ITT course</p></li>\n        <li><p>your previous work
+        experience/career history</p></li>\n    </ul>\n    <p><h3>Do we transfer data
+        overseas?</h3></p>\n    <p>When DfE stores personal data outside the UK, we
+        will make sure we keep your personal data safe. We follow the data protection
+        law. We also use extra security measures, contracts and data sharing agreements.</p>\n    <p><h3>Do
+        we share your personal information?</h3></p>\n    <p>If the law allows it,
+        we might share your personal information with other parts of DfE including
+        the Education and Skills Funding Agency (ESFA).</p>\n    <p>The <a href=\"https://www.gov.uk/government/publications/privacy-information-education-providers-workforce-including-teachers\">DfE''s
+        Privacy information for education providers’ workforce, including teachers</a>
+        gives you more information on how we use your personal information.</p>\n    <p><h3>What
+        are your rights?</h3></p>\n    <p>Under data protection law, you have rights
+        including:</p>\n    <ul>\n        <li><p>Your right of access - You have the
+        right to ask us for copies of your personal information</p></li>\n        <li><p>Your
+        right to rectification - you can ask us to change any information you think
+        is not accurate or complete</p></li>\n        <li><p>Your right to erasure
+        - You have the right to ask us to delete your personal information</p></li>\n        <li><p>Your
+        right to restriction of processing - You can ask us to stop processing your
+        information</p></li>\n        <li><p>Your right to object to processing -
+        You can object to the processing of your information</p></li>\n        <li><p>Your
+        right to data portability - You can ask us to transfer your information to
+        another organisation or to you</p></li>\n    </ul>\n    <p>For more information
+        on your rights, please see the ICO (Information Commissioner’s Office) website.</p>\n    <p><h3>How
+        to contact us or make a complaint</h3></p>\n    <p>If you have a question,
+        or feel your data has been mishandled, you can contact us by:</p>\n    <p>using
+        our secure <a href=\"https://form.education.gov.uk/service/Contact_the_Department_for_Education\">DfE
+        Contact form</a></p>\n    <p>or writing to:</p>\n    <p><br>Data Protection
+        Officer<br>Department for Education <br>4th floor<br>2 St Paul’s Place<br>125
+        Norfolk Street<br>Sheffield<br>S1 2FJ</p>\n    <p>You can also complain to
+        the ICO by writing to:</p>\n    <p>Information Commissioner''s Office<br>Water
+        Lane<br>Wilmslow<br>Cheshire<br>SK9 5AF<br>Helpline number: 0303 123 1113.<br>Or
+        use the online <a href=\"https://ico.org.uk/global/contact-us/email/\">ICO
+        Contact form</a></p>\n    <p><h3>How to make a subject access request (SAR)</h3></p>\n    <p>You
+        have the right to ask for access to your personal information, known as a
+        subject access request (SAR).</p>\n    <p>Use the contact form or address
+        above to make a SAR.</p>\n    <p>Include as much information as you can about
+        the information you need. Include the years you need the information for.
+        If possible, tell us which part of the department holds the information. You''ll
+        also need to tell us your telephone number and address.</p>\n    <p>We may
+        need to check your identity and your right to access the information you''re
+        requesting. To check your identity, we may ask for a copy of your passport,
+        photo driving licence or proof of your address.</p>\n    <p>We''ll try to
+        respond to your request within 1 month. But, if your request is complex, we
+        may extend the period by a further 2 months, but we''ll tell you if this is
+        the case.</p>\n    <p><h2 id=\"getanadviser\">Get an adviser</h2></p>\n    <p><h3>The
+        nature of your personal data we will be using</h3></p>\n    <p>The categories
+        of your personal data that we will be using for this project are:</p>\n    <ul>\n        <li><p>your
+        full name</p></li>\n        <li><p>contact details e.g. email address, postcode,
+        telephone number, country of residence </p></li>\n        <li><p>date of birth</p></li>\n        <li><p>IP
+        address</p></li>\n        <li><p>teacher reference number (TRN) if you have
+        one</p></li>\n    </ul>\n    <p>Other details we will collect are:</p>\n    <ul>\n        <li><p>teaching
+        subject</p></li>\n        <li><p>teaching stage</p></li>\n        <li><p>preferred
+        teaching subjects</p></li>\n        <li><p>qualifications e.g. degree subject,
+        stage, class</p></li>\n        <li><p>intended training commencement year</p></li>\n        <li><p>preferred
+        call back date and time</p></li>\n    </ul>\n    <p><h3>What we do with your
+        personal data when you sign up for an adviser</h3></p>\n    <p>The information
+        you provide in the get an adviser form will be shared with our advisers, who
+        will communicate with you via email and SMS, WhatsApp and by telephone calls
+        to provide you with the support that you need. All calls are recorded for
+        training and quality purposes. All recordings will be stored for up to 12
+        months before they are deleted. </p>\n    <p>We may also contact you by SMS,
+        email or telephone call to inform you about services available to support
+        you into teaching or important updates regarding teacher training.</p>\n    <p>If
+        you have an equivalent qualification from outside the UK, your details will
+        be shared with the Get Into Teaching helpline who will contact you to ensure
+        they have accurate data about your circumstances in order to provide a tailored
+        service and information to you. Any subsequent information you provide to
+        the Get Into Teaching helpline will also be retained to enable us to continue
+        to provide the support you require.</p>\n    <p>Where we are processing your
+        personal data with your consent, you have the right to withdraw that consent.
+        If you change your mind, or you are unhappy with our use of your personal
+        data, please let us know by <a href=\"https://www.gov.uk/contact-dfe\">contacting
+        the Department for Education</a> and state the name of this project.</p>\n\n<p><h2
+        id=\"events\">Sign up to an event</h2></p>\n\n<p>The Department for Education
+        will no longer be running Get Into Teaching events from March 2026. </p>\n<p>If
+        you signed up for a Get Into Teaching event prior to March 2026, we may still
+        have the data you submitted, as we retain data for seven years in line with
+        our data retention policy.  </p>\n<p>Where we are processing your personal
+        data with your consent, you have the right to withdraw that consent. If you
+        change your mind, or you are unhappy with our use of your personal data, please
+        let us know by <a href=\"https://www.gov.uk/contact-dfe\"> contacting the
+        Department for Education </a>  and state the name of this project.  </p>\n<p>The
+        Get Into Teaching website promotes events run by other organisations. We do
+        not have any control or oversight over how third party organisations manage
+        your data.  </p>\n\n    <p><h2 id=\"schoolexperience\">Get school experience</h2></p>\n    <p><h3>The
+        nature of your personal data we will be using</h3></p>\n    <p>The categories
+        of your personal data that we will be using for this project are:</p>\n    <ul>\n        <li><p>your
+        full name</p></li>\n        <li><p>contact details e.g. email address, postcode,
+        telephone number</p></li>\n        <li><p>IP Address</p></li>\n    </ul>\n    <p>Other
+        details we will collect are:</p>\n    <ul>\n        <li><p>qualifications
+        e.g. subject, stage.</p></li>\n        <li><p>teaching subject, first choice
+        and second choice</p></li>\n        <li><p>level of consideration in teaching
+        </p></li>\n        <li><p>availability for school experience </p></li>\n        <li><p>reasons
+        for wanting to undertake school experience </p></li>\n    </ul>\n    <p><h3>What
+        we do with your personal data when you sign up for Get school experience</h3></p>\n    <ul>\n        <li><p>The
+        information we collect from you, your name, contact details and preferences,
+        is used for identification, administration, analysis and targeting purposes.</p></li>\n        <li><p>Any
+        additional information you provide when you communicate with the helpline
+        and /or advisers will help us to aid you in progressing your application and
+        continue to improve our service. </p></li>\n        <li><p>We may also contact
+        you to gauge your interest in taking part in market research. Each message
+        will give you the opportunity to unsubscribe from further communications.</p></li>\n        <li><p>If
+        you are using the Get school experience service, your data will be used to
+        process your request for school experience with the school(s) in question.
+        We will also use it to send out notifications, reminders and feedback questionnaires.
+        We track your progress through this service to improve it for you and future
+        applicants and to ensure public funds are being spent effectively.</p></li>\n        <li><p>We
+        will use anonymised data about you to deliver tailored messages on third party
+        platforms, including social media platforms, Pinterest, Facebook, Instagram,
+        X (formerly known as Twitter), Snapchat,YouTube and Google. This anonymised
+        data will also be used to identify and advertise to people that are similar
+        to you, who may also be interested in our service.</p></li>\n        <li><p>We
+        may also contact you by SMS or telephone call to inform you about services
+        available to support you into teaching or important updates regarding teacher
+        training.</p></li>\n    </ul>\n    <p>Where we are processing your personal
+        data with your consent, you have the right to withdraw that consent. If you
+        change your mind, or you are unhappy with our use of your personal data, please
+        let us know by <a href=\"https://www.gov.uk/contact-dfe\">contacting the Department
+        for Education</a> and state the name of this project.</p>\n    <p>We share
+        data with each school you request experience with. Schools are data processors
+        for the purposes of provision of this service. Each of the schools is required
+        to comply with the UK GDPR and the DPA 2018 as data processors. Where we are
+        processing your personal data with your consent, you have the right to withdraw
+        that consent. If you change your mind, or you are unhappy with the school''s
+        use of your personal data, please contact the school directly.</p>\n\n\n\n    <p><h2
+        id=\"manageschoolexperience\">Manage school experience</h2></p>\n    <p><h3>The
+        nature of your personal data we will be using </h3></p>\n    <p>To facilitate
+        school experience, we collect the following details and data about school
+        staff who manage the service when the school they work for or at signs up
+        to the service:</p>\n    <ul>\n        <li><p>your full name</p></li>\n        <li><p>contact
+        details e.g. email address, telephone number</p></li>\n        <li><p>IP address</p></li>\n    </ul>\n    <p><h3>What
+        we do with your personal data when you Manage school experience</h3></p>\n    <ul>\n    <li><p>These
+        details are shared with a candidate once their school experience request has
+        been confirmed by the relevant school.</p></li>\n    <li><p>School staff can
+        delete or update their contact details at any time in the service.</p></li>\n    <li><p>As
+        part of the service, we''ll use the contact information you''ve provided to
+        send out notifications, reminders, feedback questionnaires and updates relating
+        to the service. We may also contact you to request your involvement in user
+        research to help improve the service.</p></li>\n    <li><p>We will also use
+        collected data for security purposes to protect the service - for example,
+        parts of the IP addresses of website visitors are collected to block continuous
+        direct denial of service attacks from an IP address range.</p></li>\n   </ul>\n    <p>Where
+        we are processing your personal data with your consent, you have the right
+        to withdraw that consent. If you change your mind, or you are unhappy with
+        our use of your personal data, please let us know by emailing us at <a href=\"mailto:organise.school-experience@education.gov.uk\">organise.school-experience@education.gov.uk
+        </a>  or by <a href=\"https://www.gov.uk/contact-dfe\">contacting the Department
+        for Education</a> and state the name of this project.</p>\n\n <p><h2 id=\"signupforemails\">Sign
+        up for personalised emails</h2></p>\n    <p><h3>The nature of your personal
+        data we will be using </h3></p>\n    <p>The categories of your personal data
+        that we will be using for this project are:</p>\n    <ul>\n        <li><p>your
+        full name</p></li>\n        <li><p>contact details e.g. email address, postcode,
+        telephone number (optional)</p></li>\n        <li><p>IP address</p></li>\n    </ul>\n    <p>Other
+        details we will collect are:</p>\n    <ul>\n        <li><p>degree stage</p></li>\n        <li><p>teaching
+        subject</p></li>\n        <li><p>level of consideration in teaching </p></li>\n    </ul>\n    <p><h3>What
+        we do with your personal data when you sign up for emails</h3></p>\n    <p>When
+        you sign up for emails, the information you provide in the form will allow
+        us to send you personalised emails containing tailored information about a
+        career in teaching. </p>\n    <p>We may also contact you by SMS or telephone
+        call to inform you about services available to support you into teaching or
+        important updates regarding teacher training.</p>\n    <p>Where we are processing
+        your personal data with your consent, you have the right to withdraw that
+        consent. If you change your mind, or you are unhappy with our use of your
+        personal data, please let us know by <a href=\"https://www.gov.uk/contact-dfe\">contacting
+        the Department for Education</a> and state the name of this project.</p>\n    <p><h2
+        id=\"talktoanagentviawebchat\">Talk to an agent via webchat</h2></p>\n    <p><h3>The
+        nature of your personal data we will be using </h3></p>\n    <p>The categories
+        of your personal data that we will be using for this project are:</p>\n    <ul>\n        <li><p>your
+        name</p></li>\n        <li><p>IP address</p></li>\n         <li><p>anything
+        you choose to share with us when using the webchat service, this includes
+        any documents you upload to the chat</p></li>\n       </ul>\n    <p><h3>What
+        we do with your personal data when you contact one of our Get Into Teaching
+        Agents </h3></p>\n    <p>The information you provide in the webchat will be
+        used by our Get Into Teaching Agents to provide you with a transcript of the
+        chat if you request one. We will also use it to identify you if you contact
+        the service again for further assistance.</p>\n    <p>Any information you
+        choose to provide to the Get Into Teaching Agents may be retained to enable
+        us to continue to provide the support you require.</p>\n    <p>Where we are
+        processing your personal data with your consent, you have the right to withdraw
+        that consent. If you change your mind, or you are unhappy with our use of
+        your personal data, please let us know by <a href=\"https://www.gov.uk/contact-dfe\">contacting
+        the Department for Education</a> and state the name of this project.</p>","created_at":"2026-03-26T11:00:01"}'
+  recorded_at: Fri, 03 Jul 2026 10:56:41 GMT
+recorded_with: VCR 6.4.0

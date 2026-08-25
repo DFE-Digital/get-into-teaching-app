@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-interface-api-qa.test.teacherservices.cloud/api/pick_list_items/contact_creation_channel/services
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 6kvDMYpsvUxqey5s8Wje
+      Request-Id:
+      - 021cfb19-e7af-4da0-9c73-008a22f6bd4a
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 03 Jul 2026 10:27:56 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '611'
+      connection:
+      - keep-alive
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - '0'
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      etag:
+      - W/"b98b94f93bf1347be15ed533c56fd49e"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 32c4386b06e156b0c3198d2a66196cb0
+      x-runtime:
+      - '0.085057'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '[{"id":222750000,"value":"Created on Apply"},{"id":222750001,"value":"Created
+        on School experience"},{"id":222750002,"value":"Created on Scholarships"},{"id":222750003,"value":"Created
+        on Internships"},{"id":222750004,"value":"Created on HPITT (Teach First)"},{"id":222750005,"value":"Explore
+        Teaching Adviser Service"},{"id":222750006,"value":"Events"},{"id":222750007,"value":"Mailing
+        list"},{"id":222750009,"value":"Return to Teaching Adviser Service"},{"id":222750010,"value":"Teacher
+        Training Adviser Service"},{"id":222750011,"value":"Created on Highfliers"},{"id":222750012,"value":"Prospective
+        Events"}]'
+  recorded_at: Wed, 01 Jun 2022 00:00:00 GMT
+recorded_with: VCR 6.4.0

@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://get-into-teaching-interface-api-qa.test.teacherservices.cloud/api/pick_list_items/candidate/preferred_education_phases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAPI-Generator/5.0/ruby
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 6kvDMYpsvUxqey5s8Wje
+      Request-Id:
+      - 4d1ff28e-66af-4037-ae7c-1539f070e5a1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 03 Jul 2026 09:21:38 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '361'
+      connection:
+      - keep-alive
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - '0'
+      x-content-type-options:
+      - nosniff
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      etag:
+      - W/"b1f80238d6bd062b765e2191d904ce7d"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - f4968a85a82db53fbf759a68b347f7e0
+      x-runtime:
+      - '0.063892'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '[{"id":222750000,"value":"Primary"},{"id":222750001,"value":"Secondary"},{"id":222750002,"value":"Further
+        Education"},{"id":222750003,"value":"Other"},{"id":222750004,"value":"Middle"},{"id":222750005,"value":"Higher
+        Education"},{"id":222750006,"value":"Teaching adults"},{"id":222750007,"value":"Early
+        years"},{"id":222750008,"value":"Independent – School"}]'
+  recorded_at: Wed, 01 Jun 2022 00:00:00 GMT
+recorded_with: VCR 6.4.0

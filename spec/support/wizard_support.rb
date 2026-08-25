@@ -80,13 +80,13 @@ shared_context "with wizard data" do
     %i[united_kingdom outside_united_kingdom].map { |trait| build(:location, trait) }
   end
 
-  let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
+  let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: "4872c8ed-0229-f111-8342-7c1e5285e3ab" }) }
   let(:inferred_degree_status_id) { build(:degree_status, :second_year).id }
   let(:mailing_list_response) { GetIntoTeachingApiClient::DegreeStatusResponse.new({ degree_status_id: inferred_degree_status_id }) }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_qualification_degree_status).and_return(degree_statuses)
+      receive(:get_qualification_degree_statuses).and_return(degree_statuses)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
     allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
@@ -96,11 +96,11 @@ shared_context "with wizard data" do
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_situations).and_return(situations)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_candidate_citizenship).and_return(citizenships)
+      receive(:get_candidate_citizenships).and_return(citizenships)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_candidate_visa_status).and_return(visa_statuses)
+      receive(:get_candidate_visa_statuses).and_return(visa_statuses)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_candidate_location).and_return(locations)
+      receive(:get_candidate_locations).and_return(locations)
     allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
       receive(:get_degree_countries).and_return(degree_countries)
     allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \

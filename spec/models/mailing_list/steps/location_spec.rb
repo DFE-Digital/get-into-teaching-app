@@ -9,7 +9,7 @@ describe MailingList::Steps::Location do
   let(:location_ids) { locations.map(&:id) }
 
   before do
-    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to receive(:get_candidate_location) { locations }
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to receive(:get_candidate_locations) { locations }
   end
 
   it_behaves_like "a with wizard step"

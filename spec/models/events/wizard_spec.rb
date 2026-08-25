@@ -118,7 +118,7 @@ describe Events::Wizard do
     end
 
     it "logs the response model (filtering sensitive attributes)" do
-      filtered_json = { "candidateId" => "123", "addressTelephone" => "[FILTERED]" }.to_json
+      filtered_json = { "candidate_id" => "123", "address_telephone" => "[FILTERED]" }.to_json
       expect(Rails.logger).to receive(:info).with("Events::Wizard#exchange_access_token: #{filtered_json}")
       subject.exchange_access_token(totp, request)
     end
@@ -150,7 +150,7 @@ describe Events::Wizard do
       end
 
       it "logs the response model (filtering sensitive attributes)" do
-        filtered_json = { "candidateId" => "123", "addressTelephone" => "[FILTERED]" }.to_json
+        filtered_json = { "candidate_id" => "123", "address_telephone" => "[FILTERED]" }.to_json
         expect(Rails.logger).to receive(:info).with("Events::Wizard#exchange_unverified_request: #{filtered_json}")
         subject.exchange_unverified_request(request)
       end
