@@ -32,7 +32,6 @@ GIT
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
   revision: f8cacce1a51937e16cc9e83ff8fe6cc33d1de6c8
-  branch: v4.3.8
   specs:
     get_into_teaching_api_client (4.3.8)
       faraday (>= 1.0.1, < 3.0)
