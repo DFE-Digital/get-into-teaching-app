@@ -149,6 +149,7 @@ module Internal
         :id,
         :name,
         :readable_id,
+        :reference_number,
         :summary,
         :description,
         :is_online,
@@ -158,6 +159,7 @@ module Internal
         :provider_organiser,
         :provider_target_audience,
         :provider_website_url,
+        :registration_email_link,
         :venue_type,
         :type_id,
       )

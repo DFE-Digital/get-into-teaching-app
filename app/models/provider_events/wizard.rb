@@ -1,0 +1,103 @@
+module ProviderEvents
+  class Wizard < ::GITWizard::Base
+    DEFAULT_ERROR_MESSAGE = "Choose an option from the list".freeze
+    PENDING_REVIEW_STATUS_ID = 222_750_003
+    PROVIDER_EVENT_TYPE_ID = 222_750_009
+    ATTRIBUTES_TO_LEAVE = %w[provider_contact_email reference_number].freeze
+
+    self.steps = [
+      Steps::Email,
+      Steps::EventName,
+      Steps::EventDescription,
+      Steps::OrganisationName,
+      Steps::EventWebsite,
+      Steps::TargetAudience,
+      Steps::EventDate,
+      Steps::EventTimes,
+      Steps::EventType,
+      Steps::OnlinePostcode,
+      Steps::InPersonLocation,
+      Steps::NewVenue,
+      Steps::RegistrationDetails,
+      Steps::ReviewAnswers,
+    ]
+
+    def complete!
+      super.tap do |result|
+        break unless result
+
+        event = GetIntoTeachingApiClient::TeachingEvent.new(construct_export)
+
+        response = GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(event)
+        @store[:reference_number] = response.reference_number
+
+        @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
+      end
+    end
+
+  private
+
+    def construct_export
+      attributes = GetIntoTeachingApiClient::TeachingEvent.attribute_map.keys
+
+      export_data.slice(*attributes.map(&:to_s))
+    end
+
+    def export_data
+      super.tap do |data|
+        find("event_type").tap do |event_type|
+          data["type_id"] = PROVIDER_EVENT_TYPE_ID
+          data["is_online"] = event_type.online?
+          data["is_in_person"] = event_type.in_person?
+          data["is_virtual"] = event_type.online?
+
+          data["building"] ||= {}
+          if event_type.online?
+            data["building"]["venue"] = data["organisation_name"]
+            data["building"]["addressPostcode"] = data["online_postcode"]
+
+          elsif event_type.in_person?
+            find("in_person_location").tap do |in_person_location|
+              if in_person_location.existing?
+                data["building"]["id"] = data["building_id"]
+              elsif in_person_location.new?
+                find("new_venue").tap do |_new_venue|
+                  data["building"]["venue"] = data["venue_name"]
+                  data["building"]["addressLine1"] = data["address_line_1"]
+                  data["building"]["addressLine2"] = data["address_line_2"]
+                  data["building"]["addressLine3"] = data["address_line_3"]
+                  data["building"]["addressCity"] = data["address_city"]
+                  data["building"]["addressPostcode"] = data["address_postcode"]
+                end
+              end
+            end
+          end
+
+          data["status_id"] ||= PENDING_REVIEW_STATUS_ID
+          find("event_date").tap do |event_date|
+            data["readable_id"] ||= "#{event_date.event_date.strftime('%y%m%d')}-#{data['event_name'].parameterize}"
+          end
+
+          data["name"] = data["event_name"]
+
+          data["provider_website_url"] = data["event_website"]
+          data["provider_target_audience"] = data["target_audience"]
+          data["provider_organiser"] = data["organisation_name"]
+
+          find("registration_details").tap do |registration_details|
+            if registration_details.website?
+              data["registration_email_link"] = data["registration_website"]
+            elsif registration_details.email?
+              data["registration_email_link"] = data["registration_email"]
+            end
+          end
+
+          find("event_times").tap do |event_times|
+            data["start_at"] = event_times.start_at
+            data["end_at"] = event_times.end_at
+          end
+        end
+      end
+    end
+  end
+end

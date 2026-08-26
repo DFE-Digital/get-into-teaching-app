@@ -226,7 +226,6 @@ private
 
   def expect_common_validation_errors
     expect(page).to have_text "Enter a name"
-    expect(page).to have_text "Enter a summary"
     expect(page).to have_text "Enter a description"
     expect(page).to have_text "Enter a partial URL"
     # start_at and end_at in error summary and field message
@@ -261,7 +260,8 @@ private
     fill_in "Provider email address", with: "test@test.com"
     fill_in "Provider organiser", with: "test"
     fill_in "Target audience", with: "test"
-    fill_in "Provider website/registration link", with: "test"
+    fill_in "Provider website", with: "http://test.test/provider"
+    fill_in "Registration website/email", with: "http://test.test/register"
     choose "Yes"
     choose "No venue"
   end
@@ -269,7 +269,6 @@ private
   def enter_common_event_details
     fill_in "Event name", with: "test"
     fill_in "Event partial URL", with: "test"
-    fill_in "Event summary", with: "test"
     find(:id, "internal_event_description", visible: false)
       .click
       .set "test"
