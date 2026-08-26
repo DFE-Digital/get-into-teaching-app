@@ -107,7 +107,7 @@ variable "sidekiq_replicas" {
   default = 1
 }
 
-variable "postgres_version" { default = 16 }
+variable "postgres_version" { default = 17 }
 
 variable "deploy_redis_cache" {
   default     = false
