@@ -4,6 +4,17 @@ RSpec.feature "Searching for teaching events", type: :feature do
   let(:event_count) { 5 }
   let(:events) { build_list(:event_api, event_count) }
 
+  describe "call to action" do
+    before do
+      allow_any_instance_of(TeachingEvents::Search).to receive(:results).and_return(events)
+      visit events_path
+    end
+
+    it "links to provider events form" do
+      expect(page).to have_link(href: provider_events_steps_path)
+    end
+  end
+
   describe "filter contents" do
     before do
       allow_any_instance_of(TeachingEvents::Search).to receive(:results).and_return(events)
@@ -82,8 +93,8 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     scenario "there is a link for event organisers to add their own events" do
-      expect(page).to have_content("Do you have a teaching event?")
-      expect(page).to have_link("please fill in our online form", href: "https://form.education.gov.uk/service/Provider-event-details---Get-into-Teaching-website")
+      expect(page).to have_content("Do you have a training provider event?")
+      expect(page).to have_link("complete this form", href: provider_events_steps_path)
     end
   end
 

@@ -8,6 +8,7 @@ FactoryBot.define do
     sequence(:name) { |i| "Become a Teacher #{i}" }
     sequence(:description) { |i| "<b>Become a Teacher #{i} event description</b>" }
     sequence(:summary) { |i| "Become a Teacher #{i} event summary" }
+    sequence(:reference_number) { |i| "A#{i}" }
     message { "An important message" }
     video_url { "https://video.com" }
     sequence(:start_at) { |i| i.weeks.from_now.change(hour: 7, minute: 30) }
@@ -31,6 +32,7 @@ FactoryBot.define do
       provider_target_audience { "Anyone interested in teaching from Sept 2021" }
       provider_organiser { "United Teaching" }
       provider_contact_email { "jim@smith.com" }
+      registration_email_link { "https://test.test/register" }
     end
 
     trait :get_into_teaching_event do

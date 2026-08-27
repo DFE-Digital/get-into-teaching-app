@@ -82,9 +82,24 @@ RSpec.describe TeacherTrainingAdviser::Steps::StartTeacherTraining do
       end
     end
 
-    context "when its after 17th September of the current year (2022)" do
+    context "when its 5:59pm on 15th September of the current year (2022)" do
       around do |example|
-        travel_to(Date.new(2022, 9, 17)) { example.run }
+        travel_to(Time.zone.local(2022, 9, 15, 17, 59)) { example.run }
+      end
+
+      it "returns 'Not sure', and the next 3 years" do
+        expect(years.map(&:value)).to contain_exactly(
+          "Not sure",
+          "2022 - start your training this September",
+          "2023",
+          "2024",
+        )
+      end
+    end
+
+    context "when its after 6:01pm on 15th September of the current year (2022)" do
+      around do |example|
+        travel_to(Time.zone.local(2022, 9, 15, 18, 1)) { example.run }
       end
 
       it "returns 'Not sure', and the next 3 years" do

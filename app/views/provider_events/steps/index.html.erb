@@ -1,0 +1,45 @@
+<section class="container">
+  <div class="row inset">
+    <div class="col col-845">
+      <h1>Submit your training provider event</h1>
+      <p>
+        Use this form to submit your training provider event to the Get Into Teaching website.
+      </p>
+      <p>
+        We aim to review and publish each event within 10 working days. This may take longer during busier periods. We may contact you to ask for more information.
+      </p>
+      <p>
+        You'll need to provide the following information:
+      </p>
+      <ul>
+        <li>an email address</li>
+        <li>event name</li>
+        <li>event description</li>
+        <li>your organisation's name</li>
+        <li>your website URL</li>
+        <li>your target audience</li>
+        <li>event location (this can be online)</li>
+        <li>the date of your event</li>
+        <li>the start and end times of your event</li>
+        <li>how people can register</li>
+      </ul>
+
+      <%= render Content::InsetTextComponent.new(
+        text: "If you need to change or remove your event, contact <a href=\"mailto:ITT-provider.EVENTS@education.gov.uk\">ITT-provider.EVENTS@education.gov.uk</a>",
+        color: "grey-white",
+      ) %>
+
+      <p>
+        <%= render Content::LinkAsButtonComponent.new(
+          link_text: "Start now",
+          href: provider_events_step_path(ProviderEvents::Wizard.steps.first.key)
+        ) %>
+      </p>
+
+      <h3>Before you start</h3>
+      <p>
+        You will need to complete this form in one session, as you cannot save your progress. Make sure you have all the information you need before you start.
+      </p>
+    </div>
+  </div>
+</section>
