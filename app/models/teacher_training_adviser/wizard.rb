@@ -28,32 +28,45 @@ module TeacherTrainingAdviser
       Steps::Authenticate,
       Steps::AlreadySignedUp,
       Steps::ReturningTeacher,
-      Steps::HasTeacherId,
-      Steps::PreviousTeacherId,
-      Steps::PaidTeachingExperienceInUk,
-      Steps::TrainToTeachInUk,
+
+      # Steps::HasTeacherId, # remove
+      # Steps::PreviousTeacherId, # remove
+      # Steps::PaidTeachingExperienceInUk, # remove
+      # Steps::TrainToTeachInUk, # remove
       Steps::NotEligible,
-      Steps::StageTrained,
-      Steps::SubjectTrained,
-      Steps::StageTaught,
-      Steps::SubjectTaught,
+
+      # Steps::StageTrained, # remove
+      # Steps::SubjectTrained, # remove
+      # Steps::StageTaught, # remove
+      # Steps::SubjectTaught, # remove
+
       Steps::DegreeStatus,
+
       Steps::NoDegree,
+
       Steps::DegreeCountry,
 
       Steps::WhatSubjectDegree,
       Steps::WhatDegreeClass,
-      Steps::RequiredDegreeClass,
+
+      Steps::RequiredDegreeClass, #blocks if < 2:2
+
       Steps::LifeStage,
-      Steps::StageInterestedTeaching,
+
+      Steps::StageInterestedTeaching, # block if choose primary
+
+      Steps::NotEligible2,
+
       Steps::GcseMathsEnglish,
       Steps::RetakeGcseMathsEnglish,
-      Steps::GcseScience,
-      Steps::RetakeGcseScience,
+
+      # Steps::GcseScience, # remove
+      # Steps::RetakeGcseScience, # remove
+
       Steps::QualificationRequired,
       Steps::SubjectInterestedTeaching,
       Steps::StartTeacherTraining,
-      Steps::SubjectLikeToTeach,
+      #Steps::SubjectLikeToTeach, # remove
 
       Steps::DateOfBirth,
 

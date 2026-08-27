@@ -29,10 +29,6 @@ module TeacherTrainingAdviser::Steps
       }
     end
 
-    def skipped?
-      other_step(:returning_teacher).returning_to_teaching
-    end
-
     def another_country?
       degree_country == ANOTHER_COUNTRY
     end

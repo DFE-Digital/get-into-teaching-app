@@ -1,5 +1,5 @@
 module TeacherTrainingAdviser::Steps
-  class NotEligible < GITWizard::Step
+  class NotEligible2 < GITWizard::Step
     include FunnelTitle
 
     def can_proceed?
@@ -8,7 +8,7 @@ module TeacherTrainingAdviser::Steps
 
     def skipped?
       # don't proceed if a returning teacher
-      !other_step(:returning_teacher).returning_to_teaching
+      !other_step(:stage_interested_teaching).interested_in_primary?
     end
 
     def title_attribute

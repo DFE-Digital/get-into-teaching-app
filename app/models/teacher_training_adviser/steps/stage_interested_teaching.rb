@@ -20,13 +20,8 @@ module TeacherTrainingAdviser::Steps
       preferred_education_phase_id == OPTIONS[:primary]
     end
 
-    def returning_teacher?
-      other_step(:returning_teacher).returning_to_teaching
-    end
-
     def skipped?
-      degree_country_step = other_step(:degree_country)
-      degree_country_step.another_country?
+      other_step(:degree_country).another_country?
     end
   end
 end

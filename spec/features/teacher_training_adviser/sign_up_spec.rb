@@ -9,6 +9,7 @@ DEGREE_STATUS_IN_PROGRESS = 222_750_006
 DEGREE_TYPE_EQUIVALENT = 222_750_005
 DEGREE_TYPE_DEGREE = 222_750_000
 TEACHER_TRAINING_YEAR_2022 = 22_304
+TEACHER_TRAINING_YEAR_2023 = 22_305
 UK_DEGREE_GRADE_2_2 = 222_750_003
 HAS_GCSE = 222_750_000
 SUBJECT_PHYSICS = "ac2655a1-2afa-e811-a981-000d3a276620".freeze
@@ -19,6 +20,9 @@ CITIZENSHIP_NOT_UK = 222_750_001
 VISA_STATUS_HAVE_VISA = 222_750_000
 VISA_STATUS_WILL_NEED_VISA = 222_750_001
 VISA_STATUS_NOT_SURE = 222_750_002
+COUNTRY_UK = "72f5c2e6-74f9-e811-a97a-000d3a2760f2".freeze
+LOCATION_UK = 222_750_000
+SITUATION_GRADUATED_EXPLORING = 222_750_003 # Graduated and exploring my career options
 
 RSpec.feature "Sign up for a teacher training adviser", type: :feature do
   include_context "with wizard data"
@@ -97,7 +101,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         receive(:get_contact_creation_channel_activities).and_return(creation_channel_activities)
     end
 
-    scenario "RTTA signing up at an on-campus event" do
+    scenario "Returning teacher not eligible for adviser service" do
       visit teacher_training_adviser_step_path(:identity, channel_activity: creation_channel_activity_student_union, sub_channel: sub_channel_id)
       click_on "Next step"
 
@@ -112,232 +116,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Yes"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have a teacher reference number (TRN)?"
-      choose "No"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage did you previously teach?"
-      choose "Secondary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which main subject did you previously teach?"
-      select "Psychology"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Secondary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which subject would you like to teach if you return to teaching?"
-      select "Physics"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Enter your date of birth"
-      fill_in_date_of_birth_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you a UK citizen?"
-      choose "Yes"
-      click_on "Next step"
-
-      # check page title remains correct for non completed steps
-      expect(page).to have_css "h1", text: "Where do you live?"
-      click_on "Next step"
-      expect(page).to have_title("Error: Where do you live? - Adviser sign up | Get Into Teaching GOV.UK")
-      choose "In the UK"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What's your postcode?"
-      fill_in_address_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What's your telephone number?"
-      fill_in "UK telephone number (optional)", with: "123456789"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Check your answers before you continue"
-
-      request_attributes = uk_candidate_request_attributes({
-        type_id: RETURNING_TO_TEACHING,
-        subject_taught_id: SUBJECT_PSYCHOLOGY,
-        preferred_teaching_subject_id: SUBJECT_PHYSICS,
-        channel_id: nil,
-        creation_channel_source_id: creation_channel_source_git_website,
-        creation_channel_service_id: creation_channel_service_rtta,
-        creation_channel_activity_id: creation_channel_activity_student_union,
-        citizenship: CITIZENSHIP_UK,
-      })
-      expect_sign_up_with_attributes(request_attributes)
-
-      click_on "Complete sign up"
-
-      expect(page).to have_css "h1", text: "John, you're signed up."
-
-      # We pass this to the BAM tracking pixel in GTM.
-      expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
+      expect(page).to have_css "h1", text: "Sorry, you are not eligible for this service"
     end
 
-    scenario "RTTA signing up at an on-campus event via adviser component (valid channel activity id)" do
-      visit "/teacher-training-advisers?channel_source=#{creation_channel_source_paid_advertising}&channel_service=#{creation_channel_service_mailing_list}&channel_activity=#{creation_channel_activity_student_union}&sub_channel=#{sub_channel_id}"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Get a free adviser"
-      # Simulate en error to ensure channel id is not lost
-      click_on "Next step"
-      expect(page).to have_text("You need to enter your first name")
-      fill_in_identity_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you qualified to teach?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have a teacher reference number (TRN)?"
-      choose "No"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage did you previously teach?"
-      choose "Secondary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which main subject did you previously teach?"
-      select "Psychology"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Secondary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which subject would you like to teach if you return to teaching?"
-      select "Physics"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Enter your date of birth"
-      fill_in_date_of_birth_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you a UK citizen?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Where do you live?"
-      choose "In the UK"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What's your postcode?"
-      fill_in_address_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What's your telephone number"
-      fill_in "UK telephone number (optional)", with: "123456789"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Check your answers before you continue"
-
-      request_attributes = uk_candidate_request_attributes({
-        type_id: RETURNING_TO_TEACHING,
-        subject_taught_id: SUBJECT_PSYCHOLOGY,
-        preferred_teaching_subject_id: SUBJECT_PHYSICS,
-        channel_id: nil,
-        creation_channel_source_id: creation_channel_source_paid_advertising,
-        creation_channel_service_id: creation_channel_service_mailing_list,
-        creation_channel_activity_id: creation_channel_activity_student_union,
-        citizenship: CITIZENSHIP_UK,
-      })
-      expect_sign_up_with_attributes(request_attributes)
-
-      click_on "Complete sign up"
-
-      expect(page).to have_css "h1", text: "John, you're signed up."
-
-      # We pass this to the BAM tracking pixel in GTM.
-      expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
-    end
-
-    scenario "RTTA signing up at an on-campus event (invalid channel activity id)" do
-      visit teacher_training_adviser_step_path(:identity, channel_activity: 999_999_999)
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Get a free adviser"
-      fill_in_identity_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you qualified to teach?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have a teacher reference number (TRN)?"
-      choose "No"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage did you previously teach?"
-      choose "Secondary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which main subject did you previously teach?"
-      select "Psychology"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Secondary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which subject would you like to teach if you return to teaching?"
-      select "Physics"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Enter your date of birth"
-      fill_in_date_of_birth_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you a UK citizen?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Where do you live?"
-      choose "In the UK"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What's your postcode?"
-      fill_in_address_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What's your telephone number?"
-      fill_in "UK telephone number (optional)", with: "123456789"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Check your answers before you continue"
-
-      request_attributes = uk_candidate_request_attributes({
-        type_id: RETURNING_TO_TEACHING,
-        subject_taught_id: SUBJECT_PSYCHOLOGY,
-        preferred_teaching_subject_id: SUBJECT_PHYSICS,
-        channel_id: nil,
-        creation_channel_source_id: creation_channel_source_git_website,
-        creation_channel_service_id: creation_channel_service_rtta,
-        creation_channel_activity_id: nil,
-        citizenship: CITIZENSHIP_UK,
-      })
-      expect_sign_up_with_attributes(request_attributes)
-
-      click_on "Complete sign up"
-
-      expect(page).to have_css "h1", text: "John, you're signed up."
-    end
-
-    scenario "that is a returning teacher" do
+    scenario "Primary teacher not eligible for adviser service" do
       visit teacher_training_adviser_steps_path
 
       expect(page).to have_css "h1", text: "Get a free adviser"
@@ -345,84 +127,34 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Are you qualified to teach?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have a teacher reference number (TRN)?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What is your teacher reference number (TRN)?"
-      fill_in "Teacher reference number (optional)", with: "1234"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage did you previously teach?"
-      choose "Secondary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which main subject did you previously teach?"
-      select "Psychology"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Secondary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which subject would you like to teach if you return to teaching?"
-      select "Physics"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Enter your date of birth"
-      fill_in_date_of_birth_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you a UK citizen?"
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have a visa or immigration status allowing you to train to teach in England?"
-      choose "Yes, I have a visa, pre-settled status or leave to remain"
+      expect(page).to have_css "h1", text: "Do you have a degree?"
+      choose "Yes"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Where do you live?"
-      choose "In the UK"
+      expect(page).to have_css "h1", text: "Which country is your degree from?"
+      choose "The UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What's your postcode"
-      fill_in_address_step
+      expect(page).to have_css "h1", text: "What subject is your degree?"
+      fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "What's your telephone number?"
-      fill_in "UK telephone number (optional)", with: "123456789"
+      expect(page).to have_css "h1", text: "What grade is your degree?"
+      choose "Lower second-class honours (2:2)"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Check your answers before you continue"
+      expect(page).to have_css "h1", text: "How would you describe your current situation?"
+      choose "Graduated and exploring my career options"
+      click_on "Next step"
 
-      request_attributes = uk_candidate_request_attributes({
-        type_id: RETURNING_TO_TEACHING,
-        subject_taught_id: SUBJECT_PSYCHOLOGY,
-        preferred_teaching_subject_id: SUBJECT_PHYSICS,
-        teacher_id: "1234",
-        channel_id: nil,
-        creation_channel_source_id: creation_channel_source_git_website,
-        creation_channel_service_id: creation_channel_service_rtta,
-        creation_channel_activity_id: nil,
-        citizenship: CITIZENSHIP_NOT_UK,
-        visa_status: VISA_STATUS_HAVE_VISA,
-      })
-      expect_sign_up_with_attributes(request_attributes)
+      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
+      choose "Primary"
+      click_on "Next step"
 
-      click_on "Complete sign up"
-
-      expect(page).to have_css "h1", text: "John, you're signed up."
-      expect(page).to have_text "A return to teaching adviser will email you within 10 working days to outline your next steps"
-      expect(page).to have_text "Get support returning to teaching"
-      expect(page).not_to have_text "Discover the different ways to train"
-      expect(page).not_to have_text "Find out about funding"
+      expect(page).to have_css "h1", text: "Sorry, you are not eligible for this service"
     end
 
     scenario "with an equivalent degree (overseas)" do
@@ -781,292 +513,10 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Primary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in GCSE science, or an equivalent qualification?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "When do you want to start your teacher training?"
-      choose "2022"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Enter your date of birth"
-      fill_in_date_of_birth_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you a UK citizen?"
-      choose "No"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have a visa or immigration status allowing you to train to teach in England?"
-      choose "Yes, I have a visa, pre-settled status or leave to remain"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Where do you live?"
-      choose "Outside of the UK"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which country do you live in?"
-      select "Argentina"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What's your telephone number"
-      expect(find_field("Overseas telephone number (optional)").value).to eq "54"
-      fill_in "Overseas telephone number (optional)", with: "123456789"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Check your answers before you continue"
-
-      request_attributes = overseas_candidate_request_attributes({
-        type_id: INTERESTED_IN_TEACHING,
-        uk_degree_grade_id: UK_DEGREE_GRADE_2_2,
-        degree_status_id: DEGREE_STATUS_IN_PROGRESS,
-        graduation_year: 2022,
-        degree_type_id: DEGREE_TYPE_DEGREE,
-        initial_teacher_training_year_id: TEACHER_TRAINING_YEAR_2022,
-        preferred_education_phase_id: EDUCATION_PHASE_PRIMARY,
-        has_gcse_maths_and_english_id: HAS_GCSE,
-        has_gcse_science_id: HAS_GCSE,
-        degree_subject: "Mathematics",
-        citizenship: CITIZENSHIP_NOT_UK,
-        visa_status: VISA_STATUS_HAVE_VISA,
-      })
-      expect_sign_up_with_attributes(request_attributes)
-
-      click_on "Complete sign up"
-
-      expect(page).to have_css "h1", text: "John, you're signed up."
+      expect(page).to have_css "h1", text: "Sorry, you are not eligible for this service"
     end
 
     scenario "candidate changes an answer" do
-      visit teacher_training_adviser_steps_path
-
-      expect(page).to have_css "h1", text: "Get a free adviser"
-      fill_in_identity_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you qualified to teach?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have a teacher reference number (TRN)?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What is your teacher reference number (TRN)?"
-      fill_in "Teacher reference number (optional)", with: "1234"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage did you previously teach?"
-      choose "Secondary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which main subject did you previously teach?"
-      select "Psychology"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Secondary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which subject would you like to teach if you return to teaching?"
-      select "Physics"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Enter your date of birth"
-      fill_in_date_of_birth_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you a UK citizen?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Where do you live?"
-      choose "In the UK"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What's your postcode?"
-      fill_in_address_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What's your telephone number?"
-      fill_in "UK telephone number (optional)", with: "123456789"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Check your answers before you continue"
-      click_on "Change your previous teacher reference number"
-
-      expect(page).to have_css "h1", text: "What is your teacher reference number (TRN)?"
-      fill_in "Teacher reference number (optional)", with: "5678"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Check your answers before you continue"
-
-      request_attributes = uk_candidate_request_attributes({
-        type_id: RETURNING_TO_TEACHING,
-        subject_taught_id: SUBJECT_PSYCHOLOGY,
-        preferred_teaching_subject_id: SUBJECT_PHYSICS,
-        teacher_id: "5678",
-        citizenship: CITIZENSHIP_UK,
-      })
-      expect_sign_up_with_attributes(request_attributes)
-
-      click_on "Complete sign up"
-
-      expect(page).to have_css "h1", text: "John, you're signed up."
-    end
-
-    scenario "candidate is a returning primary teacher" do
-      visit teacher_training_adviser_steps_path
-
-      expect(page).to have_css "h1", text: "Get a free adviser"
-      fill_in_identity_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you qualified to teach?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have a teacher reference number (TRN)?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What is your teacher reference number (TRN)?"
-      fill_in "Teacher reference number (optional)", with: "1234"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage did you previously teach?"
-      choose "Primary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Primary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Enter your date of birth"
-      fill_in_date_of_birth_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you a UK citizen?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Where do you live?"
-      choose "In the UK"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What's your postcode?"
-      fill_in_address_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What's your telephone number?"
-      fill_in "UK telephone number (optional)", with: "123456789"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Check your answers before you continue"
-
-      request_attributes = uk_candidate_request_attributes(
-        {
-          type_id: RETURNING_TO_TEACHING,
-          stage_taught_id: EDUCATION_PHASE_PRIMARY,
-          preferred_education_phase_id: EDUCATION_PHASE_PRIMARY,
-          teacher_id: "1234",
-          citizenship: CITIZENSHIP_UK,
-        },
-      )
-      expect_sign_up_with_attributes(request_attributes)
-
-      click_on "Complete sign up"
-
-      expect(page).to have_css "h1", text: "John, you're signed up."
-    end
-
-    scenario "without a degree" do
-      visit teacher_training_adviser_steps_path
-
-      expect(page).to have_css "h1", text: "Get a free adviser"
-      fill_in_identity_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you qualified to teach?"
-      choose "No"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have a degree?"
-      choose "No"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "You need to have or be studying towards a degree to sign up for an adviser"
-      expect(page).not_to have_css "h1", text: "Continue"
-    end
-
-    scenario "without science GCSEs, primary" do
-      visit teacher_training_adviser_steps_path
-
-      expect(page).to have_css "h1", text: "Get a free adviser"
-      fill_in_identity_step
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you qualified to teach?"
-      choose "No"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have a degree?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which country is your degree from?"
-      choose "The UK"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What subject is your degree?"
-      fill_in "What subject is your degree?", with: "Mathematics"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "What grade is your degree?"
-      choose "Lower second-class honours (2:2)"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "How would you describe your current situation?"
-      choose "Considering changing my existing career"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Primary"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
-      choose "No"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent qualifications?"
-      choose "Yes"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in GCSE science, or an equivalent qualification?"
-      choose "No"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "Are you planning to retake your science GCSE?"
-      choose "No"
-      click_on "Next step"
-
-      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to sign up for an adviser"
-      expect(page).not_to have_css "h1", text: "Continue"
-    end
-
-    scenario "without english/maths GCSEs, primary" do
       visit teacher_training_adviser_steps_path
 
       expect(page).to have_css "h1", text: "Get a free adviser"
@@ -1098,22 +548,96 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Primary"
+      choose "Secondary"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
+      choose "Yes"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
+      select "Physics"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "When do you want to start your teacher training?"
+      choose "2023"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Enter your date of birth"
+      fill_in_date_of_birth_step
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Are you a UK citizen?"
+      choose "Yes"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Where do you live?"
+      choose "In the UK"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "What's your postcode?"
+      fill_in_address_step
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "What's your telephone number?"
+      fill_in "UK telephone number (optional)", with: "123456789"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Check your answers before you continue"
+      click_on "Change which subject you are interested in teaching"
+
+      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
+      select "Psychology"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Check your answers before you continue"
+
+      request_attributes = uk_candidate_request_attributes({
+        type_id: INTERESTED_IN_TEACHING,
+        degree_status_id: DEGREE_STATUS_HAS_DEGREE,
+        uk_degree_grade_id: UK_DEGREE_GRADE_2_2,
+        degree_type_id: DEGREE_TYPE_DEGREE,
+        degree_country: COUNTRY_UK,
+        degree_subject: "Mathematics",
+        address_telephone: "123456789",
+        situation: SITUATION_GRADUATED_EXPLORING,
+        citizenship: CITIZENSHIP_UK,
+        location: LOCATION_UK,
+        has_gcse_maths_and_english_id: HAS_GCSE,
+        preferred_teaching_subject_id: SUBJECT_PSYCHOLOGY,
+        initial_teacher_training_year_id: TEACHER_TRAINING_YEAR_2023,
+        channel_id: nil,
+        creation_channel_source_id: creation_channel_source_git_website,
+        creation_channel_service_id: creation_channel_service_tta,
+        creation_channel_activity_id: nil,
+      })
+      expect_sign_up_with_attributes(request_attributes)
+
+      click_on "Complete sign up"
+
+      expect(page).to have_css "h1", text: "John, you're signed up."
+    end
+
+    scenario "without a degree" do
+      visit teacher_training_adviser_steps_path
+
+      expect(page).to have_css "h1", text: "Get a free adviser"
+      fill_in_identity_step
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Are you qualified to teach?"
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent qualifications?"
+      expect(page).to have_css "h1", text: "Do you have a degree?"
       choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "We're sorry, but you need the right GCSEs to sign up for an adviser"
+      expect(page).to have_css "h1", text: "You need to have or be studying towards a degree to sign up for an adviser"
       expect(page).not_to have_css "h1", text: "Continue"
     end
 
-    scenario "without GCSEs, secondary" do
+    scenario "without english/maths GCSEs, secondary" do
       visit teacher_training_adviser_steps_path
 
       expect(page).to have_css "h1", text: "Get a free adviser"
@@ -1141,7 +665,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "How would you describe your current situation?"
-      choose "Not currently working"
+      choose "Graduated and exploring my career options"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
@@ -1170,7 +694,6 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         address_postcode: "TE7 1NG",
         date_of_birth: Date.new(1999, 4, 27),
         address_telephone: "123456789",
-        teacher_id: "12345",
       )
     end
 
@@ -1275,30 +798,43 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Are you qualified to teach?"
+      choose "No"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Do you have a degree?"
       choose "Yes"
       click_on "Next step"
 
-      expect(page).not_to have_css "h1", text: "Do you have your previous teacher reference number?"
-      expect(page).not_to have_css "h1", text: "What is your teacher reference number (TRN)?"
-
-      expect(page).to have_css "h1", text: "Do you have paid teaching experience in the UK of at least one term?"
-      choose "Yes"
+      expect(page).to have_css "h1", text: "Which country is your degree from?"
+      choose "The UK"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage did you previously teach?"
-      choose "Secondary"
+      expect(page).to have_css "h1", text: "What subject is your degree?"
+      fill_in "What subject is your degree?", with: "Mathematics"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which main subject did you previously teach?"
-      select "Psychology"
+      expect(page).to have_css "h1", text: "What grade is your degree?"
+      choose "Lower second-class honours (2:2)"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "How would you describe your current situation?"
+      choose "Graduated and exploring my career options"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
       choose "Secondary"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which subject would you like to teach if you return to teaching?"
+      expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
+      choose "Yes"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
       select "Physics"
+      click_on "Next step"
+
+      expect(page).to have_css "h1", text: "When do you want to start your teacher training?"
+      choose "2023"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Enter your date of birth"
@@ -1324,13 +860,25 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       expect(page).to have_css "h1", text: "Check your answers before you continue"
 
       request_attributes = uk_candidate_request_attributes({
-        subject_taught_id: SUBJECT_PSYCHOLOGY,
-        preferred_teaching_subject_id: SUBJECT_PHYSICS,
+        type_id: INTERESTED_IN_TEACHING,
+        degree_status_id: DEGREE_STATUS_HAS_DEGREE,
+        uk_degree_grade_id: UK_DEGREE_GRADE_2_2,
+        degree_type_id: DEGREE_TYPE_DEGREE,
+        degree_country: COUNTRY_UK,
+        degree_subject: "Mathematics",
+        address_telephone: "123456789",
+        situation: SITUATION_GRADUATED_EXPLORING,
+
         date_of_birth: "1999-04-27",
         address_postcode: "TE7 1NG",
-        teacher_id: "12345",
         citizenship: CITIZENSHIP_UK,
+
+        location: LOCATION_UK,
+        has_gcse_maths_and_english_id: HAS_GCSE,
+        preferred_teaching_subject_id: SUBJECT_PHYSICS,
+        initial_teacher_training_year_id: TEACHER_TRAINING_YEAR_2023,
       })
+
       expect_sign_up_with_attributes(request_attributes)
 
       click_on "Complete sign up"
@@ -1373,7 +921,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       last_name: "Doe",
       date_of_birth: "1966-03-24",
       address_postcode: "EH12 8JF",
-      country_id: "72f5c2e6-74f9-e811-a97a-000d3a2760f2",
+      country_id: COUNTRY_UK,
       accepted_policy_id: "123",
       preferred_education_phase_id: EDUCATION_PHASE_SECONDARY,
     }

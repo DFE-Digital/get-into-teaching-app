@@ -16,7 +16,6 @@ module TeacherTrainingAdviser
     def completed
       super
 
-      @returner = wizard_store[:type_id].to_i == Steps::ReturningTeacher::OPTIONS[:returning_to_teaching]
       @equivalent = wizard_store[:degree_type_id] == Steps::DegreeCountry::DEGREE_EQUIVALENT
       @callback_booked = wizard_store[:callback_offered] && @equivalent
       @address_telephone = wizard_store[:address_telephone]

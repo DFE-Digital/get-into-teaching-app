@@ -9,8 +9,7 @@ module TeacherTrainingAdviser
       include FunnelTitle
 
       def skipped?
-        other_step(:returning_teacher).returning_to_teaching ||
-          other_step(:degree_country).another_country?
+        other_step(:degree_country).another_country?
       end
 
       def situations
