@@ -33,9 +33,9 @@ Non-maintained schools (for example, academies, independent schools and private 
 
 ## September 2026 and September 2027 pay awards
 
-From September 2026, minimum starting salaries for teachers will be $salaries_starting_min$ (or more in London).
+From September 2026, minimum starting salaries for teachers will be over $salaries_starting_min$ (or more in London).
 
-From September 2027, minimum starting salaries for teachers will be $salaries_starting_min_england_2027$ (or more in London).
+From September 2027, minimum starting salaries for teachers will be over $salaries_starting_min_england_2027$ (or more in London).
 
 The average teacher salary will be over $salaries_average_classroom_2026$ from September 2026, and over $salaries_average_classroom_2027$ from September 2027.
 
