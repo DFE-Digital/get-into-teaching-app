@@ -28,62 +28,32 @@ module TeacherTrainingAdviser
       Steps::Authenticate,
       Steps::AlreadySignedUp,
       Steps::ReturningTeacher,
-
-      # Steps::HasTeacherId, # remove
-      # Steps::PreviousTeacherId, # remove
-      # Steps::PaidTeachingExperienceInUk, # remove
-      # Steps::TrainToTeachInUk, # remove
       Steps::NotEligible,
-
-      # Steps::StageTrained, # remove
-      # Steps::SubjectTrained, # remove
-      # Steps::StageTaught, # remove
-      # Steps::SubjectTaught, # remove
-
       Steps::DegreeStatus,
-
       Steps::NoDegree,
-
       Steps::DegreeCountry,
-
       Steps::WhatSubjectDegree,
       Steps::WhatDegreeClass,
-
-      Steps::RequiredDegreeClass, #blocks if < 2:2
-
+      Steps::RequiredDegreeClass,
       Steps::LifeStage,
-
-      Steps::StageInterestedTeaching, # block if choose primary
-
+      Steps::StageInterestedTeaching,
       Steps::NotEligible2,
-
       Steps::GcseMathsEnglish,
       Steps::RetakeGcseMathsEnglish,
-
-      # Steps::GcseScience, # remove
-      # Steps::RetakeGcseScience, # remove
-
       Steps::QualificationRequired,
       Steps::SubjectInterestedTeaching,
       Steps::StartTeacherTraining,
-      #Steps::SubjectLikeToTeach, # remove
-
       Steps::DateOfBirth,
-
       Steps::Citizenship,
       Steps::VisaStatus,
-
       Steps::Location,
-
       Steps::UkAddress,
       Steps::UkTelephone,
       Steps::OverseasCountry,
       Steps::OverseasTelephone,
-
       Steps::UkCallback,
       Steps::OverseasTimeZone,
       Steps::OverseasCallback,
-
       Steps::ReviewAnswers,
     ].freeze
 
