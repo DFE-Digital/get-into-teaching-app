@@ -116,7 +116,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Yes"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Sorry, you are not eligible for this service"
+      expect(page).to have_css "h1", text: "You cannot sign up for an adviser as a qualified teacher"
     end
 
     scenario "Primary teacher not eligible for adviser service" do
@@ -150,11 +150,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Graduated and exploring my career options"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Primary"
+      expect(page).to have_css "h1", text: "Are you interested in becoming a secondary school teacher?"
+      choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Sorry, you are not eligible for this service"
+      expect(page).to have_css "h1", text: "You must be interested in teaching in a secondary school to sign up for an adviser"
     end
 
     scenario "with an equivalent degree (overseas)" do
@@ -425,8 +425,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Exploring options for my first career"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Secondary"
+      expect(page).to have_css "h1", text: "Are you interested in becoming a secondary school teacher?"
+      choose "Yes"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Select the subject you're most interested in teaching"
@@ -509,11 +509,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Teaching assistant or unqualified teacher in a school"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Primary"
+      expect(page).to have_css "h1", text: "Are you interested in becoming a secondary school teacher?"
+      choose "No"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Sorry, you are not eligible for this service"
+      expect(page).to have_css "h1", text: "You must be interested in teaching in a secondary school to sign up for an adviser"
     end
 
     scenario "candidate changes an answer" do
@@ -547,8 +547,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Graduated and exploring my career options"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Secondary"
+      expect(page).to have_css "h1", text: "Are you interested in becoming a secondary school teacher?"
+      choose "Yes"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
@@ -668,8 +668,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Graduated and exploring my career options"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Secondary"
+      expect(page).to have_css "h1", text: "Are you interested in becoming a secondary school teacher?"
+      choose "Yes"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
@@ -821,8 +821,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       choose "Graduated and exploring my career options"
       click_on "Next step"
 
-      expect(page).to have_css "h1", text: "Which stage are you most interested in teaching?"
-      choose "Secondary"
+      expect(page).to have_css "h1", text: "Are you interested in becoming a secondary school teacher?"
+      choose "Yes"
       click_on "Next step"
 
       expect(page).to have_css "h1", text: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
