@@ -6,7 +6,7 @@ module TeacherTrainingAdviser::Steps
 
     validates :preferred_education_phase_id, pick_list_items: { method: :get_candidate_preferred_education_phases }
 
-    OPTIONS = { primary: 222_750_000, secondary: 222_750_001 }.freeze
+    OPTIONS = { secondary: 222_750_001, primary: 222_750_000 }.freeze
 
     include FunnelTitle
 
