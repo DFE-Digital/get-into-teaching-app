@@ -27,7 +27,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
         submit_choice_step("Upper second-class honours (2:1)", :what_degree_class)
         submit_choice_step("Graduated and exploring my career options", :life_stage)
-        submit_choice_step("Secondary", :stage_interested_teaching)
+        submit_choice_step("Yes", :stage_interested_teaching)
         submit_choice_step("Yes", :gcse_maths_english)
         submit_select_step("Chemistry", :subject_interested_teaching)
         submit_choice_step("2022", :start_teacher_training)
@@ -55,7 +55,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_fill_in_step("What subject is your degree?", "Mathematics", :what_subject_degree)
         submit_choice_step("Other", :what_degree_class)
         submit_choice_step("Considering changing my existing career", :life_stage)
-        submit_choice_step("Secondary", :stage_interested_teaching)
+        submit_choice_step("Yes", :stage_interested_teaching)
         submit_choice_step("No", :gcse_maths_english)
         submit_choice_step("Yes", :retake_gcse_maths_english)
         submit_select_step("Chemistry", :subject_interested_teaching)
@@ -83,7 +83,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_choice_step("The UK", :degree_country)
         submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
         submit_choice_step("Teaching assistant or unqualified teacher in a school", :life_stage)
-        submit_choice_step("Secondary", :stage_interested_teaching)
+        submit_choice_step("Yes", :stage_interested_teaching)
         submit_select_step("Maths", :subject_interested_teaching)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
         submit_choice_step("No", :citizenship)
@@ -109,7 +109,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_fill_in_step("What subject is your degree?", "Physics", :what_subject_degree)
         submit_choice_step("First-class honours", :what_degree_class)
         submit_choice_step("Exploring options for my first career", :life_stage)
-        submit_choice_step("Secondary", :stage_interested_teaching)
+        submit_choice_step("Yes", :stage_interested_teaching)
         submit_choice_step("No", :gcse_maths_english)
         submit_choice_step("Yes", :retake_gcse_maths_english)
         submit_select_step("Chemistry", :subject_interested_teaching)
@@ -189,7 +189,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
         submit_choice_step("Graduated and exploring my career options", :life_stage)
 
         expect_current_step(:stage_interested_teaching)
-        expect(page.find_field("Secondary")).to be_checked
+        expect(page.find_field("Yes")).to be_checked
         click_on_continue
 
         expect_current_step(:gcse_maths_english)
