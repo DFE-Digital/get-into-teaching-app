@@ -51,14 +51,14 @@ You’ll get to do things like:
 
 ## Finding a school to visit
 
-Use our [Get school experience](https://schoolexperience.education.gov.uk/) service to search for and request school visits in England. You can find schools in your area by entering your postcode. You can filter these results by the subject and age group you're looking to teach. It also tells you whether your visit will be in-school, virtual or both.
+Use our [Get school experience](https://schoolexperience.education.gov.uk/) service to search for and request school visits in England. You can find schools in your area by entering your postcode, and filter the results by the subject and age group you're looking to teach. It also tells you whether your visit will be in-school, virtual or both.
 
 Once you have chosen a school, you can get more information about their availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a Disclosure and Barring Service (DBS) check. 
 
 $non-uk-get-school-experience$
 $get-school-experience$
 
-### Arrange school experience independently
+### Arrange a school visit independently
 
 You can also organise a school visit by yourself by contacting your old school. If you’re a student you can check whether your university has any existing links with local schools. 
 
