@@ -49,9 +49,9 @@ You’ll get to do things like:
 - speak to teachers and meet pupils
 - learn more about teacher training - including the application and interview process
 
-## Find school experience
+## Finding a school to visit
 
-Use our [Get school experience](https://schoolexperience.education.gov.uk/) service to search for and request experience in England. If you enter your postcode you can find schools in your area that offer experience. You can filter these by the subject and age group you're looking to teach. It also tells you whether the type of experience available is in-school, virtual or both.
+Use our [Get school experience](https://schoolexperience.education.gov.uk/) service to search for and request school visits in England. You can find schools in your area by entering your postcode. You can filter these results by the subject and age group you're looking to teach. It also tells you whether your visit will be in-school, virtual or both.
 
 Once you have chosen a school, you can get more information about their availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a Disclosure and Barring Service (DBS) check. 
 
@@ -60,9 +60,9 @@ $get-school-experience$
 
 ### Arrange school experience independently
 
-You can also organise school experience yourself by contacting your old school. If you’re a student you can check whether your university has any existing links with local schools. 
+You can also organise a school visit by yourself by contacting your old school. If you’re a student you can check whether your university has any existing links with local schools. 
 
-You can also [get information about schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience so your request goes to the right person. 
+You can also [get information about schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about visiting their school, so your request goes to the right person. 
 
 It's important to remember that school staff are busy, so they may not always respond quickly and you may also need to be flexible about when you visit. 
 
