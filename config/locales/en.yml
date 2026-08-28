@@ -796,7 +796,7 @@ en:
         degree_country:
           degree_country:
             72f5c2e6-74f9-e811-a97a-000d3a2760f2: "The UK"
-            6f9e7b81-e44d-f011-877a-00224886d23e: "Another Country"
+            6f9e7b81-e44d-f011-877a-00224886d23e: "Another country"
         location:
           location:
             222750000: "In the UK"
@@ -1098,7 +1098,7 @@ en:
       teacher_training_adviser_steps_what_degree_class:
         uk_degree_grade_id:
           studying: "To get an adviser, your predicted degree grade must be a 2:2 or higher."
-          graduated: "To get an adviser, your batchelor's degree grade must be a 2:2 or higher."
+          graduated: "To get an adviser, your bachelor's degree grade must be a 2:2 or higher."
 
       provider_events_steps_email:
         provider_contact_email: "We will use this email address to contact you about your event, and it will show on the event page."

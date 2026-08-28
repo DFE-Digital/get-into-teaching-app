@@ -134,7 +134,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       it "equivalent degree, lives in uk, book callback" do
         submit_choice_step("No", :returning_teacher)
         submit_choice_step("Yes", :degree_status)
-        submit_choice_step("Another Country", :degree_country)
+        submit_choice_step("Another country", :degree_country)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
         submit_choice_step("In the UK", :location)
         submit_uk_callback_step("123456789", "1:00pm to 1:30pm")
@@ -149,7 +149,7 @@ RSpec.describe "Teacher training adviser sign up", type: :feature, vcr: false do
       it "equivalent degree, lives overseas, book callback" do
         submit_choice_step("No", :returning_teacher)
         submit_choice_step("Yes", :degree_status)
-        submit_choice_step("Another Country", :degree_country)
+        submit_choice_step("Another country", :degree_country)
         submit_date_of_birth_step(Date.new(1974, 3, 16))
         submit_choice_step("Outside of the UK", :location)
         submit_select_step("China", :overseas_country)
