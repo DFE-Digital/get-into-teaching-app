@@ -263,8 +263,8 @@ en:
         change: "if you are qualified to teach"
     stage_interested_teaching:
       preferred_education_phase_id:
-        title: "Which stage are you most interested in teaching?"
-        change: "the stage you are most interested in teaching"
+        title: "Are you interested in becoming a secondary school teacher?"
+        change: "whether you are interested in becoming a secondary school teacher"
       preferred_teaching_subject_id:
         title: "Which subject would you like to teach if you return to teaching?"
         change: "the subject you would like to teach if you return to teaching"

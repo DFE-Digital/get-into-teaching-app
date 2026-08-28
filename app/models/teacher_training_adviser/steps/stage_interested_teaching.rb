@@ -12,7 +12,7 @@ module TeacherTrainingAdviser::Steps
 
     def reviewable_answers
       super.tap do |answers|
-        answers["preferred_education_phase_id"] = OPTIONS.key(preferred_education_phase_id).to_s.capitalize
+        answers["preferred_education_phase_id"] = interested_in_primary? ? "No" : "Yes"
       end
     end
 
