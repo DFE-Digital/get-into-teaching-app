@@ -103,4 +103,4 @@ $find-courses$
 
 Teach Lead Change is a 2 year employment-based route in to teaching delivered by [Teach First](https://www.teachfirst.org.uk/). It's designed for high performing graduates and career changers, combining classroom experience with professional development. You’ll earn a salary while working towards QTS with a PGCE. 
 
-To apply and find out more, [visit the Teach Lead Change website](new link here).
+To apply and find out more, [visit the Teach Lead Change website](https://teachleadchange.org.uk/).
