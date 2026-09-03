@@ -26,12 +26,12 @@ quote:
 expander:
   non-uk-get-school-experience:
     title: get school experience
-    text: To use the Get school experience service, you will need the right to work in the UK. This may be difficult if you have not started your training yet. However, you do not need classroom experience to train to teach in England.  
+    text: To use the Get school experience service, you will need the right to work in the UK. If you have not started your teacher training yet, getting the right to work in the UK may be difficult. Classroom experience is not always needed to start teacher training, but some teacher training providers require it as part of their course entry requirements. You should refer to each individual training provider's requirements when looking at courses.
 ---
 
-You can visit schools to get unpaid experience in the classroom before you start your initial teacher training (ITT).
+Before you start your initial teacher training (ITT), you can visit schools to find out what life in the classroom is like.
 
-It can help you:
+School visits can help you:
 
 - decide if you want to train to be a teacher
 - discover if you’d like to teach in a primary or secondary school
@@ -39,9 +39,9 @@ It can help you:
 
 ## What to expect
 
-Your experience will either be in a school or joining classes and meeting teachers online. Experiences usually last one or 2 days, but some can last up to 3 weeks.
+You will either attend a school in person or join classes and meet teachers online. Your school visit will usually last one or 2 days, but some can last up to 3 weeks.
 
-During your experience, you’ll get to do things like:
+You’ll get to do things like:
 
 - observe lessons
 - see how teachers manage a classroom
@@ -49,22 +49,22 @@ During your experience, you’ll get to do things like:
 - speak to teachers and meet pupils
 - learn more about teacher training - including the application and interview process
 
-## Find school experience
+## Finding a school to visit
 
-Use our [Get school experience](https://schoolexperience.education.gov.uk/) service to search for and request experience in England. If you enter your postcode you can find schools in your area that offer experience. You can filter these by the subject and age group you're looking to teach. It also tells you whether the type of experience available is in-school, virtual or both.
+Use our [Get school experience](https://schoolexperience.education.gov.uk/) service to search for and request school visits in England. You can find schools in your area by entering your postcode, and filter the results by the subject and age group you're looking to teach. It also tells you whether your visit will be in-school, virtual or both.
 
-Once you've chosen a school, you can get more information about their availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a DBS check. 
+Once you have chosen a school, you can get more information about their availability and any requirements they may have. Some schools may charge fees to cover their costs and you may need to have a Disclosure and Barring Service (DBS) check. 
 
 $non-uk-get-school-experience$
 $get-school-experience$
 
-### Arrange school experience independently
+### Arrange a school visit independently
 
-You can also organise school experience yourself by contacting your old school. If you’re a student you can check whether your university has any existing links with local schools. 
+You can also organise a school visit by yourself by contacting your old school. If you’re a student you can check whether your university has any existing links with local schools. 
 
-Or you can call a school directly. You can [get information about schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience so your request goes to the right person. 
+You can also [get information about schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about visiting their school, so your request goes to the right person. 
 
-Bear in mind that schools are busy places, so they may not always respond quickly and you may need to be flexible about when you visit. 
+It's important to remember that school staff are busy, so they may not always respond quickly and you may also need to be flexible about when you visit. 
 
 $q-Zainab$
 
