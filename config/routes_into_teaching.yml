@@ -59,7 +59,7 @@ routes:
     funding: "No"
     description: Teach Lead Change is an employment-based route into teaching for high performing graduates and career changers, delivered by Teach First. You’ll earn a salary while working towards qualified teacher status (QTS) with a postgraduate certificate in education (PGCE).
     cta_text: Find out more on the Teach Lead Change website
-    cta_link: "https://www.teachleadchange.org.uk"
+    cta_link: "https://teachleadchange.org.uk"
     matches:
       - question: undergraduate_degree
         answers: ["Yes", "Not yet"]
