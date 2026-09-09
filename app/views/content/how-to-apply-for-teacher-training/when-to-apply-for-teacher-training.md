@@ -24,6 +24,10 @@ expander:
 
 For postgraduate teacher training courses starting in the $recruitmentcycle_academicyear$, you can apply $recruitmentcycle_openanddeadline$. 
 
+If any of the courses you have applied for start by the end of $recruitmentcycle_januarystart$, you must respond to any offers you receive by $recruitmentcycle_januarydeadlinetime$ on $recruitmentcycle_januarydeadlinedate$. If you do not respond by then, your offers will automatically be declined.
+
+You should check with training providers when applications close for each course. Some providers may close applications before these deadlines if a course fills up.
+
 $application-deadlines$
 
 ## Find and apply for teacher training courses
@@ -56,13 +60,23 @@ $q-jacub-pask$
 
 ## Deadlines for applications and training provider decisions 
 
+### $recruitmentcycle_januaryproviderdeadline$
+
+This is the last day for training providers to make a decision on all applications (including those at interview stage) for courses that start before the end of $recruitmentcycle_januarycoursestart$.
+
+### $recruitmentcycle_januarydeadlinedate$
+
+This is the last day you'll be able to respond to any received offers for courses that start before the end of $recruitmentcycle_januarycoursestart$.
+
+If you do not respond by $recruitmentcycle_januarydeadlinetime$ on this date, these offers will automatically be declined.
+
 ### $recruitmentcycle_deadlinedate$
 
-This is the last day you’ll be able to apply for a postgraduate teacher training courses starting in $recruitmentcycle_coursestart$. You must submit your application before $recruitmentcycle_deadlinetime$.
+This is the last day you’ll be able to apply for a postgraduate teacher training courses that start before the end of $recruitmentcycle_coursestart$. You must submit your application before $recruitmentcycle_deadlinetime$.
 
 ### $recruitmentcycle_providerdeadline$
 
-This is the last day for training providers to make a decision on all applications for courses starting in $recruitmentcycle_coursestart$. 
+This is the last day for training providers to make a decision on all applications for courses that start before the end of $recruitmentcycle_coursestart$. 
 
 If a decision has not been made before $recruitmentcycle_providerdeadline$, your applications will automatically be rejected so that you can start applying for next year’s courses in $recruitmentcycle_openingmonth$. 
 
