@@ -24,7 +24,7 @@ expander:
 
 For postgraduate teacher training courses starting in the $recruitmentcycle_academicyear$, you can apply $recruitmentcycle_openanddeadline$. 
 
-If any of the courses you have applied for start by the end of $recruitmentcycle_januarystart$, you must respond to any offers you receive by $recruitmentcycle_januarydeadlinetime$ on $recruitmentcycle_januarydeadlinedate$. If you do not respond by then, your offers will automatically be declined.
+If any of the courses you have applied for start by the end of $recruitmentcycle_januarycoursestart$, you must respond to any offers you receive by $recruitmentcycle_januarydeadlinetime$ on $recruitmentcycle_januarydeadlinedate$. If you do not respond by then, your offers will automatically be declined.
 
 You should check with training providers when applications close for each course. Some providers may close applications before these deadlines if a course fills up.
 
@@ -34,9 +34,9 @@ $application-deadlines$
 
 From $recruitmentcycle_openingdate$, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for a teacher training course</a>.
  
-You can apply to up to 4 courses at a time.  
+You can apply to up to 4 courses at a time. If an application becomes inactive because a provider has not made a decision after 30 days, or has become withdrawn or rejected, you can submit another one.
 
-Training providers should respond to your application within 30 days. If you do not receive a decision from your application after 30 days, you can submit an application for another course. 
+You can submit up to 15 applications in total for an academic year.
 
 It’s wise to apply as soon as you’re ready because:
 
@@ -55,7 +55,6 @@ $ukraine-inset$
 <br />
 $q-jacub-pask$
 <br />
-
 
 
 ## Deadlines for applications and training provider decisions 
