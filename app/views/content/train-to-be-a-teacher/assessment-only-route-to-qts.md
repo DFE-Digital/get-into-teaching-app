@@ -942,11 +942,11 @@ Fees may be paid by you or your school at the start of the programme. If you’r
 
 ## Eligibility for assessment only QTS
 
-To be eligible, you need (all of the following):
+To be eligible, you need:
 
 * to be able to show you meet the [teachers' standards](https://www.gov.uk/government/publications/teachers-standards) without any more training
 * to have 2 years of teaching experience
-* to have worked in 2 different schools or 1 school for 5 years
+* to have teaching experience at 2 different schools or 1 school for 5 years
 * a degree
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 
