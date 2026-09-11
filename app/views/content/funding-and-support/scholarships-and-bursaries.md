@@ -77,19 +77,36 @@ You need to apply directly to the scholarship provider. Each provider sets their
 
 ## Compare bursaries and scholarships
 
-| Subject                                                               | Bursary  | Scholarship      |
-|-----------------------------------------------------------------------| -------: | ---------------: |
-| **Biology**                                                           | $bursaries_postgraduate_biology$  |                  |
-| **Chemistry**                                                         | $bursaries_postgraduate_chemistry$  | $scholarships_chemistry$          |
-| **Computing**                                                         | $bursaries_postgraduate_computing$  | $scholarships_computing$          |
-| **Design and technology**                                             | $bursaries_postgraduate_designandtechnology$ | |
-| **Geography**                                                         | $bursaries_postgraduate_geography$  |                  |
-| **Languages**<br/> (French, German and Spanish only)                  | $bursaries_postgraduate_languagesfrenchgermanspanish$  | $scholarships_languagesfrenchgermanspanish$      |
-| **Languages**<br/> (all other languages, including ancient languages) | $bursaries_postgraduate_languagesother$  |                  |
-| **Maths**                                                             | $bursaries_postgraduate_maths$  |          |                |
-| **Physics**                                                           | $bursaries_postgraduate_physics$  | $scholarships_physics$        |
+You should read [LINK HERE](LINK HERE) to confirm which bursaries and scholarships your degree is eligible for.
 
-Table caption: Available postgraduate bursaries and scholarships
+| Subject   | Scholarship for a relevant degree      |
+|-----------|-------------------------------------------|
+| Chemistry | $postgraduate_scholarships_chemistry$|
+| Computing | $postgraduate_scholarships_computing$|
+| Physics   | $postgraduate_scholarships_physics$|
+
+Table caption: Scholarship amounts for subjects where funding depends on your degree
+
+| Subject               | Bursary for a relevant degree                         | Bursary for any degree               |
+|-----------------------|-----------------------------------------------------|--------------------------------------------------|
+| Chemistry             | $postgraduate_bursaries_chemistryrelevantdegree$                 | $postgraduate_bursaries_chemistryunrelatedegree$             |
+| Computing             | $postgraduate_bursaries_computingrelevantdegree$                 | $postgraduate_bursaries_computingunrelatedegree$             |
+| Design and technology | $postgraduate_bursaries_designandtechnologyrelevantdegree$       | $postgraduate_bursaries_designandtechnologyunrelatedegree$   |
+| Maths                 | $postgraduate_bursaries_mathsrelevantdegree$                     | $postgraduate_bursaries_mathsunrelatedegree$                 |
+| Physics               | $postgraduate_bursaries_physicsrelevantdegree$                   | $postgraduate_bursaries_physicsunrelatedegree$               |
+
+Table caption: Bursary amounts for subjects where funding depends on your degree
+
+| Subject | Scholarship | Bursary |
+|---------|------------|---------|
+| Languages (French, German and Spanish only) | $postgraduate_scholarships_languagesfrenchgermanspanish$ | $postgraduate_bursaries_languagesfrenchgermanspanish$|
+| Languages (all other languages, including ancient languages)|------|$postgraduate_bursaries_languagesother$|
+| Biology |----| $postgraduate_bursaries_biology$ |
+| Geography |----| $postgraduate_bursaries_geography$ |
+| Music |----| $postgraduate_bursaries_music$ |
+| Religious education |----| $postgraduate_bursaries_religiouseducation$ |
+
+Table caption: Scholarship and bursary amounts for subjects that do not require a relevant degree
 
 $subjects$
 
