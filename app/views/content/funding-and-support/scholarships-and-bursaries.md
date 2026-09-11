@@ -77,7 +77,7 @@ You need to apply directly to the scholarship provider. Each provider sets their
 
 ## Compare bursaries and scholarships
 
-You should read [LINK HERE](LINK HERE) to confirm which bursaries and scholarships your degree is eligible for.
+You should [read LINK HERE](LINK HERE) to confirm which bursaries and scholarships you are eligible for based on your degree.
 
 | Subject   | Scholarship for a relevant degree      |
 |-----------|-------------------------------------------:|
@@ -89,11 +89,11 @@ Table caption: Scholarship amounts for subjects where funding depends on your de
 
 | Subject               | Bursary for a relevant degree                         | Bursary for any degree               |
 |-----------------------|-----------------------------------------------------:|--------------------------------------------------:|
-| **Chemistry**             | $bursaries_postgraduate_chemistryrelevantdegree$                 | $bursaries_postgraduate_chemistryunrelatedegree$             |
-| **Computing**             | $bursaries_postgraduate_computingrelevantdegree$                 | $bursaries_postgraduate_computingunrelatedegree$             |
-| **Design and technology** | $bursaries_postgraduate_designandtechnologyrelevantdegree$       | $bursaries_postgraduate_designandtechnologyunrelatedegree$   |
-| **Maths**                 | $bursaries_postgraduate_mathsrelevantdegree$                     | $bursaries_postgraduate_mathsunrelatedegree$                 |
-| **Physics**               | $bursaries_postgraduate_physicsrelevantdegree$                   | $bursaries_postgraduate_physicsunrelatedegree$               |
+| **Chemistry**             | $bursaries_postgraduate_chemistryrelevantdegree$                 | $bursaries_postgraduate_chemistryunrelateddegree$             |
+| **Computing**             | $bursaries_postgraduate_computingrelevantdegree$                 | $bursaries_postgraduate_computingunrelateddegree$             |
+| **Design and technology** | $bursaries_postgraduate_designandtechnologyrelevantdegree$       | $bursaries_postgraduate_designandtechnologyunrelateddegree$   |
+| **Maths**                 | $bursaries_postgraduate_mathsrelevantdegree$                     | $bursaries_postgraduate_mathsunrelateddegree$                 |
+| **Physics**               | $bursaries_postgraduate_physicsrelevantdegree$                   | $bursaries_postgraduate_physicsunrelateddegree$               |
 
 Table caption: Bursary amounts for subjects where funding depends on your degree
 
