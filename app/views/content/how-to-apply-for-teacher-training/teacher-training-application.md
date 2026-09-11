@@ -59,7 +59,7 @@ $visas$
 
 ## When should I apply for teacher training? 
 
-You can start applying for courses from October, ready to start the following September (some courses may start at other points during the year). A small number of courses may start at other points during the year.
+You can start applying for courses from October, ready to start the following September. Some courses may start at other points during the year.
 
 It’s wise to apply as soon as you’re ready as:
 
