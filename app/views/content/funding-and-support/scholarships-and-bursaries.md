@@ -80,31 +80,31 @@ You need to apply directly to the scholarship provider. Each provider sets their
 You should read [LINK HERE](LINK HERE) to confirm which bursaries and scholarships your degree is eligible for.
 
 | Subject   | Scholarship for a relevant degree      |
-|-----------|-------------------------------------------|
-| Chemistry | $scholarships_chemistry$|
-| Computing | $scholarships_computing$|
-| Physics   | $scholarships_physics$|
+|-----------|-------------------------------------------:|
+| **Chemistry** | $scholarships_chemistry$|
+| **Computing** | $scholarships_computing$|
+| **Physics**   | $scholarships_physics$|
 
 Table caption: Scholarship amounts for subjects where funding depends on your degree
 
 | Subject               | Bursary for a relevant degree                         | Bursary for any degree               |
-|-----------------------|-----------------------------------------------------|--------------------------------------------------|
-| Chemistry             | $bursaries_postgraduate_chemistryrelevantdegree$                 | $bursaries_postgraduate_chemistryunrelatedegree$             |
-| Computing             | $bursaries_postgraduate_computingrelevantdegree$                 | $bursaries_postgraduate_computingunrelatedegree$             |
-| Design and technology | $bursaries_postgraduate_designandtechnologyrelevantdegree$       | $bursaries_postgraduate_designandtechnologyunrelatedegree$   |
-| Maths                 | $bursaries_postgraduate_mathsrelevantdegree$                     | $bursaries_postgraduate_mathsunrelatedegree$                 |
-| Physics               | $bursaries_postgraduate_physicsrelevantdegree$                   | $bursaries_postgraduate_physicsunrelatedegree$               |
+|-----------------------|-----------------------------------------------------:|--------------------------------------------------:|
+| **Chemistry**             | $bursaries_postgraduate_chemistryrelevantdegree$                 | $bursaries_postgraduate_chemistryunrelatedegree$             |
+| **Computing**             | $bursaries_postgraduate_computingrelevantdegree$                 | $bursaries_postgraduate_computingunrelatedegree$             |
+| **Design and technology** | $bursaries_postgraduate_designandtechnologyrelevantdegree$       | $bursaries_postgraduate_designandtechnologyunrelatedegree$   |
+| **Maths**                 | $bursaries_postgraduate_mathsrelevantdegree$                     | $bursaries_postgraduate_mathsunrelatedegree$                 |
+| **Physics**               | $bursaries_postgraduate_physicsrelevantdegree$                   | $bursaries_postgraduate_physicsunrelatedegree$               |
 
 Table caption: Bursary amounts for subjects where funding depends on your degree
 
 | Subject | Scholarship | Bursary |
-|---------|------------|---------|
-| Languages (French, German and Spanish only) | $scholarships_languagesfrenchgermanspanish$ | $bursaries_languagesfrenchgermanspanish$|
-| Languages (all other languages, including ancient languages)|------|$bursaries_postgraduate_languagesother$|
-| Biology |----| $bursaries_postgraduate_biology$ |
-| Geography |----| $bursaries_postgraduate_geography$ |
-| Music |----| $bursaries_postgraduate_music$ |
-| Religious education |----| $bursaries_postgraduate_religiouseducation$ |
+|---------|------------:|---------:|
+| **Languages**<br/>(French, German and Spanish only) | $scholarships_languagesfrenchgermanspanish$ | $bursaries_languagesfrenchgermanspanish$|
+| **Languages**<br/>(all other languages, including ancient languages)||$bursaries_postgraduate_languagesother$|
+| **Biology** || $bursaries_postgraduate_biology$ |
+| **Geography** || $bursaries_postgraduate_geography$ |
+| **Music** || $bursaries_postgraduate_music$ |
+| **Religious education (RE)** || $bursaries_postgraduate_religiouseducation$ |
 
 Table caption: Scholarship and bursary amounts for subjects that do not require a relevant degree
 
