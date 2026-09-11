@@ -99,7 +99,7 @@ Table caption: Bursary amounts for subjects where funding depends on your degree
 
 | Subject | Scholarship | Bursary |
 |---------|------------:|---------:|
-| **Languages**<br/>(French, German and Spanish only) | $scholarships_languagesfrenchgermanspanish$ | $bursaries_languagesfrenchgermanspanish$|
+| **Languages**<br/>(French, German and Spanish only) | $scholarships_languagesfrenchgermanspanish$ | $bursaries_postgraduate_languagesfrenchgermanspanish$|
 | **Languages**<br/>(all other languages, including ancient languages)||$bursaries_postgraduate_languagesother$|
 | **Biology** || $bursaries_postgraduate_biology$ |
 | **Geography** || $bursaries_postgraduate_geography$ |
