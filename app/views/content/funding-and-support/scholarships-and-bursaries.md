@@ -77,7 +77,7 @@ You need to apply directly to the scholarship provider. Each provider sets their
 
 ## Compare bursaries and scholarships
 
-You should [read LINK HERE](LINK HERE) to confirm which bursaries and scholarships you are eligible for based on your degree.
+[Read the funding guidance for initial teacher training](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2027-to-2028) to confirm which bursaries and scholarships you are eligible for based on your degree.
 
 | Subject   | Scholarship for a relevant degree      |
 |-----------|-------------------------------------------:|
