@@ -34,7 +34,7 @@ expander:
     title: student finance
     text: |-
       <p>
-      You are unlikely to get help funding your training unless you have permission to <a href="https://www.gov.uk/browse/visas-immigration/settle-in-the-uk">live permanently in the UK</a>, have refugee status, or are training to teach languages or physics. You will also need to meet some other eligibility requirements.
+      You are unlikely to get help funding your training unless you have permission to <a href="https://www.gov.uk/browse/visas-immigration/settle-in-the-uk">live permanently in the UK</a> or have refugee status. You will also need to meet some other eligibility requirements.
       <p>You may be eligible for financial support to train to teach if <a href="/non-uk-teachers/visas-for-non-uk-trainees">you are from Ukraine or Afghanistan and on certain visas</a>.</p>
       <p>If you are in <a href="https://www.gov.uk/claim-asylum">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you are unlikely to be eligible for financial support.
       <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
