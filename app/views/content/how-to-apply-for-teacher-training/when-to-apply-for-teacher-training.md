@@ -44,7 +44,7 @@ It’s wise to apply as soon as you’re ready because:
   <li>this will give you time to plan how you <a href="/funding-and-support">fund your training</a></li>
 </ul>
 
-You can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
+If you're applying to teach a secondary subject, you can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to help you write a strong application.
 
 $ukraine-inset$
 
