@@ -22,7 +22,13 @@ expander:
     text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you are moving to the UK from Ukraine</a>.
 ---
 
-You can apply for postgraduate teacher training courses starting in $recruitmentcycle_coursestart$ $recruitmentcycle_openanddeadline$. 
+You can apply for postgraduate teacher training courses starting $recruitmentcycle_openingdateandtime$. 
+
+If any of the courses you have applied for start by the end of $recruitmentcycle_januarycoursestart$, you must respond to any offers you receive by $recruitmentcycle_januarydeadlinetime$ on $recruitmentcycle_januarydeadlinedate$. If you do not respond by then, your offers will automatically be declined.
+
+For teacher training courses that start by the end of $recruitmentcycle_coursestart$, you have until $recruitmentcycle_deadlinetime$ on $recruitmentcycle_deadlinedate$ to submit your application.
+
+You should check with training providers when applications close for each course. Some providers may close applications before these deadlines if a course fills up.
 
 $application-deadlines$
 
@@ -30,9 +36,9 @@ $application-deadlines$
 
 From $recruitmentcycle_openingdate$, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for a teacher training course</a>.
  
-You can apply to up to 4 courses at a time.  
+You can apply to up to 4 courses at a time. If an application becomes inactive because a provider has not made a decision after 30 days, or has become withdrawn or rejected, you can submit another one.
 
-Training providers should respond to your application within 30 days. If you do not receive a decision from your application after 30 days, you can submit an application for another course. 
+You can submit up to 15 applications in total for an academic year.
 
 It’s wise to apply as soon as you’re ready because:
 
@@ -53,16 +59,25 @@ $q-jacub-pask$
 <br />
 
 
-
 ## Deadlines for applications and training provider decisions 
+
+### $recruitmentcycle_januaryproviderdeadline$
+
+This is the last day for training providers to make a decision on all applications (including those at interview stage) for courses that start before the end of $recruitmentcycle_januarycoursestart$.
+
+### $recruitmentcycle_januarydeadlinedate$
+
+This is the last day you'll be able to respond to any received offers for courses that start before the end of $recruitmentcycle_januarycoursestart$.
+
+If you do not respond by $recruitmentcycle_januarydeadlinetime$ on this date, these offers will automatically be declined.
 
 ### $recruitmentcycle_deadlinedate$
 
-This is the last day you’ll be able to apply for a postgraduate teacher training courses starting in $recruitmentcycle_coursestart$. You must submit your application before $recruitmentcycle_deadlinetime$.
+This is the last day you’ll be able to apply for a postgraduate teacher training courses that start before the end of $recruitmentcycle_coursestart$. You must submit your application before $recruitmentcycle_deadlinetime$.
 
 ### $recruitmentcycle_providerdeadline$
 
-This is the last day for training providers to make a decision on all applications for courses starting in $recruitmentcycle_coursestart$. 
+This is the last day for training providers to make a decision on all applications for courses that start before the end of $recruitmentcycle_coursestart$. 
 
 If a decision has not been made before $recruitmentcycle_providerdeadline$, your applications will automatically be rejected so that you can start applying for next year’s courses in $recruitmentcycle_openingmonth$. 
 
