@@ -73,7 +73,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
       end
 
       it "substitutes the variable for a value in funding content" do
-        expect(page).to have_text("Bursaries of £29,000 are available.")
+        expect(page).to have_text("Bursaries of up to £20,000 are available.")
       end
     end
   end
