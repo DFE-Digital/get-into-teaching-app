@@ -10,7 +10,7 @@ finance:
     postgraduatemaxfulltime: £9,790
     postgraduatemaxparttime: £7,335
 # parents and carers
-  parentsacademicyear: 2025 to 2026 academic year
+  parentsacademicyear: 2026 to 2027 academic year
   parentslearningallowance:
     min: £50
     max: £2,024
@@ -22,5 +22,5 @@ finance:
     one: £199.62
     twoplus: £342.24
 # disability
-  dsaacademicyear: 2025 to 2026 academic year
+  dsaacademicyear: 2026 to 2027 academic year
   disabilityadditionalfunding: £27,783
