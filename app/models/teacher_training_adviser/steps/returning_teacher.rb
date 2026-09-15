@@ -7,7 +7,6 @@ module TeacherTrainingAdviser::Steps
 
     validates :type_id, pick_list_items: { method: :get_candidate_types }
 
-    RTTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_009 # Return to Teacher Training Adviser Service
     TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_010 # Teacher Training Adviser Service
     ETA_DEFAULT_CREATION_CHANNEL_SERVICE_ID = 222_750_005 # Explore Teaching Adviser Service (not in final year of degree)
 
@@ -29,7 +28,7 @@ module TeacherTrainingAdviser::Steps
       elsif !creation_channel_service_id.in?(creation_channel_service_ids)
         # otherwise set the new creation_channel fields and set the legacy channel_id to be nil
 
-        self.creation_channel_service_id = returning_to_teaching ? RTTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID : TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
+        self.creation_channel_service_id = TTA_DEFAULT_CREATION_CHANNEL_SERVICE_ID
       end
       super
     end

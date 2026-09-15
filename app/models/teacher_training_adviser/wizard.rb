@@ -28,49 +28,32 @@ module TeacherTrainingAdviser
       Steps::Authenticate,
       Steps::AlreadySignedUp,
       Steps::ReturningTeacher,
-      Steps::HasTeacherId,
-      Steps::PreviousTeacherId,
-      Steps::PaidTeachingExperienceInUk,
-      Steps::TrainToTeachInUk,
       Steps::NotEligible,
-      Steps::StageTrained,
-      Steps::SubjectTrained,
-      Steps::StageTaught,
-      Steps::SubjectTaught,
       Steps::DegreeStatus,
       Steps::NoDegree,
       Steps::DegreeCountry,
-
       Steps::WhatSubjectDegree,
       Steps::WhatDegreeClass,
       Steps::RequiredDegreeClass,
       Steps::LifeStage,
       Steps::StageInterestedTeaching,
+      Steps::NotEligible2,
       Steps::GcseMathsEnglish,
       Steps::RetakeGcseMathsEnglish,
-      Steps::GcseScience,
-      Steps::RetakeGcseScience,
       Steps::QualificationRequired,
       Steps::SubjectInterestedTeaching,
       Steps::StartTeacherTraining,
-      Steps::SubjectLikeToTeach,
-
       Steps::DateOfBirth,
-
       Steps::Citizenship,
       Steps::VisaStatus,
-
       Steps::Location,
-
       Steps::UkAddress,
       Steps::UkTelephone,
       Steps::OverseasCountry,
       Steps::OverseasTelephone,
-
       Steps::UkCallback,
       Steps::OverseasTimeZone,
       Steps::OverseasCallback,
-
       Steps::ReviewAnswers,
     ].freeze
 

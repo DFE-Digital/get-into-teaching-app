@@ -84,16 +84,20 @@ RSpec.describe TeacherTrainingAdviser::Steps::ReturningTeacher do
       let(:creation_channel_source_id) { 222_750_003 }
       let(:creation_channel_activity_id) { 222_750_004 }
 
-      it "sets the default creation_channel_service_id to TTA if they are new" do
-        subject.type_id = 222_750_000
-        subject.save
-        expect(subject.creation_channel_service_id).to eq(222_750_010)
+      context "when a new teacher" do
+        it "sets the default creation_channel_service_id to TTA" do
+          subject.type_id = 222_750_000
+          subject.save
+          expect(subject.creation_channel_service_id).to eq(222_750_010)
+        end
       end
 
-      it "sets the default creation_channel_service_id to RTTA if they are returning" do
-        subject.type_id = 222_750_001
-        subject.save
-        expect(subject.creation_channel_service_id).to eq(222_750_009)
+      context "when a returning teacher" do
+        it "sets the default creation_channel_service_id to TTA" do
+          subject.type_id = 222_750_001
+          subject.save
+          expect(subject.creation_channel_service_id).to eq(222_750_010)
+        end
       end
 
       it "preserves the creation_channel_service_id if already set" do

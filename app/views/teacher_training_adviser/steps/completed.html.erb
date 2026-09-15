@@ -1,37 +1,6 @@
 <section class="registration__teacher-training-adviser" data-sub-channel-id="<%= session.dig("sign_up", "sub_channel_id") %>">
 
-<% if @returner %>
-  <h1 class="heading-l heading--box-gitlilac"><%= @first_name %>, you're signed up.</h1>
-
-  <h2 class="govuk-heading-m">What happens next?</h2>
-
-  <p>
-    A return to teaching adviser will email you within 10 working days to outline your next steps. Make sure you check your junk or spam folders.
-  </p>
-
-  <p> You need to reply to the email to be assigned an adviser.
-  </p>
-
-  <p>
-    If you have any questions or you need to update any of the information you provided, call us on <a href="tel:08003892500">0800 389 2500</a> Monday to Friday between 8:30am and 5:30pm, except on <%= link_to("bank holidays", "https://www.gov.uk/bank-holidays") %>.
-  </p>
-
-  <h2 class="govuk-heading-m">Get support returning to teaching</h2>
-
-  <p>Read our helpful guidance about <%= link_to "returning to teaching", "https://teaching-vacancies.service.gov.uk/jobseeker-guides/return-to-teaching-in-england/return-to-teaching/" %>, including:</p>
-
-  <ul>
-    <li>catching up on changes in teaching</li>
-    <li>using the initial teacher training early career framework resources</li>
-    <li>finding a teaching role at the right school</li>
-    <li>applying for a teaching job</li>
-  </ul>
-
-  <p>You can also <%= link_to("find teaching jobs in England", "https://teaching-vacancies.service.gov.uk/") %>.</p>
-
-  <p>Or <%= link_to("find out more about teaching in England if you trained outside the UK", "/non-uk-teachers/teach-in-england-if-you-trained-overseas") %>.</p>
-
-<% elsif @callback_booked %>
+<% if @callback_booked %>
     <h1 class="heading-l heading--box-green"><%= @first_name %>, we'll call you to check your degree</h1>
 
     <% if @callback_date %>
