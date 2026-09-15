@@ -43,15 +43,19 @@ All salaried courses are broadly the same, but the course length and qualificati
 
 These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries or scholarships to help fund fee-paying courses](/funding-and-support/scholarships-and-bursaries).
 
+## What school experience is required for salaried courses?
+
+This will depend on the teacher training course you're applying for. For some salaried courses, teacher training providers require you to have significant teaching or school experience, for example, if you're already working as an unqualified teacher or teaching assistant. 
+
+Some providers will also want you to have already arranged a school to work in while you train. If it's unclear from the website what the provider's course requirements are, you should get in touch with them to ask for more information.
+
 ## Am I eligible for a postgraduate salaried teacher training course? 
 
-For some salaried courses, teacher training providers may want you to have significant teaching or school experience, for example, if you’re already working as an unqualified teacher or teaching assistant.  
-
-Some providers will also want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are. 
+To find out if you're eligible for a course you're applying for, you should review the course requirements. 
 
 You can also [find out more about the qualifications you need to train to teach](/train-to-be-a-teacher/qualifications-you-need-to-teach). 
 
-Or talk to a [teacher training adviser](/teacher-training-advisers) who can help you understand which courses you could be eligible for. 
+You may also be able to get a [teacher training adviser](/teacher-training-advisers) who can help you understand which courses you could be eligible for. 
 
 $salaried-teacher-training$
 
