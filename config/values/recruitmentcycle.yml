@@ -1,13 +1,13 @@
 recruitmentcycle:
   coursestart: September 2027
-  openanddeadline: from 9am on 6 October 2026 to 6pm on 21 September 2027
+#  openanddeadline: from 9am on 6 October 2026 to 6pm on 21 September 2027
   openingdate: 6 October 2026
   openingdateandtime: from 9am on 6 October 2026
   openingmonth: October
   deadlinedate: 21 September 2027
   deadlinetime: 6pm
   providerdeadline: 29 September 2027
-  academicyear: 2027 to 2028 academic year
+#  academicyear: 2027 to 2028 academic year
   januarycoursestart: January 2027
   januaryproviderdeadline: 20 January 2027
   januarydeadlinedate: 24 January 2027
