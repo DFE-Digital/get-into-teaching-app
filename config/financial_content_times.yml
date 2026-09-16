@@ -1,0 +1,7 @@
+financial_content_times:
+  - key: "2026"
+    valid_from: "2026-10-06"
+    valid_to:
+  - key: "2025"
+    valid_from:
+    valid_to: "2026-09-28"

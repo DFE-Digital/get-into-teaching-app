@@ -36,6 +36,7 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
   * [Insets and expander components for non-UK content](#insets-and-expander-components-for-non-uk-content)
   * [Using the same content across multiple pages - partial](#using-the-same-content-across-multiple-pages-partials)
   * [Values](#values)
+  * [Timed financial content component](#timed-financial-content-component)
 * [Creating a new page](#creating-a-new-page)
 * [Creating a subject page](#creating-a-subject-page)
 * [Creating an inspirational page](#creating-an-inspiration-page)
@@ -902,6 +903,64 @@ en:
 A list of the current values available on the site can be viewed at the `/values` endpoint.
 
 Values should be named using only _lowercase_ characters `a` to `z`, the numbers `0` to `9`, and the underscore `_` character. Unsupported characters such as the hyphen `-` are converted into underscores.
+
+### Timed financial content component
+
+Some financial content changes with each recruitment cycle. Bursary and scholarship amounts are an example. The timed financial content component shows the right content for the current date. It swaps the content automatically when the cycle dates change. You do not have to edit the page on the day the new cycle starts.
+
+You set up the component in the frontmatter. You give it a placeholder name. You then reference the placeholder in the page as `$placeholder$`.
+
+The component chooses content based on the current date. The dates for each cycle are set in the `config/financial_content_times.yml` file. Each entry in that file has a `key`, a `valid_from` date and a `valid_to` date. A developer manages this file.
+
+Each `key` matches a branch in your frontmatter. For example, the `2025` key matches the `2025` branch. The component finds the branch for today's date. It then shows that branch.
+
+You must always include a `default` branch. The component shows the `default` branch when no other branch matches today's date. This happens in the gap between two cycles.
+
+Each branch shows either `text` or a `partial`:
+
+* Use `text` for a short piece of text.
+* Use `partial` to show a shared content file, for example a table.
+
+If a branch has both `text` and a `partial`, the component shows the `partial`.
+
+You can use Markdown in a `text` value. For example, you can add a link, bold text or a list. A `text` value can also cover more than one line. Start a multi-line value with `|-`. Then write each line below it, indented under the `text` key:
+
+```yaml
+    default:
+      text: |-
+        Some **bold** text and a [link](/events).
+
+        - a list item
+        - another list item
+```
+
+Here is an example:
+
+```yaml
+---
+timed_financial_content:
+  compare_bursaries_and_scholarships:
+    default:
+      text: "Default text for times that we don't have specific content."
+    2025:
+      text: "Relevant text for 2025"
+      partial: "content/funding-and-support/scholarships-and-bursaries/2025_compare_bursaries_and_scholarships"
+    2026:
+      text: "Relevant text for 2026"
+---
+
+# My page
+
+$compare_bursaries_and_scholarships$
+```
+
+In this example:
+
+* Before the 2026 cycle opens, the page shows the `2025` partial.
+* When the 2026 cycle opens, the page shows the `2026` text.
+* In the gap between the two cycles, the page shows the `default` text.
+
+The branch keys and their dates are managed by a developer. If you need a new cycle date, ask a developer to update `config/financial_content_times.yml`.
 
 ## Creating a new page
 

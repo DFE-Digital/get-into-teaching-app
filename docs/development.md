@@ -95,3 +95,7 @@ There are a couple of aspects to be aware of when developing on the Get into Tea
 1. Data pulled from the GiT API will be cached for up to 10 minutes; there is a 5m TTL of non-candidate data returned from the API and the API updates from the CRM every 5 minutes.
 1. Not so much a technical point, but a domain quirk to be aware of; any teaching event can be flagged as 'online'. There is also a separate category/type of teaching event which is 'online'.
 1. The sign up journeys leverage a `git_wizard` gem; its currently only used by the Get into Teaching website and Get an adviser service so it can be changed freely/without worry of effecting other teams. Soon only the Get into Teaching website will use this gem so we may want to bring it into the codebase for ease of maintenance.
+
+## Guides
+
+* [Creating a content component](development/content-components.md): how to add a new ViewComponent that can be rendered inside Markdown content pages.
