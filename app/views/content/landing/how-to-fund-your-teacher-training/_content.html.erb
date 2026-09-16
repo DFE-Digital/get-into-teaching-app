@@ -2,40 +2,125 @@
   <section class="col col-720">
     <h2 class="heading--box-gitlilac">How can I fund my teacher training?</h2>
     <div class="inset">
-      <p> | Subject   | Scholarship for a relevant degree      |
-|-----------|-------------------------------------------:|
-| **Chemistry** | $scholarships_chemistry$|
-| **Computing** | $scholarships_computing$|
-| **Physics**   | $scholarships_physics$|
+      <table class="first-column-headings right-aligned-values">
+      <caption class="govuk-table__caption govuk-table__caption--m">Scholarship amounts for subjects where funding depends on your degree</caption>
+  <thead>
+          <tr>
+            <th scope="col">Subject</th>
+            <th scope="col">Scholarship</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chemistry</td>
+            <td><%= v :scholarships_chemistry %></td>
+          </tr>
+          <tr>
+            <td>Computing</td>
+            <td><%= v :scholarships_computing %></td>
+          </tr>
+          <tr>
+            <td>Physics</td>
+            <td><%= v :scholarships_physics %></td>
+         </tbody>
+</table>
 
-Table caption: Scholarship amounts for subjects where funding depends on your degree
+<p> 
+<%= link_to("Find out more about how to get a bursary or scholarship", page_path("funding-and-support/scholarships-and-bursaries")) %>.
+</p>
 
-| Subject               | Bursary for a relevant degree                         | Bursary for any degree               |
-|-----------------------|-----------------------------------------------------:|--------------------------------------------------:|
-| **Chemistry**             | $bursaries_postgraduate_chemistryrelevantdegree$                 | $bursaries_postgraduate_chemistryunrelateddegree$             |
-| **Computing**             | $bursaries_postgraduate_computingrelevantdegree$                 | $bursaries_postgraduate_computingunrelateddegree$             |
-| **Design and technology** | $bursaries_postgraduate_designandtechnologyrelevantdegree$       | $bursaries_postgraduate_designandtechnologyunrelateddegree$   |
-| **Maths**                 | $bursaries_postgraduate_mathsrelevantdegree$                     | $bursaries_postgraduate_mathsunrelateddegree$                 |
-| **Physics**               | $bursaries_postgraduate_physicsrelevantdegree$                   | $bursaries_postgraduate_physicsunrelateddegree$               |
+</div>
+</section>
+</div>
 
-Table caption: Bursary amounts for subjects where funding depends on your degree
+<table class="first-column-headings right-aligned-values">
+  <caption class="govuk-table__caption govuk-table__caption--m">
+    Bursary amounts for subjects where funding depends on your degree
+  </caption>
 
-| Subject | Scholarship | Bursary |
-|---------|------------:|---------:|
-| **Languages**<br/>(French, German and Spanish only) | $scholarships_languagesfrenchgermanspanish$ | $bursaries_postgraduate_languagesfrenchgermanspanish$|
-| **Languages**<br/>(all other languages, including ancient languages)||$bursaries_postgraduate_languagesother$|
-| **Biology** || $bursaries_postgraduate_biology$ |
-| **Geography** || $bursaries_postgraduate_geography$ |
-| **Music** || $bursaries_postgraduate_music$ |
-| **Religious education (RE)** || $bursaries_postgraduate_religiouseducation$ |
+  <thead>
+    <tr>
+      <th scope="col">Subject</th>
+      <th scope="col">Bursary for a relevant degree</th>
+      <th scope="col">Bursary for any degree</th>
+    </tr>
+  </thead>
 
-Table caption: Scholarship and bursary amounts for subjects that do not require a relevant degree </p>
+  <tbody>
+    <tr>
+      <td>Chemistry</td>
+      <td><%= v :bursaries_postgraduate_chemistryrelevantdegree %></td>
+      <td><%= v :bursaries_postgraduate_chemistryunrelateddegree %></td>
+    </tr>
+    <tr>
+      <td>Computing</td>
+      <td><%= v :bursaries_postgraduate_computingrelevantdegree %></td>
+      <td><%= v :bursaries_postgraduate_computingunrelateddegree %></td>
+    </tr>
+    <tr>
+      <td>Design and technology</td>
+      <td><%= v :bursaries_postgraduate_designandtechnologyrelevantdegree %></td>
+      <td><%= v :bursaries_postgraduate_designandtechnologyunrelateddegree %></td>
+    </tr>
+    <tr>
+      <td>Maths</td>
+      <td><%= v :bursaries_postgraduate_mathsrelevantdegree %></td>
+      <td><%= v :bursaries_postgraduate_mathsunrelateddegree %></td>
+    </tr>
+    <tr>
+      <td>Physics</td>
+      <td><%= v :bursaries_postgraduate_physicsrelevantdegree %></td>
+      <td><%= v :bursaries_postgraduate_physicsunrelateddegree %></td>
+    </tr>
+  </tbody>
+</table>
 
-$subjects$
+<table class="first-column-headings right-aligned-values">
+  <caption class="govuk-table__caption govuk-table__caption--m">
+    Scholarship and bursary amounts for subjects that do not require a relevant degree
+  </caption>
 
-      <p><%= link_to("Find out more about how to get a bursary or scholarship", page_path("funding-and-support/scholarships-and-bursaries")) %>.</p>
-    </div>
-  </section>
+  <thead>
+    <tr>
+      <th scope="col">Subject</th>
+      <th scope="col">Scholarship</th>
+      <th scope="col">Bursary</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Languages<br>(French, German and Spanish only)</td>
+      <td><%= v :scholarships_languagesfrenchgermanspanish %></td>
+      <td><%= v :bursaries_postgraduate_languagesfrenchgermanspanish %></td>
+    </tr>
+    <tr>
+      <td>Languages<br>(all other languages, including ancient languages)</td>
+      <td></td>
+      <td><%= v :bursaries_postgraduate_languagesother %></td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td></td>
+      <td><%= v :bursaries_postgraduate_biology %></td>
+    </tr>
+    <tr>
+      <td>Geography</td>
+      <td></td>
+      <td><%= v :bursaries_postgraduate_geography %></td>
+    </tr>
+    <tr>
+      <td>Music</td>
+      <td></td>
+      <td><%= v :bursaries_postgraduate_music %></td>
+    </tr>
+    <tr>
+      <td>Religious education (RE)</td>
+      <td></td>
+      <td><%= v :bursaries_postgraduate_religiouseducation %></td>
+    </tr>
+  </tbody>
+</table>
 
   <section class="col col-720">
     <h2 class="heading--box-gitlilac">More financial support</h2>
