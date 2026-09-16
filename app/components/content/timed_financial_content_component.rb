@@ -3,7 +3,7 @@
 module Content
   class TimedFinancialContentComponent < ViewComponent::Base
     def self.content_dates
-      content_times_path = Rails.root.join("config/values/financial_content_times.yml")
+      content_times_path = Rails.root.join("config/financial_content_times.yml")
       @content_dates ||= YAML.safe_load_file(content_times_path).fetch("financial_content_times").map do |entry|
         {
           key: entry["key"].to_s,

@@ -910,7 +910,7 @@ Some financial content changes with each recruitment cycle. Bursary and scholars
 
 You set up the component in the frontmatter. You give it a placeholder name. You then reference the placeholder in the page as `$placeholder$`.
 
-The component chooses content based on the current date. The dates for each cycle are set in the `config/values/financial_content_times.yml` file. Each entry in that file has a `key`, a `valid_from` date and a `valid_to` date. A developer manages this file.
+The component chooses content based on the current date. The dates for each cycle are set in the `config/financial_content_times.yml` file. Each entry in that file has a `key`, a `valid_from` date and a `valid_to` date. A developer manages this file.
 
 Each `key` matches a branch in your frontmatter. For example, the `2025` key matches the `2025` branch. The component finds the branch for today's date. It then shows that branch.
 
@@ -960,7 +960,7 @@ In this example:
 * When the 2026 cycle opens, the page shows the `2026` text.
 * In the gap between the two cycles, the page shows the `default` text.
 
-The branch keys and their dates are managed by a developer. If you need a new cycle date, ask a developer to update `config/values/financial_content_times.yml`.
+The branch keys and their dates are managed by a developer. If you need a new cycle date, ask a developer to update `config/financial_content_times.yml`.
 
 ## Creating a new page
 
