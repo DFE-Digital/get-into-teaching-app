@@ -7,7 +7,7 @@ module Content
     include ContentHelper
 
     def initialize(
-      title:, text:, header: "Non-UK citizens:",
+      title:, text: nil, header: "Non-UK citizens:",
       link_title: nil,
       link_url: nil,
       background: "gitpink",
@@ -26,8 +26,17 @@ module Content
       @classes = classes
 
       fail(ArgumentError, "title must be present") if title.blank?
-      fail(ArgumentError, "text must be present") if text.blank?
       fail(ArgumentError, "background must be a valid value") unless %w[purple gitpink].any?(background)
+    end
+
+    def render_content
+      fail(ArgumentError, "text or content must be present") if text.blank? && content.blank?
+
+      if content.present?
+        tag.div helpers.safe_html_format substitute_values(content)
+      else
+        tag.p helpers.safe_html_format text
+      end
     end
 
     def show_link?
