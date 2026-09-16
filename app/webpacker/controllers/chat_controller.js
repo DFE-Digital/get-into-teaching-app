@@ -18,8 +18,14 @@ export default class extends Controller {
 
   connect() {
     this.unavailableTarget.classList.add('hidden');
-    // We set the initial state of the chat on the server side to reduce requests
+
+    // We set the initial state of the chat on the server side
     this.toggleState(this.isChatInitiallyAvailable());
+
+    // However, because of full-page caching issues, we need to do a refresh a few seconds after the page loads
+    this.initialRefresh();
+
+    // Followed by regular (every minute or so) refreshes to see if the status has changed
     if (this.hasRefreshIntervalValue) {
       this.startRefreshing();
     }
@@ -66,12 +72,22 @@ export default class extends Controller {
     }
   }
 
-  // add a couple of seconds of random jitter to the refresh cycle to smooth out traffic
+  initialRefresh() {
+    this.refreshTimer = setTimeout(
+      () => {
+        this.setChatState();
+      },
+      // add a couple of seconds of random jitter to the refresh cycle to smooth out traffic
+      2000 + Math.floor(Math.random() * 3000),
+    );
+  }
+
   startRefreshing() {
     this.refreshTimer = setInterval(
       () => {
         this.setChatState();
       },
+      // add a couple of seconds of random jitter to the refresh cycle to smooth out traffic
       this.refreshIntervalValue + Math.floor(Math.random() * 3000),
     );
   }
