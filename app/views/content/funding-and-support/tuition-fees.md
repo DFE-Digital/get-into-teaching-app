@@ -22,7 +22,12 @@ expander:
       </p>
       <p>
       Find out more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.</p>
-
+timed_financial_content:
+  interested_subjects:
+    default:
+      text: "If you're interested in teaching certain subjects, you might be able to [get a tax-free bursary or scholarship](/funding-and-support/scholarships-and-bursaries) to support you while you're training."
+    2025:
+      text: "If you're interested in teaching certain subjects, you might be able to [get a tax-free bursary or scholarship](/funding-and-support/scholarships-and-bursaries) of up to $scholarships_generic_maxshortened$ to support you while you're training."
 ---
 For most postgraduate teacher training courses in England you need to pay a tuition fee. 
 
@@ -40,4 +45,4 @@ $postgraduate-fees$
 ## Additional costs
 You’ll also need to be able to cover your living costs and any travel expenses if you need to travel to school placements. Find out about [student finance for teacher training](/funding-and-support/tuition-fee-and-maintenance-loans).
 
-If you're interested in teaching certain subjects, you might be able to [get a tax-free bursary or scholarship](/funding-and-support/scholarships-and-bursaries) of up to $scholarships_generic_maxshortened$ to support you while you're training.
+$interested_subjects$
