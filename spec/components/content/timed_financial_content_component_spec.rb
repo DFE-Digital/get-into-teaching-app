@@ -164,4 +164,17 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
       end
     end
   end
+
+  describe "the configured content dates" do
+    it "has a valid_from that is before the valid_to (nils are allowed for either)" do
+      described_class.content_dates.each do |content_date|
+        valid_from = content_date[:valid_from]
+        valid_to = content_date[:valid_to]
+
+        next if valid_from.nil? || valid_to.nil?
+
+        expect(valid_from).to be < valid_to
+      end
+    end
+  end
 end
