@@ -70,7 +70,7 @@ en:
         name: "Chemistry"
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
-        funding: "Scholarships of %{scholarships_chemistry} or bursaries up to %{bursaries_postgraduate_chemistryrelevantdegree} are available for trainee chemistry teachers if you're eligible."
+        funding: "Scholarships of %{scholarships_chemistry} or bursaries of up to %{bursaries_postgraduate_chemistryrelevantdegree} are available for trainee chemistry teachers if you're eligible."
       citizenship:
         name: "Citizenship"
         group: "Secondary"
@@ -94,7 +94,7 @@ en:
         name: "Computing"
         group: "Secondary"
         sub_head: "Computing - Secondary"
-        funding: "Scholarships of %{scholarships_computing} or bursaries up to %{bursaries_postgraduate_computingrelevantdegree} are available for trainee computing teachers if you're eligible."
+        funding: "Scholarships of %{scholarships_computing} or bursaries of up to %{bursaries_postgraduate_computingrelevantdegree} are available for trainee computing teachers if you're eligible."
       dance:
         name: "Dance"
         group: "Secondary"
@@ -152,7 +152,7 @@ en:
         name: "Maths"
         group: "Secondary"
         sub_head: "Maths - Secondary"
-        funding: "Bursaries up to %{bursaries_postgraduate_mathsrelevantdegree} are available for trainee maths teachers if you're eligible."
+        funding: "Bursaries of up to %{bursaries_postgraduate_mathsrelevantdegree} are available for trainee maths teachers if you're eligible."
       music:
         name: "Music"
         group: "Secondary"
@@ -167,7 +167,7 @@ en:
         name: "Physics"
         group: "Secondary"
         sub_head: "Physics - Secondary"
-        funding: "Scholarships of %{scholarships_physics} or bursaries up to %{bursaries_postgraduate_physicsrelevantdegree} are available for trainee physics teachers if you're eligible."
+        funding: "Scholarships of %{scholarships_physics} or bursaries of up to %{bursaries_postgraduate_physicsrelevantdegree} are available for trainee physics teachers if you're eligible."
       psychology:
         name: "Psychology"
         group: "Secondary"
