@@ -923,6 +923,17 @@ Each branch shows either `text` or a `partial`:
 
 If a branch has both `text` and a `partial`, the component shows the `partial`.
 
+You can use Markdown in a `text` value. For example, you can add a link, bold text or a list. A `text` value can also cover more than one line. Start a multi-line value with `|-`. Then write each line below it, indented under the `text` key:
+
+```yaml
+    default:
+      text: |-
+        Some **bold** text and a [link](/events).
+
+        - a list item
+        - another list item
+```
+
 Here is an example:
 
 ```yaml
