@@ -127,9 +127,7 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
   end
 
   describe "rendering a partial instead of text" do
-    let(:partial) do
-      "content/funding-and-support/scholarships-and-bursaries/2025_compare_bursaries_and_scholarships"
-    end
+    let(:partial) { "content/shared/qualifications-training/get_school_experience" }
 
     it "renders the branch partial when one is configured" do
       component = described_class.new(
@@ -140,14 +138,14 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
 
       rendered = render_inline(component).to_html
 
-      expect(rendered).to include("Compare bursaries and scholarships")
+      expect(rendered).to include("Get school experience")
       expect(rendered).not_to include("2025 copy")
     end
 
     it "renders the default partial when the default branch is selected" do
       component = described_class.new(now: now_in_gap, default: { partial: partial })
 
-      expect(render_inline(component).to_html).to include("Compare bursaries and scholarships")
+      expect(render_inline(component).to_html).to include("Get school experience")
     end
   end
 
