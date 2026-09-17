@@ -149,6 +149,51 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
     end
   end
 
+  # Branch text is rendered as markdown, and $token$ placeholders are
+  # substituted for their values, so it reads the same as when the component was
+  # baked into the page and processed by the markdown pipeline.
+  describe "rendering text" do
+    it "renders the text as markdown" do
+      component = described_class.new(
+        now: now_in_gap,
+        default: { text: "Some **bold** and a [link](/events)." },
+      )
+
+      html = render_inline(component).to_html
+
+      expect(html).to include("<strong>bold</strong>")
+      expect(html).to include('<a href="/events">link</a>')
+    end
+
+    it "substitutes $token$ placeholders for their values" do
+      allow(Value).to receive(:get).with("myamount").and_return("£9,000")
+      component = described_class.new(now: now_in_gap, default: { text: "You get $myamount$ a year." })
+
+      expect(render_inline(component).to_html).to include("You get £9,000 a year.")
+    end
+
+    it "emits text that is already html_safe as-is (e.g. from ERB)" do
+      safe = "<em>already safe</em>".html_safe
+      component = described_class.new(now: now_in_gap, default: { text: safe })
+
+      expect(render_inline(component).to_html).to include("<em>already safe</em>")
+    end
+
+    it "does not wrap single-paragraph text in a <p> so it composes inline" do
+      component = described_class.new(now: now_in_gap, default: { text: "Just one line." })
+
+      expect(render_inline(component).to_html.strip).to eq("Just one line.")
+    end
+
+    it "keeps paragraph tags for multi-paragraph text" do
+      component = described_class.new(now: now_in_gap, default: { text: "First para.\n\nSecond para." })
+
+      html = render_inline(component).to_html
+      expect(html).to include("<p>First para.</p>")
+      expect(html).to include("<p>Second para.</p>")
+    end
+  end
+
   describe "the default value for now" do
     it "uses Time.current when no now argument is supplied" do
       travel_to now_in_2026_window do
@@ -261,9 +306,16 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
           expect(rendered).not_to include("Default copy")
         end
       end
+
+      it "falls back to the date when the param is a non-string shape (e.g. ?now[]=x)" do
+        with_request_url("/?now[]=2026-11-01") do
+          expect(rendered).to include("2025 copy")
+          expect(rendered).not_to include("Default copy")
+        end
+      end
     end
 
-    context "only in local environments" do
+    context "when the environment is not local (e.g. production)" do
       before { allow(Rails.env).to receive(:local?).and_return(false) }
 
       it "ignores the branch param and uses the date-based selection" do

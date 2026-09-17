@@ -117,10 +117,9 @@ module TemplateHandlers
 
     # Records the component so it can be rendered at request time and leaves a
     # placeholder in the markdown. An empty block-level <div> is used because
-    # Kramdown, Rinku and the table caption pass all leave it verbatim and,
-    # unlike a bare token or an HTML comment, Kramdown neither escapes it nor
-    # wraps it in a paragraph - so replacing it keeps the surrounding markup
-    # identical to a baked render.
+    # Kramdown, Rinku and the table caption pass all leave it verbatim when the
+    # token is alone on its own line. The per-compile nonce makes it impossible
+    # for authored page content to collide with a marker.
     def runtime_component_marker(component_type, placeholder)
       index = runtime_components.length
       runtime_components << {
@@ -129,11 +128,30 @@ module TemplateHandlers
       }
       # html_safe so the enclosing safe_join in substitute_components_and_values
       # doesn't escape the marker before it reaches Kramdown.
-      %(<div data-dynamic-component="#{index}"></div>).html_safe
+      runtime_marker(index).html_safe
     end
 
     def runtime_components
       @runtime_components ||= []
+    end
+
+    # Single source of truth for the marker string, shared by the builder above
+    # and the splitter in compile_body. Keep this and runtime_marker_pattern in
+    # step.
+    def runtime_marker(index)
+      %(<div data-dynamic-component="#{marker_nonce}-#{index}"></div>)
+    end
+
+    # Matches a marker in the rendered HTML in either its raw form (token alone
+    # on its own line) or the HTML-escaped form Kramdown emits when the token is
+    # used inline or inside a table cell. Capturing group is the component index.
+    def runtime_marker_pattern
+      nonce = Regexp.escape(marker_nonce)
+      %r{(?:<|&lt;)div data-dynamic-component="#{nonce}-(\d+)"(?:>|&gt;)(?:<|&lt;)/div(?:>|&gt;)}
+    end
+
+    def marker_nonce
+      @marker_nonce ||= SecureRandom.hex(8)
     end
 
     # Splits the rendered HTML on the runtime-component markers and rebuilds it
@@ -142,7 +160,7 @@ module TemplateHandlers
     def compile_body(html)
       return %(#{html.inspect}.html_safe) if runtime_components.empty?
 
-      segments = html.split(%r{<div data-dynamic-component="(\d+)"></div>}, -1)
+      segments = html.split(runtime_marker_pattern, -1)
       code = segments.each_with_index.map do |segment, index|
         index.odd? ? runtime_component_code(segment.to_i) : %(#{segment.inspect}.html_safe)
       end
