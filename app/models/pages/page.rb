@@ -54,15 +54,21 @@ module Pages
 
         warn_overlapping_variants(path, active) if active.size > 1
 
-        active.max_by { |_token, frontmatter| parse_time(frontmatter[:valid_from]) || Time.zone.at(0) }.first
+        # Every active variant has a valid_from (within_window? requires it), so the key
+        # is never nil.
+        active.max_by { |_token, frontmatter| parse_time(frontmatter[:valid_from]) }.first
       end
 
-      # Mirrors Content::TimedFinancialContentComponent: build a range from the parsed
-      # bounds and ask whether +now+ falls in it. An absent bound becomes an open end
-      # (a nil range endpoint), so valid_from alone means "from then on" and valid_to
-      # alone means "until then".
+      # A variant is only auto-selected inside its window. valid_from is required: a
+      # variant without it is ignored, so the base page keeps serving and a variant that
+      # forgets its dates never silently hijacks the page. valid_to is optional -- an
+      # absent valid_to is an open end (a nil range endpoint), meaning "from valid_from
+      # onwards". Window containment mirrors Content::TimedFinancialContentComponent.
       def within_window?(frontmatter, now)
-        now.in?(parse_time(frontmatter[:valid_from])..parse_time(frontmatter[:valid_to]))
+        valid_from = parse_time(frontmatter[:valid_from])
+        return false if valid_from.nil?
+
+        now.in?(valid_from..parse_time(frontmatter[:valid_to]))
       end
 
       def parse_time(value)

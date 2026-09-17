@@ -192,5 +192,23 @@ RSpec.describe ::Pages::Page do
         expect(Rails.logger).to have_received(:warn).with(/overlap/i)
       end
     end
+
+    context "when a variant has valid_from but no valid_to (open-ended)" do
+      let(:path) { "/boundless" }
+      let(:now) { Time.zone.local(2027, 6, 1) } # well after valid_from, no end
+
+      it "stays active indefinitely after valid_from" do
+        expect(page).to have_attributes(title: "Boundless open end", path: "/boundless", variant: "openend")
+      end
+    end
+
+    context "when a variant has no valid_from" do
+      let(:path) { "/boundless" }
+      let(:now) { Time.zone.local(2025, 6, 1) } # within the no-start variant's valid_to, before the open-ended one
+
+      it "ignores the dateless variant and serves the base page" do
+        expect(page).to have_attributes(title: "Boundless base", path: "/boundless", variant: nil)
+      end
+    end
   end
 end
