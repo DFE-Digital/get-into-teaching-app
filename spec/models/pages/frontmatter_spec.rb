@@ -24,6 +24,14 @@ RSpec.describe Pages::Frontmatter do
         expect { subject }.to raise_exception Pages::Frontmatter::NotMarkdownTemplate
       end
     end
+
+    context "with a variant page requested directly" do
+      let(:page) { "/page1+v1" }
+
+      it "raises an exception so the variant is not publicly routable" do
+        expect { subject }.to raise_exception Pages::Frontmatter::NotMarkdownTemplate
+      end
+    end
   end
 
   shared_examples "a listing of all pages" do
@@ -31,6 +39,24 @@ RSpec.describe Pages::Frontmatter do
     it { expect(subject.keys).to include "/subfolder/page2" }
     it { expect(subject["/page1"]).to include title: "Hello World 1 Upwards" }
     it { expect(subject.keys).not_to include "/_partial" }
+    it { expect(subject.keys).not_to include "/page1+v1" }
+    it { expect(subject.keys).not_to include "/overlap+early" }
+  end
+
+  shared_examples "a variant lookup" do
+    context "with a page that has variants" do
+      let(:base_path) { "/page1" }
+
+      it { expect(subject.keys).to contain_exactly("v1", "v2") }
+      it { expect(subject["v1"]).to include title: "Hello World 1 v1", valid_from: "2026-01-01" }
+      it { expect(subject["v2"]).to include valid_to: "2026-09-30" }
+    end
+
+    context "with a page that has no variants" do
+      let(:base_path) { "/subfolder/page2" }
+
+      it { is_expected.to eq({}) }
+    end
   end
 
   describe ".perform_caching" do
@@ -58,6 +84,30 @@ RSpec.describe Pages::Frontmatter do
     subject { described_class.list content_dir }
 
     it_behaves_like "a listing of all pages"
+  end
+
+  describe ".variants_for" do
+    subject { described_class.variants_for base_path, content_dir }
+
+    it_behaves_like "a variant lookup"
+
+    context "when caching" do
+      before { allow(described_class).to receive(:instance) { instance.preload } }
+
+      it_behaves_like "a variant lookup"
+    end
+  end
+
+  describe "#variants_for" do
+    subject { instance.variants_for base_path }
+
+    it_behaves_like "a variant lookup"
+
+    context "when preloaded" do
+      before { instance.preload }
+
+      it_behaves_like "a variant lookup"
+    end
   end
 
   describe ".select" do
