@@ -179,10 +179,10 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
       expect(render_inline(component).to_html).to include("<em>already safe</em>")
     end
 
-    it "does not wrap single-paragraph text in a <p> so it composes inline" do
+    it "wraps text in its own block-level markup so it does not run into the heading" do
       component = described_class.new(now: now_in_gap, default: { text: "Just one line." })
 
-      expect(render_inline(component).to_html.strip).to eq("Just one line.")
+      expect(render_inline(component).to_html.strip).to eq("<p>Just one line.</p>")
     end
 
     it "keeps paragraph tags for multi-paragraph text" do

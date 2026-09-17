@@ -36,7 +36,8 @@ module Content
 
     attr_reader :now, :branch, :default, :conditional_branch_args
 
-    # Text is rendered as markdown, and $token$ placeholders are substituted for
+    # Text is rendered as markdown (so it gets its own block-level markup, such
+    # as the wrapping paragraph), and $token$ placeholders are substituted for
     # their values, so a branch's text reads the same as it did when the
     # component was baked into the page and processed by the markdown pipeline.
     # Text passed as an already-html_safe string (e.g. from ERB) is emitted as-is.
@@ -44,19 +45,7 @@ module Content
       return "" if text.blank?
       return text if text.html_safe?
 
-      html = Kramdown::Document.new(substitute_values(text)).to_html.strip
-      strip_solitary_paragraph(html).html_safe
-    end
-
-    # Kramdown wraps a single paragraph in <p>...</p>. Drop that lone wrapper so
-    # the component composes inline (it is often rendered inside an existing
-    # block, e.g. from ERB) while still rendering markdown like bold and links.
-    # Multi-paragraph text keeps its wrappers.
-    def strip_solitary_paragraph(html)
-      return html unless html.start_with?("<p>") && html.end_with?("</p>")
-
-      inner = html[3..-5]
-      inner.include?("<p") ? html : inner
+      Kramdown::Document.new(substitute_values(text)).to_html.strip.html_safe
     end
 
     # An explicit branch override wins over the date-based selection, so we can
