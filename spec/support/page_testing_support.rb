@@ -17,11 +17,19 @@ class PageLister
     end
 
     def content_md_files_excl_partials
-      Dir["app/views/content/**/[^_]*.md"]
+      reject_variants Dir["app/views/content/**/[^_]*.md"]
     end
 
     def content_html_files_excl_partials
-      Dir["app/views/content/**/[^_]*.html.erb"]
+      reject_variants Dir["app/views/content/**/[^_]*.html.erb"]
+    end
+
+    # Page variants (basename contains Pages::Frontmatter::VARIANT_MARKER, e.g.
+    # scholarships-and-bursaries+v1.md) are not addressable pages -- they are served
+    # on their base page's canonical URL and 404 at their own path -- so they must be
+    # excluded from the content page/URL listings just like `_` partials are.
+    def reject_variants(files)
+      files.reject { |file| File.basename(file, ".*").include?(Pages::Frontmatter::VARIANT_MARKER) }
     end
 
     def content_files_excl_partials
