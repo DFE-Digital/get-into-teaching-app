@@ -119,4 +119,78 @@ RSpec.describe ::Pages::Page do
       end
     end
   end
+
+  describe ".resolve" do
+    subject(:page) { described_class.resolve(path, version: version, now: now) }
+
+    let(:path) { "/page1" }
+    let(:version) { nil }
+    let(:now) { Time.zone.local(2026, 2, 15) }
+
+    context "when today falls inside a variant window" do
+      let(:now) { Time.zone.local(2026, 2, 15) }
+
+      it "keeps the base path/template but takes the variant frontmatter and token" do
+        expect(page).to have_attributes(title: "Hello World 1 v1", path: "/page1", template: "content/page1", variant: "v1")
+      end
+    end
+
+    context "when today falls inside a later variant window" do
+      let(:now) { Time.zone.local(2026, 7, 15) }
+
+      it { is_expected.to have_attributes(title: "Hello World 1 v2", path: "/page1", variant: "v2") }
+    end
+
+    context "when today is before every variant window" do
+      let(:now) { Time.zone.local(2025, 12, 15) }
+
+      it { is_expected.to have_attributes(title: "Hello World 1 Upwards", path: "/page1", variant: nil) }
+    end
+
+    context "when today is in a gap between variant windows" do
+      let(:now) { Time.zone.local(2026, 4, 15) }
+
+      it { is_expected.to have_attributes(title: "Hello World 1 Upwards", path: "/page1", variant: nil) }
+    end
+
+    context "when the page has no variants" do
+      let(:path) { "/subfolder/page2" }
+
+      it { is_expected.to have_attributes(title: "Hello World 2", path: "/subfolder/page2", variant: nil) }
+    end
+
+    context "when a version is pinned explicitly" do
+      let(:version) { "v1" }
+      let(:now) { Time.zone.local(2026, 11, 15) } # outside every window
+
+      it "returns the pinned variant regardless of the date" do
+        expect(page).to have_attributes(title: "Hello World 1 v1", path: "/page1", variant: "v1")
+      end
+    end
+
+    context "when a pinned version does not exist" do
+      let(:version) { "v9" }
+      let(:now) { Time.zone.local(2026, 11, 15) }
+
+      it "falls back to date resolution (base page here)" do
+        expect(page).to have_attributes(title: "Hello World 1 Upwards", path: "/page1", variant: nil)
+      end
+    end
+
+    context "when two variant windows overlap" do
+      let(:path) { "/overlap" }
+      let(:now) { Time.zone.local(2026, 5, 1) } # inside both early and late
+
+      it "serves the variant with the latest valid_from" do
+        expect(page).to have_attributes(title: "Overlap late", path: "/overlap", variant: "late")
+      end
+
+      it "warns in development" do
+        allow(Rails).to receive(:env).and_return(ActiveSupport::StringInquirer.new("development"))
+        allow(Rails.logger).to receive(:warn)
+        page
+        expect(Rails.logger).to have_received(:warn).with(/overlap/i)
+      end
+    end
+  end
 end
