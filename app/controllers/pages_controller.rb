@@ -11,6 +11,7 @@ class PagesController < ApplicationController
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}
   PRIVACY_POLICY_ID_FILTER = %r{^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$}
+  PREVIEW_VERSION_FILTER = /\A[a-zA-Z0-9]+\z/
 
   caches_page :cookies
   caches_page :show
@@ -109,14 +110,29 @@ private
   end
 
   def render_page(path)
-    @page = ::Pages::Page.find content_template(path)
+    @page = ::Pages::Page.resolve content_template(path), version: preview_version
 
     (@page.ancestors.reverse + [@page]).each do |page|
       title = page.heading || page.title
       breadcrumb title, page.path if title.present?
     end
 
-    render template: @page.template, layout: page_layout
+    render template: @page.template, layout: page_layout, variants: Array(@page.variant&.to_sym)
+  end
+
+  # A local-only override that pins a specific page variant (e.g. ?version=v1),
+  # bypassing the date window so upcoming content can be previewed and tested. Honoured
+  # in local environments (development and test), ignored in production, and sanitised
+  # before it is used to build a template name.
+  def preview_version
+    return unless preview_enabled?
+
+    version = params[:version].to_s
+    version if version.match?(PREVIEW_VERSION_FILTER)
+  end
+
+  def preview_enabled?
+    Rails.env.local?
   end
 
   def funding_widget_params
