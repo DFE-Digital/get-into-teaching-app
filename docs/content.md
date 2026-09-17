@@ -910,6 +910,8 @@ Some financial content changes with each recruitment cycle. Bursary and scholars
 
 You set up the component in the frontmatter. You give it a placeholder name. You then reference the placeholder in the page as `$placeholder$`.
 
+Put the `$placeholder$` on its own line, with a blank line above and below. This matters most when a branch shows a `partial`, such as a table.
+
 The component chooses content based on the current date. The dates for each cycle are set in the `config/financial_content_times.yml` file. Each entry in that file has a `key`, a `valid_from` date and a `valid_to` date. A developer manages this file.
 
 Each `key` matches a branch in your frontmatter. For example, the `2025` key matches the `2025` branch. The component finds the branch for today's date. It then shows that branch.
@@ -923,7 +925,7 @@ Each branch shows either `text` or a `partial`:
 
 If a branch has both `text` and a `partial`, the component shows the `partial`.
 
-You can use Markdown in a `text` value. For example, you can add a link, bold text or a list. A `text` value can also cover more than one line. Start a multi-line value with `|-`. Then write each line below it, indented under the `text` key:
+You can use Markdown in a `text` value. For example, you can add a link, bold text or a list. You can also use a value placeholder, such as `$bursaries_postgraduate_maths$`. It is replaced with its value, in the same way as the rest of the page. A `text` value can also cover more than one line. Start a multi-line value with `|-`. Then write each line below it, indented under the `text` key:
 
 ```yaml
     default:
@@ -961,6 +963,19 @@ In this example:
 * In the gap between the two cycles, the page shows the `default` text.
 
 The branch keys and their dates are managed by a developer. If you need a new cycle date, ask a developer to update `config/financial_content_times.yml`.
+
+The page picks the right branch every time it is viewed. It reads the date on each visit. So the content swaps by itself on the day a new cycle starts. Nobody has to publish or deploy anything on that day.
+
+#### Previewing another cycle
+
+You may want to check how a branch looks before its dates arrive. When you run the site locally (for example in a Codespace) you can preview a branch by adding a value to the web address:
+
+* Add `?now=2026-11-01` to pretend it is that date. The page then picks the branch for that date.
+* Add `?branch=2026` to show a named branch straight away, whatever the date.
+
+For example: `/funding-and-support/scholarships-and-bursaries?branch=2026`.
+
+These previews only work on a local copy of the site. They are ignored on the live site, so a visitor cannot use them to change what they see.
 
 ## Creating a new page
 
