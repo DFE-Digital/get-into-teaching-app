@@ -962,6 +962,61 @@ In this example:
 
 The branch keys and their dates are managed by a developer. If you need a new cycle date, ask a developer to update `config/financial_content_times.yml`.
 
+## Page versions (variants)
+
+Sometimes a whole page changes on a date. A new recruitment cycle is an example. You may need to change the title, the copy, a table and a widget all at once. A page variant lets you keep the new version of the page in its own file. The app shows the right version based on the date. You do not have to edit the page on the day the new version starts.
+
+Use a variant when most of a page changes. Use the [timed financial content component](#timed-financial-content-component) when only a small part of a page changes.
+
+### How to name a variant
+
+The normal page is the base page. For example, `scholarships-and-bursaries.md`.
+
+A variant is a copy of that file with `+` and a version name added to the filename. For example, `scholarships-and-bursaries+v1.md`. The version name is `v1`. You can add more versions, such as `+v2`.
+
+### What goes in a variant file
+
+A variant file has its own frontmatter and its own body. While the variant is live, it replaces the whole base page. So the variant file must contain everything the page needs, not only the parts that change. Copy the base page's frontmatter into the variant, then change what you need.
+
+### Setting the dates
+
+You set the dates in the variant's frontmatter:
+
+* `valid_from` is required. It is the date the variant goes live. A variant with no `valid_from` is ignored.
+* `valid_to` is optional. It is the date the variant stops. If you leave `valid_to` blank, the variant stays live from `valid_from` onwards.
+
+The base page has no dates. It is the fallback. The base page shows before any variant goes live, and in any gap between variants.
+
+Include a time if you need the switch to happen at a set time of day. A date on its own means the start of that day (midnight). For example, `valid_to: "2026-10-06"` stops the variant at the very start of 6 October, not at the end of the day.
+
+Here is an example of a variant's frontmatter:
+
+```yaml
+---
+title: "Bursaries and scholarships"
+valid_from: "2026-10-06 00:00"
+valid_to:
+---
+
+# The rest of the variant's frontmatter and body
+```
+
+In this example, the variant goes live at the start of 6 October 2026. It has no `valid_to`, so it stays live from then on. Before that date, the base page shows.
+
+If two variants are live on the same day, the app shows the one with the later `valid_from`. Try not to overlap variant dates.
+
+### Previewing a variant
+
+Add `?version=` and the version name to the page URL to preview a variant. For example, `/funding-and-support/scholarships-and-bursaries?version=v1`. Preview ignores the dates, so you can see a variant before its `valid_from` date.
+
+Preview works on your local site and in the test environment. It does not work in production.
+
+The variant shows on the normal page URL. The variant file is not a page of its own. If you visit its `+v1` URL directly, you get a "page not found".
+
+### Where variants work
+
+Variants work today on pages that have their own route, such as the bursaries and scholarships page. Some pages are cached and do not switch on the date yet. Ask a developer if you are not sure whether a page can use a variant.
+
 ## Creating a new page
 
 **Make sure you start by creating a new branch on master**
