@@ -391,4 +391,78 @@ describe TemplateHandlers::Markdown, type: :view do
       is_expected.to have_css("iframe[title='Video title with a value Hello World!']")
     end
   end
+
+  # Unlike the other component types, timed_financial_content is not baked into
+  # the compiled template. It is rendered per-request so it can read request
+  # state - the `?now=` debugging override in params - which is not available at
+  # template-compile time. See RUNTIME_COMPONENT_TYPES in the handler.
+  describe "injecting a timed financial content component" do
+    let(:front_matter) do
+      {
+        "title" => "Timed page",
+        "timed_financial_content" => {
+          "compare" => {
+            "default" => { "text" => "DEFAULT BRANCH" },
+            2026 => { "text" => "2026 BRANCH" },
+            2025 => { "text" => "2025 BRANCH" },
+          },
+        },
+      }
+    end
+
+    let :markdown do
+      <<~MARKDOWN
+        # Some page
+
+        $compare$
+      MARKDOWN
+    end
+
+    let(:now_param) { nil }
+    let(:branch_param) { nil }
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter)
+      allow(view).to receive(:params).and_return(
+        ActionController::Parameters.new(now: now_param, branch: branch_param),
+      )
+      stub_template "timed.md" => markdown
+      render template: "timed"
+    end
+
+    subject { rendered }
+
+    context "when params[:now] falls in the 2026 window" do
+      let(:now_param) { "2026-11-01" }
+
+      it "renders the branch selected by the request param, not a baked branch" do
+        is_expected.to have_text("2026 BRANCH")
+        is_expected.not_to have_text("2025 BRANCH")
+        is_expected.not_to have_text("DEFAULT BRANCH")
+      end
+    end
+
+    context "when params[:now] falls in the 2025 window" do
+      let(:now_param) { "2026-06-01" }
+
+      it { is_expected.to have_text("2025 BRANCH") }
+    end
+
+    context "when params[:now] falls in the gap between windows" do
+      let(:now_param) { "2026-09-30" }
+
+      it { is_expected.to have_text("DEFAULT BRANCH") }
+    end
+
+    context "when params[:branch] forces a branch" do
+      # now would select 2025, but the branch param overrides it.
+      let(:now_param) { "2026-06-01" }
+      let(:branch_param) { "2026" }
+
+      it "renders the forced branch through the markdown token" do
+        is_expected.to have_text("2026 BRANCH")
+        is_expected.not_to have_text("2025 BRANCH")
+      end
+    end
+  end
 end

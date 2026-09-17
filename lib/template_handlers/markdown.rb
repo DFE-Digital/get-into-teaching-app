@@ -12,6 +12,15 @@ module TemplateHandlers
     GLOBAL_FRONT_MATTER = Rails.root.join("config/frontmatter.yml").freeze
     COMPONENT_TYPES = %w[quote quote_list inset_text youtube_video steps expander cta_adviser cta_routes cta_mailinglist cta_arrow_link timed_financial_content].freeze
 
+    # Components in this list are rendered per-request in the live view context
+    # instead of being baked into the compiled template. Everything else is
+    # rendered once, at template-compile time, via ApplicationController.render
+    # (which runs outside the request cycle). These components need to read
+    # request state at render time - e.g. TimedFinancialContentComponent reads
+    # the `?now=` debugging override from params - which is not available when
+    # the template is compiled.
+    RUNTIME_COMPONENT_TYPES = %w[timed_financial_content].freeze
+
     class << self
       def call(template, source = nil)
         new(template, source).call
@@ -34,10 +43,14 @@ module TemplateHandlers
     end
 
     def call
-      # inspect objects to Ruby strings which can be eval'd
-      return %(#{render.inspect}.html_safe) if front_matter == TemplateHandlers::Markdown.global_front_matter
+      # `render` bakes most content into a string literal but leaves markers for
+      # runtime components, which `compile_body` turns into per-request render
+      # calls (see RUNTIME_COMPONENT_TYPES).
+      body = compile_body(render)
 
-      %(@front_matter = #{front_matter.inspect}; #{render.inspect}.html_safe)
+      return body if front_matter == TemplateHandlers::Markdown.global_front_matter
+
+      %(@front_matter = #{front_matter.inspect}; #{body})
     end
 
   private
@@ -87,6 +100,11 @@ module TemplateHandlers
     def content_component(placeholder)
       component_type = COMPONENT_TYPES.find { |type| front_matter.dig(type, placeholder) }
 
+      return unless component_type
+
+      # Defer to a per-request render rather than baking the output in now.
+      return runtime_component_marker(component_type, placeholder) if RUNTIME_COMPONENT_TYPES.include?(component_type)
+
       component = Content::ComponentInjector.new(
         component_type,
         front_matter.dig(component_type, placeholder),
@@ -95,6 +113,46 @@ module TemplateHandlers
       return unless component
 
       ApplicationController.render(component, layout: false)
+    end
+
+    # Records the component so it can be rendered at request time and leaves a
+    # placeholder in the markdown. An empty block-level <div> is used because
+    # Kramdown, Rinku and the table caption pass all leave it verbatim and,
+    # unlike a bare token or an HTML comment, Kramdown neither escapes it nor
+    # wraps it in a paragraph - so replacing it keeps the surrounding markup
+    # identical to a baked render.
+    def runtime_component_marker(component_type, placeholder)
+      index = runtime_components.length
+      runtime_components << {
+        type: component_type,
+        params: front_matter.dig(component_type, placeholder),
+      }
+      # html_safe so the enclosing safe_join in substitute_components_and_values
+      # doesn't escape the marker before it reaches Kramdown.
+      %(<div data-dynamic-component="#{index}"></div>).html_safe
+    end
+
+    def runtime_components
+      @runtime_components ||= []
+    end
+
+    # Splits the rendered HTML on the runtime-component markers and rebuilds it
+    # as a `safe_join` of the literal segments and live `render` calls, so the
+    # runtime components are rendered per-request in the real view context.
+    def compile_body(html)
+      return %(#{html.inspect}.html_safe) if runtime_components.empty?
+
+      segments = html.split(%r{<div data-dynamic-component="(\d+)"></div>}, -1)
+      code = segments.each_with_index.map do |segment, index|
+        index.odd? ? runtime_component_code(segment.to_i) : %(#{segment.inspect}.html_safe)
+      end
+
+      %(safe_join([#{code.join(', ')}]))
+    end
+
+    def runtime_component_code(index)
+      component = runtime_components.fetch(index)
+      %(render(Content::ComponentInjector.new(#{component[:type].inspect}, #{component[:params].inspect}).component))
     end
 
     def image(placeholder)
