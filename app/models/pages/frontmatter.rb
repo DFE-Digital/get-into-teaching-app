@@ -2,6 +2,11 @@ module Pages
   class BadFrontmatterError < RuntimeError; end
 
   class Frontmatter
+    # Files whose basename contains this marker (e.g. `scholarships+v1.md`) are page
+    # variants, not public pages: they are excluded from routing and listings, and are
+    # only reachable via `variants_for`.
+    VARIANT_MARKER = "+".freeze
+
     attr_reader :content_dirs
 
     class << self
@@ -11,6 +16,10 @@ module Pages
 
       def list(content_dirs = nil)
         instance(content_dirs).list
+      end
+
+      def variants_for(base_path, content_dirs = nil)
+        instance(content_dirs).variants_for(base_path)
       end
 
       def select(selector, content_dirs = nil)
@@ -57,9 +66,17 @@ module Pages
     end
 
     def find(template)
+      raise NotMarkdownTemplate, template if variant_template?(template)
+
       preloaded? ? find_from_preloaded(template) : find_now(template)
     end
     alias_method :[], :find
+
+    # Returns the variants for a base page as a { token => frontmatter } hash, e.g.
+    # `{ "v1" => { valid_from: ... } }`. Works whether or not the instance is preloaded.
+    def variants_for(base_path)
+      preloaded? ? variants[base_path] || {} : find_variants_now(base_path)
+    end
 
     def list
       preload unless preloaded?
@@ -69,11 +86,17 @@ module Pages
     alias_method :to_h, :find
 
     def preload
+      frontmatter # ensure the public page store exists even in a variant-only dir
+
       content_dirs.reverse.each do |content_dir|
         Dir.glob(content_pattern(content_dir)) do |found|
           next if File.basename(found).starts_with? "_"
 
-          add path(content_dir, found), found
+          if variant_file?(found)
+            add_variant content_dir, found
+          else
+            add path(content_dir, found), found
+          end
         end
       end
 
@@ -137,8 +160,52 @@ module Pages
       @frontmatter ||= {}
     end
 
+    def variants
+      @variants ||= {}
+    end
+
     def add(template_path, file)
       frontmatter[template_path] = extract_frontmatter(file)
+    end
+
+    def add_variant(content_dir, file)
+      base_path, token = split_variant_template path(content_dir, file)
+      variants[base_path] ||= {}
+      variants[base_path][token] = extract_frontmatter(file)
+    end
+
+    def find_variants_now(base_path)
+      unprefixed = base_path.delete_prefix("/")
+
+      {}.tap do |found_variants|
+        content_dirs.each do |content_dir|
+          Dir.glob(content_dir.join("#{unprefixed}#{VARIANT_MARKER}*.{md,markdown}")) do |file|
+            token = variant_token(file)
+            found_variants[token] ||= extract_frontmatter(file)
+          end
+        end
+      end
+    end
+
+    def variant_file?(file)
+      variant_basename? File.basename(file, ".*")
+    end
+
+    def variant_template?(template)
+      variant_basename? File.basename(template.to_s)
+    end
+
+    def variant_basename?(basename)
+      basename.include? VARIANT_MARKER
+    end
+
+    def variant_token(file)
+      File.basename(file, ".*").split(VARIANT_MARKER, 2).last
+    end
+
+    def split_variant_template(template_path)
+      name, token = File.basename(template_path).split(VARIANT_MARKER, 2)
+      [File.join(File.dirname(template_path), name), token]
     end
 
     def path(content_dir, file)

@@ -49,6 +49,73 @@ describe PagesController, type: :request do
       it { is_expected.to have_http_status :not_found }
       it { is_expected.to have_attributes body: "" }
     end
+
+    context "with a page that has a variant active for today" do
+      subject { response }
+
+      before { travel_to(Time.zone.local(2026, 10, 15)) { get "/testing/variant-page" } }
+
+      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_attributes body: /Variant v1 body/ }
+    end
+
+    context "with a page whose variant window is not current" do
+      subject { response }
+
+      before { travel_to(Time.zone.local(2026, 9, 15)) { get "/testing/variant-page" } }
+
+      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_attributes body: /Base page body/ }
+    end
+
+    context "with a variant path requested directly" do
+      subject { response }
+
+      before { get "/testing/variant-page+v1" }
+
+      it { is_expected.to have_http_status :not_found }
+    end
+
+    context "with a ?version override outside the variant window" do
+      subject { response }
+
+      before { travel_to(Time.zone.local(2027, 1, 1)) { get "/testing/variant-page?version=v1" } }
+
+      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_attributes body: /Variant v1 body/ }
+    end
+  end
+
+  describe "#preview_version" do
+    subject { controller.send(:preview_version) }
+
+    let(:controller) { described_class.new }
+
+    before do
+      allow(controller).to receive(:params).and_return(ActionController::Parameters.new(version: version))
+    end
+
+    context "when in a local environment (development or test)" do
+      context "with a valid version" do
+        let(:version) { "v1" }
+
+        it { is_expected.to eq "v1" }
+      end
+
+      context "with a version containing invalid characters" do
+        let(:version) { "../secret" }
+
+        it { is_expected.to be_nil }
+      end
+    end
+
+    context "when in production" do
+      let(:version) { "v1" }
+
+      before { allow(Rails).to receive(:env).and_return(ActiveSupport::StringInquirer.new("production")) }
+
+      it { is_expected.to be_nil }
+    end
   end
 
   describe "#filtered_page_template" do
