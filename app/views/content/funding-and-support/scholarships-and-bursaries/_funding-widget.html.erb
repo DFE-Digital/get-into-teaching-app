@@ -15,11 +15,10 @@
       <li>every subject</li>
       <li>salaried teacher training</li>
     </ul>
-    <%= render Content::ExpanderComponent.new(
-    title: "bursaries and scholarships",
-    text: "<p>If you are a non-UK citizen who has permission to <a href=\"https://www.gov.uk/browse/visas-immigration/settle-in-the-uk\">live permanently in the UK</a> and are eligible for student finance, you may be able to get a bursary or scholarship.</p>" \
-           "<p>Find out about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">funding for non-UK citizens</a>.</p>"
-  ) %>
+    <%= render Content::ExpanderComponent.new(title: "bursaries and scholarships") do %>
+      <p>If you are a non-UK citizen who has permission to <a href="https://www.gov.uk/browse/visas-immigration/settle-in-the-uk">live permanently in the UK</a> and are eligible for student finance, you may be able to get a bursary or scholarship.</p>
+      <p>Find out about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">funding for non-UK citizens</a>.</p>
+    <% end %>
 
   <p>The amounts on this page apply if you're starting your training <%= value :bursaries_fundingdates %>.</p>
   </section>

@@ -22,9 +22,8 @@
   </summary>
 
   <div class="expander-details__text">
-    <p>
-      <%= tag.p(helpers.safe_html_format(text)) %>
-    </p>
+    <%= render_content %>
+
     <% if show_link? %>
       <p>
         <%= link_to link_title, link_url %>.
