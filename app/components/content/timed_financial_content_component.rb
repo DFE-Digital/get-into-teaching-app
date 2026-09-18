@@ -15,11 +15,12 @@ module Content
       end
     end
 
-    def initialize(now: Time.zone.now, branch: nil, default: { text: "" }, **conditional_branch_args)
+    def initialize(now: Time.zone.now, branch: nil, default: { text: "" }, format: "html", **conditional_branch_args)
       super
       @now = now
       @branch = branch
       @default = default
+      @format = format.to_s.inquiry
       @conditional_branch_args = conditional_branch_args.transform_keys(&:to_s) || {}
     end
 
@@ -34,11 +35,12 @@ module Content
 
   private
 
-    attr_reader :now, :branch, :default, :conditional_branch_args
+    attr_reader :now, :branch, :default, :conditional_branch_args, :format
 
     def render_text(text)
       return "" if text.blank?
       return text if text.html_safe?
+      return substitute_values(text).strip if format.text?
 
       Kramdown::Document.new(substitute_values(text)).to_html.strip.html_safe
     end

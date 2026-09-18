@@ -194,6 +194,43 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
     end
   end
 
+  # In "text" format the branch text is substituted but not run through
+  # Kramdown, so the output has no wrapping tags and is suitable for contexts
+  # like a <meta> description where markup would leak into an attribute.
+  describe "rendering text in the 'text' format" do
+    it "substitutes $token$ placeholders without wrapping the text in markup" do
+      allow(Value).to receive(:get).with("myamount").and_return("£9,000")
+      component = described_class.new(
+        now: now_in_gap,
+        format: "text",
+        default: { text: "You get $myamount$ a year." },
+      )
+
+      html = render_inline(component).to_html
+
+      expect(html).to include("You get £9,000 a year.")
+      expect(html).not_to include("<p>")
+    end
+
+    it "still selects the branch by time" do
+      component = described_class.new(
+        now: now_in_2026_window,
+        format: "text",
+        default: { text: "Default copy" },
+        "2025": { text: "2025 copy" },
+        "2026": { text: "2026 copy" },
+      )
+
+      expect(render_inline(component).to_html).to include("2026 copy")
+    end
+
+    it "defaults to the markdown-rendered 'html' format when no format is given" do
+      component = described_class.new(now: now_in_gap, default: { text: "Just one line." })
+
+      expect(render_inline(component).to_html.strip).to eq("<p>Just one line.</p>")
+    end
+  end
+
   describe "the default value for now" do
     it "uses Time.current when no now argument is supplied" do
       travel_to now_in_2026_window do
