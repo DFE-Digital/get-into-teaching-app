@@ -15,3 +15,13 @@ variable "rate_limit" {
   }))
   default = null
 }
+
+variable "allow_aks" {
+  type    = bool
+  default = false
+}
+
+variable "block_ip" {
+  type    = bool
+  default = false
+}
