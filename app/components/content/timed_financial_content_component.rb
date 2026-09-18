@@ -36,11 +36,6 @@ module Content
 
     attr_reader :now, :branch, :default, :conditional_branch_args
 
-    # Text is rendered as markdown (so it gets its own block-level markup, such
-    # as the wrapping paragraph), and $token$ placeholders are substituted for
-    # their values, so a branch's text reads the same as it did when the
-    # component was baked into the page and processed by the markdown pipeline.
-    # Text passed as an already-html_safe string (e.g. from ERB) is emitted as-is.
     def render_text(text)
       return "" if text.blank?
       return text if text.html_safe?
@@ -48,15 +43,10 @@ module Content
       Kramdown::Document.new(substitute_values(text)).to_html.strip.html_safe
     end
 
-    # An explicit branch override wins over the date-based selection, so we can
-    # force a branch for debugging - e.g. ?branch=2026 - without moving the clock.
     def selected_branch_key
       override_branch_key || override_now_key || branch_key(now)
     end
 
-    # Debug overrides are honoured everywhere except production, so they also work
-    # on review apps and other non-production deploys. This matches how the rest
-    # of the app gates non-production behaviour.
     def overrides_enabled? = !Rails.env.production?
 
     def override_now_key
@@ -65,17 +55,12 @@ module Content
       now_param = view_context.params[:now]
       return if now_param.blank?
 
-      # A malformed param falls through to the date-based selection rather than
-      # erroring the page: ?now=broken parses to nil (ArgumentError on some
-      # values), and a non-string shape like ?now[]=x raises TypeError.
       override_now = Time.zone.parse(now_param)
       override_now && branch_key(override_now)
     rescue ArgumentError, TypeError
       nil
     end
 
-    # The override can come from the `branch` URL param or the `branch:`
-    # argument. The param takes precedence, mirroring how `now` is handled.
     def override_branch_key
       return unless overrides_enabled?
 
