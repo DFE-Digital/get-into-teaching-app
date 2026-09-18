@@ -36,6 +36,33 @@ describe PagesController, type: :request do
       it { is_expected.to have_attributes body: /Get the latest information sent straight to your inbox/i }
     end
 
+    context "with a page that has a timed financial description" do
+      subject(:meta_description) do
+        Nokogiri::HTML(response.body).at('meta[name="description"]')&.[]("content")
+      end
+
+      context "when in the 2025 funding window" do
+        before { get "/landing/how-to-fund-your-teacher-training?branch=2025" }
+
+        it "renders the timed description advertising the scholarship amount" do
+          expect(meta_description).to include("scholarships available up to")
+        end
+
+        it "renders it as plain text, without wrapping markup leaking into the tag" do
+          expect(meta_description).not_to include("<p>")
+        end
+      end
+
+      context "when outside the funding windows" do
+        before { get "/landing/how-to-fund-your-teacher-training?branch=default" }
+
+        it "falls back to the default description without the amount" do
+          expect(meta_description).to include("bursaries and scholarships, depending")
+          expect(meta_description).not_to include("available up to")
+        end
+      end
+    end
+
     context "with invalid page" do
       subject { response }
 
