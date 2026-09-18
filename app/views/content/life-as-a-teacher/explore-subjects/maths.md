@@ -1,13 +1,22 @@
 ---
 title: Become a maths teacher
 subject: maths
-title_paragraph: |-
-  <p>
-  If maths is your passion, you'll know that it's not just learning formulas or solving equations. It's a way of thinking and problem solving that’s important in every walk of life.</p>
-  <p>
-  As a secondary maths teacher, an exciting career spent passing your knowledge on to the next generation could be for you.</p>
-  <p>
-  Tax-free bursaries of $bursaries_postgraduate_maths$ are available for eligible trainee maths teachers.</p>
+timed_financial_content:
+  title_paragraph:
+    default:
+      text: |-
+          <p>
+          If maths is your passion, you'll know that it's not just learning formulas or solving equations. It's a way of thinking and problem solving that’s important in every walk of life.</p>
+          <p>
+          As a secondary maths teacher, an exciting career spent passing your knowledge on to the next generation could be for you.</p>
+    2025:
+      text: |-
+          <p>
+          If maths is your passion, you'll know that it's not just learning formulas or solving equations. It's a way of thinking and problem solving that’s important in every walk of life.</p>
+          <p>
+          As a secondary maths teacher, an exciting career spent passing your knowledge on to the next generation could be for you.</p>
+          <p>
+          Tax-free bursaries of $bursaries_postgraduate_maths$ are available for eligible trainee maths teachers.</p>
 description: |-
     Find out how to become a maths teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"
