@@ -46,9 +46,17 @@
   <% if @front_matter["noindex"] || @noindex %>
     <%= meta_tag(key: "robots", value: "noindex") %>
   <% end %>
-  <% if @front_matter['description'] %>
-    <%= meta_tag(key: 'description', value: substitute_values(@front_matter['description'])) %>
-    <%= meta_tag(key: 'description', value: substitute_values(@front_matter['description']), opengraph: true) %>
+  <%
+    timed_description = @front_matter.dig("timed_financial_content", "description")
+    description = if timed_description
+      render(Content::ComponentInjector.new("timed_financial_content", timed_description).component)
+    else
+      substitute_values(@front_matter["description"])
+    end
+  %>
+  <% if description.present? %>
+    <%= meta_tag(key: 'description', value: description) %>
+    <%= meta_tag(key: 'description', value: description, opengraph: true) %>
   <% end %>
   <%= meta_tag(key: 'type', value: 'website', opengraph: true) %>
   <%= meta_tag(key: 'title', value: page_title(@page_title, @front_matter), opengraph: true) %>
