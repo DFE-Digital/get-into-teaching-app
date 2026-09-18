@@ -54,10 +54,10 @@ module Content
       override_branch_key || override_now_key || branch_key(now)
     end
 
-    # Debug overrides are only honoured in local (development/test) environments.
-    def overrides_enabled?
-      Rails.env.local?
-    end
+    # Debug overrides are honoured everywhere except production, so they also work
+    # on review apps and other non-production deploys. This matches how the rest
+    # of the app gates non-production behaviour.
+    def overrides_enabled? = !Rails.env.production?
 
     def override_now_key
       return unless overrides_enabled?

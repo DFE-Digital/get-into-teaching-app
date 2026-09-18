@@ -118,7 +118,9 @@ previewable without changing the clock or the config:
 * `?now=<date>` — evaluate the date logic as if it were that date.
 * `?branch=<key>` — force a named branch, ignoring the date.
 
-Both are gated behind `Rails.env.local?`, so they are inert in production. A
-malformed value falls through to the real date rather than erroring the page. If
-you build another previewable component, follow the same pattern: gate any
-request-param override to local environments.
+Both are gated behind `!Rails.env.production?`, so they are inert in production
+but work locally and on non-production deploys such as review apps (matching how
+the rest of the app gates non-production behaviour). A malformed value falls
+through to the real date rather than erroring the page. If you build another
+previewable component, follow the same pattern: gate any request-param override
+so it is disabled in production.

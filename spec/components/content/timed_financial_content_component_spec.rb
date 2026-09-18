@@ -212,8 +212,8 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
   # date. The branch can be forced directly (the `branch:` argument or the
   # `branch` param), or indirectly by overriding the clock (the `now` param).
   # A forced branch wins over a `now` override, which wins over the real date.
-  # All of these overrides only work in local environments (see the
-  # "only in local environments" section below).
+  # All of these overrides are honoured everywhere except production (see the
+  # "when the environment is production" section below).
   describe "overriding the selected branch" do
     subject(:rendered) { render_inline(component).to_html }
 
@@ -315,8 +315,8 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
       end
     end
 
-    context "when the environment is not local (e.g. production)" do
-      before { allow(Rails.env).to receive(:local?).and_return(false) }
+    context "when the environment is production" do
+      before { allow(Rails.env).to receive(:production?).and_return(true) }
 
       it "ignores the branch param and uses the date-based selection" do
         with_request_url("/?branch=2026") do
