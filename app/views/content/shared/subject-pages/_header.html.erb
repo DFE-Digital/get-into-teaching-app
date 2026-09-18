@@ -1,10 +1,10 @@
 <%
   timed_title_paragraph = @front_matter.dig("timed_financial_content", "title_paragraph")
   title_paragraph = if timed_title_paragraph
-    render(Content::ComponentInjector.new("timed_financial_content", timed_title_paragraph).component)
-  else
-    @front_matter["title_paragraph"]
-  end
+                      render(Content::ComponentInjector.new("timed_financial_content", timed_title_paragraph).component)
+                    else
+                      @front_matter["title_paragraph"]
+                    end
 %>
 <%= render Content::LandingHeroComponent.new(
   title: @front_matter["title"],

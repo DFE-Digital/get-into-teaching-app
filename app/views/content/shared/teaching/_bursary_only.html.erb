@@ -1,4 +1,10 @@
 <div class="bursary_only">
-  <p><a href="/funding-and-support/scholarships-and-bursaries">Tax-free bursaries of <%= v "bursaries_postgraduate_#{@front_matter['subject'].gsub(/\s+/, '').downcase}" %></a> are available for eligible trainee <%= @front_matter["subject"] %> teachers.</p>
-  <p>You can get a bursary alongside a tuition fee loan and maintenance loan.</p>
+  <%= render Content::TimedFinancialContentComponent.new(
+    default: {
+      text: "Bursaries and scholarships for courses starting between September 2026 and July 2027 will be announced soon.",
+    },
+    "2025": {
+      partial: "content/shared/teaching/bursary_only_2025",
+    }
+  ) %>
 </div>
