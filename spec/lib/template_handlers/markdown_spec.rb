@@ -391,4 +391,212 @@ describe TemplateHandlers::Markdown, type: :view do
       is_expected.to have_css("iframe[title='Video title with a value Hello World!']")
     end
   end
+
+  # Unlike the other component types, timed_financial_content is not baked into
+  # the compiled template. It is rendered per-request so it can read request
+  # state - the `?now=` debugging override in params - which is not available at
+  # template-compile time. See RUNTIME_COMPONENT_TYPES in the handler.
+  describe "injecting a timed financial content component" do
+    let(:front_matter) do
+      {
+        "title" => "Timed page",
+        "timed_financial_content" => {
+          "compare" => {
+            "default" => { "text" => "DEFAULT BRANCH" },
+            2026 => { "text" => "2026 BRANCH" },
+            2025 => { "text" => "2025 BRANCH" },
+          },
+        },
+      }
+    end
+
+    let :markdown do
+      <<~MARKDOWN
+        # Some page
+
+        $compare$
+      MARKDOWN
+    end
+
+    let(:now_param) { nil }
+    let(:branch_param) { nil }
+
+    # A unique template name per example so ActionView compiles a fresh template
+    # each time: the front matter is baked into the compiled template, so reusing
+    # one name would let an earlier example's front matter leak into this one.
+    let(:template_name) { "timed_#{SecureRandom.hex(4)}" }
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter)
+      allow(view).to receive(:params).and_return(
+        ActionController::Parameters.new(now: now_param, branch: branch_param),
+      )
+      stub_template "#{template_name}.md" => markdown
+      render template: template_name
+    end
+
+    subject { rendered }
+
+    context "when params[:now] falls in the 2026 window" do
+      let(:now_param) { "2026-11-01" }
+
+      it "renders the branch selected by the request param, not a baked branch" do
+        is_expected.to have_text("2026 BRANCH")
+        is_expected.not_to have_text("2025 BRANCH")
+        is_expected.not_to have_text("DEFAULT BRANCH")
+      end
+    end
+
+    context "when params[:now] falls in the 2025 window" do
+      let(:now_param) { "2026-06-01" }
+
+      it { is_expected.to have_text("2025 BRANCH") }
+    end
+
+    context "when params[:now] falls in the gap between windows" do
+      let(:now_param) { "2026-09-30" }
+
+      it { is_expected.to have_text("DEFAULT BRANCH") }
+    end
+
+    context "when params[:branch] forces a branch" do
+      # now would select 2025, but the branch param overrides it.
+      let(:now_param) { "2026-06-01" }
+      let(:branch_param) { "2026" }
+
+      it "renders the forced branch through the markdown token" do
+        is_expected.to have_text("2026 BRANCH")
+        is_expected.not_to have_text("2025 BRANCH")
+      end
+    end
+
+    context "when the branch content contains markdown" do
+      let(:front_matter) do
+        {
+          "title" => "Timed page",
+          "timed_financial_content" => {
+            "compare" => {
+              "default" => { "text" => "Amount is **£100** a year, see [details](/x)." },
+            },
+          },
+        }
+      end
+
+      it "renders the token's text as markdown, not as a literal string" do
+        expect(rendered).to include("<strong>£100</strong>")
+        expect(rendered).to include('<a href="/x">details</a>')
+        is_expected.not_to have_text("**£100**")
+      end
+    end
+
+    context "when the token is used inline within a sentence" do
+      let(:markdown) do
+        <<~MARKDOWN
+          # Some page
+
+          The bursary is $compare$ and more text after it.
+        MARKDOWN
+      end
+
+      let(:now_param) { "2026-11-01" }
+
+      it "renders the component inline without leaking the raw marker" do
+        is_expected.to have_text("2026 BRANCH")
+        expect(rendered).not_to include("data-dynamic-component")
+      end
+    end
+
+    context "with more than one timed token on the same page" do
+      let(:front_matter) do
+        {
+          "title" => "Timed page",
+          "timed_financial_content" => {
+            "first" => { "default" => { "text" => "FIRST DEFAULT" }, 2026 => { "text" => "FIRST 2026" } },
+            "second" => { "default" => { "text" => "SECOND DEFAULT" }, 2026 => { "text" => "SECOND 2026" } },
+          },
+        }
+      end
+
+      let(:markdown) do
+        <<~MARKDOWN
+          # Some page
+
+          $first$
+
+          Some text between.
+
+          $second$
+        MARKDOWN
+      end
+
+      let(:now_param) { "2026-11-01" }
+
+      it "renders each token's own branch (index bookkeeping stays aligned)" do
+        is_expected.to have_text("FIRST 2026")
+        is_expected.to have_text("SECOND 2026")
+        is_expected.not_to have_text("FIRST DEFAULT")
+        is_expected.not_to have_text("SECOND DEFAULT")
+      end
+    end
+
+    context "when the page front matter differs from the global front matter" do
+      # The timed config lives in the page's own front matter, so it differs
+      # from global and call takes its `@front_matter = ...;` prefix branch
+      # alongside a runtime component.
+      let(:front_matter) { { "title" => "Global only" } }
+
+      let(:markdown) do
+        <<~MARKDOWN
+          ---
+          timed_financial_content:
+            compare:
+              default:
+                text: DEFAULT BRANCH
+              2026:
+                text: 2026 BRANCH
+          ---
+          # Some page
+
+          $compare$
+        MARKDOWN
+      end
+
+      let(:now_param) { "2026-11-01" }
+
+      it "still renders the runtime component per-request" do
+        is_expected.to have_text("2026 BRANCH")
+      end
+    end
+  end
+
+  # Proves the whole point of the change: the timed component is evaluated on
+  # every request, not baked once at compile time. Rendering the same compiled
+  # template under two different clocks (no override params) yields two branches.
+  describe "a timed component re-evaluates the date on every render" do
+    let(:front_matter) do
+      {
+        "title" => "Timed page",
+        "timed_financial_content" => {
+          "compare" => {
+            "default" => { "text" => "DEFAULT BRANCH" },
+            2026 => { "text" => "2026 BRANCH" },
+            2025 => { "text" => "2025 BRANCH" },
+          },
+        },
+      }
+    end
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter)
+      stub_template "timed.md" => "# Some page\n\n$compare$\n"
+    end
+
+    it "picks the branch for the clock at render time" do
+      travel_to(Time.zone.parse("2026-11-01")) { render template: "timed" }
+      expect(rendered).to have_text("2026 BRANCH")
+
+      travel_to(Time.zone.parse("2026-06-01")) { render template: "timed" }
+      expect(rendered).to have_text("2025 BRANCH")
+    end
+  end
 end

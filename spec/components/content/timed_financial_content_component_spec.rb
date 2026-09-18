@@ -149,6 +149,51 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
     end
   end
 
+  # Branch text is rendered as markdown, and $token$ placeholders are
+  # substituted for their values, so it reads the same as when the component was
+  # baked into the page and processed by the markdown pipeline.
+  describe "rendering text" do
+    it "renders the text as markdown" do
+      component = described_class.new(
+        now: now_in_gap,
+        default: { text: "Some **bold** and a [link](/events)." },
+      )
+
+      html = render_inline(component).to_html
+
+      expect(html).to include("<strong>bold</strong>")
+      expect(html).to include('<a href="/events">link</a>')
+    end
+
+    it "substitutes $token$ placeholders for their values" do
+      allow(Value).to receive(:get).with("myamount").and_return("£9,000")
+      component = described_class.new(now: now_in_gap, default: { text: "You get $myamount$ a year." })
+
+      expect(render_inline(component).to_html).to include("You get £9,000 a year.")
+    end
+
+    it "emits text that is already html_safe as-is (e.g. from ERB)" do
+      safe = "<em>already safe</em>".html_safe
+      component = described_class.new(now: now_in_gap, default: { text: safe })
+
+      expect(render_inline(component).to_html).to include("<em>already safe</em>")
+    end
+
+    it "wraps text in its own block-level markup so it does not run into the heading" do
+      component = described_class.new(now: now_in_gap, default: { text: "Just one line." })
+
+      expect(render_inline(component).to_html.strip).to eq("<p>Just one line.</p>")
+    end
+
+    it "keeps paragraph tags for multi-paragraph text" do
+      component = described_class.new(now: now_in_gap, default: { text: "First para.\n\nSecond para." })
+
+      html = render_inline(component).to_html
+      expect(html).to include("<p>First para.</p>")
+      expect(html).to include("<p>Second para.</p>")
+    end
+  end
+
   describe "the default value for now" do
     it "uses Time.current when no now argument is supplied" do
       travel_to now_in_2026_window do
@@ -159,6 +204,141 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
         )
 
         expect(render_inline(component).to_html).to include("2026 copy")
+      end
+    end
+  end
+
+  # For debugging we can override which branch renders, without waiting for a
+  # date. The branch can be forced directly (the `branch:` argument or the
+  # `branch` param), or indirectly by overriding the clock (the `now` param).
+  # A forced branch wins over a `now` override, which wins over the real date.
+  # All of these overrides are honoured everywhere except production (see the
+  # "when the environment is production" section below).
+  describe "overriding the selected branch" do
+    subject(:rendered) { render_inline(component).to_html }
+
+    let(:component) do
+      described_class.new(
+        now: now, # sits in the 2025 window, so the date alone would pick "2025"
+        branch: branch,
+        default: { text: "Default copy" },
+        "2025": { text: "2025 copy" },
+        "2026": { text: "2026 copy" },
+      )
+    end
+
+    let(:now) { now_in_2025_window }
+    let(:branch) { nil }
+
+    context "with the branch: argument" do
+      let(:branch) { "2026" }
+
+      it "renders the forced branch, ignoring the date-based selection" do
+        expect(rendered).to include("2026 copy")
+        expect(rendered).not_to include("2025 copy")
+      end
+    end
+
+    context "with the branch request param" do
+      it "renders the branch named in the param, overriding the date" do
+        with_request_url("/?branch=2026") do
+          expect(rendered).to include("2026 copy")
+          expect(rendered).not_to include("2025 copy")
+        end
+      end
+    end
+
+    context "when both the branch param and the branch: argument are given" do
+      let(:branch) { "default" }
+
+      it "lets the param win over the argument" do
+        with_request_url("/?branch=2026") do
+          expect(rendered).to include("2026 copy")
+        end
+      end
+    end
+
+    context "when the override names a branch that is not configured" do
+      let(:branch) { "does-not-exist" }
+
+      it "falls back to the default branch" do
+        expect(rendered).to include("Default copy")
+      end
+    end
+
+    context "with the now request param" do
+      it "selects the branch for the overridden time, overriding the real date" do
+        with_request_url("/?now=2026-11-01") do
+          expect(rendered).to include("2026 copy")
+          expect(rendered).not_to include("2025 copy")
+        end
+      end
+    end
+
+    context "when both a branch override and a now override are given" do
+      it "lets the branch override win over the now override" do
+        with_request_url("/?branch=default&now=2026-11-01") do
+          expect(rendered).to include("Default copy")
+          expect(rendered).not_to include("2026 copy")
+        end
+      end
+    end
+
+    context "when no override is supplied" do
+      it "falls back to the date-based selection from now" do
+        expect(rendered).to include("2025 copy")
+        expect(rendered).not_to include("Default copy")
+      end
+    end
+
+    context "when the now param is malformed" do
+      # now sits in the 2025 window, so a broken override should leave us there.
+      it "falls back to the date when the param is unparseable (parses to nil)" do
+        with_request_url("/?now=broken") do
+          expect(rendered).to include("2025 copy")
+          expect(rendered).not_to include("Default copy")
+        end
+      end
+
+      it "falls back to the date when the param is out of range (raises)" do
+        with_request_url("/?now=2026-13-99") do
+          expect(rendered).to include("2025 copy")
+          expect(rendered).not_to include("Default copy")
+        end
+      end
+
+      it "falls back to the date when the param is a non-string shape (e.g. ?now[]=x)" do
+        with_request_url("/?now[]=2026-11-01") do
+          expect(rendered).to include("2025 copy")
+          expect(rendered).not_to include("Default copy")
+        end
+      end
+    end
+
+    context "when the environment is production" do
+      before { allow(Rails.env).to receive(:production?).and_return(true) }
+
+      it "ignores the branch param and uses the date-based selection" do
+        with_request_url("/?branch=2026") do
+          expect(rendered).to include("2025 copy")
+          expect(rendered).not_to include("2026 copy")
+        end
+      end
+
+      it "ignores the now param and uses the date-based selection" do
+        with_request_url("/?now=2026-11-01") do
+          expect(rendered).to include("2025 copy")
+          expect(rendered).not_to include("2026 copy")
+        end
+      end
+
+      context "with the branch: argument" do
+        let(:branch) { "2026" }
+
+        it "ignores the branch: argument and uses the date-based selection" do
+          expect(rendered).to include("2025 copy")
+          expect(rendered).not_to include("2026 copy")
+        end
       end
     end
   end
