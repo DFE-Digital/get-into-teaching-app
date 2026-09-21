@@ -50,144 +50,179 @@ en:
         name: "Primary (all subjects)"
         group: "Primary"
         sub_head: "Primary"
-        funding: ""
+        funding:
+          default: ""
       art_and_design:
         name: "Art and design"
         group: "Secondary"
         sub_head: "Art and design - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       biology:
         name: "Biology"
         group: "Secondary"
         sub_head: "Biology - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_biology} are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
+        funding:
+          2025: "Bursaries of %{bursaries_postgraduate_biology} are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
+          default: "Bursaries are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
       business_studies:
         name: "Business studies"
         group: "Secondary"
         sub_head: "Business - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       chemistry:
         name: "Chemistry"
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
-        funding: "Scholarships of %{scholarships_chemistry} or bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you're eligible."
+        funding:
+          2025: "Scholarships of %{scholarships_chemistry} or bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you're eligible."
+          default: "Scholarships and bursaries are available for trainee chemistry teachers if you're eligible."
       citizenship:
         name: "Citizenship"
         group: "Secondary"
         sub_head: "Citizenship - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       classics:
         name: "Classics"
         group: "Secondary"
         sub_head: "Classics - Secondary"
-        funding: |-
+        funding:
+          default: |-
 
-          Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
+            Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
 
-          Your course provider will confirm if this applies.
+            Your course provider will confirm if this applies.
       communication_and_media_studies:
         name: "Communication and media studies"
         group: "Secondary"
         sub_head: "Communication and media studies - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       computing:
         name: "Computing"
         group: "Secondary"
         sub_head: "Computing - Secondary"
-        funding: "Scholarships of %{scholarships_computing} or bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you're eligible."
+        funding:
+          2025: "Scholarships of %{scholarships_computing} or bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you're eligible."
+          default: "Scholarships and bursaries are available for trainee computing teachers if you're eligible."
       dance:
         name: "Dance"
         group: "Secondary"
         sub_head: "Dance - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       design_and_technology:
         name: "Design and technology"
         group: "Secondary"
         sub_head: "Design and technology - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_designandtechnology} are available for trainee design and technology teachers if you're eligible."
+        funding:
+          2025: "Bursaries of %{bursaries_postgraduate_designandtechnology} are available for trainee design and technology teachers if you're eligible."
+          default: "Bursaries are available for trainee design and technology teachers if you're eligible."
       drama:
         name: "Drama"
         group: "Secondary"
         sub_head: "Drama - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       economics:
         name: "Economics"
         group: "Secondary"
         sub_head: "Economics - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       english:
         name: "English"
         group: "Secondary"
         sub_head: "English - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       english_as_a_second_or_other_language:
         name: "English as a second or other language"
         group: "Secondary"
         sub_head: "English as a second or other language - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       geography:
         name: "Geography"
         group: "Secondary"
         sub_head: "Geography - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_geography} are available for trainee geography teachers if you're eligible."
+        funding:
+          2025: "Bursaries of %{bursaries_postgraduate_geography} are available for trainee geography teachers if you're eligible."
+          default: "Bursaries are available for trainee geography teachers if you're eligible."
       health_and_social_care:
         name: "Health and social care"
         group: "Secondary"
         sub_head: "Health and social care - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       history:
         name: "History"
         group: "Secondary"
         sub_head: "History - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       languages:
         name: "Languages (including ancient languages)"
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
-        funding: |-
-          Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers if you're eligible.<br><br>
+        funding:
+          2025: |-
+            Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers if you're eligible.<br><br>
 
-          Bursaries of %{bursaries_postgraduate_languagesother} are available for all trainee language teachers if you're eligible. These bursaries include ancient languages.
+            Bursaries of %{bursaries_postgraduate_languagesother} are available for all trainee language teachers if you're eligible. These bursaries include ancient languages.
+          default: "Scholarships are available for trainee French, German, and Spanish language teachers if you're eligible."
       maths:
         name: "Maths"
         group: "Secondary"
         sub_head: "Maths - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you're eligible."
+        funding:
+          2025: "Bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you're eligible."
+          default: "Scholarships and bursaries are available for trainee maths teachers if you're eligible."
       music:
         name: "Music"
         group: "Secondary"
         sub_head: "Music - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       physical_group:
         name: "Physical education"
         group: "Secondary"
         sub_head: "Physical education - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       physics:
         name: "Physics"
         group: "Secondary"
         sub_head: "Physics - Secondary"
-        funding: "Scholarships of %{scholarships_physics} or bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers if you're eligible."
+        funding:
+          2025: "Scholarships of %{scholarships_physics} or bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers if you're eligible."
+          default: "Scholarships or bursaries are available for trainee physics teachers if you're eligible."
       psychology:
         name: "Psychology"
         group: "Secondary"
         sub_head: "Psychology - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       religious_group:
         name: "Religious education"
         group: "Secondary"
         sub_head: "Religious education - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       science:
         name: "Science"
         group: "Secondary"
         sub_head: "Science - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
       social_sciences:
         name: "Social sciences"
         group: "Secondary"
         sub_head: "Social sciences - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Scholarships or bursaries are not available for this subject."
 
   event_types:
     222750012:
