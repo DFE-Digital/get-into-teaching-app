@@ -13,7 +13,10 @@ class PagesController < ApplicationController
   PRIVACY_POLICY_ID_FILTER = %r{^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$}
 
   caches_page :cookies
-  caches_page :show
+  # Pages that use a runtime component (see RUNTIME_COMPONENT_TYPES) must render
+  # on every request, so they cannot be page-cached (a cached static file would
+  # freeze the component and ignore the ?now=/?branch= overrides).
+  caches_page :show, unless: :page_uses_runtime_component?
 
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
   rescue_from InvalidPrivacyPolicy, with: :rescue_invalid_privacy_policy
@@ -121,6 +124,14 @@ private
 
   def funding_widget_params
     params.require(:funding_widget).permit(:subject)
+  end
+
+  def page_uses_runtime_component?
+    return false unless @page
+
+    @page.frontmatter.to_h.keys.map(&:to_s).intersect?(
+      TemplateHandlers::Markdown::RUNTIME_COMPONENT_TYPES,
+    )
   end
 
   def page_layout
