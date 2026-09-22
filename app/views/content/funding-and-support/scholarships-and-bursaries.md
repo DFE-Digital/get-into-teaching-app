@@ -77,19 +77,36 @@ You need to apply directly to the scholarship provider. Each provider sets their
 
 ## Compare bursaries and scholarships
 
-| Subject                                                               | Bursary  | Scholarship      |
-|-----------------------------------------------------------------------| -------: | ---------------: |
-| **Biology**                                                           | $bursaries_postgraduate_biology$  |                  |
-| **Chemistry**                                                         | $bursaries_postgraduate_chemistry$  | $scholarships_chemistry$          |
-| **Computing**                                                         | $bursaries_postgraduate_computing$  | $scholarships_computing$          |
-| **Design and technology**                                             | $bursaries_postgraduate_designandtechnology$ | |
-| **Geography**                                                         | $bursaries_postgraduate_geography$  |                  |
-| **Languages**<br/> (French, German and Spanish only)                  | $bursaries_postgraduate_languagesfrenchgermanspanish$  | $scholarships_languagesfrenchgermanspanish$      |
-| **Languages**<br/> (all other languages, including ancient languages) | $bursaries_postgraduate_languagesother$  |                  |
-| **Maths**                                                             | $bursaries_postgraduate_maths$  |          |                |
-| **Physics**                                                           | $bursaries_postgraduate_physics$  | $scholarships_physics$        |
+[Read the funding guidance for initial teacher training](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2027-to-2028) to confirm which bursaries and scholarships you are eligible for based on your degree.
 
-Table caption: Available postgraduate bursaries and scholarships
+| Subject   | Scholarship for a relevant degree      |
+|-----------|-------------------------------------------:|
+| **Chemistry** | $scholarships_chemistry$|
+| **Computing** | $scholarships_computing$|
+| **Physics**   | $scholarships_physics$|
+
+Table caption: Scholarship amounts for subjects where funding depends on your degree
+
+| Subject               | Bursary for a relevant degree                         | Bursary for any degree               |
+|-----------------------|-----------------------------------------------------:|--------------------------------------------------:|
+| **Chemistry**             | $bursaries_postgraduate_chemistryrelevantdegree$                 | $bursaries_postgraduate_chemistryunrelateddegree$             |
+| **Computing**             | $bursaries_postgraduate_computingrelevantdegree$                 | $bursaries_postgraduate_computingunrelateddegree$             |
+| **Design and technology** | $bursaries_postgraduate_designandtechnologyrelevantdegree$       | $bursaries_postgraduate_designandtechnologyunrelateddegree$   |
+| **Maths**                 | $bursaries_postgraduate_mathsrelevantdegree$                     | $bursaries_postgraduate_mathsunrelateddegree$                 |
+| **Physics**               | $bursaries_postgraduate_physicsrelevantdegree$                   | $bursaries_postgraduate_physicsunrelateddegree$               |
+
+Table caption: Bursary amounts for subjects where funding depends on your degree
+
+| Subject | Scholarship | Bursary |
+|---------|------------:|---------:|
+| **Languages**<br/>(French, German and Spanish only) | $scholarships_languagesfrenchgermanspanish$ | $bursaries_postgraduate_languagesfrenchgermanspanish$|
+| **Languages**<br/>(all other languages, including ancient languages)||$bursaries_postgraduate_languagesother$|
+| **Biology** || $bursaries_postgraduate_biology$ |
+| **Geography** || $bursaries_postgraduate_geography$ |
+| **Music** || $bursaries_postgraduate_music$ |
+| **Religious education (RE)** || $bursaries_postgraduate_religiouseducation$ |
+
+Table caption: Scholarship and bursary amounts for subjects that do not require a relevant degree
 
 $subjects$
 
