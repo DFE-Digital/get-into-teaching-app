@@ -92,4 +92,39 @@ describe PagesController, type: :request do
       it { is_expected.to eql "stories/my-top-10" }
     end
   end
+
+  # `caches_page :show` is gated on this predicate so that pages using a runtime
+  # component (which must render per-request) are never served from a static
+  # page cache.
+  describe "#page_uses_runtime_component?" do
+    subject { controller.send(:page_uses_runtime_component?) }
+
+    let(:controller) { described_class.new }
+
+    context "when no page has been resolved" do
+      it { is_expected.to be false }
+    end
+
+    context "when the page's front matter declares a runtime component" do
+      before do
+        controller.instance_variable_set(
+          :@page,
+          Pages::Page.new("/example", "timed_financial_content" => { "compare" => { "default" => { "text" => "x" } } }),
+        )
+      end
+
+      it { is_expected.to be true }
+    end
+
+    context "when the page's front matter has no runtime component" do
+      before do
+        controller.instance_variable_set(
+          :@page,
+          Pages::Page.new("/example", "title" => "A static page", "expander" => { "e1" => {} }),
+        )
+      end
+
+      it { is_expected.to be false }
+    end
+  end
 end
