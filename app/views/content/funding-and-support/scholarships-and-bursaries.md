@@ -2,8 +2,6 @@
 title: "Teacher training bursaries"
 heading: "Bursaries and scholarships for postgraduate teacher training"
 subcategory: Courses with fees
-description: |-
-   Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.
 promo_content:
   - "content/shared/block-promos/adviser_findfees"
 cta_arrow_link:
@@ -19,9 +17,35 @@ navigation_description: Find out if you're eligible for extra funding depending 
 before-content:
     - content/funding-and-support/scholarships-and-bursaries/funding-widget
 timed_financial_content:
+  title:
+    format: text
+    default:
+      text: "Teacher training bursaries"
+    2025:
+      text: "Teacher training bursaries and scholarships"
+  heading:
+    format: text
+    default:
+      text: "Bursaries for postgraduate teacher training"
+    2025:
+      text: "Bursaries and scholarships for postgraduate teacher training"
+  description:
+    format: text
+    default:
+      text: Find out about the teacher training bursaries available, depending on the subject you’re training to teach.
+    2025:
+      text: Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.
+  eligibility_for_scholarships:
+    2025:
+        partial: "content/funding-and-support/scholarships-and-bursaries/eligibility_for_scholarships"  
   compare_bursaries_and_scholarships:
     2025:
       partial: "content/funding-and-support/scholarships-and-bursaries/compare_bursaries_and_scholarships"
+  other_funding_options:
+    default: 
+      partial: "content/funding-and-support/scholarships-and-bursaries/other_funding_options"
+    2025:
+      partial: "content/funding-and-support/scholarships-and-bursaries/other_funding_options_2025"
 ---
 
 ## Eligibility for bursaries
@@ -48,45 +72,10 @@ You do not have to pay a bursary back.
 
 You do not need to apply for a bursary. When you apply for teacher training, your provider will check if you're eligible for a bursary. If you are, your provider will confirm this in writing before you start your course. 
 
-## Eligibility for scholarships
-
-You must be eligible for student finance to receive a scholarship. You’ll also need at least one of the following:
-
-* a bachelor’s degree class 2:1 (honours) or higher
-* a master’s degree
-* a PhD
-
-If you achieved a 2:2 in your degree, you may still be eligible. You would need to show you have enough relevant experience and subject knowledge. 
-
-Scholarships are awarded by independent organisations which set their own assessment requirements.
-
-Scholarships offer more than just financial benefits. For example, they can provide professional body membership, subject-specific support, mentoring, events and classroom resources. 
-
-### How scholarships are paid
-
-A scholarship is paid over a minimum of 10 months by your teacher training provider across the duration of your course. They will confirm when you will get the payments. 
-
-You will not need to pay tax or National Insurance on scholarship payments. 
-
-You do not have to pay a scholarship back.
-
-### How to apply for a scholarship
-
-You need to apply directly to the scholarship provider. Each provider sets their own application deadline and will confirm if you meet their eligibility requirements. You can find out about how to apply, deadlines and more details about each scholarship on the scholarship provider's website:
-
-* [Royal Society of Chemistry website](https://www.rsc.org/prizes-funding/funding/find-funding/teacher-training-scholarships/) (chemistry)
-* [BCS The Chartered Institute for IT website](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
-* [British Council website](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
-* [Institute of Physics website](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
+$eligibility_for_scholarships$
 
 $compare_bursaries_and_scholarships$
 
-## Other funding options
-
-If you're not eligible for a bursary or scholarship, there may be other funding options available, such as [tuition fees and maintenance loans](/funding-and-support/tuition-fees).
-
-You may be eligible for [a salaried teacher training course](/funding-and-support/salaried-teacher-training) which means you'll get paid while you train to teach. Some salaried teacher training courses may also come with fees. Check with individual providers for more information. 
-
-For advice on funding, you can speak to a [teacher training adviser](/teacher-training-advisers). They can help you work out what support you could be eligible for.
+$other_funding_options$
 
 $teacherpay$
