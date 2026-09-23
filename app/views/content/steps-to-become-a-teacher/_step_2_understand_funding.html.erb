@@ -1,4 +1,4 @@
-<p>Undergraduate and postgraduate teacher training course fees are around $fees_pgittandugitt$ per year.</p>
+<p>Undergraduate and postgraduate teacher training course fees are around <%= v :fees_pgittandugitt %> per year.</p>
 
 <p>You can apply for tuition fee and maintenance loans, even if you already have a student loan.</p>
 
@@ -13,7 +13,7 @@
 
 <%= render Content::ExpanderComponent.new(
     title: "fees and funding",
-    text: "<p>Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance loans.</p>
+    text: "<p>Teacher training course fees for non-UK citizens cost an average of #{v :fees_pgitt_internationalaverage}. Most non-UK citizens will not be eligible for tuition fee loans and maintenance loans.</p>
     <p>Learn more about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">fees and financial support for non-UK trainee teachers</a>.</p>",
   ) %>
 

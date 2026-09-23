@@ -77,6 +77,14 @@ describe PagesController, type: :request do
         it "renders the windowed copy advertising the amount" do
           expect(funding_step).to include("bursary or scholarship of up to")
         end
+
+        # The step partials render per-request now, so any $value$ placeholder in
+        # them must use the ERB helper - it no longer gets the markdown handler's
+        # compile-time substitution pass.
+        it "substitutes value placeholders in the step partial" do
+          expect(funding_step).to include("teacher training course fees are around #{Value.get('fees_pgittandugitt')} per year")
+          expect(funding_step).not_to match(/\$[a-zA-Z0-9_]+\$/)
+        end
       end
 
       context "when the default branch is forced" do

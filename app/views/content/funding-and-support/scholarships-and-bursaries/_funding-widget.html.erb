@@ -1,4 +1,7 @@
 <div class="content">
+  <%= render Content::TimedFinancialContentComponent.new(
+    default: { text: "Bursaries and scholarships for courses starting between September 2027 and July 2028 will be announced soon." },
+  ) %>
   <p>If you want to do postgraduate teacher training in England that leads to <a href="/train-to-be-a-teacher/what-is-qts">qualified teacher status (QTS)</a>, you may be eligible for a bursary or scholarship.</p>
 </div>
 
@@ -18,7 +21,7 @@
 
     <%= render Content::ExpanderComponent.new(title: "bursaries and scholarships") do %>
       <%= render Content::TimedFinancialContentComponent.new(
-        default: { text: "Bursaries and scholarships for courses starting between September 2026 and July 2027 will be announced soon." },
+        default: { text: "Bursaries and scholarships for courses starting between September 2027 and July 2028 will be announced soon." },
         "2025": {
           text: safe_html_format("<p>If you are a non-UK citizen who has permission to <a href=\"https://www.gov.uk/browse/visas-immigration/settle-in-the-uk\">live permanently in the UK</a> and are eligible for student finance, you may be able to get a bursary or scholarship.</p>" \
             "<p>Find out about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">funding for non-UK citizens</a>.</p>"),
