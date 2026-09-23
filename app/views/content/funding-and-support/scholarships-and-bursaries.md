@@ -1,6 +1,4 @@
 ---
-title: "Teacher training bursaries"
-heading: "Bursaries and scholarships for postgraduate teacher training"
 subcategory: Courses with fees
 promo_content:
   - "content/shared/block-promos/adviser_findfees"

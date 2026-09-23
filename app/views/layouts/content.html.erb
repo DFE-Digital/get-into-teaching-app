@@ -16,10 +16,10 @@
               <%
                 timed_heading = @front_matter.dig("timed_financial_content", "heading")
                 heading = if timed_heading
-                  render(Content::ComponentInjector.new("timed_financial_content", timed_heading).component)
-                else
-                  @front_matter["heading"] || @front_matter["title"]
-                end
+                            render(Content::ComponentInjector.new("timed_financial_content", timed_heading).component)
+                          else
+                            @front_matter["heading"] || @front_matter["title"]
+                          end
               %>
               <%= render Content::HeadingComponent.new(
                 heading: heading,

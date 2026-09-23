@@ -41,7 +41,13 @@
       </p>
 
       <ul>
-        <li>bursaries and scholarships</li>
+        <li>
+          <%= render Content::TimedFinancialContentComponent.new(
+            format: :text,
+            default: { text: "bursaries" },
+            "2025": { text: "bursaries and scholarships" },
+          ) %>
+        </li>
         <li>tuition fee and maintenance loans</li>
         <li>grants if you're a parent or carer, disabled, or a veteran</li>
       </ul>

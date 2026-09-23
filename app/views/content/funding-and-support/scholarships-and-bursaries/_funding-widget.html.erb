@@ -5,7 +5,7 @@
   <%= render Content::TimedFinancialContentComponent.new(
     default: { text: "If you want to do postgraduate teacher training in England that leads to <a href='/train-to-be-a-teacher/what-is-qts'>qualified teacher status (QTS)</a>, you may be eligible for a bursary." },
     "2025": { text: "If you want to do postgraduate teacher training in England that leads to <a href='/train-to-be-a-teacher/what-is-qts'>qualified teacher status (QTS)</a>, you may be eligible for a bursary or scholarship." },
-    ) %>
+  ) %>
 </div>
 
 <h2 class="heading--box-gitlilac">
@@ -13,7 +13,7 @@
     format: :text,
     default: { text: "What are bursaries?" },
     "2025": { text: "What are bursaries and scholarships?" },
-    ) %>
+  ) %>
 </h2>
 
 <div class="content">
@@ -21,7 +21,7 @@
     <%= render Content::TimedFinancialContentComponent.new(
       default: { partial: "content/funding-and-support/scholarships-and-bursaries/what_are_bursaries" },
       "2025": { partial: "content/funding-and-support/scholarships-and-bursaries/what_are_bursaries_and_scholarships" },
-      ) %>
+    ) %>
   </section>
   <section id="funding-widget">
     <%= render FundingWidgetComponent.new(

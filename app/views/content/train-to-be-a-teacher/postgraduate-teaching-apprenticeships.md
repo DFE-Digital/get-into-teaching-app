@@ -17,11 +17,11 @@ expander:
     title: residency requirements for apprenticeships
     text: "You can normally only do a postgraduate teaching apprenticeship (PGTA) if you have been a resident in the UK for the last 3 years or more. There are some exceptions to this. For example, if you have applied to the Afghan or Ukraine resettlement schemes. Speak to providers for more information."
 timed_financial_content:
-  bursary_or_scholarship:
+  bursary_and_scholarship:
     default:
-      text: "It’s worth checking if there’s a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) for a fee-paying route available before you apply for a PGTA."
+      partial: "content/train-to-be-a-teacher/postgraduate-teaching-apprenticeships/bursary"
     2025:
-      text: "It’s worth checking if there’s a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) for a fee-paying route available before you apply for a PGTA.These can be worth up to $scholarships_generic_maxshortened$, depending on the subject."
+      partial: "content/train-to-be-a-teacher/postgraduate-teaching-apprenticeships/bursary_and_scholarships"
 ---
 
 A postgraduate teaching apprenticeship (PGTA) is a teacher training route that leads to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). You need QTS to teach in most primary, secondary and special schools in England. 
@@ -50,13 +50,7 @@ You do not have to pay any training fees for a PGTA, as these are covered as par
 
 Postgraduate teaching apprentices are normally paid an [unqualified teacher’s salary](/life-as-a-teacher/pay-and-benefits/teacher-pay). The exact amount will vary depending on the school you work in. 
 
-### Explore bursaries and scholarships on other teacher training routes
-
-$bursary_or_scholarship$ 
-
-If you do a PGTA, you will not be eligible for a bursary, scholarship or student finance. You’ll also be taxed on your income, whereas you will not be taxed on a bursary or scholarship. 
-
-If you’re eligible for a bursary or scholarship, you could receive more money on a fee-paying course than on a salaried training route like the PGTA.
+$bursary_and_scholarship$ 
 
 ## Applying for a postgraduate teaching apprenticeship
 
