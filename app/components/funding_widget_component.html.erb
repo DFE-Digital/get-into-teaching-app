@@ -23,6 +23,8 @@
               <%= f.select :subject, grouped_options_for_select(grouped_options, form.subject), { prompt: true }, { class: "govuk-select", aria: { describedby: "funding_widget_subject_label" }} %>
             <% end %>
             <div class="actions">
+              <%= hidden_field_tag(:branch, params[:branch]) if params[:branch].present? %>
+              <%= hidden_field_tag(:now, params[:now]) if params[:now].present? %>
               <%= f.button 'Check funding', type: 'submit', class: 'button' %>
             </div>
           <% end %>
@@ -46,7 +48,7 @@
             <div class="call-to-action__text">
               <h3><%= sub_head %></h3>
               <div>
-                <%= helpers.safe_html_format(funding_results) %>
+                <%= render Content::TimedFinancialContentComponent.new(**funding_results) %>
                 <p>You may be eligible for a <a href="/funding-and-support/tuition-fee-and-maintenance-loans">tuition fee and maintenance loan</a>.</p>
                 <p>Extra funding support may be available <a href="/funding-and-support/if-youre-a-parent-or-carer">if you're a parent or carer</a> or <a href="/funding-and-support/if-youre-disabled">if you're disabled</a>.</p>
                 <%= render Content::InsetTextComponent.new(

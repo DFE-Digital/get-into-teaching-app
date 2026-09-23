@@ -19,7 +19,11 @@ module TemplateHandlers
     # request state at render time - e.g. TimedFinancialContentComponent reads
     # the `?now=` debugging override from params - which is not available when
     # the template is compiled.
-    RUNTIME_COMPONENT_TYPES = %w[timed_financial_content].freeze
+    # `steps` is here because its partials can render TimedFinancialContentComponent
+    # (a runtime component) directly - see step_2_understand_funding. A container
+    # that is baked at compile time would freeze the runtime component nested
+    # inside it, so the container has to render per-request too.
+    RUNTIME_COMPONENT_TYPES = %w[timed_financial_content steps].freeze
 
     class << self
       def call(template, source = nil)

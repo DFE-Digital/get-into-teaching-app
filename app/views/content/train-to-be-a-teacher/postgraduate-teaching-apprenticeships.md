@@ -16,6 +16,12 @@ expander:
   residency-requirements:
     title: residency requirements for apprenticeships
     text: "You can normally only do a postgraduate teaching apprenticeship (PGTA) if you have been a resident in the UK for the last 3 years or more. There are some exceptions to this. For example, if you have applied to the Afghan or Ukraine resettlement schemes. Speak to providers for more information."
+timed_financial_content:
+  bursary_or_scholarship:
+    default:
+      text: "It’s worth checking if there’s a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) for a fee-paying route available before you apply for a PGTA."
+    2025:
+      text: "It’s worth checking if there’s a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) for a fee-paying route available before you apply for a PGTA.These can be worth up to $scholarships_generic_maxshortened$, depending on the subject."
 ---
 
 A postgraduate teaching apprenticeship (PGTA) is a teacher training route that leads to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). You need QTS to teach in most primary, secondary and special schools in England. 
@@ -46,7 +52,7 @@ Postgraduate teaching apprentices are normally paid an [unqualified teacher’s 
 
 ### Explore bursaries and scholarships on other teacher training routes
 
-It’s worth checking if there’s a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) for a fee-paying route available before you apply for a PGTA.These can be worth up to $scholarships_generic_maxshortened$, depending on the subject. 
+$bursary_or_scholarship$ 
 
 If you do a PGTA, you will not be eligible for a bursary, scholarship or student finance. You’ll also be taxed on your income, whereas you will not be taxed on a bursary or scholarship. 
 

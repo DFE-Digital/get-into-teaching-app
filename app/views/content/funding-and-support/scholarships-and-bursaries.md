@@ -18,6 +18,10 @@ navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
 before-content:
     - content/funding-and-support/scholarships-and-bursaries/funding-widget
+timed_financial_content:
+  compare_bursaries_and_scholarships:
+    2025:
+      partial: "content/funding-and-support/scholarships-and-bursaries/compare_bursaries_and_scholarships"
 ---
 
 ## Eligibility for bursaries
@@ -75,23 +79,7 @@ You need to apply directly to the scholarship provider. Each provider sets their
 * [British Council website](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
 * [Institute of Physics website](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
 
-## Compare bursaries and scholarships
-
-| Subject                                                               | Bursary  | Scholarship      |
-|-----------------------------------------------------------------------| -------: | ---------------: |
-| **Biology**                                                           | $bursaries_postgraduate_biology$  |                  |
-| **Chemistry**                                                         | $bursaries_postgraduate_chemistry$  | $scholarships_chemistry$          |
-| **Computing**                                                         | $bursaries_postgraduate_computing$  | $scholarships_computing$          |
-| **Design and technology**                                             | $bursaries_postgraduate_designandtechnology$ | |
-| **Geography**                                                         | $bursaries_postgraduate_geography$  |                  |
-| **Languages**<br/> (French, German and Spanish only)                  | $bursaries_postgraduate_languagesfrenchgermanspanish$  | $scholarships_languagesfrenchgermanspanish$      |
-| **Languages**<br/> (all other languages, including ancient languages) | $bursaries_postgraduate_languagesother$  |                  |
-| **Maths**                                                             | $bursaries_postgraduate_maths$  |          |                |
-| **Physics**                                                           | $bursaries_postgraduate_physics$  | $scholarships_physics$        |
-
-Table caption: Available postgraduate bursaries and scholarships
-
-$subjects$
+$compare_bursaries_and_scholarships$
 
 ## Other funding options
 

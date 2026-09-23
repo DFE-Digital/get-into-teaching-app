@@ -38,6 +38,12 @@ cta_arrow_link:
   adjustments:
     link_target: "/train-to-be-a-teacher/accessibility-adjustments"
     link_text: "Find out more about adjustments to help you apply and train"
+timed_financial_content:
+  bursary_or_scholarship:
+    default:
+      text: "You could also receive a tax-free bursary or scholarship to train to teach certain subjects. Find out more about [your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries)."
+    2025:
+      text: "You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. Find out more about [your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries)."
 ---
 
 If you’re neurodivergent, have a long-term physical or mental health condition, or have any other accessibility needs, you can get support to become a teacher. This support can sometimes be referred to as training with disabilities and other needs. The support may be helpful to you, even if you do not identify as disabled.
@@ -64,7 +70,7 @@ It can take up to 14 weeks to get your DSA, so you should take this into conside
 
 $dsa$
 
-You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. Find out more about [your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
+$bursary_or_scholarship$
 
 ### Access to Work
 

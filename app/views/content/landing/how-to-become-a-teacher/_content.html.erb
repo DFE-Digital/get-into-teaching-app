@@ -27,9 +27,14 @@
         You can apply for tuition fee and maintenance loans, even if you already have a student loan.
       </p>
 
-      <p>
-        If you're interested in teaching certain subjects, you might be able to get a scholarship or bursary of up to <%= v :scholarships_generic_maxshortened %> tax-free. This is to support you while you are training and does not need to be paid back.
-      </p>
+      <%= render Content::TimedFinancialContentComponent.new(
+        default: {
+          text: "If you're interested in teaching certain subjects, you might be able to get a tax-free scholarship or bursary. This is to support you while you are training and does not need to be paid back.",
+        },
+        "2025": {
+          text: "If you're interested in teaching certain subjects, you might be able to get a scholarship or bursary of up to #{v :scholarships_generic_maxshortened} tax-free. This is to support you while you are training and does not need to be paid back.",
+        }
+      ) %>
 
       <p>
         <%= link_to("Find out about funding your teacher training", page_path("funding-and-support")) %>.

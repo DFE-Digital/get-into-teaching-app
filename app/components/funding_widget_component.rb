@@ -31,7 +31,10 @@ class FundingWidgetComponent < ViewComponent::Base
   end
 
   def funding_results
-    subject_data&.fetch(:funding, "")
+    funding = subject_data&.dig(:funding) || {}
+
+    funding.select { |_branch, text| text.present? }
+           .transform_values { |text| { text: text } }
   end
 
   def next_steps
