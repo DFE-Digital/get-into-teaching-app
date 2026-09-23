@@ -5,7 +5,9 @@ on:
   pull_request:
     types: [assigned, opened, synchronize, reopened]
   push:
-    branches: [ master ]
+    branches:
+      - master
+      - 3017-tests-new-actions
 
 permissions:
   contents: write
@@ -46,8 +48,7 @@ jobs:
              then
                 GIT_BRANCH=master
              else
-                GIT_REF=${{ github.head_ref }}
-                GIT_BRANCH=${GIT_REF##*/}
+                GIT_BRANCH="${GITHUB_REF#refs/heads/}"
              fi
 
              echo "BRANCH_TAG=$GIT_BRANCH" >> $GITHUB_ENV
@@ -116,12 +117,18 @@ jobs:
              then
                 GIT_BRANCH=master
              else
-                GIT_REF=${{ github.head_ref }}
-                GIT_BRANCH=${GIT_REF##*/}
+                GIT_BRANCH="${GITHUB_REF#refs/heads/}"
              fi
 
              echo "BRANCH_TAG=$GIT_BRANCH" >> $GITHUB_ENV
              echo "DOCKER_IMAGE=${{ env.DOCKER_REPOSITORY }}:sha-${{steps.sha.outputs.short }}" >> $GITHUB_OUTPUT
+
+
+      - name: Debug branch values
+        run: |
+          echo "github.ref=${{ github.ref }}"
+          echo "github.head_ref=${{ github.head_ref }}"
+          echo "BRANCH_TAG=${{ env.BRANCH_TAG }}"
 
       - name: Set build action environment variable release
         id: build-vars-release
@@ -439,14 +446,15 @@ jobs:
 
   development:
     name: Development Deployment
-    needs: [  feature_tests, javascript_tests, build_release  ]
-    if: github.ref == 'refs/heads/master'
+    needs: [  build_release  ]
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/3017-tests-new-actions'
     concurrency: Development
     runs-on: ubuntu-latest
     environment:
       name: development
     outputs:
-      release_tag: ${{steps.tag_version.outputs.pr_number}}
+      release_tag: ${{steps.test_values.outputs.pr_number}}
+      release_id: ${{ steps.release.outputs.id }}
       release_sha: ${{github.sha }}
     steps:
       - name: Check out the repo
@@ -473,37 +481,66 @@ jobs:
 
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
 
+      - name: Test values
+        id: test_values
+        run: |
+          echo "pr_found=1" >> "$GITHUB_OUTPUT"
+          echo "pr_number=test-${{ github.run_id }}" >> "$GITHUB_OUTPUT"
+
       - name: Generate Tag from PR Number
         id: tag_version
         uses: DFE-Digital/github-actions/GenerateReleaseFromSHA@master
         with:
           sha: ${{github.sha}}
 
+      - name: Debug tag outputs
+        run: |
+          echo "pr_found from tag_version outputs=${{ steps.tag_version.outputs.pr_found }}"
+          echo "pr_number from tag_version outputs=${{ steps.tag_version.outputs.pr_number }}"
+      
+      - name: Debug test values
+        run: |
+          echo "pr_number=${{ steps.test_values.outputs.pr_number }}"
+
       - name: Create a GitHub Release
         id: release
-        if: steps.tag_version.outputs.pr_found == 1
+        if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           release_response=$(gh api \
             --method POST \
             /repos/${{ github.repository }}/releases \
-            -f tag_name='${{ steps.tag_version.outputs.pr_number }}' \
-            -f target_commitish='${{ github.sha }}' \
-            -f name='Release ${{ steps.tag_version.outputs.pr_number }}' \
-            -f body='${{ steps.tag_version.outputs.pr_number }}' \
-            -f draft=true \
-            -f prerelease=false)
+            -f tag_name="test-${{ github.run_id }}" \
+            -f target_commitish="${{ github.sha }}" \
+            -f name="Release ${{ steps.test_values.outputs.pr_number }}" \
+            -f body="${{ steps.test_values.outputs.pr_number }}" \
+            -F draft=true \
+            -F prerelease=false)
+
+          echo "Release response: $release_response"
 
           release_id=$(echo "$release_response" | jq -r '.id')
 
           echo "id=$release_id" >> "$GITHUB_OUTPUT"
 
+      - name: Debug created release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release view "${{ steps.test_values.outputs.pr_number }}"
+
+      - name: List matching releases
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release list --limit 100 | grep "${{ steps.test_values.outputs.pr_number }}"
+
       - name: Copy PR Info to Release
         if: steps.release.outputs.id
         uses: DFE-Digital/github-actions/CopyPRtoRelease@master
         with:
-          PR_NUMBER:  ${{ steps.tag_version.outputs.pr_number }}
+          PR_NUMBER:  ${{ steps.test_values.outputs.pr_number }}
           RELEASE_ID: ${{ steps.release.outputs.id }}
           TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -657,7 +694,8 @@ jobs:
   production:
     name: Production Deployment
     runs-on: ubuntu-latest
-    needs: [ integration, development ]
+    needs: [ development ]
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/3017-tests-new-actions'
     concurrency: production
     environment:
        name: production
@@ -674,55 +712,70 @@ jobs:
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
             subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Get Release Id from Tag
-        id: tag_id
-        uses: DFE-Digital/github-actions/DraftReleaseByTag@master
-        with:
-          TAG: ${{needs.development.outputs.release_tag}}
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Debug release tag
+        run: |
+          echo "release_tag=${{ needs.development.outputs.release_tag }}"
+
+      - name: Debug release id
+        run: |
+          echo "Release ID: ${{ needs.development.outputs.release_id }}"
+      
+      - name: Debug release id
+        run: |
+          echo "Release ID: ${{ needs.development.outputs.release_id }}"
 
       - name: Publish Release
-        if: steps.tag_id.outputs.release_id
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh api \
-            repos/${{ github.repository }}/releases/${{ steps.tag_id.outputs.release_id }} \
             --method PATCH \
-            -f draft=false
+            /repos/${{ github.repository }}/releases/${{ needs.development.outputs.release_id }} \
+            -F draft=false \
+            -f name="PATCH test"
+      
+      - name: Check Release
+        if: needs.development.outputs.release_id
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api \
+            /repos/${{ github.repository }}/releases/${{ needs.development.outputs.release_id }} \
+            --jq '{id: .id, tag: .tag_name, draft: .draft, name: .name}'
 
-      - name: Deploy to Production
-        uses: ./.github/workflows/actions/deploy
-        id: deploy
-        with:
-          environment: production
-          sha:  ${{ github.sha }}
-          azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
 
-      - name: Teams Release Notification
-        if: steps.tag_id.outputs.release_id
-        uses: DFE-Digital/github-actions/send-to-teams-channel@master
-        with:
-          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
-          title: "Release Published: ${{steps.tag_id.outputs.release_name}}"
-          service: ${{ vars.TEAMS_MSG_SERVICE_NAME }}
-          minimal: true
-          status: good
-          message: |
-            ${{ fromJson( steps.tag_id.outputs.release_body) }}
+      # - name: Deploy to Production
+      #   uses: ./.github/workflows/actions/deploy
+      #   id: deploy
+      #   with:
+      #     environment: production
+      #     sha:  ${{ github.sha }}
+      #     azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
+      #     azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+      #     azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      #     KEY_VAULT:         ${{ secrets.KEY_VAULT }}
 
-      - name: Notify teams channel on job failure
-        if: failure()
-        uses: DFE-Digital/github-actions/send-to-teams-channel@master
-        with:
-          teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
-          title: Build and Deploy
-          service: ${{ vars.TEAMS_MSG_SERVICE_NAME }}
-          message: |
-            Failure in Deploy to Production
+      # - name: Teams Release Notification
+      #   if: steps.tag_id.outputs.release_id
+      #   uses: DFE-Digital/github-actions/send-to-teams-channel@master
+      #   with:
+      #     teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
+      #     title: "Release Published: ${{steps.tag_id.outputs.release_name}}"
+      #     service: ${{ vars.TEAMS_MSG_SERVICE_NAME }}
+      #     minimal: true
+      #     status: good
+      #     message: |
+      #       ${{ fromJson( steps.tag_id.outputs.release_body) }}
+
+      # - name: Notify teams channel on job failure
+      #   if: failure()
+      #   uses: DFE-Digital/github-actions/send-to-teams-channel@master
+      #   with:
+      #     teams-webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
+      #     title: Build and Deploy
+      #     service: ${{ vars.TEAMS_MSG_SERVICE_NAME }}
+      #     message: |
+      #       Failure in Deploy to Production
 
   deploy_domains_infra:
     name: Deploy Domains Infrastructure
