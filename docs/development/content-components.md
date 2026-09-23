@@ -87,6 +87,13 @@ Components whose type is listed in `RUNTIME_COMPONENT_TYPES` (in
 are rendered **per-request** instead. If you add a component that needs request
 state, add its type there as well as to `COMPONENT_TYPES`.
 
+This includes **containers**. If a component rendered via `$placeholder$` renders
+a runtime component from *its own* partials, the container must be in
+`RUNTIME_COMPONENT_TYPES` too — otherwise the container is baked at compile time
+and freezes the nested runtime component inside it. `steps` is registered for
+exactly this reason: `steps-to-become-a-teacher` renders
+`step_2_understand_funding`, which renders `TimedFinancialContentComponent`.
+
 How it works:
 
 1. Instead of rendering the component at compile time, the handler records it and

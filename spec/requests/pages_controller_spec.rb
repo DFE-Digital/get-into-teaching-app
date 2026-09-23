@@ -63,6 +63,32 @@ describe PagesController, type: :request do
       end
     end
 
+    # The steps on this page render TimedFinancialContentComponent from an ERB
+    # partial (inside the `steps` component), so the whole `steps` component has
+    # to be a runtime component - otherwise its content is baked at
+    # template-compile time and never reflects the funding window or the
+    # ?now=/?branch= overrides.
+    context "with a page whose steps contain timed financial content" do
+      subject(:funding_step) { response.body }
+
+      context "when the 2025 funding window is forced" do
+        before { get "/steps-to-become-a-teacher?branch=2025" }
+
+        it "renders the windowed copy advertising the amount" do
+          expect(funding_step).to include("bursary or scholarship of up to")
+        end
+      end
+
+      context "when the default branch is forced" do
+        before { get "/steps-to-become-a-teacher?branch=default" }
+
+        it "renders the default copy without the amount" do
+          expect(funding_step).to include("might be able to get a tax-free bursary or scholarship to support you")
+          expect(funding_step).not_to include("bursary or scholarship of up to")
+        end
+      end
+    end
+
     context "with invalid page" do
       subject { response }
 
