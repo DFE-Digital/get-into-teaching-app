@@ -41,7 +41,7 @@ cta_arrow_link:
 timed_financial_content:
   bursary_or_scholarship:
     default:
-      text: "You could also receive a tax-free bursary or scholarship to train to teach certain subjects. Find out more about [your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries)."
+      text: "You could also receive a tax-free bursary to train to teach certain subjects. Find out more about [your eligibility for a bursary](/funding-and-support/scholarships-and-bursaries)."
     2025:
       text: "You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. Find out more about [your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries)."
 ---

@@ -14,7 +14,7 @@ cta_arrow_link:
     link_target: "/life-as-a-teacher/explore-subjects"
     link_text: "Find out more about the subjects you could teach"
 navigation: 20.15
-navigation_title: Bursaries and scholarships
+navigation_title: Bursaries
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
 before-content:
     - content/funding-and-support/scholarships-and-bursaries/funding-widget
