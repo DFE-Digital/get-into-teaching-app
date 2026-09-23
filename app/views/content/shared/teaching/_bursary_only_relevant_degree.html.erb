@@ -1,0 +1,12 @@
+<%
+  subject_key_map = {
+    "design and technology" => "design_technology",
+  }
+  subject_key = subject_key_map.fetch(@front_matter["subject"], @front_matter["subject"])
+  bursary_key = "bursaries_2026_postgraduate_#{subject_key}_relevant"
+%>
+
+<div class="bursary_only">
+  <p><a href="/funding-and-support/scholarships-and-bursaries">Tax-free bursaries of up to <%= v bursary_key %></a> are available for eligible trainee <%= @front_matter["subject"] %> teachers.</p>
+  <p>You can get a bursary alongside a tuition fee loan and maintenance loan.</p>
+</div>
