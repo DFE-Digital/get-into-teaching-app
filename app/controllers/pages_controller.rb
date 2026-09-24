@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   class InvalidTemplateName < RuntimeError; end
   class InvalidPrivacyPolicy < RuntimeError; end
 
-  before_action :init_funding_widget, only: %i[scholarships_and_bursaries scholarships_and_bursaries_search]
+  before_action :init_funding_widget, only: %i[bursaries]
 
   MISSING_TEMPLATE_EXCEPTIONS = [
     ActionView::MissingTemplate,
@@ -75,12 +75,8 @@ class PagesController < ApplicationController
     render_page("events/what-happens-at-events-transcript")
   end
 
-  def scholarships_and_bursaries
-    render_page("funding-and-support/scholarships-and-bursaries")
-  end
-
-  def scholarships_and_bursaries_search
-    render_page("funding-and-support/scholarships-and-bursaries-search")
+  def bursaries
+    render_page("funding-and-support/bursaries")
   end
 
   def authenticate?
