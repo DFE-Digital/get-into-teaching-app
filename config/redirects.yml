@@ -99,13 +99,14 @@ redirects:
   "/node/2844": "/funding-and-support/bursaries"
 
   # Subject knowledge enhancement
-  "/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses(*article)": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-  "/subject-knowledge-enhancement-ske-courses": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-  "/improve-your-subject-knowledge": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-  "/node/2339": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-  "/node/2469": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-  "/node/272": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
-  "/how-to-apply-for-teacher-training/ske-explained-transcript": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
+  "/how-to-apply-for-teacher-training/subject-knowledge-enhancement": "/"
+  "/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses(*article)": "/"
+  "/subject-knowledge-enhancement-ske-courses": "/"
+  "/improve-your-subject-knowledge": "/"
+  "/node/2339": "/"
+  "/node/2469": "/"
+  "/node/272": "/"
+  "/how-to-apply-for-teacher-training/ske-explained-transcript": "/"
 
   # Legacy site path redirects
   "/get-help-and-support/teacher-training-advisers": "/teacher-training-advisers"
@@ -324,7 +325,7 @@ redirects:
   "/train-to-be-a-teacher/teacher-training-references": "/how-to-apply-for-teacher-training/teacher-training-references"
   "/train-to-be-a-teacher/teacher-training-interview": "/how-to-apply-for-teacher-training/teacher-training-interview"
   "/train-to-be-a-teacher/if-your-application-is-unsuccessful": "/how-to-apply-for-teacher-training/if-your-application-is-unsuccessful"
-  "/train-to-be-a-teacher/subject-knowledge-enhancement": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
+  "/train-to-be-a-teacher/subject-knowledge-enhancement": "/"
   "/salaries-and-benefits": "/life-as-a-teacher/pay-and-benefits/teacher-pay"
   "/teaching-internship-providers": "/train-to-be-a-teacher/teaching-internships"
   "/train-to-be-a-teacher/if-you-want-to-change-career": "/life-as-a-teacher/change-careers"
