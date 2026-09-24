@@ -91,7 +91,7 @@ describe PagesController, type: :request do
         before { get "/steps-to-become-a-teacher?branch=default" }
 
         it "renders the default copy without the amount" do
-          expect(funding_step).to include("might be able to get a tax-free bursary or scholarship to support you")
+          expect(funding_step).to include("might be able to get a tax-free bursary to support you")
           expect(funding_step).not_to include("bursary or scholarship of up to")
         end
       end
