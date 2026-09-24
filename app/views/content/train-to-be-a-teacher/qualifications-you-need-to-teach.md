@@ -21,6 +21,9 @@ timed_financial_content:
       partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/bursary"
     2025:
       partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/bursary_and_scholarships"
+  subject_knowledge_enhancement:
+    2025: 
+      partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/subject_knowledge_enhancement"
 ---
 
 You need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.
@@ -70,11 +73,4 @@ Talk to your training provider to find out what you can train to teach.
 
 $bursary_and_scholarship$
 
-## Do a subject knowledge enhancement (SKE) course
-
-You can do a subject knowledge enhancement course before or sometimes during your teacher training to improve your subject knowledge. Your teacher training provider might make this a requirement of accepting you on their course if:
-
-* you do not have a bachelor's degree in the subject you’re training to teach
-* you completed your bachelor's degree more than 5 years ago
-
-[Find out more about subject knowledge enhancement courses](/how-to-apply-for-teacher-training/subject-knowledge-enhancement).
+$subject_knowledge_enhancement$
