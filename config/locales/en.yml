@@ -91,9 +91,12 @@ en:
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding:
-          default: |-
-
+          2025: |-
             Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
+
+            Your course provider will confirm if this applies.
+          default: |-
+            Bursaries may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
 
             Your course provider will confirm if this applies.
       communication_and_media_studies:
