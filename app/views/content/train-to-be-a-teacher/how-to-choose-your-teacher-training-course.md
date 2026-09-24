@@ -9,9 +9,6 @@ cta_arrow_link:
   qualifications:
     link_target: "/train-to-be-a-teacher/qualifications-you-need-to-teach"
     link_text: "Find out about the qualifications you need to train to teach"
-  funding:
-    link_target: "/funding-and-support/tuition-fee-and-maintenance-loans"
-    link_text: "Find out more about student finance for fee-paying teacher training"
   salaried:
     link_target: "/funding-and-support/salaried-teacher-training"
     link_text: "Find out more about salaried teacher training"
@@ -39,21 +36,6 @@ expander:
       <p>
       If your application is successful, the training provider may be able to help you with applying for your visa. <a href="/non-uk-teachers/visas-for-non-uk-trainees">Find out how to apply for your visa to train to teach in England</a>.
       </p>
-  fee-funded-teacher-training:
-    title: fee-paying teacher training
-    text: |-
-      <p>
-      If you have settled status, refugee status, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain in the UK</a>, you may be eligible for a tuition fee loan, maintenance loan, bursary or scholarship.
-      </p>
-      <p>You may be eligible for financial support to train to teach if <a href="/non-uk-teachers/visas-for-non-uk-trainees"> you are from Ukraine or Afghanistan and on certain visas</a>.</p>
-      <p>
-      Other non-UK citizens may not be eligible for student finance, but may be eligible for a bursary or scholarship to train to teach languages and physics.
-      </p>
-      <p>If you are in <a href="https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you are unlikely to be eligible for financial support.</p>
-      <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
-      <p>
-      Learn more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.
-      </p>
   salaried-teacher-training:
     title: salaried teacher training
     text: |-
@@ -75,7 +57,17 @@ expander:
       <li>the deadline for non-UK applications, as they may close earlier</li>
       </ul>
       </p>
-
+timed_financial_content:
+  fee-paying-teacher-training:
+    default:
+      partial: "content/train-to-be-a-teacher/how-to-choose-your-teacher-training-course/bursary"
+    2025:
+      partial: "content/train-to-be-a-teacher/how-to-choose-your-teacher-training-course/bursary_and_scholarships"
+  bursaries_and_scholarships:
+    default:
+      text: "If your teacher training course leads to QTS, [you may be eligible for a bursary](/funding-and-support/scholarships-and-bursaries) to help you train."
+    2025:
+      text: "If your teacher training course leads to QTS, [you may be eligible for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries) to help you train."
 ---
 
 All primary and secondary postgraduate teacher training courses include time spent in school placements with some theoretical learning. 
@@ -109,19 +101,11 @@ Most primary and secondary schools in England need you to have [qualified teache
 
 Most teacher training courses will award QTS, but some will award QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
 
-If your teacher training course leads to QTS, [you may be eligible for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries) to help you train.
+$bursaries_and_scholarships$
 
 ## If the course is fee-paying or salaried
 
-### Fee-paying teacher training
-
-Most teacher training courses are fee-paying. This means you have to pay tuition fees and will not earn a salary while you train. 
-
-There are ways to fund your training, for example, through tuition fee and maintenance loans. You may also be eligible for a bursary or scholarship.
-
-$funding$
-
-$fee-funded-teacher-training$
+$fee-paying-teacher-training$
 
 ### Salaried teacher training
 

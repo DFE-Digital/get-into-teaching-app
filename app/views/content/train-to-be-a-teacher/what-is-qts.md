@@ -36,6 +36,12 @@ cta_arrow_link:
   qts-ao:
     link_target: "/train-to-be-a-teacher/assessment-only-route-to-qts"
     link_text: "Find out how to get QTS through assessment only"
+timed_financial_content:
+  bursaries_and_scholarship:
+    default:
+      text: "you could be [eligible for a bursary](/funding-and-support/scholarships-and-bursaries) to help you train."
+    2025:
+      text: "you could be [eligible for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries) to help you train."
 ---
 
 You need English qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England. These are schools funded by local authorities.
@@ -51,7 +57,7 @@ $qualified-outside-the-uk$
 If your teacher training course leads to QTS: 
 
 * your course will be regulated by the Department for Education (DfE), ensuring high quality training 
-* you could be [eligible for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries) to help you train.
+* $bursaries_and_scholarship$
 
 As a teacher with QTS: 
 

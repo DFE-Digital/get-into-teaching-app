@@ -32,6 +32,12 @@ cta_arrow_link:
   adjustments:
     link_target: "/train-to-be-a-teacher/accessibility-adjustments"
     link_text: "Find out more about adjustments to help you train"
+timed_financial_content:
+  bursaries_and_scholarships:
+    default:
+      text: "For fee-paying postgraduate training, you can get financial support through student finance, or you may be eligible for bursaries. This support is available for your whole training course, including school placements."
+    2025:
+      text: "For fee-paying postgraduate training, you can get financial support through student finance, or you may be eligible for bursaries or scholarships. This support is available for your whole training course, including school placements."
 ---
 
 School placements are an essential and exciting part of school-led or university-led postgraduate teacher training. They're a chance to:
@@ -106,7 +112,7 @@ $adjustments$
 
 ## Are placements paid?
 
-For fee-paying postgraduate training, you can get financial support through student finance, or you may be eligible for bursaries or scholarships. This support is available for your whole training course, including school placements. 
+$bursaries_and_scholarships$ 
 
 For salaried teacher training, you’ll receive a salary throughout your teacher training, including placements. Because of this, your placement school may also be referred to as your ‘employing school’.
 
