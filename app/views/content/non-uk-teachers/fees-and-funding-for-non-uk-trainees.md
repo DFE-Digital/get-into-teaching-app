@@ -22,7 +22,7 @@ cta_arrow_link:
     link_target: "https://www.gov.uk/student-finance"
     link_text: "Check your eligibility and apply for student loans"
   bursaries:
-    link_target: "/funding-and-support/scholarships-and-bursaries"
+    link_target: "/funding-and-support/bursaries"
     link_text: "Learn more about bursaries and scholarships"
   salaried:
     link_target: "/funding-and-support/salaried-teacher-training"

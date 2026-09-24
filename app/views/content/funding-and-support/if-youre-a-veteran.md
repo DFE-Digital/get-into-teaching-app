@@ -9,7 +9,7 @@ promo_content:
   - "content/shared/block-promos/adviser_mailing_routes"
 cta_arrow_link:
   bursaries:
-    link_target: "/funding-and-support/scholarships-and-bursaries"
+    link_target: "/funding-and-support/bursaries"
     link_text: "Find out more about postgraduate scholarships and bursaries"
 navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.

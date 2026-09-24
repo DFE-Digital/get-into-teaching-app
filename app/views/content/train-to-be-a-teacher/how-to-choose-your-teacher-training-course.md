@@ -109,7 +109,7 @@ Most primary and secondary schools in England need you to have [qualified teache
 
 Most teacher training courses will award QTS, but some will award QTS with a [postgraduate certificate in education (PGCE)](/train-to-be-a-teacher/what-is-a-pgce).
 
-If your teacher training course leads to QTS, [you may be eligible for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries) to help you train.
+If your teacher training course leads to QTS, [you may be eligible for a scholarship or bursary](/funding-and-support/bursaries) to help you train.
 
 ## If the course is fee-paying or salaried
 

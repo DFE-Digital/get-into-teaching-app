@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Searching for funding options", type: :feature do
   include_context "when requesting a page with the Get Into Teaching events badge"
 
-  before { visit "/funding-and-support/scholarships-and-bursaries" }
+  before { visit "/funding-and-support/bursaries" }
 
   context "when javascript is disabled" do
     scenario "Submits the form when clicking the 'Continue' button" do

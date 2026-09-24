@@ -13,7 +13,7 @@ describe "_bursary_scholarship.html.erb" do
     rendered
   end
 
-  it { is_expected.to have_link("Tax-free bursaries of", href: "/funding-and-support/scholarships-and-bursaries") }
+  it { is_expected.to have_link("Tax-free bursaries of", href: "/funding-and-support/bursaries") }
   it { is_expected.to have_text(subject_name) }
   it { is_expected.to have_text(bursary_value) }
   it { is_expected.to have_text(scholarship_value) }

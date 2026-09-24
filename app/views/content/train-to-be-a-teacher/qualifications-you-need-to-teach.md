@@ -23,9 +23,9 @@ expander:
 timed_financial_content:
   bursary_or_scholarship:
     default:
-      text: "You could also receive a tax-free bursary or scholarship to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries)."
+      text: "You could also receive a tax-free bursary or scholarship to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/bursaries)."
     2025:
-      text: "You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries)."
+      text: "You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/bursaries)."
 ---
 
 You need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.

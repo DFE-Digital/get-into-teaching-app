@@ -81,21 +81,22 @@ redirects:
 
 
   # Scholarships and bursaries
-  "/funding-and-salary/overview/funding-by-subject/funding-for-training-to-teach-(*subject)": "/funding-and-support/scholarships-and-bursaries"
-  "/funding-and-salary/overview/funding-by-subject": "/funding-and-support/scholarships-and-bursaries"
-  "/funding-and-salary/overview/scholarships/(*subject)-scholarships": "/funding-and-support/scholarships-and-bursaries"
-  "/funding-and-salary/overview/scholarships": "/funding-and-support/scholarships-and-bursaries"
-  "/funding-and-salary/overview/how-you-will-be-paid": "/funding-and-support/scholarships-and-bursaries"
-  "/bursaries-and-funding": "/funding-and-support/scholarships-and-bursaries"
-  "/funding-my-teacher-training/bursaries-and-scholarships-for-teacher-training": "/funding-and-support/scholarships-and-bursaries"
-  "/node/2325": "/funding-and-support/scholarships-and-bursaries"
-  "/node/2334": "/funding-and-support/scholarships-and-bursaries"
-  "/node/2378": "/funding-and-support/scholarships-and-bursaries"
-  "/node/2390": "/funding-and-support/scholarships-and-bursaries"
-  "/node/2392": "/funding-and-support/scholarships-and-bursaries"
-  "/node/2393": "/funding-and-support/scholarships-and-bursaries"
-  "/node/2790": "/funding-and-support/scholarships-and-bursaries"
-  "/node/2844": "/funding-and-support/scholarships-and-bursaries"
+  "/funding-and-support/scholarships-and-bursaries": "/funding-and-support/bursaries"
+  "/funding-and-salary/overview/funding-by-subject/funding-for-training-to-teach-(*subject)": "/funding-and-support/bursaries"
+  "/funding-and-salary/overview/funding-by-subject": "/funding-and-support/bursaries"
+  "/funding-and-salary/overview/scholarships/(*subject)-scholarships": "/funding-and-support/bursaries"
+  "/funding-and-salary/overview/scholarships": "/funding-and-support/bursaries"
+  "/funding-and-salary/overview/how-you-will-be-paid": "/funding-and-support/bursaries"
+  "/bursaries-and-funding": "/funding-and-support/bursaries"
+  "/funding-my-teacher-training/bursaries-and-scholarships-for-teacher-training": "/funding-and-support/bursaries"
+  "/node/2325": "/funding-and-support/bursaries"
+  "/node/2334": "/funding-and-support/bursaries"
+  "/node/2378": "/funding-and-support/bursaries"
+  "/node/2390": "/funding-and-support/bursaries"
+  "/node/2392": "/funding-and-support/bursaries"
+  "/node/2393": "/funding-and-support/bursaries"
+  "/node/2790": "/funding-and-support/bursaries"
+  "/node/2844": "/funding-and-support/bursaries"
 
   # Subject knowledge enhancement
   "/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses(*article)": "/how-to-apply-for-teacher-training/subject-knowledge-enhancement"
@@ -433,7 +434,7 @@ redirects:
   "/steps-to-become-a-teacher-search": "/steps-to-become-a-teacher"
   "/landing/home": "/"
   "/train-to-be-a-teacher/if-you-have-a-degree-search": "/train-to-be-a-teacher/if-you-have-a-degree"
-  "/funding-and-support/scholarships-and-bursaries-search": "/funding-and-support/scholarships-and-bursaries"
+  "/funding-and-support/scholarships-and-bursaries-search": "/funding-and-support/bursaries"
   "/landing/how-to-become-a-teacher-mailing-list": "/landing/how-to-become-a-teacher"
 
   # Thank you page
