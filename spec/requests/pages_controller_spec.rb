@@ -57,7 +57,7 @@ describe PagesController, type: :request do
         before { get "/landing/how-to-fund-your-teacher-training?branch=default" }
 
         it "falls back to the default description without the amount" do
-          expect(meta_description).to include("bursaries and scholarships, depending")
+          expect(meta_description).to include("bursaries, depending")
           expect(meta_description).not_to include("available up to")
         end
       end
