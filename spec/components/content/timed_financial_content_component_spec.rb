@@ -91,7 +91,7 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
     end
 
     context "when now is the day after the 2025 window closes" do
-      let(:now) { Time.zone.parse("2026-09-29") }
+      let(:now) { Time.zone.parse("2026-09-30") }
 
       it { is_expected.to include("Default copy") }
     end
