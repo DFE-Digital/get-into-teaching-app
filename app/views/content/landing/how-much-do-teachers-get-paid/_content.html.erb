@@ -54,6 +54,13 @@
       }
     ) %>
 
-    <p> <%= link_to("Find out if you could get a bursary or scholarship", page_path("funding-and-support/scholarships-and-bursaries")) %>.</p>
+    <%= render Content::TimedFinancialContentComponent.new(
+      default: {
+        text: "<a href=\"/funding-and-support/scholarships-and-bursaries\">Find out if you could get a bursary</a>.",
+      },
+      "2025": {
+        text: "<a href=\"/funding-and-support/scholarships-and-bursaries\">Find out if you could get a bursary or scholarship</a>.",
+      }
+    ) %>
   </section>
 </div>

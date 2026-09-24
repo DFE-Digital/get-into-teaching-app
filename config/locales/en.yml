@@ -210,7 +210,7 @@ en:
         sub_head: "Physics - Secondary"
         funding:
           2025: "Scholarships of %{scholarships_physics} or bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers if you're eligible."
-          default: "Scholarships or bursaries are available for trainee physics teachers if you're eligible."
+          default: "Bursaries are available for trainee physics teachers if you're eligible."
       psychology:
         name: "Psychology"
         group: "Secondary"
