@@ -6,3 +6,11 @@ scholarships:
   generic:
     maxshortened: £31k
     max: £31,000
+  2026:
+    chemistry: £25,000
+    computing: £25,000
+    languages_french_german_spanish: £20,000
+    physics: £25,000
+    generic:
+      maxshortened: £25k
+      max: £25,000
