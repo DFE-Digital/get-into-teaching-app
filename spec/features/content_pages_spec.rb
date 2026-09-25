@@ -20,7 +20,7 @@ RSpec.feature "content pages check", :content, type: :feature do
       %r{/event-categories},
       %r{/test},
       %r{/funding-and-support/scholarships-and-bursaries}, # TODO: delete this exclusion after the content has been updated
-      %r{ /how-to-apply-for-teacher-training/subject-knowledge-enhancement}, # TODO: delete this exclusion after all the content has been updated
+      %r{/how-to-apply-for-teacher-training/subject-knowledge-enhancement}, # TODO: delete this exclusion after all the content has been updated
     ]
   end
 
