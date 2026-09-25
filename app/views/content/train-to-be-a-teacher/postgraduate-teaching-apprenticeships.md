@@ -19,9 +19,9 @@ expander:
 timed_financial_content:
   bursary_or_scholarship:
     default:
-      text: "It’s worth checking if there’s a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) for a fee-paying route available before you apply for a PGTA."
+      text: "It’s worth checking if there’s a [bursary or scholarship](/funding-and-support/bursaries) for a fee-paying route available before you apply for a PGTA."
     2025:
-      text: "It’s worth checking if there’s a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) for a fee-paying route available before you apply for a PGTA.These can be worth up to $scholarships_generic_maxshortened$, depending on the subject."
+      text: "It’s worth checking if there’s a [bursary or scholarship](/funding-and-support/bursaries) for a fee-paying route available before you apply for a PGTA.These can be worth up to $scholarships_generic_maxshortened$, depending on the subject."
 ---
 
 A postgraduate teaching apprenticeship (PGTA) is a teacher training route that leads to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). You need QTS to teach in most primary, secondary and special schools in England. 

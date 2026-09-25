@@ -17,11 +17,11 @@ navigation: 20.15
 navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
 before-content:
-    - content/funding-and-support/scholarships-and-bursaries/funding-widget
+    - content/funding-and-support/bursaries/funding-widget
 timed_financial_content:
   compare_bursaries_and_scholarships:
     2025:
-      partial: "content/funding-and-support/scholarships-and-bursaries/compare_bursaries_and_scholarships"
+      partial: "content/funding-and-support/bursaries/compare_bursaries_and_scholarships"
 ---
 
 ## Eligibility for bursaries

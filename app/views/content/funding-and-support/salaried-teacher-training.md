@@ -41,7 +41,7 @@ The postgraduate salaried courses are:
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
-These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries or scholarships to help fund fee-paying courses](/funding-and-support/scholarships-and-bursaries).
+These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries or scholarships to help fund fee-paying courses](/funding-and-support/bursaries).
 
 ## What school experience is required for salaried courses?
 
@@ -67,7 +67,7 @@ If you do not already have a degree, you may be eligible for a [teacher degree a
 
 You'll receive an [unqualified teacher’s salary](/life-as-a-teacher/pay-and-benefits/teacher-pay). The exact amount will vary depending on the school you work in. 
 
-It’s worth checking if there is a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) available for your subject before you apply for a salaried course. 
+It’s worth checking if there is a [bursary or scholarship](/funding-and-support/bursaries) available for your subject before you apply for a salaried course. 
 
 If you do a salaried course, you will not be eligible for a bursary, scholarship or student finance. You’ll also be taxed on your income, whereas you will not be taxed on a bursary or scholarship. 
 

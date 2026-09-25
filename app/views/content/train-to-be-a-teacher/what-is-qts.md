@@ -51,7 +51,7 @@ $qualified-outside-the-uk$
 If your teacher training course leads to QTS: 
 
 * your course will be regulated by the Department for Education (DfE), ensuring high quality training 
-* you could be [eligible for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries) to help you train.
+* you could be [eligible for a scholarship or bursary](/funding-and-support/bursaries) to help you train.
 
 As a teacher with QTS: 
 

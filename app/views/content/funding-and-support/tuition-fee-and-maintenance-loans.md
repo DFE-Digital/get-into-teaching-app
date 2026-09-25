@@ -16,7 +16,7 @@ calls_to_action:
         link_target: "https://www.gov.uk/student-finance-calculator"
 cta_arrow_link:
   bursaries:
-    link_target: "/funding-and-support/scholarships-and-bursaries"
+    link_target: "/funding-and-support/bursaries"
     link_text: "Find out if you're eligible for a bursary or scholarship"
   disability-support:
     link_target: "/funding-and-support/if-youre-disabled"
