@@ -1,5 +1,4 @@
 bursaries:
-  skeweekly: £175
   veteran:
     total: £40,000
     annual: £20,000
@@ -15,4 +14,3 @@ bursaries:
     languagesother: £20,000
     maths: £29,000
     physics: £29,000
-    
