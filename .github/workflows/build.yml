@@ -482,15 +482,24 @@ jobs:
       - name: Create a GitHub Release
         id: release
         if: steps.tag_version.outputs.pr_found == 1
-        uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ steps.tag_version.outputs.pr_number }}
-          body: ${{ steps.tag_version.outputs.pr_number }}
-          release_name: Release ${{ steps.tag_version.outputs.pr_number }}
-          commitish: ${{ github.sha}}
-          prerelease: false
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          release_response=$(gh api \
+            --method POST \
+            /repos/${{ github.repository }}/releases \
+            -f tag_name='${{ steps.tag_version.outputs.pr_number }}' \
+            -f target_commitish='${{ github.sha }}' \
+            -f name='Release ${{ steps.tag_version.outputs.pr_number }}' \
+            -f body='${{ steps.tag_version.outputs.pr_number }}' \
+            -F draft=true \
+            -F prerelease=false)
+
+          release_id=$(echo "$release_response" | jq -r '.id')
+
+          echo "id=$release_id" >> "$GITHUB_OUTPUT"
+
+          echo "Created release ID: $release_id"
 
       - name: Copy PR Info to Release
         if: steps.release.outputs.id
@@ -676,11 +685,13 @@ jobs:
 
       - name: Publish Release
         if: steps.tag_id.outputs.release_id
-        uses: eregon/publish-release@01df127f5e9a3c26935118e22e738d95b59d10ce # Pinned at v1.0.6 NOTE:This repo has been archived May 29 2025!
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          release_id: ${{steps.tag_id.outputs.release_id}}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api \
+            --method PATCH \
+            /repos/${{ github.repository }}/releases/${{ steps.tag_id.outputs.release_id }} \
+            -F draft=false
 
       - name: Deploy to Production
         uses: ./.github/workflows/actions/deploy
