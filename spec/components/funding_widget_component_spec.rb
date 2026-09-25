@@ -89,7 +89,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
       end
 
       it "does not render the default branch copy" do
-        expect(page).to have_no_text("Scholarships and bursaries are available for trainee maths teachers")
+        expect(page).to have_no_text("Bursaries are available for trainee maths teachers")
       end
     end
 
@@ -97,7 +97,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
       before { with_request_url("/?branch=default") { render_inline(component) } }
 
       it "falls back to the default branch copy" do
-        expect(page).to have_text("Scholarships and bursaries are available for trainee maths teachers")
+        expect(page).to have_text("Bursaries are available for trainee maths teachers")
       end
 
       it "does not render the windowed amount" do

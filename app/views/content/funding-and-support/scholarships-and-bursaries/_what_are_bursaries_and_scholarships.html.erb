@@ -1,0 +1,25 @@
+<p>Postgraduate bursaries are tax-free payments you receive if you're training to teach certain subjects. You do not need to apply for a bursary, you'll automatically get one if you're eligible.</p>
+<p>Postgraduate scholarships are awarded by organisations with a passion for their subject area. They combine tax-free payments with extra benefits like subject-specific support, mentoring and networking opportunities. If you're eligible, you can apply directly to the scholarship provider.</p>
+<p>You cannot receive both a bursary and a scholarship.</p>
+<p>If you receive either a bursary or a scholarship, you do not need to pay it back.</p>
+<p>Bursaries and scholarships are not available for:</p>
+<ul>
+  <li>every subject</li>
+  <li>salaried teacher training</li>
+</ul>
+
+<%= render Content::ExpanderComponent.new(title: "bursaries and scholarships") do %>
+  <%= render Content::TimedFinancialContentComponent.new(
+    default: { text: "Details of financial support for courses starting in the 2027 to 2028 academic year will be released soon." },
+    "2025": {
+      text: safe_html_format("<p>If you are a non-UK citizen who has permission to <a href=\"https://www.gov.uk/browse/visas-immigration/settle-in-the-uk\">live permanently in the UK</a> and are eligible for student finance, you may be able to get a bursary or scholarship.</p>" \
+                               "<p>Find out about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">funding for non-UK citizens</a>.</p>"),
+    }
+  ) %>
+<% end %>
+
+<%= render Content::TimedFinancialContentComponent.new(
+  "2025": {
+    text: "The amounts on this page apply if you're starting your training #{value :bursaries_fundingdates}.",
+  }
+) %>

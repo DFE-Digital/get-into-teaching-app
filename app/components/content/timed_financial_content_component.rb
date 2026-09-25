@@ -66,8 +66,8 @@ module Content
     def override_branch_key
       return unless overrides_enabled?
 
-      override = view_context.params[:branch].presence || branch
-      override&.to_s
+      key = (view_context.params[:branch].presence || branch)&.to_s
+      key if key && (conditional_branch_args.key?(key) || key == "default")
     end
 
     def branch_key(local_now)

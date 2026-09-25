@@ -1,0 +1,10 @@
+<p>
+  You could also receive a tax-free bursary to train to teach certain subjects. <%= link_to("Find out more about your eligibility for a bursary", "/funding-and-support/scholarships-and-bursaries") %>
+</p>
+
+<%= render Content::ExpanderComponent.new(
+  title: "bursaries",
+    text: "If you train to teach languages or physics, you may be eligible for a bursary.",
+  link_title: "Learn more about fees and financial support for non-UK trainee teachers.",
+  link_url: "/non-uk-teachers/fees-and-funding-for-non-uk-trainees",
+) %>

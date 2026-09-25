@@ -1,6 +1,14 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title><%= suffix_title(page_title(@page_title, @front_matter)) %></title>
+  <%
+    timed_title = @front_matter&.dig("timed_financial_content", "title")
+    resolved_title = if timed_title
+      render(Content::ComponentInjector.new("timed_financial_content", timed_title).component)
+    else
+      page_title(@page_title, @front_matter)
+    end
+  %>
+  <title><%= suffix_title(resolved_title) %></title>
   <%= csp_meta_tag %>
   <%= content_for?(:canonical) ? yield(:canonical) : canonical_tag %>
   <%= tag.meta(name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no') %>
@@ -59,7 +67,7 @@
     <%= meta_tag(key: 'description', value: description, opengraph: true) %>
   <% end %>
   <%= meta_tag(key: 'type', value: 'website', opengraph: true) %>
-  <%= meta_tag(key: 'title', value: page_title(@page_title, @front_matter), opengraph: true) %>
+  <%= meta_tag(key: 'title', value: resolved_title, opengraph: true) %>
   <%= meta_tag(key: 'site_name', value: "Get Into Teaching", opengraph: true) %>
   <%= meta_tag(key: 'locale', value: "en_GB", opengraph: true) %>
   <%= meta_tag(key: 'url', value: request.original_url, opengraph: true) %>

@@ -15,17 +15,15 @@ expander:
     text: If you have qualifications from outside the UK, you will need to show that they meet the standards set for teacher training in England.
     link_title: You can get help comparing English and international qualifications.
     link_url: /non-uk-teachers/non-uk-qualifications
-  bursaries:
-    title: bursaries and scholarships
-    text: If you train to teach languages or physics, you may be eligible for a bursary or scholarship.
-    link_title: Learn more about fees and financial support for non-UK trainee teachers.
-    link_url: /non-uk-teachers/fees-and-funding-for-non-uk-trainees
 timed_financial_content:
-  bursary_or_scholarship:
+  bursary_and_scholarship:
     default:
-      text: "You could also receive a tax-free bursary or scholarship to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries)."
+      partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/bursary"
     2025:
-      text: "You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries)."
+      partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/bursary_and_scholarships"
+  subject_knowledge_enhancement:
+    2025: 
+      partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/subject_knowledge_enhancement"
 ---
 
 You need [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.
@@ -73,15 +71,6 @@ You can choose to specialise in [teaching children with special educational need
 
 Talk to your training provider to find out what you can train to teach.
 
-$bursary_or_scholarship$
+$bursary_and_scholarship$
 
-$bursaries$
-
-## Do a subject knowledge enhancement (SKE) course
-
-You can do a subject knowledge enhancement course before or sometimes during your teacher training to improve your subject knowledge. Your teacher training provider might make this a requirement of accepting you on their course if:
-
-* you do not have a bachelor's degree in the subject you’re training to teach
-* you completed your bachelor's degree more than 5 years ago
-
-[Find out more about subject knowledge enhancement courses](/how-to-apply-for-teacher-training/subject-knowledge-enhancement).
+$subject_knowledge_enhancement$

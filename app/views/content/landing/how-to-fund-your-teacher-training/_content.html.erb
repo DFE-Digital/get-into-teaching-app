@@ -4,14 +4,21 @@
     <div class="inset">
       <%= render Content::TimedFinancialContentComponent.new(
         default: {
-          text: "Bursaries and scholarships for courses starting between September 2027 and July 2028 will be announced soon.",
+          text: "Details of financial support for courses starting in the 2027 to 2028 academic year will be released soon.",
         },
         "2025": {
           partial: "content/landing/how-to-fund-your-teacher-training/available_bursaries_table",
         }
       ) %>
 
-      <p><%= link_to("Find out more about how to get a bursary or scholarship", page_path("funding-and-support/scholarships-and-bursaries")) %>.</p>
+      <%= render Content::TimedFinancialContentComponent.new(
+        default: {
+          text: "<a href=\"/funding-and-support/scholarships-and-bursaries\">Find out more about how to get a bursary</a>.",
+        },
+        "2025": {
+          text: "<a href=\"/funding-and-support/scholarships-and-bursaries\">Find out more about how to get a bursary or scholarship</a>.",
+        }
+      ) %>
     </div>
   </section>
 
