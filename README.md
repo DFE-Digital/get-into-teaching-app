@@ -2,6 +2,7 @@
 
 A service for candidates to [get-into-teaching](https://getintoteaching.education.gov.uk/).
 
+
 ## Status
 
 [![View performance data on Skylight](https://badges.skylight.io/status/cCXe4O12iXtO.svg?token=dmQT0j0nuvDKRWL0RSr5ZMr-ARd25yfRzTePxnMsLYU)](https://www.skylight.io/app/applications/cCXe4O12iXtO)
