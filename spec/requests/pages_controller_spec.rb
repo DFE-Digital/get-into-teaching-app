@@ -177,6 +177,17 @@ describe PagesController, type: :request do
       it { is_expected.to be true }
     end
 
+    context "when the page's front matter sets nocache" do
+      before do
+        controller.instance_variable_set(
+          :@page,
+          Pages::Page.new("/example", "title" => "A dynamic page", "nocache" => true),
+        )
+      end
+
+      it { is_expected.to be true }
+    end
+
     context "when the page's front matter has no runtime component" do
       before do
         controller.instance_variable_set(
