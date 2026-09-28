@@ -1,4 +1,5 @@
 ---
+title: "Teacher training bursaries"
 subcategory: Courses with fees
 promo_content:
   - "content/shared/block-promos/adviser_findfees"
