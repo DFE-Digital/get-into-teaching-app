@@ -25,6 +25,7 @@ RSpec.describe SitemapController, type: :request do
         title: "Draft page",
         draft: true,
       },
+      "/page-without-title" => {},
     }
   end
 
@@ -71,6 +72,10 @@ RSpec.describe SitemapController, type: :request do
 
     it "does not include draft pages" do
       expect(links).not_to include("/draft")
+    end
+
+    it "does not include pages with no title" do
+      expect(links).not_to include("/page-without-title")
     end
   end
 
