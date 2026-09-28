@@ -37,7 +37,12 @@ cta_arrow_link:
   find:
     link_target: "https://find-teacher-training-courses.service.gov.uk/"
     link_text: "Find postgraduate teacher training"
-    
+timed_financial_content:
+  subject_knowledge_enhancement:
+    default:
+      text: "providers may set conditions of offer, such as completing a subject knowledge enhancement (SKE) course before you start your training"
+    2025:
+      text: "providers may set conditions of offer, such as completing a [subject knowledge enhancement (SKE) course](/how-to-apply-for-teacher-training/subject-knowledge-enhancement) before you start your training"
 ---
 
 Find out what you need to include in your primary or secondary teacher training application and what happens as part of the application process. 
@@ -65,7 +70,7 @@ It’s wise to apply as soon as you’re ready as:
 
 * training providers allocate places as people apply, so some courses can get full quickly 
 
-* providers may set conditions of offer, such as completing a [subject knowledge enhancement (SKE) course](/how-to-apply-for-teacher-training/subject-knowledge-enhancement) before you start your training 
+* $subject_knowledge_enhancement$ 
 
 * this will give you more time to plan how to fund your training 
 

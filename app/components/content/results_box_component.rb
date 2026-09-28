@@ -17,5 +17,22 @@ module Content
       @link_target = link_target
       @border_color = border_color
     end
+
+    def funding_args
+      branches = if funding.is_a?(Hash)
+                   funding.transform_values do |value|
+                     { text: value }
+                   end
+                 else
+                   {
+                     default: { text: funding },
+                   }
+                 end
+
+      {
+        format: :text,
+        **branches,
+      }
+    end
   end
 end

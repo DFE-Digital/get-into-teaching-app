@@ -20,6 +20,13 @@ expander:
     title: moving to the UK
     header: "Ukraine citizens:"
     text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you are moving to the UK from Ukraine</a>.
+timed_financial_content:
+  subject_knowledge_enhancement:
+    format: text
+    default:
+      text: "you may need time to complete a subject knowledge enhancement (SKE) course and other conditions before starting your training"
+    2025:
+      text: "you may need time to complete a <a href=\"/how-to-apply-for-teacher-training/subject-knowledge-enhancement\">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training"
 ---
 
 You can apply for postgraduate teacher training courses starting $recruitmentcycle_openingdateandtime$. 
@@ -46,7 +53,7 @@ It’s wise to apply as soon as you’re ready because:
   <li> popular courses will fill up quickly </li>
   <li>there are a limited number of places on a course and they are filled up on a first come, first served basis</li>  
   <li>courses are open for people to apply all year round</li>  
-  <li>you may need time to complete a <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training</li> 
+  <li>$subject_knowledge_enhancement$</li> 
   <li>this will give you time to plan how you <a href="/funding-and-support">fund your training</a></li>
 </ul>
 

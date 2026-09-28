@@ -129,6 +129,8 @@ private
   def page_uses_runtime_component?
     return false unless @page
 
+    return true if @page.frontmatter.respond_to?(:nocache) && @page.frontmatter.nocache
+
     @page.frontmatter.to_h.keys.map(&:to_s).intersect?(
       TemplateHandlers::Markdown::RUNTIME_COMPONENT_TYPES,
     )

@@ -17,7 +17,9 @@ routes:
   - title: Postgraduate initial teacher training with fees
     course_length: 9 months full-time or up to 2 years part-time
     course_fee: "Yes"
-    funding: Bursaries or scholarships, as well as student loans, are available if you’re eligible
+    funding:
+      2025: Bursaries or scholarships, as well as student loans, are available if you’re eligible
+      default: Bursaries, as well as student loans, are available if you’re eligible
     description: These courses combine theoretical learning with at least 2 classroom placements in schools. During your course, you’ll get the experience and knowledge you need to get qualified teacher status (QTS). On some courses, you can combine QTS with a postgraduate certificate in education (PGCE).
     cta_text: Find out more about postgraduate teacher training with fees
     cta_link: /train-to-be-a-teacher/if-you-have-a-degree

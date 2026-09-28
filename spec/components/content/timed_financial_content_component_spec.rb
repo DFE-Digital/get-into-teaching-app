@@ -298,8 +298,16 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
     context "when the override names a branch that is not configured" do
       let(:branch) { "does-not-exist" }
 
-      it "falls back to the default branch" do
-        expect(rendered).to include("Default copy")
+      it "ignores the override and falls back to the date-based selection" do
+        expect(rendered).to include("2025 copy")
+      end
+    end
+
+    context "when the branch param names a branch that is not configured" do
+      it "ignores the override and falls back to the date-based selection" do
+        with_request_url("/?branch=does-not-exist") do
+          expect(rendered).to include("2025 copy")
+        end
       end
     end
 
