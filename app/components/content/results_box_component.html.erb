@@ -21,7 +21,9 @@
       <hr aria-hidden="true">
       <div class="results-box__info-row">
         <div class="results-box__label">Funding </div>
-        <div class="results-box__value"><%= funding %></div>
+        <div class="results-box__value">
+          <%= render Content::TimedFinancialContentComponent.new(**funding_args) %>
+        </div>
       </div>
       <hr aria-hidden="true">
     </div>

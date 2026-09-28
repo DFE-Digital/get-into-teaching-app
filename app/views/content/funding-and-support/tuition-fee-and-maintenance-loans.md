@@ -15,9 +15,6 @@ calls_to_action:
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
 cta_arrow_link:
-  bursaries:
-    link_target: "/funding-and-support/scholarships-and-bursaries"
-    link_text: "Find out if you're eligible for a bursary or scholarship"
   disability-support:
     link_target: "/funding-and-support/if-youre-disabled"
     link_text: "Find out more about financial support if you have a disability"
@@ -40,6 +37,18 @@ expander:
       <p>If you are granted asylum in the UK, you may be eligible for financial support to train to teach.</p>
       <p>
       <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">Find out about funding for non-UK citizens</a>.</p>
+timed_financial_content:
+  bursaries_or_scholarship:
+    format: text
+    default:
+      text: "you also get a teaching bursary"
+    2025:
+      text: "you also get a teaching bursary or scholarship"
+  bursaries_and_scholarship:
+    default:
+      partial: "content/funding-and-support/tuition-fee-and-maintenance-loans/bursaries"
+    2025:
+      partial: "content/funding-and-support/tuition-fee-and-maintenance-loans/bursaries_and_scholarships"
 ---
 
 Funding is available to help you train to teach if you choose a course that has tuition fees. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs.
@@ -48,7 +57,7 @@ The amounts on this page are for the $finance_loanacademicyear$.
 
 You can still apply for a tuition fee loan and a maintenance loan if:
 
-* you also get a teaching bursary or scholarship
+* $bursaries_or_scholarship$
 
 * you've previously applied for and received a student loan
 
@@ -88,13 +97,7 @@ The maximum amount you may be eligible to borrow is:
 
 $student-finance-calculator$
 
-## Check your eligibility for a bursary or scholarship
-
-You may also be eligible for a tax-free bursary or scholarship, depending on the subject you're training to teach.
-
-You do not have to pay a bursary or scholarship back. You can get a bursary or scholarship as well as any tuition fee loan and maintenance loan.
-
-$bursaries$
+$bursaries_and_scholarship$
 
 ## Other financial support
 

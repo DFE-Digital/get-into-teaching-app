@@ -42,7 +42,12 @@
         <div class="site-footer__links-column">
           <h2 class="heading-m">Finance and funding</h2>
           <ul>
-            <li><a class="link--black" href="/funding-and-support/scholarships-and-bursaries">Bursaries and scholarships</a></li>
+            <li><a class="link--black" href="/funding-and-support/scholarships-and-bursaries">
+              <%= render Content::TimedFinancialContentComponent.new(
+                default: { text: "Bursaries" },
+                "2025": { text: "Bursaries and scholarships" },
+              ) %>
+            </a></li>
             <li><a class="link--black" href="/funding-and-support/salaried-teacher-training">Salaried teacher training</a></li>
             <li><a class="link--black" href="/funding-and-support/tuition-fees">Tuition fees</a></li>
             <li><a class="link--black" href="/funding-and-support/tuition-fee-and-maintenance-loans">Student finance</a></li>

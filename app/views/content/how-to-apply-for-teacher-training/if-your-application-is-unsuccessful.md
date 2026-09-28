@@ -15,6 +15,12 @@ expander:
       If you have qualifications from outside the UK, you should be able to request copies of your school results and degree from the places where you did them.
       </p>
       <p>You’ll need to show that they meet the standards set for teacher training in England. You can <a href="/non-uk-teachers/non-uk-qualifications">get help comparing English and international qualifications</a>.</p>
+timed_financial_content:
+  subject_knowledge_enhancement:
+    default:
+      text: "You may be able to do a subject knowledge enhancement (SKE) course to top up your subject knowledge. You could also find a course in a different subject, which may also involve a SKE course to prepare you to teach that subject."
+    2025:
+      text: "You may be able to do a subject knowledge enhancement (SKE) course to top up your subject knowledge. You could also find a course in a different subject, which may also involve a SKE course to prepare you to teach that subject. [Find out if you're eligible for a SKE course](/how-to-apply-for-teacher-training/subject-knowledge-enhancement)."
 ---
 
 Try not to worry - you can reapply if your application is unsuccessful. Many people are successful the second or third time around.
@@ -45,7 +51,7 @@ $check-your-qualifications$
 
 ### Lack of subject knowledge
 
-You may be able to do a subject knowledge enhancement (SKE) course to top up your subject knowledge. You could also find a course in a different subject, which may also involve a SKE course to prepare you to teach that subject. [Find out if you're eligible for a SKE course](/how-to-apply-for-teacher-training/subject-knowledge-enhancement).
+$subject_knowledge_enhancement$
 
 ### Lack of teaching or safeguarding knowledge
 

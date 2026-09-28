@@ -57,7 +57,7 @@ describe PagesController, type: :request do
         before { get "/landing/how-to-fund-your-teacher-training?branch=default" }
 
         it "falls back to the default description without the amount" do
-          expect(meta_description).to include("bursaries and scholarships, depending")
+          expect(meta_description).to include("bursaries, depending")
           expect(meta_description).not_to include("available up to")
         end
       end
@@ -91,7 +91,7 @@ describe PagesController, type: :request do
         before { get "/steps-to-become-a-teacher?branch=default" }
 
         it "renders the default copy without the amount" do
-          expect(funding_step).to include("might be able to get a tax-free bursary or scholarship to support you")
+          expect(funding_step).to include("might be able to get a tax-free bursary to support you")
           expect(funding_step).not_to include("bursary or scholarship of up to")
         end
       end
@@ -171,6 +171,17 @@ describe PagesController, type: :request do
         controller.instance_variable_set(
           :@page,
           Pages::Page.new("/example", "timed_financial_content" => { "compare" => { "default" => { "text" => "x" } } }),
+        )
+      end
+
+      it { is_expected.to be true }
+    end
+
+    context "when the page's front matter sets nocache" do
+      before do
+        controller.instance_variable_set(
+          :@page,
+          Pages::Page.new("/example", "title" => "A dynamic page", "nocache" => true),
         )
       end
 
