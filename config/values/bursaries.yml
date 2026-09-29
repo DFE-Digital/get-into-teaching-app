@@ -18,6 +18,7 @@ bursaries:
     funding_dates: between September 2027 and July 2028
     generic:
       max_shortened: £20k
+      max: £20,000
     postgraduate:
       biology: £5,000
       chemistry:

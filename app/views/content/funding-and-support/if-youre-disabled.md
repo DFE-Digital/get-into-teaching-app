@@ -44,6 +44,8 @@ timed_financial_content:
       text: "You could also receive a tax-free bursary to train to teach certain subjects. Find out more about [your eligibility for a bursary](/funding-and-support/bursaries)."
     2025:
       text: "You could also receive a tax-free bursary or scholarship of up to $scholarships_generic_max$ to train to teach certain subjects. Find out more about [your eligibility for a scholarship or bursary](/funding-and-support/bursaries)."
+    2026:
+      text: "You could also receive a tax-free bursary of up to $bursaries_2026_generic_max$ to train to teach certain subjects. Find out more about [your eligibility for a bursary](/funding-and-support/bursaries)."
 ---
 
 If you’re neurodivergent, have a long-term physical or mental health condition, or have any other accessibility needs, you can get support to become a teacher. This support can sometimes be referred to as training with disabilities and other needs. The support may be helpful to you, even if you do not identify as disabled.
