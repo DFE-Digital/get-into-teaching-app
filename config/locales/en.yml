@@ -63,6 +63,7 @@ en:
         group: "Secondary"
         sub_head: "Biology - Secondary"
         funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_biology} are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
           2025: "Bursaries of %{bursaries_postgraduate_biology} are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
           default: "Bursaries are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
       business_studies:
@@ -77,6 +78,7 @@ en:
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
         funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_chemistry_relevant} are available for trainee chemistry teachers if you're eligible."
           2025: "Scholarships of %{scholarships_chemistry} or bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you're eligible."
           default: "Bursaries are available for trainee chemistry teachers if you're eligible."
       citizenship:
@@ -91,6 +93,10 @@ en:
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding:
+          2026: |-
+            Bursaries of %{bursaries_2026_postgraduate_languages_other} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
+
+            Your course provider will confirm if this applies.
           2025: |-
             Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
 
@@ -111,6 +117,7 @@ en:
         group: "Secondary"
         sub_head: "Computing - Secondary"
         funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_computing_relevant} are available for trainee computing teachers if you're eligible."
           2025: "Scholarships of %{scholarships_computing} or bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you're eligible."
           default: "Bursaries are available for trainee computing teachers if you're eligible."
       dance:
@@ -125,6 +132,7 @@ en:
         group: "Secondary"
         sub_head: "Design and technology - Secondary"
         funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_design_and_technology_relevant} are available for trainee design and technology teachers if you're eligible."
           2025: "Bursaries of %{bursaries_postgraduate_designandtechnology} are available for trainee design and technology teachers if you're eligible."
           default: "Bursaries are available for trainee design and technology teachers if you're eligible."
       drama:
@@ -160,6 +168,7 @@ en:
         group: "Secondary"
         sub_head: "Geography - Secondary"
         funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_geography} are available for trainee geography teachers if you're eligible."
           2025: "Bursaries of %{bursaries_postgraduate_geography} are available for trainee geography teachers if you're eligible."
           default: "Bursaries are available for trainee geography teachers if you're eligible."
       health_and_social_care:
@@ -181,6 +190,8 @@ en:
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
         funding:
+          2026: |-
+            Bursaries of %{bursaries_2026_postgraduate_languages_other} are available for all trainee language teachers if you’re eligible. These bursaries include ancient languages.
           2025: |-
             Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers if you're eligible.<br><br>
 
@@ -191,6 +202,7 @@ en:
         group: "Secondary"
         sub_head: "Maths - Secondary"
         funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_maths_relevant} are available for trainee maths teachers if you're eligible."
           2025: "Bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you're eligible."
           default: "Bursaries are available for trainee maths teachers if you're eligible."
       music:
@@ -198,6 +210,7 @@ en:
         group: "Secondary"
         sub_head: "Music - Secondary"
         funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_music} are available for trainee music teachers if you're eligible."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       physical_group:
@@ -212,6 +225,7 @@ en:
         group: "Secondary"
         sub_head: "Physics - Secondary"
         funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_physics_relevant} are available for trainee physics teachers if you're eligible."
           2025: "Scholarships of %{scholarships_physics} or bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers if you're eligible."
           default: "Bursaries are available for trainee physics teachers if you're eligible."
       psychology:
@@ -226,6 +240,7 @@ en:
         group: "Secondary"
         sub_head: "Religious education - Secondary"
         funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_religious_education} are available for RE teachers if you're eligible."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       science:
