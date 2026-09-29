@@ -116,7 +116,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
     end
 
     it "renders the 'not available' primary copy" do
-      expect(page).to have_text("Scholarships or bursaries are not available for primary school teacher training.")
+      expect(page).to have_text("Bursaries are not available for primary school teacher training.")
     end
   end
 
