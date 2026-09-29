@@ -13,6 +13,12 @@ timed_financial_content:
           If you're an engineer or material scientist, an Engineers teach physics initial teacher training course could be a great start to your teaching journey. By getting into the classroom, you could use your skills and passion to inspire the next generation.</p>
           <p>
           Tax-free bursaries of $bursaries_postgraduate_physics$ or scholarships of $scholarships_physics$ are available for eligible trainee physics teachers.</p>
+    2026:
+      text: |-
+        <p>
+        If you're an engineer or material scientist, an Engineers teach physics initial teacher training course could be a great start to your teaching journey. By getting into the classroom, you could use your skills and passion to inspire the next generation.</p>
+        <p>
+        Tax-free bursaries of $bursaries_2026_postgraduate_physics_relevant$ are available for eligible trainee physics teachers.</p>
 description: |-
     Find out more about the Engineers teach physics teacher training programme for engineers and material scientists who want to teach physics.
 layout: "layouts/minimal"

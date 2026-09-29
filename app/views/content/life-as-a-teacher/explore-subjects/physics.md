@@ -13,6 +13,12 @@ timed_financial_content:
           Teaching physics, you’ll ignite a passion for understanding the mechanics of our world. You’ll inspire pupils to be curious about everything, from the smallest particle to the vastness of the universe.</p>
           <p>
           Tax-free bursaries of $bursaries_postgraduate_physics$ or scholarships of $scholarships_physics$ are available for eligible trainee physics teachers.</p>
+    2026:
+      text: |-
+        <p>
+        Teaching physics, you’ll ignite a passion for understanding the mechanics of our world. You’ll inspire pupils to be curious about everything, from the smallest particle to the vastness of the universe.</p>
+        <p>
+        Tax-free bursaries of $bursaries_2026_postgraduate_physics_relevant$ are available for eligible trainee physics teachers.</p>
 description: |-
     Find out how to become a physics teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"
