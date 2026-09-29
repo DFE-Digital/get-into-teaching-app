@@ -1,2 +1,7 @@
-<p><a href="/funding-and-support/bursaries">Tax-free bursaries of <%= v "bursaries_2026_postgraduate_#{@front_matter['subject'].gsub(/\s+/, '_').downcase}" %></a> are available for eligible trainee <%= @front_matter["subject"] %> teachers.</p>
+<%
+  bursary_key = "bursaries_2026_postgraduate_#{@front_matter['subject'].gsub(/\s+/, '_').downcase}"
+  bursary_value = v("#{bursary_key}_relevant") || v(bursary_key)
+%>
+
+<p><a href="/funding-and-support/bursaries">Tax-free bursaries of <%= bursary_value %></a> are available for eligible trainee <%= @front_matter["subject"] %> teachers.</p>
 <p>You can get a bursary alongside a tuition fee loan and maintenance loan.</p>
