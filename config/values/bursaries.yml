@@ -15,6 +15,7 @@ bursaries:
     maths: £29,000
     physics: £29,000
   2026:
+    funding_dates: between September 2027 and July 2028
     generic:
       max_shortened: £20k
     postgraduate:
