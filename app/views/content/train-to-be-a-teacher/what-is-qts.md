@@ -39,9 +39,9 @@ cta_arrow_link:
 timed_financial_content:
   bursaries_and_scholarship:
     default:
-      text: "you could be [eligible for a bursary](/funding-and-support/scholarships-and-bursaries) to help you train."
+      text: "you could be [eligible for a bursary](/funding-and-support/bursaries) to help you train."
     2025:
-      text: "you could be [eligible for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries) to help you train."
+      text: "you could be [eligible for a scholarship or bursary](/funding-and-support/bursaries) to help you train."
 ---
 
 You need English qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England. These are schools funded by local authorities.
