@@ -93,10 +93,7 @@ en:
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding:
-          2026: |-
-            Bursaries of %{bursaries_2026_postgraduate_languages_other} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
-
-            Your course provider will confirm if this applies.
+          2026: "Bursaries are not available for this subject."
           2025: |-
             Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
 
