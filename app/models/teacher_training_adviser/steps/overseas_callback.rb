@@ -7,11 +7,12 @@ module TeacherTrainingAdviser::Steps
     validates :phone_call_scheduled_at, presence: true
 
     include FunnelTitle
+    include CoerceToLondonTime
 
     def reviewable_answers
       {
-        "callback_date" => phone_call_scheduled_at&.to_date,
-        "callback_time" => phone_call_scheduled_at&.to_time,
+        "callback_date" => coerce_to_london_time(phone_call_scheduled_at)&.in_time_zone&.to_date,
+        "callback_time" => coerce_to_london_time(phone_call_scheduled_at)&.in_time_zone&.to_time,
       }
     end
 

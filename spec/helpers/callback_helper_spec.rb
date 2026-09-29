@@ -2,79 +2,151 @@ require "rails_helper"
 
 RSpec.describe CallbackHelper, type: :helper do
   around do |example|
-    travel_to(utc_today) do
-      Time.use_zone(time_zone) { example.run }
-    end
+    Time.use_zone(time_zone) { example.run }
   end
 
-  let(:time_zone) { "UTC" }
-  let(:utc_today) { Time.utc(2020, 4, 6, 10, 30) }
-  let(:utc_tomorrow) { Time.utc(2020, 4, 7, 10) }
   let(:quota_today) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(
-      start_at: utc_today,
-      end_at: utc_today + 30.minutes,
+      start_at: crm_today,
+      end_at: crm_today + 30.minutes,
     )
   end
   let(:quota_tomorrow) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(
-      start_at: utc_tomorrow,
-      end_at: utc_tomorrow + 30.minutes,
+      start_at: crm_tomorrow,
+      end_at: crm_tomorrow + 30.minutes,
     )
   end
+
+  let(:crm_tomorrow) { crm_today + 23.hours }
+
   let(:quotas) { [quota_today, quota_tomorrow] }
+  let(:quotas_by_day_values) { quotas_by_day(quotas).values.flatten.map { |v| [v.day, v.start_at, v.start_at_local_time] } }
 
-  describe "#callback_options" do
-    subject { callback_options(quotas) }
+  # NB: the times provided by the CRM are local and the CRM timezone (UTC) should be ignored
+  let(:crm_2026_01_06_1030_not_utc) { Time.utc(2026, 1, 6, 10, 30) }
+  let(:crm_2026_07_01_1030_not_utc) { Time.utc(2026, 7, 1, 10, 30) }
 
-    it {
-      is_expected.to eq({
-        "Monday 6 April" => [["10:30am to 11:00am", utc_today]],
-        "Tuesday 7 April" => [["10:00am to 10:30am", utc_tomorrow]],
-      })
-    }
+  context "when in London (GMT)" do
+    let(:time_zone) { "Europe/London" }
 
-    context "when given a time zone of UTC-10" do
-      let(:time_zone) { "Hawaii" }
+    context "when outside of daylight saving time" do
+      let(:crm_today) { crm_2026_01_06_1030_not_utc }
 
-      it {
-        is_expected.to eq({
-          "Monday 6 April" => [["12:30am to 1:00am", utc_today]],
-          "Tuesday 7 April" => [["12:00am to 12:30am", utc_tomorrow]],
-        })
-      }
+      describe "#callback_options" do
+        subject { callback_options(quotas) }
+
+        it {
+          is_expected.to eq({
+            "Tuesday 6 January" => [["10:30am to 11:00am", crm_today]],
+            "Wednesday 7 January" => [["9:30am to 10:00am", crm_tomorrow]],
+
+          })
+        }
+      end
+
+      describe "#quotas_by_day" do
+        subject { quotas_by_day_values }
+
+        it {
+          is_expected.to contain_exactly(["Tuesday 6 January", crm_today, "10:30am"], ["Wednesday 7 January", crm_tomorrow, "9:30am"])
+        }
+      end
+    end
+
+    context "when inside of daylight saving time" do
+      # NB: the times provided by the CRM are local and the CRM timezone (UTC) should be ignored
+      let(:crm_today) { crm_2026_07_01_1030_not_utc }
+
+      describe "#callback_options" do
+        subject { callback_options(quotas) }
+
+        it {
+          is_expected.to eq({
+            "Wednesday 1 July" => [["10:30am to 11:00am", crm_today]],
+            "Thursday 2 July" => [["9:30am to 10:00am", crm_tomorrow]],
+          })
+        }
+      end
+
+      describe "#quotas_by_day" do
+        subject { quotas_by_day_values }
+
+        it {
+          is_expected.to contain_exactly(["Wednesday 1 July", crm_today, "10:30am"], ["Thursday 2 July", crm_tomorrow, "9:30am"])
+        }
+      end
     end
   end
 
-  describe "#quotas_by_day" do
-    subject { quotas_by_day(quotas) }
+  context "when in American Samoa (GMT-11)" do
+    let(:time_zone) { "American Samoa" }
 
-    it {
-      is_expected.to eq({
-        "Monday 6 April" => [quota_today],
-        "Tuesday 7 April" => [quota_tomorrow],
-      })
-    }
+    context "when outside of daylight saving time" do
+      # NB: the times provided by the CRM are local and the CRM timezone (UTC) should be ignored
+      let(:crm_today) { crm_2026_01_06_1030_not_utc }
 
-    context "when given a time zone of GMT-11 (resulting in 'today' being the 5th)" do
-      let(:time_zone) { "American Samoa" }
+      describe "#callback_options" do
+        subject { callback_options(quotas) }
 
-      it {
-        is_expected.to eq({
-          "Sunday 5 April" => [quota_today],
-          "Monday 6 April" => [quota_tomorrow],
-        })
-      }
+        it {
+          is_expected.to eq({
+
+            "Monday 5 January" => [["11:30pm to 12:00am", crm_today]],
+            "Tuesday 6 January" => [["10:30pm to 11:00pm", crm_tomorrow]],
+
+          })
+        }
+      end
+
+      describe "#quotas_by_day" do
+        subject { quotas_by_day_values }
+
+        it {
+          is_expected.to contain_exactly(["Monday 5 January", crm_today, "11:30pm"], ["Tuesday 6 January", crm_tomorrow, "10:30pm"])
+        }
+      end
+    end
+
+    context "when inside of daylight saving time" do
+      # NB: the times provided by the CRM are local and the CRM timezone (UTC) should be ignored
+      let(:crm_today) { crm_2026_07_01_1030_not_utc }
+
+      describe "#callback_options" do
+        subject { callback_options(quotas) }
+
+        it {
+          is_expected.to eq({
+            "Tuesday 30 June" => [["10:30pm to 11:00pm", crm_today]],
+            "Wednesday 1 July" => [["9:30pm to 10:00pm", crm_tomorrow]],
+          })
+        }
+      end
+
+      describe "#quotas_by_day" do
+        subject { quotas_by_day_values }
+
+        it {
+          is_expected.to contain_exactly(["Tuesday 30 June", crm_today, "10:30pm"], ["Wednesday 1 July", crm_tomorrow, "9:30pm"])
+        }
+      end
     end
   end
 
   describe "#callback_available?" do
-    subject { helper }
+    let(:time_zone) { "UTC" }
+    let(:crm_today) { crm_2026_01_06_1030_not_utc }
+
+    around do |example|
+      travel_to(crm_today) { example.run }
+    end
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::CallbackBookingQuotasApi).to \
         receive(:get_callback_booking_quotas) { quotas }
     end
+
+    subject { helper }
 
     it { is_expected.to be_callback_available }
 
@@ -82,18 +154,6 @@ RSpec.describe CallbackHelper, type: :helper do
       let(:quotas) { [] }
 
       it { is_expected.not_to be_callback_available }
-    end
-  end
-
-  describe "#to_time_zoned_day" do
-    subject { to_time_zoned_day(quota_today) }
-
-    it { is_expected.to eq("Monday 6 April") }
-
-    context "when given a time zone of GMT-11 (resulting in 'today' being the 5th)" do
-      let(:time_zone) { "American Samoa" }
-
-      it { is_expected.to eq("Sunday 5 April") }
     end
   end
 end
