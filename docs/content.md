@@ -946,7 +946,7 @@ timed_financial_content:
       text: "Default text for times that we don't have specific content."
     2025:
       text: "Relevant text for 2025"
-      partial: "content/funding-and-support/scholarships-and-bursaries/2025_compare_bursaries_and_scholarships"
+      partial: "content/funding-and-support/bursaries/2025_compare_bursaries_and_scholarships"
     2026:
       text: "Relevant text for 2026"
 ---
@@ -973,7 +973,7 @@ You may want to check how a branch looks before its dates arrive. When you run t
 * Add `?now=2026-11-01` to pretend it is that date. The page then picks the branch for that date.
 * Add `?branch=2026` to show a named branch straight away, whatever the date.
 
-For example: `/funding-and-support/scholarships-and-bursaries?branch=2026`.
+For example: `/funding-and-support/bursaries?branch=2026`.
 
 These previews only work on a local copy of the site. They are ignored on the live site, so a visitor cannot use them to change what they see.
 
