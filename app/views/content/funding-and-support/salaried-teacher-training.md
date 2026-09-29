@@ -28,20 +28,20 @@ quote:
 timed_financial_content:
   bursaries_and_scholarship_for_fee_paying:
     default:
-      text: "These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries to help fund fee-paying courses](/funding-and-support/scholarships-and-bursaries)." 
+      text: "These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries to help fund fee-paying courses](/funding-and-support/bursaries)." 
     2025:
-      text: "These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries or scholarships to help fund fee-paying courses](/funding-and-support/scholarships-and-bursaries)."
+      text: "These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries or scholarships to help fund fee-paying courses](/funding-and-support/bursaries)."
   bursaries_and_scholarship:
     default:
         text: |-
-          <p>It’s worth checking if there is a <a href="/funding-and-support/scholarships-and-bursaries">bursary</a> available for your subject before you apply for a salaried course.</p> 
+          <p>It’s worth checking if there is a <a href="/funding-and-support/bursaries">bursary</a> available for your subject before you apply for a salaried course.</p> 
 
           <p>If you do a salaried course, you will not be eligible for a bursary or student finance. You’ll also be taxed on your income, whereas you will not be taxed on a bursary.</p>
 
           <p>If you’re eligible for a bursary, you could receive more money on a non-salaried course than on a salaried one.</p>
     2025:
         text: |-
-          <p>It’s worth checking if there is a <a href="/funding-and-support/scholarships-and-bursaries">bursary or scholarship</a> available for your subject before you apply for a salaried course.</p> 
+          <p>It’s worth checking if there is a <a href="/funding-and-support/bursaries">bursary or scholarship</a> available for your subject before you apply for a salaried course.</p> 
 
           <p>If you do a salaried course, you will not be eligible for a bursary, scholarship or student finance. You’ll also be taxed on your income, whereas you will not be taxed on a bursary or scholarship.</p>
 

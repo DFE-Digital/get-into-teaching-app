@@ -65,9 +65,9 @@ timed_financial_content:
       partial: "content/train-to-be-a-teacher/how-to-choose-your-teacher-training-course/bursary_and_scholarships"
   bursaries_and_scholarships:
     default:
-      text: "If your teacher training course leads to QTS, [you may be eligible for a bursary](/funding-and-support/scholarships-and-bursaries) to help you train."
+      text: "If your teacher training course leads to QTS, [you may be eligible for a bursary](/funding-and-support/bursaries) to help you train."
     2025:
-      text: "If your teacher training course leads to QTS, [you may be eligible for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries) to help you train."
+      text: "If your teacher training course leads to QTS, [you may be eligible for a scholarship or bursary](/funding-and-support/bursaries) to help you train."
 ---
 
 All primary and secondary postgraduate teacher training courses include time spent in school placements with some theoretical learning. 
