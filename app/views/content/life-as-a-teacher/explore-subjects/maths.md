@@ -24,7 +24,7 @@ timed_financial_content:
         <p>
         As a secondary maths teacher, an exciting career spent passing your knowledge on to the next generation could be for you.</p>
         <p>
-        Tax-free bursaries of $bursaries_2026_postgraduate_maths_relevant$ are available for eligible trainee maths teachers.</p>
+        Tax-free bursaries of up to $bursaries_2026_postgraduate_maths_relevant$ are available for eligible trainee maths teachers.</p>
 description: |-
     Find out how to become a maths teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"

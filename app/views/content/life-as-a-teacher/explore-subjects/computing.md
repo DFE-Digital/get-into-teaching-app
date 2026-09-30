@@ -24,7 +24,7 @@ timed_financial_content:
         <p>
         Whether it's teaching your pupils about artificial intelligence (AI) or creating apps, you could inspire them to look at a future role in tech.</p>
         <p>
-        Tax-free bursaries of $bursaries_2026_postgraduate_computing_relevant$ are available for eligible trainee computing teachers.</p>
+        Tax-free bursaries of up to $bursaries_2026_postgraduate_computing_relevant$ are available for eligible trainee computing teachers.</p>
 description: |-
    Find out how to become a computing teacher including what you'll be teaching and what funding is available to help you train.
 backlink: "../../"
