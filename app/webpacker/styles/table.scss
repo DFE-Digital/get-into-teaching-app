@@ -15,7 +15,7 @@ table {
       margin-bottom: $table-spacing;
       border-bottom: 1px solid $grey-light;
       word-break: normal;
-      white-space: nowrap;
+      white-space: normal;
 
       &:first-child {
         padding-left: 0;
@@ -27,7 +27,7 @@ table {
     }
 
     > th:nth-child(1) {
-      white-space: normal;
+      white-space: nowrap;
     }
   }
 
