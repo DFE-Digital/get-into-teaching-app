@@ -14,7 +14,7 @@ finance:
   parentslearningallowance:
     min: £50
     max: £2,024
-    income: £18,957.98
+    income: £18,957.99
   adultdependantsgrant:
     value: £3,545
     income: £15,835.98
