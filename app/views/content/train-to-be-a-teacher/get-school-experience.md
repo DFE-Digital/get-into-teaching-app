@@ -70,21 +70,6 @@ $q-Zainab$
 
 ## Other ways to get experience 
 
-### Paid teaching internships
-
-A paid teaching internship could help you to understand what it’s really like in the classroom. You need to be in your second, third or final year of an undergraduate degree, or studying towards a master’s degree, and are interested in teaching:
-
-- chemistry
-- computing
-- design and technology
-- languages
-- maths
-- physics
-
-You’ll get to experience a range of activities to help you get a feel for school life.
-
-[Find out more about paid teaching internships](/train-to-be-a-teacher/teaching-internships).
-
 ### Watch pre-recorded lessons
 
 Many school and training provider websites have helpful information like “day in the life” videos and recorded lessons. You can also observe teachers’ lessons on the [Oak National Academy website](https://www.thenational.academy/teachers) to help you get to know teaching better, before or alongside your ITT.
