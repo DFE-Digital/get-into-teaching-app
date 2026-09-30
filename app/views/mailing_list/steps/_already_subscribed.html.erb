@@ -3,3 +3,5 @@
 <p>
 The email address <%= mailing_list_session["email"] %> is already signed up to receive emails.
 </p>
+
+<%= tag.div id: "sub-channel-id", class: "hidden", data: { id: "sub-channel-id", value: mailing_list_session["sub_channel_id"] } %>

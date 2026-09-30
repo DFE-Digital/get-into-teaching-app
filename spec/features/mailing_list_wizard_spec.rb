@@ -391,7 +391,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
 
-    visit mailing_list_steps_path
+    visit mailing_list_steps_path + "?sub_channel=123456789"
 
     expect(page).to have_text "Free personalised teacher training guidance"
     fill_in_name_step
@@ -402,6 +402,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You've already signed up"
+    expect(page).to have_css "#sub-channel-id[data-id=sub-channel-id][data-value=123456789]", visible: false
     expect(page).not_to have_button("Next step")
   end
 
