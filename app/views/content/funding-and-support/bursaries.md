@@ -41,7 +41,7 @@ timed_financial_content:
     2025:
       partial: "content/funding-and-support/bursaries/compare_bursaries_and_scholarships"
     2026:
-        partial: "content/funding-and-support/bursaries/compare_bursaries_and_scholarships_2026"
+        partial: "content/funding-and-support/bursaries/compare_bursaries_2026"
   other_funding_options:
     default: 
       partial: "content/funding-and-support/bursaries/other_funding_options"
