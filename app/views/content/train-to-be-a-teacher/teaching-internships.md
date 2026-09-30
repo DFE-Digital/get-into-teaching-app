@@ -783,4 +783,3 @@ provider_groups:
         name: "Sarah Barley"
         email: "sarah.barley@theeducationalliance.org.uk"
 ---
-$applications-open$
