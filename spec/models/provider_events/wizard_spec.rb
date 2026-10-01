@@ -70,7 +70,7 @@ RSpec.describe ProviderEvents::Wizard do
         "provider_organiser" => "Organisation Name",
         "provider_target_audience" => "Graduates and undergraduates",
         "provider_website_url" => "https://event.test/event",
-        "readable_id" => "990708-event-name",
+        "readable_id" => readable_id,
         "registration_email_link" => "https://register.test/register",
 
         "building" => {
@@ -86,33 +86,80 @@ RSpec.describe ProviderEvents::Wizard do
         "type_id" => 222_750_009,
       }
     end
+    let(:not_found) { GetIntoTeachingApiClient::ApiError.new(code: 404, message: "Not Found") }
+    let(:existing_event) { build(:internal_event, :provider_event) }
 
     before do
       allow(subject).to receive(:valid?).and_return(true)
-      allow(GetIntoTeachingApiClient::TeachingEvent).to receive(:new).with(expected_event_attributes).and_call_original
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:upsert_teaching_event).and_return(provider_event)
     end
 
-    context "with prune! spy" do
-      before { allow(wizardstore).to receive(:prune!) }
+    context "when there are no duplicate events" do
+      let(:readable_id) { "990708-event-name" }
+
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).with(readable_id).and_raise(not_found)
+        allow(GetIntoTeachingApiClient::TeachingEvent).to receive(:new).and_call_original
+      end
+
+      it "instantiates a new event with the expected parameters" do
+        subject.complete!
+        expect(GetIntoTeachingApiClient::TeachingEvent).to have_received(:new).with(expected_event_attributes)
+      end
+
+      context "with prune! spy" do
+        before { allow(wizardstore).to receive(:prune!) }
+
+        it "prunes the store, retaining certain attributes" do
+          subject.complete!
+          expect(wizardstore).to have_received(:prune!).with({ leave: %w[provider_contact_email reference_number] }).once
+        end
+      end
+
+      it "checks the wizard is valid" do
+        subject.complete!
+        is_expected.to have_received(:valid?)
+      end
 
       it "prunes the store, retaining certain attributes" do
         subject.complete!
-        expect(wizardstore).to have_received(:prune!).with({ leave: %w[provider_contact_email reference_number] }).once
+        expect(store[uuid]).to eql({
+          "provider_contact_email" => "test@test.test",
+          "reference_number" => "A1234",
+        })
       end
     end
 
-    it "checks the wizard is valid" do
-      subject.complete!
-      is_expected.to have_received(:valid?)
+    context "when there are a few existing duplicate events" do
+      let(:readable_id) { "990708-event-name-4" }
+
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).with("990708-event-name").and_return(existing_event)
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).with("990708-event-name-2").and_return(existing_event)
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).with("990708-event-name-3").and_return(existing_event)
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).with("990708-event-name-4").and_raise(not_found)
+        allow(GetIntoTeachingApiClient::TeachingEvent).to receive(:new).and_call_original
+      end
+
+      it "instantiates a new event with the expected parameters" do
+        subject.complete!
+        expect(GetIntoTeachingApiClient::TeachingEvent).to have_received(:new).with(expected_event_attributes)
+      end
     end
 
-    it "prunes the store, retaining certain attributes" do
-      subject.complete!
-      expect(store[uuid]).to eql({
-        "provider_contact_email" => "test@test.test",
-        "reference_number" => "A1234",
-      })
+    context "when there are too many existing duplicate events" do
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).with("990708-event-name").and_return(existing_event)
+        (2..20).each do |i|
+          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).with("990708-event-name-#{i}").and_return(existing_event)
+        end
+
+        allow(GetIntoTeachingApiClient::TeachingEvent).to receive(:new).and_call_original
+      end
+
+      it "raises an error" do
+        expect { subject.complete! }.to raise_error("Unable to generate unique readable id for 990708-event-name")
+      end
     end
   end
 end

@@ -43,6 +43,33 @@ module ProviderEvents
       export_data.slice(*attributes.map(&:to_s))
     end
 
+    def generate_readable_id(event_date, event_name)
+      # ReadableIDs must be unique. We generate them using the date+event_name;
+      # but this is not guaranteed to be unique; so we do a check beforehand and
+      # add a number on the end of the id if required.
+      api = GetIntoTeachingApiClient::TeachingEventsApi.new
+      base_readable_id = "#{event_date.strftime('%y%m%d')}-#{event_name.parameterize}"
+      readable_id = base_readable_id
+      counter = 1
+
+      loop do
+        readable_id = "#{base_readable_id}-#{counter}" if counter > 1
+
+        begin
+          api.get_teaching_event(readable_id)
+          counter += 1
+        rescue GetIntoTeachingApiClient::ApiError => e
+          raise unless e.code == 404
+
+          break
+        end
+
+        raise StandardError, "Unable to generate unique readable id for #{base_readable_id}" if counter > 20
+      end
+
+      readable_id
+    end
+
     def export_data
       super.tap do |data|
         find("event_type").tap do |event_type|
@@ -74,8 +101,8 @@ module ProviderEvents
           end
 
           data["status_id"] ||= PENDING_REVIEW_STATUS_ID
-          find("event_date").tap do |event_date|
-            data["readable_id"] ||= "#{event_date.event_date.strftime('%y%m%d')}-#{data['event_name'].parameterize}"
+          find("event_date").tap do |event_date_step|
+            data["readable_id"] = generate_readable_id(event_date_step.event_date, data["event_name"])
           end
 
           data["name"] = data["event_name"]
