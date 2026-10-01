@@ -4,6 +4,16 @@ describe TemplateHandlers::Markdown, type: :view do
   subject { rendered }
 
   let(:value_data) { Value.new("spec/fixtures/files/example_values/**/*.yml").data }
+  # Fixed branch windows for the timed-financial-content examples below, so they
+  # exercise the per-request rendering mechanism against deterministic dates
+  # rather than the live config/financial_content_times.yml (whose real go-live
+  # date is deliberately parked in the future while it is unconfirmed).
+  let(:content_dates_fixture) do
+    [
+      { key: "2026", valid_from: Time.zone.parse("2026-10-06"), valid_to: nil },
+      { key: "2025", valid_from: nil, valid_to: Time.zone.parse("2026-09-28") },
+    ]
+  end
 
   before { allow(Value).to receive(:data).and_return(value_data) }
 
@@ -427,6 +437,7 @@ describe TemplateHandlers::Markdown, type: :view do
     let(:template_name) { "timed_#{SecureRandom.hex(4)}" }
 
     before do
+      allow(Content::TimedFinancialContentComponent).to receive(:content_dates).and_return(content_dates_fixture)
       allow(described_class).to receive(:global_front_matter).and_return(front_matter)
       allow(view).to receive(:params).and_return(
         ActionController::Parameters.new(now: now_param, branch: branch_param),
@@ -587,6 +598,7 @@ describe TemplateHandlers::Markdown, type: :view do
     end
 
     before do
+      allow(Content::TimedFinancialContentComponent).to receive(:content_dates).and_return(content_dates_fixture)
       allow(described_class).to receive(:global_front_matter).and_return(front_matter)
       stub_template "timed.md" => "# Some page\n\n$compare$\n"
     end
