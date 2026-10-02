@@ -13,6 +13,12 @@ timed_financial_content:
           In teaching geography, you’ll guide pupils through the fascinating diversity of the Earth. You’ll inspire them to reflect on the world they live in and discover their unique place within it.</p>
           <p>
           Tax-free bursaries of $bursaries_postgraduate_geography$ are available for eligible trainee geography teachers.</p>
+    2026:
+      text:  |-
+        <p>
+        In teaching geography, you’ll guide pupils through the fascinating diversity of the Earth. You’ll inspire them to reflect on the world they live in and discover their unique place within it.</p>
+        <p>
+        Tax-free bursaries of $bursaries_2026_postgraduate_geography$ are available for eligible trainee geography teachers.</p>
 description: |-
     Explore what's involved in becoming a geography teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"

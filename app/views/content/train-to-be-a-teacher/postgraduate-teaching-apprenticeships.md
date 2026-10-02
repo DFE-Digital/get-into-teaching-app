@@ -22,6 +22,8 @@ timed_financial_content:
       partial: "content/train-to-be-a-teacher/postgraduate-teaching-apprenticeships/bursary"
     2025:
       partial: "content/train-to-be-a-teacher/postgraduate-teaching-apprenticeships/bursary_and_scholarships"
+    2026:
+      partial: "content/train-to-be-a-teacher/postgraduate-teaching-apprenticeships/bursary_2026"
 ---
 
 A postgraduate teaching apprenticeship (PGTA) is a teacher training route that leads to [qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). You need QTS to teach in most primary, secondary and special schools in England. 

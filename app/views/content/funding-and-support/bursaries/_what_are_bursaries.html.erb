@@ -12,6 +12,10 @@
     "2025": {
       text: safe_html_format("<p>If you are a non-UK citizen who has permission to <a href=\"https://www.gov.uk/browse/visas-immigration/settle-in-the-uk\">live permanently in the UK</a> and are eligible for student finance, you may be able to get a bursary or scholarship.</p>" \
                                "<p>Find out about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">funding for non-UK citizens</a>.</p>"),
+    },
+    "2026": {
+      text: safe_html_format("<p>If you are a non-UK citizen who has permission to <a href=\"https://www.gov.uk/browse/visas-immigration/settle-in-the-uk\">live permanently in the UK</a> and are eligible for student finance, you may be able to get a bursary.</p>" \
+                               "<p>Find out about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">funding for non-UK citizens</a>.</p>"),
     }
   ) %>
 <% end %>
@@ -19,5 +23,8 @@
 <%= render Content::TimedFinancialContentComponent.new(
   "2025": {
     text: "The amounts on this page apply if you're starting your training $bursaries_fundingdates$.",
+  },
+  "2026": {
+    text: "The amounts on this page apply if you're starting your training $bursaries_2026_funding_dates$.",
   }
 ) %>

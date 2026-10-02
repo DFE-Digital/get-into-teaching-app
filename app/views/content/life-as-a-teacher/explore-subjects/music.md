@@ -1,8 +1,21 @@
 ---
 title: Become a music teacher
 subject: music
-title_paragraph: |-
-  <p>As a music teacher, you’ll inspire pupils to unlock their creativity and express themselves through performance. You’ll foster a lifelong appreciation of music, enriching their lives beyond the classroom.</p>
+timed_financial_content:
+  title_paragraph:
+    default:
+      text: |-
+        <p>
+        As a music teacher, you’ll inspire pupils to unlock their creativity and express themselves through performance. You’ll foster a lifelong appreciation of music, enriching their lives beyond the classroom.
+        </p>
+    2026:
+      text: |-
+        <p>
+        As a music teacher, you’ll inspire pupils to unlock their creativity and express themselves through performance. You’ll foster a lifelong appreciation of music, enriching their lives beyond the classroom.
+        </p>
+        <p>
+        Tax-free bursaries of $bursaries_2026_postgraduate_music$ are available for eligible trainee music teachers.
+        </p>
 description: |-
     Find out how to become a music teacher, including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"
