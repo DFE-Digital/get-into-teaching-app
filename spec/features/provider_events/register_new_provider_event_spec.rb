@@ -8,17 +8,9 @@ RSpec.feature "Register a provider event", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi).to receive(:get_teaching_event_buildings).and_return(buildings)
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).and_raise(not_found)
 
-    allow(Faraday).to receive(:get).with("https://api.postcodes.io/postcodes/TE57%201NG").and_return(postcode_response)
-    visit provider_events_steps_path
-  end
-
-  let(:provider_event) { build(:internal_event, :provider_event) }
-  let(:buildings) { build_list(:event_building, 1) }
-  let(:not_found) { GetIntoTeachingApiClient::ApiError.new(code: 404, message: "Not Found") }
-  let(:postcode_response) do
-    instance_double(
-      Faraday::Response,
-      success?: true,
+    stub_request(:get, "https://api.postcodes.io/postcodes/TE57%201NG").to_return(
+      status: 200,
+      headers: { "Content-Type" => "application/json" },
       body: {
         result: {
           admin_district: "My Toon",
@@ -26,7 +18,13 @@ RSpec.feature "Register a provider event", type: :feature do
         },
       }.to_json,
     )
+
+    visit provider_events_steps_path
   end
+
+  let(:provider_event) { build(:internal_event, :provider_event) }
+  let(:buildings) { build_list(:event_building, 1) }
+  let(:not_found) { GetIntoTeachingApiClient::ApiError.new(code: 404, message: "Not Found") }
 
   describe "Registering an online event" do
     it "navigates the steps" do

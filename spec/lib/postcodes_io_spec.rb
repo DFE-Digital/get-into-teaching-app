@@ -11,17 +11,14 @@ RSpec.describe PostcodesIO do
     let(:url) { "https://api.postcodes.io/postcodes/AB1%202CD" }
     let(:success?) { true }
     let(:body) { { result: {} }.to_json }
-
-    let(:response) do
-      instance_double(
-        Faraday::Response,
-        success?: success?,
-        body: body,
-      )
-    end
+    let(:error_body) { { error: "Postcode not found" }.to_json }
 
     before do
-      allow(Faraday).to receive(:get).with(url).and_return(response)
+      stub_request(:get, url).to_return(
+        status: success? ? 200 : 404,
+        headers: { "Content-Type" => "application/json" },
+        body: success? ? body : error_body,
+      )
     end
 
     context "when the API returns an admin district" do
@@ -40,8 +37,7 @@ RSpec.describe PostcodesIO do
 
       it "normalises and URL-encodes the postcode" do
         district_or_region
-
-        expect(Faraday).to have_received(:get).with(url)
+        expect(a_request(:get, url)).to have_been_requested.once
       end
     end
 
@@ -76,10 +72,8 @@ RSpec.describe PostcodesIO do
 
     context "when the API connection fails" do
       before do
-        allow(Faraday)
-          .to receive(:get)
-                .with(url)
-                .and_raise(Faraday::ConnectionFailed, "Connection failed")
+        stub_request(:get, url)
+          .to_raise(Faraday::ConnectionFailed.new("Connection failed"))
       end
 
       it "returns the postcode area" do

@@ -2,13 +2,9 @@ require "rails_helper"
 
 RSpec.describe ProviderEvents::Steps::OnlinePostcode do
   before do
-    allow(Faraday).to receive(:get).with(start_with("https://api.postcodes.io/postcodes/")).and_return(response)
-  end
-
-  let(:response) do
-    instance_double(
-      Faraday::Response,
-      success?: true,
+    stub_request(:get, %r{\Ahttps://api\.postcodes\.io/postcodes/[^/?]+\z}).to_return(
+      status: 200,
+      headers: { "Content-Type" => "application/json" },
       body: {
         result: {
           admin_district: "My Toon",
