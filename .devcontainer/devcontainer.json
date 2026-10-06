@@ -6,7 +6,11 @@
   "features": {
     "ghcr.io/devcontainers/features/sshd:1": {},
     "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-      "packages": "libpq-dev, libvips, entr"
+      // libpq-dev/libvips/entr are app runtime deps. The rest are build
+      // dependencies needed to compile native gems from source (nokogiri,
+      // ffi, pg, psych, ...), which .bundle/config forces via
+      // BUNDLE_FORCE_RUBY_PLATFORM and nokogiri's --use-system-libraries.
+      "packages": "libpq-dev, libvips, entr, build-essential, pkg-config, libxml2-dev, libxslt1-dev, zlib1g-dev, libffi-dev, libyaml-dev"
     },
     "ghcr.io/devcontainers/features/git:1": {
       "version": "latest"
