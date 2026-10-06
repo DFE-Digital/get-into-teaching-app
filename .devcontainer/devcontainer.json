@@ -47,9 +47,18 @@
       "extensions": [
         "Shopify.ruby-lsp",
         "esbenp.prettier-vscode",
-        "ms-vscode.vscode-typescript-tslint-plugin",
-        "ms-vscode.vscode-types"
-      ]
+        "ms-ossdata.vscode-pgsql"
+      ],
+      "settings": {
+        // The ruby feature installs Ruby via RVM (/usr/local/rvm/...). Without
+        // this, the Ruby LSP extension defaults to rbenv and fails to find the
+        // Ruby version, showing an activation error popup on startup.
+        "rubyLsp.rubyVersionManager": {
+          "identifier": "rvm"
+        },
+        // Run the "folderOpen" task (the dev server) without prompting.
+        "task.allowAutomaticTasks": "on"
+      }
     }
   },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
