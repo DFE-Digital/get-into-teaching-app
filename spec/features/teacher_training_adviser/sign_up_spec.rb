@@ -218,8 +218,8 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       click_on "Complete sign up"
 
       expect(page).to have_css "h1", text: "John, we'll call you to check your degree"
-      expect(page).to have_css "p", text: "Sunday 31 May"
-      expect(page).to have_css "p", text: "11:00pm"
+      expect(page).to have_css "p", text: "Monday 1 June"
+      expect(page).to have_css "p", text: "12:00am"
       expect(page).to have_css "p", text: "123456789"
       expect(page).to have_text "Have the details of the qualifications you gained outside the UK when we call you."
     end
@@ -278,7 +278,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       expect(page).to have_css "h1", text: "John, we'll call you to check your degree"
       expect(page).to have_css "p", text: "Monday 1 June"
-      expect(page).to have_css "p", text: "10:00am"
+      expect(page).to have_css "p", text: "11:00am"
       expect(page).to have_css "p", text: "123456789"
       expect(page).to have_text "Have the details of the qualifications you gained outside the UK when we call you."
     end
@@ -781,7 +781,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
 
       expect(page).to have_css "h1", text: "John, we'll call you to check your degree"
       expect(page).to have_css "p", text: "Monday 1 June"
-      expect(page).to have_css "p", text: "10:00am"
+      expect(page).to have_css "p", text: "11:00am"
       expect(page).to have_css "p", text: "123456789"
       expect(page).to have_text "Have the details of the qualifications you gained outside the UK when we call you."
     end
