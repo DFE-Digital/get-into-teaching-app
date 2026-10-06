@@ -31,6 +31,16 @@
       "upgradePackages": true
     }
   },
+  // Marks that we are running inside the dev container, so the auto-start task
+  // only launches the server here (and not when a developer opens the repo in
+  // plain VS Code on their own machine).
+  "containerEnv": {
+    "IN_DEVCONTAINER": "true",
+    // Let corepack download the pinned Yarn (packageManager in package.json)
+    // without the interactive "Do you want to continue? [Y/n]" prompt that
+    // otherwise hangs the non-interactive setup script.
+    "COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
+  },
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
