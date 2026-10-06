@@ -7,12 +7,26 @@ RSpec.feature "Register a provider event", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:upsert_teaching_event).and_return(provider_event)
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi).to receive(:get_teaching_event_buildings).and_return(buildings)
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).and_raise(not_found)
+
+    allow(Faraday).to receive(:get).with("https://api.postcodes.io/postcodes/TE57%201NG").and_return(postcode_response)
     visit provider_events_steps_path
   end
 
   let(:provider_event) { build(:internal_event, :provider_event) }
   let(:buildings) { build_list(:event_building, 1) }
   let(:not_found) { GetIntoTeachingApiClient::ApiError.new(code: 404, message: "Not Found") }
+  let(:postcode_response) do
+    instance_double(
+      Faraday::Response,
+      success?: true,
+      body: {
+        result: {
+          admin_district: "My Toon",
+          region: "Somewheresville",
+        },
+      }.to_json,
+    )
+  end
 
   describe "Registering an online event" do
     it "navigates the steps" do
@@ -95,7 +109,7 @@ RSpec.feature "Register a provider event", type: :feature do
       expect(page).to have_content("What type of event is this?")
       expect(page).to have_content("Online")
       expect(page).to have_content("Provide a postcode for your event")
-      expect(page).to have_content("TE57 1NG")
+      expect(page).to have_content("TE57 1NG (My Toon)")
       expect(page).to have_content("How will people register for your event?")
       expect(page).to have_content("https://www.example.com/register")
       click_on "Complete sign up"
