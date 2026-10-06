@@ -11,6 +11,10 @@ services:
       - postgres
     environment:
       REDIS_URL: redis://redis:6379
+      DB_HOSTNAME: postgres
+      DB_PORT: "5432"
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
     ports:
       - 3000:3000
   postgres:
