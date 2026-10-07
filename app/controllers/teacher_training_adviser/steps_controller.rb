@@ -4,6 +4,7 @@ module TeacherTrainingAdviser
     include GITWizard::Controller
     include HashedEmails
     include PickListLookups
+    include CoerceToLondonTime
 
     self.wizard_class = TeacherTrainingAdviser::Wizard
 
@@ -30,7 +31,7 @@ module TeacherTrainingAdviser
       @visa_status = visa_status(wizard_store[:visa_status])
       @location = location(wizard_store[:location])
 
-      phone_call_scheduled_at = wizard_store[:phone_call_scheduled_at]
+      phone_call_scheduled_at = coerce_to_london_time(wizard_store[:phone_call_scheduled_at])
       time_zone = wizard_store[:time_zone] || "London"
       if @callback_booked && phone_call_scheduled_at
         @callback_date = phone_call_scheduled_at
