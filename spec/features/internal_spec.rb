@@ -221,12 +221,12 @@ private
     expect(page).to have_text "Enter a provider email address"
     expect(page).to have_text "Enter a provider organiser"
     expect(page).to have_text "Enter a provider target audience"
-    expect(page).to have_text "Enter a provider website/registration link"
+    expect(page).to have_text "Enter a provider website link"
   end
 
   def expect_common_validation_errors
-    expect(page).to have_text "Enter a name"
-    expect(page).to have_text "Enter a description"
+    expect(page).to have_text "Enter event name"
+    expect(page).to have_text "Enter event description"
     expect(page).to have_text "Enter a partial URL"
     # start_at and end_at in error summary and field message
     expect(page).to have_text "Must be in the future", count: 4
