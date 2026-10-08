@@ -25,7 +25,7 @@ describe Internal::Event do
     describe "#name" do
       it { is_expected.to allow_value("test").for :name }
       it { is_expected.not_to allow_values("", nil).for :name }
-      it { is_expected.to validate_length_of(:name).is_at_most(300) }
+      it { is_expected.to validate_length_of(:name).is_at_most(ProviderEvents::Steps::EventName::MAX_CHARS) }
     end
 
     describe "#readable_id" do
@@ -48,7 +48,7 @@ describe Internal::Event do
     describe "#description" do
       it { is_expected.to allow_value("test").for :description }
       it { is_expected.not_to allow_values("", nil).for :description }
-      it { is_expected.to validate_length_of(:description).is_at_most(2000) }
+      it { is_expected.to validate_length_of(:description).is_at_most(ProviderEvents::Steps::EventDescription::MAX_CHARS) }
     end
 
     describe "#start_at" do
