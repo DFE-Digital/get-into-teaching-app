@@ -26,6 +26,9 @@ module GetIntoTeachingWebsite
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    # TESTING load_defaults 7.1 — remove during consolidation (new default is false)
+    config.add_autoload_paths_to_load_path = false
+
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
     # Common ones are `templates`, `generators`, or `middleware`, for example.
