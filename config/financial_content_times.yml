@@ -1,13 +1,7 @@
 financial_content_times:
   - key: "2026"
-    # Placeholder: the 2026 go-live (valid_from) date is not yet confirmed, so it
-    # is parked far in the future to keep the 2026 content in the app but never
-    # live. Set this to the real date once confirmed.
-    valid_from: "2099-01-01"
-    # valid_to: "2027-10-05" — known end date. Left unset while valid_from is the
-    # placeholder (a real valid_to before 2099 would make the range invalid);
-    # restore it when valid_from is set to the real go-live date.
-    valid_to:
+    valid_from: "2027-10-12 09:30"
+    valid_to: "2027-10-05"
   - key: "2025"
     valid_from:
     valid_to: "2026-09-29"
