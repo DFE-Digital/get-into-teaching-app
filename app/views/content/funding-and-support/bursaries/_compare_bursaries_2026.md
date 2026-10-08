@@ -21,6 +21,6 @@ Table caption: Bursary amounts for subjects where funding depends on your degree
 | **Music**                                                            |                           $bursaries_2026_postgraduate_music$ |
 | **Religious education (RE)**                                         |             $bursaries_2026_postgraduate_religious_education$ |
 
-Table caption: Bursary amounts for subjects that do not require a relevant degree
+Table caption: Bursary amounts for subjects where funding does not depend on your degree
 
 $subjects$
