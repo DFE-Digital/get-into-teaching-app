@@ -28,7 +28,7 @@ Rails.application.config.action_dispatch.default_headers = {
   "X-XSS-Protection" => "0",
   "X-Content-Type-Options" => "nosniff",
   "X-Permitted-Cross-Domain-Policies" => "none",
-  "Referrer-Policy" => "strict-origin-when-cross-origin"
+  "Referrer-Policy" => "strict-origin-when-cross-origin",
 }
 
 ###
