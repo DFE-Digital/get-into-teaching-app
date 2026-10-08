@@ -81,6 +81,7 @@ module ProviderEvents
           data["building"] ||= {}
           if event_type.online?
             data["building"]["venue"] = data["organisation_name"]
+            data["building"]["addressCity"] = data["online_district_or_region"]
             data["building"]["addressPostcode"] = data["online_postcode"]
 
           elsif event_type.in_person?

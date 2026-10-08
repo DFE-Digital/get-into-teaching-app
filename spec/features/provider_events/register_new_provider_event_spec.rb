@@ -7,6 +7,18 @@ RSpec.feature "Register a provider event", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:upsert_teaching_event).and_return(provider_event)
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi).to receive(:get_teaching_event_buildings).and_return(buildings)
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).and_raise(not_found)
+
+    stub_request(:get, "https://api.postcodes.io/postcodes/TE57%201NG").to_return(
+      status: 200,
+      headers: { "Content-Type" => "application/json" },
+      body: {
+        result: {
+          admin_district: "My Toon",
+          region: "Somewheresville",
+        },
+      }.to_json,
+    )
+
     visit provider_events_steps_path
   end
 
@@ -95,7 +107,7 @@ RSpec.feature "Register a provider event", type: :feature do
       expect(page).to have_content("What type of event is this?")
       expect(page).to have_content("Online")
       expect(page).to have_content("Provide a postcode for your event")
-      expect(page).to have_content("TE57 1NG")
+      expect(page).to have_content("TE57 1NG (My Toon)")
       expect(page).to have_content("How will people register for your event?")
       expect(page).to have_content("https://www.example.com/register")
       click_on "Complete sign up"
