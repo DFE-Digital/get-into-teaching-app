@@ -1,7 +1,7 @@
 module Callbacks
   class StepsController < ApplicationController
     include CircuitBreaker
-
+    include CoerceToLondonTime
     include GITWizard::Controller
     self.wizard_class = Callbacks::Wizard
 
@@ -17,7 +17,7 @@ module Callbacks
     end
 
     def completed_step_path
-      phone_call_scheduled_at = @wizard.find("callback").phone_call_scheduled_at.in_time_zone(Time.zone)
+      phone_call_scheduled_at = coerce_to_london_time(@wizard.find("callback").phone_call_scheduled_at).in_time_zone(Time.zone)
       date = phone_call_scheduled_at.to_date.to_formatted_s(:govuk)
       time = phone_call_scheduled_at.to_formatted_s(:govuk_time_with_period)
 
