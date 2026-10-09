@@ -100,7 +100,6 @@ redirects:
   "/node/2844": "/funding-and-support/bursaries"
 
   # Subject knowledge enhancement
-  "/how-to-apply-for-teacher-training/subject-knowledge-enhancement": "/"
   "/explore-my-options/teacher-training-routes/subject-knowledge-enhancement-ske-courses(*article)": "/"
   "/subject-knowledge-enhancement-ske-courses": "/"
   "/improve-your-subject-knowledge": "/"

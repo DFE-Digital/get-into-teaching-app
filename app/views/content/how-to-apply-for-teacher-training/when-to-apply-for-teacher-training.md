@@ -24,8 +24,6 @@ timed_financial_content:
   subject_knowledge_enhancement:
     format: text
     default:
-      text: "you may need time to complete a subject knowledge enhancement (SKE) course and other conditions before starting your training"
-    2025:
       text: "you may need time to complete a <a href=\"/how-to-apply-for-teacher-training/subject-knowledge-enhancement\">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training"
 ---
 
