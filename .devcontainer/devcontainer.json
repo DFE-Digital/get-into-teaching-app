@@ -6,7 +6,11 @@
   "features": {
     "ghcr.io/devcontainers/features/sshd:1": {},
     "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-      "packages": "libpq-dev, libvips, entr"
+      // libpq-dev/libvips/entr are app runtime deps. The rest are build
+      // dependencies needed to compile native gems from source (nokogiri,
+      // ffi, pg, psych, ...), which .bundle/config forces via
+      // BUNDLE_FORCE_RUBY_PLATFORM and nokogiri's --use-system-libraries.
+      "packages": "libpq-dev, libvips, entr, build-essential, pkg-config, libxml2-dev, libxslt1-dev, zlib1g-dev, libffi-dev, libyaml-dev"
     },
     "ghcr.io/devcontainers/features/git:1": {
       "version": "latest"
@@ -27,20 +31,66 @@
       "upgradePackages": true
     }
   },
+  // Marks that we are running inside the dev container, so the auto-start task
+  // only launches the server here (and not when a developer opens the repo in
+  // plain VS Code on their own machine).
+  "containerEnv": {
+    "IN_DEVCONTAINER": "true",
+    // Let corepack download the pinned Yarn (packageManager in package.json)
+    // without the interactive "Do you want to continue? [Y/n]" prompt that
+    // otherwise hangs the non-interactive setup script.
+    "COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
+  },
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
       "extensions": [
         "Shopify.ruby-lsp",
         "esbenp.prettier-vscode",
-        "ms-vscode.vscode-typescript-tslint-plugin",
-        "ms-vscode.vscode-types"
-      ]
+        "ms-ossdata.vscode-pgsql"
+      ],
+      "settings": {
+        // The ruby feature installs Ruby via RVM (/usr/local/rvm/...). Without
+        // this, the Ruby LSP extension defaults to rbenv and fails to find the
+        // Ruby version, showing an activation error popup on startup.
+        "rubyLsp.rubyVersionManager": {
+          "identifier": "rvm"
+        },
+        // Run the "folderOpen" task (the dev server) without prompting.
+        "task.allowAutomaticTasks": "on"
+      }
     }
   },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // This can be used to network with other containers or the host.
-  "forwardPorts": [2222, 3000, 6379],
+  // 2222: SSH, 3000: web app, 5432: Postgres, 6379: Redis.
+  "forwardPorts": [2222, 3000, 5432, 6379],
+  "portsAttributes": {
+    "3000": {
+      "label": "Get Into Teaching (web)",
+      "onAutoForward": "openBrowserOnce"
+    },
+    "5432": {
+      "label": "Postgres",
+      "onAutoForward": "silent"
+    },
+    "6379": {
+      "label": "Redis",
+      "onAutoForward": "silent"
+    },
+    "2222": {
+      "label": "SSH",
+      "onAutoForward": "silent"
+    },
+    "3035": {
+      "label": "Webpack dev server (internal)",
+      "onAutoForward": "silent"
+    }
+  },
+  // Any port not listed above (e.g. incidental dev-server ports) is forwarded
+  // quietly so only the web app on 3000 opens a browser.
+  "otherPortsAttributes": {
+    "onAutoForward": "silent"
+  },
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": ".devcontainer/boot.sh"
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.

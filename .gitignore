@@ -40,6 +40,10 @@ yarn-debug.log*
 /coverage
 .idea
 .vscode/
+# Share the dev container's auto-start task with everyone (incl. Codespaces)
+!.vscode/
+.vscode/*
+!.vscode/tasks.json
 
 # DevOps files
 bin/konduit.sh

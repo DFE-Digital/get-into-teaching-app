@@ -40,7 +40,7 @@ The website is deployed to AKS. The environments can be confusing because our Ra
 - [Deployment](/docs/deployment.md)
 - [Monitoring](/docs/monitoring.md)
 - [Content](/docs/content.md)
-- [Codespaces](/docs/codespaces.md)
+- [Dev container & Codespaces](/docs/codespaces.md)
 - [Events Portal](/docs/events-portal.md)
 - [Disaster Recovery Plan](/docs/disaster-recovery.md)
 - [Sign Up Journeys](/docs/sign-up-journeys.md)
