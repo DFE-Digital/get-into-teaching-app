@@ -11,6 +11,7 @@ module MailingList
     before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
     before_action :set_breadcrumb, only: [:completed]
+    before_action :set_sub_channel_id
 
     layout :resolve_layout
 
@@ -87,6 +88,10 @@ module MailingList
 
     def set_breadcrumb
       breadcrumb @page_title, request.path
+    end
+
+    def set_sub_channel_id
+      @sub_channel_id ||= app_store["sub_channel_id"]
     end
   end
 end
