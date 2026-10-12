@@ -78,7 +78,7 @@ Some courses begin with time spent in a university or school where you start you
 
 There are two types of assessments you’ll have as part of your training - formative and summative. Formative assessments are less formal and happen throughout your course. Summative assessments are formal assessments, usually at the end of your course.
 
-You might be assessed through written assignments, lesson observations, or by a portfolio of evidence showing how you’re meeting the [teachers’ standards](https://www.gov.uk/government/publica...)
+You might be assessed through written assignments, lesson observations, or by a portfolio of evidence showing how you’re meeting the [teachers’ standards](https://www.gov.uk/government/publica...).
 
 ## Adjustments and accessibility
 
