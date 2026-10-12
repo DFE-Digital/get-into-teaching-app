@@ -58,12 +58,9 @@ SKE courses are currently available in 4 secondary subjects:
 
 * computing
 * languages
-* mathematics
 * physics
 
 Find out more about [what it’s like to teach in secondary](/life-as-a-teacher/age-groups-and-specialisms/secondary).
-
-$quote-maths$
 
 ### The benefits of an SKE course
 
