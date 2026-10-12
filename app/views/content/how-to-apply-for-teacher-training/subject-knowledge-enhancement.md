@@ -10,15 +10,11 @@ navigation_description: Find out how to improve your subject knowledge with a su
 expander:
   SKE-bursaries:
     title: SKE bursaries
-    text: Most bursaries are only for UK citizens. However, you may be eligible for an SKE bursary if you are training to teach physics or languages.
+    text: Most bursaries are only for UK citizens. Learn more about [fees and financial support for non-UK trainee teachers](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
 quote:
   quote-confidence:
     text: "It’s allowed me to start my PGCE in physics with confidence that I know that I have the ability to teach that subject."
     name: "Trainee physics teacher"
-    classes: quote--indent
-  quote-maths:
-    text: "I did my A Level but it was nearly 9 years ago now! I knew that I’d need to polish up on my maths course and knowledge from A Level, just so I’ve got a bit of certainty when I teach it."
-    name: "Trainee maths teacher"
     classes: quote--indent
   quote-provider:
     text: "The candidate might have a degree in maths but want to teach physics, so we would look at the whole person’s profile and then recommend whether they needed subject knowledge enhancement."
