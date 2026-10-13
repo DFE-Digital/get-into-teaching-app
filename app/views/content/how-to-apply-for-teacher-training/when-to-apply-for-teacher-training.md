@@ -22,7 +22,6 @@ expander:
     text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you are moving to the UK from Ukraine</a>.
 timed_financial_content:
   subject_knowledge_enhancement:
-    format: text
     default:
       text: "you may need time to complete a <a href=\"/how-to-apply-for-teacher-training/subject-knowledge-enhancement\">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training"
 ---
