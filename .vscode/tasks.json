@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // Starts the local web server (Rails + Shakapacker + Sidekiq) via bin/dev.
+      // Runs automatically when the folder is opened inside the dev container.
+      // Outside the container (e.g. plain VS Code on a developer's machine) it
+      // does nothing, so it won't start a server unexpectedly.
+      "label": "Start Get Into Teaching",
+      "type": "shell",
+      "command": "bash .devcontainer/start-app.sh",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": false,
+        "clear": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

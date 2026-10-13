@@ -1,5 +1,9 @@
 # Development
 
+> The quickest way to get a local copy running — without installing Ruby, Node,
+> PostgreSQL or Redis yourself — is the [dev container](codespaces.md). The steps
+> below are for running the app natively on your own machine.
+
 ## Setting up the app in development
 
 * Run `bundle install` to install the gem dependencies
