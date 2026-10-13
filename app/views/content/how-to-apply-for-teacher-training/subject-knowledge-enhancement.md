@@ -10,7 +10,7 @@ navigation_description: Find out how to improve your subject knowledge with a su
 expander:
   SKE-bursaries:
     title: SKE bursaries
-    text: Most bursaries are only for UK citizens. Learn more about [fees and financial support for non-UK trainee teachers](/non-uk-teachers/fees-and-funding-for-non-uk-trainees).
+    text: Most bursaries are only for UK citizens. Learn more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.
 quote:
   quote-confidence:
     text: "It’s allowed me to start my PGCE in physics with confidence that I know that I have the ability to teach that subject."
