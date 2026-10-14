@@ -3,7 +3,7 @@ module CallsToAction
     attr_accessor :icon, :image, :title, :text, :caption, :badge_text
 
     def initialize(icon:, link_text:, link_target:, image:, title: nil, caption: nil, text: nil, badge_text: nil)
-      super
+      super()
 
       @title = title
       @badge_text = badge_text
@@ -23,13 +23,13 @@ module CallsToAction
   private
 
     def image_element(image)
-      tag.div(style: %[background-image: url('#{asset_pack_path(image)}')], class: "call-to-action__image") do
+      tag.div(style: %[background-image: url('#{helpers.asset_pack_path(image)}')], class: "call-to-action__image") do
         tag.div(tag.span(helpers.safe_html_format(badge_text)), class: "badge badge--bordered badge--fixed-80") if badge_text.present?
       end
     end
 
     def icon_element(icon)
-      image_pack_tag("static/images/#{icon}.svg",
+      helpers.image_pack_tag("static/images/#{icon}.svg",
                      width: 50,
                      height: 50,
                      **helpers.image_alt_attribs_for_text(""),

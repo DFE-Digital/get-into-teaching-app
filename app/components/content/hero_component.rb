@@ -8,7 +8,7 @@ module Content
       return if front_matter.blank?
 
       @front_matter = front_matter
-      super
+      super()
     end
 
     def before_render

@@ -14,7 +14,7 @@ module Content
       large: false,
       classes: nil
     )
-      super
+      super()
 
       @text = substitute_values(text)
       @name = substitute_values(name)

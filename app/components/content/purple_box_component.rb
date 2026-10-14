@@ -5,7 +5,7 @@ module Content
     include ContentHelper
 
     def initialize(heading:, text:, cta:, image:)
-      super
+      super()
 
       @heading = substitute_values(heading)
       @text = substitute_values(text)

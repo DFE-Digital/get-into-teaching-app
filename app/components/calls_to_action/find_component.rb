@@ -3,7 +3,7 @@ module CallsToAction
     attr_accessor :icon, :title, :text, :link, :heading_tag
 
     def initialize(icon: "icon-search-black", link_text: "Find your teacher training course", link_target: "https://find-teacher-training-courses.service.gov.uk/", title: "Find your teacher training course", text: "Take a look at the different teacher training courses available.", hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false, heading_tag: "h2")
-      super
+      super()
 
       @icon_filename = icon
       @title         = title
@@ -25,7 +25,7 @@ module CallsToAction
   private
 
     def icon_element(icon)
-      image_pack_tag("static/images/#{icon}.svg",
+      helpers.image_pack_tag("static/images/#{icon}.svg",
                      width: 50,
                      height: 50,
                      **helpers.image_alt_attribs_for_text(""),

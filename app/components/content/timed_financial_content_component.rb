@@ -16,7 +16,7 @@ module Content
     end
 
     def initialize(now: Time.zone.now, branch: nil, default: { text: "" }, format: "html", **conditional_branch_args)
-      super
+      super()
       @now = now
       @branch = branch
       @default = default

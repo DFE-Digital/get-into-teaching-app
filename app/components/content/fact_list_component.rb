@@ -3,13 +3,13 @@ module Content
     attr_reader :facts
 
     def initialize(facts)
-      super
+      super()
 
       @facts = facts
     end
 
     def icon(icon_name)
-      image_pack_tag("static/images/#{icon_name}.svg", **helpers.image_alt_attribs_for_text(""))
+      helpers.image_pack_tag("static/images/#{icon_name}.svg", **helpers.image_alt_attribs_for_text(""))
     end
 
   private
