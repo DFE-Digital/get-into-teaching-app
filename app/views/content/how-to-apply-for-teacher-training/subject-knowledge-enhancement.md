@@ -46,7 +46,7 @@ You'll choose your SKE course provider, but your training provider can help to d
 
 ### SKE subjects
 
-SKE courses are currently available in 4 secondary subjects:
+SKE courses are currently available in 3 secondary subjects:
 
 * computing
 * languages
