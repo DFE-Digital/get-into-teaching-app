@@ -10,7 +10,7 @@ navigation_description: Find out how to improve your subject knowledge with a su
 expander:
   SKE-bursaries:
     title: SKE bursaries
-    text: Most bursaries are only for UK citizens. Learn more about <a href="/non-uk-teachers/fees-and-funding-for-non-uk-trainees">fees and financial support for non-UK trainee teachers</a>.
+    text: Most bursaries are only for UK citizens. You can get a SKE bursary if you are eligible for [student finance](/funding-and-support/tuition-fee-and-maintenance-loans).
 quote:
   quote-confidence:
     text: "It’s allowed me to start my PGCE in physics with confidence that I know that I have the ability to teach that subject."
@@ -22,11 +22,7 @@ quote:
     classes: quote--indent 
 ---
 
-All subject knowledge enhancement (SKE) courses are closed for this academic year.
-
-If you are not already on a SKE course, you are unlikely to be eligible for a funded place with a training provider that requires one. We'll update this page with information about SKE courses and funding ahead of the 2026 to 2027 academic year.
-
-## What is a SKE course?
+## When you might need a SKE course
 
 You might need to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
 
