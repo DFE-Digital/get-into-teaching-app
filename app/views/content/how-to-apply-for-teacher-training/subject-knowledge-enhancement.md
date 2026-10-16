@@ -10,7 +10,7 @@ navigation_description: Find out how to improve your subject knowledge with a su
 expander:
   SKE-bursaries:
     title: SKE bursaries
-    text: Most bursaries are only for UK citizens. You can get a SKE bursary if you are eligible for [student finance](/funding-and-support/tuition-fee-and-maintenance-loans).
+    text: Most bursaries are only for UK citizens. You can get a SKE bursary if you are eligible for <a href="/funding-and-support/tuition-fee-and-maintenance-loans">student finance</a>.
 quote:
   quote-confidence:
     text: "It’s allowed me to start my PGCE in physics with confidence that I know that I have the ability to teach that subject."
