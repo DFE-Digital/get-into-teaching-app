@@ -22,7 +22,7 @@ quote:
     classes: quote--indent 
 ---
 
-## When you might need a SKE course
+## When you might need an SKE course
 
 You might need to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
 
