@@ -18,6 +18,7 @@ routes:
     course_length: 9 months full-time or up to 2 years part-time
     course_fee: "Yes"
     funding:
+      2026: Bursaries or scholarships, as well as student loans, are available if you’re eligible
       2025: Bursaries or scholarships, as well as student loans, are available if you’re eligible
       default: Bursaries, as well as student loans, are available if you’re eligible
     description: These courses combine theoretical learning with at least 2 classroom placements in schools. During your course, you’ll get the experience and knowledge you need to get qualified teacher status (QTS). On some courses, you can combine QTS with a postgraduate certificate in education (PGCE).

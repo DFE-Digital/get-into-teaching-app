@@ -58,6 +58,7 @@ en:
         sub_head: "Art and design - Secondary"
         funding:
           default: "Bursaries are not available for this subject."
+          2026: "Scholarships or bursaries are not available for this subject."
       biology:
         name: "Biology"
         group: "Secondary"
@@ -95,7 +96,7 @@ en:
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding:
-          2026: "Bursaries are not available for this subject."
+          2026: "Scholarships or bursaries are not available for this subject. TODO: REVIEW THIS TEXT - DOES IT APPLY IF MORE THAN 50% OF THE COURSE COVERS AN ANCIENT LANGUAGE?"
           2025: |-
             Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
 
@@ -125,6 +126,7 @@ en:
         group: "Secondary"
         sub_head: "Dance - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       design_and_technology:

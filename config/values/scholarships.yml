@@ -12,3 +12,6 @@ scholarships:
     computing: £xxxx
     languages_french_german_spanish: £xxxx
     physics: £xxxx
+    generic:
+      maxshortened: £XXk
+      max: £xx,xxx

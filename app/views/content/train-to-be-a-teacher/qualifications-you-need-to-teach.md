@@ -20,9 +20,9 @@ timed_financial_content:
     default:
       partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/bursary"
     2025:
-      partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/bursary_and_scholarships"
+      partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/bursary_and_scholarships_2025"
     2026:
-      partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/bursary_2026"
+      partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/bursary_and_scholarships_2026"
   subject_knowledge_enhancement:
     2025: 
       partial: "content/train-to-be-a-teacher/qualifications-you-need-to-teach/subject_knowledge_enhancement"
