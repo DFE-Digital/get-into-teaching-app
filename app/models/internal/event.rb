@@ -164,11 +164,11 @@ module Internal
     end
 
     def registration_email_link_email?
-      registration_email_link&.include?("@")
+      !registration_email_link_website?
     end
 
     def registration_email_link_website?
-      registration_email_link =~ /https?:\/\//i
+      registration_email_link =~ /^https?:\/\//i
     end
   end
 end
