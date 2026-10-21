@@ -17,6 +17,7 @@ Table caption: Bursary amounts for subjects where funding depends on your degree
 | **Languages**<br/>(French, German and Spanish only)                  | $bursaries_2026_postgraduate_languages_french_german_spanish$ |
 | **Languages**<br/>(all other languages, including ancient languages) |                 $bursaries_2026_postgraduate_languages_other$ |
 | **Biology**                                                          |                         $bursaries_2026_postgraduate_biology$ |
+| **Citizenship**                                                      |                     $bursaries_2026_postgraduate_citizenship$ |
 | **Geography**                                                        |                       $bursaries_2026_postgraduate_geography$ |
 | **Music**                                                            |                           $bursaries_2026_postgraduate_music$ |
 | **Religious education (RE)**                                         |             $bursaries_2026_postgraduate_religious_education$ |
