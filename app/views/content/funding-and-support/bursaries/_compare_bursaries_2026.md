@@ -1,6 +1,6 @@
 ## Compare bursaries
 
-To check which bursaries you could be eligible for based on your degree, read the guidance on [relevant degree subjects for initial teacher training funding](https://www.gov.uk/government/publications/initial-teacher-training-bursaries-relevant-degree-subjects).
+To check which bursary you could get based on your degree, read the guidance on [funding guidance for initial teacher training](https://www.gov.uk/government/publications/initial-teacher-training-bursaries-relevant-degree-subjects).
 
 | Subject                   |                                Bursary for a relevant degree |                                        Bursary for any degree |
 |---------------------------|-------------------------------------------------------------:|--------------------------------------------------------------:|
@@ -22,6 +22,6 @@ Table caption: Bursary amounts for subjects where funding depends on your degree
 | **Music**                                                            |                           $bursaries_2026_postgraduate_music$ |
 | **Religious education (RE)**                                         |             $bursaries_2026_postgraduate_religious_education$ |
 
-Table caption: Bursary amounts for subjects where funding does not depend on your degree
+Table caption: Bursary amounts where funding does not depend on your degree
 
 $subjects$
