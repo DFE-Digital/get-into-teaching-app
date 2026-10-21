@@ -39,7 +39,7 @@ gem "secure_headers"
 gem "nokogiri", ">= 1.14.3"
 
 # Canonical meta tag
-gem "canonical-rails", ">= 0.2.14"
+gem "canonical-rails", ">= 0.2.17"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.4.0"

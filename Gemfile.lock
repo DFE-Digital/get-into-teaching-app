@@ -747,7 +747,7 @@ DEPENDENCIES
   bootsnap (>= 1.16.0)
   brakeman (~> 8.0.5)
   byebug
-  canonical-rails (>= 0.2.14)
+  canonical-rails (>= 0.2.17)
   capybara (~> 3.40.0)
   capybara-mechanize
   connection_pool (< 3)
