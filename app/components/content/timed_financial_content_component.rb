@@ -15,6 +15,13 @@ module Content
       end
     end
 
+    # Resolves timed content for non-HTML contexts such as document titles and
+    # meta tags. It deliberately does not render the component, so Rails does
+    # not add development template annotations to the returned text.
+    def self.resolve_text(params: {}, **component_args)
+      new(**component_args).resolve_text(params: params)
+    end
+
     def initialize(now: Time.zone.now, branch: nil, default: { text: "" }, format: "html", **conditional_branch_args)
       super()
       @now = now
@@ -25,12 +32,17 @@ module Content
     end
 
     def call
-      render_detail = conditional_branch_args.fetch(selected_branch_key, default)
+      render_detail = selected_render_detail(params: view_context.params)
       if render_detail[:partial]
         @view_context.render partial: render_detail[:partial]
       else
         render_text(render_detail[:text])
       end
+    end
+
+    def resolve_text(params: {})
+      text = selected_render_detail(params: params)[:text]
+      text.present? ? substitute_values(text).strip : ""
     end
 
   private
@@ -45,16 +57,20 @@ module Content
       Kramdown::Document.new(substitute_values(text)).to_html.strip.html_safe
     end
 
-    def selected_branch_key
-      override_branch_key || override_now_key || branch_key(now)
+    def selected_render_detail(params:)
+      conditional_branch_args.fetch(selected_branch_key(params: params), default)
+    end
+
+    def selected_branch_key(params:)
+      override_branch_key(params: params) || override_now_key(params: params) || branch_key(now)
     end
 
     def overrides_enabled? = !Rails.env.production?
 
-    def override_now_key
+    def override_now_key(params:)
       return unless overrides_enabled?
 
-      now_param = view_context.params[:now]
+      now_param = params[:now]
       return if now_param.blank?
 
       override_now = Time.zone.parse(now_param)
@@ -63,10 +79,10 @@ module Content
       nil
     end
 
-    def override_branch_key
+    def override_branch_key(params:)
       return unless overrides_enabled?
 
-      key = (view_context.params[:branch].presence || branch)&.to_s
+      key = (params[:branch].presence || branch)&.to_s
       key if key && (conditional_branch_args.key?(key) || key == "default")
     end
 

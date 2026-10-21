@@ -12,8 +12,8 @@ class FundingWidgetComponent < ViewComponent::Base
 
   def before_render
     @icon = helpers.image_pack_tag("static/images/icon-money.svg", width: 50, height: 50,
-                                                           **helpers.image_alt_attribs_for_text(""),
-                                                           class: "call-to-action__icon")
+                                                                   **helpers.image_alt_attribs_for_text(""),
+                                                                   class: "call-to-action__icon")
   end
 
   def grouped_options

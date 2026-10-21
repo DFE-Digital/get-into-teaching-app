@@ -92,8 +92,8 @@ gem "get_into_teaching_api_client_faraday", ">= 4.3.8", github: "DFE-Digital/get
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
-gem "kaminari", "~> 1.2", ">= 1.2.2"
 gem "govuk-components", "~> 6.5.0"
+gem "kaminari", "~> 1.2", ">= 1.2.2"
 gem "view_component", "4.15.0"
 
 gem "google-api-client", ">= 0.53.0", require: false

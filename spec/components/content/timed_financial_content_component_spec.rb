@@ -243,6 +243,42 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
     end
   end
 
+  describe ".resolve_text" do
+    it "resolves plain text without rendering a component" do
+      allow(Value).to receive(:get).with("myamount").and_return("£9,000")
+
+      result = described_class.resolve_text(
+        now: now_in_2026_window,
+        default: { text: "Default copy" },
+        "2026": { text: "You get $myamount$ a year." },
+      )
+
+      expect(result).to eq("You get £9,000 a year.")
+      expect(result).not_to be_html_safe
+    end
+
+    it "honours the request branch override outside production" do
+      result = described_class.resolve_text(
+        params: { branch: "2026" },
+        now: now_in_2025_window,
+        default: { text: "Default copy" },
+        "2025": { text: "2025 copy" },
+        "2026": { text: "2026 copy" },
+      )
+
+      expect(result).to eq("2026 copy")
+    end
+
+    it "returns an empty string for a partial-only branch" do
+      result = described_class.resolve_text(
+        now: now_in_gap,
+        default: { partial: "content/shared/qualifications-training/get_school_experience" },
+      )
+
+      expect(result).to eq("")
+    end
+  end
+
   describe "the default value for now" do
     it "uses Time.current when no now argument is supplied" do
       travel_to now_in_2026_window do
