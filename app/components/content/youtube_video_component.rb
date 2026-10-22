@@ -5,7 +5,7 @@ module Content
     include ContentHelper
 
     def initialize(id:, title:, orientation: "landscape")
-      super
+      super()
 
       @id = id
       @title = substitute_values(title)

@@ -3,7 +3,7 @@ module CallsToAction
     attr_accessor :icon, :title, :text, :link, :heading_tag
 
     def initialize(icon: "icon-school-black", link_text: "Apply for a course", link_target: "https://www.gov.uk/apply-for-teacher-training", title: "Start your application", text: "Create an account and start your application for a teacher training course.", hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false, heading_tag: "h2")
-      super
+      super()
 
       @icon_filename = icon
       @title         = title
@@ -27,11 +27,11 @@ module CallsToAction
   private
 
     def icon_element(icon)
-      image_pack_tag("static/images/#{icon}.svg",
-                     width: 50,
-                     height: 50,
-                     **helpers.image_alt_attribs_for_text(""),
-                     class: "call-to-action__icon")
+      helpers.image_pack_tag("static/images/#{icon}.svg",
+                             width: 50,
+                             height: 50,
+                             **helpers.image_alt_attribs_for_text(""),
+                             class: "call-to-action__icon")
     end
 
     def responsive_classes

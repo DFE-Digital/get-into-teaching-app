@@ -15,7 +15,7 @@ module CallsToAction
         { text: "Get school experience", url: "/train-to-be-a-teacher/get-school-experience" },
       ]
     )
-      super
+      super()
       @title = title
       @image = image
       @title_color = title_color

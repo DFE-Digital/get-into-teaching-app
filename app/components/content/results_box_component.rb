@@ -5,7 +5,7 @@ module Content
     include ContentHelper
 
     def initialize(heading:, fee:, course_length:, funding:, text:, link_text:, link_target:, title: nil, border_color: :grey)
-      super
+      super()
 
       @title = title
       @heading = heading

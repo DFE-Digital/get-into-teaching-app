@@ -3,7 +3,7 @@ module Header
     attr_reader :classes
 
     def initialize(classes: [])
-      super
+      super()
 
       @classes = %w[extra-navigation] + classes
     end
