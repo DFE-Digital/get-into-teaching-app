@@ -34,6 +34,9 @@ timed_financial_content:
       text: Find out about the teacher training bursaries available, depending on the subject you’re training to teach.
     2025:
       text: Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.
+  subject_bursary_relevance:
+    2026:
+      text: For some subjects, the bursary amount you’ll receive depends on whether your degree is in a relevant subject.
   eligibility_for_scholarships:
     2025:
       partial: "content/funding-and-support/bursaries/eligibility_for_scholarships"  
@@ -53,6 +56,8 @@ timed_financial_content:
 ## Eligibility for bursaries
 
 You do not need to apply for a bursary. If you’re eligible, you’ll automatically receive it.
+
+$subject_bursary_relevance$
 
 You must be eligible for student finance to receive a bursary. You'll also need at least one of the following:
 
