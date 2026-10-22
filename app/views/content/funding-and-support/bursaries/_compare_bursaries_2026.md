@@ -1,6 +1,6 @@
 ## Compare bursaries
 
-To check which bursary you could get based on your degree, read the [funding guidance for initial teacher training](https://gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-2027-to-2028-academic-year).
+[Find out if your degree subject makes you eligible for a higher bursary amount](https://www.gov.uk/government/publications/initial-teacher-training-bursaries-relevant-degree-subjects).
 
 | Subject                   |                                Bursary for a relevant degree |                                        Bursary for any degree |
 |---------------------------|-------------------------------------------------------------:|--------------------------------------------------------------:|
