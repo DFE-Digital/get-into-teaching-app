@@ -62,11 +62,12 @@ GIT
 
 GIT
   remote: https://github.com/commonlit/canonical-rails.git
-  revision: 344ca31a148e68f07446dda8b2d4913342372777
-  ref: 344ca31a148e68f07446dda8b2d4913342372777
+  revision: 97bcb28b910b08ce4dc0169eae55a8cd3d4f26ff
+  ref: 97bcb28b910b08ce4dc0169eae55a8cd3d4f26ff
+  branch: bump-rails-8-1
   specs:
     canonical-rails (0.2.17)
-      actionview (>= 4.1, < 8.1)
+      actionview (>= 4.1, < 8.2)
 
 GIT
   remote: https://github.com/otherguy/rspec-sonarqube-formatter.git
@@ -209,7 +210,7 @@ GEM
     crack (1.0.1)
       bigdecimal
       rexml
-    crass (1.0.7)
+    crass (1.0.8)
     cronex (0.15.0)
       tzinfo
       unicode (>= 0.4.4.5)

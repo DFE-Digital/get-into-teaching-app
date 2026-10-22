@@ -42,7 +42,8 @@ gem "nokogiri", ">= 1.14.3"
 # Temporary Rails 8.1 support; canonical-rails PR #96.
 gem "canonical-rails",
     git: "https://github.com/commonlit/canonical-rails.git",
-    ref: "344ca31a148e68f07446dda8b2d4913342372777"
+    branch: "bump-rails-8-1",
+    ref: "97bcb28b910b08ce4dc0169eae55a8cd3d4f26ff"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.4.0"
