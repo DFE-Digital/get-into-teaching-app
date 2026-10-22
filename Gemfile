@@ -39,7 +39,10 @@ gem "secure_headers"
 gem "nokogiri", ">= 1.14.3"
 
 # Canonical meta tag
-gem "canonical-rails", ">= 0.2.17"
+# Temporary Rails 8.1 support; canonical-rails PR #96.
+gem "canonical-rails",
+    git: "https://github.com/commonlit/canonical-rails.git",
+    ref: "344ca31a148e68f07446dda8b2d4913342372777"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.4.0"

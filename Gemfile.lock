@@ -61,6 +61,14 @@ GIT
     geometry (6.5)
 
 GIT
+  remote: https://github.com/commonlit/canonical-rails.git
+  revision: 344ca31a148e68f07446dda8b2d4913342372777
+  ref: 344ca31a148e68f07446dda8b2d4913342372777
+  specs:
+    canonical-rails (0.2.17)
+      actionview (>= 4.1, < 8.1)
+
+GIT
   remote: https://github.com/otherguy/rspec-sonarqube-formatter.git
   revision: 13fe436921e1442a09c23d9e46055773d1511638
   ref: 13fe436
@@ -181,8 +189,6 @@ GEM
       racc
     builder (3.3.0)
     byebug (12.0.0)
-    canonical-rails (0.2.17)
-      actionview (>= 4.1, < 8.1)
     capybara (3.40.0)
       addressable
       matrix
@@ -747,7 +753,7 @@ DEPENDENCIES
   bootsnap (>= 1.16.0)
   brakeman (~> 8.0.5)
   byebug
-  canonical-rails (>= 0.2.17)
+  canonical-rails!
   capybara (~> 3.40.0)
   capybara-mechanize
   connection_pool (< 3)
