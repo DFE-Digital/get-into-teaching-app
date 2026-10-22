@@ -122,11 +122,21 @@ describe Internal::Event do
       end
 
       describe "#registration email link" do
-        it { is_expected.to allow_value("test@test.com").for :registration_email_link }
-        it { is_expected.to allow_value("http://test.test/register").for :registration_email_link }
-        it { is_expected.to allow_value("https://test.test/register").for :registration_email_link }
-        it { is_expected.not_to allow_values("http://localhost/register").for :registration_email_link }
-        it { is_expected.not_to allow_values("test@test@test", "test@", "test", "", nil).for :registration_email_link }
+        context "with valid values" do
+          it { is_expected.to allow_value("test@test.com").for :registration_email_link }
+          it { is_expected.to allow_value("http://test.test/register").for :registration_email_link }
+          it { is_expected.to allow_value("https://test.test/register").for :registration_email_link }
+          it { is_expected.to allow_value("https://foooo.barrrr.bazzzzzzzz.com/event/669fc46c-6bbf-465c-b2bf-bbcc8f3aa1f1@F47ac10b-58cc-4372-a567-0e02b2c3d479?source=copyLinkLegacyShareLinkDialog").for :registration_email_link }
+        end
+
+        context "with invalid values" do
+          it { is_expected.not_to allow_value("http://localhost/register").for :registration_email_link }
+          it { is_expected.not_to allow_value(" https://website.com/register").for :registration_email_link }
+          it { is_expected.not_to allow_value("https://website/register").for :registration_email_link }
+          it { is_expected.not_to allow_value("https://website/register@foo.bar").for :registration_email_link }
+          it { is_expected.not_to allow_value("www.website.com").for :registration_email_link }
+          it { is_expected.not_to allow_values("test@test@test", "test@test", "test@", "@test", "test", "", nil).for :registration_email_link }
+        end
       end
     end
 
