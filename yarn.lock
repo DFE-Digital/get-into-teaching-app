@@ -7001,10 +7001,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"govuk-frontend@npm:^5.11.1":
-  version: 5.11.1
-  resolution: "govuk-frontend@npm:5.11.1"
-  checksum: 10c0/e194673fb4147b5a536b014db48baadcb69506023973bdc4a97964d0d377dc42aa6ce1e4671ee73efbf38aa448c5d3e9d9504fbfd6ff9483e301071c3767eb94
+"govuk-frontend@npm:^6.6.0":
+  version: 6.6.0
+  resolution: "govuk-frontend@npm:6.6.0"
+  checksum: 10c0/7fb983ee21e97f19df9b980301a05e24a11f3301fcb8ecf5bc8f956b54bd61d55255b2c16fa9d60cf59fd984583b368e128075ea7348e74971e742adcc86a366
   languageName: node
   linkType: hard
 
@@ -10719,7 +10719,7 @@ __metadata:
     eslint-plugin-promise: "npm:^5.2.0"
     file-loader: "npm:^6.2.0"
     flatpickr: "npm:^4.6.13"
-    govuk-frontend: "npm:^5.11.1"
+    govuk-frontend: "npm:^6.6.0"
     is-touch-device: "npm:^1.0.1"
     jest: "npm:^30.2.0"
     jest-environment-jsdom: "npm:^29.7.0"

@@ -3,7 +3,7 @@ module GroupedCards
     attr_reader :data
 
     def initialize(data)
-      super
+      super()
 
       @data = data
     end

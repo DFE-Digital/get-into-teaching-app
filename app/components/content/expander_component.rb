@@ -14,7 +14,7 @@ module Content
       expanded: false,
       classes: nil
     )
-      super
+      super()
 
       @header = substitute_values(header)
       @title = substitute_values(title)

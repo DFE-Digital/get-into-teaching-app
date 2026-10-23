@@ -4,7 +4,7 @@ class CallsToAction::Promo::LeftSection < ViewComponent::Base
   def initialize(classes: [])
     @classes = classes
 
-    super
+    super()
   end
 
   def wrapper_classes

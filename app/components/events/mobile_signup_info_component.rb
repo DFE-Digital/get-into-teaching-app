@@ -5,7 +5,7 @@ module Events
     def initialize(event)
       @event = event
 
-      super
+      super()
     end
 
     def date

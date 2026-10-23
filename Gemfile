@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 8.0"
+gem "rails", "~> 8.1.4"
 
 # Use Puma as the app server
 gem "puma", "~> 6.4"
@@ -39,7 +39,11 @@ gem "secure_headers"
 gem "nokogiri", ">= 1.14.3"
 
 # Canonical meta tag
-gem "canonical-rails", ">= 0.2.14"
+# Temporary Rails 8.1 support; canonical-rails PR #96.
+gem "canonical-rails",
+    git: "https://github.com/commonlit/canonical-rails.git",
+    branch: "bump-rails-8-1",
+    ref: "97bcb28b910b08ce4dc0169eae55a8cd3d4f26ff"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.4.0"
@@ -92,8 +96,9 @@ gem "get_into_teaching_api_client_faraday", ">= 4.3.8", github: "DFE-Digital/get
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
+gem "govuk-components", "~> 6.6.0"
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 3.21.0"
+gem "view_component", "4.15.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 

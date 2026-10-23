@@ -17,7 +17,7 @@ module CallsToAction
         { text: "Change to a career in teaching", url: "/life-as-a-teacher/change-careers" },
       ]
     )
-      super
+      super()
       @title = title
       @image = image
       @title_color = title_color

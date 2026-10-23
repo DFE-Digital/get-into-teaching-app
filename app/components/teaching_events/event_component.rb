@@ -12,7 +12,7 @@ module TeachingEvents
       @end_at    = event.end_at
       @slug      = event.readable_id
 
-      super
+      super()
     end
 
     delegate :provider_event?, to: :type

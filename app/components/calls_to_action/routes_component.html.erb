@@ -1,7 +1,7 @@
 <%= tag.div(class: "routes--border-top") if border %>
 <%= tag.div class: classes do %>
     <div class="routes__left">
-    <%= image_pack_tag(image,
+    <%= helpers.image_pack_tag(image,
                      **helpers.image_alt_attribs_for_text(""),
                      class: "routes__image")
     %>

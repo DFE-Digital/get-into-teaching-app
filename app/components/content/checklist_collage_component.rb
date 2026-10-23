@@ -5,7 +5,7 @@ module Content
     include ContentHelper
 
     def initialize(checklist:, image_paths:, cta: nil)
-      super
+      super()
 
       @checklist = checklist.map { |item| substitute_values(item) }
       @image_paths = image_paths
@@ -15,7 +15,7 @@ module Content
     def images
       safe_join(
         image_paths.map do |path|
-          image_pack_tag(path, **helpers.image_alt_attribs(path))
+          helpers.image_pack_tag(path, **helpers.image_alt_attribs(path))
         end,
       )
     end

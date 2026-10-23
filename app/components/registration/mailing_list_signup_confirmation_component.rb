@@ -4,7 +4,7 @@ class Registration::MailingListSignupConfirmationComponent < ViewComponent::Base
   def initialize(mailing_list_session)
     @first_name = mailing_list_session["first_name"]
 
-    super
+    super()
   end
 
   def heading_text

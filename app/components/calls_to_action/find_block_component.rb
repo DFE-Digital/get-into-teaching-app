@@ -11,7 +11,7 @@ module CallsToAction
       link_text: "Find teacher training courses",
       link_target: "https://find-teacher-training-courses.service.gov.uk"
     )
-      super
+      super()
       @title = title
       @image = image
       @image_classes = image_classes

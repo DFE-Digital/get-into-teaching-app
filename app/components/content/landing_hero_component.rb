@@ -5,7 +5,7 @@ module Content
     include ContentHelper
 
     def initialize(colour:, title:, image: nil, title_paragraph: nil)
-      super
+      super()
       @colour = colour
       @image = image
       @title = title # NB this is an array of titles
@@ -13,7 +13,7 @@ module Content
     end
 
     def header_image
-      image_pack_tag(@image, **helpers.image_alt_attribs(@image)) if @image
+      helpers.image_pack_tag(@image, **helpers.image_alt_attribs(@image)) if @image
     end
 
     def show_title_paragraph?
