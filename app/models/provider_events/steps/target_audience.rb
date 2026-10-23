@@ -4,7 +4,7 @@ module ProviderEvents
       MAX_CHARS = 500
 
       include FunnelTitle
-      include ActiveRecord::Normalization
+      include ActiveModel::Attributes::Normalization
       include ActiveModel::Dirty
 
       attribute :target_audience

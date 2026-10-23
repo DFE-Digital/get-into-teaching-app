@@ -1,7 +1,7 @@
 module TeacherTrainingAdviser::Steps
   class UkAddress < GITWizard::Step
     include FunnelTitle
-    include ActiveRecord::Normalization
+    include ActiveModel::Attributes::Normalization
     include ActiveModel::Dirty
 
     attribute :address_postcode
