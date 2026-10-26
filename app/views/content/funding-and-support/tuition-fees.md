@@ -29,7 +29,7 @@ timed_financial_content:
     2025:
       text: "If you're interested in teaching certain subjects, you might be able to [get a tax-free bursary or scholarship](/funding-and-support/bursaries) of up to $scholarships_generic_maxshortened$ to support you while you're training."
     2026:
-      text: "If you're interested in teaching certain subjects, you might be able to [get a tax-free bursary](/funding-and-support/bursaries) of up to $bursaries_2026_generic_max_shortened$ to support you while you're training."
+      text: "If you're interested in teaching certain subjects, you might be able to [get a tax-free bursary or scholarship](/funding-and-support/bursaries) of up to $scholarships_2026_generic_maxshortened$ to support you while you're training."
 ---
 For most postgraduate teacher training courses in England you need to pay a tuition fee. 
 

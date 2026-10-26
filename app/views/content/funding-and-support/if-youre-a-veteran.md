@@ -12,7 +12,9 @@ timed_financial_content:
     default:
       partial: "content/funding-and-support/if-youre-a-veteran/bursaries"
     2025:
-      partial: "content/funding-and-support/if-youre-a-veteran/bursaries_and_scholarships"
+      partial: "content/funding-and-support/if-youre-a-veteran/bursaries_and_scholarships_2025"
+    2026:
+      partial: "content/funding-and-support/if-youre-a-veteran/bursaries_and_scholarships_2026"
 navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 ---

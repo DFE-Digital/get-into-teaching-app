@@ -7,6 +7,7 @@
   <%= render Content::TimedFinancialContentComponent.new(
     default: { text: "If you want to do postgraduate teacher training in England that leads to <a href='/train-to-be-a-teacher/what-is-qts'>qualified teacher status (QTS)</a>, you may be eligible for a bursary." },
     "2025": { text: "If you want to do postgraduate teacher training in England that leads to <a href='/train-to-be-a-teacher/what-is-qts'>qualified teacher status (QTS)</a>, you may be eligible for a bursary or scholarship." },
+    "2026": { text: "If you want to do postgraduate teacher training in England that leads to <a href='/train-to-be-a-teacher/what-is-qts'>qualified teacher status (QTS)</a>, you may be eligible for a bursary or scholarship." },
   ) %>
 </div>
 
@@ -15,6 +16,7 @@
     format: :text,
     default: { text: "What are bursaries?" },
     "2025": { text: "What are bursaries and scholarships?" },
+    "2026": { text: "What are bursaries and scholarships?" },
   ) %>
 </h2>
 
@@ -22,7 +24,8 @@
   <section class="col col-720">
     <%= render Content::TimedFinancialContentComponent.new(
       default: { partial: "content/funding-and-support/bursaries/what_are_bursaries" },
-      "2025": { partial: "content/funding-and-support/bursaries/what_are_bursaries_and_scholarships" },
+      "2025": { partial: "content/funding-and-support/bursaries/what_are_bursaries_and_scholarships_2025" },
+      "2026": { partial: "content/funding-and-support/bursaries/what_are_bursaries_and_scholarships_2026" },
     ) %>
   </section>
   <section id="funding-widget">

@@ -58,6 +58,7 @@ en:
         sub_head: "Art and design - Secondary"
         funding:
           default: "Bursaries are not available for this subject."
+          2026: "Scholarships or bursaries are not available for this subject."
       biology:
         name: "Biology"
         group: "Secondary"
@@ -71,6 +72,7 @@ en:
         group: "Secondary"
         sub_head: "Business - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       chemistry:
@@ -78,7 +80,7 @@ en:
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
         funding:
-          2026: "Bursaries of up to %{bursaries_2026_postgraduate_chemistry_relevant} are available for trainee chemistry teachers if you're eligible."
+          2026: "Scholarships of %{scholarships_2026_chemistry} or bursaries of up to %{bursaries_2026_postgraduate_chemistry_relevant} are available for trainee chemistry teachers if you're eligible."
           2025: "Scholarships of %{scholarships_chemistry} or bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you're eligible."
           default: "Bursaries are available for trainee chemistry teachers if you're eligible."
       citizenship:
@@ -87,13 +89,14 @@ en:
         sub_head: "Citizenship - Secondary"
         funding:
           2025: "Scholarships or bursaries are not available for this subject."
+          2026: "Scholarships or bursaries are not available for this subject. TODO: REVIEW THIS TEXT."
           default: "Bursaries are not available for this subject."
       classics:
         name: "Classics"
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding:
-          2026: "Bursaries are not available for this subject."
+          2026: "Scholarships or bursaries are not available for this subject. TODO: REVIEW THIS TEXT - DOES IT APPLY IF MORE THAN 50% OF THE COURSE COVERS AN ANCIENT LANGUAGE?"
           2025: |-
             Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
 
@@ -107,6 +110,7 @@ en:
         group: "Secondary"
         sub_head: "Communication and media studies - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       computing:
@@ -114,7 +118,7 @@ en:
         group: "Secondary"
         sub_head: "Computing - Secondary"
         funding:
-          2026: "Bursaries of up to %{bursaries_2026_postgraduate_computing_relevant} are available for trainee computing teachers if you're eligible."
+          2026: "Scholarships of %{scholarships_2026_computing} or bursaries of up to %{bursaries_2026_postgraduate_computing_relevant} are available for trainee computing teachers if you're eligible."
           2025: "Scholarships of %{scholarships_computing} or bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you're eligible."
           default: "Bursaries are available for trainee computing teachers if you're eligible."
       dance:
@@ -122,6 +126,7 @@ en:
         group: "Secondary"
         sub_head: "Dance - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       design_and_technology:
@@ -137,6 +142,7 @@ en:
         group: "Secondary"
         sub_head: "Drama - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       economics:
@@ -144,6 +150,7 @@ en:
         group: "Secondary"
         sub_head: "Economics - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       english:
@@ -151,6 +158,7 @@ en:
         group: "Secondary"
         sub_head: "English - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       english_as_a_second_or_other_language:
@@ -158,6 +166,7 @@ en:
         group: "Secondary"
         sub_head: "English as a second or other language - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       geography:
@@ -173,6 +182,7 @@ en:
         group: "Secondary"
         sub_head: "Health and social care - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       history:
@@ -180,6 +190,7 @@ en:
         group: "Secondary"
         sub_head: "History - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       languages:
@@ -188,7 +199,9 @@ en:
         sub_head: "Languages (including ancient languages)"
         funding:
           2026: |-
-            Bursaries of %{bursaries_2026_postgraduate_languages_other} are available for all trainee language teachers if you’re eligible. These bursaries include ancient languages.
+            Scholarships of %{scholarships_2026_languages_french_german_spanish} are available for trainee French, German, and Spanish language teachers if you're eligible.<br>
+
+            Bursaries of %{bursaries_2026_postgraduate_languages_other} are available for all trainee language teachers if you're eligible. These bursaries include ancient languages.
           2025: |-
             Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers if you're eligible.<br><br>
 
@@ -215,6 +228,7 @@ en:
         group: "Secondary"
         sub_head: "Physical education - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       physics:
@@ -222,7 +236,7 @@ en:
         group: "Secondary"
         sub_head: "Physics - Secondary"
         funding:
-          2026: "Bursaries of up to %{bursaries_2026_postgraduate_physics_relevant} are available for trainee physics teachers if you're eligible."
+          2026: "Scholarships of %{scholarships_2026_physics} or bursaries of up to %{bursaries_2026_postgraduate_physics_relevant} are available for trainee physics teachers if you're eligible."
           2025: "Scholarships of %{scholarships_physics} or bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers if you're eligible."
           default: "Bursaries are available for trainee physics teachers if you're eligible."
       psychology:
@@ -230,6 +244,7 @@ en:
         group: "Secondary"
         sub_head: "Psychology - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       religious_group:
@@ -245,6 +260,7 @@ en:
         group: "Secondary"
         sub_head: "Science - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       social_sciences:
@@ -252,6 +268,7 @@ en:
         group: "Secondary"
         sub_head: "Social sciences - Secondary"
         funding:
+          2026: "Scholarships or bursaries are not available for this subject."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
 

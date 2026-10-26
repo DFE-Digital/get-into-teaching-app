@@ -1,5 +1,6 @@
 ---
 title: "Teacher training bursaries"
+heading: "Bursaries and scholarships for postgraduate teacher training"
 subcategory: Courses with fees
 promo_content:
   - "content/shared/block-promos/adviser_findfees"
@@ -11,7 +12,7 @@ cta_arrow_link:
     link_target: "/life-as-a-teacher/explore-subjects"
     link_text: "Find out more about the subjects you could teach"
 navigation: 20.15
-navigation_title: Bursaries
+navigation_title: Bursaries and scholarships
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
 before-content:
     - content/funding-and-support/bursaries/funding-widget
@@ -22,11 +23,15 @@ timed_financial_content:
       text: "Teacher training bursaries"
     2025:
       text: "Teacher training bursaries and scholarships"
+    2026:
+      text: "Teacher training bursaries and scholarships"
   heading:
     format: text
     default:
       text: "Bursaries for postgraduate teacher training"
     2025:
+      text: "Bursaries and scholarships for postgraduate teacher training"
+    2026:
       text: "Bursaries and scholarships for postgraduate teacher training"
   description:
     format: text
@@ -34,20 +39,25 @@ timed_financial_content:
       text: Find out about the teacher training bursaries available, depending on the subject you’re training to teach.
     2025:
       text: Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.
+    2026:
+      text: Find out about the teacher training bursaries and scholarships available, depending on the subject you’re training to teach.  
   eligibility_for_scholarships:
     2025:
-      partial: "content/funding-and-support/bursaries/eligibility_for_scholarships"  
+      partial: "content/funding-and-support/bursaries/eligibility_for_scholarships_2025"  
+    2026:
+      partial: "content/funding-and-support/bursaries/eligibility_for_scholarships_2026"
   compare_bursaries_and_scholarships:
     2025:
-      partial: "content/funding-and-support/bursaries/compare_bursaries_and_scholarships"
+      partial: "content/funding-and-support/bursaries/compare_bursaries_and_scholarships_2025"
     2026:
-        partial: "content/funding-and-support/bursaries/compare_bursaries_2026"
+      partial: "content/funding-and-support/bursaries/compare_bursaries_and_scholarships_2026"
   other_funding_options:
     default: 
       partial: "content/funding-and-support/bursaries/other_funding_options"
     2025:
       partial: "content/funding-and-support/bursaries/other_funding_options_2025"
-
+    2026:
+      partial: "content/funding-and-support/bursaries/other_funding_options_2026"
 ---
 
 ## Eligibility for bursaries

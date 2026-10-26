@@ -16,6 +16,7 @@ table {
       border-bottom: 1px solid $grey-light;
       word-break: normal;
       white-space: normal;
+      overflow-wrap: normal;
 
       &:first-child {
         padding-left: 0;
