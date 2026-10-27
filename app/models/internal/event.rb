@@ -5,6 +5,15 @@ module Internal
     include ApiModelConvertible
 
     VENUE_TYPES = { add: "add", existing: "existing", none: "none" }.freeze
+    VALID_REGISTRATION_EMAIL_LINK = %r{
+      \A
+      (?:
+        https?://[^\s]+
+        |
+        [^\s@]+@[^\s@]+\.[^\s@]+
+      )
+      \z
+    }ix
 
     attribute :id, :string
     attribute :readable_id, :string
@@ -43,7 +52,7 @@ module Internal
     validates :venue_type, inclusion: { in: VENUE_TYPES.values }
     validates :registration_email_link, presence: true, length: { maximum: 100 }, email_format: true, if: -> { provider_event? && registration_email_link_email? }
     validates :registration_email_link, presence: true, length: { maximum: 300 }, url: { no_local: true }, if: -> { provider_event? && registration_email_link_website? }
-    validates :registration_email_link, presence: true, format: { with: /(https?:\/\/)|@/i, message: "Must be an email address or website" }, if: -> { provider_event? }
+    validates :registration_email_link, presence: true, format: { with: VALID_REGISTRATION_EMAIL_LINK, message: "Must be an email address or website" }, if: -> { provider_event? }
     validate :dates_in_future
     validate :end_after_start
     validate :starts_and_ends_on_same_day

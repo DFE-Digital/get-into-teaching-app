@@ -1,12 +1,12 @@
 module TeacherTrainingAdviser::Steps
   class UkAddress < GITWizard::Step
     include FunnelTitle
-    include ActiveRecord::Normalization
+    include ActiveModel::Attributes::Normalization
     include ActiveModel::Dirty
 
     attribute :address_postcode
 
-    validates :address_postcode, format: { with: /^([A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})$/i, multiline: true }
+    validates :address_postcode, format: { with: /\A([A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})\z/i, multiline: true }
 
     normalizes :address_postcode, with: ->(field) { field.to_s.squish.upcase.presence }
 

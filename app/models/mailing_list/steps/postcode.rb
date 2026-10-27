@@ -2,7 +2,7 @@ module MailingList
   module Steps
     class Postcode < ::GITWizard::Step
       include FunnelTitle
-      include ActiveRecord::Normalization
+      include ActiveModel::Attributes::Normalization
       include ActiveModel::Dirty
 
       attribute :address_postcode

@@ -4,7 +4,7 @@ module ProviderEvents
   module Steps
     class OnlinePostcode < ::GITWizard::Step
       include FunnelTitle
-      include ActiveRecord::Normalization
+      include ActiveModel::Attributes::Normalization
       include ActiveModel::Dirty
 
       attribute :online_postcode
