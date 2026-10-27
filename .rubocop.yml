@@ -9,6 +9,7 @@ plugins:
 
 AllCops:
   Exclude:
+    - tmp/**/*
     - Rakefile
     - config.ru
     - db/schema.rb
