@@ -9,6 +9,7 @@ plugins:
 
 AllCops:
   Exclude:
+    - tmp/**/*
     - Rakefile
     - config.ru
     - db/schema.rb
@@ -122,3 +123,7 @@ Rails/SaveBang:
 
 Style/HashSyntax:
   EnforcedShorthandSyntax: never
+
+Rails/Exit:
+  Exclude:
+    - spec/rails_helper.rb

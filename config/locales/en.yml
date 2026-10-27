@@ -86,6 +86,7 @@ en:
         group: "Secondary"
         sub_head: "Citizenship - Secondary"
         funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_citizenship} are available for trainee citizenship teachers if you're eligible."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       classics:

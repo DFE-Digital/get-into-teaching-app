@@ -180,7 +180,6 @@ GEM
     brakeman (8.0.5)
       racc
     builder (3.3.0)
-    byebug (12.0.0)
     canonical-rails (0.2.17)
       actionview (>= 4.1, < 8.1)
     capybara (3.40.0)
@@ -197,7 +196,6 @@ GEM
       mechanize (~> 2.8.5)
     chef-utils (18.4.12)
       concurrent-ruby
-    coderay (1.1.3)
     concurrent-ruby (1.3.8)
     connection_pool (2.5.5)
     crack (1.0.1)
@@ -209,6 +207,9 @@ GEM
       unicode (>= 0.4.4.5)
     csv (3.3.5)
     date (3.5.1)
+    debug (1.11.1)
+      irb (~> 1.10)
+      reline (>= 0.3.8)
     declarative (0.0.20)
     delegate (0.3.1)
     diff-lcs (1.6.2)
@@ -354,7 +355,7 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     iso_country_codes (0.7.8)
-    json (2.19.5)
+    json (2.21.2)
     jwt (2.7.1)
     kaminari (1.2.2)
       activesupport (>= 4.1.0)
@@ -374,7 +375,7 @@ GEM
       rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    language_server-protocol (3.17.0.5)
+    language_server-protocol (3.17.0.6)
     lint_roller (1.1.0)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -416,7 +417,6 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2025.0204)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.9)
     minitest (6.0.6)
       drb (~> 2.0)
       prism (~> 1.5)
@@ -444,9 +444,6 @@ GEM
       net-protocol
     nio4r (2.7.5)
     nkf (0.2.0)
-    nokogiri (1.19.4)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
     nokogiri (1.19.4-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-gnu)
@@ -457,7 +454,7 @@ GEM
     package_json (0.2.0)
     pagy (9.4.0)
     parallel (1.28.0)
-    parser (3.3.11.1)
+    parser (3.3.13.0)
       ast (~> 2.4.1)
       racc
     pg (1.6.3)
@@ -469,14 +466,6 @@ GEM
     prism (1.9.0)
     prometheus-client (4.2.5)
       base64
-    pry (0.14.2)
-      coderay (~> 1.1)
-      method_source (~> 1.0)
-    pry-byebug (3.11.0)
-      byebug (~> 12.0)
-      pry (>= 0.13, < 0.16)
-    pry-rails (0.3.11)
-      pry (>= 0.13.0)
     public_suffix (6.0.2)
     puma (6.4.3)
       nio4r (~> 2.0)
@@ -555,7 +544,7 @@ GEM
       redis (>= 3, < 6)
     redlock (1.3.2)
       redis (>= 3.0.0, < 6.0)
-    regexp_parser (2.12.0)
+    regexp_parser (2.13.1)
     reline (0.7.0)
       io-console (~> 0.5)
     representable (3.2.0)
@@ -590,7 +579,7 @@ GEM
     rspec-retry (0.6.2)
       rspec-core (> 3.3)
     rspec-support (3.13.4)
-    rubocop (1.79.2)
+    rubocop (1.86.0)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -598,23 +587,23 @@ GEM
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 2.9.3, < 3.0)
-      rubocop-ast (>= 1.46.0, < 2.0)
+      rubocop-ast (>= 1.49.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.46.0)
+    rubocop-ast (1.49.1)
       parser (>= 3.3.7.2)
-      prism (~> 1.4)
+      prism (~> 1.7)
     rubocop-capybara (2.22.1)
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
-    rubocop-govuk (5.1.20)
-      rubocop (= 1.79.2)
-      rubocop-ast (= 1.46.0)
+    rubocop-govuk (5.2.1)
+      rubocop (= 1.86.0)
+      rubocop-ast (= 1.49.1)
       rubocop-capybara (= 2.22.1)
-      rubocop-rails (= 2.33.3)
+      rubocop-rails (= 2.34.3)
       rubocop-rake (= 0.7.1)
-      rubocop-rspec (= 3.6.0)
-    rubocop-rails (2.33.3)
+      rubocop-rspec (= 3.9.0)
+    rubocop-rails (2.34.3)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
       rack (>= 1.1)
@@ -623,9 +612,9 @@ GEM
     rubocop-rake (0.7.1)
       lint_roller (~> 1.1)
       rubocop (>= 1.72.1)
-    rubocop-rspec (3.6.0)
+    rubocop-rspec (3.9.0)
       lint_roller (~> 1.1)
-      rubocop (~> 1.72, >= 1.72.1)
+      rubocop (~> 1.81)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     rubyntlm (0.6.5)
@@ -696,9 +685,9 @@ GEM
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
     unicode (0.4.4.5)
-    unicode-display_width (3.2.0)
-      unicode-emoji (~> 4.1)
-    unicode-emoji (4.2.0)
+    unicode-display_width (3.3.0)
+      unicode-emoji (~> 4.3)
+    unicode-emoji (4.3.0)
     uri (1.1.2)
     useragent (0.16.11)
     validate_url (1.0.15)
@@ -735,7 +724,6 @@ GEM
 
 PLATFORMS
   arm64-darwin
-  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -746,11 +734,11 @@ DEPENDENCIES
   better_html (>= 1.0.16)
   bootsnap (>= 1.16.0)
   brakeman (~> 8.0.5)
-  byebug
   canonical-rails (>= 0.2.14)
   capybara (~> 3.40.0)
   capybara-mechanize
   connection_pool (< 3)
+  debug
   delegate (>= 0.2.0)
   dfe-analytics!
   dfe-autocomplete!
@@ -795,8 +783,6 @@ DEPENDENCIES
   ostruct
   pg
   prometheus-client
-  pry-byebug
-  pry-rails
   puma (~> 6.4)
   rack-attack
   rack-cors
@@ -836,7 +822,7 @@ DEPENDENCIES
   webmock (>= 3.14.0)
 
 RUBY VERSION
-  ruby 3.4.10
+  ruby 4.0.9
 
 BUNDLED WITH
-  4.0.1
+  4.0.20
