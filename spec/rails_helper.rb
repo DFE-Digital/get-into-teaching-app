@@ -9,9 +9,7 @@ ENV["RAILS_ENV"] ||= "test"
 require File.expand_path("../config/environment", __dir__)
 # Prevent database truncation if the environment is production
 unless Rails.env.development? || Rails.env.test?
-  # rubocop:disable Rails/Exit
   abort("The Rails environment is running in #{Rails.env} mode!")
-  # rubocop:enable Rails/Exit
 end
 
 # Add additional requires below this line. Rails is not loaded until this point!
