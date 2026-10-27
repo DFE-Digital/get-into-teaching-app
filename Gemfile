@@ -129,8 +129,7 @@ gem "rack-host-redirect"
 gem "rack-cors"
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem "byebug", platforms: %i[mri mingw x64_mingw]
+  gem "debug"
 
   # GOV.UK interpretation of rubocop for linting Ruby
   gem "rubocop-govuk", "~> 5.1"
@@ -139,10 +138,6 @@ group :development, :test do
   gem "brakeman", "~> 8.0.5", require: false
 
   gem "drb"
-
-  # Debugging
-  gem "pry-byebug"
-  gem "pry-rails"
 
   # Testing framework
   gem "knapsack"
@@ -188,4 +183,4 @@ group :rolling, :preprod, :production, :pagespeed do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
+gem "tzinfo-data", platforms: %i[windows jruby]
