@@ -2,7 +2,7 @@ class TextBlockWithOneImageComponent < ViewComponent::Base
   attr_reader :heading, :colour
 
   def initialize(heading:, image_path:, image_alt:, colour: "pink")
-    super
+    super()
 
     @heading = heading
     @colour = colour
@@ -11,6 +11,6 @@ class TextBlockWithOneImageComponent < ViewComponent::Base
   end
 
   def image
-    image_pack_tag(@image_path, **helpers.image_alt_attribs_for_text(@image_alt))
+    helpers.image_pack_tag(@image_path, **helpers.image_alt_attribs_for_text(@image_alt))
   end
 end

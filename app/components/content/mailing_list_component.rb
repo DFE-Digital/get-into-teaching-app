@@ -5,7 +5,7 @@ module Content
     include ContentHelper
 
     def initialize(title:, intro: nil, color: "gitbluepastel", margin: true, heading: :m)
-      super
+      super()
 
       @title = substitute_values(title)
       @intro = substitute_values(intro)

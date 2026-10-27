@@ -5,7 +5,7 @@ class CallsToAction::Promo::PromoComponent < ViewComponent::Base
   attr_reader :border, :reverse
 
   def initialize(border: :top, reverse: false)
-    super
+    super()
 
     @border = border
     @reverse = reverse

@@ -3,7 +3,7 @@ module Content
     attr_reader :title, :text, :image_path, :heading_tag, :heading_color, :quotes, :background_color
 
     def initialize(title:, text:, image_path: nil, heading_tag: "h3", heading_color: "pink", background_color: "blue", quotes: true)
-      super
+      super()
 
       @title = title
       @text = text
@@ -15,7 +15,7 @@ module Content
     end
 
     def image
-      image_pack_tag(@image_path, **helpers.image_alt_attribs(@image_path)) if @image_path
+      helpers.image_pack_tag(@image_path, **helpers.image_alt_attribs(@image_path)) if @image_path
     end
   end
 end

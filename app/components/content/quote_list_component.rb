@@ -5,7 +5,7 @@ module Content
     REQUIRED_QUOTE_KEYS = %i[heading text accreditation].freeze
 
     def initialize(quotes:)
-      super
+      super()
 
       @quotes = quotes
     end

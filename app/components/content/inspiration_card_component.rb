@@ -10,7 +10,7 @@ class Content::InspirationCardComponent < ViewComponent::Base
     @heading_tag = heading_tag
     @image       = card.image if card.respond_to?(:image)
 
-    super
+    super()
   end
 
   def image?

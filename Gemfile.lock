@@ -321,10 +321,10 @@ GEM
       multi_json (~> 1.11)
       os (>= 0.9, < 2.0)
       signet (>= 0.16, < 2.a)
-    govuk-components (5.11.1)
+    govuk-components (6.5.0)
       html-attributes-utils (~> 1.0.0, >= 1.0.0)
       pagy (>= 6, < 10)
-      view_component (>= 3.18, < 3.24)
+      view_component (>= 4.9, < 4.16)
     govuk_design_system_formbuilder (6.4.0)
       actionview (>= 7.2)
       activemodel (>= 7.2)
@@ -688,7 +688,7 @@ GEM
     unicode-display_width (3.3.0)
       unicode-emoji (~> 4.3)
     unicode-emoji (4.3.0)
-    uri (1.1.1)
+    uri (1.1.2)
     useragent (0.16.11)
     validate_url (1.0.15)
       activemodel (>= 3.0.0)
@@ -698,10 +698,10 @@ GEM
       timeliness (>= 0.3.10, < 1)
     vcr (6.4.0)
     victor (0.3.4)
-    view_component (3.21.0)
-      activesupport (>= 5.2.0, < 8.1)
-      concurrent-ruby (~> 1.0)
-      method_source (~> 1.0)
+    view_component (4.15.0)
+      actionview (>= 7.1.0)
+      activesupport (>= 7.1.0)
+      concurrent-ruby (~> 1)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -758,6 +758,7 @@ DEPENDENCIES
   get_into_teaching_api_client_faraday (>= 4.3.8)!
   git_wizard!
   google-api-client (>= 0.53.0)
+  govuk-components (~> 6.5.0)
   govuk_design_system_formbuilder (>= 2.8.0)
   hashids
   indefinite_article
@@ -816,7 +817,7 @@ DEPENDENCIES
   validates_timeliness
   vcr
   victor
-  view_component (~> 3.21.0)
+  view_component (= 4.15.0)
   web-console (>= 4.2.0)
   webmock (>= 3.14.0)
 

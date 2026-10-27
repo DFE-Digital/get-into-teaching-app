@@ -1,7 +1,7 @@
 <%= tag.div(class: "adviser--border-top") if border %>
 <%= tag.div class: classes do %>
   <div class="adviser__left">
-    <%= image_pack_tag(image,
+    <%= helpers.image_pack_tag(image,
                      **helpers.image_alt_attribs_for_text(""),
                      class: "adviser__image")
     %>

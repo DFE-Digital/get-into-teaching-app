@@ -5,7 +5,7 @@ module Content
     include ContentHelper
 
     def initialize(title:, image_path:, title_color: "gitlilac")
-      super
+      super()
 
       @title = substitute_values(title)
       @image_path = image_path

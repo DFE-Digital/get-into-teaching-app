@@ -3,7 +3,7 @@ module Content
     attr_reader :path
 
     def initialize(path:)
-      super
+      super()
 
       @path = path
     end
