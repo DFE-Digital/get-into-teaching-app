@@ -109,11 +109,23 @@ variable "sidekiq_replicas" {
 
 variable "postgres_version" { default = 17 }
 
+variable "pg_airbyte_enabled" {
+  default     = false
+  description = "Enable Write ahead logging for Postgres replication for Airbyte"
+}
+
 variable "deploy_redis_cache" {
   default     = false
   description = "Deploy a separate Redis instance for caching (production only)"
 }
 
 locals {
+  gcp_project_id    = "get-into-teaching"
+  gcp_region        = "europe-west2"
+  gcp_taxonomy_id   = "6582996680844371982"
+  gcp_policy_tag_id = "3882815557042264125"
+  gcp_keyring       = "git-key-ring"
+  gcp_key           = "git-key"
+
   postgres_ssl_mode = var.enable_postgres_ssl ? "require" : "disable"
 }
