@@ -61,7 +61,7 @@ If your course starts before 1 January 2027, find out [how to apply for student 
 
 You can still apply for a tuition fee loan and a maintenance loan if:
 
-* you also get a teaching bursary
+* you also get a teaching bursary or scholarship
 * you have previously applied for and received a student loan
 
 ## If your course starts on or after 1 January 2027
@@ -94,11 +94,11 @@ If you already have a degree, or have used all your tuition fee loan entitlement
 
 [Check how much student finance you could get](https://www.gov.uk/student-finance-calculator).
 
-## Check your eligibility for a bursary 
+## Check your eligibility for a bursary or scholarship
 
-You may also be eligible for a tax-free bursary, depending on the subject you're training to teach.
+You may also be eligible for a tax-free bursary or scholarship, depending on the subject you're training to teach.
 
-You do not have to pay a bursary back. You can get a bursary as well as any tuition fee loan and maintenance loan.
+You do not have to pay a bursary or scholarship back. You can get a bursary or scholarship as well as any tuition fee loan and maintenance loan.
 
 $bursaries$
 
