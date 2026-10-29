@@ -47,21 +47,26 @@ expander:
 
 Funding is available to help you train to teach if you choose a course that has tuition fees. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs.
 
+You’ll only have to make loan repayments once you’re earning. [Read the student finance repayments guide](https://www.gov.uk/repaying-your-student-loan) for more information about repayments.
+
+You do not need to wait until you have a confirmed offer for a teacher training course to apply for student funding.
+
+If you choose a teacher training course that has a salary you’re not eligible for any student finance.
+
 The amounts on this page are for the $finance_loanacademicyear$.
+
+## If your course starts before 1 January 2027
+
+If your course starts before 1 January 2027, find out [how to apply for student finance on GOV.UK](https://www.gov.uk/apply-for-student-finance).
 
 You can still apply for a tuition fee loan and a maintenance loan if:
 
 * you also get a teaching bursary or scholarship
+* you have previously applied for and received a student loan
 
-* you've previously applied for and received a student loan
+## If your course starts on or after 1 January 2027
 
-You'll only have to make loan repayments once you’re earning.
-
-You do not need to wait until you have a confirmed offer for a teacher training course to apply for student funding.
-
-If you choose a teacher training course that has a salary you're not eligible for any student finance.
-
-$student-finance$
+If you are starting an eligible teacher training course from 1 January 2027 to 31 August 2027 and your home is in England, you'll need to [apply for student finance through the lifelong learning entitlement (LLE)](https://www.gov.uk/apply-for-student-finance-lifelong-learning-entitlement).
 
 ## Tuition fee loan
 
