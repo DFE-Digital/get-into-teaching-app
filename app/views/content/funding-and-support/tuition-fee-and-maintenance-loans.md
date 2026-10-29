@@ -66,43 +66,33 @@ You can still apply for a tuition fee loan and a maintenance loan if:
 
 ## If your course starts on or after 1 January 2027
 
-If you are starting an eligible teacher training course from 1 January 2027 to 31 August 2027 and your home is in England, you'll need to [apply for student finance through the lifelong learning entitlement (LLE)](https://www.gov.uk/apply-for-student-finance-lifelong-learning-entitlement).
+If you are starting an eligible teacher training course on or after 1 January 2027 and your home is in England, you'll need to [apply for student finance through the lifelong learning entitlement (LLE)](https://www.gov.uk/apply-for-student-finance-lifelong-learning-entitlement).
 
 ## Tuition fee loan
 
-You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course. If you’re eligible for a tuition fee loan, the amount you borrow is paid directly to your course provider.
-
-The maximum tuition fee loan for postgraduate teacher training for a UK applicant starting a course in the 2026 to 2027 academic year was:
-
-* $finance_tuitionfeeloan_postgraduatemaxfulltime$ per year for a full-time course
-* $finance_tuitionfeeloan_postgraduatemaxparttime$ per year for a part-time course
-
-Maximum tuition fee loan amounts are linked to the maximum tuition fees training providers can charge. Maximum tuition fees are set by the UK government.
+You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course. 
 
 The maximum amount you can borrow depends on how much your course costs.
 
 Tuition fee loans are not means tested. So you do not need to provide evidence of your income or anyone else’s to be eligible to receive one.
 
+If you're eligible for a tuition fee loan, the amount you borrow is paid directly to your course provider. Check with your course provider to find out how much their course will cost.
+
+If your course starts on or after 1 January 2027, you'll need to [apply for funding through the LLE](https://www.gov.uk/apply-for-student-finance-lifelong-learning-entitlement).
+
 ## Maintenance loan
 
-You may also be eligible for a maintenance loan to help cover your living costs.
-
-The maximum amount you may be eligible to borrow is:
-
-* $finance_maintenanceloan_withparents$ if you live at home with your parents
-* $finance_maintenanceloan_notwithparentsoutsidelondon$ if you live away from home and are studying outside of London
-* $finance_maintenanceloan_notwithparentsinsidelondon$ if you live away from home and are studying in London
-* $finance_maintenanceloan_oversixty$ if you're 60 years or over on the first day of the first academic year of your course
+You may also be eligible for a maintenance loan to help cover your living costs. You can use the [UCAS budget calculator](https://www.ucas.com/money-and-student-life/money/budgeting/budget-calculator) to help you estimate the cost of living while you learn.
 
 $student-finance-calculator$
 
-## Lifelong learning entitlement (LLE)
+## Financial support if you have already used all your student loan entitlement
 
-If you already have a degree, or have used all of your tuition fee loan entitlement, you may still be able to get a tuition fee loan to train to teach through the lifelong learning entitlement (LLE). 
+Under the LLE, people who have not studied before will be entitled to the full tuition fee loan. This is equivalent to 4 years of the tuition fee limit for full-time courses.
 
-This funding is called priority additional entitlement. It is available to eligible students in England studying priority courses, including initial teacher training (ITT).
+If you already have a degree, or have used all your tuition fee loan entitlement, you are likely to still be eligible for extra loan funding and maintenance support to train to teach.
 
-$lifelong-learning-entitlement$
+[Check how much student finance you could get](https://www.gov.uk/student-finance-calculator).
 
 ## Check your eligibility for a bursary or scholarship
 
