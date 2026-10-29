@@ -103,11 +103,11 @@ If you already have a degree, or have used all your tuition fee loan entitlement
 
 [Check how much student finance you could get](https://www.gov.uk/student-finance-calculator).
 
-## Check your eligibility for a bursary 
+## Check your eligibility for a bursary or scholarship
 
-You may also be eligible for a tax-free bursary, depending on the subject you're training to teach.
+You may also be eligible for a tax-free bursary or scholarship, depending on the subject you're training to teach.
 
-You do not have to pay a bursary back. You can get a bursary as well as any tuition fee loan and maintenance loan.
+You do not have to pay a bursary or scholarship back. You can get a bursary or scholarship as well as any tuition fee loan and maintenance loan.
 
 $bursaries_and_scholarship$
 
