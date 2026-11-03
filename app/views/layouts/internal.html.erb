@@ -1,10 +1,10 @@
-<% append_javascript_pack_tag 'internal', 'accessible_autocomplete' %>
+<% content_for :js_entries, 'internal' %>
 
 <!doctype html>
 <html lang="en" class="govuk-template">
 <% content_for :head do %>
   <%= csrf_meta_tags %>
-  <%= stylesheet_pack_tag 'internal', 'data-turbolinks-track': 'reload', media: 'all' %>
+  <%= stylesheet_link_tag 'internal', 'data-turbolinks-track': 'reload', media: 'all' %>
 <% end %>
 
 <%= render "sections/head" %>

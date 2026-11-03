@@ -51,7 +51,7 @@ RSpec.describe CallsToAction::HomepageComponent, type: :component do
     end
 
     specify "the image is present" do
-      expect(page.find(".call-to-action__image")["style"]).to include("packs-test/v1/static/images/dfelogo")
+      expect(page.find(".call-to-action__image")["style"]).to include("assets/static/images/dfelogo")
     end
 
     specify "the badge_text is present" do

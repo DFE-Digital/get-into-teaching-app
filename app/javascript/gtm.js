@@ -1,4 +1,4 @@
-import Gtm from '../javascript/gtm';
+import Gtm from './lib/gtm';
 
 const gtmId = document.querySelector('[data-gtm-id]')?.dataset.gtmId;
 
