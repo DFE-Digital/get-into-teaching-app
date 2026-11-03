@@ -1,4 +1,4 @@
-import CookiePreferences from '../javascript/cookie_preferences';
+import CookiePreferences from '../lib/cookie_preferences';
 import { Controller } from '@hotwired/stimulus';
 
 export default class extends Controller {

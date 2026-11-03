@@ -54,7 +54,7 @@ module Content
     end
 
     def picture
-      helpers.image_pack_tag(@image, **helpers.image_alt_attribs(@image), **picture_data_args)
+      helpers.image_tag(@image, **helpers.image_alt_attribs(@image), **picture_data_args)
     end
 
     def picture_data_args

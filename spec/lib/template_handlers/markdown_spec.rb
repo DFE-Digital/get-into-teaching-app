@@ -252,7 +252,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
       %w[0032 0030].each do |photo|
         expect(rendered).to have_css("img")
-        expect(rendered).to match(%r{src="/packs-test/v1/static/images/content/hero-images/#{photo}-.*.jpg"})
+        expect(rendered).to match(%r{src="/assets/static/images/content/hero-images/#{photo}-.*.jpg"})
         key = Image.new.alt("static/images/content/hero-images/#{photo}.jpg")
         expect(rendered).to have_css(%(img[alt="#{key}"]))
       end

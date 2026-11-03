@@ -84,6 +84,7 @@ RSpec.configure do |config|
   config.include SpecHelpers::BasicAuth
   config.include SpecHelpers::Integration, type: :feature
   config.include SpecHelpers::Contract, type: :feature
+  config.include Propshaft::Helper, ActionView::Helpers::AssetUrlHelper, type: :helper
 
   config.verbose_retry = true
   config.default_retry_count = 2
@@ -94,7 +95,7 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     # Fail loudly rather than serving stale or partial assets.
-    %w[build:css].each do |script|
+    %w[build build:css].each do |script|
       system("yarn", script, out: File::NULL, exception: true)
     end
   end

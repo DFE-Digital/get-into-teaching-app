@@ -18,6 +18,6 @@ class Content::InspirationCardComponent < ViewComponent::Base
   end
 
   def image_tag
-    helpers.image_pack_tag(image, **helpers.image_alt_attribs(image))
+    helpers.image_tag(image, **helpers.image_alt_attribs(image))
   end
 end

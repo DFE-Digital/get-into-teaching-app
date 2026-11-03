@@ -1,4 +1,4 @@
-import Clarity from '../javascript/clarity';
+import Clarity from './lib/clarity';
 
 const clarityId =
   document.querySelector('[data-clarity-id]')?.dataset.clarityId;

@@ -75,8 +75,8 @@
     ],
     "moduleDirectories": [
       "node_modules",
-      "app/webpacker/controllers",
-      "app/webpacker/javascript"
+      "app/javascript/controllers",
+      "app/javascript/lib"
     ]
   },
   "browserslist": [
@@ -86,11 +86,13 @@
   "scripts": {
     "spec": "jest",
     "scss-lint": "npx stylelint app/assets/stylesheets",
-    "js-lint": "yarn eslint app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js",
-    "js-lint-fix": "yarn prettier --write app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js && yarn eslint --fix app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js",
+    "js-lint": "yarn eslint app/javascript/controllers/*js app/javascript/lib/*js spec/javascript/*js",
+    "js-lint-fix": "yarn prettier --write app/javascript/controllers/*js app/javascript/lib/*js spec/javascript/*js && yarn eslint --fix app/javascript/controllers/*js app/javascript/lib/*js spec/javascript/*js",
     "build:css:sass": "sass app/assets/stylesheets/application.scss:tmp/css/application.css app/assets/stylesheets/application-no-js.scss:tmp/css/application_no_js.css app/assets/stylesheets/internal.scss:tmp/css/internal.css --no-source-map --load-path=node_modules --load-path=app/assets/stylesheets --quiet-deps --silence-deprecation=import,global-builtin,color-functions,if-function",
     "build:css:postcss": "postcss tmp/css/*.css --dir app/assets/builds --no-map",
-    "build:css": "yarn build:css:sass && yarn build:css:postcss"
+    "build:css": "yarn build:css:sass && yarn build:css:postcss",
+    "build": "node esbuild.config.js",
+    "build:watch": "node esbuild.config.js --watch"
   },
   "packageManager": "yarn@4.18.0"
 }
