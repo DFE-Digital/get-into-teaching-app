@@ -57,6 +57,9 @@ COPY --from=base /app /app
 # bypass the credentials here.
 RUN SKIP_YARN_INSTALL=1 SECRET_KEY_BASE=1 RAILS_BUILD=1 bundle exec rake assets:precompile
 
+# Propshaft does not compress, so write .gz/.br siblings for ActionDispatch::Static to serve
+RUN node precompress-assets.js public/assets
+
 # Remove node_modules since they are only used to generated the assets and take a lot of space
 RUN rm -rf node_modules
 
