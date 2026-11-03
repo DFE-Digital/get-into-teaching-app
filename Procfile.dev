@@ -1,5 +1,4 @@
 rails: bundle exec rails s -p 3000 -b 0.0.0.0
 js: yarn build:watch
-sass: yarn build:css:sass --watch
-postcss: yarn build:css:postcss --watch
+css: yarn build:css:watch
 worker: bundle exec sidekiq -C config/sidekiq.yml
