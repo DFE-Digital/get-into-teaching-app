@@ -52,6 +52,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.1",
     "@stimulus/test": "^2.0.0",
+    "concurrently": "^10.0.6",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-standard": "^16.0.3",
@@ -91,7 +92,7 @@
     "build:css:sass": "sass app/assets/stylesheets/application.scss:tmp/css/application.css app/assets/stylesheets/application-no-js.scss:tmp/css/application_no_js.css app/assets/stylesheets/internal.scss:tmp/css/internal.css --no-source-map --load-path=node_modules --load-path=app/assets/stylesheets --quiet-deps --silence-deprecation=import,global-builtin,color-functions,if-function",
     "build:css:postcss": "postcss tmp/css/*.css --dir app/assets/builds --no-map",
     "build:css": "yarn build:css:sass && yarn build:css:postcss",
-    "build:css:watch": "yarn build:css && (yarn build:css:sass --watch & yarn build:css:postcss --watch & wait)",
+    "build:css:watch": "yarn build:css && concurrently --kill-others --names sass,postcss \"yarn build:css:sass --watch\" \"yarn build:css:postcss --watch\"",
     "build": "node esbuild.config.js",
     "build:watch": "node esbuild.config.js --watch"
   },
