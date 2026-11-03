@@ -74,6 +74,20 @@ describe "Redirects", :content, type: :request do
     end
   end
 
+  describe "legacy packs document redirects" do
+    it "keeps the configured destination and query string in every environment" do
+      legacy = redirects.select { |from, _| from.start_with?("/packs/") }
+      expect(legacy).not_to be_empty
+      expect(redirects.values).to all(satisfy { |to| !to.start_with?("/packs") })
+
+      legacy.each do |from, to|
+        get build_url(from, query_string)
+        expect(response).to have_http_status(:moved_permanently)
+        expect(response).to redirect_to(build_url(to, expected_query_string))
+      end
+    end
+  end
+
   describe "page 'returning-to-teaching' redirects" do
     it "redirects to school vacancies url" do
       get "/returning-to-teaching"
