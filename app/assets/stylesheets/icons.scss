@@ -1,0 +1,195 @@
+@mixin icon {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.icon-hamburger {
+  @include icon;
+  background-image: url("/static/images/icon-hamburger.svg");
+  width: 30px;
+  height: 20px;
+}
+
+.icon-online-event {
+  @include icon;
+  background-image: url("/static/images/icon-online-blue.svg");
+  width: 34px;
+  height: 34px;
+
+  &--purple {
+    background-image: url("/static/images/icon-online-purple.svg");
+  }
+}
+
+.icon-moved-online-event {
+  @include icon;
+  background-image: url("/static/images/icon-moved-online-blue.svg");
+  width: 36px;
+  height: 36px;
+
+  &--purple {
+    background-image: url("/static/images/icon-moved-online-purple.svg");
+  }
+}
+
+.icon-pin {
+  @include icon;
+  background-image: url("/static/images/icon-pin-blue.svg");
+  width: 23px;
+  height: 36px;
+}
+
+.icon-pin-large {
+  @include icon;
+  background-image: url("/static/images/icon-pin-pink.svg");
+  width: 50px;
+  height: 60px;
+}
+
+.icon-play {
+  @include icon;
+  background-image: url("/static/images/icon-play.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon-school-or-university-event {
+  @include icon;
+  background-image: url("/static/images/icon-school-blue.svg");
+  width: 36px;
+  height: 36px;
+}
+
+.icon-get-into-teaching-event {
+  @include icon;
+  background-image: url("/static/images/icon-git.svg");
+  width: 32px;
+  height: 32px;
+}
+
+.icon-online-q-a {
+  @include icon;
+  background-image: url("/static/images/icon-online-blue.svg");
+  width: 34px;
+  height: 34px;
+}
+
+.icon-quote {
+  @include icon;
+  background-image: url("/static/images/white-quote.svg");
+  width: 24px;
+  height: 24px;
+  color: $white;
+}
+
+.icon-close {
+  @include icon;
+  background-image: url("/static/images/icon-close.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-mail {
+  @include icon;
+  background-image: url("/static/images/icon-mail.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-mail-white {
+  @include icon;
+  background-image: url("/static/images/icon-mail-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-calendar {
+  @include icon;
+  background-image: url("/static/images/icon-calendar.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-calendar-white {
+  @include icon;
+  background-image: url("/static/images/icon-calendar-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-chat {
+  @include icon;
+  background-image: url("/static/images/icon-chat.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-chat-white {
+  @include icon;
+  background-image: url("/static/images/icon-chat-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-call {
+  @include icon;
+  background-image: url("/static/images/icon-phone.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-call-white {
+  @include icon;
+  background-image: url("/static/images/icon-phone-white.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-warning {
+  @include icon;
+  background-image: url("/static/images/icon-warning.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-arrow {
+  @include icon;
+  background-image: url("/static/images/icon-arrow.svg");
+  width: 30px;
+  height: 30px;
+
+  &--gitlilac {
+    width: 25px;
+    height: 25px;
+    background-color: $gitlilac;
+    border: solid 4px $gitlilac;
+  }
+}
+
+.icon-arrow-black {
+  @include icon;
+  background-image: url("/static/images/icon-arrow-black.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon--on-yellow {
+  background-color: $yellow;
+  padding: $indent-amount;
+  background-size: 60%;
+}
+
+.icon--on-gitlilac {
+  background-color: $gitlilac;
+  padding: $indent-amount;
+  background-size: 60%;
+}
+
+.icon--on-gitpurple {
+  background-color: $gitpurple;
+  padding: $indent-amount;
+  background-size: 60%;
+}
