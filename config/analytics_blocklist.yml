@@ -8,3 +8,9 @@
   - content_hash
   - created_at
   - updated_at
+  :stored_sessions:
+  - id
+  - created_at
+  - updated_at
+  - sid
+  - data
