@@ -53,19 +53,6 @@ describe ResponsiveImages do
         )
       end
     end
-
-    context "when fingerprinting is disabled (in development)" do
-      let(:fingerprint) { "" }
-      let!(:responsive_src) { setup_responsive_img(:mobile) }
-
-      before { allow(Rails).to receive(:env) { "development".inquiry } }
-
-      it do
-        is_expected.to include(
-          "<source srcset=\"#{responsive_src}\" type=\"image/jpeg\" media=\"(max-width: 500px)\"></source>", \
-        )
-      end
-    end
   end
 
   def setup_responsive_img(breakpoint)

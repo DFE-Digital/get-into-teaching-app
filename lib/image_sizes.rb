@@ -3,7 +3,7 @@
 class ImageSizes
   attr_reader :doc
 
-  IMAGES_GLOB = "app/webpacker/images/**/*.*".freeze
+  IMAGES_GLOB = "app/assets/media/static/images/**/*.*".freeze
 
   @@cache = {}
 
