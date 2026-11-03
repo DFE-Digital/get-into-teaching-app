@@ -20,7 +20,7 @@ class AssetChecker
 
   def reachable?(url)
     Faraday.get(url).status != 404
-  rescue Faraday::ConnectionFailed
+  rescue Faraday::Error
     false
   end
 
@@ -34,7 +34,8 @@ private
   end
 
   def absolute_url(source)
-    URI.join("#{root_url}/", source).to_s if URI.parse(source).host.nil? || trusted_host?(source)
+    url = URI.join("#{root_url}/", source)
+    url.to_s if url.is_a?(URI::HTTP) && (URI.parse(source).host.nil? || trusted_host?(source))
   rescue URI::InvalidURIError
     nil
   end
