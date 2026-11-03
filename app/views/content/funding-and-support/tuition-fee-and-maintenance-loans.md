@@ -111,18 +111,12 @@ Under the LLE, people who have not studied before will be entitled to the full t
 
 If you already have a degree, or have used all your tuition fee loan entitlement, you are likely to still be eligible for extra tuition loan funding and a maintenance loan to train to teach.
 
-To find out how much you could get, you can
+To find out how much you could get, you can:
 
 * [use the student finance calculator](https://www.gov.uk/student-finance-calculator) to get an estimate
 * [create a lifelong learning entitlement account using GOV.UK One Login](https://www.gov.uk/using-your-gov-uk-one-login) to get a verified calculation of your loan entitlement
 
 $lifelong-learning-entitlement$
-
-## Check your eligibility for a bursary
-
-You may also be eligible for a tax-free bursary, depending on the subject you're training to teach.
-
-You do not have to pay a bursary back. You can get a bursary as well as any tuition fee loan and maintenance loan.
 
 $bursaries_and_scholarship$
 
