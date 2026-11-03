@@ -50,12 +50,9 @@ class LinkChecker
 
   attr_reader :page, :document
 
-  def initialize(page, body, adjust_packs_path: [])
+  def initialize(page, body)
     @page = page
     @document = Nokogiri.parse(body)
-
-    # we need to adjust the packs URL when testing against prod
-    @adjust_packs_path = adjust_packs_path
   end
 
   def links
@@ -102,11 +99,7 @@ class LinkChecker
   end
 
   def build_url(host, link)
-    url = host + link
-
-    return url if @adjust_packs_path.blank?
-
-    url.gsub(*@adjust_packs_path)
+    host + link
   end
 end
 
