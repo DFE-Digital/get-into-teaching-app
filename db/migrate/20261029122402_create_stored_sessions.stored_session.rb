@@ -7,7 +7,7 @@ class CreateStoredSessions < ActiveRecord::Migration[7.2]
     create_table :stored_sessions, id: primary_key_type do |t|
       t.timestamps
       t.string :sid, null: false, index: { unique: true }
-      t.binary :data, limit: 536870912
+      t.binary :data, limit: 536_870_912
 
       t.index :created_at
       t.index :updated_at
