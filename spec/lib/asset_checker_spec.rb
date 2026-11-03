@@ -62,6 +62,25 @@ describe AssetChecker do
       it { is_expected.to contain_exactly(js_asset) }
     end
 
+    context "when the page has duplicate, inline and non-stylesheet references" do
+      let(:html) do
+        <<~HTML
+          <script src="#{js_asset}"></script>
+          <script src="#{js_asset}"></script>
+          <script>window.inline = true</script>
+          <link rel="stylesheet" href="#{css_asset}" />
+          <link rel="preload" href="/assets/not-checked.woff2" />
+        HTML
+      end
+
+      before do
+        stub_request(:get, root_url + js_asset).to_return(status: 404)
+        stub_request(:get, root_url + css_asset).to_return(status: 200)
+      end
+
+      it { is_expected.to contain_exactly(root_url + js_asset) }
+    end
+
     context "when a script comes from an untrusted host" do
       let(:js_asset) { "https://evil.example.net/x.js" }
 
