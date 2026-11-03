@@ -4,14 +4,14 @@ require "faraday"
 
 describe AssetChecker do
   let(:root_url) { "https://example.com" }
-  let(:js_asset) { "/packs/js/application-digest.js" }
-  let(:css_asset) { "/packs/css/application-digest.css" }
+  let(:js_asset) { "/assets/application-0a1b2c3d.js" }
+  let(:css_asset) { "/assets/application-4e5f6a7b.css" }
   let(:html) do
     <<~HTML
       <html>
         <head>
           <script src="#{js_asset}"></script>
-          <link href="#{css_asset}" />
+          <link rel="stylesheet" href="#{css_asset}" />
         </head>
       </html>
     HTML
@@ -41,6 +41,33 @@ describe AssetChecker do
       end
 
       it { is_expected.to contain_exactly(root_url + js_asset, root_url + css_asset) }
+    end
+
+    context "when the page references no assets" do
+      let(:html) { "<html><head></head></html>" }
+
+      it { is_expected.to eq([root_url]) }
+    end
+
+    context "when assets are served from the asset host" do
+      let(:js_asset) { "https://assets.example.org/assets/application-0a1b2c3d.js" }
+
+      before do
+        allow(ENV).to receive(:[]).and_call_original
+        allow(ENV).to receive(:[]).with("APP_ASSETS_URL").and_return("https://assets.example.org")
+        stub_request(:get, js_asset).to_return(status: 404)
+        stub_request(:get, root_url + css_asset).to_return(status: 200)
+      end
+
+      it { is_expected.to contain_exactly(js_asset) }
+    end
+
+    context "when a script comes from an untrusted host" do
+      let(:js_asset) { "https://evil.example.net/x.js" }
+
+      before { stub_request(:get, root_url + css_asset).to_return(status: 200) }
+
+      it { is_expected.to be_empty }
     end
   end
 end
