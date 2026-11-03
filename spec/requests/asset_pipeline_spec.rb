@@ -17,6 +17,12 @@ describe "Asset pipeline" do
     end
   end
 
+  Dir[Rails.root.join("app/javascript/*.js")].map { |path| File.basename(path) }.each do |entry|
+    it "resolves the #{entry} JavaScript entry" do
+      expect(resolver.resolve(entry)).to be_present
+    end
+  end
+
   it "does not serve Sass sources" do
     expect(Rails.application.assets.load_path.find("application.scss")).to be_nil
   end
