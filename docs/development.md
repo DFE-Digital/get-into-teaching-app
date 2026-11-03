@@ -10,7 +10,7 @@
 * Run `yarn` to install node dependencies
 * Run `rails db:prepare` to setup the database
 * Run `az login` and then `make local setup-local-env` to populate development secrets
-* Run `./bin/dev` to build the CSS and run the rails server, the JavaScript and Sass watchers, and sidekiq. JavaScript is bundled with esbuild and CSS with Dart Sass and PostCSS into `app/assets/builds` (served by Propshaft); use `yarn build` and `yarn build:css` to build them once.
+* Run `./bin/dev` to run the rails server, the JavaScript and CSS watchers, and sidekiq. JavaScript is bundled with esbuild and CSS with Dart Sass and PostCSS into `app/assets/builds` (served by Propshaft); use `yarn build` and `yarn build:css` to build them once, or `yarn build:css:watch` to build and then watch the CSS.
 
 ### Running the app with a local api
 
