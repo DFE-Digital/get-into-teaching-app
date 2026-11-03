@@ -28,7 +28,7 @@ module AssetFiles
     end
 
     def dynamic?
-      Rails.application&.config&.respond_to?(:assets) && Rails.application.config.assets.server
+      Rails.application.config.respond_to?(:assets) && Rails.application.config.assets.server
     end
 
     def dynamic_asset(url_path)

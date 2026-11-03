@@ -55,7 +55,7 @@ COPY --from=base /app /app
 
 # See https://github.com/rails/rails/issues/32947 for why we
 # bypass the credentials here.
-RUN SECRET_KEY_BASE=1 RAILS_BUILD=1 bundle exec rake assets:precompile
+RUN SKIP_YARN_INSTALL=1 SECRET_KEY_BASE=1 RAILS_BUILD=1 bundle exec rake assets:precompile
 
 # Remove node_modules since they are only used to generated the assets and take a lot of space
 RUN rm -rf node_modules

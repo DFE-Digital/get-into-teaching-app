@@ -52,4 +52,3 @@ module GetIntoTeachingWebsite
     config.skylight.logger = Logger.new($stdout)
   end
 end
-

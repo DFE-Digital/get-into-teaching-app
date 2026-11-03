@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-foreman start -f Procfile.dev
+# The PostCSS watcher reads the Sass output, so build the CSS once up front.
+yarn build:css && foreman start -f Procfile.dev
