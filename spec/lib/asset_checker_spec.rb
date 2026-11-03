@@ -81,6 +81,23 @@ describe AssetChecker do
       it { is_expected.to contain_exactly(root_url + js_asset) }
     end
 
+    context "when an asset request times out" do
+      before do
+        stub_request(:get, root_url + js_asset).to_timeout
+        stub_request(:get, root_url + css_asset).to_return(status: 200)
+      end
+
+      it { is_expected.to contain_exactly(root_url + js_asset) }
+    end
+
+    context "when the page references a non-http script" do
+      let(:js_asset) { "javascript:void(0)" }
+
+      before { stub_request(:get, root_url + css_asset).to_return(status: 200) }
+
+      it { is_expected.to be_empty }
+    end
+
     context "when a script comes from an untrusted host" do
       let(:js_asset) { "https://evil.example.net/x.js" }
 
