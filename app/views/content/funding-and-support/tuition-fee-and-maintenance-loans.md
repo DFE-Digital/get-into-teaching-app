@@ -60,7 +60,7 @@ The amounts on this page are for the $finance_loanacademicyear$.
 
 You can still apply for a tuition fee loan and a maintenance loan if:
 
-* $bursaries$
+* you also get a teaching bursary
 * you have previously applied for and received a student loan
 
 You’ll only have to make loan repayments once you’re earning. [Read the student finance repayments guide](https://www.gov.uk/repaying-your-student-loan) for more information about repayments.
@@ -83,8 +83,8 @@ You can apply for a tuition fee loan to cover the cost of your postgraduate teac
 
 The maximum tuition fee loan for postgraduate teacher training for a UK applicant starting a course in the $finance_loanacademicyear$ was:
 
-* $finance_tuitionfeeloan_postgraduatemaxfulltime$
-* $finance_tuitionfeeloan_postgraduatemaxparttime$
+* $finance_tuitionfeeloan_postgraduatemaxfulltime$ per year for a full-time course
+* $finance_tuitionfeeloan_postgraduatemaxparttime$ per year for a part-time course
 
 The maximum amount you can borrow depends on how much your course costs. 
 
@@ -98,10 +98,10 @@ You may also be eligible for a maintenance loan to help cover your living costs.
 
 The maximum amount you may be eligible to borrow is:
 
-* $finance_maintenanceloan_withparents$
-* $finance_maintenanceloan_notwithparentsoutsidelondon$
-* $finance_maintenanceloan_notwithparentsinsidelondon$
-* $finance_maintenanceloan_oversixty$
+* $finance_maintenanceloan_withparents$ if you live at home with your parents
+* $finance_maintenanceloan_notwithparentsoutsidelondon$ if you live away from home and are studying outside of London
+* $finance_maintenanceloan_notwithparentsinsidelondon$ if you live away from home and are studying in London
+* $finance_maintenanceloan_oversixty$ if you're 60 years or over on the first day of the first academic year of your course
 
 $student-finance-calculator$
 
@@ -118,13 +118,13 @@ To find out how much you could get, you can
 
 $lifelong-learning-entitlement$
 
-## Check your eligibility for a bursary or scholarship
+## Check your eligibility for a bursary
 
 You may also be eligible for a tax-free bursary, depending on the subject you're training to teach.
 
 You do not have to pay a bursary back. You can get a bursary as well as any tuition fee loan and maintenance loan.
 
-$bursaries_or_scholarship$
+$bursaries_and_scholarship$
 
 ## Other financial support
 
