@@ -84,7 +84,7 @@ The maximum tuition fee loan for postgraduate teacher training for a UK applican
 * $finance_tuitionfeeloan_postgraduatemaxfulltime$ per year for a full-time course
 * $finance_tuitionfeeloan_postgraduatemaxparttime$ per year for a part-time course
 
-The maximum tuition fee loan for the $finance_loans_loannextacademicyear$ is:
+The maximum tuition fee loan for the $finance_loannextacademicyear$ is:
 
 * $finance_tuitionfeeloan_postgraduatemaxfulltime2027$ per year for a full-time course
 * $finance_tuitionfeeloan_postgraduatemaxparttime2027$ per year for a part-time course
@@ -99,7 +99,7 @@ If your course starts on or after 1 January 2027, you'll need to [apply for fund
 
 You may also be eligible for a maintenance loan to help cover your living costs. You can use the [UCAS budget calculator](https://www.ucas.com/money-and-student-life/money/budgeting/budget-calculator) to help you estimate the cost of living while you learn.
 
-For the $finance_loans_loanacademicyear$, the maximum amount you may be eligible to borrow is:
+For the $finance_loanacademicyear$, the maximum amount you may be eligible to borrow is:
 
 * $finance_maintenanceloan_withparents$ if you live at home with your parents
 * $finance_maintenanceloan_notwithparentsoutsidelondon$ if you live away from home and are studying outside of London
