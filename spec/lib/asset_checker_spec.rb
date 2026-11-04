@@ -49,6 +49,20 @@ describe AssetChecker do
       it { is_expected.to eq([root_url]) }
     end
 
+    context "when asset attributes are empty" do
+      let(:js_asset) { "" }
+      let(:css_asset) { "" }
+
+      it { is_expected.to eq([root_url]) }
+    end
+
+    context "when asset attributes contain only whitespace" do
+      let(:js_asset) { " \t " }
+      let(:css_asset) { " \n " }
+
+      it { is_expected.to eq([root_url]) }
+    end
+
     context "when assets are served from the asset host" do
       let(:js_asset) { "https://assets.example.org/assets/application-0a1b2c3d.js" }
 

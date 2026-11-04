@@ -34,6 +34,8 @@ private
   end
 
   def absolute_url(source)
+    return if source.strip.empty?
+
     url = URI.join("#{root_url}/", source)
     url.to_s if url.is_a?(URI::HTTP) && (URI.parse(source).host.nil? || trusted_host?(source))
   rescue URI::InvalidURIError
