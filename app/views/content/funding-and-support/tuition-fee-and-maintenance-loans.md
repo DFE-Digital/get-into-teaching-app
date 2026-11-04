@@ -84,7 +84,7 @@ The maximum tuition fee loan for postgraduate teacher training for a UK applican
 * $finance_tuitionfeeloan_postgraduatemaxfulltime$ per year for a full-time course
 * $finance_tuitionfeeloan_postgraduatemaxparttime$ per year for a part-time course
 
-The maximum tuition fee loan for the $finance_loannextacademicyear$ is:
+The maximum tuition fee loan for postgraduate teacher training for a UK applicant starting a course in the $finance_loannextacademicyear$ is:
 
 * $finance_tuitionfeeloan_postgraduatemaxfulltime2027$ per year for a full-time course
 * $finance_tuitionfeeloan_postgraduatemaxparttime2027$ per year for a part-time course
