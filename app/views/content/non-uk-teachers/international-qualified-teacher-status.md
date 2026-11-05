@@ -97,7 +97,7 @@ The following providers are accepting applications:
 
 * Equalitas
 
-* [National Institute of Teaching and Education (NITE)](https://www.coventry.ac.uk/nite/course-finder/), part of Coventry University Group, offers both postgraduate and undergraduate routes.
+* [National Institute of Teaching and Education (NITE)](https://www.coventry.ac.uk/nite/course-finder/), part of Coventry University Group, offers both postgraduate and undergraduate routes
 
 * [Tes Institute](https://www.tes.com/institute/courses/iqts)
 
