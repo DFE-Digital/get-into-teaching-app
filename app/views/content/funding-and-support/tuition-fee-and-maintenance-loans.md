@@ -89,7 +89,7 @@ The maximum tuition fee loan for postgraduate teacher training for a UK applican
 * $finance_tuitionfeeloan_postgraduatemaxfulltime2027$ per year for a full-time course
 * $finance_tuitionfeeloan_postgraduatemaxparttime2027$ per year for a part-time course
 
-The maximum amount you can borrow depends on how much your course costs. 
+The maximum amount you can borrow depends on how much your course costs and the tuition fee limit that applies to your provider. 
 
 Tuition fee loans are not means tested. So you do not need to provide evidence of your income or anyone else’s to be eligible to receive one.
 
@@ -117,7 +117,7 @@ If you already have a degree, or have used all your tuition fee loan entitlement
 To find out how much you could get, you can:
 
 * [use the student finance calculator](https://www.gov.uk/student-finance-calculator) to get an estimate
-* [create a lifelong learning entitlement account using GOV.UK One Login](https://www.gov.uk/using-your-gov-uk-one-login) to get a verified calculation of your loan entitlement
+* [sign in or create a student finance account](https://www.gov.uk/student-finance-register-login) to get a verified calculation of your loan entitlement
 
 $lifelong-learning-entitlement$
 
