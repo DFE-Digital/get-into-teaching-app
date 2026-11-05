@@ -1,0 +1,252 @@
+@use 'sass-mq/mq' as *;
+
+%content-width-limiter-shared {
+  width: 100%;
+  max-width: $page-max-width;
+  margin: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  min-height: 100vh;
+
+  font-family: $git-font-family;
+
+  &.govuk-body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.main-section,
+.hero {
+  @extend %content-width-limiter-shared;
+}
+
+.limit-content-width {
+  @extend %content-width-limiter-shared;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.js-enabled {
+  .hidden-when-js-enabled {
+    display: none;
+  }
+}
+
+.hidden {
+  // We use important! to ensure any component-level
+  // display values (such as flex) are still hidden.
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+// new layouts, intended to remove the reliance on float and instead use semantic markup and flexbox:
+
+.main-section {
+  margin-bottom: 3em;
+
+  flex-grow: 1;
+
+  @include mq($from: tablet) {
+    margin-bottom: 4em;
+  }
+
+  &--no-bottom-margin {
+    margin-bottom: 0;
+  }
+}
+
+section.container {
+  display: flex;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1em 0;
+  overflow-wrap: anywhere;
+
+  > main.within-section,
+  > .back-link {
+    margin: auto $indent-amount;
+
+    @include mq($from: tablet) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &.centered {
+    justify-content: center;
+  }
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1.5em auto 0;
+    max-width: $content-max-width;
+
+    &--845 {
+      max-width: $column-845;
+    }
+  }
+
+  // most pages won't have a h1 here but on those where
+  // we forego the hero we want it to span both the article
+  // and the aside.
+  > header {
+    flex: 0 1 100%;
+    max-width: $content-max-width;
+    @include indent-left-and-right;
+  }
+
+  > article {
+    flex: 0 1 65%;
+    margin-bottom: 4em;
+
+    &.fullwidth {
+      flex: 1 0 100%;
+    }
+
+    .col {
+      margin: 0 auto 3em;
+
+      &.col-720 {
+        max-width: 720px;
+      }
+    }
+  }
+
+  > aside {
+    flex: 0 0 calc(30%);
+
+    // note we're not using `gap: 1em` even though it works for flex in
+    // Firefox/Chrome as Safari is lagging behind a bit. Instead knock a
+    // bit off the basis and add some margin when wider than tablet
+    @include mq($from: tablet) {
+      flex: 0 0 calc(30% - 1em);
+      margin-left: 1em;
+    }
+  }
+
+  // feature: content that's not a regular text document, like a list of items on an index
+  // supplementary: content that's not directly related to the main article but might be of interest
+  > .feature,
+  > .supplementary {
+    flex: 0 1 100%;
+    @include indent-left-and-right;
+  }
+
+  &--no-bottom-margin {
+    margin-bottom: 0;
+
+    > article {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.inset {
+  padding: 0 $indent-amount;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.row {
+  + .grey {
+    background-color: $grey;
+    padding: 0.1em 0;
+  }
+
+  .grey {
+    background-color: $grey;
+    padding: 1em 0;
+
+    @include mq($from: tablet) {
+      padding: 3em 0;
+    }
+  }
+
+  .col {
+    margin: 0 auto 2 * $indent-amount auto;
+
+    @include mq($from: tablet) {
+      margin: 0 auto 3 * $indent-amount auto;
+    }
+  }
+
+  .col-space-s {
+    margin-bottom: 1 * $indent-amount;
+  }
+
+  .col-space-s-top {
+    margin-top: 1 * $indent-amount;
+  }
+
+  .col-space-m {
+    margin-bottom: 2 * $indent-amount;
+  }
+
+  .col-space-m-top {
+    margin-top: 2 * $indent-amount;
+  }
+
+  .col-space-l {
+    margin-bottom: 3 * $indent-amount;
+  }
+
+  .col-space-l-top {
+    margin-top: 3 * $indent-amount;
+  }
+
+  .col-space-0 {
+    margin-bottom: 0;
+  }
+
+  .col-full-page {
+    max-width: $page-max-width;
+  }
+
+  .col-full-content {
+    max-width: $content-max-width;
+  }
+
+  .col-845 {
+    max-width: $column-845;
+  }
+
+  .col-720 {
+    max-width: $column-720;
+  }
+
+  .col-640 {
+    max-width: $column-640;
+  }
+
+  .col-center {
+    text-align: center;
+  }
+
+  .col-horizontal {
+    display: flex;
+    gap: $indent-amount;
+    flex-direction: column;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+    }
+
+    > * {
+      flex: 1 1 0;
+    }
+  }
+}

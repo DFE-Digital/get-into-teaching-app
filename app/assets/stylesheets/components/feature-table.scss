@@ -1,0 +1,49 @@
+@use 'sass-mq/mq' as *;
+
+.feature-table {
+  &:not(:first-of-type) {
+    margin-top: 2em;
+  }
+
+  dl {
+    @include font-size("small");
+
+    @include mq($from: tablet) {
+      background-color: $grey;
+    }
+    width: 100%;
+    padding: .4em $indent-amount;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    dt,
+    dd {
+      padding: .15em 0;
+    }
+
+    dt {
+      font-weight: bold;
+      flex-basis: 38%;
+
+      &::after {
+        content: ":";
+      }
+    }
+
+    dd {
+      flex-basis: 62%;
+      margin: 0;
+    }
+  }
+
+  @include mq($until: tablet) {
+    dl {
+      dt,
+      dd {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

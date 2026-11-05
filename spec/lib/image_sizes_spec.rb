@@ -3,7 +3,6 @@ require "image_sizes"
 
 describe ImageSizes do
   include ActionView::Helpers
-  include Shakapacker::Helper
 
   describe "#html" do
     subject(:render_html) { instance.process.to_html }

@@ -24,8 +24,6 @@ dump.rdb
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-/public/packs
-/public/packs-test
 /public/cached_pages
 /node_modules
 /vendor/cache
@@ -55,8 +53,6 @@ tokens
 terraform.tfstate
 terraform.tfstate.backup
 
-/public/packs
-/public/packs-test
 /node_modules
 /yarn-error.log
 yarn-debug.log*
@@ -70,3 +66,7 @@ fetch_config.rb
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
+/public/assets

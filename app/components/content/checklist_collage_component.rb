@@ -15,7 +15,7 @@ module Content
     def images
       safe_join(
         image_paths.map do |path|
-          helpers.image_pack_tag(path, **helpers.image_alt_attribs(path))
+          helpers.image_tag(path, **helpers.image_alt_attribs(path))
         end,
       )
     end
