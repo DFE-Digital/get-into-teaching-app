@@ -7,7 +7,7 @@
 
 An image without explicit width/height attributes:
 
-<img src="/assets/static/images/content/hero-images/0013-3570599669a8da7d375320f4003d2d61.jpg">
+<img src="/assets/static/images/content/hero-images/teacher2-bb295dcc.jpg">
 
 A footnote[^1] and another footnote[^2].
 
