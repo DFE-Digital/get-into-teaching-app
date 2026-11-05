@@ -12,6 +12,10 @@ module AssetFiles
       asset.present? && asset.digested_path.to_s == url_path.delete_prefix(prefix)
     end
 
+    def source_path(url_path)
+      dynamic_asset(url_path)&.path&.to_s
+    end
+
     # Returns the URL path of a sibling asset such as image--tablet.jpg, given
     # the URL path (minus extension and digest) of the original.
     def sibling_url_path(url_basename, suffix, ext)
