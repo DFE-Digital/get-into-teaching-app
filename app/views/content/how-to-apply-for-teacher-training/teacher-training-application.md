@@ -40,8 +40,6 @@ cta_arrow_link:
 timed_financial_content:
   subject_knowledge_enhancement:
     default:
-      text: "providers may set conditions of offer, such as completing a subject knowledge enhancement (SKE) course before you start your training"
-    2025:
       text: "providers may set conditions of offer, such as completing a [subject knowledge enhancement (SKE) course](/how-to-apply-for-teacher-training/subject-knowledge-enhancement) before you start your training"
 ---
 
