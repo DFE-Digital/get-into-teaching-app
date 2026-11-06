@@ -20,6 +20,10 @@ module "application_configuration" {
     BIGQUERY_DATASET    = var.dataset_name
     BIGQUERY_PROJECT_ID = "get-into-teaching"
     BIGQUERY_TABLE_NAME = "events"
+
+    BIGQUERY_AIRBYTE_DATASET = var.airbyte_enabled ? local.gcp_dataset_name : null
+    AIRBYTE_SERVER_URL       = var.airbyte_enabled ? local.airbyte_server_url : null
+    BIGQUERY_POLICY_TAGS     = var.airbyte_enabled ? "{\"hidden\":\"projects/${local.gcp_project_id}/locations/${local.gcp_region}/taxonomies/${local.gcp_taxonomy_id}/policyTags/${local.gcp_policy_tag_id}\"}" : null
   }
   secret_variables = {
     DATABASE_URL = module.postgres.url
@@ -33,6 +37,11 @@ module "application_configuration" {
     #   keeping here as a reminder, but went be set in aks and need to confirm impact
     APP_ASSETS_URL           = length(var.asset_hostnames) == 0 ? "" : "https://${var.asset_hostnames[0]}.education.gov.uk"
     GOOGLE_CLOUD_CREDENTIALS = var.enable_dfe_analytics_federated_auth ? module.dfe_analytics[0].google_cloud_credentials : null
+    AIRBYTE_CONFIGURATION = var.airbyte_enabled ? jsonencode({
+      SOURCE_ID      = module.airbyte[0].airbyte_source_id
+      DESTINATION_ID = module.airbyte[0].airbyte_destination_id
+      CONNECTION_ID  = module.airbyte[0].airbyte_connection_id
+    }) : null
   }
 }
 
