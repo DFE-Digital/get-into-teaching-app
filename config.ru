@@ -6,9 +6,9 @@ require 'prometheus/middleware/exporter'
 require_relative 'lib/rack/deflater_with_exclusions'
 
 if ENV.has_key?("VCAP_APPLICATION")
-  EXTENSIONS_TO_EXCLUDE = %w(.jpg .jpeg .png .gif .pdf).freeze
+  EXTENSIONS_TO_EXCLUDE = %w(.jpg .jpeg .png .gif .pdf .woff .woff2).freeze
 else
-  EXTENSIONS_TO_EXCLUDE = %w(.jpg .jpeg .png .gif .pdf .jp2 .webp .svg .ttf).freeze
+  EXTENSIONS_TO_EXCLUDE = %w(.jpg .jpeg .png .gif .pdf .jp2 .webp .svg .ttf .woff .woff2).freeze
 end
 
 use Rack::DeflaterWithExclusions, exclude: proc { |env|
