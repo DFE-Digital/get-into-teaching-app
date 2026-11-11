@@ -15,7 +15,7 @@ class CallsToAction::AttachmentComponent < ViewComponent::Base
   end
 
   def asset_path
-    helpers.asset_pack_path(file_path)
+    helpers.asset_path(file_path)
   end
 
   def body

@@ -52,6 +52,3 @@ module GetIntoTeachingWebsite
     config.skylight.logger = Logger.new($stdout)
   end
 end
-
-# Prevent Rails from attempting to auto-load JS/assets.
-Rails.autoloaders.main.ignore(Rails.root.join("app/webpacker"))

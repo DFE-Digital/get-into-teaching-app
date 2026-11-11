@@ -215,6 +215,8 @@ GEM
     cronex (0.15.0)
       tzinfo
       unicode (>= 0.4.4.5)
+    cssbundling-rails (1.4.3)
+      railties (>= 6.0.0)
     csv (3.3.5)
     date (3.6.0)
     debug (1.11.1)
@@ -365,6 +367,8 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     iso_country_codes (0.7.8)
+    jsbundling-rails (1.3.1)
+      railties (>= 6.0.0)
     json (2.21.2)
     jwt (2.7.1)
     kaminari (1.2.2)
@@ -460,7 +464,6 @@ GEM
     observer (0.1.2)
     os (1.1.4)
     ostruct (0.6.3)
-    package_json (0.2.0)
     pagy (9.4.0)
     parallel (1.28.0)
     parser (3.3.13.0)
@@ -475,6 +478,10 @@ GEM
     prism (1.9.0)
     prometheus-client (4.2.5)
       base64
+    propshaft (1.3.2)
+      actionpack (>= 7.0.0)
+      activesupport (>= 7.0.0)
+      rack
     public_suffix (6.0.2)
     puma (6.4.3)
       nio4r (~> 2.0)
@@ -486,8 +493,6 @@ GEM
     rack-cors (2.0.2)
       rack (>= 2.0.0)
     rack-host-redirect (1.3.0)
-      rack
-    rack-proxy (0.8.2)
       rack
     rack-session (1.0.2)
       rack (< 3)
@@ -639,19 +644,12 @@ GEM
       websocket (~> 1.0)
     semantic_logger (4.16.0)
       concurrent-ruby (~> 1.0)
-    semantic_range (3.1.1)
     sentry-rails (6.2.0)
       railties (>= 5.2.0)
       sentry-ruby (~> 6.2.0)
     sentry-ruby (6.2.0)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
-    shakapacker (8.4.0)
-      activesupport (>= 5.2)
-      package_json
-      rack-proxy (>= 0.6.1)
-      railties (>= 5.2)
-      semantic_range (>= 2.3.0)
     shoulda-matchers (6.4.0)
       activesupport (>= 5.2.0)
     sidekiq (6.5.5)
@@ -747,6 +745,7 @@ DEPENDENCIES
   capybara (~> 3.40.0)
   capybara-mechanize
   connection_pool (< 3)
+  cssbundling-rails
   debug
   delegate (>= 0.2.0)
   dfe-analytics!
@@ -774,6 +773,7 @@ DEPENDENCIES
   invisible_captcha
   irb
   iso_country_codes
+  jsbundling-rails
   kaminari (~> 1.2, >= 1.2.2)
   knapsack
   kramdown (>= 2.4.0)
@@ -792,6 +792,7 @@ DEPENDENCIES
   ostruct
   pg
   prometheus-client
+  propshaft
   puma (~> 6.4)
   rack-attack
   rack-cors
@@ -812,7 +813,6 @@ DEPENDENCIES
   selenium-webdriver
   sentry-rails (>= 5.10.0)
   sentry-ruby (~> 6.2.0)
-  shakapacker (= 8.4.0)
   shoulda-matchers
   sidekiq (>= 6.5.5, < 6.5.6)
   sidekiq-cron

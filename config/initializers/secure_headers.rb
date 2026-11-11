@@ -78,11 +78,6 @@ SecureHeaders::Configuration.default do |config|
     style_src: quoted_unsafe_inline + self_base.concat(govuk, google_apis, google_supported, vwo),
     worker_src: self_base.concat(blob),
   }
-
-  if Rails.env.development?
-    # Webpack-dev-server
-    config.csp[:connect_src] += %w[http://localhost:3035 ws://localhost:3035 wss://localhost:3035]
-  end
 end
 
 SecureHeaders::Configuration.override(:api) do |config|

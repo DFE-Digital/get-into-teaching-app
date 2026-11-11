@@ -18,7 +18,9 @@ gem "invisible_captcha"
 
 gem "iso_country_codes"
 
-gem "shakapacker", "8.4.0"
+gem "cssbundling-rails"
+gem "jsbundling-rails"
+gem "propshaft"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

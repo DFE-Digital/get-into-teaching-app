@@ -80,10 +80,6 @@
     "2222": {
       "label": "SSH",
       "onAutoForward": "silent"
-    },
-    "3035": {
-      "label": "Webpack dev server (internal)",
-      "onAutoForward": "silent"
     }
   },
   // Any port not listed above (e.g. incidental dev-server ports) is forwarded

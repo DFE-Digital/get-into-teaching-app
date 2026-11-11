@@ -18,7 +18,7 @@ module.exports = {
       },
     ],
   },
-  ignorePatterns: ['polyfills/', 'app/webpacker/javascript/index-*.js'],
+  ignorePatterns: ['polyfills/', 'app/javascript/lib/chat_bundle.js'],
   overrides: [
     {
       files: ['*_spec.js', '*spec_helper.js'],

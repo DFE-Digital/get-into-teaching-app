@@ -1,3 +1,5 @@
+require "asset_files"
+
 # Responsive images are automatically loaded according to
 # the convention:
 #
@@ -51,11 +53,10 @@ private
   def responsive_src(src, breakpoint)
     src_uri = URI.parse(src)
 
-    file = responsive_file(src_uri.path, breakpoint)
+    file_path = responsive_file(src_uri.path, breakpoint)
 
-    return nil if file.nil?
+    return nil if file_path.nil?
 
-    file_path = file.sub(Rails.public_path.to_s, "")
     base_url = src_uri.absolute ? "#{src_uri.scheme}://#{src_uri.host}" : ""
 
     "#{base_url}#{file_path}"
@@ -64,12 +65,8 @@ private
   def responsive_file(src, breakpoint)
     ext = File.extname(src)
 
-    basename = if Rails.env.development?
-                 src.sub(/#{ext}$/, "")
-               else
-                 src.sub(/-[^-]*#{ext}$/, "")
-               end
+    basename = src.sub(/-[^-]*#{ext}$/, "")
 
-    Dir.glob("#{Rails.public_path}#{basename}--#{breakpoint}*#{ext}").first
+    AssetFiles.sibling_url_path(basename, "--#{breakpoint}", ext)
   end
 end
