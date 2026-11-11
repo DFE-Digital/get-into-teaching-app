@@ -10,7 +10,7 @@ RSpec.feature "link checks", :onschedule do
       PageLister.content_urls.map { |path| production_url + path }.each do |current_page|
         WebMock.enable_net_connect!
         visit(current_page)
-        checker = LinkChecker.new(current_page, page.body, adjust_packs_path: %w[packs-test packs])
+        checker = LinkChecker.new(current_page, page.body)
         checker.check_links(production_url, results)
         WebMock.disable_net_connect!
       end

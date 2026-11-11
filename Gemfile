@@ -33,7 +33,7 @@ gem "bootsnap", ">= 1.16.0", require: false
 gem "net-imap", require: false
 gem "net-pop", require: false
 
-# Manage multiple processes i.e. web server and webpack
+# Manage multiple processes i.e. web server and asset watchers
 gem "foreman"
 
 gem "secure_headers"
