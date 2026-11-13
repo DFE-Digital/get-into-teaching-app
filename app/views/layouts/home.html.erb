@@ -6,6 +6,9 @@
     <%= render HeaderComponent.new(@front_matter) %>
 
     <%= main_tag do %>
+
+      <%= render "content/shared/email_outage" %>
+
       <%= render Content::HeroComponent.new(@front_matter) %>
       <%= render Home::MailingListComponent.new if @front_matter["mailing_list"] %>
 

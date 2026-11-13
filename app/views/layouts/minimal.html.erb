@@ -7,6 +7,8 @@
 
     <%= render HeaderComponent.new(@front_matter) %>
 
+    <%= render "content/shared/email_outage" %>
+
     <%= main_tag(class: @front_matter["main_class"]) do %>
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>
