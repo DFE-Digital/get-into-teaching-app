@@ -9,8 +9,6 @@
     <%= render "sections/govuk_javascript" %>
     <%= render HeaderComponent.new(breadcrumbs: false) %>
 
-    <%= render "content/shared/email_outage" %>
-
     <div class="main-section registration-with-side-images">
       <section class="signup-container">
         <%= image_tag(content_for?(:left_image) ? yield(:left_image) : 'static/images/content/mailing-list-signup/left.jpg', class: 'left-img hide-on-mobile hide-on-tablet', **image_alt_attribs_for_text("")) %>
