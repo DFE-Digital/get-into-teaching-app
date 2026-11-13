@@ -70,6 +70,3 @@ fetch_config.rb
 /app/assets/builds/*
 !/app/assets/builds/.keep
 /public/assets
-
-/public/packs-test/
-/public/packs/

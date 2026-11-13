@@ -8,8 +8,6 @@
       <%= main_tag do %>
         <%= render Content::HeroComponent.new(@front_matter) %>
 
-        <%= render "content/shared/email_outage" %>
-
         <section class="container main-section">
           <%= render(partial: "sections/content_errors") %>
 
