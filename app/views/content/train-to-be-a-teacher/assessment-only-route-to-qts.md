@@ -24,6 +24,13 @@ provider_groups:
       telephone: "020 3846 5828"
       international_phone: "+442038465828"
       
+    - header: "Best Practice Network"
+      link: "https://www.bestpracticenet.co.uk/QTS-Assessment-Only-Route"
+      name: "Vanessa Sawyer"
+      email: "vanessa.sawyer@bestpracticenet.co.uk"
+      telephone: "07976077145"
+      international_phone: "+447976077145"
+      
     - header: "Chiltern Training Group"
       link: "https://www.ctg.ac.uk"
       name: "Claire Justin"
@@ -80,13 +87,6 @@ provider_groups:
       telephone: "07538 473145"
       international_phone: "+447538473145"
       
-    - header: "The University of the West of England"
-      
-      name: "Julie Buckland"
-      email: "Julie2.buckland@uwe.ac.uk"
-      telephone: "+44 1173287112"
-      international_phone: "+44441173287112"
-      
     - header: "Tommy Flowers SCITT"
       link: "https://tommyflowersscitt.co.uk/"
       name: "Tom Molloy"
@@ -100,6 +100,13 @@ provider_groups:
       email: "qtsdirect@cumbria.ac.uk"
       
       
+      
+    - header: "University of the West of England"
+      
+      name: "Julie Buckland"
+      email: "Julie2.buckland@uwe.ac.uk"
+      telephone: "+44 1173287112"
+      international_phone: "+44441173287112"
       
     - header: "University of Warwick"
       link: "https://warwick.ac.uk/fac/soc/cte/professionaldevelopment/ao/"
@@ -241,7 +248,7 @@ provider_groups:
     - header: "The Cambridge Partnership - Meridian Trust ITT"
       link: "https://campartnership.org/assessment-only/"
       name: "Beverley Collier"
-      email: "BCollier@pilgrimpartnership.org"
+      email: "BCollier@campartnership.org"
       telephone: "01234 907895"
       international_phone: "+441234907895"
       
@@ -406,7 +413,7 @@ provider_groups:
     - header: "University of Sunderland"
       link: "https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/"
       name: "Ian Elliott"
-      email: "ian.elliott@sunderland.ac.uk"
+      email: "fes.assessmentonly@sunderland.ac.uk"
       telephone: "0191 515 2159"
       international_phone: "+441915152159"
       
@@ -568,6 +575,13 @@ provider_groups:
       
       
       
+    - header: "Poole SCITT"
+      link: "https://www.poolescitt.co.uk/"
+      name: "Helen Best"
+      email: "hbscitt@adastra.poole.sch.uk"
+      telephone: "01202 605315"
+      international_phone: "+441202605315"
+      
     - header: "South Farnham SCITT"
       link: "https://www.ssfscitt.org.uk/page/?title=Assessment+Only+Route&pid=42"
       name: "Rebecca Vaughan-Barrett"
@@ -689,6 +703,13 @@ provider_groups:
       telephone: "01458449418"
       international_phone: "+441458449418"
       
+    - header: "Poole SCITT"
+      link: "https://www.poolescitt.co.uk/"
+      name: "Helen Best"
+      email: "hbscitt@adastra.poole.sch.uk"
+      telephone: "01202 605315"
+      international_phone: "+441202605315"
+      
     - header: "Somerset SCITT"
       link: "https://www.sciltraining.co.uk/assessment-only-route-to-qualified-teacher-status-qts/"
       name: "Nikki Blake; Claudine Leoni"
@@ -703,19 +724,19 @@ provider_groups:
       telephone: "01392 686165"
       international_phone: "+441392686165"
       
-    - header: "The University of the West of England"
-      
-      name: "Julie Buckland"
-      email: "Julie2.buckland@uwe.ac.uk"
-      telephone: "+44 1173287112"
-      international_phone: "+44441173287112"
-      
     - header: "University of Reading"
       link: "https://www.reading.ac.uk/education/pgce-qts-and-eyts/assessment-only"
       name: "Harvey Grout"
       email: "h.grout@reading.ac.uk"
       telephone: "0118 378 7237"
       international_phone: "+441183787237"
+      
+    - header: "University of the West of England"
+      
+      name: "Julie Buckland"
+      email: "Julie2.buckland@uwe.ac.uk"
+      telephone: "+44 1173287112"
+      international_phone: "+44441173287112"
       
     - header: "University of Winchester"
       link: "https://www.winchester.ac.uk/study/Short-courses/Courses/Assessment-Only-Route-to-Qualified-Teacher-Status/"
@@ -885,6 +906,13 @@ provider_groups:
   Outside of the UK:
     description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
+    - header: "Best Practice Network"
+      link: "https://www.bestpracticenet.co.uk/QTS-Assessment-Only-Route"
+      name: "Vanessa Sawyer"
+      email: "vanessa.sawyer@bestpracticenet.co.uk"
+      telephone: "07976077145"
+      international_phone: "+447976077145"
+      
     - header: "Coventry University, National Institute of Teaching and Education"
       link: "https://www.coventry.ac.uk/nite/teacher-training/assessment-only-qts/"
       name: "Louise Jakes"
@@ -937,9 +965,16 @@ provider_groups:
     - header: "University of Sunderland"
       link: "https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/"
       name: "Ian Elliott"
-      email: "ian.elliott@sunderland.ac.uk"
+      email: "fes.assessmentonly@sunderland.ac.uk"
       telephone: "0191 515 2159"
       international_phone: "+441915152159"
+      
+    - header: "University of the West of England"
+      
+      name: "Julie Buckland"
+      email: "Julie2.buckland@uwe.ac.uk"
+      telephone: "+44 1173287112"
+      international_phone: "+44441173287112"
       
     - header: "University of Warwick"
       link: "https://warwick.ac.uk/fac/soc/cte/professionaldevelopment/ao/"
@@ -970,11 +1005,10 @@ Fees may be paid by you or your school at the start of the programme. If you’r
 
 ## Eligibility for assessment only QTS
 
-To be eligible, you need:
+To be eligible, you need (all of the following):
 
 * to be able to show you meet the [teachers' standards](https://www.gov.uk/government/publications/teachers-standards) without any more training
-* to have 2 years of teaching experience
-* to have teaching experience at 2 different schools or 1 school for 5 years
+* to have worked in 2 or more schools
 * a degree
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 
