@@ -3,7 +3,7 @@ module Content
     attr_reader :path
 
     def initialize(path:)
-      super
+      super()
 
       @path = path
     end
@@ -13,7 +13,7 @@ module Content
     end
 
     def call
-      helpers.image_pack_tag(path, **helpers.image_alt_attribs(path))
+      helpers.image_tag(path, **helpers.image_alt_attribs(path))
     end
   end
 end

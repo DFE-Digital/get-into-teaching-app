@@ -7,6 +7,6 @@ class Events::CardComponent < ViewComponent::Base
     @path        = card.path
     @heading_tag = heading_tag
 
-    super
+    super()
   end
 end

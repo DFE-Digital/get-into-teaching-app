@@ -7,6 +7,8 @@ timed_financial_content:
       text: Find out how you could fund your teacher training with bursaries, depending on the subject you're training to teach.
     2025:
       text: Find out how you could fund your teacher training with bursaries and scholarships available up to $scholarships_generic_maxshortened$, depending on the subject you're training to teach.
+    2026:
+      text: Find out how you could fund your teacher training with bursaries available up to $bursaries_2026_generic_max_shortened$, depending on the subject you're training to teach.
 content:
     - content/landing/how-to-fund-your-teacher-training/header
     - content/landing/how-to-fund-your-teacher-training/collage

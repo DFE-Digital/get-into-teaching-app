@@ -1,0 +1,47 @@
+@use 'sass-mq/mq' as *;
+
+.content-alert {
+  background-color: $grey;
+  display: flex;
+  margin-bottom: 3em;
+
+  @include mq($until: tablet) {
+    width: inherit;
+  }
+
+  &--fullwidth {
+    width: inherit;
+    margin-bottom: 3 * $indent-amount;
+  }
+
+  h4,
+  h2 {
+    @extend .heading--margin-0;
+  }
+
+  p {
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  a:not(.button) {
+    @extend .link--white;
+  }
+
+  a.button {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .left > .icon {
+    background: $yellow;
+    padding: .8em .8em .6em;
+  }
+
+  .right {
+    padding: 1.5em;
+  }
+}

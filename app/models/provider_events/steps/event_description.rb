@@ -5,7 +5,7 @@ module ProviderEvents
       MAX_CHARS = MAX_WORDS * 20
 
       include FunnelTitle
-      include ActiveRecord::Normalization
+      include ActiveModel::Attributes::Normalization
       include ActiveModel::Dirty
 
       attribute :description

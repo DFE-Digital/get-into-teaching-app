@@ -63,6 +63,7 @@ en:
         group: "Secondary"
         sub_head: "Biology - Secondary"
         funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_biology} are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
           2025: "Bursaries of %{bursaries_postgraduate_biology} are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
           default: "Bursaries are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
       business_studies:
@@ -77,6 +78,7 @@ en:
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
         funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_chemistry_relevant} are available for trainee chemistry teachers if you're eligible."
           2025: "Scholarships of %{scholarships_chemistry} or bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you're eligible."
           default: "Bursaries are available for trainee chemistry teachers if you're eligible."
       citizenship:
@@ -84,6 +86,7 @@ en:
         group: "Secondary"
         sub_head: "Citizenship - Secondary"
         funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_citizenship} are available for trainee citizenship teachers if you're eligible."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       classics:
@@ -91,6 +94,7 @@ en:
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding:
+          2026: "Bursaries are not available for this subject."
           2025: |-
             Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
 
@@ -111,6 +115,7 @@ en:
         group: "Secondary"
         sub_head: "Computing - Secondary"
         funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_computing_relevant} are available for trainee computing teachers if you're eligible."
           2025: "Scholarships of %{scholarships_computing} or bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you're eligible."
           default: "Bursaries are available for trainee computing teachers if you're eligible."
       dance:
@@ -125,6 +130,7 @@ en:
         group: "Secondary"
         sub_head: "Design and technology - Secondary"
         funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_design_and_technology_relevant} are available for trainee design and technology teachers if you're eligible."
           2025: "Bursaries of %{bursaries_postgraduate_designandtechnology} are available for trainee design and technology teachers if you're eligible."
           default: "Bursaries are available for trainee design and technology teachers if you're eligible."
       drama:
@@ -160,6 +166,7 @@ en:
         group: "Secondary"
         sub_head: "Geography - Secondary"
         funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_geography} are available for trainee geography teachers if you're eligible."
           2025: "Bursaries of %{bursaries_postgraduate_geography} are available for trainee geography teachers if you're eligible."
           default: "Bursaries are available for trainee geography teachers if you're eligible."
       health_and_social_care:
@@ -181,6 +188,8 @@ en:
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
         funding:
+          2026: |-
+            Bursaries of %{bursaries_2026_postgraduate_languages_other} are available for all trainee language teachers if you’re eligible. These bursaries include ancient languages.
           2025: |-
             Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers if you're eligible.<br><br>
 
@@ -191,6 +200,7 @@ en:
         group: "Secondary"
         sub_head: "Maths - Secondary"
         funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_maths_relevant} are available for trainee maths teachers if you're eligible."
           2025: "Bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you're eligible."
           default: "Bursaries are available for trainee maths teachers if you're eligible."
       music:
@@ -198,6 +208,7 @@ en:
         group: "Secondary"
         sub_head: "Music - Secondary"
         funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_music} are available for trainee music teachers if you're eligible."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       physical_group:
@@ -212,6 +223,7 @@ en:
         group: "Secondary"
         sub_head: "Physics - Secondary"
         funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_physics_relevant} are available for trainee physics teachers if you're eligible."
           2025: "Scholarships of %{scholarships_physics} or bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers if you're eligible."
           default: "Bursaries are available for trainee physics teachers if you're eligible."
       psychology:
@@ -226,6 +238,7 @@ en:
         group: "Secondary"
         sub_head: "Religious education - Secondary"
         funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_religious_education} are available for RE teachers if you're eligible."
           2025: "Scholarships or bursaries are not available for this subject."
           default: "Bursaries are not available for this subject."
       science:
@@ -678,23 +691,33 @@ en:
         internal/event:
           attributes:
             name:
-              blank: Enter a name
+              blank: "Enter event name"
+              too_long: "Event name must be %{count} characters or less"
             readable_id:
               blank: Enter a partial URL
               invalid: Partial URL can only contain alphanumeric characters, hyphens, and underscores. Must begin and end with an alphanumeric character.
             summary:
               blank: Enter a summary
             description:
-              blank: Enter a description
+              blank: "Enter event description"
+              too_long: "Event description must be %{count} characters or less"
+              use_fewer_words: "Event description must be %{count} words or less"
             provider_contact_email:
               blank: Enter a provider email address
               invalid: Enter a valid email address
+              too_long: "Provider email address must be 100 characters or less"
             provider_organiser:
-              blank: Enter a provider organiser
+              blank: "Enter a provider organiser"
+              too_long: "Provider organiser must be %{count} characters or less"
             provider_target_audience:
-              blank: Enter a provider target audience
+              blank: "Enter a provider target audience"
+              too_long: "Provider target audience must be %{count} characters or less"
             provider_website_url:
-              blank: Enter a provider website/registration link
+              blank: "Enter a provider website link"
+              too_long: "Provider website link must be 300 characters or less"
+            registration_email_link:
+              blank: "Enter a registration website/email link"
+              too_long: "Registration website/email must be no more than 100 characters for an email or 300 characters for a website"
             is_online:
               inclusion: Choose whether the event is online
             start_at:
@@ -719,18 +742,18 @@ en:
           attributes:
             event_name:
               blank: "Enter event name"
-              too_long: "Event name must be 200 characters or less"
+              too_long: "Event name must be %{count} characters or less"
         provider_events/steps/event_description:
           attributes:
             description:
               blank: "Enter event description"
-              too_long: "Event description must be 6,000 characters or less"
-              use_fewer_words: "Event description must be 300 words or less"
+              too_long: "Event description must be %{count} characters or less"
+              use_fewer_words: "Event description must be %{count} words or less"
         provider_events/steps/organisation_name:
           attributes:
             organisation_name:
               blank: "Enter organisation name"
-              too_long: "Organisation name must be 200 characters or less"
+              too_long: "Organisation name must be %{count} characters or less"
         provider_events/steps/event_website:
           attributes:
             event_website:
@@ -741,7 +764,7 @@ en:
           attributes:
             target_audience:
               blank: "Enter your target audience"
-              too_long: "Target audience must be 500 characters or less."
+              too_long: "Target audience must be %{count} characters or less."
         provider_events/steps/event_date:
           attributes:
             event_date:

@@ -1,7 +1,7 @@
 module GroupedCards
   class ListingComponent < ViewComponent::Base
     def initialize(data)
-      super
+      super()
 
       @data = data
     end

@@ -13,7 +13,7 @@ class Image
   end
   delegate :image_data, to: :class
 
-  # returns args that can be splatted into image_pack_tag
+  # returns args that can be splatted into image_tag
   def build_args(path)
     [path, { alt: alt(path) }]
   end

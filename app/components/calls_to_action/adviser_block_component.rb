@@ -11,7 +11,7 @@ module CallsToAction
       link_text: "Find out about advisers",
       link_target: "/teacher-training-advisers"
     )
-      super
+      super()
       @title = title
       @image = image
       @image_classes = image_classes

@@ -91,11 +91,13 @@ Contact the provider directly to:
 
 The following providers are accepting applications:
 
+* Best Practice Network (BPN)
+
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
 
 * Equalitas
 
-* [National Institute of Teaching and Education (NITE)](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/), part of the Coventry University Group
+* [National Institute of Teaching and Education (NITE)](https://www.coventry.ac.uk/nite/course-finder/), part of Coventry University Group, offers both postgraduate and undergraduate routes
 
 * [Tes Institute](https://www.tes.com/institute/courses/iqts)
 
@@ -112,8 +114,6 @@ The following providers are accepting applications:
 * [University of the West of England](https://www.uwe.ac.uk/courses/applying/postgraduate-applications/iqts-information)
 
 The following providers specialise in particular regions:
-
-* [Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts) – this provider is accepting applications from the Middle East and North Africa
 
 * [St Mary’s University](https://www.stmarys.ac.uk/courses/postgraduate/iqts)
 

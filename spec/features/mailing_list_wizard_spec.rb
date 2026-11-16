@@ -402,7 +402,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "You've already signed up"
-    expect(page).to have_css "#sub-channel-id[data-id=sub-channel-id][data-value=123456789]", visible: false
+    expect(page).to have_css "#sub-channel-id[data-sub-channel-id=123456789]", visible: false
     expect(page).not_to have_button("Next step")
   end
 

@@ -2,7 +2,7 @@ module ProviderEvents
   module Steps
     class NewVenue < ::GITWizard::Step
       include FunnelTitle
-      include ActiveRecord::Normalization
+      include ActiveModel::Attributes::Normalization
       include ActiveModel::Dirty
 
       attribute :venue_name

@@ -3,19 +3,31 @@
 require "rails_helper"
 
 RSpec.describe Content::TimedFinancialContentComponent, type: :component do
-  # The component chooses which content to show based on `now` and the windows
-  # configured in its private `content_dates`:
+  # These examples exercise the branch-selection *mechanism*, so they run against
+  # fixed fixture windows rather than the live config/financial_content_times.yml
+  # (whose real dates move as content goes live and are deliberately parked in the
+  # future while a go-live date is unconfirmed). The fixture gives:
   #
   #   * "2025" branch  -> now on or before 2026-09-28
   #   * "2026" branch  -> now on or after  2026-10-06
   #   * "default"      -> the gap in between (and any time with no matching branch)
   #
+  # The real file is only asserted on in "the configured content dates" below,
+  # which reads it via `and_call_original`.
+  let(:content_dates_fixture) do
+    [
+      { key: "2026", valid_from: Time.zone.parse("2026-10-06"), valid_to: nil },
+      { key: "2025", valid_from: nil, valid_to: Time.zone.parse("2026-09-28") },
+    ]
+  end
   # `now` defaults to Time.current, but is injectable so the branch selection can
   # be exercised without travelling through time. The values below sit
   # comfortably inside each window.
   let(:now_in_2025_window) { Time.zone.parse("2026-06-01") }
   let(:now_in_2026_window) { Time.zone.parse("2026-11-01") }
   let(:now_in_gap) { Time.zone.parse("2026-09-30") }
+
+  before { allow(described_class).to receive(:content_dates).and_return(content_dates_fixture) }
 
   describe "the default branch" do
     it "renders nothing when no arguments are given" do
@@ -231,6 +243,42 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
     end
   end
 
+  describe ".resolve_text" do
+    it "resolves plain text without rendering a component" do
+      allow(Value).to receive(:get).with("myamount").and_return("£9,000")
+
+      result = described_class.resolve_text(
+        now: now_in_2026_window,
+        default: { text: "Default copy" },
+        "2026": { text: "You get $myamount$ a year." },
+      )
+
+      expect(result).to eq("You get £9,000 a year.")
+      expect(result).not_to be_html_safe
+    end
+
+    it "honours the request branch override outside production" do
+      result = described_class.resolve_text(
+        params: { branch: "2026" },
+        now: now_in_2025_window,
+        default: { text: "Default copy" },
+        "2025": { text: "2025 copy" },
+        "2026": { text: "2026 copy" },
+      )
+
+      expect(result).to eq("2026 copy")
+    end
+
+    it "returns an empty string for a partial-only branch" do
+      result = described_class.resolve_text(
+        now: now_in_gap,
+        default: { partial: "content/shared/qualifications-training/get_school_experience" },
+      )
+
+      expect(result).to eq("")
+    end
+  end
+
   describe "the default value for now" do
     it "uses Time.current when no now argument is supplied" do
       travel_to now_in_2026_window do
@@ -389,6 +437,10 @@ RSpec.describe Content::TimedFinancialContentComponent, type: :component do
   end
 
   describe "the configured content dates" do
+    # This block asserts on the real config/financial_content_times.yml, so it
+    # opts out of the fixture stub applied to the rest of the spec.
+    before { allow(described_class).to receive(:content_dates).and_call_original }
+
     it "has a valid_from that is before the valid_to (nils are allowed for either)" do
       described_class.content_dates.each do |content_date|
         valid_from = content_date[:valid_from]

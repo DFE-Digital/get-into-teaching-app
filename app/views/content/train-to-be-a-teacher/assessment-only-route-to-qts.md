@@ -24,6 +24,13 @@ provider_groups:
       telephone: "020 3846 5828"
       international_phone: "+442038465828"
       
+    - header: "Best Practice Network"
+      link: "https://www.bestpracticenet.co.uk/QTS-Assessment-Only-Route"
+      name: "Vanessa Sawyer"
+      email: "vanessa.sawyer@bestpracticenet.co.uk"
+      telephone: "07976077145"
+      international_phone: "+447976077145"
+      
     - header: "Chiltern Training Group"
       link: "https://www.ctg.ac.uk"
       name: "Claire Justin"
@@ -93,6 +100,13 @@ provider_groups:
       email: "qtsdirect@cumbria.ac.uk"
       
       
+      
+    - header: "University of the West of England"
+      
+      name: "Julie Buckland"
+      email: "Julie2.buckland@uwe.ac.uk"
+      telephone: "+44 1173287112"
+      international_phone: "+44441173287112"
       
     - header: "University of Warwick"
       link: "https://warwick.ac.uk/fac/soc/cte/professionaldevelopment/ao/"
@@ -166,6 +180,13 @@ provider_groups:
       
       
       
+    - header: "University of Northampton"
+      link: "https://www.northampton.ac.uk/courses/assessment-only-route-to-qualified-teacher-status-qts/"
+      name: "Dom Murphy"
+      email: "dominic.murphy@northampton.ac.uk"
+      telephone: "01604892755"
+      international_phone: "+441604892755"
+      
   East of England:
     providers:
     - header: "Colchester Teacher Training Consortium"
@@ -227,7 +248,7 @@ provider_groups:
     - header: "The Cambridge Partnership - Meridian Trust ITT"
       link: "https://campartnership.org/assessment-only/"
       name: "Beverley Collier"
-      email: "BCollier@pilgrimpartnership.org"
+      email: "BCollier@campartnership.org"
       telephone: "01234 907895"
       international_phone: "+441234907895"
       
@@ -245,6 +266,13 @@ provider_groups:
       
       
       
+    - header: "University of Northampton"
+      link: "https://www.northampton.ac.uk/courses/assessment-only-route-to-qualified-teacher-status-qts/"
+      name: "Dom Murphy"
+      email: "dominic.murphy@northampton.ac.uk"
+      telephone: "01604892755"
+      international_phone: "+441604892755"
+      
   Greater London:
     providers:
     - header: "2Schools Consortium (Oakthorpe Primary School)"
@@ -253,13 +281,6 @@ provider_groups:
       email: "training@oakthorpe.enfield.sch.uk"
       telephone: "020 8807 6906"
       international_phone: "+442088076906"
-      
-    - header: "Bournemouth Bay Teacher Training Partnership"
-      link: "https://bournemouthbay-partnership.com/about-us/"
-      name: "James Mosley"
-      email: "J.Mosley@poolehigh.poole.sch.uk"
-      telephone: "01202 662038"
-      international_phone: "+441202662038"
       
     - header: "Bromley Schools' Collegiate"
       link: "https://www.bscteach.co.uk/assessment-only-route-to-qts/"
@@ -392,7 +413,7 @@ provider_groups:
     - header: "University of Sunderland"
       link: "https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/"
       name: "Ian Elliott"
-      email: "ian.elliott@sunderland.ac.uk"
+      email: "fes.assessmentonly@sunderland.ac.uk"
       telephone: "0191 515 2159"
       international_phone: "+441915152159"
       
@@ -413,10 +434,10 @@ provider_groups:
       international_phone: "+441619731179"
       extension: "ext 2289"
     - header: "Associated Merseyside Partnership SCITT"
-      link: "https://www.amp-scitt.lydiatelearningtrust.co.uk"
-      name: "Gill Parkinson"
-      email: "g.parkinson@ampscitt.co.uk"
-      telephone: "0151 832 4340"
+      link: "https://www.amp-scitt.lydiatelearningtrust.co.uk/our-courses/assessment-only-route-to-qts/"
+      name: "Alison Brady"
+      email: "a.brady@ampscitt.co.uk"
+      telephone: "01518324340"
       international_phone: "+441518324340"
       
     - header: "Bright Futures SCITT"
@@ -477,10 +498,10 @@ provider_groups:
       
     - header: "University of Chester"
       link: "https://www.chester.ac.uk/about/faculties/arts-humanities-and-social-sciences/chester-school-of-education/qualified-teacher-status-qts-assessment-only-route/"
-      name: "Michael Bird"
-      email: "m.bird@chester.ac.uk"
-      telephone: "01244 512142"
-      international_phone: "+441244512142"
+      name: "Gemma Rolfe"
+      email: "qtsonlyroute@chester.ac.uk"
+      telephone: "01244 511000"
+      international_phone: "+441244511000"
       
     - header: "University of Cumbria"
       link: "https://www.cumbria.ac.uk/study/academic-departments/institute-of-education-arts-and-society/teaching-and-education/qts-direct-assessment-only-route/"
@@ -497,13 +518,6 @@ provider_groups:
       email: "thahera@astra-alliance.com"
       telephone: "01494 787573"
       international_phone: "+441494787573"
-      
-    - header: "Bournemouth Bay Teacher Training Partnership"
-      link: "https://bournemouthbay-partnership.com/about-us/"
-      name: "James Mosley"
-      email: "J.Mosley@poolehigh.poole.sch.uk"
-      telephone: "01202 662038"
-      international_phone: "+441202662038"
       
     - header: "Bromley Schools' Collegiate"
       link: "https://www.bscteach.co.uk/assessment-only-route-to-qts/"
@@ -561,6 +575,13 @@ provider_groups:
       
       
       
+    - header: "Poole SCITT"
+      link: "https://www.poolescitt.co.uk/"
+      name: "Helen Best"
+      email: "hbscitt@adastra.poole.sch.uk"
+      telephone: "01202 605315"
+      international_phone: "+441202605315"
+      
     - header: "South Farnham SCITT"
       link: "https://www.ssfscitt.org.uk/page/?title=Assessment+Only+Route&pid=42"
       name: "Rebecca Vaughan-Barrett"
@@ -595,6 +616,13 @@ provider_groups:
       email: "AO@chi.ac.uk"
       telephone: "01243 812077"
       international_phone: "+441243812077"
+      
+    - header: "University of Northampton"
+      link: "https://www.northampton.ac.uk/courses/assessment-only-route-to-qualified-teacher-status-qts/"
+      name: "Dom Murphy"
+      email: "dominic.murphy@northampton.ac.uk"
+      telephone: "01604892755"
+      international_phone: "+441604892755"
       
     - header: "University of Portsmouth"
       link: "https://www.port.ac.uk"
@@ -641,11 +669,11 @@ provider_groups:
       international_phone: "+441225875448"
       
     - header: "Bournemouth Bay Teacher Training Partnership"
-      link: "https://bournemouthbay-partnership.com/about-us/"
-      name: "James Mosley"
-      email: "J.Mosley@poolehigh.poole.sch.uk"
-      telephone: "01202 662038"
-      international_phone: "+441202662038"
+      link: "https://bournemouthbay-partnership.com/"
+      name: "Verity Burgess"
+      email: "assessment-only@bournemouthbay-partnership.com"
+      telephone: "01202 402790"
+      international_phone: "+441202402790"
       
     - header: "Cornwall SCITT"
       link: "https://www.cornwallscitt.org"
@@ -675,6 +703,13 @@ provider_groups:
       telephone: "01458449418"
       international_phone: "+441458449418"
       
+    - header: "Poole SCITT"
+      link: "https://www.poolescitt.co.uk/"
+      name: "Helen Best"
+      email: "hbscitt@adastra.poole.sch.uk"
+      telephone: "01202 605315"
+      international_phone: "+441202605315"
+      
     - header: "Somerset SCITT"
       link: "https://www.sciltraining.co.uk/assessment-only-route-to-qualified-teacher-status-qts/"
       name: "Nikki Blake; Claudine Leoni"
@@ -695,6 +730,13 @@ provider_groups:
       email: "h.grout@reading.ac.uk"
       telephone: "0118 378 7237"
       international_phone: "+441183787237"
+      
+    - header: "University of the West of England"
+      
+      name: "Julie Buckland"
+      email: "Julie2.buckland@uwe.ac.uk"
+      telephone: "+44 1173287112"
+      international_phone: "+44441173287112"
       
     - header: "University of Winchester"
       link: "https://www.winchester.ac.uk/study/Short-courses/Courses/Assessment-Only-Route-to-Qualified-Teacher-Status/"
@@ -760,6 +802,13 @@ provider_groups:
       email: "m.simmons@jths.co.uk"
       telephone: "01283 247 850"
       international_phone: "+441283247850"
+      
+    - header: "University of Northampton"
+      link: "https://www.northampton.ac.uk/courses/assessment-only-route-to-qualified-teacher-status-qts/"
+      name: "Dom Murphy"
+      email: "dominic.murphy@northampton.ac.uk"
+      telephone: "01604892755"
+      international_phone: "+441604892755"
       
     - header: "University of Wolverhampton"
       link: "https://www.wlv.ac.uk/schools-and-institutes/faculty-of-education-health-and-wellbeing/department-of-education/teacher-training/employment-based-routes/assessment-only-qts-programme/"
@@ -857,6 +906,13 @@ provider_groups:
   Outside of the UK:
     description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
+    - header: "Best Practice Network"
+      link: "https://www.bestpracticenet.co.uk/QTS-Assessment-Only-Route"
+      name: "Vanessa Sawyer"
+      email: "vanessa.sawyer@bestpracticenet.co.uk"
+      telephone: "07976077145"
+      international_phone: "+447976077145"
+      
     - header: "Coventry University, National Institute of Teaching and Education"
       link: "https://www.coventry.ac.uk/nite/teacher-training/assessment-only-qts/"
       name: "Louise Jakes"
@@ -909,9 +965,16 @@ provider_groups:
     - header: "University of Sunderland"
       link: "https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/"
       name: "Ian Elliott"
-      email: "ian.elliott@sunderland.ac.uk"
+      email: "fes.assessmentonly@sunderland.ac.uk"
       telephone: "0191 515 2159"
       international_phone: "+441915152159"
+      
+    - header: "University of the West of England"
+      
+      name: "Julie Buckland"
+      email: "Julie2.buckland@uwe.ac.uk"
+      telephone: "+44 1173287112"
+      international_phone: "+44441173287112"
       
     - header: "University of Warwick"
       link: "https://warwick.ac.uk/fac/soc/cte/professionaldevelopment/ao/"

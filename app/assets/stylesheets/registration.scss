@@ -1,0 +1,76 @@
+@use 'sass-mq/mq' as *;
+
+section.registration {
+  justify-content: center;
+
+  > section {
+    margin: auto $indent-amount;
+
+    @include mq($from: tablet) {
+      margin: 2em 0;
+      width: 100%;
+    }
+  }
+
+  @include mq($from: tablet) {
+    main.within-section,
+    .back-link,
+    .registration__mailing-list,
+    .registration__teacher-training-adviser,
+    .registration__callback {
+      width: $column-720;
+    }
+  }
+
+  .form-help {
+    margin-top: $indent-amount;
+  }
+
+  .registration__event {
+    &--first-page {
+      padding-top: 1em;
+    }
+
+    &--container {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 2em;
+
+      @include mq($from: desktop) {
+        flex-direction: row;
+
+        form {
+          flex-basis: 66%;
+        }
+
+        .event-info {
+          flex-basis: 33%;
+        }
+      }
+    }
+  }
+
+  .mailing-list__actions {
+    display: flex;
+    flex-direction: row;
+    gap: $indent-amount;
+
+    .telephone {
+      display: block;
+      font-weight: bold;
+      text-decoration: none;
+      color: $black;
+      margin: 0;
+    }
+  }
+
+  .mailing-list__completed {
+    * + p {
+      max-width: $column-720;
+    }
+
+    .button {
+      margin-top: 1em;
+    }
+  }
+}

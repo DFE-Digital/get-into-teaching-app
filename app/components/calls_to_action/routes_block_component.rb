@@ -11,7 +11,7 @@ module CallsToAction
       link_text: "Find a route",
       link_target: "/routes-into-teaching"
     )
-      super
+      super()
       @title = title
       @image = image
       @image_classes = image_classes

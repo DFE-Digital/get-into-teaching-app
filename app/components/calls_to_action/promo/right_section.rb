@@ -5,6 +5,6 @@ class CallsToAction::Promo::RightSection < ViewComponent::Base
     @heading = heading
     @caption = caption
 
-    super
+    super()
   end
 end

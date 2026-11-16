@@ -1,54 +1,37 @@
 {
   "dependencies": {
     "@babel/core": "7",
-    "@babel/plugin-proposal-class-properties": "7",
-    "@babel/plugin-proposal-object-rest-spread": "7",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-runtime": "7",
     "@babel/preset-env": "^7.27.1",
-    "@babel/runtime": "7",
     "@fortawesome/fontawesome-free": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@hotwired/stimulus": "^3.2.2",
     "@sentry/browser": "^10.17.0",
     "accessible-autocomplete": "^3.0.1",
-    "babel-loader": "9",
-    "babel-plugin-macros": "^3.1.0",
-    "compression-webpack-plugin": "11",
-    "css-loader": "^7.1.4",
     "dayjs": "^1.11.20",
     "dfe-autocomplete": "github:DFE-Digital/dfe-autocomplete",
-    "file-loader": "^6.2.0",
+    "esbuild": "^0.28.2",
     "flatpickr": "^4.6.13",
-    "govuk-frontend": "^5.11.1",
+    "govuk-frontend": "^6.6.0",
     "is-touch-device": "^1.0.1",
     "js-cookie": "^3.0.5",
     "lazysizes": "^5.3.2",
-    "mini-css-extract-plugin": "^2.7.2",
     "perfume.js": "^9.4.0",
+    "postcss-cli": "^12.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.1.0",
-    "postcss-loader": "^8.1.1",
     "postcss-preset-env": "^10.2.4",
     "rails-ujs": "^5.2.8",
     "sass": "^1.98.0",
-    "sass-loader": "^16.0.5",
     "sass-mq": "^6.0.0",
     "semver": "7.7.3",
-    "shakapacker": "8.4.0",
     "sinon": "^21.0.3",
-    "stimulus": "^3.1",
-    "terser-webpack-plugin": "5",
     "trix": "^2.1.18",
-    "turbolinks": "^5.2.0",
-    "webpack": "5",
-    "webpack-assets-manifest": "6",
-    "webpack-cli": "5.1.4",
-    "webpack-dev-server": "^5.2.4",
-    "webpack-merge": "6"
+    "turbolinks": "^5.2.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.1",
     "@stimulus/test": "^2.0.0",
+    "concurrently": "^10.0.6",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-standard": "^16.0.3",
@@ -72,8 +55,8 @@
     ],
     "moduleDirectories": [
       "node_modules",
-      "app/webpacker/controllers",
-      "app/webpacker/javascript"
+      "app/javascript/controllers",
+      "app/javascript/lib"
     ]
   },
   "browserslist": [
@@ -82,9 +65,15 @@
   ],
   "scripts": {
     "spec": "jest",
-    "scss-lint": "npx stylelint app/webpacker/styles",
-    "js-lint": "yarn eslint app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js",
-    "js-lint-fix": "yarn prettier --write app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js && yarn eslint --fix app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js"
+    "scss-lint": "npx stylelint app/assets/stylesheets",
+    "js-lint": "yarn eslint app/javascript/controllers/*js app/javascript/lib/*js spec/javascript/*js",
+    "js-lint-fix": "yarn prettier --write app/javascript/controllers/*js app/javascript/lib/*js spec/javascript/*js && yarn eslint --fix app/javascript/controllers/*js app/javascript/lib/*js spec/javascript/*js",
+    "build:css:sass": "sass app/assets/stylesheets/application.scss:tmp/css/application.css app/assets/stylesheets/application-no-js.scss:tmp/css/application_no_js.css app/assets/stylesheets/internal.scss:tmp/css/internal.css --no-source-map --load-path=node_modules --load-path=app/assets/stylesheets --quiet-deps --silence-deprecation=import,global-builtin,color-functions,if-function",
+    "build:css:postcss": "postcss tmp/css/*.css --dir app/assets/builds --no-map",
+    "build:css": "yarn build:css:sass && yarn build:css:postcss",
+    "build:css:watch": "yarn build:css && concurrently --kill-others --names sass,postcss \"yarn build:css:sass --watch\" \"yarn build:css:postcss --watch\"",
+    "build": "node esbuild.config.js",
+    "build:watch": "node esbuild.config.js --watch"
   },
   "packageManager": "yarn@4.18.0"
 }

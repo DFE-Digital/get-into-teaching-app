@@ -71,16 +71,16 @@ variable "internet_hostnames" {
   default = []
 }
 variable "command" {
-  type = list(string)
+  type    = list(string)
   default = []
 }
 variable "replicas" {
   default = 1
-  type = number
+  type    = number
 }
 variable "memory_max" {
   default = "1Gi"
-  type = string
+  type    = string
 }
 variable "azure_maintenance_window" {
   default = null
@@ -99,12 +99,12 @@ variable "enable_prometheus_monitoring" {
 
 variable "sidekiq_memory_max" {
   description = "maximum memory of the sidekiq"
-  default = "1Gi"
+  default     = "1Gi"
 }
 
 variable "sidekiq_replicas" {
   description = "number of replicas of the sidekiq"
-  default = 1
+  default     = 1
 }
 
 variable "postgres_version" { default = 17 }
@@ -112,6 +112,11 @@ variable "postgres_version" { default = 17 }
 variable "deploy_redis_cache" {
   default     = false
   description = "Deploy a separate Redis instance for caching (production only)"
+}
+
+variable "pg_airbyte_enabled" {
+  description = "Enable Airbyte integration for Postgres"
+  default     = false
 }
 
 locals {

@@ -11,7 +11,7 @@ module CallsToAction
       link_text: "Get advice in your inbox",
       link_target: "/mailinglist/signup/name"
     )
-      super
+      super()
       @title = title
       @image = image
       @image_classes = image_classes

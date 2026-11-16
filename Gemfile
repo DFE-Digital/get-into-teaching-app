@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 8.0"
+gem "rails", "~> 8.1.4"
 
 # Use Puma as the app server
 gem "puma", "~> 6.4"
@@ -18,7 +18,9 @@ gem "invisible_captcha"
 
 gem "iso_country_codes"
 
-gem "shakapacker", "8.4.0"
+gem "cssbundling-rails"
+gem "jsbundling-rails"
+gem "propshaft"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -31,7 +33,7 @@ gem "bootsnap", ">= 1.16.0", require: false
 gem "net-imap", require: false
 gem "net-pop", require: false
 
-# Manage multiple processes i.e. web server and webpack
+# Manage multiple processes i.e. web server and asset watchers
 gem "foreman"
 
 gem "secure_headers"
@@ -39,7 +41,11 @@ gem "secure_headers"
 gem "nokogiri", ">= 1.14.3"
 
 # Canonical meta tag
-gem "canonical-rails", ">= 0.2.14"
+# Temporary Rails 8.1 support; canonical-rails PR #96.
+gem "canonical-rails",
+    git: "https://github.com/commonlit/canonical-rails.git",
+    branch: "bump-rails-8-1",
+    ref: "97bcb28b910b08ce4dc0169eae55a8cd3d4f26ff"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.4.0"
@@ -92,8 +98,9 @@ gem "get_into_teaching_api_client_faraday", ">= 4.3.8", github: "DFE-Digital/get
 gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
+gem "govuk-components", "~> 6.6.0"
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 3.21.0"
+gem "view_component", "4.15.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -129,20 +136,15 @@ gem "rack-host-redirect"
 gem "rack-cors"
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem "byebug", platforms: %i[mri mingw x64_mingw]
+  gem "debug"
 
   # GOV.UK interpretation of rubocop for linting Ruby
   gem "rubocop-govuk", "~> 5.1"
 
   # Static security scanner
-  gem "brakeman", "~> 8.0.5", require: false
+  gem "brakeman", "~> 8.1.0", require: false
 
   gem "drb"
-
-  # Debugging
-  gem "pry-byebug"
-  gem "pry-rails"
 
   # Testing framework
   gem "knapsack"
@@ -188,4 +190,4 @@ group :rolling, :preprod, :production, :pagespeed do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
+gem "tzinfo-data", platforms: %i[windows jruby]

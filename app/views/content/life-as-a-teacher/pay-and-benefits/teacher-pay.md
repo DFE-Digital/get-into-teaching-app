@@ -16,12 +16,8 @@ cta_arrow_link:
   steps:
     link_target: "/steps-to-become-a-teacher"
     link_text: "Find out how to become a teacher"
-inset_text:
-  new-salaries:
-    text: |-
-      The pay award is subject to a statutory consultation period. Schools can choose how to implement the award.
+    
 ---
-$new-salaries$
 
 If you’re a primary or secondary teacher in England, your salary will depend on the type of school you work in, where the school is, and the pay range you’re on. 
 
@@ -38,8 +34,6 @@ From September 2026, minimum starting salaries for teachers will be over $salari
 From September 2027, minimum starting salaries for teachers will be over $salaries_starting_min_england_2027$ (or more in London).
 
 The average teacher salary will be over $salaries_average_classroom_2026$ from September 2026, and over $salaries_average_classroom_2027$ from September 2027.
-
-The pay awards for September 2026 and September 2027 are subject to a consultation period.
 
 ## Primary and secondary teacher salary
 
