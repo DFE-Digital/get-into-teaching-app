@@ -1,0 +1,35 @@
+@use 'sass-mq/mq' as *;
+
+@mixin content-cta {
+  background: $grey;
+  text-align: left;
+  padding: $indent-amount;
+  box-sizing: border-box;
+  width: auto;
+
+  h3 {
+    @extend .heading--margin-top-0;
+  }
+
+  a {
+    @extend .link--dark;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.content-cta {
+  @include content-cta;
+  width: 65%;
+  margin: 3em auto 0;
+
+  @include mq($until: tablet) {
+    width: auto;
+  }
+}

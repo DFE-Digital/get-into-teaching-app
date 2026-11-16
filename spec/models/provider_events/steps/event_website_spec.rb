@@ -10,7 +10,7 @@ RSpec.describe ProviderEvents::Steps::EventWebsite do
 
   it { is_expected.to validate_presence_of :event_website }
 
-  it { is_expected.to validate_length_of(:event_website).is_at_most(300) }
+  it { is_expected.to validate_length_of(:event_website).is_at_most(ProviderEvents::Steps::EventWebsite::MAX_CHARS) }
 
   it { is_expected.not_to be_skipped }
 

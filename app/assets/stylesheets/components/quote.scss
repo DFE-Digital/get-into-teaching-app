@@ -1,0 +1,117 @@
+@use 'sass-mq/mq' as *;
+
+.quote {
+  margin: 2.5em 1.5rem 2.5em 0;
+
+  &--background-white {
+    @include quote($white);
+  }
+
+  &--background-grey {
+    @include quote($grey);
+  }
+
+  &--background-grey,
+  &--background-white {
+    border-left: 5px solid $gitpink;
+
+    p {
+      @include simple-quotes-before($black);
+
+      span {
+        @include simple-quotes-after($black);
+      }
+    }
+  }
+
+  &--indent {
+    margin-left: 1.5rem;
+  }
+
+  &--narrow-margins {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin: 0;
+    padding: 0 1em 1em 1.5em;
+    font-weight: normal;
+
+    span {
+      white-space: nowrap;
+      font-weight: normal;
+    }
+
+    &:nth-last-child(2),
+    &:only-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  &--large {
+    p {
+      @include font-size(medium);
+      padding-left: 1em; // keeps large p indented with attribution
+    }
+  }
+
+  .footer {
+    padding: 1em 1em 0 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .author {
+      display: inline-flex;
+      gap: 1em;
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    .name,
+    .job-title {
+      display: block;
+      font-style: normal;
+    }
+
+    .job-title {
+      font-weight: bold;
+      margin-top: .5rem;
+    }
+
+    a {
+      @extend .link--black;
+    }
+  }
+}
+
+@include mq($from: tablet) {
+  .quote--inline-left,
+  .quote--inline-right {
+    max-width: 50%;
+    margin-bottom: $indent-amount;
+  }
+
+  .quote--inline-left {
+    float: left;
+    margin-right: $indent-amount;
+  }
+
+  .quote--inline-right {
+    float: right;
+    margin-left: $indent-amount;
+  }
+
+  .quote--inline-full {
+    margin-left: $indent-amount;
+    margin-right: $indent-amount;
+  }
+
+  .quote:not(.quote--inline-left):not(.quote--inline-right) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

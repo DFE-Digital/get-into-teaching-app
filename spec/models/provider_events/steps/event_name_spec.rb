@@ -10,7 +10,7 @@ RSpec.describe ProviderEvents::Steps::EventName do
 
   it { is_expected.to validate_presence_of :event_name }
 
-  it { is_expected.to validate_length_of(:event_name).is_at_most(200) }
+  it { is_expected.to validate_length_of(:event_name).is_at_most(ProviderEvents::Steps::EventName::MAX_CHARS) }
 
   it { is_expected.not_to be_skipped }
 end

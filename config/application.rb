@@ -24,7 +24,7 @@ require_relative "../lib/patch_rack_page_caching"
 module GetIntoTeachingWebsite
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.0
+    config.load_defaults 8.1
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
@@ -42,9 +42,9 @@ module GetIntoTeachingWebsite
     config.active_job.queue_adapter = :sidekiq
 
     # View component previews
-    config.view_component.preview_controller = "PreviewController"
-    config.view_component.preview_paths << Rails.root.join("spec/components/previews")
-    config.view_component.default_preview_layout = "component_preview"
+    config.view_component.previews.controller = "PreviewController"
+    config.view_component.previews.paths << Rails.root.join("spec/components/previews")
+    config.view_component.previews.default_layout = "component_preview"
 
     config.skylight.environments.append("preprod", "dev", "test", "staging", "rolling")
 
@@ -52,6 +52,3 @@ module GetIntoTeachingWebsite
     config.skylight.logger = Logger.new($stdout)
   end
 end
-
-# Prevent Rails from attempting to auto-load JS/assets.
-Rails.autoloaders.main.ignore(Rails.root.join("app/webpacker"))

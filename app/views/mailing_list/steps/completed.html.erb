@@ -1,5 +1,5 @@
 <% @hide_page_helpful_question = true %>
-<div data-sub-channel-id="<%= session.dig("mailinglist", "sub_channel_id") %>"></div>
+<%= tag.div id: "sub-channel-id", class: "hidden", "data-sub-channel-id": @sub_channel_id if @sub_channel_id %>
 
 <%= render Content::LandingHeroComponent.new(
   title: "#{@first_name}, you're signed up!",

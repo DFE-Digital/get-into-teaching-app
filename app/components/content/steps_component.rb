@@ -3,7 +3,7 @@ module Content
     attr_reader :steps, :numeric
 
     def initialize(steps:, numeric: true)
-      super
+      super()
 
       @numeric = numeric
       @steps = steps

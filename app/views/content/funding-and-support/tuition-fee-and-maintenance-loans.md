@@ -24,6 +24,9 @@ cta_arrow_link:
   veterans-support:
     link_target: "/funding-and-support/if-youre-a-veteran"
     link_text: "Find out more about financial support if you’re a veteran"
+  lifelong-learning-entitlement:
+    link_target: "https://www.skillsforcareers.education.gov.uk/pages/lifelong-learning-entitlement"
+    link_text: "Find out more about the LLE"  
 navigation: 20.12
 navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 expander:
@@ -53,42 +56,50 @@ timed_financial_content:
 
 Funding is available to help you train to teach if you choose a course that has tuition fees. You may be eligible for a student loan to cover the cost of your tuition fees or to help with your living costs.
 
-The amounts on this page are for the $finance_loanacademicyear$.
-
 You can still apply for a tuition fee loan and a maintenance loan if:
 
-* $bursaries_or_scholarship$
+* you also get a teaching bursary
+* you have previously applied for and received a student loan
 
-* you've previously applied for and received a student loan
-
-You'll only have to make loan repayments once you’re earning.
+You’ll only have to make loan repayments once you’re earning. [Read the student finance repayments guide](https://www.gov.uk/repaying-your-student-loan) for more information about repayments.
 
 You do not need to wait until you have a confirmed offer for a teacher training course to apply for student funding.
 
-If you choose a teacher training course that has a salary you're not eligible for any student finance.
+If you choose a teacher training course that has a salary you’re not eligible for any student finance.
 
-$student-finance$
+## If your course starts before 1 January 2027
+
+If your course starts before 1 January 2027, find out [how to apply for student finance on GOV.UK](https://www.gov.uk/apply-for-student-finance).
+
+## If your course starts on or after 1 January 2027
+
+If your course starts on or after 1 January 2027 and your home is in England, you'll need to [apply for student finance through the lifelong learning entitlement (LLE)](https://www.gov.uk/apply-for-student-finance-lifelong-learning-entitlement).
 
 ## Tuition fee loan
 
-You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course. If you’re eligible for a tuition fee loan, the amount you borrow is paid directly to your course provider.
+You can apply for a tuition fee loan to cover the cost of your postgraduate teacher training course. If you're eligible for a tuition fee loan, the amount you borrow is paid directly to your course provider. Check with your course provider to find out how much their course will cost.
 
-The maximum tuition fee loan for postgraduate teacher training for a UK applicant starting a course in the 2026 to 2027 academic year was:
+The maximum tuition fee loan for postgraduate teacher training for a UK applicant starting a course in the $finance_loanacademicyear$ was:
 
 * $finance_tuitionfeeloan_postgraduatemaxfulltime$ per year for a full-time course
 * $finance_tuitionfeeloan_postgraduatemaxparttime$ per year for a part-time course
 
-Maximum tuition fee loan amounts are linked to the maximum tuition fees training providers can charge. Maximum tuition fees are set by the UK government.
+The maximum tuition fee loan for postgraduate teacher training for a UK applicant starting a course in the $finance_loannextacademicyear$ is:
 
-The maximum amount you can borrow depends on how much your course costs.
+* $finance_tuitionfeeloan_postgraduatemaxfulltime2027$ per year for a full-time course
+* $finance_tuitionfeeloan_postgraduatemaxparttime2027$ per year for a part-time course
+
+The maximum amount you can borrow depends on how much your course costs and the tuition fee limit that applies to your provider. 
 
 Tuition fee loans are not means tested. So you do not need to provide evidence of your income or anyone else’s to be eligible to receive one.
 
+If your course starts on or after 1 January 2027, you'll need to [apply for funding through the LLE](https://www.gov.uk/apply-for-student-finance-lifelong-learning-entitlement).
+
 ## Maintenance loan
 
-You may also be eligible for a maintenance loan to help cover your living costs.
+You may also be eligible for a maintenance loan to help cover your living costs. You can use the [UCAS budget calculator](https://www.ucas.com/money-and-student-life/money/budgeting/budget-calculator) to help you estimate the cost of living while you learn.
 
-The maximum amount you may be eligible to borrow is:
+For the $finance_loanacademicyear$, the maximum amount you may be eligible to borrow is:
 
 * $finance_maintenanceloan_withparents$ if you live at home with your parents
 * $finance_maintenanceloan_notwithparentsoutsidelondon$ if you live away from home and are studying outside of London
@@ -96,6 +107,19 @@ The maximum amount you may be eligible to borrow is:
 * $finance_maintenanceloan_oversixty$ if you're 60 years or over on the first day of the first academic year of your course
 
 $student-finance-calculator$
+
+## Financial support if you have already used all your student loan entitlement
+
+Under the LLE, people who have not studied before will be entitled to the full tuition fee loan. This is equivalent to 4 years of the tuition fee limit for full-time courses.
+
+If you already have a degree, or have used all your tuition fee loan entitlement, you are likely to still be eligible for extra tuition loan funding and a maintenance loan to train to teach.
+
+To find out how much you could get, you can:
+
+* [use the student finance calculator](https://www.gov.uk/student-finance-calculator) to get an estimate
+* [sign in or create a student finance account](https://www.gov.uk/student-finance-register-login) to get a verified calculation of your loan entitlement
+
+$lifelong-learning-entitlement$
 
 $bursaries_and_scholarship$
 
@@ -135,6 +159,6 @@ Or, you'll need to contact the education authority if you live in Jersey, Guerns
 
 Find out about student finance in the Channel Islands and the Isle of Man:
 
-* [student finance guidance from the Government of Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx)
-* [student finance guidance from the States of Guernsey](https://www.gov.gg/article/152744/Policies)
+* [student finance guidance from the Government of Jersey](https://www.gov.je/Working/SkillsCareersHigherEducation/StudentFinance/Pages/StudentFinance.aspx)
+* [student finance guidance from the States of Guernsey](https://www.gov.gg/studentfinance)
 * [student awards guidance from the Isle of Man Government website](https://www.gov.im/student-grants)

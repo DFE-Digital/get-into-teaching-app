@@ -10,7 +10,7 @@ RSpec.describe ProviderEvents::Steps::EventDescription do
 
   it { is_expected.to validate_presence_of :description }
 
-  it { is_expected.to validate_length_of(:description).is_at_most(6000) }
+  it { is_expected.to validate_length_of(:description).is_at_most(ProviderEvents::Steps::EventDescription::MAX_CHARS) }
 
   describe "description" do
     context "when there are more than 300 words" do

@@ -4,7 +4,7 @@ module Content
     attr_reader :title, :intro, :color, :margin, :heading
 
     def initialize(title:, intro: nil, color: "pink", margin: true, heading: :m)
-      super
+      super()
 
       @title = substitute_values(title)
       @intro = substitute_values(intro)

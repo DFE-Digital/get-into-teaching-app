@@ -10,7 +10,7 @@ RSpec.describe ProviderEvents::Steps::TargetAudience do
 
   it { is_expected.to validate_presence_of :target_audience }
 
-  it { is_expected.to validate_length_of(:target_audience).is_at_most(500) }
+  it { is_expected.to validate_length_of(:target_audience).is_at_most(ProviderEvents::Steps::TargetAudience::MAX_CHARS) }
 
   it { is_expected.not_to be_skipped }
 end

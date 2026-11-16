@@ -24,6 +24,7 @@ bursaries:
       chemistry:
         relevant: £20,000
         unrelated: £10,000
+      citizenship: £5,000
       computing:
         relevant: £20,000
         unrelated: £10,000

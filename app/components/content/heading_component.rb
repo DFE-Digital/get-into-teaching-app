@@ -20,7 +20,7 @@ module Content
       caption_purple: true,
       **kwargs
     )
-      super
+      super()
 
       @heading = substitute_values(heading)
       @heading_size = heading_size

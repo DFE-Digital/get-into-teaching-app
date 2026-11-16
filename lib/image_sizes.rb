@@ -1,9 +1,11 @@
+require "asset_files"
+
 # ImageSizes will automatically add width/height attributes to img
 # elements in an effort to combat Cumulative Layout Shift (CLS).
 class ImageSizes
   attr_reader :doc
 
-  IMAGES_GLOB = "app/webpacker/images/**/*.*".freeze
+  IMAGES_GLOB = "app/assets/media/static/images/**/*.*".freeze
 
   @@cache = {}
 
@@ -79,10 +81,11 @@ private
     ENV["APP_ASSETS_URL"]
   end
 
-  # If the image src is a path (as it is in local/development environments)
-  # then we need to prefix the path with "public" as FastImage will peform
-  # a File.read in this scenario (and our assets are compiled into public/).
+  # Propshaft serves dynamic assets from their source files in development/test.
+  # Precompiled assets are served from public/ in production.
   def prefix_path(src)
-    src.start_with?("http") ? src : "public#{src}"
+    return src if src.start_with?("http")
+
+    AssetFiles.source_path(src) || "public#{src}"
   end
 end

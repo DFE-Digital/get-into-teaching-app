@@ -1,0 +1,215 @@
+@use 'sass-mq/mq' as *;
+
+$px-either-side-of-content: 15px;
+$space-between-sections: 3.7em;
+
+// blocks is a utility class that allows a several
+// items of block content on a page; on desktop they'll
+// be in a row and on mobile in a column
+.blocks {
+  display: flex;
+  gap: 1em;
+
+  // This is a fix to make IE display the content
+  // centrally.
+  margin: $space-between-sections auto 0;
+
+  &.homepage-feature {
+    @supports (display: grid) {
+      margin: 1em $px-either-side-of-content 0;
+    }
+  }
+
+  &--no-top-margin {
+    margin-top: 0;
+  }
+
+  > * {
+    flex: 1 0;
+
+    // this can be deleted once gap is supported by
+    // Safari, it's currently only in the TP (tech preview)
+    // build https://caniuse.com/?search=gap
+    @include safari-only {
+      margin: .3em;
+    }
+
+    @include ie-only {
+      margin: .3em;
+    }
+  }
+
+  @include mq($until: tablet) {
+    flex-direction: column;
+    margin: 1em;
+    }
+
+  &__directory {
+    border: 3px solid $purple;
+    padding: 1em;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 1em 0;
+
+        > a {
+          @include font-size("xsmall");
+          @extend .link--black;
+        }
+      }
+    }
+
+    p {
+      @include font-size("xsmall");
+    }
+  }
+
+  &__icon {
+    // placeholders for now
+    @include font-size("xlarge");
+  }
+}
+
+.image-blocks {
+  width: 100%;
+
+  .image-block {
+    .image-background {
+      margin: 0;
+
+      &.gitbluetint {
+        background-color: $gitbluetint;
+      }
+
+      &.gitgreentint {
+        background-color: $gitgreentint;
+      }
+
+      picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 9.2%;
+        margin-bottom: 9.2%;
+
+        img {
+          width: auto;
+          height: 180px;
+        }
+      }
+
+      &.padding-small {
+        picture > img {
+          height: 170px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0 $indent-amount $indent-amount 1rem;
+
+      a {
+        @extend .link--black;
+      }
+    }
+
+    h2.increased-line-height {
+      line-height: 1.4em;
+    }
+  }
+
+  &:has(> :nth-child(3)) {
+    .image-block {
+      .image-background {
+        picture > img {
+          height: 130px;
+        }
+
+        &.padding-small {
+          picture > img {
+            height: 110px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+        }
+
+        &.padding-medium {
+          picture > img {
+            height: 94px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+          }
+        }
+
+        &.padding-large {
+          picture > img {
+            height: 80px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  @include mq($from: tablet) {
+    display: flex;
+    gap: $indent-amount * 0.75;
+
+    .image-block {
+      h2 {
+        @include font-size("medium");
+        margin-left: 2 * $indent-amount;
+      }
+
+      h2.reduced-left-margin {
+        margin-left: 1.3333 * $indent-amount;
+      }
+
+      ul {
+        padding-left: 2 * $indent-amount;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.homepage-feature {
+    @supports (display: grid) {
+      margin: 1em $px-either-side-of-content 0;
+    }
+  }
+}
+
+.promos {
+  width:100%;
+  box-sizing: border-box;
+
+  h2 {
+    transform: none;
+    margin-top: -0.75em;
+  }
+
+  div {
+    padding: 0 1.5em 1.5em;
+    margin-bottom: 2 * $indent-amount;
+    display: flex;
+    flex-direction: column;
+
+    .button {
+      align-self: flex-start;
+    }
+  }
+}

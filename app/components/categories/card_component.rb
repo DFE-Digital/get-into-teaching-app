@@ -10,7 +10,7 @@ class Categories::CardComponent < ViewComponent::Base
     @heading_tag = heading_tag
     @image       = card.image if card.respond_to?(:image)
 
-    super
+    super()
   end
 
   def image?
@@ -18,6 +18,6 @@ class Categories::CardComponent < ViewComponent::Base
   end
 
   def image_tag
-    helpers.image_pack_tag(image, **helpers.image_alt_attribs(image))
+    helpers.image_tag(image, **helpers.image_alt_attribs(image))
   end
 end

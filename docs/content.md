@@ -232,7 +232,7 @@ content:
 
 ### Adding a document, image or video
 
-If you need to include a link to a document or embed an image in your page content you'll need to first add the file to the repository. Any documents should be placed in `/app/webpacker/documents` and images in `/app/webpacker/images/content` (under a subdirectory if suitable). You can then reference the files in your Markdown content (note the paths used to reference here will differ to the location of the file - use `/media` instead of `/app/webpacker`):
+If you need to include a link to a document or embed an image in your page content you'll need to first add the file to the repository. Any documents should be placed in `/app/assets/media/static/documents` and images in `/app/assets/media/static/images/content` (under a subdirectory if suitable). You can then reference the files in your Markdown content (note the paths used to reference here will differ to the location of the file - use `static/...` instead of `/app/assets/media/static/...`):
 
 ```
 [Download a document](static/documents/my-document.pdf)

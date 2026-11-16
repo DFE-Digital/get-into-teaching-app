@@ -84,7 +84,7 @@ RSpec.configure do |config|
   config.include SpecHelpers::BasicAuth
   config.include SpecHelpers::Integration, type: :feature
   config.include SpecHelpers::Contract, type: :feature
-  config.include Shakapacker::Helper, type: :helper
+  config.include Propshaft::Helper, ActionView::Helpers::AssetUrlHelper, type: :helper
 
   config.verbose_retry = true
   config.default_retry_count = 2
@@ -94,7 +94,10 @@ RSpec.configure do |config|
   config.exceptions_to_retry = [Net::ReadTimeout]
 
   config.before(:suite) do
-    Shakapacker.compile
+    # Fail loudly rather than serving stale or partial assets.
+    %w[build build:css].each do |script|
+      system("yarn", script, out: File::NULL, exception: true)
+    end
   end
 
   config.before do

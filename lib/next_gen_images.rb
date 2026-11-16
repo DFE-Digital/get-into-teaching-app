@@ -1,3 +1,5 @@
+require "asset_files"
+
 class NextGenImages
   attr_reader :doc
 
@@ -37,7 +39,7 @@ private
     base_url = src_uri.absolute ? "#{src_uri.scheme}://#{src_uri.host}" : ""
     src_path = "#{src_uri.path.chomp(File.extname(original_src))}#{ext}"
 
-    return nil unless File.exist?("#{Rails.public_path}#{src_path}")
+    return nil unless AssetFiles.exist?(src_path)
 
     Nokogiri::XML::Node.new("source", doc) do |source|
       source["srcset"] = "#{base_url}#{src_path}"
