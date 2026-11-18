@@ -27,11 +27,11 @@ module CallsToAction
   private
 
     def icon_element(icon)
-      helpers.image_pack_tag("static/images/#{icon}.svg",
-                             width: 50,
-                             height: 50,
-                             **helpers.image_alt_attribs_for_text(""),
-                             class: "call-to-action__icon")
+      helpers.image_tag("static/images/#{icon}.svg",
+                        width: 50,
+                        height: 50,
+                        **helpers.image_alt_attribs_for_text(""),
+                        class: "call-to-action__icon")
     end
 
     def responsive_classes

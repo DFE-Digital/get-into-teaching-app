@@ -18,11 +18,10 @@ Rails.application.routes.draw do
 
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
     redirect_rules.each do |from, to|
-      to_mapped = to.gsub(/^\/packs\//, Rails.env.test? ? "/packs-test/" : "/packs/")
       get from => lambda { |env|
         request = Rack::Request.new(env)
-        Rails.logger.info(redirect: { request: env["ORIGINAL_FULLPATH"], from: from, to: to_mapped })
-        redirect(path: to_mapped, params: request.params.except("page")).call(env)
+        Rails.logger.info(redirect: { request: env["ORIGINAL_FULLPATH"], from: from, to: to })
+        redirect(path: to, params: request.params.except("page")).call(env)
       }
     end
   end
@@ -49,16 +48,6 @@ Rails.application.routes.draw do
     page_speed_score.fetch
 
     [204, {}, []]
-  }
-
-  post "/assets/check", constraints: -> { Rails.env.pagespeed? }, to: proc { |_env|
-    require "asset_checker"
-
-    root_url = "https://getintoteaching.education.gov.uk"
-    checker = AssetChecker.new(root_url)
-    result = checker.run
-
-    [result.empty? ? 204 : 404, {}, [result.join($INPUT_RECORD_SEPARATOR)]]
   }
 
   namespace :internal do

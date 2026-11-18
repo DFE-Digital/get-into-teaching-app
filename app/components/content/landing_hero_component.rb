@@ -13,7 +13,7 @@ module Content
     end
 
     def header_image
-      helpers.image_pack_tag(@image, **helpers.image_alt_attribs(@image)) if @image
+      helpers.image_tag(@image, **helpers.image_alt_attribs(@image)) if @image
     end
 
     def show_title_paragraph?

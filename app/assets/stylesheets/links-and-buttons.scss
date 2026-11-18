@@ -1,0 +1,376 @@
+@use 'sass-mq/mq' as *;
+
+@mixin button($bg: $cta-green, $fg: $white) {
+  display: block;
+  font-weight: bold;
+  background-color: $bg;
+  text-decoration: none;
+  color: $fg;
+  padding: 12px 1em 12px .9em;
+  @include font-size("small");
+  border: none;
+  box-shadow: 0 2px 0 $cta-green-box-shadow;
+
+  @media (forced-colors: active) {
+    border: 2px solid transparent;
+  }
+
+  &:hover {
+    background: darken($bg, 5%);
+    color: $fg;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $black;
+    z-index: 100;
+    box-shadow: none;
+    outline: 4px solid transparent;
+  }
+}
+
+@mixin highlight-text($backgroundColor, $color) {
+  // Multi-line padded highlight effect without horizontal
+  // gaps between lines.
+  color: $color;
+
+  span {
+    box-decoration-break: clone;
+    padding: .5rem;
+    background: $backgroundColor;
+    box-shadow: 0 0 0 $backgroundColor, -0 0 0 $backgroundColor;
+
+    span {
+      position: relative;
+      background: none;
+      padding: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+.link {
+  @include font;
+  color: $blue-dark;
+  line-height: 1.5;
+  text-underline-offset: .08em;
+  box-shadow: none;
+
+  &:hover {
+    text-decoration-thickness: max(3px, .1875rem);
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $gitpurple;
+    box-shadow: 0 4px $gitlilac;
+    outline: 4px solid transparent;
+    text-decoration: none;
+
+    &::after {
+      border-color: $white;
+    }
+  }
+
+  // &:focus {
+  //  background-color: $grey;
+  //  box-shadow: 0 4px $gitpurple;
+  //  color: $black;
+  // }
+}
+
+.link--padding {
+  @include mq($from: mobile) {
+    padding: 0.3rem;
+  }
+  @include mq($until: mobile) {
+    margin: 0.6rem;
+    line-height: 2;
+  }
+}
+
+ol.primary > li {
+  &:focus {
+    border: dotted red 1px;
+  }
+}
+
+.link--chevron {
+  text-decoration: none;
+  padding-right: .3em;
+  font-weight: bold;
+
+  &::after {
+    @include chevron-icon($black, .6em);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:focus::after {
+    @include chevron-icon($black, .6em);
+  }
+}
+
+.link--grey {
+  color: $grey-mid;
+
+  &::after {
+    border-color: $grey-mid;
+  }
+
+  &:focus {
+    color: $white;
+  }
+}
+
+.link--black {
+  color: $black;
+
+  &::after {
+    border-color: $black;
+  }
+
+  &:hover {
+    text-decoration-thickness: max(3px, .1875rem, .12em)};
+
+  &:focus {
+    color: $white;
+  }
+  //  &:focus {
+  //    background-color: $grey;
+  //    box-shadow: 0 4px $gitpurple;
+  //    color: $black;
+  //  }
+
+}
+
+.link--pink {
+  @include highlight-text($pink, $black);
+
+  &::after {
+    border-color: $pink;
+  }
+
+  &:hover {
+    text-decoration-thickness: max(3px, .1875rem, .12em)};
+
+  &:focus {
+    @include highlight-text($black, $white);
+  }
+}
+
+.link--gitlilac {
+  @include highlight-text($gitlilac, $black);
+
+  &::after {
+    border-color: $gitlilac;
+  }
+
+  &:hover {
+    text-decoration-thickness: max(3px, .1875rem, .12em)};
+
+  &:focus {
+    @include highlight-text($gitpurple, $white);
+  }
+}
+
+.link--normal {
+  font-weight: normal;
+}
+
+.link--bold {
+  font-weight: bold;
+}
+
+.link--white {
+  color: $white;
+
+  &::after {
+    border-color: $white;
+  }
+}
+
+.link--red {
+  color: $red;
+}
+
+// passes accessibility contrast check on grey/yellow background
+.link--dark {
+  color: $black;
+
+  &:focus {
+    color: $white;
+  }
+}
+
+// .link--dark {
+//  color: $black;
+//
+//  &:focus {
+//    color: $black;
+//  }
+// }
+
+.link--underline {
+  text-decoration: underline;
+}
+
+.link--no-underline {
+  text-decoration: none;
+}
+
+.link--underline-on-hover {
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: max(3px, .1875rem, .12em);
+  }
+}
+
+a {
+  @extend .link;
+}
+
+body a.govuk-back-link {
+  @extend .link, .link--black;
+
+  &:focus::before {
+    border-color: $white;
+  }
+}
+
+.button {
+  @include button;
+  @include chevron;
+  display: inline-block;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: .7;
+  }
+
+  span {
+    white-space: nowrap;
+  }
+
+  &--white {
+    @include button($bg: $white, $fg: $black);
+    @include chevron($color: $black);
+  }
+
+  &--secondary {
+    @include button($bg: $cta-grey, $fg: $black);
+    @include chevron($color: $black);
+    box-shadow: 0 2px 0 $cta-grey-box-shadow;
+
+    &:hover {
+      background: $cta-grey-dark;
+    }
+  }
+
+  &--nowrap {
+    white-space: nowrap;
+  }
+
+  &--unpadded {
+    padding: 0;
+  }
+
+  &--inline {
+    display: inline;
+  }
+}
+
+// CTA link with green arrow circle button CallsToAction::ArrowLinkComponent
+
+.cta-circle-link-wrapper {
+  display: flex;
+  align-items: top;
+  gap: 0.5em;
+  padding: 0.1em;
+  @extend .link;
+  text-decoration: none;
+
+  .cta-circle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $cta-green;
+    height: 28px;
+    width: 28px;
+    flex-shrink: 0;
+
+    i {
+      color: $white;
+    }
+  }
+
+  .cta-link-text {
+    @include font-size("small");
+    @extend .link;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    .cta-circle-button {
+      background-color: darken($cta-green, 5%);
+    }
+
+    .cta-link-text {
+      text-decoration-thickness: max(3px, 0.1875rem);
+    }
+  }
+
+  &:focus {
+    .cta-link-text {
+      color: $white;
+      text-decoration: none;
+    }
+
+    .cta-circle-button {
+      background-color: $cta-green;
+    }
+  }
+
+  @include mq ($until: narrow) {
+    .cta-circle-button {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
+.call-to-action-icon-button {
+  @include button;
+  display: inline-block;
+}
+
+.secondary-button {
+  @include button($bg: $cta-grey, $fg: black);
+  display: inline-block;
+  box-shadow: 0 2px 0 $cta-grey-box-shadow;
+
+  &:hover {
+    background: $cta-grey-dark;
+  }
+}
+
+.request-button {
+  @include button($bg: $cta-green);
+}
+
+.survey-button {
+  @include button($bg: $grey, $fg: $black);
+  box-shadow: 0 2px 0 $grey-mid;
+  margin-bottom: .5rem;
+
+  @include mq($from: tablet) {
+    display: inline-block;
+  }
+}

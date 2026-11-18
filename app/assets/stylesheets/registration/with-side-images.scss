@@ -1,0 +1,67 @@
+@use 'sass-mq/mq' as *;
+
+.registration-with-side-images {
+  margin-bottom: 0;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+
+  background-color: $grey;
+
+  .signup-container {
+    padding: 0 2rem;
+
+    .signup-form {
+      position: relative;
+
+      .registration__mailing-list,
+      .registration__teacher-training-adviser {
+        background-color: $white;
+        padding: 2em;
+        position: relative;
+      }
+    }
+
+    @include mq($until: desktop) {
+      picture {
+        position: relative;
+        float: right;
+        right: -1.25em;
+        top: -1.25em;
+        width: 30%;
+        min-width: 6em;
+        z-index: 1;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    @include mq($from: desktop) {
+      display: grid;
+      grid-template-columns: .5fr $column-720 .5fr;
+      grid-template-rows: 1fr;
+      gap: 0;
+
+      .signup-form::before {
+        content: "";
+        width: calc(60% + 1.25em);
+        height: calc(30% + 1.25em);
+        position: absolute;
+        bottom: -1.25em;
+        right: -1.25em;
+        background-color: $gitpurple;
+      }
+
+      .left-img {
+        margin-top: 4em;
+        float: right;
+      }
+
+      .right-img {
+        margin-top: 2em;
+      }
+    }
+  }
+}

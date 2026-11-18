@@ -1,0 +1,92 @@
+@use 'sass-mq/mq' as *;
+
+.main-section.home {
+  // the homepage is a few px wider than the regular max width so we can
+  // make things overhang if neccessary
+  $homepage-max-width: $content-max-width + (2 * $px-either-side-of-content);
+
+  max-width: $homepage-max-width;
+
+  section {
+    margin-top: $space-between-sections;
+    max-width: $homepage-max-width;
+
+    &.narrow-top-margin {
+      margin-top: $indent-amount;
+    }
+  }
+
+  .homepage-feature {
+    &.steps-to-become-a-teacher {
+      width: 100%;
+      margin-top: 0;
+
+      @include mq($from: tablet) {
+        margin-top: $space-between-sections;
+      }
+    }
+  }
+
+  .banner {
+    margin: 1em 15px;
+  }
+
+  #salary-banner .call-to-action__content {
+    padding: 30px 30px 11px;
+  }
+
+  #salary-banner .call-to-action__content h2 {
+    margin-top: 0;
+  }
+
+  #salary-banner .call-to-action__content p {
+    margin-top: 0;
+  }
+
+  #salary-banner p.call-to-action__text {
+    display: none;
+  }
+
+  @include mq($until: tablet) {
+    #salary-banner .call-to-action__content h2 {
+      font-size: 24px;
+      line-height: 25px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    #salary-banner picture {
+      display: none;
+    }
+
+    #salary-banner .call-to-action__content {
+      padding: 20px 20px 4px;
+    }
+
+    #salary-banner .call-to-action__content h2 {
+      margin-top: 0;
+    }
+
+    #salary-banner .call-to-action__content p {
+      margin-top: 0;
+    }
+
+    #salary-banner p.call-to-action__text {
+      display: none;
+    }
+  }
+
+  @include mq($from: desktop) {
+    .purple-box {
+      grid-template-columns: $px-either-side-of-content repeat(2, 1fr) repeat(2, 1fr) $px-either-side-of-content;
+    }
+  }
+}
+
+.homepage-feature {
+  margin: 0 auto;
+
+  &.steps-to-become-a-teacher {
+    width: 100%;
+  }
+}

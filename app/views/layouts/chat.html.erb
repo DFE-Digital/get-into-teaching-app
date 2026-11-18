@@ -5,7 +5,7 @@
   <link rel="icon" type="image/png" href="/chat/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat</title>
-  <%= javascript_pack_tag "chat.js" %>
+  <%= javascript_include_tag "chat.js", defer: true %>
   <script type="text/javascript">
 //<![CDATA[
     window.env = <%= raw @window_envs.to_json %>;

@@ -18,7 +18,9 @@ gem "invisible_captcha"
 
 gem "iso_country_codes"
 
-gem "shakapacker", "8.4.0"
+gem "cssbundling-rails"
+gem "jsbundling-rails"
+gem "propshaft"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -31,7 +33,7 @@ gem "bootsnap", ">= 1.16.0", require: false
 gem "net-imap", require: false
 gem "net-pop", require: false
 
-# Manage multiple processes i.e. web server and webpack
+# Manage multiple processes i.e. web server and asset watchers
 gem "foreman"
 
 gem "secure_headers"

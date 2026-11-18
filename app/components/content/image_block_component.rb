@@ -13,7 +13,7 @@ module Content
     end
 
     def image
-      helpers.image_pack_tag(image_path, **helpers.image_alt_attribs(image_path))
+      helpers.image_tag(image_path, **helpers.image_alt_attribs(image_path))
     end
   end
 end

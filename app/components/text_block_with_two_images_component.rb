@@ -13,10 +13,10 @@ class TextBlockWithTwoImagesComponent < ViewComponent::Base
   end
 
   def image_1
-    helpers.image_pack_tag(@image_1_path, **helpers.image_alt_attribs_for_text(@image_1_alt))
+    helpers.image_tag(@image_1_path, **helpers.image_alt_attribs_for_text(@image_1_alt))
   end
 
   def image_2
-    helpers.image_pack_tag(@image_2_path, **helpers.image_alt_attribs_for_text(@image_2_alt))
+    helpers.image_tag(@image_2_path, **helpers.image_alt_attribs_for_text(@image_2_alt))
   end
 end

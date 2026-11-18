@@ -4,7 +4,7 @@ class CallsToAction::MailinglistComponent < ViewComponent::Base
   def initialize(
     title: "Find out more about getting into teaching",
     text: "Get helpful guidance and support on getting into teaching, including how to get the qualifications you need.",
-    image: "images/content/hero-images/geography2.jpg",
+    image: "static/images/content/hero-images/geography2.jpg",
     link_text: "Get tailored advice in your inbox",
     link_target: "/mailinglist/signup/name",
     classes: [],

@@ -56,6 +56,3 @@ module GetIntoTeachingWebsite
     config.active_record.encryption.key_derivation_salt = ENV["ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT"]
   end
 end
-
-# Prevent Rails from attempting to auto-load JS/assets.
-Rails.autoloaders.main.ignore(Rails.root.join("app/webpacker"))

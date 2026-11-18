@@ -23,21 +23,22 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/rebrand-2026/favicon-16x16.png">
   <link rel="manifest" href="/rebrand-2026/site.webmanifest">
 
-  <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
-  <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
+  <%= stylesheet_link_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
+  <noscript><%= stylesheet_link_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
   <% js_packs = %w[clarity sentry gtm js_enabled lazy_images govuk_frontend flatpickr accessible_autocomplete application] %>
   <%= yield :head %>
   <% if Rails.env.test? && params.key?(:fake_browser_time) %>
     <% js_packs.unshift('fake_browser_time') %>
   <% end %>
-  <%= javascript_pack_tag *js_packs, type: 'module', data:
+  <% js_packs += content_for(:js_entries).to_s.split %>
+  <%= javascript_include_tag(*js_packs.map { |pack| "#{pack}.js" }, type: 'module', data:
   {
     "turbolinks-track": 'reload',
     "sentry-dsn": sentry_dsn,
     "sentry-environment": Rails.env,
     "gtm-id": ENV["GTM_ID"],
     "clarity-id": ENV["CLARITY_ID"],
-  } %>
+  }) %>
   <!-- Start VWO Async SmartCode -->
   <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
   <script type="text/javascript" id="vwoCode">
