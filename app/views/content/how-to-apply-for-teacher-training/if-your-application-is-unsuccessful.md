@@ -18,8 +18,6 @@ expander:
 timed_financial_content:
   subject_knowledge_enhancement:
     default:
-      text: "You may be able to do a subject knowledge enhancement (SKE) course to top up your subject knowledge. You could also find a course in a different subject, which may also involve a SKE course to prepare you to teach that subject."
-    2025:
       text: "You may be able to do a subject knowledge enhancement (SKE) course to top up your subject knowledge. You could also find a course in a different subject, which may also involve a SKE course to prepare you to teach that subject. [Find out if you're eligible for a SKE course](/how-to-apply-for-teacher-training/subject-knowledge-enhancement)."
 ---
 
