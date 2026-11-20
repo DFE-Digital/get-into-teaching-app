@@ -44,7 +44,6 @@ If you notice some guidance is missing, you can add to this page. [Create a pull
 * [Previewing a change](#preview-a-change)
 * [Search engine optimisation](#search-engine-optimisation)
 * [Navigation](#navigation)
-* [Internship providers](#internship-providers)
 * [Redirect URLs](#redirect-urls)
 * [Finding links on the site](#links-site)
 * [When things go wrong](#when-things-go-wrong)
@@ -1313,20 +1312,6 @@ content:
 ```
 
 In this example the partial file would be declared in `content/main-category-page/_partial.html.erb` (note the underscore prefix and the file type). It's likely that a developer will create the partial, but using the frontmatter you can easily pull in and re-arrange existing content partials.
-
-## Internship providers
-
-#### Warning! Do not edit the `teaching-internship-providers.md` page directly.
-
-Unlike the other content pages the internship providers page is a fully generated page. 
-This is because occasionally we are sent a new spreadsheet to update the list of internship providers on the `teaching-internship-providers.md` page and the numbers can be large, and need to be grouped by provider region and sorted, which would be a large and time consuming manual task. We have a rake task to make this easy to do, but this means it should not be edited directly. Instead any changes to content for the page should be made to the `lib/tasks/support/teaching-internship-providers.md.erb` file and then the page should be regenerated:
-
-- Run `bundle exec rake teaching_internship_providers:generate` in your terminal.
-
-When updating not just the text content within the file, but the actual list of providers (which will be provided as an XLSX file), you will need to update the CSV file that the rake task uses to generate the page. To do this:
-- Export the XLSX to CSV with filename `internship_providers.csv`
-- Place it in the `lib/tasks/support` directory.
-- Run `bundle exec rake teaching_internship_providers:generate`.
 
 ## Redirect URLs
 
