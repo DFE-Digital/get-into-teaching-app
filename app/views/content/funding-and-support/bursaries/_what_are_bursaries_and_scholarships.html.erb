@@ -10,7 +10,7 @@
 
 <%= render Content::ExpanderComponent.new(title: "bursaries and scholarships") do %>
   <%= render Content::TimedFinancialContentComponent.new(
-    default: { text: "Details of financial support for courses starting in the 2027 to 2028 academic year will be released soon." },
+    default: { text: "[Find out what bursaries or scholarships you could be eligible for](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-2027-to-2028-academic-year) if you start teacher training in the 2027 to 2028 academic year. We’ll update this page with more information soon." },
     "2025": {
       text: safe_html_format("<p>If you are a non-UK citizen who has permission to <a href=\"https://www.gov.uk/browse/visas-immigration/settle-in-the-uk\">live permanently in the UK</a> and are eligible for student finance, you may be able to get a bursary or scholarship.</p>" \
                                "<p>Find out about <a href=\"/non-uk-teachers/fees-and-funding-for-non-uk-trainees\">funding for non-UK citizens</a>.</p>"),
