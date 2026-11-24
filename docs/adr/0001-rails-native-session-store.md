@@ -35,7 +35,7 @@ Replace Redis-backed sessions with Rails' built-in **`:cache_store` session stor
 - **Database load grows:** every request that touches the session reads, and often writes, a database row. Check capacity and the connection pool per process with Technical Infrastructure before switching. A capacity problem is escalated, not fixed by assuming a scale-up.
 - **Sessions in backups and exports:** session data contains personal data and now goes into database backups. Apply the same retention and access rules, and keep sessions out of logs and exports.
 - **Session loss on eviction:** a cache-backed session can disappear before its expiry if the store is under size pressure; the user then restarts their form. This is a deliberate trade-off against building a bespoke session table.
-- **Expiry handling:** Solid Cache trims rows in the background after writes (it runs its expiry on write via the Active Job queue, currently Sidekiq). Confirm this runs in production.
+- **Expiry handling:** Solid Cache deletes expired rows itself: each write probabilistically triggers a background batch delete (`expiry_method: :thread` by default, so no Active Job or cron job is needed). Rows older than `max_age`, or beyond `max_size`, are removed. Confirm the table size stays stable in production.
 - **Revocation:** deleting a session entry logs a user out, which is possible for individual sessions if needed.
 - **In-flight sessions are lost at cutover:** existing Redis sessions are not read by the new store, so users mid-journey restart their form. This is acceptable given the 1 day lifetime; switch outside peak times.
 - **Serialisation:** the cache serialises session values with Marshal by default. Confirm that `session[:user]` and other values behave as they do today.
