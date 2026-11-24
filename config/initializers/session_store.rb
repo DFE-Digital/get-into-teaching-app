@@ -1,4 +1,5 @@
-if Rails.env.development? || Rails.env.test?
+if Rails.env.test?
+  # use cookie_store for tests
   Rails.application.config.session_store :cookie_store,
                                          key: "_dfe_session",
                                          same_site: :lax,
@@ -15,7 +16,7 @@ else
   Rails.application.config.session_store :cache_store,
                                          key: "_dfe_session",
                                          same_site: :lax,
-                                         secure: true,
+                                         secure: !Rails.env.development?,
                                          cache: session_cache,
                                          expire_after: 1.day
 end
