@@ -469,7 +469,6 @@ GEM
     parser (3.3.13.0)
       ast (~> 2.4.1)
       racc
-    pg (1.6.3)
     pg (1.6.3-arm64-darwin)
     pg (1.6.3-x86_64-linux)
     pp (0.6.4)
@@ -675,6 +674,10 @@ GEM
     skylight (7.0.0)
       activesupport (>= 7.1.0)
     smart_properties (1.17.0)
+    solid_cache (1.0.10)
+      activejob (>= 7.2)
+      activerecord (>= 7.2)
+      railties (>= 7.2)
     spring (4.3.0)
     spring-watcher-listen (2.1.0)
       listen (>= 2.7, < 4.0)
@@ -818,6 +821,7 @@ DEPENDENCIES
   sidekiq-cron
   simplecov
   skylight (~> 7.0.0)
+  solid_cache (~> 1.0)
   spring
   spring-watcher-listen (~> 2.1.0)
   text
