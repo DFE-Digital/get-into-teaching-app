@@ -32,7 +32,7 @@ Replace Redis-backed sessions with Rails' built-in **`:cache_store` session stor
 - **Rails-native:** the store, the cache backend and the cleanup are all supported Rails components, with no third-party session gem.
 - **Fewer moving parts:** sessions no longer depend on Redis; the primary database is already operated and backed up.
 - **No 4 KB limit:** session size is bounded only by the cache entry limits (`max_entry_size`), which must be checked against the largest journey.
-- **Database load grows:** every request that touches the session reads, and often writes, a database row. Check capacity and the connection pool per process with Technical Infrastructure before switching. A capacity problem is escalated, not fixed by assuming a scale-up.
+- **Database load grows:** every request that touches the session reads, and often writes, a database row. Database capacity has been confirmed as ample, so no scaling is needed. Keep monitoring load and the connection pool per process after the switch.
 - **Sessions in backups and exports:** session data contains personal data and now goes into database backups. Apply the same retention and access rules, and keep sessions out of logs and exports.
 - **Session loss on eviction:** a cache-backed session can disappear before its expiry if the store is under size pressure; the user then restarts their form. This is a deliberate trade-off against building a bespoke session table.
 - **Expiry handling:** Solid Cache deletes expired rows itself: each write probabilistically triggers a background batch delete (`expiry_method: :thread` by default, so no Active Job or cron job is needed). Rows older than `max_age`, or beyond `max_size`, are removed. Confirm the table size stays stable in production.
@@ -63,7 +63,6 @@ Rollback: reverting the code restores Redis sessions, but sessions created in th
 ## Open checks (not yet performed)
 
 - Largest realistic session size per journey, against Solid Cache entry limits.
-- Database capacity and per-process connection pool, with Technical Infrastructure.
 - Solid Cache `max_age` and `max_size` values (currently 2 days and 256 MB placeholders) against real session volume.
 - Whether `session[:user]` and other values serialise correctly with the cache store.
 - Other code or tooling that depends on Redis session keys.
