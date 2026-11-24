@@ -33,16 +33,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_11_24_150000) do
     t.index ["key_hash"], name: "index_solid_cache_entries_on_key_hash", unique: true
   end
 
-  create_table "stored_sessions", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "sid", null: false
-    t.binary "data"
-    t.index ["created_at"], name: "index_stored_sessions_on_created_at"
-    t.index ["sid"], name: "index_stored_sessions_on_sid", unique: true
-    t.index ["updated_at"], name: "index_stored_sessions_on_updated_at"
-  end
-
   create_table "user_feedbacks", force: :cascade do |t|
     t.string "topic", null: false
     t.integer "rating", null: false
