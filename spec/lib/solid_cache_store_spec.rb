@@ -24,8 +24,9 @@ RSpec.describe "Solid Cache" do # rubocop:disable RSpec/DescribeClass
     let(:app) do
       inner = lambda do |env|
         session = env["rack.session"]
-        session[:data] ||= "x" * 10_000
-        [200, {}, [session[:data].size.to_s]]
+        session[:user] ||= User.new("publisher", "publisher")
+        session[:sign_up] ||= { "notes" => "x" * 10_000 }
+        [200, {}, [session[:sign_up]["notes"].size.to_s]]
       end
       sessions = ActionDispatch::Session::CacheStore.new(inner, key: "_dfe_session", cache: store, expire_after: 1.day)
       ActionDispatch::Cookies.new(sessions)
