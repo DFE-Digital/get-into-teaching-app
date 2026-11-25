@@ -21,7 +21,7 @@ RSpec.feature "Book a callback", type: :feature do
       last_name: "Doe",
       email: "email@address.com",
       address_telephone: "123456789",
-      phone_call_scheduled_at: "#{quota.start_at.strftime('%Y-%m-%dT%H:%M:%S')}.000Z",
+      phone_call_scheduled_at: quota.start_at.utc,
       accepted_policy_id: "123",
       talking_points: "Routes into teaching",
     }
