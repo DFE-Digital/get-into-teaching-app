@@ -446,6 +446,7 @@ GEM
     mixlib-shellout (3.2.8)
       chef-utils
     msgpack (1.8.0)
+    multi_json (1.21.1)
     multi_xml (0.6.0)
     multipart-post (2.4.1)
     mutex_m (0.3.0)
@@ -788,6 +789,7 @@ DEPENDENCIES
   logger (>= 1.5.1)
   matrix (>= 0.4.2)
   mdl
+  multi_json
   mutex_m
   net-imap
   net-pop
