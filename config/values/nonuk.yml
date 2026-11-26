@@ -1,10 +1,5 @@
 nonuk:
-# IRP
-  internationalrelocationpayment:
-    value: £10,000
-    instalment: £5,000
-    thresholdfortaxonpayments: £50,270
-# Statement of comparability  
+# Statement of comparability
   statementofcomparabilitycost: £69.60
 # Visa salary thresholds
   skilledworkervisaminsalary: £25,000

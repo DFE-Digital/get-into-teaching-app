@@ -26,7 +26,7 @@ module StructuredDataHelper
       "name": "Get Into Teaching",
       "description": "Get Into Teaching is the official UK government service that provides comprehensive information and support for individuals considering a teaching career at primary or secondary level. It offers guidance on the qualifications needed, the routes into becoming a primary or secondary school teacher, funding options, and access to one-to-one advice. Get Into Teaching aims to help people become teachers by outlining the steps involved in training and certification, while promoting teaching as a rewarding career.",
       "alternateName": "GIT",
-      "logo": "https://getintoteaching.education.gov.uk/packs/v1/static/images/logo/teaching_blue_background-b1b9e8f9c3c482b7f3d7.svg",
+      "logo": image_url("static/images/logo/teaching_blue_background.svg"),
       "parentOrganization": {
         "@type": "GovernmentOrganization",
         "sameAs": "https://www.gov.uk/government/organisations/department-for-education",
@@ -46,7 +46,7 @@ module StructuredDataHelper
   def logo_structured_data
     data = {
       url: root_url,
-      logo: asset_pack_url("static/images/logo/teaching_blue_background.svg"),
+      logo: image_url("static/images/logo/teaching_blue_background.svg"),
     }
 
     structured_data("Organization", data)
@@ -98,15 +98,15 @@ module StructuredDataHelper
   def event_image_data(event)
     images = if event.is_online
                [
-                 asset_pack_url("static/images/structured_data/git_online_1x1.jpeg"),
-                 asset_pack_url("static/images/structured_data/git_online_4x3.jpeg"),
-                 asset_pack_url("static/images/structured_data/git_online_16x9.jpeg"),
+                 image_url("static/images/structured_data/git_online_1x1.jpeg"),
+                 image_url("static/images/structured_data/git_online_4x3.jpeg"),
+                 image_url("static/images/structured_data/git_online_16x9.jpeg"),
                ]
              else
                [
-                 asset_pack_url("static/images/structured_data/git_in_person_1x1.jpeg"),
-                 asset_pack_url("static/images/structured_data/git_in_person_4x3.jpeg"),
-                 asset_pack_url("static/images/structured_data/git_in_person_16x9.jpeg"),
+                 image_url("static/images/structured_data/git_in_person_1x1.jpeg"),
+                 image_url("static/images/structured_data/git_in_person_4x3.jpeg"),
+                 image_url("static/images/structured_data/git_in_person_16x9.jpeg"),
                ]
              end
 

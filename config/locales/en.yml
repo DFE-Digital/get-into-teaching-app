@@ -50,144 +50,211 @@ en:
         name: "Primary (all subjects)"
         group: "Primary"
         sub_head: "Primary"
-        funding: ""
+        funding:
+          default: ""
       art_and_design:
         name: "Art and design"
         group: "Secondary"
         sub_head: "Art and design - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          default: "Bursaries are not available for this subject."
       biology:
         name: "Biology"
         group: "Secondary"
         sub_head: "Biology - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_biology} are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
+        funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_biology} are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
+          2025: "Bursaries of %{bursaries_postgraduate_biology} are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
+          default: "Bursaries are available for <a href=\"/life-as-a-teacher/explore-subjects/biology\">trainee biology teachers</a> if you're eligible."
       business_studies:
         name: "Business studies"
         group: "Secondary"
         sub_head: "Business - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       chemistry:
         name: "Chemistry"
         group: "Secondary"
         sub_head: "Chemistry - Secondary"
-        funding: "Scholarships of %{scholarships_chemistry} or bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you're eligible."
+        funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_chemistry_relevant} are available for trainee chemistry teachers if you're eligible."
+          2025: "Scholarships of %{scholarships_chemistry} or bursaries of %{bursaries_postgraduate_chemistry} are available for trainee chemistry teachers if you're eligible."
+          default: "Bursaries are available for trainee chemistry teachers if you're eligible."
       citizenship:
         name: "Citizenship"
         group: "Secondary"
         sub_head: "Citizenship - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_citizenship} are available for trainee citizenship teachers if you're eligible."
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       classics:
         name: "Classics"
         group: "Secondary"
         sub_head: "Classics - Secondary"
-        funding: |-
+        funding:
+          2026: "Bursaries are not available for this subject."
+          2025: |-
+            Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
 
-          Bursaries of %{bursaries_postgraduate_languagesother} may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
+            Your course provider will confirm if this applies.
+          default: |-
+            Bursaries may be available for trainee teachers when more than 50% of the course content covers an ancient language, if you're eligible.
 
-          Your course provider will confirm if this applies.
+            Your course provider will confirm if this applies.
       communication_and_media_studies:
         name: "Communication and media studies"
         group: "Secondary"
         sub_head: "Communication and media studies - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       computing:
         name: "Computing"
         group: "Secondary"
         sub_head: "Computing - Secondary"
-        funding: "Scholarships of %{scholarships_computing} or bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you're eligible."
+        funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_computing_relevant} are available for trainee computing teachers if you're eligible."
+          2025: "Scholarships of %{scholarships_computing} or bursaries of %{bursaries_postgraduate_computing} are available for trainee computing teachers if you're eligible."
+          default: "Bursaries are available for trainee computing teachers if you're eligible."
       dance:
         name: "Dance"
         group: "Secondary"
         sub_head: "Dance - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       design_and_technology:
         name: "Design and technology"
         group: "Secondary"
         sub_head: "Design and technology - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_designandtechnology} are available for trainee design and technology teachers if you're eligible."
+        funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_design_and_technology_relevant} are available for trainee design and technology teachers if you're eligible."
+          2025: "Bursaries of %{bursaries_postgraduate_designandtechnology} are available for trainee design and technology teachers if you're eligible."
+          default: "Bursaries are available for trainee design and technology teachers if you're eligible."
       drama:
         name: "Drama"
         group: "Secondary"
         sub_head: "Drama - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       economics:
         name: "Economics"
         group: "Secondary"
         sub_head: "Economics - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       english:
         name: "English"
         group: "Secondary"
         sub_head: "English - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       english_as_a_second_or_other_language:
         name: "English as a second or other language"
         group: "Secondary"
         sub_head: "English as a second or other language - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       geography:
         name: "Geography"
         group: "Secondary"
         sub_head: "Geography - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_geography} are available for trainee geography teachers if you're eligible."
+        funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_geography} are available for trainee geography teachers if you're eligible."
+          2025: "Bursaries of %{bursaries_postgraduate_geography} are available for trainee geography teachers if you're eligible."
+          default: "Bursaries are available for trainee geography teachers if you're eligible."
       health_and_social_care:
         name: "Health and social care"
         group: "Secondary"
         sub_head: "Health and social care - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       history:
         name: "History"
         group: "Secondary"
         sub_head: "History - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       languages:
         name: "Languages (including ancient languages)"
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
-        funding: |-
-          Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers if you're eligible.<br><br>
+        funding:
+          2026: |-
+            Bursaries of %{bursaries_2026_postgraduate_languages_other} are available for all trainee language teachers if you’re eligible. These bursaries include ancient languages.
+          2025: |-
+            Scholarships of %{scholarships_languagesfrenchgermanspanish} are available for trainee French, German, and Spanish language teachers if you're eligible.<br><br>
 
-          Bursaries of %{bursaries_postgraduate_languagesother} are available for all trainee language teachers if you're eligible. These bursaries include ancient languages.
+            Bursaries of %{bursaries_postgraduate_languagesother} are available for all trainee language teachers if you're eligible. These bursaries include ancient languages.
+          default: "Bursaries are available for trainee French, German, and Spanish language teachers if you're eligible."
       maths:
         name: "Maths"
         group: "Secondary"
         sub_head: "Maths - Secondary"
-        funding: "Bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you're eligible."
+        funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_maths_relevant} are available for trainee maths teachers if you're eligible."
+          2025: "Bursaries of %{bursaries_postgraduate_maths} are available for trainee maths teachers if you're eligible."
+          default: "Bursaries are available for trainee maths teachers if you're eligible."
       music:
         name: "Music"
         group: "Secondary"
         sub_head: "Music - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_music} are available for trainee music teachers if you're eligible."
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       physical_group:
         name: "Physical education"
         group: "Secondary"
         sub_head: "Physical education - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       physics:
         name: "Physics"
         group: "Secondary"
         sub_head: "Physics - Secondary"
-        funding: "Scholarships of %{scholarships_physics} or bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers if you're eligible."
+        funding:
+          2026: "Bursaries of up to %{bursaries_2026_postgraduate_physics_relevant} are available for trainee physics teachers if you're eligible."
+          2025: "Scholarships of %{scholarships_physics} or bursaries of %{bursaries_postgraduate_physics} are available for trainee physics teachers if you're eligible."
+          default: "Bursaries are available for trainee physics teachers if you're eligible."
       psychology:
         name: "Psychology"
         group: "Secondary"
         sub_head: "Psychology - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       religious_group:
         name: "Religious education"
         group: "Secondary"
         sub_head: "Religious education - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2026: "Bursaries of %{bursaries_2026_postgraduate_religious_education} are available for RE teachers if you're eligible."
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       science:
         name: "Science"
         group: "Secondary"
         sub_head: "Science - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
       social_sciences:
         name: "Social sciences"
         group: "Secondary"
         sub_head: "Social sciences - Secondary"
-        funding: "Scholarships or bursaries are not available for this subject."
+        funding:
+          2025: "Scholarships or bursaries are not available for this subject."
+          default: "Bursaries are not available for this subject."
 
   event_types:
     222750012:
@@ -220,14 +287,6 @@ en:
       has_gcse_maths_and_english_id:
         title: "Do you have grade 4 (C) or above in maths and English GCSE, or equivalent?"
         change: "if you have grade 4 (C) or above in maths and English GCSE, or equivalent"
-    gcse_science:
-      has_gcse_science_id:
-        title: "Do you have science GCSE Grade 4 or above?"
-        change: "if you have science GCSE Grade 4 or above"
-    has_teacher_id:
-      has_id:
-        title: "Do you have your previous teacher reference number?"
-        change: "if you have a previous teacher reference number"
     degree_status:
       degree_status_id:
         title: "Do you have a degree?"
@@ -261,34 +320,18 @@ en:
       address_telephone:
         title: "Telephone"
         change: "your telephone"
-    previous_teacher_id:
-      teacher_id:
-        title: "What is your previous teacher reference number?"
-        change: "your previous teacher reference number"
-    paid_teaching_experience_in_uk:
-      has_paid_experience_in_uk:
-        title: "Do you have paid teaching experience in the UK?"
-        change: "if you have paid teaching experience in the UK"
-    train_to_teach_in_uk:
-      train_to_teach_in_uk:
-        title: "Did you train to teach in the UK?"
-        change: "if you have trained to teach in the UK"
     retake_gcse_maths_english:
       planning_to_retake_gcse_maths_and_english_id:
         title: "Are you planning to retake your English or maths GCSEs?"
         change: "if you are planning to retake your English or maths GCSEs"
-    retake_gcse_science:
-      planning_to_retake_gcse_science_id:
-        title: "Are you planning to retake your science GCSE?"
-        change: "if you have planning to retake your science GCSE"
     returning_teacher:
       returning_to_teaching:
         title: "Are you qualified to teach?"
         change: "if you are qualified to teach"
     stage_interested_teaching:
       preferred_education_phase_id:
-        title: "Which stage are you most interested in teaching?"
-        change: "the stage you are most interested in teaching"
+        title: "Are you interested in becoming a secondary school teacher?"
+        change: "whether you are interested in becoming a secondary school teacher"
       preferred_teaching_subject_id:
         title: "Which subject would you like to teach if you return to teaching?"
         change: "the subject you would like to teach if you return to teaching"
@@ -296,14 +339,6 @@ en:
       degree_status_id:
         title: "In which year are you studying?"
         change: "the year in which you are studying"
-    stage_trained:
-      stage_taught_id:
-        title: "Which stage did you train to teach?"
-        change: "the stage you trained to teach"
-    stage_taught:
-      stage_taught_id:
-        title: "Which stage did you previously teach?"
-        change: "the stage you previously taught"
     start_teacher_training:
       initial_teacher_training_year_id:
         title: "When do you want to start teacher training?"
@@ -312,18 +347,6 @@ en:
       preferred_teaching_subject_id:
         title: "Which subject are you interested in teaching?"
         change: "which subject you are interested in teaching"
-    subject_like_to_teach:
-      preferred_teaching_subject_id:
-        title: "Which subject would you like to teach if you return to teaching?"
-        change: "the subject you would like to teach if you return to teaching"
-    subject_taught:
-      subject_taught_id:
-        title: "Which main subject did you previously teach?"
-        change: "the main subject you previously taught"
-    subject_trained:
-      subject_taught_id:
-        title: "Which subject did you train to teach?"
-        change: "the subject you trained to teach"
     citizenship:
       citizenship:
         title: "Are you a UK citizen?"
@@ -366,6 +389,49 @@ en:
       situation:
         title: "How would you describe your current situation?"
         change: "your current situation"
+
+    provider_events:
+      email:
+        provider_contact_email:
+          title: "What is your email address?"
+          change: "your email"
+      event_name:
+        event_name:
+          title: "What is the name of your event?"
+      event_description:
+        description:
+          title: "Describe your event"
+      organisation_name:
+        organisation_name:
+          title: "What is the name of your organisation?"
+      event_website:
+        event_website:
+          title: "Provide your website URL"
+      target_audience:
+        target_audience:
+          title: "Who is this event for?"
+      event_date:
+        event_date:
+          title: "What day is your event?"
+      event_times:
+        event_times:
+          title: "What time does your event start and end?"
+      event_type:
+        event_type:
+          title: "What type of event is this?"
+      online_postcode:
+        online_postcode:
+          title: "Provide a postcode for your event"
+      in_person_location:
+        venue:
+          title: "Where will your event be?"
+      new_venue:
+        venue:
+          title: "Where will your event be?"
+      registration_details:
+        registration_details:
+          title: "How will people register for your event?"
+
 
   activerecord:
     errors:
@@ -426,14 +492,6 @@ en:
           attributes:
             degree_country:
               invalid_type: "The country you have entered is not valid - you need to choose one from the list"
-        teacher_training_adviser/steps/subject_taught:
-          attributes:
-            subject_taught_id:
-              invalid_type: "The subject you have entered is not valid - you need to choose one from the subject list"
-        teacher_training_adviser/steps/subject_trained:
-          attributes:
-            subject_taught_id:
-              invalid_type: "The subject you have entered is not valid - you need to choose one from the subject list"
         teacher_training_adviser/steps/what_degree_class:
           attributes:
             uk_degree_grade_id:
@@ -460,10 +518,6 @@ en:
           attributes:
             address_postcode:
               invalid: "Enter a real postcode"
-        teacher_training_adviser/steps/subject_like_to_teach:
-          attributes:
-            preferred_teaching_subject_id:
-              inclusion: "Choose a subject or other"
         teacher_training_adviser/steps/subject_interested_teaching:
           attributes:
             preferred_teaching_subject_id:
@@ -479,19 +533,11 @@ en:
         teacher_training_adviser/steps/stage_interested_teaching:
           attributes:
             preferred_education_phase_id:
-              invalid_type: "You must select either primary or secondary"
-        teacher_training_adviser/steps/stage_taught:
-          attributes:
-            stage_taught_id:
-              invalid_type: "You must select either primary or secondary"
+              invalid_type: "You must select an option"
         teacher_training_adviser/steps/returning_teacher:
           attributes:
             type_id:
               invalid_type: "Select yes if you are returning to teaching"
-        teacher_training_adviser/steps/retake_gcse_science:
-          attributes:
-            planning_to_retake_gcse_science_id:
-              invalid_type: "Select yes if you are planning to retake Science GCSE or equivalent"
         teacher_training_adviser/steps/retake_gcse_maths_english:
           attributes:
             planning_to_retake_gcse_maths_and_english_id:
@@ -506,14 +552,6 @@ en:
           attributes:
             address_telephone:
               <<: *telephone_errors
-        teacher_training_adviser/steps/has_teacher_id:
-          attributes:
-            has_id:
-              inclusion: "Select yes if you have a previous teacher reference number"
-        teacher_training_adviser/steps/gcse_science:
-          attributes:
-            has_gcse_science_id:
-              invalid_type: "Select yes if you have Science GCSE or equivalent"
         teacher_training_adviser/steps/gcse_maths_english:
           attributes:
             has_gcse_maths_and_english_id:
@@ -653,23 +691,33 @@ en:
         internal/event:
           attributes:
             name:
-              blank: Enter a name
+              blank: "Enter event name"
+              too_long: "Event name must be %{count} characters or less"
             readable_id:
               blank: Enter a partial URL
               invalid: Partial URL can only contain alphanumeric characters, hyphens, and underscores. Must begin and end with an alphanumeric character.
             summary:
               blank: Enter a summary
             description:
-              blank: Enter a description
+              blank: "Enter event description"
+              too_long: "Event description must be %{count} characters or less"
+              use_fewer_words: "Event description must be %{count} words or less"
             provider_contact_email:
               blank: Enter a provider email address
               invalid: Enter a valid email address
+              too_long: "Provider email address must be 100 characters or less"
             provider_organiser:
-              blank: Enter a provider organiser
+              blank: "Enter a provider organiser"
+              too_long: "Provider organiser must be %{count} characters or less"
             provider_target_audience:
-              blank: Enter a provider target audience
+              blank: "Enter a provider target audience"
+              too_long: "Provider target audience must be %{count} characters or less"
             provider_website_url:
-              blank: Enter a provider website/registration link
+              blank: "Enter a provider website link"
+              too_long: "Provider website link must be 300 characters or less"
+            registration_email_link:
+              blank: "Enter a registration website/email link"
+              too_long: "Registration website/email must be no more than 100 characters for an email or 300 characters for a website"
             is_online:
               inclusion: Choose whether the event is online
             start_at:
@@ -683,6 +731,86 @@ en:
               blank: Enter a venue name
             address_postcode:
               blank: Enter a postcode
+
+        provider_events/steps/email:
+          attributes:
+            provider_contact_email:
+              blank: "Enter your email address"
+              invalid: "Enter an email address in the correct format, like name@example.com"
+              too_long: "Email must be 100 characters or less"
+        provider_events/steps/event_name:
+          attributes:
+            event_name:
+              blank: "Enter event name"
+              too_long: "Event name must be %{count} characters or less"
+        provider_events/steps/event_description:
+          attributes:
+            description:
+              blank: "Enter event description"
+              too_long: "Event description must be %{count} characters or less"
+              use_fewer_words: "Event description must be %{count} words or less"
+        provider_events/steps/organisation_name:
+          attributes:
+            organisation_name:
+              blank: "Enter organisation name"
+              too_long: "Organisation name must be %{count} characters or less"
+        provider_events/steps/event_website:
+          attributes:
+            event_website:
+              blank: "Enter website URL"
+              too_long: "Website URL must be 300 characters or less"
+              url: "Website URL must be valid and start with https:// or http://"
+        provider_events/steps/target_audience:
+          attributes:
+            target_audience:
+              blank: "Enter your target audience"
+              too_long: "Target audience must be %{count} characters or less."
+        provider_events/steps/event_date:
+          attributes:
+            event_date:
+              blank: "Enter the event date"
+              greater_than_or_equal_to: "The event date must not be in the past"
+        provider_events/steps/event_times:
+          attributes:
+            start_time:
+              blank: "Enter the start time"
+            end_time:
+              blank: "Enter the end time"
+              greater_than: "The end time must be after the start time"
+        provider_events/steps/event_type:
+          attributes:
+            event_type:
+              blank: "Select if your event is in-person or online"
+        provider_events/steps/online_postcode:
+          attributes:
+            online_postcode:
+              blank: "Enter postcode"
+              invalid: "Enter a full UK postcode"
+        provider_events/steps/in_person_location:
+          attributes:
+            location_option:
+              blank: "Search for an existing venue or add a new venue"
+            building_id:
+              blank: "Search for an existing building"
+        provider_events/steps/new_venue:
+          attributes:
+            venue_name:
+              blank: "Enter venue name"
+            address_postcode:
+              blank: "Enter postcode"
+              invalid: "Enter a full UK postcode"
+        provider_events/steps/registration_details:
+          attributes:
+            registration_option:
+              blank: "Select if people will register through email or a website"
+            registration_email:
+              blank: "Enter email"
+              invalid: "Enter an email address in the correct format, like name@example.com"
+              too_long: "Email must be 100 characters or less"
+            registration_website:
+              blank: "Enter website URL"
+              too_long: "Website URL must be 300 characters or less"
+              url: "Website URL must be valid and start with https:// or http://"
 
   helpers:
     answer:
@@ -745,7 +873,7 @@ en:
         degree_country:
           degree_country:
             72f5c2e6-74f9-e811-a97a-000d3a2760f2: "The UK"
-            6f9e7b81-e44d-f011-877a-00224886d23e: "Another Country"
+            6f9e7b81-e44d-f011-877a-00224886d23e: "Another country"
         location:
           location:
             222750000: "In the UK"
@@ -776,6 +904,20 @@ en:
             222750005: "Teaching assistant or unqualified teacher in a school"
             222750006: "Not currently working"
 
+      provider_events_steps:
+        event_type:
+          event_type:
+            in_person: "In-person"
+            online: "Online"
+        in_person_location:
+          location_option:
+            existing: "Search existing venues"
+            new: "Add a new venue"
+        registration_details:
+          registration_option:
+            email: "By email"
+            website: "Through a website"
+
     label:
       wizard_steps_authenticate:
         timed_one_time_password: "Enter your verification code:"
@@ -792,8 +934,6 @@ en:
         time_zone: "Your time zone"
       teacher_training_adviser_steps_overseas_telephone:
         address_telephone: "Overseas telephone number (optional)"
-      teacher_training_adviser_steps_previous_teacher_id:
-        teacher_id: "Teacher reference number (optional)"
       teacher_training_adviser_steps_what_subject_degree:
         degree_subject: "What subject is your degree?"
         degree_subject_nojs: "What subject is your degree?"
@@ -801,13 +941,6 @@ en:
         uk_degree_grade_id:
           graduated: "What grade is your degree?"
           studying: "What degree grade are you predicted to get?"
-
-      teacher_training_adviser_steps_subject_like_to_teach:
-        preferred_teaching_subject_id: "Which subject would you like to teach if you return to teaching?"
-      teacher_training_adviser_steps_subject_taught:
-        subject_taught_id: "Which main subject did you previously teach?"
-      teacher_training_adviser_steps_subject_trained:
-        subject_taught_id: "Which subject did you train to teach?"
       teacher_training_adviser_steps_subject_interested_teaching:
         preferred_teaching_subject_id: "Select the subject you're most interested in teaching"
       teacher_training_adviser_steps_citizenship:
@@ -828,26 +961,10 @@ en:
         situation: "How would you describe your current situation?"
       teacher_training_adviser_steps_stage_interested_teaching:
         preferred_education_phase_id_options:
-          222750000: "Primary"
-          222750001: "Secondary"
-      teacher_training_adviser_steps_stage_trained:
-        stage_taught_id_options:
-          222750000: "Primary"
-          222750001: "Secondary"
-      teacher_training_adviser_steps_stage_taught:
-        stage_taught_id_options:
-          222750000: "Primary"
-          222750001: "Secondary"
-      teacher_training_adviser_steps_gcse_science:
-        has_gcse_science_id_options:
-          222750000: "Yes"
-          222750001: "No"
+          222750000: "No"
+          222750001: "Yes"
       teacher_training_adviser_steps_retake_gcse_maths_english:
         planning_to_retake_gcse_maths_and_english_id_options:
-          222750000: "Yes"
-          222750001: "No"
-      teacher_training_adviser_steps_retake_gcse_science:
-        planning_to_retake_gcse_science_id_options:
           222750000: "Yes"
           222750001: "No"
       teacher_training_adviser_steps_gcse_maths_english:
@@ -870,7 +987,9 @@ en:
       teacher_training_adviser_steps_no_degree:
         title: "You need to have or be studying towards a degree to sign up for an adviser"
       teacher_training_adviser_steps_not_eligible:
-        title: "Sorry, you are not eligible for this service"
+        title: "You cannot sign up for an adviser as a qualified teacher"
+      teacher_training_adviser_steps_not_eligible2:
+        title: "You must be interested in teaching in a secondary school to sign up for an adviser"
       teacher_training_adviser_steps_required_degree_class:
         title_predicted: "Your predicted degree grade must be a 2:2 or higher to get an adviser"
         title_achieved: "Your achieved degree grade must be a 2:2 or higher to get an adviser"
@@ -934,6 +1053,49 @@ en:
       mailing_list_steps_postcode:
         address_postcode: What's your UK postcode? (optional)
 
+      provider_events_steps_email:
+        provider_contact_email: "What is your email address?"
+      provider_events_steps_event_name:
+        event_name: "What is the name of your event?"
+      provider_events_steps_event_description:
+        description: "Describe your event"
+      provider_events_steps_organisation_name:
+        organisation_name: "What is the name of your organisation?"
+      provider_events_steps_event_website:
+        event_website: "Provide your website URL"
+      provider_events_steps_target_audience:
+        target_audience: "Who is this event for?"
+      provider_events_steps_event_date:
+        event_date: "What day is your event?"
+      provider_events_steps_event_times:
+        title: "What time does your event start and end?"
+        start_time: "Start at"
+        end_time: "End at"
+      provider_events_steps_event_type:
+        event_type: "What type of event is this?"
+      provider_events_steps_online_postcode:
+        online_postcode: "Provide a postcode for your event"
+      provider_events_steps_in_person_location:
+        location_option: "Where will your event be?"
+        building_id: "Search for existing buildings"
+      provider_events_steps_new_venue:
+        title: "Venue details"
+        venue_name: "Venue name"
+        address_line_1: "Address line 1"
+        address_line_2: "Address line 2"
+        address_line_3: "Address line 3"
+        address_city: "Town or city"
+        address_postcode: "Postcode"
+      provider_events_steps_registration_details:
+        registration_option: "How will people register for your event?"
+        registration_email: "Email address"
+        registration_website: "Website URL"
+      provider_events_steps_review_answers:
+        title: "Check your answers before you submit your event details"
+        event_details: "Event details"
+        venue_details: "Venue details"
+        registration_process: "Registration process"
+
     hint:
       events_steps_accessibility_support:
         accessibility_support: |-
@@ -984,10 +1146,6 @@ en:
         situation: "Select the option that best describes your situation."
       teacher_training_adviser_steps_start_teacher_training:
         initial_teacher_training_year_id: "Choose the year you would like to start your teacher training."
-      teacher_training_adviser_steps_stage_interested_teaching:
-        preferred_education_phase_id: "Select a stage, even if you're not sure yet. We try and match you with an adviser based on the stage you'd like to teach."
-      teacher_training_adviser_steps_stage_taught:
-        stage_taught_id:
       teacher_training_adviser_steps_returning_teacher:
         type_id: "Only select 'yes' if you have English qualified teacher status (QTS)."
       teacher_training_adviser_steps_degree_status:
@@ -1017,7 +1175,34 @@ en:
       teacher_training_adviser_steps_what_degree_class:
         uk_degree_grade_id:
           studying: "To get an adviser, your predicted degree grade must be a 2:2 or higher."
-          graduated: "To get an adviser, your batchelor's degree grade must be a 2:2 or higher."
+          graduated: "To get an adviser, your bachelor's degree grade must be a 2:2 or higher."
+
+      provider_events_steps_email:
+        provider_contact_email: "We will use this email address to contact you about your event, and it will show on the event page."
+      provider_events_steps_event_name:
+        event_name: "Your chosen event name will show on the event page."
+      provider_events_steps_event_description:
+        description: "This description will show on the event page."
+      provider_events_steps_organisation_name:
+        organisation_name: "Your organisation name will show on the event page."
+      provider_events_steps_event_website:
+        event_website: "For example, your website's home page. This URL will show on your event listing."
+      provider_events_steps_target_audience:
+        target_audience: "Describe the target audience for your event. This information will show on the event page."
+      provider_events_steps_event_date:
+        event_date: "For example, 01/07/2026. You can also use the calendar in the box below to select your event date."
+      provider_events_steps_event_times:
+        start_time: "For example, 09:30 or 14:20."
+        end_time: "For example, 09:30 or 14:20."
+      provider_events_steps_online_postcode:
+        online_postcode: "This should be your organisation's postcode."
+        online_postcode_extra: "This helps people in your target area find your event, even when it's online."
+      provider_events_steps_in_person_location:
+        location_option: "This information will help people find your event."
+      provider_events_steps_registration_details:
+        registration_email: "Enter the email address you want people to use to sign up."
+        registration_website: "Enter the website address you want people to use to sign up."
+
     legend:
       teacher_training_adviser_feedback:
         successful_visit: "Did you achieve what you wanted from your visit?"
@@ -1032,33 +1217,19 @@ en:
       teacher_training_adviser_steps_stage_of_degree:
         degree_status_id: "In which year are you studying?"
       teacher_training_adviser_steps_stage_interested_teaching:
-        preferred_education_phase_id: "Which stage are you most interested in teaching?"
-      teacher_training_adviser_steps_stage_trained:
-        stage_taught_id: "Which stage did you train to teach?"
-      teacher_training_adviser_steps_stage_taught:
-        stage_taught_id: "Which stage did you previously teach?"
-      teacher_training_adviser_steps_gcse_science:
-        has_gcse_science_id: "Do you have grade 4 (C) or above in GCSE science, or an equivalent qualification?"
+        preferred_education_phase_id: "Are you interested in becoming a secondary school teacher?"
       teacher_training_adviser_steps_retake_gcse_maths_english:
         planning_to_retake_gcse_maths_and_english_id: "Are you planning to retake either English or maths (or both) GCSEs, or equivalent qualifications?"
-      teacher_training_adviser_steps_retake_gcse_science:
-        planning_to_retake_gcse_science_id: "Are you planning to retake your science GCSE?"
       teacher_training_adviser_steps_gcse_maths_english:
         has_gcse_maths_and_english_id: "Do you have grade 4 (C) or above in English and maths GCSEs, or equivalent qualifications?"
       teacher_training_adviser_steps_returning_teacher:
         type_id: "Are you qualified to teach?"
-      teacher_training_adviser_steps_has_teacher_id:
-        has_id: "Do you have a teacher reference number (TRN)?"
-      teacher_training_adviser_steps_paid_teaching_experience_in_uk:
-        has_paid_experience_in_uk: "Do you have paid teaching experience in the UK of at least one term?"
       teacher_training_adviser_steps_degree_status:
         degree_status_id: "Do you have a degree?"
       teacher_training_adviser_steps_start_teacher_training:
         initial_teacher_training_year_id: "When do you want to start your teacher training?"
       teacher_training_adviser_steps_degree_country:
         degree_country: "Which country is your degree from?"
-      teacher_training_adviser_steps_train_to_teach_in_uk:
-        train_to_teach_in_uk: "Did you train to teach in the UK?"
       teacher_training_adviser_steps_uk_telephone:
         fieldset: "What's your telephone number?"
       teacher_training_adviser_steps_overseas_telephone:
@@ -1067,8 +1238,6 @@ en:
         fieldset: "Choose a time"
       teacher_training_adviser_steps_overseas_time_zone:
         fieldset: "You need to speak to our team"
-      teacher_training_adviser_steps_previous_teacher_id:
-        fieldset: "What is your teacher reference number (TRN)?"
       teacher_training_adviser_steps_uk_callback:
         fieldset: "You need to speak to our team"
 

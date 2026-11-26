@@ -21,12 +21,15 @@ cta_arrow_link:
   loans:
     link_target: "https://www.gov.uk/student-finance"
     link_text: "Check your eligibility and apply for student loans"
-  bursaries:
-    link_target: "/funding-and-support/scholarships-and-bursaries"
-    link_text: "Learn more about bursaries and scholarships"
   salaried:
     link_target: "/funding-and-support/salaried-teacher-training"
     link_text: "Find out more about salaried teacher training"
+timed_financial_content:
+  bursaries_and_scholarships:
+    default:
+      partial: "content/non-uk-teachers/fees-and-funding-for-non-uk-trainees/bursaries"
+    2025:
+      partial: "content/non-uk-teachers/fees-and-funding-for-non-uk-trainees/bursaries_and_scholarships"
 ---
 
 Most non-UK citizens will not be eligible for financial support from the UK government to help with teacher training.
@@ -70,17 +73,7 @@ To start your application for student loans, you need to have chosen your teache
 
 $loans$
 
-### Bursaries and scholarships
-
-Bursaries and scholarships are tax-free payments from the UK government that are paid by your initial teacher training provider. If you are a non-UK citizen who has permission to [live permanently in the UK](https://www.gov.uk/browse/visas-immigration/settle-in-the-uk) and are eligible for student finance, you may be able to get a bursary or scholarship. You do not have to pay back a bursary or scholarship. 
-
-If you are eligible for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
-
-The first instalment of a bursary or scholarship is usually made by late October but you should confirm payment dates with your chosen provider.
-
-You do not need to pay an agent or any other third party to access a bursary or scholarship. Any agency or person offering to help you access a bursary may be fraudulent.
-
-$bursaries$ 
+$bursaries_and_scholarships$ 
 
 ### Salaried teacher training courses
 

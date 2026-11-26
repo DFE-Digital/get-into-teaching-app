@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   class InvalidTemplateName < RuntimeError; end
   class InvalidPrivacyPolicy < RuntimeError; end
 
-  before_action :init_funding_widget, only: %i[scholarships_and_bursaries scholarships_and_bursaries_search]
+  before_action :init_funding_widget, only: %i[bursaries]
 
   MISSING_TEMPLATE_EXCEPTIONS = [
     ActionView::MissingTemplate,
@@ -13,7 +13,10 @@ class PagesController < ApplicationController
   PRIVACY_POLICY_ID_FILTER = %r{^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$}
 
   caches_page :cookies
-  caches_page :show
+  # Pages that use a runtime component (see RUNTIME_COMPONENT_TYPES) must render
+  # on every request, so they cannot be page-cached (a cached static file would
+  # freeze the component and ignore the ?now=/?branch= overrides).
+  caches_page :show, unless: :page_uses_runtime_component?
 
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
   rescue_from InvalidPrivacyPolicy, with: :rescue_invalid_privacy_policy
@@ -72,12 +75,8 @@ class PagesController < ApplicationController
     render_page("events/what-happens-at-events-transcript")
   end
 
-  def scholarships_and_bursaries
-    render_page("funding-and-support/scholarships-and-bursaries")
-  end
-
-  def scholarships_and_bursaries_search
-    render_page("funding-and-support/scholarships-and-bursaries-search")
+  def bursaries
+    render_page("funding-and-support/bursaries")
   end
 
   def authenticate?
@@ -121,6 +120,16 @@ private
 
   def funding_widget_params
     params.require(:funding_widget).permit(:subject)
+  end
+
+  def page_uses_runtime_component?
+    return false unless @page
+
+    return true if @page.frontmatter.respond_to?(:nocache) && @page.frontmatter.nocache
+
+    @page.frontmatter.to_h.keys.map(&:to_s).intersect?(
+      TemplateHandlers::Markdown::RUNTIME_COMPONENT_TYPES,
+    )
   end
 
   def page_layout

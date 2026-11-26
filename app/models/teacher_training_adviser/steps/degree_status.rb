@@ -57,10 +57,6 @@ module TeacherTrainingAdviser::Steps
       end
     end
 
-    def skipped?
-      other_step(:returning_teacher).returning_to_teaching
-    end
-
     def has_degree?
       degree_status_id == HAS_DEGREE
     end

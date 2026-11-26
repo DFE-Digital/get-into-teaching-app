@@ -1,11 +1,24 @@
 ---
 title: Become a design and technology teacher
 subject: design and technology
-title_paragraph: |-
-  <p>
-  As a design and technology teacher, you'll empower pupils to turn their ideas into reality. You'll help pupils to understand how things work, why they matter, and how they could be improved.</p>
-  <p>
-  Tax-free bursaries of $bursaries_postgraduate_designandtechnology$ are available for eligible trainee design and technology teachers.</p>
+timed_financial_content:
+  title_paragraph:
+    default:
+      text: |-
+        <p>
+        As a design and technology teacher, you'll empower pupils to turn their ideas into reality. You'll help pupils to understand how things work, why they matter, and how they could be improved.</p>
+    2025:
+      text: |-
+        <p>
+        As a design and technology teacher, you'll empower pupils to turn their ideas into reality. You'll help pupils to understand how things work, why they matter, and how they could be improved.</p>
+        <p>
+        Tax-free bursaries of $bursaries_postgraduate_designandtechnology$ are available for eligible trainee design and technology teachers.</p>
+    2026:
+      text: |-
+        <p>
+        As a design and technology teacher, you'll empower pupils to turn their ideas into reality. You'll help pupils to understand how things work, why they matter, and how they could be improved.</p>
+        <p>
+        Tax-free bursaries of up to $bursaries_2026_postgraduate_design_and_technology_relevant$ are available for eligible trainee design and technology teachers.</p>
 description: |-
    Find out how to become a design and technology teacher including what you'll be teaching and what funding is available to help you train.
 layout: "layouts/minimal"

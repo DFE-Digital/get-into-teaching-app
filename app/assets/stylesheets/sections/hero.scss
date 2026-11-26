@@ -1,0 +1,513 @@
+// stylelint-disable no-duplicate-selectors
+
+@use 'sass-mq/mq' as *;
+
+// layout, mobile-first
+$mobile-cutoff: 800px;
+
+// fallback styles (IE)
+.hero {
+  &__title {
+    display: block;
+    max-width: 90%;
+    padding-top: 3em;
+
+    @include mq($from: tablet) {
+      display: inline-block;
+      width: 45%;
+    }
+
+    // undo
+    @supports (display: grid) {
+      display: block;
+      width: initial;
+      max-width: initial;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    width: 90%;
+    margin: 0 2em 4em 1em;
+
+    @include mq($from: tablet) {
+      display: inline-block;
+      max-width: 45%;
+    }
+
+    // undo
+    @supports (display: grid) {
+      display: block;
+      max-width: initial;
+      margin: initial;
+      width: initial;
+    }
+  }
+
+  > picture {
+    float: right;
+    max-width: 50%;
+    display: none;
+
+    @include mq($from: tablet) {
+      display: block;
+    }
+
+    // undo
+    @supports (display: grid) {
+      float: none;
+      max-width: initial;
+      display: block;
+    }
+  }
+}
+
+// grid-specific
+.hero {
+  $title-overlap-img: 4em;
+
+  @supports (display: grid) {
+    display: grid;
+
+    grid-template-columns: 3em repeat(2, 1fr) 2em;
+    grid-template-rows:
+      8em $title-overlap-img repeat(
+        2,
+        minmax(1em, max-content)
+      );
+
+    &__title {
+      grid-area: 2 / 1 / 4 / 4;
+      align-self: flex-end;
+    }
+
+    &__subtitle,
+    &__content,
+    &__paragraph {
+      grid-area: 4 / 1 / 5 / 5;
+      padding: 0 2em;
+      margin-top: 2em;
+    }
+
+    @include mq($until: tablet) {
+      &.content-wide {
+        .hero__title {
+          grid-column-end: -1;
+          text-align: center;
+        }
+      }
+
+      &__paragraph {
+        padding: 0 1.5em;
+      }
+    }
+
+    &__subtitle {
+      align-items: center;
+      margin: 0 auto 2em 1.5em;
+
+      @include mq($from: tablet) {
+        margin: 1em 2em .5em;
+      }
+
+      &__button {
+        @include button;
+        margin-top: 1.5em;
+        display: inline-block;
+      }
+    }
+
+    > picture {
+      min-height: 10em;
+      grid-area: -5 / -4 / -3 / -1;
+    }
+
+    @include mq($from: tablet) {
+      grid-template-columns:
+        repeat(3, minmax(100px, 1fr)) $title-overlap-img repeat(
+          4,
+          minmax(100px, 1fr)
+        );
+      grid-template-rows: repeat(5, fit-content(0)) 3em;
+
+      &__title {
+        grid-area: 3 / 1 / 5 / 5;
+      }
+
+      &__subtitle {
+        grid-area: 5 / 1 / 7 / 4;
+      }
+
+      &__content {
+        grid-area: 5 / 1 / 7 / 4;
+      }
+
+      &__paragraph {
+        grid-area: 5 / 1 / 6 / 4;
+      }
+
+      > picture {
+        grid-area: -6 / -6 / -1 / -1;
+      }
+
+      &.content-wide {
+        .hero__title {
+          grid-area: 3 / 1 / 5 / 7;
+        }
+
+        .hero__subtitle {
+          grid-area: 5 / 1 / 7 / 6;
+        }
+
+        picture {
+          grid-area: -6 / -4 / -1 / -1;
+        }
+      }
+    }
+
+    @include mq($from: wide) {
+      &__content {
+        grid-area: 5 / 2 / 7 / 4;
+      }
+    }
+
+    &.content-wide {
+      .hero__title {
+        font-weight: 700;
+
+        h1 {
+          padding-bottom: 0.75rem;
+          margin-bottom: 0.35rem;
+
+          @include mq($until: tablet) {
+            font-size: 2.5rem;
+          }
+
+          @include mq($from: tablet) {
+            font-size: 4.5rem;
+          }
+
+          @include mq($from: desktop) {
+            font-size: 5.25rem;
+          }
+
+          @include mq($from: wide) {
+            font-size: 6rem;
+          }
+        }
+      }
+
+      .hero__subtitle {
+        color: $white;
+        font-weight: 500;
+        margin-bottom: 4em;
+        margin-top: 0;
+
+        @include mq($until: tablet) {
+          margin-left: 0;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        @include mq($from: tablet) {
+          margin-left: 1em;
+        }
+
+        @include mq($from: desktop) {
+          margin-left: 1.5em;
+        }
+
+        @include mq($from: wide) {
+          margin-left: 2em;
+        }
+      }
+
+      picture {
+        @include mq($until: tablet) {
+          grid-column-start: -5;
+        }
+
+        img {
+          object-fit: contain;
+          margin-right: auto;
+          object-position: 50% 30%;
+        }
+      }
+    }
+  }
+}
+
+// styles
+.hero {
+  background-color: $grey;
+  overflow: hidden;
+
+  &.white {
+    background-color: $white;
+  }
+
+  &.yellow {
+    background-color: $yellow-dark;
+  }
+
+  &.gitpurple {
+    background-color: $gitpurple;
+
+    .hero__paragraph {
+      color: $white;
+    }
+  }
+
+  &__title {
+    z-index: 20;
+  }
+
+  &__paragraph {
+    line-height: 1.5;
+  }
+
+  &__subtitle {
+    div {
+      @include font-size("small");
+      font-weight: 700;
+
+      @include mq($from: tablet) {
+        @include font-size("medium");
+        font-weight: 700;
+      }
+    }
+  }
+
+  > picture {
+    height: 100%;
+    width: 100%;
+
+    img {
+      object-fit: cover;
+      object-position: 100% 30%;
+      width: 100%;
+      height: 100%;
+    }
+
+    @include safari-only {
+      max-height: 30em;
+
+      @include mq($until: tablet) {
+        height: auto;
+      }
+    }
+  }
+}
+
+.hero h1 {
+  margin-bottom: 0;
+}
+
+.hero__mailing-strip {
+  display: flex;
+  align-items: center;
+  background-color: $cta-green;
+  margin-top: 1em;
+
+  @include mq($until: tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.5em 0;
+  }
+
+  &__text {
+    flex-grow: 1;
+    color: $white;
+    font-weight: bold;
+    margin-left: 1em;
+    text-align: left;
+    padding-right: 150px;
+
+    @include mq($until: tablet) {
+      padding-right: $indent-amount;
+    }
+  }
+
+  &__cta {
+    margin: $indent-amount 1em;
+
+    @include mq($until: tablet) {
+      margin-top: 0;
+    }
+
+    &__button {
+      @include button($bg: $white, $fg: $black);
+      padding: .4em 1em;
+
+      @include mq($until: tablet) {
+        padding: .2em .5em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: 767px) {
+  .hero {
+    padding-bottom: 2em;
+    grid-template-rows: 8em 4em repeat(2, minmax(0, max-content));
+  }
+
+  .hero.blend-content {
+    padding-bottom: 2em;
+  }
+}
+
+
+// New styles for LandingHeroComponent
+.landing-hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	width: 100%;
+	max-width: 2000px;
+	max-height: fit-content;
+
+	@include mq($from: tablet) {
+		max-height: 420px;
+		flex-direction: row-reverse;
+
+		// Deeper headings if there's a paragraph
+		&.deeper {
+			max-height: fit-content;
+
+			.content h1.title {
+				margin-bottom: 0.5em;
+			}
+		}
+	}
+
+	// 50% width on child items '.content' and 'picture' (100% on mobile)
+	& > * {
+		width: 100%;
+
+		@include mq($from: tablet) {
+			width: 50%;
+		}
+	}
+
+	.content {
+		align-self: center;
+		box-sizing: border-box;
+		z-index: 1;
+		padding: 1.5rem;
+
+		@include mq($from: tablet) {
+			padding: 3rem;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			padding: 5.5rem;
+		}
+
+		// If no image use this
+		&.wide {
+			width: 100%;
+
+			@include mq($from: tablet) {
+				width: 80%;
+			}
+
+			h1.title {
+				margin-top: 0;
+			}
+		}
+
+		h1.title {
+			font-size: 2.3rem;
+			line-height: 1.14;
+			margin-top: -2.5rem;
+			margin-bottom: 0;
+
+			@include mq($from: tablet) {
+				margin: 0;
+				font-size: 3.3rem;
+			}
+
+			@media only screen and (min-width: 1200px) {
+				font-size: 4.3rem;
+			}
+
+			span {
+				padding: 0 0.6rem;
+				-webkit-box-decoration-break: clone;
+				box-decoration-break: clone;
+			}
+		}
+
+		p.title_paragraph {
+			margin-top: 2rem;
+			margin-bottom: 0;
+		}
+	}
+
+	picture {
+		align-self: stretch;
+
+		img {
+			-o-object-fit: cover;
+			object-fit: cover;
+			-o-object-position: 100% 50%;
+			object-position: 100% 50%;
+			width: 100%;
+			height: 100%;
+			vertical-align: bottom;
+		}
+	}
+
+	img {
+		aspect-ratio: 16/9;
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	// Colour themes
+	@mixin colours($background-color, $highlight-color) {
+		background-color: $background-color;
+
+		h1 span {
+			background: $highlight-color;
+		}
+
+		&.pastel {
+			background-color: rgba($background-color, 0.4);
+		}
+
+    &.white-text {
+      color: white;
+    }
+	}
+
+	&.pink-blue { @include colours($pink, $blue); }
+	&.pink-green { @include colours($pink, $green); }
+	&.pink-yellow { @include colours($pink, $yellow); }
+	&.blue-pink { @include colours($blue, $pink); }
+	&.green-pink { @include colours($green, $pink); }
+	&.green-yellow { @include colours($green, $yellow); }
+	&.yellow-green { @include colours($yellow, $green); }
+  &.yellow-yellow { @include colours($yellow, $yellow); }
+  &.grey-pink { @include colours($grey, $pink); }
+  &.gitlilac-gitlilac { @include colours($gitlilac, $gitlilac); }
+  &.gitpurple-gitpurple { @include colours($gitpurple, $gitpurple); }
+}
+
+// New styles for LandingHeroFullwidthComponent
+
+.landing-hero-fullwidth {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 2000px;
+
+  picture, img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+}

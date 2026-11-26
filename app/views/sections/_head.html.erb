@@ -1,6 +1,17 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title><%= suffix_title(page_title(@page_title, @front_matter)) %></title>
+  <%
+    timed_title = @front_matter&.dig("timed_financial_content", "title")
+    resolved_title = if timed_title
+      Content::TimedFinancialContentComponent.resolve_text(
+        params: params,
+        **timed_title.deep_symbolize_keys,
+      )
+    else
+      page_title(@page_title, @front_matter)
+    end
+  %>
+  <title><%= suffix_title(resolved_title) %></title>
   <%= csp_meta_tag %>
   <%= content_for?(:canonical) ? yield(:canonical) : canonical_tag %>
   <%= tag.meta(name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no') %>
@@ -12,21 +23,22 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/rebrand-2026/favicon-16x16.png">
   <link rel="manifest" href="/rebrand-2026/site.webmanifest">
 
-  <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
-  <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
-  <% js_packs = %w[clarity sentry gtm js_enabled lazy_images govuk_frontend application] %>
+  <%= stylesheet_link_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
+  <noscript><%= stylesheet_link_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
+  <% js_packs = %w[clarity sentry gtm js_enabled lazy_images govuk_frontend flatpickr accessible_autocomplete application] %>
   <%= yield :head %>
   <% if Rails.env.test? && params.key?(:fake_browser_time) %>
     <% js_packs.unshift('fake_browser_time') %>
   <% end %>
-  <%= javascript_pack_tag *js_packs, type: 'module', data:
+  <% js_packs += content_for(:js_entries).to_s.split %>
+  <%= javascript_include_tag(*js_packs.map { |pack| "#{pack}.js" }, type: 'module', data:
   {
     "turbolinks-track": 'reload',
     "sentry-dsn": sentry_dsn,
     "sentry-environment": Rails.env,
     "gtm-id": ENV["GTM_ID"],
     "clarity-id": ENV["CLARITY_ID"],
-  } %>
+  }) %>
   <!-- Start VWO Async SmartCode -->
   <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
   <script type="text/javascript" id="vwoCode">
@@ -46,12 +58,23 @@
   <% if @front_matter["noindex"] || @noindex %>
     <%= meta_tag(key: "robots", value: "noindex") %>
   <% end %>
-  <% if @front_matter['description'] %>
-    <%= meta_tag(key: 'description', value: substitute_values(@front_matter['description'])) %>
-    <%= meta_tag(key: 'description', value: substitute_values(@front_matter['description']), opengraph: true) %>
+  <%
+    timed_description = @front_matter.dig("timed_financial_content", "description")
+    description = if timed_description
+      Content::TimedFinancialContentComponent.resolve_text(
+        params: params,
+        **timed_description.deep_symbolize_keys,
+      )
+    else
+      substitute_values(@front_matter["description"])
+    end
+  %>
+  <% if description.present? %>
+    <%= meta_tag(key: 'description', value: description) %>
+    <%= meta_tag(key: 'description', value: description, opengraph: true) %>
   <% end %>
   <%= meta_tag(key: 'type', value: 'website', opengraph: true) %>
-  <%= meta_tag(key: 'title', value: page_title(@page_title, @front_matter), opengraph: true) %>
+  <%= meta_tag(key: 'title', value: resolved_title, opengraph: true) %>
   <%= meta_tag(key: 'site_name', value: "Get Into Teaching", opengraph: true) %>
   <%= meta_tag(key: 'locale', value: "en_GB", opengraph: true) %>
   <%= meta_tag(key: 'url', value: request.original_url, opengraph: true) %>

@@ -37,7 +37,13 @@ cta_arrow_link:
       link_text: "Find out more about training to teach in England as a non-UK citizen"
    find:
       link_target: "https://find-teacher-training-courses.service.gov.uk/results?can_sponsor_visa=true&applications_open=true&order=course_name_ascending"
-      link_text: "Search for postgraduate teacher training courses that offer visa sponsorship"    
+      link_text: "Search for postgraduate teacher training courses that offer visa sponsorship"
+timed_financial_content:
+  bursaries_and_scholarships:
+    default:
+      partial: "content/non-uk-teachers/visas-for-non-uk-trainees/bursaries"
+    2025:
+      partial: "content/non-uk-teachers/visas-for-non-uk-trainees/bursaries_and_scholarships"
 ---
 If you are applying for teacher training as a non-UK citizen, you will need a visa or immigration status allowing you to study or work in England. 
 
@@ -77,11 +83,7 @@ You will need a Student visa if you’re on a fee-paying course. Your Student vi
 
 Find out more about [studying in the UK on a Student visa](https://www.gov.uk/student-visa).
 
-### Bursaries and scholarships if you are on a Student visa
-
-If you are eligible for a bursary or scholarship, you can use this in your Student visa application as proof that you have enough money to support yourself. 
-
-The first instalment of a bursary or scholarship is usually made before late October but you should confirm payment dates with your chosen provider.
+$bursaries_and_scholarships$
 
 $refugees-asylum-seekers$
 

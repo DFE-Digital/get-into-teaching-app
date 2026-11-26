@@ -6,6 +6,8 @@
 
 <%= tag.div(formatted_event_description(@event.description)) %>
 
+<%= registration_link(@event.registration_email_link) %>
+
 <% if @event.video_id %>
   <div class="teaching-event__video">
     <%= render Content::YoutubeVideoComponent.new(

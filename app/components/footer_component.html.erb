@@ -42,7 +42,12 @@
         <div class="site-footer__links-column">
           <h2 class="heading-m">Finance and funding</h2>
           <ul>
-            <li><a class="link--black" href="/funding-and-support/scholarships-and-bursaries">Bursaries and scholarships</a></li>
+            <li><a class="link--black" href="/funding-and-support/bursaries">
+              <%= render Content::TimedFinancialContentComponent.new(
+                default: { text: "Bursaries" },
+                "2025": { text: "Bursaries and scholarships" },
+              ) %>
+            </a></li>
             <li><a class="link--black" href="/funding-and-support/salaried-teacher-training">Salaried teacher training</a></li>
             <li><a class="link--black" href="/funding-and-support/tuition-fees">Tuition fees</a></li>
             <li><a class="link--black" href="/funding-and-support/tuition-fee-and-maintenance-loans">Student finance</a></li>
@@ -92,7 +97,7 @@
       </div>
       <div class="site-footer-bottom__logo-container">
         <%= link_to "https://www.gov.uk/government/organisations/department-for-education" do %>
-          <%= image_pack_tag 'static/images/dfelogo-black.svg', alt: "Department for Education homepage", size: "124x73" %>
+          <%= helpers.image_tag 'static/images/dfelogo-black.svg', alt: "Department for Education homepage", size: "124x73" %>
         <% end %>
       </div>
     </div>

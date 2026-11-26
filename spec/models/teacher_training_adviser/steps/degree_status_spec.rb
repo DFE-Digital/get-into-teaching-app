@@ -10,24 +10,6 @@ RSpec.describe TeacherTrainingAdviser::Steps::DegreeStatus do
     it { is_expected.to respond_to :graduation_year }
   end
 
-  describe "#skipped?" do
-    before do
-      allow_any_instance_of(TeacherTrainingAdviser::Steps::ReturningTeacher).to receive(:returning_to_teaching).and_return(returning_to_teaching)
-    end
-
-    context "when not a returning teacher" do
-      let(:returning_to_teaching) { false }
-
-      it { is_expected.not_to be_skipped }
-    end
-
-    context "when a returning teacher" do
-      let(:returning_to_teaching) { true }
-
-      it { is_expected.to be_skipped }
-    end
-  end
-
   describe "graduation_year" do
     before { instance.degree_status_id = described_class::DEGREE_IN_PROGRESS }
 

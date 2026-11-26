@@ -3,7 +3,7 @@ module Content
     attr_reader :data, :title, :heading_tag
 
     def initialize(data, title = nil, heading_tag: "h3")
-      super
+      super()
 
       @data = data
       @title = title

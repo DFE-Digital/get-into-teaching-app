@@ -1,0 +1,15 @@
+<%= tag.h1 t("helpers.label.provider_events_steps_event_times.title") %>
+
+<%= f.govuk_time_field(
+      :start_time,
+      omit_second: true,
+      legend: { tag: "h3", text: t("helpers.label.provider_events_steps_event_times.start_time") },
+    )
+%>
+
+<%= f.govuk_time_field(
+      :end_time,
+      omit_second: true,
+      legend: { tag: "h3", text: t("helpers.label.provider_events_steps_event_times.end_time") },
+    )
+%>

@@ -5,7 +5,7 @@ module Content
     include ContentHelper
 
     def initialize(link_text:, href:, tabindex: nil, data: {}, id: nil, css_class: [])
-      super
+      super()
 
       @link_text = substitute_values(link_text)
       @href = href

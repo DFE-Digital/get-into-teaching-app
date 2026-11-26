@@ -66,6 +66,23 @@ describe Content::ExpanderComponent, type: :component do
     it { is_expected.to have_css("div.expander-details__text p", text: text) }
   end
 
+  context "when both text and a content block are given" do
+    let(:expanded) { true }
+
+    subject do
+      render_inline(component) { "content block goes here" }
+      page
+    end
+
+    it "renders the content block" do
+      is_expected.to have_css("div.expander-details__text div", text: "content block goes here")
+    end
+
+    it "does not render the text" do
+      is_expected.not_to have_css("div.expander-details__text p", text: text)
+    end
+  end
+
   describe "link title" do
     let(:link_title) { " link title with a full stop. " }
     let(:expanded) { true }
@@ -75,16 +92,6 @@ describe Content::ExpanderComponent, type: :component do
   end
 
   describe "argument checks" do
-    it do
-      expect { described_class.new(title: title, text: nil) }.to \
-        raise_error(ArgumentError, "text must be present")
-    end
-
-    it do
-      expect { described_class.new(title: title, text: "  ") }.to \
-        raise_error(ArgumentError, "text must be present")
-    end
-
     it do
       expect { described_class.new(text: text, title: nil) }.to \
         raise_error(ArgumentError, "title must be present")
@@ -98,6 +105,23 @@ describe Content::ExpanderComponent, type: :component do
     it do
       expect { described_class.new(text: text, title: title, background: "green") }.to \
         raise_error(ArgumentError, "background must be a valid value")
+    end
+  end
+
+  describe "text or content checks" do
+    it "raises when both text and content are blank" do
+      expect { render_inline(described_class.new(title: title, text: nil)) }.to \
+        raise_error(ArgumentError, "text or content must be present")
+    end
+
+    it "raises when text is blank and no content block is given" do
+      expect { render_inline(described_class.new(title: title, text: "  ")) }.to \
+        raise_error(ArgumentError, "text or content must be present")
+    end
+
+    it "does not raise when text is blank but content is present" do
+      expect { render_inline(described_class.new(title: title, text: "  ")) { "some content" } }.not_to \
+        raise_error
     end
   end
 end

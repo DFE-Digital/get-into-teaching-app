@@ -1,5 +1,5 @@
 # To use or update to a ruby version, change BASE_RUBY_IMAGE
-ARG BASE_RUBY_IMAGE=ruby:3.4.7-alpine3.23
+ARG BASE_RUBY_IMAGE=ruby:4.0.10-alpine3.23
 
 FROM ${BASE_RUBY_IMAGE} AS base
 
@@ -17,7 +17,6 @@ RUN apk update
 
 RUN apk add --no-cache \
   "procps-ng=4.0.5-r0" \
-  "libproc2=4.0.5-r0" \
   "libwebp"
 
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
@@ -26,12 +25,13 @@ RUN apk add --no-cache build-base tzdata shared-mime-info nodejs npm yarn git \
         postgresql-libs postgresql-dev && rm -rf /var/lib/apt/lists/*
 
 # Install bundler
-RUN gem install bundler --version='~> 2.6.9'
+RUN gem install bundler --version='~> 4.0.20'
 
 # Install NPM packages removing artifacts
-COPY package.json yarn.lock ./
+COPY package.json yarn.lock .yarnrc.yml ./
 # hadolint ignore=DL3060
-RUN yarn install
+RUN npm install -g corepack && corepack enable
+RUN yarn install --immutable
 
 # Install Gems removing artifacts
 COPY .ruby-version Gemfile Gemfile.lock ./
@@ -54,7 +54,10 @@ COPY --from=base /app /app
 
 # See https://github.com/rails/rails/issues/32947 for why we
 # bypass the credentials here.
-RUN SECRET_KEY_BASE=1 RAILS_BUILD=1 bundle exec rake assets:precompile
+RUN SKIP_YARN_INSTALL=1 SECRET_KEY_BASE=1 RAILS_BUILD=1 bundle exec rake assets:precompile
+
+# Propshaft does not compress, so write .gz/.br siblings for ActionDispatch::Static to serve
+RUN node precompress-assets.js public/assets
 
 # Remove node_modules since they are only used to generated the assets and take a lot of space
 RUN rm -rf node_modules
@@ -96,9 +99,7 @@ RUN apk add --no-cache tzdata shared-mime-info postgresql-libs postgresql-dev li
 
 RUN apk add --no-cache \
   "procps-ng=4.0.5-r0" \
-  "libproc2=4.0.5-r0" \
-  "libwebp" \
-  "zlib=1.3.2-r0"
+  "libwebp"
 
 COPY --from=release-build --chown=appuser:appgroup /app /app
 COPY --from=release-build --chown=appuser:appgroup /usr/local/bundle/ /usr/local/bundle/

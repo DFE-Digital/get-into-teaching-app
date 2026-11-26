@@ -2,7 +2,7 @@ class BackComponent < ViewComponent::Base
   attr_reader :path, :text, :options
 
   def initialize(path: :back, text: "Back", **options)
-    super
+    super()
     @path = path
     @text = text
     @options = options

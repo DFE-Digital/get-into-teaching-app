@@ -11,7 +11,7 @@ module CallsToAction
       link_text: "Find an event",
       link_target: "/events"
     )
-      super
+      super()
       @title = title
       @image = image
       @image_classes = image_classes

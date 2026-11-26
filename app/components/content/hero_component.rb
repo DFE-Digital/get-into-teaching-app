@@ -8,7 +8,7 @@ module Content
       return if front_matter.blank?
 
       @front_matter = front_matter
-      super
+      super()
     end
 
     def before_render
@@ -54,7 +54,7 @@ module Content
     end
 
     def picture
-      helpers.image_pack_tag(@image, **helpers.image_alt_attribs(@image), **picture_data_args)
+      helpers.image_tag(@image, **helpers.image_alt_attribs(@image), **picture_data_args)
     end
 
     def picture_data_args

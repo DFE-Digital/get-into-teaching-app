@@ -25,6 +25,28 @@ quote:
     text: "From the outset I was working within the school, learning and training in the classroom whilst being supported by qualified teachers and mentors. This gave me valuable experience of school life and a real feel for school."
     name: "Nathan, salaried teacher trainee"
     classes: quote--indent
+timed_financial_content:
+  bursaries_and_scholarship_for_fee_paying:
+    default:
+      text: "These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries to help fund fee-paying courses](/funding-and-support/bursaries)." 
+    2025:
+      text: "These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries or scholarships to help fund fee-paying courses](/funding-and-support/bursaries)."
+  bursaries_and_scholarship:
+    default:
+        text: |-
+          <p>It’s worth checking if there is a <a href="/funding-and-support/bursaries">bursary</a> available for your subject before you apply for a salaried course.</p> 
+
+          <p>If you do a salaried course, you will not be eligible for a bursary or student finance. You’ll also be taxed on your income, whereas you will not be taxed on a bursary.</p>
+
+          <p>If you’re eligible for a bursary, you could receive more money on a non-salaried course than on a salaried one.</p>
+    2025:
+        text: |-
+          <p>It’s worth checking if there is a <a href="/funding-and-support/bursaries">bursary or scholarship</a> available for your subject before you apply for a salaried course.</p> 
+
+          <p>If you do a salaried course, you will not be eligible for a bursary, scholarship or student finance. You’ll also be taxed on your income, whereas you will not be taxed on a bursary or scholarship.</p>
+
+          <p>If you’re eligible for a bursary or scholarship, you could receive more money on a non-salaried course than on a salaried one.</p>
+
 ---
 
 There are some teacher training courses that come with a salary. 
@@ -41,17 +63,21 @@ The postgraduate salaried courses are:
 
 All salaried courses are broadly the same, but the course length and qualifications you work towards may vary.
 
-These courses are in high demand and very competitive, so it’s important to apply as soon as you can if you’re eligible. You can also apply to fee-paying courses. These courses tend to have a higher success rate, and you may be eligible for [bursaries or scholarships to help fund fee-paying courses](/funding-and-support/scholarships-and-bursaries).
+$bursaries_and_scholarship_for_fee_paying$
+
+## What school experience is required for salaried courses?
+
+This will depend on the teacher training course you're applying for. For some salaried courses, teacher training providers require you to have significant teaching or school experience, for example, if you're already working as an unqualified teacher or teaching assistant. 
+
+Some providers will also want you to have already arranged a school to work in while you train. If it's unclear from the website what the provider's course requirements are, you should get in touch with them to ask for more information.
 
 ## Am I eligible for a postgraduate salaried teacher training course? 
 
-For some salaried courses, teacher training providers may want you to have significant teaching or school experience, for example, if you’re already working as an unqualified teacher or teaching assistant.  
-
-Some providers will also want you to have already arranged a school to work in while you train. Speak to the teacher training provider to find out what their requirements are. 
+To find out if you're eligible for a course you're applying for, you should review the course requirements. 
 
 You can also [find out more about the qualifications you need to train to teach](/train-to-be-a-teacher/qualifications-you-need-to-teach). 
 
-Or talk to a [teacher training adviser](/teacher-training-advisers) who can help you understand which courses you could be eligible for. 
+You may also be able to get a [teacher training adviser](/teacher-training-advisers) who can help you understand which courses you could be eligible for. 
 
 $salaried-teacher-training$
 
@@ -63,11 +89,7 @@ If you do not already have a degree, you may be eligible for a [teacher degree a
 
 You'll receive an [unqualified teacher’s salary](/life-as-a-teacher/pay-and-benefits/teacher-pay). The exact amount will vary depending on the school you work in. 
 
-It’s worth checking if there is a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries) available for your subject before you apply for a salaried course. 
-
-If you do a salaried course, you will not be eligible for a bursary, scholarship or student finance. You’ll also be taxed on your income, whereas you will not be taxed on a bursary or scholarship. 
-
-If you’re eligible for a bursary or scholarship, you could receive more money on a non-salaried course than on a salaried one. 
+$bursaries_and_scholarship$
 
 ## How does salaried teacher training work? 
 
@@ -99,8 +121,8 @@ Some salaried teacher training providers will want you to have already arranged 
 
 $find-courses$
 
-### Teach First 
+### Teach Lead Change
 
-Teach First delivers a 2 year employment-based route to teaching for high performing graduates and career changers. You’ll earn a salary while working towards QTS with a PGCE. 
+Teach Lead Change is a 2 year employment-based route in to teaching delivered by [Teach First](https://www.teachfirst.org.uk/). It's designed for high performing graduates and career changers, combining classroom experience with professional development. You’ll earn a salary while working towards QTS with a PGCE. 
 
-To apply and find out more, you should [visit the Teach First website](https://www.teachfirst.org.uk/).
+To apply and find out more, [visit the Teach Lead Change website](https://teachleadchange.org.uk/).

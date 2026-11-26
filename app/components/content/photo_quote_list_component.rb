@@ -6,8 +6,7 @@ module Content
     attr_reader :quotes, :colors, :numbered
 
     def initialize(quotes, colors: COLORS, numbered: true)
-      super
-
+      super()
       @quotes = quotes
       @colors = colors
       @numbered = numbered

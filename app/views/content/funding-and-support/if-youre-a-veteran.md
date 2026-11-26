@@ -7,10 +7,12 @@ description: |-
 navigation: 20.35
 promo_content:
   - "content/shared/block-promos/adviser_mailing_routes"
-cta_arrow_link:
-  bursaries:
-    link_target: "/funding-and-support/scholarships-and-bursaries"
-    link_text: "Find out more about postgraduate scholarships and bursaries"
+timed_financial_content:
+  bursaries_and_scholarship:
+    default:
+      partial: "content/funding-and-support/if-youre-a-veteran/bursaries"
+    2025:
+      partial: "content/funding-and-support/if-youre-a-veteran/bursaries_and_scholarships"
 navigation_title: Funding and support if you're a veteran
 navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 ---
@@ -35,13 +37,7 @@ You do not need to apply for a bursary to get one. Your teacher training provide
 
 You’ll receive $bursaries_veteran_annual$ in each of the last 2 years of your course in equal monthly instalments.
 
-## Postgraduate scholarships and bursaries
-
-You may also be eligible for a postgraduate scholarship or bursary if you’re training to teach certain subjects.
-
-$bursaries$
-
-All teacher training candidates are also eligible for [tuition fee and maintenance loans](/funding-and-support/tuition-fee-and-maintenance-loans).
+$bursaries_and_scholarship$
 
 ## Get support
 

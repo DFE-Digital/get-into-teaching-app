@@ -2,6 +2,7 @@ FactoryBot.define do
   factory :internal_event, class: "Internal::Event" do
     id { SecureRandom.uuid }
     readable_id { "Test" }
+    reference_number { "A1234" }
     name { "Test" }
     summary { "Test" }
     description { "Test" }
@@ -15,6 +16,7 @@ FactoryBot.define do
     provider_organiser { "Test" }
     provider_target_audience { "Test" }
     provider_website_url { "Test" }
+    registration_email_link { "https://test.test/register" }
     venue_type { "" }
     building { build :event_building }
   end

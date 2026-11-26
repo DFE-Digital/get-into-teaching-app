@@ -22,7 +22,7 @@ navigation_description: Find out how to get qualified teacher status (QTS) throu
 expander:
   fees-and-funding:
     title: fees and funding
-    text: "Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance loans. If you train to teach languages or physics, you may be eligible for a bursary or scholarship.
+    text: "<p>Teacher training course fees for non-UK citizens cost an average of $fees_pgitt_internationalaverage$. Most non-UK citizens will not be eligible for tuition fee loans and maintenance loans. If you train to teach languages or physics, you may be eligible for financial support.</p>
     <p>If you have refugee status you can apply for salaried or fee-paying training courses. You will usually be eligible for financial support to help you train to teach.</p>
     <p>You may be eligible for financial support to train to teach if <a href=\"/non-uk-teachers/visas-for-non-uk-trainees\">you are from Ukraine or Afghanistan and on certain visas</a>.</p>
     <p>If you are in <a href=\"https://www.gov.uk/claim-asylum\">the process of seeking asylum</a>, check your immigration bail conditions to see if you have permission to study on a teacher training course in England. Even if you have permission, you are unlikely to be eligible for financial support.</p>
@@ -61,7 +61,7 @@ Your postgraduate teacher training course might be provided by:
 * a university, sometimes referred to as university-led training 
 * a school or group of schools, sometimes referred to as school-led training 
 
-Your teacher training course may also be provided by a company or charity. For example, [Teach First is a charitable organisation that provides teacher training](https://www.teachfirst.org.uk/).
+Your teacher training course may also be provided by a company or charity. For example, [Teach First is a charitable organisation that provides teacher training](https://www.teachfirst.org.uk/). This includes the salaried [Teach Lead Change](https://teachleadchange.org.uk) programme that provides teacher training with leadership development.
 
 Some providers are ‘accredited’ – this means they've been approved by the Department for Education (DfE) to run teacher training courses.
 
@@ -71,7 +71,7 @@ Providers who have not been accredited can also run courses if they're in a part
 
 All teacher training involves mostly classroom placements with some theoretical learning.  
 
-This means that even if your course provider is a university, you'll still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a university. 
+This means that even if your course provider is a university, you'll still do placements in schools. And if your course provider is a school, you might still do your theoretical learning in a university.
 
 Regardless of your course provider, all teacher training involves at least 2 school placements over a minimum of 24 weeks.
 
@@ -81,7 +81,7 @@ $olivia$
 
 ## Where will my training take place?
 
-Because all teacher training must involve placements in at least 2 schools, your training will not all happen in the same place. Some courses may also have a separate location for your theoretical learning. 
+Because all teacher training must involve placements in at least 2 schools, your training will not all happen in the same place. Some courses may also have a separate location for your theoretical learning.
 
 Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get an idea.
 
@@ -105,6 +105,7 @@ You may be eligible for extra financial support if:
 * you're eligible for a salaried teacher training course
 
 $funding$
+
 $fees-and-funding$
 
 ## How to choose your teacher training course

@@ -2,7 +2,7 @@
 title: Cookies Policy
 ---
 
-Last updated: 10 June 2026
+Last updated: 30 September 2026
 
 This Cookies Policy explains what Cookies are and how we use them. You should read this policy so you can understand what type of Cookies we use, or the information we collect using Cookies and how that information is used.
 
@@ -119,10 +119,10 @@ We may also share anonymised and hashed data with third party platforms. This he
 
 | Name                 | Purpose                                                                                                                                                         | Expires after |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| `_ttp`| Used by TikTok to measure and improve the performance of advertising campaigns and to personalise the customer experience (including ads)| 13 months |
+| `_ttp`               | Used by TikTok to measure and improve the performance of advertising campaigns and to personalise the customer experience (including ads)                       | 13 months     |
 | `_pin_unauth`        | Used by Pinterest to collect information about how their visitors interact with the pages on the website to track the efficiency                                | 1 year        |
 | `sc_at`              | Used by Snapchat to deliver more relevant and meaningful adverts. Also used to track the efficiency                                                             | 12 months     |
-| `_ar_debug`              |This cookie is used by Pinterest and DoubleClick to debug ads    | 1 month     |
+| `_ar_debug`          | This cookie is used by Pinterest and DoubleClick to debug ads                                                                                                   | 1 month       |
 | `_gac_gb_76JLPNZBCP` | Used by Google Analytics and Google Ads to help us understand how you've interacted with advertising campaigns                                                  | 90 days       |
 | `_gcl_au`            | Used by Google Analytics and Google Ads to help us understand how you've interacted with advertising campaigns                                                  | 90 days       |
 | `_fbp`               | Used by Facebook to store and track your visits across websites                                                                                                 | 90 days       |
@@ -133,7 +133,13 @@ We may also share anonymised and hashed data with third party platforms. This he
 | `_rdt_uuid`          | This cookie is set by Reddit and is used for remarketing on reddit.com                                                                                          | 3 months      |
 | `_scid`              | Used by Snapchat for tracking your actions, such as selecting recommended adverts. This information is used to make adverts more meaningful and relevant to you | 1 month       |
 | `_scid_r`            | This cookie is used by Snapchat to assign a unique ID to a user                                                                                                 | 1 year        |
-| `_ScCbts`              | This cookie is used by Snapchat for targeted advertising purposes                                                                                 | 6 days        |
+| `_ScCbts`            | This cookie is used by Snapchat for targeted advertising purposes                                                                                               | 6 days        |
+| `li_fat_id`          | Used by LinkedIn to record that you've accessed our website using a LinkedIn advert                                                                             | 30 days       |
+| `li_sugr`            | Used by LinkedIn to identify browsers that are not signed in to LinkedIn, to measure the performance of advertising                                            | 90 days       |
+| `UserMatchHistory`   | Used by LinkedIn to sync advertising IDs so we can show you more relevant adverts on LinkedIn                                                                  | 30 days       |
+| `AnalyticsSyncHistory` | Used by LinkedIn to record when information was last synced for measuring advertising                                                                         | 30 days       |
+| `bcookie`            | Used by LinkedIn to identify the browser you use to access LinkedIn and our website                                                                             | 1 year        |
+| `lidc`               | Used by LinkedIn to choose which data centre handles your visit                                                                                                 | 24 hours      |
 
 Table caption: Marketing cookies we use
 

@@ -85,7 +85,7 @@ describe StructuredDataHelper, type: "helper" do
       expect(data).to include({
         "@type": "Organization",
         url: root_url,
-        logo: asset_pack_url(image_path_logo_blue),
+        logo: image_url(image_path_logo_blue),
       })
     end
   end
@@ -211,9 +211,9 @@ describe StructuredDataHelper, type: "helper" do
 
       it "has the online images" do
         is_expected.to include({ image: [
-          asset_pack_url("static/images/structured_data/git_online_1x1.jpeg"),
-          asset_pack_url("static/images/structured_data/git_online_4x3.jpeg"),
-          asset_pack_url("static/images/structured_data/git_online_16x9.jpeg"),
+          image_url("static/images/structured_data/git_online_1x1.jpeg"),
+          image_url("static/images/structured_data/git_online_4x3.jpeg"),
+          image_url("static/images/structured_data/git_online_16x9.jpeg"),
         ] })
       end
     end
@@ -221,9 +221,9 @@ describe StructuredDataHelper, type: "helper" do
     context "when the event is in-person" do
       it "has the in-person images" do
         is_expected.to include({ image: [
-          asset_pack_url("static/images/structured_data/git_in_person_1x1.jpeg"),
-          asset_pack_url("static/images/structured_data/git_in_person_4x3.jpeg"),
-          asset_pack_url("static/images/structured_data/git_in_person_16x9.jpeg"),
+          image_url("static/images/structured_data/git_in_person_1x1.jpeg"),
+          image_url("static/images/structured_data/git_in_person_4x3.jpeg"),
+          image_url("static/images/structured_data/git_in_person_16x9.jpeg"),
         ] })
       end
     end

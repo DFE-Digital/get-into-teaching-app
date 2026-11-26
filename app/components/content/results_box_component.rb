@@ -5,7 +5,7 @@ module Content
     include ContentHelper
 
     def initialize(heading:, fee:, course_length:, funding:, text:, link_text:, link_target:, title: nil, border_color: :grey)
-      super
+      super()
 
       @title = title
       @heading = heading
@@ -16,6 +16,23 @@ module Content
       @link_text = link_text
       @link_target = link_target
       @border_color = border_color
+    end
+
+    def funding_args
+      branches = if funding.is_a?(Hash)
+                   funding.transform_values do |value|
+                     { text: value }
+                   end
+                 else
+                   {
+                     default: { text: funding },
+                   }
+                 end
+
+      {
+        format: :text,
+        **branches,
+      }
     end
   end
 end

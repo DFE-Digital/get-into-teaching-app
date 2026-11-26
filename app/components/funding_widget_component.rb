@@ -4,16 +4,16 @@ class FundingWidgetComponent < ViewComponent::Base
   attr_reader :path, :form, :icon
 
   def initialize(form, path)
-    super
+    super()
 
     @form = form
     @path = path
   end
 
   def before_render
-    @icon = image_pack_tag("static/images/icon-money.svg", width: 50, height: 50,
-                                                           **helpers.image_alt_attribs_for_text(""),
-                                                           class: "call-to-action__icon")
+    @icon = helpers.image_tag("static/images/icon-money.svg", width: 50, height: 50,
+                                                              **helpers.image_alt_attribs_for_text(""),
+                                                              class: "call-to-action__icon")
   end
 
   def grouped_options
@@ -31,7 +31,10 @@ class FundingWidgetComponent < ViewComponent::Base
   end
 
   def funding_results
-    subject_data&.fetch(:funding, "")
+    funding = subject_data&.dig(:funding) || {}
+
+    funding.select { |_branch, text| text.present? }
+           .transform_values { |text| { text: text } }
   end
 
   def next_steps

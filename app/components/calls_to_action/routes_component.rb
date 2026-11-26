@@ -11,7 +11,7 @@ class CallsToAction::RoutesComponent < ViewComponent::Base
     border: true,
     heading_tag: "h2"
   )
-    super
+    super()
 
     @title = title
     @text = text

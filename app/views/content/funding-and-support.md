@@ -1,8 +1,13 @@
 ---
 title: "Teacher training funding"
 heading: "Fund your teacher training"
-description: |-
-    Find out about teacher training costs, student finance, bursaries and scholarships, and funding if you’re disabled, a parent or carer or a veteran.
+timed_financial_content:
+  description:
+    format: text
+    default:
+      text: Find out about teacher training costs, student finance, bursaries, and funding if you’re disabled, a parent or carer or a veteran.
+    2025:
+      text: Find out about teacher training costs, student finance, bursaries and scholarships, and funding if you’re disabled, a parent or carer or a veteran.
 title_paragraph: |-
     If you're applying for teacher training in England, we can help you understand the cost of courses and what funding and practical support you could be eligible for.
 navigation: 20

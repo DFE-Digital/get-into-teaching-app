@@ -5,6 +5,15 @@ module Internal
     include ApiModelConvertible
 
     VENUE_TYPES = { add: "add", existing: "existing", none: "none" }.freeze
+    VALID_REGISTRATION_EMAIL_LINK = %r{
+      \A
+      (?:
+        https?://[^\s]+
+        |
+        [^\s@]+@[^\s@]+\.[^\s@]+
+      )
+      \z
+    }ix
 
     attribute :id, :string
     attribute :readable_id, :string
@@ -16,6 +25,8 @@ module Internal
               default: Crm::EventType.school_or_university_event_id
     attribute :name, :string
     attribute :summary, :string
+    attribute :reference_number, :string
+    attribute :registration_email_link, :string
     attribute :description, :string
     attribute :is_online, :boolean, default: nil
     attribute :start_at, :datetime
@@ -27,22 +38,21 @@ module Internal
     attribute :building
     attribute :venue_type, default: VENUE_TYPES[:none]
 
-    validates :name, presence: true, allow_blank: false, length: { maximum: 300 }
+    validates :name, presence: true, allow_blank: false, length: { maximum: ProviderEvents::Steps::EventName::MAX_CHARS }
     validates :readable_id, presence: true, allow_blank: false, length: { maximum: 300 }, format: { with: /\A[^_\W][\w-]+[^_\W]\Z/ }
-    validates :summary, presence: true, allow_blank: false, length: { maximum: 1000 }
-    validates :description, presence: true, allow_blank: false, length: { maximum: 2000 }
+    validates :summary, presence: false, allow_blank: true, length: { maximum: 1000 }
+    validates :description, presence: true, length: { maximum: ProviderEvents::Steps::EventDescription::MAX_CHARS }, number_of_words: { less_than: ProviderEvents::Steps::EventDescription::MAX_WORDS }
     validates :is_online, inclusion: { in: [true, false] }, if: -> { provider_event? }
     validates :start_at, presence: true, allow_blank: false
     validates :end_at, presence: true
-    validates :provider_contact_email,
-              presence: true,
-              allow_blank: false,
-              email_format: true,
-              length: { maximum: 100 }, if: -> { provider_event? }
-    validates :provider_organiser, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
-    validates :provider_target_audience, presence: true, allow_blank: false, length: { maximum: 500 }, if: -> { provider_event? }
-    validates :provider_website_url, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
+    validates :provider_contact_email, presence: true, allow_blank: false, email_format: true, length: { maximum: ProviderEvents::Steps::Email::MAX_CHARS }, if: -> { provider_event? }
+    validates :provider_organiser, presence: true, allow_blank: false, length: { maximum: ProviderEvents::Steps::OrganisationName::MAX_CHARS }, if: -> { provider_event? }
+    validates :provider_target_audience, presence: true, allow_blank: false, length: { maximum: ProviderEvents::Steps::TargetAudience::MAX_CHARS }, if: -> { provider_event? }
+    validates :provider_website_url, presence: true, allow_blank: false, length: { maximum: ProviderEvents::Steps::EventWebsite::MAX_CHARS }, if: -> { provider_event? }
     validates :venue_type, inclusion: { in: VENUE_TYPES.values }
+    validates :registration_email_link, presence: true, length: { maximum: 100 }, email_format: true, if: -> { provider_event? && registration_email_link_email? }
+    validates :registration_email_link, presence: true, length: { maximum: 300 }, url: { no_local: true }, if: -> { provider_event? && registration_email_link_website? }
+    validates :registration_email_link, presence: true, format: { with: VALID_REGISTRATION_EMAIL_LINK, message: "Must be an email address or website" }, if: -> { provider_event? }
     validate :dates_in_future
     validate :end_after_start
     validate :starts_and_ends_on_same_day
@@ -160,6 +170,14 @@ module Internal
       if venue_type == VENUE_TYPES[:existing] && building&.id.nil?
         errors.add(:venue_type, "You must select an existing building")
       end
+    end
+
+    def registration_email_link_email?
+      !registration_email_link_website?
+    end
+
+    def registration_email_link_website?
+      registration_email_link =~ /^https?:\/\//i
     end
   end
 end

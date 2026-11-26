@@ -21,7 +21,8 @@ class SitemapController < ApplicationController
   layout "minimal"
 
   def show
-    @sitemap_data ||= all_sitemap_pages.sort_by { |_path, metadata| metadata[:title] }
+    @sitemap_data ||= all_sitemap_pages.reject { |_path, metadata| metadata[:title].blank? }
+                                       .sort_by { |_path, metadata| metadata[:title] }
     @a_z_sitemap_data ||= @sitemap_data.group_by { |_path, metadata| metadata[:title][0] }
 
     respond_to do |format|

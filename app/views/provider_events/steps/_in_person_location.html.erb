@@ -1,0 +1,13 @@
+<%= f.govuk_radio_buttons_fieldset(:location_option, legend: { tag: 'h1', text: t("helpers.label.provider_events_steps_in_person_location.location_option") }) do %>
+  <%= f.govuk_radio_button :location_option, ProviderEvents::Steps::InPersonLocation::EXISTING, label: { text: t("helpers.answer.provider_events_steps.in_person_location.location_option.existing")} do %>
+    <%= f.govuk_collection_select :building_id,
+                                  f.object.buildings,
+                                  :id,
+                                  ->(building) { "#{building.venue}, #{building.address_postcode}" },
+                                  label: { size: 'm' },
+                                  options: { include_blank: "" },
+                                  class: "select-accessible-autocomplete" %>
+  <% end %>
+
+  <%= f.govuk_radio_button :location_option, ProviderEvents::Steps::InPersonLocation::NEW, label: { text: t("helpers.answer.provider_events_steps.in_person_location.location_option.new")} %>
+<% end %>

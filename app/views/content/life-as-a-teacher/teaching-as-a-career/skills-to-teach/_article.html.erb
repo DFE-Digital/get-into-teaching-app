@@ -9,7 +9,10 @@
     <h2 class="heading--box-gitlilac">Subject knowledge</h2>
     <p>One of the most important skills for teaching is enthusiasm and knowledge of the subject you want to teach. This allows you to answer questions your pupils have and be creative in how you help them learn.</p>
 
-    <p>You can build your subject knowledge in several ways. For example, through a degree in a subject, your teacher training, or conversations with your colleagues and pupils. If you do postgraduate teacher training, your provider may decide that you'd benefit from <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">a subject knowledge enhancement course</a>.</p>
+    <%= render Content::TimedFinancialContentComponent.new(
+      default: {text: "You can build your subject knowledge in several ways. For example, through a degree in a subject, your teacher training, or conversations with your colleagues and pupils. If you do postgraduate teacher training, your provider may decide that you'd benefit from a subject knowledge enhancement course."},
+      "2025": {text: "You can build your subject knowledge in several ways. For example, through a degree in a subject, your teacher training, or conversations with your colleagues and pupils. If you do postgraduate teacher training, your provider may decide that you'd benefit from <a href=\"/how-to-apply-for-teacher-training/subject-knowledge-enhancement\">a subject knowledge enhancement course</a>."}
+    ) %>
 
     <p>Developing your subject knowledge does not end when your training does. You'll be expected to stay up to date in your subject area to teach the national curriculum and help your pupils explore their curiosity in your subject.</p>
 

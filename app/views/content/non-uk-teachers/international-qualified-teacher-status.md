@@ -8,6 +8,10 @@ navigation_title: Get international qualified teacher status (iQTS)
 navigation_description: Train from anywhere in the world to get international qualified teacher status (iQTS), backed by England’s Department for Education.
 image: "static/images/content/hero-images/peer-to-peer-collaboration.jpg"
 backlink: "../"
+timed_financial_content:
+  scholarship_opportunities:
+    2025:
+      text: "To find out about scholarship opportunities, contact your chosen iQTS training provider directly."
 ---
 
 International qualified teacher status (iQTS) is a teaching qualification that's the equivalent of [English qualified teacher status (QTS)](/train-to-be-a-teacher/what-is-qts). iQTS enables you to train to teach in the country where you live and work, with no need to visit England.
@@ -53,7 +57,7 @@ Fees range from $fees_iQTS_low$ to $fees_iQTS_high$ for a 9-month, full-time iQT
 
 Applicants for iQTS are not eligible for loans, bursaries or any other type of financial support from the Department for Education and Student Finance England to help cover the costs of studying for iQTS.
 
-To find out about scholarship opportunities, contact your chosen iQTS training provider directly.
+$scholarship_opportunities$
 
 ## Placement schools and working while you train
 
@@ -65,7 +69,7 @@ If you're already employed in a school, you can talk to your training provider a
 
 To learn more, contact your chosen iQTS provider directly.
 
-## How to apply for iQTS
+## How to apply for iQTS
 
 All iQTS training providers are approved by the UK government and must meet the same strict standards. However, they may vary in their approach to:
 
@@ -87,11 +91,13 @@ Contact the provider directly to:
 
 The following providers are accepting applications:
 
+* Best Practice Network (BPN)
+
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
 
 * Equalitas
 
-* [National Institute of Teaching and Education (NITE)](https://www.coventry.ac.uk/nite/course-structure/apprenticeships/international-postgraduate-certificate-in-education/), part of the Coventry University Group
+* [National Institute of Teaching and Education (NITE)](https://www.coventry.ac.uk/nite/course-finder/), part of Coventry University Group, offers both postgraduate and undergraduate routes
 
 * [Tes Institute](https://www.tes.com/institute/courses/iqts)
 
@@ -109,8 +115,6 @@ The following providers are accepting applications:
 
 The following providers specialise in particular regions:
 
-* [Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts) – this provider is accepting applications from the Middle East and North Africa
-
 * [St Mary’s University](https://www.stmarys.ac.uk/courses/postgraduate/iqts)
 
 * [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx) – this provider offers in-person training in Dubai only, so applicants must be a commutable distance from their Dubai Campus
@@ -125,7 +129,7 @@ At the end of your training, your iQTS provider and school will assess you to ch
 
 Your training provider will award you iQTS when you have successfully passed this assessment process. You will then automatically gain English QTS.
 
-## Other routes to QTS
+## Other routes to QTS
 
 If you’re living in England and want a teaching qualification leading to QTS, you must [apply for teacher training in England](/steps-to-become-a-teacher).
 
@@ -151,6 +155,6 @@ You need to do an induction to teach in most schools in England. If you teach ou
 
 To learn more about applying for iQTS, contact your chosen training provider for information about their application process.
 
-For general advice about iQTS, email us on iqts.policy@education.gov.uk.
+For general advice about iQTS, email us on iqts.policy@education.gov.uk.
 
 You can also call us on +44 800 389 2500. Calls will be charged at your country’s standard rate. Or you can contact us using the live chat service at the bottom of this page.

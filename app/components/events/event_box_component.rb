@@ -1,6 +1,6 @@
 module Events
   class EventBoxComponent < ViewComponent::Base
-    attr_reader :title, :event, :type, :online, :virtual
+    attr_reader :title, :event, :type, :online, :virtual, :readable_id, :reference_number
 
     delegate :format_event_date, :name_of_event_type, :event_type_color, :safe_format, to: :helpers
     alias_method :online?, :online
@@ -14,13 +14,15 @@ module Events
       #   - is_online == true && is_virtual == true
       # - Online (fully online with no building)
       #   - is_online == true && is_virtual == false
-      super
+      super()
 
       @event       = event
       @title       = event.name
       @type        = event.type_id
       @online      = event.is_online
       @virtual     = event.is_virtual
+      @readable_id = event.readable_id
+      @reference_number = event.reference_number
     end
 
     def datetime

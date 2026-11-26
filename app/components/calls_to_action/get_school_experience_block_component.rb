@@ -11,7 +11,7 @@ module CallsToAction
       link_text: "Search for school experience",
       link_target: "https://schoolexperience.education.gov.uk/"
     )
-      super
+      super()
       @title = title
       @image = image
       @image_classes = image_classes

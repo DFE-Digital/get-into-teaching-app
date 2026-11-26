@@ -4,7 +4,7 @@ class SingleQuestionSurveyComponent < ViewComponent::Base
   attr_reader :question, :hint, :answers
 
   def initialize(question:, answers:, hint: "")
-    super
+    super()
 
     @question = question
     @hint = hint

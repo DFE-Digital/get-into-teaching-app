@@ -20,9 +20,22 @@ expander:
     title: moving to the UK
     header: "Ukraine citizens:"
     text: Check what you need to do before you travel and after you arrive <a href="https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine">if you are moving to the UK from Ukraine</a>.
+timed_financial_content:
+  subject_knowledge_enhancement:
+    format: text
+    default:
+      text: "you may need time to complete a subject knowledge enhancement (SKE) course and other conditions before starting your training"
+    2025:
+      text: "you may need time to complete a <a href=\"/how-to-apply-for-teacher-training/subject-knowledge-enhancement\">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training"
 ---
 
-You can apply for postgraduate teacher training courses starting in $recruitmentcycle_coursestart$ $recruitmentcycle_openanddeadline$. 
+You can apply for postgraduate teacher training courses starting $recruitmentcycle_openingdateandtime$. 
+
+If any of the courses you have applied for start by the end of $recruitmentcycle_januarycoursestart$, you must respond to any offers you receive by $recruitmentcycle_januarydeadlinetime$ on $recruitmentcycle_januarydeadlinedate$. If you do not respond by then, your offers will automatically be declined.
+
+For teacher training courses that start by the end of $recruitmentcycle_coursestart$, you have until $recruitmentcycle_deadlinetime$ on $recruitmentcycle_deadlinedate$ to submit your application.
+
+You should check with training providers when applications close for each course. Some providers may close applications before these deadlines if a course fills up.
 
 $application-deadlines$
 
@@ -30,9 +43,9 @@ $application-deadlines$
 
 From $recruitmentcycle_openingdate$, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for a teacher training course</a>.
  
-You can apply to up to 4 courses at a time.  
+You can apply to up to 4 courses at a time. If an application becomes inactive because a provider has not made a decision after 30 days, or has become withdrawn or rejected, you can submit another one.
 
-Training providers should respond to your application within 30 days. If you do not receive a decision from your application after 30 days, you can submit an application for another course. 
+You can submit up to 15 applications in total for an academic year.
 
 It’s wise to apply as soon as you’re ready because:
 
@@ -40,11 +53,11 @@ It’s wise to apply as soon as you’re ready because:
   <li> popular courses will fill up quickly </li>
   <li>there are a limited number of places on a course and they are filled up on a first come, first served basis</li>  
   <li>courses are open for people to apply all year round</li>  
-  <li>you may need time to complete a <a href="/how-to-apply-for-teacher-training/subject-knowledge-enhancement">subject knowledge enhancement (SKE)</a> course and other conditions before starting your training</li> 
+  <li>$subject_knowledge_enhancement$</li> 
   <li>this will give you time to plan how you <a href="/funding-and-support">fund your training</a></li>
 </ul>
 
-You can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to get help with the application process. 
+If you're applying to teach a secondary subject, you can <a href="/teacher-training-adviser/sign_up/identity">sign up for a teacher training adviser</a> to help you write a strong application.
 
 $ukraine-inset$
 
@@ -53,16 +66,25 @@ $q-jacub-pask$
 <br />
 
 
-
 ## Deadlines for applications and training provider decisions 
+
+### $recruitmentcycle_januaryproviderdeadline$
+
+This is the last day for training providers to make a decision on all applications (including those at interview stage) for courses that start before the end of $recruitmentcycle_januarycoursestart$.
+
+### $recruitmentcycle_januarydeadlinedate$
+
+This is the last day you'll be able to respond to any received offers for courses that start before the end of $recruitmentcycle_januarycoursestart$.
+
+If you do not respond by $recruitmentcycle_januarydeadlinetime$ on this date, these offers will automatically be declined.
 
 ### $recruitmentcycle_deadlinedate$
 
-This is the last day you’ll be able to apply for a postgraduate teacher training courses starting in $recruitmentcycle_coursestart$. You must submit your application before $recruitmentcycle_deadlinetime$.
+This is the last day you’ll be able to apply for a postgraduate teacher training courses that start before the end of $recruitmentcycle_coursestart$. You must submit your application before $recruitmentcycle_deadlinetime$.
 
 ### $recruitmentcycle_providerdeadline$
 
-This is the last day for training providers to make a decision on all applications for courses starting in $recruitmentcycle_coursestart$. 
+This is the last day for training providers to make a decision on all applications for courses that start before the end of $recruitmentcycle_coursestart$. 
 
 If a decision has not been made before $recruitmentcycle_providerdeadline$, your applications will automatically be rejected so that you can start applying for next year’s courses in $recruitmentcycle_openingmonth$. 
 

@@ -18,11 +18,10 @@ Rails.application.routes.draw do
 
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
     redirect_rules.each do |from, to|
-      to_mapped = to.gsub(/^\/packs\//, Rails.env.test? ? "/packs-test/" : "/packs/")
       get from => lambda { |env|
         request = Rack::Request.new(env)
-        Rails.logger.info(redirect: { request: env["ORIGINAL_FULLPATH"], from: from, to: to_mapped })
-        redirect(path: to_mapped, params: request.params.except("page")).call(env)
+        Rails.logger.info(redirect: { request: env["ORIGINAL_FULLPATH"], from: from, to: to })
+        redirect(path: to, params: request.params.except("page")).call(env)
       }
     end
   end
@@ -51,16 +50,6 @@ Rails.application.routes.draw do
     [204, {}, []]
   }
 
-  post "/assets/check", constraints: -> { Rails.env.pagespeed? }, to: proc { |_env|
-    require "asset_checker"
-
-    root_url = "https://getintoteaching.education.gov.uk"
-    checker = AssetChecker.new(root_url)
-    result = checker.run
-
-    [result.empty? ? 204 : 404, {}, [result.join($INPUT_RECORD_SEPARATOR)]]
-  }
-
   namespace :internal do
     resources :events, only: %i[index show new create edit]
     put "/approve", to: "events#approve"
@@ -71,8 +60,7 @@ Rails.application.routes.draw do
   get "/landing/campus-mailing-list", to: "pages#campus_mailing_list", as: "campus_mailing_list"
   get "/events/get-the-most-from-events", to: "pages#get_the_most_from_events", as: "get_the_most_from_events"
   get "/events/what-happens-at-events-transcript", to: "pages#what_happens_at_events_transcript", as: "what_happens_at_events_transcript"
-  get "/funding-and-support/scholarships-and-bursaries", to: "pages#scholarships_and_bursaries", as: "scholarships_and_bursaries"
-  get "/funding-and-support/scholarships-and-bursaries-search", to: "pages#scholarships_and_bursaries_search", as: "scholarships_and_bursaries_search"
+  get "/funding-and-support/bursaries", to: "pages#bursaries", as: "bursaries"
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
   get "/cookies", to: "pages#cookies", as: :cookies
   get "/session-expired", to: "pages#session_expired", as: :session_expired
@@ -141,6 +129,16 @@ Rails.application.routes.draw do
       collection do
         get :completed
         get :resend_verification
+      end
+    end
+  end
+
+  namespace :provider_events, path: "/provider-events" do
+    resources :steps,
+              path: "/",
+              only: %i[index show update] do
+      collection do
+        get :completed, to: "steps#completed"
       end
     end
   end

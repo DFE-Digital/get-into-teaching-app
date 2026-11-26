@@ -31,7 +31,7 @@ You'll spend most of your time in school placements with some time dedicated to 
 * tasks and assignments
 * engagement with academic or professional research
 
-The theoretical part of your training might be delivered by a university or in a school. Some training courses will be all school-based, but this does not mean that you’ll spend all your time teaching. Get advice on [how to choose your teacher training course](/train-to-be-a-teacher/how-to-choose-your-teacher-training-course).
+The theoretical part of your training might be delivered by a university or in a school. Some training courses will be all school-based, but this does not mean that you’ll spend all your time teaching. Your course provider will probably not be able to confirm your exact placement locations until they’ve allocated all training places on their course. But you can talk to them beforehand to get a better idea.
 
 You’ll also have a mentor to support you in your school placements and learning. They can provide feedback and guidance.
 
@@ -78,7 +78,7 @@ Some courses begin with time spent in a university or school where you start you
 
 There are two types of assessments you’ll have as part of your training - formative and summative. Formative assessments are less formal and happen throughout your course. Summative assessments are formal assessments, usually at the end of your course.
 
-You might be assessed through written assignments, lesson observations, or by a portfolio of evidence showing how you’re meeting the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). Assessments vary by provider and the qualifications you’re working towards.
+You might be assessed through written assignments, lesson observations, or by a portfolio of evidence showing how you’re meeting the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
 ## Adjustments and accessibility
 

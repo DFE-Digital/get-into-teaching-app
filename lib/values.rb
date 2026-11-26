@@ -8,11 +8,10 @@ module Values
   end
   alias_method :v, :value
 
-  # rubocop:disable Style/PerlBackrefs
   def substitute_values(content)
     return content unless content.is_a? String
 
-    content.gsub(PLACEHOLDER_REGEX) { safe_join([value($1)].compact).strip } if content
+    substituted = content.gsub(PLACEHOLDER_REGEX) { safe_join([value(::Regexp.last_match(1))].compact).strip } if content
+    content.html_safe? ? substituted.html_safe : substituted
   end
-  # rubocop:enable Style/PerlBackrefs
 end
