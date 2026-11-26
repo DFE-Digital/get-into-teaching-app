@@ -17,6 +17,6 @@ session_cache =
 Rails.application.config.session_store :cache_store,
                                        key: "_dfe_session",
                                        same_site: :lax,
-                                       secure: Rails.env.production?,
+                                       secure: !(Rails.env.development? || Rails.env.test?),
                                        cache: session_cache,
                                        expire_after: 1.day
