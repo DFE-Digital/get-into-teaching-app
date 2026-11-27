@@ -62,9 +62,10 @@ gem "faraday_middleware"
 
 gem "fastimage"
 
-gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.15.1"
+gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.16.4"
 gem "dfe-autocomplete", require: "dfe/autocomplete", github: "DFE-Digital/dfe-autocomplete"
 gem "dfe-reference-data", require: "dfe/reference_data", github: "DFE-Digital/dfe-reference-data", tag: "v3.8.6"
+gem "multi_json"
 
 gem "benchmark"
 gem "hashids"
