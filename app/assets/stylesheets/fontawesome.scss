@@ -1,0 +1,7 @@
+// Font Awesome 7 reads $font-path via the module system, so it must be
+// configured here; the fonts are served relative to the compiled CSS (/assets).
+@use "@fortawesome/fontawesome-free/scss/variables" with ($font-path: ".");
+@use "@fortawesome/fontawesome-free/scss/fontawesome";
+@use "@fortawesome/fontawesome-free/scss/regular";
+@use "@fortawesome/fontawesome-free/scss/solid";
+@use "@fortawesome/fontawesome-free/scss/brands";

@@ -2,8 +2,7 @@
   "dependencies": {
     "@babel/core": "7",
     "@babel/preset-env": "^7.27.1",
-    "@fortawesome/fontawesome-free": "^6.7.1",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/fontawesome-free": "^7.3.1",
     "@hotwired/stimulus": "^3.2.2",
     "@sentry/browser": "^10.17.0",
     "accessible-autocomplete": "^3.0.1",
