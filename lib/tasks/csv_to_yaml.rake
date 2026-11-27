@@ -1,6 +1,5 @@
 require "csv"
 require "yaml"
-require "internship_provider"
 require "agency"
 
 desc "CSV to Yaml import"
