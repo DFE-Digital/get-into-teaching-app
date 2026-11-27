@@ -782,6 +782,7 @@ DEPENDENCIES
   logger (>= 1.5.1)
   matrix (>= 0.4.2)
   mdl
+  multi_json
   mutex_m
   net-imap
   net-pop

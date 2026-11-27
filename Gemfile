@@ -72,6 +72,7 @@ gem "irb"
 gem "mutex_m"
 gem "ostruct"
 gem "reline"
+gem "multi_json"
 
 gem "dotenv-rails", ">= 2.7.6"
 
