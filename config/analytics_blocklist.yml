@@ -8,3 +8,10 @@
   - content_hash
   - created_at
   - updated_at
+  :solid_cache_entries:
+  - id
+  - key
+  - value
+  - created_at
+  - key_hash
+  - byte_size

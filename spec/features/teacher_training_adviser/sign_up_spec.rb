@@ -205,12 +205,12 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         type_id: INTERESTED_IN_TEACHING,
         degree_status_id: DEGREE_STATUS_HAS_DEGREE,
         degree_type_id: DEGREE_TYPE_EQUIVALENT,
-        phone_call_scheduled_at: "#{quota.start_at.strftime('%Y-%m-%dT%H:%M:%S')}.000Z",
+        phone_call_scheduled_at: quota.start_at.utc,
         channel_id: nil,
         creation_channel_source_id: creation_channel_source_git_website,
         creation_channel_service_id: creation_channel_service_tta,
         creation_channel_activity_id: nil,
-        date_of_birth: "1966-03-24",
+        date_of_birth: Date.new(1966, 3, 24),
       })
 
       expect_sign_up_with_attributes(request_attributes)
@@ -263,12 +263,12 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         type_id: INTERESTED_IN_TEACHING,
         degree_status_id: DEGREE_STATUS_HAS_DEGREE,
         degree_type_id: DEGREE_TYPE_EQUIVALENT,
-        phone_call_scheduled_at: "#{quota.start_at.strftime('%Y-%m-%dT%H:%M:%S')}.000Z",
+        phone_call_scheduled_at: quota.start_at.utc,
         channel_id: nil,
         creation_channel_source_id: creation_channel_source_git_website,
         creation_channel_service_id: creation_channel_service_tta,
         creation_channel_activity_id: nil,
-        date_of_birth: "1966-03-24",
+        date_of_birth: Date.new(1966, 3, 24),
         preferred_education_phase_id: nil,
         address_postcode: nil,
       })
@@ -332,7 +332,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
           creation_channel_source_id: creation_channel_source_git_website,
           creation_channel_service_id: creation_channel_service_tta,
           creation_channel_activity_id: nil,
-          date_of_birth: "1966-03-24",
+          date_of_birth: Date.new(1966, 3, 24),
         })
         expect_sign_up_with_attributes(request_attributes)
 
@@ -384,7 +384,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
           creation_channel_source_id: creation_channel_source_git_website,
           creation_channel_service_id: creation_channel_service_tta,
           creation_channel_activity_id: nil,
-          date_of_birth: "1966-03-24",
+          date_of_birth: Date.new(1966, 3, 24),
           preferred_education_phase_id: nil,
           address_postcode: nil,
         })
@@ -768,11 +768,11 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         type_id: INTERESTED_IN_TEACHING,
         degree_status_id: DEGREE_STATUS_HAS_DEGREE,
         degree_type_id: DEGREE_TYPE_EQUIVALENT,
-        phone_call_scheduled_at: "#{quota.start_at.strftime('%Y-%m-%dT%H:%M:%S')}.000Z",
+        phone_call_scheduled_at: quota.start_at.utc,
         address_postcode: "TE7 1NG",
         address_telephone: "123456789",
         accepted_policy_id: "123",
-        date_of_birth: "1999-04-27",
+        date_of_birth: Date.new(1999, 4, 27),
       })
 
       expect_sign_up_with_attributes(request_attributes)
@@ -869,7 +869,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
         address_telephone: "123456789",
         situation: SITUATION_GRADUATED_EXPLORING,
 
-        date_of_birth: "1999-04-27",
+        date_of_birth: Date.new(1999, 4, 27),
         address_postcode: "TE7 1NG",
         citizenship: CITIZENSHIP_UK,
 
@@ -919,7 +919,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       email: "john@doe.com",
       first_name: "John",
       last_name: "Doe",
-      date_of_birth: "1966-03-24",
+      date_of_birth: Date.new(1966, 3, 24),
       address_postcode: "EH12 8JF",
       country_id: COUNTRY_UK,
       accepted_policy_id: "123",
@@ -943,7 +943,7 @@ RSpec.feature "Sign up for a teacher training adviser", type: :feature do
       email: "john@doe.com",
       first_name: "John",
       last_name: "Doe",
-      date_of_birth: "1966-03-24",
+      date_of_birth: Date.new(1966, 3, 24),
       address_telephone: "123456789",
     }
   end

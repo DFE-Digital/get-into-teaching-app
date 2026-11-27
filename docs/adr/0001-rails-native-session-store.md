@@ -22,8 +22,8 @@ Redis is a separate service to run, patch and monitor. `config/initializers/02_r
 Replace Redis-backed sessions with Rails' built-in **`:cache_store` session store**, with `Rails.cache` backed by **Solid Cache on the primary database**. Stop using `redis-session-store`.
 
 1. Configure `config.session_store :cache_store` in production, keeping the cookie name `_dfe_session`, `same_site: :lax` and `secure: true`, with `expire_after: 1.day` (matching today's expiry). The cookie holds only a session ID; the data stays on the server.
-2. Use a **dedicated Solid Cache store (or namespace) for sessions**, separate from the general application cache, so that cache eviction, size limits and clearing the cache cannot log users out. If this cannot be done, sessions must at least be excluded from any cache-clearing procedure.
-3. Solid Cache evicts entries by age and size. Set `max_age` for the session store to at least the session lifetime and check `max_size` so that live sessions are not evicted early.
+2. Use a **separate Solid Cache store instance with its own namespace** for sessions, so session keys are distinct from the general application cache. All stores share one `solid_cache_entries` table, so eviction is shared: size and age limits apply across namespaces, and a cache clear would also remove sessions unless it is namespace-scoped. Sessions must be excluded from any cache-clearing procedure.
+3. Solid Cache removes rows only by `max_age` and `max_size`, not by `expires_in` (expired entries are just not returned). Set `max_age` (`config/cache.yml`, currently 2 days) longer than the longest TTL stored, and size `max_size` so live sessions are not evicted early.
 4. Development and test keep their current cookie/null/memory configuration. Production behaviour is covered by a test that uses a session larger than 4 KB.
 5. Remove the `redis-session-store` gem and the session configuration once the switch is complete. The `redis` gem and the `REDIS` pool are only removed when nothing else uses them.
 
@@ -32,10 +32,10 @@ Replace Redis-backed sessions with Rails' built-in **`:cache_store` session stor
 - **Rails-native:** the store, the cache backend and the cleanup are all supported Rails components, with no third-party session gem.
 - **Fewer moving parts:** sessions no longer depend on Redis; the primary database is already operated and backed up.
 - **No 4 KB limit:** session size is bounded only by the cache entry limits (`max_entry_size`), which must be checked against the largest journey.
-- **Database load grows:** every request that touches the session reads, and often writes, a database row. Check capacity and the connection pool per process with Technical Infrastructure before switching. A capacity problem is escalated, not fixed by assuming a scale-up.
+- **Database load grows:** every request that touches the session reads, and often writes, a database row. Database capacity has been confirmed as ample, so no scaling is needed. Keep monitoring load and the connection pool per process after the switch.
 - **Sessions in backups and exports:** session data contains personal data and now goes into database backups. Apply the same retention and access rules, and keep sessions out of logs and exports.
 - **Session loss on eviction:** a cache-backed session can disappear before its expiry if the store is under size pressure; the user then restarts their form. This is a deliberate trade-off against building a bespoke session table.
-- **Expiry handling:** Solid Cache's expiry job must run so expired sessions are removed. Confirm it is scheduled.
+- **Expiry handling:** Solid Cache deletes expired rows itself: each write probabilistically triggers a background batch delete (`expiry_method: :thread` by default, so no Active Job or cron job is needed). Rows older than `max_age`, or beyond `max_size`, are removed. Confirm the table size stays stable in production.
 - **Revocation:** deleting a session entry logs a user out, which is possible for individual sessions if needed.
 - **In-flight sessions are lost at cutover:** existing Redis sessions are not read by the new store, so users mid-journey restart their form. This is acceptable given the 1 day lifetime; switch outside peak times.
 - **Serialisation:** the cache serialises session values with Marshal by default. Confirm that `session[:user]` and other values behave as they do today.
@@ -63,8 +63,7 @@ Rollback: reverting the code restores Redis sessions, but sessions created in th
 ## Open checks (not yet performed)
 
 - Largest realistic session size per journey, against Solid Cache entry limits.
-- Database capacity and per-process connection pool, with Technical Infrastructure.
-- Solid Cache `max_age`, `max_size` and expiry job settings for sessions, and whether sessions need a separate store.
+- Solid Cache `max_age` and `max_size` values (currently 2 days and 256 MB placeholders) against real session volume.
 - Whether `session[:user]` and other values serialise correctly with the cache store.
 - Other code or tooling that depends on Redis session keys.
 - Whether anything else still needs Redis, which decides when the service and the `Healthcheck` Redis check can be removed.
