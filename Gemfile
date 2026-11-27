@@ -97,7 +97,6 @@ gem "connection_pool", "< 3"
 gem "get_into_teaching_api_client_faraday", ">= 4.3.8", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 
 gem "redis"
-gem "redis-session-store", ">= 0.11.4"
 
 gem "govuk-components", "~> 6.6.0"
 gem "kaminari", "~> 1.2", ">= 1.2.2"
@@ -192,3 +191,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[windows jruby]
+
+gem "solid_cache", "~> 1.0"

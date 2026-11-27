@@ -1,0 +1,17 @@
+# Solid Cache lives in the primary database (no separate cache database).
+# Entries are only deleted by max_age/max_size, not by expires_in, so max_age
+# must be longer than the longest TTL stored (sessions currently last 1 day).
+default: &default
+  store_options:
+    max_age: <%= 2.days.to_i %>
+    max_size: <%= 256.megabytes %>
+    namespace: <%= Rails.env %>
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
