@@ -2220,26 +2220,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-common-types@npm:6.4.2":
-  version: 6.4.2
-  resolution: "@fortawesome/fontawesome-common-types@npm:6.4.2"
-  checksum: 10c0/121bb1c55f7578d7516a1dfb95b4b5644d3aacd04cbbbddef317b99ec84ddd56aa8f6414abff190e9fc72ea1754f1beef1c5068641c31fbaf8407822a1733f82
-  languageName: node
-  linkType: hard
-
-"@fortawesome/fontawesome-free@npm:^6.7.1":
-  version: 6.7.1
-  resolution: "@fortawesome/fontawesome-free@npm:6.7.1"
-  checksum: 10c0/5bebf5f9684fc377fb7df36cf7ee37e112a8987e592228ac464b81edc0eb002e1fa8675977b82d15d304cda813da4fafbc38cf0c3ca2744c710390a58a460495
-  languageName: node
-  linkType: hard
-
-"@fortawesome/free-solid-svg-icons@npm:^6.4.2":
-  version: 6.4.2
-  resolution: "@fortawesome/free-solid-svg-icons@npm:6.4.2"
-  dependencies:
-    "@fortawesome/fontawesome-common-types": "npm:6.4.2"
-  checksum: 10c0/1a46c27be60ecdfaecd82f5e8ef07cbf5843b040f03fbab36da2eafc839df97efb437cc2c7ce5df53c6e71c06bf4ef8b520b62c4c0b153fe8a2a04368f155410
+"@fortawesome/fontawesome-free@npm:^7.3.1":
+  version: 7.3.1
+  resolution: "@fortawesome/fontawesome-free@npm:7.3.1"
+  checksum: 10c0/85b70ea64e69b9635ff0b949871acaaf0e6c6fd41860b8a78a5067123a42dd71144f7f7feea7aee013a485166ee8bf8ee3aafb15146dc0f55512d07015adddee
   languageName: node
   linkType: hard
 
@@ -8944,8 +8928,7 @@ __metadata:
     "@babel/core": "npm:7"
     "@babel/eslint-parser": "npm:^7.25.1"
     "@babel/preset-env": "npm:^7.27.1"
-    "@fortawesome/fontawesome-free": "npm:^6.7.1"
-    "@fortawesome/free-solid-svg-icons": "npm:^6.4.2"
+    "@fortawesome/fontawesome-free": "npm:^7.3.1"
     "@hotwired/stimulus": "npm:^3.2.2"
     "@sentry/browser": "npm:^10.17.0"
     "@stimulus/test": "npm:^2.0.0"
