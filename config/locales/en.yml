@@ -166,9 +166,8 @@ en:
         group: "Secondary"
         sub_head: "Geography - Secondary"
         funding:
-          2026: "Bursaries of %{bursaries_2026_postgraduate_geography} are available for trainee geography teachers if you're eligible."
           2025: "Bursaries of %{bursaries_postgraduate_geography} are available for trainee geography teachers if you're eligible."
-          default: "Bursaries are available for trainee geography teachers if you're eligible."
+          default: "Bursaries are not available for this subject."
       health_and_social_care:
         name: "Health and social care"
         group: "Secondary"
